@@ -1,0 +1,21 @@
+# - name: Learn about Azure Services 
+- name: Machen Sie sich für das neue Microsoft Edge bereit
+  href: new-microsoft-edge.md
+- name: Programme und Veranstaltungen
+  items:
+    - name: Mixed Reality-Referentenreihe
+      href: sf-academy-events.md
+    - name: Mixed Reality Dev Days
+      items:
+        - name: Mixed Reality Dev Days
+          href: mr-dev-days.md
+        - name: Sitzungsaufzeichnungen
+          href: mr-dev-days-sessions.md
+- name: Aktuelle Versionshinweise zu Mixed Reality
+  href: release-notes-may-2020.md
+- name: Communityressourcen
+  href: ../discover/community.md
+- name: Beitragen zu dieser Dokumentation
+  href: contributing.md
+- name: Bereitstellen von Hololens in großem Maßstab
+  href: 'https://docs.microsoft.com/hololens/'
