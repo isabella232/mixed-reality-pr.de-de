@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
 keywords: Gemischte Windows-Realität, Entwurf, App-Muster, Steuerelemente, Stil, hololens, Interaktion, UX-Elemente, Verhaltensweisen, Bausteine
-ms.openlocfilehash: cece64194100e35ea836a23a645079e64332ec32
-ms.sourcegitcommit: ccc7c9ee0bb65e1bc672482592ebfddbba40d7da
+ms.openlocfilehash: cebcb99124ed71ed170210f2de9ce2f24bcb514d
+ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "92113524"
+ms.locfileid: "92138022"
 ---
 # <a name="core-concepts-overview"></a>Übersicht über Kernkonzepte
 
@@ -19,10 +19,6 @@ ms.locfileid: "92113524"
 
 
 Bevor Sie sich mit dem Entwurf Ihrer Benutzer Arbeit vertraut machen, ist es hilfreich, einige grundlegende Konzepte zu verstehen. Jedes nachfolgende Thema ist ein zugrunde liegender Faktor, der sich grundlegend auf die Qualität der gemischten Realität auswirkt, die Sie für Ihren Benutzer erstellen. 
-
-
-
-[ ![ Typen von](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) Mixed Reality-apps ** [Typen von Mixed Reality-apps](types-of-mixed-reality-apps.md)**
 
 :::row:::
     :::column:::
@@ -50,13 +46,13 @@ Bevor Sie sich mit dem Entwurf Ihrer Benutzer Arbeit vertraut machen, ist es hil
 
 :::row:::
     :::column:::
-       [ ![ Räumliche Zuordnung räumliche Zuordnung](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
+        [ ![ Räumliche Anker](images/azurespatialanchors.jpg)](spatial-anchors.md) ** [räumliche Anker](spatial-anchors.md)**
     :::column-end:::
     :::column:::
-       
+        [ ![ Räumliche Zuordnung räumliche Zuordnung](images/surfacereconstruction.jpg)](spatial-mapping.md) ** [Spatial mapping](spatial-mapping.md)**
     :::column-end:::
     :::column:::
-       [ ![ Räumliche Anker](images/azurespatialanchors.jpg)](spatial-anchors.md) ** [räumliche Anker](spatial-anchors.md)**
+        [ ![ Typen von](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md) Mixed Reality-apps ** [Typen von Mixed Reality-apps](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 
