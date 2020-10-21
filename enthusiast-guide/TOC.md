@@ -14,7 +14,6 @@
 ### [Installieren von Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Einrichten von Windows Mixed Reality](set-up-windows-mixed-reality.md)
 ### [Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup](wmr-setup-faq.md)
-### [Immersive Headsets: Integrität,-Sicherheit und-Komfort](wmr-health-safety-comfort.md)
 
 ## Verwenden von Windows Mixed Reality
 ### [Lernen von Mixed Reality](learn-mixed-reality.md)
@@ -28,6 +27,7 @@
 ### [Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality](using-wmr-faq.md)
 
 ## Häufig gestellte Fragen zur Problembehandlung
+### [Einreichen von Bugs und Feedback](filing-feedback.md)
 ### [Allgemeine häufig gestellte Fragen](troubleshooting-windows-mixed-reality.md)
 ### [Installationsfehler](installation_errors.md)
 ### [Einrichtung](set-up-questions.md)
@@ -44,6 +44,6 @@
 ### [Weitere Fragen](other-questions.md)
 
 ## Ressourcen
-### [Einreichen von Bugs und Feedback](filing-feedback.md)
+### [Immersive Headsets: Integrität,-Sicherheit und-Komfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality: Übersicht zur Software und Versionsverlauf](mixed-reality-software.md)
 ### [Funktionsweise von Inside-Out-Tracking](tracking-system.md)
