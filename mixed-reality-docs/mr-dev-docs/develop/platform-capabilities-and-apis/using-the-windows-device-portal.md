@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows-Geräteportal, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862988"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011472"
 ---
 # <a name="using-the-windows-device-portal"></a>Verwenden des Windows-Geräteportals
 
@@ -374,3 +374,20 @@ Klicken oder tippen Sie auf den Bereich unter **Virtual keyboard** (virtuelle Ta
 ## <a name="device-portal-rest-apis"></a>REST-APIs des Geräteportals
 
 Alle Komponenten im Windows-Geräteportal basieren auf [REST-APIs](device-portal-api-reference.md), die Sie optional für den Zugriff auf die Daten und die programmatische Steuerung des Geräts verwenden können.
+
+## <a name="troubleshooting"></a>Problembehandlung
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>Beheben der Meldung „It's lonely here“ (Es ist einsam hier)
+
+> [!NOTE]
+> Der Wechsel von einer HoloLens 2 zu einer HoloLens (1. Generation) kann dazu führen, dass die Seiten vereinzeln, wenn sie vor der Verwendung auf der HoloLens (1. Generation) auf der HoloLens 2 verwendet worden waren.
+
+![Meldung „It's lonely here“ auf der Seite des Geräteportals](images/using-windows-portal-img-19.png)
+
+1. Wählen Sie im Menü oben links **Layout zurücksetzen** aus:
+
+![Auswählen von „Layout zurücksetzen“ im Menü des Geräteportals](images/using-windows-portal-img-20.png)
+
+2. Klicken Sie unter der Überschrift **Arbeitsbereich zurücksetzen** auf **Layout zurücksetzen**. Die Portalseite wird automatisch aktualisiert und zeigt Ihre Inhalte an.
+
+![Auswählen von „Layout zurücksetzen“ auf der Seite „Arbeitsbereich zurücksetzen“](images/using-windows-portal-img-21.png)
