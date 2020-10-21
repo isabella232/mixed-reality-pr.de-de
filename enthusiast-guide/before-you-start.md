@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, kompatibel, Kompatibilität, Einstieg, Setup, PC, Systemanforderungen
 appliesto:
 - Windows 10
-ms.openlocfilehash: c76f670230a4a19b53b7e8f938b13e79bb7c8db7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174440"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293055"
 ---
 # <a name="before-you-start"></a>Vorbereitung
 
@@ -52,7 +52,7 @@ Weitere Informationen dazu, wie Sie Ihren PC auf dem neuesten standhalten, finde
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Stellen Sie sicher, dass Sie über einen kompatiblen Grafiktreiber verfügen
 
-Der PC muss über einen Grafiktreiber von WDDM 2,2 oder höher verfügen, um das Mixed Reality-Setup abzuschließen. Wenn Sie nicht bereits über einen kompatiblen Grafiktreiber verfügt, versuchen Sie Folgendes:
+Der PC muss über einen Grafiktreiber für WDDM 2,2 oder höher verfügen, um das Windows Mixed Reality-Setup abzuschließen. Wenn Sie nicht bereits über einen kompatiblen Grafiktreiber verfügt, versuchen Sie Folgendes:
 
 * Überprüfen Sie die neuesten wichtigen Treiber Updates mithilfe Windows Update (**Starten Sie > Windows-Einstellungen > Update und Sicherheit > suchen nach Updates**).
 * Suchen Sie nach den neuesten optionalen Treiber Updates:
@@ -64,7 +64,7 @@ Der PC muss über einen Grafiktreiber von WDDM 2,2 oder höher verfügen, um das
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Stellen Sie sicher, dass Sie über alle erforderlichen Adapter verfügen.
 
-Ihr Windows Mixed Reality-kompatibler PC verfügt möglicherweise nicht über die gesamten Monitor-und USB 3,0-Ports, die für die Verbindung mit Ihrem immersiven Headset benötigt werden. Möglicherweise benötigen Sie einen Bluetooth-Adapter, um die Anforderungen des gemischten Reality-Portals zu erfüllen.  Wenn dies der Fall ist, benötigen Sie Adapter, um ihre Headset-und Bewegungs Controller zu verbinden. [Hier](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)finden Sie eine Liste der Adaptertypen, die Sie möglicherweise benötigen, und einige Empfehlungen zu bestimmten Adapter Modellen.
+Ihr Windows Mixed Reality-kompatibler PC verfügt möglicherweise nicht über die gesamten Monitor-und USB 3,0-Ports, die für die Verbindung mit Ihrem immersiven Headset benötigt werden. Möglicherweise benötigen Sie einen Bluetooth-Adapter, um die Anforderungen des Windows Mixed Reality-Portals zu erfüllen.  Wenn dies der Fall ist, benötigen Sie Adapter, um ihre Headset-und Bewegungs Controller zu verbinden. Stellen Sie sicher, dass Sie eine Liste der [benötigten Adaptertypen und einige Empfehlungen zu bestimmten Adapter Modellen](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)überprüfen.
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Stellen Sie sicher, dass Sie über Eingabegeräte verfügen.
 
@@ -76,7 +76,7 @@ Es sei denn, Sie haben eine Samsung HMD-Odyssee, HP-Hall-oder HP-Hall-G2-Headset
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>Stellen Sie sicher, dass Sie über einen großen, geöffneten Raum verfügen.
 
-Wenn Sie mit Windows Mixed Reality fortfahren möchten, benötigen Sie einen großen, offenen Raum.  Während des Setups werden Sie aufgefordert, zwischen "sitzend und stehend" oder "alle Erfahrungen" auszuwählen. Wählen Sie "alle Erfahrungen" aus, und richten Sie eine Grenze ein, wenn Sie fortfahren möchten.
+Wenn Sie mit Windows Mixed Reality fortfahren möchten, benötigen Sie einen großen, offenen Raum.  Während des Setups werden Sie aufgefordert, zwischen "sitzend und stehend" oder "alle Erfahrungen" auszuwählen. Wählen Sie "alle Erfahrungen" aus, und richten Sie eine Grenze ein, wenn Sie fortfahren möchten. Lesen Sie die [immersiven Richtlinien für den Headset-Integritäts-, Sicherheits-und](wmr-health-safety-comfort.md) Integritäts Status, um die Anforderungen
 
 ### <a name="seated-and-standing-no-boundary"></a>Sitzend und Position (keine Begrenzung)
 

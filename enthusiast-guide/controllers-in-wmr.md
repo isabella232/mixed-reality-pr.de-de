@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56238f302074bb4de21acbc0575f4ab913cb84b1
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174414"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293118"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Bewegungs Controller in Windows Mixed Reality
 
@@ -42,7 +42,6 @@ Die meisten Headsets sind direkt mit dem Headset gekoppelt, aber einige frühe H
 4. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
 > [!NOTE]
-
 > * Bei Controllern, die direkt mit Ihrem PC gekoppelt werden, müssen Sie Sie in den Paarmodus versetzen, indem Sie Sie einschalten und dann auf die Schaltfläche Kopplung innerhalb des Akku Depots drücken, bis die Beleuchtung blinkt.  
 > * Bewegungs Controller unterstützen nur einen Computer oder PC gleichzeitig. Wenn Sie diese mit einem anderen Headset verwenden müssen, müssen Sie den paarweise Vorgang durchlaufen. Siehe [Einrichten von Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
@@ -95,7 +94,7 @@ Im folgenden wird erläutert, wie Sie in gemischter Realität mit Bewegungs Cont
 |  Aufgabe  |  Bewegungscontroller  | Gamepad | Maus und Tastatur |
 | --- | --- | --- | --- |
 | Teleport | Drücken Sie den Fingerabdruck, und zeigen Sie dann auf den gewünschten Controller. Geben Sie den Finger Stick frei. | Drücken Sie den linken Finger Stick vorwärts, und sehen Sie sich an, wohin Sie navigieren möchten. Geben Sie den Finger Stick frei. | Klicken Sie mit der rechten Maustaste auf die Schaltfläche, und zeigen Sie dann mit der Maus auf die gewünschte Position. Geben Sie die Schaltfläche frei. |
-| Select | Zeigen Sie auf den Controller, und ziehen Sie den-Editor per Pull oder auf das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
+| Auswählen | Zeigen Sie auf den Controller, und ziehen Sie den-Editor per Pull oder auf das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
 | Öffnen des Startmenüs | Drücken Sie die **Windows** -Taste. | Klicken Sie auf die Schaltfläche **Xbox** . | Drücken Sie die **Windows-Logo-Taste**. |
 | Immersive app verlassen | Drücken Sie die **Windows** -Taste. Wählen Sie dann im Menü schnell Aktionen die Option **gemischte Reality-Startseite** aus. | Klicken Sie auf die Schaltfläche **Xbox** . Wählen Sie dann im Menü schnell Aktionen die Schaltfläche **Mixed Reality Home** aus. | Drücken Sie die **Windows-Logo-Taste**. Wählen Sie dann im angezeigten Menü schnell Aktionen die Start Schaltfläche **Mixed Reality** aus. |
 | Rotate | Verschieben Sie den Finger Stick nach links oder rechts. | Verschieben Sie den rechten Stift nach links oder rechts. | Nicht verfügbar. |

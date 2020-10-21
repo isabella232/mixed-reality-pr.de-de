@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Pre-Sale, Research, Purchase, vor dem Kauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: 3adaf5e3bef3144d23a57ce8729f3f169ec630f3
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174479"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293035"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -308,8 +308,6 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Unterstützt die Windows Mixed Reality-Plattform die Unterstützung von Hard-und Vive Hardware?
 
 **Schnelle Antwort:** Windows Mixed Reality funktioniert nur mit genehmigten Windows Mixed Reality-Headsets/-Controllern. Siehe <https://www.microsoft.com/en-us/store/b/virtualreality>.
-
-
 
 ## <a name="motion-controllers"></a>Motion-Controller
 

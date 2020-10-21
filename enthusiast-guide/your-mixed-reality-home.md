@@ -3,20 +3,20 @@ title: Ihre gemischte Reality-Startseite
 description: Navigieren und teleportieren innerhalb des Windows Mixed Reality-Startseite, starten von apps und spielen, Personalisieren der Startseite und Ändern von visuellen, Audio-und Spracheinstellungen.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Navigate, get around, apps, Games
-ms.openlocfilehash: f8a525ad0c278517950c06c821d2b7936ec584a7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174280"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293089"
 ---
-# <a name="your-mixed-reality-home"></a>Ihre gemischte Reality-Startseite
+# <a name="your-windows-mixed-reality-home"></a>Ihre Windows Mixed Reality-Startumgebung
 
-## <a name="what-is-the-mixed-reality-home"></a>Was ist die Mixed Reality-Startseite?
+## <a name="what-is-the-windows-mixed-reality-home"></a>Was ist die Windows Mixed Reality-Startseite?
 
 Windows Mixed Reality ist das erste räumliche Betriebssystem. Anstatt einen flachen Bildschirm und eine 2D-Schnittstelle zu verwenden, nutzt er unsere instanzielle Möglichkeit, um im dreidimensionalen Raum zu navigieren. Jeder Ort hat einen Zweck, und der Inhalt hat Kontext. Ebenso wie Ihr PC an der Desktop Schnittstelle gestartet wird und Ihr Telefon mit einem Startbildschirm beginnt, beginnt Windows Mixed Reality bei der Mixed Reality-Startseite. Es handelt sich um eine Umgebung, die Sie navigieren und personalisieren können, um Ihre eigenen zu erstellen. Es ist der Canvas für die Tausende von apps, die im Microsoft Store verfügbar sind. Sie können mit diesen apps mehr Aufgaben ausführen, z. b. noch nicht in 3D, wo Platz fast unbegrenzt ist.
 
-## <a name="move-through-the-mixed-reality-home"></a>Navigieren Sie durch die Mixed Reality-Startseite
+## <a name="move-through-the-windows-mixed-reality-home"></a>Navigieren Sie durch die Windows Mixed Reality-Startseite
 
 * **Physischer Weg:** Wenn Sie Ihr Headset mit einer Raumgrenze eingerichtet haben und den verfügbaren Speicherplatz gelöscht haben, um sicher zu gehen, können Sie die physischen Schritte durchführen, um kurze Entfernungen zu Hause zu verschieben. Ein Schritt in der realen Welt ist ungefähr ein Schritt in der virtuellen Umgebung.
 * **Teleporting (mithilfe von Bewegungs Controllern):** Sie können schnell zu einem Speicherort navigieren, indem Sie teleportieren. Mithilfe der Motion-Controller können Sie teleportieren, indem Sie den rechten oder linken Finger Stick vorwärts bewegen, sodass Sie auf die gewünschte Richtung abzielen und dann den Finger Stick freigeben.
@@ -28,7 +28,7 @@ Windows Mixed Reality ist das erste räumliche Betriebssystem. Anstatt einen fla
 
 ## <a name="launch-an-app"></a>Starten einer APP
 
-1. Klicken Sie im Mixed Reality-Startmenü auf die Windows-Schaltfläche, um das Startmenü zu starten.
+1. Klicken Sie in Ihrer Windows Mixed Reality-Startseite auf die Windows-Taste auf dem Controller, um das Startmenü zu starten.
 2. Wählen Sie die APP aus, die Sie starten möchten.
 3. Platzieren Sie die APP, in der Sie Sie verwenden möchten, und wird gestartet.
 4. Ab jetzt können Sie einfach auf das 3D-Modell klicken, um die APP zu starten.
@@ -49,11 +49,11 @@ Windows Mixed Reality ist das erste räumliche Betriebssystem. Anstatt einen fla
 2. Starten Sie Microsoft Store.
 3. Suchen Sie nach einer gewünschten APP oder einem Spiel, und klicken Sie dann auf "Get" oder "kaufen".
 
-Alternativ können Sie die app "neu für Sie" verwenden, um nach Inhalten zu suchen, die in Ihrem gemischten Reality-Home als Einkaufs Behälter angezeigt werden.
+Alternativ können Sie die app "neu für Sie" verwenden, um nach Inhalten zu suchen, die in Ihrer Windows Mixed Reality-Homepage als Einkaufs Behälter angezeigt werden.
 
 ## <a name="what-is-the-new-for-you-app"></a>Was ist die "neue App"-App
 
-Vielleicht bemerken Sie, dass es eine Microsoft Store Tasche in Ihrem gemischten Reality-Home gibt. Wenn Sie darauf klicken, werden neue und interessante apps angezeigt, die Sie herunterladen und/oder erwerben können.
+Vielleicht bemerken Sie, dass es in Ihrer Windows Mixed Reality-Startseite eine Microsoft Store Behälter gibt. Wenn Sie darauf klicken, werden neue und interessante apps angezeigt, die Sie herunterladen und/oder erwerben können.
 
 ## <a name="personalize-my-home"></a>Meine Homepage personalisieren
 
@@ -68,12 +68,12 @@ Wechseln Sie zu **Einstellungen > gemischte Realität > Umgebung, >** wechseln !
 ## <a name="uninstall-windows-mixed-reality"></a>Deinstallieren von Windows Mixed Reality
 
 1. Anschließen Ihres Headsets
-2. Schließen des gemischten Reality-Portals
+2. Schließen des Windows Mixed Reality-Portals
 3. Wechseln Sie zu **Einstellungen > gemischte Realität > deinstallieren >** ![ Fenster Einstellungen deinstallieren, um gemischte Realität zu deinstallieren.](images/1050px-uninstall2.png)
 
 ## <a name="turn-off-the-boundary"></a>Deaktivieren der Grenze
 
-Wechseln Sie zum Mixed Reality-Portal, und öffnen Sie das Menü in der oberen linken Ecke des Bildschirms. Wählen Sie die Option **Ausführen Setup > Raum**Begrenzung. Schalten Sie die UMSCHALT Fläche auf aus. Wenn Sie die Grenze deaktivieren, sollten Sie an Ihrem Desk sitzen bleiben.
+Wechseln Sie zum Windows Mixed Reality-Portal, und öffnen Sie das Menü in der oberen linken Ecke des Bildschirms. Wählen Sie die Option **Ausführen Setup > Raum**Begrenzung. Schalten Sie die UMSCHALT Fläche auf aus. Wenn Sie die Grenze deaktivieren, sollten Sie an Ihrem Desk sitzen bleiben.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Räumlicher Sound in der Windows Mixed Reality-Startseite
 
