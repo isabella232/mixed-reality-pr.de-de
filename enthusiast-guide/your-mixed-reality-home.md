@@ -3,18 +3,18 @@ title: Ihre gemischte Reality-Startseite
 description: Navigieren und teleportieren innerhalb des Windows Mixed Reality-Startseite, starten von apps und spielen, Personalisieren der Startseite und Ändern von visuellen, Audio-und Spracheinstellungen.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Navigate, get around, apps, Games
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293089"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434618"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Ihre Windows Mixed Reality-Startumgebung
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>Was ist die Windows Mixed Reality-Startseite?
 
-Windows Mixed Reality ist das erste räumliche Betriebssystem. Anstatt einen flachen Bildschirm und eine 2D-Schnittstelle zu verwenden, nutzt er unsere instanzielle Möglichkeit, um im dreidimensionalen Raum zu navigieren. Jeder Ort hat einen Zweck, und der Inhalt hat Kontext. Ebenso wie Ihr PC an der Desktop Schnittstelle gestartet wird und Ihr Telefon mit einem Startbildschirm beginnt, beginnt Windows Mixed Reality bei der Mixed Reality-Startseite. Es handelt sich um eine Umgebung, die Sie navigieren und personalisieren können, um Ihre eigenen zu erstellen. Es ist der Canvas für die Tausende von apps, die im Microsoft Store verfügbar sind. Sie können mit diesen apps mehr Aufgaben ausführen, z. b. noch nicht in 3D, wo Platz fast unbegrenzt ist.
+Windows Mixed Reality ist das erste räumliche Betriebssystem. Anstatt einen flachen Bildschirm und eine 2D-Schnittstelle zu verwenden, nutzt er unsere instanzielle Möglichkeit, um im dreidimensionalen Raum zu navigieren. Jeder Ort hat einen Zweck, und der Inhalt hat Kontext. Ebenso wie Ihr PC an der Desktop Schnittstelle gestartet wird und Ihr Telefon mit einem Startbildschirm beginnt, beginnt Windows Mixed Reality bei der Mixed Reality-Startseite. Es handelt sich um eine Umgebung, die Sie navigieren und personalisieren können, um Ihre eigenen zu erstellen. Es ist der Canvas für die Tausende von apps, die in der Microsoft Store oder der steamvr verfügbar sind. Sie können mit diesen apps mehr Aufgaben ausführen, z. b. noch nicht in 3D, wo Platz fast unbegrenzt ist.
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>Navigieren Sie durch die Windows Mixed Reality-Startseite
 
@@ -26,7 +26,7 @@ Windows Mixed Reality ist das erste räumliche Betriebssystem. Anstatt einen fla
   * Ein praktisches Feature wird als "Snap-in-App" bezeichnet, mit dem Sie zur idealen Position für die Interaktion mit App-Fenstern springen können. Zeigen Sie einfach auf den teleportenbogen auf ein Fenster, und lassen Sie es los. Das System fügt Sie automatisch an den idealen Ort ein, um den Inhalt dieses Zielfensters zu nutzen.
 * **Praktisch durchlaufen:** Sie können virtuell fortlaufend fortfahren, indem Sie den Finger Stick (in dem Sie darauf klicken) auf Ihren Motion-Controllern oder Gamepad drücken und dann in die gewünschte Richtung wechseln.
 
-## <a name="launch-an-app"></a>Starten einer APP
+## <a name="launch-an-app"></a>Starten einer App
 
 1. Klicken Sie in Ihrer Windows Mixed Reality-Startseite auf die Windows-Taste auf dem Controller, um das Startmenü zu starten.
 2. Wählen Sie die APP aus, die Sie starten möchten.
@@ -73,7 +73,7 @@ Wechseln Sie zu **Einstellungen > gemischte Realität > Umgebung, >** wechseln !
 
 ## <a name="turn-off-the-boundary"></a>Deaktivieren der Grenze
 
-Wechseln Sie zum Windows Mixed Reality-Portal, und öffnen Sie das Menü in der oberen linken Ecke des Bildschirms. Wählen Sie die Option **Ausführen Setup > Raum**Begrenzung. Schalten Sie die UMSCHALT Fläche auf aus. Wenn Sie die Grenze deaktivieren, sollten Sie an Ihrem Desk sitzen bleiben.
+Wechseln Sie zum Mixed Reality-Portal, und öffnen Sie das Menü in der oberen linken Ecke des Bildschirms. Wählen Sie die Option **Ausführen Setup > Raum**Begrenzung. Schalten Sie die UMSCHALT Fläche auf aus. Wenn Sie die Grenze deaktivieren, sollten Sie an Ihrem Desk sitzen bleiben.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Räumlicher Sound in der Windows Mixed Reality-Startseite
 

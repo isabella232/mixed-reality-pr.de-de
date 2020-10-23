@@ -3,12 +3,12 @@ title: Funktionsweise von Inside-Out-Tracking
 description: Informationen zum kamerabasierten, in Windows Mixed Reality verwendeten System zur Nachverfolgung.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Inside-Out, Inside Out, Tracking, Kamera
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174334"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434605"
 ---
 # <a name="inside-out-tracking"></a>Innere Nachverfolgung
 
@@ -72,6 +72,6 @@ Das Überwachungssystem speichert einige Umgebungs Daten so, dass Sie den tatsä
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Problembehandlung für das Überwachungssystem](tracking.md)
-* [Funktionsweise von Motion-Controllern](controller-in-wmr.md)
+* [Motion-Controller](controller-in-wmr.md)
 * [Ihre Windows Mixed Reality-Startumgebung](your-mixed-reality-home.md)
 * [Verwenden von spielen und apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

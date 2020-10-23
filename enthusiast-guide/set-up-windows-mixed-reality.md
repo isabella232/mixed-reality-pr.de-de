@@ -3,12 +3,12 @@ title: Einrichten von Windows Mixed Reality
 description: Erfahren Sie, wie Sie Ihre Windows Mixed Reality-Motion-Controller, Sprache und Audiodaten einrichten und die Raumgrenze für einen sicheren Wiedergabe Raum definieren.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Get Started, Setup, Motion Controller, Controller, Speech, Audio, sitzend, standing, Border, graphics drivers, Microsoft Edge, Chrom
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174465"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434635"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Einrichten von Windows Mixed Reality
 
@@ -86,7 +86,7 @@ Wenn Sie diese Option auswählen, sind keine zusätzlichen Schritte erforderlich
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Wie hoch ist die maximale Größe der Grenze?
 
-Die derzeit unterstützte maximale Begrenzungs Größe in Windows Mixed Reality ist 18x18ft (5.7 x 5.7 m) oder 13ft (4M) RADIUS from the Center.  Die Begrenzungs Größe hängt vom Ankerpunkt und davon ab, wie weit vom Ankerpunkt verschoben werden kann, bevor Sie die Stabilität der Grenze riskieren.  Windows Mixed Reality basiert auf einer Phasen Abstraktion auf der Plattform, in der sich der Bereich befindet, in dem Sie sich bewegen, und diese Phase ist von einem einzelnen Anker abhängig (was fast jede APP auch voraussetzt – es geht darum, wie "Vive" und "Oculus" auch funktionieren, da Sie nur ein einziges Koordinatensystem aufweisen).  Der Grund hierfür ist, dass Sie bei der in-out-Nachverfolgung, wenn Sie sich von einem Ankerpunkt aus verschieben, die Nachverfolgung zuverlässig ist, um die Grenze stabil zu halten.  Wenn die Grenze zur Vermeidung physischer Hindernisse dient, wird es immer mehr und mehr zu einem Problem, das weiter von der Mitte Weg ist.  Zwei Faktoren haben die Entscheidung über die maximale Begrenzungs Größe getroffen. der maximale Abstand, mit dem Windows Mixed Reality-Headsets die beste Raum Skalierung mit einer Grenze und der Länge des Headset-Kabels bereitstellen können, was für die meisten Windows Mixed Reality-Headsets 10 ft (3M) ist. 
+Die derzeit unterstützte maximale Begrenzungs Größe in Windows Mixed Reality ist 18x18ft (5.7 x 5.7 m) oder 13ft (4M) RADIUS from the Center.  Die Begrenzungs Größe hängt vom Ankerpunkt und davon ab, wie weit vom Ankerpunkt verschoben werden kann, bevor Sie die Stabilität der Grenze riskieren.  Windows Mixed Reality basiert auf einer Phasen Abstraktion auf der Plattform, in der sich der Bereich befindet, in dem Sie sich bewegen, und diese Phase ist von einem einzelnen Anker abhängig (was fast jede APP auch voraussetzt – es geht darum, wie "Vive" und "Oculus" auch funktionieren, da Sie nur ein einziges Koordinatensystem aufweisen).  Der Grund hierfür ist, dass Sie bei der in-out-Nachverfolgung, wenn Sie sich von einem Ankerpunkt aus verschieben, die Nachverfolgung zuverlässig ist, um die Grenze stabil zu halten.  Wenn die Grenze zur Vermeidung physischer Hindernisse dient, wird es immer mehr und mehr zu einem Problem, das weiter von der Mitte Weg ist.  Zwei Faktoren haben die Entscheidung über die maximale Begrenzungs Größe getroffen. der maximale Abstand, mit dem Windows Mixed Reality-Headsets die beste Raum Skalierung mit einer Grenze und der Länge des Headset-Kabels bereitstellen können, was für die meisten Windows Mixed Reality-Headsets 10 ft (3M) ist.
 
 ## <a name="set-up-speech"></a>Einrichten der Sprache
 
@@ -112,7 +112,7 @@ Die native Auflösung Ihres Headsets wird hier dargestellt.
 
 Wenn Sie ein Headset mit höherer Auflösungs Anzeige (z. b. "Headsets mit 4320x2160") an Ihren PC anschließen, wird eine Einstellung angezeigt, mit der Sie die Auflösung gemischter Realität anpassen können.
 
-* Diese Einstellung stellt die Option für den Windows Mixed Composition-Kompositions Stapel bereit, um nativ (z. b. bei 4320x2160) zu werden, oder um den Kompositions Stapel bei einer niedrigeren Auflösung und hochskalieren zu lassen (z. b. bei 2880x1440 und Hochskalierbar bis 4320x2160).
+* Diese Einstellung bietet die Option für den Windows Mixed Reality-Kompositions Stapel, um nativ (z. b. bei 4320x2160) zu werden, oder um den Kompositions Stapel bei einer niedrigeren Auflösung und hochskalieren zu lassen (z. b. bei 2880x1440 und hochskalieren bis 4320x2160).
 * Die Standardeinstellung ist das systemeigene Rendering (z. b. die **4320 x 2160-Option (beste Qualität)** ), um die beste visuelle Qualität zu erzielen, die von Ihrem Headset aus möglich ist.
 * Wenn Ihr PC die Mindestanforderungen an die Grafikhardware für Ihr Headset mit höherer Auflösung anzeigt und/oder wenn Sie Probleme mit der Grafikleistung sehen, können Sie versuchen, die Option **Automatische upskalierung (beste Leistung)** auszuwählen.
 
@@ -131,9 +131,7 @@ Diese erweiterte Einstellung überschreibt die Standardeinstellung für die Aktu
 * **90Hz**
 
 >[!Note]
->Die Einstellung für die automatische Aktualisierungsrate für HP Reverb G2 ist 90Hz.
-
-Bestimmte Windows Mixed Reality-Features, einschließlich der Mixed Reality Portal Preview und einem größeren Headset, Display FOV, sind nur mit dem 90Hz-Vorgang verfügbar.
+>Beim ersten Einrichten von HP Reverb G2-Headset wird die Umgebung in 90Hz geändert, um die optimale Leistung zu gewährleisten.  Bei Bedarf können Sie diese wieder in "automatisch" ändern.
 
 ### <a name="input-switching"></a>Eingabe Wechsel
 
@@ -180,5 +178,5 @@ Das einmalige eingeben der gemischten Realität ist so einfach wie das Zurückse
 * [Problembehandlung bei der Installation](installation_errors.md)
 * [Problembehandlung bei Setup](set-up-questions.md)
 * [Lernen von Mixed Reality](learn-mixed-reality.md)
-* [Funktionsweise von Motion-Controllern](controllers-in-wmr.md)
+* [Motion-Controller](controllers-in-wmr.md)
 * [Funktionsweise von Inside-Out-Tracking](tracking-system.md)

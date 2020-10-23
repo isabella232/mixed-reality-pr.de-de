@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Adapter, Dongle, HDMI, USB, Display Port
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174400"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434597"
 ---
 # <a name="recommended-adapters"></a>Empfohlene Adapter
 > [!NOTE]
@@ -28,7 +28,7 @@ Ihr [Windows Mixed Reality-kompatibler PC](windows-mixed-reality-minimum-pc-hard
 
 <table>
 <tr>
-<th style="width:30%">Typ</th><th style="width:40%">Adapter</th><th style="width:15%">60Hz-fähig</th><th style="width:15%">90Hz-fähig</th>
+<th style="width:30%">type</th><th style="width:40%">Adapter</th><th style="width:15%">60Hz-fähig</th><th style="width:15%">90Hz-fähig</th>
 </tr><tr>
 <td rowspan="2" style="vertical-align: middle;">Display Port (Vollgröße) auf HDMI 2,0</td><td>Club3D Display Port 1,2 auf den aktiven Adapter von HDMI 2,0</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -263,7 +263,7 @@ Mit diesen Tabellen können Sie feststellen, ob Sie Anzeige-oder USB-Adapter fü
 
 Wenn Ihr Headset nach 2018 freigegeben wurde, werden die Adapter nicht benötigt, und Controller sind mit dem Headset paarweise gekoppelt.
 
-Geräte, die in 2017 oder früher ausgeliefert werden, benötigen einen Adapter für Controller. Wenn Ihr PC nicht Bluetooth für die Kopplung von [Windows Mixed Reality Motion-Controllern](controllers-in-wmr.md)umfasst, können Sie einen Adapter wie den steckbaren USB Bluetooth Bluetooth 4,0 Low Energy Micro-Adapter verwenden.
+Geräte, die in 2017 oder früher ausgeliefert werden, benötigen einen Adapter für Controller. Wenn Ihr PC nicht Bluetooth für die Kopplung von [Windows Mixed Reality Motion-Controllern](controllers-in-wmr.md#Pair-motion-controllers)umfasst, können Sie einen Adapter wie den steckbaren USB Bluetooth Bluetooth 4,0 Low Energy Micro-Adapter verwenden.
 
 > [!NOTE]
 > Microsoft stellt weder die Funktionalität noch die Zuverlässigkeit oder die Qualität eines Adapters her, testet, zertifiziert und garantiert nicht. Bei Fragen, Problemen oder Problemen mit einem beliebigen Adapter sollten Sie sich an den Verkäufer oder den Hersteller Ihres Adapters wenden.

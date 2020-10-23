@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Pre-Sale, Research, Purchase, vor dem Kauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293035"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434608"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -31,15 +31,11 @@ ms.locfileid: "92293035"
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Welche Hersteller verkaufen Windows Mixed Reality-Geräte?
 
-**Schnelle Antwort:** Mit den-und-Zeit Controllern von "Acer", "Asus", "Samsung" und " Siehe <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>.
+**Schnelle Antwort:** In HP sind aktuell Headsets und Motion-Controller verfügbar. Siehe <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Wo kann ich eigenständige Motion-Controller erwerben?
 
 **Schnelle Antwort:** Leider kennen wir derzeit keine Einzelhandels Händler, die eigenständige Motion-Controller verkaufen.
-
-### <a name="what-is-the-price-point"></a>Was ist der Preispunkt?
-
-**Schnelle Antwort:** Die Preise für Headset und Controller variieren je nach Hersteller und Händler. <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>Informationen zu gemischten Reality-Geräten finden Sie unter Microsoft.
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Worin besteht der Unterschied zwischen Windows Mixed Reality-PCs und Windows Mixed Reality Ultra PC?
 
@@ -47,7 +43,7 @@ ms.locfileid: "92293035"
 
 ### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Warum wird dies als "Gemischte Realität" bezeichnet, wenn die Geräte so aussehen, als würden Sie eine "virtuelle Realität" bereitstellen?
 
-**Schnelle Antwort:** Gemischte Realität bezieht sich auf das gesamte Spektrum an räumlichem Computing, von Augmented Reality und holograms bis hin zu Virtual Reality. Die gemischte Reality-Plattform von Microsofts unterstützt sowohl Virtual Reality als auch erweiterte Realität. Wir unterstützen derzeit zwei Gerätetypen mit einer ähnlichen Technologie für dieses Spektrum: hololens (AR) und Windows Mixed Reality (VR)-Headsets mit Motion Controller.
+**Schnelle Antwort:** Gemischte Realität bezieht sich auf das gesamte Spektrum an räumlichem Computing, von Augmented Reality und holograms bis hin zu Virtual Reality. Die Windows Mixed Reality-Plattform unterstützt Geräte in der virtuellen Realität (VR) und in der erweiterten Realität (AR). Wir unterstützen derzeit zwei Gerätetypen mit einer ähnlichen Technologie für dieses Spektrum: hololens (AR) und Windows Mixed Reality (VR)-Headsets mit Motion Controller.
 
 Weitere Informationen zu gemischter Realität finden Sie hier: <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -71,7 +67,7 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Kann die in-out-Nachverfolgung von Bewegungs Controllern aufgrund von Kamera-FOV meine Spiel Wiedergabe beeinflussen?
 
- Wie bei den Headsets ist für Windows Mixed Reality Motion Controller keine Einrichtung externer Überwachungs Sensoren erforderlich. Stattdessen werden die Controller von Sensoren im Headset selbst nachverfolgt. Wenn der Benutzer die Controller aus dem Feld des endfelds der Ansicht verschiebt, werden in den meisten Fällen die Controller Positionen von Windows weiter abgeleitet und der APP bereitgestellt. Wenn die visuelle Überwachung für den Controller lange genug verloren gegangen ist, werden die Positionen des Controllers auf Positionen mit ungefähren Genauigkeit abgelegt. An diesem Punkt sperrt das System den Controller für den Benutzer, wobei die Position des Benutzers nachverfolgt wird, während er sich bewegt, während er weiterhin die echte Ausrichtung des Controllers mithilfe der internen Ausrichtungs Sensoren verfügbar macht. Viele apps, die Controller verwenden, um auf Benutzeroberflächen Elemente zu verweisen und diese zu aktivieren, können normal funktionieren, ohne dass der Benutzer dies bemerkt. Die beste Möglichkeit, dies zu erreichen, besteht darin, es selbst auszuprobieren. Besuchen Sie einen Microsoft Store in Ihrer Nähe, und probieren Sie es aus! In der Zwischenzeit finden Sie hier ein Video mit Beispielen für den immersiven Inhalt, der mit Bewegungs Controllern über verschiedene Überwachungs Zustände hinweg funktioniert:
+ Wie bei den Headsets ist für Windows Mixed Reality Motion Controller keine Einrichtung externer Überwachungs Sensoren erforderlich. Stattdessen werden die Controller von Sensoren im Headset selbst nachverfolgt. Wenn der Benutzer die Controller aus dem Feld des endfelds der Ansicht verschiebt, werden in den meisten Fällen die Controller Positionen von Windows weiter abgeleitet und der APP bereitgestellt. Wenn die visuelle Überwachung für den Controller lange genug verloren gegangen ist, werden die Positionen des Controllers auf Positionen mit ungefähren Genauigkeit abgelegt. An diesem Punkt sperrt das System den Controller für den Benutzer, wobei die Position des Benutzers nachverfolgt wird, während er sich bewegt, während er weiterhin die echte Ausrichtung des Controllers mithilfe der internen Ausrichtungs Sensoren verfügbar macht. Viele apps, die Controller verwenden, um auf Benutzeroberflächen Elemente zu verweisen und diese zu aktivieren, können normal funktionieren, ohne dass der Benutzer dies bemerkt. Die beste Möglichkeit, dies zu erreichen, besteht darin, es selbst auszuprobieren.
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Wie unterscheidet sich Windows Mixed Reality von Samsung Gear VR?
 
@@ -307,7 +303,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Unterstützt die Windows Mixed Reality-Plattform die Unterstützung von Hard-und Vive Hardware?
 
-**Schnelle Antwort:** Windows Mixed Reality funktioniert nur mit genehmigten Windows Mixed Reality-Headsets/-Controllern. Siehe <https://www.microsoft.com/en-us/store/b/virtualreality>.
+**Schnelle Antwort:** Windows Mixed Reality funktioniert nur mit genehmigten Windows Mixed Reality-Headsets/-Controllern. Siehe <https://www.microsoft.com/en-us/store/b/virtualreality>
 
 ## <a name="motion-controllers"></a>Motion-Controller
 
@@ -315,7 +311,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 **Schnelle Antwort:** Windows Mixed Reality Motion Controllers verwenden Bluetooth. Abhängig vom Headset werden die Motion-Controller entweder mit dem Bluetooth-Radio auf dem Headset gekoppelt (falls ausgestattet) oder mit dem Bluetooth-Radio auf Ihrem PC.
 
-* Einige Windows Mixed Reality-Headsets, einschließlich der Tools "Acer Ojo 500", "Samsung Odyssee +" und "HP Reverb", verfügen über integrierte Bluetooth-Radios für die Verwendung mit Motion-Controllern. Die Motion-Controller, die mit diesen Headsets geliefert werden, sind mit dem Headset von der Factory vorab gekoppelt, und es ist nicht erforderlich, dass Ihr PC über ein separates Bluetooth-Radio verfügt.
+* Einige Windows Mixed Reality-Headsets, einschließlich der Tools "Acer Ojo 500", "Samsung Odyssee +", "HP-Reverb" und "HP Reverb G2", sind für die Verwendung mit Motion-Controllern integriert. Die Motion-Controller, die mit diesen Headsets geliefert werden, sind mit dem Headset von der Factory vorab gekoppelt, und es ist nicht erforderlich, dass Ihr PC über ein separates Bluetooth-Radio verfügt.
 * Andere Windows Mixed Reality-Headsets müssen mit einem Bluetooth-Radio auf Ihrem PC gekoppelt werden.
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Sind Windows Mixed Reality Motion Controller zwischen Windows Mixed Reality-Headsets Kreuz kompatibel?
@@ -336,11 +332,11 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>Funktioniert Windows Mixed Reality mit meinen Oculus-Touchscreen-Controllern oder HTC Vive-Headsets/-Controllern?
 
-**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>.
+**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>Funktioniert Windows Mixed Reality mit meinen steamvr-Knuckle-Controllern?
 
-**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>.
+**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>Unterstützt Windows Mixed Reality meinen Xbox One-Controller mit dem drahtlosen Xbox-Adapter?
 
@@ -372,7 +368,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 **Schnelle Antwort:** Ja, die gemischte Realität von Windows funktioniert auch, wenn Sie nicht viel Platz haben. Sie können dies während des Setups festlegen, indem Sie die "Desk-Scale"-Funktion auswählen.
 
-## <a name="content"></a>Inhalt
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Welche Spiele und apps werden in Windows Mixed Reality ausgeführt?
 
