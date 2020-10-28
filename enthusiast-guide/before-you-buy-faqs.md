@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Pre-Sale, Research, Purchase, vor dem Kauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434608"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907442"
 ---
 # <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434608"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Wo kann ich einen Windows Mixed Reality-fähigen PC oder ein Headset kaufen?
 
-**Schnelle Antwort:** Sie können einen Windows Mixed Reality-fähigen PC oder ein Headset bei einem genehmigten lokalen Händler oder online über eine Vielzahl von Einzelhändlern erwerben, einschließlich der Microsoft Store. Suchen Sie online nach einem Windows Mixed Reality Ready-PC oder-Headset: <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Schnelle Antwort:** Sie können einen Windows Mixed Reality-fähigen PC oder ein Headset bei einem genehmigten lokalen Händler oder online über eine Vielzahl von Einzelhändlern erwerben, einschließlich der Microsoft Store. Suchen Sie online nach einem Windows Mixed Reality Ready-PC oder-Headset: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Wo kann ich Windows Mixed Reality ausprobieren?
 
-**Schnelle Antwort:** Sie können Windows Mixed Reality bei einem [Microsoft-Reaktor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) in Ihrer Nähe ausprobieren.  
-* Suchen Sie Ihren lokalen Microsoft-Reaktor: <https://www.microsoft.com/en-us/store/locations/all-locations>
+**Schnelle Antwort:** Sie können Windows Mixed Reality bei einem [Microsoft-Reaktor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) in Ihrer Nähe ausprobieren.
+
 * Suchen Sie nach Microsoft-Reaktor Ereignissen auf Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Welche Hersteller verkaufen Windows Mixed Reality-Geräte?
 
-**Schnelle Antwort:** In HP sind aktuell Headsets und Motion-Controller verfügbar. Siehe <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**Schnelle Antwort:** In HP sind aktuell Headsets und Motion-Controller verfügbar. Siehe <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>.
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>Wo kann ich eigenständige Motion-Controller erwerben?
 
@@ -51,7 +51,7 @@ Weitere Informationen zu gemischter Realität finden Sie hier: <https://docs.mic
 
 **Schnelle Antwort:** Windows Mixed Reality-Headsets-Feature: in-out-Nachverfolgung (Überwachungskameras sind im Headset) und Plug-and-Play-Setup mit Windows 10.
 
-**Ausführlichere Informationen**: Windows Mixed Reality bietet verschiedene Features, wie z. a. einfaches Setup (keine Notwendigkeit externer Sensoren, Sie und ihre Controller zu verfolgen), die Auswahl von Headsets zum erfüllen Ihres Komforts und Preis Punkts, von Headsets mit Wettbewerbs Auflösungen und schließlich eine einzigartige Benutzerfreundlichkeit, die eine räumliche Oberfläche bietet, die es Ihnen ermöglicht, Tausende von Apps aus der Microsoft Store zu verwenden.
+**Ausführlichere Informationen** : Windows Mixed Reality bietet verschiedene Features, wie z. a. einfaches Setup (keine Notwendigkeit externer Sensoren, Sie und ihre Controller zu verfolgen), die Auswahl von Headsets zum erfüllen Ihres Komforts und Preis Punkts, von Headsets mit Wettbewerbs Auflösungen und schließlich eine einzigartige Benutzerfreundlichkeit, die eine räumliche Oberfläche bietet, die es Ihnen ermöglicht, Tausende von Apps aus der Microsoft Store zu verwenden.
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Bedeutet gemischte Realität, dass die in-out-Kameras Passthrough sind? Kann die erweiterte Realität zusätzlich zu Virtual Reality angezeigt werden?
 
@@ -257,7 +257,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Haben die Mixed Reality-Headsets IPD-Anpassung?
 
-**Schnelle Antwort:** Abhängig vom Headset sind einige gemischte Reality-Headsets in der mechanischen IPD-Anpassung enthalten. Andere Features für die IPD-Funktion von Headsets-Features, die die Bildverzerrung und die Tiefe Genauigkeit basierend auf Ihrer IPD verbessern. Benutzer können Ihre benutzerdefinierte IPD über **Einstellungen festlegen > gemischte Realität > Headset >-Kalibrierung anzeigen**.
+**Schnelle Antwort:** Abhängig vom Headset sind einige gemischte Reality-Headsets in der mechanischen IPD-Anpassung enthalten. Andere Features für die IPD-Funktion von Headsets-Features, die die Bildverzerrung und die Tiefe Genauigkeit basierend auf Ihrer IPD verbessern. Benutzer können Ihre benutzerdefinierte IPD über **Einstellungen festlegen > gemischte Realität > Headset >-Kalibrierung anzeigen** .
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Haben die Mixed Reality-Headsets eine Anpassung an die Augen Hilfe?
 
@@ -303,7 +303,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="does-the-windows-mixed-reality-platform-support-rift-and-vive-hardware"></a>Unterstützt die Windows Mixed Reality-Plattform die Unterstützung von Hard-und Vive Hardware?
 
-**Schnelle Antwort:** Windows Mixed Reality funktioniert nur mit genehmigten Windows Mixed Reality-Headsets/-Controllern. Siehe <https://www.microsoft.com/en-us/store/b/virtualreality>
+**Schnelle Antwort:** Windows Mixed Reality funktioniert nur mit genehmigten Windows Mixed Reality-Headsets/-Controllern. Siehe <https://www.microsoft.com/en-us/store/b/virtualreality>.
 
 ## <a name="motion-controllers"></a>Motion-Controller
 
@@ -332,11 +332,11 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>Funktioniert Windows Mixed Reality mit meinen Oculus-Touchscreen-Controllern oder HTC Vive-Headsets/-Controllern?
 
-**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>.
 
 ### <a name="will-windows-mixed-reality-work-with-my-steamvr-knuckle-controllers"></a>Funktioniert Windows Mixed Reality mit meinen steamvr-Knuckle-Controllern?
 
-**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>
+**Schnelle Antwort:** Nein, Windows Mixed Reality funktioniert nur mit genehmigten Headsets/Controllern. Siehe <https://www.microsoft.com/en-us/store/collections/VRandMixedrealityheadsets>.
 
 ### <a name="will-windows-mixed-reality-support-my-xbox-one-controller-with-the-wireless-xbox-adapter"></a>Unterstützt Windows Mixed Reality meinen Xbox One-Controller mit dem drahtlosen Xbox-Adapter?
 
@@ -368,7 +368,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 **Schnelle Antwort:** Ja, die gemischte Realität von Windows funktioniert auch, wenn Sie nicht viel Platz haben. Sie können dies während des Setups festlegen, indem Sie die "Desk-Scale"-Funktion auswählen.
 
-## <a name="content"></a>Content
+## <a name="content"></a>Inhalt
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Welche Spiele und apps werden in Windows Mixed Reality ausgeführt?
 
