@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
-keywords: Openxr, Khronos, basicxrapp, Windows Mixed Reality openxr Entwicklertools, DirectX, Native, Native APP, Custom Engine, Middleware, Getting Started, 101, Preview Extensions, openxr Runtime Version, Systemstatus
-ms.openlocfilehash: 2f176d591a7272bdcccf6d073e0407bc0d159c29
-ms.sourcegitcommit: d063c767117c055dc5d40c2bd5a680728fca95fb
+keywords: Openxr, Khronos, basicxrapp, Windows Mixed Reality, openxr Entwicklertools, DirectX, Native, Native APP, Custom Engine, Middleware, Getting Started, 101, Preview Extensions, openxr Runtime Version, Systemstatus
+ms.openlocfilehash: a641512bf36f2d791c009e6dfa83c1f9bd797547
+ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886868"
+ms.locfileid: "92903143"
 ---
 # <a name="getting-started-with-openxr"></a>Erste Schritte mit OpenXR
 
@@ -33,16 +33,15 @@ So beginnen Sie mit der Entwicklung von openxr-Anwendungen für immersive Window
 
 Das ist alles!  Die Windows Mixed Reality openxr-Laufzeit wird installiert und automatisch für alle Windows Mixed Reality-Benutzer aktiviert.  Der Microsoft Store speichert die Laufzeit dann auf dem neuesten Stand.
 
-Wenn Sie die Windows Mixed Reality-openxr-Laufzeit erneut aktivieren müssen, starten Sie das Mixed Reality-Portal über das Startmenü, und klicken Sie auf die... im Menü unten links, und wählen Sie "openxr einrichten".  Wenn dieses Menü Element fehlt, ist die openxr-Laufzeit bereits aktiv.<br>
-![Einrichten von openxr im Mixed Reality-Portal](images/mixed-reality-portal-set-up-openxr.png)
+Wenn Sie die Windows Mixed Reality openxr-Laufzeit erneut aktivieren müssen, starten Sie das Mixed Reality-Portal über das Startmenü, und klicken Sie im Banner am oberen Rand des Fensters auf "reparieren".  Wenn diese Schaltfläche fehlt, ist die openxr-Laufzeit bereits aktiv.<br>
 
-## <a name="getting-the-windows-mixed-reality-openxr-developer-tools"></a>Holen Sie sich den Windows Mixed Reality-openxr-Entwicklertools
+## <a name="getting-the-openxr-developer-tools-for-windows-mixed-reality"></a>Die openxr-Entwicklertools für die gemischte Realität von Windows
 
-Um die Windows Mixed Reality openxr-Laufzeit auszuprobieren, können Sie die <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">mixed reality-app openxr Entwicklertools</a>installieren.  Diese APP bietet eine Demo Szene, die verschiedene Features von openxr sowie eine Seite mit dem System Status ausführt, die wichtige Informationen zur aktiven Laufzeit und zum aktuellen Headset bereitstellt.
+Um die Windows Mixed Reality openxr-Laufzeit auszuprobieren, können Sie die <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">openxr-Entwicklertools für die Windows Mixed Reality-App</a>installieren.  Diese APP bietet eine Demo Szene, die verschiedene Features von openxr sowie eine Seite mit dem System Status ausführt, die wichtige Informationen zur aktiven Laufzeit und zum aktuellen Headset bereitstellt.
 
-Wenn Sie den hololens 2-Emulator verwenden, ist die einfachste Möglichkeit zum Installieren der gemischten Realität openxr Entwicklertools die das [Windows-Geräte Portal](../platform-capabilities-and-apis/using-the-windows-device-portal.md)verwendet, indem Sie zur Seite "openxr" navigieren und dann unter "Entwickler Features" auf die Schaltfläche "installieren" klicken. (dies funktioniert auch auf einem physischen hololens 2-Gerät.)
+Wenn Sie den hololens 2-Emulator verwenden, ist die einfachste Möglichkeit zum Installieren des openxr-Entwicklertools für Windows Mixed Reality die Verwendung des [Windows-Geräte Portals](../platform-capabilities-and-apis/using-the-windows-device-portal.md), indem Sie zur Seite "openxr" navigieren und dann unter "Entwickler Features" auf die Schaltfläche "installieren" klicken. (dies funktioniert auch auf einem physischen hololens 2-Gerät.)
 
-![Gemischte Realität openxr Entwicklertools-App](images/mixed-reality-openxr-developer-tools.png)
+![Openxr Entwicklertools für Windows Mixed Reality-App](images/mixed-reality-openxr-developer-tools.png)
 
 ## <a name="building-a-sample-openxr-app"></a>Aufbauen einer openxr-Beispiel-App
 
@@ -58,8 +57,7 @@ Nachdem Sie ein openxr UWP-App-Paket aufgebaut haben, können Sie [Dieses Paket]
 
 ## <a name="learning-the-openxr-api"></a>Erlernen der openxr-API
 
-Eine Tour durch die openxr-API finden Sie in diesem 60-minütigen Video, das den Code des <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">basicxrapp</a> -Beispiels in Visual Studio erläutert.  Das Video zeigt, wie die Hauptkomponenten der openxr-API in ihrer eigenen Engine verwendet werden können, und es werden auch einige der auf openxr erstellten Anwendungen veranschaulicht.
-
+Eine Tour durch die openxr-API finden Sie in diesem 60-minütigen Video, das den Code des <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">basicxrapp</a> -Beispiels in Visual Studio erläutert.  Das Video zeigt, wie die einzelnen Hauptkomponenten der openxr-API in ihrer eigenen Engine verwendet werden können, und es werden auch einige der Anwendungen veranschaulicht, die heute auf openxr basieren:
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
 ## <a name="integrate-the-openxr-loader-into-a-project"></a>Integrieren des openxr-Lade Moduls in ein Projekt
@@ -99,13 +97,11 @@ Wenn Sie die verfügbaren Erweiterungen testen möchten, führen Sie `MSFT_previ
 
 So aktivieren Sie die Vorschau Erweiterungs Unterstützung auf ihren Ziel-hololens 2 oder auf dem Desktop-PC:
   1. Um sicherzustellen, dass Sie über die neueste openxr-Laufzeit mit allen vorhandenen [Erweiterungen](openxr.md#roadmap) verfügen, starten Sie die Store-App aus dem Zielgerät oder Emulator, öffnen Sie das Menü in der oberen rechten Ecke, klicken Sie auf **Downloads und Updates** , und klicken Sie auf **Updates** herunter **Laden** .
-  1. Aktivieren Sie das Windows-Geräte Portal auf dem Zielgerät:
-     * Wenn das Zielgerät ein hololens 2-Gerät ist, [befolgen Sie diese Anweisungen](../platform-capabilities-and-apis/using-the-windows-device-portal.md) auf dem Zielgerät.  Beachten Sie, dass dies ein physisches Headset erfordert, da ein bekanntes Problem im hololens 2-Emulator verhindert, dass die Benutzeroberfläche im nächsten Schritt im Emulator angezeigt wird.
-     * Wenn Ihr Zielgerät ein Desktop-PC ist, dem eine immersive Headset-Peripherie angefügt ist, <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop#set-up-device-portal-on-windows-desktop" target="_blank">befolgen Sie diese Anweisungen</a> auf dem Desktop-Zielcomputer.
-  1. Navigieren Sie im linken Bereich zur Registerkarte **openxr** , und aktivieren Sie die Option **neueste Vorschauversion openxr-Laufzeit verwenden** .  Dadurch wird die Vorschau Laufzeit auf Ihrem Gerät aktiviert, für die Vorschau Erweiterungen aktiviert sind.
-     ![Kontrollkästchen für das Geräte Portal openxr Preview Runtime](images/device-portal-openxr-preview-runtime.png)
-  1. Vergewissern Sie sich, dass die auf der Registerkarte **System Status** des [Windows Mixed Reality openxr-Entwicklertools](openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) angezeigte **Laufzeitversion** nun mit der erforderlichen Version der Vorschau Erweiterungen übereinstimmt, die Sie ausprobieren möchten.  Wenn dies der Fall ist, sollte die Erweiterung in der Liste **Erweiterungen** angezeigt werden.  Beachten Sie, dass die Vorschau Erweiterung entfernt wird, sobald eine stabile Erweiterung verfügbar ist.<br />
-     ![Registerkarte "Gemischte Realität openxr Entwicklertools app System Status"](images/mixed-reality-openxr-developer-tools-status.png)
+  1. Installieren Sie die <a href="https://www.microsoft.com/store/productId/9n5cvvl23qbt" target="_blank">openxr-Entwicklertools für die Windows Mixed Reality-App</a> vom Microsoft Store auf dem Zielgerät, und führen Sie Sie aus.
+  1. Navigieren Sie zur Registerkarte **Entwicklereinstellungen** , und aktivieren Sie **neueste Vorschauversion openxr Runtime verwenden** .  Dadurch wird die Vorschau Laufzeit auf Ihrem Gerät aktiviert, für die Vorschau Erweiterungen aktiviert sind.
+     ![Openxr Entwicklertools für Windows Mixed Reality-App Developer Settings-Registerkarte](images/mixed-reality-openxr-developer-tools-settings.png)
+  1. Vergewissern Sie sich, dass die auf der Registerkarte **System Status** des [openxr-Entwicklertools für Windows Mixed Reality](openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) angezeigte **Laufzeitversion** nun mit der erforderlichen Version der Vorschau Erweiterungen übereinstimmt, die Sie ausprobieren möchten.  Wenn dies der Fall ist, sollte die Erweiterung in der Liste **Erweiterungen** angezeigt werden.  Beachten Sie, dass die Vorschau Erweiterung entfernt wird, sobald eine stabile Erweiterung verfügbar ist.<br />
+     ![Openxr Entwicklertools für Windows Mixed Reality-app System Status (Registerkarte)](images/mixed-reality-openxr-developer-tools-status.png)
 
 Eine Dokumentation zu diesen Vorschau Erweiterungen und Beispielen zur Verwendung finden Sie im Repository " <a href="https://github.com/microsoft/OpenXR-MixedReality#openxr-preview-extensions" target="_blank">Mixed Reality openxr</a> ".
 
