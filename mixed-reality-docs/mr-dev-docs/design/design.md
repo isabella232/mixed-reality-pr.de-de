@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Kernkonzepte, Interaktion
-ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
-ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058584"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293127"
 ---
 # <a name="start-designing-and-prototyping"></a>Mit Entwerfen und Prototyping beginnen
 
@@ -32,9 +32,9 @@ Wie alle Reisen beginnt Ihr Abenteuer im Entwerfen von Mixed Reality-Anwendungen
 
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
-| [Erweitern Ihres Entwurfsprozesses](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Verschaffen Sie sich aus erster Hand Einblick in Methoden, Erkenntnisse und Entwurfstheorien, die bei Mixed Reality-Entwicklern innerhalb und außerhalb von Microsoft zusammengetragen wurden |
+| [Erweitern Ihres Entwurfsprozesses](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Erhalten Sie aus erster Hand Einblick in einen Entwurfsprozess für Mixed Reality, der bei Entwicklern bei und außerhalb von Microsoft zusammengetragen wurde. |
 | [Typen von Mixed Reality-Apps](types-of-mixed-reality-apps.md) | Entscheiden Sie, wo im Mixed Reality-Spektrum das Erlebnis mit Ihrer App angesiedelt sein soll |
-| [App zum Entwerfen von Hologrammen](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Lernen Sie die Grundlagen des Mixed Reality-UX-Designs durch eigene Erfahrung, indem Sie in die Verhaltensweisen von Mixed Reality sowie Tipps und Empfehlungen zum Erstellen verblüffender HoloLens-Apps eintauchen |
+| [App zum Entwerfen von Hologrammen](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Lernen Sie die Grundlagen des Mixed Reality-UX-Designs durch eigene Erfahrung, indem Sie in die Verhaltensweisen von Mixed Reality sowie Tipps und Empfehlungen zum Erstellen verblüffender HoloLens-Apps eintauchen (steht für den Download im Microsoft Store in HoloLens 2 zur Verfügung) |
 
 ### <a name="2-core-concepts"></a>2. Kernkonzepte
 
@@ -46,7 +46,7 @@ Unabhängig davon, ob Sie für VR oder AR entwickeln, gibt es einige grundlegend
 | --- | --- |
 | [Holografischer Rahmen](holographic-frame.md) | Verstehen Sie, wie Benutzer beim Tragen ihrer Headsets Ihre Inhalte als Überlagerung der realen Welt sehen |
 | [Koordinatensysteme](coordinate-systems.md) | Lernen Sie, Hologramme an Positionen in der Welt zu platzieren, die für den Benutzer von Bedeutung sind, sei es ihr physischer Raum oder ein virtueller Bereich, den Sie geschaffen haben. |
-| [Räumliche Abbildung](spatial-mapping.md) | Verankern Sie Objekte in der Welt des Benutzers, und nutzen Sie die Tiefeninformationen der realen Welt. |
+| [Räumliche Abbildung](spatial-mapping.md) | Verankern Sie Objekte in der Welt des Benutzers, und nutzen Sie die physischen Oberflächen der realen Welt. |
 | [Komfortaspekte](comfort.md) | Sorgen Sie für Benutzerkomfort und Sicherheit, indem Sie immersive Inhalte auf eine Weise erstellen und präsentieren, die die natürliche Welt nachahmt. |
 
 ### <a name="3-interaction-design"></a>3. Interaktionsgestaltung
