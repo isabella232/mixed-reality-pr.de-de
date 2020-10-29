@@ -1,0 +1,68 @@
+---
+title: Fokuspunkt in Unity
+description: Manuelles Optimieren der – Hologramm-Stabilität in Unity durch Festlegen des Fokus Punkts
+author: thetuvix
+ms.author: alexturn
+ms.date: 03/21/2018
+ms.topic: article
+keywords: Unity, Fokuspunkt, Fokusebene, Stabilisierungs Ebene, Stabilisierungs Punkt, neuprojektion, LSR, tiefen Puffer
+ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91678975"
+---
+# <a name="focus-point-in-unity"></a>Fokuspunkt in Unity
+
+**Namespace:** *unityengine. XR. WSA*<br>
+**Typ** : *holographicsettings*
+
+Der [Fokuspunkt](../platform-capabilities-and-apis/hologram-stability.md#reprojection) kann so festgelegt werden, dass hololens einen Hinweis zur optimalen Durchführung der Stabilisierung auf den derzeit angezeigten holograms bereitstellt.
+
+Wenn Sie den Fokuspunkt in Unity festlegen möchten, muss er jedes Frame mithilfe von *holographicsettings. setfocuspointforframe ()* festgelegt werden. Wenn der Fokuspunkt nicht für einen Frame festgelegt ist, wird die Standard Stabilisierungs Ebene verwendet.
+
+> [!NOTE]
+> In neuen Unity-Projekten ist die Option "Tiefe Puffer Freigabe aktivieren" standardmäßig festgelegt.  Mit dieser Option sendet eine Unity-APP, die auf einem immersiven Desktop-Headset oder einem hololens ausgeführt wird, auf dem das Windows 10 April 2018 Update (RS4) oder höher ausgeführt wird, ihren tiefen Puffer an Windows, um die hologrammstabilität automatisch zu optimieren, ohne dass Ihre APP einen Schwerpunkt Punkt angibt:
+> * Auf einem immersiven Desktop-Headset wird dadurch eine auf pro Pixel basierende Reprojektion ermöglicht.
+> * Auf einem hololens, auf dem das Windows 10-Update vom April 2018 oder höher ausgeführt wird, wird der tiefen Puffer analysiert, um automatisch eine optimale Stabilisierungs Ebene auszuwählen.
+>
+> Beide Ansätze sollten eine noch bessere Bildqualität bieten, ohne dass Ihre APP explizit arbeiten muss, um für jeden Frame einen Schwerpunkt Punkt auszuwählen.  Beachten Sie Folgendes: Wenn Sie einen Schwerpunkt Punkt manuell angeben, wird das oben beschriebene automatische Verhalten überschrieben, und die Stabilität des Hologramms wird normalerweise verringert.  Im Allgemeinen sollten Sie nur dann einen manuellen Fokuspunkt angeben, wenn die APP auf einem hololens ausgeführt wird, der noch nicht auf das Windows 10-Update vom April 2018 aktualisiert wurde.
+
+### <a name="example"></a>Beispiel
+
+Es gibt viele Möglichkeiten, den Schwerpunkt Punkt festzulegen, wie von den über Ladungen für die statische Funktion *setfocuspointforframe* vorgeschlagen. Im folgenden finden Sie ein einfaches Beispiel für die Festlegung der Fokusebene auf das bereitgestellte-Objekt für jeden Frame:
+
+```cs
+public GameObject focusedObject;
+void Update()
+{
+    // Normally the normal is best set to be the opposite of the main camera's
+    // forward vector.
+    // If the content is actually all on a plane (like text), set the normal to
+    // the normal of the plane and ensure the user does not pass through the
+    // plane.
+    var normal = -Camera.main.transform.forward;     
+    var position = focusedObject.transform.position;
+    UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
+}
+```
+
+Beachten Sie, dass der obige einfache Code möglicherweise zu einer Verringerung der – Hologramm-Stabilität wird, wenn das fokussierte Objekt hinter dem Benutzer endet.  Daher sollten Sie in der Regel "Tiefe Puffer Freigabe aktivieren" festlegen, anstatt manuell einen Fokuspunkt anzugeben.
+
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+
+Wenn Sie der Unity-Entwicklungs-Prüfpunkt-Journey folgen, die wir festgelegt haben, sind Sie mitten in der Untersuchung der Funktionen und APIs der Mixed Reality-Plattform. Von hier aus können Sie mit dem nächsten Thema fortfahren:
+
+> [!div class="nextstepaction"]
+> [Verlust der Nachverfolgung](tracking-loss-in-unity.md)
+
+Oder direkt zur Bereitstellung der APP auf einem Gerät oder Emulator wechseln:
+
+> [!div class="nextstepaction"]
+> [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../platform-capabilities-and-apis/using-visual-studio.md)
+
+Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#3-platform-capabilities-and-apis) zurückkehren.
+
+### <a name="see-also"></a>Weitere Informationen
+* [Stabilisierungs Ebene](../platform-capabilities-and-apis/hologram-stability.md#reprojection)
