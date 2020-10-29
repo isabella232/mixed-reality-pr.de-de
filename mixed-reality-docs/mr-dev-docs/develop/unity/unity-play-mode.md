@@ -1,0 +1,36 @@
+---
+title: Unity-Wiedergabemodus
+description: Verwenden Sie den Wiedergabemodus im Unity-Editor, um eine Vorschau der Änderungen auf einem Gerät anzuzeigen, ohne eine APP bereitzustellen.
+author: jonmlyons
+ms.author: jlyons
+ms.date: 03/21/2018
+ms.topic: article
+keywords: Unity, Remoting, Holographic Remoting, Holographic Remoting Player
+ms.openlocfilehash: d7806493d9a3142f7f5ed78116a16a76adefc259
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91678978"
+---
+# <a name="unity-play-mode"></a><span data-ttu-id="f8c3e-104">Unity-Wiedergabemodus</span><span class="sxs-lookup"><span data-stu-id="f8c3e-104">Unity Play Mode</span></span>
+
+<span data-ttu-id="f8c3e-105">Eine schnelle Möglichkeit, an Ihrem Unity-Projekt zu arbeiten, ist die Verwendung des "Wiedergabemodus".</span><span class="sxs-lookup"><span data-stu-id="f8c3e-105">A fast way to work on your Unity project is to use "Play Mode".</span></span> <span data-ttu-id="f8c3e-106">Dadurch wird Ihre APP lokal im Unity-Editor auf Ihrem PC ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-106">This runs your app locally in the Unity editor on your PC.</span></span> <span data-ttu-id="f8c3e-107">Unity verwendet Holographic Remoting, um eine schnelle Möglichkeit zum Anzeigen einer Vorschau Ihrer Inhalte auf einem echten hololens-Gerät bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-107">Unity uses Holographic Remoting to provide a fast way to preview your content on a real HoloLens device.</span></span> <span data-ttu-id="f8c3e-108">Der Wiedergabemodus kann auch mit einem Windows Mixed Reality-Headset verwendet werden, das an ihren Entwicklungs-PC angeschlossen ist.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-108">Play Mode can also be used with a Windows Mixed Reality headset attached to your development PC.</span></span>
+
+## <a name="unity-play-mode-with-holographic-remoting"></a><span data-ttu-id="f8c3e-109">Unity-Wiedergabemodus mit Holographic-Remoting</span><span class="sxs-lookup"><span data-stu-id="f8c3e-109">Unity Play Mode with Holographic Remoting</span></span>
+
+<span data-ttu-id="f8c3e-110">Mit Holographic Remoting können Sie Ihre APP auf den hololens erleben, während Sie im Unity-Editor auf Ihrem PC ausgeführt wird.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-110">With Holographic Remoting, you can experience your app on the HoloLens, while it runs in the Unity editor on your PC.</span></span> <span data-ttu-id="f8c3e-111">Eingaben, Gesten, Stimme und räumliche zuordnungseingaben werden von ihren hololens an Ihren PC gesendet.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-111">Gaze, gesture, voice, and spatial mapping input is sent from your HoloLens to your PC.</span></span> <span data-ttu-id="f8c3e-112">Gerenderte Frames werden dann zurück an Ihre hololens gesendet.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-112">Rendered frames are then sent back to your HoloLens.</span></span> <span data-ttu-id="f8c3e-113">Dies ist eine gute Möglichkeit, Ihre APP schnell zu debuggen, ohne ein vollständiges Projekt zu entwickeln und bereitzustellen.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-113">This is a great way to quickly debug your app without building and deploying a full project.</span></span>
+1. <span data-ttu-id="f8c3e-114">Wechseln Sie auf Ihren hololens zum **Microsoft Store** , und installieren Sie die **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** -app.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-114">On your HoloLens, go to the **Microsoft Store** and install the **[Holographic Remoting Player](https://www.microsoft.com/store/p/holographic-remoting-player/9nblggh4sv40)** app.</span></span>
+2. <span data-ttu-id="f8c3e-115">Starten Sie auf Ihren hololens die **Holographic Remoting Player** -app.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-115">On your HoloLens, start the **Holographic Remoting Player** app.</span></span>
+3. <span data-ttu-id="f8c3e-116">Wechseln Sie in Unity zum Menü **Fenster** , und wählen Sie **Holographic Emulation** aus.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-116">In Unity, go to the **Window** menu and select **Holographic Emulation** .</span></span>
+4. <span data-ttu-id="f8c3e-117">Festlegen des **Emulations Modus** auf **Remote-zu-Gerät** .</span><span class="sxs-lookup"><span data-stu-id="f8c3e-117">Set **Emulation Mode** to **Remote to Device** .</span></span>
+5. <span data-ttu-id="f8c3e-118">Geben Sie für **Remote Computer** die IP-Adresse der hololens ein.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-118">For **Remote Machine** , enter the IP address of your HoloLens.</span></span>
+6. <span data-ttu-id="f8c3e-119">Klicken Sie auf **Verbinden** .</span><span class="sxs-lookup"><span data-stu-id="f8c3e-119">Click **Connect** .</span></span> <span data-ttu-id="f8c3e-120">Der **Verbindungs Status** sollte in **verbunden** angezeigt werden, und der Bildschirm wechselt in den hololens leer.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-120">You should see **Connection Status** change to **Connected** and see the screen go blank in the HoloLens.</span></span>
+7. <span data-ttu-id="f8c3e-121">Klicken Sie auf die **Wiedergabe** Schaltfläche, um den Wiedergabemodus zu starten und die APP auf Ihren hololens zu erleben</span><span class="sxs-lookup"><span data-stu-id="f8c3e-121">Click the **Play** button to start Play Mode and experience the app on your HoloLens.</span></span>
+
+<span data-ttu-id="f8c3e-122">Holographic Remoting erfordert eine schnelle PC-und Wi-Fi-Verbindung.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-122">Holographic Remoting requires a fast PC and Wi-Fi connection.</span></span> <span data-ttu-id="f8c3e-123">Ausführliche Informationen finden Sie unter [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) .</span><span class="sxs-lookup"><span data-stu-id="f8c3e-123">See [Holographic Remoting Player](../platform-capabilities-and-apis/holographic-remoting-player.md) for full details.</span></span>
+
+<span data-ttu-id="f8c3e-124">Um optimale Ergebnisse zu erzielen, stellen Sie sicher, dass Ihre APP den [Fokuspunkt](focus-point-in-unity.md)ordnungsgemäß festlegt.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-124">For best results, make sure your app properly sets the [focus point](focus-point-in-unity.md).</span></span> <span data-ttu-id="f8c3e-125">Dies hilft Holographic Remoting bei der optimalen Anpassung Ihrer Szene an die Latenz Ihrer drahtlosen Verbindung.</span><span class="sxs-lookup"><span data-stu-id="f8c3e-125">This helps Holographic Remoting to best adapt your scene to the latency of your wireless connection.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="f8c3e-126">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="f8c3e-126">See Also</span></span>
+* [<span data-ttu-id="f8c3e-127">Holographic Remoting-Player</span><span class="sxs-lookup"><span data-stu-id="f8c3e-127">Holographic Remoting Player</span></span>](../platform-capabilities-and-apis/holographic-remoting-player.md)
