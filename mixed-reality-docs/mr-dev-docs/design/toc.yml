@@ -1,0 +1,152 @@
+- name: Mit Entwerfen und Prototyping beginnen
+  href: design.md
+- name: Informationen zu dieser Entwurfsanleitung
+  href: about-this-design-guidance.md
+- name: Kernkonzepte
+  items:
+    - name: Übersicht
+      href: core-concepts-landingpage.md
+    - name: App-Modell
+      href: app-model.md
+    - name: App-Ansichten
+      href: app-views.md
+    - name: Komfort
+      href: comfort.md
+    - name: Koordinatensysteme
+      href: coordinate-systems.md
+    - name: Eyetracking – Blickverfolgung
+      href: eye-tracking.md
+    - name: Holografischer Rahmen
+      href: holographic-frame.md
+    - name: Raumabtastvisualisierung
+      href: room-scan-visualization.md
+    - name: Grundlegendes zu Szenen
+      href: scene-understanding.md
+    - name: Raumanker
+      href: spatial-anchors.md
+    - name: Sound
+      href: spatial-sound.md
+    - name: Räumliche Abbildung
+      href: spatial-mapping.md
+    - name: System-Geste
+      href: system-gesture.md
+    - name: Typen von Mixed Reality-Apps
+      href: types-of-mixed-reality-apps.md
+    - name: Entwerfen von Inhalten für die holografische Anzeige
+      href: designing-content-for-holographic-display.md
+- name: Interaktionsmodelle
+  items:
+    - name: Instinktive Interaktionen
+      href: interaction-fundamentals.md
+    - name: Hand- und Bewegungscontroller-Modell
+      items:
+        - name: Direkte Manipulation mit den Händen
+          href: direct-manipulation.md
+        - name: Hand- und Bewegungscontroller
+          href: hands-and-tools.md
+        - name: Bewegungscontroller
+          href: motion-controllers.md
+        - name: Zeigen und Bestätigen mit den Händen
+          href: point-and-commit.md
+    - name: Freihändiges Modell
+      items:
+        - name: Freihändig
+          href: hands-free.md
+        - name: Spracheingabe
+          href: voice-input.md
+        - name: Anvisieren und Verweilen
+          items:
+            - name: Anvisieren und Verweilen
+              href: gaze-and-dwell.md
+            - name: Anvisieren und Verweilen
+              href: gaze-and-dwell-eyes.md
+            - name: Anvisieren mit dem Kopf und Verweilen
+              href: gaze-and-dwell-head.md
+    - name: Anvisieren und Bestätigen
+      items:
+        - name: Anvisieren und Bestätigen
+          href: gaze-and-commit.md
+        - name: Anvisieren mit den Augen und Ausführen
+          href: gaze-and-commit-eyes.md
+        - name: Anvisieren mit dem Kopf und Ausführen
+          href: gaze-and-commit-head.md
+    - name: Interaktion durch Anvisieren
+      href: eye-gaze-interaction.md
+- name: UX-Elemente
+  items:
+    - name: Übersicht
+      href: app-patterns-landingpage.md
+    - name: Grundlegende Elemente
+      items:
+        - name: 'Farbe, Licht und Materialien'
+          href: color-light-and-materials.md
+        - name: Skalieren
+          href: scale.md
+        - name: Typografie
+          href: typography.md
+        - name: Sound
+          items:
+            - name: Sound
+              href: spatial-sound-design.md
+            - name: 'Fallstudie: Holotour'
+              href: case-study-spatial-sound-design-for-holotour.md
+            - name: 'Fallstudie: Roboraid'
+              href: case-study-using-spatial-sound-in-roboraid.md
+    - name: Steuerelemente und Verhaltensweisen
+      items:
+        - name: Cursor
+          href: cursors.md
+        - name: Handstrahl
+          href: point-and-commit.md
+        - name: Schaltfläche
+          href: button.md
+        - name: Interaktionsfähiges Objekt
+          href: interactable-object.md
+        - name: Begrenzungsrahmen und App-Leiste
+          href: app-bar-and-bounding-box.md
+        - name: Manipulation
+          href: direct-manipulation.md
+        - name: Handmenü
+          href: hand-menu.md
+        - name: Nähemenü
+          href: near-menu.md
+        - name: Objektsammlung
+          href: object-collection.md
+        - name: Spracheingabe
+          href: voice-input.md
+        - name: Tastatur
+          href: keyboard.md
+        - name: QuickInfo
+          href: tooltip.md
+        - name: Filmklappe
+          href: slate.md
+        - name: Schieberegler
+          href: slider.md
+        - name: Shader
+          href: shader.md
+        - name: Dialog
+          href: dialog-ui.md
+        - name: Hand Coach
+          href: hand-coach.md
+        - name: Raum-Mesh
+          href: spatial-mesh-ux.md
+        - name: Billboarding und Tag-along
+          href: billboarding-and-tag-along.md
+        - name: Anzeigen des Fortschritts
+          href: progress.md
+        - name: Oberflächenmagnetismus
+          href: surface-magnetism.md
+- name: Ressourcen
+  items:
+    - name: Learn-Hilfsprogramm
+      href: 'https://learn.unity.com/'
+    - name: Mixed Reality-Toolkit
+      href: 'https://github.com/Microsoft/MixedRealityToolkit-Unity'
+    - name: Mixed Reality-Design-Labs
+      href: 'https://github.com/microsoft/MixedRealityDesignLabs_Unity'
+    - name: Microsoft Maquette
+      href: 'https://www.maquette.ms/'
+    - name: Inhaltsobjekt-Erstellungsprozess
+      href: asset-creation-process.md
+    - name: Entwerfen eigener immersiver Umgebungen
+      href: add-custom-home-environments.md
