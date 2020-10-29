@@ -1,0 +1,68 @@
+---
+title: Spectator View
+description: Visualisieren Sie Hologramme von einem externen Gerät als Mittel zur Darstellung eines Mixed Reality-Erlebnisses auf einem externen Display oder zur Aufzeichnung eines Mixed Reality-Erlebnisses.
+author: chrisfromwork
+ms.author: chriba
+ms.date: 02/11/2019
+ms.topic: article
+ms.localizationpriority: high
+keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Kamera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, Demo, aufzeichnen
+ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: HT
+ms.contentlocale: de-DE
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91698174"
+---
+# <a name="spectator-view-for-hololens-and-hololens-2"></a><span data-ttu-id="bdd0a-104">Spectator View für HoloLens und HoloLens 2</span><span class="sxs-lookup"><span data-stu-id="bdd0a-104">Spectator View for HoloLens and HoloLens 2</span></span>
+
+![Marker](images/SpecViewPhoneHero.jpg)
+
+## <a name="overview"></a><span data-ttu-id="bdd0a-106">Übersicht</span><span class="sxs-lookup"><span data-stu-id="bdd0a-106">Overview</span></span>
+
+<span data-ttu-id="bdd0a-107">Beim Tragen einer HoloLens vergessen wir oft, dass eine Person, die sie nicht trägt, all die Wunder, die wir erfahren, nicht erleben kann.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-107">When wearing a HoloLens, we often forget that a person who does not have it on is unable to experience the wonders that we can.</span></span> <span data-ttu-id="bdd0a-108">Mit Spectator View können andere auf einem zweidimensionalen Bildschirm sehen, was HoloLens-Benutzer in ihrer Welt sehen.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-108">Spectator View allows others to see on a 2D screen what a HoloLens user sees in their world.</span></span>
+<span data-ttu-id="bdd0a-109">Spectator View bietet einen schnellen und bezahlbaren Ansatz zum Aufzeichnen von Hologrammen in HD mit mobilen Geräten.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-109">Spectator View offers a fast and affordable approach to recording holograms in HD with mobile devices.</span></span> <span data-ttu-id="bdd0a-110">Ferner bietet es die Möglichkeit zur Aufzeichnung von Hologrammen mit Videokameras in professioneller Qualität.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-110">It also offers a professional quality recording of holograms with video cameras.</span></span>
+
+## <a name="key-resources"></a><span data-ttu-id="bdd0a-111">Wichtige Ressourcen</span><span class="sxs-lookup"><span data-stu-id="bdd0a-111">Key Resources</span></span>
+
+* [<span data-ttu-id="bdd0a-112">**Spectator View auf GitHub**</span><span class="sxs-lookup"><span data-stu-id="bdd0a-112">**Spectator View on GitHub**</span></span>](https://github.com/microsoft/MixedReality-SpectatorView)
+* [<span data-ttu-id="bdd0a-113">**Spectator View-Dokumentation**</span><span class="sxs-lookup"><span data-stu-id="bdd0a-113">**Spectator View Documentation**</span></span>](https://microsoft.github.io/MixedReality-SpectatorView/README.html)
+* [<span data-ttu-id="bdd0a-114">**Spectator View-Beispiele**</span><span class="sxs-lookup"><span data-stu-id="bdd0a-114">**Spectator View Samples**</span></span>](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
+
+## <a name="use-cases"></a><span data-ttu-id="bdd0a-115">Anwendungsfälle</span><span class="sxs-lookup"><span data-stu-id="bdd0a-115">Use Cases</span></span>
+* <span data-ttu-id="bdd0a-116">Sie können ein Mixed Reality-Erlebnis mithilfe eines iPhone- oder Android-Geräts aufzeichnen.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-116">You can record a mixed reality experience using an iPhone or Android device.</span></span> <span data-ttu-id="bdd0a-117">Zeichnen Sie in Full HD auf, und wenden Sie Antialiasing auf Hologramme und sogar auf Schatten an.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-117">Record in full HD and apply anti-aliasing to holograms and even shadows.</span></span> <span data-ttu-id="bdd0a-118">Dies ist eine kostengünstige und schnelle Möglichkeit zum Erfassen von Videos von Hologrammen.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-118">It is a cost-effective and quick way to capture video of holograms.</span></span>
+* <span data-ttu-id="bdd0a-119">Streamen Sie von Ihrem iPhone oder iPad verzögerungsfrei Mixed Reality-Erlebnisse live auf ein Apple TV!</span><span class="sxs-lookup"><span data-stu-id="bdd0a-119">Stream live mixed reality experiences to an Apple TV directly from your iPhone or iPad, lag-free!</span></span>
+* <span data-ttu-id="bdd0a-120">Teilen Sie das Erlebnis mit Gästen: Lassen Sie Benutzer ohne HoloLens Hologramme direkt auf Ihren Smartphones oder Tablets erleben.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-120">Share the experience with guests: Let non-HoloLens users experience holograms directly from their phones or tablets.</span></span>
+
+## <a name="current-features"></a><span data-ttu-id="bdd0a-121">Aktuelle Features</span><span class="sxs-lookup"><span data-stu-id="bdd0a-121">Current Features</span></span>
+
+* <span data-ttu-id="bdd0a-122">Synchronisierung von Hologrammen im Raum, sodass alle die Hologramme an genau der gleichen Stelle sehen.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-122">Spatial synchronization of Holograms, so everyone sees holograms in the exact same place.</span></span>
+* <span data-ttu-id="bdd0a-123">Unterstützung für iOS- (ARKit-fähige Geräte) und Android-Geräte (ARCore-fähige Geräte).</span><span class="sxs-lookup"><span data-stu-id="bdd0a-123">iOS (ARKit-enabled devices) and Android (ARCore-enabled devices) support.</span></span>
+<span data-ttu-id="bdd0a-124">Mehrere iOS-Gäste.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-124">Multiple iOS guests.</span></span>
+<span data-ttu-id="bdd0a-125">Aufzeichnung von Video + Hologrammen + Raumklang + Hologrammklang.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-125">Recording of video + holograms + ambient sound + hologram sound.</span></span>
+<span data-ttu-id="bdd0a-126">Freigabeblatt, auf dem Sie Videos speichern, sie per E-Mail senden oder sie mit anderen unterstützten Apps teilen können.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-126">Share sheet so you can save video, email it, or share with other supporting apps.</span></span>
+
+<span data-ttu-id="bdd0a-127">![Marker](images/SpecViewPhoneDemo.jpg)
+![Marker](images/hololensspectatorview-500px.jpg) ![Marker](images/spectatorview-300px.png)</span><span class="sxs-lookup"><span data-stu-id="bdd0a-127">![Marker](images/SpecViewPhoneDemo.jpg)
+![Marker](images/hololensspectatorview-500px.jpg) ![Marker](images/spectatorview-300px.png)</span></span>
+
+<span data-ttu-id="bdd0a-128">In der folgenden Tabelle sind verschiedene Funktionen von Spectator View aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="bdd0a-128">The following table shows different Spectator View functionality and their capabilities.</span></span> <span data-ttu-id="bdd0a-129">Wählen Sie die Option aus, die Ihren Anforderungen an Videoaufzeichnung am besten entspricht:</span><span class="sxs-lookup"><span data-stu-id="bdd0a-129">Choose the option that best fits your video recording needs:</span></span>
+
+|      <span data-ttu-id="bdd0a-130">Funktionalität</span><span class="sxs-lookup"><span data-stu-id="bdd0a-130">Functionality</span></span>                                | <span data-ttu-id="bdd0a-131">Mobile</span><span class="sxs-lookup"><span data-stu-id="bdd0a-131">Mobile</span></span>                  |                    <span data-ttu-id="bdd0a-132">Videokamera</span><span class="sxs-lookup"><span data-stu-id="bdd0a-132">Video Camera</span></span>              |
+|--------------------------------------|:-----------------------:|:-------------------------------------------:|
+| <span data-ttu-id="bdd0a-133">HD-Qualität</span><span class="sxs-lookup"><span data-stu-id="bdd0a-133">HD quality</span></span>                           |         <span data-ttu-id="bdd0a-134">Full HD</span><span class="sxs-lookup"><span data-stu-id="bdd0a-134">Full HD</span></span>         |        <span data-ttu-id="bdd0a-135">Filmen in professioneller Qualität (durch die Videokamera bestimmt)</span><span class="sxs-lookup"><span data-stu-id="bdd0a-135">Professional quality filming (as determined by video camera)</span></span>      |
+| <span data-ttu-id="bdd0a-136">Einfache Kamerabewegung</span><span class="sxs-lookup"><span data-stu-id="bdd0a-136">Easy camera movement</span></span>                 |            <span data-ttu-id="bdd0a-137">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-137">✔</span></span>            |                      <span data-ttu-id="bdd0a-138">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-138">✔</span></span>                      |
+| <span data-ttu-id="bdd0a-139">Third-Person-Ansicht</span><span class="sxs-lookup"><span data-stu-id="bdd0a-139">Third-person view</span></span>                    |            <span data-ttu-id="bdd0a-140">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-140">✔</span></span>            |                      <span data-ttu-id="bdd0a-141">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-141">✔</span></span>                      |
+| <span data-ttu-id="bdd0a-142">Kann auf Bildschirme gestreamt werden</span><span class="sxs-lookup"><span data-stu-id="bdd0a-142">Can be streamed to screens</span></span>           |            <span data-ttu-id="bdd0a-143">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-143">✔</span></span>            |                      <span data-ttu-id="bdd0a-144">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-144">✔</span></span>                      |
+| <span data-ttu-id="bdd0a-145">Portabel</span><span class="sxs-lookup"><span data-stu-id="bdd0a-145">Portable</span></span>                             |            <span data-ttu-id="bdd0a-146">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-146">✔</span></span>            |                                             |
+| <span data-ttu-id="bdd0a-147">Drahtlos</span><span class="sxs-lookup"><span data-stu-id="bdd0a-147">Wireless</span></span>                             |            <span data-ttu-id="bdd0a-148">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-148">✔</span></span>            |                                             |
+| <span data-ttu-id="bdd0a-149">Zusätzlich erforderliche Hardware</span><span class="sxs-lookup"><span data-stu-id="bdd0a-149">Additional required hardware</span></span>         |     <span data-ttu-id="bdd0a-150">Android-Smartphone, iPhone</span><span class="sxs-lookup"><span data-stu-id="bdd0a-150">Android phone, iPhone</span></span>    | <span data-ttu-id="bdd0a-151">HoloLens + Rig + Stativ + Videokamera + PC + Unity</span><span class="sxs-lookup"><span data-stu-id="bdd0a-151">HoloLens + Rig + Tripod + Video Camera + PC + Unity</span></span> |
+| <span data-ttu-id="bdd0a-152">Hardwareinvestition</span><span class="sxs-lookup"><span data-stu-id="bdd0a-152">Hardware investment</span></span>                  |           <span data-ttu-id="bdd0a-153">Niedrig</span><span class="sxs-lookup"><span data-stu-id="bdd0a-153">Low</span></span>            |                     <span data-ttu-id="bdd0a-154">Hoch</span><span class="sxs-lookup"><span data-stu-id="bdd0a-154">High</span></span>                    |
+| <span data-ttu-id="bdd0a-155">Plattformübergreifend</span><span class="sxs-lookup"><span data-stu-id="bdd0a-155">Cross-platform</span></span>                       |           <span data-ttu-id="bdd0a-156">Android, iOS</span><span class="sxs-lookup"><span data-stu-id="bdd0a-156">Android, iOS</span></span>   |                                             |
+| <span data-ttu-id="bdd0a-157">Synchronisierte Inhalte</span><span class="sxs-lookup"><span data-stu-id="bdd0a-157">Synchronized content</span></span>                 |            <span data-ttu-id="bdd0a-158">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-158">✔</span></span>            |                      <span data-ttu-id="bdd0a-159">✔</span><span class="sxs-lookup"><span data-stu-id="bdd0a-159">✔</span></span>                      |
+| <span data-ttu-id="bdd0a-160">Dauer des Runtime-Setups</span><span class="sxs-lookup"><span data-stu-id="bdd0a-160">Runtime setup duration</span></span>               |         <span data-ttu-id="bdd0a-161">Sofort</span><span class="sxs-lookup"><span data-stu-id="bdd0a-161">Instant</span></span>          |                     <span data-ttu-id="bdd0a-162">Langsam</span><span class="sxs-lookup"><span data-stu-id="bdd0a-162">Slow</span></span>                    |
+## <a name="see-also"></a><span data-ttu-id="bdd0a-163">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="bdd0a-163">See also</span></span>
+
+* [<span data-ttu-id="bdd0a-164">Mixed-Reality-Aufnahme</span><span class="sxs-lookup"><span data-stu-id="bdd0a-164">Mixed reality capture</span></span>](../../mixed-reality-capture.md) 
+* [<span data-ttu-id="bdd0a-165">Mixed Reality-Aufnahme für Entwickler</span><span class="sxs-lookup"><span data-stu-id="bdd0a-165">Mixed reality capture for developers</span></span>](mixed-reality-capture-for-developers.md)
+* [<span data-ttu-id="bdd0a-166">Gemeinsame Erlebnisse in Mixed Reality</span><span class="sxs-lookup"><span data-stu-id="bdd0a-166">Shared experiences in mixed reality</span></span>](shared-experiences-in-mixed-reality.md)
