@@ -8,14 +8,17 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Einstieg, Setup, Mixed Reality-Portal
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e04f29f834b2220f51f1748aa59e4188d8ad38d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686531"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915565"
 ---
 # <a name="install-windows-mixed-reality-software"></a>Installieren von Windows Mixed Reality-Software
+
+> [!div class="nextstepaction"]
+> [Get Mixed Reality](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
 ## <a name="launch-mixed-reality-portal"></a>Starten von Mixed Reality-Portal
 
@@ -66,7 +69,7 @@ Im folgenden finden Sie einige Dinge, die Sie möglicherweise sehen, dass [Fehle
 | Wenn diese Meldung angezeigt wird | Versuchen Sie Folgendes |
 | --- | --- |
 | Überprüfen des USB-Kabels | Stellen Sie eine Verbindung zwischen Ihrem Headset und einem anderen USB-Anschluss her (und stellen Sie sicher, dass es sich um einen USB-USB 3,0 Versuchen Sie außerdem, alle Extender oder Hubs zwischen dem Headset und dem Computer zu entfernen. |
-| Überprüfen des Anzeige Kabels | Probieren Sie Folgendes aus: <ul><li>Stellen Sie eine Verbindung zwischen Ihrem Headset und einem Display Port 1,2 oder höher bzw. "HDMI 1,4" oder höher her. Stellen Sie sicher, dass der Port mit der fortschrittlichsten Grafikkarte auf Ihrem PC übereinstimmt.</li><li>Wenn Sie einen Adapter verwenden, stellen Sie sicher, dass er 4K-fähig ist.</li><li>Versuchen Sie, einen anderen HDMI-Port zu verwenden</li><li>Wenn Sie einen externen Monitor an einem HDMI-Port angeschlossen haben, versuchen Sie stattdessen, ihn an einen DisplayPort zu binden, und verwenden Sie den HDMI-Port für das Headset.</li></ul> |
+| Überprüfen des Anzeige Kabels | Versuchen Sie Folgendes: <ul><li>Stellen Sie eine Verbindung zwischen Ihrem Headset und einem Display Port 1,2 oder höher bzw. "HDMI 1,4" oder höher her. Stellen Sie sicher, dass der Port mit der fortschrittlichsten Grafikkarte auf Ihrem PC übereinstimmt.</li><li>Wenn Sie einen Adapter verwenden, stellen Sie sicher, dass er 4K-fähig ist.</li><li>Versuchen Sie, einen anderen HDMI-Port zu verwenden</li><li>Wenn Sie einen externen Monitor an einem HDMI-Port angeschlossen haben, versuchen Sie stattdessen, ihn an einen DisplayPort zu binden, und verwenden Sie den HDMI-Port für das Headset.</li></ul> |
 | Wenn Fehler auftreten | Befolgen Sie die oben aufgeführten allgemeinen Schritte zur Problembehandlung. |
 
 ## <a name="review-and-accept-terms-and-conditions"></a>Geschäftsbedingungen überprüfen und akzeptieren
@@ -87,7 +90,7 @@ Auf dem Bildschirm wird die Meldung "Vorbereiten der Einrichtung" mit einem dreh
 
 ![Vorbereiten der Einrichtung](images/1050px-gettingsetup.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)
 * [Problembehandlung bei Installation](installation_errors.md)
