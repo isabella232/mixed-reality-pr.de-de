@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Windows Mixed Reality-FAQ
+title: Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality
 description: Hier erhalten Sie Antworten auf häufig gestellte Fragen bei der Arbeit mit Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685630"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044439"
 ---
-# <a name="using-windows-mixed-reality-faq"></a>Verwenden von Windows Mixed Reality-FAQ
+# <a name="using-windows-mixed-reality-faq"></a>Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality
 
 Wenn Sie Hilfe bei der Verwendung des Windows Mixed Reality-immersiven Headsets benötigen, lesen Sie diese Themen, um allgemeine Informationen und Problembehandlung zu erhalten.
 
@@ -61,7 +61,7 @@ Wenn Ihre Motion-Controller nicht ordnungsgemäß funktionieren, keine Verbindun
     * Bereit – die Controller sind alle festgelegt.
     * Verlorene Nachverfolgung – das gemischte Reality-Portal kann Ihre Controller nicht finden. Halten Sie diese vor dem Headset, und starten Sie Sie neu, indem Sie die **Windows** -Taste vier Sekunden lang drücken, und dann erneut 2 Sekunden.
     * Niedrige Akkukapazität – ersetzen Sie die Controller-Akkus.
-* Wenn Sie Wi-Fi verwenden, versuchen Sie, Ihren PC mit einem 5-GHz-WLAN zu verbinden, um drahtlose Störungen zu verringern. 
+* Wenn Sie Wi-Fi verwenden, versuchen Sie, Ihren PC mit einem 5-GHz-Wi-Fi Netzwerk zu verbinden, um drahtlose Störungen zu verringern. 
 * Wählen Sie für neuere Paare, die direkt mit den Controllern gekoppelt sind, die Option **"..."** aus. im **Mixed Reality-Portal** , und wählen Sie **Controller einrichten** aus. Dadurch gelangen Sie zur Headset-APP, um die Controller mit dem Headset zu koppeln.  
 * Für ältere Headsets, die nicht über integrierte Bluetooth verfügen, damit die Controller direkt paarweise gekoppelt werden:  
     * Wählen Sie Einstellungen > Geräte > Bluetooth & andere Geräte auf Ihrem PC aus, und stellen Sie sicher, dass die Controller als paarweise aufgeführt sind.Wenn dies nicht der Fall ist, müssen Sie Sie koppeln. 
@@ -95,7 +95,7 @@ Wenn die Etage ausgeschaltet ist (z. b. Wenn Sie unverankert sind), wählen Sie 
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Ich habe eine Meldung mit dem anbinden und Berechnen des PCs. Warum?
 
-Wenn Sie einen Laptop verwenden, funktioniert Windows Mixed Reality am besten, wenn der PC vollständig abgerechnet und angeschlossen ist. 
+Wenn Sie einen Laptop verwenden, funktioniert Windows Mixed Reality am besten, wenn der PC vollständig abgerechnet und angeschlossen ist.
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>Gewusst wie deinstallieren Sie Windows Mixed Reality?
 
@@ -106,14 +106,14 @@ Wenn Sie bereit sind, Ihr Headset erneut zu verwenden, binden Sie es ein, und da
 > [!NOTE]
 > Wenn eine Meldung mit dem Hinweis "das Entfernen von Windows Mixed Reality konnte nicht beendet werden" angezeigt wird, sind einige Dateien, einschließlich Informationen über Ihre Umgebung, möglicherweise weiterhin auf dem Computer. Dies kann zu Problemen führen, wenn Sie Windows Mixed Reality später erneut installieren.
 > 
-> Informationen dazu, wie Sie alle verbleibenden Windows Mixed Reality-Informationen manuell von Ihrem PC entfernen, finden Sie in **[diesem Artikel](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** . 
+> Informationen dazu, wie Sie alle verbleibenden Windows Mixed Reality-Informationen manuell von Ihrem PC entfernen, finden Sie in **[diesem Artikel](installation_errors.md)** .
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Mein Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality verwende
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Meine Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality verwende
 
-Wenn Sie eine WLAN-Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Bewegungs Controller möglicherweise das WLAN. Probieren Sie einen der folgenden Lösungsschritte aus:
+Wenn Sie eine Wi-Fi Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Bewegungs Controller möglicherweise das WLAN. Probieren Sie einen der folgenden Lösungsschritte aus:
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* Wechseln Sie zu einer WLAN-Verbindung mit 5 GHz, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/help/4000461)
+* Wechseln Sie zu einer Wi-Fi Verbindung mit 5 GHz, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/help/4000461)
 * Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion-Controller mit Ihrem PC zu verbinden. [Empfohlene Adapter anzeigen](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>Was ist die Einstellung der Erfahrungs Optionen?

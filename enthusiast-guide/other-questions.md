@@ -1,24 +1,25 @@
 ---
 title: Weitere Fragen
-description: Erweiterte Windows Mixed Reality-Problembehandlung, die über die standardmäßige Kundensupport Dokumentation hinausgeht.
+description: Weitere Tipps zur Problembehandlung in Windows Mixed Reality, die über die Standard-Support Dokumentation von Kunden hinausgehen.
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Deinstallieren von Windows Mixed Reality, unterstützte Sprachen
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8a035a4d113a0a53f41079709660f65bfa278a0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685822"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044459"
 ---
 # <a name="other-questions"></a>Weitere Fragen
 
 ## <a name="my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors"></a>Mein Grafiktreiber wird nicht unterstützt (Fehler beim Grafiktreiber Fehler).
 
 Suchen Sie nach "Dxdiag", und führen Sie es aus:
+
 1.  Wenn das Ergebnis "grundlegender Renderer" ist, ist der Grafiktreiber nicht installiert. So beheben Sie dieses Problem:
     * Wechseln Sie zu **Geräte-Manager > Aktion > suchen Sie nach Hardware Änderungen** .
     * Verwenden Sie Windows Update, um den Treiber zu aktualisieren.
@@ -57,10 +58,10 @@ Beachten Sie, dass Sie den Monitor erneut auswählen müssen, um bei jedem Neust
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>Meine Desktop-App zeigt nur einen schwarzen Bildschirm an.
 Wenn Ihr PC über eine NVIDIA Hybrid GPU verfügt, kann das Problem dadurch verursacht werden, dass NVIDIA-Gerät die runtimebroker.exe auf der diskreten GPU anstelle der integrierten GPU ausführen kann. Um dieses Problem zu beheben, befolgen Sie die Anweisungen unter "[Gewusst wie Erstellen von Optimus-Einstellungen für ein neues Programm](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)". zum Hinzufügen von C:\windows\system32\runtimebroker.exe und erzwingen der Durchführung auf dem Prozessor "integrierte Grafiken". 
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Mein Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality verwende.
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Meine Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality verwende.
 
-Wenn Sie eine WLAN-Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Bewegungs Controller möglicherweise das WLAN. Probieren Sie einen der folgenden Lösungsschritte aus:
-* Wechseln Sie zu einer WLAN-Verbindung mit 5 GHz, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/en-us/help/4000461)
+Wenn Sie eine Wi-Fi Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Bewegungs Controller möglicherweise das WLAN. Probieren Sie einen der folgenden Lösungsschritte aus:
+* Wechseln Sie zu einer Wi-Fi Verbindung mit 5 GHz, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/en-us/help/4000461)
 * Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion-Controller mit Ihrem PC zu verbinden. Siehe [Empfohlene Adapter](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Ich habe eine Meldung mit dem anbinden und Berechnen des PCs. Warum?
@@ -119,16 +120,16 @@ So deinstallieren Sie Windows Mixed Reality mithilfe der folgenden Befehle:
 2. Geben Sie im **Suchfeld** "regedit" ein, und wählen Sie dann "yes" (ja) aus.
 3. Entfernen Sie diese Registrierungs Werte:
    <ul>
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>, und löschen Sie dann "firstranunwar".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic\sprachlos andaudio,</b>und löschen Sie dann "preferdesktopspeaker" und "preferdesktopmic".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\ Speech_OneCore &gt; Einstellunen\holographic</b>und dann "disablespeechinput" löschen. Hinweis: die Registrierungs Elemente in HHKEY_CURRENT_USER müssen für jedes Benutzerkonto auf dem PC gelöscht werden, auf dem Windows Mixed Reality verwendet wurde.</li> 
-    <li><b>HKEY_LOCAL_MACHINE \software\microsoft\windows\currentversion\perceptionsimulationextensions</b>, und löschen Sie dann "DeviceID" und "Mode".</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>, und löschen Sie dann "ondevicelearningabgeschlossene".</li> 
+    <li>Löschen Sie <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, und löschen Sie dann "firstranunwar".</li> 
+    <li>Löschen Sie <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>, und löschen Sie dann "preferdesktopspeaker" und "preferdesktopmic".</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Einstellunen\holographic</b>und dann "disablespeechinput" löschen. Hinweis: die Registrierungs Elemente in HHKEY_CURRENT_USER müssen für jedes Benutzerkonto auf dem PC gelöscht werden, auf dem Windows Mixed Reality verwendet wurde.</li> 
+    <li>Löschen Sie <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>, und löschen Sie dann "DeviceID" und "Mode".</li> 
+    <li>Löschen Sie <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>, und löschen Sie dann "onde vicelearningabgeschlossene".</li> 
    </ul>
 4. Entfernen Sie die folgenden Registrierungsschlüssel: <ul>
-   <li> <b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holosi</b></li> 
-   <li> <b>HKEY_LOCAL_MACHINE \software\microsoft\windows\currentversion\holosi</b></li> 
-   <li> <b>HKEY_CURRENT_USER \software\microsoft\ Speech_OneCore \settings\holographicpreferences</b></li><br/></ul>
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. Schließen Sie den Registrierungs-Editor.
 6. Wechseln Sie zu " **c:\users\benutzername\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** ", und löschen Sie "RoomBounds.json". Wiederholen Sie diesen Schritt für jeden Benutzer, der Windows Mixed Reality verwendet hat.
 7. Öffnen Sie admin cmd prompt, und wechseln Sie zu **c:\programdata\windowsholographicdevices\spatialstore\hololenssensoren** . Löschen Sie den Inhalt des Ordners "headtracking-Daten" (aber nicht den Ordner selbst).
