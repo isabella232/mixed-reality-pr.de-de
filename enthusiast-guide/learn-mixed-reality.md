@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Tutorial, Einstieg
 appliesto:
 - Windows 10
-ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292989"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132064"
 ---
 # <a name="learn-mixed-reality"></a>Lernen von Mixed Reality
 
@@ -45,14 +45,14 @@ Weitere Informationen dazu, wie Sie in gemischter Realität mit Motion Controlle
 
 ## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>Verwenden von Sprachbefehlen und Cortana innerhalb des Windows Mixed Reality-Startseite
 
-[Erlernen Sie die Sprachbefehle, die Sie in der Windows Mixed Reality-Startseite verwenden können.](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[Erlernen Sie die Sprachbefehle, die Sie in der Windows Mixed Reality-Startseite verwenden können.](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
 ## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a>Zeigen Sie eine Vorschau der Elemente an, die auf dem Bildschirm meines Desktops in meinem Headset angezeigt werden.
 
 Klicken Sie einfach auf das **Wiedergabe** Symbol unten in der Mixed Reality-Portal-app.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Problembehandlung bei der Installation](installation_errors.md)
-* [Problembehandlung bei Setup](set-up-questions.md)
+* [Problembehandlung bei Setup](wmr-setup-faq.md)
 * [Ihre gemischte Reality-Startseite](your-mixed-reality-home.md)

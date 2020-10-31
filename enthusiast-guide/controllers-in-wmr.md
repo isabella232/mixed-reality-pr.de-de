@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434585"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132054"
 ---
-# <a name="motion-controllers-in-windows-mixed-reality"></a>Bewegungs Controller in Windows Mixed Reality
+# <a name="motion-controllers-in-windows-mixed-reality"></a>Motion Controller in Windows Mixed Reality
 
 Bewegungs Controller sind Hardware Zubehör, mit denen Benutzer in gemischter Realität Maßnahmen ergreifen können. Ein Vorteil von Bewegungs Controllern gegenüber Gesten besteht darin, dass die Controller eine genaue Position im Raum aufweisen und eine differenzierte Interaktion mit digitalen Objekten ermöglichen. Für Windows Mixed Reality-immersive Headsets sind Bewegungs Controller die primäre Methode, mit der Benutzer in ihrer Welt Maßnahmen ergreifen können.
 
@@ -28,8 +28,8 @@ Sie können auch einen Xbox-Controller, eine Maus und Tastatur verwenden oder mi
 Die meisten Headsets sind direkt mit dem Headset gekoppelt, aber einige frühe Headsets erfordern, dass die Motion-Controller mit dem PC mit Bluetooth 4,0 gekoppelt werden. Wenn Sie Ihr immersives Headset zum ersten Mal verbinden, werden Sie durch das Einschalten der Motion-Controller während des Setups gelangen. Wenn Sie diese später erneut koppeln müssen, gehen Sie wie folgt vor:
 
 1. Starten Sie das **Mixed Reality-Portal** mit dem verbundenen Headset.  
-2. Wählen Sie in der unteren linken Ecke **... > richten**Sie die Controller ein.
-3. Fügen Sie 2 AA-Akkus in jeden Controller ein, und versetzen Sie den Controller in den Paarmodus (Weitere Informationen finden Sie im [Abschnitt zum paar Motion](controllers-in-wmr.md#Pair-motion-controllers)
+2. Wählen Sie in der unteren linken Ecke **... > richten** Sie die Controller ein.
+3. Fügen Sie 2 AA-Akkus in jeden Controller ein, und versetzen Sie den Controller in den Paarmodus (Weitere Informationen finden Sie im [Abschnitt zum paar Motion](controllers-in-wmr.md#pair-motion-controllers)
 4. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
 > [!NOTE]
@@ -45,7 +45,7 @@ Die meisten Headsets sind direkt mit dem Headset gekoppelt, aber einige frühe H
 > 
 > Wenn Sie über einen kabelgebundenen Xbox-Controller verfügen, können Sie ihn an Ihren PC anschließen.
 > 
-> Einige Spiele und Apps verwenden den Xbox-Controller anders als in gemischter Realität. Wenn Sie den Controller für ein Spiel oder eine APP verwenden möchten, wählen Sie in der APP-Leiste die Option **als Gamepad verwenden** aus, oder sagen Sie "als Gamepad verwenden". Um den Controller wieder in die gemischte Realität zu wechseln, wählen Sie **als Gamepad verwenden**aus, oder wählen Sie "mit Blick verwenden" aus.  
+> Einige Spiele und Apps verwenden den Xbox-Controller anders als in gemischter Realität. Wenn Sie den Controller für ein Spiel oder eine APP verwenden möchten, wählen Sie in der APP-Leiste die Option **als Gamepad verwenden** aus, oder sagen Sie "als Gamepad verwenden". Um den Controller wieder in die gemischte Realität zu wechseln, wählen Sie **als Gamepad verwenden** aus, oder wählen Sie "mit Blick verwenden" aus.  
 
 ## <a name="pair-motion-controllers"></a>Paar Bewegungs Controller
 
@@ -59,7 +59,7 @@ Entfernen Sie die Batterieabdeckung von ihren Controllern, und suchen Sie die Sc
     ![Bewegung Controller Kopplung](images/connect_controller.png)
 
 Starten Sie das **Mixed Reality-Portal** mit dem verbundenen Headset.  
-Wählen Sie in der unteren linken Ecke **... > richten**Sie die Controller ein.
+Wählen Sie in der unteren linken Ecke **... > richten** Sie die Controller ein.
 Folgen Sie den Anweisungen auf dem Bildschirm.
 
 ### <a name="pair-motion-controllers-to-pc"></a>Kombinieren von Bewegungs Controllern zum PC
@@ -73,7 +73,7 @@ Schalten Sie die Controller ein, und platzieren Sie Sie wie oben beschrieben in 
 
 Nachdem die Kopplung vollständig ist, sind LEDs einleuchtend und hell.
 
-### <a name="common-issues"></a>Häufige Probleme
+### <a name="common-issues"></a>Allgemeine Probleme
 
 * Vergewissern Sie sich, dass auf Ihrem PC nur ein Bluetooth-radioaktiv ist. Wenn Sie über mehr als ein Bluetooth-Radio verfügen, müssen Sie die anderen Radios in Geräte-Manager deaktivieren.
 * Platzieren Sie Ihr Bluetooth-Dongle an einem Port, der über eine klare Sichtlinie an Ihre Controller und weit von USB 3,0-Geräten angeschlossen ist. USB 3,0 weist eine RF-Beeinträchtigung mit Bluetooth auf (Weitere Informationen finden Sie in [diesem Dokument](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) von Intel). USB-2,0-Ports funktionieren möglicherweise besser für das Bluetooth-Dongle.
@@ -95,8 +95,8 @@ Im folgenden wird erläutert, wie Sie in gemischter Realität mit Bewegungs Cont
 | --- | --- | --- | --- |
 | Teleport | Drücken Sie den Fingerabdruck, und zeigen Sie dann auf den gewünschten Controller. Geben Sie den Finger Stick frei. | Drücken Sie den linken Finger Stick vorwärts, und sehen Sie sich an, wohin Sie navigieren möchten. Geben Sie den Finger Stick frei. | Klicken Sie mit der rechten Maustaste auf die Schaltfläche, und zeigen Sie dann mit der Maus auf die gewünschte Position. Geben Sie die Schaltfläche frei. |
 | Select | Zeigen Sie auf den Controller, und ziehen Sie den-Editor per Pull oder auf das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
-| Öffnen des Startmenüs | Drücken Sie die **Windows** -Taste. | Klicken Sie auf die Schaltfläche **Xbox** . | Drücken Sie die **Windows-Logo-Taste**. |
-| Immersive app verlassen | Drücken Sie die **Windows** -Taste. Wählen Sie dann im Menü schnell Aktionen die Option **gemischte Reality-Startseite** aus. | Klicken Sie auf die Schaltfläche **Xbox** . Wählen Sie dann im Menü schnell Aktionen die Schaltfläche **Mixed Reality Home** aus. | Drücken Sie die **Windows-Logo-Taste**. Wählen Sie dann im angezeigten Menü schnell Aktionen die Start Schaltfläche **Mixed Reality** aus. |
+| Öffnen des Startmenüs | Drücken Sie die **Windows** -Taste. | Klicken Sie auf die Schaltfläche **Xbox** . | Drücken Sie die **Windows-Logo-Taste** . |
+| Immersive app verlassen | Drücken Sie die **Windows** -Taste. Wählen Sie dann im Menü schnell Aktionen die Option **gemischte Reality-Startseite** aus. | Klicken Sie auf die Schaltfläche **Xbox** . Wählen Sie dann im Menü schnell Aktionen die Schaltfläche **Mixed Reality Home** aus. | Drücken Sie die **Windows-Logo-Taste** . Wählen Sie dann im angezeigten Menü schnell Aktionen die Start Schaltfläche **Mixed Reality** aus. |
 | Rotate | Verschieben Sie den Finger Stick nach links oder rechts. | Verschieben Sie den rechten Stift nach links oder rechts. | Nicht verfügbar. |
 | Sichern | Verschieben Sie den Finger Stick abwärts. | Verschiebt den linken Rand nach hinten. | Nicht verfügbar. |
 | Walk | Schieben Sie den Finger Stick direkt nach unten, und drücken Sie ihn in der Richtung, die Sie durchlaufen möchten. | Bewegen Sie den linken Stapel nach unten, und drücken Sie ihn in der Richtung, die Sie durchlaufen möchten. | Nicht verfügbar. |
@@ -149,10 +149,12 @@ Ihr Controller kommuniziert damit, was er tut, indem er seine LED-Leuchten vibri
 
 Geben Sie uns Feedback im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-* [Die Community fragen](https://answers.microsoft.com)
-* [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)
-* [Problembehandlung](troubleshooting-windows-mixed-reality.md)
+- [HP-Controller in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [HP-Controller in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Die Community fragen](https://answers.microsoft.com)
+- [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)
+- [Problembehandlung](troubleshooting-windows-mixed-reality.md)
 
 Haben Sie Probleme mit ihren Motion-Controllern? [Hilfe erhalten](motion-controller-problems.md)

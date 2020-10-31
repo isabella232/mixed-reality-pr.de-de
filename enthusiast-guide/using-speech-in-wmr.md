@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: cd7a1ba20fa695bf5c13adef301f63491b1ca586
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685646"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131954"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Verwendung von Sprache in Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Haben Sie Probleme mit der Sprache? [Hilfe erhalten](using-wmr-faq.md#speech-com
 
 > [!NOTE]
 > * Wenn die Sprache aktiviert ist, lauscht Windows Mixed Reality immer. Wenn Sie mit dem Internet verbunden sind, senden wir alles, was Sie sagen, an die Cloud, damit die Microsoft Speech Services noch mehr Befehle erkennen können.
-> * Sprachbefehle werden nicht in allen Sprachen unterstützt. Weitere Informationen
+> * Sprachbefehle werden nicht in allen Sprachen unterstützt. Erfahren Sie mehr
 > * Bluetooth-Headsets und-Sprecher werden in der gemischten Realität von Windows nicht unterstützt.
 
 ## <a name="see-it-say-it"></a>Sehen, sagen
@@ -123,9 +123,9 @@ Verwenden Sie dann einen der folgenden Befehle, um "Hey Cortana" zu verwenden:
 Wechseln Sie zu einem beliebigen Zeitpunkt, an dem die Tastatur aktiv ist, in den Diktat Modus. Wählen Sie Mikrofon auf der Tastatur aus – oder klicken Sie einfach auf "mit dem Wort beginnen" –, um loszulegen.
 
 > [!NOTE]
-> Die Mixed Reality-Tastatur ist nur in englischer Sprache verfügbar, Sie können jedoch in jeder der unterstützten [Windows Mixed Reality-Sprachen](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)Diktat Ausdrücke verwenden.
+> Die Mixed Reality-Tastatur ist nur in englischer Sprache verfügbar, Sie können jedoch in jeder der unterstützten [Windows Mixed Reality-Sprachen](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)Diktat Ausdrücke verwenden.
 
-### <a name="keyboard-dictation-commands"></a>Tastatur Diktat Befehle 
+### <a name="keyboard-dictation-commands"></a>Tastatur Diktat Befehle
 
 | Aufgabe | Sagen Sie dies |
 | --- | --- |
@@ -133,9 +133,10 @@ Wechseln Sie zu einem beliebigen Zeitpunkt, an dem die Tastatur aktiv ist, in de
 | Diktat schreiben | Mit dem diktieren beginnen |
 | Diktat Beendigung | Diktat nicht mehr |
 | Löschen Sie das, was Sie gerade vorgegeben haben. | Löschen |
-| Alles im Feld "Diktat" auswählen | Alle auswählen |
+| Alles im Feld "Diktat" auswählen | Alles auswählen |
 
 ### <a name="punctuation"></a>Interpunktion
+
 Sie müssen die Namen der Interpunktions Zeichen, die Sie verwenden möchten, sagen. Beispielsweise können Sie sagen, dass Sie ein **Fragezeichen** **haben.**
 
 Hier sind die Schlüsselwörter, die Sie verwenden können:
@@ -146,12 +147,12 @@ Hier sind die Schlüsselwörter, die Sie verwenden können:
 * Anführungszeichen (e), schließende Anführungszeichen
 * Hashtag, Smiley/Smiley, frowny, Zwinkern
 * Dollar, Prozent
- 
-Manchmal ist es hilfreich, Dinge wie e-Mail-Adressen zu benennen. Beispielsweise example@outlook.com würden Sie Folgendes vorschreiben: "e X A M P L E bei Outlook-Punkt-com".
 
+Manchmal ist es hilfreich, Dinge wie e-Mail-Adressen zu benennen. Beispielsweise example@outlook.com würden Sie Folgendes vorschreiben: "e X A M P L E bei Outlook-Punkt-com".
 
 Um das Diktat zu deaktivieren, wählen Sie **abgeschlossen** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
+
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

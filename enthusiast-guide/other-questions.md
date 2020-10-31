@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Deinstallieren von Windows Mixed Reality, unterstützte Sprachen
 appliesto:
 - Windows 10
-ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044459"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131864"
 ---
 # <a name="other-questions"></a>Weitere Fragen
 
@@ -29,7 +29,7 @@ Suchen Sie nach "Dxdiag", und führen Sie es aus:
     * Verwenden Sie Windows Update, um den Treiber zu aktualisieren.
     * Wenn das Problem durch dieses Update nicht behoben werden kann, besuchen Sie die Website des Herstellers, und installieren Sie das aktuellste Treiberupdate. 
     * Wenn ein Update für Ihre GPU nicht verfügbar ist, wird WMR möglicherweise auf Ihrem Gerät nicht unterstützt. Wenn Sie der Ansicht sind, wenden Sie sich an den [Support](https://support.microsoft.com).
-    
+
 Wenn das Setup von Windows Mixed Reality besagt, dass Ihre Grafikkarte die Anforderungen nicht erfüllt, und Sie meinen, dass das Headset an die richtige Karte angeschlossen ist.
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>Mein Samsung Odyssee-oder Odyssee + Headset-Firmwareupdate bleibt hängen.
@@ -37,6 +37,7 @@ Wenn das Setup von Windows Mixed Reality besagt, dass Ihre Grafikkarte die Anfor
 Samsung besitzt und veröffentlicht mit den Geräte begleitenden Apps "Samsung HMD Odyssee Setup" und "Samsung HMD Odyssee + Setup" die durch die Geräte bereitgestellten Headset-Firmware-Updates. Weitere Informationen und Hilfe bei Problemen mit der Aktualisierung von Samsung-Firmware finden Sie unter Samsung-Kundendienst.
 
 Wenn der Firmwareupdate nicht mehr als fünf Minuten ausgeführt wird, wird der Vorgang nicht fortgesetzt:
+
 * Entfernen Sie alle anderen USB-Geräte vorübergehend, und wiederholen Sie das Firmwareupdate.
 * Verbinden Sie Ihr Samsung-Headset mit einem anderen USB 3,0-Port auf Ihrem PC.
 * Deaktivieren und/oder deinstallieren installierter Software, die Firmwareupdates beeinträchtigen kann, wie z. b. die aorus-App Center von Gigabyte.
@@ -45,28 +46,32 @@ Wenn der Firmwareupdate nicht mehr als fünf Minuten ausgeführt wird, wird der 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>Gewusst wie in gemischter Realität auf My PC Desktop zugreifen?
 Starten Sie die Desktop-App im Headset von **Windows, > alle apps > Desktop** , um in gemischter Realität auf Ihren PC-Desktop zuzugreifen.
 
-## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Wie können mehrere Monitore in gemischter Realität angezeigt werden?
-Standardmäßig schaltet die Desktop-App automatisch ein, um den Monitor mit dem Fokus anzuzeigen. Wenn Sie alle Monitore in gemischter Realität anzeigen möchten: 
+## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>Wie kann ich mehrere Monitore in gemischter Realität sehen?
+
+Standardmäßig schaltet die Desktop-App automatisch ein, um den Monitor mit dem Fokus anzuzeigen. Wenn Sie alle Monitore in gemischter Realität anzeigen möchten:
+
 * Klicken Sie in der oberen linken Ecke der APP auf das Symbol überwachen.
 * Deaktivieren Sie "Monitor automatisch wechseln".
 * Wählen Sie den Monitor aus, den Sie anzeigen möchten.
 * Starten Sie eine andere Instanz der Desktop-App.
 * Wählen Sie den Monitor aus, den Sie in dieser Instanz sehen möchten.
 * Wiederholen Sie diesen Vorgang für alle physischen Monitore.
-Beachten Sie, dass Sie den Monitor erneut auswählen müssen, um bei jedem Neustart von Mixed Reality auf jeder Desktop-App angezeigt zu werden. 
+Beachten Sie, dass Sie den Monitor erneut auswählen müssen, um bei jedem Neustart von Mixed Reality auf jeder Desktop-App angezeigt zu werden.
 
-## <a name="my-desktop-app-only-shows-a-black-screen"></a>Meine Desktop-App zeigt nur einen schwarzen Bildschirm an.
+## <a name="my-desktop-app-only-shows-a-black-screen"></a>Meine Desktop-App zeigt nur einen schwarzen Bildschirm an
+
 Wenn Ihr PC über eine NVIDIA Hybrid GPU verfügt, kann das Problem dadurch verursacht werden, dass NVIDIA-Gerät die runtimebroker.exe auf der diskreten GPU anstelle der integrierten GPU ausführen kann. Um dieses Problem zu beheben, befolgen Sie die Anweisungen unter "[Gewusst wie Erstellen von Optimus-Einstellungen für ein neues Programm](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)". zum Hinzufügen von C:\windows\system32\runtimebroker.exe und erzwingen der Durchführung auf dem Prozessor "integrierte Grafiken". 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>Meine Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality verwende.
 
 Wenn Sie eine Wi-Fi Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Bewegungs Controller möglicherweise das WLAN. Probieren Sie einen der folgenden Lösungsschritte aus:
-* Wechseln Sie zu einer Wi-Fi Verbindung mit 5 GHz, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/en-us/help/4000461)
-* Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion-Controller mit Ihrem PC zu verbinden. Siehe [Empfohlene Adapter](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
+
+* Wechseln Sie zu einer Wi-Fi Verbindung mit 5 GHz, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/help/4000461)
+* Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion-Controller mit Ihrem PC zu verbinden. Siehe [Empfohlene Adapter](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines).
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>Ich habe eine Meldung mit dem anbinden und Berechnen des PCs. Warum?
 
-Wenn Sie einen Laptop verwenden, funktioniert Windows Mixed Reality am besten, wenn der PC vollständig abgerechnet und angeschlossen ist. 
+Wenn Sie einen Laptop verwenden, funktioniert Windows Mixed Reality am besten, wenn der PC vollständig abgerechnet und angeschlossen ist.
 
 ## <a name="what-is-the-experience-options-setting"></a>Was ist die Einstellung der Erfahrungs Optionen?
 
@@ -78,6 +83,7 @@ Mit dieser Einstellung ( **Einstellungen > gemischte Realität > Headset-Anzeige
 ## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Welche Sprachen werden in Windows Mixed Reality unterstützt?
 
 Windows Mixed Reality ist in den folgenden Sprachen verfügbar:
+
 * Chinesisch (Vereinfacht, China)
 * Englisch (Australien)
 * Englisch (Kanada)

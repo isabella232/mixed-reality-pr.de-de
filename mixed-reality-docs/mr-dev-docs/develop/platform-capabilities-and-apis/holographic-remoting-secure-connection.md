@@ -1,64 +1,172 @@
 ---
-title: Einrichten einer sicheren Verbindung mit Holographic Remoting
-description: Auf dieser Seite wird erläutert, wie Sie eine sichere verschlüsselte Verbindung herstellen, wenn Sie Holographic Remoting verwenden.
-author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 03/11/2020
+title: Aktivieren der Verbindungssicherheit für Holographic-Remoting
+description: Auf dieser Seite wird erläutert, wie Sie Holographic Remoting so konfigurieren, dass verschlüsselte und authentifizierte Verbindungen zwischen Player-und Remote-Apps verwendet werden.
+author: markkeinz
+ms.author: makei
+ms.date: 10/29/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting
-ms.openlocfilehash: 4006a317ed2ecfd7a1e67336a80a4e536d45e554
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fcacac76e65fa884433afca9f568c5c0211dd570
+ms.sourcegitcommit: 979967d6841d8fa64cf1d6cf3ae532b736ed3bd1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683646"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93102299"
 ---
-# <a name="establishing-a-secure-connection-with-holographic-remoting"></a>Einrichten einer sicheren Verbindung mit Holographic Remoting
+# <a name="enabling-connection-security-for-holographic-remoting"></a>Aktivieren der Verbindungssicherheit für Holographic-Remoting
 
 >[!IMPORTANT]
 >Diese Anleitung gilt speziell für Holographic-Remoting auf hololens 2.
 
-Auf dieser Seite wird erläutert, wie Sie eine sichere verschlüsselte Verbindung herstellen, wenn Sie Holographic Remoting verwenden.
+Auf dieser Seite erhalten Sie einen Überblick über die Netzwerksicherheit für Holographic Remoting. Hier finden Sie Informationen zu
 
-Beim Streamen von Inhalten auf hololens 2 über ein unsicheres Netzwerk, wie z. b. ein offenes WiFi oder das Internet, wird dringend empfohlen, eine verschlüsselte Verbindung zu verwenden.
+* Sicherheit im Kontext von Holographic-Remoting und warum Sie es möglicherweise benötigen
+* Empfohlene Measures, die auf verschiedenen Anwendungsfällen basieren
+* Implementieren der Sicherheit in ihrer Holographic-Remoting-Lösung
+
+## <a name="overview"></a>Übersicht
+
+Holographic Remoting tauscht Informationen über ein Netzwerk aus. Wenn keine Sicherheitsmaßnahmen vorhanden sind, können Angreifer im selben Netzwerk die Integrität der Kommunikation beeinträchtigen oder auf vertrauliche Informationen zugreifen.
+
+Die Beispiel-apps und der Holographic-Remoting-Player im Windows Store sind mit der Sicherheit deaktiviert. Dadurch lassen sich die Beispiele leichter verstehen. Außerdem hilft es Ihnen, schneller mit der Entwicklung zu beginnen.
+
+Wir empfehlen jedoch dringend, die Sicherheit in der Holographic Remoting-Lösung zu aktivieren.
+
+Die Sicherheit in Holographic Remoting bietet Ihnen die folgenden Garantien, wenn Sie für Ihren Anwendungsfall ordnungsgemäß eingerichtet ist:
+
+* **Authentizität:** sowohl Player als auch Remote-app können sicher sein, dass es sich bei der anderen Seite um
+* **Vertraulichkeit:** Drittanbieter können die zwischen Player und Remote-app ausgetauschten Informationen nicht lesen.
+* **Integrität:** Player und Remote können alle Übertragung von Änderungen an ihrer Kommunikation erkennen.
+
+>[!TIP]
+>Um Sicherheitsfeatures verwenden zu können, müssen Sie sowohl einen [benutzerdefinierten Player](holographic-remoting-create-player.md) als auch eine [benutzerdefinierte Remote-app](holographic-remoting-create-host.md)implementieren.
+
+## <a name="planning-the-security-implementation"></a>Planen der Sicherheits Implementierung
+
+Wenn Sie die Sicherheit in Holographic Remoting aktivieren, aktiviert die remotingbibliothek automatisch Verschlüsselungs-und Integritätsprüfungen für alle über das Netzwerk ausgetauschten Daten.
+
+Um sicherzustellen, dass die richtige Authentifizierung erforderlich ist Was genau Sie tun müssen, hängt von Ihrem Anwendungsfall ab, und im weiteren Verlauf dieses Abschnitts werden die erforderlichen Schritte erläutert.
 
 >[!IMPORTANT]
->Auch wenn eine vertrauenswürdige lokale WLAN-Verbindung verwendet wird, sollte eine verschlüsselte Verbindung berücksichtigt werden.
+> Dieser Artikel bietet nur einen allgemeinen Leitfaden. Wenn Sie sich nicht sicher sind, sollten Sie sich an einen Sicherheitsexperten wenden, der Ihnen Anleitungen für Ihren Anwendungsfall bietet.
 
-Um eine verschlüsselte Verbindung verwenden zu können, müssen Sie sowohl einen [benutzerdefinierten Player](holographic-remoting-create-player.md) als auch eine [benutzerdefinierte Remote-app](holographic-remoting-create-host.md)implementieren.
+Erste Terminologie: beim Beschreiben von Netzwerkverbindungen werden die Begriffe _Client_ und _Server_ verwendet. Der Server lauscht auf eingehende Verbindungen mit einer bekannten Endpunkt Adresse, und der Client ist der Server, der eine Verbindung mit dem Endpunkt des Servers herstellt.
 
-Die Verschlüsselung wird mithilfe der zugrunde liegenden Platt Form-TLS-Implementierung erreicht.
+>[!NOTE]
+> Die Client-und-Server Rollen sind nicht daran gebunden, ob eine App als Player oder als Remote fungiert. Obwohl die Beispiele den Player in der Server Rolle aufweisen, ist es einfach, die Rollen umzukehren, wenn Sie für Ihren Anwendungsfall besser geeignet sind.
 
-## <a name="basics-of-an-encrypted-connection"></a>Grundlagen einer verschlüsselten Verbindung
+### <a name="planning-the-server-to-client-authentication"></a>Planen der Server-zu-Client-Authentifizierung
 
-Die folgenden Objekte müssen implementiert werden, um einen Zertifikat Austausch zuzulassen.
+Der Server verwendet digitale Zertifikate, um die Identität des Clients nachzuweisen. Der Client überprüft das Serverzertifikat während der Verbindungs Hand Shake Phase. Wenn der Client den Server nicht als vertrauenswürdig einstuft, wird die Verbindung an dieser Stelle beendet.
+
+Wie der Client das Serverzertifikat überprüft und welche Arten von Server Zertifikaten verwendet werden können, hängt von Ihrem Anwendungsfall ab.
+
+**Anwendungsfall 1:** Der Server Hostname ist nicht korrigiert, oder der Server wird nicht durch den Hostnamen adressiert.
+
+In diesem Anwendungsfall ist es nicht praktikabel (oder sogar möglich), ein Zertifikat für den Hostnamen des Servers auszugeben. Hier wird empfohlen, stattdessen den Fingerabdruck des Zertifikats zu überprüfen. Wie bei einem Menschen Fingerabdruck identifiziert der Fingerabdruck ein Zertifikat eindeutig.
+
+Es ist wichtig, den Fingerabdruck out-of-Band an den Client zu übermitteln. Dies bedeutet, dass Sie Sie nicht über die gleiche Netzwerkverbindung, die für Remoting verwendet wird, senden können. Stattdessen können Sie Sie manuell in die Konfiguration des Clients eingeben oder den Client einen QR-Code Scannen lassen.
+
+**Anwendungsfall 2:** Der Server kann über einen stabilen Hostnamen erreicht werden.
+
+In diesem Anwendungsfall verfügt der Server über einen bestimmten Hostnamen, und Sie wissen, dass sich dieser Name wahrscheinlich nicht ändert. Sie können dann ein Zertifikat verwenden, das für den Hostnamen des Servers ausgestellt wurde. Basierend auf dem Hostnamen und der Vertrauenskette des Zertifikats wird die Vertrauensstellung eingerichtet.
+
+Wenn Sie diese Option auswählen, muss der Client den Hostnamen des Servers und das Stamm Zertifikat im Voraus kennen.
+
+### <a name="planning-the-client-to-server-authentication"></a>Planen der Client-zu-Server-Authentifizierung
+
+Clients authentifizieren sich mit einem frei Form Token für den Server. Was dieses Token enthalten sollte, hängt wieder von Ihrem Anwendungsfall ab:
+
+**Anwendungsfall 1:** Sie müssen nur die Identität der Client-App überprüfen.
+
+In diesem Anwendungsfall kann ein gemeinsamer geheimer Schlüssel ausreichen. Dieser geheime Schlüssel muss komplex genug sein, damit er nicht erraten werden kann.
+
+Ein guter gemeinsamer geheimer Schlüssel ist eine zufällige GUID, die manuell in der Konfiguration des Servers und des Clients eingegeben wird. Zum Erstellen eines solchen können Sie z. b. den `New-Guid` Befehl in PowerShell verwenden.
+
+Stellen Sie sicher, dass dieser gemeinsame geheime Schlüssel nie über unsichere Kanäle kommuniziert. Die Remoting-Bibliothek stellt sicher, dass der gemeinsame geheime Schlüssel immer verschlüsselt und nur an vertrauenswürdige Peers gesendet wird.
+
+**Anwendungsfall 2:** Außerdem müssen Sie die Identität des Benutzers der Client-App überprüfen.
+
+Ein gemeinsamer geheimer Schlüssel reicht nicht aus, um diesen Anwendungsfall abzudecken. Stattdessen können Sie Token verwenden, die von einem Identitäts Anbieter erstellt wurden. Ein Authentifizierungs Workflow, der einen Identitäts Anbieter verwendet, sieht wie folgt aus:
+
+* Der Client autorisiert sich für den Identitäts Anbieter und fordert ein Token an.
+* Der Identitäts Anbieter generiert ein Token und sendet es an den Client.
+* Der Client sendet dieses Token über Holographic Remoting an den Server.
+* Der Server überprüft das Client Token anhand des Identitäts Anbieters.
+
+Ein Beispiel für einen Identitäts Anbieter ist die [Microsoft Identity Platform](https://docs.microsoft.com/azure/active-directory/develop/).
+
+Stellen Sie wie im vorherigen Anwendungsfall sicher, dass diese Token nicht über unsichere Kanäle gesendet werden oder anderweitig verfügbar gemacht werden.
+
+## <a name="implementing-holographic-remoting-security"></a>Implementieren von Holographic Remoting Security
+
+Denken Sie daran, dass Sie benutzerdefinierte Remote-und Player-apps implementieren müssen, wenn Sie die Verbindungssicherheit aktivieren möchten. Sie können die bereitgestellten Beispiele als Ausgangspunkte für Ihre eigenen Apps verwenden.
+
+Um die Sicherheit zu aktivieren, wird `ListenSecure()` anstelle von `Listen()` und `ConnectSecure()` anstelle von aufgerufen, `Connect()` um die Remoting-Verbindung herzustellen.
+
+Diese Aufrufe erfordern, dass Sie Implementierungen bestimmter Schnittstellen bereitstellen, um sicherheitsrelevante Informationen bereitzustellen und zu überprüfen:
+
+* Der Server muss einen Zertifikat Anbieter und ein Authentifizierungs Validierungs Steuerelement implementieren.
+* Der Client muss einen Authentifizierungs Anbieter und ein zertifikatvalidator implementieren.
+
+Alle Schnittstellen verfügen über eine Funktion, die Sie anfordert, Maßnahmen zu ergreifen, die ein Rückruf Objekt als Parameter empfängt. Mithilfe dieses Objekts können Sie die asynchrone Verarbeitung der Anforderung problemlos implementieren. Behalten Sie einen Verweis auf dieses Objekt bei, und nennen Sie die Vervollständigungsfunktion, wenn die asynchrone Aktion abgeschlossen ist. Die Vervollständigungsfunktion kann von jedem Thread aufgerufen werden.
 
 >[!TIP]
 >Das Implementieren von WinRT-Schnittstellen kann problemlos mithilfe von C++ erfolgen./WinRT. Im Kapitel " [Autoren-APIs mit C++/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis) " wird dies ausführlich beschrieben.
 
 >[!IMPORTANT]
->Der ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` im nuget-Paket enthält eine ausführliche Dokumentation für die API, die sich auf sichere Verbindungen bezieht.
+>Der `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` im nuget-Paket enthält eine ausführliche Dokumentation für die API, die sich auf sichere Verbindungen bezieht.
 
-1) Ein Zertifikat Objekt, das die- ```ICertificate``` Schnittstelle implementieren muss.
+### <a name="implementing-a-certificate-provider"></a>Implementieren eines Zertifikat Anbieters
 
-    * Gibt den binären Inhalt des PFX-Zertifikats über die- ```GetCertificatePfx``` Methode zurück. Identisch mit dem binären Inhalt einer PFX-Datei.
-    * Geben Sie den Namen des Zertifikat Antragstellers durch zurück ```GetSubjectName``` .
-    * Geben Sie das PFX-Kennwort durch zurück ```GetPfxPassword``` . Gibt eine leere Zeichenfolge für ein ungeschütztes PFX zurück.
+Zertifikat Anbieter stellen die Serveranwendung mit dem zu verwendenden Zertifikat bereit. Die-Implementierung besteht aus zwei Teilen:
 
-2) Ein Zertifikat Anbieter, der die- ```ICertificateProvider``` Schnittstelle implementiert, die ein Zertifikat bereitstellt, wenn Sie über die- ```GetCertificate``` Methode
+1) Ein Zertifikat Objekt, das die- `ICertificate` Schnittstelle implementiert:
 
-3) Ein zertifikatvalidator, der die- ```ICertificateValidator``` Schnittstelle implementiert Seine Aufgabe besteht darin, eingehende Zertifikate zu überprüfen.
-    * Die- ```PerformSystemValidation``` Methode sollte zurückgeben ```true``` , wenn die zugrunde liegende Plattform die eingehende Zertifikatskette überprüfen soll, ```false``` andernfalls.
-    * ```ValidateCertificate``` wird vom Client Kontext aufgerufen, um die Validierung eines Zertifikats anzufordern. Diese Methode akzeptiert die Zertifikat Kette (mit dem ersten Zertifikat, das das Zertifikat des Antragstellers ist), den Namen des Servers, mit dem die Verbindung hergestellt wird, und gibt an, ob eine Sperr Überprüfung erzwungen werden soll. Das Ergebnis der Systemvalidierung wird bereitgestellt, wenn die Validierung durch das zugrunde liegende System angefordert wurde. Um die Verarbeitung entweder ```CertificateValidated``` mit dem entsprechenden Ergebnis fortzusetzen oder die ```Cancel``` Validierung abzubrechen, muss für die übergebenen aufgerufen werden ```ICertificateValidationCallback``` .
+    * `GetCertificatePfx()` sollte den binären Inhalt eines `PKCS#12` Zertifikat Speicher zurückgeben. Eine `.pfx` Datei enthält `PKCS#12` Daten, sodass Ihr Inhalt direkt hier verwendet werden kann.
+    * `GetSubjectName()` Gibt den anzeigen Amen zurück, der das zu verwendende Zertifikat identifiziert. Wenn dem Zertifikat kein Anzeige Name zugewiesen ist, sollte diese Funktion den Antragsteller Namen des Zertifikats zurückgeben.
+    * `GetPfxPassword()` Gibt das Kennwort zurück, das zum Öffnen des Zertifikat Speicher erforderlich ist (oder eine leere Zeichenfolge, wenn kein Kennwort erforderlich ist).
 
-Außerdem müssen die folgenden Objekte implementiert werden, um den Austausch eines sicheren Tokens zuzulassen.
+2) Ein Zertifikat Anbieter, der die- `ICertificateProvider` Schnittstelle implementiert:
+    * `GetCertificate()` sollte ein Zertifikat Objekt erstellen und durch Aufrufen von `CertificateReceived()` für das Rückruf Objekt zurückgeben.
 
-1) Ein Authentifizierungs Anbieter, der die- ```IAuthenticationProvider``` Schnittstelle implementiert. ```GetToken```Die zugehörige-Methode wird vom Client Kontext aufgerufen, um ein Token für die Client Authentifizierung anzufordern. Um weiterhin das ```TokenReceived``` Authentifizierungs Token bereitzustellen und den Verbindungsprozess fortzusetzen oder ```Cancel``` abzubrechen, muss der Prozess für die übergebenen aufgerufen werden ```IAuthenticationProviderCallback``` .
-2) Ein Authentifizierungs Empfänger, der die- ```IAuthenticationReceiver``` Schnittstelle implementiert. Seine Aufgabe besteht darin, eingehende Token zu validieren.
-    * Die ```GetRealm``` Methode sollte den Namen des Authentifizierungs Bereichs zurückgeben.
-    * Die- ```ValidateToken``` Methode wird vom Server-Netzwerk Kontext aufgerufen, um die Validierung eines Client Authentifizierungs Tokens anzufordern. Um den Vorgang fortzusetzen, wird entweder aufgerufen ```ValidationCompleted``` , um den Abschluss der Validierung zu signalisieren oder ```Cancel``` die Client Verbindung abzulehnen. Die Client Verbindung wird basierend auf dem an übergebenen Validierungs Ergebnis zugelassen oder abgelehnt ```ValidationCompleted``` . 
+### <a name="implementing-an-authentication-validator"></a>Implementieren eines Authentifizierungs Validierungs Steuer Elements
 
-Nachdem diese Objekte implementiert wurden ```ListenSecure``` , muss anstelle von ```Listen``` und ```ConnectSecure``` anstelle von ```Connect``` für den Remote Kontext bzw. den Player Kontext aufgerufen werden. ```ListenSecure``` erfordert einen zusätzlichen Zertifikat Anbieter und Authentifizierungs Empfänger über ```Listen``` . ```ConnectSecure``` erfordert einen zusätzlichen Authentifizierungs Anbieter und ein zertifikatvalidator ```Connect``` .
+Authentifizierungs Validierungs Steuerelemente empfangen das vom Client gesendete Authentifizierungs Token und Antworten mit dem Überprüfungs Ergebnis.
+
+Implementieren Sie die- `IAuthenticationReceiver` Schnittstelle wie folgt:
+
+* `GetRealm()` sollte den Namen des Authentifizierungs Bereichs (ein HTTP-Bereich, der während des Remoting-verbindungshandshakes verwendet wird) zurückgeben.
+* `ValidateToken()` sollte das Client Authentifizierungs Token überprüfen und `ValidationCompleted()` für das Rückruf Objekt mit dem Validierungs Ergebnis aufgerufen werden.
+
+### <a name="implementing-an-authentication-provider"></a>Implementieren eines Authentifizierungs Anbieters
+
+Authentifizierungs Anbieter generieren oder rufen das Authentifizierungs Token ab, das an den Server gesendet werden soll.
+
+Implementieren Sie die- `IAuthenticationProvider` Schnittstelle wie folgt:
+
+* `GetToken()` soll das zu sendende Authentifizierungs Token generieren oder abrufen. Wenn das Token bereit ist, rufen Sie die- `TokenReceived()` Methode für das Rückruf Objekt auf.
+
+### <a name="implementing-a-certificate-validator"></a>Implementieren eines zertifikatvalidator
+
+Zertifikat Validierungs Steuerelemente empfangen die vom Server gesendete Zertifikatskette und ermitteln, ob der Server vertrauenswürdig ist.
+
+Zum Überprüfen von Zertifikaten können Sie die Validierungs Logik des zugrunde liegenden Systems verwenden. Diese Systemvalidierung kann entweder Ihre eigene Validierungs Logik unterstützen oder Sie vollständig ersetzen. Wenn Sie Ihr eigenes Zertifikat Validierungs Steuerelement nicht übergeben, wenn Sie eine sichere Verbindung anfordern, wird die Systemvalidierung automatisch verwendet.
+
+Unter Windows prüft die Systemvalidierung Folgendes:
+
+* Integrität der Zertifikat Kette: die Zertifikate bilden eine konsistente Kette, die auf einem vertrauenswürdigen Stamm Zertifikat endet.
+* Gültigkeit des Zertifikats: das Zertifikat des Servers liegt innerhalb seines Gültigkeits Zeitraums und wird zum Zweck der Server Authentifizierung ausgestellt.
+* Sperrung: das Zertifikat wurde nicht widerrufen.
+* Namens Übereinstimmung: der Hostname des Servers stimmt mit einem der Hostnamen überein, für die das Zertifikat ausgestellt wurde.
+
+Implementieren Sie die- `ICertificateValidator` Schnittstelle wie folgt:
+
+ * `PerformSystemValidation()` sollte zurückgeben, `true` Wenn eine Systemvalidierung wie oben beschrieben ausgeführt werden soll. In diesem Fall wird das Ergebnis der Systemvalidierung als Eingabe an die-Methode übermittelt `ValidateCertificate()` .
+* `ValidateCertificate()` Überprüfen Sie die Zertifikat Kette, und rufen Sie dann `CertificateValidated()` für den übergebenen Rückruf mit dem abschließenden Validierungs Ergebnis auf. Diese Methode akzeptiert die Zertifikatskette, den Namen des Servers, mit dem die Verbindung hergestellt wird, und gibt an, ob eine Sperr Überprüfung erzwungen werden soll. Wenn die Zertifikat Kette mehrere Zertifikate enthält, ist die erste Zertifikat Kette das Zertifikat des Antragstellers.
+
+>[!NOTE]
+>Wenn Ihr Anwendungsfall eine andere Form der Überprüfung erfordert (siehe #1 oben), umgehen Sie die Systemvalidierung vollständig. Verwenden Sie stattdessen eine beliebige API oder Bibliothek, mit der die-codierten X. 509-Zertifikate verarbeitet werden können, um die Zertifikat Kette zu decodieren und die für Ihren Anwendungsfall erforderlichen Überprüfungen auszuführen.
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Schreiben einer Holographic Remoting-Remote-App](holographic-remoting-create-host.md)

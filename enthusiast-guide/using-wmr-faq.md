@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: 9c31f772baa434a4c14157ae91c97454f1910a3c
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044439"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131824"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality
 
@@ -40,7 +40,7 @@ Windows Mixed Reality ist für die Wiedergabe von Sound über Ihr immersives Hea
 
 ## <a name="speech-commands-arent-working"></a>Sprachbefehle funktionieren nicht
 
-Um Sprachbefehle verwenden zu können, müssen die Sprach-und Spracheinstellungen Ihres PCs auf eine [unterstützte Windows Mixed Reality-Region und-Sprache](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)festgelegt werden. Wählen Sie zum Überprüfen Ihrer Windows-Region und-Sprache **Einstellungen > Uhrzeit & Sprache > Region & Sprache** aus. Wählen Sie zum Überprüfen der sprachsprache **Einstellungen > Zeit & Sprache > Sprache** aus.
+Um Sprachbefehle verwenden zu können, müssen die Sprach-und Spracheinstellungen Ihres PCs auf eine [unterstützte Windows Mixed Reality-Region und-Sprache](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)festgelegt werden. Wählen Sie zum Überprüfen Ihrer Windows-Region und-Sprache **Einstellungen > Uhrzeit & Sprache > Region & Sprache** aus. Wählen Sie zum Überprüfen der sprachsprache **Einstellungen > Zeit & Sprache > Sprache** aus.
 
 Wenn Ihr Headset nicht über eine integrierte MIC verfügt, fügen Sie Kopfhörer mit einem MIC an das Headset oder Ihren PC an. Wenn der MIC-Eingabe automatisch auf Ihr Headset umgestellt werden soll, wenn Ihre Kopfhörer direkt damit verbunden sind, wählen Sie **Einstellungen > gemischte Realität > Audiosprache und sprach** Eingabe aus, und stellen Sie sicher, dass beim Übertragen des Headsets die Option " **Headset mic** " aktiviert ist.
 
@@ -132,6 +132,6 @@ Wenn Sie Ihr Headset einfügen, benötigt Windows Mixed Reality ein wenig Zeit, 
 
 Benötigen Sie weitere Unterstützung? Informationen zur erweiterten Problembehandlung finden Sie in [diesem Artikel](troubleshooting-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)
