@@ -3,12 +3,12 @@ title: Ihre gemischte Reality-Startseite
 description: Navigieren und teleportieren innerhalb des Windows Mixed Reality-Startseite, starten von apps und spielen, Personalisieren der Startseite und Ändern von visuellen, Audio-und Spracheinstellungen.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Navigate, get around, apps, Games
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434618"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132114"
 ---
 # <a name="your-windows-mixed-reality-home"></a>Ihre Windows Mixed Reality-Startumgebung
 
@@ -73,7 +73,7 @@ Wechseln Sie zu **Einstellungen > gemischte Realität > Umgebung, >** wechseln !
 
 ## <a name="turn-off-the-boundary"></a>Deaktivieren der Grenze
 
-Wechseln Sie zum Mixed Reality-Portal, und öffnen Sie das Menü in der oberen linken Ecke des Bildschirms. Wählen Sie die Option **Ausführen Setup > Raum**Begrenzung. Schalten Sie die UMSCHALT Fläche auf aus. Wenn Sie die Grenze deaktivieren, sollten Sie an Ihrem Desk sitzen bleiben.
+Wechseln Sie zum Mixed Reality-Portal, und öffnen Sie das Menü in der oberen linken Ecke des Bildschirms. Wählen Sie die Option **Ausführen Setup > Raum** Begrenzung. Schalten Sie die UMSCHALT Fläche auf aus. Wenn Sie die Grenze deaktivieren, sollten Sie an Ihrem Desk sitzen bleiben.
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Räumlicher Sound in der Windows Mixed Reality-Startseite
 
@@ -82,9 +82,9 @@ Die Windows Mixed Reality-Startseite beinhaltet eine räumliche Audiosimulation,
 > [!NOTE]
 > Diese Funktion ist auf PCs mit integrierter Grafik deaktiviert, da die Last auf der GPU platziert ist.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-* [Problembehandlung für Windows Mixed Reality Home](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [Problembehandlung für Windows Mixed Reality Home](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [Verwenden von spielen und apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)
 * [Funktionsweise von Inside-Out-Tracking](tracking-system.md)
 * [Funktionsweise von Motion-Controllern](controllers-in-wmr.md)
