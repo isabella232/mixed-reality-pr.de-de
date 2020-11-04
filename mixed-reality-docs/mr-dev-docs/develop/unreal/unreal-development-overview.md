@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: 3b5dc5d0ce1510405960c6effd653acc9c2588b2
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980341"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638587"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
@@ -27,6 +27,9 @@ Die ersten Schritte mit <a href="https://docs.microsoft.com/windows/mixed-realit
 * Anfängliche Unterstützung für Azure Spatial Anchors
 
 Wenn Sie noch nicht mit der Unreal-Entwicklung vertraut sind, sollten Sie sich zunächst etwas einarbeiten. Sehen Sie sich die <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">Tutorialreihe</a> zu Unreal an, um einen Einstieg zu finden, und nutzen Sie Ressourcen und Support im Unreal-<a href="https://www.unrealengine.com/marketplace/store" target="_blank">Marketplace</a> und den Mixed Reality-<a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">Foren</a>. Dabei handelt es sich um Links zur Community von Entwicklern und Problemlösern auf dem Gebiet der Mixed Reality.
+
+> [!IMPORTANT]
+> Werfen Sie einen Blick auf unsere **[Portierungsleitfäden](../porting-apps/porting-overview.md)** , wenn Sie ein vorhandenes Unreal-Projekt auf HoloLens 2 oder immersiven Headsets wie dem Reverb G2 bereitstellen möchten.
 
 ## <a name="development-checkpoints"></a>Prüfpunkte für die Entwicklung
 

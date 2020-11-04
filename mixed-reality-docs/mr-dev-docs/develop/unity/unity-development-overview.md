@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation
-ms.openlocfilehash: ed6e3482194b17ec3b6dfa2abe309f3519c64662
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980311"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638567"
 ---
 # <a name="unity-development-overview"></a>Unity-Entwicklung – Übersicht
 
@@ -21,7 +21,7 @@ ms.locfileid: "91980311"
 Den schnellsten Weg zum Entwickeln einer [Mixed Reality-App](../../design/app-views.md) in [Unity](https://unity.com) bietet das Mixed Reality Toolkit. Wenn Sie mit Unity noch nicht vertraut sind, empfehlen wir Ihnen, sich mit den [Tutorials](https://unity3d.com/learn/tutorials) für Einsteiger auf der Unity-Lernplattform zu befassen, bevor Sie fortfahren. Außerdem ist es eine gute Idee, den umfassenden [Asset Store](https://www.assetstore.unity3d.com/) und die [Unity Mixed Reality-Foren](https://forum.unity3d.com/forums/hololens.102/) zu besuchen, um mit der Onlinecommunity in Kontakt zu kommen, die Mixed Reality-Apps entwickelt. Sie können schlicht nicht wissen, welche tollen Medienobjekte oder Lösungen Sie abseits ausgetretener Pfade finden. Wenn Sie bereit sind, mit dem MRTK loszulegen, gehen Sie zu den Prüfpunkten für die Entwicklung unten!
 
 > [!IMPORTANT]
-> Sehen Sie sich unsere **[Portierungsleitfäden](../porting-apps/porting-guides.md)** an, wenn Sie ein vorhandenes Unity-Projekt besitzen, das Sie auf HoloLens 2 bringen möchten. Wir haben Anleitungen für Projekte, die HTK, MRTK v1 oder SteamVR verwenden oder für immersive Headsets wie Oculus Rift oder HTC Vive entwickelt wurden.
+> Sehen Sie sich unsere **[Portierungsleitfäden](../porting-apps/porting-overview.md)** an, wenn Sie ein vorhandenes Unity-Projekt besitzen, das Sie auf HoloLens 2 bringen möchten. Wir haben Anleitungen für Projekte, die HTK, MRTK v1 oder SteamVR verwenden oder für immersive Headsets wie Reverb G2, Oculus Rift oder HTC Vive entwickelt wurden.
 
 ## <a name="development-checkpoints"></a>Prüfpunkte für die Entwicklung
 

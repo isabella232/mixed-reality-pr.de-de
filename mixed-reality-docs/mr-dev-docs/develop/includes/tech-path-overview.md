@@ -1,20 +1,16 @@
 ---
-ms.openlocfilehash: 514062ea4b0343eae6d4e0b05097b4c65ca3de22
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91989426"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915540"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
 ![Unity](../images/unity_logo_banner.png)<br>
 
 Erstellen Sie eine plattformübergreifende, umfassende Mixed Reality-App mit Unity. Lesen Sie die [Unity-Entwicklung – Übersicht](../unity/unity-development-overview.md), um in die Unity-Entwicklung für HoloLens oder immersive Headsets für Windows Mixed Reality einzusteigen.
-
-## <a name="what-does-unity-offer"></a>Was bietet Unity?
-
-Unity ist eine der führenden Echtzeitentwicklungsplattformen auf dem Markt, die ein Ökosystem mit einer dedizierten [Lernplattform](https://unity.com/products/learn-premium), einem [Asset Store](https://assetstore.unity.com/), [vollständiger Dokumentation](https://docs.unity3d.com/Manual/index.html) und einer florierenden Community bietet. Der zugrunde liegende Laufzeitcode von Unity ist in C++ geschrieben, aber die gesamte Erstellung von Entwicklungsskripts erfolgt in C# . Unabhängig davon, ob Sie Spiele, Filme und Animationsfilme erstellen oder sogar Architektur- oder technische Konzepte in einer virtuellen Welt rendern möchten, bietet Unity die Infrastruktur, um Sie dabei zu unterstützen.
 
 ## <a name="available-hardware-platforms"></a>Verfügbare Hardwareplattformen
 
@@ -66,10 +62,6 @@ Wir haben mehrere Open-Source-[Beispiel-Apps](../unity/samples.md), die Sie heru
 
 Erstellen Sie eine plattformübergreifende, umfassende Mixed Reality-App mit Unreal. Informationen zum Einstieg in die Unreal-Entwicklung für HoloLens finden Sie in der [Unreal-Entwicklung – Übersicht](../unreal/unreal-development-overview.md).
 
-## <a name="what-does-unreal-offer"></a>Was bietet Unreal?
-
-Unreal Engine 4 ist eine leistungsstarke, Open Source-Erstellungsengine mit voller Unterstützung für Mixed Reality in C++ und Blueprints. Ab Version 4.25 bietet Unreal Engine umfassende und produktionsreife HoloLens-Unterstützung.
-
 ## <a name="available-hardware-platforms"></a>Verfügbare Hardwareplattformen
 
 Bei der Erstellung von Mixed Reality-Apps mit der Unreal-Engine stehen Ihnen mehrere Hardware-, Emulator- und Streamingoptionen zur Verfügung. Unsere Entwicklerdokumentation konzentriert sich zwar auf HoloLens-Geräte, aber Sie können Ihre Unreal-Projekte als x64-Desktop-Apps verpacken und sie genauso gut auf immersiven Headsets ausführen.
@@ -96,13 +88,13 @@ Bei der Erstellung von Mixed Reality-Apps mit der Unreal-Engine stehen Ihnen meh
 
 ## <a name="cloud-services"></a>Clouddienste
 
-Beim Erstellen von Mixed Reality-Apps in Unreal haben Sie Zugriff auf einen leistungsfähigen Clouddienst mit dem Namen **Azure Spatial Anchors**, den Sie verwenden können, um holografische Inhalte übergreifend über verschiedene Geräte hinzuzufügen, zu bewahren und zu teilen. 
+Beim Erstellen von Mixed Reality-Apps in Unreal haben Sie Zugriff auf einen leistungsfähigen Clouddienst mit dem Namen **Azure Spatial Anchors** , den Sie verwenden können, um holografische Inhalte übergreifend über verschiedene Geräte hinzuzufügen, zu bewahren und zu teilen. 
 
 Azure Spatial Anchors werden im Rahmen der [Unreal-Entwicklungsreise](../unreal/unreal-development-overview.md) behandelt, die den **dringend empfohlenen Pfad für das Erlernen von Mixed Reality mit Unreal** darstellt. Sie befinden sich bereits auf diesem Weg, lesen Sie also einfach weiter, und folgen Sie der großen blauen Schaltfläche am Ende des Artikels. Wenn Sie sich jedoch in einem weiter fortgeschrittenen Lernstadium befinden und bereits wissen, dass Sie fortfahren möchten, sehen Sie sich unsere [Übersicht über Cloud Services](../mixed-reality-cloud-services.md) an, oder wechseln Sie direkt zu den [Dienstressourcen](../unreal/unreal-development-overview.md#5-adding-services).
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365-Leitfäden
 
-Sie können **Microsoft Dynamics 365-Leitfäden** verwenden, um holografische Anweisungen visuell mit der virtuellen Umgebung Ihrer Apps zu verknüpfen und Ihren Benutzern wichtige Informationen zu geben, wann und wo sie gebraucht werden. Dieses Feature ist auch in der Unreal-Entwicklungsreise Thema, wenn Sie aber einen Blick in die Zukunft werfen möchten, können Sie sich ansehen, was zur Wahl steht, indem Sie [hier](../unreal/unreal-development-overview.md#5-adding-services) die **Dynamics 365**-Registerkarte auswählen.
+Sie können **Microsoft Dynamics 365-Leitfäden** verwenden, um holografische Anweisungen visuell mit der virtuellen Umgebung Ihrer Apps zu verknüpfen und Ihren Benutzern wichtige Informationen zu geben, wann und wo sie gebraucht werden. Dieses Feature ist auch in der Unreal-Entwicklungsreise Thema, wenn Sie aber einen Blick in die Zukunft werfen möchten, können Sie sich ansehen, was zur Wahl steht, indem Sie [hier](../unreal/unreal-development-overview.md#5-adding-services) die **Dynamics 365** -Registerkarte auswählen.
 
 ## <a name="examples"></a>Beispiele
 
@@ -121,10 +113,6 @@ Die Geräte-API von WebXR ist eine offene Spezifikation, die es Ihnen ermöglich
  ![Systemeigen](../images/native_logo_banner.png)
 
 Erstellen Sie Mixed Reality-Apps mit einer direkten Verbindung zu den Windows Mixed Reality-APIs. Lesen Sie die [Native Entwicklung – Übersicht](../native/directx-development-overview.md), um in die Entwicklung einer nativen App für HoloLens 2 oder für immersive Headsets für Windows Mixed Reality mithilfe von OpenXR oder Legacy-WinRT einzusteigen. Die Windows Mixed Reality-API unterstützt Anwendungen, die in C++ und C# geschrieben sind, was Ihnen ermöglicht, Ihr eigenes Framework oder eine Middleware in beiden Sprache zu erstellen.
-
-## <a name="what-does-openxr-offer"></a>Was bietet OpenXR?
-
-OpenXR ist ein offener, lizenzgebührenfreier API-Standard von Khronos, mit dem Engines nativen Zugriff auf eine große Bandbreite von Geräten von Herstellern aus dem gesamten Mixed Reality-Spektrum erhalten. Sie können mit OpenXR auf einem immersiven HoloLens 2- oder Windows Mixed Reality-Headset auf dem Desktop entwickeln. Wenn Sie keinen Zugriff auf ein Headset haben, sind Emulatoren für HoloLens 2- und Windows Mixed Reality-Headsets verfügbar.
 
 ## <a name="available-hardware-platforms"></a>Verfügbare Hardwareplattformen
 
@@ -147,7 +135,7 @@ Bei der Erstellung von Mixed Reality-Apps mit der OpenXR-Entwicklung stehen Ihne
 
 |  Tool/SDK  |  Beschreibung  |
 | --- | --- |
-| [OpenXR-Entwicklertools](../native/openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | Bietet eine Demoszene, die verschiedene Features von OpenXR demonstriert, zusammen mit einer Seite „Systemstatus“, auf der Sie wichtige Informationen zur aktiven Laufzeit und zum aktuellen Headset vorfinden. |
+| [OpenXR-Entwicklertools](../native/openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) | Bietet eine Demoszene, die verschiedene Features von OpenXR demonstriert, zusammen mit einer Seite „Systemstatus“, auf der Sie wichtige Informationen zur aktiven Laufzeit und zum aktuellen Headset vorfinden. |
 | [OpenXR-Spezifikationen](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) |  Beschreibt, was OpenXR ist, welche Funktionen und Features es bietet, und wie Sie es in Ihre eigenen Projekte implementieren können. |
 | [OpenXR-Ladeprogramm](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Ermittelt die aktive OpenXR-Laufzeit auf dem Gerät und bietet Zugriff auf die Hauptfunktionen und Erweiterungsfunktionen, die davon implementiert werden. |
 
@@ -157,3 +145,6 @@ Sie können gerne mit der Beispiel-App experimentieren, um ein Gefühl für die 
 
 <!-- Go to actual GH link for more samples -->
 * [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) zeigt ein einfaches OpenXR-Beispiel mit zwei Visual Studio-Projektdateien, eine für eine Win32-Desktop-App und eine für eine UWP HoloLens 2-App.
+
+Außerdem können Sie eine einstündige exemplarische Vorgehensweise zu BasicXrApp ansehen, in der alle Schlüsselkomponenten der OpenXR-API in Visual Studio behandelt werden:
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
