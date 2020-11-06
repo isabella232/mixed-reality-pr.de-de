@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: Webxr, winmr, webar, webvr, windowsmixedreality, hololens, Windows Mixed Reality, Web VR, Web XR, Web Mr, Web AR, 360, 360 Video, 360 Videos, 360 Photo, 360 Fotos, 360 Content, immersives Web, immersiveweb, IW
-ms.openlocfilehash: 01e6cd44e9879cd7fd9b11e178134eaf364cc53c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b72d4968e59e3e631138b1ecfd17ca9bbdd95c84
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91691190"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416871"
 ---
 # <a name="webxr-overview"></a>Übersicht über webxr
 
@@ -22,6 +22,11 @@ Die **webxr-Geräte-API** ist für den Zugriff auf die Geräte der **virtuellen 
 Erfahren Sie mehr über die [gemischte Windows-Realität und den neuen Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge#introducing-the-new-microsoft-edge)in den [Neuerungen](https://docs.microsoft.com/windows/mixed-reality/mrtk-porting-guide) .
 
 ## <a name="viewing-webxr"></a>Anzeigen von webxr
+
+> [!IMPORTANT]
+> Microsoft Edge (Legacy) unterstützt nur webvr, eine veraltete API, die in den aktuellen Browsern nicht verfügbar ist. Der neue Windows Server **[-Edge-Browser](../../whats-new/new-microsoft-edge.md)** unterstützt jedoch webxr und ist für die VR-Prototypen in Windows Mixed Reality verfügbar. Webvr ist nicht im neuen, auf dem Server verwendeten Edge-Browser verfügbar.
+> 
+> Wenn Sie noch heute eine Methode zum Prototypen von webxr auf hololens 2 suchen, informieren Sie sich in [Firefox Reality](https://mixedreality.mozilla.org/firefox-reality/).
 
 Um zu testen, ob Ihr Browser webxr unterstützt, können Sie in Ihrem Browser zu [webxr-Beispielen](https://immersive-web.github.io/webxr-samples/) navigieren.
 
