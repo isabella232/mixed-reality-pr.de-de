@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: räumliche Zuordnung, hololens, gemischte Realität, Oberflächenrekonstruktion, Mesh
-ms.openlocfilehash: 83c235cb7a5111be2b7e01d6c5864c1d06e9c6dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686099"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340668"
 ---
 # <a name="spatial-mapping"></a>Räumliche Abbildung
 
@@ -99,7 +99,7 @@ Beachten Sie außerdem, dass die Fähigkeit einer Anwendung, räumliche Oberflä
 
 Das visuelle Feedback an den Benutzer ist bei der Platzierung von größter Wichtigkeit. Der Benutzer muss wissen, wo sich das – Hologramm in Bezug auf die nächstgelegene Oberfläche mit [Erden Effekten](spatial-mapping.md#visualization)befindet. Sie sollten verstehen, warum die Verschiebung ihres holograms eingeschränkt wird (z. b. aufgrund eines Konflikts mit einer anderen nahe gelegenen Oberfläche). Wenn Sie am aktuellen Speicherort kein – Hologramm platzieren können, sollte das visuelle Feedback den Grund dafür verdeutlichen, warum dies nicht der Fall ist. Wenn der Benutzer z. b. versucht, eine Holographic-Couch in der Wand zu platzieren, sollte sich die Teile der Couch, die sich hinter der Wand befinden, in einer wütenden Farbe durchlaufen. Wenn die Anwendung dagegen keine räumliche Oberfläche an einem Speicherort findet, an dem der Benutzer eine reale Oberfläche sehen kann, sollte die Anwendung dies klar machen. Das offensichtliche Fehlen eines Erden Effekts in diesem Bereich kann diesen Zweck erfüllen.
 
-### <a name="occlusion"></a>Verdeckung
+### <a name="occlusion"></a>Okklusion
 
 Eine der Haupt Verwendungsmöglichkeiten räumlicher Mapping-Oberflächen besteht darin, die holograms einfach zu okzieren. Dieses einfache Verhalten hat eine große Auswirkung auf die wahrgenommene Bedeutung von holograms und hilft dabei, einen viskoen Sinn zu schaffen, der tatsächlich denselben physischen Raum wie der Benutzer hat.
 
@@ -256,9 +256,9 @@ Jede Anwendung, die räumliche Zuordnung verwendet, sollte die Bereitstellung ei
 
 Die Art dieser Scanfunktion kann sich je nach Anforderungen der Anwendung stark unterscheiden, aber zwei Hauptprinzipien sollten den Entwurf berücksichtigen.
 
-Erstens **ist die klare Kommunikation mit dem Benutzer das primäre Problem** . Der Benutzer sollte immer wissen, ob die Anforderungen der Anwendung erfüllt werden. Wenn Sie nicht erfüllt werden, sollten Sie dem Benutzer sofort klar sein, warum dies der Fall ist, und Sie sollten schnell dazu führen, dass Sie die entsprechende Aktion ausführen.
+Erstens **ist die klare Kommunikation mit dem Benutzer das primäre Problem**. Der Benutzer sollte immer wissen, ob die Anforderungen der Anwendung erfüllt werden. Wenn Sie nicht erfüllt werden, sollten Sie dem Benutzer sofort klar sein, warum dies der Fall ist, und Sie sollten schnell dazu führen, dass Sie die entsprechende Aktion ausführen.
 
-Zweitens **sollten Anwendungen versuchen, ein Gleichgewicht zwischen Effizienz und Zuverlässigkeit zu erzielen** . Wenn **dies möglich ist, sollten** Anwendungen räumliche Daten automatisch analysieren, um die Benutzer Zeit zu sparen. Wenn es nicht möglich ist, dies zuverlässig zu tun, sollten Anwendungen den Benutzer stattdessen ermöglichen, der Anwendung schnell die zusätzlichen Informationen bereitzustellen, die Sie benötigt.
+Zweitens **sollten Anwendungen versuchen, ein Gleichgewicht zwischen Effizienz und Zuverlässigkeit zu erzielen**. Wenn **dies möglich ist, sollten** Anwendungen räumliche Daten automatisch analysieren, um die Benutzer Zeit zu sparen. Wenn es nicht möglich ist, dies zuverlässig zu tun, sollten Anwendungen den Benutzer stattdessen ermöglichen, der Anwendung schnell die zusätzlichen Informationen bereitzustellen, die Sie benötigt.
 
 Wenn Sie die richtige Scanfunktion entwerfen möchten, sollten Sie die folgenden Möglichkeiten für Ihre Anwendung beachten:
 
@@ -368,6 +368,13 @@ Im folgenden finden Sie einige Beispiele für verschiedene Arten der Mesh-Verarb
 ## <a name="troubleshooting"></a>Problembehandlung
 * Damit die Oberflächen Netzen ordnungsgemäß ausgerichtet werden, muss jedes gameobject aktiv sein, bevor es an den surfaceobserver gesendet wird, damit das Mesh erstellt werden kann. Andernfalls werden die Netze in Ihrem Raum angezeigt, aber in seltsamen Winkeln gedreht.
 * Das gameobject, das das Skript ausführt, das mit dem surfaceobserver kommuniziert, muss auf den Ursprung festgelegt werden. Andernfalls verfügen alle von Ihnen erstellten und an den surfaceobserver gesendeten gameobjects-Objekte, deren Netzen erstellt werden, über einen Offset, der gleich dem Offset des übergeordneten Spiel Objekts ist. Dies kann dazu führen, dass ihre Netze mehrere Meter entfernt werden, sodass es sehr schwierig ist, das zu debuggen, was passiert.
+
+## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+
+Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+
+> [!div class="nextstepaction"]
+> [Vorschlagen des Maßstabs eines Objekts (Maßstab)](../design/scale.md)
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Koordinatensysteme](coordinate-systems.md)

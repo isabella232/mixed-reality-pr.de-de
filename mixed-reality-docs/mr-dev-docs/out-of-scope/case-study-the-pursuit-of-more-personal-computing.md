@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, hololens, Fallstudie, Vision, Szenarios
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687158"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340678"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>Fallstudie: die Verfolgung von mehr persönlichen Computing
 
@@ -148,7 +148,19 @@ Unterhaltung ist in vielerlei Hinsicht die Grenzen der gemischten Realität (ins
 
 ## <a name="start-building-today"></a>Heute mit dem Aufbau beginnen
 
-Es ist schwierig zu sagen, wie die weitaus Zukunft gemischter Realität für Consumer aussehen wird, sich jedoch auf eindeutige Probleme konzentriert, praktische Hardware zu nutzen und ***heute* mit dem Schnittpunkt zwischen gemischter Realität, Stimme und Ki zu experimentieren** . Microsoft ist erst einmal mit gemischter Realität vertraut, aber das Erlernen der Erfolge, die heute von Unternehmen realisiert werden, hilft Ihnen bei der Erstellung der Erfahrungen von morgen.
+Es ist schwierig zu sagen, wie die weitaus Zukunft gemischter Realität für Consumer aussehen wird, sich jedoch auf eindeutige Probleme konzentriert, praktische Hardware zu nutzen und ***heute* mit dem Schnittpunkt zwischen gemischter Realität, Stimme und Ki zu experimentieren**. Microsoft ist erst einmal mit gemischter Realität vertraut, aber das Erlernen der Erfolge, die heute von Unternehmen realisiert werden, hilft Ihnen bei der Erstellung der Erfahrungen von morgen.
+
+## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+
+Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+
+> [!div class="nextstepaction"]
+> [Immersiv, ergonomisch, instinktiv und ungebunden](https://www.microsoft.com//hololens/hardware)
+
+Oder springen Sie in gemischte Realität:
+
+> [!div class="nextstepaction"]
+> [Benutzer in einer Wohlfühlzone halten (Komfort)](../design/comfort.md)
 
 ## <a name="about-the-author"></a>Zum Autor
 

@@ -8,20 +8,21 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, kompatibel, Kompatibilität, PC, Systemanforderungen
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5cf84768984691c253a557f6576685e89fb61078
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 464a2709600f7fff076053026797ce809b8fbf73
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684435"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340628"
 ---
 # <a name="windows-mixed-reality-pc-check-app"></a>Windows Mixed Reality-PC-Check-App
 
-Die **[Windows Mixed Reality PC Check](windows-mixed-reality-pc-check-app.md)** -APP ist die beste Möglichkeit, um sicherzustellen, dass Ihr PC für die Durchführung von Windows Mixed Reality bereit ist. 
+Die **[Windows Mixed Reality PC Check](windows-mixed-reality-pc-check-app.md)** -APP ist die beste Möglichkeit, um sicherzustellen, dass Ihr PC für die Durchführung von Windows Mixed Reality bereit ist.
 
 <a href="https://www.microsoft.com/store/productid/9NZVL19N7CNC"><img alt="Download Windows Mixed Reality PC Check app" src="images/WMR-PC-Check-app.png"/></a>
 
 Nachdem Sie die app ausgeführt haben, erhalten Sie eine der folgenden Meldungen:
+
 * **Das ist schon alles.** Ihr PC verfügt über die Möglichkeiten, Windows Mixed Reality auszuführen.
 * **Sie sind fast da.** Diese PCs können Windows Mixed Reality ausführen, einige Features sind jedoch möglicherweise eingeschränkt.
 * **Gemischte Realität kann nicht ausgeführt werden.** Dieser PC erfüllt nicht die Mindestanforderungen für die Durchführung von Windows Mixed Reality.
@@ -43,19 +44,18 @@ Anschließend erhalten Sie eine Analyse Ihres PCs mit der erforderlichen Hardwar
 
 ## <a name="get-help-with-windows-mixed-reality-pc-check-results"></a>Hilfe zu den Ergebnissen der Windows Mixed Reality-PC-Prüfung
 
-Wenn Sie Windows Mixed Reality einrichten oder die Windows Mixed Reality-PC-Check-App auf Ihrem Computer ausführen, erhalten Sie einen Bericht darüber, ob Ihr PC bereit ist, ihn auszuführen. Im folgenden finden Sie einige Details dazu, was möglicherweise angezeigt wird. 
+Wenn Sie Windows Mixed Reality einrichten oder die Windows Mixed Reality-PC-Check-App auf Ihrem Computer ausführen, erhalten Sie einen Bericht darüber, ob Ihr PC bereit ist, ihn auszuführen. Im folgenden finden Sie einige Details dazu, was möglicherweise angezeigt wird.
 
 ### <a name="youre-good-to-go"></a>![Das ist schon alles!](images/glyph-succeeded.png)
 
-Gute Neuigkeiten – auf Ihrem PC kann Windows Mixed Reality ausgeführt werden. Beachten Sie aber, dass es immer noch Abweichungen zwischen Computer Hardware und Konfiguration gibt. die gemischte Realität ist daher auf jedem PC möglicherweise nicht identisch. 
+Gute Neuigkeiten – auf Ihrem PC kann Windows Mixed Reality ausgeführt werden. Beachten Sie aber, dass es immer noch Abweichungen zwischen Computer Hardware und Konfiguration gibt. die gemischte Realität ist daher auf jedem PC möglicherweise nicht identisch.
 
 >[!NOTE]
 >Wenn eine Meldung angezeigt wird, die besagt, dass diese Hardwarekonfiguration möglicherweise mit Windows Mixed Reality funktioniert, aber noch nicht getestet wurde, können einige Leistungsprobleme auftreten, wenn Windows Mixed Reality für lange Sitzungen ausgeführt wird.
 
-
 ### <a name="youre-nearly-there"></a>![Sie sind fast da.](images/glyph-warning.png)
 
-Ihr PC sollte in der Lage sein, Windows Mixed Reality auszuführen, bietet jedoch möglicherweise nicht die beste Möglichkeit. Grafiken können verzögert werden, einige apps und Spiele funktionieren möglicherweise nicht gut, und einige werden möglicherweise gar nicht ausgeführt. 
+Ihr PC sollte in der Lage sein, Windows Mixed Reality auszuführen, bietet jedoch möglicherweise nicht die beste Möglichkeit. Grafiken können verzögert werden, einige apps und Spiele funktionieren möglicherweise nicht gut, und einige werden möglicherweise gar nicht ausgeführt.
 
 Im folgenden finden Sie die Nachrichten, die Sie möglicherweise sehen, und was Sie zu tun haben:
 
@@ -64,28 +64,30 @@ Im folgenden finden Sie die Nachrichten, die Sie möglicherweise sehen, und was 
 Integrierte Grafikkarten bieten die beste Windows Mixed Reality-Darstellung auf PCs mit Dual-Channel-RAM. Wenn Leistungsprobleme auftreten, führen Sie eine der folgenden Aktionen aus:
 
 * Installieren Sie eine [kompatible diskrete Grafikkarte](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md).
-* Installieren Sie einen zusätzlichen RAM-Stick, um Dual-Channel-RAM zu erstellen. 
-* Wechseln Sie zu einem [kompatiblen PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
+* Installieren Sie einen zusätzlichen RAM-Stick, um Dual-Channel-RAM zu erstellen.
+* Wechseln Sie zu einem [kompatiblen PC](https://www.microsoft.com/windows/windows-mixed-reality-devices).
 
-#### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>Dieser PC verfügt über eine hybride Grafik Konfiguration mit einem inkompatiblen PCIe-Link.
+#### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>Dieser PC verfügt über eine Hybrid Grafik Konfiguration mit einem inkompatiblen PCIe-Link.
 
-PCIe steht für die *Verbindung der Peripheriekomponenten, Express* . Dies ist die Verbindung, die von einem PC für die Kommunikation mit einer Grafikkarte verwendet wird. Ihre Konfiguration funktioniert möglicherweise, aber wenn Probleme auftreten, müssen Sie zu einem [kompatiblen PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)wechseln.
+PCIe steht für die *Verbindung der Peripheriekomponenten, Express*. Dies ist die Verbindung, die von einem PC für die Kommunikation mit einer Grafikkarte verwendet wird. Ihre Konfiguration funktioniert möglicherweise, aber wenn Probleme auftreten, müssen Sie zu einem [kompatiblen PC](https://www.microsoft.com/windows/windows-mixed-reality-devices)wechseln.
 
-#### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>Der Grafiktreiber dieses PCs funktioniert möglicherweise nicht gut mit Windows Mixed Reality.
+#### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>Der Grafiktreiber dieses PCs funktioniert möglicherweise nicht gut mit Windows Mixed Reality
 
-Wenn Probleme auftreten, versuchen Sie, einen neuen Grafiktreiber mithilfe Windows Update herunterzuladen ( **Starten Sie > Einstellungen > aktualisieren & Sicherheit > suchen Sie nach Updates** ), oder wechseln Sie zur Website Ihres PC-Herstellers bzw. Grafikkartenherstellers. 
+Wenn Probleme auftreten, versuchen Sie, einen neuen Grafiktreiber mithilfe Windows Update herunterzuladen ( **Starten Sie > Einstellungen > aktualisieren & Sicherheit > suchen Sie nach Updates** ), oder wechseln Sie zur Website Ihres PC-Herstellers bzw. Grafikkartenherstellers.
 
-Wenn dies nicht funktioniert, müssen Sie eine [kompatible Grafikkarte](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) hinzufügen oder zu einem [kompatiblen PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)wechseln.
+Wenn dies nicht funktioniert, müssen Sie eine [kompatible Grafikkarte](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) hinzufügen oder zu einem [kompatiblen PC](https://www.microsoft.com/windows/windows-mixed-reality-devices)wechseln.
 
-#### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>Der Prozessor dieses PCs funktioniert möglicherweise nicht gut mit Windows Mixed Reality.
+#### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>Der Prozessor dieses PCs funktioniert möglicherweise nicht gut mit Windows Mixed Reality
 
-Der Prozessor dieses PCs funktioniert möglicherweise nicht gut mit Windows Mixed Reality, da er nicht über genügend Kerne verfügt. Wenn Windows Mixed Reality nicht ordnungsgemäß ausgeführt wird, ersetzen Sie den Prozessor durch einen [kompatiblen](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) Computer, oder wechseln Sie zu einem [kompatiblen PC](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices).
+Der Prozessor dieses PCs funktioniert möglicherweise nicht gut mit Windows Mixed Reality, da er nicht über genügend Kerne verfügt. Wenn Windows Mixed Reality nicht ordnungsgemäß ausgeführt wird, ersetzen Sie den Prozessor durch einen [kompatiblen](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) Computer, oder wechseln Sie zu einem [kompatiblen PC](https://www.microsoft.com/windows/windows-mixed-reality-devices).
 
 #### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>Dieser PC verfügt möglicherweise nicht über eine kompatible USB-Konfiguration.
 
 Wenn Probleme bei der Ausführung von Windows Mixed Reality auftreten, versuchen Sie Folgendes:
+
 * Anschließen Sie das Headset an einen anderen USB-Anschluss, falls verfügbar.
 * Wenn dies nicht funktioniert, deinstallieren Sie den aktuellen USB-Treiber Ihres PCs, und installieren Sie dann einen Microsoft-Treiber neu:
+
 1. Wählen Sie **Start** aus, und geben Sie dann **"Geräte-Manager"** in das Suchfeld ein.
 1. Wählen Sie **Geräte-Manager** aus den Ergebnissen aus.
 1. Erweitern Sie die Kategorie für universelle serielle Buscontroller, sehen Sie sich die aufgeführten Geräte an, und deinstallieren Sie alle inkompatiblen Treiber. 

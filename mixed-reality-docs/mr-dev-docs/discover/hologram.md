@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, hololens, holograms, Design, Interaktion
-ms.openlocfilehash: f5c42d197316169a99e388e40bf97a03682630ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690363"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340698"
 ---
 # <a name="what-is-a-hologram"></a>Was ist ein Hologramm?
 
@@ -73,7 +73,7 @@ Wenn Sie über einen bestimmten Ort verfügen, an dem Sie ein Hologram haben mö
 Einige Hologramme folgen dem Benutzer. Diese tagbasierten holograms positionieren sich in Bezug auf den Benutzer unabhängig davon, wo Sie sich befinden. Sie können sich auch ein – Hologramm für eine Weile mit Ihnen anmelden und dann auf der Wand platzieren, sobald Sie zu einem anderen Raum gelangen.
 
 **bewährten Methoden**
-* In einigen Szenarien kann es sinnvoll sein, dass holograms im gesamten Szenario leicht erkennbar oder sichtbar sind. Es gibt zwei allgemeine Vorgehensweisen für diese Art der Positionierung. Wir nennen Sie **"Display-Locked"** und **"Body-Locked"** .
+* In einigen Szenarien kann es sinnvoll sein, dass holograms im gesamten Szenario leicht erkennbar oder sichtbar sind. Es gibt zwei allgemeine Vorgehensweisen für diese Art der Positionierung. Wir nennen Sie **"Display-Locked"** und **"Body-Locked"**.
    * Anzeige-gesperrte Inhalte sind auf der Geräte Anzeige Positions bedingt "gesperrt". Dies ist aus verschiedenen Gründen schwierig, einschließlich eines unnatürlichen Gefühls der "clingyness", bei dem viele Benutzer frustriert sind und diese "Schütteln" möchten. Im Allgemeinen haben viele Designer besser festgestellt, dass Inhalte mit der Anzeige nicht gesperrt werden.
    * Der Body-Locked-Ansatz ist weitaus besser verzeihbar. Die Text Sperre erfolgt, wenn ein – Hologramm in den Textkörper oder den Blick Vektor des Benutzers verschoben wird, aber im 3D--Bereich um den Benutzer positioniert ist. Viele Benutzeroberflächen haben ein Verhalten bei der Text Sperrung übernommen, bei dem das – Hologramm "dem Benutzer angezeigt wird, sodass der Benutzer Ihren Text drehen und durch Leerzeichen bewegen kann, ohne das – Hologramm zu verlieren. Durch die Einbindung einer Verzögerung wird die – Hologramm-Bewegung natürlicher. Beispielsweise verwendet eine zentrale Benutzeroberfläche des Windows Holographic-Betriebssystems eine Variation von Body-Locks, die auf den Blick des Benutzers folgt, mit einer sanften, elastischen, elastischen Verzögerung, während der Benutzer den Kopf schaltet.
 * Platzieren Sie das – Hologramm in einer bequemen Anzeige Distanz, die in der Regel ungefähr 1-2 Meter von der Kopfzeile entfernt ist.
@@ -126,6 +126,17 @@ Holograms können auch durch reale Objekte verdeckt werden. Ein holografisches Z
 
 ---
 
+## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+
+Wenn Sie der [Discovery Journey](get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+
+> [!div class="nextstepaction"]
+> [Eine neue Vision für die Arbeit](https://dynamics.microsoft.com//mixed-reality/overview/)
+
+Oder springen zu:
+
+> [!div class="nextstepaction"]
+> [Das Streben nach angepassterer Nutzung](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Erweitern Ihres Entwurfsprozesses](case-study-expanding-the-design-process-for-mixed-reality.md)

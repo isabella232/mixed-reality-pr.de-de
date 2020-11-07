@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows-Realität, Stil, Entwurf
-ms.openlocfilehash: a9a02d681986df3d73c7990fc975e659e5326981
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684014"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340658"
 ---
 # <a name="scale"></a>Skalieren
 
@@ -79,6 +79,18 @@ Dadurch können einige mögliche Artefakte in der-Darstellung erstellt werden:
 <br>
 
 ---
+
+## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+
+Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie am Ende Ihrer anfänglichen verzweilegung in Mixed Reality-Grundlagen. Sie können entweder herausfinden, was Branchenpartner mit gemischter Realität in der realen Welt tun: 
+
+> [!div class="nextstepaction"]
+> [Erfahren Sie, wie Branchenpartner Mixed Reality einsetzen](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
+
+Oder fahren Sie mit der Entwurfs Journey fort:
+
+> [!div class="nextstepaction"]
+> [Beginnen Sie mit der Entwurfs Journey](../design/design.md)
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Farbe, Licht und Materialien](../color,-light-and-materials.md)

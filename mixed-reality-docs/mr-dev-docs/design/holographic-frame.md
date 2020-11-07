@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: Hololens, Windows Mixed Reality, Holographic Frame, Field of View
-ms.openlocfilehash: 516d9255fbc8067f42e17125d41240c9ba49a33b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686779"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340638"
 ---
 # <a name="holographic-frame"></a>Holografischer Rahmen
 
@@ -21,7 +21,7 @@ Benutzer sehen die Welt der Mixed Reality durch ein rechteckiges Ansichtsfenster
 
 Häufig ist es für Entwickler von Bedeutung, den Umfang ihrer Benutzeroberfläche auf die Benutzer zu beschränken, die sofort angezeigt werden können, und die tatsächliche Skalierung zu beeinträchtigen, um sicherzustellen, dass der Benutzer ein Objekt vollständig sieht. Ähnlich können Designer mit komplexen Anwendungen den Holographic-Frame häufig mit Inhalten überladen und Benutzer mit schwierigen Interaktionen und überlasteten Schnittstellen überfordern. Designer, die gemischte Realitäts Inhalte erstellen, müssen ihre Obergrenzen nicht direkt vor dem Benutzer und innerhalb ihrer unmittelbaren Ansicht einschränken. Wenn die physische Welt um den Benutzer zugeordnet ist, sollten alle diese Oberflächen als potenzieller Canvas für digitalen Inhalt und Interaktionen angesehen werden. Der richtige Entwurf von Interaktionen und Inhalten innerhalb einer Benutzerumgebung sollte den Benutzer dazu ermutigen, seinen Platz zu bewegen, seine Aufmerksamkeit auf wichtige Inhalte zu lenken und das volle Potenzial gemischter Realität zu sehen.
 
-Das vielleicht wichtigste Verfahren zum fördern der Bewegung und Untersuchung in einer App besteht darin, dass **Benutzer die Benutzeroberflächen anpassen können** . Legen Sie den Benutzern einen kurzen Zeitraum von "Task-Free"-Zeit mit dem Gerät zu. Dies kann ganz einfach sein, wenn Sie ein Objekt in den Bereich versetzen und es den Benutzern ermöglichen, Sie zu verschieben oder eine Einführung in die Benutzerumgebung zu geben. Diese Zeit sollte für alle wichtigen Aufgaben oder bestimmte Gesten (z. b. das Tippen auf das Tippen) freigegeben werden. Dies ist der Zweck, den Benutzern das Anzeigen von Inhalten über das Gerät zu ermöglichen, bevor Interaktivität erforderlich ist oder die Phasen der APP fortgeführt werden. Wenn dies das erste Mal eines Benutzers mit dem Gerät ist, ist dies besonders wichtig, da Sie sich mit dem Anzeigen von Inhalten über den Holographic-Frame und der Art von holograms vertraut machen.
+Das vielleicht wichtigste Verfahren zum fördern der Bewegung und Untersuchung in einer App besteht darin, dass **Benutzer die Benutzeroberflächen anpassen können**. Legen Sie den Benutzern einen kurzen Zeitraum von "Task-Free"-Zeit mit dem Gerät zu. Dies kann ganz einfach sein, wenn Sie ein Objekt in den Bereich versetzen und es den Benutzern ermöglichen, Sie zu verschieben oder eine Einführung in die Benutzerumgebung zu geben. Diese Zeit sollte für alle wichtigen Aufgaben oder bestimmte Gesten (z. b. das Tippen auf das Tippen) freigegeben werden. Dies ist der Zweck, den Benutzern das Anzeigen von Inhalten über das Gerät zu ermöglichen, bevor Interaktivität erforderlich ist oder die Phasen der APP fortgeführt werden. Wenn dies das erste Mal eines Benutzers mit dem Gerät ist, ist dies besonders wichtig, da Sie sich mit dem Anzeigen von Inhalten über den Holographic-Frame und der Art von holograms vertraut machen.
 
 ### <a name="large-objects"></a>Große Objekte
 
@@ -138,6 +138,13 @@ Als immersives Verfahren wurde empfohlen, die Benutzer zu untersuchen und ihren 
 *Die virtuellen narratoren werden dazu verwendet, um die Bewegung eines Benutzers zu verfolgen, sodass Sie während der gesamten Zeit einen leistungsfähigen Fokus schaffen können.*
 
 Die realistische Darstellung von Buzz bot einen leistungsstarken Mittelpunkt, der mit einer kleinen Technik fertig ist, um dem Benutzer zu zeigen, wie er es gibt. Wenn sich der Benutzer über die Benutzeroberflächen bewegt, wechselt der Sprung zu einem Schwellenwert, bevor er in einen neutralen Zustand wechselt, wenn der Benutzer zu weit über seine Peripherie hinausgeht. Wenn der Benutzer das vollständige verschieben (z. b. an anderer Stelle in der Szene) und dann wieder zu Buzz durchführt, wird die direktionale Position der Sprachausgabe wieder auf den Benutzer ausgerichtet. Techniken wie diese bieten ein leistungsfähiges Gefühl für das Eintauchen und das Erstellen eines Mittelpunkts im Holographic-Frame, wodurch eine übermäßige Kopfbewegung und eine herauf Stufung des [Benutzer Komforts](comfort.md)vermieden werden.
+
+## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+
+Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+
+> [!div class="nextstepaction"]
+> [Erzeugen des realen Eindrucks von holografischen Objekten (Räumliche Zuordnung)](../design/spatial-mapping.md)
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Instinktive Interaktionen](interaction-fundamentals.md)
