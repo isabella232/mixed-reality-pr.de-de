@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, hololens, holograms, Design, Interaktion
-ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340698"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386236"
 ---
 # <a name="what-is-a-hologram"></a>Was ist ein Hologramm?
 
@@ -131,14 +131,8 @@ Holograms können auch durch reale Objekte verdeckt werden. Ein holografisches Z
 Wenn Sie der [Discovery Journey](get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
 
 > [!div class="nextstepaction"]
-> [Eine neue Vision für die Arbeit](https://dynamics.microsoft.com//mixed-reality/overview/)
-
-Oder springen zu:
-
-> [!div class="nextstepaction"]
-> [Das Streben nach angepassterer Nutzung](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
+> [Erweitern Ihres Entwurfsprozesses](case-study-expanding-the-design-process-for-mixed-reality.md)
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Erweitern Ihres Entwurfsprozesses](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [Raumklang](../design/spatial-sound.md)
 * [Farbe, Licht und Materialien](../color,-light-and-materials.md)

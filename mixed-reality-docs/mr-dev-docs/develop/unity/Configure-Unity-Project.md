@@ -6,20 +6,20 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, gemischte Realität, Entwicklung, Einstieg, neues Projekt
-ms.openlocfilehash: 3ddca223df94f4aa748ee510c3198389acecdedc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679074"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386216"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Konfigurieren eines neuen Unity-Projekts für Windows Mixed Reality 
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
 Windows Mixed Reality (WMR) ist eine Microsoft-Plattform, die als Teil des Betriebssystems Windows 10 eingeführt wird. Mit der WMR-Plattform können Sie Anwendungen erstellen, mit denen digitale Inhalte auf Holographic-und VR-Geräten angezeigt werden.
 
-Wenn Sie für WMR einrichten, können Sie zwei Pfade verwenden. Ihre erste Option besteht darin, das [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) (mrtk) v2 zu installieren, mit dem die WMR-Umgebung automatisch eingerichtet wird. Die zweite Option besteht darin, einige Unity-Einstellungen manuell zu ändern, um Sie mit WMR zu umgehen. 
+Wenn Sie für WMR einrichten, können Sie zwei Pfade verwenden. Ihre erste Option besteht darin, das [Mixed Reality Toolkit (mrtk)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)zu installieren, mit dem die WMR-Umgebung automatisch eingerichtet wird. Die zweite Option besteht darin, einige Unity-Einstellungen manuell zu ändern, um Sie mit WMR zu umgehen. 
 
 > [!NOTE]
 > Sie können mrtk später jederzeit importieren, sodass es für die manuelle Route keinen Nachteil gibt.
@@ -36,7 +36,7 @@ Die erste Einstellung, die Sie für WMR ändern müssen, ist die Projektplattfor
 5. **Buildtyp** auf **D3D** festlegen
 6. **UWP SDK** auf **Letztes installiert** festlegen
 
-![Unity-XR-Einstellungen](images/unity-uwp-settings.png)<br>
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Unity-XR-Einstellungen*
 
 Nachdem die Plattform ordnungsgemäß konfiguriert wurde, müssen Sie Unity mitteilen, dass Ihre APP beim Exportieren eine [immersive Ansicht](../../design/app-views.md) anstelle einer 2D-Ansicht erstellen sollte:
@@ -60,7 +60,7 @@ Es wird empfohlen, dass Sie die Manifest-Deklarationen in Unity vornehmen, um Si
 |  Webcam  |  Photocapture und Videocapture | 
 |  Pictureslibrary/videoslibrary  |  Photocapture oder Videocapture bzw. (beim Speichern des erfassten Inhalts) | 
 |  Mikrofon  |  Videocapture (bei der Erfassung von Audiodaten), "diktationerkenzer", "grammarerkenzer" und "keywordrecognizer" | 
-|  Internet Client deklarieren  |  "Diktationerkenzer" (und für die Verwendung des Unity-Profilers) | 
+|  InternetClient  |  "Diktationerkenzer" (und für die Verwendung des Unity-Profilers) | 
 
 ### <a name="quality-settings"></a>Qualitätseinstellungen
 
@@ -80,7 +80,7 @@ Wenn **Virtual Reality** aktiviert ist, behandelt die [Unity-Kamera](camera-in-u
 Wenn Ihre APP speziell auf hololens ausgerichtet ist, müssen Sie einige Einstellungen ändern, um die transparente Anzeige des Geräts zu optimieren. Mit diesen Einstellungen können Sie Ihre Holographic-Inhalte in der physischen Welt anzeigen:
 1. Wählen Sie in der **Hierarchie** die **Hauptkamera** aus.
 2. Legen Sie im **Inspektor** -Panel die Transformations **Position** auf **0, 0, 0** fest, sodass der Speicherort des Benutzer Kopfes am Ursprung der Unity-Welt beginnt.
-3. Ändern Sie die **Clear-Flags** in eine voll **Tonfarbe** .
+3. Ändern Sie die **Clear-Flags** in eine voll **Tonfarbe**.
 4. Ändern Sie die **Hintergrund** Farbe in **RGBA 0, 0, 0** , 0. Schwarz wird in hololens als transparent gerendert.
 5. Ändern Sie die **Clippingebenen in der Nähe** der [empfohlenen hololens](camera-in-unity.md#clip-planes) 0,85 (Meter).
 
@@ -90,6 +90,8 @@ Wenn Ihre APP speziell auf hololens ausgerichtet ist, müssen Sie einige Einstel
 > [!IMPORTANT]
 > Wenn Sie eine neue Kamera löschen und erstellen, stellen Sie sicher, dass die neue Kamera als " **maincamera** " gekennzeichnet ist.
 
-## <a name="see-also"></a>Siehe auch
-* [Mixed Reality Toolkit v2](mrtk-getting-started.md)
+## <a name="see-also"></a>Weitere Informationen
+* [Mrtk-Installationshandbuch (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [Mrtk-Dokumentations Startseite (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [Installieren der Tools](../install-the-tools.md)
 * [Übersicht über Unity-Entwicklung](unity-development-overview.md)
