@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Kernkonzepte, Interaktion
-ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
+ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293127"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94361726"
 ---
 # <a name="start-designing-and-prototyping"></a>Mit Entwerfen und Prototyping beginnen
 
@@ -88,17 +88,17 @@ Die Arbeit eines Entwerfers ist nie getan, insbesondere wenn es darum geht, imme
         Erfahren Sie, wie Sie mit Unity interaktive Erlebnisse erstellen können. Lernen durch Handeln, von Anfang bis Ende.
     :::column-end:::    
     :::column:::    
-        [![Mixed Reality-Toolkit (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![Mixed Reality-Toolkit (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[Mixed Reality-Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         Mit räumlicher Interaktion und Bausteinen für die Benutzeroberfläche starten Sie Ihren Mixed Reality-Entwurf und Ihre Entwicklung mit Unity.   
     :::column-end:::
     :::column:::    
-        [![Mixed Reality-Design-Labs](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![Mixed Reality-Design-Labs](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[Mixed Reality-Design-Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         Erhalten Sie Beispiel-Apps, die Ihnen zeigen, wie Sie die MRTK-Bausteine nutzen können, um ansprechende Mixed Reality-Erlebnisse zu kreieren.
     :::column-end:::        
     :::column:::    
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
         Entwurf für VR. Microsoft Maquette gestaltet das räumliche Prototyping einfach, schnell und immersiv. 
     :::column-end:::    
@@ -112,22 +112,22 @@ Die Arbeit eines Entwerfers ist nie getan, insbesondere wenn es darum geht, imme
 
 :::row:::
     :::column:::
-       [![Verstehen der Grundlagen](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![Verstehen der Grundlagen](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[Verstehen der Grundlagen](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         Erhalten Sie ein besseres Verständnis dafür, was Mixed Reality ausmacht und wie es genutzt wird.
     :::column-end:::
     :::column:::
-        [![Eine Veranstaltung besuchen](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![Eine Veranstaltung besuchen](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[Eine Veranstaltung besuchen](../whats-new/sf-academy-events.md)**<br>
         Sehen Sie die Hardware, und lassen Sie sich durch ein praktisches Lernprogramm beim Erstellen Ihrer ersten HoloLens 2-Anwendung führen.
     :::column-end:::
     :::column:::
-        [![Tools installieren](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![Tools installieren](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[Tools installieren](../develop/install-the-tools.md)**<br>
         Verwenden Sie die Checkliste für die Installation, um die erforderlichen Tools für die Erstellung von Apps für HoloLens und Mixed Reality zu erhalten.
     :::column-end:::
     :::column:::
-        [![In die Entwicklung einsteigen](images/icon-developer.png)](../develop/development.md)<br>
+        [![In die Entwicklung einsteigen](images/74-18.png)](../develop/development.md)<br>
         **[In die Entwicklung einsteigen](../develop/development.md)**<br>
         Wählen Sie auf der Grundlage Ihrer Kenntnissen, Ihres Arbeitsstils oder Ihrer Plattform einen Entwicklungspfad aus.
     :::column-end:::
