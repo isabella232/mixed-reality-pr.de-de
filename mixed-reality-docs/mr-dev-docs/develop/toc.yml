@@ -22,7 +22,7 @@
       href: unity/unity-development-overview.md
     - name: Erste Schritte
       items:
-        - name: Erste Schritte mit Mixed Reality Toolkit v2
+        - name: Erste Schritte mit MRTK
           href: unity/mrtk-getting-started.md
         - name: Konfigurieren eines Unity-Projekts für Windows Mixed Reality
           href: unity/configure-unity-project.md
@@ -170,7 +170,7 @@
               href: unity/tutorials/mr-azure-301.md
     - name: Grundbausteine
       items:
-        - name: 'MRTK 101: Verwenden des Mixed Reality-Toolkits Unity für grundlegende Interaktionen'
+        - name: 'MRTK 101: Erstellen von grundlegenden Interaktionen mithilfe von Mixed Reality Toolkit Unity'
           href: unity/mrtk-101.md
         - name: Kamera in Unity
           href: unity/camera-in-unity.md
@@ -208,7 +208,7 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Native Mixed Reality-Objekte in Unity
           href: unity/unity-xrdevice-advanced.md
-        - name: Verwenden von Vuforial mit Unity
+        - name: Verwenden von Vuforia mit Unity
           href: unity/vuforia-development-overview.md
     - name: Immersive VR
       items:
