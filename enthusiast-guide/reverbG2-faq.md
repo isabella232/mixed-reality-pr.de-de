@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049472"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482398"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -73,3 +73,16 @@ Obwohl viele Spiele sofort mit HP Motion Controller funktionieren, haben einige 
 - Falsches Modell angezeigt: die Korrektur erfordert ein Spiel Update. In der Regel werden dadurch keine Features des Spiels blockiert. Dies kann jedoch zu Verwirrung oder sogar visuellen Artefakten führen.
 - Abhängigkeit von dem Touchpad oder eher im Allgemeinen für das Eingabe Layout des Controllers. Mit steamvr können benutzerdefinierte Bindungen erstellt werden, um diese Art von Problem zu umgehen:
     - Windows Mixed Reality für steamvr umfasst benutzerdefinierte Bindungen für einige Spiele. Diese Bindungen werden automatisch verwendet, wenn das Spiel gestartet wird, und es ist keine Benutzeraktion erforderlich.
+
+## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>Meine steamvr-Spiele scheinen nicht ordnungsgemäß für meine HP Motion-Controller zu funktionieren.
+
+Während Entwickler daran arbeiten, ihre Spiele für die Kompatibilität mit HP Motion Controller zu aktualisieren, haben wir benutzerdefinierte Controller Bindungen für viele der beliebtesten Spiele im Stream bereitgestellt. Wenn "Windows Mixed Reality for steamvr" vollständig auf Version 1.2.444 aktualisiert wurde, sollten diese Bindungen automatisch abgerufen werden, wenn das Spiel ausgeführt wird. Wenn Ihr Spiel ihre Aktionen zu diesem Zeitpunkt jedoch nicht registrieren sollte, können Sie manuell mithilfe des Menüs "steamvr-Einstellungen" nach benutzerdefinierten Bindungs Profilen suchen.
+Aufgabe
+
+- Öffnen Sie das Menü "steamvr" durch Drücken der Menü Schaltfläche des rechten Bewegungs Controllers.
+- Wählen Sie das Symbol "Einstellungen" in der unteren rechten Ecke des Menü "steamvr" aus.
+- Wählen Sie die Registerkarte "controller" aus.
+- Wählen Sie die Option "Controller Bindungen verwalten" aus.
+
+Von hier aus können Sie die aktive Controller Bindung in "Custom" (Benutzer definiert) ändern. Dadurch wird die Option zum Ausprobieren der von der Community gemeinsam genutzten Spiel Bindungen geöffnet.
+Wenn noch keine benutzerdefinierten Spiel Bindungen für dieses Spiel freigegeben wurden (oder wenn Sie mit den versuchten, die Sie ausprobiert haben), können Sie auch Ihre eigenen benutzerdefinierten Spiel Bindungen erstellen und sogar dem Rest der Community helfen, indem Sie Sie nach einigen Spielsitzungen freigeben.
