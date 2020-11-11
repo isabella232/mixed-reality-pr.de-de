@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu Azure Spatial Anchors: 4 Anzeigen von Azure Spatial Anchors-Feedback'
-description: In diesem Kurs erfahren Sie, wie Sie Azure Spatial Anchors in einer Mixed Reality-Anwendung implementieren.
+description: In diesem Kurs erfahren Sie, wie Sie Feedback von Azure Spatial Anchors in einer Mixed Reality-Anwendung anzeigen.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698003"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353338"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Anzeigen des Feedbacks von Azure Spatial Anchors
 
@@ -25,9 +25,9 @@ In diesem Tutorial erfahren Sie, wie Sie Feedback zur Ankerermittlung, zu Ereign
 
 ## <a name="setting-up-asa-feedback-panel"></a>Einrichten des ASA-Feedbackbereichs
 
-Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das Objekt **Instructions** > **TextContent** . Wählen Sie **3D Object** > **Text - TextMeshPro** (3D-Objekt > Text – TextMeshPro) aus, um ein Textobjekt von TextMeshPro als untergeordnetes Element des Objekts „Instructions > TextContent“ zu erstellen:
+Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das Objekt **Instructions** > **TextContent**. Wählen Sie **3D Object** > **Text - TextMeshPro** (3D-Objekt > Text – TextMeshPro) aus, um ein Textobjekt von TextMeshPro als untergeordnetes Element des Objekts „Instructions > TextContent“ zu erstellen:
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![Unity mit neu erstelltem, ausgewähltem TextMeshPro-Objekt](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > Um das Arbeiten mit Ihrer Szene zu erleichtern, legen Sie die <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> (Sichtbarkeit in der Szene) für das ParentAnchor-Objekt auf „Aus“ fest, indem Sie links neben dem Objekt auf das Augensymbol klicken. Dadurch wird das Objekt im Szenenfenster ausgeblendet, ohne seine Sichtbarkeit im Spiel zu ändern.
@@ -44,13 +44,13 @@ Wählen Sie dann die Schriftarteigenschaften so, dass der Text gut in den Textbe
 * Ändern Sie die **Font Size** (Schriftgrad) der TextMeshPro – Text-Komponente in 0,17.
 * Ändern Sie das **Alignment** (Ausrichtung) der TextMeshPro – Text-Komponente in „Zentriert“ und „Mitte“.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![Unity mit konfiguriertem Feedback-Objekt](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 Wählen Sie im Hierarchiefenster das **Feedback** -Objekt aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Anchor Feedback Script (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
 * Weisen Sie das **Feedback** -Objekt selbst dem Feld **Feedbacktext** der **Anchor Feedback Script (Script)** -Komponente zu.
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![Unity mit konfigurierter Anchor Feedback Script-Komponente](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 

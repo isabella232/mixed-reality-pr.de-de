@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entwurf, Komfort, HoloLens 2, HoloLens (1. Gen.)
-ms.openlocfilehash: 6528dca71a1e0cd92b621cab8b1b7ba547fcb71e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698351"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340648"
 ---
 # <a name="comfort"></a>Komfort
 
@@ -40,17 +40,17 @@ HoloLens-Displays sind auf eine optische Entfernung von 2.0 m vom Benutzer festg
 
 ### <a name="best-practices-for-hololens-1st-gen-and-hololens-2"></a>Bewährte Methoden für HoloLens (1. Gen.) und HoloLens 2
 
-Für maximalen Komfort **liegt der optimale Bereich für die Platzierung von Hologrammen zwischen 1,25 m und 5 m** . Unter allen Umständen sollten Designer versuchen, Inhaltsszenen so zu strukturieren, dass die Benutzer ermutigt werden, 1 m oder weiter entfernt von den Inhalten zu interagieren (z. B. durch Anpassen von [Inhaltsgröße und Standard-Platzierungsparametern](gaze-and-commit.md)). 
+Für maximalen Komfort **liegt der optimale Bereich für die Platzierung von Hologrammen zwischen 1,25 m und 5 m**. Unter allen Umständen sollten Designer versuchen, Inhaltsszenen so zu strukturieren, dass die Benutzer ermutigt werden, 1 m oder weiter entfernt von den Inhalten zu interagieren (z. B. durch Anpassen von [Inhaltsgröße und Standard-Platzierungsparametern](gaze-and-commit.md)). 
 
 Zwar kann es gelegentlich erforderlich sein, Inhalte näher als 1 m entfernt anzuzeigen, wir raten aber davon ab, Hologramme jemals näher als 40 cm entfernt darzustellen. Wir empfehlen vielmehr, **Inhalte bei 40 cm auszublenden und eine Beschneidungsebene für das Rendern bei 30 cm zu platzieren** , um jegliche näher gelegenen Objekte zu vermeiden.
 
-Objekte, die sich in der Tiefe bewegen, erzeugen aufgrund des Konvergenz-Akkomodations-Konflikts mit größerer Wahrscheinlichkeit Unbehagen als statische Objekte. Analog dazu kann die Anforderung, schnell zwischen einem nahen und einem fernen Fokus zu wechseln (beispielsweise wegen eines Popup-Hologramms, das direkte Interaktion erfordert) beim Benutzer zu visuellem Unbehagen und Ermüdung führen. Daher sollte **besondere Sorgfalt darauf verwendet werden, die Häufigkeit dieser zwei Punkte für Benutzer zu minimieren: das Betrachten von Inhalten mit wechselnder Raumtiefe und schnelles Umschalten des Fokus zwischen nahen und fernen Hologrammen** . 
+Objekte, die sich in der Tiefe bewegen, erzeugen aufgrund des Konvergenz-Akkomodations-Konflikts mit größerer Wahrscheinlichkeit Unbehagen als statische Objekte. Analog dazu kann die Anforderung, schnell zwischen einem nahen und einem fernen Fokus zu wechseln (beispielsweise wegen eines Popup-Hologramms, das direkte Interaktion erfordert) beim Benutzer zu visuellem Unbehagen und Ermüdung führen. Daher sollte **besondere Sorgfalt darauf verwendet werden, die Häufigkeit dieser zwei Punkte für Benutzer zu minimieren: das Betrachten von Inhalten mit wechselnder Raumtiefe und schnelles Umschalten des Fokus zwischen nahen und fernen Hologrammen**. 
 
 ### <a name="additional-considerations-for-hololens-2-and-near-interaction-distances"></a>Zusätzliche Überlegungen zu HoloLens 2 und kurzen Interaktionsentfernungen
 
-Beim Entwerfen von Inhalten für die direkte (nahe) Interaktion in HoloLens 2 oder **in allen Anwendungen, in denen Inhalte näher als 1 m entfernt platziert werden müssen, sollte besonderes Augenmerk auf den Komfort der Benutzer gelegt werden** . Die Wahrscheinlichkeit des Auftretens von Unbehagen aufgrund des Konvergenz-Akkomodations-Konflikts steigt mit abnehmendem Betrachtungsabstand exponentiell an. Darüber hinaus erleben Benutzer beim Betrachten von Inhalten in kurzem Interaktionsabstand möglicherweise eine stärkere Unschärfe. Daher empfiehlt es sich, Inhalte sowohl innerhalb des Bereichs der optimalen Hologrammplatzierung als auch näher (weniger als 1,0 m bis hinab zur Beschneidungsebene) zu testen, um sicherzustellen, dass die Darstellung scharf und komfortabel zu betrachten ist. 
+Beim Entwerfen von Inhalten für die direkte (nahe) Interaktion in HoloLens 2 oder **in allen Anwendungen, in denen Inhalte näher als 1 m entfernt platziert werden müssen, sollte besonderes Augenmerk auf den Komfort der Benutzer gelegt werden**. Die Wahrscheinlichkeit des Auftretens von Unbehagen aufgrund des Konvergenz-Akkomodations-Konflikts steigt mit abnehmendem Betrachtungsabstand exponentiell an. Darüber hinaus erleben Benutzer beim Betrachten von Inhalten in kurzem Interaktionsabstand möglicherweise eine stärkere Unschärfe. Daher empfiehlt es sich, Inhalte sowohl innerhalb des Bereichs der optimalen Hologrammplatzierung als auch näher (weniger als 1,0 m bis hinab zur Beschneidungsebene) zu testen, um sicherzustellen, dass die Darstellung scharf und komfortabel zu betrachten ist. 
 
-**Wir empfehlen, ein „Tiefenbudget“ für Apps einzurichten, das auf der Länge der Zeit basiert, in der von einem Benutzer das Betrachten von Inhalten erwartet wird, die in der Nähe (näher als 1,0 m) liegen und sich mit wechselnder Raumtiefe bewegen** . Beispielsweise könnte vermieden werden, den Benutzer mehr als 25 % der Zeit solchen Situationen auszusetzen. Wenn das Tiefenbudget überschritten wird, empfehlen wir sorgfältige Benutzertests, um sicherzustellen, dass das Benutzererleben angenehm bleibt. 
+**Wir empfehlen, ein „Tiefenbudget“ für Apps einzurichten, das auf der Länge der Zeit basiert, in der von einem Benutzer das Betrachten von Inhalten erwartet wird, die in der Nähe (näher als 1,0 m) liegen und sich mit wechselnder Raumtiefe bewegen**. Beispielsweise könnte vermieden werden, den Benutzer mehr als 25 % der Zeit solchen Situationen auszusetzen. Wenn das Tiefenbudget überschritten wird, empfehlen wir sorgfältige Benutzertests, um sicherzustellen, dass das Benutzererleben angenehm bleibt. 
 
 Im Allgemeinen empfehlen wir außerdem sorgfältige Tests, um sicherzustellen, dass alle Interaktionsanforderungen (z. B. Bewegungsgeschwindigkeit, Erreichbarkeit usw.) bei kurzen Interaktionsabständen für die Benutzer angenehm bleiben. 
 
@@ -162,6 +162,13 @@ Als optimaler Blickwinkel (in Ruhe) wird der Bereich von 10–20 Grad unterhalb 
 ## <a name="arm-positions"></a>Armpositionen
 
 Die Muskeln können ermüden, wenn von Benutzern erwartet wird, eine Hand während der gesamten Dauer einer Erfahrung angehoben zu halten. Ebenfalls ermüdend kann es sein, vom Benutzer wiederholt Tippbewegungen in die Luft über längere Zeit zu verlangen. Es empfiehlt sich daher, konstante, wiederholte Eingabegesten in Benutzererfahrungen zu vermeiden. Diese Ziele können erreicht werden, indem kurze Pausen integriert werden oder eine Mischung aus Gesten- und Spracheingaben für die Interaktion mit der App angeboten wird.
+
+## <a name="next-discovery-checkpoint"></a>Nächster Erkundungsprüfpunkt
+
+Wenn Sie der [Erkundungs-Journey](../discover/get-started-with-mr.md) folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der Grundlagen der Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+
+> [!div class="nextstepaction"]
+> [Wie der Benutzer die Welt sieht (Holografischer Rahmen)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Siehe auch
 * [Anvisieren](gaze-and-commit.md)

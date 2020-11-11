@@ -1,5 +1,5 @@
 ---
-title: 'Tutorials zu Mehrbenutzerfunktionen: 1 Einführung'
+title: 'Tutorials zu Mehrbenutzerfunktionen: 1 Einführung in die Tutorials zu Mehrbenutzerfunktionen'
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie freigegebene Mehrbenutzerumgebungen in einer HoloLens 2-Anwendung implementieren.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 179ed341ffc2e34b94da887dd4c52d33bec6834e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0a94bd7c939315f8c407b1f238c124e6c0c6a964
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698803"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353408"
 ---
-# <a name="1-introduction"></a>1. Einführung
+# <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Einführung in die Tutorials zu Mehrbenutzerfunktionen
 
 ## <a name="overview"></a>Übersicht
 

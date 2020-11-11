@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu Azure Spatial Anchors: 3 Speichern, Abrufen und Freigeben von Azure Spatial Anchors'
-description: In diesem Kurs erfahren Sie, wie Sie Azure Spatial Anchors in einer Mixed Reality-Anwendung implementieren.
+description: In diesem Kurs erfahren Sie, wie Sie Azure Spatial Anchors in einer Mixed Reality-Anwendung speichern, abrufen und teilen.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: edbbfa6bb4027e6d0d0d37a46575eafdb1d6e631
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698015"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353298"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Speichern, Abrufen und Freigeben von Azure Spatial Anchors
 
@@ -27,11 +27,11 @@ In diesem Tutorial erfahren Sie, wie Sie Azure Spatial Anchors über mehrere App
 
 Klappen Sie im Hierarchiefenster das **ButtonParent** -Objekt auf. Wählen Sie die **vier letzten untergeordneten Schaltflächenobjekte** aus. **Aktivieren** Sie im Inspektorfenster das Kontrollkästchen neben dem Namensfeld, um alle diese Objekte als aktiv festzulegen.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
+![Unity mit zuvor inaktiven Schaltflächenobjekten, die ausgewählt und aktiviert sind](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 Wählen Sie im Hierarchiefenster die **ButtonParent** -Objekte aus. Suchen Sie dann im Inspektorfenster die **GridObjectCollection** -Komponente, und klicken Sie auf die Schaltfläche **Update Collection** (Sammlung aktualisieren), um die Position aller untergeordneten Objekte des **ButtonParent** -Objekts zu aktualisieren.
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
+![Unity mit aktualisierter GridObjectCollection-Komponente](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## <a name="persisting-azure-spatial-anchors-between-app-sessions"></a>Beibehalten von Azure Spatial Anchors über App-Sitzungen hinweg
 
@@ -39,7 +39,7 @@ In diesem Abschnitt erfahren Sie, wie Sie die Azure Anchor ID auf der lokalen Fe
 
 Klappen Sie im Hierarchiefenster das **ButtonParent** -Objekt auf, und suchen Sie die zwei Schaltflächen mit den Namen **SaveAzureAnchorIdToDisk** und **GetAzureAnchorIdFromDisk** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
+![Unity mit ausgewählten SaveAzureAnchorIdToDisk- und GetAzureAnchorIdFromDisk-Schaltflächenobjekten](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 Führen Sie die gleichen Schritte wie in den Anleitungen zum [Konfigurieren der Schaltflächen zum Betreiben der Szene](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) aus dem vorhergehenden Tutorial aus, um die Komponente **Interactable (Script)** für jede der zwei Schaltflächen zu konfigurieren:
 
@@ -68,7 +68,7 @@ Es gibt viele Möglichkeiten, Azure Anchor IDs zwischen Geräten zu übertragen,
 
 Klappen Sie im Hierarchiefenster das **ButtonParent** -Objekt auf.   Suchen Sie die zwei Schaltflächen **ShareAzureAnchorIdToNetwork** und **GetAzureAnchorIdFromNetwork** :
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
+![Unity mit ausgewählten ShareAzureAnchorIdToNetwork- und GetAzureAnchorIdFromNetwork-Schaltflächenobjekten](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 Führen Sie die gleichen Schritte wie in den Anleitungen zum [Konfigurieren der Schaltflächen zum Betreiben der Szene](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene) aus dem vorhergehenden Tutorial aus, um die Komponente **Interactable (Script)** für jede der zwei Schaltflächen zu konfigurieren:
 

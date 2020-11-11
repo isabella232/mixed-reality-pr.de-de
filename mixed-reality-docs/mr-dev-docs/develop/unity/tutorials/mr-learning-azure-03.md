@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services
 ms.localizationpriority: high
-ms.openlocfilehash: baf5ddb805e6bff6fd41d2fb7cc8ea64b55944e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697922"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353268"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrieren von Azure-Custom Vision
 
@@ -34,20 +34,20 @@ Weitere Informationen zu [Azure Custom Vision](https://docs.microsoft.com/azure/
 
 Bevor Sie beginnen können, müssen Sie ein Custom Vision-Projekt erstellen. Am schnellsten geht dies über das Webportal.
 
-Befolgen Sie dieses [Schnellstarttutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) zum Einrichten Ihres Kontos und Projekts bis zum Abschnitt *Hochladen und Taggen von Bildern* .
+Befolgen Sie dieses [Schnellstarttutorial](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images) zum Einrichten Ihres Kontos und Projekts bis zum Abschnitt *Hochladen und Taggen von Bildern*.
 
 > [!WARNING]
 > Zum Trainieren eines Modells benötigen Sie mindestens zwei Tags und fünf Bilder pro Tag. Um diese Anwendung zu verwenden, sollten Sie mindestens ein Tag mit fünf Bildern erstellen, damit der Trainingsvorgang später nicht fehlschlägt.
 
 ## <a name="preparing-the-scene"></a>Vorbereiten der Szene
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** .
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
+![Unity mit Projekt-Fenster, in dem der Pfad zum ObjectDetectionManager-Prefab angezeigt wird](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 Ziehen Sie dort das Prefab **ObjectDetectionManager** in die Hierarchie der Szene.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
+![Unity mit im Inspektor angezeigten Konfigurationsfeldern der ObjectDetectionManager (Skript)-Komponente](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Suchen Sie im Hierarchiefenster nach dem **ObjectDetectionManager** -Objekt, und wählen Sie es aus.
 Das Prefab **ObjectDetectionManager** enthält die Komponente **ObjectDetectionManager (Script)** . Wie Sie im Inspektor-Fenster erkennen können, hängt sie von mehreren Einstellungen ab.
@@ -66,11 +66,11 @@ Suchen Sie nach der Custom Vision-Ressource vom Typ **Cognitive Services** , die
 
 Nachdem **ObjectDetectionManager (Script)** ordnungsgemäß eingerichtet wurde, suchen Sie in der Hierarchie der Szene nach dem **SceneController** -Objekt, und wählen Sie es aus.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
+![Unity mit im Inspektor angezeigten Konfigurationsfeldern der SceneController (Script)-Komponente](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 Sie sehen, dass das Feld *Object Detection Manager* (Objekterkennungs-Manager) in der **SceneController** -Komponente leer ist. Ziehen Sie **ObjectDetectionManager** aus der Hierarchie in dieses Feld, und speichern Sie die Szene.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
+![Unity mit konfigurierter SceneController-Skriptkomponente](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## <a name="take-and-upload-images"></a>Aufnehmen und Hochladen von Bildern
 
@@ -88,7 +88,7 @@ Wenn Sie über genügend Bilder verfügen, klicken Sie auf die Schaltfläche **T
 
 ## <a name="detect-objects"></a>Erkennen von Objekten
 
-Sie können das trainierte Modell nun testen, die Anwendung ausführen und im *Hauptmenü* auf **Search Object** (Objekt suchen) klicken und den Namen des betreffenden **nachverfolgten Objekts** eingeben. Die **Objektkarte** wird angezeigt. Klicken Sie auf die Schaltfläche **Custom Vision** . Hier beginnt **ObjectDetectionManager** , Bilder von der Kamera im Hintergrund zu erfassen, und der Status wird im Menü angezeigt. Richten Sie die Kamera auf das Objekt, mit dem Sie das Modell trainiert haben, und Sie sehen, dass das Objekt nach kurzer Zeit erkannt wird.
+Sie können das trainierte Modell nun testen, die Anwendung ausführen und im *Hauptmenü* auf **Search Object** (Objekt suchen) klicken und den Namen des betreffenden **nachverfolgten Objekts** eingeben. Die **Objektkarte** wird angezeigt. Klicken Sie auf die Schaltfläche **Custom Vision**. Hier beginnt **ObjectDetectionManager** , Bilder von der Kamera im Hintergrund zu erfassen, und der Status wird im Menü angezeigt. Richten Sie die Kamera auf das Objekt, mit dem Sie das Modell trainiert haben, und Sie sehen, dass das Objekt nach kurzer Zeit erkannt wird.
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 

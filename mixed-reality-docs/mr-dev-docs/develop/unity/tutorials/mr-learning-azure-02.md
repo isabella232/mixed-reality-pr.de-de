@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Storage
 ms.localizationpriority: high
-ms.openlocfilehash: d405ecc9f863e77271d4c16f820fc6ee00e55b1b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697940"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353328"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrieren von Azure Storage
 
@@ -26,7 +26,7 @@ In diesem Tutorial erfahren Sie, wie Sie Entitätsdaten in Azure Table Storage u
 
 ## <a name="understanding-azure-storage"></a>Grundlegendes zu Azure Storage
 
-**Azure Storage** ist eine Microsoft-Speicherlösung in der Cloud, die viele Szenarien und Anforderungen abdecken kann. Sie kann massiv skaliert werden und ist für Entwickler problemlos zugänglich. Alle Dienste können im Rahmen eines **Azure Storage-Kontos** genutzt werden. In unserem Anwendungsfall verwenden wir *Table Storage* und *Blob Storage* .
+**Azure Storage** ist eine Microsoft-Speicherlösung in der Cloud, die viele Szenarien und Anforderungen abdecken kann. Sie kann massiv skaliert werden und ist für Entwickler problemlos zugänglich. Alle Dienste können im Rahmen eines **Azure Storage-Kontos** genutzt werden. In unserem Anwendungsfall verwenden wir *Table Storage* und *Blob Storage*.
 
 Weitere Informationen zu [Azure-Speicherdiensten](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
 
@@ -34,7 +34,7 @@ Weitere Informationen zu [Azure-Speicherdiensten](https://docs.microsoft.com/azu
 
 Dieser Dienst ermöglicht es uns, Daten auf NoSQL-Art zu speichern. In diesem Projekt verwenden wir ihn, um Informationen zum *nachverfolgten Objekt* zu speichern, z. B. den Namen, eine Beschreibung, eine räumliche Anker-ID und mehr.
 
-Im Kontext der Demoanwendung benötigen Sie zwei Tabellen: eine Tabelle zum Speichern von Informationen zum Projekt mit Informationen über den Zustand der trainierten Modelle (mehr dazu im Tutorial [Integrieren von Azure Custom Vision](mr-learning-azure-03.md)) und eine zweite Tabelle zum Speichern von Informationen zu *nachverfolgten Objekten* .
+Im Kontext der Demoanwendung benötigen Sie zwei Tabellen: eine Tabelle zum Speichern von Informationen zum Projekt mit Informationen über den Zustand der trainierten Modelle (mehr dazu im Tutorial [Integrieren von Azure Custom Vision](mr-learning-azure-03.md)) und eine zweite Tabelle zum Speichern von Informationen zu *nachverfolgten Objekten*.
 
 Weitere Informationen zu [Azure Table Storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
 
@@ -57,7 +57,6 @@ Obwohl Sie alle Datenänderungen über die Benutzeroberfläche innerhalb der Anw
 
 > [!TIP]
 > Zum Testen innerhalb des Unity-Editors können Sie einen lokalen Emulator verwenden:
-
 > * Unter Windows 10 können Sie den [Azure-Speicheremulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) verwenden.
 > * Unter macOS/Linux können Sie [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) für Docker verwenden.
 
@@ -65,7 +64,7 @@ Obwohl Sie alle Datenänderungen über die Benutzeroberfläche innerhalb der Anw
 
 Suchen Sie im Hierarchiefenster nach dem **DataManager** -Objekt, und wählen Sie es aus.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![Unity mit im Inspektor angezeigten Konfigurationsfeldern der DataManager (Script)-Komponente](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 Im Inspektor-Fenster sehen Sie, dass sich die Komponente **DataManager (Script)** dort befindet, wo sich alle Einstellungen befinden, die zu **Azure-Speicher** gehören. Alle relevanten Einstellungen sind bereits festgelegt. Sie müssen lediglich das Feld *Verbindungszeichenfolge* durch den Wert ersetzen, den Sie aus dem Azure-Portal abrufen können. Wenn Sie eine lokale Azure-Speicheremulatorlösung verwenden, können Sie die bereits bereitgestellte *Verbindungszeichenfolge* beibehalten.
 
@@ -97,11 +96,11 @@ In diesem Abschnitt verwenden Sie Azure Blob Storage zum Hochladen und Herunterl
 
 Öffnen Sie die Anwendung auf dem HoloLens-Gerät, klicken Sie auf **Set Object** (Objekt festlegen), und geben Sie in die *Suchleiste* den Begriff „Car“ (Auto) ein. Nun sollte die **Objektkarte** angezeigt werden. Klicken Sie auf die Schaltfläche **Camera** (Kamera). Sie werden dann aufgefordert, eine AirTap-Aktion auszuführen, um ein Foto aufzunehmen. Nach der Aufnahme eines Fotos wird eine Meldung angezeigt, die Sie über den aktiven Upload informiert. Nach einer Weile sollte das Bild an der Stelle angezeigt werden, an der sich zuvor der Platzhalter befunden hat.
 
-Führen Sie nun die Anwendung erneut aus, und suchen Sie nach dem *nachverfolgten Objekt* . Das zuvor hochgeladene Bild sollte als Miniaturansicht angezeigt werden.
+Führen Sie nun die Anwendung erneut aus, und suchen Sie nach dem *nachverfolgten Objekt*. Das zuvor hochgeladene Bild sollte als Miniaturansicht angezeigt werden.
 
 ## <a name="deleting-image-from-azure-blob-storage"></a>Löschen von Bildern aus Azure Blob Storage
 
-Im vorherigen Abschnitt haben Sie neue Images in Azure Blob Storage hochgeladen. In diesem Abschnitt löschen Sie eine Bildminiaturansicht für *nachverfolgte Objekte* .
+Im vorherigen Abschnitt haben Sie neue Images in Azure Blob Storage hochgeladen. In diesem Abschnitt löschen Sie eine Bildminiaturansicht für *nachverfolgte Objekte*.
 
 Öffnen Sie die Anwendung auf dem HoloLens-Gerät, klicken Sie auf **Set Object** (Objekt festlegen), und geben Sie in die *Suchleiste* den Begriff „Car“ (Auto) ein. Nun sollte die **Objektkarte** mit dem Miniaturbild angezeigt werden. Klicken Sie auf die Schaltfläche **Delete** (Löschen). Beachten Sie, dass die Miniaturansicht des Bilds durch das Platzhalterbild ersetzt wird.
 

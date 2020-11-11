@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697835"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353248"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrieren von Azure Spatial Anchors
 
@@ -39,19 +39,19 @@ Erfahren Sie, wie Sie eine [räumliche Ankerressource](https://docs.microsoft.co
 
 In diesem Abschnitt erfahren Sie, wie Sie die Szene konfigurieren und die erforderlichen Änderungen vornehmen.
 
-Navigieren Sie im Projektfenster zu **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager** .
+Navigieren Sie im Projektfenster zu **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![Unity mit ausgewähltem AnchorManager-Prefab](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 Ziehen Sie das Prefab **Anchor Manager** (Anker-Manager) aus dem Ordner **Manager** mithilfe von Drag & Drop in die Hierarchie der Szene.
 
 Wählen Sie „ **Anchor Manager** GameObject“ in der Hierarchie aus. Im Abschnitt „Inspector“ finden Sie **Spatial Anchor Manager (Script)** . Suchen Sie nach der Konto-ID und dem Schlüsselfeld, und fügen Sie die Anmeldeinformationen hinzu, die Sie in der vorherigen Phase als Voraussetzung erstellt haben.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![Unity mit neu hinzugefügtem, noch ausgewähltem AnchorManager-Prefab](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 Suchen Sie nun das **Scene Controller** -Objekt (Szenencontroller) in der Hierarchie Ihrer Szene, und wählen Sie es aus. Der **Scene Controller** -Inspektor wird angezeigt.
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![Unity mit konfigurierter SceneController-Skriptkomponente](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 Sie sehen, dass das Feld **Anchor Manager** in der Komponente **Scene Controller** leer ist. Ziehen Sie **Anchor Manager** mithilfe von Drag & Drop aus der Hierarchie in der Szene in dieses Feld, und speichern Sie die Szene.
 

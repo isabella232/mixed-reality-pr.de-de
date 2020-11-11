@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu den ersten Schritten: 7 Interagieren mit 3D-Objekten'
-description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung zu erstellen.
+description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um mit 3D-Objekten zu interagieren.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 0cedd731fc795341532a8a330f4fdcce9fba47b0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697616"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353518"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interagieren mit 3D-Objekten
 
@@ -53,7 +53,7 @@ Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts** �
 * **NearInteractionGrabbable** -Komponente
 * **Part Assembly Controller (Script)** -Komponente (Teilassembly-Controller (Skript))
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![Unity mit ausgewählter RoverAssembly und allen Rover-Teil-Objekten ausgewählt sowie hinzugefügten Komponenten](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > Um mehrere Objekte auszuwählen, die sich nicht nebeneinander befinden, drücken und halten Sie die STRG-Taste, während Sie die Maus verwenden, um ein beliebiges Objekt auszuwählen.
@@ -68,14 +68,14 @@ Konfigurieren Sie im Inspektorfenster, während alle Rover-Teilobjekte und das R
 
 * Deaktivieren Sie in der Dropdownliste **Two Handed Manipulation Type** (Zweihändiger Manipulationstyp) die Skalierung, sodass nur **Move** (Verschieben) und **Rotate** (Drehen) aktiviert sind
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![Unity mit konfiguriertem Two Handed Manipulation-Typ](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > An diesem Punkt haben Sie die Objektmanipulation für alle Rover-Teilobjekte und das RoverAssembly-Objekt aktiviert.
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** (Medienobjekte > MRTK > SDK > Standardmedienobjekte), um die Audioclips zu suchen:
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![Unity-Projektfenster mit ausgewähltem Ordner „Audio“](images/mr-learning-base/base-07-section1-step1-3.png)
 
 Wählen Sie im Hierarchiefenster erneut alle **Rover-Teilobjekte** aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Audio Sources** (Audioquellen) hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
@@ -83,13 +83,13 @@ Wählen Sie im Hierarchiefenster erneut alle **Rover-Teilobjekte** aus, verwende
 * Deaktivieren Sie das Kontrollkästchen **Play On Awake** (Nach Laden wiedergeben)
 * Ändern Sie **Spatial Blend** (Räumliche Mischung) in 1
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![Unity mit allen Rover-Teilen ausgewählt und hinzugefügter und konfigurierter Audio Source-Komponente](images/mr-learning-base/base-07-section1-step1-4.png)
 
 Klappen Sie im Hierarchiefenster das Objekt „RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** “ auf, um alle Platzierungshinweisobjekte anzuzeigen, wählen Sie dann das erste Rover-Teil „RoverParts > **Camera_Part** “ aus, und konfigurieren Sie die Komponente **Part Assembly Controller (Script)** wie folgt:
 
 * Weisen Sie das Objekt **Camera_PlacementHint** dem Feld **Location To Place** zu
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![Unity mit konfigurierter Camera_Part PartAssemblyController-Komponente](images/mr-learning-base/base-07-section1-step1-5.png)
 
 **Wiederholen** Sie diesen Schritt für alle verbleibenden Rover-Teilobjekte und das RoverAssembly-Objekt, um die Komponente **Part Assembly Controller (Script)** wie folgt zu konfigurieren:
 
@@ -104,11 +104,11 @@ Wählen Sie im Hierarchiefenster das Schaltflächenobjekt „RoverExplorer > But
 * Weisen Sie das **RoverAssembly** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **PartAssemblyController** > **ResetPlacement ()** aus, um diese Funktion als Aktion festzulegen, die beim Auslösen des Ereignisses ausgeführt wird
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![Unity mit konfiguriertem OnClick-Ereignis für das Reset-Schaltflächenobjekt](images/mr-learning-base/base-07-section1-step1-6.png)
 
 Wenn Sie jetzt in den Spielmodus wechseln, können Sie nahe oder ferne Interaktion verwenden, um die Rover-Teile auf dem Rover zu platzieren. Sobald sich das Teil nahe am entsprechenden Platzierungshinweis befindet, rastet es an der vorgesehenen Position ein und wird zu einem Teil des Rovers. Zum Zurücksetzen der Platzierungen können Sie auf die Schaltfläche „Zurücksetzen“ klicken:
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![Geteilte Ansicht des Unity-Wiedergabemodus mit gedrückter Schaltfläche „Reset“](images/mr-learning-base/base-07-section1-step1-7.png)
 
 Weitere Informationen über die Objektmanipulator-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Objektmanipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) im [MRTK-Dokumentationsportal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
@@ -125,7 +125,7 @@ Wählen Sie im Hierarchiefenster das **RoverExplorer** -Objekt aus, und verwende
 
 **Deaktivieren** Sie dann das Kontrollkästchen neben beiden Komponenten, um sie als standardmäßig **deaktiviert** festzulegen:
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![Unity mit ausgewähltem RoverExplorer-Objekt und hinzugefügten und deaktivierten Komponenten](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > Die Visualisierung von Begrenzungsrahmen wird zur Laufzeit erstellt und ist daher erst sichtbar, wenn Sie in den Spielmodus wechseln.
@@ -145,7 +145,7 @@ Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection** “ (
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist
 * Belassen Sie das **Symbol** als Symbol „Cube mit Begrenzungsrahmen“
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![Unity mit ausgewähltem BoundingBox_Enable-Schaltflächenobjekt und konfigurierter Button Config Helper-Komponente](images/mr-learning-base/base-07-section2-step1-2.png)
 
 Benennen Sie die vierte und letzte Schaltfläche in **BoundingBox_Disable** um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
@@ -159,11 +159,11 @@ Benennen Sie die vierte und letzte Schaltfläche in **BoundingBox_Disable** um, 
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
 * Ändern Sie das **Symbol** in das Symbol „Cube mit Begrenzungsrahmen“
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![Unity mit ausgewähltem BoundingBox_Disable-Schaltflächenobjekt und konfigurierter Button Config Helper-Komponente](images/mr-learning-base/base-07-section2-step1-3.png)
 
 Wenn Sie jetzt in den Spielmodus wechseln und den Begrenzungsrahmen aktivieren, indem Sie auf die Schaltfläche „Aktivieren“ klicken, können Sie nahe oder ferne Interaktion verwenden, um den Begrenzungsrahmen zu bewegen, drehen und skalieren, und die Schaltfläche „Deaktivieren“ verwenden, um den Begrenzungsrahmen wieder zu deaktivieren:
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![Geteilte Ansicht des Unity-Wiedergabemodus mit manipulierter Bounding Box](images/mr-learning-base/base-07-section2-step1-4.png)
 
 Weitere Informationen über die Bounding Box-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zur [Bounding Box](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html) im [MRTK-Dokumentationsportal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 

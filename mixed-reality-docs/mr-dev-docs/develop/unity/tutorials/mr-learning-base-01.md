@@ -1,5 +1,5 @@
 ---
-title: 'Tutorials zu den ersten Schritten: 1 Einführung'
+title: 'Tutorials zu den ersten Schritten: 1 Einführung in die Tutorials zu den ersten Schritten'
 description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung von Grund auf zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697763"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416898"
 ---
-# <a name="1-introduction"></a>1. Einführung
+# <a name="1-introduction-to-the-getting-started-tutorials"></a>1. Einführung in die Tutorials zu den ersten Schritten
 
 ## <a name="overview"></a>Übersicht
 
@@ -44,13 +44,13 @@ Die Tutorials in dieser Reihe sind auf eine bestimmte Abfolge ausgelegt, also ar
 * Ein Windows 10-PC, der mit den richtigen [Tools konfiguriert](../../install-the-tools.md) ist
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (10.0.18362.0 oder höher)
 * Ein für die [Entwicklung konfiguriertes](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2-Gerät
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019.3.15 und hinzugefügtem Buildunterstützungsmodul für die Universelle Windows-Plattform
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019 LTS und hinzugefügtem Buildunterstützungsmodul für die Universelle Windows-Plattform
 
 > [!CAUTION]
 > Die empfohlene MRTK-Version für diese Tutorialreihe ist MRTK 2.4.0.
 
 > [!CAUTION]
-> Die empfohlene Unity-Version für diese Tutorialreihe ist Unity 2019.3.15. Diese Information hat Vorrang vor allen Unity-Versionsanforderungen, die in den oben verlinkten Voraussetzungen angegeben sind.
+> Die empfohlene Unity-Version für diese Tutorialserie ist Unity 2019 LTS. Diese Information hat Vorrang vor allen Unity-Versionsanforderungen, die in den oben verlinkten Voraussetzungen angegeben sind.
 
 > [!div class="nextstepaction"]
 > [Nächstes Tutorial: 2. Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung](mr-learning-base-02.md)

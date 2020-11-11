@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu den ersten Schritten: 8. Verwenden von Eye Tracking'
-description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung zu erstellen.
+description: In diesem Kurs erfahren Sie, wie Sie Eye Tracking mit dem Mixed Reality Toolkit (MRTK) verwenden.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: a87b613ca47eb0ed6695a55c8e5afe0f24de5937
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698519"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353498"
 ---
 # <a name="8-using-eye-tracking"></a>8. Verwenden von Eye Tracking
 
@@ -32,7 +32,7 @@ In diesem Tutorial erfahren Sie, wie Sie Eye Tracking für HoloLens 2 aktivier
 
 Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Unity Project** “ (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das Fenster **MRTK Project Configurator** (MRTK-Projektkonfigurator) zu öffnen, und überprüfen Sie dann im Abschnitt **UWP Capabilities** (UWP-Funktionen), ob die Funktion **Enable Eye Gaze Input** (Eingabe durch Anvisieren mit den Augen) grau dargestellt wird:
 
-![mr-learning-base](images/mr-learning-base/base-08-section1-step1-1.png)
+![Unity MRTK-Projektkonfigurator-Fenster](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
 > Die Funktion zur Eingabe durch Anvisieren hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
@@ -46,7 +46,7 @@ Wählen Sie im Hierarchiefenster das Objekt **MixedRealityToolkit** aus, wählen
 * Klonen Sie das Profil **DefaultMixedRealityPointerProfile** , und geben Sie ihm einen passenden Namen, beispielsweise _GettingStarted_MixedRealityPointerProfile_
 * Suchen Sie den Abschnitt **Gaze Settings** (Blickeinstellungen), und aktivieren Sie das Kontrollkästchen **Is Eye Tracking Enabled** (Ist Eye Tracking aktiviert)
 
-![mr-learning-base](images/mr-learning-base/base-08-section2-step1-1.png)
+![Unity MixedRealityToolkit-Komponente mit neu erstellten, angewendeten Profilen und aktiviertem Eye Tracking](images/mr-learning-base/base-08-section2-step1-1.png)
 
 > [!TIP]
 > Wenn Sie eine Auffrischung zum Klonen von MRTK-Profilen benötigen, lesen Sie die Anweisungen in [Konfigurieren der MRTK-Profile](mr-learning-base-03.md).
@@ -59,20 +59,20 @@ Wählen Sie im Hierarchiefenster das **MixedRealityToolkit** -Objekt aus, und na
 * Klonen Sie das Profil **DefaultMixedRealityInputSimulationProfile** , und geben Sie ihm einen passenden Namen, beispielsweise _GettingStarted_MixedRealityInputSimulationProfile_
 * Suchen Sie den Abschnitt **Eye Simulation** (Augensimulation), und aktivieren Sie das Kontrollkästchen **Simulate Eye Position** (Augenposition simulieren)
 
-![mr-learning-base](images/mr-learning-base/base-08-section3-step1-1.png)
+![Unity MixedRealityToolkit-Komponente mit neu erstelltem, angewendetem Profil und aktivierter Eye Simulation](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>Hinzufügen von Eye Tracking zu Objekten
 
 Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **Buttons** “ (RoverExplorer > Schaltflächen) auf, klappen Sie dann für jedes der drei untergeordneten Schaltflächenobjekte das Objekt „SeeItSayItLabel > **TextMeshPro** “ auf, und wählen Sie es aus:
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity mit ausgewähltem TextMeshPro-Objekt](images/mr-learning-base/base-08-section4-step1-1.png)
 
 Verwenden Sie, während die drei TextMeshPro-Objekte noch ausgewählt sind, im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um allen ausgewählten Objekten die folgenden Komponenten hinzuzufügen:
 
 * **Box Collider** -Komponente
 * **EyeTrackingTarget** -Komponente
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-2.png)
+![Unity mit ausgewähltem TextMeshPro-Objekt und hinzugefügten Komponenten](images/mr-learning-base/base-08-section4-step1-2.png)
 
 Wählen Sie im Hierarchiefenster das Objekt **Hints** > SeeItSayItLabel > **TextMeshPro** (Hinweise > SeeItSayItLabel > TextMeshPro) aus, und konfigurieren Sie dann die **EyeTrackingTarget** -Komponente wie folgt:
 
@@ -87,13 +87,13 @@ Wählen Sie im Hierarchiefenster das Objekt **Hints** > SeeItSayItLabel > **Text
   * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **TextMeshPro** > **float fontSize** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
   * Legen Sie das Argument auf **0,04** fest, um den Schriftgrad wieder auf 0,04 zurückzusetzen
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-3.png)
+![Unity mit ausgewähltem Hints TextMeshPro-Objekt und konfigurierter EyeTrackingTarget-Komponente](images/mr-learning-base/base-08-section4-step1-3.png)
 
 **Wiederholen** Sie diesen Schritt für das Objekt **Explode** > SeeItSayItLabel > **TextMeshPro** (Explodieren > SeeItSayItLabel > TextMeshPro) und das Objekt **Reset** > SeeItSayItLabel > **TextMeshPro** (Zurücksetzen > SeeItSayItLabel > TextMeshPro).
 
 Wenn Sie jetzt in den Spielmodus wechseln, dann die rechte Maustaste drücken und sie gedrückt halten, während Sie die Maus bewegen, bis der Blick auf eine der Bezeichnungen trifft, sehen Sie dass sich der Schriftgrad um 50 % vergrößert und wieder zur normalen Größe zurückkehrt, wenn Sie den Blick abwenden:
 
-![mr-learning-base](images/mr-learning-base/base-08-section4-step1-4.png)
+![Geteilte Ansicht des Unity-Wiedergabemodus mit Anvisier-Zugriff per Eye Tracking auf Ziel und Schaltflächenbezeichnung „Explode“](images/mr-learning-base/base-08-section4-step1-4.png)
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 

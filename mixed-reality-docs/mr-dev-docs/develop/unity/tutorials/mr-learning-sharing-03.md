@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu Mehrbenutzerfunktionen: 3 Verbinden mehrerer Benutzer'
-description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie freigegebene Mehrbenutzerumgebungen innerhalb einer HoloLens 2-Anwendung implementieren.
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie mehrere Benutzer in einer HoloLens 2-Anwendung verbinden.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: cffcc326fadcc9cdbf406adde093e055aef83706
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5ebb3ffd66422a5e38bc62ada0f040e00f52671d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698807"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353468"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Verbinden mehrerer Benutzer
 
@@ -31,13 +31,13 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiU
 * **NetworkLobby** -Prefab
 * **SharedPlayground** -Prefab
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
+![Unity mit neu hinzugefügten, ausgewählten NetworkLobby- und SharedPlayground-Prefabs](images/mr-learning-sharing/sharing-03-section1-step1-1.png)
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** , klicken Sie auf das folgende Prefab, und ziehen Sie es in das Hierarchiefenster, um es Ihrer Szene hinzuzufügen:
 
 * **DebugWindow** -Prefab
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
+![Unity mit neu hinzugefügtem, ausgewähltem DebugWindow-Prefab](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
 ## <a name="creating-the-user-prefab"></a>Erstellen des Benutzerprefabs
 
@@ -49,23 +49,23 @@ Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf einen leeren Bere
 
 * Vergewissern Sie sich, dass die **Transformationsposition** auf X = 0, Y = 0, Z = 0 festgelegt ist:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
+![Unity mit neu erstelltem, ausgewähltem PhotonUser-Objekt](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
 
 Wählen Sie im Hierarchiefenster das **PhotonUser** -Objekt aus, und verwenden Sie dann im Inspektor-Fenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Photon User (Script)** hinzuzufügen:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
+![Unity mit hinzugefügter Photon User-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
 
 Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Generic Net Sync (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
 * Aktivieren Sie das Kontrollkästchen **Is User** (Ist Benutzer)
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
+![Unity mit hinzugefügter und konfigurierter Generic Net Sync-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
 
 Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Photon View (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
 * Weisen Sie die Komponente **Generic Net Sync (Script)** dem Feld **Observed Components** (Beobachtete Komponenten) zu.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
+![Unity mit hinzugefügter und konfigurierter Photon View-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2. Erstellen des Avatars
 
@@ -77,39 +77,39 @@ Klicken Sie dann im Hierarchiefenster mit der rechten Maustaste auf das **Photon
 * Ändern Sie den **Transformationsmaßstab** auf eine passende Größe beispielsweise X = 0,15, Y = 0,15, Z = 0,15
 * Weisen Sie dem Feld „MeshRenderer > Materials > **Element 0** “ das Material **MRTK_Standard_White** zu.
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
+![Unity mit neu erstellter und konfigurierter Avatar-Kugel](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
 
 ### <a name="3-create-the-prefab"></a>3. Erstellen der Prefab
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** :
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
+![Unity-Projektfenster mit ausgewähltem Ordner „Ressource“](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
 
 **Klicken und ziehen** Sie bei noch ausgewähltem Ordner „Resources“ das **PhotonUser** -Objekt aus dem Hierarchiefenster in den **Resources** -Ordner, um aus dem PhotonUser-Objekt ein Prefab zu machen:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
+![Unity mit neu erstelltem, ausgewähltem PhotonUser-Prefab](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
 
 Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das **PhotonUser** -Objekt, und wählen Sie **Löschen** aus, um es aus der Szene zu entfernen:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
+![Unity mit neu erstelltem, aus der Szene entferntem PhotonUser-Prefab-Objekt](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
 
 ## <a name="configuring-pun-to-instantiate-the-user-prefab"></a>Konfigurieren von PUN zum Instanziieren des Benutzerprefabs
 
 In diesem Abschnitt konfigurieren Sie das Projekt für die Verwendung des PhotonUser-Prefabs, das Sie im vorherigen Abschnitt erstellt haben.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources** .
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources**.
 
 Klappen Sie im Hierarchiefenster das **NetworkLobby** -Objekt auf, wählen Sie das untergeordnete Objekt **NetworkRoom** aus, und suchen Sie dann im Inspektorfenster die Komponente **Photon Room (Script)** , um sie wie folgt zu konfigurieren:
 
 * Weisen Sie das **PhotonUser** -Prefab aus dem Ordner „Resources“ dem **Photon User Prefab** -Feld zu
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
+![Unity mit teilweise konfigurierter Photon Room-Komponente](images/mr-learning-sharing/sharing-03-section3-step1-1.png)
 
 ## <a name="trying-the-experience-with-multiple-users"></a>Ausprobieren der Benutzeroberfläche mit mehreren Benutzern
 
 Wenn Sie das Unity-Projekt jetzt für Ihr HoloLens-Gerät erstellen und bereitstellen und zurück in Unity in den Spielmodus wechseln, während die App auf Ihrem HoloLens-Gerät ausgeführt wird, sehen Sie, wie sich der HoloLens-Benutzeravatar bewegt, wenn Sie Ihren Kopf (HoloLens) bewegen:
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
+![Animation, die Unity mit vernetzten Benutzern zeigt.](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
 > Falls Sie eine Auffrischung zum Erstellen und Bereitstellen Ihres Unity-Projekts auf HoloLens 2 benötigen, lesen Sie die Anweisungen unter [Erstellen Ihrer App auf dem HoloLens 2-Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2).

@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu den ersten Schritten: 9. Verwenden von Sprachbefehlen'
-description: Lernen Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung zu erstellen.
+description: In diesem Kurs erfahren Sie, wie Sie Sprachbefehle mit dem Mixed Reality Toolkit (MRTK) verwenden.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d9ddf3d234b68dfe4ce3ab5c9272566479edd71d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698453"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353508"
 ---
 # <a name="9-using-speech-commands"></a>9. Verwenden von Sprachbefehlen
 
