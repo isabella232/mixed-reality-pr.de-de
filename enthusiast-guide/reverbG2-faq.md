@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
+ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482398"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94498285"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -68,11 +68,7 @@ Es gibt einige Gründe, warum Ihr System nicht in der Lage ist, bei der systemei
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>Warum werden meine HP Motion Controller-Modelle in einem Spiel nicht richtig angezeigt?
 
-Obwohl viele Spiele sofort mit HP Motion Controller funktionieren, haben einige Spiele Abhängigkeiten von vorhandenen Controller Features und können daher einige Probleme haben:
-
-- Falsches Modell angezeigt: die Korrektur erfordert ein Spiel Update. In der Regel werden dadurch keine Features des Spiels blockiert. Dies kann jedoch zu Verwirrung oder sogar visuellen Artefakten führen.
-- Abhängigkeit von dem Touchpad oder eher im Allgemeinen für das Eingabe Layout des Controllers. Mit steamvr können benutzerdefinierte Bindungen erstellt werden, um diese Art von Problem zu umgehen:
-    - Windows Mixed Reality für steamvr umfasst benutzerdefinierte Bindungen für einige Spiele. Diese Bindungen werden automatisch verwendet, wenn das Spiel gestartet wird, und es ist keine Benutzeraktion erforderlich.
+Während in den meisten spielen die Controller nicht angezeigt werden oder die vom Treiber installierten Modelle nicht verwendet werden, verwenden einige Spiele ihre eigenen Versionen der Controller Modelle, um Sie anzupassen oder um kontextbezogene Hilfe für die verfügbaren Eingaben anzuzeigen. In der Regel werden dadurch keine Features der Spiele blockiert. Dies kann jedoch zu Verwirrung oder sogar visuellen Artefakten führen. Dies kann nur mit einem Update des Spiels selbst korrigiert werden.
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>Meine steamvr-Spiele scheinen nicht ordnungsgemäß für meine HP Motion-Controller zu funktionieren.
 
