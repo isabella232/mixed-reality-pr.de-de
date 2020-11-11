@@ -1,18 +1,18 @@
 ---
 title: 'Tutorials zu den ersten Schritten: 6 Erstellen der Benutzeroberfläche'
-description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung zu erstellen.
+description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um Benutzeroberflächen zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 3d8cfa7206aa6004cdf62db977ca760daed9a27c
-ms.sourcegitcommit: adbdb0a38e0dc5ac82f847c7b2ef87f27c16b5f6
+ms.openlocfilehash: 2d3a826ba3bf8fdf1299038a7964278f0d57dbb7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92493236"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353538"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Erstellen der Benutzeroberfläche
 
@@ -36,11 +36,11 @@ Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das **RoverExplor
 * **Drehung** : X = 90, Y = 0, Z = 0
 * **Skalierung** : X = 1, Y = 1, Z = 1
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-1.png)
+![Unity mit neu erstelltem, ausgewähltem und positioniertem Buttons-Objekt](images/mr-learning-base/base-06-section1-step1-1.png)
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Medienobjekte > MRTK.Tutorials.GettingStarted > Prefabs), klicken Sie, und ziehen Sie das **PressableRoundButton** -Prefab auf das **Buttons** -Objekt (Schaltflächen), klicken Sie dann mit der rechten Maustaste auf den PressableRoundButton, und wählen Sie **Duplicate** (Duplizieren) aus, um eine Kopie zu erstellen. Wiederholen Sie diesen letzten Schritt, bis Sie über insgesamt drei PressableRoundButton-Objekte verfügen:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-2.png)
+![Unity mit neu hinzugefügten PressableRoundButton-Prefabs](images/mr-learning-base/base-06-section1-step1-2.png)
 
 Wählen Sie im Hierarchiefenster das Objekt **Buttons** aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **GridObjectCollection** (Rasterobjektsammlung) hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
@@ -51,13 +51,13 @@ Wählen Sie im Hierarchiefenster das Objekt **Buttons** aus, verwenden Sie dann 
 
 Klicken Sie dann auf die Schaltfläche **Update Collection** (Sammlung aktualisieren), um die Position der untergeordneten Buttons-Objekte zu aktualisieren:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-3.png)
+![Unity-Objekt „Buttons“ mit hinzugefügter, konfigurierter und angewendeter GridObjectCollection-Komponente](images/mr-learning-base/base-06-section1-step1-3.png)
 
 Benennen Sie die Schaltflächen im Hierarchiefenster **Hints** (Hinweise), **Explode** (Explodieren) und **Reset** (Zurücksetzen).
 
 Wählen Sie für jede Schaltfläche das untergeordnete **SeeItSayItLabel** > **TextMeshPro** -Objekt aus, und ändern Sie dann im Inspektorfenster die entsprechende **TextMeshPro – Text** -Komponente so, dass sie mit den Schaltflächennamen übereinstimmt:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-4.png)
+![Unity mit konfigurierten Schaltflächen-Textbezeichnungen](images/mr-learning-base/base-06-section1-step1-4.png)
 
 Nachdem das erfolgt ist, klappen Sie die untergeordneten Objekte des Button-Objekts zu.
 
@@ -66,22 +66,22 @@ Wählen Sie im Hierarchiefenster das Schaltflächenobjekt **Hints** (Hinweise) a
 * Weisen Sie das **RoverAssembly** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **PlacementHintsController** > **TogglePlacementHints ()** aus, um diese Funktion als Aktion festzulegen, die beim Auslösen des Ereignisses ausgeführt wird.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-5.png)
+![Unity mit konfiguriertem OnClick-Ereignis für das Hints-Schaltflächenobjekt](images/mr-learning-base/base-06-section1-step1-5.png)
 
 Wählen Sie im Hierarchiefenster das Schaltflächenobjekt **Explode** (Explodieren) aus, und konfigurieren Sie dann im Inspektorfenster das **OnClick ()** -Interaktionsereignis wie folgt:
 
 * Weisen Sie das **RoverAssembly** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **ExplodedViewController** > **ToggleExplodedView ()** aus, um diese Funktion als Aktion festzulegen, die beim Auslösen des Ereignisses ausgeführt wird.
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-6.png)
+![Unity mit konfiguriertem OnClick-Ereignis für das Explode-Schaltflächenobjekt](images/mr-learning-base/base-06-section1-step1-6.png)
 
 Drücken Sie die Wiedergabe-Schaltfläche, um in den Spielmodus zu wechseln, und drücken und halten Sie die Leertasten-Schaltfläche, um die Hand zu aktivieren, Verwenden Sie dann die Maus, um auf die **Hints** -Schaltfläche zu klicken, um die Sichtbarkeit der Platzierungshinweisobjekte umzuschalten:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-7.png)
+![Geteilte Ansicht des Unity-Wiedergabemodus mit gedrückter Schaltfläche „Hints“](images/mr-learning-base/base-06-section1-step1-7.png)
 
 und die **Explode** -Schaltfläche, um die Explosionsansicht ein- und auszuschalten:
 
-![mr-learning-base](images/mr-learning-base/base-06-section1-step1-8.png)
+![Geteilte Ansicht des Unity-Wiedergabemodus mit gedrückter Schaltfläche „Explode“](images/mr-learning-base/base-06-section1-step1-8.png)
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>Erstellen eines dynamischen Menüs, das dem Benutzer folgt
 
@@ -90,11 +90,11 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **
 * Vergewissern Sie sich, dass der **Tracked Target Type** (Typ des nachverfolgten Ziels) der **SolverHandler** -Komponente auf **Head** (Kopf) festgelegt ist.
 * Aktivieren Sie das Kontrollkästchen neben Der Solver-Komponente **RadialView** , sodass sie standardmäßig aktiviert ist.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-1.png)
+![Unity mit neu hinzugefügtem, ausgewähltem NearMenu-Prefab](images/mr-learning-base/base-06-section2-step1-1.png)
 
 Benennen Sie im Hierarchiefenster das Objekt in **Menü** um, und klappen Sie dann sein untergeordnetes Objekt **ButtonCollection** auf, um die vier Schaltflächen anzuzeigen:
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-2.png)
+![Unity mit ausgewähltem Menü-Objekt und erweitertem ButtonCollection-Objekt](images/mr-learning-base/base-06-section2-step1-2.png)
 
 Benennen Sie die erste Schaltfläche in **Indicator** (Indikator) um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
@@ -104,14 +104,14 @@ Benennen Sie die erste Schaltfläche in **Indicator** (Indikator) um, und konfig
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist.
 * Ändern Sie das **Symbol** zum Symbol „Suchen“
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-3.png)
+![Unity mit konfiguriertem Button Config Helper für Indicator-Schaltflächenobjekt](images/mr-learning-base/base-06-section2-step1-3.png)
 
 Wählen Sie im Hierarchiefenster das **Indikator** -Objekt aus, und führen Sie dann im Inspektorfenster folgende Aktionen aus:
 
 * Deaktivieren Sie das Kontrollkästchen neben ihrem Namen, um sie als standardmäßig inaktiv festzulegen.
 * Verwenden Sie die Schaltfläche **Komponente hinzufügen** , um die Komponente **Directional Indicator Controller (Script)** hinzuzufügen.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-4.png)
+![Unity mit ausgewähltem und deaktiviertem Indicator-Objekt sowie hinzugefügter DirectionalIndicatorController-Komponente](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
 > Jetzt ist der Indikator beim Starten der App standardmäßig deaktiviert und kann durch Drücken der Schaltfläche „Indicator“ (Indikator) aktiviert werden.
@@ -124,7 +124,7 @@ Benennen Sie die zweite Schaltfläche in **TapToPlace** (Zum Platzieren tippen) 
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist.
 * Ändern des **Symbols** in das Symbol „Hand mit Strahl“
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-5.png)
+![Unity mit konfiguriertem Button Config Helper für TapToPlace-Schaltflächenobjekt](images/mr-learning-base/base-06-section2-step1-5.png)
 
 Wählen Sie im Hierarchiefenster das **RoverAssembly** -Objekt aus, und konfigurieren Sie dann im Inspektorfenster die Komponente **Tap To Place (Script)** wie folgt:
 
@@ -134,7 +134,7 @@ Wählen Sie im Hierarchiefenster das **RoverAssembly** -Objekt aus, und konfigur
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **TapToPlace** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird.
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist.
 
-![mr-learning-base](images/mr-learning-base/base-06-section2-step1-6.png)
+![Unity mit neu konfigurierter TapToPlace-Komponente](images/mr-learning-base/base-06-section2-step1-6.png)
 
 > [!NOTE]
 > Jetzt ist die Tap to Place-Funktionalität beim Starten der App standardmäßig deaktiviert und kann durch Drücken der Schaltfläche „Tap to Place“ aktiviert werden. Wenn das Tippen zum Platzieren abgeschlossen ist, deaktiviert es sich darüber hinaus selbst.
@@ -148,7 +148,7 @@ Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das **Table** -Ob
 * Ändern Sie **Höhe** in 1
 * Ändern Sie **Drehung X** in 90.
 
-![mr-learning-base](images/mr-learning-base/base-06-section3-step1-1.png)
+![Unity mit neu erstelltem, ausgewähltem TextMeshPro-Objekt](images/mr-learning-base/base-06-section3-step1-1.png)
 
 Konfigurieren Sie dann die Komponente **TextMeshPro - Text** wie folgt:
 
@@ -157,39 +157,39 @@ Konfigurieren Sie dann die Komponente **TextMeshPro - Text** wie folgt:
 * Ändern Sie den **Schriftgrad** in „1“
 * Ändern Sie „Zusätzliche Einstellungen > **Ränder** in 0,03
 
-![mr-learning-base](images/mr-learning-base/base-06-section3-step1-2.png)
+![Unity mit konfigurierter TextMeshPro-Komponente](images/mr-learning-base/base-06-section3-step1-2.png)
 
 ## <a name="adding-tooltips"></a>Hinzufügen von QuickInfos
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** (Medienobjekte > MRTK > SDK > Features > UX > Prefabs > QuickInfo), um die QuickInfo-Prefabs zu suchen:
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-1.png)
+![Unity-Projektfenster mit ausgewähltem Ordner „ToolTips“](images/mr-learning-base/base-06-section4-step1-1.png)
 
 Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts** “ auf, und wählen Sie alle seine untergeordneten Rover-Teilobjekte aus. Verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **ToolTipSpawner** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
 * Vergewissern Sie sich, dass das Kontrollkästchen **Focus Enabled** (Fokus aktiviert) aktiviert ist, um vorzuschreiben, dass der Benutzer das Teil anblickt, damit die QuickInfo angezeigt wird.
 * Weisen Sie das **Simple Line ToolTip** -Prefab (Einfachlinie-QuickInfo) aus dem Projektfenster dem Feld **Tool Tip Prefab** (QuickInfo-Prefab) zu.
 * Ändern Sie den „ToolTip Override Settings > **Settings Mode** “ (QuickInfo-Einstellungen für die Außerkraftsetzung > Einstellungsmodus) in **Override** (Außer Kraft setzen).
-* Ändern Sie die „ToolTip Override Settings > **Manual Pivot Local Position Y** “ (QuickInfo-Einstellungen für die Außerkraftsetzung > Manuelle lokale Y-Pivotposition) in **1,5** .
+* Ändern Sie die „ToolTip Override Settings > **Manual Pivot Local Position Y** “ (QuickInfo-Einstellungen für die Außerkraftsetzung > Manuelle lokale Y-Pivotposition) in **1,5**.
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-2.png)
+![Unity mit allen Rover-Teil-Objekten ausgewählt und hinzugefügter und konfigurierter ToolTipSpawner-Komponente](images/mr-learning-base/base-06-section4-step1-2.png)
 
 Wählen Sie im Hierarchiefenster das erste Rover-Teil aus „RoverParts > **Camera_Part** “ aus, und konfigurieren Sie die **ToolTipSpawner** -Komponente wie folgt:
 
 * Ändern Sie den **Tool Tip Text** (QuickInfo-Text) so, dass er den Namen des Teils wiedergibt, d. h. **Camera** (Kamera).
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-3.png)
+![Unity mit konfiguriertem Camera ToolTipText](images/mr-learning-base/base-06-section4-step1-3.png)
 
 **Wiederholen** Sie diesen Schritt für jedes der Rover-Teilobjekte, um die **ToolTipSpawner** -Komponente wie folgt zu konfigurieren:
 
-* Ändern Sie für das **Generator_Part** den **Tool Tip Text** in **Generator** .
+* Ändern Sie für das **Generator_Part** den **Tool Tip Text** in **Generator**.
 * Ändern Sie für das **Lights_Part** den **Tool Tip Text** in **Lights** (Lichter).
 * Ändern Sie für das **UHFAntenna_Part** den **Tool Tip Text** in **UHF Antenna** (UHF-Antenne).
 * Ändern Sie für das **Spectrometer_Part** den **Tool Tip Text** in **Spectrometer** (Spektrometer).
 
 Drücken Sie die Wiedergabe-Schaltfläche, um in den Spielmodus zu wechseln, drücken Sie dann die rechte Maustaste, und halten Sie sie gedrückt, während Sie Maus bewegen, bis der Blick auf eins der Teile trifft, dann wird die QuickInfo für das betreffende Teil angezeigt:
 
-![mr-learning-base](images/mr-learning-base/base-06-section4-step1-4.png)
+![Geteilte Ansicht des Unity-Wiedergabemodus mit mittels Anvisieren ausgelöstem ToolTip](images/mr-learning-base/base-06-section4-step1-4.png)
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 
