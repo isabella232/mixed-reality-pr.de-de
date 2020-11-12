@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 7d840c3f4f12f679dc7ca7622f906f3282ec785b
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386416"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549113"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Gemischte Realität dev Days Japan
 
@@ -29,14 +29,12 @@ Wir freuen uns darauf, dass Sie uns bei Mixed Reality dev Day beitreten! Machen 
 
 ## <a name="registration"></a>Registrierung
 
-[Jetzt registrieren](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
-
-Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu eröffnen.  Das Ereignis ist kostenlos und wird online in Live Veranstaltungen von Microsoft Teams aufbewahrt.  Wir fordern an, dass sich die Teilnehmer registrieren, damit wir e-Mail-Updates senden können, wenn das Ereignis näher rückt und Sie an den interaktiven Elementen des Ereignisses teilnehmen können.
-
+In Kürze verfügbar
 
 ## <a name="schedule---subject-to-change"></a>Zeitplan-Änderungen vorbehalten
 
 **Alle Uhrzeiten sind Japan Normalzeit (UTC + 9)** 
+
 
 
 ### <a name="december-16th"></a>16. Dezember
@@ -44,22 +42,22 @@ Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu
 |---------|---------|---------|---------|---------|
 |10:00AM-10:50uhr|Öffnende Keynote|TBD|Ja/en|–|
 |10:50uhr-11:00AM|**Umbruch**||||
-|11:00AM-11:25 Uhr|*Sitzung 1* Was ist Mixed Reality?Was können Sie mit HL2 tun?MR-Tech Stack|TBD|JA|100|
-|11:30AM-11:55 Uhr|*Sitzung 2* Geschäftsmarkt Dynamik-Update von Japan mit Kunden-und Partner Fallstudien|TBD|JA|200|
-|12:00PM-12:50uhr|*Mittags Sitzung* Panel: interaktive, kostenlose Erörterung, Q und A, mrtk + Oculus Quest 2|TBD|JA|200|
+|11:00AM-11:25 Uhr|*Sitzung 1* Was ist Mixed Reality?Was können Sie mit HL2 tun?MR-Tech Stack|Atsushi-Suzuki|JA|100|
+|11:30AM-11:55 Uhr|*Sitzung 2* Geschäftsmarkt Dynamik-Update von Japan mit Kunden-und Partner Fallstudien|Tetsu Muranaka|JA|200|
+|12:00PM-12:50uhr|*Mittags Sitzung* Panel: interaktive, kostenlose Erörterung, Q und A, mrtk + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
 |12:50uhr-1 Uhr Uhr|**Umbruch**||||
-|1:00PM-1:25 Uhr|*Sitzung 3* Übersicht über die Entwicklung von hololens 2|TBD|JA|200|
-|1:30Uhr-1:55 Uhr|*Sitzung 4* Hololens 2 & mrtk v 2.5 (mrtk-Unity)|TBD|JA|300|
-|2:00PM-2:20Uhr|*Sitzung 5* Die ersten Schritte mit der hololens 2-und Unreal-Engine (mrtk-Unreal)|TBD|DE|300|
-|2:30Uhr-2:55 Uhr|*Sitzung 6* Mr-App-Entwurf (bewährte Vorgehensweise beim Erstellen von UI/UX für die HL2-APP)|TBD|DE|300|
+|1:00PM-1:25 Uhr|*Sitzung 3* Übersicht über die Entwicklung von hololens 2|Madoka Chiyoda|JA|200|
+|1:30Uhr-1:55 Uhr|*Sitzung 4* Hololens 2 & mrtk v 2.5 (mrtk-Unity)|Yoon Park|JA|300|
+|2:00PM-2:20Uhr|*Sitzung 5* Die ersten Schritte mit der hololens 2-und Unreal-Engine (mrtk-Unreal)|Cameron Micka|DE|300|
+|2:30Uhr-2:55 Uhr|*Sitzung 6* Mr-App-Entwurf (bewährte Vorgehensweise beim Erstellen von UI/UX für die HL2-APP)|Daniel Escudero|DE|300|
 |2:55 Uhr-3:15pm|**Umbruch**||||
 |3:15pm-3:40 Uhr|*Sitzung 7* Azure-Objekt Anker|TBD|DE|300|
-|3:45PM-4:10PM|*Sitzung 8* Azure-Remote Rendering|TBD|JA|300|
+|3:45PM-4:10PM|*Sitzung 8* Azure-Remote Rendering|Atsushi-Suzuki|JA|300|
 |4:15pm-4:40 Uhr|*Sitzung 9* Räumliche Azure-Anker|TBD|DE|300|
-|4:45uhr-5:10PM|*Sitzung 10* World locktool|TBD|DE|300|
-|5:15pm-5:40 Uhr|*Sitzung 11* Azure kinect DK Deep Dive, Fallstudie|TBD|JA|400|
-|5:45uhr-6:00PM|Schließen|TBD|JA|Nicht verfügbar|
-||||||
+<!--|4:45uhr-5:10PM|*Sitzung 10* Unity + pixyz|(Unity Japan)|JA|200|-->
+|4:45uhr-5:10PM|*Sitzung 10* TBD|TBD|JA|200|
+|5:15pm-5:40 Uhr|*Sitzung 11* Azure kinect DK Deep Dive, Fallstudie|Shinji Chiba|JA|400|
+|5:45uhr-6:00PM|Schließen|Madoka Chiyoda|JA|Nicht verfügbar|
 
 #### <a name="contributors-english-subtitle-reviewers"></a>Mitwirkende (englische Untertitel Prüfer)
 
