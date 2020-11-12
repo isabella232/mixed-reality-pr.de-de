@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638587"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340688"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
@@ -45,7 +45,7 @@ Am Ende dieses Abschnitts haben Sie ein grundlegendes Verständnis des Mixed Rea
 
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
-| [Installieren der neuesten Tools](../install-the-tools.md) | Laden Sie das aktuellste Unreal-Paket herunter, installieren Sie es, und richten Sie Ihr Projekt für Mixed Reality ein |
+| [Installieren der neuesten Tools](../install-the-tools.md) | Laden Sie die neueste Version der Unreal Engine herunter, installieren Sie sie, und richten Sie Ihr Projekt für Mixed Reality ein |
 | [Hololens 2-Tutorialreihe](tutorials/unreal-uxt-ch1.md) | Vertiefen Sie sich in die MRTK-Tutorials für HoloLens 2-Hardware auf Einstiegsebene |
 
 ### <a name="2-core-building-blocks"></a>2. Grundbausteine
