@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: d7c94ebb7fc6cc16916f1f577b8e54e374b9db1f
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240766"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573294"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
 Im Verlauf der hololens-Entwicklung müssen Sie möglicherweise eine Funktion mit WinRT schreiben. Wenn Sie z. b. eine Datei Dialogfeld in einer hololens-Anwendung öffnen, benötigen Sie die filesavepicker in der Header Datei WinRT/Windows. Storage. Pickers. h.  Da Unreal WinRT-Code nicht nativ kompiliert, ist es Ihre Aufgabe, eine separate Binärdatei zu erstellen, die vom Buildsystem von Unreal verwendet werden kann. Dieses Tutorial führt Sie durch ein solches Szenario.
 
@@ -46,7 +46,7 @@ Im Verlauf der hololens-Entwicklung müssen Sie möglicherweise eine Funktion mi
 3. Bevor Sie Code hinzufügen, müssen Sie die Projekteigenschaften aktualisieren, um sicherzustellen, dass der benötigte WinRT-Code kompiliert werden kann: 
     * Klicken Sie mit der rechten Maustaste auf das Projekt hololenswinrtdll, und wählen Sie **Eigenschaften**  
     * Ändern Sie die Dropdown Liste **Konfiguration** auf **alle Konfigurationen** und die Dropdown Liste für die **Plattform** auf **alle Plattformen** .  
-    * Unter **Konfigurations Eigenschaften> C/C++> alle Optionen**:
+    * Unter **Konfigurations Eigenschaften> C/C++> alle Optionen** :
         * Fügen Sie **zusätzliche Optionen** hinzu **, um sicher** zustellen, dass wir auf asynchrone Tasks warten können.  
         * Ändern Sie den **C++-Sprachstandard** in **ISO C++ 17 Standard (/Std: C++ 17)** , um WinRT-Code einzubeziehen.
 
@@ -87,7 +87,7 @@ public:
 > [!NOTE]
 > Der gesamte WinRT-Code wird in **hololenswinrtdll. cpp** gespeichert, sodass Unreal nicht versucht, beim Verweis auf den Header einen WinRT-Code einzufügen. 
 
-3. Fügen Sie in **hololenswinrtdll. cpp**einen Funktions Text für OpenFileDialog () und den gesamten unterstützten Code hinzu: 
+3. Fügen Sie in **hololenswinrtdll. cpp** einen Funktions Text für OpenFileDialog () und den gesamten unterstützten Code hinzu: 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -180,12 +180,12 @@ Das Verknüpfen und Verwenden einer DLL in Unreal erfordert ein C++-Projekt. Wen
 > [!NOTE]
 > Eine Projekt Mappe wurde nun im gleichen Verzeichnis wie die uproject-Datei erstellt, zusammen mit einem neuen Buildskript mit dem Namen "Source/consumewinrt/consumewinrt. Build. cs".
 
-2. Öffnen Sie die Projekt Mappe, suchen Sie nach dem Ordner **Games/consumewinrt/Source/consumewinrt** , und öffnen Sie **ConsumeWinRT.Build.cs**:
+2. Öffnen Sie die Projekt Mappe, suchen Sie nach dem Ordner **Games/consumewinrt/Source/consumewinrt** , und öffnen Sie **ConsumeWinRT.Build.cs** :
 
 ![Öffnen der ConsumeWinRT.Build.cs-Datei](images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>Verknüpfen der dll
-1. Fügen Sie in **ConsumeWinRT.Build.cs**eine Eigenschaft hinzu, um den Includepfad für die dll zu suchen (das Verzeichnis, das hololenswinrtdll. h enthält). Die dll befindet sich in einem untergeordneten Verzeichnis des include-Pfads, sodass diese Eigenschaft als binäres Stammverzeichnis verwendet wird:
+1. Fügen Sie in **ConsumeWinRT.Build.cs** eine Eigenschaft hinzu, um den Includepfad für die dll zu suchen (das Verzeichnis, das hololenswinrtdll. h enthält). Die dll befindet sich in einem untergeordneten Verzeichnis des include-Pfads, sodass diese Eigenschaft als binäres Stammverzeichnis verwendet wird:
 
 ```cs
 using System.IO;
@@ -240,17 +240,32 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. Öffnen Sie **winrtactor. h** , und fügen Sie zwei Funktionsdefinitionen, eine Blaupause und eine andere, die den DLL-Code verwendet: 
+3. Öffnen Sie **winrtactor. h** , und fügen Sie eine Funktionsdefinition hinzu, eine, die von einem Blueprint aufgerufen wird: 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. Öffnen Sie " **winrtactor. cpp** ", und laden Sie die dll in "beginplay": 
+4. Öffnen Sie **winrtactor. cpp** und Update beginplay, um die dll zu laden: 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Gets path to DLL location
+    const FString BinDir = FPaths::ProjectDir() / 
+        "ThirdParty" / "HoloLensWinrtDLL" / 
+        "arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+    void * dllHandle = FPlatformProcess::GetDllHandle(
+        *(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
     HoloLensWinrtDLL::OpenFileDialogue();
@@ -268,11 +283,11 @@ void AWinfrtActor::BeginPlay()
 
 ![Platzieren des winrtactors in der Szene](images/unreal-winrt-img-06.png)
 
-2. Suchen Sie im **World Outliner**den zuvor in der Szene gelöschten **windrtactor** , und ziehen Sie ihn in den Blueprint der Ebene: 
+2. Suchen Sie im **World Outliner** den zuvor in der Szene gelöschten **windrtactor** , und ziehen Sie ihn in den Blueprint der Ebene: 
 
 ![Ziehen von winrtactor in den Stufen Blueprint](images/unreal-winrt-img-07.png)
 
-3. Ziehen Sie in der Ebene Blueprint den Ausgabe Knoten von winrtactor, suchen Sie nach dem Dialogfeld " **Datei öffnen**", und leiten Sie den Knoten von jeder Benutzereingabe weiter.  In diesem Fall wird das Dialogfeld "Datei öffnen" von einem sprach Ereignis aufgerufen: 
+3. Ziehen Sie in der Ebene Blueprint den Ausgabe Knoten von winrtactor, suchen Sie nach dem Dialogfeld " **Datei öffnen** ", und leiten Sie den Knoten von jeder Benutzereingabe weiter.  In diesem Fall wird das Dialogfeld "Datei öffnen" von einem sprach Ereignis aufgerufen: 
 
 ![Konfigurieren von Knoten in der Ebene Blueprint](images/unreal-winrt-img-08.png)
 

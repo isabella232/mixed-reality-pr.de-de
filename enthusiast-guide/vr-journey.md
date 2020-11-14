@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr,
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293062"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573214"
 ---
 # <a name="start-your-vr-journey"></a>Starten Sie Ihre VR-Journey
 
@@ -41,7 +41,7 @@ Wenn Sie Ihr Gerät haben, müssen Sie es ordnungsgemäß einrichten und konfigu
 
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
-| [Einrichten von Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Machen Sie sich mit ihren Controllern, Raum Grenzen, Spracheingaben und Microsoft Edge auf Ihrem neuen VR-Gerät vertraut. |
+| [Einrichten von Windows Mixed Reality](set-up-windows-mixed-reality.md) | Machen Sie sich mit ihren Controllern, Raum Grenzen, Spracheingaben und Microsoft Edge auf Ihrem neuen VR-Gerät vertraut. |
 | [FAQ zum Setup von Windows Mixed Reality](wmr-setup-faq.md) | Erhalten Sie Antworten und Hilfe zur Problembehandlung bei bekannten Problemen beim Einrichten von Windows Mixed Reality. |
 | [Richtlinien für Integrität, Sicherheit und Komfort](wmr-health-safety-comfort.md) | Empfehlungen zur Sicherheit bei der Verwendung von Windows Mixed Reality vor der Verwendung Ihres Headsets  |
 
@@ -51,14 +51,14 @@ Es gibt eine Vielzahl von Features und Diensten, die über Windows Mixed Reality
 
 <br>
 
-|  Prüfpunkt  |  Komponente  |
+|  Prüfpunkt  |  Funktion  |
 | --- | --- |
 | [Lernen von Mixed Reality](learn-mixed-reality.md) | Erfahren Sie, wie Sie Ihren Blick, ihre Stimme, ihre Controller und Tastatur-/Maus-Eingaben verwenden. |
 | [Navigieren Sie in der Windows Mixed Reality-Startseite](your-mixed-reality-home.md) | Erkunden Sie die virtuelle Umgebung des Windows Mixed Reality-Home  |
 | [Verwenden von Controllern](controllers-in-wmr.md) | Einrichten, verstehen und Verwenden von Motion-Controllern |
 | [Verwenden von Spracheingabe](using-speech-in-wmr.md) | Machen Sie sich mit einer Vielzahl von Sprachbefehlen vertraut, die mit 3D-Objekten, der APP-Leiste, dem Startmenü und Cortana interagieren können. |
 | [Spiele, 360-Video-und-Apps](using-games-and-apps-in-windows-mixed-reality.md) | Erste Schritte mit Ihrem ersten immersiven Spiel, 2D-Speicher Slates, Desktop Anwendungen und webvr-Erfahrungen |
-| [Verwenden von steamvr](using-steamvr-with-windows-mixed-reality.md) | Verbinden Sie Ihr Gerät, und spielen Sie steamvr-Spiele und Informationen zum Windows Insider-Programm |
+| [Verwenden von SteamVR](using-steamvr-with-windows-mixed-reality.md) | Verbinden Sie Ihr Gerät, und spielen Sie steamvr-Spiele und Informationen zum Windows Insider-Programm |
 | [Verwenden von Microsoft Edge](using-microsoft-edge.md) | Installieren Sie die neueste Version von Microsoft Edge auf Ihrem immersiven Gerät. |
 | [Verwenden von webvr](webvr.md) | Einrichten, um VR in ihrer Browserumgebung kennenzulernen |
 

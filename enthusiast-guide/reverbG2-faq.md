@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498285"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573204"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -36,13 +36,15 @@ Es gibt einige Dinge, die Sie ausprobieren können, wenn Sie der Ansicht sind, d
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>Ich erhalte die Fehlermeldung "7-14 ein Fehler ist aufgetreten", wenn ich mein Headset hinzufüge.
 
+7-14 etwas, was schief gelaufen ist, bedeutet, dass einige der erforderlichen USB2-Komponenten nicht gefunden wurden.  Aufgrund des extra langen Kabels des HP-Kabels G2 sind einige der Toleranz für die USB-Signale enger.  Dies bedeutet, dass ein Port auf dem Computer möglicherweise zuverlässiger funktioniert als ein anderer.
+
 Wenn die Fehlermeldung "7-14 ein Fehler ist aufgetreten" angezeigt wird, führen Sie die folgenden Schritte aus:
 
-- Stellen Sie sicher, dass Sie die neuesten Treiber installiert haben.
-- Versuchen Sie, das Kabel an einen anderen USB-3,0-Port zu binden.
-- Verwenden Sie den USB-C-Adapter für einen Adapter, der zum Ausprobieren anderer Ports verwendet wird.
-
-Versuchen Sie, das Kabel an einen anderen USB-Hub zu binden.  
+- Stellen Sie sicher, dass Sie die neuesten Treiber für Ihr Headset und den USB-Controller installiert haben.
+- Stellen Sie sicher, dass Sie einen Microsoft-USB-Treiber verwenden. Der Name des "Extensible Host Controller"-Geräts sollte "Microsoft" lauten.
+- Versuchen Sie, das Kabel an einen anderen USB-3,0-Port auf dem Computer zu binden. (USB-Typ-C-und Typ-A-Ports testen)
+- Verwenden Sie das enthaltene USB-C für einen Adapter, der zum Ausprobieren verschiedener Ports verwendet wird.
+- Versuchen Sie, das Headset mit einem USB-Hub an Ihren Computer zu übernehmen.
 
 > [!NOTE]
 > HP empfiehlt, nur USB-Controller zu verwenden, die in die Hauptplatine mit den Geräten der Hall-G2

@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Beispiel-apps, Design, hololens
-ms.openlocfilehash: 4ab408d23ca932e73c0939f8a5cdc48184666f78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684670"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573254"
 ---
 # <a name="lunar-module"></a>Lunar-Modul
 
@@ -19,6 +19,11 @@ ms.locfileid: "91684670"
 >In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Entwurfs Labors für gemischte Realität](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erkenntnisse und Vorschläge für die Entwicklung gemischter Reality-apps teilen. Unsere Entwurfs bezogenen Artikel und Code werden sich weiterentwickeln, wenn wir neue Ermittlungen durchführen.
 
 Das [Mond Modul](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) ist eine Open-Source-Beispiel-App aus den Mixed Reality-Entwurfs Labs von Microsoft. Mit diesem Projekt können Sie erfahren, wie Sie die grundlegenden Gesten von hololens mit zweidimensionalen nach Verfolgungs-und Xbox Controller-Eingaben erweitern, Objekte erstellen, die sich reaktiv in der Oberfläche befinden und einfache Menüsysteme suchen und implementieren können. Alle Projektkomponenten sind für die Verwendung in ihren eigenen Umgebungen mit gemischter Realität verfügbar.
+
+## <a name="demo-video"></a>Demovideo 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
+
+Aufgezeichnet mit hololens 2 mithilfe von Mixed Reality Capture
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Umdenken der klassischen Erfahrung für Windows Mixed Reality
 
@@ -62,7 +67,7 @@ Der Benutzer muss das Eingabe Schema erlernen, den Versand Steuern und ein klein
 
 Die Basis Eingabe hololens hat nur zwei Gesten: [Luft tippen und-Blüte](../../design/gaze-and-commit.md#composite-gestures). Benutzer müssen sich nicht mit kontextbezogenen Nuancen oder einer Auflistungs Liste bestimmter Gesten merken, die die Schnittstelle der Plattform sowohl flexibel als auch leicht zu erlernen macht. Obwohl das System diese beiden Gesten möglicherweise nur verfügbar macht, sind hololens als Gerät in der Lage, zwei Hände gleichzeitig zu verfolgen. Unsere Ode-zu-Mond-Lander ist eine [immersive App](../../design/app-model.md) . das bedeutet, dass wir die grundlegenden Gesten der Gesten erweitern können, um zwei Hände zu nutzen und unsere eigene, delightall-Methode für die Navigation mit dem Mond Modul hinzuzufügen.
 
-Wenn wir uns das ursprüngliche Steuerelement Schema ansehen, mussten **wir uns für die Ausrichtung und Drehung lösen** . Der Nachteil ist, dass die Drehung im neuen Kontext eine zusätzliche Achse hinzufügt (technisch gesehen zwei, aber die Y-Achse ist weniger wichtig für die Landung). Die beiden unterschiedlichen Ship-Bewegungen eignen sich natürlich, um jeder Hand zugeordnet zu werden:
+Wenn wir uns das ursprüngliche Steuerelement Schema ansehen, mussten **wir uns für die Ausrichtung und Drehung lösen**. Der Nachteil ist, dass die Drehung im neuen Kontext eine zusätzliche Achse hinzufügt (technisch gesehen zwei, aber die Y-Achse ist weniger wichtig für die Landung). Die beiden unterschiedlichen Ship-Bewegungen eignen sich natürlich, um jeder Hand zugeordnet zu werden:
 
 ![Tippen und ziehen Sie Gesten, um den Lander auf allen drei Achsen zu drehen.](images/module-handdrag.gif)<br>
 *Tippen und ziehen Sie Gesten, um den Lander auf allen drei Achsen zu drehen.*
@@ -81,7 +86,7 @@ Da die hololens zwei Hände verfolgen können, kann die Drehung der rechten Seit
 
 Während Handgesten in den hololens eine neue Methode für die fein Körnung bereitstellen, gibt es immer noch eine gewisse fehlende "wahre" Möglichkeit, die Sie von den analogen Steuerelementen erhalten. Das Verbinden eines Xbox-Spiel Controllers ermöglicht es, diesen Sinn der Physizität wiederherzustellen, während die Steuerelemente für die fein Körnung genutzt werden.
 
-Es gibt mehrere Möglichkeiten, das relativ geradlinige Steuerungs Schema auf den Xbox-Controller anzuwenden. Da wir versuchen, so nah wie möglich an der ursprünglichen Arkade zu bleiben **, wird die** Schaltfläche für den Schalt Bereich am besten angezeigt. Diese Schaltflächen sind analoge Steuerelemente, d. h., Sie haben mehr als einfache Status Zustände *und* reagieren auf den Grad der Druck Maßnahmen. Dadurch erhalten wir ein ähnliches Konstrukt wie der **Schubhebel** . Anders als das ursprüngliche Spiel und die Handbewegung, schneidet dieses Steuerelement die Bewegung des Schiffs ab, sobald ein Benutzer die Druckfunktion nicht mehr auf den Auslösers setzt. Der Benutzer erhält weiterhin denselben Grad an Feinheiten wie das ursprüngliche Arcade-Spiel.
+Es gibt mehrere Möglichkeiten, das relativ geradlinige Steuerungs Schema auf den Xbox-Controller anzuwenden. Da wir versuchen, so nah wie möglich an der ursprünglichen Arkade zu bleiben **, wird die** Schaltfläche für den Schalt Bereich am besten angezeigt. Diese Schaltflächen sind analoge Steuerelemente, d. h., Sie haben mehr als einfache Status Zustände *und* reagieren auf den Grad der Druck Maßnahmen. Dadurch erhalten wir ein ähnliches Konstrukt wie der **Schubhebel**. Anders als das ursprüngliche Spiel und die Handbewegung, schneidet dieses Steuerelement die Bewegung des Schiffs ab, sobald ein Benutzer die Druckfunktion nicht mehr auf den Auslösers setzt. Der Benutzer erhält weiterhin denselben Grad an Feinheiten wie das ursprüngliche Arcade-Spiel.
 
 ![Der linke Ministick ist "Yaw" und "Roll" zugeordnet, der Rechte fingerstick ist "Pitch" und "Roll" zugeordnet](images/thumbsticksidebyside.gif)<br>
 *Der linke fingerstick ist "Yaw" und "Roll" zugeordnet. der Rechte fingerstick ist "Pitch" und "Roll" zugeordnet.*
@@ -94,7 +99,7 @@ Diese Beispiel-App veranschaulicht, wie sich die räumliche Erkennung und das Im
 
 Sie finden Skripts und Prefabs für die Beispiel-app "Lunar Module" auf dem [Mixed Reality Design Labs GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule).
 
-## <a name="about-the-author"></a>Zum Autor
+## <a name="about-the-author"></a>Informationen zum Autor
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
@@ -104,6 +109,7 @@ Sie finden Skripts und Prefabs für die Beispiel-app "Lunar Module" auf dem [Mix
 </table>
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Motion-Controller](../../design/motion-controllers.md)
-* [Anvisieren mit dem Kopf und Ausführen](../../design/gaze-and-commit.md)
-* [Typen von Mixed Reality-Apps](../../design/types-of-mixed-reality-apps.md)
+* [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

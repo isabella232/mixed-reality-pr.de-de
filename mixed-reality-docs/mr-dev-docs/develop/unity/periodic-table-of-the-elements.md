@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows-Realität, Entwurf, Beispiel-APP, Steuerelemente
-ms.openlocfilehash: 2f7120aaf92a6e3d7b6ace301aae7392b67fa00b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690166"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573264"
 ---
 # <a name="periodic-table-of-the-elements"></a>Periodensystem der Elemente
 
@@ -21,6 +21,11 @@ ms.locfileid: "91690166"
 [Die periodische Tabelle der Elemente](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) ist eine Open-Source-Beispiel-App aus den Mixed Reality-Entwurfs Labs von Microsoft. Mit diesem Projekt können Sie erfahren, wie Sie ein Array von Objekten im 3D-Raum mit verschiedenen Oberflächentypen mithilfe einer **[Objekt](../../design/object-collection.md)** Auflistung aufstellen. Außerdem wird beschrieben, wie Sie Objekt übergreifende Objekte erstellen, die auf Standard Eingaben aus hololens reagieren. Sie können die Komponenten dieses Projekts verwenden, um Ihre eigene Benutzeroberflächen Funktion für gemischte Realität zu erstellen.
 
 ![Period-Tabelle der Elements-App](images/640px-periodictable-hero.jpg)
+
+## <a name="demo-video"></a>Demovideo 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
+
+Aufgezeichnet mit hololens 2 mithilfe von Mixed Reality Capture
 
 ## <a name="about-the-app"></a>Informationen zur APP
 
@@ -60,43 +65,20 @@ Die [Objektsammlung](../../design/object-collection.md) ist ein Objekt, mit dem 
 
 ![Objektsammlung](images/640px-periodictable-collections.jpg)
 
-### <a name="fitbox"></a>Fitbox
-
-In der Standardeinstellung werden holograms an dem Speicherort abgelegt, an dem der Benutzer die Anwendung startet. Dies führt manchmal zu unerwünschten Ergebnissen, z. b. holograms, die hinter einer Wand oder in der Mitte einer Tabelle abgelegt werden. Eine fitbox-Funktion ermöglicht es einem Benutzer, die Position zu ermitteln, an der das – Hologramm platziert wird. Sie wird mit einer einfachen PNG-Bildtextur erstellt, die problemlos mit ihren eigenen Bildern oder 3D-Objekten angepasst werden kann.
-
-![Fitbox](../../design/images/450px-periodictable-fitbox.jpg)
-
 ## <a name="technical-details"></a>Technische Details
 
 Sie finden Skripts und Prefabs für die periodische Tabelle der Elements-App auf dem [Mixed Reality Design Labs GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable).
 
-## <a name="application-examples"></a>Anwendungsbeispiele
+## <a name="porting-story-for-hololens-2"></a>Portieren von Story für hololens 2
 
-Im folgenden finden Sie einige Ideen für das, was Sie erstellen können, indem Sie die Komponenten in diesem Projekt nutzen.
+Lesen Sie den Artikel zum Aktualisieren der periodischen Tabelle der Elements-App mit den instanziellen Interaktionen von hololens 2.
 
-### <a name="stock-data-visualization-app"></a>Daten Visualisierungs-App für Aktien
+[Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 
-Wenn Sie die gleichen Steuerelemente und das Interaktionsmodell wie die periodische Tabelle des Elements Sample verwenden, können Sie eine APP erstellen, die die Daten von Aktienmärkten visualisiert. In diesem Beispiel wird das Objekt Auflistungs Steuerelement verwendet, um Aktiendaten in einer kugelförmigen Form anzuordnen. Sie können sich eine Detailansicht vorstellen, in der zusätzliche Informationen zu den einzelnen Aktien auf interessante Weise angezeigt werden können.
 
-![Anwendungsbeispiel: Finance (1 von 3)](images/640px-periodictable-applicationexamples-finance1.jpg)
 
-![Anwendungsbeispiel: Finance (2 von 3)](images/640px-periodictable-applicationexamples-finance2.jpg)
 
-![Anwendungsbeispiel: Finance (3 von 3)](images/640px-periodictable-applicationexamples-finance3.jpg)<br>
-*Ein Beispiel dafür, wie die Objekt Auflistung, die in der periodischen Tabelle der Beispiel-App für Elemente verwendet wird, in einer Finance-App verwendet werden kann*
-
-### <a name="sports-app"></a>Sport-App
-
-Dies ist ein Beispiel für die Visualisierung von Sportdaten mithilfe der Objekt Auflistung und anderer Komponenten aus der periodischen Tabelle der Elements-Beispiel-app.
-
-![Anwendungsbeispiel: Sport (1 von 3)](images/640px-periodictable-applicationexamples-sports0.jpg)
-
-![Anwendungsbeispiel: Sport (2 von 3)](images/640px-periodictable-applicationexamples-sports1.jpg)
-
-![Anwendungsbeispiel: Sport (3 von 3)](images/640px-periodictable-applicationexamples-sports3.jpg)<br>
-*Ein Beispiel dafür, wie die Objekt Auflistung, die in der periodischen Tabelle des Elements Sample appused verwendet wird, in einer Sport-App verwendet werden kann.*
-
-## <a name="about-the-author"></a>Zum Autor
+## <a name="about-the-author"></a>Informationen zum Autor
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
@@ -107,5 +89,7 @@ Dies ist ein Beispiel für die Visualisierung von Sportdaten mithilfe der Objekt
 
 ## <a name="see-also"></a>Weitere Informationen
 
-* [Interaktionsfähiges Objekt](../../design/interactable-object.md)
-* [Objektsammlung](../../design/object-collection.md)
+* [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

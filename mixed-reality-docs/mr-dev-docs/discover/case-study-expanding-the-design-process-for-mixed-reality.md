@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Gemischte Windows-Realität, Entwurf, Prozess, Fallstudie
-ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386246"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631508"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Anders als bei gemischter Realität
 Als Microsoft die hololens (1. Generation) für eine Zielgruppe von eifrigen Entwicklern in 2016 eingeführt hat, hatte das Team bereits zusammen mit Studio innerhalb und außerhalb von Microsoft zusammengearbeitet, um die Start Erfahrungen des Geräts zu erstellen. Diese Teams haben ihr Wissen in der Praxis erworben und auf dem neuen Gebiet des Mixed Reality-Entwurfs sowohl Chancen als auch Herausforderungen kennengelernt.
@@ -128,13 +128,12 @@ Einfache, kostengünstige grafikmaterialien sind entscheidend, um Teammitglieder
 * Stifte
 * Sharpies
 
-## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+## <a name="next-discovery-checkpoint"></a>Nächster Erkundungsprüfpunkt
 
-Wenn Sie der [Discovery Journey](get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+Herzlichen Glückwunsch, Sie haben den Kern der Discovery Journey von Mixed Reality abgeschlossen! Sie können entweder zur Hauptseite der [Discovery Journey](get-started-with-mr.md) zurückkehren und [sehen, wie Branchenpartner gemischte Realität verwenden](get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality) , [die hololens erkunden](get-started-with-mr.md#explore-hololens-and-mixed-reality-services)oder Ihre Entwurfs-oder Entwicklungs Fahrten starten:
 
 > [!div class="nextstepaction"]
-> [Benutzerkomfort](../design/comfort.md)
+> [Beginnen Sie mit der Entwurfs Journey](../design/design.md)
 
-## <a name="see-also"></a>Weitere Informationen
-* [Fallstudie-mein erstes Jahr im hololens-Entwurfs Team](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)
-* [Fallstudie-afternow-Prozess: Projekt Erstellung, Prototyperstellung, Erstellung](https://developer.microsoft.com/windows/mixed-reality/case_study_-_afternow's_process_-_envisioning,_prototyping,_building)
+> [!div class="nextstepaction"]
+> [Starten Sie Ihre Entwicklungs Journey](../develop/development.md)
