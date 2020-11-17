@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, räumliche Zuordnung, Renderer, Collider, Mesh, Scannen, Komponente
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, räumliche Zuordnung, Renderer, Collider, Mesh, Scan, Komponente, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690067"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677399"
 ---
 # <a name="spatial-mapping-in-unity"></a>Räumliche Abbildung in Unity
 
@@ -84,13 +84,13 @@ Wenn Sie physische Oberflächen visualisieren und mit ihnen interagieren möchte
 
 So verwenden Sie diese beiden Komponenten in ihrer Unity-App:
 1. Wählen Sie ein gameobject-Objekt in der Mitte des Bereichs aus, in dem Sie räumliche Oberflächen Netze erkennen möchten.
-2. **Fügen Sie** im Inspektor-Fenster Komponenten-XR-zuordnungszuordnungszuweisung  >  **XR**  >  **Spatial Mapping Collider**   und- **Renderer für räumliche Zuordnung** hinzu
+2. **Fügen Sie** im Inspektor-Fenster Komponenten-XR-zuordnungszuordnungszuweisung  >  **XR**  >  **Spatial Mapping Collider** und- **Renderer für räumliche Zuordnung** hinzu
 
 Weitere Informationen zur Verwendung dieser Komponenten finden Sie auf der <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity-Dokumentations Website</a>.
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Über die integrierten Komponenten für räumliche Zuordnung hinausgehen
 
-Diese Komponenten vereinfachen den Einstieg in die räumliche Zuordnung. Wenn Sie fortfahren möchten, können Sie zwei Haupt Pfade untersuchen:
+Diese Komponenten vereinfachen den Einstieg in die räumliche Zuordnung.  Wenn Sie fortfahren möchten, können Sie zwei Haupt Pfade untersuchen:
 * Wenn Sie eine eigene Mesh-Verarbeitung auf niedrigerer Ebene durchführen möchten, finden Sie im Abschnitt weiter unten Informationen zur Skript-API auf niedriger Ebene.
 * Informationen zu einer übergeordneten Mesh-Analyse finden Sie im Abschnitt weiter unten über die spatialunderstanding-Bibliothek in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">mixedrealitytoolkit</a>.
 
@@ -99,7 +99,7 @@ Diese Komponenten vereinfachen den Einstieg in die räumliche Zuordnung. Wenn Si
 Wenn Sie mehr Kontrolle benötigen, als Sie von den Komponenten des Renderers für räumliche Zuordnung und der Komponenten Zuordnung für räumliche Zuordnung erhalten, können Sie die Low-Level-Skript-APIs für die räumliche Zuordnung verwenden.
 
 **Namespace:** *unityengine. XR. WSA*<br>
-**Typen** : *surfaceobserver* , *SurfaceChange* , *surfacedata* , *surfaceid*
+**Typen**: *surfaceobserver*, *SurfaceChange*, *surfacedata*, *surfaceid*
 
 Im folgenden finden Sie einen Überblick über den empfohlenen Ablauf für eine Anwendung, die die APIs für die räumliche Zuordnung verwendet.
 
@@ -477,21 +477,21 @@ Die Understanding dll speichert den Playspace intern als Raster von Voxel-Cubes 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Räumliche Zuordnung im Mixed Reality Toolkit
 Weitere Informationen zur Verwendung der räumlichen Zuordnung mit Mixed Reality Toolkit v2 finden Sie im <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">Abschnitt räumliche</a> Informationen der mrtk-Dokumentation.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, dass Sie die Hauptbausteine von mrtk untersuchen. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [Gemeinsame Erfahrung](shared-experiences-in-unity.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * [Koordinatensysteme in Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

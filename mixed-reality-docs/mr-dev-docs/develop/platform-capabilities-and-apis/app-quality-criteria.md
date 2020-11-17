@@ -5,13 +5,13 @@ author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: App-Qualitätskriterien, gemischte Realität, Mixed Reality-App
-ms.openlocfilehash: 96d446e1f6f5649f842d674ea4692d619894cc32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: App-Qualitätskriterien, gemischte Realität, Mixed Reality-APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683798"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677989"
 ---
 # <a name="app-quality-criteria"></a>Kriterien für die App-Qualität
 
@@ -176,7 +176,7 @@ Falsche Abweichungen von holograms mit physischen Objekten (wenn Sie in Beziehun
 
 |  Sehr hoch  |  Findet |  Fehler |
 --- | --- | ---
-| Holograms werden an der Oberfläche ausgerichtet, die sich in der Regel im Bereich von Zentimetern bis Zoll Wenn mehr Genauigkeit erforderlich ist, sollte die APP eine effiziente Möglichkeit zur Zusammenarbeit innerhalb der gewünschten App-Spezifikation bereitstellen. | Nicht verfügbar | Die Hologramme werden mit dem physischen Zielobjekt nicht ausgerichtet angezeigt, indem die Oberfläche unterbrochen wird oder die Fläche von der Oberfläche entfernt wird. Wenn die Genauigkeit erforderlich ist, sollten holograms die Näherungs Spezifikation des Szenarios erfüllen. | 
+| Holograms werden an der Oberfläche ausgerichtet, die sich in der Regel im Bereich von Zentimetern bis Zoll Wenn mehr Genauigkeit erforderlich ist, sollte die APP eine effiziente Möglichkeit zur Zusammenarbeit innerhalb der gewünschten App-Spezifikation bereitstellen. | – | Die Hologramme werden mit dem physischen Zielobjekt nicht ausgerichtet angezeigt, indem die Oberfläche unterbrochen wird oder die Fläche von der Oberfläche entfernt wird. Wenn die Genauigkeit erforderlich ist, sollten holograms die Näherungs Spezifikation des Szenarios erfüllen. | 
 
 ### <a name="how-to-measure"></a>So messen Sie
 

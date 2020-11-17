@@ -1,17 +1,17 @@
 ---
-title: Mr und Azure 308-Geräte übergreifende Benachrichtigungen
+title: 'MR und Azure 308: Geräteübergreifende Benachrichtigungen'
 description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie Azure Notification Hubs, Azure Functions und Azure Storage und Tabellen in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Benachrichtigung, Funktionen, Tabellen, Notification Hubs, hololens, immersive, VR
-ms.openlocfilehash: d1eee620c01bde2096272f758d50d53fca6e3b82
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Benachrichtigung, Funktionen, Tabellen, Notification Hubs, hololens, immersive, VR, Windows 10, Visual Studio
+ms.openlocfilehash: 4b71968eb546cc5d7a5cd767f2ecafae102c763c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687782"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679539"
 ---
 # <a name="mr-and-azure-308-cross-device-notifications"></a>MR und Azure 308: Geräteübergreifende Benachrichtigungen
 
@@ -85,7 +85,7 @@ Um den **Azure Notification Hubs** -Dienst zu verwenden, müssen Sie eine Anwend
 
     > Sie müssen sich bei Ihrem Microsoft-Konto anmelden.
 
-2.  Klicken Sie im Dashboard auf **neue APP erstellen** .
+2.  Klicken Sie im Dashboard auf **neue APP erstellen**.
 
     ![Erstellen einer APP](images/AzureLabs-Lab8-01.png)
 
@@ -124,22 +124,22 @@ Nachdem Sie die Anmelde Informationen für Ihre apps abgerufen haben, müssen Si
     > [!NOTE] 
     > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
 
-2.  Nachdem Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Notification Hub** , und drücken Sie die ***Eingabe*** Taste.
+2.  Nachdem Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Notification Hub**, und klicken Sie auf **_Enter_* _.
 
     ![nach benachrichtigungshub suchen](images/AzureLabs-Lab8-06.png)
 
     > [!NOTE] 
-    > Das Wort ***New*** wurde möglicherweise durch **Create a Resource** in neueren Portalen ersetzt.
+    > Das Wort _*_New_*_ wurde möglicherweise durch _ * Create a Resource * * in neueren Portalen ersetzt.
 
 3.  Auf der neuen Seite wird eine Beschreibung des *Notification Hubs* Dienstanbieter bereitgestellt. Wählen Sie unten links in dieser Eingabeaufforderung die Schaltfläche **Erstellen** aus, um eine Verknüpfung mit diesem Dienst zu erstellen.
 
     ![Benachrichtigungs-Hubs-Instanz erstellen](images/AzureLabs-Lab8-07.png)
 
-4.  Nachdem Sie auf ***Erstellen*** geklickt haben, klicken Sie auf:
+4.  Nachdem Sie auf **_Create_* _ geklickt haben:
 
     1.  Fügen Sie den gewünschten Namen für diese Dienst Instanz ein.
 
-    2.  Geben Sie einen **Namespace** an, den Sie dieser APP zuordnen können.
+    2.  Geben Sie einen _-*Namespace** an, den Sie dieser APP zuordnen können.
 
     3.  Wählen Sie einen **Speicherort aus.**
 
@@ -151,7 +151,7 @@ Nachdem Sie die Anmelde Informationen für Ihre apps abgerufen haben, müssen Si
 
     6.  Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
 
-    7. Klicken Sie auf **Erstellen** .
+    7. Klicken Sie auf **Erstellen**.
 
         ![Dienst Details ausfüllen](images/AzureLabs-Lab8-08.png)
 
@@ -169,7 +169,7 @@ Nachdem Sie die Anmelde Informationen für Ihre apps abgerufen haben, müssen Si
 
     ![neu erstellter Hubs-Dienst](images/AzureLabs-Lab8-11.png)
 
-9. Nachdem Sie die Details in die richtigen Felder kopiert haben, klicken Sie auf **Speichern** , und Sie erhalten eine Benachrichtigung, wenn der Notification Hub erfolgreich aktualisiert wurde.
+9. Nachdem Sie die Details in die richtigen Felder kopiert haben, klicken Sie auf **Speichern**, und Sie erhalten eine Benachrichtigung, wenn der Notification Hub erfolgreich aktualisiert wurde.
 
     ![Sicherheitsdetails kopieren](images/AzureLabs-Lab8-12.png)
 
@@ -179,10 +179,10 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 
 1.  Wenn Sie noch nicht angemeldet sind, melden Sie sich beim [Azure-Portal](https://portal.azure.com)an.
 
-2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Speicherkonto** , und drücken Sie die **Eingabe** Taste.
+2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Speicherkonto**, und drücken Sie die **Eingabe** Taste.
 
     > [!NOTE] 
-    > Das Wort ***New*** wurde möglicherweise durch **Create a Resource** in neueren Portalen ersetzt.
+    > Das Wort **_New_*_ wurde möglicherweise durch _* Create a Resource** in neueren Portalen ersetzt.
 
 3.  Wählen Sie **Speicherkonto-BLOB, Datei, Tabelle, Warteschlange** aus der Liste aus.
 
@@ -196,7 +196,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 
     1. Fügen Sie den gewünschten **Namen** für diese Dienst Instanz ein (nur Kleinbuchstaben).
 
-    2. Klicken Sie unter **Bereitstellungs Modell** auf **Ressourcen-Manager** .
+    2. Klicken Sie unter **Bereitstellungs Modell** auf **Ressourcen-Manager**.
 
     3.  Wählen Sie unter **Kontoart** im Dropdown Menü die Option **Speicher (universell v1)** aus.
 
@@ -204,7 +204,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
     
     5.  Wählen Sie für das Dropdown Menü **Replikation** die Option **Lesezugriff georedundanter Speicher (RA-GRS)** aus.
 
-    6.  Klicken Sie für die **Leistung** auf **Standard** .
+    6.  Klicken Sie für die **Leistung** auf **Standard**.
 
     7.  Wählen Sie im Abschnitt **sichere Übertragung erforderlich** die Option **deaktiviert** aus.
 
@@ -216,7 +216,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 
     10. Lassen Sie **virtuelle Netzwerke** **deaktiviert** , wenn dies eine Option für Sie ist.
 
-    11. Klicken Sie auf **Erstellen** .
+    11. Klicken Sie auf **Erstellen**.
 
         ![Speicher Details ausfüllen](images/AzureLabs-Lab8-15.png)
 
@@ -230,7 +230,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 
     ![Gehe zu Ressource](images/AzureLabs-Lab8-17.PNG)
 
-9. Klicken Sie auf der Seite Übersicht auf die Rechte Seite, und klicken Sie auf **Tabellen** .
+9. Klicken Sie auf der Seite Übersicht auf die Rechte Seite, und klicken Sie auf **Tabellen**.
     
     ![](images/AzureLabs-Lab8-18.PNG)
 
@@ -251,7 +251,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 
 Nachdem Sie das Speicher **Dienst** -Speicherkonto eingerichtet haben, ist es an der Zeit, Daten hinzuzufügen, die zum Speichern und Abrufen von Informationen verwendet werden. Die Bearbeitung der Tabellen kann über **Visual Studio** erfolgen.
 
-1.  Öffnen Sie **Visual Studio** .
+1.  Öffnen Sie **Visual Studio**.
 
 2.  Klicken Sie im Menü auf **View**  >  **Cloud-Explorer** anzeigen.
 
@@ -270,7 +270,7 @@ Nachdem Sie das Speicher **Dienst** -Speicherkonto eingerichtet haben, ist es an
 
     ![Öffnen von Speicher Konten](images/AzureLabs-Lab8-23.png)
 
-5.  Nach der Erweiterung sollte Ihr neu erstelltes **Speicherkonto** verfügbar sein. Klicken Sie auf den Pfeil links neben dem Speicher, und wählen Sie dann nach dem Erweitern der Tabelle **Tabellen** aus, und klicken Sie auf den Pfeil daneben, um die **Tabelle** anzuzeigen, die Sie im letzten Kapitel erstellt haben. Doppelklicken Sie auf die **Tabelle** .
+5.  Nach der Erweiterung sollte Ihr neu erstelltes **Speicherkonto** verfügbar sein. Klicken Sie auf den Pfeil links neben dem Speicher, und wählen Sie dann nach dem Erweitern der Tabelle **Tabellen** aus, und klicken Sie auf den Pfeil daneben, um die **Tabelle** anzuzeigen, die Sie im letzten Kapitel erstellt haben. Doppelklicken Sie auf die **Tabelle**.
 
     ![Tabelle "Scene Objects" öffnen](images/AzureLabs-Lab8-24.png)
 
@@ -278,7 +278,7 @@ Nachdem Sie das Speicher **Dienst** -Speicherkonto eingerichtet haben, ist es an
 
     ![neue Tabelle hinzufügen](images/AzureLabs-Lab8-25.png)
 
-7.  Ein Fenster wird angezeigt, in dem Sie aufgefordert werden, *Entitäten hinzuzufügen* . Sie erstellen insgesamt drei Entitäten mit jeweils mehreren Eigenschaften. Sie werden feststellen, dass *PartitionKey* und *RowKey* bereits bereitgestellt werden, da diese von der Tabelle zum Suchen Ihrer Daten verwendet werden. 
+7.  Ein Fenster wird angezeigt, in dem Sie aufgefordert werden, *Entitäten hinzuzufügen*. Sie erstellen insgesamt drei Entitäten mit jeweils mehreren Eigenschaften. Sie werden feststellen, dass *PartitionKey* und *RowKey* bereits bereitgestellt werden, da diese von der Tabelle zum Suchen Ihrer Daten verwendet werden. 
 
     ![Partitions-und Zeilen Schlüssel](images/AzureLabs-Lab8-26.png)
 
@@ -288,12 +288,12 @@ Nachdem Sie das Speicher **Dienst** -Speicherkonto eingerichtet haben, ist es an
 
 9.  Klicken Sie auf **Eigenschaft hinzufügen** , um zusätzliche Daten Zeilen hinzuzufügen. Erstellen Sie die erste leere Tabelle mit der folgenden Tabelle.
 
-10. Klicken Sie anschließend auf **OK** .
+10. Klicken Sie anschließend auf **OK**.
 
     ![Klicken Sie abschließend auf OK.](images/AzureLabs-Lab8-27.png)
 
     > [!WARNING] 
-    > Stellen Sie sicher, dass Sie den **Typ** der **X** -, **Y** -und **Z** -Einträge in " **Double** " geändert haben. 
+    > Stellen Sie sicher, dass Sie den **Typ** der **X**-, **Y**-und **Z**-Einträge in " **Double**" geändert haben. 
 
 11. Sie werden feststellen, dass die Tabelle nun eine Daten Zeile enthält. Klicken Sie **+** erneut auf das Symbol (plus), um eine weitere Entität hinzuzufügen.
 
@@ -323,7 +323,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
     ![Editor öffnen](images/AzureLabs-Lab8-31.png)
 
-2.  Fügen Sie bei geöffneter Notepad die JSON-Struktur unten ein. Nachdem Sie dies getan haben, speichern Sie es auf Ihrem Desktop, wie **project.js** . Es ist wichtig, dass die Benennung korrekt ist: Stellen Sie sicher, dass Sie nicht über die Dateierweiterung " **. txt** " verfügt. Diese Datei definiert die Bibliotheken, die von ihrer Funktion verwendet werden, wenn Sie nuget verwendet haben, wird Sie vertraut aussehen.
+2.  Fügen Sie bei geöffneter Notepad die JSON-Struktur unten ein. Nachdem Sie dies getan haben, speichern Sie es auf Ihrem Desktop, wie **project.js**. Es ist wichtig, dass die Benennung korrekt ist: Stellen Sie sicher, dass Sie nicht über die Dateierweiterung " **. txt** " verfügt. Diese Datei definiert die Bibliotheken, die von ihrer Funktion verwendet werden, wenn Sie nuget verwendet haben, wird Sie vertraut aussehen.
 
     ```json
     {
@@ -341,7 +341,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
 3.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
-4.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf " **neu** ", und suchen Sie nach **Funktionen-App** . Drücken Sie dann die **Eingabe** Taste.
+4.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf " **neu** ", und suchen Sie nach **Funktionen-App**. Drücken Sie dann die **Eingabe** Taste.
 
     ![nach Funktionen-App suchen](images/AzureLabs-Lab8-32.png)
 
@@ -374,7 +374,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
     9. Sie benötigen keine *Application Insights* in dieser APP, sodass Sie Sie nicht mehr **Deaktivieren** können.
 
-    10. Klicken Sie auf **Erstellen** .
+    10. Klicken Sie auf **Erstellen**.
 
         ![neue Instanz erstellen](images/AzureLabs-Lab8-34.png)
 
@@ -390,11 +390,11 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
     ![Gehe zu Ressource](images/AzureLabs-Lab8-36.png)
 
-11. Klicken Sie **+** neben *Functions* auf das Symbol (Pluszeichen), um *neu zu erstellen* .
+11. Klicken Sie **+** neben *Functions* auf das Symbol (Pluszeichen), um *neu zu erstellen*.
 
     ![neue Funktion hinzufügen](images/AzureLabs-Lab8-37.png)
 
-12. Im mittleren Bereich wird das Fenster für die **Funktions** Erstellung angezeigt. Ignorieren Sie die Informationen in der oberen Hälfte des Panels, und klicken Sie auf **benutzerdefinierte Funktion** , die sich am unteren Rand befindet (im blauen Bereich, wie unten gezeigt).
+12. Im mittleren Bereich wird das Fenster für die **Funktions** Erstellung angezeigt. Ignorieren Sie die Informationen in der oberen Hälfte des Panels, und klicken Sie auf **benutzerdefinierte Funktion**, die sich am unteren Rand befindet (im blauen Bereich, wie unten gezeigt).
 
     ![benutzerdefinierte Funktion](images/AzureLabs-Lab8-38.png)
 
@@ -403,7 +403,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
     ![Link "http Put"](images/AzureLabs-Lab8-39.png)
 
     > [!IMPORTANT]
-    > Möglicherweise müssen Sie nach unten auf der Seite einen Bildlauf durchführen (dieses Bild sieht möglicherweise nicht genau aus, wenn Aktualisierungen des Azure-Portals stattfinden), suchen Sie jedoch nach einem Element mit dem Namen " *http Put* ".
+    > Möglicherweise müssen Sie nach unten auf der Seite einen Bildlauf durchführen (dieses Bild sieht möglicherweise nicht genau aus, wenn Aktualisierungen des Azure-Portals stattfinden), suchen Sie jedoch nach einem Element mit dem Namen " *http Put*".
 
 14. Das Fenster **http Put** wird angezeigt, in dem Sie die Funktion konfigurieren müssen (siehe unten für Image).
 
@@ -490,15 +490,15 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
     ```
 
     > [!NOTE]
-    > Mithilfe der enthaltenen Bibliotheken erhält die Funktion den Namen und den Speicherort des Objekts, das in der Unity-Szene verschoben wurde (als c#-Objekt namens **unitygameobject** ). Dieses Objekt wird dann verwendet, um die Objekt Parameter in der erstellten Tabelle zu aktualisieren. Danach ruft die Funktion den erstellten Notification Hub-Dienst auf, der alle abonnierten Anwendungen benachrichtigt.
+    > Mithilfe der enthaltenen Bibliotheken erhält die Funktion den Namen und den Speicherort des Objekts, das in der Unity-Szene verschoben wurde (als c#-Objekt namens **unitygameobject**). Dieses Objekt wird dann verwendet, um die Objekt Parameter in der erstellten Tabelle zu aktualisieren. Danach ruft die Funktion den erstellten Notification Hub-Dienst auf, der alle abonnierten Anwendungen benachrichtigt.
 
-18. Klicken Sie mit dem Code auf **Speichern** .
+18. Klicken Sie mit dem Code auf **Speichern**.
 
 19. Klicken Sie anschließend **\<** auf der rechten Seite der Seite auf das Symbol (Pfeil).
 
     ![Uploadpanel öffnen](images/AzureLabs-Lab8-43.png)
 
-20. Ein Panel wird von rechts nach rechts angezeigt. Klicken Sie in diesem Bereich auf **hochladen** , und ein Datei Browser wird angezeigt.
+20. Ein Panel wird von rechts nach rechts angezeigt. Klicken Sie in diesem Bereich auf **hochladen**, und ein Datei Browser wird angezeigt.
 
 21. Navigieren Sie zu, und klicken Sie **auf dieproject.jsfür** die Datei, die **Sie zuvor im** Editor erstellt haben, und klicken Sie dann auf die Schaltfläche **Öffnen** . Diese Datei definiert die Bibliotheken, die von ihrer Funktion verwendet werden.
 
@@ -554,15 +554,15 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
 27. Sie bemerken möglicherweise, dass die Eingabeparameter, die Sie gerade eingefügt haben, nicht mit den Tabellen-und Speicher Details identisch sind und daher mit ihren Informationen aktualisiert werden müssen. Gehen Sie **hier nicht** wie folgt vor. Klicken Sie einfach auf den Link **Standard-Editor** in der oberen rechten Ecke der Seite, um zurückzukehren.
 
-28. Klicken Sie im **Standard-Editor** unter **Eingaben** auf **Azure Table Storage (Tabelle)** . 
+28. Klicken Sie im **Standard-Editor** unter **Eingaben** auf **Azure Table Storage (Tabelle)**. 
     
     ![Tabellen Eingaben](images/AzureLabs-Lab8-47-5.png)
 
 29. Stellen Sie sicher, dass die folgenden Informationen mit **ihren** Informationen identisch sind, da Sie unterschiedlich sein können (es gibt eine Abbildung unterhalb der folgenden Schritte):
 
-    1.  **Tabellenname** : der Name der Tabelle, die Sie im Azure Storage Tabellen Dienst erstellt haben.
+    1.  **Tabellenname**: der Name der Tabelle, die Sie im Azure Storage Tabellen Dienst erstellt haben.
 
-    2.  **Speicherkonto Verbindung:** klicken Sie auf **neu** , das neben dem Dropdown Menü angezeigt wird, und rechts neben dem Fenster wird ein Panel angezeigt.
+    2.  **Speicherkonto Verbindung:** klicken Sie auf **neu**, das neben dem Dropdown Menü angezeigt wird, und rechts neben dem Fenster wird ein Panel angezeigt.
 
         ![neuer Speicher](images/AzureLabs-Lab8-48.png)
 
@@ -578,9 +578,9 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
 30. Klicken Sie anschließend unter **Ausgaben** auf **Azure Notification Hub (Benachrichtigung)** . Stellen Sie sicher, dass die folgenden Informationen mit **ihren** Informationen übereinstimmen, da Sie unterschiedlich sein können (es gibt eine Abbildung unterhalb der folgenden Schritte):
 
-    1.  **Notification Hub-Name** : Dies ist der Name der **Notification Hub** -Dienst Instanz, die Sie zuvor erstellt haben.
+    1.  **Notification Hub-Name**: Dies ist der Name der **Notification Hub** -Dienst Instanz, die Sie zuvor erstellt haben.
 
-    2.  **Notification Hubs-Namespace Verbindung** : Klicken Sie auf **neu** , das neben dem Dropdown Menü angezeigt wird.
+    2.  **Notification Hubs-Namespace Verbindung**: Klicken Sie auf **neu**, das neben dem Dropdown Menü angezeigt wird.
 
         ![Ausgaben überprüfen](images/AzureLabs-Lab8-50.png)
 
@@ -601,7 +601,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
 ![Abgeschlossene Ausgaben](images/AzureLabs-Lab8-50.png)
 
-32. An diesem Punkt sollten Sie die Funktion testen, um sicherzustellen, dass Sie funktioniert. Dazu ist Folgendes erforderlich: 
+32. An diesem Punkt sollten Sie die Funktion testen, um sicherzustellen, dass Sie funktioniert. Gehen Sie dazu wie folgt vor: 
 
     1. Navigieren Sie noch einmal zur funktionsseite:
 
@@ -631,7 +631,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
         ![Abgeschlossene Ausgaben](images/AzureLabs-Lab8-50-3.png)
 
     > [!WARNING]
-    > Wenn der obige Test fehlschlägt, müssen Sie überprüfen, ob Sie die obigen Schritte genau befolgt haben. Dies gilt insbesondere für die Einstellungen im Bereich **integrieren** . 
+    > Wenn der obige Test fehlschlägt, müssen Sie überprüfen, ob Sie die obigen Schritte genau befolgt haben. Dies gilt insbesondere für die Einstellungen im Bereich **integrieren**. 
 
 ## <a name="chapter-7---set-up-desktop-unity-project"></a>Kapitel 7: Einrichten eines Desktop-Unity-Projekts
 
@@ -645,15 +645,15 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 > [!NOTE] 
 > Für diesen Kurs benötigen Sie **keine** Bewegungs Controller. Wenn Sie Unterstützung beim Einrichten des immersiven Headsets benötigen, befolgen Sie diesen [Link zum Einrichten von Windows Mixed Reality](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality).
 
-1.  Öffnen Sie **Unity** , und klicken Sie auf **neu** .
+1.  Öffnen Sie **Unity** , und klicken Sie auf **neu**.
 
     ![neues Unity-Projekt](images/AzureLabs-Lab8-52.png)
 
-2.  Sie müssen einen Unity-Projektnamen angeben und **unitydesktopnotifhub** einfügen. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen** .
+2.  Sie müssen einen Unity-Projektnamen angeben und **unitydesktopnotifhub** einfügen. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
 
     ![Erstellen des Projekts](images/AzureLabs-Lab8-53.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools** . Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017** . Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Festlegen externer vs-Tools](images/AzureLabs-Lab8-54.png)
 
@@ -685,7 +685,7 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
             ![neuer Szenen Ordner](images/AzureLabs-Lab8-57.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld **Dateiname:** Text den Text **NH \_ Desktop \_ Scene** ein, und klicken Sie dann auf **Speichern** .
+        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld **Dateiname:** Text den Text **NH \_ Desktop \_ Scene** ein, und klicken Sie dann auf **Speichern**.
 
             ![neue NH_Desktop_Scene](images/AzureLabs-Lab8-58.png)
 
@@ -713,9 +713,9 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
 8.  Zurück in **Buildeinstellungen** : *Unity-C- \# Projekte* sind nicht mehr abgeblendet. Aktivieren Sie das Kontrollkästchen neben this.
 
-9.  Schließen Sie das Fenster **Buildeinstellungen** .
+9.  Schließen Sie das Fenster **Buildeinstellungen**.
 
-10. Speichern Sie Ihre Szene-und Projekt **Datei** , und speichern Sie das Projekt in der Szene  >  **Save Scene / File**  >  **Save Project** .
+10. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >  **Save Scene / File**  >  **Save Project**.
 
     > [!IMPORTANT]
     > Wenn Sie die *Unity-Setup* Komponente für dieses Projekt (Desktop-App) überspringen und direkt mit dem Code fortfahren möchten, können Sie [dieses. unitypackage herunterladen](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage), es als [**benutzerdefiniertes Paket**](https://docs.unity3d.com/Manual/AssetPackages.html)in Ihr Projekt importieren und dann aus [Kapitel 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)fortfahren.  Sie müssen weiterhin die Skript Komponenten hinzufügen.
@@ -730,13 +730,13 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
 1.  Fügen Sie das **. unitypackage** zu Unity hinzu, indem Sie die Menüoption **Assets \> Import Package \> Custom Package** verwenden.
 
-2.  Im Feld " **Unity-Paket importieren** ", das angezeigt wird, können Sie unter * * *Plugin* \> * Storage * * * die Option Alles auswählen.  Deaktivieren Sie alles andere, da es für diesen Kurs nicht benötigt wird.
+2.  Im Feld " **Unity-Paket importieren** ", das angezeigt wird, können Sie unter * *_Plugin_ \> * Storage * * * die Option Alles auswählen.  Deaktivieren Sie alles andere, da es für diesen Kurs nicht benötigt wird.
 
     ![in Paket importieren](images/AzureLabs-Lab8-61.png)
 
-3.  Klicken Sie auf die Schaltfläche ***importieren*** , um dem Projekt die Elemente hinzuzufügen.
+3.  Klicken Sie auf die Schaltfläche **_importieren_* _, um die Elemente Ihrem Projekt hinzuzufügen.
 
-4.  Wechseln Sie in der Projektansicht **unter Plug** -in zum Ordner **Speicher** , und wählen Sie *nur* die folgenden Plug-ins aus:
+4.  Wechseln Sie in der Projektansicht unter Plug-in zum Ordner _ *Storage**, und wählen Sie *nur* die folgenden Plug- **ins aus:**
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -746,7 +746,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
 ![alle Plattformen deaktivieren](images/AzureLabs-Lab8-62.png)
 
-5.  Wenn *Sie diese speziellen* Plug-Ins **ausgewählt haben, deaktivieren Sie** **eine beliebige Plattform** **, deaktivieren Sie** **wsaplayer** , und klicken Sie auf **anwenden** .
+5.  Wenn *Sie diese speziellen* Plug-Ins **ausgewählt haben, deaktivieren Sie** **eine beliebige Plattform** **, deaktivieren Sie** **wsaplayer** , und klicken Sie auf **anwenden**.
 
     ![Platt Form-DLLs anwenden](images/AzureLabs-Lab8-63.png)
 
@@ -759,7 +759,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
         !["nicht verarbeiten" für DLLs festlegen](images/AzureLabs-Lab8-64.png)
 
-7.  Aktivieren Sie das Kontrollkästchen **nicht verarbeiten** unter **Platt Form Einstellungen** , und klicken Sie auf ***anwenden*** .
+7.  Aktivieren Sie das Kontrollkästchen **nicht verarbeiten** unter **Platt Form Einstellungen** , und klicken Sie auf **_anwenden_* _.
 
     ![keine Verarbeitung anwenden](images/AzureLabs-Lab8-65.png)
 
@@ -770,19 +770,19 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
 Sie müssen nun die Skripts erstellen, die den Code enthalten, um diese Anwendung auszuführen.
 
-Das erste Skript, das Sie erstellen müssen, ist " **tabletoiscene** ", das für Folgendes zuständig ist:
+Das erste Skript, das Sie erstellen müssen, ist _ * tabletoiszene * *, das für Folgendes zuständig ist:
 
 -   Lesen von Entitäten in der Azure-Tabelle.
 -   Bestimmen Sie anhand der Tabellendaten, welche Objekte zu erzeugen sind und an welcher Position.
 
-Das zweite Skript, das Sie erstellen müssen, ist **cloudscene** , das für Folgendes zuständig ist:
+Das zweite Skript, das Sie erstellen müssen, ist **cloudscene**, das für Folgendes zuständig ist:
 
 -   Registrieren des Linksklick Ereignisses, um dem Benutzer das Ziehen von Objekten in die Szene zu ermöglichen.
 -   Serialisieren der Objektdaten aus dieser Unity-Szene und Senden der Daten an den Azure-Funktionen-app.
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie im Projekt Panel mit der rechten Maustaste auf den Ordner **Asset** , und **Erstellen** Sie den  >  **Ordner** . Benennen Sie den Ordner mit **Skripts** .
+1.  Klicken Sie im Projekt Panel mit der rechten Maustaste auf den Ordner **Asset** , und **Erstellen** Sie den  >  **Ordner**. Benennen Sie den Ordner mit **Skripts**.
 
     ![Ordner für die Skripterstellung](images/AzureLabs-Lab8-66.png)
 
@@ -790,7 +790,7 @@ So erstellen Sie diese Klasse:
 
 2.  Doppelklicken Sie auf den soeben erstellten Ordner, um ihn zu öffnen.
 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript **tabledescene** .
+3.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript **tabledescene**.
 
     ![neues c#-Skript ](images/AzureLabs-Lab8-68.png)
      ![ Umbenennen von tableumscene](images/AzureLabs-Lab8-69.png)
@@ -955,13 +955,13 @@ So erstellen Sie diese Klasse:
 
 11. Klicken Sie im **Hierarchie** Panel auf die **Hauptkamera** , damit die Eigenschaften im **Inspektor** angezeigt werden.
 
-12. Wenn der Ordner **Scripts** geöffnet ist, wählen Sie die **tabletoscene** -Skriptdatei aus, und ziehen Sie Sie auf die **Hauptkamera** . Das Ergebnis sollte wie folgt lauten:
+12. Wenn der Ordner **Scripts** geöffnet ist, wählen Sie die **tabletoscene** -Skriptdatei aus, und ziehen Sie Sie auf die **Hauptkamera**. Das Ergebnis sollte wie folgt lauten:
 
     ![Skript zur Hauptkamera hinzufügen](images/AzureLabs-Lab8-71.png)
 
 ## <a name="chapter-10---create-the-cloudscene-class-in-the-desktop-unity-project"></a>Kapitel 10: Erstellen der cloudscene-Klasse im Desktop Unity-Projekt
 
-Das zweite Skript, das Sie erstellen müssen, ist **cloudscene** , das für Folgendes zuständig ist:
+Das zweite Skript, das Sie erstellen müssen, ist **cloudscene**, das für Folgendes zuständig ist:
 
 -   Registrieren des Linksklick Ereignisses, um dem Benutzer das Ziehen von Objekten in die Szene zu ermöglichen.
 
@@ -969,7 +969,7 @@ Das zweite Skript, das Sie erstellen müssen, ist **cloudscene** , das für Folg
 
 So erstellen Sie das zweite Skript:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Erstellen** , **C- \# Skript** Benennen des Skripts für **cloudscene**
+1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Erstellen**, **C- \# Skript** Benennen des Skripts für **cloudscene**
     
     ![neues c#-Skript ](images/AzureLabs-Lab8-72.png)
      ![ Umbenennen von cloudscene](images/AzureLabs-Lab8-73.png)
@@ -1040,7 +1040,7 @@ So erstellen Sie das zweite Skript:
         }
     ```
 
-6.  Fügen Sie in der **Update ()** -Methode den folgenden Code hinzu, der die Maus Eingaben und den Zieh Vorgang erkennt, die wiederum gameobjects in der Szene verschieben. Wenn der Benutzer ein Objekt gezogen und abgelegt hat, übergibt es den Namen und die Koordinaten des Objekts an die Methode **updatecloudscene ()** , die den Azure Funktionen-App-Dienst aufruft, der die Azure-Tabelle aktualisiert und die Benachrichtigung auslöst.
+6.  Fügen Sie in der **Update ()** -Methode den folgenden Code hinzu, der die Maus Eingaben und den Zieh Vorgang erkennt, die wiederum gameobjects in der Szene verschieben. Wenn der Benutzer ein Objekt gezogen und abgelegt hat, übergibt es den Namen und die Koordinaten des Objekts an die Methode **updatecloudscene ()**, die den Azure Funktionen-App-Dienst aufruft, der die Azure-Tabelle aktualisiert und die Benachrichtigung auslöst.
 
     ```csharp
         /// <summary>
@@ -1126,11 +1126,11 @@ So erstellen Sie das zweite Skript:
 
 8.  Speichern des Codes und zurückkehren zu Unity
 
-9.  Ziehen Sie das **cloudscene** -Skript auf die **Hauptkamera** . 
+9.  Ziehen Sie das **cloudscene** -Skript auf die **Hauptkamera**. 
 
     1. Klicken Sie im **Hierarchie** Panel auf die **Hauptkamera** , damit die Eigenschaften im **Inspektor** angezeigt werden. 
 
-    2. Wenn der Ordner **Scripts** geöffnet ist, wählen Sie das **cloudscene** -Skript aus, und ziehen Sie es auf die **Hauptkamera** . Das Ergebnis sollte wie folgt lauten:
+    2. Wenn der Ordner **Scripts** geöffnet ist, wählen Sie das **cloudscene** -Skript aus, und ziehen Sie es auf die **Hauptkamera**. Das Ergebnis sollte wie folgt lauten:
 
         > ![Ziehen Sie das cloudskript auf die Hauptkamera](images/AzureLabs-Lab8-75.png)
 
@@ -1138,21 +1138,21 @@ So erstellen Sie das zweite Skript:
 
 Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, wurde nun abgeschlossen.
 
-1.  Navigieren Sie zu **Buildeinstellungen** ( **dateibuildeinstellungen**  >  **Build Settings** ).
+1.  Navigieren Sie zu **Buildeinstellungen** (**dateibuildeinstellungen**  >  **Build Settings**).
 
-2.  Klicken Sie im Fenster " **Buildeinstellungen** " auf " **Erstellen** ".
+2.  Klicken Sie im Fenster " **Buildeinstellungen** " auf " **Erstellen**".
 
     ![Projekt erstellen](images/AzureLabs-Lab8-76.png)
 
-3.  Ein **Datei-Explorer** -Fenster wird angezeigt, in dem Sie aufgefordert werden, einen Speicherort zu erstellen. Erstellen Sie einen neuen Ordner (indem Sie in der oberen linken Ecke auf **neuer Ordner** klicken), und nennen Sie ihn " **BUILDS** ".
+3.  Ein **Datei-Explorer** -Fenster wird angezeigt, in dem Sie aufgefordert werden, einen Speicherort zu erstellen. Erstellen Sie einen neuen Ordner (indem Sie in der oberen linken Ecke auf **neuer Ordner** klicken), und nennen Sie ihn " **BUILDS**".
 
     ![neuer Ordner für Build](images/AzureLabs-Lab8-77.png)
 
-    1.  Öffnen Sie den Ordner neue **BUILDS** , und erstellen Sie einen weiteren Ordner (mehr als einen **neuen Ordner** ), und nennen Sie ihn " **NH \_ Desktop \_ App** ".
+    1.  Öffnen Sie den Ordner neue **BUILDS** , und erstellen Sie einen weiteren Ordner (mehr als einen **neuen Ordner** ), und nennen Sie ihn " **NH \_ Desktop \_ App**".
 
         ![Ordnername NH_Desktop_App](images/AzureLabs-Lab8-78.png)
 
-    2.  Wenn die **NH \_ -Desktop- \_ App** ausgewählt ist. Klicken Sie auf **Ordner auswählen** . Es dauert eine Minute, bis das Projekt erstellt wird.
+    2.  Wenn die **NH \_ -Desktop- \_ App** ausgewählt ist. Klicken Sie auf **Ordner auswählen**. Es dauert eine Minute, bis das Projekt erstellt wird.
 
 4.  Im folgenden Build wird der **Datei-Explorer** angezeigt, in dem der Speicherort des neuen Projekts angezeigt wird. Es muss jedoch nicht geöffnet werden, da Sie das andere Unity-Projekt zunächst in den nächsten Kapiteln erstellen müssen.
 
@@ -1161,19 +1161,19 @@ Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, wurde nun 
 
 Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemischter Realität und eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie **Unity** , und klicken Sie auf **neu** .
+1.  Öffnen Sie **Unity** , und klicken Sie auf **neu**.
 
     ![neues Unity-Projekt](images/AzureLabs-Lab8-79.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben und **unitymrnotifhub** einfügen. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen** .
+2.  Sie müssen nun einen Unity-Projektnamen angeben und **unitymrnotifhub** einfügen. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
 
     ![Name unitymrnotishub](images/AzureLabs-Lab8-80.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools** . Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017** . Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![externen Editor auf vs festlegen](images/AzureLabs-Lab8-81.png)
 
-4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >  **Build Settings** , und schalten Sie die Plattform auf **universelle Windows-Plattform** , indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >  **Build Settings** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
     ![Plattformen zu UWP wechseln](images/AzureLabs-Lab8-82.png)
 
@@ -1201,7 +1201,7 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
             ![neuer Szenen Ordner](images/AzureLabs-Lab8-84.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld **Dateiname:** Text den Text **NH \_ Mr \_ Scene** ein, und klicken Sie dann auf **Speichern** .
+        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld **Dateiname:** Text den Text **NH \_ Mr \_ Scene** ein, und klicken Sie dann auf **Speichern**.
 
             ![neue Szene-NH_MR_Scene](images/AzureLabs-Lab8-85.png)
 
@@ -1216,12 +1216,12 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
     1.  Auf der Registerkarte **andere Einstellungen** :
 
         1.  Die **Skript Lauf Zeit Version** sollte **experimentell** sein (.NET 4,6-Entsprechung).
-        2.  **Skript** -Back-End sollte ***.net*** sein
-        3.  **API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
+        2.  Skripts für die **Skript** Erstellung sollten **_.net_* _
+        3.  _ *API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
 
             ![API-Kompatibilität](images/AzureLabs-Lab8-87.png)
 
-    2.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen** ), **unterstützt Tick Virtual Reality** , wird sichergestellt, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    2.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, wird sichergestellt, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
 
         ![Aktualisieren der XR-Einstellungen](images/AzureLabs-Lab8-88.png)        
 
@@ -1231,11 +1231,11 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
             ![Internet Client Tick](images/AzureLabs-Lab8-89.png)
 
-8.  Zurück in den **Buildeinstellungen** : **Unity c#-Projekte** sind nicht mehr abgeblendet: Aktivieren Sie das Kontrollkästchen neben this.
+8.  Zurück in den **Buildeinstellungen**: **Unity c#-Projekte** sind nicht mehr abgeblendet: Aktivieren Sie das Kontrollkästchen neben this.
 
 9.  Nachdem Sie diese Änderungen vorgenommen haben, schließen Sie das Fenster Buildeinstellungen.
 
-10. Speichern Sie Ihre Szene-und Projekt **Datei** , und speichern Sie das Projekt in der Szene  >  **Save Scene / File**  >  **Save Project** .
+10. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >  **Save Scene / File**  >  **Save Project**.
 
     > [!IMPORTANT]
     > Wenn Sie die *Unity-Setup* Komponente für dieses Projekt (Mixed Reality-APP) überspringen und direkt mit dem Code fortfahren möchten, können Sie [dieses. unitypackage herunterladen](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage), es als [**benutzerdefiniertes Paket**](https://docs.unity3d.com/Manual/AssetPackages.html)in das Projekt importieren und dann aus [Kapitel 14](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project)fortfahren. Sie müssen weiterhin die Skript Komponenten hinzufügen.
@@ -1249,7 +1249,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
 1.  Fügen Sie das von oben heruntergeladene. unitypackage mithilfe der Menüoption **Assets**  >  **Import Package**  >  **Custom Package** in Unity hinzu.
 
-2.  Im Feld " **Unity-Paket importieren** ", das angezeigt wird, können Sie unter **Plug** -in-  >  **Speicher** alles auswählen.
+2.  Im Feld " **Unity-Paket importieren** ", das angezeigt wird, können Sie unter **Plug**-in-  >  **Speicher** alles auswählen.
 
     ![Paket importieren](images/AzureLabs-Lab8-90.png)
 
@@ -1265,7 +1265,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
     ![Plug-ins auswählen](images/AzureLabs-Lab8-91.png)
 
-5.  Wenn *Sie diese speziellen* Plug-Ins **ausgewählt haben, deaktivieren Sie** **eine beliebige Plattform** **, deaktivieren Sie** **wsaplayer** , und klicken Sie auf **anwenden** .
+5.  Wenn *Sie diese speziellen* Plug-Ins **ausgewählt haben, deaktivieren Sie** **eine beliebige Plattform** **, deaktivieren Sie** **wsaplayer** , und klicken Sie auf **anwenden**.
 
     ![Platt Formänderungen anwenden](images/AzureLabs-Lab8-92.png)
 
@@ -1278,7 +1278,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
         ![Datendienst Client auswählen](images/AzureLabs-Lab8-93.png)
 
-7.  Aktivieren Sie das Kontrollkästchen **nicht verarbeiten** unter **Platt Form Einstellungen** , und klicken Sie auf **anwenden** .
+7.  Aktivieren Sie das Kontrollkästchen **nicht verarbeiten** unter **Platt Form Einstellungen** , und klicken Sie auf **anwenden**.
 
     ![nicht verarbeiten](images/AzureLabs-Lab8-94.png)
 
@@ -1293,7 +1293,7 @@ Nachdem Sie dieses Kapitel abgeschlossen haben, wird diese Klasse in beiden **Un
 
 ## <a name="chapter-15---creating-the-notificationreceiver-class-in-the-mixed-reality-unity-project"></a>Kapitel 15: Erstellen der notificationreceiver-Klasse im Mixed Reality Unity-Projekt
 
-Das zweite Skript, das Sie erstellen müssen, ist " **notificationreceiver** ", das für Folgendes zuständig ist:
+Das zweite Skript, das Sie erstellen müssen, ist " **notificationreceiver**", das für Folgendes zuständig ist:
 
 -   Registrieren der APP beim Notification Hub bei der Initialisierung.
 -   Lauschen auf Benachrichtigungen, die vom Notification Hub stammen.
@@ -1302,7 +1302,7 @@ Das zweite Skript, das Sie erstellen müssen, ist " **notificationreceiver** ", 
 
 So erstellen Sie das **notificationreceiver** -Skript:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Erstellen** , **C- \# Skript** Benennen Sie das Skript mit **notificationreceiver** .
+1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Erstellen**, **C- \# Skript** Benennen Sie das Skript mit **notificationreceiver**.
 
     ![neuen c#-Skript ](images/AzureLabs-Lab8-95.png)
      ![ Namen mit notificationreceiver erstellen](images/AzureLabs-Lab8-96.png)
@@ -1412,7 +1412,7 @@ So erstellen Sie das **notificationreceiver** -Skript:
         }
     ```
 
-8.  Mit der folgenden Methode, **initnotificationasync ()** , wird die Anwendung bei der Initialisierung beim Notification Hub-Dienst registriert. Der Code wird auskommentiert, da Unity das Projekt nicht erstellen kann. Wenn Sie das nuget-Paket Azure Messaging in Visual Studio importieren, werden die Kommentare entfernt.
+8.  Mit der folgenden Methode, **initnotificationasync ()**, wird die Anwendung bei der Initialisierung beim Notification Hub-Dienst registriert. Der Code wird auskommentiert, da Unity das Projekt nicht erstellen kann. Wenn Sie das nuget-Paket Azure Messaging in Visual Studio importieren, werden die Kommentare entfernt.
 
     ```csharp
         /// <summary>
@@ -1435,7 +1435,7 @@ So erstellen Sie das **notificationreceiver** -Skript:
         }
     ```
 
-9.  Der folgende Handler, **Channel \_ pushnotificationsend ()** , wird jedes Mal ausgelöst, wenn eine Benachrichtigung empfangen wird. Die Benachrichtigung wird deserialisiert. dabei handelt es sich um die Azure-Tabellen Entität, die in die Desktop Anwendung verschoben wurde. Anschließend wird das zugehörige gameobject in der Mr-Szene an dieselbe Position verschoben. 
+9.  Der folgende Handler, **Channel \_ pushnotificationsend ()**, wird jedes Mal ausgelöst, wenn eine Benachrichtigung empfangen wird. Die Benachrichtigung wird deserialisiert. dabei handelt es sich um die Azure-Tabellen Entität, die in die Desktop Anwendung verschoben wurde. Anschließend wird das zugehörige gameobject in der Mr-Szene an dieselbe Position verschoben. 
     
     > [!IMPORTANT]
     > Der Code wird auskommentiert, weil der Code auf die Azure Messaging-Bibliothek verweist, die Sie nach der Erstellung des Unity-Projekts mit dem nuget-Paket-Manager in Visual Studio hinzufügen werden. Daher kann das Unity-Projekt nicht erstellt werden, es sei denn, es ist auskommentiert. Wenn Sie Ihr Projekt erstellen und dann zu Unity zurückkehren möchten, müssen Sie den Code **erneut kommentieren** .
@@ -1472,7 +1472,7 @@ So erstellen Sie das **notificationreceiver** -Skript:
 
 11. Klicken Sie im **Hierarchie** Panel auf die **Hauptkamera** , damit die Eigenschaften im **Inspektor** angezeigt werden.
 
-12. Wenn der Ordner **Scripts** geöffnet ist, wählen Sie das Skript **notificationreceiver** aus, und ziehen Sie es auf die **Hauptkamera** . Das Ergebnis sollte wie folgt lauten:
+12. Wenn der Ordner **Scripts** geöffnet ist, wählen Sie das Skript **notificationreceiver** aus, und ziehen Sie es auf die **Hauptkamera**. Das Ergebnis sollte wie folgt lauten:
 
     ![Benachrichtigungs Empfänger Skript auf Kamera ziehen](images/AzureLabs-Lab8-98.png)
 
@@ -1487,21 +1487,21 @@ Dieses Kapitel ist mit dem Buildprozess für das vorherige Projekt identisch. Al
 
 1.  Navigieren Sie zu **Buildeinstellungen** ( **dateibuildeinstellungen**  >  **Build Settings** ).
 
-2.  Vergewissern Sie sich, dass im Menü " **Buildeinstellungen** " die Option **Unity c#-Projekte** * getickt ist (sodass Sie die Skripts in diesem Projekt nach dem erstellen bearbeiten können).
+2.  Stellen Sie im Menü **Buildeinstellungen** sicher, dass **Unity c#-Projekte** _ getickt ist (sodass Sie die Skripts in diesem Projekt nach dem Build bearbeiten können).
 
-3.  Klicken Sie anschließend auf **Erstellen** .
+3.  Klicken Sie anschließend auf _ * Build * *.
 
     ![Projekt erstellen](images/AzureLabs-Lab8-99.png)
 
-4.  Ein **Datei-Explorer** -Fenster wird angezeigt, in dem Sie aufgefordert werden, einen Speicherort zu erstellen. Erstellen Sie einen neuen Ordner (indem Sie in der oberen linken Ecke auf **neuer Ordner** klicken), und nennen Sie ihn " **BUILDS** ".
+4.  Ein **Datei-Explorer** -Fenster wird angezeigt, in dem Sie aufgefordert werden, einen Speicherort zu erstellen. Erstellen Sie einen neuen Ordner (indem Sie in der oberen linken Ecke auf **neuer Ordner** klicken), und nennen Sie ihn " **BUILDS**".
 
     ![Ordner "Builds erstellen"](images/AzureLabs-Lab8-100.png)
 
-    1.  Öffnen Sie den Ordner neue **BUILDS** , und erstellen Sie einen weiteren Ordner (mehr als einen **neuen Ordner** ), und nennen Sie ihn " **NH \_ Mr \_ App** ".
+    1.  Öffnen Sie den Ordner neue **BUILDS** , und erstellen Sie einen weiteren Ordner (mehr als einen **neuen Ordner** ), und nennen Sie ihn " **NH \_ Mr \_ App**".
 
         ![NH_MR_Apps Ordner erstellen](images/AzureLabs-Lab8-101.png)
 
-    2.  Wenn die **\_ \_ app "NH Mr** " ausgewählt ist. Klicken Sie auf **Ordner auswählen** . Es dauert eine Minute, bis das Projekt erstellt wird.
+    2.  Wenn die **\_ \_ app "NH Mr** " ausgewählt ist. Klicken Sie auf **Ordner auswählen**. Es dauert eine Minute, bis das Projekt erstellt wird.
 
 5.  Nach dem Build wird ein **Datei-Explorer** -Fenster am Speicherort des neuen Projekts geöffnet.
 
@@ -1519,19 +1519,19 @@ So importieren Sie das nuget-Paket:
 
 1.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf Ihre Projekt Mappe.
 
-2.  Klicken Sie auf **nuget-Pakete verwalten** .
+2.  Klicken Sie auf **nuget-Pakete verwalten**.
 
     ![nuget-Manager öffnen](images/AzureLabs-Lab8-102.png)
 
-3.  Wählen Sie die Registerkarte ***Durchsuchen*** aus, und suchen Sie nach **WindowsAzure. Messaging. Managed** .
+3.  Wählen Sie die **Registerkarte _Durchsuchen_*_ aus, und suchen* Sie nach _ WindowsAzure. Messaging. Managed**.
 
     ![Windows Azure-Messaging Paket suchen](images/AzureLabs-Lab8-103.png)
 
-4.  Wählen Sie das Ergebnis aus (wie unten gezeigt), und aktivieren Sie im Fenster rechts das Kontrollkästchen neben **Project** . Dadurch wird ein Tick in das Kontrollkästchen neben **Project** und das Kontrollkästchen neben dem Projekt **Assembly-CSharp** und **unitymrnotifhub** angezeigt.
+4.  Wählen Sie das Ergebnis aus (wie unten gezeigt), und aktivieren Sie im Fenster rechts das Kontrollkästchen neben **Project**. Dadurch wird ein Tick in das Kontrollkästchen neben **Project** und das Kontrollkästchen neben dem Projekt **Assembly-CSharp** und **unitymrnotifhub** angezeigt.
 
     ![alle Projekte über tacken](images/AzureLabs-Lab8-104.png)
 
-5.  Die ursprünglich bereitgestellte Version ist **möglicherweise nicht** kompatibel mit diesem Projekt. Klicken Sie daher auf das Dropdown Menü neben **Version** , und klicken Sie auf **Version 0.1.7.9** und dann auf **Installieren** .
+5.  Die ursprünglich bereitgestellte Version ist **möglicherweise nicht** kompatibel mit diesem Projekt. Klicken Sie daher auf das Dropdown Menü neben **Version**, und klicken Sie auf **Version 0.1.7.9** und dann auf **Installieren**.
 
 6.  Die Installation des nuget-Pakets ist nun abgeschlossen. Suchen Sie den kommentierten Code, den Sie in die **notificationreceiver** -Klasse eingegeben haben, und entfernen Sie die Kommentare.
 
@@ -1613,21 +1613,21 @@ Nun müssen Sie das **gemischte Reality** -Projekt der Store-App zuordnen, die S
 
 1.  Öffnen Sie die Projektmappe.
 
-2.  Klicken Sie mit der rechten Maustaste auf das UWP-App-Projekt im Projektmappen-Explorer Panel, und wählen Sie dann die Option zum **Speichern** und **Zuordnen der APP zum Store..** ..
+2.  Klicken Sie mit der rechten Maustaste auf das UWP-App-Projekt im Projektmappen-Explorer Panel, und wählen Sie dann die Option zum **Speichern** und **Zuordnen der APP zum Store..**..
 
     ![Store-Zuordnung öffnen](images/AzureLabs-Lab8-105.png)
 
-3.  Es wird ein neues Fenster **mit dem Namen "App dem Windows Store zuordnen** " angezeigt. Klicken Sie auf **Weiter** .
+3.  Es wird ein neues Fenster **mit dem Namen "App dem Windows Store zuordnen**" angezeigt. Klicken Sie auf **Weiter**.
 
     ![zum nächsten Bildschirm wechseln](images/AzureLabs-Lab8-106.png)
 
 4.  Es werden alle Anwendungen geladen, die dem Konto zugeordnet sind, das Sie angemeldet haben. Wenn Sie nicht bei Ihrem Konto angemeldet sind, können Sie sich auf dieser Seite **Anmelden** .
 
-5.  Suchen Sie den **Namen der Store-App** , den Sie zu Beginn dieses Tutorials erstellt haben, und wählen Sie ihn aus. Klicken Sie dann auf **Weiter** .
+5.  Suchen Sie den **Namen der Store-App** , den Sie zu Beginn dieses Tutorials erstellt haben, und wählen Sie ihn aus. Klicken Sie dann auf **Weiter**.
 
     ![Suchen und Auswählen Ihres Speicher namens](images/AzureLabs-Lab8-107.png)
 
-6.  Klicken Sie auf **zuordnen** .
+6.  Klicken Sie auf **zuordnen**.
 
     ![Zuordnen der APP](images/AzureLabs-Lab8-108.png)
 
@@ -1641,11 +1641,11 @@ Die immersive Headset-App wartet auf den Empfang von Änderungen an der Szene (P
 
 So stellen Sie die **unitymrnotifhub** -App auf Ihrem lokalen Computer bereit:
 
-1.  Öffnen Sie die Projektmappendatei Ihrer **unitymrnotilohub** -app in **Visual Studio 2017** .
+1.  Öffnen Sie die Projektmappendatei Ihrer **unitymrnotilohub** -app in **Visual Studio 2017**.
 
 2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen** .
+3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
 
     ![Projekt Konfiguration festlegen](images/AzureLabs-Lab8-109.png)
 
@@ -1655,11 +1655,11 @@ So stellen Sie die **unitymrnotifhub** -App auf Ihrem lokalen Computer bereit:
 
 So stellen Sie die **unitydesktopnotifhub** -App auf dem lokalen Computer bereit:
 
-1.  Öffnen Sie die **Projektmappendatei ihrer unitydesktopnotilohub** -app in **Visual Studio 2017** .
+1.  Öffnen Sie die **Projektmappendatei ihrer unitydesktopnotilohub** -app in **Visual Studio 2017**.
 
 2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen** .
+3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
 
     ![Projekt Konfiguration festlegen](images/AzureLabs-Lab8-110.png)
 

@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Anleitungen, holograms, Spieleentwicklung
-ms.openlocfilehash: 5bc120f802c2160282befd1ce6cb8025be21cbaa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Handbücher, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678962"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679209"
 ---
 # <a name="hand-tracking-in-unreal"></a>Handtracking in Unreal
 
@@ -196,14 +196,14 @@ Sie können einen Hand Strahl als Zeigegerät sowohl in C++ als auch in Blueprin
 
 Es ist wichtig zu erwähnen, dass die Ergebnisse aller Funktionen jeden Frame ändern, dass Sie alle aufgerufen werden. Weitere Informationen zu reinen und impformen oder Aufruf baren Funktionen finden Sie in der Blueprint-Benutzer-GUID für [Funktionen](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure) .
 
-Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter **Windows Mixed Reality HMD** :
+Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter **Windows Mixed Reality HMD**:
 
 ![Hand Strahlen-BP](images/unreal/hand-rays-bp.png)
  
 Wenn Sie in C++ auf Sie zugreifen möchten, schließen Sie am `WindowsMixedRealityFunctionLibrary.h` Anfang der aufrufenden Codedatei ein.
 
 ### <a name="enum"></a>Enumeration
-Sie haben auch Zugriff auf die Eingabe Fälle unter **ehmdinputcontrollerbuttons** , die in Blaupausen verwendet werden können:
+Sie haben auch Zugriff auf die Eingabe Fälle unter **ehmdinputcontrollerbuttons**, die in Blaupausen verwendet werden können:
 
 ![Eingabe Controller-Schaltflächen](images/unreal/input-controller-buttons.png)
 
@@ -405,16 +405,16 @@ const FKey FSpatialInputKeys::RightNavigationYGesture(RightNavigationYGestureNam
 const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureName);
 ```
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie die unechte Development Checkpoint Journey befolgen, sind Sie in der Mitte, dass Sie die mrtk Core-Bausteine erkunden. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie dem Weg der Unreal-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Lokale Raumanker](unreal-spatial-anchors.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [HoloLens-Kamera](unreal-hololens-camera.md)
 
-Sie können jederzeit jederzeit zu den [unechten Entwicklungs Prüfpunkten](unreal-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#2-core-building-blocks) zurückkehren.

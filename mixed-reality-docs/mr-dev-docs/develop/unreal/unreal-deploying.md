@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Bereitstellung auf Gerät, PC, Dokumentation
+keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684790"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679119"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Bereitstellen auf Gerät in Unreal
 
@@ -30,7 +30,7 @@ Für beide Optionen müssen Sie die hololens einrichten, damit das [Geräte Port
 
 ![Startmenü Optionen](images/unreal/launch-dropdown.png)
 
-2. Öffnen Sie die **Geräte-Manager** . Beachten Sie, dass Ihre hololens nicht automatisch in der Geräteliste angezeigt werden.
+2. Öffnen Sie die **Geräte-Manager**. Beachten Sie, dass Ihre hololens nicht automatisch in der Geräteliste angezeigt werden.
 
 3. Erweitern Sie den Abschnitt **nicht aufgelisteten Gerät hinzufügen** .
 
@@ -52,11 +52,11 @@ Für beide Optionen müssen Sie die hololens einrichten, damit das [Geräte Port
 
 Ausführliche Anweisungen zum [Verpacken und Bereitstellen einer APP](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal) finden Sie im letzten Abschnitt der Reihe "Getting Started with Unreal Tutorial".
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
 Wenn Sie die unechte Development Checkpoint Journey befolgen, befinden wir uns in der Mitte der Bereitstellungs Phase. Von hier aus können Sie mit dem Hinzufügen erweiterter Dienste fortfahren:
 
 > [!div class="nextstepaction"]
 > [Erweiterte Dienste](unreal-development-overview.md#5-adding-services)
 
-Sie können jederzeit jederzeit zu den [unechten Entwicklungs Prüfpunkten](unreal-development-overview.md#4-deploying-to-a-device) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#4-deploying-to-a-device) zurückkehren.

@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417835"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631518"
 ---
 # <a name="get-started-with-mixed-reality"></a>Erste Schritte mit Mixed Reality
 
@@ -143,11 +143,6 @@ Wenn Sie wissen möchten, wie die unterschiedliche/n Hardware und Dienste von Mi
 
 <br>
 
-
 >[!IMPORTANT]
 >Alle Mixed Reality-Entwicklungsmaterialien werden auf dieser Website nur zu Ihrer Information zur Verfügung gestellt. Deine Anwendung, deren Nutzung sowie deren Auswirkungen auf die Endbenutzer liegen in deiner alleinigen Verantwortung als Anwendungsentwickler. Du musst sicherstellen, dass die Anwendung keine Unannehmlichkeiten, Verletzungen oder sonstigen Schäden beim Endbenutzer verursacht, und entsprechende Warnungen und Haftungsausschlüsse einschließen. Sie müssen jederzeit entsprechende geeignete Schritte bei der Entwicklung und Veröffentlichung Ihrer Anwendung unternehmen, um sicherzustellen, dass Ihre Anwendung sicher ist und Sie alle Verpflichtungen aus Ihrer mit Microsoft geschlossenen [Vereinbarung für App-Entwickler](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) erfüllen.
 
-## <a name="see-also"></a>Weitere Informationen
-* [Immersives Headset – Hardwaredetails](immersive-headset-hardware-details.md)
-* [Communityressourcen](community.md)
-* [VR-Handbuch für Enthusiasten](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

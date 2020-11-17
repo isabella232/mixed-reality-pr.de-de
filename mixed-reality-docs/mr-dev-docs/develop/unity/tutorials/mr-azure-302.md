@@ -1,17 +1,17 @@
 ---
-title: Mr und Azure 302-Maschinelles Sehen
+title: 'MR und Azure 302: Maschinelles Sehen'
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie visuelle Inhalte in einem bereitgestellten Image mithilfe von Azure Maschinelles sehen in einer Mixed Reality-Anwendung erkennen.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Maschinelles sehen, hololens, immersive, VR
-ms.openlocfilehash: 4c8566a2654eb92a4dab2a933bd8afb0b745cfce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Maschinelles sehen, hololens, immersive, VR, Windows 10, Visual Studio
+ms.openlocfilehash: f972ba57bc27bff32aba70972fad2e6374d0c574
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688302"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679529"
 ---
 # <a name="mr-and-azure-302-computer-vision"></a>MR und Azure 302: Maschinelles Sehen
 
@@ -86,7 +86,7 @@ Wenn Sie den *Maschinelles Sehen-API* -Dienst in Azure verwenden möchten, müss
     > [!NOTE]
     > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
 
-2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach *Maschinelles Sehen-API* , und drücken Sie die **Eingabe** Taste.
+2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach *Maschinelles Sehen-API*, und drücken Sie die **Eingabe** Taste.
 
     ![Erstellen einer neuen Ressource in Azure](images/AzureLabs-Lab2-00.png)
 
@@ -141,15 +141,15 @@ Wenn Sie den *Maschinelles Sehen-API* -Dienst in Azure verwenden möchten, müss
 
 Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Realität und ist daher eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie *Unity* , und klicken Sie auf **neu** . 
+1.  Öffnen Sie *Unity* , und klicken Sie auf **neu**. 
 
     ![Starten Sie ein neues Unity-Projekt.](images/AzureLabs-Lab2-06.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen Sie **MR_ComputerVision** ein. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen** .
+2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen Sie **MR_ComputerVision** ein. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
 
     ![Geben Sie Details für ein neues Unity-Projekt an.](images/AzureLabs-Lab2-07.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit > Preferences (Einstellungen bearbeiten** ), und navigieren Sie dann im neuen Fenster zu **externe Tools** . Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017** . Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit > Preferences (Einstellungen bearbeiten** ), und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Skript-Editor-Einstellung aktualisieren.](images/AzureLabs-Lab2-08.png)
 
@@ -177,7 +177,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
             ![Neuen Ordner "Skripts" erstellen](images/AzureLabs-Lab2-12.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname* : Text **MR_ComputerVisionScene** ein, und klicken Sie dann auf **Speichern** .
+        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname*: Text **MR_ComputerVisionScene** ein, und klicken Sie dann auf **Speichern**.
 
             ![Benennen Sie neue Szene.](images/AzureLabs-Lab2-13.png)
 
@@ -206,13 +206,13 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
             ![Veröffentlichungs Einstellungen werden aktualisiert.](images/AzureLabs-Lab2-16.png)
 
-    3. Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen** ), **unterstützt Tick Virtual Reality** , stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    3. Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
 
         ![Aktualisieren Sie die X R-Einstellungen.](images/AzureLabs-Lab2-17.png)
 
 8.  Zurück in *Buildeinstellungen* : _Unity-c#_ -Projekte sind nicht mehr abgeblendet. Aktivieren Sie das Kontrollkästchen neben this. 
 9.  Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
-10. Speichern Sie Ihre Szene und Ihr Projekt ( **Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
+10. Speichern Sie Ihre Szene und Ihr Projekt (**Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
 
 ## <a name="chapter-3--main-camera-setup"></a>Kapitel 3 – Hauptkamera Einrichtung
 
@@ -234,13 +234,13 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
 So erstellen Sie den Cursor:
 
-1.  Klicken Sie im *Hierarchie Panel* mit der rechten Maustaste auf die **Hauptkamera** . Klicken Sie unter **3D-Objekt** auf **Kugel** .
+1.  Klicken Sie im *Hierarchie Panel* mit der rechten Maustaste auf die **Hauptkamera**. Klicken Sie unter **3D-Objekt** auf **Kugel**.
 
     ![Wählen Sie das Cursor Objekt aus.](images/AzureLabs-Lab2-19.png)
  
 2.  Benennen Sie die **Kugel** in den **Cursor** um (Doppelklicken Sie auf das Cursor Objekt, oder drücken Sie die Tastenkombination "F2", wenn das Objekt ausgewählt ist), und stellen Sie sicher, dass Sie sich als untergeordnetes Element der **Hauptkamera** befindet
 
-3.  Klicken Sie im *Hierarchie Panel* mit der linken Maustaste auf den **Cursor** . Wenn der Cursor ausgewählt ist, passen Sie die folgenden Variablen im *Inspektor-Panel* an:
+3.  Klicken Sie im *Hierarchie Panel* mit der linken Maustaste auf den **Cursor**. Wenn der Cursor ausgewählt ist, passen Sie die folgenden Variablen im *Inspektor-Panel* an:
 
     1. Legen Sie die *Transformations Position* auf **0, 0, 5** fest.
     2. Legen Sie die *Skala* auf **0,02, 0,02, 0,02**
@@ -257,11 +257,11 @@ Sie verwenden Bezeichnungen (als 3D-Text im Raum), um diese Tags an der Stelle a
 
 In den folgenden Schritten wird gezeigt, wie Sie das **Label** -Objekt einrichten.
 
-1.  Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Hierarchie Panel (der Standort ist an diesem Punkt nicht wichtig), und fügen Sie unter **3D-Objekt** einen **3D-Text** hinzu. Nennen Sie es **LabelText** .
+1.  Klicken Sie mit der rechten Maustaste auf eine beliebige Stelle im Hierarchie Panel (der Standort ist an diesem Punkt nicht wichtig), und fügen Sie unter **3D-Objekt** einen **3D-Text** hinzu. Nennen Sie es **LabelText**.
 
     ![3D-Text Objekt erstellen.](images/AzureLabs-Lab2-21.png)
  
-2.  Klicken Sie im *Hierarchie Panel* mit der linken Maustaste auf das **LabelText** -Element. Passen Sie bei ausgewähltem **LabelText** die folgenden Variablen im *Inspektor-Panel* an:
+2.  Klicken Sie im *Hierarchie Panel* mit der linken Maustaste auf das **LabelText**-Element. Passen Sie bei ausgewähltem **LabelText** die folgenden Variablen im *Inspektor-Panel* an:
 
     1. Legen Sie die **Position** auf **0, 0, 0** fest.
     2. Legen Sie die **Skala** auf **0,01, 0,01, 0,01**
@@ -275,7 +275,7 @@ In den folgenden Schritten wird gezeigt, wie Sie das **Label** -Objekt einrichte
 
     ![Text Komponente](images/AzureLabs-Lab2-21-5.png)
 
-3.  Ziehen Sie den **LabelText** aus dem Bereich *Hierarchie* in den *Ordner Asset* innerhalb des *Projekt Panels* . Dadurch wird der **LabelText** zu einem präfab, damit er im Code instanziiert werden kann.
+3.  Ziehen Sie den **LabelText** aus dem Bereich *Hierarchie* in den *Ordner Asset* innerhalb des *Projekt Panels*. Dadurch wird der **LabelText** zu einem präfab, damit er im Code instanziiert werden kann.
 
     ![Erstellen Sie eine vorfab des LabelText-Objekts.](images/AzureLabs-Lab2-22.png)
  
@@ -293,11 +293,11 @@ Das erste Skript, das Sie erstellen müssen, ist die Klasse " *resulttlabel* ", 
 
 So erstellen Sie diese Klasse: 
 
-1.  Klicken Sie mit der rechten Maustaste im *Projekt Panel* , und erstellen Sie dann **> Ordner** . Benennen Sie den Ordner mit **Skripts** . 
+1.  Klicken Sie mit der rechten Maustaste im *Projekt Panel*, und erstellen Sie dann **> Ordner**. Benennen Sie den Ordner mit **Skripts**. 
 
     ![Erstellen Sie den Ordner Skripts.](images/AzureLabs-Lab2-24.png)
 
-2.  Wenn Sie den Ordner **Skripts** erstellen, doppelklicken Sie darauf, um ihn zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste auf, und wählen Sie dann > **c#-Skript** **Erstellen** aus. Nennen Sie das Skript " *ResultLabel* ". 
+2.  Wenn Sie den Ordner **Skripts** erstellen, doppelklicken Sie darauf, um ihn zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste auf, und wählen Sie dann >**c#-Skript** **Erstellen** aus. Nennen Sie das Skript " *ResultLabel*". 
 
 3.  Doppelklicken Sie auf das neue *resulttlabel* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -360,13 +360,13 @@ So erstellen Sie diese Klasse:
     ```
 
 6.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
-7.  Klicken Sie im *Unity-Editor* auf die *resultslabel* -Klasse, und ziehen Sie Sie aus dem Ordner **Scripts** auf das **Hauptkamera** Objekt im Bereich *Hierarchie* .
+7.  Klicken Sie im *Unity-Editor* auf die *resultslabel* -Klasse, und ziehen Sie Sie aus dem Ordner **Scripts** auf das **Hauptkamera** Objekt im Bereich *Hierarchie*.
 8.  Klicken Sie auf die **Hauptkamera** , und sehen Sie sich den Bereich *Inspector* an.
 
-Sie werden feststellen, dass Sie aus dem Skript, das Sie soeben in die Kamera gezogen haben, zwei Felder haben: **Cursor** -und Bezeichnungs **präfab** .
+Sie werden feststellen, dass Sie aus dem Skript, das Sie soeben in die Kamera gezogen haben, zwei Felder haben: **Cursor** -und Bezeichnungs **präfab**.
 
-9.  Ziehen Sie das Objekt **Cursor** aus dem Bereich *Hierarchie* in den Slot mit dem Namen **Cursor** , wie in der folgenden Abbildung dargestellt.
-10. Ziehen Sie das Objekt " **LabelText** " aus dem *Ordner "Assets* " im *Projekt Panel* in den Slot mit dem Namen " **Label Prefab** ", wie in der folgenden Abbildung dargestellt. 
+9.  Ziehen Sie das Objekt **Cursor** aus dem Bereich *Hierarchie* in den Slot mit dem Namen **Cursor**, wie in der folgenden Abbildung dargestellt.
+10. Ziehen Sie das Objekt " **LabelText** " aus dem *Ordner "Assets* " im *Projekt Panel* in den Slot mit dem Namen " **Label Prefab**", wie in der folgenden Abbildung dargestellt. 
 
     ![Legen Sie die Verweis Ziele innerhalb von Unity fest.](images/AzureLabs-Lab2-25.png)
 
@@ -380,7 +380,7 @@ Die nächste Klasse, die Sie erstellen, ist die *imagecapture* -Klasse. Diese Kl
 So erstellen Sie diese Klasse: 
 
 1.  Wechseln Sie zum Ordner " **Scripts** ", den Sie zuvor erstellt haben. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner, und **Erstellen Sie > c#-Skript** . Nennen Sie das Skript *imagecapture* . 
+2.  Klicken Sie mit der rechten Maustaste in den Ordner, und **Erstellen Sie > c#-Skript**. Nennen Sie das Skript *imagecapture*. 
 3.  Doppelklicken Sie auf das neue *imagecapture* -Skript, um es in **Visual Studio** zu öffnen.
 4.  Fügen Sie am Anfang der Datei die folgenden Namespaces hinzu:
 
@@ -533,7 +533,7 @@ Diese Klasse ist für Folgendes zuständig:
 So erstellen Sie diese Klasse:
 
 1.  Doppelklicken Sie auf den Ordner " **Scripts** ", um ihn zu öffnen. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript** . Nennen Sie das Skript " *visionmanager* ". 
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Nennen Sie das Skript " *visionmanager*". 
 3.  Doppelklicken Sie auf das neue Skript, um es in Visual Studio zu öffnen.
 4.  Aktualisieren Sie die Namespaces so, dass Sie am Anfang der Klasse " *visionmanager* " wie folgt lauten:
 
@@ -679,7 +679,7 @@ So erstellen Sie diese Klasse:
     ```
 
 9.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
-10. Klicken Sie im Unity-Editor auf die Klassen " *visionmanager* " und " *imagecapture* ", und ziehen Sie Sie aus dem Ordner " **Scripts** " in das **Hauptkamera** Objekt im *Hierarchie Panel* . 
+10. Klicken Sie im Unity-Editor auf die Klassen " *visionmanager* " und " *imagecapture* ", und ziehen Sie Sie aus dem Ordner " **Scripts** " in das **Hauptkamera** Objekt im *Hierarchie Panel*. 
 
 ## <a name="chapter-8--before-building"></a>Kapitel 8 – vor dem Aufbau
 
@@ -696,12 +696,12 @@ Bevor Sie vorgehen, stellen Sie Folgendes sicher:
 Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, ist nun abgeschlossen, sodass es an der Zeit ist, Sie aus Unity zu erstellen.
 
 1.  Navigieren Sie zu *buildeinstellungs*  -  **Datei > Buildeinstellungen...**
-2.  Klicken Sie im Fenster " *Buildeinstellungen* " auf " **Erstellen** ".
+2.  Klicken Sie im Fenster " *Buildeinstellungen* " auf " **Erstellen**".
 
     ![Entwickeln der APP aus Unity](images/AzureLabs-Lab2-26.png)
 
-3.  Wenn dies nicht bereits geschehen ist, Tick Sie **Unity c#-Projekte** .
-4.  Klicken Sie auf **Erstellen** . Unity startet ein *Datei-Explorer* -Fenster, in dem Sie einen Ordner erstellen und auswählen müssen, in dem die App erstellt wird. Erstellen Sie diesen Ordner jetzt, und nennen Sie ihn " *App* ". Klicken Sie dann mit ausgewähltem *App* -Ordner auf **Ordner auswählen** . 
+3.  Wenn dies nicht bereits geschehen ist, Tick Sie **Unity c#-Projekte**.
+4.  Klicken Sie auf **Erstellen**. Unity startet ein *Datei-Explorer* -Fenster, in dem Sie einen Ordner erstellen und auswählen müssen, in dem die App erstellt wird. Erstellen Sie diesen Ordner jetzt, und nennen Sie ihn " *App*". Klicken Sie dann mit ausgewähltem *App* -Ordner auf **Ordner auswählen**. 
 5.  Unity startet das Projekt in den *App* -Ordner. 
 6.  Nachdem die Erstellung von Unity abgeschlossen ist (Dies kann einige Zeit in Anspruch nehmen), wird ein *Datei-Explorer* -Fenster am Speicherort des Builds geöffnet (überprüfen Sie die Taskleiste, da Sie möglicherweise nicht immer über Ihrem Fenster angezeigt wird, sondern Sie über das Hinzufügen eines neuen Fensters benachrichtigt).
 
@@ -709,17 +709,17 @@ Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, ist nun ab
 
 So stellen Sie auf hololens bereit:
 
-1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Dazu ist Folgendes erforderlich:
+1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Gehen Sie dazu wie folgt vor:
 
     1. Öffnen Sie die Einstellungen, während Sie die hololens- **Einstellungen** durch tragen.
-    2. Navigieren Sie zu **Netzwerk & Internet > Wi-Fi > Erweiterte Optionen**
+    2. Wechseln Sie zu **Netzwerk & Internet > Wi-Fi > Erweiterte Optionen** .
     3. Notieren Sie sich die **IPv4** -Adresse.
-    4. Navigieren Sie als nächstes wieder zu **Einstellungen** , und aktualisieren Sie dann **& Sicherheits > für Entwickler** . 
+    4. Navigieren Sie als nächstes wieder zu **Einstellungen**, und aktualisieren Sie dann **& Sicherheits > für Entwickler** . 
     5. Legen Sie den Entwicklermodus auf fest.
 
-2.  Navigieren Sie zu Ihrem neuen Unity-Build ( *App* -Ordner), und öffnen Sie die Projektmappendatei mit *Visual Studio* .
-3.  Wählen Sie in der Projektmappenkonfiguration **Debuggen** .
-4.  Wählen Sie auf der Projektmappenplattform die Option **x86** , **Remote Computer** aus. 
+2.  Navigieren Sie zu Ihrem neuen Unity-Build ( *App* -Ordner), und öffnen Sie die Projektmappendatei mit *Visual Studio*.
+3.  Wählen Sie in der Projektmappenkonfiguration **Debuggen**.
+4.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **Remote Computer** aus. 
 
     ![Stellen Sie die Lösung aus Visual Studio bereit.](images/AzureLabs-Lab2-27.png)
  
@@ -739,7 +739,7 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die die Azur
 
 ### <a name="exercise-1"></a>Übung 1
 
-Ebenso wie Sie den Parameter " *Tags* " (wie in dem *Endpunkt* , der innerhalb von " *visionmanager* " verwendet wird) verwendet haben, erweitern Sie die APP, um weitere Informationen zu erkennen. Werfen Sie einen Blick auf die anderen Parameter, auf die Sie [hier](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa)zugreifen können.
+Ebenso wie Sie den Parameter " *Tags* " (wie in dem *Endpunkt* , der innerhalb von " *visionmanager*" verwendet wird) verwendet haben, erweitern Sie die APP, um weitere Informationen zu erkennen. Werfen Sie einen Blick auf die anderen Parameter, auf die Sie [hier](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa)zugreifen können.
 
 ### <a name="exercise-2"></a>Übung 2
 

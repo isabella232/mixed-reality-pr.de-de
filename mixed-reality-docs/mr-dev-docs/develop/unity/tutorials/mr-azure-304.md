@@ -1,17 +1,17 @@
 ---
-title: Mr und Azure 304-Gesichtserkennung
+title: 'MR und Azure 304: Gesichtserkennung'
 description: Absolvieren Sie diesen Kurs, um die Azure-Gesichtserkennung innerhalb einer gemischten Reality-Anwendung zu implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Gesichtserkennung, hololens, immersive, VR
-ms.openlocfilehash: 266f51a829d919f8b0f24e80589fd8ab21bb3694
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Gesichtserkennung, hololens, immersive, VR, Windows 10, Visual Studio
+ms.openlocfilehash: 8e1420e5764e7330026731ffb4f0c180604c2789
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687907"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679829"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR und Azure 304: Gesichtserkennung
 
@@ -87,7 +87,7 @@ Wenn Sie den *Gesichtserkennungs-API* -Dienst in Azure verwenden möchten, müss
     > [!NOTE]
     > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
 
-2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf " **neu** ", und suchen Sie nach *Gesichtserkennungs-API* . Drücken Sie dann die **Eingabe** Taste.
+2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf " **neu** ", und suchen Sie nach *Gesichtserkennungs-API*. Drücken Sie dann die **Eingabe** Taste.
 
     ![Suchen nach der Face-API](images/AzureLabs-Lab4-01.png)
 
@@ -110,7 +110,7 @@ Wenn Sie den *Gesichtserkennungs-API* -Dienst in Azure verwenden möchten, müss
 
         > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
-    5. Die UWP-app " **Person Maker** ", die Sie später verwenden, erfordert die Verwendung von "USA, Westen" für den Standort.
+    5. Die UWP-app " **Person Maker**", die Sie später verwenden, erfordert die Verwendung von "USA, Westen" für den Standort.
 
     6. Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
 
@@ -152,13 +152,13 @@ Diese Anwendung verwendet die *Microsoft. projectoxford. Face* -Bibliotheken, di
 > [!NOTE] 
 > Dabei handelt es sich nur um die erforderlichen Schritte. Anweisungen zum Ausführen dieser Schritte finden Sie weiter unten in diesem Dokument. Die **Person Maker** -App ermöglicht Ihnen Folgendes:
 >
-> - Erstellen Sie eine *Personengruppe* , die aus mehreren Personen besteht, denen Sie zugeordnet werden sollen. Mit Ihrem Azure-Konto können Sie mehrere Personengruppen hosten.
+> - Erstellen Sie eine *Personengruppe*, die aus mehreren Personen besteht, denen Sie zugeordnet werden sollen. Mit Ihrem Azure-Konto können Sie mehrere Personengruppen hosten.
 >
-> - Erstellen Sie eine *Person* , die Mitglied einer Person-Gruppe ist. Jeder Person sind mehrere *Gesichts* Bilder zugeordnet.
+> - Erstellen Sie eine *Person*, die Mitglied einer Person-Gruppe ist. Jeder Person sind mehrere *Gesichts* Bilder zugeordnet.
 >
 > -  Weisen Sie einer *Person* *Gesichtsbilder* zu, damit Ihr Azure Gesichtserkennungs-API-Dienst eine *Person* durch das entsprechende *Gesicht* erkennen kann.
 >
-> -  *Trainieren* Sie Ihren *Azure Gesichtserkennungs-API-Dienst* .
+> -  *Trainieren* Sie Ihren *Azure Gesichtserkennungs-API-Dienst*.
 
 Wenn Sie diese APP zum Erkennen von Benutzern Schulen möchten, benötigen Sie zehn (10) schließende Fotos für jede Person, die Sie der Person-Gruppe hinzufügen möchten. Die Windows 10-CAM-App kann Sie dabei unterstützen. Sie müssen sicherstellen, dass jedes Foto klar ist (vermeiden Sie die verwierung, verdeckt oder zu weit vom Betreff), dass das Foto im JPG-oder PNG-Dateiformat vorliegt, wobei die Bilddatei nicht größer als **4 MB** und nicht kleiner als **1 KB** ist.
 
@@ -175,15 +175,15 @@ Wenn Sie diese APP zum Erkennen von Benutzern Schulen möchten, benötigen Sie z
 
     2. Die *Lösungsplattform* ist auf **x86** festgelegt.
 
-    3. Die *Zielplattform* ist der **lokale Computer** .
+    3. Die *Zielplattform* ist der **lokale Computer**.
 
-    4.  Sie müssen auch *nuget-Pakete wiederherstellen* (Klicken Sie mit der *Solution* rechten Maustaste auf die Projekt Mappe, und wählen Sie **nuget-Pakete wiederherstellen** ).
+    4.  Sie müssen auch *nuget-Pakete wiederherstellen* (Klicken Sie mit der *Solution* rechten Maustaste auf die Projekt Mappe, und wählen Sie **nuget-Pakete wiederherstellen**).
 
 3.  Klicken Sie auf *lokaler Computer* , und die Anwendung wird gestartet. Beachten Sie, dass auf kleineren Bildschirmen der gesamte Inhalt möglicherweise nicht sichtbar ist, Sie können jedoch einen Bildlauf nach unten durchführen, um ihn anzuzeigen.
 
     ![Person Maker-Benutzeroberfläche](images/AzureLabs-Lab4-07.png)
 
-4.  Fügen Sie Ihren **Azure-Authentifizierungsschlüssel** , den Sie haben sollten, aus Ihrem *Gesichtserkennungs-API* Service in Azure ein.
+4.  Fügen Sie Ihren **Azure-Authentifizierungsschlüssel**, den Sie haben sollten, aus Ihrem *Gesichtserkennungs-API* Service in Azure ein.
 
 5.  Insert (Einfügen):
 
@@ -211,7 +211,7 @@ Wenn Sie diese APP zum Erkennen von Benutzern Schulen möchten, benötigen Sie z
 
 9.  Klicken Sie auf **Ordner erstellen und öffnen** , um Windows-Explorer in dem Ordner zu öffnen, der der Person zugeordnet ist. Fügen Sie die zehn (10) Images im Ordner hinzu. Diese müssen ein *JPG* -oder *PNG* -Dateiformat aufweisen.
 
-10. Klicken Sie auf über **Mitteln an Azure** . Ein Gegenstand zeigt den Status der Übermittlung an, gefolgt von einer Meldung, wenn Sie abgeschlossen wurde.
+10. Klicken Sie auf über **Mitteln an Azure**. Ein Gegenstand zeigt den Status der Übermittlung an, gefolgt von einer Meldung, wenn Sie abgeschlossen wurde.
 
 11. Nachdem der Leistungs Dienst abgeschlossen und eine Bestätigungsmeldung angezeigt wurde, klicken Sie auf " **trainieren** ", um den Dienst zu trainieren.
 
@@ -221,19 +221,19 @@ Nachdem der Prozess abgeschlossen wurde, können Sie in Unity wechseln.
 
 Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Realität und ist daher eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie *Unity* , und klicken Sie auf **neu** . 
+1.  Öffnen Sie *Unity* , und klicken Sie auf **neu**. 
 
     ![Starten Sie ein neues Unity-Projekt.](images/AzureLabs-Lab4-08.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen Sie **MR_FaceRecognition** ein. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen** .
+2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen Sie **MR_FaceRecognition** ein. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
 
     ![Geben Sie Details für ein neues Unity-Projekt an.](images/AzureLabs-Lab4-09.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit > Preferences (Einstellungen bearbeiten** ), und navigieren Sie dann im neuen Fenster zu **externe Tools** . Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017** . Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit > Preferences (Einstellungen bearbeiten** ), und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Skript-Editor-Einstellung aktualisieren.](images/AzureLabs-Lab4-10.png)
 
-4.  Navigieren Sie als nächstes zu **Datei > Buildeinstellungen** , und schalten Sie die Plattform auf **universelle Windows-Plattform** , indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu **Datei > Buildeinstellungen** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
     ![Fenster "Buildeinstellungen", Plattform zu UWP wechseln.](images/AzureLabs-Lab4-11.png)
 
@@ -253,11 +253,11 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
             ![Klicken Sie auf Schaltfläche "Open Szenen](images/AzureLabs-Lab4-12.png)
 
-        2. Wählen Sie die Schaltfläche **neuer Ordner** aus, um einen neuen Ordner zu erstellen, und nennen Sie ihn **Szenen** .
+        2. Wählen Sie die Schaltfläche **neuer Ordner** aus, um einen neuen Ordner zu erstellen, und nennen Sie ihn **Szenen**.
 
             ![Neuen Ordner "Skripts" erstellen](images/AzureLabs-Lab4-13.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , und geben Sie dann im Feld **Dateiname** : Text die Zeichen **Fläche fakerecscene** ein, und klicken Sie dann auf **Speichern** .
+        3. Öffnen Sie den neu erstellten Ordner **Szenen** , und geben Sie dann im Feld **Dateiname**: Text die Zeichen **Fläche fakerecscene** ein, und klicken Sie dann auf **Speichern**.
 
             ![Benennen Sie neue Szene.](images/AzureLabs-Lab4-14.png)
 
@@ -284,13 +284,13 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
             ![Veröffentlichungs Einstellungen werden aktualisiert.](images/AzureLabs-Lab4-17.png)
 
-    3. Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen** ), **unterstützt Tick Virtual Reality** , stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    3. Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
 
         ![Aktualisieren Sie die X R-Einstellungen.](images/AzureLabs-Lab4-18.png)
 
 8.  Wieder in den *Buildeinstellungen* ist **Unity c#-Projekte** nicht mehr abgeblendet. Aktivieren Sie das Kontrollkästchen neben this. 
 9.  Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
-10. Speichern Sie Ihre Szene und Ihr Projekt ( **Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
+10. Speichern Sie Ihre Szene und Ihr Projekt (**Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
 
 ## <a name="chapter-4---main-camera-setup"></a>Kapitel 4: Einrichtung der Hauptkamera
 
@@ -323,12 +323,12 @@ Zum Deserialisieren und Serialisieren von Objekten, die empfangen und an den bot
 So importieren Sie die Bibliothek:
 
 1.  Laden Sie das Unity-Paket herunter.
-2.  Klicken Sie auf **Assets** , **Import Package** , **Custom Package** .
+2.  Klicken Sie auf **Assets**, **Import Package**, **Custom Package**.
 
     ![Importieren von Newtonsoft.Js](images/AzureLabs-Lab4-20.png)
 
 3.  Suchen Sie nach dem Paket Unity, das Sie heruntergeladen haben, und klicken Sie auf Öffnen.
-4.  Stellen Sie sicher, dass alle Komponenten des Pakets getickt sind, und klicken Sie auf **importieren** .
+4.  Stellen Sie sicher, dass alle Komponenten des Pakets getickt sind, und klicken Sie auf **importieren**.
 
     ![Importieren der Newtonsoft.Jsauf Assets](images/AzureLabs-Lab4-21.png)
 
@@ -341,12 +341,12 @@ Der Zweck der faceanalysis-Klasse besteht darin, die Methoden zu hosten, die fü
 
 So erstellen Sie die *faceanalysis* -Klasse:
 
- 1. Klicken Sie im Projekt Panel mit der rechten Maustaste in den *Ordner Objekte* , und klicken **Create** Sie dann auf  >  **Ordner** erstellen. Nennen Sie die Ordner **Skripts** . 
+ 1. Klicken Sie im Projekt Panel mit der rechten Maustaste in den *Ordner Objekte* , und klicken **Create** Sie dann auf  >  **Ordner** erstellen. Nennen Sie die Ordner **Skripts**. 
 
     ![Erstellen Sie die faceanalysis-Klasse.](images/AzureLabs-Lab4-22.png)
 
 2.  Doppelklicken Sie auf den soeben erstellten Ordner, um ihn zu öffnen. 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner, **Create** und klicken Sie dann auf  >  **c#-Skript** erstellen. Nennen Sie das Skript *faceanalysis* . 
+3.  Klicken Sie mit der rechten Maustaste in den Ordner, **Create** und klicken Sie dann auf  >  **c#-Skript** erstellen. Nennen Sie das Skript *faceanalysis*. 
 4.  Doppelklicken Sie auf das neue *faceanalysis* -Skript, um es mit Visual Studio 2017 zu öffnen.
 5.  Geben Sie die folgenden Namespaces oberhalb der *faceanalysis* -Klasse ein:
 
@@ -638,7 +638,7 @@ So erstellen Sie die *faceanalysis* -Klasse:
     ```
 
 14.  Vergessen Sie nicht, die Änderungen zu **Speichern** , bevor Sie zum Unity-Editor zurückkehren.
-15.  Ziehen Sie im Unity-Editor das faceanalysis-Skript aus dem Ordner Scripts im Projekt Panel auf das Hauptkamera Objekt im *Hierarchie Panel* . Die neue Skript Komponente wird der Hauptkamera so hinzugefügt. 
+15.  Ziehen Sie im Unity-Editor das faceanalysis-Skript aus dem Ordner Scripts im Projekt Panel auf das Hauptkamera Objekt im *Hierarchie Panel*. Die neue Skript Komponente wird der Hauptkamera so hinzugefügt. 
 
 ![Legen Sie faceanalysis auf der Hauptkamera ab.](images/AzureLabs-Lab4-23.png)
 
@@ -649,7 +649,7 @@ Der Zweck der *imagecapture* -Klasse besteht darin, die Methoden zu hosten, die 
 
 So erstellen Sie die *imagecapture* -Klasse:
  
-1.  Klicken Sie **mit der rechten** Maustaste in den Skript Ordner, den Sie zuvor erstellt haben, und klicken Sie dann auf **Erstellen** , **c#-Skript** . Nennen Sie das Skript *imagecapture* . 
+1.  Klicken Sie **mit der rechten** Maustaste in den Skript Ordner, den Sie zuvor erstellt haben, und klicken Sie dann auf **Erstellen**, **c#-Skript**. Nennen Sie das Skript *imagecapture*. 
 2.  Doppelklicken Sie auf das neue *imagecapture* -Skript, um es mit Visual Studio 2017 zu öffnen.
 3.  Geben Sie die folgenden Namespaces oberhalb der imagecapture-Klasse ein:
 
@@ -818,17 +818,17 @@ So beginnen Sie den Buildprozess:
 
 So stellen Sie auf hololens bereit:
 
-1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Dazu ist Folgendes erforderlich:
+1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Gehen Sie dazu wie folgt vor:
 
     1. Öffnen Sie die Einstellungen, während Sie die hololens- **Einstellungen** durch tragen.
-    2. Navigieren Sie zu **Netzwerk & Internet > Wi-Fi > Erweiterte Optionen**
+    2. Wechseln Sie zu **Netzwerk & Internet > Wi-Fi > Erweiterte Optionen** .
     3. Notieren Sie sich die **IPv4** -Adresse.
-    4. Navigieren Sie als nächstes wieder zu **Einstellungen** , und aktualisieren Sie dann **& Sicherheits > für Entwickler** . 
+    4. Navigieren Sie als nächstes wieder zu **Einstellungen**, und aktualisieren Sie dann **& Sicherheits > für Entwickler** . 
     5. Legen Sie den Entwicklermodus auf fest.
 
-2.  Navigieren Sie zu Ihrem neuen Unity-Build ( *App* -Ordner), und öffnen Sie die Projektmappendatei mit *Visual Studio* .
-3.  Wählen Sie in der Projektmappenkonfiguration **Debuggen** .
-4.  Wählen Sie auf der Projektmappenplattform die Option **x86** , **Remote Computer** aus. 
+2.  Navigieren Sie zu Ihrem neuen Unity-Build ( *App* -Ordner), und öffnen Sie die Projektmappendatei mit *Visual Studio*.
+3.  Wählen Sie in der Projektmappenkonfiguration **Debuggen**.
+4.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **Remote Computer** aus. 
 
     ![Ändern der Projektmappenkonfiguration](images/AzureLabs-Lab4-26.png)
  

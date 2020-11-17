@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Gesten, Bewegungs Controller, Unity, Blick, Eingabe
-ms.openlocfilehash: b184cf1d9e6f35e3750015b51374058df79ed19d
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Gesten, Bewegungs Controller, Unity, Blick, Eingabe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 244d1ef27d9aa68d971fa8372bda301fccab0704
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683236"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677589"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Hand-und Augen Nachverfolgung in Unity
 

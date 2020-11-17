@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, hololens 2, Voice, Voice Input, Spracherkennung, gemischte Realität, Entwicklung, Features, Dokumentation, Anleitungen, holograms, Spieleentwicklung
-ms.openlocfilehash: 88ab39de5f219691a6c3fe5b4ad3008d9614668e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, hololens 2, Voice, Voice Input, Spracherkennung, gemischte Realität, Entwicklung, Features, Dokumentation, Leitfäden, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 79a6043511cc4658ae2451dd8aa6350d8e8037fe
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689643"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678779"
 ---
 # <a name="voice-input-in-unreal"></a>Spracheingabe in Unreal
 
@@ -21,7 +21,7 @@ Mit der Spracheingabe in Unreal können Sie mit einem – Hologramm interagieren
 ## <a name="enabling-speech-recognition"></a>Aktivieren der Spracherkennung
 
 So aktivieren Sie die Spracherkennung in hololens:
-1. Wählen Sie **Projekteinstellungen > Plattform > hololens > Funktionen** aus, und aktivieren Sie das **Mikrofon** . 
+1. Wählen Sie **Projekteinstellungen > Plattform > hololens > Funktionen** aus, und aktivieren Sie das **Mikrofon**. 
 2. Aktivieren Sie die Spracherkennung in den **Einstellungen > Datenschutz > Sprache** und wählen Sie **Englisch** aus.
 
 > [!NOTE]
@@ -35,7 +35,7 @@ Die Spracheingabe erfordert keine speziellen Windows Mixed Reality-APIs. Es basi
 
 ## <a name="adding-speech-mappings"></a>Hinzufügen von sprach Zuordnungen
 Das Verbinden von Sprache und Aktion ist ein wichtiger Schritt bei der Verwendung von Spracheingaben. Diese Zuordnungen überwachen die APP auf sprach Schlüsselwörter, die ein Benutzer möglicherweise anweist, und lösen dann eine verknüpfte Aktion aus. Sie finden sprach Zuordnungen wie folgt:
-1. Wählen Sie **> Projekteinstellungen bearbeiten** aus, Scrollen Sie zum Abschnitt **Engine** , und klicken Sie auf **Eingabe** .
+1. Wählen Sie **> Projekteinstellungen bearbeiten** aus, Scrollen Sie zum Abschnitt **Engine** , und klicken Sie auf **Eingabe**.
 
 So fügen Sie eine neue sprach Zuordnung für einen Jump-Befehl hinzu:
 1. Klicken Sie auf das **+** Symbol neben **Array Elemente** , und füllen Sie die folgenden Werte aus:
@@ -50,7 +50,7 @@ So fügen Sie eine neue sprach Zuordnung für einen Jump-Befehl hinzu:
 Sprach Zuordnungen können als Eingabe Komponenten wie Aktions-oder Achsen Zuordnungen oder als Blueprint-Knoten im Ereignis Diagramm verwendet werden. Beispielsweise können Sie den Jump-Befehl verknüpfen, um zwei verschiedene Protokolle auszugeben, je nachdem, wann das Wort gesprochen wird:
 
 1. Doppelklicken Sie auf eine Blaupause, um Sie im **Ereignis Diagramm** zu öffnen.
-2. **Klicken Sie mit der rechten Maustaste** , und suchen Sie nach dem **Aktions Namen** ihrer sprach Zuordnung (in diesem Fall **jumpword** ), und drücken Sie dann die **Eingabe** Taste. Dadurch wird dem Diagramm ein **Eingabe Aktions** Knoten hinzugefügt.
+2. **Klicken Sie mit der rechten Maustaste** , und suchen Sie nach dem **Aktions Namen** ihrer sprach Zuordnung (in diesem Fall **jumpword**), und drücken Sie dann die **Eingabe** Taste. Dadurch wird dem Diagramm ein **Eingabe Aktions** Knoten hinzugefügt.
 3. Ziehen Sie die **gedrückte** PIN per Drag & Drop auf den Knoten **Druck Zeichenfolge** , wie in der folgenden Abbildung dargestellt Sie können die **freigegebene** Pin leer lassen, ohne dass für sprach Zuordnungen etwas ausgeführt wird.
  
 ![Einfache Aktion für Stimme](images/unreal/voice-input-img-03.png)
@@ -59,16 +59,16 @@ Sprach Zuordnungen können als Eingabe Komponenten wie Aktions-oder Achsen Zuord
 
 Das ist alles, was Sie benötigen, um Ihren hololens-apps in Unreal Spracheingaben hinzuzufügen. Weitere Informationen zu Sprache und Interaktivität finden Sie unter den folgenden Links. Stellen Sie sicher, dass Sie sich über die Benutzeroberflächen Gedanken machen, die Sie für Ihre Benutzer erstellen.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
 Wenn Sie die unechte Development Checkpoint Journey befolgen, die wir angelegt haben, sind Sie die nächste Aufgabe, die Funktionen und APIs der Mixed Reality-Plattform zu untersuchen: 
 
 > [!div class="nextstepaction"]
 > [HoloLens-Kamera](unreal-hololens-camera.md)
 
-Sie können jederzeit jederzeit zu den [unechten Entwicklungs Prüfpunkten](unreal-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#2-core-building-blocks) zurückkehren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Spracheingabe](../../design/voice-input.md)
 * [Anvisieren und Ausführen](../../design/gaze-and-commit.md)
 * [Instinktive Interaktionen](../../design/interaction-fundamentals.md)

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Unity, Tutorial, hololens2, räumliche Audiodaten
-ms.openlocfilehash: abe78417dc231e6228d1942e03418ba699bc0938
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Audiomixer, SFX-Reverb
+ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689675"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679699"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
 
@@ -21,19 +21,19 @@ In den vorherigen Kapiteln haben wir den Sound spatialization hinzugefügt, um I
 * Den erkannten Abstand des Sounds mithilfe der Entfernung des Listener zum – Hologramm Steuern
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Hinzufügen einer mischkeitsgruppe und eines einfügenden Effekts
-In [Kapitel 2](unity-spatial-audio-ch2.md)haben wir einen Mixer hinzugefügt. Der Mixer enthält standardmäßig eine **Gruppe** namens **Master** . Da wir nur einen "Hall"-Effekt auf einige Sounds anwenden möchten, fügen wir eine zweite **Gruppe** für diese Sounds hinzu. Um eine **Gruppe** hinzuzufügen, klicken Sie mit der rechten Maustaste auf die **Master** Gruppe im **Audiomixer** und wählen untergeordnete **Gruppe hinzufügen** aus:
+In [Kapitel 2](unity-spatial-audio-ch2.md)haben wir einen Mixer hinzugefügt. Der Mixer enthält standardmäßig eine **Gruppe** namens **Master**. Da wir nur einen "Hall"-Effekt auf einige Sounds anwenden möchten, fügen wir eine zweite **Gruppe** für diese Sounds hinzu. Um eine **Gruppe** hinzuzufügen, klicken Sie mit der rechten Maustaste auf die **Master** Gruppe im **Audiomixer** und wählen untergeordnete **Gruppe hinzufügen** aus:
 
 ![Untergeordnete Gruppe hinzufügen](images/spatial-audio/add-child-group.png)
 
 In diesem Beispiel haben wir die neue Gruppe "Raumeffekt" benannt.
 
-Jede **Gruppe** hat einen eigenen Satz von Effekten. Fügen Sie der neuen Gruppe einen connectoreffekt hinzu, indem Sie in der neuen Gruppe auf **Hinzufügen** klicken, und wählen Sie **SFX-Hall** :
+Jede **Gruppe** hat einen eigenen Satz von Effekten. Fügen Sie der neuen Gruppe einen connectoreffekt hinzu, indem Sie in der neuen Gruppe auf **Hinzufügen** klicken, und wählen Sie **SFX-Hall**:
 
 ![SFX-Reverb hinzufügen](images/spatial-audio/add-sfx-reverb.png)
 
 In der audioterminologie wird der ursprüngliche, nicht widerzuhallte _Audiopfad als trockener Pfad_ bezeichnet, und die Audiodatei nach dem Filtern mit dem Hall Filter wird als _Nasser Pfad_ bezeichnet. Beide Pfade werden an die Audioausgabe gesendet, und ihre relativen Stärken in dieser Mischung werden als _nass/trocken Mischung_ bezeichnet. Die nasse/trockene Mischung wirkt sich stark auf den Sinn der Entfernung aus.
 
-Der **SFX-Reverb umfasst Steuer** Elemente, mit denen die nasse/trockene Mischung innerhalb des Effekts angepasst wird. Da das **Microsoft spatializer** -Plug-in den trockenen Pfad behandelt, verwenden wir den **SFX-Reverb** nur für den nassen Pfad. Im **inspektorbereich** Ihres **SFX-einhall** :
+Der **SFX-Reverb umfasst Steuer** Elemente, mit denen die nasse/trockene Mischung innerhalb des Effekts angepasst wird. Da das **Microsoft spatializer** -Plug-in den trockenen Pfad behandelt, verwenden wir den **SFX-Reverb** nur für den nassen Pfad. Im **inspektorbereich** Ihres **SFX-einhall**:
 * Legen Sie die Eigenschaft "Dry Level" auf die niedrigste Einstellung fest (-10000 MB).
 * Legen Sie die Eigenschaft "Room" auf die höchste Einstellung (0 MB) fest.
 
@@ -117,7 +117,7 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Durch das Auskommentieren dieser Zeilen werden dem **inspektorbereich** für das Skript zwei Eigenschaften hinzugefügt. Um diese festzulegen, legen Sie im Bereich **Inspector** der Komponente **spatialize on off** des **Quad** :
+Durch das Auskommentieren dieser Zeilen werden dem **inspektorbereich** für das Skript zwei Eigenschaften hinzugefügt. Um diese festzulegen, legen Sie im Bereich **Inspector** der Komponente **spatialize on off** des **Quad**:
 * Legen Sie die Eigenschaft " **Raumeffekt** " auf Ihre neue Platz Effekt-mischkeitsgruppe fest.
 * Festlegen der **Master Group** -Eigenschaft auf die Master-Mixer-Gruppe
 

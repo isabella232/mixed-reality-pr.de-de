@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Spracheingabe, keywordrecognizer, grammarerkenzer, Mikrofon, Diktat, Stimme
-ms.openlocfilehash: b6930b35046e32beb1a4ca9f9ca29996487fcf4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Spracheingabe, keywordrecognizer, grammarerkenzer, Mikrofon, Diktat, Voice, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687251"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679889"
 ---
 # <a name="voice-input-in-unity"></a>Spracheingabe in Unity
 
@@ -41,7 +41,7 @@ Damit Ihre APP auf bestimmte vom Benutzer gesprochene Ausdrücke lauschen kann, 
 ### <a name="keywordrecognizer"></a>Keywordrecognizer
 
 **Namespace:** *unityengine. Windows. Speech*<br>
-**Typen:** *keywordrecognizer* , *phraserecognizedeventargs* , *delegatfehler* , Sprech *Systemstatus*
+**Typen:** *keywordrecognizer*, *phraserecognizedeventargs*, *delegatfehler*, Sprech *Systemstatus*
 
 Zum Speichern einiger Tastatureingaben benötigen wir einige using-Anweisungen:
 
@@ -103,7 +103,7 @@ keywordRecognizer.Start();
 ### <a name="grammarrecognizer"></a>Grammarerkenzer
 
 **Namespace:** *unityengine. Windows. Speech*<br>
-**Typen** : *grammarerkenzer* , *phraserecognizedeventargs* , *delegatfehler* , Sprech *Systemstatus*
+**Typen**: *grammarerkenzer*, *phraserecognizedeventargs*, *delegatfehler*, Sprech *Systemstatus*
 
 Die Grammatiken werden verwendet, wenn Sie Ihre Erkennungs Grammatik mithilfe von SRGS angeben. Dies kann hilfreich sein, wenn Ihre APP mehr als nur einige wenige Schlüsselwörter aufweist, wenn Sie komplexere Ausdrücke erkennen möchten, oder wenn Sie Sätze von Befehlen problemlos aktivieren und deaktivieren möchten. Informationen zum Dateiformat finden [Sie unter Erstellen von Grammatiken mithilfe von SRGS XML](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) .
 
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>Diktieren
 
 **Namespace:** *unityengine. Windows. Speech*<br>
-**Typen** : " *diktationerkenzer* ", "sprecherfehler", " *Redner Systemstatus* *SpeechError*
+**Typen**: " *diktationerkenzer*", "sprecherfehler", " *Redner Systemstatus* *SpeechError*
 
 Verwenden Sie das diktationerkenzer-Element, um die Sprache des Benutzers in Text zu konvertieren. Der Diktat-Erkennungs Modul macht [Diktat](../../design/voice-input.md#dictation) Funktionen verfügbar und unterstützt das registrieren und lauschen auf Hypothese und Ausdrucks fertige Ereignisse, sodass Sie Ihrem Benutzer Feedback geben können, während Sie sprechen und danach. Die Methoden "Start ()" und "stoppt ()" aktivieren und deaktivieren die Diktat Erkennung. Sobald die Erkennung erfolgt ist, sollte Sie mithilfe der verwerfen ()-Methode freigegeben werden, um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
 
@@ -301,11 +301,11 @@ Die Beispiele für die Spracheingabe finden Sie in dieser Szene.
 
 - [HoloToolkit-examples/Input/Szenen/speechinputsource. unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
 Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, haben wir die nächste Aufgabe darin, die Funktionen und APIs der Mixed Reality-Plattform zu untersuchen:
 
 > [!div class="nextstepaction"]
 > [Gemeinsame Erfahrung](shared-experiences-in-unity.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.

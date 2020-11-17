@@ -1,17 +1,17 @@
 ---
-title: Räumlicher Ton-220-Ton
+title: 'MR Spatial 220: Raumklang'
 description: Befolgen Sie diese Codierungs Exemplarische Vorgehensweise mit Unity, Visual Studio und hololens, um die Details der räumlichen audiokonzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumlicher Sound
-ms.openlocfilehash: 1da57024fbc069fcfc7d522175cf6d542304414a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumlicher Sound, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
+ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688987"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678369"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR räumlich 220: Raumklang
 
@@ -70,52 +70,52 @@ ms.locfileid: "91688987"
 ### <a name="instructions"></a>Instructions
 
 * Starten Sie Unity.
-* Klicken Sie auf **Öffnen** .
+* Wählen Sie **Open**(Öffnen).
 * Navigieren Sie zu Ihrem Desktop, und suchen Sie den Ordner, den Sie zuvor nicht archiviert haben.
 * Klicken Sie auf den Ordner **starting\decibel** , und klicken Sie dann auf die Schaltfläche **Ordner auswählen** .
 * Warten Sie, bis das Projekt in Unity geladen wurde.
-* Öffnen Sie im **Projekt** Panel **scenes\decibel.unity** .
+* Öffnen Sie im **Projekt** Panel **scenes\decibel.unity**.
 * Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection** , und wählen Sie **P0LY** aus.
 * Erweitern Sie im Inspektor den Eintrag **audiosource** , und beachten Sie, dass kein **spatialize** -Kontrollkästchen vorhanden ist.
 
 Standardmäßig lädt Unity kein spatializer-Plug-in. Mit den folgenden Schritten wird räumlicher Sound im Projekt aktiviert.
 
-* Wechseln Sie im oberen Menü von Unity zu **Edit > Project Settings > Audiodatei** .
+* Wechseln Sie im oberen Menü von Unity zu **Edit > Project Settings > Audiodatei**.
 * Suchen Sie nach der Dropdown Liste **spatializer Plugin** , und wählen Sie **MS HRTF spatializer** aus.
 * Wählen Sie im Bereich **Hierarchie** die Option **hologramcollection > P0LY** aus.
 * Suchen Sie im **Inspektor** -Panel die Komponente **Audioquelle** .
 * Aktivieren Sie das Kontrollkästchen **spatialize** .
-* Ziehen Sie den Schieberegler **räumlichkeits** Weise in **3D** , oder geben Sie 1 in das Bearbeitungsfeld **ein** .
+* Ziehen Sie den Schieberegler **räumlichkeits** Weise in **3D**, oder geben Sie 1 in das Bearbeitungsfeld **ein** .
 
 Wir erstellen nun das Projekt in Unity und konfigurieren die Projekt Mappe in Visual Studio.
 
 1. Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
 2. Klicken Sie auf **offene Szenen hinzufügen** , um die Szene hinzuzufügen.
-3. Wählen Sie in der Liste **Plattform** **universelle Windows-Plattform** aus, und klicken Sie auf **Plattform wechseln** .
+3. Wählen Sie in der Liste **Plattform** **universelle Windows-Plattform** aus, und klicken Sie auf **Plattform wechseln**.
 4. Wenn Sie speziell für hololens entwickeln, legen Sie **Zielgerät** auf **hololens** fest. Andernfalls sollten Sie es auf **jedem Gerät** belassen.
 5. Stellen Sie sicher, dass der **Buildtyp** auf **D3D** und das **SDK** auf **Latest installiert** festgelegt ist (was SDK 16299 oder höher sein sollte).
-6. Klicken Sie auf **Erstellen** .
+6. Klicken Sie auf **Erstellen**.
 7. Erstellen Sie einen **neuen Ordner** mit dem Namen "App".
 8. Klicken Sie einfach auf den **App** -Ordner.
-9. Drücken **Sie Ordner auswählen** .
+9. Drücken **Sie Ordner auswählen**.
 
 Wenn Unity abgeschlossen ist, wird ein Datei-Explorer-Fenster angezeigt.
 
 1. Öffnen Sie den **App** -Ordner.
-2. Öffnen Sie die Projekt Mappe **Decibel Visual Studio** .
+2. Öffnen Sie die Projekt Mappe **Decibel Visual Studio**.
 
 Bei der Bereitstellung in hololens:
 
-1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x86** .
+1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x86**.
 2. Klicken Sie auf den Dropdown Pfeil neben der Schaltfläche lokaler Computer, und wählen Sie **Remote Computer** aus.
-3. Geben Sie **die IP-Adresse des hololens-Geräts** ein, und legen Sie den Authentifizierungsmodus auf **Universal (unverschlüsseltes Protokoll)** Klicken Sie auf **Auswählen** . Wenn Sie die IP-Adresse Ihres Geräts nicht kennen, suchen Sie unter **Einstellungen > Netzwerk & Internet > Erweiterte Optionen** .
-4. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5** . Wenn Sie die Bereitstellung auf Ihrem Gerät zum ersten Mal durchführt, müssen Sie [es mit Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)koppeln.
+3. Geben Sie **die IP-Adresse des hololens-Geräts** ein, und legen Sie den Authentifizierungsmodus auf **Universal (unverschlüsseltes Protokoll)** Klicken Sie auf **Auswählen**. Wenn Sie die IP-Adresse Ihres Geräts nicht kennen, suchen Sie unter **Einstellungen > Netzwerk & Internet > Erweiterte Optionen**.
+4. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**. Wenn Sie die Bereitstellung auf Ihrem Gerät zum ersten Mal durchführt, müssen Sie [es mit Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)koppeln.
 
 Bei der Bereitstellung auf einem immersiven Headset:
 
-1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64** .
+1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64**.
 2. Stellen Sie sicher, dass das Bereitstellungs Ziel auf **lokaler Computer** festgelegt ist.
-3. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5** .
+3. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**.
 
 ## <a name="chapter-2---spatial-sound-and-interaction"></a>Kapitel 2: räumlicher Sound und Interaktion
 
@@ -144,7 +144,7 @@ Die folgenden Anweisungen fügen einen räumlichen Sound an ein Hologramm an.
 
 Project Decibel verwendet eine Unity- **Audiomixer** -Komponente, um das Anpassen von Sound Ebenen für Gruppen von Sounds zu ermöglichen. Durch das Gruppieren von Sounds auf diese Weise kann das Gesamt Volume angepasst werden, während die relative Menge der einzelnen Sounds beibehalten wird.
 
-* Erweitern Sie in der **audiosource** **3D Sound Settings** .
+* Erweitern Sie in der **audiosource** **3D Sound Settings**.
 * Legen Sie die **Doppler-Ebene** auf **0** fest.
 
 Durch das Festlegen von Doppler-Level auf NULL werden die Änderungen in der durch Bewegung (entweder im – Hologramm oder im Benutzer) verursachten Tonhöhe deaktiviert. Ein klassisches Beispiel für Doppler ist ein schnell beweglicher Wagen. Wenn sich das Auto auf einen stationären Listener nähert, steigt die Tonhöhe der Engine. Wenn Sie den Listener übergibt, wird die-Tonhöhe mit Distance gesenkt.
@@ -164,9 +164,9 @@ Ein Beispiel für die gewonnenen Erwartungen ist, dass die Vögel in der Regel �
 Mithilfe der folgenden Anweisungen können Sie P0LY hinter Ihnen verbergen, damit Sie den Sound verwenden können, um das Hologram zu suchen.
 
 * Wählen Sie im Bereich **Hierarchie** die Option **Manager** aus.
-* Suchen Sie im **Inspektor** -Panel den **Spracheingabe Handler** .
-* Erweitern Sie im **Spracheingabe Handler** den Bereich **Gehe ausblenden** .
-* Ändern Sie **keine Funktion** in **polyactions. gohide** .
+* Suchen Sie im **Inspektor** -Panel den **Spracheingabe Handler**.
+* Erweitern Sie im **Spracheingabe Handler** den Bereich **Gehe ausblenden**.
+* Ändern Sie **keine Funktion** in **polyactions. gohide**.
 
 ![Schlüsselwort: gehe ausblenden](images/gohide.png)
 
@@ -180,7 +180,7 @@ Mithilfe der folgenden Anweisungen können Sie P0LY hinter Ihnen verbergen, dami
 
 #### <a name="instructions"></a>Instructions
 
-* Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection** .
+* Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection**.
 * Erweitern Sie **energyhub** , und wählen Sie **Basis** aus.
 * Klicken Sie im **Inspektor** -Panel auf **Komponente hinzufügen** , und fügen Sie **Gesten Sound Handler** hinzu.
 * Klicken Sie in **Gesten Sound Handler** auf den Kreis neben **Navigation Started Clip** und **Navigation aktualisierte Clip** , und wählen Sie im Popup Fenster für beide den Bereich **rotateclick** aus.
@@ -188,16 +188,16 @@ Mithilfe der folgenden Anweisungen können Sie P0LY hinter Ihnen verbergen, dami
 
 Der Gesten Sound Handler führt die folgenden Aufgaben aus:
 
-* Erstellen und konfigurieren Sie eine **audiosource** .
-* Platzieren Sie die **audiosource** an der Position des entsprechenden **gameobject** .
+* Erstellen und konfigurieren Sie eine **audiosource**.
+* Platzieren Sie die **audiosource** an der Position des entsprechenden **gameobject**.
 * Gibt den **Audioclip** wieder, der mit der Geste verknüpft ist.
 
 #### <a name="build-and-deploy"></a>Erstellen und Bereitstellen
 
 1. Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
-2. Klicken Sie auf **Erstellen** .
+2. Klicken Sie auf **Erstellen**.
 3. Klicken Sie einfach auf den **App** -Ordner.
-4. Drücken **Sie Ordner auswählen** .
+4. Drücken **Sie Ordner auswählen**.
 
 Überprüfen Sie, ob die Symbolleiste "Release", "x86", "x64" und "Remote Gerät" heißt. Wenn dies nicht der Fall ist, ist dies die Codierungs Instanz von Visual Studio. Möglicherweise müssen Sie die Projekt Mappe aus dem App-Ordner erneut öffnen.
 
@@ -230,16 +230,16 @@ Beispielsweise sollte das Festlegen eines Cup für eine Tabelle einen ruhigeren 
 
 #### <a name="instructions"></a>Instructions
 
-* Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection** .
-* Erweitern Sie **energyhub** , und wählen Sie **Basis** aus.
+* Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection**.
+* Erweitern Sie **energyhub**, und wählen Sie **Basis** aus.
 * Klicken Sie im **Inspektor** -Panel auf **Komponente hinzufügen** , und fügen Sie **mit Sound und Action Tap** hinzu.
-* **Tippen Sie auf, um mit Sound und Action zu platzieren** :
-  * Aktivieren Sie **übergeordnetes Element bei tippen** .
+* **Tippen Sie auf, um mit Sound und Action zu platzieren**:
+  * Aktivieren Sie **übergeordnetes Element bei tippen**.
   * Legen Sie **Platzierungs Sound** auf **platzieren** fest.
   * Legen Sie **Pickup Sound** auf **Pickup** fest.
-  * Drücken Sie die Taste + unten rechts unter sowohl **bei der** Aufnahme-als auch bei der **Platzierungs Aktion** . Ziehen Sie energyhub aus der Szene in die Felder **None (Object)** .
+  * Drücken Sie die Taste + unten rechts unter sowohl **bei der** Aufnahme-als auch bei der **Platzierungs Aktion**. Ziehen Sie energyhub aus der Szene in die Felder **None (Object)** .
     * Klicken Sie unter **on Pickup Action** auf **No Function**  ->  **energyhubbase**  ->  **resettanimation.**
-    * Klicken Sie unter **Platzierungs Aktion** auf **keine Funktion**  ->  **energyhubbase**  ->  **onselect** .
+    * Klicken Sie unter **Platzierungs Aktion** auf **keine Funktion**  ->  **energyhubbase**  ->  **onselect**.
 
 ![Mit Sound und Action tippen](images/holograms220-taptoplace.png)
 
@@ -268,7 +268,7 @@ Die raycastnonalloc-Methode wird als Leistungsoptimierung verwendet, um Zuordnun
 
 Beachten Sie, dass audioemitter bei menschlichen Zeitskalen aktualisiert wird, im Gegensatz zu pro Frame. Der Grund hierfür ist, dass Menschen im Allgemeinen nicht schnell genug verschieben, damit die Auswirkungen häufiger als jedes Quartal oder die Hälfte der Sekunde aktualisiert werden müssen. Hologramme, die schnell von einem Speicherort an einen anderen teleportieren, können die Illusion unterbrechen.
 
-* Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection** .
+* Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection**.
 * Erweitern Sie **energyhub** , und wählen Sie **blobaußen** aus.
 * Klicken Sie im **Inspektor** -Panel auf **Komponente hinzufügen** , und fügen Sie **audiookokder** hinzu.
 * Legen Sie in **audiookder** den Umstellungs **Frequenz** -Wert auf **1500** fest.
@@ -298,14 +298,14 @@ Wenn sich mehrere okader im Pfad zwischen dem Benutzer und dem **audioemitter** 
 Wenn sich mehrere okader im Pfad zwischen dem Benutzer und dem **audioemitter** befinden, wird das Volume weitergeleitet.
 
 * Wählen Sie im Bereich **Hierarchie** die Option **Manager** aus.
-* Erweitern Sie im **Inspektor** -Panel den **Spracheingabe Handler** .
-* Erweitern Sie im **Spracheingabe Handler den Eintrag** **go-Belastung** .
-* Ändern Sie **keine Funktion** in **polyactions. goabgerechnet** .
+* Erweitern Sie im **Inspektor** -Panel den **Spracheingabe Handler**.
+* Erweitern Sie im **Spracheingabe Handler den Eintrag** **go-Belastung**.
+* Ändern Sie **keine Funktion** in **polyactions. goabgerechnet**.
 
 ![Schlüsselwort: go](images/gocharge.png)
 
-* Erweitern Sie **hier** .
-* Ändern Sie **keine Funktion** in **polyactions. ComeBack** .
+* Erweitern Sie **hier**.
+* Ändern Sie **keine Funktion** in **polyactions. ComeBack**.
 
 ![Schlüsselwort: hier](images/comehere.png)
 
@@ -441,26 +441,26 @@ In Unity können Sie eine Audiodatei für das Streaming in den Import Einstellun
 * Erweitern Sie **Underworld** , und wählen Sie **voicesource** aus.
 * Klicken Sie im **Inspektor** -Panel auf **Komponente hinzufügen** , und fügen Sie den **Benutzer sprach Effekt** hinzu.
 
-Eine **audiosource** -Komponente wird " **voicesource** " hinzugefügt.
+Eine **audiosource** -Komponente wird " **voicesource**" hinzugefügt.
 
 * Legen Sie in **audiosource** **Output** auf **UserVoice (Mixer)** fest.
 * Aktivieren Sie das Kontrollkästchen **spatialize** .
-* Ziehen Sie den Schieberegler **räumlichkeits** Weise in **3D** , oder geben Sie 1 in das Bearbeitungsfeld **ein** .
-* Erweitern Sie **3D-Sound Einstellungen** .
+* Ziehen Sie den Schieberegler **räumlichkeits** Weise in **3D**, oder geben Sie 1 in das Bearbeitungsfeld **ein** .
+* Erweitern Sie **3D-Sound Einstellungen**.
 * Legen Sie die **Doppler-Ebene** auf **0** fest.
 * Legen Sie unter **User Voice Effect** das über **geordnete Objekt** auf die **Unterwelt** aus der Szene fest.
 * Legen Sie **Max Distance** auf **1** fest.
 
 Durch das Festlegen von " **Max Distance** " wird der **Benutzer** darüber informiert, wie nah der Benutzer auf das übergeordnete Objekt sein muss, bevor der Effekt aktiviert ist.
 
-* Erweitern Sie unter **User Voice Effect** den Eintrag **Chorus Parameters** .
+* Erweitern Sie unter **User Voice Effect** den Eintrag **Chorus Parameters**.
 * Legen Sie die **Tiefe** auf **0,1** fest.
-* Legen Sie **Tap 1 Volume** , **Tap 2 Volume** und **3 Volume** auf **0,8** fest.
+* Legen Sie **Tap 1 Volume**, **Tap 2 Volume** und **3 Volume** auf **0,8** fest.
 * Legen Sie **ursprüngliches Sound Volume** auf **0,5** fest.
 
 Mit den vorherigen Einstellungen werden die Parameter des Unity- **audiochor-Filters** konfiguriert, der verwendet wird, um die Stimme des Benutzers zu ergänzen.
 
-* Erweitern Sie unter **User Voice Effect** den Eintrag **Echo Parameters** .
+* Erweitern Sie unter **User Voice Effect** den Eintrag **Echo Parameters**.
 * **Verzögerung** auf **300** festlegen
 * Legen Sie das **Zerfalls Verhältnis** auf **0,2** fest.
 * Legen Sie **ursprüngliches Sound Volume** auf **0** fest.
@@ -474,20 +474,20 @@ Das Skript für den Benutzer sprach Effekt ist für Folgendes zuständig:
 
 Der Benutzer muss das gameobject-Objekt, unabhängig von der Entfernung, sehen, damit der Effekt aktiviert wird.
 
-* Anwenden und Konfigurieren eines **audiochor-Filters** und eines **audioechofilters** auf die **audiosource** .
+* Anwenden und Konfigurieren eines **audiochor-Filters** und eines **audioechofilters** auf die **audiosource**.
 * Deaktivieren der Auswirkung durch Deaktivieren der Filter.
 
 Der Benutzer sprach Effekt verwendet die MIC-Datenstrom Auswahl Komponente aus dem [mixedrealitytoolkit für Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity), um den hochwertigen Voice-Stream auszuwählen und ihn in das Audiosystem von Unity weiterzuleiten.
 
 * Wählen Sie im Bereich **Hierarchie** die Option **Manager** aus.
-* Erweitern Sie im **Inspektor** -Panel den **Spracheingabe Handler** .
-* Erweitern Sie in **Spracheingabe Handler** die Option **Unterwelt anzeigen** .
-* Ändern Sie **keine Funktion** in " **underworldbase. onenable** ".
+* Erweitern Sie im **Inspektor** -Panel den **Spracheingabe Handler**.
+* Erweitern Sie in **Spracheingabe Handler** die Option **Unterwelt anzeigen**.
+* Ändern Sie **keine Funktion** in " **underworldbase. onenable**".
 
 ![Schlüsselwort: Unterwelt anzeigen](images/showunderworld.png)
 
-* Erweitern Sie die Option **Unterwelt ausblenden** .
-* Ändern Sie **keine Funktion** in **underworldbase. ondeaktiviert** .
+* Erweitern Sie die Option **Unterwelt ausblenden**.
+* Ändern Sie **keine Funktion** in **underworldbase. ondeaktiviert**.
 
 ![Schlüsselwort: Ausblenden der Unterwelt](images/hideunderworld.png)
 
@@ -497,7 +497,7 @@ Der Benutzer sprach Effekt verwendet die MIC-Datenstrom Auswahl Komponente aus d
 
 Nachdem die Anwendung bereitgestellt wurde:
 
-* Stellen Sie eine Oberfläche (Wall, Floor, Table) dar, und sagen Sie *"Show Underworld"* .
+* Stellen Sie eine Oberfläche (Wall, Floor, Table) dar, und sagen Sie *"Show Underworld"*.
 
 Die Unterwelt wird angezeigt, und alle anderen holograms werden ausgeblendet. Wenn die Unterwelt nicht angezeigt wird, stellen Sie sicher, dass Sie mit der realen Oberfläche konfrontiert sind.
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Koordinatensystem, räumliches Koordinatensystem, nur Ausrichtung, in sitzender Skala, in der Skala, auf der Raum Skala, auf der ganzen Welt, 360 Grad, sitzend, stehend, Raum, Welt, Skala, Position, Ausrichtung, Unity, Anker, räumlicher Anker, Welt Anker, Welt-gesperrt, Platzsperre, gesperrter Text, Nachverfolgung, Nachverfolgung, Platz
-ms.openlocfilehash: 59fae57f3ca5048f4027ed96fca03255683c1fe3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Koordinatensystem, räumliches Koordinatensystem, nur Ausrichtung, sitzender Skalierung, Raum Skalierung, Welt weite, 360 Grad, sitzend, Position, Raum, Welt, Skala, Position, Ausrichtung, Unity, Anker, räumlicher Anker, Welt Anker, weltweit gesperrt, Platzsperre, gesperrter Text, Body-Lock, nach Verfolgungs Verlust, loerbarkeit, Begrenzungen, recenter, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678987"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678679"
 ---
 # <a name="coordinate-systems-in-unity"></a>Koordinatensysteme in Unity
 
@@ -101,7 +101,7 @@ Um einen Welt Anker hinzuzufügen, nennen Sie addComponent <WorldAnchor> () für
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-Das war's. Dieses Spielobjekt wird nun an seinem aktuellen Speicherort in der physischen Welt verankert. möglicherweise werden die Unity-Weltkoordinaten im Laufe der Zeit leicht angepasst, um die physische Ausrichtung sicherzustellen. Verwenden Sie [Persistenz](persistence-in-unity.md) , um diesen verankerten Standort in einer zukünftigen App-Sitzung wieder zu suchen.
+Das ist alles! Dieses Spielobjekt wird nun an seinem aktuellen Speicherort in der physischen Welt verankert. möglicherweise werden die Unity-Weltkoordinaten im Laufe der Zeit leicht angepasst, um die physische Ausrichtung sicherzustellen. Verwenden Sie [Persistenz](persistence-in-unity.md) , um diesen verankerten Standort in einer zukünftigen App-Sitzung wieder zu suchen.
 
 ### <a name="removing-a-world-anchor"></a>Entfernen eines Welt Ankers
 
@@ -168,19 +168,19 @@ Um mit der Einführung von freigegebenen Erfahrungen in Unity zu beginnen, teste
 
 Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Anker in Unity erstellen und lokalisieren</a>.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
 Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, dass Sie die Grundbausteine der gemischten Realität erkunden. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Anvisieren](gaze-in-unity.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [Gemeinsame Erfahrung](shared-experiences-in-unity.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Skalierungsmöglichkeiten](../../design/coordinate-systems.md#mixed-reality-experience-scales)

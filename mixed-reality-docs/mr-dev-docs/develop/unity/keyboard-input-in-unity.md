@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Tastatur, Eingabe, Unity, touchscreenkeyboard
-ms.openlocfilehash: 806051a4ea429a058b271a55d7f5fc41503e346b
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: Tastatur, Eingabe, Unity, touchscreenkeyboard, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293150"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677419"
 ---
 # <a name="keyboard-input-in-unity"></a>Tastatureingabe in Unity
 
 **Namespace:** *unityengine*<br>
- **Typ**: * [touchscreenkeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
+ **Typ**: *[touchscreenkeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
 Obwohl hololens viele Formen von Eingaben einschließlich Bluetooth-Tastaturen unterstützt, können die meisten Anwendungen nicht davon ausgehen, dass für alle Benutzer eine physische Tastatur verfügbar ist. Wenn für Ihre Anwendung Texteingaben erforderlich sind, sollte eine Form von auf Bildschirmtastatur angegeben werden.
 
@@ -48,7 +48,7 @@ Es stehen sechs verschiedene Tastatur Ansichten zur Verfügung:
 
 Die System Tastatur hololens ist nur für Unity-Anwendungen verfügbar, die mit dem "UWP Build Type" auf "XAML" exportiert werden. Wenn Sie "XAML" als "UWP Build Type" über "D3D" auswählen, müssen Sie die vor-und Nachteile treffen. Wenn Sie mit diesen vor-und Nachteile nicht vertraut sind, möchten Sie möglicherweise eine [Alternative Eingabe Lösung](#alternative-keyboard-options) für die System Tastatur untersuchen.
 1. Öffnen Sie das Menü **Datei** , und wählen Sie Buildeinstellungen aus **.**
-2. Stellen Sie sicher, dass die **Plattform** auf **Windows Store**festgelegt ist, das **SDK** auf **Universal 10**festgelegt ist, und legen Sie den **UWP-Buildtyp** auf **XAML**fest.
+2. Stellen Sie sicher, dass die **Plattform** auf **Windows Store** festgelegt ist, das **SDK** auf **Universal 10** festgelegt ist, und legen Sie den **UWP-Buildtyp** auf **XAML** fest.
 3. Klicken Sie im Dialogfeld " **Buildeinstellungen** " auf die Schaltfläche **Player Einstellungen...** .
 4. Wählen Sie die Registerkarte **Einstellungen für Windows Store aus** .
 5. Erweitern Sie die Gruppe **andere Einstellungen** .

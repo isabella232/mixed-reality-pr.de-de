@@ -5,17 +5,17 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Streaming, Remoting, Mixed Reality, Development, Getting Started, Features, New Project, Emulator, Documentation, Guides, Features, holograms, Game Development, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, WinRT, dll
+ms.openlocfilehash: fd50e5ecd3186fc8852936affbfedc3d5fd4de75
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573294"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679809"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Im Verlauf der hololens-Entwicklung müssen Sie möglicherweise eine Funktion mit WinRT schreiben. Wenn Sie z. b. eine Datei Dialogfeld in einer hololens-Anwendung öffnen, benötigen Sie die filesavepicker in der Header Datei WinRT/Windows. Storage. Pickers. h.  Da Unreal WinRT-Code nicht nativ kompiliert, ist es Ihre Aufgabe, eine separate Binärdatei zu erstellen, die vom Buildsystem von Unreal verwendet werden kann. Dieses Tutorial führt Sie durch ein solches Szenario.
 
@@ -46,7 +46,7 @@ Im Verlauf der hololens-Entwicklung müssen Sie möglicherweise eine Funktion mi
 3. Bevor Sie Code hinzufügen, müssen Sie die Projekteigenschaften aktualisieren, um sicherzustellen, dass der benötigte WinRT-Code kompiliert werden kann: 
     * Klicken Sie mit der rechten Maustaste auf das Projekt hololenswinrtdll, und wählen Sie **Eigenschaften**  
     * Ändern Sie die Dropdown Liste **Konfiguration** auf **alle Konfigurationen** und die Dropdown Liste für die **Plattform** auf **alle Plattformen** .  
-    * Unter **Konfigurations Eigenschaften> C/C++> alle Optionen** :
+    * Unter **Konfigurations Eigenschaften> C/C++> alle Optionen**:
         * Fügen Sie **zusätzliche Optionen** hinzu **, um sicher** zustellen, dass wir auf asynchrone Tasks warten können.  
         * Ändern Sie den **C++-Sprachstandard** in **ISO C++ 17 Standard (/Std: C++ 17)** , um WinRT-Code einzubeziehen.
 
@@ -180,7 +180,7 @@ Das Verknüpfen und Verwenden einer DLL in Unreal erfordert ein C++-Projekt. Wen
 > [!NOTE]
 > Eine Projekt Mappe wurde nun im gleichen Verzeichnis wie die uproject-Datei erstellt, zusammen mit einem neuen Buildskript mit dem Namen "Source/consumewinrt/consumewinrt. Build. cs".
 
-2. Öffnen Sie die Projekt Mappe, suchen Sie nach dem Ordner **Games/consumewinrt/Source/consumewinrt** , und öffnen Sie **ConsumeWinRT.Build.cs** :
+2. Öffnen Sie die Projekt Mappe, suchen Sie nach dem Ordner **Games/consumewinrt/Source/consumewinrt** , und öffnen Sie **ConsumeWinRT.Build.cs**:
 
 ![Öffnen der ConsumeWinRT.Build.cs-Datei](images/unreal-winrt-img-05.png)
 
@@ -287,7 +287,7 @@ void AWinrtActor::OpenFileDialogue()
 
 ![Ziehen von winrtactor in den Stufen Blueprint](images/unreal-winrt-img-07.png)
 
-3. Ziehen Sie in der Ebene Blueprint den Ausgabe Knoten von winrtactor, suchen Sie nach dem Dialogfeld " **Datei öffnen** ", und leiten Sie den Knoten von jeder Benutzereingabe weiter.  In diesem Fall wird das Dialogfeld "Datei öffnen" von einem sprach Ereignis aufgerufen: 
+3. Ziehen Sie in der Ebene Blueprint den Ausgabe Knoten von winrtactor, suchen Sie nach dem Dialogfeld " **Datei öffnen**", und leiten Sie den Knoten von jeder Benutzereingabe weiter.  In diesem Fall wird das Dialogfeld "Datei öffnen" von einem sprach Ereignis aufgerufen: 
 
 ![Konfigurieren von Knoten in der Ebene Blueprint](images/unreal-winrt-img-08.png)
 
@@ -306,7 +306,7 @@ Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen hab
 > [!div class="nextstepaction"]
 > [Bereitstellung auf Gerät](unreal-deploying.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [C++/WinRT-APIs](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [Filesavepicker-Klasse](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
 * [Unreal-Bibliotheken von Drittanbietern](https://docs.unrealengine.com/Programming/BuildTools/UnrealBuildTool/ThirdPartyLibraries/index.html) 

@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Unity, Tutorial, hololens2, räumliche Audiodaten
-ms.openlocfilehash: 9ddfd1644a20ac063551b8140f9f8950ae172196
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
+ms.openlocfilehash: fc657eb22034c1c3fd31aadedfe7b8ea7bb8447d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689862"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679709"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Hinzufügen räumlicher Audiodaten zu Ihrem Unity-Projekt
 
@@ -51,7 +51,7 @@ Suchen und installieren Sie dann das **Windows Mixed Reality** -Paket:
 
 ## <a name="install-mrtk-and-microsoft-spatializer"></a>Installieren von mrtk und Microsoft spatializer
 Installieren Sie mithilfe von nuget für Unity die mrtk-und Microsoft spatializer-Plug-ins:
-1. Klicken Sie in der Unity-Menüleiste auf **nuget-> nuget-Pakete verwalten** .
+1. Klicken Sie in der Unity-Menüleiste auf **nuget-> nuget-Pakete verwalten**.
 
 ![NuGet-Pakete verwalten](images/spatial-audio/manage-nuget-packages.png)
 
@@ -73,7 +73,7 @@ Das [mrtk-nuget-Paket](https://microsoft.github.io/MixedRealityToolkit-Unity/Doc
 
 3. Klicken Sie im **Fenster erstellen** auf **Player Einstellungen** , um die Eigenschaften für **Player Einstellungen** im **Inspektor** -Bereich zu öffnen.
     * Aktivieren Sie unter **XR-Einstellungen** das Kontrollkästchen **Virtual Reality supported** .
-    * Ändern Sie unter " **XR Settings** " den **Stereo-Renderingmodus** in **Single Pass-instanziierten** .
+    * Ändern Sie unter " **XR Settings**" den **Stereo-Renderingmodus** in **Single Pass-instanziierten**.
     * Aktivieren Sie unter **Veröffentlichungs Einstellungen** das Kontrollkästchen **räumliche Wahrnehmung** im Abschnitt " **Funktionen** ".
 
 4. Klicken Sie in der Menüleiste auf **Mixed Reality Toolkit-> zu Szene hinzufügen und konfigurieren.** , um mrtk Ihrer Szene hinzuzufügen.
@@ -81,12 +81,12 @@ Das [mrtk-nuget-Paket](https://microsoft.github.io/MixedRealityToolkit-Unity/Doc
 Weitere Anleitungen, einschließlich der Erstellung der APP und Bereitstellung auf einem hololens 2, finden Sie in [Kapitel 1 des Lern Basismoduls von Mr](../../../mrlearning-base-ch1.md).
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Aktivieren des Microsoft spatializer-Plug-ins
-Aktivieren Sie das **Microsoft spatializer** -Plug-in. Öffnen Sie die **Projekteinstellungen bearbeiten-> > Audiodatei** , und ändern Sie das **spatializer-Plug** -in in "Microsoft spatializer". Der **Audioabschnitt** der **Projekteinstellungen** sieht nun wie folgt aus:
+Aktivieren Sie das **Microsoft spatializer** -Plug-in. Öffnen Sie die **Projekteinstellungen bearbeiten-> > Audiodatei**, und ändern Sie das **spatializer-Plug** -in in "Microsoft spatializer". Der **Audioabschnitt** der **Projekteinstellungen** sieht nun wie folgt aus:
 
 ![Projekteinstellungen mit dem spatializer-Plug-in](images/spatial-audio/project-settings.png)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>Aktivieren räumlicher Audiodaten auf Ihrer Arbeitsstation
-Unter Desktop Versionen von Windows ist das räumliche Audioformat standardmäßig deaktiviert. Aktivieren Sie diese Option, indem Sie in der Taskleiste mit der rechten Maustaste auf das Volume-Symbol klicken. Um die beste Darstellung von hololens 2 zu erhalten, wählen Sie **räumliches Sound-> Windows-Sonic für Kopfhörer aus** .
+Unter Desktop Versionen von Windows ist das räumliche Audioformat standardmäßig deaktiviert. Aktivieren Sie diese Option, indem Sie in der Taskleiste mit der rechten Maustaste auf das Volume-Symbol klicken. Um die beste Darstellung von hololens 2 zu erhalten, wählen Sie **räumliches Sound-> Windows-Sonic für Kopfhörer aus**.
 
 ![Desktop Einstellungen für räumliche Desktops](images/spatial-audio/desktop-audio-settings.png)
 

@@ -1,17 +1,17 @@
 ---
-title: Mr und Azure 302b-benutzerdefinierte Vision
+title: 'MR und Azure 302b: Benutzerdefiniertes Sehen'
 description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie ein Machine Learning-Modell trainieren, und verwenden Sie dann das trainierte Modell, um ähnliche Objekte in einer gemischten Realität zu erkennen.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Custom Vision, hololens, immersive, VR
-ms.openlocfilehash: 857cdc00daa94db5bb4d4fda1d5adfcf0ba28822
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Custom Vision, hololens, immersive, VR, Windows 10, Visual Studio
+ms.openlocfilehash: d40dc1cf23ee8040406047eaddd7ee3b70365199
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91688123"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679549"
 ---
 # <a name="mr-and-azure-302b-custom-vision"></a>MR und Azure 302b: Custom Vision
 
@@ -33,9 +33,9 @@ Bei Azure Custom Vision handelt es sich um einen Microsoft Cognitive Service, de
 
 Nach Abschluss dieses Kurses verfügen Sie über eine Mixed Reality-Anwendung, die in zwei Modi arbeiten kann:
 
--   **Analysemodus** : Manuelles Einrichten der Custom Vision Service durch Hochladen von Bildern, Erstellen von Tags und trainieren des Dienstanbieter, um unterschiedliche Objekte (in diesem Fall Maus und Tastatur) zu erkennen. Anschließend erstellen Sie eine hololens-APP, mit der Bilder mithilfe der Kamera erfasst werden, und versuchen, diese Objekte in der realen Welt zu erkennen.
+-   **Analysemodus**: Manuelles Einrichten der Custom Vision Service durch Hochladen von Bildern, Erstellen von Tags und trainieren des Dienstanbieter, um unterschiedliche Objekte (in diesem Fall Maus und Tastatur) zu erkennen. Anschließend erstellen Sie eine hololens-APP, mit der Bilder mithilfe der Kamera erfasst werden, und versuchen, diese Objekte in der realen Welt zu erkennen.
 
--   **Schulungs Modus** : Sie implementieren Code, der einen "Schulungs Modus" in ihrer App aktiviert. Der Trainingsmodus ermöglicht Ihnen das Erfassen von Bildern mithilfe der Kamera von hololens, das Hochladen der aufgezeichneten Images in den Dienst und das Trainieren des benutzerdefinierten Vision-Modells.
+-   **Schulungs Modus**: Sie implementieren Code, der einen "Schulungs Modus" in ihrer App aktiviert. Der Trainingsmodus ermöglicht Ihnen das Erfassen von Bildern mithilfe der Kamera von hololens, das Hochladen der aufgezeichneten Images in den Dienst und das Trainieren des benutzerdefinierten Vision-Modells.
 
 In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Custom Vision Service in einer Unity-basierten Beispielanwendung erhalten. Sie müssen diese Konzepte auf eine benutzerdefinierte Anwendung anwenden, die Sie möglicherweise aufbauen.
 
@@ -100,7 +100,7 @@ Um die *Custom Vision Service* in Azure verwenden zu können, müssen Sie eine I
 
     ![Vertragsbedingungen](images/AzureLabs-Lab302b-03.png)
 
-5.  Nachdem Sie die Bedingungen zugestimmt haben, werden Sie zum Abschnitt " *Projekte* " im Portal navigiert. Klicken Sie auf **Neues Projekt** .
+5.  Nachdem Sie die Bedingungen zugestimmt haben, werden Sie zum Abschnitt " *Projekte* " im Portal navigiert. Klicken Sie auf **Neues Projekt**.
 
     ![Erstellen eines neuen Projekts](images/AzureLabs-Lab302b-04.png)
 
@@ -108,7 +108,7 @@ Um die *Custom Vision Service* in Azure verwenden zu können, müssen Sie eine I
 
     1.  Fügen Sie einen *Namen* für das Projekt ein.
 
-    2.  Fügen Sie eine *Beschreibung* für das Projekt ein ( *optional* ).
+    2.  Fügen Sie eine *Beschreibung* für das Projekt ein (*optional*).
 
     3.  Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue *Ressourcengruppe* . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
@@ -120,7 +120,7 @@ Um die *Custom Vision Service* in Azure verwenden zu können, müssen Sie eine I
 
         > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
 
-7.  Wenn Sie fertig sind, klicken Sie auf **Projekt erstellen** . Sie werden auf die Seite Custom Vision Service, Projekt, umgeleitet.
+7.  Wenn Sie fertig sind, klicken Sie auf **Projekt erstellen**. Sie werden auf die Seite Custom Vision Service, Projekt, umgeleitet.
 
 ## <a name="chapter-2---training-your-custom-vision-project"></a>Kapitel 2: trainieren Ihres Custom Vision Projekts
 
@@ -132,7 +132,7 @@ So trainieren Sie das Custom Vision Service Projekt:
 
     ![Hinzufügen eines neuen Tags](images/AzureLabs-Lab302b-06.png)
 
-2.  Fügen Sie den **Namen** des Objekts hinzu, das Sie erkennen möchten. Klicken Sie auf **Speichern** .
+2.  Fügen Sie den **Namen** des Objekts hinzu, das Sie erkennen möchten. Klicken Sie auf **Speichern**.
 
     ![Objektnamen hinzufügen und speichern](images/AzureLabs-Lab302b-07.png)
 
@@ -144,7 +144,7 @@ So trainieren Sie das Custom Vision Service Projekt:
 
     ![Hinzufügen von Bildern](images/AzureLabs-Lab302b-09.png)
 
-5.  Klicken Sie auf **lokale Dateien durchsuchen** , suchen Sie, und wählen Sie dann die Images aus, die Sie hochladen möchten, mit dem Minimalwert fünf (5). Denken Sie daran, dass alle diese Images das Objekt enthalten sollten, das Sie trainieren.
+5.  Klicken Sie auf **lokale Dateien durchsuchen**, suchen Sie, und wählen Sie dann die Images aus, die Sie hochladen möchten, mit dem Minimalwert fünf (5). Denken Sie daran, dass alle diese Images das Objekt enthalten sollten, das Sie trainieren.
 
     > [!NOTE]
     >  Sie können mehrere Bilder gleichzeitig zum Hochladen auswählen.
@@ -153,26 +153,26 @@ So trainieren Sie das Custom Vision Service Projekt:
 
     ![Tags auswählen](images/AzureLabs-Lab302b-10.png)
 
-7.  Klicken Sie auf **Dateien hochladen** . Die Dateien werden hochgeladen. Nachdem Sie den Upload bestätigt haben, klicken Sie auf **done** .
+7.  Klicken Sie auf **Dateien hochladen**. Die Dateien werden hochgeladen. Nachdem Sie den Upload bestätigt haben, klicken Sie auf **done**.
 
     ![Hochladen von Dateien](images/AzureLabs-Lab302b-11.png)
 
 8.  Wiederholen Sie den Vorgang, um ein neues **Tag** mit dem Namen **Tastatur** zu erstellen, und laden Sie die entsprechenden Fotos dafür hoch. Wenn Sie die neuen Tags erstellt haben, **Deaktivieren** Sie die *Maus* , um das Fenster *Bilder hinzufügen* anzuzeigen.
 
-9.  Nachdem Sie beide Tags eingerichtet haben, klicken Sie auf **trainieren** , und die erste Trainings Iterationen wird erstellt.
+9.  Nachdem Sie beide Tags eingerichtet haben, klicken Sie auf **trainieren**, und die erste Trainings Iterationen wird erstellt.
 
     ![Trainings Iterationen aktivieren](images/AzureLabs-Lab302b-12.png)
 
-10. Nachdem er erstellt wurde, können Sie zwei Schaltflächen mit dem Namen " **default** " und die **Vorhersage-URL** anzeigen. Klicken Sie zuerst auf **Standardwert erstellen** , und klicken Sie dann auf **Vorhersage-URL** .
+10. Nachdem er erstellt wurde, können Sie zwei Schaltflächen mit dem Namen " **default** " und die **Vorhersage-URL** anzeigen. Klicken Sie zuerst auf **Standardwert erstellen** , und klicken Sie dann auf **Vorhersage-URL**.
 
     ![Standard-und Vorhersage-URL erstellen](images/AzureLabs-Lab302b-13.png)
 
     > [!NOTE] 
     > Die Endpunkt-URL, die von diesem bereitgestellt wird, wird auf den Wert festgelegt, welcher *iterations* Wert als Standard markiert wurde. Wenn Sie später eine neue *iterations* Zeit erstellen und diese als Standard aktualisieren, müssen Sie den Code nicht ändern.
 
-11. Nachdem Sie auf die *Vorhersage-URL* geklickt haben, öffnen Sie *Notepad* , kopieren Sie die **URL** und den **Vorhersage Schlüssel** , und fügen Sie Sie ein, damit Sie Sie später im Code abrufen können.
+11. Nachdem Sie auf die *Vorhersage-URL* geklickt haben, öffnen Sie *Notepad*, kopieren Sie die **URL** und den **Vorhersage Schlüssel**, und fügen Sie Sie ein, damit Sie Sie später im Code abrufen können.
 
-    ![Kopieren und Einfügen einer URL und eines Vorhersage Schlüssels](images/AzureLabs-Lab302b-14.png)
+    ![Kopieren und Einfügen von URL und Prediction-Key](images/AzureLabs-Lab302b-14.png)
 
 12. Klicken Sie rechts oben auf dem Bildschirm auf das **Zahnrad** Symbol.
 
@@ -182,7 +182,7 @@ So trainieren Sie das Custom Vision Service Projekt:
 
     ![Schulungs Schlüssel kopieren](images/AzureLabs-Lab302b-16.png)
 
-14. Kopieren Sie auch die **Projekt-ID** , und fügen Sie Sie zur späteren Verwendung in die *Notepad* -Datei ein.
+14. Kopieren Sie auch die **Projekt-ID**, und fügen Sie Sie zur späteren Verwendung in die *Notepad* -Datei ein.
 
     ![Projekt-ID kopieren](images/AzureLabs-Lab302b-16a.png)
 
@@ -190,15 +190,15 @@ So trainieren Sie das Custom Vision Service Projekt:
 
 Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Realität und ist daher eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie *Unity* , und klicken Sie auf **neu** .
+1.  Öffnen Sie *Unity* , und klicken Sie auf **neu**.
 
     ![Erstellen eines neuen Unity-Projekts](images/AzureLabs-Lab302b-17.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen Sie **azurecustomvision ein.** Stellen Sie sicher, dass die Projektvorlage auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen** .
+2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen Sie **azurecustomvision ein.** Stellen Sie sicher, dass die Projektvorlage auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
 
     ![Konfigurieren von Projekteinstellungen](images/AzureLabs-Lab302b-18.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit*  >  *Einstellungen* bearbeiten* , und navigieren Sie dann im neuen Fenster zu **externe Tools** . Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017** . Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit*  >  *Einstellungen* bearbeiten* , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Externe Tools konfigurieren](images/AzureLabs-Lab302b-19.png)
 
@@ -226,7 +226,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
             ![Neuen Szenen Ordner erstellen](images/AzureLabs-Lab302b-22.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname:* Text den Text **customvisionscene** ein, und klicken Sie dann auf **Speichern** .
+        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname:* Text den Text **customvisionscene** ein, und klicken Sie dann auf **Speichern**.
 
             ![Neue Szenen Datei benennen](images/AzureLabs-Lab302b-23.png)
 
@@ -242,7 +242,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
     1.  Auf der Registerkarte **andere Einstellungen** :
 
-        1.  Die CLR- **Lauf Zeit Version** sollte **experimentell sein (.NET 4,6-Entsprechung)** , wodurch der Editor neu gestartet werden muss.
+        1.  Die CLR- **Lauf Zeit Version** sollte **experimentell sein (.NET 4,6-Entsprechung)**, wodurch der Editor neu gestartet werden muss.
 
         2. **Skript** -Back-End sollte **.net** sein
 
@@ -260,7 +260,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
         ![Konfigurieren von Veröffentlichungseinstellungen](images/AzureLabs-Lab302b-26.png)
 
-    3.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen** ), **unterstützt Tick Virtual Reality** , stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    3.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
 
     ![Konfigurieren von XR-Einstellungen](images/AzureLabs-Lab302b-27.png)
 
@@ -268,7 +268,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
 9.  Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
 
-10.  Speichern Sie Ihre Szene und Ihr Projekt ( **Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
+10.  Speichern Sie Ihre Szene und Ihr Projekt (**Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
 
 
 ## <a name="chapter-4---importing-the-newtonsoft-dll-in-unity"></a>Kapitel 4: Importieren der newtonsoft-dll in Unity
@@ -287,11 +287,11 @@ Verwenden Sie das Unity-Paket, das in diesem Kurs verwendet wurde, um die newton
 
 3.  Klicken Sie auf die Schaltfläche **importieren** , um dem Projekt die Elemente hinzuzufügen.
 
-4.  Wechseln Sie in der Projektansicht unter Plug **-in in** den Ordner **Newton Soft** , und wählen Sie die *Newtonsoft.Jsfür das Plug* -in aus.
+4.  Wechseln Sie in der Projektansicht unter Plug **-in in** den Ordner **Newton Soft** , und wählen Sie die *Newtonsoft.Jsfür das Plug*-in aus.
 
     ![Newtonsoft-Plug-in auswählen](images/AzureLabs-Lab302b-29.png)
 
-5.  Stellen **Sie sicher** , dass die Option *für das Plug-inNewtonsoft.Js* **aktiviert** ist, und stellen Sie sicher, dass **alle Plattformen** deaktiviert sind. Stellen Sie dann **sicher, dass** der **wsaplayer** Dies dient nur zur Bestätigung, dass die Dateien ordnungsgemäß konfiguriert sind.
+5.  Stellen **Sie sicher**, dass die Option *für das Plug-inNewtonsoft.Js* **aktiviert** ist, und stellen Sie sicher, dass **alle Plattformen** deaktiviert sind. Stellen Sie dann **sicher, dass** der **wsaplayer** Dies dient nur zur Bestätigung, dass die Dateien ordnungsgemäß konfiguriert sind.
 
     ![Konfigurieren des Newton Soft-Plug-ins](images/AzureLabs-Lab302b-30.png)
 
@@ -345,13 +345,13 @@ Diese Klasse ist für Folgendes zuständig:
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie im *Projekt Panel* mit der rechten Maustaste in den *Ordner Asset* , und klicken Sie dann auf **> Ordner erstellen** . Nennen Sie die Ordner **Skripts** .
+1.  Klicken Sie im *Projekt Panel* mit der rechten Maustaste in den *Ordner Asset* , und klicken Sie dann auf **> Ordner erstellen**. Nennen Sie die Ordner **Skripts**.
 
     ![Ordner für die Skripterstellung](images/AzureLabs-Lab302b-33.png)
 
 2.  Doppelklicken Sie auf den soeben erstellten Ordner, um ihn zu öffnen.
 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner **Create** , und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript *customvisionanalyser* .
+3.  Klicken Sie mit der rechten Maustaste in den Ordner **Create**, und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript *customvisionanalyser*.
 
 4.  Doppelklicken Sie auf das neue *customvisionanalyser* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -405,12 +405,12 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8.  Löschen Sie die Methoden " **Start ()** " und " **Update ()** ".
+8.  Löschen Sie die Methoden " **Start ()** " und " **Update ()**".
 
 9.  Fügen Sie als nächstes die Coroutine hinzu (mit der statischen **getimageasbytearray ()** -Methode darunter), die die Ergebnisse der Analyse des Bilds erhält, das von der *imagecapture* -Klasse erfasst wird.
 
     > [!NOTE]
-    > In der **analyseimagecapture** -Coroutine gibt es einen Aufrufen der *sceneorganisator* -Klasse, die Sie noch erstellen müssen. Deshalb sollten Sie **diese Zeilen jetzt kommentiert lassen** .
+    > In der **analyseimagecapture** -Coroutine gibt es einen Aufrufen der *sceneorganisator* -Klasse, die Sie noch erstellen müssen. Deshalb sollten Sie **diese Zeilen jetzt kommentiert lassen**.
 
     ```csharp    
         /// <summary>
@@ -476,7 +476,7 @@ Dieses Skript enthält eine Reihe von Objekten, die von anderen Klassen zum Seri
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts** , und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisionobjects* .
+1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisionobjects*.
 
 2.  Doppelklicken Sie auf das neue **customvisionobjects** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -613,7 +613,7 @@ Diese Klasse erkennt die Spracheingabe des Benutzers.
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts** , und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *voicerecognizer* .
+1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *voicerecognizer*.
 
 2.  Doppelklicken Sie auf das neue **voicerecognizer** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -721,7 +721,7 @@ Diese Klasse verkettet eine Reihe von webaufrufen, um die *Custom Vision Service
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts** , und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisiontrainer* .
+1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisiontrainer*.
 
 2.  Doppelklicken Sie auf das neue *customvisiontrainer* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1082,7 +1082,7 @@ Diese Klasse führt Folgendes aus:
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts** , und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *sceneorganisator* .
+1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *sceneorganisator*.
 
 2.  Doppelklicken Sie auf das neue *sceneorganisator* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1352,7 +1352,7 @@ So erstellen Sie diese Klasse:
 
 1.  Wechseln Sie zum Ordner " **Scripts** ", den Sie zuvor erstellt haben.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie dann auf **Create > C \# Script** . Benennen Sie das Skript mit *imagecapture* .
+2.  Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie dann auf **Create > C \# Script**. Benennen Sie das Skript mit *imagecapture*.
 
 3.  Doppelklicken Sie auf das neue **imagecapture** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1624,7 +1624,7 @@ So erstellen Sie diese Klasse:
 
 10. Stellen Sie sicher, dass Sie die Änderungen in **Visual Studio** speichern, bevor Sie zu **Unity** zurückkehren.
 
-11. Nachdem alle Skripts abgeschlossen sind, wechseln Sie zurück zum Unity-Editor, und klicken Sie dann auf die Klasse **sceneorganisator** aus dem Ordner **Scripts** auf das **Hauptkamera** Objekt im Bereich *Hierarchie* .
+11. Nachdem alle Skripts abgeschlossen sind, wechseln Sie zurück zum Unity-Editor, und klicken Sie dann auf die Klasse **sceneorganisator** aus dem Ordner **Scripts** auf das **Hauptkamera** Objekt im Bereich *Hierarchie*.
 
 ## <a name="chapter-12---before-building"></a>Kapitel 12: vor dem Aufbau
 
@@ -1634,7 +1634,7 @@ Bevor Sie vorgehen, stellen Sie Folgendes sicher:
 
 - Alle in [Kapitel 2](#chapter-2---training-your-custom-vision-project) erwähnten Einstellungen sind richtig festgelegt.
 
-- Alle Felder in der **Hauptkamera** , Inspektor Panel, sind ordnungsgemäß zugewiesen.
+- Alle Felder in der **Hauptkamera**, Inspektor Panel, sind ordnungsgemäß zugewiesen.
 
 - Das Skript **sceneorganisator** ist an das **Hauptkamera** Objekt angefügt.
 
@@ -1650,11 +1650,11 @@ Bevor Sie vorgehen, stellen Sie Folgendes sicher:
 
 So beginnen Sie *den* Buildprozess:
 
-1.  Wechseln Sie zu **Datei > Buildeinstellungen** .
+1.  Wechseln Sie zu **Datei > Buildeinstellungen**.
 
-2.  Teil Strich **Unity-C- \# Projekte** .
+2.  Teil Strich **Unity-C- \# Projekte**.
 
-3.  Klicken Sie auf **Erstellen** . Unity startet ein **Datei-Explorer** -Fenster, in dem Sie einen Ordner erstellen und auswählen müssen, in dem die App erstellt wird. Erstellen Sie diesen Ordner jetzt, und nennen Sie ihn " **App** ". Klicken Sie dann mit ausgewähltem **App** -Ordner auf **Ordner auswählen** .
+3.  Klicken Sie auf **Erstellen**. Unity startet ein **Datei-Explorer** -Fenster, in dem Sie einen Ordner erstellen und auswählen müssen, in dem die App erstellt wird. Erstellen Sie diesen Ordner jetzt, und nennen Sie ihn " **App**". Klicken Sie dann mit ausgewähltem **App** -Ordner auf **Ordner auswählen**.
 
 4.  Unity startet das Projekt in den **App** -Ordner.
 
@@ -1662,7 +1662,7 @@ So beginnen Sie *den* Buildprozess:
 
 So stellen Sie auf hololens bereit:
 
-1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Dazu ist Folgendes erforderlich:
+1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Gehen Sie dazu wie folgt vor:
 
     1.  Öffnen Sie die Einstellungen, während Sie die hololens- **Einstellungen** durch tragen.
 
@@ -1670,13 +1670,13 @@ So stellen Sie auf hololens bereit:
 
     3.  Notieren Sie sich die **IPv4** -Adresse.
 
-    4.  Navigieren Sie als nächstes wieder zu **Einstellungen** , und aktualisieren Sie die **& Sicherheit**  >  **für Entwickler** .
+    4.  Navigieren Sie als nächstes wieder zu **Einstellungen**, und aktualisieren Sie die **& Sicherheit**  >  **für Entwickler** .
 
     5.  Legen Sie **den Entwicklermodus auf** fest.
 
-2.  Navigieren Sie zu Ihrem neuen Unity-Build ( **App** -Ordner), und öffnen Sie die Projektmappendatei mit **Visual Studio** .
+2.  Navigieren Sie zu Ihrem neuen Unity-Build ( **App** -Ordner), und öffnen Sie die Projektmappendatei mit **Visual Studio**.
 
-3.  Wählen Sie *Solution Configuration* in der Projektmappenkonfiguration **Debuggen** .
+3.  Wählen Sie *Solution Configuration* in der Projektmappenkonfiguration **Debuggen**.
 
 4.  Wählen Sie *Solution Platform* auf der Projektmappenplattform die Option **x86, Remote Computer** aus. Sie werden aufgefordert, die **IP-Adresse** eines Remote Geräts (in diesem Fall die hololens) einzufügen, die Sie notiert haben.
 
@@ -1705,16 +1705,16 @@ oder
 
 Im *Trainings* Modus:
 
-- Sehen Sie sich **Maus** oder **Tastatur** an, und verwenden Sie die **Tap-Geste** .
+- Sehen Sie sich **Maus** oder **Tastatur** an, und verwenden Sie die **Tap-Geste**.
 
 - Als nächstes wird Text angezeigt, in dem Sie aufgefordert werden, ein Tag anzugeben.
 
-- Sagen Sie entweder **Maus** oder **Tastatur** .
+- Sagen Sie entweder **Maus** oder **Tastatur**.
 
 
 Im *Vorhersage* Modus:
 
-- Betrachten Sie ein Objekt, und verwenden Sie die **Tap-Geste** .
+- Betrachten Sie ein Objekt, und verwenden Sie die **Tap-Geste**.
 
 - Es wird Text angezeigt, der das erkannte Objekt mit der höchsten Wahrscheinlichkeit (normalisiert) bereitstellt.
 

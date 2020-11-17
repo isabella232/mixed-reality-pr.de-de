@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Unity, Tutorial, hololens2, räumliche Audiodaten
-ms.openlocfilehash: cb9bfb03da864c78784c288f4d7c4190461cd838
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
+ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293154"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678209"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>Aktivieren und Deaktivieren der Spatialisierung zur Laufzeit
 
@@ -21,7 +21,7 @@ In diesem vierten Kapitel gehen Sie wie folgt vor:
 * Das spatialization-Steuerelement Skript aus Schaltflächen Aktionen Steuern
 
 ## <a name="add-spatialization-control-script"></a>Spatialization-Steuerelement Skript hinzufügen
-Klicken Sie mit der rechten Maustaste in den Bereich **Projekt** , und erstellen Sie ein neues c#-Skript, indem Sie **> c#-Skript erstellen**auswählen. Benennen Sie Ihr Skript mit dem Namen "spatializeonoff".
+Klicken Sie mit der rechten Maustaste in den Bereich **Projekt** , und erstellen Sie ein neues c#-Skript, indem Sie **> c#-Skript erstellen** auswählen. Benennen Sie Ihr Skript mit dem Namen "spatializeonoff".
 
 ![Erstellen des Skripts](images/spatial-audio/create-script.png)
 
@@ -90,7 +90,7 @@ public class SpatializeOnOff : MonoBehaviour
 > Wenn Sie die spatialization vollständig deaktivieren möchten, ändern Sie das Skript so, dass auch die Eigenschaft **spatialization** booleschen der **SourceObject** -Variablen angepasst wird.
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Fügen Sie das Skript an, und Steuern Sie es über die Schaltfläche
-Klicken Sie im Bereich **Inspector** des **Quad**auf **Komponente hinzufügen** , und fügen Sie das Skript **spatialize on off** hinzu:
+Klicken Sie im Bereich **Inspector** des **Quad** auf **Komponente hinzufügen** , und fügen Sie das Skript **spatialize on off** hinzu:
 
 ![Skript zu Quad hinzufügen](images/spatial-audio/add-script-to-quad.png)
 

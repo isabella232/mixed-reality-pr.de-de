@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality, Design, Steuerelemente, Schriftart, Typografie, UI, UX
-ms.openlocfilehash: 21409115ed1e9aa9103e1e77ea4aacc0881e1262
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Windows Mixed Reality, Design, Steuerelemente, Schriftart, Typografie, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690030"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677359"
 ---
 # <a name="text-in-unity"></a>Text in Unity
 
@@ -65,14 +65,14 @@ Für die Near-Interaktion bei 0.45 m (45cm) ist der Anzeige Winkel der minimal l
  *nahezu-und weitem Interaktionen*
 
 ### <a name="the-minimum-legible-font-size"></a>Die minimale lesbare Schriftgröße
-| Entfernung | Anzeige Winkel | Texthöhe | Schriftgrad |
+| Abstand | Anzeige Winkel | Texthöhe | Schriftgrad |
 |---------|---------|---------|---------|
 | 45cm (direkte Manipulations Distanz) | 0,4 °-0,5 ° | 3.14 – 3,9 mm | 8,9 – 11.13 PT |
 | 2 min | 0,35 °-0,4 ° | 12.21 – 13.97 mm | 34.63-39.58 PT |
 
 
 ### <a name="the-comfortably-legible-font-size"></a>Die bequem lesbare Schriftgröße
-| Entfernung | Anzeige Winkel | Texthöhe | Schriftgrad |
+| Abstand | Anzeige Winkel | Texthöhe | Schriftgrad |
 |---------|---------|---------|---------|
 | 45cm (direkte Manipulations Distanz) | 0,65 °-0,8 ° | 5.1-6.3 mm | 14.47-17,8 pt |
 | 2 min | 0,6 °-0,75 ° | 20,9-26.2 mm | 59,4-74,2 pt |
@@ -98,21 +98,21 @@ Das Standard Schriftmaterial von Unity unterstützt keine Okklusion. Aus diesem 
 ![Shader mit Okklusions Unterstützung](images/hug-text-07-1000px.png)<br>
 *Shader mit Okklusions Unterstützung*
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, dass Sie die Hauptbausteine von mrtk untersuchen. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Spracheingabe](voice-input-in-unity.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [Gemeinsame Erfahrung](shared-experiences-in-unity.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Textvorfab im mrtk](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [Typografie](../../design/typography.md)

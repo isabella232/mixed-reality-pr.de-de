@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, Fokuspunkt, Fokusebene, Stabilisierungs Ebene, Stabilisierungs Punkt, neuprojektion, LSR, tiefen Puffer
-ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, Fokuspunkt, Fokusebene, Stabilisierungs Ebene, Stabilisierungs Punkt, neuprojektion, LSR, tiefen Puffer, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678975"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678689"
 ---
 # <a name="focus-point-in-unity"></a>Fokuspunkt in Unity
 
 **Namespace:** *unityengine. XR. WSA*<br>
-**Typ** : *holographicsettings*
+**Typ**: *holographicsettings*
 
 Der [Fokuspunkt](../platform-capabilities-and-apis/hologram-stability.md#reprojection) kann so festgelegt werden, dass hololens einen Hinweis zur optimalen Durchführung der Stabilisierung auf den derzeit angezeigten holograms bereitstellt.
 
@@ -50,19 +50,19 @@ void Update()
 
 Beachten Sie, dass der obige einfache Code möglicherweise zu einer Verringerung der – Hologramm-Stabilität wird, wenn das fokussierte Objekt hinter dem Benutzer endet.  Daher sollten Sie in der Regel "Tiefe Puffer Freigabe aktivieren" festlegen, anstatt manuell einen Fokuspunkt anzugeben.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
 Wenn Sie der Unity-Entwicklungs-Prüfpunkt-Journey folgen, die wir festgelegt haben, sind Sie mitten in der Untersuchung der Funktionen und APIs der Mixed Reality-Plattform. Von hier aus können Sie mit dem nächsten Thema fortfahren:
 
 > [!div class="nextstepaction"]
 > [Verlust der Nachverfolgung](tracking-loss-in-unity.md)
 
-Oder direkt zur Bereitstellung der APP auf einem Gerät oder Emulator wechseln:
+Oder wechseln Sie direkt zur Bereitstellung Ihrer App auf einem Gerät oder Emulator:
 
 > [!div class="nextstepaction"]
 > [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#3-platform-capabilities-and-apis) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#3-platform-capabilities-and-apis) zurückkehren.
 
-### <a name="see-also"></a>Weitere Informationen
+### <a name="see-also"></a>Siehe auch
 * [Stabilisierungs Ebene](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

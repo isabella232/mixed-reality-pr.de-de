@@ -1,17 +1,17 @@
 ---
-title: Mr-Eingabe 212-Stimme
+title: 'MR Input 212: Sprache'
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details der sprach Konzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Stimme
-ms.openlocfilehash: ed37ef6e0c26c3d2a0cd2d51e18d01a258b2fc78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Voice, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
+ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686419"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677239"
 ---
 # <a name="mr-input-212-voice"></a>MR-Eingabe 212: Sprache
 
@@ -79,7 +79,7 @@ In diesem Kurs überprüfen wir den Modell-Explorer, den wir in der [Eingabe 210
 ### <a name="instructions"></a>Instructions
 
 1. Starten Sie Unity.
-2. Klicken Sie auf **Öffnen** .
+2. Wählen Sie **Open**(Öffnen).
 3. Navigieren Sie zum Ordner **holographicacademy-holograms-212-Voice** , den Sie zuvor nicht archiviert haben.
 4. Suchen und wählen Sie den **Start** / **Modell-Explorer** -Ordner aus.
 5. Klicken Sie auf die Schaltfläche **Ordner auswählen** .
@@ -92,7 +92,7 @@ In diesem Kurs überprüfen wir den Modell-Explorer, den wir in der [Eingabe 210
 2. Wenn **Szenen/Model Explorer** nicht in **Szenen im Build** aufgeführt ist, klicken Sie auf **offene Szenen hinzufügen** , um die Szene hinzuzufügen.
 3. Wenn Sie speziell für hololens entwickeln, legen Sie **Zielgerät** auf **hololens** fest. Andernfalls sollten Sie es auf **jedem Gerät** belassen.
 4. Stellen Sie sicher, dass der **Buildtyp** auf **D3D** und das **SDK** auf **Latest installiert** festgelegt ist (was SDK 16299 oder höher sein sollte).
-5. Klicken Sie auf **Erstellen** .
+5. Klicken Sie auf **Erstellen**.
 6. Erstellen Sie einen **neuen Ordner** mit dem Namen "App".
 7. Klicken Sie einfach auf den **App** -Ordner.
 8. Klicken **Sie auf Ordner auswählen** , und Unity startet das Projekt für Visual Studio.
@@ -100,21 +100,21 @@ In diesem Kurs überprüfen wir den Modell-Explorer, den wir in der [Eingabe 210
 Wenn Unity abgeschlossen ist, wird ein Datei-Explorer-Fenster angezeigt.
 
 1. Öffnen Sie den **App** -Ordner.
-2. Öffnen Sie die Visual Studio-Projekt Mappe **Model Explorer** .
+2. Öffnen Sie die Visual Studio-Projekt Mappe **Model Explorer**.
 
 Bei der Bereitstellung in hololens:
 
-1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x86** .
+1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x86**.
 2. Klicken Sie auf den Dropdown Pfeil neben der Schaltfläche lokaler Computer, und wählen Sie **Remote Computer** aus.
-3. Geben Sie **die IP-Adresse des hololens-Geräts** ein, und legen Sie den Authentifizierungsmodus auf **Universal (unverschlüsseltes Protokoll)** Klicken Sie auf **Auswählen** . Wenn Sie die IP-Adresse Ihres Geräts nicht kennen, suchen Sie unter **Einstellungen > Netzwerk & Internet > Erweiterte Optionen** .
-4. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5** . Wenn Sie die Bereitstellung auf Ihrem Gerät zum ersten Mal durchführt, müssen Sie [es mit Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)koppeln.
+3. Geben Sie **die IP-Adresse des hololens-Geräts** ein, und legen Sie den Authentifizierungsmodus auf **Universal (unverschlüsseltes Protokoll)** Klicken Sie auf **Auswählen**. Wenn Sie die IP-Adresse Ihres Geräts nicht kennen, suchen Sie unter **Einstellungen > Netzwerk & Internet > Erweiterte Optionen**.
+4. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**. Wenn Sie die Bereitstellung auf Ihrem Gerät zum ersten Mal durchführt, müssen Sie [es mit Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)koppeln.
 5. Wenn die APP bereitgestellt wurde, schließen Sie das **fitbox** -Gerät mit einer **Auswahl Bewegung** ab.
 
 Bei der Bereitstellung auf einem immersiven Headset:
 
-1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64** .
+1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64**.
 2. Stellen Sie sicher, dass das Bereitstellungs Ziel auf **lokaler Computer** festgelegt ist.
-3. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5** .
+3. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**.
 4. Wenn die APP bereitgestellt wurde, schließen Sie die Funktion **, indem Sie den-** Typ auf einen Bewegungs Controller ziehen.
 
 >[!NOTE]
@@ -136,13 +136,13 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
 
 #### <a name="do"></a>DO
 
-* Erstellen Sie präzise Befehle. Sie möchten nicht *"das aktuell ausgewählte Video abspielen* " verwenden, da dieser Befehl nicht präzise ist und vom Benutzer leicht vergessen wird. Verwenden Sie stattdessen *"Video abspielen"* , da es sich um einen präzisen Wert handelt, der über mehrere Silben verfügt.
-* Verwenden Sie ein einfaches Vokabular. Versuchen Sie immer, gängige Wörter und Ausdrücke zu verwenden, die für den Benutzer leicht zu erkennen und zu merken sind. Wenn Ihre Anwendung z. b. ein Notiz Objekt hätte, das in der Ansicht angezeigt oder ausgeblendet werden kann, würden Sie den Befehl *"Placard anzeigen"* nicht verwenden, da "Placard" ein selten verwendeter Begriff ist. Verwenden Sie stattdessen den Befehl *"Show Note"* , um den Hinweis in der Anwendung anzuzeigen.
+* Erstellen Sie präzise Befehle. Sie möchten nicht *"das aktuell ausgewählte Video abspielen*" verwenden, da dieser Befehl nicht präzise ist und vom Benutzer leicht vergessen wird. Verwenden Sie stattdessen *"Video abspielen"*, da es sich um einen präzisen Wert handelt, der über mehrere Silben verfügt.
+* Verwenden Sie ein einfaches Vokabular. Versuchen Sie immer, gängige Wörter und Ausdrücke zu verwenden, die für den Benutzer leicht zu erkennen und zu merken sind. Wenn Ihre Anwendung z. b. ein Notiz Objekt hätte, das in der Ansicht angezeigt oder ausgeblendet werden kann, würden Sie den Befehl *"Placard anzeigen"* nicht verwenden, da "Placard" ein selten verwendeter Begriff ist. Verwenden Sie stattdessen den Befehl *"Show Note"*, um den Hinweis in der Anwendung anzuzeigen.
 * Achten Sie auf Einheitlichkeit. Sprachbefehle sollten in der gesamten Anwendung konsistent gehalten werden. Stellen Sie sich vor, dass Sie in Ihrer Anwendung zwei Szenen haben und beide Szenen eine Schaltfläche zum Schließen der Anwendung enthalten. Wenn in der ersten Szene der Befehl *"Exit"* zum auslöst der Schaltfläche verwendet wird, aber die zweite Szene den Befehl *"APP schließen"* verwendet hat, wird der Benutzer sehr verwirrt. Wenn die gleiche Funktionalität in mehreren Szenen beibehalten wird, sollte der gleiche Sprachbefehl verwendet werden, um Sie zu initiieren.
 
 #### <a name="dont"></a>Tue nicht
 
-* Verwenden Sie einzelne Silb Bare Befehle. Wenn Sie z. b. einen Sprachbefehl zum Abspielen eines Videos erstellt haben, sollten Sie die Verwendung des einfachen Befehls *"Play"* vermeiden, da es sich nur um eine einzelne Silb Bare Sprache handelt, die vom System leicht übersehen werden könnte. Verwenden Sie stattdessen *"Video abspielen"* , da es sich um einen präzisen Wert handelt, der über mehrere Silben verfügt.
+* Verwenden Sie einzelne Silb Bare Befehle. Wenn Sie z. b. einen Sprachbefehl zum Abspielen eines Videos erstellt haben, sollten Sie die Verwendung des einfachen Befehls *"Play"* vermeiden, da es sich nur um eine einzelne Silb Bare Sprache handelt, die vom System leicht übersehen werden könnte. Verwenden Sie stattdessen *"Video abspielen"*, da es sich um einen präzisen Wert handelt, der über mehrere Silben verfügt.
 * Verwenden Sie Systembefehle. Der Befehl *"Select"* ist vom System für das auslöst eines Tap-Ereignisses für das aktuell fokussierte Objekt reserviert. Verwenden Sie den Befehl *"Select"* nicht in einem Schlüsselwort oder Ausdruck, da dies möglicherweise nicht erwartungsgemäß funktioniert. Wenn z. b. der Sprachbefehl zum Auswählen eines Cubes in der Anwendung *"Select Cube"* war, der Benutzer aber eine Kugel schaute, als er den Befehl aussprach, wird stattdessen die Kugel ausgewählt. Ähnliche app-leisten Befehle sind sprach fähig. Verwenden Sie die folgenden Sprachbefehle nicht in der corewindow-Ansicht:
     1. Zurück
     2. Scrolltool
@@ -157,7 +157,7 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
 * Verwenden Sie im Bereich **Hierarchie** von Unity das Suchtool, um das **holoComm_screen_mesh** Objekt zu suchen.
 * Doppelklicken Sie auf das **holoComm_screen_mesh** Objekt, um es in der **Szene** anzuzeigen. Dies ist die Überwachung des Astronauten, die auf unsere Sprachbefehle antwortet.
 * Suchen Sie im **Inspektor** -Panel die Komponente **Spracheingabe Quelle (Skript)** .
-* Erweitern Sie den Abschnitt **Schlüsselwörter** , um den unterstützten Sprachbefehl anzuzeigen: **Open Communicator** .
+* Erweitern Sie den Abschnitt **Schlüsselwörter** , um den unterstützten Sprachbefehl anzuzeigen: **Open Communicator**.
 * Klicken Sie rechts auf das Zahnrad Symbol, und wählen Sie **Skript bearbeiten** aus.
 * Erkunden Sie **SpeechInputSource.cs** , um zu verstehen, wie das **keywordrecognizer** zum Hinzufügen von Sprachbefehlen verwendet wird.
 
@@ -165,11 +165,11 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
 
 * Verwenden Sie in Unity **Datei > Buildeinstellungen** , um die Anwendung neu zu erstellen.
 * Öffnen Sie den **App** -Ordner.
-* Öffnen Sie die Visual Studio-Projekt Mappe **Model Explorer** .
+* Öffnen Sie die Visual Studio-Projekt Mappe **Model Explorer**.
 
 (Wenn Sie dieses Projekt bereits während der Einrichtung in Visual Studio erstellt bzw. bereitgestellt haben, können Sie diese Instanz von Visual Studio öffnen und auf "alles neu laden" klicken).
 
-* Klicken Sie in Visual Studio auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5** .
+* Klicken Sie in Visual Studio auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**.
 * Nachdem die Anwendung in den hololens bereitgestellt wurde, schließen Sie das Feld anpassen mithilfe der [Tasten](../../../design/gaze-and-commit.md#composite-gestures) Kombination.
 * Schauen Sie sich die Überwachung des Astronauten an.
 * Wenn die Überwachung den Fokus besitzt, überprüfen Sie, ob sich der Cursor in ein Mikrofon ändert. Dadurch erhalten Sie Feedback, dass die Anwendung Sprachbefehle abhört.
@@ -252,14 +252,14 @@ In diesem Kapitel verwenden wir die Diktat Erkennung, um eine Nachricht für den
 
 Wir werden **MicrophoneManager.cs** bearbeiten, um die Diktat Erkennung zu verwenden. Dies fügen wir hinzu:
 
-1. Wenn die **Schaltfläche "Datensatz** " gedrückt ist, **starten wir das "diktationerkenzer** ".
+1. Wenn die **Schaltfläche "Datensatz** " gedrückt ist, **starten wir das "diktationerkenzer**".
 2. Zeigen Sie die **Hypothese** an, was der diktationerkenzer verstanden hat.
 3. Lock in den **Ergebnissen** der von der diktationerkenzer erkannten Ergebnisse.
 4. Überprüfen Sie, ob Timeouts von der "diktationerkenzer".
-5. Wenn die **Schaltfläche "beenden** " gedrückt wird oder bei der MIC-Sitzung ein Timeout auftritt, **Beenden Sie das "diktationerkenzer** ".
+5. Wenn die **Schaltfläche "beenden** " gedrückt wird oder bei der MIC-Sitzung ein Timeout auftritt, **Beenden Sie das "diktationerkenzer**".
 6. Starten Sie den **keywordrecognizer** neu, der auf den Befehl " **Nachricht senden** " lauscht.
 
-Los geht’s! Vervollständigen Sie alle Codierungs Übungen für 3. a in **MicrophoneManager.cs** , oder kopieren Sie den unten stehenden Code, und fügen Sie ihn ein:
+Fangen wir also an. Vervollständigen Sie alle Codierungs Übungen für 3. a in **MicrophoneManager.cs**, oder kopieren Sie den unten stehenden Code, und fügen Sie ihn ein:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -451,7 +451,7 @@ namespace Academy
 
 * Erstellen Sie in Visual Studio neu, und stellen Sie auf Ihrem Gerät bereit.
 * Schließen Sie das Feld "anpassen" mit einer Tastenkombination.
-* Schauen Sie sich die Überwachung des Astronauten an, und sagen Sie *"Open Communicator"* .
+* Schauen Sie sich die Überwachung des Astronauten an, und sagen Sie *"Open Communicator"*.
 * Wählen Sie die Schaltfläche **Datensatz** (Mikrofon) aus, um Ihre Nachricht aufzuzeichnen.
 * Beginnen Sie den Einstieg. Die **Diktat Erkennung** interpretiert Ihre Sprache und zeigt den Text mit hypothetischer Größe in Communicator an.
 * Versuchen Sie, *"Nachricht senden"* zu sagen, während Sie eine Nachricht aufzeichnen. Beachten Sie, dass die **Schlüsselwort Erkennung** nicht antwortet, weil die **Diktat Erkennung** noch aktiv ist.

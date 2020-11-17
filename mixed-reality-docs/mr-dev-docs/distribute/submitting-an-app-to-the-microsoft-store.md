@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, hololens, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Paket, AppX, Merchandising
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631478"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678789"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Senden einer App an den Microsoft Store
 
@@ -38,9 +38,9 @@ Die folgenden Image Ressourcen sind für die AppX-Buildtools erforderlich, um Ih
 
 | Erforderliches Asset | Empfohlene Skalierung | Bildformat | Wo wird das Medienobjekt angezeigt? | 
 |----------|----------|----------|------------------|
-| Quadratisches Logo 71x71 | Any |  PNG | NICHT ZUTREFFEND | 
+| Quadratisches Logo 71x71 | Any |  PNG | – | 
 | Quadratisches Logo 150x150 | 150x150 (100% Skala) oder 225 x 225 (150% Skalierung) | PNG | Start-Pins und alle apps (wenn 310x310 nicht bereitgestellt wird), Store-Suchvorschläge, Store-Listenseite, Store-durchsuchen, Store-Suche | 
-|  Breites 310x150-Logo |  Any  |  PNG  |  NICHT ZUTREFFEND | 
+|  Breites 310x150-Logo |  Any  |  PNG  |  – | 
 |  Store-Logo |  75x75 (150% Skalierung)  |  PNG  |  Partner Center, Berichts-APP, Schreiben einer Überprüfung, meine Bibliothek | 
 |  Begrüßungsbildschirm |  930x450 (150% Skalieren)  |  PNG  |  2D-App-Startfeld (Slate) | 
 
@@ -67,7 +67,7 @@ Wenn Sie in Visual Studio ein neues universelles Windows-Projekt erstellen, werd
 
 ### <a name="specifying-target-device-families"></a>Angeben von Zielgeräte Familien
 
-Windows Mixed Reality-Anwendungen (sowohl für [hololens](../hololens-hardware-details.md) als auch für [immersive Headsets](../discover/immersive-headset-hardware-details.md)) sind Teil der universelle Windows-Plattform, sodass jedes app-Paket mit einer **Windows. Universal** - [Zielgeräte Familie](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) CAB auf hololens-oder Windows 10-PCs mit immersiven Headsets ausgeführt wird. Wenn Sie keine Zielgeräte Familie in Ihrem App-Manifest angeben, können Sie Ihre APP versehentlich auf unbeabsichtigten Windows 10-Geräten öffnen. Führen Sie die folgenden Schritte aus, um die gewünschte Windows 10-Gerätefamilie anzugeben, und überprüfen Sie dann, [ob die richtigen Gerätefamilien festgelegt sind, wenn Sie das App-Paket im Partner Center hochladen, um Microsoft Store Übermittlung zu erhalten.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality-Anwendungen (für [hololens](../hololens-hardware-details.md) und [immersive Headsets](../discover/immersive-headset-hardware-details.md)) sind Teil der universelle Windows-Plattform, sodass jedes app-Paket mit einer **Windows. Universal** - [Zielgeräte Familie](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) auf hololens-oder Windows 10-PCs mit immersiven Headsets ausgeführt werden kann. Wenn Sie keine Zielgeräte Familie in Ihrem App-Manifest angeben, können Sie Ihre APP versehentlich auf unbeabsichtigten Windows 10-Geräten öffnen. Führen Sie die folgenden Schritte aus, um die gewünschte Windows 10-Gerätefamilie anzugeben, und überprüfen Sie dann, [ob die richtigen Gerätefamilien festgelegt sind, wenn Sie das App-Paket im Partner Center hochladen, um Microsoft Store Übermittlung zu erhalten.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Um dieses Feld in Visual Studio festzulegen, klicken Sie mit der rechten Maustaste auf " **Package. appxmanifest** ", und wählen Sie **Code anzeigen** aus, und suchen Sie dann nach dem Feld **targetdevicefamily Name** . Standardmäßig sollte Sie wie folgt aussehen:
 
@@ -208,11 +208,11 @@ In diesem Abschnitt identifizieren Sie die minimale (erforderliche) Hardware und
 
 **Eingabe Hardware:**
 
-Verwenden Sie die Kontrollkästchen, um potenziellen Kunden mitzuteilen, ob Ihre APP **Mikrofon** für [Spracheingaben](../design/voice-input.md)unterstützt), **[Xbox Controller-oder Gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)** -und/oder **[Windows Mixed Reality Motion-Controller](../design/motion-controllers.md)**. Diese Informationen werden auf der Produktdetailseite Ihrer APP im Store angezeigt und helfen Ihrer APP, in die entsprechenden App-/spielauflistungen aufgenommen zu werden. Beispielsweise kann eine Sammlung für alle Spiele vorhanden sein, die Motion-Controller unterstützen.
+Verwenden Sie die Kontrollkästchen, um potenziellen Kunden mitzuteilen, ob Ihre APP **Mikrofon** für [Spracheingaben](../design/voice-input.md)unterstützt), **[Xbox Controller-oder Gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)**-und/oder **[Windows Mixed Reality Motion-Controller](../design/motion-controllers.md)**. Diese Informationen werden auf der Produktdetailseite Ihrer APP im Store angezeigt und helfen Ihrer APP, in die entsprechenden App-/spielauflistungen aufgenommen zu werden. Beispielsweise kann eine Sammlung für alle Spiele vorhanden sein, die Motion-Controller unterstützen.
 
 Beachten Sie, dass Sie Kontrollkästchen für "Minimale Hardware" oder "Empfohlene Hardware" für Eingabetypen auswählen. 
 
-Zum Beispiel: 
+Beispiel: 
 * Wenn das Spiel Bewegungs Controller erfordert, aber eine Spracheingabe über Mikrofon akzeptiert, aktivieren Sie das Kontrollkästchen "Minimale Hardware" neben "Windows Mixed Reality Motion Controllers", aber das Kontrollkästchen "Empfohlene Hardware" neben "Mikrofon". 
 * Wenn Ihr Spiel entweder mit einem Xbox-Controller, Gamepad oder Bewegungs Controllern abgespielt werden kann, aktivieren Sie das Kontrollkästchen "Minimale Hardware" neben "Xbox Controller" oder "Gamepad", und aktivieren Sie das Kontrollkästchen "Empfohlene Hardware" neben "Windows Mixed Reality Motion Controllers", da Bewegungs Controller wahrscheinlich eine Schritt-für-Schritt-Anleitung aus dem Gamepad anbieten.
 
@@ -263,7 +263,7 @@ Zu Suchbegriffen "Windows Mixed Reality" hinzufügen
 
 In vielen Fällen sind die Kunden auf die virtuelle Realität beschränkt, bevor Sie ein Windows Mixed Reality-immersives Headset erwerben. Sie wissen möglicherweise nicht, was Sie von intensiven Spielen erwarten oder mit Ihrem eigenen Komfort Schwellenwert in immersiven Erfahrungen vertraut sein sollten. Viele Kunden können auch ein Windows Mixed Reality-immersives Headset auf PCs testen, die nicht als [Windows Mixed Reality-PCs](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)gebadelt sind. Aus diesen Gründen wird dringend empfohlen, eine [Kostenlose Testversion](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) für Ihre kostenpflichtige Mixed Reality-APP oder Ihr Spiel zu bieten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Was ist Mixed Reality?](../discover/mixed-reality.md)
 * [Entwicklung – Übersicht](../develop/development.md)
 * [App-Ansichten](../design/app-views.md)

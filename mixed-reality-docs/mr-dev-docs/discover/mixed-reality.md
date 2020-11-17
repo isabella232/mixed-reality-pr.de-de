@@ -7,18 +7,18 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, Holographic, AR, VR, MR, XR, Augmented Reality, Virtual Reality, Erläuterung
 ms.localizationpriority: high
-ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: 44914decd9530a11d11127b43af527d995f6c252
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340708"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631488"
 ---
 # <a name="what-is-mixed-reality"></a>Was ist Mixed Reality?
 
 ![Zeigen und Bestätigen mit den Händen auf HoloLens 2](images/02_MixedRealitySlashMixedReality.png)
 
-Mixed Reality ist eine Mischung aus physischer und digitaler Welt, die die Verknüpfungen in der Interaktion zwischen Menschen, Computern und Umgebung freisetzt. Diese neue Realität wird durch Fortschritte beim maschinellen Sehen, der Grafikverarbeitungsleistung, den Anzeigetechnologien und den Eingabesystemen ermöglicht. Der Begriff *Mixed Reality* wurde jedoch 1994 in einer Arbeit von Paul Milgram und Fumio Kishino eingeführt, „ [A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)“. In diesem Artikel wurde das Konzept des *Virtualitätskontinuums* untersucht und behandelt, wie sich die Kategorisierung der Taxonomie auf Displays anwenden lässt. Seitdem hat sich die Anwendung von Mixed Reality über Displays hinaus entwickelt und beinhaltet nun:
+Mixed Reality ist eine Mischung aus physischer und digitaler Welt, die die Verknüpfungen in der Interaktion zwischen Menschen, Computern und Umgebung freisetzt. Diese neue Realität wird durch Fortschritte beim maschinellen Sehen, der Grafikverarbeitungsleistung, den Anzeigetechnologien und den Eingabesystemen ermöglicht. Der Begriff *Mixed Reality* wurde jedoch 1994 in einer Arbeit von Paul Milgram und Fumio Kishino eingeführt, „[A Taxonomy of Mixed Reality Visual Displays](https://search.ieice.org/bin/summary.php?id=e77-d_12_1321)“. In diesem Artikel wurde das Konzept des *Virtualitätskontinuums* untersucht und behandelt, wie sich die Kategorisierung der Taxonomie auf Displays anwenden lässt. Seitdem hat sich die Anwendung von Mixed Reality über Displays hinaus entwickelt und beinhaltet nun:
 * Umgebungseingaben
 * Raumklang
 * Orte und Positionierung in realen wie in virtuellen Räumen
@@ -62,7 +62,7 @@ Da Mixed Reality sowohl physische als auch digitale Welten kombiniert, definiere
 
 ### <a name="augmented-vs-virtual-reality"></a>Augmented Reality im Vergleich mit Virtual Reality
 
-Die meisten aktuell verfügbaren Mobiltelefone haben kaum oder keine Fähigkeiten zum Verstehen der Umgebung. Die von ihnen angebotenen Erfahrungen können keine Mischung aus physischer und digitaler Realität darstellen. Die Benutzererfahrungen, bei denen Grafiken Videostreams der realen Welt überlagert werden, sind *Augmented Reality*. Die Benutzererfahrungen, die Ihre Sicht verdecken, um ein digitales Erlebnis darzustellen, sind *Virtual Reality*. Die Erfahrungen, die zwischen Augmented Reality und Virtual Reality möglich sind, bilden die *Mixed Reality* :
+Die meisten aktuell verfügbaren Mobiltelefone haben kaum oder keine Fähigkeiten zum Verstehen der Umgebung. Die von ihnen angebotenen Erfahrungen können keine Mischung aus physischer und digitaler Realität darstellen. Die Benutzererfahrungen, bei denen Grafiken Videostreams der realen Welt überlagert werden, sind *Augmented Reality*. Die Benutzererfahrungen, die Ihre Sicht verdecken, um ein digitales Erlebnis darzustellen, sind *Virtual Reality*. Die Erfahrungen, die zwischen Augmented Reality und Virtual Reality möglich sind, bilden die *Mixed Reality*:
 * Ausgehend von der physischen Welt kann ein digitales Objekt platziert werden, etwa ein Hologramm, so, als wäre es vorhanden.
 * Ausgehend von der physischen Welt kann eine digitale Darstellung einer anderen Person – ein Avatar – den Ort anzeigen, an dem die Person stand, als sie Notizen verfasste. Dies sind mit anderen Worten Benutzererfahrungen, die asynchrone Zusammenarbeit zu verschiedenen Zeitpunkten darstellen.
 * Ausgehend von einer digitalen Welt können physische Begrenzungen der physischen Welt, wie etwa Wände und Möbel, digital innerhalb der Benutzererfahrung erscheinen, um Benutzern dabei zu helfen, physische Hindernisse zu umgehen.
@@ -119,10 +119,4 @@ Wenn Sie der [Erkundungs-Journey](get-started-with-mr.md) folgen, die wir entwor
 > [!div class="nextstepaction"]
 > [Was ist ein Hologramm?](hologram.md)
 
-## <a name="see-also"></a>Siehe auch
-
-* [Was ist ein Hologramm?](hologram.md)
-* [Verstehen der Grundlagen von Mixed Reality](get-started-with-mr.md#understand-the-basics)
-* [Einstieg in Erschaffen und Prototyping](../design/design.md)
-* [Erlernen von Tools und Architektur](../develop/development.md)
 

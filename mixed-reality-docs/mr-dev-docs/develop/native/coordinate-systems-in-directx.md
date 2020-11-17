@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Gemischte Realität, räumlicher Locator, räumlicher Referenzrahmen, räumliches Koordinatensystem, räumliche Phase, Beispielcode, Bildstabilisierung, räumlicher Anker, räumlicher Anker Speicher, nach Verfolgungs Verlust, Exemplarische Vorgehensweise
-ms.openlocfilehash: 5ae60d5696d40a07ad350d0de097eb2f82f1dde1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, räumlicher Locator, räumlicher Referenzrahmen, räumliches Koordinatensystem, räumliche Phase, Beispielcode, Bildstabilisierung, räumlicher Anker, räumlicher Anker Speicher, nach Verfolgungs Verlust, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683918"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679659"
 ---
 # <a name="coordinate-systems-in-directx"></a>Koordinatensysteme in DirectX
 
@@ -593,14 +593,14 @@ In diesen Abschnitten wird erläutert, was wir in der Windows Holographic-App-Vo
 
 Zuerst haben wir die Vorlage so geändert, dass Sie ein spatidepaseorattachedframeofreferen-Objekt anstelle einer spatialstationaryframeofreferenzierung speichert:
 
-Aus **holographictagalongsamplemain. h** :
+Aus **holographictagalongsamplemain. h**:
 
 ```
    // A reference frame attached to the holographic camera.
    Windows::Perception::Spatial::SpatialLocatorAttachedFrameOfReference^   m_referenceFrame;
 ```
 
-Aus **holographictagalongsamplemain. cpp** :
+Aus **holographictagalongsamplemain. cpp**:
 
 ```
    // In this example, we create a reference frame attached to the device.
@@ -629,7 +629,7 @@ Diese spatialpointerpose verfügt über die Informationen, die erforderlich sind
 
 Aus Gründen der Benutzerfreundlichkeit verwenden wir die lineare interpolung ("Lerp"), um die Änderung an der Position so zu glätten, dass Sie über einen bestimmten Zeitraum erfolgt. Dies ist für den Benutzer besser, als das – Hologramm auf seinen Blick zu sperren. Durch das lerping der Position des "Tag"-entlang des Hologramms können wir das Hologramm auch durch Dämpfen der Bewegung stabilisieren. Wenn wir diese Dämpfung nicht durchgeführt haben, würde der Benutzer den – Hologramm Jitter sehen, weil er normalerweise als nicht wahrnehmbare Bewegungen des Benutzer Kopfes angesehen wird.
 
-Von **stationaryquadrenderer::P ositionhologram** :
+Von **stationaryquadrenderer::P ositionhologram**:
 
 ```
    const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -656,7 +656,7 @@ Von **stationaryquadrenderer::P ositionhologram** :
 >[!NOTE]
 >Im Fall eines debuggingbereichs können Sie das Hologramm auf die Seite zurücksetzen, sodass es die Ansicht nicht behindert. Im folgenden finden Sie ein Beispiel dafür, wie Sie dies tun können.
 
-Für **stationaryquadrenderer::P ositionhologram** :
+Für **stationaryquadrenderer::P ositionhologram**:
 
 ```
        // If you're making a debug view, you might not want the tag-along to be directly in the
@@ -673,7 +673,7 @@ Für **stationaryquadrenderer::P ositionhologram** :
 
 Es genügt nicht, einfach das Hologram zu positionieren, das in diesem Fall ein Quad ist. Wir müssen auch das Objekt drehen, um dem Benutzer zu begegnen. Beachten Sie, dass diese Rotation im Raum der Welt stattfindet, da das – Hologramm durch diese Art von fakboardingvorgang Teil der Umgebung des Benutzers bleiben kann. Das Ansichts Leerraum-fakboardingvorgang ist nicht so komfortabel, da das – Hologramm in der Anzeige Ausrichtung gesperrt wird. in diesem Fall müssten Sie auch zwischen den linken und rechten Ansichts Matrizen interpolieren, um eine View-Space-Billboard-Transformation abzurufen, die das Stereo Rendering nicht beeinträchtigt. Hier drehen wir die X-und Z-Achsen, um dem Benutzer zu begegnen.
 
-Von **stationaryquadrenderer:: Update** :
+Von **stationaryquadrenderer:: Update**:
 
 ```
    // Seconds elapsed since previous frame.
@@ -720,7 +720,7 @@ Von **stationaryquadrenderer:: Update** :
 
 In diesem Beispiel wählen wir auch das – Hologramm im Koordinatensystem von spatidepplatorattachedreferenceframe aus, in dem wir das – Hologramm positioniert haben. (Wenn wir uns für das Renderingsystem mit einem anderen Koordinatensystem entschieden hätten, müssten wir eine Transformation vom Koordinatensystem des mit dem Gerät verbundenen Verweis Rahmens an dieses Koordinatensystem abrufen.)
 
-Aus **holographictagalongsamplemain:: Rendering** :
+Aus **holographictagalongsamplemain:: Rendering**:
 
 ```
    // The view and projection matrices for each holographic camera will change
@@ -733,7 +733,7 @@ Aus **holographictagalongsamplemain:: Rendering** :
        );
 ```
 
-Das war's. Das – Hologramm ist nun eine Position, die zwei Meter vor der Blick Richtung des Benutzers ist.
+Das ist alles! Das – Hologramm ist nun eine Position, die zwei Meter vor der Blick Richtung des Benutzers ist.
 
 >[!NOTE]
 >In diesem Beispiel werden auch weitere Inhalte geladen, siehe stationaryquadrenderer. cpp.
@@ -797,7 +797,7 @@ Aus **appmain. cpp:**
 
 Die APIs für die [räumliche Zuordnung](spatial-mapping-in-directx.md) verwenden Koordinatensysteme, um Modell Transformationen für Oberflächen Netze zu erhalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * [Raumanker](../../design/spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>

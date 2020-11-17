@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Hands, Motion Controllers, DirectX, Input, holograms
-ms.openlocfilehash: faa9abe224b554c45cf0175b62da40c297122ad1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Hands, Motion Controllers, DirectX, Input, holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 3dcf3767a537ccc64cb06c6f44d765425a5578b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685918"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678059"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Hände und Motion-Controller in DirectX
 
@@ -102,16 +102,16 @@ Dies führt zu den folgenden bewährten Vorgehensweisen beim Rendern und als Zie
 ## <a name="cross-device-input-properties"></a>Geräte übergreifende Eingabe Eigenschaften
 Die spatialinteraktionsource-API unterstützt Controller und Hand Verfolgungs Systeme mit einer Vielzahl von Funktionen. Eine Reihe dieser Funktionen sind zwischen den Gerätetypen üblich. Beispielsweise stellen Hand Verfolgungs-und Bewegungs Controller eine SELECT-Aktion und eine 3D-Position bereit. Wenn möglich, ordnet die API diese gemeinsamen Funktionen denselben Eigenschaften auf der spatialinteraktionsource zu.  Dies ermöglicht es Anwendungen, eine breite Palette von Eingabetypen leichter zu unterstützen. In der folgenden Tabelle werden die Eigenschaften, die unterstützt werden, und deren Vergleich zwischen Eingabetypen beschrieben.
 
-| Eigenschaft | BESCHREIBUNG | Bewegungen von hololens (1. Gen) | Motion-Controller | Handgelenk|
+| Eigenschaft | Beschreibung | Bewegungen von hololens (1. Gen) | Motion-Controller | Handgelenk|
 |--- |--- |--- |--- |--- |
-| [Spatialinteraktionsource:: **hängkeit**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Rechts oder Links/Controller. | Nicht unterstützt | Unterstützt | Unterstützt |
-| [Spatialinteraktionsourcestate:: **isselectpressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Aktueller Zustand der primären Schaltfläche. | Luft tippen | Trigger | Gelockerte Luft tippen (Aufrufe) |
-| [Spatialinteraktionsourcestate:: **isfasste**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | Aktueller Status der Schaltfläche "übernehmen". | Nicht unterstützt | Schaltfläche "" | Ein-oder geschlossene Hand Zeiger |
-| [Spatialinteraktionsourcestate:: **ismenupressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | Aktueller Zustand der Menü Schaltfläche.    | Nicht unterstützt | Menü Schaltfläche | Nicht unterstützt |
-| [Spatialinteraktionsourcelokation:: **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | XYZ-Speicherort der Hand-oder Ziehpunkt Position auf dem Controller. | Palmen Standort | Position der Zieh Punktposition | Palmen Standort |
-| [Spatialinteraktionsourcelokation:: **Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Die Quaternion, die die Ausrichtung der Hand oder des Zieh Punkts auf dem Controller darstellt. | Nicht unterstützt | Ziehpunkt Ausrichtung | Palmen Ausrichtung |
-| [Spatialpointerinteraktionsourcepose:: **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Ursprung des zeigenden Strahl. | Nicht unterstützt | Unterstützt | Unterstützt |
-| [Spatialpointerinteraktionsourcepose:: **forwarddirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Richtung des zeigenden Strahls. | Nicht unterstützt | Unterstützt | Unterstützt |
+| [Spatialinteraktionsource::**hängkeit**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Rechts oder Links/Controller. | Nicht unterstützt | Unterstützt | Unterstützt |
+| [Spatialinteraktionsourcestate::**isselectpressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Aktueller Zustand der primären Schaltfläche. | Luft tippen | Trigger | Gelockerte Luft tippen (Aufrufe) |
+| [Spatialinteraktionsourcestate::**isfasste**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | Aktueller Status der Schaltfläche "übernehmen". | Nicht unterstützt | Schaltfläche "" | Ein-oder geschlossene Hand Zeiger |
+| [Spatialinteraktionsourcestate::**ismenupressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | Aktueller Zustand der Menü Schaltfläche.    | Nicht unterstützt | Menü Schaltfläche | Nicht unterstützt |
+| [Spatialinteraktionsourcelokation::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | XYZ-Speicherort der Hand-oder Ziehpunkt Position auf dem Controller. | Palmen Standort | Position der Zieh Punktposition | Palmen Standort |
+| [Spatialinteraktionsourcelokation::**Orientation**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | Die Quaternion, die die Ausrichtung der Hand oder des Zieh Punkts auf dem Controller darstellt. | Nicht unterstützt | Ziehpunkt Ausrichtung | Palmen Ausrichtung |
+| [Spatialpointerinteraktionsourcepose::**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | Ursprung des zeigenden Strahl. | Nicht unterstützt | Unterstützt | Unterstützt |
+| [Spatialpointerinteraktionsourcepose::**forwarddirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | Richtung des zeigenden Strahls. | Nicht unterstützt | Unterstützt | Unterstützt |
 
 Einige der oben aufgeführten Eigenschaften sind auf allen Geräten nicht verfügbar, und die API bietet eine Möglichkeit, um dies zu testen. Beispielsweise können Sie die Eigenschaft [spatialinteraktionsource:: isgrasp unterstützt](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) überprüfen, um zu bestimmen, ob die Quelle eine vergrauaktion bereitstellt.
 
@@ -120,7 +120,7 @@ Einige der oben aufgeführten Eigenschaften sind auf allen Geräten nicht verfü
 Windows Mixed Reality unterstützt Bewegungs Controller in einer Vielzahl von Formfaktoren.  Sie unterstützt auch die Systeme für die Nachverfolgung von Hand  Alle diese Systeme verfügen über unterschiedliche Beziehungen zwischen der Handposition und der natürlichen Vorwärtsrichtung, die apps zum zeigen oder Rendern von Objekten in der Hand verwenden sollten.  Um dies zu unterstützen, gibt es zwei Arten von 3D-Posen, die sowohl für die Hand Verfolgung als auch für Bewegungs Controller bereitgestellt werden.  Der erste ist Ziehpunkt, der die Position des Benutzers darstellt.  Die zweite zeigt eine Darstellung, die ein zeigendes Strahl darstellt, das aus der Hand oder dem Controller des Benutzers stammt. Wenn Sie also **die Hand des Benutzers** oder ein Objekt, das **in der Hand des Benutzers gehalten** wird (z. b. ein Schwert oder eine Waffe), wiedergeben möchten, verwenden Sie die Ziehpunkt-Pose. Wenn Sie einen raycast von Controller oder Hand durchführen möchten, z. b. wenn der Benutzer auf die Benutzer **Oberfläche zeigt** , verwenden Sie die Zeige Pose.
 
 Sie können auf die Ziehpunkt- **Pose** über [spatialinteraktionsourcestate zugreifen::P roperties:: trygetlocation (...)](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_).  Es wird wie folgt definiert:
-* Die Zieh **Punktposition** : der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren.
+* Die Zieh **Punktposition**: der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren.
 * Die **Rechte Achse** der Ziehpunkt Ausrichtung: Wenn Sie Ihre Hand vollständig geöffnet haben, um eine flache 5-Finger-Darstellung zu bilden, ist das Strahl-Ray, das normal ist (vorwärts von links nach links, rückwärts von rechter Palme).
 * Die **Forward-Achse** der Ziehpunkt Ausrichtung: Wenn Sie die Hand teilweise schließen (wie beim Halten des Controllers), wird der Strahl, der durch das durch ihre nicht-Thumb-Finger formatierte Rohr auf "Vorwärts" zeigt.
 * Die **aufwärts Achse** der Ziehpunkt Ausrichtung: die aufwärts Achse, die durch die Rechte-und vorwärts Definitionen impliziert wird.
@@ -149,7 +149,7 @@ Zusätzlich zu den 25 hierarchischen Gelenken bietet das System eine Palmen Verb
 
 Die folgenden Informationen werden für jedes Joint bereitgestellt:
 
-| Name | BESCHREIBUNG |
+| Name | Beschreibung |
 |--- |--- |
 |Position | 3D-Position des gemeinsamen, in jedem angeforderten Koordinatensystem verfügbar. |
 |Orientation | 3D-Ausrichtung des in jedem angeforderten Koordinatensystem verfügbaren knotes. |
@@ -179,7 +179,7 @@ if (handPose)
 
 Die API für die Nachverfolgung von Handschriften ermöglicht ein vollständig zu entformbares Dreieck-Mesh-Mesh.  Dieses Mesh kann sich zusammen mit dem Hand Gerüst in Echtzeit deformen und eignet sich für die Visualisierung sowie erweiterte Physik Techniken.  Um auf das Hand Mesh zuzugreifen, müssen Sie zuerst ein [handmeshobserver](https://docs.microsoft.com//uwp/api/windows.perception.people.handmeshobserver) -Objekt erstellen, indem Sie [trycreatehandmeshobserverasync](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.trycreatehandmeshobserverasync) auf der [spatialinteraktionsource](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource)aufrufen.  Dies muss nur einmal pro Quelle erfolgen, normalerweise wenn Sie das erste Mal sehen.  Das heißt, Sie rufen diese Funktion auf, um ein handmeshobserver-Objekt zu erstellen, wenn eine Hand in den FOV gelangt.  Beachten Sie, dass es sich hierbei um eine asynchrone Funktion handelt, sodass Sie hier ein bisschen Parallelität behandeln müssen.  Sobald Sie verfügbar sind, können Sie das handmeshobserver-Objekt für den Dreiecks Index Puffer durch Aufrufen von [gettriangleindices](https://docs.microsoft.com//uwp/api/windows.perception.people.handmeshobserver.gettriangleindices#Windows_Perception_People_HandMeshObserver_GetTriangleIndices_System_UInt16___)Abfragen.  Indizes ändern den Frame nicht über Frame, sodass Sie diese einmal erhalten und für die Lebensdauer der Quelle Zwischenspeichern können.  Indizes werden in der Reihenfolge im Uhrzeigersinn bereitgestellt.
 
-Der folgende Code startet einen getrennten Std:: Thread, um den Mesh-Beobachter zu erstellen, und extrahiert den Index Puffer, sobald der Mesh-Beobachter verfügbar ist.  Sie beginnt mit einer Variablen namens *CurrentState* , bei der es sich um eine Instanz von [spatialinteraktionsourcestate](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) handelt, die eine nach verfolgte Hand darstellt.
+Der folgende Code startet einen getrennten Std:: Thread, um den Mesh-Beobachter zu erstellen, und extrahiert den Index Puffer, sobald der Mesh-Beobachter verfügbar ist.  Sie beginnt mit einer Variablen namens *CurrentState*, bei der es sich um eine Instanz von [spatialinteraktionsourcestate](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) handelt, die eine nach verfolgte Hand darstellt.
 
 ```cpp
 using namespace Windows::Perception::People;
@@ -231,7 +231,7 @@ Wenn Sie spatialgesturerecognizer verwenden möchten, behandeln Sie das [interak
 
 Bei hololens (erste Generation) sollten Interaktionen und Gesten im Allgemeinen die Zielvorgabe von der Kopfzeile des Benutzers ableiten, anstatt zu versuchen, direkt an der Position der Hand zu arbeiten. Nachdem eine Interaktion begonnen hat, können relative Bewegungen der Hand verwendet werden, um die Bewegung zu steuern, wie bei der Manipulation oder Navigation.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Anvisieren mit dem Kopf und mit den Augen in DirectX](gaze-in-directx.md)
 * [Eingabe Modell für direkte Manipulation](../../design/direct-manipulation.md)
 * [Punkt-und Commit-Eingabe Modell](../../design/point-and-commit.md)

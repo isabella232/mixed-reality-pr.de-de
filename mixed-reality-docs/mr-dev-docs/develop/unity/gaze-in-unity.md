@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Eye-Do, Head-Blick, Unity, Hologram, gemischte Realität
-ms.openlocfilehash: 8c1a6cb0847cd0e6e776c6d4e1f7c1efdc126279
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Eye-Blick, Head-Eye, Unity, Hologram, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684707"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677509"
 ---
 # <a name="head-gaze-in-unity"></a>Kopf schauen in Unity
 
@@ -56,21 +56,21 @@ Ebenso wie auf dem Desktop, auf dem Sie mit einem Mauszeiger auf Inhalte abziele
 ## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a>Der Haupt Blick im Mixed Reality Toolkit v2
 Sie können über den [Eingabe-Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in mrtk v2 auf den Haupt Blick zugreifen.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, dass Sie die Hauptbausteine von mrtk untersuchen. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Gesten und Motion-Controller](gestures-and-motion-controllers-in-unity.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [Gemeinsame Erfahrung](shared-experiences-in-unity.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Kamera](camera-in-unity.md)
 * [Cursor](../../design/cursors.md)
 * [Anvisieren mit dem Kopf und Ausführen](../../design/gaze-and-commit.md)

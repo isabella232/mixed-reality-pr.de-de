@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Foto, Video, hololens, Kamera, Unity, loalisierbar
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: Foto, Video, hololens, Kamera, Unity, loerable, PVC, Foto Videokamera, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Webcam, Foto Erfassung, Video Erfassung
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957800"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678599"
 ---
 # <a name="locatable-camera-in-unity"></a>Ausrichtbare Kamera in Unity
 
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Namespace:** *unityengine. XR. WSA. Webcam*<br>
 **Typ:** *Videocapture*
 
-*Videocapture* funktioniert sehr ähnlich wie bei *photocapture* . Die einzigen beiden Unterschiede sind, dass Sie einen Wert für Frames pro Sekunde (fps) angeben müssen, und Sie können nur direkt auf dem Datenträger als MP4-Datei speichern. Die Schritte für die Verwendung von *Videocapture* lauten wie folgt:
+*Videocapture* funktioniert sehr ähnlich wie bei *photocapture*. Die einzigen beiden Unterschiede sind, dass Sie einen Wert für Frames pro Sekunde (fps) angeben müssen, und Sie können nur direkt auf dem Datenträger als MP4-Datei speichern. Die Schritte für die Verwendung von *Videocapture* lauten wie folgt:
 1. Erstellen eines *Videocapture* -Objekts
 2. Erstellen Sie ein " *cameraparameters* "-Objekt mit den gewünschten Einstellungen.
 3. Starten des Video Modus über *startvideomodeasync*

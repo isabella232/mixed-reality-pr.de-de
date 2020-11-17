@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Augenblick, Haupt Blick, Head-Tracking, Eye Tracking, DirectX, Input, holograms
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Augenblick, Kopf-und Haupt Nachverfolgung, Augen Verfolgung, DirectX, Input, holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683870"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678079"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Eingaben in den Kopf-und Augenblick in DirectX
 
@@ -205,7 +205,7 @@ Entwickler sollten sicherstellen, dass Sie angemessene Unterstützung für Benut
 
 <br>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Kalibrierung](../../calibration.md)
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)
 * [Blick auf hololens 2](../../design/eye-tracking.md)

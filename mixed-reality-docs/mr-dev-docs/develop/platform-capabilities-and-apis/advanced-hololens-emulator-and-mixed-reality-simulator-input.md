@@ -5,13 +5,13 @@ author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
-keywords: Hololens, Emulator, Simulation, gemischte Windows-Realität
-ms.openlocfilehash: 7a9bcfe8534c97d1ac9d9f67ba3e76dff941e7b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Hololens, Emulator, Simulation, Windows Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683803"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679619"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Erweiterte Eingabe für HoloLens-Emulator und Mixed Reality-Simulator
 
@@ -22,29 +22,29 @@ Die meisten emulatorbenutzer müssen nur die grundlegenden Eingabe Steuerelement
 Um mit dem Steuern der virtuellen Eingabe an den hololens-Emulator und dem Windows Mixed Reality-Simulator zu beginnen, sollten Sie sich zunächst mit einigen Konzepten vertraut machen.
 
 Bewegung bezieht sich auf das Steuern und Ändern der Position und Ausrichtung eines etwas in der Szene. Für ein Ziel steuerbares Objekt wird Bewegung sowohl mit Drehung als auch Übersetzung (Bewegung) entlang von drei Achsen gesteuert.
-* **Yaw** : nach links oder rechts.
-* **Tonhöhe** : ein-oder ausschalten.
-* **Roll** : Roll Side-to-Side
-* **X** : nach links oder rechts verschieben.
-* **Y** : nach oben oder unten verschieben.
-* **Z** : vorwärts oder rückwärts.
+* **Yaw**: nach links oder rechts.
+* **Tonhöhe**: ein-oder ausschalten.
+* **Roll**: Roll Side-to-Side
+* **X**: nach links oder rechts verschieben.
+* **Y**: nach oben oder unten verschieben.
+* **Z**: vorwärts oder rückwärts.
 
 Gesten-und Bewegungs Controller Eingaben werden genau der Art der physischen Geräte zugeordnet:
-* **Aktion** : Dadurch wird die Aktion simuliert, mit der der Vorder-Finger zum Ziehpunkt gedrückt oder die Aktions Schaltfläche auf einem Controller abgerufen wird. Beispielsweise kann die Aktions Eingabe verwendet werden, um die Luft tippen Bewegung zu simulieren, einen Bildlauf durch den Inhalt durchführen und die Tastenkombination zu drücken.
-* **[Bloom](../../design/system-gesture.md#bloom)/Systemanbieter Geste oder Home** : die hololens-Blüte/System Bewegung oder die Start Schaltfläche eines Controllers wird verwendet, um zur Shell zurückzukehren und System Aktionen auszuführen.
+* **Aktion**: Dadurch wird die Aktion simuliert, mit der der Vorder-Finger zum Ziehpunkt gedrückt oder die Aktions Schaltfläche auf einem Controller abgerufen wird. Beispielsweise kann die Aktions Eingabe verwendet werden, um die Luft tippen Bewegung zu simulieren, einen Bildlauf durch den Inhalt durchführen und die Tastenkombination zu drücken.
+* **[Bloom](../../design/system-gesture.md#bloom)/Systemanbieter Geste oder Home**: die hololens-Blüte/System Bewegung oder die Start Schaltfläche eines Controllers wird verwendet, um zur Shell zurückzukehren und System Aktionen auszuführen.
 
 Hände haben eine umfangreiche Darstellung in hololens 2.  Neben der Nachverfolgung/nicht Nachverfolgung und der Verwendung für den Einsatz von Gesten verfügen die Hände nun über ein geclustertes Skelett Modell, das für den Entwickler verfügbar ist.  Dadurch werden jeweils 26 nach verfolgte Punkte eingeführt.  
-* **Joint** : eine von 20 nach verfolgten Positionen für eine bestimmte verfolgte Hand. Dabei muss es sich um einen Punkt mit einem zugeordneten 3D--Bereich handelt.
-* **Pose** : eine vollständige Auflistung aller Gelenke in einer nach verfolgten Hand. Zurzeit ist dies eine Auflistung von 26 Gelenken. 
+* **Joint**: eine von 20 nach verfolgten Positionen für eine bestimmte verfolgte Hand. Dabei muss es sich um einen Punkt mit einem zugeordneten 3D--Bereich handelt.
+* **Pose**: eine vollständige Auflistung aller Gelenke in einer nach verfolgten Hand. Zurzeit ist dies eine Auflistung von 26 Gelenken. 
 
 Zu diesem Zeitpunkt machen wir die direkte Steuerung der einzelnen gemeinsamen Positionen nicht einzeln über die Emulator-Benutzeroberfläche verfügbar. Sie können Sie jedoch über die Simulations-API festlegen. Stattdessen haben wir eine Reihe nützlicher Vertreter, die es Ihnen ermöglicht, zwischen zu wechseln.
 
 Sie können auch den Status der simulierten Sensor Eingabe Steuern:
-* **Reset** : Hiermit werden alle simulierten Sensoren auf ihre Standardwerte zurückgesetzt.  Beginnend mit dem hololens 2-Emulator kann eine zurück setzung auf ein oder beide Hände beschränkt werden, indem Sie die gewünschten Hand (e) mithilfe der entsprechenden Modifizierertasten oder Schaltflächen (Links und/rechts alt oder die linke und/oder Rechte Stoß Taste im Gamepad) einbinden.
-* Nach **Verfolgung** : durchläuft die nach Verfolgungs Modi mit Feldern fester Breite. Dies schließt Folgendes ein:
-  * **Standard** : das Betriebssystem wählt basierend auf den Anforderungen des Systems den besten Überwachungsmodus aus.
-   * **Ausrichtung** : erzwingt die Nachverfolgung nur Nachverfolgung, unabhängig von den Anforderungen des Systems.
-   * **Positional** : erzwingt die Positionsüberwachung, unabhängig von den Anforderungen des Systems.
+* **Reset**: Hiermit werden alle simulierten Sensoren auf ihre Standardwerte zurückgesetzt.  Beginnend mit dem hololens 2-Emulator kann eine zurück setzung auf ein oder beide Hände beschränkt werden, indem Sie die gewünschten Hand (e) mithilfe der entsprechenden Modifizierertasten oder Schaltflächen (Links und/rechts alt oder die linke und/oder Rechte Stoß Taste im Gamepad) einbinden.
+* Nach **Verfolgung**: durchläuft die nach Verfolgungs Modi mit Feldern fester Breite. Dies schließt Folgendes ein:
+  * **Standard**: das Betriebssystem wählt basierend auf den Anforderungen des Systems den besten Überwachungsmodus aus.
+   * **Ausrichtung**: erzwingt die Nachverfolgung nur Nachverfolgung, unabhängig von den Anforderungen des Systems.
+   * **Positional**: erzwingt die Positionsüberwachung, unabhängig von den Anforderungen des Systems.
 
 ## <a name="types-of-input"></a>Eingabetypen
 
@@ -85,7 +85,7 @@ In der folgenden Tabelle werden die Optionen für die Zielplattform und die Mög
 
 | Object | Tastatur-Modifizierer | Controllermodifizierer | Emulator UI-Modifizierer |
 |----------|----------|----------|----------|
-| Body | (Standard) | (Standard) | (Standard) |
+| Text | (Standard) | (Standard) | (Standard) |
 | Head | Halten H | (Nicht verfügbar) | (Nicht verfügbar) |
 | Linker/Controller | Linke ALT-Taste gedrückt halten | Linke Schulter Taste halten | Linke Hand Nadel | 
 | Rechte Seite/Controller | Alt-Taste gedrückt halten | Rechte Schulter Taste halten | Rechte Hand Nadel |
@@ -136,7 +136,7 @@ Wenn Sie ein Windows Mixed Reality-immersives Headset mit dem hololens 2-Emulato
 
 Beachten Sie, dass bei Verwendung eines Headsets standardmäßige Tastatur-, Maus-und Gamepad-Steuerelemente automatisch ignoriert werden.
 
-|  Vorgang |  Aktion |  Notizen | 
+|  Vorgang |  Aktion |  Hinweise | 
 |----------|----------|----------|
 |  Text X |  Thumbstick links/rechts |   | 
 |  Text Z |  Fingerabdruck vorwärts/zurück |   | 

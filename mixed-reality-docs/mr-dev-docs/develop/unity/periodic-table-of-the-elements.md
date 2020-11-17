@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Gemischte Windows-Realität, Entwurf, Beispiel-APP, Steuerelemente
-ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Gemischte Windows-Realität, Design, Beispiel-APP, Steuerelemente, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573264"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677679"
 ---
 # <a name="periodic-table-of-the-elements"></a>Periodensystem der Elemente
 
@@ -55,13 +55,13 @@ Der Benutzer kann den Surface-Typ ändern, indem er auf die Schaltflächen am un
 
 ### <a name="interactable-object-button"></a>Interactable-Objekt (Schaltfläche)
 
-Das [interactable-Objekt](../../design/interactable-object.md) ist ein Objekt, das auf grundlegende hololens-Eingaben reagieren kann. Sie wird als präfab/-Skript bereitgestellt, das Sie problemlos auf jedes beliebige Objekt anwenden können. Beispielsweise können Sie einen Kaffeebecher in der Szene in der Szene zusammenstellen und auf Eingaben wie z. b. Blick, Luft tippen, Navigation und Manipulations Gesten reagieren. [Weitere Informationen](../../design/interactable-object.md)
+Das [interactable-Objekt](../../design/interactable-object.md) ist ein Objekt, das auf grundlegende hololens-Eingaben reagieren kann. Sie wird als präfab/-Skript bereitgestellt, das Sie problemlos auf jedes beliebige Objekt anwenden können. Beispielsweise können Sie einen Kaffeebecher in der Szene in der Szene zusammenstellen und auf Eingaben wie z. b. Blick, Luft tippen, Navigation und Manipulations Gesten reagieren. [Erfahren Sie mehr](../../design/interactable-object.md)
 
 ![nteractable-Objekt](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Objektsammlung
 
-Die [Objektsammlung](../../design/object-collection.md) ist ein Objekt, mit dem Sie mehrere Objekte in verschiedenen Formen anordnen können. Es unterstützt die Ebenen, Zylinder, Kugel und Punkt. Sie können zusätzliche Eigenschaften wie RADIUS, Anzahl der Zeilen und den Abstand konfigurieren. [Weitere Informationen](../../design/object-collection.md)
+Die [Objektsammlung](../../design/object-collection.md) ist ein Objekt, mit dem Sie mehrere Objekte in verschiedenen Formen anordnen können. Es unterstützt die Ebenen, Zylinder, Kugel und Punkt. Sie können zusätzliche Eigenschaften wie RADIUS, Anzahl der Zeilen und den Abstand konfigurieren. [Erfahren Sie mehr](../../design/object-collection.md)
 
 ![Objektsammlung](images/640px-periodictable-collections.jpg)
 
@@ -87,7 +87,7 @@ Lesen Sie den Artikel zum Aktualisieren der periodischen Tabelle der Elements-Ap
 </tr>
 </table>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)

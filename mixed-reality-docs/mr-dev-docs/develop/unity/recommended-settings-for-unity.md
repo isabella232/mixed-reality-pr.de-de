@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, Einstellungen, gemischte Realität
-ms.openlocfilehash: 0e0f8649525c84bdc479dbcee92f737e877a60ca
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+keywords: Unity, Einstellungen, gemischte Realität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Leistung, Qualitätseinstellungen, Beleuchtungseinstellungen, tiefen Puffer, XR, nach Verfolgungs Verlust
+ms.openlocfilehash: b560e75043cbf4a3cb93837938fdb65324cb16bb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240759"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677369"
 ---
 # <a name="recommended-settings-for-unity"></a>Empfohlene Einstellungen für Unity
 
@@ -21,13 +21,13 @@ Unity bietet eine Reihe von Standardoptionen, die in der Regel der durchschnittl
 
 ### <a name="low-quality-settings"></a>Einstellungen mit niedriger Qualität
 
-Es ist wichtig, die **Unity-Qualitätseinstellungen** für Ihre Umgebung so zu ändern, dass Sie **sehr niedrig**ist. Dadurch wird sichergestellt, dass Ihre Anwendung in der entsprechenden Framerate leistungsfähig ausgeführt wird. Dies ist für die hololens-Entwicklung äußerst wichtig. Für die Entwicklung auf immersiven Headsets, abhängig von den Spezifikationen des Desktops, der die VR-Darstellung ermöglicht, kann ein Framerate auch ohne die niedrigsten Qualitätsparameter erreicht werden.
+Es ist wichtig, die **Unity-Qualitätseinstellungen** für Ihre Umgebung so zu ändern, dass Sie **sehr niedrig** ist. Dadurch wird sichergestellt, dass Ihre Anwendung in der entsprechenden Framerate leistungsfähig ausgeführt wird. Dies ist für die hololens-Entwicklung äußerst wichtig. Für die Entwicklung auf immersiven Headsets, abhängig von den Spezifikationen des Desktops, der die VR-Darstellung ermöglicht, kann ein Framerate auch ohne die niedrigsten Qualitätsparameter erreicht werden.
 
-In Unity 2019 LTS und höher kann die Qualität des Projekts festgelegt werden, indem Sie **Edit**auf "  >  **Projekteinstellungen**bearbeiten"  >  **Quality** klicken und den **Standard** Wert festlegen, indem Sie auf den abwärts Pfeil auf den Wert " **sehr niedriger** Qualität" klicken.
+In Unity 2019 LTS und höher kann die Qualität des Projekts festgelegt werden, indem Sie **Edit** auf "  >  **Projekteinstellungen** bearbeiten"  >  **Quality** klicken und den **Standard** Wert festlegen, indem Sie auf den abwärts Pfeil auf den Wert " **sehr niedriger** Qualität" klicken.
 
 ### <a name="lighting-settings"></a>Beleuchtungseinstellungen
 
-Ähnlich wie bei den Quality Scene-Einstellungen ist es wichtig, optimale Beleuchtungseinstellungen für ihre gemischte Reality-Anwendung festzulegen. In Unity ist die Beleuchtungs Einstellung, die in der Regel die größte Auswirkung auf die Leistung in Ihrer Szene hat, die **Globale Beleuchtung in Echtzeit**. Dies kann deaktiviert werden, indem Sie unter **Window**  >  **Rendering**  >  **Beleuchtung Settings**in  >  **Echtzeit Global Beleuchtung**wechseln.
+Ähnlich wie bei den Quality Scene-Einstellungen ist es wichtig, optimale Beleuchtungseinstellungen für ihre gemischte Reality-Anwendung festzulegen. In Unity ist die Beleuchtungs Einstellung, die in der Regel die größte Auswirkung auf die Leistung in Ihrer Szene hat, die **Globale Beleuchtung in Echtzeit**. Dies kann deaktiviert werden, indem Sie unter **Window**  >  **Rendering**  >  **Beleuchtung Settings** in  >  **Echtzeit Global Beleuchtung** wechseln.
 
 Es gibt eine weitere Beleuchtungs Einstellung, die **Globale Beleuchtung**. Diese Einstellung kann für immersive Headsets leistungsfähige und visuell beeindruckende Ergebnisse bereitstellen, ist jedoch im Allgemeinen nicht für die hololens-Entwicklung anwendbar. Die **gebrannte globale Löschung** wird nur für statische gameobjects-Objekte berechnet, die im Allgemeinen nicht in hololens-Szenen aufgrund der Art einer unbekannten und veränderlichen Umgebung gefunden werden.
 
@@ -62,7 +62,7 @@ Um eine bessere hologrammstabilität von der Wahrnehmung des Benutzers zu erziel
 Aktivieren dieser Funktion in Ihrem Unity-Projekt
 
 1) Öffnen Sie die **Player XR Settings** (Player XR-Einstellungen) (navigieren Sie zu **Edit** > **Project Settings** > **Player** > **XR Settings** („Bearbeiten > Projekteinstellungen > Player > XR-Einstellungen))
-2) Aktivieren Sie das Kontrollkästchen zum **Aktivieren der tiefen Puffer Freigabe** unter **Virtual Reality sdert**  >  **Windows Mixed Reality** -Erweiterung (Kontrollkästchen**Virtual Reality supported** muss aktiviert sein).
+2) Aktivieren Sie das Kontrollkästchen zum **Aktivieren der tiefen Puffer Freigabe** unter **Virtual Reality sdert**  >  **Windows Mixed Reality** -Erweiterung (Kontrollkästchen **Virtual Reality supported** muss aktiviert sein).
 
 Außerdem wird empfohlen, unter der Einstellung **Tiefe Format** in diesem Panel eine **16-Bit-Tiefe** auszuwählen, insbesondere bei der hololens-Entwicklung. Durch die Auswahl von 16 Bit im Vergleich zu 24-Bit werden die Bandbreitenanforderungen erheblich reduziert, da weniger Daten verschoben/verarbeitet werden müssen.
 
@@ -71,12 +71,12 @@ Damit die Windows Mixed Reality-Plattform die – Hologramm-Stabilität optimier
 Wenn Sie den [Mixed Reality Toolkit Standard-Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md)verwenden, um Tiefe für transparente Objekte zu Renten:
 
 1) Wählen Sie das transparente Material aus, das den mrtk-Standard-Shader verwendet, und öffnen Sie das Fenster Inspektor Editor.
-2) Wählen Sie in der Warnung "Tiefe Puffer Freigabe" die Schaltfläche **jetzt reparieren** aus. Dies kann auch manuell erfolgen, indem der **Renderingmodus** auf **Benutzer**definiert festgelegt wird. Legen Sie dann den **Modus** auf **transparent** fest, und legen Sie schließlich die **Tiefe Schreib** Vorgänge **auf**
+2) Wählen Sie in der Warnung "Tiefe Puffer Freigabe" die Schaltfläche **jetzt reparieren** aus. Dies kann auch manuell erfolgen, indem der **Renderingmodus** auf **Benutzer** definiert festgelegt wird. Legen Sie dann den **Modus** auf **transparent** fest, und legen Sie schließlich die **Tiefe Schreib** Vorgänge **auf**
 
 > [!IMPORTANT]
 > Entwickler sollten sich vor Z-kämpfen hüten, wenn Sie diese Werte zusammen mit den Einstellungen für die near/all-Ebene der Kamera ändern. Z-Kämpfe treten auf, wenn zwei gameobjects versuchen, zum gleichen Pixel zu rendern, und aufgrund von Einschränkungen bei der Genauigkeit des tiefen Puffers (d. h. z-Tiefe), Unity kann nicht erkennen, welches Objekt vor dem anderen liegt. Entwickler werden ein Flimmern zwischen zwei Spielobjekten bemerken, wenn Sie für denselben z-tiefen Wert *kämpfen* . Dies kann durch einen Wechsel zu einem 24-Bit-Tiefen Format gelöst werden, da für jedes Objekt eine größere Anzahl von Werten vorhanden ist, die für die jeweilige z-Tiefe von der Kamera berechnet werden sollen.
 >
-> Es wird jedoch empfohlen, vor allem bei der hololens-Entwicklung die Near-und Far-Ebenen der Kamera in einen kleineren Bereich zu ändern und das 16-Bit-Tiefen Format beizubehalten. Die z-Tiefe ist nicht linear dem Wertebereich entlang der nahen und fernen Kamera Flächen zugeordnet. Dies kann geändert werden, indem Sie die *Hauptkamera* in der Szene auswählen und unter **Inspektor**die Werte **in der Nähe & weit** genwergenebenenwerte ändern, um den Bereich zu reduzieren (d.h. zwischen 1000 m und 100 m oder einem anderen x-Wert usw.)
+> Es wird jedoch empfohlen, vor allem bei der hololens-Entwicklung die Near-und Far-Ebenen der Kamera in einen kleineren Bereich zu ändern und das 16-Bit-Tiefen Format beizubehalten. Die z-Tiefe ist nicht linear dem Wertebereich entlang der nahen und fernen Kamera Flächen zugeordnet. Dies kann geändert werden, indem Sie die *Hauptkamera* in der Szene auswählen und unter **Inspektor** die Werte **in der Nähe & weit** genwergenebenenwerte ändern, um den Bereich zu reduzieren (d.h. zwischen 1000 m und 100 m oder einem anderen x-Wert usw.)
 
 >[!IMPORTANT]
 > [Unity erstellt](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) bei Verwendung des 16-Bit-Tiefen Formats keinen Schablone-Puffer. Folglich funktionieren einige Effekte der Unity-Benutzeroberfläche und andere Schablonen erforderliche Effekte nicht, es sei denn, es wird ein 24-Bit-Tiefen Format ausgewählt, das einen [8-Bit-Schablonen Puffer](https://docs.unity3d.com/Manual/SL-Stencil.html)erstellt.
@@ -106,7 +106,7 @@ Hololens verfügt über eine CPU-und GPU-Version der mobilen Klasse, was bedeute
 
 So schalten Sie den Holographic-Begrüßungsbildschirm um:
 
-1) Zum **Bearbeiten**der  >  **Projekt Einstellungs**  >  Seite "**Player** " wechseln
+1) Zum **Bearbeiten** der  >  **Projekt Einstellungs**  >  Seite "**Player** " wechseln
 2) Klicken Sie auf die Registerkarte **Windows Store** , und öffnen Sie den Abschnitt Begrüßungs **Bild**
 3) Wenden Sie das gewünschte Image unter der Eigenschaft **Windows Holographic > Holographic Splash Image** an.
     - Wenn Sie die Option **Unity-Begrüßungsbildschirm anzeigen** umschalten, wird der Begrüßungsbildschirm von Unity-Marken aktiviert oder deaktiviert. Wenn Sie nicht über eine Unity pro-Lizenz verfügen, wird immer der Bildschirm "der Unity-Marken Begrüßungs" angezeigt.
@@ -123,13 +123,13 @@ Weitere Informationen finden Sie in [der Dokumentation](https://docs.unity3d.com
 
 ### <a name="tracking-loss"></a>Verlust der Nachverfolgung
 
-Ein Mixed Reality-Headset ist davon abhängig, dass die Umgebung um die IT-Umgebung herum [Gesperrte Koordinatensysteme](coordinate-systems-in-unity.md)erstellt werden kann, mit denen holograms an der Position bleiben können. Wenn sich das Headset nicht in der Welt finden kann, wird die nach *Verfolgung*des Headsets abgebrochen. In diesen Fällen funktionieren Funktionen, die von weltweit gesperrten Koordinatensystemen abhängen, wie z. b. räumliche Stufen, räumliche Anker und räumliche Zuordnung, nicht.
+Ein Mixed Reality-Headset ist davon abhängig, dass die Umgebung um die IT-Umgebung herum [Gesperrte Koordinatensysteme](coordinate-systems-in-unity.md)erstellt werden kann, mit denen holograms an der Position bleiben können. Wenn sich das Headset nicht in der Welt finden kann, wird die nach *Verfolgung* des Headsets abgebrochen. In diesen Fällen funktionieren Funktionen, die von weltweit gesperrten Koordinatensystemen abhängen, wie z. b. räumliche Stufen, räumliche Anker und räumliche Zuordnung, nicht.
 
 Wenn ein Verlust der Nachverfolgung auftritt, besteht das Standardverhalten von Unity darin, das Rendern von holograms zu stoppen, die [Spiel Schleife](https://docs.unity3d.com/Manual/ExecutionOrder.html)anzuhalten und eine Nachverfolgung verlorener Benachrichtigung anzuzeigen, die dem Benutzer angezeigt wird. Benutzerdefinierte Benachrichtigungen können auch in Form eines Abbild Verlusts bereitgestellt werden. Für apps, die von der Nachverfolgung für Ihre gesamte Darstellung abhängen, ist es ausreichend, Unity dieses Verfahren vollständig zu verarbeiten, bis die Nachverfolgung wieder hergestellt wird. Entwickler können ein benutzerdefiniertes Image bereitstellen, das beim Nachverfolgen von Verlusten angezeigt wird.
 
 So passen Sie das Abbild der Nachverfolgung verloren:
 
-1) Zum **Bearbeiten**der  >  **Projekt Einstellungs**  >  Seite "**Player** " wechseln
+1) Zum **Bearbeiten** der  >  **Projekt Einstellungs**  >  Seite "**Player** " wechseln
 2) Klicken Sie auf die Registerkarte **Windows Store** , und öffnen Sie den Abschnitt Begrüßungs **Abbild** .
 3) Wenden Sie das gewünschte Image unter der Eigenschaft **Windows Holographic > Tracking Loss Image** an.
 
@@ -153,7 +153,7 @@ Damit eine APP bestimmte Funktionen nutzen kann, müssen Sie die entsprechenden 
 
 Funktionen können für eine gemischte Reality-Anwendung wie folgt aktiviert werden:
 
-1) Zum **Bearbeiten**der  >  **Projekt Einstellungs**  >  Seite "**Player** " wechseln
+1) Zum **Bearbeiten** der  >  **Projekt Einstellungs**  >  Seite "**Player** " wechseln
 2) Klicken Sie auf die Registerkarte **Windows Store** , öffnen Sie den Abschnitt **Veröffentlichungs Einstellungen** , und suchen Sie nach der Liste **Funktionen** .
 
 Die folgenden Funktionen zum Aktivieren der häufig verwendeten APIs für Holographic-apps sind verfügbar:
@@ -167,7 +167,7 @@ Die folgenden Funktionen zum Aktivieren der häufig verwendeten APIs für Hologr
 |  Mikrofon  |  Videocapture (bei der Erfassung von Audiodaten), "diktationerkenzer", "grammarerkenzer" und "keywordrecognizer" |
 |  InternetClient  |  "Diktationerkenzer" (und für die Verwendung des Unity-Profilers) |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Unity-Entwicklung – Übersicht](unity-development-overview.md)
 * [Grundlegendes zur Leistung für Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

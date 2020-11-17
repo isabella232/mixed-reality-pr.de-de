@@ -5,13 +5,13 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, Stabilisierung, Fallstudie
-ms.openlocfilehash: 4eb61cb37ef087dc5fbeb6b4ef6ca1c507719205
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holograms, Stabilisierung, Fallstudie, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683795"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679609"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Fallstudie: Verwenden der Stabilisierungs Ebene zum Reduzieren von Holographic-Turbulenzen
 
@@ -88,7 +88,7 @@ Wenn Sie eine neue Konfiguration der Punkte sehen, können Sie auf das Recht kli
 * Wenn möglich, sollten Sie die Ebene immer zwischen Zielen problemlos verschieben. Das sofortige wechseln entfernter Ziele kann die Szene visuell stören.
 * Ziehen Sie in Erwägung, eine Option in der Ebene festzulegen, mit der Logik auf ein bestimmtes Ziel gesperrt werden soll. Auf diese Weise können Sie bei Bedarf die Ebene für ein Objekt, z. b. ein Logo oder einen Titelbildschirm, sperren.
 
-## <a name="about-the-author"></a>Zum Autor
+## <a name="about-the-author"></a>Informationen zum Autor
 
 <table style="border-collapse:collapse">
 <tr>
@@ -97,7 +97,7 @@ Wenn Sie eine neue Konfiguration der Punkte sehen, können Sie auf das Recht kli
 </tr>
 </table>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [MR-Grundlagen 100: Erste Schritte mit Unity](../unity/tutorials/holograms-100.md)
 * [Fokuspunkt in Unity](../unity/focus-point-in-unity.md)
 * [Hologrammstabilität](hologram-stability.md)

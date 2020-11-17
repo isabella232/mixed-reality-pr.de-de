@@ -1,19 +1,19 @@
 ---
-title: Aktualisieren von 2D-UWP-Apps für Mixed Reality
+title: Aktualisieren von 2D-UWP-Apps für gemischte Realität
 description: In diesem Artikel wird beschrieben, wie Sie Ihre vorhandene 2D-universelle Windows-Plattform-App auf hololens und Windows Mixed Reality-immersiven Headsets aktualisieren.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D-APP, UWP, flatapp, hololens, immersives Headset, App-Modell, Schaltfläche "zurück", App-Leiste, dpi, Auflösung, Skalierung
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 2D-APP, UWP, flatapp, hololens, immersives Headset, App-Modell, Schaltfläche "zurück", App-Leiste, dpi, Auflösung, Skalierung, Portierung, hololens 1. gen, hololens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683406"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677799"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Aktualisieren von 2D-UWP-Apps für Mixed Reality
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Aktualisieren von 2D-UWP-Apps für gemischte Realität
 
 Windows Mixed Reality ermöglicht Benutzern das Anzeigen von holograms, als ob Sie sich in ihrer physischen oder digitalen Welt befinden. Im Kern sind sowohl hololens als auch Desktop-PCs, an die Sie die immersiven Headset-Zubehör anfügen, Windows 10-Geräte. Dies bedeutet, dass Sie in der Lage sind, fast alle universelle Windows-Plattform-Apps (UWP) im Store als 2D-apps auszuführen.
 
@@ -78,7 +78,7 @@ Nun, da ihre UWP-app "Windows. Universal" als Ziel hat, können Sie Ihre APP ers
 * Wählen Sie in Visual Studio die **x86** -Buildkonfiguration für Ihre APP aus.
 
   ![x86-Buildkonfiguration in Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* Wählen Sie im Dropdown Menü Bereitstellungs Ziel die Option **hololens-Emulator** aus.
+* Wählen Sie im Dropdownmenü für das Bereitstellungsziel **HoloLens-Emulator** aus.
 
   ![Hololens-Emulator in der Liste der Bereitstellungs Ziele](images/deployemulator-500px.png)<br>
 * Wählen Sie **Debuggen > Debugging starten** , um die APP bereitzustellen und das Debugging zu starten
@@ -98,7 +98,7 @@ Um das Ende des Fehlers zu erreichen, was dazu führen kann, dass Ihre UWP-APP n
 ### <a name="running-your-uwp-app-in-the-debugger"></a>Ausführen der UWP-App im Debugger
 
 Diese Schritte führen Sie durch das Debuggen der UWP-App mit dem Visual Studio-Debugger.
-* Wenn Sie dies nicht bereits getan haben, öffnen Sie die Projekt Mappe in Visual Studio. Ändern Sie das Ziel in den **hololens-Emulator** und die Buildkonfiguration in **x86** .
+* Wenn Sie dies nicht bereits getan haben, öffnen Sie die Projekt Mappe in Visual Studio. Ändern Sie das Ziel in den **hololens-Emulator** und die Buildkonfiguration in **x86**.
 * Wählen Sie **Debuggen > Debugging starten** , um die APP bereitzustellen und das Debugging zu starten
 * Platzieren Sie die APP mit der Maus, Tastatur oder dem Xbox-Controller auf der ganzen Welt.
 * Visual Studio sollte nun irgendwo in Ihrem app-Code unterbrechen.
@@ -108,7 +108,7 @@ Diese Schritte führen Sie durch das Debuggen der UWP-App mit dem Visual Studio-
 
 ## <a name="update-your-ui"></a>Aktualisieren der Benutzeroberfläche
 
-Nun, da ihre UWP-App auf immersiven Headsets und/oder hololens als 2D Hologram ausgeführt wird, werden wir als nächstes sicherstellen, dass Sie sehr schön aussieht. Folgende Punkte sollten berücksichtigt werden:
+Nun, da ihre UWP-App auf immersiven Headsets und/oder hololens als 2D Hologram ausgeführt wird, werden wir als nächstes sicherstellen, dass Sie sehr schön aussieht. Nachfolgend sind einige Dinge aufgeführt, die Sie bedenken sollten:
 * Windows Mixed Reality führt alle 2D-apps mit fester Auflösung und dpi-Wert aus, der 853x480 effektiven Pixeln entspricht. Berücksichtigen Sie, ob Ihr Design in dieser Skala verfeinert werden muss, und überprüfen Sie den unten stehenden Entwurfs Leit Faden, um Ihre Benutzeroberflächen und immersive Headsets zu verbessern.
 * Windows Mixed Reality [unterstützt keine](../../design/app-model.md) 2D-Live Kacheln. Wenn die Kernfunktionalität Informationen zu einer Live-Kachel anzeigt, sollten Sie diese Informationen in Ihre APP zurück verschieben oder [3D-App-Launcher](../../distribute/3d-app-launcher-design-guidance.md)erkunden.
 
@@ -116,7 +116,7 @@ Nun, da ihre UWP-App auf immersiven Headsets und/oder hololens als 2D Hologram a
 
 ![Vom reaktionsfähigen Design](images/scale-500px.png)
 
-Windows 10 verschiebt den gesamten visuellen Entwurf von "Real Screen Pixels" in " **effektive Pixel** ". Das heißt, Entwickler entwerfen Ihre Benutzeroberfläche gemäß den Windows 10-Richtlinien für die Benutzeroberfläche für effektive Pixel, und die Windows-Skalierung stellt sicher, dass diese effektiven Pixel die richtige Größe für die Verwendbarkeit über Geräte, Auflösungen, dpi usw. sind Weitere Informationen zu dieser [buildpräsentation](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)finden Sie [in diesem großartigen Lesevorgang auf MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) .
+Windows 10 verschiebt den gesamten visuellen Entwurf von "Real Screen Pixels" in " **effektive Pixel**". Das heißt, Entwickler entwerfen Ihre Benutzeroberfläche gemäß den Windows 10-Richtlinien für die Benutzeroberfläche für effektive Pixel, und die Windows-Skalierung stellt sicher, dass diese effektiven Pixel die richtige Größe für die Verwendbarkeit über Geräte, Auflösungen, dpi usw. sind Weitere Informationen zu dieser [buildpräsentation](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)finden Sie [in diesem großartigen Lesevorgang auf MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) .
 
 Auch wenn die einzigartige Möglichkeit besteht, apps in einer Reihe von Entfernungen in ihrer Welt zu platzieren, wird empfohlen, TV-ähnliche Anzeige Abstände zu erzielen, um die beste Lesbarkeit und Interaktion mit Blick und Gesten zu erzielen. Aus diesem Grund zeigt ein virtuelles Slate in der Mixed Reality-Startseite ihre flache UWP-Ansicht an:
 
@@ -175,7 +175,7 @@ Im folgenden finden Sie die grundlegenden Konzepte und Szenarios, die Sie für d
 
 Sobald Ihre APP ausgeführt wird, Verpacken Sie Ihre APP, um [Sie an den Microsoft Store zu senden](../../distribute/submitting-an-app-to-the-microsoft-store.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [App-Modell](../../design/app-model.md)
 * [Anvisieren mit dem Kopf und Ausführen](../../design/gaze-and-commit.md)
 * [Motion-Controller](../../design/motion-controllers.md)

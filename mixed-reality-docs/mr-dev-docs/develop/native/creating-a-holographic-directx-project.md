@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Holographic APP, New APP, UWP APP, Template APP, holograms, neues Projekt, Exemplarische Vorgehensweise, Download, Beispielcode
-ms.openlocfilehash: 3cca7cedfcf90299049653426a497abbd2dede74
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Holographic APP, New APP, UWP APP, Template APP, holograms, neues Projekt, Exemplarische Vorgehensweise, Download, Beispielcode, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 08adbf6a4148e0e1d3b808d993011a7407fbf086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683902"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678129"
 ---
 # <a name="creating-a-holographic-directx-project"></a>Erstellen eines holographischen DirectX-Projekts
 
@@ -32,23 +32,23 @@ Die Mixed Reality-App bietet jedoch einige zusätzliche Funktionen, die in einer
 
 Installieren Sie zunächst [die Tools](../install-the-tools.md), und befolgen Sie dabei die Anweisungen zum Herunterladen von Visual Studio 2019 und den Windows Mixed Reality-App-Vorlagen. Die Mixed Reality-App-Vorlagen sind im Visual Studio Marketplace als [Webdownload](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)verfügbar, oder Sie installieren Sie als Erweiterung über die Visual Studio-Benutzeroberfläche.
 
-Nun können Sie Ihre DirectX 11 Windows Mixed Reality-app erstellen! Wenn Sie den Beispiel Inhalt entfernen möchten, kommentieren Sie die **DRAW_SAMPLE_CONTENT** Präprozessordirektive in " *PCH. h* " aus.
+Nun können Sie Ihre DirectX 11 Windows Mixed Reality-app erstellen! Wenn Sie den Beispiel Inhalt entfernen möchten, kommentieren Sie die **DRAW_SAMPLE_CONTENT** Präprozessordirektive in " *PCH. h*" aus.
 
 ## <a name="creating-a-uwp-project"></a>Erstellen eines UWP-Projekts
 
 Nachdem Sie die [Tools installiert haben](../install-the-tools.md) , können Sie ein Holographic DirectX-UWP-Projekt erstellen.
 
 So erstellen Sie ein neues Projekt in Visual Studio 2019:
-1. Starten Sie **Visual Studio** .
+1. Starten Sie **Visual Studio**.
 2. Wählen Sie im Abschnitt **Get Started** auf der rechten Seite **Create a New Project** aus.
-3. Wählen Sie in den Dropdown Menüs im Dialogfeld **Neues Projekt erstellen** die Option **C++** , **Windows Mixed Reality** und **UWP** aus.
+3. Wählen Sie in den Dropdown Menüs im Dialogfeld **Neues Projekt erstellen** die Option **C++**, **Windows Mixed Reality** und **UWP** aus.
 4. Wählen Sie **Holographic DirectX 11-app (universelle Windows-APP) (C++/WinRT)** aus.
    ![Screenshot der Holographic DirectX 11 C++/WinRT UWP-App-Projektvorlage in Visual Studio 2019](images/holographic-directx-app-cpp-new-project-2019.png)<br>
    *Holographic DirectX 11 C++/WinRT UWP-App-Projektvorlage in Visual Studio 2019*
    >[!IMPORTANT]
    >Stellen Sie sicher, dass der Name der Projektvorlage "(C++/WinRT)" enthält.  Andernfalls ist eine ältere Version der Holographic-Projektvorlagen installiert.  Um die neuesten Projektvorlagen zu erhalten, [Installieren Sie Sie](../install-the-tools.md) als Erweiterung für Visual Studio 2019.
-5. Klicken Sie auf **Weiter** .
-5. Füllen Sie die Textfelder **Projektname** und **Speicherort** aus, und klicken oder tippen Sie auf **Erstellen** . Das Projekt für die Holographic-APP wird erstellt.
+5. Klicken Sie auf **Weiter**.
+5. Füllen Sie die Textfelder **Projektname** und **Speicherort** aus, und klicken oder tippen Sie auf **Erstellen**. Das Projekt für die Holographic-APP wird erstellt.
 6. Stellen Sie sicher, dass die **Zielversion** und die **Mindestversion** für die Entwicklung auf hololens 2 auf **Windows 10, Version 1903,** festgelegt sind.  Wenn Sie auch hololens (1st Gen) oder Desktop-Windows Mixed Reality-Headsets als Ziel verwenden, können Sie die **Mindestversion** auf **Windows 10, Version 1809** , festlegen, obwohl hierfür einige <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">Adaptive Überprüfungen der Version</a> in Ihrem Code erforderlich sind, wenn Sie neue Features von hololens 2 verwenden.
    ![Screenshot der Festlegung von Windows 10, Version 1903, als Ziel-und Mindestversion](images/new-uwp-project.png)<br>
    *Festlegen von **Windows 10, Version 1903** als Ziel-und Mindestversion*
@@ -56,7 +56,7 @@ So erstellen Sie ein neues Projekt in Visual Studio 2019:
    >Wenn **Windows 10, Version 1903** , nicht als Option angezeigt wird, ist das neueste Windows 10 SDK nicht installiert.  Um diese Option anzuzeigen, installieren Sie <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">die Version 10.0.18362.0 oder höher des Windows 10 SDK</a>.
 
 So erstellen Sie ein neues Projekt in Visual Studio 2017:
-1. Starten Sie **Visual Studio** .
+1. Starten Sie **Visual Studio**.
 2. Zeigen Sie im Menü **Datei** auf **neu** , und wählen Sie im Kontextmenü **Projekt** aus. Das Dialogfeld **Neues Projekt** wird geöffnet.
 3. Erweitern Sie auf der linken Seite die Option **installiert** , und erweitern Sie den Knoten **Visual C++** Sprache.
 4. Navigieren Sie zum Knoten **universelle Windows-> Holographic** , und wählen Sie **Holographic DirectX 11-app (universelle Windows-APP) (C++/WinRT)** aus.
@@ -64,7 +64,7 @@ So erstellen Sie ein neues Projekt in Visual Studio 2017:
    *Holographic DirectX 11 C++/WinRT UWP-App-Projektvorlage in Visual Studio 2017*
    >[!IMPORTANT]
    >Stellen Sie sicher, dass der Name der Projektvorlage "(C++/WinRT)" enthält.  Andernfalls ist eine ältere Version der Holographic-Projektvorlagen installiert.  Um die neuesten Projektvorlagen zu erhalten, [Installieren Sie Sie](../install-the-tools.md) als Erweiterung für Visual Studio 2017.
-5. Füllen Sie die Textfelder **Name** und **Speicherort** aus, und klicken oder tippen Sie auf **OK** . Das Projekt für die Holographic-APP wird erstellt.
+5. Füllen Sie die Textfelder **Name** und **Speicherort** aus, und klicken oder tippen Sie auf **OK**. Das Projekt für die Holographic-APP wird erstellt.
 6. Stellen Sie sicher, dass die **Zielversion** und die **Mindestversion** für die Entwicklung auf hololens 2 auf **Windows 10, Version 1903,** festgelegt sind.  Wenn Sie auch hololens (1st Gen) oder Desktop-Windows Mixed Reality-Headsets als Ziel verwenden, können Sie die **Mindestversion** auf **Windows 10, Version 1809** , festlegen, obwohl hierfür einige <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">Adaptive Überprüfungen der Version</a> in Ihrem Code erforderlich sind, wenn Sie neue Features von hololens 2 verwenden.
    ![Screenshot der Festlegung von Windows 10, Version 1903, als Ziel-und Mindestversion](images/new-uwp-project.png)<br>
    *Festlegen von **Windows 10, Version 1903** als Ziel-und Mindestversion*
@@ -83,7 +83,7 @@ In den restlichen Anweisungen wird davon ausgegangen, dass Sie die APP mit C++ e
 
 Ihre Holographic UWP-App beginnt in der **wWinMain** -Funktion in appview. cpp. Die **wWinMain** -Funktion erstellt die <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">iframeworkview</a> der APP und startet die <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.coreapplication" target="_blank">coreapplication-Anwendung</a> .
 
-Aus **appview. cpp** :
+Aus **appview. cpp**:
 
 ```cpp
 // The main function bootstraps into the IFrameworkView.
@@ -107,7 +107,7 @@ Dieses Win32-Beispiel verwendet <a href="https://docs.microsoft.com/windows/uwp/
 
 Ihre Holographic-Win32-App beginnt in der **wWinMain** -Funktion in appmain. cpp. Die **wWinMain** -Funktion erstellt das HWND der APP und startet die Nachrichten Schleife.
 
-Aus **appmain. cpp** :
+Aus **appmain. cpp**:
 
 ```cpp
 int APIENTRY wWinMain(
@@ -143,7 +143,7 @@ Ab diesem Punkt verarbeitet die appmain-Klasse die Interaktion mit grundlegenden
 
 ## <a name="render-holographic-content"></a>Holographic-Inhalt Wiedergabe
 
-Der **Inhalts** Ordner des Projekts enthält Klassen zum Rendern von holograms im [Holographic-Raum](getting-a-holographicspace.md). Das standardmäßige – Hologramm in der Vorlage ist ein drehende Cube, der zwei Meter entfernt ist als der Benutzer. Das zeichnen dieses Cubes ist in der Datei " **spinningcuberenderer. cpp** " implementiert, die über die folgenden Schlüsselmethoden verfügt:
+Der **Inhalts** Ordner des Projekts enthält Klassen zum Rendern von holograms im [Holographic-Raum](getting-a-holographicspace.md). Das standardmäßige – Hologramm in der Vorlage ist ein drehende Cube, der zwei Meter entfernt ist als der Benutzer. Das zeichnen dieses Cubes ist in der Datei " **spinningcuberenderer. cpp**" implementiert, die über die folgenden Schlüsselmethoden verfügt:
 
 |  Methode  |  Erklärung | 
 |----------|----------|
@@ -177,11 +177,11 @@ Ihre Mixed Reality-APP wird in einer Spiel Schleife aktualisiert, die standardm�
 
 Die **Rendermethode** in `AppMain.cpp` nimmt den <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> an und rendert den aktuellen Frame entsprechend der aktuellen APP und dem räumlichen Positions Zustand für jede Holographic-Kamera.
 
-## <a name="notes"></a>Notizen
+## <a name="notes"></a>Hinweise
 
 Die Windows Mixed Reality-App-Vorlage unterstützt jetzt die Kompilierung mit aktiviertem Spectre-Entschärfungs Flag (/Qspectre). Stellen Sie sicher, dass Sie die vom Spectre abgeminderte Version der MSVC-Laufzeitbibliotheken (Microsoft Visual C++) installieren, bevor Sie eine Konfiguration mit aktivierter Spectre-Entschärfung kompilieren. Starten Sie die Visual Studio-Installer, und wählen Sie **ändern** aus, um die C++-Bibliotheken von Spectre zu installieren. Navigieren Sie zu **einzelne Komponenten** , und suchen Sie nach "Spectre". Wählen Sie die Felder aus, die den Zielplattformen und der MSVC-Version entsprechen, für die Sie den durch Spectre abgeminderten Code kompilieren müssen, und klicken Sie auf **ändern** , um die Installation zu starten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Abrufen eines HolographicSpace-Objekts](getting-a-holographicspace.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [Rendern in DirectX](rendering-in-directx.md)

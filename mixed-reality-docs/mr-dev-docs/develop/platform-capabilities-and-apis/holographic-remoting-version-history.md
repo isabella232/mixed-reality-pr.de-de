@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: Hololens, Remoting, Holographic Remoting
-ms.openlocfilehash: 844a5dc36b480791296f17db067cd71ece307a2b
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+keywords: Hololens, Remoting, Holographic Remoting, Versionsverlauf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011431"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677849"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic Remoting-Versionsverlauf
 
@@ -46,7 +46,7 @@ ms.locfileid: "92011431"
 
 ## <a name="version-213-may-25-2020"></a>Version 2.1.3 (dem 25. Mai 2020) <a name="v2.1.3"></a>
 * Geändertes Verhalten des [holographicspace. cameraadded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) -Ereignisses. In früheren Versionen konnte **nicht** garantiert werden, dass ein hinzugefügter [holographiccamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) auch über eine gültige [holographiccamerapose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) verfügt, wenn der nächste Frame über [holographicspace. kreatenextframe](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)erstellt wird. Ab Version 2.1.3 ist [holographicspace. cameraadded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) mit Daten aus dem Holographic Remoting Player synchronisiert, und Benutzer können davon ausgehen, dass beim Hinzufügen einer Kamera auch eine gültige [holographiccamerapose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) für die Kamera im nächsten Frame verfügbar ist.
-* "Depthbufferstreamresolution" wurde **deaktiviert** und kann verwendet werden, um das tiefe Puffer Streaming über RemoteContext.Configuredepthvideostream zu deaktivieren. Beachten Sie, dass bei Verwendung von [holographiccamerarenderingparameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) mit *E_ILLEGAL_METHOD_CALL*fehlschlägt.
+* "Depthbufferstreamresolution" wurde **deaktiviert** und kann verwendet werden, um das tiefe Puffer Streaming über RemoteContext.Configuredepthvideostream zu deaktivieren. Beachten Sie, dass bei Verwendung von [holographiccamerarenderingparameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) mit *E_ILLEGAL_METHOD_CALL* fehlschlägt.
 * Der Startbildschirm des Holographic Remoting-Players wurde neu entworfen und blockiert nun nicht die Ansicht "Benutzer".
 * Verbesserungen der Stabilität und Fehlerbehebungen.
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, nach Verfolgungs Verlust, Bild zum Nachverfolgen von Verlusten
-ms.openlocfilehash: 5aa17def844735088bcee6137a7b76a586107e44
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity, Nachverfolgung von Verlusten, Abbild Verlust, Abruf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678979"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678419"
 ---
 # <a name="tracking-loss-in-unity"></a>Verfolgbarkeitsverlust in Unity
 
@@ -25,17 +25,17 @@ Standardmäßig wird die Update-Schleife der APP sowie alle Nachrichten und Erei
 
 ## <a name="manual-handling"></a>Manuelle Behandlung
 
-Um den nach Verfolgungs Verlust manuell zu behandeln, müssen Sie **Edit** mit  >  **Projekteinstellungen** bearbeiten  >  **Player**  >  **universelle Windows-Plattform Registerkarte "Einstellungen** "  >  **Splash Image**  >  **Windows Holographic** auf der Registerkarte "Einstellungen" die Option "bei Nachverfolgung von Verlusten anhalten und Bild anzeigen" deaktivieren. Danach müssen Sie die Nachverfolgung von Änderungen mit den unten angegebenen APIs verarbeiten.
+Um den nach Verfolgungs Verlust manuell zu behandeln, müssen Sie **Edit** mit  >  **Projekteinstellungen** bearbeiten  >  **Player**  >  **universelle Windows-Plattform Registerkarte "Einstellungen**"  >  **Splash Image**  >  **Windows Holographic** auf der Registerkarte "Einstellungen" die Option "bei Nachverfolgung von Verlusten anhalten und Bild anzeigen" deaktivieren. Danach müssen Sie die Nachverfolgung von Änderungen mit den unten angegebenen APIs verarbeiten.
 
 **Namespace:** *unityengine. XR. WSA*<br>
 **Typ:** *worldmanager*
 
-* World Manager macht ein Ereignis verfügbar, um die Nachverfolgung verlorener/ermittelter Objekte ( *worldmanager. onpositionzudnorstatechanged* ) und eine Eigenschaft zum Abfragen des aktuellen Zustands (" *worldmanager. State* ") zu erkennen.
+* World Manager macht ein Ereignis verfügbar, um die Nachverfolgung verlorener/ermittelter Objekte (*worldmanager. onpositionzudnorstatechanged*) und eine Eigenschaft zum Abfragen des aktuellen Zustands ("*worldmanager. State*") zu erkennen.
 * Wenn der Überwachungs Status nicht aktiv ist, wird die Kamera anscheinend nicht in der virtuellen Welt übersetzt, auch wenn der Benutzer Sie übersetzt. Dies bedeutet, dass Objekte keinem physischen Speicherort mehr entsprechen und alle als gesperrt angezeigt werden.
 
 Bei der Behandlung von nach Verfolgungs Änderungen müssen Sie entweder die State-Eigenschaft jedes Frames Abfragen oder das *onpositionzuonorstatechanged* -Ereignis behandeln.
 
-### <a name="polling"></a>Abruf
+### <a name="polling"></a>Abrufen
 
 Der wichtigste Status ist *positionzustatusorstate. Active.* Dies bedeutet, dass die Nachverfolgung voll funktionsfähig ist. Jeder andere Status führt nur zu Rotations Delta-zu-Haupt-Kameras. Beispiel:
 
@@ -81,5 +81,5 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Behandeln von nach Verfolgungs Verlusten in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

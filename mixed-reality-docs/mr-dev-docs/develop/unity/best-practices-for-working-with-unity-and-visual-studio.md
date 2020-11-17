@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: bereitstellen, Unity, Visual Studio, hololens, hololens 2, immersives Headset
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: bereitstellen, Unity, Visual Studio, hololens, hololens 2, immersives Headset, bewährte Methoden, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, UWP, Visual Studio-Tools Windows SDK
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679067"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678845"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Bewährte Methoden für das Arbeiten mit Unity und Visual Studio
 
@@ -55,9 +55,9 @@ UWP-Visual Studio-Projektmappen, die in die Quell Code Verwaltung eingecheckt we
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>Verwenden von Textformaten zum einfachen Vergleichen von Inhalts Änderungen
 
-Durch das Speichern von Medienobjekten im Textformat wird das Überprüfen von Änderungen der Inhalts Änderung in Visual Studio vereinfacht. Sie können dies in "Edit > Project Settings > Editor" aktivieren, indem Sie den **assetserialisierungsmodus** ändern, um **Text zu erzwingen** . Das Zusammenführen von Text-assetdateiänderungen ist jedoch fehleranfällig und wird nicht empfohlen. Daher sollten Sie in Ihrem Quell Code Verwaltungssystem exklusive binäre Auschecken aktivieren.
+Durch das Speichern von Medienobjekten im Textformat wird das Überprüfen von Änderungen der Inhalts Änderung in Visual Studio vereinfacht. Sie können dies in "Edit > Project Settings > Editor" aktivieren, indem Sie den **assetserialisierungsmodus** ändern, um **Text zu erzwingen**. Das Zusammenführen von Text-assetdateiänderungen ist jedoch fehleranfällig und wird nicht empfohlen. Daher sollten Sie in Ihrem Quell Code Verwaltungssystem exklusive binäre Auschecken aktivieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Visual Studio Tools für Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [Optimieren von Buildzeiten für IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*Unityscriptanalyzer* Visual Studio-Erweiterung](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

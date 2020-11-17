@@ -1,19 +1,19 @@
 ---
-title: Material Empfehlungen in Unreal
+title: Materialempfehlungen in Unreal
 description: Übersicht über Materialien in der Unreal Engine.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Entwicklung, Material, Dokumentation, Guides, Features, holograms, Spieleentwicklung
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Entwicklung, Materialien, Dokumentation, Leitfäden, Features, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684547"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678939"
 ---
-# <a name="material-recommendations-in-unreal"></a>Material Empfehlungen in Unreal
+# <a name="material-recommendations-in-unreal"></a>Materialempfehlungen in Unreal
 
 Material kann die Leistung in der Unreal Engine ausmachen oder unterbrechen. Diese Seite fungiert als Schnellstart für die grundlegenden Einstellungen, die Sie verwenden sollten, um die bestmögliche Leistung zu erzielen.
 
@@ -73,7 +73,7 @@ Wenn Sie Parameter erstellen, bevorzugen Sie die Verwendung von "statischen Para
 
 Beim Erstellen von Material Instanzen sollte die-Einstellung für die **Material Instanz-Konstante** über die dynamische Material Instanz bevorzugt werden. Die **materialinstanzkonstante** ist ein instanziziertes Material, das nur einmal vor der Laufzeit berechnet.
 
-Die über den Inhalts Browser erstellte Material Instanz (mit der **rechten Maustaste auf > Create Material instance** ) ist eine Material Instanz-Konstante. Die dynamische Material Instanz wird über Code erstellt. Weitere Informationen zu Material Instanzen finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
+Die über den Inhalts Browser erstellte Material Instanz (mit der **rechten Maustaste auf > Create Material instance**) ist eine Material Instanz-Konstante. Die dynamische Material Instanz wird über Code erstellt. Weitere Informationen zu Material Instanzen finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
 
 ![Erstellen von Material Instanzen in Unreal](images/unreal-materials-img-08.png)
 
@@ -88,7 +88,7 @@ Sie erhalten einen kurzen Überblick über die relative Komplexität Ihres Shade
 
 ![Komplexität von Material in Unreal](images/unreal-materials-img-10.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Mobile Materialien](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [Ansichtsmodi](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 * [Material Instanzen](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia, Marker, Koordinaten, Referenzrahmen, Nachverfolgung
-ms.openlocfilehash: 270588bb317b0c083500dfaaca80c075a35410b9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Vuforia, Marker, Koordinaten, Frame der Referenz, Überwachung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity, hololens, Geräteüberwachung, Leistungsmodus, vuforia-Entwickler Portal
+ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686366"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679669"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Verwenden der vuforia-Engine mit Unity
 

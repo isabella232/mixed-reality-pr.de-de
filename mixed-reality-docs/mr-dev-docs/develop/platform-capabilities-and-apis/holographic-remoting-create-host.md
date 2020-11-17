@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: Hololens, Remoting, Holographic Remoting
-ms.openlocfilehash: 7b2a0166fd7d239222f9742e0f5f2f6dfd3a7ffb
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, nuget
+ms.openlocfilehash: 8494387b99352866632b46a98a449d173395b85d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683186"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677939"
 ---
 # <a name="writing-a-holographic-remoting-remote-app"></a>Schreiben einer Holographic Remoting-Remote-App
 
@@ -39,8 +39,8 @@ Die folgenden Schritte sind erforderlich, um das nuget-Paket einem Projekt in Vi
 1. Öffnen Sie das Projekt in Visual Studio.
 2. Klicken Sie mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **nuget-Pakete verwalten aus.**
 3. Klicken Sie im angezeigten Bereich auf **Durchsuchen** , und suchen Sie nach "Holographic Remoting".
-4. Wählen Sie **Microsoft. Holographic. Remoting** aus, stellen Sie sicher, dass die neueste Version **2. x. x** ausgewählt ist, und klicken Sie auf **Installieren** .
-5. Wenn das Dialogfeld **Vorschau** angezeigt wird, klicken Sie auf **OK** .
+4. Wählen Sie **Microsoft. Holographic. Remoting** aus, stellen Sie sicher, dass die neueste Version **2. x. x** ausgewählt ist, und klicken Sie auf **Installieren**.
+5. Wenn das Dialogfeld **Vorschau** angezeigt wird, klicken Sie auf **OK**.
 6. Das nächste Dialogfeld, das angezeigt wird, ist die Lizenzvereinbarung. Klicken Sie auf **ich** Stimme zu, um den Lizenzvertrag zu akzeptieren.
 
 >[!NOTE]
@@ -89,7 +89,7 @@ Die Verbindung kann auf zwei Arten erreicht werden.
 1) Die Remote-app stellt eine Verbindung zum Player her, der auf dem Gerät ausgeführt wird.
 2) Der Player, der auf dem Gerät ausgeführt wird, stellt eine Verbindung zur Remote-app her
 
-Zum Herstellen einer Verbindung zwischen der Remote-app und hololens 2 müssen Sie die- ```Connect``` Methode im Remote Kontext mit dem Hostnamen und dem Port angeben. Der von Holographic Remoting Player verwendete Port ist **8265** .
+Zum Herstellen einer Verbindung zwischen der Remote-app und hololens 2 müssen Sie die- ```Connect``` Methode im Remote Kontext mit dem Hostnamen und dem Port angeben. Der von Holographic Remoting Player verwendete Port ist **8265**.
 
 ```cpp
 try

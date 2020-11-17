@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine
-ms.openlocfilehash: 477fbdc9c7ddb3b4e890e62150651d9227d4c19e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684859"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679049"
 ---
 # <a name="gaze-input"></a>Blick Eingabe
 
@@ -44,21 +44,21 @@ Die Überblicks Eingabe muss in den hololens-Projekteinstellungen aktiviert werd
 
 Das ist alles, was Sie tun müssen, um Ihre hololens 2-apps in Unreal mit Blick Eingaben zu versehen. Weitere Informationen zu Blick Eingaben und deren Auswirkungen auf Benutzer in gemischter Realität finden Sie unter den folgenden Links. Berücksichtigen Sie diese bei der Erstellung interaktiver Umgebungen.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie die unechte Development Checkpoint Journey befolgen, sind Sie in der Mitte, dass Sie die mrtk Core-Bausteine erkunden. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie dem Weg der Unreal-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Handtracking](unreal-hand-tracking.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [HoloLens-Kamera](unreal-hololens-camera.md)
 
-Sie können jederzeit jederzeit zu den [unechten Entwicklungs Prüfpunkten](unreal-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#2-core-building-blocks) zurückkehren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Kalibrierung](../../calibration.md)
 * [Komfort](../../design/comfort.md)
 * [Anvisieren und Ausführen](../../design/gaze-and-commit.md)

@@ -8,16 +8,16 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial
-ms.openlocfilehash: ba0fe1db533b47088abecb6e97e2dc7826f7ee23
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cd0fcd0f2247582582f008c3c1131e893d89a3de
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697571"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573194"
 ---
 # <a name="sample-apps"></a>Beispiel-Apps
 
-![HoloLens 2-Benutzer](images/08_Tutorials.png)
+<br/><img src="https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif" width="100%" _alt="Sample apps">
 
 Aktuell sind alle unsere Tutorials und Beispiel-Apps in Unity oder Unreal entwickelt. Wenn wir Inhalte für andere Engines und Plattformen entwickeln, finden Sie diese unter der entsprechenden Überschrift im Inhaltsverzeichnis.
 

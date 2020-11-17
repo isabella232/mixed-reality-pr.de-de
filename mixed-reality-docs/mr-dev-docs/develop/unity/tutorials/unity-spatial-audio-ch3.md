@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Unity, Tutorial, hololens2, räumliche Audiodaten
-ms.openlocfilehash: cd684944bdd618dcf435ef91566d6d4f18aa87a3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Video Import, Video Player
+ms.openlocfilehash: 43297fc4148600cc820111e6c206313560224ac9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91689787"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679719"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Versehen des Audiosignals eines Videoclips mit räumlichen Effekten
 In diesem dritten Kapitel des Moduls Spatial-Audiodaten der Unity-Lernprogramme hololens 2 werden Sie Folgendes tun:
@@ -40,7 +40,7 @@ Fügen Sie als nächstes der **Hierarchie** ein **Video Player** -Objekt hinzu, 
 ![Video Player in der Hierarchie](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Abspielen von Videos auf einem Quadranten
-Das **Video Player** -Objekt benötigt ein texturiertes Spielobjekt, auf dem das Video dargestellt werden soll. Fügen Sie zunächst der **Hierarchie** ein **Quad** hinzu, indem Sie mit der rechten Maustaste auf den Bereich **Hierarchie** klicken und **3D-Objekt-> Quad** :
+Das **Video Player** -Objekt benötigt ein texturiertes Spielobjekt, auf dem das Video dargestellt werden soll. Fügen Sie zunächst der **Hierarchie** ein **Quad** hinzu, indem Sie mit der rechten Maustaste auf den Bereich **Hierarchie** klicken und **3D-Objekt-> Quad**:
 
 ![Quad zur Hierarchie hinzufügen](images/spatial-audio/add-quad-to-hierarchy.png)
 
@@ -48,7 +48,7 @@ Um sicherzustellen, dass das **Quad** vor dem Benutzer angezeigt wird, wenn die 
 
 ![Quad-Transformation](images/spatial-audio/quad-transform.png)
 
-Um das Vierfache mit **Video zu strukturieren** , erstellen Sie eine neue **Rendering-Textur** . Klicken Sie im **Projekt** Bereich mit der rechten Maustaste, und wählen Sie **Create-> Rendering Texture** aus:
+Um das Vierfache mit **Video zu strukturieren** , erstellen Sie eine neue **Rendering-Textur**. Klicken Sie im **Projekt** Bereich mit der rechten Maustaste, und wählen Sie **Create-> Rendering Texture** aus:
 
 ![Rendering-Textur erstellen](images/spatial-audio/create-render-texture.png)
 
@@ -78,7 +78,7 @@ Erstellen Sie im **Inspektor** -Bereich **für das** vierfache eine **Audioquell
 * Klicken Sie am unteren Rand des Bereichs auf **Komponente hinzufügen** .
 * Hinzufügen einer **Audioquelle**
 
-Dann in der **Audioquelle** :
+Dann in der **Audioquelle**:
 * **Ausgabe** auf Ihren Mixer festlegen
 * Aktivieren Sie das Feld **spatialize** .
 * Verschieben Sie den Schieberegler für **räumliche Blend** auf 1 (3D).

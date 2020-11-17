@@ -5,15 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: holograms, Stabilität, hololens
+keywords: holograms, Stabilität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Framerate, Rendering, neuprojektion, Farbtrennung
 appliesto:
 - HoloLens
-ms.openlocfilehash: 21a9f7cff655ff35d32e3ca701219d4a1e41a0e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683758"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679599"
 ---
 # <a name="hologram-stability"></a>Hologrammstabilität
 
@@ -91,7 +91,7 @@ Es gibt vier Haupttypen der neuprojektion.
 * **Keine:** Wenn die Anwendung keine Aktion ausführt, wird die planare neuprojektion mit der auf zwei Metern gesetzten Stabilisierungs Ebene in der Richtung des Kopf Anrufs des Benutzers verwendet, in der Regel die untergeordneten Ergebnisse.
 
 Anwendungen müssen bestimmte Aktionen durchführen, um die verschiedenen Arten der neuprojektion zu aktivieren.
-* **Tiefen neuprojektion:** Die Anwendung übermittelt ihren tiefen Puffer für jeden gerenderten Frame an das System.  Bei Unity wird die tiefen neuprojektion mit der Option frei gegebener **tiefen Puffer** im **Windows Mixed Reality-Einstellungs** Bereich unter **XR-Plug** -in-Verwaltung ausgeführt.  DirectX-apps CommitDirect3D11DepthBuffer-Aufrufe.  Die Anwendung sollte setfocuspoint nicht aufrufen.
+* **Tiefen neuprojektion:** Die Anwendung übermittelt ihren tiefen Puffer für jeden gerenderten Frame an das System.  Bei Unity wird die tiefen neuprojektion mit der Option frei gegebener **tiefen Puffer** im **Windows Mixed Reality-Einstellungs** Bereich unter **XR-Plug**-in-Verwaltung ausgeführt.  DirectX-apps CommitDirect3D11DepthBuffer-Aufrufe.  Die Anwendung sollte setfocuspoint nicht aufrufen.
 * **Planare neuprojektion:** Bei jedem Frame teilen Anwendungen dem System den Speicherort einer zu stabilisierende Ebene mit.  Unity-Anwendungen nennen setfocuspointforframe und sollten den frei **gegebenen tiefen Puffer** deaktiviert haben.  DirectX-apps aufrufen setfocuspoint und sollten CommitDirect3D11DepthBuffer nicht aufrufen.
 * **Automatische planare neuprojektion:** Um dies zu aktivieren, muss die Anwendung ihren tiefen Puffer an das System übermitteln, wie dies für die Tiefe neuprojektion der Fall wäre.  Bei hololens 2 muss die Anwendung dann setfocuspoint mit einem Punkt von 0 (null) für jeden Frame festlegen.  Bei hololens Generation 1 sollte die Anwendung setfocuspoint nicht aufrufen.
 
@@ -183,7 +183,7 @@ Obwohl es schwierig ist, die Trennung von Farben vollständig zu vermeiden, steh
 
 Wie zuvor sind das Rendering bei 60 fps und das Festlegen der Stabilisierungs Ebene die wichtigsten Techniken für die – Hologramm-Stabilität. Stellen Sie zunächst sicher, dass die Framerate den Erwartungen entspricht, wenn Sie mit einer merkbaren Farbtrennung
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Grundlegendes zur Leistung für gemischte Realität](understanding-performance-for-mixed-reality.md)
 * [Farbe, Licht und Materialien](../../color,-light-and-materials.md)
 * [Instinktive Interaktionen](../../design/interaction-fundamentals.md)

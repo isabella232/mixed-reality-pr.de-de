@@ -1,17 +1,17 @@
 ---
-title: Mr-und Azure 306-Streaming-Video
+title: 'MR und Azure 306: Streamen von Video'
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Azure Media Services in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Media Services, Streaming-Video, 360, immersive, VR
-ms.openlocfilehash: bf58c0c7a972e35b7330b15412174464ba28ac6d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Media Services, Streaming-Video, 360, immersive, VR, Windows 10, Visual Studio
+ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91678995"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679519"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>MR und Azure 306: Streamen von Video
 
@@ -31,7 +31,7 @@ Bei **Azure Media Services** handelt es sich um eine Sammlung von Diensten, die 
 
 Nachdem Sie diesen Kurs abgeschlossen haben, verfügen Sie über eine gemischte Reality-Headset-Anwendung, mit der Sie die folgenden Aktionen ausführen können:
 
-1. Abrufen eines 360-Grad-Videos aus einer **Azure Storage** über den **Azure Media Service** .
+1. Abrufen eines 360-Grad-Videos aus einer **Azure Storage** über den **Azure Media Service**.
 
 2. Anzeigen des abgerufenen 360-Grad-Videos in einer Unity-Szene.
 
@@ -86,7 +86,7 @@ Um den **Azure Storage-Dienst** zu verwenden, müssen Sie ein **Speicherkonto** 
 
     ![Einrichten des Azure Storage Kontos](images/AzureLabs-Lab6-02.png)
 
-3.  Klicken Sie auf der Registerkarte **Speicher Konten** auf **Hinzufügen** .
+3.  Klicken Sie auf der Registerkarte **Speicher Konten** auf **Hinzufügen**.
 
     ![Einrichten des Azure Storage Kontos](images/AzureLabs-Lab6-03.png)
 
@@ -102,7 +102,7 @@ Um den **Azure Storage-Dienst** zu verwenden, müssen Sie ein **Speicherkonto** 
 
     5.  Wählen Sie für **Replikation** die Option **lokal redundanter Speicher (LRS)** aus.
 
-    6.  Lassen Sie die Option " **sichere Übertragung erforderlich** " **deaktiviert** .
+    6.  Lassen Sie die Option " **sichere Übertragung erforderlich** " **deaktiviert**.
 
     7.  Wählen Sie ein **Abonnement** aus.
 
@@ -150,7 +150,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
     6.  Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
 
-    7.  Klicken Sie auf **Erstellen** .
+    7.  Klicken Sie auf **Erstellen**.
 
         ![Das Azure-Portal](images/AzureLabs-Lab6-08.png)
 
@@ -168,7 +168,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
 8.  Klicken Sie auf der Seite neuer Mediendienst im linken Bereich auf den Link **Assets** , der ungefähr in der Mitte liegt.
 
-9.  Klicken Sie auf der nächsten Seite in der oberen linken Ecke der Seite auf **hochladen** .
+9.  Klicken Sie auf der nächsten Seite in der oberen linken Ecke der Seite auf **hochladen**.
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-11.png)
 
@@ -185,7 +185,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-13.png)
 
-12. Klicken Sie auf den obigen Text ( **yourservicename-Assets** ), um zur Seite **Assets** zurückzukehren.
+12. Klicken Sie auf den obigen Text (**yourservicename-Assets**), um zur Seite **Assets** zurückzukehren.
 
 13. Sie werden feststellen, dass Ihr Video erfolgreich hochgeladen wurde. Klicken Sie darauf.
 
@@ -228,7 +228,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-21.png)
 
-20. Ihr Video wird zusammen mit einem anderen angezeigt, d. h. vom **Ressourcentyp mit _Multi-Bitrate-MP4_** .
+20. Ihr Video wird zusammen mit einem anderen angezeigt, d. h. vom **Ressourcentyp mit _Multi-Bitrate-MP4_**.
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-22.png)
 
@@ -243,9 +243,9 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-24.png)
 
-23. Sie werden aufgefordert, einen **Locator** (den Einstiegspunkt) auf Datei/s in ihren Assets festzulegen. Legen Sie für Ihr Szenario die folgenden Eigenschaften fest:
+23. Sie werden aufgefordert, einen **Locator**(den Einstiegspunkt) auf Datei/s in ihren Assets festzulegen. Legen Sie für Ihr Szenario die folgenden Eigenschaften fest:
 
-    1.  **Locatortyp**  >  **Progressiv** .
+    1.  **Locatortyp**  >  **Progressiv**.
 
     2.  Das **Datum** und die **Uhrzeit** werden von Ihrem aktuellen Datum auf eine Uhrzeit in der Zukunft (in diesem Fall 100 Jahre) festgelegt. Lassen Sie den Wert unverändert, oder ändern Sie ihn entsprechend.
 
@@ -256,7 +256,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-25.png)
 
-25. Ihr Video ist nun veröffentlicht und kann über seinen Endpunkt gestreamt werden. Im weiteren Verlauf der Seite befindet sich ein Abschnitt " **Dateien** ". An dieser Stelle werden die unterschiedlichen codierten Versionen Ihres Videos verwendet. Wählen Sie die höchstmögliche Auflösung aus (in der folgenden Abbildung ist die Datei 1920 x960), und dann wird ein Bereich rechts angezeigt. Dort finden Sie eine **Download-URL** . Kopieren Sie diesen **Endpunkt** , da Sie ihn später in Ihrem Code verwenden werden.
+25. Ihr Video ist nun veröffentlicht und kann über seinen Endpunkt gestreamt werden. Im weiteren Verlauf der Seite befindet sich ein Abschnitt " **Dateien** ". An dieser Stelle werden die unterschiedlichen codierten Versionen Ihres Videos verwendet. Wählen Sie die höchstmögliche Auflösung aus (in der folgenden Abbildung ist die Datei 1920 x960), und dann wird ein Bereich rechts angezeigt. Dort finden Sie eine **Download-URL**. Kopieren Sie diesen **Endpunkt** , da Sie ihn später in Ihrem Code verwenden werden.
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-26.png)    
 
@@ -273,19 +273,19 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
 Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemischter Realität und eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie **Unity** , und klicken Sie auf **neu** . 
+1.  Öffnen Sie **Unity** , und klicken Sie auf **neu**. 
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-28.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben und Mr- **\_ 360videostreaming einfügen.** Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten Speicherort fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen** .
+2.  Sie müssen nun einen Unity-Projektnamen angeben und Mr- **\_ 360videostreaming einfügen.** Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten Speicherort fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-29.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu ***Edit* *Einstellungen* bearbeiten** , und navigieren Sie dann im neuen Fenster zu **externe Tools** . Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017** . Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **_Edit_ *Einstellungen* bearbeiten** , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-30.png)
 
-4.  Navigieren Sie als nächstes zu ***dateibuildeinstellungen* *Build Settings*** , und schalten Sie die Plattform auf **universelle Windows-Plattform** , indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu **_dateibuildeinstellungen_ *Build Settings*** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
 5.  Stellen Sie außerdem Folgendes sicher:
 
@@ -319,7 +319,7 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
             ![Einrichten des Unity-Projekts](images/AzureLabs-Lab6-32.png)
 
-    2.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen** ), **unterstützt Tick Virtual Reality** , stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    2.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
 
         ![Einrichten des Unity-Projekts](images/AzureLabs-Lab6-33.png)
 
@@ -331,7 +331,7 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
 8.  Nachdem Sie diese Änderungen vorgenommen haben, schließen Sie das Fenster mit den **Buildeinstellungen** .
 
-9.  Speichern Sie Ihr Projekt * *File* * Save Project * *.
+9.  Speichern Sie Ihr Projekt **File* * Save Project * *.
 
 
 
@@ -342,44 +342,44 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
 Für diesen Kurs müssen Sie ein Unity-Ressourcenpaket mit dem Namen [**insideoutsphere. unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/InsideOutSphere.unitypackage)herunterladen.
 
-Gewusst wie: Importieren von **vstu** :
+Gewusst wie: Importieren von **vstu**:
 
-1.  Klicken Sie oben auf dem Bildschirm mit dem Unity-Dashboard auf **Assets** , und klicken Sie dann auf **Paket > benutzerdefiniertes Paket importieren** .
+1.  Klicken Sie oben auf dem Bildschirm mit dem Unity-Dashboard auf **Assets** , und klicken Sie dann auf **Paket > benutzerdefiniertes Paket importieren**.
 
     ![Importieren des insideoutsphere Unity-Pakets](images/AzureLabs-Lab6-35.png)
 
-2.  Wählen Sie mit der Dateiauswahl das Paket **insideoutsphere. unitypackage** aus, und klicken Sie auf **Öffnen** . Eine Liste der Komponenten für dieses Asset wird angezeigt. Bestätigen Sie den Import, indem Sie auf **importieren** klicken.
+2.  Wählen Sie mit der Dateiauswahl das Paket **insideoutsphere. unitypackage** aus, und klicken Sie auf **Öffnen**. Eine Liste der Komponenten für dieses Asset wird angezeigt. Bestätigen Sie den Import, indem Sie auf **importieren** klicken.
 
     ![Importieren des insideoutsphere Unity-Pakets](images/AzureLabs-Lab6-36.png)
 
-3.  Nachdem der Import abgeschlossen wurde, bemerken Sie, dass drei neue Ordner, **Materialien** , **Modelle** und **Prefabs** dem Ordner " **Assets** " hinzugefügt wurden. Diese Art von Ordnerstruktur ist typisch für ein Unity-Projekt.
+3.  Nachdem der Import abgeschlossen wurde, bemerken Sie, dass drei neue Ordner, **Materialien**, **Modelle** und **Prefabs** dem Ordner " **Assets** " hinzugefügt wurden. Diese Art von Ordnerstruktur ist typisch für ein Unity-Projekt.
 
     ![Importieren des insideoutsphere Unity-Pakets](images/AzureLabs-Lab6-37.png)
 
     1.  Öffnen Sie den Ordner **Modelle** , und Sie sehen, dass das **insienoutsphere** -Modell importiert wurde.
 
-    2.  Im Ordner **Material** finden Sie das Material **insiweoutsphären**  *LAMBERT1* zusammen mit einem Material namens *Button Material* , das von der Schaltfläche "Pavillon" verwendet wird, die Sie in Kürze sehen werden.
+    2.  Im Ordner **Material** finden Sie das Material **insiweoutsphären**  *LAMBERT1* zusammen mit einem Material namens *Button Material*, das von der Schaltfläche "Pavillon" verwendet wird, die Sie in Kürze sehen werden.
 
-    3.  Der Ordner " **Prefabs** " enthält das **insienoutsphere** -präfab, das sowohl das **insienoutsphere** - *Modell* als auch das " *gazebutton* " enthält.
+    3.  Der Ordner " **Prefabs** " enthält das **insienoutsphere** -präfab, das sowohl das **insienoutsphere** - *Modell* als auch das " *gazebutton*" enthält.
 
-    4.  Es **ist kein Code enthalten** . Sie schreiben den Code, indem Sie diesen Kurs befolgen.
+    4.  Es **ist kein Code enthalten**. Sie schreiben den Code, indem Sie diesen Kurs befolgen.
 
 
 4.  Wählen Sie in der **Hierarchie** das **Hauptkamera** Objekt aus, und aktualisieren Sie die folgenden Komponenten:
 
     1.  **Transformieren**
 
-        1.  Position = **X** : 0, **Y** : 0, **Z** : 0.
+        1.  Position = **X**: 0, **Y**: 0, **Z**: 0.
 
-        2. Drehung = **X** : 0, **Y** : 0, **Z** : 0.
+        2. Drehung = **X**: 0, **Y**: 0, **Z**: 0.
 
-        3. Skalieren Sie **X** : 1, **Y** : 1, **Z** : 1.
+        3. Skalieren Sie **X**: 1, **Y**: 1, **Z**: 1.
 
     2.  **Kamera**
 
-        1. **Clear Flags** : Volltonfarbe.
+        1. **Clear Flags**: Volltonfarbe.
 
-        2.  **Clipping-Ebenen** : fast: 0,1, weit: 6.
+        2.  **Clipping-Ebenen**: fast: 0,1, weit: 6.
 
             ![Importieren des insideoutsphere Unity-Pakets](images/AzureLabs-Lab6-38.png)
 
@@ -387,11 +387,11 @@ Gewusst wie: Importieren von **vstu** :
 
     ![Importieren des insideoutsphere Unity-Pakets](images/AzureLabs-Lab6-39.png)
 
-6.  Erweitern Sie das **insideoutsphere** -Objekt in der **Hierarchie** , indem Sie auf den kleinen Pfeil daneben klicken. Darunter **wird ein unter** geordnetes Objekt mit dem Namen " **gazebutton** " angezeigt. Diese wird verwendet, um Szenen und somit Videos zu ändern.
+6.  Erweitern Sie das **insideoutsphere** -Objekt in der **Hierarchie** , indem Sie auf den kleinen Pfeil daneben klicken. Darunter **wird ein unter** geordnetes Objekt mit dem Namen " **gazebutton**" angezeigt. Diese wird verwendet, um Szenen und somit Videos zu ändern.
 
     ![Importieren des insideoutsphere Unity-Pakets](images/AzureLabs-Lab6-40.png)
 
-7.  Klicken Sie im Inspektor-Fenster auf die Transformations Komponente von **insideoutsphere** , und stellen Sie sicher, dass die folgenden Eigenschaften festgelegt sind:
+7.  Klicken Sie im Inspektor-Fenster auf die Transformations Komponente von **insideoutsphere**, und stellen Sie sicher, dass die folgenden Eigenschaften festgelegt sind:
 
     |            |    Transformation-Position   |           |
     | :---------:| :-----------------------: | :--------:|
@@ -430,7 +430,7 @@ Die **Videocontroller** -Klasse hostet die beiden Video Endpunkte, die zum Strea
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den **Ordner Asset** , der sich im **Projekt** Panel befindet, und klicken Sie auf **> Ordner erstellen** . Benennen Sie den Ordner mit **Skripts** .
+1.  Klicken Sie mit der rechten Maustaste in den **Ordner Asset**, der sich im **Projekt** Panel befindet, und klicken Sie auf **> Ordner erstellen**. Benennen Sie den Ordner mit **Skripts**.
 
     ![Erstellen der Videocontroller-Klasse](images/AzureLabs-Lab6-43.png)
 
@@ -438,7 +438,7 @@ So erstellen Sie diese Klasse:
 
 2.  Doppelklicken Sie auf den Ordner " **Scripts** ", um ihn zu öffnen.
 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie dann auf **Create > C \# Script** . Benennen Sie das Skript **Videocontroller** .
+3.  Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie dann auf **Create > C \# Script**. Benennen Sie das Skript **Videocontroller**.
 
     ![Erstellen der Videocontroller-Klasse](images/AzureLabs-Lab6-45.png)
 
@@ -627,9 +627,9 @@ So erstellen Sie diese Klasse:
 
 1.  Wechseln Sie zum Ordner " **Scripts** ", den Sie zuvor erstellt haben.
 
-2.  Klicken Sie mit der rechten Maustaste in das **Projekt** Panel * *Create* * C \# Script * *. Benennen Sie das **Skript mit** dem Namen.
+2.  Klicken Sie mit der rechten Maustaste in das **Projekt** Panel **Create* * C \# Script * *. Benennen Sie das **Skript mit** dem Namen.
 
-3.  Doppelklicken Sie auf das neue ***Blick*** Skript, um es mit **Visual Studio 2017** zu öffnen.
+3.  Doppelklicken Sie auf das neue "Gaze"- **_Gaze_*Skript, um es mit _* Visual Studio 2017 zu öffnen.**
 
 4.  Stellen Sie sicher, dass sich der folgende Namespace oben im Skript befindet, und entfernen Sie alle anderen:
 
@@ -737,15 +737,15 @@ So erstellen Sie diese Klasse:
 
 In diesem Kapitel wird erläutert, wie Sie die beiden Kulissen einrichten, die jeweils ein Video zum Streamen von Daten erstellen. Sie duplizieren die Szene, die Sie bereits erstellt haben, sodass Sie Sie nicht erneut einrichten müssen, obwohl Sie die neue Szene bearbeiten, sodass sich das *gazebutton* -Objekt an einem anderen Speicherort befindet und über eine andere Darstellung verfügt. Dies soll zeigen, wie Sie zwischen Szenen wechseln können.
 
-1.  Wechseln Sie dazu zu **Datei > Szene speichern unter...** . Ein Fenster zum Speichern wird angezeigt. Klicken Sie auf die Schaltfläche **neuer Ordner** .
+1.  Wechseln Sie dazu zu **Datei > Szene speichern unter...**. Ein Fenster zum Speichern wird angezeigt. Klicken Sie auf die Schaltfläche **neuer Ordner** .
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-49.png)
 
-2.  Nennen Sie den Ordner **Szenen** .
+2.  Nennen Sie den Ordner **Szenen**.
 
 3.  Das Fenster zum **Speichern der Szene** ist weiterhin geöffnet. Öffnen Sie den neu erstellten Ordner **Szenen** .
 
-4.  Geben Sie im Feld **Dateiname:** Text **VideoScene1** ein, und klicken Sie dann auf **Speichern** .
+4.  Geben Sie im Feld **Dateiname:** Text **VideoScene1** ein, und klicken Sie dann auf **Speichern**.
 
 5.  Öffnen Sie in Unity den Ordner **Szenen** , und klicken Sie mit der linken Maustaste auf die Datei **VideoScene1** . Verwenden Sie die Tastatur, und drücken Sie **STRG + D** , um die Szene zu duplizieren.
 
@@ -756,16 +756,16 @@ In diesem Kapitel wird erläutert, wie Sie die beiden Kulissen einrichten, die j
 
     >  Sie sollten über **VideoScene1** und **VideoScene2** verfügen.
 
-7.  Navigieren Sie in den beiden Kulissen zu **Datei > Buildeinstellungen** . Wenn das Fenster " **Buildeinstellungen** " geöffnet ist, ziehen Sie die Kulissen in den Bereich " **Build** ".
+7.  Navigieren Sie in den beiden Kulissen zu **Datei > Buildeinstellungen**. Wenn das Fenster " **Buildeinstellungen** " geöffnet ist, ziehen Sie die Kulissen in den Bereich " **Build** ".
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-50.png)
 
     > [!TIP] 
     > Sie können beide Szenen aus dem Ordner " **Szenen** " auswählen, indem Sie die **STRG** -Taste gedrückt halten und dann mit der linken Maustaste auf jede Szene klicken und schließlich beides ziehen.
 
-8.  Schließen Sie das Fenster **Buildeinstellungen** , und doppelklicken Sie auf **VideoScene2** .
+8.  Schließen Sie das Fenster **Buildeinstellungen** , und doppelklicken Sie auf **VideoScene2**.
 
-9.  Wenn die zweite Szene geöffnet ist, klicken Sie auf das untergeordnete **gazebutton** -Objekt von **insienoutsphere** , und legen Sie die Transformation wie folgt fest:
+9.  Wenn die zweite Szene geöffnet ist, klicken Sie auf das untergeordnete **gazebutton** -Objekt von **insienoutsphere**, und legen Sie die Transformation wie folgt fest:
 
     |            |    Transformation-Position   |           |
     | :---------:| :-----------------------: | :--------:|
@@ -787,22 +787,22 @@ In diesem Kapitel wird erläutert, wie Sie die beiden Kulissen einrichten, die j
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-52.png)
 
-12. Der **Mesh-Filter** wird aktualisiert und ist jetzt ein **Cube** . Klicken Sie nun auf das **Zahnrad** Symbol neben **Sphere Collider** , und klicken Sie auf **Komponente entfernen** , um den Collider aus diesem Objekt zu löschen.
+12. Der **Mesh-Filter** wird aktualisiert und ist jetzt ein **Cube**. Klicken Sie nun auf das **Zahnrad** Symbol neben **Sphere Collider** , und klicken Sie auf **Komponente entfernen**, um den Collider aus diesem Objekt zu löschen.
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-53.png)
 
-13. Klicken Sie bei ausgewähltem **gazebutton** auf die Schaltfläche **Komponente hinzufügen** am unteren Rand des **Inspektors** . Geben Sie im Suchfeld **Box** ein, und **Box Collider** ist eine Option. Klicken Sie auf diese Option, um dem **gazebutton** -Objekt einen **Feld-Collider** hinzuzufügen.
+13. Klicken Sie bei ausgewähltem **gazebutton** auf die Schaltfläche **Komponente hinzufügen** am unteren Rand des **Inspektors**. Geben Sie im Suchfeld **Box** ein, und **Box Collider** ist eine Option. Klicken Sie auf diese Option, um dem **gazebutton** -Objekt einen **Feld-Collider** hinzuzufügen.
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-54.png)
 
-14. Die " **gazebutton"-Schaltfläche** ist nun teilweise aktualisiert, um anders aussehen zu können. Sie erstellen nun jedoch ein neues **Material** , damit es vollständig anders aussieht und leichter als ein anderes Objekt erkannt werden kann, als das Objekt in der ersten Szene.
+14. Die " **gazebutton"-Schaltfläche** ist nun teilweise aktualisiert, um anders aussehen zu können. Sie erstellen nun jedoch ein neues **Material**, damit es vollständig anders aussieht und leichter als ein anderes Objekt erkannt werden kann, als das Objekt in der ersten Szene.
 
-15. Navigieren Sie im **Projekt Panel** zum Ordner **Material** . Duplizieren **Sie das Inhalts Material (** **STRG**  +  **D** auf der Tastatur, oder klicken Sie mit der linken Maustaste auf das **Material** , und wählen Sie dann in der Menüoption Datei **Bearbeiten** die Option **Duplizieren** aus.)
+15. Navigieren Sie im **Projekt Panel** zum Ordner **Material** . Duplizieren **Sie das Inhalts Material (** **STRG**  +  **D** auf der Tastatur, oder klicken Sie mit der linken Maustaste auf das **Material**, und wählen Sie dann in der Menüoption Datei **Bearbeiten** die Option **Duplizieren** aus.)
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen ](images/AzureLabs-Lab6-55.png)
      ![ Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-56.png)
 
-16. Wählen Sie das neue **buttonmaterial** -Material (hier **Button Material 1** ) aus, und klicken Sie im **Inspektor** auf das Fenster **Albedo** -Farbe. Es wird ein Popup Fenster angezeigt, in dem Sie eine andere Farbe auswählen können (Wählen Sie die gewünschten Optionen aus), und schließen Sie dann das Popup Fenster. Das Material ist eine eigene Instanz und unterscheidet sich von der ursprünglichen.
+16. Wählen Sie das neue **buttonmaterial** -Material (hier **Button Material 1**) aus, und klicken Sie im **Inspektor** auf das Fenster **Albedo** -Farbe. Es wird ein Popup Fenster angezeigt, in dem Sie eine andere Farbe auswählen können (Wählen Sie die gewünschten Optionen aus), und schließen Sie dann das Popup Fenster. Das Material ist eine eigene Instanz und unterscheidet sich von der ursprünglichen.
 
     ![Kapitel 7: Einrichten der beiden Unity-Szenen](images/AzureLabs-Lab6-57.png)
 
@@ -828,13 +828,13 @@ So erstellen Sie Folgendes:
 
 2.  Aktivieren Sie das Kontrollkästchen **Unity-C- \# Projekte** . (Dies ist wichtig, da Sie die Klassen nach Abschluss des Builds bearbeiten können.)
 
-3.  Wechseln Sie zu **Datei > Buildeinstellungen** , und klicken Sie auf **Erstellen** .
+3.  Wechseln Sie zu **Datei > Buildeinstellungen**, und klicken Sie auf **Erstellen**.
 
 4.  Sie werden aufgefordert, den Ordner auszuwählen, in dem Sie die Projekt Mappe erstellen möchten.
 
 5.  Erstellen Sie einen Ordner **BUILDS** , und erstellen Sie in diesem Ordner einen anderen Ordner mit einem entsprechenden Namen Ihrer Wahl.
 
-6.  Klicken Sie auf den neuen Ordner, und klicken Sie dann auf **Ordner auswählen** , um diesen Ordner auszuwählen, um den Build an diesem Speicherort zu starten.
+6.  Klicken Sie auf den neuen Ordner, und klicken Sie dann auf **Ordner auswählen**, um diesen Ordner auszuwählen, um den Build an diesem Speicherort zu starten.
 
     ![Kapitel 8: Erstellen der UWP-Lösung, ](images/AzureLabs-Lab6-60.png)
      ![ Kapitel 8: Erstellen der UWP-Lösung](images/AzureLabs-Lab6-61.png)
@@ -853,7 +853,7 @@ Zum Bereitstellen auf dem lokalen Computer:
 
 2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen** .
+3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
 
     ![Kapitel 9: Bereitstellung auf lokalem Computer](images/AzureLabs-Lab6-62.png)
 

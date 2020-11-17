@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holographicspace, corewindow, räumliche Eingabe, Rendering, Austausch Kette, Holographic Frame, Update Schleife, Spiel Schleife, Frame der Referenz, loerability, Beispielcode, Exemplarische Vorgehensweise
-ms.openlocfilehash: d96362e7d5795449b608196e52bce55d0f16625b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holographicspace, corewindow, räumliche Eingabe, Rendering, Austausch Kette, Holographic Frame, Update Schleife, Spiel Schleife, Frame der Referenz, loerability, Beispielcode, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: fa2c64901a7c4a09710a472509441d54a9e3a383
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685923"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679639"
 ---
 # <a name="getting-a-holographicspace"></a>Abrufen eines HolographicSpace-Objekts
 
@@ -114,7 +114,7 @@ m_cameraAddedToken = m_holographicSpace.CameraAdded(
 
 Ihre APP muss auch auf die **camerareverschoten** Ereignisse reagieren, indem Sie Ressourcen freigibt, die für diese Kamera erstellt wurden.
 
-Aus **deviceresources:: CSpace** :
+Aus **deviceresources:: CSpace**:
 
 ```cpp
 m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
@@ -142,7 +142,7 @@ Stationäre Verweis Rahmen sind so konzipiert, dass Positionen in der Nähe des 
 
 Der räumliche Serverlocatorpunkt stellt das Windows Mixed Reality-Gerät dar und verfolgt die Bewegung des Geräts und stellt Koordinatensysteme bereit, die relativ zum Speicherort verstanden werden können.
 
-Aus **appmain:: onholographicdisplayisavailablechanged** :
+Aus **appmain:: onholographicdisplayisavailablechanged**:
 
 ```cpp
 spatialLocator = SpatialLocator::GetDefault();
@@ -150,7 +150,7 @@ spatialLocator = SpatialLocator::GetDefault();
 
 Erstellen Sie den stationären Verweis Rahmen einmal, wenn die APP gestartet wird. Dies ist analog zum Definieren eines Weltkoordinaten Systems, wobei der Ursprung an der Position des Geräts platziert wird, wenn die APP gestartet wird. Dieser Referenzrahmen bewegt sich nicht mit dem Gerät.
 
-Aus **appmain:: abbildrfaden** :
+Aus **appmain:: abbildrfaden**:
 
 ```cpp
 m_stationaryReferenceFrame =
@@ -175,6 +175,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 Verwenden Sie dieses Ereignis dann, um zu bestimmen, wann holograms nicht auf der ganzen Welt gerendert werden können.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Rendern in DirectX](rendering-in-directx.md)
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)

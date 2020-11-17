@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Beispiel-apps, Design, hololens
-ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, Beispiel-apps, Design, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573254"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677465"
 ---
 # <a name="lunar-module"></a>Lunar-Modul
 
@@ -43,7 +43,7 @@ Warum haben sich die Unternehmen von Atari und so vielen anderen Spielen entschi
 
 Ein Kind, das eine Arkade durchläuft, wird natürlich durch den neuesten, flashiest-Computer fasziniert. Allerdings verfügt der Mond-Lander über einen neuartigen Eingabe-Mechaniker, der sich aus der Menge herausstellte.
 
-Der Mond-Lander verwendet zwei Schaltflächen, um den Versand nach links und rechts zu drehen, und einen **schubstift** , um die Menge des von der Lieferung erzeugten Schubs Dieser Hebel gibt Benutzern einen gewissen Grad an Finesse, den ein regulärer Joystick nicht bereitstellen kann. Es ist auch eine Komponente, die von modernen Luftverkehrs-Cockpits gemeinsam ist. Der Mond-Lander wollte Mond Lander in das Gefühl eintauchen, dass Sie tatsächlich ein Mond Modul Pilot haben. Dieses Konzept wird als " **taktiles eintauchen** " bezeichnet.
+Der Mond-Lander verwendet zwei Schaltflächen, um den Versand nach links und rechts zu drehen, und einen **schubstift** , um die Menge des von der Lieferung erzeugten Schubs Dieser Hebel gibt Benutzern einen gewissen Grad an Finesse, den ein regulärer Joystick nicht bereitstellen kann. Es ist auch eine Komponente, die von modernen Luftverkehrs-Cockpits gemeinsam ist. Der Mond-Lander wollte Mond Lander in das Gefühl eintauchen, dass Sie tatsächlich ein Mond Modul Pilot haben. Dieses Konzept wird als " **taktiles eintauchen**" bezeichnet.
 
 Beim Immersions eintauchen handelt es sich um das Auftreten von wiederholten Aktionen im sensorisch-Feedback. In diesem Fall wird der Spieler durch die sich wiederholende Aktion zum Anpassen des Drosselungs Hebers und der Drehung, den unsere Augen sehen und die Ohren hören, dazu beiträgt, den Player mit dem Vorgang zu verbinden, der sich auf der Oberfläche des Mond Dieses Konzept kann an das psychologische Konzept von "Flow" gebunden werden. Wenn ein Benutzer vollständig in eine Aufgabe aufgenommen wird, die über die richtige Mischung aus Herausforderung und Belohnung verfügt, oder einfach ausgedrückt, sind Sie "in der Zone".
 
@@ -78,7 +78,7 @@ Der Hebel auf dem ursprünglichen Computer, der einer Skala von Werten zugeordne
 
 **Drehung**
 
-Dies ist ein wenig komplizierter. Durch die Verwendung von Holographic "Rotation"-Schaltflächen für eine schreckliche Darstellung können Sie auf diese tippen. Es gibt kein physisches Steuerelement, das Sie nutzen können, sodass das Verhalten von der Bearbeitung eines Objekts, das den Lander darstellt, oder durch den Lander selbst erfolgen muss. Wir haben eine Methode per Tap-and-Drag-Methode verwendet, die es einem Benutzer ermöglicht, ihn in der gewünschten Richtung "Push" per Push zu überbringen. Jedes Mal, wenn ein Benutzer tippt und anhält, wird der Punkt im Raum, an dem die Geste initiiert wurde, zum Ursprung der Drehung. Beim Ziehen aus dem Ursprung wird das Delta der Hand Übersetzung (X, Y, Z) konvertiert und auf das Delta der Rotations Werte des Landers angewendet. Ganz einfach, *Wenn Sie die linke < > nach oben ziehen, nach oben < > nach unten, vorwärts <-> zurück in Leerzeichen drehen* , wird die Lieferung entsprechend gedreht.
+Dies ist ein wenig komplizierter. Durch die Verwendung von Holographic "Rotation"-Schaltflächen für eine schreckliche Darstellung können Sie auf diese tippen. Es gibt kein physisches Steuerelement, das Sie nutzen können, sodass das Verhalten von der Bearbeitung eines Objekts, das den Lander darstellt, oder durch den Lander selbst erfolgen muss. Wir haben eine Methode per Tap-and-Drag-Methode verwendet, die es einem Benutzer ermöglicht, ihn in der gewünschten Richtung "Push" per Push zu überbringen. Jedes Mal, wenn ein Benutzer tippt und anhält, wird der Punkt im Raum, an dem die Geste initiiert wurde, zum Ursprung der Drehung. Beim Ziehen aus dem Ursprung wird das Delta der Hand Übersetzung (X, Y, Z) konvertiert und auf das Delta der Rotations Werte des Landers angewendet. Ganz einfach, *Wenn Sie die linke < > nach oben ziehen, nach oben < > nach unten, vorwärts <-> zurück in Leerzeichen drehen*, wird die Lieferung entsprechend gedreht.
 
 Da die hololens zwei Hände verfolgen können, kann die Drehung der rechten Seite zugewiesen werden, während der Schub Strich von Links gesteuert wird. Finesse ist der treibende Faktor für den Erfolg in diesem Spiel. Das *Gefühl* dieser Interaktionen ist die absolute höchste Priorität. Insbesondere im Kontext des Immersions einseins. Eine Lieferung, die zu schnell reagiert, wäre unnötig schwierig zu steuern, während eine zu langsam wäre, dass der Benutzer für einen unkomplizierten langen Zeitraum ein Push-und Pull-Vorgang auf dem Lieferumfang durchführen würde.
 
@@ -91,7 +91,7 @@ Es gibt mehrere Möglichkeiten, das relativ geradlinige Steuerungs Schema auf de
 ![Der linke Ministick ist "Yaw" und "Roll" zugeordnet, der Rechte fingerstick ist "Pitch" und "Roll" zugeordnet](images/thumbsticksidebyside.gif)<br>
 *Der linke fingerstick ist "Yaw" und "Roll" zugeordnet. der Rechte fingerstick ist "Pitch" und "Roll" zugeordnet.*
 
-Die Dual thumbsticks eignen sich natürlich zur Steuerung der Versand Rotation. Leider gibt es drei Achsen, auf denen sich der Versand drehen kann, und zwei Finger Stifte, die beide zwei Achsen unterstützen. Diese fehl Übereinstimmung bedeutet, dass entweder ein Finger Stick eine Achse steuert. oder es gibt eine Überschneidung von Achsen für die Fingerabdrücke. Die erste Lösung hat das Gefühl "beschädigt", da Fingerabdrücke von Natur aus ihre lokalen X-und Y-Werte vermischen. Die zweite Lösung erforderte einige Tests, um zu ermitteln, welche redundanten Achsen am natürlichsten sind. Das abschließende Beispiel verwendet für den linken Finger Stick die Werte für " *Yaw* " und " *Roll* " (Y-und x-Achsen) und für den rechten fingerstick " *Pitch* " und " *Roll* " (Z und x). Dies hat den natürlichsten Eindruck, dass " *Roll* " unabhängig mit " *Yaw* " und " *Pitch* " gut gekoppelt ist. Als neben Hinweis wird auch der Drehungs Wert mit beiden Fingerabdrücken für " *Roll* " verdoppelt. Es ist ziemlich lustig, dass der Lander die Schleifen durchläuft.
+Die Dual thumbsticks eignen sich natürlich zur Steuerung der Versand Rotation. Leider gibt es drei Achsen, auf denen sich der Versand drehen kann, und zwei Finger Stifte, die beide zwei Achsen unterstützen. Diese fehl Übereinstimmung bedeutet, dass entweder ein Finger Stick eine Achse steuert. oder es gibt eine Überschneidung von Achsen für die Fingerabdrücke. Die erste Lösung hat das Gefühl "beschädigt", da Fingerabdrücke von Natur aus ihre lokalen X-und Y-Werte vermischen. Die zweite Lösung erforderte einige Tests, um zu ermitteln, welche redundanten Achsen am natürlichsten sind. Das abschließende Beispiel verwendet für den linken Finger Stick die Werte für " *Yaw* " und " *Roll* " (Y-und x-Achsen) und für den rechten fingerstick " *Pitch* " und " *Roll* " (Z und x). Dies hat den natürlichsten Eindruck, dass " *Roll* " unabhängig mit " *Yaw* " und " *Pitch*" gut gekoppelt ist. Als neben Hinweis wird auch der Drehungs Wert mit beiden Fingerabdrücken für " *Roll* " verdoppelt. Es ist ziemlich lustig, dass der Lander die Schleifen durchläuft.
 
 Diese Beispiel-App veranschaulicht, wie sich die räumliche Erkennung und das Immersions eintauchen aufgrund der erweiterbaren Eingabe Modalitäten von Windows Mixed Reality erheblich ändern können. Während sich der Mond-Lander im Alter von 40 Jahren nähert, werden die Konzepte, die mit diesem kleinen, achttägigen on-with-Legs verfügbar gemacht werden, immer wieder online geschaltet. Warum sollten Sie sich beim vorstellen der Zukunft nicht mit der Vergangenheit befassen?
 
@@ -108,7 +108,7 @@ Sie finden Skripts und Prefabs für die Beispiel-app "Lunar Module" auf dem [Mix
 </tr>
 </table>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, undurchsichtig, transparent, Clip
-ms.openlocfilehash: 7e606232f626c64407ced75481deb3055326f760
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, nicht transparent, transparent, Clip, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679014"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677619"
 ---
 # <a name="camera-in-unity"></a>Kamera in Unity
 
@@ -81,7 +81,7 @@ Durch die Freigabe des tiefen Puffers Ihrer APP für die einzelnen Frames erhäl
 
 So legen Sie fest, ob Ihre Unity-APP einen tiefen Puffer für Windows bereitstellt:
 
-1. Wechseln Sie zu **Edit**  >  **Project Settings**  >  **Player**  >  **universelle Windows-Plattform Tab**  >  **XR Settings** .
+1. Wechseln Sie zu **Edit**  >  **Project Settings**  >  **Player**  >  **universelle Windows-Plattform Tab**  >  **XR Settings**.
 2. Erweitern Sie das **Windows Mixed Reality SDK** -Element.
 3. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Tiefe Puffer Freigabe aktivieren** .  Dies wird standardmäßig in neuen Projekten überprüft, die seit dem Hinzufügen dieses Features zu Unity erstellt wurden, und wird standardmäßig für ältere Projekte, die aktualisiert wurden, deaktiviert.
 
@@ -91,21 +91,21 @@ Das Bereitstellen eines tiefen Puffers für Windows kann die visuelle Qualität 
 
 Befolgen Sie die [Schritt-für-Schritt](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) -Anleitung zum Hinzufügen von Mixed Reality Toolkit v2 zu Ihrem Unity-Projekt, und das Projekt wird automatisch konfiguriert. Sie können das Projekt auch ohne mrtk manuell konfigurieren, indem Sie das Handbuch im Abschnitt unten durchführen.
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, dass Sie die Hauptbausteine von mrtk untersuchen. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Anvisieren](gaze-in-unity.md)
 
-Oder springen Sie zu den Funktionen und APIs der Mixed Reality-Plattform:
+Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 > [!div class="nextstepaction"]
 > [Gemeinsame Erfahrung](shared-experiences-in-unity.md)
 
-Sie können jederzeit jederzeit zu den [Unity-Entwicklungs Prüfpunkten](unity-development-overview.md#2-core-building-blocks) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Hologrammstabilität](../platform-capabilities-and-apis/hologram-stability.md)
 * [Mixedrealitytoolkit Hauptkamera. Prefab](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/Input/Prefabs)

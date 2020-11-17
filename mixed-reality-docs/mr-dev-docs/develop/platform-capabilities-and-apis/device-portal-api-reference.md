@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: Hololens, Windows-Geräte Portal, API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Hololens, Windows-Geräte Portal, API, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683771"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677969"
 ---
 # <a name="device-portal-api-reference"></a>Referenz der Geräteportal-API
 
@@ -33,7 +33,7 @@ Installiert eine APP
 Parameter
 * Package: der Dateiname des zu installierenden Pakets.
 
-Payload
+Nutzlast
 * Mehrteilige konforme HTTP-Text
 
 **/API/APP/packagemanager/Packages (Get)**
@@ -159,7 +159,7 @@ Parameter
 
 Die wärmestufe des Geräts erhalten (0 normal, 1 warm, 2 kritisch)
 
-## <a name="map-manager"></a>Karten-Manager
+## <a name="map-manager"></a>Zuordnungs-Manager
 
 **/API/Holographic/mapmanager/mapFiles (Get)**
 
@@ -259,7 +259,7 @@ Beispiel:
 $.post("/api/holographic/mapmanager/exportmapandspatialmappingdb")
 ```
 
-### <a name="import"></a>importieren
+### <a name="import"></a>Importieren
 
 **/API/Holographic/mapmanager/Import (Post)**
 
@@ -355,7 +355,7 @@ Legt die Standardeinstellungen für die gemischte Reality-Erfassung fest.  Einig
 
 Ruft den Zustand der Mixed Reality-Erfassung im Windows-Geräte Portal ab.
 
-***Antwort***
+**_Antwort_* _
 
 Die Antwort enthält eine JSON-Eigenschaft, die angibt, ob das Windows-Geräte Portal Videos aufzeichnet.
 
@@ -363,7 +363,7 @@ Die Antwort enthält eine JSON-Eigenschaft, die angibt, ob das Windows-Geräte P
 {"IsRecording" : boolean}
 ```
 
-**/API/Holographic/MRC/Thumbnail (Get)**
+_ */API/Holographic/MRC/Thumbnail (Get)**
 
 Ruft das Miniaturbild für die angegebene Datei ab.
 
@@ -581,7 +581,7 @@ Gibt die System Leistungsstatistik (e/a-Lese-/Schreibvorgänge, Speicher Statist
 Daten zurückgeben
 * JSON mit Systeminformationen: CPU, GPU, Arbeitsspeicher, Netzwerk, e/a
 
-## <a name="power"></a>Power
+## <a name="power"></a>Leistung
 
 **/API/Power/Battery (Get)**
 
@@ -663,7 +663,7 @@ Parameter
 
 Lädt ein WPR-Profil hoch und startet die Ablauf Verfolgung mithilfe des hochgeladenen Profils.
 
-Payload
+Nutzlast
 * Mehrteilige konforme HTTP-Text
 
 Daten zurückgeben
@@ -693,6 +693,6 @@ Parameter
 Daten zurückgeben
 * Beim Start wird der WPR-Sitzungs Status zurückgegeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Verwenden des Windows-Geräteportals](using-the-windows-device-portal.md)
 * [API-Referenz für den Geräte Portal (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

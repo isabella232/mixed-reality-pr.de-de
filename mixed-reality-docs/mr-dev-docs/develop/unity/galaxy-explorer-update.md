@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: Galaxy Explorer, Fallstudie, Projekt, Beispiel
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Galaxy Explorer, Case-Studie, Project, Sample, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686702"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677629"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Die Erstellung von Galaxy Explorer für hololens 2
 
@@ -96,7 +96,7 @@ Das visuelle und Audiofeedback, das Benutzer für die verschiedenen Phasen Ihrer
 ![Visuelle Visualisierungen auf den Planeten](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Hinzufügen von Kosten für das Erzwingen von Handles
- 
+ 
 Nachdem wir den grundlegenden Force-Griff-Mechanismus mit Audio-und Visualisierungs Verfahren hatten, haben wir uns mit der Auswahl von "Planets" für die Benutzerfreundlichkeit beschäftigt. Es gab zwei wichtige Punkte zu berücksichtigen: da das Solar System eine 3D-Verschiebungs Schnittstelle ist, ist es für Benutzer komplexer, das konsistente Ziel von Objekten zu erlernen. Dies wurde durch die Tatsache verstärkt, dass das Hand Strahl bei der Auswahl eines Objekts sehr schnell ist, sodass die Planeten unglaublich schnell in den Benutzer verschoben werden.
 
 Wir haben dies mit einer dreistufigen Lösung angegangen. Der erste war recht intuitiv: verlangsamen Sie den Auswahlprozess, sodass die-Planeten den Benutzer auf natürlichere Weise erreichen. Nachdem die Geschwindigkeit angepasst wurde, mussten wir die Audioerstellung und visuelle Visualisierung wiederholen und zusätzliche Audiofeedback hinzufügen, als der für den Benutzer verfolgte Planet.
@@ -151,7 +151,7 @@ Nachdem Sie die visuelle Komposition von Jupiter festgelegt haben, mussten wir s
 Die einzeln rotierenden Streams stellten einen guten visuellen Eindruck dar, fehlten jedoch im Detail, wenn Sie im Bereich "Schließen" beobachtet wurden.
 
 Der wichtigste Teil des Augen Abfangens war der große rote Fleck von Jupiter. Daher haben wir eine Reihe von Netzen und Texturen erstellt, um Sie vorzustellen.
- 
+ 
 Wir haben einen ähnlichen Mechanismus wie bei den Bändern von Jupiter verwendet: ein Satz rotierender Teile wurde aufeinander zusammengesetzt und auch unter seiner "Master Schicht" gruppiert, um sicherzustellen, dass Sie in der Position bleiben, unabhängig davon, wie schnell der Rest verschoben wird.
 
 Wenn die Netzen eingerichtet und eingerichtet wurden, wurden unterschiedliche Ebenen des stürmischen Wirbel angewendet, und jede CD wurde dann einzeln animiert, die Mittel stellen sich am schnellsten, und der Rest verlangsamt sich nach außen.
@@ -198,8 +198,8 @@ Oben von links nach rechts: Artemis tsouflidou (Developer), Angie teickner (visu
 Unten von links nach rechts: Amit rojtblat (Technical Artist), Martin Wettig (3D-Künstlerin) und Dirk songuer (Studio Head).
 Nicht vorgestellt: Tim Gerken (Tech Lead) und Oscar salandin (Visual Designer).
 
-## <a name="additional-information"></a>Zusätzliche Informationen
+## <a name="additional-information"></a>Weitere Informationen
 
 ### <a name="mixed-reality-studios"></a>Mixed Reality-Studios
 
-Microsoft Mixed Reality Studio-Teams, die sich in Nordamerika, Europa und Asien-Pazifik befinden, sind Experten für das Design der Benutzer Darstellung, Holographic Computing, AR/VR-Technologien und 3D-Entwicklung. einschließlich der Erstellung von 3D-Assets, DirectX, Unity und Unreal. Wir helfen Ihnen bei der Entwicklung gewünschter Futures, beim Entwerfen, erstellen und Bereitstellen von Lösungen, während Kunden gleichzeitig messbare Auswirkungen auf Ihre Organisation erzielen können. Die Ateliers arbeiten eng mit mehr als 22.000 Microsoft-Diensts für die Integration von Unternehmensanwendungen, die Übernahme, den Betrieb und Support.
+Microsoft Mixed Reality Studio-Teams, die sich in Nordamerika, Europa und Asia-Pacific befinden, sind Experten im Entwurf der Benutzer Darstellung, Holographic Computing, AR/VR-Technologien und 3D-Entwicklung. einschließlich der Erstellung von 3D-Assets, DirectX, Unity und Unreal. Wir helfen Ihnen bei der Entwicklung gewünschter Futures, beim Entwerfen, erstellen und Bereitstellen von Lösungen, während Kunden gleichzeitig messbare Auswirkungen auf Ihre Organisation erzielen können. Die Ateliers arbeiten eng mit mehr als 22.000 Microsoft-Diensts für die Integration von Unternehmensanwendungen, die Übernahme, den Betrieb und Support.

@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Steamvr, Kompatibilität
-ms.openlocfilehash: 4a1439bed8743396cba13fa4d65debc62487ab46
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Steamvr, Kompatibilität, portieren, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Steam, Motion Controllers, Haptik
+ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638506"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677659"
 ---
 # <a name="updating-your-steamvr-application"></a>Aktualisieren Ihrer steamvr-Anwendung
 Wir empfehlen Entwicklern, ihre steamvr-Erfahrungen zu testen und zu optimieren, um Sie auf Windows Mixed Reality-Headsets auszuführen. Diese Dokumentation behandelt allgemeine Verbesserungen, die Entwickler durchführen können, um sicherzustellen, dass Ihre Arbeit in Windows Mixed Reality hervorragend verläuft
@@ -26,10 +26,10 @@ Um mit dem Testen Ihres Spiels oder ihrer app in Windows Mixed Reality zu beginn
     * Verwenden Sie ivrrendermodel:: getcomponentstate, um lokale Transformationen zu Komponenten teilen (z. b. Zeiger Pose)
 2. Erfahrungen mit einer Art von häntigkeit sollten Hinweise von den Eingabe-APIs erhalten, um die Controller zu unterscheiden [(Unity-Beispiel)](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) .
 
-## <a name="controls"></a>Kontrollen
+## <a name="controls"></a>Steuerelemente
 
 Beachten Sie beim Entwerfen oder Anpassen des Steuerelement Layouts den folgenden Satz reservierter Befehle:
-1. Das Klicken auf den **linken und rechten analogen Ministick** ist für das **Dashboard "Steam** " reserviert.
+1. Das Klicken auf den **linken und rechten analogen Ministick** ist für das **Dashboard "Steam**" reserviert.
 
 > [!NOTE]
 > Wenn Sie einen HP-Reverb-G2-Controller verwenden, ist das Klicken auf die Menü Schaltfläche rechts für das **Steam-Dashboard** reserviert.

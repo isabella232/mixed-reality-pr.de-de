@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 05/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms
-ms.openlocfilehash: 0a6cdf34a797a7113c780dee0049125861dd7c32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685902"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679629"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic-Remoting hinzufügen (hololens (1. Gen))
 
@@ -43,8 +43,8 @@ Führen Sie die folgenden Schritte aus, um das nuget-Paket für Holographic Remo
 1. Wechseln Sie zu Ihrem Projekt in Visual Studio.
 2. Klicken Sie mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **nuget-Pakete verwalten aus.**
 3. Klicken Sie im angezeigten Bereich auf **Durchsuchen** , und suchen Sie nach "Holographic Remoting".
-4. Wählen Sie **Microsoft. Holographic. Remoting** aus, und klicken Sie auf **Installieren** .
-5. Wenn das Dialogfeld **Vorschau** angezeigt wird, klicken Sie auf **OK** .
+4. Wählen Sie **Microsoft. Holographic. Remoting** aus, und klicken Sie auf **Installieren**.
+5. Wenn das Dialogfeld **Vorschau** angezeigt wird, klicken Sie auf **OK**.
 6. Das nächste Dialogfeld, das angezeigt wird, ist die Lizenzvereinbarung. Klicken Sie auf **ich** Stimme zu, um den Lizenzvertrag zu akzeptieren.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>Erstellen der holographicstreamerhilfsprogramme

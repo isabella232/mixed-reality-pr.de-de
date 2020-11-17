@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Unity, gemischte Realität, Entwicklung, Einstieg, neues Projekt
-ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Unity, gemischte Realität, Entwicklung, Einstieg, neues Projekt, Windows Mixed Reality, UWP, XR, Leistung
+ms.openlocfilehash: cd7e6c5681c717c37368393a605998a2ab8e4175
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386216"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677669"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>Konfigurieren eines neuen Unity-Projekts für Windows Mixed Reality 
 
-## <a name="overview"></a>Überblick
+## <a name="overview"></a>Übersicht
 
 Windows Mixed Reality (WMR) ist eine Microsoft-Plattform, die als Teil des Betriebssystems Windows 10 eingeführt wird. Mit der WMR-Plattform können Sie Anwendungen erstellen, mit denen digitale Inhalte auf Holographic-und VR-Geräten angezeigt werden.
 
@@ -81,17 +81,17 @@ Wenn Ihre APP speziell auf hololens ausgerichtet ist, müssen Sie einige Einstel
 1. Wählen Sie in der **Hierarchie** die **Hauptkamera** aus.
 2. Legen Sie im **Inspektor** -Panel die Transformations **Position** auf **0, 0, 0** fest, sodass der Speicherort des Benutzer Kopfes am Ursprung der Unity-Welt beginnt.
 3. Ändern Sie die **Clear-Flags** in eine voll **Tonfarbe**.
-4. Ändern Sie die **Hintergrund** Farbe in **RGBA 0, 0, 0** , 0. Schwarz wird in hololens als transparent gerendert.
+4. Ändern Sie die **Hintergrund** Farbe in **RGBA 0, 0, 0**, 0. Schwarz wird in hololens als transparent gerendert.
 5. Ändern Sie die **Clippingebenen in der Nähe** der [empfohlenen hololens](camera-in-unity.md#clip-planes) 0,85 (Meter).
 
 ![Unity-Kameraeinstellungen](images/Unitycamerasettings.png)<br>
 *Unity-Kameraeinstellungen*
 
 > [!IMPORTANT]
-> Wenn Sie eine neue Kamera löschen und erstellen, stellen Sie sicher, dass die neue Kamera als " **maincamera** " gekennzeichnet ist.
+> Wenn Sie eine neue Kamera löschen und erstellen, stellen Sie sicher, dass die neue Kamera als " **maincamera**" gekennzeichnet ist.
 
-## <a name="see-also"></a>Weitere Informationen
-* [Mrtk-Installationshandbuch (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [Mrtk-Dokumentations Startseite (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+## <a name="see-also"></a>Siehe auch
+* [MRTK – Installationshandbuch (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [Startseite der MRTK-Dokumentation (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [Installieren der Tools](../install-the-tools.md)
 * [Übersicht über Unity-Entwicklung](unity-development-overview.md)

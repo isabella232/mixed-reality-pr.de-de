@@ -5,13 +5,13 @@ author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, Remoting, Holographic Remoting, Holographic Remoting Player
-ms.openlocfilehash: 4239eba84bd94c0bdc596392fdf7a0c780778850
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
+keywords: Unity, Remoting, Holographic Remoting, Holographic Remoting Player, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity-Wiedergabemodus
+ms.openlocfilehash: 88ffa172c03dea6544ce8475612426e126415908
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549093"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679059"
 ---
 # <a name="unity-play-mode"></a>Unity-Wiedergabemodus
 

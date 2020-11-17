@@ -5,13 +5,13 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: Port, portieren, Unity, Middleware, Engine, UWP, Win32
-ms.openlocfilehash: 9822976ab7dac9ae7567e5f38ca44ceee646d098
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Port, Unity, Unreal, Middleware, Engine, UWP, Win32, Porting, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Eingabe Zuordnung,
+ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638542"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677729"
 ---
 # <a name="porting-guides"></a>Portierungsleitfäden
 
@@ -23,7 +23,7 @@ Auf hoher Ebene sind die folgenden Schritte zum Portieren vorhandener Inhalte be
 1. **Stellen Sie sicher, dass auf Ihrem PC das Windows 10 Fall Creators Update (16299) ausgeführt wird.** Wir empfehlen Ihnen nicht mehr, vorschaubuilds aus dem Insider-Ahead-Ring zu erhalten, da diese Builds für die Entwicklung mit gemischter Realität nicht am stabilsten sind.
 2. **Führen Sie ein Upgrade auf die neueste Version Ihrer Grafik oder Spiel-Engine aus.** Game Engines müssen die Windows 10 SDK-Version 10.0.15063.0 (veröffentlicht im April 2017) oder höher unterstützen.
 3. **Aktualisieren Sie alle Middleware, Plug-ins oder Komponenten.** Wenn Ihre APP Komponenten enthält, empfiehlt es sich, ein Upgrade auf die neueste Version durchzuführen.
-4. **Entfernen Sie Abhängigkeiten für doppelte sdche** . Je nachdem, auf welchem Gerät Ihre Inhalte ausgerichtet waren, müssen Sie dieses SDK (z. b. "steamvr") entfernen oder bedingt kompilieren, damit Sie stattdessen die Windows-APIs verwenden können.
+4. **Entfernen Sie Abhängigkeiten für doppelte sdche**. Je nachdem, auf welchem Gerät Ihre Inhalte ausgerichtet waren, müssen Sie dieses SDK (z. b. "steamvr") entfernen oder bedingt kompilieren, damit Sie stattdessen die Windows-APIs verwenden können.
 5. **Arbeiten Sie durch Buildprobleme.** An diesem Punkt ist die Portierungs Übung spezifisch für Ihre APP, die Engine und die Komponenten Abhängigkeiten, die Sie haben.
 
 ## <a name="common-porting-steps"></a>Allgemeine Schritte zum Portieren
@@ -56,7 +56,7 @@ Die Windows Mixed Reality-Plattform ist noch nicht aktiv. Es wird empfohlen, [da
 > [!IMPORTANT]
 > Wenn Sie HP-Reverb-G2-Controller verwenden, finden Sie in [diesem Artikel](../unreal/unreal-reverb-g2-controllers.md) weitere Anweisungen zur Eingabe Zuordnung.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Windows Mixed Reality-Mindestanforderungen für die PC-Hardware Kompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Grundlegendes zur Leistung für gemischte Realität](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Empfehlungen zur Leistung für Unity](../unity/performance-recommendations-for-unity.md)
