@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Kalibrierung
-ms.openlocfilehash: 20e76188c6b64776d818f340f6aca0a725454dd8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Kalibrierung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Intent, Actions
+ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685086"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702586"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Blickverfolgung auf HoloLens 2
 
@@ -63,7 +63,7 @@ Weitere Informationen zur Kalibrierung und zur Gewährleistung eines reibungslos
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Verfügbare Augen Verfolgungs Daten
-Bevor Sie sich ausführlich über bestimmte Anwendungsfälle für die Augenblick Eingaben beschäftigen, möchten wir kurz auf die Funktionen hinweisen, die von der hololens 2 [Eye Tracking-API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) bereitstellt werden. Entwickler erhalten Zugriff auf einen Augenblick Strahl ("Ursprung" und "Richtung") bei ungefähr _30 fps (30 Hz)_ .
+Bevor Sie sich ausführlich über bestimmte Anwendungsfälle für die Augenblick Eingaben beschäftigen, möchten wir kurz auf die Funktionen hinweisen, die von der hololens 2 [Eye Tracking-API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) bereitstellt werden. Entwickler erhalten Zugriff auf einen Augenblick Strahl ("Ursprung" und "Richtung") bei ungefähr _30 fps (30 Hz)_.
 Ausführlichere Informationen zum Zugreifen auf die Augen Verfolgungs Daten finden Sie in unseren Entwickler Handbüchern zur Verwendung von [Eye-Blick in DirectX](../develop/native/gaze-in-directx.md) und [im Blickwinkel in Unity](https://aka.ms/mrtk-eyes).
 
 Der vorhergesagte Augenblick liegt ungefähr innerhalb von 1,5 Grad im visuellen Winkel um das eigentliche Ziel (siehe Abbildung unten). Da geringfügige unveränderungen erwartet werden, sollten Entwickler einen gewissen Rand um diesen niedrigeren Grenzwert planen (z. b. können 2.0-3.0 Grad zu einer viel komfortableren Umgebung führen). Im folgenden wird erläutert, wie Sie die Auswahl kleiner Ziele im folgenden ausführlicher behandeln. Damit die Blickverfolgung exakt funktioniert, muss jeder Benutzer eine Benutzerkalibrierung für seine Blickverfolgung durchlaufen. 
@@ -79,7 +79,7 @@ Beachten Sie, dass diese Anwendungsfälle noch nicht Teil der Holographic Shell-
 Sie können einige davon im [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)ausprobieren, das einige interessante und leistungsstarke Beispiele für die Verwendung der Eye-Nachverfolgung bereitstellt, wie z. b. schnelle und mühelose durchschauen unterstützte Ziel Optionen, und den automatischen Bildlauf durch Text basierend auf dem, was der Benutzer sieht. 
 
 ### <a name="user-intent"></a>Benutzerabsicht    
-Informationen dazu, wo und was ein Benutzer untersucht, bieten einen leistungsstarken **Kontext für andere Eingaben** , wie z. b. Voice, Hands und Controller.
+Informationen dazu, wo und was ein Benutzer untersucht, bieten einen leistungsstarken **Kontext für andere Eingaben**, wie z. b. Voice, Hands und Controller.
 Dies kann für verschiedene Aufgaben verwendet werden.
 Dies kann z. b. von schnell und mühelos auf die gesamte Szene **abzielen** , indem Sie einfach ein Hologramm betrachten und *"auswählen"* (auch "anzeigen" [und "Commit](gaze-and-commit.md)") oder *"put this..."* auswählen, um zu sehen, wo der Benutzer das – Hologramm platzieren möchte. *vorhanden* sind. Beispiele hierfür finden Sie in den Artikeln [Mixed Reality Toolkit – Eye-supported Target Selection](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html) (Mixed Reality-Toolkit – Blickgestützte Zielauswahl) und [Mixed Reality Toolkit – Eye-supported Target Positioning](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html) (Mixed Reality-Toolkit – Blickgestützte Zielpositionierung).
 
@@ -92,7 +92,7 @@ Ein wichtiger Aspekt hierbei ist, dass sich die Scrollgeschwindigkeit an die Les
 Ein weiteres Beispiel sind die **Augen unterstützten Zoom-und Schwenken-** Elemente, bei denen der Benutzer das Gefühl hat, dass er sich genau zu dem befindet, worauf er sich konzentriert Das Auslösen und Steuern der Zoomgeschwindigkeit kann mit der Stimme oder Hand Eingaben gesteuert werden, was wichtig ist, um dem Benutzer das Gefühl der Kontrolle zu bieten, während er nicht überlastet ist. Diese Entwurfs Überlegungen werden im folgenden ausführlicher erläutert. Nach dem vergrößern kann der Benutzer problemlos auf den Kurs einer Straße folgen, um seine Umgebung zu durchsuchen, indem er einfach den Augenblick verwendet.
 Demobeispiele für diese Arten von Interaktion finden Sie im Beispiel [Mixed Reality Toolkit – Eye-supported Navigation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html) (Mixed Reality-Toolkit – Blickgestützte Navigation).
 
-Weitere Anwendungsfälle für _implizite Aktionen_ :
+Weitere Anwendungsfälle für _implizite Aktionen_:
 - **Intelligente Benachrichtigungen:** Haben Sie sich immer über Benachrichtigungen benachrichtigt, wenn Sie sich mit den Nachrichten beschäftigen? Wenn Sie das Konto berücksichtigen, auf das ein Benutzer achten wird, können Sie diese Umgebung verbessern, indem Sie Benachrichtigungen von dem Speicherort der Benutzer auslagern Dadurch werden Ablenkungen eingeschränkt und automatisch geschlossen, sobald der Benutzer das Lesen abgeschlossen hat. 
 - **Aufmerksame Hologramme:** Holograms, die bei der Verwendung von auf eine beliebige Weise reagieren. Dies kann von leicht leuchtenden Benutzeroberflächen Elementen bis hin zu einem langsam blühenden Blumen Wert zu einem virtuellen Hund, der mit der Betrachtung des Benutzers beginnt, und dem Ende seines Endes. Diese Interaktion kann ein interessantes Gefühl der Konnektivität und Zufriedenheit in Ihrer Anwendung darstellen.
 
@@ -155,7 +155,7 @@ Auch hier wird empfohlen, dass Sie dem Benutzer, der möglicherweise nicht weiß
 Auf dieser Seite haben Sie hoffentlich einen guten Überblick erhalten, mit dem Sie die Rolle der Eye-Nachverfolgung und die Eingabe des Augenblicks für hololens 2 verstanden haben. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen über die Rolle des [Augenblicks für die Interaktion mit holograms](eye-gaze-interaction.md), den [Augenblick in Unity](https://aka.ms/mrtk-eyes) und den [Augenblick in DirectX](../develop/native/gaze-in-directx.md)an.
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Kalibrierung](../calibration.md)
 * [Komfort](comfort.md)
 * [Interaktion durch Anvisieren](eye-gaze-interaction.md)

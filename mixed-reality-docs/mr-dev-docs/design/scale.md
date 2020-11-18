@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Gemischte Windows-Realität, Stil, Entwurf
-ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality, Style, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Skalierung, holograms
+ms.openlocfilehash: e82211b0bee2214df7542d3129f95ea207f4b0e3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340658"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703376"
 ---
 # <a name="scale"></a>Skalieren
 
@@ -80,19 +80,7 @@ Dadurch können einige mögliche Artefakte in der-Darstellung erstellt werden:
 
 ---
 
-## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
-
-Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie am Ende Ihrer anfänglichen verzweilegung in Mixed Reality-Grundlagen. Sie können entweder herausfinden, was Branchenpartner mit gemischter Realität in der realen Welt tun: 
-
-> [!div class="nextstepaction"]
-> [Erfahren Sie, wie Branchenpartner Mixed Reality einsetzen](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
-
-Oder fahren Sie mit der Entwurfs Journey fort:
-
-> [!div class="nextstepaction"]
-> [Beginnen Sie mit der Entwurfs Journey](../design/design.md)
-
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Farbe, Licht und Materialien](../color,-light-and-materials.md)
 * [Typografie](typography.md)
 * [Raumklangentwurf](spatial-sound-design.md)

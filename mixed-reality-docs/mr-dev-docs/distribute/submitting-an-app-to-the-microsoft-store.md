@@ -5,13 +5,13 @@ author: hferrone
 ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
-keywords: Microsoft Store, hololens, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Paket, AppX, Merchandising
-ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+keywords: Microsoft Store, hololens, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Package, AppX, Merchandising, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678789"
+ms.locfileid: "94703116"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Senden einer App an den Microsoft Store
 

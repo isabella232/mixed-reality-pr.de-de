@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Hololens (1. Gen), hololens 2, gemischte Realität, Cursor, Zielvorgabe, Blick, Gesten
-ms.openlocfilehash: 6fb5f335e192ce7664eab0099dc5d6aa6ed2420d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Hololens (1st Gen), hololens 2, Mixed Reality, Cursors, Zielplattform, Blick, Gesten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Rays, Input
+ms.openlocfilehash: db895c7aad177d7ddd2eb371392812b1d7e4d039
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686115"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702646"
 ---
 # <a name="cursors"></a>Cursor
 
@@ -21,7 +21,7 @@ Ein Cursor oder Indikator Ihres aktuellen Ziel Vektor bietet fortlaufendes Feedb
 
 Das vom Cursor bereitgestellte Feedback bietet Benutzern die Möglichkeit, zu sehen, wie das System antwortet, und verwendet dieses Signal als Feedback, um ihre Absicht an das Gerät besser zu vermitteln, und schließlich ist es sicherer, sich über ihre Interaktionen zu informieren.
 
-Es gibt drei Arten von Cursorn: **Finger, Ray** und **Head-Gaze** . Diese zeigenden Cursor funktionieren mit unterschiedlichen Eingabe Modalitäten für hololens, hololens 2 und immersive Headsets. Im folgenden finden Sie Anleitungen dazu, welche Art von Cursor für die einzelnen Typen von Headset-und Interaktions Modellen verwendet werden kann. Im Mixed Reality Toolkit (mrtk) haben wir Drag & amp; Drop-cursormodule erstellt, um Sie bei der Erstellung der richtigen Zeige Erfahrung zu unterstützen.
+Es gibt drei Arten von Cursorn: **Finger, Ray** und **Head-Gaze**. Diese zeigenden Cursor funktionieren mit unterschiedlichen Eingabe Modalitäten für hololens, hololens 2 und immersive Headsets. Im folgenden finden Sie Anleitungen dazu, welche Art von Cursor für die einzelnen Typen von Headset-und Interaktions Modellen verwendet werden kann. Im Mixed Reality Toolkit (mrtk) haben wir Drag & amp; Drop-cursormodule erstellt, um Sie bei der Erstellung der richtigen Zeige Erfahrung zu unterstützen.
 
 
 ## <a name="device-support"></a>Geräteunterstützung
@@ -166,6 +166,6 @@ Standardmäßig stellt [mrtk](https://github.com/Microsoft/MixedRealityToolkit-U
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Gesten](gaze-and-commit.md#composite-gestures)
 * [Anvisieren mit dem Kopf und Ausführen](gaze-and-commit.md)

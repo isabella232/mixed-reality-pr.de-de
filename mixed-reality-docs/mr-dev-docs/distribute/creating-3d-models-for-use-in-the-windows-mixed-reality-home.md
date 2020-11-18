@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D, Modellierung, Modellierungs Anleitung, Asset-Anforderungen, Erstellungs Richtlinien, Start Programm, 3D-Start Programm, Textur, Material, Komplexität, Dreiecke, Mesh, Polygone, Polycount, Limits
-ms.openlocfilehash: 606726b9c205ccdf3eacafca96b2bd9ccae43e82
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, Modellierung, Modellierungs Anleitung, Asset-Anforderungen, Erstellungs Richtlinien, Start Programm, 3D-Start Programm, Textur, Material, Komplexität, Dreiecke, Mesh, Polygone, Polycount, Limits, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781558"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703466"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Erstellen von 3D-Modellen zur Verwendung auf der Startseite
 
@@ -60,7 +60,7 @@ Die Windows Mixed Reality-Startseite bietet keine Unterstützung für Modelle mi
 ### <a name="node-counts-and-submesh-limits"></a>Knoten Zähler und submesh-Limits
 Die Windows Mixed Reality-Startseite unterstützt keine Modelle mit mehr als 64 Knoten oder 32 Subnetzen pro Lod. Knoten sind ein Konzept in der [gltf-Spezifikation](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) , die die Objekte in der Szene definieren. Subnetze werden im Array von [primitiven](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) im-Objekt definiert. 
 
-|  Funktion |  Beschreibung  |  Maximal unterstützt | Dokumentation |
+|  Funktion |  BESCHREIBUNG  |  Maximal unterstützt | Dokumentation |
 |------|------|------|------|
 |  Nodes |  Objekte in der gltf-Szene |  64 pro Lod | [Anwesend](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Subnetze |  Summe von primitiven für alle Netzen |  32 pro Lod | [Anwesend](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|

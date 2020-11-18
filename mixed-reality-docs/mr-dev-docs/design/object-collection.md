@@ -5,20 +5,20 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Steuerelemente, Entwurf
-ms.openlocfilehash: 5859f7141e8fa0ea27f142981e2cbd05b8da53bf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Steuerelemente, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Objektsammlung, 2D, 3D, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 41087c4a09e72b199c1ab03f504343bf7d6b1ba8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684086"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703406"
 ---
 # <a name="object-collection"></a>Objektsammlung
 
 ![Objektsammlung, die in der periodischen Tabelle der Elements-App verwendet wird.](images/UX_Hero_ObjectCollection.jpg)<br>
 
 
-Die Objekt Auflistung ist ein Layoutsteuerelement, das Ihnen hilft, ein Array von Objekten in einer vordefinierten dreidimensionalen Form zu erstellen. Es unterstützt verschiedene Oberflächen Stile: **Ebene, Zylinder, Kugel** und **radiale** . Sie können den RADIUS und die Größe der Objekte sowie den Leerraum zwischen Ihnen anpassen. Die Objekt Auflistung unterstützt ein beliebiges Objekt aus Unity (2D und 3D). Im **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** haben wir ein Unity-Skript und Beispiele erstellt, die Sie beim Erstellen einer Objektsammlung unterstützen.
+Die Objekt Auflistung ist ein Layoutsteuerelement, das Ihnen hilft, ein Array von Objekten in einer vordefinierten dreidimensionalen Form zu erstellen. Es unterstützt verschiedene Oberflächen Stile: **Ebene, Zylinder, Kugel** und **radiale**. Sie können den RADIUS und die Größe der Objekte sowie den Leerraum zwischen Ihnen anpassen. Die Objekt Auflistung unterstützt ein beliebiges Objekt aus Unity (2D und 3D). Im **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** haben wir ein Unity-Skript und Beispiele erstellt, die Sie beim Erstellen einer Objektsammlung unterstützen.
 
 
 ## <a name="object-collection-examples"></a>Beispiele für die Objektsammlung
@@ -58,7 +58,7 @@ Sie können auch 2D-Images mit der Objektsammlung verwenden. In den folgenden Be
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

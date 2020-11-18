@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Gemischte Windows-Realität, Design, Stil, Schriftart, Typografie, UI, Benutzeroberfläche
-ms.openlocfilehash: 59c7796998ac01fcbb5c9dc418da6454c8c74d12
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Design, Style, Font, Typografie, UI, UX, Text, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
+ms.openlocfilehash: c0e3b23c52925b6fe64dccc7087613e8cd49e851
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685963"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703246"
 ---
 # <a name="typography"></a>Typografie
 
@@ -83,14 +83,14 @@ Für die Near-Interaktion bei 0.45 m (45cm) ist der Anzeige Winkel der minimal l
  *nahezu-und weitem Interaktionen*
 
 ### <a name="the-minimum-legible-font-size"></a>Die minimale lesbare Schriftgröße
-| Entfernung | Anzeige Winkel | Texthöhe | Schrift Grad * * |
+| Abstand | Anzeige Winkel | Texthöhe | Schrift Grad * * |
 |---------|---------|---------|---------|
 | 45cm (direkte Manipulations Distanz) | 0,4 °-0,5 ° | 3.14 – 3,9 mm | 8,9 – 11.13 PT |
 | 2 min | 0,35 °-0,4 ° | 12.21 – 13.97 mm | 34.63-39.58 PT |
 
 
 ### <a name="the-comfortably-legible-font-size"></a>Die bequem lesbare Schriftgröße
-| Entfernung | Anzeige Winkel | Texthöhe | Schrift Grad * * |
+| Abstand | Anzeige Winkel | Texthöhe | Schrift Grad * * |
 |---------|---------|---------|---------|
 | 45cm (direkte Manipulations Distanz) | 0,65 °-0,8 ° | 5.1-6.3 mm | 14.47-17,8 pt |
 | 2 min | 0,6 °-0,75 ° | 20,9-26.2 mm | 59,4-74,2 pt |
@@ -129,6 +129,6 @@ In den meisten Fällen funktioniert Segoe UI (die Standard Schriftart für Windo
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Text in Unity](../develop/unity/text-in-unity.md)
 * [Farbe, Licht und Materialien](../color,-light-and-materials.md)

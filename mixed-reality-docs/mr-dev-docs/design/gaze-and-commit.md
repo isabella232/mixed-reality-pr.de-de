@@ -5,17 +5,17 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Gemischte Realität, Blick, Blick auf die Ausrichtung, Interaktion, Entwurf, Eye Tracking, Head Tracking
-ms.openlocfilehash: 887d1a30a974bdd643889959a1fee55e96d7b16a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Blick, Blick auf das Ziel, Interaktion, Entwurf, Augen Verfolgung, Head-Tracking, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687038"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702406"
 ---
 # <a name="gaze-and-commit"></a>Anvisieren und Bestätigen
 
-" _Blick" und "Commit_ " ist ein grundlegendes Eingabe Modell, das eng mit der Interaktion mit unseren Computern verknüpft ist. verwenden Sie dazu die Maus: Punkt- _& klicken_ .
+" _Blick" und "Commit_ " ist ein grundlegendes Eingabe Modell, das eng mit der Interaktion mit unseren Computern verknüpft ist. verwenden Sie dazu die Maus: Punkt- _& klicken_.
 Auf dieser Seite stellen wir zwei Arten von Blick Eingaben (Head-and-Eye-Eye) und verschiedene Typen von COMMIT-Aktionen vor. 
 Der _Blick und der Commit_ werden als ein weit reichtes Eingabe Modell mit indirekter Bearbeitung betrachtet.
 Dies bedeutet, dass Sie am besten für die Interaktion mit Holographic-Inhalten verwendet werden kann, die nicht erreichbar sind.
@@ -133,7 +133,7 @@ Unabhängig davon, ob Sie den Kopf-oder Augenblick für das Eingabe Modell für 
 ---
 
 ## <a name="commit"></a>Commit
-Nachdem Sie über verschiedene Möglichkeiten zum _betrachten_ eines Ziels gesprochen haben, sprechen wir etwas über den _Commit_ -Teil im _Blick und Commit_ .
+Nachdem Sie über verschiedene Möglichkeiten zum _betrachten_ eines Ziels gesprochen haben, sprechen wir etwas über den _Commit_ -Teil im _Blick und Commit_.
 Nachdem ein Objekt oder ein UI-Element als Ziel verwendet wurde, kann der Benutzer mit einer sekundären Eingabe interagieren oder darauf klicken. Dies wird als Bestätigungsschritt (Commit) des Eingabemodells bezeichnet. 
 
 Die folgenden Methoden zum Ausführen werden unterstützt:
@@ -290,7 +290,7 @@ Sie sollten die folgenden drei Aspekte berücksichtigen:
 
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)
 * [Anvisieren und Verweilen](gaze-and-dwell.md)

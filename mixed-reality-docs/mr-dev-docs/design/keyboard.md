@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX
-ms.openlocfilehash: 9558cd607d7b696851660f495de7965348f571e1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Tastatur, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684155"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703146"
 ---
 # <a name="keyboard"></a>Tastatur
 
@@ -32,14 +32,14 @@ Ihre gemischte Reality-Anwendung kann die System Tastatur jederzeit aufrufen. Be
 
 ---
 
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungs Prüfpunkt
+## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
 Wenn Sie der Unity-Entwicklungs-Checkpoint Journey folgen, die wir bereits angelegt haben, besteht die nächste Aufgabe darin, Ihre Anwendung auf einem Gerät oder Emulator bereitzustellen. 
 
 > [!div class="nextstepaction"]
 > [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

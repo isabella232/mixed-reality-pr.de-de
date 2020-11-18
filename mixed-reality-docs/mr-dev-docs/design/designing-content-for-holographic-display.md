@@ -5,13 +5,13 @@ author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Design der Benutzeroberfläche, holografische Anzeige, Inhalts Design, dunkles Design, helles Design
-ms.openlocfilehash: 627ffdd0a413ad3140c29e9b1c7bb69c9dc249cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Design der Benutzeroberfläche, holografische Anzeige, Inhalts Design, dunkles Design, helle Themen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Design, Pixel
+ms.openlocfilehash: ea3fbda7aff80f0878521deb433c88b16abeab19
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686110"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702636"
 ---
 # <a name="designing-content-for-holographic-display"></a>Entwerfen von Inhalten für die holografische Anzeige
 
@@ -109,7 +109,7 @@ Wenn das Projekt transparente Objekte verwenden muss, versuchen Sie, die Anzahl 
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Farbe, Licht und Materialien](color-light-and-materials.md)
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

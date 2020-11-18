@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: UX-Design, UX mit gemischter Realität, UX, App-Muster, Steuerelemente, Stil, hololens, Interaktion, räumliche Interaktion, räumliche Benutzeroberfläche, UX-Elemente, Verhaltensweisen, Bausteine, Typografie, Farben
-ms.openlocfilehash: c070d05f40cb3bf0376809fd684a05fd74f86fd5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UX-Design, UX mit gemischter Realität, UX, App-Muster, Steuerelemente, Stil, hololens, Interaktion, räumliche Interaktion, räumliche Benutzeroberfläche, UX-Elemente, Verhaltensweisen, Bausteine, Typografie, Farben, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685211"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703136"
 ---
 # <a name="ux-elements-overview"></a>Übersicht über UX-Elemente
 ## <a name="foundational-elements"></a>Grundlegende Elemente

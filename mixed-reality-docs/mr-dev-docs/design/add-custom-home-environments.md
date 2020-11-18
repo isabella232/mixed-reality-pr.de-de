@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Custom Environment, Places, Klippe House, SkyLoft, User, CREATE
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Custom Environment, Places, Cliff House, SkyLoft, User, CREATE, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781529"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703016"
 ---
 # <a name="design-your-own-immersive-environments"></a>Entwerfen eigener immersiver Umgebungen
 
@@ -96,7 +96,7 @@ Um diesen Prozess zu vereinfachen, haben wir den [Windows Mixed Reality Asset Co
 
 Der Konverter unterstützt derzeit eine Reihe von Flags, um das genaue Verhalten der Optimierungen zu optimieren. Wir empfehlen die Ausführung mit den folgenden Flags, um optimale Ergebnisse zu erzielen:
 
-Flag|Empfohlene Werte|Beschreibung
+Flag|Empfohlene Werte|BESCHREIBUNG
 ---|---|---
 -Max-Textur Größe|1024 oder 2048| Optimieren Sie diese, um die Qualität der Texturen zu verbessern. der Standardwert ist 512 x 512. Beachten Sie, dass sich ein größerer Wert erheblich auf die Dateigröße der Umgebung auswirkt. behalten Sie also den Grenzwert von 256 MB bei.
 -Minimale Version|1803|Benutzerdefinierte Umgebungen werden nur für Versionen von Windows >= 1803 unterstützt. Mit diesem Flag werden Texturen für ältere Versionen entfernt und die Dateigröße des endgültigen Assets reduziert.

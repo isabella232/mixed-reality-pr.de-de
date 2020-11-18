@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
-keywords: Mixed Reality, Anvisieren, Verweilen, Interaktion, Entwurf
-ms.openlocfilehash: 825623b00107eec400b4df926c8980c92b065902
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, UX, Richtlinien, Listenansicht
+ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687011"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702316"
 ---
 # <a name="head-gaze-and-dwell"></a>Anvisieren mit dem Kopf und Verweilen
 
@@ -179,7 +179,7 @@ Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionie
 
 ---
  
- ## <a name="see-also"></a>Weitere Informationen
+ ## <a name="see-also"></a>Siehe auch
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Hände – Direkte Manipulation](direct-manipulation.md)
 * [Hände – Gesten](gaze-and-commit.md#composite-gestures)

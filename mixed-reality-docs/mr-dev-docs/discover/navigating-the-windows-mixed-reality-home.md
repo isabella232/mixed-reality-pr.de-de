@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Shell, Betriebssystem, Plattform, Klippe, Haus, Home, Umgebung, Start, Startmenü, Startmenü, Pins, APP, Apps starten, Apps platzieren, teleportieren, verschieben, navigieren
-ms.openlocfilehash: 1f2ec91edca100e9253a6c8e65f4b3f9d2b2feeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Shell, Betriebssystem, Plattform, Klippe, Haus, zuhause, Umgebung, Start, Startmenü, Startmenü, Pins, APP, starten von apps, platzieren von apps, teleportieren, verschieben, navigieren, Mixed Reality-Headset, Virtual Reality-Headset, Virtual Reality
+ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687582"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703446"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Navigieren auf der Startseite von Windows Mixed Reality
 
@@ -48,11 +48,11 @@ Apps können auch über eine APP-zu-app-API oder über Cortana gestartet werden.
 
 ## <a name="moving-and-adjusting-apps"></a>Verschieben und Anpassen von apps
 
-Wählen Sie in der APP-Leiste **Anpassen** aus, um Steuerelemente anzuzeigen, die Inhalte mit gemischter Realität verschieben, skalieren und drehen. Wenn Sie fertig sind **, wählen Sie fertig aus** .
+Wählen Sie in der APP-Leiste **Anpassen** aus, um Steuerelemente anzuzeigen, die Inhalte mit gemischter Realität verschieben, skalieren und drehen. Wenn Sie fertig sind **, wählen Sie fertig aus**.
 
 ![Das Speicher Slate im Anpassungsmodus (blauer Frame). Beachten Sie, dass die APP-Leiste (oben) geändert wurde, sodass Sie die Schaltflächen "Done" und "Remove" enthält.](images/adjust-500px.png)
 
-Unterschiedliche apps haben möglicherweise zusätzliche Optionen auf der APP-Leiste. Microsoft Edge verfügt beispielsweise über *Scroll* -, *Drag* -und *Zoom* -Optionen. 
+Unterschiedliche apps haben möglicherweise zusätzliche Optionen auf der APP-Leiste. Microsoft Edge verfügt beispielsweise über *Scroll*-, *Drag*-und *Zoom* -Optionen. 
 
 ![App-Leiste für 2D-apps, die auf hololens ausgeführt werden](images/holobar-500px.png)
 
@@ -122,7 +122,7 @@ Sie können auch Sprachbefehle verwenden, um zu Hause zu gelangen. Zeigen Sie z.
 Windows Mixed Reality verfügt über eine Reihe integrierter apps, wie z. b.:
 * **Microsoft Store** zum erhalten von apps und spielen
 * **Feedback-Hub** zum Übermitteln von Feedback über die System-und System-apps
-* **Einstellungen** zum Konfigurieren von Systemeinstellungen ( [einschließlich Netzwerk](../connecting-to-wi-fi-on-hololens.md) -und Systemupdates)
+* **Einstellungen** zum Konfigurieren von Systemeinstellungen ([einschließlich Netzwerk](../connecting-to-wi-fi-on-hololens.md) -und Systemupdates)
 * **Microsoft Edge** zum Durchsuchen von Websites
 * **Fotos** zum Anzeigen und Freigeben von Fotos und Videos
 * **Kalibrierung** (nur hololens) zum Anpassen der hololens-Darstellung an den aktuellen Benutzer
@@ -134,7 +134,7 @@ Windows Mixed Reality verfügt über eine Reihe integrierter apps, wie z. b.:
 * **Desktop** (immersive Headsets) zum Anzeigen Ihres Desktop Monitors in einem immersiven Headset
 * **Datei-Explorer** Zugreifen auf Dateien und Ordner, die sich auf Ihrem Gerät befinden
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [App-Ansichten](../design/app-views.md)
 * [Motion-Controller](../design/motion-controllers.md)
 * [Hardware-Zubehör](hardware-accessories.md)

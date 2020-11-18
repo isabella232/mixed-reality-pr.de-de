@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6DOF-Controller, Motion-Controller
-ms.openlocfilehash: 74ea6c8879d5deb1271e9a2169cae013b03bab5b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 6DOF-Controller, Motion-Controller, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, scrollen, Zieh Punkt, Zustand
+ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684126"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703156"
 ---
 # <a name="motion-controllers"></a>Bewegungscontroller
 
@@ -69,9 +69,9 @@ Windows Mixed Reality Motion Controllers bieten mithilfe der Sensoren im immersi
 * Ministick
 * Touchpad
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
-### <a name="before-you-begin"></a>Voraussetzungen
+### <a name="before-you-begin"></a>Vorbereitung
 
 **Sie benötigen Folgendes:**
 * Ein Satz von zwei Bewegungs Controllern.
@@ -88,7 +88,7 @@ Bewegungs Controller können mit dem Host-PC mithilfe von Windows-Einstellungen 
 
 1. Fügen Sie 2 AA-Akkus in die Rückseite des Controllers ein. Lassen Sie die Akku Abdeckung vorerst deaktiviert.
 2. Wenn Sie anstelle eines integrierten Bluetooth-Radios einen externen USB-Bluetooth-Adapter verwenden, lesen Sie die [bewährten Methoden für Bluetooth](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) , bevor Sie fortfahren. Stellen Sie für die Desktop Konfiguration mit dem integrierten Radio sicher, dass die Antenne verbunden ist.
-3. Öffnen Sie **Windows-Einstellungen**  ->  **Geräte**  ->  Bluetooth **oder anderes Gerät Bluetooth hinzufügen** ,  ->  **Bluetooth** und entfernen Sie alle früheren Instanzen von "Motion Controller – right" und "Motion Controller – Left". Überprüfen Sie auch die Kategorie andere Geräte am Ende der Liste.
+3. Öffnen Sie **Windows-Einstellungen**  ->  **Geräte**  ->  Bluetooth **oder anderes Gerät Bluetooth hinzufügen**,  ->  **Bluetooth** und entfernen Sie alle früheren Instanzen von "Motion Controller – right" und "Motion Controller – Left". Überprüfen Sie auch die Kategorie andere Geräte am Ende der Liste.
 4. Wählen Sie **Bluetooth oder anderes Gerät hinzufügen** aus, und starten Sie die Ermittlung von Bluetooth-Geräten.
 5. Drücken Sie die Windows-Schaltfläche des Controllers, um den Controller einzuschalten.
 6. Halten Sie die Schaltfläche "Kopplung" gedrückt (Registerkarte im Akku Depot), bis die LEDs mit dem Pulsing beginnen.
@@ -146,8 +146,8 @@ Wenn die Controller nach der Kopplung ausgeschaltet sind, wird Ihr Status als ge
 
 ## <a name="gazing-and-pointing"></a>Schauen und zeigen
 
-Windows Mixed Reality unterstützt zwei Schlüsselmodelle für die Interaktion. **Blick und Commit** und Commit und **Commit** :
-* Mit " **Blick" und "Commit** " können Benutzer ein Objekt mit dem [Blick](gaze-and-commit.md) auf ein Objekt ausrichten und dann Objekte mit Hand Luft tippen, einem Gamepad, einem Clicker oder ihrer Stimme auswählen.
+Windows Mixed Reality unterstützt zwei Schlüsselmodelle für die Interaktion. **Blick und Commit** und Commit und **Commit**:
+* Mit " **Blick" und "Commit**" können Benutzer ein Objekt mit dem [Blick](gaze-and-commit.md) auf ein Objekt ausrichten und dann Objekte mit Hand Luft tippen, einem Gamepad, einem Clicker oder ihrer Stimme auswählen.
 * Mit **Point und Commit** kann ein Benutzer auf das Zielobjekt einen pointfähigen Bewegungs Controller ausrichten und dann Objekte mit dem Controller des Controllers auswählen.
 
 Apps, die mit der Anzeige von Bewegungs Controllern unterstützen, sollten nach Möglichkeit auch Überblicks gesteuerte Interaktionen aktivieren, damit Benutzer auswählen können, welche Eingabegeräte verwendet werden.
@@ -162,7 +162,7 @@ Um eine solche Recoil zu verwalten, die beim Abrufen des Auslösers durch die Be
 
 Windows Mixed Reality unterstützt Bewegungs Controller in einer Vielzahl von Formfaktoren, wobei sich der Entwurf des Controllers in seiner Beziehung zwischen der Handposition des Benutzers und der natürlichen Vorwärtsrichtung unterscheidet, die von den apps beim Rendern des Controllers verwendet werden sollen.
 
-Um diese Controller besser darstellen zu können, gibt es zwei Arten von Posen, die Sie für die einzelnen Interaktions Quellen untersuchen können. die Zieh Punkt **Pose** und die **zeigerpose** .
+Um diese Controller besser darstellen zu können, gibt es zwei Arten von Posen, die Sie für die einzelnen Interaktions Quellen untersuchen können. die Zieh Punkt **Pose** und die **zeigerpose**.
 
 ### <a name="grip-pose"></a>Ziehpunkt darstellen
 
@@ -171,7 +171,7 @@ Die Ziehpunkt- **Pose** stellt die Position der Palme einer Hand dar, die von ei
 Bei immersiven Headsets eignet sich die Zieh Punkt Darstellung am besten zum Rendering **der Benutzer Hand** oder **eines Objekts, das in der Hand des Benutzers gehalten** wird, z. b. ein Schwert oder eine Waffe. Die Zieh Punkt Darstellung wird auch bei der Visualisierung eines Bewegungs Controllers verwendet, da das **renderbare Modell** , das von Windows für einen Motion-Controller bereitgestellt wird, die Zieh Punkt Darstellung als Ursprung und Mittelpunkt der Drehung verwendet.
 
 Die Ziehpunkt-Pose wird wie folgt definiert:
-* Die Zieh **Punktposition** : der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren. Auf dem Windows Mixed Reality Motion Controller richtet sich diese Position im Allgemeinen nach der Schaltfläche "verstehen".
+* Die Zieh **Punktposition**: der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren. Auf dem Windows Mixed Reality Motion Controller richtet sich diese Position im Allgemeinen nach der Schaltfläche "verstehen".
 * Die **Rechte Achse** der Ziehpunkt Ausrichtung: Wenn Sie Ihre Hand vollständig geöffnet haben, um eine flache 5-Finger-Darstellung zu bilden, ist das Strahl-Ray, das normal ist (vorwärts von links nach links, rückwärts von rechter Palme).
 * Die **Forward-Achse** der Ziehpunkt Ausrichtung: Wenn Sie die Hand teilweise schließen (wie beim Halten des Controllers), wird der Strahl, der durch das durch ihre nicht-Thumb-Finger formatierte Rohr auf "Vorwärts" zeigt.
 * Die **aufwärts Achse** der Ziehpunkt Ausrichtung: die aufwärts Achse, die durch die Rechte-und vorwärts Definitionen impliziert wird.
@@ -180,7 +180,7 @@ Die Ziehpunkt-Pose wird wie folgt definiert:
 
 Die **Zeiger** Darstellung stellt die Spitze des Controllers dar, der vorwärts zeigt.
 
-Die vom System bereitgestellte Zeiger Darstellung eignet sich am besten für raycast, wenn Sie **das Controller Modell selbst Rendern** . Wenn Sie ein anderes virtuelles Objekt anstelle des Controllers (z. b. eine virtuelle Pistole) rendern, sollten Sie auf einen Strahl zeigen, der für dieses virtuelle Objekt am natürlichsten ist, z. b. ein Strahl, der entlang des fassers des App-defined Gun-Modells verläuft. Da Benutzer das virtuelle Objekt und nicht den physischen Controller sehen können, ist das verweisen mit dem virtuellen Objekt für diejenigen, die Ihre APP verwenden, wahrscheinlich natürlicher.
+Die vom System bereitgestellte Zeiger Darstellung eignet sich am besten für raycast, wenn Sie **das Controller Modell selbst Rendern**. Wenn Sie ein anderes virtuelles Objekt anstelle des Controllers (z. b. eine virtuelle Pistole) rendern, sollten Sie auf einen Strahl zeigen, der für dieses virtuelle Objekt am natürlichsten ist, z. b. ein Strahl, der entlang des fassers des App-defined Gun-Modells verläuft. Da Benutzer das virtuelle Objekt und nicht den physischen Controller sehen können, ist das verweisen mit dem virtuellen Objekt für diejenigen, die Ihre APP verwenden, wahrscheinlich natürlicher.
 
 ## <a name="controller-tracking-state"></a>Controller nach verfolgungsstatus
 
@@ -203,9 +203,9 @@ Apps, die Positionen basierend auf dem nach verfolgungsstatus unterschiedlich be
 <tr>
 <th> Nach verfolgungsstatus </th><th> Sourcelossrisk </th><th> Positionsgenauigkeit </th><th> Trygetposition</th>
 </tr><tr>
-<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Ungefähre Genauigkeit</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -223,7 +223,7 @@ Diese Motion Controller-Überwachungs Zustände werden wie folgt definiert:
 
 ## <a name="interactions-low-level-spatial-input"></a>Interaktionen: räumliche Eingabe auf niedriger Ebene
 
-Die wichtigsten Interaktionen zwischen Händen und Bewegungs Controllern sind **Select** , **Menu** , **grasp** , **Touchpad** , **Thumbstick** und **Home** .
+Die wichtigsten Interaktionen zwischen Händen und Bewegungs Controllern sind **Select**, **Menu**, **grasp**, **Touchpad**, **Thumbstick** und **Home**.
 * **Select** ist die primäre Interaktion zum Aktivieren eines holograms, das aus einem Press gefolgt von einem Release besteht. Für Bewegungs Controller führen Sie eine SELECT-Taste mithilfe des Controllers des Controllers aus. Weitere Möglichkeiten zum Durchführen eines SELECT-Befehls finden Sie im [Sprachbefehl](voice-input.md) "Select". Dieselbe SELECT-Interaktion kann in jeder beliebigen App verwendet werden. Stellen Sie sich als Äquivalent eines Mausklicks vor. eine universelle Aktion, die Sie einmal erlernen und dann auf alle Ihre apps anwenden.
 * **Menü** ist die sekundäre Interaktion zum agieren für ein Objekt, das zum Abrufen eines Kontextmenüs oder zum Ausführen einer anderen sekundären Aktion verwendet wird. Mit Motion Controllers können Sie mithilfe der *Menü* Schaltfläche des Controllers eine Menü Aktion ausführen. (d. h. die Schaltfläche mit dem Hamburger "Menü"-Symbol)
 * Der **Einblick** ist, wie Benutzer direkt Aktionen an Objekten durchführen können, um Sie zu bearbeiten. Mit Motion-Controllern können Sie eine Handschlag Aktion durchführen, indem Sie Ihre Faust eng durch drücken. Ein Bewegungs Controller kann eine Reichweite mit einer Schaltfläche zum Durchsuchen, einem Palmen-oder einem anderen Sensor erkennen.
@@ -233,7 +233,7 @@ Die wichtigsten Interaktionen zwischen Händen und Bewegungs Controllern sind **
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>Zusammengesetzte Gesten: räumliche Eingabe auf hoher Ebene
 
-Beide [Handgesten](gaze-and-commit.md#composite-gestures) und Bewegungs Controller können im Laufe der Zeit überwacht werden, um einen gemeinsamen Satz von zusammen **[gesetzten Gesten](gaze-and-commit.md#composite-gestures)** auf hoher Ebene zu erkennen. Dadurch kann Ihre APP auf hoher Ebene **Tap** -, **Hold** -, **Manipulations** -und **Navigations** Gesten erkennen, unabhängig davon, ob die Benutzer Hände oder Controller verwenden.
+Beide [Handgesten](gaze-and-commit.md#composite-gestures) und Bewegungs Controller können im Laufe der Zeit überwacht werden, um einen gemeinsamen Satz von zusammen **[gesetzten Gesten](gaze-and-commit.md#composite-gestures)** auf hoher Ebene zu erkennen. Dadurch kann Ihre APP auf hoher Ebene **Tap**-, **Hold**-, **Manipulations** -und **Navigations** Gesten erkennen, unabhängig davon, ob die Benutzer Hände oder Controller verwenden.
 
 ## <a name="rendering-the-motion-controller-model"></a>Rendern des Motion Controller-Modells
 
@@ -277,10 +277,10 @@ Weitere Informationen finden Sie im Leitfaden zur Problembehandlung für [Motion
 
 [Geben Sie uns Feedback](../give-us-feedback.md) im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Gesten und Motion-Controller in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Hände und Motion-Controller in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gesten](gaze-and-commit.md#composite-gestures)
 * [Leitfaden für Enthusiasten: Ihre Windows Mixed Reality-Startseite](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [Leitfaden für Enthusiasten: Verwenden von spielen & apps in Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [Funktionsweise der inneren Nachverfolgung](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Funktionsweise von Inside-Out-Tracking](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

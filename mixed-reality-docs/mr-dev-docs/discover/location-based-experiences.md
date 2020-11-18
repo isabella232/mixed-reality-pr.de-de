@@ -5,13 +5,13 @@ author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
-keywords: Mixed Reality, VR, LBE, Location
-ms.openlocfilehash: 6ee013a576041a71d92307523dbfbaefa6c7d24a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, VR, LBE, Location, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, Hardware, hololens, Multi-Player, Cloud Services, Azure
+ms.openlocfilehash: b082153d3d32b2ecee1eb4430cab008819d50ba3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690331"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702096"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Location based Entertainment mit Windows Mixed Reality
 
@@ -49,7 +49,7 @@ Unsere OEMs bieten eine unglaubliche Auswahl von Rucksack-PCs, die genau für di
 
 HP hat soeben seinen HP VR-Rucksack G2 gestartet, der weltweit leistungsfähigste tragbaren PC – optimiert für die kostenlose Roaming-Umgebung, die jetzt 30% mehr Leistung mit einer RTX 2080-GPU in hat. [Details](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>Einrichten
+### <a name="setup"></a>Setup
 
 **F: Wie kann ich das Setup leichter konfigurieren und das Mixed Reality-Portal für LBE anpassen?**
 

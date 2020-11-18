@@ -5,20 +5,20 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, hololens, holograms, Design, Interaktion
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality, hololens, holograms, Design, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, was ist die erweiterte Realität
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631468"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702246"
 ---
 # <a name="what-is-a-hologram"></a>Was ist ein Hologramm?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-Hololens ermöglicht Ihnen das Erstellen von **holograms** , aus Licht und Sound bestehenden Objekten, die auf der ganzen Welt angezeigt werden, genau so, als wären Sie echte Objekte. Holograms reagieren auf Ihre [Blicke](../design/gaze-and-commit.md), [Gesten](../design/gaze-and-commit.md#composite-gestures) und [Sprachbefehle](../design/voice-input.md)und können mit [realen Oberflächen](../design/spatial-mapping.md) um Sie interagieren. Mit Hologrammen können Sie digitale Objekte erstellen, die Teil Ihrer Welt sind.
+Hololens ermöglicht Ihnen das Erstellen von **holograms**, aus Licht und Sound bestehenden Objekten, die auf der ganzen Welt angezeigt werden, genau so, als wären Sie echte Objekte. Holograms reagieren auf Ihre [Blicke](../design/gaze-and-commit.md), [Gesten](../design/gaze-and-commit.md#composite-gestures) und [Sprachbefehle](../design/voice-input.md)und können mit [realen Oberflächen](../design/spatial-mapping.md) um Sie interagieren. Mit Hologrammen können Sie digitale Objekte erstellen, die Teil Ihrer Welt sind.
 
 <br>
 

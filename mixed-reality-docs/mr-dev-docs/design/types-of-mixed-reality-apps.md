@@ -1,19 +1,19 @@
 ---
-title: Typen von Mixed Reality-Apps
+title: Typen von Mixed Reality-apps
 description: Einer der Vorteile bei der Entwicklung von Apps für Windows Mixed Reality besteht darin, dass es eine Palette an Erfahrungen gibt, die die Plattform von vollständig immersiven virtuellen Umgebungen unterstützen kann, um Informationen über die aktuelle Umgebung eines Benutzers zu erhalten.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Gemischte Windows-Realität, Entwurf, App-Muster
-ms.openlocfilehash: 5d2fa3a5d83f878009f4574c3468719c9af17014
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Design, App Patterns, Mixed Reality Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
+ms.openlocfilehash: 17ae6b2ec8d9c67d2b6f0114535fc25c1cb487b2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685995"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703216"
 ---
-# <a name="types-of-mixed-reality-apps"></a>Typen von Mixed Reality-Apps
+# <a name="types-of-mixed-reality-apps"></a>Typen von Mixed Reality-apps
 
 Einer der Vorteile beim Entwickeln von Apps für Windows Mixed Reality ist das Spektrum an Erlebnissen, die von der Plattform unterstützt werden. Von vollständig immersiven virtuellen Umgebungen bis zur leichten Überlagerung der aktuellen Umgebung eines Benutzers mit Informationen bietet Windows Mixed Reality eine Sammlung robuster Tools, mit denen sich jede Erfahrung lebendig gestalten lässt. Es ist wichtig, dass ein App-Ersteller frühzeitig im Entwicklungsprozess daran interessiert ist, an welcher Stelle dieses Spektrum liegt. Diese Entscheidung wirkt sich letztendlich sowohl auf die Zusammensetzung des App-Entwurfs als auch auf den technologischen Entwicklungspfad aus.
 

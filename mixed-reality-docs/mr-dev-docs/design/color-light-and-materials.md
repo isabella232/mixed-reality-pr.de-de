@@ -5,15 +5,15 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Gemischte Windows-Realität, Design, Farbe, Licht, Materialien
-ms.openlocfilehash: 76237b1b08df98850a4989987ed608dae29b6b5c
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Gemischte Windows Mixed Reality-, Design-, Color-, Light-, Material-, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683216"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702786"
 ---
-# <a name="color-light-and-materials"></a>Farbe, Licht und Materialien
+# <a name="color-light-and-materials"></a>Farbe, Licht und Material
 ![Farbe, Licht und Materialien](images/RemoteRendering.jpg)
 
 Das Entwerfen von Inhalten für Mixed Reality erfordert eine sorgfältige Auswahl von Farbe, Beleuchtung und Material für jedes visuelle Objekt, das in Ihrer Darstellung verwendet wird. Diese Entscheidungen können sowohl für Ästhetik als auch für die Verwendung von Licht und Material zum Festlegen des Klangs einer immersiven Umgebung und funktionaler Zwecke verwendet werden, wie z. b. das Verwenden von markanten Farben, um Benutzer über eine bevorstehende Aktion zu benachrichtigen. Jede dieser Entscheidungen muss gegen die Möglichkeiten und Einschränkungen für das Zielgerät ihrer Arbeit abgewogen werden.
@@ -96,7 +96,7 @@ Material sind wichtige Elemente zum Treffen realistischer holograms. Durch die B
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Entwerfen von Inhalten für die holografische Anzeige](designing-content-for-holographic-display.md)
 * [Farbtrennung](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [Hologramme](../discover/hologram.md)

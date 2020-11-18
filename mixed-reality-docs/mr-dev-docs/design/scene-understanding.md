@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Okklusion, SDK
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683998"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703366"
 ---
 # <a name="scene-understanding"></a>Grundlegendes zu Szenen
 
@@ -99,7 +99,7 @@ Wenn Ihre Anwendung die Möglichkeit hat, 2D-oder 3D-Hologramme in starre Strukt
 
 **Hinweis** Für Legacy-Platzierungs Code, der vom Mesh für räumliche Zuordnungen abhängt, kann das räumliche Zuordnungen-Mesh zusammen mit scenequads berechnet werden, indem die enableworldmesh-Einstellung festgelegt wird. Wenn die API-Understanding-API die Latenz Anforderungen Ihrer Anwendung nicht erfüllt, wird empfohlen, weiterhin die [räumliche Mapping-API](spatial-mapping.md#placement)zu verwenden.
 
-### <a name="occlusion"></a>Verdeckung
+### <a name="occlusion"></a>Okklusion
 
 Die [Okklusion für räumliche](spatial-mapping.md#occlusion) Zuordnungen ist die niedrigste Methode zum Erfassen des Echt Zeit Zustands der Umgebung. Obwohl dies nützlich sein kann, um die Okklusion in sehr dynamischen Szenen bereitzustellen, empfiehlt es sich unter Umständen, das Verständnis der Szene in der Szene aus verschiedenen Gründen zu verstehen. Wenn Sie das durch Szene Verständnis generierte räumliche zuordnungsmesh verwenden, können Sie Daten aus der räumlichen Zuordnung anfordern, die nicht im lokalen Cache gespeichert werden und daher nicht über die perception-APIs zur Verfügung stehen. Die Verwendung der räumlichen Zuordnung für die Okklusion neben wasserdichten Netzen stellt zusätzlichen Wert bereit, insbesondere den Abschluss der nicht gescannten Raumstruktur.
 

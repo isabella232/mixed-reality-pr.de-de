@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Design, Introduction, Leitfaden
-ms.openlocfilehash: 114a3808d57b2bd78044ce743d568bd5effe25bb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, Design, Introduction, Guidance, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, UX, Ressourcen
+ms.openlocfilehash: 88e6b5866201a6ef116710b2b7b7c6af3a6ea5d3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685291"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703076"
 ---
 # <a name="about-this-design-guidance"></a>Informationen zu dieser Entwurfsanleitung
 

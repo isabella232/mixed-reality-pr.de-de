@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP, App-Modell, Lebenszyklus, aussetzen, fortsetzen, Kachel, Sichten, Verträge
-ms.openlocfilehash: 67b883517ae17422bf7c27227c33882cf8a9f7ef
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UWP, App-Modell, Lebenszyklus, aussetzen, fortsetzen, Kachel, Sichten, Verträge, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 332556a5118f0c69a83654d345119995e4262cb5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685243"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703106"
 ---
 # <a name="app-model"></a>App-Modell
 
@@ -256,7 +256,7 @@ Bei Windows 10 wird ein Betriebssystem nicht mehr als Zielversion [für Ihre APP
 * Um nur Desktop-Headsets als Ziel zu erhalten, richten Sie Ihre APP auf die **Windows. Desktop-** Gerätefamilie aus.
 * Um nur hololens als Ziel zu erreichen, richten Sie Ihre APP auf die **Windows. Holographic** -Gerätefamilie aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [App-Ansichten](app-views.md)
 * [Aktualisieren von 2D-UWP-Apps für Mixed Reality](../develop/porting-apps/building-2d-apps.md)

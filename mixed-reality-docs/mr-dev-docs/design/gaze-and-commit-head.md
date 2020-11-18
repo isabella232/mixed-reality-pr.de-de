@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Mixed Reality, Anvisieren, Zielbestimmung, Interaktion, Entwurf
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Blick, Blick auf die Ausrichtung, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Ziel, Fokus, Glättung
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685075"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702386"
 ---
 # <a name="head-gaze-and-commit"></a>Anvisieren mit dem Kopf und Ausführen
 Der _Kopf-und Commit-_ Vorgang ist ein Sonderfall des "Blick"- [und](gaze-and-commit.md) "Commit"-Eingabe Modells, bei dem ein Objekt mit der Richtung ihrer Kopfzeile (Head-Direction) als Ziel verwendet wird, und dann mit einer sekundären Eingabe, wie z. b. dem Luftbild der Handbewegung oder dem Sprachbefehl "Select", behandelt wird. 
@@ -56,7 +56,7 @@ Der Kopf Zeilenvektor wurde wiederholt angezeigt, um für die fein Ausrichtung g
 Benutzer können häufig keine UI-Elemente finden, die in ihrer Ansicht sehr hoch oder sehr niedrig angeordnet sind. Sie konzentrieren sich auf Bereiche, die sich in der Nähe des Hauptfokus befinden, also ungefähr in der Perspektive. Die Positionierung der meisten Ziele in einem vernünftigen Bereich auf Augenhöhe kann helfen. Angesichts der Tendenz, dass sich der Benutzer jeweils auf einen relativ kleinen visuellen Bereich konzentrieren kann (der Blickwinkel beträgt etwa 10 Grad), kann die Gruppierung von Benutzeroberflächenelementen in dem Maße, in dem sie konzeptionell verwandt sind, das Verhalten zum Kombinieren der Aufmerksamkeit von Element zu Element nutzen, wenn der Blick eines Benutzers durch einen Bereich schweift. Beachten Sie beim Entwerfen der Benutzeroberfläche die potenziellen großen Unterschiede beim Sichtfeld zwischen HoloLens und immersiven Headsets.
 
 ![Beispiel für gruppierte Benutzeroberflächenelemente zur einfacheren Zielbestimmung in Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg).<br>
-*Beispiel für gruppierte Benutzeroberflächenelemente zur einfacheren Zielbestimmung in Galaxy Explorer* .
+*Beispiel für gruppierte Benutzeroberflächenelemente zur einfacheren Zielbestimmung in Galaxy Explorer*.
 
 ## <a name="improving-targeting-behaviors"></a>Verbessern des Verhaltens bei der Zielbestimmung
 Wenn der Benutzer beabsichtigt ist, etwas als Ziel festzustellen, kann es sehr hilfreich sein, fast Fehlversuche bei der Interaktion zu akzeptieren, als wären Sie ordnungsgemäß als Ziel festgelegt. Im folgenden finden Sie eine Reihe von erfolgreichen Methoden, die in gemischte Realität integriert werden können:
@@ -80,7 +80,7 @@ Dieser Mechanismus kann sich als allgemeinere Version der nächstgelegenen Verkn
 Wenn Sie bestimmen, auf welche nahe gelegenen interaktiven Elemente der Fokus gelegt werden soll, stellt die Fokus Bindung eine Abweichung für das Element bereit, das momentan fokussiert ist. Dies trägt dazu bei, das Verhalten von erratischen Fokus Wechselverhalten zu verringern, wenn Sie in einem Mittelpunkt zwischen zwei Elementen mit natürlichem Rauschen schweben
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Anvisieren und Verweilen](gaze-and-dwell.md)
 * [Hände – Direkte Manipulation](direct-manipulation.md)

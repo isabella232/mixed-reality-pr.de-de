@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: Gemischte Realität, Hände frei, Blick, Blick auf die Ausrichtung, Interaktion, Entwurf
-ms.openlocfilehash: 47e2bd8fef52a36601d58f321def9c066db259e5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, Hands-Free, Gaze, Blick auf das Ziel, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Spracheingabe, Benutzerfreundlichkeit
+ms.openlocfilehash: 7f4d3a0ec8d2e7435f54164006a8bd122b1ebcba
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686883"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702136"
 ---
 # <a name="hands-free"></a>Freihändig
 
@@ -93,7 +93,7 @@ Versteht der Benutzer...
 * Beispiel: sprach Interaktionen sind besser mit Untertiteln, die eingeschaltet werden müssen
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Anvisieren und Verweilen](gaze-and-dwell.md)

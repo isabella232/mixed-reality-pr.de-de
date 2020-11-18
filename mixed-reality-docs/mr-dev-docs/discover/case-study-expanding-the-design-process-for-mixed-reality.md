@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Gemischte Windows-Realität, Entwurf, Prozess, Fallstudie
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Gemischte Windows-Realität, Entwurf, Prozess, Fallstudie, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist die erweiterte Realität, bodystorming, Storyboards, Feedback
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631508"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702206"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>Anders als bei gemischter Realität
 Als Microsoft die hololens (1. Generation) für eine Zielgruppe von eifrigen Entwicklern in 2016 eingeführt hat, hatte das Team bereits zusammen mit Studio innerhalb und außerhalb von Microsoft zusammengearbeitet, um die Start Erfahrungen des Geräts zu erstellen. Diese Teams haben ihr Wissen in der Praxis erworben und auf dem neuen Gebiet des Mixed Reality-Entwurfs sowohl Chancen als auch Herausforderungen kennengelernt.

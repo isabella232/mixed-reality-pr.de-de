@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: Hand, Menü, Schaltfläche, schnell Zugriff, Layout
-ms.openlocfilehash: f7bf8ab2fb54e6a939bd538a0a0ba756c5efb916
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Hand, Menü, Schaltfläche, schnell Zugriff, Layout, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686926"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702296"
 ---
 # <a name="hand-menu"></a>Handmenü
 
@@ -117,7 +117,7 @@ Im folgenden finden Sie zwei empfohlene Platzierungen, die auf unseren Explorati
 ---
 
 ## <a name="menu-positions-that-are-not-recommended"></a>Nicht empfohlene Menü Positionen
-Wir haben die Benutzer Forschung mit verschiedenen Menüs und Standorten durchgeführt. die folgenden Menü Positionen werden **nicht empfohlen** . Sie finden die Nachteile der einzelnen nachfolgenden Nachforschungen:
+Wir haben die Benutzer Forschung mit verschiedenen Menüs und Standorten durchgeführt. die folgenden Menü Positionen werden **nicht empfohlen**. Sie finden die Nachteile der einzelnen nachfolgenden Nachforschungen:
 
 
 :::row:::
@@ -183,7 +183,7 @@ Sie können die Menü Beispiele in hololens 2 mit der mrtk examples Hub-App ausp
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

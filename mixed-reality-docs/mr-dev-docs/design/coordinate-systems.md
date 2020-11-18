@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Koordinatensystem, räumliches Koordinatensystem, nur Ausrichtung, sitzungsskala, Dauerhaftigkeit, Raum Skala, Welt weite, 360 Grad, sitzend, Position, Raum, Welt, Skala, Position, Ausrichtung, stationär, angefügt, Phase, Anker, räumlicher Anker, Welt-gesperrt, Platzsperre, gesperrte Sperre, platzsperren, Begrenzungen, Persistenz, Freigabe, Nachverfolgung von Verlusten, räumlicher cloudanker
-ms.openlocfilehash: bf7641d13302620a32aac260332c3be694ea324b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Koordinatensystem, geografischer Koordinatensystem, nur Ausrichtung, sitzender Skalierung, Dauer Skala, Raum Skala, Welt weite, 360 Grad, sitzender, stehender, Raum, Welt, Dezimalstellen, Position, Ausrichtung, stationär, angefügt, Phase, Anker, räumlicher Anker, weltweit gesperrt, Platzsperre, Body-Lock, Body-Lock, Begrenzungen, Persistenz, Freigabe, nach Verfolgungs Verlust, cloudräumlicher Anker, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Toolkit, hololens
+ms.openlocfilehash: afffffae5d23309b2ab9124b9f74b7818fd4adf6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686163"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702536"
 ---
 # <a name="coordinate-systems"></a>Koordinatensysteme
 
@@ -96,7 +96,7 @@ Diese Erfahrungs Skala folgt dem Modell "Schachteln von Puppen". Das wichtigste 
 |  **Ja** |  Nein |  - |  - |  - |  **Sitzen** | 
 |  **Ja** |  **Ja** |  Nein |  - |  - |  **Fortschritt** | 
 |  **Ja** |  **Ja** |  **Ja** |  Nein |  - |  **Steht-360 °** | 
-|  **Ja** |  **Ja** |  **Ja** |  **Ja** |  Nein |  **Versand** | 
+|  **Ja** |  **Ja** |  **Ja** |  **Ja** |  Nein |  **Raum** | 
 |  **Ja** |  **Ja** |  **Ja** |  **Ja** |  **Ja** |  **World** | 
 
 Beachten Sie, dass der stagingframe von Reference für hololens noch nicht unterstützt wird. Eine Raum basierte App auf hololens muss derzeit [räumliche Zuordnung](spatial-mapping.md) oder [Szenen Verständnis](scene-understanding.md) verwenden, um den Boden und die Wände des Benutzers zu ermitteln.
@@ -143,7 +143,7 @@ Um eine **Raum** Umgebung bereitzustellen, die es Benutzern ermöglicht, innerha
 
 ### <a name="stage-frame-of-reference"></a>Stagingframe des Verweises
 
-Beim ersten Einrichten eines immersiven Headsets definiert der Benutzer eine **Stufe** , die den Raum darstellt, in dem Sie Gemischte Realität erleben werden. In der Stufe ist mindestens ein **Phasen Ursprung** definiert, ein räumliches Koordinatensystem, das sich auf die ausgewählte bodenposition des Benutzers konzentriert und die Ausrichtung des Geräts angibt. Durch das Platzieren von Inhalten in diesem Phasen Koordinatensystem auf der Ebene Y = 0 können Sie sicherstellen, dass Ihre holograms bequem auf dem Boden angezeigt werden, wenn der Benutzer steht, und den Benutzern eine Funktion zur Verfügung **steht** .
+Beim ersten Einrichten eines immersiven Headsets definiert der Benutzer eine **Stufe**, die den Raum darstellt, in dem Sie Gemischte Realität erleben werden. In der Stufe ist mindestens ein **Phasen Ursprung** definiert, ein räumliches Koordinatensystem, das sich auf die ausgewählte bodenposition des Benutzers konzentriert und die Ausrichtung des Geräts angibt. Durch das Platzieren von Inhalten in diesem Phasen Koordinatensystem auf der Ebene Y = 0 können Sie sicherstellen, dass Ihre holograms bequem auf dem Boden angezeigt werden, wenn der Benutzer steht, und den Benutzern eine Funktion zur Verfügung **steht**.
 
 ### <a name="stage-bounds"></a>Stufen Begrenzungen
 
@@ -227,7 +227,7 @@ Wenn Sie in einer Umgebung, in der viele Änderungen durchgeführt wurden (z. b.
 
 Manchmal kann ein Zuhause oder ein anderer Bereich zwei identische Bereiche haben. Beispielsweise zwei identische Konferenzräume, zwei identische Eckbereiche, zwei große identische Poster, die das Ansichts Feld des Geräts abdecken. In solchen Szenarien kann das Gerät manchmal zwischen identischen Teilen verwechselt und in der internen Darstellung als identisch markiert werden. Dies kann dazu führen, dass die holograms aus einigen Bereichen an anderen Speicherorten angezeigt werden. Das Gerät verliert möglicherweise die Nachverfolgung, da die interne Darstellung der Umgebung beschädigt ist. In diesem Fall wird empfohlen, das Umweltverständnis des Systems zurückzusetzen. Beachten Sie, dass das Zurücksetzen der Zuordnung zum Verlust aller räumlichen Anker Platzierungen führt. Dies führt dazu, dass das Headset in den eindeutigen Bereichen der Umgebung gut nachverfolgt wird. Das Problem kann jedoch erneut auftreten, wenn das Gerät erneut zwischen den identischen Bereichen verwechselt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [GDC 2017-Präsentation zu räumlichen Koordinatensystemen und Holographic-Rendering](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
 * [Koordinatensysteme in Unity](../develop/unity/coordinate-systems-in-unity.md)
 * [Koordinatensysteme in DirectX](../develop/native/coordinate-systems-in-directx.md)

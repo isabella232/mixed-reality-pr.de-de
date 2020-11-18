@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: Hololens, Windows Mixed Reality, Holographic Frame, Field of View
-ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Hololens, Windows Mixed Reality, Holographic Frame, Field of View, FOV, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, hololens, mrtk, Mixed Reality Toolkit, Interaktionen, Navigation, Menü
+ms.openlocfilehash: c1786af43bacc414b5ffcf6f59753d7f8fa92fef
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340638"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702216"
 ---
 # <a name="holographic-frame"></a>Holografischer Rahmen
 
@@ -139,14 +139,7 @@ Als immersives Verfahren wurde empfohlen, die Benutzer zu untersuchen und ihren 
 
 Die realistische Darstellung von Buzz bot einen leistungsstarken Mittelpunkt, der mit einer kleinen Technik fertig ist, um dem Benutzer zu zeigen, wie er es gibt. Wenn sich der Benutzer über die Benutzeroberflächen bewegt, wechselt der Sprung zu einem Schwellenwert, bevor er in einen neutralen Zustand wechselt, wenn der Benutzer zu weit über seine Peripherie hinausgeht. Wenn der Benutzer das vollständige verschieben (z. b. an anderer Stelle in der Szene) und dann wieder zu Buzz durchführt, wird die direktionale Position der Sprachausgabe wieder auf den Benutzer ausgerichtet. Techniken wie diese bieten ein leistungsfähiges Gefühl für das Eintauchen und das Erstellen eines Mittelpunkts im Holographic-Frame, wodurch eine übermäßige Kopfbewegung und eine herauf Stufung des [Benutzer Komforts](comfort.md)vermieden werden.
 
-## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
-
-Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
-
-> [!div class="nextstepaction"]
-> [Erzeugen des realen Eindrucks von holografischen Objekten (Räumliche Zuordnung)](../design/spatial-mapping.md)
-
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Komfort](comfort.md)
 * [Skalieren](scale.md)

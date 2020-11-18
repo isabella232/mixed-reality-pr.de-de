@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: räumliche Zuordnung, hololens, gemischte Realität, Oberflächenrekonstruktion, Mesh
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: räumliche Zuordnung, hololens, gemischte Realität, Oberflächenrekonstruktion, Mesh, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Szenen Verständnis, World Mesh, oksion, Physik, Navigation, Oberflächen Beobachter, Rendering, Mesh-Verarbeitung
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340668"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703316"
 ---
 # <a name="spatial-mapping"></a>Räumliche Abbildung
 
@@ -369,14 +369,7 @@ Im folgenden finden Sie einige Beispiele für verschiedene Arten der Mesh-Verarb
 * Damit die Oberflächen Netzen ordnungsgemäß ausgerichtet werden, muss jedes gameobject aktiv sein, bevor es an den surfaceobserver gesendet wird, damit das Mesh erstellt werden kann. Andernfalls werden die Netze in Ihrem Raum angezeigt, aber in seltsamen Winkeln gedreht.
 * Das gameobject, das das Skript ausführt, das mit dem surfaceobserver kommuniziert, muss auf den Ursprung festgelegt werden. Andernfalls verfügen alle von Ihnen erstellten und an den surfaceobserver gesendeten gameobjects-Objekte, deren Netzen erstellt werden, über einen Offset, der gleich dem Offset des übergeordneten Spiel Objekts ist. Dies kann dazu führen, dass ihre Netze mehrere Meter entfernt werden, sodass es sehr schwierig ist, das zu debuggen, was passiert.
 
-## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
-
-Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
-
-> [!div class="nextstepaction"]
-> [Vorschlagen des Maßstabs eines Objekts (Maßstab)](../design/scale.md)
-
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Koordinatensysteme](coordinate-systems.md)
 * [Räumliche Abbildung in DirectX](../develop/native/spatial-mapping-in-directx.md)
 * [Räumliche Abbildung in Unity](../develop/unity/spatial-mapping-in-unity.md)

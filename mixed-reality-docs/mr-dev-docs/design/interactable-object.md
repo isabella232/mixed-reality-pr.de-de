@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Steuerelemente, Interaktion, Cues, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Audio
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684219"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703226"
 ---
 # <a name="interactable-object"></a>Interaktionsfähiges Objekt
 
@@ -93,12 +93,12 @@ So sehen diese Zustände auf einer **Holographic-Schaltfläche** aus:
 Hololens 2 unterstützt die Eingabe von Handgelenk Nachverfolgung, mit der Sie mit Objekten interagieren können. Ohne haptisches Feedback und eine perfekte Tiefe Wahrnehmung kann es manchmal schwierig sein zu wissen, wie weit die Hand von einem Objekt entfernt ist oder ob Sie es berühren. Es ist wichtig, genügend visuelle Hinweise bereitzustellen, um den Status des Objekts und insbesondere den Zustand ihrer Hände in Bezug auf das Objekt zu übermitteln.
 
 Verwenden Sie visuelles Feedback, um Folgendes zu kommunizieren:
-* **Default (Observation)** : standardmäßiger Leerlauf Status des Objekts.
-* **Hover** : Wenn eine Hand sich in der Nähe eines Hologramms befindet, ändern Sie die visuellen Elemente, um zu kommunizieren. 
-* **Entfernung und Punkt der Interaktion** : Wenn die Hand ein Hologramm nähert, entwerfen Sie das Feedback, um den projizierten Interaktionspunkt zu kommunizieren, und wie weit von dem Objekt der Finger ist.
-* **Kontakt beginnt** : Ändern der visuellen Elemente (hell, Farbe), um zu kommunizieren, dass eine Fingereingabe aufgetreten ist
-* **Verstanden** : Ändern von visuellen Elementen (hell, Farbe), wenn das Objekt erfasst wird
-* **Kontakt Ende** : Ändern der visuellen Elemente (hell, Farbe), wenn die Fingereingabe beendet wurde
+* **Default (Observation)**: standardmäßiger Leerlauf Status des Objekts.
+* **Hover**: Wenn eine Hand sich in der Nähe eines Hologramms befindet, ändern Sie die visuellen Elemente, um zu kommunizieren. 
+* **Entfernung und Punkt der Interaktion**: Wenn die Hand ein Hologramm nähert, entwerfen Sie das Feedback, um den projizierten Interaktionspunkt zu kommunizieren, und wie weit von dem Objekt der Finger ist.
+* **Kontakt beginnt**: Ändern der visuellen Elemente (hell, Farbe), um zu kommunizieren, dass eine Fingereingabe aufgetreten ist
+* **Verstanden**: Ändern von visuellen Elementen (hell, Farbe), wenn das Objekt erfasst wird
+* **Kontakt Ende**: Ändern der visuellen Elemente (hell, Farbe), wenn die Fingereingabe beendet wurde
 
 <br>
 
@@ -189,10 +189,10 @@ Eine [Schaltfläche in hololens 2](https://microsoft.github.io/MixedRealityToolk
 ### <a name="audio-cues"></a>Audiohinweise
 
 Bei direkter Hand Interaktion kann das richtige Audiofeedback die Benutzer Leistung erheblich verbessern. Verwenden Sie Audiofeedback, um Folgendes zu kommunizieren:
-* **Kontakt beginnt** : Sound abspielen, wenn der Fingerabdruck beginnt
+* **Kontakt beginnt**: Sound abspielen, wenn der Fingerabdruck beginnt
 * **Kontakt** Ende: Sound am Touchscreen abspielen
-* **Beginn** : Sound abspielen, wenn der Start beginnt
-* Aufnahme **Ende** : Sound wiedergeben, wenn der Griff endet
+* **Beginn**: Sound abspielen, wenn der Start beginnt
+* Aufnahme **Ende**: Sound wiedergeben, wenn der Griff endet
 
 <br>
 
@@ -225,7 +225,7 @@ Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktion
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Zielgröße für direkte Interaktion
 
-| Entfernung | Anzeige Winkel | Size |
+| Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
 | 45cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
 
@@ -238,7 +238,7 @@ Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktion
 
 Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir eine größere Mindestgröße von 3,2 x 3,2 cm, um sicherzustellen, dass genügend Speicherplatz vorhanden ist, um ein Symbol und potenziell einen Text zu enthalten.
 
-| Entfernung | Mindestgröße |
+| Abstand | Mindestgröße |
 |---------|---------|
 | 45cm  | 3,2 x 3,2 cm |
 
@@ -248,7 +248,7 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 <br>
 
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Zielgröße für die Hand Strahl-oder Blick Interaktion
-| Entfernung | Anzeige Winkel | Size |
+| Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
 | 2 min  | nicht kleiner als 1 ° | 3,5 x 3,5 cm |
 
@@ -278,7 +278,7 @@ Der Standard-Shader von mixedrealitytoolkit bietet verschiedene Optionen, wie z.
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

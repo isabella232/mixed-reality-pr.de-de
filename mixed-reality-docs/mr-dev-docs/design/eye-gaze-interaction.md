@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick
-ms.openlocfilehash: 57b90142fc47b72030f9b767370fd84a5c7d5b14
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Entwurf, Interaktionen
+ms.openlocfilehash: 59dded6ca23b9adc075dc02d642ce7761f93bcfb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685091"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702546"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Auf Augenblick basierende Interaktion auf hololens 2
 
@@ -70,7 +70,7 @@ Mit einer großen Menge von Energie.
 Wenngleich der Augenblick verwendet werden kann, um zufriedenstellende Benutzeroberflächen zu erstellen, die Ihnen einen Superhero ähneln, ist es auch wichtig zu wissen, was für dieses nicht geeignet ist. Im folgenden werden einige der zu berücksichtigenden *Probleme* und deren Behebung bei der Arbeit mit der Eingabe des Augenblicks erläutert: 
 
 - **Ihr Blick ist "Always on"** . In dem Moment, in dem Sie Ihre Augen Deckeln öffnen, beginnen Ihre Augen damit, die Dinge in der Umgebung zu fixieren. Wenn Sie auf jede Art und Weise reagieren, die Sie durchführen, und versehentlich Aktionen ausgeben, führt dies zu einer unfreundlichen Darstellung.
-Daher empfiehlt es sich, den Augenblick mit einem *Sprachbefehl* , einer *Handbewegung* , einer *Schaltfläche* oder einem erweiterten Wohnort zu kombinieren, um die Auswahl eines Ziels zu initiieren (Weitere Informationen finden Sie unter [Eye-Eye und Commit](gaze-and-commit-eyes.md)).
+Daher empfiehlt es sich, den Augenblick mit einem *Sprachbefehl*, einer *Handbewegung*, einer *Schaltfläche* oder einem erweiterten Wohnort zu kombinieren, um die Auswahl eines Ziels zu initiieren (Weitere Informationen finden Sie unter [Eye-Eye und Commit](gaze-and-commit-eyes.md)).
 Diese Lösung ermöglicht außerdem einen Modus, in dem der Benutzer sich ohne überdies durch eine unwillkürlich Auslösung von etwas bewegen kann. Dieses Problem sollte auch beim Entwerfen von visuellem und auditiven Feedback bei der Betrachtung eines Ziels berücksichtigt werden.
 Versuchen Sie nicht, den Benutzer mit unmittelbaren popouteffekten oder Hover-Sounds zu überfordern. Die Feinheit ist der Schlüssel. Im folgenden werden einige bewährte Methoden erläutert, die in Bezug auf [Entwurfs Empfehlungen](eye-gaze-interaction.md#design-recommendations)erläutert werden.
 
@@ -117,7 +117,7 @@ Bei einem Cursor kann dies aufgrund von geringfügigen Offsets im projizierten E
 Auf dieser Seite haben Sie einen guten Überblick erhalten, um Ihnen den Einstieg in die Eingabe in gemischter Realität zu verdeutlichen. Informationen zu den ersten Schritten bei der Entwicklung finden Sie in den Informationen zu den [Augenblicken in Unity](https://aka.ms/mrtk-eyes) und im Blickwinkel [in DirectX](../develop/native/gaze-in-directx.md).
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Komfort](comfort.md)
 * [Blick in DirectX](../develop/native/gaze-in-directx.md)
 * [Blick in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)

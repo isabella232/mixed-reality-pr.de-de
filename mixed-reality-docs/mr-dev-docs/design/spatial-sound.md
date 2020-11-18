@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/07/2019
 ms.topic: article
-keywords: räumlicher Sound, Umschließungs Sound, 3D--Audio, 3D--Ton, räumliche Audiodaten
-ms.openlocfilehash: fb3517307dccd7e41c39c012c69f1e1d141fa218
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: räumlicher Sound, Umschließungs Sound, 3D--Audio, 3D--Ton, räumliche Audiodaten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Fallstudien, Akustik
+ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686054"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703256"
 ---
 # <a name="audio-in-mixed-reality"></a>Audioinhalte in gemischter Realität
 Das Audiomaterial ist ein wesentlicher Bestandteil von Design und Produktivität in gemischter Realität. Sound kann:
@@ -91,7 +91,7 @@ Die Unterstützung für Windows ' HRTFs ist für die folgenden Drittanbieter-AUD
 * Ein [Plug-in für Unity-Audiodateien](../develop/unity/spatial-sound-in-unity.md)
 * Ein [wwise-Audiomodul-Plug-](https://www.audiokinetic.com/products/plug-ins/msspatial/) in
 
-## <a name="acoustics"></a>Akustische
+## <a name="acoustics"></a>Akustik
 Räumliche Audiodaten sind ungefähr mehr als die Richtung. Weitere Dimensionen sind Okklusion, Behinderung, Reverb, portalling und Quell Modellierung. Gemeinsam werden diese Dimensionen als *Akustik* bezeichnet. Ohne Akustik fehlt bei spatialisierten Sounds eine nicht wahrgenommene Entfernung.
 
 Die Akustik ist von einfach bis sehr komplex. Sie können einen einfachen Reverb verwenden, der von jedem Audiomodul unterstützt wird, um spatialisierte Sounds in die Umgebung des Listener zu überführen. Akustiksysteme wie z. b. die [Projekt Akustik](https://aka.ms/acoustics)  bieten umfangreichere und überzeugende Akustik Behandlungen. Die Projekt Akustik kann die Auswirkung von Wänden, Türen und anderen Szenen Geometrie in einem Sound modellieren. Es ist eine effektive Option in Fällen, in denen die relevante Szene Geometrie zur Entwicklungszeit bekannt ist.

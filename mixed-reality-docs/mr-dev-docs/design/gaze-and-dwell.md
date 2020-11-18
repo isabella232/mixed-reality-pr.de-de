@@ -1,25 +1,25 @@
 ---
-title: Schauen und wohnen
+title: Anvisieren und Verweilen
 description: Allgemeine Übersicht über den (Augen-/Schreib-) Blick und das Eingangs Modell
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Eye Tracking, Head Tracking
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Augen Verfolgung, Head-Tracking, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686979"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702196"
 ---
-# <a name="gaze-and-dwell"></a>Schauen und wohnen
+# <a name="gaze-and-dwell"></a>Anvisieren und Verweilen
 
 Wenn die Hände mit Werkzeugen und Gegenständen beschäftigt sind, können Gesten mühsam oder unmöglich sein.
 Sprachbefehle können in bestimmten Kontexten auch unzuverlässig sein, z. b. unter übermäßig Laute Bedingungen.
 "Blick" und "Wohnen" bietet einen vertrauten und leicht zu erarbeitenden Mechanismus für das Arbeiten mit den hololens und Freihand.
 Außerdem ist "Blick" und "Wohnen" ein hervorragend Fall Back, das von Rausch Störungen oder Ruhe Einschränkungen in der Betriebsumgebung unabhängig ist.
-Wir unterscheiden zwei Varianten von _Blick und wohnen_ : [Kopf-und](gaze-and-dwell-head.md) [Einblicken](gaze-and-dwell-eyes.md)und wohnen.
+Wir unterscheiden zwei Varianten von _Blick und wohnen_: [Kopf-und](gaze-and-dwell-head.md) [Einblicken](gaze-and-dwell-eyes.md)und wohnen.
 
 ## <a name="scenarios"></a>Szenarien
 
@@ -63,7 +63,7 @@ Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkze
 
 ---
 
- ## <a name="see-also"></a>Weitere Informationen
+ ## <a name="see-also"></a>Siehe auch
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)

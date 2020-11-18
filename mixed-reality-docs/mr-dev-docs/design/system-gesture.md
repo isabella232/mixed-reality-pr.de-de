@@ -5,13 +5,13 @@ author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Gemischte Realität, Gesten, Interaktion, Entwurf
-ms.openlocfilehash: 909472abfec34f75a2f5fa810f87003978cc6a5e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Gesten, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Bloom
+ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686035"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703266"
 ---
 # <a name="start-gesture"></a>Start Geste
 
@@ -97,7 +97,7 @@ In hololens 2 haben wir die Blüte Bewegung durch eine virtuelle Handgelenk Scha
 > 1. Sie müssen ein Update auf das Update von November 2019 (Build 18363,1039) oder höher durch haben.
 > 1. Die Augen müssen auf dem Gerät so kalibriert werden, dass die Eye-Nachverfolgung ordnungsgemäß funktioniert. Wenn Sie keine Umkreis Punkte um das Start Symbol sehen, wenn Sie es betrachten, werden die Augen nicht auf dem Gerät gekalibriert.
 
-Sie können die Start Geste auch nur mit einer Hand ausführen. Halten Sie zu diesem Zweck ihre Hand mit Ihrer Hand, und sehen Sie sich das **Start Symbol** auf Ihrem inneren Handgelenk an. **Wenn Sie das Symbol gedrückt halten** , können Sie den Ziehpunkt und den Finger des Indexes zusammenhalten.<br>
+Sie können die Start Geste auch nur mit einer Hand ausführen. Halten Sie zu diesem Zweck ihre Hand mit Ihrer Hand, und sehen Sie sich das **Start Symbol** auf Ihrem inneren Handgelenk an. **Wenn Sie das Symbol gedrückt halten**, können Sie den Ziehpunkt und den Finger des Indexes zusammenhalten.<br>
 :::row:::
     :::column:::
         ![Handgelenk Taste](images/wrist-button-ready.png)<br>
@@ -113,7 +113,7 @@ Sie können die Start Geste auch nur mit einer Hand ausführen. Halten Sie zu di
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Augenblick](eye-tracking.md)

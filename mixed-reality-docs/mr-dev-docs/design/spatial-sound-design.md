@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality, räumlicher Sound, Entwurf, Stil
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality, räumlicher Sound, Entwurf, Stil, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Gesten, Interaktionen, Dämpfung
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686086"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703281"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>Verwenden von Sound in Anwendungen mit gemischter Realität
 
@@ -68,7 +68,7 @@ Sprach Interaktionen haben häufig feine visuelle Elemente. Verwenden Sie Sounds
 
 * Verwenden Sie für die *Bestätigung* von Sprachbefehlen einen positiven Ton Sound. Steigende Töne und große musikalische Intervalle sind effektiv.
 * Verwenden Sie für sprach Befehls *Fehler* einen kürzeren, weniger positiven Ton Sound. Vermeiden Sie negative Sounds. Verwenden Sie stattdessen einen perkussiven, neutralen Sound, um zu kommunizieren, dass die Anwendung von der Interaktion aus bewegt wird.
-* Wenn Ihre Anwendung ein Reaktivierungs Wort hat, verwenden Sie einen kurzen, sanften Ton, wenn das Gerät mit dem *lauschen beginnt* . Verwenden Sie einen feinen Schleifen Sound, während die *Anwendung lauscht* .
+* Wenn Ihre Anwendung ein Reaktivierungs Wort hat, verwenden Sie einen kurzen, sanften Ton, wenn das Gerät mit dem *lauschen beginnt*. Verwenden Sie einen feinen Schleifen Sound, während die *Anwendung lauscht* .
 
 ### <a name="notifications"></a>Benachrichtigungen
 Benachrichtigungen kommunizieren Anwendungs Zustandsänderungen und andere Ereignisse, die nicht vom Benutzer initiiert werden, wie z. b. Prozess Vervollständigungen, Nachrichten und Telefonanrufe.
@@ -99,7 +99,7 @@ Die Spatialisierung führt zu einigen CPU-Kosten. Viele Anwendungen haben höchs
 ### <a name="when-and-how-to-apply-distance-based-attenuation"></a>Wann und wie die Entfernungs basierte Dämpfung angewendet wird
 In der physischen Welt sind Sounds, die weiter entfernt sind, leiser. Die Audioengine kann diese Dämpfung basierend auf der Quell Distanz modellieren. Verwenden Sie die Entfernungs basierte Dämpfung, wenn Sie relevante Informationen kommuniziert.
 
-Die Entfernungen zu *visuellen Indikatoren* , *animierten holograms* und andere informative Sounds sind in der Regel für den Benutzer relevant. Verwenden Sie die Entfernungs basierte Dämpfung, um intuitiv Hinweise bereitzustellen.
+Die Entfernungen zu *visuellen Indikatoren*, *animierten holograms* und andere informative Sounds sind in der Regel für den Benutzer relevant. Verwenden Sie die Entfernungs basierte Dämpfung, um intuitiv Hinweise bereitzustellen.
 
 Passen Sie die Dämpfung der Dämpfung für jede Quelle an die Größe ihrer Bereiche mit gemischter Realität an. Die Standardkurve ihrer Audioengine ist häufig für sehr große (bis zu halbkilometer) Leerzeichen vorgesehen.
 

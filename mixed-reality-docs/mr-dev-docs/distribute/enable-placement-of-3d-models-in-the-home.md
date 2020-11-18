@@ -5,15 +5,15 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D, Modell, Ort in Zuhause, Ort, Welt, Modellierung, gemischte Realität Home, Web, App
-ms.openlocfilehash: 4ea720fd9fc404d4730733b6b65df13acdf1a51a
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D, Modell, Ort in Zuhause, Ort, Welt, Modellierung, gemischte Realität Home, Web, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781565"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703186"
 ---
-# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Aktivieren der Platzierung von 3D-Modellen in der Mixed Reality-Startseite
+# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Aktivieren der Platzierung von 3D-Modellen in der Mixed Reality Startumgebung
 
 > [!NOTE]
 > Diese Funktion wurde als Teil des [Windows 10-Updates vom April 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)hinzugefügt. Ältere Versionen von Windows sind mit diesem Feature nicht kompatibel.

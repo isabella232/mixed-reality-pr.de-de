@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Deep-Link, secondarytile, Sekundär Kachel, UWP
-ms.openlocfilehash: 22f2a6eebdd379b7d7959f9708bb55bb7de6b85e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Deep-Link, secondarytile, Sekundär Kachel, UWP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, XML, Begrenzungsfeld, Unity
+ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684851"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703196"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementieren von 3D-App-Startprogrammen (UWP-Apps)
 
@@ -202,7 +202,7 @@ Bei Kachel Benachrichtigungen wird das Senden eines Updates mit einem 3D-Medieno
 
 Weitere Informationen zu den anderen Kacheln Features und Attributen und deren Verwendung für 2D-Kacheln finden Sie in der [Dokumentation zu Kacheln für UWP-apps](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Gemischtes Reality-Modell Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) mit einem 3D-App-Start Programm.
 * [Entwurfsanleitung für 3D-App-Startprogramm](3d-app-launcher-design-guidance.md)

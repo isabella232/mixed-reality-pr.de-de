@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX
-ms.openlocfilehash: 73a69cad3899a2419cc5ffd55cf0b0eb33679f7b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Menü, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 215147f0ded0c9594ddf075c1464ab04d031f2a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684099"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703396"
 ---
 # <a name="near-menu"></a>Nähemenü
 
@@ -36,7 +36,7 @@ Sie können das Tag wieder aktivieren, indem Sie die Schaltfläche "Pin" drücke
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

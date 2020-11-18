@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Design, Steuerelemente, UI, UX
-ms.openlocfilehash: 751a8fe9a196f894ac0ef9e3dcca64dec1c97498
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Gemischte Windows Mixed Reality, Design, Steuerelemente, UI, UX, Fortschrittsanzeige, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684062"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703386"
 ---
 # <a name="progress-indicator"></a>Statusanzeige
 
@@ -27,11 +27,11 @@ Ein Statussteuerelement gibt dem Benutzer eine Rückmeldung, dass ein Vorgang mi
 
 ## <a name="types-of-progress"></a>Typen von Statussteuerelementen
 
-Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstellen. In Mixed Reality können Benutzer problemlos von der physischen Umgebung oder von Objekten abgelenkt werden, wenn Ihre APP kein gutes visuelles Feedback bietet. Für Situationen, die einige Sekunden dauern, z. b. beim Laden von Daten oder beim Aktualisieren einer Szene, empfiehlt es sich, einen visuellen Indikator anzuzeigen. Es gibt zwei Möglichkeiten, den Benutzer anzuzeigen, dass ein Vorgang ausgeführt wird – eine **Status** Anzeige oder ein **Fortschritts Ring** .
+Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstellen. In Mixed Reality können Benutzer problemlos von der physischen Umgebung oder von Objekten abgelenkt werden, wenn Ihre APP kein gutes visuelles Feedback bietet. Für Situationen, die einige Sekunden dauern, z. b. beim Laden von Daten oder beim Aktualisieren einer Szene, empfiehlt es sich, einen visuellen Indikator anzuzeigen. Es gibt zwei Möglichkeiten, den Benutzer anzuzeigen, dass ein Vorgang ausgeführt wird – eine **Status** Anzeige oder ein **Fortschritts Ring**.
 
 :::row:::
     :::column:::
-        ### <a name="progress-barbr"></a>Statusleiste<br>
+        ### <a name="progress-barbr"></a>Statusanzeige<br>
         Eine Statusanzeige zeigt den Prozentsatz der abgeschlossenen Aufgabe an. Er sollte bei einem Vorgang verwendet werden, dessen Dauer bekannt ist (determinate), aber der Fortschritt sollte die Interaktion des Benutzers mit der APP nicht blockieren.<br>
         <br>
         *Bild: Statusanzeige Beispiel in hololens*
@@ -98,7 +98,7 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

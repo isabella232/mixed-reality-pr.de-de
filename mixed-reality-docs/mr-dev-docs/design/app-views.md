@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: immersive Ansicht, 2D-Ansicht, Slate, App
-ms.openlocfilehash: e625eca3adb7cd4a9dcd1f971917f008d5daa7d2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: immersive Ansicht, 2D-Ansicht, Slate, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
+ms.openlocfilehash: 1380c32dc89e472428c86be30b2fce82a946f3cc
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685171"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702917"
 ---
 # <a name="app-views"></a>App-Ansichten
 
-Windows-Apps können zwei Arten von Ansichten, **immersive Ansichten** und **2D-Ansichten** enthalten. Apps können zwischen den verschiedenen immersiven Ansichten und 2D-Ansichten wechseln, wobei ihre 2D-Ansichten entweder in einem Monitor als Fenster oder in einem Headset als Slate angezeigt werden. Apps, die mindestens eine immersive Ansicht aufweisen, werden als **Mixed Reality-apps** kategorisiert. Apps, die nie eine immersive Ansicht haben, sind **2D-apps** .
+Windows-Apps können zwei Arten von Ansichten, **immersive Ansichten** und **2D-Ansichten** enthalten. Apps können zwischen den verschiedenen immersiven Ansichten und 2D-Ansichten wechseln, wobei ihre 2D-Ansichten entweder in einem Monitor als Fenster oder in einem Headset als Slate angezeigt werden. Apps, die mindestens eine immersive Ansicht aufweisen, werden als **Mixed Reality-apps** kategorisiert. Apps, die nie eine immersive Ansicht haben, sind **2D-apps**.
 
 ## <a name="immersive-views"></a>Immersive Ansichten
 
@@ -43,7 +43,7 @@ Eine zentrale Verwendung von 2D-Ansichten besteht darin, ein Texteingabe Formula
 
 Beachten Sie, dass eine APP auf einem Desktop-PC über 2D-Ansichten sowohl für den Desktop Monitor als auch für ein angefügtes Headset verfügen kann. Beispielsweise können Sie mit der zweiten 2D-Ansicht Edge auf dem Desktop Monitor durchsuchen, um ein Video mit dem 360-Grad zu finden. Wenn Sie das Video abspielen, startet Edge eine sekundäre immersive Ansicht im Headset, um die immersiven Videoinhalte anzuzeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [App-Modell](app-model.md)
 * [Aktualisieren von 2D-UWP-Apps für Mixed Reality](../develop/porting-apps/building-2d-apps.md)
