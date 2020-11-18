@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Storage
 ms.localizationpriority: high
-ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 64e4aaadf13c03272a4fc9c552a7e4b31e82fdbb
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353328"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549103"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrieren von Azure Storage
 
@@ -62,7 +62,7 @@ Obwohl Sie alle Datenänderungen über die Benutzeroberfläche innerhalb der Anw
 
 ## <a name="preparing-the-scene"></a>Vorbereiten der Szene
 
-Suchen Sie im Hierarchiefenster nach dem **DataManager** -Objekt, und wählen Sie es aus.
+Suchen Sie im Hierarchiefenster nach dem **DataManager**-Objekt, und wählen Sie es aus.
 
 ![Unity mit im Inspektor angezeigten Konfigurationsfeldern der DataManager (Script)-Komponente](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
@@ -74,7 +74,7 @@ Im Inspektor-Fenster sehen Sie, dass sich die Komponente **DataManager (Script)*
 
 Nach Abschluss der Vorbereitungen ist es an der Zeit, ein *nachverfolgtes Objekt* zu erstellen.
 
-Öffnen Sie die Anwendung auf Ihrem HoloLens-Gerät, und klicken Sie auf **Set Object** (Objekt festlegen). Sie erkennen, wie das *EnterObjectName-* -Objekt in der Hierarchie aktiviert wird. Klicken Sie in diesem Menü auf die *Suchleiste* , und geben Sie den Namen ein, den Sie dem *nachverfolgten Objekt* zuweisen möchten. Nachdem Sie einen Namen festgelegt haben, klicken Sie auf die Schaltfläche **Set Object** (Objekt festlegen). Dadurch wird das *nachverfolgte Objekt* in Azure Table Storage erstellt, und die **Objektkarte** wird angezeigt.
+Öffnen Sie die Anwendung auf Ihrem HoloLens-Gerät, und klicken Sie auf **Set Object** (Objekt festlegen). Sie erkennen, wie das *EnterObjectName-* -Objekt in der Hierarchie aktiviert wird. Klicken Sie in diesem Menü auf die *Suchleiste*, und geben Sie den Namen ein, den Sie dem *nachverfolgten Objekt* zuweisen möchten. Nachdem Sie einen Namen festgelegt haben, klicken Sie auf die Schaltfläche **Set Object** (Objekt festlegen). Dadurch wird das *nachverfolgte Objekt* in Azure Table Storage erstellt, und die **Objektkarte** wird angezeigt.
 
 Diese **Objektkarte** ist eine Benutzeroberflächendarstellung des *nachverfolgten Objekts* und spielt in dieser Tutorialreihe an mehreren Stellen eine wichtige Rolle.
 
@@ -108,7 +108,7 @@ Führen Sie die Anwendung nun erneut aus, und suchen Sie nach dem *nachverfolgte
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 
-In diesem Tutorial haben Sie erfahren, wie Sie mithilfe der Azure-Speicherdienste unstrukturierte Daten persistent speichern können (in diesem Fall **nachverfolgte Objekte** und Binärdateien in Form von Miniaturansichten für die **HoloLens 2** -Demoanwendung in der Cloud).
+In diesem Tutorial haben Sie erfahren, wie Sie mithilfe der Azure-Speicherdienste unstrukturierte Daten persistent speichern können (in diesem Fall **nachverfolgte Objekte** und Binärdateien in Form von Miniaturansichten für die **HoloLens 2**-Demoanwendung in der Cloud).
 
 Im nächsten Tutorial erfahren Sie, wie Sie mithilfe von Azure Custom Vision Bilder erkennen können, die einem *nachverfolgten Objekt* zugeordnet sind.
 

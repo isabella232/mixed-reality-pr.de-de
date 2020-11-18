@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 30ef793511285fe2fe52810912f6c5c06c8550dc
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ded881290de0167b7ffe26fc86b573d9b9ebb0b6
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353458"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631498"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Erstellen einer PC-Anwendung für Holographic Remoting
 
@@ -28,7 +28,7 @@ In diesem Tutorial erfahren Sie, wie Sie eine PC-App für Holographic Remoting e
 
 In diesem Abschnitt konfigurieren Sie das Projekt so, dass Sie Ihre Mixed Reality-Lösung in Echtzeit über eine WLAN-Verbindung von Ihrem PC aus auf das HoloLens 2-Gerät streamen können.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** , klicken Sie auf das Prefab **HolographicRemoting** , und ziehen Sie es in ihre Szene.
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs**, klicken Sie auf das Prefab **HolographicRemoting**, und ziehen Sie es in ihre Szene.
 
 ![Unity mit neu hinzugefügtem, noch ausgewähltem HolographicRemoting-Prefab](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
 
@@ -40,6 +40,11 @@ Ihre Holographic Remoting-App kann jetzt auf Ihrem PC erstellt werden. Führen S
 
 Wählen Sie im Unity-Menü „Edit > Project Settings“ (Bearbeiten > Projekteinstellungen) aus, um das Fenster „Player Settings“ (Playereinstellungen) zu öffnen.
 
+Erweitern Sie im Fenster „Projekteinstellungen“ die **Veröffentlichungseinstellungen**, scrollen Sie nach unten zum Bereich **Funktionen**, und aktivieren Sie zusätzlich zu den vorhandenen Funktionen das unten angezeigte Funktionskontrollkästchen.
+
+* Internet Client Server
+* Privates Netzwerk Client Server
+
 Aktivieren Sie im Abschnitt **XR Settings** (XR-Einstellungen) das Kontrollkästchen **WSA Holographic Remoting Supported** (WSA Holographic Remoting unterstützt), und aktivieren Sie Holographic Remoting.
 
 ![Unity-Fenster XR-Einstellungen mit aktiviertem „WSA Holographic Remoting Supported“](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
@@ -48,7 +53,7 @@ Aktivieren Sie im Abschnitt **XR Settings** (XR-Einstellungen) das Kontrollkäst
 
 Wählen Sie im Unity-Menü „File > Build Settings“ (Datei > Buildeinstellungen) aus, um das Fenster „Build Settings“ (Buildeinstellungen) zu öffnen.
 
-Klicken Sie im Fenster „Build Settings“ (Buildeinstellungen) auf die Schaltfläche * *_Add Open Scenes_* _ (Geöffnete Szenen hinzufügen), um den Szenen die aktuelle Szene hinzuzufügen. Klicken Sie in der Liste „Build“ auf die _*_Schaltfläche „Build“_*_ , um das Fenster „Build Universal Windows Platform“ (Universelle Windows-Plattform erstellen) zu öffnen:
+Klicken Sie im Fenster „Build Settings“ (Buildeinstellungen) auf die Schaltfläche **_Add Open Scenes_* _ (Geöffnete Szenen hinzufügen), um den Szenen die aktuelle Szene hinzuzufügen. Klicken Sie in der Liste „Build“ auf die _*_Schaltfläche „Build“_*_, um das Fenster „Build Universal Windows Platform“ (Universelle Windows-Plattform erstellen) zu öffnen:
 
 ![Unity-Fenster „Build Settings“ mit hinzugefügter Szene](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
@@ -81,14 +86,14 @@ Zum Herstellen einer Verbindung Ihrer PC-Anwendung mit HoloLens 2 führen Sie d
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1. Installieren der Remoting Player-Anwendung auf HoloLens 2-Geräten
 
-_ Besuchen Sie auf Ihrem HoloLens 2-Gerät die Store-App, und suchen Sie nach „ **Remoting Player** “.
-* Wählen Sie die **Remoting Player** -App aus.
-* Tippen Sie auf **Installieren** , um die App herunterzuladen und zu installieren.
+_ Besuchen Sie auf Ihrem HoloLens 2-Gerät die Store-App, und suchen Sie nach „**Remoting Player**“.
+* Wählen Sie die **Remoting Player**-App aus.
+* Tippen Sie auf **Installieren**, um die App herunterzuladen und zu installieren.
 
 ### <a name="2-connect-the-holographic-remoting-pc-app-to-the-remoting-player"></a>2. Verbinden der PC-App für Holographic Remoting mit dem Remoting Player
 
 * Starten Sie den **Remoting Player** auf Ihrem HoloLens-Gerät.
-* Notieren Sie sich die HoloLens- **IP-Adresse**. Sie wird vom **Remoting Player** als Hologramm angezeigt, sobald er gestartet wird.
+* Notieren Sie sich die HoloLens-**IP-Adresse**. Sie wird vom **Remoting Player** als Hologramm angezeigt, sobald er gestartet wird.
 * Öffnen Sie die PC-Anwendung für Holographic Remoting auf Ihrem PC.
 * Nachdem die Anwendung gestartet wurde, geben Sie die **IP-Adresse** ein, und klicken Sie auf die Schaltfläche **Connect** (Verbinden), um eine Verbindung herzustellen.
 

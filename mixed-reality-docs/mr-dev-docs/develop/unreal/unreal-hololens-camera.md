@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, Kamera, FV-Kamera, MRC
-ms.openlocfilehash: e66583d46d64361621303e36a5fbcc209300f5d8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697220"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573234"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>HoloLens-Foto-/Videokamera in Unreal
 
 ## <a name="overview"></a>Übersicht
 
-HoloLens verfügt über eine Foto-/Videokamera (FV), die einerseits für die Mixed Reality-Aufnahme (Mixed Reality Capture, MRC) und andererseits von einer App zum Zugriff auf visuelle Elemente der realen Welt verwendet werden kann.
+HoloLens verfügt über eine Foto-/Videokamera (FV), die einerseits für die Mixed Reality-Aufnahme (Mixed Reality Capture, MRC) und andererseits von einer App zum Zugriff auf visuelle Elemente der realen Welt verwendet werden kann. 
+
+> [!IMPORTANT]
+> Die PV-Kamera wird nicht mit Holographic Remoting unterstützt, aber es ist möglich, eine mit Ihrem PC verbundene Webcam zu verwenden, um die PV-Kamerafunktion von HoloLens zu simulieren.
 
 ## <a name="render-from-the-pv-camera-for-mrc"></a>Rendering von der FV-Kamera für MRC
 
@@ -44,21 +47,21 @@ Unreal verarbeitet dann Anforderungen von MRC, aus der Perspektive der FV-Kamera
 ## <a name="using-the-pv-camera"></a>Verwenden der FV-Kamera
 
 Die Webcam-Textur kann im Spiel zur Laufzeit abgerufen werden, dies muss jedoch im Editor unter **Edit > Project Settings** (Bearbeiten > Projekteinstellungen) aktiviert werden:
-1. Wechseln Sie zu **Platforms > HoloLens > Capabilities** (Plattformen > HoloLens > Funktionen), und aktivieren Sie **Webcam** .
-    * Verwenden Sie die Funktion **StartCameraCapture** , um die Webcam zur Laufzeit zu nutzen, und die Funktion **StopCameraCapture** , um die Aufzeichnung zu beenden.
+1. Wechseln Sie zu **Platforms > HoloLens > Capabilities** (Plattformen > HoloLens > Funktionen), und aktivieren Sie **Webcam**.
+    * Verwenden Sie die Funktion **StartCameraCapture**, um die Webcam zur Laufzeit zu nutzen, und die Funktion **StopCameraCapture**, um die Aufzeichnung zu beenden.
 
 ![Kamera: Starten/Beenden](images/unreal-camera-startstop.PNG)
 
 ## <a name="rendering-an-image"></a>Rendern eines Bilds
 So wird das Kamerabild gerendert:
 1. Erstellen Sie auf der Grundlage eines Materials im Projekt eine dynamische Materialinstanz, die im Screenshot unten den Namen **PVCamMat** trägt.  
-2. Legen Sie die dynamische Materialinstanz auf eine **Material Instance Dynamic Object Reference** -Variable (Materialinstanz mit dynamischem Objektverweis) fest.  
+2. Legen Sie die dynamische Materialinstanz auf eine **Material Instance Dynamic Object Reference**-Variable (Materialinstanz mit dynamischem Objektverweis) fest.  
 3. Legen Sie das Material des Objekts in der Szene, das den Kamerafeed rendern soll, auf diese neue dynamische Materialinstanz fest.
     * Starten Sie einen Timer, der dazu verwendet wird, das Kamerabild an das Material zu binden.
 
 ![Kamera: Rendern](images/unreal-camera-render.PNG)
 
-4. Erstellen Sie eine neue Funktion für diesen Timer (in diesem Fall: **MaterialTimer** ), und rufen Sie **GetARCameraImage** auf, um die Textur von der Webcam abzurufen.  
+4. Erstellen Sie eine neue Funktion für diesen Timer (in diesem Fall: **MaterialTimer**), und rufen Sie **GetARCameraImage** auf, um die Textur von der Webcam abzurufen.  
 5. Ist diese Textur gültig, legen Sie im Shader einen Texturparameter auf dieses Bild fest.  Falls nicht, starten Sie den Materialtimer erneut.
 
 ![Kameratextur von Webcam](images/unreal-camera-texture.PNG)
