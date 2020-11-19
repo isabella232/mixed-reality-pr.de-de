@@ -1,19 +1,19 @@
 ---
-title: Gemischte Realität dev Days Japan
+title: Mixed Reality Dev Days Japan
 description: Ereignis Seite für Mixed Reality dev Days Japan
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
-ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
+ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94897355"
+ms.locfileid: "94933265"
 ---
-# <a name="mixed-reality-dev-days-japan"></a>Gemischte Realität dev Days Japan
+# <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysJapanBanner.png)
 
@@ -55,10 +55,10 @@ Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu
 |2:00PM-2:25 Uhr|*Sitzung 5* Die ersten Schritte mit der hololens 2-und Unreal-Engine (mrtk-Unreal)|Cameron Micka|DE|300|
 |2:30Uhr-2:55 Uhr|*Sitzung 6* Erstellen der "Entwerfen von holograms"-App. Wir werden uns mit Features, Herausforderungen und anderen lustigen Erkenntnissen befassen, die wir beim Erstellen dieser neuen hololens 2-App ermittelt haben.|Daniel Escudero|DE|300|
 |2:55 Uhr-3:10PM|**Umbruch**||||
-|3:10PM-3:35 Uhr|*Sitzung 7* Azure-Objekt Anker|TBD|DE|300|
+|3:10PM-3:35 Uhr|*Sitzung 7* Azure-Objekt Anker|Jesse McCulloch|DE|300|
 |3:40 Uhr-4:05uhr|*Sitzung 8* Azure-Remote Rendering|Atsushi-Suzuki|JA|300|
-|4:10PM-4:35 Uhr|*Sitzung 9* Räumliche Azure-Anker|TBD|DE|300|
-|4:40 Uhr-5:05uhr|*Sitzung 10* TBD|TBD|JA|200|
+|4:10PM-4:35 Uhr|*Sitzung 9* Räumliche Azure-Anker|TBD|JA|300|
+|4:40 Uhr-5:05uhr|*Sitzung 10* Unity + pixyz|Shinobu Takahashi (Unity)|JA|200|
 |5:10PM-5:35pm|*Sitzung 11* Azure kinect DK Deep Dive, Fallstudie|Shinji Chiba|JA|400|
 |5:35pm-5:50uhr|Schließen|Madoka Chiyoda|JA|Nicht verfügbar|
 
