@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
-ms.translationtype: HT
+ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
+ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573284"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94897355"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Gemischte Realität dev Days Japan
 
@@ -27,9 +27,13 @@ Wir freuen uns darauf, dass Sie uns bei Mixed Reality dev Day beitreten! Machen 
 
 **Registrierungs frei**
 
+**Primärsprache-Japanisch**
+
 ## <a name="registration"></a>Registrierung
 
-In Kürze verfügbar
+[Registrierung-jetzt geöffnet](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+
+Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu eröffnen.  Das Ereignis ist kostenlos und wird online in Live Veranstaltungen von Microsoft Teams aufbewahrt.  Wir fordern an, dass sich die Teilnehmer registrieren, damit wir e-Mail-Updates senden können, wenn das Ereignis näher rückt und Sie an den interaktiven Elementen des Ereignisses teilnehmen können.
 
 ## <a name="schedule---subject-to-change"></a>Zeitplan-Änderungen vorbehalten
 
@@ -49,7 +53,7 @@ In Kürze verfügbar
 |1:00PM-1:25 Uhr|*Sitzung 3* Übersicht über die Entwicklung von hololens 2|Madoka Chiyoda|JA|200|
 |1:30Uhr-1:55 Uhr|*Sitzung 4* Hololens 2 & mrtk v 2.5 (mrtk-Unity)|Yoon Park|JA|300|
 |2:00PM-2:25 Uhr|*Sitzung 5* Die ersten Schritte mit der hololens 2-und Unreal-Engine (mrtk-Unreal)|Cameron Micka|DE|300|
-|2:30Uhr-2:55 Uhr|*Sitzung 6* Mr-App-Entwurf (bewährte Vorgehensweise beim Erstellen von UI/UX für die HL2-APP)|Daniel Escudero|DE|300|
+|2:30Uhr-2:55 Uhr|*Sitzung 6* Erstellen der "Entwerfen von holograms"-App. Wir werden uns mit Features, Herausforderungen und anderen lustigen Erkenntnissen befassen, die wir beim Erstellen dieser neuen hololens 2-App ermittelt haben.|Daniel Escudero|DE|300|
 |2:55 Uhr-3:10PM|**Umbruch**||||
 |3:10PM-3:35 Uhr|*Sitzung 7* Azure-Objekt Anker|TBD|DE|300|
 |3:40 Uhr-4:05uhr|*Sitzung 8* Azure-Remote Rendering|Atsushi-Suzuki|JA|300|
