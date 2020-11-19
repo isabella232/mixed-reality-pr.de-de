@@ -48,7 +48,7 @@ Befolgen Sie die gleiche Vorgehensweise, um bei Bedarf die verbleibenden Pakete 
 
 In diesem Abschnitt erfahren Sie, wie Sie das MRTK für die Bereitstellung auf einem mobilen Gerät konfigurieren.
 
-Wählen Sie im Hierarchiefenster das **MixedRealityToolkit** -Objekt aus. Wählen Sie dann im Inspektorfenster die Registerkarte **Camera** (Kamera) aus, klonen Sie das Kameraprofil, und geben Sie ihm einen passenden Namen, beispielsweise **AzureSpatialAnchors_ARCameraProfile** :
+Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus. Wählen Sie dann im Inspektorfenster die Registerkarte **Camera** (Kamera) aus, klonen Sie das Kameraprofil, und geben Sie ihm einen passenden Namen, beispielsweise **AzureSpatialAnchors_ARCameraProfile**:
 
 ![Unity mit neu erstelltem, ausgewähltem ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
@@ -59,11 +59,11 @@ Klappen Sie bei im Inspektorfenster noch ausgewählter Registerkarte **Camera** 
 
 ![Unity-ARCameraProfile mit hinzugefügtem neuem Datenanbieter](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
-Ändern Sie mithilfe der **Type** -Dropdownliste den Typ in **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings** :
+Ändern Sie mithilfe der **Type**-Dropdownliste den Typ in **Microsoft.MixedReality.Toolkit.Experimental.UnityAR** > **UnityARCameraSettings**:
 
 ![Unity-ARCameraProfile mit Pfad zur Auswahl des Datenanbietertyps](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
-Verwenden Sie bei im Hierarchiefenster noch ausgewähltem **MixedRealityToolkit** -Objekt die Schaltfläche **Add Component** (Komponente hinzufügen) im Inspektorfenster, um die folgenden Komponenten hinzuzufügen:
+Verwenden Sie bei im Hierarchiefenster noch ausgewähltem **MixedRealityToolkit**-Objekt die Schaltfläche **Add Component** (Komponente hinzufügen) im Inspektorfenster, um die folgenden Komponenten hinzuzufügen:
 
 * AR Anchor Manager (Script)
 * DisableDiagnosticsSystem (Script)
@@ -86,7 +86,7 @@ Wählen Sie im Unity-Menü **File** > **Build Settings...** (Datei > Buildeinste
 
 Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
 
-Wählen Sie im Unity-Menü **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das **MRTK Project Configurator** -Fenster (MRTK-Projektkonfigurator) zu öffnen, vergewissern Sie sich, dass alle Optionen ausgewählt sind, und klicken Sie dann auf die Schaltfläche **Übernehmen** , um die Einstellungen zu übernehmen:
+Wählen Sie im Unity-Menü **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das **MRTK Project Configurator**-Fenster (MRTK-Projektkonfigurator) zu öffnen, vergewissern Sie sich, dass alle Optionen ausgewählt sind, und klicken Sie dann auf die Schaltfläche **Übernehmen**, um die Einstellungen zu übernehmen:
 
 ![Unity MRTK-Projektkonfigurator-Fenster Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
@@ -105,7 +105,7 @@ Klicken Sie im Fenster „Buildeinstellungen“ auf die Schaltfläche **Add Open
 
 Klicken Sie im Fenster „Buildeinstellungen“ auf die Schaltfläche **Build And Run** (Erstellen und ausführen), um das Fenster „Build Android“ (Für Android erstellen) zu öffnen.
 
-Wählen Sie einen geeigneten Speicherplatz zum Speichern Ihres Builds, beispielsweise _D:\MixedRealityLearning\Builds_ , geben Sie dann dem APK einen passenden Namen, beispielsweise _MRTKTutorials-AzureSpatialAnchors_ , und klicken Sie auf die **Speichern** -Schaltfläche, um den Buildprozess zu starten:
+Wählen Sie einen geeigneten Speicherplatz zum Speichern Ihres Builds, beispielsweise _D:\MixedRealityLearning\Builds_, geben Sie dann dem APK einen passenden Namen, beispielsweise _MRTKTutorials-AzureSpatialAnchors_, und klicken Sie auf die **Speichern**-Schaltfläche, um den Buildprozess zu starten:
 
 ![Unity-Fenster „Build Settings“ mit Aufforderungsfenster zum Speichern Android](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
@@ -127,7 +127,7 @@ Wählen Sie im Unity-Menü **File** > **Build Settings...** (Datei > Buildeinste
 
 Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
 
-Wählen Sie im Unity-Menü **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das **MRTK Project Configurator** -Fenster (MRTK-Projektkonfigurator) zu öffnen, vergewissern Sie sich, dass alle Optionen ausgewählt sind, und klicken Sie dann auf die Schaltfläche **Übernehmen** , um die Einstellungen zu übernehmen:
+Wählen Sie im Unity-Menü **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project** (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das **MRTK Project Configurator**-Fenster (MRTK-Projektkonfigurator) zu öffnen, vergewissern Sie sich, dass alle Optionen ausgewählt sind, und klicken Sie dann auf die Schaltfläche **Übernehmen**, um die Einstellungen zu übernehmen:
 
 ![Unity MRTK-Projektkonfigurator-Fenster iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
@@ -141,9 +141,9 @@ Klicken Sie im Fenster „Buildeinstellungen“ auf die Schaltfläche **Add Open
 
 ![Unity-Fenster „Build Settings“ mit hinzugefügter Szene](images/mr-learning-asa/asa-05-section4-step1-4.png)
 
-Klicken Sie im Fenster „Buildeinstellungen“ auf die Schaltfläche **Erstellen** , um das Fenster „Build iOS“ (Für iOS erstellen) zu öffnen.
+Klicken Sie im Fenster „Buildeinstellungen“ auf die Schaltfläche **Erstellen**, um das Fenster „Build iOS“ (Für iOS erstellen) zu öffnen.
 
-Wählen Sie einen geeigneten Speicherplatz zum Speichern Ihres Xcode-Projekts, beispielsweise _D:\MixedRealityLearning\Builds_ , erstellen Sie einen neuen Ordner, geben Sie ihm einen passenden Namen, beispielsweise _MRTKTutorials-AzureSpatialAnchors_ , und klicken Sie dann auf die Schaltfläche **Select Folder** (Ordner auswählen), um den Buildvorgang zu starten:
+Wählen Sie einen geeigneten Speicherplatz zum Speichern Ihres Xcode-Projekts, beispielsweise _D:\MixedRealityLearning\Builds_, erstellen Sie einen neuen Ordner, geben Sie ihm einen passenden Namen, beispielsweise _MRTKTutorials-AzureSpatialAnchors_, und klicken Sie dann auf die Schaltfläche **Select Folder** (Ordner auswählen), um den Buildvorgang zu starten:
 
 ![Unity-Fenster „Build Settings“ mit Aufforderungsfenster zum Speichern iOS](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
