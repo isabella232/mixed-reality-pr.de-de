@@ -3,12 +3,12 @@ title: Einrichten von Windows Mixed Reality
 description: Erfahren Sie, wie Sie Ihre Windows Mixed Reality-Motion-Controller, Sprache und Audiodaten einrichten und die Raumgrenze für einen sicheren Wiedergabe Raum definieren.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Get Started, Setup, Motion Controller, Controller, Speech, Audio, sitzend, standing, Border, graphics drivers, Microsoft Edge, Chrom
-ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132144"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002995"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Einrichten von Windows Mixed Reality
 
@@ -24,7 +24,11 @@ Zum Ausführen von Windows Mixed Reality benötigen Sie Folgendes:
 
 ## <a name="get-set"></a>Gruppe festlegen
 
-Bereiten Sie den Speicherplatz (einschließlich des zusätzlichen Speicherplatzes) vor. Stellen Sie sicher, dass in dem Bereich, den Sie verwenden werden, keine Hindernisse, Gefahren oder empfindliche Elemente vorhanden sind. Richten Sie nicht am oberen Rand einer Treppe oder unter einem Lüfter mit sehr niedriger Obergrenze ein. Entfernen Sie halte Bare und Hindernisse aus dem Bereich, und stellen Sie sicher, dass Sie und jeder, der Ihr Headset verwendet, die [Sicherheitsrichtlinien](https://support.microsoft.com/help/4039969)liest und versteht.
+Bereiten Sie den Speicherplatz (einschließlich des zusätzlichen Speicherplatzes) vor. Stellen Sie sicher, dass in dem Bereich, den Sie verwenden werden, keine Hindernisse, Gefahren oder empfindliche Elemente vorhanden sind. Richten Sie nicht am oberen Rand einer Treppe oder unter einem Lüfter mit sehr niedriger Obergrenze ein. Entfernen Sie halte Bare und Hindernisse aus dem Bereich, und stellen Sie sicher, dass Sie und jeder, der Ihr Headset verwendet, die Sicherheitsrichtlinien liest und versteht.
+
+Wenn Ihr Speicherplatz bereit ist, fügen Sie das Headset ein, aber nehmen Sie es noch nicht an – zunächst müssen wir ein Setup auf Ihrem PC ausführen. Wir führen eine PC-Prüfung aus, laden Software herunter, verbinden ihre Controller und erstellen eine [Grenze](boundary-questions.md) , um Sie bei der Vermeidung von Hindernissen zu unterstützen.
+
+Dann kommt der Spaß Teil – legen Sie Ihr Headset ein, und geben Sie die gemischte Welt ein. Cortana wartet darauf, dass Sie eine Tour erhalten. Viel Spaß!
 
 ## <a name="go"></a>Los!
 
@@ -40,7 +44,7 @@ Wenn Sie über ein Headset ohne integriertes Radio verfügen, müssen Sie Ihre M
 
 Wenn Sie nur die Verwendung eines Xbox Gamepad oder einer Tastatur und Maus planen, müssen Sie Ihre Controller nicht koppeln.  Wenn Sie beabsichtigen, Controller zu verwenden, sollten Sie Sie wahrscheinlich koppeln.
 
-**Hinweis** : für Windows Mixed Reality Motion Controllers ist Bluetooth 4,0 erforderlich. Wenn Ihr PC nicht über integrierte Bluetooth verfügt, müssen Sie einen USB-Bluetooth-Adapter einbinden, der Bluetooth 4,0 unterstützt, um Ihre Bewegungs Controller zu aktivieren. Wenn Sie das integrierte Radio in Ihrem Headset verwenden, benötigen Sie keinen Bluetooth-Adapter.
+**Hinweis**: für Windows Mixed Reality Motion Controllers ist Bluetooth 4,0 erforderlich. Wenn Ihr PC nicht über integrierte Bluetooth verfügt, müssen Sie einen USB-Bluetooth-Adapter einbinden, der Bluetooth 4,0 unterstützt, um Ihre Bewegungs Controller zu aktivieren. Wenn Sie das integrierte Radio in Ihrem Headset verwenden, benötigen Sie keinen Bluetooth-Adapter.
 
 ![Machen Sie sich mit ihren Motion-Controllern vertraut](images/get_to_know_controllers.png)
 
@@ -100,7 +104,7 @@ Es sei denn, Sie haben eine Samsung HMD-Odyssee gekauft (bei der integrierte AKG
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Anpassen der Anzeigeeinstellungen ihres Headsets
 
-Windows Mixed Reality wählt automatisch Anzeigeeinstellungen aus, die die Qualität und Leistung basierend auf der Hardwarekonfiguration Ihres PCs ausgleichen. Um diese Einstellungen anzupassen, wechseln Sie zu **Einstellungen > gemischte Realität >-Headset-Anzeige** .
+Windows Mixed Reality wählt automatisch Anzeigeeinstellungen aus, die die Qualität und Leistung basierend auf der Hardwarekonfiguration Ihres PCs ausgleichen. Um diese Einstellungen anzupassen, wechseln Sie zu **Einstellungen > gemischte Realität >-Headset-Anzeige**.
 
 ### <a name="visuals"></a>Visuals
 
@@ -126,7 +130,7 @@ Mit dieser Einstellung wird die IPD-Kalibrierung für Headsets mit der IPD-Softw
 
 Diese erweiterte Einstellung überschreibt die Standardeinstellung für die Aktualisierung der Headset-Anzeige.
 
-* Automatisch **(Standard)** : Wählen Sie auf der Grundlage der Hardwarekonfiguration Ihres PCs automatisch die 60Hz-oder 90Hz-Benutzeroberflächen aus.
+* Automatisch **(Standard)**: Wählen Sie auf der Grundlage der Hardwarekonfiguration Ihres PCs automatisch die 60Hz-oder 90Hz-Benutzeroberflächen aus.
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +142,7 @@ Diese erweiterte Einstellung überschreibt die Standardeinstellung für die Aktu
 Diese Einstellung steuert das Verhalten von Windows Mixed Reality als Reaktion auf den Anwesenheits Sensor Ihres Headsets:
 
 * **Automatische Umstellung mithilfe des Headset-Anwesenheits Sensors** (Standard): Windows leitet automatisch Eingaben (Tastatur, Maus...) an Windows Mixed Reality weiter, wenn Sie Ihr Headset verwenden. Sie können dies jederzeit mit Win + Y überschreiben.
-* **Manuelles Umschalten mithilfe der Windows-Taste + Y** : Windows verwendet nicht den Headset-Anwesenheits Sensor, um zu erkennen, wann Sie Ihr Headset verwenden. Sie müssen Win + Y verwenden, um Ihre Eingaben zwischen Ihrem PC-Desktop und Windows Mixed Reality zu wechseln.
+* **Manuelles Umschalten mithilfe der Windows-Taste + Y**: Windows verwendet nicht den Headset-Anwesenheits Sensor, um zu erkennen, wann Sie Ihr Headset verwenden. Sie müssen Win + Y verwenden, um Ihre Eingaben zwischen Ihrem PC-Desktop und Windows Mixed Reality zu wechseln.
 
 Diese Einstellung ist unter Windows 10, Version 1903 oder höher verfügbar.
 
@@ -171,7 +175,7 @@ Um den neuen, auf Windows Windows Edge basierenden Microsoft Edge in Windows Mix
 
 Das einmalige eingeben der gemischten Realität ist so einfach wie das Zurücksetzen des Headsets, während es mit dem PC verbunden ist. Sie können die gemischte Reality-Portal Anwendung auch manuell starten, indem Sie Sie über das Startmenü öffnen. Eingabe und Audiodaten werden automatisch an das Headset weitergeleitet, wenn Sie es einfügen, oder Sie können dies manuell durch Drücken von **Windows + Y** auf der Tastatur auslöst.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

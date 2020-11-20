@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Pre-Sale, Research, Purchase, vor dem Kauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
-ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
+ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92907442"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002974"
 ---
-# <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+# <a name="before-you-buy-frequently-asked-questions"></a>Vor dem Kauf von häufig gestellten Fragen
 
 ## <a name="general-questions"></a>Allgemeine Fragen
 
@@ -29,7 +29,7 @@ ms.locfileid: "92907442"
 
 * Suchen Sie nach Microsoft-Reaktor Ereignissen auf Meetup.com: <https://www.meetup.com/pro/microsoft-reactor>
 
-### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Welche Hersteller verkaufen Windows Mixed Reality-Geräte?
+### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>Die Hersteller von Windows Mixed Reality-Geräten
 
 **Schnelle Antwort:** In HP sind aktuell Headsets und Motion-Controller verfügbar. Siehe <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>.
 
@@ -37,11 +37,11 @@ ms.locfileid: "92907442"
 
 **Schnelle Antwort:** Leider kennen wir derzeit keine Einzelhandels Händler, die eigenständige Motion-Controller verkaufen.
 
-### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Worin besteht der Unterschied zwischen Windows Mixed Reality-PCs und Windows Mixed Reality Ultra PC?
+### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Worin besteht der Unterschied zwischen Windows Mixed Reality-PCs und Windows Mixed Reality Ultra PC
 
 **Schnelle Antwort:** Details zu Windows Mixed Reality-PCs und ultrapcs werden hier aufgezeichnet: <https://aka.ms/mrcompat>
 
-### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Warum wird dies als "Gemischte Realität" bezeichnet, wenn die Geräte so aussehen, als würden Sie eine "virtuelle Realität" bereitstellen?
+### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>Warum wird dies als "Gemischte Realität" bezeichnet, wenn die Geräte so aussehen, als würden Sie eine "virtuelle Realität" bereitstellen.
 
 **Schnelle Antwort:** Gemischte Realität bezieht sich auf das gesamte Spektrum an räumlichem Computing, von Augmented Reality und holograms bis hin zu Virtual Reality. Die Windows Mixed Reality-Plattform unterstützt Geräte in der virtuellen Realität (VR) und in der erweiterten Realität (AR). Wir unterstützen derzeit zwei Gerätetypen mit einer ähnlichen Technologie für dieses Spektrum: hololens (AR) und Windows Mixed Reality (VR)-Headsets mit Motion Controller.
 
@@ -51,13 +51,13 @@ Weitere Informationen zu gemischter Realität finden Sie hier: <https://docs.mic
 
 **Schnelle Antwort:** Windows Mixed Reality-Headsets-Feature: in-out-Nachverfolgung (Überwachungskameras sind im Headset) und Plug-and-Play-Setup mit Windows 10.
 
-**Ausführlichere Informationen** : Windows Mixed Reality bietet verschiedene Features, wie z. a. einfaches Setup (keine Notwendigkeit externer Sensoren, Sie und ihre Controller zu verfolgen), die Auswahl von Headsets zum erfüllen Ihres Komforts und Preis Punkts, von Headsets mit Wettbewerbs Auflösungen und schließlich eine einzigartige Benutzerfreundlichkeit, die eine räumliche Oberfläche bietet, die es Ihnen ermöglicht, Tausende von Apps aus der Microsoft Store zu verwenden.
+**Ausführlichere Informationen**: Windows Mixed Reality bietet verschiedene Features, wie z. a. einfaches Setup (keine Notwendigkeit externer Sensoren, Sie und ihre Controller zu verfolgen), die Auswahl von Headsets zum erfüllen Ihres Komforts und Preis Punkts, von Headsets mit Wettbewerbs Auflösungen und schließlich eine einzigartige Benutzerfreundlichkeit, die eine räumliche Oberfläche bietet, die es Ihnen ermöglicht, Tausende von Apps aus der Microsoft Store zu verwenden.
 
-### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Bedeutet gemischte Realität, dass die in-out-Kameras Passthrough sind? Kann die erweiterte Realität zusätzlich zu Virtual Reality angezeigt werden?
+### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Bedeutet gemischte Realität, dass die in-out-Kameras Passthrough sind? Kann die erweiterte Realität zusätzlich zu Virtual Reality erleben
 
-**Schnelle Antwort:** Nein, die inneren Kameras in Windows Mixed Reality-Headsets werden nur für die Positionsüberwachung verwendet. Windows Mixed Reality-Headsets sind okkludiert, was bedeutet, dass Sie für die virtuelle Realität vorgesehen sind und keinen Einblick in die reale oder Erweiterte Realität bieten. 
+**Schnelle Antwort:** Nein, die inneren Kameras in Windows Mixed Reality-Headsets werden nur für die Positionsüberwachung verwendet. Windows Mixed Reality-Headsets sind okkludiert, was bedeutet, dass Sie für die virtuelle Realität vorgesehen sind und keinen Einblick in die reale oder Erweiterte Realität bieten.
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Was ist die in-out-Nachverfolgung? Wie unterscheidet es sich von der außerhalb der Nachverfolgung oder der Überwachung des Leuchtturms?
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Was ist die in-out-Nachverfolgung? Wie unterscheidet es sich von außerhalb der Nachverfolgung oder der Überwachung des Leuchtturms?
 
 * **Innere Nachverfolgung** Die gemischte Windows-Realität verwendet die in-out-Nachverfolgung. Wenn Sie in das Headset integriert sind, können Sie die Änderungen in der Umgebung nachverfolgen, um die Dashboardposition in Bezug auf die Umgebung zu bestimmen, während Sie fortfahren.
 
@@ -65,7 +65,7 @@ Weitere Informationen zu gemischter Realität finden Sie hier: <https://docs.mic
 
 Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
 
-### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Kann die in-out-Nachverfolgung von Bewegungs Controllern aufgrund von Kamera-FOV meine Spiel Wiedergabe beeinflussen?
+### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Kann die Nachverfolgung von Bewegungs Controllern aufgrund von Kamera-FOV meine Spiel Wiedergabe beeinflussen
 
  Wie bei den Headsets ist für Windows Mixed Reality Motion Controller keine Einrichtung externer Überwachungs Sensoren erforderlich. Stattdessen werden die Controller von Sensoren im Headset selbst nachverfolgt. Wenn der Benutzer die Controller aus dem Feld des endfelds der Ansicht verschiebt, werden in den meisten Fällen die Controller Positionen von Windows weiter abgeleitet und der APP bereitgestellt. Wenn die visuelle Überwachung für den Controller lange genug verloren gegangen ist, werden die Positionen des Controllers auf Positionen mit ungefähren Genauigkeit abgelegt. An diesem Punkt sperrt das System den Controller für den Benutzer, wobei die Position des Benutzers nachverfolgt wird, während er sich bewegt, während er weiterhin die echte Ausrichtung des Controllers mithilfe der internen Ausrichtungs Sensoren verfügbar macht. Viele apps, die Controller verwenden, um auf Benutzeroberflächen Elemente zu verweisen und diese zu aktivieren, können normal funktionieren, ohne dass der Benutzer dies bemerkt. Die beste Möglichkeit, dies zu erreichen, besteht darin, es selbst auszuprobieren.
 
@@ -257,7 +257,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Haben die Mixed Reality-Headsets IPD-Anpassung?
 
-**Schnelle Antwort:** Abhängig vom Headset sind einige gemischte Reality-Headsets in der mechanischen IPD-Anpassung enthalten. Andere Features für die IPD-Funktion von Headsets-Features, die die Bildverzerrung und die Tiefe Genauigkeit basierend auf Ihrer IPD verbessern. Benutzer können Ihre benutzerdefinierte IPD über **Einstellungen festlegen > gemischte Realität > Headset >-Kalibrierung anzeigen** .
+**Schnelle Antwort:** Abhängig vom Headset sind einige gemischte Reality-Headsets in der mechanischen IPD-Anpassung enthalten. Andere Features für die IPD-Funktion von Headsets-Features, die die Bildverzerrung und die Tiefe Genauigkeit basierend auf Ihrer IPD verbessern. Benutzer können Ihre benutzerdefinierte IPD über **Einstellungen festlegen > gemischte Realität > Headset >-Kalibrierung anzeigen**.
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Haben die Mixed Reality-Headsets eine Anpassung an die Augen Hilfe?
 

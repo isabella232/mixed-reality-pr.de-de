@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573204"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002965"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -43,7 +43,7 @@ Wenn die Fehlermeldung "7-14 ein Fehler ist aufgetreten" angezeigt wird, führen
 - Stellen Sie sicher, dass Sie die neuesten Treiber für Ihr Headset und den USB-Controller installiert haben.
 - Stellen Sie sicher, dass Sie einen Microsoft-USB-Treiber verwenden. Der Name des "Extensible Host Controller"-Geräts sollte "Microsoft" lauten.
 - Versuchen Sie, das Kabel an einen anderen USB-3,0-Port auf dem Computer zu binden. (USB-Typ-C-und Typ-A-Ports testen)
-- Verwenden Sie das enthaltene USB-C für einen Adapter, der zum Ausprobieren verschiedener Ports verwendet wird.
+- Verwenden Sie das enthaltene USB-C für einen Adapter, um andere Ports auszuprobieren.
 - Versuchen Sie, das Headset mit einem USB-Hub an Ihren Computer zu übernehmen.
 
 > [!NOTE]
