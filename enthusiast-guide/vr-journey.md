@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr,
-ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573214"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94941866"
 ---
 # <a name="start-your-vr-journey"></a>Starten Sie Ihre VR-Journey
 
@@ -29,6 +29,7 @@ Es ist wichtig, dass Ihr PC die von Ihnen gekauften VR-Hardware verarbeiten kann
 
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
+| [Vorbereitung](before-you-start.md) |  |
 | [Richtlinien für die PC-Hardware](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Alles, was Sie über die Ausführung von Windows Mixed Reality, Windows Mixed Reality Ultra und der Windows Mixed Reality-Portal-App wissen müssen |
 | [Hilfe zur PC-Kompatibilität](get-help-with-pc-compatibility.md) | Grundlegendes zum generierten Bericht von der Windows Mixed Reality-PC-Prüfung |
 | [Häufig gestellte Fragen](before-you-buy-faqs.md) | Erhalten Sie Antworten auf alle Ihre Kauf Fragen zu technischen Spezifikationen, Geräten und Controllern. |
@@ -57,24 +58,27 @@ Es gibt eine Vielzahl von Features und Diensten, die über Windows Mixed Reality
 | [Navigieren Sie in der Windows Mixed Reality-Startseite](your-mixed-reality-home.md) | Erkunden Sie die virtuelle Umgebung des Windows Mixed Reality-Home  |
 | [Verwenden von Controllern](controllers-in-wmr.md) | Einrichten, verstehen und Verwenden von Motion-Controllern |
 | [Verwenden von Spracheingabe](using-speech-in-wmr.md) | Machen Sie sich mit einer Vielzahl von Sprachbefehlen vertraut, die mit 3D-Objekten, der APP-Leiste, dem Startmenü und Cortana interagieren können. |
-| [Spiele, 360-Video-und-Apps](using-games-and-apps-in-windows-mixed-reality.md) | Erste Schritte mit Ihrem ersten immersiven Spiel, 2D-Speicher Slates, Desktop Anwendungen und webvr-Erfahrungen |
-| [Verwenden von SteamVR](using-steamvr-with-windows-mixed-reality.md) | Verbinden Sie Ihr Gerät, und spielen Sie steamvr-Spiele und Informationen zum Windows Insider-Programm |
-| [Verwenden von Microsoft Edge](using-microsoft-edge.md) | Installieren Sie die neueste Version von Microsoft Edge auf Ihrem immersiven Gerät. |
-| [Verwenden von webvr](webvr.md) | Einrichten, um VR in ihrer Browserumgebung kennenzulernen |
 
 > [!NOTE]
 > Wenn Sie Probleme mit den oben genannten Features haben, finden Sie unter Häufig gestellte Fragen zur **[Verwendung von Windows Mixed Reality](using-wmr-faq.md)**.
 
-### <a name="4-troubleshooting-tips--resources"></a>4. Problembehandlung, Tipps & Ressourcen
+## <a name="4-discover-apps-and-content"></a>4. Ermitteln von apps und Inhalten
 
-Wenn Sie Probleme mit der immersiven Hardware haben, beginnen Sie mit den [allgemeinen](troubleshooting-windows-mixed-reality.md) häufig gestellten Fragen, die wir zusammengestellt haben. Wenn Sie nicht finden, was Sie suchen, finden Sie eine vollständige Liste der themenspezifischen FAQ-Dokumente im Abschnitt " **Problem** Behandlung bei FAQs", die alles von der Installations-und Fehlercodes bis hin zu Leistungs-und Headset-anzeigen abdecken.
+Suchen Sie nach immersiven spielen, Desktop Anwendungen und VR-Inhalten, und verwenden Sie den Microsoft Edge-Browser in den folgenden Ressourcen. 
+
+<br>
+
+| [Spiele, 360-Video und apps](using-games-and-apps-in-windows-mixed-reality.md) | Erste Schritte mit Ihrem ersten immersiven Spiel, 2D-Speicher Slates, Desktop Anwendungen und webvr-Erfahrungen | | [Verwenden von steamvr](using-steamvr-with-windows-mixed-reality.md) | Verbinden Sie Ihr Gerät, und spielen Sie steamvr-Spiele, und erfahren Sie mehr über das Windows Insider-Programm [Verwenden von Microsoft Edge](using-microsoft-edge.md) | Installieren Sie die neueste Version von Microsoft Edge auf Ihrem immersiven Gerät | | [Verwenden von webvr](webvr.md) | Einrichten, um VR in ihrer Browserumgebung kennenzulernen |
+
+## <a name="troubleshooting-tips--resources"></a>Problembehandlung, Tipps & Ressourcen
+
+Wenn Sie Probleme mit der immersiven Hardware haben, beginnen Sie mit:
+ 
+* [Allgemeine häufig gestellte Fragen](troubleshooting-windows-mixed-reality.md) 
+
+Wenn Sie nicht finden, was Sie suchen, finden Sie eine vollständige Liste der themenspezifischen FAQ-Dokumente im Abschnitt " **Problem** Behandlung bei FAQs", die alles von der Installations-und Fehlercodes bis hin zu Leistungs-und Headset-anzeigen abdecken. Wenn Sie mehr darüber erfahren möchten, wie bestimmte Features in VR funktionieren, sehen Sie sich die Artikel zur [Funktionsweise von Bewegungs Controllern](controllers-in-wmr.md) und der [in-out-Nachverfolgung](tracking-system.md) an.
 
 Wir sind immer auf die Suche nach neuen Problemen und Fehlern. Wenn Sie also auf eine nicht dokumentierte Weise stoßen, senden Sie uns [hier Feedback](filing-feedback.md).
-
-Wenn Sie mehr darüber erfahren möchten, wie bestimmte Features in VR funktionieren, sehen Sie sich die folgenden Artikel an:
-
-* [Funktionsweise von Motion-Controllern](controllers-in-wmr.md)
-* [Funktionsweise von Inside-Out-Tracking](tracking-system.md)
 
 > [!NOTE]
 > Einen vollständigen Windows Mixed Reality-releaseverlauf finden Sie [hier](mixed-reality-software.md).

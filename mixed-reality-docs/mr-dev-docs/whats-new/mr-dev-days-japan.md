@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94933265"
+ms.locfileid: "94941856"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -51,7 +51,7 @@ Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu
 |12:00PM-12:50uhr|*Mittags Sitzung* Panel: interaktive, kostenlose Erörterung, Q und A, mrtk + Oculus Quest 2|Madoka Chiyoda + Microsoft MVPs|JA|200|
 |12:50uhr-1 Uhr Uhr|**Umbruch**||||
 |1:00PM-1:25 Uhr|*Sitzung 3* Übersicht über die Entwicklung von hololens 2|Madoka Chiyoda|JA|200|
-|1:30Uhr-1:55 Uhr|*Sitzung 4* Hololens 2 & mrtk v 2.5 (mrtk-Unity)|Yoon Park|JA|300|
+|1:30Uhr-1:55 Uhr|*Sitzung 4* Die UX-Bausteine von mrtk (v 2.5.0)|Yoon Park|JA|300|
 |2:00PM-2:25 Uhr|*Sitzung 5* Die ersten Schritte mit der hololens 2-und Unreal-Engine (mrtk-Unreal)|Cameron Micka|DE|300|
 |2:30Uhr-2:55 Uhr|*Sitzung 6* Erstellen der "Entwerfen von holograms"-App. Wir werden uns mit Features, Herausforderungen und anderen lustigen Erkenntnissen befassen, die wir beim Erstellen dieser neuen hololens 2-App ermittelt haben.|Daniel Escudero|DE|300|
 |2:55 Uhr-3:10PM|**Umbruch**||||
