@@ -5,56 +5,56 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Sitzungen, Feedbackelemente
 ms.localizationpriority: high
-ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fe87e539060b57f505838b43e897e8b6d8336aaf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353338"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679389"
 ---
-# <a name="4-displaying-feedback-from-azure-spatial-anchors"></a><span data-ttu-id="051ce-105">4. Anzeigen des Feedbacks von Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="051ce-105">4. Displaying feedback from Azure Spatial Anchors</span></span>
+# <a name="4-displaying-feedback-from-azure-spatial-anchors"></a><span data-ttu-id="48931-105">4. Anzeigen des Feedbacks von Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="48931-105">4. Displaying feedback from Azure Spatial Anchors</span></span>
 
-<span data-ttu-id="051ce-106">In diesem Tutorial erfahren Sie, wie Sie Feedback zur Ankerermittlung, zu Ereignissen und zum Status bei der Verwendung von Azure Spatial Anchors (ASA) für Benutzer bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="051ce-106">In this tutorial, you will learn how to provide users with feedback about anchor discovery, events, and status using Azure Spatial Anchors (ASA).</span></span>
+<span data-ttu-id="48931-106">In diesem Tutorial erfahren Sie, wie Sie Feedback zur Ankerermittlung, zu Ereignissen und zum Status bei der Verwendung von Azure Spatial Anchors (ASA) für Benutzer bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="48931-106">In this tutorial, you will learn how to provide users with feedback about anchor discovery, events, and status using Azure Spatial Anchors (ASA).</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="051ce-107">Ziele</span><span class="sxs-lookup"><span data-stu-id="051ce-107">Objectives</span></span>
+## <a name="objectives"></a><span data-ttu-id="48931-107">Ziele</span><span class="sxs-lookup"><span data-stu-id="48931-107">Objectives</span></span>
 
-* <span data-ttu-id="051ce-108">Erlernen des Einrichtens eines Bereichs der Benutzeroberfläche, in dem grundlegende Informationen über die aktuelle ASA-Sitzung angezeigt werden</span><span class="sxs-lookup"><span data-stu-id="051ce-108">Learn how to set up a UI panel that displays essential information about the current ASA session</span></span>
-* <span data-ttu-id="051ce-109">Kennenlernen und Untersuchen der Feedbackelemente, die Benutzern vom ASA SDK zur Verfügung gestellt werden</span><span class="sxs-lookup"><span data-stu-id="051ce-109">learn about and explore feedback elements that the ASA SDK makes available to users</span></span>
+* <span data-ttu-id="48931-108">Erlernen des Einrichtens eines Bereichs der Benutzeroberfläche, in dem grundlegende Informationen über die aktuelle ASA-Sitzung angezeigt werden</span><span class="sxs-lookup"><span data-stu-id="48931-108">Learn how to set up a UI panel that displays essential information about the current ASA session</span></span>
+* <span data-ttu-id="48931-109">Kennenlernen und Untersuchen der Feedbackelemente, die Benutzern vom ASA SDK zur Verfügung gestellt werden</span><span class="sxs-lookup"><span data-stu-id="48931-109">learn about and explore feedback elements that the ASA SDK makes available to users</span></span>
 
-## <a name="setting-up-asa-feedback-panel"></a><span data-ttu-id="051ce-110">Einrichten des ASA-Feedbackbereichs</span><span class="sxs-lookup"><span data-stu-id="051ce-110">Setting up ASA feedback panel</span></span>
+## <a name="setting-up-asa-feedback-panel"></a><span data-ttu-id="48931-110">Einrichten des ASA-Feedbackbereichs</span><span class="sxs-lookup"><span data-stu-id="48931-110">Setting up ASA feedback panel</span></span>
 
-<span data-ttu-id="051ce-111">Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das Objekt **Instructions** > **TextContent**.</span><span class="sxs-lookup"><span data-stu-id="051ce-111">In the Hierarchy window, right-click on the **Instructions** > **TextContent** object.</span></span> <span data-ttu-id="051ce-112">Wählen Sie **3D Object** > **Text - TextMeshPro** (3D-Objekt > Text – TextMeshPro) aus, um ein Textobjekt von TextMeshPro als untergeordnetes Element des Objekts „Instructions > TextContent“ zu erstellen:</span><span class="sxs-lookup"><span data-stu-id="051ce-112">Select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object:</span></span>
+<span data-ttu-id="48931-111">Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das Objekt **Instructions** > **TextContent**.</span><span class="sxs-lookup"><span data-stu-id="48931-111">In the Hierarchy window, right-click on the **Instructions** > **TextContent** object.</span></span> <span data-ttu-id="48931-112">Wählen Sie **3D Object** > **Text - TextMeshPro** (3D-Objekt > Text – TextMeshPro) aus, um ein Textobjekt von TextMeshPro als untergeordnetes Element des Objekts „Instructions > TextContent“ zu erstellen:</span><span class="sxs-lookup"><span data-stu-id="48931-112">Select **3D Object** > **Text - TextMeshPro** to create a TextMeshPro text object as a child of the Instructions > TextContent object:</span></span>
 
 ![Unity mit neu erstelltem, ausgewähltem TextMeshPro-Objekt](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
-> <span data-ttu-id="051ce-114">Um das Arbeiten mit Ihrer Szene zu erleichtern, legen Sie die <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> (Sichtbarkeit in der Szene) für das ParentAnchor-Objekt auf „Aus“ fest, indem Sie links neben dem Objekt auf das Augensymbol klicken.</span><span class="sxs-lookup"><span data-stu-id="051ce-114">To make it easier to work with your scene, set the  <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> for the ParentAnchor object to off by clicking the eye icon to the left of the object.</span></span> <span data-ttu-id="051ce-115">Dadurch wird das Objekt im Szenenfenster ausgeblendet, ohne seine Sichtbarkeit im Spiel zu ändern.</span><span class="sxs-lookup"><span data-stu-id="051ce-115">This hides the object in the Scene window without changing their in-game visibility.</span></span>
+> <span data-ttu-id="48931-114">Um das Arbeiten mit Ihrer Szene zu erleichtern, legen Sie die <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> (Sichtbarkeit in der Szene) für das ParentAnchor-Objekt auf „Aus“ fest, indem Sie links neben dem Objekt auf das Augensymbol klicken.</span><span class="sxs-lookup"><span data-stu-id="48931-114">To make it easier to work with your scene, set the  <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> for the ParentAnchor object to off by clicking the eye icon to the left of the object.</span></span> <span data-ttu-id="48931-115">Dadurch wird das Objekt im Szenenfenster ausgeblendet, ohne seine Sichtbarkeit im Spiel zu ändern.</span><span class="sxs-lookup"><span data-stu-id="48931-115">This hides the object in the Scene window without changing their in-game visibility.</span></span>
 
-<span data-ttu-id="051ce-116">Benennen Sie das neu erstellte Textobjekt (TMP) **Feedback** , und ändern Sie dann im Inspektorfenster seine Position und Größe so, dass es ordentlich unter dem Anweisungstext platziert ist, beispielsweise:</span><span class="sxs-lookup"><span data-stu-id="051ce-116">Rename the newly created Text (TMP) object **Feedback** , then, in the Inspector window, change its position and size, so it is placed neatly underneath the instruction text, for example:</span></span>
+<span data-ttu-id="48931-116">Benennen Sie das neu erstellte Textobjekt (TMP) **Feedback**, und ändern Sie dann im Inspektorfenster seine Position und Größe so, dass es ordentlich unter dem Anweisungstext platziert ist, beispielsweise:</span><span class="sxs-lookup"><span data-stu-id="48931-116">Rename the newly created Text (TMP) object **Feedback**, then, in the Inspector window, change its position and size, so it is placed neatly underneath the instruction text, for example:</span></span>
 
-* <span data-ttu-id="051ce-117">Ändern Sie die **Pos Y** (Y-Position) der Rect Transform-Komponente in -0,24.</span><span class="sxs-lookup"><span data-stu-id="051ce-117">Change the Rect Transform component's **Pos Y** to -0.24.</span></span>
-* <span data-ttu-id="051ce-118">Ändern Sie die **Width** (Breite) der Rect Transform-Komponente in 0,555.</span><span class="sxs-lookup"><span data-stu-id="051ce-118">Change the Rect Transform component's **Width** to 0.555.</span></span>
-* <span data-ttu-id="051ce-119">Ändern Sie die **Height** (Höhe) der Rect Transform-Komponente in 0,1.</span><span class="sxs-lookup"><span data-stu-id="051ce-119">Change the Rect Transform component's **Height** to 0.1.</span></span>
+* <span data-ttu-id="48931-117">Ändern Sie die **Pos Y** (Y-Position) der Rect Transform-Komponente in -0,24.</span><span class="sxs-lookup"><span data-stu-id="48931-117">Change the Rect Transform component's **Pos Y** to -0.24.</span></span>
+* <span data-ttu-id="48931-118">Ändern Sie die **Width** (Breite) der Rect Transform-Komponente in 0,555.</span><span class="sxs-lookup"><span data-stu-id="48931-118">Change the Rect Transform component's **Width** to 0.555.</span></span>
+* <span data-ttu-id="48931-119">Ändern Sie die **Height** (Höhe) der Rect Transform-Komponente in 0,1.</span><span class="sxs-lookup"><span data-stu-id="48931-119">Change the Rect Transform component's **Height** to 0.1.</span></span>
 
-<span data-ttu-id="051ce-120">Wählen Sie dann die Schriftarteigenschaften so, dass der Text gut in den Textbereich passt, beispielsweise:</span><span class="sxs-lookup"><span data-stu-id="051ce-120">Then choose font properties, so the text fits nicely within the text area, for example:</span></span>
+<span data-ttu-id="48931-120">Wählen Sie dann die Schriftarteigenschaften so, dass der Text gut in den Textbereich passt, beispielsweise:</span><span class="sxs-lookup"><span data-stu-id="48931-120">Then choose font properties, so the text fits nicely within the text area, for example:</span></span>
 
-* <span data-ttu-id="051ce-121">Ändern Sie den **Font Style** (Schriftschnitt) der TextMeshPro – Text-Komponente in Fett.</span><span class="sxs-lookup"><span data-stu-id="051ce-121">Change the TextMeshPro - Text component's **Font Style** to Bold.</span></span>
-* <span data-ttu-id="051ce-122">Ändern Sie die **Font Size** (Schriftgrad) der TextMeshPro – Text-Komponente in 0,17.</span><span class="sxs-lookup"><span data-stu-id="051ce-122">Change the TextMeshPro - Text component's **Font Size** to 0.17.</span></span>
-* <span data-ttu-id="051ce-123">Ändern Sie das **Alignment** (Ausrichtung) der TextMeshPro – Text-Komponente in „Zentriert“ und „Mitte“.</span><span class="sxs-lookup"><span data-stu-id="051ce-123">Change the TextMeshPro - Text component's **Alignment** to Center and Middle.</span></span>
+* <span data-ttu-id="48931-121">Ändern Sie den **Font Style** (Schriftschnitt) der TextMeshPro – Text-Komponente in Fett.</span><span class="sxs-lookup"><span data-stu-id="48931-121">Change the TextMeshPro - Text component's **Font Style** to Bold.</span></span>
+* <span data-ttu-id="48931-122">Ändern Sie die **Font Size** (Schriftgrad) der TextMeshPro – Text-Komponente in 0,17.</span><span class="sxs-lookup"><span data-stu-id="48931-122">Change the TextMeshPro - Text component's **Font Size** to 0.17.</span></span>
+* <span data-ttu-id="48931-123">Ändern Sie das **Alignment** (Ausrichtung) der TextMeshPro – Text-Komponente in „Zentriert“ und „Mitte“.</span><span class="sxs-lookup"><span data-stu-id="48931-123">Change the TextMeshPro - Text component's **Alignment** to Center and Middle.</span></span>
 
 ![Unity mit konfiguriertem Feedback-Objekt](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
-<span data-ttu-id="051ce-125">Wählen Sie im Hierarchiefenster das **Feedback** -Objekt aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Anchor Feedback Script (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:</span><span class="sxs-lookup"><span data-stu-id="051ce-125">In the Hierarchy window, select the **Feedback** object still, then in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:</span></span>
+<span data-ttu-id="48931-125">Wählen Sie im Hierarchiefenster das **Feedback**-Objekt aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Anchor Feedback Script (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:</span><span class="sxs-lookup"><span data-stu-id="48931-125">In the Hierarchy window, select the **Feedback** object still, then in the Inspector window, use the **Add Component** button to add the **Anchor Feedback Script (Script)** component and configure it as follows:</span></span>
 
-* <span data-ttu-id="051ce-126">Weisen Sie das **Feedback** -Objekt selbst dem Feld **Feedbacktext** der **Anchor Feedback Script (Script)** -Komponente zu.</span><span class="sxs-lookup"><span data-stu-id="051ce-126">Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field.</span></span>
+* <span data-ttu-id="48931-126">Weisen Sie das **Feedback**-Objekt selbst dem Feld **Feedbacktext** der **Anchor Feedback Script (Script)** -Komponente zu.</span><span class="sxs-lookup"><span data-stu-id="48931-126">Assign the **Feedback** object itself to the **Anchor Feedback Script (Script)** component's **Feedback Text** field.</span></span>
 
 ![Unity mit konfigurierter Anchor Feedback Script-Komponente](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
-## <a name="congratulations"></a><span data-ttu-id="051ce-128">Herzlichen Glückwunsch!</span><span class="sxs-lookup"><span data-stu-id="051ce-128">Congratulations</span></span>
+## <a name="congratulations"></a><span data-ttu-id="48931-128">Herzlichen Glückwunsch!</span><span class="sxs-lookup"><span data-stu-id="48931-128">Congratulations</span></span>
 
-<span data-ttu-id="051ce-129">In diesem Tutorial haben Sie gelernt, wie Sie einen Benutzeroberflächenbereich erstellen.</span><span class="sxs-lookup"><span data-stu-id="051ce-129">In this tutorial, you learned how to create a UI panel.</span></span> <span data-ttu-id="051ce-130">Er zeigt den aktuellen Status der Azure Spatial Anchor-Erfahrung an, um Benutzern Feedback in Echtzeit zu geben.</span><span class="sxs-lookup"><span data-stu-id="051ce-130">It displays the current status of the Azure Spatial Anchors experience for providing users with real-time feedback.</span></span>
+<span data-ttu-id="48931-129">In diesem Tutorial haben Sie gelernt, wie Sie einen Benutzeroberflächenbereich erstellen.</span><span class="sxs-lookup"><span data-stu-id="48931-129">In this tutorial, you learned how to create a UI panel.</span></span> <span data-ttu-id="48931-130">Er zeigt den aktuellen Status der Azure Spatial Anchor-Erfahrung an, um Benutzern Feedback in Echtzeit zu geben.</span><span class="sxs-lookup"><span data-stu-id="48931-130">It displays the current status of the Azure Spatial Anchors experience for providing users with real-time feedback.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="051ce-131">Nächstes Tutorial: 5. Azure Spatial Anchors für Android und iOS</span><span class="sxs-lookup"><span data-stu-id="051ce-131">Next Tutorial: 5. Azure Spatial Anchors for Android and iOS</span></span>](mr-learning-asa-05.md)
+> [<span data-ttu-id="48931-131">Nächstes Tutorial: 5. Azure Spatial Anchors für Android und iOS</span><span class="sxs-lookup"><span data-stu-id="48931-131">Next Tutorial: 5. Azure Spatial Anchors for Android and iOS</span></span>](mr-learning-asa-05.md)
