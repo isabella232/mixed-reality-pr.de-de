@@ -6,13 +6,13 @@ ms.author: erpau
 ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Mixed Reality, Entwurf, Komfort, HoloLens 2, HoloLens (1. Gen.)
-ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Mixed Reality, Design, Bequemlichkeit, HoloLens 2, HoloLens (1. Generation), Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Fortbewegung
+ms.openlocfilehash: f4edc048086e933a451290a8ca9f19f588797963
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340648"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702656"
 ---
 # <a name="comfort"></a>Komfort
 
@@ -42,7 +42,7 @@ HoloLens-Displays sind auf eine optische Entfernung von 2.0 m vom Benutzer festg
 
 Für maximalen Komfort **liegt der optimale Bereich für die Platzierung von Hologrammen zwischen 1,25 m und 5 m**. Unter allen Umständen sollten Designer versuchen, Inhaltsszenen so zu strukturieren, dass die Benutzer ermutigt werden, 1 m oder weiter entfernt von den Inhalten zu interagieren (z. B. durch Anpassen von [Inhaltsgröße und Standard-Platzierungsparametern](gaze-and-commit.md)). 
 
-Zwar kann es gelegentlich erforderlich sein, Inhalte näher als 1 m entfernt anzuzeigen, wir raten aber davon ab, Hologramme jemals näher als 40 cm entfernt darzustellen. Wir empfehlen vielmehr, **Inhalte bei 40 cm auszublenden und eine Beschneidungsebene für das Rendern bei 30 cm zu platzieren** , um jegliche näher gelegenen Objekte zu vermeiden.
+Zwar kann es gelegentlich erforderlich sein, Inhalte näher als 1 m entfernt anzuzeigen, wir raten aber davon ab, Hologramme jemals näher als 40 cm entfernt darzustellen. Wir empfehlen vielmehr, **Inhalte bei 40 cm auszublenden und eine Beschneidungsebene für das Rendern bei 30 cm zu platzieren**, um jegliche näher gelegenen Objekte zu vermeiden.
 
 Objekte, die sich in der Tiefe bewegen, erzeugen aufgrund des Konvergenz-Akkomodations-Konflikts mit größerer Wahrscheinlichkeit Unbehagen als statische Objekte. Analog dazu kann die Anforderung, schnell zwischen einem nahen und einem fernen Fokus zu wechseln (beispielsweise wegen eines Popup-Hologramms, das direkte Interaktion erfordert) beim Benutzer zu visuellem Unbehagen und Ermüdung führen. Daher sollte **besondere Sorgfalt darauf verwendet werden, die Häufigkeit dieser zwei Punkte für Benutzer zu minimieren: das Betrachten von Inhalten mit wechselnder Raumtiefe und schnelles Umschalten des Fokus zwischen nahen und fernen Hologrammen**. 
 
@@ -162,13 +162,6 @@ Als optimaler Blickwinkel (in Ruhe) wird der Bereich von 10–20 Grad unterhalb 
 ## <a name="arm-positions"></a>Armpositionen
 
 Die Muskeln können ermüden, wenn von Benutzern erwartet wird, eine Hand während der gesamten Dauer einer Erfahrung angehoben zu halten. Ebenfalls ermüdend kann es sein, vom Benutzer wiederholt Tippbewegungen in die Luft über längere Zeit zu verlangen. Es empfiehlt sich daher, konstante, wiederholte Eingabegesten in Benutzererfahrungen zu vermeiden. Diese Ziele können erreicht werden, indem kurze Pausen integriert werden oder eine Mischung aus Gesten- und Spracheingaben für die Interaktion mit der App angeboten wird.
-
-## <a name="next-discovery-checkpoint"></a>Nächster Erkundungsprüfpunkt
-
-Wenn Sie der [Erkundungs-Journey](../discover/get-started-with-mr.md) folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der Grundlagen der Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
-
-> [!div class="nextstepaction"]
-> [Wie der Benutzer die Welt sieht (Holografischer Rahmen)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>Siehe auch
 * [Anvisieren](gaze-and-commit.md)

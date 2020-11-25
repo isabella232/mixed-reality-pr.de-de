@@ -7,13 +7,13 @@ ms.author: grbury
 ms.date: 07/31/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: Mixed Reality, entwickeln, Entwicklung, HoloLens, Unity, Unreal, DirectX
-ms.openlocfilehash: 75916cbd7a59556f1cda2e7e94c3393c14938086
-ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+keywords: Mixed Reality, entwickeln, Entwicklung, HoloLens, Unity, Unreal, DirectX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, Virtual Reality-Entwicklung, Augmented Reality-Entwicklung
+ms.openlocfilehash: e269523b7ddd369d65e9a33dbeb32b13a17428a4
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93036256"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677859"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Einführung in die Mixed Reality-Entwicklung
 
@@ -23,9 +23,9 @@ Mixed Reality ist ein großer Ort, ein Nexus, bei dem reale und virtuelle Welten
 
 ## <a name="development-options"></a>Entwicklungsoptionen
 
-**Unity** : Unity ist eine der führenden Echtzeit-Entwicklungsplattformen am Markt. Der Code der zugrunde liegenden Runtime ist in C++ geschrieben, und die gesamte Skripterstellung in der Entwicklung erfolgt in C#. Unabhängig davon, ob Sie Spiele, Filme und Animationsfilme erstellen oder sogar Architektur- oder technische Konzepte in einer virtuellen Welt rendern möchten, bietet Unity die Infrastruktur, um Sie dabei zu unterstützen.
+**Unity**: Unity ist eine der führenden Echtzeit-Entwicklungsplattformen am Markt. Der Code der zugrunde liegenden Runtime ist in C++ geschrieben, und die gesamte Skripterstellung in der Entwicklung erfolgt in C#. Unabhängig davon, ob Sie Spiele, Filme und Animationsfilme erstellen oder sogar Architektur- oder technische Konzepte in einer virtuellen Welt rendern möchten, bietet Unity die Infrastruktur, um Sie dabei zu unterstützen.
 
-**Unreal** : Unreal Engine 4 ist eine leistungsstarke, Open Source-Entwicklungsengine mit voller Unterstützung für Mixed Reality in C++ und Blaupausen. Ab Version 4.25 bietet Unreal Engine umfassende und produktionsreife HoloLens-Unterstützung. Dank Funktionen wie dem flexiblen Visual Scripting-System für Blaupausen können Designer praktisch die gesamte Palette an Konzepten und Tools verwenden, die normalerweise nur Programmierern zur Verfügung stehen. Designer nutzen branchenübergreifend das hohe Maß an Freiheit und Kontrolle, um innovative Inhalte, interaktive Erlebnisse und immersive virtuelle Welten zu schaffen.
+**Unreal**: Unreal Engine 4 ist eine leistungsstarke, Open Source-Entwicklungsengine mit voller Unterstützung für Mixed Reality in C++ und Blaupausen. Ab Version 4.25 bietet Unreal Engine umfassende und produktionsreife HoloLens-Unterstützung. Dank Funktionen wie dem flexiblen Visual Scripting-System für Blaupausen können Designer praktisch die gesamte Palette an Konzepten und Tools verwenden, die normalerweise nur Programmierern zur Verfügung stehen. Designer nutzen branchenübergreifend das hohe Maß an Freiheit und Kontrolle, um innovative Inhalte, interaktive Erlebnisse und immersive virtuelle Welten zu schaffen.
 
 **Native (OpenXR)** : OpenXR ist ein offener, lizenzgebührenfreier API-Standard von Khronos, mit dem Engines nativen Zugriff auf eine große Bandbreite von Geräten von Herstellern aus dem gesamten Mixed Reality-Spektrum erhalten. Sie können mit OpenXR auf einem immersiven HoloLens 2- oder Windows Mixed Reality-Headset auf dem Desktop entwickeln. Wenn Sie keinen Zugriff auf ein Headset haben, sind Emulatoren für HoloLens 2- und Windows Mixed Reality-Headsets verfügbar.
 

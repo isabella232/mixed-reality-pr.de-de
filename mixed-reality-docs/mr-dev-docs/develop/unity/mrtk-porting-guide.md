@@ -6,13 +6,13 @@ ms.author: grbury
 ms.date: 07/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, Testen, MRTK, MRTK Version 2, HoloLens 2
-ms.openlocfilehash: 88bee12196099837f46164552c690a6b326f9ba7
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+keywords: Windows Mixed Reality, Test, MRTK, MRTK-Version 2, HoloLens 2, Unity, Portieren, HoloLens (1. Generation), Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Migration, Bewährte Methoden, ARM
+ms.openlocfilehash: 84edf3b029140884443c23d685fe03a12161d1b8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386226"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677389"
 ---
 # <a name="get-your-existing-app-ready-for-hololens-2"></a>Vorbereiten einer vorhandenen App für HoloLens 2
 
@@ -29,7 +29,7 @@ Die folgenden Abschnitte enthalten Detailinformationen zu den einzelnen Phasen:
 
 Voraussetzungen:
 
-Es wird vor dem Beginn des Portierungsvorgangs **dringend empfohlen** , dass Sie mithilfe der Quellcodeverwaltung eine Momentaufnahme des ursprünglichen Zustands Ihrer Anwendungen speichern. Während des Vorgangs ist es außerdem empfehlenswert, zu verschiedenen Zeitpunkten einen Prüfpunktstatus zu *speichern*. Es kann auch hilfreich sein, eine weitere Unity-Instanz der ursprünglichen Anwendung zu erstellen, um die beiden während des Portierungsvorgangs parallel vergleichen zu können. 
+Es wird vor dem Beginn des Portierungsvorgangs **dringend empfohlen**, dass Sie mithilfe der Quellcodeverwaltung eine Momentaufnahme des ursprünglichen Zustands Ihrer Anwendungen speichern. Während des Vorgangs ist es außerdem empfehlenswert, zu verschiedenen Zeitpunkten einen Prüfpunktstatus zu *speichern*. Es kann auch hilfreich sein, eine weitere Unity-Instanz der ursprünglichen Anwendung zu erstellen, um die beiden während des Portierungsvorgangs parallel vergleichen zu können. 
 
 > [!NOTE]
 > Stellen Sie vor dem Portieren sicher, dass die aktuellen Tools für die Windows Mixed Reality-Entwicklung installiert sind. Bei den meisten bestehenden HoloLens-Entwicklern bedeutet dies ein Update auf die neueste Version von Visual Studio 2019 und die Installation des entsprechenden Windows-SDKs. Im weiteren Verlauf werden die verschiedenen Unity-Versionen und das Mixed Reality-Toolkit (MRTK) Version 2 näher erläutert.

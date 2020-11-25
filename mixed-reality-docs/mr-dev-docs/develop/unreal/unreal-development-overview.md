@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: b810ad7500f8bb2a70ef18ad29fb32df8801a2de
+ms.sourcegitcommit: 2759aba06e643d70004023b105ed26b33ce3dbfa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340688"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94810446"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
@@ -29,7 +29,7 @@ Die ersten Schritte mit <a href="https://docs.microsoft.com/windows/mixed-realit
 Wenn Sie noch nicht mit der Unreal-Entwicklung vertraut sind, sollten Sie sich zunächst etwas einarbeiten. Sehen Sie sich die <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">Tutorialreihe</a> zu Unreal an, um einen Einstieg zu finden, und nutzen Sie Ressourcen und Support im Unreal-<a href="https://www.unrealengine.com/marketplace/store" target="_blank">Marketplace</a> und den Mixed Reality-<a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">Foren</a>. Dabei handelt es sich um Links zur Community von Entwicklern und Problemlösern auf dem Gebiet der Mixed Reality.
 
 > [!IMPORTANT]
-> Werfen Sie einen Blick auf unsere **[Portierungsleitfäden](../porting-apps/porting-overview.md)** , wenn Sie ein vorhandenes Unreal-Projekt auf HoloLens 2 oder immersiven Headsets wie dem Reverb G2 bereitstellen möchten.
+> Werfen Sie einen Blick auf unsere **[Portierungsleitfäden](unreal-reverb-g2-controllers.md)** , wenn Sie ein vorhandenes Unreal-Projekt auf immersiven Headsets wie dem Reverb G2 bereitstellen möchten.
 
 ## <a name="development-checkpoints"></a>Prüfpunkte für die Entwicklung
 

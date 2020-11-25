@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, räumliche Abbildung
-ms.openlocfilehash: 8e49878cf37945c8e317b1098f48014b57d18551
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, räumliche Abbildung, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698501"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678809"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Räumliche Abbildung in Unreal
 
@@ -28,7 +28,7 @@ So aktivieren Sie die räumliche Abbildung in HoloLens:
     + Wählen Sie **HoloLens** aus, und aktivieren Sie **Spatial Perception** (Räumliche Wahrnehmung).
 
 So abonnieren Sie räumliche Abbildung und debuggen das **MRMesh** in einem HoloLens-Spiel:
-1. Öffnen Sie die **ARSessionConfig** , und klappen Sie den Abschnitt **ARSettings > World Mapping** (Weltdarstellung) auf. 
+1. Öffnen Sie die **ARSessionConfig**, und klappen Sie den Abschnitt **ARSettings > World Mapping** (Weltdarstellung) auf. 
 
 2. Aktivieren Sie **Generate Mesh Data from Tracked Geometry** (Daten des Gittermodells auf der Grundlage der nachverfolgten Geometrie generieren), wodurch das HoloLens-Plug-In angewiesen wird, mit dem asynchronen Abrufen von räumlichen Abbildungsdaten und ihrer Oberflächenzuordnung in Unreal mithilfe von **MRMesh** zu beginnen. 
 3. Aktivieren Sie **Render Mesh Data in Wireframe** (Gittermodelldaten im Drahtmodell rendern), um einen weißen Drahtmodellumriss jedes Dreiecks im **MRMesh** darzustellen. 
@@ -48,12 +48,12 @@ Sie können die folgenden Parameter ändern, um das Laufzeitverhalten der räuml
     + Im Falle einer großen Anwendungslaufzeitumgebung muss dieser Wert ggf. hoch sein, um dem realen Raum gerecht zu werden.  Dagegen kann dieser Wert kleiner sein, wenn die Anwendung lediglich Hologramme auf Oberflächen in der unmittelbareren Umgebung des Benutzers platzieren muss. Wenn sich der Benutzer in der Umgebung bewegt, bewegt sich das Volumen der räumlichen Abbildung mit ihm mit. 
 
 ## <a name="working-with-mrmesh"></a>Arbeiten mit MRMesh
-So erhalten Sie zur Laufzeit Zugriff auf das **MRMesh** :
-1. Fügen Sie einem Blaupausenakteur eine **ARTrackableNotify** -Komponente hinzu. 
+So erhalten Sie zur Laufzeit Zugriff auf das **MRMesh**:
+1. Fügen Sie einem Blaupausenakteur eine **ARTrackableNotify**-Komponente hinzu. 
 
 ![Raumanker: In AR nachverfolgbare Benachrichtigung](images/unreal-spatialmapping-artrackablenotify.PNG)
 
-2. Wählen Sie die **ARTrackableNotify** -Komponente aus, und klappen Sie im Bereich **Details** den Abschnitt **Events** (Ereignisse) auf. 
+2. Wählen Sie die **ARTrackableNotify**-Komponente aus, und klappen Sie im Bereich **Details** den Abschnitt **Events** (Ereignisse) auf. 
     - Klicken Sie auf die Schaltfläche **+** für die Ereignisse, die Sie überwachen möchten. 
 
 ![Raumanker: Ereignisse](images/unreal-spatialmapping-events.PNG)
@@ -68,7 +68,7 @@ In C++ können Sie den `OnTrackableAdded`-Delegat abonnieren, um die `ARTrackedG
 
 > [!IMPORTANT]
 > Die build.cs-Datei des Projekts **MUSS** **AugmentedReality** in der Liste **PublicDependencyModuleNames** aufweisen.
-> - Dies schließt **ARBlueprintLibrary.h** und **MRMeshComponent.h** ein, mit deren Hilfe Sie die **MRMesh** -Komponente von **UARTrackedGeometry** untersuchen können. 
+> - Dies schließt **ARBlueprintLibrary.h** und **MRMeshComponent.h** ein, mit deren Hilfe Sie die **MRMesh**-Komponente von **UARTrackedGeometry** untersuchen können. 
 
 ![Raumanker: C++-Beispielcode](images/unreal-spatialmapping-examplecode.PNG)
 

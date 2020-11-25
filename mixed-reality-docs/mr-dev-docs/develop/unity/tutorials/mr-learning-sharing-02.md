@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353478"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679259"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Einrichten von Photon Unity Networking
 
@@ -50,12 +50,12 @@ Wählen Sie im Unity-Menü **Edit** > **Project Settings...** (Bearbeiten > Proj
 
 ![Unity: Player-Einstellungen](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-Scrollen Sie in **Publishing Settings** (Veröffentlichungseinstellungen) nach unten zum Abschnitt **Capabilities** (Funktionen), und vergewissern Sie sich, dass die Funktionen **InternetClient** , **Microphone** , **SpatialPerception** und **GazeInput** , die Sie im Schritt [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#configuring-the-unity-project) weiter oben aktiviert haben, aktiviert sind.
+Scrollen Sie in **Publishing Settings** (Veröffentlichungseinstellungen) nach unten zum Abschnitt **Capabilities** (Funktionen), und vergewissern Sie sich, dass die Funktionen **InternetClient**, **Microphone**, **SpatialPerception** und **GazeInput**, die Sie im Schritt [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#configuring-the-unity-project) weiter oben aktiviert haben, aktiviert sind.
 
 Aktivieren Sie dann die folgenden zusätzlichen Funktionen:
 
-* **InternetClientServer** -Funktion
-* **PrivateNetworkClientServer** -Funktion
+* **InternetClientServer**-Funktion
+* **PrivateNetworkClientServer**-Funktion
 
 ![Einstellungen für Unity-Funktionen](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
@@ -70,7 +70,7 @@ Wählen Sie im Unity-Menü **Fenster** > **Package Manager** (Paket-Manager) aus
 
 ## <a name="importing-the-tutorial-assets"></a>Importieren der Tutorialressourcen
 
-Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind** :
+Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (Version 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -89,9 +89,9 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 
 ## <a name="importing-the-pun-assets"></a>Importieren der PUN-Ressourcen
 
-Wählen Sie im Unity-Menü **Window** > **Asset Store** (Fenster > Asset Store) aus, um das Asset Store-Fenster zu öffnen, suchen Sie unter „Exit Games“ **PUN 2 - FREE** aus, und klicken Sie dann auf die Schaltfläche **Download** , um das Ressourcenpaket in Ihr Unity-Konto herunterzuladen.
+Wählen Sie im Unity-Menü **Window** > **Asset Store** (Fenster > Asset Store) aus, um das Asset Store-Fenster zu öffnen, suchen Sie unter „Exit Games“ **PUN 2 - FREE** aus, und klicken Sie dann auf die Schaltfläche **Download**, um das Ressourcenpaket in Ihr Unity-Konto herunterzuladen.
 
-Wenn der Download abgeschlossen ist, klicken Sie auf die **Import** -Schaltfläche, um das Fenster Import Unity Package (Unity-Paket importieren) zu öffnen:
+Wenn der Download abgeschlossen ist, klicken Sie auf die **Import**-Schaltfläche, um das Fenster Import Unity Package (Unity-Paket importieren) zu öffnen:
 
 ![Unity Asset Store mit „PUN 2 – Free“](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
 
@@ -107,7 +107,7 @@ Nachdem Unity den Importvorgang abgeschlossen hat, wird das Fenster des PUN-Assi
 
 In diesem Abschnitt erstellen Sie ein Photon-Konto, falls dies noch nicht geschehen ist, und Sie erstellen eine neue PUN-App.
 
-Navigieren Sie zum Photon- <a href="https://dashboard.photonengine.com/account/signin" target="_blank">Dashboard</a>, und melden Sie sich an, wenn Sie bereits über ein Konto verfügen, das Sie verwenden möchten, oder klicken Sie andernfalls auf den Link **Create One** (Konto erstellen), und befolgen Sie die Anweisungen zum Registrieren eines neuen Kontos:
+Navigieren Sie zum Photon-<a href="https://dashboard.photonengine.com/account/signin" target="_blank">Dashboard</a>, und melden Sie sich an, wenn Sie bereits über ein Konto verfügen, das Sie verwenden möchten, oder klicken Sie andernfalls auf den Link **Create One** (Konto erstellen), und befolgen Sie die Anweisungen zum Registrieren eines neuen Kontos:
 
 ![Photon-Anmeldeseite](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
@@ -134,7 +134,7 @@ Nachdem Photon den Erstellungsvorgang abgeschlossen hat, wird die neue PUN-App a
 
 In diesem Abschnitt verbinden Sie Ihr Unity-Projekt mit der PUN-App, die Sie im vorherigen Abschnitt erstellt haben.
 
-Klicken Sie auf dem Photon-Dashboard auf das Feld **App-ID** , um die App-ID anzuzeigen, und kopieren Sie sie dann in die Zwischenablage:
+Klicken Sie auf dem Photon-Dashboard auf das Feld **App-ID**, um die App-ID anzuzeigen, und kopieren Sie sie dann in die Zwischenablage:
 
 ![Photon-Seite „Anwendung“ mit ausgewählter App-ID](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
 

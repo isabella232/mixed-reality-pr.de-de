@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver, Rasterobjektsammlung
 ms.localizationpriority: high
-ms.openlocfilehash: 849de7c50adc8ff1da5262ad46fae50cce48e953
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353218"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679309"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionieren von Objekten in der Szene
 
@@ -47,15 +47,15 @@ Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf eine leere Stelle
 > [!TIP]
 > Um Ihr Szenen- und Spielfenster nebeneinander anzuzeigen, wie in der Abbildung oben dargestellt, ziehen Sie das Spielfenster rechts neben das Szenenfenster. Weitere Informationen zum Anpassen Ihres Arbeitsbereichs finden Sie in der Unity-Dokumentation zum <a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">Anpassen Ihres Arbeitsbereichs</a>.
 
-Klicken Sie mit der rechten Maustaste auf das neu erstellte Objekt, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in **RoverExplorer** :
+Klicken Sie mit der rechten Maustaste auf das neu erstellte Objekt, wählen Sie **Umbenennen** aus, und ändern Sie den Namen in **RoverExplorer**:
 
 ![Unity-Popupkontextemenü „Rename“](images/mr-learning-base/base-04-section2-step1-2.png)
 
 Konfigurieren Sie bei immer noch ausgewähltem RoverExplorer-Objekt im Inspektorfenster die Komponente **Transform** (Transformieren) wie folgt:
 
-* **Position** : X = 0, Y = -0,6, Z = 2
-* **Drehung** : X = 0, Y = 0, Z = 0
-* **Skalierung** : X = 1, Y = 1, Z = 1
+* **Position**: X = 0, Y = -0,6, Z = 2
+* **Drehung**: X = 0, Y = 0, Z = 0
+* **Skalierung**: X = 1, Y = 1, Z = 1
 
 ![Unity mit ausgewähltem und positioniertem RoverExplorer-Objekt](images/mr-learning-base/base-04-section2-step1-3.png)
 
@@ -64,54 +64,54 @@ Konfigurieren Sie bei immer noch ausgewähltem RoverExplorer-Objekt im Inspektor
 
 ## <a name="adding-the-tutorial-prefabs"></a>Hinzufügen der Prefabs für das Tutorial
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GEttingStarted** > **Prefabs** :
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GEttingStarted** > **Prefabs**:
 
 ![Unity-Projektfenster mit ausgewähltem Ordner „Prefabs“](images/mr-learning-base/base-04-section3-step1-1.png)
 
 > [!TIP]
 > Ein <a href="https://docs.unity3d.com/Manual/Prefabs.html" target="_blank">Prefab</a> ist ein vorkonfiguriertes GameObject, das als Unity-Ressource gespeichert ist und durchgängig im Projekt verwendet werden kann.
 
-Klicken Sie im Projektfenster auf das **Table** -Prefab (Tabelle), und ziehen Sie es aus dem Projektfenster auf das **RoverExplorer** -Objekt, um es zu einem untergeordneten Objekt des RoverExplorer-Objekts zu machen. Konfigurieren Sie dann im Inspektorfenster die Komponente **Transform** (Transformieren) wie folgt:
+Klicken Sie im Projektfenster auf das **Table**-Prefab (Tabelle), und ziehen Sie es aus dem Projektfenster auf das **RoverExplorer**-Objekt, um es zu einem untergeordneten Objekt des RoverExplorer-Objekts zu machen. Konfigurieren Sie dann im Inspektorfenster die Komponente **Transform** (Transformieren) wie folgt:
 
-* **Position** : X = 0, Y = -0,005, Z = 0
-* **Drehung** : X = 0, Y = 0, Z = 0
-* **Skalierung** : X = 1,2, Y = 0,01, Z = 1.2
+* **Position**: X = 0, Y = -0,005, Z = 0
+* **Drehung**: X = 0, Y = 0, Z = 0
+* **Skalierung**: X = 1,2, Y = 0,01, Z = 1.2
 
 ![Unity mit neu hinzugefügtem, ausgewähltem und positioniertem Table-Prefab](images/mr-learning-base/base-04-section3-step1-2.png)
 
 > [!TIP]
 > Um Ihre Szene so anzuzeigen, wie Sie in der Abbildung oben dargestellt ist, verwenden Sie den <a href="https://docs.unity3d.com/Manual/SceneViewNavigation.html" target="_blank">Scene Gizmo</a>, der sich in der oberen rechten Ecke des Szenenfensters befindet, um den Betrachtungswinkel so anzupassen, dass er entlang der vorwärtsgerichteten Z-Achse verläuft, doppelklicken Sie auf das MixedRealityPlayspace-Objekt, um den Fokus auf die Kamera zu legen, und zoomen Sie nach Bedarf herein.
 
-Klicken Sie im Projektfenster auf das **RoverAssembly** -Prefab, und ziehen Sie es auf das **RoverExplorer** -Objekt, um es zu einem untergeordneten Objekt des RoverExplorer-Objekts zu machen. Konfigurieren Sie dann im Inspektorfenster die Komponente **Transform** (Transformieren) wie folgt:
+Klicken Sie im Projektfenster auf das **RoverAssembly**-Prefab, und ziehen Sie es auf das **RoverExplorer**-Objekt, um es zu einem untergeordneten Objekt des RoverExplorer-Objekts zu machen. Konfigurieren Sie dann im Inspektorfenster die Komponente **Transform** (Transformieren) wie folgt:
 
-* **Position** : X = -0,1, Y = 0, Z = 0
-* **Drehung** : X = 0, Y = -135, Z = 0
-* **Skalierung** : X = 1, Y = 1, Z = 1
+* **Position**: X = -0,1, Y = 0, Z = 0
+* **Drehung**: X = 0, Y = -135, Z = 0
+* **Skalierung**: X = 1, Y = 1, Z = 1
 
 ![Unity mit neu hinzugefügtem, ausgewähltem und positioniertem RoverAssembly-Prefab](images/mr-learning-base/base-04-section3-step1-3.png)
 
 ## <a name="organizing-objects-in-a-collection"></a>Organisieren von Objekten in einer Sammlung
 
-Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das **RoverExplorer** -Objekt, und wählen Sie **Create Empty** (Leer erstellen) aus, um ein leeres Objekt als untergeordnetes Objekt des RoverExplorers hinzuzufügen, benennen Sie das Objekt **RoverParts** , und konfigurieren Sie die Komponente **Transform** (Transformieren) wie folgt:
+Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das **RoverExplorer**-Objekt, und wählen Sie **Create Empty** (Leer erstellen) aus, um ein leeres Objekt als untergeordnetes Objekt des RoverExplorers hinzuzufügen, benennen Sie das Objekt **RoverParts**, und konfigurieren Sie die Komponente **Transform** (Transformieren) wie folgt:
 
-* **Position** : X = 0, Y = 0,06, Z = 0
-* **Drehung** : X = 0, Y = 90, Z = 0
-* **Skalierung** : X = 1, Y = 1, Z = 1
+* **Position**: X = 0, Y = 0,06, Z = 0
+* **Drehung**: X = 0, Y = 90, Z = 0
+* **Skalierung**: X = 1, Y = 1, Z = 1
 
 ![Unity mit neu erstelltem, ausgewähltem und positioniertem RoverParts-Objekt](images/mr-learning-base/base-04-section4-step1-1.png)
 
-Wählen Sie im Hierarchiefenster mithilfe von „RoverExplorer > RoverAssembly > RoverModel > **Parts** “ (...> Teile) alle untergeordneten Objekte aus, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Duplicate** (Duplizieren) aus, um eine Kopie aller Teile zu erstellen:
+Wählen Sie im Hierarchiefenster mithilfe von „RoverExplorer > RoverAssembly > RoverModel > **Parts**“ (...> Teile) alle untergeordneten Objekte aus, klicken Sie mit der rechten Maustaste darauf, und wählen Sie **Duplicate** (Duplizieren) aus, um eine Kopie aller Teile zu erstellen:
 
 ![Unity mit allen Teilen ausgewählt und Popupkontextmenü „Duplicate“](images/mr-learning-base/base-04-section4-step1-2.png)
 
 > [!TIP]
 > Um mehrere angrenzende Objekte auszuwählen, drücken Sie die UMSCHALTTASTE, und halten Sie sie gedrückt, während Sie die Maus verwenden, um das erste und das letzte Objekt auszuwählen.
 
-Klicken Sie auf die noch ausgewählten neu duplizierten untergeordneten Teileobjekte, und ziehen Sie sie auf das **RoverParts** -Objekts, um sie als untergeordnete Objekte des RoverParts-Objekts festzulegen:
+Klicken Sie auf die noch ausgewählten neu duplizierten untergeordneten Teileobjekte, und ziehen Sie sie auf das **RoverParts**-Objekts, um sie als untergeordnete Objekte des RoverParts-Objekts festzulegen:
 
 ![Unity mit neu duplizierten Teilen als untergeordnete Elemente des RoverParts-Objekts](images/mr-learning-base/base-04-section4-step1-3.png)
 
-Um das Arbeiten mit Ihrer Szene zu vereinfachen, klicken Sie im Hierarchiefenster auf das **Augensymbol** links neben dem Objekt, um die **Scene Visibility** (Sichtbarkeit in der Szene) für das **RoverAssembly** -Objekt auszuschalten. Dadurch wird das Objekt im Szenenfenster ausgeblendet, ohne Auswirkungen auf seine Sichtbarkeit im Spiel:
+Um das Arbeiten mit Ihrer Szene zu vereinfachen, klicken Sie im Hierarchiefenster auf das **Augensymbol** links neben dem Objekt, um die **Scene Visibility** (Sichtbarkeit in der Szene) für das **RoverAssembly**-Objekt auszuschalten. Dadurch wird das Objekt im Szenenfenster ausgeblendet, ohne Auswirkungen auf seine Sichtbarkeit im Spiel:
 
 ![Unity mit deaktivierter Sichtbarkeit der RoverAssembly-Szene](images/mr-learning-base/base-04-section4-step1-4.png)
 
@@ -122,16 +122,16 @@ Bereinigen Sie im Hierarchiefenster die Namen der untergeordneten RoverParts-Obj
 
 ![Unity mit bereinigtem Namen duplizierter Teile](images/mr-learning-base/base-04-section4-step1-5.png)
 
-Wählen Sie im Hierarchiefenster das **RoverParts** -Objekt aus, klicken Sie dann im Inspektorfenster auf die Schaltfläche **Add Component** (Komponente hinzufügen), suchen Sie nach **GridObjectCollection** , und wählen Sie sie aus, um die GridObjectCollection-Komponente zum RoverParts-Objekt hinzuzufügen:
+Wählen Sie im Hierarchiefenster das **RoverParts**-Objekt aus, klicken Sie dann im Inspektorfenster auf die Schaltfläche **Add Component** (Komponente hinzufügen), suchen Sie nach **GridObjectCollection**, und wählen Sie sie aus, um die GridObjectCollection-Komponente zum RoverParts-Objekt hinzuzufügen:
 
 ![Unity-Objekt „RoverParts“ mit dem Hinzufügen der Komponente „Grid Object Collection“ in Bearbeitung](images/mr-learning-base/base-04-section4-step1-6.png)
 
-Konfigurieren Sie die Werte der **GridObjectCollection** -Komponente wie folgt:
+Konfigurieren Sie die Werte der **GridObjectCollection**-Komponente wie folgt:
 
-* **Sortierungstyp** : Alphabetisch
-* **Layout** : Horizontal
-* **Zellenbreite** : 0,25
-* **Abstand vom übergeordneten Element** : 0,38
+* **Sortierungstyp**: Alphabetisch
+* **Layout**: Horizontal
+* **Zellenbreite**: 0,25
+* **Abstand vom übergeordneten Element**: 0,38
 
 ![Unity mit konfigurierter GridObjectCollection-Komponente](images/mr-learning-base/base-04-section4-step1-7.png)
 

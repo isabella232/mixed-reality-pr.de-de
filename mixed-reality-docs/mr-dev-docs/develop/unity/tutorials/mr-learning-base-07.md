@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Objektinteraktionen, Begrenzungsrahmen
 ms.localizationpriority: high
-ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353518"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679269"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interagieren mit 3D-Objekten
 
@@ -36,21 +36,21 @@ Dies sind die wichtigsten Schritte, die Sie durchführen müssen:
 > [!NOTE]
 > Damit Sie **ein Objekt manipulieren** können, muss das Objekt die folgenden Komponenten aufweisen:
 >
-> * **Collider** -Komponente, z. B. ein Feld-Collider
+> * **Collider**-Komponente, z. B. ein Feld-Collider
 > * **Object Manipulator (Script)** -Komponente
 >
 > Damit Sie **ein Objekt manipulieren** und **mit nachverfolgten Händen greifen** können, muss das Objekt die folgenden Komponenten aufweisen:
 >
-> * **Collider** -Komponente, z. B. ein Feld-Collider
+> * **Collider**-Komponente, z. B. ein Feld-Collider
 > * **Object Manipulator (Script)** -Komponente
-> * **NearInteractionGrabbable** -Komponente
+> * **NearInteractionGrabbable**-Komponente
 
 Darüber hinaus werden Sie den Rover Explorer so konfigurieren, dass Sie die Rover-Teile auf dem Rover platzieren können, um ihn zu einer vollständigen Rover-Baugruppe zu machen.
 
-Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts** “ auf, und wählen Sie alle seine untergeordneten Rover-Teilobjekte sowie das **RoverAssembly** -Objekt aus. Verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um allen ausgewählten Objekten die folgenden Komponenten hinzuzufügen:
+Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts**“ auf, und wählen Sie alle seine untergeordneten Rover-Teilobjekte sowie das **RoverAssembly**-Objekt aus. Verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um allen ausgewählten Objekten die folgenden Komponenten hinzuzufügen:
 
 * **Object Manipulator (Script)** -Komponente
-* **NearInteractionGrabbable** -Komponente
+* **NearInteractionGrabbable**-Komponente
 * **Part Assembly Controller (Script)** -Komponente (Teilassembly-Controller (Skript))
 
 ![Unity mit ausgewählter RoverAssembly und allen Rover-Teil-Objekten ausgewählt sowie hinzugefügten Komponenten](images/mr-learning-base/base-07-section1-step1-1.png)
@@ -85,7 +85,7 @@ Wählen Sie im Hierarchiefenster erneut alle **Rover-Teilobjekte** aus, verwende
 
 ![Unity mit allen Rover-Teilen ausgewählt und hinzugefügter und konfigurierter Audio Source-Komponente](images/mr-learning-base/base-07-section1-step1-4.png)
 
-Klappen Sie im Hierarchiefenster das Objekt „RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** “ auf, um alle Platzierungshinweisobjekte anzuzeigen, wählen Sie dann das erste Rover-Teil „RoverParts > **Camera_Part** “ aus, und konfigurieren Sie die Komponente **Part Assembly Controller (Script)** wie folgt:
+Klappen Sie im Hierarchiefenster das Objekt „RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints**“ auf, um alle Platzierungshinweisobjekte anzuzeigen, wählen Sie dann das erste Rover-Teil „RoverParts > **Camera_Part**“ aus, und konfigurieren Sie die Komponente **Part Assembly Controller (Script)** wie folgt:
 
 * Weisen Sie das Objekt **Camera_PlacementHint** dem Feld **Location To Place** zu
 
@@ -93,15 +93,15 @@ Klappen Sie im Hierarchiefenster das Objekt „RoverAssembly > RoverModel_Placem
 
 **Wiederholen** Sie diesen Schritt für alle verbleibenden Rover-Teilobjekte und das RoverAssembly-Objekt, um die Komponente **Part Assembly Controller (Script)** wie folgt zu konfigurieren:
 
-* Weisen Sie für das **Generator_Part** das **Generator_PlacementHint** -Objekt dem Feld **Location To Place** zu
-* Weisen Sie für das **Lights_Part** das **Lights_PlacementHint** -Objekt dem Feld **Location To Place** zu
-* Weisen Sie für das **UHFAntenna_Part** das **UHFAntenna_PlacementHint** -Objekt dem Feld **Location To Place** zu
-* Weisen Sie für das **Spectrometer_Part** das **Spectrometer_PlacementHint** -Objekt dem Feld **Location To Place** zu
-* Weisen Sie für die **RoverAssembly** das Objekt selbst, d. h. eben dieses **RoverAssembly** -Objekt, dem Feld **Location To Place** zu
+* Weisen Sie für das **Generator_Part** das **Generator_PlacementHint**-Objekt dem Feld **Location To Place** zu
+* Weisen Sie für das **Lights_Part** das **Lights_PlacementHint**-Objekt dem Feld **Location To Place** zu
+* Weisen Sie für das **UHFAntenna_Part** das **UHFAntenna_PlacementHint**-Objekt dem Feld **Location To Place** zu
+* Weisen Sie für das **Spectrometer_Part** das **Spectrometer_PlacementHint**-Objekt dem Feld **Location To Place** zu
+* Weisen Sie für die **RoverAssembly** das Objekt selbst, d. h. eben dieses **RoverAssembly**-Objekt, dem Feld **Location To Place** zu
 
 Wählen Sie im Hierarchiefenster das Schaltflächenobjekt „RoverExplorer > Buttons > **Reset** (RoverExplorer > Schaltflächen > Zurücksetzen) aus, und konfigurieren Sie dann im Inspektorfenster das **OnClick ()** -Interaktionsereignis wie folgt:
 
-* Weisen Sie das **RoverAssembly** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie das **RoverAssembly**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **PartAssemblyController** > **ResetPlacement ()** aus, um diese Funktion als Aktion festzulegen, die beim Auslösen des Ereignisses ausgeführt wird
 
 ![Unity mit konfiguriertem OnClick-Ereignis für das Reset-Schaltflächenobjekt](images/mr-learning-base/base-07-section1-step1-6.png)
@@ -118,9 +118,9 @@ Begrenzungsrahmen machen das einhändige Manipulieren von Objekten sowohl für d
 
 In diesem Beispiel fügen Sie dem RoverExplorer-Objekt einen Begrenzungsrahmen hinzu, damit die gesamte Erfahrung komfortabel bewegt, gedreht und skaliert werden kann. Darüber hinaus werden Sie das Menü so konfigurieren, dass der Begrenzungsrahmen ein- und ausgeschaltet werden kann.
 
-Wählen Sie im Hierarchiefenster das **RoverExplorer** -Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die folgenden Komponenten hinzuzufügen:
+Wählen Sie im Hierarchiefenster das **RoverExplorer**-Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die folgenden Komponenten hinzuzufügen:
 
-* **BoundingBox** -Komponente(Begrenzungsrahmen)
+* **BoundingBox**-Komponente(Begrenzungsrahmen)
 * **Object Manipulator (Script)** -Komponente
 
 **Deaktivieren** Sie dann das Kontrollkästchen neben beiden Komponenten, um sie als standardmäßig **deaktiviert** festzulegen:
@@ -133,14 +133,14 @@ Wählen Sie im Hierarchiefenster das **RoverExplorer** -Objekt aus, und verwende
 > [!NOTE]
 > Die BoundingBox-Komponente fügt zur Laufzeit automatisch die NearInteractionGrabbable-Komponente hinzu. Daher brauchen wir diese Komponente nicht hinzuzufügen, um die eingeschlossenen Objekte mit nachverfolgten Händen zu greifen.
 
-Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection** “ (Menü > Schaltflächensammlung) auf, um die vier Schaltflächen anzuzeigen, benennen Sie die dritte Schaltfläche in **BoundingBox_Enable** um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
+Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection**“ (Menü > Schaltflächensammlung) auf, um die vier Schaltflächen anzuzeigen, benennen Sie die dritte Schaltfläche in **BoundingBox_Enable** um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
 * Ändern Sie den **Main Label Text** (Hauptbezeichnungstext) in **Enable** (Aktivieren)
-* Weisen Sie das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundingBox** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist
 * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
-* Weisen Sie das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **ObjectManipulator** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist
 * Belassen Sie das **Symbol** als Symbol „Cube mit Begrenzungsrahmen“
@@ -150,11 +150,11 @@ Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection** “ (
 Benennen Sie die vierte und letzte Schaltfläche in **BoundingBox_Disable** um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
 * Ändern Sie den **Main Label Text** (Hauptbezeichnungstext) in **Disable** (Deaktivieren)
-* Weisen Sie das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundingBox** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
 * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
-* Weisen Sie das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **ObjectManipulator** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
 * Ändern Sie das **Symbol** in das Symbol „Cube mit Begrenzungsrahmen“

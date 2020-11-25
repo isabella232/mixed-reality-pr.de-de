@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver
 ms.localizationpriority: high
-ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353528"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679299"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Erstellen dynamischer Inhalte mithilfe von Solvern
 
@@ -39,7 +39,7 @@ In diesem Tutorial behandeln wir die Implementierung des Solvers Directional Ind
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Verwenden des Richtungsanzeige-Solvers, um den Benutzer zu Objekten zu führen
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Medienobjekte > MRTK.Tutorials.GettingStarted > Prefabs), klicken Sie auf das **Chevron** -Prefab (Winkel), ziehen Sie es auf das Hierarchiefenster, und legen Sie seine **Transformationsposition** auf X = 0, Y = 0, Z = 2 fest, um es in der Nähe des RoverExplorer-Objekts zu positionieren:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** (Medienobjekte > MRTK.Tutorials.GettingStarted > Prefabs), klicken Sie auf das **Chevron**-Prefab (Winkel), ziehen Sie es auf das Hierarchiefenster, und legen Sie seine **Transformationsposition** auf X = 0, Y = 0, Z = 2 fest, um es in der Nähe des RoverExplorer-Objekts zu positionieren:
 
 ![Unity mit neu hinzugefügtem, ausgewähltem Chevron-Prefab](images/mr-learning-base/base-05-section2-step1-1.png)
 
@@ -58,8 +58,8 @@ Benennen Sie das neu hinzugefügte Chevron-Objekt in **Indicator** um, und verwe
 
 Konfigurieren Sie die Komponenten DirectionalIndicator und SolverHandler wie folgt:
 
-* Vergewissern Sie sich, dass der **Tracked Target Type** (Typ des nachverfolgten Ziels) der **SoverHandler** -Komponente auf **Head** (Kopf) festgelegt ist.
-* Weisen Sie den **RoverExplorer** dem **Directional Target** (Richtungsziel) der **DirectionalIndicator** -Komponente zu, indem Sie ihn aus dem Hierarchiefenster auf das **None (Transform)** -Feld (Ohne (Transformation)) ziehen.
+* Vergewissern Sie sich, dass der **Tracked Target Type** (Typ des nachverfolgten Ziels) der **SoverHandler**-Komponente auf **Head** (Kopf) festgelegt ist.
+* Weisen Sie den **RoverExplorer** dem **Directional Target** (Richtungsziel) der **DirectionalIndicator**-Komponente zu, indem Sie ihn aus dem Hierarchiefenster auf das **None (Transform)** -Feld (Ohne (Transformation)) ziehen.
 * Ändern Sie den **View Offset** (Ansichtsversatz) in 0,2
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit konfigurierter DirectionalIndicator-Solver-Komponente](images/mr-learning-base/base-05-section2-step1-3.png)
@@ -83,7 +83,7 @@ Drücken Sie die Wiedergabe-Schaltfläche, um in den Spielmodus zu wechseln, dr�
 
 Wählen Sie im Hierarchiefenster das Objekt RoverExplorer > **RoverAssembly** aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Tap To Place (Script)** (Zum Platzieren tippen (Skript)) hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
-* Vergewissern Sie sich, dass der **Tracked Target Type** (Typ des nachverfolgten Ziels) der **SoverHandler** -Komponente auf **Head** (Kopf) festgelegt ist.
+* Vergewissern Sie sich, dass der **Tracked Target Type** (Typ des nachverfolgten Ziels) der **SoverHandler**-Komponente auf **Head** (Kopf) festgelegt ist.
 * Aktivieren Sie das Kontrollkästchen **Keep Orientation Vertical** (Vertikale Ausrichtung beibehalten).
 * Deaktivieren Sie in der Dropdownliste **Magnetic Surfaces** > **Element 0** (Magnetische Oberflächen > Element 0) alle Optionen mit Ausnahme von **Spatial Awareness** (Räumliche Wahrnehmung).
 
@@ -103,7 +103,7 @@ Während das RoverAssembly-Objekt noch im Hierarchiefenster ausgewählt ist, suc
 
 Konfigurieren Sie das Ereignis wie folgt:
 
-* Weisen Sie das **RoverAssembly** -Objekt als Listener für das On Placing Started ()-Ereignis zu, indem Sie es aus dem Hierarchiefenster auf das **None (Object)** -Feld (Ohne (Objekt)) ziehen.
+* Weisen Sie das **RoverAssembly**-Objekt als Listener für das On Placing Started ()-Ereignis zu, indem Sie es aus dem Hierarchiefenster auf das **None (Object)** -Feld (Ohne (Objekt)) ziehen.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **TapToPlace** > **float SurfaceNormalOffset** aus, um den Wert der Eigenschaft SurfaceNormalOffset zu aktualisieren, wenn das Ereignis ausgelöst wird.
 * Vergewissern Sie sich, dass das Argument auf **0** festgelegt ist.
 
@@ -111,9 +111,9 @@ Konfigurieren Sie das Ereignis wie folgt:
 
 Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf eine leere Stelle, wählen Sie **3D Object** > **Cube** (3D-Objekt > Würfel) aus, um ein vorübergehendes Objekt zu erstellen, das den Boden darstellt, und konfigurieren Sie die Komponente **Transform** (Transformieren) wie folgt:
 
-* **Position** : X = 0, Y = -1,65, Z = 6
-* **Drehung** : X = 0, Y = 0, Z = 0
-* **Skalierung** : X = 10, Y = 0,2, Z = 10
+* **Position**: X = 0, Y = -1,65, Z = 6
+* **Drehung**: X = 0, Y = 0, Z = 0
+* **Skalierung**: X = 10, Y = 0,2, Z = 10
 
 ![Unity mit hinzugefügtem und positioniertem temporärem Ground Cube-Objekt](images/mr-learning-base/base-05-section3-step1-4.png)
 

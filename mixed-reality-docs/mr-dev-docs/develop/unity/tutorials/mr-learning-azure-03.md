@@ -5,18 +5,18 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services, Azure Cloud Services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353268"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679349"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrieren von Azure-Custom Vision
 
-In diesem Tutorial erfahren Sie, wie Sie **Azure Custom Vision** verwenden. Sie laden einen Satz Fotos hoch, um sie einem *nachverfolgten Objekt* zuzuordnen. Laden Sie sie in den **Custom Vision** -Dienst hoch, und starten Sie den Trainingsvorgang. Anschließend verwenden Sie den Dienst, um das *nachverfolgte Objekt* zu erkennen, indem Sie Fotos aus dem Webcamfeed erfassen.
+In diesem Tutorial erfahren Sie, wie Sie **Azure Custom Vision** verwenden. Sie laden einen Satz Fotos hoch, um sie einem *nachverfolgten Objekt* zuzuordnen. Laden Sie sie in den **Custom Vision**-Dienst hoch, und starten Sie den Trainingsvorgang. Anschließend verwenden Sie den Dienst, um das *nachverfolgte Objekt* zu erkennen, indem Sie Fotos aus dem Webcamfeed erfassen.
 
 ## <a name="objectives"></a>Ziele
 
@@ -26,7 +26,7 @@ In diesem Tutorial erfahren Sie, wie Sie **Azure Custom Vision** verwenden. Sie 
 
 ## <a name="understanding-azure-custom-vision"></a>Grundlegendes zu Azure Custom Vision
 
-**Azure Custom Vision** ist Teil der **Cognitive Services** -Produktfamilie und wird zum Trainieren von Bildklassifizierern verwendet. Der Bildklassifizierer ist ein KI-Dienst, der das trainierte Modell verwendet, um entsprechende Tags anzuwenden. Diese Klassifizierungsfunktion wird von unserer Anwendung verwendet, um *nachverfolgte Objekte* zu erkennen.
+**Azure Custom Vision** ist Teil der **Cognitive Services**-Produktfamilie und wird zum Trainieren von Bildklassifizierern verwendet. Der Bildklassifizierer ist ein KI-Dienst, der das trainierte Modell verwendet, um entsprechende Tags anzuwenden. Diese Klassifizierungsfunktion wird von unserer Anwendung verwendet, um *nachverfolgte Objekte* zu erkennen.
 
 Weitere Informationen zu [Azure Custom Vision](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
 
@@ -49,7 +49,7 @@ Ziehen Sie dort das Prefab **ObjectDetectionManager** in die Hierarchie der Szen
 
 ![Unity mit im Inspektor angezeigten Konfigurationsfeldern der ObjectDetectionManager (Skript)-Komponente](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
-Suchen Sie im Hierarchiefenster nach dem **ObjectDetectionManager** -Objekt, und wählen Sie es aus.
+Suchen Sie im Hierarchiefenster nach dem **ObjectDetectionManager**-Objekt, und wählen Sie es aus.
 Das Prefab **ObjectDetectionManager** enthält die Komponente **ObjectDetectionManager (Script)** . Wie Sie im Inspektor-Fenster erkennen können, hängt sie von mehreren Einstellungen ab.
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Abrufen von Azure-API-Ressourcenanmeldeinformationen
@@ -58,17 +58,17 @@ Die erforderlichen Anmeldeinformationen für die Einstellungen von **ObjectDetec
 
 ### <a name="azure-portal"></a>Azure-Portal
 
-Suchen Sie nach der Custom Vision-Ressource vom Typ **Cognitive Services** , die Sie im Abschnitt *Vorbereiten der Szene* dieses Tutorials erstellt haben. Klicken Sie dort auf *Keys and Endpoint* (Schlüssel und Endpunkt), um die erforderlichen Anmeldeinformationen abzurufen.
+Suchen Sie nach der Custom Vision-Ressource vom Typ **Cognitive Services**, die Sie im Abschnitt *Vorbereiten der Szene* dieses Tutorials erstellt haben. Klicken Sie dort auf *Keys and Endpoint* (Schlüssel und Endpunkt), um die erforderlichen Anmeldeinformationen abzurufen.
 
 ### <a name="custom-vision-dashboard"></a>Custom Vision-Dashboard
 
 Öffnen Sie das Projekt, das Sie für dieses Tutorial erstellt haben, im [Custom Vision](https://www.customvision.ai/projects)-Dashboard, und klicken Sie auf das Zahnradsymbol in der rechten oberen Ecke der Seite, um die Seite mit den Einstellungen zu öffnen. Hier finden Sie die erforderlichen Anmeldeinformationen im Abschnitt *Ressourcen* auf der rechten Seite.
 
-Nachdem **ObjectDetectionManager (Script)** ordnungsgemäß eingerichtet wurde, suchen Sie in der Hierarchie der Szene nach dem **SceneController** -Objekt, und wählen Sie es aus.
+Nachdem **ObjectDetectionManager (Script)** ordnungsgemäß eingerichtet wurde, suchen Sie in der Hierarchie der Szene nach dem **SceneController**-Objekt, und wählen Sie es aus.
 
 ![Unity mit im Inspektor angezeigten Konfigurationsfeldern der SceneController (Script)-Komponente](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
-Sie sehen, dass das Feld *Object Detection Manager* (Objekterkennungs-Manager) in der **SceneController** -Komponente leer ist. Ziehen Sie **ObjectDetectionManager** aus der Hierarchie in dieses Feld, und speichern Sie die Szene.
+Sie sehen, dass das Feld *Object Detection Manager* (Objekterkennungs-Manager) in der **SceneController**-Komponente leer ist. Ziehen Sie **ObjectDetectionManager** aus der Hierarchie in dieses Feld, und speichern Sie die Szene.
 
 ![Unity mit konfigurierter SceneController-Skriptkomponente](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
@@ -88,7 +88,7 @@ Wenn Sie über genügend Bilder verfügen, klicken Sie auf die Schaltfläche **T
 
 ## <a name="detect-objects"></a>Erkennen von Objekten
 
-Sie können das trainierte Modell nun testen, die Anwendung ausführen und im *Hauptmenü* auf **Search Object** (Objekt suchen) klicken und den Namen des betreffenden **nachverfolgten Objekts** eingeben. Die **Objektkarte** wird angezeigt. Klicken Sie auf die Schaltfläche **Custom Vision**. Hier beginnt **ObjectDetectionManager** , Bilder von der Kamera im Hintergrund zu erfassen, und der Status wird im Menü angezeigt. Richten Sie die Kamera auf das Objekt, mit dem Sie das Modell trainiert haben, und Sie sehen, dass das Objekt nach kurzer Zeit erkannt wird.
+Sie können das trainierte Modell nun testen, die Anwendung ausführen und im *Hauptmenü* auf **Search Object** (Objekt suchen) klicken und den Namen des betreffenden **nachverfolgten Objekts** eingeben. Die **Objektkarte** wird angezeigt. Klicken Sie auf die Schaltfläche **Custom Vision**. Hier beginnt **ObjectDetectionManager**, Bilder von der Kamera im Hintergrund zu erfassen, und der Status wird im Menü angezeigt. Richten Sie die Kamera auf das Objekt, mit dem Sie das Modell trainiert haben, und Sie sehen, dass das Objekt nach kurzer Zeit erkannt wird.
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 

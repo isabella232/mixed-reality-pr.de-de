@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353428"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678249"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5. Integrieren von Azure Spatial Anchors in eine gemeinsam genutzte Umgebung
 
@@ -25,11 +25,11 @@ In diesem Tutorial erfahren Sie, wie Sie Azure Spatial Anchors (ASA) in die gete
 
 ## <a name="preparing-the-scene"></a>Vorbereiten der Szene
 
-Klappen Sie im Hierarchiefenster das **SharedPlayground** -Objekt auf, und klappen Sie dann das **TableAnchor** -Objekt auf, um dessen untergeordnete Objekte anzuzeigen:
+Klappen Sie im Hierarchiefenster das **SharedPlayground**-Objekt auf, und klappen Sie dann das **TableAnchor**-Objekt auf, um dessen untergeordnete Objekte anzuzeigen:
 
 ![Unity mit erweiterten SharedPlayground- und TableAnchor-Objekten](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** , und ziehen Sie das Prefab **Buttons** auf das untergeordnete **TableAnchor** -Objekt, um es Ihrer Szene als untergeordnetes Element des TableAnchor-Objekts hinzuzufügen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs**, und ziehen Sie das Prefab **Buttons** auf das untergeordnete **TableAnchor**-Objekt, um es Ihrer Szene als untergeordnetes Element des TableAnchor-Objekts hinzuzufügen:
 
 ![Unity mit neu hinzugefügtem, ausgewähltem Buttons-Prefab](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
@@ -37,42 +37,42 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiU
 
 In diesem Abschnitt konfigurieren Sie eine Reihe von Schaltflächenereignissen, an denen sich die Grundlagen der Verwendung von Azure Spatial Anchors zum Erreichen einer räumlichen Ausrichtung in einer gemeinsamen Benutzererfahrung zeigen lassen.
 
-Klappen Sie im Hierarchiefenster das **Button** -Objekt auf, und wählen Sie das erste untergeordnete Schaltflächenobjekt mit dem Namen **StartAzureSession** aus:
+Klappen Sie im Hierarchiefenster das **Button**-Objekt auf, und wählen Sie das erste untergeordnete Schaltflächenobjekt mit dem Namen **StartAzureSession** aus:
 
 ![Unity mit ausgewähltem StartAzureSession-Schaltflächenobjekt](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 Suchen Sie im Inspektorfenster die Komponente **Interactable (Script)** , und konfigurieren Sie das **OnClick ()** -Ereignis folgendermaßen:
 
-* Weisen Sie das **TableAnchor** -Objekt dem Feld **None (Object)** zu.
+* Weisen Sie das **TableAnchor**-Objekt dem Feld **None (Object)** zu.
 * Wählen Sie in der Dropdownliste **No Function** die Funktion **AnchorModuleScript** > **StartAzureSession ()** aus.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die StartAzureSession-Schaltfläche](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 Wählen Sie im Hierarchiefenster das zweite untergeordnete Schaltflächenobjekt mit dem Namen **CreateAzureAnchor** aus, suchen Sie dann im Inspektorfenster die Komponente **Interactable (Script)** , und konfigurieren Sie das **OnClick ()** -Ereignis in folgender Weise:
 
-* Weisen Sie das **TableAnchor** -Objekt dem Feld **None (Object)** zu.
+* Weisen Sie das **TableAnchor**-Objekt dem Feld **None (Object)** zu.
 * Wählen Sie in der Dropdownliste **No Function** die Funktion **AnchorModuleScript** > **CreateAzureAnchor ()** aus.
-* Weisen Sie das **TableAnchor** -Objekt dem neuen Feld **None (Game Object)** zu, das jetzt angezeigt wird
+* Weisen Sie das **TableAnchor**-Objekt dem neuen Feld **None (Game Object)** zu, das jetzt angezeigt wird
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die CreateAzureAnchor-Schaltfläche](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
 
 Wählen Sie im Hierarchiefenster das dritte untergeordnete Schaltflächenobjekt mit dem Namen **ShareAzureAnchor** aus, suchen Sie dann im Inspektorfenster die Komponente **Interactable (Script)** , und konfigurieren Sie das **OnClick ()** -Ereignis in folgender Weise:
 
-* Weisen Sie das **TableAnchor** -Objekt dem Feld **None (Object)** zu.
+* Weisen Sie das **TableAnchor**-Objekt dem Feld **None (Object)** zu.
 * Wählen Sie in der Dropdownliste **No Function** die Funktion **SharingModuleScript** > **ShareAzureAnchor ()** aus.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die ShareAzureAnchor-Schaltfläche](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 Wählen Sie im Hierarchiefenster das vierte untergeordnete Schaltflächenobjekt mit dem Namen **GetAzureAnchor** aus, suchen Sie dann im Inspektorfenster die Komponente **Interactable (Script)** , und konfigurieren Sie das **OnClick ()** -Ereignis in folgender Weise:
 
-* Weisen Sie das **TableAnchor** -Objekt dem Feld **None (Object)** zu.
+* Weisen Sie das **TableAnchor**-Objekt dem Feld **None (Object)** zu.
 * Wählen Sie in der Dropdownliste **No Function** die Funktion **SharingModuleScript** > **GetAzureAnchor ()** aus.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die GetAzureAnchor-Schaltfläche](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>Verbinden der Szene mit der Azure-Ressource
 
-Klappen Sie im Hierarchiefenster das **SharedPlayground** -Objekt auf, und wählen Sie das **TableAnchor** -Objekt aus.
+Klappen Sie im Hierarchiefenster das **SharedPlayground**-Objekt auf, und wählen Sie das **TableAnchor**-Objekt aus.
 
 Suchen Sie im Inspektor-Fenster die Komponente **Spatial Anchor Manager (Script)** , und konfigurieren Sie den Abschnitt **Credentials** (Anmeldeinformationen) mit den Anmeldeinformationen aus dem Azure Spatial Anchors-Konto, das Sie im Rahmen der [Voraussetzungen](mr-learning-sharing-01.md#prerequisites) für diese Tutorialreihe erstellt haben:
 
@@ -82,7 +82,7 @@ Suchen Sie im Inspektor-Fenster die Komponente **Spatial Anchor Manager (Script)
 ![Unity mit konfiguriertem Spatial Anchor-Manager](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
 
 > [!TIP]
-> Anstatt die Spatial Anchors-Konto-ID und den Schlüssel in der Szene festzulegen, können Sie diese Werte für das gesamte Projekt festlegen. Dies kann von Vorteil sein, wenn Sie über mehrere Szenen mit ASA verfügen. Navigieren Sie dazu im Projektfenster zur Ressource „Assets > AzureSpatialAnchors.SDK > Resources > **SpatialAnchorConfig** , und legen Sie dann die Werte im Inspektor-Fenster fest.
+> Anstatt die Spatial Anchors-Konto-ID und den Schlüssel in der Szene festzulegen, können Sie diese Werte für das gesamte Projekt festlegen. Dies kann von Vorteil sein, wenn Sie über mehrere Szenen mit ASA verfügen. Navigieren Sie dazu im Projektfenster zur Ressource „Assets > AzureSpatialAnchors.SDK > Resources > **SpatialAnchorConfig**, und legen Sie dann die Werte im Inspektor-Fenster fest.
 
 Wählen Sie im Hierarchiefenster das **TableAnchor-Objekt** aus, und suchen Sie dann im Inspektor-Fenster nach der Komponente **Anchor Module (Script)** , um sie wie folgt zu konfigurieren:
 
@@ -90,7 +90,7 @@ Wählen Sie im Hierarchiefenster das **TableAnchor-Objekt** aus, und suchen Sie 
 
 ![Unity mit konfiguriertem Anchor Module Script](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
-Vergewissern Sie sich bei noch immer ausgewähltem **TableAnchor** -Objekt im Inspektor-Fenster, dass alle Skriptkomponenten **aktiviert** sind:
+Vergewissern Sie sich bei noch immer ausgewähltem **TableAnchor**-Objekt im Inspektor-Fenster, dass alle Skriptkomponenten **aktiviert** sind:
 
 * Aktivieren Sie das Kontrollkästchen neben den **Spatial Anchor Manager (Script)** -Komponenten, um sie zu aktivieren
 * Aktivieren Sie das Kontrollkästchen neben den **Anchor Module Script (Script)** -Komponenten, um sie zu aktivieren

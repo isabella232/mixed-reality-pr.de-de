@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 717bd1a259c8e21058023a7c45c3ee34783fec4a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353418"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679229"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Freigeben von Objektbewegungen für mehrere Benutzer
 
@@ -27,7 +27,7 @@ In diesem Tutorial erfahren Sie, wie Sie die Bewegungen von Objekten teilen, dam
 
 In diesem Abschnitt bereiten Sie die Szene vor, indem Sie das Tutorial-Prefab hinzufügen.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs** , und ziehen Sie das **TableAnchor** -Prefab auf das **SharedPlayground** -Objekt im Hierarchiefenster, um es Ihrer Szene als untergeordnetes Objekt des SharedPlayground-Objekts hinzuzufügen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs**, und ziehen Sie das **TableAnchor**-Prefab auf das **SharedPlayground**-Objekt im Hierarchiefenster, um es Ihrer Szene als untergeordnetes Objekt des SharedPlayground-Objekts hinzuzufügen:
 
 ![Unity mit neu hinzugefügtem, ausgewähltem TableAnchor-Prefab](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
@@ -37,13 +37,13 @@ In diesem Abschnitt konfigurieren Sie das Projekt so, dass es die Benutzeroberfl
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources**.
 
-Klappen Sie im Hierarchiefenster das **NetworkLobby** -Objekt auf, wählen Sie das untergeordnete Objekt **NetworkRoom** aus, und suchen Sie dann im Inspektorfenster die Komponente **Photon Room (Script)** , um sie wie folgt zu konfigurieren:
+Klappen Sie im Hierarchiefenster das **NetworkLobby**-Objekt auf, wählen Sie das untergeordnete Objekt **NetworkRoom** aus, und suchen Sie dann im Inspektorfenster die Komponente **Photon Room (Script)** , um sie wie folgt zu konfigurieren:
 
 * Weisen Sie dem Feld **RoverExplorer Prefab** das Prefab **RoverExplorer_Complete_Variant** aus dem Ordner „Resources“ zu.
 
 ![Unity mit teilweise konfigurierter Photon Room-Komponente](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
-Klappen Sie im Hierarchiefenster das **TableAnchor** -Objekt auf, während das untergeordnete Objekt **NetworkRoom** noch ausgewählt ist, und suchen Sie dann im Inspektorfenster die Komponente **Photon Room (Script)** , um sie wie folgt zu konfigurieren:
+Klappen Sie im Hierarchiefenster das **TableAnchor**-Objekt auf, während das untergeordnete Objekt **NetworkRoom** noch ausgewählt ist, und suchen Sie dann im Inspektorfenster die Komponente **Photon Room (Script)** , um sie wie folgt zu konfigurieren:
 
 * Weisen Sie dem Feld **Rover Explorer Location** (Rover-Explorer-Position) das untergeordnete Objekt **Table** aus dem Hierarchiefenster zu.
 

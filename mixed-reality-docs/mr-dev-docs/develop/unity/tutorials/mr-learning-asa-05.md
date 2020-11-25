@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens, Android, iOS
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, Android, iOS, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353378"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679429"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5. Azure Spatial Anchors für Android und iOS
 

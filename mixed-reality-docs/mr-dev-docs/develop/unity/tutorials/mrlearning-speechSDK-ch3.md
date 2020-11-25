@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10, Sprachübersetzung
 ms.localizationpriority: high
-ms.openlocfilehash: 6a7aead068b5ab8ba25bcf84bbeae0a19723845b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699091"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679919"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3. Hinzufügen der Sprachübersetzungskomponente von Azure Cognitive Services
 
@@ -24,7 +24,7 @@ In diesem Tutorial fügen Sie Ihrem Projekt Sprachübersetzung hinzu, die es Ihn
 
 ## <a name="instructions"></a>Anweisungen
 
-Wählen Sie im Hierarchiefenster das **Lunarcom** -Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen** , um dem Lunarcom-Objekt die Komponente **Lunarcom Translation Recognizer (Script)** hinzuzufügen und sie wie folgt zu konfigurieren:
+Wählen Sie im Hierarchiefenster das **Lunarcom**-Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen**, um dem Lunarcom-Objekt die Komponente **Lunarcom Translation Recognizer (Script)** hinzuzufügen und sie wie folgt zu konfigurieren:
 
 * Ändern Sie die **Zielsprache** in eine Sprache Ihrer Wahl, z. B. _Deutsch_
 

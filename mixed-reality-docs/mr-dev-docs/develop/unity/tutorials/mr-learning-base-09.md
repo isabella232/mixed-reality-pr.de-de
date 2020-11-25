@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Sprachbefehle, Spracheingabe
 ms.localizationpriority: high
-ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353508"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679249"
 ---
 # <a name="9-using-speech-commands"></a>9. Verwenden von Sprachbefehlen
 
@@ -27,7 +27,7 @@ In diesem Tutorial erfahren Sie, wie Sie Sprachbefehle erstellen und diese globa
 
 ## <a name="ensuring-the-microphone-capability-is-enabled"></a>Sicherstellen, dass die Mikrofonfunktion aktiviert ist
 
-Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Unity Project** “ (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das Fenster **MRTK Project Configurator** (MRTK-Projektkonfigurator) zu öffnen, und überprüfen Sie dann im Abschnitt **UWP Capabilities** (UWP-Funktionen), ob die Funktion **Enable Microphone Capability** (Mikrofonfunktion aktivieren) grau dargestellt wird:
+Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Unity Project**“ (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das Fenster **MRTK Project Configurator** (MRTK-Projektkonfigurator) zu öffnen, und überprüfen Sie dann im Abschnitt **UWP Capabilities** (UWP-Funktionen), ob die Funktion **Enable Microphone Capability** (Mikrofonfunktion aktivieren) grau dargestellt wird:
 
 ![Aktivieren der Mikrofonfunktion](images/mr-learning-base/base-09-section1-step1-1.png)
 
@@ -36,10 +36,10 @@ Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Un
 
 ## <a name="creating-speech-commands"></a>Erstellen von Sprachbefehlen
 
-Wählen Sie im Hierarchiefenster das **MixedRealityToolkit** -Objekt und dann im Inspektorfenster die Registerkarte „MixedRealityToolkit > **Input** “ (MixedRealityToolkit > Eingabe) aus. Führen Sie dann die folgenden Schritte aus:
+Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt und dann im Inspektorfenster die Registerkarte „MixedRealityToolkit > **Input**“ (MixedRealityToolkit > Eingabe) aus. Führen Sie dann die folgenden Schritte aus:
 
 * Klappen Sie den Abschnitt **Speech** (Sprache) auf
-* Klonen Sie das Profil **DefaultMixedRealitySpeechCommandsProfile** , und geben Sie ihm einen passenden Namen, beispielsweise _GettingStarted_MixedRealitySpeechCommandsProfile_
+* Klonen Sie das Profil **DefaultMixedRealitySpeechCommandsProfile**, und geben Sie ihm einen passenden Namen, beispielsweise _GettingStarted_MixedRealitySpeechCommandsProfile_
 * Vergewissern Sie sich, dass **Start Behaviour** (Startverhalten) auf **Auto Start** (Automatischer Start) festgelegt ist
 
 ![Erstellen von Sprachbefehlen](images/mr-learning-base/base-09-section2-step1-1.png)
@@ -47,7 +47,7 @@ Wählen Sie im Hierarchiefenster das **MixedRealityToolkit** -Objekt und dann im
 > [!TIP]
 > Wenn Sie eine Auffrischung zum Klonen von MRTK-Profilen benötigen, lesen Sie die Anweisungen in [Konfigurieren der MRTK-Profile](mr-learning-base-03.md).
 
-Klicken Sie im Abschnitt „Speech > **Speech Commands** “ (Sprache > Sprachbefehle) vier Mal auf die Schaltfläche **+ Add a New Speech Command** (Neuen Sprachbefehl hinzufügen), um unten in der Liste der vorhandenen Sprachbefehle einen neuen Sprachbefehl hinzuzufügen, und geben Sie dann in den **Keyword** -Feldern (Schlüsselwort) die folgenden Ausdrücke ein:
+Klicken Sie im Abschnitt „Speech > **Speech Commands**“ (Sprache > Sprachbefehle) vier Mal auf die Schaltfläche **+ Add a New Speech Command** (Neuen Sprachbefehl hinzufügen), um unten in der Liste der vorhandenen Sprachbefehle einen neuen Sprachbefehl hinzuzufügen, und geben Sie dann in den **Keyword**-Feldern (Schlüsselwort) die folgenden Ausdrücke ein:
 
 * Enable Indicator (Indikator aktivieren)
 * Enable Tap to Place (Zum Platzieren tippen aktivieren)
@@ -67,7 +67,7 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **
 
 Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf eine leere Stelle, und wählen Sie **Create Empty** (Leer erstellen) aus, um Ihrer Szene ein leeres Objekt hinzuzufügen.
 
-Benennen Sie das Objekt **SpeechInputHandler_Global** , verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die **SpeechInputHandler** -Komponente hinzuzufügen, und konfigurieren Sie sie dann wie folgt:
+Benennen Sie das Objekt **SpeechInputHandler_Global**, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die **SpeechInputHandler**-Komponente hinzuzufügen, und konfigurieren Sie sie dann wie folgt:
 
 * **Deaktivieren** Sie das Kontrollkästchen **Is Focus Required** (Ist Fokus erforderlich), damit der Benutzer das Objekt nicht anblicken muss, um den Sprachbefehl mit der SpeechInputHandler-Komponente auszulösen
 * Weisen Sie im Projektfenster das Prefab **SpeechConfirmation Tooltip** dem Feld **Speech Confirmation Tooltip Prefab** zu, damit dieses Prefab angezeigt wird, wenn ein Sprachbefehl erkannt wird
@@ -82,7 +82,7 @@ Klappen Sie **Element 0** auf, und konfigurieren Sie es wie folgt:
 
 * Geben Sie im Feld **Keyword** (Schlüsselwort) **Enable Indicator** (Indikator aktivieren) ein, um auf den Sprachbefehl „Enable Indicator“ (Indikator aktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
 * Klicken Sie auf das kleine **+** -Symbol, um ein Ereignis hinzuzufügen
-* Weisen Sie im Hierarchiefenster das **Indicator** -Objekt (Indikator) dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie im Hierarchiefenster das **Indicator**-Objekt (Indikator) dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **GameObject** > **SetActive (bool)** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen
 * Aktivieren Sie das Argumentkontrollkästchen, so dass es **aktiviert** ist
 
@@ -92,11 +92,11 @@ Klappen Sie **Element 1** auf, und konfigurieren Sie es wie folgt:
 
 * Geben Sie im Feld **Keyword** (Schlüsselwort) **Enable Bounding Box** (Begrenzungsrahmen aktivieren) ein, um auf den Sprachbefehl „Enable Bounding Box“ (Begrenzungsrahmen aktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
 * Klicken Sie auf das kleine **+** -Symbol, um ein Ereignis hinzuzufügen
-* Weisen Sie im Hierarchiefenster das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundingBox** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Aktivieren Sie das Argumentkontrollkästchen, so dass es **aktiviert** ist
 * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
-* Weisen Sie im Hierarchiefenster das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **ObjectManipulator** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Aktivieren Sie das Argumentkontrollkästchen, so dass es **aktiviert** ist
 
@@ -106,11 +106,11 @@ Klappen Sie **Element 2** auf, und konfigurieren Sie es wie folgt:
 
 * Geben Sie im Feld **Keyword** (Schlüsselwort) **Disable Bounding Box** (Begrenzungsrahmen deaktivieren) ein, um auf den Sprachbefehl „Disable Bounding Box“ (Begrenzungsrahmen deaktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
 * Klicken Sie auf das kleine **+** -Symbol, um ein Ereignis hinzuzufügen
-* Weisen Sie im Hierarchiefenster das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundingBox** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
 * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
-* Weisen Sie im Hierarchiefenster das **RoverExplorer** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **ObjectManipulator** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
 
@@ -127,7 +127,7 @@ Klicken Sie in der SpeechInputHandler-Komponente auf das kleine **+** -Symbol, u
 
 * Geben Sie im Feld **Keyword** (Schlüsselwort) **Enable Tap to Place** (Zum Platzieren tippen aktivieren) ein, um auf den Sprachbefehl „Enable Tap to Place“ (Zum Platzieren tippen aktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
 * Klicken Sie auf das kleine **+** -Symbol, um ein Ereignis hinzuzufügen
-* Weisen Sie im Hierarchiefenster das Objekt selbst, d. h. das gleiche **RoverAssembly** -Objekt, dem Feld **None (Object)** (Ohne (Objekt)) zu
+* Weisen Sie im Hierarchiefenster das Objekt selbst, d. h. das gleiche **RoverAssembly**-Objekt, dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **TapToPlace** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Aktivieren Sie das Argumentkontrollkästchen, so dass es **aktiviert** ist
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Spatial Anchors
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Spatial Anchors, Azure Cloud Services, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353248"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679339"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4. Integrieren von Azure Spatial Anchors
 
@@ -45,11 +45,11 @@ Navigieren Sie im Projektfenster zu **Assets > MRTK.Tutorials.AzureCloudServices
 
 Ziehen Sie das Prefab **Anchor Manager** (Anker-Manager) aus dem Ordner **Manager** mithilfe von Drag & Drop in die Hierarchie der Szene.
 
-Wählen Sie „ **Anchor Manager** GameObject“ in der Hierarchie aus. Im Abschnitt „Inspector“ finden Sie **Spatial Anchor Manager (Script)** . Suchen Sie nach der Konto-ID und dem Schlüsselfeld, und fügen Sie die Anmeldeinformationen hinzu, die Sie in der vorherigen Phase als Voraussetzung erstellt haben.
+Wählen Sie „**Anchor Manager** GameObject“ in der Hierarchie aus. Im Abschnitt „Inspector“ finden Sie **Spatial Anchor Manager (Script)** . Suchen Sie nach der Konto-ID und dem Schlüsselfeld, und fügen Sie die Anmeldeinformationen hinzu, die Sie in der vorherigen Phase als Voraussetzung erstellt haben.
 
 ![Unity mit neu hinzugefügtem, noch ausgewähltem AnchorManager-Prefab](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
-Suchen Sie nun das **Scene Controller** -Objekt (Szenencontroller) in der Hierarchie Ihrer Szene, und wählen Sie es aus. Der **Scene Controller** -Inspektor wird angezeigt.
+Suchen Sie nun das **Scene Controller**-Objekt (Szenencontroller) in der Hierarchie Ihrer Szene, und wählen Sie es aus. Der **Scene Controller**-Inspektor wird angezeigt.
 
 ![Unity mit konfigurierter SceneController-Skriptkomponente](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
@@ -74,7 +74,7 @@ Geben Sie den **Namen** des Objekts an, das Sie speichern möchten, und klicken 
 
 Um die Position zu speichern, klicken Sie auf **Save Location** (Position speichern).
 
-Sie sehen einen **Ankerzeiger** , den Sie verschieben und an der Position platzieren können, die Sie speichern möchten. Anschließend wird ein Bestätigungspopupfenster angezeigt. Wenn Sie die Position bestätigen und speichern möchten, klicken Sie auf **Yes** (Ja). Andernfalls können Sie die Position ändern, indem Sie auf **No** (Nein) klicken und die Position erneut auswählen.
+Sie sehen einen **Ankerzeiger**, den Sie verschieben und an der Position platzieren können, die Sie speichern möchten. Anschließend wird ein Bestätigungspopupfenster angezeigt. Wenn Sie die Position bestätigen und speichern möchten, klicken Sie auf **Yes** (Ja). Andernfalls können Sie die Position ändern, indem Sie auf **No** (Nein) klicken und die Position erneut auswählen.
 
 Nachdem Sie die Position durch Klicken auf **Yes** bestätigt haben, werden die Position und die Anker-ID im Azure-Cloudspeicher gespeichert. Nach dem Speichern wird das **Objekttag** im Anker mit dem Namen des Objekts angezeigt.
 

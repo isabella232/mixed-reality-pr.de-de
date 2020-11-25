@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 07130f7d8f10464219458be4ddd5c420a0512b51
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: ec158de1aa8b8e6401802b68098eb7acd883d7e6
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416986"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679279"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrieren und Verwenden von Spracherkennung und Transkription
 
@@ -59,7 +59,7 @@ Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoption der räumlich
 
 Da Sie das Speech SDK für die Spracherkennung und -Transkription verwenden, müssen Sie die MRTK-Sprachbefehle so konfigurieren, dass sie die Funktionalität des Speech SDKs nicht beeinträchtigen. Um dies zu erreichen, können Sie das Startverhalten der Sprachbefehle vom automatischen Start auf manuellen Start umstellen.
 
-Wählen Sie bei im Hierarchiefenster ausgewähltem **MixedRealityToolkit** -Objekt im Inspektorfenster die Registerkarte **Input** (Eingabe) aus, klonen Sie das **DefaultHoloLens2InputSystemProfile** und das **DefaultMixedRealitySpeechCommandsProfile** , und ändern Sie dann die Sprachbefehle **Start Behavior** (Startverhalten) in **Manual Start** (Manueller Start):
+Wählen Sie bei im Hierarchiefenster ausgewähltem **MixedRealityToolkit**-Objekt im Inspektorfenster die Registerkarte **Input** (Eingabe) aus, klonen Sie das **DefaultHoloLens2InputSystemProfile** und das **DefaultMixedRealitySpeechCommandsProfile**, und ändern Sie dann die Sprachbefehle **Start Behavior** (Startverhalten) in **Manual Start** (Manueller Start):
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
@@ -72,13 +72,13 @@ Wählen Sie im Unity-Menü **Edit** > **Project Settings...** (Bearbeiten > Proj
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
-Scrollen Sie in den **Publishing Settings** nach unten zum Abschnitt **Capabilities** (Funktionen), und vergewissern Sie sich, dass die Funktionen **InternetClient** , **Microphone** und **SpatialPerception** , die Sie im Rahmen der Erstellung des Projekts zu Beginn des Tutorials erstellt haben, aktiviert sind. Aktivieren Sie dann die Funktionen **InternetClientServer** und **PrivateNetworkClientServer** :
+Scrollen Sie in den **Publishing Settings** nach unten zum Abschnitt **Capabilities** (Funktionen), und vergewissern Sie sich, dass die Funktionen **InternetClient**, **Microphone** und **SpatialPerception**, die Sie im Rahmen der Erstellung des Projekts zu Beginn des Tutorials erstellt haben, aktiviert sind. Aktivieren Sie dann die Funktionen **InternetClientServer** und **PrivateNetworkClientServer**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
 ## <a name="importing-the-tutorial-assets"></a>Importieren der Tutorialressourcen
 
-Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind** :
+Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
 
 * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage) (latest version)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
@@ -95,26 +95,26 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 
 In diesem Abschnitt bereiten Sie die Szene vor, indem Sie das Prefab für das Tutorial hinzufügen und die Komponente „Lunarcom Controller (Skript)“ konfigurieren, um Ihre Szene zu steuern.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs** , und ziehen Sie das **Lunarcom** -Prefab auf das Hierarchiefenster, um es Ihrer Szene hinzuzufügen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureSpeechServices** > **Prefabs**, und ziehen Sie das **Lunarcom**-Prefab auf das Hierarchiefenster, um es Ihrer Szene hinzuzufügen:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-1.png)
 
-Verwenden Sie bei im Hierarchiefenster ausgewähltem **Lunarcom** -Objekt im Inspektorfenster die Schaltfläche **Komponente hinzufügen** , um die Komponente **Lunarcom Controller (Script)** zum Lunarcom-Objekt hinzuzufügen:
+Verwenden Sie bei im Hierarchiefenster ausgewähltem **Lunarcom**-Objekt im Inspektorfenster die Schaltfläche **Komponente hinzufügen**, um die Komponente **Lunarcom Controller (Script)** zum Lunarcom-Objekt hinzuzufügen:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-2.png)
 
 > [!NOTE]
 > Die Komponente „Lunarcom Controller (Script)“ ist kein Bestandteil des MRTK. Sie wurde zusammen mit den Ressourcen für dieses Tutorial zur Verfügung gestellt.
 
-Klappen Sie das noch ausgewählte **Lunarcom** -Objekt auf, um seine untergeordneten Objekte anzuzeigen, und ziehen Sie dann das **Terminal** -Objekt auf das **Terminal** -Feld der Lunarcom Controller (Script)-Komponente:
+Klappen Sie das noch ausgewählte **Lunarcom**-Objekt auf, um seine untergeordneten Objekte anzuzeigen, und ziehen Sie dann das **Terminal**-Objekt auf das **Terminal**-Feld der Lunarcom Controller (Script)-Komponente:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-3.png)
 
-Klappen Sie bei noch ausgewähltem **Lunarcom** -Objekt das Terminal-Objekt auf, um seine untergeordneten Objekte anzuzeigen, ziehen Sie dann das **ConnectionLight** -Objekt auf das **ConnectionLight** -Feld der Lunarcom Controller (Script)-Komponente und das **OutputText** -Objekt auf das **Output Text** -Feld:
+Klappen Sie bei noch ausgewähltem **Lunarcom**-Objekt das Terminal-Objekt auf, um seine untergeordneten Objekte anzuzeigen, ziehen Sie dann das **ConnectionLight**-Objekt auf das **ConnectionLight**-Feld der Lunarcom Controller (Script)-Komponente und das **OutputText**-Objekt auf das **Output Text**-Feld:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-4.png)
 
-Klappen Sie bei noch ausgewähltem **Lunarcom** -Objekt das Buttons-Objekt auf, um seine untergeordneten Objekte anzuzeigen, und klappen Sie dann im Inspektorfenster die **Buttons** -Liste auf, legen Sie seine **Size** (Größe) auf 3 fest, und ziehen Sie die Objekte **MicButton** , **SatelliteButton** und **RocketButton** auf die **Element** -Felder 0, 1 bzw. 2:
+Klappen Sie bei noch ausgewähltem **Lunarcom**-Objekt das Buttons-Objekt auf, um seine untergeordneten Objekte anzuzeigen, und klappen Sie dann im Inspektorfenster die **Buttons**-Liste auf, legen Sie seine **Size** (Größe) auf 3 fest, und ziehen Sie die Objekte **MicButton**, **SatelliteButton** und **RocketButton** auf die **Element**-Felder 0, 1 bzw. 2:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section5-step1-5.png)
 
@@ -122,7 +122,7 @@ Klappen Sie bei noch ausgewähltem **Lunarcom** -Objekt das Buttons-Objekt auf, 
 
 Um Azure Speech Services zu verwenden, müssen Sie eine Azure-Ressource erstellen und einen API-Schlüssel für den Speech Service abrufen. Befolgen Sie die Anweisungen unter [Speech Service kostenlos testen](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started), und notieren Sie sich Ihre Dienstregion (auch als Standort bezeichnet) und den API-Schlüssel (auch als Schlüssel1 oder Schlüssel2 bezeichnet).
 
-Wählen Sie in Ihrem Hierarchiefenster das **Lunarcom** -Objekt aus, suchen Sie dann im Inspektorfenster den Abschnitt **Speech SDK Credentials** der **Lunarcom Controller (Script)** -Komponente, und konfigurieren Sie ihn wie folgt:
+Wählen Sie in Ihrem Hierarchiefenster das **Lunarcom**-Objekt aus, suchen Sie dann im Inspektorfenster den Abschnitt **Speech SDK Credentials** der **Lunarcom Controller (Script)** -Komponente, und konfigurieren Sie ihn wie folgt:
 
 * Geben Sie im Feld **Speech Service API Key** Ihren API-Schlüssel (Schlüssel1 oder Schlüssel2) ein
 * Geben Sie im Feld **Speech Service Region** Ihre Dienstregion (Standort) ein. Verwenden Sie dazu Kleinbuchstaben, und entfernen Sie alle Leerzeichen.
@@ -131,7 +131,7 @@ Wählen Sie in Ihrem Hierarchiefenster das **Lunarcom** -Objekt aus, suchen Sie 
 
 ## <a name="using-speech-recognition-to-transcribe-speech"></a>Verwenden der Spracherkennung zum Transkribieren von Sprache
 
-Wählen Sie im Hierarchiefenster das **Lunarcom** -Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen** , um dem Lunarcom-Objekt die Komponente **Lunarcom Speech Recognizer (Script)** hinzuzufügen:
+Wählen Sie im Hierarchiefenster das **Lunarcom**-Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen**, um dem Lunarcom-Objekt die Komponente **Lunarcom Speech Recognizer (Script)** hinzuzufügen:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-1.png)
 

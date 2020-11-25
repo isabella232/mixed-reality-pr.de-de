@@ -6,13 +6,13 @@ ms.author: kurtie
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unity, Mixed Reality, Entwicklung, erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation
-ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
+ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638567"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679899"
 ---
 # <a name="unity-development-overview"></a>Unity-Entwicklung – Übersicht
 

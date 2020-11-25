@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, erste Schritte, MRTK, UXT, UX Tools, Dokumentation
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699187"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679839"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5. Hinzufügen einer Taste und Zurücksetzen von Figurenpositionen
 
@@ -30,13 +30,13 @@ Im vorhergehenden Tutorial haben Sie den Pawn- und Manipulatorkomponenten Handin
 ## <a name="creating-a-reset-function"></a>Erstellen einer Funktion zum Zurücksetzen
 Ihre erste Aufgabe besteht darin, eine Funktionsblaupause zu erstellen, mit der die Position einer Schachfigur auf die ursprüngliche Position in der Szene zurückgesetzt wird. 
 
-1.  Öffnen Sie **WhiteKing** , klicken Sie auf das Symbol **+** unter **My Blueprint** (Meine Blaupause) neben dem Abschnitt **Functions** (Funktionen), und geben Sie ihr den Namen **Reset Location** (Position zurücksetzen). 
+1.  Öffnen Sie **WhiteKing**, klicken Sie auf das Symbol **+** unter **My Blueprint** (Meine Blaupause) neben dem Abschnitt **Functions** (Funktionen), und geben Sie ihr den Namen **Reset Location** (Position zurücksetzen). 
 
 2.  Ziehen Sie die Ausführung aus **Reset Location** auf das Blaupausenraster, um den Knoten **SetActorRelativeTransform** zu erstellen. 
     * Durch diese Funktion wird die Transformation (Position, Rotation und Skalierung) eines Akteurs relativ zum übergeordneten Element festgelegt. Sie verwenden diese Funktion, um die Position des Königs auf dem Schachbrett zurückzusetzen, auch wenn sich dieses nicht mehr an seiner ursprünglichen Position befindet. 
     
-3. Klicken Sie mit der rechten Maustaste auf eine Stelle im Ereignisdiagramm, wählen Sie **Make Transform** (Transformation erstellen) aus, und ändern Sie **Location** (Position) in **X = -26** , **Y = 4** , **Z = 0** .
-    * Verbinden Sie **Return Value** (Rückgabewert) mit dem Pin **New Relative Transform** (Neue relative Transformation) in **SetActorRelativeTransform** . 
+3. Klicken Sie mit der rechten Maustaste auf eine Stelle im Ereignisdiagramm, wählen Sie **Make Transform** (Transformation erstellen) aus, und ändern Sie **Location** (Position) in **X = -26**, **Y = 4**, **Z = 0**.
+    * Verbinden Sie **Return Value** (Rückgabewert) mit dem Pin **New Relative Transform** (Neue relative Transformation) in **SetActorRelativeTransform**. 
 
 ![Funktion zum Zurücksetzen der Position](images/unreal-uxt/5-function.PNG)
 
@@ -47,15 +47,15 @@ Ihre erste Aufgabe besteht darin, eine Funktionsblaupause zu erstellen, mit der 
 Nachdem die Funktion nun ordnungsgemäß eingerichtet wurde, besteht die nächste Aufgabe darin, eine Schaltfläche zu erstellen, die ausgelöst wird, sobald sie berührt wird. 
 
 
-1.  Klicken Sie auf **Add New > Blueprint Class** (Hinzufügen > Blaupausenklasse), erweitern Sie den Bereich **All Classes** (Alle Klassen), und suchen Sie nach **BP_ButtonHoloLens2** . 
-    * Geben Sie Ihr den Namen **ResetButton** , und doppelklicken Sie darauf, um die Blaupause zu öffnen.
+1.  Klicken Sie auf **Add New > Blueprint Class** (Hinzufügen > Blaupausenklasse), erweitern Sie den Bereich **All Classes** (Alle Klassen), und suchen Sie nach **BP_ButtonHoloLens2**. 
+    * Geben Sie Ihr den Namen **ResetButton**, und doppelklicken Sie darauf, um die Blaupause zu öffnen.
 
 > [!NOTE]
 > **BP_ButtonHoloLens2** ist ein 3D-Blaupausenakteur, der im UX Tools-Plug-In enthalten ist.
 
 ![Erstellen Sie die neue Blaupause als Unterklasse der HoloLens 2-Formatvorlagen-Schaltfläche](images/unreal-uxt/5-subclass.PNG)
 
-2. Vergewissern Sie sich, dass **ResetButton(self)** im Bereich **Komponenten** ausgewählt ist. Navigieren Sie im Bereich **Details** zum Abschnitt **Button** (Schaltfläche). Ändern Sie die standardmäßige **Schaltflächenbezeichnung** in „Zurücksetzen“. Erweitern Sie den Abschnitt **Schaltflächen-Symbolpinsel** , und drücken Sie die Schaltfläche **Open Icon Brush Editor** (Symbolpinsel-Editor öffnen). 
+2. Vergewissern Sie sich, dass **ResetButton(self)** im Bereich **Komponenten** ausgewählt ist. Navigieren Sie im Bereich **Details** zum Abschnitt **Button** (Schaltfläche). Ändern Sie die standardmäßige **Schaltflächenbezeichnung** in „Zurücksetzen“. Erweitern Sie den Abschnitt **Schaltflächen-Symbolpinsel**, und drücken Sie die Schaltfläche **Open Icon Brush Editor** (Symbolpinsel-Editor öffnen). 
 
 ![Festlegen von Bezeichnung und Symbol für die Schaltfläche](images/unreal-uxt/5-buttonconfig.PNG)
 
@@ -70,8 +70,8 @@ Es gibt zahlreiche weitere Einstellungen, die Sie anpassen können, um Ihre Scha
     
 Hier soll die Funktion **Reset Location** für **WhiteKing** aufgerufen werden. Dazu ist ein Verweis auf den Akteur **WhiteKing** im Level erforderlich. 
 
-4.  Navigieren Sie im Bereich **My Blueprint** (Meine Blaupause) zum Abschnitt **Variables** (Variablen), klicken Sie auf die Schaltfläche  **+** , und geben Sie der Variablen den Namen **WhiteKing** . 
-    * Wählen Sie im Bereich **Details** die Dropdownliste neben **Variable Type** (Variablentyp) aus, suchen Sie nach **WhiteKing** , und wählen Sie **Object Reference** (Objektverweis) aus. 
+4.  Navigieren Sie im Bereich **My Blueprint** (Meine Blaupause) zum Abschnitt **Variables** (Variablen), klicken Sie auf die Schaltfläche **+** , und geben Sie der Variablen den Namen **WhiteKing**. 
+    * Wählen Sie im Bereich **Details** die Dropdownliste neben **Variable Type** (Variablentyp) aus, suchen Sie nach **WhiteKing**, und wählen Sie **Object Reference** (Objektverweis) aus. 
     * Aktivieren Sie das Kontrollkästchen neben **Instance Editable** (Bearbeitbare Instanz). Dadurch kann die Variable von der Hauptebene aus festgelegt werden. 
 
 ![Erstellen einer Variablen](images/unreal-uxt/5-var.PNG)
@@ -85,7 +85,7 @@ Jetzt muss nur noch die Funktion zum Zurücksetzen ausgelöst werden, wenn die S
 
 ![Aufrufen der Funktion zum Zurücksetzen der Position über „On Button Pressed“ (Beim Drücken des Schalters)](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  Ziehen Sie **ResetButton** in den Viewport, und legen Sie die Position auf **X = 50** , **Y = -25** und **Z = 10** fest. Legen Sie die Drehung auf **Z = 180** fest. Legen Sie unter **Default** (Standard) den Wert der Variablen **WhiteKing** auf **WhiteKing** fest.
+2.  Ziehen Sie **ResetButton** in den Viewport, und legen Sie die Position auf **X = 50**, **Y = -25** und **Z = 10** fest. Legen Sie die Drehung auf **Z = 180** fest. Legen Sie unter **Default** (Standard) den Wert der Variablen **WhiteKing** auf **WhiteKing** fest.
 
 ![Festlegen der Variablen](images/unreal-uxt/5-buttonlevel.PNG)
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ae2726be302bf8ebf342ebd95233b28d7e534423
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353448"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679939"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Erste Schritte mit Azure Spatial Anchors
 
@@ -54,7 +54,7 @@ Wählen Sie im Unity-Menü **Fenster** > **Package Manager** (Paket-Manager) aus
 
 ## <a name="importing-the-tutorial-assets"></a>Importieren der Tutorialressourcen
 
-Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind** :
+Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage) (Version 2.2.1)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
@@ -74,12 +74,12 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 
 In diesem Abschnitt bereiten Sie die Szene vor, indem Sie einige der Tutorial-Prefabs hinzufügen.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs** , klicken Sie auf die folgenden Prefabs, und ziehen Sie sie in das Hierarchiefenster, um sie Ihrer Szene hinzuzufügen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureSpatialAnchors** > **Prefabs**, klicken Sie auf die folgenden Prefabs, und ziehen Sie sie in das Hierarchiefenster, um sie Ihrer Szene hinzuzufügen:
 
-* **ButtonParent** -Prefabs
-* **DebugWindow** -Prefabs
-* **Instructions** -Prefabs
-* **ParentAnchor** -Prefabs
+* **ButtonParent**-Prefabs
+* **DebugWindow**-Prefabs
+* **Instructions**-Prefabs
+* **ParentAnchor**-Prefabs
 
 ![Unity mit neu hinzugefügten, ausgewählten Prefabs](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
@@ -90,53 +90,53 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureS
 
 In diesem Abschnitt fügen Sie Skripts in die Szene ein, um eine Reihe von Schaltflächenereignissen zu erstellen, mit denen die Grundlagen des Verhaltens beider lokaler Anker und der Azure Spatial Anchors in einer Anwendung veranschaulicht werden.
 
-Klappen Sie im Hierarchiefenster das **ButtonParent** -Objekt auf, und wählen Sie im Inspektorfenster das erste untergeordnete Objekt mit dem Namen **StartAzureSession** aus. Konfigurieren Sie dann das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
+Klappen Sie im Hierarchiefenster das **ButtonParent**-Objekt auf, und wählen Sie im Inspektorfenster das erste untergeordnete Objekt mit dem Namen **StartAzureSession** aus. Konfigurieren Sie dann das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **ParentAnchor** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **ParentAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **StartAzureSession ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die StartAzureSession-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **StopAzureSession** aus, und konfigurieren Sie dann im Inspektorfenster das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **ParentAnchor** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **ParentAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **StopAzureSession ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die StopAzureSession-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **CreateAzureAnchor** aus, und konfigurieren Sie dann im Inspektorfenster das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **ParentAnchor** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **ParentAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **CreateAzureAnchor ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
-* Weisen Sie das **ParentAnchor** -Objekt dem leeren Feld **None (Game Object)** (Ohne (Spielobjekt)) zu, um es als Argument für die Funktion „CreateAzureAnchor ()“ festzulegen
+* Weisen Sie das **ParentAnchor**-Objekt dem leeren Feld **None (Game Object)** (Ohne (Spielobjekt)) zu, um es als Argument für die Funktion „CreateAzureAnchor ()“ festzulegen
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die CreateAzureAnchor-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
 Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **RemoveLocalAnchor** aus, und konfigurieren Sie dann im Inspektorfenster das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **ParentAnchor** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **ParentAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **RemoveLocalAnchor ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
-* Weisen Sie das **ParentAnchor** -Objekt dem leeren Feld **None (Game Object)** (Ohne (Spielobjekt)) zu, um es als Argument für die Funktion „RemoveLocalAnchor ()“ festzulegen
+* Weisen Sie das **ParentAnchor**-Objekt dem leeren Feld **None (Game Object)** (Ohne (Spielobjekt)) zu, um es als Argument für die Funktion „RemoveLocalAnchor ()“ festzulegen
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die RemoveLocalAnchor-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
 Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **FindAzureAnchor** aus, und konfigurieren Sie dann im Inspektorfenster das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **ParentAnchor** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **ParentAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **FindAzureAnchor ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die FindAzureAnchor-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **DeleteAzureAnchor** aus, und konfigurieren Sie dann im Inspektorfenster das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **DeleteAzureAnchor** -Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **DeleteAzureAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **DeleteAzureAnchor ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die DeleteAzureAnchor-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>Verbinden der Szene mit der Azure-Ressource
 
-Wählen Sie im Hierarchiefenster das **ParentAnchor** -Objekt aus, und suchen Sie dann im Inspektorfenster die Komponente **Spatial Anchor Manager (Script)** . Konfigurieren Sie den Abschnitt **Credentials** (Anmeldeinformationen) mit den Anmeldeinformationen aus dem Azure Spatial Anchors-Konto, das Sie im Rahmen der [Voraussetzungen](mr-learning-asa-01.md#prerequisites) für diese Tutorialreihe erstellt haben:
+Wählen Sie im Hierarchiefenster das **ParentAnchor**-Objekt aus, und suchen Sie dann im Inspektorfenster die Komponente **Spatial Anchor Manager (Script)** . Konfigurieren Sie den Abschnitt **Credentials** (Anmeldeinformationen) mit den Anmeldeinformationen aus dem Azure Spatial Anchors-Konto, das Sie im Rahmen der [Voraussetzungen](mr-learning-asa-01.md#prerequisites) für diese Tutorialreihe erstellt haben:
 
 * Fügen Sie in das Feld **Spatial Anchors Account ID** die **Konto-ID** Ihres Azure Spatial Anchors-Kontos ein
 * Fügen Sie in das Feld **Spatial Anchors Account Key** (Spatial Anchors-Kontoschlüssel) den primären oder sekundären **Zugriffsschlüssel** aus Ihrem Azure Spatial Anchors-Konto ein
@@ -172,18 +172,18 @@ Wenn die App auf Ihrem Gerät ausgeführt wird, befolgen Sie die Anweisungen auf
 
 In den vorherigen Abschnitten haben Sie die Grundlagen von Azure Spatial Anchors kennengelernt. Wir haben einen Würfel verwendet, um das übergeordnete Spielobjekt mit dem angefügten Anker dazustellen und zu visualisieren. In diesem Abschnitt erfahren Sie, wie Sie ein gesamtes Benutzererlebnis verankern, indem Sie es als untergeordnetes Objekt des ParentAnchor-Objekts platzieren.
 
-Wählen Sie im Hierarchiefenster das **ParentAnchor** -Objekt aus, und konfigurieren Sie dann im Inspektorfenster die **Transform** -Komponenten (Transformieren) wie folgt:
+Wählen Sie im Hierarchiefenster das **ParentAnchor**-Objekt aus, und konfigurieren Sie dann im Inspektorfenster die **Transform**-Komponenten (Transformieren) wie folgt:
 
 * Ändern Sie die **Scale X** (X-Skalierung) in 1,1
 * Ändern Sie die **Scale Z** (Z-Skalierung) in 1,1
 
 ![Unity mit ausgewähltem, positioniertem und skaliertem ParentAnchor-Objekt](images/mr-learning-asa/asa-02-section8-step1-1.png)
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** (Medienobjekte > MRTK.Tutorials.GettingStarted > Prefabs > Rover), klicken Sie dann auf das Prefab **RoverExplorer_Complete** , und ziehen Sie es auf das Hierarchiefenster, um es der Szene hinzuzufügen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **Rover** (Medienobjekte > MRTK.Tutorials.GettingStarted > Prefabs > Rover), klicken Sie dann auf das Prefab **RoverExplorer_Complete**, und ziehen Sie es auf das Hierarchiefenster, um es der Szene hinzuzufügen:
 
 ![Unity mit neu hinzugefügtem, ausgewähltem RoverExplorer_Complete-Prefab](images/mr-learning-asa/asa-02-section8-step1-2.png)
 
-Ziehen Sie das noch im Hierarchiefenster ausgewählte neu hinzugefügte RoverModule_Complete-Objekt auf das **ParentAnchor** -Objekt, um es zu einem untergeordneten Objekt des ParentAnchor-Objekts zu machen:
+Ziehen Sie das noch im Hierarchiefenster ausgewählte neu hinzugefügte RoverModule_Complete-Objekt auf das **ParentAnchor**-Objekt, um es zu einem untergeordneten Objekt des ParentAnchor-Objekts zu machen:
 
 ![Unity mit RoverExplorer_Complete-Objekt, das als untergeordnetes Element von ParentAnchor festgelegt ist](images/mr-learning-asa/asa-02-section8-step1-3.png)
 

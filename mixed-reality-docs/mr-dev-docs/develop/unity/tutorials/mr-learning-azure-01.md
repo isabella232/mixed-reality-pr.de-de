@@ -5,23 +5,23 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Azure, Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchor, Azure Bot Framework
+keywords: Azure, Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchor, Azure Bot Framework, Azure Cloud Services, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416976"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679419"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Azure Cloud Services für HoloLens 2
 
 ## <a name="overview"></a>Übersicht
 
-Willkommen zu dieser Reihe von Tutorials, die sich darauf konzentrieren, **Azure Cloud Services** in eine **HoloLens 2** Anwendung einzubinden. In dieser fünfteiligen Tutorialserie erfahren Sie, wie Sie mehrere **Azure Cloud Services** in ein **Unity** -Projekt für **HoloLens 2** integrieren können. Mit jedem weiteren Kapitel fügen Sie neue **Azure Cloud Services** hinzu, um die Anwendungsfunktionen und die Benutzererfahrung zu erweitern, während Sie die Grundlagen jedes **Azure Cloud Service** kennenlernen.
+Willkommen zu dieser Reihe von Tutorials, die sich darauf konzentrieren, **Azure Cloud Services** in eine **HoloLens 2** Anwendung einzubinden. In dieser fünfteiligen Tutorialserie erfahren Sie, wie Sie mehrere **Azure Cloud Services** in ein **Unity**-Projekt für **HoloLens 2** integrieren können. Mit jedem weiteren Kapitel fügen Sie neue **Azure Cloud Services** hinzu, um die Anwendungsfunktionen und die Benutzererfahrung zu erweitern, während Sie die Grundlagen jedes **Azure Cloud Service** kennenlernen.
 
 > [!NOTE]
-> Diese Tutorialserie konzentriert sich auf **HoloLens 2** , aber aufgrund des plattformübergreifenden Charakters von Unity gelten die meisten Lerninhalte auch für Desktop- und Smartphoneanwendungen.
+> Diese Tutorialserie konzentriert sich auf **HoloLens 2**, aber aufgrund des plattformübergreifenden Charakters von Unity gelten die meisten Lerninhalte auch für Desktop- und Smartphoneanwendungen.
 
 In diesem ersten Tutorial machen wir Sie mit den Zielen der Reihe und den einzelnen Azure Cloud-Diensten, die Sie benutzen werden, sowie mit dem Einrichten des Unity-Ausgangsprojekts bekannt.
 
@@ -47,7 +47,7 @@ Der Benutzer kann ein **nachverfolgtes Objekt** erstellen, indem er entweder ein
 
 ## <a name="azure-cloud-services"></a>Azure Cloud Services
 
-Sie verwenden die folgenden **Azure Cloud** -Dienste, um die oben genannten Features zu implementieren:
+Sie verwenden die folgenden **Azure Cloud**-Dienste, um die oben genannten Features zu implementieren:
 
 ### <a name="azure-storage"></a>Azure Storage
 
@@ -106,7 +106,7 @@ Wählen Sie im Unity-Menü **Fenster** > **Package Manager** (Paket-Manager) aus
 
 ## <a name="importing-the-tutorial-assets"></a>Importieren der Tutorialressourcen
 
-Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind** :
+Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
 
 * [AzureSpatialAnchors.unitypackage](https://github.com/Azure/azure-spatial-anchors-samples/releases/download/v2.2.1/AzureSpatialAnchors.unitypackage)
 * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
@@ -127,11 +127,11 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 
 In diesem Abschnitt bereiten Sie die Szene vor, indem Sie einige der Tutorial-Prefabs hinzufügen.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager**. Klicken Sie mit gedrückter STRG-Taste auf **SceneController** , **RootMenu** und **DataManager** , um die drei Prefabs auszuwählen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager**. Klicken Sie mit gedrückter STRG-Taste auf **SceneController**, **RootMenu** und **DataManager**, um die drei Prefabs auszuwählen:
 
 ![Unity mit ausgewählten Prefabs SceneController, RootMenu und DataManager](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-**SceneController (Prefab)** enthält zwei Skripts: **SceneController (Script)** und **UnityDispatcher (Script)** . Die **SceneController** -Skriptkomponente enthält mehrere UX-Funktionen und ermöglicht die Fotoerfassungsfunktionalität, während **UnityDispatcher** eine Hilfsklasse ist, um Execute-Aktionen für den Unity-Hauptthread zuzulassen.
+**SceneController (Prefab)** enthält zwei Skripts: **SceneController (Script)** und **UnityDispatcher (Script)** . Die **SceneController**-Skriptkomponente enthält mehrere UX-Funktionen und ermöglicht die Fotoerfassungsfunktionalität, während **UnityDispatcher** eine Hilfsklasse ist, um Execute-Aktionen für den Unity-Hauptthread zuzulassen.
 
 **RootMenu (Prefab)** ist das primäre UI-Prefab, das alle Benutzeroberflächenfenster enthält, die über verschiedene kleine Skriptkomponenten miteinander verbunden sind und den allgemeinen UX-Fluss der Anwendung steuern.
 
@@ -141,7 +141,7 @@ Ziehen Sie die drei noch ausgewählten Prefabs nun auf das Hierarchiefenster, um
 
 ![Unity mit noch ausgewählten, neu hinzugefügten Prefabs SceneController, RootMenu und DataManager](images/mr-learning-azure/tutorial1-section5-step1-2.png)
 
-Um sich auf die Objekte in der Szene zu konzentrieren, können Sie auf das **RootMenu** -Objekt doppelklicken und die Ansicht dann etwas verkleinern:
+Um sich auf die Objekte in der Szene zu konzentrieren, können Sie auf das **RootMenu**-Objekt doppelklicken und die Ansicht dann etwas verkleinern:
 
 ![Unity mit ausgewähltem RootMenu-Objekt](images/mr-learning-azure/tutorial1-section5-step1-3.png)
 
@@ -150,27 +150,27 @@ Um sich auf die Objekte in der Szene zu konzentrieren, können Sie auf das **Roo
 
 ## <a name="configuring-the-scene"></a>Konfigurieren der Szene
 
-In diesem Abschnitt verbinden Sie *SceneManager* , *DataManager* und *RootMenu* , um eine funktionierende Szene zu erhalten, die für das folgende Tutorial [Integrieren von Azure Storage](mr-learning-azure-01.md) bereit ist.
+In diesem Abschnitt verbinden Sie *SceneManager*, *DataManager* und *RootMenu*, um eine funktionierende Szene zu erhalten, die für das folgende Tutorial [Integrieren von Azure Storage](mr-learning-azure-01.md) bereit ist.
 
 ### <a name="connect-the-objects"></a>Verbinden der Objekte
 
-Wählen Sie im Hierarchiefenster das **DataManager** -Objekt aus:
+Wählen Sie im Hierarchiefenster das **DataManager**-Objekt aus:
 
 ![Unity mit ausgewähltem DataManager-Objekt](images/mr-learning-azure/tutorial1-section6-step1-1.png)
 
-Suchen Sie im Inspektor-Fenster die Komponente **DataManager (Script)** . Sie sehen einen leeren Slot für das Ereignis **On Data Manager Ready ()** . Ziehen Sie nun das **SceneController** -Objekt aus dem Hierarchiefenster in das **On Data Manager Ready ()** -Ereignis.
+Suchen Sie im Inspektor-Fenster die Komponente **DataManager (Script)** . Sie sehen einen leeren Slot für das Ereignis **On Data Manager Ready ()** . Ziehen Sie nun das **SceneController**-Objekt aus dem Hierarchiefenster in das **On Data Manager Ready ()** -Ereignis.
 
 ![Unity mit hinzugefügtem DataManager-Ereignislistener](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
-Sie werden feststellen, dass das Dropdownmenü des Ereignisses aktiviert wurde. Klicken Sie auf das Dropdownmenü, navigieren Sie zu **SceneController** , und wählen Sie im Untermenü die Option **Init ()** aus:
+Sie werden feststellen, dass das Dropdownmenü des Ereignisses aktiviert wurde. Klicken Sie auf das Dropdownmenü, navigieren Sie zu **SceneController**, und wählen Sie im Untermenü die Option **Init ()** aus:
 
 ![Unity mit hinzugefügter DataManager-Ereignisaktion](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
-Wählen Sie im Hierarchyfenster das **SceneController** -Objekt aus. Im Inspektor finden Sie dort die Komponente **SceneController (Script)** .
+Wählen Sie im Hierarchyfenster das **SceneController**-Objekt aus. Im Inspektor finden Sie dort die Komponente **SceneController (Script)** .
 
 ![Unity mit ausgewähltem SceneController](images/mr-learning-azure/tutorial1-section6-step1-4.png)
 
-Sie werden feststellen, dass es mehrere nicht mit Daten aufgefüllte Felder gibt. Ändern Sie dies nun. Verschieben Sie das **DataManager** -Objekt aus der Hierarchie in das Feld *Data Manager* , und verschieben Sie das **RootMenu** -GameObject aus der Hierarchie in das Feld *Main Menu* (Hauptmenü).
+Sie werden feststellen, dass es mehrere nicht mit Daten aufgefüllte Felder gibt. Ändern Sie dies nun. Verschieben Sie das **DataManager**-Objekt aus der Hierarchie in das Feld *Data Manager*, und verschieben Sie das **RootMenu**-GameObject aus der Hierarchie in das Feld *Main Menu* (Hauptmenü).
 
 ![Unity mit konfiguriertem SceneController](images/mr-learning-azure/tutorial1-section6-step1-5.png)
 
@@ -190,7 +190,7 @@ Wählen Sie im Fenster „Project Settings“ (Projekteinstellungen) die Option 
 
 ![Veröffentlichungseinstellungen in Unity](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
-Scrollen Sie in den **Publishing Settings** nach unten zum Abschnitt **Capabilities** (Funktionen), und vergewissern Sie sich, dass die Funktionen **InternetClient** , **Microphone** und **SpatialPerception** , die Sie im Rahmen der Erstellung des Projekts zu Beginn des Tutorials erstellt haben, aktiviert sind. Aktivieren Sie dann die Funktionen **InternetClientServer** , **PrivateNetworkClientServer** und **Webcam** :
+Scrollen Sie in den **Publishing Settings** nach unten zum Abschnitt **Capabilities** (Funktionen), und vergewissern Sie sich, dass die Funktionen **InternetClient**, **Microphone** und **SpatialPerception**, die Sie im Rahmen der Erstellung des Projekts zu Beginn des Tutorials erstellt haben, aktiviert sind. Aktivieren Sie dann die Funktionen **InternetClientServer**, **PrivateNetworkClientServer** und **Webcam**:
 
 ![Unity-Funktionen](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 
@@ -215,7 +215,7 @@ Diese Funktionen sind für Dienste wie *Chat Bot* und *Custom Vision* erforderli
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 
-In diesem Tutorial wurde Ihnen die Tutorialreihe vorgestellt, Sie haben erfahren, welche Funktionen Sie implementieren und wie **Azure Cloud** Services an die Realisierung Ihrer *HoloLens  2* -Anwendung anknüpfen. Sie haben dem Projekt die erforderlichen Komponenten hinzugefügt und die Szene für diese Tutorialreihe vorbereitet.
+In diesem Tutorial wurde Ihnen die Tutorialreihe vorgestellt, Sie haben erfahren, welche Funktionen Sie implementieren und wie **Azure Cloud** Services an die Realisierung Ihrer *HoloLens  2*-Anwendung anknüpfen. Sie haben dem Projekt die erforderlichen Komponenten hinzugefügt und die Szene für diese Tutorialreihe vorbereitet.
 
 In der nächsten Lektion verwenden Sie Azure Storage als cloudbasierte Persistenzlösung zum Speichern von Daten und Bildern.
 

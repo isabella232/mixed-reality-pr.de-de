@@ -6,13 +6,13 @@ ms.author: dongpark
 ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, Test, Mixed Reality Toolkit, MRTK-Version 2, MRTK, Tools, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: ed3663c9eb3735dc2232a667e605ba4dab5bf1a4
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, Test, Mixed Reality Toolkit, MRTK-Version 2, MRTK, Tools, SDK, HoloLens, HoloLens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, plattformübergreifend
+ms.openlocfilehash: c780084e89e286d9558fafa78c460518f48a0368
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573224"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678559"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>Erste Schritte mit MRTK für Unity
 ![MRTK](../../design/images/MRTK_UX_Hero.png)

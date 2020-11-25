@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a7fa1bdaa72d341eaa49ac70dfa926d8f9bbad7a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699100"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679729"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2. Verwenden der Spracherkennung zum Ausführen von Befehlen
 
@@ -24,21 +24,21 @@ In diesem Tutorial fügen Sie die Möglichkeit hinzu, Befehle mithilfe der Azure
 
 ## <a name="instructions"></a>Anweisungen
 
-Wählen Sie im Hierarchiefenster das **Lunarcom** -Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen** , um dem Lunarcom-Objekt die Komponente **Lunarcom Wake Word Recognizer (Script)** hinzuzufügen und sie wie folgt zu konfigurieren:
+Wählen Sie im Hierarchiefenster das **Lunarcom**-Objekt aus, und verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen**, um dem Lunarcom-Objekt die Komponente **Lunarcom Wake Word Recognizer (Script)** hinzuzufügen und sie wie folgt zu konfigurieren:
 
-* Geben Sie im Feld **Wake Word** (Wort zum Aufwecken) einen passenden Ausdruck ein, z. B. _Terminal aktivieren_ .
-* Geben Sie im Feld **Dismiss Word** (Wort zum Schließen) einen passenden Ausdruck ein, z. B. _Terminal schließen_ .
+* Geben Sie im Feld **Wake Word** (Wort zum Aufwecken) einen passenden Ausdruck ein, z. B. _Terminal aktivieren_.
+* Geben Sie im Feld **Dismiss Word** (Wort zum Schließen) einen passenden Ausdruck ein, z. B. _Terminal schließen_.
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Die Komponente „Lunarcom Wake Word Recognizer (Script)“ ist kein Bestandteil des MRTK. Sie wurde zusammen mit den Ressourcen für dieses Tutorial zur Verfügung gestellt.
 
-Wenn Sie jetzt in den Spielmodus wechseln, wie im vorherigen Tutorial, ist der Terminalbereich standardmäßig aktiviert. Sie können ihn jetzt jedoch deaktivieren, indem Sie das Wort zum Schließen aussprechen, **Terminal schließen** :
+Wenn Sie jetzt in den Spielmodus wechseln, wie im vorherigen Tutorial, ist der Terminalbereich standardmäßig aktiviert. Sie können ihn jetzt jedoch deaktivieren, indem Sie das Wort zum Schließen aussprechen, **Terminal schließen**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-Und es erneut aktivieren, indem Sie das Wort zum Aufwecken sprechen **Terminal aktivieren** :
+Und es erneut aktivieren, indem Sie das Wort zum Aufwecken sprechen **Terminal aktivieren**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 

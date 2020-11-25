@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, erste Schritte, MRTK, UXT, UX Tools, Dokumentation
-ms.openlocfilehash: 07b1012f364b8dc157ac29b5be442561757bb4dc
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 869b947d23c3fbd1e561cef2c3ec41322fefd6a2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957830"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679909"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2. Initialisieren des Projekts und der ersten Anwendung
 
@@ -105,7 +105,7 @@ Die Szene sieht momentan etwas leer aus, aber das beheben Sie, indem Sie die vor
 
 ![Anzeigen oder Ausblenden des Quellenbereichs](images/unreal-uxt/2-showhidesources.PNG)
 
-3. Klicken Sie im **Inhaltsbrowser**auf **Importieren**, wählen Sie im Ordner mit den entpackten Medienobjekten alle Elemente aus, und klicken Sie auf **Öffnen**. 
+3. Klicken Sie im **Inhaltsbrowser** auf **Importieren**, wählen Sie im Ordner mit den entpackten Medienobjekten alle Elemente aus, und klicken Sie auf **Öffnen**. 
     * Dieser Ordner enthält die Gittermodelle der 3D-Objekte für das Schachbrett und Teile im FBX-Format sowie Strukturschemas im TGA-Format, die Sie für Materialien verwenden.  
 
 4. Wenn das Fenster mit den FBX-Importoptionen eingeblendet wird, klappen Sie den Abschnitt **Material** auf, und ändern Sie die **Material Import Method** (Methode für den Materialimport) in **Do Not Create Material** (Kein Material erstellen).

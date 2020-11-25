@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, erste Schritte, MRTK, UXT, UX Tools, Dokumentation
-ms.openlocfilehash: 5af888fe57afce21e9ff0ccfe8144533e7368acf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 82e210aff35f1c41547f022b91114cbca1419830
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698752"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679879"
 ---
 # <a name="3-setting-up-your-project-for-mixed-reality"></a>3. Einrichten Ihres Projekts für Mixed Reality
 
@@ -29,11 +29,11 @@ Im vorherigen Tutorial haben Sie Zeit für das Einrichten des Schach-App-Projekt
 AR-Sitzungen in Unreal kommen nicht aus dem Nichts zustande. Um eine Sitzung zu verwenden, benötigen Sie ein ARSessionConfig-Datenobjekt, mit dem Sie arbeiten können, und das ist Ihre nächste Aufgabe:
 
 1. Klicken Sie im **Content Browser** (Inhaltsbrowser) auf **Add New > Miscellaneous > Data Asset** (Neu hinzufügen > Sonstiges > Datenobjekt). Achten Sie darauf, dass Sie sich auf der Stammebene des Ordners **Content** befinden. 
-    * Wählen Sie **ARSessionConfig** aus, klicken Sie auf **Select** (Auswählen), und geben Sie dem Objekt den Namen **ARSessionConfig** .
+    * Wählen Sie **ARSessionConfig** aus, klicken Sie auf **Select** (Auswählen), und geben Sie dem Objekt den Namen **ARSessionConfig**.
 
 ![Erstellen einer Datenressource](images/unreal-uxt/3-createasset.PNG)
 
-3. Doppelklicken Sie auf **ARSessionConfig** , um es zu öffnen, lassen Sie die Standardeinstellungen unverändert, und klicken Sie auf **Save** (Speichern). Kehren Sie zum Hauptfenster zurück. 
+3. Doppelklicken Sie auf **ARSessionConfig**, um es zu öffnen, lassen Sie die Standardeinstellungen unverändert, und klicken Sie auf **Save** (Speichern). Kehren Sie zum Hauptfenster zurück. 
 
 ![AR-Sitzungskonfiguration](images/unreal-uxt/3-arsessionconfig.PNG)
 
@@ -48,7 +48,7 @@ Nachdem dies erledigt ist, überzeugen Sie sich im nächsten Schritt davon, dass
 
 ![Starten der AR-Sitzung](images/unreal-uxt/3-start-ar-session.PNG)
 
-6. Klicken Sie an beliebiger Stelle im EventGraph mit der rechten Maustaste, und erstellen Sie einen neuen Knoten **Event EndPlay** . Ziehen Sie den Ausführungspin, und geben Sie ihn frei. Suchen Sie nach einem Knoten **Stop AR Session** , und drücken Sie die EINGABETASTE. Wenn die AR-Sitzung mit dem Ende des Levels nicht beendet wird, funktionieren bestimmte Features möglicherweise nicht mehr, wenn Sie die App beim Streaming zu einem Headset neu starten. 
+6. Klicken Sie an beliebiger Stelle im EventGraph mit der rechten Maustaste, und erstellen Sie einen neuen Knoten **Event EndPlay**. Ziehen Sie den Ausführungspin, und geben Sie ihn frei. Suchen Sie nach einem Knoten **Stop AR Session**, und drücken Sie die EINGABETASTE. Wenn die AR-Sitzung mit dem Ende des Levels nicht beendet wird, funktionieren bestimmte Features möglicherweise nicht mehr, wenn Sie die App beim Streaming zu einem Headset neu starten. 
     * Klicken Sie auf **Compile** (Kompilieren), **speichern** Sie Ihre Arbeit, und kehren Sie dann zum Hauptfenster zurück.
 
 ![Beenden der AR-Sitzung](images/unreal-uxt/3-stoparsession.PNG)
@@ -57,7 +57,7 @@ Nachdem dies erledigt ist, überzeugen Sie sich im nächsten Schritt davon, dass
 An diesem Punkt benötigt das Projekt noch immer ein Playerobjekt. In Unreal stellt ein **Pawn** den Benutzer im Spiel dar, aber in diesem Fall handelt es sich um die HoloLens 2-Umgebung.
 
 1. Klicken Sie im Ordner **Content** (Inhalt) auf **Add New > Blueprint Class** (Neu hinzufügen > Blaupausenklasse), und klappen Sie unten den Abschnitt **All Classes** (Alle Klassen) auf. 
-    * Suchen Sie nach **DefaultPawn** , klicken Sie auf **Select** (Auswählen), vergeben Sie den Namen **MRPawn** , und doppelklicken Sie auf die Ressource, um sie zu öffnen. 
+    * Suchen Sie nach **DefaultPawn**, klicken Sie auf **Select** (Auswählen), vergeben Sie den Namen **MRPawn**, und doppelklicken Sie auf die Ressource, um sie zu öffnen. 
 
 ![Erstellen eines neuen Pawns, das von „DefaultPawn“ erbt](images/unreal-uxt/3-defaultpawn.PNG)
 
@@ -72,6 +72,9 @@ An diesem Punkt benötigt das Projekt noch immer ein Playerobjekt. In Unreal ste
 
 3. Klicken Sie im Bereich **Components** (Komponenten) auf **Add Component > Camera** (Komponente hinzufügen > Kamera), und benennen Sie sie als **Camera** (Kamera). Dadurch kann die Spielerkamera sich zusammen mit dem HoloLens 2-Gerät bewegen.
 
+> [!NOTE]
+> Stellen Sie sicher, dass die **Kamera**-Komponente ein direktes untergeordnetes Element des Stamms ist (**CollisionComponent**).
+
 4. **Kompilieren** Sie die Blaupause, und **speichern** Sie sie.
 
 Nachdem Sie Ihre Arbeit hier erledigt haben, kehren Sie zum Hauptfenster zurück.
@@ -80,18 +83,18 @@ Nachdem Sie Ihre Arbeit hier erledigt haben, kehren Sie zum Hauptfenster zurück
 Das letzte Puzzleteil der Mixed Reality-Einrichtung ist der Spielemodus. Der Spielemodus bestimmt eine Reihe von Einstellungen für das Spiel oder die Umgebung, zu denen unter anderem auch das zu verwendende Standard-Pawn gehört.
 
 1.  Klicken Sie im Ordner **Content** (Inhalt) auf **Add New > Blueprint Class** (Neu hinzufügen > Blaupausenklasse), und klappen Sie unten den Abschnitt **All Classes** (Alle Klassen) auf. 
-    * Suchen Sie nach **Game Mode Base** (Spielemodusbasis), benennen Sie sie **MRGameMode** , und doppelklicken Sie dann darauf, um sie zu öffnen. 
+    * Suchen Sie nach **Game Mode Base** (Spielemodusbasis), benennen Sie sie **MRGameMode**, und doppelklicken Sie dann darauf, um sie zu öffnen. 
 
 ![„MRGameMode“ im Inhaltsbrowser](images/unreal-uxt/3-gamemode.PNG)
 
-2.  Navigieren Sie im Bereich **Details** zum Abschnitt **Classes** (Klassen), und ändern Sie die **Default Pawn Class** (Pawn-Standardklasse) in **MRPawn** . 
+2.  Navigieren Sie im Bereich **Details** zum Abschnitt **Classes** (Klassen), und ändern Sie die **Default Pawn Class** (Pawn-Standardklasse) in **MRPawn**. 
     * Klicken Sie auf **Compile** (Kompilieren), **speichern** Sie Ihre Arbeit, und kehren Sie dann zum Hauptfenster zurück. 
 
 ![Festlegen der Standard-Pawn-Klasse](images/unreal-uxt/3-setpawn.PNG)
 
 3.  Wählen Sie **Edit > Projects Settings** (Bearbeiten > Projekteinstellungen) aus, und klicken Sie in der Liste auf der linken Seite auf **Maps & Modes** (Zuordnungen und Modi). 
-    * Klappen Sie **Default Modes** (Standardmodi) auf, und ändern Sie **Default Game Mode** (Standardspielemodus) in **MRGameMode** . 
-    * Klappen Sie **Default Maps** (Standardzuordnungen) auf, und ändern Sie sowohl **EditorStartupMap** als auch **GameDefaultMap** in **Main** . Wenn Sie den Editor schließen und wieder öffnen oder das Spiel spielen, wird auf diese Weise standardmäßig die Hauptzuordnung ausgewählt.
+    * Klappen Sie **Default Modes** (Standardmodi) auf, und ändern Sie **Default Game Mode** (Standardspielemodus) in **MRGameMode**. 
+    * Klappen Sie **Default Maps** (Standardzuordnungen) auf, und ändern Sie sowohl **EditorStartupMap** als auch **GameDefaultMap** in **Main**. Wenn Sie den Editor schließen und wieder öffnen oder das Spiel spielen, wird auf diese Weise standardmäßig die Hauptzuordnung ausgewählt.
 
 ![Projekteinstellungen: Zuordnungen und Modi](images/unreal-uxt/3-mapsandmodes.PNG)
 

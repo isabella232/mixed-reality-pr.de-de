@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure-Entwicklung, Raumanker, Mixed Reality, Entwicklung, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Hologramme, Spieleentwicklung
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure-Entwicklung, Raumanker, Mixed Reality, Entwicklung, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698619"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679869"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Azure-Raumanker in Unreal
 
@@ -47,7 +47,7 @@ Weitere Informationen finden Sie unter [Azure-Raumanker: Authentifizierung](http
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Hinzufügen von Azure-Raumanker-Plug-Ins
 
 Aktivieren Sie die Azure-Raumanker-Plug-Ins im Unreal-Editor wie folgt:
-1. Klicken Sie auf **Bearbeiten > Plug-Ins** , und suchen Sie nach **AzureSpatialAnchors** sowie **AzureSpatialAnchorsForWMR** .
+1. Klicken Sie auf **Bearbeiten > Plug-Ins**, und suchen Sie nach **AzureSpatialAnchors** sowie **AzureSpatialAnchorsForWMR**.
 2. Aktivieren Sie das Kontrollkästchen **Aktiviert** für beide Plug-Ins, um den Zugriff auf die Azure-Raumanker-Blaupausenbibliotheken in Ihrer Anwendung zuzulassen.
 
 ![Raumanker-Plug-Ins](images/asa-unreal/unreal-spatial-anchors-img-01.png)
@@ -167,12 +167,12 @@ Zusätzlich zum Erstellen von Azure-Raumankern können Sie mit dem Azure Spatial
 
 ![Raumanker-Plug-Ins](images/asa-unreal/unreal-spatial-anchors-img-24.png)
 
-2. Fügen Sie Ihrer Pawn-Blaupause eine **AzureSpatialAnchorsEvent** -Komponente hinzu.
+2. Fügen Sie Ihrer Pawn-Blaupause eine **AzureSpatialAnchorsEvent**-Komponente hinzu.
     * Mit dieser Komponente können Sie verschiedene Azure-Raumankerereignisse abonnieren, z. B. Ereignisse, die aufgerufen werden, wenn Azure-Raumanker aufgefunden werden.
 
 ![Raumanker-Plug-Ins](images/asa-unreal/unreal-spatial-anchors-img-19.png)
 
-3. Abonnieren Sie den **Delegaten für gefundene ASAAnchor** für die **AzureSpatialAnchorsEvent** -Komponente.
+3. Abonnieren Sie den **Delegaten für gefundene ASAAnchor** für die **AzureSpatialAnchorsEvent**-Komponente.
     * Der Delegat teilt der Anwendung mit, wenn neue Anker gefunden wurden, die dem Azure Spatial Anchors-Konto zugeordnet sind.
     * Mit dem Ereignisrückruf werden für Azure-Raumanker, die von Peers mit der Azure Spatial Anchors-Sitzung erstellt wurden, standardmäßig keine AR Pins erstellt. Um einen AR Pin für den erkannten Azure-Raumanker zu erstellen, können Entwickler **ARPin um Azure Cloud-Raumanker erstellen** aufrufen.
 
@@ -180,9 +180,9 @@ Zusätzlich zum Erstellen von Azure-Raumankern können Sie mit dem Azure Spatial
 
 Zum Auffinden von Azure-Raumankern, die von Peers mithilfe des Azure Spatial Anchors-Diensts Dienstanbieter erstellt wurden, muss die Anwendung einen **Azure-Raumanker-Watcher** erstellen:
 1. Überprüfen Sie, ob eine Azure Spatial Anchors-Sitzung ausgeführt wird.
-2. Erstellen Sie ein **AzureSpatialAnchorsLocateCriteria** .
+2. Erstellen Sie ein **AzureSpatialAnchorsLocateCriteria**.
     * Sie können verschiedene Standortparameter angeben, z. B. die Entfernung vom Benutzer oder die Entfernung von einem anderen Anker.
-3. Declare Sie Ihren gewünschten Azure-Raumankerbezeichner im **AzureSpatialAnchorsLocateCritieria** .
+3. Declare Sie Ihren gewünschten Azure-Raumankerbezeichner im **AzureSpatialAnchorsLocateCritieria**.
 4. Rufen Sie **Watcher erstellen** auf.
 
 ![Raumanker-Plug-Ins](images/asa-unreal/unreal-spatial-anchors-img-21.png)

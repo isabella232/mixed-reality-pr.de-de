@@ -5,18 +5,18 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Bot Service, LUIS, natürliche Sprache, Unterhaltungs-Bot
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Bot Service, LUIS, natürliche Sprache, Unterhaltungs-Bot, Azure Cloud Services, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 417b534223427b491d900ad767d9fd797698ac71
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915555"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679359"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrieren von Azure Bot Service
 
-In diesem Tutorial erfahren Sie, wie Sie **Azure Bot Service** in der **HoloLens 2** -Demoanwendung verwenden, um Language Understanding (LUIS) hinzuzufügen, damit der Bot Benutzer bei der Suche nach **nachverfolgten Objekten** unterstützen kann. Dies ist ein zweiteiliges Tutorial, in dem Sie im ersten Teil den Bot mit [Bot Composer](https://docs.microsoft.com/composer/introduction) als codefreie Lösung erstellen und einen kurzen Blick auf die Azure-Funktion werfen, die den Bot mit den benötigten Daten versorgt. Im zweiten Teil verwenden Sie **BotManager (Skript)** im Unity-Projekt, um den gehosteten Bot Service zu nutzen.
+In diesem Tutorial erfahren Sie, wie Sie **Azure Bot Service** in der **HoloLens 2**-Demoanwendung verwenden, um Language Understanding (LUIS) hinzuzufügen, damit der Bot Benutzer bei der Suche nach **nachverfolgten Objekten** unterstützen kann. Dies ist ein zweiteiliges Tutorial, in dem Sie im ersten Teil den Bot mit [Bot Composer](https://docs.microsoft.com/composer/introduction) als codefreie Lösung erstellen und einen kurzen Blick auf die Azure-Funktion werfen, die den Bot mit den benötigten Daten versorgt. Im zweiten Teil verwenden Sie **BotManager (Skript)** im Unity-Projekt, um den gehosteten Bot Service zu nutzen.
 
 ## <a name="objectives"></a>Ziele
 
@@ -48,16 +48,16 @@ Sie sind im Begriff, den Bot zu erstellen. Damit der Bot aber nutzbar wird, müs
 
 Laden Sie das Azure-Funktionsprojekt für nachverfolgte Objekte herunter: [AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip), und extrahieren Sie es auf Ihre Festplatte.
 
-Diese Azure-Funktion verfügt über zwei Aktionen: **Count** (Anzahl) und **Find** (Suchen), die über grundlegende *HTTP* *GET* -Aufrufe aufgerufen werden können. Sie können den Code in **Visual Studio** untersuchen.
+Diese Azure-Funktion verfügt über zwei Aktionen: **Count** (Anzahl) und **Find** (Suchen), die über grundlegende *HTTP* *GET*-Aufrufe aufgerufen werden können. Sie können den Code in **Visual Studio** untersuchen.
 
 Weitere Informationen zu [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview).
 
-Die Funktion **Count** fragt aus **Table Storage** alle **TrackedObjects** aus der Tabelle ab. Dies ist ein sehr einfacher Vorgang. Die Funktion **Find** nimmt ihrerseits einen Abfrageparameter *name* aus der *GET* -Anforderung an, fragt **Table Storage** nach einem passenden **TrackedObject** ab und gibt dann ein DTO als JSON zurück.
+Die Funktion **Count** fragt aus **Table Storage** alle **TrackedObjects** aus der Tabelle ab. Dies ist ein sehr einfacher Vorgang. Die Funktion **Find** nimmt ihrerseits einen Abfrageparameter *name* aus der *GET*-Anforderung an, fragt **Table Storage** nach einem passenden **TrackedObject** ab und gibt dann ein DTO als JSON zurück.
 
 Sie können diese **Azure-Funktion** direkt aus **Visual Studio** bereitstellen.
 Hier finden Sie alle Informationen zur [Bereitstellung von Azure-Funktionen](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true).
 
-Nachdem Sie die Bereitstellung abgeschlossen haben, öffnen Sie im **Azure Portal** die entsprechende Ressource und klicken dann auf **Konfiguration**. Diese Option befindet sich unter dem Abschnitt *Einstellungen*. Dort müssen Sie unter **Anwendungseinstellungen** die *Verbindungszeichenfolge* für den **Azure Storage** -Speicher angeben, in dem die **nachverfolgten Objekte** gespeichert werden. Klicken Sie auf **Neue Anwendungseinstellung** , und verwenden Sie den folgenden Namen: **AzureStorageConnectionString**. Geben Sie als Wert die richtige *Verbindungszeichenfolge* an. Klicken Sie anschließend auf **Speichern**. Die **Azure-Funktion** ist nun bereit, den *Bot* mit Daten zu versorgen, den Sie im nächsten Schritt erstellen.
+Nachdem Sie die Bereitstellung abgeschlossen haben, öffnen Sie im **Azure Portal** die entsprechende Ressource und klicken dann auf **Konfiguration**. Diese Option befindet sich unter dem Abschnitt *Einstellungen*. Dort müssen Sie unter **Anwendungseinstellungen** die *Verbindungszeichenfolge* für den **Azure Storage**-Speicher angeben, in dem die **nachverfolgten Objekte** gespeichert werden. Klicken Sie auf **Neue Anwendungseinstellung**, und verwenden Sie den folgenden Namen: **AzureStorageConnectionString**. Geben Sie als Wert die richtige *Verbindungszeichenfolge* an. Klicken Sie anschließend auf **Speichern**. Die **Azure-Funktion** ist nun bereit, den *Bot* mit Daten zu versorgen, den Sie im nächsten Schritt erstellen.
 
 ### <a name="creating-a-conversation-bot"></a>Erstellen eines Unterhaltungs-Bots
 
@@ -71,7 +71,7 @@ Nachdem **Bot Framework Composer** installiert wurde, starten Sie die Anwendung.
 
 Wir haben ein Bot Composer-Projekt vorbereitet, das die erforderlichen Dialoge und Trigger für dieses Tutorial bereitstellt. Laden Sie das Bot Framework Composer-Projekt herunter: [BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip), und extrahieren Sie es auf Ihre Festplatte.
 
-Klicken Sie in der oberen Leiste auf **Öffnen** , und wählen Sie das heruntergeladene Bot Framework-Projekt aus, das **TrackedObjectsBot** heißt. Nachdem das Projekt vollständig geladen wurde, sollte das Projekt als bereit angezeigt werden.
+Klicken Sie in der oberen Leiste auf **Öffnen**, und wählen Sie das heruntergeladene Bot Framework-Projekt aus, das **TrackedObjectsBot** heißt. Nachdem das Projekt vollständig geladen wurde, sollte das Projekt als bereit angezeigt werden.
 
 ![Bot Framework Composer mit geöffnetem Projekt „TrackedObjectsBot“](images/mr-learning-azure/tutorial5-section4-step1-2.png)
 
@@ -83,7 +83,7 @@ Diese Trigger führen folgende Aktionen aus:
 
 #### <a name="greeting"></a>Greeting (Begrüßung)
 
-Dies ist der Einstiegspunkt des Chat *Bots* , wenn ein *Benutzer* eine Unterhaltung einleitet.
+Dies ist der Einstiegspunkt des Chat *Bots*, wenn ein *Benutzer* eine Unterhaltung einleitet.
 
 ![Auslöser des Begrüßungsdialogs für das TrackedObjectsBot-Projekt](images/mr-learning-azure/tutorial5-section4-step1-3.png)
 
@@ -120,11 +120,11 @@ Wenn das **nachverfolgte Objekt** nicht gefunden wird, wird der Benutzer darübe
 
 Die Trigger **AskingForCount** und **FindEntity** müssen mit dem Back-End kommunizieren, d. h. Sie müssen die richtige URL der **Azure-Funktion** hinzufügen, die Sie zuvor bereitgestellt haben.
 
-Klicken Sie im Dialogbereich auf **AskingForCount** , und suchen Sie die Aktion *HTTP-Anforderung senden*. Dort sehen Sie das Feld **URL** , das Sie in die richtige URL für den Endpunkt der Funktion **Count** ändern müssen.
+Klicken Sie im Dialogbereich auf **AskingForCount**, und suchen Sie die Aktion *HTTP-Anforderung senden*. Dort sehen Sie das Feld **URL**, das Sie in die richtige URL für den Endpunkt der Funktion **Count** ändern müssen.
 
 ![Endpunktkonfiguration für den Trigger des AskingForCount-Dialogs des TrackedObjectsBot-Projekts](images/mr-learning-azure/tutorial5-section5-step1-1.png)
 
-Suchen Sie schließlich nach dem Trigger **FindEntity** und der Aktion *HTTP-Anforderung senden* , und ändern Sie im Feld **URL** die URL in den Endpunkt der **Find** -Funktion.
+Suchen Sie schließlich nach dem Trigger **FindEntity** und der Aktion *HTTP-Anforderung senden*, und ändern Sie im Feld **URL** die URL in den Endpunkt der **Find**-Funktion.
 
 ![Endpunktkonfiguration für den Trigger des FindEntity-Dialogs des TrackedObjectsBot-Projekts](images/mr-learning-azure/tutorial5-section5-step1-2.png)
 
@@ -153,13 +153,13 @@ Im Inspektor sehen Sie, dass es ein leeres Feld **Geheimer Schlüssel für Direk
 
 ![Unity mit noch ausgewähltem, neu hinzugefügtem ChatBotManager-Prefab](images/mr-learning-azure/tutorial5-section6-step1-2.png)
 
-Nun verbinden Sie das **ChatBotManager** -Objekt mit der **ChatBotController** -Komponente, die an das **ChatBotPanel** -Objekt angefügt ist. Wählen Sie in der Hierarchie das **ChatBotPanel** -Objekt aus. Es wird ein leeres Feld **Chat Bot Manager** angezeigt. Ziehen Sie das **ChatBotManager** -Objekt aus der Hierarchie in das leere Feld **Chat Bot Manager**.
+Nun verbinden Sie das **ChatBotManager**-Objekt mit der **ChatBotController**-Komponente, die an das **ChatBotPanel**-Objekt angefügt ist. Wählen Sie in der Hierarchie das **ChatBotPanel**-Objekt aus. Es wird ein leeres Feld **Chat Bot Manager** angezeigt. Ziehen Sie das **ChatBotManager**-Objekt aus der Hierarchie in das leere Feld **Chat Bot Manager**.
 
 ![Unity mit konfiguriertem ChatBotPanel](images/mr-learning-azure/tutorial5-section6-step1-3.png)
 
-Nun benötigen Sie eine Möglichkeit, **ChatBotPanel** zu öffnen, damit der Benutzer damit interagieren kann. Im Fenster „Szene“ haben Sie möglicherweise bemerkt, dass es eine Seitenschaltfläche *Chat Bot* für das **MainMenu** -Objekt gibt. Diese werden Sie zur Lösung dieses Problems verwenden.
+Nun benötigen Sie eine Möglichkeit, **ChatBotPanel** zu öffnen, damit der Benutzer damit interagieren kann. Im Fenster „Szene“ haben Sie möglicherweise bemerkt, dass es eine Seitenschaltfläche *Chat Bot* für das **MainMenu**-Objekt gibt. Diese werden Sie zur Lösung dieses Problems verwenden.
 
-Suchen Sie in der Hierarchie nach **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** , und suchen Sie im Inspektor nach dem *ButtonConfigHelper* -Skript. Dort wird ein leerer Slot für den **OnClick ()** -Ereignisrückruf angezeigt. Ziehen Sie **ChatBotPanel** mithilfe von Drag & Drop in den Ereignisslot, navigieren Sie in der Dropdownliste zu *GameObject* , und wählen Sie dann im Untermenü *SetActive (bool)* aus, und aktivieren Sie das Kontrollkästchen.
+Suchen Sie in der Hierarchie nach **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot**, und suchen Sie im Inspektor nach dem *ButtonConfigHelper*-Skript. Dort wird ein leerer Slot für den **OnClick ()** -Ereignisrückruf angezeigt. Ziehen Sie **ChatBotPanel** mithilfe von Drag & Drop in den Ereignisslot, navigieren Sie in der Dropdownliste zu *GameObject*, und wählen Sie dann im Untermenü *SetActive (bool)* aus, und aktivieren Sie das Kontrollkästchen.
 
 ![Unity mit konfiguriertem ButtonChatBot](images/mr-learning-azure/tutorial5-section6-step1-4.png)
 

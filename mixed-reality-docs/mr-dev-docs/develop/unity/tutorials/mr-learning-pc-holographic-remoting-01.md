@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, QuickInfos, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416996"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679769"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Erste Schritte mit Holographic Remoting am PC
 
@@ -38,7 +38,7 @@ ms.locfileid: "93416996"
 * Ein für die [Entwicklung konfiguriertes](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2-Gerät
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019 LTS und hinzugefügtem Buildunterstützungsmodul für die Universelle Windows-Plattform
 
-Wir **empfehlen dringend** , die Tutorialserie [Erste Schritte](mr-learning-base-01.md) durchzuarbeiten, oder dass Sie bereits einige grundlegende Erfahrung mit Unity und MRTK besitzen, bevor Sie fortfahren.
+Wir **empfehlen dringend**, die Tutorialserie [Erste Schritte](mr-learning-base-01.md) durchzuarbeiten, oder dass Sie bereits einige grundlegende Erfahrung mit Unity und MRTK besitzen, bevor Sie fortfahren.
 
 > [!IMPORTANT]
 > * Die empfohlene Unity-Version für diese Tutorialserie ist Unity 2019 LTS. Sie ersetzt alle Anforderungen oder Empfehlungen bezüglich der Unity-Version, die in den oben verknüpften Voraussetzungen genannt werden.
@@ -94,7 +94,7 @@ Ziehen Sie diese Modelle mithilfe von Drag & Drop aus dem Ordner „prefabs“
 
 ![Unity mit neu hinzugefügten, noch ausgewählten Prefabs](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
-Um sich auf die Objekte in der Szene zu konzentrieren, können Sie auf das **ModelParent** -Objekt doppelklicken und die Ansicht dann etwas verkleinern:
+Um sich auf die Objekte in der Szene zu konzentrieren, können Sie auf das **ModelParent**-Objekt doppelklicken und die Ansicht dann etwas verkleinern:
 
 ![Unity mit ModelParent-Objekt im Fokus](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
 
@@ -107,11 +107,11 @@ In diesem Abschnitt fügen Sie in der Szene Skripts hinzu, um Schaltflächenerei
 
 ### <a name="1-configuring-the-interactable-script-component"></a>1. Konfigurieren der Komponente „Interactable (Script)“
 
-Klappen Sie im Hierarchiefenster das **ButtonParent** -Objekt auf, und wählen Sie dann **NextButton** aus. Suchen Sie im Inspektor-Fenster nach der Komponente **Interactable (Script)** , und klicken Sie unter dem **OnClick ()** -Ereignis auf das Symbol **+** .
+Klappen Sie im Hierarchiefenster das **ButtonParent**-Objekt auf, und wählen Sie dann **NextButton** aus. Suchen Sie im Inspektor-Fenster nach der Komponente **Interactable (Script)** , und klicken Sie unter dem **OnClick ()** -Ereignis auf das Symbol **+** .
 
 ![Unity mit hinzugefügtem OnClick-Ereignis für NextButton](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
-Klicken Sie bei immer noch im Hierarchiefenster ausgewähltem **NextButton** -Objekt auf das **ButtonParent** -Objekt, und ziehen Sie es auf das leere **None (Object)** -Feld des Ereignislisteners, den Sie soeben hinzugefügt haben, um das ButtonParent-Objekt auf Geklickt-Ereignissen für diese Schaltfläche lauschen zu lassen:
+Klicken Sie bei immer noch im Hierarchiefenster ausgewähltem **NextButton**-Objekt auf das **ButtonParent**-Objekt, und ziehen Sie es auf das leere **None (Object)** -Feld des Ereignislisteners, den Sie soeben hinzugefügt haben, um das ButtonParent-Objekt auf Geklickt-Ereignissen für diese Schaltfläche lauschen zu lassen:
 
 ![Unity mit konfiguriertem OnClick-Ereignislistener für NextButton](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
 
@@ -131,7 +131,7 @@ Führen Sie für jede der verbleibenden Schaltflächen den oben beschriebenen Vo
 
 Nun sind Ihre Schaltflächen so konfiguriert, dass Sie die Modellwechsel- und Clippingfunktionen veranschaulichen können. Es ist an der Zeit, dem Skript 3D-Modelle und die Clippingobjekte hinzuzufügen.
 
-Wir haben sechs verschiedene 3D-Modelle zur Demonstrationszwecken bereitgestellt. Erweitern Sie das * *_ModelParentobject_* _, um diese 3D-Modelle verfügbar zu machen.
+Wir haben sechs verschiedene 3D-Modelle zur Demonstrationszwecken bereitgestellt. Erweitern Sie das **_ModelParentobject_* _, um diese 3D-Modelle verfügbar zu machen.
 
 Während das ButtonParent-Objekt weiterhin im Hierarchiefenster ausgewählt ist, suchen Sie im Inspektor-Fenster nach der Komponente _ *View Button Control (Script)* *, und erweitern Sie die Variable **Models**.
 
@@ -143,7 +143,7 @@ Verschieben Sie jedes untergeordnete Objekt des ModelParent-Objekts mithilfe von
 
 ![Unity mit konfigurierten Feldern der ViewButtonControl-Skriptkomponente](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
 
-Ziehen Sie das **ClippingObjects** -Objekt mithilfe von Drag & Drop aus dem Hierarchiefenster in das Feld **Clipping Object** der Komponente **Toggle Button (Script)** .
+Ziehen Sie das **ClippingObjects**-Objekt mithilfe von Drag & Drop aus dem Hierarchiefenster in das Feld **Clipping Object** der Komponente **Toggle Button (Script)** .
 >[!NOTE]
 >Bleiben Sie die ganze Zeit ausschließlich im übergeordneten Objekt der Schaltfläche.
 
@@ -155,13 +155,13 @@ Wählen Sie im Hierarchiefenster das Prefab **ClippingObjects** aus, und aktivie
 
 In diesem Abschnitt fügen Sie den Renderer für untergeordnete Objekte des MarsCuriosityRover-Objekts einem einzelnen Clippingobjekt hinzu, um das Clipping des MarsCuriosityRover-Modells zu veranschaulichen.
 
-Erweitern Sie im Hierarchiefenster das **ClippingObjects** -Objekt, um die drei unterschiedlichen Clippingobjekte verfügbar zu machen, die Sie in diesem Projekt verwenden.
+Erweitern Sie im Hierarchiefenster das **ClippingObjects**-Objekt, um die drei unterschiedlichen Clippingobjekte verfügbar zu machen, die Sie in diesem Projekt verwenden.
 
-Um das **ClippingSphere** -Objekt zu konfigurieren, klicken Sie darauf, und suchen Sie dann im Inspektor-Fenster nach der Komponente **Clipping Sphere (Script)** . Geben Sie die Anzahl der Renderer, die Sie für das 3D-Modell hinzufügen müssen, in das Größenfeld ein. Fügen Sie in diesem Fall 10 Renderer für untergeordnete MarsCuriosityRover-Objekte hinzu. Er werden Felder zum Hinzufügen von Renderern erstellt. Ziehen Sie untergeordnete Modellobjekte des MarsCuriosityRover-Objekts mithilfe von Drag & Drop in diese Felder.
+Um das **ClippingSphere**-Objekt zu konfigurieren, klicken Sie darauf, und suchen Sie dann im Inspektor-Fenster nach der Komponente **Clipping Sphere (Script)** . Geben Sie die Anzahl der Renderer, die Sie für das 3D-Modell hinzufügen müssen, in das Größenfeld ein. Fügen Sie in diesem Fall 10 Renderer für untergeordnete MarsCuriosityRover-Objekte hinzu. Er werden Felder zum Hinzufügen von Renderern erstellt. Ziehen Sie untergeordnete Modellobjekte des MarsCuriosityRover-Objekts mithilfe von Drag & Drop in diese Felder.
 
 ![Unity mit konfigurierten Feldern der ClippingSphere-Skriptkomponente](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
-Führen Sie den gleichen Vorgang aus, und fügen Sie den **ClippingBox** - und **ClippingPlane** -Objekten Renderer für untergeordnete Objekte von MarsCuriosityRover hinzu.
+Führen Sie den gleichen Vorgang aus, und fügen Sie den **ClippingBox**- und **ClippingPlane**-Objekten Renderer für untergeordnete Objekte von MarsCuriosityRover hinzu.
 
 In diesem Tutorial wird nur das MarsCuriosityRover-Modell verwendet, um das Clippingfeature zu demonstrieren. Es wurden Clippingfeatures zu weiteren Modellen hinzugefügt, die Größe des Renderers wurde vergrößert, und es wurden individuelle Gittermodellrenderer hinzugefügt.
 
@@ -171,7 +171,7 @@ In diesem Abschnitt wird erläutert, wie Sie Eye-Tracking in Ihrem Projekt aktiv
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identifizieren von Zielobjekten und zugehörigen QuickInfos
 
-Wählen Sie im Hierarchiefenster das ModelParent-Objekt aus. Erweitern Sie **_MarsCuriosity > Rover_ *_, um fünf Hauptbestandteile von MarsCuriosityRover zu ermitteln: _* POI-Camera** , **POI-Wheels** , **POI-Antena** , **POI-Spectrometer** , **POI-RUHF Antenna**.
+Wählen Sie im Hierarchiefenster das ModelParent-Objekt aus. Erweitern Sie **_MarsCuriosity > Rover_ *_, um fünf Hauptbestandteile von MarsCuriosityRover zu ermitteln: _* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
 * Beachten Sie die fünf entsprechenden QuickInfo-Objekte, die mit MarsCuriosityRover-Teilen im Hierarchiefenster verknüpft sind.
 * Sie konfigurieren diese Objekte so, dass sie hervorgehoben werden, wenn Sie sich die MarsCuriosityRover-Teile ansehen.
@@ -180,18 +180,18 @@ Wählen Sie im Hierarchiefenster das ModelParent-Objekt aus. Erweitern Sie **_Ma
 
 ### <a name="2-implement-while-looking-at-target-----on-look-away--events"></a>2. Implementierung von While Looking At Target ()- und On Look Away ()-Ereignissen
 
-Wählen Sie im Hierarchiefenster das * **POI-Camera** _-Objekt aus. Suchen Sie im Inspektor-Fenster nach der Komponente _ *Eye Tracking Target (Script)* *, und konfigurieren Sie die **While Looking At Target ()**  & **On Look Away ()** -Ereignisse wie folgt:
+Wählen Sie im Hierarchiefenster das ***POI-Camera** _-Objekt aus. Suchen Sie im Inspektor-Fenster nach der Komponente _ *Eye Tracking Target (Script)* *, und konfigurieren Sie die **While Looking At Target ()**  & **On Look Away ()** -Ereignisse wie folgt:
 
-* Weisen Sie dem Feld **None (Object)** das **POI-Camera ToolTip** -Objekt zu.
+* Weisen Sie dem Feld **None (Object)** das **POI-Camera ToolTip**-Objekt zu.
 * Wählen Sie in der Dropdownliste **No Function** des **While Looking At Target ()** -Ereignisses **GameObject** > **SetActive (bool)** aus. Aktivieren Sie das **Kontrollkästchen** darunter, um die QuickInfo als Aktion hervorzuheben, die ausgelöst wird, wenn Sie das Zielobjekt betrachten.
 
 ![Unity mit in Bearbeitung befindlicher Konfiguration des EyeTrackingTarget WhileLookingAtTarget-Ereignisses](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
-* Führen Sie den gleichen Vorgang aus, und klicken Sie auf die Dropdownliste **No Function** des **On Look Away ()** -Ereignislisteners. Wählen Sie dann **GameObject** > **SetActive(bool** ) aus, und lassen Sie das **Kontrollkästchen** leer, um die QuickInfo als Aktion auszublenden, die ausgelöst wird, wenn Sie vom Zielobjekt wegschauen.
+* Führen Sie den gleichen Vorgang aus, und klicken Sie auf die Dropdownliste **No Function** des **On Look Away ()** -Ereignislisteners. Wählen Sie dann **GameObject** > **SetActive(bool**) aus, und lassen Sie das **Kontrollkästchen** leer, um die QuickInfo als Aktion auszublenden, die ausgelöst wird, wenn Sie vom Zielobjekt wegschauen.
 
 ![Unity mit konfiguriertem EyeTrackingTarget OnLookAway-Ereignis](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
-Führen Sie den gleichen Vorgang aus, und weisen Sie entsprechende QuickInfo-Objekte denselben **MarsCuriosityRover** -Teilen für **While Looking At Target ()**  & **On Look Away ()** -Ereignisse zu.
+Führen Sie den gleichen Vorgang aus, und weisen Sie entsprechende QuickInfo-Objekte denselben **MarsCuriosityRover**-Teilen für **While Looking At Target ()**  & **On Look Away ()** -Ereignisse zu.
 
 Um Eye-Tracking zu aktivieren, befolgen Sie diese [Richtlinien](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations).
 

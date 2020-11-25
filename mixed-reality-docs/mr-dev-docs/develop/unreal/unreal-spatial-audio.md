@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: 9b953cd0ea9aab92b2306da63a948b470363d0e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, räumliche Audiowiedergabe
+ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699046"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679799"
 ---
 # <a name="spatial-audio-in-unreal"></a>Räumliche Audiowiedergabe in Unreal
 
@@ -20,14 +20,14 @@ ms.locfileid: "91699046"
 
 Anders als beim Sehen hören Menschen 360-Grad-Surroundsound. Räumliche Audiowiedergabe emuliert die Funktionsweise des menschlichen Hörens und stellt die Hinweise bereit, die zum Erkennen von Klangpositionen im Raum erforderlich sind. Wenn Sie Ihren Mixed Reality-Anwendungen räumliche Audiowiedergabe hinzufügen, steigern Sie den Grad des Eintauchens, das Ihre Benutzer erleben.  
 
-Die erforderliche Verarbeitung für räumliche Audiowiedergabe in hoher Qualität ist komplex, daher besitzt HoloLens 2 dedizierte Hardware für die Verarbeitung dieser Klangobjekte.  Damit Sie auf diese Hardwareunterstützung bei der Verarbeitung zugreifen können, müssen Sie das **MicrosoftSpatialSound** -Plug-In in Ihrem Unreal-Projekt installieren. Dieser Artikel führt Sie durch die Installation und Konfiguration des Plug-Ins und weist Sie auf ausführlichere Ressourcen für die Verwendung von räumlicher Audiowiedergabe in der Unreal-Engine hin.
+Die erforderliche Verarbeitung für räumliche Audiowiedergabe in hoher Qualität ist komplex, daher besitzt HoloLens 2 dedizierte Hardware für die Verarbeitung dieser Klangobjekte.  Damit Sie auf diese Hardwareunterstützung bei der Verarbeitung zugreifen können, müssen Sie das **MicrosoftSpatialSound**-Plug-In in Ihrem Unreal-Projekt installieren. Dieser Artikel führt Sie durch die Installation und Konfiguration des Plug-Ins und weist Sie auf ausführlichere Ressourcen für die Verwendung von räumlicher Audiowiedergabe in der Unreal-Engine hin.
 
 ## <a name="installing-the-microsoft-spatial-sound-plugin"></a>Installieren des Microsoft Spatial Sound-Plug-Ins
 
 Der erste Schritt beim Hinzufügen von Raumklang zu Ihrem Projekt ist die Installation des Microsoft Spatial Sound-Plug-Ins, das Sie hier finden können:
 
-1. Klicken Sie auf **Bearbeiten > Plug-Ins** , und suchen Sie im Suchfeld nach **MicrosoftSpatialSound** .
-2. Aktivieren Sie das Kontrollkästchen **Aktiviert** im **MicrosoftSpatialSound** -Plug-In.
+1. Klicken Sie auf **Bearbeiten > Plug-Ins**, und suchen Sie im Suchfeld nach **MicrosoftSpatialSound**.
+2. Aktivieren Sie das Kontrollkästchen **Aktiviert** im **MicrosoftSpatialSound**-Plug-In.
 3. Starten Sie auf der Plug-Ins-Seite den Unreal Editor neu, indem Sie **Jetzt neu starten** auswählen.
 
 > [!NOTE]
@@ -40,18 +40,18 @@ Nach dem Neustart des Editors ist Ihr Projekt fertig eingerichtet.
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>Festlegen des Raumklang-Plug-Ins für die HoloLens 2-Plattform
 Die Konfiguration des Raumklang-Plug-Ins erfolgt auf Plattformbasis.  Sie können das Microsoft Spatial Sound-Plug-In für HoloLens 2 in folgender Weise aktivieren:
-1. Wählen Sie **Bearbeiten > Projekteinstellungen** aus, scrollen Sie zu **Plattformen** , und klicken Sie auf **HoloLens** .
-2. Erweitern Sie die **Audio** -Eigenschaften, und legen Sie das Feld **Spatialization Plugin** (Raumklang-Plug-In) auf **Microsoft Spatial Sound** fest.
+1. Wählen Sie **Bearbeiten > Projekteinstellungen** aus, scrollen Sie zu **Plattformen**, und klicken Sie auf **HoloLens**.
+2. Erweitern Sie die **Audio**-Eigenschaften, und legen Sie das Feld **Spatialization Plugin** (Raumklang-Plug-In) auf **Microsoft Spatial Sound** fest.
 
 ![Raumklang-Plug-In für die HoloLens-Plattform](images/unreal-spatial-audio-img-02.png)
 
-Wenn Sie die Vorschau Ihrer Anwendung im Unreal-Editor auf einem Desktop-PC ausführen möchten, müssen Sie die Schritte oben für die **Windows** -Plattform wiederholen:
+Wenn Sie die Vorschau Ihrer Anwendung im Unreal-Editor auf einem Desktop-PC ausführen möchten, müssen Sie die Schritte oben für die **Windows**-Plattform wiederholen:
 
 ![Raumklang-Plug-In für die Windows-Plattform](images/unreal-spatial-audio-img-05.png)
 
 ## <a name="enabling-spatial-audio-on-your-workstation"></a>Aktivieren von räumlicher Audiowiedergabe auf Ihrer Arbeitsstation
 Die räumliche Audiowiedergabe ist in Desktopversionen von Windows standardmäßig deaktiviert. Sie können sie wie folgt aktivieren:
-* Klicken Sie mit der rechten Maustaste auf das **Lautstärke** -Symbol in der Taskleiste.
+* Klicken Sie mit der rechten Maustaste auf das **Lautstärke**-Symbol in der Taskleiste.
     + Wählen Sie **Raumklang -> Windows Sonic für Kopfhörer** aus, um die beste Darstellung des Höreindrucks mit HoloLens 2 zu erreichen.
 
 ![Raumklang-Plug-In](images/unreal-spatial-audio-img-04.png)
@@ -61,23 +61,23 @@ Die räumliche Audiowiedergabe ist in Desktopversionen von Windows standardmäß
 
 ## <a name="creating-attenuation-objects"></a>Erstellen von Dämpfungsobjekten
 Nachdem Sie die erforderlichen Plug-Ins installiert und konfiguriert haben:
-1. Suchen Sie nach einem Akteur **Ambient Sound** (Raumklang) im Fenster **Place Actors** (Akteure platzieren), und ziehen Sie ihn auf das **Szenenfenster** .
+1. Suchen Sie nach einem Akteur **Ambient Sound** (Raumklang) im Fenster **Place Actors** (Akteure platzieren), und ziehen Sie ihn auf das **Szenenfenster**.
 
 ![Hinzufügen des Raumklang-Akteurs](images/unreal-spatial-audio-img-07.png)
 
 2. Machen Sie den Akteur **Ambient Sound** (Raumklang) zu einem untergeordneten Element eines visuellen Elements in Ihrer Szene.
     * Ein Raumklang-Akteur hat standardmäßig keine visuelle Darstellung, Sie hören also lediglich einen Klang von seiner Position in der Szene. Wenn Sie den Akteur an ein visuelles Element anfügen, können Sie ihn sehen und wie jedes andere Medienobjekt verschieben.
 
-3.  Klicken Sie mit der rechen Maustaste auf den **Inhalts-Browser** , und wählen Sie **Create Advanced Asset -> Sounds -> Sound Attenuation** (Erweitertes Medienobjekt erstellen > Sounds > Klangdämpfung) aus:
+3.  Klicken Sie mit der rechen Maustaste auf den **Inhalts-Browser**, und wählen Sie **Create Advanced Asset -> Sounds -> Sound Attenuation** (Erweitertes Medienobjekt erstellen > Sounds > Klangdämpfung) aus:
 
 ![Erstellen eines Klangdämpfungs-Medienobjekts](images/unreal-spatial-audio-img-06.png)
 
-4. Klicken Sie mit der rechten Maustaste auf das Medienobjekt **Sound Attenuation** (Klangdämpfung) im Fenster des **Inhalt-Browsers** , und wählen Sie die Option **Bearbeiten** aus, um das Eigenschaftenfenster anzuzeigen.
-    * Ändern Sie die **Spatialization Method** (Raumklangverfahren) in **Binaural** .
+4. Klicken Sie mit der rechten Maustaste auf das Medienobjekt **Sound Attenuation** (Klangdämpfung) im Fenster des **Inhalt-Browsers**, und wählen Sie die Option **Bearbeiten** aus, um das Eigenschaftenfenster anzuzeigen.
+    * Ändern Sie die **Spatialization Method** (Raumklangverfahren) in **Binaural**.
 
 ![Festlegen des Raumklangverfahrens](images/unreal-spatial-audio-img-03.png)
 
-5. Wählen Sie den Akteur **Ambient Sound** (Raumklang) aus, und scrollen Sie nach unten zum Abschnitt **Attenuation** (Dämpfung) im Bereich **Details** .
+5. Wählen Sie den Akteur **Ambient Sound** (Raumklang) aus, und scrollen Sie nach unten zum Abschnitt **Attenuation** (Dämpfung) im Bereich **Details**.
     * Legen Sie die Einstellung **Attenuation Settings** (Dämpfungseinstellungen) auf das von Ihnen erstellte Medienobjekt **Sound Attenuation** (Klangdämpfung) fest.
 
 ![Festlegen der Dämpfungseinstellung](images/unreal-spatial-audio-img-08.png)

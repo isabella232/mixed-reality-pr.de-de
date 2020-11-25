@@ -6,19 +6,19 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Eye-Tracking, Blickverfolgung, Mixed Reality, Eingabe, Anvisieren mit den Augen, Zielen mit den Augen, HoloLens 2, Blickgestützte Auswahl, Verweilen
-ms.openlocfilehash: b7c2b22c24336813231e7e5ea4742f03b9d78004
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Eye Tracking, Mixed Reality, Eingabe, Anvisieren mit den Augen, Zielen mit den Augen, HoloLens 2, Blickgestützte Auswahl, Verweilen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Design
+ms.openlocfilehash: 2d17b93b09b204e6ebb94a51bcc709ee043b5018
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698495"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702306"
 ---
 # <a name="eye-gaze-and-dwell"></a>Anvisieren und Verweilen
 
 Das Interaktionsmodell _„Anvisieren mit den Augen und Verweilen“_ ist ein Sonderfall des Interaktionsmodells [Anvisieren mit den Augen und Ausführen](gaze-and-commit.md):
 1. Schauen Sie einfach ein Ziel an, und 
-2. führen Sie zum Bestätigen Ihrer Zielauswahl eine sekundäre explizite Eingabe aus: _Visieren Sie einfach das Ziel an, das Sie auswählen möchten_ .
+2. führen Sie zum Bestätigen Ihrer Zielauswahl eine sekundäre explizite Eingabe aus: _Visieren Sie einfach das Ziel an, das Sie auswählen möchten_.
 
 ## <a name="advantages-of-the-eye-gaze-and-dwell-interaction-model"></a>Vorteile des Interaktionsmodells „Anvisieren mit den Augen und Verweilen“ 
 Wenn Ihre Hände bereits mit einer Aufgabe beschäftigt sind oder Tools halten, ist es möglicherweise nicht möglich, diese für die Interaktion mit Hologrammen zu verwenden.
@@ -32,10 +32,10 @@ Wenn die Verweildauer zu kurz ist: Der Benutzer kann sich überfordert fühlen, 
 
 ## <a name="design-recommendations"></a>Entwurfsempfehlungen
 Wir empfehlen einen zweistufigen Ansatz für das Verweilfeedback:
-1. *Anfangsverzögerung* : Wenn der Benutzer anfängt, ein Ziel anzuvisieren, sollte keine unmittelbare Reaktion erfolgen, da dies zu einer unangenehmen und überfordernden Benutzererfahrung führen kann. Starten Sie stattdessen einen Timer, um zu ermitteln, ob der Benutzer absichtlich auf das Ziel starrt oder er es nur überfliegt.
+1. *Anfangsverzögerung*: Wenn der Benutzer anfängt, ein Ziel anzuvisieren, sollte keine unmittelbare Reaktion erfolgen, da dies zu einer unangenehmen und überfordernden Benutzererfahrung führen kann. Starten Sie stattdessen einen Timer, um zu ermitteln, ob der Benutzer absichtlich auf das Ziel starrt oder er es nur überfliegt.
 Wir empfehlen eine Ausführungszeit von 150 bis 250 ms bei einer bestimmten Nähe (d. h. der Benutzer ist auf ein Ziel fixiert, anstatt ein größeres Ziel länger zu betrachten).  
 2. *Starten des Verweilfeedbacks:* Nachdem Sie sichergestellt haben, dass der Benutzer das Ziel absichtlich anvisiert, beginnen Sie mit der Anzeige des Verweildauerfeedbacks, um den Benutzer darüber zu informieren, dass die Verweilaktivierung eingeleitet wird. 
-3. *Fortlaufendes Feedback:* Während der Benutzer das Ziel weiterhin anvisiert, zeigen Sie eine fortlaufende Fortschrittsanzeige an, damit der Benutzer weiß, dass er das Ziel weiter anvisieren muss. Insbesondere für die Eingabe über das Anvisieren mit den Augen empfehlen wir, _die visuelle Aufmerksamkeit des Benutzers zu gewinnen_ , indem wir mit einem größeren Kreis oder einer Kugel beginnen, die sich zu einer kleineren Version zusammenzieht. Die Anzeige eines Indikators für den Endzustand (kleiner Kreis) hilft dem Benutzer zu vermitteln, wann das Verweilen beendet sein wird. Eine Beispielabbildung ist unten dargestellt. 
+3. *Fortlaufendes Feedback:* Während der Benutzer das Ziel weiterhin anvisiert, zeigen Sie eine fortlaufende Fortschrittsanzeige an, damit der Benutzer weiß, dass er das Ziel weiter anvisieren muss. Insbesondere für die Eingabe über das Anvisieren mit den Augen empfehlen wir, _die visuelle Aufmerksamkeit des Benutzers zu gewinnen_, indem wir mit einem größeren Kreis oder einer Kugel beginnen, die sich zu einer kleineren Version zusammenzieht. Die Anzeige eines Indikators für den Endzustand (kleiner Kreis) hilft dem Benutzer zu vermitteln, wann das Verweilen beendet sein wird. Eine Beispielabbildung ist unten dargestellt. 
 4. *Fertig stellen:* Wenn der Benutzer das Ziel weiterhin fixiert hat (für weitere 650 bis 850 ms), schließen Sie die Verweilaktivierung ab und wählen das anvisierte Ziel aus.
 
 ![Verweilzustände](images/eyes_dwellstate_recommendation.png)<br>

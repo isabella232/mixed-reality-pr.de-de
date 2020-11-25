@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, räumliche Wahrnehmung
 ms.localizationpriority: high
-ms.openlocfilehash: 15fa4285fd6dd60aac9ba3869430649db5b40f91
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 7ac81c21e1658798b7f512c4afa2eea9f509d827
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353258"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679319"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Konfigurieren der MRTK-Profile
 
@@ -49,15 +49,15 @@ Dies sind die wichtigsten Schritte, die Sie ausführen, um das Gittermodell zur 
 > [!NOTE]
 > Das Konfigurationsprofil ist das Profil der obersten Ebene. Folglich müssen Sie, um andere Profile bearbeiten zu können, zuerst das Konfigurationsprofil klonen.
 
-Wählen Sie im Hierarchiefenster das **MixedRealityToolkit** -Objekt aus, und ändern Sie dann im Inspektorfenster das Konfigurationsprofil des **Mixed Reality-Toolkits** in **DefaultHoloLens2ConfigurationProfile** :
+Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus, und ändern Sie dann im Inspektorfenster das Konfigurationsprofil des **Mixed Reality-Toolkits** in **DefaultHoloLens2ConfigurationProfile**:
 
 ![MixedRealityToolkit-Komponente von Unity mit ausgewähltem DefaultHoloLens2ConfigurationProfile](images/mr-learning-base/base-03-section1-step1-1.png)
 
-Klicken Sie mit immer noch ausgewähltem **MixedRealityToolkit** -Objekt im Inspektor-Fenster auf die Schaltfläche **Copy & Customize** (Kopieren und Anpassen), um das Fenster „Clone Profile“ (Profil klonen) zu öffnen:
+Klicken Sie mit immer noch ausgewähltem **MixedRealityToolkit**-Objekt im Inspektor-Fenster auf die Schaltfläche **Copy & Customize** (Kopieren und Anpassen), um das Fenster „Clone Profile“ (Profil klonen) zu öffnen:
 
 ![„Copy & Paste“-Schaltfläche der MixedRealityToolkit-Komponente von Unity](images/mr-learning-base/base-03-section1-step1-2.png)
 
-Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_HoloLens2ConfigurationProfile_ , und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultHololens2ConfigurationProfile** zu erstellen:
+Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_HoloLens2ConfigurationProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultHololens2ConfigurationProfile** zu erstellen:
 
 ![Popupfenster „Konfigurationsprofil klonen“ des MixedRealityToolkit von Unity](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -72,7 +72,7 @@ Wählen Sie im Unity-Menü **File** > **Save** (Datei > Speichern) aus, um Ihre 
 
 ### <a name="2-enable-the-spatial-awareness-system"></a>2. Aktivieren des Systems für räumliche Wahrnehmung
 
-Wählen Sie im Hierarchiefenster das **MixedRealityToolkit** -Objekt, dann im Inspektorfenster die Registerkarte **Spatial Awareness** (Räumliche Wahrnehmung) aus, und aktivieren Sie dann das Kontrollkästchen **Enable Spatial Awareness System** (System für räumliche Wahrnehmung aktivieren):
+Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt, dann im Inspektorfenster die Registerkarte **Spatial Awareness** (Räumliche Wahrnehmung) aus, und aktivieren Sie dann das Kontrollkästchen **Enable Spatial Awareness System** (System für räumliche Wahrnehmung aktivieren):
 
 ![MixedRealityToolkit-Komponente von Unity mit aktiviertem Spatial Awareness-System](images/mr-learning-base/base-03-section1-step2-1.png)
 
@@ -85,7 +85,7 @@ Klicken Sie auf der Registerkarte **Spatial Awareness** (Räumliche Wahrnehmung)
 
 ![MixedRealityToolkit-Komponente von Unity mit ausgewählter Registerkarte „Spatial Awareness“ (räumliche Wahrnehmung)](images/mr-learning-base/base-03-section1-step3-1.png)
 
-Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_ , und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultMixedRealitySpatialAwarenessSystemProfile** zu erstellen:
+Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultMixedRealitySpatialAwarenessSystemProfile** zu erstellen:
 
 ![Popupfenster „Spatial Awareness-Systemprofil klonen“ des MixedRealityToolkit von Unity](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -99,7 +99,7 @@ Erweitern Sie bei immer noch ausgewählter Registerkarte **Spatial Awareness** (
 
 ![MixedRealityToolkit-Komponente von Unity mit erweitertem Abschnitt „Windows Mixed Reality Raum-Mesh-Betrachter“](images/mr-learning-base/base-03-section1-step4-1.png)
 
-Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_ , und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie von **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** zu erstellen:
+Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_MixedRealitySpatialAwarenessMeshObserverProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie von **DefaultMixedRealitySpatialAwarenessMeshObserverProfile** zu erstellen:
 
 ![Popupfenster „Raum-Mesh-Betrachterprofil klonen“ des MixedRealityToolkit von Unity](images/mr-learning-base/base-03-section1-step4-2.png)
 

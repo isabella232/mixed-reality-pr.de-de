@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, HoloLens
+keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Sitzungen, Feedbackelemente
 ms.localizationpriority: high
-ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fe87e539060b57f505838b43e897e8b6d8336aaf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353338"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679389"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4. Anzeigen des Feedbacks von Azure Spatial Anchors
 
@@ -32,7 +32,7 @@ Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das Objekt **Inst
 > [!TIP]
 > Um das Arbeiten mit Ihrer Szene zu erleichtern, legen Sie die <a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">Scene Visibility</a> (Sichtbarkeit in der Szene) für das ParentAnchor-Objekt auf „Aus“ fest, indem Sie links neben dem Objekt auf das Augensymbol klicken. Dadurch wird das Objekt im Szenenfenster ausgeblendet, ohne seine Sichtbarkeit im Spiel zu ändern.
 
-Benennen Sie das neu erstellte Textobjekt (TMP) **Feedback** , und ändern Sie dann im Inspektorfenster seine Position und Größe so, dass es ordentlich unter dem Anweisungstext platziert ist, beispielsweise:
+Benennen Sie das neu erstellte Textobjekt (TMP) **Feedback**, und ändern Sie dann im Inspektorfenster seine Position und Größe so, dass es ordentlich unter dem Anweisungstext platziert ist, beispielsweise:
 
 * Ändern Sie die **Pos Y** (Y-Position) der Rect Transform-Komponente in -0,24.
 * Ändern Sie die **Width** (Breite) der Rect Transform-Komponente in 0,555.
@@ -46,9 +46,9 @@ Wählen Sie dann die Schriftarteigenschaften so, dass der Text gut in den Textbe
 
 ![Unity mit konfiguriertem Feedback-Objekt](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
-Wählen Sie im Hierarchiefenster das **Feedback** -Objekt aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Anchor Feedback Script (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
+Wählen Sie im Hierarchiefenster das **Feedback**-Objekt aus, verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **Anchor Feedback Script (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
-* Weisen Sie das **Feedback** -Objekt selbst dem Feld **Feedbacktext** der **Anchor Feedback Script (Script)** -Komponente zu.
+* Weisen Sie das **Feedback**-Objekt selbst dem Feld **Feedbacktext** der **Anchor Feedback Script (Script)** -Komponente zu.
 
 ![Unity mit konfigurierter Anchor Feedback Script-Komponente](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
