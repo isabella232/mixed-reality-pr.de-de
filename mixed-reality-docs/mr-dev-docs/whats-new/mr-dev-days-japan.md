@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941856"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443486"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -95,13 +95,13 @@ Wenn Sie sich aus irgendeinem Grund nicht bei Teams anmelden können, überprüf
 
 ### <a name="code-of-conduct"></a>Verhaltensregeln 
 
-**_Die Aufgabe von Microsoft besteht darin, jede Person und jede Organisation auf der ganzen Welt zu unterstützen, mehr zu erreichen. Dies umfasst alle Microsoft-Veranstaltungen und-Versammlungen, einschließlich digitaler Plattformen, bei denen wir uns für alle Teilnehmer sorgen, dass Sie ein respektvolles, freundliches, unterhaltsames und inklusives Verhalten erzielen._* _  
+Microsoft verfolgt die Mission, weltweit jeden Menschen und jede Organisation dabei zu unterstützen, höhere Ziele zu erreichen. Dies umfasst alle Microsoft-Veranstaltungen und-Versammlungen, einschließlich digitaler Plattformen, bei denen wir uns für alle Teilnehmer sorgen, dass Sie ein respektvolles, freundliches, unterhaltsames und inklusives Verhalten erzielen.
 
-_*_Wir gehen davon aus, dass alle Digital Event-Teilnehmer die Prinzipien dieses Verhaltens Verhaltens einhalten, der das wichtigste digitale Ereignis und alle zugehörigen Aktivitäten behandelt. Wir tolerieren keinerlei Unterbrechungen oder unbehängend Verhalten, Nachrichten, Bilder oder Interaktionen von einem Teilnehmer in irgendeiner Form an einem beliebigen Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Belästigung oder Unterscheidung auf der Grundlage von Alter, Herkunft, Farbe, Geschlecht-Identität oder-Ausdruck, nationaler Ursprung, physischer oder physischer Behinderung, Religion, sexueller Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Bestimmungen und ordinanzen geschützt sind._*_  
+Wir gehen davon aus, dass alle Digital Event-Teilnehmer die Prinzipien dieses Verhaltens Verhaltens einhalten, der das wichtigste digitale Ereignis und alle zugehörigen Aktivitäten behandelt. Wir tolerieren keinerlei Unterbrechungen oder unbehängend Verhalten, Nachrichten, Bilder oder Interaktionen von einem Teilnehmer in irgendeiner Form an einem beliebigen Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Belästigung oder Unterscheidung auf der Grundlage von Alter, Herkunft, Farbe, Geschlecht-Identität oder-Ausdruck, nationaler Ursprung, physischer oder physischer Behinderung, Religion, sexueller Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Bestimmungen und ordinanzen geschützt sind.  
 
-_*_Fotos, Videos oder Aufzeichnungen von Sitzungs Inhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen gemeinsam genutzt wird, sind unzulässig. Wir empfehlen allen Benutzern, eine einladende und sichere Umgebung zu erstellen. Melden Sie alle Bedenken, das Verhalten von Problemen, verdächtige Aktivitäten oder Störungen an der Business Behavior-Hotline (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, den Benutzern jederzeit nach eigenem Ermessen die Berechtigung zum ablehnen von Zutritt oder der Entfernung von Benutzern aus gemischten Reality-dev-Tagen zu verweigern._*_  
+Fotos, Videos oder Aufzeichnungen von Sitzungs Inhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen gemeinsam genutzt wird, sind unzulässig. Wir empfehlen allen Benutzern, eine einladende und sichere Umgebung zu erstellen. Melden Sie alle Bedenken, das Verhalten von Problemen, verdächtige Aktivitäten oder Störungen an der Business Behavior-Hotline (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, den Benutzern jederzeit nach eigenem Ermessen die Berechtigung zum ablehnen von Zutritt oder der Entfernung von Benutzern aus gemischten Reality-dev-Tagen zu verweigern. 
 
-_ *_Wir empfehlen allen Personen, sich in der Umgebung "altspacevr immersive" verantwortungsbewusst zu Verhalten, wie bei jedem anderen Ereignis. Beachten Sie den Bereich anderer Benutzer, und blockieren Sie die Ansicht anderer Teilnehmer nicht, wenn Sie das Ereignis besuchen.  Beachten Sie, dass, wie bei jedem in-Person-Ereignis, von anderen Benutzern möglicherweise von anderen Benutzern gehört werden kann, wenn Sie eine private Konversation benötigen, empfiehlt es sich, dies in einem anderen Bereich in altspacevr zu berücksichtigen, z. b. bei der altspacevr-Startseite_ .**
+Wir empfehlen allen Personen, sich in der Umgebung "altspacevr immersive" verantwortungsbewusst zu Verhalten, wie bei jedem anderen Ereignis. Beachten Sie den Bereich anderer Benutzer, und blockieren Sie die Ansicht anderer Teilnehmer nicht, wenn Sie das Ereignis besuchen.  Beachten Sie, dass, wie bei jedem in-Person-Ereignis, von anderen Benutzern möglicherweise von anderen Benutzern gehört wird, wenn Sie eine private Konversation benötigen, empfiehlt es sich, dies in einem anderen Bereich in altspacevr zu berücksichtigen, z. b. bei der altspacevr-Startseite.
 
 
 

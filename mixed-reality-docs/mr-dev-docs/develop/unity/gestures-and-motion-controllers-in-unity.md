@@ -1,23 +1,29 @@
 ---
 title: Gesten und Motion-Controller in Unity
 description: Erfahren Sie, wie Sie mithilfe von Handgesten und Bewegungs Controllern Maßnahmen für Ihren Blick in Unity durchführen können.
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: Gesten, Bewegungs Controller, Unity, Blick, Eingabe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678649"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443582"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Gesten und Motion-Controller in Unity
 
 Es gibt zwei wichtige Möglichkeiten, um Ihre [Blicke in Unity](gaze-in-unity.md), [Handgesten](../../design/gaze-and-commit.md#composite-gestures) und [Bewegungs Controllern](../../design/motion-controllers.md) in hololens und immersiven HMD zu ergreifen. Sie greifen über dieselben APIs in Unity auf die Daten für beide Quellen räumlicher Eingaben zu.
 
 Unity bietet zwei Hauptmethoden für den Zugriff auf räumliche Eingabedaten für Windows Mixed Reality, die gängigen *Input. getbutton/Input. getaxis-* APIs, die über mehrere Unity-XR-sdker hinweg verwendet werden können, sowie eine *interaktionmanager/GestureRecognizer-* API speziell für Windows Mixed Reality, das den vollständigen Satz räumlicher Eingabedaten verfügbar macht.
+
+## <a name="unity-xr-input-apis"></a>Eingabe-APIs für Unity XR
+
+Bei neuen Projekten wird die Verwendung der neuen XR-Eingabe-APIs von Anfang an empfohlen. 
+
+Weitere Informationen zu den [XR-APIs](https://docs.unity3d.com/Manual/xr_input.html)finden Sie hier.
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Unity-Schaltfläche/Achsen Zuordnung (Tabelle)
 
@@ -146,13 +152,13 @@ Apps, die Positionen basierend auf dem nach verfolgungsstatus unterschiedlich be
 <tr>
 <th> Nach verfolgungsstatus </th><th> Sourcelossrisk </th><th> Positionsgenauigkeit </th><th> Trygetposition</th>
 </tr><tr>
-<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Ungefähre Genauigkeit</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Keine Position</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: orange"> False</td>
+<td> <b>Keine Position</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: orange"> false</td>
 </tr>
 </table>
 
@@ -213,6 +219,9 @@ Beachten Sie, dass dies die Zieh Punktposition des Controllers darstellt (in der
 Beachten Sie, dass die Beziehung zwischen diesem Ziehpunkt und der Zeiger Pose (bei der die Spitze des Controllers zeigt) sich zwischen Controllern unterscheiden kann. Zurzeit ist der Zugriff auf die Zeiger-Pose des Controllers nur über die in den folgenden Abschnitten beschriebene Mr-spezifische Eingabe-API möglich.
 
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows-spezifische APIs (XR. WSA. Der
+
+> [!CAUTION]
+> , Wenn Ihr Projekt einen der XR-verwendet. WSA-APIs werden nach dem XR SDK in zukünftigen Unity-Releases eingestellt. Für neue Projekte wird empfohlen, das XR SDK von Anfang an zu verwenden. Weitere Informationen zum [XR-Eingabe System und](https://docs.unity3d.com/Manual/xr_input.html)zu den APIs finden Sie hier.
 
 **Namespace:** *unityengine. XR. WSA. Input*<br>
 **Typen**: *interaktionsmanager*, *interaktionsourcestate*, *interaktionsource*, *interaktionsourceproperties*, *interaktionsourcekind*, *interaktionsourcelokation*

@@ -3,15 +3,15 @@ title: Problembehandlung und Einschränkungen für Holographic Remoting
 description: Schritte zur Problembehandlung für Holographic Remoting auf hololens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Problembehandlung, Hilfe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679579"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443601"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Problembehandlung bei Holographic Remoting
 
@@ -24,7 +24,7 @@ Für Holographic Remoting-Beispiel-Apps ist Spectre Entschärfung (/Qspectre) in
 
 Wenn Sie einen schwerwiegenden Linker-Fehler erhalten, der besagt, dass "vccorlib. lib" nicht geöffnet werden kann, müssen Sie sicherstellen, dass die Visual Studio-Arbeitsauslastung die von Spectre abgeminderten Bibliotheken enthält Weitere Informationen finden Sie unter https://aka.ms/Ofhn4c.
 
-## <a name="speech"></a>Spracheingabe
+## <a name="speech"></a>Spracheingabe/-ausgabe
 
 Der Holographic Remoting Player unterstützt ein diagnoseoverlay, das durch das sagen von aktiviert ```Enable Diagnostics``` und deaktiviert werden kann ```Disable Diagnostics``` . Wenn Sie Probleme mit diesen Sprachbefehlen haben, können Sie den Holographic Remoting Player auch über einen Webbrowser starten, indem Sie ```ms-holographic-remoting:?stats``` als URL verwenden.
 
@@ -105,7 +105,8 @@ Die folgenden APIs werden zurzeit **nicht** unterstützt, wenn Holographic Remot
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Holographic Remoting-Versionsverlauf](holographic-remoting-version-history.md)
-* [Schreiben einer Holographic Remoting-Remote-App](holographic-remoting-create-host.md)
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe gemischter Windows-APIs](holographic-remoting-create-remote-wmr.md)
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Holographic Remoting-Software – Lizenzbedingungen](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

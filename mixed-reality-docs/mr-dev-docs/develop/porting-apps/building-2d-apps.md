@@ -1,19 +1,19 @@
 ---
-title: Aktualisieren von 2D-UWP-Apps für gemischte Realität
+title: Aktualisieren von 2D-UWP-Apps für Windows Mixed Reality
 description: In diesem Artikel wird beschrieben, wie Sie Ihre vorhandene 2D-universelle Windows-Plattform-App auf hololens und Windows Mixed Reality-immersiven Headsets aktualisieren.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D-APP, UWP, flatapp, hololens, immersives Headset, App-Modell, Schaltfläche "zurück", App-Leiste, dpi, Auflösung, Skalierung, Portierung, hololens 1. gen, hololens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677799"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443628"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>Aktualisieren von 2D-UWP-Apps für gemischte Realität
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Aktualisieren von 2D-UWP-Apps für Windows Mixed Reality
 
 Windows Mixed Reality ermöglicht Benutzern das Anzeigen von holograms, als ob Sie sich in ihrer physischen oder digitalen Welt befinden. Im Kern sind sowohl hololens als auch Desktop-PCs, an die Sie die immersiven Headset-Zubehör anfügen, Windows 10-Geräte. Dies bedeutet, dass Sie in der Lage sind, fast alle universelle Windows-Plattform-Apps (UWP) im Store als 2D-apps auszuführen.
 

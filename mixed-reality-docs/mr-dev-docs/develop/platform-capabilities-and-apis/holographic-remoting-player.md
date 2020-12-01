@@ -3,20 +3,20 @@ title: Holographic Remoting-Player
 description: Der Holographic Remoting Player ist eine begleitende APP, die eine Verbindung mit PC-Apps und spielen herstellt, die Holographic Remoting unterstützen. Holographic Remoting streamt Holographic Content von einem PC zu Ihren Microsoft hololens in Echtzeit mithilfe einer Wi-Fi Verbindung.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Diagnose, Leistung
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677929"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443616"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting-Player
 
 >[!IMPORTANT]
->Holographic Remoting für hololens 2 ist eine wesentliche Versionsänderung. [Remote Anwendungen für **hololens (1st Gen)**](add-holographic-remoting.md) müssen das nuget-Paketversion **1. x. x** und [Remote Anwendungen für **hololens 2**](holographic-remoting-create-host.md) verwenden. **2. x. x** muss verwendet werden. Dies bedeutet, dass für hololens 2 geschriebene Remote Anwendungen nicht mit hololens (1st Gen) und umgekehrt kompatibel sind.
+>Holographic Remoting für hololens 2 ist eine wesentliche Versionsänderung. [Remote Anwendungen für **hololens (1st Gen)**](add-holographic-remoting.md) müssen das nuget-Paketversion **1. x. x** und [Remote Anwendungen für **hololens 2**](holographic-remoting-create-remote-wmr.md) verwenden. **2. x. x** muss verwendet werden. Dies bedeutet, dass für hololens 2 geschriebene Remote Anwendungen nicht mit hololens (1st Gen) und umgekehrt kompatibel sind.
 
 Der [Holographic Remoting Player](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) ist eine begleitende APP, die eine Verbindung mit PC-Apps und spielen herstellt, die Holographic Remoting unterstützen. Holographic Remoting streamt Holographic Content von einem PC zu Ihren Microsoft hololens in Echtzeit mithilfe einer Wi-Fi Verbindung.
 
@@ -26,6 +26,9 @@ Der Holographic Remoting Player ist sowohl für hololens (1 St Gen) als auch fü
 
 >[!TIP]
 >Ab Version [2.2.0](holographic-remoting-version-history.md#v2.2.0) ist der Holographic Remoting Player auch für Windows-PCs verfügbar, auf denen [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)ausgeführt wird.
+
+>[!TIP]
+>Ab Version [2.4.0](holographic-remoting-version-history.md#v2.4.0) können Remote-apps, die die [openxr-API](../native/openxr.md) verwenden, erstellt werden. Informationen zu den ersten Schritten finden Sie unter [Schreiben einer holografischen Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md).
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>Herstellen einer Verbindung mit dem Holographic Remoting Player
 
@@ -78,6 +81,7 @@ Auf dem Hauptbildschirm können Sie beispielsweise **"Diagnose deaktivieren"** ,
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Hololens (1. Generation): Hinzufügen von Holographic Remoting](add-holographic-remoting.md)
-* [Hololens 2: Schreiben einer Holographic Remoting-Remote-app](holographic-remoting-create-host.md)
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe gemischter Windows-APIs](holographic-remoting-create-remote-wmr.md)
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Holographic Remoting-Software – Lizenzbedingungen](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

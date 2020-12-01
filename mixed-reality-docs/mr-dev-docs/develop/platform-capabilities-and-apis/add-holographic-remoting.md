@@ -1,17 +1,17 @@
 ---
 title: Holographic-Remoting hinzufügen
 description: Erläutert die Verwendung von Holographic Remoting zum Rendering von holograms in einem hololens über das Netzwerk.
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679629"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443648"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic-Remoting hinzufügen (hololens (1. Gen))
 
@@ -23,7 +23,7 @@ ms.locfileid: "94679629"
 Hololens-Entwickler, die Holographic Remoting verwenden, müssen Ihre apps aktualisieren, damit Sie mit hololens 2 kompatibel sind. Hierfür ist eine neue Version des nuget-Pakets "Holographic Remoting" erforderlich. Wenn eine Anwendung, die das Holographic Remoting-nuget-Paket mit einer Versionsnummer kleiner als 2.0.0.0 verwendet, versucht, eine Verbindung mit dem Holographic Remoting Player auf hololens 2 herzustellen, schlägt die Verbindung fehl.
 
 >[!NOTE]
->Anleitungen für hololens 2 finden Sie [hier](holographic-remoting-create-host.md).
+>Anleitungen für hololens 2 finden Sie [hier](holographic-remoting-create-remote-wmr.md).
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Hinzufügen von Holographic Remoting zu Ihrer Desktop-oder UWP-App
