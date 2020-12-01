@@ -6,43 +6,101 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679049"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354328"
 ---
 # <a name="gaze-input"></a>Blick Eingabe
 
-## <a name="overview"></a>Übersicht
-
-Das [Windows Mixed Reality-Plug](https://docs.unrealengine.com/Platforms/VR/WMR/index.html) -in bietet keine integrierten Funktionen für die Überblicks Eingabe, aber hololens 2 unterstützt die Eye-Nachverfolgung. Die eigentlichen Überwachungsfunktionen werden von Unreal mit den von Unreal bereitgestellten **Anzeige** -und **Eye Tracking** -APIs bereitgestellt und umfassen Folgendes:
-
-- Geräteinformationen
-- Nach Verfolgungs Sensoren
-- Ausrichtung und Position
-- Clipping-Bereiche
-- Daten-und Überwachungsinformationen für den Blick
-
-Die vollständige Liste der Features finden Sie in [der Dokumentation zu](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) den Köpfen in der Head-bereit [Stellung](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) von Unreal.
-
-Zusätzlich zu den Unreal-APIs sehen Sie sich die Dokumentation zu den [Augenblick-basierten Interaktionen](../../design/eye-gaze-interaction.md) für hololens 2 an, und informieren Sie sich darüber, wie die [Augen Verfolgung auf hololens 2](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) funktioniert.
-
-> [!IMPORTANT]
-> Die Eye-Nachverfolgung wird nur auf hololens 2 unterstützt.
+Der Blick wird verwendet, um anzugeben, was der Benutzer ansieht.  Dabei werden die Augen Verfolgungs Kameras auf dem Gerät verwendet, um einen Strahl in Unreal World Space zu finden, der dem entspricht, was der Benutzer gerade ansieht.
 
 ## <a name="enabling-eye-tracking"></a>Aktivieren der Eye-Überwachung
-Die Überblicks Eingabe muss in den hololens-Projekteinstellungen aktiviert werden, bevor Sie eine der Unreal-APIs verwenden können. Wenn die Anwendung gestartet wird, wird im folgenden Screenshot eine Zustimmungsaufforderung angezeigt.
 
-- Wählen Sie **Ja** aus, um die Berechtigung festzulegen, und erhalten Sie Zugriff auf die Eingaben. Wenn Sie diese Einstellung jederzeit ändern müssen, finden Sie Sie in der App " **Einstellungen** ".
+- Aktivieren Sie in den **Projekteinstellungen > hololens** die Funktion für die über **Blicks Eingabe** :
 
-![Eye-Eingabe Berechtigungen](images/unreal/eye-input-permissions.png)
+![Screenshot der hololens-Projekt Einstellungs Funktionen mit hervorgehobener Blick Eingabe](images/unreal-gaze-img-01.png)
+
+- Erstellen Sie einen neuen Actor, und fügen Sie ihn Ihrer Szene hinzu.
 
 > [!NOTE] 
 > Hololens Eye Tracking in Unreal hat nur einen einzelnen Blick Strahl für beide Augen und nicht die zwei Strahlen, die für die Stereoskopie erforderlich sind, was nicht unterstützt wird.
 
-Das ist alles, was Sie tun müssen, um Ihre hololens 2-apps in Unreal mit Blick Eingaben zu versehen. Weitere Informationen zu Blick Eingaben und deren Auswirkungen auf Benutzer in gemischter Realität finden Sie unter den folgenden Links. Berücksichtigen Sie diese bei der Erstellung interaktiver Umgebungen.
+## <a name="using-eye-tracking"></a>Verwenden von Eye Tracking
+
+Überprüfen Sie zunächst, ob das Gerät die Augen Nachverfolgung mit der iseyetrackerconnected-Funktion unterstützt.  Wenn dies true zurückgibt, wird getgazedata aufgerufen, um zu ermitteln, wo die Augen des Benutzers während des aktuellen Rahmens suchen:
+
+![Blaupause der verbundenen Funktion für die Augen Verfolgung](images/unreal-gaze-img-02.png)
+
+> [!NOTE]
+> Der Fixierungs Punkt und der vertrauensrichtwert sind in hololens nicht verfügbar.
+
+Um zu ermitteln, was der Benutzer sucht, verwenden Sie den Blick Ursprung und die Richtung in einer Zeilen Ablauf Verfolgung.  Der Anfang dieses Vektors ist der Blick Ursprung, und das Ende ist der Ursprung und die Richtung des Blicks, multipliziert mit der gewünschten Entfernung:
+
+![Blaupause der Daten Funktion "Get-Blick"](images/unreal-gaze-img-03.png)
+
+## <a name="getting-head-orientation"></a>Orientierung bei der Kopfzeile
+
+Alternativ kann die HMD-Drehung verwendet werden, um die Richtung des Benutzer Kopfes darzustellen.  Hierfür ist die Eingabe Funktion für den Blick nicht erforderlich, aber es werden keine Augen Verfolgungs Informationen angezeigt.  Ein Verweis auf den Blueprint muss als Weltkontext hinzugefügt werden, um die richtigen Ausgabedaten zu erhalten:
+
+> [!NOTE]
+> Das erhalten von HMD-Daten ist nur in Unreal 4,26 und höher verfügbar.
+
+![Blaupause der Get hmddata-Funktion](images/unreal-gaze-img-04.png)
+
+## <a name="using-c"></a>Verwenden von C++ 
+
+- Fügen Sie in der Build.cs-Datei Ihres Spiels "Eyetracker" der publicdependencymodulenames-Liste hinzu:
+
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",
+        "EyeTracker"
+});
+```
+
+- Erstellen Sie in "File/New C++ Class" einen neuen C++ Actor mit dem Namen "Eyetracker".
+    - Eine Visual Studio-Projekt Mappe wird für die neue Klasse "Eyetracker" geöffnet. Erstellen Sie, und führen Sie aus, um das Unreal-Spiel mit dem neuen Brillen-Actor zu öffnen.  Suchen Sie im Fenster "Platzieren von Akteuren" nach "Eyetracker".  Ziehen Sie diese Klasse per Drag & amp; Drop in das Spielfenster, um Sie dem Projekt hinzuzufügen:
+
+![Screenshot eines Actors, auf dem das Fenster "Place Actor" geöffnet ist](images/unreal-gaze-img-06.png)
+
+- Fügen Sie in "Eyetracker. cpp" für "eyetrackerfunctionlibrary" und "drawdebughelpers" Folgendes hinzu:
+
+```cpp
+#include "EyeTrackerFunctionLibrary.h"
+#include "DrawDebugHelpers.h"
+```
+
+Überprüfen Sie in Tick, ob das Gerät die Eye-Nachverfolgung mit ueyetrackerfunctionlibrary:: iseyetrackerconnected unterstützt.  Suchen Sie anschließend den Anfang und das Ende eines Strahls für eine Zeilen Ablauf Verfolgung von ueyetrackerfunctionlibrary:: getgazedata:
+
+```cpp
+void AEyeTracker::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    if(UEyeTrackerFunctionLibrary::IsEyeTrackerConnected())
+    {
+        FEyeTrackerGazeData GazeData;
+        if(UEyeTrackerFunctionLibrary::GetGazeData(GazeData))
+        {
+            FVector Start = GazeData.GazeOrigin;
+            FVector End = GazeData.GazeOrigin + GazeData.GazeDirection * 100;
+
+            FHitResult Hit Result;
+            if (GWorld->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visiblity))
+            {
+                DrawDebugCoordinateSystem(GWorld, HitResult.Location, FQuat::Identity.Rotator(), 10);
+            }
+        }
+    }
+}
+```
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
