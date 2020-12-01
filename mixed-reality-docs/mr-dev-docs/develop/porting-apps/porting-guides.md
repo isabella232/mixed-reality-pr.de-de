@@ -1,23 +1,23 @@
 ---
-title: Portierungsleitfäden
+title: Portieren von VR-apps auf Windows Mixed Reality
 description: Eine Schritt-für-Schritt-Anleitung, in der erläutert wird, wie Sie eine vorhandene immersive Anwendung in Windows Mixed Reality portieren.
 author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
 keywords: Port, Unity, Unreal, Middleware, Engine, UWP, Win32, Porting, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Eingabe Zuordnung,
-ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677729"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443665"
 ---
-# <a name="porting-guides"></a>Portierungsleitfäden
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portieren von VR-apps auf Windows Mixed Reality
 
 Windows 10 bietet direkte Unterstützung für immersive und holografische Headsets. Wenn Sie Inhalte für andere Geräte erstellt haben, wie z. b. den Oculus-oder den HTC-Vive, haben diese Abhängigkeiten von Bibliotheken, die über der Plattform-API des Betriebssystems vorhanden sind. Das Bereitstellen vorhandener Win32 Unity-VR-apps in Windows Mixed Reality umfasst die Neuausrichtung der Verwendung Hersteller spezifischer VR-sdgs auf die plattformübergreifenden VR-APIs von Unity.
 
-## <a name="porting-overview"></a>Übersicht über das Portieren
+## <a name="porting-requirements"></a>Portieren von Anforderungen
 
 Auf hoher Ebene sind die folgenden Schritte zum Portieren vorhandener Inhalte beteiligt:
 1. **Stellen Sie sicher, dass auf Ihrem PC das Windows 10 Fall Creators Update (16299) ausgeführt wird.** Wir empfehlen Ihnen nicht mehr, vorschaubuilds aus dem Insider-Ahead-Ring zu erhalten, da diese Builds für die Entwicklung mit gemischter Realität nicht am stabilsten sind.

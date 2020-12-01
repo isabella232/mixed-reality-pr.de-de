@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bcc899a178917a8ef184b4c11bd724df71f7b5c0
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638541"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443669"
 ---
 # <a name="project-settings"></a>[Projekteinstellungen](#tab/project)
 
@@ -95,9 +95,6 @@ Der Algorithmus basiert auf einem Blog von Daniel smilkow: [größten Rechteck i
 
 Jedes Spiel oder jede Anwendung, das auf ein vorhandenes HMD ausgerichtet ist, verfügt über eine Reihe von Eingaben, die es verarbeitet, sowie über die Typen von Eingaben, die für die Benutzer Anforderung benötigt werden Wir haben versucht, es so einfach und unkompliziert wie möglich zu gestalten, um die in Windows Mixed Reality verfügbaren Eingaben zu nutzen.
 1. Ausführliche Informationen zur Bereitstellung von Eingaben durch Windows Mixed Reality finden Sie im **Leitfaden für die Eingabe Portierung für Unity** auf der angrenzenden Registerkarte.
-2. Wählen Sie aus, ob Sie die API für das over-VR-SDK-Eingabe-API von Unity oder die Mr-spezifische Eingabe-API nutzen möchten. Die allgemeinen Input. getbutton/Input. getaxis-APIs werden heute von Unity-VR-Apps für die Verwendung von [Oculus](https://docs.unity3d.com/Manual/OculusControllers.html) -und [openvr-Eingaben](https://docs.unity3d.com/Manual/OpenVRControllers.html)verwendet. Wenn Ihre apps bereits diese APIs für Motion-Controller verwenden, ist dies der einfachste Pfad. Sie müssen nur Schaltflächen und Achsen im Eingabe-Manager neu zuordnen.
-    * Sie können auf Motion Controller-Daten in Unity zugreifen, indem Sie entweder die allgemeine Cross-VR-SDK-Eingabe. getbutton/Input. getaxis-APIs oder die Mr-spezifischen unityengine. XR. WSA. Input-APIs verwenden. (zuvor im Namespace "unityengine. XR. WSA. Input" in Unity 5,6)
-    * Sehen Sie sich das [Beispiel im Toolkit an](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) , das Gamepad-und Motion-Controller kombiniert.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. Leistungstests und-Optimierung
 
@@ -110,9 +107,15 @@ Sowohl [Unity](https://docs.unity3d.com/Manual/Profiler.html) als auch [Visual S
 Sie können Ihre Eingabe Logik in Windows Mixed Reality portieren. verwenden Sie dazu einen von zwei Ansätzen: die allgemeinen Eingabe. getbutton/getaxis-APIs von Unity, die sich über mehrere Plattformen erstrecken, oder den Windows-spezifischen XR. WSA. Eingabe-APIs, die umfangreichere Daten speziell für Bewegungs Controller und hololens-Hände bieten.
 
 > [!IMPORTANT]
-> Wenn Sie HP-Reverb-G2-Controller verwenden, finden Sie in [diesem Artikel](../../unity/unity-reverb-g2-controllers.md) weitere Anweisungen zur Eingabe Zuordnung.
+> Wenn Sie mit HP Reverb G2-Controllern verwenden, finden Sie in [diesem Artikel](../../unity/unity-reverb-g2-controllers.md) weitere Anweisungen zur Eingabe Zuordnung.
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>Allgemeine Eingabe. getbutton/getaxis-APIs
+## <a name="unity-xr-input-apis"></a>Eingabe-APIs für Unity XR
+
+Bei neuen Projekten wird die Verwendung der neuen XR-Eingabe-APIs von Anfang an empfohlen. 
+
+Weitere Informationen zu den [XR-APIs](https://docs.unity3d.com/Manual/xr_input.html)finden Sie hier.
+
+## <a name="inputgetbuttongetaxis-apis"></a>Input. getbutton/getaxis-APIs
 
 Unity verwendet derzeit die allgemeinen Input. getbutton/Input. getaxis-APIs, um Eingaben für [das Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) und [das openvr SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html)verfügbar zu machen. Wenn Ihre apps bereits diese APIs für die Eingabe verwenden, ist dies der einfachste Weg zur Unterstützung von Bewegungs Controllern in Windows Mixed Reality: Sie müssen nur Schaltflächen und Achsen im Eingabe-Manager neu zuordnen.
 
@@ -120,10 +123,13 @@ Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsen-Mapping-Ta
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows-spezifischer XR. WSA. Eingabe-APIs
 
+> [!CAUTION]
+> , Wenn Ihr Projekt einen der XR-verwendet. WSA-APIs werden nach dem XR SDK in zukünftigen Unity-Releases eingestellt. Für neue Projekte wird empfohlen, das XR SDK von Anfang an zu verwenden. Weitere Informationen zum [XR-Eingabe System und](https://docs.unity3d.com/Manual/xr_input.html)zu den APIs finden Sie hier.
+
 Wenn Ihre APP bereits eine benutzerdefinierte Eingabe Logik für jede Plattform erstellt hat, können Sie die Windows-spezifischen räumlichen Eingabe-APIs im Namespace **unityengine. XR. WSA. Input** verwenden. Auf diese Weise können Sie auf zusätzliche Informationen zugreifen, wie z. b. Die Positionsgenauigkeit oder die quellart, sodass Sie die Hände und Controller auf hololens aufteilen können.
 
 > [!NOTE]
-> Wenn Sie HP-Reverb-G2-Controller verwenden, funktionieren alle Eingabe-APIs weiterhin mit Ausnahme von **Interaction Source. supportstouchpad** , das false ohne Touchpad-Daten zurückgibt.
+> Wenn Sie HP-Reverb-G2-Controller verwenden, funktionieren alle Eingabe-APIs weiterhin mit Ausnahme von **Interaction Source. supportstouchpad**, das false ohne Touchpad-Daten zurückgibt.
 
 Weitere Informationen finden Sie in der [Übersicht über die unityengine. XR. WSA. Input-APIs](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
@@ -135,13 +141,13 @@ Um diese Controller besser darstellen zu können, gibt es zwei Arten von Posen, 
 
 * Die Zieh Punkt Darstellung, die den Speicherort der von einem hololens erkannten **Hand, oder** die Palme mit einem Bewegungs Controller darstellt.
     * Bei immersiven Headsets eignet sich diese Pose am besten zum Rendering **der Benutzer Hand** oder **eines Objekts, das in der Hand des Benutzers gehalten** wird, z. b. ein Schwert oder eine Waffe.
-    * Die Zieh **Punktposition** : der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren.
+    * Die Zieh **Punktposition**: der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren.
     * Die **Rechte Achse** der Ziehpunkt Ausrichtung: Wenn Sie Ihre Hand vollständig geöffnet haben, um eine flache 5-Finger-Darstellung zu bilden, ist das Strahl-Ray, das normal ist (vorwärts von links nach links, rückwärts von rechter Palme).
     * Die **Forward-Achse** der Ziehpunkt Ausrichtung: Wenn Sie die Hand teilweise schließen (wie beim Halten des Controllers), wird der Strahl, der durch das durch ihre nicht-Thumb-Finger formatierte Rohr auf "Vorwärts" zeigt.
     * Die **aufwärts Achse** der Ziehpunkt Ausrichtung: die aufwärts Achse, die durch die Rechte-und vorwärts Definitionen impliziert wird.
-    * Sie können auf die Ziehpunkt-Pose über die Anbieter übergreifende Eingabe-API von Unity (XR) zugreifen **[. Inputtracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). Getlocalposition/Rotation** ) oder über die Windows-spezifische API ( **SourceState. sourcepose. trygetposition/Rotation** , Anfordern der Ziehpunkt-Pose).
+    * Sie können auf die Ziehpunkt-Pose über die Anbieter übergreifende Eingabe-API von Unity (XR) zugreifen **[. Inputtracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). Getlocalposition/Rotation**) oder über die Windows-spezifische API (**SourceState. sourcepose. trygetposition/Rotation**, Anfordern der Ziehpunkt-Pose).
 * Die **Zeiger** Darstellung, die die Spitze des Controllers darstellt, der vorwärts zeigt.
     * Diese Pose eignet sich am besten für raycast, wenn Sie **auf die Benutzeroberfläche zeigen** , wenn Sie das Controller Modell selbst rendern.
-    * Derzeit ist die Zeiger Pose nur über die Windows-spezifische API ( **SourceState. sourcepose. trygetposition/Rotation** ) verfügbar, die die Zeiger Pose anfordert.
+    * Derzeit ist die Zeiger Pose nur über die Windows-spezifische API (**SourceState. sourcepose. trygetposition/Rotation**) verfügbar, die die Zeiger Pose anfordert.
 
 Diese posikoordinaten werden alle in Unity-Weltkoordinaten ausgedrückt.

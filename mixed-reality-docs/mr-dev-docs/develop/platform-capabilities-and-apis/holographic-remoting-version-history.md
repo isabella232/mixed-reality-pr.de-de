@@ -3,20 +3,24 @@ title: Holographic Remoting-Versionsverlauf
 description: Versionsverlauf für Holographic Remoting auf hololens 2.
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Versionsverlauf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677849"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443465"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic Remoting-Versionsverlauf
 
 > [!IMPORTANT]
 > Diese Anleitung gilt speziell für Holographic-Remoting auf hololens 2.
+
+## <a name="version-240-december-1-2020"></a>Version 2.4.0 (1. Dezember 2020) <a name="v2.4.0"></a>
+* Holographic Remoting unterstützt jetzt das Schreiben von Remote-Apps mithilfe der [openxr-API](../native/openxr.md). Informationen zu den ersten Schritten finden Sie unter [Schreiben einer holografischen Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md).
+* Fehlerbehebungen und Verbesserungen der Stabilität.
 
 ## <a name="version-231-october-10-2020"></a>Version 2.3.1 (10. Oktober 2020) <a name="v2.3.1"></a>
 * Korrigiert Regression mit Remote-Pose-Vorhersage, die den visuellen Jitter verursacht hat.
@@ -102,8 +106,9 @@ ms.locfileid: "94677849"
 * Erstes öffentliches Release von Holographic Remoting für hololens 2.
 
 ## <a name="see-also"></a>Weitere Informationen
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe gemischter Windows-APIs](holographic-remoting-create-remote-wmr.md)
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
-* [Schreiben einer Holographic Remoting-Host-App](holographic-remoting-create-host.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting-Software – Lizenzbedingungen](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

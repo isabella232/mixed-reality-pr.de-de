@@ -1,19 +1,19 @@
 ---
-title: Aktualisieren Ihrer steamvr-Anwendung
+title: Aktualisieren von steamvr-Apps für Windows Mixed Reality
 description: Bewährte Methoden zum Aktualisieren Ihrer steamvr-Anwendung, um die Kompatibilität mit Windows Mixed Reality-Headsets zu maximieren.
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Steamvr, Kompatibilität, portieren, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Steam, Motion Controllers, Haptik
-ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4565f041db83574a51d9327d37780f5ef216dc9c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677659"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443437"
 ---
-# <a name="updating-your-steamvr-application"></a>Aktualisieren Ihrer steamvr-Anwendung
+# <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Aktualisieren von steamvr-Apps für Windows Mixed Reality
 Wir empfehlen Entwicklern, ihre steamvr-Erfahrungen zu testen und zu optimieren, um Sie auf Windows Mixed Reality-Headsets auszuführen. Diese Dokumentation behandelt allgemeine Verbesserungen, die Entwickler durchführen können, um sicherzustellen, dass Ihre Arbeit in Windows Mixed Reality hervorragend verläuft
 
 ## <a name="initial-setup-instructions"></a>Anweisungen für die erste Einrichtung
@@ -52,7 +52,7 @@ Windows Mixed Reality Motion Controllers verwenden einen standardmäßigen Hapti
 
 ## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>Starten von steamvr-Apps über das Windows Mixed Reality-Startmenü
 
-Bei der durch die Verwendung von "Stream" verteilten VR-Umgebung haben wir [die Windows Mixed Reality for steamvr Beta](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) zusammen mit den neuesten [Windows Insider](https://insider.windows.com) RS5-Flügen aktualisiert, sodass die steamvr-Titel jetzt automatisch im Windows Mixed Reality-Startmenü in der Liste "alle apps" angezeigt werden. Nachdem Sie diese Softwareversionen installiert haben, können Ihre Kunden jetzt über die Windows Mixed Reality-Startseite direkt aus der Windows Mixed Reality-Startseite starten, ohne Ihre Headsets zu entfernen
+Bei der durch die Verwendung von "Stream" verteilten VR-Umgebung haben wir [Windows Mixed Reality für steamvr](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) zusammen mit den neuesten [Windows-Releases](https://insider.windows.com) aktualisiert, damit die steamvr-Titel nun automatisch im Windows Mixed Reality-Startmenü in der Liste "alle apps" angezeigt werden.
 
 ## <a name="windows-mixed-reality-logo"></a>Windows Mixed Reality-Logo
 
