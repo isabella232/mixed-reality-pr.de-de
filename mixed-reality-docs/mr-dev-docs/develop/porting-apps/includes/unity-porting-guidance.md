@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443669"
+ms.locfileid: "96477035"
 ---
 # <a name="project-settings"></a>[Projekteinstellungen](#tab/project)
 
@@ -94,7 +94,8 @@ Der Algorithmus basiert auf einem Blog von Daniel smilkow: [größten Rechteck i
 ### <a name="8-work-through-your-input-model"></a>8. arbeiten Sie mit dem Eingabe Modell
 
 Jedes Spiel oder jede Anwendung, das auf ein vorhandenes HMD ausgerichtet ist, verfügt über eine Reihe von Eingaben, die es verarbeitet, sowie über die Typen von Eingaben, die für die Benutzer Anforderung benötigt werden Wir haben versucht, es so einfach und unkompliziert wie möglich zu gestalten, um die in Windows Mixed Reality verfügbaren Eingaben zu nutzen.
-1. Ausführliche Informationen zur Bereitstellung von Eingaben durch Windows Mixed Reality finden Sie im **Leitfaden für die Eingabe Portierung für Unity** auf der angrenzenden Registerkarte.
+
+Ausführliche Informationen zur Bereitstellung von Eingaben durch Windows Mixed Reality finden Sie im [Leitfaden für die Eingabe Portierung für Unity](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) auf der angrenzenden Registerkarte.
 
 ### <a name="9-performance-testing-and-tuning"></a>9. Leistungstests und-Optimierung
 
