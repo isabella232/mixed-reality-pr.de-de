@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
+ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002965"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96501708"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -53,6 +53,10 @@ Wenn die Fehlermeldung "7-14 ein Fehler ist aufgetreten" angezeigt wird, führen
 ## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a>Ich erhalte die Fehlermeldung "Es ist 13-14 ein Fehler aufgetreten", wenn mein PC aus dem Ruhezustand (S4) fortgesetzt wird.
 
 Manchmal kann die Grafikkarte während des fort Setzens keine Verbindung herstellen. Wenn Sie also den USB-Typ C vom PC deinstallieren und wiederherstellen, können Sie eine Verbindung herstellen.
+
+## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>Mein HP Motion Controller-Joystick kommt manchmal an eine Seite.
+
+Dieses Problem wird behoben, indem der Joystick vollständig drückt wird, bis es klickt, und der Wechsel erfolgt frei.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Das Mixed Reality-Portal besagt, dass die gemischte Realität auf diesem Headset nicht ausgeführt werden kann. Dies funktionierte aber problemlos mit meinem vorherigen WMR-Headset.
 
