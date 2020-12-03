@@ -8,13 +8,15 @@
   href: install-the-tools.md
 - name: Portieren von Apps
   items:
-    - name: Vorbereiten einer vorhandenen App für HoloLens 2
-      href: unity/mrtk-porting-guide.md
-    - name: Leitfaden zum Portieren von immersiven Apps
+    - name: Übersicht zum Portieren
+      href: porting-apps/porting-overview.md
+    - name: "Porting von HoloLens-Apps (1.\_Generation) zu HoloLens\_2"
+      href: porting-apps/porting-hl1-hl2.md
+    - name: Portieren von VR-Apps zu Windows Mixed Reality
       href: porting-apps/porting-guides.md
-    - name: Aktualisierung für SteamVR
+    - name: Aktualisieren von SteamVR-Apps für Windows Mixed Reality
       href: porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md
-    - name: Aktualisieren von 2D-UWP-Apps für Mixed Reality
+    - name: Aktualisieren von 2D UWP-Apps für Windows Mixed Reality
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
@@ -26,8 +28,6 @@
           href: unity/mrtk-getting-started.md
         - name: Konfigurieren eines Unity-Projekts für Windows Mixed Reality
           href: unity/configure-unity-project.md
-        - name: Vorbereiten einer vorhandenen App für HoloLens 2
-          href: unity/mrtk-porting-guide.md
     - name: Tutorials
       items:
         - name: Übersicht
@@ -399,7 +399,11 @@
         - name: Holographic Remoting-Player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Schreiben einer Holographic Remoting-Remote-App
-          href: platform-capabilities-and-apis/holographic-remoting-create-host.md
+          items:
+            - name: HolographicSpace-API
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
+            - name: OpenXR-API
+              href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
         - name: Schreiben einer benutzerdefinierten Holographic Remoting Player-App
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
         - name: Benutzerdefinierte Holographic Remoting-Datenkanäle
