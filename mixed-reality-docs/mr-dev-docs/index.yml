@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 7d5ba4ded77079858ef36c62a4c90e2fdd5794f5
-  ms.sourcegitcommit: 4cb579ac0413fc2dfad5da6506437246f6653926
+  ms.openlocfilehash: 6ea718c20d80078c95fc4151d2598f892519db3e
+  ms.sourcegitcommit: 2db930daba1ef4c444ab179d0061a5d84e2980c1
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 10/30/2020
-  ms.locfileid: "93036276"
+  ms.lasthandoff: 12/02/2020
+  ms.locfileid: "96513249"
 highlightedContent:
   items:
   - title: Was ist Mixed Reality?
@@ -41,7 +41,7 @@ highlightedContent:
     url: https://docs.microsoft.com/hololens/hololens-requirements
   - title: VR-Fans
     itemType: how-to-guide
-    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/
+    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
   - title: Mixed Reality-Lernmodule
     itemType: learn
     url: develop/mr-learning-overview.md
@@ -75,9 +75,9 @@ productDirectory:
       text: Erste Schritte mit Unity
     - url: develop/unreal/unreal-development-overview.md
       text: Erste Schritte mit Unreal
-    - url: develop/native/directx-development-overview.md
-      text: Erste Schritte mit Native
-    - url: develop/unity/mrtk-porting-guide.md
+    - url: develop/porting-apps/porting-overview.md
+      text: Portieren Ihrer vorhandenen Apps
+    - url: develop/porting-apps/porting-hl1-hl2.md
       text: Vorbereiten Ihrer App für HoloLens 2
   - title: Bereitstellen
     imageSrc: images/icon-distribution.jpg
@@ -193,6 +193,8 @@ additionalContent:
     items:
     - title: Verteilen
       links:
+      - text: Verteilungsübersicht
+        url: distribute/distribute-overview.md
       - text: Entwerfen eines 3D-App-Startprogramms
         url: distribute/3d-app-launcher-design-guidance.md
       - text: Erstellen von 3D-Modellen für die Mixed Reality-Startumgebung
@@ -233,3 +235,11 @@ additionalContent:
         url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
       - text: Galaxie-Explorer 2.0
         url: develop/unity/galaxy-explorer-update.md
+    - title: Learn-Module
+      links:
+      - text: Einführung in Mixed Reality
+        url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
+      - text: Einrichten eines Mixed Reality-Projekts in Unity mit dem Mixed Reality Toolkit
+        url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
+      - text: Erstellen einer Sprachübersetzungsanwendung mit Unity und Azure Cognitive Services
+        url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
