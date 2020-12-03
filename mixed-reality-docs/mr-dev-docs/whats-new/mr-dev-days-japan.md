@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
+ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443486"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538717"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -57,7 +57,7 @@ Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu
 |2:55 Uhr-3:10PM|**Umbruch**||||
 |3:10PM-3:35 Uhr|*Sitzung 7* Azure-Objekt Anker|Jesse McCulloch|DE|300|
 |3:40 Uhr-4:05uhr|*Sitzung 8* Azure-Remote Rendering|Atsushi-Suzuki|JA|300|
-|4:10PM-4:35 Uhr|*Sitzung 9* Räumliche Azure-Anker|TBD|JA|300|
+|4:10PM-4:35 Uhr|*Sitzung 9* Ausrichten von Hologram und realer Welt über räumliche Azure-Anker|Yingguang Mei|DE|300|
 |4:40 Uhr-5:05uhr|*Sitzung 10* Unity + pixyz|Shinobu Takahashi (Unity)|JA|200|
 |5:10PM-5:35pm|*Sitzung 11* Azure kinect DK Deep Dive, Fallstudie|Shinji Chiba|JA|400|
 |5:35pm-5:50uhr|Schließen|Madoka Chiyoda|JA|Nicht verfügbar|
