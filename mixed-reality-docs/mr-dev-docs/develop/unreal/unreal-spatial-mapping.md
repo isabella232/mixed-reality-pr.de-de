@@ -7,16 +7,15 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, räumliche Abbildung, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678809"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354376"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Räumliche Abbildung in Unreal
 
-## <a name="overview"></a>Übersicht
 Die räumliche Abbildung ermöglicht es, durch Anzeigen der die HoloLens umgebenden Welt Objekte auf Oberflächen in der physischen Welt zu platzieren. Dadurch erscheinen Hologramme für den Benutzer realer. Die räumliche Abbildung verankert darüber hinaus Objekte in der Welt des Benutzers und nutzt dazu Tiefeninformationen der realen Welt. Dies hilft dabei, den Benutzer zu überzeugen, dass sich die betreffenden Hologramme tatsächlich in seinem Bereich befinden; frei im Raum schwebende oder sich mit dem Benutzer bewegende Hologramme fühlen sich weniger real an. Wann immer es möglich ist, sollten Sie Elemente platzieren, um das Wohlbefinden des Benutzers zu steigern.
 
 Weitere Informationen zur Qualität der räumlichen Abbildung, Platzierung, Verdeckung, Rendering und mehr finden Sie im Dokument [Räumliche Abbildung](../../design/spatial-mapping.md).
@@ -26,6 +25,8 @@ Weitere Informationen zur Qualität der räumlichen Abbildung, Platzierung, Verd
 So aktivieren Sie die räumliche Abbildung in HoloLens:
 - Öffnen Sie **Edit > Project Settings** (Bearbeiten > Projekteinstellungen), und scrollen Sie zum Abschnitt **Platforms** (Plattformen) herunter.    
     + Wählen Sie **HoloLens** aus, und aktivieren Sie **Spatial Perception** (Räumliche Wahrnehmung).
+
+![Screenshot der HoloLens-Funktionalität für Projekteinstellungen mit hervorgehobener Option zur räumlichen Abbildung](images/unreal-spatial-mapping-img-01.png)
 
 So abonnieren Sie räumliche Abbildung und debuggen das **MRMesh** in einem HoloLens-Spiel:
 1. Öffnen Sie die **ARSessionConfig**, und klappen Sie den Abschnitt **ARSettings > World Mapping** (Weltdarstellung) auf. 
@@ -48,6 +49,13 @@ Sie können die folgenden Parameter ändern, um das Laufzeitverhalten der räuml
     + Im Falle einer großen Anwendungslaufzeitumgebung muss dieser Wert ggf. hoch sein, um dem realen Raum gerecht zu werden.  Dagegen kann dieser Wert kleiner sein, wenn die Anwendung lediglich Hologramme auf Oberflächen in der unmittelbareren Umgebung des Benutzers platzieren muss. Wenn sich der Benutzer in der Umgebung bewegt, bewegt sich das Volumen der räumlichen Abbildung mit ihm mit. 
 
 ## <a name="working-with-mrmesh"></a>Arbeiten mit MRMesh
+
+Zunächst müssen Sie die räumliche Abbildung starten:
+
+![Blaupause der Funktion „ToggleARCapture“ mit hervorgehobenem Erfassungstyp für räumliche Abbildung](images/unreal-spatial-mapping-img-02.png)
+
+Nachdem die räumliche Abbildung für den Raum erfasst wurde, empfehlen wir, die räumliche Abbildung zu deaktivieren.  Die räumliche Abbildung kann entweder nach einer bestimmten Zeitspanne abgeschlossen sein, oder wenn Raycasts in jede Richtung Kollisionen mit dem MRMesh zurückgeben.
+
 So erhalten Sie zur Laufzeit Zugriff auf das **MRMesh**:
 1. Fügen Sie einem Blaupausenakteur eine **ARTrackableNotify**-Komponente hinzu. 
 
@@ -64,21 +72,53 @@ Sie können das Material des Gittermodells im Ereignisdiagramm der Blaupause ode
 
 ![Raumanker: Beispiel](images/unreal-spatialmapping-example.PNG)
 
-In C++ können Sie den `OnTrackableAdded`-Delegat abonnieren, um die `ARTrackedGeometry` abzurufen, sobald sie verfügbar ist, wie im Code unten zu sehen. 
+## <a name="spatial-mapping-in-c"></a>Räumliche Abbildung in C++
 
-> [!IMPORTANT]
-> Die build.cs-Datei des Projekts **MUSS** **AugmentedReality** in der Liste **PublicDependencyModuleNames** aufweisen.
-> - Dies schließt **ARBlueprintLibrary.h** und **MRMeshComponent.h** ein, mit deren Hilfe Sie die **MRMesh**-Komponente von **UARTrackedGeometry** untersuchen können. 
+Fügen Sie in der build.cs-Datei Ihres Spiels **AugmentedReality** und **MRMesh** zur Liste „PublicDependencyModuleNames“ hinzu:
 
-![Raumanker: C++-Beispielcode](images/unreal-spatialmapping-examplecode.PNG)
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",    
+        "EyeTracker",
+        "AugmentedReality",
+        "MRMesh"
+});
+```
 
-Räumliche Abbildung ist nicht der einzige Datentyp, der mithilfe von **ARTrackedGeometries** dargestellt wird. Sie können überprüfen, ob `EARObjectClassification` den Wert `World` aufweist, was bedeutet, dass es sich um Geometriedaten der räumlichen Abbildung handelt. 
+Abonnieren Sie zum Zugriff auf das MRMesh die **OnTrackableAdded**-Delegaten:
 
-Für Aktualisierungs- und Entfernungsereignisse stehen ähnliche Delegaten zur Verfügung: 
-- `AddOnTrackableUpdatedDelegate_Handle` 
-- `AddOnTrackableRemovedDelegate_Handle`. 
+```cpp
+#include "ARBlueprintLibrary.h"
+#include "MRMeshComponent.h"
 
-Die vollständige Liste der Ereignisse finden Sie in der Komponenten-API [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html).
+void AARTrackableMonitor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Subscribe to Tracked Geometry delegates
+    UARBlueprintLibrary::AddOnTrackableAddedDelegate_Handle(
+        FOnTrackableAddedDelegate::CreateUObject(this, &AARTrackableMonitor::OnTrackableAdded)
+    );
+}
+
+void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
+{
+    // When tracked geometry is received, check that it's from spatial mapping
+    if(Added->GetObjectClassification() == EARObjectClassification::World)
+    {
+        UMRMeshComponent* MRMesh = Added->GetUnderlyingMesh();
+    }
+}
+```
+
+> [!NOTE]
+> Es gibt ähnliche Delegaten für aktualisierte und entfernte Ereignisse, **AddOnTrackableUpdatedDelegate_Handle** bzw. **AddOnTrackableRemovedDelegate_Handle**.
+>
+> Die vollständige Liste der Ereignisse finden Sie in der Komponenten-API [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html).
 
 ## <a name="see-also"></a>Siehe auch
 * [Räumliche Abbildung](../../design/spatial-mapping.md)

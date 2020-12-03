@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, Raumanker, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 3ce83160f745fc48f082776caa3cfa87d23a1844
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678829"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354493"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Lokale Raumanker in Unreal
 
 ## <a name="overview"></a>Übersicht
 
 Raumanker werden verwendet, um Hologramme zwischen Anwendungssitzungen im realen Raum zu speichern. Diese werden über Unreal mithilfe von **ARPin** s angezeigt und im Ankerspeicher von HoloLens gespeichert, der in zukünftigen Sitzungen geladen wird. Lokale Anker eignen sich ideal als Fallback, wenn keine Internetverbindung vorhanden ist.
+
+> [!NOTE]
+> Ankerfunktionen aus UE 4.25 sind in 4.26 veraltet und sollten durch neuere ersetzt werden. 
 
 > [!IMPORTANT]
 > Lokale Anker werden auf dem Gerät gespeichert, während Azure-Raumanker in der Cloud gespeichert werden. Wenn Sie Azure Cloud Services zum Speichern Ihrer Anker verwenden möchten, verfügen wir über ein Dokument, in dem Sie durch den Integrationsprozess für [Azure-Raumanker](unreal-azure-spatial-anchors.md) geführt werden. Beachten Sie, dass Sie sowohl lokale als auch Azure-Anker im selben Projekt haben können, ohne dass Konflikte auftreten.
@@ -27,13 +30,13 @@ Raumanker werden verwendet, um Hologramme zwischen Anwendungssitzungen im realen
 
 Vor dem Speichern oder Laden von Ankern müssen Sie sich zunächst vergewissern, dass der Ankerspeicher bereit ist.  Versuche, eine der HoloLens-Ankerfunktionen aufzurufen, bevor der Ankerspeicher bereit ist, sind nicht erfolgreich.  
 
-![Raumanker: Speicher bereit](images/unreal-spatialanchors-store-ready.PNG)
+[!INCLUDE[](includes/tabs-sa-1.md)]
 
 ## <a name="saving-anchors"></a>Speichern von Ankern
 
 Sobald die Anwendung über eine Komponente verfügt, die in der Umgebung fixiert werden muss, kann sie wie folgt im Ankerspeicher gespeichert werden: 
 
-![Raumanker: Speichern](images/unreal-spatialanchors-save.PNG)
+[!INCLUDE[](includes/tabs-sa-2.md)]
 
 Das heißt im Einzelnen:
 1. Erzeugen Sie einen Akteur an einer bekannten Position.
@@ -47,7 +50,7 @@ Das heißt im Einzelnen:
 
 Beim Start einer Anwendung können Sie die folgende Blaupause verwenden, um Komponenten an ihren Ankerpositionen wiederherzustellen:
 
-![Raumanker: Laden](images/unreal-spatialanchors-load.PNG)
+[!INCLUDE[](includes/tabs-sa-3.md)]
 
 Das heißt im Einzelnen:
 1. Iterieren Sie über alle Anker im Ankerspeicher. 
@@ -62,7 +65,7 @@ Die Anker-ID wird ebenfalls abgefragt, um abhängig vom gespeicherten Namen des 
 
 Wenn Sie die Arbeit mit einem Anker beendet haben, können Sie einzelne Anker oder den gesamten Ankerspeicher mit den Komponenten **Remove ARPin from WMRAnchor Store** (ARPin aus WMRAnkerspeicher entfernen) und **Remove All ARPins from WMRAnchor Store** (Alle ARPins aus WMRAnkerspeicher entfernen) löschen.
 
-![Raumanker: Entfernen](images/unreal-spatialanchors-remove.PNG)
+[!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
 > Beachten Sie, dass Raumanker sich noch in der Betaphase befinden, prüfen Sie also unbedingt auf aktualisierte Informationen und Features.
