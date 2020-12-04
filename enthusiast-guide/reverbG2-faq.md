@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501708"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578615"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -57,6 +57,10 @@ Manchmal kann die Grafikkarte während des fort Setzens keine Verbindung herstel
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>Mein HP Motion Controller-Joystick kommt manchmal an eine Seite.
 
 Dieses Problem wird behoben, indem der Joystick vollständig drückt wird, bis es klickt, und der Wechsel erfolgt frei.
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>Der Status "andere" ist sehr laut, oder mein Audioausschnitt ist abgeschnitten, während ich das Mikrofon mit einigen Anwendungen verwende.
+
+Die Eingabe volumeebenen werden automatisch auf 100% festgelegt, wenn das HP-Reverb-Mikrofon zuerst von einem Windows-PC erkannt wird. Aufgrund des Reverb-G2's hochwertigen Mikrofonen ist die Eingabe Sensitivität weitaus höher als die standardmäßigen Windows 10-Einstellungen erwartet. Es wird empfohlen, die eingabebene "Reverb G2-Mikrofon" beginnend bei 50% zu setzen und von dort zentral hoch Eine optimale Einstellung ist für den Benutzer spezifisch, insbesondere dann, wenn Anwendungen verwendet werden, die nicht über die Mikrofon Einstellung "automatisch gewinnen" verfügen. Beispiele für Anwendungen mit "automatischer Gewinn" sind Skype, Zoom, Teams und Cisco WebEx, aber nicht alle VR Social-oder Broadcasting-Anwendungen haben dieses Feature.
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>Das Mixed Reality-Portal besagt, dass die gemischte Realität auf diesem Headset nicht ausgeführt werden kann. Dies funktionierte aber problemlos mit meinem vorherigen WMR-Headset.
 

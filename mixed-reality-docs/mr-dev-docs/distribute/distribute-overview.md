@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
 keywords: Hololens, gemischte Realität, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Paket, AppX, Merchandising
-ms.openlocfilehash: f52109792e174a0b0fbdd9738539b5fc88f190a1
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443508"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578879"
 ---
 # <a name="distributing-your-apps"></a>Verteilen von apps
 
@@ -81,7 +81,7 @@ Das Erreichen Ihrer Apps in die Hände Ihrer Benutzer oder der Welt ist der wich
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Benutzerdefinierte Win32-Bereitstellung</strong></a> (nur Windows Mixed Reality-siehe unten)</td>
+    <td><a href="#additional-scenarios"><strong>Benutzerdefinierte Win32-Bereitstellung</strong></a> (für hololens-Geräte nicht verfügbar-siehe unten)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>

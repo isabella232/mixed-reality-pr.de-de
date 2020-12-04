@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, hololens, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Package, AppX, Merchandising, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703116"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578899"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Senden einer App an den Microsoft Store
+
+> [!IMPORTANT]
+> Wenn Sie eine Unreal-Anwendung übermitteln, stellen Sie sicher, dass Sie die **[Veröffentlichungs Anweisungen hier](../develop/unreal/unreal-publishing-to-store.md)** befolgen, bevor Sie fortfahren.
 
 Sowohl [hololens](../hololens-hardware-details.md) als auch der Windows 10-PC, der Ihr [immersives Headset](../discover/immersive-headset-hardware-details.md) antreibt, werden universelle Windows-Plattform-apps ausgeführt. Unabhängig davon, ob Sie eine APP übermitteln, die hololens, PCs oder beides unterstützt, wird die APP-Übermittlung über das [Partner Center](https://partner.microsoft.com/dashboard)übermittelt.
 
@@ -38,9 +41,9 @@ Die folgenden Image Ressourcen sind für die AppX-Buildtools erforderlich, um Ih
 
 | Erforderliches Asset | Empfohlene Skalierung | Bildformat | Wo wird das Medienobjekt angezeigt? | 
 |----------|----------|----------|------------------|
-| Quadratisches Logo 71x71 | Any |  PNG | – | 
+| Quadratisches Logo 71x71 | Any |  PNG | N/V | 
 | Quadratisches Logo 150x150 | 150x150 (100% Skala) oder 225 x 225 (150% Skalierung) | PNG | Start-Pins und alle apps (wenn 310x310 nicht bereitgestellt wird), Store-Suchvorschläge, Store-Listenseite, Store-durchsuchen, Store-Suche | 
-|  Breites 310x150-Logo |  Any  |  PNG  |  – | 
+|  Breites 310x150-Logo |  Any  |  PNG  |  N/V | 
 |  Store-Logo |  75x75 (150% Skalierung)  |  PNG  |  Partner Center, Berichts-APP, Schreiben einer Überprüfung, meine Bibliothek | 
 |  Begrüßungsbildschirm |  930x450 (150% Skalieren)  |  PNG  |  2D-App-Startfeld (Slate) | 
 
@@ -212,7 +215,7 @@ Verwenden Sie die Kontrollkästchen, um potenziellen Kunden mitzuteilen, ob Ihre
 
 Beachten Sie, dass Sie Kontrollkästchen für "Minimale Hardware" oder "Empfohlene Hardware" für Eingabetypen auswählen. 
 
-Beispiel: 
+Zum Beispiel: 
 * Wenn das Spiel Bewegungs Controller erfordert, aber eine Spracheingabe über Mikrofon akzeptiert, aktivieren Sie das Kontrollkästchen "Minimale Hardware" neben "Windows Mixed Reality Motion Controllers", aber das Kontrollkästchen "Empfohlene Hardware" neben "Mikrofon". 
 * Wenn Ihr Spiel entweder mit einem Xbox-Controller, Gamepad oder Bewegungs Controllern abgespielt werden kann, aktivieren Sie das Kontrollkästchen "Minimale Hardware" neben "Xbox Controller" oder "Gamepad", und aktivieren Sie das Kontrollkästchen "Empfohlene Hardware" neben "Windows Mixed Reality Motion Controllers", da Bewegungs Controller wahrscheinlich eine Schritt-für-Schritt-Anleitung aus dem Gamepad anbieten.
 
