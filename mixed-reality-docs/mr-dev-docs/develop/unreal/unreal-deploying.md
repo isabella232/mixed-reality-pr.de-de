@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ef33e037d6ab6a69059c1452b71a428fe51836b9
+ms.sourcegitcommit: d56e7dd6c917ddc4ead0792ebff21891921174b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679119"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96564020"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Bereitstellen auf Gerät in Unreal
 
@@ -59,4 +59,4 @@ Wenn Sie die unechte Development Checkpoint Journey befolgen, befinden wir uns i
 > [!div class="nextstepaction"]
 > [Erweiterte Dienste](unreal-development-overview.md#5-adding-services)
 
-Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#4-deploying-to-a-device) zurückkehren.
+Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#4-streaming-and-deploying-to-a-device) zurückkehren.
