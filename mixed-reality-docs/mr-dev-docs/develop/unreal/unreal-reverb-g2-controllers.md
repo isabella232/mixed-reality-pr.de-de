@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, Reverb, Reverb G2, HP-Simulator G2, gemischte Realität, Entwicklung, Bewegungs Controller, Benutzereingaben, Features, neues Projekt, Emulator, Dokumentation, Handbücher, Features, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678929"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609591"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>HP-Reverb-G2-Controller in Unreal 
 
@@ -24,7 +24,7 @@ ms.locfileid: "94678929"
 
 ## <a name="porting-an-existing-openxr-app"></a>Portieren einer vorhandenen openxr-App 
 
-Wenn im Spiel für den HP Mixed Reality-Controller keine Controller Bindungen vorhanden sind, versucht die openxr-Laufzeit, die vorhandenen Bindungen dem aktiven Controller zuzuordnen.  In diesem Fall verfügt das Spiel über eine Oculus-Berührungs Bindung und keine HP Mixed Reality Controller-Bindungen.
+Wenn im Spiel für den HP Mixed Reality-Controller keine Controller Bindungen vorhanden sind, versucht die openxr-Laufzeit, vorhandene Bindungen dem aktiven Controller zuzuordnen.  In diesem Fall verfügt das Spiel über eine Oculus-Berührungs Bindung und keine HP Mixed Reality Controller-Bindungen.
 
 ![Neuzuordnen vorhandener Bindungen, wenn keine Controller Bindungen vorhanden sind](images/reverb-g2-img-04.png)
 
@@ -52,7 +52,7 @@ Klicken Sie mit der rechten Maustaste auf einen Blueprint, und suchen Sie im Ein
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Steamvr-Eingabe](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
 * [Verwenden von "steamvr" mit Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Unreal Player Kamera](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

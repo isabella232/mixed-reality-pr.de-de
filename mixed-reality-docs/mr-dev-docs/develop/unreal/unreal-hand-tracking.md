@@ -6,22 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Handbücher, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4c66e2353c1e881c05541fd0fe9eafa553ea5c23
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679209"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609711"
 ---
 # <a name="hand-tracking-in-unreal"></a>Handtracking in Unreal
 
-## <a name="overview"></a>Übersicht
-
-Das Hand Verfolgungssystem verwendet die Palmen und Finger der Person als Eingabe. Sie können die Position und Drehung jedes Fingers, den gesamten Palmen und sogar Handgesten für die Verwendung in Ihrem Code erhalten. 
+Das Hand Verfolgungssystem verwendet die Palmen und Finger der Person als Eingabe. Daten an Position und Drehung jedes Fingers, das gesamte Palmen und Handgesten sind verfügbar. 
 
 ## <a name="hand-pose"></a>Hand darstellen
 
-Hand darstellen ermöglicht Ihnen, die Hände und Finger des aktiven Benutzers zu verfolgen und als Eingabe zu verwenden, auf die Sie über Blueprints und C++ zugreifen können. Weitere technische Details finden Sie in der [Windows. perception. People. handpose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) -API von Unreal. Die Unreal-API sendet die Daten als Koordinatensystem, wobei Ticks mit der Unreal-Engine synchronisiert werden.
+Hand darstellen ermöglicht Ihnen die Nachverfolgung und Verwendung der Hände und Finger der Benutzer als Eingabe. Sie können sowohl in Blueprints als auch C++ auf Überwachungsdaten zugreifen. Weitere technische Details finden Sie in der [Windows. perception. People. handpose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) -API von Unreal. Die Unreal-API sendet die Daten als Koordinatensystem, wobei Ticks mit der Unreal-Engine synchronisiert werden.
 
 ### <a name="understanding-the-bone-hierarchy"></a>Grundlegendes zur Knochen Hierarchie
 
@@ -85,6 +83,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::SupportsHandTrackin
 ```
 
 ### <a name="getting-hand-tracking"></a>Erhalten von Hand Nachverfolgung
+
 Mit **gethandjointtransform** können Sie räumliche Daten von Hand zurückgeben. Die Daten aktualisieren jeden Frame, aber wenn Sie sich innerhalb eines Frames befinden, werden die zurückgegebenen Werte zwischengespeichert. Es wird aus Leistungsgründen nicht empfohlen, in dieser Funktion eine hohe Logik zu haben. 
 
 ![Hand Gelenk Transformation](images/unreal/get-hand-joint-transform.png)
@@ -94,24 +93,25 @@ C++:
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransform(EControllerHand Hand, EWMRHandKeypoint Keypoint, FTransform& OutTransform, float& OutRadius)
 ```
 
-Funktionsparameter Aufschlüsselung:
+Im folgenden finden Sie eine Aufschlüsselung der Funktionsparameter von gethandjointtransform:
 
-* **Hand** – eine ist die linke oder Rechte Seite des Benutzers.
+* **Hand** – kann die Benutzer Links oder rechts sein.
 * **Keypoint** – der Knochen der Hand. 
 * **Transformation** – Koordinaten und Ausrichtung der Basis von Bone. Sie können die Basis des nächsten Knochens anfordern, um die Transformations Daten für das Ende eines Knochens zu erhalten. Ein spezieller Tip-Bone gibt das Ende der distal-Tabelle an. 
 * **RADIUS** – Radius der Basis des Knochens.
-* **Rückgabewert** – true, wenn der Rahmen dieses Frames nachverfolgt wird, false, wenn der Knochen nicht nachverfolgt wird.
+* **Rückgabewert** – true, wenn der Bereich in diesem Frame nachverfolgt wird, false, wenn der Knochen nicht nachverfolgt wird.
 
 ## <a name="hand-live-link-animation"></a>Live Link Animation Hand
+
 Hand stellen werden der Animation mithilfe des [Live Link-Plug](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)-ins ausgesetzt.
 
 Wenn die Windows Mixed Reality-und Live Link-Plug-ins aktiviert sind: 
 1. Wählen Sie **Window > Live Link** aus, um das Fenster Live Link-Editor zu öffnen. 
-2. Klicken Sie auf **Quelle** , und aktivieren Sie **Windows Mixed Reality-Hand Verfolgungs Quelle**
+2. **Quelle** auswählen und **Windows Mixed Reality-Hand Verfolgungs Quelle** aktivieren
 
 ![Live Link Quelle](images/unreal/live-link-source.png)
  
-Nachdem Sie die Quelle aktiviert und ein Animations Objekt geöffnet haben, erweitern Sie den Abschnitt **Animation** auf der Registerkarte **Vorschau Szene** , und sehen Sie sich auch weitere Optionen an (die Details befinden sich in der Live Link Dokumentation von Unreal, da sich das Plug-in in der Beta Version befindet).
+Nachdem Sie die Quelle aktiviert und ein Animations Objekt geöffnet haben, erweitern Sie den Abschnitt **Animation** auf der Registerkarte **Vorschau Szene** , um zusätzliche Optionen anzuzeigen.
 
 ![Live Link Animation](images/unreal/live-link-animation.png)
  
@@ -177,7 +177,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ### <a name="blueprint-api-reference"></a>Referenz zur Blueprint-API
 
-Um mit Hand-Meshes in Blaupausen arbeiten zu können:
+So arbeiten Sie mit Hand-Meshes in Blaupausen:
 1. Hinzufügen einer **artrackablenotify** -Komponente zu einem Blueprint-Actor
 
 ![Meldung zu einem darstellbaren Element](images/unreal/ar-trackable-notify.png)
@@ -194,7 +194,8 @@ Um mit Hand-Meshes in Blaupausen arbeiten zu können:
 
 Sie können einen Hand Strahl als Zeigegerät sowohl in C++ als auch in Blueprints verwenden, das die [Windows. UI. Input. Spatial. spatialpointerinteraktionsourcepose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) -API verfügbar macht.
 
-Es ist wichtig zu erwähnen, dass die Ergebnisse aller Funktionen jeden Frame ändern, dass Sie alle aufgerufen werden. Weitere Informationen zu reinen und impformen oder Aufruf baren Funktionen finden Sie in der Blueprint-Benutzer-GUID für [Funktionen](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure) .
+> [!IMPORTANT]
+> Da alle Funktions Ergebnisse jeden Frame ändern, werden Sie alle aufgerufen. Weitere Informationen zu reinen und impformen oder Aufruf baren Funktionen finden Sie in der Blueprint-Benutzer-GUID für [Funktionen](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
 
 Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter **Windows Mixed Reality HMD**:
 
@@ -203,6 +204,7 @@ Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter
 Wenn Sie in C++ auf Sie zugreifen möchten, schließen Sie am `WindowsMixedRealityFunctionLibrary.h` Anfang der aufrufenden Codedatei ein.
 
 ### <a name="enum"></a>Enumeration
+
 Sie haben auch Zugriff auf die Eingabe Fälle unter **ehmdinputcontrollerbuttons**, die in Blaupausen verwendet werden können:
 
 ![Eingabe Controller-Schaltflächen](images/unreal/input-controller-buttons.png)
@@ -218,10 +220,11 @@ enum class EHMDInputControllerButtons : uint8
 ```
 
 Im folgenden finden Sie eine Aufschlüsselung der beiden anwendbaren Aufzählungs Fälle:
+
 * **Select** -User hat Select-Ereignis ausgelöst. 
-    * Das Ereignis kann in hololens 2 per Air-Tap, Gaze und Commit oder durch "Select" mit aktivierter [Spracheingabe](unreal-voice-input.md) ausgelöst werden. 
+    * Ausgelöst in hololens 2 durch Luft tippen, Überblicks und Commit oder durch "Select" mit aktivierter [Spracheingabe](unreal-voice-input.md) . 
 * Das von Benutzern ausgelöste Ereignis **zum Erfassen von** Ereignissen. 
-    * Dieses Ereignis kann in hololens 2 ausgelöst werden, indem die Finger des Benutzers in einem Hologram geschlossen werden. 
+    * Wird in hololens 2 ausgelöst, indem die Finger des Benutzers in einem Hologram geschlossen werden. 
 
 Sie können auf den Überwachungs Status Ihres Hand Netzes in C++ über die unten gezeigte Aufzählung zugreifen `EHMDTrackingStatus` :
 
@@ -235,18 +238,21 @@ enum class EHMDTrackingStatus : uint8
 ```
 
 Im folgenden finden Sie eine Aufschlüsselung der beiden anwendbaren Aufzählungs Fälle:
+
 * **Notverfolgt** – die Hand ist nicht sichtbar.
 * Nach **verfolgte** –: die Hand ist vollständig nachverfolgt.
 
 ### <a name="struct"></a>Struktur
+
 Die pointerposeinfo-Struktur kann Ihnen Informationen zu den folgenden Daten liefern:
+
 * **Ursprung** – Ursprung der Hand
 * **Richtung** – Richtung der Hand
 * **Up** – Up Vector of the Hand
 * **Ausrichtung** – Ausrichtung Quaternion 
 * **Überwachungs Status** – aktueller Überwachungs Status
 
-Sie können auf diese über Blaupausen zugreifen, wie unten dargestellt:
+Sie können auf die pointerposeinfo-Struktur über Blaupausen zugreifen, wie unten dargestellt:
 
 ![Zeiger stellen Informationen BP dar](images/unreal/pointer-pose-info-bp.png)
 
@@ -324,7 +330,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 ## <a name="gestures"></a>Gesten
 
-Die hololens 2 können räumliche Gesten nachverfolgen, was bedeutet, dass Sie diese Gesten als Eingabe erfassen können. Weitere Informationen zu Gesten finden Sie im Artikel zur [grundlegenden Verwendung von hololens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
+Hololens 2 verfolgt räumliche Gesten, was bedeutet, dass Sie diese Gesten als Eingabe erfassen können. Weitere Informationen zu Gesten finden Sie im Artikel zur [grundlegenden Verwendung von hololens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
 
 Sie finden die Blueprint-Funktion in unter **Windows Mixed Reality Spatial Input** und die C++-Funktion, indem Sie `WindowsMixedRealitySpatialInputFunctionLibrary.h` Ihre aufrufende Codedatei hinzufügen.
 
@@ -407,7 +413,7 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie dem Weg der Unreal-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie die unwirkliche Entwicklungs Journey befolgen, die wir festgelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Lokale Raumanker](unreal-spatial-anchors.md)

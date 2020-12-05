@@ -3,14 +3,14 @@ title: Funktionsweise von Inside-Out-Tracking
 description: Informationen zum kamerabasierten, in Windows Mixed Reality verwendeten System zur Nachverfolgung.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Inside-Out, Inside Out, Tracking, Kamera
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434605"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609731"
 ---
-# <a name="inside-out-tracking"></a>Innere Nachverfolgung
+# <a name="inside-out-tracking"></a>Inside-Out-Tracking
 
 ## <a name="how-does-inside-out-tracking-work"></a>Funktionsweise der inneren Nachverfolgung
 
@@ -30,7 +30,7 @@ Um sicherzustellen, dass die Überwachung für Sie gut funktioniert, sind zwei A
 
 ## <a name="how-much-light-is-enough-light"></a>Wie viel Licht ist ausreichend hell?
 
-Eine gute Faustregel ist, wenn Sie in der Umgebung bequem herum navigieren können, ohne dass diese zu dunkel ist, und wenn Sie die Funktionen von anderen Personen über den Raum hinweg beobachten können, ist das Überwachungssystem wahrscheinlich genug Licht.
+Eine gute Faustregel ist, wenn Sie in der Umgebung bequem herum navigieren können, ohne dass diese zu dunkel ist, und wenn Sie die Funktionen von anderen Personen über den Raum hinweg beobachten können, ist das Überwachungssystem wahrscheinlich genug Licht. Beachten Sie, dass es zu viel Licht gibt, wenn Sie mit der Sonne zurechtkommen, dass die Kameras erschöpft sind und nicht zuverlässig nachverfolgt werden können. 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>Was ist die empfohlene Menge an Umgebungs Features?
 
@@ -42,7 +42,7 @@ Das Gerät ist für die Unterstützung von Bewegung konzipiert, die über das, w
 
 ## <a name="where-will-tracking-not-work"></a>Wo funktioniert die Überwachung nicht?
 
-Die Nachverfolgung funktioniert nicht in einem dunklen Raum, in dem die Kameras aufgrund von geringem Licht nicht genügend Features sehen können. Die Nachverfolgung ist in der Regel nicht gut geeignet (bzw. manchmal überhaupt), wenn Fahrzeuge wie Flugzeuge, Busse, trainiert, Fahrzeuge oder Aufzüge eingesetzt werden.
+Die Nachverfolgung funktioniert nicht in einem dunklen Raum, in dem die Kameras aufgrund von geringem Licht nicht genügend Features sehen können. Die Nachverfolgung ist in der Regel nicht gut geeignet (bzw. manchmal überhaupt), wenn Fahrzeuge wie Flugzeuge, Busse, trainiert, Fahrzeuge oder Aufzüge eingesetzt werden. Die Nachverfolgung kann auch fehlschlagen, wenn es zu viel Licht oder einen starken leichten Unterschied gibt. Wenn z. b. ein direkter Strom von Sonnen Sonnen in einem Raum vorhanden ist, können die Kameras die Verfügbarkeit verringern, um die Sättigung zu verringern, und es sind keine regulären Natur Features sichtbar. Es wird empfohlen, dass Sie sich auf eine relativ gleichmäßige Beleuchtung beschränken, und wenn Sie Dinge ungemütlich hervorheben müssen, ist das Überwachungssystem möglicherweise nicht gut geeignet. 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>Worin besteht der Unterschied zwischen 3DOF und 6DOF?
 
@@ -72,6 +72,6 @@ Das Überwachungssystem speichert einige Umgebungs Daten so, dass Sie den tatsä
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Problembehandlung für das Überwachungssystem](tracking.md)
-* [Motion-Controller](controller-in-wmr.md)
+* [Motion-Controller](controllers-in-wmr.md)
 * [Ihre Windows Mixed Reality-Startumgebung](your-mixed-reality-home.md)
 * [Verwenden von spielen und apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

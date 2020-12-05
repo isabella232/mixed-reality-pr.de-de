@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678949"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609681"
 ---
 # <a name="the-making-of-kippys-escape"></a>Das Erstellen von Kippy-Escapezeichen
 
@@ -24,7 +24,7 @@ Kippy der Roboter wird reaktiviert, um sich auf einer Insel zu finden. Es liegt 
 
 ## <a name="overview"></a>Übersicht
 
-Die Escapezeichen-Escapesequenz ist eine Open Source-Beispiel-App mit [hololens 2](https://docs.microsoft.com/hololens/hololens2-hardware) für Unreal Engine 4 und [Mixed Reality UX Tools für Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In diesem Beitrag werden Sie durch den Prozess geführt, mit dem die Arbeit von Kippy in das Leben gebracht wird, von den ersten Prinzipien und dem visuellen Design bis hin zur Implementierung und Optimierung des Erlebnisses. Weitere Informationen zum entwickeln gemischter Reality-Anwendungen mit mrtk-UX-Tools finden Sie in der [Übersicht über die Unreal-Entwicklung](unreal-development-overview.md).
+Die Escapezeichen-Escapesequenz ist eine Open Source-Beispiel-App mit [hololens 2](https://docs.microsoft.com/hololens/hololens2-hardware) für Unreal Engine 4 und [Mixed Reality UX Tools für Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In diesem Beitrag wird der Prozess von den ersten Prinzipien und dem visuellen Entwurf bis hin zur Implementierung und Optimierung der-Funktion erläutert. Weitere Informationen zum entwickeln gemischter Reality-Anwendungen mit mrtk-UX-Tools finden Sie in der [Übersicht über die Unreal-Entwicklung](unreal-development-overview.md).
 
 ## <a name="first-principles"></a>Erste Prinzipien 
 
@@ -36,7 +36,7 @@ Wir haben drei Leitlinien für die-Funktion veröffentlicht: Es musste Spaß und
 
 Hololens 2 hat heute Zugang zu Design Features, die noch nicht im Spiel spielen. Objekte können mithilfe ihrer Hände direkt per pushübertragung oder mit der Augen Verfolgung manipuliert werden. Diese wichtigen Features befinden sich hinter einigen der Spaß Zeiten, die wir in Kippy-Escapezeichen entwickelt haben.  
 
-Mithilfe der einzigartigen hololens 2-Features als Leitfaden für den Spiel Entwurf haben wir einige kleine Umgebungs Szenarien erweitert. Inseln sind sehr sinnvoll, da Sie für verschiedene Player Höhen angepasst werden können und einige unterhaltsame Brücken Ideen bereitgestellt haben. Von dort aus haben wir uns auf das Design der antiken Zivilisation ausgewirkt, das die Technologie von Sci-Fi-Technologie erfüllt, mit der Idee, dass jemand einen Mechanismus über Ruinen erstellt hat, der eine seltsame Energie für jede Insel nutzt. Die Inseln erhielten jeweils ein eigenes Erscheinungsbild, ein Detail, das bei der Erstellung von visuellem Interesse half. Ein ausgewogenes Gleichgewicht zwischen der Modellierung und der Texturierung war von Anfang an, um zeichnen-Aufrufe für die Renderingleistung niedrig zu halten, sodass ein stilisiertes Aussehen mit dem Hintergrund entworfen wurde. 
+Mithilfe der einzigartigen hololens 2-Features als Leitfaden für den Spiel Entwurf haben wir einige kleine Umgebungs Szenarien erweitert. Inseln sind sinnvoll, da Sie für verschiedene Player Höhen angepasst werden können und einige unterhaltsame Brücken Ideen bereitgestellt haben. Wir haben uns auf das Design der antiken Zivilisation ausgewirkt, das auf die Technologie von Sci-Fi trifft, mit der Idee, dass jemand einen Mechanismus über Ruinen erstellt hat, der eine seltsame Energie für jede Insel nutzt. Die Inseln erhielten jeweils ein eigenes Erscheinungsbild, ein Detail, das bei der Erstellung von visuellem Interesse half. Ein ausgewogenes Gleichgewicht zwischen Modellierung und Texturierung würde zu einer geringen Darstellung von Zeichnungs aufrufen für die Renderingleistung führen, sodass ein stilisiertes Aussehen mit dem Hintergrund entworfen wurde. 
 
 ![Der frühe Spiel Entwurf skizziert ](images/kippys-escape/kippys-escape-img-01.png)
  *einige frühe Skizzen für das Aussehen der* Darstellung.
@@ -54,7 +54,7 @@ Um den kurzen Produktions Zeitplan beizubehalten, haben wir uns zugestimmt, dass
 
 *Wenn der Benutzer zu lange braucht, um ein Rätsel zu beheben, gibt Kippy dem Benutzer einen Hinweis.*
 
-Über den Zeichen-und Umgebungs Entwurf hinaus haben wir einen konzertierten Aufwand unternommen, um das Spiel Spaß zu machen. Mit der Augen Verfolgung konnten wir Material-und audioattribute auslösen, die die wichtigsten Teile des Spiels hervorgehoben haben. Mit räumlichem Audioinhalt können die Ebenen zu Hause in der Umgebung des Players werden. Wenn Sie Objekte, pushschaltflächen und die Bearbeitung von Schiebereglern durchführen können, ist es wichtig, dass Sie sicherstellen, dass diese Verbindungspunkte natürlich sehr leicht waren. 
+Über den Zeichen-und Umgebungs Entwurf hinaus haben wir einen konzertierten Aufwand unternommen, um das Spiel Spaß zu machen. Mit der Augen Verfolgung konnten wir Material-und audioattribute auslösen, die die wichtigsten Teile des Spiels hervorgehoben haben. Mit räumlichem Audioinhalt können die Ebenen zu Hause in der Umgebung des Players werden. Durch das Erfassen von Objekten, durch Drücken von Schaltflächen und das Bearbeiten von Schiebereglern werden innovative Player Engagements gesteuert. Es war wichtig, sicherzustellen, dass diese Verbindungspunkte in natürlicher Bedeutung waren. 
 
 ![Das Ende des Brücken Kabels wird ausgeblendet, wenn der Benutzer die Hand anspricht.](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -117,4 +117,4 @@ Starten Sie die hololens 2, und laden Sie die APP aus dem Microsoft Store [herun
 </tr>
 </table>
 
-Vielen Dank an unsere Freunde bei [Framestore](https://www.framestore.com/) , um uns dabei zu unterstützen, das Escapezeichen auf die nächste Stufe zu bringen. Von der Zeichen Entwicklung bis hin zum Asset-Design und zur Spielprogrammierung war die Zusammenarbeit mit diesem Projekt entscheidend.  
+Vielen Dank an unsere Freunde bei [Framestore](https://www.framestore.com/) , um uns dabei zu unterstützen, das Escapezeichen in den Leben zu bringen. Von der Zeichen Entwicklung bis hin zum Asset-Design und zur Spielprogrammierung war die Zusammenarbeit mit diesem Projekt entscheidend.  

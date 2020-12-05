@@ -6,24 +6,24 @@ ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Entwicklung, Materialien, Dokumentation, Leitfäden, Features, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678939"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609571"
 ---
 # <a name="material-recommendations-in-unreal"></a>Materialempfehlungen in Unreal
 
-Material kann die Leistung in der Unreal Engine ausmachen oder unterbrechen. Diese Seite fungiert als Schnellstart für die grundlegenden Einstellungen, die Sie verwenden sollten, um die bestmögliche Leistung zu erzielen.
+Die Materialien, die Sie verwenden, können direkt beeinflussen, wie gut Ihre Projekte in der Unreal Engine ausgeführt werden. Diese Seite fungiert als Schnellstart für die grundlegenden Einstellungen, die Sie verwenden sollten, um die optimale Leistung Ihrer gemischten Reality-Anwendungen zu erzielen.
 
 ## <a name="using-customizeduvs"></a>Verwenden von customizeduvs
 
-Wenn Sie benutzerdefinierte Benutzerkonten in Ihrem Material bereitstellen müssen, sollten Sie stattdessen customizeduvs verwenden, anstatt die UV-Struktur des Textur Knotens direkt zu ändern. Mit customizeduvs kann eine UV-Manipulation in den Vertex-Shadern statt im Pixel-Shader erfolgen. 
+Wenn Sie eine UV-tisierung für Ihr Material durchführen müssen, verwenden Sie stattdessen customizeduvs, anstatt die UV-Struktur des Textur Knotens direkt zu ändern. Mit customizeduvs können Sie benutzerdefinierte Benutzerkonten in den Vertex-Shadern und nicht im Pixelshader bearbeiten.
 
 ![Material Einstellungen in Unreal](images/unreal-materials-img-01c.png)
 
-Weitere Details zu den Materialien finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) und in den bewährten Beispielen in den folgenden Screenshots:
+Material Details finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) und in den bewährten Beispielen in den folgenden Screenshots:
 
 [ ![ Empfohlene Material Einstellungen in der ](images/unreal-materials-img-01.png) von Unreal ](images/unreal-materials-img-01.png#lightbox) 
  *empfohlenen Material Einrichtung*
@@ -33,7 +33,7 @@ Weitere Details zu den Materialien finden Sie in der [Unreal Engine-Dokumentatio
 
 ## <a name="changing-blend-mode"></a>Ändern des Blend-Modus
 
-Sie sollten den Blend-Modus auf "undurchsichtig" festlegen, es sei denn, es gibt einen starken Grund dafür. Maskierte und durchlässiges Material sind langsam. Weitere Details zu den Materialien finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+Es wird empfohlen, den Blend-Modus auf "undurchsichtig" festzulegen, es sei denn, es gibt einen starken Grund dafür Maskierte und durchlässiges Material sind langsam. Weitere Details zu den Materialien finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
 
 ![Ändern des Blend-Modus](images/unreal-materials-img-02.jpg)
 
@@ -65,9 +65,9 @@ Wenn Ihr Material keine Reflektionen oder glänzen erfordert, kann das Festlegen
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Die folgenden Einstellungen sind nicht "Einstellungen", wie Sie bewährte Methoden im Zusammenhang mit Materialien sind.
+Die folgenden Einstellungen sind nicht "Einstellungen", wie Sie die bewährten Methoden für Materialien betreffen.
 
-Wenn Sie Parameter erstellen, bevorzugen Sie die Verwendung von "statischen Parametern", sofern möglich. Statische Switches können verwendet werden, um einen vollständigen Branch eines Materials ohne Lauf Zeit Kosten zu entfernen. Instanzen können unterschiedliche Werte aufweisen, sodass eine vorlagenbasierte shadereinrichtung ohne Leistungseinbußen möglich ist. Der Nachteil ist jedoch, dass dadurch viele Permutationen erstellt werden, die eine große Shader-Neukompilierung bewirken. Versuchen Sie, die Anzahl der statischen Parameter im Material und die Anzahl der Permutationen dieser statischen Parameter zu minimieren, die tatsächlich verwendet werden. Weitere Informationen zum Rendern von Materialparametern finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
+Wenn Sie Parameter erstellen, bevorzugen Sie die Verwendung von "statischen Parametern", sofern möglich. Statische Switches können verwendet werden, um einen vollständigen Branch eines Materials ohne Lauf Zeit Kosten zu entfernen. Instanzen können unterschiedliche Werte aufweisen, sodass es möglich ist, einen Vorlagen basierten Shader ohne Leistungseinbußen einzurichten. Der Nachteil ist, dass mehrere Permutationen erstellt werden, die eine erneute Shader-Kompilierung bewirken. Versuchen Sie, die Anzahl der statischen Parameter im Material und die Anzahl der Permutationen der verwendeten statischen Parameter zu minimieren. Weitere Informationen zum Rendern von Materialparametern finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
 
 ![Bewährte Methoden für Material Einstellungen](images/unreal-materials-img-07.jpg)
 
@@ -88,7 +88,7 @@ Sie erhalten einen kurzen Überblick über die relative Komplexität Ihres Shade
 
 ![Komplexität von Material in Unreal](images/unreal-materials-img-10.png)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Mobile Materialien](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [Ansichtsmodi](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
 * [Material Instanzen](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

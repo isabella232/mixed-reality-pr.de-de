@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d0470c5abbefce797254aa9f2030519d3347aaab
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 0a011c3f5a7ad79e83e25c4c95c46d2a04ad555d
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578889"
+ms.locfileid: "96609501"
 ---
 # <a name="gaze-input"></a>Blick Eingabe
 
-Der Blick wird verwendet, um anzugeben, was der Benutzer ansieht.  Dabei werden die Augen Verfolgungs Kameras auf dem Gerät verwendet, um einen Strahl in Unreal World Space zu finden, der dem entspricht, was der Benutzer gerade ansieht.
+Mit der Betrachtung von Blick in Mixed Reality-Apps können Sie herausfinden, was Ihre Benutzer ansehen. Wenn die Augen Verfolgungs Kameras auf Ihrem Gerät mit den Strahlen in Unreal es World Space übereinstimmen, werden die Daten aus der Datenreihe des Benutzers verfügbar. Der Blick kann sowohl in Blaupausen als auch C++ verwendet werden und ist ein zentrales Feature für Mechanismen wie Objekt Interaktion, Art der Suche und Kamera Steuerelemente.
 
 ## <a name="enabling-eye-tracking"></a>Aktivieren der Eye-Überwachung
 
@@ -25,34 +25,34 @@ Der Blick wird verwendet, um anzugeben, was der Benutzer ansieht.  Dabei werden 
 
 - Erstellen Sie einen neuen Actor, und fügen Sie ihn Ihrer Szene hinzu.
 
-> [!NOTE] 
-> Hololens Eye Tracking in Unreal hat nur einen einzelnen Blick Strahl für beide Augen und nicht die zwei Strahlen, die für die Stereoskopie erforderlich sind, was nicht unterstützt wird.
+> [!NOTE]
+> Hololens Eye Tracking in Unreal hat nur einen einzelnen Blick Strahl für beide Augen. Die stereokenverfolgung, die zwei Strahlen erfordert, wird nicht unterstützt.
 
 ## <a name="using-eye-tracking"></a>Verwenden von Eye Tracking
 
-Überprüfen Sie zunächst, ob das Gerät die Augen Nachverfolgung mit der iseyetrackerconnected-Funktion unterstützt.  Wenn dies true zurückgibt, wird getgazedata aufgerufen, um zu ermitteln, wo die Augen des Benutzers während des aktuellen Rahmens suchen:
+Überprüfen Sie zunächst, ob das Gerät die Eye-Nachverfolgung mit der **iseyetrackerconnected** -Funktion unterstützt.  Wenn die Funktion "true" zurückgibt, wird **getgazedata** aufgerufen, um zu ermitteln, wo die Augen des Benutzers im aktuellen Frame suchen:
 
 ![Blaupause der verbundenen Funktion für die Augen Verfolgung](images/unreal-gaze-img-02.png)
 
 > [!NOTE]
 > Der Fixierungs Punkt und der vertrauensrichtwert sind in hololens nicht verfügbar.
 
-Um zu ermitteln, was der Benutzer sucht, verwenden Sie den Blick Ursprung und die Richtung in einer Zeilen Ablauf Verfolgung.  Der Anfang dieses Vektors ist der Blick Ursprung, und das Ende ist der Ursprung und die Richtung des Blicks, multipliziert mit der gewünschten Entfernung:
+Verwenden Sie den Blick Ursprung und die Richtung in einer Zeilen Ablauf Verfolgung, um genau zu ermitteln, wo Ihre Benutzer suchen.  Der Wert für den Augenblick ist ein Vektor, beginnend bei der Ursprungs Suche und beim enden an der Ursprungs-und Blick Richtung, multipliziert mit der zeilenlaufverfolgungsentfernung:
 
 ![Blaupause der Daten Funktion "Get-Blick"](images/unreal-gaze-img-03.png)
 
 ## <a name="getting-head-orientation"></a>Orientierung bei der Kopfzeile
 
-Alternativ kann die HMD-Drehung verwendet werden, um die Richtung des Benutzer Kopfes darzustellen.  Hierfür ist die Eingabe Funktion für den Blick nicht erforderlich, aber es werden keine Augen Verfolgungs Informationen angezeigt.  Ein Verweis auf den Blueprint muss als Weltkontext hinzugefügt werden, um die richtigen Ausgabedaten zu erhalten:
+Sie können auch die Drehung des Head-eingebundenen Anzeigers (HMD) verwenden, um die Richtung des Benutzer Kopfes darzustellen. Sie können die Benutzer in die Kopfzeile bringen, ohne die Blick Eingabe Funktion zu aktivieren. Sie erhalten jedoch keine Informationen zu den Augenblick.  Fügen Sie einen Verweis auf den Blueprint als Weltkontext hinzu, um die richtigen Ausgabedaten zu erhalten:
 
 > [!NOTE]
 > Das erhalten von HMD-Daten ist nur in Unreal 4,26 und höher verfügbar.
 
 ![Blaupause der Get hmddata-Funktion](images/unreal-gaze-img-04.png)
 
-## <a name="using-c"></a>Verwenden von C++ 
+## <a name="using-c"></a>Verwenden von C++
 
-- Fügen Sie in der Build.cs-Datei Ihres Spiels "Eyetracker" der publicdependencymodulenames-Liste hinzu:
+- Fügen Sie in der **Build.cs** -Datei Ihres Spiels die Datei " **Eyetracker** " der **publicdependencymodulenames** -Liste hinzu:
 
 ```cpp
 PublicDependencyModuleNames.AddRange(
@@ -65,19 +65,19 @@ PublicDependencyModuleNames.AddRange(
 });
 ```
 
-- Erstellen Sie in "File/New C++ Class" einen neuen C++ Actor mit dem Namen "Eyetracker".
-    - Eine Visual Studio-Projekt Mappe wird für die neue Klasse "Eyetracker" geöffnet. Erstellen Sie, und führen Sie aus, um das Unreal-Spiel mit dem neuen Brillen-Actor zu öffnen.  Suchen Sie im Fenster "Platzieren von Akteuren" nach "Eyetracker".  Ziehen Sie diese Klasse per Drag & amp; Drop in das Spielfenster, um Sie dem Projekt hinzuzufügen:
+- Erstellen Sie in der **Datei/neuen C++-Klasse** einen neuen C++ Actor mit dem Namen " **Eyetracker** ".
+    - Eine Visual Studio-Projekt Mappe öffnet die neue Klasse "Eyetracker". Erstellen Sie, und führen Sie aus, um das Unreal-Spiel mit dem neuen Brillen-Actor zu öffnen.  Suchen Sie im Fenster " **Orts Akteure** " nach "Eyetracker", und ziehen Sie die Klasse in das Spielfenster, um Sie dem Projekt hinzuzufügen:
 
 ![Screenshot eines Actors, auf dem das Fenster "Place Actor" geöffnet ist](images/unreal-gaze-img-06.png)
 
-- Fügen Sie in "Eyetracker. cpp" für "eyetrackerfunctionlibrary" und "drawdebughelpers" Folgendes hinzu:
+- Fügen Sie in " **Eyetracker. cpp**" für " **eyetrackerfunctionlibrary**" und " **drawdebughelpers**" Folgendes hinzu:
 
 ```cpp
 #include "EyeTrackerFunctionLibrary.h"
 #include "DrawDebugHelpers.h"
 ```
 
-Überprüfen Sie in Tick, ob das Gerät die Eye-Nachverfolgung mit ueyetrackerfunctionlibrary:: iseyetrackerconnected unterstützt.  Suchen Sie anschließend den Anfang und das Ende eines Strahls für eine Zeilen Ablauf Verfolgung von ueyetrackerfunctionlibrary:: getgazedata:
+Überprüfen Sie, ob Ihr Gerät die Eye-Nachverfolgung mit **ueyetrackerfunctionlibrary:: iseyetrackerconnected** unterstützt, bevor Sie versuchen, die Daten des Blicks zu erhalten  Wenn die Eye-Nachverfolgung unterstützt wird, finden Sie den Anfang und das Ende eines Strahls für eine Zeilen Ablauf Verfolgung von **ueyetrackerfunctionlibrary:: getgazedata**. Von dort aus können Sie einen Blick Vektor erstellen und seinen Inhalt an **linetracesinglebychannel** übergeben, um alle Ray-Treffer Ergebnisse zu Debuggen:
 
 ```cpp
 void AEyeTracker::Tick(float DeltaTime)
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie dem Weg der Unreal-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie die unwirkliche Entwicklungs Journey befolgen, die wir festgelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Handtracking](unreal-hand-tracking.md)
