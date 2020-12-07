@@ -1,11 +1,15 @@
 - name: Einführung in die Mixed Reality-Entwicklung
   href: development.md
-- name: Übersicht der Azure Mixed Reality-Clouddienste
-  href: mixed-reality-cloud-services.md
-- name: Mixed Reality Learning – Übersicht
-  href: mr-learning-overview.md
 - name: Installieren der Tools
   href: install-the-tools.md
+- name: Erste Schritte
+  items:
+    - name: Übersicht der Azure Mixed Reality-Clouddienste
+      href: mixed-reality-cloud-services.md
+    - name: Mixed Reality Learning – Übersicht
+      href: mr-learning-overview.md
+    - name: Beispiele und Feature-Apps
+      href: features-and-samples.md
 - name: Portieren von Apps
   items:
     - name: Übersicht zum Portieren
@@ -216,8 +220,6 @@
           href: unity/unity-reverb-g2-controllers.md
     - name: Beispiel-Apps
       items:
-        - name: Übersicht
-          href: unity/samples.md
         - name: HoloLens 2
           items:
             - name: Oberflächen
@@ -300,8 +302,6 @@
           href: unreal/unreal-reverb-g2-controllers.md
     - name: Beispiel-Apps
       items:
-        - name: Übersicht
-          href: unreal/unreal-samples.md
         - name: Kippys Flucht
           href: unreal/unreal-kippys-escape.md
     - name: Bereitstellung und Leistung
@@ -396,6 +396,8 @@
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: Funktionsweise – Mixed Reality-Aufnahmestudios
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
+        - name: "Installieren von PIX für HoloLens\_2"
+          href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
         - name: Holographic Remoting-Player
