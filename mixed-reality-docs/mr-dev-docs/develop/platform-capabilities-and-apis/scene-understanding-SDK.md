@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity
-ms.openlocfilehash: 7541ab38cd8c90e774614af5ea457e5636ee66fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 731a4dfd0b714f22f25c0818de82680d4c576a27
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684950"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761762"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Übersicht über das Szene Verständnis von SDK
 
@@ -120,7 +120,7 @@ Sceneobjects können eine der folgenden Möglichkeiten aufweisen:
 <th>Sceneobjectkind</th> <th>BESCHREIBUNG</th>
 </tr>
 <tr><td>Hintergrund</td><td>Das sceneobject-Objekt ist bekannt, dass es sich <b>nicht</b> um eines der anderen erkannten Arten von Szenen Objekten handelt. Diese Klasse sollte nicht mit unknown verwechselt werden, wenn der Hintergrund bekanntermaßen nicht "Wall/Floor/Ceiling" ist usw... Obwohl unbekannt noch nicht kategorisiert ist.</b></td></tr>
-<tr><td>And</td><td>Eine physische Wand. Wände werden als unveränderbare Umgebungs Strukturen angesehen.</td></tr>
+<tr><td>Wall</td><td>Eine physische Wand. Wände werden als unveränderbare Umgebungs Strukturen angesehen.</td></tr>
 <tr><td>Etage</td><td>Die Ebenen sind beliebige Oberflächen, auf denen eine durchlaufen werden kann. Hinweis: die Treppe sind keine Ebenen. Beachten Sie auch, dass die Fußböden eine beliebige über-und-Oberfläche voraussetzen und daher keine explizite Annahme eines Singular ist. Strukturen mit mehreren Ebenen, Rampen usw... sollten alle als Floor klassifiziert werden.</td></tr>
 <tr><td>Ceiling</td><td>Die Oberfläche eines Raums.</td></tr>
 <tr><td>Plattform</td><td>Eine große flache Oberfläche, auf der Sie holograms platzieren können. Diese stellen tendenziell Tabellen, Countertops und andere große horizontale Flächen dar.</td></tr>
@@ -135,9 +135,9 @@ Eine scenemesh ist eine scenecomponent, die die Geometrie willkürlicher geometr
 
 #### <a name="winding-order-and-coordinate-systems"></a>Sortieren von Reihenfolge und Koordinatensystemen
 
-Alle Netzen, die von der Szene verstanden werden, sollten in einem rechts gerichteten Koordinatensystem mithilfe der Reihenfolge im Uhrzeigersinn die Netzen zurückgeben. 
+Alle Netzen, die von der Szene verstanden werden, werden voraussichtlich in einem Right-Handed Koordinatensystem mithilfe der Reihenfolge im Uhrzeigersinn zurückgeben. 
 
-Hinweis: Betriebssystem-Builds vor. 191105 verfügen möglicherweise über einen bekannten Fehler, bei dem "World"-Netzen in der Reihenfolge gegen den Uhrzeigersinn zurückgegeben wurden, die anschließend korrigiert wurde.
+Hinweis: Betriebssystem-Builds vor. 191105 verfügen möglicherweise über einen bekannten Fehler, bei dem "World"-Netzen in Counter-Clockwise Sortierreihenfolge zurückgegeben werden, die anschließend korrigiert wurde.
 
 ### <a name="scenequad"></a>Scenequad
 
@@ -222,7 +222,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-re-finding-components"></a>Komponenten Aktualisierung und-Suche
 
-Es gibt eine weitere Funktion, die Komponenten in der Szene abruft, die als ***findComponent*** bezeichnet werden. Diese Funktion ist nützlich, wenn Überwachungs Objekte aktualisiert und in nachfolgenden Szenen gefunden werden. Mit dem folgenden Code wird eine neue Szene in Relation zu einer vorherigen Szene berechnet und dann die Fläche in der neuen Szene gefunden.
+Es gibt eine weitere Funktion, die Komponenten in der Szene abruft, die als **_findComponent_* _ bezeichnet werden. Diese Funktion ist nützlich, wenn Überwachungs Objekte aktualisiert und in nachfolgenden Szenen gefunden werden. Mit dem folgenden Code wird eine neue Szene in Relation zu einer vorherigen Szene berechnet und dann die Fläche in der neuen Szene gefunden.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +239,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Zugreifen auf Meshes und Quads von Szenen Objekten
 
-Nachdem sceneobjects gefunden wurde, möchte Ihre Anwendung wahrscheinlich auf die Daten zugreifen, die in den in den Metadaten/Meshes enthaltenen Daten enthalten sind, aus denen Sie besteht. Der Zugriff auf diese Daten erfolgt über die Eigenschaften " ***Quads*** " und " ***Meshes*** ". Mit dem folgenden Code werden alle Quads und Netzen des Floor-Objekts aufgelistet.
+Nachdem sceneobjects gefunden wurde, möchte Ihre Anwendung wahrscheinlich auf die Daten zugreifen, die in den in den Metadaten/Meshes enthaltenen Daten enthalten sind, aus denen Sie besteht. Der Zugriff auf diese Daten erfolgt über die Eigenschaften " _*_Quads_*_ " und " _*_Meshes_*_ ". Mit dem folgenden Code werden alle Quads und Netzen des Floor-Objekts aufgelistet.
 
 ```cs
 
@@ -263,53 +263,95 @@ Beachten Sie, dass es sich um das sceneobject-Objekt mit der Transformation hand
 
 ### <a name="dealing-with-transforms"></a>Umgang mit Transformationen
 
-Das Verständnis der Szene hat beim Umgang mit Transformationen einen absichtlichen Versuch unternommen, an herkömmlichen 3D-Szenen Darstellungen auszurichten. Daher ist jede Szene auf ein einzelnes Koordinatensystem beschränkt, ähnlich wie die gängigsten 3D-Umwelt Darstellungen. Sceneobjects stellen jeweils ihren Speicherort als Position und Ausrichtung innerhalb dieses Koordinatensystems bereit. Wenn Ihre Anwendung mit Szenen beschäftigt ist, die das Limit eines einzelnen Ursprungs überschreiten, können Sie sceneobjects an spatialanchor anfügen oder mehrere Szenen generieren und zusammen zusammenführen, aber aus Gründen der Einfachheit gehen wir davon aus, dass die wasserdichten Szenen in Ihrem eigenen Ursprung vorhanden sind, der durch eine durch Scene. originspatialgraphnodeid definierte NodeId lokalisiert wird.
+Das Verständnis der Szene hat beim Umgang mit Transformationen einen absichtlichen Versuch unternommen, an herkömmlichen 3D-Szenen Darstellungen auszurichten. Daher ist jede Szene auf ein einzelnes Koordinatensystem beschränkt, ähnlich wie die gängigsten 3D-Umwelt Darstellungen. Sceneobjects stellen jeweils ihren Speicherort relativ zu diesem Koordinatensystem bereit. Wenn Ihre Anwendung mit Szenen beschäftigt ist, die das Limit eines einzelnen Ursprungs überschreiten, können Sie sceneobjects an spatialanchor anfügen oder mehrere Szenen generieren und zusammen zusammenführen, aber aus Gründen der Einfachheit gehen wir davon aus, dass die wasserdichten Szenen in Ihrem eigenen Ursprung vorhanden sind, der durch eine durch Scene. originspatialgraphnodeid definierte NodeId lokalisiert wird.
 
-Der folgende Unity-Code zeigt beispielsweise, wie Sie die Windows-perception-und Unity-APIs verwenden, um Koordinatensysteme gleich abzustimmen. Unter [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [spatialgraphinteroppreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) finden Sie ausführliche Informationen zu den Windows-perception-APIs und den systemeigenen [gemischten System Objekten in Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) . hier finden Sie ausführliche Informationen zum Abrufen eines spatialcoordinatesystem, das dem Welt Ursprung von Unity entspricht, sowie der `.ToUnity()` Erweiterungsmethode zum Wechseln zwischen `System.Numerics.Matrix4x4` und `UnityEngine.Matrix4x4` .
+Der folgende Unity-Code zeigt beispielsweise, wie Sie die Windows-perception-und Unity-APIs verwenden, um Koordinatensysteme gleich abzustimmen. Ausführliche Informationen zum Abrufen eines spatialcoordinatesystem, das dem Welt [Ursprung von Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) entspricht, finden Sie unter [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [spatialgraphinteroppreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) .
 
 ```cs
-public class SceneRootComponent : MonoBehavior
+private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
 {
-    public SpatialCoordinateSystem worldOrigin;
-    public Scene scene;
-    SpatialCoordinateSystem sceneOrigin;
-    
-    void Start()
-    {
-        // Initialize a SpatialCoordinateSystem for the scene's node in the system's Spatial Graph.
-        scene.origin = SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
-    }
-    
-    void Update()
-    {
-        // Try to get the current transform of the scene's spatial graph node.
-        // This may not be available, e.g. when tracking has been lost.
-        var sceneToWorld = sceneOrigin.TryGetTransformTo(worldOrigin);
-        if (sceneToWorld.HasValue)
-        {
-            // Convert the transform to Unity numerics and update the game object.
-            var sceneToWorldUnity = sceneToWorld.Value.ToUnity();
-            this.gameObject.transform.SetPositionAndRotation(sceneToWorldUnity.GetColumn(3), sceneToWorldUnity.rotation);
-        }
-    }
+
+      System.Numerics.Matrix4x4? sceneToUnityTransform = System.Numerics.Matrix4x4.Identity;
+
+      Windows.Perception.Spatial.SpatialCoordinateSystem sceneCoordinateSystem = Microsoft.Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
+      HolograhicFrameData holoFrameData =  Marshal.PtrToStructure<HolograhicFrameData>(UnityEngine.XR.XRDevice.GetNativePtr());
+      Windows.Perception.Spatial.SpatialCoordinateSystem unityCoordinateSystem = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(holoFrameData.ISpatialCoordinateSystemPtr);
+
+      sceneToUnityTransform = sceneCoordinateSystem.TryGetTransformTo(unityCoordinateSystem);
+
+      if(sceneToUnityTransform != null)
+      {
+          sceneToUnityTransform = ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
+      }
+      else
+      {
+          return null;
+      }
+
+    return sceneToUnityTransform;
 }
 ```
 
-Jede `SceneObject` verfügt über eine `Position` -Eigenschaft und eine- `Orientation` Eigenschaft, die verwendet werden kann, um den entsprechenden Inhalt relativ zum Ursprung der enthaltenden zu positionieren `Scene` . Im folgenden Beispiel wird z. b. davon ausgegangen, dass das Spiel ein untergeordnetes Element des Szenen Stamms ist, und seine lokale Position und Drehung zum Ausrichten an einem bestimmten-Element zuordnet `SceneObject` :
+Jede `SceneObject` verfügt über eine Transformation, die dann auf das Objekt angewendet wird. In Unity konvertieren wir in Rechte übergebene Koordinaten und weisen lokale Transformationen wie folgt zu:
 
 ```cs
-void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
+private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
 {
-    gameObject.transform.localPosition = sceneObject.Position.ToUnity();
-    gameObject.transform.localRotation = sceneObject.Orientation.ToUnity());
+    matrix.M13 = -matrix.M13;
+    matrix.M23 = -matrix.M23;
+    matrix.M43 = -matrix.M43;
+
+    matrix.M31 = -matrix.M31;
+    matrix.M32 = -matrix.M32;
+    matrix.M34 = -matrix.M34;
+
+    return matrix;
 }
+
+ private void SetUnityTransformFromMatrix4x4(Transform targetTransform, System.Numerics.Matrix4x4 matrix, bool updateLocalTransformOnly = false)
+ {
+    if(targetTransform == null)
+    {
+        return;
+    }
+
+    Vector3 unityTranslation;
+    Quaternion unityQuat;
+    Vector3 unityScale;
+
+    System.Numerics.Vector3 vector3;
+    System.Numerics.Quaternion quaternion;
+    System.Numerics.Vector3 scale;
+
+    System.Numerics.Matrix4x4.Decompose(matrix, out scale, out quaternion, out vector3);
+
+    unityTranslation = new Vector3(vector3.X, vector3.Y, vector3.Z);
+    unityQuat        = new Quaternion(quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
+    unityScale       = new Vector3(scale.X, scale.Y, scale.Z);
+
+    if(updateLocalTransformOnly)
+    {
+        targetTransform.localPosition = unityTranslation;
+        targetTransform.localRotation = unityQuat;
+    }
+    else
+    {
+        targetTransform.SetPositionAndRotation(unityTranslation, unityQuat);
+    }
+}
+
+// Assume we have an SU object called suObject and a unity equivalent unityObject
+
+System.Numerics.Matrix4x4 converted4x4LocationMatrix = ConvertRightHandedMatrix4x4ToLeftHanded(suObject.GetLocationAsMatrix());
+SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix, true);
+        
 ```
 
 ### <a name="quad"></a>Quad
 
 Die Quads wurden entwickelt, um 2D-Platzierungs Szenarios zu vereinfachen. Sie sollten sich als Erweiterungen für 2D-Canvas-UX-Elemente vorstellen. Obwohl es sich bei den Quads um Komponenten von sceneobjects handelt, die in 3D gerendert werden können, werden die Quad-APIs selbst annehmen, dass die Quad- Sie bieten Informationen wie Block, Form und Bereitstellen von APIs für die Platzierung.
 
-Die Unterbrechungen haben rechteckige Blöcke, stellen aber beliebig geformte 2D-Oberflächen dar. Um die Platzierung auf diesen 2D-Oberflächen zu ermöglichen, die mit der 3D-Umgebung interagieren, bieten Sie Hilfsprogramme, um diese Interaktion zu ermöglichen. Das grundlegendes Verständnis von Szenen bietet derzeit zwei dieser Funktionen: **findcentermustplacement** und **gedecclusionmask** . Findcentermostplacement ist eine API auf hoher Ebene, die eine Position auf dem Quad sucht, an der ein Objekt platziert werden kann, und versucht, den optimalen Speicherort für das Objekt zu finden, das sicherstellt, dass sich das umgebende Feld auf der zugrunde liegenden Oberfläche befindet.
+Die Unterbrechungen haben rechteckige Blöcke, stellen aber beliebig geformte 2D-Oberflächen dar. Um die Platzierung auf diesen 2D-Oberflächen zu ermöglichen, die mit der 3D-Umgebung interagieren, bieten Sie Hilfsprogramme, um diese Interaktion zu ermöglichen. Das grundlegendes Verständnis von Szenen bietet derzeit zwei Funktionen, _ *findcentermustplacement** und **getsurfakemask**. Findcentermostplacement ist eine API auf hoher Ebene, die eine Position auf dem Quad sucht, an der ein Objekt platziert werden kann, und versucht, den optimalen Speicherort für das Objekt zu finden, das sicherstellt, dass sich das umgebende Feld auf der zugrunde liegenden Oberfläche befindet.
 
 > [!NOTE]
 > Die Koordinaten der Ausgabe sind relativ zum Quad in "Quad-Space", wobei die obere linke Ecke (x = 0, y = 0) ist, ebenso wie bei anderen Windows-Rect-Typen. Berücksichtigen Sie dies, wenn Sie mit den Ursprüngen ihrer eigenen Objekte arbeiten. 
@@ -372,7 +414,11 @@ mesh.GetVertexPositions(positions);
 
 Der Index/der Scheitelpunkt Puffer muss >= der Index/Scheitelpunkt Anzahl sein, kann aber auch willkürlich skaliert werden, um eine effiziente Wiederverwendung von Arbeitsspeicher zu ermöglichen.
 
-## <a name="developing-with-scene-understandings"></a>Entwickeln mit Szenen Verständnissen
+### <a name="collidermesh"></a>Collidermesh
+
+Szene Objekte ermöglichen den Zugriff auf Mesh-und Collider-Mesh-Daten über die Eigenschaften Meshes und collidermeshes. Diese Meshs Stimmen immer überein, was bedeutet, dass der Index der ' Netzen '-Eigenschaft des '-Index ' die gleiche geometryh darstellt wie der Index ' Index ' der ' collidermeshes '-Eigenschaft. Wenn die Laufzeit bzw. das Objekt die Collider-Netzen unterstützt, werden Sie garantiert, dass Sie das niedrigste Polygon und die höchste Reihenfolge Näherungs Werte erzielen, und es wird empfohlen, collidermeshes zu verwenden, wenn die Anwendung Kollisionen verwenden würde. Wenn das System keine Kollisionen unterstützt, ist das in collidermeshes zurückgegebene Mesh-Objekt dasselbe Objekt wie das Mesh, das Speicher Einschränkungen reduziert.
+
+## <a name="developing-with-scene-understanding"></a>Entwickeln mit Szenen Verständnis
 
 An diesem Punkt sollten Sie die wichtigsten Bausteine der Szene verstehen, die Laufzeit und SDK versteht. Der größte Teil der Leistungsfähigkeit und Komplexität liegt in Zugriffs Mustern, der Interaktion mit 3D-Frameworks und Tools, die zusätzlich zu diesen APIs verfasst werden können, um erweiterte Aufgaben wie räumliche Planung, Raumanalyse, Navigation, Physik usw. auszuführen. Wir hoffen, diese Beispiele in Beispielen zu erfassen, die Sie in die richtige Richtung bringen sollten, um Ihre Szenarios zu glänzen. Wenn Beispiele/Szenarios nicht behandelt werden, informieren Sie uns, und wir versuchen, das Dokument/den Prototyp zu dokumentieren.
 
