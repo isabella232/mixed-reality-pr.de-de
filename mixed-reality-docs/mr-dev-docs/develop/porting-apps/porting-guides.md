@@ -1,19 +1,19 @@
 ---
-title: Portieren von VR-apps auf Windows Mixed Reality
+title: Portieren von VR-Apps zu Windows Mixed Reality
 description: Eine Schritt-für-Schritt-Anleitung, in der erläutert wird, wie Sie eine vorhandene immersive Anwendung in Windows Mixed Reality portieren.
 author: JBrentJ
 ms.author: alexturn
-ms.date: 07/07/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Port, Unity, Unreal, Middleware, Engine, UWP, Win32, Porting, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Eingabe Zuordnung,
-ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443665"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925950"
 ---
-# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portieren von VR-apps auf Windows Mixed Reality
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portieren von VR-Apps zu Windows Mixed Reality
 
 Windows 10 bietet direkte Unterstützung für immersive und holografische Headsets. Wenn Sie Inhalte für andere Geräte erstellt haben, wie z. b. den Oculus-oder den HTC-Vive, haben diese Abhängigkeiten von Bibliotheken, die über der Plattform-API des Betriebssystems vorhanden sind. Das Bereitstellen vorhandener Win32 Unity-VR-apps in Windows Mixed Reality umfasst die Neuausrichtung der Verwendung Hersteller spezifischer VR-sdgs auf die plattformübergreifenden VR-APIs von Unity.
 
@@ -56,7 +56,7 @@ Die Windows Mixed Reality-Plattform ist noch nicht aktiv. Es wird empfohlen, [da
 > [!IMPORTANT]
 > Wenn Sie HP-Reverb-G2-Controller verwenden, finden Sie in [diesem Artikel](../unreal/unreal-reverb-g2-controllers.md) weitere Anweisungen zur Eingabe Zuordnung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Windows Mixed Reality-Mindestanforderungen für die PC-Hardware Kompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Grundlegendes zur Leistung für gemischte Realität](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Empfehlungen zur Leistung für Unity](../unity/performance-recommendations-for-unity.md)

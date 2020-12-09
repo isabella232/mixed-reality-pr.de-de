@@ -1,19 +1,19 @@
 ---
-title: Übersicht über das Portieren
+title: Übersicht zum Portieren
 description: Eine Übersicht über die verschiedenen Portierungs Optionen, um vorhandene Anwendungen in gemischte Realität zu bringen.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: portieren, Unity, Middleware, Engine, UWP, Win32
-ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443535"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925823"
 ---
-# <a name="porting-overview"></a>Übersicht über das Portieren
+# <a name="porting-overview"></a>Übersicht zum Portieren
 
 Wenn Sie Ihre vorhandenen Projekte für gemischte Realität portieren oder aktualisieren, können verschiedene Szenarien anfallen, je nachdem, ob Ihre APP mit Unity oder Unreal Engine, hololens (1st Gen) oder hololens 2 oder steamvr erstellt wurde. Diese Übersichtsseite enthält unsere aktuellen Empfehlungen für jede Plattform und jedes Gerät. Stellen Sie sicher, dass Sie den Vorgang erneut durchlaufen, da sich diese Prozesse immer ändern.
 

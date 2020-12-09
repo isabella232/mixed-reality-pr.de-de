@@ -3,17 +3,17 @@ title: Bereitstellen auf Gerät in Unreal
 description: Leitfaden für die Bereitstellung auf dem Gerät in Unreal für hololens 2
 author: sw5813
 ms.author: suwu
-ms.date: 7/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e811bc1b82aa40e658f9c855b65446483dd8bef2
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 390bd1a9f1bc643efb1a342421e8c96574e74334
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609431"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925912"
 ---
 # <a name="deploy-to-device-in-unreal"></a>Bereitstellen auf Gerät in Unreal
 
