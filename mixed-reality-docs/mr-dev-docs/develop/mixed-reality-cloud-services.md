@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Azure Cloud Services
+title: Übersicht der Azure Mixed Reality-Clouddienste
 description: Mixed Reality-Clouddienstressourcen
 author: hferrone
 ms.author: v-haferr
@@ -8,14 +8,14 @@ ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, entwickeln, Entwicklung, HoloLens, Clouddienste, Azure, Remote Rendering, Raumanker, Cognitive Services, Kognition, Unity, Machine Learning, Sprachübersetzung, maschinelles Sehen, Microsoft Graph
-ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
+ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679689"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96526057"
 ---
-# <a name="azure-cloud-services"></a>Azure Cloud Services
+# <a name="azure-mixed-reality-cloud-services-overview"></a>Übersicht der Azure Mixed Reality-Clouddienste
 
 ![ Abbildung von Azure Spatial Anchors](../design/images/AzureSpatialAnchors.jpg)
 
