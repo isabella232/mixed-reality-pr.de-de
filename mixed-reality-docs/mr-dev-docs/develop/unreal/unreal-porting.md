@@ -2,25 +2,25 @@
 title: Upgrade von Projekten in Unreal
 description: Übersicht der Schritte zum Versionsupgrade und der veralteten APIs in Unreal-Projekten.
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Dokumentation, Leitfäden, Features, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Portieren, Upgrade
-ms.openlocfilehash: efad783ee199ed42c7355917a180855b3ec4f11b
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355705"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609661"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Upgrade von Projekten in Unreal
 
-Bei Updates auf eine neue Unreal-Version werden veraltete Funktionen beim Kompilieren der Blaupause oder beim Verpacken des Projekts in Form von Warnungen angezeigt.  Funktionen werden als veraltet deklariert, wenn eine neue Funktion hinzugefügt wurde, die an ihrer Stelle verwendet werden soll. 
+Bei Updates auf eine neue Unreal-Version werden veraltete Funktionen beim Kompilieren von Blaupausen oder beim Verpacken des Projekts in Form von Warnungen angezeigt.  Funktionen werden als veraltet deklariert, wenn eine neue Funktion hinzugefügt wurde, die an ihrer Stelle verwendet werden soll. 
 
 ## <a name="426-upgrades"></a>Upgrades in 4.26
  
-In Version 4.26 wurden alle AR- und VR-Plattformen umgestaltet, um allgemeine Schnittstellen hinzuzufügen und den Anwendungscode plattformneutral zu halten.  Aufgrund dieser Umgestaltung werden bei Updates von HoloLens-Projekten auf Version 4.26 möglicherweise mehr Warnungen als gewöhnlich angezeigt.  Es wird empfohlen, auf die neuen APIs zu aktualisieren, damit das Projekt leichter auf andere Plattformen portiert werden kann.
+In Version 4.26 wurden alle AR- und VR-Plattformen umgestaltet, um allgemeine Schnittstellen hinzuzufügen und den Anwendungscode plattformneutral zu halten, weshalb eventuell mehr Warnungen als gewöhnlich angezeigt werden.  Es wird empfohlen, auf die neuen APIs zu aktualisieren, damit das Projekt leichter auf andere Plattformen portiert werden kann.
 
 Aus Warnmeldungen ist zu ersehen, welche Funktion als veraltet deklariert wurde und welche Funktion stattdessen verwendet werden soll.  Alle veralteten Funktionen funktionieren in dieser Version weiterhin, tun dies in zukünftigen Versionen aber möglicherweise nicht mehr.  Ferner werden als veraltet deklarierte Versionen bei der Suche nach Funktionen in einer Blaupause nicht mehr aufgelistet.
 
@@ -49,4 +49,4 @@ Aus Warnmeldungen ist zu ersehen, welche Funktion als veraltet deklariert wurde 
 | GetVersionString | ![Blaupause der Funktion“Get Version String“](images/unreal-porting-img-16.png) |
 | IsTrackingAvailable | ![Blaupause der Eigenschaft „IsTrackingAvailable“](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Verwenden Sie das Eingabeaktionssystem von Unreal. |
-| SetFocusPointForFrame | In 4.26 entfernt.  Bisher wurde dies für die Neuprojektion beim Remoting verwendet, das jetzt tiefenbasierte Neuprojektion unterstützt. |
+| SetFocusPointForFrame | In 4.26 entfernt.  Bisher für die Neuprojektion beim Remoting verwendet, das jetzt tiefenbasierte Neuprojektion unterstützt. |

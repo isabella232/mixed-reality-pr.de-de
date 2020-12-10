@@ -1,34 +1,34 @@
 ---
 title: 1. Erste Schritte
-description: Teil 1 von 6 einer Tutorialreihe zum Erstellen einer einfachen Schach-App mit der Unreal Engine 4 und dem UX Tools-Plug-In des Mixed Reality-Toolkits
+description: Teil 1 von 6 einer Tutorialreihe zum Erstellen einer Schach-App mit der Unreal Engine 4 und dem UX Tools-Plug-In des Mixed Reality-Toolkits
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: aa6d90bebbbfc10b108b97d05931a9926118ba7c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 465215efd953c0acb9f2d80a2905ee06963c5f8c
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679859"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609721"
 ---
 # <a name="1-getting-started"></a>1. Erste Schritte
 
-Einsteigern in die Welt der Mixed Reality ebenso wie erfahrenen Experten wird hier gleichermaßen der ideale Ausgangspunkt geboten, um [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/) und die [Unreal Engine](https://www.unrealengine.com/en-US/) kennenzulernen. In dieser Tutorialreihe erhalten Sie eine ausführliche Anleitung zum Erstellen einer interaktiven Schach-App mit dem [UX Tools-Plug-In](https://github.com/microsoft/MixedReality-UXTools-Unreal), das Teil des [Mixed Reality Toolkit für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) ist. Das Plug-in unterstützt Sie beim Hinzufügen allgemeiner UX-Features zu Ihren Projekten anhand von Code, Blaupausen und Beispielen. 
+Einsteigern in die Welt der Mixed Reality ebenso wie erfahrenen Experten wird hier gleichermaßen der ideale Ausgangspunkt geboten, um ihre [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/)- und [Unreal Engine](https://www.unrealengine.com/en-US/)-Journey zu beginnen. In dieser Tutorialreihe erhalten Sie eine ausführliche Anleitung zum Erstellen einer interaktiven Schach-App mit dem [UX Tools-Plug-In](https://github.com/microsoft/MixedReality-UXTools-Unreal), das Teil des [Mixed Reality Toolkit für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) ist. Das Plug-in unterstützt Sie beim Hinzufügen allgemeiner UX-Features zu Ihren Projekten anhand von Code, Blaupausen und Beispielen. 
 
 ![Fertige Szene im Viewport](images/unreal-uxt/5-endscene.PNG)
 
-Am Ende der Reihe haben Sie praktische Erfahrungen mit folgenden Aufgaben gesammelt:
+Am Ende der Reihe haben Sie Erfahrungen mit folgenden Aufgaben gesammelt:
 * Erstellen eines neuen Projekts
 * Einrichtung für Mixed Reality
 * Arbeiten mit Benutzereingaben
 * Hinzufügen von Schaltflächen
 * Wiedergabe in einem Emulator oder auf einem Gerät
 
-
 ## <a name="prerequisites"></a>Voraussetzungen
+
 Achten Sie darauf, dass Sie die folgenden Produkte installiert haben, bevor Sie einsteigen:
 * Windows 10 (1809 oder höher)
 * Windows 10 SDK (10.0.18362.0 oder höher)
@@ -37,7 +37,8 @@ Achten Sie darauf, dass Sie die folgenden Produkte installiert haben, bevor Sie 
 * Visual Studio 2019 mit den folgenden Workloads
 
 ### <a name="installing-visual-studio-2019"></a>Installieren von Visual Studio 2019
-Stellen Sie mit den folgenden Schritten sicher, dass Sie über alle erforderlichen Visual Studio-Pakete verfügen:
+
+Stellen Sie zunächst sicher, dass Ihre Einrichtung über alle erforderlichen Visual Studio-Pakete verfügt:
 1. Installieren Sie die aktuelle Version von [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
 2. Installieren Sie die folgenden [Workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
     * Desktopentwicklung mit C++

@@ -1,22 +1,20 @@
 ---
 title: 6. Verpacken und Bereitstellen auf einem Gerät oder in einem Emulator
-description: Teil 6 von 6 einer Tutorialreihe zum Erstellen einer einfachen Schach-App mit der Unreal Engine 4 und dem UX Tools-Plug-In des Mixed Reality-Toolkits
+description: Teil 6 von 6 einer Tutorialreihe zum Erstellen einer Schach-App mit der Unreal Engine 4 und dem UX Tools-Plug-In des Mixed Reality-Toolkits
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: cbdbf87d75dcfc56c8eea52f7dff4a646f3b6a5d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679819"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609491"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Verpacken und Bereitstellen auf einem Gerät oder in einem Emulator
-
-## <a name="overview"></a>Übersicht
 
 Im vorhergehenden Tutorial haben Sie eine einfache Schaltfläche hinzugefügt, mit der die Schachfigur an ihre ursprüngliche Position zurückgesetzt wird. In diesem letzten Abschnitt führen Sie die App auf HoloLens 2 oder in einem Emulator aus. Wenn Sie über ein HoloLens 2 verfügen, können Sie die App entweder von Ihrem Computer t streamen oder verpacken, um sie direkt auf dem Gerät auszuführen. Wenn Sie kein Gerät haben, verpacken Sie die App, um Sie auf dem Emulator auszuführen. Am Ende dieses Abschnitts verfügen Sie über eine bereitgestellte Mixed Reality-App mit Interaktionen und Benutzeroberfläche, die Sie abspielen können.
 
@@ -26,7 +24,8 @@ Im vorhergehenden Tutorial haben Sie eine einfache Schaltfläche hinzugefügt, m
 * Verpacken und Bereitstellen der App auf einem HoloLens 2-Gerät oder in einem Emulator
 
 ## <a name="device-only-streaming"></a>Streamen (nur Gerät)
-[Holografisches Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) bedeutet in diesem Fall das Streamen von Daten von einem PC oder einem eigenständigen UWP-Gerät auf die HoloLens 2, ohne den Kanal zu wechseln. Dabei empfängt die Remotinghost-App einen Eingabedatenstrom von einer HoloLens, rendert die Inhalte in einer virtuellen Rundumsicht und streamt die Inhaltsframes über WLAN zurück an die HoloLens. Streaming ermöglicht es Ihnen, Remoteansichten mit der vorhandenen Desktop-PC-Software zu generieren und mehr Systemressourcen zu nutzen.
+
+[Holografisches Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) bedeutet das Streamen von Daten von einem PC oder einem eigenständigen UWP-Gerät auf die HoloLens 2, ohne den Kanal zu wechseln. Dabei empfängt die Remotinghost-App einen Eingabedatenstrom von einer HoloLens, rendert die Inhalte in einer virtuellen Rundumsicht und streamt die Inhaltsframes über WLAN zurück an die HoloLens. Streaming ermöglicht es Ihnen, Remoteansichten mit der vorhandenen Desktop-PC-Software zu generieren und mehr Systemressourcen zu nutzen.
 
 Um diese Möglichkeit für die Schach-App zu nutzen, müssen einige Voraussetzungen erfüllt sein:
 
@@ -36,7 +35,7 @@ Um diese Möglichkeit für die Schach-App zu nutzen, müssen einige Voraussetzun
 
 3.  Führen Sie einen Neustart des Editors durch, geben Sie dann die IP-Adresse Ihres Geräts ein (wie in der Holographic Remoting Player-App angezeigt), und klicken Sie dann auf **Connect** (Verbinden).
 
-Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläche **Play** (Wiedergeben) auf den Dropdownpfeil, und wählen Sie **VR Preview** (VR-Vorschau) aus. Dadurch wird die App im VR-Vorschaufenster ausgeführt, das an das HoloLens-Headset gestreamt wird.
+Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläche **Play** (Wiedergeben) auf den Dropdownpfeil, und wählen Sie **VR Preview** (VR-Vorschau) aus. Die App wird im VR-Vorschaufenster ausgeführt, das an das HoloLens-Headset gestreamt wird.
 
 ## <a name="packaging-and-deploying-the-app-via-device-portal"></a>Packen und Bereitstellen der App über das Geräteportal
 
@@ -80,7 +79,7 @@ Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläch
 7.  Klicken Sie auf **Durchsuchen...** , navigieren Sie zur Datei **ChessApp.appxbundle**, und klicken Sie auf **Öffnen**.
 
     * Aktivieren Sie das Kontrollkästchen neben **Allow me to select framework packages** (Auswählen von Framework-Paketen zulassen), wenn Sie die App zum ersten Mal auf Ihrem Gerät installieren.
-    * Schließen Sie im nächsten Dialogfeld die entsprechenden **VCLibs**- und **appx**-Dateien ein („arm64“ für Gerät, „x64“ für Emulator). Sie finden diese in dem Ordner, in dem Sie das Paket gespeichert haben, unter **HoloLens**.
+    * Schließen Sie im nächsten Dialogfeld die entsprechenden **VCLibs**- und **appx**-Dateien ein, **arm64** für Gerät und **x64** für Emulator. Sie finden diese Dateien in dem Ordner, in dem Sie das Paket gespeichert haben, unter **HoloLens**.
 
 8.  Klicken Sie auf **Install** (Installieren).
     * Sie können jetzt zu **All Apps** (Alle Apps) wechseln und auf die neu installierte App tippen, um sie auszuführen. Sie können die App jedoch auch direkt über das **Windows-Geräteportal** starten. 
@@ -89,7 +88,7 @@ Herzlichen Glückwunsch! Ihre Mixed Reality-Anwendung für HoloLens ist fertig u
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie dem Weg der Unreal-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie der Unreal-Entwicklungs-Journey folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Eingabe über Anvisieren](../unreal-gaze-input.md)

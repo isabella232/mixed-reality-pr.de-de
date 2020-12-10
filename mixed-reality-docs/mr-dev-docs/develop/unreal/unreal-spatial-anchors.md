@@ -7,18 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, Raumanker, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354493"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609631"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Lokale Raumanker in Unreal
 
-## <a name="overview"></a>Übersicht
-
-Raumanker werden verwendet, um Hologramme zwischen Anwendungssitzungen im realen Raum zu speichern. Diese werden über Unreal mithilfe von **ARPin** s angezeigt und im Ankerspeicher von HoloLens gespeichert, der in zukünftigen Sitzungen geladen wird. Lokale Anker eignen sich ideal als Fallback, wenn keine Internetverbindung vorhanden ist.
+Raumanker speichern Hologramme im realen Raum zwischen Anwendungssitzungen als **ARPin**. Sobald ARPins im Ankerspeicher von HoloLens gespeichert sind, können sie in zukünftigen Sitzungen geladen werden und stellen eine ideale Fallbackoption dar, wenn keine Internetverbindung besteht.
 
 > [!NOTE]
 > Ankerfunktionen aus UE 4.25 sind in 4.26 veraltet und sollten durch neuere ersetzt werden. 
@@ -34,7 +32,7 @@ Vor dem Speichern oder Laden von Ankern müssen Sie sich zunächst vergewissern,
 
 ## <a name="saving-anchors"></a>Speichern von Ankern
 
-Sobald die Anwendung über eine Komponente verfügt, die in der Umgebung fixiert werden muss, kann sie wie folgt im Ankerspeicher gespeichert werden: 
+Sobald die Anwendung über eine Komponente verfügt, die Sie in der Umgebung fixieren müssen, kann sie wie folgt im Ankerspeicher gespeichert werden: 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
@@ -44,7 +42,7 @@ Das heißt im Einzelnen:
 3. Fügen Sie dem **ARPin** den Akteur hinzu, und speichern Sie den Pin im HoloLens-Ankerspeicher.  
     * Der gewählte Ankername muss eindeutig sein, in diesem Fall verwenden wir dafür den aktuellen Zeitstempel. 
 
-4. Wenn der Anker erfolgreich im Ankerspeicher gespeichert wurde, kann er im HoloLens-Geräteportal unter **System > Map manager > Anchor Files Saved On Device** (System > Zuordnungs-Manager > Auf dem Gerät gespeicherte Ankerdateien) überprüft werden. 
+4. Wenn der Anker erfolgreich im Ankerspeicher gespeichert wurde, kann er im HoloLens-Geräteportal unter **System > Map manager > Anchor Files Saved On Device** (System > Zuordnungs-Manager > Auf dem Gerät gespeicherte Ankerdateien) angezeigt werden. 
 
 ## <a name="loading-anchors"></a>Laden von Ankern
 
@@ -72,7 +70,7 @@ Wenn Sie die Arbeit mit einem Anker beendet haben, können Sie einzelne Anker od
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie dem Weg der Unreal-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie der Unreal-Entwicklungs-Journey folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)

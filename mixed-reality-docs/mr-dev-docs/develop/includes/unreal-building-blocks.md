@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: cdd2b613535080b371807020670a2785274c29f5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f4f9a04a2de5e2c10bc43770bb1bfe9d00f3a4b6
+ms.sourcegitcommit: d56e7dd6c917ddc4ead0792ebff21891921174b9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697439"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96564069"
 ---
 # <a name="available-in-mrtk"></a>[In MRTK verfügbar](#tab/mrtk)
 
 |  Funktion  |  Funktionen  |
 | --- | --- |
-| [Eingabesimulation](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/InputSimulation.md) | Verwenden Sie Maus- und Tastatureingabe im Editor, um ein HMD (Head-Mounted Display) und Features des Handtrackings zu simulieren |
-| [Handinteraktion](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/HandInteraction.md) | Interagieren Sie mit UX-Komponenten mithilfe von artikulierten Handeingaben |
-| [Drückbare Schaltflächenkomponente](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/PressableButton.md) | Steuern Sie den Status von Schaltflächen-Blaupausen mithilfe von Low-Level-Komponenten |
-| [Manipulatorkomponente](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/Manipulator.md) | Bewegen und drehen Sie einen Akteur mit ein- oder zweihändigen Manipulationseingaben |
-| [Folgeverhaltenskomponente](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/FollowComponent.md) | Halten Sie einen Akteur oder eine Komponente im Blickfeld einer anderen Komponente |
+| [Eingabesimulation](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/InputSimulation.html) | Verwenden Sie Maus- und Tastatureingabe im Editor, um ein HMD (Head-Mounted Display) und Features des Handtrackings zu simulieren |
+| [Handinteraktion](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) | Interagieren Sie mit UX-Komponenten mithilfe von artikulierten Handeingaben |
+| [Drückbare Schaltfläche](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) | Steuern Sie den Status von Schaltflächen-Blaupausen mithilfe von Low-Level-Komponenten |
+| [Manipulator](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) | Bewegen und drehen Sie einen Akteur mit ein- oder zweihändigen Manipulationseingaben |
+| [Folgeverhalten](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/FollowComponent.html) | Halten Sie einen Akteur oder eine Komponente im Blickfeld einer anderen Komponente |
 
 # <a name="standalone-features"></a>[Eigenständige Features](#tab/standalone)
 

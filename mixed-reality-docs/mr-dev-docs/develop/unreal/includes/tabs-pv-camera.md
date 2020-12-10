@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354679"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609606"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,9 +13,9 @@ ms.locfileid: "96354679"
 > [!NOTE]
 > Dafür ist **Unreal Engine 4.25** oder höher erforderlich.
 
-Das System und benutzerdefinierte MRC-Rekorder erstellen Mixed Reality-Aufnahmen, indem sie die FV-Kamera mit Hologrammen kombinieren, die von der immersiven App gerendert werden.
+Das System und benutzerdefinierte MRC-Rekorder erstellen Mixed Reality-Aufnahmen, indem sie die FV-Kamera mit Hologrammen kombinieren, die von der App gerendert werden.
 
-Standardmäßig wird für die Mixed-Reality-Aufnahme die holografische Ausgabe des rechten Auges verwendet. Wenn eine immersive App hingegen [von der FV-Kamera rendert](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), wird stattdessen diese verwendet. Dies ermöglicht eine bessere Abstimmung zwischen der realen Welt und den Hologrammen im MRC-Video.
+Standardmäßig wird für die Mixed-Reality-Aufnahme die holografische Ausgabe des rechten Auges verwendet. Wenn eine immersive App hingegen [von der FV-Kamera rendert](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in), wird stattdessen diese verwendet. Das Rendering von der FV-Kamera ermöglicht eine bessere Abstimmung zwischen der realen Welt und den Hologrammen im MRC-Video.
 
 So abonnieren Sie das Rendering von der FV-Kamera:
 
@@ -51,7 +51,7 @@ So wird das Kamerabild gerendert:
 
 ![Kameratextur von Webcam](../images/unreal-camera-texture.PNG)
 
-5. Achten Sie darauf, dass das Material über einen Parameter verfügt, der mit dem Namen in **SetTextureParameterValue** übereinstimmt, der an einen Farbeintrag gebunden ist. Ohne dies kann das Kamerabild nicht ordnungsgemäß angezeigt werden.
+5. Achten Sie darauf, dass das Material über einen Parameter verfügt, der mit dem Namen in **SetTextureParameterValue** übereinstimmt, der an einen Farbeintrag gebunden ist. Ohne den Parameter kann das Kamerabild nicht ordnungsgemäß angezeigt werden.
 
 ![Kamera: Textur](../images/unreal-camera-material.PNG)
 
@@ -91,13 +91,13 @@ So wird das Kamerabild gerendert:
 
 ## <a name="find-camera-positions-in-world-space"></a>Finden von Kamerapositionen im Weltbereich
 
-Die Kamera in der HoloLens 2 ist gegenüber dem Head Tracking des Geräts vertikal versetzt.  Um diesem Umstand Rechnung zu tragen, sind einige Funktionen vorhanden, um die Position der Kamera im Weltbereich zu ermitteln.
+Die Kamera in der HoloLens 2 ist gegenüber dem Head Tracking des Geräts vertikal versetzt.  Es gibt ein paar Funktionen, um die Position der Kamera im Weltbereich zu ermitteln, um diesem Versatz Rechnung zu tragen.
 
-„GetPVCameraToWorldTransform“ ruft die Transformation der FV-Kamera im Weltbereich ab.  Diese wird auf dem Kameraobjektiv positioniert:
+„GetPVCameraToWorldTransform“ ruft die Transformation der FV-Kamera im Weltbereich ab und wird auf der Kameralinse positioniert:
 
 ![Blaupause der Funktion zum Abrufen der Transformation der FV-Kamera gegenüber dem Weltbereich](../images/unreal-pvc-img-08.png)
 
-„GetWorldSpaceRayFromCameraPoint“ wirft einen Strahl aus dem Kameraobjektiv in die Szene im Weltbereich von Unreal, um herauszufinden, was sich auf einem bestimmten Pixel im Kamerabild befindet:
+„GetWorldSpaceRayFromCameraPoint“ wirft einen Strahl aus dem Kameraobjektiv in die Szene im Weltbereich von Unreal, um den Inhalt eines Pixels im Kamerabild herauszufinden:
 
 ![Blaupause des Strahls vom Kamerapunkt zum Abrufen des Weltbereichs](../images/unreal-pvc-img-09.png)
 
@@ -105,7 +105,7 @@ Die Kamera in der HoloLens 2 ist gegenüber dem Head Tracking des Geräts verti
 
 ![Blaupause der Funktionen zum Abrufen der systeminternen PVCamera-Werte](../images/unreal-pvc-img-10.png)
 
-Um herauszufinden, was an einer bestimmten Pixelkoordinate im Weltbereich vorhanden ist, können Sie eine Zeilenablaufverfolgung mit dem Weltbereichs-Strahl verwenden:
+Um herauszufinden, was an einer bestimmten Pixelkoordinate im Weltbereich vorhanden ist, verwenden Sie eine Zeilenablaufverfolgung mit dem Weltbereichs-Strahl:
 
 ![Blaupause des Weltbereich-Strahls, der verwendet wird, um zu ermitteln, was im Weltbereich an einer bestimmten Koordinate vorhanden ist](../images/unreal-pvc-img-11.png)
 

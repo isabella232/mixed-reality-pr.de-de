@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697589"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761772"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **Vermeiden von Boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) ist ein Grundkonzept der C#- Sprache und ihrer Runtime. Dabei handelt es sich um den Prozess, Variablen eines Werttyps, wie etwa char, int, bool usw. mit Variablen vom Verweistyp zu umschließen. Wenn eine Variable eines Werttyps „geboxt“ ist, ist sie von einem System.Object umschlossen, das auf dem verwalteten Heap gespeichert wird. Auf diese Weise wird Speicher zugewiesen, der gegebenenfalls beim Verwerfen vom Garbage Collector verarbeitet werden muss. Diese Zuweisungen und ihre Aufhebung bringen Leistungskosten mit sich und sind in vielen Szenarien unnötig oder können leicht durch preiswertere Alternativen ersetzt werden.
+    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) ist ein Grundkonzept der C#- Sprache und ihrer Runtime. Dabei handelt es sich um den Prozess, Variablen eines Werttyps, wie etwa `char`, `int`, `bool` usw., mit Variablen vom Verweistyp zu umschließen. Wenn eine Variable eines Werttyps „geboxt“ ist, ist sie von einem `System.Object` umschlossen, das auf dem verwalteten Heap gespeichert wird. Auf diese Weise wird Speicher zugewiesen, der gegebenenfalls beim Verwerfen vom Garbage Collector verarbeitet werden muss. Diese Zuweisungen und ihre Aufhebung bringen Leistungskosten mit sich und sind in vielen Szenarien unnötig oder können leicht durch preiswertere Alternativen ersetzt werden.
 
-    Eine der häufigsten Formen von Boxing in der Entwicklung ist die Verwendung von [Nullwerte zulassenden Typen](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/). Der Wunsch nach der Möglichkeit, null für einen Werttyp in einer Funktion zurückgeben zu können, ist gängig, insbesondere, wenn der Vorgang beim Versuch fehlschlagen kann, den Wert abzurufen. Das potenzielle Problem bei diesem Ansatz besteht darin, dass die Zuweisung jetzt auf dem Heap erfolgt und daher zu einem späteren Zeitpunkt Garbage Collection erforderlich macht.
+    Um das Boxing zu vermeiden, stellen Sie sicher, dass die Variablen, Felder und Eigenschaften, in denen Sie numerische Typen und Strukturen (einschließlich `Nullable<T>`) speichern, stark als spezifische Typen typisiert sind, wie z. B. `int`, `float?` oder `MyStruct`, anstatt ein Objekt zu verwenden.  Wenn Sie diese Objekte in eine Liste einfügen, stellen Sie sicher, dass Sie eine stark typisierte Liste verwenden, z. B. `List<int>` anstatt `List<object>` oder `ArrayList`.
 
     **Beispiel für Boxing in C#**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **Beispiel für problematisches Boxing in Form von Typen, die Null-Werte zulassen**
-
-    Dieser Code veranschaulicht eine Partikel-Dummyklasse, die sich in einem Unity-Projekt erstellen lässt. Ein Aufruf von `TryGetSpeed()` bewirkt eine Objektzuordnung auf dem Heap, die zu einem späteren Zeitpunkt Garbage Collection erforderlich macht. Dieses Beispiel ist besonders problematisch, da es leicht 1.000 oder noch weit mehr Partikel in einer Szene geben kann, von denen jedes nach seiner aktuellen Geschwindigkeit gefragt wird. Auf diese Weise würden in jedem Frame 1000e Objekte zugewiesen und deren Zuweisung entsprechend wieder aufgehoben, was die Leistung stark herabsetzen würde. Ein Umschreiben der Funktion, sodass sie einen negativen Wert wie etwa -1 zurückgibt, um einen Fehler anzuzeigen, hätte das Problem vermieden und Arbeitsspeicher auf dem Stack gehalten.
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>Wiederholte Codepfade
@@ -268,7 +253,7 @@ Weitere Informationen zum [Optimieren des Grafikrenderings in Unity](https://uni
 
 ### <a name="optimize-depth-buffer-sharing"></a>Optimieren der gemeinsamen Nutzung des Tiefenpuffers
 
-Im Allgemeinen wird empfohlen, in den **Player XR-Einstellungen** die **Gemeinsame Nutzung des Tiefenpuffers** zu aktivieren, um die [Hologrammstabilität](../platform-capabilities-and-apis/Hologram-stability.md) zu optimieren. Wenn die tiefenbasierte Neuprojektion in der Spätphase mit dieser Einstellung aktiviert wird, wird die Wahl des **16-Bit-Tiefenformats** anstelle des **24-Bit-Tiefenformats** empfohlen. Die 16-Bit-Tiefenpuffer reduzieren die Bandbreite (und somit die erforderliche Leistung), die mit dem Tiefenpuffer-Datenverkehr einhergeht, drastisch. Dies kann sowohl für den Stromverbrauch als auch für die Leistungsverbesserung ein großer Gewinn sein. Allerdings gibt es zwei mögliche negative Ergebnisse durch Einsatz des *16-Bit-Tiefenformats* .
+Im Allgemeinen wird empfohlen, in den **Player XR-Einstellungen** die **Gemeinsame Nutzung des Tiefenpuffers** zu aktivieren, um die [Hologrammstabilität](../platform-capabilities-and-apis/Hologram-stability.md) zu optimieren. Wenn die tiefenbasierte Neuprojektion in der Spätphase mit dieser Einstellung aktiviert wird, wird die Wahl des **16-Bit-Tiefenformats** anstelle des **24-Bit-Tiefenformats** empfohlen. Die 16-Bit-Tiefenpuffer reduzieren die Bandbreite (und somit die erforderliche Leistung), die mit dem Tiefenpuffer-Datenverkehr einhergeht, drastisch. Dies kann sowohl für den Stromverbrauch als auch für die Leistungsverbesserung ein großer Gewinn sein. Allerdings gibt es zwei mögliche negative Ergebnisse durch Einsatz des *16-Bit-Tiefenformats*.
 
 **Z-Fighting**
 
@@ -288,7 +273,7 @@ Die [globale Beleuchtung in Echtzeit](https://docs.unity3d.com/Manual/GIIntro.ht
 
 Ferner wird empfohlen, jede Art von Schattenwurf zu deaktivieren, da dieser ebenfalls teure GPU-Durchgänge für eine Unity-Szene mit sich bringt. Schatten können durch Licht deaktiviert werden, lassen sich über die Qualitätseinstellungen aber auch im Ganzen steuern.
 
-**Edit** > **Project Settings** (Bearbeiten > Projekteinstellungen), wählen Sie dann die Kategorie **Quality** (Qualität) aus > wählen Sie **Low Quality** (Niedrige Qualität) für die UWP-Plattform. Sie können auch einfach die **Shadows** -Eigenschaft (Schatten) auf **Disable Shadows** (Schatten deaktivieren) festlegen.
+**Edit** > **Project Settings** (Bearbeiten > Projekteinstellungen), wählen Sie dann die Kategorie **Quality** (Qualität) aus > wählen Sie **Low Quality** (Niedrige Qualität) für die UWP-Plattform. Sie können auch einfach die **Shadows**-Eigenschaft (Schatten) auf **Disable Shadows** (Schatten deaktivieren) festlegen.
 
 Es empfiehlt sich, für Ihre Modelle in Unity „Baked Lighting“ (vorab gerenderte Lichtdetails) zu verwenden.
 

@@ -2,21 +2,21 @@
 title: Räumliche Abbildung in Unreal
 description: Leitfaden für die Verwendung der räumlichen Abbildung in Unreal
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, räumliche Abbildung, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354376"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609421"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Räumliche Abbildung in Unreal
 
-Die räumliche Abbildung ermöglicht es, durch Anzeigen der die HoloLens umgebenden Welt Objekte auf Oberflächen in der physischen Welt zu platzieren. Dadurch erscheinen Hologramme für den Benutzer realer. Die räumliche Abbildung verankert darüber hinaus Objekte in der Welt des Benutzers und nutzt dazu Tiefeninformationen der realen Welt. Dies hilft dabei, den Benutzer zu überzeugen, dass sich die betreffenden Hologramme tatsächlich in seinem Bereich befinden; frei im Raum schwebende oder sich mit dem Benutzer bewegende Hologramme fühlen sich weniger real an. Wann immer es möglich ist, sollten Sie Elemente platzieren, um das Wohlbefinden des Benutzers zu steigern.
+Mit der räumlichen Abbildung können Sie Objekte auf physischen Oberflächen in der realen Welt platzieren. Wenn die Welt, die die HoloLens umgibt, abgebildet ist, erscheinen Hologramme für Benutzer lebensechter. Die räumliche Abbildung verankert darüber hinaus Objekte in der Welt des Benutzers, indem sie Tiefeninformationen nutzt, was dabei hilft, den Benutzer davon zu überzeugen, dass sich diese Hologramme tatsächlich in seinem Bereich befinden. Hologramme, die im Raum schweben oder sich zusammen mit dem Benutzer bewegen, fühlen sich nicht so real an, weshalb Sie nach Möglichkeit Elemente immer unter dem Aspekt des Komforts platzieren sollten.
 
 Weitere Informationen zur Qualität der räumlichen Abbildung, Platzierung, Verdeckung, Rendering und mehr finden Sie im Dokument [Räumliche Abbildung](../../design/spatial-mapping.md).
 
@@ -46,7 +46,7 @@ Sie können die folgenden Parameter ändern, um das Laufzeitverhalten der räuml
 
 - **Max Triangles Per Cubic Meter** (Maximale Anzahl von Dreiecken pro Kubikmeter) dient zum Aktualisieren der Dichte der Dreiecke im Gitter der räumlichen Abbildung.  
 - **Spatial Meshing Volume Size** (Volumengröße des räumlichen Gitters) dient zum Angeben der Größe des Würfels, der den Spieler umgibt, um Daten der räumlichen Abbildung zu rendern und zu aktualisieren.  
-    + Im Falle einer großen Anwendungslaufzeitumgebung muss dieser Wert ggf. hoch sein, um dem realen Raum gerecht zu werden.  Dagegen kann dieser Wert kleiner sein, wenn die Anwendung lediglich Hologramme auf Oberflächen in der unmittelbareren Umgebung des Benutzers platzieren muss. Wenn sich der Benutzer in der Umgebung bewegt, bewegt sich das Volumen der räumlichen Abbildung mit ihm mit. 
+    + Im Falle einer großen Anwendungslaufzeitumgebung muss dieser Wert ggf. hoch sein, um dem realen Raum gerecht zu werden. Der Wert kann kleiner sein, wenn die Anwendung lediglich Hologramme auf Oberflächen in der unmittelbareren Umgebung des Benutzers platzieren muss. Wenn sich der Benutzer in der Umgebung bewegt, bewegt sich das Volumen der räumlichen Abbildung mit ihm mit. 
 
 ## <a name="working-with-mrmesh"></a>Arbeiten mit MRMesh
 
@@ -62,7 +62,7 @@ So erhalten Sie zur Laufzeit Zugriff auf das **MRMesh**:
 ![Raumanker: In AR nachverfolgbare Benachrichtigung](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. Wählen Sie die **ARTrackableNotify**-Komponente aus, und klappen Sie im Bereich **Details** den Abschnitt **Events** (Ereignisse) auf. 
-    - Klicken Sie auf die Schaltfläche **+** für die Ereignisse, die Sie überwachen möchten. 
+    - Wählen Sie die Schaltfläche **+** für die Ereignisse aus, die Sie überwachen möchten. 
 
 ![Raumanker: Ereignisse](images/unreal-spatialmapping-events.PNG)
 
