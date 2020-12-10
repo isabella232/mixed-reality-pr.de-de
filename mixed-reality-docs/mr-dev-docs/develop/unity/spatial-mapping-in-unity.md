@@ -6,16 +6,16 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, räumliche Zuordnung, Renderer, Collider, Mesh, Scan, Komponente, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677399"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002515"
 ---
 # <a name="spatial-mapping-in-unity"></a>Räumliche Abbildung in Unity
 
-In diesem Thema wird beschrieben, wie die [räumliche Zuordnung](../../design/spatial-mapping.md) in Ihrem Unity-Projekt verwendet wird, und es werden Dreiecksnetze abgerufen, die die Oberflächen weltweit um ein hololens-Gerät, für Platzierung, Okklusion, Raumanalyse usw. darstellen.
+mithilfe der [räumlichen Zuordnung](../../design/spatial-mapping.md) können Sie Dreiecksnetze abrufen, die die Oberflächen weltweit um ein hololens-Gerät darstellen. Sie können Surface-Daten für die Platzierung, die oksion und die Raumanalyse verwenden, um für Ihre Unity-Projekte eine zusätzliche Verarbeitungs Möglichkeit zu erhalten.
 
 Unity bietet vollständige Unterstützung für die räumliche Zuordnung, die Entwicklern auf folgende Weise zur Verfügung gestellt wird:
 1. In mixedrealitytoolkit verfügbare räumliche Zuordnungskomponenten, die einen einfachen und schnellen Weg für den Einstieg in die räumliche Zuordnung bieten
@@ -34,7 +34,7 @@ Um die räumliche Zuordnung in der APP zu verwenden, muss die spatialperception-
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>Hololens (erste Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -52,19 +52,20 @@ Damit eine APP räumliche Zuordnungs Daten verarbeiten kann, muss die spatialper
 
 Aktivieren der spatialperception-Funktion:
 1. Öffnen Sie im Unity-Editor den Bereich **"Player Einstellungen"** (Bearbeiten > Projekteinstellungen > Player).
-2. Klicken Sie auf die Registerkarte **"Windows Store"** .
+2. Wählen Sie auf der Registerkarte **"Windows Store"** aus.
 3. Erweitern Sie **"Veröffentlichungs Einstellungen"** , und überprüfen Sie die Funktion **"spatialperception"** in der Liste **"Funktionen"** .
 
-Beachten Sie Folgendes: Wenn Sie Ihr Unity-Projekt bereits in eine Visual Studio-Projekt Mappe exportiert haben, müssen Sie entweder in einen neuen Ordner exportieren oder [Diese Funktion manuell in "appxmanifest" in Visual Studio festlegen](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+> [!NOTE]
+> Wenn Sie Ihr Unity-Projekt bereits in eine Visual Studio-Projekt Mappe exportiert haben, müssen Sie entweder in einen neuen Ordner exportieren oder [Diese Funktion manuell in "appxmanifest" in Visual Studio festlegen](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Die räumliche Zuordnung erfordert auch ein maxversiongetestet von mindestens 10.0.10586.0:
-1. Klicken Sie in Visual Studio im Projektmappen-Explorer mit der rechten Maustaste auf **Package. appxmanifest** , und wählen Sie **Code anzeigen** aus.
+1. Klicken Sie in Visual Studio im Projektmappen-Explorer mit der rechten Maustaste auf " **Package. appxmanifest** ", und wählen Sie **Code anzeigen** aus.
 2. Suchen Sie die Zeile, in der **targetdevicefamily** angegeben ist, und ändern Sie **maxversiongete= "10.0.10240.0"** in **maxversiongete= "10.0.10586.0"** .
 3. **Speichern** Sie die Datei "Package. appxmanifest".
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Die ersten Schritte mit den integrierten räumlichen Mapping-Komponenten von Unity
 
-Unity bietet zwei Komponenten für das einfache Hinzufügen von räumlicher Zuordnung zu Ihrer APP, den **Renderer für räumliche** zuzuzuzuzufügende **Daten und den**
+Unity bietet zwei Komponenten für das einfache Hinzufügen räumlicher Mapping zu Ihrer APP, des **Renderers** für **räumliche** zuzuzuzuzuzuzuzufügende
 
 ### <a name="spatial-mapping-renderer"></a>Renderer für räumliche Zuordnung
 
@@ -84,7 +85,7 @@ Wenn Sie physische Oberflächen visualisieren und mit ihnen interagieren möchte
 
 So verwenden Sie diese beiden Komponenten in ihrer Unity-App:
 1. Wählen Sie ein gameobject-Objekt in der Mitte des Bereichs aus, in dem Sie räumliche Oberflächen Netze erkennen möchten.
-2. **Fügen Sie** im Inspektor-Fenster Komponenten-XR-zuordnungszuordnungszuweisung  >  **XR**  >  **Spatial Mapping Collider** und- **Renderer für räumliche Zuordnung** hinzu
+2. **Fügen Sie** im Inspektor-Fenster Komponenten-XR-zuordnungszuordnungszuweisung  >    >   und- **Renderer für räumliche Zuordnung** hinzu
 
 Weitere Informationen zur Verwendung dieser Komponenten finden Sie auf der <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity-Dokumentations Website</a>.
 
@@ -96,12 +97,12 @@ Diese Komponenten vereinfachen den Einstieg in die räumliche Zuordnung.  Wenn S
 
 ## <a name="using-the-low-level-unity-spatial-mapping-api"></a>Verwenden der Unity-API für die räumliche Zuordnung auf niedriger Ebene
 
-Wenn Sie mehr Kontrolle benötigen, als Sie von den Komponenten des Renderers für räumliche Zuordnung und der Komponenten Zuordnung für räumliche Zuordnung erhalten, können Sie die Low-Level-Skript-APIs für die räumliche Zuordnung verwenden.
+Wenn Sie mehr Kontrolle benötigen als die Komponenten des Renderers räumlicher Zuordnung und die Komponenten Zuordnung für die räumliche Zuordnung, verwenden Sie die Low-Level-APIs für die räumliche Zuordnung.
 
 **Namespace:** *unityengine. XR. WSA*<br>
 **Typen**: *surfaceobserver*, *SurfaceChange*, *surfacedata*, *surfaceid*
 
-Im folgenden finden Sie einen Überblick über den empfohlenen Ablauf für eine Anwendung, die die APIs für die räumliche Zuordnung verwendet.
+Wir haben den empfohlenen Flow für eine Anwendung erläutert, die in den folgenden Abschnitten die APIs für die räumliche Zuordnung verwendet.
 
 ### <a name="set-up-the-surfaceobservers"></a>Einrichten von "surfaceobserver (s)"
 
@@ -135,8 +136,8 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### <a name="handling-surface-changes"></a>Verarbeiten von Oberflächen Änderungen
 
-Es gibt mehrere Hauptfälle, die behandelt werden müssen. Hinzugefügte & aktualisiert, die denselben Codepfad verwenden und entfernt werden können.
-* In den hinzugefügten & aktualisierten Fällen im Beispiel fügen wir das gameobject-Objekt, das dieses Mesh darstellt, aus dem Wörterbuch hinzu, erstellen eine surfacedata-Struktur mit den erforderlichen Komponenten und rufen dann requestmeshdataasync auf, um das gameobject mit den Netz Daten und der Position in der Szene aufzufüllen.
+Es gibt mehrere Hauptfälle für die Behandlung von-hinzugefügten und aktualisierten, die denselben Codepfad verwenden und entfernt werden können.
+* In den hinzugefügten und aktualisierten Fällen fügen wir das gameobject-Objekt, das dieses Mesh darstellt, aus dem Wörterbuch hinzu, erstellen eine surfacedata-Struktur mit den erforderlichen Komponenten und rufen dann requestmeshdataasync auf, um das gameobject-Objekt mit den Netz Daten und der Position in der Szene aufzufüllen.
 * Im entfernten Fall entfernen wir das gameobject, das dieses Mesh darstellt, aus dem Wörterbuch und zerstören es.
 
 ```cs
@@ -189,7 +190,7 @@ System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects 
 
 ### <a name="handling-data-ready"></a>Verarbeiten von Daten
 
-Der ondataready-Handler empfängt ein surfacedata-Objekt. Die in der Datei "worldanchor", "meshfilter" und "(optional) meshcollider" enthaltenen Objekte entsprechen dem aktuellen Zustand der zugeordneten räumlichen Oberfläche. Führen Sie optional eine Analyse und/oder [Verarbeitung](../../design/spatial-mapping.md#mesh-processing) der Mesh-Daten durch, indem Sie auf den Mesh-Member des meshfilter-Objekts zugreifen. Rendersie die räumliche Oberfläche mit dem aktuellen Mesh, und (optional) verwenden Sie Sie für Physik-und Raycasts. Es ist wichtig zu bestätigen, dass der Inhalt der surfacedata nicht NULL ist.
+Der ondataready-Handler empfängt ein surfacedata-Objekt. Die in der Datei "worldanchor", "meshfilter" und "(optional) meshcollider" enthaltenen Objekte entsprechen dem aktuellen Zustand der zugeordneten räumlichen Oberfläche. Optional können Sie die Mesh-Daten analysieren und/oder [verarbeiten](../../design/spatial-mapping.md#mesh-processing) , indem Sie auf den Mesh-Member des meshfilter-Objekts zugreifen. Rendersie die räumliche Oberfläche mit dem aktuellen Mesh, und (optional) verwenden Sie Sie für Physik-und Raycasts. Es ist wichtig zu bestätigen, dass der Inhalt der surfacedata nicht NULL ist.
 
 ### <a name="start-processing-on-updates"></a>Verarbeitung bei Updates starten
 
@@ -214,13 +215,13 @@ void Start () {
 
 ## <a name="higher-level-mesh-analysis-spatialunderstanding"></a>Mesh-Analyse auf höherer Ebene: spatialunderstanding
 
-<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">Mixedrealitytoolkit</a> ist eine Sammlung hilfreicher hilfsprogrammcodes für die Holographic-Entwicklung, die auf den Holographic Unity-APIs basiert.
+Das <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">mixedrealitytoolkit</a> ist eine Sammlung von Hilfsprogramm-Code für die Holographic-Entwicklung, die auf den Holographic-APIs von Unity basiert.
 
 ### <a name="spatial-understanding"></a>Räumliche Kenntnisse
 
-Beim Platzieren von holograms in der physischen Welt ist es häufig wünschenswert, das Gitter-und Oberflächen Flächen der räumlichen Zuordnung zu überschreiten. Wenn die Platzierung prozedurale durchgeführt wird, ist ein höheres Maß an Umwelt Kenntnissen wünschenswert. Dies erfordert in der Regel Entscheidungen hinsichtlich der Fläche "Floor", "Ceiling" und "Wände". Außerdem können Sie mit einer Reihe von Platzierungs Einschränkungen optimieren, um die begehrtesten physischen Speicherorte für Holographic-Objekte zu bestimmen.
+Wenn holograms in der physischen Welt platziert werden, ist es häufig wünschenswert, das Gitter-und Oberflächen Flächen der räumlichen Zuordnung zu überschreiten. Wenn die Platzierung prozedurale durchgeführt wird, ist ein höheres Maß an Umwelt Kenntnissen wünschenswert. Dies erfordert in der Regel Entscheidungen hinsichtlich der Fläche "Floor", "Ceiling" und "Wände". Sie haben auch die Möglichkeit, eine Reihe von Platzierungs Einschränkungen zu optimieren, um die am besten geeigneten physischen Speicherorte für Holographic-Objekte zu ermitteln.
 
-Bei der Entwicklung von jung-und-Fragmenten stellten Asobo-Studios dieses Problem in den Kopf, um für diesen Zweck ein Raum-Solver zu entwickeln. Bei jedem dieser Spiele gab es Spiel spezifische Anforderungen, aber Sie haben die grundlegende Technologie für räumliche Daten genutzt. Die Bibliothek "holotoolkit. spatialunderstanding" kapselt diese Technologie, sodass Sie schnell leere Leerzeichen auf den Wänden finden, Objekte auf der Obergrenze platzieren, für das Zeichen platzieren und eine Vielzahl anderer Abfragen mit räumlichem Verständnis festlegen können.
+Bei der Entwicklung von jung Ankern und Fragmenten stellten Asobo-Studio dieses Problem durch die Entwicklung eines Raum Solvers in den Kopf. Diese Spiele hatten Spiel spezifische Anforderungen, aber Sie haben die grundlegende Technologie für räumliche Daten genutzt. Die Bibliothek "holotoolkit. spatialunderstanding" kapselt diese Technologie, sodass Sie schnell leere Leerzeichen auf den Wänden finden, Objekte auf der Obergrenze platzieren, für das Zeichen platzieren und eine Vielzahl anderer Abfragen mit räumlichem Verständnis festlegen können.
 
 Der gesamte Quellcode ist enthalten, sodass Sie ihn an Ihre Anforderungen anpassen und die Verbesserungen für die Community freigeben können. Der Code für den C++ Solver wurde in eine UWP-dll umschließt und Unity mit einem Drop in Prefab verfügbar gemacht, das in mixedrealitytoolkit enthalten ist.
 
@@ -230,7 +231,7 @@ Es gibt drei primäre Schnittstellen, die vom Modul verfügbar gemacht werden: T
 
 ### <a name="ray-casting"></a>Strahl Umwandlung
 
-Nachdem der Raum gescannt und fertiggestellt wurde, werden Bezeichnungen intern für Oberflächen, wie z. b. Boden, Ceiling und Wände, generiert. Die "playspaceraycast"-Funktion nimmt einen Strahl an und gibt zurück, wenn der Strahl mit einer bekannten Oberfläche kollidiert. wenn dies der Fall ist, werden Informationen über diese Oberfläche in Form von "raycastresult" angezeigt.
+Nachdem der Raum Scan abgeschlossen ist, werden Bezeichnungen intern für Oberflächen, wie z. b. Boden, Ceiling und Wände, generiert. Die "playspaceraycast"-Funktion nimmt einen Strahl an und gibt zurück, wenn der Strahl mit einer bekannten Oberfläche kollidiert. wenn dies der Fall ist, werden Informationen über diese Oberfläche in Form von "raycastresult" angezeigt.
 
 ```cpp
 struct RaycastResult
@@ -258,7 +259,7 @@ struct RaycastResult
 };
 ```
 
-Intern wird der raycast anhand der berechneten Voxel-Darstellung im 8cm-Format des Playspace berechnet. Jeder Voxel enthält einen Satz von Oberflächenelementen mit verarbeiteten Topologiedaten (auch als Surfels bezeichnet). Der Surfels, der in der überschneidenden Voxel-Zelle enthalten ist, wird verglichen und die beste Entsprechung für die Suche nach den Topologieinformationen. Diese Topologieinformationen enthalten die Bezeichnung, die in Form der "surfacetypes"-Aufzählung zurückgegeben wird, sowie den Oberflächen Bereich der überschneidenden Oberfläche.
+Intern wird der raycast anhand der berechneten Voxel-Darstellung im 8-cm-Format des Playspace berechnet. Jeder Voxel enthält einen Satz von Oberflächenelementen mit verarbeiteten Topologiedaten (auch als Surfels bezeichnet). Die in der überschneidenden Voxel-Zelle enthaltenen Surfels werden verglichen und die beste Entsprechung für die Suche nach den Topologieinformationen verwendet. Diese Topologieinformationen enthalten die Bezeichnung, die in Form der "surfacetypes"-Aufzählung zurückgegeben wird, sowie den Oberflächen Bereich der überschneidenden Oberfläche.
 
 Im Unity-Beispiel wandelt der Cursor einen Strahl in jedem Frame um. Zuerst für Unity-Kollisionen. Zweitens, mit der Welt Darstellung des grundlegenden Moduls. Und schließlich wieder Benutzeroberflächen Elemente. In dieser Anwendung erhält die Benutzeroberfläche Priorität, das Ergebnis des Ergebnisses und schließlich Unity-Kollisionen. Der surfaketype wird als Text neben dem Cursor gemeldet.
 
@@ -267,7 +268,10 @@ Im Unity-Beispiel wandelt der Cursor einen Strahl in jedem Frame um. Zuerst für
 
 ### <a name="topology-queries"></a>Topologieabfragen
 
-Innerhalb der DLL übernimmt der topologiemanager die Bezeichnung der Umgebung. Wie bereits erwähnt, werden viele der Daten in Surfels gespeichert, das in einem Voxel-Volume enthalten ist. Außerdem wird die "playspaceinfos"-Struktur zum Speichern von Informationen über den Playspace verwendet, einschließlich der Welt Ausrichtung (weitere Details zu diesem unten), der Etage und der Höhe des ceiling. Heuristiken werden zum Bestimmen von Boden, Ceiling und Wänden verwendet. Beispielsweise wird die größte und niedrigste horizontale Oberfläche mit einer Größe von mehr als 1 m2 als Floor betrachtet. Beachten Sie, dass der Kamerapfad während des Scanvorgangs auch in diesem Prozess verwendet wird.
+Innerhalb der DLL übernimmt der topologiemanager die Bezeichnung der Umgebung. Wie bereits erwähnt, werden viele der Daten in Surfels gespeichert, das in einem Voxel-Volume enthalten ist. Außerdem wird die "playspaceinfos"-Struktur zum Speichern von Informationen über den Playspace verwendet, einschließlich der Welt Ausrichtung (weitere Details zu diesem unten), der Etage und der Höhe des ceiling. Heuristiken werden zum Bestimmen von Boden, Ceiling und Wänden verwendet. Beispielsweise wird die größte und niedrigste horizontale Oberfläche mit einer größer als 1-m2-Oberfläche als Floor betrachtet. 
+
+> [!NOTE]
+> Bei diesem Vorgang wird auch der Kamerapfad während des Scanvorgangs verwendet.
 
 Eine Teilmenge der Abfragen, die vom topologiemanager verfügbar gemacht werden, wird über die dll verfügbar gemacht. Die verfügbar gemachten Topologieabfragen lauten wie folgt.
 
@@ -306,13 +310,14 @@ struct TopologyResult
 };
 ```
 
-Beachten Sie, dass im Unity-Beispiel jede dieser Abfragen mit einer Schaltfläche im Bereich der virtuellen Benutzeroberfläche verknüpft ist. Im Beispiel werden die Parameter für jede dieser Abfragen in angemessene Werte fest codiert. Weitere Beispiele finden Sie unter SpaceVisualizer.cs im Beispielcode.
+> [!NOTE]
+> Im Unity-Beispiel wird jede dieser Abfragen mit einer Schaltfläche im Bereich der virtuellen Benutzeroberfläche verknüpft. Im Beispiel werden die Parameter für jede dieser Abfragen in angemessene Werte fest codiert. Weitere Beispiele finden Sie unter SpaceVisualizer.cs im Beispielcode.
 
 ### <a name="shape-queries"></a>Shape-Abfragen
 
-Innerhalb der dll verwendet der Shape Analyzer ("ShapeAnalyzer_W") die topologieanalyse, um mit den vom benutzerdefinierten benutzerdefinierten Formen zu vergleichen. Das Unity-Beispiel definiert einen Satz von Formen und macht die Ergebnisse über das in-App-Abfrage Menü auf der Registerkarte Form verfügbar. Die Absicht besteht darin, dass der Benutzer seine eigenen Objektform Abfragen definieren und diese verwenden kann, je nach Bedarf von der Anwendung.
+In der dll verwendet der Shape Analyzer ("ShapeAnalyzer_W") die topologieanalyse, um mit den vom benutzerdefinierten benutzerdefinierten Formen zu vergleichen. Das Unity-Beispiel definiert einen Satz von Formen und macht die Ergebnisse über das in-App-Abfrage Menü auf der Registerkarte Form verfügbar. Die Absicht besteht darin, dass der Benutzer seine eigenen Objektform Abfragen definieren und diese verwenden kann, je nach Bedarf von der Anwendung.
 
-Beachten Sie, dass die Formanalyse nur auf horizontalen Oberflächen funktioniert. Eine Couch wird z. b. durch die flache Arbeitsplatz Oberfläche und den flachen oberen Rand der Couch zurückgelegt. Die Shape-Abfrage sucht nach zwei Oberflächen mit einer bestimmten Größe, Höhe und einem bestimmten Seitenbereich, wobei die beiden Oberflächen ausgerichtet und verbunden sind. Bei Verwendung der APIs-Terminologie sind der Couch-und der Back-Top Form Komponenten, und die Ausrichtungs Anforderungen sind Shape-Komponenten Einschränkungen.
+Die Formanalyse funktioniert nur auf horizontalen Oberflächen. Eine Couch wird z. b. durch die flache Arbeitsplatz Oberfläche und den flachen oberen Rand der Couch zurückgelegt. Die Shape-Abfrage sucht nach zwei Oberflächen mit einer bestimmten Größe, Höhe und einem bestimmten Seitenbereich, wobei die beiden Oberflächen ausgerichtet und verbunden sind. Bei Verwendung der APIs-Terminologie sind der Couch-und der Back-Top Form Komponenten, und die Ausrichtungs Anforderungen sind Shape-Komponenten Einschränkungen.
 
 Eine Beispiel Abfrage, die im Unity-Beispiel (ShapeDefinition.cs) für "sitbare" Objekte definiert ist, lautet wie folgt.
 
@@ -333,7 +338,7 @@ AddShape("Sittable", shapeComponents);
 
 Jede Shape-Abfrage wird durch einen Satz von Form Komponenten definiert, die jeweils über einen Satz von Komponenten Einschränkungen und einen Satz von Form Einschränkungen verfügen, die Abhängigkeiten zwischen den Komponenten auflisten. Dieses Beispiel enthält drei Einschränkungen in einer einzelnen Komponenten Definition und keine Formen Einschränkungen zwischen Komponenten (da nur eine Komponente vorhanden ist).
 
-Im Gegensatz dazu hat die Form "Couch" zwei Form Komponenten und vier Form Einschränkungen. Beachten Sie, dass die Komponenten durch ihren Index in der Komponentenliste des Benutzers (0 und 1 in diesem Beispiel) identifiziert werden.
+Im Gegensatz dazu hat die Form "Couch" zwei Form Komponenten und vier Form Einschränkungen. Komponenten werden durch ihren Index in der Komponentenliste des Benutzers identifiziert (in diesem Beispiel 0 und 1).
 
 ```cs
 shapeConstraints = new List<ShapeConstraint>()
@@ -436,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-Benutzergesteuerte Playspace "Paint" – während der Überprüfungsphase bewegt der Benutzer die Wiedergabegeschwindigkeit und untersucht die Bereiche, die eingeschlossen werden sollen. Das generierte Mesh ist wichtig, um Benutzer Feedback in dieser Phase bereitzustellen. Startseite oder Office-Setup – die Abfragefunktionen werden um flache Flächen und Wände im rechten Winkel entworfen. Dies ist eine weiche Einschränkung. Während der Scan Phase wird jedoch eine primäre Achsen Analyse abgeschlossen, um das Gitter Mosaik entlang der Haupt-und der Nebenachse zu optimieren. Die enthaltene SpatialUnderstanding.cs-Datei verwaltet den Scan Phasen Prozess. Es werden die folgenden Funktionen aufgerufen.
+Benutzergesteuerte Playspace "Paint" – während der Überprüfungsphase wird der Benutzer die Wiedergabegeschwindigkeit verschieben und die Wiedergabegeschwindigkeit durchlaufen, wodurch die Bereiche, die eingeschlossen werden sollten, tatsächlich gezeichnet werden. Das generierte Mesh ist wichtig, um Benutzer Feedback in dieser Phase bereitzustellen. Startseite oder Office-Setup – die Abfragefunktionen werden um flache Flächen und Wände im rechten Winkel entworfen. Dies ist eine weiche Einschränkung. Während der Scan Phase wird jedoch eine primäre Achsen Analyse abgeschlossen, um das Gitter Mosaik entlang der Haupt-und der Nebenachse zu optimieren. Die enthaltene SpatialUnderstanding.cs-Datei verwaltet den Scan Phasen Prozess. Es werden die folgenden Funktionen aufgerufen.
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -465,7 +470,7 @@ Der Scanvorgang, der vom "spatialunderstanding"-Verhalten gesteuert wird, ruft i
 
 ### <a name="understanding-mesh"></a>Grundlegendes zum Mesh
 
-Die Understanding dll speichert den Playspace intern als Raster von Voxel-Cubes mit 8 cm. Während des ersten Teils der Überprüfung wird eine Analyse der primären Komponenten abgeschlossen, um die Achsen des Raums zu ermitteln. Intern speichert Sie seinen Voxel-Bereich, der auf diese Achsen ausgerichtet ist. Ein Mesh wird ungefähr jede Sekunde generiert, indem die Isofläche aus dem Voxel-Volume extrahiert wird. 
+Die Understanding dll speichert den Playspace intern als Raster von Voxel-Cubes mit 8 cm-Größen. Während des ersten Teils der Überprüfung wird eine Analyse der primären Komponenten abgeschlossen, um die Achsen des Raums zu ermitteln. Intern speichert Sie seinen Voxel-Bereich, der auf diese Achsen ausgerichtet ist. Ein Mesh wird ungefähr jede Sekunde generiert, indem die Isofläche aus dem Voxel-Volume extrahiert wird. 
 
 ![Generiertes Mesh, das vom Voxel-Volume erstellt wurde](images/su-custommesh.jpg)<br>
 *Generiertes Mesh, das vom Voxel-Volume erstellt wurde*
@@ -479,7 +484,7 @@ Weitere Informationen zur Verwendung der räumlichen Zuordnung mit Mixed Reality
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

@@ -1,17 +1,17 @@
 ---
-title: Entwerfen von holograms
+title: Entwerfen von Hologrammen
 description: Erfahren Sie mehr über die gemischte Realität durch die neue Anwendung zum Entwickeln von holograms von Microsoft.
 author: hferrone
 ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: Mrtk, Mixed Reality Toolkit, holograms, Entwerfen von holograms, erlernen, Beispiel-APP, Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality?
-ms.openlocfilehash: 243b6f28da7b074b3ff6d48794d525ac08281fa7
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355337"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002585"
 ---
 # <a name="the-making-of-designing-holograms"></a>Das Entwerfen von holograms
 
@@ -122,6 +122,32 @@ Zunächst haben wir begonnen, den Bereichen und Symbolen zusätzlich zu den Text
 Natürlich funktionieren Symbole viel besser als der einfache Text. um eine noch leistungsfähigere Anleitung bereitzustellen, habe ich dann mit dem Erstellen eines Satzes von animierten Objekten und Avatars begonnen, von denen jeder eine kleine Story darüber erzählt, was im jeweiligen Szenario passiert und wie es verwendet wird.
 
 ![Animiertes GIF eines interaktiven Holographic-Menüsystems](images/designing-holograms/creative-process.gif)
+
+## <a name="core-concepts"></a>Wichtige Konzepte
+
+**Holografischer Rahmen**
+
+![Animiertes GIF eines Benutzers, der das "Dollhouse" durchsucht, wobei der Holographic Frame hervorgehoben ist](images/designing-holograms/FOVandFOI.gif)
+
+**Koordinatensysteme**
+
+![Animiertes GIF eines Benutzers, der das Dollhouse mit hervorgehobenen Koordinatensystemen ansieht](images/designing-holograms/CoordinateSystems.gif)
+
+**Eyetracking – Blickverfolgung**
+
+![Animiertes GIF eines Benutzers, der stationär holograms mit hervorgehobenem Eye Eye-Ray ansieht](images/designing-holograms/EyeTracking.gif)
+
+**Raum Scan Visualisierung und räumliche Zuordnung**
+
+![Animiertes GIF aller Oberflächen innerhalb des zu zugeordneten Dollhouse](images/designing-holograms/SpatialMapping.gif)
+
+**Grundlegendes zu Szenen**
+
+![Animiertes GIF von Objekten im "Dollhouse" erkannt](images/designing-holograms/SceneUnderstanding.gif)
+
+**Punkt und Commit mit Hand Strahlen**
+
+![Animiertes GIF eines Benutzers mit hervorgehobenem Hand Strahl](images/designing-holograms/HandRays.gif)
 
 ## <a name="try-it-out-moments"></a>Augenblicke ausprobieren
 

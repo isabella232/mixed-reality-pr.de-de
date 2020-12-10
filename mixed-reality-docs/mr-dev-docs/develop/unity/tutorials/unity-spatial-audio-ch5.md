@@ -2,16 +2,16 @@
 title: Lernprogramme für räumliche Audiodaten-5. Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
 description: Fügen Sie einen Hall Effekt hinzu, um den Sinn der Abstands Variation zu räumlichem Audiomaterial zu verbessern.
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Audiomixer, SFX-Reverb
-ms.openlocfilehash: d688955910d667edbdb79e63dab16587e66064a4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679699"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002615"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
 
@@ -129,6 +129,6 @@ Nachdem diese Änderungen vorgenommen wurden, sieht die Eigenschaft **spatialize
 
 Testen Sie Ihre APP auf einem hololens 2 oder im Unity-Editor. Wenn Sie nun die Schaltfläche in der APP zum Aktivieren der Spatialisierung berühren, leitet das Skript die Audiodatei an die Raumeffekt Gruppe weiter, um den Code hinzuzufügen. Beim Wechsel zu Stereo wird das Audiomaterial an die Master Gruppe weitergeleitet, und es wird vermieden, dass das Hinzufügen von Reverb erfolgt.
 
-Sie haben die Lernprogramme "hololens 2 Spatial audiotutorial" für Unity abgeschlossen. Glückwunsch!
+Sie haben die Lernprogramme "hololens 2 Spatial audiotutorial" für Unity abgeschlossen. Herzlichen Glückwunsch!
 
 
