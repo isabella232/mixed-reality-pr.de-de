@@ -6,8 +6,6 @@
   items:
     - name: Übersicht der Azure Mixed Reality-Clouddienste
       href: mixed-reality-cloud-services.md
-    - name: Mixed Reality Learning – Übersicht
-      href: mr-learning-overview.md
     - name: Beispiele und Feature-Apps
       href: features-and-samples.md
 - name: Portieren von Apps
@@ -254,6 +252,8 @@
   items:
     - name: 'Unreal-Entwicklung: Übersicht'
       href: unreal/unreal-development-overview.md
+    - name: Upgrade von Projekten in Unreal
+      href: unreal/unreal-porting.md
     - name: Lernprogramme
       items:
         - name: Erstellen einer Schach-App mit MRTK-UX-Tools
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: Veröffentlichen im Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Upgrade von Projekten in Unreal
-          href: unreal/unreal-porting.md
         - name: Leistungsempfehlungen für Unreal
           href: unreal/performance-recommendations-for-unreal.md
         - name: Materialempfehlungen in Unreal
