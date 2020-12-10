@@ -6,19 +6,19 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Fokuspunkt, Fokusebene, Stabilisierungs Ebene, Stabilisierungs Punkt, neuprojektion, LSR, tiefen Puffer, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678689"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010271"
 ---
 # <a name="focus-point-in-unity"></a>Fokuspunkt in Unity
 
 **Namespace:** *unityengine. XR. WSA*<br>
 **Typ**: *holographicsettings*
 
-Der [Fokuspunkt](../platform-capabilities-and-apis/hologram-stability.md#reprojection) kann so festgelegt werden, dass hololens einen Hinweis zur optimalen Durchführung der Stabilisierung auf den derzeit angezeigten holograms bereitstellt.
+Verwenden Sie den [Schwerpunkt Punkt](../platform-capabilities-and-apis/hologram-stability.md#reprojection) , um hololens einen Hinweis dazu zu geben, wie die derzeit angezeigten holograms am besten stabilisiert werden.
 
 Wenn Sie den Fokuspunkt in Unity festlegen möchten, muss er jedes Frame mithilfe von *holographicsettings. setfocuspointforframe ()* festgelegt werden. Wenn der Fokuspunkt nicht für einen Frame festgelegt ist, wird die Standard Stabilisierungs Ebene verwendet.
 
@@ -48,11 +48,12 @@ void Update()
 }
 ```
 
-Beachten Sie, dass der obige einfache Code möglicherweise zu einer Verringerung der – Hologramm-Stabilität wird, wenn das fokussierte Objekt hinter dem Benutzer endet.  Daher sollten Sie in der Regel "Tiefe Puffer Freigabe aktivieren" festlegen, anstatt manuell einen Fokuspunkt anzugeben.
+> [!NOTE]
+> Der einfache Code oben kann die Stabilität des Hologramms verringern, wenn das fokussierte Objekt hinter dem Benutzer endet. Im Allgemeinen wird empfohlen, die **[tiefen Puffer Freigabe zu aktivieren](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** , anstatt manuell einen Fokuspunkt anzugeben.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs-Prüfpunkt-Journey folgen, die wir festgelegt haben, sind Sie mitten in der Untersuchung der Funktionen und APIs der Mixed Reality-Plattform. Von hier aus können Sie mit dem nächsten Thema fortfahren:
+Wenn Sie der Unity-Entwicklungs Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, die Funktionen und APIs der Mixed Reality-Plattform zu untersuchen. Von hier aus können Sie mit dem nächsten Thema fortfahren:
 
 > [!div class="nextstepaction"]
 > [Verlust der Nachverfolgung](tracking-loss-in-unity.md)

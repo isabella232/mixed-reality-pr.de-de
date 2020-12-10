@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Foto, Video, hololens, Kamera, Unity, loerable, PVC, Foto Videokamera, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Webcam, Foto Erfassung, Video Erfassung
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678599"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010101"
 ---
 # <a name="locatable-camera-in-unity"></a>Ausrichtbare Kamera in Unity
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678599"
 
 Die "Webcam"-Funktion muss für eine APP deklariert werden, um die [Kamera](../platform-capabilities-and-apis/locatable-camera.md)zu verwenden.
 1. Navigieren Sie im Unity-Editor zu den Player Einstellungen, indem Sie zur Seite "> Projekteinstellungen bearbeiten > Player" navigieren.
-2. Klicken Sie auf die Registerkarte "Windows Store".
+2. Wählen Sie die Registerkarte "Windows Store" aus.
 3. Überprüfen Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die Funktionen für **Webcam** und **Mikrofon** .
 
-Nur ein einzelner Vorgang kann gleichzeitig mit der Kamera erfolgen. Um zu ermitteln, in welchem Modus (Foto, Video oder None) sich die Kamera derzeit befindet, können Sie unityengine. XR. WSA. Webcam. Mode überprüfen.
+Nur ein einzelner Vorgang kann gleichzeitig mit der Kamera erfolgen. Sie können den Modus, in dem sich die Kamera derzeit befindet, mit unityengine. XR. WSA. Webcam. Mode überprüfen. Verfügbare Modi sind Foto, Video oder None.
 
 ## <a name="photo-capture"></a>Foto Erfassung
 
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-Am Ende verwenden Sie auch denselben Bereinigungs Code, der hier präsentiert wird.
+Am Ende verwenden Sie auch denselben Bereinigungs Code, der hier vorgestellt wird.
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -124,9 +124,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>Fotos für ein Texture2D erfassen
 
-Beim Erfassen von Daten in einem Texture2D ähnelt der Prozess stark der Erfassung auf dem Datenträger.
+Beim Erfassen von Daten in einem Texture2D ähnelt der Prozess der Erfassung auf dem Datenträger.
 
-Befolgen Sie den oben beschriebenen Setup Vorgang.
+Befolgen Sie den obigen Setup Vorgang.
 
 Erfassen Sie in *onphotomodestarted* einen Frame im Speicher.
 
@@ -165,9 +165,9 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 ### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Fotos erfassen und mit den Rohdaten Bytes interagieren
 
-Wenn Sie mit den unformatierten Bytes eines in-Memory-Frames interagieren möchten, befolgen Sie die gleichen Setup Schritte wie oben und *onphotomodestarted* wie bei der Erfassung eines Fotos für eine Texture2D. Der Unterschied liegt in *oncapturedphototomemory* , wo Sie die Rohdaten Bytes erhalten und mit ihnen interagieren können.
+Wenn Sie mit den unformatierten Bytes eines in-Memory-Frames interagieren möchten, führen Sie die gleichen Einrichtungsschritte wie oben und *onphotomodestarted* aus, wie bei der Erfassung eines Fotos für eine Texture2D. Der Unterschied liegt in *oncapturedphototomemory* , wo Sie die Rohdaten Bytes erhalten und mit ihnen interagieren können.
 
-In diesem Beispiel erstellen Sie eine *Liste <Color>* , die mithilfe von *setPixels ()* weiterverarbeitet oder auf eine Textur angewendet werden kann.
+In diesem Beispiel erstellen Sie eine *Liste <Color>* , die weiterverarbeitet oder über *setPixels ()* auf eine Textur angewendet werden soll.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **Namespace:** *unityengine. XR. WSA. Webcam*<br>
 **Typ:** *Videocapture*
 
-*Videocapture* funktioniert sehr ähnlich wie bei *photocapture*. Die einzigen beiden Unterschiede sind, dass Sie einen Wert für Frames pro Sekunde (fps) angeben müssen, und Sie können nur direkt auf dem Datenträger als MP4-Datei speichern. Die Schritte für die Verwendung von *Videocapture* lauten wie folgt:
+*Videocapture* funktioniert ähnlich wie bei *photocapture*. Die einzigen beiden Unterschiede sind, dass Sie einen Wert für Frames pro Sekunde (fps) angeben müssen, und Sie können nur direkt auf dem Datenträger als MP4-Datei speichern. Die Schritte für die Verwendung von *Videocapture* lauten wie folgt:
 1. Erstellen eines *Videocapture* -Objekts
 2. Erstellen Sie ein " *cameraparameters* "-Objekt mit den gewünschten Einstellungen.
 3. Starten des Video Modus über *startvideomodeasync*
@@ -222,7 +222,7 @@ void Start ()
    }
 ```
 
-Richten Sie als nächstes die Parameter ein, die für die Aufzeichnung verwendet werden sollen, und starten Sie Sie.
+Richten Sie als nächstes die Parameter ein, die Sie für die Aufzeichnung benötigen, und starten Sie Sie.
 
 ```cs
 void OnVideoCaptureCreated (VideoCapture videoCapture)
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-Zu einem späteren Zeitpunkt möchten Sie die Aufzeichnung anhalten. Dies kann beispielsweise bei einem Timer oder einer Benutzereingabe vorkommen.
+Zu einem späteren Zeitpunkt möchten Sie die Aufzeichnung beispielsweise mithilfe eines Timers oder einer Benutzereingabe anhalten.
 
 ```cs
 // The user has indicated to stop recording

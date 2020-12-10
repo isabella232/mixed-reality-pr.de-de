@@ -6,18 +6,22 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, nicht transparent, transparent, Clip, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677619"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010431"
 ---
 # <a name="camera-in-unity"></a>Kamera in Unity
 
-Wenn Sie ein Mixed Reality-Headset durch tragen, wird es zur Mitte ihrer Holographic World. Die Unity- [Kamera](https://docs.unity3d.com/Manual/class-Camera.html) Komponente verarbeitet das stereorenderingerrendering automatisch und folgt dem Spitzen Bewegung und der Drehung, wenn in Ihrem Projekt "Virtual Reality unterstützt" mit "Windows Mixed Reality" als Gerät ausgewählt ist (im Abschnitt andere Einstellungen der Windows Store Player-Einstellungen). Dies kann in älteren Versionen von Unity als "Windows Holographic" aufgeführt werden.
+Wenn Sie ein Mixed Reality-Headset durch tragen, wird es zur Mitte ihrer Holographic World. Die Unity- [Kamera](https://docs.unity3d.com/Manual/class-Camera.html) Komponente verarbeitet das stereorenderingrendering automatisch und folgt der Bewegung und Drehung des Kopfes. Sie sollten jedoch die unten beschriebenen Kameraeinstellungen festlegen, um die visuelle Qualität und die [Stabilität des Hologramms](../platform-capabilities-and-apis/hologram-stability.md)vollständig zu optimieren.
 
-Sie sollten jedoch die unten beschriebenen Kameraeinstellungen festlegen, um die visuelle Qualität und die [Stabilität des Hologramms](../platform-capabilities-and-apis/hologram-stability.md)vollständig zu optimieren.
+## <a name="setup"></a>Einrichten
+
+1. Wechseln Sie zum Abschnitt **andere Einstellungen** der **Windows Store-Player-Einstellungen** .
+2. Wählen Sie **Windows Mixed Reality** als Gerät aus, das in älteren Versionen von Unity als **Windows Holographic** aufgeführt werden kann.
+3. **Unterstützte virtuelle Realität** auswählen
 
 >[!NOTE]
 >Diese Einstellungen müssen in jeder Szene der APP auf die Kamera angewendet werden.
@@ -26,10 +30,10 @@ Sie sollten jedoch die unten beschriebenen Kameraeinstellungen festlegen, um die
 
 ## <a name="holographic-vs-immersive-headsets"></a>Holographic im Vergleich zu immersiven Headsets
 
-Die Standardeinstellungen für die Unity-Kamera Komponente sind für herkömmliche 3D-Anwendungen vorgesehen, die einen Skybox-ähnlichen Hintergrund benötigen, da Sie nicht über eine reale Welt verfügen.
+Die Standardeinstellungen für die Unity-Kamera-Komponente gelten für herkömmliche 3D-Anwendungen, die einen Skybox-ähnlichen Hintergrund benötigen, da Sie nicht über eine reale Welt verfügen.
 
 * Bei der Ausführung auf einem **[immersiven Headset](../../discover/immersive-headset-hardware-details.md)** Rendern Sie alles, was dem Benutzer angezeigt wird, und Sie möchten die Skybox wahrscheinlich behalten.
-* Wenn Sie jedoch auf einem **Holographic-Headset** wie [hololens](../../hololens-hardware-details.md)ausgeführt werden, sollte die reale Welt hinter der von der Kamera gerendert werden. Legen Sie zu diesem Zweck den Kamera Hintergrund auf "transparent" (in hololens, schwarz rendert als transparent) anstelle einer Skybox-Textur fest:
+* Wenn Sie jedoch auf einem **Holographic-Headset** wie [hololens](../../hololens-hardware-details.md)ausgeführt werden, sollte die reale Welt hinter der von der Kamera gerendert werden. Legen Sie den Kamera Hintergrund auf "transparent" (in hololens, schwarz rendert als transparent) anstelle einer Skybox-Textur fest:
     1. Wählen Sie die Hauptkamera im Hierarchie Panel aus.
     2. Suchen Sie im Inspektor-Panel die Kamera Komponente, und ändern Sie die Dropdown Liste Flag Löschen von Skybox in voll Tonfarbe.
     3. Wählen Sie die Hintergrund Farbauswahl aus, und ändern Sie die RGBA-Werte in (0,0).
@@ -51,11 +55,11 @@ Es ist einfacher, Ihre APP zu entwerfen, wenn Sie sich die Anfangsposition des B
 Das Rendern von Inhalten zu nahe am Benutzer kann in gemischter Realität unbequem sein. Sie können die [Near-und Far-Clip-Plane](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) in der Kamera Komponente anpassen.
 
 1. Wählen Sie die Hauptkamera im Hierarchie Panel aus.
-2. Suchen Sie im Inspektor-Panel nach den Ausschneide Flächen der Kamera Komponente, und ändern Sie das Textfeld in der Nähe von 0,3 in. 85. Inhalte, die noch enger gerendert werden, können zu Benutzer Unannehmlichkeiten führen und sollten gemäß den [Richtlinien für die renderentfernungs](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances)
+2. Suchen Sie im Inspektor-Panel nach den Ausschneide Flächen der Kamera Komponente, und ändern Sie das Textfeld in der Nähe von 0,3 in 0,85. Inhalte, die noch enger gerendert werden, können zu Benutzer Unannehmlichkeiten führen und sollten gemäß den [Richtlinien für die renderentfernungs](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances)
 
 ## <a name="multiple-cameras"></a>Mehrere Kameras
 
-Wenn in der Szene mehrere Kamerakomponenten vorhanden sind, weiß Unity, welche Kamera für das stereorendern und die Head-Nachverfolgung verwendet werden soll, indem Sie überprüft, welches gameobject das maincamera-Tag hat.
+Wenn in der Szene mehrere Kamerakomponenten vorhanden sind, weiß Unity, welche Kamera für das stereorendern und die Head-Nachverfolgung verwendet werden soll, je nachdem, welches gameobject über das maincamera-Tag verfügt.
 
 ## <a name="recentering-a-seated-experience"></a>Wiedergeben eines sitzenden Erlebnisses
 
@@ -67,33 +71,33 @@ Sowohl hololens als auch immersive Headsets werden jeden Frame, der von der APP 
 
 Standardmäßig:
 
-* **Immersive Headsets** führen eine positionelle neuprojektion durch, wobei die Hologramme für die mitediction an Position und Ausrichtung angepasst werden, wenn die APP einen tiefen Puffer für einen bestimmten Frame bereitstellt.  Wenn kein tiefen Puffer bereitgestellt wird, korrigiert das System nur die Fehleinstellungen in der Ausrichtung.
-* **Holographic-Headsets** wie hololens führen eine positionelle neuprojektion durch, unabhängig davon, ob die APP ihren tiefen Puffer bereitstellt.  Eine positionelle neuprojektion ist ohne tiefen Puffer in hololens möglich, da das Rendering häufig geringer ist, wenn ein stabiler Hintergrund von der realen Welt bereitgestellt wird.
+* **Immersive Headsets** kümmern sich um die neuprojektion von positionellen, wenn die APP einen tiefen Puffer für einen bestimmten Frame bereitstellt. Mit immersiven Headsets werden Ihre Hologramme auch an der Position und Ausrichtung angepasst. Wenn kein tiefen Puffer bereitgestellt wird, korrigiert das System nur die Fehleinstellungen in der Ausrichtung.
+* **Holographic-Headsets** wie hololens kümmern sich um die neuprojektion von positionellen, unabhängig davon, ob die APP ihren tiefen Puffer bereitstellt.  Eine positionelle neuprojektion ist ohne tiefen Puffer in hololens möglich, da das Rendering häufig geringer ist, wenn ein stabiler Hintergrund von der realen Welt bereitgestellt wird.
 
-Wenn Sie wissen, dass Sie eine [Ausrichtungs bezogene](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) Umgebung mit ordnungsgemäß gesperrtem Inhalt (z. b. Videoinhalt mit 360-Grad) entwickeln, können Sie den Modus für die neuprojektion explizit so festlegen, dass Sie nur eine Ausrichtung ist, indem Sie [holographicsettings. reprojectionmode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) auf [holographikreprojectionmode. orientationonly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html)festlegen.
+Wenn Sie wissen, dass Sie eine [nur-Orientierung-](coordinate-systems-in-unity.md#building-an-orientation-only-or-seated-scale-experience) Umgebung mit ordnungsgemäß gesperrtem Inhalt (z. b. 360-Grad-Videoinhalt) entwickeln, können Sie den Modus für die neuprojektion explizit auf die Ausrichtung festlegen, indem Sie [holographicsettings. reprojectionmode](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html) auf [holographikreprojectionmode. orientationonly](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html)festlegen.
 
 ## <a name="sharing-your-depth-buffers-with-windows"></a>Freigeben von tiefen Puffern mit Windows
 
 Durch die Freigabe des tiefen Puffers Ihrer APP für die einzelnen Frames erhält Ihre APP einen von zwei Verb esse ungen in der – Hologramm-Stabilität, basierend auf der Art des von Ihnen Renderns:
 
-* **Immersive Headsets** können eine Positions neuprojektion durchführen, wenn ein tiefen Puffer bereitgestellt wird. Dadurch werden die Hologramme an der Position und der Ausrichtung für die mitediction angepasst.
+* **Immersive Headsets** können bei der Bereitstellung eines tiefen Puffers die neuprojektion von Positionen durchführen, wobei die Hologramme sowohl an der Position als auch an der Ausrichtung für die mitediction angepasst werden.
 * **Holographic-Headsets** haben einige verschiedene Methoden. Hololens 1 wählt automatisch einen [Fokuspunkt](focus-point-in-unity.md) aus, wenn ein tiefen Puffer bereitgestellt wird. Dadurch wird die – Hologramm-Stabilität entlang der Ebene optimiert, die den meisten Inhalt überschneidet. Hololens 2 stabilisiert Inhalte mithilfe der [tiefen LSR (siehe Hinweise)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 So legen Sie fest, ob Ihre Unity-APP einen tiefen Puffer für Windows bereitstellt:
 
 1. Wechseln Sie zu **Edit**  >  **Project Settings**  >  **Player**  >  **universelle Windows-Plattform Tab**  >  **XR Settings**.
 2. Erweitern Sie das **Windows Mixed Reality SDK** -Element.
-3. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Tiefe Puffer Freigabe aktivieren** .  Dies wird standardmäßig in neuen Projekten überprüft, die seit dem Hinzufügen dieses Features zu Unity erstellt wurden, und wird standardmäßig für ältere Projekte, die aktualisiert wurden, deaktiviert.
+3. Aktivieren oder deaktivieren Sie das Kontrollkästchen **Tiefe Puffer Freigabe aktivieren** .  Die Aktivierung der tiefen Puffer Freigabe ist in neuen Projekten standardmäßig aktiviert, da diese Funktion Unity hinzugefügt wurde und für ältere Projekte, die aktualisiert wurden, standardmäßig deaktiviert wird.
 
-Das Bereitstellen eines tiefen Puffers für Windows kann die visuelle Qualität verbessern, solange Windows die normalisierten pro-Pixel-tiefen Werte in ihrem tiefen Puffer mithilfe der Near-und Far-Ebenen, die Sie in Unity auf der Hauptkamera festgelegt haben, exakt wieder zu den Entfernungen in Metern zuordnen kann.  Wenn Ihr renderingwert auf typische Weise handle-Werte übergibt, sollten Sie in der Regel in Ordnung sein, obwohl die übergreifende Renderingvorgänge, die in den tiefen Puffer schreiben, während Sie bis zu vorhandenen Farbpixeln zeigen, die neuprojektion verwirren können.  Wenn Sie wissen, dass Ihr renderdurchlauf viele der abschließenden tiefen Pixel mit ungenauen tiefen Werten verlässt, erhalten Sie wahrscheinlich eine bessere visuelle Qualität, indem Sie die Option "Tiefe Puffer Freigabe aktivieren" deaktivieren. # # nächster Entwicklungs Prüf Punkt
+Ein tiefen Puffer kann die visuelle Qualität verbessern, solange Windows die normalisierten pro-Pixel-tiefen Werte in ihrem tiefen Puffer mithilfe der Near-und Far-Ebenen, die Sie in Unity auf der Hauptkamera festgelegt haben, genauer zuordnen lässt.  Wenn Ihr renderingwert auf typische Weise handle-Werte übergibt, sollten Sie in der Regel in Ordnung sein, obwohl die übergreifende Renderingvorgänge, die in den tiefen Puffer schreiben, während Sie bis zu vorhandenen Farbpixeln zeigen, die neuprojektion verwirren können.  Wenn Sie wissen, dass Ihre Renderingdurchläufen viele der abschließenden tiefen Pixel mit ungenauen tiefen Werten belassen, erhalten Sie wahrscheinlich eine bessere visuelle Qualität, indem Sie die Option "Tiefe Puffer Freigabe aktivieren" deaktivieren.
 
-## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit-v2"></a>Automatisches Einrichten von Szenen und Kameras mit Mixed Reality Toolkit v2
+## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Automatisches Einrichten von Szenen und Kameras mit Mixed Reality Toolkit 
 
-Befolgen Sie die [Schritt-für-Schritt](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) -Anleitung zum Hinzufügen von Mixed Reality Toolkit v2 zu Ihrem Unity-Projekt, und das Projekt wird automatisch konfiguriert. Sie können das Projekt auch ohne mrtk manuell konfigurieren, indem Sie das Handbuch im Abschnitt unten durchführen.
+Befolgen Sie die [Schritt-für-Schritt](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) -Anleitung zum Hinzufügen von Mixed Reality Toolkit zu Ihrem Unity-Projekt, und das Projekt wird automatisch konfiguriert. Sie können das Projekt auch ohne mrtk manuell konfigurieren, indem Sie das Handbuch im Abschnitt unten durchführen.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Anvisieren](gaze-in-unity.md)

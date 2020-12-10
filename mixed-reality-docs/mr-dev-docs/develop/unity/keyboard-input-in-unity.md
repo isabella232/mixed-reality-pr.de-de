@@ -6,29 +6,29 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Tastatur, Eingabe, Unity, touchscreenkeyboard, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: aa9bb3059a8d0cc5b829bf14d92928511259b7f9
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 613c9327b517205c340555b6423a3809906f9b9f
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677419"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010511"
 ---
 # <a name="keyboard-input-in-unity"></a>Tastatureingabe in Unity
 
 **Namespace:** *unityengine*<br>
  **Typ**: *[touchscreenkeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
-Obwohl hololens viele Formen von Eingaben einschließlich Bluetooth-Tastaturen unterstützt, können die meisten Anwendungen nicht davon ausgehen, dass für alle Benutzer eine physische Tastatur verfügbar ist. Wenn für Ihre Anwendung Texteingaben erforderlich sind, sollte eine Form von auf Bildschirmtastatur angegeben werden.
+Obwohl hololens viele Formen von Eingaben einschließlich Bluetooth-Tastaturen unterstützt, können die meisten Anwendungen nicht davon ausgehen, dass für alle Benutzer eine physische Tastatur verfügbar ist. Wenn für Ihre Anwendung Texteingaben erforderlich sind, sollte eine Form der Bildschirmtastatur angegeben werden.
 
 Unity stellt die *[touchscreenkeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* -Klasse bereit, um Tastatureingaben zu akzeptieren, wenn keine physische Tastatur verfügbar ist.
 
 ## <a name="hololens-system-keyboard-behavior-in-unity"></a>Hololens System Tastatur Verhalten in Unity
 
-Auf hololens nutzt *touchscreenkeyboard* die Bildschirmtastatur des Systems. Die Tastatur des Systems auf dem Bildschirm kann nicht oberhalb einer Volumetrische-Ansicht überlagert werden, sodass Unity eine sekundäre 2D-XAML-Ansicht erstellen muss, um die Tastatur anzuzeigen, und dann zurück an die volumetriansicht zurückgegeben wird, sobald die Eingabe übermittelt wurde. Der Benutzer Ablauf sieht wie folgt aus:
+Auf hololens nutzt *touchscreenkeyboard* die Bildschirmtastatur des Systems. Die Bildschirmtastatur des Systems kann nicht oberhalb einer Volumetrische Ansicht überlagert werden. Unity muss eine sekundäre 2D-XAML-Ansicht erstellen, um die Tastatur anzuzeigen und dann zur volumetriansicht zurückzukehren, sobald die Eingabe übermittelt wurde. Der Benutzer Ablauf sieht wie folgt aus:
 1. Der Benutzer führt eine Aktion aus, die bewirkt, dass APP-Code *touchscreenkeyboard* aufruft.
     * Die APP ist für das Anhalten des App-Zustands vor dem Aufrufen von *touchscreenkeyboard* verantwortlich.
     * Die APP kann beendet werden, bevor Sie zur Volumetrische-Ansicht zurück wechselt.
-2. Unity wechselt zu einer 2D-XAML-Ansicht, die automatisch in der Welt platziert wird
+2. Unity wechselt zu einer 2D-XAML-Ansicht, die automatisch in der Welt angezeigt wird.
 3. Der Benutzer gibt mithilfe der System Tastatur Text ein und übermittelt oder bricht ihn ab.
 4. Unity wechselt zurück zur volumetriansicht
     * Die APP ist für das Fortsetzen des App-Zustands verantwortlich, wenn *touchscreenkeyboard* abgeschlossen ist.
@@ -49,7 +49,7 @@ Es stehen sechs verschiedene Tastatur Ansichten zur Verfügung:
 Die System Tastatur hololens ist nur für Unity-Anwendungen verfügbar, die mit dem "UWP Build Type" auf "XAML" exportiert werden. Wenn Sie "XAML" als "UWP Build Type" über "D3D" auswählen, müssen Sie die vor-und Nachteile treffen. Wenn Sie mit diesen vor-und Nachteile nicht vertraut sind, möchten Sie möglicherweise eine [Alternative Eingabe Lösung](#alternative-keyboard-options) für die System Tastatur untersuchen.
 1. Öffnen Sie das Menü **Datei** , und wählen Sie Buildeinstellungen aus **.**
 2. Stellen Sie sicher, dass die **Plattform** auf **Windows Store** festgelegt ist, das **SDK** auf **Universal 10** festgelegt ist, und legen Sie den **UWP-Buildtyp** auf **XAML** fest.
-3. Klicken Sie im Dialogfeld " **Buildeinstellungen** " auf die Schaltfläche **Player Einstellungen...** .
+3. Wählen Sie im Dialogfeld " **Buildeinstellungen** " die Schaltfläche **Player Einstellungen... aus.**
 4. Wählen Sie die Registerkarte **Einstellungen für Windows Store aus** .
 5. Erweitern Sie die Gruppe **andere Einstellungen** .
 6. Aktivieren Sie im Abschnitt " **Rendering** " das Kontrollkästchen " **Virtual Reality supported** ", um eine neue **Virtual Reality-Geräte** Liste hinzuzufügen.
@@ -71,7 +71,7 @@ public static string keyboardText = "";
 
 ### <a name="invoke-the-keyboard"></a>Tastatur aufrufen
 
-Wenn ein Ereignis beim Anfordern von Tastatureingaben auftritt, wird eine dieser Funktionen aufgerufen, abhängig vom Typ der gewünschten Eingabe. Beachten Sie, dass der Titel im textplachalter-Parameter angegeben wird.
+Wenn ein Ereignis beim Anfordern von Tastatureingaben auftritt, können Sie eine dieser Funktionen aufrufen, abhängig vom Typ der Eingabe, die Sie mit dem Titel im textplachalter-Parameter verwenden möchten.
 
 ```cs
 // Single-line textbox
@@ -113,12 +113,12 @@ if (TouchScreenKeyboard.visible == false && keyboard != null)
 Wir wissen, dass das Wechseln aus einer Volumetrische-Sicht in eine 2D-Ansicht nicht die ideale Methode ist, um Texteingaben vom Benutzer zu erhalten.
 
 Die aktuellen Alternativen zur Verwendung der System Tastatur über Unity umfassen Folgendes:
-* Verwendung der Spracherkennung für die Eingabe (<b>Hinweis:</b> Dies ist oft fehleranfällig für Wörter, die nicht im Wörterbuch gefunden wurden und für die Kenn Wort Eingabe nicht geeignet sind).
+* Verwendung der Spracherkennung für die Eingabe (<b>Hinweis:</b> Dies ist oft fehleranfällig für Wörter, die im Wörterbuch nicht gefunden werden und nicht für die Kenn Wort Eingabe geeignet sind).
 * Erstellen einer Tastatur, die in der exklusiven Ansicht Ihrer Anwendungen funktioniert
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs-Prüfpunkt-Journey folgen, die wir festgelegt haben, sind Sie mitten in der Untersuchung der Funktionen und APIs der Mixed Reality-Plattform. Von hier aus können Sie mit jedem [Thema](unity-development-overview.md#3-platform-capabilities-and-apis) fortfahren oder direkt zum Bereitstellen Ihrer APP auf einem Gerät oder Emulator wechseln.
+Wenn Sie der Unity-Entwicklungs Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, die Funktionen und APIs der Mixed Reality-Plattform zu untersuchen. Von hier aus können Sie mit jedem [Thema](unity-development-overview.md#3-platform-capabilities-and-apis) fortfahren oder direkt zum Bereitstellen Ihrer APP auf einem Gerät oder Emulator wechseln.
 
 > [!div class="nextstepaction"]
 > [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../platform-capabilities-and-apis/using-visual-studio.md)

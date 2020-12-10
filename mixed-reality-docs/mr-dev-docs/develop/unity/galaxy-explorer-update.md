@@ -6,26 +6,26 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Galaxy Explorer, Case-Studie, Project, Sample, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677629"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010471"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Die Erstellung von Galaxy Explorer für hololens 2
 
-Willkommen bei der Vorgehensweise beim Aktualisieren von Galaxy Explorer für hololens 2. Der [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") wurde ursprünglich als Open-Source-Anwendung für hololens (1. Generation) durch das Teilen Ihres Ideen Programms entwickelt, und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die [neuen und spannenden Funktionen von hololens 2](https://www.microsoft.com/hololens/hardware).
+Willkommen bei der aktualisierten Galaxy Explorer for hololens 2-Anwendung! Der [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") wurde ursprünglich als Open-Source-Anwendung für hololens (erste Generation) durch das Teilen Ihres Ideen-Programms entwickelt und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die [neuen und spannenden Funktionen von hololens 2](https://www.microsoft.com/hololens/hardware).
 
-Als eines der [Mixed Reality-Studio von Microsoft](galaxy-explorer-update.md#mixed-reality-studios)entwickeln wir in der Regel kommerzielle Lösungen und entwickeln & Tests auf Zielplattformen im gesamten Entwicklungs-und Entwicklungsprozess. Wir haben jetzt die einmalige Situation, in der Sie noch keinen Zugriff auf hololens 2-Geräte haben, aber aufgeregt sind, um die Aktualisierungen für den Galaxy Explorer zu starten. Wir arbeiten an diesem Projekt, indem wir die Frameworks und Tools (z. b. [mrtk v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) nutzen, wenn Sie für uns und die Community verfügbar sind, und wir möchten Sie für die Fahrt zusammenbringen.
+Als eines der [Mixed Reality-Studio von Microsoft](galaxy-explorer-update.md#mixed-reality-studios)entwickeln wir in der Regel kommerzielle Lösungen und entwickeln & Tests auf Zielplattformen im gesamten Entwicklungs-und Entwicklungsprozess. Wir arbeiten an diesem Projekt, indem wir die Frameworks und Tools (z. b. [mrtk](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) nutzen, wenn Sie für uns und die Community verfügbar sind, und wir möchten Sie für die Fahrt zusammenbringen.
 
-Ebenso wie der ursprüngliche Galaxy Explorer ist [unser Team](galaxy-explorer-update.md#meet-the-team) offen für [das Projekt auf GitHub](https://github.com/Microsoft/GalaxyExplorer) , um sicherzustellen, dass die Community über Vollzugriff verfügt. Wir werden unsere Migration hier in der gesamten Transparenz über die Art und Weise dokumentieren, in der wir die Portierung von mrtk v1 auf mrtk v2 durchgeführt haben. Außerdem wird erläutert, wie wir die Funktionalität basierend auf den neuen Features, die in hololens 2 verfügbar sind, verbessert haben und wie wir sichergestellt haben, dass der Galaxy Explorer eine mehrstufige Plattform war Unabhängig davon, ob Sie den Galaxy Explorer auf hololens (1st Gen), hololens 2, ein Windows Mixed Reality-Headset oder auf Ihrem Windows 10-Desktop anzeigen, möchten wir sicherstellen, dass Sie über ein immersives Verhalten verfügen und sich so gut wie möglich mit der Journey beschäftigen!
+Ebenso wie der ursprüngliche Galaxy Explorer ist [unser Team](galaxy-explorer-update.md#meet-the-team) offen für [das Projekt auf GitHub](https://github.com/Microsoft/GalaxyExplorer) , um sicherzustellen, dass die Community über Vollzugriff verfügt. Wir dokumentieren auch unsere Reise hier in der gesamten Transparenz, wie wir von mrtk V1 zu mrtk v2 portiert haben, die Funktionalität mit neuen Features, die in hololens 2 verfügbar sind, verbessert haben und sichergestellt haben, dass der Galaxy Explorer eine mehrstufige Darstellung blieb. Unabhängig davon, ob Sie den Galaxy Explorer auf hololens (erste Generation), hololens 2, ein Windows Mixed Reality-Headset oder auf Ihrem Windows 10-Desktop anzeigen, möchten wir sicherstellen, dass Sie die Journey so gut wie möglich nutzen!
 
-Diese Seite wird erweitert, während wir das Projekt durchlaufen, und wir verknüpfen Sie mit ausführlicheren Artikeln, Code, Entwurfs Artefakten, zusätzlichen mrtk v2-Dokumentationen usw., um Ihnen einen Insider Einblick in das Projekt zu geben.
+Diese Seite wird im Rahmen des Projekts mit Links zu ausführlicheren Artikeln, Code, Entwurfs Artefakten und zusätzlichen mrtk-Dokumentationen erweitert, um Ihnen einen Insider Einblick in das Projekt zu geben.
 
 ## <a name="unveiling-the-new-logo"></a>Entsperren des neuen Logos
 
-Wir freuen uns, mit einer Vorschau des neuen Galaxy Explorer-Logos zu beginnen! Während wir eine Hommage an das ursprüngliche Logo mit der Milch Methode haben, haben wir eine realistische Visualisierung entworfen und die typografievisualisierung aktualisiert, um ein schlankeres und modernes Gefühl zu bieten. Das Logo enthält eine kurze Vorschau auf eines der neuen Symbole.
+Wir freuen uns, mit einer Vorschau des neuen Galaxy Explorer-Logos zu beginnen! Wir haben eine realistische Visualisierung entworfen und die typografievisualisierung aktualisiert, um ein moderneres Aussehen zu bieten. Das Logo enthält eine kurze Vorschau auf eines der neuen Symbole.
 
 ![Neues Galaxy Explorer-Logo](images/ge-update-app-icon.png)
 
@@ -33,17 +33,17 @@ Der Entwurf und die Typografie des Logos legen den Ton für das allgemeine Ausse
 
 ## <a name="thinking-about-interactions"></a>Überlegungen zu Interaktionen
 
-Als Creative Studio haben wir die Berechtigung zum Portieren von Galaxy Explorer auf hololens 2 Ecstatic. Wir wussten von Anfang an, dass das neue Gerät ein Feiertag sein soll, und um zu veranschaulichen, dass die Ermächtigung der gemischten Realität nur auf die Phantasie beschränkt ist.
+Als Creative Studio haben wir die Berechtigung zum Portieren von Galaxy Explorer auf hololens 2 Ecstatic. Wir wussten von Anfang an, dass das neue Gerät ein Feiertag sein soll, und um zu veranschaulichen, dass die Ermächtigung der gemischten Realität nur durch die Phantasie eingeschränkt ist.
 
 Hololens 2 ermöglicht Benutzern das berühren, verstehen und Verschieben von holograms auf eine Art und Weise, in der Sie sich natürlich fühlen – Sie reagieren sehr ähnlich auf echte Objekte. Vollständig Hand zeitige Modelle sind erstaunlich, da Benutzer die Natur machen können. Beispielsweise wird ein Cup leicht anders ausgewählt – und anstatt eine bestimmte Methode dafür zu erzwingen, können Sie mit hololens 2 das tun.
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-Dies ist eine große Änderung von den auf der Luft tippen basierenden Schnittstellen auf hololens-Geräten der ersten Generation. Anstatt mit holograms aus einer Entfernung zu interagieren, können Benutzer jetzt "up close and Personal" erhalten. Beim Portieren vorhandener Erfahrungen in hololens 2 oder beim Planen neuer Umgebungen ist es wichtig, sich mit der direkten Bearbeitung von holograms vertraut zu machen.
+Dies ist eine bedeutende Änderung von den auf Luft tippen basierenden Schnittstellen auf hololens-Geräten der ersten Generation. Anstatt mit holograms aus einer Entfernung zu interagieren, können Benutzer jetzt "up close and Personal" erhalten. Beim Portieren vorhandener Erfahrungen in hololens 2 oder beim Planen neuer Umgebungen ist es wichtig, sich mit der direkten Bearbeitung von holograms vertraut zu machen.
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>Direkte Bearbeitung im Vergleich zu den großen Entfernungen im Raum
 
-Es handelt sich um eine magische Darstellung, die in der Lage ist, eine Welt zu erreichen und Sie zu halten. Die Herausforderung bei diesem Ansatz ist die Größe des Sonnensystems – es ist enorm! Der Benutzer muss seinen Raum durchlaufen, um sich in der Nähe der einzelnen Welt zu befinden, um mit ihm interagieren zu können.
+Es ist eine magische Darstellung, eine Welt zu erreichen und Sie zu halten. Die Herausforderung bei diesem Ansatz ist die Größe des Sonnensystems – es ist enorm! Der Benutzer muss seinen Raum durchlaufen, um sich in der Nähe der einzelnen Welt zu befinden, um mit ihm zu interagieren.
 
 Um Benutzern die Interaktion mit Objekten zu ermöglichen, die weiter entfernt sind, bietet mrtk Hand Eingaben, die aus der Mitte des Benutzers des Benutzers herausgehen und als Erweiterung der Hand fungieren. Ein ringförmiger Cursor wird an das Ende des Strahls angefügt, um anzugeben, wo sich das Strahl mit einem Zielobjekt schneidet. Das Objekt, auf dem der Cursor landet, kann dann gestische Befehle von der Hand empfangen. 
 
@@ -79,7 +79,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="implementing-force-grab-into-the-application"></a>Implementieren von "Erzwingen von Handles" in die Anwendung
 
-Als wir den Erzwingungs Griff auf den Planeten ausprobiert haben, erkannten wir, dass wir die Skalierung des Sonnensystems ändern mussten. Es stellte sich heraus, dass eine exakte, mittelgroße Darstellung des Sonnensystems für Benutzer schwer zu verstehen und zu navigieren war. Sie wussten nicht, wo Sie aussehen sollten. Eine genaue, kleine Darstellung hat jedoch einige der zu kleinen und leicht auszuwählenden Planeten. Daher wurde die Größe der Planeten und der Abstand zwischen den Sonnen Objekten so konzipiert, dass Sie sich innerhalb eines mittelgroßen Raums gut fühlen, während gleichzeitig die relative Genauigkeit gewahrt bleibt.
+Als wir den Erzwingungs Griff auf den Planeten ausprobiert haben, erkannten wir, dass wir die Skalierung des Sonnensystems ändern mussten. Es stellte sich heraus, dass eine exakte, mittelgroße Darstellung des Sonnensystems für Benutzer schwer zu verstehen und zu navigieren war. Sie wussten nicht, wo Sie aussehen sollten. Bei einer kleinen Darstellung wurden jedoch einige der zu kleinen-und leicht zu klein. Daher wurde die Größe der Planeten und der Abstand zwischen den Sonnen Objekten so konzipiert, dass Sie sich innerhalb eines mittelgroßen Raums gut fühlen, während gleichzeitig die relative Genauigkeit gewahrt bleibt.
 
 In den späteren Phasen unseres entwicklungssprints waren wir glücklich genug, dass Sie mit einem internen MSFT Mixed Reality-Experten zusammenarbeiten können, sodass wir Ihre Eingaben als expertentester erhalten und kurze Iterationen für die Force-Interaktion durchgeführt haben.
 
@@ -91,17 +91,17 @@ In Abbildung: Jenny kam, leitender Entwurfs Leiter, Testen einer laufenden Arbei
 
 Als wir auf hololens 2 experimentieren, stellten wir fest, dass die neuen Interaktionen natürlich und intuitiv sind, aber auch wenn die neuen Interaktionen natürlich und intuitiv sind, bleiben holograms unverändert. Da holograms kein natürliches Feedback bereitstellen, das beim interagieren mit Objekten von Menschen verwendet wird, mussten wir diese erstellen.
 
-Das visuelle und Audiofeedback, das Benutzer für die verschiedenen Phasen Ihrer Interaktionen bereitstellen würden. da der Force-Griff Mechanismus für die Interaktion mit dem Galaxy Explorer von zentraler Bedeutung ist, haben wir viele Iterationen durchgeführt. Ziel war es, das richtige Gleichgewicht zwischen Audiomaterial und visuellem Feedback für jede Phase der Interaktion zu finden: das Augenmerk auf das beabsichtigte Objekt, das Aufrufen des Benutzers und dessen Freigabe. Wir haben gelernt, dass wesentlich mehr Audiomaterial und visuelles Feedback erforderlich waren, um die Interaktion zu verstärken, als wir für hololens (1. Gen) verwendet wurden.
+Das visuelle und Audiofeedback, das Benutzer für die verschiedenen Phasen Ihrer Interaktionen bereitstellen würden. da der Force-Griff Mechanismus für die Interaktion mit dem Galaxy Explorer von zentraler Bedeutung ist, haben wir viele Iterationen durchgeführt. Ziel war es, das richtige Gleichgewicht zwischen Audiomaterial und visuellem Feedback für jede Phase der Interaktion zu finden: das Augenmerk auf das beabsichtigte Objekt, das Aufrufen des Benutzers und dessen Freigabe. Wir haben gelernt, dass mehr Audiomaterial und visuelles Feedback erforderlich waren, um die Interaktion zu verstärken, als wir für hololens (erste Generation) verwendet wurden.
 
 ![Visuelle Visualisierungen auf den Planeten](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>Hinzufügen von Kosten für das Erzwingen von Handles
  
-Nachdem wir den grundlegenden Force-Griff-Mechanismus mit Audio-und Visualisierungs Verfahren hatten, haben wir uns mit der Auswahl von "Planets" für die Benutzerfreundlichkeit beschäftigt. Es gab zwei wichtige Punkte zu berücksichtigen: da das Solar System eine 3D-Verschiebungs Schnittstelle ist, ist es für Benutzer komplexer, das konsistente Ziel von Objekten zu erlernen. Dies wurde durch die Tatsache verstärkt, dass das Hand Strahl bei der Auswahl eines Objekts sehr schnell ist, sodass die Planeten unglaublich schnell in den Benutzer verschoben werden.
+Nachdem wir den grundlegenden Force-Griff-Mechanismus mit Audio-und Visualisierungs Verfahren hatten, haben wir uns mit der Auswahl von "Planets" für die Benutzerfreundlichkeit beschäftigt. Es gab zwei wichtige Punkte zu berücksichtigen: da das Solar System eine 3D-Verschiebungs Schnittstelle ist, ist es für Benutzer viel komplizierter, das konsistente Ziel von Objekten zu erlernen. Dies wurde durch die Tatsache verstärkt, dass das Hand Strahl bei der Auswahl eines Objekts schnell ist, sodass die Planeten unglaublich schnell in den Benutzer verschoben werden.
 
-Wir haben dies mit einer dreistufigen Lösung angegangen. Der erste war recht intuitiv: verlangsamen Sie den Auswahlprozess, sodass die-Planeten den Benutzer auf natürlichere Weise erreichen. Nachdem die Geschwindigkeit angepasst wurde, mussten wir die Audioerstellung und visuelle Visualisierung wiederholen und zusätzliche Audiofeedback hinzufügen, als der für den Benutzer verfolgte Planet.
+Wir haben dies mit einer dreistufigen Lösung angegangen. Der erste war recht intuitiv: verlangsamen Sie den Auswahlprozess, sodass die-Planeten den Benutzer auf natürlichere Weise erreichen. Nachdem die Geschwindigkeit angepasst wurde, mussten wir die Audioerstellung und visuelle Visualisierung wiederholen und Audiofeedback als Planet für den Benutzer hinzufügen.
 
-Der zweite Teil der Lösung bestand darin, dass die Visualisierung der gesamten Interaktion zum Erzwingen von Handles äußerst greifbar ist. Wir haben eine Dicke Linie visualisiert, die zum Zielobjekt bewegt wird, nachdem das Hand Strahl eine Verbindung mit dem Objekt hergestellt hat, und das Objekt dann wieder zum Benutzer hinzu, wie ein Lasso. 
+Der zweite Teil der Lösung bestand darin, die Visualisierung der gesamten Interaktion mit dem Erzwingen von Handles zu vereinfachen. Wir haben eine Dicke Linie visualisiert, die zum Zielobjekt bewegt wird, nachdem das Hand Strahl eine Verbindung mit dem Objekt hergestellt hat, und das Objekt dann wieder zum Benutzer hinzu, wie ein Lasso. 
 
 ![Visuelles Element "Lasso" für den Force-Griff](images/ge-update-lasso-affordances.png)
 
@@ -111,7 +111,7 @@ Diese drei Verbesserungen ermöglichten es Benutzern, eine genaue Auswahl zu tre
 
 ## <a name="spotlight-on-jupiter"></a>Spotlight auf Jupiter
 
-Das Erstellen der Sonnen Körper der Milchqualität war eine humbelte Methode. Insbesondere die eindeutigen Merkmale von Jupiter machen es zu einem Blick. Es ist das größte und farbige der Gasriesen und enthält mehr Massen als alle anderen miteinander zusammengesetzten. Seine schiere Größe und die mesmerierenden Bänder von Turbulenzen und clouddynamics sind ein Präfekt für besondere künstlerische Aufmerksamkeit.
+Das Erstellen der Sonnen Körper der Milchqualität war eine humbelte Methode. Insbesondere die eindeutigen Merkmale von Jupiter machen es zu einem Blick. Es ist das größte und komplizierteste der Gasriesen und enthält mehr Massen als alle anderen in Kombination. Seine schiere Größe und die mesmerierenden Bänder von Turbulenzen und clouddynamics sind ein Präfekt für besondere künstlerische Aufmerksamkeit.
 
 ### <a name="geometry-and-meshes"></a>Geometrie und Netzen
 
@@ -123,7 +123,7 @@ Es war sofort klar, dass die Verwendung von Techniken wie fließenden Simulation
 
 Der nächste Ansatz war eine "Rauch-und Spiegelungs Lösung", die aus transparenten Textur Ebenen besteht, die jeweils einen bestimmten Aspekt der atmosphärischen Bewegung aufwiesen, der bei einer Komposition rotierender Gitter Netze kompiliert wurde.
 
-In der folgenden Abbildung sehen Sie die innere Shell auf der linken Seite. Diese Matt-Schicht hat einen Hintergrund für die Komposition bereitgestellt, um vor kleinen Lücken zwischen den verschiedenen Ebenen zu schützen, die die Clouds umfassen. Aufgrund der langsamen Drehung der Schicht diente sie auch als visueller Puffer zwischen den schnelleren Verschiebungs Bändern, um visuelle Unity in den Ebenen zu entwickeln.
+In der folgenden Abbildung sehen Sie die innere Shell auf der linken Seite. Diese Matt Schicht hat einen Hintergrund für die Komposition bereitgestellt, um vor kleinen Lücken zwischen den verschiedenen Ebenen zu schützen, die die Clouds bilden. Aufgrund der langsamen Drehung der Schicht diente sie auch als visueller Puffer zwischen den schnelleren Verschiebungs Bändern, um visuelle Unity in den Ebenen zu entwickeln.
 
 Nachdem Sie diesen Anker auf das Modell festgelegt haben, wurden die verschiebenden cloudschichten in den unten gezeigten mittleren und rechten Netzen projiziert.
 
@@ -135,13 +135,13 @@ Die vorhandene Textur wurde in einen dreiteiligen Textur Atlas aufgeteilt: das o
 
 Der hervorragend hervorragend rote Spot wurde auch in seine verschiedenen verschiebbaren Teile aufgeteilt und dann in einen ansonsten unsichtbaren Bereich der Textur eingefügt. Diese Komponenten können als rot-tontöne im mittleren Abschnitt der Abbildung unten angezeigt werden.
 
-Da jedes Band eine bestimmte Richtung und eine bestimmte Geschwindigkeit hat, wurde die Textur einzeln auf jedes Mesh angewendet. Die Netzen hatten dann einen gemeinsamen Mittelpunkt und Pivotpunkt, um die gesamte Oberfläche konzentrisch animieren zu können.
+Da jedes Band eine bestimmte Richtung und eine bestimmte Geschwindigkeit hat, wurde die Textur einzeln auf jedes Mesh angewendet. Die Netzen hatten dann einen gemeinsamen Mittelpunkt und Pivotpunkt, wodurch die gesamte Oberfläche konzentrisch animiert werden konnte.
 
 ![Übersicht über die Jupiter-Texturen](images/ge-update-jupiter-planet-cloud-texture.png)
 
 ### <a name="rotation-and-texture-behavior"></a>Drehung und Textur Verhalten
 
-Nachdem Sie die visuelle Komposition von Jupiter festgelegt haben, mussten wir sicherstellen, dass die Dreh-und die Umlaufgeschwindigkeit ordnungsgemäß berechnet und entsprechend angewendet wurden. Es dauert ungefähr 9 Stunden, bis Jupiter eine vollständige Rotation durchführt. Dies ist eine Frage der Definition aufgrund der differenziellen Rotation. Daher wurde der Äquatorial Datenstrom als "Master Datenstrom" festgelegt, wobei 3600 Frames für eine vollständige Drehung übernommen wurden. Jede andere Ebene muss eine Rotationsgeschwindigkeit als Faktor von 3600 aufweisen, damit Sie mit der ursprünglichen Position abgeglichen werden kann, z. b. 600, 900, 1200, 1800 usw.
+Nachdem die visuelle Komposition von Jupiter festgelegt wurde, mussten wir sicherstellen, dass die Drehung und die Umlaufgeschwindigkeit ordnungsgemäß berechnet und entsprechend angewendet wurden. Es dauert ungefähr 9 Stunden, bis Jupiter eine vollständige Rotation durchführt. Dies ist eine Frage der Definition aufgrund der differenziellen Rotation. Daher wurde der Äquatorial Datenstrom als "Master Datenstrom" festgelegt, wobei 3600 Frames für eine vollständige Drehung übernommen wurden. Jede andere Ebene muss eine Rotationsgeschwindigkeit als Faktor von 3600 aufweisen, damit Sie mit der ursprünglichen Position (z. b. 600, 900, 1200, 1800 usw.) verglichen werden kann.
 
 ![Jupiter shelltexturen](images/ge-update-shell-texture.jpg)
 
@@ -176,11 +176,11 @@ Das Ergebnis war, dass die innere Shell einen Rendering-Warteschlangen Wert von 
 
 Die texturierten Jupiter Schichten wurden zuerst eingerichtet, was für die Implementierung nicht ausreichend erwies.
 
-Der ursprüngliche Planet Standard-Shader (und alle zugehörigen Variationen) empfangen seine Beleuchtungs Informationen über ein Skript, den sunlightreceiver, der vom mrtk-Standard-Shader nicht unterstützt wird.
+Der ursprüngliche Planet Standard-Shader und alle seine Variationen empfangen seine Beleuchtungs Informationen über ein Skript, den sunlightreceiver, der vom mrtk-Standard-Shader nicht unterstützt wird.
 
 Das einfache austauschen der Shader war keine Lösung, da der Planet Standard-Shader keine Textur Zuordnungen mit Transparenz unterstützt. Wir haben diesen Shader bearbeitet, damit der Jupiter-Build wie beabsichtigt funktioniert.
 
-Zum Schluss müssen die Alpha-Mischungs Einstellungen eingerichtet werden, indem die Quelle Blend auf 10 festgelegt wird, und die Ziel Mischung auf 5.
+Schließlich mussten die Alpha-Mischungs Einstellungen eingerichtet werden, indem die Quelle Blend auf 10 und das Ziel in Blend auf 5 festgelegt wurde.
 
 ![Jupiter Unity-Eigenschaften](images/ge-update-jupiter-unity-render-queue.jpg)
 
@@ -188,9 +188,9 @@ Sie können das endgültige Rendering von Jupiter in Galaxy Explorer sehen!
 
 ## <a name="meet-the-team"></a>Lernen Sie das Team kennen 
 
-Unser Mixed Reality Studio-Team besteht aus Designern, 3D-Künstlern, UX-Spezialisten, Entwicklern, einem Programmmanager und einem Studio-Head. Wir kommen weltweit vor: Belgien, Kanada, Deutschland, Israel, Japan, das Vereinigte Königreich und die USA. Wir sind ein multidisziplinäres Team, das aus einem vielfältigen Hintergrund stammt: Spiele, sowohl herkömmliches als auch Indie, digitales Marketing, Gesundheitswesen und Wissenschaft.
+Unser Mixed Reality Studio-Team besteht aus Designern, 3D-Künstlern, UX-Spezialisten, Entwicklern, einem Programmmanager und einem Studio Head. Wir kommen weltweit vor: Belgien, Kanada, Deutschland, Israel, Japan, das Vereinigte Königreich und die USA. Dabei handelt es sich um ein multidisziplinäres Team, das von einem vielfältigen Hintergrund stammt: Spiele, traditionelles und Indie, digitales Marketing, Gesundheitswesen und Wissenschaft.
 
-Wir freuen uns, den Galaxy Explorer für hololens 2 zu erstellen und die hololens (1st Gen)-, VR-und Desktop Versionen zu aktualisieren. 
+Wir freuen uns, den Galaxy Explorer für hololens 2 zu erstellen und die hololens-, VR-und Desktop Versionen zu aktualisieren. 
 
 ![Das Galaxy Explorer-Team](images/ge-update-team-image.png)
 
@@ -198,8 +198,8 @@ Oben von links nach rechts: Artemis tsouflidou (Developer), Angie teickner (visu
 Unten von links nach rechts: Amit rojtblat (Technical Artist), Martin Wettig (3D-Künstlerin) und Dirk songuer (Studio Head).
 Nicht vorgestellt: Tim Gerken (Tech Lead) und Oscar salandin (Visual Designer).
 
-## <a name="additional-information"></a>Weitere Informationen
+## <a name="additional-information"></a>Zusätzliche Informationen
 
 ### <a name="mixed-reality-studios"></a>Mixed Reality-Studios
 
-Microsoft Mixed Reality Studio-Teams, die sich in Nordamerika, Europa und Asia-Pacific befinden, sind Experten im Entwurf der Benutzer Darstellung, Holographic Computing, AR/VR-Technologien und 3D-Entwicklung. einschließlich der Erstellung von 3D-Assets, DirectX, Unity und Unreal. Wir helfen Ihnen bei der Entwicklung gewünschter Futures, beim Entwerfen, erstellen und Bereitstellen von Lösungen, während Kunden gleichzeitig messbare Auswirkungen auf Ihre Organisation erzielen können. Die Ateliers arbeiten eng mit mehr als 22.000 Microsoft-Diensts für die Integration von Unternehmensanwendungen, die Übernahme, den Betrieb und Support.
+Die Teams von Microsoft Mixed Reality Studio, die sich in der Praxis, in Europa und in Asia-Pacific befinden, sind Experten im Entwurf der Benutzer Darstellung, Holographic Computing, AR/VR-Technologien und 3D-Entwicklung. einschließlich der Erstellung von 3D-Assets, DirectX, Unity und Unreal. Wir helfen Ihnen bei der Entwicklung gewünschter Futures, beim Entwerfen, erstellen und Bereitstellen von Lösungen, während Kunden gleichzeitig messbare Auswirkungen auf Ihre Organisation erzielen können. Die Ateliers arbeiten eng mit mehr als 22.000 Microsoft-Diensts für die Integration, Übernahme, Betrieb und Unterstützung von Unternehmensanwendungen zusammen.

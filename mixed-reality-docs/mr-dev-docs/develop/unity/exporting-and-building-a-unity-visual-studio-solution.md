@@ -6,24 +6,24 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Visual Studio, Export, Build, Bereitstellung, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, UWP, Bereitstellung
-ms.openlocfilehash: 29415fa7d561cab1aec5f0c2c9344fa24b0e8293
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4da20a30375c7204c532a19c129c9265c0fa27d9
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677559"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010411"
 ---
 # <a name="exporting-and-building-a-unity-visual-studio-solution"></a>Exportieren und Erstellen einer Unity-Projektmappe für Visual Studio
 
-Wenn Sie die System Tastatur nicht in Ihrer Anwendung verwenden möchten, wird empfohlen, *D3D* zu verwenden, da Ihre Anwendung etwas weniger Arbeitsspeicher beansprucht und eine etwas schnellere Startzeit hat. Wenn Sie die touchscreenkeyboard-API in Ihrem Projekt verwenden, um die System Tastatur zu verwenden, müssen Sie als *XAML* exportieren.
+Wenn Ihre APP die System Tastatur nicht benötigt, empfiehlt es sich, *D3D* zu verwenden, damit Ihre APP etwas weniger Arbeitsspeicher und eine schnellere Startzeit verwendet. Wenn Sie jedoch die System Tastatur über die touchscreenkeyboard-API verwenden, müssen Sie das Projekt als *XAML* exportieren.
 
 ## <a name="how-to-export-from-unity"></a>Exportieren aus Unity
 
 ![Unity-Buildeinstellungen](images/unitybuildsettings-300px.png)<br>
-*Unity-Buildeinstellungen*
+*Buildeinstellungen im Unity-Editor*
 
 1. Wenn Sie bereit sind, Ihr Projekt aus Unity zu exportieren, öffnen Sie das Menü **Datei** , und wählen Sie Buildeinstellungen aus **.**
-2. Klicken Sie auf **offene Szenen hinzufügen** , um die Szene dem Build hinzuzufügen.
+2. Wählen Sie **offene Szenen hinzufügen** aus, um die Szene dem Build hinzuzufügen.
 3. Wählen Sie im Dialogfeld " **Buildeinstellungen** " die folgenden Optionen für den Export in hololens aus:
    * **Plattform:** *universelle Windows-Plattform* , und stellen Sie sicher, dass Sie **Switch Platform** auswählen, damit die Auswahl wirksam wird.
    * **SDK:** *Universal 10*.
@@ -48,7 +48,7 @@ Wenn Sie die System Tastatur nicht in Ihrer Anwendung verwenden möchten, wird e
 
 ## <a name="when-to-re-export-from-unity"></a>Wann sollten Sie den erneuten Export aus Unity durch Schreiben?
 
-Durch Aktivieren des Kontrollkästchens "c#-Projekte" beim Exportieren Ihrer APP aus Unity wird eine Visual Studio-Projekt Mappe erstellt, die alle Ihre Unity-Skriptdateien enthält Dies ermöglicht es Ihnen, Ihre Skripts zu durchlaufen, ohne den erneuten Export aus Unity durchzusetzen. Wenn Sie jedoch Änderungen an Ihrem Projekt vornehmen möchten, die nicht nur den Inhalt von Skripts ändern, müssen Sie einen erneuten Export aus Unity durchführen. Es folgen einige Beispiele für den erneuten Export von Unity:
+Wenn Sie das Kontrollkästchen **c#-Projekte** beim Exportieren Ihrer APP aus Unity aktivieren, wird eine Visual Studio-Projekt Mappe erstellt, die alle Ihre Unity-Skriptdateien enthält Wenn Sie alle Skripts an einem Ort haben, können Sie die durchlaufen ohne erneutes exportieren aus Unity durchlaufen. Wenn Sie jedoch Änderungen an Ihrem Projekt vornehmen, die nicht nur den Inhalt von Skripts ändern, müssen Sie einen erneuten Export aus Unity durchführen. Es folgen einige Beispiele für den erneuten Export von Unity:
 * Sie fügen der Registerkarte Projekt Objekte hinzu oder entfernen diese.
 * Sie ändern alle Werte auf der Registerkarte Inspektor.
 * Objekte werden der Registerkarte Hierarchie hinzugefügt oder daraus entfernt.
@@ -56,16 +56,16 @@ Durch Aktivieren des Kontrollkästchens "c#-Projekte" beim Exportieren Ihrer APP
 
 ## <a name="building-and-deploying-a-unity-visual-studio-solution"></a>Entwickeln und Bereitstellen einer Unity-Visual Studio-Projekt Mappe
 
-Der Rest der Bereitstellung und Bereitstellung von apps erfolgt in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). Sie müssen eine Unity-Buildkonfiguration angeben. Die Benennungs Konventionen von Unity unterscheiden sich möglicherweise von dem, was in Visual Studio normalerweise verwendet wird:
+Der Rest der Bereitstellung und Bereitstellung von apps erfolgt in [Visual Studio](../platform-capabilities-and-apis/using-visual-studio.md). Sie müssen eine Unity-Buildkonfiguration angeben. Die Benennungs Konventionen von Unity unterscheiden sich möglicherweise von dem, was Sie in Visual Studio verwendet haben:
 
 |  Konfiguration  |  Erklärung | 
 |----------|----------|
-|  Debug  |  Alle Optimierungen und der Profiler werden aktiviert. Dient zum Debuggen von Skripts | 
+|  Debuggen  |  Alle Optimierungen und der Profiler werden aktiviert. Dient zum Debuggen von Skripts | 
 |  Master  |  Alle Optimierungen sind aktiviert, und der Profiler ist deaktiviert. Wird verwendet, um apps an den Store zu übermitteln. | 
-|  Freigabe  |  Alle Optimierungen sind aktiviert, und der Profiler ist aktiviert. Dient zum Auswerten der APP-Leistung. | 
+|  Release  |  Alle Optimierungen sind aktiviert, und der Profiler ist aktiviert. Dient zum Auswerten der APP-Leistung. | 
 
-Beachten Sie, dass es sich bei der obigen Liste um eine Teilmenge der allgemeinen Trigger handelt, die bewirken, dass das Visual Studio-Projekt generiert werden muss. Im Allgemeinen ist es für das Bearbeiten von CS-Dateien in Visual Studio nicht erforderlich, dass das Projekt in Unity neu generiert wird.
+Beachten Sie, dass es sich bei der obigen Liste um eine Teilmenge der allgemeinen Trigger handelt, die bewirken, dass das Visual Studio-Projekt generiert werden muss. Im Allgemeinen erfordert die Bearbeitung von CS-Dateien in Visual Studio nicht, dass das Projekt in Unity neu generiert wird.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Wenn Sie feststellen, dass Änderungen an den CS-Dateien nicht in Ihrem Visual Studio-Projekt erkannt werden, stellen Sie sicher, dass "Unity c#-Projekte" aktiviert ist, wenn Sie das vs-Projekt über das Menü "Build" von Unity generieren.
+Wenn Sie feststellen, dass Änderungen an den CS-Dateien nicht in Ihrem Visual Studio-Projekt erkannt werden, stellen Sie sicher, dass **Unity c#-Projekte** geprüft werden, wenn Sie das vs-Projekt über das Menü "Build" von Unity generieren.

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Spracheingabe, keywordrecognizer, grammarerkenzer, Mikrofon, Diktat, Voice, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679889"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010571"
 ---
 # <a name="voice-input-in-unity"></a>Spracheingabe in Unity
 
@@ -27,9 +27,9 @@ Mit keywordrecognizer (einem von zwei Typen von phraserecognizers) kann Ihrer AP
 
 ## <a name="enabling-the-capability-for-voice"></a>Aktivieren der Sprachfunktion
 
-Die **Mikrofon** Funktion muss für eine APP deklariert werden, um die Spracheingabe zu nutzen.
+Die **Mikrofon** Funktion muss für eine APP deklariert werden, um eine Spracheingabe zu verwenden.
 1. Navigieren Sie im Unity-Editor zu den Player Einstellungen, indem Sie zu "> Projekteinstellungen bearbeiten > Player" navigieren.
-2. Klicken Sie auf die Registerkarte "Windows Store".
+2. Wählen Sie auf der Registerkarte "Windows Store" aus.
 3. Aktivieren Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die **Mikrofon** Funktion.
 
 ## <a name="phrase-recognition"></a>Ausdrucks Erkennung
@@ -58,7 +58,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-Fügen Sie nun dem Wörterbuch ein Schlüsselwort hinzu (z. b. innerhalb einer Start ()-Methode). Das Schlüsselwort "aktivieren" wird in diesem Beispiel hinzugefügt:
+Fügen Sie nun dem Wörterbuch ein Schlüsselwort hinzu, z. b. in einer Start ()-Methode. Das Schlüsselwort "aktivieren" wird in diesem Beispiel hinzugefügt:
 
 ```
 //Create keywords for keyword recognizer
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>Diktieren
 
 **Namespace:** *unityengine. Windows. Speech*<br>
-**Typen**: " *diktationerkenzer*", "sprecherfehler", " *Redner Systemstatus* *SpeechError*
+**Typen**: " *diktationerkenzer*", "sprecherfehler", " *Redner Systemstatus* 
 
 Verwenden Sie das diktationerkenzer-Element, um die Sprache des Benutzers in Text zu konvertieren. Der Diktat-Erkennungs Modul macht [Diktat](../../design/voice-input.md#dictation) Funktionen verfügbar und unterstützt das registrieren und lauschen auf Hypothese und Ausdrucks fertige Ereignisse, sodass Sie Ihrem Benutzer Feedback geben können, während Sie sprechen und danach. Die Methoden "Start ()" und "stoppt ()" aktivieren und deaktivieren die Diktat Erkennung. Sobald die Erkennung erfolgt ist, sollte Sie mithilfe der verwerfen ()-Methode freigegeben werden, um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
 
@@ -156,9 +156,9 @@ Für den Einstieg in das Diktat müssen nur wenige Schritte ausgeführt werden:
 
 ### <a name="enabling-the-capability-for-dictation"></a>Aktivieren der Funktion für das Diktat
 
-Die Funktion "Internet Client" muss zusätzlich zu der oben erwähnten Funktion "Mikrofon" deklariert werden, damit eine Anwendung die Diktat Funktion nutzt.
+Die Funktion "Internet Client" muss zusammen mit der oben erwähnten Funktion "Mikrofon" deklariert werden, damit eine Anwendung die Diktat Funktion nutzt.
 1. Navigieren Sie im Unity-Editor zu den Player Einstellungen, indem Sie zur Seite "> Projekteinstellungen bearbeiten > Player" navigieren.
-2. Klicken Sie auf die Registerkarte "Windows Store".
+2. Wählen Sie auf der Registerkarte "Windows Store" aus.
 3. Überprüfen Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die Funktion " **Internetclient** ".
 
 ### <a name="dictationrecognizer"></a>Diktationerkenzer
@@ -271,8 +271,8 @@ dictationRecognizer.Dispose();
 * Die Methoden "Start ()" und "stoppt ()" aktivieren und deaktivieren die Diktat Erkennung.
 * Sobald die Erkennung erfolgt ist, muss Sie mithilfe der Methode "verwerfen ()" freigegeben werden, um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
 * Timeouts treten nach einer festgelegten Zeitspanne auf. Sie können diese Timeouts im Ereignis "ditationcomplete" überprüfen. Es gibt zwei Timeouts, die Sie beachten sollten:
-   1. Wenn die Erkennung startet und keine Audiodaten für die ersten fünf Sekunden hört, wird ein Timeout angezeigt.
-   2. Wenn die Erkennung ein Ergebnis erhalten hat, dann aber für einen Zeitraum von 20 Sekunden den Ruhe Wert erfährt, wird ein Timeout verursacht.
+   1. Wenn die Erkennung gestartet wird und in den ersten fünf Sekunden keine Audiodaten mehr angezeigt werden, tritt ein Timeout auf.
+   2. Wenn die Erkennung ein Ergebnis erhalten hat, aber dann 20 Sekunden lang Stillen wird, tritt ein Timeout auf.
 
 ## <a name="using-both-phrase-recognition-and-dictation"></a>Verwenden der Ausdrucks Erkennung und-diktierung
 
@@ -292,7 +292,7 @@ Sie können auch einfach einen keywordrecognizer starten, mit dem auch das phras
 
 ## <a name="using-the-microphone-helper"></a>Verwenden des Mikrofon-Hilfsprogramms
 
-Das Mixed Reality Toolkit auf GitHub enthält eine Mikrofon-Hilfsklasse, mit der Entwickler darauf hinweisen können, ob im System ein brauchbares Mikrofon vorhanden ist. Eine Verwendung hierfür ist der Ort, an dem überprüft werden soll, ob ein Mikrofon im System vorhanden ist, bevor sprach Interaktions Hinweise in der Anwendung angezeigt werden.
+Das Mixed Reality Toolkit auf GitHub enthält eine Mikrofon-Hilfsklasse, mit der Entwickler darauf hinweisen können, ob im System ein brauchbares Mikrofon vorhanden ist. Eine Verwendung hierfür ist, wo Sie überprüfen möchten, ob ein Mikrofon auf dem System vorhanden ist, bevor Sie die sprach Interaktions Hinweise in der Anwendung darstellen.
 
 Das Mikrofon-Hilfsobjekt befindet sich im [Ordner Input/Scripts/Utilities](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). Das GitHub-Repository enthält auch ein [kleines Beispiel](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) , das zeigt, wie das Hilfsprogramm verwendet werden kann.
 

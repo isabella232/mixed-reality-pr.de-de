@@ -6,18 +6,19 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, Case-Studie, Project, Sample, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678619"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010301"
 ---
 # <a name="galaxy-explorer"></a>Galaxy Explorer
 
 **Sie haben ihre Ideen freigegeben. Wir teilen den Code.**
 
-Das Galaxy Explorer-Projekt ist bereit. Sie haben Ihre Ideen mit der Community geteilt, eine App ausgewählt und beobachtet, wie ein Team sie erstellt hat. Und jetzt können Sie den Quellcode erhalten. Wenn Sie über ein Gerät verfügen, steht das Galaxy Explorer-Projekt auch im Windows Store für Microsoft hololens zum Download zur Verfügung.
+Das Galaxy Explorer-Projekt ist bereit. Sie haben ihre Ideen mit der Community gemeinsam genutzt, eine APP ausgewählt, ein Team erstellt und nun den Quellcode erhalten. Wenn Sie über ein Gerät verfügen, steht das Galaxy Explorer-Projekt im Windows Store für Microsoft hololens zum Download zur Verfügung.
+
 >[!TIP]
 >[Holen Sie sich den Code](https://github.com/Microsoft/GalaxyExplorer) auf GitHub
 
@@ -92,7 +93,7 @@ Weitere Einblicke und Lektionen aus der Entwicklung von Galaxy Explorer finden S
 ![Galaxy Explorer-Entwicklungsteam](images/syiteampic.jpg)<br>
 *Galaxy Explorer-Entwicklungsteam*
 
-Wir haben gelernt, dass die Erstellung des richtigen Teams eine der wichtigsten Investitionen ist. Wir haben uns entschieden, sich ähnlich wie ein Game Studio für diejenigen von Ihnen zu organisieren, die mit diesem Entwicklungsmodell vertraut sind. Wir haben uns entschieden, elf Kern Teammitglieder zu haben, um den Bereich zu steuern, da wir einen festes Zeitrahmen hatten (erstellen Sie vor dem 30. März 2016 etwas cooltes).
+Wir haben gelernt, dass die Erstellung des richtigen Teams eine der wichtigsten Investitionen ist, die wir treffen konnten, und beschloss, sich ähnlich wie ein Game Studio zu organisieren, das Sie mit diesem Entwicklungsmodell vertraut gemacht haben. Wir haben 11 Kern Teammitglieder gewählt, um den Bereich zu steuern, da wir einen festes Zeitrahmen hatten (erstellen Sie vor dem 30. März 2016 etwas cool).
 
 Für dieses Projekt begannen wir mit einem Producer, Jessica, der die Planung durchführte, den Fortschritt überprüft und die Ausführung von Tages-zu-Tag aufrechterhalten hat. Sie ist das einzige mit rosa Haaren. Wir hatten einen Entwurfs Leiter (Jon) und einen Senior Designer (Peter). Sie hatten die kreative Vision für Galaxy Explorer. Jon ist das einzige in der Brille in der Front-Zeile, und Peter ist der zweite von der rechten Seite im Hintergrund.
 
@@ -100,10 +101,10 @@ Wir hatten drei Entwickler – Bj (zwischen Jon und Jessica), Mike (zweite Zeile
 
 Wir begannen mit vier Künstlern in voller Zeit – ein Konzeptkünstler (Jedd, Second von Links im Hintergrund), ein Modellierer (Andy, Dritter von rechts auf der Rückseite), ein technischer Künstler (Alex (ganz rechts) und ein Animator (Steve (ganz links). Jede dieser Aufgaben ist auch mehr –, aber dies sind die Hauptaufgaben.
 
-Wir haben einen voll Zeit Tester – Lena –, der unsere Builds jeden Tag getestet, unsere Buildüberprüfungen eingerichtet und Features überprüft, sobald Sie online geschaltet werden. Alle Benutzer haben Sie ständig getestet, da wir immer unsere Builds betrachten. Lena ist eine, die die Lederjacke aufrollt.
+Wir hatten einen voll Zeit Tester – Lena –, der unsere Builds jeden Tag getestet, unsere Buildüberprüfungen eingerichtet und Features überprüft, sobald Sie online geschaltet werden. Alle Benutzer haben Sie ständig getestet, da wir immer unsere Builds betrachten. Lena ist eine, die die Lederjacke aufrollt.
 
-Wir sind Teil eines größeren Studio hier bei Microsoft (das Team in der Entwicklung von nicht-spielen). Es gab auch eine Reihe von anderen Personen, – wir haben die Talente unserer Kunst Director, Audiotechniker und Studio-Führungskräfte häufig im gesamten Projekt aufgerufen, aber diese Personen waren gemeinsam mit anderen Projekten, die unser breiteres Team hat, freigegeben.
+Wir sind Teil eines größeren Studio hier bei Microsoft (denken Sie an das Team in der Entwicklung ohne Spiele). Es gab auch eine Reihe von anderen Personen, – wir haben die Talente unserer Kunst Director, Audiotechniker und Studio-Führungskräfte häufig im gesamten Projekt aufgerufen, aber diese Personen waren gemeinsam mit anderen Projekten, die unser breiteres Team hat, freigegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Fallstudie: Erstellen einer Galaxie in gemischter Realität](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Galaxy Explorer-GitHub-Repository](https://github.com/Microsoft/GalaxyExplorer)

@@ -1,24 +1,24 @@
 ---
 title: Periodensystem der Elemente
-description: Die periodische Tabelle der Elemente ist eine Open-Source-Beispiel-App aus der Mixed Reality Design Labs von Microsoft, in der Sie erfahren, wie Sie mithilfe einer Objekt Auflistung ein Array von Objekten im 3D-Raum mit verschiedenen Oberflächentypen erstellen können.
+description: Die periodische Tabelle der Elemente ist eine Open-Source-Beispiel-App aus den Mixed Reality-Entwurfs Labs von Microsoft. Erfahren Sie, wie Sie mithilfe einer Objektsammlung ein Array von Objekten im 3D-Raum mit verschiedenen Oberflächentypen anordnen können.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows-Realität, Design, Beispiel-APP, Steuerelemente, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677679"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010181"
 ---
 # <a name="periodic-table-of-the-elements"></a>Periodensystem der Elemente
 
 >[!NOTE]
 >In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Entwurfs Labors für gemischte Realität](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erkenntnisse und Vorschläge für die Entwicklung gemischter Reality-apps teilen. Unsere Entwurfs bezogenen Artikel und Code werden sich weiterentwickeln, wenn wir neue Ermittlungen durchführen.
 
-[Die periodische Tabelle der Elemente](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) ist eine Open-Source-Beispiel-App aus den Mixed Reality-Entwurfs Labs von Microsoft. Mit diesem Projekt können Sie erfahren, wie Sie ein Array von Objekten im 3D-Raum mit verschiedenen Oberflächentypen mithilfe einer **[Objekt](../../design/object-collection.md)** Auflistung aufstellen. Außerdem wird beschrieben, wie Sie Objekt übergreifende Objekte erstellen, die auf Standard Eingaben aus hololens reagieren. Sie können die Komponenten dieses Projekts verwenden, um Ihre eigene Benutzeroberflächen Funktion für gemischte Realität zu erstellen.
+[Die periodische Tabelle der Elemente](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) ist eine Open-Source-Beispiel-App aus den Mixed Reality-Entwurfs Labs von Microsoft. Erfahren Sie, wie Sie mithilfe einer **[Objekt](../../design/object-collection.md)** Auflistung ein Array von Objekten im 3D-Raum mit verschiedenen Oberflächentypen aufstellen. Außerdem wird beschrieben, wie Sie Objekt übergreifende Objekte erstellen, die auf Standard Eingaben aus hololens reagieren. Sie können die Komponenten dieses Projekts verwenden, um Ihre eigene Benutzeroberflächen Funktion für gemischte Realität zu erstellen.
 
 ![Period-Tabelle der Elements-App](images/640px-periodictable-hero.jpg)
 
@@ -33,7 +33,7 @@ Eine periodische Tabelle der Elemente visualisiert die chemischen Elemente und i
 
 ## <a name="background"></a>Hintergrund
 
-Nachdem ich die ersten hololens erlebt habe, war eine regelmäßige Tabellen-App eine Idee, mit der ich wusste, dass ich in gemischter Realität experimentieren wollte. Da jedes Element viele Datenpunkte enthält, die mit Text angezeigt werden, dachte ich, dass es sich um die Untersuchung der typografischen Komposition in einem 3D-Raum handelt. Es war ein weiterer interessanter Bestandteil dieses Projekts, das-Elektronen Modell des Elements visuell darzustellen.
+Nachdem ich die ersten hololens erlebt habe, wusste ich, dass ich mit einer regelmäßigen Tabellen-app in gemischter Realität experimentieren wollte. Da jedes Element viele Datenpunkte enthält, die mit Text angezeigt werden, dachte ich, dass es sich um die Untersuchung der typografischen Komposition in einem 3D-Raum handelt. Den Benutzern die Möglichkeit zu geben, das Elektronen Modell des Elements visuell darzustellen, war ein weiterer interessanter Bestandteil dieses Projekts.
 
 ## <a name="design"></a>Entwurf
 
@@ -49,19 +49,19 @@ In der Detailansicht wollte ich die Informationen jedes Elements mit schön gere
 ![Ty](images/640px-periodictable-prototypes.jpg)<br>
 *Interaktions Prototypen*
 
-Der Benutzer kann den Surface-Typ ändern, indem er auf die Schaltflächen am unteren Ende der Tabelle tippt. er kann Zwischenebene, Zylinder, Kugel und Punkt wechseln.
+Der Benutzer kann den Surface-Typ ändern, indem er auf die Schaltflächen am unteren Ende der Tabelle tippt. Sie können Zwischenebene, Zylinder, Kugel und Punkt umschalten.
 
 ## <a name="common-controls-and-patterns-used-in-this-app"></a>In dieser APP verwendete allgemeine Steuerelemente und Muster
 
 ### <a name="interactable-object-button"></a>Interactable-Objekt (Schaltfläche)
 
-Das [interactable-Objekt](../../design/interactable-object.md) ist ein Objekt, das auf grundlegende hololens-Eingaben reagieren kann. Sie wird als präfab/-Skript bereitgestellt, das Sie problemlos auf jedes beliebige Objekt anwenden können. Beispielsweise können Sie einen Kaffeebecher in der Szene in der Szene zusammenstellen und auf Eingaben wie z. b. Blick, Luft tippen, Navigation und Manipulations Gesten reagieren. [Erfahren Sie mehr](../../design/interactable-object.md)
+Das [interactable-Objekt](../../design/interactable-object.md) ist ein Objekt, das auf grundlegende hololens-Eingaben reagieren kann. Sie wird als präfab/Skript bereitgestellt, das Sie problemlos auf jedes beliebige Objekt anwenden können. Sie können z. b. einen Kaffeebecher in der Szene in der Szene zusammenstellen und auf Eingaben wie z. b. Blick, Luft tippen, Navigation und Manipulations Gesten reagieren. [Weitere Informationen](../../design/interactable-object.md)
 
 ![nteractable-Objekt](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>Objektsammlung
 
-Die [Objektsammlung](../../design/object-collection.md) ist ein Objekt, mit dem Sie mehrere Objekte in verschiedenen Formen anordnen können. Es unterstützt die Ebenen, Zylinder, Kugel und Punkt. Sie können zusätzliche Eigenschaften wie RADIUS, Anzahl der Zeilen und den Abstand konfigurieren. [Erfahren Sie mehr](../../design/object-collection.md)
+Die [Objektsammlung](../../design/object-collection.md) ist ein Objekt, mit dem Sie mehrere Objekte in verschiedenen Formen anordnen können. Es unterstützt Ebene, Zylinder, Kugel und Punkt. Sie können zusätzliche Eigenschaften wie RADIUS, Anzahl der Zeilen und den Abstand konfigurieren. [Weitere Informationen](../../design/object-collection.md)
 
 ![Objektsammlung](images/640px-periodictable-collections.jpg)
 
@@ -87,7 +87,7 @@ Lesen Sie den Artikel zum Aktualisieren der periodischen Tabelle der Elements-Ap
 </tr>
 </table>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)

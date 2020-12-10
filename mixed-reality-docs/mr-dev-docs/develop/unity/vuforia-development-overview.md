@@ -1,23 +1,23 @@
 ---
 title: Verwenden von Vuforia mit Unity
-description: Nutzen Sie vuforia zum Erstellen von Windows Mixed Reality-Anwendungen in Unity.
+description: Verwenden Sie vuforia, um Windows Mixed Reality-Anwendungen in Unity zu erstellen.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia, Marker, Koordinaten, Frame der Referenz, Überwachung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity, hololens, Geräteüberwachung, Leistungsmodus, vuforia-Entwickler Portal
-ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ecacf4036bfab38eb90782a194c445a83ca623ba
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679669"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010561"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>Verwenden der vuforia-Engine mit Unity
 
 Die vuforia-Engine bringt hololens eine wichtige Funktion ein – die Strom Umgebung, um eine Verbindung zwischen aren Erfahrungen und bestimmten Bildern und Objekten in der Umgebung herzustellen. Sie können diese Funktion verwenden, um eine Schritt-für-Schritt-Anleitung für das Industrieunternehmen zu überlagern oder digitale Features und Erfahrungen zu einem physischen Produkt oder Spiel hinzuzufügen.
 
-Die vuforia-Engine bietet eine große Bandbreite an Features und Zielen, um bei der Entwicklung von aren Erfahrungen mehr Flexibilität zu erzielen. Eine unserer neuesten Features, vuforia-Modell Ziele, ist eine wichtige Funktion für gewerbliche und Industrieanwendungen. Mithilfe von Modell Zielen können Anwendungen physische Objekte wie Computer, Automobile oder Toys erkennen und basierend auf einem CAD-oder Digital 3D-Modell verfolgen. Bei Industrieanwendungen kann dieses Feature assemblyarbeitsthreads und Dienst Technikern eine ausführliche Arbeitsanleitung und Anleitungen für die Bereitstellung in der Factory und im Außendienst bereitstellen.
+Die vuforia-Engine bietet eine große Bandbreite an Features und Zielen, um Ihren aren Entwicklungsprozess flexibler zu gestalten. Eine unserer neuesten Features, vuforia-Modell Ziele, ist eine wichtige Funktion für gewerbliche und Industrieanwendungen. Mithilfe von Modell Zielen können Anwendungen physische Objekte wie Computer, Automobile oder Toys erkennen und basierend auf einem CAD-oder Digital 3D-Modell verfolgen. Bei Industrieanwendungen kann dieses Feature assemblyarbeitsthreads und Dienst Technikern eine ausführliche Arbeitsanleitung und Anleitungen für die Bereitstellung in der Factory und im Außendienst bereitstellen.
 
 Vorhandene vuforia-Engine-apps, die für Smartphones und Tablets erstellt wurden, können problemlos in Unity zur unter hololens-Konfiguration konfiguriert werden. Sie können die vuforia-Engine sogar verwenden, um Ihre neue hololens-App auf Windows 10-Tablets wie Surface pro und Surface Book zu übernehmen.
 
@@ -32,7 +32,7 @@ Fügen Sie das Paket "vuforia Engine" wie hier beschrieben hinzu [.](https://lib
 
 ## <a name="getting-started-with-vuforia-engine"></a>Einstieg in die vuforia-Engine
 
-Der beste Ausgangspunkt für die Verwendung der vuforia-Engine mit hololens ist das [Beispiel der vuforia-Engine hololens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (verfügbar im Unity-Ressourcen Speicher). Das Beispiel enthält ein umfassendes hololens-Projekt, das vorkonfigurierte Szenen umfasst, die in einem hololens bereitgestellt werden können.
+Der beste Ausgangspunkt für das Erlernen von vuforia Engine und hololens ist das [Beispiel der vuforia-Engine hololens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (verfügbar im Unity-Ressourcen Speicher). Das Beispiel enthält ein umfassendes hololens-Projekt, das vorkonfigurierte Szenen umfasst, die in einem hololens bereitgestellt werden können.
 
 In den Kulissen wird gezeigt, wie Sie mithilfe von vuforia-Bild Zielen ein Bild erkennen und mit digitalen Inhalten in einer hololens-Funktionalität erweitern können. Das Beispiel der vuforia-Engine hololens enthält auch eine Szene, in der die Verwendung von Modell Zielen und vgargs in hololens gezeigt wird. Sie können Ihren eigenen Inhalt problemlos in den Kulissen austauschen, um mit der Erstellung von hololens-apps zu experimentieren, die die vuforia-Engine verwenden.
 
@@ -48,7 +48,7 @@ Das Entwickeln einer vuforia-Engine-App für hololens ist im Grunde das gleiche 
 3.  Fügen Sie die Beispiel Szenen zu **Szenen** in **Build hinzu.**
 4.  Wechseln Sie in den **Buildeinstellungen** zu **UWP** , und klicken Sie auf die Schaltfläche **offene Szenen hinzufügen** .
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.  Klicken Sie auf die Schaltfläche **Player Einstellungen** .  
+5.  Wählen Sie die Schaltfläche **Player Einstellungen** aus.  
    * Wählen Sie das **UWP** -Symbol aus, und erweitern Sie den Abschnitt **XR-Einstellungen** .
    * Stellen Sie sicher, dass **Virtual Reality unterstützt** aktiviert ist.    
    * Unter **Virtual Reality-sdert** stellen Sie Folgendes sicher:
@@ -87,12 +87,11 @@ Da der Prozess automatisch verarbeitet wird, ist keine Programmierung durch den 
 
 Ziele, die erkannt werden, aber nicht mehr in der Ansicht angezeigt werden, werden als EXTENDED_TRACKED gemeldet. In diesen Fällen rendern das defaulttrackableeventhandler-Skript, das für alle Ziele verwendet wird, den Erweiterungs Inhalt weiter. Der Entwickler kann dieses Verhalten steuern, indem er ein benutzerdefiniertes Skript für einen ausführbaren Ereignishandler implementiert.
 
-
 ## <a name="performance-mode-with-vuforia-engine"></a>Leistungsmodus mit der vuforia-Engine 
 
-Es ist möglich, dass die vuforia-Engine die Leistung auf den hololens verwaltet, um die Benutzerfreundlichkeit zu verringern und die Arbeitsauslastung auf der CPU zu verringern. Die vuforia-Engine bietet drei Modi, die ausgewählt werden können: Standard, zur Optimierung der Geschwindigkeit und zur Optimierung der Qualität. 
+Es ist möglich, dass die vuforia-Engine die Leistung auf den hololens verwaltet, um die Benutzerfreundlichkeit zu beeinträchtigen und die Arbeitsauslastung auf der CPU zu verringern. Die vuforia-Engine bietet drei Modi, die ausgewählt werden können: Standard, zur Optimierung der Geschwindigkeit und zur Optimierung der Qualität. 
 
-*   Mit MODE_OPTIMIZE_SPEED können Sie die Arbeitsauslastung auf dem hololens-Gerät minimieren und eignen sich hervorragend für die Erweiterung von aren Erfahrungen. Dies empfiehlt sich für Situationen, in denen die APP statische Objekte/Ziele nachverfolgt.
+*   Mit MODE_OPTIMIZE_SPEED können Sie die Arbeitsauslastung auf dem hololens-Gerät minimieren und eignen sich hervorragend für die Erweiterung von aren Erfahrungen. Wir empfehlen für Situationen, in denen die APP statische Objekte/Ziele nachverfolgt.
 *   MODE_DEFAULT ist der normale Modus, der in den meisten Szenarien verwendet werden kann.
 *   MODE_OPTIMIZE_QUALITY eignet sich besser für die Nachverfolgung von verschiebbaren Zielen oder Modell Zielen, die Sie erwarten.
 
@@ -112,4 +111,4 @@ Wenn Sie den Leistungsmodus in Unity ändern möchten, navigieren Sie zu "vufori
 * [Vuforia-Dokumentation: Installieren der vuforia Unity-Erweiterung](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Vuforia-Dokumentation: Arbeiten mit dem hololens-Beispiel in Unity](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
 * [Vuforia-Dokumentation: Geräte Nachverfolgung in vuforia](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Vuforia-Dokumentation: "Framerate" und "Performance Optomization"](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Vuforia-Dokumentation: Framerate und Leistungsoptimierung](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
