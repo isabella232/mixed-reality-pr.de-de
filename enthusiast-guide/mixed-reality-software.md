@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Software Components, releaseverlauf, Versions Hinweise, Versionsverlauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: 76a913ae5890c908dda4e25d5b5c21554fdae7f0
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 0dd2ef30252189d006bfaf5702c47dce72f2798d
+ms.sourcegitcommit: d8db38647cf45f05b9445ceaf057d4cd01721ee6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011420"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091304"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Mixed Reality: Übersicht zur Software und Versionsverlauf
 
@@ -100,6 +100,7 @@ Dieser Treiber wird automatisch über Windows Update heruntergeladen und install
 
    | Version          | Veröffentlichungsdatum          | Wichtige Änderungen                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10. Dezember 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Neue Controller Firmware für den HP-Controller, um ein Problem zu beheben, bei dem einige Controller nicht funktionsfähige Trigger aufweisen.</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8. Oktober, 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Offizielle Unterstützung für den HP-Reverb G2, HP omnicept und den neuen HP-Controller.</li><li>Kleinere Anzeige Korrekturen für HP Reverb und Samsung Odyssee + Headsets. (Erfordert den [OS-Build 19041,546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) oder höher oder [Betriebssystem-Builds 18362,1110 und 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) oder höher).</li><li>Verbesserungen am Energiezustand des Computers werden aus dem Standbymodus gewechselt, um die Fehler bei der 1-4 WS</li><li>Windows Mixed Reality-Headset-Plattform kleinere Korrekturen und Zuverlässigkeitsverbesserungen.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7. Mai 2020      | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Windows Mixed Reality-Headset-Plattform kleinere Korrekturen und Zuverlässigkeitsverbesserungen.</li></ul>  |
 
@@ -163,7 +164,7 @@ In Windows 10, Version 1809 und höher, wird das [Mixed Reality-Portal](https://
    |--------------------|-----------------------|---------------------------------------------------------------|
    | 2000.20071.1133.0  | 5\. August 2020        | <ul><li>Unterstützung für [openxr](https://docs.microsoft.com/windows/mixed-reality/openxr) zum Anhalten des Vorschaufensters.</li></ul>  | 
    | 2000.20041.1212.0  | 11. Mai 2020          | <ul><li>Behandelt ein Zeit Steuerungs Problem, das zu einem inkonsistenten 15-5-Fehler geführt hat.</li><li>Verbesserte Unterstützung für die Ausführung von Windows Mixed Reality ohne Internetverbindung.</li><li>Verbesserte Unterstützung für die Kopplung von Bewegungs Controllern über **Einrichten von Controllern**.</li></ul>  | 
-   | 2000.20031.1202.0  | 14. April 2020        | <ul><li>Unterstützung für die Registrierung von Informationen, Tipps und Angebote zu Windows Mixed Reality.</li></ul>  | 
+   | 2000.20031.1202.0  | 14. April 2020        | <ul><li>Unterstützung für die Registrierung von Informationen, Tipps und Angebote zu Windows Mixed Reality.</li></ul>  | 
    | 2000.20011.1312.0  | 11. Februar 2020     | <ul><li>Verbesserte Unterstützung für Anwendungen mit [openxr](https://docs.microsoft.com/windows/mixed-reality/openxr) auf Geräten mit dem Update von Mai 2019.</li><li>Adressiert Probleme mit Barrierefreiheit und Tastaturfokus</li></ul>  | 
    | 2000.19101.1211.0  | 11. November 2019     | <ul><li>Behandelt ein Problem, das das Umschalten von visuellen Raum Begrenzungs Elementen verhindert.</li><li>Behandelt ein Problem, das verhindert, dass Sie ein Headset beim Einrichten der Raum Begrenzung überschreiben.</li></ul>  | 
    | 2000.19081.1301.0  | 23. September 2019    | <ul><li>Es wird ein Problem behoben, bei dem bei den Hardwareproblemen mit den Hardwarefehlern eine falsche Fehlermeldung angezeigt wurde Benutzer, die in früheren Versionen einen 1-4-Fehlercode erhalten haben, erhalten nun möglicherweise einen spezifischeren Fehlercode für den Gerätezustand.</li></ul>  |

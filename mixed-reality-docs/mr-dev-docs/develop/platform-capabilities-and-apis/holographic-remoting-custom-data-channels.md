@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Datenkanäle
-ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 6fd2bbd8ce2dedc3b13674576a23a0484ebe1419
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443451"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102905"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>Benutzerdefinierte Holographic Remoting-Datenkanäle
 
@@ -38,15 +38,15 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-Nachdem eine Verbindung hergestellt wurde, kann die Erstellung neuer Datenkanäle entweder von der Remote Seite und/oder von der Player Seite initiiert werden. Sowohl remotecontext als auch playercontext stellen hierfür eine- ```CreateDataChannel()``` Methode bereit. Der erste Parameter ist die Kanal-ID, die verwendet wird, um den Datenkanal in nachfolgenden Vorgängen zu identifizieren. Der zweite Parameter ist die Priorität, die die Priorität angibt, mit der Daten dieses Kanals auf die andere Seite übertragen werden. Der gültige Bereich für Channel-IDs ist 0 bis einschließlich 63 für die Remote Seite und 64 bis einschließlich 127 für die Player Seite. Gültige Prioritäten sind ```Low``` ```Medium``` oder ```High``` (auf beiden Seiten).
+Nachdem eine Verbindung hergestellt wurde, können Sie neue Datenkanäle entweder über die Remote Seite, die Player Seite oder beides erstellen. Sowohl der remotecontext als auch der playercontext stellen eine ```CreateDataChannel()``` Methode zum Erstellen von Datenkanälen bereit. Der erste Parameter ist die Kanal-ID, die verwendet wird, um den Datenkanal in nachfolgenden Vorgängen zu identifizieren. Der zweite Parameter ist die Priorität, die die Priorität angibt, mit der Daten dieses Kanals auf die andere Seite übertragen werden. Gültige Channel-IDs auf der Remote Seite liegen zwischen 0 (null) bis einschließlich 63 und 64 bis einschließlich 127 für die Player Seite. Gültige Prioritäten sind ```Low``` , ```Medium``` oder ```High``` (auf beiden Seiten).
 
-So initiieren Sie die Erstellung eines Daten Kanals auf der **Remote** Seite:
+So beginnen Sie mit der Erstellung eines Daten Kanals auf der **Remote** Seite:
 ```cpp
 // Valid channel ids for channels created on the remote side are 0 up to and including 63
 m_remoteContext.CreateDataChannel(0, DataChannelPriority::Low);
 ```
 
-So initiieren Sie die Erstellung eines Daten Kanals auf der **Player** Seite:
+So beginnen Sie mit der Erstellung eines Daten Kanals auf der **Player** Seite:
 ```cpp
 // Valid channel ids for channels created on the player side are 64 up to and including 127
 m_playerContext.CreateDataChannel(64, DataChannelPriority::Low);
@@ -114,7 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Schreiben einer Holographic Remoting-Remote-App mithilfe gemischter Windows-APIs](holographic-remoting-create-remote-wmr.md)
+* [Schreiben einer Holographic Remoting-Remote-app mit Windows Mixed Reality-APIs](holographic-remoting-create-remote-wmr.md)
 * [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
