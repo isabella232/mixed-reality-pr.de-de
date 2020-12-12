@@ -452,11 +452,13 @@
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
         - name: Perception Simulation (Wahrnehmungssimulation)
           href: platform-capabilities-and-apis/perception-simulation.md
-    - name: Forschungstools
+    - name: Geräteportal
       items:
         - name: Verwenden des Windows-Geräteportals
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
         - name: Referenz der Geräteportal-API
           href: platform-capabilities-and-apis/device-portal-api-reference.md
+    - name: Forschungstools
+      items:
         - name: HoloLens-Forschungsmodus
           href: platform-capabilities-and-apis/research-mode.md
