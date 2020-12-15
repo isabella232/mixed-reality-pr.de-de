@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Problembehandlung, Hilfe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443601"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530186"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Problembehandlung bei Holographic Remoting
 
@@ -22,7 +22,7 @@ ms.locfileid: "96443601"
 
 Für Holographic Remoting-Beispiel-Apps ist Spectre Entschärfung (/Qspectre) in der Releasekonfiguration aktiviert.
 
-Wenn Sie einen schwerwiegenden Linker-Fehler erhalten, der besagt, dass "vccorlib. lib" nicht geöffnet werden kann, müssen Sie sicherstellen, dass die Visual Studio-Arbeitsauslastung die von Spectre abgeminderten Bibliotheken enthält Weitere Informationen finden Sie unter https://aka.ms/Ofhn4c.
+Wenn die Datei " *vccorlib. lib" nicht geöffnet werden kann* , sollten Sie sicherstellen, dass die Visual Studio-Arbeitsauslastung die von [Spectre abgeminderten Bibliotheken](https://aka.ms/Ofhn4c) enthält.
 
 ## <a name="speech"></a>Spracheingabe/-ausgabe
 
@@ -30,32 +30,32 @@ Der Holographic Remoting Player unterstützt ein diagnoseoverlay, das durch das 
 
 ## <a name="h265-video-codec-not-available"></a>H265-Videocodec nicht verfügbar
 
-Sie müssen die [hevc-Video Erweiterungen](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) installieren, wenn Sie den H265-Videocodec in Ihrer Remote-app verwenden. Wenn Sie Probleme haben, bei denen der Codec installiert ist, aber nicht verwendet werden kann, finden Sie im Handbuch zur [Problem](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) Behandlung Weitere Informationen.
+Installieren Sie die [hevc-Video Erweiterungen](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) , wenn Sie den H265-Videocodec in Ihrer Remote-app verwenden. Wenn Sie Probleme haben, bei denen der Codec installiert ist, aber nicht verwendet werden kann, finden Sie im Handbuch zur [Problem](https://docs.microsoft.com/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) Behandlung Weitere Informationen.
 
 ## <a name="limitations"></a>Einschränkungen
 
-Die folgenden APIs werden zurzeit **nicht** unterstützt, wenn Holographic Remoting für hololens 2 verwendet wird, und es wird ein Fehler ausgelöst, ```ERROR_NOT_SUPPORTED``` sofern nicht anders angegeben:
+Die folgenden APIs werden zurzeit **nicht** unterstützt, wenn Holographic Remoting für hololens 2 verwendet wird, und es wird ein Fehler ausgegeben, ```ERROR_NOT_SUPPORTED``` sofern nicht anders angegeben:
 
 [Windows.Graphics.Holographic](https://docs.microsoft.com/uwp/api/windows.graphics.holographic)
 
 * [HolographicCamera.ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration)
   - Unterstützt ab Version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
-  - In früheren Versionen löst immer einen Fehler aus.
+  - Bei früheren Versionen wird immer ein Fehler ausgegeben.
 * [HolographicCamera.IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled#Windows_Graphics_Holographic_HolographicCamera_IsHardwareContentProtectionEnabled)
 * [HolographicViewConfiguration.RequestRenderTargetSize](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration.requestrendertargetsize#Windows_Graphics_Holographic_HolographicViewConfiguration_RequestRenderTargetSize_Windows_Foundation_Size_)
   - Unterstützt ab Version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
-  - In früheren Versionen schlägt nicht fehl, aber die Größe des Renderziels wird nicht geändert.
+  - Bei früheren Versionen schlägt nicht fehl, aber die renderzielgröße wird nicht geändert.
 * [Holographiccamerapose. override projectiontransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideprojectiontransform)
 * [Holographiccamerapose. overrideviewport](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewport)
 * [Holographiccamerapose. override viewtransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.overrideviewtransform)
   - Unterstützt ab Version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [Holographiccamer-deringparameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
-  - Schlägt nicht fehl, aber der tiefen Puffer wird nicht remotetet.
+  - Episoden.
   - Unterstützt ab Version [2.1.0](holographic-remoting-version-history.md#v2.1.0)
 * [HolographicDisplay.TryGetViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.trygetviewconfiguration)
   - Beim Abfragen von holographicviewconfigurationkind. photovideocamera wird immer ein zurückgegeben ```nullptr``` .
   - Unterstützt ab Version [2.0.18](holographic-remoting-version-history.md#v2.0.18)
-  - In früheren Versionen löst immer einen Fehler aus.
+  - Bei früheren Versionen wird immer ein Fehler ausgegeben.
 * [Holographicspace. kreateframepresentationmonitor](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createframepresentationmonitor)
 * [Holographicdisplay. GetDefault](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.getdefault#Windows_Graphics_Holographic_HolographicDisplay_GetDefault)
   - Meldet einen Fehler, wenn aufgerufen wird, bevor eine Verbindung hergestellt wurde.
@@ -71,14 +71,14 @@ Die folgenden APIs werden zurzeit **nicht** unterstützt, wenn Holographic Remot
 * [SpatialLocation. absolutelinearvelocity](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocation.absolutelinearvelocity)
 * [Spatialstageframeofreferenzierungs. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)
   - Unterstützt ab Version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
-  - In früheren Versionen gibt immer zurück ```nullptr``` .
+  - Bei früheren Versionen wird immer zurückgegeben ```nullptr``` .
 * [Spatialstageframeofreferenzierung. requestnewstageasync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)
   - Unterstützt ab Version [2.2.0](holographic-remoting-version-history.md#v2.2.0)
 * [Spatialanchor. removedbyuser](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor.removedbyuser)
 * [SpatialAnchorExporter.GetDefault](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.getdefault
 )
   - Unterstützt ab Version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
-  - In früheren Versionen gibt immer zurück ```nullptr``` . 
+  - Bei früheren Versionen wird immer zurückgegeben ```nullptr``` . 
 * [SpatialAnchorExporter.RequestAccessAsync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter.requestaccessasync
 )
   - Unterstützt ab Version [2.0.9](holographic-remoting-version-history.md#v2.0.9). 
@@ -105,7 +105,7 @@ Die folgenden APIs werden zurzeit **nicht** unterstützt, wenn Holographic Remot
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Holographic Remoting-Versionsverlauf](holographic-remoting-version-history.md)
-* [Schreiben einer Holographic Remoting-Remote-App mithilfe gemischter Windows-APIs](holographic-remoting-create-remote-wmr.md)
+* [Schreiben einer Holographic Remoting-Remote-app mit Windows Mixed Reality-APIs](holographic-remoting-create-remote-wmr.md)
 * [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Holographic Remoting-Software – Lizenzbedingungen](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
