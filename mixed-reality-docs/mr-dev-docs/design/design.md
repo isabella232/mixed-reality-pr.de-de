@@ -3,16 +3,16 @@ title: Mit Entwerfen und Prototyping beginnen
 description: Wenn Sie bereit sind, etwas zu erstellen, lernen Sie die grundlegenden Konzepte kennen, die Sie für den Einstieg in Entwerfen und Prototyping benötigen.
 author: grbury
 ms.author: grbury
-ms.date: 08/24/2019
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Kernkonzepte, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 3c28991fa35052a8b5cf5a071899ec14f2fec226
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702716"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926007"
 ---
 # <a name="start-designing-and-prototyping"></a>Mit Entwerfen und Prototyping beginnen
 

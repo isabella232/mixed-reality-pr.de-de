@@ -3,16 +3,16 @@ title: Porting von HoloLens-Apps (1. Generation) zu HoloLens 2
 description: Dieses Dokument richtet sich an Entwickler, die eine vorhandene App für HoloLens (1. Generation) und/oder ein älteres MRTK haben und diese nach MRTK Version 2 und HoloLens 2 portieren möchten.
 author: hferrone
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, Test, MRTK, MRTK-Version 2, HoloLens 2, Unity, Portieren, HoloLens (1. Generation), Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Migration, Bewährte Methoden, ARM
-ms.openlocfilehash: 9d76dcdb6fedb3297a781b9bf905b9d74521ad58
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 7a4c05ce4918ff3868265c40096bd37016d4546a
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469723"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925957"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Porting von HoloLens-Apps (1. Generation) zu HoloLens 2
 
