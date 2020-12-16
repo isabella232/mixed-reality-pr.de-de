@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
-ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
+ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
+ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97111882"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97564255"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -31,9 +31,9 @@ Wir freuen uns darauf, dass Sie uns bei Mixed Reality dev Day beitreten! Machen 
 
 ## <a name="registration"></a>Registrierung
 
-[Registrierung-jetzt geöffnet](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[Jetzt ansehen: Live Veranstaltungen von Microsoft Teams](https://aka.ms/MRDDJPLive)
 
-Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu eröffnen.  Das Ereignis ist kostenlos und wird online in Live Veranstaltungen von Microsoft Teams aufbewahrt.  Wir fordern an, dass sich die Teilnehmer registrieren, damit wir e-Mail-Updates senden können, wenn das Ereignis näher rückt und Sie an den interaktiven Elementen des Ereignisses teilnehmen können.
+Wir empfehlen, die APP-PC-APP zu überwachen, und Sie können auch an den Teams Mobile App oder in Ihrem Desktop Browser teilnehmen. Wenn Sie sich aus irgendeinem Grund nicht bei Teams anmelden können, überprüfen Sie die [YouTube Live](https://youtu.be/zxZu1uHjyo4). Allerdings können Sie mit den Referenten nicht an QA teilnehmen.
 
 ## <a name="schedule---subject-to-change"></a>Zeitplan-Änderungen vorbehalten
 
@@ -66,7 +66,7 @@ Wir freuen uns, die Registrierung für die gemischte Realität dev Days Japan zu
 
 Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
 
-## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen (FAQs)
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 Dieser Abschnitt wird häufig aktualisiert, da wir weitere Fragen von Ihnen erhalten!
 
 **F** : Wer sollte an Mixed Reality dev Day teilnehmen?
