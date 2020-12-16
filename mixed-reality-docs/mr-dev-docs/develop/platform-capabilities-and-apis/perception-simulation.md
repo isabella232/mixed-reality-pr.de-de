@@ -6,53 +6,53 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: Hololens, Simulation, Tests
-ms.openlocfilehash: d4cd9497f9adcea03ece222f09124ce593ea73cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685014"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530398"
 ---
-# <a name="perception-simulation"></a><span data-ttu-id="dded5-104">Perception Simulation (Wahrnehmungssimulation)</span><span class="sxs-lookup"><span data-stu-id="dded5-104">Perception simulation</span></span>
+# <a name="perception-simulation"></a><span data-ttu-id="9d20d-104">Perception Simulation (Wahrnehmungssimulation)</span><span class="sxs-lookup"><span data-stu-id="9d20d-104">Perception simulation</span></span>
 
-<span data-ttu-id="dded5-105">Möchten Sie einen automatisierten Test für Ihre APP erstellen?</span><span class="sxs-lookup"><span data-stu-id="dded5-105">Do you want to build an automated test for your app?</span></span> <span data-ttu-id="dded5-106">Möchten Sie, dass Ihre Tests über Komponententests auf Komponentenebene hinausgehen und Ihre APP End-to-End wirklich ausführen?</span><span class="sxs-lookup"><span data-stu-id="dded5-106">Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end?</span></span> <span data-ttu-id="dded5-107">Die Wahrnehmungs Simulation ist das, was Sie suchen.</span><span class="sxs-lookup"><span data-stu-id="dded5-107">Perception Simulation is what you're looking for.</span></span> <span data-ttu-id="dded5-108">Die Bibliothek für Wahrnehmungs Simulationen sendet Benutzer-und Welt Eingabedaten an Ihre APP, damit Sie Ihre Tests automatisieren können.</span><span class="sxs-lookup"><span data-stu-id="dded5-108">The Perception Simulation library sends human and world input data to your app so you can automate your tests.</span></span> <span data-ttu-id="dded5-109">Beispielsweise können Sie die Eingabe eines Menschen simulieren, das eine bestimmte, wiederholbare Position und dann eine Geste oder einen Bewegungs Controller verwendet.</span><span class="sxs-lookup"><span data-stu-id="dded5-109">For example, you can simulate the input of a human looking to a specific, repeatable position and then performing a gesture or using a motion controller.</span></span>
+<span data-ttu-id="9d20d-105">Möchten Sie einen automatisierten Test für Ihre APP erstellen?</span><span class="sxs-lookup"><span data-stu-id="9d20d-105">Do you want to build an automated test for your app?</span></span> <span data-ttu-id="9d20d-106">Möchten Sie, dass Ihre Tests über Komponententests auf Komponentenebene hinausgehen und Ihre APP End-to-End wirklich ausführen?</span><span class="sxs-lookup"><span data-stu-id="9d20d-106">Do you want your tests to go beyond component-level unit testing and really exercise your app end-to-end?</span></span> <span data-ttu-id="9d20d-107">Die Wahrnehmungs Simulation ist das, was Sie suchen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-107">Perception Simulation is what you're looking for.</span></span> <span data-ttu-id="9d20d-108">Die Bibliothek für Wahrnehmungs Simulationen sendet Benutzer-und Welt Eingabedaten an Ihre APP, damit Sie Ihre Tests automatisieren können.</span><span class="sxs-lookup"><span data-stu-id="9d20d-108">The Perception Simulation library sends human and world input data to your app so you can automate your tests.</span></span> <span data-ttu-id="9d20d-109">Beispielsweise können Sie die Eingabe eines Menschen simulieren, das eine bestimmte, wiederholbare Position sucht, und dann einen Gesten-oder Bewegungs Controller verwenden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-109">For example, you can simulate the input of a human looking to a specific, repeatable position and then use a gesture or motion controller.</span></span>
 
-<span data-ttu-id="dded5-110">Die perception Simulation kann simulierte Eingaben wie diese an physische hololens, den hololens-Emulator (1. Generation), den hololens 2-Emulator oder einen PC mit installierter gemischtes Reality-Portal senden.</span><span class="sxs-lookup"><span data-stu-id="dded5-110">Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (1st gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed.</span></span> <span data-ttu-id="dded5-111">Die Wahrnehmungs Simulation umgeht die Live Sensoren auf einem Mixed Reality-Gerät und sendet simulierte Eingaben an Anwendungen, die auf dem Gerät ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-111">Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device.</span></span> <span data-ttu-id="dded5-112">Anwendungen empfangen diese Eingabeereignisse über dieselben APIs, die Sie immer verwenden, und können den Unterschied zwischen der Ausführung mit echten Sensoren und der Ausführung mit der Wahrnehmungs Simulation nicht erkennen.</span><span class="sxs-lookup"><span data-stu-id="dded5-112">Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus running with Perception Simulation.</span></span> <span data-ttu-id="dded5-113">Die perception Simulation ist dieselbe Technologie, die von den hololens-Emulatoren verwendet wird, um simulierte Eingaben an den virtuellen Computer hololens zu senden.</span><span class="sxs-lookup"><span data-stu-id="dded5-113">Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.</span></span>
+<span data-ttu-id="9d20d-110">Die Wahrnehmungs Simulation kann simulierte Eingaben wie diese an physische hololens, den hololens-Emulator (erste Generation), den hololens 2-Emulator oder einen PC mit installierter gemischter Reality-Portal senden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-110">Perception Simulation can send simulated input like this to a physical HoloLens, the HoloLens emulator (first gen), the HoloLens 2 Emulator, or a PC with Mixed Reality Portal installed.</span></span> <span data-ttu-id="9d20d-111">Die Wahrnehmungs Simulation umgeht die Live Sensoren auf einem Mixed Reality-Gerät und sendet simulierte Eingaben an Anwendungen, die auf dem Gerät ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-111">Perception Simulation bypasses the live sensors on a Mixed Reality device and sends simulated input to applications running on the device.</span></span> <span data-ttu-id="9d20d-112">Anwendungen empfangen diese Eingabeereignisse über dieselben APIs, die Sie immer verwenden, und können den Unterschied zwischen der Ausführung mit echten Sensoren und der Wahrnehmungs Simulation nicht erkennen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-112">Applications receive these input events through the same APIs they always use and can't tell the difference between running with real sensors versus Perception Simulation.</span></span> <span data-ttu-id="9d20d-113">Die perception Simulation ist dieselbe Technologie, die von den hololens-Emulatoren verwendet wird, um simulierte Eingaben an den virtuellen Computer hololens zu senden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-113">Perception Simulation is the same technology used by the HoloLens emulators to send simulated input to the HoloLens Virtual Machine.</span></span>
 
-<span data-ttu-id="dded5-114">Beginnen Sie zunächst mit der Verwendung von Simulation in Ihrem Code, indem Sie ein ipertionsimulationmanager-Objekt erstellen.</span><span class="sxs-lookup"><span data-stu-id="dded5-114">To begin using simulation in your code, start by creating an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="dded5-115">Aus diesem Objekt können Sie Befehle ausgeben, um die Eigenschaften eines simulierten "Menschen" zu steuern, einschließlich der Kopfposition, der Handposition und Gesten, und Sie können Bewegungs Controller aktivieren und bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="dded5-115">From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures, and you can enable and manipulate motion controllers.</span></span>
+<span data-ttu-id="9d20d-114">Beginnen Sie zunächst mit der Verwendung von Simulation in Ihrem Code, indem Sie ein ipertionsimulationmanager-Objekt erstellen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-114">To begin using simulation in your code, start by creating an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="9d20d-115">Aus diesem Objekt können Sie Befehle ausgeben, um die Eigenschaften eines simulierten "Menschen" zu steuern, einschließlich der Kopfposition, der Handposition und Gesten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-115">From that object, you can issue commands to control properties of a simulated "human", including head position, hand position, and gestures.</span></span> <span data-ttu-id="9d20d-116">Sie können auch Bewegungs Controller aktivieren und bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-116">You can also enable and manipulate motion controllers.</span></span>
 
-## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a><span data-ttu-id="dded5-116">Einrichten eines Visual Studio-Projekts für die Wahrnehmungs Simulation</span><span class="sxs-lookup"><span data-stu-id="dded5-116">Setting Up a Visual Studio Project for Perception Simulation</span></span>
-1. <span data-ttu-id="dded5-117">[Installieren Sie den hololens-Emulator](../install-the-tools.md) auf dem Entwicklungs-PC.</span><span class="sxs-lookup"><span data-stu-id="dded5-117">[Install the HoloLens emulator](../install-the-tools.md) on your development PC.</span></span> <span data-ttu-id="dded5-118">Der Emulator enthält die Bibliotheken, die Sie für die Wahrnehmungs Simulation verwenden werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-118">The emulator includes the libraries you will use for Perception Simulation.</span></span>
-2. <span data-ttu-id="dded5-119">Erstellen Sie ein neues Visual Studio c#-Desktop Projekt (ein Konsolen Projekt funktioniert hervorragend für den Einstieg).</span><span class="sxs-lookup"><span data-stu-id="dded5-119">Create a new Visual Studio C# desktop project (a Console Project works great to get started).</span></span>
-3. <span data-ttu-id="dded5-120">Fügen Sie dem Projekt die folgenden Binärdateien als Verweise hinzu (Project->Add->Reference...). Sie finden Sie unter% Program Files (x86)% \ Microsoft XDE \\ (Version), z. b. **% Program Files (x86)% \ Microsoft XDE \\ 10.0.18362.0** für den hololens 2-Emulator.</span><span class="sxs-lookup"><span data-stu-id="dded5-120">Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.</span></span>  <span data-ttu-id="dded5-121">(Hinweis: Obwohl die Binärdateien Teil des hololens 2-Emulators sind, funktionieren Sie auch für Windows Mixed Reality auf dem Desktop.) ein.</span><span class="sxs-lookup"><span data-stu-id="dded5-121">(Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.) a.</span></span> <span data-ttu-id="dded5-122">PerceptionSimulationManager.Interop.dll verwalteter c#-Wrapper für die Wahrnehmungs Simulation.</span><span class="sxs-lookup"><span data-stu-id="dded5-122">PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.</span></span>
-    <span data-ttu-id="dded5-123">b.</span><span class="sxs-lookup"><span data-stu-id="dded5-123">b.</span></span> <span data-ttu-id="dded5-124">PerceptionSimulationRest.dll-Bibliothek zum Einrichten eines websocketkommunikationskanals für die hololens oder den Emulator.</span><span class="sxs-lookup"><span data-stu-id="dded5-124">PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.</span></span>
-    <span data-ttu-id="dded5-125">c.</span><span class="sxs-lookup"><span data-stu-id="dded5-125">c.</span></span> <span data-ttu-id="dded5-126">SimulationStream.Interop.dll freigegebene Typen für die Simulation.</span><span class="sxs-lookup"><span data-stu-id="dded5-126">SimulationStream.Interop.dll - Shared types for simulation.</span></span>
-4. <span data-ttu-id="dded5-127">Fügen Sie dem Projekt a die PerceptionSimulationManager.dll der Implementierungs Binärdatei hinzu.</span><span class="sxs-lookup"><span data-stu-id="dded5-127">Add the implementation binary PerceptionSimulationManager.dll to your project a.</span></span> <span data-ttu-id="dded5-128">Fügen Sie Sie zunächst als Binärdatei zum Projekt hinzu (Projekt >Add->vorhandenes Element...). Speichern Sie Sie als Link, damit Sie nicht in Ihren Projekt Quellordner kopiert wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-128">First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder.</span></span> <span data-ttu-id="dded5-129">![Fügen Sie dem Projekt PerceptionSimulationManager.dll als Link ](images/saveaslink.png) b hinzu.</span><span class="sxs-lookup"><span data-stu-id="dded5-129">![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png) b.</span></span> <span data-ttu-id="dded5-130">Stellen Sie dann sicher, dass Sie beim Build in den Ausgabeordner kopiert werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-130">Then make sure that it get's copied to your output folder on build.</span></span> <span data-ttu-id="dded5-131">Dies befindet sich auf dem Eigenschaften Blatt für die Binärdatei.</span><span class="sxs-lookup"><span data-stu-id="dded5-131">This is in the property sheet for the binary .</span></span> <span data-ttu-id="dded5-132">![Markieren PerceptionSimulationManager.dll, die in das Ausgabeverzeichnis kopiert werden sollen](images/copyalways.png)</span><span class="sxs-lookup"><span data-stu-id="dded5-132">![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)</span></span>
-5. <span data-ttu-id="dded5-133">Legen Sie die Aktive Projektmappenplattform auf x64 fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-133">Set your active solution platform to x64.</span></span>  <span data-ttu-id="dded5-134">(Verwenden Sie die Configuration Manager, um einen Platt Form Eintrag für x64 zu erstellen, wenn noch keiner vorhanden ist.)</span><span class="sxs-lookup"><span data-stu-id="dded5-134">(Use the Configuration Manager to create a Platform entry for x64 if one does not already exist.)</span></span>
+## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a><span data-ttu-id="9d20d-117">Einrichten eines Visual Studio-Projekts für die Wahrnehmungs Simulation</span><span class="sxs-lookup"><span data-stu-id="9d20d-117">Setting Up a Visual Studio Project for Perception Simulation</span></span>
+1. <span data-ttu-id="9d20d-118">[Installieren Sie den hololens-Emulator](../install-the-tools.md) auf dem Entwicklungs-PC.</span><span class="sxs-lookup"><span data-stu-id="9d20d-118">[Install the HoloLens emulator](../install-the-tools.md) on your development PC.</span></span> <span data-ttu-id="9d20d-119">Der Emulator enthält die Bibliotheken, die Sie für die Wahrnehmungs Simulation verwenden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-119">The emulator includes the libraries you' use for Perception Simulation.</span></span>
+2. <span data-ttu-id="9d20d-120">Erstellen Sie ein neues Visual Studio c#-Desktop Projekt (ein Konsolen Projekt funktioniert hervorragend für den Einstieg).</span><span class="sxs-lookup"><span data-stu-id="9d20d-120">Create a new Visual Studio C# desktop project (a Console Project works great to get started).</span></span>
+3. <span data-ttu-id="9d20d-121">Fügen Sie dem Projekt die folgenden Binärdateien als Verweise hinzu (Project->Add->Reference...). Sie finden Sie unter% Program Files (x86)% \ Microsoft XDE \\ (Version), z. b. **% Program Files (x86)% \ Microsoft XDE \\ 10.0.18362.0** für den hololens 2-Emulator.</span><span class="sxs-lookup"><span data-stu-id="9d20d-121">Add the following binaries to your project as references (Project->Add->Reference...). You can find them in %ProgramFiles(x86)%\Microsoft XDE\\(version), such as **%ProgramFiles(x86)%\Microsoft XDE\\10.0.18362.0** for the HoloLens 2 Emulator.</span></span>  <span data-ttu-id="9d20d-122">(Hinweis: Obwohl die Binärdateien Teil des hololens 2-Emulators sind, funktionieren Sie auch für Windows Mixed Reality auf dem Desktop.) ein.</span><span class="sxs-lookup"><span data-stu-id="9d20d-122">(Note: although the binaries are part of the HoloLens 2 Emulator, they also work for Windows Mixed Reality on the desktop.) a.</span></span> <span data-ttu-id="9d20d-123">PerceptionSimulationManager.Interop.dll verwalteter c#-Wrapper für die Wahrnehmungs Simulation.</span><span class="sxs-lookup"><span data-stu-id="9d20d-123">PerceptionSimulationManager.Interop.dll - Managed C# wrapper for Perception Simulation.</span></span>
+    <span data-ttu-id="9d20d-124">b.</span><span class="sxs-lookup"><span data-stu-id="9d20d-124">b.</span></span> <span data-ttu-id="9d20d-125">PerceptionSimulationRest.dll-Bibliothek zum Einrichten eines websocketkommunikationskanals für die hololens oder den Emulator.</span><span class="sxs-lookup"><span data-stu-id="9d20d-125">PerceptionSimulationRest.dll - Library for setting up a web-socket communication channel to the HoloLens or emulator.</span></span>
+    <span data-ttu-id="9d20d-126">c.</span><span class="sxs-lookup"><span data-stu-id="9d20d-126">c.</span></span> <span data-ttu-id="9d20d-127">SimulationStream.Interop.dll freigegebene Typen für die Simulation.</span><span class="sxs-lookup"><span data-stu-id="9d20d-127">SimulationStream.Interop.dll - Shared types for simulation.</span></span>
+4. <span data-ttu-id="9d20d-128">Fügen Sie dem Projekt a die PerceptionSimulationManager.dll der Implementierungs Binärdatei hinzu.</span><span class="sxs-lookup"><span data-stu-id="9d20d-128">Add the implementation binary PerceptionSimulationManager.dll to your project a.</span></span> <span data-ttu-id="9d20d-129">Fügen Sie Sie zunächst als Binärdatei zum Projekt hinzu (Projekt >Add->vorhandenes Element...). Speichern Sie Sie als Link, damit Sie nicht in Ihren Projekt Quellordner kopiert wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-129">First add it as a binary to the project (Project->Add->Existing Item...). Save it as a link so that it doesn't copy it to your project source folder.</span></span> <span data-ttu-id="9d20d-130">![Fügen Sie dem Projekt PerceptionSimulationManager.dll als Link ](images/saveaslink.png) b hinzu.</span><span class="sxs-lookup"><span data-stu-id="9d20d-130">![Add PerceptionSimulationManager.dll to the project as a link](images/saveaslink.png) b.</span></span> <span data-ttu-id="9d20d-131">Stellen Sie dann sicher, dass Sie beim Build in den Ausgabeordner kopiert wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-131">Then make sure that it gets copied to your output folder on build.</span></span> <span data-ttu-id="9d20d-132">Dies befindet sich auf dem Eigenschaften Blatt für die Binärdatei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-132">This is in the property sheet for the binary.</span></span> <span data-ttu-id="9d20d-133">![Markieren PerceptionSimulationManager.dll, die in das Ausgabeverzeichnis kopiert werden sollen](images/copyalways.png)</span><span class="sxs-lookup"><span data-stu-id="9d20d-133">![Mark PerceptionSimulationManager.dll to copy to the output directory](images/copyalways.png)</span></span>
+5. <span data-ttu-id="9d20d-134">Legen Sie die Aktive Projektmappenplattform auf x64 fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-134">Set your active solution platform to x64.</span></span>  <span data-ttu-id="9d20d-135">(Verwenden Sie die Configuration Manager, um einen Platt Form Eintrag für x64 zu erstellen, falls noch keiner vorhanden ist.)</span><span class="sxs-lookup"><span data-stu-id="9d20d-135">(Use the Configuration Manager to create a Platform entry for x64 if one doesn't already exist.)</span></span>
 
-## <a name="creating-an-iperceptionsimulation-manager-object"></a><span data-ttu-id="dded5-135">Erstellen eines ipertionsimulation-Manager-Objekts</span><span class="sxs-lookup"><span data-stu-id="dded5-135">Creating an IPerceptionSimulation Manager Object</span></span>
+## <a name="creating-an-iperceptionsimulation-manager-object"></a><span data-ttu-id="9d20d-136">Erstellen eines ipertionsimulation-Manager-Objekts</span><span class="sxs-lookup"><span data-stu-id="9d20d-136">Creating an IPerceptionSimulation Manager Object</span></span>
 
-<span data-ttu-id="dded5-136">Um die Simulation zu steuern, geben Sie Aktualisierungen an Objekten aus, die von einem ipertionsimulationmanager-Objekt abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-136">To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="dded5-137">Der erste Schritt besteht darin, dieses Objekt zu erhalten und es mit Ihrem Zielgerät oder Emulator zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="dded5-137">The first step is to get that object and connect it to your target device or emulator.</span></span> <span data-ttu-id="dded5-138">Klicken Sie in der [Symbolleiste](using-the-hololens-emulator.md) auf die Schaltfläche Geräte Portal, um die IP-Adresse des Emulators zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="dded5-138">You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md)</span></span>
+<span data-ttu-id="9d20d-137">Um die Simulation zu steuern, geben Sie Aktualisierungen an Objekten aus, die von einem ipertionsimulationmanager-Objekt abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-137">To control simulation, you'll issue updates to objects retrieved from an IPerceptionSimulationManager object.</span></span> <span data-ttu-id="9d20d-138">Der erste Schritt besteht darin, dieses Objekt zu erhalten und es mit Ihrem Zielgerät oder Emulator zu verbinden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-138">The first step is to get that object and connect it to your target device or emulator.</span></span> <span data-ttu-id="9d20d-139">Klicken Sie in der [Symbolleiste](using-the-hololens-emulator.md) auf die Schaltfläche Geräte Portal, um die IP-Adresse des Emulators zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-139">You can get the IP address of your emulator by clicking on the Device Portal button in the [toolbar](using-the-hololens-emulator.md)</span></span>
 
-<span data-ttu-id="dded5-139">![Symbol zum Öffnen des Geräte Portals ](images/emulator-deviceportal.png) **Öffnen Sie das Geräte Portal** : Öffnen Sie das Windows-Geräte Portal für das hololens-Betriebssystem im Emulator.</span><span class="sxs-lookup"><span data-stu-id="dded5-139">![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal** : Open the Windows Device Portal for the HoloLens OS in the emulator.</span></span>  <span data-ttu-id="dded5-140">Für Windows Mixed Reality kann dies in der App "Einstellungen" unter "Aktualisieren der & Sicherheit" und dann "für Entwickler" im Abschnitt "Connect using:" unter "Enable Device Portal" abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-140">For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."</span></span>  <span data-ttu-id="dded5-141">Achten Sie darauf, dass Sie die IP-Adresse und den Port beachten.</span><span class="sxs-lookup"><span data-stu-id="dded5-141">Be sure to note both the IP address and port.</span></span>
+<span data-ttu-id="9d20d-140">![Symbol zum Öffnen des Geräte Portals ](images/emulator-deviceportal.png) **Öffnen Sie das Geräte Portal**: Öffnen Sie das Windows-Geräte Portal für das hololens-Betriebssystem im Emulator.</span><span class="sxs-lookup"><span data-stu-id="9d20d-140">![Open Device Portal icon](images/emulator-deviceportal.png) **Open Device Portal**: Open the Windows Device Portal for the HoloLens OS in the emulator.</span></span>  <span data-ttu-id="9d20d-141">Für Windows Mixed Reality kann dies in der App "Einstellungen" unter "Aktualisieren der & Sicherheit" und dann "für Entwickler" im Abschnitt "Connect using:" unter "Enable Device Portal" abgerufen werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-141">For Windows Mixed Reality, this can be retrieved in the Settings app under "Update & Security", then "For developers" in the "Connect using:" section under "Enable Device Portal."</span></span>  <span data-ttu-id="9d20d-142">Achten Sie darauf, dass Sie die IP-Adresse und den Port beachten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-142">Be sure to note both the IP address and port.</span></span>
 
-<span data-ttu-id="dded5-142">Zuerst rufen Sie restsimulationstreamsink. Create auf, um ein restsimulationstreamsink-Objekt abzurufen.</span><span class="sxs-lookup"><span data-stu-id="dded5-142">First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object.</span></span> <span data-ttu-id="dded5-143">Dies ist das Zielgerät oder der Emulator, das Sie über eine HTTP-Verbindung steuern werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-143">This is the target device or emulator that you will control over an http connection.</span></span> <span data-ttu-id="dded5-144">Ihre Befehle werden an das [Windows-Geräte Portal](using-the-windows-device-portal.md) , das auf dem Gerät oder Emulator ausgeführt wird, weitergeleitet und verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="dded5-144">Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator.</span></span> <span data-ttu-id="dded5-145">Die vier Parameter, die Sie zum Erstellen eines Objekts benötigen, sind:</span><span class="sxs-lookup"><span data-stu-id="dded5-145">The four parameters you'll need to create an object are:</span></span>
-* <span data-ttu-id="dded5-146">URI-URI: IP-Adresse des Zielgeräts (z. b. " https://123.123.123.123 " oder " https://123.123.123.123:50080 ")</span><span class="sxs-lookup"><span data-stu-id="dded5-146">Uri uri - IP address of the target device (e.g., "https://123.123.123.123" or "https://123.123.123.123:50080")</span></span>
-* <span data-ttu-id="dded5-147">System .net. NetworkCredential-Anmelde Informationen: Benutzername/Kennwort für die Verbindung mit dem [Windows-Geräte Portal](using-the-windows-device-portal.md) auf dem Zielgerät oder Emulator.</span><span class="sxs-lookup"><span data-stu-id="dded5-147">System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator.</span></span> <span data-ttu-id="dded5-148">Wenn Sie eine Verbindung mit dem Emulator über seine lokale Adresse herstellen (z. b. 168. *.* . \*) auf demselben PC werden alle Anmelde Informationen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="dded5-148">If you are connecting to the emulator via its local address (e.g., 168. *.* .\*) on the same PC, any credentials will be accepted.</span></span>
-* <span data-ttu-id="dded5-149">bool normal: true für normale Priorität, false für niedrige Priorität.</span><span class="sxs-lookup"><span data-stu-id="dded5-149">bool normal - True for normal priority, false for low priority.</span></span> <span data-ttu-id="dded5-150">In der Regel sollten Sie diese Einstellung für Testszenarien auf *true* festlegen, sodass der Test die Kontrolle übernehmen kann.</span><span class="sxs-lookup"><span data-stu-id="dded5-150">You generally want to set this to *true* for test scenarios, which allows your test to take control.</span></span>  <span data-ttu-id="dded5-151">Der Emulator und die Windows Mixed Reality-Simulation verwenden Verbindungen mit niedriger Priorität.</span><span class="sxs-lookup"><span data-stu-id="dded5-151">The emulator and Windows Mixed Reality simulation use low priority connections.</span></span>  <span data-ttu-id="dded5-152">Wenn Ihr Test auch eine Verbindung mit niedriger Priorität verwendet, wird die zuletzt festgelegte Verbindung gesteuert.</span><span class="sxs-lookup"><span data-stu-id="dded5-152">If your test also uses a low priority connection, the most recently established connection will be in control.</span></span>
-* <span data-ttu-id="dded5-153">System. Threading. CancellationToken Token-Token, um den asynchronen Vorgang abzubrechen.</span><span class="sxs-lookup"><span data-stu-id="dded5-153">System.Threading.CancellationToken token - Token to cancel the async operation.</span></span>
+<span data-ttu-id="9d20d-143">Zuerst rufen Sie restsimulationstreamsink. Create auf, um ein restsimulationstreamsink-Objekt abzurufen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-143">First, you'll call RestSimulationStreamSink.Create to get a RestSimulationStreamSink object.</span></span> <span data-ttu-id="9d20d-144">Dies ist das Zielgerät oder der Emulator, das Sie über eine HTTP-Verbindung steuern.</span><span class="sxs-lookup"><span data-stu-id="9d20d-144">This is the target device or emulator that you'll control over an http connection.</span></span> <span data-ttu-id="9d20d-145">Ihre Befehle werden an das [Windows-Geräte Portal](using-the-windows-device-portal.md) , das auf dem Gerät oder Emulator ausgeführt wird, weitergeleitet und verarbeitet.</span><span class="sxs-lookup"><span data-stu-id="9d20d-145">Your commands will be passed to and handled by the [Windows Device Portal](using-the-windows-device-portal.md) running on the device or emulator.</span></span> <span data-ttu-id="9d20d-146">Die vier Parameter, die Sie zum Erstellen eines Objekts benötigen, sind:</span><span class="sxs-lookup"><span data-stu-id="9d20d-146">The four parameters you'll need to create an object are:</span></span>
+* <span data-ttu-id="9d20d-147">URI-URI: IP-Adresse des Zielgeräts (z. b. " https://123.123.123.123 " oder " https://123.123.123.123:50080 ")</span><span class="sxs-lookup"><span data-stu-id="9d20d-147">Uri uri - IP address of the target device (e.g., "https://123.123.123.123" or "https://123.123.123.123:50080")</span></span>
+* <span data-ttu-id="9d20d-148">System .net. NetworkCredential-Anmelde Informationen: Benutzername/Kennwort für die Verbindung mit dem [Windows-Geräte Portal](using-the-windows-device-portal.md) auf dem Zielgerät oder Emulator.</span><span class="sxs-lookup"><span data-stu-id="9d20d-148">System.Net.NetworkCredential credentials - Username/password for connecting to the [Windows Device Portal](using-the-windows-device-portal.md) on the target device or emulator.</span></span> <span data-ttu-id="9d20d-149">Wenn Sie eine Verbindung mit dem Emulator über seine lokale Adresse herstellen (z. b. 168.*.*. \*) auf demselben PC werden alle Anmelde Informationen akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-149">If you're connecting to the emulator via its local address (e.g., 168.*.*.\*) on the same PC, any credentials will be accepted.</span></span>
+* <span data-ttu-id="9d20d-150">bool normal: true für normale Priorität, false für niedrige Priorität.</span><span class="sxs-lookup"><span data-stu-id="9d20d-150">bool normal - True for normal priority, false for low priority.</span></span> <span data-ttu-id="9d20d-151">In der Regel sollten Sie diese Einstellung für Testszenarien auf *true* festlegen, sodass der Test die Kontrolle übernehmen kann.</span><span class="sxs-lookup"><span data-stu-id="9d20d-151">You generally want to set this to *true* for test scenarios, which allows your test to take control.</span></span>  <span data-ttu-id="9d20d-152">Der Emulator und die Windows Mixed Reality-Simulation verwenden Verbindungen mit niedriger Priorität.</span><span class="sxs-lookup"><span data-stu-id="9d20d-152">The emulator and Windows Mixed Reality simulation use low-priority connections.</span></span>  <span data-ttu-id="9d20d-153">Wenn Ihr Test auch eine Verbindung mit niedriger Priorität verwendet, wird die zuletzt festgelegte Verbindung gesteuert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-153">If your test also uses a low-priority connection, the most recently established connection will be in control.</span></span>
+* <span data-ttu-id="9d20d-154">System. Threading. CancellationToken Token-Token, um den asynchronen Vorgang abzubrechen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-154">System.Threading.CancellationToken token - Token to cancel the async operation.</span></span>
 
-<span data-ttu-id="dded5-154">Zweitens erstellen Sie ipertionsimulationmanager.</span><span class="sxs-lookup"><span data-stu-id="dded5-154">Second you will create the IPerceptionSimulationManager.</span></span> <span data-ttu-id="dded5-155">Dies ist das Objekt, das Sie verwenden, um die Simulation zu steuern.</span><span class="sxs-lookup"><span data-stu-id="dded5-155">This is the object you use to control simulation.</span></span> <span data-ttu-id="dded5-156">Beachten Sie, dass dies auch in einer Async-Methode erfolgen muss.</span><span class="sxs-lookup"><span data-stu-id="dded5-156">Note that this must also be done in an async method.</span></span>
+<span data-ttu-id="9d20d-155">Zweitens erstellen Sie ipertionsimulationmanager.</span><span class="sxs-lookup"><span data-stu-id="9d20d-155">Second, you'll create the IPerceptionSimulationManager.</span></span> <span data-ttu-id="9d20d-156">Dies ist das Objekt, das Sie verwenden, um die Simulation zu steuern.</span><span class="sxs-lookup"><span data-stu-id="9d20d-156">This is the object you use to control simulation.</span></span> <span data-ttu-id="9d20d-157">Dies muss auch in einer Async-Methode erfolgen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-157">This must also be done in an async method.</span></span>
 
-## <a name="control-the-simulated-human"></a><span data-ttu-id="dded5-157">Steuern des simulierten Menschen</span><span class="sxs-lookup"><span data-stu-id="dded5-157">Control the simulated Human</span></span>
+## <a name="control-the-simulated-human"></a><span data-ttu-id="9d20d-158">Steuern des simulierten Menschen</span><span class="sxs-lookup"><span data-stu-id="9d20d-158">Control the simulated Human</span></span>
 
-<span data-ttu-id="dded5-158">Ein ipertionsimulationmanager verfügt über eine menschliche Eigenschaft, die ein isimulatedhuman-Objekt zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="dded5-158">An IPerceptionSimulationManager has a Human property that returns an ISimulatedHuman object.</span></span> <span data-ttu-id="dded5-159">Um den simulierten Menschen zu steuern, führen Sie Vorgänge für dieses Objekt aus.</span><span class="sxs-lookup"><span data-stu-id="dded5-159">To control the simulated human, perform operations on this object.</span></span> <span data-ttu-id="dded5-160">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="dded5-160">For example:</span></span>
+<span data-ttu-id="9d20d-159">Ein ipertionsimulationmanager verfügt über eine menschliche Eigenschaft, die ein isimulatedhuman-Objekt zurückgibt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-159">An IPerceptionSimulationManager has a Human property that returns an ISimulatedHuman object.</span></span> <span data-ttu-id="9d20d-160">Um den simulierten Menschen zu steuern, führen Sie Vorgänge für dieses Objekt aus.</span><span class="sxs-lookup"><span data-stu-id="9d20d-160">To control the simulated human, perform operations on this object.</span></span> <span data-ttu-id="9d20d-161">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="9d20d-161">For example:</span></span>
 
 ```
 manager.Human.Move(new Vector3(0.1f, 0.0f, 0.0f))
 ```
 
-## <a name="basic-sample-c-console-application"></a><span data-ttu-id="dded5-161">Einfache c#-Beispiel Konsolenanwendung</span><span class="sxs-lookup"><span data-stu-id="dded5-161">Basic Sample C# console application</span></span>
+## <a name="basic-sample-c-console-application"></a><span data-ttu-id="9d20d-162">Einfache c#-Beispiel Konsolenanwendung</span><span class="sxs-lookup"><span data-stu-id="9d20d-162">Basic Sample C# console application</span></span>
 
 ```
 using System;
@@ -108,7 +108,7 @@ namespace ConsoleApplication1
 }
 ```
 
-## <a name="extended-sample-c-console-application"></a><span data-ttu-id="dded5-162">Erweiterte c#-Beispiel Konsolenanwendung</span><span class="sxs-lookup"><span data-stu-id="dded5-162">Extended Sample C# console application</span></span>
+## <a name="extended-sample-c-console-application"></a><span data-ttu-id="9d20d-163">Erweiterte c#-Beispiel Konsolenanwendung</span><span class="sxs-lookup"><span data-stu-id="9d20d-163">Extended Sample C# console application</span></span>
 
 ```
 using System;
@@ -216,45 +216,45 @@ namespace ConsoleApplication1
 }
 ```
 
-## <a name="note-on-6-dof-controllers"></a><span data-ttu-id="dded5-163">Hinweis auf 6-DOF-Controllern</span><span class="sxs-lookup"><span data-stu-id="dded5-163">Note on 6-DOF controllers</span></span>
+## <a name="note-on-6-dof-controllers"></a><span data-ttu-id="9d20d-164">Hinweis auf 6-DOF-Controllern</span><span class="sxs-lookup"><span data-stu-id="9d20d-164">Note on 6-DOF controllers</span></span>
 
-<span data-ttu-id="dded5-164">Vor dem Aufrufen von Eigenschaften für Methoden auf einem simulierten 6-DOF-Controller müssen Sie den Controller aktivieren.</span><span class="sxs-lookup"><span data-stu-id="dded5-164">Before calling any properties on methods on a simulated 6-DOF controller, you must activate the controller.</span></span>  <span data-ttu-id="dded5-165">Wenn dies nicht der Fall ist, wird eine Ausnahme ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="dded5-165">Not doing so will result in an exception.</span></span>  <span data-ttu-id="dded5-166">Ab dem Windows 10-Update von Mai 2019 können simulierte 6-DOF-Controller installiert und aktiviert werden, indem die Status-Eigenschaft für das isimulatedsixdofcontroller-Objekt auf simulatedsixdofcontrollerstatus. Active festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-166">Starting with the Windows 10 May 2019 Update, simulated 6-DOF controllers can be installed and activated by setting the Status property on the ISimulatedSixDofController object to SimulatedSixDofControllerStatus.Active.</span></span>
-<span data-ttu-id="dded5-167">Beim Windows 10-Update vom Oktober 2018 und früher müssen Sie zuerst einen simulierten 6-DOF-Controller separat installieren, indem Sie das Tool "perceptionsimulationdevice" aufrufen, das sich im Ordner "\Windows\System32" befindet.</span><span class="sxs-lookup"><span data-stu-id="dded5-167">In the Windows 10 October 2018 Update and earlier, you must separately install a simulated 6-DOF controller first by calling the PerceptionSimulationDevice tool located in the \Windows\System32 folder.</span></span>  <span data-ttu-id="dded5-168">Die Verwendung dieses Tools ist wie folgt:</span><span class="sxs-lookup"><span data-stu-id="dded5-168">The usage of this tool is as follows:</span></span>
+<span data-ttu-id="9d20d-165">Vor dem Aufrufen von Eigenschaften für Methoden auf einem simulierten 6-DOF-Controller müssen Sie den Controller aktivieren.</span><span class="sxs-lookup"><span data-stu-id="9d20d-165">Before calling any properties on methods on a simulated 6-DOF controller, you must activate the controller.</span></span>  <span data-ttu-id="9d20d-166">Wenn dies nicht der Fall ist, wird eine Ausnahme ausgelöst.</span><span class="sxs-lookup"><span data-stu-id="9d20d-166">Not doing so will result in an exception.</span></span>  <span data-ttu-id="9d20d-167">Ab dem Windows 10-Update von Mai 2019 können simulierte 6-DOF-Controller installiert und aktiviert werden, indem die Status-Eigenschaft für das isimulatedsixdofcontroller-Objekt auf simulatedsixdofcontrollerstatus. Active festgelegt wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-167">Starting with the Windows 10 May 2019 Update, simulated 6-DOF controllers can be installed and activated by setting the Status property on the ISimulatedSixDofController object to SimulatedSixDofControllerStatus.Active.</span></span>
+<span data-ttu-id="9d20d-168">Beim Windows 10-Update vom Oktober 2018 und früher müssen Sie zuerst einen simulierten 6-DOF-Controller separat installieren, indem Sie das Tool "perceptionsimulationdevice" aufrufen, das sich im Ordner "\Windows\System32" befindet.</span><span class="sxs-lookup"><span data-stu-id="9d20d-168">In the Windows 10 October 2018 Update and earlier, you must separately install a simulated 6-DOF controller first by calling the PerceptionSimulationDevice tool located in the \Windows\System32 folder.</span></span>  <span data-ttu-id="9d20d-169">Die Verwendung dieses Tools ist wie folgt:</span><span class="sxs-lookup"><span data-stu-id="9d20d-169">The usage of this tool is as follows:</span></span>
 
 
 ```
     PerceptionSimulationDevice.exe <action> 6dof <instance>
 ```
 
-<span data-ttu-id="dded5-169">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="dded5-169">For example</span></span>
+<span data-ttu-id="9d20d-170">Beispiel:</span><span class="sxs-lookup"><span data-stu-id="9d20d-170">For example</span></span>
 
 ```
     PerceptionSimulationDevice.exe i 6dof 1
 ```
 
-<span data-ttu-id="dded5-170">Folgende Aktionen werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="dded5-170">Supported actions are:</span></span>
-* <span data-ttu-id="dded5-171">i = Installation</span><span class="sxs-lookup"><span data-stu-id="dded5-171">i = install</span></span>
-* <span data-ttu-id="dded5-172">q = Abfrage</span><span class="sxs-lookup"><span data-stu-id="dded5-172">q = query</span></span>
-* <span data-ttu-id="dded5-173">r = entfernen</span><span class="sxs-lookup"><span data-stu-id="dded5-173">r = remove</span></span>
+<span data-ttu-id="9d20d-171">Folgende Aktionen werden unterstützt:</span><span class="sxs-lookup"><span data-stu-id="9d20d-171">Supported actions are:</span></span>
+* <span data-ttu-id="9d20d-172">i = Installation</span><span class="sxs-lookup"><span data-stu-id="9d20d-172">i = install</span></span>
+* <span data-ttu-id="9d20d-173">q = Abfrage</span><span class="sxs-lookup"><span data-stu-id="9d20d-173">q = query</span></span>
+* <span data-ttu-id="9d20d-174">r = entfernen</span><span class="sxs-lookup"><span data-stu-id="9d20d-174">r = remove</span></span>
 
-<span data-ttu-id="dded5-174">Unterstützte Instanzen:</span><span class="sxs-lookup"><span data-stu-id="dded5-174">Supported instances are:</span></span>
-* <span data-ttu-id="dded5-175">1 = der linke 6-DOF-Controller</span><span class="sxs-lookup"><span data-stu-id="dded5-175">1 = the left 6-DOF controller</span></span>
-* <span data-ttu-id="dded5-176">2 = der Rechte 6-DOF-Controller</span><span class="sxs-lookup"><span data-stu-id="dded5-176">2 = the right 6-DOF controller</span></span>
+<span data-ttu-id="9d20d-175">Unterstützte Instanzen:</span><span class="sxs-lookup"><span data-stu-id="9d20d-175">Supported instances are:</span></span>
+* <span data-ttu-id="9d20d-176">1 = der linke 6-DOF-Controller</span><span class="sxs-lookup"><span data-stu-id="9d20d-176">1 = the left 6-DOF controller</span></span>
+* <span data-ttu-id="9d20d-177">2 = der Rechte 6-DOF-Controller</span><span class="sxs-lookup"><span data-stu-id="9d20d-177">2 = the right 6-DOF controller</span></span>
 
-<span data-ttu-id="dded5-177">Der Exitcode des Prozesses gibt einen Erfolg (ein NULL-Rückgabewert) oder einen Fehler (ein Rückgabewert ungleich null) an.</span><span class="sxs-lookup"><span data-stu-id="dded5-177">The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).</span></span>  <span data-ttu-id="dded5-178">Wenn Sie die Aktion "q" verwenden, um abzufragen, ob ein Controller installiert ist oder nicht, ist der Rückgabewert 0 (null), wenn der Controller nicht bereits installiert ist, oder ein (1), wenn der Controller installiert ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-178">When using the 'q' action to query whether or not a controller is installed, the return value will be zero (0) if the controller is not already installed or one (1) if the controller is installed.</span></span>
+<span data-ttu-id="9d20d-178">Der Exitcode des Prozesses gibt einen Erfolg (ein NULL-Rückgabewert) oder einen Fehler (ein Rückgabewert ungleich null) an.</span><span class="sxs-lookup"><span data-stu-id="9d20d-178">The exit code of the process will indicate success (a zero return value) or failure (a non-zero return value).</span></span>  <span data-ttu-id="9d20d-179">Wenn Sie die Aktion "q" verwenden, um abzufragen, ob ein Controller installiert ist, ist der Rückgabewert 0 (null), wenn der Controller nicht bereits installiert ist, oder ein (1), wenn der Controller installiert ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-179">When using the 'q' action to query whether a controller is installed, the return value will be zero (0) if the controller isn't already installed or one (1) if the controller is installed.</span></span>
 
-<span data-ttu-id="dded5-179">Wenn Sie einen Controller am Windows 10-Update vom Oktober 2018 oder früher entfernen, legen Sie seinen Status zuerst über die API auf OFF fest, und nennen Sie dann das Tool "perzeptionsimulationdevice".</span><span class="sxs-lookup"><span data-stu-id="dded5-179">When removing a controller on the Windows 10 October 2018 Update or earlier, set its status to Off via the API first, then call the PerceptionSimulationDevice tool.</span></span>
+<span data-ttu-id="9d20d-180">Wenn Sie einen Controller am Windows 10-Update vom Oktober 2018 oder früher entfernen, legen Sie seinen Status zuerst über die API auf OFF fest, und nennen Sie dann das Tool "perzeptionsimulationdevice".</span><span class="sxs-lookup"><span data-stu-id="9d20d-180">When removing a controller on the Windows 10 October 2018 Update or earlier, set its status to Off via the API first, then call the PerceptionSimulationDevice tool.</span></span>
 
-<span data-ttu-id="dded5-180">Beachten Sie, dass dieses Tool als Administrator ausgeführt werden muss.</span><span class="sxs-lookup"><span data-stu-id="dded5-180">Note that this tool must be run as Administrator.</span></span>
-
-
+<span data-ttu-id="9d20d-181">Dieses Tool muss als Administrator ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-181">This tool must be run as Administrator.</span></span>
 
 
-## <a name="api-reference"></a><span data-ttu-id="dded5-181">API-Referenz</span><span class="sxs-lookup"><span data-stu-id="dded5-181">API Reference</span></span>
 
-### <a name="microsoftperceptionsimulationsimulateddevicetype"></a><span data-ttu-id="dded5-182">Microsoft. perceptionsimulation. simulateddebug Type</span><span class="sxs-lookup"><span data-stu-id="dded5-182">Microsoft.PerceptionSimulation.SimulatedDeviceType</span></span>
 
-<span data-ttu-id="dded5-183">Beschreibt einen simulierten Gerätetyp.</span><span class="sxs-lookup"><span data-stu-id="dded5-183">Describes a simulated device type</span></span>
+## <a name="api-reference"></a><span data-ttu-id="9d20d-182">API-Referenz</span><span class="sxs-lookup"><span data-stu-id="9d20d-182">API Reference</span></span>
+
+### <a name="microsoftperceptionsimulationsimulateddevicetype"></a><span data-ttu-id="9d20d-183">Microsoft. perceptionsimulation. simulateddebug Type</span><span class="sxs-lookup"><span data-stu-id="9d20d-183">Microsoft.PerceptionSimulation.SimulatedDeviceType</span></span>
+
+<span data-ttu-id="9d20d-184">Beschreibt einen simulierten Gerätetyp.</span><span class="sxs-lookup"><span data-stu-id="9d20d-184">Describes a simulated device type</span></span>
 
 ```
 public enum SimulatedDeviceType
@@ -263,13 +263,13 @@ public enum SimulatedDeviceType
 }
 ```
 
-<span data-ttu-id="dded5-184">**Microsoft. perceptionsimulation. simulatedtovicetype. Reference**</span><span class="sxs-lookup"><span data-stu-id="dded5-184">**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**</span></span>
+<span data-ttu-id="9d20d-185">**Microsoft. perceptionsimulation. simulatedtovicetype. Reference**</span><span class="sxs-lookup"><span data-stu-id="9d20d-185">**Microsoft.PerceptionSimulation.SimulatedDeviceType.Reference**</span></span>
 
-<span data-ttu-id="dded5-185">Ein fiktives Referenzgerät, der Standardwert für "perceptionsimulationmanager"</span><span class="sxs-lookup"><span data-stu-id="dded5-185">A fictitious reference device, the default for PerceptionSimulationManager</span></span>
+<span data-ttu-id="9d20d-186">Ein fiktives Referenzgerät, der Standardwert für "perceptionsimulationmanager"</span><span class="sxs-lookup"><span data-stu-id="9d20d-186">A fictitious reference device, the default for PerceptionSimulationManager</span></span>
 
-### <a name="microsoftperceptionsimulationheadtrackermode"></a><span data-ttu-id="dded5-186">Microsoft. perceptionsimulation. headtrackermode</span><span class="sxs-lookup"><span data-stu-id="dded5-186">Microsoft.PerceptionSimulation.HeadTrackerMode</span></span>
+### <a name="microsoftperceptionsimulationheadtrackermode"></a><span data-ttu-id="9d20d-187">Microsoft. perceptionsimulation. headtrackermode</span><span class="sxs-lookup"><span data-stu-id="9d20d-187">Microsoft.PerceptionSimulation.HeadTrackerMode</span></span>
 
-<span data-ttu-id="dded5-187">Beschreibt einen Head Tracker-Modus.</span><span class="sxs-lookup"><span data-stu-id="dded5-187">Describes a head tracker mode</span></span>
+<span data-ttu-id="9d20d-188">Beschreibt einen Head Tracker-Modus.</span><span class="sxs-lookup"><span data-stu-id="9d20d-188">Describes a head tracker mode</span></span>
 
 ```
 public enum HeadTrackerMode
@@ -280,21 +280,21 @@ public enum HeadTrackerMode
 }
 ```
 
-<span data-ttu-id="dded5-188">**Microsoft. perceptionsimulation. headtrackermode. Default**</span><span class="sxs-lookup"><span data-stu-id="dded5-188">**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**</span></span>
+<span data-ttu-id="9d20d-189">**Microsoft. perceptionsimulation. headtrackermode. Default**</span><span class="sxs-lookup"><span data-stu-id="9d20d-189">**Microsoft.PerceptionSimulation.HeadTrackerMode.Default**</span></span>
 
-<span data-ttu-id="dded5-189">Standard Head-Nachverfolgung.</span><span class="sxs-lookup"><span data-stu-id="dded5-189">Default Head Tracking.</span></span> <span data-ttu-id="dded5-190">Dies bedeutet, dass das System basierend auf den Lauf Zeit Bedingungen den besten Head-nach Verfolgungs Modus auswählen kann.</span><span class="sxs-lookup"><span data-stu-id="dded5-190">This means the system may select the best head tracking mode based upon runtime conditions.</span></span>
+<span data-ttu-id="9d20d-190">Standard Head-Nachverfolgung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-190">Default Head Tracking.</span></span> <span data-ttu-id="9d20d-191">Dies bedeutet, dass das System basierend auf den Lauf Zeit Bedingungen den besten Head-nach Verfolgungs Modus auswählen kann.</span><span class="sxs-lookup"><span data-stu-id="9d20d-191">This means the system may select the best head tracking mode based upon runtime conditions.</span></span>
 
-<span data-ttu-id="dded5-191">**Microsoft. perceptionsimulation. headtrackermode. Orientation**</span><span class="sxs-lookup"><span data-stu-id="dded5-191">**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**</span></span>
+<span data-ttu-id="9d20d-192">**Microsoft. perceptionsimulation. headtrackermode. Orientation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-192">**Microsoft.PerceptionSimulation.HeadTrackerMode.Orientation**</span></span>
 
-<span data-ttu-id="dded5-192">Nur Ausrichtung Head Tracking.</span><span class="sxs-lookup"><span data-stu-id="dded5-192">Orientation Only Head Tracking.</span></span> <span data-ttu-id="dded5-193">Dies bedeutet, dass die nach verfolgte Position möglicherweise nicht zuverlässig ist und einige Funktionen, die von der Head-Position abhängig sind, möglicherweise nicht verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="dded5-193">This means that the tracked position may not be reliable, and some functionality dependent on head position may not be available.</span></span>
+<span data-ttu-id="9d20d-193">Nur Ausrichtung Head Tracking.</span><span class="sxs-lookup"><span data-stu-id="9d20d-193">Orientation Only Head Tracking.</span></span> <span data-ttu-id="9d20d-194">Dies bedeutet, dass die nach verfolgte Position möglicherweise nicht zuverlässig ist und einige Funktionen, die von der Head-Position abhängig sind, möglicherweise nicht verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="9d20d-194">This means that the tracked position may not be reliable, and some functionality dependent on head position may not be available.</span></span>
 
-<span data-ttu-id="dded5-194">**Microsoft. perceptionsimulation. headtrackermode. Position**</span><span class="sxs-lookup"><span data-stu-id="dded5-194">**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**</span></span>
+<span data-ttu-id="9d20d-195">**Microsoft. perceptionsimulation. headtrackermode. Position**</span><span class="sxs-lookup"><span data-stu-id="9d20d-195">**Microsoft.PerceptionSimulation.HeadTrackerMode.Position**</span></span>
 
-<span data-ttu-id="dded5-195">Nachverfolgung von positionellen Köpfen.</span><span class="sxs-lookup"><span data-stu-id="dded5-195">Positional Head Tracking.</span></span> <span data-ttu-id="dded5-196">Dies bedeutet, dass die Position und Ausrichtung der überwachten Kopfzeile zuverlässig sind.</span><span class="sxs-lookup"><span data-stu-id="dded5-196">This means that the tracked head position and orientation are both reliable</span></span>
+<span data-ttu-id="9d20d-196">Nachverfolgung von positionellen Köpfen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-196">Positional Head Tracking.</span></span> <span data-ttu-id="9d20d-197">Dies bedeutet, dass die Position und Ausrichtung der überwachten Kopfzeile zuverlässig sind.</span><span class="sxs-lookup"><span data-stu-id="9d20d-197">This means that the tracked head position and orientation are both reliable</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedgesture"></a><span data-ttu-id="dded5-197">Microsoft. perceptionsimulation. simulatedgesten</span><span class="sxs-lookup"><span data-stu-id="dded5-197">Microsoft.PerceptionSimulation.SimulatedGesture</span></span>
+### <a name="microsoftperceptionsimulationsimulatedgesture"></a><span data-ttu-id="9d20d-198">Microsoft. perceptionsimulation. simulatedgesten</span><span class="sxs-lookup"><span data-stu-id="9d20d-198">Microsoft.PerceptionSimulation.SimulatedGesture</span></span>
 
-<span data-ttu-id="dded5-198">Beschreibt eine simulierte Geste</span><span class="sxs-lookup"><span data-stu-id="dded5-198">Describes a simulated gesture</span></span>
+<span data-ttu-id="9d20d-199">Beschreibt eine simulierte Geste</span><span class="sxs-lookup"><span data-stu-id="9d20d-199">Describes a simulated gesture</span></span>
 
 ```
 public enum SimulatedGesture
@@ -307,29 +307,29 @@ public enum SimulatedGesture
 }
 ```
 
-<span data-ttu-id="dded5-199">**Microsoft. perceptionsimulation. simulatedgesten. None**</span><span class="sxs-lookup"><span data-stu-id="dded5-199">**Microsoft.PerceptionSimulation.SimulatedGesture.None**</span></span>
+<span data-ttu-id="9d20d-200">**Microsoft. perceptionsimulation. simulatedgesten. None**</span><span class="sxs-lookup"><span data-stu-id="9d20d-200">**Microsoft.PerceptionSimulation.SimulatedGesture.None**</span></span>
 
-<span data-ttu-id="dded5-200">Ein Sentinelwert, mit dem keine Gesten angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-200">A sentinel value used to indicate no gestures.</span></span>
+<span data-ttu-id="9d20d-201">Ein Sentinelwert, mit dem keine Gesten angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-201">A sentinel value used to indicate no gestures.</span></span>
 
-<span data-ttu-id="dded5-201">**Microsoft. perceptionsimulation. simulatedgesten. fingerpressed**</span><span class="sxs-lookup"><span data-stu-id="dded5-201">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**</span></span>
+<span data-ttu-id="9d20d-202">**Microsoft. perceptionsimulation. simulatedgesten. fingerpressed**</span><span class="sxs-lookup"><span data-stu-id="9d20d-202">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerPressed**</span></span>
 
-<span data-ttu-id="dded5-202">Eine gedrückte Stift Bewegung.</span><span class="sxs-lookup"><span data-stu-id="dded5-202">A finger pressed gesture.</span></span>
+<span data-ttu-id="9d20d-203">Eine gedrückte Stift Bewegung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-203">A finger pressed gesture.</span></span>
 
-<span data-ttu-id="dded5-203">**Microsoft. perceptionsimulation. simulatedgesten. fingerreleased**</span><span class="sxs-lookup"><span data-stu-id="dded5-203">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**</span></span>
+<span data-ttu-id="9d20d-204">**Microsoft. perceptionsimulation. simulatedgesten. fingerreleased**</span><span class="sxs-lookup"><span data-stu-id="9d20d-204">**Microsoft.PerceptionSimulation.SimulatedGesture.FingerReleased**</span></span>
 
-<span data-ttu-id="dded5-204">Eine von Fingern freigegebene Geste.</span><span class="sxs-lookup"><span data-stu-id="dded5-204">A finger released gesture.</span></span>
+<span data-ttu-id="9d20d-205">Eine von Fingern freigegebene Geste.</span><span class="sxs-lookup"><span data-stu-id="9d20d-205">A finger released gesture.</span></span>
 
-<span data-ttu-id="dded5-205">**Microsoft. perceptionsimulation. simulatedgesten. Home**</span><span class="sxs-lookup"><span data-stu-id="dded5-205">**Microsoft.PerceptionSimulation.SimulatedGesture.Home**</span></span>
+<span data-ttu-id="9d20d-206">**Microsoft. perceptionsimulation. simulatedgesten. Home**</span><span class="sxs-lookup"><span data-stu-id="9d20d-206">**Microsoft.PerceptionSimulation.SimulatedGesture.Home**</span></span>
 
-<span data-ttu-id="dded5-206">Die "Home/System"-Geste.</span><span class="sxs-lookup"><span data-stu-id="dded5-206">The home/system gesture.</span></span>
+<span data-ttu-id="9d20d-207">Die "Home/System"-Geste.</span><span class="sxs-lookup"><span data-stu-id="9d20d-207">The home/system gesture.</span></span>
 
-<span data-ttu-id="dded5-207">**Microsoft. perceptionsimulation. simulatedgesten. Max**</span><span class="sxs-lookup"><span data-stu-id="dded5-207">**Microsoft.PerceptionSimulation.SimulatedGesture.Max**</span></span>
+<span data-ttu-id="9d20d-208">**Microsoft. perceptionsimulation. simulatedgesten. Max**</span><span class="sxs-lookup"><span data-stu-id="9d20d-208">**Microsoft.PerceptionSimulation.SimulatedGesture.Max**</span></span>
 
-<span data-ttu-id="dded5-208">Die maximale gültige Geste.</span><span class="sxs-lookup"><span data-stu-id="dded5-208">The maximum valid gesture.</span></span>
+<span data-ttu-id="9d20d-209">Die maximale gültige Geste.</span><span class="sxs-lookup"><span data-stu-id="9d20d-209">The maximum valid gesture.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerstatus"></a><span data-ttu-id="dded5-209">Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus</span><span class="sxs-lookup"><span data-stu-id="dded5-209">Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus</span></span>
+### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerstatus"></a><span data-ttu-id="9d20d-210">Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus</span><span class="sxs-lookup"><span data-stu-id="9d20d-210">Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus</span></span>
 
-<span data-ttu-id="dded5-210">Die möglichen Zustände eines simulierten 6-DOF-Controllers.</span><span class="sxs-lookup"><span data-stu-id="dded5-210">The possible states of a simulated 6-DOF controller.</span></span>
+<span data-ttu-id="9d20d-211">Die möglichen Zustände eines simulierten 6-DOF-Controllers.</span><span class="sxs-lookup"><span data-stu-id="9d20d-211">The possible states of a simulated 6-DOF controller.</span></span>
 
 ```
 public enum SimulatedSixDofControllerStatus
@@ -340,21 +340,21 @@ public enum SimulatedSixDofControllerStatus
 }
 ```
 
-<span data-ttu-id="dded5-211">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus. Off**</span><span class="sxs-lookup"><span data-stu-id="dded5-211">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**</span></span>
+<span data-ttu-id="9d20d-212">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus. Off**</span><span class="sxs-lookup"><span data-stu-id="9d20d-212">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Off**</span></span>
 
-<span data-ttu-id="dded5-212">Der 6-DOF-Controller ist ausgeschaltet.</span><span class="sxs-lookup"><span data-stu-id="dded5-212">The 6-DOF controller is turned off.</span></span>
+<span data-ttu-id="9d20d-213">Der 6-DOF-Controller ist ausgeschaltet.</span><span class="sxs-lookup"><span data-stu-id="9d20d-213">The 6-DOF controller is turned off.</span></span>
 
-<span data-ttu-id="dded5-213">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus. Active**</span><span class="sxs-lookup"><span data-stu-id="dded5-213">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**</span></span>
+<span data-ttu-id="9d20d-214">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus. Active**</span><span class="sxs-lookup"><span data-stu-id="9d20d-214">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.Active**</span></span>
 
-<span data-ttu-id="dded5-214">Der 6-DOF-Controller ist eingeschaltet und wird nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="dded5-214">The 6-DOF controller is turned on and tracked.</span></span>
+<span data-ttu-id="9d20d-215">Der 6-DOF-Controller ist eingeschaltet und wird nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-215">The 6-DOF controller is turned on and tracked.</span></span>
 
-<span data-ttu-id="dded5-215">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus. trackinglost**</span><span class="sxs-lookup"><span data-stu-id="dded5-215">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**</span></span>
+<span data-ttu-id="9d20d-216">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerstatus. trackinglost**</span><span class="sxs-lookup"><span data-stu-id="9d20d-216">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerStatus.TrackingLost**</span></span>
 
-<span data-ttu-id="dded5-216">Der 6-DOF-Controller ist eingeschaltet, kann aber nicht nachverfolgt werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-216">The 6-DOF controller is turned on but cannot be tracked.</span></span>
+<span data-ttu-id="9d20d-217">Der 6-DOF-Controller ist eingeschaltet, kann aber nicht nachverfolgt werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-217">The 6-DOF controller is turned on but cannot be tracked.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerbutton"></a><span data-ttu-id="dded5-217">Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton</span><span class="sxs-lookup"><span data-stu-id="dded5-217">Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton</span></span>
+### <a name="microsoftperceptionsimulationsimulatedsixdofcontrollerbutton"></a><span data-ttu-id="9d20d-218">Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton</span><span class="sxs-lookup"><span data-stu-id="9d20d-218">Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton</span></span>
 
-<span data-ttu-id="dded5-218">Die unterstützten Schaltflächen auf einem simulierten 6-DOF-Controller.</span><span class="sxs-lookup"><span data-stu-id="dded5-218">The supported buttons on a simulated 6-DOF controller.</span></span>
+<span data-ttu-id="9d20d-219">Die unterstützten Schaltflächen auf einem simulierten 6-DOF-Controller.</span><span class="sxs-lookup"><span data-stu-id="9d20d-219">The supported buttons on a simulated 6-DOF controller.</span></span>
 
 ```
 public enum SimulatedSixDofControllerButton
@@ -371,46 +371,46 @@ public enum SimulatedSixDofControllerButton
 }
 ```
 
-<span data-ttu-id="dded5-219">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. None**</span><span class="sxs-lookup"><span data-stu-id="dded5-219">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**</span></span>
+<span data-ttu-id="9d20d-220">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. None**</span><span class="sxs-lookup"><span data-stu-id="9d20d-220">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.None**</span></span>
 
-<span data-ttu-id="dded5-220">Ein Sentinelwert, mit dem keine Schaltflächen angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-220">A sentinel value used to indicate no buttons.</span></span>
+<span data-ttu-id="9d20d-221">Ein Sentinelwert, mit dem keine Schaltflächen angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-221">A sentinel value used to indicate no buttons.</span></span>
 
-<span data-ttu-id="dded5-221">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Home**</span><span class="sxs-lookup"><span data-stu-id="dded5-221">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**</span></span>
+<span data-ttu-id="9d20d-222">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Home**</span><span class="sxs-lookup"><span data-stu-id="9d20d-222">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Home**</span></span>
 
-<span data-ttu-id="dded5-222">Die Start Schaltfläche wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="dded5-222">The Home button is pressed.</span></span>
+<span data-ttu-id="9d20d-223">Die Start Schaltfläche wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-223">The Home button is pressed.</span></span>
 
-<span data-ttu-id="dded5-223">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Menu**</span><span class="sxs-lookup"><span data-stu-id="dded5-223">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**</span></span>
+<span data-ttu-id="9d20d-224">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Menu**</span><span class="sxs-lookup"><span data-stu-id="9d20d-224">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Menu**</span></span>
 
-<span data-ttu-id="dded5-224">Die Menü Schaltfläche wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="dded5-224">The Menu button is pressed.</span></span>
+<span data-ttu-id="9d20d-225">Die Menü Schaltfläche wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-225">The Menu button is pressed.</span></span>
 
-<span data-ttu-id="dded5-225">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Grip**</span><span class="sxs-lookup"><span data-stu-id="dded5-225">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**</span></span>
+<span data-ttu-id="9d20d-226">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Grip**</span><span class="sxs-lookup"><span data-stu-id="9d20d-226">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Grip**</span></span>
 
-<span data-ttu-id="dded5-226">Die Zieh Fläche wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="dded5-226">The Grip button is pressed.</span></span>
+<span data-ttu-id="9d20d-227">Die Zieh Fläche wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-227">The Grip button is pressed.</span></span>
 
-<span data-ttu-id="dded5-227">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. touchpadpress**</span><span class="sxs-lookup"><span data-stu-id="dded5-227">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**</span></span>
+<span data-ttu-id="9d20d-228">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. touchpadpress**</span><span class="sxs-lookup"><span data-stu-id="9d20d-228">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadPress**</span></span>
 
-<span data-ttu-id="dded5-228">Der Touchpad ist gedrückt.</span><span class="sxs-lookup"><span data-stu-id="dded5-228">The TouchPad is pressed.</span></span>
+<span data-ttu-id="9d20d-229">Der Touchpad ist gedrückt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-229">The TouchPad is pressed.</span></span>
 
-<span data-ttu-id="dded5-229">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Select**</span><span class="sxs-lookup"><span data-stu-id="dded5-229">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**</span></span>
+<span data-ttu-id="9d20d-230">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Select**</span><span class="sxs-lookup"><span data-stu-id="9d20d-230">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Select**</span></span>
 
-<span data-ttu-id="dded5-230">Die Schaltfläche auswählen wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="dded5-230">The Select button is pressed.</span></span>
+<span data-ttu-id="9d20d-231">Die Schaltfläche auswählen wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-231">The Select button is pressed.</span></span>
 
-<span data-ttu-id="dded5-231">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. touchpadtouch**</span><span class="sxs-lookup"><span data-stu-id="dded5-231">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**</span></span>
+<span data-ttu-id="9d20d-232">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. touchpadtouch**</span><span class="sxs-lookup"><span data-stu-id="9d20d-232">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.TouchpadTouch**</span></span>
 
-<span data-ttu-id="dded5-232">Das Touchpad ist berührt.</span><span class="sxs-lookup"><span data-stu-id="dded5-232">The TouchPad is touched.</span></span>
+<span data-ttu-id="9d20d-233">Das Touchpad ist berührt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-233">The TouchPad is touched.</span></span>
 
-<span data-ttu-id="dded5-233">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Thumbstick**</span><span class="sxs-lookup"><span data-stu-id="dded5-233">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**</span></span>
+<span data-ttu-id="9d20d-234">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Thumbstick**</span><span class="sxs-lookup"><span data-stu-id="9d20d-234">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Thumbstick**</span></span>
 
-<span data-ttu-id="dded5-234">Der Finger Stick wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="dded5-234">The Thumbstick is pressed.</span></span>
+<span data-ttu-id="9d20d-235">Der Finger Stick wird gedrückt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-235">The Thumbstick is pressed.</span></span>
 
-<span data-ttu-id="dded5-235">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Max**</span><span class="sxs-lookup"><span data-stu-id="dded5-235">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**</span></span>
+<span data-ttu-id="9d20d-236">**Microsoft. perceptionsimulation. simulatedsixdofcontrollerbutton. Max**</span><span class="sxs-lookup"><span data-stu-id="9d20d-236">**Microsoft.PerceptionSimulation.SimulatedSixDofControllerButton.Max**</span></span>
 
-<span data-ttu-id="dded5-236">Die maximale gültige Schaltfläche.</span><span class="sxs-lookup"><span data-stu-id="dded5-236">The maximum valid button.</span></span>
+<span data-ttu-id="9d20d-237">Die maximale gültige Schaltfläche.</span><span class="sxs-lookup"><span data-stu-id="9d20d-237">The maximum valid button.</span></span>
 
 
-### <a name="microsoftperceptionsimulationsimulatedeyescalibrationstate"></a><span data-ttu-id="dded5-237">Microsoft. perceptionsimulation. simulatedeyescalibrationstate</span><span class="sxs-lookup"><span data-stu-id="dded5-237">Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState</span></span>
+### <a name="microsoftperceptionsimulationsimulatedeyescalibrationstate"></a><span data-ttu-id="9d20d-238">Microsoft. perceptionsimulation. simulatedeyescalibrationstate</span><span class="sxs-lookup"><span data-stu-id="9d20d-238">Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState</span></span>
 
-<span data-ttu-id="dded5-238">Der Kalibrierungs Zustand der simulierten Augen</span><span class="sxs-lookup"><span data-stu-id="dded5-238">The calibration state of the simulated eyes</span></span>
+<span data-ttu-id="9d20d-239">Der Kalibrierungs Zustand der simulierten Augen</span><span class="sxs-lookup"><span data-stu-id="9d20d-239">The calibration state of the simulated eyes</span></span>
 
 ```
 public enum SimulatedGesture
@@ -422,25 +422,25 @@ public enum SimulatedGesture
 }
 ```
 
-<span data-ttu-id="dded5-239">**Microsoft. perceptionsimulation. simulatedeyescalibrationstate. nicht verfügbar**</span><span class="sxs-lookup"><span data-stu-id="dded5-239">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**</span></span>
+<span data-ttu-id="9d20d-240">**Microsoft. perceptionsimulation. simulatedeyescalibrationstate. nicht verfügbar**</span><span class="sxs-lookup"><span data-stu-id="9d20d-240">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Unavailable**</span></span>
 
-<span data-ttu-id="dded5-240">Die Augen-Kalibrierung ist nicht verfügbar.</span><span class="sxs-lookup"><span data-stu-id="dded5-240">The eyes calibration is unavailable.</span></span>
+<span data-ttu-id="9d20d-241">Die Augen-Kalibrierung ist nicht verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9d20d-241">The eyes calibration is unavailable.</span></span>
 
-<span data-ttu-id="dded5-241">**Microsoft. perceptionsimulation. simulatedeyescalibrationstate. Ready**</span><span class="sxs-lookup"><span data-stu-id="dded5-241">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**</span></span>
+<span data-ttu-id="9d20d-242">**Microsoft. perceptionsimulation. simulatedeyescalibrationstate. Ready**</span><span class="sxs-lookup"><span data-stu-id="9d20d-242">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Ready**</span></span>
 
-<span data-ttu-id="dded5-242">Die Augen wurden gekalibriert.</span><span class="sxs-lookup"><span data-stu-id="dded5-242">The eyes have been calibrated.</span></span>  <span data-ttu-id="dded5-243">Dies ist der Standardwert.</span><span class="sxs-lookup"><span data-stu-id="dded5-243">This is the default value.</span></span>
+<span data-ttu-id="9d20d-243">Die Augen wurden gekalibriert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-243">The eyes have been calibrated.</span></span>  <span data-ttu-id="9d20d-244">Dies ist der Standardwert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-244">This is the default value.</span></span>
 
-<span data-ttu-id="dded5-244">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configung**</span><span class="sxs-lookup"><span data-stu-id="dded5-244">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**</span></span>
+<span data-ttu-id="9d20d-245">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configung**</span><span class="sxs-lookup"><span data-stu-id="9d20d-245">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.Configuring**</span></span>
 
-<span data-ttu-id="dded5-245">Die Augen werden gerade gekalibriert.</span><span class="sxs-lookup"><span data-stu-id="dded5-245">The eyes are being calibrated.</span></span>
+<span data-ttu-id="9d20d-246">Die Augen werden gerade gekalibriert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-246">The eyes are being calibrated.</span></span>
 
-<span data-ttu-id="dded5-246">**Microsoft. perceptionsimulation. simulatedeyescalibrationstate. usercalibrationbenötigte**</span><span class="sxs-lookup"><span data-stu-id="dded5-246">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**</span></span>
+<span data-ttu-id="9d20d-247">**Microsoft. perceptionsimulation. simulatedeyescalibrationstate. usercalibrationbenötigte**</span><span class="sxs-lookup"><span data-stu-id="9d20d-247">**Microsoft.PerceptionSimulation.SimulatedEyesCalibrationState.UserCalibrationNeeded**</span></span>
 
-<span data-ttu-id="dded5-247">Die Augen müssen kalibriert werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-247">The eyes need to be calibrated.</span></span>
+<span data-ttu-id="9d20d-248">Die Augen müssen kalibriert werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-248">The eyes need to be calibrated.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedhandjointtrackingaccuracy"></a><span data-ttu-id="dded5-248">Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy</span><span class="sxs-lookup"><span data-stu-id="dded5-248">Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy</span></span>
+### <a name="microsoftperceptionsimulationsimulatedhandjointtrackingaccuracy"></a><span data-ttu-id="9d20d-249">Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy</span><span class="sxs-lookup"><span data-stu-id="9d20d-249">Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy</span></span>
 
-<span data-ttu-id="dded5-249">Die nach Verfolgungs Genauigkeit einer gemeinsamen Hand.</span><span class="sxs-lookup"><span data-stu-id="dded5-249">The tracking accuracy of a joint of the hand.</span></span>
+<span data-ttu-id="9d20d-250">Die nach Verfolgungs Genauigkeit einer gemeinsamen Hand.</span><span class="sxs-lookup"><span data-stu-id="9d20d-250">The tracking accuracy of a joint of the hand.</span></span>
 
 ```
 public enum SimulatedHandJointTrackingAccuracy
@@ -451,21 +451,21 @@ public enum SimulatedHandJointTrackingAccuracy
 }
 ```
 
-<span data-ttu-id="dded5-250">**Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy. nicht verfügbar**</span><span class="sxs-lookup"><span data-stu-id="dded5-250">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**</span></span>
+<span data-ttu-id="9d20d-251">**Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy. nicht verfügbar**</span><span class="sxs-lookup"><span data-stu-id="9d20d-251">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Unavailable**</span></span>
 
-<span data-ttu-id="dded5-251">Das gemeinsame wird nicht nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="dded5-251">The joint is not tracked.</span></span>
+<span data-ttu-id="9d20d-252">Die Verbindung wird nicht nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-252">The joint isn't tracked.</span></span>
 
-<span data-ttu-id="dded5-252">**Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy. ungefähre**</span><span class="sxs-lookup"><span data-stu-id="dded5-252">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**</span></span>
+<span data-ttu-id="9d20d-253">**Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy. ungefähre**</span><span class="sxs-lookup"><span data-stu-id="9d20d-253">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Approximate**</span></span>
 
-<span data-ttu-id="dded5-253">Die gemeinsame Position wird abgeleitet.</span><span class="sxs-lookup"><span data-stu-id="dded5-253">The joint position is inferred.</span></span>
+<span data-ttu-id="9d20d-254">Die gemeinsame Position wird abgeleitet.</span><span class="sxs-lookup"><span data-stu-id="9d20d-254">The joint position is inferred.</span></span>
 
-<span data-ttu-id="dded5-254">**Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy. Visible**</span><span class="sxs-lookup"><span data-stu-id="dded5-254">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**</span></span>
+<span data-ttu-id="9d20d-255">**Microsoft. perceptionsimulation. simulatedhandjointtrackingaccuracy. Visible**</span><span class="sxs-lookup"><span data-stu-id="9d20d-255">**Microsoft.PerceptionSimulation.SimulatedHandJointTrackingAccuracy.Visible**</span></span>
 
-<span data-ttu-id="dded5-255">Das gemeinsame ist vollständig nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="dded5-255">The joint is fully tracked.</span></span>
+<span data-ttu-id="9d20d-256">Das gemeinsame ist vollständig nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-256">The joint is fully tracked.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedhandpose"></a><span data-ttu-id="dded5-256">Microsoft. perceptionsimulation. simulatedhandpose</span><span class="sxs-lookup"><span data-stu-id="dded5-256">Microsoft.PerceptionSimulation.SimulatedHandPose</span></span>
+### <a name="microsoftperceptionsimulationsimulatedhandpose"></a><span data-ttu-id="9d20d-257">Microsoft. perceptionsimulation. simulatedhandpose</span><span class="sxs-lookup"><span data-stu-id="9d20d-257">Microsoft.PerceptionSimulation.SimulatedHandPose</span></span>
 
-<span data-ttu-id="dded5-257">Die nach Verfolgungs Genauigkeit einer gemeinsamen Hand.</span><span class="sxs-lookup"><span data-stu-id="dded5-257">The tracking accuracy of a joint of the hand.</span></span>
+<span data-ttu-id="9d20d-258">Die nach Verfolgungs Genauigkeit einer gemeinsamen Hand.</span><span class="sxs-lookup"><span data-stu-id="9d20d-258">The tracking accuracy of a joint of the hand.</span></span>
 
 ```
 public enum SimulatedHandPose
@@ -478,30 +478,30 @@ public enum SimulatedHandPose
 }
 ```
 
-<span data-ttu-id="dded5-258">**Microsoft. perceptionsimulation. simulatedhandpose. Closed**</span><span class="sxs-lookup"><span data-stu-id="dded5-258">**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**</span></span>
+<span data-ttu-id="9d20d-259">**Microsoft. perceptionsimulation. simulatedhandpose. Closed**</span><span class="sxs-lookup"><span data-stu-id="9d20d-259">**Microsoft.PerceptionSimulation.SimulatedHandPose.Closed**</span></span>
 
-<span data-ttu-id="dded5-259">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine geschlossene Darstellung widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="dded5-259">The hand's finger joints are configured to reflect a closed pose.</span></span>
+<span data-ttu-id="9d20d-260">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine geschlossene Darstellung widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="9d20d-260">The hand's finger joints are configured to reflect a closed pose.</span></span>
 
-<span data-ttu-id="dded5-260">**Microsoft. perceptionsimulation. simulatedhandpose. Open**</span><span class="sxs-lookup"><span data-stu-id="dded5-260">**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**</span></span>
+<span data-ttu-id="9d20d-261">**Microsoft. perceptionsimulation. simulatedhandpose. Open**</span><span class="sxs-lookup"><span data-stu-id="9d20d-261">**Microsoft.PerceptionSimulation.SimulatedHandPose.Open**</span></span>
 
-<span data-ttu-id="dded5-261">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine offene Pose widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="dded5-261">The hand's finger joints are configured to reflect an open pose.</span></span>
+<span data-ttu-id="9d20d-262">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine offene Pose widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="9d20d-262">The hand's finger joints are configured to reflect an open pose.</span></span>
 
-<span data-ttu-id="dded5-262">**Microsoft. perceptionsimulation. simulatedhandpose. Point**</span><span class="sxs-lookup"><span data-stu-id="dded5-262">**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**</span></span>
+<span data-ttu-id="9d20d-263">**Microsoft. perceptionsimulation. simulatedhandpose. Point**</span><span class="sxs-lookup"><span data-stu-id="9d20d-263">**Microsoft.PerceptionSimulation.SimulatedHandPose.Point**</span></span>
 
-<span data-ttu-id="dded5-263">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine Zeige Darstellung widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="dded5-263">The hand's finger joints are configured to reflect a pointing pose.</span></span>
+<span data-ttu-id="9d20d-264">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine Zeige Darstellung widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="9d20d-264">The hand's finger joints are configured to reflect a pointing pose.</span></span>
 
-<span data-ttu-id="dded5-264">**Microsoft. perceptionsimulation. simulatedhandpose. Pinch**</span><span class="sxs-lookup"><span data-stu-id="dded5-264">**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**</span></span>
+<span data-ttu-id="9d20d-265">**Microsoft. perceptionsimulation. simulatedhandpose. Pinch**</span><span class="sxs-lookup"><span data-stu-id="9d20d-265">**Microsoft.PerceptionSimulation.SimulatedHandPose.Pinch**</span></span>
 
-<span data-ttu-id="dded5-265">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine zusammendrücken-Pose widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="dded5-265">The hand's finger joints are configured to reflect a pinching pose.</span></span>
+<span data-ttu-id="9d20d-266">Die Fingergelenke der Hand werden so konfiguriert, dass Sie eine zusammendrücken-Pose widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="9d20d-266">The hand's finger joints are configured to reflect a pinching pose.</span></span>
 
-<span data-ttu-id="dded5-266">**Microsoft. perceptionsimulation. simulatedhandpose. Max**</span><span class="sxs-lookup"><span data-stu-id="dded5-266">**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**</span></span>
+<span data-ttu-id="9d20d-267">**Microsoft. perceptionsimulation. simulatedhandpose. Max**</span><span class="sxs-lookup"><span data-stu-id="9d20d-267">**Microsoft.PerceptionSimulation.SimulatedHandPose.Max**</span></span>
 
-<span data-ttu-id="dded5-267">Der maximale gültige Wert für simulatedhandpose.</span><span class="sxs-lookup"><span data-stu-id="dded5-267">The maximum valid value for SimulatedHandPose.</span></span>
+<span data-ttu-id="9d20d-268">Der maximale gültige Wert für simulatedhandpose.</span><span class="sxs-lookup"><span data-stu-id="9d20d-268">The maximum valid value for SimulatedHandPose.</span></span>
 
 
-### <a name="microsoftperceptionsimulationplaybackstate"></a><span data-ttu-id="dded5-268">Microsoft. perceptionsimulation. playbackstate</span><span class="sxs-lookup"><span data-stu-id="dded5-268">Microsoft.PerceptionSimulation.PlaybackState</span></span>
+### <a name="microsoftperceptionsimulationplaybackstate"></a><span data-ttu-id="9d20d-269">Microsoft. perceptionsimulation. playbackstate</span><span class="sxs-lookup"><span data-stu-id="9d20d-269">Microsoft.PerceptionSimulation.PlaybackState</span></span>
 
-<span data-ttu-id="dded5-269">Beschreibt den Zustand einer Wiedergabe.</span><span class="sxs-lookup"><span data-stu-id="dded5-269">Describes the state of a playback.</span></span>
+<span data-ttu-id="9d20d-270">Beschreibt den Zustand einer Wiedergabe.</span><span class="sxs-lookup"><span data-stu-id="9d20d-270">Describes the state of a playback.</span></span>
 
 ```
 public enum PlaybackState
@@ -513,25 +513,25 @@ public enum PlaybackState
 }
 ```
 
-<span data-ttu-id="dded5-270">**Microsoft. perceptionsimulation. playbackstate. beendet**</span><span class="sxs-lookup"><span data-stu-id="dded5-270">**Microsoft.PerceptionSimulation.PlaybackState.Stopped**</span></span>
+<span data-ttu-id="9d20d-271">**Microsoft. perceptionsimulation. playbackstate. beendet**</span><span class="sxs-lookup"><span data-stu-id="9d20d-271">**Microsoft.PerceptionSimulation.PlaybackState.Stopped**</span></span>
 
-<span data-ttu-id="dded5-271">Die Aufzeichnung ist zurzeit beendet und ist für die Wiedergabe bereit.</span><span class="sxs-lookup"><span data-stu-id="dded5-271">The recording is currently stopped and ready for playback.</span></span>
+<span data-ttu-id="9d20d-272">Die Aufzeichnung ist zurzeit beendet und ist für die Wiedergabe bereit.</span><span class="sxs-lookup"><span data-stu-id="9d20d-272">The recording is currently stopped and ready for playback.</span></span>
 
-<span data-ttu-id="dded5-272">**Microsoft. perceptionsimulation. playbackstate. Play**</span><span class="sxs-lookup"><span data-stu-id="dded5-272">**Microsoft.PerceptionSimulation.PlaybackState.Playing**</span></span>
+<span data-ttu-id="9d20d-273">**Microsoft. perceptionsimulation. playbackstate. Play**</span><span class="sxs-lookup"><span data-stu-id="9d20d-273">**Microsoft.PerceptionSimulation.PlaybackState.Playing**</span></span>
 
-<span data-ttu-id="dded5-273">Die Aufzeichnung wird zurzeit wiedergegeben.</span><span class="sxs-lookup"><span data-stu-id="dded5-273">The recording is currently playing.</span></span>
+<span data-ttu-id="9d20d-274">Die Aufzeichnung wird zurzeit wiedergegeben.</span><span class="sxs-lookup"><span data-stu-id="9d20d-274">The recording is currently playing.</span></span>
 
-<span data-ttu-id="dded5-274">**Microsoft. perceptionsimulation. playbackstate. angehalten**</span><span class="sxs-lookup"><span data-stu-id="dded5-274">**Microsoft.PerceptionSimulation.PlaybackState.Paused**</span></span>
+<span data-ttu-id="9d20d-275">**Microsoft. perceptionsimulation. playbackstate. angehalten**</span><span class="sxs-lookup"><span data-stu-id="9d20d-275">**Microsoft.PerceptionSimulation.PlaybackState.Paused**</span></span>
 
-<span data-ttu-id="dded5-275">Die Aufzeichnung ist derzeit angehalten.</span><span class="sxs-lookup"><span data-stu-id="dded5-275">The recording is currently paused.</span></span>
+<span data-ttu-id="9d20d-276">Die Aufzeichnung ist derzeit angehalten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-276">The recording is currently paused.</span></span>
 
-<span data-ttu-id="dded5-276">**Microsoft. perceptionsimulation. playbackstate. End**</span><span class="sxs-lookup"><span data-stu-id="dded5-276">**Microsoft.PerceptionSimulation.PlaybackState.End**</span></span>
+<span data-ttu-id="9d20d-277">**Microsoft. perceptionsimulation. playbackstate. End**</span><span class="sxs-lookup"><span data-stu-id="9d20d-277">**Microsoft.PerceptionSimulation.PlaybackState.End**</span></span>
 
-<span data-ttu-id="dded5-277">Die Aufzeichnung hat das Ende erreicht.</span><span class="sxs-lookup"><span data-stu-id="dded5-277">The recording has reached the end.</span></span>
+<span data-ttu-id="9d20d-278">Die Aufzeichnung hat das Ende erreicht.</span><span class="sxs-lookup"><span data-stu-id="9d20d-278">The recording has reached the end.</span></span>
 
-### <a name="microsoftperceptionsimulationvector3"></a><span data-ttu-id="dded5-278">Microsoft. perceptionsimulation. Vector3</span><span class="sxs-lookup"><span data-stu-id="dded5-278">Microsoft.PerceptionSimulation.Vector3</span></span>
+### <a name="microsoftperceptionsimulationvector3"></a><span data-ttu-id="9d20d-279">Microsoft. perceptionsimulation. Vector3</span><span class="sxs-lookup"><span data-stu-id="9d20d-279">Microsoft.PerceptionSimulation.Vector3</span></span>
 
-<span data-ttu-id="dded5-279">Beschreibt einen 3-Komponenten Vektor, der einen Punkt oder einen Vektor im 3D-Raum beschreiben könnte.</span><span class="sxs-lookup"><span data-stu-id="dded5-279">Describes a 3 components vector, which might describe a point or a vector in 3D space.</span></span>
+<span data-ttu-id="9d20d-280">Beschreibt einen Vektor von drei Komponenten, der einen Punkt oder einen Vektor im 3D-Raum beschreiben kann.</span><span class="sxs-lookup"><span data-stu-id="9d20d-280">Describes a three components vector, which might describe a point or a vector in 3D space.</span></span>
 
 ```
 public struct Vector3
@@ -543,30 +543,30 @@ public struct Vector3
 }
 ```
 
-<span data-ttu-id="dded5-280">**Microsoft. perceptionsimulation. Vector3. X**</span><span class="sxs-lookup"><span data-stu-id="dded5-280">**Microsoft.PerceptionSimulation.Vector3.X**</span></span>
+<span data-ttu-id="9d20d-281">**Microsoft. perceptionsimulation. Vector3. X**</span><span class="sxs-lookup"><span data-stu-id="9d20d-281">**Microsoft.PerceptionSimulation.Vector3.X**</span></span>
 
-<span data-ttu-id="dded5-281">Die X-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="dded5-281">The X component of the vector.</span></span>
+<span data-ttu-id="9d20d-282">Die X-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="9d20d-282">The X component of the vector.</span></span>
 
-<span data-ttu-id="dded5-282">**Microsoft. perceptionsimulation. Vector3. Y**</span><span class="sxs-lookup"><span data-stu-id="dded5-282">**Microsoft.PerceptionSimulation.Vector3.Y**</span></span>
+<span data-ttu-id="9d20d-283">**Microsoft. perceptionsimulation. Vector3. Y**</span><span class="sxs-lookup"><span data-stu-id="9d20d-283">**Microsoft.PerceptionSimulation.Vector3.Y**</span></span>
 
-<span data-ttu-id="dded5-283">Die Y-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="dded5-283">The Y component of the vector.</span></span>
+<span data-ttu-id="9d20d-284">Die Y-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="9d20d-284">The Y component of the vector.</span></span>
 
-<span data-ttu-id="dded5-284">**Microsoft. perceptionsimulation. Vector3. Z**</span><span class="sxs-lookup"><span data-stu-id="dded5-284">**Microsoft.PerceptionSimulation.Vector3.Z**</span></span>
+<span data-ttu-id="9d20d-285">**Microsoft. perceptionsimulation. Vector3. Z**</span><span class="sxs-lookup"><span data-stu-id="9d20d-285">**Microsoft.PerceptionSimulation.Vector3.Z**</span></span>
 
-<span data-ttu-id="dded5-285">Die Z-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="dded5-285">The Z component of the vector.</span></span>
+<span data-ttu-id="9d20d-286">Die Z-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="9d20d-286">The Z component of the vector.</span></span>
 
-<span data-ttu-id="dded5-286">**Microsoft. perceptionsimulation. Vector3. #ctor (System. Single, System. Single, System. Single)**</span><span class="sxs-lookup"><span data-stu-id="dded5-286">**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**</span></span>
+<span data-ttu-id="9d20d-287">**Microsoft. perceptionsimulation. Vector3. #ctor (System. Single, System. Single, System. Single)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-287">**Microsoft.PerceptionSimulation.Vector3.#ctor(System.Single,System.Single,System.Single)**</span></span>
 
-<span data-ttu-id="dded5-287">Erstellen Sie eine neue Vector3.</span><span class="sxs-lookup"><span data-stu-id="dded5-287">Construct a new Vector3.</span></span>
+<span data-ttu-id="9d20d-288">Erstellen Sie eine neue Vector3.</span><span class="sxs-lookup"><span data-stu-id="9d20d-288">Construct a new Vector3.</span></span>
 
-<span data-ttu-id="dded5-288">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-288">Parameters</span></span>
-* <span data-ttu-id="dded5-289">x: die x-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="dded5-289">x - The x component of the vector.</span></span>
-* <span data-ttu-id="dded5-290">y: die y-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="dded5-290">y - The y component of the vector.</span></span>
-* <span data-ttu-id="dded5-291">z-die z-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="dded5-291">z - The z component of the vector.</span></span>
+<span data-ttu-id="9d20d-289">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-289">Parameters</span></span>
+* <span data-ttu-id="9d20d-290">x: die x-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="9d20d-290">x - The x component of the vector.</span></span>
+* <span data-ttu-id="9d20d-291">y: die y-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="9d20d-291">y - The y component of the vector.</span></span>
+* <span data-ttu-id="9d20d-292">z-die z-Komponente des Vektors.</span><span class="sxs-lookup"><span data-stu-id="9d20d-292">z - The z component of the vector.</span></span>
 
-### <a name="microsoftperceptionsimulationrotation3"></a><span data-ttu-id="dded5-292">Microsoft. perceptionsimulation. Rotation3</span><span class="sxs-lookup"><span data-stu-id="dded5-292">Microsoft.PerceptionSimulation.Rotation3</span></span>
+### <a name="microsoftperceptionsimulationrotation3"></a><span data-ttu-id="9d20d-293">Microsoft. perceptionsimulation. Rotation3</span><span class="sxs-lookup"><span data-stu-id="9d20d-293">Microsoft.PerceptionSimulation.Rotation3</span></span>
 
-<span data-ttu-id="dded5-293">Beschreibt eine 3-Komponenten Rotation.</span><span class="sxs-lookup"><span data-stu-id="dded5-293">Describes a 3 components rotation.</span></span>
+<span data-ttu-id="9d20d-294">Beschreibt eine drei Komponenten Rotation.</span><span class="sxs-lookup"><span data-stu-id="9d20d-294">Describes a three components rotation.</span></span>
 
 ```
 public struct Rotation3
@@ -578,30 +578,30 @@ public struct Rotation3
 }
 ```
 
-<span data-ttu-id="dded5-294">**Microsoft. perceptionsimulation. Rotation3. Pitch**</span><span class="sxs-lookup"><span data-stu-id="dded5-294">**Microsoft.PerceptionSimulation.Rotation3.Pitch**</span></span>
+<span data-ttu-id="9d20d-295">**Microsoft. perceptionsimulation. Rotation3. Pitch**</span><span class="sxs-lookup"><span data-stu-id="9d20d-295">**Microsoft.PerceptionSimulation.Rotation3.Pitch**</span></span>
 
-<span data-ttu-id="dded5-295">Die Tonkomponente der Drehung um die X-Achse.</span><span class="sxs-lookup"><span data-stu-id="dded5-295">The Pitch component of the Rotation, down around the X axis.</span></span>
+<span data-ttu-id="9d20d-296">Die Tonkomponente der Drehung um die X-Achse.</span><span class="sxs-lookup"><span data-stu-id="9d20d-296">The Pitch component of the Rotation, down around the X axis.</span></span>
 
-<span data-ttu-id="dded5-296">**Microsoft. perceptionsimulation. Rotation3. Yaw**</span><span class="sxs-lookup"><span data-stu-id="dded5-296">**Microsoft.PerceptionSimulation.Rotation3.Yaw**</span></span>
+<span data-ttu-id="9d20d-297">**Microsoft. perceptionsimulation. Rotation3. Yaw**</span><span class="sxs-lookup"><span data-stu-id="9d20d-297">**Microsoft.PerceptionSimulation.Rotation3.Yaw**</span></span>
 
-<span data-ttu-id="dded5-297">Die GW-Komponente der Drehung, direkt um die Y-Achse.</span><span class="sxs-lookup"><span data-stu-id="dded5-297">The Yaw component of the Rotation, right around the Y axis.</span></span>
+<span data-ttu-id="9d20d-298">Die GW-Komponente der Drehung, direkt um die Y-Achse.</span><span class="sxs-lookup"><span data-stu-id="9d20d-298">The Yaw component of the Rotation, right around the Y axis.</span></span>
 
-<span data-ttu-id="dded5-298">**Microsoft. perceptionsimulation. Rotation3. Roll**</span><span class="sxs-lookup"><span data-stu-id="dded5-298">**Microsoft.PerceptionSimulation.Rotation3.Roll**</span></span>
+<span data-ttu-id="9d20d-299">**Microsoft. perceptionsimulation. Rotation3. Roll**</span><span class="sxs-lookup"><span data-stu-id="9d20d-299">**Microsoft.PerceptionSimulation.Rotation3.Roll**</span></span>
 
-<span data-ttu-id="dded5-299">Die rollenkomponente der Drehung, direkt um die Z-Achse.</span><span class="sxs-lookup"><span data-stu-id="dded5-299">The Roll component of the Rotation, right around the Z axis.</span></span>
+<span data-ttu-id="9d20d-300">Die rollenkomponente der Drehung, direkt um die Z-Achse.</span><span class="sxs-lookup"><span data-stu-id="9d20d-300">The Roll component of the Rotation, right around the Z axis.</span></span>
 
-<span data-ttu-id="dded5-300">**Microsoft. perceptionsimulation. Rotation3. #ctor (System. Single, System. Single, System. Single)**</span><span class="sxs-lookup"><span data-stu-id="dded5-300">**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**</span></span>
+<span data-ttu-id="9d20d-301">**Microsoft. perceptionsimulation. Rotation3. #ctor (System. Single, System. Single, System. Single)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-301">**Microsoft.PerceptionSimulation.Rotation3.#ctor(System.Single,System.Single,System.Single)**</span></span>
 
-<span data-ttu-id="dded5-301">Erstellen Sie eine neue Rotation3.</span><span class="sxs-lookup"><span data-stu-id="dded5-301">Construct a new Rotation3.</span></span>
+<span data-ttu-id="9d20d-302">Erstellen Sie eine neue Rotation3.</span><span class="sxs-lookup"><span data-stu-id="9d20d-302">Construct a new Rotation3.</span></span>
 
-<span data-ttu-id="dded5-302">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-302">Parameters</span></span>
-* <span data-ttu-id="dded5-303">Pitch: die Tonkomponente der Drehung.</span><span class="sxs-lookup"><span data-stu-id="dded5-303">pitch - The pitch component of the Rotation.</span></span>
-* <span data-ttu-id="dded5-304">Yaw-die Yaw-Komponente der Drehung.</span><span class="sxs-lookup"><span data-stu-id="dded5-304">yaw - The yaw component of the Rotation.</span></span>
-* <span data-ttu-id="dded5-305">Rollup der rollforwardkomponente der Drehung.</span><span class="sxs-lookup"><span data-stu-id="dded5-305">roll - The roll component of the Rotation.</span></span>
+<span data-ttu-id="9d20d-303">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-303">Parameters</span></span>
+* <span data-ttu-id="9d20d-304">Pitch: die Tonkomponente der Drehung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-304">pitch - The pitch component of the Rotation.</span></span>
+* <span data-ttu-id="9d20d-305">Yaw-die Yaw-Komponente der Drehung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-305">yaw - The yaw component of the Rotation.</span></span>
+* <span data-ttu-id="9d20d-306">Rollup der rollforwardkomponente der Drehung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-306">roll - The roll component of the Rotation.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulatedhandjointconfiguration"></a><span data-ttu-id="dded5-306">Microsoft. perceptionsimulation. simulatedhandjointconfiguration</span><span class="sxs-lookup"><span data-stu-id="dded5-306">Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration</span></span>
+### <a name="microsoftperceptionsimulationsimulatedhandjointconfiguration"></a><span data-ttu-id="9d20d-307">Microsoft. perceptionsimulation. simulatedhandjointconfiguration</span><span class="sxs-lookup"><span data-stu-id="9d20d-307">Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration</span></span>
 
-<span data-ttu-id="dded5-307">Beschreibt die Konfiguration einer zusammenhängenden in einer simulierten Hand.</span><span class="sxs-lookup"><span data-stu-id="dded5-307">Describes the configuration of a joint on a simulated hand.</span></span>
+<span data-ttu-id="9d20d-308">Beschreibt die Konfiguration einer zusammenhängenden in einer simulierten Hand.</span><span class="sxs-lookup"><span data-stu-id="9d20d-308">Describes the configuration of a joint on a simulated hand.</span></span>
 
 ```
 public struct SimulatedHandJointConfiguration
@@ -612,22 +612,22 @@ public struct SimulatedHandJointConfiguration
 }
 ```
 
-<span data-ttu-id="dded5-308">**Microsoft. perceptionsimulation. simulatedhandjointconfiguration. Position**</span><span class="sxs-lookup"><span data-stu-id="dded5-308">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**</span></span>
+<span data-ttu-id="9d20d-309">**Microsoft. perceptionsimulation. simulatedhandjointconfiguration. Position**</span><span class="sxs-lookup"><span data-stu-id="9d20d-309">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Position**</span></span>
 
-<span data-ttu-id="dded5-309">Die Position des gemeinsamen.</span><span class="sxs-lookup"><span data-stu-id="dded5-309">The position of the joint.</span></span>
+<span data-ttu-id="9d20d-310">Die Position des gemeinsamen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-310">The position of the joint.</span></span>
 
-<span data-ttu-id="dded5-310">**Microsoft. perceptionsimulation. simulatedhandjointconfiguration. Rotation**</span><span class="sxs-lookup"><span data-stu-id="dded5-310">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**</span></span>
+<span data-ttu-id="9d20d-311">**Microsoft. perceptionsimulation. simulatedhandjointconfiguration. Rotation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-311">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.Rotation**</span></span>
 
-<span data-ttu-id="dded5-311">Die Drehung der gemeinsam.</span><span class="sxs-lookup"><span data-stu-id="dded5-311">The rotation of the joint.</span></span>
+<span data-ttu-id="9d20d-312">Die Drehung der gemeinsam.</span><span class="sxs-lookup"><span data-stu-id="9d20d-312">The rotation of the joint.</span></span>
 
-<span data-ttu-id="dded5-312">**Microsoft. perceptionsimulation. simulatedhandjointconfiguration. trackingaccuracy**</span><span class="sxs-lookup"><span data-stu-id="dded5-312">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**</span></span>
+<span data-ttu-id="9d20d-313">**Microsoft. perceptionsimulation. simulatedhandjointconfiguration. trackingaccuracy**</span><span class="sxs-lookup"><span data-stu-id="9d20d-313">**Microsoft.PerceptionSimulation.SimulatedHandJointConfiguration.TrackingAccuracy**</span></span>
 
-<span data-ttu-id="dded5-313">Die nach Verfolgungs Genauigkeit der gemeinsamen.</span><span class="sxs-lookup"><span data-stu-id="dded5-313">The tracking accuracy of the joint.</span></span>
+<span data-ttu-id="9d20d-314">Die nach Verfolgungs Genauigkeit der gemeinsamen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-314">The tracking accuracy of the joint.</span></span>
 
 
-### <a name="microsoftperceptionsimulationfrustum"></a><span data-ttu-id="dded5-314">Microsoft. perceptionsimulation. Frustum</span><span class="sxs-lookup"><span data-stu-id="dded5-314">Microsoft.PerceptionSimulation.Frustum</span></span>
+### <a name="microsoftperceptionsimulationfrustum"></a><span data-ttu-id="9d20d-315">Microsoft. perceptionsimulation. Frustum</span><span class="sxs-lookup"><span data-stu-id="9d20d-315">Microsoft.PerceptionSimulation.Frustum</span></span>
 
-<span data-ttu-id="dded5-315">Beschreibt eine Ansicht, wie Sie in der Regel von einer Kamera verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-315">Describes a view frustum, as typically used by a camera.</span></span>
+<span data-ttu-id="9d20d-316">Beschreibt eine Ansicht, wie Sie in der Regel von einer Kamera verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-316">Describes a view frustum, as typically used by a camera.</span></span>
 
 ```
 public struct Frustum
@@ -639,25 +639,25 @@ public struct Frustum
 }
 ```
 
-<span data-ttu-id="dded5-316">**Microsoft. perceptionsimulation. Frustum. Near**</span><span class="sxs-lookup"><span data-stu-id="dded5-316">**Microsoft.PerceptionSimulation.Frustum.Near**</span></span>
+<span data-ttu-id="9d20d-317">**Microsoft. perceptionsimulation. Frustum. Near**</span><span class="sxs-lookup"><span data-stu-id="9d20d-317">**Microsoft.PerceptionSimulation.Frustum.Near**</span></span>
 
-<span data-ttu-id="dded5-317">Der Mindestabstand, der in der Frustum-Klasse enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-317">The minimum distance that is contained in the frustum.</span></span>
+<span data-ttu-id="9d20d-318">Der Mindestabstand, der in der Frustum-Klasse enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-318">The minimum distance that is contained in the frustum.</span></span>
 
-<span data-ttu-id="dded5-318">**Microsoft. perceptionsimulation. Frustum. Far**</span><span class="sxs-lookup"><span data-stu-id="dded5-318">**Microsoft.PerceptionSimulation.Frustum.Far**</span></span>
+<span data-ttu-id="9d20d-319">**Microsoft. perceptionsimulation. Frustum. Far**</span><span class="sxs-lookup"><span data-stu-id="9d20d-319">**Microsoft.PerceptionSimulation.Frustum.Far**</span></span>
 
-<span data-ttu-id="dded5-319">Der maximale Abstand, der in der Frustum-Klasse enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-319">The maximum distance that is contained in the frustum.</span></span>
+<span data-ttu-id="9d20d-320">Der maximale Abstand, der in der Frustum-Klasse enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-320">The maximum distance that is contained in the frustum.</span></span>
 
-<span data-ttu-id="dded5-320">**Microsoft. perceptionsimulation. Frustum. fieldofiview**</span><span class="sxs-lookup"><span data-stu-id="dded5-320">**Microsoft.PerceptionSimulation.Frustum.FieldOfView**</span></span>
+<span data-ttu-id="9d20d-321">**Microsoft. perceptionsimulation. Frustum. fieldofiview**</span><span class="sxs-lookup"><span data-stu-id="9d20d-321">**Microsoft.PerceptionSimulation.Frustum.FieldOfView**</span></span>
 
-<span data-ttu-id="dded5-321">Das horizontale Feld der Ansicht des Frustum im Bogenmaße (kleiner als PI).</span><span class="sxs-lookup"><span data-stu-id="dded5-321">The horizontal field of view of the frustum, in radians (less than PI).</span></span>
+<span data-ttu-id="9d20d-322">Das horizontale Feld der Ansicht des Frustum im Bogenmaße (kleiner als PI).</span><span class="sxs-lookup"><span data-stu-id="9d20d-322">The horizontal field of view of the frustum, in radians (less than PI).</span></span>
 
-<span data-ttu-id="dded5-322">**Microsoft. perceptionsimulation. Frustum. AspectRatio**</span><span class="sxs-lookup"><span data-stu-id="dded5-322">**Microsoft.PerceptionSimulation.Frustum.AspectRatio**</span></span>
+<span data-ttu-id="9d20d-323">**Microsoft. perceptionsimulation. Frustum. AspectRatio**</span><span class="sxs-lookup"><span data-stu-id="9d20d-323">**Microsoft.PerceptionSimulation.Frustum.AspectRatio**</span></span>
 
-<span data-ttu-id="dded5-323">Das Verhältnis des horizontalen Sicht Felds zum vertikalen Sichtfeld.</span><span class="sxs-lookup"><span data-stu-id="dded5-323">The ratio of horizontal field of view to vertical field of view.</span></span>
+<span data-ttu-id="9d20d-324">Das Verhältnis des horizontalen Sicht Felds zum vertikalen Sichtfeld.</span><span class="sxs-lookup"><span data-stu-id="9d20d-324">The ratio of horizontal field of view to vertical field of view.</span></span>
 
-### <a name="microsoftperceptionsimulationsimulateddisplayconfiguration"></a><span data-ttu-id="dded5-324">Microsoft. perceptionsimulation. simulateddisplayconfiguration</span><span class="sxs-lookup"><span data-stu-id="dded5-324">Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration</span></span>
+### <a name="microsoftperceptionsimulationsimulateddisplayconfiguration"></a><span data-ttu-id="9d20d-325">Microsoft. perceptionsimulation. simulateddisplayconfiguration</span><span class="sxs-lookup"><span data-stu-id="9d20d-325">Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration</span></span>
 
-<span data-ttu-id="dded5-325">Beschreibt die Konfiguration der Anzeige des simulierten Headsets.</span><span class="sxs-lookup"><span data-stu-id="dded5-325">Describes the configuration of the simulated headset's display.</span></span>
+<span data-ttu-id="9d20d-326">Beschreibt die Konfiguration der Anzeige des simulierten Headsets.</span><span class="sxs-lookup"><span data-stu-id="9d20d-326">Describes the configuration of the simulated headset's display.</span></span>
 
 ```
 public struct SimulatedDisplayConfiguration
@@ -672,38 +672,38 @@ public struct SimulatedDisplayConfiguration
 }
 ```
 
-<span data-ttu-id="dded5-326">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. lefteyeposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-326">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyePosition**</span></span>
+<span data-ttu-id="9d20d-327">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. lefteyeposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-327">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyePosition**</span></span>
 
-<span data-ttu-id="dded5-327">Die Transformation von der Mitte des Kopfes nach Links für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="dded5-327">The transform from the center of the head to the left eye for purposes of stereo rendering.</span></span>
+<span data-ttu-id="9d20d-328">Die Transformation von der Mitte des Kopfes nach Links für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="9d20d-328">The transform from the center of the head to the left eye for purposes of stereo rendering.</span></span>
 
-<span data-ttu-id="dded5-328">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. lefteyerotation**</span><span class="sxs-lookup"><span data-stu-id="dded5-328">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyeRotation**</span></span>
+<span data-ttu-id="9d20d-329">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. lefteyerotation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-329">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.LeftEyeRotation**</span></span>
 
-<span data-ttu-id="dded5-329">Die Drehung der linken Seite für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="dded5-329">The rotation of the left eye for purposes of stereo rendering.</span></span>
+<span data-ttu-id="9d20d-330">Die Drehung der linken Seite für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="9d20d-330">The rotation of the left eye for purposes of stereo rendering.</span></span>
 
-<span data-ttu-id="dded5-330">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. rechtschaffyeposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-330">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyePosition**</span></span>
+<span data-ttu-id="9d20d-331">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. rechtschaffyeposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-331">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyePosition**</span></span>
 
-<span data-ttu-id="dded5-331">Die Transformation von der Mitte des Kopfes zum rechten Auge für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="dded5-331">The transform from the center of the head to the right eye for purposes of stereo rendering.</span></span>
+<span data-ttu-id="9d20d-332">Die Transformation von der Mitte des Kopfes zum rechten Auge für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="9d20d-332">The transform from the center of the head to the right eye for purposes of stereo rendering.</span></span>
 
-<span data-ttu-id="dded5-332">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. rechtschafferiotation**</span><span class="sxs-lookup"><span data-stu-id="dded5-332">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyeRotation**</span></span>
+<span data-ttu-id="9d20d-333">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. rechtschafferiotation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-333">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.RightEyeRotation**</span></span>
 
-<span data-ttu-id="dded5-333">Die Drehung des rechten Auges für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="dded5-333">The rotation of the right eye for purposes of stereo rendering.</span></span>
+<span data-ttu-id="9d20d-334">Die Drehung des rechten Auges für das Stereo Rendering.</span><span class="sxs-lookup"><span data-stu-id="9d20d-334">The rotation of the right eye for purposes of stereo rendering.</span></span>
 
-<span data-ttu-id="dded5-334">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. IPD**</span><span class="sxs-lookup"><span data-stu-id="dded5-334">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.Ipd**</span></span>
+<span data-ttu-id="9d20d-335">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. IPD**</span><span class="sxs-lookup"><span data-stu-id="9d20d-335">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.Ipd**</span></span>
 
-<span data-ttu-id="dded5-335">Der IPD-Wert, der vom System für das Stereo Rendering gemeldet wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-335">The Ipd value reported by the system for purposes of stereo rendering.</span></span>
+<span data-ttu-id="9d20d-336">Der IPD-Wert, der vom System für das Stereo Rendering gemeldet wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-336">The Ipd value reported by the system for purposes of stereo rendering.</span></span>
 
-<span data-ttu-id="dded5-336">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. applyeyetransformationen**</span><span class="sxs-lookup"><span data-stu-id="dded5-336">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyEyeTransforms**</span></span>
+<span data-ttu-id="9d20d-337">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. applyeyetransformationen**</span><span class="sxs-lookup"><span data-stu-id="9d20d-337">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyEyeTransforms**</span></span>
 
-<span data-ttu-id="dded5-337">Ob die für "Left" und "Right Eye" bereitgestellten Werte als gültig eingestuft werden und auf das laufende System angewendet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="dded5-337">Whether or not the values provided for left and right eye transforms should be considered valid and applied to the running system.</span></span>
+<span data-ttu-id="9d20d-338">Ob die für "Left" und "Right Eye" bereitgestellten Werte als gültig eingestuft und auf das laufende System angewendet werden sollen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-338">Whether the values provided for left and right eye transforms should be considered valid and applied to the running system.</span></span>
 
-<span data-ttu-id="dded5-338">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. applyipd**</span><span class="sxs-lookup"><span data-stu-id="dded5-338">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyIpd**</span></span>
+<span data-ttu-id="9d20d-339">**Microsoft. perceptionsimulation. simulateddisplayconfiguration. applyipd**</span><span class="sxs-lookup"><span data-stu-id="9d20d-339">**Microsoft.PerceptionSimulation.SimulatedDisplayConfiguration.ApplyIpd**</span></span>
 
-<span data-ttu-id="dded5-339">Gibt an, ob der für IPD angegebene Wert gültig und auf das laufende System angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-339">Whether or not the value provided for Ipd should be considered valid and applied to the running system.</span></span>
+<span data-ttu-id="9d20d-340">Gibt an, ob der für IPD angegebene Wert als gültig eingestuft und auf das laufende System angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-340">Whether the value provided for Ipd should be considered valid and applied to the running system.</span></span>
 
 
-### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a><span data-ttu-id="dded5-340">Microsoft. perceptionsimulation. ipertionsimulationmanager</span><span class="sxs-lookup"><span data-stu-id="dded5-340">Microsoft.PerceptionSimulation.IPerceptionSimulationManager</span></span>
+### <a name="microsoftperceptionsimulationiperceptionsimulationmanager"></a><span data-ttu-id="9d20d-341">Microsoft. perceptionsimulation. ipertionsimulationmanager</span><span class="sxs-lookup"><span data-stu-id="9d20d-341">Microsoft.PerceptionSimulation.IPerceptionSimulationManager</span></span>
 
-<span data-ttu-id="dded5-341">Der Stamm zum Erstellen der zum Steuern eines Geräts verwendeten Pakete.</span><span class="sxs-lookup"><span data-stu-id="dded5-341">Root for generating the packets used to control a device.</span></span>
+<span data-ttu-id="9d20d-342">Der Stamm zum Erstellen der zum Steuern eines Geräts verwendeten Pakete.</span><span class="sxs-lookup"><span data-stu-id="9d20d-342">Root for generating the packets used to control a device.</span></span>
 
 ```
 public interface IPerceptionSimulationManager
@@ -714,21 +714,21 @@ public interface IPerceptionSimulationManager
 }
 ```
 
-<span data-ttu-id="dded5-342">**Microsoft. perceptionsimulation. ipertionsimulationmanager. Device**</span><span class="sxs-lookup"><span data-stu-id="dded5-342">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**</span></span>
+<span data-ttu-id="9d20d-343">**Microsoft. perceptionsimulation. ipertionsimulationmanager. Device**</span><span class="sxs-lookup"><span data-stu-id="9d20d-343">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Device**</span></span>
 
-<span data-ttu-id="dded5-343">Rufen Sie das simulierte Geräte Objekt ab, das den simulierten Menschen und die simulierte Welt interpretiert.</span><span class="sxs-lookup"><span data-stu-id="dded5-343">Retrieve the simulated device object that interprets the simulated human and the simulated world.</span></span>
+<span data-ttu-id="9d20d-344">Rufen Sie das simulierte Geräte Objekt ab, das den simulierten Menschen und die simulierte Welt interpretiert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-344">Retrieve the simulated device object that interprets the simulated human and the simulated world.</span></span>
 
-<span data-ttu-id="dded5-344">**Microsoft. perceptionsimulation. ipertionsimulationmanager. Human**</span><span class="sxs-lookup"><span data-stu-id="dded5-344">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**</span></span>
+<span data-ttu-id="9d20d-345">**Microsoft. perceptionsimulation. ipertionsimulationmanager. Human**</span><span class="sxs-lookup"><span data-stu-id="9d20d-345">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Human**</span></span>
 
-<span data-ttu-id="dded5-345">Rufen Sie das-Objekt ab, das den simulierten Menschen steuert.</span><span class="sxs-lookup"><span data-stu-id="dded5-345">Retrieve the object that controls the simulated human.</span></span>
+<span data-ttu-id="9d20d-346">Rufen Sie das-Objekt ab, das den simulierten Menschen steuert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-346">Retrieve the object that controls the simulated human.</span></span>
 
-<span data-ttu-id="dded5-346">**Microsoft. perceptionsimulation. ipertionsimulationmanager. Reset**</span><span class="sxs-lookup"><span data-stu-id="dded5-346">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**</span></span>
+<span data-ttu-id="9d20d-347">**Microsoft. perceptionsimulation. ipertionsimulationmanager. Reset**</span><span class="sxs-lookup"><span data-stu-id="9d20d-347">**Microsoft.PerceptionSimulation.IPerceptionSimulationManager.Reset**</span></span>
 
-<span data-ttu-id="dded5-347">Setzt die Simulation auf ihren Standardzustand zurück.</span><span class="sxs-lookup"><span data-stu-id="dded5-347">Resets the simulation to its default state.</span></span>
+<span data-ttu-id="9d20d-348">Setzt die Simulation auf ihren Standardzustand zurück.</span><span class="sxs-lookup"><span data-stu-id="9d20d-348">Resets the simulation to its default state.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulateddevice"></a><span data-ttu-id="dded5-348">Microsoft. perceptionsimulation. isimulateddevice</span><span class="sxs-lookup"><span data-stu-id="dded5-348">Microsoft.PerceptionSimulation.ISimulatedDevice</span></span>
+### <a name="microsoftperceptionsimulationisimulateddevice"></a><span data-ttu-id="9d20d-349">Microsoft. perceptionsimulation. isimulateddevice</span><span class="sxs-lookup"><span data-stu-id="9d20d-349">Microsoft.PerceptionSimulation.ISimulatedDevice</span></span>
 
-<span data-ttu-id="dded5-349">Schnittstelle, die das Gerät beschreibt, das die simulierte Welt und den simulierten Menschen interpretiert</span><span class="sxs-lookup"><span data-stu-id="dded5-349">Interface describing the device which interprets the simulated world and the simulated human</span></span>
+<span data-ttu-id="9d20d-350">Schnittstelle, die das Gerät beschreibt, das die simulierte Welt und den simulierten Menschen interpretiert</span><span class="sxs-lookup"><span data-stu-id="9d20d-350">Interface describing the device, which interprets the simulated world and the simulated human</span></span>
 
 ```
 public interface ISimulatedDevice
@@ -739,24 +739,24 @@ public interface ISimulatedDevice
 }
 ```
 
-<span data-ttu-id="dded5-350">**Microsoft. perceptionsimulation. isimulateddevice. headtracker**</span><span class="sxs-lookup"><span data-stu-id="dded5-350">**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**</span></span>
+<span data-ttu-id="9d20d-351">**Microsoft. perceptionsimulation. isimulateddevice. headtracker**</span><span class="sxs-lookup"><span data-stu-id="9d20d-351">**Microsoft.PerceptionSimulation.ISimulatedDevice.HeadTracker**</span></span>
 
-<span data-ttu-id="dded5-351">Rufen Sie den Head Tracker vom simulierten Gerät ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-351">Retrieve the Head Tracker from the Simulated Device.</span></span>
+<span data-ttu-id="9d20d-352">Rufen Sie den Head Tracker vom simulierten Gerät ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-352">Retrieve the Head Tracker from the Simulated Device.</span></span>
 
-<span data-ttu-id="dded5-352">**Microsoft. perceptionsimulation. isimulateddevice. Handtracker**</span><span class="sxs-lookup"><span data-stu-id="dded5-352">**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**</span></span>
+<span data-ttu-id="9d20d-353">**Microsoft. perceptionsimulation. isimulateddevice. Handtracker**</span><span class="sxs-lookup"><span data-stu-id="9d20d-353">**Microsoft.PerceptionSimulation.ISimulatedDevice.HandTracker**</span></span>
 
-<span data-ttu-id="dded5-353">Rufen Sie die Hand Verfolgung vom simulierten Gerät ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-353">Retrieve the Hand Tracker from the Simulated Device.</span></span>
+<span data-ttu-id="9d20d-354">Rufen Sie die Hand Verfolgung vom simulierten Gerät ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-354">Retrieve the Hand Tracker from the Simulated Device.</span></span>
 
-<span data-ttu-id="dded5-354">**Microsoft. perceptionsimulation. isimulateddevice. setsimulatedde vicetype (Microsoft. perceptionsimulation. simulateddebug Type)**</span><span class="sxs-lookup"><span data-stu-id="dded5-354">**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**</span></span>
+<span data-ttu-id="9d20d-355">**Microsoft. perceptionsimulation. isimulateddevice. setsimulatedde vicetype (Microsoft. perceptionsimulation. simulateddebug Type)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-355">**Microsoft.PerceptionSimulation.ISimulatedDevice.SetSimulatedDeviceType(Microsoft.PerceptionSimulation.SimulatedDeviceType)**</span></span>
 
-<span data-ttu-id="dded5-355">Legen Sie die Eigenschaften des simulierten Geräts so fest, dass Sie dem angegebenen Gerätetyp entsprechen.</span><span class="sxs-lookup"><span data-stu-id="dded5-355">Set the properties of the simulated device to match the provided device type.</span></span>
+<span data-ttu-id="9d20d-356">Legen Sie die Eigenschaften des simulierten Geräts so fest, dass Sie dem angegebenen Gerätetyp entsprechen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-356">Set the properties of the simulated device to match the provided device type.</span></span>
 
-<span data-ttu-id="dded5-356">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-356">Parameters</span></span>
-* <span data-ttu-id="dded5-357">Type: der neue Typ des simulierten Geräts</span><span class="sxs-lookup"><span data-stu-id="dded5-357">type - The new type of Simulated Device</span></span>
+<span data-ttu-id="9d20d-357">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-357">Parameters</span></span>
+* <span data-ttu-id="9d20d-358">Type: der neue Typ des simulierten Geräts</span><span class="sxs-lookup"><span data-stu-id="9d20d-358">type - The new type of Simulated Device</span></span>
 
-### <a name="microsoftperceptionsimulationisimulateddevice2"></a><span data-ttu-id="dded5-358">Microsoft. perceptionsimulation. ISimulatedDevice2</span><span class="sxs-lookup"><span data-stu-id="dded5-358">Microsoft.PerceptionSimulation.ISimulatedDevice2</span></span>
+### <a name="microsoftperceptionsimulationisimulateddevice2"></a><span data-ttu-id="9d20d-359">Microsoft. perceptionsimulation. ISimulatedDevice2</span><span class="sxs-lookup"><span data-stu-id="9d20d-359">Microsoft.PerceptionSimulation.ISimulatedDevice2</span></span>
 
-<span data-ttu-id="dded5-359">Wenn Sie isimulateddevice in ISimulatedDevice2 umwandeln, sind zusätzliche Eigenschaften verfügbar.</span><span class="sxs-lookup"><span data-stu-id="dded5-359">Additional properties are available by casting the ISimulatedDevice to ISimulatedDevice2</span></span>
+<span data-ttu-id="9d20d-360">Wenn Sie isimulateddevice in ISimulatedDevice2 umwandeln, sind zusätzliche Eigenschaften verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9d20d-360">Additional properties are available by casting the ISimulatedDevice to ISimulatedDevice2</span></span>
 
 ```
 public interface ISimulatedDevice2
@@ -767,17 +767,17 @@ public interface ISimulatedDevice2
 };
 ```
 
-<span data-ttu-id="dded5-360">**Microsoft. perceptionsimulation. ISimulatedDevice2. isuserpresent**</span><span class="sxs-lookup"><span data-stu-id="dded5-360">**Microsoft.PerceptionSimulation.ISimulatedDevice2.IsUserPresent**</span></span>
+<span data-ttu-id="9d20d-361">**Microsoft. perceptionsimulation. ISimulatedDevice2. isuserpresent**</span><span class="sxs-lookup"><span data-stu-id="9d20d-361">**Microsoft.PerceptionSimulation.ISimulatedDevice2.IsUserPresent**</span></span>
 
-<span data-ttu-id="dded5-361">Ruft ab oder legt fest, ob der simulierte Mensch das Headset aktiv durchläuft.</span><span class="sxs-lookup"><span data-stu-id="dded5-361">Retrieve or set whether or not the simulated human is actively wearing the headset.</span></span>
+<span data-ttu-id="9d20d-362">Ruft ab oder legt fest, ob der simulierte Mensch das Headset aktiv durchläuft.</span><span class="sxs-lookup"><span data-stu-id="9d20d-362">Retrieve or set whether or not the simulated human is actively wearing the headset.</span></span>
 
-<span data-ttu-id="dded5-362">**Microsoft. perceptionsimulation. ISimulatedDevice2. displayconfiguration**</span><span class="sxs-lookup"><span data-stu-id="dded5-362">**Microsoft.PerceptionSimulation.ISimulatedDevice2.DisplayConfiguration**</span></span>
+<span data-ttu-id="9d20d-363">**Microsoft. perceptionsimulation. ISimulatedDevice2. displayconfiguration**</span><span class="sxs-lookup"><span data-stu-id="9d20d-363">**Microsoft.PerceptionSimulation.ISimulatedDevice2.DisplayConfiguration**</span></span>
 
-<span data-ttu-id="dded5-363">Ruft die Eigenschaften der simulierten Anzeige ab oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-363">Retrieve or set the properties of the simulated display.</span></span>
+<span data-ttu-id="9d20d-364">Ruft die Eigenschaften der simulierten Anzeige ab oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-364">Retrieve or set the properties of the simulated display.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedheadtracker"></a><span data-ttu-id="dded5-364">Microsoft. perceptionsimulation. isimulatedheadtracker</span><span class="sxs-lookup"><span data-stu-id="dded5-364">Microsoft.PerceptionSimulation.ISimulatedHeadTracker</span></span>
+### <a name="microsoftperceptionsimulationisimulatedheadtracker"></a><span data-ttu-id="9d20d-365">Microsoft. perceptionsimulation. isimulatedheadtracker</span><span class="sxs-lookup"><span data-stu-id="9d20d-365">Microsoft.PerceptionSimulation.ISimulatedHeadTracker</span></span>
 
-<span data-ttu-id="dded5-365">Schnittstelle, die den Teil des simulierten Geräts beschreibt, der die Kopfzeile des simulierten Menschen nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="dded5-365">Interface describing the portion of the simulated device that tracks the head of the simulated human.</span></span>
+<span data-ttu-id="9d20d-366">Schnittstelle, die den Teil des simulierten Geräts beschreibt, der die Kopfzeile des simulierten Menschen nachverfolgt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-366">Interface describing the portion of the simulated device that tracks the head of the simulated human.</span></span>
 
 ```
 public interface ISimulatedHeadTracker
@@ -786,13 +786,13 @@ public interface ISimulatedHeadTracker
 };
 ```
 
-<span data-ttu-id="dded5-366">**Microsoft. perceptionsimulation. isimulatedheadtracker. headtrackermode**</span><span class="sxs-lookup"><span data-stu-id="dded5-366">**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**</span></span>
+<span data-ttu-id="9d20d-367">**Microsoft. perceptionsimulation. isimulatedheadtracker. headtrackermode**</span><span class="sxs-lookup"><span data-stu-id="9d20d-367">**Microsoft.PerceptionSimulation.ISimulatedHeadTracker.HeadTrackerMode**</span></span>
 
-<span data-ttu-id="dded5-367">Ruft den aktuellen Head-Tracker-Modus ab und legt diesen fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-367">Retrieves and sets the current head tracker mode.</span></span>
+<span data-ttu-id="9d20d-368">Ruft den aktuellen Head-Tracker-Modus ab und legt diesen fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-368">Retrieves and sets the current head tracker mode.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhandtracker"></a><span data-ttu-id="dded5-368">Microsoft. perceptionsimulation. isimulatedhandtracker</span><span class="sxs-lookup"><span data-stu-id="dded5-368">Microsoft.PerceptionSimulation.ISimulatedHandTracker</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhandtracker"></a><span data-ttu-id="9d20d-369">Microsoft. perceptionsimulation. isimulatedhandtracker</span><span class="sxs-lookup"><span data-stu-id="9d20d-369">Microsoft.PerceptionSimulation.ISimulatedHandTracker</span></span>
 
-<span data-ttu-id="dded5-369">Schnittstelle, die den Teil des simulierten Geräts beschreibt, der die Hände des simulierten Menschen nachverfolgt</span><span class="sxs-lookup"><span data-stu-id="dded5-369">Interface describing the portion of the simulated device that tracks the hands of the simulated human</span></span>
+<span data-ttu-id="9d20d-370">Schnittstelle, die den Teil des simulierten Geräts beschreibt, der die Hände des simulierten Menschen nachverfolgt</span><span class="sxs-lookup"><span data-stu-id="9d20d-370">Interface describing the portion of the simulated device that tracks the hands of the simulated human</span></span>
 
 ```
 public interface ISimulatedHandTracker
@@ -805,29 +805,29 @@ public interface ISimulatedHandTracker
 }
 ```
 
-<span data-ttu-id="dded5-370">**Microsoft. perceptionsimulation. isimulatedhandtracker. worldposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-370">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**</span></span>
+<span data-ttu-id="9d20d-371">**Microsoft. perceptionsimulation. isimulatedhandtracker. worldposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-371">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.WorldPosition**</span></span>
 
-<span data-ttu-id="dded5-371">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-371">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="9d20d-372">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-372">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="dded5-372">**Microsoft. perceptionsimulation. isimulatedhandtracker. Position**</span><span class="sxs-lookup"><span data-stu-id="dded5-372">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**</span></span>
+<span data-ttu-id="9d20d-373">**Microsoft. perceptionsimulation. isimulatedhandtracker. Position**</span><span class="sxs-lookup"><span data-stu-id="9d20d-373">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Position**</span></span>
 
-<span data-ttu-id="dded5-373">Ruft die Position der simulierten Hand Tracker relativ zum Mittelpunkt des Kopfes ab und legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-373">Retrieve and set the position of the simulated hand tracker, relative to the center of the head.</span></span>
+<span data-ttu-id="9d20d-374">Ruft die Position der simulierten Hand Tracker relativ zum Mittelpunkt des Kopfes ab und legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-374">Retrieve and set the position of the simulated hand tracker, relative to the center of the head.</span></span>
 
-<span data-ttu-id="dded5-374">**Microsoft. perceptionsimulation. isimulatedhandtracker. Pitch**</span><span class="sxs-lookup"><span data-stu-id="dded5-374">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**</span></span>
+<span data-ttu-id="9d20d-375">**Microsoft. perceptionsimulation. isimulatedhandtracker. Pitch**</span><span class="sxs-lookup"><span data-stu-id="9d20d-375">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Pitch**</span></span>
 
-<span data-ttu-id="dded5-375">Abrufen und Festlegen der nach unten gerichteten Menge der simulierten Hand Tracker.</span><span class="sxs-lookup"><span data-stu-id="dded5-375">Retrieve and set the downward pitch of the simulated hand tracker.</span></span>
+<span data-ttu-id="9d20d-376">Abrufen und Festlegen der nach unten gerichteten Menge der simulierten Hand Tracker.</span><span class="sxs-lookup"><span data-stu-id="9d20d-376">Retrieve and set the downward pitch of the simulated hand tracker.</span></span>
 
-<span data-ttu-id="dded5-376">**Microsoft. perceptionsimulation. isimulatedhandtracker. frustumignored**</span><span class="sxs-lookup"><span data-stu-id="dded5-376">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**</span></span>
+<span data-ttu-id="9d20d-377">**Microsoft. perceptionsimulation. isimulatedhandtracker. frustumignored**</span><span class="sxs-lookup"><span data-stu-id="9d20d-377">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.FrustumIgnored**</span></span>
 
-<span data-ttu-id="dded5-377">Rufen Sie ab, und legen Sie fest, ob der Wert der simulierten Hand Verfolgung ignoriert wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-377">Retrieve and set whether the frustum of the simulated hand tracker is ignored.</span></span> <span data-ttu-id="dded5-378">Wenn Sie ignoriert werden, sind beide Hände immer sichtbar.</span><span class="sxs-lookup"><span data-stu-id="dded5-378">When ignored, both hands are always visible.</span></span> <span data-ttu-id="dded5-379">Wenn Sie nicht ignoriert werden (die Standardeinstellung), sind Sie nur sichtbar, wenn Sie sich innerhalb der Frustum-Klasse des Hand Trackers befinden.</span><span class="sxs-lookup"><span data-stu-id="dded5-379">When not ignored (the default) hands are only visible when they are within the frustum of the hand tracker.</span></span>
+<span data-ttu-id="9d20d-378">Rufen Sie ab, und legen Sie fest, ob der Wert der simulierten Hand Verfolgung ignoriert wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-378">Retrieve and set whether the frustum of the simulated hand tracker is ignored.</span></span> <span data-ttu-id="9d20d-379">Wenn Sie ignoriert werden, sind beide Hände immer sichtbar.</span><span class="sxs-lookup"><span data-stu-id="9d20d-379">When ignored, both hands are always visible.</span></span> <span data-ttu-id="9d20d-380">Wenn Sie nicht ignoriert werden (die Standardeinstellung), sind Sie nur sichtbar, wenn Sie sich innerhalb der Frustum-Klasse des Hand Trackers befinden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-380">When not ignored (the default) hands are only visible when they are within the frustum of the hand tracker.</span></span>
 
-<span data-ttu-id="dded5-380">**Microsoft. perceptionsimulation. isimulatedhandtracker. Frustum**</span><span class="sxs-lookup"><span data-stu-id="dded5-380">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**</span></span>
+<span data-ttu-id="9d20d-381">**Microsoft. perceptionsimulation. isimulatedhandtracker. Frustum**</span><span class="sxs-lookup"><span data-stu-id="9d20d-381">**Microsoft.PerceptionSimulation.ISimulatedHandTracker.Frustum**</span></span>
 
-<span data-ttu-id="dded5-381">Dient zum Abrufen und Festlegen der Frustum-Eigenschaften, mit denen bestimmt wird, ob die Hände für die simulierte Hand Verfolgung sichtbar sind.</span><span class="sxs-lookup"><span data-stu-id="dded5-381">Retrieve and set the frustum properties used to determine if hands are visible to the simulated hand tracker.</span></span>
+<span data-ttu-id="9d20d-382">Dient zum Abrufen und Festlegen der Frustum-Eigenschaften, mit denen bestimmt wird, ob die Hände für die simulierte Hand Verfolgung sichtbar sind.</span><span class="sxs-lookup"><span data-stu-id="9d20d-382">Retrieve and set the frustum properties used to determine if hands are visible to the simulated hand tracker.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhuman"></a><span data-ttu-id="dded5-382">Microsoft. perceptionsimulation. isimulatedhuman</span><span class="sxs-lookup"><span data-stu-id="dded5-382">Microsoft.PerceptionSimulation.ISimulatedHuman</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhuman"></a><span data-ttu-id="9d20d-383">Microsoft. perceptionsimulation. isimulatedhuman</span><span class="sxs-lookup"><span data-stu-id="9d20d-383">Microsoft.PerceptionSimulation.ISimulatedHuman</span></span>
 
-<span data-ttu-id="dded5-383">Oberfläche der obersten Ebene zum Steuern des simulierten Menschen.</span><span class="sxs-lookup"><span data-stu-id="dded5-383">Top level interface for controlling the simulated human.</span></span>
+<span data-ttu-id="9d20d-384">Oberfläche der obersten Ebene zum Steuern des simulierten Menschen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-384">Top-level interface for controlling the simulated human.</span></span>
 
 ```
 public interface ISimulatedHuman 
@@ -837,53 +837,53 @@ public interface ISimulatedHuman
     float Height { get; set; }
     ISimulatedHand LeftHand { get; }
     ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }
+    ISimulatedHead Head { get; }s
     void Move(Vector3 translation);
     void Rotate(float radians);
 }
 ```
 
-<span data-ttu-id="dded5-384">**Microsoft. perceptionsimulation. isimulatedhuman. worldposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-384">**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**</span></span>
+<span data-ttu-id="9d20d-385">**Microsoft. perceptionsimulation. isimulatedhuman. worldposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-385">**Microsoft.PerceptionSimulation.ISimulatedHuman.WorldPosition**</span></span>
 
-<span data-ttu-id="dded5-385">Abrufen und Festlegen der Position des Knotens, der sich auf die Welt bezieht, in Meter.</span><span class="sxs-lookup"><span data-stu-id="dded5-385">Retrieve and set the position of the node with relation to the world, in meters.</span></span> <span data-ttu-id="dded5-386">Die Position entspricht einem Punkt in der Mitte der menschlichen Füße.</span><span class="sxs-lookup"><span data-stu-id="dded5-386">The position corresponds to a point at the center of the human's feet.</span></span>
+<span data-ttu-id="9d20d-386">Abrufen und Festlegen der Position des Knotens, der sich auf die Welt bezieht, in Meter.</span><span class="sxs-lookup"><span data-stu-id="9d20d-386">Retrieve and set the position of the node with relation to the world, in meters.</span></span> <span data-ttu-id="9d20d-387">Die Position entspricht einem Punkt in der Mitte der menschlichen Füße.</span><span class="sxs-lookup"><span data-stu-id="9d20d-387">The position corresponds to a point at the center of the human's feet.</span></span>
 
-<span data-ttu-id="dded5-387">**Microsoft. perceptionsimulation. isimulatedhuman. Direction**</span><span class="sxs-lookup"><span data-stu-id="dded5-387">**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**</span></span>
+<span data-ttu-id="9d20d-388">**Microsoft. perceptionsimulation. isimulatedhuman. Direction**</span><span class="sxs-lookup"><span data-stu-id="9d20d-388">**Microsoft.PerceptionSimulation.ISimulatedHuman.Direction**</span></span>
 
-<span data-ttu-id="dded5-388">Abrufen und Festlegen der Richtung der simulierten menschlichen Gesichter in der Welt.</span><span class="sxs-lookup"><span data-stu-id="dded5-388">Retrieve and set the direction the simulated human faces in the world.</span></span> <span data-ttu-id="dded5-389">0 Bogenmaße steht nach unten auf der negativen Z-Achse.</span><span class="sxs-lookup"><span data-stu-id="dded5-389">0 radians faces down the negative Z axis.</span></span> <span data-ttu-id="dded5-390">Positive Bogenmaße drehen sich um die Y-Achse im Uhrzeigersinn.</span><span class="sxs-lookup"><span data-stu-id="dded5-390">Positive radians rotate clockwise about the Y axis.</span></span>
+<span data-ttu-id="9d20d-389">Abrufen und Festlegen der Richtung der simulierten menschlichen Gesichter in der Welt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-389">Retrieve and set the direction the simulated human faces in the world.</span></span> <span data-ttu-id="9d20d-390">0 Bogenmaße steht nach unten auf der negativen Z-Achse.</span><span class="sxs-lookup"><span data-stu-id="9d20d-390">0 radians faces down the negative Z axis.</span></span> <span data-ttu-id="9d20d-391">Positive Bogenmaße drehen sich um die Y-Achse im Uhrzeigersinn.</span><span class="sxs-lookup"><span data-stu-id="9d20d-391">Positive radians rotate clockwise about the Y axis.</span></span>
 
-<span data-ttu-id="dded5-391">**Microsoft. perceptionsimulation. isimulatedhuman. Height**</span><span class="sxs-lookup"><span data-stu-id="dded5-391">**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**</span></span>
+<span data-ttu-id="9d20d-392">**Microsoft. perceptionsimulation. isimulatedhuman. Height**</span><span class="sxs-lookup"><span data-stu-id="9d20d-392">**Microsoft.PerceptionSimulation.ISimulatedHuman.Height**</span></span>
 
-<span data-ttu-id="dded5-392">Ruft die Höhe des simulierten menschlichen in Meter ab und legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-392">Retrieve and set the height of the simulated human, in meters.</span></span>
+<span data-ttu-id="9d20d-393">Ruft die Höhe des simulierten menschlichen in Meter ab und legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-393">Retrieve and set the height of the simulated human, in meters.</span></span>
 
-<span data-ttu-id="dded5-393">**Microsoft. perceptionsimulation. isimulatedhuman. Lefthand**</span><span class="sxs-lookup"><span data-stu-id="dded5-393">**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**</span></span>
+<span data-ttu-id="9d20d-394">**Microsoft. perceptionsimulation. isimulatedhuman. Lefthand**</span><span class="sxs-lookup"><span data-stu-id="9d20d-394">**Microsoft.PerceptionSimulation.ISimulatedHuman.LeftHand**</span></span>
 
-<span data-ttu-id="dded5-394">Rufen Sie die linke Seite des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-394">Retrieve the left hand of the simulated human.</span></span>
+<span data-ttu-id="9d20d-395">Rufen Sie die linke Seite des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-395">Retrieve the left hand of the simulated human.</span></span>
 
-<span data-ttu-id="dded5-395">**Microsoft. perceptionsimulation. isimulatedhuman. rightHand**</span><span class="sxs-lookup"><span data-stu-id="dded5-395">**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**</span></span>
+<span data-ttu-id="9d20d-396">**Microsoft. perceptionsimulation. isimulatedhuman. rightHand**</span><span class="sxs-lookup"><span data-stu-id="9d20d-396">**Microsoft.PerceptionSimulation.ISimulatedHuman.RightHand**</span></span>
 
-<span data-ttu-id="dded5-396">Rufen Sie die Rechte des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-396">Retrieve the right hand of the simulated human.</span></span>
+<span data-ttu-id="9d20d-397">Rufen Sie die Rechte des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-397">Retrieve the right hand of the simulated human.</span></span>
 
-<span data-ttu-id="dded5-397">**Microsoft. perceptionsimulation. isimulatedhuman. Head**</span><span class="sxs-lookup"><span data-stu-id="dded5-397">**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**</span></span>
+<span data-ttu-id="9d20d-398">**Microsoft. perceptionsimulation. isimulatedhuman. Head**</span><span class="sxs-lookup"><span data-stu-id="9d20d-398">**Microsoft.PerceptionSimulation.ISimulatedHuman.Head**</span></span>
 
-<span data-ttu-id="dded5-398">Rufen Sie die Kopfzeile des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-398">Retrieve the head of the simulated human.</span></span>
+<span data-ttu-id="9d20d-399">Rufen Sie die Kopfzeile des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-399">Retrieve the head of the simulated human.</span></span>
 
-<span data-ttu-id="dded5-399">**Microsoft. perceptionsimulation. isimulatedhuman. Move (Microsoft. perceptionsimulation. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="dded5-399">**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
+<span data-ttu-id="9d20d-400">**Microsoft. perceptionsimulation. isimulatedhuman. Move (Microsoft. perceptionsimulation. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-400">**Microsoft.PerceptionSimulation.ISimulatedHuman.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
 
-<span data-ttu-id="dded5-400">Verschieben Sie den simulierten menschlichen in Relation zur aktuellen Position in Meter.</span><span class="sxs-lookup"><span data-stu-id="dded5-400">Move the simulated human relative to its current position, in meters.</span></span>
+<span data-ttu-id="9d20d-401">Verschieben Sie den simulierten menschlichen in Relation zur aktuellen Position in Meter.</span><span class="sxs-lookup"><span data-stu-id="9d20d-401">Move the simulated human relative to its current position, in meters.</span></span>
 
-<span data-ttu-id="dded5-401">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-401">Parameters</span></span>
-* <span data-ttu-id="dded5-402">Translation: die Verschiebung, die relativ zur aktuellen Position verschoben werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-402">translation - The translation to move, relative to current position.</span></span>
+<span data-ttu-id="9d20d-402">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-402">Parameters</span></span>
+* <span data-ttu-id="9d20d-403">Translation: die Verschiebung, die relativ zur aktuellen Position verschoben werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-403">translation - The translation to move, relative to current position.</span></span>
 
-<span data-ttu-id="dded5-403">**Microsoft. perceptionsimulation. isimulatedhuman. Rotation (System. Single)**</span><span class="sxs-lookup"><span data-stu-id="dded5-403">**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**</span></span>
+<span data-ttu-id="9d20d-404">**Microsoft. perceptionsimulation. isimulatedhuman. Rotation (System. Single)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-404">**Microsoft.PerceptionSimulation.ISimulatedHuman.Rotate(System.Single)**</span></span>
 
-<span data-ttu-id="dded5-404">Drehen des simulierten menschlichen in Relation zur aktuellen Richtung, im Uhrzeigersinn um die Y-Achse</span><span class="sxs-lookup"><span data-stu-id="dded5-404">Rotate the simulated human relative to its current direction, clockwise about the Y axis</span></span>
+<span data-ttu-id="9d20d-405">Drehen des simulierten menschlichen in Relation zur aktuellen Richtung, im Uhrzeigersinn um die Y-Achse</span><span class="sxs-lookup"><span data-stu-id="9d20d-405">Rotate the simulated human relative to its current direction, clockwise about the Y axis</span></span>
 
-<span data-ttu-id="dded5-405">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-405">Parameters</span></span>
-* <span data-ttu-id="dded5-406">Bogenmaß: der Betrag für die Drehung um die Y-Achse.</span><span class="sxs-lookup"><span data-stu-id="dded5-406">radians - The amount to rotate around the Y axis.</span></span>
+<span data-ttu-id="9d20d-406">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-406">Parameters</span></span>
+* <span data-ttu-id="9d20d-407">Bogenmaß: der Betrag für die Drehung um die Y-Achse.</span><span class="sxs-lookup"><span data-stu-id="9d20d-407">radians - The amount to rotate around the Y axis.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhuman2"></a><span data-ttu-id="dded5-407">Microsoft. perceptionsimulation. ISimulatedHuman2</span><span class="sxs-lookup"><span data-stu-id="dded5-407">Microsoft.PerceptionSimulation.ISimulatedHuman2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhuman2"></a><span data-ttu-id="9d20d-408">Microsoft. perceptionsimulation. ISimulatedHuman2</span><span class="sxs-lookup"><span data-stu-id="9d20d-408">Microsoft.PerceptionSimulation.ISimulatedHuman2</span></span>
 
-<span data-ttu-id="dded5-408">Wenn Sie isimulatedhuman in ISimulatedHuman2 umwandeln, sind zusätzliche Eigenschaften verfügbar.</span><span class="sxs-lookup"><span data-stu-id="dded5-408">Additional properties are available by casting the ISimulatedHuman to ISimulatedHuman2</span></span>
+<span data-ttu-id="9d20d-409">Wenn Sie isimulatedhuman in ISimulatedHuman2 umwandeln, sind zusätzliche Eigenschaften verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9d20d-409">Additional properties are available by casting the ISimulatedHuman to ISimulatedHuman2</span></span>
 
 ```
 public interface ISimulatedHuman2
@@ -894,18 +894,18 @@ public interface ISimulatedHuman2
 }
 ```
 
-<span data-ttu-id="dded5-409">**Microsoft. perceptionsimulation. ISimulatedHuman2. leftcontroller**</span><span class="sxs-lookup"><span data-stu-id="dded5-409">**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**</span></span>
+<span data-ttu-id="9d20d-410">**Microsoft. perceptionsimulation. ISimulatedHuman2. leftcontroller**</span><span class="sxs-lookup"><span data-stu-id="9d20d-410">**Microsoft.PerceptionSimulation.ISimulatedHuman2.LeftController**</span></span>
 
-<span data-ttu-id="dded5-410">Rufen Sie den linken 6-DOF-Controller ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-410">Retrieve the left 6-DOF controller.</span></span>
+<span data-ttu-id="9d20d-411">Rufen Sie den linken 6-DOF-Controller ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-411">Retrieve the left 6-DOF controller.</span></span>
 
-<span data-ttu-id="dded5-411">**Microsoft. perceptionsimulation. ISimulatedHuman2. rightcontroller**</span><span class="sxs-lookup"><span data-stu-id="dded5-411">**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**</span></span>
+<span data-ttu-id="9d20d-412">**Microsoft. perceptionsimulation. ISimulatedHuman2. rightcontroller**</span><span class="sxs-lookup"><span data-stu-id="9d20d-412">**Microsoft.PerceptionSimulation.ISimulatedHuman2.RightController**</span></span>
 
-<span data-ttu-id="dded5-412">Rufen Sie den rechten 6-DOF-Controller ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-412">Retrieve the right 6-DOF controller.</span></span>
+<span data-ttu-id="9d20d-413">Rufen Sie den rechten 6-DOF-Controller ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-413">Retrieve the right 6-DOF controller.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulatedhand"></a><span data-ttu-id="dded5-413">Microsoft. perceptionsimulation. isimulatedhand</span><span class="sxs-lookup"><span data-stu-id="dded5-413">Microsoft.PerceptionSimulation.ISimulatedHand</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhand"></a><span data-ttu-id="9d20d-414">Microsoft. perceptionsimulation. isimulatedhand</span><span class="sxs-lookup"><span data-stu-id="9d20d-414">Microsoft.PerceptionSimulation.ISimulatedHand</span></span>
 
-<span data-ttu-id="dded5-414">Schnittstelle, die eine Hand des simulierten Menschen beschreibt</span><span class="sxs-lookup"><span data-stu-id="dded5-414">Interface describing a hand of the simulated human</span></span>
+<span data-ttu-id="9d20d-415">Schnittstelle, die eine Hand des simulierten Menschen beschreibt</span><span class="sxs-lookup"><span data-stu-id="9d20d-415">Interface describing a hand of the simulated human</span></span>
 
 ```
 public interface ISimulatedHand
@@ -920,43 +920,43 @@ public interface ISimulatedHand
 }
 ```
 
-<span data-ttu-id="dded5-415">**Microsoft. perceptionsimulation. isimulatedhand. worldposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-415">**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**</span></span>
+<span data-ttu-id="9d20d-416">**Microsoft. perceptionsimulation. isimulatedhand. worldposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-416">**Microsoft.PerceptionSimulation.ISimulatedHand.WorldPosition**</span></span>
 
-<span data-ttu-id="dded5-416">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-416">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="9d20d-417">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-417">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="dded5-417">**Microsoft. perceptionsimulation. isimulatedhand. Position**</span><span class="sxs-lookup"><span data-stu-id="dded5-417">**Microsoft.PerceptionSimulation.ISimulatedHand.Position**</span></span>
+<span data-ttu-id="9d20d-418">**Microsoft. perceptionsimulation. isimulatedhand. Position**</span><span class="sxs-lookup"><span data-stu-id="9d20d-418">**Microsoft.PerceptionSimulation.ISimulatedHand.Position**</span></span>
 
-<span data-ttu-id="dded5-418">Abrufen und Festlegen der Position der simulierten Hand in Relation zum menschlichen Wert in Meter.</span><span class="sxs-lookup"><span data-stu-id="dded5-418">Retrieve and set the position of the simulated hand relative to the human, in meters.</span></span>
+<span data-ttu-id="9d20d-419">Abrufen und Festlegen der Position der simulierten Hand in Relation zum menschlichen Wert in Meter.</span><span class="sxs-lookup"><span data-stu-id="9d20d-419">Retrieve and set the position of the simulated hand relative to the human, in meters.</span></span>
 
-<span data-ttu-id="dded5-419">**Microsoft. perceptionsimulation. isimulatedhand. aktiviert**</span><span class="sxs-lookup"><span data-stu-id="dded5-419">**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**</span></span>
+<span data-ttu-id="9d20d-420">**Microsoft. perceptionsimulation. isimulatedhand. aktiviert**</span><span class="sxs-lookup"><span data-stu-id="9d20d-420">**Microsoft.PerceptionSimulation.ISimulatedHand.Activated**</span></span>
 
-<span data-ttu-id="dded5-420">Rufen Sie ab, und legen Sie fest, ob die Hand aktuell aktiviert ist</span><span class="sxs-lookup"><span data-stu-id="dded5-420">Retrieve and set whether the hand is currently activated.</span></span>
+<span data-ttu-id="9d20d-421">Rufen Sie ab, und legen Sie fest, ob die Hand aktuell aktiviert ist</span><span class="sxs-lookup"><span data-stu-id="9d20d-421">Retrieve and set whether the hand is currently activated.</span></span>
 
-<span data-ttu-id="dded5-421">**Microsoft. perceptionsimulation. isimulatedhand. Visible**</span><span class="sxs-lookup"><span data-stu-id="dded5-421">**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**</span></span>
+<span data-ttu-id="9d20d-422">**Microsoft. perceptionsimulation. isimulatedhand. Visible**</span><span class="sxs-lookup"><span data-stu-id="9d20d-422">**Microsoft.PerceptionSimulation.ISimulatedHand.Visible**</span></span>
 
-<span data-ttu-id="dded5-422">Ruft ab, ob die Hand derzeit für simulateddevice sichtbar ist (d. h., ob Sie sich in einer von der Handtracker erkannten Position befindet).</span><span class="sxs-lookup"><span data-stu-id="dded5-422">Retrieve whether the hand is currently visible to the SimulatedDevice (ie, whether it's in a position to be detected by the HandTracker).</span></span>
+<span data-ttu-id="9d20d-423">Ruft ab, ob die Hand derzeit für das simulateddevice sichtbar ist (d. h., ob Sie sich in einer von der Handtracker erkannten Position befindet).</span><span class="sxs-lookup"><span data-stu-id="9d20d-423">Retrieve whether the hand is currently visible to the SimulatedDevice (that is, whether it's in a position to be detected by the HandTracker).</span></span>
 
-<span data-ttu-id="dded5-423">**Microsoft. perceptionsimulation. isimulatedhand. EnsureVisible**</span><span class="sxs-lookup"><span data-stu-id="dded5-423">**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**</span></span>
+<span data-ttu-id="9d20d-424">**Microsoft. perceptionsimulation. isimulatedhand. EnsureVisible**</span><span class="sxs-lookup"><span data-stu-id="9d20d-424">**Microsoft.PerceptionSimulation.ISimulatedHand.EnsureVisible**</span></span>
 
-<span data-ttu-id="dded5-424">Verschieben Sie die Hand so, dass Sie für simulateddevice sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-424">Move the hand such that it is visible to the SimulatedDevice.</span></span>
+<span data-ttu-id="9d20d-425">Verschieben Sie die Hand so, dass Sie für simulateddevice sichtbar ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-425">Move the hand such that it is visible to the SimulatedDevice.</span></span>
 
-<span data-ttu-id="dded5-425">**Microsoft. perceptionsimulation. isimulatedhand. Move (Microsoft. perceptionsimulation. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="dded5-425">**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
+<span data-ttu-id="9d20d-426">**Microsoft. perceptionsimulation. isimulatedhand. Move (Microsoft. perceptionsimulation. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-426">**Microsoft.PerceptionSimulation.ISimulatedHand.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
 
-<span data-ttu-id="dded5-426">Verschiebt die Position der simulierten Hand in Relation zur aktuellen Position in Meter.</span><span class="sxs-lookup"><span data-stu-id="dded5-426">Move the position of the simulated hand relative to its current position, in meters.</span></span>
+<span data-ttu-id="9d20d-427">Verschiebt die Position der simulierten Hand in Relation zur aktuellen Position in Meter.</span><span class="sxs-lookup"><span data-stu-id="9d20d-427">Move the position of the simulated hand relative to its current position, in meters.</span></span>
 
-<span data-ttu-id="dded5-427">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-427">Parameters</span></span>
-* <span data-ttu-id="dded5-428">Translation: der Betrag, um den die simulierte Hand übersetzt werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-428">translation - The amount to translate the simulated hand.</span></span>
+<span data-ttu-id="9d20d-428">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-428">Parameters</span></span>
+* <span data-ttu-id="9d20d-429">Translation: der Betrag, um den die simulierte Hand übersetzt werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-429">translation - The amount to translate the simulated hand.</span></span>
 
-<span data-ttu-id="dded5-429">**Microsoft. perceptionsimulation. isimulatedhand. performgesten (Microsoft. perceptionsimulation. simulatedgesten)**</span><span class="sxs-lookup"><span data-stu-id="dded5-429">**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**</span></span>
+<span data-ttu-id="9d20d-430">**Microsoft. perceptionsimulation. isimulatedhand. performgesten (Microsoft. perceptionsimulation. simulatedgesten)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-430">**Microsoft.PerceptionSimulation.ISimulatedHand.PerformGesture(Microsoft.PerceptionSimulation.SimulatedGesture)**</span></span>
 
-<span data-ttu-id="dded5-430">Führt eine Geste mithilfe der simulierten Hand aus.</span><span class="sxs-lookup"><span data-stu-id="dded5-430">Perform a gesture using the simulated hand.</span></span>  <span data-ttu-id="dded5-431">Sie wird nur vom System erkannt, wenn die Hand aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-431">It will only be detected by the system if the hand is enabled.</span></span>
+<span data-ttu-id="9d20d-431">Führt eine Geste mithilfe der simulierten Hand aus.</span><span class="sxs-lookup"><span data-stu-id="9d20d-431">Perform a gesture using the simulated hand.</span></span>  <span data-ttu-id="9d20d-432">Sie wird nur vom System erkannt, wenn die Hand aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-432">It will only be detected by the system if the hand is enabled.</span></span>
 
-<span data-ttu-id="dded5-432">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-432">Parameters</span></span>
-* <span data-ttu-id="dded5-433">Geste: die auszuführende Geste.</span><span class="sxs-lookup"><span data-stu-id="dded5-433">gesture - The gesture to perform.</span></span>
+<span data-ttu-id="9d20d-433">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-433">Parameters</span></span>
+* <span data-ttu-id="9d20d-434">Geste: die auszuführende Geste.</span><span class="sxs-lookup"><span data-stu-id="9d20d-434">gesture - The gesture to perform.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhand2"></a><span data-ttu-id="dded5-434">Microsoft. perceptionsimulation. ISimulatedHand2</span><span class="sxs-lookup"><span data-stu-id="dded5-434">Microsoft.PerceptionSimulation.ISimulatedHand2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhand2"></a><span data-ttu-id="9d20d-435">Microsoft. perceptionsimulation. ISimulatedHand2</span><span class="sxs-lookup"><span data-stu-id="9d20d-435">Microsoft.PerceptionSimulation.ISimulatedHand2</span></span>
 
-<span data-ttu-id="dded5-435">Weitere Eigenschaften werden durch Umwandeln von isimulatedhand in ISimulatedHand2 verfügbar.</span><span class="sxs-lookup"><span data-stu-id="dded5-435">Additional properties are available by casting an ISimulatedHand to ISimulatedHand2.</span></span>
+<span data-ttu-id="9d20d-436">Weitere Eigenschaften werden durch Umwandeln von isimulatedhand in ISimulatedHand2 verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9d20d-436">Additional properties are available by casting an ISimulatedHand to ISimulatedHand2.</span></span>
 ```
 public interface ISimulatedHand2
 {
@@ -965,13 +965,13 @@ public interface ISimulatedHand2
 }
 ```
 
-<span data-ttu-id="dded5-436">**Microsoft. perceptionsimulation. ISimulatedHand2. Orientation**</span><span class="sxs-lookup"><span data-stu-id="dded5-436">**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**</span></span>
+<span data-ttu-id="9d20d-437">**Microsoft. perceptionsimulation. ISimulatedHand2. Orientation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-437">**Microsoft.PerceptionSimulation.ISimulatedHand2.Orientation**</span></span>
 
-<span data-ttu-id="dded5-437">Ruft die Drehung der simulierten Hand ab oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-437">Retrieve or set the rotation of the simulated hand.</span></span>  <span data-ttu-id="dded5-438">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="dded5-438">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="9d20d-438">Ruft die Drehung der simulierten Hand ab oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-438">Retrieve or set the rotation of the simulated hand.</span></span>  <span data-ttu-id="9d20d-439">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="9d20d-439">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhand3"></a><span data-ttu-id="dded5-439">Microsoft. perceptionsimulation. ISimulatedHand3</span><span class="sxs-lookup"><span data-stu-id="dded5-439">Microsoft.PerceptionSimulation.ISimulatedHand3</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhand3"></a><span data-ttu-id="9d20d-440">Microsoft. perceptionsimulation. ISimulatedHand3</span><span class="sxs-lookup"><span data-stu-id="9d20d-440">Microsoft.PerceptionSimulation.ISimulatedHand3</span></span>
 
-<span data-ttu-id="dded5-440">Weitere Eigenschaften werden durch Umwandeln von isimulatedhand in ISimulatedHand3 verfügbar.</span><span class="sxs-lookup"><span data-stu-id="dded5-440">Additional properties are available by casting an ISimulatedHand to ISimulatedHand3</span></span>
+<span data-ttu-id="9d20d-441">Weitere Eigenschaften werden durch Umwandeln von isimulatedhand in ISimulatedHand3 verfügbar.</span><span class="sxs-lookup"><span data-stu-id="9d20d-441">Additional properties are available by casting an ISimulatedHand to ISimulatedHand3</span></span>
 ```
 public interface ISimulatedHand3
 {
@@ -982,22 +982,22 @@ public interface ISimulatedHand3
 }
 ```
 
-<span data-ttu-id="dded5-441">**Microsoft. perceptionsimulation. ISimulatedHand3. getjointconfiguration**</span><span class="sxs-lookup"><span data-stu-id="dded5-441">**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**</span></span>
+<span data-ttu-id="9d20d-442">**Microsoft. perceptionsimulation. ISimulatedHand3. getjointconfiguration**</span><span class="sxs-lookup"><span data-stu-id="9d20d-442">**Microsoft.PerceptionSimulation.ISimulatedHand3.GetJointConfiguration**</span></span>
 
-<span data-ttu-id="dded5-442">Die gemeinsame Konfiguration für die angegebene Verbindung wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="dded5-442">Get the joint configuration for the specified joint.</span></span>
+<span data-ttu-id="9d20d-443">Die gemeinsame Konfiguration für die angegebene Verbindung wird angezeigt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-443">Get the joint configuration for the specified joint.</span></span>
 
-<span data-ttu-id="dded5-443">**Microsoft. perceptionsimulation. ISimulatedHand3. setjointconfiguration**</span><span class="sxs-lookup"><span data-stu-id="dded5-443">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**</span></span>
+<span data-ttu-id="9d20d-444">**Microsoft. perceptionsimulation. ISimulatedHand3. setjointconfiguration**</span><span class="sxs-lookup"><span data-stu-id="9d20d-444">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetJointConfiguration**</span></span>
 
-<span data-ttu-id="dded5-444">Legen Sie die gemeinsame Konfiguration für die angegebene Verbindung fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-444">Set the joint configuration for the specified joint.</span></span>
+<span data-ttu-id="9d20d-445">Legen Sie die gemeinsame Konfiguration für die angegebene Verbindung fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-445">Set the joint configuration for the specified joint.</span></span>
 
-<span data-ttu-id="dded5-445">**Microsoft. perceptionsimulation. ISimulatedHand3. ".**</span><span class="sxs-lookup"><span data-stu-id="dded5-445">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**</span></span>
+<span data-ttu-id="9d20d-446">**Microsoft. perceptionsimulation. ISimulatedHand3. ".**</span><span class="sxs-lookup"><span data-stu-id="9d20d-446">**Microsoft.PerceptionSimulation.ISimulatedHand3.SetHandPose**</span></span>
 
-<span data-ttu-id="dded5-446">Legen Sie die Hand auf eine bekannte Pose mit einem optionalen Flag zum Animieren fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-446">Set the hand to a known pose with an optional flag to animate.</span></span>  <span data-ttu-id="dded5-447">Hinweis: das Animieren führt nicht dazu, dass die Gelenke sofort ihre abschließenden gemeinsamen Konfigurationen widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="dded5-447">Note: animating won't result in joints immediately reflecting their final joint configurations.</span></span>
+<span data-ttu-id="9d20d-447">Legen Sie die Hand auf eine bekannte Pose mit einem optionalen Flag zum Animieren fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-447">Set the hand to a known pose with an optional flag to animate.</span></span>  <span data-ttu-id="9d20d-448">Hinweis: das Animieren führt nicht dazu, dass die Gelenke sofort ihre abschließenden gemeinsamen Konfigurationen widerspiegeln.</span><span class="sxs-lookup"><span data-stu-id="9d20d-448">Note: animating won't result in joints immediately reflecting their final joint configurations.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulatedhead"></a><span data-ttu-id="dded5-448">Microsoft. perceptionsimulation. isimulatedhead</span><span class="sxs-lookup"><span data-stu-id="dded5-448">Microsoft.PerceptionSimulation.ISimulatedHead</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhead"></a><span data-ttu-id="9d20d-449">Microsoft. perceptionsimulation. isimulatedhead</span><span class="sxs-lookup"><span data-stu-id="9d20d-449">Microsoft.PerceptionSimulation.ISimulatedHead</span></span>
 
-<span data-ttu-id="dded5-449">Schnittstelle, die den Anfang des simulierten Menschen beschreibt.</span><span class="sxs-lookup"><span data-stu-id="dded5-449">Interface describing the head of the simulated human.</span></span>
+<span data-ttu-id="9d20d-450">Schnittstelle, die den Anfang des simulierten Menschen beschreibt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-450">Interface describing the head of the simulated human.</span></span>
 
 ```
 public interface ISimulatedHead
@@ -1009,28 +1009,28 @@ public interface ISimulatedHead
 }
 ```
 
-<span data-ttu-id="dded5-450">**Microsoft. perceptionsimulation. isimulatedhead. worldposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-450">**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**</span></span>
+<span data-ttu-id="9d20d-451">**Microsoft. perceptionsimulation. isimulatedhead. worldposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-451">**Microsoft.PerceptionSimulation.ISimulatedHead.WorldPosition**</span></span>
 
-<span data-ttu-id="dded5-451">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-451">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="9d20d-452">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-452">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="dded5-452">**Microsoft. perceptionsimulation. isimulatedhead. Rotation**</span><span class="sxs-lookup"><span data-stu-id="dded5-452">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**</span></span>
+<span data-ttu-id="9d20d-453">**Microsoft. perceptionsimulation. isimulatedhead. Rotation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-453">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotation**</span></span>
 
-<span data-ttu-id="dded5-453">Ruft die Drehung des simulierten Kopfes ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-453">Retrieve the rotation of the simulated head.</span></span> <span data-ttu-id="dded5-454">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="dded5-454">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="9d20d-454">Ruft die Drehung des simulierten Kopfes ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-454">Retrieve the rotation of the simulated head.</span></span> <span data-ttu-id="9d20d-455">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="9d20d-455">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="dded5-455">**Microsoft. perceptionsimulation. isimulatedhead. Durchmesser**</span><span class="sxs-lookup"><span data-stu-id="dded5-455">**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**</span></span>
+<span data-ttu-id="9d20d-456">**Microsoft. perceptionsimulation. isimulatedhead. Durchmesser**</span><span class="sxs-lookup"><span data-stu-id="9d20d-456">**Microsoft.PerceptionSimulation.ISimulatedHead.Diameter**</span></span>
 
-<span data-ttu-id="dded5-456">Ruft den Durchmesser des simulierten Kopfes ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-456">Retrieve the simulated head's diameter.</span></span> <span data-ttu-id="dded5-457">Dieser Wert wird verwendet, um den Mittelpunkt (Punkt der Drehung) zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="dded5-457">This value is used to determine the head's center (point of rotation).</span></span>
+<span data-ttu-id="9d20d-457">Ruft den Durchmesser des simulierten Kopfes ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-457">Retrieve the simulated head's diameter.</span></span> <span data-ttu-id="9d20d-458">Dieser Wert wird verwendet, um den Mittelpunkt (Punkt der Drehung) zu bestimmen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-458">This value is used to determine the head's center (point of rotation).</span></span>
 
-<span data-ttu-id="dded5-458">**Microsoft. perceptionsimulation. isimulatedhead. Rotation (Microsoft. perceptionsimulation. Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="dded5-458">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
+<span data-ttu-id="9d20d-459">**Microsoft. perceptionsimulation. isimulatedhead. Rotation (Microsoft. perceptionsimulation. Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-459">**Microsoft.PerceptionSimulation.ISimulatedHead.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
 
-<span data-ttu-id="dded5-459">Drehen Sie den simulierten Kopf in Relation zur aktuellen Drehung.</span><span class="sxs-lookup"><span data-stu-id="dded5-459">Rotate the simulated head relative to its current rotation.</span></span> <span data-ttu-id="dded5-460">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="dded5-460">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="9d20d-460">Drehen Sie den simulierten Kopf in Relation zur aktuellen Drehung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-460">Rotate the simulated head relative to its current rotation.</span></span> <span data-ttu-id="9d20d-461">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="9d20d-461">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="dded5-461">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-461">Parameters</span></span>
-* <span data-ttu-id="dded5-462">Rotation: die Menge, die gedreht werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-462">rotation - The amount to rotate.</span></span>
+<span data-ttu-id="9d20d-462">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-462">Parameters</span></span>
+* <span data-ttu-id="9d20d-463">Rotation: die Menge, die gedreht werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-463">rotation - The amount to rotate.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedhead2"></a><span data-ttu-id="dded5-463">Microsoft. perceptionsimulation. ISimulatedHead2</span><span class="sxs-lookup"><span data-stu-id="dded5-463">Microsoft.PerceptionSimulation.ISimulatedHead2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedhead2"></a><span data-ttu-id="9d20d-464">Microsoft. perceptionsimulation. ISimulatedHead2</span><span class="sxs-lookup"><span data-stu-id="9d20d-464">Microsoft.PerceptionSimulation.ISimulatedHead2</span></span>
 
-<span data-ttu-id="dded5-464">Weitere Eigenschaften sind verfügbar, indem ein isimulatedhead-Element in ISimulatedHead2 umgewandelt wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-464">Additional properties are available by casting an ISimulatedHead to ISimulatedHead2</span></span>
+<span data-ttu-id="9d20d-465">Weitere Eigenschaften sind verfügbar, indem ein isimulatedhead-Element in ISimulatedHead2 umgewandelt wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-465">Additional properties are available by casting an ISimulatedHead to ISimulatedHead2</span></span>
 
 ```
 public interface ISimulatedHead2
@@ -1040,13 +1040,13 @@ public interface ISimulatedHead2
 }
 ```
 
-<span data-ttu-id="dded5-465">**Microsoft. perceptionsimulation. ISimulatedHead2. Eyes**</span><span class="sxs-lookup"><span data-stu-id="dded5-465">**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**</span></span>
+<span data-ttu-id="9d20d-466">**Microsoft. perceptionsimulation. ISimulatedHead2. Eyes**</span><span class="sxs-lookup"><span data-stu-id="9d20d-466">**Microsoft.PerceptionSimulation.ISimulatedHead2.Eyes**</span></span>
 
-<span data-ttu-id="dded5-466">Rufen Sie die Augen des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-466">Retrieve the eyes of the simulated human.</span></span>
+<span data-ttu-id="9d20d-467">Rufen Sie die Augen des simulierten Menschen ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-467">Retrieve the eyes of the simulated human.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller"></a><span data-ttu-id="dded5-467">Microsoft. perceptionsimulation. isimulatedsixdofcontroller</span><span class="sxs-lookup"><span data-stu-id="dded5-467">Microsoft.PerceptionSimulation.ISimulatedSixDofController</span></span>
+### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller"></a><span data-ttu-id="9d20d-468">Microsoft. perceptionsimulation. isimulatedsixdofcontroller</span><span class="sxs-lookup"><span data-stu-id="9d20d-468">Microsoft.PerceptionSimulation.ISimulatedSixDofController</span></span>
 
-<span data-ttu-id="dded5-468">Eine Schnittstelle, die einen dem simulierten Menschen zugeordneten 6-DOF-Controller beschreibt.</span><span class="sxs-lookup"><span data-stu-id="dded5-468">Interface describing a 6-DOF controller associated with the simulated human.</span></span>
+<span data-ttu-id="9d20d-469">Eine Schnittstelle, die einen dem simulierten Menschen zugeordneten 6-DOF-Controller beschreibt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-469">Interface describing a 6-DOF controller associated with the simulated human.</span></span>
 
 ```
 public interface ISimulatedSixDofController
@@ -1063,62 +1063,62 @@ public interface ISimulatedSixDofController
 }
 ```
 
-<span data-ttu-id="dded5-469">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. worldposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-469">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**</span></span>
+<span data-ttu-id="9d20d-470">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. worldposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-470">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.WorldPosition**</span></span>
 
-<span data-ttu-id="dded5-470">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-470">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="9d20d-471">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-471">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
-<span data-ttu-id="dded5-471">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Status**</span><span class="sxs-lookup"><span data-stu-id="dded5-471">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**</span></span>
+<span data-ttu-id="9d20d-472">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Status**</span><span class="sxs-lookup"><span data-stu-id="9d20d-472">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Status**</span></span>
 
-<span data-ttu-id="dded5-472">Ruft den aktuellen Zustand des Controllers ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-472">Retrieve or set the current state of the controller.</span></span>  <span data-ttu-id="dded5-473">Der Controller Status muss auf einen anderen Wert als "Off" festgelegt werden, bevor Aufrufe zum Verschieben, drehen oder Drücken von Schaltflächen erfolgreich ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-473">The controller status must be set to a value other than Off before any calls to move, rotate or press buttons will succeed.</span></span>
+<span data-ttu-id="9d20d-473">Ruft den aktuellen Zustand des Controllers ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-473">Retrieve or set the current state of the controller.</span></span>  <span data-ttu-id="9d20d-474">Der Controller Status muss auf einen anderen Wert als "Off" festgelegt werden, bevor Aufrufe zum Verschieben, drehen oder Drücken von Schaltflächen erfolgreich ausgeführt werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-474">The controller status must be set to a value other than Off before any calls to move, rotate, or press buttons will succeed.</span></span>
 
-<span data-ttu-id="dded5-474">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Position**</span><span class="sxs-lookup"><span data-stu-id="dded5-474">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**</span></span>
+<span data-ttu-id="9d20d-475">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Position**</span><span class="sxs-lookup"><span data-stu-id="9d20d-475">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Position**</span></span>
 
-<span data-ttu-id="dded5-475">Ruft die Position des simulierten Controllers in Relation zum menschlichen in Meter ab oder legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-475">Retrieve or set the position of the simulated controller relative to the human, in meters.</span></span>
+<span data-ttu-id="9d20d-476">Ruft die Position des simulierten Controllers in Relation zum menschlichen in Meter ab oder legt diese fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-476">Retrieve or set the position of the simulated controller relative to the human, in meters.</span></span>
 
-<span data-ttu-id="dded5-476">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Orientation**</span><span class="sxs-lookup"><span data-stu-id="dded5-476">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**</span></span>
+<span data-ttu-id="9d20d-477">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Orientation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-477">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Orientation**</span></span>
 
-<span data-ttu-id="dded5-477">Ruft die Ausrichtung des simulierten Controllers ab oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-477">Retrieve or set the orientation of the simulated controller.</span></span>
+<span data-ttu-id="9d20d-478">Ruft die Ausrichtung des simulierten Controllers ab oder legt Sie fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-478">Retrieve or set the orientation of the simulated controller.</span></span>
 
-<span data-ttu-id="dded5-478">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Move (Microsoft. perceptionsimulation. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="dded5-478">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
+<span data-ttu-id="9d20d-479">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. Move (Microsoft. perceptionsimulation. Vector3)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-479">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.Move(Microsoft.PerceptionSimulation.Vector3)**</span></span>
 
-<span data-ttu-id="dded5-479">Verschiebt die Position des simulierten Controllers relativ zu seiner aktuellen Position in Meter.</span><span class="sxs-lookup"><span data-stu-id="dded5-479">Move the position of the simulated controller relative to its current position, in meters.</span></span>
+<span data-ttu-id="9d20d-480">Verschiebt die Position des simulierten Controllers relativ zu seiner aktuellen Position in Meter.</span><span class="sxs-lookup"><span data-stu-id="9d20d-480">Move the position of the simulated controller relative to its current position, in meters.</span></span>
 
-<span data-ttu-id="dded5-480">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-480">Parameters</span></span>
-* <span data-ttu-id="dded5-481">Translation: der Betrag, um den der simulierte Controller übersetzt werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-481">translation - The amount to translate the simulated controller.</span></span>
+<span data-ttu-id="9d20d-481">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-481">Parameters</span></span>
+* <span data-ttu-id="9d20d-482">Translation: der Betrag, um den der simulierte Controller übersetzt werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-482">translation - The amount to translate the simulated controller.</span></span>
 
-<span data-ttu-id="dded5-482">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. pressbutton (simulatedsixdofcontrollerbutton)**</span><span class="sxs-lookup"><span data-stu-id="dded5-482">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**</span></span>
+<span data-ttu-id="9d20d-483">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. pressbutton (simulatedsixdofcontrollerbutton)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-483">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.PressButton(SimulatedSixDofControllerButton)**</span></span>
 
-<span data-ttu-id="dded5-483">Drücken Sie auf dem simulierten Controller eine Schaltfläche.</span><span class="sxs-lookup"><span data-stu-id="dded5-483">Press a button on the simulated controller.</span></span>  <span data-ttu-id="dded5-484">Sie wird nur vom System erkannt, wenn der Controller aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-484">It will only be detected by the system if the controller is enabled.</span></span>
+<span data-ttu-id="9d20d-484">Drücken Sie auf dem simulierten Controller eine Schaltfläche.</span><span class="sxs-lookup"><span data-stu-id="9d20d-484">Press a button on the simulated controller.</span></span>  <span data-ttu-id="9d20d-485">Sie wird nur vom System erkannt, wenn der Controller aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-485">It will only be detected by the system if the controller is enabled.</span></span>
 
-<span data-ttu-id="dded5-485">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-485">Parameters</span></span>
-* <span data-ttu-id="dded5-486">Schaltfläche: die Schaltfläche zum drücken.</span><span class="sxs-lookup"><span data-stu-id="dded5-486">button - The button to press.</span></span>
+<span data-ttu-id="9d20d-486">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-486">Parameters</span></span>
+* <span data-ttu-id="9d20d-487">Schaltfläche: die Schaltfläche zum drücken.</span><span class="sxs-lookup"><span data-stu-id="9d20d-487">button - The button to press.</span></span>
 
-<span data-ttu-id="dded5-487">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. releasebutton (simulatedsixdofcontrollerbutton)**</span><span class="sxs-lookup"><span data-stu-id="dded5-487">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**</span></span>
+<span data-ttu-id="9d20d-488">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. releasebutton (simulatedsixdofcontrollerbutton)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-488">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.ReleaseButton(SimulatedSixDofControllerButton)**</span></span>
 
-<span data-ttu-id="dded5-488">Gibt eine Schaltfläche auf dem simulierten Controller frei.</span><span class="sxs-lookup"><span data-stu-id="dded5-488">Release a button on the simulated controller.</span></span>  <span data-ttu-id="dded5-489">Sie wird nur vom System erkannt, wenn der Controller aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-489">It will only be detected by the system if the controller is enabled.</span></span>
+<span data-ttu-id="9d20d-489">Gibt eine Schaltfläche auf dem simulierten Controller frei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-489">Release a button on the simulated controller.</span></span>  <span data-ttu-id="9d20d-490">Sie wird nur vom System erkannt, wenn der Controller aktiviert ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-490">It will only be detected by the system if the controller is enabled.</span></span>
 
-<span data-ttu-id="dded5-490">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-490">Parameters</span></span>
-* <span data-ttu-id="dded5-491">Button: die Schaltfläche, die freigegeben werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-491">button - The button to release.</span></span>
+<span data-ttu-id="9d20d-491">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-491">Parameters</span></span>
+* <span data-ttu-id="9d20d-492">Button: die Schaltfläche, die freigegeben werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-492">button - The button to release.</span></span>
 
-<span data-ttu-id="dded5-492">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. gettouchpadposition (out float, out float)**</span><span class="sxs-lookup"><span data-stu-id="dded5-492">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition(out float, out float)**</span></span>
+<span data-ttu-id="9d20d-493">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. gettouchpadposition (out float, out float)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-493">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.GetTouchpadPosition(out float, out float)**</span></span>
 
-<span data-ttu-id="dded5-493">Die Position eines simulierten Fingers im Touchpad des simulierten Controllers erhalten.</span><span class="sxs-lookup"><span data-stu-id="dded5-493">Get the position of a simulated finger on the simulated controller's touchpad.</span></span>
+<span data-ttu-id="9d20d-494">Die Position eines simulierten Fingers im Touchpad des simulierten Controllers erhalten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-494">Get the position of a simulated finger on the simulated controller's touchpad.</span></span>
 
-<span data-ttu-id="dded5-494">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-494">Parameters</span></span>
-* <span data-ttu-id="dded5-495">x: die horizontale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="dded5-495">x - The horizontal position of the finger.</span></span>
-* <span data-ttu-id="dded5-496">y-die vertikale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="dded5-496">y - The vertical position of the finger.</span></span>
+<span data-ttu-id="9d20d-495">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-495">Parameters</span></span>
+* <span data-ttu-id="9d20d-496">x: die horizontale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="9d20d-496">x - The horizontal position of the finger.</span></span>
+* <span data-ttu-id="9d20d-497">y-die vertikale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="9d20d-497">y - The vertical position of the finger.</span></span>
 
-<span data-ttu-id="dded5-497">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. settouchpadposition (float, float)**</span><span class="sxs-lookup"><span data-stu-id="dded5-497">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition(float, float)**</span></span>
+<span data-ttu-id="9d20d-498">**Microsoft. perceptionsimulation. isimulatedsixdofcontroller. settouchpadposition (float, float)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-498">**Microsoft.PerceptionSimulation.ISimulatedSixDofController.SetTouchpadPosition(float, float)**</span></span>
 
-<span data-ttu-id="dded5-498">Legen Sie die Position eines simulierten Fingers auf dem Touchpad des simulierten Controllers fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-498">Set the position of a simulated finger on the simulated controller's touchpad.</span></span>
+<span data-ttu-id="9d20d-499">Legen Sie die Position eines simulierten Fingers auf dem Touchpad des simulierten Controllers fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-499">Set the position of a simulated finger on the simulated controller's touchpad.</span></span>
 
-<span data-ttu-id="dded5-499">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-499">Parameters</span></span>
-* <span data-ttu-id="dded5-500">x: die horizontale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="dded5-500">x - The horizontal position of the finger.</span></span>
-* <span data-ttu-id="dded5-501">y-die vertikale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="dded5-501">y - The vertical position of the finger.</span></span>
+<span data-ttu-id="9d20d-500">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-500">Parameters</span></span>
+* <span data-ttu-id="9d20d-501">x: die horizontale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="9d20d-501">x - The horizontal position of the finger.</span></span>
+* <span data-ttu-id="9d20d-502">y-die vertikale Position des Fingers.</span><span class="sxs-lookup"><span data-stu-id="9d20d-502">y - The vertical position of the finger.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller2"></a><span data-ttu-id="dded5-502">Microsoft. perceptionsimulation. ISimulatedSixDofController2</span><span class="sxs-lookup"><span data-stu-id="dded5-502">Microsoft.PerceptionSimulation.ISimulatedSixDofController2</span></span>
+### <a name="microsoftperceptionsimulationisimulatedsixdofcontroller2"></a><span data-ttu-id="9d20d-503">Microsoft. perceptionsimulation. ISimulatedSixDofController2</span><span class="sxs-lookup"><span data-stu-id="9d20d-503">Microsoft.PerceptionSimulation.ISimulatedSixDofController2</span></span>
 
-<span data-ttu-id="dded5-503">Zusätzliche Eigenschaften und Methoden sind verfügbar, indem ein isimulatedsixdofcontroller in ISimulatedSixDofController2 umgewandelt wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-503">Additional properties and methods are available by casting an ISimulatedSixDofController to ISimulatedSixDofController2</span></span>
+<span data-ttu-id="9d20d-504">Zusätzliche Eigenschaften und Methoden sind verfügbar, indem ein isimulatedsixdofcontroller in ISimulatedSixDofController2 umgewandelt wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-504">Additional properties and methods are available by casting an ISimulatedSixDofController to ISimulatedSixDofController2</span></span>
 
 ```
 public interface ISimulatedSixDofController2
@@ -1130,30 +1130,30 @@ public interface ISimulatedSixDofController2
 }
 ```
 
-<span data-ttu-id="dded5-504">**Microsoft. perceptionsimulation. ISimulatedSixDofController2. getthumbstickposition (out float, out float)**</span><span class="sxs-lookup"><span data-stu-id="dded5-504">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition(out float, out float)**</span></span>
+<span data-ttu-id="9d20d-505">**Microsoft. perceptionsimulation. ISimulatedSixDofController2. getthumbstickposition (out float, out float)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-505">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.GetThumbstickPosition(out float, out float)**</span></span>
 
-<span data-ttu-id="dded5-505">Gibt die Position des simulierten thumbsticks auf dem simulierten Controller an.</span><span class="sxs-lookup"><span data-stu-id="dded5-505">Get the position of the simulated thumbstick on the simulated controller.</span></span>
+<span data-ttu-id="9d20d-506">Gibt die Position des simulierten thumbsticks auf dem simulierten Controller an.</span><span class="sxs-lookup"><span data-stu-id="9d20d-506">Get the position of the simulated thumbstick on the simulated controller.</span></span>
 
-<span data-ttu-id="dded5-506">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-506">Parameters</span></span>
-* <span data-ttu-id="dded5-507">x: die horizontale Position des fingersticks.</span><span class="sxs-lookup"><span data-stu-id="dded5-507">x - The horizontal position of the thumbstick.</span></span>
-* <span data-ttu-id="dded5-508">y: die vertikale Position des Finger anheften.</span><span class="sxs-lookup"><span data-stu-id="dded5-508">y - The vertical position of the thumbstick.</span></span>
+<span data-ttu-id="9d20d-507">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-507">Parameters</span></span>
+* <span data-ttu-id="9d20d-508">x: die horizontale Position des fingersticks.</span><span class="sxs-lookup"><span data-stu-id="9d20d-508">x - The horizontal position of the thumbstick.</span></span>
+* <span data-ttu-id="9d20d-509">y: die vertikale Position des Finger anheften.</span><span class="sxs-lookup"><span data-stu-id="9d20d-509">y - The vertical position of the thumbstick.</span></span>
 
-<span data-ttu-id="dded5-509">**Microsoft. perceptionsimulation. ISimulatedSixDofController2. setthumbstickposition (float, float)**</span><span class="sxs-lookup"><span data-stu-id="dded5-509">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition(float, float)**</span></span>
+<span data-ttu-id="9d20d-510">**Microsoft. perceptionsimulation. ISimulatedSixDofController2. setthumbstickposition (float, float)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-510">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.SetThumbstickPosition(float, float)**</span></span>
 
-<span data-ttu-id="dded5-510">Legen Sie die Position des simulierten thumbsticks auf dem simulierten Controller fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-510">Set the position of the simulated thumbstick on the simulated controller.</span></span>
+<span data-ttu-id="9d20d-511">Legen Sie die Position des simulierten thumbsticks auf dem simulierten Controller fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-511">Set the position of the simulated thumbstick on the simulated controller.</span></span>
 
-<span data-ttu-id="dded5-511">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-511">Parameters</span></span>
-* <span data-ttu-id="dded5-512">x: die horizontale Position des fingersticks.</span><span class="sxs-lookup"><span data-stu-id="dded5-512">x - The horizontal position of the thumbstick.</span></span>
-* <span data-ttu-id="dded5-513">y: die vertikale Position des Finger anheften.</span><span class="sxs-lookup"><span data-stu-id="dded5-513">y - The vertical position of the thumbstick.</span></span>
+<span data-ttu-id="9d20d-512">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-512">Parameters</span></span>
+* <span data-ttu-id="9d20d-513">x: die horizontale Position des fingersticks.</span><span class="sxs-lookup"><span data-stu-id="9d20d-513">x - The horizontal position of the thumbstick.</span></span>
+* <span data-ttu-id="9d20d-514">y: die vertikale Position des Finger anheften.</span><span class="sxs-lookup"><span data-stu-id="9d20d-514">y - The vertical position of the thumbstick.</span></span>
 
-<span data-ttu-id="dded5-514">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.Batterylevel**</span><span class="sxs-lookup"><span data-stu-id="dded5-514">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**</span></span>
+<span data-ttu-id="9d20d-515">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.Batterylevel**</span><span class="sxs-lookup"><span data-stu-id="9d20d-515">**Microsoft.PerceptionSimulation.ISimulatedSixDofController2.BatteryLevel**</span></span>
 
-<span data-ttu-id="dded5-515">Ruft den Akku Pegel des simulierten Controllers ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-515">Retrieve or set the battery level of the simulated controller.</span></span>  <span data-ttu-id="dded5-516">Der Wert muss größer als 0,0 und kleiner oder gleich 100,0 sein.</span><span class="sxs-lookup"><span data-stu-id="dded5-516">The value must be greater than 0.0 and less than or equal to 100.0.</span></span>
+<span data-ttu-id="9d20d-516">Ruft den Akku Pegel des simulierten Controllers ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-516">Retrieve or set the battery level of the simulated controller.</span></span>  <span data-ttu-id="9d20d-517">Der Wert muss größer als 0,0 und kleiner oder gleich 100,0 sein.</span><span class="sxs-lookup"><span data-stu-id="9d20d-517">The value must be greater than 0.0 and less than or equal to 100.0.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulatedeyes"></a><span data-ttu-id="dded5-517">Microsoft. perceptionsimulation. isimulatedeyes</span><span class="sxs-lookup"><span data-stu-id="dded5-517">Microsoft.PerceptionSimulation.ISimulatedEyes</span></span>
+### <a name="microsoftperceptionsimulationisimulatedeyes"></a><span data-ttu-id="9d20d-518">Microsoft. perceptionsimulation. isimulatedeyes</span><span class="sxs-lookup"><span data-stu-id="9d20d-518">Microsoft.PerceptionSimulation.ISimulatedEyes</span></span>
 
-<span data-ttu-id="dded5-518">Schnittstelle, die die Augen des simulierten Menschen beschreibt.</span><span class="sxs-lookup"><span data-stu-id="dded5-518">Interface describing the eyes of the simulated human.</span></span>
+<span data-ttu-id="9d20d-519">Schnittstelle, die die Augen des simulierten Menschen beschreibt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-519">Interface describing the eyes of the simulated human.</span></span>
 
 ```
 public interface ISimulatedEyes
@@ -1165,29 +1165,29 @@ public interface ISimulatedEyes
 }
 ```
 
-<span data-ttu-id="dded5-519">**Microsoft. perceptionsimulation. isimulatedeyes. Rotation**</span><span class="sxs-lookup"><span data-stu-id="dded5-519">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**</span></span>
+<span data-ttu-id="9d20d-520">**Microsoft. perceptionsimulation. isimulatedeyes. Rotation**</span><span class="sxs-lookup"><span data-stu-id="9d20d-520">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotation**</span></span>
 
-<span data-ttu-id="dded5-520">Ruft die Drehung der simulierten Augen ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-520">Retrieve the rotation of the simulated eyes.</span></span> <span data-ttu-id="dded5-521">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="dded5-521">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="9d20d-521">Ruft die Drehung der simulierten Augen ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-521">Retrieve the rotation of the simulated eyes.</span></span> <span data-ttu-id="9d20d-522">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="9d20d-522">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="dded5-522">**Microsoft. perceptionsimulation. isimulatedeyes. Rotation (Microsoft. perceptionsimulation. Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="dded5-522">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
+<span data-ttu-id="9d20d-523">**Microsoft. perceptionsimulation. isimulatedeyes. Rotation (Microsoft. perceptionsimulation. Rotation3)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-523">**Microsoft.PerceptionSimulation.ISimulatedEyes.Rotate(Microsoft.PerceptionSimulation.Rotation3)**</span></span>
 
-<span data-ttu-id="dded5-523">Drehen der simulierten Augen in Relation zur aktuellen Drehung.</span><span class="sxs-lookup"><span data-stu-id="dded5-523">Rotate the simulated eyes relative to its current rotation.</span></span> <span data-ttu-id="dded5-524">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="dded5-524">Positive radians rotate clockwise when looking along the axis.</span></span>
+<span data-ttu-id="9d20d-524">Drehen der simulierten Augen in Relation zur aktuellen Drehung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-524">Rotate the simulated eyes relative to its current rotation.</span></span> <span data-ttu-id="9d20d-525">Bei der Betrachtung der Achse wird der Uhrzeigersinn im Uhrzeigersinn gedreht.</span><span class="sxs-lookup"><span data-stu-id="9d20d-525">Positive radians rotate clockwise when looking along the axis.</span></span>
 
-<span data-ttu-id="dded5-525">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-525">Parameters</span></span>
-* <span data-ttu-id="dded5-526">Rotation: die Menge, die gedreht werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-526">rotation - The amount to rotate.</span></span>
+<span data-ttu-id="9d20d-526">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-526">Parameters</span></span>
+* <span data-ttu-id="9d20d-527">Rotation: die Menge, die gedreht werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-527">rotation - The amount to rotate.</span></span>
 
-<span data-ttu-id="dded5-527">**Microsoft. perceptionsimulation. isimulatedeyes. calibrationstate**</span><span class="sxs-lookup"><span data-stu-id="dded5-527">**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**</span></span>
+<span data-ttu-id="9d20d-528">**Microsoft. perceptionsimulation. isimulatedeyes. calibrationstate**</span><span class="sxs-lookup"><span data-stu-id="9d20d-528">**Microsoft.PerceptionSimulation.ISimulatedEyes.CalibrationState**</span></span>
 
-<span data-ttu-id="dded5-528">Ruft den Kalibrierungs Zustand der simulierten Augen ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="dded5-528">Retrieves or sets the calibration state of the simulated eyes.</span></span>
+<span data-ttu-id="9d20d-529">Ruft den Kalibrierungs Zustand der simulierten Augen ab oder legt ihn fest.</span><span class="sxs-lookup"><span data-stu-id="9d20d-529">Retrieves or sets the calibration state of the simulated eyes.</span></span>
 
-<span data-ttu-id="dded5-529">**Microsoft. perceptionsimulation. isimulatedeyes. worldposition**</span><span class="sxs-lookup"><span data-stu-id="dded5-529">**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**</span></span>
+<span data-ttu-id="9d20d-530">**Microsoft. perceptionsimulation. isimulatedeyes. worldposition**</span><span class="sxs-lookup"><span data-stu-id="9d20d-530">**Microsoft.PerceptionSimulation.ISimulatedEyes.WorldPosition**</span></span>
 
-<span data-ttu-id="dded5-530">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-530">Retrieve the position of the node with relation to the world, in meters.</span></span>
+<span data-ttu-id="9d20d-531">Rufen Sie die Position des Knotens mit der Welt in Meter ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-531">Retrieve the position of the node with relation to the world, in meters.</span></span>
 
 
-### <a name="microsoftperceptionsimulationisimulationrecording"></a><span data-ttu-id="dded5-531">Microsoft. perceptionsimulation. isimulationrecording</span><span class="sxs-lookup"><span data-stu-id="dded5-531">Microsoft.PerceptionSimulation.ISimulationRecording</span></span>
+### <a name="microsoftperceptionsimulationisimulationrecording"></a><span data-ttu-id="9d20d-532">Microsoft. perceptionsimulation. isimulationrecording</span><span class="sxs-lookup"><span data-stu-id="9d20d-532">Microsoft.PerceptionSimulation.ISimulationRecording</span></span>
 
-<span data-ttu-id="dded5-532">Schnittstelle für die Interaktion mit einer einzelnen, für die Wiedergabe geladenen Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="dded5-532">Interface for interacting with a single recording loaded for playback.</span></span>
+<span data-ttu-id="9d20d-533">Schnittstelle für die Interaktion mit einer einzelnen, für die Wiedergabe geladenen Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-533">Interface for interacting with a single recording loaded for playback.</span></span>
 
 ```
 public interface ISimulationRecording
@@ -1201,36 +1201,36 @@ public interface ISimulationRecording
 };
 ```
 
-<span data-ttu-id="dded5-533">**Microsoft. perceptionsimulation. isimulationrecording. DataTypes**</span><span class="sxs-lookup"><span data-stu-id="dded5-533">**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**</span></span>
+<span data-ttu-id="9d20d-534">**Microsoft. perceptionsimulation. isimulationrecording. DataTypes**</span><span class="sxs-lookup"><span data-stu-id="9d20d-534">**Microsoft.PerceptionSimulation.ISimulationRecording.DataTypes**</span></span>
 
-<span data-ttu-id="dded5-534">Ruft die Liste der Datentypen in der Aufzeichnung ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-534">Retrieves the list of data types in the recording.</span></span>
+<span data-ttu-id="9d20d-535">Ruft die Liste der Datentypen in der Aufzeichnung ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-535">Retrieves the list of data types in the recording.</span></span>
 
-<span data-ttu-id="dded5-535">**Microsoft. perceptionsimulation. isimulationrecording. State**</span><span class="sxs-lookup"><span data-stu-id="dded5-535">**Microsoft.PerceptionSimulation.ISimulationRecording.State**</span></span>
+<span data-ttu-id="9d20d-536">**Microsoft. perceptionsimulation. isimulationrecording. State**</span><span class="sxs-lookup"><span data-stu-id="9d20d-536">**Microsoft.PerceptionSimulation.ISimulationRecording.State**</span></span>
 
-<span data-ttu-id="dded5-536">Ruft den aktuellen Zustand der Aufzeichnung ab.</span><span class="sxs-lookup"><span data-stu-id="dded5-536">Retrieves the current state of the recording.</span></span>
+<span data-ttu-id="9d20d-537">Ruft den aktuellen Zustand der Aufzeichnung ab.</span><span class="sxs-lookup"><span data-stu-id="9d20d-537">Retrieves the current state of the recording.</span></span>
 
-<span data-ttu-id="dded5-537">**Microsoft. perceptionsimulation. isimulationrecording. Play**</span><span class="sxs-lookup"><span data-stu-id="dded5-537">**Microsoft.PerceptionSimulation.ISimulationRecording.Play**</span></span>
+<span data-ttu-id="9d20d-538">**Microsoft. perceptionsimulation. isimulationrecording. Play**</span><span class="sxs-lookup"><span data-stu-id="9d20d-538">**Microsoft.PerceptionSimulation.ISimulationRecording.Play**</span></span>
 
-<span data-ttu-id="dded5-538">Starten Sie die Wiedergabe.</span><span class="sxs-lookup"><span data-stu-id="dded5-538">Start the playback.</span></span> <span data-ttu-id="dded5-539">Wenn die Aufzeichnung angehalten wurde, wird die Wiedergabe an der angehaltenen Position fortgesetzt. Wenn der Vorgang beendet ist, wird die Wiedergabe am Anfang gestartet.</span><span class="sxs-lookup"><span data-stu-id="dded5-539">If the recording is paused, playback will resume from the paused location; if stopped, playback will start at the beginning.</span></span> <span data-ttu-id="dded5-540">Wenn Sie bereits abgespielt wird, wird dieser-Befehl ignoriert.</span><span class="sxs-lookup"><span data-stu-id="dded5-540">If already playing, this call is ignored.</span></span>
+<span data-ttu-id="9d20d-539">Starten Sie die Wiedergabe.</span><span class="sxs-lookup"><span data-stu-id="9d20d-539">Start the playback.</span></span> <span data-ttu-id="9d20d-540">Wenn die Aufzeichnung angehalten wurde, wird die Wiedergabe an der angehaltenen Position fortgesetzt. Wenn der Vorgang beendet ist, wird die Wiedergabe am Anfang gestartet.</span><span class="sxs-lookup"><span data-stu-id="9d20d-540">If the recording is paused, playback will resume from the paused location; if stopped, playback will start at the beginning.</span></span> <span data-ttu-id="9d20d-541">Wenn Sie bereits abgespielt wird, wird dieser-Befehl ignoriert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-541">If already playing, this call is ignored.</span></span>
 
-<span data-ttu-id="dded5-541">**Microsoft. perceptionsimulation. isimulationrecording. Pause**</span><span class="sxs-lookup"><span data-stu-id="dded5-541">**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**</span></span>
+<span data-ttu-id="9d20d-542">**Microsoft. perceptionsimulation. isimulationrecording. Pause**</span><span class="sxs-lookup"><span data-stu-id="9d20d-542">**Microsoft.PerceptionSimulation.ISimulationRecording.Pause**</span></span>
 
-<span data-ttu-id="dded5-542">Hält die Wiedergabe an Ihrer aktuellen Position an.</span><span class="sxs-lookup"><span data-stu-id="dded5-542">Pauses the playback at its current location.</span></span> <span data-ttu-id="dded5-543">Wenn die Aufzeichnung beendet wird, wird der-Rückruf ignoriert.</span><span class="sxs-lookup"><span data-stu-id="dded5-543">If the recording is stopped, the call is ignored.</span></span>
+<span data-ttu-id="9d20d-543">Hält die Wiedergabe an Ihrer aktuellen Position an.</span><span class="sxs-lookup"><span data-stu-id="9d20d-543">Pauses the playback at its current location.</span></span> <span data-ttu-id="9d20d-544">Wenn die Aufzeichnung beendet wird, wird der-Rückruf ignoriert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-544">If the recording is stopped, the call is ignored.</span></span>
 
-<span data-ttu-id="dded5-544">**Microsoft. perceptionsimulation. isimulationrecording. Seek (System. UInt64)**</span><span class="sxs-lookup"><span data-stu-id="dded5-544">**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**</span></span>
+<span data-ttu-id="9d20d-545">**Microsoft. perceptionsimulation. isimulationrecording. Seek (System. UInt64)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-545">**Microsoft.PerceptionSimulation.ISimulationRecording.Seek(System.UInt64)**</span></span>
 
-<span data-ttu-id="dded5-545">Sucht die Aufzeichnung bis zur angegebenen Zeit (in 100 Nanosekunden-Intervallen von Anfang an) und hält an dieser Stelle an.</span><span class="sxs-lookup"><span data-stu-id="dded5-545">Seeks the recording to the specified time (in 100 nanoseconds intervals from the beginning) and pauses at that location.</span></span> <span data-ttu-id="dded5-546">Wenn die Uhrzeit hinter dem Ende der Aufzeichnung liegt, wird Sie im letzten Frame angehalten.</span><span class="sxs-lookup"><span data-stu-id="dded5-546">If the time is beyond the end of the recording, it is paused at the last frame.</span></span>
+<span data-ttu-id="9d20d-546">Sucht die Aufzeichnung auf die angegebene Zeit (in 100-Nanosekunden-Intervallen von Anfang an) und hält an dieser Stelle an.</span><span class="sxs-lookup"><span data-stu-id="9d20d-546">Seeks the recording to the specified time (in 100-nanoseconds intervals from the beginning) and pauses at that location.</span></span> <span data-ttu-id="9d20d-547">Wenn die Uhrzeit hinter dem Ende der Aufzeichnung liegt, wird Sie im letzten Frame angehalten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-547">If the time is beyond the end of the recording, it's paused at the last frame.</span></span>
 
-<span data-ttu-id="dded5-547">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-547">Parameters</span></span>
-* <span data-ttu-id="dded5-548">Ticks-die Zeit, nach der gesucht werden soll.</span><span class="sxs-lookup"><span data-stu-id="dded5-548">ticks - The time to which to seek.</span></span>
+<span data-ttu-id="9d20d-548">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-548">Parameters</span></span>
+* <span data-ttu-id="9d20d-549">Ticks-die Zeit, nach der gesucht werden soll.</span><span class="sxs-lookup"><span data-stu-id="9d20d-549">ticks - The time to which to seek.</span></span>
 
-<span data-ttu-id="dded5-549">**Microsoft. perceptionsimulation. isimulationrecording. anhalten**</span><span class="sxs-lookup"><span data-stu-id="dded5-549">**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**</span></span>
+<span data-ttu-id="9d20d-550">**Microsoft. perceptionsimulation. isimulationrecording. anhalten**</span><span class="sxs-lookup"><span data-stu-id="9d20d-550">**Microsoft.PerceptionSimulation.ISimulationRecording.Stop**</span></span>
 
-<span data-ttu-id="dded5-550">Beendet die Wiedergabe und setzt die Position auf den Anfang zurück.</span><span class="sxs-lookup"><span data-stu-id="dded5-550">Stops the playback and resets the position to the beginning.</span></span>
+<span data-ttu-id="9d20d-551">Beendet die Wiedergabe und setzt die Position auf den Anfang zurück.</span><span class="sxs-lookup"><span data-stu-id="9d20d-551">Stops the playback and resets the position to the beginning.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulationrecordingcallback"></a><span data-ttu-id="dded5-551">Microsoft. perceptionsimulation. isimulationrecordingcallback</span><span class="sxs-lookup"><span data-stu-id="dded5-551">Microsoft.PerceptionSimulation.ISimulationRecordingCallback</span></span>
+### <a name="microsoftperceptionsimulationisimulationrecordingcallback"></a><span data-ttu-id="9d20d-552">Microsoft. perceptionsimulation. isimulationrecordingcallback</span><span class="sxs-lookup"><span data-stu-id="9d20d-552">Microsoft.PerceptionSimulation.ISimulationRecordingCallback</span></span>
 
-<span data-ttu-id="dded5-552">Schnittstelle zum Empfangen von Zustandsänderungen während der Wiedergabe.</span><span class="sxs-lookup"><span data-stu-id="dded5-552">Interface for receiving state changes during playback.</span></span>
+<span data-ttu-id="9d20d-553">Schnittstelle zum Empfangen von Zustandsänderungen während der Wiedergabe.</span><span class="sxs-lookup"><span data-stu-id="9d20d-553">Interface for receiving state changes during playback.</span></span>
 
 ```
 public interface ISimulationRecordingCallback
@@ -1239,16 +1239,16 @@ public interface ISimulationRecordingCallback
 };
 ```
 
-<span data-ttu-id="dded5-553">**Microsoft. perceptionsimulation. isimulationrecordingcallback. playbackstatechanged (Microsoft. perceptionsimulation. playbackstate)**</span><span class="sxs-lookup"><span data-stu-id="dded5-553">**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**</span></span>
+<span data-ttu-id="9d20d-554">**Microsoft. perceptionsimulation. isimulationrecordingcallback. playbackstatechanged (Microsoft. perceptionsimulation. playbackstate)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-554">**Microsoft.PerceptionSimulation.ISimulationRecordingCallback.PlaybackStateChanged(Microsoft.PerceptionSimulation.PlaybackState)**</span></span>
 
-<span data-ttu-id="dded5-554">Wird aufgerufen, wenn sich der Wiedergabe Zustand einer isimulationrecording geändert hat.</span><span class="sxs-lookup"><span data-stu-id="dded5-554">Called when an ISimulationRecording's playback state has changed.</span></span>
+<span data-ttu-id="9d20d-555">Wird aufgerufen, wenn sich der Wiedergabe Zustand einer isimulationrecording geändert hat.</span><span class="sxs-lookup"><span data-stu-id="9d20d-555">Called when an ISimulationRecording's playback state has changed.</span></span>
 
-<span data-ttu-id="dded5-555">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-555">Parameters</span></span>
-* <span data-ttu-id="dded5-556">newState: der neue Status der Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="dded5-556">newState - The new state of the recording.</span></span>
+<span data-ttu-id="9d20d-556">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-556">Parameters</span></span>
+* <span data-ttu-id="9d20d-557">newState: der neue Status der Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-557">newState - The new state of the recording.</span></span>
 
-### <a name="microsoftperceptionsimulationperceptionsimulationmanager"></a><span data-ttu-id="dded5-557">Microsoft. perceptionsimulation. perceptionsimulationmanager</span><span class="sxs-lookup"><span data-stu-id="dded5-557">Microsoft.PerceptionSimulation.PerceptionSimulationManager</span></span>
+### <a name="microsoftperceptionsimulationperceptionsimulationmanager"></a><span data-ttu-id="9d20d-558">Microsoft. perceptionsimulation. perceptionsimulationmanager</span><span class="sxs-lookup"><span data-stu-id="9d20d-558">Microsoft.PerceptionSimulation.PerceptionSimulationManager</span></span>
 
-<span data-ttu-id="dded5-558">Das Stamm Objekt zum Erstellen von perception Simulation-Objekten.</span><span class="sxs-lookup"><span data-stu-id="dded5-558">Root object for creating Perception Simulation objects.</span></span>
+<span data-ttu-id="9d20d-559">Das Stamm Objekt zum Erstellen von perception Simulation-Objekten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-559">Root object for creating Perception Simulation objects.</span></span>
 
 ```
 public static class PerceptionSimulationManager
@@ -1259,56 +1259,56 @@ public static class PerceptionSimulationManager
     public static ISimulationRecording LoadPerceptionSimulationRecording(string path, ISimulationStreamSinkFactory factory, ISimulationRecordingCallback callback);
 ```
 
-<span data-ttu-id="dded5-559">**Microsoft. perceptionsimulation. perceptionsimulationmanager. kreateperceptionsimulationmanager (Microsoft. perceptionsimulation. isimulationstreamsink)**</span><span class="sxs-lookup"><span data-stu-id="dded5-559">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**</span></span>
+<span data-ttu-id="9d20d-560">**Microsoft. perceptionsimulation. perceptionsimulationmanager. kreateperceptionsimulationmanager (Microsoft. perceptionsimulation. isimulationstreamsink)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-560">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationManager(Microsoft.PerceptionSimulation.ISimulationStreamSink)**</span></span>
 
-<span data-ttu-id="dded5-560">Erstellen Sie ein Objekt zum Erstellen von simulierten Paketen und zum Bereitstellen der Pakete an die angegebene Senke.</span><span class="sxs-lookup"><span data-stu-id="dded5-560">Create on object for generating simulated packets and delivering them to the provided sink.</span></span>
+<span data-ttu-id="9d20d-561">Erstellen Sie ein Objekt zum Erstellen von simulierten Paketen und zum Bereitstellen der Pakete an die angegebene Senke.</span><span class="sxs-lookup"><span data-stu-id="9d20d-561">Create on object for generating simulated packets and delivering them to the provided sink.</span></span>
 
-<span data-ttu-id="dded5-561">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-561">Parameters</span></span>
-* <span data-ttu-id="dded5-562">Sink: die Senke, die alle generierten Pakete empfängt.</span><span class="sxs-lookup"><span data-stu-id="dded5-562">sink - The sink that will receive all generated packets.</span></span>
+<span data-ttu-id="9d20d-562">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-562">Parameters</span></span>
+* <span data-ttu-id="9d20d-563">Sink: die Senke, die alle generierten Pakete empfängt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-563">sink - The sink that will receive all generated packets.</span></span>
 
-<span data-ttu-id="dded5-563">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dded5-563">Return value</span></span>
+<span data-ttu-id="9d20d-564">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9d20d-564">Return value</span></span>
 
-<span data-ttu-id="dded5-564">Der erstellte Manager.</span><span class="sxs-lookup"><span data-stu-id="dded5-564">The created Manager.</span></span>
+<span data-ttu-id="9d20d-565">Der erstellte Manager.</span><span class="sxs-lookup"><span data-stu-id="9d20d-565">The created Manager.</span></span>
 
-<span data-ttu-id="dded5-565">**Microsoft. perceptionsimulation. perceptionsimulationmanager. kreateperceptionsimulationrecording (System. String)**</span><span class="sxs-lookup"><span data-stu-id="dded5-565">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**</span></span>
+<span data-ttu-id="9d20d-566">**Microsoft. perceptionsimulation. perceptionsimulationmanager. kreateperceptionsimulationrecording (System. String)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-566">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.CreatePerceptionSimulationRecording(System.String)**</span></span>
 
-<span data-ttu-id="dded5-566">Erstellen Sie eine Senke, in der alle empfangenen Pakete in einer Datei unter dem angegebenen Pfad gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="dded5-566">Create a sink which stores all received packets in a file at the specified path.</span></span>
+<span data-ttu-id="9d20d-567">Erstellen Sie eine Senke, in der alle empfangenen Pakete in einer Datei unter dem angegebenen Pfad gespeichert werden.</span><span class="sxs-lookup"><span data-stu-id="9d20d-567">Create a sink, which stores all received packets in a file at the specified path.</span></span>
 
-<span data-ttu-id="dded5-567">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-567">Parameters</span></span>
-* <span data-ttu-id="dded5-568">Path: der Pfad der zu erstellenden Datei.</span><span class="sxs-lookup"><span data-stu-id="dded5-568">path - The path of the file to create.</span></span>
+<span data-ttu-id="9d20d-568">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-568">Parameters</span></span>
+* <span data-ttu-id="9d20d-569">Path: der Pfad der zu erstellenden Datei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-569">path - The path of the file to create.</span></span>
 
-<span data-ttu-id="dded5-569">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dded5-569">Return value</span></span>
+<span data-ttu-id="9d20d-570">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9d20d-570">Return value</span></span>
 
-<span data-ttu-id="dded5-570">Die erstellte Senke.</span><span class="sxs-lookup"><span data-stu-id="dded5-570">The created sink.</span></span>
+<span data-ttu-id="9d20d-571">Die erstellte Senke.</span><span class="sxs-lookup"><span data-stu-id="9d20d-571">The created sink.</span></span>
 
-<span data-ttu-id="dded5-571">**Microsoft. perceptionsimulation. perceptionsimulationmanager. loadperceptionsimulationrecording (System. String, Microsoft. perceptionsimulation. isimulationstreamsink Factory)**</span><span class="sxs-lookup"><span data-stu-id="dded5-571">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**</span></span>
+<span data-ttu-id="9d20d-572">**Microsoft. perceptionsimulation. perceptionsimulationmanager. loadperceptionsimulationrecording (System. String, Microsoft. perceptionsimulation. isimulationstreamsink Factory)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-572">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory)**</span></span>
 
-<span data-ttu-id="dded5-572">Lädt eine Aufzeichnung aus der angegebenen Datei.</span><span class="sxs-lookup"><span data-stu-id="dded5-572">Load a recording from the specified file.</span></span>
+<span data-ttu-id="9d20d-573">Lädt eine Aufzeichnung aus der angegebenen Datei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-573">Load a recording from the specified file.</span></span>
 
-<span data-ttu-id="dded5-573">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-573">Parameters</span></span>
-* <span data-ttu-id="dded5-574">Path: der Pfad der zu ladenden Datei.</span><span class="sxs-lookup"><span data-stu-id="dded5-574">path - The path of the file to load.</span></span>
-* <span data-ttu-id="dded5-575">Factory: eine Factory, die von der Aufzeichnung zum Erstellen einer isimulationstreamsink bei Bedarf verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-575">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
+<span data-ttu-id="9d20d-574">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-574">Parameters</span></span>
+* <span data-ttu-id="9d20d-575">Path: der Pfad der zu ladenden Datei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-575">path - The path of the file to load.</span></span>
+* <span data-ttu-id="9d20d-576">Factory: eine Factory, die von der Aufzeichnung zum Erstellen einer isimulationstreamsink bei Bedarf verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-576">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
 
-<span data-ttu-id="dded5-576">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dded5-576">Return value</span></span>
+<span data-ttu-id="9d20d-577">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9d20d-577">Return value</span></span>
 
-<span data-ttu-id="dded5-577">Die geladene Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="dded5-577">The loaded recording.</span></span>
+<span data-ttu-id="9d20d-578">Die geladene Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-578">The loaded recording.</span></span>
 
-<span data-ttu-id="dded5-578">**Microsoft. perceptionsimulation. perzeptionsimulationmanager. loadperceptionsimulationrecording (System. String, Microsoft. perceptionsimulation. isimulationstreamsink Factory, Microsoft. perceptionsimulation. isimulationrecordingcallback)**</span><span class="sxs-lookup"><span data-stu-id="dded5-578">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory,Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**</span></span>
+<span data-ttu-id="9d20d-579">**Microsoft. perceptionsimulation. perzeptionsimulationmanager. loadperceptionsimulationrecording (System. String, Microsoft. perceptionsimulation. isimulationstreamsink Factory, Microsoft. perceptionsimulation. isimulationrecordingcallback)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-579">**Microsoft.PerceptionSimulation.PerceptionSimulationManager.LoadPerceptionSimulationRecording(System.String,Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory,Microsoft.PerceptionSimulation.ISimulationRecordingCallback)**</span></span>
 
-<span data-ttu-id="dded5-579">Lädt eine Aufzeichnung aus der angegebenen Datei.</span><span class="sxs-lookup"><span data-stu-id="dded5-579">Load a recording from the specified file.</span></span>
+<span data-ttu-id="9d20d-580">Lädt eine Aufzeichnung aus der angegebenen Datei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-580">Load a recording from the specified file.</span></span>
 
-<span data-ttu-id="dded5-580">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-580">Parameters</span></span>
-* <span data-ttu-id="dded5-581">Path: der Pfad der zu ladenden Datei.</span><span class="sxs-lookup"><span data-stu-id="dded5-581">path - The path of the file to load.</span></span>
-* <span data-ttu-id="dded5-582">Factory: eine Factory, die von der Aufzeichnung zum Erstellen einer isimulationstreamsink bei Bedarf verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="dded5-582">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
-* <span data-ttu-id="dded5-583">Callback: ein Rückruf, der Updates empfängt, die den Status der Aufzeichnung neu formatidieren.</span><span class="sxs-lookup"><span data-stu-id="dded5-583">callback - A callback which receives updates regrading the recording's status.</span></span>
+<span data-ttu-id="9d20d-581">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-581">Parameters</span></span>
+* <span data-ttu-id="9d20d-582">Path: der Pfad der zu ladenden Datei.</span><span class="sxs-lookup"><span data-stu-id="9d20d-582">path - The path of the file to load.</span></span>
+* <span data-ttu-id="9d20d-583">Factory: eine Factory, die von der Aufzeichnung zum Erstellen einer isimulationstreamsink bei Bedarf verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="9d20d-583">factory - A factory used by the recording for creating an ISimulationStreamSink when required.</span></span>
+* <span data-ttu-id="9d20d-584">Callback: ein Rückruf, der Updates empfängt, die den Status der Aufzeichnung neu bewerten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-584">callback - A callback, which receives updates regrading the recording's status.</span></span>
 
-<span data-ttu-id="dded5-584">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dded5-584">Return value</span></span>
+<span data-ttu-id="9d20d-585">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9d20d-585">Return value</span></span>
 
-<span data-ttu-id="dded5-585">Die geladene Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="dded5-585">The loaded recording.</span></span>
+<span data-ttu-id="9d20d-586">Die geladene Aufzeichnung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-586">The loaded recording.</span></span>
 
-### <a name="microsoftperceptionsimulationstreamdatatypes"></a><span data-ttu-id="dded5-586">Microsoft. perceptionsimulation. streamdatatypes</span><span class="sxs-lookup"><span data-stu-id="dded5-586">Microsoft.PerceptionSimulation.StreamDataTypes</span></span>
+### <a name="microsoftperceptionsimulationstreamdatatypes"></a><span data-ttu-id="9d20d-587">Microsoft. perceptionsimulation. streamdatatypes</span><span class="sxs-lookup"><span data-stu-id="9d20d-587">Microsoft.PerceptionSimulation.StreamDataTypes</span></span>
 
-<span data-ttu-id="dded5-587">Beschreibt die unterschiedlichen Typen von Streamdaten.</span><span class="sxs-lookup"><span data-stu-id="dded5-587">Describes the different types of stream data.</span></span>
+<span data-ttu-id="9d20d-588">Beschreibt die unterschiedlichen Typen von Streamdaten.</span><span class="sxs-lookup"><span data-stu-id="9d20d-588">Describes the different types of stream data.</span></span>
 
 ```
 public enum StreamDataTypes
@@ -1326,49 +1326,49 @@ public enum StreamDataTypes
 }
 ```
 
-<span data-ttu-id="dded5-588">**Microsoft. perceptionsimulation. streamdatatypes. None**</span><span class="sxs-lookup"><span data-stu-id="dded5-588">**Microsoft.PerceptionSimulation.StreamDataTypes.None**</span></span>
+<span data-ttu-id="9d20d-589">**Microsoft. perceptionsimulation. streamdatatypes. None**</span><span class="sxs-lookup"><span data-stu-id="9d20d-589">**Microsoft.PerceptionSimulation.StreamDataTypes.None**</span></span>
 
-<span data-ttu-id="dded5-589">Ein Sentinelwert, der verwendet wird, um keine streamdatentypen anzugeben</span><span class="sxs-lookup"><span data-stu-id="dded5-589">A sentinel value used to indicate no stream data types.</span></span>
+<span data-ttu-id="9d20d-590">Ein Sentinelwert, der verwendet wird, um keine streamdatentypen anzugeben</span><span class="sxs-lookup"><span data-stu-id="9d20d-590">A sentinel value used to indicate no stream data types.</span></span>
 
-<span data-ttu-id="dded5-590">**Microsoft. perceptionsimulation. streamdatatypes. Head**</span><span class="sxs-lookup"><span data-stu-id="dded5-590">**Microsoft.PerceptionSimulation.StreamDataTypes.Head**</span></span>
+<span data-ttu-id="9d20d-591">**Microsoft. perceptionsimulation. streamdatatypes. Head**</span><span class="sxs-lookup"><span data-stu-id="9d20d-591">**Microsoft.PerceptionSimulation.StreamDataTypes.Head**</span></span>
 
-<span data-ttu-id="dded5-591">Datenstrom bezüglich der Position und Ausrichtung des Kopfes.</span><span class="sxs-lookup"><span data-stu-id="dded5-591">Stream of data regarding the position and orientation of the head.</span></span>
+<span data-ttu-id="9d20d-592">Datenstrom für die Position und Ausrichtung des Kopfes.</span><span class="sxs-lookup"><span data-stu-id="9d20d-592">Stream of data for the position and orientation of the head.</span></span>
 
-<span data-ttu-id="dded5-592">**Microsoft. perceptionsimulation. streamdatatypes. Hands**</span><span class="sxs-lookup"><span data-stu-id="dded5-592">**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**</span></span>
+<span data-ttu-id="9d20d-593">**Microsoft. perceptionsimulation. streamdatatypes. Hands**</span><span class="sxs-lookup"><span data-stu-id="9d20d-593">**Microsoft.PerceptionSimulation.StreamDataTypes.Hands**</span></span>
 
-<span data-ttu-id="dded5-593">Datenstrom in Bezug auf die Position und Gesten von Händen.</span><span class="sxs-lookup"><span data-stu-id="dded5-593">Stream of data regarding the position and gestures of hands.</span></span>
+<span data-ttu-id="9d20d-594">Datenstrom für die Position und Gesten von Händen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-594">Stream of data for the position and gestures of hands.</span></span>
 
-<span data-ttu-id="dded5-594">**Microsoft. perceptionsimulation. streamdatatypes. spatialmapping**</span><span class="sxs-lookup"><span data-stu-id="dded5-594">**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**</span></span>
+<span data-ttu-id="9d20d-595">**Microsoft. perceptionsimulation. streamdatatypes. spatialmapping**</span><span class="sxs-lookup"><span data-stu-id="9d20d-595">**Microsoft.PerceptionSimulation.StreamDataTypes.SpatialMapping**</span></span>
 
-<span data-ttu-id="dded5-595">Datenstrom in Bezug auf die räumliche Zuordnung der Umgebung.</span><span class="sxs-lookup"><span data-stu-id="dded5-595">Stream of data regarding spatial mapping of the environment.</span></span>
+<span data-ttu-id="9d20d-596">Datenstrom für räumliche Zuordnung der Umgebung.</span><span class="sxs-lookup"><span data-stu-id="9d20d-596">Stream of data for spatial mapping of the environment.</span></span>
 
-<span data-ttu-id="dded5-596">**Microsoft. perceptionsimulation. streamdatatypes. Kalibrierung**</span><span class="sxs-lookup"><span data-stu-id="dded5-596">**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**</span></span>
+<span data-ttu-id="9d20d-597">**Microsoft. perceptionsimulation. streamdatatypes. Kalibrierung**</span><span class="sxs-lookup"><span data-stu-id="9d20d-597">**Microsoft.PerceptionSimulation.StreamDataTypes.Calibration**</span></span>
 
-<span data-ttu-id="dded5-597">Datenstrom zur Kalibrierung des Geräts.</span><span class="sxs-lookup"><span data-stu-id="dded5-597">Stream of data regarding calibration of the device.</span></span> <span data-ttu-id="dded5-598">Kalibrierungs Pakete werden nur von einem System im Remote Modus akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="dded5-598">Calibration packets are only accepted by a system in Remote Mode.</span></span>
+<span data-ttu-id="9d20d-598">Datenstrom für die Kalibrierung des Geräts.</span><span class="sxs-lookup"><span data-stu-id="9d20d-598">Stream of data for calibration of the device.</span></span> <span data-ttu-id="9d20d-599">Kalibrierungs Pakete werden nur von einem System im Remote Modus akzeptiert.</span><span class="sxs-lookup"><span data-stu-id="9d20d-599">Calibration packets are only accepted by a system in Remote Mode.</span></span>
 
-<span data-ttu-id="dded5-599">**Microsoft. perceptionsimulation. streamdatatypes. Environment**</span><span class="sxs-lookup"><span data-stu-id="dded5-599">**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**</span></span>
+<span data-ttu-id="9d20d-600">**Microsoft. perceptionsimulation. streamdatatypes. Environment**</span><span class="sxs-lookup"><span data-stu-id="9d20d-600">**Microsoft.PerceptionSimulation.StreamDataTypes.Environment**</span></span>
 
-<span data-ttu-id="dded5-600">Datenstrom in Bezug auf die Umgebung des Geräts.</span><span class="sxs-lookup"><span data-stu-id="dded5-600">Stream of data regarding the environment of the device.</span></span>
+<span data-ttu-id="9d20d-601">Datenstrom für die Umgebung des Geräts.</span><span class="sxs-lookup"><span data-stu-id="9d20d-601">Stream of data for the environment of the device.</span></span>
 
-<span data-ttu-id="dded5-601">**Microsoft. perceptionsimulation. streamdatatypes. sixdof Controllers**</span><span class="sxs-lookup"><span data-stu-id="dded5-601">**Microsoft.PerceptionSimulation.StreamDataTypes.SixDofControllers**</span></span>
+<span data-ttu-id="9d20d-602">**Microsoft. perceptionsimulation. streamdatatypes. sixdof Controllers**</span><span class="sxs-lookup"><span data-stu-id="9d20d-602">**Microsoft.PerceptionSimulation.StreamDataTypes.SixDofControllers**</span></span>
 
-<span data-ttu-id="dded5-602">Datenstrom in Bezug auf Motion-Controller.</span><span class="sxs-lookup"><span data-stu-id="dded5-602">Stream of data regarding motion controllers.</span></span>
+<span data-ttu-id="9d20d-603">Datenstrom für Bewegungs Controller.</span><span class="sxs-lookup"><span data-stu-id="9d20d-603">Stream of data for motion controllers.</span></span>
 
-<span data-ttu-id="dded5-603">**Microsoft. perceptionsimulation. streamdatatypes. Eyes**</span><span class="sxs-lookup"><span data-stu-id="dded5-603">**Microsoft.PerceptionSimulation.StreamDataTypes.Eyes**</span></span>
+<span data-ttu-id="9d20d-604">**Microsoft. perceptionsimulation. streamdatatypes. Eyes**</span><span class="sxs-lookup"><span data-stu-id="9d20d-604">**Microsoft.PerceptionSimulation.StreamDataTypes.Eyes**</span></span>
 
-<span data-ttu-id="dded5-604">Datenstrom in Bezug auf die Augen des simulierten Menschen.</span><span class="sxs-lookup"><span data-stu-id="dded5-604">Stream of data regarding the eyes of the simulated human.</span></span>
+<span data-ttu-id="9d20d-605">Datenstrom mit den Augen des simulierten Menschen.</span><span class="sxs-lookup"><span data-stu-id="9d20d-605">Stream of data with the eyes of the simulated human.</span></span>
 
-<span data-ttu-id="dded5-605">**Microsoft. perceptionsimulation. streamdatatypes. displayconfiguration**</span><span class="sxs-lookup"><span data-stu-id="dded5-605">**Microsoft.PerceptionSimulation.StreamDataTypes.DisplayConfiguration**</span></span>
+<span data-ttu-id="9d20d-606">**Microsoft. perceptionsimulation. streamdatatypes. displayconfiguration**</span><span class="sxs-lookup"><span data-stu-id="9d20d-606">**Microsoft.PerceptionSimulation.StreamDataTypes.DisplayConfiguration**</span></span>
 
-<span data-ttu-id="dded5-606">Datenstrom in Bezug auf die Anzeige Konfiguration des Geräts.</span><span class="sxs-lookup"><span data-stu-id="dded5-606">Stream of data regarding the display configuration of the device.</span></span>
+<span data-ttu-id="9d20d-607">Datenstrom mit der Anzeige Konfiguration des Geräts.</span><span class="sxs-lookup"><span data-stu-id="9d20d-607">Stream of data with the display configuration of the device.</span></span>
 
-<span data-ttu-id="dded5-607">**Microsoft. perceptionsimulation. streamdatatypes. all**</span><span class="sxs-lookup"><span data-stu-id="dded5-607">**Microsoft.PerceptionSimulation.StreamDataTypes.All**</span></span>
+<span data-ttu-id="9d20d-608">**Microsoft. perceptionsimulation. streamdatatypes. all**</span><span class="sxs-lookup"><span data-stu-id="9d20d-608">**Microsoft.PerceptionSimulation.StreamDataTypes.All**</span></span>
 
-<span data-ttu-id="dded5-608">Ein Sentinelwert, der verwendet wird, um alle aufgezeichneten Datentypen anzugeben.</span><span class="sxs-lookup"><span data-stu-id="dded5-608">A sentinel value used to indicate all recorded data types.</span></span>
+<span data-ttu-id="9d20d-609">Ein Sentinelwert, der verwendet wird, um alle aufgezeichneten Datentypen anzugeben.</span><span class="sxs-lookup"><span data-stu-id="9d20d-609">A sentinel value used to indicate all recorded data types.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulationstreamsink"></a><span data-ttu-id="dded5-609">Microsoft. perceptionsimulation. isimulationstreamsink</span><span class="sxs-lookup"><span data-stu-id="dded5-609">Microsoft.PerceptionSimulation.ISimulationStreamSink</span></span>
+### <a name="microsoftperceptionsimulationisimulationstreamsink"></a><span data-ttu-id="9d20d-610">Microsoft. perceptionsimulation. isimulationstreamsink</span><span class="sxs-lookup"><span data-stu-id="9d20d-610">Microsoft.PerceptionSimulation.ISimulationStreamSink</span></span>
 
-<span data-ttu-id="dded5-610">Ein Objekt, das Datenpakete von einem Simulationsdaten Strom empfängt.</span><span class="sxs-lookup"><span data-stu-id="dded5-610">An object that receives data packets from a simulation stream.</span></span>
+<span data-ttu-id="9d20d-611">Ein Objekt, das Datenpakete von einem Simulationsdaten Strom empfängt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-611">An object that receives data packets from a simulation stream.</span></span>
 
 ```
 public interface ISimulationStreamSink
@@ -1377,17 +1377,17 @@ public interface ISimulationStreamSink
 }
 ```
 
-<span data-ttu-id="dded5-611">**Microsoft. perceptionsimulation. isimulationstreamsink. onpacketempfang\uint length, Byte [] Packet)**</span><span class="sxs-lookup"><span data-stu-id="dded5-611">**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived(uint length, byte[] packet)**</span></span>
+<span data-ttu-id="9d20d-612">**Microsoft. perceptionsimulation. isimulationstreamsink. onpacketempfang\uint length, Byte [] Packet)**</span><span class="sxs-lookup"><span data-stu-id="9d20d-612">**Microsoft.PerceptionSimulation.ISimulationStreamSink.OnPacketReceived(uint length, byte[] packet)**</span></span>
 
-<span data-ttu-id="dded5-612">Empfängt ein einzelnes Paket, das intern eingegeben und mit Versions Angabe versehen ist.</span><span class="sxs-lookup"><span data-stu-id="dded5-612">Receives a single packet, which is internally typed and versioned.</span></span>
+<span data-ttu-id="9d20d-613">Empfängt ein einzelnes Paket, das intern eingegeben und mit Versions Angabe versehen ist.</span><span class="sxs-lookup"><span data-stu-id="9d20d-613">Receives a single packet, which is internally typed and versioned.</span></span>
 
-<span data-ttu-id="dded5-613">Parameter</span><span class="sxs-lookup"><span data-stu-id="dded5-613">Parameters</span></span>
-* <span data-ttu-id="dded5-614">length: die Länge des Pakets.</span><span class="sxs-lookup"><span data-stu-id="dded5-614">length - The length of the packet.</span></span>
-* <span data-ttu-id="dded5-615">Packet: die Daten des Pakets.</span><span class="sxs-lookup"><span data-stu-id="dded5-615">packet - The data of the packet.</span></span>
+<span data-ttu-id="9d20d-614">Parameter</span><span class="sxs-lookup"><span data-stu-id="9d20d-614">Parameters</span></span>
+* <span data-ttu-id="9d20d-615">length: die Länge des Pakets.</span><span class="sxs-lookup"><span data-stu-id="9d20d-615">length - The length of the packet.</span></span>
+* <span data-ttu-id="9d20d-616">Packet: die Daten des Pakets.</span><span class="sxs-lookup"><span data-stu-id="9d20d-616">packet - The data of the packet.</span></span>
 
-### <a name="microsoftperceptionsimulationisimulationstreamsinkfactory"></a><span data-ttu-id="dded5-616">Microsoft. perceptionsimulation. isimulationstreamsink Factory</span><span class="sxs-lookup"><span data-stu-id="dded5-616">Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory</span></span>
+### <a name="microsoftperceptionsimulationisimulationstreamsinkfactory"></a><span data-ttu-id="9d20d-617">Microsoft. perceptionsimulation. isimulationstreamsink Factory</span><span class="sxs-lookup"><span data-stu-id="9d20d-617">Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory</span></span>
 
-<span data-ttu-id="dded5-617">Ein Objekt, das isimulationstreamsink erstellt.</span><span class="sxs-lookup"><span data-stu-id="dded5-617">An object that creates ISimulationStreamSink.</span></span>
+<span data-ttu-id="9d20d-618">Ein Objekt, das isimulationstreamsink erstellt.</span><span class="sxs-lookup"><span data-stu-id="9d20d-618">An object that creates ISimulationStreamSink.</span></span>
 
 ```
 public interface ISimulationStreamSinkFactory
@@ -1396,10 +1396,10 @@ public interface ISimulationStreamSinkFactory
 }
 ```
 
-<span data-ttu-id="dded5-618">**Microsoft. perceptionsimulation. isimulationstreamsink Factory. kreatesimulationstreamsink ()**</span><span class="sxs-lookup"><span data-stu-id="dded5-618">**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**</span></span>
+<span data-ttu-id="9d20d-619">**Microsoft. perceptionsimulation. isimulationstreamsink Factory. kreatesimulationstreamsink ()**</span><span class="sxs-lookup"><span data-stu-id="9d20d-619">**Microsoft.PerceptionSimulation.ISimulationStreamSinkFactory.CreateSimulationStreamSink()**</span></span>
 
-<span data-ttu-id="dded5-619">Erstellt eine einzelne Instanz von isimulationstreamsink.</span><span class="sxs-lookup"><span data-stu-id="dded5-619">Creates a single instance of ISimulationStreamSink.</span></span>
+<span data-ttu-id="9d20d-620">Erstellt eine einzelne Instanz von isimulationstreamsink.</span><span class="sxs-lookup"><span data-stu-id="9d20d-620">Creates a single instance of ISimulationStreamSink.</span></span>
 
-<span data-ttu-id="dded5-620">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="dded5-620">Return value</span></span>
+<span data-ttu-id="9d20d-621">Rückgabewert</span><span class="sxs-lookup"><span data-stu-id="9d20d-621">Return value</span></span>
 
-<span data-ttu-id="dded5-621">Die erstellte Senke.</span><span class="sxs-lookup"><span data-stu-id="dded5-621">The created sink.</span></span>
+<span data-ttu-id="9d20d-622">Die erstellte Senke.</span><span class="sxs-lookup"><span data-stu-id="9d20d-622">The created sink.</span></span>
