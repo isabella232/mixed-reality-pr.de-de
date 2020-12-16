@@ -8,16 +8,14 @@ ms.topic: article
 keywords: holograms, Stabilität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Framerate, Rendering, neuprojektion, Farbtrennung
 appliesto:
 - HoloLens
-ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679599"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530425"
 ---
 # <a name="hologram-stability"></a>Hologrammstabilität
-
-## <a name="overview"></a>Übersicht
 
 Zum erreichen stabiler Hologramme verfügt hololens über eine integrierte Pipeline zur Bildstabilisierung. Die Stabilisierungs Pipeline funktioniert automatisch im Hintergrund, sodass Sie keine zusätzlichen Schritte ausführen müssen, um Sie zu aktivieren. Allerdings sollten Sie Techniken anwenden, die die Stabilität des Hologramms verbessern und Szenarios vermeiden, die die Stabilität verringern.
 
@@ -29,7 +27,7 @@ Die folgende Terminologie kann Ihnen helfen, wenn Sie Probleme mit der Umgebung,
 * **Genau.** Nachdem das – Hologramm weltweit gesperrt und in der realen Welt platziert wurde, sollte es sich in der Umgebung befinden, in der es relativ zur umgebenden Umgebung ist, und unabhängig von der Benutzer Bewegung oder kleinen und geringfügigen Umgebungs Änderungen. Wenn ein – Hologramm später an einem unerwarteten Speicherort angezeigt wird, ist dies ein *Genauigkeits* Problem. Solche Szenarien können eintreten, wenn zwei unterschiedliche Räume identisch aussehen.
 * **Jitter.** Benutzer beobachten Jitter als hohes Frequenz schütteln eines holograms, das auftreten kann, wenn die Nachverfolgung der Umgebung beeinträchtigt wird. Für Benutzer wird die [Sensor](../../sensor-tuning.md)Optimierung von der Lösung ausgeführt.
 * **Der Judder.** Niedrige renderingfrequenzen führen zu ungleichen Bewegungs-und doppelten Bildern von holograms. Der Judder ist in holograms mit Motion besonders bemerkbar. Entwickler müssen eine [Konstante 60 fps](hologram-stability.md#frame-rate)beibehalten.
-* **Inter.** Benutzern wird die Abweichung angezeigt, da ein – Hologramm von der ursprünglichen Position entfernt wird. Die Abweichung tritt auf, wenn holograms von [räumlichen Ankern](../../design/spatial-anchors.md)fern platziert werden, insbesondere in nicht vollständig zugeordneten Teilen der Umgebung. Das Erstellen von holograms in der Nähe räumlicher Anker verringert die Wahrscheinlichkeit einer Abweichung.
+* **Inter.** Benutzern wird die Abweichung angezeigt, da ein – Hologramm von der ursprünglichen Position entfernt wird. Die Abweichung erfolgt, wenn Sie Hologramme von [räumlichen Ankern](../../design/spatial-anchors.md)fern platzieren, insbesondere in nicht zugeordneten Teilen der Umgebung. Das Erstellen von holograms in der Nähe räumlicher Anker verringert die Wahrscheinlichkeit einer Abweichung.
 * **Schnell Einstieg.** Wenn ein – Hologramm gelegentlich von seinem Speicherort "springt" oder "springt". Wenn die Nachverfolgung holograms anpasst, werden die aktualisierten Kenntnisse ihrer Umgebung angepasst.
 * **MME.** Wenn ein – Hologramm zu bewegen scheint, das der Bewegung des Benutzer Kopfes entspricht. Das Schwimmen tritt auf, wenn die Anwendung die [neuprojektion](hologram-stability.md#reprojection)nicht vollständig implementiert hat und die hololens nicht für den aktuellen Benutzer [abgestimmt](../../calibration.md) sind. Der Benutzer kann die [Kalibrierungs](../../calibration.md) Anwendung erneut ausführen, um das Problem zu beheben. Entwickler können die Stabilisierungs Ebene aktualisieren, um die Stabilität zu verbessern.
 * **Farbtrennung.** Die Anzeige in hololens ist ein sequenzieller sequenzieller Display, bei dem die Flash-Farbkanäle von rot-grün-blau-grün bei 60 Hz angezeigt werden (einzelne Farbfelder werden unter 240 Hz angezeigt). Jedes Mal, wenn ein Benutzer ein bewegendes Hologramm mit den Augen verfolgt, werden die führenden und nachfolgenden Kanten des – Hologramm in den einzelnen Farben getrennt und erzeugen einen Regenbogeneffekt. Der Grad der Trennung hängt von der Geschwindigkeit des holograms ab. In einigen seltenen Fällen kann es bei der Betrachtung eines stationären holograms auch zu einem Regenbogeneffekt kommen, der als *[Farbtrennung](hologram-stability.md#color-separation)* bezeichnet wird.
@@ -70,7 +68,7 @@ Benutzer, die hololens durchführen, können immer 2,0 Mio. erreichen, um ein kl
 
 Die Unannehmlichkeiten aus dem Vergence--Unterbringungs Konflikt können vermieden oder minimiert werden, indem konvergierter Inhalt so nah wie möglich an 2,0 m gehalten wird (also in einer Szene mit sehr viel Tiefe, wenn möglich, die interessanten Bereiche in der Nähe von 2,0 m). Wenn Inhalte in der Nähe von 2,0 Mio. nicht platziert werden können, ist das Problem des Konflikts mit der Vergence-Unterkunft am größten, wenn der Benutzer zwischen den verschiedenen Entfernungen hin und her sucht. Anders ausgedrückt: Es ist viel besser, sich ein stationäres – Hologramm anzusehen, das 50 cm entfernt bleibt, als ein – Hologramm 50 cm zu betrachten, das sich im Laufe der Zeit von Ihnen hin und her bewegt.
 
-Das Platzieren von Inhalten auf 2,0 m ist ebenfalls vorteilhaft, da die beiden anzeigen so konzipiert sind, dass Sie sich in dieser Entfernung vollständig überlappen Bei Bildern, die auf dieser Ebene platziert werden, werden Sie, wenn Sie sich von der Seite des Holographic Frame bewegen, von einem Bildschirm angezeigt, während Sie auf dem anderen angezeigt werden. Diese binare Rivalität kann die Tiefe Wahrnehmung der holorgam stören.
+Das Platzieren von Inhalten auf 2,0 m ist ebenfalls vorteilhaft, da die beiden anzeigen so konzipiert sind, dass Sie sich in dieser Entfernung vollständig überlappen Bei Bildern, die auf dieser Ebene platziert werden, werden Sie, wenn Sie sich von der Seite des Holographic Frame bewegen, von einem Bildschirm angezeigt, während Sie auf dem anderen angezeigt werden. Diese binare Rivalität kann die Tiefe Wahrnehmung des holograms stören.
 
 **Optimale Entfernung vom Benutzer für die Positionierung von Hologrammen**
 
@@ -81,7 +79,7 @@ Das Platzieren von Inhalten auf 2,0 m ist ebenfalls vorteilhaft, da die beiden a
 **Bewährte Methoden** Wenn holograms bei 2 m nicht platziert werden können und Konflikte zwischen Konvergenz und Unterbringung nicht vermieden werden können, liegt die optimale Zone für die – Hologramm-Platzierung zwischen 1,25 m und 5 m. In jedem Fall sollten Designer Inhalte strukturieren, um Benutzern die Interaktion von 1 + m zu empfehlen (z. b. Anpassen von Inhalts Größe und Standard Platzierungs Parametern).
 
 ## <a name="reprojection"></a>Neuprojektion
-Hololens führt eine ausgereifte Hardware gestützte Holographic-Stabilisierungstechnik aus, die als neuprojektion bezeichnet wird. Die neuprojektion berücksichtigt die Bewegung und Änderung der Sicht (camerapose), wenn die Szene animiert wird und der Benutzer die Kopfzeile verschiebt.  Anwendungen müssen bestimmte Aktionen ausführen, um die neuprojektion am besten zu verwenden.
+Hololens verfügt über eine ausgereifte Hardware gestützte Holographic-Stabilisierungstechnik, die als neuprojektion bezeichnet wird. Die neuprojektion berücksichtigt die Bewegung und Änderung der Sicht (camerapose), wenn die Szene animiert wird und der Benutzer die Kopfzeile verschiebt.  Anwendungen müssen bestimmte Aktionen ausführen, um die neuprojektion am besten zu verwenden.
 
 
 Es gibt vier Haupttypen der neuprojektion.
@@ -183,7 +181,7 @@ Obwohl es schwierig ist, die Trennung von Farben vollständig zu vermeiden, steh
 
 Wie zuvor sind das Rendering bei 60 fps und das Festlegen der Stabilisierungs Ebene die wichtigsten Techniken für die – Hologramm-Stabilität. Stellen Sie zunächst sicher, dass die Framerate den Erwartungen entspricht, wenn Sie mit einer merkbaren Farbtrennung
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Grundlegendes zur Leistung für gemischte Realität](understanding-performance-for-mixed-reality.md)
 * [Farbe, Licht und Materialien](../../color,-light-and-materials.md)
 * [Instinktive Interaktionen](../../design/interaction-fundamentals.md)

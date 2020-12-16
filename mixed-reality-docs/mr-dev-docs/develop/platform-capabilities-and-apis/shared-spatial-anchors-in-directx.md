@@ -6,25 +6,25 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Hololens, synchronisieren, räumlicher Anker, Übertragung, Multiplayer, Ansicht, Szenario, Exemplarische Vorgehensweise, Beispielcode, Azure, räumliche Azure-Anker, ASA
-ms.openlocfilehash: 2d6485e46a9802e1ee7e5adc12d6e0d026c79ae9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684910"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530330"
 ---
 # <a name="shared-experiences-in-directx"></a>Gemeinsam genutzte Umgebungen in DirectX
 
 > [!NOTE]
 > Dieser Artikel bezieht sich auf die älteren WinRT-APIs.  Bei neuen nativen App-Projekten wird die Verwendung der **[openxr-API](../native/openxr-getting-started.md)** empfohlen.
 
-Eine gemeinsame Nutzung ist eine, in der mehrere Benutzer mit jeweils eigenen hololens-, IOS-oder Android-Geräten das gleiche – Hologramm anzeigen und mit diesem interagieren, das an einem festgelegten Punkt positioniert ist. Dies wird durch die räumliche Anker Freigabe erreicht.
+Ein gemeinsam genutzter Vorgang ist eine, in der mehrere Benutzer mit ihren eigenen hololens-, IOS-oder Android-Geräten zusammen das gleiche Hologram anzeigen und mit ihnen interagieren. Das – Hologramm ist an einem bestimmten Punkt im Raum mithilfe der räumlichen Anker Freigabe positioniert.
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
 Sie können <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial</a> Anchor verwenden, um permanente, von der Cloud gesicherte räumliche Anker zu erstellen, die Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers auf mehreren Geräten kann jeder Benutzer den Inhalt in Relation zu diesem Anker am gleichen physischen Speicherort sehen.  Dies ermöglicht gemeinsame Erfahrungen in Echtzeit.
 
-Sie können <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> auch für die asynchrone Hologrammpersistenz auf HoloLens-, iOS- und Android-Geräten verwenden.  Durch die gemeinsame Nutzung eines dauerhaften Cloudraumankers können mehrere Geräte dasselbe persistierte Hologramm im Verlauf der Zeit beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
+Sie können auch <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> für die asynchrone – Hologramm-Persistenz über hololens-, IOS-und Android-Geräte verwenden.  Durch die gemeinsame Nutzung eines permanenten clouddiensts können mehrere Geräte im Lauf der Zeit dasselbe persistente Hologramm beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
 
 Um mit der Einführung von freigegebenen Erfahrungen in der hololens-APP zu beginnen, testen Sie den Schnellstart mit den fünfminütigen <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchor hololens</a>.
 
@@ -32,7 +32,7 @@ Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="https://d
 
 ## <a name="local-anchor-transfers"></a>Lokale Anker Übertragungen
 
-In Fällen, in denen Sie keine räumlichen Anker von Azure verwenden können, ermöglichen [lokale Anker Übertragungen](../../out-of-scope/local-anchor-transfers-in-directx.md) einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.  Beachten Sie, dass dieser Ansatz weniger robusten Anker als räumliche Azure-Anker bietet und IOS-und Android-Geräte von diesem Ansatz nicht unterstützt werden.
+In Fällen, in denen Sie keine räumlichen Anker von Azure verwenden können, ermöglichen [lokale Anker Übertragungen](../../out-of-scope/local-anchor-transfers-in-directx.md) einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.  Diese Vorgehensweise bietet weniger robusten Anker als die räumlichen Azure-Anker, und IOS-und Android-Geräte werden von diesem Ansatz nicht unterstützt.
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Gemeinsame Erlebnisse in Mixed Reality](shared-experiences-in-mixed-reality.md)

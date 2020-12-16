@@ -6,50 +6,50 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443648"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530306"
 ---
-# <a name="add-holographic-remoting-hololens-1st-gen"></a>Holographic-Remoting hinzufügen (hololens (1. Gen))
+# <a name="add-holographic-remoting-hololens-first-gen"></a>Holographic-Remoting hinzufügen (hololens (erste Generation))
 
 >[!IMPORTANT]
->In diesem Dokument wird die Erstellung einer Host Anwendung für hololens 1 beschrieben. Die Host Anwendung für **hololens (1st Gen)** muss das nuget-Paketversion **1. x. x** verwenden. Dies bedeutet, dass für hololens 1 geschriebene Host Anwendungen nicht mit hololens 2 und umgekehrt kompatibel sind.
+> In diesem Dokument wird die Erstellung einer Host Anwendung für hololens 1 beschrieben. Die Host Anwendung für **hololens (1st Gen)** muss das nuget-Paketversion **1. x. x** verwenden. Dies bedeutet, dass für hololens 1 geschriebene Host Anwendungen nicht mit hololens 2 und umgekehrt kompatibel sind.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-Hololens-Entwickler, die Holographic Remoting verwenden, müssen Ihre apps aktualisieren, damit Sie mit hololens 2 kompatibel sind. Hierfür ist eine neue Version des nuget-Pakets "Holographic Remoting" erforderlich. Wenn eine Anwendung, die das Holographic Remoting-nuget-Paket mit einer Versionsnummer kleiner als 2.0.0.0 verwendet, versucht, eine Verbindung mit dem Holographic Remoting Player auf hololens 2 herzustellen, schlägt die Verbindung fehl.
+Hololens-Entwickler, die Holographic Remoting verwenden, müssen Ihre apps aktualisieren, damit Sie mit hololens 2 kompatibel sind. Hierfür ist eine neue Version des nuget-Pakets "Holographic Remoting" erforderlich. Stellen Sie sicher, dass Sie die Version 2.0.0.0 oder höher des Holographic Remoting-nuget-Pakets verwenden, wenn Sie eine Verbindung mit dem Holographic Remoting Player auf hololens 2 herstellen, da andernfalls die Verbindung fehlschlägt.
 
 >[!NOTE]
->Anleitungen für hololens 2 finden Sie [hier](holographic-remoting-create-remote-wmr.md).
+> Anleitungen für hololens 2 finden Sie [hier](holographic-remoting-create-remote-wmr.md).
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>Hinzufügen von Holographic Remoting zu Ihrer Desktop-oder UWP-App
 
 Auf dieser Seite wird beschrieben, wie Sie Holographic Remoting zu einer Desktop-oder UWP-app hinzufügen.
 
-Holographic Remoting ermöglicht der APP das Ausrichten von hololens mit Holographic-Inhalten, die auf einem Desktop-PC oder auf einem UWP-Gerät (z. b. der Xbox One) gehostet werden, und ermöglicht so den Zugriff auf mehr Systemressourcen und ermöglicht die Integration von [immersiven Remote Ansichten](../../design/app-views.md) in vorhandene Desktop-PC-Software. Eine Remoting-Host-App empfängt einen Eingabedaten Strom von einem hololens, rendert Inhalte in einer virtuellen immersiven Ansicht und streamt Inhalts Frames zurück an hololens. Die Verbindung wird mithilfe von Standard-Wi-Fi hergestellt. Um Remoting zu verwenden, verwenden Sie ein nuget-Paket zum Hinzufügen von Holographic Remoting zu Ihrer Desktop-oder UWP-APP und zum Schreiben von Code zum Verarbeiten der Verbindung und zum Rendering in einer immersiven Ansicht. Hilfsbibliotheken sind im Codebeispiel enthalten, das die Aufgabe der Verarbeitung der Geräte Verbindung vereinfacht.
+Holographic Remoting ermöglicht Ihrer APP das Ziel eines hololens mit Holographic-Inhalten, die auf einem Desktop-PC oder einem UWP-Gerät wie der Xbox One gehostet werden. Sie haben auch Zugriff auf weitere Systemressourcen, sodass Sie die Möglichkeit haben, [in vorhandene](../../design/app-views.md) Desktop-PC-Software zu integrieren. Eine Remoting-Host-App empfängt einen Eingabedaten Strom von einem hololens, rendert Inhalte in einer virtuellen immersiven Ansicht und streamt Inhalts Frames zurück an hololens. Die Verbindung wird mithilfe von Standard-Wi-Fi hergestellt. Um Remoting zu verwenden, verwenden Sie ein nuget-Paket, um der Desktop-oder UWP-App Holographic Remoting hinzuzufügen, und schreiben Sie dann Code, um die Verbindung zu verarbeiten und eine immersive Ansicht zu erzeugen. Hilfsbibliotheken sind im Codebeispiel enthalten, das die Aufgabe der Verarbeitung der Geräte Verbindung vereinfacht.
 
 Eine typische remotingverbindung verfügt über bis zu 50 ms Latenzzeit. Die Player-App kann die Latenzzeit in Echtzeit melden.
 
 >[!NOTE]
->Die Code Ausschnitte in diesem Artikel veranschaulichen derzeit die Verwendung von C++/CX anstelle von C + +17-kompatiblen C++/WinRT, wie Sie in der [C++ Holographic-Projektvorlage](../native/creating-a-holographic-directx-project.md)verwendet werden.  Die Konzepte sind äquivalent zu einem C++/WinRT-Projekt. Sie müssen jedoch den Code übersetzen.
+>Die Code Ausschnitte in diesem Artikel veranschaulichen derzeit die Verwendung von C++/CX anstelle von C + +17-kompatiblen C++/WinRT, wie Sie in der [C++ Holographic-Projektvorlage](../native/creating-a-holographic-directx-project.md)verwendet werden.  Die Konzepte sind äquivalent zu einem C++/WinRT-Projekt, obwohl Sie den Code übersetzen müssen.
 
 ### <a name="get-the-remoting-nuget-packages"></a>Remoting-nuget-Pakete
 
 Führen Sie die folgenden Schritte aus, um das nuget-Paket für Holographic Remoting zu erhalten und einen Verweis aus dem Projekt hinzuzufügen:
 1. Wechseln Sie zu Ihrem Projekt in Visual Studio.
 2. Klicken Sie mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **nuget-Pakete verwalten aus.**
-3. Klicken Sie im angezeigten Bereich auf **Durchsuchen** , und suchen Sie nach "Holographic Remoting".
-4. Wählen Sie **Microsoft. Holographic. Remoting** aus, und klicken Sie auf **Installieren**.
+3. Wählen Sie im angezeigten Panel die Option **Durchsuchen** aus, und suchen Sie dann nach "Holographic Remoting".
+4. Wählen Sie " **Microsoft. Holographic. Remoting** " und "selecct **install**" aus.
 5. Wenn das Dialogfeld **Vorschau** angezeigt wird, klicken Sie auf **OK**.
-6. Das nächste Dialogfeld, das angezeigt wird, ist die Lizenzvereinbarung. Klicken Sie auf **ich** Stimme zu, um den Lizenzvertrag zu akzeptieren.
+6. Wählen Sie **Ich akzeptiere** aus, wenn das Dialogfeld Lizenzvertrag angezeigt wird.
 
 ### <a name="create-the-holographicstreamerhelpers"></a>Erstellen der holographicstreamerhilfsprogramme
 
-Zuerst benötigen wir eine Instanz von holographicstreamerhilfsprogramme. Fügen Sie der Klasse, die Remoting verarbeitet, dieses hinzu.
+Zunächst müssen Sie der Klasse, die Remoting verarbeiten soll, eine Instanz von holographicstreamerhilfsprogramme hinzufügen.
 
 ```cpp
 #include <HolographicStreamerHelpers.h>
@@ -110,7 +110,7 @@ m_streamerHelpers->OnConnected += ref new ConnectedEvent(
            });
 ```
 
-Das ongetrennte-Ereignis kann die erneute Verbindung, Aktualisierungen der Benutzeroberfläche usw. verarbeiten. In diesem Beispiel wird die Verbindung wieder hergestellt, wenn ein vorübergehender Fehler vorliegt.
+Das ongetrennte-Ereignis kann die erneute Verbindung, Aktualisierungen der Benutzeroberfläche usw. verarbeiten. In diesem Beispiel wird die Verbindung wieder hergestellt, wenn ein vorübergehender Fehler auftritt.
 
 ```cpp
 Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_streamerHelpers);
@@ -180,7 +180,7 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
 
 ### <a name="render-holographic-content"></a>Holographic-Inhalt Wiedergabe
 
-Zum Rendering von Inhalten mithilfe von Remoting richten Sie eine virtuelle iframeworkview innerhalb Ihrer Desktop-oder UWP-App ein und verarbeiten holografische Frames aus Remoting. Alle Windows Holographic-APIs werden in dieser Ansicht auf dieselbe Weise verwendet, Sie werden aber etwas anders eingerichtet.
+Zum Rendering von Inhalten mithilfe von Remoting richten Sie eine virtuelle iframeworkview innerhalb Ihrer Desktop-oder UWP-App ein und verarbeiten holografische Frames aus Remoting. Alle Windows Holographic-APIs werden in dieser Ansicht auf die gleiche Weise verwendet, Sie werden aber etwas anders eingerichtet.
 
 Anstatt Sie selbst zu erstellen, stammen die Holographic Space-und Speech-Komponenten von ihrer holographikremumughelpers-Klasse:
 
@@ -188,7 +188,7 @@ Anstatt Sie selbst zu erstellen, stammen die Holographic Space-und Speech-Kompon
 m_appView->Initialize(m_streamerHelpers->HolographicSpace, m_streamerHelpers->RemoteSpeech);
 ```
 
-Anstatt eine Update-Schleife innerhalb einer Run-Methode zu verwenden, stellen Sie Tick-Updates aus der Hauptschleife ihrer Desktop-oder UWP-App bereit. Dies ermöglicht es Ihrer Desktop-oder UWP-APP, die Kontrolle über die Nachrichtenverarbeitung zu behalten.
+Anstatt eine Update Schleife in einer Run-Methode zu verwenden, stellen Sie Tick-Updates aus der Hauptschleife ihrer Desktop-oder UWP-App bereit. Dies ermöglicht es Ihrer Desktop-oder UWP-APP, die Kontrolle über die Nachrichtenverarbeitung zu behalten.
 
 ```cpp
 void DesktopWindow::Tick()
@@ -220,7 +220,7 @@ void AppView::Tick()
    }
 ```
 
-Die Holographic App View Update-, Rendering-und Present-Schleife ist identisch mit der Ausführung auf hololens, mit der Ausnahme, dass Sie Zugriff auf eine viel größere Menge an Systemressourcen auf Ihrem Desktop-PC haben. Sie können viele weitere Dreiecke darstellen, mehr Zeichnungs Pässe haben, mehr Physik durchführen und x64-Prozesse zum Laden von Inhalten verwenden, die mehr als 2 GB RAM erfordern.
+Die Holographic App View Update-, Rendering-und Present-Schleife sind identisch mit der Ausführung auf hololens, mit der Ausnahme, dass Sie Zugriff auf eine viel größere Menge an Systemressourcen auf Ihrem Desktop-PC haben. Sie können viele weitere Dreiecke darstellen, mehr Zeichnungs Pässe haben, mehr Physik durchführen und x64-Prozesse zum Laden von Inhalten verwenden, die mehr als 2 GB RAM erfordern.
 
 ### <a name="disconnect-and-end-the-remote-session"></a>Trennen und Beenden der Remote Sitzung
 
@@ -258,7 +258,6 @@ internal:
        }
 ```
 
-**Code Beispiel:** Ein vollständiges Holographic Remoting-Codebeispiel ist verfügbar, das eine Holographic-Anwendungs Ansicht enthält, die mit Remoting-und Remoting-Host Projekten für Desktop Win32, UWP DirectX und UWP mit XAML kompatibel ist. Weitere Informationen finden Sie hier:
-* [Windows Holographic-Code Beispiel für Remoting](https://github.com/Microsoft/HoloLensCompanionKit/)
+**Code Beispiel:** Ein vollständiges [Holographic Remoting-Codebeispiel](https://github.com/Microsoft/HoloLensCompanionKit) ist verfügbar, das eine Holographic-Anwendungs Ansicht enthält, die mit Remoting-und Remoting-Host Projekten für Desktop Win32, UWP DirectX und UWP mit XAML kompatibel ist. 
 
 **Debughinweis:** Die Holographic Remoting-Bibliothek kann Ausnahmen der ersten Chance auslösen. Diese Ausnahmen sind möglicherweise in Debugsitzungen sichtbar, abhängig von den Visual Studio-Ausnahme Einstellungen, die zu diesem Zeitpunkt aktiv sind. Diese Ausnahmen werden intern von der Holographic Remoting-Bibliothek abgefangen und können ignoriert werden.

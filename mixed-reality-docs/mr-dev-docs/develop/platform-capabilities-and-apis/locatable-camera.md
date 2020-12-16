@@ -6,47 +6,47 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: Kamera, hololens, Farbkamera, Vorderseite, hololens 2, CV, Maschinelles sehen, Zeichen, Marker, QR-Code, QR, Foto, Video
-ms.openlocfilehash: 992258a38b78e9f36e873f7c478d2b6e6f0e3785
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9261465f362e6aa0e97d9f6b1f61af305c178079
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685027"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530378"
 ---
 # <a name="locatable-camera"></a>Ausrichtbare Kamera
 
-Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des Geräts bereitgestellt wird. Dadurch können apps erkennen, was der Benutzer sieht. Entwickler haben Zugriff auf und die Steuerung der Kamera, ebenso wie bei Farbkameras auf Smartphones, portables oder Desktops. Die gleichen universellen Windows [Media Capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) -und Windows Media Foundation-APIs, die auf mobilen und Desktop-apps funktionieren, funktionieren in hololens. Unity [hat diese Windows-APIs ebenfalls umschließt](../unity/locatable-camera-in-unity.md) , um die einfache Verwendung der Kamera in hololens für Aufgaben wie das nehmen von regulären Fotos und Videos (mit oder ohne holograms) zu abstrahieren und die Position der Kamera in der Szene zu ermitteln.
+Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des Geräts bereitgestellt wird. Dadurch können apps erkennen, was der Benutzer sieht. Entwickler haben Zugriff auf und die Steuerung der Kamera, ebenso wie bei Farbkameras auf Smartphones, portables oder Desktops. Die gleichen universellen Windows [Media Capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) -und Windows Media Foundation-APIs, die auf mobilen und Desktop-apps funktionieren, funktionieren in hololens. Unity [hat diese Windows-APIs](../unity/locatable-camera-in-unity.md) in die abstrakten Features der Kamera Verwendung in hololens integriert. Zu den featureaufgaben zählen regelmäßige Fotos und Videos (mit oder ohne Hologramme) und das Auffinden der Position der Kamera in der Szene.
 
 ## <a name="device-camera-information"></a>Gerätekamera Informationen
 
 ### <a name="hololens-first-generation"></a>Hololens (erste Generation)
 
-* Mit dem automatischen Leerraum, dem automatischen verfügbar machen und der Pipeline für die vollständige Bildverarbeitung fixierte Foto-/Video-Kamera (PV).
+* Mit dem automatischen weißen Saldo, dem automatischen verfügbar machen und der vollständigen Bild Verarbeitungs Pipeline wurde eine Foto-und vollständige Bild Verarbeitungs Pipeline korrigiert.
 * Die Welt der weißen Datenschutz wird immer dann beleuchtet, wenn die Kamera aktiv ist.
 * Die Kamera unterstützt die folgenden Modi (alle Modi sind 16:9-Seitenverhältnis) bei 30, 24, 20, 15 und 5 fps:
 
   |  Video  |  Vorschau  |  Auch  |  Horizontales Feld der Ansicht (H-FOV) |  Empfohlene Verwendung | 
   |----------|----------|----------|----------|----------|
-  |  1.280 x 720 |  1.280 x 720 |  1.280 x 720 |  45deg  |  (Standardmodus mit Videostabilisierung) | 
-  |  – |  – |  2048x1152 |  67deg |  Bild mit der höchsten Auflösung | 
-  |  1408x792 |  1408x792 |  1408x792 |  48deg |  Überprüfung (Padding) vor der Videostabilisierung | 
-  |  1344x756 |  1344x756 |  1344x756 |  67deg |  Großer FOV-Videomodus mit Overscan | 
-  |  896x504 |  896x504 |  896x504 |  48deg |  Niedriger Energie-/tieflösungmodus für Abbild Verarbeitungsaufgaben | 
+  |  1.280 x 720 |  1.280 x 720 |  1.280 x 720 |  45 deg  |  (Standardmodus mit Videostabilisierung) | 
+  |  – |  – |  2048x1152 |  67 deg |  Bild mit der höchsten Auflösung | 
+  |  1408x792 |  1408x792 |  1408x792 |  48 deg |  Überprüfung (Padding) vor der Videostabilisierung | 
+  |  1344x756 |  1344x756 |  1344x756 |  67 deg |  Großer FOV-Videomodus mit Overscan | 
+  |  896x504 |  896x504 |  896x504 |  48 deg |  Niedriger Energie-/tieflösungmodus für Abbild Verarbeitungsaufgaben | 
 
 ### <a name="hololens-2"></a>HoloLens 2
 
-* Auto-Fokus Foto/Video-Kamera (PV) mit automatischem Leerraum, automatischer Verfügbarkeit und vollständiger Bild Verarbeitungs Pipeline.
+* Auto-Fokus Foto/Video-Kamera (PV) mit automatischem weißen Ausgleich, automatischer Verfügbarkeit und vollständiger Bild Verarbeitungs Pipeline.
 * Die Welt der weißen Datenschutz wird immer dann beleuchtet, wenn die Kamera aktiv ist.
 * Hololens 2 unterstützt verschiedene Kameraprofile. Erfahren Sie, wie [Sie Kamerafunktionen ermitteln und auswählen](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles)können.
 * Die Kamera unterstützt die folgenden Profile und Auflösungen (alle Video Modi sind 16:9-Seitenverhältnis):
   
   | Profil                                         | Video     | Vorschau   | Auch     | Frameraten | Horizontales Feld der Ansicht (H-FOV) | Empfohlene Verwendung                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | Legacy, 0 balancedvideoandphoto, 100             | 2272x1278 | 2272x1278 |           | 15, 30       | 64,69                            | Videoaufzeichnung mit hoher Qualität                |
-  | Legacy, 0 balancedvideoandphoto, 100             | 896x504   | 896x504   |           | 15, 30       | 64,69                            | Vorschau Datenstrom für hochwertige Foto Erfassung |
+  | Legacy, 0 balancedvideoandphoto, 100             | 2272x1278 | 2272x1278 |           | 15,30       | 64,69                            | Hochwertige Videoaufzeichnung                |
+  | Legacy, 0 balancedvideoandphoto, 100             | 896x504   | 896x504   |           | 15,30       | 64,69                            | Vorschau Datenstrom für hochwertige Foto Erfassung |
   | Legacy, 0 balancedvideoandphoto, 100             |           |           | 3904x2196 |             | 64,69                            | Foto Erfassung mit hoher Qualität                  |
-  | Balancedvideoandphoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15, 30       | 64,69                            | Szenarios mit langer Laufzeit                     |
-  | Balancedvideoandphoto, 120                       | 1504x846  | 1504x846  |           | 15, 30       | 64,69                            | Szenarios mit langer Laufzeit                     |
+  | Balancedvideoandphoto, 120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15,30       | 64,69                            | Szenarios mit langer Laufzeit                     |
+  | Balancedvideoandphoto, 120                       | 1504x846  | 1504x846  |           | 15,30       | 64,69                            | Szenarios mit langer Laufzeit                     |
   | Videokonferenzen, 100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15, 30, 60    | 64,69                            | Video Konferenzen, Szenarios mit langer Laufzeit |
   | Videokonferenzen, 100                           | 1504x846  | 1504x846  |           | 5, 15, 30, 60  | 64,69                            | Video Konferenzen, Szenarios mit langer Laufzeit |
   | Videoconferencing, 100 balancedvideoandphoto, 120 | 1920x1080 | 1920x1080 | 1920x1080 | 15, 30       | 64,69                            | Video Konferenzen, Szenarios mit langer Laufzeit |
@@ -75,9 +75,11 @@ Befolgen Sie die Anweisungen im Artikel "cameraintrinsics" und "cameracoordinate
 
 ### <a name="using-mediaframereference"></a>Verwenden von mediaframereferenzierung
 
-Diese Anweisungen gelten, wenn Sie die [mediaframereferenzierungsklasse](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) zum Lesen von Bildframes von der Kamera verwenden.
+Diese Anweisungen gelten, wenn Sie mit der [mediaframereferenzierungsklasse](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) Bild Frames von der Kamera lesen.
 
-Jeder Bild Rahmen (egal ob Foto oder Video) enthält ein [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) , das zum Zeitpunkt der Erfassung auf der Kamera verankert ist, auf die mit der [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) -Eigenschaft von [mediaframereferenziert](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)werden kann. Außerdem enthält jeder Frame eine Beschreibung des Kamera Zeichen Modells, das in der Eigenschaft [cameraintrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) zu finden ist. In der Regel definieren diese Transformationen für jedes Pixel einen Strahl in 3D-Raum, der den Pfad darstellt, der von den Photonen, die das Pixel erzeugt haben, übernommen wird. Diese Strahlen können mit anderem Inhalt in der APP verknüpft werden, indem die Transformation aus dem Koordinatensystem des Frames in ein anderes Koordinatensystem (z. b. aus einem [stationären Verweis Rahmen](../../design/coordinate-systems.md#stationary-frame-of-reference)) bezogen wird. Zusammenfassend bietet jeder Bild Rahmen Folgendes:
+Jeder Bild Rahmen (egal ob Foto oder Video) enthält ein [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) , das zum Zeitpunkt der Erfassung auf der Kamera verankert ist, auf die mit der [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) -Eigenschaft von [mediaframereferenziert](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)werden kann. Jeder Frame enthält eine Beschreibung des Kamera-Lens-Modells, das in der Eigenschaft [cameraintrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) zu finden ist. In der Regel definieren diese Transformationen für jedes Pixel einen Strahl in 3D-Raum, der den Pfad darstellt, der von den Photonen, die das Pixel erzeugt haben, übernommen wird. Diese Strahlen können mit anderem Inhalt in der APP verknüpft werden, indem die Transformation aus dem Koordinatensystem des Frames in ein anderes Koordinatensystem (z. b. aus einem [stationären Verweis Rahmen](../../design/coordinate-systems.md#stationary-frame-of-reference)) bezogen wird. 
+
+Jeder Bild Rahmen stellt Folgendes bereit:
 * Pixel Daten (im Format RGB/NV12/JPEG/usw.)
 * Ein [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) vom Speicherort der Erfassung
 * Eine [cameraintrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) -Klasse, die den Linsen Modus der Kamera enthält.
@@ -171,9 +173,9 @@ private:
 
 ### <a name="distortion-error"></a>Verzerrungs Fehler
 
-Bei hololens sind das Video und die bildstreams in der Bild Verarbeitungs Pipeline des Systems unverzerrt, bevor die Frames der Anwendung zur Verfügung gestellt werden (der vorschaustream enthält die ursprünglichen verzerrten Rahmen). Da nur die cameraintrinsics verfügbar gemacht werden, müssen Anwendungen davon ausgehen, dass Bild Rahmen eine perfekte Kamera darstellen.
+Bei hololens sind das Video und die bildstreams in der Bild Verarbeitungs Pipeline des Systems unverzerrt, bevor die Frames der Anwendung zur Verfügung gestellt werden (der vorschaustream enthält die ursprünglichen verzerrten Frames). Da nur die cameraintrinsics verfügbar gemacht werden, müssen Anwendungen davon ausgehen, dass Bild Rahmen eine perfekte Kamera darstellen.
 
-Bei hololens (First-Generation) kann die unzerungs Funktion im Bildprozessor bei Verwendung von "cameraintrinsics" in den Frame-Metadaten weiterhin einen Fehler von bis zu 10 Pixeln hinterlassen. In vielen Anwendungsfällen ist dieser Fehler nicht von Bedeutung. Wenn Sie z. b. Hologramme an realen Poster/Markierungen ausrichten, sehen Sie sich beispielsweise einen <10px-Offset an (ungefähr 11mm für holograms, der 2 Meter entfernt ist), könnte dieser Fehler bei der Verzerrung auftreten. 
+Bei hololens (First-Generation) kann die unzerungs Funktion im Bildprozessor bei Verwendung von "cameraintrinsics" in den Frame-Metadaten weiterhin einen Fehler von bis zu 10 Pixeln hinterlassen. In vielen Anwendungsfällen ist dieser Fehler nicht von Bedeutung. Wenn Sie z. b. Hologramme an realen Poster/Markierungen ausrichten, sehen Sie sich beispielsweise einen <10-px-Offset an (ungefähr 11 mm für holograms, der 2 Meter entfernt ist), könnte dieser Verzerrungs Fehler die Ursache sein. 
 
 ## <a name="locatable-camera-usage-scenarios"></a>Szenarios für die verwendbare Verwendung von Kameras
 
@@ -183,15 +185,15 @@ Die Gerätekamera Rahmen verfügen über eine "Kamera-an-Welt"-Transformation, d
 
 ### <a name="tag--pattern--poster--object-tracking"></a>Tag/Muster/Poster/Objektverfolgung
 
-Viele Mixed Reality-Anwendungen verwenden ein erkennbares Bild oder visuelles Muster, um einen standbybaren Punkt im Raum zu schaffen. Diese wird dann zum Rendering von Objekten in Relation zu diesem Punkt oder zum Erstellen eines bekannten Speicher Orts verwendet. Einige Verwendungsmöglichkeiten für hololens sind u. a. die Suche nach einem realen Objekt, das mit der Verwendung von "(z. b. einem TV-Monitor mit einem QR-Code) gekennzeichnet ist, das Platzieren von holograms über das Produkt und das visuelle koppeln mit Geräten, die für die Kommunikation mit hololens über Wi-Fi eingerichtet wurden.
+Viele Mixed Reality-Anwendungen verwenden ein erkennbares Bild oder visuelles Muster, um einen standbybaren Punkt im Raum zu schaffen. Diese wird dann zum Rendering von Objekten in Relation zu diesem Punkt oder zum Erstellen eines bekannten Speicher Orts verwendet. Einige Verwendungen von hololens beinhalten das Auffinden eines realen Objekts, das mit einem-Objekt (z. b. einem TV-Monitor mit einem QR-Code) gekennzeichnet ist, das Platzieren von holograms über das Produkt und das visuelle koppeln mit Geräten, die nicht hololens über Wi-Fi eingerichtet wurden.
 
-Um ein visuelles Muster zu erkennen und dieses Objekt dann in den Anwendungs Raum zu versetzen, benötigen Sie einige Dinge:
+Sie benötigen einige Dinge, um ein visuelles Muster zu erkennen und ein Objekt im Raum der Anwendungen zu platzieren:
 1. Ein Bildmuster Erkennungs-Toolkit, z. b. QR-Code, AR-Tags, Gesichts Finder, Zirkel Tracker, OCR usw.
 2. Bild Rahmen zur Laufzeit erfassen und an die Erkennungs Schicht übergeben
 3. Entprojizieren Sie Ihre Image Positionen wieder in die Welt Positionen oder wahrscheinlich weltweit. 
 4. Positionieren Sie Ihre virtuellen Modelle an den Standorten der Welt.
 
-Einige wichtige Bild Verarbeitungs Links:
+Einige wichtige Links zur Bildverarbeitung:
 * [OpenCV](https://opencv.org/)
 * [QR-Tags](https://en.wikipedia.org/wiki/QR_code)
 * [Fakesdk](https://research.microsoft.com/projects/facesdk/)
@@ -205,7 +207,7 @@ Die Beibehaltung einer interaktiven Anwendungsframe-Rate ist wichtig, insbesonde
 5. Haupt Thread: verschiebt das virtuelle Modell entsprechend der gefundenen wichtigen Punkte.
 6. Haupt Thread: Wiederholen aus Schritt 2
 
-Einige Abbild Markersysteme stellen nur einen einzelnen Pixel Speicherort bereit (andere stellen die vollständige Transformation bereit. in diesem Fall wird dieser Abschnitt nicht benötigt), was einem Ray möglicher Standorte entspricht. Um zu einem einzelnen 3D--Speicherort zu gelangen, können wir mehrere Strahlen nutzen und das Endergebnis nach dem ungefähren Schnittpunkt suchen. Gehen Sie hierzu wie folgt vor:
+Einige Abbild Markersysteme stellen nur einen einzelnen Pixel Speicherort bereit (andere stellen die vollständige Transformation bereit, in dem dieser Abschnitt nicht benötigt wird), was einem Ray möglicher Standorte entspricht. Um zu einem einzelnen 3D--Speicherort zu gelangen, können wir mehrere Strahlen nutzen und das Endergebnis nach dem ungefähren Schnittpunkt suchen. Gehen Sie hierzu wie folgt vor:
 1. Schleife zum Erfassen mehrerer Kamerabilder
 2. Suchen der zugehörigen featurepunkte und ihrer weltweiten Strahlen
 3. Wenn Sie ein Wörterbuch mit Features haben, die jeweils über mehrere Welt Strahlen verfügen, können Sie den folgenden Code verwenden, um die Schnittmenge dieser Strahlen zu lösen:
@@ -228,11 +230,11 @@ public static Vector3 ClosestPointBetweenRays(
  }
 ```
 
-Bei zwei oder mehr nach verfolgten tagstandorten können Sie eine modellierte Szene so positionieren, dass Sie dem aktuellen Szenario des Benutzers entspricht. Wenn Sie die Schwerkraft nicht annehmen können, benötigen Sie drei Tag-Orte. In vielen Fällen wird ein einfaches Farbschema verwendet, bei dem weiße Bereiche in Echtzeit nach verfolgte tagspeicher Orte darstellen und blaue Bereiche modellierte tagspeicher Orte darstellen. Dadurch kann der Benutzer die ausrichtungsqualität visuell einschätzen. Wir gehen davon aus, dass Sie das folgende Setup in allen Anwendungen ausführen:
-* Mindestens zwei modellierte tagspeicher Orte
-* Ein "Kalibrierungs Raum", der in der Szene das übergeordnete Element der Tags ist
+Bei zwei oder mehr nach verfolgten tagstandorten können Sie eine modellierte Szene so positionieren, dass Sie dem aktuellen Szenario des Benutzers entspricht. Wenn Sie die Schwerkraft nicht annehmen können, benötigen Sie drei Tag-Orte. In vielen Fällen verwenden wir ein Farbschema, bei dem weiße Bereiche in Echtzeit überwachte tagspeicher Orte darstellen und blaue Bereiche modellierte tagspeicher Orte darstellen. Dadurch kann der Benutzer die ausrichtungsqualität visuell einschätzen. Wir gehen davon aus, dass Sie das folgende Setup in allen Anwendungen ausführen:
+* Zwei oder mehr modellierte tagspeicher Orte
+* Ein "Kalibrierungs Raum", bei dem es sich in der Szene um das übergeordnete Element der Tags handelt.
 * Kamera Funktions Bezeichner
-* Das Verhalten, bei dem der Kalibrierungsbereich verschoben wird, um die modellierten Tags mit den Echt Zeit Tags auszurichten (es ist vorsichtig, den übergeordneten Bereich und nicht die modellierten Marker selbst zu verschieben, weil eine andere Verbindung relativ zu diesen Tags ist).
+* Das Verhalten, bei dem der Kalibrierungsbereich verschoben wird, um die modellierten Tags mit den Echt Zeit Tags auszurichten (wir sind vorsichtig, um den übergeordneten Bereich und nicht die modellierten Marker selbst zu verschieben, weil eine andere Verbindung relativ zu diesen Tags ist).
 
 ```
 // In the two tags case:
@@ -252,7 +254,7 @@ Bei zwei oder mehr nach verfolgten tagstandorten können Sie eine modellierte Sz
 Beispiele:
 * Industrieroboter mit LEDs (oder QR-Codes zum langsameren Verschieben von Objekten)
 * Identifizieren und erkennen von Objekten im Raum
-* Personen im Raum identifizieren und erkennen (z. b. Holographic-Kontaktkarten über Flächen platzieren)
+* Identifizieren und erkennen von Personen im Raum, z. b. Platzieren von Holographic Contact Cards über Gesichter
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Beispiel für eine abrechenbare Kamera](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

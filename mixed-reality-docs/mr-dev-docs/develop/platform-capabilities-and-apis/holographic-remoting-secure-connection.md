@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Sicherheit, Authentifizierung, Server-zu-Client
-ms.openlocfilehash: b2c054d19044b89b487331806b8256de1379fd53
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443458"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530409"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Aktivieren der Verbindungssicherheit für Holographic-Remoting
 
@@ -30,7 +30,7 @@ Holographic Remoting tauscht Informationen über ein Netzwerk aus. Wenn keine Si
 
 Die Beispiel-apps und der Holographic-Remoting-Player im Windows Store sind mit der Sicherheit deaktiviert. Dadurch lassen sich die Beispiele leichter verstehen. Außerdem hilft es Ihnen, schneller mit der Entwicklung zu beginnen.
 
-Wir empfehlen jedoch dringend, die Sicherheit in der Holographic Remoting-Lösung zu aktivieren.
+Für Test-oder Produktionsumgebungen wird dringend empfohlen, die Sicherheit in ihrer Holographic Remoting-Lösung zu aktivieren.
 
 Die Sicherheit in Holographic Remoting bietet Ihnen die folgenden Garantien, wenn Sie für Ihren Anwendungsfall ordnungsgemäß eingerichtet ist:
 
@@ -66,7 +66,7 @@ Wie der Client das Serverzertifikat überprüft und welche Arten von Server Zert
 
 **Anwendungsfall 1:** Der Server Hostname ist nicht korrigiert, oder der Server wird nicht durch den Hostnamen adressiert.
 
-In diesem Anwendungsfall ist es nicht praktikabel (oder sogar möglich), ein Zertifikat für den Hostnamen des Servers auszugeben. Hier wird empfohlen, stattdessen den Fingerabdruck des Zertifikats zu überprüfen. Wie bei einem Menschen Fingerabdruck identifiziert der Fingerabdruck ein Zertifikat eindeutig.
+In diesem Anwendungsfall ist es nicht praktikabel (oder sogar möglich), ein Zertifikat für den Hostnamen des Servers auszugeben. Es wird empfohlen, stattdessen den Fingerabdruck des Zertifikats zu überprüfen. Wie bei einem Menschen Fingerabdruck identifiziert der Fingerabdruck ein Zertifikat eindeutig.
 
 Es ist wichtig, den Fingerabdruck out-of-Band an den Client zu übermitteln. Dies bedeutet, dass Sie Sie nicht über die gleiche Netzwerkverbindung, die für Remoting verwendet wird, senden können. Stattdessen können Sie Sie manuell in die Konfiguration des Clients eingeben oder den Client einen QR-Code Scannen lassen.
 
@@ -159,7 +159,7 @@ Zum Überprüfen von Zertifikaten können Sie die Validierungs Logik des zugrund
 Unter Windows prüft die Systemvalidierung Folgendes:
 
 * Integrität der Zertifikat Kette: die Zertifikate bilden eine konsistente Kette, die auf einem vertrauenswürdigen Stamm Zertifikat endet.
-* Gültigkeit des Zertifikats: das Zertifikat des Servers liegt innerhalb seines Gültigkeits Zeitraums und wird zum Zweck der Server Authentifizierung ausgestellt.
+* Gültigkeit des Zertifikats: das Zertifikat des Servers liegt innerhalb seines Gültigkeits Zeitraums und wird für die Server Authentifizierung ausgegeben.
 * Sperrung: das Zertifikat wurde nicht widerrufen.
 * Namens Übereinstimmung: der Hostname des Servers stimmt mit einem der Hostnamen überein, für die das Zertifikat ausgestellt wurde.
 
@@ -179,17 +179,17 @@ Wenn Sie die [openxr-API](../native/openxr.md) verwenden, ist die gesamte sicher
 >Weitere Informationen zur API für die Holographic Remoting openxr-Erweiterung finden Sie in der [Spezifikation](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) , die im [GitHub-Repository "Holographic Remoting Samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)" zu finden ist.
 
 Die wichtigsten Elemente für eine sichere Verbindung mit der `XR_MSFT_holographic_remoting` openxr-Erweiterung sind die folgenden Rückrufe.
-- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generiert das zu sendende Authentifizierungs Token oder ruft es ab.
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`, generiert oder ruft das zu sendende Authentifizierungs Token ab.
 - `xrRemotingValidateServerCertificateCallbackMSFT`, überprüft die Zertifikat Kette.
 - `xrRemotingValidateAuthenticationTokenCallbackMSFT`überprüft das Client Authentifizierungs Token.
 - `xrRemotingRequestServerCertificateCallbackMSFT`, stellen Sie die Serveranwendung mit dem zu verwendenden Zertifikat bereit.
 
 Diese Rückrufe können für die Remoting openxr Runtime über und bereitgestellt werden `xrRemotingSetSecureConnectionClientCallbacksMSFT` `xrRemotingSetSecureConnectionServerCallbacksMSFT` . Außerdem muss die sichere Verbindung über den secureconnection-Parameter für die `XrRemotingConnectInfoMSFT` Struktur oder die Struktur aktiviert werden, abhängig davon, `XrRemotingListenInfoMSFT` ob Sie `xrRemotingConnectMSFT` oder verwenden `xrRemotingListenMSFT` .
 
-Diese API ähnelt der in [Implementieren von Holographic Remoting Security](#implementing-holographic-remoting-security) beschriebenen IDL-basierten API, aber anstelle der Implementierung von Schnittstellen, die Ihre Rückruf Implementierungen bereitstellen sollen. Ein ausführliches Beispiel finden Sie im Abschnitt zur openxr-Beispiel-App im [GitHub-Repository "Holographic Remoting Samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)".
+Diese API ähnelt der IDL-basierten API, die unter [Implementieren von Holographic Remoting Security](#implementing-holographic-remoting-security)beschrieben wird. Anstatt Schnittstellen zu implementieren, sollten Sie jedoch Rückruf Implementierungen bereitstellen. Ein ausführliches Beispiel finden Sie in der [openxr](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)-Beispiel-app.
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Schreiben einer Holographic Remoting-Remote-App mithilfe gemischter Windows-APIs](holographic-remoting-create-remote-wmr.md)
+* [Schreiben einer Holographic Remoting-Remote-app mit Windows Mixed Reality-APIs](holographic-remoting-create-remote-wmr.md)
 * [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)

@@ -6,28 +6,28 @@ ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Stabilisierung, Fallstudie, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679609"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530433"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Fallstudie: Verwenden der Stabilisierungs Ebene zum Reduzieren von Holographic-Turbulenzen
 
-Das Arbeiten mit holograms kann schwierig sein. Die Tatsache, dass Sie Ihren Raum verschieben und die Hologramme aus allen verschiedenen Winkeln anzeigen können, bietet eine Ebene des einfügebens, die Sie nicht mit einem normalen Computerbildschirm erreichen können. Die Beibehaltung dieser Hologramme und die realistische Betrachtung ist eine technische Aufgabe, die sowohl von der Hardware von Microsoft hololens als auch vom intelligenten Entwurf von Holographic apps durchgeführt wird.
+Das Arbeiten mit holograms ist oft schwierig. Durch das Verschieben eines Leerraums und das Betrachten von holograms aus allen unterschiedlichen Winkeln wird ein Grad an untertauchen bereitgestellt, der auf einem normalen Computerbildschirm nicht verfügbar ist. Die Beibehaltung dieser Hologramme und die realistische Betrachtung ist eine technische Aufgabe, die sowohl von der Hardware von Microsoft hololens als auch vom intelligenten Entwurf von Holographic apps durchgeführt wird.
 
 ## <a name="the-tech"></a>Die Technologie
 
-Damit holograms angezeigt werden, als ob Sie den Platz tatsächlich mit Ihnen teilen, sollten Sie ohne Farbtrennung ordnungsgemäß Rendering werden. Dies wird teilweise durch Technologie integriert, die in die hololens-Hardware integriert ist, die holograms auf der [Ebene der Stabilisierungs Ebene](hologram-stability.md#reprojection)verankert hält.
+Damit holograms angezeigt werden, als ob Sie den Platz tatsächlich mit Ihnen teilen, sollten Sie ohne Farbtrennung ordnungsgemäß Rendering werden. Dies wird teilweise durch Technologie integriert, die in der hololens-Hardware integriert ist, die holograms auf der [Ebene der Stabilisierungs Ebene](hologram-stability.md#reprojection)verankert hält.
 
-Eine Ebene wird durch einen Punkt und einen normalen definiert, aber da wir immer die Ebene mit der Kamera machen möchten, ist es wirklich wichtig, den Punkt der Ebene festzulegen. Hololens können darauf hinweisen, dass Sie sich auf die Verarbeitung konzentrieren, damit alles verankert und stabil bleibt, aber wie dieser Fokuspunkt festgelegt wird, ist APP-spezifisch und kann Ihre APP je nach Inhalt erstellen oder unterbrechen.
+Eine Ebene wird durch einen Punkt und einen normalen definiert. Da die Ebene immer auf der Kamera stehen soll, ist es wichtig, den Punkt der Ebene festzulegen. Hololens kann feststellen, in welchem Punkt die Verarbeitung fokussiert werden soll, damit alles verankert und stabil bleibt. Das Festlegen dieses Fokus Punkts ist jedoch App-spezifisch und kann Ihre APP je nach Inhalt erstellen oder unterbrechen.
 
-Kurz gesagt: holograms funktionieren am besten, wenn die Stabilisierungs Ebene ordnungsgemäß angewendet wird, aber was eigentlich bedeutet, hängt von der Art der Anwendung ab, die Sie erstellen. Werfen wir einen Blick darauf, wie einige der derzeit für hololens verfügbaren apps dieses Problem beheben.
+Holograms funktionieren am besten, wenn die Stabilisierungs Ebene ordnungsgemäß angewendet wird, aber was tatsächlich bedeutet, hängt von der Art der Anwendung ab, die Sie erstellen. Werfen wir einen Blick darauf, wie einige der derzeit für hololens verfügbaren apps dieses Problem beheben.
 
 ## <a name="behind-the-scenes"></a>Abläufe im Hintergrund
 
-Beim Entwickeln der folgenden apps haben wir festgestellt, dass sich die Objekte, wenn wir die Ebene nicht verwendet haben, bei der Bewegung des Kopfes bewegen und die Farbtrennung mit Quick Head-oder – Hologramm-Bewegungen angezeigt würden. Im Laufe des Entwicklungs Zeitraums haben wir uns mit der Testversion und dem Fehler vertraut gemacht, wie Sie die Stabilisierungs Ebene am besten nutzen können und wie Sie unsere apps auf die Probleme entwerfen können, die nicht behoben werden können.
+Beim Entwickeln der folgenden apps haben wir festgestellt, dass sich die Objekte, wenn wir die Ebene nicht verwendet haben, bei der Bewegung des Kopfes bewegen würden. Wir würden auch die Farbtrennung mit Quick Head-oder – Hologramm-Bewegungen sehen. Wir haben am Ende des Testzeitraums und der Fehlerbehebung gelernt, wie Sie die Stabilisierungs Ebene am besten nutzen und unsere apps auf die Probleme entwerfen können, die nicht behoben werden können.
 
 ### <a name="galaxy-explorer-stationary-content-3d-interactivity"></a>Galaxy Explorer: stationärer Inhalt, 3D-Interaktivität
 
@@ -55,17 +55,17 @@ Mit holotour wird auch verhindert, dass Sie sich zu weit von Ihrer virtuellen We
 
 Das Festlegen der Stabilisierungs Ebene in roboraid ist erstaunlich einfach, obwohl es sich um die APP handelt, die eine möglichst plötzliche Bewegung erfordert. Die Ebene ist darauf ausgerichtet, auf die Wände oder die umgebenden Objekte zu gelangen, und wird in einer festgelegten Entfernung angezeigt, wenn Sie weit genug sind.
 
-Roboraid wurde mit der Stabilisierungs Ebene entworfen. Der Reticle, der den größten Teil nach der Überschrift bewegt, umgeht dies, indem er nur rot und Blau verwendet, wodurch die Farb Blutungen minimiert werden. Sie enthält auch ein kleines tiefgehende Tiefe zwischen den einzelnen Elementen. Dadurch werden alle Farb verblutungs Elemente minimiert, die durch eine Maskierung mit einem bereits erwarteten parameteffekt auftreten würden. Die Roboter werden nicht sehr schnell verschoben, und es werden nur kurze Entfernungen in regelmäßigen Abständen übertragen. Sie bleiben in der Regel um 2 Meter vor Ihnen, wo die Stabilisierung standardmäßig festgelegt ist.
+Roboraid wurde mit der Stabilisierungs Ebene entworfen. Der Reticle, der den größten Teil nach der Überschrift bewegt, umgeht dies, indem er nur rot und Blau verwendet, wodurch die Farb Blutungen minimiert werden. Sie enthält auch ein kleines tiefgehende Tiefe zwischen den einzelnen Elementen. Dadurch werden alle Farb verblutungs Elemente minimiert, die durch eine Maskierung mit einem bereits erwarteten parameteffekt auftreten würden. Die Roboter werden nicht schnell verschoben, und es werden nur kurze Entfernungen in regelmäßigen Abständen übertragen. Sie bleiben in der Regel um 2 Meter vor Ihnen, wo die Stabilisierung standardmäßig festgelegt ist.
 
 ### <a name="fragments-and-young-conker-dynamic-content-with-environmental-interaction"></a>Fragmente und junge Zusammenspiel: dynamischer Inhalt mit Umgebungs Interaktion
 
-Fragmente, die von Asobo Studio in C++ geschrieben wurden, unterscheiden sich bei der Festlegung der Stabilisierungs Ebene. Relevante Punkte (POI) werden im Code definiert und im Hinblick auf die Priorität geordnet. POIs sind in-Game-Inhalten, z. b. das-Verbindungs Modell in jungen-,-Menüs, das Ziel-Reticle und Logos. Die POIs werden durch den Benutzer Blick geschnitten, und die Ebene wird auf den Mittelpunkt des Objekts mit der höchsten Priorität festgelegt. Wenn keine Schnittmenge auftritt, wird die Ebene auf die Standard Entfernung festgelegt.
+Fragmente, die von Asobo Studio in C++ geschrieben wurden, unterscheiden sich bei der Festlegung der Stabilisierungs Ebene. Relevante Punkte (POI) werden im Code definiert und nach Priorität geordnet. POIs sind in-Game-Inhalten, wie z. b. das-Verbindungs Modell im Jugendschutz, Menüs, das Ziel-Reticle und Logos. Die POIs werden durch den Benutzer Blick geschnitten, und die Ebene wird auf den Mittelpunkt des Objekts mit der höchsten Priorität festgelegt. Wenn keine Schnittmenge auftritt, wird die Ebene auf die Standard Entfernung festgelegt.
 
 Fragmente und junge-Anker entwerfen Sie auch, wenn Sie sich zu weit von den holograms bewegen, indem Sie die APP anhalten, wenn Sie sich außerhalb der Inhalte befinden, die bereits als Wiedergabe Raum gescannt wurden. Daher behalten Sie Sie in den Grenzen, die für eine stabilere Benutzerfunktion gefunden werden.
 
 ## <a name="do-it-yourself"></a>Aufzeichnung in Eigenregie
 
-Wenn Sie über ein hololens verfügen und mit den Konzepten in diesem Artikel experimentieren möchten, können Sie eine Test Szene herunterladen und die unten beschriebenen Übungen ausprobieren. Es verwendet die integrierte Gizmo-API von Unity und sollte Ihnen helfen, den Speicherort ihrer Ebene visuell darzustellen. Dieser Code wurde auch verwendet, um die Screenshots in dieser Fallstudie aufzuzeichnen.
+Wenn Sie einen hololens haben und mit den Konzepten in diesem Artikel experimentieren möchten, können Sie eine Test Szene herunterladen, um die folgenden Übungen auszuprobieren. In der Test Szene wird die integrierte Gizmo-API von Unity verwendet, damit Sie visualisieren können, wo Ihre Ebene festgelegt wird. Der Code wurde auch verwendet, um die Screenshots in dieser Fallstudie aufzuzeichnen.
 1. Synchronisieren Sie die neueste Version von [mixedrealitytoolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity).
 2. Öffnen Sie die [HoloToolkit-examples/Utilities/Szenen/stabilizationplaneseup. unity-](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) Szene.
 3. Erstellen und konfigurieren Sie das generierte Projekt.
@@ -86,7 +86,7 @@ Wenn Sie eine neue Konfiguration der Punkte sehen, können Sie auf das Recht kli
 **Tipps**
 * Sorgen Sie dafür, dass die Logik der Ebene einfach ist. Wie Sie gesehen haben, benötigen Sie keine komplexen Ebenen-Einstellungs Algorithmen, um eine immersive Erfahrung zu erzielen. Die Stabilisierungs Ebene ist nur ein Teil des Rätsels.
 * Wenn möglich, sollten Sie die Ebene immer zwischen Zielen problemlos verschieben. Das sofortige wechseln entfernter Ziele kann die Szene visuell stören.
-* Ziehen Sie in Erwägung, eine Option in der Ebene festzulegen, mit der Logik auf ein bestimmtes Ziel gesperrt werden soll. Auf diese Weise können Sie bei Bedarf die Ebene für ein Objekt, z. b. ein Logo oder einen Titelbildschirm, sperren.
+* Ziehen Sie ggf. eine Option in ihrer Ebene fest, um die Logik für ein bestimmtes Ziel zu sperren. Auf diese Weise können Sie bei Bedarf die Ebene für ein Objekt, z. b. ein Logo oder einen Titelbildschirm, sperren.
 
 ## <a name="about-the-author"></a>Informationen zum Autor
 
@@ -97,7 +97,7 @@ Wenn Sie eine neue Konfiguration der Punkte sehen, können Sie auf das Recht kli
 </tr>
 </table>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [MR-Grundlagen 100: Erste Schritte mit Unity](../unity/tutorials/holograms-100.md)
 * [Fokuspunkt in Unity](../unity/focus-point-in-unity.md)
 * [Hologrammstabilität](hologram-stability.md)

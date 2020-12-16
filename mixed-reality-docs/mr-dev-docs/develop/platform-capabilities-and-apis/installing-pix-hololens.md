@@ -1,19 +1,19 @@
 ---
-title: Installieren von Pix für hololens 2
+title: Installieren von PIX für HoloLens 2
 description: Erfahren Sie, wie Sie pix für hololens 2-Geräte installieren.
 author: hferrone
 ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: Hololens, hololens 2, pix, Capture, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 4554600414784b2644006e6e891f16f8ce3a79f5
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615364"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530443"
 ---
-# <a name="installing-pix-for-hololens-2"></a>Installieren von Pix für hololens 2
+# <a name="installing-pix-for-hololens-2"></a>Installieren von PIX für HoloLens 2
 
 [Pix](https://devblogs.microsoft.com/pix) ist ein Tool zur Leistungsoptimierung und-Debuggen für DirectX 12-Anwendungen unter Windows. 
 
@@ -21,7 +21,7 @@ ms.locfileid: "96615364"
 
 1. Holen Sie sich die neueste pix- [Version]( https://devblogs.microsoft.com/pix/download) von Ihrem Host-PC, und verbinden Sie Ihre hololens 2 über ein USB-Kabel mit Ihrem PC.
 
-2. Wenn sich Ihre hololens 2 in einem [Windows Insider-Build](https://insider.windows.com) befinden oder über eine Konfiguration verfügen, bei der PIX unterbrochen wird, müssen  [Sie Ihr Gerät erneut](https://docs.microsoft.com/hololens/hololens-recovery) löschen, um alle Daten zu löschen.
+2. Wenn sich Ihre hololens 2 in einem [Windows Insider-Build](https://insider.windows.com) befinden oder über eine Konfiguration verfügen, die pix unterbricht, löschen  [Sie Ihr Gerät](https://docs.microsoft.com/hololens/hololens-recovery) , um alle Daten zu löschen.
 
 3. **Entwicklermodus** und **Geräte Portal** aktivieren:
 
@@ -33,7 +33,7 @@ ms.locfileid: "96615364"
 
 ![Screenshot des Fensters "Einstellungen" in hololens mit hervorgehobener Schaltfläche "aktualisieren und Sicherheit"](images/pix-img-02.jpg)
 
-* Klicken Sie **für Entwickler**:
+* Wählen Sie **für Entwickler**:
 
 ![Screenshot der Schaltfläche "Sicherheit und Updates" mit hervorgehobener Schaltfläche "Entwickler"](images/pix-img-03.jpg)
 
@@ -60,7 +60,7 @@ ms.locfileid: "96615364"
 
 * Auswählen von **Einstellungen** aus der Shell
 * Wählen Sie **Update & Sicherheit** aus.
-* Klicken Sie **für Entwickler** , und drücken Sie unter **Geräte** Ermittlung das Paar. 
+* Wählen Sie **für Entwickler aus** , und klicken Sie unter **Geräte** Ermittlung auf paar 
 
 ![Screenshot von für Entwickler Fenster "in Einstellungen öffnen" mit hervorgehobener Geräte Ermittlung](images/pix-img-08.jpg)
 
@@ -72,7 +72,7 @@ ms.locfileid: "96615364"
 
 ## <a name="launching-pix"></a>Starten von Pix
 
-Überprüfen Sie zunächst mithilfe des Geräte Portals, ob die APP auf den hololens 2 ausgeführt wird. Starten Sie dann pix, verbinden Sie sich mit Ihrem Gerät, und klicken Sie auf **Startseite**:
+Überprüfen Sie zunächst mithilfe des Geräte Portals, ob die APP auf den hololens 2 ausgeführt wird. Starten Sie dann pix, stellen Sie eine Verbindung mit Ihrem Gerät her, und wählen Sie **Startseite**:
 
 ![Screenshot des pix-Anwendungs-Startbildschirms](images/pix-img-10.png)
 
@@ -80,18 +80,18 @@ ms.locfileid: "96615364"
 
 ![Screenshot des linksseitigen Menüs der PIX-Anwendung mit hervorgehobener Schaltfläche "verbinden"](images/pix-img-11.png)
 
-2. Klicken Sie auf der Registerkarte **Computer** auf **Hinzufügen** , und geben Sie folgende Anmelde Informationen ein:
+2. Klicken Sie auf der Registerkarte **Computer** auf **Hinzufügen**, und geben Sie die folgenden Anmelde Informationen ein:
     * Alias: der Ermessen des Benutzers
     * Hostname oder IP-Adresse: 127.0.0.1
 
-3. Klicken Sie unten rechts auf der Registerkarte **Computer** auf **verbinden** :
+3. Wählen Sie in der unteren rechten Ecke der Registerkarte **Computer** die Option **verbinden** aus:
 
 ![Screenshot des pix-Anwendungs Verbindungs Fensters mit hervorgehobenem Alias, Hostname, IP-Adresse und Schaltfläche "hinzufügen"](images/pix-img-12.png)
 
 > [!NOTE]
 > Die erste Verbindung ist immer langsamer, da Binärdateien kopiert werden.
 
-4. Wenn pix mit den hololens 2 verbunden ist, suchen Sie Ihre APP im Abschnitt **Ziel Prozess auswählen** auf der Registerkarte "UWP starten", und klicken Sie auf " **starten**":
+4. Wenn pix mit den hololens 2 verbunden ist, suchen Sie Ihre APP im Abschnitt **Ziel Prozess auswählen** auf der Registerkarte "UWP starten", und wählen Sie " **starten**" aus:
 
 ![Screenshot der PIX-Anwendung mit hervorgehobenem Ziel Prozessfenster auswählen und Start Schaltfläche](images/pix-img-13.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "96615364"
 
 ![Screenshot der PIX-Anwendung, bei der der PC-Verbindungsbereich geöffnet ist und GPU-Erfassung hervorgehoben ist](images/pix-img-14.png)
 
-2. Öffnen Sie die Erfassung für die Analyse, indem Sie im **GPU-Erfassungs** Bereich auf den generierten Screenshot klicken:
+2. Öffnen Sie die Erfassung für die Analyse, indem Sie im GPU- **Erfassungs** Bereich auf den generierten Screenshot klicken:
 
 ![Screenshot der PIX-Anwendung mit hervorgehobenem GPU-Erfassungsbereich mit hervorgehobenem GPU-Erfassungsbereich](images/pix-img-15.png)
 

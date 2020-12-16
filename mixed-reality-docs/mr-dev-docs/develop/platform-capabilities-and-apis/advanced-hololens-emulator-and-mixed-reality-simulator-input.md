@@ -6,12 +6,12 @@ ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: Hololens, Emulator, Simulation, Windows Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 59e163c61b620fb1e203fe651d22cc45c2074d19
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679619"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530453"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Erweiterte Eingabe für HoloLens-Emulator und Mixed Reality-Simulator
 
@@ -29,22 +29,22 @@ Bewegung bezieht sich auf das Steuern und Ändern der Position und Ausrichtung e
 * **Y**: nach oben oder unten verschieben.
 * **Z**: vorwärts oder rückwärts.
 
-Gesten-und Bewegungs Controller Eingaben werden genau der Art der physischen Geräte zugeordnet:
-* **Aktion**: Dadurch wird die Aktion simuliert, mit der der Vorder-Finger zum Ziehpunkt gedrückt oder die Aktions Schaltfläche auf einem Controller abgerufen wird. Beispielsweise kann die Aktions Eingabe verwendet werden, um die Luft tippen Bewegung zu simulieren, einen Bildlauf durch den Inhalt durchführen und die Tastenkombination zu drücken.
-* **[Bloom](../../design/system-gesture.md#bloom)/Systemanbieter Geste oder Home**: die hololens-Blüte/System Bewegung oder die Start Schaltfläche eines Controllers wird verwendet, um zur Shell zurückzukehren und System Aktionen auszuführen.
+Gesten-und Bewegungs Controller Eingaben werden physischen Geräten sehr stark zugeordnet:
+* **Aktion**: simuliert die Aktion, mit der der Vorder-und-oder die Aktions Schaltfläche auf einem Controller gedrückt wird. Beispielsweise kann die Aktions Eingabe verwendet werden, um die Luft tippen Bewegung zu simulieren, einen Bildlauf durch den Inhalt durchführen und die Tastenkombination zu drücken.
+* **[Bloom](../../design/system-gesture.md#bloom)/Systemanbieter Geste oder Home**: die hololens-Blüte/System Bewegung oder die Start Schaltfläche eines Controllers wird verwendet, um zur Shell zurückzukehren und System Aktionen auszulösen.
 
-Hände haben eine umfangreiche Darstellung in hololens 2.  Neben der Nachverfolgung/nicht Nachverfolgung und der Verwendung für den Einsatz von Gesten verfügen die Hände nun über ein geclustertes Skelett Modell, das für den Entwickler verfügbar ist.  Dadurch werden jeweils 26 nach verfolgte Punkte eingeführt.  
-* **Joint**: eine von 20 nach verfolgten Positionen für eine bestimmte verfolgte Hand. Dabei muss es sich um einen Punkt mit einem zugeordneten 3D--Bereich handelt.
-* **Pose**: eine vollständige Auflistung aller Gelenke in einer nach verfolgten Hand. Zurzeit ist dies eine Auflistung von 26 Gelenken. 
+Hände haben eine umfangreiche Darstellung in hololens 2.  Neben der Nachverfolgung/Nichtverfolgung und Verwendung für den Einsatz von Gesten haben die Hände nun ein geclustertes Skelett Modell, das für den Entwickler verfügbar ist.  Das Skeleton-Modell weist jeweils 26 nach verfolgte Punkte auf.  
+* **Joint**: eine von 20 nach verfolgten Positionen für eine angegebene nach verfolgte Hand mit einem zugeordneten Punkt im 3D--Raum.
+* **Pose**: eine vollständige Auflistung aller Gelenke in einer nach verfolgten Hand, 26 Gelenke in allen. 
 
-Zu diesem Zeitpunkt machen wir die direkte Steuerung der einzelnen gemeinsamen Positionen nicht einzeln über die Emulator-Benutzeroberfläche verfügbar. Sie können Sie jedoch über die Simulations-API festlegen. Stattdessen haben wir eine Reihe nützlicher Vertreter, die es Ihnen ermöglicht, zwischen zu wechseln.
+Derzeit wird die direkte Steuerung einzelner gemeinsamer Positionen über den Emulator nicht verfügbar gemacht, Sie können Sie jedoch über die Simulations-API festlegen. Wir haben eine Reihe nützlicher Vertreter, die der Emulator ermöglicht, zwischen zu wechseln.
 
 Sie können auch den Status der simulierten Sensor Eingabe Steuern:
-* **Reset**: Hiermit werden alle simulierten Sensoren auf ihre Standardwerte zurückgesetzt.  Beginnend mit dem hololens 2-Emulator kann eine zurück setzung auf ein oder beide Hände beschränkt werden, indem Sie die gewünschten Hand (e) mithilfe der entsprechenden Modifizierertasten oder Schaltflächen (Links und/rechts alt oder die linke und/oder Rechte Stoß Taste im Gamepad) einbinden.
-* Nach **Verfolgung**: durchläuft die nach Verfolgungs Modi mit Feldern fester Breite. Dies schließt Folgendes ein:
+* **Reset**: gibt alle simulierten Sensoren auf ihre Standardwerte zurück.  Beginnend mit dem hololens 2-Emulator kann eine zurück setzung auf ein oder beide Hände beschränkt werden. Nehmen Sie die gewünschten Hand (en) mithilfe der Modifizierertaste oder der Schaltfläche (n) (Links und/oder Rechte alt oder Links und/oder rechter Stoß Taste im Gamepad).
+* Nach **Verfolgung**: durchläuft die nach Verfolgungs Modi mit Feldern fester Breite, einschließlich:
   * **Standard**: das Betriebssystem wählt basierend auf den Anforderungen des Systems den besten Überwachungsmodus aus.
-   * **Ausrichtung**: erzwingt die Nachverfolgung nur Nachverfolgung, unabhängig von den Anforderungen des Systems.
-   * **Positional**: erzwingt die Positionsüberwachung, unabhängig von den Anforderungen des Systems.
+   * **Ausrichtung**: erzwingt die Ausrichtung, unabhängig von den Systemanforderungen.
+   * **Positional**: erzwingt die Positionsüberwachung, unabhängig von den Systemanforderungen.
 
 ## <a name="types-of-input"></a>Eingabetypen
 
@@ -79,16 +79,16 @@ Hinweis: die Controller Schaltflächen können mit den Modifizierern für die Ha
 
 ## <a name="targeting"></a>Zielgruppenadressierung 
 
-Einige der oben genannten Eingabe Konzepte sind eigenständig.  Action, Bloom/System, Reset und Tracking sind umfassende Konzepte, die nicht benötigt werden und von denen keine weiteren modifiziererer für die Zielgruppe betroffen sind.  Die verbleibenden Konzepte können jedoch auf eines von mehreren Zielen angewendet werden. Wir haben Möglichkeiten zum Angeben des beabsichtigten Ziels eingeführt, auf das der Befehl angewendet werden soll.  In allen Fällen ist es möglich, über die Benutzeroberfläche oder über Tastatureingaben anzugeben, welches Objekt als Ziel festgelegt wird.  In einigen Fällen ist es auch möglich, mit dem Xbox-Controller direkt anzugeben. 
+Einige der oben genannten Eingabe Konzepte sind eigenständig.  Aktion, Blüte/System, zurück Setzung und Nachverfolgung sind umfassende Konzepte, benötigen keine weiteren modifiziererer für die Zielsetzung und sind von diesen nicht betroffen.  Die verbleibenden Konzepte können auf eines von mehreren Zielen angewendet werden. Wir haben Möglichkeiten zum Angeben des beabsichtigten Ziels eingeführt, auf das der Befehl angewendet werden soll.  In allen Fällen ist es möglich, über die Benutzeroberfläche oder über Tastatureingaben anzugeben, welches Objekt als Ziel festgelegt wird.  In einigen Fällen ist es auch möglich, mit dem Xbox-Controller direkt anzugeben. 
 
 In der folgenden Tabelle werden die Optionen für die Zielplattform und die Möglichkeit zum Aktivieren der einzelnen Optionen beschrieben.
 
 | Object | Tastatur-Modifizierer | Controllermodifizierer | Emulator UI-Modifizierer |
 |----------|----------|----------|----------|
-| Text | (Standard) | (Standard) | (Standard) |
+| Body | (Standard) | (Standard) | (Standard) |
 | Head | Halten H | (Nicht verfügbar) | (Nicht verfügbar) |
-| Linker/Controller | Linke ALT-Taste gedrückt halten | Linke Schulter Taste halten | Linke Hand Nadel | 
-| Rechte Seite/Controller | Alt-Taste gedrückt halten | Rechte Schulter Taste halten | Rechte Hand Nadel |
+| Linker/Controller | Linke ALT-Taste gedrückt halten | Linke Schulter Taste halten | Left-Hand PushPin | 
+| Rechte Seite/Controller | Alt-Taste gedrückt halten | Rechte Schulter Taste halten | Right-Hand PushPin |
 | Blicke | Halten Sie Y | (Nicht verfügbar) | Augen-PushPin |
   
 In der folgenden Tabelle wird gezeigt, wie die einzelnen zielmodifizierer die einzelnen Grundkonzepte der Verschiebungs Eingabe zuordnen.
@@ -134,9 +134,10 @@ Der folgende Satz von Steuerelementen wird für die alltägliche Verwendung vorg
 
 Wenn Sie ein Windows Mixed Reality-immersives Headset mit dem hololens 2-Emulator verwenden, werden Bewegung und Drehung automatisch der Headset-Bewegung und-Drehung zugeordnet.  Position und Ausrichtung des Bewegungs Controllers werden automatisch der Handposition und Ausrichtung im Emulator zugeordnet.  In der folgenden Tabelle sind zusätzliche Aktionen aufgeführt, die bei der Verwendung eines Bewegungs Controllers verfügbar sind.
 
-Beachten Sie, dass bei Verwendung eines Headsets standardmäßige Tastatur-, Maus-und Gamepad-Steuerelemente automatisch ignoriert werden.
+> [!NOTE]
+> Bei Verwendung eines Headsets werden standardmäßige Tastatur-, Maus-und Gamepad-Steuerelemente automatisch ignoriert.
 
-|  Vorgang |  Aktion |  Hinweise | 
+|  Vorgang |  Aktion |  Notizen | 
 |----------|----------|----------|
 |  Text X |  Thumbstick links/rechts |   | 
 |  Text Z |  Fingerabdruck vorwärts/zurück |   | 
@@ -150,15 +151,15 @@ Beachten Sie, dass bei Verwendung eines Headsets standardmäßige Tastatur-, Mau
 
 ## <a name="perception-simulation-control-panel-keyboard-shortcuts"></a>System Steuerungs Tastenkombinationen für die Wahrnehmungs Simulation
 
-Die folgenden Tastenkombinationen sind für den Zugriff auf die Systemsteuerung für die Wahrnehmungs Simulation und das Aktivieren oder Deaktivieren von PC-Eingabegeräten zur Verwendung mit Simulationen verfügbar.
+Mithilfe der folgenden Tastenkombinationen können Sie auf die Systemsteuerung für die Wahrnehmungs Simulation zugreifen und PC-Eingabegeräte aktivieren bzw. deaktivieren.
 
-| Vorgang | Tastenkombination | Beschreibung/Notizen |
+| Vorgang | Verknüpfung | Beschreibung/Notizen |
 |-----------|----------|-------------|
 | "Tastatur für Simulation verwenden" umschalten | F4 | Wenn diese deaktiviert ist, wird die Tastatureingabe an die hololens-oder Windows Mixed Reality-Anwendung weitergeleitet. |
 | "Maus für Simulation verwenden" umschalten | F5 | Wenn Sie ausgeschaltet ist, wird die Mauseingabe an die gemischte Reality-Umgebung weitergeleitet (nur Windows Mixed Reality). |
 | "Gamepad für Simulation verwenden" umschalten | F6 | Wenn Sie ausgeschaltet ist, wird die Gamepad-Eingabe von der Simulation ignoriert. |
 | Anzeigen oder Ausblenden der Systemsteuerung | F7 | |
-| Festlegen des Tastaturfokus auf die Systemsteuerung | F8 | Wenn das Panel momentan nicht sichtbar ist, wird es zuerst angezeigt. |
+| Festlegen des Tastaturfokus auf die Systemsteuerung | F8 | Wenn der Bereich momentan nicht sichtbar ist, wird er zuerst angezeigt. |
 | Andocken oder Abdocken des Bereichs im Emulator-oder Mixed Reality-Portal Fenster | F9 | Wenn das Fenster geschlossen wird, wenn es nicht angedockt ist, wird es angedockt und ausgeblendet. |
 
 ## <a name="see-also"></a>Siehe auch
