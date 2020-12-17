@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: dc908762d6e44e04f56b8ff82b90394106ca42e5
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
+ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622914"
+ms.locfileid: "97664418"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Gemischte Funktionen von openxr unterstützten Funktionen in Unity
 
@@ -25,12 +25,12 @@ Die folgenden Funktionen werden derzeit unterstützt:
 * Optimiert das UWP-Paket und die corewindow-Interaktion für hololens 2-Anwendungen.
 * Welt weite Nachverfolgung mithilfe von Ankern und unbeschränktes Raum.
 * Anker-Speicher-API zum Beibehalten von Ankern an hololens 2 lokalen Speicher.
-* Motion Controller und Hand Interaktionen, einschließlich des neuen HP-Reverb-G2-Controllers.
+* [Motion Controller und Hand Interaktionen](#motion-controller-and-hand-interactions), einschließlich des neuen HP-Reverb-G2-Controllers.
 * Handgelenk Verfolgung mithilfe von 26 Gelenken und gemeinsamen RADIUS-Eingaben.
 * Interaktion mit Blick auf hololens 2.
 * Auffinden von Foto/Video-Kamera (PV) auf hololens 2.
 * Transformation für gemischte Realität mithilfe von Dritt-Rendering durch PV-Kamera.
-* Unterstützt "Play" in hololens 2 mithilfe der Holographic Remoting-APP, sodass Entwickler Skripts debuggen können, ohne auf dem Gerät zu entwickeln und bereitzustellen.
+* Unterstützt ["Play" in hololens 2 mit der Holographic Remoting-App](#holographic-remoting-in-unity-editor-play-mode), sodass Entwickler Skripts debuggen können, ohne auf dem Gerät zu entwickeln und bereitzustellen.
 * Kompatibel mit mrtk Unity 2.5.2 durch mrtk openxr-Adapter Paket. <missing link>
 * Kompatibel mit Unity [arfoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) oder höher
 

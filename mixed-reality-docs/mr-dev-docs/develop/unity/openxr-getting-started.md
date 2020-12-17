@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: adb678d168d86dc2376ac46caa690e5db036099c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 05adee2d88bc90dcfb5cf8b780212c7622aff786
+ms.sourcegitcommit: ce4975f584bb62075bcb66349237b77081fb982b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622980"
+ms.locfileid: "97644917"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Verwenden des gemischten Reality openxr-Plug-Ins für Unity
 
@@ -29,7 +29,7 @@ Ab Unity, Version 2020,2, ist das gemischte openxr-Plug-in-Paket von Microsoft m
 
 ## <a name="installing-the-mixed-reality-openxr-plugin"></a>Installieren des Mixed Reality openxr-Plug-ins
 
-Bevor Sie das Mixed Reality openxr-Plug-in verwenden, müssen Sie das **openxr-Plug** -in und das Management Pack für die **XR-Plug** -ins
+Das Projekt muss das **openxr** -Plug-in und das **Management** Pack für den Wenn Sie diese bereits installiert haben, ist es toll! Wenn dies nicht der Fall ist, werden Sie beim Installieren des Plug-Ins für gemischte Realität automatisch als Abhängigkeiten installiert:
 
 1. Navigieren Sie im Unity-Editor zum **Bearbeiten > Projekteinstellungen > Paket-Manager** .
 2. Erweitern Sie den Bereich Bereichs bezogene **Registrierungen** , geben Sie die folgenden Informationen ein, und klicken Sie dann auf **Speichern**:   
@@ -124,7 +124,7 @@ Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [
 
 Nachdem Sie Ihr Projekt für openxr konfiguriert haben und Zugriff auf Beispiele haben, sehen Sie sich an, welche [Features](openxr-supported-features.md) derzeit in unserem openxr-Plug-in unterstützt werden.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Konfigurieren des Projekts ohne mrtk](configure-unity-project.md)
 * [Empfohlene Einstellungen für Unity](recommended-settings-for-unity.md)
 * [Leistungsempfehlungen für Unity](performance-recommendations-for-unity.md#how-to-profile-with-unity)
