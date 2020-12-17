@@ -6,12 +6,12 @@ ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: volumetribild, volumenrendering, Leistung, gemischte Realität
-ms.openlocfilehash: 6dbb49c31761d4b7b9da5060d15763c3925be754
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683393"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612944"
 ---
 # <a name="volume-rendering"></a>Volumengrafik
 
@@ -24,10 +24,10 @@ Wichtige Lösungen zum Verbessern der Leistung
 4. Gut: Verringern der Auflösung des volumerendering (siehe ' Mixed Resolution Scene Rendering ')
 
 Es gibt nur eine bestimmte Menge von Informationen, die von der Anwendung auf den Bildschirm in einem bestimmten Frame übertragen werden können. Dies ist die gesamte Arbeitsspeicher Bandbreite. Außerdem erfordert jede Verarbeitung (oder ' Schattierung '), die zum Transformieren der Daten für die Präsentation erforderlich ist, Zeit. Die wichtigsten Überlegungen zum Rendern von Volumes lauten wie folgt:
-* Bildschirmbreite * Bildschirmhöhe * Bildschirm-count * Volume-Layer-on-this-Pixel = Total-Volume-Samples-per Frame
+* Screen-Width * Screen-Height * Screen-Count * Volume-Layer-on-this-Pixel = Total-Volume-Samples-per Frame
 * 1028 * 720 * 2 * 256 = 378961920 (100%) (vollständiges res-Volume: zu viele Beispiele)
 * 1028 * 720 * 2 * 1 = 1480320 (0,3% vollständig) (dünner Slice: 1 Stichprobe pro Pixel, reibungsloses ausführen)
-* 1028 * 720 * 2 * 10 = 14803200 (3,9% vollständig) (unter volumeslice: 10 Stichproben pro Pixel, läuft Recht reibungslos, sieht 3D aus)
+* 1028 * 720 * 2 * 10 = 14803200 (3,9% vollständig) (subvolumeslice: 10 Stichproben pro Pixel, wird ziemlich reibungslos ausgeführt, sieht 3D aus)
 * 200 * 200 * 2 * 256 = 20480000 (5% vollständig) (niedrigeres Volume: weniger Pixel, vollständiges Volume, sieht 3D-, aber etwas verschwommen)
 
 ## <a name="representing-3d-textures"></a>Darstellen von 3D-Texturen
@@ -98,7 +98,7 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-In vielen unserer Anwendungen speichern wir unsere Volumes sowohl als rohintensität als auch als Segmentierungs Index (zum Segmentieren verschiedener Teile wie Skin und Bone). diese Segmente werden im Allgemeinen von Experten in dedizierten Tools erstellt. Dies kann mit dem oben beschriebenen Ansatz kombiniert werden, um eine andere Farbe oder sogar eine andere Farbskala für jeden Segment Index zu platzieren:
+In vielen unserer Anwendungen speichern wir unsere Volumes sowohl als rohintensität als auch als Segmentierungs Index (zum Segmentieren verschiedener Teile wie Skin und Bone). diese Segmente werden von Experten in dedizierten Tools erstellt. Dies kann mit dem oben beschriebenen Ansatz kombiniert werden, um eine andere Farbe oder sogar eine andere Farbskala für jeden Segment Index zu platzieren:
 
 ```
 // Change color to match segment index (fade each segment towards black):
@@ -122,7 +122,7 @@ Ein hervorragend erster Schritt besteht darin, eine "Slicing Plane" zu erstellen
 
 ## <a name="volume-tracing-in-shaders"></a>Volumeablauf Verfolgung in Shadern
 
-Gewusst wie: Verwenden der GPU zum Durchführen einer unter Laufband-Ablauf Verfolgung (durchläuft einige einige Voxels tief, dann Ebenen der Daten von hinten nach vorne):
+Verwenden der GPU zum Durchführen einer subvolumenablaufverfolgung (durchläuft einige einige Voxels tief, dann Ebenen der Daten von hinten nach vorne):
 
 ```
 float4 AlphaBlend(float4 dst, float4 src) {
@@ -166,7 +166,7 @@ float4 AlphaBlend(float4 dst, float4 src) {
 
 ## <a name="whole-volume-rendering"></a>Gesamtes volumenrendering
 
-Wenn Sie den obigen Code des untergeordneten Volumes ändern, erhalten wir Folgendes:
+Wenn Sie den obigen Code ändern, wird Folgendes angezeigt:
 
 ```
 float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
@@ -182,10 +182,10 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
 Gewusst wie: Rendering eines Teils der Szene mit niedriger Auflösung und Zurücksetzen der Szene:
 1. Richten Sie zwei Off-Screen-Kameras ein, um jedes Auge zu verfolgen, das jeden Frame aktualisiert.
 2. Einrichten von zwei Renderingzielen mit niedriger Auflösung (d. h. 200 x 200), die von den Kameras dargestellt werden
-3. Einrichten eines Quad, das sich vor dem Benutzer bewegt
+3. Richten Sie einen Quad ein, der vor dem Benutzer wechselt.
 
 Jeder Frame:
 1. Zeichnen Sie die Renderziele für jedes Auge bei niedriger Auflösung (Volumedaten, teure Shaders usw.).
-2. Zeichnen Sie die Szene normal als vollständige Auflösung (Meshes, UI usw.).
+2. Zeichnen Sie die Szene normal als vollständige Auflösung (Meshes, UI usw.)
 3. Zeichnen Sie einen Quad vor dem Benutzer, über die Szene, und projizieren Sie die auf diese
 4. Ergebnis: visuelle Kombination von Elementen mit vollständiger Auflösung mit geringer Auflösung, aber Volumedaten mit hoher Dichte

@@ -1,24 +1,24 @@
 ---
 title: Räumliche Abbildung in DirectX
-description: Erläutert, wie die räumliche Zuordnung in Ihrer DirectX-App implementiert wird. Dies umfasst eine ausführliche Erläuterung der Beispielanwendung für räumliche Zuordnung, die im universelle Windows-Plattform SDK enthalten ist.
+description: Erfahren Sie, wie Sie eine räumliche Zuordnung in Ihrer DirectX-App implementieren, einschließlich der Beispielanwendung für räumliche Zuordnung, die das universelle Windows-Plattform SDK enthält.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, räumliche Zuordnung, Umgebung, Interaktion, DirectX, WinRT, API, Beispielcode, UWP, SDK, Exemplarische Vorgehensweise
-ms.openlocfilehash: 3e20f0b7a677ba522f8a1140284a2aa0e96eedcd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685907"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612914"
 ---
 # <a name="spatial-mapping-in-directx"></a>Räumliche Abbildung in DirectX
 
 > [!NOTE]
 > Dieser Artikel bezieht sich auf die älteren WinRT-APIs.  Bei neuen nativen App-Projekten wird die Verwendung der **[openxr-API](openxr-getting-started.md)** empfohlen.
 
-In diesem Thema wird beschrieben, wie Sie eine [räumliche Zuordnung](../../design/spatial-mapping.md) in Ihrer DirectX-App implementieren. Dies umfasst eine ausführliche Erläuterung der Beispielanwendung für räumliche Zuordnung, die im universelle Windows-Plattform SDK enthalten ist.
+In diesem Thema wird beschrieben, wie Sie eine [räumliche Zuordnung](../../design/spatial-mapping.md) in Ihrer DirectX-App implementieren, einschließlich einer detaillierten Erläuterung der Beispielanwendung für räumliche Zuordnung, die mit dem universelle Windows-Plattform SDK verpackt ist.
 
 In diesem Thema wird Code aus dem [holographicspatialmapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) -UWP-Codebeispiel verwendet.
 
@@ -50,7 +50,7 @@ In diesem Thema wird Code aus dem [holographicspatialmapping](https://github.com
 
 ## <a name="directx-development-overview"></a>DirectX-Entwicklung – Übersicht
 
-Die native Anwendungsentwicklung für räumliche Zuordnung verwendet die APIs im [Windows. perception. Spatial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) -Namespace. Diese APIs bieten vollständige Kontrolle über die Funktionalität räumlicher Mapping in einer Weise, die direkt mit den von [Unity](../unity/spatial-mapping-in-unity.md)verfügbar gemachten räumlichen Mapping-APIs vergleichbar ist.
+Die native Anwendungsentwicklung für räumliche Zuordnung verwendet die APIs im [Windows. perception. Spatial](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx) -Namespace. Diese APIs verfügen über vollständige Kontrolle über die Funktionalität räumlicher Mapping, und zwar auf dieselbe Weise, wie die APIs für die räumliche Zuordnung von [Unity](../unity/spatial-mapping-in-unity.md)verfügbar gemacht werden.
 
 ### <a name="perception-apis"></a>Perception-APIs
 
@@ -65,16 +65,16 @@ Beim Entwickeln einer Anwendung, die diese APIs verwendet, sieht Ihr grundlegend
 - **Einrichten von spatialsurfaceobserver**
   - Aufrufen von [requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.requestaccessasync.aspx), um sicherzustellen, dass der Benutzer die Berechtigung zum Verwenden der räumlichen Zuordnungsfunktionen des Geräts für die Anwendung erteilt hat.
   - Instanziieren Sie ein spatialsurfaceobserver-Objekt.
-  - Aufrufen von [setboundingvolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) , um die Bereiche anzugeben, in denen Sie Informationen über räumliche Oberflächen benötigen. Diese Bereiche können Sie in Zukunft ändern, indem Sie diese Funktion einfach erneut aufrufen. Jede Region wird mit einem [spatialboundingvolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx)angegeben.
+  - Aufrufen von [setboundingvolumes](https://msdn.microsoft.com/library/windows/apps/mt592747.aspx) , um die Bereiche anzugeben, in denen Sie Informationen über räumliche Oberflächen benötigen. Sie können diese Bereiche in Zukunft ändern, indem Sie diese Funktion erneut aufrufen. Jede Region wird mit einem [spatialboundingvolume](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialboundingvolume.aspx)angegeben.
   - Registrieren Sie sich für das [observedsurfaceschangi-Ereignis](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.observedsurfaceschanged.aspx) , das ausgelöst wird, wenn neue Informationen über die räumlichen Oberflächen in den von Ihnen angegebenen Bereichen des Raums verfügbar sind.
 - **Prozess-observedsurfaceschge-Ereignisse**
   - Aufrufen von [getobservedoberflächen](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.getobservedsurfaces.aspx) in Ihrem Ereignishandler, um eine Zuordnung der spatialsurfakeinfo-Objekte zu erhalten. Mithilfe dieser Karte können Sie die Datensätze aktualisieren, in denen räumliche Oberflächen [in der Benutzerumgebung vorhanden](../../design/spatial-mapping.md#mesh-caching)sind.
   - Für jedes spatialsurfaceinfo-Objekt können Sie [trygetbounds](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceinfo.trygetbounds.aspx) Abfragen, um die räumlichen Blöcke der Oberfläche zu ermitteln, die in einem [räumlichen Koordinatensystem](../../design/coordinate-systems.md) Ihrer Wahl ausgedrückt werden.
-  - Wenn Sie ein Mesh für eine räumliche Oberfläche anfordern möchten, wenden Sie sich an [trycomputelatestmeshasync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx). Sie können Optionen angeben, indem Sie die gewünschte Dichte der Dreiecke und das Format der zurückgegebenen Mesh-Daten angeben.
+  - Wenn Sie sich für eine räumliche Oberfläche für eine räumliche Oberfläche entscheiden, können Sie [trycomputelatestmeshasync](https://msdn.microsoft.com/library/windows/apps/mt592715.aspx)aufrufen. Sie können Optionen angeben, indem Sie die Dichte der Dreiecke und das Format der zurückgegebenen Mesh-Daten angeben.
 - **Gitter empfangen und verarbeiten**
-  - Jeder Aufrufen von trycomputelatestmeshasync gibt ein spatialsurfakemesh-Objekt zurück.
-  - Von diesem Objekt aus können Sie auf die enthaltenen spatialsurfaeschbuffer-Objekte zugreifen, um auf die Dreiecks Indizes, die Scheitelpunkt Positionen und (falls angefordert) vertexnormale des Netzes zuzugreifen. Diese Daten befinden sich in einem Format, das direkt mit den [Direct3D 11-APIs](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) kompatibel ist, die zum Rendern von Netzen verwendet werden.
-  - Von hier aus kann die Anwendung optional eine Analyse oder [Verarbeitung](../../design/spatial-mapping.md#mesh-processing) der Mesh-Daten durchführen und diese zum [Rendern](../../design/spatial-mapping.md#rendering) und zum Auftreten von physikalischer und- [Kollisionen](../../design/spatial-mapping.md#raycasting-and-collision)verwenden.
+  - Jeder Aufrufen von trycomputelatestmeshasync gibt ein spatialsurfakemesh-Objekt asynchron zurück.
+  - Von diesem-Objekt aus können Sie auf die enthaltenen spatialsurfaeschbuffer-Objekte zugreifen, die Ihnen Zugriff auf die Dreiecks Indizes, Vertex-Positionen und Vertex-Normale des Netzes bieten, wenn Sie diese anfordern. Diese Daten befinden sich in einem Format, das direkt mit den [Direct3D 11-APIs](https://msdn.microsoft.com/library/windows/desktop/ff476501(v=vs.85).aspx) kompatibel ist, die zum Rendern von Netzen verwendet werden.
+  - Von hier aus kann Ihre Anwendung die Mesh-Daten optional analysieren oder [verarbeiten](../../design/spatial-mapping.md#mesh-processing) und zum [Rendern](../../design/spatial-mapping.md#rendering) und zum Zusammenführen von Physik- [Raycasting](../../design/spatial-mapping.md#raycasting-and-collision)und-Konflikten verwenden.
   - Ein wichtiges Detail ist, dass Sie eine Skalierung auf die mesvertexpositionen anwenden müssen (z. b. im Vertexshader, der zum Rendern der Meshes verwendet wird), um Sie von den optimierten ganzzahligen Einheiten, in denen Sie im Puffer gespeichert sind, in Meter zu konvertieren. Sie können diese Skala abrufen, indem Sie [vertexpositionscale](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfacemesh.vertexpositionscale.aspx)aufrufen.
 
 ### <a name="troubleshooting"></a>Problembehandlung
@@ -84,11 +84,11 @@ Beim Entwickeln einer Anwendung, die diese APIs verwendet, sieht Ihr grundlegend
 
 Das Codebeispiel für die [holografische räumliche Zuordnung](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) enthält Code, den Sie verwenden können, um mit dem Laden von Oberflächen Netzen in Ihre APP zu beginnen, einschließlich der Infrastruktur zum Verwalten und Rendern von Oberflächen Netzen.
 
-Nun erfahren Sie, wie Sie Ihrer DirectX-App Oberflächen Zuordnungsfunktionen hinzufügen. Sie können diesen Code dem Vorlagen Projekt für die [Windows Holographic-App](creating-a-holographic-directx-project.md) hinzufügen. Alternativ können Sie das oben erwähnte Codebeispiel durchsuchen. Dieses Codebeispiel basiert auf der Windows Holographic-App-Vorlage.
+Nun erfahren Sie, wie Sie Ihrer DirectX-App Funktionen zur Oberflächen Zuordnung hinzufügen. Sie können diesen Code dem Vorlagen Projekt für die [Windows Holographic-App](creating-a-holographic-directx-project.md) hinzufügen. Alternativ können Sie das oben erwähnte Codebeispiel durchsuchen. Dieses Codebeispiel basiert auf der Windows Holographic-App-Vorlage.
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Einrichten Ihrer APP für die Verwendung der spatialperception-Funktion
 
-Ihre APP muss die Funktion für räumliche Zuordnung verwenden können. Dies ist erforderlich, da das räumliche Mesh eine Darstellung der Benutzerumgebung ist, die als private Daten betrachtet werden kann. Deklarieren Sie diese Funktion in der Datei "Package. appxmanifest" für Ihre APP. Hier sehen Sie ein Beispiel:
+Ihre APP kann die räumliche Mapping-Funktion verwenden. Dies ist erforderlich, da das räumliche Mesh eine Darstellung der Benutzerumgebung ist, die als private Daten betrachtet werden kann. Deklarieren Sie diese Funktion in der Datei "Package. appxmanifest" für Ihre APP. Hier sehen Sie ein Beispiel:
 
 ```xml
 <Capabilities>
@@ -110,7 +110,7 @@ Die Funktion stammt aus dem **uap2** -Namespace. Um Zugriff auf diesen Namespace
 
 ### <a name="check-for-spatial-mapping-feature-support"></a>Überprüfen der Funktions Unterstützung für räumliche Zuordnung
 
-Windows Mixed Reality unterstützt eine große Bandbreite von Geräten, darunter Geräte, die keine räumliche Zuordnung unterstützen. Wenn Ihre APP eine räumliche Zuordnung verwenden oder eine räumliche Zuordnung verwenden muss, sollte Sie zum Bereitstellen von Funktionen überprüfen, ob die räumliche Zuordnung unterstützt wird, bevor Sie versuchen, Sie zu verwenden. Wenn z. b. eine räumliche Zuordnung für Ihre Mixed Reality-App erforderlich ist, sollte eine Meldung angezeigt werden, wenn ein Benutzer versucht, die Anwendung auf einem Gerät ohne räumliche Zuordnung durchführen zu müssen. Oder Sie können Ihre eigene virtuelle Umgebung möglicherweise anstelle der Umgebung des Benutzers Rendering, sodass Sie ein ähnliches Verhalten wie bei der Verfügbarkeit der räumlichen Zuordnung bietet. In jedem Fall ermöglicht diese API Ihrer APP, zu erkennen, wann Sie keine räumlichen Zuordnungsdaten erhält, und antwortet auf die entsprechende Weise.
+Windows Mixed Reality unterstützt eine große Bandbreite von Geräten, einschließlich Geräten, die keine räumliche Zuordnung unterstützen. Wenn Ihre APP eine räumliche Zuordnung verwenden oder eine räumliche Zuordnung verwenden muss, sollte Sie zum Bereitstellen von Funktionen überprüfen, um sicherzustellen, dass die räumliche Zuordnung unterstützt wird, bevor Sie versuchen, Sie zu verwenden. Wenn z. b. eine räumliche Zuordnung für Ihre Mixed Reality-App erforderlich ist, sollte eine Meldung angezeigt werden, wenn ein Benutzer versucht, die Anwendung auf einem Gerät ohne räumliche Zuordnung durchführen zu müssen. Oder Sie können Ihre eigene virtuelle Umgebung anstelle der Umgebung des Benutzers Rendering, sodass Sie ein ähnliches Verhalten wie bei der Verfügbarkeit der räumlichen Zuordnung bietet. In jedem Fall ermöglicht diese API Ihrer APP, sich zu bewusst zu machen, wenn Sie keine räumlichen Zuordnungsdaten erhält und entsprechend antwortet.
 
 Stellen Sie zunächst sicher, dass der UWP-Vertrag auf der Ebene 4 oder höher ist, und fordern Sie dann spatialsurfaceobserver:: IsSupported () an, um das aktuelle Gerät auf Unterstützung für räumliche Zuordnung zu überprüfen. Dies wird im Kontext des Code Beispiels für die [Holographic-Zuordnung für räumliche Daten](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) beschrieben. Die Unterstützung wird unmittelbar vor dem Anfordern des Zugriffs geprüft.
 
@@ -136,7 +136,7 @@ if (m_surfaceObserver == nullptr)
            /// etc ...
 ```
 
-Beachten Sie Folgendes: Wenn der UWP-Vertrag niedriger als Ebene 4 ist, sollte die APP so vorgehen, als ob das Gerät eine räumliche Zuordnung durchführen kann.
+Wenn der UWP-Vertrag niedriger als Ebene 4 ist, sollte die APP so vorgehen, als ob das Gerät eine räumliche Zuordnung durchführen kann.
 
 ### <a name="request-access-to-spatial-mapping-data"></a>Zugriff auf räumliche Zuordnungsdaten anfordern
 
@@ -161,7 +161,7 @@ initSurfaceObserverTask.then([this, coordinateSystem](Windows::Perception::Spati
 
 Der **Windows::P erception:: Spatial:: Oberflächen** -Namespace enthält die [spatialsurfaceobserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) -Klasse, mit der ein oder mehrere Volumes beobachtet werden, die Sie in einem [spatialcoordinatesystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.aspx)angeben. Verwenden Sie eine [spatialsurfaceobserver](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.surfaces.spatialsurfaceobserver.aspx) -Instanz, um in Echtzeit auf Oberflächen Mesh-Daten zuzugreifen.
 
-Aus **appmain. h** :
+Aus **appmain. h**:
 
 ```cpp
 // Obtains surface mapping data from the device in real time.
@@ -201,7 +201,7 @@ Als nächstes müssen Sie den Oberflächen Beobachter so konfigurieren, dass er 
         m_surfaceObserver->SetBoundingVolume(bounds);
 ```
 
-Beachten Sie, dass Sie stattdessen mehrere Begrenzungs Volumes festlegen können.
+Stattdessen können Sie mehrere Begrenzungs Volumes festlegen.
 
 *Dies ist Pseudocode:*
 
@@ -219,11 +219,11 @@ m_surfaceObserver->SetBoundingVolume(
             );
 ```
 
-Wenn Ihre APP etwas anders ausführen muss, wenn keine Oberflächen Zuordnungsdaten verfügbar sind, können Sie Code schreiben, um auf den Fall zu reagieren, in dem [spatialperceptionaccessstatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) nicht **zulässig** ist. beispielsweise wird er auf PCs mit angefügten immersiven Geräten nicht zugelassen, da diese Geräte nicht über Hardware für räumliche Zuordnung verfügen. Für diese Geräte sollten Sie sich stattdessen auf die räumliche Phase stützen, um Informationen zur Umgebung und Gerätekonfiguration des Benutzers zu erhalten.
+Wenn Ihre APP etwas anders ausführen muss, wenn keine Oberflächen Zuordnungsdaten verfügbar sind, können Sie Code schreiben, um auf den Fall zu reagieren, in dem [spatialpertionaccessstatus](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialperceptionaccessstatus.aspx) nicht **zulässig** ist, z. b. wird er auf PCs mit angefügten immersiven Geräten nicht zugelassen, da diese Geräte nicht über Hardware für räumliche Zuordnung verfügen. Für diese Geräte sollten Sie sich stattdessen auf die räumliche Phase stützen, um Informationen zur Umgebung und Gerätekonfiguration des Benutzers zu erhalten.
 
 ### <a name="initialize-and-update-the-surface-mesh-collection"></a>Initialisieren und Aktualisieren der Surface-Mesh-Auflistung
 
-Wenn der Oberflächen Beobachter erfolgreich erstellt wurde, können wir mit dem Initialisieren der Oberflächen Gitter Auflistung fortfahren. Hier verwenden wir die Pull Model-API, um den aktuellen Satz von beobachteten Oberflächen sofort abzurufen:
+Wenn der Oberflächen Beobachter erfolgreich erstellt wurde, können wir die Oberflächen Gitter Auflistung weiterhin initialisieren. Hier verwenden wir die Pull Model-API, um den aktuellen Satz von beobachteten Oberflächen sofort abzurufen:
 
 ```cpp
 auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
@@ -236,7 +236,7 @@ auto mapContainingSurfaceCollection = m_surfaceObserver->GetObservedSurfaces();
         }
 ```
 
-Es ist auch ein Push-Modell verfügbar, um Oberflächen Mesh-Daten zu erhalten. Sie können Ihre APP so entwerfen, dass nur das Pull-Modell verwendet wird, wenn Sie sich entscheiden. in diesem Fall rufen Sie alle so oft, einmal pro Frame oder innerhalb eines bestimmten Zeitraums, z. b. während der Spiel Einrichtung, Daten ab. Wenn dies der Fall ist, ist der obige Code das, was Sie benötigen.
+Es gibt auch ein Push-Modell, mit dem Sie Oberflächen Mesh-Daten erhalten. Sie können Ihre APP so entwerfen, dass nur das Pull-Modell verwendet wird, wenn Sie sich entscheiden. in diesem Fall rufen Sie alle so oft, einmal pro Frame oder innerhalb eines bestimmten Zeitraums, z. b. während der Spiel Einrichtung, Daten ab. Wenn dies der Fall ist, ist der obige Code das, was Sie benötigen.
 
 In unserem Codebeispiel haben wir uns entschieden, die Verwendung beider Modelle zu pädagogischen Zwecken zu veranschaulichen. Hier abonnieren wir ein Ereignis, um aktuelle Oberflächen Mesh-Daten zu erhalten, wenn das System eine Änderung erkennt.
 
@@ -317,7 +317,7 @@ Das Abrufen der Oberflächen Mesh-Informationen war so einfach wie das Abrufen v
 
 In unserem Codebeispiel haben wir uns entschieden, die Oberflächen Netze für das Rendering zu verwenden. Dies ist ein gängiges Szenario zum einleben von holograms hinter realen Oberflächen. Sie können auch die Meshes und die verarbeiteten Versionen von Ihnen darstellen, um dem Benutzer anzuzeigen, welche Bereiche des Raums gescannt werden, bevor Sie mit der Bereitstellung von APP-oder Spielfunktionen beginnen.
 
-Das Codebeispiel startet den Prozess, wenn er Oberflächen Mesh-Aktualisierungen von dem Ereignishandler empfängt, den wir im vorherigen Abschnitt beschrieben haben. Die wichtige Codezeile in dieser Funktion ist der Aufruf zum Aktualisieren des Oberflächen *Netzes* : bisher haben wir die Mesh-Informationen bereits verarbeitet, und wir sind im Begriff, den Scheitelpunkt und die Indexdaten für die Verwendung nach Bedarf abzurufen.
+Das Codebeispiel startet den Prozess, wenn er Oberflächen Mesh-Aktualisierungen von dem Ereignishandler empfängt, den wir im vorherigen Abschnitt beschrieben haben. Die wichtige Codezeile in dieser Funktion ist der Aufruf zum Aktualisieren des Oberflächen *Netzes*: zurzeit haben wir die Mesh-Informationen bereits verarbeitet, und wir sind im Begriff, den Scheitelpunkt und die Indexdaten für die Verwendung nach Bedarf abzurufen.
 
 Aus realtimesurfakemeshrenderer. cpp:
 
@@ -339,7 +339,7 @@ void RealtimeSurfaceMeshRenderer::AddOrUpdateSurface(Guid id, SpatialSurfaceInfo
 }
 ```
 
-Der Beispielcode ist so konzipiert, dass eine Datenklasse, **surfacemesh** , Mesh-Datenverarbeitungs-und-Rendering behandelt. Diese Netze stellen den **realtimesurfakemeshrenderer** tatsächlich eine Karte dar. Jeder verfügt über einen Verweis auf den spatialsurfakemesh, von dem er stammt, und wir verwenden ihn immer dann, wenn wir auf den Gitter Scheitelpunkt oder Index Puffer zugreifen müssen oder eine Transformation für das Mesh abrufen müssen. Vorerst wird das Mesh als Update erforderlich gekennzeichnet.
+Der Beispielcode ist so konzipiert, dass eine Datenklasse, **surfacemesh**, Mesh-Datenverarbeitungs-und-Rendering behandelt. Diese Netze stellen den **realtimesurfakemeshrenderer** tatsächlich eine Karte dar. Jede verfügt über einen Verweis auf den spatialsurfakemesh, von dem Sie stammt, sodass Sie Sie jederzeit verwenden können, wenn Sie auf den Gitter Scheitelpunkt oder Index Puffer zugreifen oder eine Transformation für das Mesh abrufen müssen. Vorerst wird das Mesh als Update erforderlich gekennzeichnet.
 
 Aus "surfakemesh. cpp":
 
@@ -454,9 +454,9 @@ void SurfaceMesh::UpdateTransform(
 }
 ```
 
-Wenn es an der Zeit ist, Oberflächen Netze zu rendern, führen wir vor dem Rendern der Auflistung einige Vorbereitungsaufgaben durch. Wir richten die Shader-Pipeline für die aktuelle renderingkonfiguration ein und richten die Eingabe Assembler-Stufe ein. Beachten Sie, dass die Hilfsklasse der Holographic-Kamera " **cameraresources. cpp** " bereits den Ansichts-/Projektions Konstanten-Puffer bereits eingerichtet hat.
+Wenn es an der Zeit ist, Oberflächen Netze zu rendern, führen wir vor dem Rendern der Auflistung einige Vorbereitungsaufgaben durch. Wir richten die Shader-Pipeline für die aktuelle renderingkonfiguration ein und richten die Eingabe Assembler-Stufe ein. Die Hilfsklasse der Holographic-Kamera " **cameraresources. cpp** " hat bereits den Ansichts-/Projektions Konstanten-Puffer eingerichtet.
 
-Aus **realtimesurfakemeshrenderer:: Rendering** :
+Aus **realtimesurfakemeshrenderer:: Rendering**:
 
 ```cpp
 auto context = m_deviceResources->GetD3DDeviceContext();
@@ -519,7 +519,7 @@ for (auto& pair : m_meshCollection)
 
 Die einzelnen Netzen sind für das Einrichten des Vertex-und Index Puffers, des STRIDE-und des Modell Transformations Konstanten Puffers verantwortlich. Wie bei dem spincube in der Windows Holographic-App-Vorlage werden wir mithilfe der Instanziierung zu stereoskopischen Puffern.
 
-Von **surfakemesh::D RAW** :
+Von **surfakemesh::D RAW**:
 
 ```cpp
 // The vertices are provided in {vertex, normal} format

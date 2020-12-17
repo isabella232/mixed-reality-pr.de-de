@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: Openxr, Khronos, basicxrapp, DirectX, Native, Native APP, benutzerdefiniertes Modul, Middleware, bewährte Methoden, Leistung, Qualität, Stabilität
-ms.openlocfilehash: dad4622e4186ecc8b090e2abe2e33d3d39ac7525
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: ee600cfc22ab1fb7ee43c5727d8e19cf3a1b1463
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683883"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612984"
 ---
 # <a name="openxr-app-best-practices"></a>Bewährte Methoden für die openxr-App
 
@@ -25,25 +25,25 @@ Weitere Leistungs Empfehlungen für hololens 2 finden Sie weiter unten im Abschn
 
 ### <a name="gamma-correct-rendering"></a>Gamma-korrektes Rendering
 
-Um sicherzustellen, dass die Renderingpipeline Gamma-correct ist, muss darauf geachtet werden. Beim Rendern in eine vorhandenes SwapChain sollte das Renderziel-Ansichts Format dem vorhandenes SwapChain-Format entsprechen (z. b. `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` für das vorhandenes SwapChain-Format und die renderzielansicht).
-Die Ausnahme besteht darin, dass die Renderingpipeline der App eine manuelle sRGB-Konvertierung in Shader-Code durchführt. in diesem Fall sollte die APP ein sRGB-vorhandenes SwapChain-Format anfordern, aber das lineare Format für die renderzielansicht verwenden (z. b. Anforderung `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` als vorhandenes SwapChain-Format, jedoch `DXGI_FORMAT_B8G8R8A8_UNORM` als renderzielansicht)
+Um sicherzustellen, dass die Renderingpipeline Gamma-correct ist, muss darauf geachtet werden. Beim Rendern in eine vorhandenes SwapChain sollte das Renderziel-Ansichts Format dem vorhandenes SwapChain-Format entsprechen. Beispielsweise `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` für das vorhandenes SwapChain-Format und die renderzielsicht.
+Es gibt eine Ausnahme, wenn die Renderingpipeline der App eine manuelle sRGB-Konvertierung in Shader-Code durchführt. Die APP sollte ein sRGB-vorhandenes SwapChain-Format anfordern, aber das lineare Format für die renderzielansicht verwenden. Beispielsweise `DXGI_FORMAT_B8G8R8A8_UNORM_SRGB` als vorhandenes SwapChain-Format anfordern, aber `DXGI_FORMAT_B8G8R8A8_UNORM` als renderzielsicht verwenden, um zu verhindern, dass Inhalt doppelt korrigiert wird.
 
 ### <a name="submit-depth-buffer-for-projection-layers"></a>Tiefen Puffer für Projektions Ebenen übermitteln
 
 Verwenden `XR_KHR_composition_layer_depth` Sie immer die Erweiterung, und übermitteln Sie den tiefen Puffer mit der Projektionsebene, wenn Sie einen Frame an senden `xrEndFrame` .
-Dies verbessert die Stabilität des Hologramms durch die Aktivierung der neuprojektion von Hardware auf hololens 2.
+Durch das Aktivieren der neuprojektion der Hardware Tiefe auf hololens 2 wird die hologrammstabilität verbessert.
 
 ### <a name="choose-a-reasonable-depth-range"></a>Auswählen eines angemessenen tiefen Bereichs
 
 Bevorzugen Sie einen engeren tiefenbereich, um den Bereich der virtuellen Inhalte so zu gestalten, dass Sie die – Hologramm-Stabilität auf hololens
-Beispielsweise verwendet das openxrprogram. cpp-Beispiel 0,1 bis 20 Meter.
+Beispielsweise verwendet das Beispiel openxrprogram. cpp 0,1 Meter bis 20 Meter.
 Verwenden Sie [umgekehrtes-Z](https://developer.nvidia.com/content/depth-precision-visualized) für eine einheitlichere tiefen Auflösung.
-Beachten Sie, dass bei hololens 2 die Verwendung des bevorzugten `DXGI_FORMAT_D16_UNORM` tiefen Formats dazu beiträgt, eine bessere Framerate und-Leistung zu erzielen, obwohl 16-Bit-Tiefen Puffer weniger Tiefe Auflösung als 24-Bit-Tiefen Puffer bieten.
-Daher ist es wichtiger, diese bewährten Methoden zu befolgen, um die Tiefe Auflösung optimal zu nutzen.
+Auf hololens 2 ermöglicht die Verwendung des bevorzugten `DXGI_FORMAT_D16_UNORM` tiefen Formats eine bessere Framerate und Leistung, obwohl 16-Bit-Tiefen Puffer weniger Tiefe Auflösung als 24-Bit-Tiefen Puffer bieten.
+Die Verwendung dieser bewährten Methoden, um die tiefen Auflösung optimal zu nutzen, wird wichtiger.
 
 ### <a name="prepare-for-different-environment-blend-modes"></a>Vorbereiten für verschiedene Umgebungs-Blend-Modi
 
-Wenn Ihre Anwendung auch auf immersiven Headsets ausgeführt wird, die die Welt vollständig blockieren, stellen Sie sicher, dass Sie unterstützte Umgebungs-Blend-Modi mithilfe der `xrEnumerateEnvironmentBlendModes` API auflisten, und bereiten Sie Ihren Renderinginhalt entsprechend vor.
+Wenn Ihre Anwendung auch auf immersiven Headsets ausgeführt werden soll, die die Welt vollständig blockieren, stellen Sie sicher, dass Sie unterstützte Umgebungs-Blend-Modi mithilfe der `xrEnumerateEnvironmentBlendModes` API auflisten und den Renderinginhalt korrekt vorbereiten.
 Beispielsweise sollte die APP für ein System mit z. b. `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` hololens transparent als Klartext verwenden, während die APP für ein System mit eine nicht transparente `XR_ENVIRONMENT_BLEND_MODE_OPAQUE` Farbe oder einen virtuellen Raum im Hintergrund darstellen sollte.
 
 ### <a name="choose-unbounded-reference-space-as-applications-root-space"></a>Nicht begrenzten Verweis Raum als Stamm Bereich der Anwendung auswählen
@@ -55,17 +55,16 @@ Verwenden Sie `XR_REFERENCE_SPACE_TYPE_LOCAL` als Fall Back, wenn die unbeschrä
 ### <a name="associate-hologram-with-spatial-anchor"></a>– Hologramm mit räumlichem Anker verknüpfen
 
 Wenn Sie einen ungebundenen Verweis Bereich verwenden, können Hologramme, die Sie direkt in diesem Verweis Bereich platzieren, abweichen, wenn [der Benutzer zu den entfernten Räumen geht und dann zurück](../../design/coordinate-systems.md#building-a-world-scale-experience)kehrt.
-Für – Hologramm-Benutzer, die sich an einem diskreten Ort der Welt befinden, erstellen Sie mithilfe der Erweiterungs Funktion [einen räumlichen Anker](../../design/spatial-anchors.md#best-practices) `xrCreateSpatialAnchorSpaceMSFT` und positionieren das – Hologramm an seinem Ursprung.
-Dadurch bleibt dieses Hologramm im Lauf der Zeit unabhängig.
+Für – Hologramm-Benutzer, die sich an einem diskreten Ort der Welt befinden, erstellen Sie mithilfe der Erweiterungs Funktion [einen räumlichen Anker](../../design/spatial-anchors.md#best-practices) `xrCreateSpatialAnchorSpaceMSFT` und positionieren das – Hologramm an seinem Ursprung. Dadurch bleibt dieses Hologramm im Lauf der Zeit unabhängig.
 
 ### <a name="support-mixed-reality-capture"></a>Unterstützen der Erfassung gemischter Realität
 
-Obwohl die primäre Anzeige von hololens 2 die Additive Umgebungs Mischung verwendet, wird der Renderinginhalt der APP mit dem Videodaten Strom der Umgebung in Alpha gemischt gemischt, wenn der Benutzer die [gemischte Reality-Erfassung](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)initiiert.
+Obwohl die primäre Anzeige von hololens 2 die Additive Umgebungs Mischung verwendet, wird der Renderinginhalt der APP mit dem Videodaten Strom der Umgebung in Alpha gemischt gemischt, wenn der Benutzer die [gemischte Reality-Erfassung](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)startet.
 Um die beste visuelle Qualität in gemischten Reality-Erfassungs Videos zu erzielen, empfiehlt es sich, das in der der `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` Projektions Schicht festzulegen `layerFlags` .
 
 ## <a name="best-practices-for-performance-on-hololens-2"></a>Bewährte Methoden für die Leistung in hololens 2
 
-Als mobiles Gerät mit Unterstützung für die Hardware neuprojektion haben hololens 2 strengere Anforderungen, um eine optimale Leistung zu erzielen.  Es gibt eine Reihe von Möglichkeiten, Kompositions Daten übermitteln zu können `xrEndFrame` . Dies führt zu einer Nachbearbeitung, die zu einer spürbaren Leistungseinbußen führt.
+Als mobiles Gerät mit Unterstützung für die Hardware neuprojektion haben hololens 2 strengere Anforderungen an eine optimale Leistung.  Es gibt eine Reihe von Möglichkeiten, Kompositions Daten über zu übermitteln, was zu einer Nachbearbeitung mit einer spürbaren Leistungseinbußen führt.
 
 ### <a name="select-a-swapchain-format"></a>Wählen Sie ein vorhandenes SwapChain-Format aus.
 
@@ -81,7 +80,7 @@ Dies ermöglicht hololens das Anpassen des Rendering und die Optimierung der vis
 
 ### <a name="use-a-single-projection-layer"></a>Verwenden einer einzelnen Projektions Schicht
 
-Hololens 2 verfügt über eingeschränkte GPU-Leistung für Anwendungen zum Rendering von Inhalten und einen Hardware-Compositor, der für eine einzelne Projektions Schicht optimiert ist.
+Hololens 2 verfügt über eingeschränkte GPU-Leistung für das Rendern von Inhalten und einen Hardware-Compositor, der für eine einzelne Projektions Schicht optimiert ist.
 Immer eine einzelne Projektions Schicht zu verwenden, kann der Framerate der Anwendung, der – Hologramm-Stabilität und der visuellen Qualität helfen.  
   
 **Leistungs Warnung:** Wenn Sie etwas anderes als eine einzelne Schutzschicht übermitteln, führt dies zur Laufzeit nach der Verarbeitung, was zu einer erheblichen Leistungs Einbuße führt.
@@ -92,7 +91,7 @@ Erstellen Sie einen für die `xrSwapchain` `arraySize=2` Farbe SwapChain und ein
 Rendering Sie den linken Bereich in Slice 0 und das rechte Auge in Slice 1.
 Verwenden Sie einen Shader mit VPRT und instanzierten Draw-aufrufen für das stereorenrendering zum Minimieren der GPU-Auslastung.
 Dadurch wird auch die Optimierung der Laufzeit ermöglicht, um die beste Leistung für hololens 2 zu erzielen.
-Alternativen zur Verwendung eines Textur Arrays, z. b. ein Double-Wide Rendering oder eine separate vorhandenes SwapChain pro Auge, führen zur Laufzeit nach der Verarbeitung, was zu einem erheblichen Leistungsabfall führt.
+Alternativen zur Verwendung eines Textur Arrays, wie z. b. ein Double-Wide Rendering oder eine separate vorhandenes SwapChain pro Auge, führen zur Laufzeit nach der Verarbeitung, was zu einer erheblichen Leistungs Einbuße führt.
 
 ### <a name="avoid-quad-layers"></a>Vermeiden von vier Ebenen
 

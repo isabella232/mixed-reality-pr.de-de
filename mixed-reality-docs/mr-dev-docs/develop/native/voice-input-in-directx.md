@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Exemplarische Vorgehensweise, Sprachbefehl, Ausdruck, Erkennung, Sprache, DirectX, Plattform, Cortana, Windows Mixed Reality
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683811"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613104"
 ---
 # <a name="voice-input-in-directx"></a>Spracheingabe in DirectX
 
@@ -29,7 +29,7 @@ In diesem Abschnitt wird beschrieben, wie die fortlaufende Spracherkennung verwe
 
 Erstellen Sie zunächst eine neue *Windows:: Media:: Redner Recognition:: sprecherkenzer* -Instanz.
 
-Aus *holographicvoiceinputsamplemain:: kreatespeecheinschräninzforcurrentstate* :
+Aus *holographicvoiceinputsamplemain:: kreatespeecheinschräninzforcurrentstate*:
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Der *onresultgenerated* -Ereignishandler empfängt Ereignisdaten in einer Sprech Anwendung [continuouserkentionresultgeneratedeventargs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Wenn die Zuverlässigkeit den von Ihnen definierten Schwellenwert überschreitet, sollte Ihre APP beachten, dass das Ereignis aufgetreten ist. Speichern Sie die Ereignisdaten, damit Sie Sie in einer nachfolgenden Update Schleife verwenden können.
+Der *onresultgenerated* -Ereignishandler empfängt Ereignisdaten in einer Sprech Anwendung [continuouserkentionresultgeneratedeventargs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Wenn die Zuverlässigkeit den von Ihnen definierten Schwellenwert überschreitet, sollte Ihre APP beachten, dass das Ereignis aufgetreten ist. Speichern Sie die Ereignisdaten, damit Sie Sie in einer späteren Update Schleife verwenden können.
 
-Aus *holographicvoiceingeputsamplemain. cpp* :
+Aus *holographicvoiceingeputsamplemain. cpp*:
 
 ```
 // Change the cube color, if we get a valid result.
@@ -112,7 +112,7 @@ Aus *holographicvoiceingeputsamplemain. cpp* :
 
 In unserem Beispielcode ändern wir die Farbe des spinenden – Hologramm-Cubes entsprechend dem Befehl des Benutzers.
 
-Aus *holographicvoiceingeputsamplemain:: Update* :
+Aus *holographicvoiceingeputsamplemain:: Update*:
 
 ```
 // Check for new speech input since the last frame.
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 Die Holographic-sprach Beispiele verwenden die Sprachsynthese, um dem Benutzer akustische Anweisungen bereitzustellen. In diesem Abschnitt wird gezeigt, wie Sie ein sprach Beispiel mit synthetischer Sprache erstellen und anschließend über die HRTF-audioapis wiedergeben.
 
-Sie sollten ihre eigenen Spracheingabe Aufforderungen angeben, wenn Sie die Eingabe von Eingaben anfordern. Mithilfe von Aufforderungen können Sie auch angeben, wann Sprachbefehle für ein kontinuierliches Erkennungs Szenario gesprochen werden können. Im folgenden Beispiel wird veranschaulicht, wie Sie hierfür einen Sprachsynthesizer verwenden können. Sie können auch einen vorab aufgezeichneten Sprach Clip, eine visuelle Benutzeroberfläche oder einen anderen Indikator dafür verwenden, was zu sagen ist, z. b. in Szenarien, in denen die Eingabeaufforderung nicht dynamisch ist.
+Es wird empfohlen, ihre eigenen Spracheingabe Aufforderungen einzugeben, wenn Sie eine Eingabeaufforderung anfordern. Mithilfe von Aufforderungen können Sie auch angeben, wann Sprachbefehle für ein kontinuierliches Erkennungs Szenario gesprochen werden können. Im folgenden Beispiel wird veranschaulicht, wie Sie hierfür einen Sprachsynthesizer verwenden können. Sie können auch einen vorab aufgezeichneten Voice-Clip, eine visuelle Benutzeroberfläche oder einen anderen Indikator dafür verwenden, was zu sagen ist, beispielsweise in Szenarien, in denen die Eingabeaufforderung nicht dynamisch ist.
 
 Erstellen Sie zuerst das Sprachsynthesizer-Objekt.
 

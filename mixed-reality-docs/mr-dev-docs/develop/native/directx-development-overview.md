@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, Holographic Rendering, Native, Native APP, WinRT, WinRT-APP, Plattform-APIs, benutzerdefiniertes Modul, Middleware, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679649"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613074"
 ---
 # <a name="native-development-overview"></a>Native Entwicklung: Übersicht
 
 ![Natives Banner Logo](../images/native_logo_banner.png)
 
-3D-Engines wie [Unity](../unity/unity-development-overview.md) oder [Unreal](../unreal/unreal-development-overview.md) sind nicht die einzigen Entwicklungspfade mit gemischter Realität, die Ihnen offen sind. Sie können auch gemischte Reality-Apps erstellen, indem Sie direkt in die Windows Mixed Reality-APIs mit DirectX 11 oder DirectX 12 codieren. Wenn Sie die Plattform direkt nutzen, werden Sie im Grunde Ihre eigene Middleware oder Ihr eigenes Framework entwickeln. 
+3D-Engines wie [Unity](../unity/unity-development-overview.md) oder [Unreal](../unreal/unreal-development-overview.md) sind nicht die einzigen Entwicklungspfade mit gemischter Realität, die Ihnen offen sind. Sie können auch gemischte Reality-apps mit den Windows Mixed Reality-APIs mit DirectX 11 oder DirectX 12 erstellen. Wenn Sie zur Platt Form Quelle navigieren, werden Sie im Grunde Ihre eigene Middleware oder Ihr eigenes Framework entwickeln. 
 
 > [!IMPORTANT]
 > Wenn Sie über ein vorhandenes WinRT-Projekt verfügen, das Sie verwalten möchten, besuchen Sie die [WinRT](creating-a-holographic-directx-project.md)-Haupt Dokumentation. 
@@ -29,10 +29,10 @@ Nutzen Sie die folgenden Prüfpunkte, um Ihre Unity-Spiele und Anwendungen in ei
 ### <a name="1-getting-started"></a>1. Erste Schritte
 
 Windows Mixed Reality unterstützt [zwei Arten von apps](../../design/app-views.md):
-* **Anwendungen mit gemischter Realität** (UWP oder Win32), die die [holographicspace-API](getting-a-holographicspace.md) oder die [openxr-API](openxr.md) verwenden, um eine [immersive Ansicht](../../design/app-views.md) für den Benutzer zu erzeugen, der die Headset-Anzeige füllt
+* UWP-oder Win32- **Anwendungen mit gemischter Realität** , die die [holographicspace-API](getting-a-holographicspace.md) oder [openxr-API](openxr.md) verwenden, um eine [immersive Ansicht](../../design/app-views.md) zu erzeugen, die die Headset-Anzeige
 * **2D-apps** (UWP), die DirectX, XAML oder ein anderes Framework zum Rendering von [2D-Ansichten](../../design/app-views.md#2d-views) auf Slate in der Windows Mixed Reality-Startseite verwenden
 
-Die Unterschiede zwischen der DirectX [-Entwicklung für 2D-Ansichten und immersive Ansichten](../../design/app-views.md) betreffen in erster Linie das holografische Rendering und räumliche Eingaben. Die [iframeworkview](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) ihrer UWP-Anwendung oder das HWND ihrer Win32-Anwendung ist erforderlich und bleibt größtenteils unverändert. Das gleiche gilt für die WinRT-APIs, die für Ihre app verfügbar sind. Sie müssen jedoch eine andere Teilmenge dieser APIs verwenden, um die Vorteile der Holographic-Features zu nutzen. Beispielsweise werden die "vorhandenes SwapChain" und "Frame" vom System für holografische Anwendungen verwaltet, um eine von Pose vorhergesagte Frame Schleife zu aktivieren.
+Die Unterschiede zwischen der DirectX [-Entwicklung für 2D-Ansichten und immersive Ansichten](../../design/app-views.md) betreffen in erster Linie das holografische Rendering und räumliche Eingaben. Die [iframeworkview](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) ihrer UWP-Anwendung oder das HWND ihrer Win32-Anwendung ist erforderlich und bleibt größtenteils unverändert. Das gleiche gilt für die WinRT-APIs, die für Ihre app verfügbar sind. Sie müssen jedoch eine andere Teilmenge dieser APIs verwenden, um die Vorteile der Holographic-Features zu nutzen. Das System für Holographic-Anwendungen verwaltet z. b. die vorhandenes SwapChain und den Frame, die eine Pose-vorhergesagte Frame Schleife ermöglichen.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -54,11 +54,11 @@ Windows Mixed Reality-Anwendungen verwenden die folgenden APIs, um Umgebungen mi
 
 ### <a name="3-deploying-and-testing"></a>3. bereitstellen und testen
 
-Sie können mit OpenXR auf einem immersiven HoloLens 2- oder Windows Mixed Reality-Headset auf dem Desktop entwickeln.  Wenn Sie keinen Zugriff auf ein Headset haben, können Sie stattdessen den [hololens 2-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) oder den [Windows Mixed Reality-Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) verwenden.
+Sie können auf einem Desktop mit openxr auf einem hololens 2-oder Windows Mixed Reality-immersiven Headset entwickeln.  Wenn Sie keinen Zugriff auf ein Headset haben, können Sie stattdessen den [hololens 2-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) oder den [Windows Mixed Reality-Simulator](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) verwenden.
 
 ## <a name="whats-next"></a>Wie geht es weiter?
 
-Die Arbeit eines Entwicklers ist nie getan, insbesondere beim Lernen eines neuen Tools oder SDKs. Die folgenden Abschnitte führen Sie in Gebiete, die jenseits des Materials auf Einstiegsniveau liegen, das Sie bereits durchgearbeitet haben, ergänzt um nützliche Ressourcen, wenn es einmal hakt. Beachten Sie, dass diese Themen und Ressourcen keine bestimmte Reihenfolge aufweisen, tauchen Sie also ruhig ein!
+Die Arbeit eines Entwicklers ist nie getan, insbesondere nicht beim Lernen eines neuen Tools oder SDKs. In den folgenden Abschnitten gelangen Sie zu Bereichen, die über das von Ihnen bereits abgeschlossene Material für Einsteiger hinausgehen. Diese Themen und Ressourcen befinden sich nicht in sequenzieller Reihenfolge
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
@@ -68,6 +68,6 @@ Wenn Sie Ihr openxr-Spiel skalieren möchten, sehen Sie sich die folgenden Links
 * [OpenXR – Leistung](openxr-performance.md)
 * [OpenXR – Problembehandlung](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [App-Modell](../../design/app-model.md)
 * [App-Ansichten](../../design/app-views.md)

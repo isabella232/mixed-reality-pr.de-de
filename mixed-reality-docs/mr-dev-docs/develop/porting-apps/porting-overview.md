@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: portieren, Unity, Middleware, Engine, UWP, Win32
-ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925823"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612834"
 ---
 # <a name="porting-overview"></a>Übersicht zum Portieren
 
-Wenn Sie Ihre vorhandenen Projekte für gemischte Realität portieren oder aktualisieren, können verschiedene Szenarien anfallen, je nachdem, ob Ihre APP mit Unity oder Unreal Engine, hololens (1st Gen) oder hololens 2 oder steamvr erstellt wurde. Diese Übersichtsseite enthält unsere aktuellen Empfehlungen für jede Plattform und jedes Gerät. Stellen Sie sicher, dass Sie den Vorgang erneut durchlaufen, da sich diese Prozesse immer ändern.
+Wenn Sie Ihre vorhandenen Projekte für gemischte Realität portieren oder aktualisieren, hängt ihre Portierung davon ab, ob Ihre APP mit Unity oder Unreal Engine erstellt wurde, und zielt auf hololens (1st Gen) oder hololens 2 oder steamvr ab. Diese Übersichtsseite enthält unsere aktuellen Empfehlungen für jede Plattform und jedes Gerät. Stellen Sie sicher, dass Sie den Vorgang erneut durchlaufen, da sich diese Prozesse immer ändern.
 
 Richten Sie zuerst das Projektziel basierend auf unseren [Unity](#unity) -und [Unreal](#unreal) -Empfehlungen ein, und folgen Sie dann einem oder mehreren unserer Portierungs Szenarien:
 
@@ -52,7 +52,7 @@ Wenn Sie über eine vorhandene Unity-Anwendung hololens (1st Gen) verfügen, die
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality-Headsets
 
-Wenn Sie Inhalte für andere Geräte, z. b. den Oculus-oder HP-Reverb, erstellt haben, müssen Sie für herstellerspezifische VR-SDBs und möglicherweise Eingabe zuordnungsapis verwenden. Informationen zu Unity-und Unreal-Portierungs Szenarien finden Sie in unserem [Leitfaden zum Portieren von immersiven apps](porting-guides.md).
+Wenn Sie Inhalte für andere Geräte (z. b. den Oculus-oder HP-Reverb) erstellt haben, müssen Sie herstellerspezifische VR-SDBs und möglicherweise APIs für die Eingabe Zuordnung neu zuweisen. Informationen zu Unity-und Unreal-Portierungs Szenarien finden Sie in unserem [Leitfaden zum Portieren von immersiven apps](porting-guides.md).
 
 ### <a name="steamvr-applications"></a>Steamvr-Anwendungen
 
@@ -60,5 +60,5 @@ Informationen zu den von Ihnen für Windows Mixed Reality-Headsets zu aktualisie
 
 ### <a name="2d-universal-windows-applications"></a>2D universelle Windows-Anwendungen
 
-Wenn Sie über eine vorhandene 2D-UWP-App verfügen, die Sie entweder in ein Windows Mixed Reality-immersives Headset oder hololens portieren möchten, befolgen Sie die Anweisungen im Artikel [Portieren von 2D-UWP-Apps für Windows Mixed Reality](building-2d-apps.md) .
+Wenn Sie über eine vorhandene 2D-UWP-App verfügen, die Sie entweder in ein Windows Mixed Reality-immersives Headset oder hololens portieren möchten, befolgen Sie die Anweisungen unter [Portieren von 2D-UWP-Apps für Windows Mixed Reality](building-2d-apps.md) .
 
