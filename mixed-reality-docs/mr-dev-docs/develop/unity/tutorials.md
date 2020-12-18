@@ -8,14 +8,14 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, Academy, Tutorial, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity, Unreal, HoloLens, Azure Spatial Anchors, Azure-Sprachdienste
-ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677279"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010461"
 ---
-# <a name="tutorials"></a>Lernprogramme 
+# <a name="tutorials"></a>Lernprogramme
 
 ![HoloLens 2-Benutzer](images/08_Tutorials.png)
 
@@ -23,7 +23,7 @@ Aktuell basieren alle unsere Tutorials und Beispiel-Apps auf Unity oder Unreal. 
 
 ## <a name="hololens-2"></a>HoloLens 2 
 
-Die HoloLens 2-Tutorials sind dafür ausgelegt, Entwicklern sowohl Techniken als auch bewährte Methoden für das Entwickeln von Mixed Reality-Anwendungen zu vermitteln. Die Unity-Tutorials basieren auf dem [Mixed Reality-Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity). Das Unreal-Tutorial basiert auf den [UX-Tools für die Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
+Die HoloLens 2-Tutorials sind dafür ausgelegt, sowohl Techniken als auch bewährte Methoden für das Entwickeln von Mixed Reality-Anwendungen zu vermitteln. Die Unity-Tutorials basieren auf dem [Mixed Reality-Toolkit 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity). Das Unreal-Tutorial basiert auf den [UX-Tools für die Unreal Engine 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal).
 
 * Tutorials zu den ersten Schritten
     * Unity: [1 von 9: Einführung](tutorials/mr-learning-base-01.md)
@@ -39,7 +39,7 @@ Die Mixed Reality Academy ist eine Reihe von Schritt-für-Schritt-Onlinetutorial
 * Die Tutorials behandeln Themen auf Einstiegs- und mittlerem Niveau mit diesen Schwerpunkten: Auf Einstiegsniveau (Level 100) werden Projektgrundlagen behandelt, auf mittlerem Niveau(Level 200) geht es um MR-Bausteine, und die fortgeschrittenen Tutorials (Level 300) behandeln die Clouddienstintegration.
 * Die meisten Kurse befassen sich mit Konzepten, die sowohl auf HoloLens als auf immersive (VR) Headsets anwendbar sind.
 * Jedes Lernprogramm ist in Kapitel gegliedert, und die meisten enthalten Videodemonstrationen der Hauptkonzepte.
-* Ein Windows 10 PC, auf dem die [richtigen Tools installiert](../install-the-tools.md) sind, ist eine gemeinsame Voraussetzung für die Durchführung der einzelnen Tutorials.
+* Ein Windows 10-PC, auf dem die [richtigen Tools installiert](../install-the-tools.md) sind, ist eine gemeinsame Voraussetzung für die Durchführung der einzelnen Tutorials.
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen. Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden. Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](tutorials/mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -107,7 +107,7 @@ Die Mixed Reality Academy ist eine Reihe von Schritt-für-Schritt-Onlinetutorial
 
 ## <a name="mixed-reality-and-azure-services-tutorials"></a>Tutorials für Mixed Reality und Azure-Dienste
 
-Diese eigenständigen Tutorials eignen sich hervorragend, um die Implementierung verschiedener Azure-Dienste in Ihren Unity-Projekten zu erlernen. Diese Tutorials basieren sämtlich entweder auf HoloLens (1. Gen.) oder unseren immersiven Headsets, die Lektionen zur Verwendung der Dienste sollten aber auf nahezu jedes Gerät übertragbar sein.
+Diese eigenständigen Tutorials eignen sich hervorragend, um die Implementierung verschiedener Azure-Dienste in Ihren Unity-Projekten zu erlernen. Diese Tutorials basieren sämtlich entweder auf HoloLens (Erste Generation) oder unseren immersiven Headsets, die Lektionen zur Verwendung der Dienste sollten aber auf nahezu jedes Gerät übertragbar sein.
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
     <li>
@@ -198,7 +198,7 @@ Diese eigenständigen Tutorials eignen sich hervorragend, um die Implementierung
                                           </div>
                                           <div class="cardText">
                                               <h3>MR und Azure 304: Gesichtserkennung</h3>
-                                              <p>Erfahren Sie, wie Sie die Azure-Gesichtserkennungs-API verwenden, um in ihrer Mixed Reality-App Gesichtserkennung durchzuführen.</p>
+                                              <p>Erfahren Sie, wie Sie die Azure-Gesichtserkennungs-API für Gesichtserkennung in ihrer Mixed Reality-App verwenden.</p>
                                           </div>
                                       </div>
                                   </div>
