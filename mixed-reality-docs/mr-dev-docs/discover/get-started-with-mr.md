@@ -3,16 +3,16 @@ title: Erste Schritte mit Mixed Reality
 description: 'Einführung für Personen ohne Mixed Reality-Erfahrung: Was ist es, und welche Funktionen bietet es?'
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702268"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926059"
 ---
 # <a name="get-started-with-mixed-reality"></a>Erste Schritte mit Mixed Reality
 
@@ -60,6 +60,7 @@ Bevor Sie sich intensiv mit dem Entwurf und der Entwicklung von Anwendungen besc
 | --- | --- |
 | [Mixed Reality ist ein Spektrum](../discover/mixed-reality.md) | Mixed Reality kombiniert das Physische mit dem Digitalen, der nächsten Entwicklungsstufe bei der Interaktion zwischen Mensch, Computer und Umgebung. |
 | [Was ist ein Hologramm?](../discover/hologram.md) | Mit HoloLens können Sie Hologramme erstellen – Objekte, die aus Licht und Klang bestehen und in der Sie umgebenden Welt erscheinen, als ob es sich um reale Objekte handelte. Hologramme reagieren auf Ihre Blicke, Gesten und Sprachbefehle und können mit Oberflächen der Sie umgebenden realen Welt interagieren. |
+| [Mixed Reality-Lernübersicht](mr-learning-overview.md#general-modules) | Testen Sie unser zusammengestelltes Modul für Mixed Reality mithilfe von Microsoft Learn |
 | [Erweitern Ihres Entwurfsprozesses](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Erweitern Sie Ihre Herangehensweise beim Design durch räumliches Denken, Bodystorming und Agieren bei der Erstellung Ihrer immersiven Erfahrungen  |
 
 <br>

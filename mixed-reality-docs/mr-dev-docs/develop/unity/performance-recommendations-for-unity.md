@@ -7,16 +7,16 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
-ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
+ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761772"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010481"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 
-Dieser Artikel baut auf der Diskussion auf, die in [Leistungsempfehlungen für Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) beschrieben wird, legt den Schwerpunkt aber auf die für die Umgebung der Unity-Engine spezifischen Erkenntnisse.
+Dieser Artikel baut auf den [Leistungsempfehlungen für Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) auf, konzentriert sich aber auf Unity-spezifische Verbesserungen.
 
 ## <a name="use-recommended-unity-project-settings"></a>Verwenden der empfohlenen Unity-Projekteinstellungen
 
@@ -24,7 +24,7 @@ Der wichtigste erste Schritt beim Optimieren der Leistung von Mixed Reality-Apps
 
 ## <a name="how-to-profile-with-unity"></a>So erstellen Sie ein Profil mit Unity
 
-Unity bietet den integrierten **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** , der eine hervorragende Ressource zum Sammeln wertvoller Einblicke zur Leistung für Ihre bestimmte App darstellt. Der Profiler kann zwar im Editor ausgeführt werden, diese Metriken stellen aber nicht die reale Laufzeitumgebung dar, daher sollten Ergebnisse aus diesen Profilerläufen umsichtig angewendet werden. Um besonders genaue und verwertbare Ergebnisse zu erhalten, empfiehlt es sich, das Profil Ihrer Anwendung remote während der Ausführung auf einem Gerät zu bestimmen. Darüber hinaus stellt der [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) von Unity ebenfalls ein sehr leistungsstarkes Tool dar, mit dem sich Erkenntnisse gewinnen lassen.
+Unity bietet den integrierten **[Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)** , der eine hervorragende Ressource zum Sammeln wertvoller Einblicke zur Leistung für Ihre bestimmte App darstellt. Der Profiler kann zwar im Editor ausgeführt werden, diese Metriken stellen aber nicht die reale Laufzeitumgebung dar, daher sollten Ergebnisse aus diesen Profilerläufen mit Umsicht angewendet werden. Um besonders genaue und verwertbare Ergebnisse zu erhalten, empfiehlt es sich, das Profil Ihrer Anwendung während der Ausführung auf einem Gerät remote zu bestimmen. Darüber hinaus stellt der [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html) von Unity ebenfalls ein leistungsstarkes Tool dar, mit dem sich Erkenntnisse gewinnen lassen.
 
 Unity bietet eine hervorragende Dokumentation zu diesen Punkten:
 1) Herstellen einer [Remoteverbindung zwischen dem Unity-Profiler und UWP-Anwendungen](https://docs.unity3d.com/Manual/windowsstore-profiler.html)
@@ -41,7 +41,7 @@ Die Inhalte unten befassen sich mit tiefgreifenden Praktiken zur Leistungsverbes
 
 #### <a name="cache-references"></a>Zwischenspeichern von Verweisen
 
-Es ist eine bewährte Methode, Verweise auf alle relevanten Komponenten und Spielobjekte bei der Initialisierung zwischenzuspeichern. Die hat den Grund, dass wiederholte Funktionsaufrufe wie etwa *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* hinsichtlich des Arbeitsspeicherbedarfs erheblich teurer als das Speichern eines Zeigers sind. Dies gilt auch für das sehr gerne verwendete [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). *Camera.main* basiert auf der zugrundeliegenden Funktion *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* , die aufwändig Ihre Szenendarstellung nach einem Kameraobjekt mit dem Tag *„MainCamera“* absucht.
+Wir empfehlen, Verweise auf alle relevanten Komponenten und GameObjects bei der Initialisierung zwischenzuspeichern, da wiederholte Funktionsaufrufe wie *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* und [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html) relativ zu den Speicherkosten für die Speicherung eines Zeigers teurer sind. . *Camera.main* basiert auf der zugrundeliegenden Funktion *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* , die aufwändig Ihre Szenendarstellung nach einem Kameraobjekt mit dem Tag *„MainCamera“* absucht.
 
 ```CS
 using UnityEngine;
@@ -86,7 +86,7 @@ public class ExampleClass : MonoBehaviour
 
 1) **Vermeiden Sie die Verwendung von [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
-    Zwar kann LINQ sehr sauber, leicht zu lesen und zu schreiben sein, es erfordert aber allgemein sehr viel mehr Rechenleistung und insbesondere mehr Arbeitsspeicherressourcen als das manuelle Ausschreiben der Algorithmen.
+    Zwar kann LINQ sauber und einfach zu lesen und zu schreiben sein, es erfordert im Allgemeinen aber mehr Berechnungen und Speicher, als sie für einen manuell geschriebenen Algorithmus erforderlich wären.
 
     ```CS
     // Example Code
@@ -102,7 +102,7 @@ public class ExampleClass : MonoBehaviour
 
 2) **Allgemeine Unity-APIs**
 
-    Bestimmte Unity-APIs können zwar nützlich sein, sind in der Ausführung aber sehr kostspielig. Die meisten davon beinhalten das Durchsuchen Ihres gesamten Szenendarstellung nach einer Liste passender Spielobjekte. Diese Vorgänge können im Allgemeinen durch das Zwischenspeichern von Verweisen oder das Implementieren einer Manager-Komponente für die betreffenden GameObjects vermieden werden, um die Verweise zur Laufzeit zu verfolgen.
+    Bestimmte Unity-APIs können zwar nützlich sein, sind in der Ausführung aber kostspielig. Die meisten davon beinhalten das Durchsuchen Ihres gesamten Szenendarstellung nach einer Liste passender Spielobjekte. Diese Vorgänge können im Allgemeinen durch das Zwischenspeichern von Verweisen oder das Implementieren einer Manager-Komponente für die GameObjects vermieden werden, um die Verweise zur Laufzeit zu verfolgen.
 
     ```csharp
         GameObject.SendMessage()
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **Vermeiden von Boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) ist ein Grundkonzept der C#- Sprache und ihrer Runtime. Dabei handelt es sich um den Prozess, Variablen eines Werttyps, wie etwa `char`, `int`, `bool` usw., mit Variablen vom Verweistyp zu umschließen. Wenn eine Variable eines Werttyps „geboxt“ ist, ist sie von einem `System.Object` umschlossen, das auf dem verwalteten Heap gespeichert wird. Auf diese Weise wird Speicher zugewiesen, der gegebenenfalls beim Verwerfen vom Garbage Collector verarbeitet werden muss. Diese Zuweisungen und ihre Aufhebung bringen Leistungskosten mit sich und sind in vielen Szenarien unnötig oder können leicht durch preiswertere Alternativen ersetzt werden.
+    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) ist ein Grundkonzept der C#- Sprache und ihrer Runtime. Dabei handelt es sich um den Prozess, Variablen eines Werttyps, wie etwa `char`, `int`, `bool` usw., mit Variablen vom Verweistyp zu umschließen. Wenn eine Variable eines Werttyps „geboxt“ ist, ist sie von einem `System.Object` umschlossen, das auf dem verwalteten Heap gespeichert wird. Speicher wird zugewiesen und muss gegebenenfalls beim Verwerfen vom Garbage Collector verarbeitet werden. Diese Zuweisungen und ihre Aufhebung bringen Leistungskosten mit sich und sind in vielen Szenarien unnötig oder können leicht durch preiswertere Alternativen ersetzt werden.
 
     Um das Boxing zu vermeiden, stellen Sie sicher, dass die Variablen, Felder und Eigenschaften, in denen Sie numerische Typen und Strukturen (einschließlich `Nullable<T>`) speichern, stark als spezifische Typen typisiert sind, wie z. B. `int`, `float?` oder `MyStruct`, anstatt ein Objekt zu verwenden.  Wenn Sie diese Objekte in eine Liste einfügen, stellen Sie sicher, dass Sie eine stark typisierte Liste verwenden, z. B. `List<int>` anstatt `List<object>` oder `ArrayList`.
 
@@ -134,11 +134,11 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="repeating-code-paths"></a>Wiederholte Codepfade
 
-Alle wiederholten Unity-Rückruf-Funktionen (d. h. Update), die mehrmals pro Sekunde und/oder Frame ausgeführt werden, sollten mit großer Sorgfalt geschrieben werden. Alle aufwändigen Vorgänge an dieser Stelle haben einen sehr großen und konsistenten Einfluss auf die Leistung.
+Alle wiederholten Unity-Rückruf-Funktionen (d. h. Update), die mehrmals pro Sekunde und/oder Frame ausgeführt werden, sollten mit Sorgfalt geschrieben werden. Alle aufwändigen Vorgänge an dieser Stelle haben einen sehr großen und konsistenten Einfluss auf die Leistung.
 
 1) **Leere Rückruffunktion**
 
-    Zwar mag der Code unten harmlos aussehen, und Sie neigen wohl dazu, ihn in Ihrer Anwendung zu belassen, vor allem, da sich jedes Unity-Skript automatisch mit diesem Codeblock initialisiert, diese leeren Rückrufe können aber tatsächlich sehr teuer werden. Unity überquert bei der Arbeit ständig in beiden Richtungen eine Grenze zwischen verwaltetem und nicht verwaltetem Code, nämlich zwischen dem Code der UnityEngine und Ihrem Anwendungscode. Der Kontextwechsel beim Überqueren dieser Grenze ist ziemlich teuer, auch dann, wenn es gar nichts auszuführen gibt. Dies wird besonders dann problematisch, wenn Ihre App über 100e von Spielobjekten verfügt, die ihrerseits wiederholte leere Unity-Rückrufe verwenden.
+    Zwar mag der Code unten harmlos aussehen, und Sie neigen wohl dazu, ihn in Ihrer Anwendung zu belassen, vor allem, da sich jedes Unity-Skript automatisch mit einer Update-Methode initialisiert, diese leeren Rückrufe können aber teuer werden. Unity überquert bei der Arbeit ständig in beiden Richtungen eine Grenze zwischen verwaltetem und nicht verwaltetem Code, nämlich zwischen dem Code der UnityEngine und Ihrem Anwendungscode. Der Kontextwechsel beim Überqueren dieser Grenze ist ziemlich teuer, auch dann, wenn es gar nichts auszuführen gibt. Dies wird besonders dann problematisch, wenn Ihre App über 100e von Spielobjekten verfügt, die ihrerseits wiederholte leere Unity-Rückrufe verwenden.
 
     ```CS
     void Update()
@@ -151,9 +151,9 @@ Alle wiederholten Unity-Rückruf-Funktionen (d. h. Update), die mehrmals pro Se
 
 2) **Vorgänge, die vorzugsweise einmal pro Frame ausgeführt werden sollten**
 
-    Die folgenden Unity-APIs stellen gängige Vorgänge für viele Holografie-Apps dar. Es ist zwar nicht immer möglich, aber sehr oft können die Ergebnisse dieser Funktionen einmal berechnet und dann für einen bestimmten Frame im gesamten Bereich der Anwendung wiederverwendet werden.
+    Die folgenden Unity-APIs stellen gängige Vorgänge für viele Holografie-Apps dar. Es ist zwar nicht immer möglich, aber oft können die Ergebnisse dieser Funktionen einmal berechnet und dann für einen bestimmten Frame im gesamten Bereich der Anwendung wiederverwendet werden.
 
-    a) Im Allgemeinen ist es eine gute Praxis, eine dedizierte Singleton-Klasse oder einen Dienst einzusetzen, die bzw. der Ihren Raycast vom Anvisieren der Szene verarbeitet und dieses Ergebnis dann in allen anderen Szenekomponenten wiederzuverwenden, statt wiederholte und im Wesentlichen identische Raycastvorgänge für jede Komponente auszulösen. Natürlich sind in manchen Anwendungen möglicherweise Raycasts aus einem anderen Ursprung oder gegen andere [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html) (Ebenenmasken) erforderlich.
+    a) Es ist eine gute Praxis, eine dedizierte Singleton-Klasse oder einen Dienst einzusetzen, die bzw. der Ihren Raycast vom Anvisieren der Szene verarbeitet, und dieses Ergebnis dann in allen anderen Szenekomponenten wiederzuverwenden, statt wiederholte und identische Raycastvorgänge für jede Komponente auszulösen. In manchen Anwendungen sind möglicherweise Raycasts aus einem anderen Ursprung oder gegen andere [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html) (Ebenenmasken) erforderlich.
     
     ```csharp
         UnityEngine.Physics.Raycast()
@@ -174,21 +174,21 @@ Alle wiederholten Unity-Rückruf-Funktionen (d. h. Update), die mehrmals pro Se
 
 3) **Vermeiden von Schnittstellen und virtuellen Konstrukten**
 
-    Das Aufrufen von Funktionsaufrufen über Schnittstellen im Gegensatz zu direkten Objekten oder dem Aufrufen von virtuellen Funktionen ist oftmals sehr viel kostspieliger als die Verwendung direkter Konstrukte oder direkter Funktionsaufrufe. Wenn die virtuelle Funktion oder Schnittstelle nicht benötigt wird, sollte sie entfernt werden. Der Leistungspreis für diese Ansätze spricht aber in der Regel für den Kompromiss, wenn ihre Verwendung die Zusammenarbeit bei der Entwicklung vereinfacht, die Lesebarkeit und die Wartbarkeit des Codes verbessert.
+    Das Aufrufen von Funktionsaufrufen über Schnittstellen im Gegensatz zu direkten Objekten oder dem Aufrufen von virtuellen Funktionen ist oftmals sehr viel kostspieliger als die Verwendung direkter Konstrukte oder direkter Funktionsaufrufe. Wenn die virtuelle Funktion oder Schnittstelle nicht benötigt wird, sollte sie entfernt werden. Der Leistungspreis für diese Ansätze spricht aber für den Kompromiss, wenn ihre Verwendung die Zusammenarbeit bei der Entwicklung vereinfacht, die Lesebarkeit und die Wartbarkeit des Codes verbessert.
 
     Im Allgemeinen wird empfohlen, Felder und Funktionen nicht als virtuell zu markieren, es sei denn, es gibt eine klare Annahme, dass das betreffende Element überschrieben werden muss. Insbesondere im Umfeld stark frequentierter Codepfade, die mehrmals pro Frame oder auch nur einmal pro Frame aufgerufen werden, wie etwa eine `UpdateUI()`-Methode, sollten Sie vorsichtig sein.
 
 4) **Vermeiden der Übergabe von Strukturen über den Wert**
 
-    Im Gegensatz zu Klassen sind Strukturen Werttypen, und bei der direkten Übergabe an eine Funktion werden ihre Inhalte in eine neu erstellte Instanz kopiert. Diese Kopie bewirkt höhere CPU-Kosten sowie zusätzlichen Speicherbedarf auf dem Stack. Für kleine Strukturen ist der Effekt normalerweise minimal und daher akzeptabel. Bei Funktionen, die in jedem Frame wiederholt aufgerufen werden, sowie bei Funktionen, die große Strukturen akzeptieren, ändern Sie nach Möglichkeit die Funktionsdefinition, um durch Verweis zu übergeben. [Weitere Informationen finden Sie hier](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    Im Gegensatz zu Klassen sind Strukturen Werttypen, und bei der direkten Übergabe an eine Funktion werden ihre Inhalte in eine neu erstellte Instanz kopiert. Diese Kopie bewirkt höhere CPU-Kosten sowie zusätzlichen Speicherbedarf auf dem Stack. Für kleine Strukturen ist der Effekt minimal und daher akzeptabel. Bei Funktionen, die in jedem Frame wiederholt aufgerufen werden, sowie bei Funktionen, die große Strukturen akzeptieren, ändern Sie nach Möglichkeit die Funktionsdefinition, um durch Verweis zu übergeben. [Weitere Informationen finden Sie hier](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>Verschiedenes
 
 1) **Physische Effekte**
 
-    a) Im Allgemeinen ist die einfachste Möglichkeit, die physischen Effekte zu verbessern, die Menge an Zeit oder die Anzahl der Iterationen pro Sekunde einzuschränken, die zu ihrer Berechnung aufgewendet wird. Dadurch wird natürlich die Genauigkeit der Simulation reduziert. Mehr dazu finden Sie unter [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html) in Unity
+    a) Im Allgemeinen ist die einfachste Möglichkeit, die physischen Effekte zu verbessern, die Menge an Zeit oder die Anzahl der Iterationen pro Sekunde einzuschränken, die zu ihrer Berechnung aufgewendet wird. Dadurch wird die Genauigkeit der Simulation reduziert. Mehr dazu finden Sie unter [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html) in Unity
 
-    b) Die verschiedenen Collidertypen in Unity weisen stark unterschiedliche Leistungsmerkmale auf. Der Auftrag unten listet Collider nach ihrer Leistungsfähigkeit auf, von den leistungsfähigsten links bis zu den am wenigsten leistungsfähigen Collidern rechts. Es ist sehr wichtig, Gittermodell-Collider zu meiden, die erheblich teurer sind als die primitiven Collider.
+    b) Die verschiedenen Collidertypen in Unity weisen stark unterschiedliche Leistungsmerkmale auf. Der Auftrag unten listet Collider nach ihrer Leistungsfähigkeit auf, von den leistungsfähigsten links bis zu den am wenigsten leistungsfähigen Collidern rechts. Es ist wichtig, Gittermodell-Collider zu meiden, die erheblich teurer sind als die primitiven Collider.
 
     Kugel < Kapsel < Kasten <<< Gittermodell (konvex) < Gittermodell (nicht konvex)
 
@@ -228,13 +228,13 @@ Details zu diesem Renderingansatz finden Sie in den folgenden Artikeln von Unity
 
 #### <a name="static-batching"></a>Statische Batchverarbeitung
 
-Unity kann viele statische Objekte als Batch verarbeiten, um die Zeichenaufrufe an die GPU zu verringern. Die statische Batchverarbeitung funktioniert für die meisten [Rendererobjekte](https://docs.unity3d.com/ScriptReference/Renderer.html) in Unity, die **1) das Material gemeinsam haben** und **2) alle als *Static*** gekennzeichnet sind (Wählen Sie ein Objekt in Unity aus, und klicken Sie auf das Kontrollkästchen in der oberen rechten Ecke des Inspektors). GameObjects, die als *Static* gekennzeichnet sind, können nicht durch die Runtime Ihrer Anwendung bewegt werden. Daher kann es schwierig sein, statische Batchverarbeitung für HoloLens zu nutzen, bei der praktisch jedes Objekt platziert, bewegt, skaliert usw. werden muss. Bei immersiven Headsets kann statische Batchverarbeitung die Anzahl der Zeichenaufrufe drastisch reduzieren und die Leistung so verbessern.
+Unity kann viele statische Objekte als Batch verarbeiten, um die Zeichenaufrufe an die GPU zu verringern. Die statische Batchverarbeitung funktioniert für die meisten [Rendererobjekte](https://docs.unity3d.com/ScriptReference/Renderer.html) in Unity, die **1) das Material gemeinsam haben** und **2) alle als *Static*** gekennzeichnet sind (Wählen Sie ein Objekt in Unity aus, und aktivieren Sie das Kontrollkästchen in der oberen rechten Ecke des Inspektors). GameObjects, die als *Static* gekennzeichnet sind, können nicht durch die Runtime Ihrer Anwendung bewegt werden. Daher kann es schwierig sein, statische Batchverarbeitung für HoloLens zu nutzen, bei der praktisch jedes Objekt platziert, bewegt, skaliert usw. werden muss. Bei immersiven Headsets kann statische Batchverarbeitung die Anzahl der Zeichenaufrufe drastisch reduzieren und die Leistung so verbessern.
 
 Weitere Details erfahren Sie unter *Static Batching* (Statische Batchverarbeitung) unter [Draw Call Batching in Unity](https://docs.unity3d.com/Manual/DrawCallBatching.html) (Batchverarbeitung von Zeichenaufrufen in Unity).
 
 #### <a name="dynamic-batching"></a>Dynamische Batchverarbeitung
 
-Da es in der HoloLens-Entwicklung problematisch ist, Objekte als *Static* zu kennzeichnen, kann dynamische Batchverarbeitung ein hervorragendes Mittel darstellen, das Fehlen dieser Funktion zu kompensieren. Natürlich kann es auch bei immersiven Headsets nützlich sein. Die dynamische Batchverarbeitung in Unity kann aber schwierig zu aktivieren sein, da die GameObjects **a) das gleiche Material verwenden** und **b) eine lange Liste weiterer Kriterien erfüllen** müssen.
+Da es in der HoloLens-Entwicklung problematisch ist, Objekte als *Static* zu kennzeichnen, kann dynamische Batchverarbeitung ein hervorragendes Mittel darstellen, das Fehlen dieser Funktion zu kompensieren. Es kann auch bei immersiven Headsets nützlich sein. Die dynamische Batchverarbeitung in Unity kann aber schwierig zu aktivieren sein, da die GameObjects **a) das gleiche Material verwenden** und **b) eine lange Liste weiterer Kriterien erfüllen** müssen.
 
 Die vollständige Liste finden Sie unter *Dynamic Batching* (Dynamische Batchverarbeitung) unter [Draw Call Batching in Unity](https://docs.unity3d.com/Manual/DrawCallBatching.html) (Batchverarbeitung von Zeichenaufrufen in Unity). In den meisten Fällen wird die dynamische Batchverarbeitung von GameObjects ungültig, da die zugeordneten Gittermodelldaten nicht mehr als 300 Scheitelpunkte umfassen dürfen.
 
@@ -242,7 +242,7 @@ Die vollständige Liste finden Sie unter *Dynamic Batching* (Dynamische Batchver
 
 Batchverarbeitung kann nur erfolgen, wenn mehrere GameObjects gemeinsam dasselbe Material verwenden können. Normalerweise steht dem das Erfordernis gegenüber, dass GameObjects eine eindeutige Textur für ihr jeweiliges Material besitzen müssen. Es ist üblich, Texturen in einer großen Textur zusammenzufassen, eine Methode, die als [Texture Atlasing](https://en.wikipedia.org/wiki/Texture_atlas) bezeichnet wird.
 
-Darüber hinaus ist es im allgemeinen vorzuziehen, Gittermodelle zu einem GameObject zu kombinieren, wo es möglich und vernünftig ist. Für jeden Renderer in Unity ist eine bestimmte Anzahl Zeichenaufrufe im Vergleich mit dem Übermitteln eines kombinierten Gittermodells unter einem Renderer typisch.
+Darüber hinaus ist es vorzuziehen, Gittermodelle zu einem GameObject zu kombinieren, wo es möglich und vernünftig ist. Für jeden Renderer in Unity ist eine bestimmte Anzahl Zeichenaufrufe im Vergleich mit dem Übermitteln eines kombinierten Gittermodells unter einem Renderer typisch.
 
 >[!NOTE]
 > Beim Ändern von Eigenschaften von „Renderer.material“ zur Laufzeit wird eine Kopie des Materials erstellt, was die Batchverarbeitung möglicherweise unmöglich macht. Verwenden Sie Renderer.sharedMaterial, um die mehreren GameObjects gemeinsamen Materialeigenschaften zu ändern.
@@ -253,7 +253,7 @@ Weitere Informationen zum [Optimieren des Grafikrenderings in Unity](https://uni
 
 ### <a name="optimize-depth-buffer-sharing"></a>Optimieren der gemeinsamen Nutzung des Tiefenpuffers
 
-Im Allgemeinen wird empfohlen, in den **Player XR-Einstellungen** die **Gemeinsame Nutzung des Tiefenpuffers** zu aktivieren, um die [Hologrammstabilität](../platform-capabilities-and-apis/Hologram-stability.md) zu optimieren. Wenn die tiefenbasierte Neuprojektion in der Spätphase mit dieser Einstellung aktiviert wird, wird die Wahl des **16-Bit-Tiefenformats** anstelle des **24-Bit-Tiefenformats** empfohlen. Die 16-Bit-Tiefenpuffer reduzieren die Bandbreite (und somit die erforderliche Leistung), die mit dem Tiefenpuffer-Datenverkehr einhergeht, drastisch. Dies kann sowohl für den Stromverbrauch als auch für die Leistungsverbesserung ein großer Gewinn sein. Allerdings gibt es zwei mögliche negative Ergebnisse durch Einsatz des *16-Bit-Tiefenformats*.
+Es wird empfohlen, in den **Player XR-Einstellungen** die **Gemeinsame Nutzung des Tiefenpuffers** zu aktivieren, um die [Hologrammstabilität](../platform-capabilities-and-apis/Hologram-stability.md) zu optimieren. Wenn die tiefenbasierte Neuprojektion in der Spätphase mit dieser Einstellung aktiviert wird, wird die Wahl des **16-Bit-Tiefenformats** anstelle des **24-Bit-Tiefenformats** empfohlen. Die 16-Bit-Tiefenpuffer reduzieren die Bandbreite (und somit die erforderliche Leistung), die mit dem Tiefenpuffer-Datenverkehr einhergeht, drastisch. Dies kann sowohl für den Stromverbrauch als auch für die Leistungsverbesserung ein großer Gewinn sein. Allerdings gibt es zwei mögliche negative Ergebnisse durch Einsatz des *16-Bit-Tiefenformats*.
 
 **Z-Fighting**
 
@@ -265,21 +265,21 @@ Wenn Unity eine [Rendertextur mit 16-Bit Tiefe](https://docs.unity3d.com/ScriptR
 
 ### <a name="avoid-full-screen-effects"></a>Vermeiden von Vollbildeffekten
 
-Techniken, die im Vollbildmodus arbeiten, können ziemlich teuer sein, da sie die Größenordnung von Millionen von Vorgängen pro Frame erreichen. Daher wird empfohlen, [Effekte der Nachbearbeitung](https://docs.unity3d.com/Manual/PostProcessingOverview.html) wie Antialiasing, Blooming und mehr zu vermeiden.
+Techniken, die im Vollbildmodus arbeiten, können teuer sein, da sie die Größenordnung von Millionen von Vorgängen pro Frame erreichen. Es wird empfohlen, [Effekte der Nachbearbeitung](https://docs.unity3d.com/Manual/PostProcessingOverview.html) wie Antialiasing, Blooming und mehr zu vermeiden.
 
 ### <a name="optimal-lighting-settings"></a>Optimale Beleuchtungseinstellungen
 
-Die [globale Beleuchtung in Echtzeit](https://docs.unity3d.com/Manual/GIIntro.html) in Unity kann herausragende visuelle Ergebnisse produzieren, bringt jedoch ziemlich umfangreiche Beleuchtungsberechnungen mit sich. Es wird empfohlen, die globale Beleuchtung in Echtzeit für jede Unity-Szenendatei mit dieser Einstellung zu deaktivieren: **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination** (Fenster > Rendering > Beleuchtungseinstellungen > Globale Beleuchtung in Echtzeit deaktivieren).
+Die [globale Beleuchtung in Echtzeit](https://docs.unity3d.com/Manual/GIIntro.html) in Unity kann herausragende visuelle Ergebnisse produzieren, bringt jedoch umfangreiche Beleuchtungsberechnungen mit sich. Wir empfehlen, die globale Beleuchtung in Echtzeit für jede Unity-Szenendatei mit dieser Einstellung zu deaktivieren: **Window** > **Rendering** > **Lighting Settings** > Uncheck **Real-time Global Illumination** (Fenster > Rendering > Beleuchtungseinstellungen > Globale Beleuchtung in Echtzeit deaktivieren).
 
 Ferner wird empfohlen, jede Art von Schattenwurf zu deaktivieren, da dieser ebenfalls teure GPU-Durchgänge für eine Unity-Szene mit sich bringt. Schatten können durch Licht deaktiviert werden, lassen sich über die Qualitätseinstellungen aber auch im Ganzen steuern.
 
 **Edit** > **Project Settings** (Bearbeiten > Projekteinstellungen), wählen Sie dann die Kategorie **Quality** (Qualität) aus > wählen Sie **Low Quality** (Niedrige Qualität) für die UWP-Plattform. Sie können auch einfach die **Shadows**-Eigenschaft (Schatten) auf **Disable Shadows** (Schatten deaktivieren) festlegen.
 
-Es empfiehlt sich, für Ihre Modelle in Unity „Baked Lighting“ (vorab gerenderte Lichtdetails) zu verwenden.
+Wir empfehlen, für Ihre Modelle in Unity „Baked Lighting“ (vorab gerenderte Lichtdetails) zu verwenden.
 
 ### <a name="reduce-poly-count"></a>Reduzieren der Polygonanzahl
 
-Das Reduzieren der Polygonanzahl wird normalerweise durch eins dieser Verfahren erreicht
+Das Reduzieren der Polygonanzahl wird durch eins dieser Verfahren erreicht
 1) Entfernen von Objekten aus einer Szene
 2) Starke Herabsetzung der Medienobjekte, wodurch sich die Anzahl der Polygone für ein bestimmtes Gittermodell reduziert
 3) Implementieren eines [Level of Detail (LOD) System](https://docs.unity3d.com/Manual/LevelOfDetail.html) (Detailstufensystems) in Ihrer Anwendung, bei der weit entfernte Objekte mit einer aus weniger Polygonen bestehenden Version der gleichen Geometrie gerendert werden
@@ -291,7 +291,7 @@ Eine einfache Annäherung für den Leistungsvergleich von Shadern besteht darin,
 1) Wählen Sie Ihr Shadermedienobjekt oder ein Material aus, und wählen Sie dann in der oberen rechten Ecke des Inspektorfensters das Zahnradsymbol aus, gefolgt von **„Select Shader“** (Shader auswählen)
 
     ![Auswählen eines Shaders in Unity](images/Select-shader-unity.png)
-2) Klicken Sie bei ausgewähltem Shadermedienobjekt auf die Schaltfläche **„Compile and show code“** (Compilieren und Code anzeigen) unter dem Inspektorfenster
+2) Wählen Sie bei ausgewähltem Shadermedienobjekt die Schaltfläche **„Compile and show code“** (Compilieren und Code anzeigen) unter dem Inspektorfenster aus
 
     ![Kompilieren von Shadercode in Unity](images/compile-shader-code-unity.PNG)
 
@@ -311,7 +311,7 @@ Daher können mit dem Verringern der Zahl der Vorgänge im Fragmentshader im All
 
 Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) bereit, der für Mixed Reality-Projekte optimiert wurde.
 
-Unity bietet darüber hinaus unlit (nicht beleuchtet), vertex lit (nach Scheitelpunkten beleuchtet), diffuse (diffus), und weitere vereinfachte Shaderoptionen, die im Vergleich erheblich schneller arbeiten als der Unity-Standardshader. Detailliertere Informationen finden Sie unter [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Verwendung und Leistung der integrierten Shader).
+Unity bietet darüber hinaus unlit (nicht beleuchtet), vertex lit (nach Scheitelpunkten beleuchtet), diffuse (diffus), und weitere vereinfachte Shaderoptionen, die im Vergleich schneller arbeiten als der Unity-Standardshader. Detailliertere Informationen finden Sie unter [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Verwendung und Leistung der integrierten Shader).
 
 #### <a name="shader-preloading"></a>Vorabladen der Shader
 
@@ -343,13 +343,13 @@ Weitere schnelle Tipps:
 
 #### <a name="object-pooling"></a>Objektpooling
 
-Objektpooling ist eine gängige Methode, um die Kosten für fortlaufende Zuordnungen von Objekten und deren Aufhebung zu reduzieren. Dies erfolgt durch Zuordnen eines großen Pools identischer Objekte und Wiederverwendung inaktiver, verfügbarer Instanzen aus diesem Pool, statt im Lauf der Zeit ständig neue Objekte zu erstellen und zu entfernen. Objektpools eignen sich hervorragend für wiederverwendbare Komponenten, die im Rahmen einer App eine variable Lebensdauer haben.
+Objektpooling ist eine gängige Methode, um die Kosten für fortlaufende Objektzuordnungen und deren Aufhebung zu reduzieren. Dies erfolgt durch Zuordnen eines großen Pools identischer Objekte und Wiederverwendung inaktiver, verfügbarer Instanzen aus diesem Pool, statt im Lauf der Zeit ständig neue Objekte zu erstellen und zu entfernen. Objektpools eignen sich hervorragend für wiederverwendbare Komponenten, die im Rahmen einer App eine variable Lebensdauer haben.
 
 - [Tutorial zum Objektpooling in Unity](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) 
 
 ## <a name="startup-performance"></a>Startleistung
 
-Sie sollten erwägen, Ihre App mit einer kleineren Szene zu starten und dann *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* zu verwenden, um den Rest der Szene zu laden. Dadurch kann Ihre App so schnell wie möglich in einen interaktiven Zustand gelangen. Beachten Sie, dass es beim Aktivieren der neuen Szene zu einer großen CPU-Spitze kommen kann, und dass alle gerenderten Inhalte möglicherweise stockend oder hängend ausgeführt werden. Eine Möglichkeit, dies zu umgehen, besteht darin, die AsyncOperation.allowSceneActivation-Eigenschaft für die zu ladende Szene auf „false“ festzulegen, das Laden der Szene abzuwarten, den Bildschirm auf schwarz zu setzen und den Wert der Eigenschaft dann wieder auf „true“ festzulegen, um die Szenenaktivierung abzuschließen.
+Erwägen Sie, Ihre App mit einer kleineren Szene zu starten und dann *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* zu verwenden, um den Rest der Szene zu laden. Dadurch kann Ihre App so schnell wie möglich in einen interaktiven Zustand gelangen. Beim Aktivieren der neuen Szene kann es zu einer großen CPU-Spitze kommen, und alle gerenderten Inhalte werden möglicherweise stockend oder hängend ausgeführt. Eine Möglichkeit, dies zu umgehen, besteht darin, die AsyncOperation.allowSceneActivation-Eigenschaft für die zu ladende Szene auf „false“ festzulegen, das Laden der Szene abzuwarten, den Bildschirm auf schwarz zu setzen und den Wert der Eigenschaft dann wieder auf „true“ festzulegen, um die Szenenaktivierung abzuschließen.
 
 Beachten Sie, dass während des Ladens der Startszene für den Benutzer der holografische Begrüßungsbildschirm angezeigt wird.
 

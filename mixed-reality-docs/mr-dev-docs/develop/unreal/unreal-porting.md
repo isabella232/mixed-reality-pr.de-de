@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Dokumentation, Leitfäden, Features, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Portieren, Upgrade
-ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609661"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010621"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Upgrade von Projekten in Unreal
 
@@ -50,3 +50,7 @@ Aus Warnmeldungen ist zu ersehen, welche Funktion als veraltet deklariert wurde 
 | IsTrackingAvailable | ![Blaupause der Eigenschaft „IsTrackingAvailable“](images/unreal-porting-img-17.png) |
 | IsButtonClicked, IsButtonDown, IsGrasped, IsSelectPressed | Verwenden Sie das Eingabeaktionssystem von Unreal. |
 | SetFocusPointForFrame | In 4.26 entfernt.  Bisher für die Neuprojektion beim Remoting verwendet, das jetzt tiefenbasierte Neuprojektion unterstützt. |
+
+## <a name="426-changes"></a>Änderungen in 4.26
+
+Die maßgebliche Änderung besteht darin, dass **In VR starten** aus **Bearbeiten > Projekteinstellungen > Projekt > Beschreibung > Einstellungen** beim Starten des Windows Mixed Reality-Plug-Ins obligatorisch ist. Ohne diesen Parameter werden Ihre Hologramme nicht auf dem Gerät angezeigt.

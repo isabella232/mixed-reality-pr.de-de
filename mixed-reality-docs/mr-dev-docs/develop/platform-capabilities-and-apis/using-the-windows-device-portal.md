@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows-Geräteportal, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011472"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102933"
 ---
 # <a name="using-the-windows-device-portal"></a>Verwenden des Windows-Geräteportals
 
@@ -117,6 +117,38 @@ Jede HoloLens generiert ein eindeutiges selbstsigniertes Zertifikat für die SSL
 >[!NOTE]
 > Dieses Zertifikat wird nur für das Gerät als vertrauenswürdig eingestuft, und der Benutzer muss den Prozess erneut durchlaufen, wenn für das Gerät ein Flash ausgeführt wird.
 
+## <a name="sideloading-applications"></a>Querladen von Anwendungen
+
+### <a name="installing-a-certificate"></a>Installieren eines Zertifikats
+
+1. Navigieren Sie im Windows-Geräteportal zu der Seite **App-Manager**
+2. Wählen Sie im Abschnitt „Apps bereitstellen“ die Option **Zertifikat installieren** aus
+3. Wählen Sie unter „Zum Signieren des App-Pakets verwendete Zertifikatdatei (CER) auswählen“ die Option „Datei auswählen“ aus, und navigieren Sie zu dem Zertifikat, das dem App-Paket zugeordnet ist, das Sie querladen möchten
+4. Wählen Sie **Installieren** aus, um die Installation zu starten.
+
+![Screenshot der im Windows-Geräte Portal geöffneten Seite „App-Manager“](images/sideloading-1.png)
+
+### <a name="installing-an-app"></a>Installieren einer App
+
+> [!NOTE]
+> Damit eine App erfolgreich über das Geräteportal installiert werden kann, muss sie mit einem Zertifikat signiert sein. Dieses Zertifikat muss auf dem Gerät installiert werden, bevor Sie versuchen, die App zu installieren. Einzelheiten dazu finden Sie im [vorherigen Abschnitt](#installing-a-certificate).
+
+1. Wenn Sie [ein App-Paket in Visual Studio erstellt haben](using-visual-studio.md), können Sie es aus den generierten Dateien per Remotezugriff auf Ihrem Gerät installieren:
+
+![Screenshot des Dateiinhalts des App-Pakets](images/sideloading-2.png)
+
+2. Navigieren Sie im Windows-Geräteportal zu der Seite **App-Manager**
+3. Wählen Sie im Bereich **Apps bereitstellen** **Lokaler Speicher** aus
+4. Wählen Sie unter „Anwendungspaket auswählen“ die Option „Datei auswählen“ aus, und navigieren Sie zu dem App-Paket, das Sie querladen möchten.
+5. Aktivieren Sie die entsprechenden Kontrollkästchen, wenn Sie im Rahmen der App-Installation optionale oder Frameworkpakete installieren möchten, und wählen Sie **Weiter** aus:
+
+![Screenshot der im Windows-Geräte Portal geöffneten Seite „App-Manager“ mit hervorgehobener Registerkarte „Lokaler Speicher“](images/sideloading-3.png)
+
+6. Wählen Sie zum Einleiten der Installation **Installieren** aus.
+ 
+![Screenshot der im Windows-Geräte Portal geöffneten Seite „App-Manager“ nach erfolgreich abgeschlossener Installation](images/sideloading-4.png) 
+
+Sobald die Installation abgeschlossen ist, gehen Sie zurück zur Seite **Alle Apps** auf Ihrer HoloLens, und starten Sie Ihre neu installierte Anwendung!
 
 ## <a name="device-portal-pages"></a>Seiten des Geräteportals
 

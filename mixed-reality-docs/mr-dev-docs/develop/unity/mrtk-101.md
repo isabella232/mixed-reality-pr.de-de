@@ -7,14 +7,15 @@ ms.date: 08/27/2019
 ms.topic: article
 keywords: HoloLens, MRTK, Mixed Reality-Toolkit, Windows Mixed Reality, Entwurf, Beispiel-App, Steuerelemente, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 ms.localizationpriority: high
-ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 16087b69a45def0f496d2ded434458725474bd25
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677530"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010601"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK-Einführung Verwenden des Mixed Reality-Toolkits Unity für gängige räumliche Interaktionen
+
 ![MRTK](images/MRTK101/MRTK101Cover.png)
 
 Erfahren Sie, wie Sie das MRTK nutzen, um einige der am häufigsten verwendeten Interaktionsmuster in Mixed Reality umzusetzen.
@@ -36,16 +37,19 @@ Erfahren Sie, wie Sie das MRTK nutzen, um einige der am häufigsten verwendeten 
 Alle Inhalte auf dieser Seite können im Unity-Editor mit der Eingabesimulation von MRTK getestet werden. Wenn Sie dies noch nicht getan haben, befolgen Sie das [MRTK-Installationshandbuch (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html), um die neueste Version von MRTK zu installieren.
 
 ## <a name="how-to-simulate-input-interactions-in-unity-editor"></a>Wie lassen sich Eingabeinteraktionen im Unity-Editor simulieren?
-MRTK unterstützt die Simulation von Eingaben im Editor. Führen Sie die Szene einfach durch Klicken auf die Wiedergabe Schaltfläche in Unity aus. Verwenden der Tasten zum Simulieren von Eingaben.
-Drücken Sie die Tasten W, A, S, D, um die Kamera zu bewegen.
-Halten Sie die rechte Maustaste gedrückt, und bewegen Sie die Maus, um sich umzusehen.
-Um die simulierten Hände anzuzeigen, drücken Sie die LEERTASTE (rechte Hand) oder die linke UMSCHALTTASTE (linke Hand). Um die simulierten Hände ständig anzuzeigen, drücken Sie die T- oder die Y-Taste. Um die simulierten Hände zu drehen, drücken Sie Q oder E (horizontal) bzw. R oder F (vertikal).
 
-- [Weitere Informationen zur Eingabesimulation finden Sie in der MRTK-Dokumentation.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html)
+MRTK unterstützt die Simulation von Eingaben im Editor. Starten Sie Ihre Szene, indem Sie auf die Wiedergabeschaltfläche von Unity klicken, und verwenden Sie dann die folgenden Tasten, um Eingaben zu simulieren:
+- Drücken Sie die Tasten W, A, S, D, um die Kamera zu bewegen.
+- Halten Sie die rechte Maustaste gedrückt, und bewegen Sie die Maus, um sich umzusehen.
+- Drücken Sie die Leertaste (rechte Hand) oder die linke Umschalttaste (linke Hand), um die simulierten Hände aufzurufen
+- Drücken Sie die Taste T oder Y, um simulierte Hände in der Ansicht zu halten.
+- Drücken Sie Q oder E (horizontal) bzw. R oder F (vertikal), um die simulierten Hände zu drehen
 
+Weitere Informationen zur Eingabesimulation finden Sie in der [MRTK-Dokumentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html).
 
 ## <a name="how-to-grab-and-move-an-object"></a>Wie lässt sich ein Objekt greifen und bewegen?
-Um ein Objekt greifbar zu machen, weisen Sie diese beiden Skripts zu: **ObjectManipulator.cs** und **NearInteractionGrabbable.cs** (für direktes Greifen mit Eingabe durch artikuliertes Hand-Tracking). ObjectManipulator unterstützt sowohl Nah- als auch Fern-Interaktionen. Sie können ein Objekt durch die Eingabe mittels artikuliertem Hand-Tracking (nah), Handstrahl (fern), den Strahl des Motion Controllers (fern), den Anvisier-Cursor von HoloLens und Tippen in die Luft (fern) greifen und bewegen.
+
+Fügen Sie die Skripts **ObjectManipulator.cs** und **NearInteractionGrabbable.cs** an, um ein Objekt greifbar zu machen. ObjectManipulator unterstützt sowohl nahe als auch ferne Interaktionen. Sie können ein Objekt durch die Eingabe mittels artikuliertem Hand-Tracking (nah), Handstrahl (fern), den Strahl des Motion Controllers (fern), den Anvisier-Cursor von HoloLens 2 und Tippen in die Luft (fern) greifen und bewegen.
 
 <br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
@@ -53,7 +57,7 @@ Um ein Objekt greifbar zu machen, weisen Sie diese beiden Skripts zu: **ObjectMa
 
 
 ## <a name="how-to-resize-an-object"></a>Wie wird die Größe eines Objekts geändert?
-**ObjectManipulator.cs** unterstützt die beidhändige Skalierung/Drehung. Dies funktioniert mit verschiedenen Eingabetypen, wie z. B. der Handeingabe von HoloLens 2, der Eingabe durch Anvisieren und Gesten von HoloLens 1 und der Motion Controller-Eingabe des immersiven Headsets für Windows Mixed Reality.
+**ObjectManipulator.cs** unterstützt die beidhändige Skalierung/Drehung. Das Skript funktioniert mit verschiedenen Eingabetypen, wie z. B. der Handeingabe von HoloLens 2, der Eingabe durch Anvisieren und Gesten von HoloLens 1 und der Motion Controller-Eingabe des immersiven Headsets für Windows Mixed Reality.
 
 - [Weitere Informationen zum Objekt-Manipulator finden Sie in der MRTK-Dokumentation.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 
@@ -88,7 +92,7 @@ Interactable stellt verschiedene Arten von Designs zur Verfügung, einschließli
 
 - [Weitere Informationen zu Interactable finden Sie in der MRTK-Dokumentation.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 
-Ein weiterer wichtiger Baustein für visuelles Feedback ist der **MRTK-Standardshader**. Mit dem MRTK-Standardshader können Sie auf einfache Weise visuelle Feedbackeffekte hinzufügen, wie das Licht beim Draufzeigen und Näherungslicht. Da der MRTK-Standardshader erheblich weniger Berechnungen als der Unity-Standardshader ausführt, können Sie ein leistungsstarkes Verhalten erreichen.
+Ein weiterer wichtiger Baustein für visuelles Feedback ist der **MRTK-Standardshader**. Mit dem MRTK-Standardshader können Sie auf einfache Weise visuelle Feedbackeffekte hinzufügen, wie das Licht beim Draufzeigen und Näherungslicht. Da der MRTK-Standardshader weniger Berechnungen als der Unity-Standardshader ausführt, können Sie ein leistungsstarkes Verhalten erreichen.
 
 Erstellen Sie ein neues Material, und wählen Sie den Shader „Mixed Reality Toolkit > Standard“ aus. Alternativ können Sie eins der vorhandenen Materialien auswählen, die den MRTK-Standardshader verwenden.
 
@@ -107,11 +111,11 @@ Fügen Sie einem Objekt **AudioSource** hinzu. Weisen Sie dann in den Skripts, d
 <br/><img alt="Audio Source assigned to an object. AudioSource.PlayOneShot configured in the Interactable's OnPress() and OnRelease() events." width="800" src="images/MRTK101/MRTK_Audio.png">
 
 ## <a name="how-to-use-hololens-2-style-button-prefabs"></a>Wie werden Prefabs für Schaltflächen im HoloLens 2-Stil verwendet?
-MRTK bietet verschiedene Typen von Schaltflächen im Stil der HoloLens 2-Shell (Betriebssystem). Es stehen raffinierte visuelle Feedbacks wie etwa Näherungslicht, ein gestauchtes Feld und ein Kräuseleffekt auf der Schaltflächenoberfläche zur Verfügung, die das Vertrauen des Benutzers verbessern.
+MRTK bietet verschiedene Arten von Schaltflächen im Shellformat (OS) von HoloLens 2, einschließlich visuellem Feedback wie Näherungslicht, Stauchungsrahmen und einem Ripple-Effekt auf der Schaltflächen-Oberfläche, die das Vertrauen des Benutzers verbessern.
 
 <br/><img alt="Interactable button" width="800" src="images/MRTK101/MRTK_Button.gif">
 
-Legen Sie einfach eins der **Prefabs für eine drückbare Schaltfläche im HoloLens 2-Stil** per Drag & Drop in Ihrer Szene ab. Das Prefab verwendet Interactable.cs, die oben vorgestellt wurde. Sie können in Interactable verfügbar gemachte Ereignisse wie OnClick() verwenden, um Aktionen auszulösen.
+Legen Sie eins der **Prefabs für eine drückbare Schaltfläche im HoloLens 2-Stil** per Drag & Drop in Ihrer Szene ab. Das Prefab verwendet Interactable.cs, das oben vorgestellt wurde. Sie können in Interactable verfügbar gemachte Ereignisse wie OnClick() verwenden, um Aktionen auszulösen.
 
 <br/><img alt="HoloLens 2 Button Prefab" width="800" src="images/MRTK101/MRTK_Button.png">
 
@@ -128,7 +132,7 @@ Unten finden Sie ein Beispiel der RadialView-Konfiguration, um ein „Hinterhert
 - [Weitere Informationen zu Solvern finden Sie in der MRTK-Dokumentation.](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
 ## <a name="how-to-make-an-object-face-you"></a>Wie erreicht man, dass ein Objekt sich einem zuwendet?
-Weisen Sie einem Objekt das **Billboard.cs**-Skript zu. Das Objekt wendet sich Ihnen dann immer zu, unabhängig von Ihrer Position. Sie können die Pivotachsenoption angeben.
+Weisen Sie einem Objekt das **Billboard.cs**-Skript zu. Das Objekt ist Ihnen immer zugewendet, unabhängig von Ihrer Position. Sie können die Pivotachsenoption angeben.
 
 <br/><img alt="Image of Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
 

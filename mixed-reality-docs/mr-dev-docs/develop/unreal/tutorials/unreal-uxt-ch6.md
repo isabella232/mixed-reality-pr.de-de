@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609491"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010545"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Verpacken und Bereitstellen auf einem Gerät oder in einem Emulator
 
@@ -49,6 +49,7 @@ Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläch
 1.  Navigieren Sie zu **Edit > Project Settings** („Bearbeiten“ > „Projekteinstellungen“).
     * Fügen Sie unter **Project > Description > About > Project Name** (Projekt > Beschreibung > Info > Projektname) einen Namen für Ihr Projekt hinzu.
     * Fügen Sie unter **Project > Description > Publisher > Company Distinguished Name** (Projekt > Beschreibung > Herausgeber > Definierter Name des Unternehmens) Folgendes ein: **CN=IhrFirmenname**.
+    * Wählen Sie unter **Project > Description > Settings** (Projekt > Beschreibung > Einstellungen) **Start in VR** (In VR starten) aus.
 
 > [!IMPORTANT]
 > Eins dieser Felder leer zu lassen, führt zu einem Fehler, wenn Sie in Schritt 3 versuchen, ein neues Zertifikat zu generieren.
@@ -56,7 +57,10 @@ Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläch
 > [!IMPORTANT]
 > Der Name des Ausstellers muss im [LADPv3-Format für definierte Namen](https://www.ietf.org/rfc/rfc2253.txt) vorliegen. Ein Ausstellername in ungültigem Format führt beim Verpacken zum Fehler „Signaturschlüssel nicht gefunden. Die App konnte nicht digital signiert werden“ .
 
-![Projekteinstellungen: Beschreibung](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> Ohne die Auswahl von „Start in VR“ (In VR starten) versucht die Anwendung, auf einem Slate zu starten
+
+![Projekteinstellungen: Beschreibung](images/unreal-uxt/6-cn-new.PNG)
 
 2.  Aktivieren Sie unter **Platforms > HoloLens** (Plattformen > HoloLens) die Optionen **Build for HoloLens Emulation** (Build für HoloLens-Emulation) und/oder **Build for HoloLens Device** (Build für HoloLens-Gerät).
 
