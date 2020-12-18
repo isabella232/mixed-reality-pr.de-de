@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Keine
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717433"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676133"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Title (so spezifisch wie möglich, mit menschlichen Begriffen) 
 
@@ -52,7 +52,7 @@ ms.locfileid: "91717433"
 
 Ein Abschnitt kann eine beliebige oder alle der folgenden Zeichen enthalten:  
 
-*   Erklären
+*   Erklärungen
 *   Überlegungen
 *   Faustregeln 
 *   Verwendungsmethoden 
@@ -65,7 +65,7 @@ Redaktionelle Konventionen:
 *   Versuchen Sie nicht, lustig zu sein.
 *   Schreiben Sie mit der Rechtschreibung und den Konventionen von en-US (USA English).
 *   **Verwenden Sie die Satz Schreibweise für Titel, Abschnittsüberschriften und... alles gut.** Innerhalb von Sätzen sind die einzigen Wörter, die groß geschrieben werden sollten, echte Nomen (genau wie Sie in der Grammatikschule gelernt haben). Markennamen (z. b. Microsoft hololens) sind richtige Nomen. Funktionsnamen (z. b. räumliche Zuordnung) sind keine richtigen Nomen, es sei denn, Sie sind mit einem Gegenteiliges
-*   Schreiben Sie keine Verknüpfungen im Formular "Weitere Informationen finden Sie [hier](../whats-new/contributing.md)." Platzieren Sie [stattdessen Links,](../whats-new/contributing.md) ohne den Reader an eine andere Stelle weiterleiten zu müssen.
+*   Schreiben Sie keine Verknüpfungen im Formular "Weitere Informationen finden Sie [hier](../contributing.md)." Platzieren Sie [stattdessen Links,](../contributing.md) ohne den Reader an eine andere Stelle weiterleiten zu müssen.
 *   Diese Dokumentation ist die Quelle der Wahrheit. Die Informationen müssen genau und aktuell sein.
 
 <br>
@@ -192,7 +192,7 @@ Les Nabis Photorealism-Aktion Zeichnen eines Farbfelds Zeichnen von Stuckism Int
 
 Neo-georkalismus Structuralism Post-Impressionismus der Brücke existentialität Superflat, Neo-Dada Idealismus gründa.
 
-| Entfernung | Anzeige Winkel | Size |
+| Abstand | Anzeige Winkel | Größe |
 |---------|---------|---------|
 | 45cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
 
@@ -233,7 +233,7 @@ Legen Sie IFRAME auf Width = "940" Height = "530" fest.
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Verwandter Artikel 1 Name](../design/design.md)
 * [Verwandter Artikel 2 Name](../design/design.md)
