@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: dd84ba86af0b86b29510c4c317ad0a14fabc296b
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
+ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676223"
+ms.locfileid: "97691311"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Beitrag zur Mixed Reality-Entwicklerdokumentation
 
@@ -48,12 +48,12 @@ Verwenden Sie den folgenden Workflow, um Updates an *einem vorhandenen Artikel* 
    ![Bearbeiten Sie einen Artikel.](images/editpage.png)
 3. Bearbeiten Sie den Inhalt des Artikels gemäß den ["markdown-Grundlagen"](#markdown-basics).
 4. Aktualisieren Sie die Metadaten am Anfang jedes Artikels:
-   * Title: der Seitentitel, der auf der Registerkarte Browser angezeigt wird, wenn der Artikel angezeigt wird. Seitentitel werden für SEO und Indizierung verwendet. ändern Sie also den Titel nur dann, wenn dies erforderlich ist (obwohl dies weniger kritisch ist, bevor die Dokumentation öffentlich wird).
-   * Beschreibung: Schreiben Sie eine kurze Beschreibung des Inhalts des Artikels, wodurch die SEO und die Ermittlung erhöht werden.
-   * Autor: Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren GitHub-Alias hinzu.
-   * ms. Author: Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren Microsoft-Alias hinzu (Sie benötigen nicht @microsoft.com , sondern nur den Alias).
-   * ms. Date: Aktualisieren Sie das Datum, wenn Sie der Seite größere Inhalte hinzufügen, aber nicht für Korrekturen wie die Klärung, Formatierung, Grammatik oder Rechtschreibung.
-   * Schlüsselwörter: Unterstützung von Schlüsselwörtern in SEO (Suchmaschinenoptimierung). Fügen Sie Schlüsselwörter, getrennt durch ein Komma und ein Leerzeichen, ein, die für den Artikel spezifisch sind, jedoch keine Interpunktions Zeichen nach dem letzten Schlüsselwort in der Liste. Sie müssen keine globalen Schlüsselwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
+   * **Title**: der Seitentitel, der auf der Registerkarte Browser angezeigt wird, wenn der Artikel angezeigt wird. Seitentitel werden für SEO und Indizierung verwendet. ändern Sie also den Titel nur dann, wenn dies erforderlich ist (obwohl dies weniger kritisch ist, bevor die Dokumentation öffentlich wird).
+   * **Beschreibung**: Schreiben Sie eine kurze Beschreibung des Inhalts des Artikels, wodurch die SEO und die Ermittlung erhöht werden.
+   * **Autor**: Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren GitHub-Alias hinzu.
+   * **ms. Author**: Wenn Sie der primäre Besitzer der Seite sind, fügen Sie hier Ihren Microsoft-Alias hinzu (Sie benötigen nicht @microsoft.com , sondern nur den Alias).
+   * **ms. Date**: Aktualisieren Sie das Datum, wenn Sie der Seite größere Inhalte hinzufügen, aber nicht für Korrekturen wie die Klärung, Formatierung, Grammatik oder Rechtschreibung.
+   * **Schlüsselwörter**: Unterstützung von Schlüsselwörtern in SEO (Suchmaschinenoptimierung). Fügen Sie Schlüsselwörter, getrennt durch ein Komma und ein Leerzeichen, ein, die für den Artikel spezifisch sind, jedoch keine Interpunktions Zeichen nach dem letzten Schlüsselwort in der Liste. Sie müssen keine globalen Schlüsselwörter hinzufügen, die für alle Artikel gelten, da diese an anderer Stelle verwaltet werden. 
 5. Wenn Sie Ihre Artikel Änderungen abgeschlossen haben, Scrollen Sie nach unten, und wählen Sie **Datei Änderung vorschlagen** aus.
 6. Wählen Sie auf der nächsten Seite **Pull Request erstellen** aus, um den automatisch erstellten Branch in "Master" zusammenzuführen.
 7. Wiederholen Sie die obigen Schritte für den nächsten Artikel, den Sie bearbeiten möchten.
