@@ -1,13 +1,11 @@
 - name: Einführung in die Mixed Reality-Entwicklung
   href: development.md
+- name: Übersicht der Azure Mixed Reality-Clouddienste
+  href: mixed-reality-cloud-services.md
+- name: Beispiele und Feature-Apps
+  href: features-and-samples.md
 - name: Installieren der Tools
   href: install-the-tools.md
-- name: Erste Schritte
-  items:
-    - name: Übersicht der Azure Mixed Reality-Clouddienste
-      href: mixed-reality-cloud-services.md
-    - name: Beispiele und Feature-Apps
-      href: features-and-samples.md
 - name: Portieren von Apps
   items:
     - name: Übersicht zum Portieren
@@ -24,19 +22,23 @@
   items:
     - name: Unity-Entwicklung – Übersicht
       href: unity/unity-development-overview.md
-    - name: Erste Schritte
+    - name: Projektkonfigurationen
       items:
-        - name: Erste Schritte mit MRTK
+        - name: Einführung in MRTK
           href: unity/mrtk-getting-started.md
-        - name: Konfigurieren eines Unity-Projekts für Windows Mixed Reality
+        - name: Konfigurieren von Projekten ohne MRTK
           href: unity/configure-unity-project.md
+        - name: Verwenden des Mixed Reality OpenXR-Plug-Ins
+          href: unity/openxr-getting-started.md
+        - name: Unterstützte Funktionen des OpenXR-Plug-Ins
+          href: unity/openxr-supported-features.md
     - name: Tutorials
       items:
         - name: Übersicht
           href: unity/tutorials.md
         - name: 'HoloLens 2: Tutorials'
           items:
-            - name: Tutorials zu den ersten Schritten
+            - name: MRTK-Tutorials
               items:
                 - name: 1. Einführung
                   href: unity/tutorials/mr-learning-base-01.md
@@ -312,6 +314,8 @@
           href: unreal/unreal-publishing-to-store.md
         - name: Leistungsempfehlungen für Unreal
           href: unreal/performance-recommendations-for-unreal.md
+        - name: Materialempfehlungen in Unreal
+          href: unreal/unreal-materials.md
         - name: Profilerstellung mit Unreal Insights
           href: unreal/unreal-insights.md
         - name: Materialempfehlungen in Unreal
