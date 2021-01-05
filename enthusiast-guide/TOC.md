@@ -46,3 +46,5 @@
 ### [Funktionsweise von Inside-Out-Tracking](tracking-system.md)
 ### [HP Reverb G2-Controller in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 ### [HP Reverb G2-Controller in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+
+## [Anleitung für die Mitwirkung](contributing.md)
