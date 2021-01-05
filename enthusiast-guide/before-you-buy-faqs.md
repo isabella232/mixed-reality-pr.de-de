@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Pre-Sale, Research, Purchase, vor dem Kauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002974"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725511"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Vor dem Kauf von häufig gestellten Fragen
 
@@ -21,7 +21,7 @@ ms.locfileid: "95002974"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>Wo kann ich einen Windows Mixed Reality-fähigen PC oder ein Headset kaufen?
 
-**Schnelle Antwort:** Sie können einen Windows Mixed Reality-fähigen PC oder ein Headset bei einem genehmigten lokalen Händler oder online über eine Vielzahl von Einzelhändlern erwerben, einschließlich der Microsoft Store. Suchen Sie online nach einem Windows Mixed Reality Ready-PC oder-Headset: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**Schnelle Antwort:** Sie können einen Windows Mixed Reality-fähigen PC oder ein Headset bei einem genehmigten lokalen Händler oder Online von unterschiedlichen Einzelhändlern erwerben, einschließlich der Microsoft Store. Suchen Sie online nach einem Windows Mixed Reality Ready-PC oder-Headset: <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>Wo kann ich Windows Mixed Reality ausprobieren?
 
@@ -51,19 +51,19 @@ Weitere Informationen zu gemischter Realität finden Sie hier: <https://docs.mic
 
 **Schnelle Antwort:** Windows Mixed Reality-Headsets-Feature: in-out-Nachverfolgung (Überwachungskameras sind im Headset) und Plug-and-Play-Setup mit Windows 10.
 
-**Ausführlichere Informationen**: Windows Mixed Reality bietet verschiedene Features, wie z. a. einfaches Setup (keine Notwendigkeit externer Sensoren, Sie und ihre Controller zu verfolgen), die Auswahl von Headsets zum erfüllen Ihres Komforts und Preis Punkts, von Headsets mit Wettbewerbs Auflösungen und schließlich eine einzigartige Benutzerfreundlichkeit, die eine räumliche Oberfläche bietet, die es Ihnen ermöglicht, Tausende von Apps aus der Microsoft Store zu verwenden.
+**Ausführlichere Informationen**: Windows Mixed Reality bietet verschiedene Features, einschließlich der einfachen Installation (keine Notwendigkeit externer Sensoren, Sie und ihre Controller zu verfolgen), der Auswahl von Headsets zum erfüllen von Komfort und Preispunkten, von Headsets mit Wettbewerbs Auflösungen und schließlich einer einzigartigen Benutzerfreundlichkeit, die eine räumliche Oberfläche bietet, mit der Sie Tausende von Apps aus dem Microsoft Store verwenden können.
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>Bedeutet gemischte Realität, dass die in-out-Kameras Passthrough sind? Kann die erweiterte Realität zusätzlich zu Virtual Reality erleben
 
-**Schnelle Antwort:** Nein, die inneren Kameras in Windows Mixed Reality-Headsets werden nur für die Positionsüberwachung verwendet. Windows Mixed Reality-Headsets sind okkludiert, was bedeutet, dass Sie für die virtuelle Realität vorgesehen sind und keinen Einblick in die reale oder Erweiterte Realität bieten.
+**Schnelle Antwort:** Nein, die inneren Kameras in Windows Mixed Reality-Headsets werden nur für die Positionsüberwachung verwendet. Windows Mixed Reality-Headsets sind okkludiert, was bedeutet, dass Sie für die virtuelle Realität vorgesehen sind und keine Ansicht der realen Welt oder der erweiterten Realität darstellen.
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>Was ist die in-out-Nachverfolgung? Wie unterscheidet es sich von außerhalb der Nachverfolgung oder der Überwachung des Leuchtturms?
 
-* **Innere Nachverfolgung** Die gemischte Windows-Realität verwendet die in-out-Nachverfolgung. Wenn Sie in das Headset integriert sind, können Sie die Änderungen in der Umgebung nachverfolgen, um die Dashboardposition in Bezug auf die Umgebung zu bestimmen, während Sie fortfahren.
+* **Innere Nachverfolgung** Die gemischte Windows-Realität verwendet die in-out-Nachverfolgung. Wenn Sie in das Headset integriert sind, können Sie die Änderungen in der Umgebung nachverfolgen, um die Dashboardposition basierend auf der Umgebung zu ermitteln.
 
-* **Externe Nachverfolgung** Oculus, Vive und andere verwenden außerhalb der Nachverfolgung.  Bei der Nachverfolgung von außen wird das Headset von einem oder mehreren externen Geräten nachverfolgt. Die Kamera (en) ist in diese externen Geräte integriert, um die Umgebung zu platzieren und wird verwendet, um die Position des Headsets in Bezug auf die Umgebung zu bestimmen.
+* **Externe Nachverfolgung** Oculus, Vive und andere verwenden außerhalb der Nachverfolgung.  Bei einer externen Überwachung wird das Headset von einem oder mehreren externen Geräten nachverfolgt. Die Kamera (en) ist in diese externen Geräte integriert, um die Umgebung zu platzieren und wird verwendet, um die Position des Headsets basierend auf der Umgebung zu bestimmen.
 
-Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
+Erfahren Sie mehr über die [in-out-Nachverfolgung](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Kann die Nachverfolgung von Bewegungs Controllern aufgrund von Kamera-FOV meine Spiel Wiedergabe beeinflussen
 
@@ -71,7 +71,7 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Wie unterscheidet sich Windows Mixed Reality von Samsung Gear VR?
 
-**Schnelle Antwort:** Alle Smartphone-basierten VR-Produkte, einschließlich Samsung Gear VR und Google Daydream, verwenden drei Grad an Freiheit (3DOF) Head-Positions Überwachungssystemen. mit 3DOF-basierten Systemen können Sie Ihren Kopf **nur** von der Spitze in der virtuellen Welt bewegen. Auf der anderen Seite verwendet Windows Mr einen 6-Grad an Freiheits-und Controller Positions Verfolgungs Systeme. IPv6-basierte Systeme ermöglichen es Ihnen, den gesamten Text in der virtuellen Welt zu verschieben. So können Sie ein Objekt durchlaufen und es aus unterschiedlichen Perspektiven sehen, genauso wie Sie es in der physischen Welt tun können. Der Riss und die Vive sind auch IPv6-basierte Systeme.
+**Schnelle Antwort:** Alle Smartphone-basierten VR-Produkte, einschließlich Samsung Gear VR und Google Daydream, verwenden drei Grade der Freiheits Systeme (3DOF). mit 3DOF-basierten Systemen können Sie Ihren Kopf **nur** von der Spitze in der virtuellen Welt bewegen. Windows Mr hingegen verwendet ein sechs Grad an Freiheits-und Controller-Positions Überwachungssystemen. IPv6-basierte Systeme ermöglichen es Ihnen, den gesamten Text in der virtuellen Welt zu verschieben. So können Sie ein Objekt durchlaufen und es aus unterschiedlichen Perspektiven sehen, genauso wie Sie es in der physischen Welt tun können. Der Riss und die Vive sind auch IPv6-basierte Systeme.
 
 * Weitere Informationen zu 3DOF und 6DOF finden Sie hier: <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
 * Weitere Informationen zur Positionsüberwachung und zum Grad der Freiheit (DOF) finden Sie hier: <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
@@ -96,9 +96,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Acer AH101 </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 100 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -109,9 +109,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Acer OJO 500 </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 100 ° </td>
-<td> Integrierter + 3.5-mm-Jack </td>
+<td> Integriert + 3,5-mm-Jack </td>
 <td> Integriert </td>
 <td style="text-align: center;">Mechanik</td>
 <td> Fall 2018 </td>
@@ -122,9 +122,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> ASUS HC102 </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 95 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -135,9 +135,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Dell Visor </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 105 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -148,9 +148,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Fujitsu-f-f-Headset </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 105 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -161,9 +161,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> HP-Reverb </td>
 <td> 4320x2160 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 114 ° </td>
-<td> Integrierter + 3.5-mm-Jack </td>
+<td> Integriert + 3,5-mm-Jack </td>
 <td> Integriert </td>
 <td style="text-align: center;">Software</td>
 <td> Spring 2019 </td>
@@ -174,9 +174,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> HP VR1000 </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 105 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -187,9 +187,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Lenovo-Explorer </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 105 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -200,9 +200,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Medion eRazer, Mr X1000 </td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 105 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -213,7 +213,7 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Samsung HMD Odyssee</td>
 <td> 2880x1600 </td>
 <td> AMOLED </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 110 ° </td>
 <td> Integriert </td>
 <td> Keine </td>
@@ -226,7 +226,7 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> Samsung HMD Odyssey+</td>
 <td> 2880x1600 </td>
 <td> AMOLED </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 110 ° </td>
 <td> Integriert </td>
 <td> Integriert </td>
@@ -239,9 +239,9 @@ Weitere Informationen zur in-out-Nachverfolgung finden Sie hier: <https://docs.m
 <td> 3gläser-blubur S2</td>
 <td> 2880x1440 </td>
 <td> - </td>
-<td> Bis zu 90Hz </td>
+<td> Bis zu 90 Hz </td>
 <td> 105 ° </td>
-<td> 3.5 mm-Jack </td>
+<td> 3,5-mm-Jack </td>
 <td> Keine </td>
 <td style="text-align: center;">Software</td>
 <td> Fall 2017 </td>
@@ -261,11 +261,11 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>Haben die Mixed Reality-Headsets eine Anpassung an die Augen Hilfe?
 
-**Schnelle Antwort:** Nein, für Windows Mixed Reality-Headsets gibt es keine Anpassung an die Augen Hilfe.
+**Schnelle Antwort:** Nein, die Windows Mixed Reality-Headsets haben keine Anpassung an die Augen Hilfe.
 
 ### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>Treten bei der Überwachung von Motion Controller Probleme auf, wenn sich mehrere Windows Mixed Reality-Headsets in der Nähe befinden?
 
-**Schnelle Antwort:** Wir haben festgestellt, dass es keine Beeinträchtigung von Bewegungs Controllern gibt, aber Sie sollten den Benutzern ausreichend Platz für die beste Darstellung in gemischter Realität bieten, d. h. 10 Meter x 10 Meter.
+**Schnelle Antwort:** Wir haben festgestellt, dass es keine Störungen mit Motion-Controllern gibt, aber Sie sollten den Benutzern ausreichend Platz für die beste Darstellung in gemischter Realität bieten, z. b. 10 Meter x 10 Meter.
 
 ### <a name="is-there-boundary-chaperone-or-guardian-system-in-windows-mixed-reality"></a>Gibt es in Windows Mixed Reality die Grenzen, das Chaperone-oder das wächtersystem?
 
@@ -279,7 +279,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 **Schnelle Antwort:** In der Regel beträgt die Kabellänge von Windows Mixed Reality-Headsets vier Meter, aber es hängt vom Headset ab. Weitere Informationen finden Sie unter: <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
 
-### <a name="can-i-use-an-usb--hdmi-extension-cables-with-windows-mixed-reality-headsets"></a>Kann ich ein USB/HDMI-Erweiterungs Kabel mit Windows Mixed Reality-Headsets verwenden?
+### <a name="can-i-use-a-usb--hdmi-extension-cable-with-windows-mixed-reality-headsets"></a>Kann ich ein USB/HDMI-Erweiterungs Kabel mit Windows Mixed Reality-Headsets verwenden?
 
 **Schnelle Antwort:** Wir haben Windows Mixed Reality entworfen, um ohne Erweiterungs Kabel arbeiten zu können. Die Verwendung von Erweiterungs Kabeln mit Mixed Reality-Headset wird nicht unterstützt
 
@@ -322,7 +322,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 **Schnelle Antwort:** Wenn Ihr PC nicht über integrierte Bluetooth-Unterstützung verfügt, müssen Sie einen USB-Bluetooth-Adapter einbinden, der Bluetooth 4,0 unterstützt, um Ihre Bewegungs Controller zu aktivieren.
 
-### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>Funktionieren die Controller mit Bluetooth 3,1, oder benötige ich Bluetooth 4,0?
+### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>Wird der Controller mit Bluetooth 3,1 arbeiten, oder benötige ich Bluetooth 4,0?
 
 **Schnelle Antwort:** Die unterstützte Mindestspezifikation für Windows Mixed Reality ist Bluetooth 4,0. Wenn Ihr PC über Bluetooth 3,1 verfügt, werden Sie nicht daran gehindert, die Controller zu verwenden, aber das beste Verhalten liegt bei BT 4,0. Laden Sie das [Mixed Reality-Portal](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) herunter, und führen Sie es aus, um zu überprüfen, ob Ihr PC
 
@@ -354,11 +354,11 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 ### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>Kann ich meine Tastatur in einem Windows Mixed Reality-Headset sehen?
 
-**Schnelle Antwort:** Die physische Tastatur kann nicht innerhalb des Headsets angezeigt werden, aber Sie können unsere Software Tastatur verwenden. Außerdem verfügen viele Windows Mixed Reality-Headsets über eine vordere angehänmte Anzeige, sodass Sie das Headset bei der Arbeit drehen können. Weitere Details: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
+**Schnelle Antwort:** Sie können ihre physische Tastatur nicht aus dem Headset sehen, aber Sie können unsere Software Tastatur verwenden. Außerdem verfügen viele Windows Mixed Reality-Headsets über eine vordere angehänmte Anzeige, sodass Sie das Headset bei der Arbeit drehen können. Weitere Details: <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
 
 ### <a name="what-games-require-a-gamepad-as-opposed-to-motion-controllers"></a>Welche Spiele erfordern ein Gamepad anstelle von Bewegungs Controllern?
 
-**Schnelle Antwort:** Wir erwarten, dass die meisten immersiven Windows Mixed Reality-Anwendungen Bewegungs Controller unterstützen, aber dies ist keine Voraussetzung. Die Unterstützung von Motion Controller ist für die Entwickler der-Funktion von nutzen. Der Entwickler kann entscheiden, welcher Modus von Eingabe in seinem Spiel unterstützt werden soll. Sie können sehen, welche Controller Typen auf der Produktdetailseite eines bestimmten Spiels oder einer APP im Store unterstützt werden.
+**Schnelle Antwort:** Wir erwarten, dass die meisten immersiven Windows Mixed Reality-Anwendungen Bewegungs Controller unterstützen, aber dies ist nicht zwingend erforderlich. Die Unterstützung von Motion Controller ist für die Entwickler der-Funktion von nutzen. Der Entwickler kann entscheiden, welcher Modus von Eingabe in seinem Spiel unterstützt werden soll. Sie können sehen, welche Controller Typen auf der Produktdetailseite eines bestimmten Spiels oder einer APP im Store unterstützt werden.
 
 ### <a name="if-i-am-using-xbox-game-streaming-can-i-use-my-xbox-controller"></a>Kann ich, wenn ich Xbox-Spiel Streaming verwende, meinen Xbox-Controller verwenden?
 

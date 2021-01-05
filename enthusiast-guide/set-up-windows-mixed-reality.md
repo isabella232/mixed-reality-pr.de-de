@@ -3,12 +3,12 @@ title: Einrichten von Windows Mixed Reality
 description: Erfahren Sie, wie Sie Ihre Windows Mixed Reality-Motion-Controller, Sprache und Audiodaten einrichten und die Raumgrenze für einen sicheren Wiedergabe Raum definieren.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Get Started, Setup, Motion Controller, Controller, Speech, Audio, sitzend, standing, Border, graphics drivers, Microsoft Edge, Chrom
-ms.openlocfilehash: 693c55a7375dd2cb1b4a6f880fca31ba8d50c7f9
-ms.sourcegitcommit: b90697776b7027ed7eb8dd49a72d52740a16d12d
+ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96843128"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725941"
 ---
 # <a name="set-up-windows-mixed-reality"></a>Einrichten von Windows Mixed Reality
 
@@ -42,7 +42,7 @@ Wenn Ihr Headset über ein integriertes Radio verfügt, werden die Controller, d
 
 Wenn Sie über ein Headset ohne integriertes Radio verfügen, müssen Sie Ihre Motion-Controller einrichten, indem Sie Sie mit Ihrem PC koppeln. Die meisten auf 2018 hergestellten Headsets verfügen über ein integriertes Radio.
 
-Wenn Sie nur die Verwendung eines Xbox Gamepad oder einer Tastatur und Maus planen, müssen Sie Ihre Controller nicht koppeln.  Wenn Sie beabsichtigen, Controller zu verwenden, sollten Sie Sie wahrscheinlich koppeln.
+Sie müssen ihre Controller nicht koppeln, wenn Sie nur die Verwendung eines Xbox Gamepad oder einer Tastatur und Maus planen.  Wenn Sie beabsichtigen, Controller zu verwenden, sollten Sie Sie koppeln.
 
 **Hinweis**: für Windows Mixed Reality Motion Controllers ist Bluetooth 4,0 erforderlich. Wenn Ihr PC nicht über integrierte Bluetooth verfügt, müssen Sie einen USB-Bluetooth-Adapter einbinden, der Bluetooth 4,0 unterstützt, um Ihre Bewegungs Controller zu aktivieren. Sie benötigen keinen Bluetooth-Adapter, um das integrierte Radio in Ihrem Headset zu verwenden.
 
@@ -56,7 +56,7 @@ Wählen Sie eine Raum Skalierung oder eine Schreibtisch Skalierung aus:
 
 **Option 1: Legen Sie für alle Umgebungen (auch als Raum Skala bezeichnet) fest** , dass Sie den Raum durchlaufen und die immersive gemischte Realität ist. Es wird empfohlen, mindestens fünf Fuß x sieben Fuß (1,5 Meter x 2 Meter) für die gemischte Realität zu löschen.
 
-**Option 2: Legen Sie für das sitzende und das Steh Personal (auch als Schreibtisch bezeichnet)** die Arbeit an Ihrem Schreibtisch fest. Es ist eine gute Option, wenn der Speicherplatz nicht groß ist. Dies bedeutet auch, dass Sie Ihr Headset ohne Grenze verwenden. Sie müssen an einem Ort bleiben, da Sie keine Begrenzung haben, um physische Hindernisse zu vermeiden. Außerdem sind einige apps und Spiele so konzipiert, dass Sie mit einer Grenze verwendet werden, sodass Sie möglicherweise nicht wie beabsichtigt funktionieren.
+**Option 2: Legen Sie für das sitzende und das Steh Personal (auch als Schreibtisch bezeichnet)** die Arbeit an Ihrem Schreibtisch fest. Es ist eine gute Option, wenn der Speicherplatz nicht groß ist. Dies bedeutet auch, dass Sie Ihr Headset ohne Grenze verwenden. Sie müssen an einem Ort bleiben, da Sie keine Begrenzung haben, um physische Hindernisse zu vermeiden. Einige apps und Spiele sind nicht so konzipiert, dass Sie eine Begrenzungs Darstellung sind, sodass Sie möglicherweise nicht wie beabsichtigt funktionieren.
 
 ![Setup auswählen](images/1050px-chooseasetup.png)
 
@@ -90,7 +90,7 @@ Wenn Sie diese Option auswählen, sind keine zusätzlichen Schritte erforderlich
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>Wie hoch ist die maximale Größe der Grenze?
 
-Die unterstützte maximale Begrenzungs Größe in Windows Mixed Reality beträgt einen Radius von 18x18ft (5.7 x 5.7 m) oder 13 ft (4 m) aus dem Mittelpunkt.  Die Begrenzungs Größe hängt vom Ankerpunkt und davon ab, wie weit vom Ankerpunkt verschoben werden kann, bevor Sie die Stabilität der Grenze riskieren.  Windows Mixed Reality basiert auf einer Phasen Abstraktion auf der Plattform, in der sich der Bereich befindet, in dem Sie sich bewegen. Diese Phase hängt von einem einzelnen Anker ab, den fast jede APP ebenfalls voraussetzt – es ist auch die Funktionsweise von "Vive" und "Oculus", da Sie nur über ein einzelnes Koordinatensystem verfügen.  Dies ist wichtig, da die Nachverfolgung bei der inneren Nachverfolgung bei der Umstellung von einem Ankerpunkt aus zuverlässig ist, um die Grenze stabil zu halten.  Wenn die Grenze zur Vermeidung physischer Hindernisse dient, wird es immer mehr und mehr zu einem Problem, das weiter von der Mitte Weg ist.  Zwei Faktoren haben die Entscheidung über die maximale Begrenzungs Größe getroffen. der maximale Abstand, mit dem Windows Mixed Reality-Headsets die beste Raum Skalierung mit einer Grenze und der Länge des Headset-Kabels bereitstellen können, was für die meisten Windows Mixed Reality-Headsets 10 ft (3 Mio.) ist.
+Die maximal unterstützte Begrenzungs Größe in Windows Mixed Reality ist ein Radius von 18x18ft (5.7 x 5.7 m) oder 13 ft (4 m) aus dem Mittelpunkt. Die Begrenzungs Größe hängt vom Ankerpunkt und davon ab, wie weit vom Ankerpunkt verschoben werden kann, bevor Sie die Stabilität der Grenze riskieren.  Windows Mixed Reality basiert auf einer Phasen Abstraktion, in der sich der Bereich befindet, in dem Sie sich bewegen. Diese Phase hängt von einem einzelnen Anker ab, den fast jede APP ebenfalls voraussetzt – es ist auch die Funktionsweise von "Vive" und "Oculus" mit dem einzigen Koordinatensystem.  Dies ist wichtig, da die Nachverfolgung bei der inneren Nachverfolgung bei der Umstellung von einem Ankerpunkt aus zuverlässig ist, um die Grenze stabil zu halten.  Wenn die Grenze zur Vermeidung von physischen Hindernissen dient, wird es zu einem Problem, das Sie besser von der Mitte weg.  Zwei Faktoren haben die Entscheidung über die maximale Begrenzungs Größe übergegangen. Der maximale Abstand, mit dem Windows Mixed Reality-Headsets die beste Raum Skalierung mit einer Grenze und der Länge des Headset-Kabels bereitstellen können, die für die meisten Windows Mixed Reality-Headsets 10 ft (3 Mio.) sind.
 
 ## <a name="set-up-speech"></a>Einrichten der Sprache
 
@@ -100,7 +100,7 @@ Sie können Cortana-Befehle in gemischter Realität aktivieren, sodass Sie Sprac
 
 ## <a name="set-up-your-audio-headset"></a>Einrichten des Audioheadsets
 
-Es sei denn, Sie haben eine Samsung HMD-Odyssee mit integrierten AKG-und Dual-Mikrofon-Arrays erworben. Sie müssen ein audioheadset mit Mikrofon und Kopfhörer erhalten und dieses in den 3,5-mm-AudioJack Ihres Headsets einbinden. Der 3,5-mm-audiowagen für Ihr Headset ist abhängig vom Headset-Modell, das sich entweder auf der Unterseite des Headset-Visors oder am Ende eines kurzen Audiokabels befindet, das an den Headset-Hypervisor angefügt ist.
+Es sei denn, Sie haben eine Samsung HMD-Odyssee mit integrierten AKG-und Dual-Mikrofon-Arrays erworben. Sie müssen ein audioheadset mit Mikrofon und Kopfhörer erhalten und dieses in den 3,5-mm-AudioJack Ihres Headsets einbinden. Der AudioJack 3,5-mm für das Headset befindet sich auf der Unterseite des Headset-Visors oder am Ende eines kurzen Audiokabels, das an den Headset-Hypervisor angefügt ist, je nach dem Headset-Modell.
 
 ## <a name="adjusting-your-headsets-display-settings"></a>Anpassen der Anzeigeeinstellungen ihres Headsets
 
@@ -118,7 +118,9 @@ Wenn Sie ein Headset mit höherer Auflösungs Anzeige an Ihren PC anschließen, 
 
 * Diese Einstellung bietet die Option für den Windows Mixed Reality-Kompositions Stapel, um nativ (z. b. bei 4320x2160) zu werden, oder um den Kompositions Stapel bei einer niedrigeren Auflösung und hochskalieren zu lassen (z. b. bei 2880x1440 und hochskalieren bis 4320x2160).
 * Die Standardeinstellung ist das systemeigene Rendering (z. b. die **4320 x 2160-Option (beste Qualität)** ), um die beste visuelle Qualität zu erzielen, die von Ihrem Headset aus möglich ist.
-* Wenn Ihr PC die Mindestanforderungen an die Grafikhardware für Ihr Headset mit höherer Auflösung anzeigt, oder wenn Sie Probleme mit der Grafikleistung feststellen, verwenden Sie die Option **Automatische upskalierung (beste Leistung)** .
+* Verwenden Sie die Option **Automatische upskalierung (beste Leistung)** , wenn Folgendes verwendet wird:
+    * Ihr PC erfüllt nicht die Mindestanforderungen an die Grafikhardware für Ihr Headset mit einer höheren Auflösung.
+    * Sie sehen Probleme mit der Grafikleistung.
 
 Diese Einstellung ist unter Windows 10, Version 1903 oder höher verfügbar.
 
@@ -130,7 +132,7 @@ Mit dieser Einstellung wird die IPD-Kalibrierung für Headsets mit der IPD-Softw
 
 Diese erweiterte Einstellung überschreibt die Standardeinstellung für die Aktualisierung der Headset-Anzeige.
 
-* Automatisch **(Standard)**: Wählen Sie basierend auf der Hardwarekonfiguration Ihres PCs automatisch 60 Hz oder 90 Hz aus.
+* Automatisch **(Standard)**: Wählen Sie basierend auf der Hardwarekonfiguration Ihres PCs automatisch die Benutzeroberflächen 60 Hz oder 90-Hz aus.
 * **60 Hz**
 * **90 Hz**
 
@@ -175,7 +177,7 @@ Um den neuen, auf Windows Windows Edge basierenden Microsoft Edge in Windows Mix
 
 Das einmalige eingeben der gemischten Realität ist so einfach wie das Zurücksetzen des Headsets, wenn es mit dem PC verbunden ist. Sie können die gemischte Reality-Portal Anwendung auch manuell starten, indem Sie Sie über das Startmenü öffnen. Eingabe und Audiodaten werden automatisch an das Headset weitergeleitet, wenn Sie es einfügen, oder Sie können dies manuell durch Drücken von **Windows + Y** auf der Tastatur auslöst.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

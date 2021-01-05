@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, UX, Richtlinien, Listenansicht
-ms.openlocfilehash: abedff5a273816f49419c7823b96eda1d474e336
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702316"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847367"
 ---
 # <a name="head-gaze-and-dwell"></a>Anvisieren mit dem Kopf und Verweilen
 
@@ -19,7 +19,7 @@ Wenn die Hände mit Werkzeugen und Gegenständen beschäftigt sind, können Gest
 
 ## <a name="scenarios"></a>Szenarien
 
-In Szenarien, in denen die Hände einer Person mit anderen Aufgaben beschäftigt sind, ist der Kopf-und sprach Einstieg hervorragend, und die Stimme ist aufgrund von Umwelt-oder sozialen Einschränkungen nicht 100% zuverlässig oder nicht verfügbar. Ein gutes Beispiel ist eine Person, die eine HoloLens trägt, um Referenzinformationen bei der Reparatur eines Fahrzeugmotors zu überlagern. Die Hände sind mit Werkzeugen beschäftigt oder stützen den eigenen Körper, während sich die Person in den Motorraum lehnt. Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkzeuge, wodurch sich die Verwendung von Sprachbefehlen schwierig gestaltet. In der Kopfzeile und im Leben kann die Person, die die hololens verwendet, sicher in Ihrem Referenzmaterial navigieren, ohne den Workflow zu unterbrechen. 
+In Szenarien, in denen die Hände einer Person mit anderen Aufgaben beschäftigt sind, eignet sich der Kopf-und die Ansprechpartner hervorragend. Die Funktion ist auch nützlich, wenn die Stimme aufgrund von Umwelt-oder sozialen Einschränkungen nicht 100% zuverlässig ist oder nicht verfügbar ist. Ein gutes Beispiel ist eine Person, die eine HoloLens trägt, um Referenzinformationen bei der Reparatur eines Fahrzeugmotors zu überlagern. Die Hände sind mit Werkzeugen beschäftigt oder stützen den eigenen Körper, während sich die Person in den Motorraum lehnt. Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkzeuge, wodurch sich die Verwendung von Sprachbefehlen schwierig gestaltet. In der Kopfzeile und im Leben kann die Person, die die hololens verwendet, sicher in Ihrem Referenzmaterial navigieren, ohne den Workflow zu unterbrechen. 
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -49,7 +49,7 @@ In Szenarien, in denen die Hände einer Person mit anderen Aufgaben beschäftigt
 
 **Vermeiden Sie „Anvisieren als Waffe“**
 
-„Anvisieren mit dem Kopf und Verweilen“ erfordert ein intuitives visuelles Feedback, aber zu viel Feedback kann beklemmend wirken. Das Feedback sollte einem Benutzer helfen sein Ziel zu erkennen, aber das Ziel nicht gegen seinen Willen automatisch auswählen. Das Lesen von Text, Symbolen und Beschriftungen erfordert eine zusätzliche Berücksichtigung, um einer Person den Raum zu geben, die Informationen vor der Auswahl zu erfassen.
+„Anvisieren mit dem Kopf und Verweilen“ erfordert ein intuitives visuelles Feedback, aber zu viel Feedback kann beklemmend wirken. Das Feedback sollte einem Benutzer helfen, seine Zielsetzungen zu erkennen, ihn aber nicht automatisch gegen seine Absicht auszuwählen. Beim Lesen von Text, Symbolen und Bezeichnungen müssen Sie den Benutzern Zeit zum Aufnehmen der Informationen geben, bevor Sie diese auswählen.
     
 **Informationen zur Geschwindigkeit**
     
@@ -57,37 +57,38 @@ Verweilinteraktionen können je nach Auswirkung der Navigation unterschiedliche 
     
 **Vermeiden von Jo-Jo-Effekten**
 
-Der Jo-Jo-Effekt ist ein unangenehmes Muster der Kopfbewegung, das entstehen kann, wenn die Positionierung von Inhalten und die Steuerung durch „Anvisieren mit dem Kopf und Verweilen“ die Personen zwingt, ständig auf und ab zu schauen. Beispielsweise löst ein Listen Navigationsbereich mit der Schaltfläche "Head-Blick" und "Wohnen" am unteren Rand eine Schleife von "-Look down" aus, um zu leben, nach Ergebnissen zu suchen, zu warten, usw. Dieses resultierende Muster ist unbequem und sollte vermieden werden, indem Navigations Steuerelemente an einem zentralisierten Speicherort platziert werden, der weniger hin und her erfordert. Die Positionierung der Schaltflächen zum Verweilen in Bezug auf ihre Wirkung wird für den Tragekomfort wichtig.
-
+Der "Yo-Yo"-Effekt ist ein unangenehmes Kopf Verschiebungs Muster, das auftritt, wenn die Steuerelemente "Content Placement" und "Head-Do/Dwell" Benutzer immer wieder nach oben und unten suchen Beispielsweise wird in einem Listen Navigationsbereich mit der Schaltfläche "Kopf-und Weitergabe" am unteren Rand eine Schleife von "-Look down" angezeigt, um zu leben, nach Ergebnissen zu suchen, zu verweilen usw. Das resultierende Muster ist nicht sehr unbequem. Daher empfiehlt es sich, Navigations Steuerelemente an einem zentralisierten Speicherort zu platzieren, der weniger hin und her erfordert. Die Platzierung von Schaltflächen, die auf Ihren Effekten basieren, wird für den Komfort wichtig.
+s
 <br>
 
 ---
 
-
 ## <a name="ux-guidelines-and-best-practices"></a>Richtlinien und bewährte Methoden für die Benutzerumgebung
 
 ### <a name="target-sizes"></a>Zielgrößen
-  Um auf einfache Weise zugänglich zu sein, müssen die Haupt-und zielziele groß genug sein, um sich bequem anzusehen und einen Head-stabilen auf dem Ziel für den vorgeschriebenen Zeitraum zu halten. Wir empfehlen eine minimale Zielgröße von 2 Grad, um die komfortablere Leistung zu erzielen. 
+
+Um auf einfache Weise zugänglich zu sein, müssen die Haupt-und zielziele groß genug sein, um sich bequem anzusehen, und einen der Kopf-und Endwerte für den vorgesehenen Zeitpunkt auf dem Ziel halten. Wir empfehlen eine minimale Zielgröße von 2 Grad, um die komfortablere Leistung zu erzielen. 
 
 ### <a name="visual-feedback"></a>Visuelles Feedback
 
 Wenn Sie eine radiale Füllung zur Darstellung des Timers für das Verweilen verwenden, beginnen Sie in der Mitte der Schaltfläche. Eine konsistente Reaktion ist weniger irritierend als vollständig unterschiedliche Richtungen auf verschiedenen Schaltflächen. 
 
-  * Diese Regel kann jedoch für direktionale Interaktionen (z. B. Navigation nach oben/unten/links/rechts usw.) missachtet werden. Microsoft Dynamics 365-Handbücher machen z. B. eine Ausnahme, wenn WEITER/ZURÜCK von links nach rechts ausgefüllt werden.
-  * Erwägen Sie für Szenarien wie das Umschalten einer Schaltfläche, die radiale Füllung von außen zu invertieren. Das gegenläufige Gefühl beim Drücken einer Schaltfläche ist ein angenehmes visuelles Muster, das beibehalten werden sollte. 
+  * Diese Regel kann jedoch für direktionale Interaktionen (z. b. Navigations nach oben/unten/links/rechts usw.) getrennt werden. Microsoft Dynamics 365-Handbücher machen z. B. eine Ausnahme, wenn WEITER/ZURÜCK von links nach rechts ausgefüllt werden.
+  * Denken Sie daran, radiale Füllflächen von außen zu umschließen, für Szenarien wie das Umschalten auf eine Schaltfläche. Das gegenläufige Gefühl beim Drücken einer Schaltfläche ist ein angenehmes visuelles Muster, das beibehalten werden sollte. 
 
 ### <a name="progressive-disclosure"></a>Schrittweise Offenlegung
 
-„Schrittweise Offenlegung“ bedeutet, dass nur so viele Details angezeigt werden, wie in den einzelnen Phasen einer Interaktion relevant sind. Für das Verweilen bedeutet dies, dass das Verweilziel beim Hervorheben (z. B. in einem Listensteuerelement) offengelegt wird.
+„Schrittweise Offenlegung“ bedeutet, dass nur so viele Details angezeigt werden, wie in den einzelnen Phasen einer Interaktion relevant sind. Für "Dwell" bedeutet dies, dass das "Dwell"-Ziel bei der Hervorhebung (z. b. in einem Listen Steuerelement) offen
 
  ### <a name="oversized-targets"></a>Überdimensionale Ziele
+
 Der Verweilbereich kann größer als das inaktive Symbol sein, um die Verwendung zu erleichtern, wie die Schaltfläche „Zurück“ in Microsoft Dynamics 365-Handbüchern.
 
 ### <a name="prevent-flickering-with-delayed-feedback"></a>Vermeiden von Flimmern durch verzögertes Feedback
-Verwenden Sie eine kurze Verzögerung, bevor Sie mit dem visuellen Feedback beginnen, um ein Flimmern zu vermeiden, wenn ein Benutzer ein Verweilziel überquert.
-* Halten Sie für Schaltflächen, mit denen häufig interagiert wird, die Verzögerung sehr kurz, damit die Anwendung reaktiv ist.
-* Für Schaltflächen, die nur selten behandelt werden, kann eine längere Verzögerung sinnvoll sein, um die Schnittstelle zu vermeiden, die twitlapp ist.
 
+Verwenden Sie eine kurze Verzögerung, bevor Sie mit dem visuellen Feedback beginnen, um ein Flimmern zu vermeiden, wenn ein Benutzer ein Verweilziel überquert.
+* Halten Sie für Schaltflächen, mit denen häufig interagiert wird, die Verzögerung kurz, damit die Anwendung reaktiv ist.
+* Für Schaltflächen, die nur selten behandelt werden, kann eine längere Verzögerung sinnvoll sein, um die Schnittstelle zu vermeiden, die twitlapp ist.
 
 <br>
 
@@ -118,7 +119,8 @@ Verwenden Sie eine kurze Verzögerung, bevor Sie mit dem visuellen Feedback begi
 
 
 ### <a name="low-frequency-buttons"></a>Schaltflächen mit seltener Interaktion
-Schaltflächen mit seltener Interaktion sind Schaltflächen, mit denen in der Anwendung nicht so häufig interagiert wird. Ein gutes Beispiel könnte eine Schaltfläche für den Zugriff auf das Einstellungsmenü oder eine Schaltfläche zum Löschen der gesamten Arbeit sein.
+
+Schaltflächen mit niedriger Frequenz sind Schaltflächen, die in der gesamten Anwendung nicht so häufig behandelt werden. Ein gutes Beispiel könnte eine Schaltfläche für den Zugriff auf das Einstellungsmenü oder eine Schaltfläche zum Löschen der gesamten Arbeit sein.
 
 * Versuchen Sie, diese Schaltflächen von häufig genutzten Pfaden zum Anvisieren mit dem Kopf fernzuhalten, um eine versehentliche Aktivierung zu vermeiden. 
 
@@ -130,7 +132,7 @@ Schaltflächen mit seltener Interaktion sind Schaltflächen, mit denen in der An
 
 :::row:::
     :::column:::
-        Wenn eine Aktion erhebliche Auswirkungen hat, wie das Aufladen von Geld, das Löschen von Arbeit oder das Starten eines zeitintensiven Prozesses, ist es sinnvoll, die Auswahl einer Schaltfläche durch eine Person bestätigen zu lassen.<br>
+        Wenn eine Aktion erhebliche Auswirkungen hat, z. b. das Berechnen von Geld, das Löschen von Arbeit oder das Starten eines langen Prozesses, ist es hilfreich, sicherzustellen, dass eine Person eine Schaltfläche auswählen wollte.<br>
         <br>
         **Empfehlungen**<br>
   * Auswahlhervorhebung auf Hauptschaltfläche anzeigen.
@@ -149,7 +151,8 @@ Schaltflächen mit seltener Interaktion sind Schaltflächen, mit denen in der An
 ---
 
 ### <a name="toggle-buttons"></a>Umschalter
-Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionieren. Wenn eine Person auf einem Umschalter verweilt und ihn aktiviert, muss sie die Schaltfläche verlassen und dann zurückkehren, um die Verweillogik neu zu starten. Es ist wichtig, dass die umschaltbaren Schaltflächen einen eindeutigen aktiven und inaktiven Zustand aufweisen. 
+
+Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionieren. Wenn eine Person auf eine UMSCHALT Fläche klickt und Sie aktiviert, muss Sie die Schaltfläche Beenden und dann zurückkehren, um die vergabelogik neu zu starten. Es ist wichtig, dass umschaltbare Schaltflächen den Zustand "aktiv" und "inaktiv" aufweisen. 
 
 <br>
 
@@ -159,14 +162,14 @@ Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionie
 
 :::row:::
     :::column:::
-        Listenansichten stellen eine besondere Herausforderung für Kopf-und eingabeeingaben dar. Benutzer müssen in der Lage sein, den Inhalt zu scannen, ohne das Gefühl zu haben, dass sie sich in der Nähe der Verweilziele besonders vorsichtig bewegen müssen.<br>
+        Listenansichten stellen eine besondere Herausforderung für Kopf-und eingabeeingaben dar. Personen können den Inhalt scannen, ohne dass Sie sich so fühlen müssen, dass Sie die zielziele kippen müssen.<br>
         <br>
 **Empfehlungen**<br>
   * Lassen Sie die ganze Zeile hervorheben, wenn Sie in den Kopf-und Ausgangspunkt steht
   * Zeigt nur das Ziel an, wenn die Zeile hervorgehoben wird, um das visuelle Rauschen zu verringern.
   * Sie sollten klar und konsistent mit der Position von "Dwell Targets" sein.
   * Zeigen Sie nicht alle Ziele auf einmal an, um sich wiederholende Benutzeroberflächen zu vermeiden.
-  * Verwenden Sie das gleiche Muster so oft wie möglich, um die Benutzerfreundlichkeit der UX zu gewährleisten.<br>
+  * Verwenden Sie das gleiche Muster so oft wie möglich, um die Benutzerfreundlichkeit der UX zu schaffen.<br>
         <br>
 *Abbildung: Liste der Microsoft Dynamics 365-Leitfäden*
     :::column-end:::
@@ -179,7 +182,8 @@ Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionie
 
 ---
  
- ## <a name="see-also"></a>Siehe auch
+ ## <a name="see-also"></a>Weitere Informationen
+
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Hände – Direkte Manipulation](direct-manipulation.md)
 * [Hände – Gesten](gaze-and-commit.md#composite-gestures)

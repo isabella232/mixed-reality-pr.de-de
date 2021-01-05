@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131954"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725771"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Verwendung von Sprache in Windows Mixed Reality
 
-Verwenden Sie Ihre Stimme, um Windows Mixed Reality schneller zu finden – nehmen Sie ein kurzes Foto auf, und öffnen Sie eine APP, sogar ohne Controller. Um eine einfache Methode einzugeben, versuchen Sie den Diktat Modus auf der Mixed Reality-Tastatur. 
+Sie können Ihre Stimme verwenden, um Windows Mixed Reality schneller zu finden. Ein kurzes Foto, das das Öffnen einer APP und sogar das teleportieren ohne Controller ist, ist ein Wort entfernt. Um eine einfache Methode einzugeben, versuchen Sie den Diktat Modus auf der Mixed Reality-Tastatur. 
 
 Haben Sie Probleme mit der Sprache? [Hilfe erhalten](using-wmr-faq.md#speech-commands-arent-working)
 
@@ -30,11 +30,11 @@ Haben Sie Probleme mit der Sprache? [Hilfe erhalten](using-wmr-faq.md#speech-com
 
 ## <a name="see-it-say-it"></a>Sehen, sagen
 
-Wenn Sie in der Windows Mixed Reality-Startseite ein Wort sehen, können Sie es häufig als Sprachbefehl verwenden. Nehmen Sie beispielsweise einfach den Namen einer Schaltfläche, um Sie auszuwählen. Wenn ein Name nicht angezeigt wird, zeigen Sie auf die Schaltfläche (oder, wenn Sie ein Xbox Gamepad verwenden, den Blick darauf), um herauszufinden, was zu sagen ist. 
+Wenn Sie in der Windows Mixed Reality-Startseite ein Wort sehen, können Sie es häufig als Sprachbefehl verwenden. Nehmen Sie beispielsweise einfach den Namen einer Schaltfläche, um Sie auszuwählen. Wenn ein Name nicht angezeigt wird, zeigen Sie auf der Schaltfläche auf die Schaltfläche, um herauszufinden, was zu sagen ist. Für Xbox Gamepads können Sie auf die Schaltfläche klicken.
 
 ## <a name="general-speech-commands"></a>Allgemeine Sprachbefehle
 
-Verwenden Sie diese in Windows Mixed Reality, um schneller zu werden. Einige Befehle verwenden den Cursor Cursor, der angezeigt wird, indem Sie "Select" (auswählen).
+Verwenden Sie die folgenden Sprachbefehle in Windows Mixed Reality, um schneller zu kommen. Einige Befehle verwenden den Cursor Cursor, der angezeigt wird, indem Sie "Select" (auswählen).
 
 | Aufgabe | Sagen Sie dies |
 | --- | --- |
@@ -120,7 +120,7 @@ Verwenden Sie dann einen der folgenden Befehle, um "Hey Cortana" zu verwenden:
 
 ## <a name="keyboard-dictation"></a>Tastatur Diktat
 
-Wechseln Sie zu einem beliebigen Zeitpunkt, an dem die Tastatur aktiv ist, in den Diktat Modus. Wählen Sie Mikrofon auf der Tastatur aus – oder klicken Sie einfach auf "mit dem Wort beginnen" –, um loszulegen.
+Wechseln Sie jederzeit in den Diktat Modus, um eine einfache Möglichkeit zum Eingeben der Tastatur zu haben. Wählen Sie Mikrofon auf der Tastatur aus – oder klicken Sie einfach auf "mit dem Wort beginnen" –, um loszulegen.
 
 > [!NOTE]
 > Die Mixed Reality-Tastatur ist nur in englischer Sprache verfügbar, Sie können jedoch in jeder der unterstützten [Windows Mixed Reality-Sprachen](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)Diktat Ausdrücke verwenden.
@@ -132,8 +132,8 @@ Wechseln Sie zu einem beliebigen Zeitpunkt, an dem die Tastatur aktiv ist, in de
 | Tastatur schließen | Schließen |
 | Diktat schreiben | Mit dem diktieren beginnen |
 | Diktat Beendigung | Diktat nicht mehr |
-| Löschen Sie das, was Sie gerade vorgegeben haben. | Löschen |
-| Alles im Feld "Diktat" auswählen | Alles auswählen |
+| Löschen Sie das, was Sie vorgegeben haben | Löschen |
+| Alles im Feld "Diktat" auswählen | Alle auswählen |
 
 ### <a name="punctuation"></a>Interpunktion
 
@@ -148,11 +148,11 @@ Hier sind die Schlüsselwörter, die Sie verwenden können:
 * Hashtag, Smiley/Smiley, frowny, Zwinkern
 * Dollar, Prozent
 
-Manchmal ist es hilfreich, Dinge wie e-Mail-Adressen zu benennen. Beispielsweise example@outlook.com würden Sie Folgendes vorschreiben: "e X A M P L E bei Outlook-Punkt-com".
+Manchmal ist es hilfreich, Dinge wie e-Mail-Adressen zu benennen. Um z example@outlook.com . b. festzulegen, geben Sie "e X A M P L E bei Outlook-Punkt-com" an.
 
 Um das Diktat zu deaktivieren, wählen Sie **abgeschlossen** aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

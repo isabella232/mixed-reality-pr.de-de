@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr,
-ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
-ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
+ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95417204"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725707"
 ---
 # <a name="start-your-vr-journey"></a>Starten Sie Ihre VR-Journey
 
@@ -23,7 +23,11 @@ Verwenden Sie die folgenden Prüfpunkte zum Einrichten, konfigurieren und verwen
 
 ### <a name="1-before-you-buy"></a>1. vor dem Kauf von
 
-Es ist wichtig, dass Ihr PC die von Ihnen gekauften VR-Hardware verarbeiten kann, um die beste Einrichtung und Nutzung zu erzielen. In einigen Fällen müssen Sie möglicherweise zusätzliche [Adapter oder Hardware](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)anordnen. In diesem Abschnitt werden die Mindestanforderungen an PCs, Kompatibilitäts Prüfungen und häufig gestellte Fragen zu Virtual Reality-Hardware erläutert.
+Der PC muss die von Ihnen gekauften VR-Hardware verarbeiten, um die beste Einrichtung und Nutzung zu erzielen. In einigen Fällen müssen Sie möglicherweise zusätzliche [Adapter oder Hardware](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)anordnen. In diesem Abschnitt werden Sie durch die folgenden Schritte geführt:
+
+* Die Mindestanforderungen an den PC
+* Kompatibilitäts Prüfungen
+* Häufig gestellte Fragen im Zusammenhang mit Virtual Reality-Hardware
 
 <br>
 
@@ -48,7 +52,11 @@ Wenn Sie Ihr Gerät haben, müssen Sie es ordnungsgemäß einrichten und konfigu
 
 ### <a name="3-using-windows-mixed-reality"></a>3. Verwenden von Windows Mixed Reality
 
-Es gibt eine Vielzahl von Features und Diensten, die über Windows Mixed Reality und immersive VR-Headsets verfügbar sind. Am Ende dieses Abschnitts können Sie sich mit der Navigation in der virtuellen Heimumgebung, der Verwendung von Controllern und Spracheingaben als Eingaben und der Integration von Diensten und Anwendungen wie steamvr und webvr vertraut machen.
+Es gibt verschiedene Features und Dienste, die über Windows Mixed Reality und immersive VR-Headsets verfügbar sind. Am Ende dieses Abschnitts sind Sie zufrieden:
+
+* Navigieren in der virtuellen Heimumgebung
+* Verwenden von Controllern und Spracheingaben als Eingaben
+* Integration von Diensten und Anwendungen wie steamvr und webvr.
 
 <br>
 
@@ -57,7 +65,7 @@ Es gibt eine Vielzahl von Features und Diensten, die über Windows Mixed Reality
 | [Lernen von Mixed Reality](learn-mixed-reality.md) | Erfahren Sie, wie Sie Ihren Blick, ihre Stimme, ihre Controller und Tastatur-/Maus-Eingaben verwenden. |
 | [Navigieren Sie in der Windows Mixed Reality-Startseite](your-mixed-reality-home.md) | Erkunden Sie die virtuelle Umgebung des Windows Mixed Reality-Home  |
 | [Verwenden von Controllern](controllers-in-wmr.md) | Einrichten, verstehen und Verwenden von Motion-Controllern |
-| [Verwenden von Spracheingabe](using-speech-in-wmr.md) | Machen Sie sich mit einer Vielzahl von Sprachbefehlen vertraut, die mit 3D-Objekten, der APP-Leiste, dem Startmenü und Cortana interagieren können. |
+| [Verwenden von Spracheingabe](using-speech-in-wmr.md) | Machen Sie sich mit verschiedenen Sprachbefehlen vertraut, die mit 3D-Objekten, der APP-Leiste, dem Startmenü und Cortana interagieren können. |
 
 > [!NOTE]
 > Wenn Sie Probleme mit den oben genannten Features haben, finden Sie unter Häufig gestellte Fragen zur **[Verwendung von Windows Mixed Reality](using-wmr-faq.md)**.
@@ -81,9 +89,9 @@ Wenn Sie Probleme mit der immersiven Hardware haben, beginnen Sie mit:
  
 * [Allgemeine häufig gestellte Fragen](troubleshooting-windows-mixed-reality.md) 
 
-Wenn Sie nicht finden, was Sie suchen, finden Sie eine vollständige Liste der themenspezifischen FAQ-Dokumente im Abschnitt " **Problem** Behandlung bei FAQs", die alles von der Installations-und Fehlercodes bis hin zu Leistungs-und Headset-anzeigen abdecken. Wenn Sie mehr darüber erfahren möchten, wie bestimmte Features in VR funktionieren, sehen Sie sich die Artikel zur [Funktionsweise von Bewegungs Controllern](controllers-in-wmr.md) und der [in-out-Nachverfolgung](tracking-system.md) an.
+Wenn Sie nicht finden, was Sie suchen, finden Sie eine vollständige Liste der themenspezifischen FAQ-Dokumente im Abschnitt Problembehandlung bei FAQ, in der alles von der Installations-und Fehlercodes bis hin zur Leistung und zu den Headset **-** anzeigen abgedeckt wird. Weitere Informationen zur Funktionsweise spezifischer Features finden Sie in den Artikeln zur [Funktionsweise von Bewegungs Controllern](controllers-in-wmr.md) und der [in-out-Nachverfolgung](tracking-system.md) .
 
-Wir sind immer auf die Suche nach neuen Problemen und Fehlern. Wenn Sie also auf eine nicht dokumentierte Weise stoßen, senden Sie uns [hier Feedback](filing-feedback.md).
+Wir sind immer an der Lookout-Suche nach neuen Problemen und Fehlern. Wenn Sie also nicht dokumentierten, senden Sie uns [Feedback](filing-feedback.md).
 
 > [!NOTE]
 > Einen vollständigen Windows Mixed Reality-releaseverlauf finden Sie [hier](mixed-reality-software.md).

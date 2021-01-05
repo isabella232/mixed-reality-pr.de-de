@@ -6,22 +6,22 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Hololens, Anmerkungen zu dieser Version, Betriebssystem, Plattform, Features, kommerzielle Suite
-ms.openlocfilehash: 8df7f745e20d350d06945d2c1a9ead3564558439
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783979"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725961"
 ---
 # <a name="release-notes---august-2016"></a>Versionshinweise – August 2016
 
-Das hololens-Team überwacht das Feedback von Entwicklern im Windows-Insider Programm, um unsere Arbeit zu priorisieren. Bitte geben Sie [uns Feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) über den Feedback-Hub, die [Entwickler Foren](https://forums.hololens.com) und [Twitter via @HoloLens ](https://twitter.com/hololens). Da Windows 10 das Anniversary Update umfasst, bietet das hololens-Team eine weitere Verbesserung der Holographic-Darstellung. In diesem Update haben wir uns auf wichtige Korrekturen, Verbesserungen und die Einführung von Features konzentriert, die von Unternehmen angefordert werden und in der kommerziellen Suite von Microsoft hololens verfügbar sind.
+Das hololens-Team überwacht das Feedback von Entwicklern im Windows-Insider Programm, um unsere Arbeit zu priorisieren. Geben Sie [uns weiterhin Feedback](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) über den Feedback-Hub, die [Entwickler Foren](https://forums.hololens.com) und [Twitter @HoloLens via ](https://twitter.com/hololens). Da Windows 10 das Anniversary Update umfasst, bietet das hololens-Team eine weitere Verbesserung der Holographic-Darstellung. In diesem Update haben wir uns auf wichtige Korrekturen, Verbesserungen und die Einführung von Features konzentriert, die von Unternehmen angefordert werden und in der kommerziellen Suite von Microsoft hololens verfügbar sind.
 
-**Neueste Version:** Windows Holographic August 2016-Update ( **10.0.14393.0** , Windows 10 Anniversary Release)
+**Neueste Version:** Windows Holographic August 2016-Update (**10.0.14393.0**, Windows 10 Anniversary Release)
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-Um [auf die aktuelle Version zu aktualisieren](https://docs.microsoft.com/windows/mixed-reality/updating-hololens), öffnen Sie die app " *Einstellungen* ", navigieren Sie zu *Update & Sicherheit* , und wählen Sie dann die Schaltfläche *nach Updates suchen aus* .
+Um [auf die aktuelle Version zu aktualisieren](https://docs.microsoft.com/windows/mixed-reality/updating-hololens), öffnen Sie die app " *Einstellungen* ", navigieren Sie zu *Update & Sicherheit*, und wählen Sie dann die Schaltfläche *nach Updates suchen aus* .
 
 ## <a name="new-features"></a>Neue Funktionen
 
@@ -29,7 +29,7 @@ Um [auf die aktuelle Version zu aktualisieren](https://docs.microsoft.com/window
 
 **Aktualisierter hololens-Emulator** Wir haben auch eine aktualisierte Version des hololens-Emulators veröffentlicht.
 
-**Gamepad-Unterstützung** Sie können jetzt Bluetooth-Gamepads mit hololens verwenden. Der neu veröffentlichte Xbox Wireless Controller bietet Bluetooth-Funktionen und kann verwendet werden, um Ihre bevorzugten Spiele und Apps mit Gamepad-aktiviertem Spiel zu spielen. Ein [Controller Update](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) muss angewendet werden, bevor Sie die Xbox Wireless Controller S mit hololens verbinden können. Der Xbox Wireless Controller S wird von [xinput](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) -und [Windows. Gaming. Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) -APIs unterstützt. Auf zusätzliche Modelle von Bluetooth-Controllern kann über die [Windows. Gaming. Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) -API zugegriffen werden.
+**Gamepad-Unterstützung** Sie können jetzt Bluetooth-Gamepads mit hololens verwenden. Der neu veröffentlichte Xbox Wireless Controller bietet Bluetooth-Funktionen und kann verwendet werden, um Ihre bevorzugten Spiele und Apps mit Gamepad-aktiviertem Spiel zu spielen. Ein [Controller Update](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) muss angewendet werden, bevor Sie die Xbox Wireless Controller S mit hololens verbinden können. Der Xbox Wireless Controller S wird von [xinput](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx) -und [Windows. Gaming. Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) -APIs unterstützt. Sie können über die [Windows. Gaming. Input](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) -API auf mehr Bluetooth-Controller Modelle zugreifen.
 
 ## <a name="improvements-and-fixes"></a>Verbesserungen und Fehlerbehebungen
 
@@ -49,7 +49,7 @@ Die folgenden Probleme wurden behoben:
 * die APP-Leiste kann während des angewendeter Cursors im Anpassungsmodus blinken
 * Im Anpassungsmodus wechselt der Eye-Gaze-Punkt-Cursor zu einem späteren Zeitpunkt in den 4-Pfeil-Cursor.
 * "Hey Cortana Play Music" startet Groove nicht.
-* nach dem vorherigen Update wird bei "Go Home" der Pins-Bereich nicht ordnungsgemäß angezeigt.
+* nach dem vorherigen Update wird bei "Go Home" der PIN-Panel nicht ordnungsgemäß angezeigt.
 
 ## <a name="introducing-microsoft-hololens-commercial-suite"></a>Einführung in die kommerzielle Suite von Microsoft hololens
 
@@ -61,18 +61,18 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 
 * **Kiosk Modus.** Mit dem Modus "hololens Kiosk" können Sie einschränken, welche apps ausgeführt werden, um Demo-oder Showcase-Erfahrungen zu ermöglichen.<br>
   ![Im Kiosk Modus wird hololens direkt in der APP Ihrer Wahl gestartet.](images/201608-kioskmode-400px.png)
-* **Verwaltung mobiler Geräte (Mobile Device Management, MDM) für hololens.** Ihre IT-Abteilung kann mehrere hololens-Geräte gleichzeitig mit Lösungen wie Microsoft InTune verwalten. Sie können Einstellungen verwalten, zu installierende Apps auswählen und Sicherheitskonfigurationen festlegen, die auf die Anforderungen Ihrer Organisation zugeschnitten sind.<br>
+* **Verwaltung mobiler Geräte (Mobile Device Management, MDM) für hololens.** Ihre IT-Abteilung kann mehrere hololens-Geräte gleichzeitig mit Lösungen wie Microsoft InTune verwalten. Sie können Einstellungen verwalten, Apps für die Installation auswählen und Sicherheits Konfigurationen festlegen, die auf die Anforderungen Ihres Unternehmens zugeschnitten sind.<br>
   ![Die Verwaltung mobiler Geräte auf hololens ermöglicht Geräteverwaltung auf Unternehmens Niveau über mehrere Geräte hinweg.](images/201608-enterprisemanagement-400px.png)
-* **Windows Update für Unternehmen.** Kontrollierte Betriebssystemupdates für Geräte und Unterstützung für den Branch für langfristige Wartung.
+* **Windows Update für Unternehmen.** Kontrollierte Betriebssystemupdates für Geräte und Unterstützung für langfristigen Wartungs Zweig.
 * **Datensicherheit.** Die BitLocker-Datenverschlüsselung ist auf hololens aktiviert, um die gleiche Sicherheitsstufe wie alle anderen Windows-Geräte bereitzustellen.
-* **Arbeitsplatz Zugriff.** Jeder in Ihrer Organisation kann eine Remote Verbindung mit dem Unternehmensnetzwerk über ein virtuelles privates Netzwerk auf einem hololens herstellen. Hololens können auch auf WLAN-Netzwerke zugreifen, für die Anmelde Informationen erforderlich sind.
+* **Arbeitsplatz Zugriff.** Jeder in Ihrer Organisation kann eine Remote Verbindung mit dem Unternehmensnetzwerk über ein virtuelles privates Netzwerk auf einem hololens herstellen. Hololens können auch auf Wi-Fi Netzwerke zugreifen, für die Anmelde Informationen erforderlich sind.
 * **Microsoft Store für Unternehmen.** Ihre IT-Abteilung kann auch einen privaten Unternehmens Speicher einrichten, der nur die apps Ihres Unternehmens für ihre jeweilige hololens-Nutzung enthält. Verteilen Sie Ihre Unternehmenssoftware auf sichere Weise an die ausgewählte Gruppe von Unternehmens Benutzern.
 
 ### <a name="development-edition-vs-commercial-suite"></a>Development Edition im Vergleich zur kommerziellen Suite
 
 <table>
 <tr>
-<th>Features</th><th>Development Edition</th><th>Kommerzielle Suite</th>
+<th>Funktionen</th><th>Development Edition</th><th>Kommerzielle Suite</th>
 </tr><tr>
 <td>Geräteverschlüsselung (BitLocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -86,7 +86,7 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 </tr><tr>
 <td>Möglichkeit zum Blockieren der Aufhebung der Registrierung</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Zertifikat basierter Wi-Fi-Zugriff für Unternehmen</td><td></td><td style="text-align: center;">✔️</td>
+<td>Zertifikat basierter Zugriff auf Unternehmens Wi-Fi</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Microsoft Store (Consumer)</td><td style="text-align: center;">Consumer</td><td style="text-align: center;">Filtern über MDM</td>
 </tr><tr>
@@ -96,7 +96,7 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 </tr><tr>
 <td>Anmelden mit Azure Active Directory (AAD)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Mit Microsoft-Konto (MSA) anmelden</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td>Anmelden mit einem Microsoft-Konto (MSA)</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>Anmelde Informationen der nächsten Generation mit PIN entsperren</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -108,7 +108,7 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 </tr><tr>
 <td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td>Branch für langfristige Wartung</td><td></td><td style="text-align: center;">✔️</td>
+<td>Long Term Servicing Branch</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
 </table>
 
@@ -116,7 +116,7 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [HoloLens – bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Kommerzielle Features](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
 * [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

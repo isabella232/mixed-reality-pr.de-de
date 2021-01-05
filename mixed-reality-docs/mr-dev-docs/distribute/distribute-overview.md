@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Hololens, gemischte Realität, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Paket, AppX, Merchandising
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034581"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757628"
 ---
 # <a name="distributing-your-apps"></a>Verteilen von apps
 
 ![Floaty Bird 3D-App-lancher in WMR-Startseite](images/distribute-hero-image.png)
 
-Das Erreichen Ihrer Apps in die Hände Ihrer Benutzer oder der Welt ist der wichtigste und manchmal mühsame Teil eines beliebigen Entwicklungsaufwands. Wir haben den Prozess in eine Reihe von Ressourcen vereinfacht, die im folgenden aufgeführt sind. diese sind abhängig von dem Verteilungs-und Bereitstellungs Szenario, das für Sie oder Ihr Team am besten geeignet ist.
+Das Erreichen Ihrer Apps in die Hände Ihrer Benutzer oder der Welt ist der wichtigste und manchmal mühsame Teil eines beliebigen Entwicklungsaufwands. Wir haben den Prozess in eine Reihe von Ressourcen vereinfacht, die von dem Verteilungs-und Bereitstellungs Szenario abhängig sind, das für Sie oder Ihr Team am besten geeignet ist.
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -40,7 +40,7 @@ Das Erreichen Ihrer Apps in die Hände Ihrer Benutzer oder der Welt ist der wich
 </colgroup>
 <tr>
     <td><strong>Szenario</strong></td>
-    <td><strong>Lokale Geräteinstallation</strong></td>
+    <td><strong>Lokale Geräte Installationen</strong></td>
     <td><strong>Für beliebige Personen freigeben</strong></td>
     <td><strong>Freigeben für eine Organisation</strong></td>
 </tr>
@@ -81,7 +81,7 @@ Das Erreichen Ihrer Apps in die Hände Ihrer Benutzer oder der Welt ist der wich
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>Benutzerdefinierte Win32-Bereitstellung</strong></a> (für hololens-Geräte nicht verfügbar-siehe unten)</td>
+    <td><a href="#other-scenarios"><strong>Benutzerdefinierte Win32-Bereitstellung</strong></a> (für hololens-Geräte nicht verfügbar-siehe unten)</td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,14 +91,14 @@ Das Erreichen Ihrer Apps in die Hände Ihrer Benutzer oder der Welt ist der wich
 > [!IMPORTANT]
 > Der APP-Installer ist zurzeit nicht für verwaltete Geräte oder hololens (1. Gen)-Geräte verfügbar.
 
-## <a name="additional-scenarios"></a>Zusätzliche Szenarien
+## <a name="other-scenarios"></a>Andere Szenarien
 
-* Für die Bereitstellung von Win32-Anwendungen, einschließlich "Steam" und "Game Pass", können Sie eine Win32- EXE-Datei, die das eigenständige PC-Buildziel von Unity verwendet und ihre apps so normal an die ausgewählte Plattform sendet. 
+* Sie können eine Win32-. EXE-Datei mit dem eigenständigen PC-Buildziel von Unity für die Win32-Anwendungs Bereitstellung, einschließlich Steam und Game Pass. Sobald Sie über das verfügen. EXE, Sie können Ihre apps normal an die ausgewählte Plattform übermitteln. 
 
-* Wenn Sie eine "hololens 2"-Anwendung installieren müssen, während Sie offline sind, lesen Sie die Anweisungen im [Offline-Secure hololens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) , oder instanzieren Sie die APP über ein Bereitstellungs Paket, ohne den Entwicklermodus zu aktivieren.
+* Wenn Sie eine "hololens 2"-Anwendung installieren müssen, während Sie offline sind, lesen Sie die Anweisungen im [Offline-Secure hololens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) , oder installieren Sie die APP über ein Bereitstellungs Paket, ohne den Entwicklermodus zu aktivieren.
 
 * Sie können auch Builds auf Ihrem Gerät bereitstellen und für andere Entwickler freigeben, bei denen der Entwicklermodus aktiviert ist, indem Sie [Visual Studio bereitstellen und Debuggen](../develop/platform-capabilities-and-apis/using-visual-studio.md) oder [ein Anwendungspaket mit dem Geräte Portal installieren](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Suchen, installieren und Deinstallieren von Anwendungen über die Microsoft Store](https://docs.microsoft.com/hololens/holographic-store-apps)
 

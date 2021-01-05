@@ -6,22 +6,21 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, hololens, holograms, Design, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, was ist die erweiterte Realität
-ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702246"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757558"
 ---
 # <a name="what-is-a-hologram"></a>Was ist ein Hologramm?
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-Hololens ermöglicht Ihnen das Erstellen von **holograms**, aus Licht und Sound bestehenden Objekten, die auf der ganzen Welt angezeigt werden, genau so, als wären Sie echte Objekte. Holograms reagieren auf Ihre [Blicke](../design/gaze-and-commit.md), [Gesten](../design/gaze-and-commit.md#composite-gestures) und [Sprachbefehle](../design/voice-input.md)und können mit [realen Oberflächen](../design/spatial-mapping.md) um Sie interagieren. Mit Hologrammen können Sie digitale Objekte erstellen, die Teil Ihrer Welt sind.
+Hololens ermöglicht das Erstellen von **holograms**, bei denen es sich um Objekte aus Licht und Sound handelt, die auf der ganzen Welt wie echte Objekte angezeigt werden. Holograms reagieren auf Ihre [Blicke](../design/gaze-and-commit.md), [Gesten](../design/gaze-and-commit.md#composite-gestures)und [Sprachbefehle](../design/voice-input.md). Sie können sogar mit [realen Oberflächen](../design/spatial-mapping.md) für Sie interagieren. Mit Hologrammen können Sie digitale Objekte erstellen, die Teil Ihrer Welt sind.
 
 <br>
-
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -54,7 +53,7 @@ Hololens ermöglicht Ihnen das Erstellen von **holograms**, aus Licht und Sound 
 
 Die Hologramme, die von [hololens](../develop/platform-capabilities-and-apis/rendering.md) gerendert werden, werden im Holographic-Frame direkt vor den Augen des Benutzers angezeigt. Holograms können ihrer Welt ein Licht hinzufügen, was bedeutet, dass Sie sowohl das Licht aus der Anzeige als auch das Licht aus Ihrer Umgebung sehen. Hololens entfernt das Licht nicht aus den Augen, sodass holograms nicht mit der Farbe schwarz gerendert werden können. Der schwarze Inhalt wird stattdessen als transparent angezeigt.
 
-Holograms können viele verschiedene Erscheinungsformen und Verhaltensweisen aufweisen. Einige sind realistisch und solide, andere sind cartoonhaften und ethereal. Holograms können Features in Ihrer Umgebung hervorheben, und Sie können Elemente in der Benutzeroberfläche Ihrer APP sein.
+Holograms können viele verschiedene Erscheinungsformen und Verhaltensweisen aufweisen. Einige sind realistisch und solide, andere sind cartoonhaften und ethereal. Sie können holograms verwenden, um Features in Ihrer Umgebung hervorzuheben oder als Elemente in der Benutzeroberfläche Ihrer APP zu verwenden.
 
 ![Hände Bearbeitung eines holograms](images/hologram-hands-940px.jpg)
 
@@ -66,29 +65,28 @@ Holograms können auch [Sounds](../design/spatial-sound.md)erstellen, die von ei
 
 ## <a name="a-hologram-can-be-placed-in-the-world-or-tag-along-with-you"></a>Ein – Hologramm kann zusammen mit Ihnen in der Welt oder im Tag platziert werden.
 
-Wenn Sie über einen bestimmten Ort verfügen, an dem Sie ein Hologram haben möchten, können Sie ihn genau auf der ganzen Welt [platzieren](../design/coordinate-systems.md) . Wenn Sie dieses Hologramm durchlaufen, erscheint es in Bezug auf die weltweite Umgebung stabil. Wenn Sie ein [räumliches Anker](../design/coordinate-systems.md#spatial-anchors) verwenden, um das Objekt an die Welt zu Heften, kann sich das System sogar merken, wo Sie es verlassen haben, wenn Sie es später zurückkehren.
+Wenn Sie über einen bestimmten Ort für ein Hologram verfügen, können Sie ihn genau an diesem Punkt in der Welt [platzieren](../design/coordinate-systems.md) . Wenn Sie das Hologramm durchlaufen, wird es auf der ganzen Welt stabil angezeigt. Wenn Sie ein [räumliches Anker](../design/coordinate-systems.md#spatial-anchors) verwenden, um das Objekt anzuheften, kann sich das System sogar merken, wo Sie es verlassen haben, wenn Sie später zurückkehren.
 
 ![Zwei Männer, die das Microsoft Dynamics 365-Layout in einem Einzelhandelsbereich verwenden](images/HLS19_retailLayoutHologram_001-940px.jpg)
 
-Einige Hologramme folgen dem Benutzer. Diese tagbasierten holograms positionieren sich in Bezug auf den Benutzer unabhängig davon, wo Sie sich befinden. Sie können sich auch ein – Hologramm für eine Weile mit Ihnen anmelden und dann auf der Wand platzieren, sobald Sie zu einem anderen Raum gelangen.
+Einige Hologramme folgen dem Benutzer und positionieren sich auf der Grundlage des Benutzers, unabhängig davon, wo Sie sich befinden. Sie können sich auch ein – Hologramm für eine Weile mit Ihnen anmelden und dann auf der Wand platzieren, sobald Sie zu einem anderen Raum gelangen.
 
-**Bewährte Methoden**
+**Empfohlene Methoden**
 * In einigen Szenarien kann es sinnvoll sein, dass holograms im gesamten Szenario leicht erkennbar oder sichtbar sind. Es gibt zwei allgemeine Vorgehensweisen für diese Art der Positionierung. Wir nennen Sie **"Display-Locked"** und **"Body-Locked"**.
-   * Anzeige-gesperrte Inhalte sind auf der Geräte Anzeige Positions bedingt "gesperrt". Dies ist aus verschiedenen Gründen schwierig, einschließlich eines unnatürlichen Gefühls der "clingyness", bei dem viele Benutzer frustriert sind und diese "Schütteln" möchten. Im Allgemeinen haben viele Designer besser festgestellt, dass Inhalte mit der Anzeige nicht gesperrt werden.
-   * Der Body-Locked-Ansatz ist weitaus besser verzeihbar. Die Text Sperre erfolgt, wenn ein – Hologramm in den Textkörper oder den Blick Vektor des Benutzers verschoben wird, aber im 3D--Bereich um den Benutzer positioniert ist. Viele Benutzeroberflächen haben ein Verhalten bei der Text Sperrung übernommen, bei dem das – Hologramm "dem Benutzer angezeigt wird, sodass der Benutzer Ihren Text drehen und durch Leerzeichen bewegen kann, ohne das – Hologramm zu verlieren. Durch die Einbindung einer Verzögerung wird die – Hologramm-Bewegung natürlicher. Beispielsweise verwendet eine zentrale Benutzeroberfläche des Windows Holographic-Betriebssystems eine Variation von Body-Locks, die auf den Blick des Benutzers folgt, mit einer sanften, elastischen, elastischen Verzögerung, während der Benutzer den Kopf schaltet.
+   * Anzeige-gesperrte Inhalte sind auf der Geräte Anzeige Positions bedingt "gesperrt". Diese Art von Inhalt ist aus verschiedenen Gründen schwierig, einschließlich des unnatürlichen Gefühls "clingyness", bei dem viele Benutzer frustriert sind und diese "Schütteln" möchten. Im Allgemeinen haben viele Designer besser festgestellt, dass Inhalte mit der Anzeige nicht gesperrt werden.
+   * Der Body-Locked-Ansatz ist weitaus besser verzeihbar. Die Text Sperre ist, wenn Sie ein – Hologramm in den Textkörper oder den Blick Vektor des Benutzers im 3D--Raum. Viele Benutzeroberflächen haben ein Verhalten bei der Text Sperrung übernommen, bei dem das – Hologramm "dem Benutzer angezeigt wird, sodass der Benutzer Ihren Text drehen und durch Leerzeichen bewegen kann, ohne das – Hologramm zu verlieren. Durch die Einbindung einer Verzögerung wird die – Hologramm-Bewegung natürlicher. Beispielsweise verwendet eine zentrale Benutzeroberfläche des Windows Holographic-Betriebssystems eine Variation von Body-Locks, die auf den Blick des Benutzers folgt, mit einer sanften, elastischen, elastischen Verzögerung, während der Benutzer den Kopf schaltet.
 * Platzieren Sie das – Hologramm in einer bequemen Anzeige Distanz, die in der Regel ungefähr 1-2 Meter von der Kopfzeile entfernt ist.
-* Stellen Sie eine Menge an Abweichungen für Elemente bereit, die sich ständig im Holographic-Frame befinden müssen, oder animieren Sie den Inhalt auf einer Seite der Anzeige, wenn der Benutzer seine Ansicht ändert.
+* Stellen Sie eine Abweichung für Elemente bereit, die sich kontinuierlich im Holographic-Frame befinden müssen, oder animieren Sie den Inhalt auf einer Seite der Anzeige, wenn der Benutzer seine Sicht ändert.
 
-**Platzieren Sie holograms in der optimalen Zone (zwischen 1,25 Mio. und 5 Mio.).**
+**Platzieren Sie holograms in der optimalen Zone (zwischen 1,25 m und 5 m).**
 
-Zwei Verbrauchseinheiten sind das beste, und die Leistung ist geringer, je näher Sie von einer Verbrauchseinheit bekommen. Bei Entfernungen, die näher als eine Verbrauchseinheit liegen, ist die Wahrscheinlichkeit, dass Hologramme, die regelmäßig ausführlich verschoben werden, eher problematisch als bei stationären holograms. Denken Sie daran, ihre Inhalte zu schließen oder zu bereinigen, wenn Sie zu geschlossen werden, um den Benutzer nicht zu einem unerwarteten Benutzer Ergebnis zu vereinigen.
+Zwei Verbrauchseinheiten sind das beste, und die Leistung ist geringer als bei einer Verbrauchseinheit. Bei Entfernungen, die näher als 1 Meter liegen, ist die Wahrscheinlichkeit, dass Hologramme, die regelmäßig ausführlich verschoben werden, eher problematisch als die stationären holograms. Denken Sie daran, ihre Inhalte zu schließen, wenn Sie zu geschlossen werden, damit der Benutzer nicht zu einem unerwarteten Zeitpunkt kommt.
 
 ![Optimale Entfernung zum Platzieren von holograms vom Benutzer.](images/distanceguiderendering-950px.png)
 
 <br>
 
 ---
-
 
 ## <a name="a-hologram-interacts-with-you-and-your-world"></a>Ein – Hologramm interagiert mit Ihnen und ihrer Welt.
 
@@ -103,8 +101,8 @@ Ein – Hologramm kann auch mit Ihrer Umgebung interagieren. Sie können z. b. e
 Holograms können auch durch reale Objekte verdeckt werden. Ein holografisches Zeichen kann z. b. durch eine Tür und hinter einer Wand aus der Sicht laufen.
 
 **Tipps für die Integration von holograms und der realen Welt**
-* Durch Ausrichten an Gravitations Regeln ist holograms leichter zu identifizieren und besser zu glauben. Beispiel: Platzieren Sie einen Holographic Dog auf der Basis & eine Vase in der Tabelle, anstatt Sie in den Raum zu versetzen.
-* Viele Designer haben festgestellt, dass Sie durch das Erstellen eines "negativen Schattens" auf der Oberfläche, auf der sich das – Hologramm befindet, eine sicherere Integration von holograms möglich macht. Dies geschieht, indem ein weicher Glanz am Ende um das Hologramm erstellt und dann der "Schatten" aus dem Glanz subtrahieren wird. Der weiche Glanz ist in das Licht aus der realen Welt integriert, und der Schatten ist das – Hologramm in der Umgebung.
+* Durch Ausrichten an Gravitations Regeln ist holograms leichter zu identifizieren und besser zu glauben. Beispiel: Platzieren Sie einen Holographic Dog auf der Basis & eine Vase in der Tabelle, anstatt Sie in den Leerraum zu versetzen.
+* Viele Designer haben festgestellt, dass Sie besser glaubwürdigere Hologramme integrieren können, indem Sie auf der Oberfläche, auf der sich das – Hologramm befindet, einen "negativen Schatten" erstellen. Dies geschieht, indem ein weicher Glanz am Ende um das Hologramm erstellt und dann der "Schatten" aus dem Glanz subtrahieren wird. Der weiche Glanz ist in das Licht aus der realen Welt integriert, das den Schatten verwendet, um das Hologramm in der Umgebung zu verwenden.
 
 <br>
 

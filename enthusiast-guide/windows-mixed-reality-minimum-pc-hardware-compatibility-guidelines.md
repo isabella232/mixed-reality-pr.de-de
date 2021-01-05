@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Ultra, Compatible, Compatibility, System Requirements, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: e21d2d18edbf2c94d156f14fa8c2598822a8bc7a
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174360"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725661"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality-Mindestanforderungen für die PC-Hardware Kompatibilität
 
@@ -26,13 +26,13 @@ Mit Windows Mixed Reality Ultra erhalten Sie einige zusätzliche Funktionen und 
 * Crisper Visuals und eine höhere Aktualisierungsrate (90 Frames pro Sekunde).
 * Weitere apps und Erfahrungen – einschließlich der meisten Grafik intensiven Spiele.
 * Ein "Spiegel"-Fenster auf dem Desktop, das anzeigt, was in gemischter Realität angezeigt wird.
-* Zeichnen Sie Videos (und Fotos) Ihrer gemischten Realität auf, und geben Sie Sie frei.
+* Zeichnen Sie Videos und Fotos Ihrer gemischten Realität auf, und geben Sie Sie frei.
 
 ## <a name="minimum-pc-hardware-guidelines"></a>Richtlinien für die PC-Hardware
 
-Um die beste Erfahrung mit Windows Mixed Reality zu erzielen, beginnen Sie mit einem neuen [Windows Mixed Reality-fähigen PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) oder einem Windows Mixed Reality-kompatiblen PC, der Windows Mixed Reality Ultra-Umgebungen bereitstellen kann. Windows Mixed Reality Ultra bietet Crisper visuelle Elemente mit höheren Aktualisierungs Raten, mehr apps und Erfahrungen, einschließlich der meisten Grafik intensiven Spiele, der Spiegelung Ihrer Windows Mixed Reality-Umgebung auf Ihrem Desktop und der Möglichkeit, ihre Erfahrungen mit anderen aufzuzeichnen und zu teilen (Fotos und Videos). 
+Um die beste Erfahrung mit Windows Mixed Reality zu erzielen, beginnen Sie mit einem neuen [Windows Mixed Reality-fähigen PC](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) oder einem Windows Mixed Reality-kompatiblen PC, der Windows Mixed Reality Ultra-Umgebungen bereitstellen kann. Windows Mixed Reality Ultra bietet Crisper-Visualisierungen mit höheren Aktualisierungs Raten, mehr App-Benutzeroberflächen, einschließlich der meisten Grafik intensiven Spiele, die Spiegelung Ihrer Windows Mixed Reality-Umgebung auf Ihrem Desktop und die Möglichkeit, ihre Erfahrungen mit anderen zu erfassen und zu teilen (Foto und Video). 
 
-Um festzustellen, ob Ihr PC Windows Mixed Reality ausführen kann, überprüfen Sie die unten aufgeführten Hardware Richtlinien, und führen Sie die [Mixed Reality-Portal-App](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M)
+Sehen Sie sich an, ob Ihr PC Windows Mixed Reality ausführen kann, indem Sie die unten aufgeführten Hardware Richtlinien überprüfen und die [Mixed Reality Portal-App](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M)ausführen.
 
 Beachten Sie, dass die Leistung abhängig von der exakten Einrichtung variiert. Außerdem müssen Sie sicherstellen, dass Ihr PC über die [richtigen Ports](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) für das von Ihnen verwendete Windows Mixed Reality-Kontext-Headset verfügt.
 
@@ -48,7 +48,7 @@ Das Mixed Reality-Portal ist die beste Möglichkeit, um sicherzustellen, dass Ih
 
 Nachdem Sie die app ausgeführt haben, erhalten Sie eine der folgenden Meldungen:
 * **Das ist schon alles.** Ihr PC verfügt über die Möglichkeiten, Windows Mixed Reality auszuführen.
-* **Unterstützt einige Features.** Diese PCs können Windows Mixed Reality ausführen, einige Features sind jedoch möglicherweise eingeschränkt.
+* **Unterstützt einige Features.** Auf diesem PC kann Windows Mixed Reality ausgeführt werden, aber einige Features sind möglicherweise eingeschränkt.
 * **Gemischte Realität kann nicht ausgeführt werden.** Dieser PC erfüllt nicht die Mindestanforderungen für die Durchführung von Windows Mixed Reality.
 
 Anschließend erhalten Sie eine Analyse Ihres PCs mit der erforderlichen Hardware, den Treibern und dem Betriebssystem.
@@ -73,7 +73,7 @@ Anschließend erhalten Sie eine Analyse Ihres PCs mit der erforderlichen Hardwar
 > Wir werden aktualisieren, sodass Sie diese Windows Mixed Reality-PC-Kompatibilitätsrichtlinien ergänzen und möglicherweise überarbeiten. Informieren Sie sich regelmäßig über die neuesten Richtlinien und Anforderungen.
 
 **HP-Reverb-kompatible Spezifikationen**<br>
-Aufgrund der höheren Auflösung gelten die folgenden Anforderungen für die HP-Reverb-& G2-Produktlinien, um eine optimale vollständige Auflösung von 90Hz sicherzustellen: 
+Aufgrund der höheren Auflösung gelten die folgenden Anforderungen für die HP-Reverb-& G2-Produktlinien, um eine optimale Leistung von 90 Hz, vollständiger Auflösung sicherzustellen: 
 
 <ul>
 <li> Intel Core i5, i7, Intel Xenon E3-1240 V5, gleichwertig oder besser. AMD ryzen 5 Äquivalent oder besser. </li>
@@ -85,7 +85,7 @@ Aufgrund der höheren Auflösung gelten die folgenden Anforderungen für die HP-
 </ul>
 
 **Alle anderen WMR-kompatiblen Headsets** <br>
-Informationen zu allen anderen HMD-Komponenten finden Sie unter den folgenden Anforderungen: 
+Beachten Sie für alle anderen HMDs die folgenden Anforderungen: 
 
 <table>
 <tr>
@@ -144,7 +144,7 @@ Informationen zu allen anderen HMD-Komponenten finden Sie unter den folgenden An
     <td style="vertical-align: middle; text-align: center;">60 Hz</td>
 </tr>
 <tr>
-    <td style="vertical-align: middle">Power</td>
+    <td style="vertical-align: middle">Leistung</td>
     <td style="vertical-align: middle; text-align: center;">USB 3,0-Ports (Typ A)</td>
     <td style="vertical-align: middle; text-align: center;">USB 3,0-Ports (Typ A)</td>
 </tr>
@@ -153,10 +153,10 @@ Informationen zu allen anderen HMD-Komponenten finden Sie unter den folgenden An
 
 
 **Weitere Informationen:**
-* Größere Laptops (mit Bildschirmen von mindestens 15 ") erzielen die beste Leistung.
+* Größere Laptops mit Bildschirmen, die mindestens 15 sind, haben die beste Leistung.
 * Um die optimale Leistung zu erzielen, empfiehlt es sich, einen Intel® Core-™ der 8. Generation oder einen™ i5-Prozessor der 7.-®-Kern
 * Hybrid Grafik Konfigurationen sind nur mit Windows Mixed Reality Ultra kompatibel. Der diskrete Grafikadapter in jeder Hybrid Konfiguration muss alle in den Windows Mixed Reality-Richtlinien für diskrete Grafikadapter aufgeführten Anforderungen erfüllen.
-* Wenn Sie über eine diskrete Grafikkarte verfügen, auf der Windows Mixed Reality Ultra ausgeführt werden soll, die Aktualisierungsrate für 60 Hz (60 Frames pro Sekunde) jedoch standardmäßig ist, verwenden Sie einen DisplayPort vom Typ "Display Port in der Größe für den HDMI 2,0", um das Headset einzuschließen und eine Aktualisierungsrate von 90 Hz zu aktivieren.
+* Wenn Sie über eine diskrete Grafikkarte verfügen, auf der Windows Mixed Reality Ultra ausgeführt werden soll, aber die Aktualisierungsrate von 60 Hz (60 Frames pro Sekunde) standardmäßig ist, verwenden Sie einen DisplayPort vom Typ "Display Port in der Größe für den HDMI 2,0", um das Headset einzuschließen und eine Aktualisierungsrate von 90 Hz zu aktivieren.
 * Für unterschiedliche Headsets sind möglicherweise unterschiedliche Hardwareports erforderlich. Stellen Sie daher sicher, dass der PC über die richtigen Ports oder die [erforderlichen Adapter](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) zum Herstellen einer Verbindung
 
 >[!NOTE]
@@ -164,11 +164,11 @@ Informationen zu allen anderen HMD-Komponenten finden Sie unter den folgenden An
 
 ## <a name="windows-mixed-reality-and-surface"></a>Gemischte Windows-Realität und-Oberfläche
 
-Um die beste Windows Mixed Reality-Umgebung auf einem Surface-Gerät zu erzielen, empfehlen wir die Verwendung von surfacebook 2 (15 ") mit den NVIDIA GeForce GTX 1060 und 16 GB RAM.  Diese Konfiguration unterstützt alle Windows Mixed Reality-Features @ 90Hz und wurde für Windows Mixed Reality Ultra getestet und getestet.  Die Surface Book 2 (13 "), Surface Studio, Surface Laptop und Surface pro (2017) unterstützen alle Windows Mixed Reality-Features, wenn Sie mit einer Intel Core i5-CPU (oder höher) und mindestens 8 GB RAM konfiguriert werden.
+Um die beste Windows Mixed Reality-Umgebung auf einem Surface-Gerät zu erzielen, empfehlen wir die Verwendung von surfacebook 2 (15 ") mit den NVIDIA GeForce GTX 1060 GB und 16 GB RAM.  Diese Konfiguration unterstützt alle Windows Mixed Reality-Features @ 90 Hz und wurde für Windows Mixed Reality Ultra getestet und getestet.  Die Surface Book 2 (13 "), Surface Studio, Surface Laptop und Surface pro (2017) unterstützen alle Windows Mixed Reality-Features bei der Konfiguration mit einer Intel Core i5-CPU (oder höher) und mindestens 8 GB RAM.
 
 **Anforderungen:**
 * Surface-Produkte erfordern, dass Treiber Updates mit Windows Mixed Reality kompatibel sind. Diese Treiber können auf ihrer Oberfläche installiert werden, indem Sie zu **Einstellungen > Update und Sicherheit > nach Updates suchen klicken**.
-* Surface-Produkte erfordern einen [Adapter](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) vom Videoport (Mini Display Port oder USB-C, abhängig von der Surface-PC) bis hin zu HDMI 2,0 für Windows Mixed Reality-Headsets. Die aktuellste Version der Surface-Mini-DisplayPort für den HDMI-AV-Adapter ist kompatibel mit der Version HDMI 2,0 (die ältere Version ist nicht). Auf ähnliche Weise ist auch der <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">USB-C-Adapter für die Oberfläche</a> mit dem Wert von HDMI 2,0 kompatibel.
+* Surface-Produkte erfordern einen [Adapter](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) vom Videoport (Mini Display Port oder USB-C, abhängig von der Surface-PC) bis hin zu HDMI 2,0 für Windows Mixed Reality-Headsets. Die neueste Version der Surface-Mini-DisplayPort für den HDMI-AV-Adapter ist kompatibel mit der Version von HDMI 2,0 (die ältere Version ist nicht). Auf ähnliche Weise ist auch der <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">USB-C-Adapter für die Oberfläche</a> mit dem Wert von HDMI 2,0 kompatibel.
 
 >[!WARNING]
 >Nicht alle Mini DisplayPort-oder USB-C-zu-HDMI-Adapter sind "HDMI 2,0-fähig". Überprüfen Sie ggf. die explizite Kompatibilität von "HDMI 2,0" oder "4K" auf einem beliebigen Adapter.
@@ -204,56 +204,56 @@ Weitere Informationen zur Oberflächen Kompatibilität mit Windows Mixed Reality
         <td style="vertical-align: middle"> Surface Book 2 (15 &quot; ) </td><td style="vertical-align: middle"> Vollständig </td><td style="vertical-align: middle"> Intel Core i7/nVidia GTX 1060/16 GB RAM </td>
         <td>
             <ul>
-                <li><b>Empfohlen</b>: für die beste Windows Mixed Reality-Umgebung auf einem Surface-Gerät empfiehlt sich die Verwendung von surfacebook 2 15 "mit den NVIDIA GeForce GTX 1060 und 16 GB RAM.  Diese Konfiguration wird als Windows Mixed Reality Ultra getestet und getestet, sodass alle Windows Mixed Reality-Features unterstützt werden, und Sie können die breiteste Palette an kompatiblen apps und spielen nutzen.</li>
-                <li>Die diskrete "NVIDIA GeForce GTX 1060"-GPU bietet eine Windows Mixed Reality Ultra @ 90Hz-Darstellung.</li><br/>                <li>Verwenden Sie für eine optimale Leistung die NVIDIA-Grafiktreiber, die speziell für Surface Book 2 freigegeben wurden. Neuere Treiber sind möglicherweise auf der NVIDIA&#39;s-Website verfügbar, aber nicht getestet.</li><br/>                <li>Erfordert <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">USB-C-zu-HDMI-Schnittstellen-Adapter</a> (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
-                <li><b>Hinweis beim Surface-Dock</b>: die Verwendung von Surface Dock mit Surface Book 2 wird nicht offiziell mit Windows Mixed Reality unterstützt. Dies ist auf die Beschränkungen des Surface-Dock zurückzuführen.</li><br/>                <li><b>Hinweis unter Windows 10, Version 1803</b>: Wenn Sie Windows 10, Version 1803,&#39;erneut ausführen, stellen Sie sicher, dass&#39;Sie den Betriebssystem-Build 17134,137 oder höher (installiert von KB4284848) erneut ausführen, um sicherzustellen, dass Sie über die neuesten Leistungs Korrekturen verfügen. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
+                <li><b>Empfohlen</b>: für die beste Windows Mixed Reality-Umgebung auf einem Surface-Gerät empfiehlt sich die Verwendung von surfacebook 2 15 "mit den NVIDIA GeForce GTX 1060 GB und 16 GB RAM.  Diese Konfiguration wird als Windows Mixed Reality Ultra getestet und getestet, sodass alle Windows Mixed Reality-Features unterstützt werden, und Sie können die breiteste Palette an kompatiblen apps und spielen nutzen.</li>
+                <li>Die diskrete "NVIDIA GeForce GTX 1060"-GPU bietet eine Windows Mixed Reality Ultra @ 90-Hz-Darstellung.</li><br/>                <li>Verwenden Sie für eine optimale Leistung die NVIDIA-Grafiktreiber, die für Surface Book 2 freigegeben wurden. Neuere Treiber sind möglicherweise auf der NVIDIA&#39;s-Website verfügbar, aber nicht getestet.</li><br/>                <li>Erfordert <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">USB-C-zu-HDMI-Schnittstellen-Adapter</a> (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
+                <li><b>Hinweis</b>: die Verwendung von Surface Dock mit Surface Book 2 wird bei Windows Mixed Reality nicht offiziell unterstützt, da die Beschränkungen der Stromversorgung des Surface-Dock liegen.</li><br/>                <li><b>Hinweis unter Windows 10, Version 1803</b>: Wenn Sie Windows 10, Version 1803,&#39;erneut ausführen, stellen&#39;Sie sicher, dass Sie das Betriebssystem Build 17134,137 oder höher (installiert von KB4284848) erneut ausführen, um sicherzustellen, dass Sie über die neuesten Leistungs Korrekturen verfügen. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (13,5 &quot; ) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/nVidia GTX 1050/16 GB RAM </td>
+        <td style="vertical-align: middle"> Surface Book 2 (13,5 &quot; ) </td><td style="vertical-align: middle"> Teilweise </td><td style="vertical-align: middle"> Intel Core i7/nVidia GTX 1050/16 GB RAM </td>
         <td>
             <ul>
-                <li><b>Hinweis</b>: das Surface Book 2 (13 ") wird für Windows Mixed Reality nicht gebadelt, unterstützt jedoch einige Windows Mixed Reality-Features, mit denen Sie eine begrenzte Anzahl von kompatiblen apps und spielen verwenden können.  Die Leistung hängt von Ihrer Konfiguration ab.</li>
-                <li>Konfigurationen mit einer Intel Core i5/Intel HD-Grafik 620 Integrated GPU bieten eine Windows Mixed Reality @ 60Hz-Darstellung.</li>
-                <li>Konfigurationen mit einer Intel Core i7/NVIDIA GeForce GTX 1050-GPU bieten eine Windows Mixed Reality @ 90Hz-Darstellung.</li>                       <li>Verwenden Sie für eine optimale Leistung die NVIDIA-Grafiktreiber, die speziell für Surface Book 2 freigegeben wurden. Neuere Treiber sind möglicherweise auf der NVIDIA&#39;s-Website verfügbar, aber nicht getestet.</li>
+                <li><b>Hinweis</b>: das Surface Book 2 (13 ") ist nicht für Windows Mixed Reality, sondern unterstützt einige Windows Mixed Reality-Features, mit denen Sie eine begrenzte Anzahl von kompatiblen apps und spielen verwenden können.  Die Leistung hängt von Ihrer Konfiguration ab.</li>
+                <li>Konfigurationen mit einer Intel Core i5/Intel HD-Grafik 620 Integrated GPU bieten eine Windows Mixed Reality @ 60-Hz-Darstellung.</li>
+                <li>Konfigurationen mit einer Intel Core i7/NVIDIA GeForce GTX 1050-GPU bieten eine Windows Mixed Reality @ 90-Hz-Darstellung.</li>                       <li>Verwenden Sie für eine optimale Leistung die NVIDIA-Grafiktreiber, die für Surface Book 2 freigegeben wurden. Neuere Treiber sind möglicherweise auf der NVIDIA&#39;s-Website verfügbar, aber nicht getestet.</li>
                 <li>Erfordert <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">USB-C-zu-HDMI-Schnittstellen-Adapter</a> (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
-                <li><b>Hinweis beim Surface-Dock</b>: die Verwendung von Surface Dock mit Surface Book 2 wird nicht offiziell mit Windows Mixed Reality unterstützt. Dies ist auf die Beschränkungen des Surface-Dock zurückzuführen.</li>
-                <li><b>Hinweis unter Windows 10, Version 1803</b>: Wenn Sie Windows 10, Version 1803,&#39;erneut ausführen, stellen Sie sicher, dass&#39;Sie den Betriebssystem-Build 17134,137 oder höher (installiert von KB4284848) erneut ausführen, um sicherzustellen, dass Sie über die neuesten Leistungs Korrekturen verfügen. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
+                <li><b>Hinweis</b>: die Verwendung von Surface Dock mit Surface Book 2 wird bei Windows Mixed Reality nicht offiziell unterstützt, da die Beschränkungen der Stromversorgung des Surface-Dock liegen.</li>
+                <li><b>Hinweis unter Windows 10, Version 1803</b>: Wenn Sie Windows 10, Version 1803,&#39;erneut ausführen, stellen&#39;Sie sicher, dass Sie das Betriebssystem Build 17134,137 oder höher (installiert von KB4284848) erneut ausführen, um sicherzustellen, dass Sie über die neuesten Leistungs Korrekturen verfügen. Weitere Informationen finden Sie in den Anmerkungen zu dieser Version von <a href="https://support.microsoft.com/en-us/help/4284848/windows-10-update-kb4284848">KB4284848</a>.</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 GB RAM </td>
+        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Teilweise </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/16 GB RAM </td>
         <td>
             <ul>
-                <li><b>Hinweis</b>: Surface Studio ist nicht für Windows Mixed Reality, sondern unterstützt einige Windows Mixed Reality-Features, mit denen Sie eine begrenzte Anzahl von kompatiblen apps und spielen verwenden können.  Die Leistung hängt von Ihrer Konfiguration ab.</li>
-                <li>Konfigurationen mit NVIDIA GeForce GTX 965m bieten eine Windows Mixed Reality @ 60Hz-Darstellung.</li>
-                <li>Konfigurationen mit NVIDIA GeForce GTX 980m bieten eine Windows Mixed Reality @ 90Hz-Darstellung.</li>
+                <li><b>Hinweis</b>: Surface Studio ist für Windows Mixed Reality nicht Badelt, unterstützt jedoch einige Windows Mixed Reality-Features, mit denen Sie eine begrenzte Anzahl von kompatiblen apps und spielen verwenden können.  Die Leistung hängt von Ihrer Konfiguration ab.</li>
+                <li>Konfigurationen mit NVIDIA GeForce GTX 965 m bieten eine Windows Mixed Reality @ 60-Hz-Darstellung.</li>
+                <li>Konfigurationen mit NVIDIA GeForce GTX 980 m bieten eine Windows Mixed Reality @ 90-Hz-Darstellung.</li>
                 <li>Surface Mini Display Port to HDMI 2,0-Adapter (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
                 <li>Das Windows Mixed Reality-Headset muss mit dem USB-Anschluss mit dem Symbol "+" verbunden sein.</li>
             </ul>
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface pro (2017) </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Grafiken 640/16 GB RAM </td>
+        <td style="vertical-align: middle"> Surface pro (2017) </td><td style="vertical-align: middle"> Teilweise </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Grafiken 640/16 GB RAM </td>
         <td>
             <ul>
                 <li><b>Hinweis</b>: die Surface pro (2017) ist für Windows Mixed Reality nicht Badelt, unterstützt jedoch einige Windows Mixed Reality-Features, mit denen Sie eine begrenzte Anzahl von kompatiblen apps und spielen verwenden können.  Die Leistung hängt von Ihrer Konfiguration ab.</li>
                 <li>Konfigurationen mit einer integrierten GPU von Intel Core m3/Intel HD graphics 615 <b>werden nicht unterstützt</b> .</li>
-                <li>Konfigurationen mit einer Intel Core i5/Intel HD-Grafik 620 Integrated GPU bieten eine Windows Mixed Reality @ 60Hz-Darstellung.</li>
-                <li>Konfigurationen mit einem Intel Core i7/Intel® IRIS™ plus graphics 640 Integrated GPU bieten eine Windows Mixed Reality @ 60Hz-Darstellung.</li><br/><li>Erfordert Surface Mini Display Port für den Adapter "HDMI 2,0" (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
+                <li>Konfigurationen mit einer Intel Core i5/Intel HD-Grafik 620 Integrated GPU bieten eine Windows Mixed Reality @ 60-Hz-Darstellung.</li>
+                <li>Konfigurationen mit einem Intel Core i7/Intel® IRIS™ plus graphics 640 Integrated GPU bieten eine Windows Mixed Reality @ 60-Hz-Darstellung.</li><br/><li>Erfordert Surface Mini Display Port für den Adapter "HDMI 2,0" (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
                 <li>Erfordert den <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">Leistungs Schieberegler</a> während der Verwendung auf "beste Leistung".</li>
             </ul>
         </td>
     </tr><br/>    <tr>
-        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Grafiken 640/16 GB RAM </td>
+        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Teilweise </td><td style="vertical-align: middle"> Intel Core i7/Intel® IRIS™ plus Grafiken 640/16 GB RAM </td>
         <td>
             <ul>
                 <li><b>Hinweis</b>: der Surface-Laptop ist für Windows Mixed Reality nicht Badelt, unterstützt jedoch einige Windows Mixed Reality-Features, mit denen Sie eine begrenzte Anzahl von kompatiblen apps und spielen verwenden können.  Die Leistung hängt von Ihrer Konfiguration ab.</li>
                 <li>Konfigurationen mit einer integrierten GPU von Intel Core m3/Intel HD graphics 615 <b>werden nicht unterstützt</b> .</li>
-                <li>Konfigurationen mit einer Intel Core i5/Intel HD-Grafik 620 Integrated GPU bieten eine Windows Mixed Reality @ 60Hz-Darstellung.</li>
-                <li>Konfigurationen mit einem Intel Core i7/Intel® IRIS™ plus graphics 640 Integrated GPU bieten eine Windows Mixed Reality @ 60Hz-Darstellung.</li><br/><li>Erfordert Surface Mini Display Port für den Adapter "HDMI 2,0" (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
+                <li>Konfigurationen mit einer Intel Core i5/Intel HD-Grafik 620 Integrated GPU bieten eine Windows Mixed Reality @ 60-Hz-Darstellung.</li>
+                <li>Konfigurationen mit einem Intel Core i7/Intel® IRIS™ plus graphics 640 Integrated GPU bieten eine Windows Mixed Reality @ 60-Hz-Darstellung.</li><br/><li>Erfordert Surface Mini Display Port für den Adapter "HDMI 2,0" (andere Adapter funktionieren möglicherweise, sind jedoch nicht getestet)</li>
                 <li>Erfordert den <a href="https://support.microsoft.com/en-us/help/4023450/surface-surface-battery-and-power">Leistungs Schieberegler</a> während der Verwendung auf "beste Leistung".</li>
             </ul>
         </td>

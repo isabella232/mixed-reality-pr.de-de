@@ -8,26 +8,26 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: c0e2da59e64973c954cc880504a021a2835ed204
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 9237a9e4d537a15ffe4369d589e1fd80e3881891
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132124"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725691"
 ---
 # <a name="filing-bugs-and-feedback"></a>Einreichen von Bugs und Feedback
 
 ## <a name="why-its-important"></a>Warum es wichtig ist
 
-Das Engineering-Team verwendet den gleichen Mechanismus intern für die Nachverfolgung und Korrektur von Fehlern. Bitte senden Sie uns Feedback-Hub, und melden Sie alle Fehler, die Sie sehen. Wir hören an!
+Das Engineering-Team verwendet denselben Mechanismus für die Nachverfolgung und Korrektur interner Fehler. verwenden Sie daher den Feedback-Hub, um etwas merkwürdiges zu melden, das Sie sehen: wir lauschen!
 
 ## <a name="before-you-file-feedback"></a>Vor dem Senden von Feedback
 
 Stellen Sie sicher, dass Ihr PC so eingestellt ist, dass wir vollständige Daten für Feedback und Diagnose bereitstellen. Im folgenden wird erläutert, wie Sie die Einstellung auf Ihrem PC überprüfen, bevor Sie Feedback einreichen:
 
 1. Öffnen Sie die Windows- **Einstellungs** -app.
-2. Klicken Sie auf **Datenschutz** .
-3. Wechseln Sie im linken Bereich zu **Feedback & Diagnose** (Beachten Sie, dass dieses in den letzten Windows Insider-Builds von Windows in **Diagnotics &** .
+2. Wählen Sie **Datenschutz** aus.
+3. Wechseln Sie im linken Bereich zu **Feedback & Diagnose** , der in "Diagnose" **& Feedback** in den letzten Windows Insider-Builds von Windows umbenannt wurde.
 4. Wählen Sie unter Wählen Sie aus, **wie viele Daten an Microsoft gesendet werden die** Option **voll** , wenn Sie nicht bereits ausgewählt ist.
 5. Stellen Sie sicher, dass der PC neu gestartet wird, und wiederholen Sie die Schritte zum reproduzieren Ihres Problems, bevor Sie Feedback
 
@@ -36,7 +36,7 @@ Stellen Sie sicher, dass Ihr PC so eingestellt ist, dass wir vollständige Daten
 1. Stellen Sie sicher, dass das immersive Headset mit Ihrem PC verbunden ist.
 2. Starten Sie den **Feedback-Hub** auf dem Desktop mit dem verbundenen HMD.
 3. Wechseln Sie im linken Bereich zur **Registerkarte Feedback** . ![Feedback Registerkarte](images/feedback1.png) 
-4. Klicken Sie auf **neue Feedback hinzufügen** , um das Feedback einzugeben. ![„Neues Feedback hinzufügen“](images/feedback2.png)
+4. Wählen Sie neue Feedback-Schaltfläche **Hinzufügen** , um das Feedback einzugeben. ![„Neues Feedback hinzufügen“](images/feedback2.png)
 5. Wählen Sie in **welcher Art von Feedback das** **Problem** aus, um das Feedback zu ändern. ![Details und Reproduktions Schritte](images/feedback3.png)
 6. Geben Sie einen aussagekräftigen Feedback Titel im Feld zusammen **fassen Ihres Problems** ein.
 7. Geben Sie im Feld **Geben Sie weitere** Details Details und Schritte zum Reproduzieren des Problems an.
@@ -52,14 +52,14 @@ Stellen Sie sicher, dass Ihr PC so eingestellt ist, dass wir vollständige Daten
    | Einrichten           | Alles, was das Einrichten des Geräts verhindert.                           |
    | Alle anderen Probleme | Irgendetwas anderes.                                                                        |
 
-9. Damit wir den Fehler schneller identifizieren und beheben können, ist die Erfassung von Ablauf Verfolgungen und Videos äußerst hilfreich. Klicken Sie zum Starten der Erfassung von Ablauf Verfolgungen auf **Start Erfassung** . Dadurch wird die Erfassung von Ablauf Verfolgungen und eine Video Erfassung Ihres Szenarios mit gemischter Realität begonnen. ![ Erfassung starten](images/feedback4.png)
+9. Damit wir den Fehler schneller identifizieren und beheben können, ist die Erfassung von Ablauf Verfolgungen und Videos hilfreich. Um mit der Erfassung von Ablauf Verfolgungen zu beginnen, wählen Sie **Erfassung starten** Dadurch wird die Erfassung von Ablauf Verfolgungen und eine Video Erfassung Ihres Szenarios mit gemischter Realität begonnen. ![ Erfassung starten](images/feedback4.png)
 10. Belassen Sie die Feedback-APP, und führen Sie das unterbrochene Szenario aus. Schließen Sie die Feedback-Hub-APP an dieser Stelle nicht.
-11. Nachdem Sie das Szenario abgeschlossen haben, kehren Sie zur Feedback-app zurück, und klicken Sie auf **Erfassung Abbrechen** . Nachdem Sie dies getan haben, sollten Sie sehen, dass eine Datei mit den Ablauf Verfolgungen hinzugefügt wurde.
-12. Klicken Sie auf **senden** . ![ Senden](images/feedback5.png)
+11. Wenn Sie mit Ihrem Szenario fertig sind, kehren Sie zur Feedback-app zurück, und wählen Sie **Erfassung Abbrechen** aus. Nachdem Sie dies getan haben, sollten Sie sehen, dass eine Datei mit den Ablauf Verfolgungen hinzugefügt wurde.
+12. Wählen Sie **senden** aus. ![ Senden](images/feedback5.png)
 
 Dadurch gelangen Sie zur Seite "Danke". An diesem Punkt wurde Ihr Feedback erfolgreich übermittelt.
 
-Nachdem Sie Ihr Feedback gesendet haben, können Sie andere Personen (z. b. Kollegen, Microsoft-Mitarbeiter, [Forumleser](https://forums.hololens.com/) usw.) problemlos an das Problem **>** weiterleiten, indem Sie auf das Problem klicken und das Symbol " **Freigeben** " verwenden, um eine verkürzte URL zu erhalten, die Sie anderen Benutzern zur Verfügung stellen können, oder eskalieren.
+Es ist ganz einfach, andere Personen nach der Übermittlung an Ihr Feedback weiterzuleiten, indem Sie auf **Feedback > mein Feedback** klicken, das Problem auswählen und das Symbol " **Freigeben** " verwenden, um eine verkürzte URL zu erhalten. Sie können die URL an Kollegen, Microsoft-Mitarbeiter, [Forumleser](https://forums.hololens.com/) usw. weiterleiten, um Sie abzustimmen oder zu eskalieren.
 
 > [!IMPORTANT]
 > Stellen Sie vor dem Einreichen eines Fehlers sicher, dass Sie die folgenden Einschränkungen einhalten, damit die Protokolle erfolgreich mit dem Feedback hochgeladen werden.

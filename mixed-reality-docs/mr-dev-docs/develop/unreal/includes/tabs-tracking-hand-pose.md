@@ -1,11 +1,23 @@
 ---
-ms.openlocfilehash: 9fdcbdfe115fa859081c28b768f9c213ac241d13
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002676"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717482"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+Die Hierarchie wird von `EHandKeypoint` enum beschrieben:
+
+![Bild der Hand-Optionen für "keypoint bluprint"](../images/hand-keypoint-bp.png)
+
+Mithilfe der **Get Motion Controller-Daten** Funktion können Sie all diese Daten aus den Händen eines Benutzers erhalten. Diese Funktion gibt eine **xrmutioncontrollerdata** -Struktur zurück. Im folgenden finden Sie ein Beispielskript für eine Blaupause, das die xrmutioncontrollerdata-Struktur analysiert, um Handgelenk Positionen zu erhalten und ein debugkoordinaten System an den Positionen der einzelnen gemeinsamen Standorte zeichnet.
+
+![Blaupause der get-Daten Funktion für den Blick an die Zeilen Ablauf Verfolgung nach Kanal Funktion](../images/unreal-hand-tracking-img-03.png)
+
+Es ist wichtig, zu überprüfen, ob die Struktur gültig ist und dass Sie eine Hand ist. Andernfalls erhalten Sie möglicherweise nicht definiertes Verhalten beim Zugriff auf Positionen, Rotationen und Radien-Arrays.
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Die `EWMRHandKeypoint` -Enumeration beschreibt die Knochen Hierarchie der Hand. Sie finden jeden Hand-keypoint, der in ihren Blaupausen aufgeführt ist:
@@ -84,15 +96,3 @@ Im folgenden finden Sie eine Aufschlüsselung der Funktionsparameter von gethand
 * * * Radius – Radius der Basis des-Knochens.
 * * * Rückgabewert – true, wenn der Rahmen dieses Frames nachverfolgt wird, false, wenn der Knochen nicht nachverfolgt wird.
 
-
-# <a name="426"></a>[4.26](#tab/426)
-
-Die Hierarchie wird von `EHandKeypoint` enum beschrieben:
-
-![Bild der Hand-Optionen für "keypoint bluprint"](../images/hand-keypoint-bp.png)
-
-Mithilfe der **Get Motion Controller-Daten** Funktion können Sie all diese Daten aus den Händen eines Benutzers erhalten. Diese Funktion gibt eine **xrmutioncontrollerdata** -Struktur zurück. Im folgenden finden Sie ein Beispielskript für eine Blaupause, das die xrmutioncontrollerdata-Struktur analysiert, um Handgelenk Positionen zu erhalten und ein debugkoordinaten System an den Positionen der einzelnen gemeinsamen Standorte zeichnet.
-
-![Blaupause der get-Daten Funktion für den Blick an die Zeilen Ablauf Verfolgung nach Kanal Funktion](../images/unreal-hand-tracking-img-03.png)
-
-Es ist wichtig, zu überprüfen, ob die Struktur gültig ist und dass Sie eine Hand ist. Andernfalls erhalten Sie möglicherweise nicht definiertes Verhalten beim Zugriff auf Positionen, Rotationen und Radien-Arrays.

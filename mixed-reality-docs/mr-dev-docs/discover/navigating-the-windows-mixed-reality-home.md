@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, Betriebssystem, Plattform, Klippe, Haus, zuhause, Umgebung, Start, Startmenü, Startmenü, Pins, APP, starten von apps, platzieren von apps, teleportieren, verschieben, navigieren, Mixed Reality-Headset, Virtual Reality-Headset, Virtual Reality
-ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703446"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757688"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Navigieren auf der Startseite von Windows Mixed Reality
 
-Ebenso wie die Windows-PC-Darstellung mit dem Desktop startet, beginnt Windows Mixed Reality mit der Startseite. Die Windows Mixed Reality-Homepage nutzt unsere angeborenen Möglichkeiten, um 3D-Orte zu verstehen und zu navigieren. Bei hololens ist Ihre Startseite Ihr physischer Raum. Mit immersiven Headsets ist Ihr Zuhause ein virtueller Ort.
+Ebenso wie die Windows-PC-Darstellung mit dem Desktop startet, beginnt Windows Mixed Reality mit der Startseite. Die Windows Mixed Reality-Startseite nutzt unsere angeborenen Möglichkeiten, um 3D-Orte zu verstehen und zu navigieren. Bei hololens ist Ihr Zuhause Ihr physischer Raum, aber mit immersiven Headsets ist Ihr Zuhause ein virtueller Ort.
 
 In Ihrer Startseite verwenden Sie auch das Startmenü, um apps und Inhalte zu öffnen und zu platzieren. Sie können Ihre Startseite mit gemischtem Reality-Inhalt und Multitaskings auffüllen, indem Sie mehrere apps gleichzeitig verwenden. Die Dinge, die Sie in Ihrem Zuhause platzieren, bleiben auch dann, wenn Sie Ihr Gerät neu starten.
 
@@ -52,17 +52,17 @@ Wählen Sie in der APP-Leiste **Anpassen** aus, um Steuerelemente anzuzeigen, di
 
 ![Das Speicher Slate im Anpassungsmodus (blauer Frame). Beachten Sie, dass die APP-Leiste (oben) geändert wurde, sodass Sie die Schaltflächen "Done" und "Remove" enthält.](images/adjust-500px.png)
 
-Unterschiedliche apps haben möglicherweise zusätzliche Optionen auf der APP-Leiste. Microsoft Edge verfügt beispielsweise über *Scroll*-, *Drag*-und *Zoom* -Optionen. 
+Unterschiedliche Apps können andere Optionen auf der APP-Leiste haben. Microsoft Edge verfügt beispielsweise über *Scroll*-, *Drag*-und *Zoom* -Optionen. 
 
 ![App-Leiste für 2D-apps, die auf hololens ausgeführt werden](images/holobar-500px.png)
 
-Die Schaltfläche " **zurück** " navigiert zurück zu den zuvor angezeigten Bildschirmen in der app. Sie wird beendet, wenn Sie den Anfang der in der APP angezeigten Erfahrungen erreichen und nicht zu anderen apps navigieren.
+Die Schaltfläche " **zurück** " navigiert zurück zu den zuvor angezeigten Bildschirmen in der app. Der Vorgang wird beendet, wenn Sie den Anfang der in der APP angezeigten Erfahrungen erreichen und nicht zu anderen apps navigieren.
 
 ## <a name="getting-around-your-home"></a>Zu Hause
 
 Mit **hololens** bewegen Sie den physischen Raum, um zu Ihrem Zuhause zu navigieren.
 
-Mit **immersiven Headsets** können Sie in Ihrem Playspace auf ähnliche Weise fortfahren, um in einem ähnlichen Bereich in der virtuellen Welt zu navigieren. Wenn Sie über längere Entfernungen hinweg wechseln möchten, können Sie den Finger Stick auf dem Controller auf die gleiche Weise "durchlaufen", oder Sie können die *teleportung* verwenden, um sofort längere Entfernungen zu überspringen.
+Mit **immersiven Headsets** können Sie in Ihrem Wiedergabe Bereich fortfahren, um in einem ähnlichen Bereich in der virtuellen Welt zu navigieren. Wenn Sie über längere Entfernungen hinweg wechseln möchten, verwenden Sie den Finger Stick auf dem Controller, um *dies zu erreichen* .
 
 ![Teleportierung in der Windows Mixed Reality-Startseite](images/teleportation-500px.png)
 
@@ -87,7 +87,7 @@ Mit **immersiven Headsets** können Sie in Ihrem Playspace auf ähnliche Weise f
 
 ### <a name="motion-controllers"></a>Bewegungscontroller
 
-Die beste Windows Mixed Reality-Lösung ist die Verwendung von Windows Mixed Reality [Motion-Controllern](../design/motion-controllers.md) , die eine Nachverfolgung von 6 Grad an Freiheit unterstützen, indem nur die Sensoren in Ihrem Headset verwendet werden, ohne dass externe Kameras oder Marker erforderlich sind!
+Die beste Windows Mixed Reality-Lösung ist die Verwendung von Windows Mixed Reality [Motion-Controllern](../design/motion-controllers.md) , die sechs Grad an Freiheits Überwachung unterstützen, indem nur die Sensoren in Ihrem Headset verwendet werden, ohne dass externe Kameras oder Marker erforderlich sind!
 
 Navigations Befehle in Kürze verfügbar.
 
@@ -97,7 +97,7 @@ Navigations Befehle in Kürze verfügbar.
   * Tippen Sie auf den Finger Stick Links, rechts oder zurück, um in kleinen Schritten nach links, rechts oder zurück zu wechseln.
   * Klicken Sie auf der linken Seite auf nach unten, und halten Sie den Finger Stick in der Richtung, die Sie [virtuell durchlaufen möchten.](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * Tippen Sie auf den **rechten Finger Stick** Links oder rechts, um die Richtung um 45 Grad zu drehen.
-* Wenn Sie auf die Schaltfläche " **a** " klicken, [air tap](../design/gaze-and-commit.md#composite-gestures) wird eine Auswahl durchführt
+* Wenn Sie auf **die Schaltfläche** klicken, wird die Schaltfläche " [Air Tap](../design/gaze-and-commit.md#composite-gestures) " ausgewählt.
 * Wenn Sie die Schaltfläche " **Guide** " drücken, [wird das](../design/system-gesture.md#bloom) [Startmenü](navigating-the-windows-mixed-reality-home.md#start-menu) geöffnet.
 * Wenn Sie den **linken und den rechten Trigger** drücken, können Sie eine 2D-Desktop-App, mit der Sie interagieren, in der Startseite vergrößern und verkleinern.
 
@@ -106,20 +106,20 @@ Navigations Befehle in Kürze verfügbar.
 **Hinweis:** Verwenden Sie die **Windows-Taste + Y** , um die Maus zwischen dem Steuern des Desktops Ihres PCs und der Windows Mixed Reality-Startseite zu wechseln.
 
 Innerhalb der Windows Mixed Reality-Startseite:
-* Wenn Sie mit der **linken Maustaste auf** die Maustaste klicken, wird eine SELECT-Aktion durchführt, die wie die [Luft tippen](../design/gaze-and-commit.md#composite-gestures) Bewegung
+* Wenn Sie mit der **linken Maustaste klicken** , wird die Schaltfläche " [Air Tap](../design/gaze-and-commit.md#composite-gestures) " ausgewählt und fungiert.
 * Wenn Sie mit der **rechten Maustaste klicken** , wird der [teleportationsreticle](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) angezeigt.
 * Wenn Sie die **Windows** -Taste auf der Tastatur drücken, wird das [Startmenü](navigating-the-windows-mixed-reality-home.md#start-menu) geöffnet, und Sie verhält sich wie die [Blüte](../design/system-gesture.md#bloom) Bewegung.
 * Wenn Sie in einer 2D-Desktop-App mit der **linken Maustaste klicken** , klicken [Sie mit der](../design/gaze-and-commit.md) **rechten** Maustaste, um Kontextmenüs anzuzeigen, und verwenden Sie das **Mausrad** , um einen Bildlauf durchzuführen (genau wie auf dem Desktop Ihres PCs).
 
 ## <a name="cortana"></a>Cortana
 
-[Cortana](../design/voice-input.md#hey-cortana) ist Ihr persönlicher Assistent in Windows Mixed Reality, ebenso wie auf dem PC und Telefon. Hololens verfügt über ein integriertes Mikrofon, aber immersive Headsets erfordern möglicherweise zusätzliche Hardware. Verwenden Sie Cortana, um apps zu öffnen, Ihr Gerät neu zu starten, Dinge online zu sehen und vieles mehr. Entwickler können sich auch für die [Integration von Cortana](https://dev.windows.com/cortana) in Ihre Erfahrungen entscheiden.
+[Cortana](../design/voice-input.md#hey-cortana) ist Ihr persönlicher Assistent in Windows Mixed Reality, ebenso wie auf dem PC und Telefon. Hololens verfügt über ein integriertes Mikrofon, aber immersive Headsets erfordern möglicherweise zusätzliche Hardware. Verwenden Sie Cortana, um apps zu öffnen, Ihr Gerät neu zu starten, Dinge online zu suchen und vieles mehr. Entwickler können sich auch für die [Integration von Cortana](https://dev.windows.com/cortana) in Ihre Erfahrungen entscheiden.
 
 Sie können auch Sprachbefehle verwenden, um zu Hause zu gelangen. Zeigen Sie z. b. auf eine Schaltfläche (über einen [Blick](../design/gaze-and-commit.md) oder einen Controller, je nach Gerät), und sagen Sie "Select". Weitere Sprachbefehle sind "Go Home", "Bigger", "kleiner", "Close" und "Face Me".
 
 ## <a name="store-settings-and-system-apps"></a>Store-, Einstellungs-und System-apps
 
-Windows Mixed Reality verfügt über eine Reihe integrierter apps, wie z. b.:
+Windows Mixed Reality verfügt über mehrere integrierte apps, wie z. b.:
 * **Microsoft Store** zum erhalten von apps und spielen
 * **Feedback-Hub** zum Übermitteln von Feedback über die System-und System-apps
 * **Einstellungen** zum Konfigurieren von Systemeinstellungen ([einschließlich Netzwerk](../connecting-to-wi-fi-on-hololens.md) -und Systemupdates)
@@ -134,7 +134,7 @@ Windows Mixed Reality verfügt über eine Reihe integrierter apps, wie z. b.:
 * **Desktop** (immersive Headsets) zum Anzeigen Ihres Desktop Monitors in einem immersiven Headset
 * **Datei-Explorer** Zugreifen auf Dateien und Ordner, die sich auf Ihrem Gerät befinden
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [App-Ansichten](../design/app-views.md)
 * [Motion-Controller](../design/motion-controllers.md)
 * [Hardware-Zubehör](hardware-accessories.md)

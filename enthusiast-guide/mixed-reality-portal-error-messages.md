@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Mixed Reality-Portal
 appliesto:
 - Windows 10
-ms.openlocfilehash: 11fa60b16a350d794a08db6a5f6120d88259c9ac
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2beb063afb3aea5f44be116e6cb906312447dbd8
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685875"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726041"
 ---
 # <a name="mixed-reality-portal-error-messages"></a>Fehlermeldungen im Mixed Reality-Portal
 
@@ -29,7 +29,7 @@ Wenn dies nicht funktioniert, stellen Sie sicher, dass Ihr PC Ihr Headset erkenn
 2. Geben Sie "Geräte-Manager" in das Suchfeld ein, und wählen Sie es in der Liste aus. 
 3. Erweitern Sie "gemischte Reality-Geräte", und überprüfen Sie, ob Ihr Headset aufgeführt ist. 
 
-Wenn Sie nicht aufgeführt ist, versuchen Sie Folgendes:
+Wenn dies nicht der Fall ist:
 1. Anschließen Sie das Headset an verschiedene Ports auf dem PC, falls verfügbar.
 2. Überprüfen Sie, ob die neuesten Software Updates Windows Update.
 3. Deinstallieren und Neuinstallieren von Windows Mixed Reality:
@@ -44,8 +44,8 @@ Stellen Sie eine Verbindung zwischen Ihrem Headset und einem anderen USB-Anschlu
 
 ## <a name="im-getting-a-check-your-display-cable-error-message"></a>Ich erhalte die Fehlermeldung "Ihr Anzeige Kabel überprüfen".
 
-Probieren Sie Folgendes aus:
+Führen Sie die folgenden Schritte aus, um das Problem zu beheben:
 * Stellen Sie eine Verbindung zwischen Ihrem Headset und einem Display Port 1,2 oder höher bzw. "HDMI 1,4" oder höher her. Stellen Sie sicher, dass der Port mit der fortschrittlichsten Grafikkarte auf Ihrem PC übereinstimmt.
-* Wenn Sie einen Adapter verwenden, stellen Sie sicher, dass er 4K-fähig ist.
+* Wenn Sie einen Adapter verwenden, stellen Sie sicher, dass er die 4K-fähig ist.
 * Versuchen Sie, einen anderen HDMI-Port zu verwenden.
 * Wenn Sie einen externen Monitor an einem HDMI-Port angeschlossen haben, versuchen Sie stattdessen, ihn an einen DisplayPort zu binden, und verwenden Sie den HDMI-Port für das Headset.

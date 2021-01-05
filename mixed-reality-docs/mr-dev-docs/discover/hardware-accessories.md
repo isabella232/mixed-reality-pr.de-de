@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: Anleitungen, Zubehör, Bluetooth, BT, Controller, Gamepad, Clicker, Xbox, Hardware, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Motion Controller
-ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702006"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757718"
 ---
 # <a name="hardware-accessories"></a>Hardware-Zubehör
 
-Windows Mixed Reality-Geräte unterstützen Zubehör. Sie können Bluetooth oder USB verwenden, um unterstützte Zubehör mit einem immersiven Headset zu koppeln, indem Sie den PC verwenden, mit dem Sie verbunden ist.
+Windows Mixed Reality-Geräte unterstützen Zubehör. Sie können Bluetooth-oder USB-Ports verwenden, um unterstützte Zubehör mit einem immersiven Headset von Ihrem PC zu koppeln.
 
 Informationen zur Verwendung von Bluetooth-Zubehör mit hololens finden Sie unter [Herstellen einer Verbindung mit Bluetooth und USB-C-Geräten](https://docs.microsoft.com/hololens/hololens-connect-devices).
 
@@ -27,14 +27,14 @@ Die Kopplung einer Bluetooth-Peripherie mit einem immersiven Headset ähnelt dem
 
 1. Öffnen Sie im Startmenü die app " **Einstellungen** ".
 2. Zu **Geräten** wechseln
-3. Aktivieren Sie das Bluetooth-Radio, wenn es mit dem Schieberegler deaktiviert ist.
-4. Platzieren Sie Ihr Bluetooth-Gerät im Paarmodus. Dies variiert von Gerät zu Gerät. Auf den meisten Bluetooth-Geräten erfolgt dies durch Drücken und halten einer oder mehrerer Schaltflächen.
+3. Aktivieren Sie das Bluetooth-Radio, wenn es mithilfe des Schieberegler-Schalters ausgeschaltet ist.
+4. Platzieren Sie Ihr Bluetooth-Gerät im Paarmodus. Dieser Prozess unterscheidet sich von Gerät zu Gerät, aber auf den meisten Bluetooth-Geräten halten Sie eine oder mehrere Schaltflächen gedrückt.
 5. Warten Sie, bis der Name des Geräts in der Liste der Bluetooth-Geräte angezeigt wird. Wählen Sie dann das Gerät aus, und wählen Sie dann die Schaltfläche **paar** aus. Wenn Sie über viele Bluetooth-Geräte in der Nähe verfügen, müssen Sie möglicherweise einen Bildlauf zum Ende der Bluetooth-Geräteliste durchführen, um das Gerät anzuzeigen, das Sie koppeln möchten.
 6. Beim Koppeln von Bluetooth-Peripheriegeräten mit Eingabefunktionen (z. b. Bluetooth-Tastaturen) kann eine 6-stellige oder eine 8-stellige PIN angezeigt werden. Achten Sie darauf, dass Sie diese Pin am Peripheriegerät eingeben und dann die EINGABETASTE drücken, um die Kopplung mit dem Headset abzuschließen.
 
 ## <a name="motion-controllers"></a>Bewegungscontroller
 
-Windows Mixed Reality [Motion Controller](../design/motion-controllers.md) werden von immersiven Headsets, aber nicht von hololens unterstützt. Diese Controller bieten mithilfe der Sensoren im immersiven Headset eine präzise und reaktionsfähige Nachverfolgung der Bewegung in Ihrem Sichtfeld, d. h., es ist nicht erforderlich, Hardware an den Wänden in Ihrem Bereich zu installieren. Jeder Controller verfügt über mehrere Methoden der Eingabe.
+Windows Mixed Reality [Motion Controller](../design/motion-controllers.md) werden von immersiven Headsets, aber nicht von hololens unterstützt. Diese Controller bieten eine präzise und reaktionsfähige Bewegungs Nachverfolgung in ihrer Sicht. Sensoren im immersiven Headset führen die Nachverfolgung aus, d. h., es ist nicht erforderlich, Hardware an den Wänden in Ihrem Bereich zu installieren. Jeder Controller verfügt über mehrere Methoden der Eingabe.
 
 ![Windows Mixed Reality-Bewegungs Controller](../design/images/winmr-ck-1080x1080-350px.jpg)
 
@@ -46,7 +46,7 @@ In englischer Sprache Verfügbarkeit Bluetooth-Tastaturen können paarweise geko
 
 Sie können einen Controller mit apps und spielen verwenden, die die Gamepad-Unterstützung speziell aktivieren. Gamepads können nicht zum Steuern der hololens-Benutzeroberfläche verwendet werden.
 
-Xbox Wireless-Controller, die mit der Xbox One s geliefert werden oder als Zubehör für die Xbox One s-Funktion als Zubehör verkauft werden, sind Bluetooth-Verbindungen, die die Verwendung mit hololens und immersiven Headsets ermöglichen. Der Xbox Wireless Controller [muss aktualisiert werden](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) , bevor er mit hololens verwendet werden kann.
+Xbox Wireless-Controller, die mit der Xbox One s oder als Zubehör für die Xbox One s-Funktion für Bluetooth-Konnektivität verkauft werden, damit Sie Sie mit hololens und immersiven Headsets verwenden können. Der Xbox Wireless Controller [muss aktualisiert werden](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) , bevor er mit hololens verwendet werden kann.
 
 Andere Marken von Bluetooth-Gamepads können mit Windows Mixed Reality-Geräten verwendet werden, die Unterstützung variiert jedoch je nach Anwendung.
 
@@ -56,9 +56,9 @@ Solange das Peripheriegerät entweder die Bluetooth HID-oder GATT-Profile unters
 
 Zu den nicht unterstützten Peripheriegeräten gehören:
 
-* Peripheriegeräte in Bluetooth-audioprofilen werden nicht unterstützt.
-* Bluetooth-Audiogeräte, wie z. b. Sprecher und Headsets, werden möglicherweise als verfügbar in der App "Einstellungen" angezeigt, werden aber nicht für die Verwendung mit Microsoft hololens als audioendpunkt unterstützt.
-* Für Bluetooth aktivierte Telefone und PCs wird das kombinieren und Verwenden von Dateiübertragungen nicht unterstützt.
+* Peripheriegeräte in den Bluetooth-audioprofilen werden nicht unterstützt.
+* Bluetooth-Audiogeräte, wie z. b. Sprecher und Headsets, sind möglicherweise in der App "Einstellungen" verfügbar, werden aber nicht mit Microsoft hololens als audioendpunkt unterstützt.
+* Bluetooth-aktivierte Telefone und PCs werden für Kopplung und Dateiübertragungen nicht unterstützt.
 
 ## <a name="unpairing-a-bluetooth-peripheral"></a>Entkopplung einer Bluetooth-Peripherie
 

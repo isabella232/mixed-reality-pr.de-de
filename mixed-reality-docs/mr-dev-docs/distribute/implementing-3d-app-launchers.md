@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Deep-Link, secondarytile, Sekundär Kachel, UWP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, XML, Begrenzungsfeld, Unity
-ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703196"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757495"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementieren von 3D-App-Startprogrammen (UWP-Apps)
 
 > [!NOTE]
 > Diese Funktion wurde als Teil des 2017 Fall Creators Updates (RS3) für immersive Headsets hinzugefügt und wird von hololens mit dem Windows 10-Update vom April 2018 unterstützt. Stellen Sie sicher, dass Ihre Anwendung auf eine Version des Windows SDK ist, die größer als oder gleich 10.0.16299 auf immersiven Headsets und 10.0.17125 auf hololens ist. Die neuesten Windows SDK finden Sie [hier](https://developer.microsoft.com/windows/downloads/windows-10-sdk).
 
-Der [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) -Startpunkt ist der Ausgangspunkt, an dem Benutzer vor dem Starten von Anwendungen landen. Beim Erstellen einer UWP-Anwendung für Windows Mixed Reality werden apps standardmäßig als 2D-Slate mit dem Logo Ihrer APP gestartet. Beim Entwickeln von Umgebungen für Windows Mixed Reality kann optional ein 3D-Start Programm definiert werden, um das standardmäßige 2D-Start Programm für Ihre Anwendung zu überschreiben. Im Allgemeinen werden 3D-Start Programm zum Starten von immersiven Anwendungen empfohlen, die Benutzer aus der Windows Mixed Reality-Startseite ziehen, während das standardmäßige 2D-Start Programm bevorzugt wird, wenn die APP an Ort und Stelle aktiviert wird. Sie können auch einen [3D-Deep-Link (secondarytile)](#3d-deep-links-secondarytiles) als 3D-Start Programm für Inhalte innerhalb einer 2D-UWP-app erstellen.
+Der [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) -Startpunkt ist der Ausgangspunkt, an dem Benutzer vor dem Starten von Anwendungen landen. Beim Erstellen einer UWP-Anwendung für Windows Mixed Reality werden apps standardmäßig als 2D-Slate mit dem Logo Ihrer APP gestartet. Beim Entwickeln von Umgebungen für Windows Mixed Reality kann optional ein 3D-Start Programm definiert werden, um das standardmäßige 2D-Start Programm für Ihre Anwendung zu überschreiben. Im Allgemeinen werden 3D-Launcher zum Starten von immersiven Anwendungen empfohlen, die Benutzer aus der Windows Mixed Reality-Startseite machen. Das standardmäßige 2D-Start Programm wird bevorzugt, wenn die APP direkt aktiviert wird. Sie können auch einen [3D-Deep-Link (secondarytile)](#3d-deep-links-secondarytiles) als 3D-Start Programm für Inhalte innerhalb einer 2D-UWP-app erstellen.
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -72,7 +72,7 @@ Geben Sie als nächstes "mixedrealitymodel" in der Standard Kachel für Ihre Anw
 </Applications>
 ```
 
-Die mixedrealitymodel-Elemente akzeptieren einen Dateipfad, der auf ein 3D-Asset verweist, das in Ihrem App-Paket gespeichert ist. Zurzeit werden nur 3D-Modelle unter Verwendung des. GLB-Datei Formats bereitgestellt, die für die [Windows Mixed Reality 3D Asset Authoring-Anweisungen](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) erstellt wurden. Assets müssen im App-Paket gespeichert werden, und die Animation wird derzeit nicht unterstützt. Wenn der Parameter "Path" leer gelassen wird, zeigt Windows das 2D-Slate anstelle des 3D-Start Programms an. **Hinweis:** das. GLB-Asset muss in ihren Buildeinstellungen als "Inhalt" gekennzeichnet werden, bevor Sie Ihre APP erstellen und ausführen.
+Das mixedrealitymodel-Element akzeptiert einen Dateipfad, der auf ein 3D-Asset verweist, das in Ihrem App-Paket gespeichert ist. Zurzeit werden nur 3D-Modelle unter Verwendung des. GLB-Datei Formats bereitgestellt, die für die [Windows Mixed Reality 3D Asset Authoring-Anweisungen](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) erstellt wurden. Assets müssen im App-Paket gespeichert werden, und die Animation wird derzeit nicht unterstützt. Wenn der Parameter "Path" leer gelassen wird, zeigt Windows das 2D-Slate anstelle des 3D-Start Programms an. **Hinweis:** das. GLB-Asset muss in ihren Buildeinstellungen als "Inhalt" gekennzeichnet werden, bevor Sie Ihre APP erstellen und ausführen.
 
 
 ![Wählen Sie im Projektmappen-Explorer die GLB-Datei aus, und markieren Sie Sie mithilfe des Abschnitts Eigenschaften als "Inhalt" in den Buildeinstellungen.](images/buildsetting-content-300px.png)<br>
@@ -80,7 +80,7 @@ Die mixedrealitymodel-Elemente akzeptieren einen Dateipfad, der auf ein 3D-Asset
 
 ### <a name="bounding-box"></a>Begrenzungsrahmen
 
-Ein Begrenzungs Rahmen kann verwendet werden, um optional einen zusätzlichen Pufferbereich um das Objekt hinzuzufügen. Das umgebende Feld wird mithilfe eines Mittelpunkts und der Blöcke angegeben, die den Abstand zwischen der Mitte des umgebenden Felds und seinen Rändern entlang der Achse angeben. Die Einheiten für das Begrenzungsfeld können 1 Einheit = 1 Meter zugeordnet werden. Wenn kein Begrenzungsfeld angegeben wird, wird eines automatisch an das Mesh des Objekts angepasst. Wenn das angegebene Begrenzungsfeld kleiner als das Modell ist, wird es in die Größe geändert, damit es an das Mesh angepasst ist.
+Ein Begrenzungs Rahmen kann verwendet werden, um optional einen zusätzlichen Pufferbereich um das Objekt hinzuzufügen. Das umgebende Feld wird mithilfe eines Mittelpunkts und von Blöcken angegeben, die den Abstand zwischen der Mitte des umgebenden Felds und seinen Rändern entlang der Achse angeben. Die Einheiten für das Begrenzungsfeld können 1 Einheit = 1 Meter zugeordnet werden. Wenn kein Begrenzungsfeld angegeben wird, wird eine automatisch an das Mesh des Objekts angepasst. Wenn das angegebene Begrenzungsfeld kleiner als das Modell ist, wird es in die Größe geändert, damit es an das Mesh angepasst ist.
 
 Die Unterstützung für das Begrenzungsfeld Attribut wird mit dem Windows-Update-Update als Eigenschaft für das mixedrealitymodel-Element erreicht. Fügen Sie zum Definieren eines Begrenzungs Rahmens zuerst am oberen Rand des App-Manifests das uap6-Schema hinzu, und fügen Sie es als Ignorable Namespaces ein:
 
@@ -157,7 +157,7 @@ await tile.RequestCreateAsync();
 
 ### <a name="bounding-box"></a>Begrenzungsrahmen
 
-Zum Hinzufügen eines zusätzlichen Puffer Bereichs um das Objekt kann ein Begrenzungs Rahmen verwendet werden. Das umgebende Feld wird mithilfe eines Mittelpunkts und der Blöcke angegeben, die den Abstand zwischen der Mitte des umgebenden Felds und seinen Rändern entlang der Achse angeben. Die Einheiten für das Begrenzungsfeld können 1 Einheit = 1 Meter zugeordnet werden. Wenn kein Begrenzungsfeld angegeben wird, wird eines automatisch an das Mesh des Objekts angepasst. Wenn das angegebene Begrenzungsfeld kleiner als das Modell ist, wird es in die Größe geändert, damit es an das Mesh angepasst ist.
+Zum Hinzufügen eines zusätzlichen Puffer Bereichs um das Objekt kann ein Begrenzungs Rahmen verwendet werden. Das umgebende Feld wird mithilfe eines Mittelpunkts und von Blöcken angegeben, die den Abstand zwischen der Mitte des umgebenden Felds und seinen Rändern entlang der Achse angeben. Die Einheiten für das Begrenzungsfeld können 1 Einheit = 1 Meter zugeordnet werden. Wenn kein Begrenzungsfeld angegeben wird, wird eines automatisch an das Mesh des Objekts angepasst. Wenn das angegebene Begrenzungsfeld kleiner als das Modell ist, wird die Größe angepasst, damit es an das Mesh angepasst wird.
 
 ### <a name="activation-behavior"></a>Aktivierungs Verhalten
 
@@ -166,7 +166,7 @@ Zum Hinzufügen eines zusätzlichen Puffer Bereichs um das Objekt kann ein Begre
 
 Sie können das Aktivierungs Verhalten für eine 3D-secondarytile definieren, um zu steuern, wie Sie reagiert, wenn ein Benutzer Sie auswählt. Dies kann verwendet werden, um 3D-Objekte in die gemischte Realität zu platzieren, die rein informativ oder dekorativ sind. Die folgenden Aktivierungs Verhaltenstypen werden unterstützt:
 1. Standard: Wenn ein Benutzer die 3D-secondarytile auswählt, wird die App aktiviert.
-2. Keine: Wenn die Benutzer die 3D-secondarytile auswählen, geschieht nichts, und die APP ist nicht aktiviert.
+2. Keine: Wenn der Benutzer die 3D-secondarytile auswählt, geschieht nichts, und die APP ist nicht aktiviert.
 
 ### <a name="obtaining-and-updating-an-existing-secondarytile"></a>Abrufen und Aktualisieren einer vorhandenen "secondarytile"
 
@@ -191,18 +191,19 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Überprüfen, ob der Benutzer in der gemischten Realität von Windows ist
 
-3D Deep-Links (secondarytiles) können nur erstellt werden, während die Ansicht in einem Windows Mixed Reality-Headset angezeigt wird. Wenn Ihre Ansicht nicht in einem Windows Mixed Reality-Headset angezeigt wird, sollten Sie diese ordnungsgemäß behandeln, indem Sie entweder den Einstiegspunkt ausblenden oder eine Fehlermeldung anzeigen. Sie können dies überprüfen, indem Sie [iscurrentviewpresentedonholographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)Abfragen.
+3D Deep-Links (secondarytiles) können nur erstellt werden, während die Ansicht in einem Windows Mixed Reality-Headset angezeigt wird. Wenn Ihre Ansicht nicht in einem Windows Mixed Reality-Headset angezeigt wird, empfiehlt es sich, dies zu behandeln, indem Sie entweder den Einstiegspunkt ausblenden oder eine Fehlermeldung anzeigen. Sie können dies überprüfen, indem Sie [iscurrentviewpresentedonholographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)Abfragen.
 
 ## <a name="tile-notifications"></a>Kachel Benachrichtigungen
 
-Bei Kachel Benachrichtigungen wird das Senden eines Updates mit einem 3D-Medienobjekt derzeit nicht unterstützt. Dies bedeutet, dass Entwickler nicht die folgenden Aktionen ausführen können:
+Bei Kachel Benachrichtigungen wird das Senden eines Updates mit einem 3D-Medienobjekt derzeit nicht unterstützt. Dies bedeutet, dass Entwickler nicht folgende Aktionen ausführen können:
+
 * Pushbenachrichtigungen
 * Periodische Abruf Vorgänge
 * Geplante Benachrichtigungen
 
-Weitere Informationen zu den anderen Kacheln Features und Attributen und deren Verwendung für 2D-Kacheln finden Sie in der [Dokumentation zu Kacheln für UWP-apps](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+Weitere Informationen zu den anderen Kacheln Features und Attributen und deren Verwendung für 2D-Kacheln finden Sie in der [Dokumentation Kacheln für UWP-apps](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Gemischtes Reality-Modell Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) mit einem 3D-App-Start Programm.
 * [Entwurfsanleitung für 3D-App-Startprogramm](3d-app-launcher-design-guidance.md)

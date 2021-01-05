@@ -3,26 +3,26 @@ title: Webvr-FAQs
 description: Problembehandlung bei Web Mixed Reality, das über unsere standardmäßige Kundensupport Dokumentation hinausgeht.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, webvr
-ms.openlocfilehash: e03051008921f87e18cae3a9f6db369e54c56b94
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131934"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725631"
 ---
 # <a name="webvr-faqs"></a>Webvr-FAQs
 
 ## <a name="why-cant-i-see-my-controllers-when-viewing-vr-content-from-edge"></a>Warum kann ich meine Controller beim Anzeigen von VR-Inhalten von Edge nicht sehen?
 
-Nicht alle webvr-Inhalte werden zur Unterstützung von Bewegungs Controllern erstellt. Webvr ermöglicht Inhalts Entwicklern die Unterstützung verschiedener Eingabetypen, z. b. Spiele Controller oder Bewegungs Controller. Wenn Ihre Controller an einem Standort nicht angezeigt werden, ist die Unterstützung von Motion Controller wahrscheinlich nicht vorhanden.
+Nicht alle webvr-Inhalte werden zur Unterstützung von Bewegungs Controllern erstellt. Webvr ermöglicht Inhalts Entwicklern die Unterstützung verschiedener Eingabetypen, z. b. Spiele Controller oder Bewegungs Controller. Wenn Ihre Controller auf einer Site nicht angezeigt werden, hat Sie wahrscheinlich keine Unterstützung für Motion Controller.
 
 ## <a name="why-cant-i-use-the-mouse-in-an-immersive-webvr-view"></a>Warum kann ich die Maus nicht in einer immersiven webvr-Ansicht verwenden?
 
-Dies ist ein optionales Feature der webvr-Spezifikation. Diese Funktion wird nicht von allen Browsern unterstützt, und nicht alle webvr-Inhalte werden zur Unterstützung von Maus Eingaben erstellt. Webvr ermöglicht Inhalts Entwicklern die Unterstützung verschiedener Eingabetypen, z. b. Maus, Tastatur, Spiele Controller oder Bewegungs Controller. Das Verhalten der Maus Eingaben variiert je nach Browser. Innerhalb von Microsoft Edge müssen Website Autoren sicherstellen, dass Sie "pointerlock" verwenden, wenn Sie dem Headset präsentieren, damit die Maus Eingaben funktioniert.
+Die Verwendung einer Maus ist ein optionales Feature der webvr-Spezifikation. Diese Funktion wird nicht von allen Browsern unterstützt, und nicht alle webvr-Inhalte werden zur Unterstützung von Maus Eingaben erstellt. Webvr ermöglicht Inhalts Entwicklern die Unterstützung verschiedener Eingabetypen, z. b. Maus, Tastatur, Spiele Controller oder Bewegungs Controller. Das Verhalten der Maus Eingaben variiert je nach Browser. Innerhalb von Microsoft Edge müssen Website Autoren sicherstellen, dass Sie "pointerlock" verwenden, wenn Sie dem Headset präsentieren, damit die Maus Eingaben funktioniert.
 
-## <a name="why-cant-i-view-360-degree-videos-from-youtubefacebookvimeothe-guardian-etc-from-edge-in-vr"></a>Warum kann ich keine Videos zu 360 Grad von YouTube/Facebook/Vimeo/dem Wächter usw. von Edge in VR anzeigen?
+## <a name="why-cant-i-view-360-degree-videos-from-youtubefacebookvimeothe-guardian-etc-from-edge-in-vr"></a>Warum kann ich keine Videos aus dem 360-Grad von YouTube/Facebook/Vimeo/dem Wächter usw. von Edge in VR anzeigen?
 
-Es gibt eine webvr-Spezifikation, die es Websites ermöglicht, VR-Erlebnisse direkt aus dem Browser zu starten, und die Autoren dieser Websites haben diese Spezifikation zu diesem Zeitpunkt nicht implementiert. Möglicherweise können apps auf einigen Plattformen heruntergeladen werden, die die Anzeige von VR-Inhalten von diesen Anbietern ermöglichen.
+Es gibt eine webvr-Spezifikation, die es Websites ermöglicht, VR-Erfahrungen direkt aus dem Browser zu starten. Die Autoren dieser Websites haben diese Spezifikation zu diesem Zeitpunkt noch nicht implementiert. Möglicherweise können apps auf einigen Plattformen heruntergeladen werden, die die Anzeige von VR-Inhalten von diesen Anbietern ermöglichen.
 
 ## <a name="why-cant-i-enter-vr-from-firefox-or-chrome"></a>Warum kann ich VR aus Firefox oder Chrome nicht eingeben?
 
@@ -37,7 +37,7 @@ Die-Website hat möglicherweise keine Unterstützung für multigpu-Computer (ein
 
 ## <a name="when-i-exit-vr-when-watching-a-video-from-edge-the-sound-continues-playing-but-the-edge-window-is-grayed-out"></a>Beim Beenden von VR beim Anschauen eines Videos von Edge wird der Sound weiterhin abgespielt, aber das Fenster "Edge" ist ausgegraut.
 
-Dies ist ein bekanntes Problem beim Ausführen von webvr von Edge im Mixed Reality-Klippe-Haus. Um dieses Problem zu beheben, drücken Sie auf der Tastatur die Tastenkombination, anstatt die Windows-Taste zu drücken, um die webvr-Oberfläche zu beenden, oder aktivieren Sie das ausgelöerte Rand Fenster, indem Sie es auswählen und das Video beenden
+Dies ist ein bekanntes Problem beim Ausführen von webvr von Edge im Mixed Reality-Klippe-Haus. Um dieses Problem zu beheben, drücken Sie auf der Tastatur die Tastenkombination anstelle der Windows-Schaltfläche, um die webvr-Oberfläche zu beenden, oder aktivieren Sie das ausgelöerte Rand Fenster, indem Sie es auswählen und das Video beenden.
 
 ## <a name="can-i-use-webvr-on-the-hololens"></a>Kann ich webvr in den hololens verwenden
 
@@ -53,9 +53,9 @@ Die Website unterstützt Windows Mixed Reality-Headsets nicht ordnungsgemäß. D
 4. Warten Sie fünf bis 10 Sekunden, bis die Darstellung vollständig in den immersiven Modus wechselt.
 5. Auf dem Headset ablegen.
 
-## <a name="the-display-is-very-low-resolution-in-some-webvr-experiences"></a>Die Anzeige ist bei einigen webvr-Erfahrungen sehr gering.
+## <a name="the-display-is-low-resolution-in-some-webvr-experiences"></a>Die Anzeige ist in einigen webvr-Umgebungen mit geringer Auflösung
 
-Diese Websites unterstützen keine großen Lösungen mit hoher Auflösung. So umgehen Sie dieses Problem:
+Diese Websites unterstützen High-Resolution-Headsets nicht ordnungsgemäß. Dieses Problem können Sie folgendermaßen umgehen:
 
 * Wenn Sie webvr über den Desktop starten (anstelle des "Mixed Reality"-Klippe), stellen Sie sicher, dass das Fenster maximiert ist, bevor Sie "Enter VR" auswählen.
 * Vermeiden Sie das Ändern der Größe des Microsoft Edge-Fensters, nachdem Sie VR eingegeben haben.

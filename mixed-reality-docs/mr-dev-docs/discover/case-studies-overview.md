@@ -1,26 +1,26 @@
 ---
 title: Übersicht über die Fallstudie
-description: Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team kennengelernt hat
+description: Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden hat
 author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, hololens, Fallstudie, Vision, Szenarios, Fallstudien, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703486"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757648"
 ---
 # <a name="case-study-gallery"></a>Katalog der Fallstudien
 
-Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team kennengelernt hat
+Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden hat
 
 :::row:::
     :::column:::
        [ ![ 3 holostudio UI and Interaktionsdesign Erkenntnisse](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 holostudio UI and Interaktionen Design Erkenntnisse](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        Holostudio war eine der ersten Apps für hololens. Aus diesem Grund mussten wir neue bewährte Methoden für die 3D-Benutzeroberfläche und den Interaktions Entwurf erstellen. Wir haben dies durch eine Vielzahl von Benutzer Tests, Prototypen und Test-und Fehler Tests durchgeführt.<br>
+        Holostudio war eine der ersten Apps für hololens. Aus diesem Grund mussten wir neue bewährte Methoden für die 3D-Benutzeroberfläche und den Interaktions Entwurf erstellen. Wir haben dies durch Benutzer Tests, Prototypen und Test-und Fehler Tests durchgeführt.<br>
         *Juli 2016*
     :::column-end:::
     :::column:::
@@ -30,7 +30,7 @@ Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team kennengele
     :::column-end:::
     :::column:::
        [ ![ Erstellen eines immersiven Erlebnisses in Fragmenten](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[Erstellen einer immersiven Darstellung in Fragmenten](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Fragmente ist ein interaktives Kriminalitäts Drama für Microsoft hololens, bei dem Sie die Hinweise zum Lösen eines Geheimnisses befolgen, das in Ihrem realen Raum stattfindet.<br>
+        Fragmente sind ein interaktives Kriminalitäts Drama für Microsoft hololens, bei dem Sie die Hinweise zum Lösen eines Geheimnisses befolgen, das in Ihrem realen Raum stattfindet.<br>
         *August 2016*
     :::column-end:::
 :::row-end:::
@@ -73,13 +73,13 @@ Bevor Microsoft hololens ausgeliefert wurde, fragten wir unsere Entwickler Commu
 
 :::row:::
     :::column:::
-       [ ![ Erstellen einer Galaxy-Mischung in gemischter Realität](images/full-galaxy-500px.png)](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md) **[Creating a galaxy in mixed reality](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)**<br>
+       [ ![ Erstellen einer Galaxy-Mischung in gemischter Realität](images/full-galaxy-500px.png)](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md) **[](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)**<br>
         Bevor Microsoft hololens ausgeliefert wurde, fragten wir unsere Entwickler Community, welche Art von APP Ihnen einen erfahrenen internen TeamBuild für das neue Gerät bereitstellen möchte. Mehr als 5000 Ideen wurden freigegeben, und nach einer 24-stündigen Twitter-Umfrage war der Gewinner eine Idee namens "Galaxy Explorer".<br>
          *Februar 2016*
     :::column-end:::
     :::column:::
        [ ![ Die Erstellung von Galaxy Explorer für hololens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) **[das Erstellen von Galaxy Explorer für hololens 2](../develop/unity/galaxy-explorer-update.md)**<br>
-        Willkommen bei der Vorgehensweise beim Aktualisieren von Galaxy Explorer für hololens 2. Der Galaxy Explorer wurde ursprünglich als Open-Source-Anwendung für hololens (1. Generation) durch das Teilen Ihres Ideen Programms entwickelt, und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die neuen Funktionen von hololens 2.<br>
+        Willkommen bei der Vorgehensweise beim Aktualisieren von Galaxy Explorer für hololens 2. Der Galaxy Explorer wurde ursprünglich als Open-Source-Anwendung für hololens (1. Generation) durch das Teilen Ihres Ideen Programms entwickelt und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die neuen Funktionen von hololens 2.<br>
         *Juni 2019*
     :::column-end:::
     :::column:::
@@ -104,7 +104,7 @@ Holotour für Microsoft hololens bietet immersive persönliche 3D-Touren von ber
         *August 2016*
     :::column-end:::
     :::column:::
-       [ ![ Erfassen und Erstellen von Inhalten für](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) die **[Erfassung und Erstellung von Inhalten](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) für holotour**<br>
+       [ ![ Erfassen und Erstellen von Inhalten für](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) die **[Erfassung und Erstellung](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) von Inhalten für Machu Pichu holotour**<br>
         Holotour bietet immersive persönliche 3D-Touren von berühmten Standorten auf der ganzen Welt. Wie wir herausgefunden haben, ist das Erstellen eines überzeugender realen 3D-Renderings eines bekannten Standorts eine Mischung aus Creative und Logical Wizardry.<br>
         *August 2016*
     :::column-end:::
@@ -123,7 +123,7 @@ Verwenden Sie in diesem gemischten Reality-Ersteller den Augenblick und die Gest
          *Februar 2016*
     :::column-end:::
     :::column:::
-       [ ![ Durchlaufen der Lücken in ihrer Realität](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md) **[Looking through holes in your reality](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
+       [ ![ Durchlaufen der Lücken in ihrer Realität](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md) **[](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
         In dieser Fallstudie wird erläutert, wie der "Magic Window"-Effekt auf hololens implementiert wird, sodass der Benutzer hinter den Wänden, in der Etage und in virtuellen Öffnungen innerhalb der eigentlichen Umgebung sehen kann.<br>
         *Februar 2016*
     :::column-end:::
@@ -140,7 +140,7 @@ Lesen Sie unsere grundlegenden Gedanken, und verstehen Sie die folgenden Prinzip
 :::row:::
     :::column:::
        [ ![ Darstellung von Menschen in gemischter Realität](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) , die **[Menschen in gemischter Realität darstellen](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
-        Welche Chancen entstehen, wenn wir nicht nur fantastische Elemente erstellen können, sondern die realistischsten Erfassungen von Umgebungen, Objekten und Menschen in gemischter Realität nutzen?<br>
+        Welche Chancen entstehen, wenn wir nicht nur fantastische Elemente erstellen können, sondern die realistischsten Erfassungen von Umgebungen, Objekten und Menschen in gemischter Realität verwenden?<br>
          *November 2017*
     :::column-end:::
     :::column:::
@@ -158,7 +158,7 @@ Lesen Sie unsere grundlegenden Gedanken, und verstehen Sie die folgenden Prinzip
 :::row:::
     :::column:::
        [ ![ Prozess-, Prototyperstellung, Prototyperstellung, Erstellung](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md) der Nachfolgeversion, Erstellung **[von Prototypen, Erstellung](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
-        Zu diesem Zeitpunkt arbeiten wir mit Ihnen zusammen, um Ihre Ideen und Bestrebungen in konkrete, vollständig operative Produkte und Erfahrungen zu verwandeln, die für den Markt bereit sind. Bevor wir jedoch eine einzelne Codezeile schreiben, erstellen wir eine Blaupause durch einen Prozess namens "Projekt".<br>
+        Zurzeit arbeiten wir mit Ihnen zusammen, um Ihre Ideen und Bestrebungen in konkrete, vollständig operative Produkte und Erfahrungen für den Markt zu verwandeln. Bevor wir jedoch eine einzelne Codezeile schreiben, erstellen wir eine Blaupause durch einen Prozess namens "Projekt".<br>
         *April 2017*
     :::column-end:::
     :::column:::

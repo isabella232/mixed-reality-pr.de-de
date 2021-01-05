@@ -6,19 +6,19 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: Mrtk, Mixed Reality Toolkit, holograms, Entwerfen von holograms, erlernen, Beispiel-APP, Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality?
-ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 2480b5e0b4dca502c746dad6f070226ffa8cd1f9
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002585"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757758"
 ---
 # <a name="the-making-of-designing-holograms"></a>Das Entwerfen von holograms
 
 > [!NOTE]
 > Gestatten Sie einem kleinen lade Fenster, alle coolen GIFs und eingebetteten Videos auf dieser Seite zu berücksichtigen.
 
-Das Erlernen des Entwurfs für gemischte Realität kann schwierig sein, insbesondere in Bezug darauf, wie visuell das Mittel ist, was sich nicht immer gut in 2D-Entwurfs Prozesse übersetzt. Wir haben hier bei Microsoft eine kostenlose App erstellt, die Sie für die hololens 2 herunterladen können. Sie hilft Ihnen, die Grundlagen von Mixed Reality UX zu erlernen, indem wir Sie in erster Hand sehen. Der einzigartige Ansatz der APP zum Entwerfen von holograms ist in gemischtes Realitäts Verhalten, Tipps und Empfehlungen integriert, um Ihnen die Erstellung ansprechender und verblüffender hololens-apps zu erleichtern. Laden Sie die App kostenlos von der Microsoft Store herunter, und lernen Sie von dem Mixed Reality-Design Team von Microsoft.
+Das Erlernen des Entwurfs für gemischte Realität kann schwierig sein, da das Medium nicht immer gut in 2D-Entwurfs Prozesse übersetzt. Wir haben hier bei Microsoft eine kostenlose App für die hololens 2 erstellt, um Ihnen das Erlernen der Grundlagen von Mixed Reality UX-Entwurf zu erleichtern. Der einzigartige Ansatz der APP zum Entwerfen von holograms ist in gemischtes Realitäts Verhalten, Tipps und Empfehlungen integriert, um Ihnen die Erstellung ansprechender und verblüffender hololens-apps zu erleichtern. Laden Sie die App kostenlos von der Microsoft Store herunter, und lernen Sie von dem Mixed Reality-Design Team von Microsoft.
 
 > [!div class="nextstepaction"]
 > [Herunterladen der APP zum Entwerfen von holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
@@ -52,7 +52,7 @@ Das Entwerfen von holograms ist eine visuelle Darstellung, in der gemischte Entw
 
 ## <a name="exploring-the-doll-house"></a>Erkunden des Puppenhauses
 
-Das Puppenhaus ist die virtuelle Umgebung, die wir in der App verwenden, einem 80 x 60 x 40-cm-Miniatur Raum, der die grundlegenden Elemente enthält, die die meisten Räume gemeinsam haben, wie z. b. Wände, Lampen, Möbel, eine Tabelle und ein TV. Das Puppenhaus ist der Hauptprotagonist der APP-Umgebung, daher mussten wir sicherstellen, dass es in jeder Umgebung gut funktioniert. Sehen Sie sich dies als kleinen Demo Raum an, in dem Sie alle Arten gemischter Realitäts Konzepte visualisieren.
+Das Puppenhaus ist die virtuelle Umgebung, die in der gesamten App verwendet wird. Bei der Umgebung handelt es sich um einen 80 x 60 x 40-cm-Miniatur Raum, der die grundlegenden Elemente enthält, die die meisten Räume gemeinsam haben, wie z. b. Wände, Lampen, Möbel, eine Tabelle und ein TV. Das Puppenhaus ist der Hauptprotagonist der APP-Umgebung, daher mussten wir sicherstellen, dass es in jeder Umgebung gut funktioniert. Sehen Sie sich dies als kleinen Demo Raum an, in dem Sie alle Arten gemischter Realitäts Konzepte visualisieren.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Dollhouse-adjustment-behavior-in-the-Designing-Holograms-app/player]
 *Video zum Anpassungs Verhalten von Dollhouse*
@@ -65,7 +65,7 @@ Unsere anfängliche Annahme war, dass 1:1 Demonstrationen erstaunlich waren, fas
 - Anzeigen sind additiv, was bedeutet, dass die gesamte virtuelle Umgebung über dem Raum eines Benutzers überlagert wird. Dies kann mit zwei Tabellen verwirrend werden, möglicherweise mit doppelten Couches und Wänden, die nicht ausgerichtet sind.
 - Und das schlechteste aus einer virtuellen Umgebung, die stark durch ein Sichtfeld eingeschränkt ist.
 
-Als wir eine Mini-1:10-Skalierung ausprobiert haben, war das Ergebnis eine fantastische Vogelperspektive in einem realistischen Raum, in dem Sie alle Elemente sehen konnten, die von einem beliebigen Winkel und alle gleichzeitig durchgeführt wurden. Was am offensichtlichsten war, ist, dass die meisten Tester es so viel mehr einsehen, dass Sie eine kleine Version sehen konnten, und dann nie wieder zur 1:1-Skala gewechselt. Wir haben uns entschieden, die Version 1:1 zu bereinigen und die zusätzliche Arbeit zu vermeiden, die zum Anpassen der Benutzeroberfläche und anderer Aspekte der APP erforderlich ist.
+Als wir eine Mini-1:10-Skala ausprobiert haben, war das Ergebnis eine fantastische Vogelperspektive in einem realistischen Raum. Sie können alles, was in jedem beliebigen Winkel passiert ist, gleichzeitig sehen. Was am offensichtlichsten war, ist, dass die meisten Tester es so viel mehr einsehen, dass Sie eine kleine Version sehen konnten, und dann nie wieder zur 1:1-Skala gewechselt. Wir haben uns entschieden, die Version 1:1 zu bereinigen und die zusätzliche Arbeit zu vermeiden, die zum Anpassen der Benutzeroberfläche und anderer Aspekte der APP erforderlich ist.
 
 ![Sichtfeld mit 1:1-Skalierungs ](images/designing-holograms/1-1-scale.png)
  *Feld Ansicht mit 1:1-Skala*
@@ -84,7 +84,7 @@ Microsoft verfügt über eine Mixed Reality Capture Studio in San Francisco. Mic
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
 *Unformatierte Text Aufnahmen von Daniel Escudero von einer der 106-Kameras im Mixed Reality Capture Studio in San Francisco.*
 
-Der Erfassungsprozess generiert ein keyframed Mesh, Normals und eine Textur, die als obj/PNG-Dateien zur weiteren Nachbereitung bereitgestellt werden können, oder zur Wiedergabe als H. 264-komprimierte MP4-Datei. Diese Dateien können in Unity, Unreal, Native und webxr importiert und unter Windows, Ios, Mac, Android, Magic Leap und Play Play (VR) ausgeführt werden.
+Der Erfassungsprozess generiert ein keyframed Mesh, Normals und eine Textur, die als obj/PNG-Dateien zur weiteren Nachbereitung bereitgestellt werden können, oder zur Wiedergabe als H. 264-komprimierte MP4-Datei. Diese Dateien können in Unity-, Unreal-, Native-und webxr-Projekte importiert werden. Dateien können unter Windows, Ios, Mac, Android, Magic Leap und Play Play VR ausgeführt werden.
 
 <br>
 
@@ -97,7 +97,7 @@ Gemischte Reality-Erfassungen führen zu virtuellen Darstellungen von Personen o
 
 ### <a name="head-gaze-adjustment"></a>Anpassung des Head-Blicks
 
-Mit der Überschrift Anpassung können Sie den Kopf einer erfassten Person zur Laufzeit verschieben, was bedeutet, dass Sie ein Erfassungs Gesicht für einen Benutzer haben könnten. In unserem Fall haben wir Sie verwendet, um das Feld für die Ansicht und das gewünschte Feld anzuzeigen. Im folgenden sehen Sie ein bewegliches gameobject, das als Ziel für den Haupt Blick fungiert. Wenn das Ziel von Seite zu Seite verschoben wird, wird der Anfang der Erfassung befolgt.
+Durch die Anpassung von headblick können Sie den Kopf einer erfassten Person zur Laufzeit verschieben, was bedeutet, dass Sie für einen Benutzer ein Erfassungs Gesicht haben könnten. In unserem Fall haben wir Sie verwendet, um das Feld für die Ansicht und das gewünschte Feld anzuzeigen. Im folgenden sehen Sie ein bewegliches gameobject, das als Ziel für den Haupt Blick fungiert. Wenn das Ziel von Seite zu Seite verschoben wird, wird der Anfang der Erfassung befolgt.
 
 Wir haben diesen Trick verwendet, um sicherzustellen, dass die im Leerlauf befindliche Erfassung stets mit holograms in unterschiedlichen Teilen des Puppenhauses konfrontiert wird. 
 
@@ -107,7 +107,7 @@ Wir haben diesen Trick verwendet, um sicherzustellen, dass die im Leerlauf befin
 
 ### <a name="syncing-animated-objects"></a>Synchronisieren von animierten Objekten
 
-Die zweite war das Animieren von Objekten, die mit einer Erfassungs Bewegung synchronisiert werden sollen. In unterschiedlichen Teilen der APP haben wir alle fünf Frames das sequenzielle OBJS einer bestimmten Erfassung importiert. Die OBJS wurde dann in der Szene animiert, um sicherzustellen, dass Sie mit dem entsprechenden Frame der Erfassung übereinstimmen. Es ist ein mühsamer Prozess der Animation und der Keyframes, aber das Ergebnis ist hervorragend, Sie können nun eine gemischte Reality-Erfassung sehen, die mit nicht erfassten Objekten interagiert.
+Die zweite war das Animieren von Objekten, die mit einer Erfassungs Bewegung synchronisiert werden sollen. In unterschiedlichen Teilen der APP haben wir alle fünf Frames das sequenzielle OBJS einer bestimmten Erfassung importiert. Die OBJS wurde dann in der Szene animiert, um sicherzustellen, dass Sie mit dem entsprechenden Frame der Erfassung übereinstimmen. Es ist ein mühsamer Prozess der Animation und der Keyframes, aber das Ergebnis ist hervorragend. Sie können jetzt eine gemischte Reality-Erfassung sehen, die mit nicht erfassten Objekten interagiert.
 
 ![Synchronisierungs Animation zwischen einem gemischten Reality-Erfassungs-und UI-Panel](images/designing-holograms/synced-objects.gif)
 
@@ -115,11 +115,11 @@ Die zweite war das Animieren von Objekten, die mit einer Erfassungs Bewegung syn
 
 ### <a name="ui-creative-process"></a>Kreativer UI-Prozess
 
-Als wir mit der ideierung des UI-Entwurfs begonnen haben, wollten wir neben dem Transport von Informationen auch einige der magischen und Möglichkeiten zeigen, die holograms anbieten müssen. Die einfache Anzeige statischer 2D-Fenster und Textfelder ist in der 3D-Welt nicht gleich, und es werden nicht viele der Möglichkeiten angezeigt. Wir haben uns also von Anfang an entschieden, von diesem Weg zu kommen und den Holographic 3D-Raum vollständig zu nutzen.
+Als wir das Design der Benutzeroberfläche gestartet haben, wollten wir einige der magischen und möglichen Möglichkeiten zeigen, die holograms anbieten müssen. Das einfache darstellen von statischen 2D-Fenstern und Textfeldern ist in der 3D-Welt nicht richtig. Viele der Möglichkeiten werden nicht angezeigt. Wir haben also von Anfang an entschieden, von diesem Weg zu kommen, und machen den Holographic 3D-Raum vollständig zu nutzen.
 
-Zunächst haben wir begonnen, den Bereichen und Symbolen zusätzlich zu den Textinformationen eine gewisse Stärke hinzuzufügen. Als Benutzer sehen Sie das Textfeld. Text Felder mit Bildern, aber wir sind nicht vorhanden. Wir haben mit den Shader von Mixed Reality Toolkit (mrtk) fortgefahren. Die mrtk-Shader wurden zu einem leistungsfähigen Tool, und wir haben die Schablonen Features genutzt, von denen einige möglicherweise als Portal Effekt bekannt sind, um den Bereichen negative Tiefe hinzuzufügen. Das heißt, anstatt Elemente vor einem Textfeld hinzuzufügen, werden die Symbole jetzt hinter einem transparenten Panel angezeigt. Ich sehe jetzt als Benutzer etwas, das ich einfach nicht mehr in der realen Welt replizieren kann. an dieser Stelle begann Holographic Magic. Auch als Benutzer, den ich nicht möchte, mache ich das noch viel in der physischen Welt.
+Zunächst haben wir begonnen, den Bereichen, Symbolen und Textinformationen eine gewisse Stärke hinzuzufügen. Als Benutzer sehen Sie das Textfeld. Text Felder mit Bildern, aber wir sind nicht vorhanden. Wir haben mit den Shader von Mixed Reality Toolkit (mrtk) fortgefahren. Die mrtk-Shader wurden zu einem leistungsfähigen Tool, und wir nutzten unsere Schablonen Features, um den Bereichen negative Tiefe hinzuzufügen. Das heißt, anstatt Elemente vor einem Textfeld hinzuzufügen, werden die Symbole jetzt hinter einem transparenten Panel angezeigt. Ich sehe jetzt als Benutzer etwas, das ich einfach nicht mehr in der realen Welt replizieren kann. an dieser Stelle begann Holographic Magic. Auch als Benutzer, den ich nicht gerne lesen möchte, mache ich noch viel in der physischen Welt.
 
-Natürlich funktionieren Symbole viel besser als der einfache Text. um eine noch leistungsfähigere Anleitung bereitzustellen, habe ich dann mit dem Erstellen eines Satzes von animierten Objekten und Avatars begonnen, von denen jeder eine kleine Story darüber erzählt, was im jeweiligen Szenario passiert und wie es verwendet wird.
+Natürlich funktionieren Symbole viel besser als der einfache Text, um eine noch leistungsfähigere Anleitung bereitzustellen. Anschließend begann ich mit der Erstellung eines Satzes von animierten Objekten und Avatars, von denen jeder eine kleine Story darüber erzählt, was im jeweiligen Szenario passiert und wie es verwendet wird.
 
 ![Animiertes GIF eines interaktiven Holographic-Menüsystems](images/designing-holograms/creative-process.gif)
 
@@ -181,7 +181,7 @@ Der Entwurf von holograms vermittelt gemischte Reality-Konzepte, aber Sie könne
 </tr>
 </table>
 
-Ein sehr vielen Dank für das Mixed Reality-Entwurfs Team, das so viel Wissen und natürlich an die erstaunlichen Leute der [Objekt Theorie](https://objecttheory.com/) weitergegeben hat, die in jedem einzelnen Schritt dieses Projekts wesentliche Teammitglieder wurden. Vielen Dank für ihre faszinierenden Talente, für Ihre Leidenschaft und das besondere Design.
+Ein großer Dank für das Mixed Reality-Entwurfs Team für die gemeinsame Nutzung von Kenntnissen und für die erstaunlichen Menschen in der [Objekt Theorie](https://objecttheory.com/) , dass Sie in jedem Schritt des Projekts wesentliche Teammitglieder sind. Vielen Dank für ihre faszinierenden Talente, für Ihre Leidenschaft und das besondere Design.
 
 > [!div class="nextstepaction"]
 > [Herunterladen der APP zum Entwerfen von holograms](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd6541dd651573f31ddc2e2a388be53394059c5f
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 283bfffb2d59d92712e86e12c05be8974f04fae6
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482413"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717873"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -72,7 +72,7 @@ Folgende Lösungen sind möglich:
 
 ##### <a name="i-cant-deploy-over-usb"></a>Bereitstellen über USB nicht möglich
 
-Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Sie sicher, dass Sie alle oben aufgeführten Installationsanforderungen erfüllt haben, und befolgen Sie unser [schrittweises Tutorial](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Sie sicher, dass Sie alle oben aufgeführten Installationsanforderungen erfüllt haben, und befolgen Sie unsere [schrittweise Anleitung](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 #### <a name="immersive-vr-headset-requirements"></a>Anforderungen an immersive Headsets (VR)
 
@@ -81,8 +81,6 @@ Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Si
 
 >[!WARNING]
 >Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
-
-Wenn Sie ein **Reverb G2**-Headset verwenden, laden Sie das **Microsoft-Valve OpenXR**-Plug-In herunter (TODO: // Need link).
 
 Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
 
@@ -196,8 +194,6 @@ Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Si
 
 >[!WARNING]
 >Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
-
-Wenn Sie ein **Reverb G2**-Headset verwenden, laden Sie das **Microsoft-Valve OpenXR**-Plug-In herunter (TODO: // Need link).
 
 Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
 

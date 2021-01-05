@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: Hololens, hololens 2, pix, Capture, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530443"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822924"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installieren von PIX für HoloLens 2
 
@@ -25,7 +25,7 @@ ms.locfileid: "97530443"
 
 3. **Entwicklermodus** und **Geräte Portal** aktivieren:
 
-* Öffnen Sie die **Einstellungen** in der Shell:
+* Öffnen Sie die **Einstellungen** von Mixed Reality Home:
 
 ![Screenshot des Menüs "hololens" mit hervorgehobener Einstellungs Schaltfläche](images/pix-img-01.jpg)
 

@@ -3,12 +3,12 @@ title: Verwenden von webvr mit gemischter Windows-Realität
 description: Beschreibt webvr und erläutert, wie Sie mit Microsoft Edge auf Windows Mixed Reality-Headsets verwendet werden.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, webvr, Edge, Microsoft Edge, Webbrowser
-ms.openlocfilehash: 8e8d7b5feefe5b1eccad0684808b40b63e9bbbca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131854"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725601"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Verwenden von webvr mit gemischter Windows-Realität
 
@@ -17,21 +17,21 @@ ms.locfileid: "93131854"
 
 ## <a name="what-is-webvr"></a>Was ist WebVR?
 
-[Webvr](https://webvr.info) ist eine offene Spezifikation, die es ermöglicht, VR in Ihrem Browser zu erleben. Wenn eine Website die webvr-Unterstützung implementiert und 3D-Inhalte bereitstellt, können Sie mit der Zustimmung des Benutzers immersive Inhalte im Headset anzeigen.
+[Webvr](https://webvr.info) ist eine offene Spezifikation, mit der Sie VR direkt in einem Browser erleben können. Wenn eine Website die webvr-Unterstützung implementiert und 3D-Inhalte bereitstellt, können Sie mit der Zustimmung des Benutzers immersive Inhalte im Headset anzeigen.
 
 ## <a name="what-is-the-difference-between-webvr-and-browsing-the-web-in-vr"></a>Worin besteht der Unterschied zwischen webvr und dem Durchsuchen des Internets in VR?
 
-Webvr ist eine Technologie, die es einem Website Autor ermöglicht, eine VR-Funktionalität zu einer Seite hinzuzufügen. Die webvr-API wird von einer Seite verwendet, um 3D-Inhalte (z. b. 360-Grad-Video oder 3D-Modell oder 3D-Spiel) mit dem gesamten Headset anzuzeigen. **Beispiel:** Anzeigen eines 360-Videos auf [CNN.com/VR](http://cnn.com/vr). Wenn eine Seite webvr unterstützt, wird eine Schaltfläche oder ein anderes UI-Element hinzugefügt, auf das Sie klicken können, um VR einzugeben.
+Webvr ist eine Technologie, die es einem Website Autor ermöglicht, eine VR-Funktionalität zu einer Seite hinzuzufügen. Die webvr-API wird von einer Seite verwendet, um 3D-Inhalt (z. b. ein Video mit 360-Grad oder ein 3D-Modell oder ein 3D-Spiel) für das gesamte Headset anzuzeigen. **Beispiel:** Anzeigen eines 360-Videos auf [CNN.com/VR](http://cnn.com/vr). Wenn eine Seite webvr unterstützt, wird eine Schaltfläche oder ein anderes UI-Element hinzugefügt, das Sie für die Eingabe von VR auswählen können.
 
 Das Durchsuchen des Internets in VR bedeutet, dass Sie den Edge-Browser verwenden, während Sie Ihr Headset verwenden, als 2D-App-Slate innerhalb von cliffhouse.
 
 ## <a name="do-all-websites-support-webvr"></a>Unterstützen alle Websites webvr
 
-Nein. Website Autoren müssen sich für die Verwendung von webvr entscheiden. Außerdem können Sie Websites erstellen, die für bestimmte Browser, Headsets und Controller optimiert sind. Einige webvr-Inhalte sind z. b. nur für Mobile VR-Geräte optimiert. Beachten Sie auch, dass Websites den webvr-Inhalt explizit erstellen und bereitstellen müssen. Die Anzahl von Standorten, an denen einige webvr-kompatible Inhalte vorhanden sind, wächst jeden Tag.
+Nein. Website Autoren müssen sich für die Verwendung von webvr entscheiden, und Sie können optimierte Websites für bestimmte Browser, Headsets und Controller erstellen. Einige webvr-Inhalte sind nur für Mobile VR-Geräte optimiert. Beachten Sie auch, dass Websites den webvr-Inhalt explizit erstellen und bereitstellen müssen. Die Anzahl von Standorten, an denen einige webvr-kompatible Inhalte vorhanden sind, wächst jeden Tag.
 
 ## <a name="can-i-use-my-viveoculus-etc-to-view-webvr-content-in-microsoft-edge"></a>Kann ich "Vive/Oculus" usw. verwenden, um webvr-Inhalte in Microsoft Edge anzuzeigen
 
-Nein. Sie müssen ein Windows Mixed Reality-Headset verwenden, um webvr in Edge zu verwenden. Allerdings können Sie in einem anderen Browser auf webvr-Inhalte zugreifen. eine komplette Liste der kompatiblen Geräte und Browser finden Sie unter: [webvr. Rocks](http://webvr.rocks/).
+Nein. Ein Windows Mixed Reality-Headset ist erforderlich, um webvr in Edge zu verwenden. Sie können jedoch in einem anderen Browser auf webvr-Inhalte zugreifen. eine komplette Liste der kompatiblen Geräte und Browser finden Sie unter: [webvr. Rocks](http://webvr.rocks/).
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>Wo finde ich die webvr-Entwicklerdokumentation?
 
@@ -56,12 +56,12 @@ Um webvr-Inhalte auf einem Windows Mixed Reality-Headset (mit Hardware oder Simu
 1. Stellen Sie sicher, dass Ihr Headset angeschlossen ist.
 2. Starten Sie Microsoft Edge entweder auf dem Desktop oder in gemischter Realität.
 3. Navigieren Sie zu einer webvr-aktivierten Seite.
-4. Klicken Sie auf der Seite auf die Schaltfläche Enter VR eingeben (der Speicherort und die visuelle Darstellung dieser Schaltfläche können je nach Website variieren). Dies könnte etwa wie folgt aussehen: \
+4. Wählen Sie auf der Seite die Schaltfläche Enter VR eingeben aus (der Speicherort und die visuelle Darstellung dieser Schaltfläche können je nach Website variieren). Dies könnte etwa wie folgt aussehen: \
    ![VR-Brillen Bild](images/75px-enter-vr.png)
-5. Wenn Sie zum ersten Mal versuchen, VR in eine bestimmte Domäne einzugeben, fordert der Browser die Zustimmung zur Verwendung der immersiven Ansicht an. Klicken Sie dann auf Ja: ![Benutzeroberfläche für Zustimmung, die beim ersten Versuch angezeigt wird, VR in eine bestimmte Domäne einzugeben](images/1053px-Webvr-consent-ui.png)
+5. Wenn Sie zum ersten Mal versuchen, VR in eine bestimmte Domäne einzugeben, fordert der Browser die Zustimmung zur Verwendung der immersiven Ansicht an, und wählen Sie ja: ![Benutzeroberfläche für Zustimmung, die beim ersten Versuch angezeigt wird, VR in eine bestimmte Domäne einzugeben](images/1053px-Webvr-consent-ui.png)
 6. Ihr Headset sollte mit dem Anzeigen der webvr-Inhalte beginnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Problembehandlung > webvr](webvr-questions.md)
 * [Vorgehensweise beim Einstieg in Ihre erste webvr-Benutzer Darstellung](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

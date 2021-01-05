@@ -8,18 +8,18 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: f349f4bbc2cadd511515783504562052f1d58ed3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132054"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725391"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Motion Controller in Windows Mixed Reality
 
-Bewegungs Controller sind Hardware Zubehör, mit denen Benutzer in gemischter Realität Maßnahmen ergreifen können. Ein Vorteil von Bewegungs Controllern gegenüber Gesten besteht darin, dass die Controller eine genaue Position im Raum aufweisen und eine differenzierte Interaktion mit digitalen Objekten ermöglichen. Für Windows Mixed Reality-immersive Headsets sind Bewegungs Controller die primäre Methode, mit der Benutzer in ihrer Welt Maßnahmen ergreifen können.
+Bewegungs Controller sind Hardware Zubehör, mit denen Benutzer in gemischter Realität interagieren können. Ein Vorteil von Bewegungs Controllern gegenüber Gesten besteht darin, dass die Controller eine genaue Position im Raum aufweisen und eine differenzierte Interaktion mit digitalen Objekten ermöglichen. Für Windows Mixed Reality-immersive Headsets sind Bewegungs Controller die primäre Methode, mit der Benutzer in ihrer Welt Maßnahmen ergreifen können.
 
-Windows Mixed Reality Motion Controllers bieten mithilfe der Sensoren im immersiven Headset eine präzise und reaktionsfähige Nachverfolgung der Bewegung in Ihrem Sichtfeld, d. h., es ist nicht erforderlich, Hardware an den Wänden in Ihrem Bereich zu installieren. Diese Motion-Controller bieten dieselbe einfache Einrichtung und Portabilität wie Windows Mixed Reality (immersive Headsets).
+Windows Mixed Reality Motion Controllers bieten mithilfe der immersiven Headset-Sensoren eine präzise und reaktionsfähige Bewegungs Nachverfolgung in ihrer Ansicht. Es ist nicht erforderlich, Hardware an den Wänden in Ihrem Bereich zu installieren. Diese Motion-Controller bieten dieselbe einfache Einrichtung und Portabilität wie Windows Mixed Reality (immersive Headsets).
 
 Sie können auch einen Xbox-Controller, eine Maus und Tastatur verwenden oder mit [nur ihrer Stimme](using-speech-in-wmr.md)umgehen.
 
@@ -28,8 +28,8 @@ Sie können auch einen Xbox-Controller, eine Maus und Tastatur verwenden oder mi
 Die meisten Headsets sind direkt mit dem Headset gekoppelt, aber einige frühe Headsets erfordern, dass die Motion-Controller mit dem PC mit Bluetooth 4,0 gekoppelt werden. Wenn Sie Ihr immersives Headset zum ersten Mal verbinden, werden Sie durch das Einschalten der Motion-Controller während des Setups gelangen. Wenn Sie diese später erneut koppeln müssen, gehen Sie wie folgt vor:
 
 1. Starten Sie das **Mixed Reality-Portal** mit dem verbundenen Headset.  
-2. Wählen Sie in der unteren linken Ecke **... > richten** Sie die Controller ein.
-3. Fügen Sie 2 AA-Akkus in jeden Controller ein, und versetzen Sie den Controller in den Paarmodus (Weitere Informationen finden Sie im [Abschnitt zum paar Motion](controllers-in-wmr.md#pair-motion-controllers)
+2. Wählen Sie in der unteren linken Ecke **... > einrichten von Controllern**.
+3. Fügen Sie zwei AA-Akkus in jeden Controller ein, und versetzen Sie den Controller in den Paarmodus (Weitere Informationen finden Sie im [Abschnitt zum paar Motion](controllers-in-wmr.md#pair-motion-controllers)
 4. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
 > [!NOTE]
@@ -59,7 +59,7 @@ Entfernen Sie die Batterieabdeckung von ihren Controllern, und suchen Sie die Sc
     ![Bewegung Controller Kopplung](images/connect_controller.png)
 
 Starten Sie das **Mixed Reality-Portal** mit dem verbundenen Headset.  
-Wählen Sie in der unteren linken Ecke **... > richten** Sie die Controller ein.
+Wählen Sie in der unteren linken Ecke **... > einrichten von Controllern**.
 Folgen Sie den Anweisungen auf dem Bildschirm.
 
 ### <a name="pair-motion-controllers-to-pc"></a>Kombinieren von Bewegungs Controllern zum PC
@@ -73,13 +73,13 @@ Schalten Sie die Controller ein, und platzieren Sie Sie wie oben beschrieben in 
 
 Nachdem die Kopplung vollständig ist, sind LEDs einleuchtend und hell.
 
-### <a name="common-issues"></a>Allgemeine Probleme
+### <a name="common-issues"></a>Häufige Probleme
 
 * Vergewissern Sie sich, dass auf Ihrem PC nur ein Bluetooth-radioaktiv ist. Wenn Sie über mehr als ein Bluetooth-Radio verfügen, müssen Sie die anderen Radios in Geräte-Manager deaktivieren.
 * Platzieren Sie Ihr Bluetooth-Dongle an einem Port, der über eine klare Sichtlinie an Ihre Controller und weit von USB 3,0-Geräten angeschlossen ist. USB 3,0 weist eine RF-Beeinträchtigung mit Bluetooth auf (Weitere Informationen finden Sie in [diesem Dokument](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) von Intel). USB-2,0-Ports funktionieren möglicherweise besser für das Bluetooth-Dongle.
-* Stellen Sie sicher, dass Ihr Bluetooth-Dongle nicht an einen USB-Anschluss angeschlossen ist, der dem USB-Kabel Ihres HMD angrenzt. Das Headset-Kabel hat bekanntermaßen auch Störungen mit Bluetooth-Dongles zur Ursache. Verbinden Sie den Ring an den Front-USB-Anschluss auf Ihrem PC, um optimale Ergebnisse zu erzielen.
-* Stellen Sie für Notebooks sicher, dass WiFi mit einem 5-GHz-Band verbunden ist, um optimale Ergebnisse zu erzielen (Wählen Sie das Drahtlos Netzwerk Symbol unten rechts aus, und wählen Sie Eigenschaften für das verwendete Netzwerk aus). Notebooks, die eine 2,4-GHz-Antenne für Bluetooth-und WiFi-Konnektivität verwenden, sehen höchstwahrscheinlich Datenüberlastung in Form langsamer Netzwerkgeschwindigkeiten oder schlechter nach Verfolgungs Leistung für Bewegungs Controller.
-* Ihre Motion-Controller erhalten regelmäßig neue Software Updates von Microsoft. Die Controller zeigen ein Abwechselndes Muster mit blinkenden Lichtern an, wenn diese neuen Software Updates empfangen werden. Dies ist normal. Warten Sie, bis die Software Aktualisierung abgeschlossen ist, bevor Sie die Controller verwenden (die Controller werden vibrieren, und ein konstantes Licht ersetzt das abwechselnde Flash Muster, wenn es ausgeführt wird).
+* Stellen Sie sicher, dass Ihr Bluetooth-Dongle nicht an einem USB-Anschluss neben dem USB-Kabel Ihres HMD angeschlossen ist. Das Headset-Kabel hat bekanntermaßen auch Störungen mit Bluetooth-Dongles zur Ursache. Verbinden Sie den Ring an den Front-USB-Anschluss auf Ihrem PC, um optimale Ergebnisse zu erzielen.
+* Stellen Sie für Notebooks sicher, dass WiFi mit einem 5-GHz-Band verbunden ist, um optimale Ergebnisse zu erzielen. Wählen Sie das Drahtlos Netzwerk Symbol unten rechts aus, und wählen Sie Eigenschaften für das Netzwerk aus, das Sie verwenden. Notebooks, die für die Verwendung einer 2,4 GHz-Antenne für Bluetooth-und WiFi-Konnektivität entwickelt wurden, werden die Datenüberlastung von langsamen Netzwerkgeschwindigkeiten oder eine schlechte Überwachung der Bewegungs Controller Leistung erkennen.
+* Ihre Motion-Controller erhalten regelmäßig neue Software Updates von Microsoft. Die Controller zeigen ein Abwechselndes Muster mit blinkenden Lichtern an, wenn diese neuen Software Updates empfangen werden. Dies ist normal. Warten Sie, bis das Software Upgrade fertiggestellt ist, bevor Sie die Controller verwenden. Die Controller werden vibrieren, und ein konstantes Licht ersetzt das abwechselnde Flash Muster, wenn es ausgeführt wird.
 * Sie werden möglicherweise aufgefordert, das Headset zu verwenden und den Fingerabdruck zum teleportieren zu verwenden, bevor die Controller den Aktualisierungs Vorgang beenden. Die Controller sind erst sichtbar oder verwendbar, wenn die Aktualisierung abgeschlossen ist. Die meisten Updates erfolgen innerhalb von zwei Minuten, Updates können jedoch bis zu 10 Minuten dauern. Warten Sie, bis das Update fertiggestellt ist, und fahren Sie mit dem nächsten Schritt fort.
 
 ## <a name="using-controllers"></a>Verwenden von Controllern
@@ -93,10 +93,10 @@ Im folgenden wird erläutert, wie Sie in gemischter Realität mit Bewegungs Cont
 
 |  Aufgabe  |  Bewegungscontroller  | Gamepad | Maus und Tastatur |
 | --- | --- | --- | --- |
-| Teleport | Drücken Sie den Fingerabdruck, und zeigen Sie dann auf den gewünschten Controller. Geben Sie den Finger Stick frei. | Drücken Sie den linken Finger Stick vorwärts, und sehen Sie sich an, wohin Sie navigieren möchten. Geben Sie den Finger Stick frei. | Klicken Sie mit der rechten Maustaste auf die Schaltfläche, und zeigen Sie dann mit der Maus auf die gewünschte Position. Geben Sie die Schaltfläche frei. |
-| Select | Zeigen Sie auf den Controller, und ziehen Sie den-Editor per Pull oder auf das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
-| Öffnen des Startmenüs | Drücken Sie die **Windows** -Taste. | Klicken Sie auf die Schaltfläche **Xbox** . | Drücken Sie die **Windows-Logo-Taste** . |
-| Immersive app verlassen | Drücken Sie die **Windows** -Taste. Wählen Sie dann im Menü schnell Aktionen die Option **gemischte Reality-Startseite** aus. | Klicken Sie auf die Schaltfläche **Xbox** . Wählen Sie dann im Menü schnell Aktionen die Schaltfläche **Mixed Reality Home** aus. | Drücken Sie die **Windows-Logo-Taste** . Wählen Sie dann im angezeigten Menü schnell Aktionen die Start Schaltfläche **Mixed Reality** aus. |
+| Teleport | Drücken Sie den Fingerabdruck, und zeigen Sie dann auf den gewünschten Controller. Geben Sie den Finger Stick frei. | Drücken Sie den linken Finger Stick vorwärts, und sehen Sie sich an, wohin Sie navigieren möchten. Geben Sie den Finger Stick frei. | Wählen Sie die Rechte Schaltfläche aus, und halten Sie sie gedrückt. Geben Sie die Schaltfläche frei. |
+| Select | Zeigen Sie auf den Controller, und ziehen Sie dann den-Server per Pull oder das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
+| Öffnen des Startmenüs | Drücken Sie die **Windows** -Taste. | Klicken Sie auf die Schaltfläche **Xbox** . | Drücken Sie die **Windows-Logo-Taste**. |
+| Immersive app verlassen | Drücken Sie die **Windows** -Taste. Wählen Sie dann im Menü schnell Aktionen die Option **gemischte Reality-Startseite** aus. | Klicken Sie auf die Schaltfläche **Xbox** . Wählen Sie dann im Menü schnell Aktionen die Schaltfläche **Mixed Reality Home** aus. | Drücken Sie die Taste * * Windows-Taste. Wählen Sie dann im angezeigten Menü schnell Aktionen die Start Schaltfläche **Mixed Reality** aus. |
 | Rotate | Verschieben Sie den Finger Stick nach links oder rechts. | Verschieben Sie den rechten Stift nach links oder rechts. | Nicht verfügbar. |
 | Sichern | Verschieben Sie den Finger Stick abwärts. | Verschiebt den linken Rand nach hinten. | Nicht verfügbar. |
 | Walk | Schieben Sie den Finger Stick direkt nach unten, und drücken Sie ihn in der Richtung, die Sie durchlaufen möchten. | Bewegen Sie den linken Stapel nach unten, und drücken Sie ihn in der Richtung, die Sie durchlaufen möchten. | Nicht verfügbar. |
@@ -127,7 +127,7 @@ Ihr Controller kommuniziert damit, was er tut, indem er seine LED-Leuchten vibri
 ## <a name="updating-motion-controllers-firmware"></a>Aktualisieren der Motion Controller-Firmware
 
 * Wenn ein immersives Headset mit dem PC verbunden ist und eine neue Controller Firmware verfügbar ist, wird die Firmware bei Ihrer nächsten Aktivierung automatisch an die Motion-Controller übermittelt.
-* Controller-Firmwareupdates werden durch ein Muster zur Beleuchtung der LED von vorangehenden Quadranten in einer Kreisbewegung angegeben und benötigen 1-2 Minuten. Firmwareupdates können gelegentlich bis zu 10 Minuten dauern. Dies deutet auf eine schlechte Bluetooth-Konnektivität oder einen Funk Eingriff hin.
+* Controller-Firmwareupdates werden mit einem Muster der Beleuchtung von LED-Quadranten in Zirkel Bewegung und 1-2 Minuten angezeigt. Firmwareupdates können gelegentlich bis zu 10 Minuten dauern. Dies deutet auf eine schlechte Bluetooth-Konnektivität oder einen Funk Eingriff hin.
 * Für den Fall, dass das Firmwareupdate unterbrochen wird (ausgeschalteten Controller oder Akku läuft), wird der Vorgang beim nächsten Einschalten erneut versucht.
 * Nachdem das Firmwareupdate abgeschlossen ist, werden die Controller neu gestartet und die Verbindung wieder hergestellt.
 * Beide Controller sollten jetzt verbunden werden. Navigieren Sie zum Mixed Reality-Portal, um den Status Ihrer Controller zu überprüfen.
@@ -139,7 +139,7 @@ Ihr Controller kommuniziert damit, was er tut, indem er seine LED-Leuchten vibri
 
 ### <a name="how-can-i-check-battery-level"></a>Wie kann ich den Akku Pegel überprüfen?
 
-*A: die Akku Ebene befindet sich auf umgekehrter Seite des virtuellen Modells, es gibt keinen Indikator für die physische Akku Ebene. Nach dem Einschalten des Controllers warten Sie einige Sekunden, bis der Lesevorgang stabilisiert wurde.*
+*A: die Akku Ebene befindet sich auf umgekehrter Seite des virtuellen Modells, es gibt keinen Indikator für die physische Akku Ebene. Warten Sie nach dem Einschalten des Controllers einige Sekunden, bis der Lesevorgang stabilisiert wurde.*
 
 ### <a name="can-you-use-these-controllers-without-a-headset-just-for-the-joysticktriggeretc-input"></a>Können Sie diese Controller ohne ein Headset verwenden? Nur für die Eingabe des Joysticks/Auslösers/usw.
 
@@ -149,7 +149,7 @@ Ihr Controller kommuniziert damit, was er tut, indem er seine LED-Leuchten vibri
 
 Geben Sie uns Feedback im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [HP-Controller in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
 - [HP-Controller in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)

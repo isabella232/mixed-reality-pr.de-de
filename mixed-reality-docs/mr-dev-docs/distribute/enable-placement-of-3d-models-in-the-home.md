@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, Modell, Ort in Zuhause, Ort, Welt, Modellierung, gemischte Realität Home, Web, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703186"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757808"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Aktivieren der Platzierung von 3D-Modellen in der Mixed Reality Startumgebung
 
@@ -20,7 +20,7 @@ ms.locfileid: "94703186"
 
 Der [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) -Startpunkt ist der Ausgangspunkt, an dem Benutzer vor dem Starten von Anwendungen landen. In einigen Szenarios ermöglichen 2D-Apps (wie die holograms-APP) die Platzierung von 3D-Modellen direkt in der Mixed Reality-Startseite als Dekorationen oder für eine weitere Prüfung in vollständigem 3D. Das *Add Model-Protokoll* ermöglicht es Ihnen, ein 3D-Modell von Ihrer Website oder Anwendung direkt an die Windows Mixed Reality-Startseite zu senden, wo Sie wie [3D-App-Launcher](3d-app-launcher-design-guidance.md), 2D-apps und holograms beibehalten wird. 
 
-Wenn Sie z. b. eine Anwendung entwickeln, die einen Katalog mit 3D-Möbeln zum Entwerfen eines Raums verwendet, können Sie das *Add Model-Protokoll* verwenden, um Benutzern zu ermöglichen, diese 3D-möbelmodelle aus dem Katalog zu platzieren. Nachdem die Benutzer in der Welt platziert wurden, können Sie diese 3D-Modelle wie andere holograms in der Startseite verschieben, ändern und ihre Größe ändern. Dieser Artikel bietet eine Übersicht über die Implementierung des *Add Model-Protokolls* , damit Sie mit der Aktivierung Ihrer Welt mit 3D-Objekten aus Ihrer APP oder dem Web beginnen können.
+Wenn Sie z. b. eine Anwendung entwickeln, die einen Katalog mit 3D-Möbeln zum Entwerfen eines leer Zeichens verwendet, verwenden Sie das *Add Model-Protokoll* , um es Benutzern zu ermöglichen, diese 3D-möbelmodelle aus dem Katalog zu platzieren. Nachdem die Benutzer in der Welt platziert wurden, können Sie diese 3D-Modelle wie andere holograms in der Startseite verschieben, ändern und ihre Größe ändern. Dieser Artikel bietet eine Übersicht über die Implementierung des *Add Model-Protokolls* , mit dem Benutzer ihre Welt mit 3D-Objekten aus Ihrer APP oder dem Web ergänzen können.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -89,9 +89,9 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 ## <a name="considerations-for-immersive-vr-headsets"></a>Überlegungen zu immersiven (VR) Headsets
 
 * Bei immersiven (VR)-Headsets muss das Mixed Reality-Portal vor dem Aufrufen des *Add Model-Protokolls* nicht ausgeführt werden. In diesem Fall startet das *Modell zum Hinzufügen von Modellen* das Mixed Reality-Portal und platziert das Objekt direkt an der Stelle, an der das Headset sucht, sobald Sie in der Mixed Reality-Startseite eintreffen. 
-* Wenn Sie das *Add Model-Protokoll* vom Desktop aus aufrufen, während das gemischte Reality-Portal bereits ausgeführt wird, stellen Sie sicher, dass das Headset "Awake" ist. Wenn dies nicht der Fall ist, ist die Platzierung nicht erfolgreich. 
+* Wenn Sie das *Add Model-Protokoll* vom Desktop aus aufrufen, während das gemischte Reality-Portal bereits ausgeführt wird, stellen Sie sicher, dass das Headset "Awake" ist. Andernfalls ist die Platzierung nicht erfolgreich. 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Erstellen von 3D-Modellen für die Verwendung in der Windows Mixed Reality-Startseite](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Navigieren auf der Startseite von Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

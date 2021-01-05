@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: bd51220e030af1e9c60a66eb43ea6985b95cd43f
-ms.sourcegitcommit: 16524778ece416e002f52c9ceae354e1122bcc74
+ms.openlocfilehash: 93bafae605640a0576fd273f761eaec0a8994d86
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "97582414"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757598"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -21,7 +21,7 @@ Wir freuen uns darauf, dass Sie uns bei Mixed Reality dev Day beitreten! Machen 
 
 ## <a name="important-details"></a>Wichtige Details
 
-**Datum-16. Dezember, 2020**
+**Datum-16. Dezember 2020**
 
 **Standort-Microsoft Teams-Live Veranstaltungen**
 
@@ -39,18 +39,18 @@ Vielen Dank für Ihre Teilnahme an Mixed Reality dev Days Japan. Alle Videos wer
 
 **Alle Uhrzeiten sind Japan Normalzeit (UTC + 9)** 
 
-### <a name="december-16th"></a>16. Dezember
+### <a name="december-16"></a>16. Dezember
 
 **Wir haben eine Stunde nach dem ursprünglichen Zeitplan verzögert.**
 
 |**Time**|**Sitzungs Titel**|**Referent**|**Sprache**|**Level**|
 |---------|---------|---------|---------|---------|
 |11:00AM-11:50uhr|[Eröffnungs Keynote mit einer besonderen Willkommensseite von Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|Ja/en|–|
-|11:50uhr-12:00PM|**Pause (10 Minuten)**||||
+|11:50uhr-12:00PM|**Pause (10 min.)**||||
 |12:00PM-12:25 Uhr|*Sitzung 1* Einführung [in gemischte Realität](https://youtu.be/HqJy91y8Of0)|Atsushi-Suzuki|JA|100|
 |12:30Uhr-12:55 Uhr|*Sitzung 2* [Mixed Reality-Geschäftsdynamik](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
 |1:00PM-1:50uhr|*Mittags Sitzung* Panel: interaktive, kostenlose Erörterung, Q und A, mrtk + Oculus Quest 2 * später aktualisieren|Madoka Chiyoda + Microsoft MVPs|JA|200|
-|1:50uhr-2 Uhr|**Pause (10 Minuten)**||||
+|1:50uhr-2 Uhr|**Pause (10 min.)**||||
 |2:00PM-2:25 Uhr|*Sitzung 3* : Übersicht über die [hololens 2-Entwicklung](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
 |2:30Uhr-2:55 Uhr|*Sitzung 4* [mrtk UX-Komponenten v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
 |3:00PM-3:25 Uhr|*Sitzung 5* : Einstieg [in die hololens 2 und Unreal Engine (mrtk-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|DE|300|
@@ -72,11 +72,11 @@ Dieser Abschnitt wird häufig aktualisiert, da wir weitere Fragen von Ihnen erha
 
 **F** : Wer sollte an Mixed Reality dev Day teilnehmen?
 
-**A** : Dieses Ereignis schließt alle Personen ein, die im gemischten Realitäts Raum arbeiten oder spielen. Obwohl der größte Teil des Inhalts Entwickler orientiert ist, wissen wir auch, dass es für eine Vielzahl von Rollen über Entwickler interessante Inhalte gibt. Bitte beachten Sie, dass Sie den Zeitplan für Updates überprüfen müssen, um die Art der Inhalte anzuzeigen, die wir bereitstellen werden.  
+**A** : Dieses Ereignis schließt alle Personen ein, die im gemischten Realitäts Raum arbeiten oder spielen. Der größte Teil der Inhalte ist Entwickler orientiert, aber wir wissen auch, dass es interessante Inhalte für eine Vielzahl von Rollen gibt. Denken Sie daran, den Zeitplan für Updates zu überprüfen, um die Art des von uns bereitgestellten Inhalts anzuzeigen.  
 
 **F** : Ich kann das Ereignis in den Teams Live Veranstaltungen nicht finden.
 
-**A** : Klicken Sie auf den Link in der e-Mail, die Sie erhalten, nachdem Sie sich für das Ereignis registriert haben, um zu teilnehmen. Wir empfehlen, die APP-PC-APP zu überwachen, und Sie können auch an den Teams Mobile App oder in Ihrem Desktop Browser teilnehmen.
+**A** : Wenn Sie teilnehmen möchten, wählen Sie den Link in der e-Mail aus, den Sie nach der Registrierung für das Ereignis erhalten. Wir empfehlen, die APP-PC-APP zu überwachen, und Sie können auch an den Teams Mobile App oder in Ihrem Desktop Browser teilnehmen.
 
 Wenn Sie sich aus irgendeinem Grund nicht bei Teams anmelden können, überprüfen Sie den YouTube-Kanal, an dem das Ereignis gleichzeitig übertragen wird. Allerdings können Sie mit den Referenten nicht an QA teilnehmen.
 
@@ -101,6 +101,6 @@ Wenn Sie sich aus irgendeinem Grund nicht bei Teams anmelden können, überprüf
 
 Microsoft verfolgt die Mission, weltweit jeden Menschen und jede Organisation dabei zu unterstützen, höhere Ziele zu erreichen. Dies umfasst alle Microsoft-Veranstaltungen und-Versammlungen, einschließlich digitaler Plattformen, bei denen wir uns für alle Teilnehmer sorgen, dass Sie ein respektvolles, freundliches, unterhaltsames und inklusives Verhalten erzielen.
 
-Wir gehen davon aus, dass alle Digital Event-Teilnehmer die Prinzipien dieses Verhaltens Verhaltens einhalten, der das wichtigste digitale Ereignis und alle zugehörigen Aktivitäten behandelt. Wir tolerieren keinerlei Unterbrechungen oder unbehängend Verhalten, Nachrichten, Bilder oder Interaktionen von einem Teilnehmer in irgendeiner Form an einem beliebigen Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Belästigung oder Unterscheidung auf der Grundlage von Alter, Herkunft, Farbe, Geschlecht-Identität oder-Ausdruck, nationaler Ursprung, physischer oder physischer Behinderung, Religion, sexueller Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Bestimmungen und ordinanzen geschützt sind.  
+Wir gehen davon aus, dass alle Digital Event-Teilnehmer die Prinzipien dieses Verhaltens Verhaltens einhalten, der das wichtigste digitale Ereignis und alle zugehörigen Aktivitäten behandelt. Wir tolerieren keinerlei Unterbrechungen oder unbehängend Verhalten, Nachrichten, Bilder oder Interaktionen von beteiligten Teilnehmern in beliebiger Form an einem beliebigen Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Belästigung oder Unterscheidung auf der Grundlage von Alter, Herkunft, Farbe, Geschlecht-Identität oder-Ausdruck, nationaler Ursprung, physischer oder physischer Behinderung, Religion, sexueller Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Bestimmungen und ordinanzen geschützt sind.  
 
-Fotos, Videos oder Aufzeichnungen von Sitzungs Inhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen gemeinsam genutzt wird, sind unzulässig. Wir empfehlen allen Benutzern, eine einladende und sichere Umgebung zu erstellen. Melden Sie alle Bedenken, das Verhalten von Problemen, verdächtige Aktivitäten oder Störungen an der Business Behavior-Hotline (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, den Benutzern jederzeit nach eigenem Ermessen die Berechtigung zum ablehnen von Zutritt oder der Entfernung von Benutzern aus gemischten Reality-dev-Tagen zu verweigern. 
+Das aufzeichnen, Video oder Aufzeichnen von Sitzungs Inhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen gemeinsam genutzt wird, ist unzulässig. Wir empfehlen allen Benutzern, eine einladende und sichere Umgebung zu erstellen. Melden Sie alle Bedenken, das Verhalten von Problemen, verdächtige Aktivitäten oder Störungen an der Business Behavior-Hotline (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, den Benutzern jederzeit nach eigenem Ermessen die Berechtigung zum ablehnen von Zutritt oder der Entfernung von Benutzern aus gemischten Reality-dev-Tagen zu verweigern. 

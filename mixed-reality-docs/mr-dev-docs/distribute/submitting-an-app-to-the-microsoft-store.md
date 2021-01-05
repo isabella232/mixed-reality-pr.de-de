@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, hololens, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Package, AppX, Merchandising, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578899"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757838"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Senden einer App an den Microsoft Store
 
@@ -41,13 +41,13 @@ Die folgenden Image Ressourcen sind für die AppX-Buildtools erforderlich, um Ih
 
 | Erforderliches Asset | Empfohlene Skalierung | Bildformat | Wo wird das Medienobjekt angezeigt? | 
 |----------|----------|----------|------------------|
-| Quadratisches Logo 71x71 | Any |  PNG | N/V | 
+| Quadratisches Logo 71x71 | Any |  PNG | – | 
 | Quadratisches Logo 150x150 | 150x150 (100% Skala) oder 225 x 225 (150% Skalierung) | PNG | Start-Pins und alle apps (wenn 310x310 nicht bereitgestellt wird), Store-Suchvorschläge, Store-Listenseite, Store-durchsuchen, Store-Suche | 
-|  Breites 310x150-Logo |  Any  |  PNG  |  N/V | 
+|  Breites 310x150-Logo |  Any  |  PNG  |  – | 
 |  Store-Logo |  75x75 (150% Skalierung)  |  PNG  |  Partner Center, Berichts-APP, Schreiben einer Überprüfung, meine Bibliothek | 
 |  Begrüßungsbildschirm |  930x450 (150% Skalieren)  |  PNG  |  2D-App-Startfeld (Slate) | 
 
-Wenn Sie für hololens entwickeln, gibt es zusätzliche Empfohlene Ressourcen, die Sie nutzen können:
+Wenn Sie für hololens entwickeln, gibt es weitere empfohlene Ressourcen, die Sie nutzen können:
 
 | Empfohlene Assets | Empfohlene Skalierung | Wo wird das Medienobjekt angezeigt? | 
 |----------|----------|----------|
@@ -70,7 +70,7 @@ Wenn Sie in Visual Studio ein neues universelles Windows-Projekt erstellen, werd
 
 ### <a name="specifying-target-device-families"></a>Angeben von Zielgeräte Familien
 
-Windows Mixed Reality-Anwendungen (für [hololens](../hololens-hardware-details.md) und [immersive Headsets](../discover/immersive-headset-hardware-details.md)) sind Teil der universelle Windows-Plattform, sodass jedes app-Paket mit einer **Windows. Universal** - [Zielgeräte Familie](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) auf hololens-oder Windows 10-PCs mit immersiven Headsets ausgeführt werden kann. Wenn Sie keine Zielgeräte Familie in Ihrem App-Manifest angeben, können Sie Ihre APP versehentlich auf unbeabsichtigten Windows 10-Geräten öffnen. Führen Sie die folgenden Schritte aus, um die gewünschte Windows 10-Gerätefamilie anzugeben, und überprüfen Sie dann, [ob die richtigen Gerätefamilien festgelegt sind, wenn Sie das App-Paket im Partner Center hochladen, um Microsoft Store Übermittlung zu erhalten.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+Windows Mixed Reality-Anwendungen (für [hololens](../hololens-hardware-details.md) und [immersive Headsets](../discover/immersive-headset-hardware-details.md)) sind Teil der universelle Windows-Plattform, sodass jedes app-Paket mit einer **Windows. Universal** - [Zielgeräte Familie](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx) auf hololens-oder Windows 10-PCs mit immersiven Headsets ausgeführt werden kann. Wenn Sie keine Zielgeräte Familie in Ihrem App-Manifest angeben, können Sie Ihre APP versehentlich auf unbeabsichtigten Windows 10-Geräten öffnen. Führen Sie die folgenden Schritte aus, um die gewünschte Windows 10-Gerätefamilie anzugeben, und [Überprüfen Sie dann, ob Sie die richtigen Gerätefamilien festgelegt haben, wenn Sie das App-Paket im Partner Center hochladen, um Microsoft Store einzureichen.](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
 * Um dieses Feld in Visual Studio festzulegen, klicken Sie mit der rechten Maustaste auf " **Package. appxmanifest** ", und wählen Sie **Code anzeigen** aus, und suchen Sie dann nach dem Feld **targetdevicefamily Name** . Standardmäßig sollte Sie wie folgt aussehen:
 
@@ -172,7 +172,7 @@ Mit der universellen Windows-Plattform können Sie eine einzelne Anwendung erste
 
 Wenn Sie eine Mixed Reality-App übermitteln, die auf einem Unity-Projekt basiert, sehen Sie sich dieses [Video](https://channel9.msdn.com/Blogs/One-Dev-Minute/How-to-publish-your-Unity-game-as-a-UWP-app) zuerst an.
 
-Im Allgemeinen ist das Senden einer Windows Mixed Reality-APP, die auf hololens und/oder immersiven Headsets funktioniert, genauso wie das Übermitteln einer beliebigen UWP-APP an den Microsoft Store. Nachdem Sie [Ihre APP durch reservieren Ihres Namens erstellt](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name)haben, befolgen Sie die [Checkliste für die UWP-Übermittlung](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
+Im Allgemeinen ist das Senden einer Windows Mixed Reality-APP, die auf hololens oder immersiven Headsets funktioniert, genauso wie das Übermitteln einer beliebigen UWP-APP an den Microsoft Store. Nachdem Sie [Ihre APP durch reservieren Ihres Namens erstellt](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name)haben, befolgen Sie die [Checkliste für die UWP-Übermittlung](https://docs.microsoft.com/windows/uwp/publish/app-submissions).
 
 Eine der ersten Schritte ist die [Auswahl einer Kategorie und Unterkategorie](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) für ihre gemischte Realität. Es ist wichtig, dass Sie **die genaueste Kategorie für Ihre App auswählen**. Kategorien helfen Ihnen, Ihre Anwendung in die richtigen Store-Kategorien zu stellen und sicherzustellen, dass Sie mithilfe relevanter Such Abfragen angezeigt wird. Das **auflisten Ihres VR-Titels als Spiel führt nicht zu einer besseren Aufmerksamkeit für Ihre APP** und kann verhindern, dass Sie in Kategorien angezeigt wird, die besser geeignet und weniger überfüllt sind.
 
@@ -192,7 +192,7 @@ Mixed Reality-Produkt Deklarationen
 Zunächst müssen Sie die Gerätetypen identifizieren, für die Ihre APP eine gemischte Realität bietet. Die Identifizierung von Gerätetypen stellt sicher, dass Ihre APP in Windows Mixed Reality-Auflistungen im Store enthalten ist.
 
 Neben "Diese Darstellung ist für Windows Mixed Reality konzipiert auf:"
-* Aktivieren Sie das Kontrollkästchen **PC** , wenn Ihre APP eine VR-Darstellung bietet, wenn ein immersives Headset mit dem PC des Benutzers verbunden ist. Es wird empfohlen, dieses Kontrollkästchen zu aktivieren, unabhängig davon, ob Ihre APP ausschließlich auf einem immersiven Headset ausgeführt wird oder ob es sich um ein Standard-PC-Spiel oder eine APP handelt, das einen gemischten Reality-Modus und/oder einen Bonus Inhalt anbietet, wenn ein Headset
+* Aktivieren Sie das Kontrollkästchen **PC** , wenn Ihre APP eine VR-Darstellung bietet, wenn ein immersives Headset mit dem PC des Benutzers verbunden ist. Es wird empfohlen, dieses Kontrollkästchen zu aktivieren, unabhängig davon, ob Ihre APP ausschließlich auf einem immersiven Headset ausgeführt wird oder ob es sich um ein Standard-PC-Spiel oder eine APP handelt, das einen gemischten Reality-Modus oder einen Bonus Inhalt anbietet, wenn ein
 * Aktivieren Sie das Feld **hololens** nur dann, wenn Ihre APP in hololens eine holografische Darstellung bietet.
 * Aktivieren Sie **beide** Kontrollkästchen, wenn Ihre APP für beide Gerätetypen eine gemischte Realität bietet.
 
@@ -211,7 +211,7 @@ In diesem Abschnitt identifizieren Sie die minimale (erforderliche) Hardware und
 
 **Eingabe Hardware:**
 
-Verwenden Sie die Kontrollkästchen, um potenziellen Kunden mitzuteilen, ob Ihre APP **Mikrofon** für [Spracheingaben](../design/voice-input.md)unterstützt), **[Xbox Controller-oder Gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)**-und/oder **[Windows Mixed Reality Motion-Controller](../design/motion-controllers.md)**. Diese Informationen werden auf der Produktdetailseite Ihrer APP im Store angezeigt und helfen Ihrer APP, in die entsprechenden App-/spielauflistungen aufgenommen zu werden. Beispielsweise kann eine Sammlung für alle Spiele vorhanden sein, die Motion-Controller unterstützen.
+Verwenden Sie die Kontrollkästchen, um potenziellen Kunden mitzuteilen, ob Ihre APP **Mikrofon** für [Spracheingaben](../design/voice-input.md)unterstützt), **[Xbox Controller-oder Gamepad](../discover/hardware-accessories.md#bluetooth-gamepads)**-oder **[Windows Mixed Reality Motion-Controller](../design/motion-controllers.md)**. Diese Informationen werden auf der Produktdetailseite Ihrer APP im Store angezeigt und helfen Ihrer APP, in die entsprechenden App-/spielauflistungen aufgenommen zu werden. Beispielsweise kann eine Sammlung für alle Spiele vorhanden sein, die Motion-Controller unterstützen.
 
 Beachten Sie, dass Sie Kontrollkästchen für "Minimale Hardware" oder "Empfohlene Hardware" für Eingabetypen auswählen. 
 
@@ -266,7 +266,7 @@ Zu Suchbegriffen "Windows Mixed Reality" hinzufügen
 
 In vielen Fällen sind die Kunden auf die virtuelle Realität beschränkt, bevor Sie ein Windows Mixed Reality-immersives Headset erwerben. Sie wissen möglicherweise nicht, was Sie von intensiven Spielen erwarten oder mit Ihrem eigenen Komfort Schwellenwert in immersiven Erfahrungen vertraut sein sollten. Viele Kunden können auch ein Windows Mixed Reality-immersives Headset auf PCs testen, die nicht als [Windows Mixed Reality-PCs](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)gebadelt sind. Aus diesen Gründen wird dringend empfohlen, eine [Kostenlose Testversion](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) für Ihre kostenpflichtige Mixed Reality-APP oder Ihr Spiel zu bieten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Was ist Mixed Reality?](../discover/mixed-reality.md)
 * [Entwicklung – Übersicht](../develop/development.md)
 * [App-Ansichten](../design/app-views.md)

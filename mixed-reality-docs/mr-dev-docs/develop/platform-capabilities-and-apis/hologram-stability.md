@@ -8,12 +8,12 @@ ms.topic: article
 keywords: holograms, Stabilität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Framerate, Rendering, neuprojektion, Farbtrennung
 appliesto:
 - HoloLens
-ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
+ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530425"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808831"
 ---
 # <a name="hologram-stability"></a>Hologrammstabilität
 
@@ -91,7 +91,7 @@ Es gibt vier Haupttypen der neuprojektion.
 Anwendungen müssen bestimmte Aktionen durchführen, um die verschiedenen Arten der neuprojektion zu aktivieren.
 * **Tiefen neuprojektion:** Die Anwendung übermittelt ihren tiefen Puffer für jeden gerenderten Frame an das System.  Bei Unity wird die tiefen neuprojektion mit der Option frei gegebener **tiefen Puffer** im **Windows Mixed Reality-Einstellungs** Bereich unter **XR-Plug**-in-Verwaltung ausgeführt.  DirectX-apps CommitDirect3D11DepthBuffer-Aufrufe.  Die Anwendung sollte setfocuspoint nicht aufrufen.
 * **Planare neuprojektion:** Bei jedem Frame teilen Anwendungen dem System den Speicherort einer zu stabilisierende Ebene mit.  Unity-Anwendungen nennen setfocuspointforframe und sollten den frei **gegebenen tiefen Puffer** deaktiviert haben.  DirectX-apps aufrufen setfocuspoint und sollten CommitDirect3D11DepthBuffer nicht aufrufen.
-* **Automatische planare neuprojektion:** Um dies zu aktivieren, muss die Anwendung ihren tiefen Puffer an das System übermitteln, wie dies für die Tiefe neuprojektion der Fall wäre.  Bei hololens 2 muss die Anwendung dann setfocuspoint mit einem Punkt von 0 (null) für jeden Frame festlegen.  Bei hololens Generation 1 sollte die Anwendung setfocuspoint nicht aufrufen.
+* **Automatische planare neuprojektion:** Um dies zu aktivieren, muss die Anwendung ihren tiefen Puffer an das System übermitteln, wie dies für die Tiefe neuprojektion der Fall wäre. Apps, die das Mixed Reality Toolkit (mrtk) verwenden, können den [Kamera Einstellungs Anbieter](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) so konfigurieren, dass eine autoplanar-neuprojektion verwendet wird. Native apps sollten `DepthReprojectionMode` in den [holographiccamerarenderingparameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) auf `AutoPlanar` jeden Frame festlegen. Bei hololens Generation 1 sollte die Anwendung setfocuspoint nicht aufrufen.
 
 ### <a name="choosing-reprojection-technique"></a>Auswählen der Methode zum erneuten Projektion
 
@@ -144,7 +144,7 @@ Das wichtigste, was ein Entwickler zum stabilisieren von holograms tun kann, ist
 
 **Bewährte Methoden** Es gibt keine universelle Methode zum Einrichten der Stabilisierungs Ebene und ihrer App-spezifischen. Unsere Hauptempfehlung besteht darin, zu experimentieren und zu sehen, was für Ihr Szenario am besten geeignet ist. Versuchen Sie jedoch, die Stabilisierungs Ebene mit so vielen Inhalten wie möglich auszurichten, da der gesamte Inhalt auf dieser Ebene vollständig stabilisiert ist.
 
-Beispiel:
+Zum Beispiel:
 * Wenn Sie nur planare Inhalte haben (Lesen der APP, Videowiedergabe-APP), richten Sie die Stabilisierungs Ebene mit der Ebene aus, die ihren Inhalt enthält.
 * Wenn es drei kleine Bereiche gibt, die weltweit gesperrt sind, nehmen Sie die Stabilisierungs Ebene in den Mittelpunkt aller Bereiche, die sich derzeit in der Ansicht des Benutzers befinden.
 * Wenn Ihre Szene Inhalte in deutlich unterschiedlichen Tiefen hat, bevorzugen Sie weitere Objekte.

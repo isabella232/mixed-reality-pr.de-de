@@ -1,6 +1,6 @@
 ---
 title: Anschließen Ihres Headsets
-description: Erfahren Sie, wie Sie Ihr Windows Mixed Reality-Headset mit USB 3,0 und HDMI verbinden und wie Sie dann Ihre Kopfhörer mit dem Headset verbinden.
+description: Erfahren Sie, wie Sie Ihr Windows Mixed Reality-Headset mit USB 3,0, HDMI und Kopfhörer verbinden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,36 +8,36 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Headset, Setup, Get Started
 appliesto:
 - Windows 10
-ms.openlocfilehash: 16c06e14566671e44b1424447b02493ba1ff1a83
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d68c56813c65325d9cab24488f6676d41da435a2
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92292973"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725991"
 ---
 # <a name="plug-in-your-headset"></a>Anschließen Ihres Headsets
 
 ## <a name="connect-your-headset-to-your-pcs-usb-30-port"></a>Verbinden Sie Ihr Headset mit dem USB 3,0-Port Ihres PCs
 
-Identifizieren Sie den USB 3,0-Port auf Ihrem Computer, und binden Sie das USB-Kabel ein. Auf USB 3,0-Ports wird SS (Super Geschwindigkeit) neben Ihnen geschrieben. Sie sind häufig (aber nicht immer) blau.
+Identifizieren Sie den USB 3,0-Port auf Ihrem Computer, und binden Sie das USB-Kabel ein. Auf USB 3,0-Ports wird SS (Super Geschwindigkeit) neben Ihnen geschrieben. Sie sind häufig blau, aber nicht immer.
 
-Wenn Sie auf Ihrem PC nicht über genügend geöffnete USB-Anschlüsse verfügen, können Sie einen [externen USB 3,0 Hub](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets)verwenden.
+Wenn Sie nicht über genügend geöffnete USB-Ports auf dem PC verfügen, können Sie einen [externen USB 3,0 Hub](recommended-adapters-for-windows-mixed-reality-capable-pcs.md#using-external-usb-30-hubs-with-windows-mixed-reality-headsets)verwenden.
 
 ## <a name="connect-your-headset-to-your-pcs-hdmi-out-port"></a>Herstellen einer Verbindung zwischen Ihrem Headset und dem HDMI-Out-Port Ihres PCs
 
-Identifizieren Sie den-HDMI-Out-Port auf Ihrem Computer, und binden Sie das-HDMI-Kabel des Headsets. Stellen Sie sicher, dass Sie **nicht** in den Port "HDMI" in den Port einstecken!
+Identifizieren Sie den-HDMI-Out-Port auf Ihrem Computer, und binden Sie das-HDMI-Kabel des Headsets. Stellen Sie sicher, dass Sie **nicht** in den Port "HDMI" in den Port springen!
 
 ## <a name="connect-headphones-to-your-headset"></a>Verbinden von Kopfhörern mit Ihrem Headset
 
-Wenn Sie ein Samsung HMD Odyssee-Headset, HP-Reverb oder HP-Reverb G2 (mit integrierten AKG-Kopfhörern und einem integrierten Dual-Array-Mikrofon) erworben haben, müssen Sie die Verbindung mit den Kopfhörern (vorzugsweise mit einem Inline Mikrofon) herstellen, die in den 3,5 mm-AudioJack Ihres Headsets eingebunden werden können.
+Wenn Sie ein Gerät mit integrierten AKG-und dumm-Mikrofon gekauft haben, z. b. ein Samsung HMD Odyssee-Headset, HP-Reverb oder HP Reverb G2, benötigen Sie Kopfhörer mit einem 3,5-mm-audiowagen.
 
 ## <a name="common-issues"></a>Häufige Probleme
 
 * Sie haben das HDMI-Kabel angeschlossen, bevor Sie das USB 3,0-Kabel angeschlossen haben.  Stellen Sie sicher, dass Sie das USB-3,0-Kabel einbinden, **bevor** Sie das HDMI-Kabel einfügen.
-* Sie haben einen Bluetooth-Adapter neben dem USB-Kabel Ihres HMD angeschlossen.  Wenn Sie einen Bluetooth-Adapter verwenden, können Sie das USB-Kabel Ihres Headsets neben diesem Adapter **nicht** anschließen, da sich die resultierenden Funkstörungen negativ auf die Bluetooth-Leistung auswirken können.
-* Sie haben Ihr HDMI-Kabel anstelle Ihres dGPU-HDMI-Ports (für PCs mit beidem) an Ihren igpu-HDMI-Port angeschlossen. Einige Desktop-PCs verfügen sowohl über eine integrierte Grafikverarbeitungseinheit (igpu) als auch über eine diskrete dGPU (Graphics Processing Unit), und häufig werden die igpu-Ports deaktiviert. Wenn Ihr PC über eine dGPU verfügt, muss Ihr Headset an die dGPU angeschlossen werden.  
+* Sie haben einen Bluetooth-Adapter neben dem USB-Kabel Ihres HMD angeschlossen. Binden Sie das USB-Kabel Ihres Headsets **nicht** neben einem Bluetooth-Adapter ein, da sich die resultierenden Funkstörungen negativ auf die Bluetooth-Leistung auswirken können.
+* Sie haben Ihr HDMI-Kabel an Ihren igpu-HDMI-Port und nicht an Ihren dGPU-HDMI-Port für PCs mit beidem angeschlossen. Einige Desktop-PCs verfügen sowohl über eine integrierte Grafikverarbeitungseinheit (igpu) als auch über eine diskrete Grafikverarbeitungseinheit (dGPU). igpu-Ports sind häufig deaktiviert. Wenn Ihr PC über eine dGPU verfügt, muss Ihr Headset an die dGPU angeschlossen werden.  
 * Wenn Ihr PC keinen HDMI-Port hat, benötigen Sie möglicherweise einen Adapter. [Sehen Sie sich hier die vollständige Liste der empfohlenen Adapter an](recommended-adapters-for-windows-mixed-reality-capable-pcs.md).
-* Sie stellen eine Verbindung zwischen Ihrem Headset und einem Surface-Gerät her. Weitere Informationen finden Sie [unter Verwenden der Oberfläche mit Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
+* Sie stellen eine Verbindung zwischen Ihrem Headset und einem Surface-Gerät her. Lesen Sie die [Verwendung von Surface mit Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#windows-mixed-reality-and-surface).
 
 ## <a name="see-also"></a>Weitere Informationen
 

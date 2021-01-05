@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, kompatibel, Kompatibilität, Einstieg, Setup, PC, Systemanforderungen
 appliesto:
 - Windows 10
-ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434573"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725491"
 ---
 # <a name="before-you-start"></a>Vorbereitung
 
@@ -29,9 +29,9 @@ ms.locfileid: "92434573"
 
 ## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>Stellen Sie sicher, dass Ihr PC mit Windows Mixed Reality kompatibel ist
 
-Um festzustellen, ob es sich bei Ihrem PC um Windows Mixed Reality-kompatibel handelt, überprüfen Sie die [Windows Mixed Reality-Mindestanforderungen an die PC-Hardwareanforderungen](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) , oder führen Sie das [Windows Mixed Reality](install-windows-mixed-reality.md#launch-mixed-reality-portal)
+Überprüfen Sie die [Windows Mixed Reality-Hardwareanforderungen (minimal](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ), oder führen Sie das [Windows Mixed Reality-Portal](install-windows-mixed-reality.md#launch-mixed-reality-portal) auf Ihrem PC aus, um die Kompatibilität von Windows Mixed Reality
 
-Weitere Informationen zu Problemen mit der PC-Kompatibilität finden Sie [hier](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality).
+Weitere Informationen finden Sie Unterprobleme mit der [PC-Kompatibilität](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) .
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>Stellen Sie sicher, dass die Windows 10-Version 1709 oder höher installiert ist.
 
@@ -44,17 +44,17 @@ Sie müssen die Windows 10-Version 1903 oder höher ausführen, um Windows Mixed
 
 Wählen Sie die Schaltfläche **Start** aus, und wählen Sie dann **Settings > System >** Info aus, um anzuzeigen, welche Version von Windows 10 aktuell auf dem Gerät ausgeführt wird.
 
-Um sicherzustellen, dass Windows 10 auf Ihrem PC auf dem neuesten Stand ist, klicken Sie auf die Schaltfläche **Start** , und wählen Sie dann **Settings > Update & Security > Windows Update**aus.  Wählen Sie **Nach Updates suchen** aus. Wenn Updates verfügbar sind, installieren Sie Sie.
+Um sicherzustellen, dass Windows 10 auf Ihrem PC auf dem neuesten Stand ist, klicken Sie auf die Schaltfläche **Start** , und wählen Sie dann **Settings > Update & Security > Windows Update** aus.  Wählen Sie **Nach Updates suchen** aus. Wenn Updates verfügbar sind, installieren Sie Sie.
 
-Weitere Informationen dazu, wie Sie Ihren PC auf dem neuesten standhalten, finden Sie [hier](https://support.microsoft.com/en-us/help/12373/windows-update-faq) .
+Weitere Informationen finden Sie [unter aufbewahren Ihres PCs auf dem neuesten Stand](https://support.microsoft.com/help/12373/windows-update-faq) .
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>Stellen Sie sicher, dass Ihr PC mit dem Internet verbunden ist.
 
-Überprüfen Sie, ob Ihr PC mit dem Internet verbunden ist. Sie müssen Treiber und einige zusätzliche Software herunterladen, um Windows Mixed Reality in Betrieb zu nehmen.
+Überprüfen Sie, ob Ihr PC mit dem Internet verbunden ist, und laden Sie Treiber und zusätzliche Software herunter, um Windows Mixed Reality in Betrieb zu nehmen.
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>Stellen Sie sicher, dass Sie über einen kompatiblen Grafiktreiber verfügen
 
-Der PC muss über einen Grafiktreiber für WDDM 2,2 oder höher verfügen, um das Windows Mixed Reality-Setup abzuschließen. Wenn Sie nicht bereits über einen kompatiblen Grafiktreiber verfügt, versuchen Sie Folgendes:
+Ihr PC benötigt einen Grafiktreiber für WDDM 2,2 oder höher, um das Windows Mixed Reality-Setup abzuschließen. Wenn Sie noch nicht über einen kompatiblen Grafiktreiber verfügt, versuchen Sie Folgendes:
 
 * Überprüfen Sie die neuesten wichtigen Treiber Updates mithilfe Windows Update (**Starten Sie > Windows-Einstellungen > Update und Sicherheit > suchen nach Updates**).
 * Suchen Sie nach den neuesten optionalen Treiber Updates:
@@ -66,7 +66,7 @@ Der PC muss über einen Grafiktreiber für WDDM 2,2 oder höher verfügen, um da
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>Stellen Sie sicher, dass Sie über alle erforderlichen Adapter verfügen.
 
-Ihr Windows Mixed Reality-kompatibler PC verfügt möglicherweise nicht über die gesamten Monitor-und USB 3,0-Ports, die für die Verbindung mit Ihrem immersiven Headset benötigt werden. Möglicherweise benötigen Sie einen Bluetooth-Adapter, um die Anforderungen des Windows Mixed Reality-Portals zu erfüllen.  Wenn dies der Fall ist, benötigen Sie Adapter, um ihre Headset-und Bewegungs Controller zu verbinden. Stellen Sie sicher, dass Sie die Liste der [benötigten Adaptertypen und einige Empfehlungen zu bestimmten Adapter Modellen](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)überprüfen.
+Ihr Windows Mixed Reality-kompatibler PC verfügt möglicherweise nicht über die gesamten Monitor-und USB 3,0-Ports, die für die Verbindung mit Ihrem immersiven Headset benötigt werden. Möglicherweise benötigen Sie auch einen Bluetooth-Adapter, um die Anforderungen des Windows Mixed Reality-Portals zu erfüllen.  Wenn dies der Fall ist, benötigen Sie Adapter, um ihre Headset-und Bewegungs Controller zu verbinden. Stellen Sie sicher, dass Sie die Liste der [Adaptertypen und Empfehlungen für bestimmte Adapter Modelle](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)überprüfen.
 
 ## <a name="make-sure-that-you-have-input-devices"></a>Stellen Sie sicher, dass Sie über Eingabegeräte verfügen.
 
@@ -78,11 +78,11 @@ Wenn Sie mit Windows Mixed Reality fortfahren möchten, benötigen Sie einen gro
 
 ### <a name="seated-and-standing-no-boundary"></a>Sitzend und Position (keine Begrenzung)
 
-Wenn Sie "sitzend und stehend" auswählen, verwenden Sie das Headset ohne Begrenzung. Dies bedeutet, dass Sie bei der Verwendung des Headsets an einem Punkt bleiben müssen, damit Sie physische Hindernisse vermeiden und Gefahren vermeiden können. Sie können sich auch im standbybereich befinden, aber Sie sollten nicht fortfahren. Einige apps können so entworfen werden, dass Sie mit einer Grenze arbeiten. Daher können Sie Sie möglicherweise nicht verwenden, oder Sie verfügen möglicherweise nicht über die gleiche Funktion, wenn Sie Sie ohne Grenzen verwenden.
+Wenn Sie "sitzend und stehend" auswählen, verwenden Sie das Headset ohne Begrenzung. Dies bedeutet, dass Sie an einer Stelle bleiben müssen, wenn Sie das Headset verwenden, um physische Hindernisse und Roundtrips-Risiken zu vermeiden. Sie können sich auch im standbybereich befinden, aber Sie sollten nicht fortfahren. Einige apps können so entworfen werden, dass Sie mit einer Grenze arbeiten, sodass Sie möglicherweise nicht funktionieren oder die gleiche Benutzerfunktion bereitstellen, wenn Sie Sie ohne einen verwenden.
 
 ### <a name="all-experiences-boundary"></a>Alle Benutzeroberflächen (Grenze)
 
-Wenn Sie sich für "Alle Benutzeroberflächen" entscheiden, richten Sie eine Grenze ein, und Sie können apps und Erfahrungen, die mit einer Grenze arbeiten, und solche, die nicht erforderlich sind, verschieben und verwenden. Sie müssen Ihren Speicherplatz vorbereiten, um sicherzustellen, dass es keine Hindernisse, Gefahren oder empfindliche Elemente in dem Bereich gibt, den Sie verwenden (einschließlich oberhalb ihres Kopfes). Richten Sie nicht am oberen Rand einer Treppe oder unter einem Lüfter mit sehr niedriger Obergrenze ein. Entfernen Sie halte Bare und Hindernisse aus dem Bereich, und stellen Sie sicher, dass Sie und jeder, der Ihr Headset verwendet, die [Sicherheitsrichtlinien](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)liest und versteht.
+Wenn Sie sich für "Alle Benutzeroberflächen" entscheiden, richten Sie eine Grenze ein und können sich um App-Umgebungen bewegen, die mit einer Grenze arbeiten und die nicht erforderlich sind. Bereiten Sie den Speicherplatz vor, indem Sie sicherstellen, dass es keine Hindernisse, Gefahren oder empfindliche Elemente in dem Bereich gibt, den Sie verwenden werden, einschließlich oberhalb ihres Kopfes. Richten Sie nicht am oberen Rand einer Treppe oder unter einem Lüfter mit sehr niedriger Obergrenze ein. Entfernen Sie Break Ables und Hindernisse aus dem Bereich, und stellen Sie sicher, dass jeder, der Ihr Headset verwendet, die [Sicherheitsrichtlinien](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)liest und versteht.
 
 ## <a name="see-also"></a>Weitere Informationen
 

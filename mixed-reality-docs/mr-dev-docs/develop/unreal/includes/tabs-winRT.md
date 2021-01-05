@@ -1,11 +1,252 @@
 ---
-ms.openlocfilehash: be267da576e020e88f08d475395b144d42285383
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
+ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609405"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97745714"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+## <a name="the-standard-winrt-apis"></a>Die WinRT-Standard-APIs
+
+Die gängigste und einfachste Methode, WinRT zu verwenden, ist das aufzurufen von Methoden aus winsdk. Öffnen Sie hierzu die Datei YourModule.Build.cs, und fügen Sie die folgenden Zeilen hinzu:
+
+```csharp
+if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
+{
+    // These parameters are mandatory for winrt support
+    bEnableExceptions = true;
+    bUseUnity = false;
+    CppStandard = CppStandardVersion.Cpp17;
+    PublicSystemLibraries.AddRange(new string[] { "shlwapi.lib", "runtimeobject.lib" });
+    PrivateIncludePaths.Add(Path.Combine(Target.WindowsPlatform.WindowsSdkDir,        
+                                        "Include", 
+                                        Target.WindowsPlatform.WindowsSdkVersion, 
+                                        "cppwinrt"));
+}
+```
+
+Als nächstes müssen Sie die folgenden WinRT-Header hinzufügen: 
+
+```cpp
+#if (PLATFORM_WINDOWS || PLATFORM_HOLOLENS) 
+//Before writing any code, you need to disable common warnings in WinRT headers
+#pragma warning(disable : 5205 4265 4268 4946)
+
+#include "Windows/AllowWindowsPlatformTypes.h"
+#include "Windows/AllowWindowsPlatformAtomics.h"
+#include "Windows/PreWindowsApi.h"
+
+#include <unknwn.h>
+#include <winrt/Windows.Foundation.h>
+#include <winrt/Windows.Perception.Spatial.h>
+#include <winrt/Windows.Foundation.Collections.h>
+
+#include "Windows/PostWindowsApi.h"
+#include "Windows/HideWindowsPlatformAtomics.h"
+#include "Windows/HideWindowsPlatformTypes.h"
+#endif
+```
+
+WinRT-Code kann nur auf den Plattformen Win64 und hololens kompiliert werden, sodass die if-Anweisung verhindert, dass WinRT-Bibliotheken auf anderen Plattformen enthalten sind. "unknwn. h" wurde für die IUnknown-Schnittstelle hinzugefügt. 
+
+
+## <a name="winrt-from-a-nuget-package"></a>WinRT von einem nuget-Paket
+
+Es ist etwas komplizierter, wenn Sie ein nuget-Paket mit WinRT-Unterstützung hinzufügen müssen. In diesem Fall kann Visual Studio praktisch alle Aufgaben ausführen, aber das Unreal Build-System nicht. Glücklicherweise ist es nicht zu schwierig. Im folgenden finden Sie ein Beispiel dafür, wie Sie das Paket Microsoft. mixedreality. QR herunterladen. Sie können ihn durch einen anderen ersetzen. Stellen Sie lediglich sicher, dass die winmd-Datei nicht verloren geht, und kopieren Sie die korrekte dll. 
+
+Windows SDK DLLs aus dem vorherigen Abschnitt werden vom Betriebssystem behandelt. Die nuget-DLLs müssen vom Code in Ihrem Modul verwaltet werden. Es wird empfohlen, Code hinzuzufügen, um sie herunterzuladen, in den Ordner Binärdateien zu kopieren und beim Modul Start in den Prozess Speicher zu laden.
+
+Im ersten Schritt sollten Sie eine packages.config ( https://docs.microsoft.com/nuget/reference/packages-config) in den Stamm Ordner des Moduls einfügen). Dort sollten Sie alle Pakete hinzufügen, die Sie herunterladen möchten, einschließlich aller Abhängigkeiten. Hier habe ich Microsoft. mixedreality. QR als primäre Nutzlast und zwei weitere als Abhängigkeiten hinzugefügt. Das Format dieser Datei ist identisch mit der in Visual Studio:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="Microsoft.MixedReality.QR" version="0.5.2102" targetFramework="native" />
+  <package id="Microsoft.VCRTForwarders.140" version="1.0.6" targetFramework="native" />
+  <package id="Microsoft.Windows.CppWinRT" version="2.0.200729.8" targetFramework="native" />
+</packages>
+```
+
+Nun können Sie nuget, die erforderlichen Pakete oder die nuget- [Dokumentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)herunterladen.
+
+Öffnen Sie YourModule.Build.cs, und fügen Sie den folgenden Code hinzu:
+
+```csharp
+if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
+{
+    string MyModuleName = GetType().Name;
+
+    // these parameters mandatory for winrt support
+    bEnableExceptions = true;
+    bUseUnity = false;
+    CppStandard = CppStandardVersion.Cpp17;
+    PublicSystemLibraries.Add("shlwapi.lib");
+    PublicSystemLibraries.Add("runtimeobject.lib");
+
+    // prepare everything for nuget
+    string NugetFolder = Path.Combine(PluginDirectory, "Intermediate", "Nuget", MyModuleName);
+    Directory.CreateDirectory(NugetFolder);
+
+    string BinariesSubFolder = Path.Combine("Binaries", "ThirdParty", Target.Type.ToString(), Target.Platform.ToString(), Target.Architecture);
+
+    PrivateDefinitions.Add(string.Format("THIRDPARTY_BINARY_SUBFOLDER=\"{0}\"", BinariesSubFolder.Replace(@"\", @"\\")));
+
+    string BinariesFolder = Path.Combine(PluginDirectory, BinariesSubFolder);
+    Directory.CreateDirectory(BinariesFolder);
+
+    // download nuget
+    string NugetExe = Path.Combine(NugetFolder, "nuget.exe");
+    if(!File.Exists(NugetExe))
+    {
+        using (System.Net.WebClient myWebClient = new System.Net.WebClient())
+        {
+            myWebClient.DownloadFile(@"https://dist.nuget.org/win-x86-commandline/latest/nuget.exe", NugetExe);
+        }
+    }
+
+    // run nuget to update the packages
+    {
+        var StartInfo = new System.Diagnostics.ProcessStartInfo(NugetExe, string.Format("install \"{0}\" -OutputDirectory \"{1}\"", Path.Combine(ModuleDirectory, "packages.config"), NugetFolder));
+        StartInfo.UseShellExecute = false;
+        StartInfo.CreateNoWindow = true;
+        var ExitCode = Utils.RunLocalProcessAndPrintfOutput(StartInfo);
+        if (ExitCode < 0)
+        {
+            throw new BuildException("Failed to get nuget packages.  See log for details.");
+        }
+    }
+            
+    // get list of the installed packages
+    string[] InstalledPackages = Utils.RunLocalProcessAndReturnStdOut(NugetExe, string.Format("list -Source \"{0}\"", NugetFolder)).Split(new char[] {'\r', '\n' });
+
+    // get WinRT package 
+    string CppWinRTPackage = InstalledPackages.FirstOrDefault(x => x.StartsWith("Microsoft.Windows.CppWinRT"));
+    if(!string.IsNullOrEmpty(CppWinRTPackage))
+    {
+        string CppWinRTName = CppWinRTPackage.Replace(" ", ".");
+        string CppWinRTExe = Path.Combine(NugetFolder, CppWinRTName, "bin", "cppwinrt.exe");
+        string CppWinRTFolder = Path.Combine(PluginDirectory, "Intermediate", CppWinRTName, MyModuleName);
+        Directory.CreateDirectory(CppWinRTFolder);
+
+        // search all downloaded packages for winmd files
+        string[] WinMDFiles = Directory.GetFiles(NugetFolder, "*.winmd", SearchOption.AllDirectories);
+
+        // all downloaded winmd file with WinSDK to be processed by cppwinrt.exe
+        var WinMDFilesStringbuilder = new System.Text.StringBuilder();
+        foreach(var winmd in WinMDFiles)
+        {
+            WinMDFilesStringbuilder.Append(" -input \"");
+            WinMDFilesStringbuilder.Append(winmd);
+            WinMDFilesStringbuilder.Append("\"");
+        }
+
+        // generate winrt headers and add them into include paths
+        var StartInfo = new System.Diagnostics.ProcessStartInfo(CppWinRTExe, string.Format("{0} -input \"{1}\" -output \"{2}\"", WinMDFilesStringbuilder, Target.WindowsPlatform.WindowsSdkVersion, CppWinRTFolder));
+        StartInfo.UseShellExecute = false;
+        StartInfo.CreateNoWindow = true;
+        var ExitCode = Utils.RunLocalProcessAndPrintfOutput(StartInfo);
+        if (ExitCode < 0)
+        {
+            throw new BuildException("Failed to get generate WinRT headers.  See log for details.");
+        }
+
+        PrivateIncludePaths.Add(CppWinRTFolder);
+    }
+    else
+    {
+        // fall back to default WinSDK headers
+        PrivateIncludePaths.Add(Path.Combine(Target.WindowsPlatform.WindowsSdkDir, "Include", Target.WindowsPlatform.WindowsSdkVersion, "cppwinrt"));
+    }
+
+    // WinRT lib for some job
+    string QRPackage = InstalledPackages.FirstOrDefault(x => x.StartsWith("Microsoft.MixedReality.QR"));
+    if (!string.IsNullOrEmpty(QRPackage))
+    {
+        string QRFolderName = QRPackage.Replace(" ", ".");
+
+        // copying dll and winmd binaries to our local binaries folder
+        // !!!!! please make sure that you use the path of file! Unreal can't do it for you !!!!!
+        SafeCopy(Path.Combine(NugetFolder, QRFolderName, @"lib\uap10.0.18362\Microsoft.MixedReality.QR.winmd"), 
+        Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.winmd"));
+
+        SafeCopy(Path.Combine(NugetFolder, QRFolderName, string.Format(@"runtimes\win10-{0}\native\Microsoft.MixedReality.QR.dll", Target.WindowsPlatform.Architecture.ToString())), 
+        Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.dll"));
+
+        // also both both binaries must be in RuntimeDependencies, unless you get failures in Hololens platform
+        RuntimeDependencies.Add(Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.dll"));
+        RuntimeDependencies.Add(Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.winmd"));
+    }
+
+    if(Target.Platform == UnrealTargetPlatform.Win64)
+    {
+        // Microsoft.VCRTForwarders.140 is needed to run WinRT dlls in Win64 platforms
+        string VCRTForwardersPackage = InstalledPackages.FirstOrDefault(x => x.StartsWith("Microsoft.VCRTForwarders.140"));
+        if (!string.IsNullOrEmpty(VCRTForwardersPackage))
+        {
+            string VCRTForwardersName = VCRTForwardersPackage.Replace(" ", ".");
+            foreach (var Dll in Directory.EnumerateFiles(Path.Combine(NugetFolder, VCRTForwardersName, "runtimes/win10-x64/native/release"), "*_app.dll"))
+            {
+                string newDll = Path.Combine(BinariesFolder, Path.GetFileName(Dll));
+                SafeCopy(Dll, newDll);
+                RuntimeDependencies.Add(newDll);
+            }
+        }
+    }
+```
+
+Sie müssen die safecopy-Methode wie folgt definieren:
+
+```csharp
+private void SafeCopy(string source, string destination)
+{
+    if(!File.Exists(source))
+    {
+        Log.TraceError("Class {0} can't find {1} file for copying", this.GetType().Name, source);
+        return;
+    }
+
+    try
+    {
+        File.Copy(source, destination, true);
+    }
+    catch(IOException ex)
+    {
+        Log.TraceWarning("Failed to copy {0} to {1} with exception: {2}", source, destination, ex.Message);
+        if (!File.Exists(destination))
+        {
+            Log.TraceError("Destination file {0} does not exist", destination);
+            return;
+        }
+
+        Log.TraceWarning("Destination file {0} already existed and is probably in use.  The old file will be used for the runtime dependency.  This may happen when packaging a Win64 exe from the editor.", destination);
+    }
+}
+```
+
+Nuget-DLLs müssen manuell in den Win32-Prozess Speicher geladen werden. Es wird empfohlen, ein manuelles Laden in die Start Methode Ihres Moduls einzufügen:
+
+```cpp
+void StartupModule() override
+{
+#if PLATFORM_WINDOWS
+    const FString LibrariesDir = FPaths::ProjectPluginsDir() / "MyModule" / THIRDPARTY_BINARY_SUBFOLDER;
+    FPlatformProcess::PushDllDirectory(*LibrariesDir);
+
+    const FString DllName = "Microsoft.MixedReality.QR.dll";
+    if (!FPlatformProcess::GetDllHandle(*DllName))
+    {
+        UE_LOG(LogHMD, Warning, TEXT("Dll \'%s\' can't be loaded from \'%s\'"), *DllName, *LibrariesDir);
+    }
+
+    FPlatformProcess::PopDllDirectory(*LibrariesDir);
+#endif
+}
+```
+
+Schließlich können Sie WinRT-Header in Ihren Code einschließen, wie im vorherigen Abschnitt beschrieben.
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Unreal kompiliert den WinRT-Code nicht in Version 4,25, daher ist es Ihre Aufgabe, eine separate Binärdatei zu erstellen, die das Buildsystem von Unreal verwenden kann. 
@@ -294,246 +535,3 @@ Wenn Unreal "OpenFileDialog" aufruft, wird ein Datei Dialogfeld in den hololens 
 
 Wir empfehlen Ihnen, dieses Tutorial als Ausgangspunkt für die Verwendung von WinRT-Code in Unreal zu verwenden, wenn Sie Dateien mit dem gleichen Datei Dialogfeld wie Windows auf dem Datenträger "hololens" speichern müssen.  Der gleiche Vorgang gilt für den Export zusätzlicher Funktionen aus dem hololenswinrtdll-Header und die Verwendung in Unreal.  Achten Sie besonders auf den DLL-Code, der auf Async-WinRT-Code in einem MTA-Hintergrund Thread wartet, der das Deadlocks des Unreal Game-Threads vermeidet. 
 
-# <a name="426"></a>[4.26](#tab/426)
-
-## <a name="the-standard-winrt-apis"></a>Die WinRT-Standard-APIs
-
-Die gängigste und einfachste Methode, WinRT zu verwenden, ist das aufzurufen von Methoden aus winsdk. Öffnen Sie hierzu die Datei YourModule.Build.cs, und fügen Sie die folgenden Zeilen hinzu:
-
-```cpp
-if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
-{
-    // These parameters are mandatory for winrt support
-    bEnableExceptions = true;
-    bUseUnity = false;
-    CppStandard = CppStandardVersion.Cpp17;
-    PublicSystemLibraries.AddRange(new string[] { "shlwapi.lib", "runtimeobject.lib" });
-    PrivateIncludePaths.Add(Path.Combine(Target.WindowsPlatform.WindowsSdkDir,        
-                                        "Include", 
-                                        Target.WindowsPlatform.WindowsSdkVersion, 
-                                        "cppwinrt"));
-}
-```
-
-Als nächstes müssen Sie die folgenden WinRT-Header hinzufügen: 
-
-```cpp
-#if (PLATFORM_WINDOWS || PLATFORM_HOLOLENS) 
-#include "Windows/AllowWindowsPlatformTypes.h"
-#include "Windows/AllowWindowsPlatformAtomics.h"
-#include "Windows/PreWindowsApi.h"
-
-#include <unknwn.h>
-#include <winrt/Windows.Foundation.h>
-#include <winrt/Windows.Perception.Spatial.h>
-#include <winrt/Windows.Foundation.Collections.h>
-
-#include "Windows/PostWindowsApi.h"
-#include "Windows/HideWindowsPlatformAtomics.h"
-#include "Windows/HideWindowsPlatformTypes.h"
-#endif
-```
-
-WinRT-Code kann nur auf den Plattformen Win64 und hololens kompiliert werden, sodass die if-Anweisung verhindert, dass WinRT-Bibliotheken auf anderen Plattformen enthalten sind. "unknwn. h" wurde für die IUnknown-Schnittstelle hinzugefügt. 
-
-Vor dem Schreiben von Code müssen Sie häufige Warnungen in WinRT-Headern mithilfe von deaktivieren:
-
-```cpp
-#pragma warning(disable : 5205 4265)
-```
-
-## <a name="winrt-from-a-nuget-package"></a>WinRT von einem nuget-Paket
-
-Es ist etwas komplizierter, wenn Sie ein nuget-Paket mit WinRT-Unterstützung hinzufügen müssen. In diesem Fall kann Visual Studio praktisch alle Aufgaben ausführen, aber das Unreal Build-System nicht. Glücklicherweise ist es nicht zu schwierig. Im folgenden finden Sie ein Beispiel dafür, wie Sie das Paket Microsoft. mixedreality. QR herunterladen. Sie können ihn durch einen anderen ersetzen. Stellen Sie lediglich sicher, dass die winmd-Datei nicht verloren geht, und kopieren Sie die korrekte dll. 
-
-Windows SDK DLLs aus dem vorherigen Abschnitt werden vom Betriebssystem behandelt. Die nuget-DLLs müssen vom Code in Ihrem Modul verwaltet werden. Es wird empfohlen, Code hinzuzufügen, um sie herunterzuladen, in den Ordner Binärdateien zu kopieren und beim Modul Start in den Prozess Speicher zu laden.
-
-Im ersten Schritt sollten Sie eine packages.config ( https://docs.microsoft.com/nuget/reference/packages-config) in den Stamm Ordner des Moduls einfügen). Dort sollten Sie alle Pakete hinzufügen, die Sie herunterladen möchten, einschließlich aller Abhängigkeiten. Hier habe ich Microsoft. mixedreality. QR als primäre Nutzlast und zwei weitere als Abhängigkeiten hinzugefügt. Das Format dieser Datei ist identisch mit der in Visual Studio:
-
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<packages>
-  <package id="Microsoft.MixedReality.QR" version="0.5.2102" targetFramework="native" />
-  <package id="Microsoft.VCRTForwarders.140" version="1.0.6" targetFramework="native" />
-  <package id="Microsoft.Windows.CppWinRT" version="2.0.200729.8" targetFramework="native" />
-</packages>
-```
-
-Nun können Sie nuget, die erforderlichen Pakete oder die nuget- [Dokumentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)herunterladen.
-
-Öffnen Sie YourModule.Build.cs, und fügen Sie den folgenden Code hinzu:
-
-```cpp
-if(Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
-{
-    string MyModuleName = GetType().Name;
-
-    // these parameters mandatory for winrt support
-    bEnableExceptions = true;
-    bUseUnity = false;
-    CppStandard = CppStandardVersion.Cpp17;
-    PublicSystemLibraries.Add("shlwapi.lib");
-    PublicSystemLibraries.Add("runtimeobject.lib");
-
-    // prepare everything for nuget
-    string NugetFolder = Path.Combine(PluginDirectory, "Intermediate", "Nuget", MyModuleName);
-    Directory.CreateDirectory(NugetFolder);
-
-    string BinariesSubFolder = Path.Combine("Binaries", "ThirdParty", Target.Type.ToString(), Target.Platform.ToString(), Target.Architecture);
-
-            PrivateDefinitions.Add(string.Format("THIRDPARTY_BINARY_SUBFOLDER=\"{0}\"", BinariesSubFolder.Replace(@"\", @"\\")));
-
-    string BinariesFolder = Path.Combine(PluginDirectory, BinariesSubFolder);
-    Directory.CreateDirectory(BinariesFolder);
-
-    // download nuget
-    string NugetExe = Path.Combine(NugetFolder, "nuget.exe");
-    if(!File.Exists(NugetExe))
-    {
-        using (System.Net.WebClient myWebClient = new System.Net.WebClient())
-        {
-                                myWebClient.DownloadFile(@"https://dist.nuget.org/win-x86-commandline/latest/nuget.exe", NugetExe);
-        }
-    }
-
-    // run nuget to update the packages
-    {
-        var StartInfo = new System.Diagnostics.ProcessStartInfo(NugetExe, string.Format("install \"{0}\" -OutputDirectory \"{1}\"", Path.Combine(ModuleDirectory, "packages.config"), NugetFolder));
-        StartInfo.UseShellExecute = false;
-        StartInfo.CreateNoWindow = true;
-        var ExitCode = Utils.RunLocalProcessAndPrintfOutput(StartInfo);
-        if (ExitCode < 0)
-        {
-            throw new BuildException("Failed to get nuget packages.  See log for details.");
-        }
-    }
-            
-    // get list of the installed packages
-    string[] InstalledPackages = Utils.RunLocalProcessAndReturnStdOut(NugetExe, string.Format("list -Source \"{0}\"", NugetFolder)).Split(new char[] {'\r', '\n' });
-
-    // get WinRT package 
-    string CppWinRTPackage = InstalledPackages.First(x => x.StartsWith("Microsoft.Windows.CppWinRT"));
-    if(!string.IsNullOrEmpty(CppWinRTPackage))
-    {
-        string CppWinRTName = CppWinRTPackage.Replace(" ", ".");
-        string CppWinRTExe = Path.Combine(NugetFolder, CppWinRTName, "bin", "cppwinrt.exe");
-        string CppWinRTFolder = Path.Combine(PluginDirectory, "Intermediate", CppWinRTName, MyModuleName);
-        Directory.CreateDirectory(CppWinRTFolder);
-
-        // search all downloaded packages for winmd files
-        string[] WinMDFiles = Directory.GetFiles(NugetFolder, "*.winmd", SearchOption.AllDirectories);
-
-        // all downloaded winmd file with WinSDK to be processed by cppwinrt.exe
-        var WinMDFilesStringbuilder = new System.Text.StringBuilder();
-        foreach(var winmd in WinMDFiles)
-        {
-            WinMDFilesStringbuilder.Append(" -input \"");
-            WinMDFilesStringbuilder.Append(winmd);
-            WinMDFilesStringbuilder.Append("\"");
-        }
-
-        // generate winrt headers and add them into include paths
-        var StartInfo = new System.Diagnostics.ProcessStartInfo(CppWinRTExe, string.Format("{0} -input \"{1}\" -output \"{2}\"", WinMDFilesStringbuilder, Target.WindowsPlatform.WindowsSdkVersion, CppWinRTFolder));
-        StartInfo.UseShellExecute = false;
-        StartInfo.CreateNoWindow = true;
-        var ExitCode = Utils.RunLocalProcessAndPrintfOutput(StartInfo);
-        if (ExitCode < 0)
-        {
-            throw new BuildException("Failed to get generate WinRT headers.  See log for details.");
-        }
-
-        PrivateIncludePaths.Add(CppWinRTFolder);
-
-    }
-    else
-    {
-        // fall to default WinSDK headers
-                        PrivateIncludePaths.Add(Path.Combine(Target.WindowsPlatform.WindowsSdkDir, "Include", Target.WindowsPlatform.WindowsSdkVersion, "cppwinrt"));
-            }
-
-    // WinRT lib for some job
-    string QRPackage = InstalledPackages.First(x => x.StartsWith("Microsoft.MixedReality.QR"));
-    if (!string.IsNullOrEmpty(QRPackage))
-    {
-        string QRFolderName = QRPackage.Replace(" ", ".");
-
-        // copying dll and winmd binaries to our local binaries folder
-        // !!!!! please make sure that you use the path of file! Unreal can't do it for you !!!!!
-        SafeCopy(Path.Combine(NugetFolder, QRFolderName, @"lib\uap10.0.18362\Microsoft.MixedReality.QR.winmd"), 
-        Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.winmd"));
-
-        SafeCopy(Path.Combine(NugetFolder, QRFolderName, string.Format(@"runtimes\win10-{0}\native\Microsoft.MixedReality.QR.dll", Target.WindowsPlatform.Architecture.ToString())), 
-        Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.dll"));
-
-        // also both both binaries must be in RuntimeDependencies, unless you get failures in Hololens platform
-        RuntimeDependencies.Add(Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.dll"));
-        RuntimeDependencies.Add(Path.Combine(BinariesFolder, "Microsoft.MixedReality.QR.winmd"));
-    }
-
-    if(Target.Platform == UnrealTargetPlatform.Win64)
-    {
-        // Microsoft.VCRTForwarders.140 is needed to run WinRT dlls in Win64 platforms
-        string VCRTForwardersPackage = InstalledPackages.First(x => x.StartsWith("Microsoft.VCRTForwarders.140"));
-        if (!string.IsNullOrEmpty(VCRTForwardersPackage))
-        {
-            string VCRTForwardersName = VCRTForwardersPackage.Replace(" ", ".");
-            foreach (var Dll in Directory.EnumerateFiles(Path.Combine(NugetFolder, VCRTForwardersName, "runtimes/win10-x64/native/release"), "*_app.dll"))
-            {
-                string newDll = Path.Combine(BinariesFolder, Path.GetFileName(Dll));
-                SafeCopy(Dll, newDll);
-                RuntimeDependencies.Add(newDll);
-            }
-        }
-    }
-```
-
-Sie müssen die safecopy-Methode wie folgt definieren:
-
-```cpp
-private void SafeCopy(string source, string destination)
-{
-    if(!File.Exists(source))
-    {
-        Log.TraceError("Class {0} can't find {1} file for copying", this.GetType().Name, source);
-        return;
-    }
-
-    try
-    {
-        File.Copy(source, destination, true);
-    }
-    catch(IOException ex)
-    {
-        Log.TraceWarning("Failed to copy {0} to {1} with exception: {2}", source, destination, ex.Message);
-        if (!File.Exists(destination))
-        {
-            Log.TraceError("Destination file {0} does not exist", destination);
-            return;
-        }
-
-        Log.TraceWarning("Destination file {0} already existed and is probably in use.  The old file will be used for the runtime dependency.  This may happen when packaging a Win64 exe from the editor.", destination);
-    }
-}
-```
-
-Nuget-DLLs müssen manuell in den Win32-Prozess Speicher geladen werden. Es wird empfohlen, ein manuelles Laden in die Start Methode Ihres Moduls einzufügen:
-
-```cpp
-void StartupModule() override
-{
-#if PLATFORM_WINDOWS
-    const FString LibrariesDir = FPaths::ProjectPluginsDir() / "MyModule" / THIRDPARTY_BINARY_SUBFOLDER;
-    FPlatformProcess::PushDllDirectory(*LibrariesDir);
-
-    const FString DllName = "Microsoft.MixedReality.QR.dll";
-    if (!FPlatformProcess::GetDllHandle(*DllName))
-    {
-        UE_LOG(LogHMD, Warning, TEXT("Dll \'%s\' can't be loaded from \'%s\'"), *DllName, *LibrariesDir);
-    }
-
-    FPlatformProcess::PopDllDirectory(*LibrariesDir);
-#endif
-}
-```
-
-Schließlich können Sie WinRT-Header in Ihren Code einschließen, wie im vorherigen Abschnitt beschrieben.

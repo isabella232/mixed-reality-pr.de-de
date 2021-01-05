@@ -3,12 +3,12 @@ title: Verwenden von "steamvr" mit Windows Mixed Reality
 description: Wiedergabe von steamvr-spielen auf Windows Mixed Reality-Headsets mit kompatiblen PCs.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Games, steamvr, Steam, System Requirements
-ms.openlocfilehash: a064e448979ed256a5ed09d8b1342e287078e01d
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131924"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725741"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Verwenden von "steamvr" mit Windows Mixed Reality
 
@@ -16,15 +16,15 @@ Windows Mixed Reality für steamvr ermöglicht Benutzern das Ausführen von stea
 
 ## <a name="get-your-pc-ready"></a>Vorbereiten Ihres PCs
 
-* Stellen Sie sicher, dass keine ausstehenden Updates vorhanden sind: Klicken Sie auf **Start > Einstellungen > aktualisieren & Sicherheits > Windows Update** . Wenn Updates verfügbar sind, klicken Sie auf **jetzt installieren** . Wenn keine Updates verfügbar sind, klicken Sie **auf nach Updates suchen** , und installieren Sie dann alle neuen Updates.
+* Stellen Sie sicher, dass keine ausstehenden Updates vorhanden sind: Klicken Sie auf **Start > Einstellungen > aktualisieren & Sicherheits > Windows Update**. Wenn Updates verfügbar sind, klicken Sie auf **jetzt installieren**. Wenn keine Updates verfügbar sind, klicken Sie **auf nach Updates suchen**, und installieren Sie dann alle neuen Updates.
 * Die PC-Anforderungen variieren für die apps und Inhalte im Stream. Sehen Sie sich die Mindestanforderungen pro Titel an. Ein PC mit einer GTX 1070-Grafikkarte (oder einer Entsprechung) und einem Intel® Core™ i7-Prozessor sollte eine gute Leistung für eine breite Palette von Titeln bieten.
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>Einrichten von Windows Mixed Reality für steamvr
 
-1. Wenn Sie [Windows Mixed Reality](set-up-windows-mixed-reality.md)nicht bereits eingerichtet haben.
+1. Richten Sie [Windows Mixed Reality](set-up-windows-mixed-reality.md) ein, wenn Sie dies noch nicht getan haben.
 2. Installieren Sie " [Steam](http://store.steampowered.com/about/) " **, oder** **Erstellen Sie ein neues Konto.**
 3. Installieren Sie [steamvr](https://store.steampowered.com/app/250820/SteamVR/). Wenn Sie Ihr Headset angeschlossen haben, starten Sie "Stream", und es sollte ein Dialogfeld angezeigt werden, in dem Sie dazu aufgefordert werden, Befolgen Sie die Anweisungen im Dialogfeld, um es zu installieren.
-    * Wenn das Popup nicht angezeigt wird, installieren Sie steamvr, indem Sie zum Abschnitt " *Tools* " Ihrer *Bibliothek* navigieren. Suchen Sie in der Liste nach "steamvr", klicken Sie mit der rechten Maustaste, *und wählen Sie* "
+    * Wenn das Popup nicht angezeigt wird, installieren Sie steamvr, indem Sie zum Abschnitt " *Tools* " Ihrer *Bibliothek* navigieren. Suchen Sie in der Liste nach "steamvr", klicken Sie mit der rechten Maustaste, und wählen Sie " *Spiel*
 4. Installieren Sie [Windows Mixed Reality für steamvr](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
 ## <a name="play-steamvr-games"></a>Spielen Sie steamvr Games
@@ -33,7 +33,7 @@ Windows Mixed Reality für steamvr ermöglicht Benutzern das Ausführen von stea
 2. Nachdem die Windows Mixed Reality-Startseite geladen und ihre Controller sichtbar sind, öffnen Sie die app "Steam" auf Ihrem Desktop.
 3. Verwenden Sie die app "Steam", um ein steamvr-Spiel aus ihrer Dampf Bibliothek zu starten.
 
-**Tipp** : Verwenden Sie die Desktop-App ( **Start > Desktop** ) zum Starten von steamvr-spielen, ohne Ihr Headset zu beenden, um den PC-Desktop innerhalb von Windows Mixed Reality anzuzeigen und mit ihm zu interagieren.
+**Tipp**: Verwenden Sie die Desktop-App (**Start > Desktop**) zum Starten von steamvr-spielen, ohne Ihr Headset zu beenden, um den PC-Desktop innerhalb von Windows Mixed Reality anzuzeigen und mit ihm zu interagieren.
 
 ## <a name="using-motion-controllers-with-steamvr"></a>Verwenden von Motion-Controllern mit steamvr
 
@@ -44,7 +44,7 @@ Sie verwenden Ihre Bewegungs Controller in verschiedenen Spielen anders. Hier si
 
 ## <a name="changing-the-resolution"></a>Ändern der Auflösung
 
-Sie können den Schieberegler für die Anwendungs Auflösung im Fenster "steamvr-> Settings-> Applications" jederzeit anpassen, wenn Sie Spiele in einer höheren Auflösung wiedergeben möchten. **Beachten** Sie, dass Sie bei Verwendung eines größeren auflösungsmultiplikators erwarten können, dass das Spiel Ihren PC stärker belastet. Wenn Sie den Multiplikator erhöhen und die Leistungseinbußen anzeigen, lesen Sie diesen Schieberegler auf die Standard Ebene, und starten Sie das Spiel neu, um sicherzustellen, dass die Änderung wirksam wird. ![ Anpassen der Anwendungs Auflösung](images/SteamVR_Settings_Applications.png)
+Sie können den Schieberegler für die Anwendungs Auflösung im Fenster "steamvr-> Settings-> Applications" jederzeit anpassen, wenn Sie Spiele in einer höheren Auflösung wiedergeben möchten. * * Wenn Sie einen höheren Auflösungs Multiplikator verwenden, können Sie davon ausgehen, dass das Spiel den PC stärker belastet. Wenn Sie den Multiplikator vergrößern und die Leistung beeinträchtigt haben, lesen Sie den Schieberegler auf die Standard Ebene, und starten Sie das Spiel neu, um sicherzustellen, dass die Änderung wirksam wird.![Anpassen der Anwendungs Auflösung](images/SteamVR_Settings_Applications.png)
 
 ## <a name="using-multiple-headsets"></a>Verwenden mehrerer Headsets
 
@@ -62,10 +62,10 @@ Wenn Sie Updates häufiger erhalten möchten, empfehlen wir Ihnen, an der öffen
 
 So treten Sie an:
 
-  1. Verwenden Sie in der Dropdown Liste unter " **Bibliothek** " das Dropdown Menü, um nach **Software** zu filtern.
+  1. Verwenden Sie in der Dropdown Liste im Menü **Bibliothek** die Dropdown Liste, um nach **Software** zu filtern.
   2. Klicken Sie in der Liste mit der rechten Maustaste auf **Windows Mixed Reality für steamvr** , und wählen Sie **Eigenschaften** aus.
-  3. Klicken Sie auf die Registerkarte **Betas** .
-  4. Aktivieren Sie **"Beta-Public Beta"** , und klicken Sie auf **Schließen** , um zu bestätigen. Beachten Sie, dass das Feld für den Beta Zugriffs Code leer bleiben sollte.
+  3. Wählen Sie die Registerkarte **Betas** aus.
+  4. Aktivieren Sie **"Beta-Public Beta"** , und wählen Sie **Schließen** aus, um zu bestätigen. Das Feld für den Beta Zugriffs Code sollte leer gelassen werden.
   
 ### <a name="steamvr-beta"></a>Steamvr-Beta Version
 
@@ -73,10 +73,10 @@ Steamvr wird von einem Ventil erstellt und freigegeben und ist für alle steamvr
 
 So treten Sie an:
 
-  1. Verwenden Sie in der Dropdown Liste unter " **Bibliothek** " das Dropdown Menü, um die **Tools** zu filtern.
+  1. Verwenden Sie in der Dropdown Liste im Menü **Bibliothek** die Dropdown Liste, um die **Tools** zu filtern.
   2. Klicken Sie in der Liste mit der rechten Maustaste auf **steamvr** , und wählen Sie **Eigenschaften** aus.
-  3. Klicken Sie auf die Registerkarte **Betas** .
-  4. Aktivieren Sie **"Beta-Public Beta"** , und klicken Sie auf **Schließen** , um zu bestätigen.  Beachten Sie, dass das Feld für den Beta Zugriffs Code leer bleiben sollte. ![ Wechseln Sie im Dialogfeld "Eigenschaften" für steamvr zur "steamvr Beta".](images/steamvr-beta.png)
+  3. Wählen Sie die Registerkarte **Betas** aus.
+  4. Aktivieren Sie **"Beta-Public Beta"** , und wählen Sie **Schließen** aus, um zu bestätigen.  Das Feld für den Beta Zugriffs Code sollte leer gelassen werden. ![ Wechseln Sie im Dialogfeld "Eigenschaften" für steamvr zur "steamvr Beta".](images/steamvr-beta.png)
 
 ### <a name="windows-insider-program"></a>Windows-Insider-Programm
 
@@ -90,27 +90,27 @@ Wenn Motion reprojection aktiviert ist, werden alle Steam-VR-Spiele nominell um 
 
 Folgende Modi sind verfügbar:
 
-* **Einstellung "steamvr-pro-App** ": ermöglicht Ihnen die Steuerung der Bewegungs neuprojektion über die Benutzeroberfläche der steamvr-Einstellungen. Sie können dann die Einstellungen von "steamvr" öffnen, zu Video > Per-Application Videoeinstellungen wechseln und eine Option für "Bewegungs Glättung" auswählen.
-* **Auto** : ermöglicht die automatische Aktivierung der Bewegungs Projektion, wenn ein Spiel zu langsam ist, um 90 fps zu erhalten. Wenn ein Spiel mit der Beibehaltung von 90 fps beginnt oder mit einem Rendering von weniger als 45 fps beginnt, wird die Motion-neuprojektion deaktiviert. Asynchrone Rotations neuprojektion ist jederzeit aktiviert.
-* **Bewegungsvektor** : erzwingt, dass die Anwendung immer bei halb Framerate mit Bewegungsvektor-neuprojektion ausgeführt wird.
-* **None** : deaktiviert die Reprojektion der Bewegung.
+* **Einstellung "steamvr-pro-App**": ermöglicht Ihnen die Steuerung der Bewegungs neuprojektion über die Benutzeroberfläche der steamvr-Einstellungen. Sie können dann die Einstellungen von "steamvr" öffnen, zu Video > Per-Application Videoeinstellungen wechseln und eine Option für "Bewegungs Glättung" auswählen.
+* **Auto**: ermöglicht die automatische Aktivierung der Bewegungs Projektion, wenn ein Spiel zu langsam ist, um 90 fps zu erhalten. Wenn ein Spiel mit der Beibehaltung von 90 fps beginnt oder mit einem Rendering von weniger als 45 fps beginnt, wird die Motion-neuprojektion deaktiviert. Asynchrone Rotations neuprojektion ist immer aktiviert.
+* **Bewegungsvektor**: erzwingt, dass die Anwendung immer bei halb Framerate mit Bewegungsvektor-neuprojektion ausgeführt wird.
+* **None**: deaktiviert die Reprojektion der Bewegung.
 
 **Visuelle Artefakte erwartet** 
 
-1. Bei Verwendung einer Anwendungs Auflösung, die größer als 150% ist, kann es zu einer Unschärfe kommen. Bei der Verwendung der Motion-neuprojektion empfiehlt sich die Verwendung eines Werts kleiner als 150%.
-2. Kanten oder Text mit einem scharfen Kontrast, insbesondere bei in-Game-HUDs oder-Menüs, kann aufgrund von nicht ordnungsgemäßen aufwärgungen temporär oder verzerrt aussehen.
-3. Bei der Verwendung von "steamvr Home" und vielen anderen spielen, die auf Ihrem PC nicht zuverlässig 50-60 fps erreichen, wird dieser Modus weiterhin beeinträchtigt.
-4. Einige Spiele wurden mit einer Geschwindigkeit von 50% oder mit erhöhter Latenz (Verzögerung) gemeldet. Melden Sie sich diese Spiele über die folgenden [Windows-Feedback-Hub](filing-feedback.md) -Anweisungen an.
+1. Bei Verwendung einer Anwendungs Auflösung, die größer als 150% ist, kann es zu einer Unschärfe kommen. Bei der Verwendung der Motion-neuprojektion empfiehlt es sich, einen Wert kleiner als 150% zu verwenden.
+2. Kanten oder Text mit spitzem Kontrast, insbesondere bei in-Game-HUDs oder-Menüs, kann aufgrund von nicht Übersichtlichkeit temporär oder verzerrt aussehen.
+3. Bei der Verwendung von "steamvr Home" und vielen anderen spielen, die nicht zuverlässig 50-60 fps auf Ihrem PC erreichen, wird dieser Modus weiterhin beeinträchtigt.
+4. Einige Spiele wurden mit einer Geschwindigkeit von 50% oder mit erhöhter Latenz (Verzögerung) gemeldet. Melden Sie diese Spiele mithilfe der folgenden Anweisungen für den [Windows-Feedback-Hub](filing-feedback.md) .
 
-Anfänglich haben wir experimentelle Unterstützung für NVIDIA-GPUs der neueren Generation. Wir arbeiten weiterhin an der Unterstützung der Motion-neuprojektion für zusätzliche GPUs und freuen uns, Ihr Feedback zu hören.
+Anfänglich haben wir experimentelle Unterstützung für NVIDIA-GPUs der neueren Generation. Wir arbeiten weiterhin an der Unterstützung der Motion-neuprojektion für weitere GPUs und freuen uns, Ihr Feedback zu hören.
 
 **Unterstützte GPUs:** NVIDIA GeForce GTX1060, AMD RX470 oder besser, mit installiertem Windows Mixed Reality-kompatiblen Grafiktreibern.
 
 So aktivieren Sie Motion reprojection:
 
-1. Stellen Sie sicher, dass Sie die **Windows Mixed Reality for steamvr Beta** mithilfe der oben aufgeführten Anweisungen ausgewählt haben.
+1. Stellen Sie sicher, dass Sie die **Windows Mixed Reality for steamvr Beta** mithilfe der oben aufgeführten Anweisungen gewählt haben.
 2. Öffnen Sie das Dashboard "steamvr".
-3. Öffnen Sie Windows Mixed Reality für die steamvr-Einstellungen, indem Sie auf die Schaltfläche auf der linken Seite mit dem Windows Mixed Reality-Logo klicken.
+3. Wählen Sie die Schaltfläche auf der linken Seite mit dem Windows Mixed Reality-Logo, um **Windows Mixed Reality für die steamvr** -Einstellungen zu öffnen.
 4. Wählen Sie in der angezeigten Benutzeroberfläche die Registerkarte Grafiken aus.
 5. Wählen Sie "automatisch" für den Modus "Standardmodus für die Mode-Mode-App-neuprojektion", um die automatische Bewegungs Umgestaltung zu aktivieren
 
@@ -118,7 +118,7 @@ So aktivieren Sie Motion reprojection:
 
 **Bewegungs-reprojektions Indikator**
 
-Der Motion reprojection-Indikator hilft bei der Diagnose von Problemen mit dem experimentellen automatischen Motion reprojection-Feature. Wenn diese Einstellung auf "true" festgelegt ist, wird bei der automatischen Motion-neuprojektion in der oberen linken Ecke der Headset ein Indikator angezeigt. Die Farbe und Position dieses Indikators entsprechen dem aktuellen Motion-reprojection-Modus. Beispiele finden Sie in der Abbildung unten.
+Der Motion reprojection-Indikator hilft bei der Diagnose von Problemen mit dem experimentellen automatischen Motion reprojection-Feature. Wenn diese Einstellung auf "true" festgelegt ist, wird während der automatischen Motion-neuprojektion in der oberen linken Ecke der Headset ein Indikator angezeigt. Die Farbe und Position dieses Indikators entsprechen dem aktuellen Motion-reprojection-Modus. Beispiele finden Sie in der Abbildung unten.
 
 ![mvlsr-Indikator](images/mvLSRIndicator.png)
 
@@ -139,23 +139,23 @@ Ihr Feedback ist äußerst nützlich, wenn es um die Verbesserung der Windows Mi
 1. Geben Sie im Feedback-Hub an, dass Sie ein neues Problem in der "welche Art von Feedback ist es?" melden. im oberen Bereich.
 2. Wählen Sie die Kategorie **Mixed Reality** und die Unterkategorie **apps** aus.
 3. Fügen Sie das Wort "steamvr" in die Problem Zusammenfassung ein. Das hilft uns, Ihr Feedback zu finden.
-4. Beschreiben Sie, welches steamvr-Spiel oder welche Anwendung Sie verwendet haben, als Sie das Problem feststellen.
-5. Fügen Sie dem Feedback einen "steamvr System"-Bericht zu. Dadurch werden zusätzliche Protokolle bereitstellt, die uns bei der Diagnose Ihres Problems helfen können.
-    1. Klicken Sie im Fenster "steamvr" (in den kleinen Fenstern, in denen der Controller Status angezeigt wird) auf den Titel, um das Menü zu öffnen.
+4. Beschreiben Sie, welches steamvr-Spiel oder welche Anwendung Sie verwendet haben, wenn Sie das Problem kennengelernt haben.
+5. Fügen Sie dem Feedback einen "steamvr System"-Bericht zu. Dies bietet weitere Protokolle, die uns bei der Diagnose Ihres Problems helfen können.
+    1. Wählen Sie im Fenster "steamvr" (in den kleinen Fenstern, in denen der Controller Status angezeigt wird) für den Titel aus, um das Menü zu öffnen.
     2. Wählen Sie "System Bericht erstellen" aus.
     3. In Datei speichern.
     4. Fügen Sie die generierte Datei direkt an Ihren Feedback-Hub-Eintrag an.
-6. Wenn Ihr Feedback zur Leistung von "steamvr" gehört, erfassen Sie eine gemischte Reality-Leistungs Ablauf Verfolgung: 
-    1. Klicken Sie auf die Schaltfläche **mein Problem neu erstellen** .
-    2. Wählen Sie in der Dropdown-Datei neben "Daten einschließen" die Option **gemischte Reality-Leistung** aus.
-    3. Stellen Sie sicher, dass das Spiel läuft, und klicken Sie auf **Erfassung starten** .
+6. Wenn Sie Ihr Feedback zur Leistung von "steamvr" haben, erfassen Sie eine gemischte Reality-Leistungs Ablauf Verfolgung: 
+    1. Wählen Sie die Schaltfläche **Problem neu erstellen** aus.
+    2. Wählen Sie in der Dropdown-Datei neben "includen Daten über" die Option **gemischte Reality-Leistung** aus.
+    3. Stellen Sie sicher, dass das Spiel ausgeführt wird, und wählen Sie **Erfassung starten**.
     4. Verbringen Sie ein paar Sekunden, um die Ablauf Verfolgung zu erfassen. Erfassen Sie die Ablauf Verfolgung nicht länger als 10-15 Sekunden, oder Sie ist zu groß, um Sie zu übermitteln.
-    5. Klicken Sie auf **Erfassung Abbrechen** .
-7. Klicken Sie nach Abschluss der restlichen Felder auf **Submit (senden** ).
+    5. Wählen Sie **Erfassung Abbrechen** aus.
+7. Wählen Sie über **Mitteln** aus, sobald Sie die restlichen Felder ausgefüllt haben.
 
 Wenn Sie Fragen oder Kommentare haben, die Sie freigeben können, können Sie uns auch in unserem [Steam-Forum](http://steamcommunity.com/app/719950/discussions/)erreichen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Problembehandlung bei "steamvr" mit Windows Mixed Reality](steamvr-questions.md)
 * [Verwenden von spielen und apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

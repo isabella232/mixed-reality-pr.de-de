@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Hololens, Windows-Geräte Portal, API, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
+ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677969"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97804429"
 ---
 # <a name="device-portal-api-reference"></a>Referenz der Geräteportal-API
 
@@ -297,7 +297,7 @@ Beispiel:
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-### <a name="other"></a>Andere
+### <a name="other"></a>Sonstiges
 
 **/API/Holographic/mapmanager/resetmapandanchorsandsrdb (Post)**
 
@@ -388,6 +388,9 @@ Parameter
 Beendet die aktuelle gemischte Reality-Aufzeichnung
 
 ## <a name="mixed-reality-streaming"></a>Streaming mit gemischter Realität
+
+> [!CAUTION]
+> Aufgrund der Loopback Isolation können Sie in einer APP auf einem Gerät keine Verbindung mit Mixed Reality Streaming herstellen.
 
 Hololens unterstützt die Live Vorschau von Mixed Reality über einen segmentierten Download einer fragmentierten MP4-Datei.
 
@@ -693,6 +696,6 @@ Parameter
 Daten zurückgeben
 * Beim Start wird der WPR-Sitzungs Status zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Verwenden des Windows-Geräteportals](using-the-windows-device-portal.md)
 * [API-Referenz für den Geräte Portal (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

@@ -1,29 +1,29 @@
 ---
 title: Anvisieren und Verweilen
-description: Allgemeine Übersicht über den (Augen-/Schreib-) Blick und das Eingangs Modell
+description: Allgemeine Übersicht über den (Augen-/Schreib-) Blick und das eingabegabemodell.
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Augen Verfolgung, Head-Tracking, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702196"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847346"
 ---
 # <a name="gaze-and-dwell"></a>Anvisieren und Verweilen
 
 Wenn die Hände mit Werkzeugen und Gegenständen beschäftigt sind, können Gesten mühsam oder unmöglich sein.
 Sprachbefehle können in bestimmten Kontexten auch unzuverlässig sein, z. b. unter übermäßig Laute Bedingungen.
 "Blick" und "Wohnen" bietet einen vertrauten und leicht zu erarbeitenden Mechanismus für das Arbeiten mit den hololens und Freihand.
-Außerdem ist "Blick" und "Wohnen" ein hervorragend Fall Back, das von Rausch Störungen oder Ruhe Einschränkungen in der Betriebsumgebung unabhängig ist.
+Außerdem ist "Blick" und "Wohnen" ein hervorragend Fallback, das von Rausch Störungen oder Ruhe Einschränkungen in der Betriebsumgebung unabhängig ist.
 Wir unterscheiden zwei Varianten von _Blick und wohnen_: [Kopf-und](gaze-and-dwell-head.md) [Einblicken](gaze-and-dwell-eyes.md)und wohnen.
 
 ## <a name="scenarios"></a>Szenarien
 
-Der Blick und das Leben sind hervorragend in Szenarios, in denen die Hände einer Person mit anderen Aufgaben beschäftigt sind, und die Stimme ist aufgrund von Umwelt-oder sozialen Einschränkungen nicht 100% zuverlässig oder verfügbar.
+Der Blick und das Leben sind hervorragend in Szenarios, in denen die Hände einer Person mit anderen Aufgaben beschäftigt sind, und die Stimme ist aufgrund von Umwelt-oder sozialen Einschränkungen nicht 100% zuverlässig oder nicht verfügbar.
 Ein gutes Beispiel ist eine Person, die eine HoloLens trägt, um Referenzinformationen bei der Reparatur eines Fahrzeugmotors zu überlagern.
 Die Hände sind mit Werkzeugen beschäftigt oder stützen den eigenen Körper, während sich die Person in den Motorraum lehnt.
 Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkzeuge, wodurch sich die Verwendung von Sprachbefehlen schwierig gestaltet.
@@ -63,7 +63,8 @@ Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkze
 
 ---
 
- ## <a name="see-also"></a>Siehe auch
+ ## <a name="see-also"></a>Weitere Informationen
+
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)

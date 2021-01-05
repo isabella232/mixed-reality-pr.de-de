@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002697"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717725"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+Um die Daten für die Hand-Strahlen zu erhalten, sollten Sie die Get Motion Controller-Daten Funktion aus dem vorherigen Abschnitt verwenden. Die zurückgegebene Struktur enthält zwei Parameter, die Sie verwenden können, um eine Hand Strahl-– **Ziel Position** und **Ziel Drehung** zu erstellen. Diese Parameter bilden einen Strahl, der von Ihrem Bogen gesteuert wird. Sie sollten diese übernehmen und ein – Hologramm finden, auf das verweist.
+
+Im folgenden finden Sie ein Beispiel für die Bestimmung, ob ein Hand Strahl auf ein Widget trifft und ein benutzerdefiniertes Treffer Ergebnis festlegt:
+
+![Blaupause der Get Motion Controller-Daten Funktion](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter **Windows Mixed Reality HMD**:
@@ -14,7 +22,7 @@ Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter
 
 Wenn Sie in C++ auf Sie zugreifen möchten, schließen Sie am `WindowsMixedRealityFunctionLibrary.h` Anfang der aufrufenden Codedatei ein.
 
-### <a name="enum"></a>Enum
+### <a name="enum"></a>Enumeration
 
 Sie haben auch Zugriff auf die Eingabe Fälle unter **ehmdinputcontrollerbuttons**, die in Blaupausen verwendet werden können:
 
@@ -138,10 +146,3 @@ C++:
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-Um die Daten für die Hand-Strahlen zu erhalten, sollten Sie die Get Motion Controller-Daten Funktion aus dem vorherigen Abschnitt verwenden. Die zurückgegebene Struktur enthält zwei Parameter, die Sie verwenden können, um eine Hand Strahl-– **Ziel Position** und **Ziel Drehung** zu erstellen. Diese Parameter bilden einen Strahl, der von Ihrem Bogen gesteuert wird. Sie sollten diese übernehmen und ein – Hologramm finden, auf das verweist.
-
-Im folgenden finden Sie ein Beispiel für die Bestimmung, ob ein Hand Strahl auf ein Widget trifft und ein benutzerdefiniertes Treffer Ergebnis festlegt:
-
-![Blaupause der Get Motion Controller-Daten Funktion](../images/unreal-hand-tracking-img-04.png) 

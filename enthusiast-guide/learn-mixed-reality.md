@@ -1,6 +1,6 @@
 ---
 title: Lernen von Mixed Reality
-description: Hier wird beschrieben, wie Sie die Learn Mixed Reality-app ausführen, die Ihnen vermittelt, wie Sie Windows Mixed Reality verwenden und navigieren können.
+description: Hier wird beschrieben, wie die Learn Mixed Reality-APP und die Navigation in Windows Mixed Reality ausgeführt werden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Tutorial, Einstieg
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132064"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726051"
 ---
 # <a name="learn-mixed-reality"></a>Lernen von Mixed Reality
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>Erstmalige Ausführung der Lernfunktion
 
-Nachdem das Setup abgeschlossen ist, sollte die gemischte Reality-Portal-App eine immersive Darstellung in Ihrem HMD starten, mit dem Namen **gemischte Realität erlernen** , in der Sie erfahren, wie Sie Windows Mixed Reality verwenden können. Schauen Sie sich den Edelstein auf dem Ladebildschirm an, um zu beginnen. Sie sollten in Ihrem Headset die Stimme von Cortana hören, die Ihnen Anweisungen zu den nächsten Möglichkeiten bietet.
+Nachdem das Setup abgeschlossen ist, sollte die gemischte Reality-Portal-App eine immersive Darstellung in Ihrem HMD starten, mit dem Namen **gemischte Realität erlernen**. In diesem immersiven Verfahren erfahren Sie, wie Sie Windows Mixed Reality verwenden können. Schauen Sie sich den Edelstein auf dem Ladebildschirm an, um zu beginnen. Sie sollten in Ihrem Headset die Stimme von Cortana hören, die Ihnen Anweisungen zu den nächsten Möglichkeiten bietet.
 
 ![Lernen von Mixed Reality](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>Erneutes Ausführen der Lernfunktion
+## <a name="rerun-the-learning-experience"></a>Erneutes Ausführen der Lernfunktion
 
-Erlernen gemischter Realität ist eine APP. Die APP kann jederzeit über das Startmenü innerhalb [ihrer Mixed Reality-Start](your-mixed-reality-home.md) Seite gestartet werden. Verwenden der Motion-Controller oder Tastatur:
+Erlernen gemischter Realität ist eine APP. Die APP kann jederzeit über das Startmenü in [Ihrem gemischten Reality-Home](your-mixed-reality-home.md) gestartet werden. Verwenden der Motion-Controller oder Tastatur:
 
 ### <a name="use-your-motion-controllers"></a>Verwenden der Motion-Controller
 
@@ -51,7 +51,7 @@ Weitere Informationen dazu, wie Sie in gemischter Realität mit Motion Controlle
 
 Klicken Sie einfach auf das **Wiedergabe** Symbol unten in der Mixed Reality-Portal-app.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Problembehandlung bei der Installation](installation_errors.md)
 * [Problembehandlung bei Setup](wmr-setup-faq.md)
