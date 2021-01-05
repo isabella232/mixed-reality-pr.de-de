@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, ToolTip, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: a182b9100341709dfb78ab188cbff2bd7ed3512e
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703236"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848120"
 ---
 # <a name="tooltip"></a>QuickInfo
 
@@ -31,7 +31,7 @@ Eine QuickInfo ist eine kurze Beschreibung, die mit einem anderen Steuerelement 
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

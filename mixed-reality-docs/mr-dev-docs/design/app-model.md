@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: UWP, App-Modell, Lebenszyklus, aussetzen, fortsetzen, Kachel, Sichten, Verträge, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 332556a5118f0c69a83654d345119995e4262cb5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 00d9d5329e4c93030692d727c645de1eefbdb72d
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703106"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848107"
 ---
 # <a name="app-model"></a>App-Modell
 
-Windows Mixed Reality verwendet das vom [universelle Windows-Plattform](https://docs.microsoft.com/windows/uwp/get-started/) (UWP) bereitgestellte App-Modell, ein Modell und eine Umgebung für moderne Windows-apps. Das UWP-App-Modell definiert, wie apps installiert, aktualisiert, versioniert und vollständig und vollständig entfernt werden. Es steuert den Anwendungslebenszyklus, wie apps ausgeführt, in den Standbymodus versetzt und beendet werden und wie Sie den Zustand beibehalten können. Außerdem wird die Integration und Interaktion mit dem Betriebssystem, Dateien und anderen apps behandelt.
+Windows Mixed Reality verwendet das vom [universelle Windows-Plattform](https://docs.microsoft.com/windows/uwp/get-started/) (UWP) bereitgestellte App-Modell, das ein Modell und eine Umgebung für moderne Windows-Apps ist. Das UWP-App-Modell definiert, wie apps sicher installiert, aktualisiert, versioniert und vollständig entfernt werden. Außerdem wird der Lebenszyklus der Anwendung gesteuert, wie apps ausgeführt, in den Standbymodus versetzt und angehalten werden, und wie Sie den Zustand beibehalten können. Schließlich deckt das App-Modell die Integration und Interaktion mit dem Betriebssystem, Dateien und anderen apps ab.
 
 ![2D-apps, die in der Windows Mixed Reality-Startseite in einem Frühstücksbereich angeordnet sind](images/20160112-055908-hololens-500px.jpg)<br>
 *Apps mit einer 2D-Ansicht, die in der Windows Mixed Reality-Startseite angeordnet ist*
@@ -26,23 +26,23 @@ Der Lebenszyklus einer Mixed Reality-App umfasst standardmäßige App-Konzepte w
 
 ### <a name="placement-is-launch"></a>Platzierung ist Start
 
-Jede APP startet in gemischter Realität, indem eine APP-Kachel (nur eine [sekundäre Windows-Kachel](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)platziert wird. Diese APP-Kacheln werden bei der Platzierung mit dem Ausführen der APP gestartet. Diese APP-Kacheln bleiben erhalten und bleiben an der Stelle, an der Sie platziert werden, und fungieren wie Launcher für jederzeit, wenn Sie zur APP zurückkehren möchten.
+Jede APP startet in gemischter Realität, indem eine APP-Kachel (nur eine [sekundäre Windows-Kachel](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)platziert wird. Diese APP-Kacheln werden bei der Platzierung mit dem Ausführen der APP gestartet. Diese APP-Kacheln bleiben erhalten und bleiben an der Position, an der Sie sich befinden, und fungieren wie Launcher, wenn Sie zur APP zurückkehren möchten.
 
 ![Platzierung stellt eine sekundäre Kachel weltweit](images/slide1-600px.png)<br>
 *Platzierung stellt eine sekundäre Kachel weltweit*
 
-Sobald die Platzierung abgeschlossen ist (es sei denn, die Platzierung wurde von einer [App zum](app-model.md#protocols) Starten der APP gestartet), wird die APP gestartet. Windows Mixed Reality kann eine begrenzte Anzahl von apps gleichzeitig ausführen. Sobald Sie eine APP platzieren und starten, werden möglicherweise andere aktive apps angehalten, sodass ein Screenshot des letzten Zustands der APP auf der APP-Kachel angezeigt wird, wo Sie sie platziert haben. Weitere Informationen zur Behandlung von fortsetzen und anderen Ereignissen des App-Lebenszyklus finden Sie unter [Windows 10 UWP-App](https://docs.microsoft.com/windows/uwp/launch-resume/app-lifecycle) -Lebenszyklus.
+Sobald die Platzierung abgeschlossen ist (es sei denn, die Platzierung wurde von einer [App zum](app-model.md#protocols) Starten der APP gestartet), wird die APP gestartet. Windows Mixed Reality kann eine begrenzte Anzahl von apps gleichzeitig ausführen. Sobald Sie eine APP platzieren und starten, können andere aktive apps angehalten werden. Angehaltene apps hinterlassen einen Screenshot des letzten Zustands der APP auf der APP-Kachel, wo Sie sie platziert haben. Weitere Informationen zur Behandlung von Fortsetzung und anderen Lebenszyklus Ereignissen finden Sie unter [Windows 10 UWP-App-Lebenszyklus](https://docs.microsoft.com/windows/uwp/launch-resume/app-lifecycle).
 
 ![Nach dem Platzieren einer Kachel wird die Ausführung des ](images/slide2-500px.png) ![ Status Diagramms für die APP gestartet, angehalten oder wird nicht ausgeführt.](images/ic576232-500px.png)<br>
 *Left: nach dem Platzieren einer Kachel wird die Ausführung der APP gestartet. Right: Status Diagramm für die Ausführung, angehaltene oder nicht laufende app.*
 
 ### <a name="remove-is-closeterminate-process"></a>Entfernen des Vorgangs zum Schließen/beenden
 
-Wenn Sie eine platzierte App-Kachel aus der Welt entfernen, schließt dies die zugrunde liegenden Prozesse. Dies kann hilfreich sein, um sicherzustellen, dass Ihre APP beendet oder eine problematische APP neu gestartet wird.
+Wenn Sie eine platzierte App-Kachel aus der Welt entfernen, werden die zugrunde liegenden Prozesse geschlossen. Dies kann hilfreich sein, um sicherzustellen, dass Ihre APP beendet oder eine problematische APP neu gestartet wird.
 
 ### <a name="app-suspensiontermination"></a>App-Aussetzung/Beendigung
 
-In der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)kann der Benutzer mehrere Einstiegspunkte für eine APP erstellen. Dies geschieht, indem Sie Ihre APP über das Startmenü starten und die APP-Kachel auf der ganzen Welt platzieren. Jede APP-Kachel verhält sich als ein anderer Einstiegspunkt und verfügt über eine separate Kachel Instanz im System. Eine Abfrage für [secondarytile. findallasync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) führt zu einer **secondarytile** für jede app-Instanz.
+In der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)kann der Benutzer mehrere Einstiegspunkte für eine APP erstellen, indem er die APP über das Startmenü startet und die APP-Kachel auf der Welt platziert. Jede APP-Kachel verhält sich als ein anderer Einstiegspunkt und verfügt über eine separate Kachel Instanz im System. Eine Abfrage für [secondarytile. findallasync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) führt zu einer **secondarytile** für jede app-Instanz.
 
 Wenn eine UWP-App angehalten wird, wird ein Screenshot mit dem aktuellen Status erstellt.
 
@@ -70,14 +70,14 @@ Manchmal muss Ihre APP weiterhin im Hintergrund arbeiten oder Audioinhalte abspi
 
 Wenn Ihre App aktiviert ist, können Sie auswählen, welche Art von Ansicht angezeigt werden soll. Für die **coreapplication** einer APP gibt es immer eine primäre [App-Ansicht](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView) und eine beliebige Anzahl weiterer App-Ansichten, die Sie erstellen möchten. Auf dem Desktop können Sie sich eine App-Ansicht als Fenster vorstellen. Unsere Mixed Reality-App-Vorlagen erstellen ein Unity-Projekt, in dem die primäre App-Ansicht [immersiv](app-views.md)ist. 
 
-Ihre APP kann eine zusätzliche 2D-App-Ansicht mithilfe von Technologie wie XAML erstellen, um Windows 10-Funktionen wie z.b. in-App-Käufe zu verwenden. Wenn Ihre APP als UWP-App für andere Windows 10-Geräte gestartet wurde, ist Ihre primäre Ansicht 2D, aber Sie können sich in gemischter Realität "anblenden", indem Sie eine zusätzliche App-Ansicht hinzufügen, die sich in der Praxis auf eine benutzerfreundliche Darstellung zeigt. Stellen Sie sich vor, Sie möchten eine Foto-Viewer-app in XAML entwickeln, in der die Schaltfläche "Bild-Viewer" in eine immersive App-Ansicht gewechselt wird, die Fotos von der APP
+Ihre APP kann eine zusätzliche 2D-App-Ansicht mithilfe von Technologie wie XAML erstellen, um Windows 10-Funktionen wie z.b. in-App-Käufe zu verwenden. Wenn Ihre APP als UWP-App für andere Windows 10-Geräte gestartet wurde, ist Ihre primäre Ansicht 2D. Sie können sich jedoch in gemischter Realität "anblenden", indem Sie eine weitere App-Ansicht hinzufügen, die sich in der Praxis auf eine Art zeigt. Stellen Sie sich vor, Sie möchten eine Foto-Viewer-app in XAML entwickeln, in der die Schaltfläche "Bild-Viewer" in eine immersive App-Ansicht gewechselt wird, die Fotos von der APP
 
 ![Die laufende App kann eine 2D-Ansicht oder eine immersive Ansicht haben.](images/slide3-800px.png)<br>
 *Die laufende App kann eine 2D-Ansicht oder eine immersive Ansicht haben.*
 
 ### <a name="creating-an-immersive-view"></a>Erstellen einer immersiven Ansicht
 
-Mixed Reality-apps sind solche, die eine immersive Ansicht erstellen, die mit dem [holographicspace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace) -Typ erreicht wird.
+Mixed Reality-Apps erstellen eine immersive Ansicht, die mit dem [holographicspace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace) -Typ erreicht wird.
 
 Eine APP, die rein immersiv ist, sollte beim Start immer eine immersive Ansicht erstellen, auch wenn Sie vom Desktop gestartet wird. Immersive Sichten werden immer im Headset angezeigt, unabhängig davon, wo Sie von erstellt wurden. Wenn Sie eine immersive Ansicht aktivieren, wird das Mixed Reality-Portal angezeigt, und der Benutzer wird aufgefordert, das Headset zu platzieren.
 
@@ -90,7 +90,7 @@ Eine APP, die mit einer 2D-Ansicht auf dem Desktop Monitor beginnt, kann eine se
 
 Alles andere als eine immersive Ansicht wird als 2D-Ansicht in ihrer Welt gerendert.
 
-Eine APP kann über 2D-Ansichten sowohl auf dem Desktop Monitor als auch im Headset verfügen. Beachten Sie, dass eine neue 2D-Ansicht in derselben Shell wie die Ansicht, die Sie erstellt hat, entweder auf dem Monitor oder im Headset platziert wird. Es ist derzeit nicht möglich, dass eine APP oder ein Benutzer eine 2D-Ansicht zwischen dem Mixed Reality-Start und dem Monitor verschiebt.
+Eine APP kann über 2D-Ansichten sowohl auf dem Desktop Monitor als auch im Headset verfügen. Eine neue 2D-Ansicht wird in derselben Shell wie die Ansicht platziert, von der Sie erstellt wurde, entweder auf dem Monitor oder im Headset. Es ist derzeit nicht möglich, dass eine APP oder ein Benutzer eine 2D-Ansicht zwischen der Mixed Reality-Startseite und dem Monitor verschiebt.
 
 ![Apps, die in der 2D-Ansicht ausgeführt werden, teilen den Raum in der gemischten Welt mit anderen apps.](images/slide5-800px.png)<br>
 *Apps, die in einer 2D-Ansicht ausgeführt werden, teilen den Speicherplatz mit anderen apps*
@@ -129,7 +129,7 @@ Wie im vorherigen Abschnitt können Sie " **applicationviewswitcher. switchasync
 2D-App-Ansichten werden immer in einem fixierten virtuellen Slate-Element angezeigt. Dadurch wird in allen 2D-Ansichten genau dieselbe Menge an Inhalten angezeigt. Im folgenden finden Sie weitere Details zur Größe der 2D-Ansicht Ihrer APP:
 * Das Seitenverhältnis der APP wird bei der Größenänderung beibehalten.
 * APP [-Auflösung und Skalierungsfaktor](../develop/porting-apps/building-2d-apps.md#2d-app-view-resolution-and-scale-factor) werden durch die Größenänderung nicht geändert.
-* Apps sind nicht in der Lage, ihre tatsächliche Größe auf der ganzen Welt abzufragen.
+* Apps können Ihre tatsächliche Größe weltweit nicht Abfragen.
 
 ![2D-apps werden mit fester Fenstergröße angezeigt.](images/12493521-10104043956964683-6118765685995662420-o-500px.jpg)<br>
 *Apps mit einer 2D-Ansicht werden mit fester Fenstergröße angezeigt*
@@ -145,7 +145,7 @@ Das Startmenü verwendet die standardmäßige kleine Kachel und die mittlere Kac
 
 Beim Erstellen von apps haben Sie Zugriff auf die für Windows 10 verfügbaren leistungsfähigen APP-zu-app-Kommunikationsmechanismen. Viele der neuen Protokoll-APIs und Datei Registrierungen funktionieren perfekt auf hololens, um das Starten und die Kommunikation der APP zu ermöglichen. 
 
-Beachten Sie, dass die APP, die einer bestimmten Dateierweiterung oder einem Protokoll zugeordnet ist, bei Desktop-Headsets möglicherweise eine Win32-APP ist, die nur auf dem Desktop Monitor oder dem Desktop-Slate angezeigt werden kann.
+Bei Desktop-Headsets kann die APP, die einer bestimmten Dateierweiterung oder einem Protokoll zugeordnet ist, eine Win32-APP sein, die nur auf dem Desktop Monitor oder dem Desktop-Slate angezeigt werden kann.
 
 ### <a name="protocols"></a>Protokolle
 
@@ -157,13 +157,13 @@ Beim Starten einer anderen Anwendung müssen einige Punkte berücksichtigt werde
 
 * Wenn Sie einen modalen Start durchführen, z. b. über [launchuriforresultasync](https://docs.microsoft.com/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_), wird die modale App oberhalb des Fensters platziert.
 
-* Windows Mixed Reality kann Anwendungen nicht oberhalb von exklusiven Ansichten überlagern. Um die gestartete App anzuzeigen, führt Windows den Benutzer zur Anzeige der Anwendung zurück.
+* Windows Mixed Reality kann Anwendungen nicht auf exklusive Ansichten überlagern. Um die gestartete App anzuzeigen, führt Windows den Benutzer zur Anzeige der Anwendung zurück.
 
 ### <a name="file-pickers"></a>Datei-Picker
 
 Hololens unterstützt sowohl [fileopenpicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileOpenPicker) -als auch [filesavepicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) -Verträge. Allerdings ist keine app vorinstalliert, mit der die Dateiauswahl Verträge erfüllt werden. Diese apps (z. b. onedrive) können vom Microsoft Store installiert werden.
 
-Wenn Sie mehr als eine Dateiauswahl-App installiert haben, wird Ihnen keine Benutzeroberfläche für die Mehrdeutigkeit für die Auswahl der App angezeigt, die gestartet werden soll. Stattdessen wird die erste installierte Dateiauswahl ausgewählt. Beim Speichern einer Datei wird der Dateiname generiert, der den Zeitstempel enthält. Dieses kann vom Benutzer nicht geändert werden.
+Wenn Sie mehr als eine Dateiauswahl-App installiert haben, wird Ihnen keine Benutzeroberfläche für die Mehrdeutigkeit angezeigt, mit der Sie auswählen können, welche App gestartet werden soll. Stattdessen wird die erste installierte Dateiauswahl ausgewählt. Beim Speichern einer Datei wird der Dateiname generiert, der den Zeitstempel enthält. Dieses kann vom Benutzer nicht geändert werden.
 
 Standardmäßig werden die folgenden Erweiterungen lokal unterstützt:
 
@@ -207,7 +207,7 @@ App-Verträge und Erweiterungs Punkte ermöglichen es Ihnen, Ihre APP zu registr
 
 ## <a name="app-file-storage"></a>App-Dateispeicher
 
-Der gesamte Speicher erfolgt über den [Windows. Storage-Namespace](https://docs.microsoft.com/uwp/api/Windows.Storage). Weitere Informationen finden Sie in der folgenden Dokumentation. Hololens unterstützt keine Synchronisierung/Roaming von App Storage.
+Der gesamte Speicher erfolgt über den [Windows. Storage-Namespace](https://docs.microsoft.com/uwp/api/Windows.Storage). Hololens unterstützt keine Synchronisierung/Roaming von App Storage. Weitere Informationen finden Sie in der folgenden Dokumentation:
 
 * [Dateien, Ordner und Bibliotheken](https://docs.microsoft.com/windows/uwp/files/index)
 * [Speichern und Abrufen von Einstellungen und anderen App-Daten](https://docs.microsoft.com/windows/uwp/design/app-settings/store-and-retrieve-app-data)
@@ -250,13 +250,13 @@ Ausführliche Informationen zu UWP-apps finden Sie unter [KnownFolders](https://
 
 ## <a name="app-package"></a>App-Paket
 
-Bei Windows 10 wird ein Betriebssystem nicht mehr als Zielversion [für Ihre APP an eine oder mehrere Gerätefamilien](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families)ausgerichtet. Eine Gerätefamilie identifiziert die APIs, Systemmerkmale und Verhaltensweisen, die Sie auf allen Geräten innerhalb der Gerätefamilie erwarten können. Außerdem wird die Gruppe von Geräten bestimmt, auf denen Ihre APP aus dem [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)installiert werden kann.
+Mit Windows 10 richten Sie nicht mehr ein Betriebssystem ein, sondern verwenden [Ihre APP stattdessen für eine oder mehrere Gerätefamilien](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families). Eine Gerätefamilie identifiziert die APIs, Systemmerkmale und Verhaltensweisen, die Sie auf allen Geräten innerhalb der Gerätefamilie erwarten können. Außerdem wird die Gruppe von Geräten bestimmt, auf denen Ihre APP aus dem [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)installiert werden kann.
 
-* Wenn Sie sowohl Desktop-Headsets als auch hololens als Ziel haben, richten Sie Ihre APP auf die **Windows. Universal** -Gerätefamilie aus.
+* Wenn Sie sowohl Desktop-Headsets als auch hololens als Ziel haben, richten Sie Ihre APP auf die Windows-Anwendung **Universelle** Gerätefamilie.
 * Um nur Desktop-Headsets als Ziel zu erhalten, richten Sie Ihre APP auf die **Windows. Desktop-** Gerätefamilie aus.
 * Um nur hololens als Ziel zu erreichen, richten Sie Ihre APP auf die **Windows. Holographic** -Gerätefamilie aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [App-Ansichten](app-views.md)
 * [Aktualisieren von 2D-UWP-Apps für Mixed Reality](../develop/porting-apps/building-2d-apps.md)

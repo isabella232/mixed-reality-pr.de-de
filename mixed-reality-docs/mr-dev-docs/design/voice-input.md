@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGV, Voice, Cortana, Speech, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Blick
-ms.openlocfilehash: f4f81383f942961857b088b05c4e8cac07ab7dfe
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 09f99083d769be80d8c15016b3de8713eae76515
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703206"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848131"
 ---
 # <a name="voice-input"></a>Spracheingabe
 
@@ -19,13 +19,13 @@ ms.locfileid: "94703206"
 
 Die Stimme ist eine der wichtigsten Formen der Eingabe für HoloLens. Damit können Sie ein – Hologramm direkt aufrufen, ohne [Handgesten](gaze-and-commit.md#composite-gestures)verwenden zu müssen. Die Spracheingabe kann eine natürliche Art sein, Ihre Absichten zu kommunizieren. Voice eignet sich besonders gut für die Durchführung komplexer Schnittstellen, da Benutzer mit einem Befehl die Möglichkeit haben, die Verwendung von Netz Menüs zu ermöglichen.
 
-Die Spracheingabe wird von [derselben Engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) unterstützt, die Sprache in allen anderen _universellen Windows-apps_ unterstützt. Bei hololens funktioniert die Spracherkennung immer in der in den Einstellungen konfigurierten Windows-Anzeige Sprache. 
+Die Spracheingabe wird von [derselben Engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) unterstützt, die Sprache in allen _universellen Windows-apps_ unterstützt. Bei hololens funktioniert die Spracherkennung immer in der Windows-Anzeige Sprache, die in ihren Geräteeinstellungen konfiguriert ist. 
 
 <br>
 
 ## <a name="voice-and-gaze"></a>Sprach-und Blick
 
-Wenn Sprachbefehle verwendet werden, wird der Cursor (Head-oder Eye) in der Regel als Ziel Ziel Mechanismus verwendet, egal ob mit einem Cursor ("Select") oder implizit, um Ihren Befehl an eine Anwendung zu leiten, die Sie sich ansehen. Hierfür ist es möglicherweise gar nicht erforderlich, einen Cursor Cursor anzuzeigen _("Weitere_ Informationen" anzeigen). Natürlich benötigen einige Sprachbefehle überhaupt kein Ziel, z. b. "Gehe zu Start" oder "Hey Cortana".
+Wenn Sie Sprachbefehle verwenden, ist Head-oder Eye-Eye der typische Ziel Mechanismus, egal ob mit einem Cursor "Select" oder der Kanal für Ihren Befehl an eine Anwendung, die Sie sich ansehen. Möglicherweise ist es nicht einmal erforderlich, einen Cursor Cursor anzuzeigen _("Weitere_ Informationen" anzeigen). Einige Sprachbefehle benötigen überhaupt kein Ziel, z. b. "Gehe zu Start" oder "Hey Cortana".
 
 <br>
 
@@ -59,7 +59,7 @@ Wenn Sprachbefehle verwendet werden, wird der Cursor (Head-oder Eye) in der Rege
 
 **HoloLens (1. Generation)**
 
-Auch wenn Sie Ihrer APP keine Sprachunterstützung hinzufügen, können Ihre Benutzer holograms aktivieren, indem Sie einfach den System Sprachbefehl "Select" sagen. Dies verhält sich wie eine [Luft](gaze-and-commit.md#composite-gestures) Abzweigung in hololens, das Drücken der Schaltfläche "auswählen" auf dem [hololens-Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)oder das Drücken des Auslösers auf einem [Windows Mixed Reality Motion Controller](motion-controllers.md). Sie werden einen Sound hören und sehen, dass eine QuickInfo mit "Select" als Bestätigung angezeigt wird. "Select" wird durch einen Algorithmus für die Erkennung eines niedrigen Leistungs Worts aktiviert, sodass Sie jederzeit mit minimalen Auswirkungen auf die Akku Lebensdauer jederzeit angezeigt werden können. Dies gilt auch für Ihre Hände.
+Auch wenn Sie Ihrer APP keine Sprachunterstützung hinzufügen, können Ihre Benutzer holograms aktivieren, indem Sie einfach den System Sprachbefehl "Select" sagen. Dies verhält sich wie eine [Luft](gaze-and-commit.md#composite-gestures) Abzweigung in hololens, das Drücken der Schaltfläche "auswählen" auf dem [hololens-Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)oder das Drücken des Auslösers auf einem [Windows Mixed Reality Motion Controller](motion-controllers.md). Sie werden einen Sound hören und sehen, dass eine QuickInfo mit "Select" als Bestätigung angezeigt wird. "Select" wird durch einen Algorithmus für die Schlüsselwort Erkennung mit niedrigem Energieverbrauch aktiviert. Dies bedeutet, dass Sie dies jederzeit mit minimalen Auswirkungen auf die Akku Lebensdauer sagen können. Sie können sogar "Select" mit ihren Händen auf der Seite sagen.
 
 <br>
 
@@ -68,9 +68,9 @@ Auch wenn Sie Ihrer APP keine Sprachunterstützung hinzufügen, können Ihre Ben
 :::row:::
     :::column:::
         **HoloLens 2**<br><br>
-        Um den "Select"-Befehl "Stimme" in hololens 2 zu verwenden, müssen Sie zuerst den Cursor Cursor zur Verwendung als Zeiger einrichten. Der Befehl zur Eingabe ist leicht zu merken, einfach "Select".<br><br>
-        Um den Modus zu beenden, verwenden Sie einfach wieder die Hände, entweder durch Tippen auf eine Maustaste, eine Schaltfläche mit Ihren Fingern oder mithilfe der System Bewegung.<br>
-        <br>
+        Wenn Sie den Befehl "Select" in hololens 2 verwenden möchten, müssen Sie zuerst den Cursor Cursor zur Verwendung als Zeiger verwenden. Der Befehl zur Eingabe ist leicht zu merken, einfach "Select".<br><br>
+        Um den Modus zu beenden, verwenden Sie die Hände erneut, indem Sie tippen, eine Schaltfläche mit Ihren Fingern nähern oder die System Bewegung verwenden.<br>
+        <br> 
         *Bild: "Select", um den Voice-Befehl für die Auswahl zu verwenden*
     :::column-end:::
         :::column:::
@@ -78,15 +78,13 @@ Auch wenn Sie Ihrer APP keine Sprachunterstützung hinzufügen, können Ihre Ben
     :::column-end:::
 :::row-end:::
 
-
 <br>
 
 ---
 
-
 ## <a name="hey-cortana"></a>Hallo, Cortana
 
-Sie können auch "Hey Cortana" sagen, um Cortana jederzeit zu erhalten. Sie müssen nicht warten, bis Sie angezeigt wird, um Ihre Frage zu stellen oder eine Anweisung zu geben, z. b. "Hey Cortana, was ist das Wetter?". als einzelner Satz. Weitere Informationen zu Cortana und den Möglichkeiten, die Sie tun können, finden Sie einfach! Sagen Sie: "Hey Cortana, was kann ich sagen?" und Sie werden eine Liste der funktionierenden und vorgeschlagenen Befehle abrufen. Wenn Sie sich bereits in der Cortana-App befinden, können Sie auch auf die **?** Symbol auf der Rand Leiste, um das gleiche Menü zu ziehen.
+Sie können auch "Hey Cortana" sagen, um Cortana zu einem beliebigen Zeitpunkt zu machen. Sie müssen nicht warten, bis Sie angezeigt wird, um Ihre Frage zu beantworten oder Ihnen eine Anweisung zu geben. Beispielsweise: "Hey Cortana, was ist das Wetter?" als einzelner Satz. Weitere Informationen zu Cortana und ihren Möglichkeiten finden Sie unter. Sagen Sie: "Hey Cortana, was kann ich sagen?" und Sie werden eine Liste der funktionierenden und vorgeschlagenen Befehle abrufen. Wenn Sie sich bereits in der Cortana-App befinden, wählen Sie das **?** Symbol auf der Rand Leiste, um das gleiche Menü zu ziehen.
 
 **Hololens-spezifische Befehle**
 * Was kann ich sagen?
@@ -109,8 +107,6 @@ Sie können auch "Hey Cortana" sagen, um Cortana jederzeit zu erhalten. Sie müs
 * "Welche Zeit ist es?"
 * "Wie viel Akku habe ich verbleiben?"
 
-
-
 <br>
 
 ---
@@ -118,7 +114,7 @@ Sie können auch "Hey Cortana" sagen, um Cortana jederzeit zu erhalten. Sie müs
 :::row:::
     :::column:::
         ## <a name="see-it-say-itbr"></a>"Weitere Informationen"<br>
-        Hololens hat eine "See it"-Modell für die Spracheingabe, bei der Bezeichnungen auf Schaltflächen den Benutzern mitteilen, welche Sprachbefehle Sie auch sagen können. Wenn Sie z. b. ein App-Fenster in hololens (1st Gen) betrachten, kann ein Benutzer den Befehl "anpassen" anzeigen, der in der APP-Leiste angezeigt wird, um die Position der APP auf der ganzen Welt anzupassen.<br>
+        Hololens hat eine "See it"-Modell für die Spracheingabe, bei der Bezeichnungen auf Schaltflächen den Benutzern mitteilen, welche Sprachbefehle Sie auch sagen können. Wenn Sie z. b. ein App-Fenster in hololens (1st Gen) betrachten, kann ein Benutzer den Befehl "anpassen" festlegen, um die Position der APP auf der Welt anzupassen.<br>
         <br>
         *Image: ein Benutzer kann den Befehl "anpassen" anzeigen, der in der APP-Leiste angezeigt wird, um die Position der APP anzupassen.*
     :::column-end:::
@@ -128,14 +124,11 @@ Sie können auch "Hey Cortana" sagen, um Cortana jederzeit zu erhalten. Sie müs
     :::column-end:::
 :::row-end:::
 
-
 <br>
-
-
 
 :::row:::
     :::column:::
-        Wenn apps diese Regel befolgen, können Benutzer leicht erkennen, was zum Steuern des Systems zu sagen ist. Um dies zu verstärken, wird bei der Betrachtung einer Schaltfläche in hololens (1st Gen) eine QuickInfo angezeigt, die nach einer Sekunde angezeigt wird, wenn die Schaltfläche sprach fähig ist, und zeigt den Befehl an, um zu sprechen, um Sie zu "drücken". Um voicemailtipps in hololens 2 anzuzeigen, zeigen Sie den sprach Cursor an, indem Sie "Select" oder "Was kann ich sagen" (siehe Abbildung). <br>
+        Wenn apps diese Regel befolgen, können Benutzer leicht erkennen, was zum Steuern des Systems zu sagen ist. Wenn Sie auf einer Schaltfläche in hololens (1st Gen) suchen, sehen Sie eine QuickInfo, die nach einer Sekunde angezeigt wird, wenn die Schaltfläche sprach fähig ist, und zeigt den Befehl an, um zu sprechen, um Sie zu "drücken". Um voicemailtipps in hololens 2 anzuzeigen, zeigen Sie den sprach Cursor an, indem Sie "Select" oder "Was kann ich sagen" (siehe Abbildung). <br>
         <br>
         *Bild: "sehen Sie, dass die Befehle unter den Schaltflächen angezeigt werden.*
     :::column-end:::
@@ -144,32 +137,27 @@ Sie können auch "Hey Cortana" sagen, um Cortana jederzeit zu erhalten. Sie müs
     :::column-end:::
 :::row-end:::
 
-
 <br>
 
 ---
 
-
 ## <a name="voice-commands-for-fast-hologram-manipulation"></a>Sprachbefehle für schnelle – Hologramm-Bearbeitung
 
-Es gibt eine Reihe von Sprachbefehlen, die Sie bei der Betrachtung eines holograms zum schnellen Ausführen von Bearbeitungsaufgaben sagen können. Diese Sprachbefehle funktionieren sowohl bei App-Fenstern als auch bei 3D-Objekten, die Sie in der Welt abgelegt haben.
+Es gibt viele Sprachbefehle, die Sie bei der Betrachtung bei einem – Hologramm zum schnellen Ausführen von Bearbeitungsaufgaben durchführen können. Diese Sprachbefehle funktionieren für APP-Windows-und 3D-Objekte, die Sie in der Welt abgelegt haben.
 
 **Hologram-Bearbeitungsbefehle**
 * Gesicht
 * Größer | Verbessern
 * Geringeren
 
-Auf hololens 2 können Sie auch natürlichere Interaktionen in Kombination mit Eye-Blick erstellen, die implizit Kontextinformationen über das, auf das Sie verweisen, bereitstellt. Sie könnten z. b. einfach ein Hologramm betrachten und dann auf "put _this_" ("put this") und _dann überprüfen_, wo Sie es platzieren möchten.
+Auf hololens 2 können Sie auch natürlichere Interaktionen in Kombination mit Eye-Blick erstellen, die implizit Kontextinformationen über das, auf das Sie verweisen, bereitstellt. Beispielsweise könnten Sie ein Hologramm betrachten und "put this" ( _diese_) und _dann überprüfen_, wo Sie es platzieren möchten.
 Oder Sie können sich einen Holographic-Teil auf einem komplexen Computer ansehen und sagen: "Weitere Informationen zu _diesem_".
-
-
 
 ## <a name="discovering-voice-commands"></a>Erkennen von Sprachbefehlen
 
 Einige Befehle, wie z. b. die Befehle für die schnelle Bearbeitung, können ausgeblendet werden. Um zu erfahren, welche Befehle Sie verwenden können, schauen Sie sich das Objekt an, und sagen Sie: "Was kann ich sagen?". Eine Liste möglicher Befehle wird angezeigt. Sie können auch den Cursor Cursor verwenden, um die voicemailtipps für die einzelnen Schaltflächen anzuzeigen. 
 
 Wenn Sie eine vollständige Liste erhalten möchten, sagen Sie einfach "alle Befehle anzeigen". 
-
 
 ## <a name="dictation"></a>Diktieren
 
@@ -180,56 +168,55 @@ Anstatt eine Typisierung mit [Luft](gaze-and-commit.md#composite-gestures)Eingab
 
 Jedes Mal, wenn die holografische Tastatur aktiv ist, können Sie in den Diktat Modus wechseln, anstatt einzugeben. Wählen Sie das Mikrofon auf der Seite des Texteingabe Felds aus, um loszulegen.
 
-
 ## <a name="adding-voice-commands-to-your-app"></a>Hinzufügen von Sprachbefehlen zu Ihrer APP
 
-Erwägen Sie, Sprachbefehle zu jeder von Ihnen erstellten Umgebung hinzuzufügen. Die Spracheingabe ist eine leistungsstarke und komfortable Möglichkeit zur Steuerung von System und Apps. Da Benutzer mit einer Vielzahl von Dialekten und Akzenten sprechen, stellt die richtige Auswahl der Schlüsselwörter für die Spracherkennung sicher, dass die Befehle Ihrer Benutzer eindeutig interpretiert werden.
+Erwägen Sie, Sprachbefehle zu jeder von Ihnen erstellten Umgebung hinzuzufügen. Voice ist eine leistungsstarke Möglichkeit, das System und die apps zu steuern. Da Benutzer mit unterschiedlichen Arten von Dialekten und Akzenten sprechen, stellen Sie sicher, dass die Befehle Ihrer Benutzer eindeutig interpretiert werden.
 
 ### <a name="best-practices"></a>Bewährte Methoden
 
 Nachfolgend finden Sie einige Methoden aufgeführt, die eine reibungslose Spracherkennung ermöglichen.
 * **Präzise Befehle verwenden**: Wählen Sie nach Möglichkeit Schlüsselwörter mit zwei oder mehr Silben aus. Einsilbige Wörter neigen dazu, unterschiedliche Vokallaute zu verwenden, wenn sie von Personen mit unterschiedlichen Akzenten gesprochen werden. Beispiel: "Video abspielen" ist besser als "das aktuell ausgewählte Video abspielen"
 * **Verwenden eines einfachen Vokabulars** -Beispiel: "Show Note" ist besser als "Placard anzeigen"
-* **Sicherstellen, dass Befehle nicht destruktiv sind**: Stellen Sie sicher, dass alle Aktionen, die von einem Spracherkennungsbefehl ausgeführt werden können, nicht destruktiv sind und leicht rückgängig gemacht werden können, falls eine andere Person, die in der Nähe des Benutzers spricht, versehentlich einen Befehl auslöst.
-* **Ähnlich klingende Befehle vermeiden**: Vermeiden Sie es, mehrere Spracherkennungsbefehle zu registrieren, die sehr ähnlich klingen. Beispiel: "mehr anzeigen" und "Store anzeigen" kann sehr ähnlich klingen.
-* **Registrierung der App aufheben, wenn sie nicht verwendet wird**: Wenn sich Ihre Anwendung nicht in einem Zustand befindet, in dem ein bestimmter Sprachbefehl gültig ist, sollten Sie die Registrierung der App aufheben, damit andere Befehle nicht mit diesem verwechselt werden.
+* Stellen **Sie sicher, dass Befehle nicht destruktiv sind** . Stellen Sie sicher, dass alle sprach Befehls Aktionen nicht destruktiv sind und leicht rückgängig gemacht werden können, wenn eine andere Person, die in der Nähe des Benutzers steht, versehentlich einen Befehl auslöst
+* **Vermeiden Sie ähnliche, klingende Befehle** : vermeiden Sie das Registrieren mehrerer Sprachbefehle, die ähnlich klingen. Beispiel: "mehr anzeigen" und "Store anzeigen" kann ähnlich klingen.
+* Aufheben der Registrierung **Ihrer APP, wenn Sie nicht verwendet** wird: Wenn sich Ihre APP nicht in einem Zustand befindet, in dem ein bestimmter Sprachbefehl gültig ist, sollten Sie die Registrierung aufheben, damit andere Befehle nicht verwechselt werden.
 * **Mit verschiedenen Akzenten testen**: Testen Sie Ihre App mit Benutzern, die unterschiedliche Akzente verwenden.
 * **Konsistenz von Sprachbefehlen beibehalten**: Wenn „Zurück“ zur vorherigen Seite wechselt, übernehmen Sie dieses Verhalten in Ihren Anwendungen.
-* **Verwendung von Systembefehlen vermeiden**: Die folgenden Sprachbefehle sind für das System reserviert. Diese sollten nicht von Anwendungen verwendet werden.
+* **Vermeiden Sie die Verwendung von System Befehlen** . die folgenden Sprachbefehle sind für das System reserviert. vermeiden Sie daher die Verwendung in Ihren Anwendungen:
    * „Hey Cortana“
    * „Auswählen“
    * "Gehe zu Start"
 
 ### <a name="advantages-of-voice-input"></a>Vorteile von Spracheingaben
 
-Die Spracheingabe ist eine natürliche Art, unsere Absichten zu kommunizieren. Voice ist besonders gut für Schnittstellen **Traversale** geeignet, da Sie Benutzern dabei helfen kann, mehrere Schritte einer Schnittstelle zu durchlaufen (ein Benutzer könnte bei der Betrachtung einer Webseite auf die Schaltfläche "zurück" klicken, anstatt auf die Schaltfläche "zurück" in der APP zu gelangen). Diese kleine Zeitersparnis wirkt sich **negativ** auf die Wahrnehmung der Benutzerfreundlichkeit durch den Benutzer aus und bietet Ihnen einen kleinen Wert für die Super Arbeit. Die Spracheingabe ist auch eine bequeme Eingabemethode, wenn unsere Arme nicht frei sind oder wir **mehrere Aufgaben gleichzeitig** erledigen. Auf Geräten, auf denen die Eingabe auf einer Tastatur schwierig ist, kann die **sprach Diktat** -Methode eine effiziente Alternative zum Eingeben von Text sein. In einigen Fällen, in denen der **Genauigkeits Bereich** für den Blick und die Bewegung eingeschränkt ist, kann Voice Ihnen helfen, die Absicht des Benutzers zu unterscheiden. 
+Die Spracheingabe ist eine natürliche Art, unsere Absichten zu kommunizieren. Voice ist besonders gut für Schnittstellen **Traversale** geeignet, da es Benutzern helfen kann, mehrere Schritte einer Schnittstelle zu durchlaufen. Ein Benutzer könnte bei der Betrachtung einer Webseite auf "zurückkehren" zurückgreifen, anstatt in der APP auf die Schaltfläche "zurück" zu klicken. Diese kleine Zeitersparnis wirkt sich **negativ** auf die Wahrnehmung der Benutzerfreundlichkeit durch den Benutzer aus und bietet Ihnen einen kleinen Wert für die Super Arbeit. Die Spracheingabe ist auch eine bequeme Eingabemethode, wenn unsere Arme nicht frei sind oder wir **mehrere Aufgaben gleichzeitig** erledigen. Auf Geräten, auf denen die Eingabe auf einer Tastatur schwierig ist, kann die **sprach Diktat** -Methode eine effiziente Alternative zum Eingeben von Text sein. In einigen Fällen, in denen der **Genauigkeits Bereich** für den Blick und die Bewegung eingeschränkt ist, kann Voice Ihnen helfen, die Absicht des Benutzers zu unterscheiden. 
 
 **Vorteile der Spracheingabe für den Benutzer**
 * Verkürzt den Zeitaufwand – das Endziel sollte effizienter erreicht werden.
 * Minimiert den Aufwand – Aufgaben sollten flüssiger und müheloser verlaufen.
 * Reduziert die kognitive Belastung – sie ist intuitiv, leicht zu erlernen und zu merken.
-* Sie ist sozialverträglich – sie sollte sich in Bezug auf das Verhalten in die gesellschaftlichen Normen einfügen.
+* Er ist gesellschaftlich akzeptabel und sollte mit den gesellschaftlichen Verhaltensnormen kompatibel sein.
 * Sie stellt eine Routine dar – die Spracheingabe kann leicht zu einem gewohnheitsmäßigen Verhalten werden.
 
 ### <a name="challenges-for-voice-input"></a>Herausforderungen bei der Spracheingabe
 
-Obwohl die Spracheingabe für viele verschiedene Anwendungen hervorragend ist, stellt Sie auch mehrere Herausforderungen dar. Wenn Sie sowohl die Vorteile als auch die Herausforderungen von Spracheingaben verstanden haben, können App-Entwickler intelligentere Entscheidungen treffen, wie und wann Spracheingaben verwendet werden sollen und wie Sie Ihre Benutzer gut gestalten können.
+Obwohl die Spracheingabe für viele verschiedene Anwendungen großartig ist, stellt Sie auch mehrere Herausforderungen dar. Wenn Sie sowohl die Vorteile als auch die Herausforderungen von Spracheingaben verstanden haben, können App-Entwickler intelligentere Entscheidungen treffen, wie und wann Spracheingaben verwendet werden sollen und wie Sie Ihre Benutzer gut gestalten können.
 
-**Spracheingabe für kontinuierliches Eingabe Steuer** Element Eine differenzierte Steuerung ist eine davon. Beispielsweise kann ein Benutzer sein Volume in der Musik-App ändern. Sie kann einfach "lauter" sagen, aber es ist nicht klar, wie viel lauter das System das Volume machen soll. Der Benutzer könnte sagen: "machen Sie es etwas lauter", aber "ein wenig" ist schwierig zu quantifizieren. Das Verschieben oder Skalieren von holograms mit Stimme ist ähnlich schwierig. 
+**Spracheingabe für kontinuierliches Eingabe Steuer** Element Eine differenzierte Steuerung ist eine davon. Beispielsweise kann ein Benutzer sein Volume in der Musik-App ändern. Sie kann "lauter" sagen, aber es ist nicht klar, wie viel lauter das System das Volume machen soll. Der Benutzer könnte sagen: "machen Sie es etwas lauter", aber "ein wenig" ist schwierig zu quantifizieren. Das Verschieben oder Skalieren von holograms mit Stimme ist ähnlich schwierig. 
 
 **Zuverlässigkeit der Spracheingabe Erkennung** Obwohl Spracheingabe Systeme besser und besser werden, werden Sie möglicherweise fälschlicherweise einen Sprachbefehl hören und interpretieren.
-Der Schlüssel besteht darin, dieser Herausforderung in Ihrer Anwendung zu begegnen, indem er dem Benutzer Feedback zur Verfügung stellt, wenn das System lauscht, und was das System verstanden hat, um Klarheit über potenzielle Probleme bei der ordnungsgemäßen Verwendung des Benutzers zu schaffen  
+Der Schlüssel besteht darin, die Herausforderung in Ihrer Anwendung zu beheben. Geben Sie Ihren Benutzern Feedback, wenn das System lauscht, und das, was das System verstanden hat, um potenzielle Probleme zu verdeutlichen, die die Benutzersprache verstehen.  
 
 **Spracheingabe in freigegebenen Leerzeichen** Die Stimme ist möglicherweise nicht in den Bereichen, die Sie für andere Personen freigeben, akzeptabel.
 Hier sind einige Beispiele:
-* Der Benutzer möchte möglicherweise keine anderen Personen stören (z. b. in einer stillen Bibliothek oder einem freigegebenen Büro).
+* Der Benutzer möchte möglicherweise keine anderen Benutzer stören (z. b. in einer stillen Bibliothek oder einem freigegebenen Büro).
 * Benutzer sind vielleicht nicht in der Öffentlichkeit,
 * Ein Benutzer ist möglicherweise unbequem, wenn er eine persönliche oder vertrauliche Nachricht (einschließlich Kenn Wörtern) einhört, während andere Benutzer lauschen.
 
-**Spracheingabe von eindeutigen oder unbekannten Wörtern** Probleme bei der Spracheingabe werden auch angezeigt, wenn Benutzer Wörter, die möglicherweise dem System unbekannt sind, wie z. b. Spitznamen, bestimmte slang-Wörter oder Abkürzungen, eingeben. 
+**Spracheingabe von eindeutigen oder unbekannten Wörtern** Probleme bei der Spracheingabe werden auch angezeigt, wenn Benutzer Wörter diktieren, die dem System möglicherweise unbekannt sind, wie z. b. Spitznamen, bestimmte Textmarken oder Abkürzungen. 
 
-**Erlernen von Sprachbefehlen** Das ultimative Ziel ist es, sich auf natürliche Weise mit Ihrem System zu Konversation, häufig verlassen sich apps jedoch auf bestimmte vordefinierte Sprachbefehle.
-Eine Herausforderung, die mit einem großen Satz von Sprachbefehlen verknüpft ist, besteht darin, Sie zu unterstützen, ohne den Benutzer zu überlasten und den Benutzern zu helfen, Sie beizubehalten. 
+**Erlernen von Sprachbefehlen** Das ultimative Ziel ist es, sich auf natürliche Weise mit Ihrem System zu Konversation, aber häufig basieren apps auf bestimmten vordefinierten Sprachbefehlen.
+Eine Herausforderung, die mit einem großen Satz von Sprachbefehlen verknüpft ist, besteht darin, Sie zu unterstützen, ohne den Benutzer zu überlasten und den Benutzer zu unterstützen. 
 
 <br>
 
@@ -262,11 +249,13 @@ Wenn die Spracherkennung richtig angewendet wird, versteht der Benutzer, **was e
 <br>
 
 ## <a name="top-things-users-should-know-about-speech-in-mixed-reality"></a>Wichtige Informationen zur Spracherkennung in Mixed Reality
-* Sagen Sie **„Auswählen“**, während Sie eine Schaltfläche anvisieren (Sie können dies überall verwenden, um auf eine Schaltfläche zu klicken).
-* Sie können in einigen Apps den **Bezeichnungsnamen einer Schaltfläche auf der App-Leiste** sagen, um eine Aktion auszuführen. Beim Betrachten einer App kann ein Benutzer z. B. den Befehl „Entfernen“ sagen, um die App aus der Umgebung zu entfernen (das spart Zeit, da die App nicht mit der Hand angeklickt werden muss).
-* Sie können initiieren, dass Cortana zuhört, indem Sie **„Hey Cortana“** sagen. Sie können ihr Fragen stellen („Hey Cortana, wie hoch ist der Eiffelturm“), sie zum Öffnen einer App auffordern („Hey Cortana, öffne Netflix“) oder ihr sagen, sie soll das Startmenü aufrufen („Hey Cortana, öffne das Startmenü“) und vieles mehr.
+
+* Sagen Sie **"Select"** , während Sie auf eine Schaltfläche abzielen. (Sie können hier eine Schaltfläche verwenden.)
+* Sie können in einigen Apps den **Bezeichnungsnamen einer Schaltfläche auf der App-Leiste** sagen, um eine Aktion auszuführen. Beispielsweise kann ein Benutzer bei der Betrachtung einer APP den Befehl "Remove" (entfernen) aufrufen, um die APP aus der Welt zu entfernen.
+* Sie können Cortana starten, indem Sie **"Hey Cortana" sagen.** Sie können ihr Fragen stellen („Hey Cortana, wie hoch ist der Eiffelturm“), sie zum Öffnen einer App auffordern („Hey Cortana, öffne Netflix“) oder ihr sagen, sie soll das Startmenü aufrufen („Hey Cortana, öffne das Startmenü“) und vieles mehr.
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>Häufig gestellte Fragen und Bedenken von Benutzern zur Spracheingabe
+
 * Was kann ich sagen?
 * Woher weiß ich, ob das System mich richtig verstanden hat?
    * Das System versteht meine Sprachbefehle immer wieder falsch.
@@ -277,14 +266,14 @@ Wenn die Spracherkennung richtig angewendet wird, versteht der Benutzer, **was e
 
 ## <a name="communication"></a>Kommunikation
 
-Für Anwendungen, die die von hololens bereitgestellten angepassten audioeingabeverarbeitungs-Optionen nutzen möchten, ist es wichtig, die verschiedenen [audiostreamkategorien](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) zu verstehen, die Ihre APP nutzen kann. Windows 10 unterstützt mehrere verschiedene streamingkategorien, und hololens nutzt drei dieser Möglichkeiten, um die benutzerdefinierte Verarbeitung zu ermöglichen, um die Qualität der Mikrofon Audioqualität zu optimieren, die auf Sprache, Kommunikation und andere zugeschnitten ist. diese kann für Umgebungs Umgebungs audioerfassungs Szenarien (d.h. "Camcorder") verwendet werden.
-* Die AudioCategory_Communications Stream-Kategorie wird für Anruf Qualität und-Erzähl Szenarien angepasst und stellt dem Client einen 16-Bit-Mono-Mono-Audiostream der Stimme des Benutzers zur Verfügung.
-* Die AudioCategory_Speech Stream-Kategorie ist für die Sprach-Engine hololens (Windows) angepasst und bietet einen 16-Bit-Mono-Mono-Datenstrom der Stimme des Benutzers. Diese Kategorie kann bei Bedarf von Sprachmodulen von Drittanbietern verwendet werden.
-* Die AudioCategory_Other Stream-Kategorie ist für die Audioaufzeichnung der Umgebungsumgebung angepasst und stellt dem Client einen Stereo-Audiostream mit 48 kHz 24 Bit bereit.
+Für Anwendungen, die die von hololens bereitgestellten angepassten audioeingabeverarbeitungs-Optionen nutzen möchten, ist es wichtig, die verschiedenen [audiostreamkategorien](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) zu verstehen, die Ihre APP nutzen kann. Windows 10 unterstützt mehrere verschiedene streamingkategorien, und hololens nutzt drei dieser Möglichkeiten, um die benutzerdefinierte Verarbeitung zur Optimierung der Mikrofon Audioqualität zu optimieren, die auf Sprache, Kommunikation und andere zugeschnitten ist. diese kann für Umgebungs Umgebungs-audioerfassungs Szenarien (d.h. "Camcorder") verwendet werden.
+* Die AudioCategory_Communications Stream-Kategorie ist für die Sprach-und Erzähl Szenarios angepasst und stellt dem Client einen 16-Bit-Mono-Mono-Audiodatenstrom des Benutzers zur Verfügung.
+* Die AudioCategory_Speech Stream-Kategorie ist für die Sprach-Engine hololens (Windows) angepasst und stellt einen 16-Bit-Mono-Mono-Datenstrom der Stimme des Benutzers bereit. Diese Kategorie kann bei Bedarf von Sprachmodulen von Drittanbietern verwendet werden.
+* Die AudioCategory_Other Stream-Kategorie ist für die Audioaufzeichnung der Umgebungsumgebung angepasst und stellt dem Client einen 48-Bit-Stereo Audiodatenstrom mit einer Größe von-Bit bereit.
 
 Die gesamte Audioverarbeitung ist Hardware beschleunigt. Dies bedeutet, dass die Features viel weniger Leistung als bei der Verarbeitung der hololens-CPU benötigen. Vermeiden Sie die Ausführung einer anderen audioeingabeverarbeitung auf der CPU, um die Akku Lebensdauer zu maximieren und die integrierte, offloaded audioeingabeverarbeitung zu nutzen.
 
-## <a name="languages"></a>Languages
+## <a name="languages"></a>Sprachen
 
 Hololens 2 [unterstützt mehrere Sprachen](https://docs.microsoft.com/hololens/hololens2-language-support). Beachten Sie, dass Sprachbefehle immer in der Anzeige Sprache des Systems ausgeführt werden, auch wenn mehrere Tastaturen installiert sind oder wenn apps versuchen, eine Spracherkennung in einer anderen Sprache zu erstellen.
 
@@ -292,7 +281,7 @@ Hololens 2 [unterstützt mehrere Sprachen](https://docs.microsoft.com/hololens/h
 
 Wenn Sie Probleme bei der Verwendung von "Select" und "Hey Cortana" haben, versuchen Sie, zu einem ruhigeren Bereich zu wechseln, die Ursache für Rauschen zu machen oder lauter zu sprechen. Zu diesem Zeitpunkt wird die Spracherkennung in hololens speziell für systemeigene Sprecher von USA Englisch optimiert und optimiert.
 
-Für Windows Mixed Reality Developer Edition, Version 2017, funktioniert die audioendpunkt-Verwaltungs Logik problemlos (immer), nachdem Sie sich nach der anfänglichen HMD-Verbindung beim PC-Desktop abgemeldet hat. Vor dem ersten Abmelden/in-Ereignis nach dem Durchlaufen von WMR OOBE könnte der Benutzer verschiedene Probleme mit der Audiofunktionalität aufweisen, von denen kein audiowechsel bis hin zu keinem audiowechsel stattfindet, je nachdem, wie das System vor dem ersten Herstellen einer Verbindung mit dem HMD eingerichtet wurde.
+Für Windows Mixed Reality Developer Edition, Version 2017, funktioniert die audioendpunkt-Verwaltungs Logik problemlos (immer), nachdem Sie sich nach der anfänglichen HMD-Verbindung beim PC-Desktop abgemeldet hat. Vor dem ersten Abmelden/in-Ereignis nach dem Durchlaufen von WMR OOBE könnte der Benutzer verschiedene Probleme mit der Audiofunktionalität aufweisen, von denen kein audiowechsel bis hin zu keinem audiowechsel stattfindet, je nachdem, wie das System eingerichtet wurde, bevor die HMD zum ersten Mal eine Verbindung herstellt.
 
 <br>
 
@@ -303,10 +292,10 @@ Mit **[mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** können S
 
 * [Befehl "mrtk-Voice"](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
 
-
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Spracheingabe in DirectX](../develop/native/voice-input-in-directx.md)

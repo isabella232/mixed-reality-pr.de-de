@@ -6,17 +6,18 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Hand Coach, immersives Headset, mrtk, Hands, helfende Hand, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702346"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847961"
 ---
 # <a name="hand-coach"></a>Hand Coach
+
 ![Beispiel: Hand Trainer](images/HandCoach/MRTK_handCoach.jpg)<br>
 
-Hand Coach ist 3D-modellierte Hände, die ausgelöst werden, wenn das System die Hände des Benutzers nicht erkennt. Dies wird als "Lehr Komponente" implementiert, die den Benutzer unterstützt, wenn die Geste nicht gelehrt wurde. Wenn Benutzer die angegebene Geste für einen Zeitraum nicht durchgeführt haben, wird die Hand mit einer Verzögerung Schleife. Der handbus könnte verwendet werden, um das Drücken einer Schaltfläche oder das Auswählen eines holograms darzustellen.  
+Der handtrainer löst 3D-modellierte Hände aus, wenn das System die Hände des Benutzers nicht erkennt. Diese Funktion ist eine "Lehr Komponente", die den Benutzer unterstützt, wenn die Geste nicht gelehrt wurde. Wenn Benutzer die angegebene Geste für einen bestimmten Zeitraum nicht ausgeführt haben, wird die Hand mit einer Verzögerung Schleife. Der handbus könnte verwendet werden, um das Drücken einer Schaltfläche oder das Auswählen eines holograms darzustellen.  
 
 ## <a name="hand-coach-provided"></a>Hand Trainer bereitgestellt
 
@@ -62,11 +63,11 @@ Das aktuelle Interaktionsmodell stellt eine Vielzahl von Gesten Steuerelementen 
 
 ## <a name="design-concepts"></a>Entwurfskonzepte
 
-Für Hololens2 haben wir die manuellen Interaktionen auf der Grundlage von instanziellen und natürlichen Handbewegungen entworfen. Wir sind der Meinung, dass diese für die meisten Benutzer intuitiv sind und daher keine dedizierten Gesten lernmomente geschaffen haben. Stattdessen haben wir den Hand-Bus erstellt, um Benutzer zu unterstützen, die möglicherweise hängen bleiben oder mit der Interaktion mit holograms nicht vertraut sind. Weitere Informationen zu diesen Gesten Ohne einen Lern Moment haben wir gespürt, dass Benutzern angezeigt wird, wie Sie eine Aktion durchführen können, indem Sie Ihnen zeigen, dass Sie die beste Option ist. In unseren Studien stellten wir fest, dass Benutzer in der Lage waren, die Geste herauszufinden, aber eine kleine Anleitung benötigten. Wenn Sie feststellen, dass ein Benutzer für einen bestimmten Zeitraum nicht mit einem Objekt interagiert, wird ein Hand Trainer ausgelöst, der die korrekte Hand-und Finger Platzierung demonstriert. 
+Für Hololens2 haben wir die manuellen Interaktionen auf der Grundlage von instanziellen und natürlichen Handbewegungen entworfen. Wir sind der Meinung, dass diese für die meisten Benutzer intuitiv sind, daher haben wir keine dedizierten Gesten lernmomente erstellt. Stattdessen haben wir den Hand-Bus erstellt, um Benutzern zu helfen, sich über diese Gesten zu informieren, wenn Sie hängen bleiben oder mit – Hologramm-Interaktionen nicht vertraut sind. Ohne einen Lern Moment haben wir gespürt, dass Benutzern angezeigt wird, wie Sie eine Aktion durchführen können, indem Sie Ihnen zeigen, dass Sie die beste Option ist. Wir haben festgestellt, dass die Benutzer die Geste ermitteln konnten, aber eine kleine Anleitung benötigten. Wenn Sie feststellen, dass ein Benutzer für einen bestimmten Zeitraum nicht mit einem Objekt interagiert, wird ein Hand Trainer ausgelöst, der die korrekte Hand-und Finger Platzierung demonstriert. 
 
 ### <a name="intuitive"></a>Intuitiven
 
-Bei der Animation sollten Sie offensichtlich sein und sollten keine Verwirrung verursachen. Die Animation der Hände ist eine Darstellung der Geste, die Sie dem Benutzer zur Veranschaulichung des Zwecks des zwecks vermitteln möchten. 
+Bei der Animation sollten Sie offensichtlich sein und sollten keine Verwirrung verursachen. Die Hand Animation ist eine Darstellung der Geste, die Sie zum Verständnis des Benutzers auffordern. 
 
 Wenn Sie z. b. möchten, dass ein Benutzer auf eine Schaltfläche klickt, wird eine Hand Taste gedrückt.
 
@@ -75,7 +76,7 @@ Wenn Sie z. b. möchten, dass ein Benutzer auf eine Schaltfläche klickt, wird e
 
 ### <a name="hand-scale"></a>Hand Skala
 
-Wir haben verschiedene Hand Größen mit den Menüs für die Benutzeroberfläche getestet, und Sie fühlten, dass Sie, wenn die Hände für die Größe zutreffen, eine wohlwollende Vorstellung hatten, aber wenn Sie zu klein waren, war es schwierig, die Geste zu erkennen und zu verstehen. 
+Wir haben verschiedene Hand Größen mit den Menüs für die Benutzeroberfläche getestet und sich gefühlt, wenn die Hände für die Größe zutreffen. Wenn Sie zu klein waren, war es schwierig, die Geste zu erkennen und zu verstehen. 
 
 **Voice-over und Hand**
 
@@ -93,7 +94,7 @@ Wir haben eine Maya-Datei für eine manipulierte Hand bereitgestellt, die für I
 
 **Empfohlenes Authoring Tool**
 
-Bei 3D-Künstlern entscheiden sich viele für die Verwendung [von Autodesk Maya, die wiederum hololens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) zum Transformieren der Art und Weise der Erstellung von Assets verwenden können. Die angegebene handdatei ist eine Maya-Binärdatei. Daher empfiehlt es sich, Maya zu verwenden, um die Hände zu animieren und zu exportieren. Wenn Sie lieber ein anderes 3D-Programm verwenden möchten, finden Sie hier eine <b>. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Laden Sie HandCoachMRTK_FBX.zip herunter </a> , um ein eigenes Controller-Setup zu erstellen. 
+Bei 3D-Künstlern entscheiden sich viele für die Verwendung [von Autodesk Maya, die hololens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) zum Transformieren der Art und Weise verwenden können, wie Assets erstellt werden. Die angegebene handdatei ist eine Maya-Binärdatei. Daher empfiehlt es sich, Maya zu verwenden, um die Hände zu animieren und zu exportieren. Wenn Sie lieber ein anderes 3D-Programm verwenden möchten, finden Sie hier eine <b>. FBX</b>: <a href="files/HandCoachMRTK_FBX.zip"> Laden Sie HandCoachMRTK_FBX.zip herunter </a> , um ein eigenes Controller-Setup zu erstellen. 
 
 Wenn Sie die herunterladbare Maya-handdatei verwenden, wird empfohlen, die Hände in Unity auf 0,6 zu skalieren.
 
@@ -105,9 +106,9 @@ Wenn Sie die herunterladbare Maya-handdatei verwenden, wird empfohlen, die Händ
 *   Zwei über gebene Dateien sind im Maya ASCII-Format verfügbar.
 *    Rechts und Links sind im Format "Maya Binary" verfügbar.
 *   Festlegen der Maya-Datei auf 24 fps
-*   Innerhalb der Datei gibt es eine linke und Rechte Seite, die für zwei Hand-oder einstellige Gesten verwendet werden kann. Die Rechte Seite ist standardmäßig nur sichtbar.
+*   Innerhalb der Datei gibt es eine linke und eine rechte Seite, die für zwei Hand-oder einstellige Gesten verwendet werden kann. Die Rechte Seite ist standardmäßig nur sichtbar.
 *   Es wird empfohlen, einen Puffer mit ungefähr 10 Frames am Anfang und am Ende für die gestreamungen zu belassen.
-*   Wenn Sie ein-Objekt mit einem angegebenen Ziel animieren, empfiehlt es sich, ein Standardfeld zu animieren oder NULL zu animieren.
+*   Wenn Sie ein Objekt mit einem angegebenen Ziel animieren, empfiehlt es sich, ein Standardfeld zu animieren oder NULL zu animieren.
 *   Wenn die Hand ein physisches Objekt, wie z. b. ein Feld, animiert, empfiehlt es sich, die Übersetzung nicht in Maya zu animieren, sondern in Unity oder im Code zu animieren.
 *   Die sichtbare Animation sollte 1,5 Sekunden sein, damit aussagekräftige Informationen übermittelt werden können.
 *   Wenn Sie mit ihrer Animation zufrieden sind:
@@ -146,31 +147,34 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 ## <a name="implementing-hands-into-your-unity-project"></a>Implementieren von Hand in Ihr Unity-Projekt
 
 ### <a name="best-practices"></a>Bewährte Methoden
-*    Es wird empfohlen, die Hände in Unity auf 0,6 zu skalieren.
-*   Hände sollten zweimal abgespielt werden und, wenn Sie nicht abgeschlossen ist, bis zum Abschluss der Bewegung fortlaufend. Die Hände sollten zweimal Schleifen, um sicherzustellen, dass der Benutzer Zeit hat, sich zu registrieren und die Geste anzuzeigen. Die Hände sollten Zwischenschleifen ein-und ausgeblendet werden. 
- *  Wenn Benutzer Hände durch HL2-Kameras sichtbar sind, die Benutzer jedoch nicht die erforderliche Interaktion durchlaufen, werden die Hände nach 10 Sekunden angezeigt.
+
+* Es wird empfohlen, die Hände in Unity auf 0,6 zu skalieren.
+* Hände sollten zweimal abgespielt werden und, wenn Sie nicht abgeschlossen ist, bis zum Abschluss der Bewegung fortlaufend. Die Hände sollten zweimal Schleifen, um sicherzustellen, dass der Benutzer Zeit hat, sich zu registrieren und die Geste anzuzeigen. Die Hände sollten Zwischenschleifen ein-und ausgeblendet werden. 
+ *  Wenn Benutzer Hände durch HL2-Kameras sichtbar sind, die Benutzer aber nicht die erforderliche Interaktion durchlaufen, werden die Hände nach 10 Sekunden angezeigt.
 *   Wenn Benutzer Hände nicht durch HL2 Kameras sichtbar sind, werden die Hände nach 5 Sekunden angezeigt.  
 *   Wenn Benutzer Hände in der Mitte der Animation von HL2-Kameras sichtbar sind, wird die Animation vervollständigt und ausgeblendet.
 *   Wenn Sie Voice over einschließen, empfehlen wir, dass es der Handbewegung entspricht.
-*   Wenn Sie die Hände mindestens einmal gelehrt haben, wiederholen Sie die Geste nur, wenn Sie festgestellt hat, dass der Benutzer nicht mehr vorhanden ist.
+*   Wenn Sie die Hände mindestens einmal gelehrt haben, wiederholen Sie die Geste nur, wenn erkannt wird, dass der Benutzer nicht mehr reagiert.
 *   Wenn bestimmte Finger-/uhrzeitanpositionen kritisch sind, stellen Sie sicher, dass Benutzer diese Nuancen in der Animation eindeutig sehen können. Probieren Sie die Hände, damit die wichtigsten Teile klar sichtbar sind. 
-* Wenn Sie auf eine gewisse Verzerrung achten, müssen Sie die Qualitätseinstellungen der Unity erhöhen, um die Menge der Knochen zu erhöhen. 
+* Wenn Sie feststellen, dass Sie eine Verzerrung haben, müssen Sie die Qualitätseinstellungen der Unity erhöhen, um die Anzahl der Knochen zu erhöhen. 
  Wechseln Sie zu Unity-> Projekteinstellungen > Quality > andere > Blend-Gewichtungen. Stellen Sie sicher, dass "4 Knochen" ausgewählt sind, um glatte Gelenke anzuzeigen. 
 
    ![Beispiel: Fenster "Projekteinstellungen"](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>Was Sie vermeiden sollten
+
 * Skalieren der Hände zu groß
 * die Hände werden dem Benutzer zu nah platziert.
 * Hände sollten nur einmal vermittelt werden. Über lehrungen können Verwirrung und Verwirrung verursachen.
-*   Wenn Sie es in Unity einbinden möchten, laden Sie den aktuellen mrtk hier herunter: https://github.com/microsoft/MixedRealityToolkit-Unity
+*   Wenn Sie es in Unity einbinden, laden Sie den aktuellen mrtk hier herunter: https://github.com/microsoft/MixedRealityToolkit-Unity
     *   Material: Teaching_Hand2
     *   Skripts: siehe mrtk Guidelines for <a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md"> mrtk Hand Coach </a>
     *   Pro-Projekt-Einstellung
         *   Szene, die auf UWP festgelegt ist: Anweisungen finden Sie im [Unity-Projekt](../develop/unity/Configure-Unity-Project.md) für Windows Mixed Reality.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
+
 * [Interaktion: Grundlagen](interaction-fundamentals.md)
 * [Asset-Erstellungs Prozess](asset-creation-process.md)
 * [Gesten](../gestures.md)

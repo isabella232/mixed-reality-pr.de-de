@@ -1,26 +1,26 @@
 ---
 title: Shader
-description: Der mrtk-Standard-Shader bietet verschiedene Typen von visuellen Effekten, die mit holograms verwendet werden können.
+description: Der Standard-Shader von Mixed Reality Toolkit bietet verschiedene Typen von visuellen Effekten, die mit holograms verwendet werden können.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Shader, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, visuelle Effekte
-ms.openlocfilehash: ced2d62f9304a8e6238febb8c485449f2e10b135
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703346"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848244"
 ---
 # <a name="shader"></a>Shader
 
 ![Shader](images/UX_Hero_StandardShader.jpg)
 
-Da Holographic-Objekte in der realen Umgebung mit physischen Objekten kombiniert werden, ist es wichtig, den Benutzern visuelle Hinweise bereitzustellen. Der mrtk-Standard-Shader bietet verschiedene Typen von visuellen Effekten, die mit holograms verwendet werden können. Das mrtk-Standard-Schattierung-System verwendet einen einzelnen, flexiblen Shader, mit dem visuelle Elemente wie der Standard-Shader von Unity erzielt werden können, die [grundlegenden Entwurfssystem Prinzipien](https://www.microsoft.com/design/fluent/#/)implementiert und auf gemischten Reality-Geräten leistungsfähig ist.
+Da Holographic-Objekte in der realen Umgebung mit physischen Objekten kombiniert werden, ist es wichtig, den Benutzern visuelle Hinweise bereitzustellen. Der Standard-Shader von Mixed Reality Toolkit bietet verschiedene Typen von visuellen Effekten für die Verwendung mit holograms. Das Schattierungs System verwendet einen einzelnen, flexiblen Shader, um visuelle Elemente zu erzielen, die dem Standard-Shader von Unity ähneln. Der Shader implementiert [fließende Entwurfs System Prinzipien](https://www.microsoft.com/design/fluent/#/) und bleibt auf gemischten Reality-Geräten leistungsfähig.
 <br>
 
-## <a name="examples-of-visual-effects-using-mrtk-standard-shader"></a>Beispiele von visuellen Effekten mit dem mrtk-Standard-Shader 
+## <a name="examples-of-visual-effects-using-mrtk-mixed-reality-toolkit-standard-shader"></a>Beispiele für visuelle Effekte mit dem mrtk-Standard-Shader (Mixed Reality Toolkit) 
 :::row:::
     :::column:::
        ![Verschieben](images/UX_Button_Affordance_ProximityLight.jpg)<br>
@@ -36,16 +36,15 @@ Da Holographic-Objekte in der realen Umgebung mit physischen Objekten kombiniert
 
 ---
 
-## <a name="mrtk-standard-shader-in-mrtk-mixed-reality-toolkit-for-unity"></a>Mrtk-Standard-Shader in mrtk (Mixed Reality Toolkit) für Unity
+## <a name="standard-shader-in-mrtk-for-unity"></a>Standard-Shader in mrtk für Unity
 
 * [Mrtk-Standard-Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
-
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

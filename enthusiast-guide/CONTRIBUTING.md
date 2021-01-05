@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691434"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865435"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Beitrag zum Mixed Reality-Enthusiasten-Leitfaden
 
@@ -167,7 +167,7 @@ Während der Bearbeitung in GitHub über einen Webbrowser können Sie die Regist
 >[!NOTE]
 >Die Vorschau der Änderungen auf review.docs.Microsoft.com ist nur für Microsoft-Mitarbeiter verfügbar.
 
-Microsoft-Mitarbeiter: Nachdem Ihre Beiträge in der Verzweigung "Master" zusammengeführt wurden, können Sie den Inhalt überprüfen, bevor er in der Öffentlichkeit veröffentlicht wird https://review.docs.microsoft.com/windows/mixed-reality?branch=master . Suchen Sie Ihren Artikel mithilfe des Inhaltsverzeichnisses in der linken Spalte.
+Microsoft-Mitarbeiter: Nachdem Ihre Beiträge in der Verzweigung "Master" zusammengeführt wurden, können Sie den Inhalt überprüfen, bevor er in der Öffentlichkeit veröffentlicht wird https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master . Suchen Sie Ihren Artikel mithilfe des Inhaltsverzeichnisses in der linken Spalte.
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>Bearbeiten im Browser und bearbeiten mit einem Desktop Client
 

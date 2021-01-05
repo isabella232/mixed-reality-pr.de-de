@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Slate, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 85aa91793da9022080c95775bbfd1e4775ea05d8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703330"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848223"
 ---
 # <a name="slate"></a>Filmklappe
 
 ![Filmklappe](images/UX_Hero_Slate.jpg)
 
-Ein Slate ist ein schlankes Fenster Stil-Steuerelement zum Anzeigen von 2D-Inhalt. Beispielsweise können Sie Sie zum Anzeigen von nur-Text, Bildern oder Dokumenten verwenden. Er bietet eine abzähl Bare Titelleiste mit Schaltflächen für "Follow Me (Tag-Along)" und "Close"-Funktionalität. Der Inhalt innerhalb eines Slate-Geräts kann wie ein physischer Touchscreen per [direkter Bearbeitung](direct-manipulation.md#2d-slate-interaction) gescrollt werden. Sie können auch "Blick", "Luft tippen" und "ziehen" oder den Zeiger eines Bewegungs Controllers verwenden.
+Ein Slate ist ein schlankes Fenster Stil Steuerelement für die Anzeige von 2D-Inhalten wie nur-Text, Bildern oder Dokumenten. Ein Slate bietet eine abzähl Bare Titelleiste mit Schaltflächen für "Follow Me (Tag-Along)" und "Close"-Funktionalität. Der Inhalt innerhalb eines Slate-Geräts kann wie ein physischer Touchscreen per [direkter Bearbeitung](direct-manipulation.md#2d-slate-interaction) gescrollt werden. Sie können auch "Blick", "Luft tippen" und "ziehen" oder den Zeiger eines Bewegungs Controllers verwenden.
 
 <br>
 
@@ -31,7 +31,7 @@ Ein Slate ist ein schlankes Fenster Stil-Steuerelement zum Anzeigen von 2D-Inhal
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

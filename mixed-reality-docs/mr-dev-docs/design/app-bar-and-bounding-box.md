@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, App-Leiste, Begrenzungsfeld, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703056"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847648"
 ---
 # <a name="bounding-box-and-app-bar"></a>Begrenzungsrahmen und App-Leiste
 ![Das Begrenzungs Zeichen ist die Standardschnittstelle für die Objekt Bearbeitung in gemischter Realität.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,12 +19,12 @@ ms.locfileid: "94703056"
 
 ## <a name="what-is-the-bounding-box"></a>Was ist das umgebende Feld?
 
-Das Begrenzungs Zeichen ist die Standardschnittstelle für die Objekt Bearbeitung in gemischter Realität. Der Benutzer erhält eine Kosten, die das Objekt momentan anpassbar ist. Bei hololens 2 funktioniert das umgebende Feld mit direkter Hand Manipulation und antwortet auf die Nähe des Benutzers. Es zeigt visuelles Feedback, um dem Benutzer zu helfen, den Abstand zum Objekt zu erkennen.
+Das Begrenzungs Zeichen ist die Standardschnittstelle für die Objekt Bearbeitung in gemischter Realität. Diese Funktion bietet dem Benutzer einen visuellen Hinweis darauf, dass das Objekt derzeit anpassbar ist. Bei hololens 2 funktioniert das umgebende Feld mit direkter Hand Manipulation und antwortet auf die Nähe des Benutzers. Es zeigt visuelles Feedback, um dem Benutzer zu helfen, den Abstand zum Objekt zu erkennen.
 
 :::row:::
     :::column:::
         ### <a name="scaling-an-objectbr"></a>Skalieren eines Objekts<br>
-        In den Ecken des umgebenden Felds wird dem Benutzer mitgeteilt, dass das Objekt skaliert werden kann. Die Handles folgen einem weit verbreiteten Muster zur Anpassung der Skalierung. Diese visuelle Visualisierung zeigt Benutzern den gesamten Bereich des Objekts an – auch dann, wenn Sie außerhalb eines Anpassungsmodus nicht sichtbar sind. Dies ist besonders wichtig, da das Objekt, das an ein anderes Objekt oder eine andere Oberfläche angedockt ist, sich so verhält, als ob es sich um ein Leerzeichen handelt, das nicht vorhanden sein sollte.<br>
+        In den Ecken des umgebenden Felds wird dem Benutzer mitgeteilt, dass das Objekt skaliert werden kann. Die Handles folgen einem weit verbreiteten Muster zur Anpassung der Skalierung. Dieser visuelle Hinweis zeigt Benutzern den gesamten Bereich des Objekts an – auch dann, wenn Sie außerhalb eines Anpassungsmodus nicht sichtbar sind. Ohne diese Funktion kann ein an ein anderes Objekt oder eine andere Oberfläche angedockte Objekt scheinbar so aussehen, als würde es sich in diesem Bereich befinden.<br>
         <br>
         *Video Schleife: Skalieren eines Objekts per Begrenzungs Rahmen*
     :::column-end:::
@@ -54,7 +54,7 @@ Das Begrenzungs Zeichen ist die Standardschnittstelle für die Objekt Bearbeitun
 :::row:::
     :::column:::
         ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Visuelles Feedback in der Nähe von hololens 2<br>
-        Auf hololens 2 gibt es einen zusätzlichen visuellen Hinweis, der die Wahrnehmung der Tiefe des Benutzers unterstützt. Ein Ring in der Nähe des fingerabbilds wird angezeigt und herunterskaliert, wenn sich der Fingertipp näher an das Objekt anpasst. Der Ring wird schließlich in einen Punkt konvergiert, wenn der gedrückte Zustand erreicht wird. Diese visuelle Visualisierung unterstützt den Benutzer dabei, zu verstehen, wie weit Sie aus dem-Objekt stammen.<br>
+        Auf hololens 2 gibt es einen zusätzlichen visuellen Hinweis, der die Wahrnehmung von tiefen durch den Benutzer unterstützen kann. Ein Ring in der Nähe des fingerabbilds wird angezeigt und herunterskaliert, wenn sich der Fingertipp näher an das Objekt anpasst. Der Ring wird schließlich in einen Punkt konvergiert, wenn der gedrückte Zustand erreicht wird. Diese visuelle Visualisierung unterstützt den Benutzer dabei, zu verstehen, wie weit Sie aus dem-Objekt stammen.<br>
         <br>
         *Video Schleife: Beispiel für visuelles Feedback basierend auf der Nähe eines umgebenden Felds*
     :::column-end:::
@@ -74,12 +74,12 @@ Das Begrenzungs Zeichen ist die Standardschnittstelle für die Objekt Bearbeitun
 
 ## <a name="what-is-the-app-bar"></a>Was ist die APP-Leiste?
 
-Die APP-Leiste ist ein Menü auf Objektebene, das eine Reihe von Schaltflächen enthält, die am unteren Rand der Begrenzungen eines holograms angezeigt werden. Dieses Muster wird häufig verwendet, um Benutzern das Entfernen und Anpassen von holograms zu ermöglichen. Die APP-Leiste wurde primär als eine Möglichkeit zum Verwalten von platzierten Objekten in der Umgebung eines Benutzers entwickelt. In Verbindung mit dem umgebenden Feld hat ein Benutzer vollständige Kontrolle darüber, wo und wie Objekte in gemischter Realität ausgerichtet werden.
+Die APP-Leiste ist ein Menü auf Objektebene, das eine Reihe von Schaltflächen enthält, die am unteren Rand der Grenzen eines holograms angezeigt werden. Dieses Muster wird häufig verwendet, um Benutzern das Entfernen und Anpassen von holograms zu ermöglichen. Die APP-Leiste wurde primär als eine Möglichkeit zum Verwalten von platzierten Objekten in der Umgebung eines Benutzers entwickelt. In Verbindung mit dem umgebenden Feld hat ein Benutzer vollständige Kontrolle darüber, wo und wie Objekte in gemischter Realität ausgerichtet werden.
 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>Die APP-Leiste folgt dem Benutzer.<br>
-        Da dieses Muster mit Objekten verwendet wird, die in der Welt gesperrt sind, wird die APP-Leiste immer auf der Seite der Objekte angezeigt, die dem Benutzer am nächsten ist, wenn sich der Benutzer um das Objekt bewegt wird. Obwohl dies kein Abgleich ist, erzielt es effektiv dasselbe Ergebnis. verhindern, dass die Position eines Benutzers Funktionen sperrt oder blockiert, die andernfalls an einem anderen Speicherort in Ihrer Umgebung verfügbar wären. <br>
+        Da dieses Muster mit Objekten verwendet wird, die in der Welt gesperrt sind, wird die APP-Leiste immer auf der Seite der Objekte angezeigt, die dem Benutzer am nächsten ist, wenn sich der Benutzer um das Objekt bewegt wird. Diese Funktion kann zwar nicht technisch abgerechnet werden, aber das gleiche Ergebnis erzielt. Verhindern, dass die Position eines Benutzers Funktionen sperrt oder blockiert, die andernfalls an einem anderen Speicherort in Ihrer Umgebung verfügbar wären. <br>
         <br>
         *Video Schleife: Durchlaufen eines Hologram, der APP-Leiste folgt*
     :::column-end:::
@@ -93,7 +93,7 @@ Die APP-Leiste ist ein Menü auf Objektebene, das eine Reihe von Schaltflächen 
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Begrenzungsfeld in mrtk (Mixed Reality Toolkit) für Unity
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts und Prefabs für das umgebende Feld und die APP-Leiste bereit. Sie können ein Begrenzungsfeld hinzufügen, indem Sie das BoundingBox.cs-Skript einfach einem beliebigen Objekt zuweisen.
+**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts und Prefabs für das umgebende Feld und die APP-Leiste bereit. Sie können ein Begrenzungsfeld hinzufügen, indem Sie das BoundingBox.cs-Skript einem beliebigen Objekt zuweisen.
 
 * [Mrtk-Begrenzungsfeld](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
 
@@ -103,7 +103,7 @@ Die APP-Leiste ist ein Menü auf Objektebene, das eine Reihe von Schaltflächen 
 ---
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

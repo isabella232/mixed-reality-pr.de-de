@@ -6,29 +6,28 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, Cues, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Audio
-ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: fb7004c22602683e4edb1e38784cac5c0b7479c4
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703226"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847862"
 ---
 # <a name="interactable-object"></a>Interaktionsfähiges Objekt
 
 ![Objekte mit Interaktivität](images/UX_Hero_Interactable.jpg)
 
-Eine Schaltfläche ist lange eine Metapher, die zum Auslösen eines Ereignisses in der 2D-abstrakten Welt verwendet wird. In der dreidimensionalen Mixed Reality-Welt müssen wir nicht mehr auf diese Abstraktions Welt beschränkt werden. Dabei kann es sich um ein Objekt handeln, das ein **Objekt** ist, das ein Ereignis auslöst. Ein Objekt, das sich in der Tabelle befindet, kann als beliebiger von einem Kaffeebecher in der Tabelle dargestellt werden. Wir verwenden weiterhin herkömmliche Schaltflächen in bestimmten Situationen, z. b. in der Dialogfeld Benutzeroberfläche. Die visuelle Darstellung der Schaltfläche hängt vom Kontext ab.
+Eine Schaltfläche ist lange eine Metapher, die zum Auslösen eines Ereignisses in der 2D-abstrakten Welt verwendet wird. In der dreidimensionalen Mixed Reality-Welt müssen wir nicht mehr auf diese Abstraktions Welt beschränkt werden. Dabei kann es sich um ein Objekt handeln, das ein **Objekt** ist, das ein Ereignis auslöst. Ein Objekt mit Interaktionen kann alles von einem Kaffeebecher in einer Tabelle bis zu einer Sprechblase in Midair sein. Wir verwenden weiterhin herkömmliche Schaltflächen in bestimmten Situationen, z. b. in der Dialogfeld Benutzeroberfläche. Die visuelle Darstellung der Schaltfläche hängt vom Kontext ab.
 
 <br>
 
 ---
 
-
 ## <a name="important-properties-of-the-interactable-object"></a>Wichtige Eigenschaften des Interaktionen-Objekts
 
 ### <a name="visual-cues"></a>Visuelle Hinweise
 
-Visuelle Hinweise sind sensorische Hinweise, die vom visuellen System während der visuellen Darstellung vom visuellen System empfangen werden. Da das visuelle System in vielen Arten, insbesondere bei Menschen, dominant ist, stellen visuelle Hinweise eine große Informationsquelle dar, in der die Welt wahrgenommen wird.
+Visuelle Hinweise sind Sinnes Hinweise von Licht, die im Auge genommen werden und während der visuellen Wahrnehmung vom visuellen System verarbeitet werden. Da das visuelle System in vielen Arten, insbesondere bei Menschen, dominant ist, stellen visuelle Hinweise eine große Informationsquelle dar, in der die Welt wahrgenommen wird.
 
 Da die Holographic-Objekte in gemischter Realität mit der realen Umgebung kombiniert werden, kann es schwierig sein, die Objekte zu verstehen, mit denen Sie interagieren können. Für alle Objekte, die sich in der Benutzersprache befinden, ist es wichtig, für jeden Eingabe Zustand differenzierte visuelle Hinweise bereitzustellen. Dadurch kann der Benutzer verstehen, welcher Teil ihrer Benutzeroberflächen Interaktionen ist, und der Benutzer wird mit einer konsistenten Interaktions Methode vertraut.
 
@@ -38,7 +37,7 @@ Da die Holographic-Objekte in gemischter Realität mit der realen Umgebung kombi
 
 ### <a name="far-interactions"></a>Weite Interaktionen
 
-Für alle Objekte, die der Benutzer mit dem Blick auf "Blick", "Hand Ray" und "Motion Controller" interagieren kann, empfiehlt es sich, einen anderen visuellen Hinweis auf die drei Eingabe Zustände zu haben:
+Für alle Objekte, die der Benutzer mit dem Blick auf "Blick", "Hand Strahl" und "Bewegungs Controller" interagieren kann, empfiehlt sich die Verwendung eines anderen visuellen Objekts für diese drei Eingabe Zustände:
 
 :::row:::
     :::column:::
@@ -65,9 +64,9 @@ Für alle Objekte, die der Benutzer mit dem Blick auf "Blick", "Hand Ray" und "M
 
 ---
 
-Sie können Techniken wie z. b. Hervorhebung oder Skalierung verwenden, um visuelle Hinweise für den Eingabe Zustand des Benutzers bereitzustellen. In gemischter Realität finden Sie die Beispiele für die Visualisierung unterschiedlicher Eingabe Zustände im Startmenü und mit den Schaltflächen der APP-Leiste. 
+Sie können Techniken wie z. b. Hervorhebung oder Skalierung verwenden, um visuelle Hinweise für den Eingabe Zustand des Benutzers bereitzustellen. In gemischter Realität finden Sie Beispiele für die Visualisierung verschiedener Eingabe Zustände im Startmenü und mit den Schaltflächen der APP-Leiste. 
 
-So sehen diese Zustände auf einer **Holographic-Schaltfläche** aus:
+Diese Zustände sehen auf einer **Holographic-Schaltfläche** wie folgt aus:
 
 :::row:::
     :::column:::
@@ -90,12 +89,12 @@ So sehen diese Zustände auf einer **Holographic-Schaltfläche** aus:
 
 ### <a name="near-interactions-direct"></a>Near Interaktionen (Direct) 
 
-Hololens 2 unterstützt die Eingabe von Handgelenk Nachverfolgung, mit der Sie mit Objekten interagieren können. Ohne haptisches Feedback und eine perfekte Tiefe Wahrnehmung kann es manchmal schwierig sein zu wissen, wie weit die Hand von einem Objekt entfernt ist oder ob Sie es berühren. Es ist wichtig, genügend visuelle Hinweise bereitzustellen, um den Status des Objekts und insbesondere den Zustand ihrer Hände in Bezug auf das Objekt zu übermitteln.
+Hololens 2 unterstützt die Eingabe von Handgelenk Nachverfolgung, mit der Sie mit Objekten interagieren können. Ohne haptisches Feedback und eine perfekte Tiefe Wahrnehmung kann es schwierig sein, zu wissen, wie weit die Hand von einem Objekt entfernt ist oder ob Sie es berühren. Es ist wichtig, genügend visuelle Hinweise bereitzustellen, um den Status des Objekts zu übermitteln, insbesondere den Zustand ihrer Hände basierend auf diesem Objekt.
 
-Verwenden Sie visuelles Feedback, um Folgendes zu kommunizieren:
+Verwenden Sie visuelles Feedback, um die folgenden Zustände zu kommunizieren:
 * **Default (Observation)**: standardmäßiger Leerlauf Status des Objekts.
 * **Hover**: Wenn eine Hand sich in der Nähe eines Hologramms befindet, ändern Sie die visuellen Elemente, um zu kommunizieren. 
-* **Entfernung und Punkt der Interaktion**: Wenn die Hand ein Hologramm nähert, entwerfen Sie das Feedback, um den projizierten Interaktionspunkt zu kommunizieren, und wie weit von dem Objekt der Finger ist.
+* **Entfernung und Punkt der Interaktion**: Wenn die Hand ein Hologramm nähert, entwerfen Sie Feedback, um den projizierten Interaktionspunkt zu kommunizieren, und wie weit das Objekt den Finger hat.
 * **Kontakt beginnt**: Ändern der visuellen Elemente (hell, Farbe), um zu kommunizieren, dass eine Fingereingabe aufgetreten ist
 * **Verstanden**: Ändern von visuellen Elementen (hell, Farbe), wenn das Objekt erfasst wird
 * **Kontakt Ende**: Ändern der visuellen Elemente (hell, Farbe), wenn die Fingereingabe beendet wurde
@@ -170,7 +169,7 @@ Eine [Schaltfläche in hololens 2](https://microsoft.github.io/MixedRealityToolk
 :::row:::
     :::column:::
         ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Der visuelle Hinweis "Ring" auf hololens 2<br>
-        Auf hololens 2 gibt es einen zusätzlichen visuellen Hinweis, der die Wahrnehmung der Tiefe des Benutzers unterstützt. Ein Ring in der Nähe des fingerabbilds wird angezeigt und herunterskaliert, wenn sich der Fingertipp näher an das Objekt anpasst. Der Ring wird schließlich in einen Punkt konvergiert, wenn der gedrückte Zustand erreicht wird. Diese visuelle Visualisierung unterstützt den Benutzer dabei, zu verstehen, wie weit Sie aus dem-Objekt stammen.<br>
+        Auf hololens 2 gibt es einen zusätzlichen visuellen Hinweis, der die Wahrnehmung von tiefen durch den Benutzer unterstützen kann. Ein Ring in der Nähe des fingerabbilds wird angezeigt und herunterskaliert, wenn sich der Fingertipp näher an das Objekt anpasst. Der Ring wird schließlich in einen Punkt konvergiert, wenn der gedrückte Zustand erreicht wird. Diese visuelle Visualisierung unterstützt den Benutzer dabei, zu verstehen, wie weit Sie aus dem-Objekt stammen.<br>
         <br>
         *Video Schleife: Beispiel für visuelles Feedback basierend auf der Nähe eines umgebenden Felds*
     :::column-end:::
@@ -188,7 +187,7 @@ Eine [Schaltfläche in hololens 2](https://microsoft.github.io/MixedRealityToolk
 
 ### <a name="audio-cues"></a>Audiohinweise
 
-Bei direkter Hand Interaktion kann das richtige Audiofeedback die Benutzer Leistung erheblich verbessern. Verwenden Sie Audiofeedback, um Folgendes zu kommunizieren:
+Bei direkter Hand Interaktion kann das richtige Audiofeedback die Benutzer Leistung erheblich verbessern. Verwenden Sie Audiofeedback, um die folgenden Hinweise zu kommunizieren:
 * **Kontakt beginnt**: Sound abspielen, wenn der Fingerabdruck beginnt
 * **Kontakt** Ende: Sound am Touchscreen abspielen
 * **Beginn**: Sound abspielen, wenn der Start beginnt
@@ -218,7 +217,7 @@ Bei direkter Hand Interaktion kann das richtige Audiofeedback die Benutzer Leist
 
 ## <a name="sizing-recommendations"></a>Größenempfehlungen 
 
-Um sicherzustellen, dass alle austauschbaren Objekte problemlos von Benutzern berührt werden können, sollten Sie sicherstellen, dass die Interaktionen eine minimale Größe (den visuellen Winkel, der häufig in Grad des visuellen Bogens gemessen wird) basierend auf der Entfernung des Benutzers erfüllt. Der visuelle Winkel basiert auf der Entfernung zwischen den Augen des Benutzers und dem Objekt und bleibt konstant, während sich die physische Größe des Ziels möglicherweise ändert, wenn sich der Abstand vom Benutzer ändert. Um die erforderliche physische Größe eines Objekts basierend auf der Entfernung des Benutzers zu bestimmen, versuchen Sie, einen visuellen Winkel Rechner wie [diesen](https://elvers.us/perception/visualAngle/)zu verwenden.
+Um sicherzustellen, dass alle austauschbaren Objekte problemlos berührt werden können, sollten Sie sicherstellen, dass die Interaktionen eine minimale Größe basierend auf der Entfernung des Benutzers erfüllt. Der visuelle Winkel wird häufig in Grad des visuellen Bogens gemessen. Der visuelle Winkel basiert auf der Entfernung zwischen den Augen des Benutzers und dem Objekt und bleibt konstant, während sich die physische Größe des Ziels möglicherweise ändert, wenn sich der Abstand vom Benutzer ändert. Um die erforderliche physische Größe eines Objekts basierend auf der Entfernung des Benutzers zu bestimmen, versuchen Sie, einen visuellen Winkel Rechner wie [diesen](https://elvers.us/perception/visualAngle/)zu verwenden.
 
 Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktionen-Inhalten.
 
@@ -227,7 +226,7 @@ Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktion
 
 | Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
-| 45cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
+| 45 cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
 
 ![Zielgröße für direkte Interaktion](images/TargetSizingNear.jpg)<br>
 *Zielgröße für direkte Interaktion*
@@ -236,11 +235,11 @@ Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktion
 
 ### <a name="target-size-for-buttons"></a>Zielgröße für Schaltflächen
 
-Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir eine größere Mindestgröße von 3,2 x 3,2 cm, um sicherzustellen, dass genügend Speicherplatz vorhanden ist, um ein Symbol und potenziell einen Text zu enthalten.
+Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir eine größere Mindestgröße von 3,2 x 3,2 cm, um sicherzustellen, dass ausreichend Speicherplatz vorhanden ist, um ein Symbol und potenziell einen Text zu enthalten.
 
 | Abstand | Mindestgröße |
 |---------|---------|
-| 45cm  | 3,2 x 3,2 cm |
+| 45 cm  | 3,2 x 3,2 cm |
 
 ![Zielgröße für die Schaltflächen](images/TargetSizingButtons.png)<br>
 *Zielgröße für die Schaltflächen*
@@ -250,7 +249,7 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Zielgröße für die Hand Strahl-oder Blick Interaktion
 | Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
-| 2 min  | nicht kleiner als 1 ° | 3,5 x 3,5 cm |
+| 2 Mio.  | nicht kleiner als 1 ° | 3,5 x 3,5 cm |
 
 ![Zielgröße für die Hand Strahl-oder Blick Interaktion](images/TargetSizingFar.jpg)<br>
 *Zielgröße für die Hand Strahl-oder Blick Interaktion*
@@ -263,7 +262,7 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Interactable-Objekt in mrtk (Mixed Reality Toolkit) für Unity
 
-In **[mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** können Sie das Skript [**interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) verwenden, damit Objekte auf verschiedene Typen von Eingabe Interaktions Zuständen reagieren. Es unterstützt verschiedene Arten von Themen, mit denen Sie visuelle Zustände definieren können, indem Sie Objekteigenschaften wie Farbe, Größe, Material und Shader steuern.
+In **[mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** können Sie das Skript [**interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) verwenden, damit Objekte auf verschiedene Typen von Eingabe Interaktions Zuständen reagieren. Es unterstützt verschiedene Arten von Designs, mit denen Sie visuelle Zustände definieren können, indem Sie Objekteigenschaften wie z. b. Farbe, Größe, Material und Shader steuern.
 
 * [Interaktionen](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 * [Schaltfläche](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
@@ -278,7 +277,7 @@ Der Standard-Shader von mixedrealitytoolkit bietet verschiedene Optionen, wie z.
 ---
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

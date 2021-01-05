@@ -5,20 +5,28 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691311"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865415"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Beitrag zur Mixed Reality-Entwicklerdokumentation
 
 Willkommen beim [öffentlichen Repository für die Entwicklerdokumentation von Mixed Reality](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)! Alle Artikel, die Sie in diesem Repository erstellen oder bearbeiten **, sind öffentlich sichtbar.** 
 
-Die Dokumente für die gemischte Realität befinden sich jetzt auf der docs.Microsoft.com-Plattform, die das GitHub-optimierte markdown mit markdig-Funktionen verwendet. Der Inhalt, den Sie in diesem Repository bearbeiten, wird in stilisierte Seiten formatiert, die unter angezeigt werden https://docs.microsoft.com/windows/mixed-reality . Wenn Sie an der Dokumentation von hololens oder der VR-Enthusiasten teilnehmen möchten, besuchen Sie die jeweiligen [hololens](https://github.com/MicrosoftDocs/Hololens) -und [VR](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) -Repository.
+Die Dokumente für die gemischte Realität befinden sich jetzt auf der docs.Microsoft.com-Plattform, die das GitHub-optimierte markdown mit markdig-Funktionen verwendet. Der Inhalt, den Sie in diesem Repository bearbeiten, wird in stilisierte Seiten formatiert, die unter angezeigt werden https://docs.microsoft.com/windows/mixed-reality . 
 
 Auf dieser Seite werden die grundlegenden Schritte und Richtlinien für den Beitrag und Links zu markdown-Grundlagen behandelt. Vielen Dank für Ihren Beitrag.
+
+## <a name="available-repos"></a>Verfügbare Repositorys
+
+| Name des Repositorys | URL |
+| --- | --- |
+| Mixed Reality | [Microsoftdocs/Mixed-Reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Leitfaden für VR-Enthusiasten | [Microsoftdocs/Mixed-Reality/Enthusiast-Guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [Microsoftdocs/hololens](https://github.com/MicrosoftDocs/Hololens) |
 
 ## <a name="before-you-start"></a>Vorbereitung
 

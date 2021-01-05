@@ -3,12 +3,12 @@ title: Problembehandlung bei Windows Mixed Reality
 description: Windows Mixed Reality-Problembehandlung, das über unsere standardmäßige Kundensupport Dokumentation hinausgeht.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support
-ms.openlocfilehash: bc320787e243e92aafb5c942da8ca4d76737ec46
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
+ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361651"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97859489"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Problembehandlung bei Windows Mixed Reality (FAQs)
 
@@ -16,7 +16,7 @@ ms.locfileid: "94361651"
 
 ## <a name="whats-new"></a>Neues!
 
-Im Hinblick auf die neue Version von HP Reverb G2-Headset und-Controllern haben wir eine [dedizierte FAQ-Seite](reverbG2-faq.md) für alle Dinge, die mit G2-Hardware verwandt sind, kompiliert. In diesem Artikel werden alle Aspekte von Verbindungsproblemen und Bild Übersichtlichkeit bis hin zu Bewegungs Controllern und der Ausführung gemischter Realität behandelt
+Beachten Sie, dass wir eine [dedizierte FAQ-Seite](reverbG2-faq.md) für alle Dinge von G2 kompiliert haben. In diesem Artikel werden alle Aspekte von Verbindungsproblemen und Bild Übersichtlichkeit bis hin zu Bewegungs Controllern und der Ausführung gemischter Realität behandelt
 
 ## <a name="troubleshooting-topics"></a>Themen zur Problembehandlung
 
@@ -24,14 +24,14 @@ Wenn Sie Probleme mit der immersiven Hardware haben, ist es wichtig, den allgeme
 
 ### <a name="installation-and-setup-issues"></a>Probleme bei der Installation und Einrichtung
 
-Informationen zu Problemen bei der Installation, einschließlich Ihres PCs, die nicht in der Lage sind, Windows Mixed Reality, Setup Fehler, Mindestanforderungen an PCs oder Administrator Berechtigungen auszuführen, finden Sie in den folgenden beiden FAQs:
+Weitere Informationen zu Problemen mit der Installation und Ausführung von Windows Mixed Reality, Setup Fehlern, Mindestanforderungen an PCs oder Administrator Berechtigungen finden Sie in den folgenden beiden FAQs:
 
 - [Installationsfehler](installation_errors.md)
 - [Einrichtung](wmr-setup-faq.md)
 
 ### <a name="hardware-issues"></a>Hardwareprobleme
 
-Weitere Informationen zu Problemen mit Ihrem physischen Headset-Gerät, einschließlich Kabelverbindungen, Verbindungsfehlern, Starten des gemischtes Reality-Portals oder schwarze/leere Headset-Anzeige, finden Sie in den folgenden Artikeln:
+In den folgenden Artikeln finden Sie Informationen zu Problemen mit dem physischen Headset-Gerät, Kabelverbindungen, Verbindungsfehlern, dem Starten des Mixed Reality-Portals und schwarzen oder leeren Headset-anzeigen:
 
 - [Headset-Konnektivität](headset-connectivity.md)
 - [Headset-Anzeige](headset-display.md)
@@ -39,7 +39,7 @@ Weitere Informationen zu Problemen mit Ihrem physischen Headset-Gerät, einschli
 
 ### <a name="core-experience-issues"></a>Grundlegende Probleme
 
-Wenn Sie Probleme beim Erstellen von Grenzen haben (der zu verwendende Bereich, den Sie beim Durchführen eines Windows Mixed Reality-Headsets verwenden können), hören oder nicht hören von Sounds, Bluetooth-Audio oder der Headset-Nachverfolgung, sehen Sie sich die folgenden FAQs an:
+Wenn Sie Probleme beim Erstellen von Grenzen haben, hören oder nicht hören von Sounds, Bluetooth-Audio oder der Headset-Nachverfolgung, sehen Sie sich die folgenden FAQs an:
 
 - [Standortgrenzen](boundary-questions.md)
 - [Sprache und Audio](speech-and-audio.md)
@@ -47,7 +47,7 @@ Wenn Sie Probleme beim Erstellen von Grenzen haben (der zu verwendende Bereich, 
 
 ### <a name="vr-experience-issues"></a>VR-Erfahrungs Probleme
 
-Wenn Sie Probleme beim Spielen von spielen in steamvr, beim Installieren des Windows-Entwicklermodus oder beim Anzeigen von webvr-Inhalten in einem Browser haben, sind die folgenden Artikel die folgenden:
+Wenn Sie Probleme mit steamvr-spielen haben, den Windows-Entwicklermodus installieren oder webvr-Inhalte in einem Browser anzeigen, sind die folgenden Artikel die folgenden:
 
 - [SteamVR](steamvr-questions.md)
 - [WebVR](webvr-questions.md)

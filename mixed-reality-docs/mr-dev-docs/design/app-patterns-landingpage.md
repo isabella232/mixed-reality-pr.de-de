@@ -6,20 +6,21 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX-Design, UX mit gemischter Realität, UX, App-Muster, Steuerelemente, Stil, hololens, Interaktion, räumliche Interaktion, räumliche Benutzeroberfläche, UX-Elemente, Verhaltensweisen, Bausteine, Typografie, Farben, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703136"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847784"
 ---
 # <a name="ux-elements-overview"></a>Übersicht über UX-Elemente
+
 ## <a name="foundational-elements"></a>Grundlegende Elemente
 Erfahren Sie mehr über die grundlegenden Elemente, die Sie benötigen, um eine großartige gemischte Realität zu entwerfen.
 
 :::row:::
     :::column:::
-       Farbe [ ![ , Beleuchtung und Material](images/640px-fragments.png)](color-light-and-materials.md) **[, Beleuchtung, Licht und Material](color-light-and-materials.md)**
+       Farbe, [ ![ Licht und Material](images/640px-fragments.png)](color-light-and-materials.md) **[Farbe, Licht und Material](color-light-and-materials.md)**
     :::column-end:::
     :::column:::
        [ ![ Skalierung](images/volvo-cars-microsoft-hololens-experience01-640px.png)](scale.md) **[skalieren](scale.md)**
@@ -28,7 +29,7 @@ Erfahren Sie mehr über die grundlegenden Elemente, die Sie benötigen, um eine 
 
 :::row:::
     :::column:::
-       [ ![ Typografietypografie](images/typography-cover.png)](typography.md) **[Typography](typography.md)**
+       [ ![ Typografietypografie](images/typography-cover.png)](typography.md) **[](typography.md)**
     :::column-end:::
     :::column:::
        [ ![ Sound](images/spatialaudio.png)](spatial-sound-design.md) **[Sound](spatial-sound-design.md)**
@@ -48,16 +49,16 @@ Erfahren Sie mehr über häufig verwendete allgemeine räumliche Interaktionen u
        [ ![ Hand Strahl](images/UX_Hero_HandRay.jpg)](point-and-commit.md) **[Hand Strahl](point-and-commit.md)**
     :::column-end:::
     :::column:::
-       [ ![ Schalt](images/UX_Hero_Button.jpg)](button.md) Fläche **[Button](button.md) Schaltfläche**
+       [ ![ Schalt](images/UX_Hero_Button.jpg)](button.md) Fläche **[](button.md) Schaltfläche**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Begrenzungs](images/UX_Hero_BoundingBox.jpg)](app-bar-and-bounding-box.md) Feld des umgebenden Felds **[Bounding box](app-bar-and-bounding-box.md)**
+       [ ![ Begrenzungs](images/UX_Hero_BoundingBox.jpg)](app-bar-and-bounding-box.md) Feld des umgebenden Felds **[](app-bar-and-bounding-box.md)**
     :::column-end:::
     :::column:::
-       Interactable Object-Objekt mit [ ![ interactable](images/UX_Hero_Interactable.jpg)](interactable-object.md) **[Interactable object](interactable-object.md)**
+       Interactable Object-Objekt mit [ ![ interactable](images/UX_Hero_Interactable.jpg)](interactable-object.md) **[](interactable-object.md)**
     :::column-end:::
     :::column:::
        [ ![ Manipulations](images/UX_Hero_Manipulation.jpg)](direct-manipulation.md) **[Bearbeitung](direct-manipulation.md)**
@@ -69,22 +70,22 @@ Erfahren Sie mehr über häufig verwendete allgemeine räumliche Interaktionen u
        [ ![ Menü](images/UX_Hero_HandMenu.jpg)](hand-menu.md) **[Hand Menü](hand-menu.md)**
     :::column-end:::
     :::column:::
-       [ ![ Nahe](images/UX_Hero_NearMenu.jpg)](near-menu.md) Menü in der Nähe des Menüs **[Near menu](near-menu.md)**
+       [ ![ Nahe](images/UX_Hero_NearMenu.jpg)](near-menu.md) Menü in der Nähe des Menüs **[](near-menu.md)**
     :::column-end:::
     :::column:::
-       [ ![ Objekt](images/UX_Hero_ObjectCollection.jpg)](object-collection.md) **[Object collection](object-collection.md) Sammlungsobjekt Auflistung**
+       [ ![ Objekt](images/UX_Hero_ObjectCollection.jpg)](object-collection.md) **[](object-collection.md) Sammlungsobjekt Auflistung**
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Spracheingabe](images/UX_Hero_VoiceCommand.jpg)](voice-input.md) **[Voice input](voice-input.md)**
+       [ ![ Spracheingabe](images/UX_Hero_VoiceCommand.jpg)](voice-input.md) **[](voice-input.md)**
     :::column-end:::
     :::column:::
        [ ![ Tastatur](images/UX_Hero_Keyboard.jpg)](keyboard.md) **[Tastatur](keyboard.md)**
     :::column-end:::
     :::column:::
-       [ ![](images/UX_Hero_Tooltip.jpg)](tooltip.md) QuickInfo **[Tooltip](tooltip.md)**
+       [ ![](images/UX_Hero_Tooltip.jpg)](tooltip.md) QuickInfo **[](tooltip.md)**
     :::column-end:::
 :::row-end:::
 
@@ -93,7 +94,7 @@ Erfahren Sie mehr über häufig verwendete allgemeine räumliche Interaktionen u
        [ ![ Slate](images/UX_Hero_Slate.jpg)](slate.md) - **[Slate](slate.md)**
     :::column-end:::
     :::column:::
-       [ ![ Schieberegler](images/UX_Hero_Slider.jpg)](slider.md) **[Slider](slider.md)**
+       [ ![ Schieberegler](images/UX_Hero_Slider.jpg)](slider.md) **[](slider.md)**
     :::column-end:::
     :::column:::
         [ ![ Shader](images/UX_Hero_StandardShader.jpg)](shader.md) - **[Shader](shader.md)**
@@ -108,7 +109,7 @@ Erfahren Sie mehr über häufig verwendete allgemeine räumliche Interaktionen u
        [ ![ Hand Coach](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[Hand](hand-coach.md) Coach**
     :::column-end:::
     :::column:::
-       [ ![ Räumliches](images/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md) Mesh- **[Spatial mesh](spatial-mesh-ux.md) Mesh**
+       [ ![ Räumliches](images/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md) Mesh- **[](spatial-mesh-ux.md) Mesh**
     :::column-end:::
 :::row-end:::
 

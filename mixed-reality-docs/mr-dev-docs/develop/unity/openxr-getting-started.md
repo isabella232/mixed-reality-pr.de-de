@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: 05adee2d88bc90dcfb5cf8b780212c7622aff786
-ms.sourcegitcommit: ce4975f584bb62075bcb66349237b77081fb982b
+ms.openlocfilehash: 9e7f59c57d409d61df73e6d07659bf6c7242202c
+ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644917"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97880599"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Verwenden des gemischten Reality openxr-Plug-Ins für Unity
 
@@ -19,10 +19,10 @@ Ab Unity, Version 2020,2, ist das gemischte openxr-Plug-in-Paket von Microsoft m
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-*   Unity 2020,2 oder höher
-*   Unity openxr-Plug-in 0.1.1 oder höher
-*   Visual Studio 2019 oder höher
-*   Installieren der **UWP** -Platt Form Unterstützung in Unity für hololens 2-apps
+* Unity 2020,2 oder höher
+* Unity openxr-Plug-in 0.1.1 oder höher
+* Visual Studio 2019 oder höher
+* Installieren der **UWP** -Platt Form Unterstützung in Unity für hololens 2-apps
 
 > [!NOTE]
 > Wenn Sie VR-Anwendungen auf einem Windows-PC entwickeln, ist das gemischte openxr-Plug-in für die gemischte Realität nicht unbedingt erforderlich. Sie sollten das Plug-in jedoch installieren, wenn Sie die Controller Zuordnung für HP-Reverb-G2-Controller anpassen oder apps entwickeln, die sowohl für hololens 2-als auch für VR-Headsets geeignet sind.
@@ -32,7 +32,7 @@ Ab Unity, Version 2020,2, ist das gemischte openxr-Plug-in-Paket von Microsoft m
 Das Projekt muss das **openxr** -Plug-in und das **Management** Pack für den Wenn Sie diese bereits installiert haben, ist es toll! Wenn dies nicht der Fall ist, werden Sie beim Installieren des Plug-Ins für gemischte Realität automatisch als Abhängigkeiten installiert:
 
 1. Navigieren Sie im Unity-Editor zum **Bearbeiten > Projekteinstellungen > Paket-Manager** .
-2. Erweitern Sie den Bereich Bereichs bezogene **Registrierungen** , geben Sie die folgenden Informationen ein, und klicken Sie dann auf **Speichern**:   
+2. Erweitern Sie den Bereich Bereichs bezogene **Registrierungen** , geben Sie die folgenden Informationen ein, und klicken Sie dann auf **Speichern**:
     * Legen Sie **Name** auf **Microsoft Mixed Reality** fest.
     * **URL** festlegen auf **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**
     * **Bereich (e)** auf **com. Microsoft. mixedreality** festlegen
@@ -52,28 +52,30 @@ Nachdem die Microsoft Mixed Reality-Bereichs bezogene Registrierung dem Manifest
 
 So fügen Sie das openxr-Paket hinzu:
 
-1. Öffnen Sie **<projectRoot> /Packages/#b0** in einem Text-Editor wie Visual Studio Code
-2. Ändern Sie den Abschnitt "Abhängigkeiten" der *Pakete/manifest.jsin* der Datei wie folgt:
+1. Öffnen Sie **[projectroot]/Packages/manifest.js** in einem Text-Editor wie Visual Studio Code
+    1. Klicken Sie dazu im linken Bereich des Projekt Fensters mit der rechten Maustaste auf **Pakete** . Klicken Sie dann **auf in Explorer anzeigen**.
+    ![Screenshot der Paket Auflistung im Projektfenster](images/packages.png)
+1. Ändern Sie den Abschnitt "Abhängigkeiten" der *Pakete/manifest.jsin* der Datei wie folgt:
 
-> [!IMPORTANT]
-> In ihrer Manifest-Datei sind möglicherweise weitere Abhängigkeiten vorhanden, die hier nicht aufgeführt sind. Löschen Sie keines dieser Elemente, und fügen Sie der Liste einfach die openxr-Abhängigkeit hinzu.
+    > [!IMPORTANT]
+    > In ihrer Manifest-Datei sind möglicherweise weitere Abhängigkeiten vorhanden, die hier nicht aufgeführt sind. Löschen Sie keines dieser Elemente, und fügen Sie der Liste einfach die openxr-Abhängigkeit hinzu.
 
-```
-  "dependencies": {
-    "com.microsoft.mixedreality.openxr": "0.1.0",
-  }
-```
+    ``` json
+      "dependencies": {
+        "com.microsoft.mixedreality.openxr": "0.1.1",
+      }
+    ```
 
-3. Speichern Sie die Datei, wechseln Sie zurück zum Unity-Editor, und öffnen Sie den **Paket-Manager** , um die Installation des Plug-ins zu bestätigen: 
+1. Speichern Sie die Datei, wechseln Sie zurück zum Unity-Editor, und öffnen Sie den **Paket-Manager** , um die Installation des Plug-ins zu bestätigen:
 
-![Screenshot des Unity-Paket-Managers, geöffnet im Unity-Editor mit hervorgehobenem gemischtes openxr-Plug-in](images/openxr-img-03.png)
+    ![Screenshot des Unity-Paket-Managers, geöffnet im Unity-Editor mit hervorgehobenem gemischtes openxr-Plug-in](images/openxr-img-03.png)
 
-> [!Note] 
-> Wenn das openxr-Paket mit dem Unity-Paket-Manager entfernt wird, müssen Sie es mithilfe der zuvor beschriebenen Schritte erneut hinzufügen.
+    > [!Note]
+    > Wenn das openxr-Paket mit dem Unity-Paket-Manager entfernt wird, müssen Sie es mithilfe der zuvor beschriebenen Schritte erneut hinzufügen.
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>Konfigurieren der XR-Plug-in-Verwaltung für openxr
 
-So legen Sie openxr als Lauf Zeit Modul in Unity fest: 
+So legen Sie openxr als Lauf Zeit Modul in Unity fest:
 
 1. Navigieren Sie im Unity-Editor zu **Bearbeiten > Projekteinstellungen** .
 2. Wählen Sie in der Liste der Einstellungen die Option " **XR Plugin Management** "
@@ -97,7 +99,7 @@ Wenn Sie für hololens 2 entwickeln, navigieren Sie zu **gemischte Realität> op
 
 ## <a name="try-out-the-unity-sample-scenes"></a>Ausprobieren der Unity-Beispiel Szenen
 
-Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) und höher vom **pacakage-Manager**:
+Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [arfoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) und höher über den **Paket-Manager**:
 
 ![Screenshot: Öffnen des Unity-Paket-Managers im Unity-Editor mit hervorgehobener AR Foundation](images/openxr-img-09.png)
 
@@ -118,13 +120,14 @@ Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [
 ![Screenshot of Unity Package Manager open in Unity editor with OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png) -->
 
 > [!NOTE]
->  Wenn ein Paket aktualisiert wird, bietet Unity die Option zum Aktualisieren importierter Beispiele.  Durch das Aktualisieren eines importierten Beispiels werden alle Änderungen überschrieben, die an dem Beispiel und den zugehörigen Assets vorgenommen wurden.
+> Wenn ein Paket aktualisiert wird, bietet Unity die Option zum Aktualisieren importierter Beispiele.  Durch das Aktualisieren eines importierten Beispiels werden alle Änderungen überschrieben, die an dem Beispiel und den zugehörigen Assets vorgenommen wurden.
 
-## <a name="next-steps"></a>Nächste Schritte 
+## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie Ihr Projekt für openxr konfiguriert haben und Zugriff auf Beispiele haben, sehen Sie sich an, welche [Features](openxr-supported-features.md) derzeit in unserem openxr-Plug-in unterstützt werden.
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Konfigurieren des Projekts ohne mrtk](configure-unity-project.md)
+
+* [Konfigurieren von Projekten ohne MRTK](configure-unity-project.md)
 * [Empfohlene Einstellungen für Unity](recommended-settings-for-unity.md)
 * [Leistungsempfehlungen für Unity](performance-recommendations-for-unity.md#how-to-profile-with-unity)

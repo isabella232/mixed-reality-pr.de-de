@@ -6,16 +6,16 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Gemischte Realität, Gesten, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Bloom
-ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703266"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848157"
 ---
 # <a name="start-gesture"></a>Start Geste
 
-Die Start Geste ist eine Handbewegung, mit der das Startmenü aufgerufen wird. Dies entspricht dem Drücken der Windows-Taste auf der Tastatur, der Xbox-Schaltfläche auf einem Xbox-Controller oder der Windows-Taste auf dem immersiven Headset-Bewegungs Controller. Es ist wichtig zu verstehen, welche Gesten für das System auf jedem gemischten Reality-Gerät reserviert sind, um Konflikte beim Entwerfen Ihrer Interaktionen zu vermeiden.
+Die Start Geste ist eine Handbewegung, mit der das Startmenü aufgerufen wird. Dies entspricht dem Drücken der Windows-Taste auf den Tastaturen, der Xbox-Schaltfläche auf Xbox-Controllern oder der Windows-Schaltfläche auf immersiven Headset-Motion-Controllern. Achten Sie besonders auf die Gesten der reservierten Systeme auf jedem gemischten Reality-Gerät, um Konflikte beim Entwerfen von Interaktionen zu vermeiden.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -53,7 +53,8 @@ Die Start Geste ist eine Handbewegung, mit der das Startmenü aufgerufen wird. D
 </table>
 
 ## <a name="bloom"></a>Blüte
-Um das Startmenü in hololens (1. Generation) aufzurufen, haben wir "Bloom" entworfen, das eine symbolische Geste zum imitieren der Blüten Blüte ist. Es ist für die Interaktion mit untergeordneten Elementen, die einfache Durchführung und die schnelle Erinnerung. Um die Blüte Bewegung auf hololens (1. Generation) durchzuführen, halten Sie Ihre Hand an Ihre Hand, um Sie zu öffnen, und öffnen Sie dann die Hand, indem Sie Ihre Finger verteilen.
+
+Wir haben "Bloom" entworfen, um das Startmenü in hololens (1st Gen) aufzurufen. Dies ist eine symbolische Geste, die eine Blüten Blüte imitiert. Es ist eine besondere Interaktion, eine einfache Verwendung und eine schnelle Erinnerung. Wenn Sie die Geste verwenden möchten, halten Sie Ihre Hand an Ihre Hand, um die Hand zu öffnen, und öffnen Sie dann die Hand, indem Sie Ihre Finger verteilen.
 
 :::row:::
     :::column:::
@@ -71,7 +72,8 @@ Um das Startmenü in hololens (1. Generation) aufzurufen, haben wir "Bloom" entw
 ---
 
 ## <a name="start-gesture"></a>Start Geste
-In hololens 2 haben wir die Blüte Bewegung durch eine virtuelle Handgelenk Schaltfläche ersetzt, die mehr instanzielle Interaktionen ermöglicht, die keine zusätzliche Lehre erfordern. Wenn die Benutzer die Schaltfläche auf dem Handgelenk anzeigt, können Sie sie intuitiv erreichen und mit der anderen Seite drücken.
+
+In hololens 2 wurde die Blüte Bewegung durch eine virtuelle Handgelenk Schaltfläche ersetzt, die für Benutzer besser instanzieller ist. Wenn die Benutzer die Schaltfläche auf dem Handgelenk anzeigt, können Sie sie intuitiv erreichen und mit der anderen Seite drücken.
 
 :::row:::
     :::column:::
@@ -88,7 +90,6 @@ In hololens 2 haben wir die Blüte Bewegung durch eine virtuelle Handgelenk Scha
 
 ---
 
-
 ## <a name="one-handed-start-gesture"></a>Einstufige Start Geste
 
 > [!IMPORTANT]
@@ -97,7 +98,7 @@ In hololens 2 haben wir die Blüte Bewegung durch eine virtuelle Handgelenk Scha
 > 1. Sie müssen ein Update auf das Update von November 2019 (Build 18363,1039) oder höher durch haben.
 > 1. Die Augen müssen auf dem Gerät so kalibriert werden, dass die Eye-Nachverfolgung ordnungsgemäß funktioniert. Wenn Sie keine Umkreis Punkte um das Start Symbol sehen, wenn Sie es betrachten, werden die Augen nicht auf dem Gerät gekalibriert.
 
-Sie können die Start Geste auch nur mit einer Hand ausführen. Halten Sie zu diesem Zweck ihre Hand mit Ihrer Hand, und sehen Sie sich das **Start Symbol** auf Ihrem inneren Handgelenk an. **Wenn Sie das Symbol gedrückt halten**, können Sie den Ziehpunkt und den Finger des Indexes zusammenhalten.<br>
+Sie können auch die Start Geste nur mit einer Hand verwenden. Halten Sie Ihre Hand mit Ihrer Hand, und sehen Sie sich das **Start Symbol** auf Ihrem inneren Handgelenk an. **Wenn Sie das Symbol gedrückt halten**, können Sie den Ziehpunkt und den Finger des Indexes zusammenhalten.<br>
 :::row:::
     :::column:::
         ![Handgelenk Taste](images/wrist-button-ready.png)<br>
@@ -113,7 +114,7 @@ Sie können die Start Geste auch nur mit einer Hand ausführen. Halten Sie zu di
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Augenblick](eye-tracking.md)
