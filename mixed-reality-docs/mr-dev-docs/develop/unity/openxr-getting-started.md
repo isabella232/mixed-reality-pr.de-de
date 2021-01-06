@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: 9e7f59c57d409d61df73e6d07659bf6c7242202c
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
+ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880599"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97905292"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Verwenden des gemischten Reality openxr-Plug-Ins für Unity
 
@@ -126,7 +126,11 @@ Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [
 
 Nachdem Sie Ihr Projekt für openxr konfiguriert haben und Zugriff auf Beispiele haben, sehen Sie sich an, welche [Features](openxr-supported-features.md) derzeit in unserem openxr-Plug-in unterstützt werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="have-feedback"></a>Haben Sie Feedback?
+
+Openxr ist noch immer experimentell. Wir freuen uns über jedes Feedback, das Sie uns zur Verbesserung der IT-Unterstützung bieten können. Sie finden uns in den [Unity-Foren](https://aka.ms/unityforums) , indem Sie Ihren Forumsbeitrag mit **Microsoft**  +  **openxr** und entweder **hololens 2** oder **Windows Mixed Reality** markieren.
+
+## <a name="see-also"></a>Siehe auch
 
 * [Konfigurieren von Projekten ohne MRTK](configure-unity-project.md)
 * [Empfohlene Einstellungen für Unity](recommended-settings-for-unity.md)
