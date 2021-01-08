@@ -1,5 +1,5 @@
 ---
-title: Empfohlene Adapter für Windows Mixed Reality-fähige PCs
+title: Empfohlene Adapter für Windows Mixed Reality-PCs
 description: Liste der empfohlenen Adapter für die Verwendung mit Windows Mixed Reality-Headsets, wenn Ihr PC nicht über USB-und HDMI-Ports mit voller Kapazität verfügt.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Adapter, Dongle, HDMI, USB, Display Port
 appliesto:
 - Windows 10
-ms.openlocfilehash: 248a202ce57c0b6872ddefc9ec9c2f89e2aa87a4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 86eaa8d462d97a740f15859d2ab631aafb8dd68e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725981"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009100"
 ---
 # <a name="recommended-adapters"></a>Empfohlene Adapter
 > [!NOTE]
@@ -28,7 +28,7 @@ Ihr [Windows Mixed Reality-kompatibler PC](windows-mixed-reality-minimum-pc-hard
 
 <table>
 <tr>
-<th style="width:30%">Typ</th><th style="width:40%">Adapter</th><th style="width:15%">60 Hz-fähig</th><th style="width:15%">90 Hz-fähig</th>
+<th style="width:30%">type</th><th style="width:40%">Adapter</th><th style="width:15%">60 Hz-fähig</th><th style="width:15%">90 Hz-fähig</th>
 </tr><tr>
 <td rowspan="2" style="vertical-align: middle;">Display Port (Vollgröße) auf HDMI 2,0</td><td>Club3D Display Port 1,2 auf den aktiven Adapter von HDMI 2,0</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -278,6 +278,6 @@ Beachten Sie auch die folgenden Anleitungen zur Verwendung eines externen USB 3,
 * Der USB-3,0-Hub muss extern eingeschaltet sein (über einen AC-Adapter verfügen, der zusätzliche Stromversorgung bietet).
 * Der austauschbare USB 3,0 SuperSpeed Hub mit dem 48 W-Netzwerkadapter funktioniert gut mit Windows Mixed Reality-Headsets und den meisten PCs.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Problembehandlung bei der Headset](headset-connectivity.md)
 * [Windows Mixed Reality-Mindestanforderungen für die PC-Hardware Kompatibilität](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

@@ -1,17 +1,17 @@
 ---
 title: Versionshinweise – März 2016
-description: Hololens-Anmerkungen zu dieser Version für den Start von hololens und Windows Holographic.
+description: Bleiben Sie auf dem neuesten Stand der Versions Anmerkungen zu hololens für den Start von hololens und Windows Holographic.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Anmerkungen zu dieser Version, hololens, Betriebssystem, Plattform, Features, Build, Start
-ms.openlocfilehash: 9129bb220d2a580235494a94ecbd3227e7d4c7c7
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a7797483b5ba60203f0f0b3c2c4ce79b924d81dc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725931"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009200"
 ---
 # <a name="release-notes---march-2016"></a>Versionshinweise – März 2016
 
@@ -33,7 +33,7 @@ Posteingangs-Apps testen
 
 Um das Gerät für die Entwicklung zu entsperren, öffnen Sie die app " *Einstellungen* ", navigieren Sie zu *Update & Sicherheit*, wechseln Sie zur Seite *für Entwickler* , und legen Sie die UMSCHALT Fläche für den Entwicklermodus auf ein fest. Sie können das [Geräte Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal) auch hier aktivieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [HoloLens – bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
 * [Navigieren auf der Startseite von Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)

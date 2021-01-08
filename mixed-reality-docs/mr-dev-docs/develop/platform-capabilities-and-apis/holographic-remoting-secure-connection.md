@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Sicherheit, Authentifizierung, Server-zu-Client
-ms.openlocfilehash: 64eb54d9401f3fbc8b73ebb97b19de5a68cdc5c4
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 0881238bfca199958802598a3e1829a9de0d8e5b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530409"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006480"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Aktivieren der Verbindungssicherheit für Holographic-Remoting
 
@@ -24,7 +24,7 @@ Auf dieser Seite erhalten Sie einen Überblick über die Netzwerksicherheit für
 * Empfohlene Measures, die auf verschiedenen Anwendungsfällen basieren
 * Implementieren der Sicherheit in ihrer Holographic-Remoting-Lösung
 
-## <a name="overview"></a>Übersicht
+## <a name="holographic-remoting-security"></a>Holografische Remoting-Sicherheit
 
 Holographic Remoting tauscht Informationen über ein Netzwerk aus. Wenn keine Sicherheitsmaßnahmen vorhanden sind, können Angreifer im selben Netzwerk die Integrität der Kommunikation beeinträchtigen oder auf vertrauliche Informationen zugreifen.
 

@@ -1,6 +1,6 @@
 ---
 title: Verwendung von Sprache in Windows Mixed Reality
-description: Erfahren Sie, wie Sie Spracheingaben in Ihren Windows Mixed Reality-Apps verwenden.
+description: Erfahren Sie, wie Sie mithilfe von Spracheingaben Befehle, 3D-Objekte und Diktat in Ihren Windows Mixed Reality-apps steuern.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725771"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007670"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Verwendung von Sprache in Windows Mixed Reality
 
@@ -38,7 +38,7 @@ Verwenden Sie die folgenden Sprachbefehle in Windows Mixed Reality, um schneller
 
 | Aufgabe | Sagen Sie dies |
 | --- | --- |
-| Select | Sagen Sie "Select", um den Cursor Cursor anzuzeigen. Legen Sie dann den Mauszeiger auf die gewünschte Position fest, und klicken Sie dann erneut auf "Select". |
+| Wählen Sie das | Sagen Sie "Select", um den Cursor Cursor anzuzeigen. Legen Sie dann den Mauszeiger auf die gewünschte Position fest, und klicken Sie dann erneut auf "Select". |
 | Öffnen des Startmenüs | Gehe zu Start |
 | Immersive app verlassen | Sagen Sie "Gehe zu Start", um das Menü mit den schnellen Aktionen aufzurufen, und klicken Sie dann auf "Mixed Reality Home". |
 | Aktivieren/Deaktivieren der Taschen Taschen | Sagen Sie "Gehe zu Start", um das Menü mit den schnellen Aktionen aufzurufen, und klicken Sie dann auf "Mixed Reality Home". |
@@ -152,7 +152,7 @@ Manchmal ist es hilfreich, Dinge wie e-Mail-Adressen zu benennen. Um z example@o
 
 Um das Diktat zu deaktivieren, wählen Sie **abgeschlossen** aus.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

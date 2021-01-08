@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality-immersive Headset-Integrität,-Sicherheit und-Komfort
+title: Windows Mixed Reality-Headset-Integrität und-Sicherheit
 description: Erfahren Sie, wie Sie Ihre Benutzer bei der Verwendung von Windows Mixed Reality-apps fehlerfrei, sicher und komfortabel halten können.
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725571"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009000"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality-immersive Headset-Integrität,-Sicherheit und-Komfort
 
@@ -41,7 +41,7 @@ Befolgen Sie alle Setup Empfehlungen für Windows Mixed Reality, einschließlich
 
 Bei der Verwendung von Windows Mixed Reality haben **einige Personen möglicherweise Unbehagen** , Bewegungskrankheiten, Schwindel, Disorientierung, Kopfschmerzen, Müdigkeit oder Augenbelastung, insbesondere bei der Verwendung von Windows Mixed Reality. Bewegungskrankheiten und zugehörige Symptome können auftreten, wenn ein Konflikt zwischen dem angezeigt wird, was Sie sehen, und dem, was Ihr Text wahrnimmt. Wenn Sie für Bewegungskrankheiten anfällig sind, Probleme mit der inneren Ohren Bewegung oder anderen Integritäts Bedingungen erhalten, können Sie das Risiko von Unannehmlichkeiten erhöhen.
 
-**Bestimmte Situationen können das Risiko von Unannehmlichkeiten erhöhen.** Zum Beispiel:
+**Bestimmte Situationen können das Risiko von Unannehmlichkeiten erhöhen.** Beispiel:
 
 * Ein neues Benutzer Symptom ist tendenziell geringer, wenn Sie an Windows Mixed Reality gewöhnt werden.
 * Geräte funktionieren möglicherweise am besten für Benutzer, deren interpupranary Distance (IPD) innerhalb eines bestimmten Bereichs liegt. IPD ist der Abstand zwischen der Mitte der Schüler und der beiden Augen. Benutzer mit einer IPD außerhalb des optimalen Bereichs für das Gerät können Unbehagen erleben.
@@ -57,6 +57,6 @@ Bei der Verwendung von Windows Mixed Reality haben **einige Personen möglicherw
 **Um die Verwaltung Ihrer Umgebung** zu unterstützen (sofern verfügbar und konfiguriert), können Features des Geräts verwendet werden, um die Grenzen für die Geräte Verwendung einzurichten, damit Sie Hindernisse vermeiden können.
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

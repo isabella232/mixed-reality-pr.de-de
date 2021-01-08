@@ -1,17 +1,17 @@
 ---
 title: Schreiben einer Holographic Remoting-Remote-app (WMR)
-description: Durch das Erstellen einer auf einem Remote Computer gerenderten Remoting-Remote Anwendung für die Remote-app kann an hololens 2 gestreamt werden.
+description: Erfahren Sie, wie Sie Remote Inhalt, der auf einem Remote Computer gerendert wird, mit Holographic Remoting-apps mit holographicspace in hololens 2 streamen.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, nuget
-ms.openlocfilehash: 5eddcc117008ebc54eac11965592099601880d3e
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: b78d1c93c8b2890ba8d904c289c8d61a14380824
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530220"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006500"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Schreiben einer Holographic Remoting-Remote-App mithilfe der holographicspace-API
 

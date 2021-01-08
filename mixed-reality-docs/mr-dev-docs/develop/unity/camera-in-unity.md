@@ -1,17 +1,17 @@
 ---
 title: Kamera in Unity
-description: Verwenden der Unity-Hauptkamera für die Windows Mixed Reality-Entwicklung, um Holographic Rendering durchzuführen.
+description: Erfahren Sie, wie Sie die Hauptkamera von Unity für die Windows Mixed Reality-Entwicklung einrichten und verwenden, um Holographic Rendering durchzuführen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, nicht transparent, transparent, Clip, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010431"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006390"
 ---
 # <a name="camera-in-unity"></a>Kamera in Unity
 

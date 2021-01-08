@@ -1,17 +1,17 @@
 ---
 title: Interaktionsfähiges Objekt
-description: Eine Schaltfläche ist lange eine Metapher, die zum Auslösen eines Ereignisses in der 2D-abstrakten Welt verwendet wird. In der dreidimensionalen Mixed Reality-Welt müssen wir nicht mehr auf diese Abstraktions Welt beschränkt werden.
+description: Erfahren Sie, wie Sie Ereignisse Auslösers, visuelle Hinweise bereitstellen und mit Objekten in ihren gemischten Reality-Anwendungen interagieren.
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, Cues, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Audio
-ms.openlocfilehash: fb7004c22602683e4edb1e38784cac5c0b7479c4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847862"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007200"
 ---
 # <a name="interactable-object"></a>Interaktionsfähiges Objekt
 
@@ -224,7 +224,7 @@ Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktion
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Zielgröße für direkte Interaktion
 
-| Abstand | Anzeige Winkel | Size |
+| Abstand | Anzeige Winkel | Größe |
 |---------|---------|---------|
 | 45 cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
 
@@ -247,7 +247,7 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 <br>
 
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Zielgröße für die Hand Strahl-oder Blick Interaktion
-| Abstand | Anzeige Winkel | Size |
+| Abstand | Anzeige Winkel | Größe |
 |---------|---------|---------|
 | 2 Mio.  | nicht kleiner als 1 ° | 3,5 x 3,5 cm |
 
@@ -277,7 +277,7 @@ Der Standard-Shader von mixedrealitytoolkit bietet verschiedene Optionen, wie z.
 ---
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

@@ -1,17 +1,17 @@
 ---
 title: Lunar-Modul
-description: Erfahren Sie, wie Sie die grundlegenden Gesten von hololens mit zweidimensionalen nach Verfolgungs-und Xbox Controller-Eingaben erweitern, Objekte erstellen, die sich reaktiv auf der Oberfläche und das Auffinden von Ebenen befinden und einfache Menüsysteme implementieren.
+description: Erfahren Sie, wie Sie die grundlegenden Gesten von hololens mit zweistufigen nach Verfolgungs-und Xbox Controller Eingaben erweitern, reaktive Objekte erstellen und Menüsysteme implementieren.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Beispiel-apps, Design, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010501"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008820"
 ---
 # <a name="lunar-module"></a>Lunar-Modul
 
@@ -108,7 +108,7 @@ Sie finden Skripts und Prefabs für die Beispiel-app "Lunar Module" auf dem [Mix
 </tr>
 </table>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

@@ -1,17 +1,17 @@
 ---
 title: Starten Sie Ihre VR-Journey
-description: Prüfpunkte zum Steuern neuer VR-Gerätebenutzer durch das Einrichten und verwenden ihrer immersiven VR-Geräte.
+description: Erkunden Sie unsere zusammengestellten Prüfpunkte, um neue Gerätebenutzer durch das Einrichten und verwenden ihrer immersiven VR-Geräte zu unterstützen.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr,
-ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725707"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007060"
 ---
 # <a name="start-your-vr-journey"></a>Starten Sie Ihre VR-Journey
 
@@ -60,7 +60,7 @@ Es gibt verschiedene Features und Dienste, die über Windows Mixed Reality und i
 
 <br>
 
-|  Prüfpunkt  |  Funktion  |
+|  Prüfpunkt  |  Feature  |
 | --- | --- |
 | [Lernen von Mixed Reality](learn-mixed-reality.md) | Erfahren Sie, wie Sie Ihren Blick, ihre Stimme, ihre Controller und Tastatur-/Maus-Eingaben verwenden. |
 | [Navigieren Sie in der Windows Mixed Reality-Startseite](your-mixed-reality-home.md) | Erkunden Sie die virtuelle Umgebung des Windows Mixed Reality-Home  |
@@ -76,7 +76,7 @@ Suchen Sie in den folgenden Ressourcen nach immersiven spielen, Desktop Anwendun
 
 <br>
 
-|  Prüfpunkt  |  Funktion  |
+|  Prüfpunkt  |  Feature  |
 | --- | --- |
 | [Spiele, 360-Video-und-Apps](using-games-and-apps-in-windows-mixed-reality.md) | Erste Schritte mit Ihrem ersten immersiven Spiel, 2D-Speicher Slates, Desktop Anwendungen und webvr-Erfahrungen |
 | [Verwenden von SteamVR](using-steamvr-with-windows-mixed-reality.md) | Verbinden Sie Ihr Gerät, und spielen Sie steamvr-Spiele und Informationen zum Windows Insider-Programm |

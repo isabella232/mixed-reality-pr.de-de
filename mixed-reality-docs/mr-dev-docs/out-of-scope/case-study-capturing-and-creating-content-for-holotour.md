@@ -1,17 +1,17 @@
 ---
 title: Fallstudie-holotour
-description: Holotour für Microsoft hololens bietet immersive persönliche 3D-Touren von berühmten Standorten auf der ganzen Welt. Diese Fallstudie führt Sie durch den Prozess des Erstellens und Erstellens der Inhalte, die für holotour verwendet werden.
+description: Erkunden Sie die Fallstudie der holotour-Anwendung, und durchlaufen Sie den Prozess der Erfassung und Erstellung der Inhalte.
 author: dannyaskew
 ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Holotour, hololens, Windows Mixed Reality
-ms.openlocfilehash: 9908327a1b8e70eef73d3f98adb7c75615e8e098
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 3e285988b6027b8c043dea7a4594c21d0bf3370d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684755"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009320"
 ---
 # <a name="case-study---holotour"></a>Fallstudie-holotour
 
@@ -152,5 +152,5 @@ Wir hoffen, dass die gemeinsame Nutzung von Lösungen für einige der größeren
 
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Video: Microsoft hololens: holotour](https://www.youtube.com/watch?v=pLd9WPlaMpY)

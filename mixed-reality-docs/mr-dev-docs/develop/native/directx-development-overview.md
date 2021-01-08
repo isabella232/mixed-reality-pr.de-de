@@ -1,17 +1,17 @@
 ---
 title: 'Native Entwicklung: Übersicht'
-description: Erstellen Sie eine DirectX-basierte gemischte Reality-Engine, indem Sie die Windows Mixed Reality-APIs direkt verwenden.
+description: Erfahren Sie, wie Sie ein DirectX-basiertes Modul mit gemischter Realität direkt mit den Windows Mixed Reality-APIs erstellen.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, Holographic Rendering, Native, Native APP, WinRT, WinRT-APP, Plattform-APIs, benutzerdefiniertes Modul, Middleware, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613074"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006850"
 ---
 # <a name="native-development-overview"></a>Native Entwicklung: Übersicht
 
@@ -68,6 +68,6 @@ Wenn Sie Ihr openxr-Spiel skalieren möchten, sehen Sie sich die folgenden Links
 * [OpenXR – Leistung](openxr-performance.md)
 * [OpenXR – Problembehandlung](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [App-Modell](../../design/app-model.md)
 * [App-Ansichten](../../design/app-views.md)

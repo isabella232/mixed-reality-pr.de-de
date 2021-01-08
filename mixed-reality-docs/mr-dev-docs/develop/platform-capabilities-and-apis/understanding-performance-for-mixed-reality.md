@@ -1,17 +1,17 @@
 ---
 title: Grundlegendes zur Leistung für gemischte Realität
-description: Erweiterte Informationen und Details zur Optimierung der Leistung der Windows Mixed Reality-app.
+description: Erfahren Sie mehr über erweiterte Informationen und Details zum Analysieren und Optimieren der Leistung der Windows Mixed Reality-app.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Gemischte Windows-Realität, gemischte Realität, Virtual Reality, VR, Mr, Leistung, Optimierung, CPU, GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530071"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008470"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Grundlegendes zur Leistung für gemischte Realität
 
@@ -134,9 +134,9 @@ Die Auswirkungen nach der Verarbeitung können teuer sein und die Füllrate Ihre
 
 #### <a name="object-pooling"></a>Objektpooling
 
-Objekt Pooling ist ein gängiges Verfahren, um die Kosten von kontinuierlichen Zuordnungen und Aufhebungen von Objekten zu verringern. Dies erfolgt durch die Zuordnung eines großen Pools identischer Objekte und die Wiederverwendung inaktiver, verfügbarer Instanzen aus diesem Pool, anstatt ständig Objekte im Zeitverlauf zu erzeugen und zu zerstören. Objekt Pools eignen sich hervorragend für wiederverwendbare Komponenten, die während einer APP über eine Variablen Lebensdauer verfügen.
+Objekt Pooling ist ein gängiges Verfahren, um die Kosten von kontinuierlichen Zuordnungen und Aufhebungen von Objekten zu verringern. Dies erfolgt durch Zuordnen eines großen Pools identischer Objekte und Wiederverwendung inaktiver, verfügbarer Instanzen aus diesem Pool, statt im Lauf der Zeit ständig neue Objekte zu erstellen und zu entfernen. Objektpools eignen sich hervorragend für wiederverwendbare Komponenten, die im Rahmen einer App eine variable Lebensdauer haben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Leistungsempfehlungen für Unity](../unity/performance-recommendations-for-unity.md)
 - [Empfohlene Einstellungen für Unity](../unity/recommended-settings-for-unity.md)
 - [Optimieren von 3D-Modellen](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)

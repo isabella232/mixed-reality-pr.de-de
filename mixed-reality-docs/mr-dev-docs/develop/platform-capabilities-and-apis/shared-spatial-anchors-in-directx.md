@@ -1,17 +1,17 @@
 ---
 title: Gemeinsame Raumanker in DirectX
-description: Erläutert, wie zwei hololens-Geräte synchronisiert werden, indem räumliche Anker gemeinsam genutzt werden.
+description: Erfahren Sie, wie Sie zwei hololens-Geräte synchronisieren, indem Sie lokale und Azure-Anker in DirectX-Anwendungen freigeben.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Hololens, synchronisieren, räumlicher Anker, Übertragung, Multiplayer, Ansicht, Szenario, Exemplarische Vorgehensweise, Beispielcode, Azure, räumliche Azure-Anker, ASA
-ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 46fe6be5d81a8fc68502500e318eb8e63d223089
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530330"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008530"
 ---
 # <a name="shared-experiences-in-directx"></a>Gemeinsam genutzte Umgebungen in DirectX
 
@@ -34,7 +34,8 @@ Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="https://d
 
 In Fällen, in denen Sie keine räumlichen Anker von Azure verwenden können, ermöglichen [lokale Anker Übertragungen](../../out-of-scope/local-anchor-transfers-in-directx.md) einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.  Diese Vorgehensweise bietet weniger robusten Anker als die räumlichen Azure-Anker, und IOS-und Android-Geräte werden von diesem Ansatz nicht unterstützt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
+
 * [Gemeinsame Erlebnisse in Mixed Reality](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">Azure Spatial Anchor SDK für hololens</a>

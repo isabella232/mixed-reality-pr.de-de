@@ -1,17 +1,17 @@
 ---
 title: In-App-Käufe
-description: In-App-Käufe werden in Mixed Reality-Apps unterstützt, aber es gibt einige Aufgaben, die Sie einrichten müssen.
+description: Erfahren Sie mehr über die Verwendung von in-App-Käufen in ihren Mixed Reality-apps mit 2D-XAML-Ansichten und Windows-Betriebssystem-Popup.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: in-App-Käufe, hololens, XAML, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757779"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008670"
 ---
 # <a name="in-app-purchases"></a>In-App-Käufe
 

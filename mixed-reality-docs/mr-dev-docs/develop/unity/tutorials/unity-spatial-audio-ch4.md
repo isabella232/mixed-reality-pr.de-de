@@ -1,26 +1,28 @@
 ---
-title: 'Lernprogramme für räumliche Audiodaten: 4. Aktivieren und Deaktivieren räumlicher Audiowiedergabe zur Laufzeit'
-description: Verwenden Sie eine Schaltfläche, um die Spatialisierung von Audiodaten zur Laufzeit zu aktivieren und zu deaktivieren.
+title: Aktivieren und Deaktivieren räumlicher Audiowiedergabe zur Laufzeit
+description: Erfahren Sie, wie Sie ein c#-Skript schreiben, das eine Schaltfläche verwendet, um die audiospatialisierung zur Laufzeit zu aktivieren und zu deaktivieren.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
-ms.openlocfilehash: c9e510e544962c5d1a4c462d20dafa222c6a5289
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002605"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007340"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>Aktivieren und Deaktivieren der Spatialisierung zur Laufzeit
 
 ## <a name="objectives"></a>Ziele
+
 In diesem vierten Kapitel gehen Sie wie folgt vor:
 * Hinzufügen eines neuen Skripts zum Steuern der Spatialisierung eines Spiel Objekts
 * Das spatialization-Steuerelement Skript aus Schaltflächen Aktionen Steuern
 
 ## <a name="add-spatialization-control-script"></a>Spatialization-Steuerelement Skript hinzufügen
+
 Klicken Sie mit der rechten Maustaste in den Bereich **Projekt** , und erstellen Sie ein neues c#-Skript, indem Sie **> c#-Skript erstellen** auswählen. Benennen Sie Ihr Skript mit dem Namen "spatializeonoff".
 
 ![Erstellen des Skripts](images/spatial-audio/create-script.png)
@@ -90,6 +92,7 @@ public class SpatializeOnOff : MonoBehaviour
 > Wenn Sie die spatialization vollständig deaktivieren möchten, ändern Sie das Skript so, dass auch die Eigenschaft **spatialization** booleschen der **SourceObject** -Variablen angepasst wird.
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>Fügen Sie das Skript an, und Steuern Sie es über die Schaltfläche
+
 Klicken Sie im Bereich **Inspector** des **Quad** auf **Komponente hinzufügen** , und fügen Sie das Skript **spatialize on off** hinzu:
 
 ![Skript zu Quad hinzufügen](images/spatial-audio/add-script-to-quad.png)
@@ -115,6 +118,7 @@ Nachdem diese Änderungen vorgenommen wurden, sieht die **interactable** -Kompon
 ![Schaltflächen Aktions Einstellungen](images/spatial-audio/button-action-settings.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Testen Sie Ihre APP auf einem hololens 2 oder im Unity-Editor. In der App können Sie nun auf die Schaltfläche klicken, um die Spatialisierung im Video zu aktivieren und zu deaktivieren. Wenn Sie im Unity-Editor testen, drücken Sie die Leertaste, und Scrollen Sie mit dem Mausrad, um die Hand Simulation zu aktivieren. 
 
 > [!div class="nextstepaction"]

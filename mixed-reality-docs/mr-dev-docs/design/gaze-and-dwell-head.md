@@ -1,17 +1,17 @@
 ---
 title: Anvisieren mit dem Kopf und Verweilen
-description: Übersicht über das Eingabemodell „Anvisieren mit dem Kopf und Verweilen“
+description: Beginnen Sie mit einer Übersicht über das Head-and-Dwell-Eingabe Modell, einschließlich gängiger Szenarien und Entwurfs Prinzipien.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, UX, Richtlinien, Listenansicht
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847367"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007080"
 ---
 # <a name="head-gaze-and-dwell"></a>Anvisieren mit dem Kopf und Verweilen
 
@@ -182,7 +182,7 @@ Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionie
 
 ---
  
- ## <a name="see-also"></a>Weitere Informationen
+ ## <a name="see-also"></a>Siehe auch
 
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Hände – Direkte Manipulation](direct-manipulation.md)

@@ -1,17 +1,17 @@
 ---
 title: Holographic-Remoting hinzufügen
-description: Erläutert die Verwendung von Holographic Remoting zum Rendering von holograms in einem hololens über das Netzwerk.
+description: Erfahren Sie, wie Sie Holographic Remoting installieren, konfigurieren und verwenden, um Hologramme auf einem hololens-Gerät über das Netzwerk zu erzeugen.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 68c1dd43dac4830da061d4900ce768692057e781
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530306"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006670"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>Holographic-Remoting hinzufügen (hololens (erste Generation))
 

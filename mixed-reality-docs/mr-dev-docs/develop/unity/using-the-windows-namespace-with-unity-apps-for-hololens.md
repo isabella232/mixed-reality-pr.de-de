@@ -1,17 +1,17 @@
 ---
 title: WinRT-APIs mit Unity für hololens
-description: Erläutert, wie Sie WinRT-APIs (den Windows-Namespace) in Ihrem Unity-Projekt für hololens verwenden.
+description: 'Leanr: Verwenden von WinRT-APIs und des Windows-Namespace in ihren Unity Mixed Reality-Projekten für hololens.'
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, Windows Mixed Reality, API, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Mixed Reality-APIs
-ms.openlocfilehash: ff12df7eb41350fe1f842b3450f3532e4ab8ffa1
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010581"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007320"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>WinRT-APIs mit Unity für hololens
 
@@ -64,6 +64,6 @@ public class WinRTAPI : MonoBehaviour {
 
 Wenn Sie im Unity-Editor auf ein Skript doppelklicken, wird das Skript standardmäßig in einem Editor-Projekt gestartet. Die WinRT-APIs scheinen unbekannt zu sein, da das Visual Studio-Projekt nicht auf das Windows-Runtime verweist. Die **ENABLE_WINMD_SUPPORT** -Direktive ist nicht definiert, und jeder *#if* umschließende Code wird ignoriert, bis Sie das Projekt in eine UWP Visual Studio-Projekt Mappe erstellen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Exportieren und Erstellen einer Unity-Projektmappe für Visual Studio](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Windows-Runtime Unterstützung von Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)

@@ -1,17 +1,17 @@
 ---
 title: Referenz der Geräteportal-API
-description: API-Referenz für das Windows-Geräte Portal auf hololens
+description: Bleiben Sie auf dem neuesten Stand der Windows-Geräte Portal-API für die hololens-Entwicklung.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Hololens, Windows-Geräte Portal, API, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
-ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
+ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97804429"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006650"
 ---
 # <a name="device-portal-api-reference"></a>Referenz der Geräteportal-API
 
@@ -297,7 +297,7 @@ Beispiel:
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-### <a name="other"></a>Sonstiges
+### <a name="other"></a>Sonstige
 
 **/API/Holographic/mapmanager/resetmapandanchorsandsrdb (Post)**
 
@@ -696,6 +696,6 @@ Parameter
 Daten zurückgeben
 * Beim Start wird der WPR-Sitzungs Status zurückgegeben.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Verwenden des Windows-Geräteportals](using-the-windows-device-portal.md)
 * [API-Referenz für den Geräte Portal (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)

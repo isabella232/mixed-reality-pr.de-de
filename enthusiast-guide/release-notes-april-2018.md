@@ -1,17 +1,17 @@
 ---
 title: Anmerkungen zu dieser Version-April 2018
-description: Hololens und Windows Mixed Reality-Versions Hinweise für das Windows 10-Update vom April 2018 (auch bekannt als "RS4").
+description: Bleiben Sie auf dem neuesten Stand mit den Versions Anmerkungen zu hololens und Windows Mixed Reality für das Update von Windows 10 April 2018/RS4.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: Anmerkungen zu dieser Version, Version, Windows 10, Build, RS4, OS
-ms.openlocfilehash: 42d22feb582716be5ab0bd24ade4a8566dddb5cf
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725971"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009240"
 ---
 # <a name="release-notes---april-2018"></a>Anmerkungen zu dieser Version-April 2018
 
@@ -266,7 +266,7 @@ Verwenden [Sie die Feedback-Hub-App auf Ihren hololens oder Windows 10-PCs](http
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Immersive Headset-Unterstützung (externer Link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Hololens-Unterstützung (externer Link)](https://support.microsoft.com/products/hololens)
 * [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

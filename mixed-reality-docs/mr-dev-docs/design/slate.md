@@ -1,17 +1,17 @@
 ---
 title: Filmklappe
-description: Ein Slate ist ein schlankes Fenster Stil-Steuerelement zum Anzeigen von 2D-Inhalt.
+description: Schlank über Slates, ein schlankes Fenster Stil Steuerelement zum Anzeigen von 2D-Inhalten mit dem Mixed Reality Toolkit.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Slate, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848223"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008810"
 ---
 # <a name="slate"></a>Filmklappe
 
@@ -31,7 +31,7 @@ Ein Slate ist ein schlankes Fenster Stil Steuerelement für die Anzeige von 2D-I
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

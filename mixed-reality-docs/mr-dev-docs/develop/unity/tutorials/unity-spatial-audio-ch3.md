@@ -1,19 +1,20 @@
 ---
-title: 'Lernprogramme für räumliche Audiodaten: 3. Versehen des Audiosignals eines Videoclips mit räumlichen Effekten'
-description: Importieren Sie ein Video Medienobjekt in Ihr Unity-Projekt, und räumlichen Sie die Audiodaten aus dem Video.
+title: Versehen des Audiosignals eines Videoclips mit räumlichen Effekten
+description: Erfahren Sie, wie Sie ein Video Medienobjekt in Ihr Unity Mixed Reality-Projekt importieren und die Audiodaten aus dem Video eingrenzen.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Video Import, Video Player
-ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002625"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007411"
 ---
 # <a name="spatializing-audio-from-a-video"></a>Versehen des Audiosignals eines Videoclips mit räumlichen Effekten
+
 In diesem dritten Kapitel des Moduls Spatial-Audiodaten der Unity-Lernprogramme hololens 2 werden Sie Folgendes tun:
 * Importieren eines Videos und Hinzufügen eines Video Players
 * Video auf einem Quadranten abspielen
@@ -40,6 +41,7 @@ Fügen Sie als nächstes der **Hierarchie** ein **Video Player** -Objekt hinzu, 
 ![Video Player in der Hierarchie](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>Abspielen von Videos auf einem Quadranten
+
 Das **Video Player** -Objekt benötigt ein texturiertes Spielobjekt, auf dem das Video dargestellt werden soll. Fügen Sie zunächst der **Hierarchie** ein **Quad** hinzu, indem Sie mit der rechten Maustaste auf den Bereich **Hierarchie** klicken und **3D-Objekt-> Quad**:
 
 ![Quad zur Hierarchie hinzufügen](images/spatial-audio/add-quad-to-hierarchy.png)
@@ -74,6 +76,7 @@ Der **Inspektor** -Bereich für den **Video Player** sieht nun wie folgt aus:
 ![Video Player-Eigenschaften](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>Spatialisieren der Audiodaten aus dem Video
+
 Erstellen Sie im **Inspektor** -Bereich **für das** vierfache eine **Audioquelle** , an die Sie die Audiodatei aus dem Video weiterleiten:
 * Klicken Sie am unteren Rand des Bereichs auf **Komponente hinzufügen** .
 * Hinzufügen einer **Audioquelle**
@@ -96,6 +99,7 @@ Nachdem diese Änderungen vorgenommen wurden, sieht der Bereich **Inspector** f�
 ![Video Player-Audioquelle festlegen](images/spatial-audio/video-player-set-audio-source.png)
 
 ## <a name="next-steps"></a>Nächste Schritte
+
 Testen Sie Ihre APP auf einem hololens 2 oder im Unity-Editor. Sie sehen und hören das Video, und die Audiodaten aus dem Video werden räumlich.
 
 > [!div class="nextstepaction"]

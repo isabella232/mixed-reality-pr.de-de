@@ -1,14 +1,14 @@
 ---
 title: Verwenden von "steamvr" mit Windows Mixed Reality
-description: Wiedergabe von steamvr-spielen auf Windows Mixed Reality-Headsets mit kompatiblen PCs.
+description: Erfahren Sie, wie Sie steamvr-Spiele auf Windows Mixed Reality-Headsets und-Controllern mit kompatiblen PCs einrichten und wiedergeben.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Games, steamvr, Steam, System Requirements
-ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725741"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006900"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Verwenden von "steamvr" mit Windows Mixed Reality
 
@@ -155,7 +155,7 @@ Ihr Feedback ist äußerst nützlich, wenn es um die Verbesserung der Windows Mi
 
 Wenn Sie Fragen oder Kommentare haben, die Sie freigeben können, können Sie uns auch in unserem [Steam-Forum](http://steamcommunity.com/app/719950/discussions/)erreichen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Problembehandlung bei "steamvr" mit Windows Mixed Reality](steamvr-questions.md)
 * [Verwenden von spielen und apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

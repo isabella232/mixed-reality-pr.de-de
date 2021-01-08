@@ -1,17 +1,17 @@
 ---
-title: 'Fallstudie: Verwenden der Stabilisierungs Ebene zum Reduzieren von Holographic-Turbulenzen'
-description: Verwenden der Stabilisierungsebene, um holographische Turbulenzen zu verringern
+title: 'Fallstudie: Verwenden der Stabilisierungs Ebene'
+description: Erfahren Sie, wie unser Entwicklungsteam die Stabilisierungs Ebene verwendet hat, um holografische Turbulenzen in einer Mixed Reality-Anwendung zu reduzieren.
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Stabilisierung, Fallstudie, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530433"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006700"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>Fallstudie: Verwenden der Stabilisierungs Ebene zum Reduzieren von Holographic-Turbulenzen
 
@@ -97,7 +97,7 @@ Wenn Sie eine neue Konfiguration der Punkte sehen, können Sie auf das Recht kli
 </tr>
 </table>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [MR-Grundlagen 100: Erste Schritte mit Unity](../unity/tutorials/holograms-100.md)
 * [Fokuspunkt in Unity](../unity/focus-point-in-unity.md)
 * [Hologrammstabilität](hologram-stability.md)

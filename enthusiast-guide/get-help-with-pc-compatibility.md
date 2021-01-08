@@ -1,6 +1,6 @@
 ---
-title: Hilfe zur PC-Kompatibilität in Windows Mixed Reality
-description: Hilfe Ressourcen für PC-Kompatibilitätsprobleme bei der Arbeit mit Windows Mixed Reality.
+title: Hilfe zur PC-Kompatibilität
+description: Bleiben Sie auf dem neuesten Stand mit Ressourcen zum Lösen von PCs-Kompatibilitätsproblemen bei der Arbeit mit Windows Mixed Reality-Anwendungen und-Geräten.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 01/07/2021
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: a3d8c21a6f9f94cbecca81915145603588e468ff
-ms.sourcegitcommit: e944f24d2deb4433865cc8f6fd9305d6d9676f48
+ms.openlocfilehash: e3d150544c3bce99d1aa808229d282b3d2fe1dd0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97971899"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007480"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Hilfe zur PC-Kompatibilität in Windows Mixed Reality
 

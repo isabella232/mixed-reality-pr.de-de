@@ -1,17 +1,17 @@
 ---
 title: Problembehandlung und Einschränkungen für Holographic Remoting
-description: Schritte zur Problembehandlung für Holographic Remoting auf hololens 2.
+description: Hier finden Sie Ressourcen zur Problembehandlung und Anweisungen für die Holographic Remoting-Funktion auf hololens 2-Geräten.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Holographic Remoting, Remote Rendering, Netzwerk Rendering, hololens, Remote holograms, Problembehandlung, Hilfe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ee1dce72af02374e930de4a1bdff94285c7a84ae
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530186"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006450"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Problembehandlung bei Holographic Remoting
 
@@ -24,7 +24,7 @@ Für Holographic Remoting-Beispiel-Apps ist Spectre Entschärfung (/Qspectre) in
 
 Wenn die Datei " *vccorlib. lib" nicht geöffnet werden kann* , sollten Sie sicherstellen, dass die Visual Studio-Arbeitsauslastung die von [Spectre abgeminderten Bibliotheken](https://aka.ms/Ofhn4c) enthält.
 
-## <a name="speech"></a>Spracheingabe/-ausgabe
+## <a name="speech"></a>Speech
 
 Der Holographic Remoting Player unterstützt ein diagnoseoverlay, das durch das sagen von aktiviert ```Enable Diagnostics``` und deaktiviert werden kann ```Disable Diagnostics``` . Wenn Sie Probleme mit diesen Sprachbefehlen haben, können Sie den Holographic Remoting Player auch über einen Webbrowser starten, indem Sie ```ms-holographic-remoting:?stats``` als URL verwenden.
 

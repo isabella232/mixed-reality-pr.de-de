@@ -1,6 +1,6 @@
 ---
 title: 'Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup'
-description: Hier erhalten Sie Antworten auf häufig gestellte Fragen zum Setup, wenn Sie mit Windows Mixed Reality arbeiten.
+description: Hier erhalten Sie Antworten auf häufig gestellte Fragen zum Setup bei der Arbeit mit Windows Mixed Reality-Anwendungen und-Geräten.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725441"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008630"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup
 
@@ -158,7 +158,7 @@ Wenn dies nicht der Fall ist:
     3. Wenn Ihre Motion-Controller mit Ihrem PC gekoppelt sind, wählen Sie **Einstellungen > Geräte > Bluetooth & andere Geräte** aus, um Sie zu entkoppeln. Wählen Sie jeden Controller und dann "Gerät entfernen" aus. Wenn Ihre Controller mit Ihrem Headset gekoppelt sind, können Sie diesen Schritt überspringen.
     4. Anschließen Sie Ihr Headset wieder an Ihren PC, um Windows Mixed Reality neu zu installieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

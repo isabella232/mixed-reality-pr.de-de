@@ -1,26 +1,28 @@
 ---
-title: Lernprogramme für räumliche Audiodaten-5. Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
-description: Fügen Sie einen Hall Effekt hinzu, um den Sinn der Abstands Variation zu räumlichem Audiomaterial zu verbessern.
+title: Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
+description: Erfahren Sie, wie Sie einen einfügeeffekt hinzufügen, um den Sinn der Abstands Variation zu räumlichem Audiomaterial in einer Mixed Reality-Anwendung zu erweitern
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Audiomixer, SFX-Reverb
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002615"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006360"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
 
 ## <a name="objectives"></a>Ziele
+
 In den vorherigen Kapiteln haben wir den Sound spatialization hinzugefügt, um Ihnen einen Eindruck von der Richtung zu vermitteln. In diesem fünften Kapitel fügen wir einen "Reverb"-Effekt hinzu, um Klänge einen Eindruck von der Entfernung zu geben. Unsere Ziele lauten:
 * Verbessern der erkannten Entfernung von Soundquellen durch Hinzufügen von Reverb
 * Den erkannten Abstand des Sounds mithilfe der Entfernung des Listener zum – Hologramm Steuern
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Hinzufügen einer mischkeitsgruppe und eines einfügenden Effekts
+
 In [Kapitel 2](unity-spatial-audio-ch2.md)haben wir einen Mixer hinzugefügt. Der Mixer enthält standardmäßig eine **Gruppe** namens **Master**. Da wir nur einen "Hall"-Effekt auf einige Sounds anwenden möchten, fügen wir eine zweite **Gruppe** für diese Sounds hinzu. Um eine **Gruppe** hinzuzufügen, klicken Sie mit der rechten Maustaste auf die **Master** Gruppe im **Audiomixer** und wählen untergeordnete **Gruppe hinzufügen** aus:
 
 ![Untergeordnete Gruppe hinzufügen](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ Nachdem diese Änderungen vorgenommen wurden, sieht der **inspektorbereich** des
 Mit den anderen Einstellungen wird das Gefühl des simulierten Raums gesteuert. Die **verwahrzeit** bezieht sich insbesondere auf die wahrgenommene Raum Größe. 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>Aktivieren von "Reverb" für die Videowiedergabe
+
 Zum Aktivieren von "Reverb" in einer Audioquelle müssen zwei Schritte ausgeführt werden:
 * Leiten Sie die **Audioquelle** an die entsprechende **Gruppe** weiter.
 * Festlegen des **Microsoft spatializer** -Plug-ins, um Audioinformationen zur Verarbeitung an die **Gruppe** zu übergeben

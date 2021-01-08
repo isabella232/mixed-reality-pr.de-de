@@ -1,17 +1,17 @@
 ---
 title: Typen von Mixed Reality-apps
-description: Erfahren Sie mehr über das Spektrum der Erfahrungen, die die Mixed Reality-Plattform unterstützen kann, von vollständig immersiven Umgebungen bis hin zu hellen Informationen über die aktuelle Umgebung eines Benutzers.
+description: Erfahren Sie mehr über die von der Mixed Reality-Plattform unterstützten Oberflächen, von immersiven Umgebungen bis hin zu hellen Informationen über die Umgebung eines Benutzers.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Design, App Patterns, Mixed Reality Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848105"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007620"
 ---
 # <a name="types-of-mixed-reality-apps"></a>Typen von Mixed Reality-apps
 

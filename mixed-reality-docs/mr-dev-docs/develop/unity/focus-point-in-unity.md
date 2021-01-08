@@ -1,17 +1,17 @@
 ---
 title: Fokuspunkt in Unity
-description: Manuelles Optimieren der – Hologramm-Stabilität in Unity durch Festlegen des Fokus Punkts
+description: Erfahren Sie, wie Sie die – Hologramm-Stabilität in Unity manuell optimieren, indem Sie den Fokuspunkt für hololens und Windows Mixed Reality-immersive Headsets festlegen.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Fokuspunkt, Fokusebene, Stabilisierungs Ebene, Stabilisierungs Punkt, neuprojektion, LSR, tiefen Puffer, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010271"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009340"
 ---
 # <a name="focus-point-in-unity"></a>Fokuspunkt in Unity
 
@@ -66,4 +66,5 @@ Oder wechseln Sie direkt zur Bereitstellung Ihrer App auf einem Gerät oder Emul
 Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#3-platform-capabilities-and-apis) zurückkehren.
 
 ### <a name="see-also"></a>Siehe auch
+
 * [Stabilisierungs Ebene](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

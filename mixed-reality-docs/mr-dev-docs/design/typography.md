@@ -1,17 +1,17 @@
 ---
 title: Typografie
-description: Text ist ein wichtiges Element zum Bereitstellung von Informationen in ihrer App-Funktion.
+description: Erfahren Sie, wie Sie Text als wichtiges Element für die Bereitstellung von Informationen in ihrer gemischten Realität-App entwerfen und implementieren.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Style, Font, Typografie, UI, UX, Text, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
-ms.openlocfilehash: 09e0e6029011fdd7fda793f6b6645cb3744baa3b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848139"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007650"
 ---
 # <a name="typography"></a>Typografie
 
@@ -129,7 +129,7 @@ In den meisten Fällen funktioniert Segoe UI (die Standard Schriftart für Windo
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Text in Unity](../develop/unity/text-in-unity.md)
 * [Farbe, Licht und Materialien](../color,-light-and-materials.md)

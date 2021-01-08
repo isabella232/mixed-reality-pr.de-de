@@ -1,17 +1,17 @@
 ---
 title: Dialog
-description: Erfahren Sie mehr über Dialogfelder und deren Verwendung in Mixed Reality-Anwendungen.
+description: Erfahren Sie mehr über Dialog Überlagerungen in mrtk und deren Verwendung in Anwendungen mit gemischter Realität.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Gemischte Realität, hololens, UI-Steuerelemente, Interaktion, UI, UX, UX-Entwurf, räumliche Benutzeroberfläche, räumliche Interaktion, 3D-Benutzeroberfläche, 3D-UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847453"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009050"
 ---
 # <a name="dialog"></a>Dialog
 
@@ -39,7 +39,7 @@ Mrtk bietet Dialogfeld Steuerung in drei Größen mit einer oder zwei Schaltflä
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

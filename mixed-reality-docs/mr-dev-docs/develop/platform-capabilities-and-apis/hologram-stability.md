@@ -8,12 +8,12 @@ ms.topic: article
 keywords: holograms, Stabilität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Framerate, Rendering, neuprojektion, Farbtrennung
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808831"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006640"
 ---
 # <a name="hologram-stability"></a>Hologrammstabilität
 
@@ -66,7 +66,7 @@ Konvergenz und Unternehmen sind einzigartig, da ihre zusätzlichen Verb-Retinal-
 
 Benutzer, die hololens durchführen, können immer 2,0 Mio. erreichen, um ein klares Bild zu erhalten, da die hololens-Anzeige in einer optischen Entfernung von ungefähr 2,0 m vom Benutzer korrigiert wird. App-Entwickler steuern, wohin die Augen der Benutzer konvergiert werden, indem Sie Inhalte und Hologramme in verschiedenen Tiefen platzieren. Wenn Benutzer unterschiedliche Entfernungen aufnehmen und mit Ihnen zusammenführen, ist die natürliche Verknüpfung zwischen den beiden hinweisen fehlerhaft, was zu einem visuellen Unbehagen oder Müdigkeit führen kann, insbesondere wenn die Größe des Konflikts sehr groß ist. 
 
-Die Unannehmlichkeiten aus dem Vergence--Unterbringungs Konflikt können vermieden oder minimiert werden, indem konvergierter Inhalt so nah wie möglich an 2,0 m gehalten wird (also in einer Szene mit sehr viel Tiefe, wenn möglich, die interessanten Bereiche in der Nähe von 2,0 m). Wenn Inhalte in der Nähe von 2,0 Mio. nicht platziert werden können, ist das Problem des Konflikts mit der Vergence-Unterkunft am größten, wenn der Benutzer zwischen den verschiedenen Entfernungen hin und her sucht. Anders ausgedrückt: Es ist viel besser, sich ein stationäres – Hologramm anzusehen, das 50 cm entfernt bleibt, als ein – Hologramm 50 cm zu betrachten, das sich im Laufe der Zeit von Ihnen hin und her bewegt.
+Die Unannehmlichkeiten aus dem Vergence--Unterbringungs Konflikt können vermieden oder minimiert werden, indem konvergierter Inhalt so nah wie möglich an 2,0 m gehalten wird (also in einer Szene mit sehr viel Tiefe, wenn möglich, die interessanten Bereiche in der Nähe von 2,0 m). Wenn Inhalte in der Nähe von 2,0 Mio. nicht platziert werden können, ist das Problem des Konflikts mit der Vergence-Unterkunft am größten, wenn der Benutzer zwischen den verschiedenen Entfernungen hin und her sucht. Anders ausgedrückt, es ist viel angenehmer, ein stehendes Hologramm zu betrachten, das in 50 cm Entfernung bleibt, als ein Hologramm in 50 cm Entfernung zu betrachten, das sich im Lauf der Zeit auf Sie zu und von Ihnen weg bewegt.
 
 Das Platzieren von Inhalten auf 2,0 m ist ebenfalls vorteilhaft, da die beiden anzeigen so konzipiert sind, dass Sie sich in dieser Entfernung vollständig überlappen Bei Bildern, die auf dieser Ebene platziert werden, werden Sie, wenn Sie sich von der Seite des Holographic Frame bewegen, von einem Bildschirm angezeigt, während Sie auf dem anderen angezeigt werden. Diese binare Rivalität kann die Tiefe Wahrnehmung des holograms stören.
 
@@ -144,7 +144,7 @@ Das wichtigste, was ein Entwickler zum stabilisieren von holograms tun kann, ist
 
 **Bewährte Methoden** Es gibt keine universelle Methode zum Einrichten der Stabilisierungs Ebene und ihrer App-spezifischen. Unsere Hauptempfehlung besteht darin, zu experimentieren und zu sehen, was für Ihr Szenario am besten geeignet ist. Versuchen Sie jedoch, die Stabilisierungs Ebene mit so vielen Inhalten wie möglich auszurichten, da der gesamte Inhalt auf dieser Ebene vollständig stabilisiert ist.
 
-Zum Beispiel:
+Beispiel:
 * Wenn Sie nur planare Inhalte haben (Lesen der APP, Videowiedergabe-APP), richten Sie die Stabilisierungs Ebene mit der Ebene aus, die ihren Inhalt enthält.
 * Wenn es drei kleine Bereiche gibt, die weltweit gesperrt sind, nehmen Sie die Stabilisierungs Ebene in den Mittelpunkt aller Bereiche, die sich derzeit in der Ansicht des Benutzers befinden.
 * Wenn Ihre Szene Inhalte in deutlich unterschiedlichen Tiefen hat, bevorzugen Sie weitere Objekte.
@@ -181,7 +181,7 @@ Obwohl es schwierig ist, die Trennung von Farben vollständig zu vermeiden, steh
 
 Wie zuvor sind das Rendering bei 60 fps und das Festlegen der Stabilisierungs Ebene die wichtigsten Techniken für die – Hologramm-Stabilität. Stellen Sie zunächst sicher, dass die Framerate den Erwartungen entspricht, wenn Sie mit einer merkbaren Farbtrennung
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Grundlegendes zur Leistung für gemischte Realität](understanding-performance-for-mixed-reality.md)
 * [Farbe, Licht und Materialien](../../color,-light-and-materials.md)
 * [Instinktive Interaktionen](../../design/interaction-fundamentals.md)

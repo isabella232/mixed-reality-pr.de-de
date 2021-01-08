@@ -1,6 +1,6 @@
 ---
 title: Vorbereitung
-description: Stellen Sie sicher, dass Ihr PC mit Windows Mixed Reality kompatibel ist und damit fertig ist.
+description: Erfahren Sie, wie Sie sicherstellen, dass Ihr PC kompatibel ist und für eine Vielzahl von Windows Mixed Reality-Anwendungsumgebungen bereit ist.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, kompatibel, Kompatibilität, Einstieg, Setup, PC, Systemanforderungen
 appliesto:
 - Windows 10
-ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725491"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006880"
 ---
 # <a name="before-you-start"></a>Vorbereitung
 
@@ -84,7 +84,7 @@ Wenn Sie "sitzend und stehend" auswählen, verwenden Sie das Headset ohne Begren
 
 Wenn Sie sich für "Alle Benutzeroberflächen" entscheiden, richten Sie eine Grenze ein und können sich um App-Umgebungen bewegen, die mit einer Grenze arbeiten und die nicht erforderlich sind. Bereiten Sie den Speicherplatz vor, indem Sie sicherstellen, dass es keine Hindernisse, Gefahren oder empfindliche Elemente in dem Bereich gibt, den Sie verwenden werden, einschließlich oberhalb ihres Kopfes. Richten Sie nicht am oberen Rand einer Treppe oder unter einem Lüfter mit sehr niedriger Obergrenze ein. Entfernen Sie Break Ables und Hindernisse aus dem Bereich, und stellen Sie sicher, dass jeder, der Ihr Headset verwendet, die [Sicherheitsrichtlinien](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)liest und versteht.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Einbinden Ihres HMD](plug-in-your-headset.md)
 * [Minimale Hardwareanforderungen für PCs](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

@@ -1,17 +1,17 @@
 ---
-title: Lernprogramme für räumliche Audiodaten-1. Hinzufügen räumlicher Audiodaten zu Ihrem Projekt
+title: Hinzufügen räumlicher Audiodaten zu Ihrem Projekt
 description: Fügen Sie das Microsoft spatializer-Plug-in zu Ihrem Unity-Projekt hinzu, um auf hololens 2 HRTF Hardware Offload zuzugreifen.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
-ms.openlocfilehash: 8790c4c62ab4c1b2b9e9f9c5c6fe0583b9e36545
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 80bf19e8a091bd241e28afff0a42c13ca72e1d45
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002505"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007470"
 ---
 # <a name="adding-spatial-audio-to-your-unity-project"></a>Hinzufügen räumlicher Audiodaten zu Ihrem Unity-Projekt
 
@@ -24,9 +24,11 @@ Das [GitHub-Repository für Microsoft spatializer](https://github.com/microsoft/
 Ein Verständnis dafür, wie Sie Sounds mithilfe von HRTF-basierten spatialisierungs Technologien und Empfehlungen für den Fall, dass es hilfreich sein kann, spatialisieren können, finden Sie unter [Spatial Sound Design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
 
 ## <a name="what-is-hrtf-offload"></a>Was ist HRTF Offload?
+
 Die Verarbeitung von Audiodaten mithilfe von HRTF-basierten Algorithmen erfordert eine große Menge an spezieller Berechnung. Hololens 2 umfasst dedizierte Hardware, die verwendet werden kann, um die Belastung des Anwendungs Prozessors zu vermeiden und so die Verarbeitung von HRTF-basierten Algorithmen zu verlagern.  Das Microsoft spatializer-Plug-in ist eine einfache Möglichkeit für Ihre Anwendung, die dedizierte HRTF-Hardware zu nutzen, damit Ihre Anwendung mehr Anwendungs Prozessor für andere Vorgänge als räumliche Audiodaten verwenden kann.
 
 ## <a name="objectives"></a>Ziele
+
 In diesem ersten Kapitel gehen Sie wie folgt vor:
 * Erstellen eines Unity-Projekts und Importieren von mrtk
 * Importieren des Microsoft spatializer-Plug-ins
@@ -34,6 +36,7 @@ In diesem ersten Kapitel gehen Sie wie folgt vor:
 * Aktivieren räumlicher Audiodaten auf Ihrer Entwickler Arbeitsstation
 
 ## <a name="create-a-project-and-add-nuget-for-unity"></a>Erstellen eines Projekts und Hinzufügen von nuget für Unity
+
 Beginnen Sie mit einem leeren Unity-Projekt, und fügen Sie nuget für Unity hinzu, und konfigurieren Sie es:
 1. Herunterladen des neuesten [nugetforunity. unitypackage](https://github.com/GlitchEnzo/NuGetForUnity/releases/latest)
 2. Klicken Sie in der Unity-Menüleiste auf **Assets-> Paket importieren > benutzerdefiniertes Paket...** , und installieren Sie das nugetforunity-Paket:
@@ -41,6 +44,7 @@ Beginnen Sie mit einem leeren Unity-Projekt, und fügen Sie nuget für Unity hin
 ![Benutzerdefiniertes Paket importieren](images/spatial-audio/import-custom-package.png)
 
 ## <a name="add-the-windows-mixed-reality-package"></a>Hinzufügen des Windows Mixed Reality-Pakets
+
 Die Unterstützung von Windows Mixed Reality in Unity 2019 und höher ist in einem optionalen Paket enthalten. Um Sie dem Projekt hinzuzufügen, öffnen Sie die **Fenster > Paket-Manager** über die Unity-Menüleiste:
 
 ![Paket-Manager-Menü](images/spatial-audio/package-manager-menu.png)
@@ -50,6 +54,7 @@ Suchen und installieren Sie dann das **Windows Mixed Reality** -Paket:
 ![Paket-Manager-Fenster](images/spatial-audio/package-manager-window.png)
 
 ## <a name="install-mrtk-and-microsoft-spatializer"></a>Installieren von mrtk und Microsoft spatializer
+
 Installieren Sie mithilfe von nuget für Unity die mrtk-und Microsoft spatializer-Plug-ins:
 1. Klicken Sie in der Unity-Menüleiste auf **nuget-> nuget-Pakete verwalten**.
 
@@ -81,11 +86,13 @@ Das [mrtk-nuget-Paket](https://microsoft.github.io/MixedRealityToolkit-Unity/Doc
 Weitere Anleitungen, einschließlich der Erstellung der APP und Bereitstellung auf einem hololens 2, finden Sie in [Kapitel 1 des Lern Basismoduls von Mr](../../../mrlearning-base-ch1.md).
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Aktivieren des Microsoft spatializer-Plug-ins
+
 Aktivieren Sie das **Microsoft spatializer** -Plug-in. Öffnen Sie die **Projekteinstellungen bearbeiten-> > Audiodatei**, und ändern Sie das **spatializer-Plug** -in in "Microsoft spatializer". Der **Audioabschnitt** der **Projekteinstellungen** sieht nun wie folgt aus:
 
 ![Projekteinstellungen mit dem spatializer-Plug-in](images/spatial-audio/project-settings.png)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>Aktivieren räumlicher Audiodaten auf Ihrer Arbeitsstation
+
 Unter Desktop Versionen von Windows ist das räumliche Audioformat standardmäßig deaktiviert. Aktivieren Sie diese Option, indem Sie in der Taskleiste mit der rechten Maustaste auf das Volume-Symbol klicken. Um die beste Darstellung von hololens 2 zu erhalten, wählen Sie **räumliches Sound-> Windows-Sonic für Kopfhörer aus**.
 
 ![Desktop Einstellungen für räumliche Desktops](images/spatial-audio/desktop-audio-settings.png)

@@ -1,17 +1,17 @@
 ---
 title: 'MR und Azure 313: IoT Hub-Dienst'
-description: In diesem Kurs erfahren Sie, wie Sie Azure IOT Hub-Dienst auf einem virtuellen Computer mit Ubuntu 16,4 implementieren und anschließend die Nachrichten Daten mithilfe von Microsoft hololens oder einem immersiven (VR)-Headset visualisieren.
+description: Erfahren Sie, wie Sie Azure IOT Hub-Dienst auf einem virtuellen Computer mit Ubuntu 16,4 implementieren und die Nachrichten Daten mithilfe von Microsoft hololens oder VR-Headset visualisieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Edge, IOT Edge, Tutorial, API, Benachrichtigung, Funktionen, Tabellen, hololens, immersive, VR, IOT, Virtual Machine, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: 2a642bad363d86e37ca2d6c00ebf1ebb73908dec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679509"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009300"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR und Azure 313: IoT Hub-Dienst
 
@@ -390,7 +390,7 @@ Nun können Sie mit dem Einrichten Ihres Geräts fortfahren, auf dem **Ubuntu OS
 
 An diesem Punkt müssen Sie den Container mit dem-Modul erstellen, damit er in die *Container Registry* übermittelt werden kann. Nachdem Sie den Container per Pushvorgang übermittelt haben, verwenden Sie den *IOT Hub Edge* -Dienst, um ihn auf Ihrem Gerät bereitzustellen, auf dem die *IOT Edge Laufzeit* ausgeführt wird.
 
-1. Klicken Sie in vs Code **View** auf  >  **Befehls Palette** anzeigen.
+1. Klicken Sie in vs Code auf  >  **Befehls Palette** anzeigen.
 
 2. Suchen Sie in der Palette nach **Azure IOT Edge: neue IOT Edge-Lösung**, und führen Sie Sie aus.
 
@@ -916,7 +916,7 @@ Nachdem Sie das Speicher **Dienst** -Speicherkonto eingerichtet haben, ist es an
 
 1. Öffnen Sie **Visual Studio** (**nicht** Visual Studio Code).
 
-2. Klicken Sie im Menü auf **View**  >  **Cloud-Explorer** anzeigen.
+2. Klicken Sie im Menü auf   >  **Cloud-Explorer** anzeigen.
 
     ![Cloud-Explorer öffnen](images/AzureLabs-Lab313-45.png)
 

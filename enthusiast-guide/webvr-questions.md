@@ -1,14 +1,14 @@
 ---
 title: Webvr-FAQs
-description: Problembehandlung bei Web Mixed Reality, das über unsere standardmäßige Kundensupport Dokumentation hinausgeht.
+description: Bleiben Sie auf dem neuesten Stand, um die Problembehandlung für die gemischte Realität für Webanwendungen zu überschreiten
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, webvr
-ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: dc7a0b28e19f4f1fc029489aae2ea375e43b8d3b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725631"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008660"
 ---
 # <a name="webvr-faqs"></a>Webvr-FAQs
 

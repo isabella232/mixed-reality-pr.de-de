@@ -1,6 +1,6 @@
 ---
-title: 'Mixed Reality: Übersicht zur Software und Versionsverlauf'
-description: Eine Übersicht über die wichtigsten Softwarekomponenten für Windows Mixed Reality und deren releaseverlauf
+title: Software Übersicht und releaseverlauf
+description: Eine Übersicht über die wichtigsten Softwarekomponenten für Windows Mixed Reality, immersive Headsets und ihren releaseverlauf.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Software Components, releaseverlauf, Versions Hinweise, Versionsverlauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: 31adf0572482cb9857ff94c2b7ef3aee4fe538d9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726021"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009250"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Mixed Reality: Übersicht zur Software und Versionsverlauf
 
@@ -49,9 +49,11 @@ Wenn Sie ein Upgrade auf die neueste PC-Version für Windows Mixed Reality-(VR)-
 ### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>Updates für Windows Mixed Reality-immersive Headsets
 
 #### <a name="introducing-the-new-microsoft-edge"></a>Einführung in den neuen Microsoft Edge
+
 Wie [bereits angekündigt](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge), haben wir Aktualisierungen vorgenommen, um die Unterstützung für die Verwendung des neuen Microsoft Edge-Browsers in Windows Mixed Reality zu verbessern. Der neue Microsoft Edge übernimmt das Projekt "Chromium Open Source", um eine bessere webkompatibilität für Kunden und weniger Fragmentierung des Internets für alle Webentwickler zu erzielen. Es unterstützt auch webxr, den neuen Standard zum Erstellen von immersiven Webumgebungen für VR-Headsets anstelle von webvr.
 
 #### <a name="improved-settings-for-wmr"></a>Verbesserte Einstellungen für WMR
+
 Dank Ihres Feedbacks haben wir die Einstellungen auf der Seite für die Headset-Anzeige hinzugefügt und verdeutlicht:
 
 * Die **visuelle Qualität meiner zu Hause** ändernden Einstellungen wirkt sich nur auf die gemischte Umgebung in der Praxis aus ("Klippe House" und "SkyLoft"):
@@ -71,15 +73,18 @@ Dank Ihres Feedbacks haben wir die Einstellungen auf der Seite für die Headset-
 * **Eingabe wechseln** : Schalten Sie das Verhalten des Eingabefokus Schaltens (Win + Y) so um, dass es automatisch (basierend auf dem Anwesenheits Sensor-Feedback) oder manuell erfolgt.
 
 #### <a name="new-cortana-app"></a>Neue Cortana-App
+
 Dieses Update für Windows enthält die neueste Version der Cortana-APP, die zurzeit nur auf Englisch ist und einige gemischte, gemischte Befehle wie "Bild nehmen" und "Video nehmen" nicht mehr unterstützt. Sie können die neue Cortana zum Starten von Apps verwenden, und Sie unterstützt auch neue produktivitätsorientierte Befehle wie "Wann ist meine nächste Besprechung?". oder "Senden Sie eine e-Mail an <name> , dass ich später ausführe."
     
 #### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>Weitere Updates in 19041,546 verfügbar (veröffentlicht im Oktober 2020)
+
 Dieses Desktop-Update für die monatliche Wartung umfasst die folgenden Änderungen für Windows Mixed Reality-Geräte: 
 * Verringert die Verzerrung und die Abweichungen in Windows Mixed Reality (HMD). 
 * Fügt Unterstützung für bevorstehende HP Windows Mixed Reality Motion-Controller hinzu. 
 * Ändert das Verhalten der 90-Hz-Einstellung für die Aktualisierungsrate in Windows Mixed Reality so, dass in bestimmten Fällen nicht mehr automatisch zu 60 Hz gewechselt wird, wenn 90 Hz nicht erreicht werden kann. 
 
 #### <a name="help-us-improve"></a>Helfen Sie uns bei der Verbesserung!
+
 Wir werden kontinuierlich darauf achten, die Kompatibilität zu verbessern.  Wenn Sie feststellen, dass sich Ihre bevorzugte klassische Win32-Anwendung in Windows Mixed Reality nicht ordnungsgemäß verhält, übermitteln Sie Feedback über unseren [Feedback-Hub](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub).
 
 ### <a name="prior-release-notes"></a>Vorherige Anmerkungen zu dieser Version

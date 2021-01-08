@@ -1,17 +1,17 @@
 ---
 title: Gemeinsame Erlebnisse in Unity
-description: Verwenden Sie die gleichen holograms zwischen mehreren Benutzern in einer Unity-Anwendung.
+description: Erfahren Sie, wie Sie die gleichen holograms zwischen mehreren Benutzern in einer Unity-Anwendung mit räumlichen Azure-Ankern gemeinsam verwenden.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Sharing, Anchor, worldanchor, Mr Sharing 250, worldanchortransferbatch, spatialperception, Azure, Azure Spatial Anchor, ASA, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010090"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009280"
 ---
 # <a name="shared-experiences-in-unity"></a>Gemeinsame Erlebnisse in Unity
 

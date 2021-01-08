@@ -1,17 +1,17 @@
 ---
 title: Gesten und Motion-Controller in Unity
-description: Erfahren Sie, wie Sie mithilfe von Handgesten und Bewegungs Controllern Maßnahmen für Ihren Blick in Unity durchführen können.
+description: Erfahren Sie, wie Sie mit Handgesten und Bewegungs Controllern mit XR und allgemeinen Schaltflächen-/Axis-APIs Aktionen in Unity durchführen können.
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: Gesten, Bewegungs Controller, Unity, Blick, Eingabe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010321"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008790"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Gesten und Motion-Controller in Unity
 

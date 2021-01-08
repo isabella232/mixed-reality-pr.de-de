@@ -1,17 +1,17 @@
 ---
 title: Raumanker
-description: Bewährte Methoden für die Verwendung von Raumankern zum Rendern stabiler Hologramme.
+description: Erfahren Sie mehr über bewährte Methoden für die Verwendung räumlicher Anker zum Rendering stabiler Hologramme in gemischten Reality-Anwendungen.
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Koordinatensystem, geografischer Koordinatensystem, Welt Skalierbarkeit, Welt, Skalierung, Position, Ausrichtung, Anker, räumlicher Anker, weltweit gesperrt, Welt Sperre, Persistenz, Freigabe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848211"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009110"
 ---
 # <a name="spatial-anchors"></a>Raumanker
 
@@ -26,7 +26,7 @@ Für den Einsatz von Desktop-Headsets, die sich in einem Fünfdimensionalen Durc
 
 Obwohl Raumanker ideal für Hologramme sind, die in der Umgebung verankert bleiben sollen, kann ein Anker nach der Positionierung nicht mehr bewegt werden. Es gibt Alternativen zu ankern, die für dynamische Hologramme geeignet sind, die mit dem Benutzer versehen werden. Es ist am besten, dynamische Hologramme mithilfe eines stationären Frame Rahmens (Grundlage der Weltkoordinaten von Unity) oder eines angefügten Frame Bilds zu positionieren.
 
-## <a name="best-practices"></a>Bewährte Methoden
+## <a name="best-practices"></a>Empfohlene Methoden
 
 Diese Richtlinien für Raumanker helfen Ihnen, stabile Hologramme zu rendern, die die reale Welt präzise nachverfolgen.
 
@@ -71,7 +71,7 @@ Dies ist besonders wichtig für lokale Anker, die Sie im räumlichen Anker Speic
 
 Bei Cloudraumankern kann Ihr Speicher entsprechend den Anforderungen Ihres Szenarios skaliert werden. Sie können beliebig viele cloudananker speichern und freigeben, wenn Sie wissen, dass die Benutzer den Anker nicht mehr benötigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Koordinatensysteme](coordinate-systems.md)
 * [Gemeinsame Erlebnisse in Mixed Reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

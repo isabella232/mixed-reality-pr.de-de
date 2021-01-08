@@ -1,17 +1,17 @@
 ---
-title: Erweiterte Eingabe für HoloLens-Emulator und Mixed Reality-Simulator
+title: Erweiterter hololens-Emulator und gemischter Reality-Simulator
 description: Ausführliche Anweisungen für die Verwendung des Tastatur-, Maus-und Xbox-Controllers zum Simulieren von Eingaben für den hololens-Emulator und den Windows Mixed Reality-Simulator.
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: Hololens, Emulator, Simulation, Windows Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530453"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006680"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>Erweiterte Eingabe für HoloLens-Emulator und Mixed Reality-Simulator
 
@@ -56,7 +56,7 @@ In der folgenden Tabelle ist dargestellt, wie die einzelnen Eingabetypen dem Tas
 |  Neigung |  Pfeile nach oben/nach unten |  Nach oben/unten ziehen |  Rechter fingerstick nach oben/unten | 
 |  N |  Q/E |  |  Dpad links/rechts | 
 |  X |  A/D |  |  Linker Finger Stick links/rechts | 
-|  J |  Bild-auf/Bild-ab |  |  Dpad nach oben/unten | 
+|  Y |  Bild-auf/Bild-ab |  |  Dpad nach oben/unten | 
 |  Z |  W/S |  |  Linker Finger Stick nach oben/unten | 
 |  Aktion |  Eingabe oder Leerraum |  Rechte Schaltfläche |  Eine Schaltfläche oder einen der beiden Optionen | 
 |  Blüht/System |  F2-oder Windows-Taste |  |  B-Taste | 
@@ -85,7 +85,7 @@ In der folgenden Tabelle werden die Optionen für die Zielplattform und die Mög
 
 | Object | Tastatur-Modifizierer | Controllermodifizierer | Emulator UI-Modifizierer |
 |----------|----------|----------|----------|
-| Body | (Standard) | (Standard) | (Standard) |
+| Text | (Standard) | (Standard) | (Standard) |
 | Head | Halten H | (Nicht verfügbar) | (Nicht verfügbar) |
 | Linker/Controller | Linke ALT-Taste gedrückt halten | Linke Schulter Taste halten | Left-Hand PushPin | 
 | Rechte Seite/Controller | Alt-Taste gedrückt halten | Rechte Schulter Taste halten | Right-Hand PushPin |
@@ -99,7 +99,7 @@ In der folgenden Tabelle wird gezeigt, wie die einzelnen zielmodifizierer die ei
 |  Neigung |  Kopf-/ausschalten |  Hand nach oben/unten verschieben |  Kopf-/ausschalten | Eye-Blick nach oben/unten | 
 |  N |  Rollenspitze links/rechts |  |  Rollenspitze links/rechts | (Keine Aktion) |
 |  X |  Folien Text Links/rechts |  Hand/Controller nach links/rechts verschieben |  Kopfzeile nach links/rechts | (Keine Aktion) |
-|  J |  Text nach oben/unten verschieben |  Hand/Controller nach oben/unten verschieben |  Kopf-/ausschalten | (Keine Aktion) |
+|  Y |  Text nach oben/unten verschieben |  Hand/Controller nach oben/unten verschieben |  Kopf-/ausschalten | (Keine Aktion) |
 |  Z |  Text vorwärts/rückwärts verschieben |  Hand/Controller vorwärts/rückwärts verschieben |  Kopf-/ausschalten | (Keine Aktion) |
  
  

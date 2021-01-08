@@ -1,17 +1,17 @@
 ---
 title: Oberflächen
-description: Oberflächen ist eine Open-Source-Beispiel-App aus den Mixed Reality-Entwurfs Labors von Microsoft. Es wird erläutert, wie wir mit visuellen, Audiodaten und vollständig artikulierten Hand Nachverfolgung eine taktikvolle Sensation erstellen können.
+description: Erfahren Sie, wie Sie in der Beispiel-App für Oberflächen mit visuellen, Audio-und Hand zeitast-und Hand zeitast-
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Gemischte Windows-Realität, Design, Beispiel-APP, Steuerelemente, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c20ea17b20c867d9bf1da0d5f6244e36f2abbf27
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: bfb93574212dc9e6624d8baac636caf5c8df428a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678519"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009310"
 ---
 # <a name="surfaces"></a>Oberflächen
 
@@ -23,11 +23,13 @@ ms.locfileid: "94678519"
 ![Oberflächen](images/MRDL_Surfaces_1.jpg)
 
 ## <a name="demo-video"></a>Demovideo 
+
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
 Aufgezeichnet mit hololens 2 mithilfe von Mixed Reality Capture
 
 ## <a name="about-the-app"></a>Informationen zur APP
+
 Oberflächen zeigt, wie das Eingabe System von Mixed Reality Toolkit (mrtk) und die Bausteine zum Erstellen einer APP-Oberfläche für hololens 2 verwendet werden. In diesem Projekt finden Sie die Beispiele für:
 - Verwenden Sie das [Eingabe System](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)von mrtk, insbesondere die Hand-und gemeinsame Nachverfolgung.
 - Verwenden Sie den [Standard-Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) von mrtk für leistungsfähige Grafiken.
@@ -35,14 +37,17 @@ Oberflächen zeigt, wie das Eingabe System von Mixed Reality Toolkit (mrtk) und 
 Sie können diese Projektkomponenten verwenden, um Ihre eigenen Umgebungen mit gemischter Reality-APP zu erstellen.
 
 ## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>Mr dev Days 2020-Learnings von der App "Mr-Oberflächen"
+
 [Erkenntnisse von der App "Mr-Oberflächen"](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
 Lars Simkins, Senior Designer hinter der mrdl-Oberflächen-APP, spricht über die Entwurfs Story der APP und technische Highlights.
 
 ## <a name="project-repository-on-github"></a>Projektrepository auf GitHub
+
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
 ## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Herunterladen der APP aus Microsoft Store in hololens 2
+
 https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
 
 (Die APP ist nur auf hololens verfügbar 2)

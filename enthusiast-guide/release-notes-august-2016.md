@@ -1,17 +1,17 @@
 ---
 title: Versionshinweise – August 2016
-description: Hololens-Versions Hinweise für die Windows 10 Anniversary-Version (Fall 2016)
+description: Bleiben Sie auf dem neuesten Stand der Versions Anmerkungen zu den hololens für die Windows 10 Anniversary-Version für Fall 2016.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Hololens, Anmerkungen zu dieser Version, Betriebssystem, Plattform, Features, kommerzielle Suite
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725961"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009260"
 ---
 # <a name="release-notes---august-2016"></a>Versionshinweise – August 2016
 
@@ -72,7 +72,7 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 
 <table>
 <tr>
-<th>Funktionen</th><th>Development Edition</th><th>Kommerzielle Suite</th>
+<th>Features</th><th>Development Edition</th><th>Kommerzielle Suite</th>
 </tr><tr>
 <td>Geräteverschlüsselung (BitLocker)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
@@ -116,7 +116,7 @@ Wenden Sie sich an Ihren lokalen Microsoft-Konto Manager, um die Microsoft holol
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [HoloLens – bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Kommerzielle Features](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
 * [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

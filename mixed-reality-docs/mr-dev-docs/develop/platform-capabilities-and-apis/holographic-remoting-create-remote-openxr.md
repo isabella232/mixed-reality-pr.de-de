@@ -1,17 +1,17 @@
 ---
 title: Schreiben einer Holographic Remoting-Remote-app (openxr)
-description: Durch das Erstellen einer Holographic Remoting Remote-app, die auf einem Remote Computer gerendert wird, kann auf hololens 2 gestreamt werden.
+description: Erfahren Sie, wie Sie Remote Inhalt, der auf einem Remote Computer gerendert wird, mithilfe von Holographic Remoting-apps mit openxr auf hololens 2 streamen
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, nuget
-ms.openlocfilehash: 202f2108ade9998d25d87dee20d4bd456da0a118
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 616765143309fe2a4883c1393713133fcbe2a9d5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530414"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006490"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Schreiben einer Holographic Remoting-Remote-App mithilfe der openxr-API
 

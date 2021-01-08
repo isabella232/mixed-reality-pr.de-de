@@ -1,17 +1,17 @@
 ---
 title: 'MR Basics 100: Erste Schritte mit Unity'
-description: Erfahren Sie, wie Sie Ihre erste einfache "Hello World"-Anwendung mit gemischter Realität erstellen.
+description: Erfahren Sie, wie Sie Ihre erste grundlegende gemischte "Hello World"-Anwendung für hololens und Windows Mixed Reality-Geräte erstellen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Windows Mixed Reality, hololens, immersive, VR, Mr, Get Started, Hologram, Academy, Tutorial, Mixed Reality Academy, Unity, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: 83ca133e341688f42fa2d53b4d50f1aefa9bb39b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678409"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006510"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR-Grundlagen 100: Erste Schritte mit Unity
 
@@ -43,7 +43,7 @@ Zum Erstellen einer APP mit Unity müssen Sie zunächst ein Projekt erstellen. D
 Um UWP-apps zu erstellen und bereitzustellen, kann Unity das Projekt als Visual Studio-Projekt Mappe exportieren, die alle erforderlichen Medienobjekt-und Code Dateien enthält.
 
 1. Unity starten
-2. **Neu** auswählen
+2. Wählen Sie **Neu** aus.
 3. Geben Sie einen Projektnamen ein (z. b. "mixedrealityintroduction").
 4. Geben Sie einen Speicherort zum Speichern Ihres Projekts ein.
 5. Stellen Sie sicher, dass der **3D-** Schalter ausgewählt ist

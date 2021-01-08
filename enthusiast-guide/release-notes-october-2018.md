@@ -1,26 +1,26 @@
 ---
 title: Versionshinweise – Oktober 2018
-description: Hololens und Windows Mixed Reality-Versions Hinweise für das Windows 10-Update vom Oktober 2018 (auch bekannt als RS5).
+description: Bleiben Sie auf dem neuesten Stand mit den Versions Anmerkungen zu hololens und Windows Mixed Reality für das Windows 10-Update vom Oktober 2018 RS5.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 10/02/2018
 ms.topic: article
 keywords: Anmerkungen zu dieser Version, Version, Windows 10, Build, RS5, Betriebssystem
-ms.openlocfilehash: 88d7393fdcf499b1fabd36668364ffb31b0e793d
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+ms.openlocfilehash: f7d95481d166f2c8795701c516946346101a21d0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91783963"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007110"
 ---
 # <a name="release-notes---october-2018"></a>Versionshinweise – Oktober 2018
 
 Das **[Windows 10-Update vom Oktober 2018](https://blogs.windows.com/windowsexperience/2018/10/02/find-out-whats-new-in-windows-and-office-in-october/)** (auch bekannt als RS5) umfasst neue Features für hololens und Windows Mixed Reality-immersive Headsets, die mit PCs verbunden sind. 
 
-Zum Aktualisieren auf die neueste Version auf hololens oder PC (für Windows Mixed Reality immersive (VR)-Headsets) öffnen Sie die app " **Einstellungen** ", navigieren Sie zu **Update & Sicherheit** , und wählen Sie dann die Schaltfläche **nach Updates suchen aus** . Auf einem Windows 10-PC können Sie das Windows 10-Update vom Oktober 2018 auch manuell mithilfe des [Windows Media-Erstellungs Tools](https://www.microsoft.com/software-download/windows10)installieren.
+Zum Aktualisieren auf die neueste Version auf hololens oder PC (für Windows Mixed Reality immersive (VR)-Headsets) öffnen Sie die app " **Einstellungen** ", navigieren Sie zu **Update & Sicherheit**, und wählen Sie dann die Schaltfläche **nach Updates suchen aus** . Auf einem Windows 10-PC können Sie das Windows 10-Update vom Oktober 2018 auch manuell mithilfe des [Windows Media-Erstellungs Tools](https://www.microsoft.com/software-download/windows10)installieren.
 
-**Neueste Version für Desktop:** Windows 10-Update vom Oktober 2018 ( **10.0.17763.107** )<br>
-**Neueste Version für hololens:** Windows 10-Update vom Oktober 2018 ( **10.0.17763.134** )<br>
+**Neueste Version für Desktop:** Windows 10-Update vom Oktober 2018 (**10.0.17763.107**)<br>
+**Neueste Version für hololens:** Windows 10-Update vom Oktober 2018 (**10.0.17763.134**)<br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Neue Features für Windows Mixed Reality-immersive Headsets
 
@@ -41,7 +41,7 @@ Das Windows 10-Update vom Oktober 2018 umfasst viele Verbesserungen für die Ver
     * Neue *webvr Showcase* -App zum Ermitteln einer regelmäßig zusammengestellten Auswahl von webvr-Erfahrungen.
     * Erstmalige Windows Mixed Reality-Kunden wechseln zum ersten Mal in das Klippe-Haus und finden es für einige unserer bevorzugten, immersiven apps und Spiele aus der Microsoft Store.
     * Microsoft Edge Windows enthält jetzt eine *Freigabe* Schaltfläche.
-* **Menü "schnelle Aktionen** ": innerhalb einer immersiven Mixed Reality-App können Sie auf die Windows-Schaltfläche klicken, um auf ein neues Menü für schnelle Aktionen zuzugreifen, mit einfachem Zugriff auf das Menü " *steamvr* ", *Foto-/Videoerfassung* , *Taschenlampe* und *Startseite* .
+* **Menü "schnelle Aktionen** ": innerhalb einer immersiven Mixed Reality-App können Sie auf die Windows-Schaltfläche klicken, um auf ein neues Menü für schnelle Aktionen zuzugreifen, mit einfachem Zugriff auf das Menü " *steamvr*", *Foto-/Videoerfassung*, *Taschenlampe* und *Startseite*.
 * **Unterstützung für Rucksack-PCs** : Windows Mixed Reality immersive (VR)-Headsets werden auf Rucksack-PCs ausgeführt, ohne dass ein Anzeige Emulator erforderlich ist, nachdem Setup abgeschlossen wurde.
 * **Neue Audiofeatures** : Sie können jetzt die Audiodaten von Windows Mixed Reality mit dem audiowagen (oder dem Kopfhörer) in Ihrem Headset *und* einem Audiogerät, das mit Ihrem PC verbunden ist (wie externe Referenten), spiegeln. Wir haben auch einen visuellen Indikator für die Volumeebene in der Anzeige Ihres Headsets hinzugefügt.
 * **Weitere Verbesserungen**
@@ -60,7 +60,7 @@ Das Windows 10-Update vom Oktober 2018 ist öffentlich für alle hololens-Kunden
 
 ### <a name="for-everyone"></a>Für alle
 
-* **Menü "schnelle Aktionen** ": innerhalb einer immersiven Mixed Reality-App können Sie auf die Windows-Schaltfläche klicken, um auf ein neues Menü "schnelle Aktionen" zuzugreifen, mit einfachem Zugriff, um *Videos aufzuzeichnen* , *Bilder aufzunehmen* , eine *gemischte Realität* zu starten, das *Volume zu ändern* und eine *Verbindung herzustellen* .
+* **Menü "schnelle Aktionen** ": innerhalb einer immersiven Mixed Reality-App können Sie auf die Windows-Schaltfläche klicken, um auf ein neues Menü "schnelle Aktionen" zuzugreifen, mit einfachem Zugriff, um *Videos aufzuzeichnen*, *Bilder aufzunehmen*, eine *gemischte Realität* zu starten, das *Volume zu ändern* und eine *Verbindung herzustellen*.
 * **Starten/Anhalten der Video Erfassung über das Menü "Start" oder "schnelle Aktionen** ": Wenn Sie die Videoaufzeichnung im Startmenü oder im Menü "schnelle Aktionen" starten, können Sie die Aufzeichnung von der gleichen Stelle aus anhalten. (Vergessen Sie nicht, Sie können dies immer auch mit Sprachbefehlen tun.)
 * **Projekt auf ein miracast-fähiges Gerät** : projizieren Sie Ihren hololens-Inhalt auf ein nahe gelegenes Surface-Gerät oder TV/Monitor, wenn Sie eine miracast-aktivierte Anzeige oder einen Adapter verwenden.
 * **Neue Benachrichtigungen** : Sie können Benachrichtigungen auf hololens anzeigen und darauf reagieren, wie Sie es auch auf einem PC tun.  

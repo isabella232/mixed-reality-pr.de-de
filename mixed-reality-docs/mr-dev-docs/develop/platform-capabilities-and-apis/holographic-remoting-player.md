@@ -1,17 +1,17 @@
 ---
 title: Holographic Remoting-Player
-description: Der Holographic Remoting-Player ist eine Begleit-App, die sich mit PC-Apps und -Spielen verbindet, die Holographic Remoting unterstützen. Holographic Remoting streamt Holographic Content von einem PC zu Ihren Microsoft hololens in Echtzeit mithilfe einer Wi-Fi Verbindung.
+description: Erfahren Sie mehr über den Holographic Remoting Player und das Streamen von Holographic-Inhalten von einem PC auf Ihre hololens in Echtzeit über Wi-Fi.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Diagnose, Leistung
-ms.openlocfilehash: 07848f20fb23c15688dcb7cbc668b8011e34736b
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c016221746efb34dd83ceb42a4a2cde156dde4c8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530231"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006530"
 ---
 # <a name="holographic-remoting-player"></a>Holographic Remoting-Player
 

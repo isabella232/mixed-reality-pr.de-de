@@ -1,17 +1,17 @@
 ---
 title: Hand Coach
-description: 3D-Hände, die ausgelöst werden, wenn das System die Hände des Benutzers nicht erkennt, um Sie zu unterstützen.
+description: Erfahren Sie, wie 3D-Hände mit dem handtrainer ausgelöst werden, wenn das System die Hände des Benutzers nicht erkennt, um Sie zu unterstützen.
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Hand Coach, immersives Headset, mrtk, Hands, helfende Hand, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847961"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009160"
 ---
 # <a name="hand-coach"></a>Hand Coach
 
@@ -146,7 +146,7 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 
 ## <a name="implementing-hands-into-your-unity-project"></a>Implementieren von Hand in Ihr Unity-Projekt
 
-### <a name="best-practices"></a>Bewährte Methoden
+### <a name="best-practices"></a>Empfohlene Methoden
 
 * Es wird empfohlen, die Hände in Unity auf 0,6 zu skalieren.
 * Hände sollten zweimal abgespielt werden und, wenn Sie nicht abgeschlossen ist, bis zum Abschluss der Bewegung fortlaufend. Die Hände sollten zweimal Schleifen, um sicherzustellen, dass der Benutzer Zeit hat, sich zu registrieren und die Geste anzuzeigen. Die Hände sollten Zwischenschleifen ein-und ausgeblendet werden. 
@@ -173,7 +173,7 @@ Nachdem Sie mit ihrer Animation zufrieden sind
     *   Pro-Projekt-Einstellung
         *   Szene, die auf UWP festgelegt ist: Anweisungen finden Sie im [Unity-Projekt](../develop/unity/Configure-Unity-Project.md) für Windows Mixed Reality.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Interaktion: Grundlagen](interaction-fundamentals.md)
 * [Asset-Erstellungs Prozess](asset-creation-process.md)

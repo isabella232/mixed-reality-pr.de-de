@@ -1,17 +1,17 @@
 ---
 title: Anmerkungen zu dieser Version-Mai 2019
-description: Windows Mixed Reality-Versions Hinweise für das Windows 10-Update vom Mai 2019 (auch als 19h1 bekannt).
+description: Bleiben Sie auf dem neuesten Stand der Windows Mixed Reality-Versions Anmerkungen für das Windows 10-Update vom Mai 2019/19h1.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Anmerkungen zu dieser Version, Version, Windows 10, Build, 19h1, Betriebssystem, Mai 2019
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725921"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007120"
 ---
 # <a name="release-notes---may-2019"></a>Anmerkungen zu dieser Version-Mai 2019
 
@@ -65,7 +65,7 @@ Verwenden Sie die [Feedback-Hub-App auf Ihrem Windows 10-PC](https://docs.micros
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Immersive Headset-Unterstützung (externer Link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [Hololens-Unterstützung (externer Link)](https://support.microsoft.com/products/hololens)
 * [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

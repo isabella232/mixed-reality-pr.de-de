@@ -1,17 +1,17 @@
 ---
 title: Shader
-description: Der Standard-Shader von Mixed Reality Toolkit bietet verschiedene Typen von visuellen Effekten, die mit holograms verwendet werden können.
+description: Erfahren Sie, wie das Mixed Reality Toolkit Standard-Shader verschiedene Arten von visuellen Effekten bereitstellt, die mit holograms in ihren Mixed Reality-Apps verwendet werden können.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Shader, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, visuelle Effekte
-ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848244"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008860"
 ---
 # <a name="shader"></a>Shader
 
@@ -44,7 +44,7 @@ Da Holographic-Objekte in der realen Umgebung mit physischen Objekten kombiniert
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

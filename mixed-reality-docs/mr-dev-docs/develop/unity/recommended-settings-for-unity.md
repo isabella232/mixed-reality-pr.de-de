@@ -1,17 +1,17 @@
 ---
 title: Empfohlene Einstellungen für Unity
-description: Unity bietet einige Verhaltensweisen, die für Mixed Reality spezifisch sind und durch Projekteinstellungen ein-und ausgeschaltet werden können.
+description: Erfahren Sie mehr über die Leistungs-und Veröffentlichungs Verhalten von Unity, die für Mixed Reality-apps spezifisch sind und durch Projekteinstellungen ein-und ausgeschaltet werden können.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, Einstellungen, gemischte Realität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Leistung, Qualitätseinstellungen, Beleuchtungseinstellungen, tiefen Puffer, XR, nach Verfolgungs Verlust
-ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010111"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009330"
 ---
 # <a name="recommended-settings-for-unity"></a>Empfohlene Einstellungen für Unity
 
@@ -167,7 +167,7 @@ Die folgenden Funktionen zum Aktivieren der häufig verwendeten APIs für Hologr
 |  Mikrofon  |  Videocapture (bei der Erfassung von Audiodaten), "diktationerkenzer", "grammarerkenzer" und "keywordrecognizer" |
 |  InternetClient  |  "Diktationerkenzer" (und für die Verwendung des Unity-Profilers) |
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Unity-Entwicklung – Übersicht](unity-development-overview.md)
 * [Grundlegendes zur Leistung für Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

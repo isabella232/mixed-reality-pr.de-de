@@ -1,17 +1,17 @@
 ---
 title: Koordinatensysteme in DirectX
-description: Erfahren Sie mehr über Koordinatensysteme in DirectX und gemischte Realität mit räumlichen Locators, Referenz Frames und räumlichen Ankern. Verwenden Sie spatialstage, und behandeln Sie den nach Verfolgungs Verlust, das Speichern und Laden von Ankern und die Bildstabilisierung.
+description: Erfahren Sie mehr über Koordinatensysteme in DirectX und gemischte Realität mit räumlichen Locators, Referenz Frames und räumlichen Ankern.
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Gemischte Realität, räumlicher Locator, räumlicher Referenzrahmen, räumliches Koordinatensystem, räumliche Phase, Beispielcode, Bildstabilisierung, räumlicher Anker, räumlicher Anker Speicher, nach Verfolgungs Verlust, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613114"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006860"
 ---
 # <a name="coordinate-systems-in-directx"></a>Koordinatensysteme in DirectX
 
@@ -804,7 +804,7 @@ Aus **appmain. cpp:**
 
 Die APIs für die [räumliche Zuordnung](spatial-mapping-in-directx.md) verwenden Koordinatensysteme, um Modell Transformationen für Oberflächen Netze zu erhalten.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * [Raumanker](../../design/spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
