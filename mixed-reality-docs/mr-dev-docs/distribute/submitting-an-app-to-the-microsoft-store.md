@@ -6,21 +6,26 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store, hololens, immersive Headsets, APP, UWP, einreichen, Übermittlung, Filter, Metadaten, Systemanforderungen, Schlüsselwörter, Wack, Zertifizierung, Package, AppX, Merchandising, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757838"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031976"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>Senden einer App an den Microsoft Store
 
 > [!IMPORTANT]
-> Wenn Sie eine Unreal-Anwendung übermitteln, stellen Sie sicher, dass Sie die **[Veröffentlichungs Anweisungen hier](../develop/unreal/unreal-publishing-to-store.md)** befolgen, bevor Sie fortfahren.
+> Wenn Sie eine Unreal-Anwendung übermitteln, stellen Sie sicher, dass Sie den **[Veröffentlichungs Anweisungen](../develop/unreal/unreal-publishing-to-store.md)** folgen, bevor Sie fortfahren.
+
+## <a name="prerequisites"></a>Voraussetzungen
 
 Sowohl [hololens](../hololens-hardware-details.md) als auch der Windows 10-PC, der Ihr [immersives Headset](../discover/immersive-headset-hardware-details.md) antreibt, werden universelle Windows-Plattform-apps ausgeführt. Unabhängig davon, ob Sie eine APP übermitteln, die hololens, PCs oder beides unterstützt, wird die APP-Übermittlung über das [Partner Center](https://partner.microsoft.com/dashboard)übermittelt.
 
-Wenn Sie noch nicht über ein Partner Center-Entwicklerkonto verfügen, [registrieren Sie sich](https://developer.microsoft.com/store/register) für ein Konto, bevor Sie fortfahren.
+Wenn Sie noch nicht über ein Partner Center-Entwicklerkonto verfügen, [registrieren Sie sich](https://developer.microsoft.com/store/register) für ein Konto, bevor Sie fortfahren. Weitere Informationen zu Übermittlungs Richtlinien und Prüf Listen finden Sie in diesem [Artikel](https://docs.microsoft.com/windows/uwp/publish/app-submissions)zur Übermittlung von apps.
+
+> [!IMPORTANT]
+> Sie können keine Anwendungen an den Microsoft Store übermitteln, wenn Ihr Partner Center-Entwicklerkonto die Überprüfung der Überprüfung nicht besteht. Weitere Informationen erhalten Sie vom Partner Center- [Support Team](https://developer.microsoft.com/windows/support) .
 
 ## <a name="packaging-a-mixed-reality-app"></a>Verpacken einer Mixed Reality-App
 
@@ -215,7 +220,7 @@ Verwenden Sie die Kontrollkästchen, um potenziellen Kunden mitzuteilen, ob Ihre
 
 Beachten Sie, dass Sie Kontrollkästchen für "Minimale Hardware" oder "Empfohlene Hardware" für Eingabetypen auswählen. 
 
-Zum Beispiel: 
+Beispiel: 
 * Wenn das Spiel Bewegungs Controller erfordert, aber eine Spracheingabe über Mikrofon akzeptiert, aktivieren Sie das Kontrollkästchen "Minimale Hardware" neben "Windows Mixed Reality Motion Controllers", aber das Kontrollkästchen "Empfohlene Hardware" neben "Mikrofon". 
 * Wenn Ihr Spiel entweder mit einem Xbox-Controller, Gamepad oder Bewegungs Controllern abgespielt werden kann, aktivieren Sie das Kontrollkästchen "Minimale Hardware" neben "Xbox Controller" oder "Gamepad", und aktivieren Sie das Kontrollkästchen "Empfohlene Hardware" neben "Windows Mixed Reality Motion Controllers", da Bewegungs Controller wahrscheinlich eine Schritt-für-Schritt-Anleitung aus dem Gamepad anbieten.
 

@@ -3,12 +3,12 @@ title: Verwenden von "steamvr" mit Windows Mixed Reality
 description: Erfahren Sie, wie Sie steamvr-Spiele auf Windows Mixed Reality-Headsets und-Controllern mit kompatiblen PCs einrichten und wiedergeben.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Games, steamvr, Steam, System Requirements
-ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006900"
+ms.locfileid: "98031966"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>Verwenden von "steamvr" mit Windows Mixed Reality
 
@@ -18,14 +18,18 @@ Windows Mixed Reality für steamvr ermöglicht Benutzern das Ausführen von stea
 
 * Stellen Sie sicher, dass keine ausstehenden Updates vorhanden sind: Klicken Sie auf **Start > Einstellungen > aktualisieren & Sicherheits > Windows Update**. Wenn Updates verfügbar sind, klicken Sie auf **jetzt installieren**. Wenn keine Updates verfügbar sind, klicken Sie **auf nach Updates suchen**, und installieren Sie dann alle neuen Updates.
 * Die PC-Anforderungen variieren für die apps und Inhalte im Stream. Sehen Sie sich die Mindestanforderungen pro Titel an. Ein PC mit einer GTX 1070-Grafikkarte (oder einer Entsprechung) und einem Intel® Core™ i7-Prozessor sollte eine gute Leistung für eine breite Palette von Titeln bieten.
+* Richten Sie [Windows Mixed Reality](set-up-windows-mixed-reality.md) ein, wenn Sie dies noch nicht getan haben. 
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>Einrichten von Windows Mixed Reality für steamvr
 
-1. Richten Sie [Windows Mixed Reality](set-up-windows-mixed-reality.md) ein, wenn Sie dies noch nicht getan haben.
-2. Installieren Sie " [Steam](http://store.steampowered.com/about/) " **, oder** **Erstellen Sie ein neues Konto.**
-3. Installieren Sie [steamvr](https://store.steampowered.com/app/250820/SteamVR/). Wenn Sie Ihr Headset angeschlossen haben, starten Sie "Stream", und es sollte ein Dialogfeld angezeigt werden, in dem Sie dazu aufgefordert werden, Befolgen Sie die Anweisungen im Dialogfeld, um es zu installieren.
+1. [Herunterladen und Installieren von steamvr.](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)
+2. Wenn Sie bereit sind, starten Sie steamvr. Das Tutorial "steamvr" sollte automatisch gestartet werden.
+
+> **Hinweis:** Stellen Sie für die erweiterte Problembehandlung Ihres steamvr-Setups sicher, dass die folgenden Softwarekomponenten installiert sind:
+> 1. Installieren Sie " [Steam](http://store.steampowered.com/about/) " **, oder** **Erstellen Sie ein neues Konto.**
+> 2. Installieren Sie [steamvr](https://store.steampowered.com/app/250820/SteamVR/). Wenn Sie Ihr Headset angeschlossen haben, starten Sie "Stream", und es sollte ein Dialogfeld angezeigt werden, in dem Sie dazu aufgefordert werden, Befolgen Sie die Anweisungen im Dialogfeld, um es zu installieren.
     * Wenn das Popup nicht angezeigt wird, installieren Sie steamvr, indem Sie zum Abschnitt " *Tools* " Ihrer *Bibliothek* navigieren. Suchen Sie in der Liste nach "steamvr", klicken Sie mit der rechten Maustaste, und wählen Sie " *Spiel*
-4. Installieren Sie [Windows Mixed Reality für steamvr](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
+> 3. Installieren Sie [Windows Mixed Reality für steamvr](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/).
 
 ## <a name="play-steamvr-games"></a>Spielen Sie steamvr Games
 
@@ -155,7 +159,7 @@ Ihr Feedback ist äußerst nützlich, wenn es um die Verbesserung der Windows Mi
 
 Wenn Sie Fragen oder Kommentare haben, die Sie freigeben können, können Sie uns auch in unserem [Steam-Forum](http://steamcommunity.com/app/719950/discussions/)erreichen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Problembehandlung bei "steamvr" mit Windows Mixed Reality](steamvr-questions.md)
 * [Verwenden von spielen und apps in Windows Mixed Reality](using-games-and-apps-in-windows-mixed-reality.md)

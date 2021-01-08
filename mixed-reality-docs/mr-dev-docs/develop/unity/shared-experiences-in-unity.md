@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Sharing, Anchor, worldanchor, Mr Sharing 250, worldanchortransferbatch, spatialperception, Azure, Azure Spatial Anchor, ASA, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a82439d5676bf4bcb7898a33aafc29b43e91a49f
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009280"
+ms.locfileid: "98031956"
 ---
 # <a name="shared-experiences-in-unity"></a>Gemeinsame Erlebnisse in Unity
 
@@ -19,7 +19,7 @@ Eine gemeinsame Nutzung ermöglicht es mehreren Benutzern, die jeweils über ein
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Räumliche Azure-Anker</a>erstellen dauerhafte, cloudgestützte räumliche Anker, die Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers auf mehreren Geräten kann jeder Benutzer den Inhalt in Relation zu diesem Anker am gleichen physischen Speicherort sehen. 
+<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Räumliche Azure-Anker</a> erstellen dauerhafte, cloudgestützte räumliche Anker, die Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers auf mehreren Geräten kann jeder Benutzer den Inhalt in Relation zu diesem Anker am gleichen physischen Speicherort sehen. 
 
 Sie können auch <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> für die asynchrone – Hologramm-Persistenz über hololens-, IOS-und Android-Geräte verwenden.  Durch die gemeinsame Nutzung eines permanenten clouddiensts können mehrere Geräte im Lauf der Zeit dasselbe persistente Hologramm beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
 
