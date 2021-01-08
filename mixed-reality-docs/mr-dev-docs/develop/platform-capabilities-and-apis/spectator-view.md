@@ -1,18 +1,18 @@
 ---
 title: Spectator View
-description: Visualisieren Sie Hologramme von einem externen Gerät als Mittel zur Darstellung eines Mixed Reality-Erlebnisses auf einem externen Display oder zur Aufzeichnung eines Mixed Reality-Erlebnisses.
+description: Visualisieren Sie Hologramme von einem externen Gerät, um ein Mixed-Reality-Erlebnis auf einem externen Display zu darzustellen oder aufzunehmen.
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Kamera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, Demo, aufzeichnen
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91698174"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530111"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View für HoloLens und HoloLens 2
 
@@ -20,8 +20,7 @@ ms.locfileid: "91698174"
 
 ## <a name="overview"></a>Übersicht
 
-Beim Tragen einer HoloLens vergessen wir oft, dass eine Person, die sie nicht trägt, all die Wunder, die wir erfahren, nicht erleben kann. Mit Spectator View können andere auf einem zweidimensionalen Bildschirm sehen, was HoloLens-Benutzer in ihrer Welt sehen.
-Spectator View bietet einen schnellen und bezahlbaren Ansatz zum Aufzeichnen von Hologrammen in HD mit mobilen Geräten. Ferner bietet es die Möglichkeit zur Aufzeichnung von Hologrammen mit Videokameras in professioneller Qualität.
+Wenn Sie eine HoloLens tragen, vergessen Sie leicht, dass eine Person ohne HoloLens nicht dieselben Wunder erleben kann, die Sie sehen. Mit Spectator View können andere sehen, was ein HoloLens-Benutzer auf einem 2D-Bildschirm sieht. Es ist außerdem ein schneller und kostengünstiger Ansatz, um Hologramme in HD mit mobilen Geräten aufzunehmen und mit Videokameras Aufnahmen von Hologrammen in hoher Qualität zu erhalten.
 
 ## <a name="key-resources"></a>Wichtige Ressourcen
 
@@ -30,7 +29,8 @@ Spectator View bietet einen schnellen und bezahlbaren Ansatz zum Aufzeichnen von
 * [**Spectator View-Beispiele**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>Anwendungsfälle
-* Sie können ein Mixed Reality-Erlebnis mithilfe eines iPhone- oder Android-Geräts aufzeichnen. Zeichnen Sie in Full HD auf, und wenden Sie Antialiasing auf Hologramme und sogar auf Schatten an. Dies ist eine kostengünstige und schnelle Möglichkeit zum Erfassen von Videos von Hologrammen.
+
+* Sie können ein Mixed Reality-Erlebnis mithilfe eines iPhone- oder Android-Geräts aufzeichnen. Zeichnen Sie in Full-HD auf, und wenden Sie Anti-Aliasing auf Hologramme und Schatten an – eine kostengünstige und schnelle Möglichkeit, Videos von Hologrammen aufzunehmen.
 * Streamen Sie von Ihrem iPhone oder iPad verzögerungsfrei Mixed Reality-Erlebnisse live auf ein Apple TV!
 * Teilen Sie das Erlebnis mit Gästen: Lassen Sie Benutzer ohne HoloLens Hologramme direkt auf Ihren Smartphones oder Tablets erleben.
 

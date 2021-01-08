@@ -1,5 +1,5 @@
 ---
-title: 'Tutorials zu den ersten Schritten: 4 Positionieren von Objekten in der Szene'
+title: 'MRTK-Tutorials: 4. Positionieren von Objekten in der Szene'
 description: In diesem Kurs erfahren Sie, wie Sie Objekte in der Szene positionieren und wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um Objekte in einem Raster zu organisieren.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver, Rasterobjektsammlung
 ms.localizationpriority: high
-ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679309"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613254"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionieren von Objekten in der Szene
 

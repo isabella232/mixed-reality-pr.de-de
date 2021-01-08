@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010545"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865395"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Verpacken und Bereitstellen auf einem Gerät oder in einem Emulator
 
@@ -30,6 +30,9 @@ Im vorhergehenden Tutorial haben Sie eine einfache Schaltfläche hinzugefügt, m
 Um diese Möglichkeit für die Schach-App zu nutzen, müssen einige Voraussetzungen erfüllt sein:
 
 1.  Installieren Sie den **Holographic Remoting-Player** aus dem Microsoft Store auf Ihrem HoloLens 2-Gerät, und führen Sie die App aus. Notieren Sie die in der App angezeigte IP-Adresse.
+    * Navigieren Sie zu **Edit > Project Settings** (Bearbeiten > Projekteinstellungen), und vergewissern Sie sich, dass der Windows-**Standard-RHI** auf **Standard** oder **D3D11** festgelegt ist:
+
+![Standard-RHI](../images/unreal/performance-recommendations-img-09.png)
 
 2.  Klicken Sie wieder im Unreal-Editor auf **Edit > Project Settings** (Bearbeiten > Projekteinstellungen), und aktivieren Sie im Abschnitt **Holographic Remoting** (Holografisches Remoting) die Option **enable remoting** (Remoting aktivieren).
 

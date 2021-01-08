@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, holographic, AR, VR, MR, XR, Augmented Reality, Virtual Reality, Erläuterung, Fallstudie, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality
 ms.localizationpriority: high
-ms.openlocfilehash: 5f4e41c04206eb5ca1a0d2e0dac914a1b3b1052d
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703126"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757698"
 ---
 # <a name="what-is-mixed-reality"></a>Was ist Mixed Reality?
 
@@ -34,7 +34,7 @@ Mixed Reality ist eine Mischung aus physischer und digitaler Welt, die die Verkn
 
 In den letzten Jahrzehnten wurde die Untersuchung der Beziehung zwischen menschlicher und Computereingabe fortgeführt. Dies führte zu der Disziplin, die als *Mensch-Computer-Interaktion* oder HCI (Human Computer Interaction) bezeichnet wird. Menschliche Eingaben erfolgen mit einer Reihe von Mitteln, darunter Tastaturen, Mäuse, Berührung, Freihand, Sprache und sogar Skelettnachverfolgung (Kinect).
 
-Fortschritte bei Sensoren und Verarbeitung lassen ein neues Zeitalter der Computereingaben aus der Umgebung heraufziehen. Die Interaktion zwischen Computern und Umgebungen stellt effektiv ein Verstehen der Umwelt oder *Wahrnehmung* dar, weshalb die APIs in Windows, die Umgebungsinformationen offenlegen, als [Wahrnehmungs-APIs](https://docs.microsoft.com/uwp/api/Windows.Perception) bezeichnet werden. Bei der Umgebungseingabe werden Dinge wie die Position einer Person in der Welt ([Kopfnachverfolgung](../design/coordinate-systems.md)), Flächen und Begrenzungen ([räumliche Abbildung](../design/spatial-mapping.md) und [Szenenverständnis](../design/scene-understanding.md)), Umgebungslicht, Umgebungsgeräusche, Objekterkennung und Standort erfasst.
+Fortschritte bei Sensoren und Verarbeitung schaffen ein neues Zeitalter der Computereingaben aus der Umgebung. Die Interaktion zwischen Computern und Umgebungen stellt ein Verstehen der Umwelt oder *Wahrnehmung* dar, weshalb die APIs in Windows, die Umgebungsinformationen offenlegen, als [Wahrnehmungs-APIs](https://docs.microsoft.com/uwp/api/Windows.Perception) bezeichnet werden. Bei der Umgebungseingabe werden Dinge wie die Position einer Person in der Welt ([Kopfnachverfolgung](../design/coordinate-systems.md)), Flächen und Begrenzungen ([räumliche Abbildung](../design/spatial-mapping.md) und [Szenenverständnis](../design/scene-understanding.md)), Umgebungslicht, Umgebungsgeräusche, Objekterkennung und Standort erfasst.
 
 <br>
 
@@ -43,7 +43,7 @@ Fortschritte bei Sensoren und Verarbeitung lassen ein neues Zeitalter der Comput
 
 <br>
 
-Die Kombination aus allen dreien – **Computerverarbeitung, menschliche Eingaben und Umgebungseingaben** –- eröffnet die Möglichkeit, echte Mixed Reality-Erfahrungen zu schaffen. Bewegung in der physischen Welt kann in Bewegung in der digitalen Wert übersetzt werden. Begrenzungen in der physischen Welt können in der digitalen Welt Einfluss auf das Erleben von Anwendungen haben, beispielsweise in Computerspielen. Ohne Umgebungseinfluss kann keine Mischung aus physischer und digitaler Realität entstehen.<br>
+Die Kombination aus allen dreien – **Computerverarbeitung, menschliche Eingaben und Umgebungseingaben** –- eröffnet die Möglichkeit, echte Mixed Reality-Erfahrungen zu schaffen. Bewegung in der physischen Welt wird in Bewegung in der digitalen Wert übersetzt. Begrenzungen in der physischen Welt haben in der digitalen Welt Einfluss auf das Erleben von Anwendungen, beispielsweise in Computerspielen. Ohne Umgebungseinfluss kann keine Mischung aus physischer und digitaler Realität entstehen.<br>
 
 <br>
 
@@ -65,8 +65,7 @@ Da Mixed Reality sowohl physische als auch digitale Welten kombiniert, definiere
 Die meisten aktuell verfügbaren Mobiltelefone haben kaum oder keine Fähigkeiten zum Verstehen der Umgebung. Die von ihnen angebotenen Erfahrungen können keine Mischung aus physischer und digitaler Realität darstellen. Die Benutzererfahrungen, bei denen Grafiken Videostreams der realen Welt überlagert werden, sind *Augmented Reality*. Die Benutzererfahrungen, die Ihre Sicht verdecken, um ein digitales Erlebnis darzustellen, sind *Virtual Reality*. Die Erfahrungen, die zwischen Augmented Reality und Virtual Reality möglich sind, bilden die *Mixed Reality*:
 * Ausgehend von der physischen Welt kann ein digitales Objekt platziert werden, etwa ein Hologramm, so, als wäre es vorhanden.
 * Ausgehend von der physischen Welt kann eine digitale Darstellung einer anderen Person – ein Avatar – den Ort anzeigen, an dem die Person stand, als sie Notizen verfasste. Dies sind mit anderen Worten Benutzererfahrungen, die asynchrone Zusammenarbeit zu verschiedenen Zeitpunkten darstellen.
-* Ausgehend von einer digitalen Welt können physische Begrenzungen der physischen Welt, wie etwa Wände und Möbel, digital innerhalb der Benutzererfahrung erscheinen, um Benutzern dabei zu helfen, physische Hindernisse zu umgehen.
-
+* Ausgehend von einer digitalen Welt können physische Begrenzungen der physischen Welt wie Wände und Möbel digital innerhalb der Benutzererfahrung erscheinen, um Benutzern dabei zu helfen, physische Hindernisse zu umgehen.
 
 <br>
 
@@ -100,7 +99,7 @@ Es gibt zwei Hauptarten von Geräten, die Windows Mixed Reality-Erlebnisse biete
 > [!NOTE]
 > Ob ein Gerät (per USB-Kabel oder WLAN) mit einem separaten PC verbunden oder eigenständig (nicht verbunden) ist, sagt nichts darüber aus, ob das Gerät holografisch oder immersiv ist. Features, die eine Verbesserung der Mobilität bewirken, führen zu besseren Benutzererfahrungen, und sowohl holografische als auch immersive Geräte können gebunden oder eigenständig sein.
 
-Es ist der technische Fortschritt, der Mixed Reality-Erfahrungen ermöglicht hat. Heutzutage gibt es keine Geräte, die das gesamte Spektrum der Erfahrungen ausführen können. Windows 10 bietet eine gemeinsame Mixed Reality-Plattform für Gerätehersteller und Entwickler. Heutzutage können Geräte einen bestimmten Bereich innerhalb des Mixed Reality-Spektrums unterstützen, und dieser Bereich wird durch neue Geräte erweitert. In Zukunft werden holografische Geräte immersiver und immersive Geräte stärker holografisch.
+Der technologische Fortschritt ermöglicht Mixed Reality-Erlebnisse, aber es gibt heute noch keine Geräte, die Erlebnisse über das gesamte Spektrum hinweg ausführen können. Windows 10 bietet eine gemeinsame Mixed Reality-Plattform für Gerätehersteller und Entwickler. Heutzutage können Geräte einen bestimmten Bereich innerhalb des Mixed Reality-Spektrums unterstützen, und dieser Bereich wird durch neue Geräte erweitert. In Zukunft werden holografische Geräte immersiv und immersive Geräte stärker holografisch.
 
 <br>
 

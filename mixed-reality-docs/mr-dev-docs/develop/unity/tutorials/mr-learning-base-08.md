@@ -1,5 +1,5 @@
 ---
-title: 'Tutorials zu den ersten Schritten: 8. Verwenden von Eye Tracking'
+title: 'MRTK-Tutorials: 8. Verwenden von Eye Tracking'
 description: In diesem Kurs erfahren Sie, wie Sie Eye Tracking mit dem Mixed Reality Toolkit (MRTK) verwenden.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679749"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613484"
 ---
 # <a name="8-using-eye-tracking"></a>8. Verwenden von Eye Tracking
 

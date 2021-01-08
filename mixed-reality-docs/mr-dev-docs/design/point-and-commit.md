@@ -7,20 +7,20 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Interaktion, Design, HoloLens, Hände, fern, Zeigen und Ausführen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Handstrahlen, Objektmanipulation, MRTK, Mixed Reality Toolkit, DoF, Freiheitsgrade
-ms.openlocfilehash: 91befcec2d9b020c58d3ed02fd181122ce715936
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703456"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848293"
 ---
 # <a name="point-and-commit-with-hands"></a>Zeigen und Ausführen mit den Händen
 
 ![Cursor](images/UX_Hero_HandRay.jpg)
 
-„Zeigen und Ausführen mit den Händen“ ist ein Eingabemodell, mit dem Benutzer auf 2D-Inhalte und 3D-Objekte zielen, die außerhalb der Reichweite liegen, diese auswählen und bearbeiten können. Diese „ferne“ Interaktionstechnik gibt es nur in der Mixed Reality-Umgebung; sie entspricht nicht der Art und Weise, in der Menschen normalerweise mit der realen Welt in Interaktion treten. Im Superhelden-Film *X-Men* beispielsweise kann die Figur [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) mit seinen Händen aus der Entfernung nach einem fernen Objekt greifen und dieses manipulieren. Dies ist etwas, was Menschen in der Realität nicht können. In HoloLens (AR) und Mixed Reality (MR) statten wir Benutzer mit diesen magischen Kräften aus und setzen dabei die Grenzen der Physik in der realen Welt außer Kraft. Ziel ist nicht nur ein positives Erlebnis mit holografischen Inhalten, sondern auch eine effektivere und effizientere Benutzerinteraktion.
+Das Zeigen und Ausführen mit den Händen ist ein Eingabemodell, mit dem Benutzer auf 2D- und 3D-Inhalte außerhalb ihrer Reichweite zielen, sie auswählen und sie bearbeiten können. Diese „ferne“ Interaktionstechnik gibt es nur in der Mixed Reality-Umgebung, denn Menschen interagieren mit der realen Welt natürlicherweise nicht so. Im Superhelden-Film *X-Men* beispielsweise kann die Figur [Magneto](https://en.wikipedia.org/wiki/Magneto_(comics)) ferne Objekte mit ihren Händen manipulieren. Dies ist etwas, was Menschen in der Realität nicht können. Sowohl in HoloLens (AR) als auch in Mixed Reality (MR) werden Benutzer mit dieser magischen Fähigkeit ausgestattet, um die physische Einschränkung der realen Welt zu durchbrechen. Nicht nur macht diese Art von holografischem Erleben Spaß, es macht Benutzerinteraktionen zugleich effektiver und effizienter.
 
-## <a name="device-support"></a>Unterstützung von Geräten
+## <a name="device-support"></a>Geräteunterstützung
 
 <table>
 <colgroup>
@@ -44,7 +44,7 @@ ms.locfileid: "94703456"
 </table>
 
 
-_„Zeigen und Ausführen mit Händen“_ ist eines der neuen Features, welches das neue bewegliche Handverfolgungssystem verwendet. Dieses Eingabemodell ist auch das primäre Eingabemodell bei immersiven Headsets und Verwendung von Motion-Controllern.
+_„Zeigen und Ausführen mit Händen“_ ist eines der neuen Features, welches das neue bewegliche Handverfolgungssystem verwendet. Dieses Eingabemodell ist auch das primäre Eingabemodell bei immersiven Headsets mithilfe von Motion-Controllern.
 
 <br>
 
@@ -54,7 +54,7 @@ _„Zeigen und Ausführen mit Händen“_ ist eines der neuen Features, welches 
 
 In HoloLens 2 haben wir einen Lichtstrahl erzeugt, der aus der Mitte der Handfläche des Benutzers schießt. Dieser Lichtstrahl wird als Erweiterung der Hand behandelt. Ein ringförmiger Cursor befindet sich am Ende des Strahls, um den Punkt anzugeben, an dem der Strahl das Zielobjekt schneidet. Das Objekt, auf dem der Cursor landet, kann dann gestische Befehle von der Hand empfangen.
 
-Dieser grundlegende gestische Befehl wird mit dem Daumen und dem Zeigefinger ausgelöst, um das Tippen in die Luft auszuführen. Mithilfe des Handstrahls zum Zeigen und dem Tippen in die Luft zum Ausführen kann der Benutzer eine Schaltfläche oder einen Link aktivieren. Mit weiteren zusammengesetzten Gesten kann der Benutzer durch Webinhalte navigieren und 3D-Objekte aus der Entfernung bearbeiten. Das visuelle Design des Handlichtstrahls sollte auch auf die Zustände beim Zeigen und Ausführen reagieren, wie nachstehend beschrieben und gezeigt: 
+Dieser grundlegende gestische Befehl wird mit dem Daumen und dem Zeigefinger ausgelöst, um das Tippen in die Luft auszuführen. Mithilfe des Handstrahls zum Zeigen und dem Tippen in die Luft zum Ausführen kann der Benutzer eine Schaltfläche oder einen Link aktivieren. Mit weiteren zusammengesetzten Gesten können Benutzer durch Webinhalte navigieren und 3D-Objekte aus der Entfernung bearbeiten. Das visuelle Design des Handlichtstrahls sollte auch auf die Zustände beim Zeigen und Ausführen reagieren, wie nachstehend beschrieben und gezeigt: 
 
 :::row:::
     :::column:::
@@ -73,10 +73,9 @@ Dieser grundlegende gestische Befehl wird mit dem Daumen und dem Zeigefinger aus
 
 ---
 
-
 ## <a name="transition-between-near-and-far"></a>Übergang zwischen nah und fern
 
-Statt bestimmte Gesten zu verwenden (z. B. „Zeigen mit dem Zeigefinger" zum Richten des Lichtstrahls), haben wir den Lichtstrahl so entworfen, dass er aus der Mitte der Handfläche kommt, wodurch die fünf Finger frei gehalten und für manipulativere Gesten (z. B. Finger zusammenführen und greifen) reserviert werden konnten. Mit diesem Entwurf erstellen wir nur ein mentales Modell. Derselbe Satz von Gesten wird für nahe und ferne Interaktionen verwendet. So können Sie die gleiche Greifgeste zum Bearbeiten von Objekten aus unterschiedlichen Entfernungen verwenden. Der Aufruf des Lichtstrahls erfolgt automatisch und basiert auf der Entfernung, wie folgt:
+Anstatt spezifische Gesten wie „Zeigen mit dem Zeigefinger“ zum Lenken des Strahls zu verwenden, haben wir den Strahl so ausgelegt, dass er aus der Mitte der Handfläche des Benutzers entspringt. Auf diese Weise haben wir die fünf Finger für stärker manipulative Gesten wie Zusammendrücken und Greifen freigestellt. Mit diesem Entwurf erstellen wir nur ein mentales Modell. Derselbe Satz von Gesten wird für nahe und ferne Interaktionen verwendet. So können Sie die gleiche Greifgeste zum Bearbeiten von Objekten aus unterschiedlichen Entfernungen verwenden. Der Aufruf des Lichtstrahls erfolgt automatisch und basiert auf der Entfernung, wie folgt:
 
 :::row:::
     :::column:::
@@ -124,16 +123,16 @@ Wenn Sie mit dem Handlichtstrahl in die Ecken und auf die Kanten zielen, wird da
 * Durch das Anwenden einer Bearbeitungsgeste kann der Benutzer über das Eckenangebot eine einheitliche Skalierung und über das Kantenangebot eine Formatierung der Tafel vornehmen. 
 * Durch das Anwenden einer Bearbeitungsgeste auf die Hololeiste im oberen Bereich der 2D-Tafel kann der Benutzer die gesamte Tafel verschieben.<br>
 
-
 <br>
 
 ---
 
 ## <a name="3d-object-manipulation"></a>3D-Objektbearbeitung
 
-Bei der direkten Bearbeitung hat der Benutzer zwei Möglichkeiten zum Bearbeiten von 3D-Objekten: angebotsbasierte Bearbeitung und Bearbeitung ohne Angebot. Beim Modell „Zeigen und Ausführen“ kann der Benutzer genau die gleichen Aufgaben über den Handlichtstrahl ausführen. Es ist keine zusätzliche Schulung erforderlich.<br>
+Bei der direkten Bearbeitung hat der Benutzer zwei Möglichkeiten zum Bearbeiten von 3D-Objekten: angebotsbasierte Bearbeitung und Bearbeitung ohne Angebot. Beim Modell „Zeigen und Ausführen“ kann der Benutzer genau die gleichen Aufgaben mithilfe des Handlichtstrahls ausführen. Es ist kein zusätzlicher Lernaufwand erforderlich.<br>
 
 ### <a name="affordance-based-manipulation"></a>Angebotsbasierte Bearbeitung
+
 Der Benutzer verwendet den Handlichtstrahl zum Zeigen und Anzeigen des Begrenzungsrahmens und der Bearbeitungsangebote. Der Benutzer kann die Bearbeitungsgeste auf den Begrenzungsrahmen anwenden, um das gesamte Objekt zu verschieben, auf die Kantenangebote, um das Objekt zu drehen, und auf die Eckenangebote, um eine einheitliche Skalierung vorzunehmen. <br>
 
 :::row:::
@@ -151,8 +150,8 @@ Der Benutzer verwendet den Handlichtstrahl zum Zeigen und Anzeigen des Begrenzun
     :::column-end:::
 :::row-end:::
 
-
 ### <a name="non-affordance-based-manipulation"></a>Bearbeitung ohne Angebot
+
 Der Benutzer zeigt mit dem Handlichtstrahl, um den Begrenzungsrahmen anzuzeigen, und wendet dann direkt Bearbeitungsgesten darauf an. Mit einer Hand sind Verschiebung und Drehung des Objekts der Bewegung und Ausrichtung der Hand zugeordnet. Mit zwei Händen kann der Benutzer Verschiebung, Drehung und Skalierung entsprechend der relativen Bewegung der beiden Hände vornehmen.<br>
 
 <br>
@@ -160,7 +159,8 @@ Der Benutzer zeigt mit dem Handlichtstrahl, um den Begrenzungsrahmen anzuzeigen,
 ---
 
 ## <a name="instinctual-gestures"></a>Instinktive Gesten
-Das Konzept der instinktiven Gesten für „Zeigen und Ausführen“ entspricht dem für die [direkte Bearbeitung mit den Händen](direct-manipulation.md). Die Gesten, die der Benutzer bei einem 3D-Objekt ausführt, werden über das Design der Benutzeroberflächenangebote gesteuert. Ein kleiner Steuerpunkt beispielsweise kann den Benutzer motivieren, Daumen und Zeigefinger zusammenzuführen, während ein anderer Benutzer möglicherweise ein größeres Objekt mit allen fünf Fingern greifen möchte.
+
+Das Konzept der instinktiven Gesten für „Zeigen und Ausführen“ entspricht dem für die [direkte Bearbeitung mit den Händen](direct-manipulation.md). Die Gesten, die der Benutzer bei einem 3D-Objekt ausführt, werden über das Design der Benutzeroberflächenangebote gesteuert. Ein kleiner Steuerpunkt beispielsweise kann den Benutzer motivieren, Daumen und Zeigefinger zusammenzuführen, während ein anderer Benutzer möglicherweise alle fünf Finger verwenden möchte, um ein größeres Objekt zu greifen.
 
 :::row:::
     :::column:::
@@ -183,7 +183,7 @@ Das Konzept der instinktiven Gesten für „Zeigen und Ausführen“ entspricht 
 
 ## <a name="symmetric-design-between-hands-and-6-dof-controller"></a>Symmetrisches Design für Händen und Controller mit 6 Freiheitsgraden 
 
-Das Konzept „Zeigen und Ausführen“ für die ferne Interaktion wurde anfänglich für das Mixed Reality-Portal (MRP) erstellt, in dem ein Benutzer ein immersives Headset trägt und über Motion-Controller mit 3D-Objekten interagiert. Zum Zeigen auf und Bearbeiten von fernen Objekten schießen die Motion-Controller einen Lichtstrahl ab. zum Ausführen weiterer unterschiedlicher Aktionen gibt es Tasten auf den Controllern. Wir nutzen das Interaktionsmodell des Lichtstrahls und haben dieses mit den beiden Händen verbunden. Bei diesem symmetrischen Entwurf braucht der Benutzer, der sich mit MRP auskennt, kein anderes Interaktionsmodell für das Zeigen auf und Bearbeiten von fernen Objekten zu lernen, wenn er HoloLen 2 verwendet (und umgekehrt).    
+Das Konzept des Zeigens und Ausführens für die ferne Interaktion wurde für das Mixed Reality-Portal (MRP) erstellt und definiert. In diesem Szenario trägt ein Benutzer ein immersives Headset und interagiert mit 3D-Objekten über Motion Controller. Zum Zeigen auf und Bearbeiten von fernen Objekten schießen die Motion-Controller einen Lichtstrahl ab. zum Ausführen weiterer unterschiedlicher Aktionen gibt es Tasten auf den Controllern. Wir wenden das Interaktionsmodell des Lichtstrahls an und haben diese mit beiden Händen verbunden. Bei diesem symmetrischen Entwurf braucht der Benutzer, der sich mit MRP auskennt, kein anderes Interaktionsmodell für das Zeigen auf und Bearbeiten von fernen Objekten zu lernen, wenn er HoloLen 2 verwendet (und umgekehrt).    
 
 :::row:::
     :::column:::
@@ -198,16 +198,15 @@ Das Konzept „Zeigen und Ausführen“ für die ferne Interaktion wurde anfäng
 
 <br>
 
-
 ---
 
 ## <a name="hand-ray-in-mrtk-mixed-reality-toolkit-for-unity"></a>Handlichtstrahl in MRTK (Mixed Reality Toolkit) für Unity
-Standardmäßig stellt das MRTK einen vorkonfigurierten Handlichtstrahl ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) zur Verfügung, der den gleichen visuellen Status wie der System-Handlichtstrahl der Shell aufweist. Er wird im Eingabeprofil des MRTK unter „Pointers“ (Zeiger) zugewiesen. In einem immersiven Headset werden dieselben Strahlen für die Motion-Controller verwendet.
+
+Standardmäßig stellt das MRTK einen vorkonfigurierten Handlichtstrahl ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) zur Verfügung, der den gleichen visuellen Status wie der System-Handlichtstrahl der Shell aufweist. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. In einem immersiven Headset werden dieselben Strahlen für die Motion-Controller verwendet.
 
 * [MRTK – Zeigerprofil](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK – Eingabesystem](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
 * [MRTK – Zeiger](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
-
 
 ---
 

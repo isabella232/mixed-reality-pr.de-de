@@ -7,20 +7,18 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Anvisieren, Zielen per Anvisieren, Interaktion, Design, Eingabe, Hände nah beieinander, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, MRTK, Mixed Reality Toolkit, Taste, Collider, Begrenzungsrahmen, 2D, instinktive Gesten
-ms.openlocfilehash: a882aa4bace0d911d328ad82d881b5c0d8cd0c96
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: a5e3497926d977f2a60cd32bb5f009d27d7b86ee
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702846"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848047"
 ---
 # <a name="direct-manipulation-with-hands"></a>Direkte Manipulation mit den Händen
 
 ![Schaltfläche](images/UX_Hero_Manipulation.jpg)
 
-Die direkte Manipulation ist ein Eingabemodell, bei dem Hologramme direkt mit den Händen berührt werden. Die Idee hinter diesem Konzept ist, dass sich Objekte wie in der realen Welt verhalten. Schaltflächen können einfach durch Drücken aktiviert werden, Objekte können durch Greifen aufgenommen werden und 2D-Inhalte verhalten sich wie ein virtueller Touchscreen. Aus diesem Grund ist die direkte Manipulation für den Benutzer leicht erlernbar und macht auch Spaß. Sie gilt als „nahes“ Eingabemodell, d. h. es wird am besten für die Interaktion mit Inhalten verwendet, die innerhalb der Reichweite der Arme liegen.
-
-Die direkte Manipulation ist angebotsbasiert, d. h. benutzerfreundlich. Es gibt keine symbolischen Gesten, die den Benutzern vermittelt werden müssen. Alle Interaktionen basieren auf einem visuellen Element, das Sie berühren oder greifen können.
+Die direkte Manipulation ist ein Eingabemodell, bei dem Hologramme direkt mit den Händen berührt werden. Die Idee hinter diesem Konzept ist, dass sich Objekte wie in der realen Welt verhalten. Schaltflächen können einfach durch Drücken aktiviert werden, Objekte können durch Greifen aufgenommen werden und 2D-Inhalte verhalten sich wie ein virtueller Touchscreen. Die direkte Manipulation ist angebotsbasiert, d. h. benutzerfreundlich. Es gibt keine symbolischen Gesten, die den Benutzern vermittelt werden müssen. Alle Interaktionen basieren auf einem visuellen Element, das Sie berühren oder greifen können. Sie gilt als „nahes“ Eingabemodell, d. h. es wird am besten für die Interaktion mit Inhalten verwendet, die innerhalb der Reichweite der Arme liegen.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -47,7 +45,7 @@ Die direkte Manipulation ist angebotsbasiert, d. h. benutzerfreundlich. Es gibt 
 </table>
 
 
-Die direkte Manipulation ist ein primäres Eingabemodell für HoloLens 2 und nutzt das neue artikulierte Handtracking-System. Das Eingabemodell ist auch bei immersiven Headsets durch den Einsatz von Motion-Controllern verfügbar, wird aber nicht als primäre Möglichkeit zur Interaktion außerhalb der Objektmanipulation empfohlen. Die direkte Manipulation ist bei HoloLens (1. Generation) nicht verfügbar.
+Die direkte Manipulation ist ein primäres Eingabemodell für HoloLens 2 und nutzt das neue artikulierte Handtracking-System. Das Eingabemodell ist auch bei immersiven Headsets über Motion-Controller verfügbar, wird aber nicht als primäre Möglichkeit zur Interaktion außerhalb der Objektmanipulation empfohlen. Die direkte Manipulation ist bei HoloLens (1. Generation) nicht verfügbar.
 
 <br>
 
@@ -55,9 +53,9 @@ Die direkte Manipulation ist ein primäres Eingabemodell für HoloLens 2 und nut
 
 ## <a name="collidable-fingertip"></a>Kollisionsfähige Fingerspitze
 
-Bei HoloLens 2 werden die Hände des Benutzers als Skelettmodelle der linken und rechten Hand erkannt und interpretiert. Um die Idee, Hologramme direkt mit den Händen zu berühren, zu implementieren, könnten idealerweise fünf Collider an fünf Fingerspitzen der einzelnen Handskelettmodelle angefügt werden. Aufgrund der fehlenden taktilen Rückmeldung können jedoch zehn kollisionsfähige Fingerspitzen unerwartete und unvorhersehbare Kollisionen mit Hologrammen verursachen. 
+Bei HoloLens 2 werden die Hände des Benutzers als Skelettmodelle der linken und rechten Hand erkannt und interpretiert. Um die Idee, Hologramme direkt mit den Händen zu berühren, zu implementieren, könnten idealerweise fünf Collider an fünf Fingerspitzen der einzelnen Handskelettmodelle angefügt werden. Aufgrund der fehlenden taktilen Rückmeldung können jedoch 10 kollisionsfähige Fingerspitzen unerwartete und unvorhersehbare Kollisionen mit Hologrammen verursachen. 
 
-Wir empfehlen daher, nur einen Collider an jedem Zeigefinger anzufügen. Die kollidierbaren Zeigefingerspitzen können weiterhin als aktive Berührungspunkte für verschiedene Berührungsgesten mit anderen Fingern dienen, z. B. Drücken mit einem Finger, Tippbewegung mit einem Finger, Drücken mit zwei Fingern und Drücken mit fünf Fingern, wie in der folgenden Abbildung dargestellt.
+Wir empfehlen, nur einen Collider an jedem Zeigefinger anzufügen. Die kollisionsfähigen Zeigefingerspitzen können trotzdem als aktive Berührungspunkte für verschiedene Touchgesten dienen, die andere Finger einbeziehen. Zu den Touchgesten gehören das Drücken mit einem Finger, das Tippen mit einem Finger, das Drücken mit zwei Fingern und das Drücken mit fünf Fingern, wie unten dargestellt:
 
 :::row:::
     :::column:::
@@ -88,9 +86,9 @@ Anstelle einer zufälligen generischen Form wird empfohlen, einen Kugel-Collider
 
 ### <a name="fingertip-cursor"></a>Fingerspitzencursor
 
-Zusätzlich zum Rendern einer kollisionsfähigen Kugel an der Zeigefingerspitze haben wir einen erweiterten Fingerspitzencursor entwickelt, um interaktiv ein besseres Erlebnis bei der Bestimmung nahegelegener Ziele zu erreichen. Es handelt sich um einen ringförmigen Cursor, der an der Zeigefingerspitze angebracht ist. Entsprechend der Nähe reagiert er dynamisch auf ein Ziel in Bezug auf Ausrichtung und Größe, wie unten beschrieben:
+Zusätzlich zum Rendern einer kollisionsfähigen Kugel an der Zeigefingerspitze haben wir einen erweiterten Fingerspitzencursor entwickelt, um ein besseres Erlebnis bei der Bestimmung nahegelegener Ziele zu erreichen. Es handelt sich um einen ringförmigen Cursor, der an der Zeigefingerspitze angebracht ist. Entsprechend der Nähe reagiert er hinsichtlich Ausrichtung und Größe dynamisch auf ein Ziel, wie unten beschrieben:
 
-* Wenn sich ein Zeigefinger auf ein Hologramm zubewegt, befindet sich der Cursor immer parallel zur Oberfläche des Hologramms und verkleinert seine Größe entsprechend.
+* Wenn sich ein Zeigefinger auf ein Hologramm zubewegt, befindet sich der Cursor immer parallel zur Oberfläche des Hologramms und verkleinert seine Größe.
 * Sobald der Finger die Oberfläche berührt, schrumpft der Cursor zu einem Punkt und gibt ein Toucheingabeereignis aus.
 
 Mit interaktiven Feedback können Benutzer eine hohe Genauigkeit bei Aufgaben zur Zielbestimmung im Nahbereich erreichen, z. B. das Auslösen eines Hyperlinks oder das Drücken einer Schaltfläche, wie nachfolgend veranschaulicht. 
@@ -127,7 +125,7 @@ Das Hologramm selbst erfordert auch die Fähigkeit, sowohl visuelles als auch ak
     :::column:::
        ![Hover (nah) mit visuellem Feedback](images/bounding-box-with-proximity-shader-hover-near.jpg)<br>
         **Hover (nah)**<br>
-        Wenn sich die Fingerspitze der Oberfläche nähert, schrumpft das Spotlight entsprechend.
+        Wenn sich die Fingerspitze der Oberfläche nähert, schrumpft das Spotlight.
     :::column-end:::
     :::column:::
        ![Kontakt beginnt](images/bounding-box-with-proximity-shader-begin-contact.jpg)<br>
@@ -147,10 +145,10 @@ Das Hologramm selbst erfordert auch die Fähigkeit, sowohl visuelles als auch ak
 
 ## <a name="pressable-button"></a>Drückbare Schaltfläche
 
-Mit einer kollisionsfähigen Fingerspitze sind die Benutzer jetzt bereit, mit einer grundlegenden holografischen Benutzeroberflächenkomponente, z. B. einer drückbaren Schaltfläche, zu interagieren. Eine drückbare Schaltfläche ist eine holografische Schaltfläche, die auf einen direkten Fingerdruck angepasst ist. Da es an taktilen Feedback mangelt, sorgt eine drückbare Schaltfläche für einige Mechanismen, um auf dem taktilen Feedback basierende Probleme zu beheben.
+Mit einer kollisionsfähigen Fingerspitze sind die Benutzer jetzt bereit, mit einer grundlegenden holografischen Benutzeroberflächenkomponente, z. B. einer drückbaren Schaltfläche, zu interagieren. Eine drückbare Schaltfläche ist eine holografische Schaltfläche, die auf einen direkten Fingerdruck angepasst ist. Da es an taktilem Feedback mangelt, setzt eine drückbare Schaltfläche wiederum einige Mechanismen ein, um auf dem taktilen Feedback basierende Probleme zu beheben.
 
 * Der erste Mechanismus ist ein Begrenzungsrahmen mit einem Näherungsshader, wie er im vorherigen Abschnitt beschrieben wurde. Er vermittelt Benutzern ein besseres Gefühl von Nähe, wenn sie sich einer Schaltfläche nähern und mit ihr Kontakt aufnehmen können.
-* Der zweite Mechanismus ist die Absenkung. Absenkung erzeugt ein Gefühl des Niederdrückens, nachdem eine Fingerspitze die Schaltfläche berührt hat. Der Mechanismus stellt sicher, dass sich die Schaltfläche mit der Fingerspitze eng entlang der Tiefenachse bewegt. Die Schaltfläche kann ausgelöst werden, wenn sie eine bestimmte Tiefe erreicht (beim Drücken) oder die Tiefe wieder verlässt (beim Loslassen), nachdem sie passiert wurde.
+* Der zweite Mechanismus ist die Absenkung. Absenkung erzeugt ein Gefühl des Niederdrückens, nachdem eine Fingerspitze die Schaltfläche berührt hat. Der Mechanismus stellt sicher, dass sich die Schaltfläche mit der Fingerspitze eng entlang der Tiefenachse bewegt. Die Schaltfläche kann ausgelöst werden, wenn sie eine gewählte Tiefe erreicht (beim Drücken) oder die Tiefe wieder verlässt (beim Loslassen), nachdem sie passiert wurde.
 * Der Soundeffekt sollte hinzugefügt werden, um das Feedback zu verbessern, wenn die Schaltfläche ausgelöst wird.
 
 :::row:::
@@ -178,7 +176,7 @@ Mit einer kollisionsfähigen Fingerspitze sind die Benutzer jetzt bereit, mit ei
 
 ## <a name="2d-slate-interaction"></a>2D-Tafel – Interaktion
 
-Eine 2D-[Tafel](slate.md) ist ein holografischer Container, der zum Hosten von 2D-App-Inhalten verwendet wird (z. B. ein Webbrowser). Das Konzept für die Interaktion mit einer 2D-Tafel durch direkte Manipulation besteht darin, das mentale Modell der Interaktion mit einem physischen Touchscreen zu nutzen.
+Eine 2D-[Tafel](slate.md) ist ein holografischer Container, der zum Hosten von 2D-App-Inhalten verwendet wird (z. B. ein Webbrowser). Das Konzept für die Interaktion mit einer 2D-Tafel durch direkte Manipulation ist das gleiche wie für die Interaktion mit einem physischen Touchscreen.
 
 ### <a name="to-interact-with-the-slate-contact"></a>So interagieren Sie mit dem Tafelkontakt
 
@@ -205,12 +203,12 @@ Eine 2D-[Tafel](slate.md) ist ein holografischer Container, der zum Hosten von 2
 
 :::row:::
     :::column:::
-       ![Verschieben](images/manipulate-2d-slate-move.jpg)<br>
+       ![Grafik mit der Darstellung des Features zum Greifen und Ziehen](images/manipulate-2d-slate-move.jpg)<br>
        **Verschieben**<br>
        Bewegen Sie Ihre Hände in Richtung von Ecken und Kanten, um die nächstgelegenen Manipulationsangebote zu enthüllen. Greifen Sie die Hololeiste im oberen Bereich der 2D-Tafel, mit der Sie die gesamte Tafel verschieben können.
     :::column-end:::
     :::column:::
-       ![Skalierung](images/manipulate-2d-slate-scale.jpg)<br>
+       ![Grafik mit Darstellung der Skalierungsfunktion](images/manipulate-2d-slate-scale.jpg)<br>
         **Skalierung**<br>
         Greifen Sie die Manipulationsangebote, und führen Sie über die Eckenangebote eine einheitliche Skalierung aus.
     :::column-end:::
@@ -236,17 +234,17 @@ Angebotsbasierte Bearbeitung gestattet es Ihnen, das 3D-Objekt durch einen Begre
 
 :::row:::
     :::column:::
-       ![Verschieben](images/3d-object-manipulation-move.jpg)<br>
+       ![Grafik mit der Darstellung von Begrenzungsrahmen und Verschiebefeature eines Objekts](images/3d-object-manipulation-move.jpg)<br>
        **Verschieben**<br>
        Sobald sich die Hand eines Benutzers in der Nähe eines 3D-Objekts befindet, werden der Begrenzungsrahmen und das nächstgelegene Angebot angezeigt. Benutzer können den Begrenzungsrahmen greifen, um das gesamte Objekt zu verschieben.
     :::column-end:::
     :::column:::
-       ![Drehen](images/3d-object-manipulation-rotate.jpg)<br>
+       ![Grafik mit der Darstellung eines Benutzers, der die Kante eines Objekts greift, um es zu drehen](images/3d-object-manipulation-rotate.jpg)<br>
         **Drehen**<br>
         Benutzer können zum Drehen die Eckenangebote greifen.
     :::column-end:::
     :::column:::
-       ![Skalierung](images/3d-object-manipulation-scale.jpg)<br>
+       ![Grafik mit der Darstellung eines Benutzers, der die Ecke eines Objekts greift, um es zu skalieren](images/3d-object-manipulation-scale.jpg)<br>
        **Skalierung**<br>
        Benutzer können die Eckenangebote greifen, um eine einheitliche Skalierung auszuführen.
     :::column-end:::
@@ -257,7 +255,7 @@ Angebotsbasierte Bearbeitung gestattet es Ihnen, das 3D-Objekt durch einen Begre
 
 ### <a name="non-affordance-based-manipulation"></a>Bearbeitung ohne Angebot
 
-Die Bearbeitung ohne Angebot fügt dem Begrenzungsrahmen keine Angebote an. Benutzer können den Begrenzungsrahmen nur anzeigen und dann direkt mit ihm interagieren. Wenn der Begrenzungsrahmen mit einer Hand gegriffen wird, sind Verschiebung und Drehung des Objekts der Bewegung und Ausrichtung der Hand zugeordnet. Wenn das Objekt mit zwei Händen gegriffen wird, kann der Benutzer Verschiebung, Drehung und Skalierung entsprechend der relativen Bewegung der beiden Hände vornehmen.
+Bei der Bearbeitung ohne Angebot werden dem Begrenzungsrahmen keine Angebote angefügt. Benutzer können den Begrenzungsrahmen nur anzeigen und dann direkt mit ihm interagieren. Wenn der Begrenzungsrahmen mit einer Hand gegriffen wird, sind Verschiebung und Drehung des Objekts der Bewegung und Ausrichtung der Hand zugeordnet. Wenn das Objekt mit zwei Händen gegriffen wird, kann der Benutzer Verschiebung, Drehung und Skalierung entsprechend der relativen Bewegung der beiden Hände vornehmen.
 
 Bestimmte Bearbeitungen erfordern Präzision. Wir empfehlen, dass Sie **angebotsbasierter Bearbeitung** verwenden, da sie ein hohes Maß an Granularität bietet. Für eine flexible Bearbeitung empfehlen wir Ihnen, **eine angebotsfreie Bearbeitung** zu verwenden, da sie sofortige und spielerische Umgebungen ermöglicht.
 
@@ -270,20 +268,20 @@ Bestimmte Bearbeitungen erfordern Präzision. Wir empfehlen, dass Sie **angebots
 
 Mit HoloLens (1. Generation) haben wir den Benutzern eine Reihe vordefinierter Gesten vermittelt, z. B. „Öffnen“ und „In die Luft tippen“. Bei HoloLens 2 werden die Benutzer nicht aufgefordert, sich symbolische Gesten zu merken. Alle erforderlichen Benutzergesten, mit denen der Benutzer mit Hologrammen und Inhalten interagieren muss, sind instinktiv. Um instinktive Gesten zu erreichen, müssen Benutzer durch den Entwurf von Benutzeroberflächenangeboten dazu angeleitet werden, Gesten auszuführen.
 
-Wenn wir den Benutzer z. B. bestärken, ein Objekt oder einen Kontrollpunkt durch Zusammenführen von zwei Fingern zu greifen, sollte das Objekt oder der Kontrollpunkt klein sein. Wenn wir möchten, dass der Benutzer mit fünf Fingern greift, sollte das Objekt oder der Kontrollpunkt relativ groß sein. Bezogen auf Schaltflächen würde eine winzige Schaltfläche die Benutzer darauf beschränken, sie mit einem einzelnen Finger zu drücken. Eine große Schaltfläche würde die Benutzer veranlassen, sie mit ihren Handflächen zu drücken.
+Wenn wir den Benutzer z. B. bestärken, ein Objekt oder einen Kontrollpunkt durch Zusammenführen von zwei Fingern zu greifen, sollte das Objekt oder der Kontrollpunkt klein sein. Wenn wir möchten, dass der Benutzer mit fünf Fingern greift, sollte das Objekt oder der Kontrollpunkt relativ groß sein. Ähnlich wie bei Tasten schränkt eine kleine Taste Benutzer darauf ein, sie mit einem einzelnen Finger zu drücken. Eine große Taste ermutigt Benutzer, sie mit der Handfläche zu drücken.
 
 
 :::row:::
     :::column:::
-       ![Verschieben](images/instinctual-gestures-smallobject.jpg)<br>
+       ![Grafik, die einen Benutzer zeigt, der ein kleines Objekt greift, um es zu bewegen](images/instinctual-gestures-smallobject.jpg)<br>
        **Kleines Objekt**<br>
     :::column-end:::
     :::column:::
-       ![Drehen](images/instinctual-gestures-mediumobject.jpg)<br>
+       ![Grafik, die einen Benutzer zeigt, der ein mittelgroßes Objekt greift, um es zu bewegen](images/instinctual-gestures-mediumobject.jpg)<br>
         **Mittelgroßes Objekt**<br>
     :::column-end:::
     :::column:::
-       ![Skalieren](images/instinctual-gestures-largeobject.jpg)<br>
+       ![Grafik, die einen Benutzer zeigt, der ein großes Objekt greift, um es zu bewegen](images/instinctual-gestures-largeobject.jpg)<br>
        **Großes Objekt**<br>
     :::column-end:::
 :::row-end:::
@@ -297,7 +295,7 @@ Wenn wir den Benutzer z. B. bestärken, ein Objekt oder einen Kontrollpunkt durc
 
 ## <a name="symmetric-design-between-hands-and-6-dof-controllers"></a>Symmetrisches Design zwischen Händen und Controllern mit 6 Freiheitsgraden
 
-Sie haben vielleicht bemerkt, dass es Interaktionsparallelen gibt, die wir zwischen Händen in AR und Motion-Controllern in VR ziehen können. Beide Eingabemethoden können verwendet werden, um direkte Bearbeitungen in ihrer jeweiligen Umgebung auszulösen. In HoloLens 2 funktioniert das Greifen und Ziehen mit den Händen aus nächster Nähe weitgehend so, wie die Taste zum Greifen an den WMR-Motion-Controllern. Dies bietet den Benutzern die vertraute Interaktion zwischen den beiden Plattformen, die sich als nützlich erweisen kann, falls Sie sich jemals dazu entscheiden, Ihre Anwendung von einer zur anderen Plattform zu portieren.
+Sie haben vielleicht bemerkt, dass es Interaktionsparallelen gibt, die wir zwischen Händen in AR und Motion-Controllern in VR ziehen können. Beide Eingabemethoden können verwendet werden, um direkte Bearbeitungen in ihrer jeweiligen Umgebung auszulösen. In HoloLens 2 funktioniert das Greifen und Ziehen mit den Händen aus nächster Nähe weitgehend so, wie die Taste zum Greifen an den WMR-Motion-Controllern. Dies bietet den Benutzern die vertraute Interaktion zwischen den beiden Plattformen, die sich als nützlich erweisen kann, falls Sie sich jemals dazu entscheiden, Ihre Anwendung zwischen den Plattformen zu portieren.
 
 <br>
 
@@ -308,15 +306,15 @@ Sie haben vielleicht bemerkt, dass es Interaktionsparallelen gibt, die wir zwisc
 Direkte Bearbeitung kann sich magisch anfühlen, wenn sie wie beabsichtigt funktioniert. Sie kann aber auch zu Enttäuschungen führen, wenn Sie Ihre Hand nicht mehr bewegen können, ohne unbeabsichtigt ein Hologramm zu aktivieren. Das Eyetracking hilft potenziell, die Absicht des Benutzers besser zu erkennen.
 
 * **Wann**: Reduzieren der unbeabsichtigten Auslösung einer Bearbeitungsreaktion. Das Eyetracking ermöglicht ein besseres Verständnis dafür, womit sich ein Benutzer gerade beschäftigt.
-Stellen Sie sich z. B. vor, Sie lesen einen holografischen (lehrreichen) Text durch, wenn Sie rübergreifen, um Ihr reales Arbeitsgerät aufzunehmen.
+Stellen Sie sich z. B. vor, Sie lesen einen holografischen Text (mit Anweisungen) durch, wenn Sie rübergreifen, um Ihr reales Arbeitsgerät aufzunehmen.
 
-Dabei bewegen Sie Ihre Hand versehentlich über einige interaktive holografische Schaltflächen, die Sie vorher noch nicht einmal bemerkt haben (vielleicht lagen sie z. B. außerhalb des Sichtfelds des Benutzers).
+Dabei bewegen Sie Ihre Hand versehentlich über einige interaktive holografische Schaltflächen, die Sie vorher noch nicht einmal bemerkt haben. Beispielsweise lagen sie möglicherweise außerhalb des Sichtfelds des Benutzers.
 
-  Lange Rede kurzer Sinn: Wenn der Benutzer ein Hologramm eine Weile nicht betrachtet hat, aber ein Toucheingabe- oder Greifereignis dafür erkannt wurde, ist es wahrscheinlich, dass der Benutzer nicht wirklich beabsichtigt hat, mit diesem Hologramm zu interagieren.
+Wenn der Benutzer ein Hologramm eine Weile nicht betrachtet hat, aber ein Toucheingabe- oder Greifereignis dafür erkannt wurde, ist die Interaktion wahrscheinlich nicht beabsichtigt.
 
 * **Welche**:  Abgesehen von der Behandlung falsch positiver Aktivierungen umfasst ein weiteres Beispiel die bessere Identifizierung, welche Hologramme zu greifen oder zu drücken sind, da der genaue Schnittpunkt aus Ihrer Sicht möglicherweise nicht eindeutig ist, insbesondere wenn mehrere Hologramme nahe beieinander positioniert sind.
 
-  Während das Eyetracking bei HoloLens 2 Einschränkungen aufweisen kann, wie genau es Ihr Anvisieren mit dem Kopf bestimmen kann, ist dies bei nahen Interaktionen aufgrund von Tiefenunterschieden bei der Interaktion mit der Handeingabe möglicherweise sehr hilfreich. Das bedeutet, dass es manchmal schwierig ist, festzustellen, ob sich Ihre Hand hinter oder vor einem Hologramm befindet, um z. B. ein Widget für die Bearbeitung präzise zu greifen.
+  Während das Eyetracking bei HoloLens 2 Einschränkungen aufweisen kann, wie genau es Ihr Anvisieren mit dem Kopf bestimmen kann, ist dies bei nahen Interaktionen aufgrund von Tiefenunterschieden bei der Interaktion mit der Handeingabe möglicherweise hilfreich. Das bedeutet, dass es manchmal schwierig ist, festzustellen, ob sich Ihre Hand hinter oder vor einem Hologramm befindet, um z. B. ein Widget für die Bearbeitung präzise zu greifen.
 
 * **Wohin**: Verwenden Sie Informationen darüber, was sich ein Benutzer ansieht, mit schnell auslösenden Gesten. Greifen Sie ein Hologramm, und werfen Sie es grob in Richtung Ihres beabsichtigten Ziels.  
 

@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Kernkonzepte, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a11283ad4a7931c9e061cdbf25d4659fa4760822
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926007"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847604"
 ---
 # <a name="start-designing-and-prototyping"></a>Mit Entwerfen und Prototyping beginnen
 
 ![Zusammenfassung Mixed Reality-Design](images/design-hero-image.png)
 
-Mixed Reality-Anwendungen sind mit nichts zu vergleichen, was aktuell in der Welt existiert, und sie zu entwerfen, ist harte Arbeit. Sie müssen nicht nur die neuen Kombinationen aus realen und virtuellen Welten berücksichtigen, die Sie erschaffen, sondern auch die neuen Arten von Benutzererfahrungen, die sie hervorbringen. Da Mixed Reality ein weites Feld ist, haben wir wichtige Punkte aus dem Gesamtspektrum des Entwerfens ausgewählt und sie unten in Form einer Reihe von Prüfpunkten aufgefächert. Diese sind bauen aufeinander auf, wenn Sie aber bereits praktische Erfahrungen haben, lassen Sie sich nicht abhalten, zu einem der folgenden Abschnitte zu springen.
+Mixed Reality-Anwendungen sind mit nichts zu vergleichen, was aktuell in der Welt existiert, und sie zu entwerfen, ist harte Arbeit. Sie müssen nicht nur die neuen Kombinationen aus realen und virtuellen Welten berücksichtigen, die Sie erschaffen, sondern auch die neuen Benutzererfahrungen, die sie hervorbringen. Da Mixed Reality ein weites Feld ist, haben wir wichtige Punkte aus dem Gesamtspektrum des Entwerfens ausgewählt und sie unten in Form einer Reihe von Prüfpunkten aufgefächert. Diese sind bauen aufeinander auf, wenn Sie aber bereits praktische Erfahrungen haben, lassen Sie sich nicht abhalten, zu einem der folgenden Abschnitte zu springen.
 
 ## <a name="design-checkpoints"></a>Prüfpunkte für den Entwurf
 
@@ -34,8 +34,9 @@ Wie alle Reisen beginnt Ihr Abenteuer im Entwerfen von Mixed Reality-Anwendungen
 | --- | --- |
 | [Erweitern Ihres Entwurfsprozesses](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | Erhalten Sie aus erster Hand Einblick in einen Entwurfsprozess für Mixed Reality, der bei Entwicklern bei und außerhalb von Microsoft zusammengetragen wurde. |
 | [Typen von Mixed Reality-Apps](types-of-mixed-reality-apps.md) | Entscheiden Sie, wo im Mixed Reality-Spektrum das Erlebnis mit Ihrer App angesiedelt sein soll |
-| [App zum Entwerfen von Hologrammen](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Lernen Sie die Grundlagen des Mixed Reality-UX-Designs durch eigene Erfahrung, indem Sie in die Verhaltensweisen von Mixed Reality sowie Tipps und Empfehlungen zum Erstellen verblüffender HoloLens-Apps eintauchen (steht für den Download im Microsoft Store in HoloLens 2 zur Verfügung) |
+| [App zum Entwerfen von Hologrammen](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | Lernen Sie die Grundlagen des Mixed Reality-UX-Designs durch eigene Erfahrung, indem Sie in die Verhaltensweisen, Tipps und Empfehlungen zum Erstellen verblüffender HoloLens-Apps eintauchen (steht zum Download im Microsoft Store in HoloLens 2 zur Verfügung) |
 | [MRTK-Beispiele-Hub](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | Kennenlernen gängiger räumlicher Interaktionen und UX-Bausteine für Mixed Reality (zum Download verfügbar im Microsoft Store in HoloLens 2) |
+
 ### <a name="2-core-concepts"></a>2. Kernkonzepte
 
 Unabhängig davon, ob Sie für VR oder AR entwickeln, gibt es einige grundlegende Konzepte, die für das Entwerfen von kontinuierlichen immersiven Erfahrungen gelten. Den Blickpunkts des Benutzers zu verstehen, Objekte zu positionieren und sicherzustellen, dass alle sich wohl und sicher fühlen, haben an diesem Punkt Ihres Wegs die höchste Priorität. Am Ende dieses Abschnitts haben Sie eine solide Grundlage, die Sie in den Entwurf der Interaktion einbringen können.
@@ -45,26 +46,26 @@ Unabhängig davon, ob Sie für VR oder AR entwickeln, gibt es einige grundlegend
 |  Konzept  |  Ergebnis  |
 | --- | --- |
 | [Holografischer Rahmen](holographic-frame.md) | Verstehen Sie, wie Benutzer beim Tragen ihrer Headsets Ihre Inhalte als Überlagerung der realen Welt sehen |
-| [Koordinatensysteme](coordinate-systems.md) | Lernen Sie, Hologramme an Positionen in der Welt zu platzieren, die für den Benutzer von Bedeutung sind, sei es ihr physischer Raum oder ein virtueller Bereich, den Sie geschaffen haben. |
+| [Koordinatensysteme](coordinate-systems.md) | Lernen Sie, Hologramme an sinnvollen Positionen in der Welt zu platzieren, sei es im physischen Raum oder in einem virtuellen Bereich, den Sie geschaffen haben. |
 | [Räumliche Abbildung](spatial-mapping.md) | Verankern Sie Objekte in der Welt des Benutzers, und nutzen Sie die physischen Oberflächen der realen Welt. |
 | [Komfortaspekte](comfort.md) | Sorgen Sie für Benutzerkomfort und Sicherheit, indem Sie immersive Inhalte auf eine Weise erstellen und präsentieren, die die natürliche Welt nachahmt. |
 
 ### <a name="3-interaction-design"></a>3. Interaktionsgestaltung
 
-Ganz gleich, wie schön und immersiv eine virtuelle Erfahrung ist, ohne Interaktion ist sie nutzlos. In diesem Abschnitt werden die grundlegenden Interaktionsmodelle, Hand- und Motion Controller, die Verwendung von Spracheingaben und das Erfassen von Eyetracking-Daten von Ihren Benutzern erläutert. Am Ende dieses Abschnitts sind Sie bereit, das letzte große Thema auf Ihrem Entwurfsweg anzugehen: die Benutzererfahrung.
+Ganz gleich, wie schön und immersiv eine virtuelle Erfahrung ist, ohne Interaktion ist sie nutzlos. In diesem Abschnitt werden die grundlegenden Interaktionsmodelle, Hand- und Motion Controller, Spracheingaben und das Erfassen von Eyetracking-Daten von Ihren Benutzern erläutert. Am Ende dieses Abschnitts sind Sie bereit, das letzte große Thema auf Ihrem Entwurfsweg anzugehen: die Benutzererfahrung.
 
 ![Faktoren der Interaktionsgestaltung](images/UX_Hero_Manipulation.jpg)
 
 |  Konzept  |  Ergebnis  |
 | --- | --- |
 | [Interaktionsmodelle](interaction-fundamentals.md) | Stellen Sie durch Hand-, Augen- und Spracheingabe instinktive Interaktionen für Ihre Benutzer zur Verfügung |
-| [Hände und Motion-Controller](hands-and-tools.md) | Erfahren Sie, wie Hologramme im Nahbereich durch die Hände des Benutzers oder aus der Ferne mit präzisen Interaktionen berührt und manipuliert werden können |
+| [Hände und Motion-Controller](hands-and-tools.md) | Erfahren Sie, wie Sie mit Hologrammen im Nahbereich – mit den Händen des Benutzers – oder im Fernbereich präzise interagieren können |
 | [Spracheingabe](voice-input.md) | Verwenden Sie Sprachbefehle als Eingabe in Ihren immersiven Apps, um die umgebenden Hologramme und Umgebungen zu steuern  |
 | [Eyetracking](eye-tracking.md) | Verleihen Sie einer holografischen Benutzererfahrung ein ganz anderes Niveau von Kontext und menschlichem Verständnis, indem Sie Informationen darüber nutzen, was Ihre Benutzer ansehen |
 
 ### <a name="4-user-experience-elements"></a>4. Elemente der Benutzererfahrung
 
-Da Sie jetzt die grundlegenden Interaktionen beherrschen, können Sie sich auf subtilere Elemente der Benutzererfahrung konzentrieren und sie für die einzigartigen Umgebungen anpassen, die Mixed Reality bieten kann. Sie befassen sich mit allgemeinen Verhaltensweisen, dem Design von Medienobjekten, der Skalierung von Objekten und Typografie, alles unter dem Gesichtspunkt, Ihre App für Benutzer so intuitiv wie möglich zu gestalten. Diese Abschnitt markiert das Ende der offiziellen Reise in die Welt des Mixed Reality-Entwurfs, im Abschnitt [Wie geht es weiter?](#whats-next) gibt es aber weitere Ressourcen – die Aufgaben gehen Ihnen nicht aus.
+Da Sie jetzt die grundlegenden Interaktionen beherrschen, können Sie sich auf subtilere Elemente der Benutzererfahrung konzentrieren und sie für die einzigartigen Umgebungen anpassen, die Mixed Reality bieten kann. Beim Gestalten einer intuitiven Benutzererfahrung befassen Sie sich mit allgemeinen Verhaltensweisen, dem Design von Medienobjekten, der Skalierung von Objekten und Typografie. Diese Abschnitt markiert das Ende der offiziellen Reise in die Welt des Mixed Reality-Entwurfs, im Abschnitt [Wie geht es weiter?](#whats-next) gibt es aber weitere Ressourcen – die Aufgaben gehen Ihnen nicht aus.
 
 ![UX-Elemente](images/UX_Hero_BoundingBox.jpg)
 
@@ -108,7 +109,7 @@ Die Arbeit eines Entwerfers ist nie getan, insbesondere wenn es darum geht, imme
 
 ---
 
-### <a name="additional-resources"></a>Zusätzliche Ressourcen
+### <a name="other-resources"></a>Weitere Ressourcen
 
 :::row:::
     :::column:::
