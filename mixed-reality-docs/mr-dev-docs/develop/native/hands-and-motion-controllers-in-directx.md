@@ -1,17 +1,17 @@
 ---
 title: Hände und Motion-Controller in DirectX
-description: Entwicklerhandbuch zur Verwendung von Hand Verfolgungs-und Bewegungs Controllern in nativen DirectX-apps.
+description: Machen Sie sich mit dem Entwicklerhandbuch für die Verwendung von Hand Verfolgungs-und Bewegungs Controllern in nativen DirectX-apps mit
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Hands, Motion Controllers, DirectX, Input, holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 52fc8f054ee4a4a57374c90fc31703b749d498de
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 43673602b01a1937953d16fcca9b4c4f4d3fd33a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613054"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009540"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>Hände und Motion-Controller in DirectX
 
@@ -102,7 +102,7 @@ Dies führt zu den folgenden bewährten Vorgehensweisen beim Rendern und als Zie
 ## <a name="cross-device-input-properties"></a>Geräte übergreifende Eingabe Eigenschaften
 Die spatialinteraktionsource-API unterstützt Controller und Hand Verfolgungs Systeme mit einer Vielzahl von Funktionen. Eine Reihe dieser Funktionen sind zwischen den Gerätetypen üblich. Beispielsweise stellen Hand Verfolgungs-und Bewegungs Controller eine SELECT-Aktion und eine 3D-Position bereit. Wenn möglich, ordnet die API diese gemeinsamen Funktionen denselben Eigenschaften auf der spatialinteraktionsource zu.  Dies ermöglicht es Anwendungen, eine breite Palette von Eingabetypen leichter zu unterstützen. In der folgenden Tabelle werden die Eigenschaften, die unterstützt werden, und deren Vergleich zwischen Eingabetypen beschrieben.
 
-| Eigenschaft | BESCHREIBUNG | Bewegungen von hololens (1. Gen) | Motion-Controller | Handgelenk|
+| Eigenschaft | Beschreibung | Bewegungen von hololens (1. Gen) | Motion-Controller | Handgelenk|
 |--- |--- |--- |--- |--- |
 | [Spatialinteraktionsource::**hängkeit**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | Rechts oder Links/Controller. | Nicht unterstützt | Unterstützt | Unterstützt |
 | [Spatialinteraktionsourcestate::**isselectpressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | Aktueller Zustand der primären Schaltfläche. | Luft tippen | Trigger | Gelockerte Luft tippen (Aufrufe) |
@@ -149,7 +149,7 @@ Zusätzlich zu den 25 hierarchischen Gelenken bietet das System eine Palmen Verb
 
 Die folgenden Informationen werden für jedes Joint bereitgestellt:
 
-| Name | BESCHREIBUNG |
+| Name | Beschreibung |
 |--- |--- |
 |Position | 3D-Position des gemeinsamen, in jedem angeforderten Koordinatensystem verfügbar. |
 |Orientation | 3D-Ausrichtung des in jedem angeforderten Koordinatensystem verfügbaren knotes. |
@@ -231,7 +231,7 @@ Wenn Sie spatialgesturerecognizer verwenden möchten, behandeln Sie das [interak
 
 Bei hololens (erste Generation) sollten Interaktionen und Gesten ihre Zielvorgabe von der Kopfzeile des Benutzers ableiten, anstatt Sie an der Position des Benutzers zu rendern oder zu interagieren. Nachdem eine Interaktion begonnen hat, können relative Bewegungen der Hand verwendet werden, um die Bewegung zu steuern, wie bei der Manipulation oder Navigation.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Anvisieren mit dem Kopf und mit den Augen in DirectX](gaze-in-directx.md)
 * [Eingabe Modell für direkte Manipulation](../../design/direct-manipulation.md)
 * [Punkt-und Commit-Eingabe Modell](../../design/point-and-commit.md)

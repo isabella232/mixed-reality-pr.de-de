@@ -1,17 +1,17 @@
 ---
 title: 'Fallstudie: Erstellen einer Galaxie in gemischter Realität'
-description: Bevor Microsoft hololens ausgeliefert wurde, fragten wir unsere Entwickler Community, welche Art von APP Ihnen einen erfahrenen internen TeamBuild für das neue Gerät bereitstellen möchte. Mehr als 5000 Ideen wurden freigegeben, und nach einer 24-stündigen Twitter-Umfrage war der Gewinner eine Idee namens "Galaxy Explorer".
+description: Erfahren Sie mehr über die "Galaxy Explorer"-Anwendung und die Art der Erstellung für die unter-und nach einer 24-stündigen Twitter-Umfrage von communityentwicklern.
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, hololens, Windows Mixed Reality, teilen Sie Ihre Idee, Fallstudie
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687523"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009780"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Fallstudie: Erstellen einer Galaxie in gemischter Realität
 
@@ -41,7 +41,7 @@ Wir haben Belastungstests mit Tausenden von Punkt Partikeln in verschiedenen Mus
 
 ### <a name="creating-the-position-of-the-stars"></a>Erstellen der Position der Sterne
 
-Eines unserer Teammitglieder hat bereits den c#-Code geschrieben, der Sterne an der ursprünglichen Position generieren würde. Die Sterne befinden sich auf einer Ellipse, und ihre Position kann von (" **Cursor Offset** ", " **ellipsesize** ", " **Erhöhung** ") beschrieben werden, wobei " **Cursor Offset** " der Winkel des Sterns entlang der Ellipse ist, " **ellipsesize** " die Dimension der Ellipse entlang "X" und "Z" und die Rechte Erweiterung des Stern innerhalb der Galaxie. Daher können wir einen Puffer ([computebuffer](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) erstellen, der mit jedem Star-Attribut initialisiert und an die GPU gesendet wird, wo er für den Rest der Arbeit leben würde. Zum Zeichnen dieses Puffers verwenden wir das [drawprozeduren von Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) , das das Ausführen eines Shaders (Code auf einer GPU) für eine beliebige Gruppe von Punkten ermöglicht, ohne dass ein tatsächliches Mesh vorhanden ist, das das Galaxy darstellt:
+Eines unserer Teammitglieder hat bereits den c#-Code geschrieben, der Sterne an der ursprünglichen Position generieren würde. Die Sterne befinden sich auf einer Ellipse, und ihre Position kann von ("**Cursor Offset**", " **ellipsesize**", " **Erhöhung**") beschrieben werden, wobei " **Cursor Offset** " der Winkel des Sterns entlang der Ellipse ist, " **ellipsesize** " die Dimension der Ellipse entlang "X" und "Z" und die Rechte Erweiterung des Stern innerhalb der Galaxie. Daher können wir einen Puffer ([computebuffer](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) erstellen, der mit jedem Star-Attribut initialisiert und an die GPU gesendet wird, wo er für den Rest der Arbeit leben würde. Zum Zeichnen dieses Puffers verwenden wir das [drawprozeduren von Unity](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) , das das Ausführen eines Shaders (Code auf einer GPU) für eine beliebige Gruppe von Punkten ermöglicht, ohne dass ein tatsächliches Mesh vorhanden ist, das das Galaxy darstellt:
 
 **CPU**
 
@@ -85,14 +85,14 @@ Sobald genügend Auslassungs Punkte hinzugefügt wurden und für die Rotation fe
 
 ### <a name="creating-the-motion-of-the-stars"></a>Erstellen der Bewegung der Sterne
 
-Um die allgemeine Stern Bewegung zu animieren, mussten wir einen konstanten Winkel für jeden Frame hinzufügen und Sterne an einer Konstanten radialen Geschwindigkeit entlang der Ellipsen bewegen. Dies ist der Hauptgrund für die Verwendung von " **Cursor Offset** ". Dies ist technisch nicht korrekt, da Sterne auf den langen Seiten der Ellipsen schneller bewegt werden, aber die allgemeine Bewegung war gut.
+Um die allgemeine Stern Bewegung zu animieren, mussten wir einen konstanten Winkel für jeden Frame hinzufügen und Sterne an einer Konstanten radialen Geschwindigkeit entlang der Ellipsen bewegen. Dies ist der Hauptgrund für die Verwendung von " **Cursor Offset**". Dies ist technisch nicht korrekt, da Sterne auf den langen Seiten der Ellipsen schneller bewegt werden, aber die allgemeine Bewegung war gut.
 
 ![Sterne bewegen sich auf dem langen Bogen schneller, langsamer an den Rändern.](images/ellipse-movement.jpg)
 
 Sterne bewegen sich auf dem langen Bogen schneller, langsamer an den Rändern.
 
 
-Dadurch wird jeder Stern vollständig durch beschrieben (" **Cursor Offset** ", " **ellipssize** ", " **Erhöhung** ", " **Alter** "), wobei " **Age** " eine Ansammlung der Gesamtzeit ist, die seit dem Laden der Szene vergangen ist.
+Dadurch wird jeder Stern vollständig durch beschrieben ("**Cursor Offset**", " **ellipssize**", " **Erhöhung**", " **Alter**"), wobei " **Age** " eine Ansammlung der Gesamtzeit ist, die seit dem Laden der Szene vergangen ist.
 
 
 
@@ -203,6 +203,6 @@ Möchten Sie mehr über den Entwicklungsprozess für den Galaxy Explorer erfahre
 </table>
 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Galaxy Explorer auf GitHub](https://github.com/Microsoft/GalaxyExplorer)
 * [Galaxy Explorer-Projektaktualisierungen auf YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

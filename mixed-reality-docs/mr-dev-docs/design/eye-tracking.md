@@ -1,17 +1,17 @@
 ---
 title: Eyetracking – Blickverfolgung
-description: Hololens 2 ermöglicht ein neues Maß an Kontext und menschliches Verständnis in der holografischen Benutzerfreundlichkeit, indem Entwicklern die Möglichkeit geboten wird, Informationen über den Benutzer zu verwenden.
+description: Erfahren Sie mehr über die Augen Verfolgung für hololens 2 und die neuen Ebenen der menschlichen Kenntnisse, wenn Sie in Holographic-Umgebungen anbieten.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Kalibrierung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Intent, Actions
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847943"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009600"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Blickverfolgung auf HoloLens 2
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847943"
 
 Hololens 2 ermöglicht ein neues Maß an Kontext und menschliches Verständnis in der holografischen Benutzerfreundlichkeit, indem Entwicklern die Möglichkeit geboten wird, Informationen über den Benutzer zu verwenden. Auf dieser Seite wird erläutert, wie Entwickler von der Eye-Nachverfolgung für verschiedene Anwendungsfälle profitieren können und worauf Sie achten müssen, wenn Sie auf Augenblick basierende Benutzerinteraktionen entwerfen. 
 
-Die Eye Tracking-API wurde mit dem Datenschutz eines Benutzers entworfen, sodass keine identifizierbaren Informationen, insbesondere jegliche Biometrie, übergeben werden. Bei der Überwachung von nach Verfolgungs fähigen Anwendungen muss der Benutzer der APP die Berechtigung zur Verwendung von Augen Verfolgungs Informationen erteilen. 
+Die Eye Tracking-API wurde mit dem Datenschutz eines Benutzers entworfen, sodass keine identifizierbaren Informationen, insbesondere jegliche Biometrie, übergeben werden. Bei der Überwachung von nach Verfolgungs fähigen Anwendungen muss der Benutzer der APP die Berechtigung zur Verwendung von Augen Verfolgungs Informationen erteilen.
 
 ### <a name="device-support"></a>Geräteunterstützung
 
@@ -166,7 +166,7 @@ Auch hier wird empfohlen, dass Sie dem Benutzer, der möglicherweise nicht weiß
 
 Auf dieser Seite haben Sie hoffentlich einen guten Überblick erhalten, mit dem Sie die Rolle der Eye-Nachverfolgung und die Eingabe des Augenblicks für hololens 2 verstanden haben. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen über die Rolle des [Augenblicks für die Interaktion mit holograms](eye-gaze-interaction.md), den [Augenblick in Unity](https://aka.ms/mrtk-eyes) und den [Augenblick in DirectX](../develop/native/gaze-in-directx.md)an.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Kalibrierung](../calibration.md)
 * [Komfort](comfort.md)

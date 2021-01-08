@@ -1,17 +1,17 @@
 ---
 title: Anzeigen des Fortschritts
-description: Ein Statussteuerelement gibt dem Benutzer eine Rückmeldung, dass ein Vorgang mit langer Laufzeit ausgeführt wird.
+description: Erfahren Sie, wie die Statuskontrolle dem Benutzer Feedback zur Verfügung stellt, dass ein Vorgang mit langer Ausführungszeit in ihren Mixed Reality-apps ausgeführt wird.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows Mixed Reality, Design, Steuerelemente, UI, UX, Fortschrittsanzeige, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848279"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009460"
 ---
 # <a name="progress-indicator"></a>Statusanzeige
 
@@ -80,7 +80,7 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 
 ---
 
-## <a name="best-practices"></a>Bewährte Methoden
+## <a name="best-practices"></a>Empfohlene Methoden
 * Schließen Sie das [Abrechnungs-oder tagboarding](billboarding-and-tag-along.md) eng mit der Anzeige des Fortschritts ab, da der Benutzer problemlos seinen Kopf in einen leeren Bereich verschieben und Kontext verlieren kann. Ihre APP könnte so aussehen, als ob Sie abgestürzt ist, wenn der Benutzer nichts sehen kann. Das fakboardingboarding und das Tag-Along sind in den Fortschritt vorfab integriert.
 * Es ist immer gut, Statusinformationen zu den Ereignissen für den Benutzer bereitzustellen. Die Fortschritts präfab stellt verschiedene visuelle Stile bereit, einschließlich des Windows-standardmäßigen Rings-Typs zum Angeben des Status. Sie können auch ein benutzerdefiniertes Mesh mit einer Animation verwenden, wenn Sie möchten, dass der Stil Ihres Fortschritts an der Marke Ihrer APP ausgerichtet wird.
 
@@ -98,7 +98,7 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

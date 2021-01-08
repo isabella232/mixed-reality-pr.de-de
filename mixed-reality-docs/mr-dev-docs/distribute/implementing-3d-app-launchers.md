@@ -1,17 +1,17 @@
 ---
 title: Implementieren von 3D-App-Startprogrammen (UWP-Apps)
-description: Erfahren Sie, wie Sie 3D-App-Launcher und-Logos für Windows Mixed Reality UWP-apps und-Spiele (verteilt durch die Microsoft Store) auf hololens-und immersive-Headsets (VR) erstellen können.
+description: Erfahren Sie, wie Sie 3D-App-Launcher und-Logos für Windows Mixed Reality UWP-apps und Spiele auf hololens-und VR-Headsets erstellen.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Deep-Link, secondarytile, Sekundär Kachel, UWP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, XML, Begrenzungsfeld, Unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757495"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009680"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementieren von 3D-App-Startprogrammen (UWP-Apps)
 
@@ -203,7 +203,7 @@ Bei Kachel Benachrichtigungen wird das Senden eines Updates mit einem 3D-Medieno
 
 Weitere Informationen zu den anderen Kacheln Features und Attributen und deren Verwendung für 2D-Kacheln finden Sie in der [Dokumentation Kacheln für UWP-apps](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Gemischtes Reality-Modell Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) mit einem 3D-App-Start Programm.
 * [Entwurfsanleitung für 3D-App-Startprogramm](3d-app-launcher-design-guidance.md)

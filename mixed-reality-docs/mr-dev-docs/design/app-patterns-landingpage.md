@@ -1,21 +1,22 @@
 ---
 title: Mixed Reality-UX-Elemente
-description: Dieses Dokument enthält eine Reihe von Themen, in denen das Entwerfen von Geräten mit gemischter Realität erläutert wird.
+description: Erfahren Sie, wie Sie Ihre apps für gemischte Reality-Geräte mit grundlegenden Elementen, allgemeinen Steuerelementen und Verhalten entwerfen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX-Design, UX mit gemischter Realität, UX, App-Muster, Steuerelemente, Stil, hololens, Interaktion, räumliche Interaktion, räumliche Benutzeroberfläche, UX-Elemente, Verhaltensweisen, Bausteine, Typografie, Farben, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847784"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009700"
 ---
 # <a name="ux-elements-overview"></a>Übersicht über UX-Elemente
 
 ## <a name="foundational-elements"></a>Grundlegende Elemente
+
 Erfahren Sie mehr über die grundlegenden Elemente, die Sie benötigen, um eine großartige gemischte Realität zu entwerfen.
 
 :::row:::
@@ -39,6 +40,7 @@ Erfahren Sie mehr über die grundlegenden Elemente, die Sie benötigen, um eine 
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>Allgemeine Steuerelemente und Verhaltensweisen
+
 Erfahren Sie mehr über häufig verwendete allgemeine räumliche Interaktionen und UI-Bausteine für Mixed Reality-Oberflächen.
 
 :::row:::

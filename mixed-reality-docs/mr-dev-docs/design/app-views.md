@@ -1,17 +1,17 @@
 ---
 title: App-Ansichten
-description: Die zwei Arten von Ansichten in Windows Mixed Reality-apps sind immersive Ansichten und 2D-Ansichten.
+description: 'Erfahren Sie, wie Sie die zwei Arten von Ansichten in Windows Mixed Reality-Apps verwenden: immersive Ansichten und 2D-Ansichten.'
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: immersive Ansicht, 2D-Ansicht, Slate, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 0c6127427d5af118bb18aea5c19ddaef6fe8d5eb
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848067"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009630"
 ---
 # <a name="app-views"></a>App-Ansichten
 
@@ -43,7 +43,7 @@ Eine zentrale Verwendung von 2D-Sichten zeigt ein Texteingabe Formular, das die 
 
 Eine APP kann über 2D-Ansichten sowohl auf dem Desktop Monitor als auch in einem angeschlossenen Headset auf einem Desktop-PC verfügen. Beispielsweise können Sie mit der zweiten 2D-Ansicht Edge auf dem Desktop Monitor durchsuchen, um ein Video mit dem 360-Grad zu finden. Wenn Sie das Video abspielen, startet Edge eine sekundäre immersive Ansicht im Headset, um die immersiven Videoinhalte anzuzeigen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [App-Modell](app-model.md)
 * [Aktualisieren von 2D-UWP-Apps für Mixed Reality](../develop/porting-apps/building-2d-apps.md)

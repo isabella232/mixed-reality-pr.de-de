@@ -1,19 +1,19 @@
 ---
 title: Konfigurieren des Projekts ohne mrtk
-description: Anweisungen zum Konfigurieren eines Unity-Projekts für Windows Mixed Reality
+description: Erfahren Sie, wie Sie ein neues Unity-Projekt für Windows Mixed Reality ohne das Mixed Reality Toolkit konfigurieren.
 author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, gemischte Realität, Entwicklung, Einstieg, neues Projekt, Windows Mixed Reality, UWP, XR, Leistung
-ms.openlocfilehash: 1337001e8cc5c280c5789acbc8f10f40bca9b763
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613389"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009900"
 ---
-# <a name="configuring-your-project-without-mrtk"></a>Konfigurieren des Projekts ohne mrtk
+# <a name="configuring-your-project-without-mrtk"></a>Konfigurieren von Projekten ohne MRTK
 
 Windows Mixed Reality (WMR) ist eine Microsoft-Plattform, die als Teil des Betriebssystems Windows 10 eingeführt wird. Mit der WMR-Plattform können Sie Anwendungen erstellen, mit denen digitale Inhalte auf Holographic-und VR-Geräten angezeigt werden.
 

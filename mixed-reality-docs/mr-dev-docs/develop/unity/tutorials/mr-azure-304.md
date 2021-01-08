@@ -1,17 +1,17 @@
 ---
 title: 'MR und Azure 304: Gesichtserkennung'
-description: Absolvieren Sie diesen Kurs, um die Azure-Gesichtserkennung innerhalb einer gemischten Reality-Anwendung zu implementieren.
+description: In diesem Kurs erfahren Sie, wie Sie die Azure-Gesichtserkennung in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Gesichtserkennung, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 8e1420e5764e7330026731ffb4f0c180604c2789
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a6578950039a0a9267b7191f5b96775dca366c01
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679829"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010150"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR und Azure 304: Gesichtserkennung
 
@@ -177,7 +177,7 @@ Wenn Sie diese APP zum Erkennen von Benutzern Schulen möchten, benötigen Sie z
 
     3. Die *Zielplattform* ist der **lokale Computer**.
 
-    4.  Sie müssen auch *nuget-Pakete wiederherstellen* (Klicken Sie mit der *Solution* rechten Maustaste auf die Projekt Mappe, und wählen Sie **nuget-Pakete wiederherstellen**).
+    4.  Sie müssen auch *nuget-Pakete wiederherstellen* (Klicken Sie mit der  rechten Maustaste auf die Projekt Mappe, und wählen Sie **nuget-Pakete wiederherstellen**).
 
 3.  Klicken Sie auf *lokaler Computer* , und die Anwendung wird gestartet. Beachten Sie, dass auf kleineren Bildschirmen der gesamte Inhalt möglicherweise nicht sichtbar ist, Sie können jedoch einen Bildlauf nach unten durchführen, um ihn anzuzeigen.
 
@@ -341,12 +341,12 @@ Der Zweck der faceanalysis-Klasse besteht darin, die Methoden zu hosten, die fü
 
 So erstellen Sie die *faceanalysis* -Klasse:
 
- 1. Klicken Sie im Projekt Panel mit der rechten Maustaste in den *Ordner Objekte* , und klicken **Create** Sie dann auf  >  **Ordner** erstellen. Nennen Sie die Ordner **Skripts**. 
+ 1. Klicken Sie im Projekt Panel mit der rechten Maustaste in den *Ordner Objekte* , und klicken Sie dann auf  >  **Ordner** erstellen. Nennen Sie die Ordner **Skripts**. 
 
     ![Erstellen Sie die faceanalysis-Klasse.](images/AzureLabs-Lab4-22.png)
 
 2.  Doppelklicken Sie auf den soeben erstellten Ordner, um ihn zu öffnen. 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner, **Create** und klicken Sie dann auf  >  **c#-Skript** erstellen. Nennen Sie das Skript *faceanalysis*. 
+3.  Klicken Sie mit der rechten Maustaste in den Ordner, und klicken Sie dann auf  >  **c#-Skript** erstellen. Nennen Sie das Skript *faceanalysis*. 
 4.  Doppelklicken Sie auf das neue *faceanalysis* -Skript, um es mit Visual Studio 2017 zu öffnen.
 5.  Geben Sie die folgenden Namespaces oberhalb der *faceanalysis* -Klasse ein:
 
@@ -836,7 +836,7 @@ So stellen Sie auf hololens bereit:
 6.  Ihre APP sollte nun in der Liste der installierten apps auf Ihren hololens angezeigt werden, die bereit sind, gestartet zu werden.
 
 > [!NOTE]
-> Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf **Solution Platform** *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann auf dem lokalen Computer bereit, indem Sie im **Menü Erstellen** die Option *Lösung* bereitstellen auswählen. 
+> Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf  *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann auf dem lokalen Computer bereit, indem Sie im **Menü Erstellen** die Option *Lösung* bereitstellen auswählen. 
 
 
 ## <a name="chapter-10---using-the-application"></a>Kapitel 10: Verwenden der Anwendung

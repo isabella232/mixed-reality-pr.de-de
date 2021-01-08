@@ -1,17 +1,17 @@
 ---
 title: Nachverfolgen von QR-Codes
-description: Erfahren Sie, wie Sie QR-Codes auf hololens 2 erkennen.
+description: Erfahren Sie, wie Sie QR-Codes erkennen, Webcam-Funktionen hinzufügen und Koordinatensysteme in Mixed Reality-apps auf hololens 2 verwalten.
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, Location based Entertainment, VR-Arkade, Arcade, immersive, QR, QR-Code, hololens2
-ms.openlocfilehash: 023da7a98d1559d9dd0387a7efbaf26ad577df50
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530009"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009400"
 ---
 # <a name="qr-code-tracking"></a>Nachverfolgen von QR-Codes
 
@@ -21,7 +21,7 @@ HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordi
 
 <table>
 <tr>
-<th>Funktion</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">Hololens (erste Generation)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">Hololens (erste Generation)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> QR-Code Erkennung</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -458,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

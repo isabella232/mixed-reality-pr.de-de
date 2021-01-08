@@ -1,14 +1,14 @@
 ---
 title: Problembehandlung bei Windows Mixed Reality
-description: Windows Mixed Reality-Problembehandlung, das über unsere standardmäßige Kundensupport Dokumentation hinausgeht.
+description: Bleiben Sie mit der Windows Mixed Reality-Problembehandlung auf dem neuesten Stand, das über unsere standardmäßige consumerdienstdokumentation hinausgeht
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support
-ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859489"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009480"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Problembehandlung bei Windows Mixed Reality (FAQs)
 
@@ -58,5 +58,5 @@ Wenn Sie auf dem PC langsam arbeiten, sich im Hintergrund im Hintergrund befinde
 
 - [Leistung](performance-questions.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 - [Weitere Fragen](other-questions.md)

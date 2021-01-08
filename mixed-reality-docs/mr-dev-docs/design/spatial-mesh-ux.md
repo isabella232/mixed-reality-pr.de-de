@@ -1,17 +1,17 @@
 ---
 title: Visualisierung räumlicher Netze
-description: Erfahren Sie, wie Geräte physische Umgebungen mithilfe räumlicher Netze verstehen.
+description: Erfahren Sie mehr über Entwurfs Richtlinien und Kenntnisse der physischen Umgebung mit räumlicher Gitter Visualisierung in mrtk.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Gemischte Realität, hololens, UI-Steuerelemente, Interaktion, UI, UX, UX-Entwurf, räumliche Benutzeroberfläche, räumliche Interaktion, 3D-Benutzeroberfläche, 3D-UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848188"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009920"
 ---
 # <a name="spatial-mesh"></a>Raum-Mesh
 
@@ -41,7 +41,7 @@ Mrtk bietet mehrere Materialien für die Visualisierung räumlicher Netze.
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

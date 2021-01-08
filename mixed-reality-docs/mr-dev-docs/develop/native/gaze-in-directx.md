@@ -1,17 +1,17 @@
 ---
 title: Anvisieren mit dem Kopf und mit den Augen in DirectX
-description: Erfahren Sie, wie Sie die Haupt-und Augen Nachverfolgung in nativen DirectX-Apps verwenden.
+description: Erfahren Sie, wie Sie Raycasting-Daten von der Haupt-und der Augen Verfolgung in nativen DirectX-apps anfordern, verwenden und entpacken.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Augenblick, Kopf-und Haupt Nachverfolgung, Augen Verfolgung, DirectX, Input, holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848096"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009550"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Eingaben in den Kopf-und Augenblick in DirectX
 
@@ -27,6 +27,7 @@ Der Augen **Blick** stellt die Richtung dar, in der die Augen des Benutzers such
 Mit der  [spatialpointerpose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) -API ist sowohl der Kopf-als auch der Augenblick-Strahlen zugänglich. Nennen Sie [spatialpointerpose:: trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) , um ein neues spatialpointerpose-Objekt am angegebenen Zeitstempel und [Koordinatensystem](coordinate-systems-in-directx.md)zu empfangen. Diese spatialpointerpose enthält den Ursprung und die Richtung des Haupt Blicks. Sie enthält außerdem einen Blick auf den Ursprung und die Richtung des Augenblicks, wenn die Augen Verfolgung verfügbar ist.
 
 ### <a name="device-support"></a>Geräteunterstützung
+
 <table>
 <colgroup>
     <col width="25%" />
@@ -216,7 +217,7 @@ Entwickler sollten sicherstellen, dass Sie angemessene Unterstützung für Benut
 
 <br>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Kalibrierung](../../calibration.md)
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)

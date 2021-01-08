@@ -1,17 +1,17 @@
 ---
 title: Bewegungscontroller
-description: Details zu den Mixed Reality-Bewegungs Controllern.
+description: Erfahren Sie, wie Sie Eingabe Interaktionen mit gemischten Reality-Motion-Controllern in Ihren Anwendungen einrichten, Paaren und Vorgesetzten.
 author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 6DOF-Controller, Motion-Controller, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, scrollen, Zieh Punkt, Zustand
-ms.openlocfilehash: 768e316f175769d7399866b0b7cc62ee8c5c2cde
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847441"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009710"
 ---
 # <a name="motion-controllers"></a>Bewegungscontroller
 
@@ -203,17 +203,15 @@ Apps, die Positionen basierend auf dem nach verfolgungsstatus unterschiedlich be
 <tr>
 <th> Nach verfolgungsstatus </th><th> Sourcelossrisk </th><th> Positionsgenauigkeit </th><th> Trygetposition</th>
 </tr><tr>
-<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Ungefähre Genauigkeit</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Keine Position</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: orange"> false</td>
 </tr>
 </table>
-
-
 
 Diese Motion Controller-Überwachungs Zustände werden wie folgt definiert:
 * **Hohe Genauigkeit:** Während sich der Motion-Controller in der Ansicht des Dashboards befindet, stellt er im Allgemeinen hohe Genauigkeits Positionen auf der Grundlage der visuellen Nachverfolgung bereit. Ein beweglicher Controller, der das Sichtfeld vorübergehend verlässt oder vorübergehend von den Headset-Sensoren (z. b. durch die andere Seite des Benutzers) verdeckt wird, gibt weiterhin hohe Genauigkeit für kurze Zeit zurück, basierend auf der trägheitnach Verfolgung des Controllers.
@@ -277,7 +275,8 @@ Weitere Informationen finden Sie im Leitfaden zur Problembehandlung für [Motion
 
 [Geben Sie uns Feedback](../give-us-feedback.md) im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
+
 * [Gesten und Motion-Controller in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
 * [Hände und Motion-Controller in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gesten](gaze-and-commit.md#composite-gestures)

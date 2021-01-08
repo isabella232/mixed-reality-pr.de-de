@@ -1,17 +1,17 @@
 ---
 title: QuickInfo
-description: Eine QuickInfo ist eine kurze Beschreibung, die mit einem anderen Steuerelement oder Objekt verknüpft ist.
+description: Erfahren Sie, wie Sie Quick Infos in Anwendungen mit gemischter Realität verwenden. Dies sind kurze Beschreibungen, die mit einem anderen Steuerelement oder Objekt verknüpft sind.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, ToolTip, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848120"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009410"
 ---
 # <a name="tooltip"></a>QuickInfo
 
@@ -31,7 +31,7 @@ Eine QuickInfo ist eine kurze Beschreibung, die mit einem anderen Steuerelement 
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

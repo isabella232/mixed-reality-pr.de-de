@@ -1,17 +1,17 @@
 ---
 title: Fallstudie – Schauen durch Löcher in Ihrer Realität
-description: In dieser Fallstudie wird erläutert, wie der "Magic Window"-Effekt auf hololens implementiert wird, sodass der Benutzer hinter den Wänden, in der Etage und in virtuellen Öffnungen innerhalb der eigentlichen Umgebung sehen kann.
+description: In dieser Fallstudie wird die Effekt Implementierung "Magic Window" in hololens erläutert, sodass der Benutzer hinter den Wänden, dem Boden und den virtuellen Öffnungen angezeigt werden kann.
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality, hololens, Magic Window, Parser
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687427"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010110"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>Fallstudie – Schauen durch Löcher in Ihrer Realität
 
@@ -19,7 +19,7 @@ Wenn Menschen über gemischte Realität nachzudenken und was Sie mit Microsoft h
 
 ## <a name="the-tech"></a>Die Technologie
 
-Wenn Sie bei der Unterbrechung der Wände in roboraid, beim Durchlaufen der Wände in **[roboraid](https://www.youtube.com/watch?v=Hf9qkURqtbM)** , das Entsperren eines Mauer Sicherheits in **[Fragmenten](case-study-creating-an-immersive-experience-in-fragments.md)** oder das Glück, den UNSC Infinity-Hangar in der **[Halo 5-Umgebung in 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)** , festgestellt haben, haben Sie gesehen, was ich spreche. Abhängig von Ihrer Phantasie kann dieser visuelle Trick verwendet werden, um temporäre Löcher in den drywall zu versetzen oder um die Umgebungen unter einer losen Fläche auszublenden.
+Wenn Sie bei der Unterbrechung der Wände in roboraid, beim Durchlaufen der Wände in **[roboraid](https://www.youtube.com/watch?v=Hf9qkURqtbM)**, das Entsperren eines Mauer Sicherheits in **[Fragmenten](case-study-creating-an-immersive-experience-in-fragments.md)** oder das Glück, den UNSC Infinity-Hangar in der **[Halo 5-Umgebung in 2015](https://www.youtube.com/watch?v=QDw5QjDtFy8)**, festgestellt haben, haben Sie gesehen, was ich spreche. Abhängig von Ihrer Phantasie kann dieser visuelle Trick verwendet werden, um temporäre Löcher in den drywall zu versetzen oder um die Umgebungen unter einer losen Fläche auszublenden.
 
 ![Roboraid fügt dreidimensionale Pipes und andere Strukturen hinter ihren Wänden ein, die nur durch Löcher sichtbar sind, die bei einem Umbruch durch die Eindringlinge erstellt werden.](../develop/unity/images/roboraid-640px.png)
 
@@ -99,7 +99,7 @@ Im folgenden finden Sie einige Ideen dazu, wo Sie diese Idee als nächstes treff
 * Stellen Sie sich vor, wie der Inhalt innerhalb des virtuellen Lochs interaktiv ist. Wenn Ihre Benutzer über Ihre Wände hinausgehende Auswirkungen haben, können Sie den Sinn von Fragen, die dieser Trick bereitstellen kann, wirklich verbessern.
 * Stellen Sie sich vor, wie Sie Objekte auf bekannte Bereiche zurück sehen können. Wie können Sie z. b. in der Coffee-Tabelle eine Holographic-Lücke platzieren und den Fußboden darunter sehen?
 
-## <a name="about-the-author"></a>Zum Autor
+## <a name="about-the-author"></a>Informationen zum Autor
 
 <table style="border-collapse:collapse">
 <tr>
@@ -108,7 +108,7 @@ Im folgenden finden Sie einige Ideen dazu, wo Sie diese Idee als nächstes treff
 </tr>
 </table>
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [MR-Grundlagen 101: Vollständiges Projekt mit Gerät](../develop/unity/tutorials/holograms-101.md)
 * [Koordinatensysteme](../design/coordinate-systems.md)
 * [Raumanker](../design/spatial-anchors.md)

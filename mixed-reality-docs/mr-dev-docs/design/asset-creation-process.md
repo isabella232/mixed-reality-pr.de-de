@@ -1,17 +1,17 @@
 ---
 title: Inhaltsobjekt-Erstellungsprozess
-description: Leitfaden zum Erstellen von Assets für gemischte Realität.
+description: Erfahren Sie, wie Sie Assets für gemischte Umgebungen erstellen, erwerben und portieren.
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Asset, Creation, Process, Budget, Polygons, Texturen, Shadern, Leistung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Assets
-ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847550"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009619"
 ---
 # <a name="asset-creation-process"></a>Inhaltsobjekt-Erstellungsprozess
 

@@ -1,17 +1,17 @@
 ---
 title: HP-Reverb-G2-Controller in Unity
-description: Anweisungen zur Verwendung der HP-Reverb-G2-Controller in steamvr und Windows Mixed Reality.
+description: Erfahren Sie, wie Sie die neuen HP-Hall-G2-Controller in den Unity-Anwendungen steamvr und Windows Mixed Reality einrichten und verwenden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, Reverb, Reverb G2, HP-Simulator G2, gemischte Realität, Entwicklung, Motion Controller, Benutzereingaben, Features, neues Projekt, Emulator, Dokumentation, Anleitungen, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: 17f373a3d94740bf103821b85ee5d6fe4dbaa11f
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+ms.openlocfilehash: 1c9d8f1279f81ea1d8020e2a3c689dae86496221
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886253"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009830"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>HP-Reverb-G2-Controller in Unity
 
@@ -286,7 +286,7 @@ void Update()
 
 ### <a name="generating-events-from-the-new-inputs"></a>Erstellen von Ereignissen aus den neuen Eingaben 
 
-Anstatt den Zustand eines Controllers einmal pro Frame abzufragen, haben Sie die Möglichkeit, alle Zustandsänderungen als Ereignisse zu behandeln, sodass Sie auch die schnellsten Aktionen verarbeiten können, die kleiner als ein Frame sind. Damit dieser Ansatz funktioniert, muss der Cache der Motion-Controller alle Zustände verarbeiten, die seit dem letzten Frame von einem Controller veröffentlicht wurden. Sie können dies tun, indem Sie den Zeitstempel des letzten von einem "mutioncontroller" abgerufenen "comtioncontrollerreading" Speichern und " *mutioncontroller. trygetreadingaftertime ()* " aufrufen: 
+Anstatt den Zustand eines Controllers einmal pro Frame abzufragen, haben Sie die Möglichkeit, alle Zustandsänderungen als Ereignisse zu behandeln, sodass Sie auch die schnellsten Aktionen verarbeiten können, die kleiner als ein Frame sind. Damit dieser Ansatz funktioniert, muss der Cache der Motion-Controller alle Zustände verarbeiten, die seit dem letzten Frame von einem Controller veröffentlicht wurden. Sie können dies tun, indem Sie den Zeitstempel des letzten von einem "mutioncontroller" abgerufenen "comtioncontrollerreading" Speichern und " *mutioncontroller. trygetreadingaftertime ()*" aufrufen: 
 
 ```csharp
 private class MotionControllerState 
@@ -505,7 +505,7 @@ private void stateCache_InputPressed(object sender, MotionControllerStateCache.M
 } 
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 <!-- ## Getting started
 

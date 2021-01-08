@@ -1,17 +1,17 @@
 ---
 title: Abrufen eines HolographicSpace-Objekts
-description: Erläutert die holographicspace-API, ein Kernkonzept für das holografische Rendering und räumliche Eingaben.
+description: Erfahren Sie, wie Sie die holographicspace-API für Holographic Rendering und räumliche Eingaben in ihren Mixed Reality-Apps verwenden.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holographicspace, corewindow, räumliche Eingabe, Rendering, Austausch Kette, Holographic Frame, Update Schleife, Spiel Schleife, Frame der Referenz, loerability, Beispielcode, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 3b0e31b8d3bf0d7741e7976edd2069db68ea5121
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613014"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009530"
 ---
 # <a name="getting-a-holographicspace"></a>Abrufen eines HolographicSpace-Objekts
 
@@ -176,6 +176,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 Verwenden Sie dieses Ereignis dann, um zu bestimmen, wann holograms nicht auf der ganzen Welt gerendert werden können.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Rendern in DirectX](rendering-in-directx.md)
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)

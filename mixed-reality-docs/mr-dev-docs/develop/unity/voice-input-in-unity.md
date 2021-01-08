@@ -1,17 +1,17 @@
 ---
 title: Spracheingabe in Unity
-description: Unity bietet drei Möglichkeiten zum Hinzufügen von Spracheingaben zu Ihrer Windows Mixed Reality-Anwendung.
+description: Erfahren Sie, wie Unity drei Möglichkeiten zum Hinzufügen von Spracheingaben, sprach erkenfizierung und Diktat für Ihre Windows Mixed Reality-Anwendung bietet.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Spracheingabe, keywordrecognizer, grammarerkenzer, Mikrofon, Diktat, Voice, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010571"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009800"
 ---
 # <a name="voice-input-in-unity"></a>Spracheingabe in Unity
 

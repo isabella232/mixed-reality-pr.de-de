@@ -1,6 +1,6 @@
 ---
 title: Das Erstellen von Kippy-Escapezeichen
-description: Sehen Sie sich die folgenden Informationen an, während wir die Erstellung von Kippy-Escapezeichen für hololens 2 in der Unreal Engine untersuchen.
+description: Sehen Sie sich die folgenden Informationen an, während wir die Erstellung der "Kippy"-Escapezeichen Mixed Reality-Anwendung für hololens 2 in der Unreal Engine erkunden.
 author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609681"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010040"
 ---
 # <a name="the-making-of-kippys-escape"></a>Das Erstellen von Kippy-Escapezeichen
 
@@ -21,8 +21,6 @@ Kippy der Roboter wird reaktiviert, um sich auf einer Insel zu finden. Es liegt 
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie **Unreal Engine 4,25 oder** höher verwenden, wenn Sie Kippy-Escapezeichen aus dem GitHub-Repository erstellen.
-
-## <a name="overview"></a>Übersicht
 
 Die Escapezeichen-Escapesequenz ist eine Open Source-Beispiel-App mit [hololens 2](https://docs.microsoft.com/hololens/hololens2-hardware) für Unreal Engine 4 und [Mixed Reality UX Tools für Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In diesem Beitrag wird der Prozess von den ersten Prinzipien und dem visuellen Entwurf bis hin zur Implementierung und Optimierung der-Funktion erläutert. Weitere Informationen zum entwickeln gemischter Reality-Anwendungen mit mrtk-UX-Tools finden Sie in der [Übersicht über die Unreal-Entwicklung](unreal-development-overview.md).
 
@@ -78,7 +76,7 @@ Eine [Schaltfläche](https://microsoft.github.io/MixedReality-UXTools-Unreal/ver
 
 ![Beispiel für eine Schaltfläche zum Komprimieren](images/kippys-escape/kippys-escape-img-08.gif)
 
-Auf [slider](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) der vierten Insel wird eine Schiebereglerkomponente angezeigt, die die endgültige Bridge auslöst, die ausgelöst werden soll.  
+Auf [](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) der vierten Insel wird eine Schiebereglerkomponente angezeigt, die die endgültige Bridge auslöst, die ausgelöst werden soll.  
 
 ![Beispiel für Schieberegler-Komponente GIF](images/kippys-escape/kippys-escape-img-09.gif) 
 

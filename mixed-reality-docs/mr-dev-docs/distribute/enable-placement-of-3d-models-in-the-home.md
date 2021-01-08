@@ -1,17 +1,17 @@
 ---
 title: Aktivieren des Platzierens von 3D-Modellen auf der Startseite
-description: Platzieren von 3D-Modellen von Ihrer Website oder Anwendung in Windows Mixed Reality Home
+description: Erfahren Sie, wie Sie 3D-Modelle von Ihrer Website oder Anwendung in Windows Mixed Reality Home platzieren.
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, Modell, Ort in Zuhause, Ort, Welt, Modellierung, gemischte Realität Home, Web, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757808"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010100"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Aktivieren der Platzierung von 3D-Modellen in der Mixed Reality Startumgebung
 
@@ -42,7 +42,7 @@ Wenn Sie z. b. eine Anwendung entwickeln, die einen Katalog mit 3D-Möbeln zum E
     </tr>
 </table>
 
-## <a name="overview"></a>Übersicht
+## <a name="the-basics"></a>Grundlagen
 
 Es gibt zwei Schritte, um die Platzierung von 3D-Modellen in der Windows Mixed Reality-Startseite zu aktivieren:
 1. [Stellen Sie sicher, dass Ihr 3D-Modell mit dem Windows Mixed Reality-Home kompatibel ist](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md).
@@ -91,7 +91,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 * Bei immersiven (VR)-Headsets muss das Mixed Reality-Portal vor dem Aufrufen des *Add Model-Protokolls* nicht ausgeführt werden. In diesem Fall startet das *Modell zum Hinzufügen von Modellen* das Mixed Reality-Portal und platziert das Objekt direkt an der Stelle, an der das Headset sucht, sobald Sie in der Mixed Reality-Startseite eintreffen. 
 * Wenn Sie das *Add Model-Protokoll* vom Desktop aus aufrufen, während das gemischte Reality-Portal bereits ausgeführt wird, stellen Sie sicher, dass das Headset "Awake" ist. Andernfalls ist die Platzierung nicht erfolgreich. 
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Erstellen von 3D-Modellen für die Verwendung in der Windows Mixed Reality-Startseite](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Navigieren auf der Startseite von Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

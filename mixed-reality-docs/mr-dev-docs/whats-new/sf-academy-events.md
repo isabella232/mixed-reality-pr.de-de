@@ -1,17 +1,17 @@
 ---
 title: Mixed Reality-Referentenreihe
-description: Kalender der Mixed Reality-Entwickler Ereignisse beim Reaktor in San Francisco.
+description: Bleiben Sie mit unserem Kalender gemischter Reality-Entwickler Ereignisse beim Reaktor in San Francisco auf dem neuesten Stand.
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: Ereignis, Kalender, Academy, Schedule, SF, San Francisco, Reaktor
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757428"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010000"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Ereignisse in der gemischten Realität von Microsoft
 
@@ -32,5 +32,3 @@ Treten Sie an den bevorstehenden Veranstaltungen an dem Microsoft Mixed Reality-
 | Mixed Reality-Referentenreihe|22. Oktober 2020|[Einführung in webxr mit babylonjs](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality-Referentenreihe|17. November 2020|[Entwickeln der Zukunft: Neuerungen in mrtk](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | Mixed Reality-Referentenreihe|1\. Dezember 2020|[Entwerfen von holograms]()|
-
-

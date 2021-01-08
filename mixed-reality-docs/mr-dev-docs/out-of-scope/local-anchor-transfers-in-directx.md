@@ -1,17 +1,17 @@
 ---
 title: Lokale Anker Übertragungen in DirectX
-description: Erläutert das Synchronisieren von zwei hololens-Geräten durch die Übertragung räumlicher Anker.
+description: Erfahren Sie, wie Sie zwei hololens-Geräte synchronisieren, indem Sie räumliche Anker übertragen, exportieren und serialisieren.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Hololens, synchronisieren, räumlicher Anker, Übertragung, Multiplayer, Ansicht, Szenario, Exemplarische Vorgehensweise, Beispielcode, Übertragung, lokale Anker Übertragung, Anker Export, Anker Import
-ms.openlocfilehash: 6d54b29a01617f9d78b7fdfec0ebc04a3cd48002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91684475"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009650"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Lokale Anker Übertragungen in DirectX
 
@@ -674,7 +674,7 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 
 Das war's. Nun sollten Sie über genügend Informationen verfügen, um zu versuchen, die Anker zu suchen, die über das Netzwerk empfangen werden. Beachten Sie, dass der Client über ausreichend visuelle Überwachungsdaten verfügen muss, damit der-Platz gefunden werden kann. Wenn es nicht sofort funktioniert, versuchen Sie es für eine Weile. Wenn dies immer noch nicht funktioniert, lassen Sie den Server weitere Anker senden, und verwenden Sie die Netzwerkkommunikation, um eine Zustimmung für den Client zu erhalten. Sie können dies ausprobieren, indem Sie das holographicspatialanchortransfersample herunterladen, die Client-und Server-IPS konfigurieren und Sie auf Client-und Server-hololens-Geräten bereitstellen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Parallel Patterns Library (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
 * [Windows. Networking. Streamsocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
 * [Windows. Networking. streamsocketlistener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)

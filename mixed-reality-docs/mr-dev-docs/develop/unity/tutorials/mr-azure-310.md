@@ -1,17 +1,17 @@
 ---
 title: 'MR und Azure 310: Objekterkennung'
-description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie ein Machine Learning-Modell trainieren, und verwenden Sie dann das trainierte Modell, um ähnliche Objekte und ihre Position in der realen Welt aus einer gemischten Reality-Anwendung zu erkennen.
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie ein Machine Learning-Modell trainieren und verwenden, um ähnliche Objekte und ihre Position in der realen Welt zu erkennen.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Custom Vision, Objekterkennung, gemischte Realität, Academy, Unity, Tutorial, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 10f3b2b8f8422a20c39a4d89568e42ca530683c2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679459"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010170"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr und Azure 310: Objekterkennung
 
@@ -29,7 +29,7 @@ Mit diesem Dienst können Sie ein Machine Learning-Modell mithilfe von Objekt Im
 **Azure-Custom Vision, Objekterkennung** ist ein Microsoft-Dienst, mit dem Entwickler benutzerdefinierte Abbild Klassifizierungen erstellen können. Diese Klassifizierungen können dann mit neuen Bildern verwendet werden, um Objekte innerhalb dieses neuen Bilds zu erkennen, indem Sie die **Feld Begrenzungen** innerhalb des Bilds selbst bereitstellen. Der Dienst bietet ein einfaches, leicht zu verwendende Onlineportal, um diesen Prozess zu optimieren. Weitere Informationen finden Sie unter den folgenden Links:
 
 * [Azure-Custom Vision Seite](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [Grenzwerte und Kontingente](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [Limits und Kontingente](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 Nach Abschluss dieses Kurses verfügen Sie über eine Mixed Reality-Anwendung, die Folgendes ausführen kann:
 
@@ -210,7 +210,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
     ![](images/AzureLabs-Lab310-22.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit*  >  *Einstellungen* bearbeiten* , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu * >  *Einstellungen* bearbeiten* , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![](images/AzureLabs-Lab310-23.png)
 
@@ -261,7 +261,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
 9.  Schließen Sie das Fenster **Buildeinstellungen**.
 
-10. Klicken Sie im **Editor** auf **Edit**  >  **Projekt Einstellungs**  >  **Grafik** bearbeiten.
+10. Klicken Sie im **Editor** auf   >  **Projekt Einstellungs**  >  **Grafik** bearbeiten.
 
     ![](images/AzureLabs-Lab310-30.png)
 
@@ -331,13 +331,13 @@ Diese Klasse ist für Folgendes zuständig:
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie im **Projekt Panel** mit der rechten Maustaste in den **Ordner Asset**, und klicken **Create** Sie dann auf  >  **Ordner** erstellen. Nennen Sie die Ordner **Skripts**.
+1.  Klicken Sie im **Projekt Panel** mit der rechten Maustaste in den **Ordner Asset**, und klicken Sie dann auf  >  **Ordner** erstellen. Nennen Sie die Ordner **Skripts**.
 
     ![](images/AzureLabs-Lab310-37.png)
 
 2.  Doppelklicken Sie auf den neu erstellten Ordner, um ihn zu öffnen.
 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner **Create**, und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript **customvisionanalyser.**
+3.  Klicken Sie mit der rechten Maustaste in den Ordner , und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript **customvisionanalyser.**
 
 4.  Doppelklicken Sie auf das neue **customvisionanalyser** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -470,7 +470,7 @@ Dieses Skript enthält eine Reihe von Objekten, die von anderen Klassen zum Seri
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript **customvisionobjects.**
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript **customvisionobjects.**
 
 2.  Doppelklicken Sie auf das neue **customvisionobjects** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -626,7 +626,7 @@ Mit dieser Klasse wird der **Collider der räumlichen Zuordnung** in der Szene s
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript **spatialmapping.**
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript **spatialmapping.**
 
 2.  Doppelklicken Sie auf das neue **spatialmapping** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -703,7 +703,7 @@ Diese Klasse ist für das Einrichten des Cursors an der richtigen Position in ei
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Skript für " **gazecursor** " abrufen
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Skript für " **gazecursor** " abrufen
 
 2.  Doppelklicken Sie auf das neue **gazecursor** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -787,7 +787,7 @@ Diese Klasse führt Folgendes aus:
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript **sceneorganisator**.
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript **sceneorganisator**.
 
 2.  Doppelklicken Sie auf das neue **sceneorganisator** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1024,7 +1024,7 @@ So erstellen Sie diese Klasse:
 
 1.  Wechseln Sie zum Ordner " **Scripts** ", den Sie zuvor erstellt haben.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Create**, und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript mit **imagecapture**.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner , und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript mit **imagecapture**.
 
 3.  Doppelklicken Sie auf das neue **imagecapture** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1239,7 +1239,7 @@ Nachdem Sie den gesamten für dieses Projekt erforderlichen Code geschrieben hab
 
     ![](images/AzureLabs-Lab310-38.png)
 
-3.  Öffnen Sie **im Projekt Panel** den **Ordner "Prefabs**", und ziehen Sie die **Bezeichnung** "Prefab" in das Eingabefeld für das **SceneOrganiser** leere Verweis Ziel der *Bezeichnung* *, wie* in der folgenden Abbildung gezeigt:
+3.  Öffnen Sie **im Projekt Panel** den **Ordner "Prefabs**", und ziehen Sie die **Bezeichnung** "Prefab" in das Eingabefeld für das  leere Verweis Ziel der *Bezeichnung* *, wie* in der folgenden Abbildung gezeigt:
 
     ![](images/AzureLabs-Lab310-39.png)
 

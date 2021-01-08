@@ -1,17 +1,17 @@
 ---
 title: Lokale Anker Übertragungen in Unity
-description: Übertragen von Ankern zwischen mehreren hololens-Geräten in einer Unity-Anwendung.
+description: Erfahren Sie, wie Anker zwischen mehreren hololens-Geräten in einer Unity Mixed Reality-Anwendung übertragen werden.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Freigabe, Anker, worldanchor, Mr Sharing 250, worldanchortransferbatch, spatialperception, Transfer, local Anchor Transfer, Anchor Export, Anchor Import
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690763"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009640"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Lokale Anker Übertragungen in Unity
 
@@ -35,7 +35,7 @@ Aktivieren der *spatialperception* -Funktion:
 ### <a name="anchor-transfer"></a>Anker Übertragung
 
 **Namespace:** *unityengine. XR. WSA. Sharing*<br>
-**Typ** : *worldanchortransferbatch*
+**Typ**: *worldanchortransferbatch*
 
 Zum Übertragen eines [worldanchors](../develop/unity/coordinate-systems-in-unity.md)müssen Sie den Anker einrichten, der übertragen werden soll. Der Benutzer eines hololens scannt seine Umgebung und wählt entweder manuell oder Programm gesteuert einen Punkt im Bereich aus, um als Anker für die gemeinsame Nutzung zu gelten. Die Daten, die diesen Punkt darstellen, können dann serialisiert und an die anderen Geräte übertragen werden, die in der-Funktion gemeinsam genutzt werden. Jedes Gerät deserialisiert dann die Anker Daten und versucht, diesen Punkt im Speicherplatz zu finden. Damit die Anker Übertragung funktioniert, muss jedes Gerät in genügend der Umgebung gescannt werden, damit der durch den Anker dargestellte Punkt identifiziert werden kann.
 

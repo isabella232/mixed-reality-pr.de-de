@@ -1,17 +1,17 @@
 ---
 title: Scene Understanding SDK
-description: Programmier Handbuch zum Scene Understanding SDK
+description: Erfahren Sie, wie Sie das Scene Understanding SDK, einschließlich Komponenten, Meshes und Objekten, in Mixed Reality-apps installieren und verwenden.
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity
-ms.openlocfilehash: 1ec29d09ab52abae9a9111a6441523c8aa7720f7
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530346"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009380"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Übersicht über das Szene Verständnis von SDK
 
@@ -117,7 +117,7 @@ Sceneobjects können eine der folgenden Möglichkeiten aufweisen:
 
 <table>
 <tr>
-<th>Sceneobjectkind</th> <th>BESCHREIBUNG</th>
+<th>Sceneobjectkind</th> <th>Beschreibung</th>
 </tr>
 <tr><td>Hintergrund</td><td>Das sceneobject-Objekt ist bekannt, dass es sich <b>nicht</b> um eines der anderen erkannten Arten von Szenen Objekten handelt. Diese Klasse sollte nicht mit unknown verwechselt werden, wenn der Hintergrund bekanntermaßen nicht "Wall/Floor/Ceiling" ist usw... Obwohl Unknown noch nicht kategorisiert ist.</b></td></tr>
 <tr><td>Wall</td><td>Eine physische Wand. Wände werden als unveränderbare Umgebungs Strukturen angesehen.</td></tr>

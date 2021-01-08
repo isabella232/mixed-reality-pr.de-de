@@ -1,17 +1,17 @@
 ---
 title: Handtracking in Unreal
-description: Erläutert die Verwendung der Hand Verfolgung in Unreal
+description: Erfahren Sie, wie Sie Hand nach Verfolgungs Eingaben, Pose, Hand-Meshes und Live Link Animationen in Unreal Mixed Reality-Apps verwenden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Handbücher, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 66ae1994f2bbee3ba4786a7c4eeebfe1cd57ca37
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002660"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010160"
 ---
 # <a name="hand-tracking-in-unreal"></a>Handtracking in Unreal
 
@@ -162,7 +162,7 @@ Hololens 2 verfolgt räumliche Gesten, was bedeutet, dass Sie diese Gesten als E
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie die unwirkliche Entwicklungs Journey befolgen, die wir festgelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie der Unreal-Entwicklungs-Journey folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Lokale Raumanker](unreal-spatial-anchors.md)

@@ -1,17 +1,17 @@
 ---
 title: HP-Reverb-G2-Controller in Unreal
-description: Anweisungen zur Verwendung der HP-Reverb-G2-Controller in openxr und steamvr
+description: Erfahren Sie, wie Sie die neuen HP-Hall-G2-Controller in openxr und steamvr für Unreal Mixed Reality-Anwendungen verwenden.
 author: hferrone
 ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, Reverb, Reverb G2, HP-Simulator G2, gemischte Realität, Entwicklung, Bewegungs Controller, Benutzereingaben, Features, neues Projekt, Emulator, Dokumentation, Handbücher, Features, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 83ff19c0527ee2d10a4f00ccd84539ca16d05517
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609591"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009990"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>HP-Reverb-G2-Controller in Unreal 
 
@@ -52,7 +52,7 @@ Klicken Sie mit der rechten Maustaste auf einen Blueprint, und suchen Sie im Ein
 
 [!INCLUDE[](includes/tabs-g2-controller-mapping-in-unreal.md)]
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Steamvr-Eingabe](https://docs.unrealengine.com/Platforms/VR/SteamVR/HowTo/SteamVRInput/index.html)
 * [Verwenden von "steamvr" mit Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 * [Unreal Player Kamera](https://docs.unrealengine.com/Programming/Tutorials/PlayerCamera/3/index.html)

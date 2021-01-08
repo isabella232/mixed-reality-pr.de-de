@@ -1,17 +1,17 @@
 ---
 title: Billboarding und Tag-along
-description: Objekte mit einem Abrechnungs-Board orientieren sich stets an dem Benutzer.
+description: Erfahren Sie, wie Sie Objekte mit dem Abgleichen von Objekten verwenden, die sich immer für den Benutzer in gemischten Reality-Anwendungen orientieren.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, fakboardingvorgang, tagparallel, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848030"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009611"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding und Tag-along
 
@@ -57,7 +57,7 @@ Ebenso wie wirklich mit dem Titel gesperrter Inhalt können sich taggingobjekte 
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

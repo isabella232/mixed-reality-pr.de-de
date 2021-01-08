@@ -1,17 +1,17 @@
 ---
 title: Anvisieren mit dem Kopf und Ausführen
-description: Übersicht über das Head-und Commit-Eingabe Modell.
+description: Beginnen Sie mit den ersten Schritten mit dem Haupt-und Commit-Eingabe Modell, einschließlich der Größenanpassung, Platzierung und Stabilisierung des Ziels.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, Blick auf die Ausrichtung, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Ziel, Fokus, Glättung
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847886"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009450"
 ---
 # <a name="head-gaze-and-commit"></a>Anvisieren mit dem Kopf und Ausführen
 
@@ -89,7 +89,7 @@ Dieser Mechanismus kann sich als allgemeinere Version der nächstgelegenen Verkn
 
 Wenn Sie bestimmen, welche interaktiven Elemente in der Nähe bereitgestellt werden sollen, wird der Fokus auf festgelegt, und der Fokus ist für das Element, das derzeit fokussiert ist. Dies trägt dazu bei, das Verhalten von erratischen Fokus Wechselverhalten zu verringern, wenn Sie in einem Mittelpunkt zwischen zwei Elementen mit natürlichem Rauschen schweben
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Anvisieren und Verweilen](gaze-and-dwell.md)

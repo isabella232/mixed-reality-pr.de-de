@@ -1,17 +1,17 @@
 ---
 title: Start Geste
-description: Starten Sie die Geste, um das Startmenü aufzurufen.
+description: Erfahren Sie, wie Sie mit der Start Bewegung das Startmenü auf hololens und in Windows Mixed Reality-immersiven Headsets aufzurufen.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Gemischte Realität, Gesten, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Bloom
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848157"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009430"
 ---
 # <a name="start-gesture"></a>Start Geste
 
@@ -114,7 +114,7 @@ Sie können auch die Start Geste nur mit einer Hand verwenden. Halten Sie Ihre H
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Augenblick](eye-tracking.md)

@@ -1,19 +1,19 @@
 ---
-title: Erfassung gemischter Realität für Entwickler
-description: Bewährte Methoden für die Erfassung gemischter Realität für Entwickler.
+title: Mixed Reality-Aufnahme für Entwickler
+description: Erfahren Sie mehr über die bewährten Methoden zum Aktivieren, verwenden und Rendern der Mixed Reality-Erfassung für Entwickler.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, Foto, Video, Erfassung, Kamera
-ms.openlocfilehash: 13765686c3e86822efff17b25995a6eaa4008e6c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613344"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009940"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>Erfassung gemischter Realität für Entwickler
+# <a name="mixed-reality-capture-for-developers"></a>Mixed Reality-Aufnahme für Entwickler
 
 > [!NOTE]
 > Unter [Rendering von der folgenden PV-Kamera](#render-from-the-pv-camera-opt-in) finden Sie Anleitungen zu einer neuen MRC-Funktion für hololens 2.
@@ -221,7 +221,7 @@ Anwendungen haben zwei Möglichkeiten, den Effekt hinzuzufügen:
 
 MRC-Video Effekt (**Windows. Media. mixedrealitycapture. mixedrealitycapturevideoeffect**)
 
-|  Eigenschaftenname  |  Typ  |  Standardwert  |  BESCHREIBUNG |
+|  Eigenschaftenname  |  Typ  |  Standardwert  |  Beschreibung |
 |----------|----------|----------|----------|
 |  StreamType  |  UInt32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (videorecord)  |  Beschreiben Sie den Erfassungsdaten Strom, für den dieser Effekt verwendet wird. Audiodaten sind nicht verfügbar. |
 |  Hologramcompositionaktivierte  |  boolean  |  TRUE  |  Flag zum Aktivieren oder Deaktivieren von holograms bei der Video Erfassung. |
@@ -231,7 +231,7 @@ MRC-Video Effekt (**Windows. Media. mixedrealitycapture. mixedrealitycapturevide
 |  Globalopacitykoeffizienten  |  float  |  0,9 (hololens) 1,0 (immersives Headset)  |  Legen Sie den globalen Deckkraft Koeffizienten von – Hologramm im Bereich von 0,0 (vollständig transparent) auf 1,0 (vollständig deckend) fest. |
 |  Blankonprotectedcontent  |  boolean  |  FALSE  |  Flag zum Aktivieren oder Deaktivieren der Rückgabe eines leeren Frames, wenn eine 2D-UWP-App geschützte Inhalte anzeigt. Wenn dieses Flag false ist und eine 2D-UWP-App geschützte Inhalte anzeigt, wird die 2D-UWP-app durch eine geschützte Inhalts Textur sowohl im Headset als auch in der Mixed Reality-Erfassung ersetzt. |
 |  Showhiddenmesh  |  boolean  |  FALSE  |  Flag zum Aktivieren oder Deaktivieren der Anzeige des ausgeblendeten Bereichs Netzes der Holographic-Kamera und des benachbarten Inhalts. |
-| Outputsize | Size | 0, 0 | Legen Sie die gewünschte Ausgabegröße nach dem Zuschneiden für die Videostabilisierung fest. Eine standardmäßige zuergröße wird ausgewählt, wenn 0 oder eine ungültige Ausgabegröße angegeben wird. |
+| Outputsize | Größe | 0, 0 | Legen Sie die gewünschte Ausgabegröße nach dem Zuschneiden für die Videostabilisierung fest. Eine standardmäßige zuergröße wird ausgewählt, wenn 0 oder eine ungültige Ausgabegröße angegeben wird. |
 | Preferredhologrammperspective | UINT32 | **Rendering von der Kamera** Einstellung im Windows-Geräte Portal | Enum, das angibt, welche holografische Kamera Ansichts Konfiguration aufgezeichnet werden soll: 0 (Anzeige) bedeutet, dass die APP nicht zum Rendering von der Foto-/Videokamera aufgefordert wird. 1 (photovideocamera) fordert die APP auf, von der Foto-/Videokamera zu Rendering (sofern Sie von der App unterstützt wird). Wird nur auf hololens 2 unterstützt. |
 
 >[!NOTE]
@@ -241,7 +241,7 @@ MRC-Video Effekt (**Windows. Media. mixedrealitycapture. mixedrealitycapturevide
 
 MRC-Audioeffekt (**Windows. Media. mixedrealitycapture. mixedrealitycaptureaudioeffect**)
 
-| Eigenschaftenname | Typ | Standardwert | BESCHREIBUNG |
+| Eigenschaftenname | Typ | Standardwert | Beschreibung |
 |----------|----------|----------|----------|
 | Mixermode | UINT32 | 2 (MIC-und systemaudiodatei) | Eine Aufzählung, die verwendet wird, um anzugeben, welche Audioquellen verwendet werden sollen: 0 (nur MIC-Audiodatei), 1 (nur systemaudiodatei), 2 (MIC und systemaudiodatei) |
 | Loopbackgewinn | float | Einstellung für **App-audiogewinn** im Windows-Geräte Portal | Auf das systemaudiovolume anwenden. Reicht von 0,0 bis 5,0. Wird nur auf hololens 2 unterstützt. |

@@ -1,17 +1,17 @@
 ---
 title: Anvisieren in Unity
-description: Der Blick ist eine primäre Möglichkeit für Benutzer, die Hologramme, die Ihre APP in gemischter Realität erstellt, als Ziel zu betrachten.
+description: Erfahren Sie, wie Sie die Blickwinkel Eingabe als primäre Methode für Benutzer verwenden können, um die Hologramme, die Ihre APP in gemischter Realität erstellt, als Ziel
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Eye-Blick, Head-Eye, Unity, Hologram, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010361"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009890"
 ---
 # <a name="head-gaze-in-unity"></a>Kopf schauen in Unity
 
@@ -43,7 +43,7 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a>Bewährte Methoden
+### <a name="best-practices"></a>Empfohlene Methoden
 
 Obwohl das obige Beispiel ein einzelnes raycast aus der Update-Schleife auslöst, um das Ziel zu finden, auf dem sich die Kopfzeile des Benutzers befindet, empfiehlt es sich, ein einzelnes-Objekt zum Verwalten aller Head-Blick-Prozesse zu verwenden. Durch die Kombination ihrer Head-Do-Logik wird Ihre APP als wertvolle Verarbeitungsleistung gespart, und Sie können die Raycasting-Einstellung auf eine pro Frame beschränken
 

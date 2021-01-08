@@ -1,17 +1,17 @@
 ---
 title: Implementieren von 3D-App-Startprogrammen (Win32-Apps)
-description: Erfahren Sie, wie Sie 3D-App-Starter und-Logos für Win32-VR-apps und-Spiele für das Windows Mixed Reality-Startmenü und die Home-Umgebung erstellen.
+description: Erfahren Sie, wie Sie 3D-App-Launcher und-Logos für Win32-VR-apps und-Spiele für das Startmenü und die Heimumgebung erstellen.
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Win32, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Manifest
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757817"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009669"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implementieren von 3D-App-Startprogrammen (Win32-Apps)
 
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Gemischtes Reality-Modell Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) mit einem 3D-App-Start Programm.
 * [Entwurfsanleitung für 3D-App-Startprogramm](3d-app-launcher-design-guidance.md)

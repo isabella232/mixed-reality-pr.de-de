@@ -1,17 +1,17 @@
 ---
 title: Blick Eingabe in Unreal
-description: Tutorial zum Einrichten von Blick Eingaben für hololens und Unreal Engine
+description: Erfahren Sie, wie Sie die Überblicks Eingaben mit der Augen Verfolgung und der Kopf Richtung für hololens-apps in Unreal einrichten und verwenden.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: a11573d732e739068dca8c42dd8688c0705fc5bb
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925986"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010140"
 ---
 # <a name="gaze-input"></a>Blick Eingabe
 
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie die unwirkliche Entwicklungs Journey befolgen, die wir festgelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie der Unreal-Entwicklungs-Journey folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der MRTK-Grundbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Handtracking](unreal-hand-tracking.md)

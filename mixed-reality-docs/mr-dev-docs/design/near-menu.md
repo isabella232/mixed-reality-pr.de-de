@@ -1,17 +1,17 @@
 ---
 title: Nähemenü
-description: Ein near-Menü ist eine Auflistung von Schaltflächen in einem Panel, die Sie mit dem tagbasierten Verhalten verfolgen.
+description: Erfahren Sie, wie Sie near-Menüs verwenden, bei denen es sich um eine Auflistung von Schaltflächen in einem Bereich handelt, die Sie mit dem tagbasierten Verhalten in einer gemischten Reality-Umgebung verfolgen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Menü, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847257"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009930"
 ---
 # <a name="near-menu"></a>Nähemenü
 
@@ -32,7 +32,7 @@ Ein near-Menü ist eine Auflistung von Schaltflächen in einem Panel, die Ihren 
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

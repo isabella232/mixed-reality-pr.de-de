@@ -1,17 +1,17 @@
 ---
 title: Navigieren auf der Startseite von Windows Mixed Reality
-description: Hololens und Windows Mixed Reality-Headsets haben ein Paradigma für das starten, platzieren und manipulieren von apps und 3D-Modellen in Ihrer Umgebung (unabhängig davon, ob physisch oder Digital). Erfahren Sie, wie Sie auf beiden Gerätetypen in der Windows Mixed Reality-Startseite navigieren.
+description: Erfahren Sie, wie Sie in der Windows Mixed Reality-Startseite auf hololens und Windows Mixed Reality-Headsets navigieren können.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, Betriebssystem, Plattform, Klippe, Haus, zuhause, Umgebung, Start, Startmenü, Startmenü, Pins, APP, starten von apps, platzieren von apps, teleportieren, verschieben, navigieren, Mixed Reality-Headset, Virtual Reality-Headset, Virtual Reality
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757688"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009690"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Navigieren auf der Startseite von Windows Mixed Reality
 
@@ -134,7 +134,7 @@ Windows Mixed Reality verfügt über mehrere integrierte apps, wie z. b.:
 * **Desktop** (immersive Headsets) zum Anzeigen Ihres Desktop Monitors in einem immersiven Headset
 * **Datei-Explorer** Zugreifen auf Dateien und Ordner, die sich auf Ihrem Gerät befinden
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [App-Ansichten](../design/app-views.md)
 * [Motion-Controller](../design/motion-controllers.md)
 * [Hardware-Zubehör](hardware-accessories.md)

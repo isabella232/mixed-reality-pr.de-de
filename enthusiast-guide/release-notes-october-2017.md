@@ -1,17 +1,17 @@
 ---
 title: Versionshinweise – Oktober 2017
-description: Windows Mixed Reality-Versions Hinweise für das Windows 10 Fall Creators Update (Oktober 2017).
+description: Bleiben Sie auf dem neuesten Stand der Windows Mixed Reality-Versions Hinweise für das Windows 10 Fall Creators Update (Oktober 2017).
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Anmerkungen zu dieser Version, Version, Windows 10, Build, RS3, Betriebssystem
-ms.openlocfilehash: 7c5af3b8ead4aa4bee9e342e9c41b696a30e5e2c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725911"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009490"
 ---
 # <a name="release-notes---october-2017"></a>Versionshinweise – Oktober 2017
 
@@ -74,7 +74,7 @@ Wir haben hart daran gearbeitet, eine großartige Windows Mixed Reality-Erfahrun
 * Wenn ein anderes Multimedia-USB-Gerät (z. b. eine Web-Cam) denselben USB-Hub (entweder extern oder innerhalb Ihres PCs) mit dem Windows Mixed Reality-Headset gemeinsam nutzt, kann der AudioJack/-Kopfhörer des Headsets in seltenen Fällen entweder einen rauschenden Sound oder überhaupt keine Audiodaten enthalten. Sie können dies durch Ihr Headset an einem USB-Anschluss beheben, der nicht denselben Hub wie das andere Gerät hat, oder Sie können ihr anderes USB-Multimediagerät trennen bzw. deaktivieren.
 * In seltenen Fällen kann der USB-Hub des Host-PCs nicht genügend Stromversorgung für das Windows Mixed Reality-Headset bereitstellen, und Sie bemerken möglicherweise einen Burst Rausch von dem Kopfhörer, der mit dem Headset verbunden ist.
 
-### <a name="speech"></a>Spracheingabe/-ausgabe
+### <a name="speech"></a>Speech
 * Cortana kann Ihre Audiohinweise zum lauschen/überdenken und audioantworten auf Befehle nicht wiedergeben.
 * Cortana in China-und Japan-Märkten zeigt während der Verwendung keinen ordnungsgemäßen Text unterhalb des Cortana-Kreises an.
 * Cortana kann langsam sein, wenn Sie zum ersten Mal in einer gemischten Reality-Portal Sitzung aufgerufen wird. Sie können dieses Problem umgehen, indem Sie sicherstellen, dass Cortana auf Hey Cortana antwortet, unter **Einstellungen**  >  **Cortana**  >  **Talk to Cortana** aktiviert ist.
@@ -94,7 +94,7 @@ Wir haben hart daran gearbeitet, eine großartige Windows Mixed Reality-Erfahrun
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Immersive Headset-Unterstützung (externer Link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
 * [HoloLens – bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
 * [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)

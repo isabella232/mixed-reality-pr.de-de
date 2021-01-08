@@ -1,17 +1,17 @@
 ---
 title: Verfolgbarkeitsverlust in Unity
-description: Behandeln von nach Verfolgungs Verlusten in einer Unity-app.
+description: Erfahren Sie, wie Sie manuellen und standardmäßigen nach Verfolgungs Verlusten in einer Unity Mixed Reality-App behandeln.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Nachverfolgung von Verlusten, Abbild Verlust, Abruf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010051"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009850"
 ---
 # <a name="tracking-loss-in-unity"></a>Verfolgbarkeitsverlust in Unity
 
@@ -25,7 +25,7 @@ Die Update Schleife und alle Meldungen und Ereignisse werden für die Dauer der 
 
 ## <a name="manual-handling"></a>Manuelle Behandlung
 
-Um den nach Verfolgungs Verlust manuell zu behandeln, müssen Sie **Edit** mit  >  **Projekteinstellungen** bearbeiten  >  **Player**  >  **universelle Windows-Plattform Registerkarte "Einstellungen**"  >  **Splash Image**  >  **Windows Holographic** auf der Registerkarte "Einstellungen" die Option "bei Nachverfolgung von Verlusten anhalten und Bild anzeigen" deaktivieren. Danach müssen Sie die Nachverfolgung von Änderungen mit den unten angegebenen APIs verarbeiten.
+Um den nach Verfolgungs Verlust manuell zu behandeln, müssen Sie mit  >  **Projekteinstellungen** bearbeiten  >    >  **universelle Windows-Plattform Registerkarte "Einstellungen**"  >    >  **Windows Holographic** auf der Registerkarte "Einstellungen" die Option "bei Nachverfolgung von Verlusten anhalten und Bild anzeigen" deaktivieren. Danach müssen Sie die Nachverfolgung von Änderungen mit den unten angegebenen APIs verarbeiten.
 
 **Namespace:** *unityengine. XR. WSA*<br>
 **Typ:** *worldmanager*
@@ -35,7 +35,7 @@ Um den nach Verfolgungs Verlust manuell zu behandeln, müssen Sie **Edit** mit  
 
 Wenn Sie nach Verfolgungs Änderungen allein behandeln, müssen Sie entweder die State-Eigenschaft jedes Frames abrufen oder das *onpositionzuonorstatechanged* -Ereignis behandeln.
 
-### <a name="polling"></a>Abrufen
+### <a name="polling"></a>Abruf
 
 Der wichtigste Status ist *positionzustatusorstate. Active*, was bedeutet, dass die Nachverfolgung voll funktionsfähig ist. Jeder andere Status führt nur zu Rotations Delta-zu-Haupt-Kameras. Beispiel:
 
@@ -81,5 +81,6 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
+
 * [Behandeln von nach Verfolgungs Verlusten in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)
