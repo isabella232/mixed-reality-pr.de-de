@@ -1,14 +1,14 @@
 ---
 title: Nachverfolgen von QR-Codes
-description: Erfahren Sie, wie Sie QR-Codes erkennen, Webcam-Funktionen hinzufügen und Koordinatensysteme in Mixed Reality-apps auf hololens 2 verwalten.
+description: Erfahren Sie, wie Sie QR-Codes erkennen, Webcam-Funktionen hinzufügen und Koordinatensysteme in Mixed Reality-Apps auf HoloLens 2 verwalten.
 author: dorreneb
 ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
-keywords: VR, LBE, Location based Entertainment, VR-Arkade, Arcade, immersive, QR, QR-Code, hololens2
+keywords: VR, LBE, standortbezogene Unterhaltung, VR-Arcade, Arcade, immersiv, QR, QR-Code, hololens2
 ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
 ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 01/08/2021
 ms.locfileid: "98009400"
@@ -21,44 +21,44 @@ HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordi
 
 <table>
 <tr>
-<th>Feature</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">Hololens (erste Generation)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Funktion</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1. Generation)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
-<td> QR-Code Erkennung</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
+<td> QR-Code-Erkennung</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
 </table>
 
 >[!NOTE]
->Die QR-Code Überwachung mit immersiven Windows Mixed Reality-Headsets auf Desktop-PCs wird unter Windows 10, Version 2004 und höher, unterstützt. Verwenden Sie die Microsoft. mixedreality. qrcodewatcher. IsSupported ()-API, um zu bestimmen, ob die Funktion auf dem aktuellen Gerät unterstützt wird.
+>Die QR-Code Nachverfolgung mit immersiven Windows Mixed Reality-Headsets auf Desktop-PCs wird unter Windows 10, Version 2004 und höher, unterstützt. Verwenden Sie die Microsoft.MixedReality.QRCodeWatcher.IsSupported()-API, um zu bestimmen, ob die Funktion auf dem aktuellen Gerät unterstützt wird.
 
-## <a name="getting-the-qr-package"></a>Erhalten des QR-Pakets
+## <a name="getting-the-qr-package"></a>Abrufen des QR-Pakets
 
-Sie können das nuget-Paket für die QR-Code Erkennung [hier](https://nuget.org/Packages/Microsoft.MixedReality.QR)herunterladen.
+Sie können das NuGet-Paket für die QR-Code-Erkennung [hier](https://nuget.org/Packages/Microsoft.MixedReality.QR) herunterladen.
 
 ## <a name="detecting-qr-codes"></a>Erkennen von QR-Codes
 
-### <a name="adding-the-webcam-capability"></a>Hinzufügen der Webcam-Funktion
+### <a name="adding-the-webcam-capability"></a>Hinzufügen der Webcamfunktion
 
-Sie müssen die Funktion `webcam` Ihrem Manifest hinzufügen, um QR-Codes zu erkennen. Diese Funktion ist erforderlich, da die Daten in erkannten Codes in der Benutzerumgebung möglicherweise vertrauliche Informationen enthalten.
+Sie müssen Ihrem Manifest die Funktion `webcam` hinzufügen, um QR-Codes erkennen zu können. Diese Funktion ist erforderlich, da die Daten innerhalb der erkannten Codes in der Umgebung des Benutzers möglicherweise vertrauliche Informationen enthalten.
 
-Die Berechtigung kann durch Aufrufen von angefordert werden `QRCodeWatcher.RequestAccessAsync()` :
+Die Berechtigung kann durch den Aufruf von `QRCodeWatcher.RequestAccessAsync()` angefordert werden:
 
-_C#_
+_C#:_
 ```cs
 await QRCodeWatcher.RequestAccessAsync();
 ```
 
-_C++_
+_C++:_
 ```cpp
 co_await QRCodeWatcher.RequestAccessAsync();
 ```
 
-Vor dem Erstellen eines qrcodewatcher-Objekts muss eine Berechtigung angefordert werden.
+Vor dem Erstellen eines QRCodeWatcher-Objekts muss die Berechtigung angefordert werden.
 
-Obwohl die Erkennung von QR-Code die `webcam` Funktion erfordert, erfolgt die Erkennung mithilfe der Überwachungskameras des Geräts. Dies bietet einen umfassenderen Erkennungs FOV und eine bessere Akku Lebensdauer im Vergleich zur Erkennung mit der Photo/Video (PV)-Kamera des Geräts.
+Zwar ist die Funktion `webcam` für die QR-Code-Erkennung erforderlich, die Erkennung erfolgt jedoch mithilfe der Überwachungskameras des Geräts. Dies bietet ein breiteres Sichtfeld für die Erkennung und längere Batterielaufzeiten im Vergleich mit der Erkennung über die Foto/Videokamera (FV) des Geräts.
 
 ### <a name="detecting-qr-codes-in-unity"></a>Erkennen von QR-Codes in Unity
 
-Sie können die QR-Code Erkennungs-API in Unity verwenden, ohne mrtk zu importieren, indem Sie das nuget-Paket mithilfe von [nuget für Unity](https://github.com/GlitchEnzo/NuGetForUnity)installieren. Wenn Sie sich mit der Funktionsweise vertraut machen möchten, laden Sie die [Beispiel-Unity-App](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes)herunter. Die Beispiel-app enthält Beispiele für das Anzeigen eines Holographic-Quadrats über QR-Codes und zugeordneten Daten, z. b. Guid, physische Größe, Zeitstempel und decodierte Daten.
+Sie können die API zur QR-Code-Erkennung in Unity ohne den Import des MRTK nutzen, wenn Sie das NuGet-Paket mithilfe von [NuGet for Unity](https://github.com/GlitchEnzo/NuGetForUnity) installieren. Wenn Sie ein Gefühl für die Funktion erwerben möchten, laden Sie die [Unity-Beispiel-App](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) herunter. Die Beispiel-App enthält Beispiele zum Anzeigen eines holografischen Quadrats über QR-Codes und zugeordneten Daten wie GUID, physischer Größe, Zeitstempel und decodierten Daten.
 
 ### <a name="detecting-qr-codes-in-c"></a>Erkennen von QR-Codes in C++
 
@@ -120,17 +120,17 @@ private:
 };
 ```
 
-## <a name="getting-the-coordinate-system-for-a-qr-code"></a>Erhalten des Koordinatensystems für einen QR-Code
+## <a name="getting-the-coordinate-system-for-a-qr-code"></a>Abrufen des Koordinatensystems für einen QR-Code
 
-Jeder erkannte QR-Code stellt ein [räumliches Koordinatensystem](../../design/coordinate-systems.md) zur Verfügung, das mit dem QR-Code in der oberen linken Ecke des oberen linken Rands des oberen linken Rands der oberen linken Ecke des  
+Jeder erkannte QR-Code macht ein [räumliches Koordinatensystem verfügbar](../../design/coordinate-systems.md), das am QR-Code in der linken oberen Ecke des Schnellerkennungsquadrats oben links ausgerichtet ist:  
 
-![QR-Code Koordinatensystem](images/Qr-coordinatesystem.png) 
+![QR-Code-Koordinatensystem](images/Qr-coordinatesystem.png) 
 
-Wenn Sie das QR SDK direkt verwenden, zeigt die z-Achse auf das Papier (nicht angezeigt): bei der Konvertierung in Unity-Koordinaten verweist die z-Achse auf das Papier und wird von Links entfernt.
+Wenn Sie das QR-SDK direkt verwenden, zeigt die Z-Achse zum Papier (nicht dargestellt) – bei der Konvertierung in Unity-Koordinaten zeigt die Z-Achse aus dem Papier heraus und ist linkshändig.
 
-Das spatialcoordinatesystem eines QR-Codes richtet sich wie gezeigt aus. Sie können das Koordinatensystem von der Plattform abrufen, indem Sie <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">spatialgraphinteroppreview:: createcoordinatesystemfornode</a> aufrufen und die spatialgraphnodeid des Codes übergeben.
+Das SpatialCoordinateSystem eines QR-Codes wird wie dargestellt ausgerichtet. Sie können das Koordinatensystem von der Plattform abrufen, indem Sie <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> aufrufen und die SpatialGraphNodeId des Codes übergeben.
 
-Der folgende C++-Code zeigt, wie ein Rechteck erstellt und mit dem Koordinatensystem des QR-Codes platziert wird:
+Der unten abgebildete C++-Code zeigt, wie ein Rechteck erstellt und mithilfe des Koordinatensystems des QR-Codes platziert wird:
 
 ```cpp
 // Creates a 2D rectangle in the x-y plane, with the specified properties.
@@ -147,13 +147,13 @@ std::vector<float3> MyApplication::CreateRectangle(float width, float height)
 }
 ```
 
-Sie können die physische Größe zum Erstellen des QR-Rechtecks verwenden:
+Sie können die physische Größe verwenden, um das QR-Rechteck zu erstellen:
 
 ```cpp
 std::vector<float3> qrVertices = CreateRectangle(code.PhysicalSideLength(), code.PhysicalSideLength()); 
 ```
 
-Das Koordinatensystem kann zum Zeichnen des QR-Codes oder zum Anfügen von holograms an den Speicherort verwendet werden:
+Das Koordinatensystem kann verwendet werden, um den QR-Code zu zeichnen oder Hologramme an die Position anzufügen:
 
 ```cpp
 using namespace winrt::Windows::Perception::Spatial;
@@ -161,7 +161,7 @@ using namespace winrt::Windows::Perception::Spatial::Preview;
 SpatialCoordinateSystem qrCoordinateSystem = SpatialGraphInteropPreview::CreateCoordinateSystemForNode(code.SpatialGraphNodeId());
 ```
 
-Ihr *qrcodeaddedhandler* könnte etwa wie folgt aussehen:
+Insgesamt kann Ihr *QRCodeAddedHandler* etwa so aussehen:
 
 ```cpp
 void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
@@ -186,43 +186,43 @@ void MyApplication::OnAddedQRCode(const QRCodeAddedEventArgs& args)
 
 ## <a name="best-practices-for-qr-code-detection"></a>Bewährte Methoden für die Erkennung von QR-Codes
 
-### <a name="quiet-zones-around-qr-codes"></a>Stille Zonen um QR-Codes
+### <a name="quiet-zones-around-qr-codes"></a>Stille Zonen um QR-Codes herum
 
-Um ordnungsgemäß gelesen zu werden, erfordern QR-Codes einen Rand um alle Seiten des Codes. Dieser Rand darf keine gedruckten Inhalte enthalten und sollte vier Module (ein einzelnes schwarzes Quadrat im Code) enthalten. 
+Um ordnungsgemäß gelesen zu werden, erfordern QR-Codes einen Rand, der alle Seiten des Codes umgibt. Dieser Rand darf keine gedruckten Inhalte enthalten und sollte vier Module (ein einzelnes schwarzes Quadrat im Code) breit sein. 
 
 Die [QR-Spezifikation](https://www.qrcode.com/en/howto/code.html) enthält weitere Informationen zu stillen Zonen.
 
 ### <a name="lighting-and-backdrop"></a>Beleuchtung und Hintergrund
-Die Qualität der QR-Code Erkennung ist anfällig für die unterschiedliche Beleuchtung und den Hintergrund. 
+Die Erkennungsqualität von QR-Code reagiert auf wechselnde Beleuchtungs- und Hintergrundverhältnisse. 
 
-Drucken Sie in einer Szene mit heller Beleuchtung einen Code, der in einem grauen Hintergrund schwarz ist. Andernfalls drucken Sie einen schwarzen QR-Code in einem weißen Hintergrund.
+Drucken Sie in einer hell beleuchteten Szene einen schwarzen Code auf einem grauen Hintergrund. Drucken Sie andernfalls einen schwarzen QR-Code auf einem weißen Hintergrund.
 
-Wenn der Hintergrund des Codes dunkel ist, versuchen Sie es mit einem grauen Code, wenn die Erkennungsrate niedrig ist. Wenn die Kulisse relativ hell ist, sollte ein regulärer Code einwandfrei funktionieren.
+Wenn der Hintergrund des Codes dunkel ist, probieren Sie einen schwarzen Code auf Grau,wenn Ihre Erkennungsrate niedrig ist. Wenn der Hintergrund relativ hell ist, sollte ein gewöhnlicher Code gut funktionieren.
 
-### <a name="size-of-qr-codes"></a>Größe der QR-Codes
-Windows Mixed Reality-Geräte funktionieren nicht mit QR-Codes mit Seiten, die kleiner als 5 cm sind.
+### <a name="size-of-qr-codes"></a>Größe von QR-Codes
+Windows Mixed Reality-Geräte funktionieren nicht mit QR-Codes, deren Seiten kleiner als jeweils 5 cm sind.
 
-Bei QR-Codes zwischen 5 cm-und 10-cm-Längen Seiten müssen Sie den Code relativ nah sehen. Außerdem dauert es länger, bis Codes mit dieser Größe erkannt werden. 
+Bei QR-Code mit einer Kantenlänge zwischen 5 und 10 cm müssen Sie recht nah herangehen, um den Code zu erkennen. Die Erkennung von Codes in dieser Größe dauert außerdem länger. 
 
-Die genaue Zeit zum Erkennen von Codes hängt nicht nur von der Größe der QR-Codes ab, sondern von der Entfernung des Codes. Wenn Sie sich näher an den Code bewegen, können Probleme mit der Größe abgeglichen werden.
+Die genaue Zeit, die zum Erkennen von Codes benötigt wird, hängt nicht nur von der Größe der QR-Codes ab, sondern auch von der Entfernung des Codes. Näher an den Code heranzugehen, hilft dabei, Größenprobleme zu beheben.
 
-### <a name="distance-and-angular-position-from-the-qr-code"></a>Entfernung und Winkelposition aus dem QR-Code
-Die Überwachungskameras können nur eine bestimmte Detailebene erkennen. Bei kleinen Codes-< 10 cm entlang der Seiten müssen Sie ziemlich nah sein. Bei einem QR-Code der Version 1, der von 10 cm bis 25 cm breit variiert, liegt der Abstand der minimalen Erkennung zwischen 0,15 und 0,5 Meter. 
+### <a name="distance-and-angular-position-from-the-qr-code"></a>Abstand und Winkelposition gegenüber dem QR-Code
+Die Überwachungskameras besitzen eine eingeschränkte Detailauflösung. Bei kleinen Codes – < 10 cm Kantenlänge – müssen Sie recht nah an den Code herangehen. Für einen QR-Code der Version 1 mit einer Breite zwischen 10 und 25 cm liegt der Mindestabstand für die Erkennung zwischen 0,15 und 0,5 m. 
 
-Der Erkennungsabstand für die Größe erhöht sich linear. 
+Der Erkennungsabstand steigt mit der Größe linear an. 
 
-Die QR-Erkennung funktioniert mit einem Bereich von Winkeln + = 45 deg, um sicherzustellen, dass die richtige Lösung für die Erkennung des Codes vorhanden ist.
+Die QR-Erkennung funktioniert in einem Winkelbereich von += 45°, um sicherzustellen, dass die Auflösung zum Erkennen des Codes ausreicht.
 
 ### <a name="qr-codes-with-logos"></a>QR-Codes mit Logos
 QR-Codes mit Logos wurden nicht getestet und werden zurzeit nicht unterstützt.
 
 ### <a name="managing-qr-code-data"></a>Verwalten von QR-Codedaten
-Windows Mixed Reality-Geräte erkennen QR-Codes auf der Systemebene des Treibers. Wenn das Gerät neu gestartet wird, sind die erkannten QR-Codes verschwunden und werden als neue Objekte das nächste Mal wiedererkannt.
+Windows Mixed Reality-Geräte erkennen QR-Codes auf der Systemebene im Treiber. Wenn das Gerät neu gestartet wird, sind die erkannten QR-Codes verschwunden und werden beim nächsten Mal wieder als neue Objekte erkannt.
 
-Wir empfehlen, Ihre APP so zu konfigurieren, dass Sie QR-Codes ignoriert, die älter als ein bestimmter Zeitstempel Derzeit unterstützt die API das Löschen von QR-Code Verläufen nicht.
+Wir empfehlen, Ihre App so zu konfigurieren, dass QR-Codes, die älter als ein bestimmter Zeitstempel sind, ignoriert werden. Aktuell unterstützt die API das Bereinigen des QR-Codeverlaufs nicht.
 
-### <a name="qr-code-placement-in-a-space"></a>QR-Code Platzierung in einem Leerzeichen
-Empfehlungen dazu, wo und wie QR-Codes platziert werden, finden Sie unter [Überlegungen zur Umgebung für hololens](../../environment-considerations-for-hololens.md).
+### <a name="qr-code-placement-in-a-space"></a>Platzierung von QR-Codes im Raum
+Empfehlungen zur Platzierung von QR-Codes finden Sie unter [Umgebungsüberlegungen für HoloLens](../../environment-considerations-for-hololens.md).
 
 ## <a name="qr-api-reference"></a>QR-API-Referenz
 
@@ -458,6 +458,6 @@ namespace Microsoft.MixedReality.QR
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
