@@ -1,5 +1,5 @@
 ---
-title: 'MRTK-Tutorials: 1. Einführung in die MRTK-Tutorials'
+title: Einführung in die MRTK-Tutorials
 description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung von Grund auf zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, Solver, Eye Tracking, Sprachbefehle
 ms.localizationpriority: high
-ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613204"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008080"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Einführung in die MRTK-Tutorials
-
-## <a name="overview"></a>Übersicht
 
 Willkommen bei der Tutorialreihe zu den ersten Schritten! Im Verlauf dieser Tutorials lernen Sie das Mixed Reality Toolkit (MRTK) und einige der von ihm gebotenen Features kennen. Sie erstellen außerdem ein Mixed Reality-Erlebnis, in dem der Benutzer ein Hologramm erforschen kann, das eine Nachbildung des Curiosity-Mars-Rovers der NASA darstellt. Am Ende dieser Reihe haben Sie ein sicheres Verständnis des MRTK und der Weise, in der es Ihren Entwicklungsprozess beschleunigen kann.
 

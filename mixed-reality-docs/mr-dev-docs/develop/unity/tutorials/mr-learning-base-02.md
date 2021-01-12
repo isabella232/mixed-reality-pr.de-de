@@ -1,5 +1,5 @@
 ---
-title: 'MRTK-Tutorials: 2 Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung'
+title: Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung
 description: In diesem Kurs erfahren Sie, wie Sie Ihr Unity-Projekt für das Mixed Reality Toolkit (MRTK) konfigurieren und es in Ihrer HoloLens 2 bereitstellen.
 author: jessemcculloch
 ms.author: v-vtieto
@@ -7,16 +7,14 @@ ms.date: 12/30/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, TextMeshPro
 ms.localizationpriority: high
-ms.openlocfilehash: ebf81b9b1ae1abb5001b88e0f2b2929c45c22d7f
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859529"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008220"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung
-
-## <a name="overview"></a>Übersicht
 
 In diesem Tutorial erfahren Sie, wie Sie ein neues Unity-Projekt erstellen, es für die Entwicklung mit dem <a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">Mixed Reality Toolkit (MRTK)</a> konfigurieren und das MRTK importieren. Außerdem werden Sie durch Konfiguration, Erstellung und Bereitstellung einer einfachen Unity-Szene aus Visual Studio auf Ihrer HoloLens 2 geführt. Nachdem Sie diese auf Ihrer HoloLens 2 bereitgestellt haben, sollten Sie ein Gittermodell für die Raumzuordnung sehen, das die Oberflächen bedeckt, die von der HoloLens erkannt wurden. Darüber hinaus sollten Sie Indikatoren auf Ihren Händen und Fingern für die Handverfolgung und einen Frameratenzähler zum Überwachen der App-Leistung sehen.
 

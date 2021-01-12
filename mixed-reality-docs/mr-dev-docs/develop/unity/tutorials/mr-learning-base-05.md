@@ -1,5 +1,5 @@
 ---
-title: 'MRTK-Tutorials: 5. Erstellen dynamischer Inhalte mithilfe von Solvern'
+title: Erstellen dynamischer Inhalte mithilfe von Solvern
 description: In diesem Kurs erfahren Sie, wie Sie die Solver des Mixed Reality Toolkits (MRTK) verwenden, um dynamischen Inhalt zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver
 ms.localizationpriority: high
-ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613504"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008020"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Erstellen dynamischer Inhalte mithilfe von Solvern
-
-## <a name="overview"></a>Übersicht
 
 In diesem Tutorial lernen Sie Möglichkeiten zur dynamischen Platzierung von Hologrammen mit den verfügbaren Platzierungstools des MRTK kennen, den so genannten Solvern, um Szenarien mit komplexer räumlicher Platzierung zu lösen. Im MRTK bilden Solver ein System aus Skripts und Verhaltensweisen, mit deren Hilfe Objekte dem Benutzer oder anderen Spielobjekten in der Szene folgen können. Sie können auch verwendet werden, um an bestimmten Positionen anzudocken, wodurch Ihre Anwendung intuitiver wird.
 

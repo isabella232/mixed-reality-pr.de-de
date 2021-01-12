@@ -1,5 +1,5 @@
 ---
-title: 'Tutorials zu Azure Spatial Anchors: 1 Einführung in die Tutorials zu Azure Spatial Anchors'
+title: Einführung in die Tutorials zu Azure Spatial Anchors
 description: In diesem Kurs erfahren Sie, wie Sie Azure Spatial Anchors in einer Mixed Reality-Anwendung implementieren.
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, iOS, Android, Windows 10, ARCore, macOS, Android-Buildunterstützung, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 005bbf3f9ecb7ed7f15f78d4042b4090f00edca7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679399"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008400"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Einführung in die Tutorials zu Azure Spatial Anchors
-
-## <a name="overview"></a>Übersicht
 
 Willkommen bei den Tutorials zu Azure Spatial Anchors! Durch diese Tutorialreihe lernen Sie die Grundlagen von <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) kennen und erfahren, wie Sie eine vollständige Mixed Reality-Erfahrung in der realen Welt verankern. Außerdem erfahren Sie, wie Sie Ihr Projekt für Android und iOS bereitstellen.
 
