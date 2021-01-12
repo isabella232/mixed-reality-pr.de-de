@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: MRC, Foto, Video, Erfassung, Kamera
-ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009940"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108863"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>Mixed Reality-Aufnahme für Entwickler
 
@@ -221,17 +221,17 @@ Anwendungen haben zwei Möglichkeiten, den Effekt hinzuzufügen:
 
 MRC-Video Effekt (**Windows. Media. mixedrealitycapture. mixedrealitycapturevideoeffect**)
 
-|  Eigenschaftenname  |  Typ  |  Standardwert  |  Beschreibung |
+|  Eigenschaftenname  |  Typ  |  Standardwert  |  BESCHREIBUNG |
 |----------|----------|----------|----------|
 |  StreamType  |  UInt32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))  |  1 (videorecord)  |  Beschreiben Sie den Erfassungsdaten Strom, für den dieser Effekt verwendet wird. Audiodaten sind nicht verfügbar. |
-|  Hologramcompositionaktivierte  |  boolean  |  TRUE  |  Flag zum Aktivieren oder Deaktivieren von holograms bei der Video Erfassung. |
-|  Recordingindialisioraktiviert  |  boolean  |  TRUE  |  Flag zum Aktivieren oder Deaktivieren des Aufzeichnungs Indikators auf dem Bildschirm während der – Hologramm-Erfassung. |
+|  Hologramcompositionaktivierte  |  boolean  |  true  |  Flag zum Aktivieren oder Deaktivieren von holograms bei der Video Erfassung. |
+|  Recordingindialisioraktiviert  |  boolean  |  true  |  Flag zum Aktivieren oder Deaktivieren des Aufzeichnungs Indikators auf dem Bildschirm während der – Hologramm-Erfassung. |
 |  Videostabilizationaktivierte  |  boolean  |  FALSE  |  Flag zum Aktivieren oder Deaktivieren der Videostabilisierung, die von hololens-Tracker unterbunden wird. |
 |  Videostabilizationbufferlength  |  UINT32  |  0  |  Legen Sie fest, wie viele historische Frames für die Videostabilisierung verwendet werden. 0 (null): Latenz und nahezu "kostenlos" aus Leistungs-und Leistungs Perspektive. 15 wird für die höchste Qualität empfohlen (auf Kosten von 15 Frames an Latenz und Arbeitsspeicher). |
 |  Globalopacitykoeffizienten  |  float  |  0,9 (hololens) 1,0 (immersives Headset)  |  Legen Sie den globalen Deckkraft Koeffizienten von – Hologramm im Bereich von 0,0 (vollständig transparent) auf 1,0 (vollständig deckend) fest. |
 |  Blankonprotectedcontent  |  boolean  |  FALSE  |  Flag zum Aktivieren oder Deaktivieren der Rückgabe eines leeren Frames, wenn eine 2D-UWP-App geschützte Inhalte anzeigt. Wenn dieses Flag false ist und eine 2D-UWP-App geschützte Inhalte anzeigt, wird die 2D-UWP-app durch eine geschützte Inhalts Textur sowohl im Headset als auch in der Mixed Reality-Erfassung ersetzt. |
 |  Showhiddenmesh  |  boolean  |  FALSE  |  Flag zum Aktivieren oder Deaktivieren der Anzeige des ausgeblendeten Bereichs Netzes der Holographic-Kamera und des benachbarten Inhalts. |
-| Outputsize | Größe | 0, 0 | Legen Sie die gewünschte Ausgabegröße nach dem Zuschneiden für die Videostabilisierung fest. Eine standardmäßige zuergröße wird ausgewählt, wenn 0 oder eine ungültige Ausgabegröße angegeben wird. |
+| Outputsize | Size | 0, 0 | Legen Sie die gewünschte Ausgabegröße nach dem Zuschneiden für die Videostabilisierung fest. Eine standardmäßige zuergröße wird ausgewählt, wenn 0 oder eine ungültige Ausgabegröße angegeben wird. |
 | Preferredhologrammperspective | UINT32 | **Rendering von der Kamera** Einstellung im Windows-Geräte Portal | Enum, das angibt, welche holografische Kamera Ansichts Konfiguration aufgezeichnet werden soll: 0 (Anzeige) bedeutet, dass die APP nicht zum Rendering von der Foto-/Videokamera aufgefordert wird. 1 (photovideocamera) fordert die APP auf, von der Foto-/Videokamera zu Rendering (sofern Sie von der App unterstützt wird). Wird nur auf hololens 2 unterstützt. |
 
 >[!NOTE]
@@ -241,7 +241,7 @@ MRC-Video Effekt (**Windows. Media. mixedrealitycapture. mixedrealitycapturevide
 
 MRC-Audioeffekt (**Windows. Media. mixedrealitycapture. mixedrealitycaptureaudioeffect**)
 
-| Eigenschaftenname | Typ | Standardwert | Beschreibung |
+| Eigenschaftenname | Typ | Standardwert | BESCHREIBUNG |
 |----------|----------|----------|----------|
 | Mixermode | UINT32 | 2 (MIC-und systemaudiodatei) | Eine Aufzählung, die verwendet wird, um anzugeben, welche Audioquellen verwendet werden sollen: 0 (nur MIC-Audiodatei), 1 (nur systemaudiodatei), 2 (MIC und systemaudiodatei) |
 | Loopbackgewinn | float | Einstellung für **App-audiogewinn** im Windows-Geräte Portal | Auf das systemaudiovolume anwenden. Reicht von 0,0 bis 5,0. Wird nur auf hololens 2 unterstützt. |
@@ -254,37 +254,55 @@ MRC-Audioeffekt (**Windows. Media. mixedrealitycapture. mixedrealitycaptureaudio
 
 ### <a name="simultaneous-mrc-limitations"></a>Gleichzeitige MRC-Einschränkungen
 
-Es gibt bestimmte Einschränkungen für mehrere apps, die gleichzeitig auf MRC zugreifen.
+Sie müssen bestimmte Einschränkungen beachten, wenn mehrere apps gleichzeitig auf MRC zugreifen.
 
 #### <a name="photovideo-camera-access"></a>Foto-/Videokamera-Zugriff
 
-Die Foto-/Videokamera ist auf die Anzahl der Prozesse beschränkt, die gleichzeitig auf die Kamera zugreifen können. Während es sich bei einem Prozess um das Aufzeichnen von Videos oder das Aufzeichnen eines Fotos handelt, kann bei jedem anderen Prozess die Foto-/Videokamera nicht abgerufen werden. (Dies gilt für die gemischte Reality-Erfassung und die standardmäßige Foto-/Videoerfassung)
+Bei hololens 1 kann MRC kein Foto aufzeichnen oder Videos aufzeichnen, während ein Prozess das Aufzeichnen von Videos oder das Aufnehmen eines Fotos durchführt. Das Gegenteil gilt auch: Wenn MRC ausgeführt wird, kann die Anwendung keinen Zugriff auf die Kamera erhalten. 
 
-Mit hololens 2 kann eine APP die mediacaptureinitializationsettings-Eigenschaft [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) verwenden, um anzugeben, dass Sie sharedreadnur ausführen möchten, wenn Sie keine exklusive Kontrolle über die Foto-/Videokamera benötigen. Die Auflösung und Framerate der Erfassung sind darauf beschränkt, welche anderen apps die Kamera für die Bereitstellung konfiguriert haben.
+Mit hololens 2 können Sie den Zugriff auf die Kamera freigeben. Wenn Sie keine direkte Steuerung der Auflösung oder der Framerate benötigen, können Sie mediacapture mithilfe der [sharedmode-Eigenschaft](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) mit sharedreadonly initialisieren.  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>Integrierter MRC-Foto-/Videokamer-Zugriff
 
 In Windows 10 integrierte MRC-Funktionalität (über Cortana, Startmenü, Hardware Kombinationen, miracast, Windows-Geräte Portal):
+
 * Wird standardmäßig mit exclusivecontrol ausgeführt
 
-Allerdings wurde die Unterstützung für jedes Subsystem hinzugefügt, um in einem freigegebenen Modus zu arbeiten:
-* Wenn eine APP exclusivecontrol-Zugriff auf die Foto-/Videokamera anfordert, wird die integrierte MRC-Datei automatisch mit der Foto-/Videokamera beendet, sodass die App-Anforderung erfolgreich ausgeführt wird.
-* Wenn das integrierte MRC gestartet wird, während eine APP über exclusivecontrol verfügt, wird die integrierte MRC-Datei im sharedreadonly-Modus ausgeführt.
+Die Unterstützung des MRC-Subsystems wurde jedoch für den Betrieb in einem freigegebenen Modus hinzugefügt: 
+
+* Wenn eine APP exclusivecontrol-Zugriff auf die Foto-/Videokamera anfordert, wird die integrierte MRC-Datei automatisch mit der Foto-/Videokamera beendet, sodass die App-Anforderung erfolgreich ausgeführt wird. 
+* Wenn das integrierte MRC gestartet wird, während eine APP über exclusivecontrol verfügt, wird die integrierte MRC-Datei im sharedreadonly-Modus ausgeführt. 
 
 Diese Funktion für den freigegebenen Modus weist bestimmte Einschränkungen auf:
+
 * Foto über Cortana, Hardware Verknüpfungen oder Startmenü: erfordert Windows 10 April 2018 Update (oder höher)
 * Video über Cortana, Hardware Verknüpfungen oder Startmenü: erfordert Windows 10 April 2018 Update (oder höher)
 * Streaming von MRC über miracast: erfordert das Windows 10-Update vom Oktober 2018 (oder höher)
 * Streaming von MRC über das Windows-Geräte Portal oder über die "hololens Companion"-App: erfordert hololens 2
 
 >[!NOTE]
-> Die Auflösung und die Framerate der integrierten MRC-Kamera-Benutzeroberfläche werden möglicherweise von den normalen Werten reduziert, wenn eine andere APP die Foto-/Videokamera verwendet.
+> Die Auflösung und die Framerate der integrierten MRC-Kamera-Benutzeroberfläche werden möglicherweise von den normalen Werten reduziert, wenn eine andere APP das Foto bzw. die Videokamera verwendet.
 
-#### <a name="mrc-access"></a>MRC-Zugriff
+#### <a name="mrc-access-for-developers"></a>MRC-Zugriff für Entwickler
 
-Beim Windows 10-Update vom April 2018 gibt es keine Einschränkung mehr für mehrere apps, die auf den MRC-Stream zugreifen (der Zugriff auf die Foto-und Videokamera hat jedoch weiterhin Einschränkungen).
+Es wird empfohlen, bei der Verwendung von MRC immer exklusive Kontrolle für die Kamera anzufordern. Dadurch wird sichergestellt, dass Ihre Anwendung über die vollständige Kontrolle über die Einstellungen für die Kamera verfügt, solange Sie die oben aufgeführten Einschränkungen kennen. 
 
-Vor dem Windows 10-Update vom April 2018 konnte sich die benutzerdefinierte MRC-Aufzeichnung einer APP mit System MRC (Aufzeichnen von Fotos, Aufzeichnen von Videos oder Streaming aus dem Windows-Geräte Portal) gegenseitig ausschließen.
+* Erstellen eines Medien Erfassungs Objekts mit den [Initialisierungs Einstellungen](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)
+* Festlegen der Eigenschaft " [sharingmode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) " auf " **exklusiv** "
+
+> [!CAUTION]
+> Achten Sie darauf, die [sharingmode-Hinweise](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) sorgfältig zu lesen, bevor Sie fortfahren.
+
+* Richten Sie Ihre Kamera auf die gewünschte Weise ein.
+* Starten der APP, Aufzeichnen von Video Frames mit der Start-API und anschließendes Aktivieren von MRC
+
+> [!CAUTION]
+> Wenn Sie MRC starten, bevor Sie die app starten, können wir nicht garantieren, dass das Feature erwartungsgemäß funktioniert.
+
+Ein vollständiges Beispiel für den oben genannten Prozess finden Sie im [Beispiel für die holografische Gesichts Verfolgung](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking).
+
+> [!NOTE]
+> Vor dem Windows 10 April 2018-Update war der benutzerdefinierte MRC-Recorder einer APP mit System MRC (Aufzeichnen von Fotos, Erfassen von Videos oder Streaming aus dem Windows-Geräte Portal) gegenseitig exklusiv.
 
 ## <a name="see-also"></a>Siehe auch
 

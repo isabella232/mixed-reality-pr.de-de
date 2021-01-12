@@ -3,26 +3,26 @@ title: Von openxr-Plug-in unterstützte Funktionen in Unity
 description: Entdecken Sie die Features, die openxr für die Entwicklung gemischter Realität in Unity unterstützt.
 author: hferrone
 ms.author: alexturn
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: d65bab65bcb06f7ccba522461e04062458e7400c
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880584"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108843"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Gemischte Funktionen von openxr unterstützten Funktionen in Unity
 
-Das **gemischte openxr-Plug** -in für die Realität ist eine Erweiterung des Unity **openxr-Plug** -ins und unterstützt eine Reihe von Features für hololens 2-und Windows Mixed Reality-Headsets. Bevor Sie fortfahren, stellen Sie sicher, dass Sie **Unity 2020,2** oder höher, **openxr Plugin, Version 0.1.1** oder höher, installiert haben und Ihr Unity-Projekt [für openxr konfiguriert](openxr-getting-started.md)ist.
+Das **gemischte openxr-Plug** -in für die Realität ist eine Erweiterung des Unity **openxr-Plug** -ins und unterstützt eine Reihe von Features für hololens 2-und Windows Mixed Reality-Headsets. Bevor Sie fortfahren, stellen Sie sicher, dass Sie **Unity 2020,2** oder höher, **openxr Plugin, Version 0.1.2** oder höher, installiert haben und Ihr Unity-Projekt [für openxr konfiguriert](openxr-getting-started.md)ist.
 
 ## <a name="whats-supported"></a>Unterstützte Funktionen
 
 Die folgenden Funktionen werden derzeit unterstützt:
 
-* Unterstützt sowohl UWP-Anwendungen für hololens 2-als auch Win32-VR-Anwendungen für Windows Mixed Reality-Headsets.
-* Optimiert das UWP-Paket und die corewindow-Interaktion für hololens 2-Anwendungen.
+* Unterstützt UWP-Anwendungen für hololens 2 und optimiert für das hololens 2-Anwendungsmodell.
+* Unterstützt Win32-VR-Anwendungen für Windows Mixed Reality-Headset mit den neuesten Controller Profilen und Holographic App-Remoting.
 * Welt weite Nachverfolgung mithilfe von Ankern und unbeschränktes Raum.
 * [Anker-Speicher-API zum Beibehalten von Ankern](#anchors-and-anchor-persistence) an hololens 2 lokalen Speicher.
 * [Motion Controller und Hand Interaktionen](#motion-controller-and-hand-interactions), einschließlich des neuen HP-Reverb-G2-Controllers.
@@ -31,7 +31,7 @@ Die folgenden Funktionen werden derzeit unterstützt:
 * Auffinden von Foto/Video-Kamera (PV) auf hololens 2.
 * Transformation für gemischte Realität mithilfe von Dritt-Rendering durch PV-Kamera.
 * Unterstützt ["Play" in hololens 2 mit der Holographic Remoting-App](#holographic-remoting-in-unity-editor-play-mode), sodass Entwickler Skripts debuggen können, ohne auf dem Gerät zu entwickeln und bereitzustellen.
-* Kompatibel mit mrtk Unity 2.5.2 und neueren durch die Unterstützung von mrtk openxr-Anbietern. Informationen zu den ersten Schritten finden Sie in [der Dokumentation zu mrtk](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) .
+* Kompatibel mit mrtk Unity 2.5.3 und neuer über die [Unterstützung von mrtk openxr-Anbietern](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Kompatibel mit Unity [arfoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) oder höher
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Holographic-Remoting im Unity-Editor-Wiedergabemodus
