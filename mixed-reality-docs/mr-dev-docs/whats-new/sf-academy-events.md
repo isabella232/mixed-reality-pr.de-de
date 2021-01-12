@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: Ereignis, Kalender, Academy, Schedule, SF, San Francisco, Reaktor
-ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a7d592243f758415c0ca757f35567d80fbfc1f2f
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010000"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110438"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Ereignisse in der gemischten Realität von Microsoft
 
@@ -31,4 +31,4 @@ Treten Sie an den bevorstehenden Veranstaltungen an dem Microsoft Mixed Reality-
 | Mixed Reality-Referentenreihe|22. September 2020|[Kippy-Escapezeichen: eine Einführung zu Unreal & mrtk für hololens 2]()|
 | Mixed Reality-Referentenreihe|22. Oktober 2020|[Einführung in webxr mit babylonjs](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | Mixed Reality-Referentenreihe|17. November 2020|[Entwickeln der Zukunft: Neuerungen in mrtk](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
-| Mixed Reality-Referentenreihe|1\. Dezember 2020|[Entwerfen von holograms]()|
+| Mixed Reality-Referentenreihe|1\. Dezember 2020|[Entwerfen von holograms](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
