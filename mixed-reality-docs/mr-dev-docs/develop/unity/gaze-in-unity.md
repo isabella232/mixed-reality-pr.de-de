@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Eye-Blick, Head-Eye, Unity, Hologram, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009890"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192638"
 ---
 # <a name="head-gaze-in-unity"></a>Kopf schauen in Unity
 
@@ -59,7 +59,7 @@ Sie können über den [Eingabe-Manager](https://microsoft.github.io/MixedReality
 Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
-> [Gesten und Motion-Controller](gestures-and-motion-controllers-in-unity.md)
+> [Motion-Controller](motion-controllers-in-unity.md)
 
 Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 

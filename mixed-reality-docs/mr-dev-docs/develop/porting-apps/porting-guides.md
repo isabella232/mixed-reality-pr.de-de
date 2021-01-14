@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Port, Unity, Unreal, Middleware, Engine, UWP, Win32, Porting, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Eingabe Zuordnung,
-ms.openlocfilehash: f1cb7cd96ee1d6e32c9ef1f8d3e0e1b2654e0a79
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009870"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192663"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portieren von VR-Apps zu Windows Mixed Reality
 
@@ -56,12 +56,12 @@ Die Windows Mixed Reality-Plattform ist noch nicht aktiv. Es wird empfohlen, [da
 > [!IMPORTANT]
 > Wenn Sie HP-Reverb-G2-Controller verwenden, finden Sie in [diesem Artikel](../unreal/unreal-reverb-g2-controllers.md) weitere Anweisungen zur Eingabe Zuordnung.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Windows Mixed Reality-Mindestanforderungen für die PC-Hardware Kompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Grundlegendes zur Leistung für gemischte Realität](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Empfehlungen zur Leistung für Unity](../unity/performance-recommendations-for-unity.md)
 * [Motion-Controller](../../design/motion-controllers.md)
-* [Gesten und Motion-Controller in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion-Controller in Unity](../unity/motion-controllers-in-unity.md)
 * [Unityengine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [Unityengine. XR. inputtracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Portierungsleitfäden](porting-guides.md)

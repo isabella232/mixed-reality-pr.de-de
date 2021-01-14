@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Eingabe, Unity, portieren
-ms.openlocfilehash: 97280ff260729bfc2042f7760fa3950e949e27a4
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: d6bef0f10cf1fc20d5067ac77a126bb793385f59
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613264"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192648"
 ---
 # <a name="input-porting-guide-for-unity"></a>Leitfaden für Eingabeportierung für Unity
 
@@ -21,13 +21,13 @@ Sie können Ihre Eingabe Logik mithilfe eines von zwei Ansätzen auf Windows Mix
 
 Unity verwendet derzeit die allgemeinen Input. getbutton/Input. getaxis-APIs, um Eingaben für [das Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) und [das openvr SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html)verfügbar zu machen. Wenn Ihre apps bereits diese APIs für die Eingabe verwenden, sind die Input. getbutton/Input. getaxis-APIs die einfachsten Pfade für die Unterstützung von Bewegungs Controllern in Windows Mixed Reality. Sie müssen die Schaltflächen und Achsen nur im Eingabe-Manager neu zuordnen.
 
-Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsen-Mapping-Tabelle](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) und [in der Übersicht über die gemeinsamen Unity-APIs](../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsen-Mapping-Tabelle](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) und [in der Übersicht über die gemeinsamen Unity-APIs](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows-spezifischer XR. WSA. Eingabe-APIs
 
 Wenn Ihre APP bereits eine benutzerdefinierte Eingabe Logik für jede Plattform erstellt hat, können Sie die Windows-spezifischen räumlichen Eingabe-APIs im **unityengine. XR. WSA. Input** -Namespace verwenden. Von dort aus können Sie auf zusätzliche Informationen zugreifen, wie z. b. Die Positionsgenauigkeit oder die quellart, sodass Sie die Hände und Controller auf hololens aufteilen können.
 
-Weitere Informationen finden Sie in der [Übersicht über die unityengine. XR. WSA. Input-APIs](../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+Weitere Informationen finden Sie in der [Übersicht über die unityengine. XR. WSA. Input-APIs](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Ziehpunkt im Vergleich zu Zeige darstellen
 
@@ -50,7 +50,7 @@ Diese posikoordinaten werden alle in Unity-Weltkoordinaten ausgedrückt.
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Bewegungs Controller]().. /.. /design/motion-controllers.md)
-* [Gesten und Motion-Controller in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion-Controller in Unity](../unity/motion-controllers-in-unity.md)
 * [Unityengine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
 * [Unityengine. XR. inputtracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Portierungsleitfäden](porting-guides.md)

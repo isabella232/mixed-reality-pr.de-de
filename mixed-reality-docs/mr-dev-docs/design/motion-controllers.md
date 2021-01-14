@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6DOF-Controller, Motion-Controller, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, scrollen, Zieh Punkt, Zustand
-ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: 6DOF-Controller, Motion-Controller, Kopplung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, scrollen, Zieh Punkt, Zustand
+ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009710"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192618"
 ---
 # <a name="motion-controllers"></a>Bewegungscontroller
 
@@ -71,7 +71,7 @@ Windows Mixed Reality Motion Controllers bieten mithilfe der Sensoren im immersi
 
 ## <a name="setup"></a>Einrichten
 
-### <a name="before-you-begin"></a>Voraussetzungen
+### <a name="before-you-begin"></a>Vorbereitungen
 
 **Sie benötigen Folgendes:**
 * Ein Satz von zwei Bewegungs Controllern.
@@ -203,9 +203,9 @@ Apps, die Positionen basierend auf dem nach verfolgungsstatus unterschiedlich be
 <tr>
 <th> Nach verfolgungsstatus </th><th> Sourcelossrisk </th><th> Positionsgenauigkeit </th><th> Trygetposition</th>
 </tr><tr>
-<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit</b> </td><td style="background-color: green; color: white"> &lt; 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
-<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> Hoch </td><td style="background-color: green; color: white"> true</td>
+<td> <b>Hohe Genauigkeit (Risiko eines Verlusts)</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: green; color: white"> High </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
 <td> <b>Ungefähre Genauigkeit</b> </td><td style="background-color: orange"> = = 1,0 </td><td style="background-color: orange"> Ungefähr </td><td style="background-color: green; color: white"> true</td>
 </tr><tr>
@@ -239,7 +239,7 @@ Beide [Handgesten](gaze-and-commit.md#composite-gestures) und Bewegungs Controll
 
 Es wird empfohlen, alle renderfähigen Modelle an der Zieh Punkt **Darstellung des Controllers** zu rendern, da der Ursprung des Modells an diesem Punkt in der physischen Welt ausgerichtet ist. Wenn Sie Controller Modelle rendern, können Sie sich in der Szene von der **Zeiger** Darstellung, die den Strahl darstellt, auf den Benutzer erwartungsgemäß nach dem physischen Design des Controllers zeigen werden, in die Szene umwandeln.
 
-Weitere Informationen zum dynamischen Laden von Controller Modellen in Unity finden Sie im Abschnitt [Rendern des Motion Controller-Modells in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) .
+Weitere Informationen zum dynamischen Laden von Controller Modellen in Unity finden Sie im Abschnitt [Rendern des Motion Controller-Modells in Unity](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) .
 
 **2D-Controller Linienart** Es empfiehlt sich, in-App-Controller-Tipps und-Befehle an die in-App Controller-Modelle selbst anzufügen, aber einige Entwickler möchten möglicherweise 2D-line-Art-Darstellungen der Motion-Controller in einer flachen "Tutorial"-oder "Gewusst wie"-Benutzeroberfläche verwenden. Für diese Entwickler haben wir. png Motion Controller line-Art-Dateien in schwarz und weiß unten verfügbar gemacht (Klicken Sie mit der rechten Maustaste, um zu speichern).
 
@@ -275,9 +275,9 @@ Weitere Informationen finden Sie im Leitfaden zur Problembehandlung für [Motion
 
 [Geben Sie uns Feedback](../give-us-feedback.md) im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-* [Gesten und Motion-Controller in Unity](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion-Controller in Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Hände und Motion-Controller in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gesten](gaze-and-commit.md#composite-gestures)
 * [Leitfaden für Enthusiasten: Ihre Windows Mixed Reality-Startseite](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

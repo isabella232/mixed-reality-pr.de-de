@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: App-Qualitätskriterien, gemischte Realität, Mixed Reality-APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530292"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192678"
 ---
 # <a name="app-quality-criteria"></a>Kriterien für die App-Qualität
 
@@ -545,7 +545,8 @@ Die Übersichtlichkeit der Eingabe Interaktion ist wichtig für die Benutzerfreu
 * [Leitfaden für Eingabeportierung für Unity](../porting-apps/input-porting-guide-for-unity.md)
 * [Tastatureingabe in Unity](../unity/keyboard-input-in-unity.md)
 * [Anvisieren in Unity](../unity/gaze-in-unity.md)
-* [Gesten und Motion-Controller in Unity](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Motion-Controller in Unity](../unity/motion-controllers-in-unity.md)
+* [Gesten in Unity](../unity/gestures-in-unity.md)
 * [Spracheingabe in Unity](../unity/voice-input-in-unity.md)
 * [Tastatur-, Maus- und Controllereingaben in DirectX](../../keyboard,-mouse,-and-controller-input-in-directx.md)
 * [Anvisieren mit dem Kopf und mit den Augen in DirectX](../native/gaze-in-directx.md)

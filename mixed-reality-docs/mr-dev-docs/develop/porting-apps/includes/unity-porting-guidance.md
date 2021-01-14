@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96477035"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192662"
 ---
 # <a name="project-settings"></a>[Projekteinstellungen](#tab/project)
 
@@ -120,7 +120,7 @@ Weitere Informationen zu den [XR-APIs](https://docs.unity3d.com/Manual/xr_input.
 
 Unity verwendet derzeit die allgemeinen Input. getbutton/Input. getaxis-APIs, um Eingaben für [das Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) und [das openvr SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html)verfügbar zu machen. Wenn Ihre apps bereits diese APIs für die Eingabe verwenden, ist dies der einfachste Weg zur Unterstützung von Bewegungs Controllern in Windows Mixed Reality: Sie müssen nur Schaltflächen und Achsen im Eingabe-Manager neu zuordnen.
 
-Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsen-Mapping-Tabelle](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) und [in der Übersicht über die gemeinsamen Unity-APIs](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsen-Mapping-Tabelle](../../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) und [in der Übersicht über die gemeinsamen Unity-APIs](../../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows-spezifischer XR. WSA. Eingabe-APIs
 
@@ -132,7 +132,7 @@ Wenn Ihre APP bereits eine benutzerdefinierte Eingabe Logik für jede Plattform 
 > [!NOTE]
 > Wenn Sie HP-Reverb-G2-Controller verwenden, funktionieren alle Eingabe-APIs weiterhin mit Ausnahme von **Interaction Source. supportstouchpad**, das false ohne Touchpad-Daten zurückgibt.
 
-Weitere Informationen finden Sie in der [Übersicht über die unityengine. XR. WSA. Input-APIs](../../unity/gestures-and-motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+Weitere Informationen finden Sie in der [Übersicht über die unityengine. XR. WSA. Input-APIs](../../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
 
 ## <a name="grip-pose-vs-pointing-pose"></a>Ziehpunkt im Vergleich zu Zeige darstellen
 

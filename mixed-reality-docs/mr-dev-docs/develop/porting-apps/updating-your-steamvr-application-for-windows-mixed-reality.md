@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Steamvr, Kompatibilität, portieren, hololens 1. gen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Steam, Motion Controllers, Haptik
-ms.openlocfilehash: 94b6aad63156d752858c6566174ff01e6127d75d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612904"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192628"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>Aktualisieren von SteamVR-Apps für Windows Mixed Reality
 
@@ -26,7 +26,7 @@ Um mit dem Testen Ihres Spiels oder ihrer app in Windows Mixed Reality zu beginn
 1. Wenn Ihre APP Controller Modelle rendert:
     * Verwenden der [Windows Mixed Reality Motion Controller-Modelle](../../design/motion-controllers.md#rendering-the-motion-controller-model)
     * Verwenden Sie ivrrendermodel:: getcomponentstate, um lokale Transformationen zu Komponenten teilen (z. b. Zeiger Pose) zu erhalten.
-2. Erfahrungen mit einer Art von häntigkeit sollten Hinweise von den Eingabe-APIs erhalten, um die Controller zu unterscheiden [(Unity-Beispiel)](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) .
+2. Erfahrungen mit einer Art von häntigkeit sollten Hinweise von den Eingabe-APIs erhalten, um die Controller zu unterscheiden [(Unity-Beispiel)](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) .
 
 ## <a name="controls"></a>Steuerelemente
 
