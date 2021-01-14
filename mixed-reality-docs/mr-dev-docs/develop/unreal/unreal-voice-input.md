@@ -6,18 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Unreal, Unreal Engine 4, UE4, hololens 2, Voice, Voice Input, Spracherkennung, gemischte Realität, Entwicklung, Features, Dokumentation, Leitfäden, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
+ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010070"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205835"
 ---
 # <a name="voice-input-in-unreal"></a>Spracheingabe in Unreal
 
 Mit der Spracheingabe in Unreal können Sie mit einem – Hologramm interagieren, ohne Handgesten zu verwenden, und es wird nur hololens 2 unterstützt. Spracheingaben auf hololens 2 werden von derselben Engine unterstützt, die Sprache in allen anderen universellen Windows-Apps unterstützt, aber Unreal verwendet ein eingeschränkteren Modul, um die Spracheingabe zu verarbeiten. Dies schränkt die Spracheingabe Features in Unreal auf vordefinierte sprach Zuordnungen ein, die in den folgenden Abschnitten behandelt werden. 
 
 ## <a name="enabling-speech-recognition"></a>Aktivieren der Spracherkennung
+
+Wenn Sie das Windows Mixed Reality-Plug-in verwenden, erfordert die Spracheingabe keine speziellen Windows Mixed Reality-APIs. Es basiert auf der vorhandenen API für die [Eingabe](https://docs.unrealengine.com/Gameplay/Input/index.html) Zuordnung von Unreal Engine 4. Wenn Sie openxr verwenden, sollten Sie zusätzlich das [Microsoft openxr-Plug](https://github.com/microsoft/Microsoft-OpenXR-Unreal)-in installieren. 
 
 So aktivieren Sie die Spracherkennung in hololens:
 1. Wählen Sie **Projekteinstellungen > Plattform > hololens > Funktionen** aus, und aktivieren Sie das **Mikrofon**. 
@@ -29,8 +31,6 @@ So aktivieren Sie die Spracherkennung in hololens:
 ![Einstellungen für die Windows-Spracherkennung](images/unreal/speech-recognition-settings.png)
 
 3. Ein Dialogfeld wird angezeigt, wenn die Anwendung zum ersten Mal gefragt wird, ob Sie das Mikrofon aktivieren möchten. Wenn Sie **Ja** auswählen, wird die Spracheingabe in der APP gestartet.
-
-Die Spracheingabe erfordert keine speziellen Windows Mixed Reality-APIs. Es basiert auf der vorhandenen API für die [Eingabe](https://docs.unrealengine.com/Gameplay/Input/index.html) Zuordnung von Unreal Engine 4. 
 
 ## <a name="adding-speech-mappings"></a>Hinzufügen von sprach Zuordnungen
 
