@@ -1,18 +1,18 @@
 ---
 title: Erste Schritte mit Mixed Reality
-description: Lernen Sie die Grundlagen von Mixed-Reality in Theorie, Entwicklung und gängigen Anwendungsfällen kennen.
+description: Wählen Sie Ihren Entwicklungspfad, und lernen Sie die Grundlagen von Mixed-Reality in Theorie, Entwicklung und gängigen Anwendungsfällen kennen.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757668"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009720"
 ---
 # <a name="get-started-with-mixed-reality"></a>Erste Schritte mit Mixed Reality
 

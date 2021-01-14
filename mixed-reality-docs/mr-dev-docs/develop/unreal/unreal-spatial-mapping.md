@@ -1,18 +1,18 @@
 ---
 title: Räumliche Abbildung in Unreal
-description: Leitfaden für die Verwendung der räumlichen Abbildung in Unreal
+description: Erfahren Sie, wie räumliche Abbildung und Gittermodelle in Unreal-Mixed Reality-Anwendungen für HoloLens-Geräte verwendet werden.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, räumliche Abbildung, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 6d70e7f2d32fbf39bc51534661b8224547c36acc
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3f07acc5bb4ad85084f6eb178fd1c33d94224408
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926049"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009960"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Räumliche Abbildung in Unreal
 

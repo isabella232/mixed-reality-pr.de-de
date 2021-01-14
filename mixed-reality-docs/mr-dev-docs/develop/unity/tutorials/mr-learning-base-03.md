@@ -1,22 +1,20 @@
 ---
-title: 'MRTK-Tutorials: 3. Konfigurieren der MRTK-Profile'
-description: In diesem Kurs erfahren Sie, wie Sie die MRTK-Profile (Mixed Reality Toolkit) konfigurieren.
+title: Konfigurieren der MRTK-Profile
+description: In diesem Kurs erfahren Sie, wie Sie die MRTK-Profile (Mixed Reality Toolkit) für Ihre Mixed Reality-Apps konfigurieren.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, räumliche Wahrnehmung
 ms.localizationpriority: high
-ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 58f9c5f756a12e99fd10b136b2a450c6227b2dad
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613244"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008010"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Konfigurieren der MRTK-Profile
-
-## <a name="overview"></a>Übersicht
 
 In diesem Tutorial erfahren Sie, wie die MRTK-Profile angepasst und konfiguriert werden.
 

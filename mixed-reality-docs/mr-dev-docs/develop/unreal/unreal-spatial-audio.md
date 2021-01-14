@@ -1,18 +1,18 @@
 ---
 title: Räumliche Audiowiedergabe in Unreal
-description: Lernen Sie die Ein- und Ausgaben des Spatial Audio-Plug-Ins für die Unreal-Engine kennen.
+description: Lernen Sie die Besonderheiten des Plug-Ins für räumliche Audiowiedergabe für Unreal-Mixed Reality-Anwendungen für HoloLens-Geräte kennen.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, räumliche Audiowiedergabe
-ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609541"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009970"
 ---
 # <a name="spatial-audio-in-unreal"></a>Räumliche Audiowiedergabe in Unreal
 
@@ -34,7 +34,6 @@ Der erste Schritt beim Hinzufügen von Raumklang zu Ihrem Projekt ist die Instal
 ![Unreal Spatial Audio-Plug-In](images/unreal-spatial-audio-img-01.png)
 
 Nach dem Neustart des Editors ist Ihr Projekt fertig eingerichtet.
-
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>Festlegen des Raumklang-Plug-Ins für die HoloLens 2-Plattform
 

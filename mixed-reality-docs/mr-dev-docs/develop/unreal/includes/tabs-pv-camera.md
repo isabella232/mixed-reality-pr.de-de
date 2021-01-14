@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: ad7d530de61864528ae80e4d0086687d282e6b18
+ms.sourcegitcommit: 8f9f98342aaf66645fd74dac3fad499f9d799ce7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717336"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98109545"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>Setup des FV-Kamerafeeds
+
+> [!IMPORTANT]
+> Die FV-Kamera ist sowohl in Windows Mixed Reality-als auch in OpenXR-Plug-Ins implementiert. Für OpenXR muss allerdings das [Microsoft OpenXR-Plug-In](https://github.com/microsoft/Microsoft-OpenXR-Unreal) installiert sein. Außerdem besteht für OpenXR eine aktuelle Einschränkung, die Kamera kann mit DirectX11 RHI verwendet werden. Diese Einschränkung wird in einer kommenden Unreal-Version behoben. 
 
 - Aktivieren Sie in **Project Settings > HoloLens** (Projekteinstellungen > HoloLens) die **Webcam**-Funktionalität:
 

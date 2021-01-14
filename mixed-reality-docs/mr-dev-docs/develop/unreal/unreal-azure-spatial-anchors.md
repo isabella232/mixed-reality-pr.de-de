@@ -1,18 +1,18 @@
 ---
 title: Azure-Raumanker in Unreal
-description: Übersicht über das Erstellen von Azure-Raumankern in der Unreal-Engine.
+description: Erfahren Sie, wie vorhandene Azure Spatial Anchors in Unreal-Mixed Reality-Anwendungen erstellt, verwaltet und lokalisiert werden.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure-Entwicklung, Raumanker, Mixed Reality, Entwicklung, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 18ec9db03341ad4fc6a5c10ea6f8fdd38c61c537
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926023"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009770"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Azure-Raumanker in Unreal
 

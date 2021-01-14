@@ -1,18 +1,18 @@
 ---
 title: Mixed Reality Learn-Modul – Übersicht
-description: Werfen Sie einen Blick auf die verfügbaren Lernmodule für Mixed Reality.
+description: Bleiben Sie bei allen verfügbaren Mixed Reality-Modulen, die auf der Microsoft Learn-Plattform gehostet sind, auf dem Laufenden.
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, lernen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Sprachübersetzung, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757798"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006910"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn – Übersicht
 

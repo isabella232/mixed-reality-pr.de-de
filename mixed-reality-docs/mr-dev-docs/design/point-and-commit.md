@@ -1,18 +1,18 @@
 ---
 title: Zeigen und Ausführen mit den Händen
-description: Übersicht über das Eingabemodell „Zeigen und Ausführen“
+description: Lernen Sie die Grundlagen des Zeigen-und-Ausführen-Eingabemodells für die Unterstützung von Gesten in Mixed Reality-Anwendungen.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Interaktion, Design, HoloLens, Hände, fern, Zeigen und Ausführen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Handstrahlen, Objektmanipulation, MRTK, Mixed Reality Toolkit, DoF, Freiheitsgrade
-ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848293"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009740"
 ---
 # <a name="point-and-commit-with-hands"></a>Zeigen und Ausführen mit den Händen
 

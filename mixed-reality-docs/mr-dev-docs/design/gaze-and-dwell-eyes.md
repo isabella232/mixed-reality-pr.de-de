@@ -1,18 +1,18 @@
 ---
 title: Anvisieren und Verweilen
-description: Übersicht über das Eingabemodell „Anvisieren mit den Augen und Verweilen“.
+description: Beginnen Sie mit einem Überblick über das Eingabemodell zum Anvisieren mit den Augen und Verweilen, einschließlich Interaktionsmodellen, Entwurfsrichtlinien und besonderen Herausforderungen.
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Eye Tracking, Mixed Reality, Eingabe, Anvisieren mit den Augen, Zielen mit den Augen, HoloLens 2, Blickgestützte Auswahl, Verweilen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Design
-ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847811"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007710"
 ---
 # <a name="eye-gaze-and-dwell"></a>Anvisieren und Verweilen
 
@@ -43,6 +43,7 @@ Wir empfehlen eine Ausführungszeit von 150 bis 250 ms bei einer bestimmten Näh
 ![Verweilzustände](images/eyes_dwellstate_recommendation.png)<br>
 
 ## <a name="see-also"></a>Siehe auch
+
 * [Eyetracking – Blickverfolgung](eye-tracking.md)
 * [Mit den Augen anvisieren und ausführen](gaze-and-commit-eyes.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)

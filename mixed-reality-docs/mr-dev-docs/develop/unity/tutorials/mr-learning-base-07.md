@@ -1,18 +1,18 @@
 ---
-title: 'MRTK-Tutorials: 7. Interagieren mit 3D-Objekten'
-description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um mit 3D-Objekten zu interagieren.
+title: Interagieren mit 3D-Objekten
+description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um mit 3D-Objekten in Mixed Reality-Apps zu interagieren und diese zu manipulieren.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Objektinteraktionen, Begrenzungsrahmen
 ms.localizationpriority: high
-ms.openlocfilehash: a457c850cdc5db7b9613ae20caab23d69b342997
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613494"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007930"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interagieren mit 3D-Objekten
 

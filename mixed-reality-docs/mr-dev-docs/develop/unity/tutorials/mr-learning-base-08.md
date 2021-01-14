@@ -1,22 +1,20 @@
 ---
-title: 'MRTK-Tutorials: 8. Verwenden von Eye Tracking'
-description: In diesem Kurs erfahren Sie, wie Sie Eye Tracking mit dem Mixed Reality Toolkit (MRTK) verwenden.
+title: Verwenden von Eye Tracking
+description: In diesem Kurs erfahren Sie, wie Sie Eye Tracking in Ihren Mixed Reality-Apps mit dem Mixed Reality Toolkit (MRTK) verwenden.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613484"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007890"
 ---
 # <a name="8-using-eye-tracking"></a>8. Verwenden von Eye Tracking
-
-## <a name="overview"></a>Übersicht
 
 In diesem Tutorial erfahren Sie, wie Sie Eye Tracking für HoloLens 2 aktivieren und Objekten Eye Tracking hinzufügen, um Aktionen auszulösen, wenn der Benutzer die Objekte ansieht.
 
@@ -35,7 +33,7 @@ Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Un
 ![Unity MRTK-Projektkonfigurator-Fenster](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> Die Funktion zur Eingabe durch Anvisieren hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
+> Die Funktion zur Eingabe durch Anvisieren hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#selecting-mrtk-and-project-settings) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Aktivieren des Anvisierens mit den Augen im Blickanbieter
 

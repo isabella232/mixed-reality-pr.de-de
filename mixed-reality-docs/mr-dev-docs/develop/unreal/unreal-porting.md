@@ -1,18 +1,18 @@
 ---
 title: Upgrade von Projekten in Unreal
-description: Übersicht der Schritte zum Versionsupgrade und der veralteten APIs in Unreal-Projekten.
+description: Bleiben Sie mit Schritten zu Versionsupgrades, Änderungen an APIs und veralteten Features für Ihre Unreal-Projekte auf dem Laufenden.
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Dokumentation, Leitfäden, Features, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Portieren, Upgrade
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010621"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010050"
 ---
 # <a name="upgrading-projects-in-unreal"></a>Upgrade von Projekten in Unreal
 

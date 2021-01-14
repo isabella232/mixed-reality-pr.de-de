@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Kernkonzepte, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847604"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110448"
 ---
 # <a name="start-designing-and-prototyping"></a>Mit Entwerfen und Prototyping beginnen
 
 ![Zusammenfassung Mixed Reality-Design](images/design-hero-image.png)
 
-Mixed Reality-Anwendungen sind mit nichts zu vergleichen, was aktuell in der Welt existiert, und sie zu entwerfen, ist harte Arbeit. Sie müssen nicht nur die neuen Kombinationen aus realen und virtuellen Welten berücksichtigen, die Sie erschaffen, sondern auch die neuen Benutzererfahrungen, die sie hervorbringen. Da Mixed Reality ein weites Feld ist, haben wir wichtige Punkte aus dem Gesamtspektrum des Entwerfens ausgewählt und sie unten in Form einer Reihe von Prüfpunkten aufgefächert. Diese sind bauen aufeinander auf, wenn Sie aber bereits praktische Erfahrungen haben, lassen Sie sich nicht abhalten, zu einem der folgenden Abschnitte zu springen.
+Mixed Reality-Anwendungen sind mit nichts zu vergleichen, was aktuell in der Welt existiert, und sie zu entwerfen, ist harte Arbeit. Sie müssen nicht nur die neuen Kombinationen aus realen und virtuellen Welten berücksichtigen, die Sie erschaffen, sondern auch die neuen Benutzererfahrungen, die sie hervorbringen. Da Mixed Reality ein weites Feld ist, haben wir wichtige Punkte aus dem Gesamtspektrum des Entwerfens ausgewählt und sie unten in Form einer Reihe von Prüfpunkten aufgefächert. Diese sind bauen aufeinander auf, wenn Sie aber bereits praktische Erfahrungen haben, lassen Sie sich nicht abhalten, zu einem der folgenden Abschnitte zu springen. 
+
+Sehen Sie sich zum Einstieg unser Übersichtsvideo zum Entwerfen an:
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>Prüfpunkte für den Entwurf
 

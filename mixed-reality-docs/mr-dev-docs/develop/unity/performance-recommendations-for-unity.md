@@ -1,18 +1,18 @@
 ---
 title: Leistungsempfehlungen für Unity
-description: Unity-spezifische Tipps zum Verbessern der Leistung bei Mixed Reality-Apps.
+description: Lernen Sie Unity-spezifische Tipps zur Verbesserung der Leistung mit Projekteinstellungen, Profilerstellung und Speicherverwaltung in Ihren Mixed-Reality-Apps kennen.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010481"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009350"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 

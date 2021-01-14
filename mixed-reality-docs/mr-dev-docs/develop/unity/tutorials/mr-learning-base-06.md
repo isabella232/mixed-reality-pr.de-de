@@ -1,22 +1,20 @@
 ---
-title: 'MRTK-Tutorials: 6. Erstellen der Benutzeroberfläche'
-description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um Benutzeroberflächen zu erstellen.
+title: Erstellen der Benutzeroberfläche
+description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um statische und dynamische Benutzeroberflächen zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Prefabs, Hologramme, QuickInfos
 ms.localizationpriority: high
-ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613514"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008060"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Erstellen der Benutzeroberfläche
-
-## <a name="overview"></a>Übersicht
 
 In diesem Tutorial erfahren Sie, wie Sie mithilfe der Schaltflächen- und Menü-Prefabs des MRTK in Kombination mit der TextMeshPro-Komponente von Unity eine einfache Benutzeroberfläche erstellen. Sie erfahren außerdem, wie Sie die Schaltflächen konfigurieren, um Ereignisse auszulösen, und dynamische QuickInfo-Benutzeroberflächenelemente hinzufügen, um den Benutzer mit ergänzenden Informationen zu versorgen.
 

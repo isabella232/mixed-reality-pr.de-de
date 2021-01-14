@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Erlernen von Tools und Architektur
-description: Mixed Reality-Entwicklerdokumentation für HoloLens und immersive Headsets.
+description: Erfahren Sie mehr über die Entwicklungstools für Mixed Reality, die Sie für den Einstieg in die Erstellung von Apps für HoloLens und immersive Headsets benötigen.
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, entwickeln, Entwicklung, HoloLens, Unity, Unreal, DirectX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, Virtual Reality-Entwicklung, Augmented Reality-Entwicklung
-ms.openlocfilehash: 75501e299b0bccbc35056ebb2da6657bd5d1e335
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 9bb0f1c62315bf106a0d6d45b8a2a24203ac9296
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925969"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007630"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>Einführung in die Mixed Reality-Entwicklung
 

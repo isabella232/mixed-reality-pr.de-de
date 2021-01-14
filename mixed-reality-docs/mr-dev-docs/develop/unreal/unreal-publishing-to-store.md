@@ -1,18 +1,18 @@
 ---
 title: Veröffentlichen im Microsoft Store
-description: ''
+description: Erfahren Sie, wie Sie Ihre Unreal-Mixed Reality-Anwendungen für den Microsoft Store verpacken, zertifizieren und sie dort veröffentlichen können.
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Dokumentation, Leitfäden, Features, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Veröffentlichen, Verteilung, Microsoft Store
-ms.openlocfilehash: 37a17ba4a691ca8db6ce447abd485293454b8ae3
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96583911"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010020"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>Veröffentlichen im Microsoft Store
 
@@ -108,6 +108,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 4. Schließen Sie Unreal, öffnen Sie das Projekt erneut, und verpacken Sie es erneut für HoloLens.  Führen Sie WACK erneut aus, und der Fehler sollte nicht mehr angezeigt werden. 
 
 ## <a name="see-also"></a>Siehe auch
+
 * [Senden einer App an den Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Zertifizierungskit für Windows-Apps](https://developer.microsoft.com/windows/downloads/app-certification-kit)
 * [Manuelles Erstellen einer App-Installer-Datei](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)

@@ -1,28 +1,26 @@
 ---
-title: Tutorials zu Holographic Remoting am PC – 1. Erste Schritte mit Holographic Remoting am PC
-description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Mixed Reality-Remoting von Ihrem PC zu HoloLens 2 ausführen.
+title: Erste Schritte mit Holographic Remoting am PC
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Remotestreaming von Mixed Reality-Anwendungen von Ihrem PC an HoloLens 2 verwenden können.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, QuickInfos, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679769"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007920"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Erste Schritte mit Holographic Remoting am PC
 
-## <a name="overview"></a>Übersicht
+Willkommen bei den HoloLens 2-Tutorials. In dieser zweiteiligen Tutorialreihe erfahren Sie, wie Sie eine Mixed Reality-Demo und eine PC-App für Holographic Remoting erstellen.
 
-  Willkommen bei den HoloLens 2-Tutorials. In dieser zweiteiligen Tutorialreihe erfahren Sie, wie Sie eine Mixed Reality-Demo und eine PC-App für Holographic Remoting erstellen.
+In diesem Tutorial erfahren Sie, wie Sie eine Mixed Reality-Erfahrung erstellen. Es werden Benutzeroberflächenelemente, 3D-Modellbearbeitung, Modellclipping und Funktionen für Eye-Tracking veranschaulicht.
 
-   In diesem Tutorial erfahren Sie, wie Sie eine Mixed Reality-Erfahrung erstellen. Es werden Benutzeroberflächenelemente, 3D-Modellbearbeitung, Modellclipping und Funktionen für Eye-Tracking veranschaulicht.
-
-  Im zweiten Tutorial, [Erstellen einer Holographic Remoting-Anwendung](mr-learning-pc-holographic-remoting-02.md), erfahren Sie, wie Sie eine PC-App für Holographic Remoting erstellen. Stellen Sie jederzeit eine Verbindung mit HoloLens 2 her, um 3D-Inhalte in Mixed Reality visuell darzustellen.
+Im zweiten Tutorial, [Erstellen einer Holographic Remoting-Anwendung](mr-learning-pc-holographic-remoting-02.md), erfahren Sie, wie Sie eine PC-App für Holographic Remoting erstellen. Stellen Sie jederzeit eine Verbindung mit HoloLens 2 her, um 3D-Inhalte in Mixed Reality visuell darzustellen.
 
 ## <a name="objectives"></a>Ziele
 
@@ -48,19 +46,19 @@ Wir **empfehlen dringend**, die Tutorialserie [Erste Schritte](mr-learning-base-
 
 In diesem Abschnitt erstellen Sie ein neues Unity-Projekt und bereiten es für die MRTK-Entwicklung vor.
 
-Befolgen Sie zu diesem Zweck zunächst die Anweisungen unter [Initialisieren des Projekts und der ersten Anwendung](mr-learning-base-02.md), jedoch ohne die Anweisungen zum [Erstellen Ihrer Anwendung auf Ihrem Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2), die die folgenden Schritte beinhalten:
+Befolgen Sie zu diesem Zweck zunächst die Anweisungen unter [Initialisieren des Projekts und der ersten Anwendung](mr-learning-base-02.md), jedoch ohne die Anweisungen zum [Erstellen Ihrer Anwendung auf Ihrem Gerät](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2), die die folgenden Schritte beinhalten:
 
 1. [Erstellen eines neuen Unity-Projekts](mr-learning-base-02.md#creating-the-unity-project), das mit einem passenden Namen bezeichnet wird, beispielsweise *MRTK-Tutorials*
 
-1. [Wechseln der Buildplattform](mr-learning-base-02.md#configuring-the-unity-project)
+2. [Wechseln der Buildplattform](mr-learning-base-02.md#switching-the-build-platform)
 
-1. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [Importieren des Mixed Reality-Toolkits](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. [Importieren des Mixed Reality-Toolkits](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-1. [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#configuring-the-unity-project)
+5. [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 
-1. [Erstellen und Festlegen der Szene](mr-learning-base-02.md#creating-and-configuring-the-scene) und Bezeichnen der Szene mit einem passenden Namen, z. B. **PC Holographic Remoting**
+6. [Erstellen und Festlegen der Szene](mr-learning-base-02.md#creating-and-configuring-the-scene) und Bezeichnen der Szene mit einem passenden Namen, z. B. **PC Holographic Remoting**
 
 Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoption der räumlichen Wahrnehmung](mr-learning-base-03.md#changing-the-spatial-awareness-display-option), um das **DefaultHoloLens2ConfigurationProfile** als MRTK-Konfigurationsprofil für Ihre Szene festzulegen. Legen Sie die Anzeigeoptionen für das Gittermodell für räumliche Wahrnehmung auf **Occlusion** (Verdeckung) fest.
 

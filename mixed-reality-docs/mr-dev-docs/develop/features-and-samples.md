@@ -1,18 +1,18 @@
 ---
 title: Beispiele und Feature-Apps
-description: Erhalten Sie einen Einblick in die verfügbaren Featurebeispiele für HoloLens.
+description: Bleiben Sie bei allen verfügbaren Microsoft-Beispielen und Mixed Reality-Feature-Apps für HoloLens auf dem neuesten Stand.
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Lernen, Beispiele, MRTK, Forschungsmodus, HoloLens 2, QR-Codes, WebRTC, Mixed Reality-Aufnahme, Holographic Remoting, UX-Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 2624949dd21b4c8e14ed45f152d41900b5f91faf
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615540"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007610"
 ---
 # <a name="samples-and-feature-apps"></a>Beispiele und Feature-Apps
 

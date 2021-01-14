@@ -1,18 +1,18 @@
 ---
 title: Verwenden des Windows-Geräteportals
-description: Mit dem Windows-Geräteportal für HoloLens können Sie Ihr Gerät remote über eine WLAN- oder USB-Verbindung konfigurieren und verwalten. Das Geräteportal ist ein Webserver auf der HoloLens, mit dem Sie über einen Webbrowser auf dem PC eine Verbindung herstellen können. Das Geräteportal enthält viele Tools, die Ihnen helfen, ihre HoloLens zu verwalten und ihre Apps zu debuggen und zu optimieren.
+description: Erfahren Sie, wie Sie Ihr Gerät remote über WLAN oder USB mithilfe des Windows-Geräteportals konfigurieren und verwalten.
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows-Geräteportal, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 168d4175a7e55d5116f19c51a802c9a8abdc1e19
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530315"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007790"
 ---
 # <a name="using-the-windows-device-portal"></a>Verwenden des Windows-Geräteportals
 

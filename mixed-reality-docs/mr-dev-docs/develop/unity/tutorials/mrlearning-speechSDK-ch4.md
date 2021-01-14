@@ -1,18 +1,18 @@
 ---
-title: 'Tutorials zu Azure Speech-Diensten: 4. Einrichten des Verstehens von Absichten und natürlicher Sprache'
-description: In diesem Kurs erfahren Sie, wie Sie das Azure Speech SDK in einer Mixed Reality-Anwendung implementieren.
+title: Einrichten des Verständnisses von Absichten und natürlicher Sprache
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Absichten und Verstehen natürlicher Sprache in Mixed-Reality-Anwendungen eingerichtet werden.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10, LUIS, LUIS-Portal, Absicht, Entitäten, Äußerungen, Verstehen natürlicher Sprache
 ms.localizationpriority: high
-ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678509"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007770"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Einrichten des Verstehens von Absichten und natürlicher Sprache
 
