@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Software Components, releaseverlauf, Versions Hinweise, Versionsverlauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
+ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009250"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166755"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Mixed Reality: Übersicht zur Software und Versionsverlauf
 
@@ -167,6 +167,7 @@ In Windows 10, Version 1809 und höher, wird das [Mixed Reality-Portal](https://
 
    | Version            | Veröffentlichungsdatum          | Wichtige Änderungen                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
+   | 2000.20111.1381.0  | 10. Dezember 2020        | <ul><li>Aktualisiert die Landing Page des Mixed Reality-Portals.</li><li>Reduziert Fehler bei der Headset-Konnektivität während Firmwareupdates </li></ul>  |    | 2000.20071.1133.0  | 5\. August 2020        | <ul><li>Unterstützung für [openxr](https://docs.microsoft.com/windows/mixed-reality/openxr) zum Anhalten des Vorschaufensters.</li></ul>  | 
    | 2000.20071.1133.0  | 5\. August 2020        | <ul><li>Unterstützung für [openxr](https://docs.microsoft.com/windows/mixed-reality/openxr) zum Anhalten des Vorschaufensters.</li></ul>  | 
    | 2000.20041.1212.0  | 11. Mai 2020          | <ul><li>Behandelt ein Zeit Steuerungs Problem, das zu einem inkonsistenten 15-5-Fehler geführt hat.</li><li>Verbesserte Unterstützung für die Ausführung von Windows Mixed Reality ohne Internetverbindung.</li><li>Verbesserte Unterstützung für die Kopplung von Bewegungs Controllern über **Setup Controller**.</li></ul>  | 
    | 2000.20031.1202.0  | 14. April 2020        | <ul><li>Unterstützung für die Registrierung von Informationen, Tipps und angeboten über Windows Mixed Reality.</li></ul>  | 
