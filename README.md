@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ff8435ee09cf380bb4b055a50abcbe4e5e91dc03
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
+ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808811"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98181737"
 ---
 ![Virtueller Kolibri mit menschlicher Hand](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -55,7 +55,10 @@ Wenn Sie mit VR-Geräten noch nicht vertraut sind, empfehlen wir Ihnen, mit unse
 
 * [Starten Sie Ihre VR-Journey](enthusiast-guide/vr-journey.md)
 
+## <a name="contributor-license-agreement-cla"></a>Lizenzvereinbarung für Mitwirkende (CLA)
+
+Beiträge und Vorschläge für dieses Projekt sind willkommen. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. Einzelheiten dazu finden Sie unter [https://cla.opensource.microsoft.com](https://cla.opensource.microsoft.com).
+
 ## <a name="microsoft-open-source-code-of-conduct"></a>Microsoft Open-Source-Verhaltenskodex
 
-Für dieses Projekt gelten die Microsoft-Verhaltensregeln für Open Source ([Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)).
-Weitere Informationen finden Sie unter [Code of Conduct FAQ (FAQ zum Verhaltenskodex)](https://opensource.microsoft.com/codeofconduct/faq/). Alternativ können Sie sich mit weiteren Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.
+Für dieses Projekt gelten die Microsoft-Verhaltensregeln für Open Source ([Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct)). Weitere Informationen finden Sie unter [Code of Conduct FAQ (FAQ zum Verhaltenskodex)](https://opensource.microsoft.com/codeofconduct/faq/). Alternativ können Sie sich mit weiteren Fragen und Kommentaren an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.
