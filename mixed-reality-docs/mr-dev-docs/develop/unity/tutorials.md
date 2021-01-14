@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Lernprogramme
-description: Bietet Tutorials zur Mixed Reality-Entwicklung.
+description: Bleiben Sie bei Tutorials für die Mixed Reality-Entwicklung, die wir für HoloLens und Azure-Dienste anbieten, auf dem Laufenden.
 author: keveleigh
 ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, Academy, Tutorial, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity, Unreal, HoloLens, Azure Spatial Anchors, Azure-Sprachdienste
-ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010461"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006520"
 ---
 # <a name="tutorials"></a>Lernprogramme
 
