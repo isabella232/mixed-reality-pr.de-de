@@ -20,25 +20,17 @@
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-    - name: Unity-Entwicklung – Übersicht
+    - name: Unity-Entwicklung für HoloLens
       href: unity/unity-development-overview.md
-    - name: Projektkonfigurationen
-      items:
-        - name: Einführung in MRTK
-          href: unity/mrtk-getting-started.md
-        - name: Konfigurieren von Projekten ohne MRTK
-          href: unity/configure-unity-project.md
-        - name: Verwenden des Mixed Reality OpenXR-Plug-Ins
-          href: unity/openxr-getting-started.md
-        - name: Unterstützte Funktionen des OpenXR-Plug-Ins
-          href: unity/openxr-supported-features.md
+    - name: Unity-Bereitstellung für VR
+      href: unity/unity-development-wmr-overview.md
     - name: Tutorials
       items:
         - name: Übersicht
           href: unity/tutorials.md
         - name: 'HoloLens 2: Tutorials'
           items:
-            - name: MRTK-Tutorials
+            - name: Tutorials für MRTK-Einsteiger
               items:
                 - name: 1. Einführung
                   href: unity/tutorials/mr-learning-base-01.md
@@ -172,51 +164,63 @@
               href: unity/tutorials/mr-azure-312.md
             - name: 'MR und Azure 313: IoT Hub-Dienst'
               href: unity/tutorials/mr-azure-301.md
+    - name: Einrichten Ihres Projekts
+      items:
+        - name: Einführung in MRTK
+          href: unity/mrtk-getting-started.md
+        - name: Konfigurieren von Projekten ohne MRTK
+          href: unity/configure-unity-project.md
+        - name: Verwenden des Mixed Reality OpenXR-Plug-Ins
+          href: unity/openxr-getting-started.md
+        - name: Unterstützte Funktionen des OpenXR-Plug-Ins
+          href: unity/openxr-supported-features.md
     - name: Grundbausteine
       items:
         - name: 'MRTK 101: Erstellen von grundlegenden Interaktionen mithilfe von Mixed Reality Toolkit Unity'
           href: unity/mrtk-101.md
-        - name: Kamera in Unity
+        - name: Kamera
           href: unity/camera-in-unity.md
-        - name: Koordinatensysteme in Unity
+        - name: Koordinatensysteme
           href: unity/coordinate-systems-in-unity.md
-        - name: Persistenz in Unity
+        - name: Persistenz
           href: unity/persistence-in-unity.md
-        - name: Anvisieren in Unity
+        - name: Anvisieren mit dem Kopf
           href: unity/gaze-in-unity.md
-        - name: Text in Unity
+        - name: Text
           href: unity/text-in-unity.md
-        - name: Gesten und Motion-Controller in Unity
-          href: unity/gestures-and-motion-controllers-in-unity.md
-        - name: Hand- und Eye-Tracking in Unity
+        - name: Bewegungscontroller
+          href: unity/motion-controllers-in-unity.md
+        - name: Gesten
+          href: unity/gestures-in-unity.md
+        - name: Hand- und Eye-Tracking
           href: unity/hand-eye-in-unit.md
-        - name: Spracheingabe in Unity
+        - name: Spracheingabe
           href: unity/voice-input-in-unity.md
-        - name: Räumliche Abbildung in Unity
+        - name: Räumliche Abbildung
           href: unity/spatial-mapping-in-unity.md
-        - name: Raumklang in Unity
+        - name: Raumklang
           href: unity/spatial-sound-in-unity.md
-    - name: Plattformfunktionen und APIs
+    - name: Erweiterte Funktionen
       items:
-        - name: Gemeinsame Erlebnisse in Unity
+        - name: Gemeinsame Erfahrung
           href: unity/shared-experiences-in-unity.md
-        - name: Ausrichtbare Kamera in Unity
+        - name: Ausrichtbare Kamera
           href: unity/locatable-camera-in-unity.md
-        - name: Fokuspunkt in Unity
+        - name: Fokuspunkt
           href: unity/focus-point-in-unity.md
-        - name: Verfolgbarkeitsverlust in Unity
+        - name: Verlust der Nachverfolgung
           href: unity/tracking-loss-in-unity.md
-        - name: Tastatureingabe in Unity
+        - name: Tastatureingabe
           href: unity/keyboard-input-in-unity.md
         - name: Verwenden des Windows-Namespace mit Unity-Apps für HoloLens
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Native Mixed Reality-Objekte in Unity
+        - name: Native Mixed Reality-Objekte
           href: unity/unity-xrdevice-advanced.md
-        - name: Verwenden von Vuforia mit Unity
+        - name: Verwenden von Vuforia
           href: unity/vuforia-development-overview.md
     - name: Immersive VR
       items:
-        - name: HP-Reverb-G2-Steuerelemente in Unity
+        - name: HP Reverb G2-Controller
           href: unity/unity-reverb-g2-controllers.md
     - name: Beispiel-Apps
       items:
@@ -236,7 +240,7 @@
               href: unity/galaxy-explorer.md
             - name: Lunar-Modul
               href: unity/lunar-module.md
-    - name: Einstellungen und Debuggen
+    - name: Debugging und Leistung
       items:
         - name: Verwaltetes Debuggen mit Unity IL2CPP
           href: unity/managed-debugging-with-unity-il2cpp.md
@@ -274,33 +278,33 @@
               href: unreal/tutorials/unreal-uxt-ch6.md
     - name: Grundbausteine
       items:
-        - name: Eingabe durch Anvisieren in Unreal
+        - name: Eingabe über Anvisieren
           href: unreal/unreal-gaze-input.md
-        - name: Handtracking in Unreal
+        - name: Handtracking
           href: unreal/unreal-hand-tracking.md
-        - name: Räumliche Abbildung in Unreal
+        - name: Räumliche Abbildung
           href: unreal/unreal-spatial-mapping.md
-        - name: Räumliche Audiowiedergabe in Unreal
+        - name: Räumliche Audiowiedergabe
           href: unreal/unreal-spatial-audio.md
-        - name: Lokale Raumanker in Unreal
+        - name: Lokale Raumanker
           href: unreal/unreal-spatial-anchors.md
-        - name: Azure-Raumanker in Unreal
+        - name: Azure Spatial Anchors
           href: unreal/unreal-azure-spatial-anchors.md
-        - name: Spracheingabe in Unreal
+        - name: Spracheingabe
           href: unreal/unreal-voice-input.md
-    - name: Plattformfunktionen und APIs
+    - name: Erweiterte Funktionen
       items:
-        - name: HoloLens-Foto-/Videokamera in Unreal
+        - name: HoloLens-Foto-/Videokamera
           href: unreal/unreal-hololens-camera.md
-        - name: QR-Codes in Unreal
+        - name: QR-Codes
           href: unreal/unreal-qr-codes.md
-        - name: UMG und Tastatur in Unreal
+        - name: UMG und Tastatur
           href: unreal/unreal-umg-keyboard.md
-        - name: WinRT in Unreal
+        - name: WinRT
           href: unreal/unreal-winrt.md
     - name: Immersive VR
       items:
-        - name: HP Reverb G2-Steuerelemente in Unreal
+        - name: HP Reverb G2-Controller
           href: unreal/unreal-reverb-g2-controllers.md
     - name: Beispiel-Apps
       items:
@@ -308,17 +312,17 @@
           href: unreal/unreal-kippys-escape.md
     - name: Bereitstellung und Leistung
       items:
-        - name: Bereitstellen auf Gerät in Unreal
+        - name: Auf Gerät bereitstellen
           href: unreal/unreal-deploying.md
         - name: Veröffentlichen im Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Leistungsempfehlungen für Unreal
+        - name: Leistungsempfehlungen
           href: unreal/performance-recommendations-for-unreal.md
-        - name: Materialempfehlungen in Unreal
+        - name: Materialempfehlungen
           href: unreal/unreal-materials.md
         - name: Profilerstellung mit Unreal Insights
           href: unreal/unreal-insights.md
-        - name: Streaming in Unreal
+        - name: Streaming
           href: unreal/unreal-streaming.md
 - name: Web
   items:
