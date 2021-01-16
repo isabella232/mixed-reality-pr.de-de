@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Streaming, Remoting, Mixed Reality, Development, Getting Started, Features, New Project, Emulator, Documentation, Guides, Features, holograms, Game Development, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, WinRT, dll
-ms.openlocfilehash: ac28ce08443de40d9f7eb32eb1b2e8e071a618b3
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0d181d1eff644de0512c40a140474612a1540b40
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007030"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247753"
 ---
 # <a name="winrt-in-unreal"></a>WinRT in Unreal
 
@@ -21,12 +21,12 @@ Im Verlauf der hololens-Entwicklung müssen Sie möglicherweise eine Funktion mi
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs-Journey folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der Mixed Reality-Plattformfunktionen und APIs. Von hier aus können Sie mit jedem [Thema](unreal-development-overview.md#3-platform-capabilities-and-apis) fortfahren oder direkt zum Bereitstellen Ihrer APP auf einem Gerät oder Emulator wechseln.
+Wenn Sie der Unity-Entwicklungs-Journey folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der Mixed Reality-Plattformfunktionen und APIs. Von hier aus können Sie mit jedem [Thema](unreal-development-overview.md#3-advanced-features) fortfahren oder direkt zum Bereitstellen Ihrer APP auf einem Gerät oder Emulator wechseln.
 
 > [!div class="nextstepaction"]
 > [Bereitstellung auf Gerät](unreal-deploying.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [C++/WinRT-APIs](https://docs.microsoft.com/windows/uwp/cpp-and-winrt-apis/)
 * [Filesavepicker-Klasse](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) 
