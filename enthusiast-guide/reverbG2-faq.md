@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009470"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242535"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -92,3 +92,13 @@ Aufgabe
 
 Von hier aus können Sie die aktive Controller Bindung in "Custom" (Benutzer definiert) ändern. Dadurch wird die Option zum Ausprobieren der von der Community gemeinsam genutzten Spiel Bindungen geöffnet.
 Wenn noch keine benutzerdefinierten Spiel Bindungen für dieses Spiel freigegeben wurden (oder wenn Sie mit den versuchen nicht vollständig zufrieden sind), können Sie auch eigene benutzerdefinierte Spiel Bindungen erstellen und sogar den Rest der Community unterstützen, indem Sie Sie nach einigen Spielsitzungen freigeben.
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>Ich verfüge über alle Kabel, die mit dem Headset und dem PC verbunden sind, aber nicht einschalten.
+
+Vergewissern Sie sich, dass das mit dem Headset verbundene Kabel vollständig sitzt. Am oberen Rand des Kabels wird ein kleiner Punkt angezeigt, der sich neben dem oberen Rand des Headsets befindet, wenn er vollständig eingefügt wurde:
+
+![Kleiner Punkt am oberen Rand des Kabels](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Wie kann ich das Headset ausschalten, während mein PC weiterhin verwendet wird
+
+Deinstallieren Sie den AC-Verbindungs Adapter aus dem Linkfeld des Headset-Kabels, um die Stromversorgung für das Headset zu entfernen.
