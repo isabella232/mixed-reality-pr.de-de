@@ -176,8 +176,6 @@
           href: unity/openxr-supported-features.md
     - name: Grundbausteine
       items:
-        - name: 'MRTK 101: Erstellen von grundlegenden Interaktionen mithilfe von Mixed Reality Toolkit Unity'
-          href: unity/mrtk-101.md
         - name: Kamera
           href: unity/camera-in-unity.md
         - name: Koordinatensysteme
