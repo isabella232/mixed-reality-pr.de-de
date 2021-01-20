@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: Motion Controllers, Unity, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: bf9aad0ee67a406280cefedec8b55fb1de130b8b
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192964"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583508"
 ---
 # <a name="motion-controllers-in-unity"></a>Motion-Controller in Unity
 
@@ -445,7 +445,7 @@ Schritt-für-Schritt-Tutorials mit ausführlicheren Anpassungs Beispielen sind i
 - [MR-Eingabe 211: Geste](tutorials/holograms-211.md)
 - [MR-Eingabe 213: Motion-Controller](../../deprecated/mixed-reality-213.md)
 
-[![Mr-Eingabe 213-Motion Controller](images/mr213-main-600px.jpg)](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-213)<br>
+[![Mr-Eingabe 213-Motion Controller](images/mr213-main-600px.jpg)](/windows/mixed-reality/mixed-reality-213)<br>
 *Mr-Eingabe 213-Motion Controller*
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
@@ -453,7 +453,7 @@ Schritt-für-Schritt-Tutorials mit ausführlicheren Anpassungs Beispielen sind i
 Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
-> [Hand- und Eye-Tracking](hand-eye-in-unit.md)
+> [Hand- und Eye-Tracking](./hand-eye-in-unity.md)
 
 Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 

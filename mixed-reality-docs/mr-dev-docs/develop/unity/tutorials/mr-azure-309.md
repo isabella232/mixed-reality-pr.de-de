@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Application Insights, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: d663da0e3a0d00532669a122dc95f2089bf08712
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679469"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582968"
 ---
 # <a name="mr-and-azure-309-application-insights"></a>MR und Azure 309: Application Insights
 
@@ -40,7 +40,7 @@ In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Application Insights
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 309: Application Insights</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -61,7 +61,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Eine Reihe von Kopfhörern mit einem integrierten Mikrofon (wenn das Headset nicht über eine integrierte Mic-und-sprechenden verfügt)
 - Internet Zugriff für Azure-Setup und Application Insights Datenabruf
 
@@ -86,11 +86,11 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
     > [!NOTE]
     > Das Wort **New** wurde möglicherweise durch **Create a Resource** in neueren Portalen ersetzt.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-01.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-01.png)
 
 3.  Die neue Seite auf der rechten Seite enthält eine Beschreibung des *Azure-Anwendung Insights* -Dienstanbieter. Klicken Sie unten links auf dieser Seite auf die Schaltfläche **Erstellen** , um eine Verknüpfung mit diesem Dienst zu erstellen.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-02.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-02.png)
 
 4.  Nachdem Sie auf **Erstellen** geklickt haben, klicken Sie auf:
 
@@ -102,7 +102,7 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
 
     4.  Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     5.  Wählen Sie einen **Speicherort** aus.
 
@@ -110,21 +110,21 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
 
     7.  Klicken Sie auf **Erstellen**.
 
-        ![Azure-Portal](images/AzureLabs-Lab309-03.png)
+        ![das Azure-Portal](images/AzureLabs-Lab309-03.png)
 
 5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. dieser Vorgang kann einige Minuten in Anspruch nehmen.
 
 6.  Nachdem die Dienst Instanz erstellt wurde, wird im Portal eine Benachrichtigung angezeigt.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-04.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-04.png)
 
 7.  Klicken Sie auf die Benachrichtigungen, um die neue Dienst Instanz zu untersuchen.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-05.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-05.png)
 
 8.  Klicken Sie in der Benachrichtigung auf die Schaltfläche **Gehe zu Ressource** , um die neue Dienst Instanz zu untersuchen. Sie gelangen zu ihrer neuen *Application Insights Dienst* Instanz.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-06.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-06.png)
 
     > [!NOTE]
     >  Diese Webseite offen und leicht zugänglich zu machen, wird hier wieder häufig angezeigt, um die gesammelten Daten anzuzeigen.
@@ -134,21 +134,21 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
 
 9.  Um den **Instrumentierungs Schlüssel** zu suchen, müssen Sie einen Bildlauf nach unten in der Liste der Dienstfunktionen durchführen und auf **Eigenschaften** klicken. auf der angezeigten Registerkarte wird der **Dienst Schlüssel** angezeigt.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-07.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-07.png)
 
 10. Unter den folgenden **Eigenschaften** finden Sie den **API-Zugriff**, auf den Sie klicken müssen. Im Bereich auf der rechten Seite wird die **Anwendungs-ID** Ihrer APP bereitgestellt.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-08.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-08.png)
 
 11. Wenn der Bereich **Anwendungs-ID** weiterhin geöffnet ist, klicken Sie auf API- **Schlüssel erstellen**. Dadurch wird der Bereich *API-Schlüssel erstellen* geöffnet.
 
-    ![Azure-Portal](images/AzureLabs-Lab309-09.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-09.png)
 
 12. Geben Sie im jetzt geöffneten Bereich *API-Schlüssel erstellen* eine Beschreibung ein, und klicken Sie auf **die drei Felder**.
 
 13. Klicken Sie auf **Schlüssel generieren**. Ihr **API-Schlüssel** wird erstellt und angezeigt. 
 
-    ![Azure-Portal](images/AzureLabs-Lab309-10.png)
+    ![das Azure-Portal](images/AzureLabs-Lab309-10.png)
         
     > [!WARNING]
     > Dies ist der einzige Zeitpunkt, an dem der **Dienst Schlüssel** angezeigt wird. Stellen Sie also sicher, dass Sie jetzt eine Kopie erstellen.
@@ -209,7 +209,7 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
     1.  Auf der Registerkarte **andere Einstellungen** :
 
-        1.  **Scripting** Die CLR- **Lauf Zeit Version** sollte **experimentell sein (.NET 4,6-Entsprechung)**, wodurch der Editor neu gestartet werden muss.
+        1.   Die CLR- **Lauf Zeit Version** sollte **experimentell sein (.NET 4,6-Entsprechung)**, wodurch der Editor neu gestartet werden muss.
 
         2.  **Skript** -Back-End sollte **.net** sein
 
@@ -265,7 +265,7 @@ Wenn Sie Application Insights in Ihr eigenes Projekt importieren möchten, stell
     > [!NOTE]
     > Wenn Sie die Plug-ins wie diese markieren, werden diese so konfiguriert, dass Sie nur im Unity-Editor verwendet werden. Der WSA-Ordner enthält einen anderen Satz von DLLs, die nach dem Exportieren des Projekts aus Unity verwendet werden.
 
-6.  Im nächsten Schritt müssen Sie den Ordner " **WSA** " im Ordner " **Insights** " öffnen. Es wird eine Kopie derselben Datei angezeigt, die Sie soeben konfiguriert haben. Wählen Sie diese Datei aus, und vergewissern Sie sich dann im Inspektor, dass **alle Plattformen** **deaktiviert sind.** stellen Sie dann sicher, dass **nur** **wsaplayer** **aktiviert** ist. Klicken Sie auf **Übernehmen**.
+6.  Im nächsten Schritt müssen Sie den Ordner " **WSA** " im Ordner " **Insights** " öffnen. Es wird eine Kopie derselben Datei angezeigt, die Sie soeben konfiguriert haben. Wählen Sie diese Datei aus, und vergewissern Sie sich dann im Inspektor, dass **alle Plattformen** **deaktiviert sind.** stellen Sie dann sicher, dass **nur** **wsaplayer** **aktiviert** ist. Klicken Sie auf **Anwenden**.
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-25.png)
 
@@ -277,7 +277,7 @@ Wenn Sie Application Insights in Ihr eigenes Projekt importieren möchten, stell
 
 In diesem Kapitel richten Sie die Kamera und die Steuerelemente ein, um dem Benutzer zu ermöglichen, die Szene anzuzeigen und zu verschieben.
 
-1.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im Bereich Hierarchie **Create**, und klicken Sie dann auf  >  **leere** erstellen.
+1.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im Bereich Hierarchie , und klicken Sie dann auf  >  **leere** erstellen.
 
     ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-26.png)
 
@@ -507,7 +507,7 @@ Das nächste Skript, das erstellt werden soll, ist das **Gaze** -Skript. Dieses 
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das **Skript mit** dem Namen.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das **Skript mit** dem Namen.
 
 3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
 
@@ -701,7 +701,7 @@ So erstellen Sie das Skript:
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript **objecttrigger**.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript **objecttrigger**.
 
 3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen. Ersetzen Sie den vorhandenen Code durch folgenden Code:
 
@@ -773,7 +773,7 @@ So erstellen Sie das Skript:
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript " **datafromanalytics**".
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript " **datafromanalytics**".
 
 3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
 
@@ -1002,7 +1002,7 @@ So erstellen Sie das Skript:
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das **Skript.**
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das **Skript.**
 
 3.  Doppelklicken Sie auf das Skript, um es in *Visual Studio* zu öffnen.
 
@@ -1207,7 +1207,7 @@ In diesem Kapitel müssen Sie das **Bewegungs** Skript auf der über **geordnete
 
 Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, ist nun abgeschlossen, sodass es an der Zeit ist, Sie aus Unity zu erstellen.
 
-1.  Navigieren Sie zu den **Buildeinstellungen**(**dateibuildeinstellungen**  >  **Build Settings**).
+1.  Navigieren Sie zu den **Buildeinstellungen**(**dateibuildeinstellungen**  >  ).
 
 2.  Klicken Sie im Fenster " **Buildeinstellungen** " auf " **Erstellen**".
 
@@ -1231,9 +1231,9 @@ So stellen Sie **die \_ Azure \_ Application \_ Insights** -App auf Ihrem lokale
 
 1.  Öffnen Sie die Projektmappendatei Ihrer **\_ Azure \_ Application \_ Insights** -app in **Visual Studio**.
 
-2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
+2.  Wählen Sie auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
     ![Erstellen des Unity-Projekts in der UWP-Lösung](images/AzureLabs-Lab309-53.png)
 
@@ -1281,4 +1281,3 @@ Versuchen Sie, die objectinscene-Objekte zu erstellen, anstatt Sie manuell zu er
 **Übung 2**
 
 Sortieren Sie Ihre Application Insights Ergebnisse nach Zeit, damit Sie die relevantesten Daten erhalten, und implementieren Sie diese zeitsensiblen Daten in der Anwendung.
-

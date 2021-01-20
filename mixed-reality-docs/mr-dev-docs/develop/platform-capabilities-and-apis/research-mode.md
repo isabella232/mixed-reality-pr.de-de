@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Research Mode, CV, RS4, Maschinelles sehen, Forschung, hololens, hololens 2
-ms.openlocfilehash: 6c40ac814a5dacfdbb942aec8200f46157bea161
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530092"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583133"
 ---
 # <a name="hololens-research-mode"></a>HoloLens-Forschungsmodus
 
@@ -44,7 +44,7 @@ Außerdem bietet Microsoft keine Garantie dafür, dass der Forschungs Modus oder
 
 ## <a name="security-and-performance"></a>Sicherheit und Leistung
 
-Wenn Sie den Research-Modus aktivieren, wird mehr Akkuleistung beansprucht als bei der Verwendung der hololens 2 unter normalen Bedingungen, selbst wenn die Anwendung, die die Forschungs Modus-Features verwendet, nicht  Wenn Sie diesen Modus aktivieren, kann die Gesamtsicherheit Ihres Geräts auch gesenkt werden, da Anwendungen möglicherweise Sensordaten missbrauchen.  Weitere Informationen zur Gerätesicherheit finden Sie in den häufig gestellten Fragen zur [hololens-Sicherheit](https://docs.microsoft.com/hololens/hololens-faq-security).  
+Wenn Sie den Research-Modus aktivieren, wird mehr Akkuleistung beansprucht als bei der Verwendung der hololens 2 unter normalen Bedingungen, selbst wenn die Anwendung, die die Forschungs Modus-Features verwendet, nicht  Wenn Sie diesen Modus aktivieren, kann die Gesamtsicherheit Ihres Geräts auch gesenkt werden, da Anwendungen möglicherweise Sensordaten missbrauchen.  Weitere Informationen zur Gerätesicherheit finden Sie in den häufig gestellten Fragen zur [hololens-Sicherheit](/hololens/hololens-faq-security).  
 
 ## <a name="device-support"></a>Geräteunterstützung
 <table>
@@ -54,8 +54,8 @@ Wenn Sie den Research-Modus aktivieren, wird mehr Akkuleistung beansprucht als b
     <col width="33%" /> </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
     </tr>
      <tr>
         <td>Kopf Verfolgungs Kameras</td>
@@ -92,7 +92,7 @@ Der Forschungs Modus ist eine Erweiterung des Entwicklermodus. Bevor Sie beginne
 * Wählen Sie **für Entwickler aus** , und aktivieren Sie **Entwicklermodus**.
 * Scrollen Sie nach unten, und aktivieren Sie **Geräteportal**.
 
-Nachdem die Entwickler Features aktiviert wurden, stellen Sie eine [Verbindung mit dem Geräte Portal](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-hololens) her, um die Funktionen des Research-Modus zu aktivieren:
+Nachdem die Entwickler Features aktiviert wurden, stellen Sie eine [Verbindung mit dem Geräte Portal](/windows/uwp/debug-test-perf/device-portal-hololens) her, um die Funktionen des Research-Modus zu aktivieren:
 
 * Wechseln Sie im **Geräte Portal** zum **System > Research-Modus** .
 * Wählen Sie **Zugriff auf Sensordaten Strom zulassen** aus.
@@ -104,16 +104,16 @@ Nachdem Sie das Gerät neu gestartet haben, können die Anwendungen, die über d
 *Fenster "Forschungs Modus" im hololens-Geräte Portal*
 
 > [!IMPORTANT]
-> Der Forschungs Modus für hololens 2 ist ab Build 19041,1356 verfügbar. Wenn Sie in einem früheren Build Zugriff benötigen, registrieren Sie sich für unser [Insider-Vorschau](https://docs.microsoft.com/hololens/hololens-insider) Programm.
+> Der Forschungs Modus für hololens 2 ist ab Build 19041,1356 verfügbar. Wenn Sie in einem früheren Build Zugriff benötigen, registrieren Sie sich für unser [Insider-Vorschau](/hololens/hololens-insider) Programm.
 
 ### <a name="using-sensor-data-in-your-apps"></a>Verwenden von Sensordaten in ihren apps
 
-Anwendungen können auf die Sensordaten Strom Daten auf die gleiche Weise zugreifen, [Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197) auf Foto-und Videokamera Datenströme zugreift. 
+Anwendungen können auf die Sensordaten Strom Daten auf die gleiche Weise zugreifen, [Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk) auf Foto-und Videokamera Datenströme zugreift. 
 
 Alle APIs, die für die hololens-Entwicklung funktionieren, sind auch im Research-Modus verfügbar. Insbesondere weiß die Anwendung genau, wo sich hololens bei jeder Sensor Frame-Erfassungs Zeit in einem 6DOF-Raum befindet.
 
-Wir haben Beispielanwendungen, die den Datenstrom Zugriff im Recherche Modus mit den systeminternen [und extrinsics](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)und Aufzeichnungsdaten strömen veranschaulichen:
-* [Hololens (erste Generation)](https://github.com/Microsoft/HoloLensForCV)
+Wir haben Beispielanwendungen, die den Datenstrom Zugriff im Recherche Modus mit den systeminternen [und extrinsics](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)und Aufzeichnungsdaten strömen veranschaulichen:
+* [HoloLens (1. Generation)](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens 2](https://github.com/microsoft/HoloLens2ForCV)
 
 ## <a name="support"></a>Support
@@ -124,7 +124,7 @@ Verwenden Sie für hololens 2 das [Issue Tracker](https://github.com/microsoft/H
 
 ## <a name="see-also"></a>Weitere Informationen
 
-* [Microsoft Media Foundation](https://msdn.microsoft.com/library/windows/desktop/ms694197)
+* [Microsoft Media Foundation](/windows/win32/medfound/microsoft-media-foundation-sdk)
 * [Hololensforcv GitHub-Repository](https://github.com/Microsoft/HoloLensForCV)
 * [HoloLens2ForCV GitHub-Repository](https://github.com/microsoft/HoloLens2ForCV)
 * [Verwenden des Windows-Geräteportals](using-the-windows-device-portal.md)

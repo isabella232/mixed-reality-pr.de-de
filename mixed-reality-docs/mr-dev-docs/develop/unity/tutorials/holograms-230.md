@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumliche Zuordnung, Oberflächenrekonstruktion, Mesh, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677189"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582929"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>MR räumlich 230: Räumliche Abbildung
 
 >[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](../../../mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
 
 [Räumliche Zuordnung](../../../design/spatial-mapping.md) kombiniert die reale und die virtuelle Welt zusammen, indem Hologramme über die Umgebung vermittelt werden. Im räumlichen 230 (Project Planetarium) erfahren Sie Folgendes:
 
@@ -32,7 +32,7 @@ ms.locfileid: "94677189"
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR räumlich 230: Räumliche Abbildung</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -58,7 +58,7 @@ ms.locfileid: "94677189"
 >[!NOTE]
 >Wenn Sie den Quellcode vor dem herunterladen durchsuchen möchten, ist er [auf GitHub verfügbar](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping).
 
-### <a name="notes"></a>Hinweise
+### <a name="notes"></a>Notizen
 
 * "Enable nur eigenen Code" muss in Visual Studio unter Extras > Optionen > Debuggen *deaktiviert (deaktiviert*) werden, um Breakpoints im Code zu erreichen.
 
@@ -134,7 +134,7 @@ ms.locfileid: "94677189"
 * Verwenden Sie in Visual Studio die obere Symbolleiste, um die Konfiguration in **Release** zu ändern.
 * Ändern Sie die Plattform in **x86**.
 * Klicken Sie auf den Dropdown Pfeil rechts neben "lokaler Computer", und wählen Sie **Remote Computer** aus.
-* Geben Sie die [IP-Adresse Ihres Geräts](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in das Adressfeld ein, und ändern Sie den Authentifizierungsmodus in **Universal (unverschlüsseltes Protokoll)**.
+* Geben Sie die [IP-Adresse Ihres Geräts](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in das Adressfeld ein, und ändern Sie den Authentifizierungsmodus in **Universal (unverschlüsseltes Protokoll)**.
 * Klicken Sie auf **Debuggen > starten ohne Debugging** , oder drücken Sie **STRG + F5**.
 * Sehen Sie sich den **Ausgabe** Bereich in Visual Studio zum Erstellen und Bereitstellen des Status an.
 * Nachdem Ihre APP bereitgestellt wurde, durchlaufen Sie den Raum. Sie sehen die umgebenden Oberflächen, die durch schwarze und weiße Draht Modell-Meshes abgedeckt werden.
@@ -202,7 +202,7 @@ Schließlich speichere ich unser Raum Netz und lade es in Unity.
     2. Überprüft den normalen Scheitelpunkt, um zu bestimmen, ob ein Pixel vertikal ist.
     3. Legt die Farbe des Pixels zum Rendern fest.
 
-**Erstellen und bereitstellen**
+**Erstellen und Bereitstellen**
 
 * Kehren Sie zu Unity zurück, und drücken Sie die **Wiedergabe** Taste, um den Vorschau
 * Blaue Linien werden auf allen vertikalen Oberflächen des Raum Netzes gerendert (das automatisch aus den gespeicherten Scandaten geladen wird).
@@ -443,7 +443,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 }
 ```
 
-**Erstellen und bereitstellen**
+**Erstellen und Bereitstellen**
 
 * Drücken Sie vor der Bereitstellung in den hololens in Unity die **Wiedergabe** Schaltfläche, um den Wiedergabemodus einzugeben.
 * Nachdem das Raum Netz aus der Datei geladen wurde, warten Sie 10 Sekunden, bevor die Verarbeitung im Netz für räumliche Zuordnung gestartet wird.
@@ -1065,7 +1065,7 @@ public class Placeable : MonoBehaviour
 }
 ```
 
-**Erstellen und bereitstellen**
+**Erstellen und Bereitstellen**
 
 * Erstellen Sie wie zuvor das Projekt, und stellen Sie es auf den hololens bereit.
 * Warten Sie, bis die Überprüfung und Verarbeitung der räumlichen Mapping-Daten durchgeführt wurden.
@@ -1197,7 +1197,7 @@ public class PlanetOcclusion : MonoBehaviour
 }
 ```
 
-**Erstellen und bereitstellen**
+**Erstellen und Bereitstellen**
 
 * Erstellen Sie die Anwendung wie üblich, und stellen Sie Sie in hololens bereit.
 * Warten Sie, bis die Überprüfung und Verarbeitung der räumlichen Mapping-Daten fertig sind. (es sollten blaue Linien auf den Wänden angezeigt werden.)
@@ -1208,7 +1208,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## <a name="the-end"></a>Das Ende
 
-Glückwunsch! Sie haben jetzt die räumliche **230: räumliche Zuordnung** abgeschlossen.
+Herzlichen Glückwunsch! Sie haben jetzt die räumliche **230: räumliche Zuordnung** abgeschlossen.
 
 * Sie wissen, wie Sie Ihre Umgebung scannen und räumliche Mapping-Daten in Unity laden.
 * Sie verstehen die Grundlagen von Shadern und die Art und Weise, wie Materialien zum erneuten visualisieren der Welt eingesetzt werden können.

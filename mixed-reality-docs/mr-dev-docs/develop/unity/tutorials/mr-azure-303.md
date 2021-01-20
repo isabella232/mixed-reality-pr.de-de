@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Language Understanding Intelligence Service, Luis, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 431858d369bc7007cc5eddbf0e75d9b74b7ba5d3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679499"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583432"
 ---
 # <a name="mr-and-azure-303-natural-language-understanding-luis"></a>Mr und Azure 303: verstehen in natürlicher Sprache (Luis)
 
@@ -44,7 +44,7 @@ Seien Sie darauf vorbereitet, Luis mehrmals zu trainieren. Dies wird in [Kapitel
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>Mr und Azure 303: verstehen in natürlicher Sprache (Luis)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Eine Reihe von Kopfhörern mit einem integrierten Mikrofon (wenn das Headset nicht über eine integrierte Mic-und-Sprech Anwendung verfügt)
 - Internet Zugriff für Azure-Setup und Luis-Abruf
 
@@ -105,7 +105,7 @@ Wenn Sie den *Language Understanding* -Dienst in Azure verwenden möchten, müss
     3. Wählen Sie den für **Sie geeigneten Tarif** aus. Wenn Sie zum ersten Mal einen *Luis-Dienst* erstellen, sollte Ihnen ein Free-Tarif (mit dem Namen "F0") zur Verfügung stehen. Die kostenlose Zuweisung sollte für diesen Kurs mehr als ausreichend sein.
     4. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     5. Bestimmen Sie den **Speicherort** für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
     6. Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
@@ -1047,8 +1047,8 @@ So erstellen Sie Folgendes:
 Zum Bereitstellen auf dem lokalen Computer:
 
 1.  Öffnen Sie in *Visual Studio* die Projektmappendatei, die im [vorherigen Kapitel](#chapter-10--test-in-the-unity-editor)erstellt wurde.
-2.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **lokaler Computer** aus. **Solution Platform**
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+2.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **lokaler Computer** aus. 
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
     > Für Microsoft hololens ist es möglicherweise einfacher, dies auf den *Remote* Computer festzulegen, damit Sie nicht auf Ihren Computer über das Team verfügen. Allerdings müssen Sie auch die folgenden Schritte ausführen:
     > - Informieren Sie sich über die **IP-Adresse** ihrer hololens, die Sie in den *Einstellungen > Netzwerk & Internet > Wi-Fi > erweiterten Optionen* finden. die IPv4-Adresse ist die Adresse, die Sie verwenden sollten. 
@@ -1117,4 +1117,4 @@ Wenn Sie diese Anwendung verwenden, werden Sie möglicherweise bemerken, dass Si
 
 ### <a name="exercise-2"></a>Übung 2
 
-Erweitern Sie die Luis-und App-Funktionen, und fügen Sie zusätzliche Funktionen für Objekte in der Szene hinzu. Erstellen Sie z. b. neue Objekte auf dem Blickpunkt, je nachdem, was der Benutzer sagt, und können Sie diese Objekte mit den vorhandenen Befehlen neben den aktuellen Szenen Objekten verwenden. 
+Erweitern Sie die Luis-und App-Funktionen, und fügen Sie zusätzliche Funktionen für Objekte in der Szene hinzu. Erstellen Sie z. b. neue Objekte auf dem Blickpunkt, je nachdem, was der Benutzer sagt, und können Sie diese Objekte mit den vorhandenen Befehlen neben den aktuellen Szenen Objekten verwenden.

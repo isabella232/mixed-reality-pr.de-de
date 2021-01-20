@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: UWP, App-Modell, Lebenszyklus, aussetzen, fortsetzen, Kachel, Sichten, Verträge, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 00d9d5329e4c93030692d727c645de1eefbdb72d
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 941c0f3f81596e8465157121462b4150cefd8ac2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848107"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583214"
 ---
 # <a name="app-model"></a>App-Modell
 
-Windows Mixed Reality verwendet das vom [universelle Windows-Plattform](https://docs.microsoft.com/windows/uwp/get-started/) (UWP) bereitgestellte App-Modell, das ein Modell und eine Umgebung für moderne Windows-Apps ist. Das UWP-App-Modell definiert, wie apps sicher installiert, aktualisiert, versioniert und vollständig entfernt werden. Außerdem wird der Lebenszyklus der Anwendung gesteuert, wie apps ausgeführt, in den Standbymodus versetzt und angehalten werden, und wie Sie den Zustand beibehalten können. Schließlich deckt das App-Modell die Integration und Interaktion mit dem Betriebssystem, Dateien und anderen apps ab.
+Windows Mixed Reality verwendet das vom [universelle Windows-Plattform](/windows/uwp/get-started/) (UWP) bereitgestellte App-Modell, das ein Modell und eine Umgebung für moderne Windows-Apps ist. Das UWP-App-Modell definiert, wie apps sicher installiert, aktualisiert, versioniert und vollständig entfernt werden. Außerdem wird der Lebenszyklus der Anwendung gesteuert, wie apps ausgeführt, in den Standbymodus versetzt und angehalten werden, und wie Sie den Zustand beibehalten können. Schließlich deckt das App-Modell die Integration und Interaktion mit dem Betriebssystem, Dateien und anderen apps ab.
 
 ![2D-apps, die in der Windows Mixed Reality-Startseite in einem Frühstücksbereich angeordnet sind](images/20160112-055908-hololens-500px.jpg)<br>
 *Apps mit einer 2D-Ansicht, die in der Windows Mixed Reality-Startseite angeordnet ist*
@@ -26,12 +26,12 @@ Der Lebenszyklus einer Mixed Reality-App umfasst standardmäßige App-Konzepte w
 
 ### <a name="placement-is-launch"></a>Platzierung ist Start
 
-Jede APP startet in gemischter Realität, indem eine APP-Kachel (nur eine [sekundäre Windows-Kachel](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)platziert wird. Diese APP-Kacheln werden bei der Platzierung mit dem Ausführen der APP gestartet. Diese APP-Kacheln bleiben erhalten und bleiben an der Position, an der Sie sich befinden, und fungieren wie Launcher, wenn Sie zur APP zurückkehren möchten.
+Jede APP startet in gemischter Realität, indem eine APP-Kachel (nur eine [sekundäre Windows-Kachel](/uwp/api/Windows.UI.StartScreen.SecondaryTile)) in der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)platziert wird. Diese APP-Kacheln werden bei der Platzierung mit dem Ausführen der APP gestartet. Diese APP-Kacheln bleiben erhalten und bleiben an der Position, an der Sie sich befinden, und fungieren wie Launcher, wenn Sie zur APP zurückkehren möchten.
 
 ![Platzierung stellt eine sekundäre Kachel weltweit](images/slide1-600px.png)<br>
 *Platzierung stellt eine sekundäre Kachel weltweit*
 
-Sobald die Platzierung abgeschlossen ist (es sei denn, die Platzierung wurde von einer [App zum](app-model.md#protocols) Starten der APP gestartet), wird die APP gestartet. Windows Mixed Reality kann eine begrenzte Anzahl von apps gleichzeitig ausführen. Sobald Sie eine APP platzieren und starten, können andere aktive apps angehalten werden. Angehaltene apps hinterlassen einen Screenshot des letzten Zustands der APP auf der APP-Kachel, wo Sie sie platziert haben. Weitere Informationen zur Behandlung von Fortsetzung und anderen Lebenszyklus Ereignissen finden Sie unter [Windows 10 UWP-App-Lebenszyklus](https://docs.microsoft.com/windows/uwp/launch-resume/app-lifecycle).
+Sobald die Platzierung abgeschlossen ist (es sei denn, die Platzierung wurde von einer [App zum](app-model.md#protocols) Starten der APP gestartet), wird die APP gestartet. Windows Mixed Reality kann eine begrenzte Anzahl von apps gleichzeitig ausführen. Sobald Sie eine APP platzieren und starten, können andere aktive apps angehalten werden. Angehaltene apps hinterlassen einen Screenshot des letzten Zustands der APP auf der APP-Kachel, wo Sie sie platziert haben. Weitere Informationen zur Behandlung von Fortsetzung und anderen Lebenszyklus Ereignissen finden Sie unter [Windows 10 UWP-App-Lebenszyklus](/windows/uwp/launch-resume/app-lifecycle).
 
 ![Nach dem Platzieren einer Kachel wird die Ausführung des ](images/slide2-500px.png) ![ Status Diagramms für die APP gestartet, angehalten oder wird nicht ausgeführt.](images/ic576232-500px.png)<br>
 *Left: nach dem Platzieren einer Kachel wird die Ausführung der APP gestartet. Right: Status Diagramm für die Ausführung, angehaltene oder nicht laufende app.*
@@ -42,18 +42,18 @@ Wenn Sie eine platzierte App-Kachel aus der Welt entfernen, werden die zugrunde 
 
 ### <a name="app-suspensiontermination"></a>App-Aussetzung/Beendigung
 
-In der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)kann der Benutzer mehrere Einstiegspunkte für eine APP erstellen, indem er die APP über das Startmenü startet und die APP-Kachel auf der Welt platziert. Jede APP-Kachel verhält sich als ein anderer Einstiegspunkt und verfügt über eine separate Kachel Instanz im System. Eine Abfrage für [secondarytile. findallasync](https://docs.microsoft.com/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) führt zu einer **secondarytile** für jede app-Instanz.
+In der [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md)kann der Benutzer mehrere Einstiegspunkte für eine APP erstellen, indem er die APP über das Startmenü startet und die APP-Kachel auf der Welt platziert. Jede APP-Kachel verhält sich als ein anderer Einstiegspunkt und verfügt über eine separate Kachel Instanz im System. Eine Abfrage für [secondarytile. findallasync](/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync) führt zu einer **secondarytile** für jede app-Instanz.
 
 Wenn eine UWP-App angehalten wird, wird ein Screenshot mit dem aktuellen Status erstellt.
 
 ![Screenshots werden für angehaltene apps angezeigt.](images/slide9-800px.png)<br>
 *Screenshots werden für angehaltene apps angezeigt.*
 
-Ein wichtiger Unterschied von anderen Windows 10-Shells ist, wie die APP über das [coreapplication. resuming](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_Resuming) -Ereignis und das [corewindow. aktivierte](https://docs.microsoft.com/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Activated) -Ereignis über die Aktivierung einer app-Instanz informiert wird.
+Ein wichtiger Unterschied von anderen Windows 10-Shells ist, wie die APP über das [coreapplication. resuming](/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_Resuming) -Ereignis und das [corewindow. aktivierte](/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Activated) -Ereignis über die Aktivierung einer app-Instanz informiert wird.
 
 |  Szenario |  Wird fortgesetzt  |  Aktiviert | 
 |----------|----------|----------|
-|  Starten einer neuen Instanz der APP über das Startmenü  |   |  **Aktiviert** mit einer neuen [tileid](https://docs.microsoft.com/uwp/api/windows.ui.startscreen.secondarytile#Windows_UI_StartScreen_SecondaryTile_TileId) | 
+|  Starten einer neuen Instanz der APP über das Startmenü  |   |  **Aktiviert** mit einer neuen [tileid](/uwp/api/windows.ui.startscreen.secondarytile#Windows_UI_StartScreen_SecondaryTile_TileId) | 
 |  Starten Sie eine zweite Instanz der APP über das Startmenü.  |   |  **Aktiviert** mit einer neuen **tileid** | 
 |  Wählen Sie die Instanz der APP aus, die zurzeit nicht aktiv ist.  |   |  **Aktiviert** mit der **tileid** , die der Instanz zugeordnet ist. | 
 |  Wählen Sie eine andere App aus, und wählen Sie die zuvor aktive Instanz aus.  |  Fort **setzen ausgelöst**  |  | 
@@ -61,14 +61,14 @@ Ein wichtiger Unterschied von anderen Windows 10-Shells ist, wie die APP über d
 
 ### <a name="extended-execution"></a>Erweiterte Ausführung
 
-Manchmal muss Ihre APP weiterhin im Hintergrund arbeiten oder Audioinhalte abspielen. [Hintergrundaufgaben](https://docs.microsoft.com/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) sind auf hololens verfügbar.
+Manchmal muss Ihre APP weiterhin im Hintergrund arbeiten oder Audioinhalte abspielen. [Hintergrundaufgaben](/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) sind auf hololens verfügbar.
 
 ![Apps können im Hintergrund ausgeführt werden.](images/slide10-800px.png)<br>
 *Apps können im Hintergrund ausgeführt werden.*
 
 ## <a name="app-views"></a>App-Ansichten
 
-Wenn Ihre App aktiviert ist, können Sie auswählen, welche Art von Ansicht angezeigt werden soll. Für die **coreapplication** einer APP gibt es immer eine primäre [App-Ansicht](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView) und eine beliebige Anzahl weiterer App-Ansichten, die Sie erstellen möchten. Auf dem Desktop können Sie sich eine App-Ansicht als Fenster vorstellen. Unsere Mixed Reality-App-Vorlagen erstellen ein Unity-Projekt, in dem die primäre App-Ansicht [immersiv](app-views.md)ist. 
+Wenn Ihre App aktiviert ist, können Sie auswählen, welche Art von Ansicht angezeigt werden soll. Für die **coreapplication** einer APP gibt es immer eine primäre [App-Ansicht](/uwp/api/Windows.UI.ViewManagement.ApplicationView) und eine beliebige Anzahl weiterer App-Ansichten, die Sie erstellen möchten. Auf dem Desktop können Sie sich eine App-Ansicht als Fenster vorstellen. Unsere Mixed Reality-App-Vorlagen erstellen ein Unity-Projekt, in dem die primäre App-Ansicht [immersiv](app-views.md)ist. 
 
 Ihre APP kann eine zusätzliche 2D-App-Ansicht mithilfe von Technologie wie XAML erstellen, um Windows 10-Funktionen wie z.b. in-App-Käufe zu verwenden. Wenn Ihre APP als UWP-App für andere Windows 10-Geräte gestartet wurde, ist Ihre primäre Ansicht 2D. Sie können sich jedoch in gemischter Realität "anblenden", indem Sie eine weitere App-Ansicht hinzufügen, die sich in der Praxis auf eine Art zeigt. Stellen Sie sich vor, Sie möchten eine Foto-Viewer-app in XAML entwickeln, in der die Schaltfläche "Bild-Viewer" in eine immersive App-Ansicht gewechselt wird, die Fotos von der APP
 
@@ -77,7 +77,7 @@ Ihre APP kann eine zusätzliche 2D-App-Ansicht mithilfe von Technologie wie XAML
 
 ### <a name="creating-an-immersive-view"></a>Erstellen einer immersiven Ansicht
 
-Mixed Reality-Apps erstellen eine immersive Ansicht, die mit dem [holographicspace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace) -Typ erreicht wird.
+Mixed Reality-Apps erstellen eine immersive Ansicht, die mit dem [holographicspace](/uwp/api/windows.graphics.holographic.holographicspace) -Typ erreicht wird.
 
 Eine APP, die rein immersiv ist, sollte beim Start immer eine immersive Ansicht erstellen, auch wenn Sie vom Desktop gestartet wird. Immersive Sichten werden immer im Headset angezeigt, unabhängig davon, wo Sie von erstellt wurden. Wenn Sie eine immersive Ansicht aktivieren, wird das Mixed Reality-Portal angezeigt, und der Benutzer wird aufgefordert, das Headset zu platzieren.
 
@@ -97,7 +97,7 @@ Eine APP kann über 2D-Ansichten sowohl auf dem Desktop Monitor als auch im Head
 
 ### <a name="placement-of-additional-app-tiles"></a>Platzierung zusätzlicher App-Kacheln
 
-Mit den [sekundären Kachel-APIs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles)können Sie beliebig viele apps mit einer 2D-Ansicht in ihrer Welt platzieren. Diese "fixierten" Kacheln werden als Begrüßungs Bildschirme angezeigt, die Benutzer platzieren müssen, und können Sie später verwenden, um Ihre APP zu starten. Windows Mixed Reality unterstützt derzeit nicht das Rendern von 2D-Kachel Inhalten als Live-Kacheln.
+Mit den [sekundären Kachel-APIs](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles)können Sie beliebig viele apps mit einer 2D-Ansicht in ihrer Welt platzieren. Diese "fixierten" Kacheln werden als Begrüßungs Bildschirme angezeigt, die Benutzer platzieren müssen, und können Sie später verwenden, um Ihre APP zu starten. Windows Mixed Reality unterstützt derzeit nicht das Rendern von 2D-Kachel Inhalten als Live-Kacheln.
 
 ![Apps können über mehrere Platzierungs Plätze mit sekundären Kacheln verfügen](images/slide6-800px.png)<br>
 *Apps können über mehrere Platzierungs Plätze mit sekundären Kacheln verfügen*
@@ -106,13 +106,13 @@ Mit den [sekundären Kachel-APIs](https://docs.microsoft.com/windows/uwp/design/
 
 #### <a name="switching-from-the-2d-xaml-view-to-the-immersive-view"></a>Wechseln von der 2D-XAML-Ansicht zur immersiven Ansicht
 
-Wenn die APP XAML verwendet, steuert die XAML- [iframeworkviewsource](https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkviewsource) die erste Ansicht der app. Die APP muss vor dem Aktivieren von **corewindow** zur immersiven Ansicht gewechselt werden, um sicherzustellen, dass die APP direkt im immersiven Verfahren gestartet wird.
+Wenn die APP XAML verwendet, steuert die XAML- [iframeworkviewsource](/uwp/api/windows.applicationmodel.core.iframeworkviewsource) die erste Ansicht der app. Die APP muss vor dem Aktivieren von **corewindow** zur immersiven Ansicht gewechselt werden, um sicherzustellen, dass die APP direkt im immersiven Verfahren gestartet wird.
 
-Verwenden Sie [coreapplication. kreatenewview](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_CreateNewView_Windows_ApplicationModel_Core_IFrameworkViewSource_) und [applicationviewswitcher. switchasync](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationViewSwitcher#Windows_UI_ViewManagement_ApplicationViewSwitcher_SwitchAsync_System_Int32_) , um die aktive Ansicht zu erstellen.
+Verwenden Sie [coreapplication. kreatenewview](/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_CreateNewView_Windows_ApplicationModel_Core_IFrameworkViewSource_) und [applicationviewswitcher. switchasync](/uwp/api/Windows.UI.ViewManagement.ApplicationViewSwitcher#Windows_UI_ViewManagement_ApplicationViewSwitcher_SwitchAsync_System_Int32_) , um die aktive Ansicht zu erstellen.
 
 > [!NOTE]
->* Geben Sie das [applicationviewswitchingoptions. konsolidateviews](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationviewswitchingoptions) -Flag nicht an **switchasync** an, wenn Sie von der XAML-Ansicht zur immersiven Ansicht wechseln, oder wenn der Slate, der die APP gestartet hat, von der Welt entfernt wird.
->* **Switchasync** sollte mithilfe des [Dispatchers](https://docs.microsoft.com/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Dispatcher) aufgerufen werden, der der Ansicht zugeordnet ist, in die Sie wechseln.
+>* Geben Sie das [applicationviewswitchingoptions. konsolidateviews](/uwp/api/windows.ui.viewmanagement.applicationviewswitchingoptions) -Flag nicht an **switchasync** an, wenn Sie von der XAML-Ansicht zur immersiven Ansicht wechseln, oder wenn der Slate, der die APP gestartet hat, von der Welt entfernt wird.
+>* **Switchasync** sollte mithilfe des [Dispatchers](/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Dispatcher) aufgerufen werden, der der Ansicht zugeordnet ist, in die Sie wechseln.
 >* Wenn Sie eine virtuelle Tastatur starten oder eine andere APP aktivieren möchten, müssen Sie in der XAML-Ansicht zurück **switchasync** ausführen.
 
 ![Apps können zwischen 2D-Ansichten und immersiven Ansichten wechseln ](images/slide7-600px.png) ![ , wenn eine app in eine immersive Ansicht wechselt, die gemischte Welt und andere apps verschwinden.](images/slide8-600px.png)<br>
@@ -149,19 +149,19 @@ Bei Desktop-Headsets kann die APP, die einer bestimmten Dateierweiterung oder ei
 
 ### <a name="protocols"></a>Protokolle
 
-Hololens unterstützt das Starten der APP-App über das [Windows.System. ](https://docs.microsoft.com/uwp/api/Windows.System.Launcher)Start Programm-APIs.
+Hololens unterstützt das Starten der APP-App über das [Windows.System. ](/uwp/api/Windows.System.Launcher)Start Programm-APIs.
 
 Beim Starten einer anderen Anwendung müssen einige Punkte berücksichtigt werden:
 
-* Beim Ausführen eines nicht modalen Starts, z. b. [launchuriasync](https://docs.microsoft.com/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriAsync_Windows_Foundation_Uri_), muss der Benutzer die APP platzieren, bevor er mit der Anwendung interagiert.
+* Beim Ausführen eines nicht modalen Starts, z. b. [launchuriasync](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriAsync_Windows_Foundation_Uri_), muss der Benutzer die APP platzieren, bevor er mit der Anwendung interagiert.
 
-* Wenn Sie einen modalen Start durchführen, z. b. über [launchuriforresultasync](https://docs.microsoft.com/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_), wird die modale App oberhalb des Fensters platziert.
+* Wenn Sie einen modalen Start durchführen, z. b. über [launchuriforresultasync](/uwp/api/Windows.System.Launcher#Windows_System_Launcher_LaunchUriForResultsAsync_Windows_Foundation_Uri_Windows_System_LauncherOptions_Windows_Foundation_Collections_ValueSet_), wird die modale App oberhalb des Fensters platziert.
 
 * Windows Mixed Reality kann Anwendungen nicht auf exklusive Ansichten überlagern. Um die gestartete App anzuzeigen, führt Windows den Benutzer zur Anzeige der Anwendung zurück.
 
 ### <a name="file-pickers"></a>Datei-Picker
 
-Hololens unterstützt sowohl [fileopenpicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileOpenPicker) -als auch [filesavepicker](https://docs.microsoft.com/uwp/api/Windows.Storage.Pickers.FileSavePicker) -Verträge. Allerdings ist keine app vorinstalliert, mit der die Dateiauswahl Verträge erfüllt werden. Diese apps (z. b. onedrive) können vom Microsoft Store installiert werden.
+Hololens unterstützt sowohl [fileopenpicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) -als auch [filesavepicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker) -Verträge. Allerdings ist keine app vorinstalliert, mit der die Dateiauswahl Verträge erfüllt werden. Diese apps (z. b. onedrive) können vom Microsoft Store installiert werden.
 
 Wenn Sie mehr als eine Dateiauswahl-App installiert haben, wird Ihnen keine Benutzeroberfläche für die Mehrdeutigkeit angezeigt, mit der Sie auswählen können, welche App gestartet werden soll. Stattdessen wird die erste installierte Dateiauswahl ausgewählt. Beim Speichern einer Datei wird der Dateiname generiert, der den Zeitstempel enthält. Dieses kann vom Benutzer nicht geändert werden.
 
@@ -178,79 +178,79 @@ App-Verträge und Erweiterungs Punkte ermöglichen es Ihnen, Ihre APP zu registr
 
 |  Vertrag oder Erweiterung  |  Unterstützt? | 
 |----------|----------|
-| [Konto Bild Anbieter (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#account_picture_provider) | Nicht unterstützt | 
-| [Alarm](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#alarm) | Nicht unterstützt | 
-| [App Service](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#app_service) | Unterstützt, aber nicht voll funktionsfähig | 
-| [Termin Anbieter](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#appointmnets_provider) | Nicht unterstützt | 
-| [AutoPlay (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#autoplay) | Nicht unterstützt | 
-| [Hintergrundaufgaben (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#background_tasts) | Teilweise unterstützt (nicht alle Trigger funktionieren) | 
-| [Task aktualisieren (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#update_task) | Unterstützt | 
-| [Updater-Vertrag für zwischengespeicherte Dateien](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#cached_file_updater) | Unterstützt | 
-| [Kameraeinstellungen (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#camera_settings) | Nicht unterstützt | 
-| [Dial-Protokoll](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#dial_protocol) | Nicht unterstützt | 
-| [Datei Aktivierung (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_activation) | Unterstützt | 
-| [Datei Öffnungs Auswahl-Vertrag](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_open_picker_contract) | Unterstützt | 
-| [Dateispeicher Auswahl-Vertrag](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#file_save_picker_contract) | Unterstützt | 
-| [Sperrbildschirm](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#lock_screen_call) | Nicht unterstützt | 
-| [Medienwiedergabe](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#media_playback) | Nicht unterstützt | 
-| [Wiedergabe für Vertrag](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#playto_contract) | Nicht unterstützt | 
-| [Vorinstallierter Konfigurations Task](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#preinstalled_config_task) | Nicht unterstützt | 
-| [3D-Workflow drucken](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_3d_workflow) | Unterstützt | 
-| [Druckaufgaben Einstellungen (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#print_task_settings) | Nicht unterstützt | 
-| [URI-Aktivierung (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#protocol_activation) | Unterstützt | 
-| [Eingeschränkter Start](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#restricted_launch) | Nicht unterstützt | 
-| [Such Vertrag](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#search_contract) | Nicht unterstützt | 
-| [Einstellungs Vertrag](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#settings_contract) | Nicht unterstützt | 
-| [Freigabe Vertrag](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#share_contract) | Nicht unterstützt | 
-| [SSL/Zertifikate (Erweiterung)](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#ssl_certificates) | Unterstützt | 
-| [Webkonto Anbieter](https://msdn.microsoft.com/library/windows/desktop/hh464906.aspx#web_account_provider) | Unterstützt | 
+| [Konto Bild Anbieter (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#account_picture_provider) | Nicht unterstützt | 
+| [Alarm](/previous-versions/windows/apps/hh464906(v=win.10)#alarm) | Nicht unterstützt | 
+| [App Service](/previous-versions/windows/apps/hh464906(v=win.10)#app_service) | Unterstützt, aber nicht voll funktionsfähig | 
+| [Termin Anbieter](/previous-versions/windows/apps/hh464906(v=win.10)#appointmnets_provider) | Nicht unterstützt | 
+| [AutoPlay (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#autoplay) | Nicht unterstützt | 
+| [Hintergrundaufgaben (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#background_tasts) | Teilweise unterstützt (nicht alle Trigger funktionieren) | 
+| [Task aktualisieren (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#update_task) | Unterstützt | 
+| [Updater-Vertrag für zwischengespeicherte Dateien](/previous-versions/windows/apps/hh464906(v=win.10)#cached_file_updater) | Unterstützt | 
+| [Kameraeinstellungen (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#camera_settings) | Nicht unterstützt | 
+| [Dial-Protokoll](/previous-versions/windows/apps/hh464906(v=win.10)#dial_protocol) | Nicht unterstützt | 
+| [Datei Aktivierung (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#file_activation) | Unterstützt | 
+| [Datei Öffnungs Auswahl-Vertrag](/previous-versions/windows/apps/hh464906(v=win.10)#file_open_picker_contract) | Unterstützt | 
+| [Dateispeicher Auswahl-Vertrag](/previous-versions/windows/apps/hh464906(v=win.10)#file_save_picker_contract) | Unterstützt | 
+| [Sperrbildschirm](/previous-versions/windows/apps/hh464906(v=win.10)#lock_screen_call) | Nicht unterstützt | 
+| [Medienwiedergabe](/previous-versions/windows/apps/hh464906(v=win.10)#media_playback) | Nicht unterstützt | 
+| [Wiedergabe für Vertrag](/previous-versions/windows/apps/hh464906(v=win.10)#playto_contract) | Nicht unterstützt | 
+| [Vorinstallierter Konfigurations Task](/previous-versions/windows/apps/hh464906(v=win.10)#preinstalled_config_task) | Nicht unterstützt | 
+| [3D-Workflow drucken](/previous-versions/windows/apps/hh464906(v=win.10)#print_3d_workflow) | Unterstützt | 
+| [Druckaufgaben Einstellungen (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#print_task_settings) | Nicht unterstützt | 
+| [URI-Aktivierung (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#protocol_activation) | Unterstützt | 
+| [Eingeschränkter Start](/previous-versions/windows/apps/hh464906(v=win.10)#restricted_launch) | Nicht unterstützt | 
+| [Such Vertrag](/previous-versions/windows/apps/hh464906(v=win.10)#search_contract) | Nicht unterstützt | 
+| [Einstellungs Vertrag](/previous-versions/windows/apps/hh464906(v=win.10)#settings_contract) | Nicht unterstützt | 
+| [Freigabe Vertrag](/previous-versions/windows/apps/hh464906(v=win.10)#share_contract) | Nicht unterstützt | 
+| [SSL/Zertifikate (Erweiterung)](/previous-versions/windows/apps/hh464906(v=win.10)#ssl_certificates) | Unterstützt | 
+| [Webkonto Anbieter](/previous-versions/windows/apps/hh464906(v=win.10)#web_account_provider) | Unterstützt | 
 
 ## <a name="app-file-storage"></a>App-Dateispeicher
 
-Der gesamte Speicher erfolgt über den [Windows. Storage-Namespace](https://docs.microsoft.com/uwp/api/Windows.Storage). Hololens unterstützt keine Synchronisierung/Roaming von App Storage. Weitere Informationen finden Sie in der folgenden Dokumentation:
+Der gesamte Speicher erfolgt über den [Windows. Storage-Namespace](/uwp/api/Windows.Storage). Hololens unterstützt keine Synchronisierung/Roaming von App Storage. Weitere Informationen finden Sie in der folgenden Dokumentation:
 
-* [Dateien, Ordner und Bibliotheken](https://docs.microsoft.com/windows/uwp/files/index)
-* [Speichern und Abrufen von Einstellungen und anderen App-Daten](https://docs.microsoft.com/windows/uwp/design/app-settings/store-and-retrieve-app-data)
+* [Dateien, Ordner und Bibliotheken](/windows/uwp/files/index)
+* [Speichern und Abrufen von Einstellungen und anderen App-Daten](/windows/uwp/design/app-settings/store-and-retrieve-app-data)
 
 ### <a name="known-folders"></a>Bekannte Ordner
 
-Ausführliche Informationen zu UWP-apps finden Sie unter [KnownFolders](https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders) .
+Ausführliche Informationen zu UWP-apps finden Sie unter [KnownFolders](/uwp/api/Windows.Storage.KnownFolders) .
 
 <table>
 <tr>
 <th> Eigenschaft</th><th> Unterstützt auf hololens</th><th> Unterstützt auf immersiven Headsets</th><th> BESCHREIBUNG</th>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_AppCaptures">Apperfassungen</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Ordner App-Erfassungen ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_AppCaptures">Apperfassungen</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Ordner App-Erfassungen ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_CameraRoll">Cameraroll</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Ordner für die Kamera Registrierung ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_CameraRoll">Cameraroll</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Ordner für die Kamera Registrierung ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_DocumentsLibrary">Documentslibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Dokumentbibliothek ab. Die Bibliothek "Dokumente" ist nicht für die allgemeine Verwendung vorgesehen.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_DocumentsLibrary">Documentslibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Dokumentbibliothek ab. Die Bibliothek "Dokumente" ist nicht für die allgemeine Verwendung vorgesehen.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MusicLibrary">MusicLibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Musikbibliothek ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MusicLibrary">MusicLibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Musikbibliothek ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_Objects3D">Objects3D</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den 3D-Ordner der Objekte ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_Objects3D">Objects3D</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den 3D-Ordner der Objekte ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_PicturesLibrary">Pictureslibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Bilderbibliothek ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_PicturesLibrary">Pictureslibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Bilderbibliothek ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_Playlists">Wiedergabelisten</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Wiedergabelisten Ordner ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_Playlists">Wiedergabelisten</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Wiedergabelisten Ordner ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_SavedPictures">Savedpictures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Ordner "gespeicherte Bilder" ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_SavedPictures">Savedpictures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft den Ordner "gespeicherte Bilder" ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_VideosLibrary">Videoslibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Video Bibliothek ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_VideosLibrary">Videoslibrary</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>Ruft die Video Bibliothek ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_HomeGroup">Heimnetzgruppe</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den HomeGroup-Ordner ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_HomeGroup">Heimnetzgruppe</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den HomeGroup-Ordner ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MediaServerDevices">Mediaserverdevices</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den Ordner von Media Server (DLNA)-Geräten ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MediaServerDevices">Mediaserverdevices</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den Ordner von Media Server (DLNA)-Geräten ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_RecordedCalls">Recordedcalls</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den Ordner "aufgezeichnete Aufrufe" ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_RecordedCalls">Recordedcalls</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den Ordner "aufgezeichnete Aufrufe" ab.</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_RemovableDevices">RemovableDevices</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den Ordner für Wechsel Geräte ab.</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_RemovableDevices">RemovableDevices</a></td><td></td><td style="text-align: center;">✔️</td><td>Ruft den Ordner für Wechsel Geräte ab.</td>
 </tr>
 </table>
 
 ## <a name="app-package"></a>App-Paket
 
-Mit Windows 10 richten Sie nicht mehr ein Betriebssystem ein, sondern verwenden [Ihre APP stattdessen für eine oder mehrere Gerätefamilien](https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide#device-families). Eine Gerätefamilie identifiziert die APIs, Systemmerkmale und Verhaltensweisen, die Sie auf allen Geräten innerhalb der Gerätefamilie erwarten können. Außerdem wird die Gruppe von Geräten bestimmt, auf denen Ihre APP aus dem [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)installiert werden kann.
+Mit Windows 10 richten Sie nicht mehr ein Betriebssystem ein, sondern verwenden [Ihre APP stattdessen für eine oder mehrere Gerätefamilien](/windows/uwp/get-started/universal-application-platform-guide#device-families). Eine Gerätefamilie identifiziert die APIs, Systemmerkmale und Verhaltensweisen, die Sie auf allen Geräten innerhalb der Gerätefamilie erwarten können. Außerdem wird die Gruppe von Geräten bestimmt, auf denen Ihre APP aus dem [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)installiert werden kann.
 
 * Wenn Sie sowohl Desktop-Headsets als auch hololens als Ziel haben, richten Sie Ihre APP auf die Windows-Anwendung **Universelle** Gerätefamilie.
 * Um nur Desktop-Headsets als Ziel zu erhalten, richten Sie Ihre APP auf die **Windows. Desktop-** Gerätefamilie aus.

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Versionsverlauf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 84caf761af15645410c7439660747fa2f369c6c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0eab33a058aee8003b352fbfae3ba038b80319d4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009520"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582869"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic Remoting-Versionsverlauf
 
@@ -39,7 +39,7 @@ ms.locfileid: "98009520"
 
 ## <a name="version-222-july-10-2020"></a>Version 2.2.2 (10. Juli 2020) <a name="v2.2.2"></a>
 
-* Es wurde ein Problem mit [holographiccamera. leftviewportparameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) und [holographiccamera. rightviewportparameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) behoben, bei dem das Streaming von einem Windows Mixed Reality-Headset keine ausgeblendeten Bereiche zurückgegeben hat.
+* Es wurde ein Problem mit [holographiccamera. leftviewportparameters](/uwp/api/windows.graphics.holographic.holographiccamera.leftviewportparameters) und [holographiccamera. rightviewportparameters](/uwp/api/windows.graphics.holographic.holographiccamera.rightviewportparameters) behoben, bei dem das Streaming von einem Windows Mixed Reality-Headset keine ausgeblendeten Bereiche zurückgegeben hat.
 * Ein Absturz wurde korrigiert, der mit einer schlechten Netzwerkverbindung auftreten kann.
 
 ## <a name="version-221-july-6-2020"></a>Version 2.2.1 (6. Juli 2020) <a name="v2.2.1"></a>
@@ -51,14 +51,14 @@ ms.locfileid: "98009520"
 ## <a name="version-220-july-1-2020"></a>Version 2.2.0 (1. Juli 2020) <a name="v2.2.0"></a>
 
 * Der Holographic Remoting Player kann nun auf PCs installiert werden, auf denen [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)ausgeführt wird, sodass es möglich ist, zu immersiven Headsets zu streamen.
-* [Bewegungs Controller](../../design/motion-controllers.md) werden nun von Holographic Remoting unterstützt, und Controller spezifische Daten können über " [spatialinteraktionsource. Controller](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)" abgerufen werden.
-* [Spatialstageframeofreferenwird](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference) jetzt unterstützt, und die aktuelle Phase kann über [spatialstageframeofreferen. Current](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)abgerufen werden. Außerdem kann eine neue Stufe über [spatialstageframeofreferen. requestnewstageasync](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)angefordert werden.
+* [Bewegungs Controller](../../design/motion-controllers.md) werden nun von Holographic Remoting unterstützt, und Controller spezifische Daten können über " [spatialinteraktionsource. Controller](/uwp/api/windows.ui.input.spatial.spatialinteractionsource.controller#Windows_UI_Input_Spatial_SpatialInteractionSource_Controller)" abgerufen werden.
+* [Spatialstageframeofreferenwird](/uwp/api/windows.perception.spatial.spatialstageframeofreference) jetzt unterstützt, und die aktuelle Phase kann über [spatialstageframeofreferen. Current](/uwp/api/windows.perception.spatial.spatialstageframeofreference.current)abgerufen werden. Außerdem kann eine neue Stufe über [spatialstageframeofreferen. requestnewstageasync](/uwp/api/windows.perception.spatial.spatialstageframeofreference.requestnewstageasync)angefordert werden.
 * In früheren Versionen wurde die Pose-Vorhersage auf der Player Seite vom Holographic Remoting Player behandelt. Ab Version 2.2.0 verfügt Holographic Remoting über eine Zeitsynchronisierung, und die Vorhersage wird von der Remote Anwendung vollständig durchgeführt. Benutzer sollten außerdem eine verbesserte hologrammstabilität in schwierigen Netzwerk Situationen erwarten.
 
 ## <a name="version-213-may-25-2020"></a>Version 2.1.3 (dem 25. Mai 2020) <a name="v2.1.3"></a>
 
-* Geändertes Verhalten des [holographicspace. cameraadded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) -Ereignisses. In früheren Versionen war **nicht** sichergestellt, dass ein hinzugefügter [holographiccamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera) auch über eine gültige [holographiccamerapose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) verfügt, wenn der nächste Frame über [holographicspace. kreatenextframe](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)erstellt wird. Ab Version 2.1.3 wird [holographicspace. cameraadded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) mit dem Daten aus dem Holographic Remoting Player synchronisiert. Benutzer können davon ausgehen, dass beim Hinzufügen einer Kamera auch eine gültige [holographiccamerapose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) für die Kamera im nächsten Frame verfügbar ist.
-* "Depthbufferstreamresolution" wurde **deaktiviert** , sodass das tiefe Puffer Streaming über RemoteContext.Configuredepthvideostream deaktiviert werden kann. Beachten Sie, dass bei Verwendung von [holographiccamerarenderingparameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) mit *E_ILLEGAL_METHOD_CALL* fehlschlägt.
+* Geändertes Verhalten des [holographicspace. cameraadded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) -Ereignisses. In früheren Versionen war **nicht** sichergestellt, dass ein hinzugefügter [holographiccamera](/uwp/api/windows.graphics.holographic.holographiccamera) auch über eine gültige [holographiccamerapose](/uwp/api/windows.graphics.holographic.holographiccamerapose) verfügt, wenn der nächste Frame über [holographicspace. kreatenextframe](/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)erstellt wird. Ab Version 2.1.3 wird [holographicspace. cameraadded](/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) mit dem Daten aus dem Holographic Remoting Player synchronisiert. Benutzer können davon ausgehen, dass beim Hinzufügen einer Kamera auch eine gültige [holographiccamerapose](/uwp/api/windows.graphics.holographic.holographiccamerapose) für die Kamera im nächsten Frame verfügbar ist.
+* "Depthbufferstreamresolution" wurde **deaktiviert** , sodass das tiefe Puffer Streaming über RemoteContext.Configuredepthvideostream deaktiviert werden kann. Beachten Sie, dass bei Verwendung von [holographiccamerarenderingparameters. CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) mit *E_ILLEGAL_METHOD_CALL* fehlschlägt.
 * Der Startbildschirm des Holographic Remoting Player wurde umgestaltet und blockiert nun nicht die Ansicht "Benutzer".
 * Verbesserungen der Stabilität und Fehlerbehebungen.
 
@@ -75,7 +75,7 @@ ms.locfileid: "98009520"
 ## <a name="version-210-march-11-2020"></a>Version 2.1.0 (11. März 2020) <a name="v2.1.0"></a>
 
 * Der Netzwerk Transport wurde zum Verwenden von [RTP](https://en.wikipedia.org/wiki/Real-time_Transport_Protocol) über UDP gewechselt. Sichere Verbindungen verwenden jetzt [SRTP](https://en.wikipedia.org/wiki/Secure_Real-time_Transport_Protocol) . Beachten Sie, dass der [Holographic Remoting Player](holographic-remoting-player.md) immer noch mit allen zuvor veröffentlichten Holographic Remoting-Versionen kompatibel ist. Um vom neuen Netzwerk Transport profitieren zu können, müssen der Holographic Remoting Player und die betreffende Remote-app Version 2.1.0 verwenden.
-* Unterstützung für [holographiccamer-deringparameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)hinzugefügt. 
+* Unterstützung für [holographiccamer-deringparameters. CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)hinzugefügt. 
 
 ## <a name="version-2020-february-2-2020"></a>Version 2.0.20 (2. Februar 2020) <a name="v2.0.20"></a>
 
@@ -83,7 +83,7 @@ ms.locfileid: "98009520"
 
 ## <a name="version-2018-december-17-2019"></a>Version 2.0.18 (17. Dezember 2019) <a name="v2.0.18"></a>
 
-* Unterstützung für [holographicviewconfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicviewconfiguration) hinzugefügt
+* Unterstützung für [holographicviewconfiguration](/uwp/api/windows.graphics.holographic.holographicviewconfiguration) hinzugefügt
 * Es wurden verschiedene Fehler behoben, die zu Abstürzen führen.
 * Es wurde ein Fehler behoben, bei dem ein holographicspace. cameraadded-Rückruf erforderlich war, damit ein holographiccamera akzeptiert und als hinzugefügte Kamera im holographicframe angezeigt werden konnte.
 
@@ -108,7 +108,7 @@ ms.locfileid: "98009520"
 
 ## <a name="version-209-september-19-2019"></a>Version 2.0.9 (19. September 2019) <a name="v2.0.9"></a>
 
-* Unterstützung für [spatialanchorexporter](https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchorexporter) hinzugefügt
+* Unterstützung für [spatialanchorexporter](/uwp/api/windows.perception.spatial.spatialanchorexporter) hinzugefügt
 * Neue Schnittstelle ```IPlayerContext2``` (implementiert von) wurde hinzugefügt, ```PlayerContext``` die die folgenden Member bereitstellt:
   - [Blitremoteframetimeout](holographic-remoting-create-player.md#BlitRemoteFrameTimeout)  -Eigenschaft.
 * Hinzugefügter ```Failed_RemoteFrameTooOld``` Wert zu ```BlitResult```
@@ -116,7 +116,7 @@ ms.locfileid: "98009520"
 
 ## <a name="version-208-august-20-2019"></a>Version 2.0.8 (20. August 2019) <a name="v2.0.8"></a>
 
-* Absturz beim Aufrufen von [holographiccamerderingparameters. CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) mit einem [IDXGISurface2](https://docs.microsoft.com/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) as-Parameter korrigiert.
+* Absturz beim Aufrufen von [holographiccamerderingparameters. CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) mit einem [IDXGISurface2](/windows/win32/api/dxgi1_2/nn-dxgi1_2-idxgisurface2) as-Parameter korrigiert.
 * Verbesserungen der Stabilität und Zuverlässigkeit
 
 ## <a name="version-207-july-26-2019"></a>Version 2.0.7 (26. Juli 2019) <a name="v2.0.7"></a>
@@ -129,5 +129,5 @@ ms.locfileid: "98009520"
 * [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting-Software – Lizenzbedingungen](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

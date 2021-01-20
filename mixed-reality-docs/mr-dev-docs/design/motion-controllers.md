@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 6DOF-Controller, Motion-Controller, Kopplung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, scrollen, Zieh Punkt, Zustand
-ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192618"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583663"
 ---
 # <a name="motion-controllers"></a>Bewegungscontroller
 
@@ -41,7 +41,7 @@ ms.locfileid: "98192618"
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
 </tr>
@@ -71,7 +71,7 @@ Windows Mixed Reality Motion Controllers bieten mithilfe der Sensoren im immersi
 
 ## <a name="setup"></a>Einrichten
 
-### <a name="before-you-begin"></a>Vorbereitungen
+### <a name="before-you-begin"></a>Voraussetzungen
 
 **Sie benötigen Folgendes:**
 * Ein Satz von zwei Bewegungs Controllern.
@@ -80,14 +80,14 @@ Windows Mixed Reality Motion Controllers bieten mithilfe der Sensoren im immersi
 
 **Auf Windows-, Unity-und Treiber Updates überprüfen**
 * Weitere Informationen finden Sie unter [Installieren der Tools](../develop/install-the-tools.md) für die bevorzugten Versionen von Windows, Unity usw. für die Entwicklung mit gemischter Realität.
-* Stellen Sie sicher, dass Sie über die aktuellsten Headset- [und Motion Controller-Treiber](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)verfügen.
+* Stellen Sie sicher, dass Sie über die aktuellsten Headset- [und Motion Controller-Treiber](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)verfügen.
 
 ### <a name="pairing-controllers"></a>Kopplung von Controllern
 
 Bewegungs Controller können mit dem Host-PC mithilfe von Windows-Einstellungen wie allen anderen Bluetooth-Geräten gebunden werden.
 
 1. Fügen Sie zwei AA-Akkus in die Rückseite des Controllers ein. Lassen Sie die Akku Abdeckung vorerst deaktiviert.
-2. Wenn Sie anstelle eines integrierten Bluetooth-Radios einen externen USB-Bluetooth-Adapter verwenden, lesen Sie die [bewährten Methoden für Bluetooth](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) , bevor Sie fortfahren. Stellen Sie für die Desktop Konfiguration mit dem integrierten Radio sicher, dass die Antenne verbunden ist.
+2. Wenn Sie anstelle eines integrierten Bluetooth-Radios einen externen USB-Bluetooth-Adapter verwenden, lesen Sie die [bewährten Methoden für Bluetooth](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) , bevor Sie fortfahren. Stellen Sie für die Desktop Konfiguration mit dem integrierten Radio sicher, dass die Antenne verbunden ist.
 3. Öffnen Sie **Windows-Einstellungen**  ->  **Geräte**  ->  Bluetooth **oder anderes Gerät Bluetooth hinzufügen**,  ->   und entfernen Sie alle früheren Instanzen von "Motion Controller – right" und "Motion Controller – Left". Überprüfen Sie auch die Kategorie andere Geräte am Ende der Liste.
 4. Wählen Sie **Bluetooth oder anderes Gerät hinzufügen** aus, und starten Sie die Ermittlung von Bluetooth-Geräten.
 5. Drücken Sie die Windows-Schaltfläche des Controllers, um den Controller einzuschalten.
@@ -142,7 +142,7 @@ Wenn die Controller nach der Kopplung ausgeschaltet sind, wird Ihr Status als ge
 
 * Überprüfen Sie, ob Ihre Controller ordnungsgemäß funktionieren
     1. Starten Sie das **Mixed Reality-Portal** , und geben Sie Ihr Mixed Reality-Start
-    2. Verschieben Sie Ihre Controller, und überprüfen Sie die Nachverfolgung, Test Schaltflächen [und überprüfen](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) Sie, ob die Wenn Sie dies nicht tun, sehen Sie sich die Problembehandlung für [Motion Controller](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)an
+    2. Verschieben Sie Ihre Controller, und überprüfen Sie die Nachverfolgung, Test Schaltflächen [und überprüfen](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) Sie, ob die Wenn Sie dies nicht tun, sehen Sie sich die Problembehandlung für [Motion Controller](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)an
 
 ## <a name="gazing-and-pointing"></a>Schauen und zeigen
 
@@ -257,7 +257,7 @@ Bewegungs Controller unterstützen die Kopplung mit einem einzelnen PC. Befolgen
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>Gewusst wie Update Motion Controller Firmware?
 
-Motion Controller Firmware ist Teil des Headset-Treibers und wird bei Bedarf automatisch bei der Verbindung aktualisiert. Firmwareupdates dauern in der Regel je nach Bluetooth-Radio und-linkqualität 1-2 Minuten. In seltenen Fällen kann es bis zu 10 Minuten dauern, bis Controller-Firmwareupdates auf eine schlechte Bluetooth-Konnektivität oder Funkstörungen hindeuten. Informationen zu Konnektivitätsproblemen finden Sie unter [bewährte Methoden für Bluetooth im Leitfaden für Enthusiasten](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Nach einem Firmwareupdate werden die Controller neu gestartet und eine Verbindung mit dem Host-PC hergestellt (Sie werden feststellen, dass die LEDs für die Nachverfolgung hell sind) Wenn ein Firmwareupdate unterbrochen wird (z. b. wenn die Controller die Stromversorgung verlieren), wird erneut versucht, wenn die Controller das nächste Mal eingeschaltet werden.
+Motion Controller Firmware ist Teil des Headset-Treibers und wird bei Bedarf automatisch bei der Verbindung aktualisiert. Firmwareupdates dauern in der Regel je nach Bluetooth-Radio und-linkqualität 1-2 Minuten. In seltenen Fällen kann es bis zu 10 Minuten dauern, bis Controller-Firmwareupdates auf eine schlechte Bluetooth-Konnektivität oder Funkstörungen hindeuten. Informationen zu Konnektivitätsproblemen finden Sie unter [bewährte Methoden für Bluetooth im Leitfaden für Enthusiasten](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) . Nach einem Firmwareupdate werden die Controller neu gestartet und eine Verbindung mit dem Host-PC hergestellt (Sie werden feststellen, dass die LEDs für die Nachverfolgung hell sind) Wenn ein Firmwareupdate unterbrochen wird (z. b. wenn die Controller die Stromversorgung verlieren), wird erneut versucht, wenn die Controller das nächste Mal eingeschaltet werden.
 
 ### <a name="how-i-can-check-battery-level"></a>Wie kann ich den Akku Pegel überprüfen?
 
@@ -269,17 +269,17 @@ Nicht für universelle Windows-Anwendungen.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-Weitere Informationen finden Sie im Leitfaden zur Problembehandlung für [Motion Controller](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) .
+Weitere Informationen finden Sie im Leitfaden zur Problembehandlung für [Motion Controller](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) .
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>Einreichen von Feedback/Fehlern in Motion Controller
 
-[Geben Sie uns Feedback](../give-us-feedback.md) im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
+[Geben Sie uns Feedback](/hololens/hololens-feedback) im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
 ## <a name="see-also"></a>Weitere Informationen
 
 * [Motion-Controller in Unity](../develop/unity/motion-controllers-in-unity.md)
 * [Hände und Motion-Controller in DirectX](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [Gesten](gaze-and-commit.md#composite-gestures)
-* [Leitfaden für Enthusiasten: Ihre Windows Mixed Reality-Startseite](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [Leitfaden für Enthusiasten: Verwenden von spielen & apps in Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [Funktionsweise von Inside-Out-Tracking](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [Leitfaden für Enthusiasten: Ihre Windows Mixed Reality-Startseite](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [Leitfaden für Enthusiasten: Verwenden von spielen & apps in Windows Mixed Reality](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [Funktionsweise von Inside-Out-Tracking](/windows/mixed-reality/enthusiast-guide/tracking-system)

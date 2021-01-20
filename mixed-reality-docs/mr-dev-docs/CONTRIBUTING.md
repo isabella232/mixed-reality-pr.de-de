@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108853"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583047"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>Beitrag zur Mixed Reality-Entwicklerdokumentation
 
@@ -24,7 +24,7 @@ Auf dieser Seite werden die grundlegenden Schritte und Richtlinien für den Beit
 
 | Name des Repositorys | URL |
 | --- | --- |
-| Mixed Reality | [Microsoftdocs/Mixed-Reality](https://docs.microsoft.com/windows/mixed-reality) |
+| Mixed Reality | [Microsoftdocs/Mixed-Reality](/windows/mixed-reality) |
 | Leitfaden für VR-Enthusiasten | [Microsoftdocs/Mixed-Reality/Enthusiast-Guide](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [Microsoftdocs/hololens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -131,13 +131,13 @@ Die folgenden Ressourcen helfen Ihnen, zu erfahren, wie Sie die Dokumentation mi
 
 - [Markdown-Grundlagen](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-Referenz Poster mit einem Blick](images/MarkdownPoster.pdf)
-- [Zusätzliche Ressourcen zum Schreiben von markdown für docs.Microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Zusätzliche Ressourcen zum Schreiben von markdown für docs.Microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Hinzufügen von Tabellen
 
 Aufgrund der Art und Weise, in der docs.Microsoft.com Stile Tabellen haben, haben Sie keine Rahmen oder benutzerdefinierten Stile, auch wenn Sie das Inline-CSS ausprobieren. Es scheint für einen kurzen Zeitraum zu funktionieren, aber schließlich entfernt die Plattform das Formatieren aus der Tabelle. Planen Sie also voraus, und halten Sie die Tabellen einfach. [Im folgenden finden Sie eine Website, mit der markdown-Tabellen einfach](https://www.tablesgenerator.com/markdown_tables)werden.
 
-Die [docs markdown-Erweiterung für Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) erleichtert auch die Tabellen Generierung, wenn Sie [Visual Studio Code (siehe unten)](#using-visual-studio-code) verwenden, um die Dokumentation zu bearbeiten.
+Die [docs markdown-Erweiterung für Visual Studio Code](/teamblog/docs-extension) erleichtert auch die Tabellen Generierung, wenn Sie [Visual Studio Code (siehe unten)](#using-visual-studio-code) verwenden, um die Dokumentation zu bearbeiten.
 
 ### <a name="adding-images"></a>Hinzufügen von Bildern
 

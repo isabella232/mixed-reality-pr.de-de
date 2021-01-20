@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Custom Vision, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: d40dc1cf23ee8040406047eaddd7ee3b70365199
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679549"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583404"
 ---
 # <a name="mr-and-azure-302b-custom-vision"></a>MR und Azure 302b: Custom Vision
 
@@ -29,7 +29,7 @@ Mit diesem Dienst können Sie ein Machine Learning-Modell mithilfe von Objekt Im
 
 ![Kurs Ergebnis](images/AzureLabs-Lab302b-00.png)
 
-Bei Azure Custom Vision handelt es sich um einen Microsoft Cognitive Service, der Entwicklern das Erstellen benutzerdefinierter Image Klassifizierer ermöglicht. Diese Klassifizierungen können dann mit neuen Bildern verwendet werden, um Objekte innerhalb dieses neuen Bilds zu erkennen oder zu klassifizieren. Der Dienst bietet ein einfaches, leicht zu verwendende Onlineportal, um den Prozess zu optimieren. Weitere Informationen finden Sie auf der [Seite Azure Custom Vision Service](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home).
+Bei Azure Custom Vision handelt es sich um einen Microsoft Cognitive Service, der Entwicklern das Erstellen benutzerdefinierter Image Klassifizierer ermöglicht. Diese Klassifizierungen können dann mit neuen Bildern verwendet werden, um Objekte innerhalb dieses neuen Bilds zu erkennen oder zu klassifizieren. Der Dienst bietet ein einfaches, leicht zu verwendende Onlineportal, um den Prozess zu optimieren. Weitere Informationen finden Sie auf der [Seite Azure Custom Vision Service](/azure/cognitive-services/custom-vision-service/home).
 
 Nach Abschluss dieses Kurses verfügen Sie über eine Mixed Reality-Anwendung, die in zwei Modi arbeiten kann:
 
@@ -43,7 +43,7 @@ In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Custom Vision Servic
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 302b: Custom Vision</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -64,7 +64,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Eine Kamera, die mit Ihrem PC verbunden ist (für die immersive Headset-Entwicklung)
 - Internet Zugriff für den Azure-Setup-und Custom Vision-API-Abruf
 - Für jedes Objekt, das von der Custom Vision Service erkannt werden soll, wird eine Reihe von mindestens fünf (10) Bildern empfohlen. Wenn Sie möchten, können Sie [die Images verwenden, die bereits mit diesem Kurs bereitgestellt werden (Computermaus und Tastatur) ](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20302b%20-%20Custom%20vision/ComputerVision_Images.zip).
@@ -72,12 +72,12 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 ## <a name="before-you-start"></a>Vorbereitung
 
 1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
-2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup). 
 3.  Es empfiehlt sich, eine Kalibrierung und Sensor Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen). 
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](../../../calibration.md#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](../../../sensor-tuning.md).
+Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-custom-vision-service-portal"></a>Kapitel 1: das Custom Vision Service-Portal
 
@@ -118,7 +118,7 @@ Um die *Custom Vision Service* in Azure verwenden zu können, müssen Sie eine I
 
         ![Festlegen der Domänen](images/AzureLabs-Lab302b-05.png)
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
 7.  Wenn Sie fertig sind, klicken Sie auf **Projekt erstellen**. Sie werden auf die Seite Custom Vision Service, Projekt, umgeleitet.
 
@@ -198,7 +198,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
     ![Konfigurieren von Projekteinstellungen](images/AzureLabs-Lab302b-18.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit*  >  *Einstellungen* bearbeiten* , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu * >  *Einstellungen* bearbeiten* , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Externe Tools konfigurieren](images/AzureLabs-Lab302b-19.png)
 
@@ -351,7 +351,7 @@ So erstellen Sie diese Klasse:
 
 2.  Doppelklicken Sie auf den soeben erstellten Ordner, um ihn zu öffnen.
 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner **Create**, und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript *customvisionanalyser*.
+3.  Klicken Sie mit der rechten Maustaste in den Ordner , und klicken Sie dann auf  >  **\# Skript** erstellen. Benennen Sie das Skript *customvisionanalyser*.
 
 4.  Doppelklicken Sie auf das neue *customvisionanalyser* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -476,7 +476,7 @@ Dieses Skript enthält eine Reihe von Objekten, die von anderen Klassen zum Seri
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisionobjects*.
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisionobjects*.
 
 2.  Doppelklicken Sie auf das neue **customvisionobjects** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -613,7 +613,7 @@ Diese Klasse erkennt die Spracheingabe des Benutzers.
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *voicerecognizer*.
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *voicerecognizer*.
 
 2.  Doppelklicken Sie auf das neue **voicerecognizer** -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -646,7 +646,7 @@ So erstellen Sie diese Klasse:
         private Dictionary<string, Action> _keywords = new Dictionary<string, Action>();
     ```
 
-5.  Fügen Sie die Methoden " **Awa()** " und " **Start ()** " hinzu, bei denen die Benutzer Schlüsselwörter so eingerichtet werden, dass Sie beim Zuordnen eines Tags zu einem Bild erkannt werden: *keywords*
+5.  Fügen Sie die Methoden " **Awa()** " und " **Start ()** " hinzu, bei denen die Benutzer Schlüsselwörter so eingerichtet werden, dass Sie beim Zuordnen eines Tags zu einem Bild erkannt werden: 
 
     ```csharp
         /// <summary>
@@ -721,7 +721,7 @@ Diese Klasse verkettet eine Reihe von webaufrufen, um die *Custom Vision Service
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisiontrainer*.
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *customvisiontrainer*.
 
 2.  Doppelklicken Sie auf das neue *customvisiontrainer* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1082,7 +1082,7 @@ Diese Klasse führt Folgendes aus:
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** **Create**  >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *sceneorganisator*.
+1.  Klicken Sie mit der rechten Maustaste in den Ordner    >  **\# Skripts**, und klicken Sie dann auf Skript erstellen. Nennen Sie das Skript *sceneorganisator*.
 
 2.  Doppelklicken Sie auf das neue *sceneorganisator* -Skript, um es in **Visual Studio** zu öffnen.
 
@@ -1676,9 +1676,9 @@ So stellen Sie auf hololens bereit:
 
 2.  Navigieren Sie zu Ihrem neuen Unity-Build ( **App** -Ordner), und öffnen Sie die Projektmappendatei mit **Visual Studio**.
 
-3.  Wählen Sie *Solution Configuration* in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
-4.  Wählen Sie *Solution Platform* auf der Projektmappenplattform die Option **x86, Remote Computer** aus. Sie werden aufgefordert, die **IP-Adresse** eines Remote Geräts (in diesem Fall die hololens) einzufügen, die Sie notiert haben.
+4.  Wählen Sie auf der Projektmappenplattform die Option **x86, Remote Computer** aus. Sie werden aufgefordert, die **IP-Adresse** eines Remote Geräts (in diesem Fall die hololens) einzufügen, die Sie notiert haben.
 
     ![Festlegen der IP-Adresse](images/AzureLabs-Lab302b-34.png)
 
@@ -1687,7 +1687,7 @@ So stellen Sie auf hololens bereit:
 6. Ihre APP sollte nun in der Liste der installierten apps auf Ihren hololens angezeigt werden, die bereit sind, gestartet zu werden.
 
 > [!NOTE]
-> Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf **Solution Platform** *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann **auf dem lokalen** Computer bereit, *und wählen Sie* dann Projekt Mappe bereitstellen aus. 
+> Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf  *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann **auf dem lokalen** Computer bereit, *und wählen Sie* dann Projekt Mappe bereitstellen aus. 
 
 ## <a name="to-use-the-application"></a>So verwenden Sie die Anwendung:
 

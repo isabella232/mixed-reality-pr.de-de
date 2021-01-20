@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: LBE, MixedRealitySpatialDataPackager.exe, mixedrealityspatialdatapackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686267"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583639"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>Dokumentation für die gemischte Realität Spatial Data Packager
 
@@ -23,7 +23,7 @@ ms.locfileid: "91686267"
 > Dieses Tool und der zugehörige Vorgang werden unverändert angeboten. Er kann ohne vorherige Ankündigung geändert werden und ist möglicherweise nicht mit zukünftigen Windows-oder Windows Mixed Reality-HMD-Releases kompatibel. 
 
 
-## <a name="download"></a>Download
+## <a name="download"></a>Herunterladen
  [Mixedrealityspatialdatapackager hier](https://download.microsoft.com/download/A/1/2/A12B8A90-B3F7-4ED9-A4BB-D59DDCDAA125/MixedRealitySpatialDataPackager.zip) herunterladen
 
 ## <a name="device-support"></a>Geräteunterstützung
@@ -37,7 +37,7 @@ ms.locfileid: "91686267"
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -71,8 +71,7 @@ Wichtige Anforderungen und Einschränkungen:
 4. Minimieren Sie leere, textulose Oberflächen, z. b. einen Bereich verschiedener Poster auf weißen Wänden platzieren.
 5. Ordnen Sie den Raum ohne dynamische Objekte in der Szene zu
 6. Karte beim Import Sperren (verfügbar über Insider Preview)
-7. Entsperren Sie die Zuordnung, und Scannen Sie die Umgebung neu, wenn die nach Verfolgungs Qualität abnimmt und/oder Änderungen in der Umgebung vorliegen (Beleuchtung oder Änderungen im Objekt Layout).
-***
+7. Entsperren Sie die Zuordnung, und Scannen Sie die Umgebung neu, wenn die nach Verfolgungs Qualität abnimmt und/oder Änderungen in der Umgebung vorliegen (Beleuchtung oder Änderungen im Objekt Layout) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>Ausführen von Mixed Reality Spatial Data Packager mit begleitenden Skripts
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 Beim Importieren werden die vorhandenen räumlichen Daten gelöscht und durch die Daten aus dem angegebenen Verzeichnis ersetzt. Die App-namens Eingabe gibt den Paketnamen der Ziel-APP an, die für den räumlichen Anker importiert werden soll, und die Ziel Benutzer-SID gibt den Benutzer an, der Zugriff auf die importierten räumlichen Anker haben soll. Der Name und die Benutzer-SIDs des Ziel Pakets müssen mit den vorhandenen Werten auf dem PC abgeglichen werden, andernfalls tritt ein Fehler auf.
 
 
-***
+_**
 ## <a name="error-messages"></a>Fehlermeldungen
 Außerdem werden die Fehlermeldungen unter Fehler ebenfalls mit einem HRESULT verknüpft.
 

@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, immersive, Motion Controller, Academy, Tutorial
-ms.openlocfilehash: c83fd4970e40919e146b0a4e8b4f0f516e9d0906
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1f747c73846f59fdc62a0559068123a50f8a1b07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91685379"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583053"
 ---
 # <a name="mr-input-213-motion-controllers"></a>MR-Eingabe 213: Motion-Controller
 
 >[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](../mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](../develop/unity/tutorials/mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
 
 Bewegungs Controller in der Mixed Reality-Welt fügen eine weitere Interaktivität hinzu. Mit [Motion-Controllern](../design/motion-controllers.md)können wir direkt mit Objekten auf natürlichere Weise interagieren, ähnlich wie bei den physischen Interaktionen in der Praxis, wodurch das Eintauchen und die Freude an Ihrer APP verbessert werden.
 
@@ -33,7 +33,7 @@ In der Eingabe 213 werden die Eingabeereignisse des Bewegungs Controllers durch 
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR-Eingabe 213: Motion-Controller</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -67,9 +67,9 @@ Sehen Sie sich die Installations Checkliste für immersive Headsets auf [dieser 
 ### <a name="instructions"></a>Instructions
 
 * Starten Sie Unity.
-* Klicken Sie auf **Öffnen** .
+* Wählen Sie **Open**(Öffnen).
 * Navigieren Sie zu Ihrem Desktop, und suchen Sie den Ordner **MixedReality213-Master** , den Sie zuvor nicht archiviert haben.
-* Klicken Sie auf **Ordner auswählen** .
+* Klicken Sie auf **Ordner auswählen**.
 * Nachdem Unity das Laden von Projektdateien abgeschlossen hat, kann der Unity-Editor angezeigt werden.
 * Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
 
@@ -81,7 +81,7 @@ Sehen Sie sich die Installations Checkliste für immersive Headsets auf [dieser 
 * SDK auf **Letztes installiert** festlegen
 * Überprüfen von **Unity c#-Projekten**
     * Auf diese Weise können Sie Skriptdateien im Visual Studio-Projekt ändern, ohne das Unity-Projekt neu zu erstellen.
-* Klicken Sie auf **Player-Einstellungen** .
+* Klicken Sie auf **Player-Einstellungen**.
 * Scrollen Sie im **Inspektor** -Panel nach unten.
 * Aktivieren Sie in den XR-Einstellungen die Option **unterstützte virtuelle**
 * Wählen Sie unter Virtual Reality sdert **Windows Mixed Reality** aus.
@@ -99,22 +99,22 @@ In diesem Tutorial wird **[Mixed Reality Toolkit-Unity](https://github.com/Micro
 **Abgeschlossene Szenen für Ihre Referenz**
 
 * Im Ordner " **Szenen** " finden Sie zwei abgeschlossene Unity-Szenen.
-    * **MixedReality213** : Abgeschlossene Szene mit einem Pinsel
-    * **MixedReality213Advanced** : Abgeschlossene Szene für erweiterten Entwurf mit mehreren Pinseln
+    * **MixedReality213**: Abgeschlossene Szene mit einem Pinsel
+    * **MixedReality213Advanced**: Abgeschlossene Szene für erweiterten Entwurf mit mehreren Pinseln
 
 **Neue Szenen Einrichtung für das Tutorial**
 
 * Klicken Sie in Unity auf **Datei > neue Szene** .
 * **Hauptkamera** und **Direktionales Licht** löschen
 * Suchen Sie im **Projekt Panel** die folgenden Prefabs, und ziehen Sie Sie in das **Hierarchie** Panel:
-    * Assets/holotoolkit/Input/Prefabs/ **mixedrealitycamera**
-    * Assets/appprefabs/ **Umgebung**
+    * Assets/holotoolkit/Input/Prefabs/**mixedrealitycamera**
+    * Assets/appprefabs/**Umgebung**
 
     ![Kamera und Umgebung](images/mr213-cameraenvironment-300px.jpg)
 
 * Es gibt zwei Kamera-präfaben im Mixed Reality Toolkit:
-    * **Mixedrealitycamera. Prefab** : nur Kamera
-    * **Mixedrealitycameraparent. Prefab** : Kamera + teleportierung + Grenze
+    * **Mixedrealitycamera. Prefab**: nur Kamera
+    * **Mixedrealitycameraparent. Prefab**: Kamera + teleportierung + Grenze
     * In diesem Tutorial verwenden wir **mixedrealitycamera** ohne teleportationsfeature. Aus diesem Grund haben wir eine einfache **Umgebungs** Vorschau hinzugefügt, die eine grundlegende Oberfläche enthält, um das Gefühl des Benutzers zu gestalten.
     * Weitere Informationen zur teleportung mit **mixedrealitycameraparent** finden Sie unter [Advanced Design-Teleportations-und fortbewegungs](#advanced-design---teleportation-and-locomotion) Modus.
 
@@ -189,7 +189,7 @@ Nachdem der Controller übermittelt wurde, können die Skripts mithilfe von " **
 
 In einem späteren Kapitel erfahren Sie, wie diese Skripts zum Anfügen von UI-Elementen an die Controller verwendet werden.
 
-*In einigen Skripts finden Sie Code Blöcke mit **#if! UNITY_EDITOR** oder **UNITY_WSA** . Diese Code Blöcke werden nur für die UWP-Laufzeit ausgeführt, wenn Sie Windows bereitstellen. Dies liegt daran, dass der Satz von APIs, der vom Unity-Editor und der UWP-App-Laufzeit verwendet wird, anders ist.*
+*In einigen Skripts finden Sie Code Blöcke mit **#if! UNITY_EDITOR** oder **UNITY_WSA**. Diese Code Blöcke werden nur für die UWP-Laufzeit ausgeführt, wenn Sie Windows bereitstellen. Dies liegt daran, dass der Satz von APIs, der vom Unity-Editor und der UWP-App-Laufzeit verwendet wird, anders ist.*
 
 * **Speichern** Sie die Szene, und klicken Sie auf die Schaltfläche **abspielen** .
 
@@ -219,7 +219,7 @@ Der erste Schritt besteht darin, das Element des Controllers auszuwählen, an da
 
 ![MR213-Element](images/mr213-motioncontrollerelements-1000px.jpg)
 
-* **Startseite**
+* **Home**
 * **Menü**
 * **Gespür**
 * **Ministick**
@@ -236,7 +236,7 @@ Der erste Schritt besteht darin, das Element des Controllers auszuwählen, an da
 
 Das **anfügecontroller** -Skript bietet eine einfache Möglichkeit, beliebige Objekte an eine angegebene Controller häntigkeit und ein Element anzufügen.
 
-In **attachelementto Controller ()** ,
+In **attachelementto Controller ()**,
 
 * Überprüfen Sie die häntigkeit mithilfe von "" "" "" "" " **.**
 * Bestimmtes Element des Controllers mithilfe von " **mutioncontrollerinfo. trygetelement ()** " erhalten
@@ -288,7 +288,7 @@ Die einfachste Möglichkeit zur Verwendung des **attachtoicontroller** -Skripts 
 
 **Colorpickerwheel-Skript**
 
-Da **colorpickerwheel** " **AttachTo Controller** " erbt, zeigt es die **häntigkeit** und das **Element** im **Inspektor** -Panel. Wir fügen die Benutzeroberfläche an das Touchpad-Element auf dem linken Controller an.
+Da **colorpickerwheel** " **AttachTo Controller**" erbt, zeigt es die **häntigkeit** und das **Element** im **Inspektor** -Panel. Wir fügen die Benutzeroberfläche an das Touchpad-Element auf dem linken Controller an.
 
 ![Colorpickerwheel-Skript](images/mr213-attachtocontroller-300px.jpg)
 
@@ -364,10 +364,10 @@ Um die **colorpickerwheel** -Benutzeroberfläche mit Animation anzuzeigen und au
 
 In **interaktionsourceupdatiert ()** prüft das Skript zunächst, ob Folgendes möglich ist:
 
-* ist tatsächlich ein Touchpad-Ereignis (obj. State). **touchpadtouched** )
-* stammt vom linken Controller (obj. State. Source). **häntigkeit** )
+* ist tatsächlich ein Touchpad-Ereignis (obj. State).**touchpadtouched**)
+* stammt vom linken Controller (obj. State. Source).**häntigkeit**)
 
-Wenn beide true sind, ist die Touchpad-Position (obj. State). **touchpadposition** ) ist **Selector Position** zugewiesen.
+Wenn beide true sind, ist die Touchpad-Position (obj. State).**touchpadposition**) ist **Selector Position** zugewiesen.
 
 ```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
@@ -380,7 +380,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 }
 ```
 
-In **Update ()** , basierend auf der **Visible** -Eigenschaft, werden Animations Trigger in der animatorkomponente der Farbauswahl angezeigt und ausgeblendet.
+In **Update ()**, basierend auf der **Visible** -Eigenschaft, werden Animations Trigger in der animatorkomponente der Farbauswahl angezeigt und ausgeblendet.
 
 ```cs
 if (visible != visibleLastFrame)
@@ -443,7 +443,7 @@ In **Update ()** wird **Selector Position** verwendet, um einen Strahl in den Me
 
 * Klicken Sie im **Hierarchie** **Panel auf "** ".
 * Klicken Sie rechts neben dem Feld **alternativer rechter Controller** auf den Kreis.
-* Geben Sie **"brushcontroller** " ein, und wählen Sie das präfab aus dem Ergebnis aus. Sie finden ihn unter Assets/appprefabs/ **brushcontroller** .
+* Geben Sie **"brushcontroller**" ein, und wählen Sie das präfab aus dem Ergebnis aus. Sie finden ihn unter Assets/appprefabs/**brushcontroller**.
 * Aktivieren Sie **immer alternatives Rechtes Modell verwenden** .
 
 ![MR213_BrushToolOverrideSlot](images/mr213-motioncontrollersoverride-700px.jpg)
@@ -454,7 +454,7 @@ Die **brushcontroller** -vorfab muss nicht im **Hierarchie** Panel enthalten sei
 
 ![MR213_BrushTool_Prefab2](images/mr213-brushtool-prefab-1000px.jpg)
 
-Sie finden die **Tip** -Komponente in **brushcontroller** . Wir verwenden die Transformation zum Starten/Abbrechen von Zeichnungslinien.
+Sie finden die **Tip** -Komponente in **brushcontroller**. Wir verwenden die Transformation zum Starten/Abbrechen von Zeichnungslinien.
 
 * Löschen Sie den **brushcontroller** aus dem Bereich **Hierarchie** .
 * **Speichern** Sie die Szene, und klicken Sie auf die Schaltfläche **abspielen** . Sie können sehen, dass das Pinsel Modell den rechten Bewegungs Controller ersetzt hat.
@@ -494,7 +494,7 @@ private void InteractionSourceReleased(InteractionSourceReleasedEventArgs obj)
 }
 ```
 
-Obwohl **Draw** auf true festgelegt ist, generiert der Pinsel Punkte in einem instanziierten Unity- **linerenderer** . Ein Verweis auf diese vorfab wird im Feld **Strich-vorfab** des Pinsels beibehalten.
+Obwohl **Draw** auf true festgelegt ist, generiert der Pinsel Punkte in einem instanziierten Unity- **linerenderer**. Ein Verweis auf diese vorfab wird im Feld **Strich-vorfab** des Pinsels beibehalten.
 
 ```cs
 private IEnumerator DrawOverTime()
@@ -565,7 +565,7 @@ private void OnEnable()
 * Geben Sie im **Projekt** Panel im Suchfeld **objectspawner** ein. Sie finden es auch unter Assets/appprefabs/
 * Ziehen Sie die vorfab **objectspawner** in den Bereich **Hierarchie** .
 * Klicken Sie im **Hierarchie** Panel auf **objectspawner** .
-* **Objectspawner** verfügt über ein Feld mit dem Namen **Color Source** .
+* **Objectspawner** verfügt über ein Feld mit dem Namen **Color Source**.
 * Ziehen Sie im **Hierarchie** Panel den **colorpickerwheel** -Verweis in dieses Feld.
 
     ![Object Spawner Inspector](images/mr213-objectspawnercolorpickerwheel-650px.jpg)
@@ -641,16 +641,16 @@ Mit der Schaltfläche "auswählen" können Sie die Objekte mit der Schaltfläche
 
 * Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
 * Klicken Sie auf **offene Szenen hinzufügen** , um die aktuelle Szene zu den **Kulissen in Build** hinzuzufügen.
-* Klicken Sie auf **Erstellen** .
+* Klicken Sie auf **Erstellen**.
 * Erstellen Sie einen **neuen Ordner** mit dem Namen "App".
 * Klicken Sie einfach auf den **App** -Ordner.
-* Klicken Sie auf **Ordner auswählen** .
+* Klicken Sie auf **Ordner auswählen**.
 * Wenn Unity abgeschlossen ist, wird ein Datei-Explorer-Fenster angezeigt.
 * Öffnen Sie den **App** -Ordner.
 * Doppelklicken Sie auf **yourscenename. sln** Visual Studio-Projektmappendatei.
-* Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64** .
+* Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64**.
 * Klicken Sie auf den Dropdown Pfeil neben der Schaltfläche Gerät, und wählen Sie **lokaler Computer** aus.
-* Klicken Sie im Menü auf **Debuggen > starten ohne Debuggen** , oder drücken Sie **STRG + F5** .
+* Klicken Sie im Menü auf **Debuggen > starten ohne Debuggen** , oder drücken Sie **STRG + F5**.
 
 Nun wird die APP im Mixed Reality-Portal erstellt und installiert. Sie können Sie erneut über das Startmenü im Mixed Reality-Portal starten.
 
@@ -666,12 +666,12 @@ In diesem Kapitel erfahren Sie, wie Sie das standardmäßige Motion Controller-M
 * Ziehen Sie die vorfab von **brushselector** in den Bereich **Hierarchie** .
 * Erstellen Sie für die Organisation ein leeres gameobject namens **Pinsel** .
 * Ziehen Sie die folgenden Prefabs aus dem **Projekt** Panel in **Pinsel** .
-    * Assets/appprefabs/ **brushfat**
-    * Assets/appprefabs/ **brushthin**
-    * Assets/appprefabs/ **Radierer**
-    * Assets/appprefabs/ **markerfat**
-    * Assets/appprefabs/ **markerthin**
-    * Assets/appprefabs/ **Stift**
+    * Assets/appprefabs/**brushfat**
+    * Assets/appprefabs/**brushthin**
+    * Assets/appprefabs/**Radierer**
+    * Assets/appprefabs/**markerfat**
+    * Assets/appprefabs/**markerthin**
+    * Assets/appprefabs/**Stift**
 
     ![Pinsel](images/mixedreality213-brushes-250px.png)
 
@@ -695,8 +695,8 @@ Da der **brushselector** **attachdecontroller** erbt, werden die Optionen für d
 
 Der **brushselector** nutzt zwei Hilfsprogramme:
 
-* **Ellipse** : wird verwendet, um Punkte im Raum entlang einer Ellipse-Form zu generieren.
-* **Lineobjectcollection** : verteilt Objekte mithilfe der von einer beliebigen Zeilen Klasse generierten Punkte (z. b. Ellipse). Das ist das, was wir verwenden werden, um die Pinsel entlang der Ellipse-Form zu platzieren.
+* **Ellipse**: wird verwendet, um Punkte im Raum entlang einer Ellipse-Form zu generieren.
+* **Lineobjectcollection**: verteilt Objekte mithilfe der von einer beliebigen Zeilen Klasse generierten Punkte (z. b. Ellipse). Das ist das, was wir verwenden werden, um die Pinsel entlang der Ellipse-Form zu platzieren.
 
 In Kombination können diese Hilfsprogramme verwendet werden, um ein radiales Menü zu erstellen.
 
@@ -706,7 +706,7 @@ In Kombination können diese Hilfsprogramme verwendet werden, um ein radiales Me
 
 **Pinsel Auswahl Skript**
 
-Im Fall von " **brushselector** " haben wir die Verwendung der Verfahrens bezogenen Animation gewählt. Zuerst werden Pinsel Modelle durch das **lineobjectcollection** -Skript in einer Ellipse verteilt. Dann ist jeder Pinsel dafür verantwortlich, seine Position in der Hand des Benutzers basierend auf seinem **DisplayMode** -Wert beizubehalten, der sich auf der Grundlage der Auswahl ändert. Wir haben uns für einen Verfahrensansatz entschieden, da die hohe Wahrscheinlichkeit, dass der Pinsel positioniert wird, unterbrochen wird, wenn der Benutzer Pinsel auswählt. Mecanim-Animationen können Unterbrechungen ordnungsgemäß behandeln, Sie sind jedoch tendenziell komplizierter als ein einfacher Lerp-Vorgang.
+Im Fall von " **brushselector**" haben wir die Verwendung der Verfahrens bezogenen Animation gewählt. Zuerst werden Pinsel Modelle durch das **lineobjectcollection** -Skript in einer Ellipse verteilt. Dann ist jeder Pinsel dafür verantwortlich, seine Position in der Hand des Benutzers basierend auf seinem **DisplayMode** -Wert beizubehalten, der sich auf der Grundlage der Auswahl ändert. Wir haben uns für einen Verfahrensansatz entschieden, da die hohe Wahrscheinlichkeit, dass der Pinsel positioniert wird, unterbrochen wird, wenn der Benutzer Pinsel auswählt. Mecanim-Animationen können Unterbrechungen ordnungsgemäß behandeln, Sie sind jedoch tendenziell komplizierter als ein einfacher Lerp-Vorgang.
 
 " **Brushselector** " verwendet eine Kombination aus beidem. Wenn Touchpad-Eingaben erkannt werden, werden Pinseloptionen sichtbar und im radialen Menü zentral hochskaliert. Nach einem Timeout Zeitraum (der angibt, dass der Benutzer eine Auswahl getroffen hat) können die Pinseloptionen wieder herunterskaliert werden, sodass nur der ausgewählte Pinsel erhalten bleibt.
 
@@ -799,15 +799,15 @@ Der **Radierer** ist ein spezieller Pinseltyp, der die **drawovertime ()** -Funk
 
 ## <a name="advanced-design---teleportation-and-locomotion"></a>Erweiterte Design-teleportierung und-Bewegung
 
-Wenn Sie zulassen möchten, dass der Benutzer die Szene mit der teleportierung über den Finger Stick bewegt, verwenden Sie **mixedrealitycameraparent** anstelle von **mixedrealitycamera** . Außerdem müssen Sie **InputManager** und **DefaultCursor** hinzufügen. Da **mixedrealitycameraparent** bereits " **mutioncontrollers** " und " **Border** " als untergeordnete Komponenten enthält, sollten Sie vorhandene " **mueconcontrollers** " und " **Umgebungs** vorfab" entfernen.
+Wenn Sie zulassen möchten, dass der Benutzer die Szene mit der teleportierung über den Finger Stick bewegt, verwenden Sie **mixedrealitycameraparent** anstelle von **mixedrealitycamera**. Außerdem müssen Sie **InputManager** und **DefaultCursor** hinzufügen. Da **mixedrealitycameraparent** bereits " **mutioncontrollers** " und " **Border** " als untergeordnete Komponenten enthält, sollten Sie vorhandene " **mueconcontrollers** " und " **Umgebungs** vorfab" entfernen.
 
 ### <a name="instructions"></a>Instructions
 
-* Löschen Sie im **Hierarchie** Panel **mixedrealitycamera** , **Environment** und **mutioncontrollers** .
+* Löschen Sie im **Hierarchie** Panel **mixedrealitycamera**, **Environment** und **mutioncontrollers** .
 * Suchen Sie im **Projekt Panel** die folgenden Prefabs, und ziehen Sie Sie in das **Hierarchie** Panel:
-    * Assets/appprefabs/Input/Prefabs/ **mixedrealitycameraparent**
-    * Assets/appprefabs/Input/Prefabs/ **InputManager**
-    * Assets/appprefabs/Input/Prefabs/Cursor/ **DefaultCursor**
+    * Assets/appprefabs/Input/Prefabs/**mixedrealitycameraparent**
+    * Assets/appprefabs/Input/Prefabs/**InputManager**
+    * Assets/appprefabs/Input/Prefabs/Cursor/**DefaultCursor**
 
     ![Übergeordnetes Mixed Reality-Kamera](images/mr213-cameraparent-300px.png)
 
@@ -832,9 +832,9 @@ Nun können Sie mit der Erstellung Ihrer eigenen immersiven Benutzer Arbeit mit 
 ## <a name="completed-scenes"></a>Abgeschlossene Szenen
 
 * Klicken Sie im Unity- **Projekt** Panel auf den Ordner **Szenen** .
-* Sie finden zwei Unity-Szenen **MixedReality213** und **MixedReality213Advanced** .
-    * **MixedReality213** : Abgeschlossene Szene mit einem Pinsel
-    * **MixedReality213Advanced** : Abgeschlossene Szene mit mehreren Pinseln mit dem Press Amount-Beispiel der Schaltfläche "drücken"
+* Sie finden zwei Unity-Szenen **MixedReality213** und **MixedReality213Advanced**.
+    * **MixedReality213**: Abgeschlossene Szene mit einem Pinsel
+    * **MixedReality213Advanced**: Abgeschlossene Szene mit mehreren Pinseln mit dem Press Amount-Beispiel der Schaltfläche "drücken"
 
 ## <a name="see-also"></a>Weitere Informationen
 

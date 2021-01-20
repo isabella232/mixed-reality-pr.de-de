@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D, Modellierung, Modellierungs Anleitung, Asset-Anforderungen, Erstellungs Richtlinien, Start Programm, 3D-Start Programm, Textur, Material, Komplexität, Dreiecke, Mesh, Polygone, Polycount, Limits, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757786"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583815"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>Erstellen von 3D-Modellen zur Verwendung auf der Startseite
 
@@ -101,7 +101,7 @@ Weist den Shader an, wenn etwas Metal ist oder nicht. RAW Metal = 1,0 White Non-
 Windows Mixed Reality Home bietet eine Reihe von Optimierungen, die auf der Core-gltf-Spezifikation liegen, die mit benutzerdefinierten Erweiterungen definiert wurde. Diese Optimierungen sind in Windows-Versionen <= 1709 erforderlich und werden für neuere Versionen von Windows empfohlen. Mithilfe des [Windows Mixed Reality Asset Converter, der auf GitHub verfügbar](https://github.com/Microsoft/glTF-Toolkit/releases)ist, können Sie ein beliebiges gltf 2,0-Modell problemlos optimieren. Dieses Tool führt die richtige Textur Verpackung und Optimierungen wie unten angegeben aus. Zur allgemeinen Verwendung empfiehlt sich die Verwendung von windowsmrassetconverter. Wenn Sie jedoch mehr Kontrolle über die Benutzerfunktion benötigen und eine eigene Optimierungs Pipeline erstellen möchten, können Sie auf die unten angegebene Ausführliche Spezifikation verweisen.  
 
 > [!NOTE]
-> Eine definitive Liste der Möglichkeiten für genaue Modell Limits finden Sie im Artikel zur [3D-Modelloptimierung](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) zur Verwendung in Dynamics 365-Anwendungen.
+> Eine definitive Liste der Möglichkeiten für genaue Modell Limits finden Sie im Artikel zur [3D-Modelloptimierung](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) zur Verwendung in Dynamics 365-Anwendungen.
 
 ### <a name="materials"></a>Materialien
 
@@ -184,7 +184,7 @@ LODs werden in Windows Mixed Reality auf Grundlage eines Systems angezeigt, das 
 
 |  LOD-Ebene  |  Empfohlener Bereich  |  Standardbereich | 
 |-------|-------|-------|
-|  LOD 0  |  100%-50% |  0.5 | 
+|  LOD 0  |  100%-50% |  0,5 | 
 |  LOD 1 |  Unter 50%-20%  |  0.2 | 
 |  LOD 2 |  Weniger als 20%-1%  |  0.01 | 
 |  LOD 4  |  Unter 1%  |  - | 
@@ -192,7 +192,7 @@ LODs werden in Windows Mixed Reality auf Grundlage eines Systems angezeigt, das 
 ## <a name="animation-guidelines"></a>Animations Richtlinien
 
 > [!NOTE]
-> Diese Funktion wurde als Teil des [Windows 10-Updates vom April 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)hinzugefügt. In älteren Versionen von Windows werden diese Animationen nicht wiedergegeben, Sie werden jedoch nach der Anleitung in diesem Artikel weiterhin geladen, wenn Sie erstellt werden.  
+> Diese Funktion wurde als Teil des [Windows 10-Updates vom April 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)hinzugefügt. In älteren Versionen von Windows werden diese Animationen nicht wiedergegeben, Sie werden jedoch nach der Anleitung in diesem Artikel weiterhin geladen, wenn Sie erstellt werden.  
 
 Die Mixed Reality-Startseite unterstützt animierte gltf-Objekte auf hololens-und immersive-Headsets (VR). Wenn Sie Animationen für Ihr Modell verwenden möchten, müssen Sie die Animations Zuordnungs Erweiterung im gltf-Format verwenden. Mit dieser Erweiterung können Sie Animationen im gltf-Modell basierend auf dem vorhanden sein des Benutzers auf der ganzen Welt auslöschen, z. b. eine Animation, wenn sich der Benutzer in der Nähe des Objekts befindet oder wenn er sich darauf befindet. Wenn Sie ein gltf-Objekt mit Animationen haben, aber keine Trigger definieren, werden die Animationen nicht wiedergegeben. Der folgende Abschnitt beschreibt einen Workflow zum Hinzufügen dieser Trigger zu einem animierten gltf-Objekt.
 
@@ -255,7 +255,7 @@ Animationen dürfen nicht länger als 20 Minuten sein und dürfen nicht mehr als
 
 Windows Mr unterstützt das Kippen von Geometrie mithilfe negativer Skalen nicht. Geometrie mit negativen Skalen führt wahrscheinlich zu visuellen Artefakten.
 
-Das gltf-Asset muss auf die Standard Szene zeigen, wobei das Scene-Attribut verwendet wird, das von Windows Mr gerendert wird. Zusätzlich **erfordert** das Windows Mr-gltf-Lade Modul vor dem [Windows 10-Update vom April 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) Accessoren:
+Das gltf-Asset muss auf die Standard Szene zeigen, wobei das Scene-Attribut verwendet wird, das von Windows Mr gerendert wird. Zusätzlich **erfordert** das Windows Mr-gltf-Lade Modul vor dem [Windows 10-Update vom April 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018) Accessoren:
 * Muss über minimale und maximale Werte verfügen.
 * Der Typ Skalar muss ein componentType-UNSIGNED_SHORT (5123) oder UNSIGNED_INT (5125) sein.
 * Type vec2 und VEC3 müssen componentType float (5126) sein.

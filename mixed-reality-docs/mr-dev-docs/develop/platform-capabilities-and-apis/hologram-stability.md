@@ -8,12 +8,12 @@ ms.topic: article
 keywords: holograms, Stabilität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Framerate, Rendering, neuprojektion, Farbtrennung
 appliesto:
 - HoloLens
-ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 064e42f771391e77874796e91ea8e4d563c08ec2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006640"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582886"
 ---
 # <a name="hologram-stability"></a>Hologrammstabilität
 
@@ -25,11 +25,11 @@ Die Qualität von holograms ist das Ergebnis einer guten Umgebung und einer gute
 
 Die folgende Terminologie kann Ihnen helfen, wenn Sie Probleme mit der Umgebung, inkonsistente oder niedrige Renderingleistung oder etwas anderes erkennen.
 * **Genau.** Nachdem das – Hologramm weltweit gesperrt und in der realen Welt platziert wurde, sollte es sich in der Umgebung befinden, in der es relativ zur umgebenden Umgebung ist, und unabhängig von der Benutzer Bewegung oder kleinen und geringfügigen Umgebungs Änderungen. Wenn ein – Hologramm später an einem unerwarteten Speicherort angezeigt wird, ist dies ein *Genauigkeits* Problem. Solche Szenarien können eintreten, wenn zwei unterschiedliche Räume identisch aussehen.
-* **Jitter.** Benutzer beobachten Jitter als hohes Frequenz schütteln eines holograms, das auftreten kann, wenn die Nachverfolgung der Umgebung beeinträchtigt wird. Für Benutzer wird die [Sensor](../../sensor-tuning.md)Optimierung von der Lösung ausgeführt.
+* **Jitter.** Benutzer beobachten Jitter als hohes Frequenz schütteln eines holograms, das auftreten kann, wenn die Nachverfolgung der Umgebung beeinträchtigt wird. Für Benutzer wird die [Sensor](/hololens/hololens-updates)Optimierung von der Lösung ausgeführt.
 * **Der Judder.** Niedrige renderingfrequenzen führen zu ungleichen Bewegungs-und doppelten Bildern von holograms. Der Judder ist in holograms mit Motion besonders bemerkbar. Entwickler müssen eine [Konstante 60 fps](hologram-stability.md#frame-rate)beibehalten.
 * **Inter.** Benutzern wird die Abweichung angezeigt, da ein – Hologramm von der ursprünglichen Position entfernt wird. Die Abweichung erfolgt, wenn Sie Hologramme von [räumlichen Ankern](../../design/spatial-anchors.md)fern platzieren, insbesondere in nicht zugeordneten Teilen der Umgebung. Das Erstellen von holograms in der Nähe räumlicher Anker verringert die Wahrscheinlichkeit einer Abweichung.
 * **Schnell Einstieg.** Wenn ein – Hologramm gelegentlich von seinem Speicherort "springt" oder "springt". Wenn die Nachverfolgung holograms anpasst, werden die aktualisierten Kenntnisse ihrer Umgebung angepasst.
-* **MME.** Wenn ein – Hologramm zu bewegen scheint, das der Bewegung des Benutzer Kopfes entspricht. Das Schwimmen tritt auf, wenn die Anwendung die [neuprojektion](hologram-stability.md#reprojection)nicht vollständig implementiert hat und die hololens nicht für den aktuellen Benutzer [abgestimmt](../../calibration.md) sind. Der Benutzer kann die [Kalibrierungs](../../calibration.md) Anwendung erneut ausführen, um das Problem zu beheben. Entwickler können die Stabilisierungs Ebene aktualisieren, um die Stabilität zu verbessern.
+* **MME.** Wenn ein – Hologramm zu bewegen scheint, das der Bewegung des Benutzer Kopfes entspricht. Das Schwimmen tritt auf, wenn die Anwendung die [neuprojektion](hologram-stability.md#reprojection)nicht vollständig implementiert hat und die hololens nicht für den aktuellen Benutzer [abgestimmt](/hololens/hololens-calibration) sind. Der Benutzer kann die [Kalibrierungs](/hololens/hololens-calibration) Anwendung erneut ausführen, um das Problem zu beheben. Entwickler können die Stabilisierungs Ebene aktualisieren, um die Stabilität zu verbessern.
 * **Farbtrennung.** Die Anzeige in hololens ist ein sequenzieller sequenzieller Display, bei dem die Flash-Farbkanäle von rot-grün-blau-grün bei 60 Hz angezeigt werden (einzelne Farbfelder werden unter 240 Hz angezeigt). Jedes Mal, wenn ein Benutzer ein bewegendes Hologramm mit den Augen verfolgt, werden die führenden und nachfolgenden Kanten des – Hologramm in den einzelnen Farben getrennt und erzeugen einen Regenbogeneffekt. Der Grad der Trennung hängt von der Geschwindigkeit des holograms ab. In einigen seltenen Fällen kann es bei der Betrachtung eines stationären holograms auch zu einem Regenbogeneffekt kommen, der als *[Farbtrennung](hologram-stability.md#color-separation)* bezeichnet wird.
 
 ## <a name="frame-rate"></a>Bildfrequenz
@@ -45,7 +45,7 @@ Durch Rendering bei 60 fps führen Sie drei Dinge aus, um stabile Hologramme zu 
 
 **Konsistenz der Frame Rate** Die Konsistenz der Framerate ist so wichtig wie ein hoher Rahmen pro Sekunde. Gelegentlich gelöschte Frames sind für jede Content-Rich-Anwendung unvermeidlich, und der hololens implementiert einige ausgereifte Algorithmen, um gelegentlich auftretende Fehler zu beheben. Ein ständig schwankender Framerate ist für einen Benutzer jedoch deutlich deutlicher als bei einer konsistenten Ausführung mit niedrigeren Frameraten. Beispielsweise wird eine Anwendung, die für fünf Frames reibungslos rendert (60 fps für die Dauer dieser fünf Frames) und dann jeden anderen Frame für die nächsten 10 Frames (30 fps für die Dauer dieser 10 Frames) als eine Anwendung, die konsistent mit 30 fps rendert, angezeigt.
 
-Auf eine verwandte Anmerkung beschränkt das Betriebssystem Anwendungen auf 30 fps, wenn die [gemischte Reality-Erfassung](../../mixed-reality-capture.md) ausgeführt wird.
+Auf eine verwandte Anmerkung beschränkt das Betriebssystem Anwendungen auf 30 fps, wenn die [gemischte Reality-Erfassung](/hololens/holographic-photos-and-videos) ausgeführt wird.
 
 **Leistungsanalyse** Es gibt verschiedene Arten von Tools, die verwendet werden können, um die Anwendungs Frame Rate zu messen, z. b.:
 * GPUView
@@ -91,14 +91,14 @@ Es gibt vier Haupttypen der neuprojektion.
 Anwendungen müssen bestimmte Aktionen durchführen, um die verschiedenen Arten der neuprojektion zu aktivieren.
 * **Tiefen neuprojektion:** Die Anwendung übermittelt ihren tiefen Puffer für jeden gerenderten Frame an das System.  Bei Unity wird die tiefen neuprojektion mit der Option frei gegebener **tiefen Puffer** im **Windows Mixed Reality-Einstellungs** Bereich unter **XR-Plug**-in-Verwaltung ausgeführt.  DirectX-apps CommitDirect3D11DepthBuffer-Aufrufe.  Die Anwendung sollte setfocuspoint nicht aufrufen.
 * **Planare neuprojektion:** Bei jedem Frame teilen Anwendungen dem System den Speicherort einer zu stabilisierende Ebene mit.  Unity-Anwendungen nennen setfocuspointforframe und sollten den frei **gegebenen tiefen Puffer** deaktiviert haben.  DirectX-apps aufrufen setfocuspoint und sollten CommitDirect3D11DepthBuffer nicht aufrufen.
-* **Automatische planare neuprojektion:** Um dies zu aktivieren, muss die Anwendung ihren tiefen Puffer an das System übermitteln, wie dies für die Tiefe neuprojektion der Fall wäre. Apps, die das Mixed Reality Toolkit (mrtk) verwenden, können den [Kamera Einstellungs Anbieter](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) so konfigurieren, dass eine autoplanar-neuprojektion verwendet wird. Native apps sollten `DepthReprojectionMode` in den [holographiccamerarenderingparameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) auf `AutoPlanar` jeden Frame festlegen. Bei hololens Generation 1 sollte die Anwendung setfocuspoint nicht aufrufen.
+* **Automatische planare neuprojektion:** Um dies zu aktivieren, muss die Anwendung ihren tiefen Puffer an das System übermitteln, wie dies für die Tiefe neuprojektion der Fall wäre. Apps, die das Mixed Reality Toolkit (mrtk) verwenden, können den [Kamera Einstellungs Anbieter](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) so konfigurieren, dass eine autoplanar-neuprojektion verwendet wird. Native apps sollten `DepthReprojectionMode` in den [holographiccamerarenderingparameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) auf `AutoPlanar` jeden Frame festlegen. Bei hololens Generation 1 sollte die Anwendung setfocuspoint nicht aufrufen.
 
 ### <a name="choosing-reprojection-technique"></a>Auswählen der Methode zum erneuten Projektion
 
 Stabilisierungstyp |    Immersive Headsets |    Hololens Generation 1 | HoloLens 2
 --- | --- | --- | ---
-Tiefen neuprojektion |    Empfohlen |   – |   Empfohlen<br/><br/>Unity-Anwendungen müssen Unity 2018.4.12 oder höher oder Unity 2019,3 oder höher verwenden. Verwenden Sie andernfalls die automatische planare neuprojektion.
-Automatische planare neuprojektion | – |   Empfohlene Standardeinstellung |   Empfohlen, wenn die tiefen neuprojektion nicht die besten Ergebnisse liefert<br/><br/>Unity-Anwendungen werden für die Verwendung von Unity 2018.4.12 oder höher oder Unity 2019,3 oder höher empfohlen.  Frühere Unity-Versionen funktionieren mit leicht herabgestuften reprojektions Ergebnissen.
+Tiefen neuprojektion |    Empfohlen |   Nicht zutreffend |   Empfohlen<br/><br/>Unity-Anwendungen müssen Unity 2018.4.12 oder höher oder Unity 2019,3 oder höher verwenden. Verwenden Sie andernfalls die automatische planare neuprojektion.
+Automatische planare neuprojektion | Nicht zutreffend |   Empfohlene Standardeinstellung |   Empfohlen, wenn die tiefen neuprojektion nicht die besten Ergebnisse liefert<br/><br/>Unity-Anwendungen werden für die Verwendung von Unity 2018.4.12 oder höher oder Unity 2019,3 oder höher empfohlen.  Frühere Unity-Versionen funktionieren mit leicht herabgestuften reprojektions Ergebnissen.
 Planare neuprojektion |   Nicht empfohlen |   Empfohlen, wenn die automatische Planar nicht die besten Ergebnisse liefert | Verwenden Sie, wenn keine der tiefen Optionen gewünschte Ergebnisse liefert.    
 
 ### <a name="verifying-depth-is-set-correctly"></a>Überprüfen der Tiefe Festlegung der Tiefe
@@ -181,8 +181,8 @@ Obwohl es schwierig ist, die Trennung von Farben vollständig zu vermeiden, steh
 
 Wie zuvor sind das Rendering bei 60 fps und das Festlegen der Stabilisierungs Ebene die wichtigsten Techniken für die – Hologramm-Stabilität. Stellen Sie zunächst sicher, dass die Framerate den Erwartungen entspricht, wenn Sie mit einer merkbaren Farbtrennung
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Grundlegendes zur Leistung für gemischte Realität](understanding-performance-for-mixed-reality.md)
-* [Farbe, Licht und Materialien](../../color,-light-and-materials.md)
+* [Farbe, Licht und Materialien](../../design/color-light-and-materials.md)
 * [Instinktive Interaktionen](../../design/interaction-fundamentals.md)
 * [Mrtk Hologram-Stabilisierung](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html)

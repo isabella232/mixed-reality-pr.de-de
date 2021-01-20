@@ -6,16 +6,16 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: Galaxy Explorer, Case-Studie, Project, Sample, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4a5df06009d2c9c25b12c8e7f4bd1622821964c8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009580"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582894"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>Die Erstellung von Galaxy Explorer für hololens 2
 
-Willkommen bei der aktualisierten Galaxy Explorer for hololens 2-Anwendung! Der [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") wurde ursprünglich als Open-Source-Anwendung für hololens (erste Generation) durch das Teilen Ihres Ideen-Programms entwickelt und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die [neuen und spannenden Funktionen von hololens 2](https://www.microsoft.com/hololens/hardware).
+Willkommen bei der aktualisierten Galaxy Explorer for hololens 2-Anwendung! Der [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "Galaxy Explorer") wurde ursprünglich als Open-Source-Anwendung für hololens (erste Generation) durch das Teilen Ihres Ideen-Programms entwickelt und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die [neuen und spannenden Funktionen von hololens 2](https://www.microsoft.com/hololens/hardware).
 
 Als eines der [Mixed Reality-Studio von Microsoft](galaxy-explorer-update.md#mixed-reality-studios)entwickeln wir in der Regel kommerzielle Lösungen und entwickeln & Tests auf Zielplattformen im gesamten Entwicklungs-und Entwicklungsprozess. Wir arbeiten an diesem Projekt, indem wir die Frameworks und Tools (z. b. [mrtk](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) nutzen, wenn Sie für uns und die Community verfügbar sind, und wir möchten Sie für die Fahrt zusammenbringen.
 

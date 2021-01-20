@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 05/15/2019
 ms.topic: article
 keywords: VR, LBE, standortbezogene Unterhaltung, VR-Arcade, Arcade, immersiv, QR, QR-Code, hololens2
-ms.openlocfilehash: 7e5931e0d23ef6c905b8ec54d08e572a89e747e0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009400"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583141"
 ---
 # <a name="qr-code-tracking"></a>Nachverfolgen von QR-Codes
 
@@ -21,7 +21,7 @@ HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordi
 
 <table>
 <tr>
-<th>Funktion</th><th style="width:150px"> <a href="../../hololens-hardware-details.md">HoloLens (1. Generation)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Funktion</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens (1. Generation)</a></th><th style="width:150px">HoloLens 2</th><th style="width:150px"> <a href="../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> QR-Code-Erkennung</td><td style="text-align: center;">️</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;">✔️</td>
 </tr>
@@ -128,7 +128,7 @@ Jeder erkannte QR-Code macht ein [räumliches Koordinatensystem verfügbar](../.
 
 Wenn Sie das QR-SDK direkt verwenden, zeigt die Z-Achse zum Papier (nicht dargestellt) – bei der Konvertierung in Unity-Koordinaten zeigt die Z-Achse aus dem Papier heraus und ist linkshändig.
 
-Das SpatialCoordinateSystem eines QR-Codes wird wie dargestellt ausgerichtet. Sie können das Koordinatensystem von der Plattform abrufen, indem Sie <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> aufrufen und die SpatialGraphNodeId des Codes übergeben.
+Das SpatialCoordinateSystem eines QR-Codes wird wie dargestellt ausgerichtet. Sie können das Koordinatensystem von der Plattform abrufen, indem Sie <a href="/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.createcoordinatesystemfornode" target="_blank">SpatialGraphInteropPreview::CreateCoordinateSystemForNode</a> aufrufen und die SpatialGraphNodeId des Codes übergeben.
 
 Der unten abgebildete C++-Code zeigt, wie ein Rechteck erstellt und mithilfe des Koordinatensystems des QR-Codes platziert wird:
 
@@ -222,7 +222,7 @@ Windows Mixed Reality-Geräte erkennen QR-Codes auf der Systemebene im Treiber. 
 Wir empfehlen, Ihre App so zu konfigurieren, dass QR-Codes, die älter als ein bestimmter Zeitstempel sind, ignoriert werden. Aktuell unterstützt die API das Bereinigen des QR-Codeverlaufs nicht.
 
 ### <a name="qr-code-placement-in-a-space"></a>Platzierung von QR-Codes im Raum
-Empfehlungen zur Platzierung von QR-Codes finden Sie unter [Umgebungsüberlegungen für HoloLens](../../environment-considerations-for-hololens.md).
+Empfehlungen zur Platzierung von QR-Codes finden Sie unter [Umgebungsüberlegungen für HoloLens](/hololens/hololens-environment-considerations).
 
 ## <a name="qr-api-reference"></a>QR-API-Referenz
 
@@ -460,4 +460,4 @@ namespace Microsoft.MixedReality.QR
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Koordinatensysteme](../../design/coordinate-systems.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a>

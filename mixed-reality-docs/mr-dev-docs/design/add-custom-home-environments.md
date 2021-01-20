@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Custom Environment, Places, Cliff House, SkyLoft, User, CREATE, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 2d88b4e20c2703b554572c0d39d5c69767164694
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848081"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583300"
 ---
 # <a name="design-your-own-immersive-environments"></a>Entwerfen eigener immersiver Umgebungen
 
 >[!NOTE]
 >Dies ist ein experimentelles Feature. Probieren Sie es aus, und machen Sie sich damit vertraut, aber es ist nicht verwunderlich, wenn alles wie erwartet funktioniert. Wir evaluieren die Fähigkeit dieses Features und arbeiten daran, Sie zu verwenden. Teilen Sie uns daher ihre Erfahrung (und alle gefundenen Fehler) in den [Entwickler Foren](https://forums.hololens.com/categories/custom-home-environments)mit.
 
-Ab dem [Windows 10 April 2018-Update](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)haben wir eine experimentelle Funktion aktiviert, mit der Sie der Stellen Auswahl (im Startmenü) benutzerdefinierte Umgebungen hinzufügen können, um Sie als [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md)zu verwenden. Windows Mixed Reality verfügt über zwei Standard Umgebungen: "Klippe House" und "SkyLoft", die Sie als Startseite auswählen können. Durch das Erstellen von benutzerdefinierten Umgebungen können Sie die Liste mit ihren eigenen Schöpfungen erweitern. Diese Funktion ist in einem frühen Zustand verfügbar, um die Interessen von Creators und Entwicklern zu evaluieren. Sehen Sie sich an, welche Arten von Welten Sie erstellen und wie Sie mit verschiedenen Authoring Tools arbeiten.
+Ab dem [Windows 10 April 2018-Update](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)haben wir eine experimentelle Funktion aktiviert, mit der Sie der Stellen Auswahl (im Startmenü) benutzerdefinierte Umgebungen hinzufügen können, um Sie als [Windows Mixed Reality Home](../discover/navigating-the-windows-mixed-reality-home.md)zu verwenden. Windows Mixed Reality verfügt über zwei Standard Umgebungen: "Klippe House" und "SkyLoft", die Sie als Startseite auswählen können. Durch das Erstellen von benutzerdefinierten Umgebungen können Sie die Liste mit ihren eigenen Schöpfungen erweitern. Diese Funktion ist in einem frühen Zustand verfügbar, um die Interessen von Creators und Entwicklern zu evaluieren. Sehen Sie sich an, welche Arten von Welten Sie erstellen und wie Sie mit verschiedenen Authoring Tools arbeiten.
 
 Wenn Sie eine benutzerdefinierte Umgebung verwenden, werden Sie feststellen, dass die teleportierung, die Interaktion mit apps und das Platzieren von holograms so funktioniert, wie es im-und SkyLoft funktioniert. Sie können das Web in einer Fantasy-Landschaft durchsuchen oder einen futuristischen Ort mit holograms ausfüllen. die Möglichkeiten sind unendlich.
 
@@ -32,7 +32,7 @@ Wenn Sie eine benutzerdefinierte Umgebung verwenden, werden Sie feststellen, das
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
      <tr>
@@ -101,7 +101,7 @@ Flag|Empfohlene Werte|BESCHREIBUNG
 -Max-Textur Größe|1024 oder 2048| Optimieren Sie den Wert, um die Qualität der Texturen zu verbessern. der Standardwert ist 512x512. Ein größerer Wert wirkt sich erheblich auf die Dateigröße der Umgebung aus, sodass das Limit von 256 MB berücksichtigt wird.
 -Minimale Version|1803|Benutzerdefinierte Umgebungen werden nur für Versionen von Windows >= 1803 unterstützt. Mit diesem Flag werden Texturen für ältere Versionen entfernt und die Dateigröße des endgültigen Assets reduziert.
 
-Zum Beispiel:
+Beispiel:
 
 ```cmd
 WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1803
@@ -151,4 +151,3 @@ Wenn Sie Ihre benutzerdefinierte Umgebung erstellen, wird eine Akustik-Rendering
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Windows Mixed Reality Asset Converter (auf GitHub)](https://github.com/Microsoft/glTF-Toolkit/releases)
-

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: räumliche Zuordnung, hololens, gemischte Realität, Oberflächenrekonstruktion, Mesh, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Szenen Verständnis, World Mesh, oksion, Physik, Navigation, Oberflächen Beobachter, Rendering, Mesh-Verarbeitung
-ms.openlocfilehash: 4305a291a2a83f4425c5a80d25dd8145a7033492
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848198"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583269"
 ---
 # <a name="spatial-mapping"></a>Räumliche Abbildung
 
@@ -32,7 +32,7 @@ Die räumliche Zuordnung bietet eine detaillierte Darstellung der realen Oberfl�
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -78,7 +78,7 @@ Bei hololens 2 ist es möglich, eine statische Version der räumlichen Mapping-D
 
 ## <a name="what-influences-spatial-mapping-quality"></a>Was beeinflusst die Qualität der räumlichen Zuordnung?
 
-Mehrere [hier](../environment-considerations-for-hololens.md)ausführliche Faktoren können die Häufigkeit und den Schweregrad dieser Fehler beeinflussen.  Allerdings sollten Sie Ihre Anwendung so entwerfen, dass die Benutzer ihre Ziele auch bei Auftreten von Fehlern in den räumlichen Daten der Zuordnung erreichen können.
+Mehrere [hier](/hololens/hololens-environment-considerations)ausführliche Faktoren können die Häufigkeit und den Schweregrad dieser Fehler beeinflussen.  Allerdings sollten Sie Ihre Anwendung so entwerfen, dass die Benutzer ihre Ziele auch bei Auftreten von Fehlern in den räumlichen Daten der Zuordnung erreichen können.
 
 ## <a name="common-usage-scenarios"></a>Allgemeine Verwendungsszenarios
 
@@ -209,13 +209,13 @@ Es gibt drei Hauptmethoden, mit denen die Netzen für räumliche zuordnet häufi
    * Beachten Sie, dass räumliche Netze sich von der Art der Netzen unterscheiden, die von einem 3D-Künstler erstellt werden könnten. Die Dreiecks Topologie ist nicht so gut wie die von einem Benutzer erstellte Topologie, und das Mesh wird von [verschiedenen Fehlern](spatial-mapping.md#what-influences-spatial-mapping-quality)beeinträchtigt.
    * Um eine ansprechende visuelle Ästhetik zu erstellen, empfiehlt es sich möglicherweise, einige [Gitter Verarbeitungs](spatial-mapping.md#mesh-processing)Vorgänge durchzuführen, z. b. um Lücken oder eine Glättung von Oberflächen Normalisierungen Möglicherweise möchten Sie auch einen Shader verwenden, um auf dem Mesh entwickelte Texturen zu projizieren, anstatt die Mesh-Topologie und normale direkt zu visualisieren.
 * Zum okdieren von holograms hinter realen Oberflächen
-   * Räumliche Oberflächen können in einem tiefen Durchlauf gerendert werden. Dies wirkt sich nur auf den [tiefen Puffer](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) aus und wirkt sich nicht auf Farb Renderziele aus.
+   * Räumliche Oberflächen können in einem tiefen Durchlauf gerendert werden. Dies wirkt sich nur auf den [tiefen Puffer](/windows/win32/direct3d9/depth-buffers) aus und wirkt sich nicht auf Farb Renderziele aus.
    * Dadurch wird der tiefen Puffer so priert, dass er nachfolgend hinter räumlichen Oberflächen gerendert wird. Die genaue okgrams-okgramme verbessern den Sinn, dass holograms tatsächlich im physischen Raum des Benutzers vorhanden sind.
-   * Um das tiefe Rendering zu aktivieren, aktualisieren Sie den Blend-Status, um [rendertargetwrite temask für alle farbrenderziele](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) auf NULL festzulegen.
+   * Um das tiefe Rendering zu aktivieren, aktualisieren Sie den Blend-Status, um [rendertargetwrite temask für alle farbrenderziele](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) auf NULL festzulegen.
 * So ändern Sie die Darstellung von holograms, die von realen Oberflächen verdeckt werden
-   * Normalerweise wird die gerenderte Geometrie ausgeblendet, wenn Sie ausgeblendet ist. Dies wird erreicht, indem die tiefen Funktion in Ihrem [Status der tiefen Schablone](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) auf "kleiner als oder gleich" festgelegt wird, sodass die Geometrie nur sichtbar ist, wenn Sie der Kamera **näher** als alle zuvor gerenderten Geometrie entspricht.
+   * Normalerweise wird die gerenderte Geometrie ausgeblendet, wenn Sie ausgeblendet ist. Dies wird erreicht, indem die tiefen Funktion in Ihrem [Status der tiefen Schablone](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) auf "kleiner als oder gleich" festgelegt wird, sodass die Geometrie nur sichtbar ist, wenn Sie der Kamera **näher** als alle zuvor gerenderten Geometrie entspricht.
    * Allerdings kann es hilfreich sein, bestimmte Geometrie sichtbar zu machen, auch wenn Sie verdeckt ist, und die Darstellung zu ändern, wenn Sie als Möglichkeit zum Bereitstellen von visuellem Feedback für den Benutzer bereitgestellt wird. So kann die Anwendung z. b. den Speicherort eines Objekts anzeigen, während klar ist, dass Sie sich hinter einer realen Oberfläche befindet.
-   * Um dies zu erreichen, müssen Sie die Geometrie ein zweites Mal mit einem anderen Shader Rendering, der die gewünschte Darstellung "okded" erstellt. Bevor Sie die Geometrie zum zweiten Mal rendern, nehmen Sie zwei Änderungen an Ihrem [tiefen Schablonen Zustand](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx)vor. Legen Sie zunächst die tiefen Funktion auf "größer als oder gleich" fest, damit die Geometrie nur dann sichtbar ist, wenn Sie sich von der Kamera **weiter** entfernt als alle zuvor gerenderten Geometrie. Legen Sie für depthwrite den Wert 0 (null) fest, damit der tiefen Puffer nicht geändert wird (der tiefen Puffer sollte weiterhin die Tiefe der Geometrie darstellen, die der Kamera **am nächsten** ist).
+   * Um dies zu erreichen, müssen Sie die Geometrie ein zweites Mal mit einem anderen Shader Rendering, der die gewünschte Darstellung "okded" erstellt. Bevor Sie die Geometrie zum zweiten Mal rendern, nehmen Sie zwei Änderungen an Ihrem [tiefen Schablonen Zustand](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)vor. Legen Sie zunächst die tiefen Funktion auf "größer als oder gleich" fest, damit die Geometrie nur dann sichtbar ist, wenn Sie sich von der Kamera **weiter** entfernt als alle zuvor gerenderten Geometrie. Legen Sie für depthwrite den Wert 0 (null) fest, damit der tiefen Puffer nicht geändert wird (der tiefen Puffer sollte weiterhin die Tiefe der Geometrie darstellen, die der Kamera **am nächsten** ist).
 
 Die [Leistung](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md) ist ein wichtiger Aspekt beim Rendern von Netzen für räumliche Zuordnung. Hier finden Sie einige renderingleistungstechniken, die speziell für das Rendern räumlicher Mapping-
 * Dreiecks Dichte anpassen
@@ -227,11 +227,11 @@ Die [Leistung](../develop/platform-capabilities-and-apis/understanding-performan
    * Da die Erstellung pro Mesh durchgeführt wird und räumliche Oberflächen sehr groß sein können, kann das unterbrechen jedes räumlichen Oberflächen Netzes in kleinere Blöcke zu einer effizienteren Leistung führen (da weniger Offscreen-Dreiecke gerendert werden). Es gibt jedoch einen Kompromiss, welche weiteren Netzen Sie haben, desto mehr zeichnen-Aufrufe müssen Sie durchführen, was die CPU-Kosten erhöhen kann. In einem Extremfall könnte die Frustum-cullinger-Berechnungen selbst über messbare CPU-Kosten verfügen.
 * Rendering-Reihenfolge anpassen
    * Räumliche Oberflächen sind tendenziell groß, da Sie die gesamte Umgebung des Benutzers darstellen. Die Pixel Verarbeitungskosten für die GPU können hoch sein, insbesondere in Fällen, in denen es mehr als eine Ebene der sichtbaren Geometrie gibt (einschließlich räumlicher Oberflächen und anderer Hologramme). In diesem Fall verbleibt die Ebene, die dem Benutzer am nächsten ist, alle Ebenen weiter, sodass alle GPU-Zeit, die für das Rendering dieser entfernteren Schichten aufgewendet wird, verschwendet wird.
-   * Um diese redundante Arbeit auf der GPU zu reduzieren, ist es hilfreich, nicht transparente Oberflächen in der Reihenfolge vor und nach hinten zu Rendering (Näheres zuerst, entfernter entfernter). Durch ' deckend ' bedeuten wir die Oberflächen, für die ' depthwrite temask ' in Ihrem [tiefen Schablonen Zustand](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx)auf einen Wert festgelegt ist. Wenn die nächstliegenden Oberflächen gerendert werden, wird der tiefen Puffer als primwert fest gegeben, sodass entferne Oberflächen vom Pixel Prozessor auf der GPU effizient übersprungen werden.
+   * Um diese redundante Arbeit auf der GPU zu reduzieren, ist es hilfreich, nicht transparente Oberflächen in der Reihenfolge vor und nach hinten zu Rendering (Näheres zuerst, entfernter entfernter). Durch ' deckend ' bedeuten wir die Oberflächen, für die ' depthwrite temask ' in Ihrem [tiefen Schablonen Zustand](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)auf einen Wert festgelegt ist. Wenn die nächstliegenden Oberflächen gerendert werden, wird der tiefen Puffer als primwert fest gegeben, sodass entferne Oberflächen vom Pixel Prozessor auf der GPU effizient übersprungen werden.
 
 ## <a name="mesh-processing"></a>Mesh-Verarbeitung
 
-Eine Anwendung möchte möglicherweise [verschiedene Vorgänge](spatial-mapping.md#mesh-processing) auf räumlichen Oberflächen Netzen durchführen, um Ihren Anforderungen gerecht zu werden. Der Index und die Scheitelpunkt Daten, die für jedes räumliche Oberflächen Mesh bereitgestellt werden, verwenden dasselbe vertraute Layout wie der [Scheitelpunkt und die Index Puffer](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) , die zum Rendern von Dreiecksnetzen in allen modernen renderingapis verwendet werden. Ein wichtiger Fakt ist jedoch, dass räumliche Zuordnungs Dreiecke eine Sortier **Reihenfolge vor dem Uhrzeigersinn** haben. Jedes Dreieck wird durch drei Scheitelpunkt Indizes im Index Puffer des Netzes dargestellt, und diese Indizes identifizieren die Scheitel Punkte des Dreiecks in einer Reihenfolge im **Uhrzeigersinn** , wenn das Dreieck von der **Vorder** Seite aus angezeigt wird. Die Vorderseite (oder außen) der räumlichen Oberflächen Netze entspricht wie erwartet der Vorderseite (Sichtbarkeit) der realen Oberflächen.
+Eine Anwendung möchte möglicherweise [verschiedene Vorgänge](spatial-mapping.md#mesh-processing) auf räumlichen Oberflächen Netzen durchführen, um Ihren Anforderungen gerecht zu werden. Der Index und die Scheitelpunkt Daten, die für jedes räumliche Oberflächen Mesh bereitgestellt werden, verwenden dasselbe vertraute Layout wie der [Scheitelpunkt und die Index Puffer](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) , die zum Rendern von Dreiecksnetzen in allen modernen renderingapis verwendet werden. Ein wichtiger Fakt ist jedoch, dass räumliche Zuordnungs Dreiecke eine Sortier **Reihenfolge vor dem Uhrzeigersinn** haben. Jedes Dreieck wird durch drei Scheitelpunkt Indizes im Index Puffer des Netzes dargestellt, und diese Indizes identifizieren die Scheitel Punkte des Dreiecks in einer Reihenfolge im **Uhrzeigersinn** , wenn das Dreieck von der **Vorder** Seite aus angezeigt wird. Die Vorderseite (oder außen) der räumlichen Oberflächen Netze entspricht wie erwartet der Vorderseite (Sichtbarkeit) der realen Oberflächen.
 
 Anwendungen sollten nur Mesh-Vereinfachungen durchführen, wenn die von der Oberfläche Beobachter bereitgestellte Größe des gröbsten-Dreiecks immer noch ungrob ist. diese Arbeit ist Rechen intensiv und wird von der Laufzeit bereits ausgeführt, um die verschiedenen bereitgestellten Detailebenen zu generieren.
 
@@ -292,7 +292,7 @@ Wenn Sie die richtige Scanfunktion entwerfen möchten, sollten Sie die folgenden
    * Eine Anwendung erfordert möglicherweise eine Überprüfung aller Oberflächen im aktuellen Raum, einschließlich derjenigen hinter dem Benutzer.
    * Beispielsweise kann ein Spiel den Benutzer in die Rolle "gulleber" versetzen, die von Hunderten von kleinen lilliputians aus allen Richtungen fast erreicht werden kann.
    * In solchen Fällen muss die Anwendung bestimmen, wie viele der Oberflächen im aktuellen Raum bereits gescannt wurden, und den Blick des Benutzers darauf ausrichten, große Lücken zu füllen.
-   * Der Schlüssel zu diesem Prozess ist das Bereitstellen von visuellem Feedback, mit dem der Benutzer klar ist, welche Oberflächen noch nicht gescannt wurden. Die Anwendung könnte z. b. einen [Entfernungs basierten Nebel](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) verwenden, um Bereiche visuell hervorzuheben, die nicht von räumlichen Mapping-Flächen abgedeckt werden.
+   * Der Schlüssel zu diesem Prozess ist das Bereitstellen von visuellem Feedback, mit dem der Benutzer klar ist, welche Oberflächen noch nicht gescannt wurden. Die Anwendung könnte z. b. einen [Entfernungs basierten Nebel](/windows/win32/direct3d9/fog-formulas) verwenden, um Bereiche visuell hervorzuheben, die nicht von räumlichen Mapping-Flächen abgedeckt werden.
 
 * **Erstellen Sie eine anfängliche Momentaufnahme der Umgebung.**
    * Eine Anwendung möchte möglicherweise alle Änderungen in der Umgebung ignorieren, nachdem Sie eine anfängliche "Momentaufnahme" übernommen haben.

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, hololens, holograms, Design, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, was ist die erweiterte Realität
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757558"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583345"
 ---
 # <a name="what-is-a-hologram"></a>Was ist ein Hologramm?
 
@@ -33,7 +33,7 @@ Hololens ermöglicht das Erstellen von **holograms**, bei denen es sich um Objek
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -71,7 +71,7 @@ Wenn Sie über einen bestimmten Ort für ein Hologram verfügen, können Sie ihn
 
 Einige Hologramme folgen dem Benutzer und positionieren sich auf der Grundlage des Benutzers, unabhängig davon, wo Sie sich befinden. Sie können sich auch ein – Hologramm für eine Weile mit Ihnen anmelden und dann auf der Wand platzieren, sobald Sie zu einem anderen Raum gelangen.
 
-**Empfohlene Methoden**
+**bewährten Methoden**
 * In einigen Szenarien kann es sinnvoll sein, dass holograms im gesamten Szenario leicht erkennbar oder sichtbar sind. Es gibt zwei allgemeine Vorgehensweisen für diese Art der Positionierung. Wir nennen Sie **"Display-Locked"** und **"Body-Locked"**.
    * Anzeige-gesperrte Inhalte sind auf der Geräte Anzeige Positions bedingt "gesperrt". Diese Art von Inhalt ist aus verschiedenen Gründen schwierig, einschließlich des unnatürlichen Gefühls "clingyness", bei dem viele Benutzer frustriert sind und diese "Schütteln" möchten. Im Allgemeinen haben viele Designer besser festgestellt, dass Inhalte mit der Anzeige nicht gesperrt werden.
    * Der Body-Locked-Ansatz ist weitaus besser verzeihbar. Die Text Sperre ist, wenn Sie ein – Hologramm in den Textkörper oder den Blick Vektor des Benutzers im 3D--Raum. Viele Benutzeroberflächen haben ein Verhalten bei der Text Sperrung übernommen, bei dem das – Hologramm "dem Benutzer angezeigt wird, sodass der Benutzer Ihren Text drehen und durch Leerzeichen bewegen kann, ohne das – Hologramm zu verlieren. Durch die Einbindung einer Verzögerung wird die – Hologramm-Bewegung natürlicher. Beispielsweise verwendet eine zentrale Benutzeroberfläche des Windows Holographic-Betriebssystems eine Variation von Body-Locks, die auf den Blick des Benutzers folgt, mit einer sanften, elastischen, elastischen Verzögerung, während der Benutzer den Kopf schaltet.
@@ -130,4 +130,3 @@ Wenn Sie der [Erkundungs-Journey](get-started-with-mr.md) folgen, die wir entwor
 
 > [!div class="nextstepaction"]
 > [Erweitern Ihres Entwurfsprozesses](case-study-expanding-the-design-process-for-mixed-reality.md)
-

@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: Anleitungen, Zubehör, Bluetooth, BT, Controller, Gamepad, Clicker, Xbox, Hardware, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Motion Controller
-ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b9a58a34a88de01d1d2351ff0a5efbe4f99298db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757718"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583323"
 ---
 # <a name="hardware-accessories"></a>Hardware-Zubehör
 
 Windows Mixed Reality-Geräte unterstützen Zubehör. Sie können Bluetooth-oder USB-Ports verwenden, um unterstützte Zubehör mit einem immersiven Headset von Ihrem PC zu koppeln.
 
-Informationen zur Verwendung von Bluetooth-Zubehör mit hololens finden Sie unter [Herstellen einer Verbindung mit Bluetooth und USB-C-Geräten](https://docs.microsoft.com/hololens/hololens-connect-devices).
+Informationen zur Verwendung von Bluetooth-Zubehör mit hololens finden Sie unter [Herstellen einer Verbindung mit Bluetooth und USB-C-Geräten](/hololens/hololens-connect-devices).
 
 Immersive Headsets in Windows Mixed Reality erfordern Zubehör für Eingaben, die über den [Blick](../design/gaze-and-commit.md) und die [Stimme](../design/voice-input.md)hinausgehen. Unterstützte Zubehör sind **Tastatur-und Maus-**, **Gamepad**-und **[Bewegungs Controller](../design/motion-controllers.md)**.
 

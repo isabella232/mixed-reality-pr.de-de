@@ -6,16 +6,16 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: Kamera, hololens, Farbkamera, Vorderseite, hololens 2, CV, Maschinelles sehen, Zeichen, Marker, QR-Code, QR, Foto, Video
-ms.openlocfilehash: 9261465f362e6aa0e97d9f6b1f61af305c178079
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530378"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583627"
 ---
 # <a name="locatable-camera"></a>Ausrichtbare Kamera
 
-Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des Geräts bereitgestellt wird. Dadurch können apps erkennen, was der Benutzer sieht. Entwickler haben Zugriff auf und die Steuerung der Kamera, ebenso wie bei Farbkameras auf Smartphones, portables oder Desktops. Die gleichen universellen Windows [Media Capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) -und Windows Media Foundation-APIs, die auf mobilen und Desktop-apps funktionieren, funktionieren in hololens. Unity [hat diese Windows-APIs](../unity/locatable-camera-in-unity.md) in die abstrakten Features der Kamera Verwendung in hololens integriert. Zu den featureaufgaben zählen regelmäßige Fotos und Videos (mit oder ohne Hologramme) und das Auffinden der Position der Kamera in der Szene.
+Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des Geräts bereitgestellt wird. Dadurch können apps erkennen, was der Benutzer sieht. Entwickler haben Zugriff auf und die Steuerung der Kamera, ebenso wie bei Farbkameras auf Smartphones, portables oder Desktops. Die gleichen universellen Windows [Media Capture](/uwp/api/Windows.Media.Capture.MediaCapture) -und Windows Media Foundation-APIs, die auf mobilen und Desktop-apps funktionieren, funktionieren in hololens. Unity [hat diese Windows-APIs](../unity/locatable-camera-in-unity.md) in die abstrakten Features der Kamera Verwendung in hololens integriert. Zu den featureaufgaben zählen regelmäßige Fotos und Videos (mit oder ohne Hologramme) und das Auffinden der Position der Kamera in der Szene.
 
 ## <a name="device-camera-information"></a>Gerätekamera Informationen
 
@@ -28,7 +28,7 @@ Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des
   |  Video  |  Vorschau  |  Auch  |  Horizontales Feld der Ansicht (H-FOV) |  Empfohlene Verwendung | 
   |----------|----------|----------|----------|----------|
   |  1.280 x 720 |  1.280 x 720 |  1.280 x 720 |  45 deg  |  (Standardmodus mit Videostabilisierung) | 
-  |  – |  – |  2048x1152 |  67 deg |  Bild mit der höchsten Auflösung | 
+  |  Nicht zutreffend |  Nicht zutreffend |  2048x1152 |  67 deg |  Bild mit der höchsten Auflösung | 
   |  1408x792 |  1408x792 |  1408x792 |  48 deg |  Überprüfung (Padding) vor der Videostabilisierung | 
   |  1344x756 |  1344x756 |  1344x756 |  67 deg |  Großer FOV-Videomodus mit Overscan | 
   |  896x504 |  896x504 |  896x504 |  48 deg |  Niedriger Energie-/tieflösungmodus für Abbild Verarbeitungsaufgaben | 
@@ -37,7 +37,7 @@ Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des
 
 * Auto-Fokus Foto/Video-Kamera (PV) mit automatischem weißen Ausgleich, automatischer Verfügbarkeit und vollständiger Bild Verarbeitungs Pipeline.
 * Die Welt der weißen Datenschutz wird immer dann beleuchtet, wenn die Kamera aktiv ist.
-* Hololens 2 unterstützt verschiedene Kameraprofile. Erfahren Sie, wie [Sie Kamerafunktionen ermitteln und auswählen](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles)können.
+* Hololens 2 unterstützt verschiedene Kameraprofile. Erfahren Sie, wie [Sie Kamerafunktionen ermitteln und auswählen](//windows/uwp/audio-video-camera/camera-profiles)können.
 * Die Kamera unterstützt die folgenden Profile und Auflösungen (alle Video Modi sind 16:9-Seitenverhältnis):
   
   | Profil                                         | Video     | Vorschau   | Auch     | Frameraten | Horizontales Feld der Ansicht (H-FOV) | Empfohlene Verwendung                             |
@@ -59,7 +59,7 @@ Hololens enthält eine weltweit eingebundene Kamera, die auf der Vorderseite des
   | Videoconferencing, 100 balancedvideoandphoto, 120 | 424x240   |           |           | 15, 30       | 64,69                            | Video Konferenzen, Szenarios mit langer Laufzeit |
 
 > [!NOTE]
-> Kunden können die [gemischte Reality-Erfassung](../../mixed-reality-capture.md) nutzen, um Videos oder Fotos Ihrer APP zu erstellen, die Hologramme und Videostabilisierung enthalten.
+> Kunden können die [gemischte Reality-Erfassung](/hololens/holographic-photos-and-videos) nutzen, um Videos oder Fotos Ihrer APP zu erstellen, die Hologramme und Videostabilisierung enthalten.
 >
 >Als Entwickler sollten Sie beim Erstellen Ihrer APP berücksichtigen, dass Sie beim Erfassen von Inhalten so gut wie möglich aussehen sollten. Sie können die gemischte Reality-Erfassung auch direkt in Ihrer APP aktivieren (und anpassen). Weitere Informationen finden Sie unter [Mixed Reality Capture für Entwickler](mixed-reality-capture-for-developers.md).
 
@@ -75,20 +75,20 @@ Befolgen Sie die Anweisungen im Artikel "cameraintrinsics" und "cameracoordinate
 
 ### <a name="using-mediaframereference"></a>Verwenden von mediaframereferenzierung
 
-Diese Anweisungen gelten, wenn Sie mit der [mediaframereferenzierungsklasse](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) Bild Frames von der Kamera lesen.
+Diese Anweisungen gelten, wenn Sie mit der [mediaframereferenzierungsklasse](//uwp/api/windows.media.capture.frames.mediaframereference) Bild Frames von der Kamera lesen.
 
-Jeder Bild Rahmen (egal ob Foto oder Video) enthält ein [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) , das zum Zeitpunkt der Erfassung auf der Kamera verankert ist, auf die mit der [CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) -Eigenschaft von [mediaframereferenziert](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)werden kann. Jeder Frame enthält eine Beschreibung des Kamera-Lens-Modells, das in der Eigenschaft [cameraintrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) zu finden ist. In der Regel definieren diese Transformationen für jedes Pixel einen Strahl in 3D-Raum, der den Pfad darstellt, der von den Photonen, die das Pixel erzeugt haben, übernommen wird. Diese Strahlen können mit anderem Inhalt in der APP verknüpft werden, indem die Transformation aus dem Koordinatensystem des Frames in ein anderes Koordinatensystem (z. b. aus einem [stationären Verweis Rahmen](../../design/coordinate-systems.md#stationary-frame-of-reference)) bezogen wird. 
+Jeder Bild Rahmen (egal ob Foto oder Video) enthält ein [spatialcoordinatesystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) , das zum Zeitpunkt der Erfassung auf der Kamera verankert ist, auf die mit der [CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem) -Eigenschaft von [mediaframereferenziert](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)werden kann. Jeder Frame enthält eine Beschreibung des Kamera-Lens-Modells, das in der Eigenschaft [cameraintrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) zu finden ist. In der Regel definieren diese Transformationen für jedes Pixel einen Strahl in 3D-Raum, der den Pfad darstellt, der von den Photonen, die das Pixel erzeugt haben, übernommen wird. Diese Strahlen können mit anderem Inhalt in der APP verknüpft werden, indem die Transformation aus dem Koordinatensystem des Frames in ein anderes Koordinatensystem (z. b. aus einem [stationären Verweis Rahmen](../../design/coordinate-systems.md#stationary-frame-of-reference)) bezogen wird. 
 
 Jeder Bild Rahmen stellt Folgendes bereit:
 * Pixel Daten (im Format RGB/NV12/JPEG/usw.)
-* Ein [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) vom Speicherort der Erfassung
-* Eine [cameraintrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) -Klasse, die den Linsen Modus der Kamera enthält.
+* Ein [spatialcoordinatesystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) vom Speicherort der Erfassung
+* Eine [cameraintrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) -Klasse, die den Linsen Modus der Kamera enthält.
 
 Das [holographicfacetracking-Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking) zeigt die relativ unkomplizierte Methode zum Abfragen der Transformation zwischen dem Koordinatensystem der Kamera und ihren eigenen Anwendungs Koordinatensystemen.
 
 ### <a name="using-media-foundation"></a>Verwenden von Media Foundation
 
-Wenn Sie Media Foundation direkt zum Lesen von Bildframes von der Kamera verwenden, können Sie das [MFSampleExtension_CameraExtrinsics-Attribut](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-cameraextrinsics) jedes Frames und [MFSampleExtension_PinholeCameraIntrinsics-Attribut](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) verwenden, um die Kamera Rahmen in Bezug auf die anderen Koordinatensysteme Ihrer Anwendung zu lokalisieren, wie im folgenden Beispielcode gezeigt:
+Wenn Sie Media Foundation direkt zum Lesen von Bildframes von der Kamera verwenden, können Sie das [MFSampleExtension_CameraExtrinsics-Attribut](/windows/win32/medfound/mfsampleextension-cameraextrinsics) jedes Frames und [MFSampleExtension_PinholeCameraIntrinsics-Attribut](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) verwenden, um die Kamera Rahmen in Bezug auf die anderen Koordinatensysteme Ihrer Anwendung zu lokalisieren, wie im folgenden Beispielcode gezeigt:
 
 ```cpp
 #include <winrt/windows.perception.spatial.preview.h>
@@ -259,7 +259,7 @@ Beispiele:
 ## <a name="see-also"></a>Weitere Informationen
 * [Beispiel für eine abrechenbare Kamera](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Ausrichtbare Kamera in Unity](../unity/locatable-camera-in-unity.md)
-* [Mixed-Reality-Aufnahme](../../mixed-reality-capture.md)
+* [Mixed-Reality-Aufnahme](/hololens/holographic-photos-and-videos)
 * [Mixed Reality-Aufnahme für Entwickler](mixed-reality-capture-for-developers.md)
-* [Einführung in Media Capture](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)
+* [Einführung in Media Capture](/windows/uwp/audio-video-camera/)
 * [Beispiel für die holografische Gesichts Verfolgung](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

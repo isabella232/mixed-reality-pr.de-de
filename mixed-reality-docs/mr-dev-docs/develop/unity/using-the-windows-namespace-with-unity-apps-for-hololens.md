@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, WinRT, Windows Mixed Reality, API, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Mixed Reality-APIs
-ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2116f0025449fdf127998e605f87de456e9bdaf9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007320"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583549"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>WinRT-APIs mit Unity für hololens
 
@@ -19,7 +19,7 @@ Auf dieser Seite wird beschrieben, wie Sie WinRT-APIs in Ihrem Unity-Projekt fü
 
 ## <a name="mixed-reality-apis"></a>Mixed Reality-APIs
 
-Eine gemischte Realität fokussierte Teilmenge der Windows SDK wurde in einer .NET Standard 2,0-kompatiblen Projektion zur Verfügung gestellt, die Sie in Ihrem Projekt ohne Präprozessordirektiven verwenden können. Die meisten APIs in Windows. Perception und Windows. UI. Input. räumliche Namespaces sind enthalten und können erweitert werden, um in Zukunft weitere APIs hinzufügen zu können. Die projizierten APIs können während der Ausführung im Editor verwendet werden, was die Verwendung des [Wiedergabemodus](https://docs.microsoft.com//windows/mixed-reality/unity-play-mode)ermöglicht. Um diese Projektion zu verwenden, nehmen Sie die folgenden Änderungen am Projekt vor:
+Eine gemischte Realität fokussierte Teilmenge der Windows SDK wurde in einer .NET Standard 2,0-kompatiblen Projektion zur Verfügung gestellt, die Sie in Ihrem Projekt ohne Präprozessordirektiven verwenden können. Die meisten APIs in Windows. Perception und Windows. UI. Input. räumliche Namespaces sind enthalten und können erweitert werden, um in Zukunft weitere APIs hinzufügen zu können. Die projizierten APIs können während der Ausführung im Editor verwendet werden, was die Verwendung des [Wiedergabemodus](//windows/mixed-reality/unity-play-mode)ermöglicht. Um diese Projektion zu verwenden, nehmen Sie die folgenden Änderungen am Projekt vor:
 
 1) Fügen Sie mithilfe [von nuget für Unity](https://github.com/GlitchEnzo/NuGetForUnity)einen Verweis auf das nuget-Paket [Microsoft. Windows. mixedreality. dotnetwinrt](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) hinzu.
 2) Verweise auf den `Windows` Namespace mit dem Präfix `Microsoft.` :
@@ -64,6 +64,6 @@ public class WinRTAPI : MonoBehaviour {
 
 Wenn Sie im Unity-Editor auf ein Skript doppelklicken, wird das Skript standardmäßig in einem Editor-Projekt gestartet. Die WinRT-APIs scheinen unbekannt zu sein, da das Visual Studio-Projekt nicht auf das Windows-Runtime verweist. Die **ENABLE_WINMD_SUPPORT** -Direktive ist nicht definiert, und jeder *#if* umschließende Code wird ignoriert, bis Sie das Projekt in eine UWP Visual Studio-Projekt Mappe erstellen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Exportieren und Erstellen einer Unity-Projektmappe für Visual Studio](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Windows-Runtime Unterstützung von Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)

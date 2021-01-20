@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Keine
-ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676133"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583169"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>Title (so spezifisch wie möglich, mit menschlichen Begriffen) 
 
@@ -32,7 +32,7 @@ ms.locfileid: "97676133"
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
 </tr>
@@ -192,7 +192,7 @@ Les Nabis Photorealism-Aktion Zeichnen eines Farbfelds Zeichnen von Stuckism Int
 
 Neo-georkalismus Structuralism Post-Impressionismus der Brücke existentialität Superflat, Neo-Dada Idealismus gründa.
 
-| Abstand | Anzeige Winkel | Größe |
+| Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
 | 45cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
 

@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGV, Voice, Cortana, Speech, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Blick
-ms.openlocfilehash: 09f99083d769be80d8c15016b3de8713eae76515
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848131"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583226"
 ---
 # <a name="voice-input"></a>Spracheingabe
 
@@ -19,7 +19,7 @@ ms.locfileid: "97848131"
 
 Die Stimme ist eine der wichtigsten Formen der Eingabe für HoloLens. Damit können Sie ein – Hologramm direkt aufrufen, ohne [Handgesten](gaze-and-commit.md#composite-gestures)verwenden zu müssen. Die Spracheingabe kann eine natürliche Art sein, Ihre Absichten zu kommunizieren. Voice eignet sich besonders gut für die Durchführung komplexer Schnittstellen, da Benutzer mit einem Befehl die Möglichkeit haben, die Verwendung von Netz Menüs zu ermöglichen.
 
-Die Spracheingabe wird von [derselben Engine](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx) unterstützt, die Sprache in allen _universellen Windows-apps_ unterstützt. Bei hololens funktioniert die Spracherkennung immer in der Windows-Anzeige Sprache, die in ihren Geräteeinstellungen konfiguriert ist. 
+Die Spracheingabe wird von [derselben Engine](/windows/uwp/design/input/speech-recognition) unterstützt, die Sprache in allen _universellen Windows-apps_ unterstützt. Bei hololens funktioniert die Spracherkennung immer in der Windows-Anzeige Sprache, die in ihren Geräteeinstellungen konfiguriert ist. 
 
 <br>
 
@@ -43,7 +43,7 @@ Wenn Sie Sprachbefehle verwenden, ist Head-oder Eye-Eye der typische Ziel Mechan
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -59,7 +59,7 @@ Wenn Sie Sprachbefehle verwenden, ist Head-oder Eye-Eye der typische Ziel Mechan
 
 **HoloLens (1. Generation)**
 
-Auch wenn Sie Ihrer APP keine Sprachunterstützung hinzufügen, können Ihre Benutzer holograms aktivieren, indem Sie einfach den System Sprachbefehl "Select" sagen. Dies verhält sich wie eine [Luft](gaze-and-commit.md#composite-gestures) Abzweigung in hololens, das Drücken der Schaltfläche "auswählen" auf dem [hololens-Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)oder das Drücken des Auslösers auf einem [Windows Mixed Reality Motion Controller](motion-controllers.md). Sie werden einen Sound hören und sehen, dass eine QuickInfo mit "Select" als Bestätigung angezeigt wird. "Select" wird durch einen Algorithmus für die Schlüsselwort Erkennung mit niedrigem Energieverbrauch aktiviert. Dies bedeutet, dass Sie dies jederzeit mit minimalen Auswirkungen auf die Akku Lebensdauer sagen können. Sie können sogar "Select" mit ihren Händen auf der Seite sagen.
+Auch wenn Sie Ihrer APP keine Sprachunterstützung hinzufügen, können Ihre Benutzer holograms aktivieren, indem Sie einfach den System Sprachbefehl "Select" sagen. Dies verhält sich wie eine [Luft](gaze-and-commit.md#composite-gestures) Abzweigung in hololens, das Drücken der Schaltfläche "auswählen" auf dem [hololens-Clicker](/hololens/hololens1-clicker)oder das Drücken des Auslösers auf einem [Windows Mixed Reality Motion Controller](motion-controllers.md). Sie werden einen Sound hören und sehen, dass eine QuickInfo mit "Select" als Bestätigung angezeigt wird. "Select" wird durch einen Algorithmus für die Schlüsselwort Erkennung mit niedrigem Energieverbrauch aktiviert. Dies bedeutet, dass Sie dies jederzeit mit minimalen Auswirkungen auf die Akku Lebensdauer sagen können. Sie können sogar "Select" mit ihren Händen auf der Seite sagen.
 
 <br>
 
@@ -208,7 +208,7 @@ Obwohl die Spracheingabe für viele verschiedene Anwendungen großartig ist, ste
 Der Schlüssel besteht darin, die Herausforderung in Ihrer Anwendung zu beheben. Geben Sie Ihren Benutzern Feedback, wenn das System lauscht, und das, was das System verstanden hat, um potenzielle Probleme zu verdeutlichen, die die Benutzersprache verstehen.  
 
 **Spracheingabe in freigegebenen Leerzeichen** Die Stimme ist möglicherweise nicht in den Bereichen, die Sie für andere Personen freigeben, akzeptabel.
-Hier sind einige Beispiele:
+Folgende Rollen stehen beispielsweise zur Verfügung:
 * Der Benutzer möchte möglicherweise keine anderen Benutzer stören (z. b. in einer stillen Bibliothek oder einem freigegebenen Büro).
 * Benutzer sind vielleicht nicht in der Öffentlichkeit,
 * Ein Benutzer ist möglicherweise unbequem, wenn er eine persönliche oder vertrauliche Nachricht (einschließlich Kenn Wörtern) einhört, während andere Benutzer lauschen.
@@ -266,7 +266,7 @@ Wenn die Spracherkennung richtig angewendet wird, versteht der Benutzer, **was e
 
 ## <a name="communication"></a>Kommunikation
 
-Für Anwendungen, die die von hololens bereitgestellten angepassten audioeingabeverarbeitungs-Optionen nutzen möchten, ist es wichtig, die verschiedenen [audiostreamkategorien](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) zu verstehen, die Ihre APP nutzen kann. Windows 10 unterstützt mehrere verschiedene streamingkategorien, und hololens nutzt drei dieser Möglichkeiten, um die benutzerdefinierte Verarbeitung zur Optimierung der Mikrofon Audioqualität zu optimieren, die auf Sprache, Kommunikation und andere zugeschnitten ist. diese kann für Umgebungs Umgebungs-audioerfassungs Szenarien (d.h. "Camcorder") verwendet werden.
+Für Anwendungen, die die von hololens bereitgestellten angepassten audioeingabeverarbeitungs-Optionen nutzen möchten, ist es wichtig, die verschiedenen [audiostreamkategorien](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) zu verstehen, die Ihre APP nutzen kann. Windows 10 unterstützt mehrere verschiedene streamingkategorien, und hololens nutzt drei dieser Möglichkeiten, um die benutzerdefinierte Verarbeitung zur Optimierung der Mikrofon Audioqualität zu optimieren, die auf Sprache, Kommunikation und andere zugeschnitten ist. diese kann für Umgebungs Umgebungs-audioerfassungs Szenarien (d.h. "Camcorder") verwendet werden.
 * Die AudioCategory_Communications Stream-Kategorie ist für die Sprach-und Erzähl Szenarios angepasst und stellt dem Client einen 16-Bit-Mono-Mono-Audiodatenstrom des Benutzers zur Verfügung.
 * Die AudioCategory_Speech Stream-Kategorie ist für die Sprach-Engine hololens (Windows) angepasst und stellt einen 16-Bit-Mono-Mono-Datenstrom der Stimme des Benutzers bereit. Diese Kategorie kann bei Bedarf von Sprachmodulen von Drittanbietern verwendet werden.
 * Die AudioCategory_Other Stream-Kategorie ist für die Audioaufzeichnung der Umgebungsumgebung angepasst und stellt dem Client einen 48-Bit-Stereo Audiodatenstrom mit einer Größe von-Bit bereit.
@@ -275,7 +275,7 @@ Die gesamte Audioverarbeitung ist Hardware beschleunigt. Dies bedeutet, dass die
 
 ## <a name="languages"></a>Sprachen
 
-Hololens 2 [unterstützt mehrere Sprachen](https://docs.microsoft.com/hololens/hololens2-language-support). Beachten Sie, dass Sprachbefehle immer in der Anzeige Sprache des Systems ausgeführt werden, auch wenn mehrere Tastaturen installiert sind oder wenn apps versuchen, eine Spracherkennung in einer anderen Sprache zu erstellen.
+Hololens 2 [unterstützt mehrere Sprachen](/hololens/hololens2-language-support). Beachten Sie, dass Sprachbefehle immer in der Anzeige Sprache des Systems ausgeführt werden, auch wenn mehrere Tastaturen installiert sind oder wenn apps versuchen, eine Spracherkennung in einer anderen Sprache zu erstellen.
 
 ## <a name="troubleshooting"></a>Problembehandlung
 

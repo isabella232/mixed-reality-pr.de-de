@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity
-ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009380"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583753"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Übersicht über das Szene Verständnis von SDK
 
@@ -117,7 +117,7 @@ Sceneobjects können eine der folgenden Möglichkeiten aufweisen:
 
 <table>
 <tr>
-<th>Sceneobjectkind</th> <th>Beschreibung</th>
+<th>Sceneobjectkind</th> <th>BESCHREIBUNG</th>
 </tr>
 <tr><td>Hintergrund</td><td>Das sceneobject-Objekt ist bekannt, dass es sich <b>nicht</b> um eines der anderen erkannten Arten von Szenen Objekten handelt. Diese Klasse sollte nicht mit unknown verwechselt werden, wenn der Hintergrund bekanntermaßen nicht "Wall/Floor/Ceiling" ist usw... Obwohl Unknown noch nicht kategorisiert ist.</b></td></tr>
 <tr><td>Wall</td><td>Eine physische Wand. Wände werden als unveränderbare Umgebungs Strukturen angesehen.</td></tr>
@@ -131,7 +131,7 @@ Sceneobjects können eine der folgenden Möglichkeiten aufweisen:
 
 ### <a name="scenemesh"></a>SceneMesh
 
-Eine scenemesh ist eine scenecomponent, die die Geometrie willkürlicher geometrischer Objekte mithilfe einer Dreiecks Liste angleicht. Scenemesches werden in verschiedenen Kontexten verwendet, Sie können Komponenten der wasserdichten Zellstruktur oder als worldmesh darstellen, das das ungebundene räumliche zustrukturnetz darstellt, das der Szene zugeordnet ist. Die für jedes Mesh bereitgestellten Index-und Vertex-Daten verwenden dasselbe vertraute Layout wie der [Scheitelpunkt und die Index Puffer](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) , die zum Rendern von Dreiecksnetzen in allen modernen renderingapis verwendet werden. In der Szene ist es erforderlich, dass die Netze 32-Bit-Indizes verwenden und möglicherweise in Blöcke für bestimmte renderingengines aufgeteilt werden.
+Eine scenemesh ist eine scenecomponent, die die Geometrie willkürlicher geometrischer Objekte mithilfe einer Dreiecks Liste angleicht. Scenemesches werden in verschiedenen Kontexten verwendet, Sie können Komponenten der wasserdichten Zellstruktur oder als worldmesh darstellen, das das ungebundene räumliche zustrukturnetz darstellt, das der Szene zugeordnet ist. Die für jedes Mesh bereitgestellten Index-und Vertex-Daten verwenden dasselbe vertraute Layout wie der [Scheitelpunkt und die Index Puffer](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) , die zum Rendern von Dreiecksnetzen in allen modernen renderingapis verwendet werden. In der Szene ist es erforderlich, dass die Netze 32-Bit-Indizes verwenden und möglicherweise in Blöcke für bestimmte renderingengines aufgeteilt werden.
 
 #### <a name="winding-order-and-coordinate-systems"></a>Sortieren von Reihenfolge und Koordinatensystemen
 
@@ -265,7 +265,7 @@ Beachten Sie, dass es sich um das sceneobject-Objekt mit der Transformation hand
 
 Das Verständnis der Szene hat beim Umgang mit Transformationen einen absichtlichen Versuch unternommen, an herkömmlichen 3D-Szenen Darstellungen auszurichten. Daher ist jede Szene auf ein einzelnes Koordinatensystem beschränkt, ähnlich wie die gängigsten 3D-Umwelt Darstellungen. Sceneobjects stellen jeweils ihren Speicherort relativ zu diesem Koordinatensystem bereit. Wenn Ihre Anwendung mit Szenen beschäftigt ist, die das Limit eines einzelnen Ursprungs überschreiten, können Sie sceneobjects an spatialanchor anfügen oder mehrere Szenen generieren und zusammen zusammenführen, aber aus Gründen der Einfachheit gehen wir davon aus, dass die wasserdichten Szenen in Ihrem eigenen Ursprung vorhanden sind, der durch eine durch Scene. originspatialgraphnodeid definierte NodeId lokalisiert wird.
 
-Der folgende Unity-Code zeigt beispielsweise, wie Sie die Windows-perception-und Unity-APIs verwenden, um Koordinatensysteme gleich abzustimmen. Ausführliche Informationen zum Abrufen eines spatialcoordinatesystem, das dem Welt [Ursprung von Unity](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) entspricht, finden Sie unter [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [spatialgraphinteroppreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) .
+Der folgende Unity-Code zeigt beispielsweise, wie Sie die Windows-perception-und Unity-APIs verwenden, um Koordinatensysteme gleich abzustimmen. Ausführliche Informationen zum Abrufen eines spatialcoordinatesystem, das dem Welt [Ursprung von Unity](//windows/mixed-reality/unity-xrdevice-advanced) entspricht, finden Sie unter [spatialcoordinatesystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [spatialgraphinteroppreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) .
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

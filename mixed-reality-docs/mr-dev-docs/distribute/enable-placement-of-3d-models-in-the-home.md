@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D, Modell, Ort in Zuhause, Ort, Welt, Modellierung, gemischte Realität Home, Web, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010100"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583808"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>Aktivieren der Platzierung von 3D-Modellen in der Mixed Reality Startumgebung
 
 > [!NOTE]
-> Diese Funktion wurde als Teil des [Windows 10-Updates vom April 2018](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)hinzugefügt. Ältere Versionen von Windows sind mit diesem Feature nicht kompatibel.
+> Diese Funktion wurde als Teil des [Windows 10-Updates vom April 2018](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)hinzugefügt. Ältere Versionen von Windows sind mit diesem Feature nicht kompatibel.
 
 Der [Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md) -Startpunkt ist der Ausgangspunkt, an dem Benutzer vor dem Starten von Anwendungen landen. In einigen Szenarios ermöglichen 2D-Apps (wie die holograms-APP) die Platzierung von 3D-Modellen direkt in der Mixed Reality-Startseite als Dekorationen oder für eine weitere Prüfung in vollständigem 3D. Das *Add Model-Protokoll* ermöglicht es Ihnen, ein 3D-Modell von Ihrer Website oder Anwendung direkt an die Windows Mixed Reality-Startseite zu senden, wo Sie wie [3D-App-Launcher](3d-app-launcher-design-guidance.md), 2D-apps und holograms beibehalten wird. 
 
@@ -32,7 +32,7 @@ Wenn Sie z. b. eine Anwendung entwickeln, die einen Katalog mit 3D-Möbeln zum E
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
      <tr>
@@ -91,7 +91,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 * Bei immersiven (VR)-Headsets muss das Mixed Reality-Portal vor dem Aufrufen des *Add Model-Protokolls* nicht ausgeführt werden. In diesem Fall startet das *Modell zum Hinzufügen von Modellen* das Mixed Reality-Portal und platziert das Objekt direkt an der Stelle, an der das Headset sucht, sobald Sie in der Mixed Reality-Startseite eintreffen. 
 * Wenn Sie das *Add Model-Protokoll* vom Desktop aus aufrufen, während das gemischte Reality-Portal bereits ausgeführt wird, stellen Sie sicher, dass das Headset "Awake" ist. Andernfalls ist die Platzierung nicht erfolgreich. 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Erstellen von 3D-Modellen für die Verwendung in der Windows Mixed Reality-Startseite](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [Navigieren auf der Startseite von Windows Mixed Reality](../discover/navigating-the-windows-mixed-reality-home.md)

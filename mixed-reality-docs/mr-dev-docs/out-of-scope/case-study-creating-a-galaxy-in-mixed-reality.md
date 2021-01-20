@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer, hololens, Windows Mixed Reality, teilen Sie Ihre Idee, Fallstudie
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009780"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583540"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>Fallstudie: Erstellen einer Galaxie in gemischter Realität
 
@@ -147,7 +147,7 @@ Das Ausführen von voll Bild Clouds und das versuchen, Sie zu verwischen, wäre 
 
 ### <a name="a-bit-of-context-first"></a>Ein bisschen Kontext zuerst
 
-Bei der Verwendung von Texturen in einem Spiel entspricht die Textur Größe selten dem Bereich, in dem wir Sie verwenden möchten, aber wir können unterschiedliche Arten von Textur Filtern verwenden, um die Grafikkarte zum Interpolieren der gewünschten Farbe aus den Pixeln der Textur ([Textur Filterung](https://msdn.microsoft.com/library/dn642451.aspx)) zu verwenden. Beim Filtern, das uns interessiert, handelt es sich um eine [bilineare Filterung](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) , bei der der Wert eines beliebigen Pixels mithilfe der vier nächsten Nachbarn berechnet wird.
+Bei der Verwendung von Texturen in einem Spiel entspricht die Textur Größe selten dem Bereich, in dem wir Sie verwenden möchten, aber wir können unterschiedliche Arten von Textur Filtern verwenden, um die Grafikkarte zum Interpolieren der gewünschten Farbe aus den Pixeln der Textur ([Textur Filterung](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants)) zu verwenden. Beim Filtern, das uns interessiert, handelt es sich um eine [bilineare Filterung](/windows/win32/direct3d9/bilinear-texture-filtering) , bei der der Wert eines beliebigen Pixels mithilfe der vier nächsten Nachbarn berechnet wird.
 
 ![Ursprüngliches vor dem Filtern](images/texture-1.png)
 
@@ -203,6 +203,6 @@ Möchten Sie mehr über den Entwicklungsprozess für den Galaxy Explorer erfahre
 </table>
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Galaxy Explorer auf GitHub](https://github.com/Microsoft/GalaxyExplorer)
 * [Galaxy Explorer-Projektaktualisierungen auf YouTube](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: gemeinsam genutzte Benutzeroberflächen, gemischte Realität, Hologram, räumlicher Anker, mehrere Benutzer, mehrere
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530116"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583152"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>Gemeinsam genutzte Umgebungen in gemischter Realität
 
@@ -95,7 +95,7 @@ Stellen Sie sich vor, dass ihre Freigabe Umgebungen in eine der folgenden beiden
 * **Ähnlich**: Umgebungen mit ähnlichen Möbeln, Umgebungslicht und Sound, physischer Raum. Beispiel: Professor befindet sich in der Vortragshalle a, und die Schüler/Studenten befinden sich in der Vortragshalle b. in der Vortragshalle a sind möglicherweise weniger Lehrstühle als B enthalten
 * Unter **schiede**: Umgebungen, die sich in den Einstellungen für Möbel, Raumgrößen, Licht und Ton unterscheiden. Beispiel: ein Professor befindet sich in einem Schwerpunkt Raum, Studenten und Lehrkräfte sind jedoch in einem großen Vortragsraum.
 
-Es ist wichtig, sich [über die Umgebung Gedanken zu machen](../../environment-considerations-for-hololens.md), da Sie Folgendes beeinflussen wird:
+Es ist wichtig, sich [über die Umgebung Gedanken zu machen](/hololens/hololens-environment-considerations), da Sie Folgendes beeinflussen wird:
 
 * Art und Weise, wie Benutzer diese Objekte erleben werden. Beispiel: Wenn Ihre Benutzerfunktion am besten in einer Tabelle funktioniert und der Benutzer keine Tabelle hat? Oder auf einer flachen Oberfläche, aber der Benutzer verfügt über einen Bereich mit Leerzeichen.
 * Skalieren der Objekte. Beispiel: das Platzieren eines Modells mit sechs Metern in einer Tabelle kann eine Herausforderung darstellen, aber ein Herzmodell würde hervorragend funktionieren.
@@ -137,11 +137,11 @@ Abhängig von Ihrer Anwendung und Ihrem Szenario müssen verschiedene Anforderun
 
 Der Schlüssel für die gemeinsame Nutzung besteht darin, dass mehrere Benutzer die gleichen holograms auf der ganzen Welt auf Ihrem eigenen Gerät sehen. Dies geschieht häufig durch Freigeben von Ankern, um Koordinaten Geräte übergreifend auszurichten.
 
-Verwenden Sie zum Freigeben von Ankern die [räumlichen Azure-Anker](https://docs.microsoft.com/azure/spatial-anchors):
+Verwenden Sie zum Freigeben von Ankern die [räumlichen Azure-Anker](/azure/spatial-anchors):
 
 * Zuerst platziert der Benutzer das Hologram.
 * Die App erstellt einen [räumlichen Anker](../../design/spatial-anchors.md), um dieses Hologramm exakt in der Welt anzuheften.
-* Die Anker können über [räumliche Azure-Anker](https://docs.microsoft.com/azure/spatial-anchors/)für hololens-, IOS-und Android-Geräte freigegeben werden.
+* Die Anker können über [räumliche Azure-Anker](/azure/spatial-anchors/)für hololens-, IOS-und Android-Geräte freigegeben werden.
 
 Bei einem freigegebenen räumlichen Anker verfügt die APP auf jedem Gerät nun über ein [gemeinsames Koordinatensystem](../../design/coordinate-systems.md) , in dem Sie Inhalte platzieren können. Nun kann die APP sicherstellen, dass Sie das – Hologramm am gleichen Speicherort positioniert und orientiert.
 
@@ -153,7 +153,7 @@ Es stehen verschiedene Dienst-und Technologieoptionen zur Verfügung, mit denen 
 
 ## <a name="shared-static-holograms-no-interactions"></a>Freigegebene statische Hologramme (keine Interaktionen)
 
-Nutzen Sie [räumliche Azure-Anker](https://docs.microsoft.com/azure/spatial-anchors/) in Ihrer APP.  Wenn Sie räumliche Anker Geräte übergreifend aktivieren und freigeben, können Sie eine Anwendung erstellen, bei der die Benutzer holograms gleichzeitig am gleichen Ort sehen.  Zusätzliche Synchronisierung über Geräte hinweg ist erforderlich, damit Benutzer mit holograms interagieren und Bewegungen oder Zustands Aktualisierungen von holograms anzeigen können.
+Nutzen Sie [räumliche Azure-Anker](/azure/spatial-anchors/) in Ihrer APP.  Wenn Sie räumliche Anker Geräte übergreifend aktivieren und freigeben, können Sie eine Anwendung erstellen, bei der die Benutzer holograms gleichzeitig am gleichen Ort sehen.  Zusätzliche Synchronisierung über Geräte hinweg ist erforderlich, damit Benutzer mit holograms interagieren und Bewegungen oder Zustands Aktualisierungen von holograms anzeigen können.
 
 ## <a name="share-first-person-perspective"></a>Perspektive für erste Person freigeben
 
@@ -172,7 +172,7 @@ Nutzen Sie [mixedreality-zuschauorview](https://github.com/microsoft/MixedRealit
 
 ## <a name="multi-user-collaborative-experience"></a>Zusammenarbeits Umgebung für mehrere Benutzer
 
-Beginnen Sie mit unserem Tutorial zum Lernprogramm für [mehrere Benutzer](../../mrlearning-sharing(photon)-ch1.md), das [räumliche Azure-Anker](https://docs.microsoft.com/azure/spatial-anchors/) für lokale Benutzer und das [Photon SDK](https://www.photonengine.com/PUN) zum Synchronisieren des Inhalts/Zustands in der Szene nutzt. Erstellen Sie lokal kollaborative Anwendungen, in denen jeder Benutzer seine eigene Perspektive auf den holograms in der Szene hat und jede vollständige Interaktion mit den holograms durchführen kann.  Updates werden auf allen Geräten bereitgestellt, und die Interaktions Konflikt Verwaltung wird von Photon behandelt.
+Beginnen Sie mit unserem Tutorial zum Lernprogramm für [mehrere Benutzer](../unity/tutorials/mr-learning-sharing-02.md), das [räumliche Azure-Anker](/azure/spatial-anchors/) für lokale Benutzer und das [Photon SDK](https://www.photonengine.com/PUN) zum Synchronisieren des Inhalts/Zustands in der Szene nutzt. Erstellen Sie lokal kollaborative Anwendungen, in denen jeder Benutzer seine eigene Perspektive auf den holograms in der Szene hat und jede vollständige Interaktion mit den holograms durchführen kann.  Updates werden auf allen Geräten bereitgestellt, und die Interaktions Konflikt Verwaltung wird von Photon behandelt.
 
 > [!NOTE]
 > Beachten Sie, dass es sich bei " [Photon](https://www.photonengine.com/) " nicht um ein Microsoft-Produkt handelt, sodass eine abrechnungsbeziehung mit "Photon" erforderlich ist, um eine höhere Auslastung zu produzieren und zu skalieren.
@@ -185,7 +185,7 @@ Anderes Szenario oder möchten Sie eine andere Technik/einen anderen Dienst verw
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors](/azure/spatial-anchors)
 * [Gemeinsame Raumanker in DirectX](shared-spatial-anchors-in-directx.md)
 * [Gemeinsame Erlebnisse in Unity](../unity/shared-experiences-in-unity.md)
 * [Spectator View](spectator-view.md)

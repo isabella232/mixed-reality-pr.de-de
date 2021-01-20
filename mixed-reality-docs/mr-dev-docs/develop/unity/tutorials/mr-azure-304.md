@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Gesichtserkennung, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: a6578950039a0a9267b7191f5b96775dca366c01
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6cdb8b7af9988bbfbc6670d0ef79f00487db7f3c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010150"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583373"
 ---
 # <a name="mr-and-azure-304-face-recognition"></a>MR und Azure 304: Gesichtserkennung
 
@@ -43,7 +43,7 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 304: Gesichtserkennung</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -64,19 +64,19 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md)
 - [Unity 2017,4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Eine Kamera, die mit Ihrem PC verbunden ist (für die immersive Headset-Entwicklung)
 - Internet Zugriff für Azure-Setup und Gesichtserkennungs-API-Abruf
 
 ## <a name="before-you-start"></a>Vorbereitung
 
 1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
-2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup). 
 3.  Es empfiehlt sich, eine Kalibrierung und Sensor Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen). 
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](../../../calibration.md#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](../../../sensor-tuning.md).
+Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-azure-portal"></a>Kapitel 1: Azure-Portal
 
@@ -108,7 +108,7 @@ Wenn Sie den *Gesichtserkennungs-API* -Dienst in Azure verwenden möchten, müss
 
     4. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     5. Die UWP-app " **Person Maker**", die Sie später verwenden, erfordert die Verwendung von "USA, Westen" für den Standort.
 
@@ -147,7 +147,7 @@ Stellen Sie sicher, dass Sie die vorgefertigte UWP-Anwendung namens [Person Make
 
 > Wichtig **Person Maker** verwendet einige grundlegende Einschränkungen, um sicherzustellen, dass Sie die Anzahl von Dienst aufrufen pro Minute für die **Kostenlose Abonnement Ebene** nicht überschreiten. Der grüne Text oben ändert sich in rot und wird als "aktiv" aktualisiert, wenn eine Drosselung auftritt. Wenn dies der Fall ist, warten Sie einfach auf die Anwendung (es wird gewartet, bis der Zugriff auf den Gesichts Dienst fortgesetzt werden kann, und aktualisieren Sie ihn als "aktiv", wenn Sie ihn wieder verwenden können).
 
-Diese Anwendung verwendet die *Microsoft. projectoxford. Face* -Bibliotheken, die es Ihnen ermöglichen, den Gesichtserkennungs-API vollständig zu nutzen. Diese Bibliothek steht als nuget-Paket kostenlos zur Verfügung. Weitere Informationen zu diesem und ähnlichen APIs [finden Sie im Artikel zur API-Referenz](https://docs.microsoft.com/azure/cognitive-services/face/apireference).
+Diese Anwendung verwendet die *Microsoft. projectoxford. Face* -Bibliotheken, die es Ihnen ermöglichen, den Gesichtserkennungs-API vollständig zu nutzen. Diese Bibliothek steht als nuget-Paket kostenlos zur Verfügung. Weitere Informationen zu diesem und ähnlichen APIs [finden Sie im Artikel zur API-Referenz](/azure/cognitive-services/face/apireference).
 
 > [!NOTE] 
 > Dabei handelt es sich nur um die erforderlichen Schritte. Anweisungen zum Ausführen dieser Schritte finden Sie weiter unten in diesem Dokument. Die **Person Maker** -App ermöglicht Ihnen Folgendes:

@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Deep-Link, secondarytile, Sekundär Kachel, UWP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, XML, Begrenzungsfeld, Unity
-ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009680"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582976"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>Implementieren von 3D-App-Startprogrammen (UWP-Apps)
 
@@ -118,7 +118,7 @@ Beim Arbeiten mit Unity muss das Projekt in Visual Studio erstellt und geöffnet
 >[!IMPORTANT]
 >3D-Deep-Links (secondarytiles) funktionieren nur mit 2D-UWP-apps. Sie können jedoch ein [3D-App-](implementing-3d-app-launchers.md) Startfeld erstellen, um eine exklusive App aus dem Windows Mixed Reality-Start Programm zu starten.
 
-Ihre 2D-Anwendungen können für die gemischte Realität von Windows erweitert werden, indem Sie die Möglichkeit zum Platzieren von 3D-Modellen aus Ihrer [App als tiefe](../discover/navigating-the-windows-mixed-reality-home.md) Links zu Inhalten in ihrer 2D-app hinzufügen, wie z. b. zwei [sekundäre Kacheln](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) im Windows-Startmenü. Sie können z. b. 360 °-photosphären erstellen, die direkt in eine 360 °-Foto-Viewer-App verweisen, oder Benutzern das Platzieren von 3D-Inhalten aus einer Sammlung von Objekten ermöglichen, die eine Detailseite zum Autor öffnet. Dies sind nur einige Möglichkeiten, die Funktionalität Ihrer 2D-Anwendung mit 3D-Inhalten zu erweitern.
+Ihre 2D-Anwendungen können für die gemischte Realität von Windows erweitert werden, indem Sie die Möglichkeit zum Platzieren von 3D-Modellen aus Ihrer [App als tiefe](../discover/navigating-the-windows-mixed-reality-home.md) Links zu Inhalten in ihrer 2D-app hinzufügen, wie z. b. zwei [sekundäre Kacheln](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) im Windows-Startmenü. Sie können z. b. 360 °-photosphären erstellen, die direkt in eine 360 °-Foto-Viewer-App verweisen, oder Benutzern das Platzieren von 3D-Inhalten aus einer Sammlung von Objekten ermöglichen, die eine Detailseite zum Autor öffnet. Dies sind nur einige Möglichkeiten, die Funktionalität Ihrer 2D-Anwendung mit 3D-Inhalten zu erweitern.
 
 ### <a name="creating-a-3d-secondarytile"></a>Erstellen einer 3D-"secondarytile"
 
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>Überprüfen, ob der Benutzer in der gemischten Realität von Windows ist
 
-3D Deep-Links (secondarytiles) können nur erstellt werden, während die Ansicht in einem Windows Mixed Reality-Headset angezeigt wird. Wenn Ihre Ansicht nicht in einem Windows Mixed Reality-Headset angezeigt wird, empfiehlt es sich, dies zu behandeln, indem Sie entweder den Einstiegspunkt ausblenden oder eine Fehlermeldung anzeigen. Sie können dies überprüfen, indem Sie [iscurrentviewpresentedonholographic ()](https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)Abfragen.
+3D Deep-Links (secondarytiles) können nur erstellt werden, während die Ansicht in einem Windows Mixed Reality-Headset angezeigt wird. Wenn Ihre Ansicht nicht in einem Windows Mixed Reality-Headset angezeigt wird, empfiehlt es sich, dies zu behandeln, indem Sie entweder den Einstiegspunkt ausblenden oder eine Fehlermeldung anzeigen. Sie können dies überprüfen, indem Sie [iscurrentviewpresentedonholographic ()](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)Abfragen.
 
 ## <a name="tile-notifications"></a>Kachel Benachrichtigungen
 
@@ -201,9 +201,9 @@ Bei Kachel Benachrichtigungen wird das Senden eines Updates mit einem 3D-Medieno
 * Periodische Abruf Vorgänge
 * Geplante Benachrichtigungen
 
-Weitere Informationen zu den anderen Kacheln Features und Attributen und deren Verwendung für 2D-Kacheln finden Sie in der [Dokumentation Kacheln für UWP-apps](https://docs.microsoft.com/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
+Weitere Informationen zu den anderen Kacheln Features und Attributen und deren Verwendung für 2D-Kacheln finden Sie in der [Dokumentation Kacheln für UWP-apps](/windows/uwp/controls-and-patterns/tiles-and-notifications-creating-tiles).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Gemischtes Reality-Modell Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) mit einem 3D-App-Start Programm.
 * [Entwurfsanleitung für 3D-App-Startprogramm](3d-app-launcher-design-guidance.md)

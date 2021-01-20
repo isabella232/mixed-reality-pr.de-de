@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D, Logo, Symbol, Modellierung, Start Programm, 3D-Start Programm, Kachel, Live Cube, Win32, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Manifest
-ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 46d3419d3c8267291496d8f788103d7002e6f230
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009669"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583035"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>Implementieren von 3D-App-Startprogrammen (Win32-Apps)
 
@@ -33,11 +33,11 @@ Zum Erstellen eines 3D-App-Start Programms sind drei Schritte erforderlich:
 
 ## <a name="configuring-the-3d-launcher"></a>Konfigurieren des 3D-Start Programms
 
-Win32-Anwendungen werden in der Liste "alle apps" im Windows Mixed Reality-Startmenü angezeigt, wenn Sie ein 3D-App-Startfeld für Sie erstellen. Erstellen Sie hierzu eine XML- [Manifest](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) -XML-Datei, die auf das 3D-App-Startfeld verweist, indem Sie die folgenden Schritte ausführen:
+Win32-Anwendungen werden in der Liste "alle apps" im Windows Mixed Reality-Startmenü angezeigt, wenn Sie ein 3D-App-Startfeld für Sie erstellen. Erstellen Sie hierzu eine XML- [Manifest](/previous-versions/windows/apps/dn393983(v=win.10)) -XML-Datei, die auf das 3D-App-Startfeld verweist, indem Sie die folgenden Schritte ausführen:
 
 1. Erstellen einer Ressource für ein **3D-App-Start** Programm (siehe [modellieren und exportieren](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)).
-2. Erstellen Sie ein **[visuelles Element Manifest](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** für Ihre Anwendung.
-    1. Sie können mit dem [folgenden Beispiel](#sample-visual-elements-manifest)beginnen.  Weitere Informationen finden Sie in der Dokumentation zum vollständigen [visuellen Element Manifest](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) .
+2. Erstellen Sie ein **[visuelles Element Manifest](/previous-versions/windows/apps/dn393983(v=win.10))** für Ihre Anwendung.
+    1. Sie können mit dem [folgenden Beispiel](#sample-visual-elements-manifest)beginnen.  Weitere Informationen finden Sie in der Dokumentation zum vollständigen [visuellen Element Manifest](/previous-versions/windows/apps/dn393983(v=win.10)) .
     2. Aktualisieren Sie **Square150x150Logo** und **Square70x70Logo** mit einem PNG/JPG/GIF für Ihre APP.
         * Diese werden für das 2D-Logo der app in der Windows Mixed Reality all apps-Liste und für das Startmenü auf dem Desktop verwendet.
         * Der Dateipfad basiert auf dem Ordner, der das Manifest der visuellen Elemente enthält.
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Gemischtes Reality-Modell Beispiel](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel) mit einem 3D-App-Start Programm.
 * [Entwurfsanleitung für 3D-App-Startprogramm](3d-app-launcher-design-guidance.md)

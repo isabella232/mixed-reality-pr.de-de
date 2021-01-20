@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Edge, IOT Edge, Tutorial, API, Benachrichtigung, Funktionen, Tabellen, hololens, immersive, VR, IOT, Virtual Machine, Ubuntu, Python, Windows 10, Visual Studio
-ms.openlocfilehash: 3c01c7351ee284b72a15fd7d5bdd3205fec91e49
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f23a9bf5bcdb0868ef9b0e6f77fbdb7a15dfdce1
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009300"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582812"
 ---
 # <a name="mr-and-azure-313-iot-hub-service"></a>MR und Azure 313: IoT Hub-Dienst
 
@@ -39,9 +39,9 @@ Zu den Diensten, die Sie verwenden werden, gehören:
 
 - **Azure Container Registry** ist ein Microsoft Azure Dienst, der Entwicklern das Speichern von Container Images für verschiedene Containertypen ermöglicht. Weitere Informationen finden Sie auf der [Seite **Azure Container Registry-Dienst**](https://azure.microsoft.com/services/container-registry/).
 
-- Bei **Azure Funktionen-App** handelt es sich um einen Microsoft Azure Dienst, der es Entwicklern ermöglicht, in Azure kleine Code Elemente, "Functions", auszuführen. Dies bietet eine Möglichkeit zum Delegieren von Arbeit an die Cloud und nicht an Ihre lokale Anwendung, die viele Vorteile haben kann. **Azure Functions** unterstützt mehrere Entwicklungs Sprachen, wie z \# . b. C, F \# , Node.js, Java und PHP. Weitere Informationen finden Sie auf der [Seite **Azure Functions**](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+- Bei **Azure Funktionen-App** handelt es sich um einen Microsoft Azure Dienst, der es Entwicklern ermöglicht, in Azure kleine Code Elemente, "Functions", auszuführen. Dies bietet eine Möglichkeit zum Delegieren von Arbeit an die Cloud und nicht an Ihre lokale Anwendung, die viele Vorteile haben kann. **Azure Functions** unterstützt mehrere Entwicklungs Sprachen, wie z \# . b. C, F \# , Node.js, Java und PHP. Weitere Informationen finden Sie auf der [Seite **Azure Functions**](/azure/azure-functions/functions-overview).
 
-- **Azure Storage: Tabellen** sind ein Microsoft Azure Dienst, mit dem Entwickler strukturierte, nicht-SQL-Daten in der Cloud speichern können, sodass Sie überall problemlos zugänglich sind. Der Dienst verfügt über einen Schema losen Entwurf, der die Weiterentwicklung von Tabellen nach Bedarf ermöglicht und daher sehr flexibel ist. Weitere Informationen finden Sie auf der Seite mit den [ **Azure-Tabellen** .](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview)
+- **Azure Storage: Tabellen** sind ein Microsoft Azure Dienst, mit dem Entwickler strukturierte, nicht-SQL-Daten in der Cloud speichern können, sodass Sie überall problemlos zugänglich sind. Der Dienst verfügt über einen Schema losen Entwurf, der die Weiterentwicklung von Tabellen nach Bedarf ermöglicht und daher sehr flexibel ist. Weitere Informationen finden Sie auf der Seite mit den [ **Azure-Tabellen** .](/azure/cosmos-db/table-storage-overview)
 
 In diesem Kurs erfahren Sie, wie Sie den IOT Hub-Dienst einrichten und verwenden und dann eine Antwort visualisieren, die von einem Gerät bereitgestellt wird. Sie müssen diese Konzepte auf eine benutzerdefinierte IOT Hub Service-Einrichtung anwenden, die Sie möglicherweise erstellen.
 
@@ -49,7 +49,7 @@ In diesem Kurs erfahren Sie, wie Sie den IOT Hub-Dienst einrichten und verwenden
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 313: IoT Hub-Dienst</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,7 +57,7 @@ In diesem Kurs erfahren Sie, wie Sie den IOT Hub-Dienst einrichten und verwenden
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Aktuelle Voraussetzungen für die Entwicklung mit gemischter Realität, einschließlich der Microsoft hololens, finden Sie im Artikel [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/install-the-tools) .
+Aktuelle Voraussetzungen für die Entwicklung mit gemischter Realität, einschließlich der Microsoft hololens, finden Sie im Artikel [Installieren der Tools](/windows/mixed-reality/install-the-tools) .
 
 > [!NOTE]
 > Dieses Lernprogramm ist für Entwickler konzipiert, die über die grundlegende Verwendung von python verfügen. Beachten Sie auch, dass die Voraussetzungen und Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt des Schreibens getestet und überprüft wurde (Juli 2018). Sie können die neueste Software verwenden, die im Artikel [Installieren der Tools](../../install-the-tools.md) aufgeführt ist. es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs genau mit den Informationen in neueren Software vergleichen, als im folgenden aufgeführt sind.
@@ -81,17 +81,17 @@ Folgende Hardware und Software ist erforderlich:
 
 ### <a name="before-you-start"></a>Vorbereitung
 
-1. Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](https://docs.microsoft.com/hololens/hololens-setup).
+1. Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup).
 2. Es empfiehlt sich, eine **Kalibrierung** und **Sensor** Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen).
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](../../../calibration.md#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](../../../sensor-tuning.md).
+Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
 
 3. Richten Sie Ihren **virtuellen Ubuntu-Computer** mithilfe von **Hyper-V** ein. Die folgenden Ressourcen helfen Ihnen bei diesem Vorgang.
     1.  Befolgen Sie zuerst den folgenden Link, um die ISO-Datei von [Ubuntu 16.04.4 LTS (xenial Xerus) herunterzuladen](https://au.releases.ubuntu.com/16.04/). Wählen Sie das **amd64-Desktop Image (64-Bit-PC)** aus.
-    2.  Stellen Sie sicher, dass **Hyper-V** auf Ihrem Windows 10-Computer aktiviert ist. Unter diesem Link finden Sie Anleitungen zum [Installieren und Aktivieren von Hyper-V unter Windows 10](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
-    3.  Starten Sie Hyper-V, und erstellen Sie einen neuen virtuellen Ubuntu-Computer. Unter diesem Link finden Sie eine Schritt-für- [Schritt-Anleitung zum Erstellen eines virtuellen Computers mit Hyper-V](https://docs.microsoft.com/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). Wenn Sie die **Option "Betriebssystem von einer Start baren Image Datei installieren"** angefordert haben, wählen Sie die zuvor heruntergeladene **Ubuntu-ISO** -Datei aus.
+    2.  Stellen Sie sicher, dass **Hyper-V** auf Ihrem Windows 10-Computer aktiviert ist. Unter diesem Link finden Sie Anleitungen zum [Installieren und Aktivieren von Hyper-V unter Windows 10](/virtualization/hyper-v-on-windows/quick-start/enable-hyper-v).
+    3.  Starten Sie Hyper-V, und erstellen Sie einen neuen virtuellen Ubuntu-Computer. Unter diesem Link finden Sie eine Schritt-für- [Schritt-Anleitung zum Erstellen eines virtuellen Computers mit Hyper-V](/virtualization/hyper-v-on-windows/quick-start/create-virtual-machine). Wenn Sie die **Option "Betriebssystem von einer Start baren Image Datei installieren"** angefordert haben, wählen Sie die zuvor heruntergeladene **Ubuntu-ISO** -Datei aus.
 
     > [!NOTE]
     > Die Verwendung von **Hyper-V Quick Create** ist nicht empfehlenswert.  
@@ -186,7 +186,7 @@ Nun beginnen Sie mit der Erstellung und Einrichtung Ihres **IOT Hub Dienstanbiet
 
     1. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
 
     2. Wählen Sie einen geeigneten **Speicherort** aus (verwenden Sie den gleichen Speicherort für alle Dienste, die Sie in diesem Kurs erstellen).
@@ -382,7 +382,7 @@ Nun können Sie mit dem Einrichten Ihres Geräts fortfahren, auf dem **Ubuntu OS
     >1. Starten Sie vs Code und/oder den Computer neu.
     >2. Möglicherweise ist es erforderlich, das **vs Code Terminal** auf das zu ändern, das Sie zum Installieren von Python verwendet haben, d. h. **PowerShell** (insbesondere für den Fall, dass die python-Umgebung bereits auf Ihrem Computer installiert wurde). Wenn das Terminal geöffnet ist, finden Sie das Dropdown Menü auf der rechten Seite des Terminals.
      ![Erstellen des Containers](images/AzureLabs-Lab313-24b.png) 
-    >3. Stellen Sie sicher, dass der **python** -Installationspfad als **Umgebungs Variable** auf dem Computer hinzugefügt wird. Cookiecutter sollte Teil desselben Standort Pfads sein. [Weitere Informationen zu Umgebungsvariablen](https://msdn.microsoft.com/library/windows/desktop/ms682653(v=vs.85).aspx)finden Sie unter diesem Link. 
+    >3. Stellen Sie sicher, dass der **python** -Installationspfad als **Umgebungs Variable** auf dem Computer hinzugefügt wird. Cookiecutter sollte Teil desselben Standort Pfads sein. [Weitere Informationen zu Umgebungsvariablen](/windows/win32/procthread/environment-variables)finden Sie unter diesem Link. 
 
 7. Nachdem die Installation von **cookiecutter** abgeschlossen ist, sollten Sie den Computer neu starten, damit **cookiecutter** in der Umgebung Ihres Systems als Befehl erkannt wird.
 
@@ -870,7 +870,7 @@ Navigieren Sie zurück zu Ihrem Azure-Portal, in dem Sie einen Azure Tables-Dien
 
     9. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     10. Lassen Sie **virtuelle Netzwerke** **deaktiviert**, wenn dies eine Option für Sie ist.
 
@@ -1011,7 +1011,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
     4. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     5. Klicken Sie für **Betriebssystem** auf Windows, da dies die beabsichtigte Plattform ist.
 

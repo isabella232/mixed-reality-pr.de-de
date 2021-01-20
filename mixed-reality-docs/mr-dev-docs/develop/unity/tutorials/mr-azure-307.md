@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Machine Learning, ml, Machine Learning Studio, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 3bb50c146e11a340f4223d71dd401ac2b84dd6d4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679479"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583392"
 ---
 # <a name="mr-and-azure-307-machine-learning"></a>MR und Azure 307: Maschinelles Lernen
 
@@ -42,7 +42,7 @@ Dieser Kurs ist ein eigenständiges Tutorial, das sich nicht direkt mit anderen 
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 307: Maschinelles Lernen</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -63,7 +63,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Internet Zugriff für Azure-Setup und ml-Datenabruf
 
 ## <a name="before-you-start"></a>Vorbereitung
@@ -100,7 +100,7 @@ Um die Azure Translator-API zu verwenden, müssen Sie eine Instanz des-Dienstanb
     7.  Wählen Sie ein **Abonnement** aus.
     4. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
     
     5.  Bestimmen Sie den **Speicherort** für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
 
@@ -132,7 +132,7 @@ Um das *Azure Machine Learning* verwenden zu können, müssen Sie eine Instanz d
 
     3. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Bestimmen Sie den **Speicherort** für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar. Sie sollten die gleiche Ressourcengruppe verwenden, die Sie zum Erstellen des Azure Storage im vorherigen Kapitel verwendet haben.
 
@@ -252,9 +252,9 @@ So beginnen Sie mit dem Erstellen eines Experiments:
 
     ![Die Machine Learning Studio (klassisch): das Experiment](images/AzureLabs-Lab7-22.png)
 
-11. Sie trainieren einen **MultiClass Logistic Regression** -Algorithmus, um das am häufigsten verkaufte **Produkt** basierend auf der Tageszeit und dem Datum vorherzusagen. Es geht über den Rahmen dieses Dokuments hinaus, die Details der verschiedenen Algorithmen zu erläutern, die von der Azure Machine Learning Studio bereitgestellt werden. Sie können jedoch weitere Informationen aus dem [Machine Learning algorithmusspickzettel](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)
+11. Sie trainieren einen **MultiClass Logistic Regression** -Algorithmus, um das am häufigsten verkaufte **Produkt** basierend auf der Tageszeit und dem Datum vorherzusagen. Es geht über den Rahmen dieses Dokuments hinaus, die Details der verschiedenen Algorithmen zu erläutern, die von der Azure Machine Learning Studio bereitgestellt werden. Sie können jedoch weitere Informationen aus dem [Machine Learning algorithmusspickzettel](/azure/machine-learning/studio/algorithm-cheat-sheet)
 
-12. Erweitern Sie im Bereich Experiment Elemente auf der linken Seite **Machine Learning**  >  **Modell Klassifizierung initialisieren**  >  **Classification**, und ziehen Sie das Element für die **mehr klassige logistische Regression** in den Experiment Bereich.
+12. Erweitern Sie im Bereich Experiment Elemente auf der linken Seite **Machine Learning**  >  **Modell Klassifizierung initialisieren**  >  , und ziehen Sie das Element für die **mehr klassige logistische Regression** in den Experiment Bereich.
 
 13. Verbinden Sie die Ausgabe vom Ende der **mehr klassigen logistischen Regression** mit der Eingabe oben links des **Train Model** -Elements.
 
@@ -336,9 +336,9 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
 1.  Öffnen Sie **Unity** , und erstellen Sie ein neues Unity-Projekt namens " **\_ machinelearning".** Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist.
 
-2.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+2.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
-3.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >  **Build Settings** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **_Switch Platform_* _ klicken.
+3.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >   , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **_Switch Platform_* _ klicken.
 
 4.  Stellen Sie außerdem Folgendes sicher:
 
@@ -502,7 +502,7 @@ Als Teil des importierten Pakets erhalten Sie diese Klasse, obwohl sie unvollst�
     ![Erstellen der Shelf Keeper-Klasse](images/AzureLabs-Lab7-51.png)
 
     > [!IMPORTANT]
-    > Wenn das Skript nicht über die Verweis *Ziele (z. &*# 160; & # 160; & # 160; & # 160 **Hierarchy Panel**; & # 160; & # 160; & # 160; & # 160; a. Weitere Erläuterungen finden Sie unten:
+    > Wenn das Skript nicht über die Verweis *Ziele (z. &*# 160; & # 160; & # 160; & # 160 ; & # 160; & # 160; & # 160; & # 160; a. Weitere Erläuterungen finden Sie unten:
     > 
     > 1.  Öffnen Sie das Element für das Erzeugen von **Punkten** innerhalb des **shelfkeeper** -Komponenten Skripts, indem Sie darauf klicken. Es wird ein unter Abschnitt mit dem Namen **size** angezeigt, der die Größe des Arrays angibt. Geben Sie **3** in das Textfeld neben **Größe** ein, und drücken **Sie die Eingabe** Taste, und es werden drei Slots unterhalb von erstellt.
     > 2. Erweitern Sie in der **Hierarchie** das **Zeitanzeige** Objekt (indem Sie mit der linken Maustaste auf den Pfeil daneben klicken). Klicken Sie dann **in der _-Hierarchie auf die _Hauptkamera_*_***, damit der **Inspektor** seine Informationen anzeigt.
@@ -813,7 +813,7 @@ So erstellen Sie diese Klasse:
 
 14. Ziehen Sie das **productvorhersage** -Klassen Skript aus dem **Skript** Ordner auf das **Hauptkamera** Objekt.
 
-15. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >  **Save Scene/File**  >  **Save Project**.
+15. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >    >  .
 
 ## <a name="chapter-10---build-the-uwp-solution"></a>Kapitel 10: Erstellen der UWP-Lösung
 
@@ -823,7 +823,7 @@ So erstellen Sie Folgendes:
 
 1.  Speichern Sie die aktuelle Szene, indem Sie auf **Datei**  >  **Speichern Szenen** klicken.
 
-2.  Gehe zu **dateibuildeinstellungen**  >  **Build Settings**
+2.  Gehe zu **dateibuildeinstellungen**  >  
 
 3.  Aktivieren Sie das Kontrollkästchen **Unity c#-Projekte** . (Dies ist wichtig, da Sie die Klassen nach Abschluss des Builds bearbeiten können.)
 

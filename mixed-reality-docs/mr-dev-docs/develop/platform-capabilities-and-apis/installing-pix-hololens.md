@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: Hololens, hololens 2, pix, Capture, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
-ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
+ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97822924"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583091"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installieren von PIX für HoloLens 2
 
@@ -21,7 +21,7 @@ ms.locfileid: "97822924"
 
 1. Holen Sie sich die neueste pix- [Version]( https://devblogs.microsoft.com/pix/download) von Ihrem Host-PC, und verbinden Sie Ihre hololens 2 über ein USB-Kabel mit Ihrem PC.
 
-2. Wenn sich Ihre hololens 2 in einem [Windows Insider-Build](https://insider.windows.com) befinden oder über eine Konfiguration verfügen, die pix unterbricht, löschen  [Sie Ihr Gerät](https://docs.microsoft.com/hololens/hololens-recovery) , um alle Daten zu löschen.
+2. Wenn sich Ihre hololens 2 in einem [Windows Insider-Build](https://insider.windows.com) befinden oder über eine Konfiguration verfügen, die pix unterbricht, löschen  [Sie Ihr Gerät](/hololens/hololens-recovery) , um alle Daten zu löschen.
 
 3. **Entwicklermodus** und **Geräte Portal** aktivieren:
 
@@ -46,7 +46,7 @@ ms.locfileid: "97822924"
 * Starten Sie Visual Studio, wenn das Gerät immer noch verbunden ist, aktiv ist und der Benutzer angemeldet ist.
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass sich Ihr Gerät nicht im Standbymodus befindet oder nicht Wenn Sie Probleme mit diesem Schritt haben, finden Sie die [Anweisungen im Windows-Geräte Portal](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal).
+> Stellen Sie sicher, dass sich Ihr Gerät nicht im Standbymodus befindet oder nicht Wenn Sie Probleme mit diesem Schritt haben, finden Sie die [Anweisungen im Windows-Geräte Portal](./using-the-windows-device-portal.md).
 
 ## <a name="preparing-for-deployment"></a>Vorbereiten der Bereitstellung
 

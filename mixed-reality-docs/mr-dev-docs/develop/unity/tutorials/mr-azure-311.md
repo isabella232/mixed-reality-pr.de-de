@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Microsoft Graph, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 341b6fea537fe6001a8f7dcf2e98efea0a0b09b6
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 699e520fb9db8d8d3b5bab8b98d92fa39f0acb2d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679439"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583439"
 ---
 # <a name="mr-and-azure-311---microsoft-graph"></a>MR und Azure 311: Microsoft Graph
 
@@ -37,7 +37,7 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 311: Microsoft Graph</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -55,7 +55,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Internet Zugriff für Azure-Setup und Microsoft Graph Datenabruf
 - Ein gültiges Microsoft-Konto (entweder persönlich oder Geschäfts-, Schul-oder **unikonto** )
 - Einige Besprechungen, die für den aktuellen Tag geplant sind, mit demselben Microsoft-Konto
@@ -63,12 +63,12 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 ### <a name="before-you-start"></a>Vorbereitung
 
 1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
-2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup). 
 3.  Es empfiehlt sich, eine Kalibrierung und Sensor Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen). 
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](../../../calibration.md#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](../../../sensor-tuning.md).
+Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
 
 ## <a name="chapter-1---create-your-app-in-the-application-registration-portal"></a>Kapitel 1: Erstellen der APP im Anwendungs Registrierungs Portal
 
@@ -123,15 +123,15 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
     ![](images/AzureLabs-Lab311-10.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![](images/AzureLabs-Lab311-11.png)
 
-4.  Wechseln Sie zu **dateibuildeinstellungen**  >  **Build Settings** , und wählen Sie **universelle Windows-Plattform** aus, und klicken Sie dann auf die Schaltfläche **Plattform wechseln** , um die Auswahl
+4.  Wechseln Sie zu **dateibuildeinstellungen**  >   , und wählen Sie **universelle Windows-Plattform** aus, und klicken Sie dann auf die Schaltfläche **Plattform wechseln** , um die Auswahl
 
     ![](images/AzureLabs-Lab311-12.png)
 
-5.  **File**  >  Stellen Sie sicher, dass in den **Einstellungen** für die Dateierstellung Folgendes angezeigt wird:
+5.    >  Stellen Sie sicher, dass in den **Einstellungen** für die Dateierstellung Folgendes angezeigt wird:
 
     1. **Zielgerät** ist auf **hololens** festgelegt
     2. Der **Buildtyp** ist auf **D3D** festgelegt.
@@ -165,7 +165,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
     1. Auf der Registerkarte **andere Einstellungen** :
 
-        1.  **Scripting** Die CLR- **Lauf Zeit Version** sollte **experimentell** sein (.NET 4,6-Entsprechung), wodurch der Editor neu gestartet werden muss.
+        1.   Die CLR- **Lauf Zeit Version** sollte **experimentell** sein (.NET 4,6-Entsprechung), wodurch der Editor neu gestartet werden muss.
 
         2. **Skript** -Back-End sollte **.net** sein
 
@@ -187,7 +187,7 @@ Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Real
 
 9.  Schließen Sie das Fenster *Buildeinstellungen*.
 
-10.  Speichern Sie Ihre Szene und Ihr Projekt (**Datei**  >  **Speichern/** Speichern von Dateien  >  **SAVE PROJECT**).
+10.  Speichern Sie Ihre Szene und Ihr Projekt (**Datei**  >  **Speichern/** Speichern von Dateien  >  ).
 
 ## <a name="chapter-3---import-libraries-in-unity"></a>Kapitel 3: Importieren von Bibliotheken in Unity
 
@@ -205,7 +205,7 @@ Wenn Sie mehr darüber erfahren möchten, wie Sie Ihrem Unity-Projekt benutzerde
 
 So importieren Sie das Paket:
 
-1.  Fügen Sie das Unity-Paket Unity mithilfe der **Assets**  >  Menüoption Assets **Import Package**  >  **Custom Package (benutzerdefiniertes Paket** importieren). Wählen Sie das soeben heruntergeladene Paket aus.
+1.  Fügen Sie das Unity-Paket Unity mithilfe der   >  Menüoption Assets **Import Package**  >  **Custom Package (benutzerdefiniertes Paket** importieren). Wählen Sie das soeben heruntergeladene Paket aus.
 
 2.  Vergewissern Sie sich, dass im Feld **Unity-Paket importieren** , das angezeigt wird, alles unter (und **einschließlich) Plug** -ins ausgewählt ist.
 
@@ -234,7 +234,7 @@ So importieren Sie das Paket:
 
         ![](images/AzureLabs-Lab311-23.png)
 
-7.  Klicken Sie auf **Übernehmen**.
+7.  Klicken Sie auf **Anwenden**.
 
 ## <a name="chapter-4---camera-setup"></a>Kapitel 4: Kamera Einrichtung
 
@@ -266,12 +266,12 @@ Das erste Skript, das Sie erstellen müssen, ist " **meetingsui**", das für das
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie im *Projekt Panel* mit der rechten Maustaste auf den Ordner **Objekte** , und wählen Sie dann **Create**  >  **Ordner** erstellen aus. Benennen Sie den Ordner mit **Skripts**.
+1.  Klicken Sie im *Projekt Panel* mit der rechten Maustaste auf den Ordner **Objekte** , und wählen Sie dann   >  **Ordner** erstellen aus. Benennen Sie den Ordner mit **Skripts**.
 
     ![](images/AzureLabs-Lab311-26.png)
     ![](images/AzureLabs-Lab311-27.png)
 
-2.  Öffnen Sie den Ordner **Skripts** , und klicken Sie dann in diesem Ordner **Create** mit der rechten Maustaste auf  >  **c#-Skript** erstellen. Benennen Sie das Skript mit " **meetingsui".**
+2.  Öffnen Sie den Ordner **Skripts** , und klicken Sie dann in diesem Ordner mit der rechten Maustaste auf  >  **c#-Skript** erstellen. Benennen Sie das Skript mit " **meetingsui".**
 
     ![](images/AzureLabs-Lab311-28.png)
 
@@ -377,7 +377,7 @@ So erstellen Sie diese Klasse:
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript **Diagramm**.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript **Diagramm**.
 
 3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
 
@@ -624,7 +624,7 @@ So erstellen Sie das Skript:
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Nennen Sie das Skript " **gazeinput**".
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Nennen Sie das Skript " **gazeinput**".
 
 3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
 
@@ -818,7 +818,7 @@ So erstellen Sie das Skript:
 
 1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript mit **Interaktionen**.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript mit **Interaktionen**.
 
 3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
 
@@ -846,7 +846,7 @@ So erstellen Sie das Skript:
         private GestureRecognizer _gestureRecognizer;
     ```
 
-7.  Ersetzen Sie die **Start** -Methode. Beachten Sie, dass es sich um eine Überschreibungs Methode handelt, die die "Base"-Klasse "" als " " **Start ()** " wird aufgerufen, wenn die Klasse initialisiert, sich für die Eingabe Erkennung registriert und die Anmelde Schaltfläche in der Szene erstellt: *button*
+7.  Ersetzen Sie die **Start** -Methode. Beachten Sie, dass es sich um eine Überschreibungs Methode handelt, die die "Base"-Klasse "" als " " **Start ()** " wird aufgerufen, wenn die Klasse initialisiert, sich für die Eingabe Erkennung registriert und die Anmelde Schaltfläche in der Szene erstellt: 
 
     ```csharp    
         /// <summary>
@@ -969,9 +969,9 @@ So stellen Sie auf hololens bereit:
 
 2.  Navigieren Sie zu Ihrem neuen Unity-Build ( **App** -Ordner), und öffnen Sie die Projektmappendatei mit **Visual Studio**.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
-4.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, Remote Computer** aus. Sie werden aufgefordert, die **IP-Adresse** eines Remote Geräts (in diesem Fall die hololens) einzufügen, die Sie notiert haben.
+4.  Wählen Sie auf der Projektmappenplattform die Option **x86, Remote Computer** aus. Sie werden aufgefordert, die **IP-Adresse** eines Remote Geräts (in diesem Fall die hololens) einzufügen, die Sie notiert haben.
 
     ![](images/AzureLabs-Lab311-34.png)
 

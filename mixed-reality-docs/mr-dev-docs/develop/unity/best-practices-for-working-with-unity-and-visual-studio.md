@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: bereitstellen, Unity, Visual Studio, hololens, hololens 2, immersives Headset, bewährte Methoden, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, UWP, Visual Studio-Tools Windows SDK
-ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009370"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583463"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>Bewährte Methoden für das Arbeiten mit Unity und Visual Studio
 
@@ -35,7 +35,7 @@ Sie sollten die [Visual Studio-Erweiterung *unityscriptanalyzer*](https://github
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools für Unity
 
-Download [Visual Studio-Tools für Unity](https://docs.microsoft.com/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+Download [Visual Studio-Tools für Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Vorteile von Visual Studio-Tools für Unity**
 * Debuggen Sie den Unity-im-Editor-Wiedergabemodus in Visual Studio, indem Sie Haltepunkte einfügen, Variablen und komplexe Ausdrücke auswerten.
@@ -57,7 +57,7 @@ UWP-Visual Studio-Projektmappen, die in die Quell Code Verwaltung eingecheckt we
 
 Durch das Speichern von Medienobjekten im Textformat wird das Überprüfen von Änderungen der Inhalts Änderung in Visual Studio vereinfacht. Sie können Assets im Textformat speichern, indem Sie **> Projekteinstellungen bearbeiten >-Editor bearbeiten** und den **assetserialisierungsmodus** ändern, um **Text zu erzwingen**. Das Zusammenführen von Text-assetdateiänderungen ist jedoch fehleranfällig und wird nicht empfohlen. Daher sollten Sie in der Quell Code Verwaltung exklusive binäre Auschecken aktivieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Visual Studio Tools für Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [Optimieren von Buildzeiten für IL2CPP](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*Unityscriptanalyzer* Visual Studio-Erweiterung](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

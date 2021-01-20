@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Entwurf, Interaktion, Sprache
-ms.openlocfilehash: 156927f43a09474c3dd6da8e400767f13700a7ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91690731"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582835"
 ---
 # <a name="voice-commanding"></a>Sprachbefehle
 
@@ -29,7 +29,7 @@ Wenn Sprachbefehle verwendet werden, wird der Blick in der Regel als Ziel Ziel M
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -50,14 +50,14 @@ Erwägen Sie, Sprachbefehle zu jeder von Ihnen erstellten Umgebung hinzuzufügen
 ### <a name="best-practices"></a>Bewährte Methoden
 
 Nachfolgend finden Sie einige Methoden aufgeführt, die eine reibungslose Spracherkennung ermöglichen.
-* **Präzise Befehle verwenden** : Wählen Sie nach Möglichkeit Schlüsselwörter mit zwei oder mehr Silben aus. Einsilbige Wörter neigen dazu, unterschiedliche Vokallaute zu verwenden, wenn sie von Personen mit unterschiedlichen Akzenten gesprochen werden. Beispiel: "Video abspielen" ist besser als "das aktuell ausgewählte Video abspielen"
+* **Präzise Befehle verwenden**: Wählen Sie nach Möglichkeit Schlüsselwörter mit zwei oder mehr Silben aus. Einsilbige Wörter neigen dazu, unterschiedliche Vokallaute zu verwenden, wenn sie von Personen mit unterschiedlichen Akzenten gesprochen werden. Beispiel: "Video abspielen" ist besser als "das aktuell ausgewählte Video abspielen"
 * **Verwenden eines einfachen Vokabulars** -Beispiel: "Show Note" ist besser als "Placard anzeigen"
-* **Sicherstellen, dass Befehle nicht destruktiv sind** : Stellen Sie sicher, dass alle Aktionen, die von einem Spracherkennungsbefehl ausgeführt werden können, nicht destruktiv sind und leicht rückgängig gemacht werden können, falls eine andere Person, die in der Nähe des Benutzers spricht, versehentlich einen Befehl auslöst.
-* **Ähnlich klingende Befehle vermeiden** : Vermeiden Sie es, mehrere Spracherkennungsbefehle zu registrieren, die sehr ähnlich klingen. Beispiel: "mehr anzeigen" und "Store anzeigen" kann sehr ähnlich klingen.
-* **Registrierung der App aufheben, wenn sie nicht verwendet wird** : Wenn sich Ihre Anwendung nicht in einem Zustand befindet, in dem ein bestimmter Sprachbefehl gültig ist, sollten Sie die Registrierung der App aufheben, damit andere Befehle nicht mit diesem verwechselt werden.
-* **Mit verschiedenen Akzenten testen** : Testen Sie Ihre App mit Benutzern, die unterschiedliche Akzente verwenden.
-* **Konsistenz von Sprachbefehlen beibehalten** : Wenn „Zurück“ zur vorherigen Seite wechselt, übernehmen Sie dieses Verhalten in Ihren Anwendungen.
-* **Verwendung von Systembefehlen vermeiden** : Die folgenden Sprachbefehle sind für das System reserviert. Diese sollten nicht von Anwendungen verwendet werden.
+* **Sicherstellen, dass Befehle nicht destruktiv sind**: Stellen Sie sicher, dass alle Aktionen, die von einem Spracherkennungsbefehl ausgeführt werden können, nicht destruktiv sind und leicht rückgängig gemacht werden können, falls eine andere Person, die in der Nähe des Benutzers spricht, versehentlich einen Befehl auslöst.
+* **Ähnlich klingende Befehle vermeiden**: Vermeiden Sie es, mehrere Spracherkennungsbefehle zu registrieren, die sehr ähnlich klingen. Beispiel: "mehr anzeigen" und "Store anzeigen" kann sehr ähnlich klingen.
+* **Registrierung der App aufheben, wenn sie nicht verwendet wird**: Wenn sich Ihre Anwendung nicht in einem Zustand befindet, in dem ein bestimmter Sprachbefehl gültig ist, sollten Sie die Registrierung der App aufheben, damit andere Befehle nicht mit diesem verwechselt werden.
+* **Mit verschiedenen Akzenten testen**: Testen Sie Ihre App mit Benutzern, die unterschiedliche Akzente verwenden.
+* **Konsistenz von Sprachbefehlen beibehalten**: Wenn „Zurück“ zur vorherigen Seite wechselt, übernehmen Sie dieses Verhalten in Ihren Anwendungen.
+* **Verwendung von Systembefehlen vermeiden**: Die folgenden Sprachbefehle sind für das System reserviert. Diese sollten nicht von Anwendungen verwendet werden.
    * „Hey Cortana“
    * „Auswählen“
 
@@ -69,7 +69,7 @@ Wenn Sie zu einem beliebigen Zeitpunkt „Auswählen“ sagen, wird das aktivier
 
 ### <a name="see-it-say-it"></a>Sehen, sagen
 
-Windows Mixed Reality hat ein „Sehen, sagen“-Sprachmodell eingesetzt, bei dem **Beschriftungen auf Schaltflächen mit den zugehörigen Sprachbefehlen identisch sind** . Da es keine Missverständnisse zwischen Beschriftung und Sprachbefehl gibt, können Benutzer besser verstehen, was sie sagen müssen, um das System zu steuern. Um dies zu verstärken, wird beim Verweilen auf einer Schaltfläche ein **Tipp zum Verweilen** angezeigt, um mitzuteilen, welche Schaltflächen sprachaktiviert sind.
+Windows Mixed Reality hat ein „Sehen, sagen“-Sprachmodell eingesetzt, bei dem **Beschriftungen auf Schaltflächen mit den zugehörigen Sprachbefehlen identisch sind**. Da es keine Missverständnisse zwischen Beschriftung und Sprachbefehl gibt, können Benutzer besser verstehen, was sie sagen müssen, um das System zu steuern. Um dies zu verstärken, wird beim Verweilen auf einer Schaltfläche ein **Tipp zum Verweilen** angezeigt, um mitzuteilen, welche Schaltflächen sprachaktiviert sind.
 
 
 ![Sehen, sagen – Beispiel 1](../design/images/voice-seeitsayit1-640px.jpg)
@@ -94,13 +94,13 @@ Die Spracheingabe weist auch einige Schwächen auf. Eine davon ist die differenz
 
 ### <a name="voice-feedback-states"></a>Statusangaben für Spracherkennungsfeedback
 
-Wenn die Spracherkennung richtig angewendet wird, versteht der Benutzer, **was er sagen kann und er erhält ein eindeutiges Feedback** , das das System **ihn richtig verstanden hat** . Diese beiden Signale geben dem Benutzer das Gefühl, dass er die Spracherkennung als primäre Eingabemethode verwenden kann. Nachfolgend ist in einem Diagramm dargestellt, was mit dem Cursor geschieht, wenn die Spracheingabe erkannt wird und wie dies dem Benutzer vermittelt wird.
+Wenn die Spracherkennung richtig angewendet wird, versteht der Benutzer, **was er sagen kann und er erhält ein eindeutiges Feedback**, das das System **ihn richtig verstanden hat**. Diese beiden Signale geben dem Benutzer das Gefühl, dass er die Spracherkennung als primäre Eingabemethode verwenden kann. Nachfolgend ist in einem Diagramm dargestellt, was mit dem Cursor geschieht, wenn die Spracheingabe erkannt wird und wie dies dem Benutzer vermittelt wird.
 
 ![Statusangaben für Spracherkennungsfeedback für Cursor](../design/images/voicefeedbackstates.png)<br>
 *Statusangaben für Spracherkennungsfeedback für Cursor*
 
 ## <a name="top-things-users-should-know-about-speech-in-mixed-reality"></a>Wichtige Informationen zur Spracherkennung in Mixed Reality
-* Sagen Sie **„Auswählen“** , während Sie eine Schaltfläche anvisieren (Sie können dies überall verwenden, um auf eine Schaltfläche zu klicken).
+* Sagen Sie **„Auswählen“**, während Sie eine Schaltfläche anvisieren (Sie können dies überall verwenden, um auf eine Schaltfläche zu klicken).
 * Sie können in einigen Apps den **Bezeichnungsnamen einer Schaltfläche auf der App-Leiste** sagen, um eine Aktion auszuführen. Beim Betrachten einer App kann ein Benutzer z. B. den Befehl „Entfernen“ sagen, um die App aus der Umgebung zu entfernen (das spart Zeit, da die App nicht mit der Hand angeklickt werden muss).
 * Sie können initiieren, dass Cortana zuhört, indem Sie **„Hey Cortana“** sagen. Sie können Ihre Fragen stellen ("Hey Cortana, wie hoch ist der Eiffelturm?"), Sie bitten, eine APP zu öffnen ("Hey Cortana, Open Netflix"), oder Sie bitten Sie, das Startmenü zu öffnen ("Hey Cortana, Take Me Home") und mehr.
 

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Funktionen, Speicher, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: bc609e5a4a1c4252f498ada4dba2206140635667
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679489"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583426"
 ---
 # <a name="mr-and-azure-305-functions-and-storage"></a>MR und Azure 305: Funktionen und Speicher
 
@@ -26,9 +26,9 @@ ms.locfileid: "94679489"
 
 In diesem Kurs erfahren Sie, wie Sie Azure Functions und Daten mit einer Azure Storage Ressource in einer gemischten Reality-Anwendung erstellen und verwenden.
 
-*Azure Functions* ist ein Microsoft-Dienst, der Entwicklern das Ausführen von kleinen Code Elementen ("Functions") in Azure ermöglicht. Dies bietet eine Möglichkeit zum Delegieren von Arbeit an die Cloud und nicht an Ihre lokale Anwendung, die viele Vorteile haben kann. *Azure Functions* unterstützt mehrere Entwicklungs Sprachen, wie z \# . b. C, F \# , Node.js, Java und PHP. Weitere Informationen finden Sie im [Artikel Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+*Azure Functions* ist ein Microsoft-Dienst, der Entwicklern das Ausführen von kleinen Code Elementen ("Functions") in Azure ermöglicht. Dies bietet eine Möglichkeit zum Delegieren von Arbeit an die Cloud und nicht an Ihre lokale Anwendung, die viele Vorteile haben kann. *Azure Functions* unterstützt mehrere Entwicklungs Sprachen, wie z \# . b. C, F \# , Node.js, Java und PHP. Weitere Informationen finden Sie im [Artikel Azure Functions](/azure/azure-functions/functions-overview).
 
-*Azure Storage* ist ein Microsoft-clouddienst, der es Entwicklern ermöglicht, Daten zu speichern, mit der Versicherung, dass Sie hoch verfügbar, sicher, dauerhaft, skalierbar und redundant ist. Dies bedeutet, dass Microsoft alle Wartungsarbeiten und kritischen Probleme für Sie behandelt. Weitere Informationen finden Sie im [Artikel Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-introduction).
+*Azure Storage* ist ein Microsoft-clouddienst, der es Entwicklern ermöglicht, Daten zu speichern, mit der Versicherung, dass Sie hoch verfügbar, sicher, dauerhaft, skalierbar und redundant ist. Dies bedeutet, dass Microsoft alle Wartungsarbeiten und kritischen Probleme für Sie behandelt. Weitere Informationen finden Sie im [Artikel Azure Storage](/azure/storage/common/storage-introduction).
 
 Nachdem Sie diesen Kurs abgeschlossen haben, verfügen Sie über eine gemischte Reality-Headset-Anwendung, die Folgendes ausführen kann:
 
@@ -44,7 +44,7 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR und Azure 305: Funktionen und Speicher</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -65,7 +65,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Ein Abonnement für ein Azure-Konto zum Erstellen von Azure-Ressourcen
 - Internet Zugriff für Azure-Setup und Datenabruf
 
@@ -113,7 +113,7 @@ Um den **Azure Storage-Dienst** zu verwenden, müssen Sie ein **Speicherkonto** 
 
     9. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue *Ressourcengruppe* . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     10. Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
 
@@ -166,7 +166,7 @@ So erstellen Sie eine Azure-Funktion:
 
     3. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue *Ressourcengruppe* . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Wählen Sie für diese Übung *Windows* als ausgewähltes **Betriebssystem** aus.
 
@@ -252,15 +252,15 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
     ![Neues Unity-Projekt benennen](images/AzureLabs-Lab5-18.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Festlegen von Visual Studio als Skript-Editor](images/AzureLabs-Lab5-19.png)
 
-4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >  **Build Settings** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >   , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
     ![Plattform zu UWP wechseln](images/AzureLabs-Lab5-20.png)
 
-5.  Wechseln Sie zu **dateibuildeinstellungen**  >  **Build Settings** , und stellen Sie Folgendes sicher:
+5.  Wechseln Sie zu **dateibuildeinstellungen**  >   , und stellen Sie Folgendes sicher:
 
     1. Das **Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
 
@@ -423,7 +423,7 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
 6.  Als Nächstes erstellen Sie ein **3D-Text** Objekt, um Feedback zum Status des Azure-Dienstanbieter zu erhalten.
 
-    Klicken Sie erneut mit der rechten Maustaste auf die **Schaltfläche** , und fügen Sie ein 3D- **Objekt**  >  **3D-Text** Objekt als untergeordnetes Element hinzu. *child*
+    Klicken Sie erneut mit der rechten Maustaste auf die **Schaltfläche** , und fügen Sie ein 3D- **Objekt**  >  **3D-Text** Objekt als untergeordnetes Element hinzu. 
 
     ![Erstellen eines neuen 3D-Text Objekts](images/AzureLabs-Lab5-42.png)
 
@@ -463,7 +463,7 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
 ## <a name="chapter-6---import-azure-storage-for-unity"></a>Kapitel 6: Importieren von Azure Storage für Unity
 
-Sie verwenden Azure Storage für Unity (das wiederum das .NET SDK für Azure nutzt). Weitere Informationen hierzu finden Sie im [Artikel Azure Storage für Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Sie verwenden Azure Storage für Unity (das wiederum das .NET SDK für Azure nutzt). Weitere Informationen hierzu finden Sie im [Artikel Azure Storage für Unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 Zurzeit gibt es ein bekanntes Problem in Unity, das erfordert, dass Plug-ins nach dem Importieren neu konfiguriert werden. Diese Schritte (4-7 in diesem Abschnitt) werden nicht mehr benötigt, nachdem der Fehler behoben wurde.
 
@@ -521,7 +521,7 @@ Die *azureservices* -Klasse ist für Folgendes zuständig:
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste in den Ordner *Asset* , und klicken Sie im Projekt Panel auf **Create**  >  **Ordner** erstellen. Benennen Sie den Ordner mit **Skripts**.
+1.  Klicken Sie mit der rechten Maustaste in den Ordner *Asset* , und klicken Sie im Projekt Panel auf   >  **Ordner** erstellen. Benennen Sie den Ordner mit **Skripts**.
 
     ![neuen Ordner erstellen](images/AzureLabs-Lab5-50.png)
 
@@ -1199,7 +1199,7 @@ Wenn die anderen Skripts vorhanden sind, ist es jetzt möglich, die *azureservic
 
 So beginnen Sie den Buildprozess:
 
-1.  Wechseln Sie zu **dateibuildeinstellungen**  >  **Build Settings**.
+1.  Wechseln Sie zu **dateibuildeinstellungen**  >  .
 
     ![Erstellen der APP](images/AzureLabs-Lab5-54.png)
 
@@ -1215,9 +1215,9 @@ So stellen Sie die Anwendung bereit:
 
 1.  Navigieren Sie zum *App* -Ordner, der im [letzten Kapitel](#chapter-11---build-the-uwp-solution)erstellt wurde. Es wird eine Datei mit dem Namen Ihrer Apps mit der Erweiterung ". sln" angezeigt, auf die Sie doppelklicken, um Sie in *Visual Studio* zu öffnen.
 
-2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
+2.  Wählen Sie auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
     > Für Microsoft hololens ist es möglicherweise einfacher, dies auf den *Remote* Computer festzulegen, damit Sie nicht auf Ihren Computer über das Team verfügen. Allerdings müssen Sie auch die folgenden Schritte ausführen:
     > - Informieren Sie sich über die **IP-Adresse** ihrer hololens. diese befindet sich in den **Einstellungen**  >  **Network &**  >  Advanced **Wi-Fi**  >  **Advanced Options**. IPv4 ist die Adresse, die Sie verwenden sollten. 
@@ -1243,4 +1243,4 @@ Erstellen Sie einen zweiten Erstellungs Punkt, und notieren Sie den-Punkt, aus d
 
 ### <a name="exercise-2"></a>Übung 2
 
-Erstellen Sie eine Möglichkeit, die APP neu zu starten, anstatt Sie jedes Mal erneut öffnen zu müssen. Das **Laden von Szenen** ist ein guter Ausgangspunkt. Erstellen Sie anschließend eine Möglichkeit, die gespeicherte Liste in *Azure Storage* zu löschen, damit Sie problemlos von der APP zurückgesetzt werden kann. 
+Erstellen Sie eine Möglichkeit, die APP neu zu starten, anstatt Sie jedes Mal erneut öffnen zu müssen. Das **Laden von Szenen** ist ein guter Ausgangspunkt. Erstellen Sie anschließend eine Möglichkeit, die gespeicherte Liste in *Azure Storage* zu löschen, damit Sie problemlos von der APP zurückgesetzt werden kann.

@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Tastatur, Maus, Game Controller, Xbox Controller, hololens, Desktop, Exemplarische Vorgehensweise, Beispielcode
-ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530049"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583638"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>Tastatur-, Maus- und Controllereingaben in DirectX
 
@@ -60,7 +60,7 @@ Weitere Informationen zum Implementieren der coretexteditcontext-Unterstützung 
 Sie können auch über die Eingabe Ereignishandler von UWP corewindow auch Maus Eingaben verwenden. Im folgenden wird erläutert, wie Sie die Windows Holographic-App-Vorlage ändern, um Mausklicks auf die gleiche Weise wie gedrückte Gesten zu unterstützen. Nachdem Sie diese Änderung vorgenommen haben, wird der Cube durch einen Mausklick beim Ausführen eines immersiven Headset-Geräts neu positioniert.
 
 > [!NOTE]
-> UWP-Apps können auch unformatierte XY-Daten für die Maus mit der [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) -API erhalten.
+> UWP-Apps können auch unformatierte XY-Daten für die Maus mit der [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) -API erhalten.
 
 Beginnen Sie mit dem Deklarieren eines neuen onpointerpressed-Handlers in appview. h:
 

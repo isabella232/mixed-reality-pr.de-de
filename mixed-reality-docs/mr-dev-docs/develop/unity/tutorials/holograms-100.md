@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Windows Mixed Reality, hololens, immersive, VR, Mr, Get Started, Hologram, Academy, Tutorial, Mixed Reality Academy, Unity, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006510"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583736"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR-Grundlagen 100: Erste Schritte mit Unity
 
@@ -24,7 +24,7 @@ Dieses Tutorial führt Sie durch die Erstellung einer einfachen Mixed Reality-AP
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR-Grundlagen 100: Erste Schritte mit Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -143,7 +143,7 @@ Das Erstellen eines Cubes in Ihrem Unity-Projekt erfolgt genauso wie das Erstell
 
 Nachdem wir nun den Cube erstellt haben, ist es an der Zeit, eine schnell Überprüfung im Gerät durchzuführen. Sie können dies direkt im Unity-Editor tun.
 
-### <a name="initial-setup"></a>Erste Einrichtung
+### <a name="initial-setup"></a>Ersteinrichtung
 
 1. Öffnen Sie auf dem Entwicklungs-PC in Unity das Fenster **Datei > Fenster Build-Einstellungen** .
 2. Ändern Sie **Platform** in **universelle Windows-Plattform** und klicken Sie auf **Plattform wechseln** .
@@ -223,7 +223,7 @@ Stellen Sie sicher, dass das Gerät über das USB-Kabel angeschlossen ist.
 
 Nachdem Sie Ihre APP bereitgestellt haben, versuchen Sie, alle den Cube zu verschieben, und beobachten Sie, dass Sie in der Welt vor Ihnen bleibt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Unity-Entwicklung – Übersicht](../unity-development-overview.md)
 * [Bewährte Methoden für das Arbeiten mit Unity und Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)

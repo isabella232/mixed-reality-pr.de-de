@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Custom Vision, Objekterkennung, gemischte Realität, Academy, Unity, Tutorial, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: 8f625ebc1e40edaa6364567686c345386ea37dbf
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010170"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583475"
 ---
 # <a name="mr-and-azure-310-object-detection"></a>Mr und Azure 310: Objekterkennung
 
@@ -28,8 +28,8 @@ Mit diesem Dienst können Sie ein Machine Learning-Modell mithilfe von Objekt Im
 
 **Azure-Custom Vision, Objekterkennung** ist ein Microsoft-Dienst, mit dem Entwickler benutzerdefinierte Abbild Klassifizierungen erstellen können. Diese Klassifizierungen können dann mit neuen Bildern verwendet werden, um Objekte innerhalb dieses neuen Bilds zu erkennen, indem Sie die **Feld Begrenzungen** innerhalb des Bilds selbst bereitstellen. Der Dienst bietet ein einfaches, leicht zu verwendende Onlineportal, um diesen Prozess zu optimieren. Weitere Informationen finden Sie unter den folgenden Links:
 
-* [Azure-Custom Vision Seite](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)
-* [Limits und Kontingente](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/limits-and-quotas)
+* [Azure-Custom Vision Seite](/azure/cognitive-services/custom-vision-service/home)
+* [Grenzwerte und Kontingente](/azure/cognitive-services/custom-vision-service/limits-and-quotas)
 
 Nach Abschluss dieses Kurses verfügen Sie über eine Mixed Reality-Anwendung, die Folgendes ausführen kann:
 
@@ -49,7 +49,7 @@ In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Azure-Custom Vision 
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 310: Objekterkennung</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -63,23 +63,23 @@ In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Azure-Custom Vision 
 Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 
 - Einen Entwicklungs-PC
-- [Windows 10 Fall Creators Update (oder höher) mit aktiviertem Entwicklermodus](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Das neueste Windows 10 SDK](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017,4 LTS](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](https://docs.microsoft.com/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- Ein [Microsoft hololens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details) mit aktiviertem Entwicklermodus
+- [Windows 10 Fall Creators Update (oder höher) mit aktiviertem Entwicklermodus](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Das neueste Windows 10 SDK](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Unity 2017,4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- Ein [Microsoft hololens](/windows/mixed-reality/hololens-hardware-details) mit aktiviertem Entwicklermodus
 - Internet Zugriff für Azure-Setup und Custom Vision Service-Abruf
 -  Für jedes Objekt, das von der Custom Vision erkannt werden soll, ist eine Reihe von mindestens 15 (15) Bildern erforderlich). Wenn Sie möchten, können Sie die Images verwenden, die bereits mit diesem Kurs, [einer Reihe von Tassen](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip), bereitgestellt werden.
 
 ## <a name="before-you-start"></a>Vorbereitung
 
 1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
-2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup). 
 3.  Es empfiehlt sich, eine Kalibrierung und Sensor Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen). 
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](../../../calibration.md#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](../../../sensor-tuning.md).
+Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
 
 ## <a name="chapter-1---the-custom-vision-portal"></a>Kapitel 1: das Custom Vision-Portal
 
@@ -116,7 +116,7 @@ Um das **Azure-Custom Vision Service** verwenden zu können, müssen Sie eine In
         ![](images/AzureLabs-Lab310-05.png)
 
         > [!NOTE]
-        > Wenn Sie [mehr über Azure-Ressourcengruppen erfahren möchten, navigieren Sie zu den zugehörigen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal) Dokumenten.
+        > Wenn Sie [mehr über Azure-Ressourcengruppen erfahren möchten, navigieren Sie zu den zugehörigen](/azure/azure-resource-manager/resource-group-portal) Dokumenten.
 
     4.  Legen Sie die **Projekttypen** als **Objekterkennung (Vorschauversion)** fest.
 

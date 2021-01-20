@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Gemischte Realität, Windows Mixed Reality, Hologram, Academy, Tutorial, Emulator, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10, Blick, Gesten, Spracheingabe, räumlicher Sound, räumliche Zuordnung
-ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678309"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583695"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>MR-Grundlagen 101E: Vollständiges Projekt mit Emulator
 
@@ -28,7 +28,7 @@ In diesem Tutorial werden Sie durch ein vollständiges Projekt geführt, das in 
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR-Grundlagen 101E: Vollständiges Projekt mit Emulator</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -100,7 +100,7 @@ In diesem Kapitel richten wir das erste Unity-Projekt ein und durchlaufen den Bu
 
 * Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
 * Wählen Sie in der Liste **Plattform** den **Windows Store** aus, und klicken Sie auf **Plattform wechseln**.
-* Legen Sie das **SDK** auf **Universal 10** und den Buildtyp auf **D3D** fest. **Build Type**
+* Legen Sie das **SDK** auf **Universal 10** und den Buildtyp auf **D3D** fest. 
 * Überprüfen Sie die **Unity c#-Projekte**.
 * Klicken Sie auf **offene Szenen hinzufügen** , um die Szene hinzuzufügen.
 * Klicken Sie auf **Player Einstellungen...**.
@@ -638,7 +638,7 @@ Sie haben Folgendes gelernt:
 
 Sie sind nun bereit, eigene Holographic apps zu erstellen!
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [MR-Grundlagen 101: Vollständiges Projekt mit Gerät](holograms-101.md)
 * [Anvisieren](../../../design/gaze-and-commit.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Rendering, – Hologramm
-ms.openlocfilehash: 1f8f9954aee988fa092e25910c5d6d575341b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eea302aa31829bb91ccf1cc8ad55faed5a380d17
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009390"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583124"
 ---
 # <a name="rendering"></a>Darstellung
 
@@ -28,7 +28,7 @@ Das Holographic-Rendering ermöglicht es Ihrer Anwendung, ein Hologramm an einer
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>Hololens (erste Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>Hololens (erste Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -42,7 +42,7 @@ Das Holographic-Rendering ermöglicht es Ihrer Anwendung, ein Hologramm an einer
 
 ## <a name="holographic-rendering"></a>Holographisches Rendern
 
-Der Schlüssel zu Holographic Rendering ist das wissen, welche Art von Gerät verwendet wird. Geräte mit **Anzeige Anzeige**, z. b. [hololens](../../hololens-hardware-details.md), werden der Welt zur Welt hinzugefügt. Schwarze Pixel sind vollständig transparent, und hellere Pixel sind immer transparenter. Da das Licht aus der Anzeige dem Licht aus der realen Welt hinzugefügt wird, werden weiße Pixel durchsichtig.
+Der Schlüssel zu Holographic Rendering ist das wissen, welche Art von Gerät verwendet wird. Geräte mit **Anzeige Anzeige**, z. b. [hololens](/hololens/hololens1-hardware), werden der Welt zur Welt hinzugefügt. Schwarze Pixel sind vollständig transparent, und hellere Pixel sind immer transparenter. Da das Licht aus der Anzeige dem Licht aus der realen Welt hinzugefügt wird, werden weiße Pixel durchsichtig.
 
 Obwohl das stereoverarbeitungs-Rendering einen tiefen Hinweis für Ihre Hologramme bietet, kann das Hinzufügen von Grund [Effekten](../../design/interaction-fundamentals.md) dazu beitragen, dass Benutzern leichter angezeigt werden kann, welche Oberfläche ein – Hologramm- Ein Grundverfahren besteht darin, einen Glanz um ein Hologramm auf der nahe gelegenen Oberfläche hinzuzufügen und dann einen Schatten gegen diesen Glanz zu erzeugen. Auf diese Weise scheint ihr Schatten das Licht aus der Umgebung zu subtrahieren. [Räumlicher Sound](../../design/spatial-sound.md) ist ein weiterer wichtiger Hinweis, der den Benutzern den Grund für die Entfernung und den relativen Speicherort eines holograms ermöglicht.
 
@@ -61,11 +61,11 @@ Anwendungen, die erweiterte Techniken zum Erweitern der System Vorhersage verwen
 
 Beim Rendern eines Frames gibt das System den backpufferviewport an, den die Anwendung zeichnen soll. Dieser Viewport ist häufig kleiner als die vollständige Größe des Frame Puffers. Je nachdem, wie groß die Größe des Viewports ist, wird das Bild nach dem Rendern des Frames durch die Anwendung hochskaliert, um die gesamte Anzeige zu füllen.
 
-Bei Anwendungen, die nicht mit der erforderlichen Aktualisierungsrate gerendert [werden können, können systemrenderingparameter so konfiguriert werden](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) , dass die Arbeitsspeicher Auslastung und renderingkosten auf Kosten eines größeren Pixel Aliasing reduziert werden. Das Hintergrund Puffer Format kann auch geändert werden, was für einige apps helfen kann, die Arbeitsspeicher Bandbreite und den Pixel Durchsatz zu verbessern.
+Bei Anwendungen, die nicht mit der erforderlichen Aktualisierungsrate gerendert [werden können, können systemrenderingparameter so konfiguriert werden](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) , dass die Arbeitsspeicher Auslastung und renderingkosten auf Kosten eines größeren Pixel Aliasing reduziert werden. Das Hintergrund Puffer Format kann auch geändert werden, was für einige apps helfen kann, die Arbeitsspeicher Bandbreite und den Pixel Durchsatz zu verbessern.
 
-Das Rendern von "Frustum", "Resolution" und "Framerate", in dem Ihre APP zum Rendern aufgefordert wird, kann sich auch von Frame zu Frame ändern und kann sich auf der linken und rechten Seite unterscheiden. Wenn z. b. die Transformation für [gemischtes auflösen (Mixed Reality Capture](../../mixed-reality-capture.md) , MRC) aktiv ist und die [Bild-/Videokamera-Ansichts Konfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) nicht aktiviert ist, kann ein Auge mit einem größeren FOV oder einer Auflösung gerendert werden
+Das Rendern von "Frustum", "Resolution" und "Framerate", in dem Ihre APP zum Rendern aufgefordert wird, kann sich auch von Frame zu Frame ändern und kann sich auf der linken und rechten Seite unterscheiden. Wenn z. b. die Transformation für [gemischtes auflösen (Mixed Reality Capture](/hololens/holographic-photos-and-videos) , MRC) aktiv ist und die [Bild-/Videokamera-Ansichts Konfiguration](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) nicht aktiviert ist, kann ein Auge mit einem größeren FOV oder einer Auflösung gerendert werden
 
-Für einen beliebigen Frame *muss* ihre App mithilfe der Ansichts Transformation, der Projektions Transformation und der viewportauflösung, die vom System bereitgestellt wird, renderingweise erfolgen. Außerdem darf die Anwendung niemals davon ausgehen, dass jeder Renderingparameter oder Sicht Parameter von Frame zu Frame korrigiert bleibt. Module wie Unity verarbeiten all diese Transformationen für Sie in ihren eigenen Kamera Objekten, sodass die physische Bewegung ihrer Benutzer und der Zustand des Systems immer berücksichtigt werden. Wenn Ihre Anwendung eine virtuelle Verschiebung des Benutzers über die Welt ermöglicht (z. b. die Verwendung des Fingerabdrucks auf einem Gamepad), können Sie ein übergeordnetes Rig-Objekt oberhalb der Kamera hinzufügen, das es verschiebt. Dies bewirkt, dass die Kamera den virtuellen und physischen Bewegungs Vorgang des Benutzers widerspiegelt. Wenn die Anwendung die vom System bereitgestellte Ansichts Transformation, Projektions Transformation oder viewportdimension ändert, muss Sie das System durch Aufrufen der entsprechenden [Überschreibungs-API](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose)informieren.
+Für einen beliebigen Frame *muss* ihre App mithilfe der Ansichts Transformation, der Projektions Transformation und der viewportauflösung, die vom System bereitgestellt wird, renderingweise erfolgen. Außerdem darf die Anwendung niemals davon ausgehen, dass jeder Renderingparameter oder Sicht Parameter von Frame zu Frame korrigiert bleibt. Module wie Unity verarbeiten all diese Transformationen für Sie in ihren eigenen Kamera Objekten, sodass die physische Bewegung ihrer Benutzer und der Zustand des Systems immer berücksichtigt werden. Wenn Ihre Anwendung eine virtuelle Verschiebung des Benutzers über die Welt ermöglicht (z. b. die Verwendung des Fingerabdrucks auf einem Gamepad), können Sie ein übergeordnetes Rig-Objekt oberhalb der Kamera hinzufügen, das es verschiebt. Dies bewirkt, dass die Kamera den virtuellen und physischen Bewegungs Vorgang des Benutzers widerspiegelt. Wenn die Anwendung die vom System bereitgestellte Ansichts Transformation, Projektions Transformation oder viewportdimension ändert, muss Sie das System durch Aufrufen der entsprechenden [Überschreibungs-API](/uwp/api/Windows.Graphics.Holographic.HolographicCameraPose#Windows_Graphics_Holographic_HolographicCameraPose)informieren.
 
 Um die Stabilität Ihres Holographic-Rendering zu verbessern, sollte Ihre APP für Windows jeden Frame den tiefen Puffer bereitstellen, der für das Rendering verwendet wurde. Wenn Ihre APP einen tiefen Puffer bereitstellt, sollte Sie über kohärente tiefen Werte verfügen, wobei die Tiefe in Meter von der Kamera ausgedrückt wird. Dies ermöglicht es dem System, ihre pro-Pixel-Tiefendaten zu verwenden, um Inhalte besser zu stabilisieren, wenn die Kopfzeile des Benutzers etwas von der vorhergesagten Position abweicht. Wenn Sie ihren tiefen Puffer nicht bereitstellen können, können Sie einen Fokuspunkt und normal bereitstellen, indem Sie eine Ebene definieren, die den größten Teil ihrer Inhalte schneidet. Wenn sowohl der tiefen Puffer als auch eine Fokusebene bereitgestellt werden, verwendet das System möglicherweise beides. Insbesondere ist es hilfreich, sowohl den tiefen Puffer als auch einen Schwerpunkt Punkt bereitzustellen, der einen Geschwindigkeitsvektor enthält, wenn Ihre Anwendung holograms anzeigt, die sich in Bewegung befinden.
 
@@ -75,7 +75,7 @@ Ausführliche Informationen zu diesem Thema finden Sie [im Artikel Rendern im Di
 
 Mit Windows Mixed Reality wird das Konzept einer **Holographic Kamera** eingeführt. Holographic Kameras ähneln der herkömmlichen Kamera in 3D-Grafik Texten. Sie definieren sowohl die System externe (Position und Ausrichtung) als auch die systeminternen Kameraeigenschaften. (Beispielsweise wird das Feld Ansicht zum Anzeigen einer virtuellen 3D-Szene verwendet.) Im Gegensatz zu herkömmlichen 3D-Kameras ist die Anwendung nicht in der Lage, die Position, die Ausrichtung und die intrinsischen Eigenschaften der Kamera zu steuern. Stattdessen wird die Position und Ausrichtung der Holographic-Kamera implizit durch die Bewegung des Benutzers gesteuert. Die Verschiebung des Benutzers wird über eine Ansichts Transformation per Frame an die Anwendung weitergeleitet. Ebenso werden die systeminternen Eigenschaften der Kamera durch die Matrix des Geräts und das Rahmen der Projektions Transformation definiert.
 
-Im Allgemeinen wird Ihre Anwendung für eine einzelne Stereokamera dargestellt. Eine robuste Renderingschleife unterstützt mehrere Kameras und unterstützt Mono-und Stereokameras. Beispielsweise kann das System die Anwendung zum Rendering aus einer alternativen Perspektive auffordern, wenn der Benutzer eine Funktion wie z. b. [Mixed Reality Capture](../../mixed-reality-capture.md) (MRC) aktiviert, abhängig von der Form "Headset". Anwendungen, die mehrere Kameras unterstützen [können, erhalten diese durch die](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) Wahl der [Art](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) von Kameras, die Sie unterstützen können.
+Im Allgemeinen wird Ihre Anwendung für eine einzelne Stereokamera dargestellt. Eine robuste Renderingschleife unterstützt mehrere Kameras und unterstützt Mono-und Stereokameras. Beispielsweise kann das System die Anwendung zum Rendering aus einer alternativen Perspektive auffordern, wenn der Benutzer eine Funktion wie z. b. [Mixed Reality Capture](/hololens/holographic-photos-and-videos) (MRC) aktiviert, abhängig von der Form "Headset". Anwendungen, die mehrere Kameras unterstützen [können, erhalten diese durch die](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration) Wahl der [Art](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfigurationKind#Windows_Graphics_Holographic_HolographicViewConfigurationKind) von Kameras, die Sie unterstützen können.
 
 ## <a name="volume-rendering"></a>Volumengrafik
 
@@ -83,14 +83,14 @@ Beim Rendern von medizinischen MRIs oder Engineering-Volumes in 3D werden häufi
 
 ## <a name="supported-resolutions-on-hololens-first-gen"></a>Unterstützte Auflösungen auf hololens (erste Generation)
 
-* Die maximale Viewportgröße ist eine Eigenschaft von [holographicdisplay](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay). Hololens ist standardmäßig auf die maximale Viewportgröße von 720p (1268x720) festgelegt.
+* Die maximale Viewportgröße ist eine Eigenschaft von [holographicdisplay](/uwp/api/windows.graphics.holographic.holographicdisplay). Hololens ist standardmäßig auf die maximale Viewportgröße von 720p (1268x720) festgelegt.
 * Die Viewportgröße kann geändert werden, indem Sie viewportscalefactor auf holographiccamera festlegen. Dieser Skalierungsfaktor liegt im Bereich von 0 bis 1.
 * Die niedrigste unterstützte Viewportgröße in hololens (erste Generation) beträgt 50% von 720p, also "360p" (634x360). Dies ist ein viewportscalefactor von 0,5.
 * Alles, was niedriger als 540p ist, wird aufgrund der visuellen Beeinträchtigung nicht empfohlen, kann aber zur Identifizierung von Engpässen bei der Pixel Füll Rate verwendet werden.
 
 ## <a name="supported-resolutions-on-hololens-2"></a>Unterstützte Auflösungen auf hololens 2
 
-* Die aktuellen und maximalen unterstützten renderzielgrößen sind Eigenschaften der [Ansichts Konfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). Hololens 2 wird standardmäßig auf die maximale renderzielgröße (1440x936) festgelegt.
+* Die aktuellen und maximalen unterstützten renderzielgrößen sind Eigenschaften der [Ansichts Konfiguration](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration#Windows_Graphics_Holographic_HolographicViewConfiguration). Hololens 2 wird standardmäßig auf die maximale renderzielgröße (1440x936) festgelegt.
 * Apps können die Größe der renderzielpuffer ändern, indem Sie die requestrendertargetsize-Methode aufrufen, um eine neue renderzielgröße anzufordern. Es wird eine neue renderzielgröße ausgewählt, die die angeforderte renderzielgröße erreicht oder überschreitet. Diese API ändert die Größe des renderzielpuffers, der eine erneute Speicher Belegung auf der GPU erfordert. Dies hat folgende Auswirkungen: die Größe des Renderziels kann zentral herunterskaliert werden, um die Arbeitsspeicher Auslastung auf der GPU zu verringern. diese Methode sollte nicht bei hoher Häufigkeit aufgerufen werden.
 * Apps können weiterhin die Größe des Viewports auf die gleiche Weise ändern wie bei hololens 1. Es gibt keine zusätzliche Speicher Belegung für die GPU, sodass Sie bei hoher Häufigkeit geändert werden kann. Sie kann jedoch nicht verwendet werden, um die Arbeitsspeicher Auslastung auf der GPU zu verringern.
 * Die niedrigste unterstützte Viewportgröße in hololens 2 ist 634x412, ein viewportscalefactor von ungefähr 0,44, wenn die standardrenderzielgröße verwendet wird.
@@ -99,6 +99,6 @@ Beim Rendern von medizinischen MRIs oder Engineering-Volumes in 3D werden häufi
 
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Hologrammstabilität](hologram-stability.md)
 * [Rendern in DirectX](../native/rendering-in-directx.md)

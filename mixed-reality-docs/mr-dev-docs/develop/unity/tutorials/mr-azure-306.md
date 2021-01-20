@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Media Services, Streaming-Video, 360, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679519"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583449"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>MR und Azure 306: Streamen von Video
 
@@ -43,7 +43,7 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 306: Streamen von Video</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -142,7 +142,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
     3. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
     
-    > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten von Azure-Ressourcengruppen](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+    > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten von Azure-Ressourcengruppen](/azure/azure-resource-manager/resource-group-portal).
 
     4.  Bestimmen Sie den **Speicherort** für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
 
@@ -250,7 +250,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
     2.  Das **Datum** und die **Uhrzeit** werden von Ihrem aktuellen Datum auf eine Uhrzeit in der Zukunft (in diesem Fall 100 Jahre) festgelegt. Lassen Sie den Wert unverändert, oder ändern Sie ihn entsprechend.
 
     > [!NOTE]
-    > Weitere Informationen zu Locators und den Optionen, die Sie auswählen können, finden Sie in der [Azure Media Services-Dokumentation](https://docs.microsoft.com/azure/media-services/media-services-concepts).
+    > Weitere Informationen zu Locators und den Optionen, die Sie auswählen können, finden Sie in der [Azure Media Services-Dokumentation](/azure/media-services/media-services-concepts).
 
 24. Klicken Sie unten in diesem Bereich auf die Schaltfläche **Hinzufügen** .
 
@@ -281,11 +281,11 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-29.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **_Edit_ *Einstellungen* bearbeiten** , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu ***Einstellungen* bearbeiten** , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-30.png)
 
-4.  Navigieren Sie als nächstes zu **_dateibuildeinstellungen_ *Build Settings*** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu **_dateibuildeinstellungen_** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
 5.  Stellen Sie außerdem Folgendes sicher:
 
@@ -606,7 +606,7 @@ So erstellen Sie diese Klasse:
     ```
 
     > [!TIP] 
-    > Die **changescene ()** -Methode verwendet ein praktisches C- \# Feature, das als *Bedingter Operator* bezeichnet wird. Dies ermöglicht, dass Bedingungen überprüft werden und dann basierend auf dem Ergebnis der Überprüfung zurückgegebene Werte in einer einzigen Anweisung zurückgegeben werden. [Weitere Informationen zum bedingten Operator](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator)finden Sie unter diesem Link.
+    > Die **changescene ()** -Methode verwendet ein praktisches C- \# Feature, das als *Bedingter Operator* bezeichnet wird. Dies ermöglicht, dass Bedingungen überprüft werden und dann basierend auf dem Ergebnis der Überprüfung zurückgegebene Werte in einer einzigen Anweisung zurückgegeben werden. [Weitere Informationen zum bedingten Operator](/dotnet/csharp/language-reference/operators/conditional-operator)finden Sie unter diesem Link.
 
 11. Speichern Sie die Änderungen in Visual Studio, bevor Sie zu Unity zurückkehren.
 
@@ -629,7 +629,7 @@ So erstellen Sie diese Klasse:
 
 2.  Klicken Sie mit der rechten Maustaste in das **Projekt** Panel **Create* * C \# Script * *. Benennen Sie das **Skript mit** dem Namen.
 
-3.  Doppelklicken Sie auf das neue "Gaze"- **_Gaze_*Skript, um es mit _* Visual Studio 2017 zu öffnen.**
+3.  Doppelklicken Sie auf das neue "Gaze"- ***Skript, um es mit _* Visual Studio 2017 zu öffnen.**
 
 4.  Stellen Sie sicher, dass sich der folgende Namespace oben im Skript befindet, und entfernen Sie alle anderen:
 
@@ -851,9 +851,9 @@ Zum Bereitstellen auf dem lokalen Computer:
 
 1.  Öffnen Sie in **Visual Studio 2017** die soeben erstellte Projektmappendatei.
 
-2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
+2.  Wählen Sie auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
     ![Kapitel 9: Bereitstellung auf lokalem Computer](images/AzureLabs-Lab6-62.png)
 
@@ -888,5 +888,3 @@ Es ist durchaus möglich, nur eine einzige Szene zu verwenden, um Videos in dies
 **Übung 2**
 
 Experimentieren Sie mit Azure und Unity, und versuchen Sie, die Fähigkeit der APP zu implementieren, automatisch ein Video mit einer anderen Dateigröße auszuwählen, abhängig von der Stärke einer Internet Verbindung.
-
-

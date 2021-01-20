@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, Rendering, 3D-Grafiken, holographicframe, Renderschleife, Update Schleife, Exemplarische Vorgehensweise, Beispielcode, Direct3D
-ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62df75f8febc3f3ee6e7c98f2c8fd91082a4466
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006720"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583785"
 ---
 # <a name="rendering-in-directx"></a>Rendern in DirectX
 
@@ -25,7 +25,7 @@ Hinweis: in dieser exemplarischen Vorgehensweise wird das Holographic-Rendering 
 ## <a name="update-for-the-current-frame"></a>Update für den aktuellen Frame
 
 Um den Anwendungs Zustand für holograms zu aktualisieren, führt die APP einmal pro Frame folgende Aktionen aus:
-* Verschaffen Sie sich einen <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> aus dem Anzeige Verwaltungssystem.
+* Verschaffen Sie sich einen <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> aus dem Anzeige Verwaltungssystem.
 * Aktualisieren Sie die Szene mit der aktuellen Vorhersage, bei der die Kameraansicht angezeigt wird, wenn das Rendering abgeschlossen ist. Beachten Sie, dass für die Holographic-Szene mehr als eine Kamera vorhanden sein kann.
 
 Zum Rendering in Holographic Camera-Ansichten führt die APP einmal pro Frame folgende Aktionen aus:
@@ -33,7 +33,7 @@ Zum Rendering in Holographic Camera-Ansichten führt die APP einmal pro Frame fo
 
 ### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>Erstellen Sie einen neuen Holographic Frame, und rufen Sie seine Vorhersage ab
 
-Der <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> enthält Informationen, die die APP benötigt, um den aktuellen Frame zu aktualisieren und zu Rendering. Die APP startet jeden neuen Frame durch Aufrufen der **createnextframe** -Methode. Wenn diese Methode aufgerufen wird, werden Vorhersagen mit den neuesten verfügbaren Sensordaten erstellt und im **currentvorhersage** -Objekt gekapselt.
+Der <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> enthält Informationen, die die APP benötigt, um den aktuellen Frame zu aktualisieren und zu Rendering. Die APP startet jeden neuen Frame durch Aufrufen der **createnextframe** -Methode. Wenn diese Methode aufgerufen wird, werden Vorhersagen mit den neuesten verfügbaren Sensordaten erstellt und im **currentvorhersage** -Objekt gekapselt.
 
 Für jeden gerenderten Frame muss ein neues Frame Objekt verwendet werden, da es nur für einen Zeitpunkt gültig ist. Die **currentvorhersage** -Eigenschaft enthält Informationen, wie z. b. die Kameraposition. Die Informationen werden auf den genauen Zeitpunkt hochgerechnet, zu dem der Frame erwartungsgemäß für den Benutzer sichtbar ist.
 
@@ -73,7 +73,7 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 
 ### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>Das Koordinatensystem zur Verwendung als Grundlage für das Rendering erhalten
 
-Windows Mixed Reality ermöglicht der APP, verschiedene [Koordinatensysteme](coordinate-systems-in-directx.md)zu erstellen, z. b. angefügte und stationäre Bezugsrahmen für die Nachverfolgung von Positionen in der physischen Welt. Diese Koordinatensysteme können von Ihrer APP dann verwendet werden, um zu verdeutlichen, wo die einzelnen Frames von holograms dargestellt werden. Wenn Sie Koordinaten über eine API anfordern, übergeben Sie immer das <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">spatialcoordinatesystem</a> , in dem Sie die Koordinaten ausdrücken möchten.
+Windows Mixed Reality ermöglicht der APP, verschiedene [Koordinatensysteme](coordinate-systems-in-directx.md)zu erstellen, z. b. angefügte und stationäre Bezugsrahmen für die Nachverfolgung von Positionen in der physischen Welt. Diese Koordinatensysteme können von Ihrer APP dann verwendet werden, um zu verdeutlichen, wo die einzelnen Frames von holograms dargestellt werden. Wenn Sie Koordinaten über eine API anfordern, übergeben Sie immer das <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">spatialcoordinatesystem</a> , in dem Sie die Koordinaten ausdrücken möchten.
 
 Aus **appmain:: Update**:
 
@@ -313,7 +313,7 @@ Es empfiehlt sich, zu überprüfen, ob **trygetviewtransform** erfolgreich war, 
 
 Windows Mixed Reality umfasst Features für die [Bildstabilisierung](../platform-capabilities-and-apis/hologram-stability.md) , damit holograms positioniert werden, wenn ein Entwickler oder Benutzer Sie in der Welt einfügt. Die Bildstabilisierung hilft dabei, die in einer Renderingpipeline enthaltene Latenz zu verbergen, um den Benutzern eine optimale Benutzererfahrung zu bieten. Es kann ein Fokuspunkt angegeben werden, um die Bildstabilisierung noch weiter zu verbessern, oder es kann ein tiefen Puffer bereitgestellt werden, um die optimierte Bildstabilisierung in Echtzeit zu berechnen.
 
-Um optimale Ergebnisse zu erzielen, sollte Ihre APP einen tiefen Puffer mithilfe der <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> -API bereitstellen. Die gemischte Realität von Windows kann dann Geometrie Informationen aus dem tiefen Puffer verwenden, um die Bildstabilisierung in Echtzeit zu optimieren. Die Vorlage für die Windows Holographic-App führt standardmäßig einen Commit für den tiefen Puffer der app durch
+Um optimale Ergebnisse zu erzielen, sollte Ihre APP einen tiefen Puffer mithilfe der <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> -API bereitstellen. Die gemischte Realität von Windows kann dann Geometrie Informationen aus dem tiefen Puffer verwenden, um die Bildstabilisierung in Echtzeit zu optimieren. Die Vorlage für die Windows Holographic-App führt standardmäßig einen Commit für den tiefen Puffer der app durch
 
 Aus **appmain:: Rendering**:
 
@@ -600,7 +600,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Aktivieren des Holographic Frame zum Darstellen der SwapChain
 
-Mit Windows Mixed Reality steuert das System die Swapkette. Das System verwaltet dann die Anzeige von Frames für jede holografische Kamera, um eine qualitativ hochwertige Benutzer Leistung sicherzustellen. Außerdem bietet es eine Viewport-Aktualisierung jedes Frames für jede Kamera, um die Aspekte des Systems zu optimieren, wie z. b. die Bildstabilisierung oder die Transformation für gemischte Realität. Eine Holographic-APP, die DirectX verwendet, **ruft daher** nicht in einer DXGI-SwapChain auf. Stattdessen verwenden Sie die <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> -Klasse, um alle SwapChain für einen Frame darzustellen, sobald Sie das Zeichnen abgeschlossen haben.
+Mit Windows Mixed Reality steuert das System die Swapkette. Das System verwaltet dann die Anzeige von Frames für jede holografische Kamera, um eine qualitativ hochwertige Benutzer Leistung sicherzustellen. Außerdem bietet es eine Viewport-Aktualisierung jedes Frames für jede Kamera, um die Aspekte des Systems zu optimieren, wie z. b. die Bildstabilisierung oder die Transformation für gemischte Realität. Eine Holographic-APP, die DirectX verwendet, **ruft daher** nicht in einer DXGI-SwapChain auf. Stattdessen verwenden Sie die <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> -Klasse, um alle SwapChain für einen Frame darzustellen, sobald Sie das Zeichnen abgeschlossen haben.
 
 Aus **deviceresources::P erneut gesendet**:
 
@@ -608,11 +608,11 @@ Aus **deviceresources::P erneut gesendet**:
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-Standardmäßig wartet diese API, bis der Frame abgeschlossen ist, bevor Sie zurückkehrt. Holographic apps sollten warten, bis der vorherige Frame abgeschlossen ist, bevor die Arbeit an einem neuen Frame gestartet wird, da dadurch die Latenzzeit reduziert wird und bessere Ergebnisse aus Holographic Frame-Vorhersagen erzielt werden können. Dies ist keine harte Regel, und wenn Sie über Frames verfügen, die mehr als eine Bildschirm Aktualisierung zum Renderingvorgang benötigen, können Sie diesen warte Vorgang deaktivieren, indem Sie den holographicframepresentwaitbehavior-Parameter an <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">presentusingcurrentvorhersage</a>übergeben. In diesem Fall würden Sie wahrscheinlich einen asynchronen Renderingthread verwenden, um eine fortlaufende Last auf der GPU aufrechtzuerhalten. Die Aktualisierungsrate des hololens-Geräts beträgt 60 Hz, wobei ein Frame eine Dauer von ungefähr 16 MS hat. Immersive Headset-Geräte können zwischen 60 Hz und 90 Hz liegen. beim Aktualisieren der Anzeige bei 90 Hz erhält jeder Frame eine Dauer von ungefähr 11 ms.
+Standardmäßig wartet diese API, bis der Frame abgeschlossen ist, bevor Sie zurückkehrt. Holographic apps sollten warten, bis der vorherige Frame abgeschlossen ist, bevor die Arbeit an einem neuen Frame gestartet wird, da dadurch die Latenzzeit reduziert wird und bessere Ergebnisse aus Holographic Frame-Vorhersagen erzielt werden können. Dies ist keine harte Regel, und wenn Sie über Frames verfügen, die mehr als eine Bildschirm Aktualisierung zum Renderingvorgang benötigen, können Sie diesen warte Vorgang deaktivieren, indem Sie den holographicframepresentwaitbehavior-Parameter an <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">presentusingcurrentvorhersage</a>übergeben. In diesem Fall würden Sie wahrscheinlich einen asynchronen Renderingthread verwenden, um eine fortlaufende Last auf der GPU aufrechtzuerhalten. Die Aktualisierungsrate des hololens-Geräts beträgt 60 Hz, wobei ein Frame eine Dauer von ungefähr 16 MS hat. Immersive Headset-Geräte können zwischen 60 Hz und 90 Hz liegen. beim Aktualisieren der Anzeige bei 90 Hz erhält jeder Frame eine Dauer von ungefähr 11 ms.
 
 ### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>Behandeln von DeviceLost-Szenarien in Zusammenarbeit mit holographicframe
 
-DirectX 11-apps müssten in der Regel das von der **Present** -Funktion der DXGI-SwapChain zurückgegebene HRESULT überprüfen, um herauszufinden, ob ein **DeviceLost** -Fehler aufgetreten ist. Die <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> -Klasse übernimmt diese für Sie. Überprüfen Sie das zurückgegebene <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">holographicframepresentresult</a> , um herauszufinden, ob Sie das Direct3D-Gerät und Geräte basierte Ressourcen freigeben und neu erstellen müssen.
+DirectX 11-apps müssten in der Regel das von der **Present** -Funktion der DXGI-SwapChain zurückgegebene HRESULT überprüfen, um herauszufinden, ob ein **DeviceLost** -Fehler aufgetreten ist. Die <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> -Klasse übernimmt diese für Sie. Überprüfen Sie das zurückgegebene <a href="/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">holographicframepresentresult</a> , um herauszufinden, ob Sie das Direct3D-Gerät und Geräte basierte Ressourcen freigeben und neu erstellen müssen.
 
 ```cpp
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -625,7 +625,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-Wenn das Direct3D-Gerät verloren gegangen ist und Sie es neu erstellt haben, müssen Sie den <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">holographicspace</a> anweisen, das neue Gerät zu verwenden. Die Swapkette wird für dieses Gerät neu erstellt.
+Wenn das Direct3D-Gerät verloren gegangen ist und Sie es neu erstellt haben, müssen Sie den <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">holographicspace</a> anweisen, das neue Gerät zu verwenden. Die Swapkette wird für dieses Gerät neu erstellt.
 
 Aus **deviceresources:: initializeusingholographicspace**:
 
@@ -641,7 +641,7 @@ Windows 10 Creators Update-PCs **können mit diskreten** und integrierten GPUs k
 
 Allgemeiner Direct3D Beispielcode veranschaulicht das Erstellen eines DirectX-Geräts mithilfe des Standard Hardware Adapters, der auf einem Hybridsystem möglicherweise nicht identisch mit dem für das Headset verwendeten ist.
 
-Um Probleme zu umgehen, verwenden Sie <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">holographicadapterid</a> von <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">holographicspace</a>. Primaryadapterid () oder <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">holographicdisplay</a>. Adapterid (). Diese Adapter-ID kann dann verwendet werden, um den richtigen dxgiadapter mithilfe von "IDXGIFactory4. endumadapterbyluid" auszuwählen.
+Um Probleme zu umgehen, verwenden Sie <a href="/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">holographicadapterid</a> von <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">holographicspace</a>. Primaryadapterid () oder <a href="/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">holographicdisplay</a>. Adapterid (). Diese Adapter-ID kann dann verwendet werden, um den richtigen dxgiadapter mithilfe von "IDXGIFactory4. endumadapterbyluid" auszuwählen.
 
 Aus **deviceresources:: initializeusingholographicspace**:
 
@@ -711,7 +711,7 @@ const HRESULT hr = D3D11CreateDevice(
 
 Die Verwendung von Media Foundation auf Hybridsystemen kann zu Problemen führen, bei denen das Video nicht gerrendern oder die Video Textur beschädigt ist, da Media Foundation ein Systemverhalten als Standard verwendet. In einigen Szenarien ist das Erstellen eines separaten ID3D11Device erforderlich, um Multithreading zu unterstützen, und die richtigen erstellungsflags werden festgelegt.
 
-Beim Initialisieren des ID3D11Device muss D3D11_CREATE_DEVICE_VIDEO_SUPPORT Flag als Teil des D3D11_CREATE_DEVICE_FLAG definiert werden. Nachdem das Gerät und der Kontext erstellt wurden, müssen Sie <a href="https://docs.microsoft.com/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">setmultithreadprotected</a> aufrufen, um Multithreading zu aktivieren. Um das Gerät dem <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">imfdxgidebug</a>Manager zuzuordnen, verwenden Sie die <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">imfdxgide vicemanager:: ResetDevice</a> -Funktion.
+Beim Initialisieren des ID3D11Device muss D3D11_CREATE_DEVICE_VIDEO_SUPPORT Flag als Teil des D3D11_CREATE_DEVICE_FLAG definiert werden. Nachdem das Gerät und der Kontext erstellt wurden, müssen Sie <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">setmultithreadprotected</a> aufrufen, um Multithreading zu aktivieren. Um das Gerät dem <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">imfdxgidebug</a>Manager zuzuordnen, verwenden Sie die <a href="/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">imfdxgide vicemanager:: ResetDevice</a> -Funktion.
 
 Code zum **Zuordnen eines ID3D11Device zu imfdxgidevicemanager**:
 
@@ -746,6 +746,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)
 * [Verwendung des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

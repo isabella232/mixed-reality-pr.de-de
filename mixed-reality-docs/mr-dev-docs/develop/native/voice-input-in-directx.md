@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Exemplarische Vorgehensweise, Sprachbefehl, Ausdruck, Erkennung, Sprache, DirectX, Plattform, Cortana, Windows Mixed Reality
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613104"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583743"
 ---
 # <a name="voice-input-in-directx"></a>Spracheingabe in DirectX
 
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-Wenn Sie die Liste der Befehle in die Liste der Einschränkungen für die Spracherkennung laden möchten, verwenden Sie ein "Speech [erkentionlisteinschränkungs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) "-Objekt.
+Wenn Sie die Liste der Befehle in die Liste der Einschränkungen für die Spracherkennung laden möchten, verwenden Sie ein "Speech [erkentionlisteinschränkungs](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) "-Objekt.
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-Abonnieren Sie das [resultgenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) -Ereignis für die Speech [continuouserkentionsession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)der Spracherkennung. Dieses Ereignis benachrichtigt Ihre APP, wenn einer ihrer Befehle erkannt wurde.
+Abonnieren Sie das [resultgenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) -Ereignis für die Speech [continuouserkentionsession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)der Spracherkennung. Dieses Ereignis benachrichtigt Ihre APP, wenn einer ihrer Befehle erkannt wurde.
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-Der *onresultgenerated* -Ereignishandler empfängt Ereignisdaten in einer Sprech Anwendung [continuouserkentionresultgeneratedeventargs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) . Wenn die Zuverlässigkeit den von Ihnen definierten Schwellenwert überschreitet, sollte Ihre APP beachten, dass das Ereignis aufgetreten ist. Speichern Sie die Ereignisdaten, damit Sie Sie in einer späteren Update Schleife verwenden können.
+Der *onresultgenerated* -Ereignishandler empfängt Ereignisdaten in einer Sprech Anwendung [continuouserkentionresultgeneratedeventargs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) . Wenn die Zuverlässigkeit den von Ihnen definierten Schwellenwert überschreitet, sollte Ihre APP beachten, dass das Ereignis aufgetreten ist. Speichern Sie die Ereignisdaten, damit Sie Sie in einer späteren Update Schleife verwenden können.
 
 Aus *holographicvoiceingeputsamplemain. cpp*:
 
@@ -256,7 +256,7 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> Es gibt mehrere vordefinierte [sprechererkennungsszenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) , mit denen Sie die Spracherkennung optimieren können.
+> Es gibt mehrere vordefinierte [sprechererkennungsszenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) , mit denen Sie die Spracherkennung optimieren können.
 
 * Verwenden Sie das Diktat Szenario, um die diktierung zu optimieren.<br/>
    ```
@@ -431,5 +431,5 @@ catch (Exception^ exception)
 ```
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Sprach-App-Entwurf](https://msdn.microsoft.com/library/dn596121.aspx)
+* [Sprach-App-Entwurf](/windows/uwp/design/input/speech-interactions)
 * [Beispiel für die Spracherkennung](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

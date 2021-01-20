@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: Openxr, Khronos, basicxrapp, DirectX, Native, Native APP, benutzerdefinierte Engine, Middleware
-ms.openlocfilehash: ba03799ff42d3a4c27799dcf2f4035d408360120
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613128"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583797"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -80,7 +80,7 @@ Während einige dieser Erweiterungen als anbieterspezifische Erweiterungen gesta
 
 *Die neue renderdragon-Engine von minecraft baut ihre Desktop-VR-Unterstützung mit openxr auf.*
 
-Microsoft hat mit Unity-und Epic-spielen zusammengearbeitet, um sicherzustellen, dass die Zukunft der gemischten Realität offen ist, nicht nur für hololens 2, sondern auch für die gesamte Bandbreite von PC VR, einschließlich des [neuen Reverb G2-Headsets von HP](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  Weitere Informationen zum Entwickeln von hololens (1. Gen) finden Sie in den [Anmerkungen](https://docs.microsoft.com/hololens/hololens1-release-notes)zu dieser Version.
+Microsoft hat mit Unity-und Epic-spielen zusammengearbeitet, um sicherzustellen, dass die Zukunft der gemischten Realität offen ist, nicht nur für hololens 2, sondern auch für die gesamte Bandbreite von PC VR, einschließlich des [neuen Reverb G2-Headsets von HP](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).  Weitere Informationen zum Entwickeln von hololens (1. Gen) finden Sie in den [Anmerkungen](/hololens/hololens1-release-notes)zu dieser Version.
 
 Weitere Informationen zu den ersten Schritten mit openxr in Unity, Unreal Engine oder ihrer eigenen Engine finden Sie unter!
 

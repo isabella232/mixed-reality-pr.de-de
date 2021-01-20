@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: räumlicher Sound, Umschließungs Sound, 3D--Audio, 3D--Ton, räumliche Audiodaten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Fallstudien, Akustik
-ms.openlocfilehash: b65a4ff3dc64863f02f1459fa0c3adc5d34b0703
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848176"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583251"
 ---
 # <a name="audio-in-mixed-reality"></a>Audioinhalte in gemischter Realität
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie [unter ausführliche Entwurfs Beispiele für di
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>Hololens (erste Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>Hololens (erste Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -91,7 +91,7 @@ Jede Person verfügt über eine eindeutige Ohrform, Kopfgröße und Position. Da
 
 ### <a name="spatializer-platform-support"></a>Unterstützung für spatializer-Plattform
 
-Windows bietet mithilfe der [ispatialaudioclient-API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)eine spatialization, einschließlich HRTFs. Diese API macht die Hardwarebeschleunigung von hololens 2 HRTF für Anwendungen verfügbar.
+Windows bietet mithilfe der [ispatialaudioclient-API](/windows/win32/coreaudio/spatial-sound)eine spatialization, einschließlich HRTFs. Diese API macht die Hardwarebeschleunigung von hololens 2 HRTF für Anwendungen verfügbar.
 
 ### <a name="spatializer-middleware-support"></a>Unterstützung für spatializer-Middleware
 
@@ -103,7 +103,7 @@ Die Unterstützung für Windows ' HRTFs ist für die folgenden Drittanbieter-AUD
 
 Räumliche Audiodaten sind ungefähr mehr als die Richtung. Weitere Dimensionen sind Okklusion, Behinderung, Reverb, Porton und Quell Modellierung. Gemeinsam werden diese Dimensionen als *Akustik* bezeichnet. Ohne Akustik fehlt bei spatialisierten Sounds eine nicht wahrgenommene Entfernung.
 
-Akustik Behandlungen reichen von einfachen bis zu komplexen. Sie können einen von beliebigen Audiomodulen unterstützten Reverb verwenden, um spatialisierte Sounds in die Umgebung des Listener zu überführen. Akustiksysteme wie z. b. die [Projekt Akustik](https://aka.ms/acoustics)  bieten umfangreichere und überzeugende Akustik Behandlungen. Die Projekt Akustik kann die Auswirkung von Wänden, Türen und anderen Szenen Geometrie in einem Sound modellieren. Es ist eine effektive Option in Fällen, in denen die relevante Szene Geometrie zur Entwicklungszeit bekannt ist.
+Akustik Behandlungen reichen von einfachen bis zu komplexen. Sie können einen von beliebigen Audiomodulen unterstützten Reverb verwenden, um spatialisierte Sounds in die Umgebung des Listener zu überführen. Akustiksysteme wie z. b. die [Projekt Akustik](/gaming/acoustics/what-is-acoustics)  bieten umfangreichere und überzeugende Akustik Behandlungen. Die Projekt Akustik kann die Auswirkung von Wänden, Türen und anderen Szenen Geometrie in einem Sound modellieren. Es ist eine effektive Option in Fällen, in denen die relevante Szene Geometrie zur Entwicklungszeit bekannt ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

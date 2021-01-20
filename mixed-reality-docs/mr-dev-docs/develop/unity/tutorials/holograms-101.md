@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Gemischte Realität, Windows Mixed Reality, hololens, Hologram, Academy, Tutorial, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: f2725db17a2991b956c777ee7106b7f094582f77
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677199"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583709"
 ---
 # <a name="mr-basics-101-complete-project-with-device"></a>MR-Grundlagen 101: Vollständiges Projekt mit Gerät
 
@@ -32,7 +32,7 @@ Das Tutorial dauert ungefähr 1 Stunde.
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR-Grundlagen 101: Vollständiges Projekt mit Gerät</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
@@ -105,7 +105,7 @@ In diesem Kapitel richten wir das erste Unity-Projekt ein und durchlaufen den Bu
 
 * Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
 * Wählen Sie in der Liste **Plattform** **universelle Windows-Plattform** aus, und klicken Sie auf **Plattform wechseln**.
-* Legen Sie das **SDK** auf **Universal 10** und den Buildtyp auf **D3D** fest. **Build Type**
+* Legen Sie das **SDK** auf **Universal 10** und den Buildtyp auf **D3D** fest. 
 * Überprüfen Sie die **Unity c#-Projekte**.
 * Klicken Sie auf **offene Szenen hinzufügen** , um die Szene hinzuzufügen.
 * Klicken Sie auf **Erstellen**.
@@ -695,7 +695,7 @@ Sie haben Folgendes gelernt:
 
 Nun können Sie mit der Erstellung Ihrer eigenen Holographic-Benutzeroberflächen beginnen!
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [MR-Grundlagen 101E: Vollständiges Projekt mit Emulator](holograms-101e.md)
 * [Anvisieren](../../../design/gaze-and-commit.md)

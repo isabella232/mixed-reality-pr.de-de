@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: portieren, Unity, Middleware, Engine, UWP, Win32
-ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007490"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583580"
 ---
 # <a name="porting-overview"></a>Übersicht zum Portieren
 
@@ -48,7 +48,7 @@ Unsere aktuelle Empfehlung für die Unreal-Entwicklung mit gemischter Realität 
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>Hololens (1. Gen) Unity-apps auf hololens 2
 
-Wenn Sie über eine vorhandene Unity-Anwendung hololens (1st Gen) verfügen, die Sie auf einen hololens 2 portieren möchten, befolgen Sie die Anweisungen in unserem [Artikel zum Portieren von hololens](../unity/mrtk-porting-guide.md).
+Wenn Sie über eine vorhandene Unity-Anwendung hololens (1st Gen) verfügen, die Sie auf einen hololens 2 portieren möchten, befolgen Sie die Anweisungen in unserem [Artikel zum Portieren von hololens](./porting-hl1-hl2.md).
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality-Headsets
 
@@ -61,4 +61,3 @@ Informationen zu den von Ihnen für Windows Mixed Reality-Headsets zu aktualisie
 ### <a name="2d-universal-windows-applications"></a>2D universelle Windows-Anwendungen
 
 Wenn Sie über eine vorhandene 2D-UWP-App verfügen, die Sie entweder in ein Windows Mixed Reality-immersives Headset oder hololens portieren möchten, befolgen Sie die Anweisungen unter [Portieren von 2D-UWP-Apps für Windows Mixed Reality](building-2d-apps.md) .
-

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D-APP, UWP, flatapp, hololens, immersives Headset, App-Modell, Schaltfläche "zurück", App-Leiste, dpi, Auflösung, Skalierung, Portierung, hololens 1. gen, hololens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10
-ms.openlocfilehash: b2df0b0a7cb598fead09016c528bd6a81c6ea238
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612964"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583535"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Aktualisieren von 2D UWP-Apps für Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Der erste Schritt bei der Einführung einer 2D-app in gemischte Reality-Headsets
 
 Um eine neue 2D-App für gemischte Realität zu erstellen, erstellen Sie eine standardmäßige 2D-universelle Windows-Plattform-app (UWP). Es sind keine weiteren App-Änderungen erforderlich, damit diese APP als Slate in gemischter Realität ausgeführt wird.
 
-Informationen zu den ersten Schritten bei der Erstellung einer 2D-UWP-App finden Sie im Artikel [Erstellen Ihrer ersten App](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) .
+Informationen zu den ersten Schritten bei der Erstellung einer 2D-UWP-App finden Sie im Artikel [Erstellen Ihrer ersten App](/windows/uwp/get-started/your-first-app) .
 
 ### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>Einbinden einer vorhandenen 2D Store-App in die UWP
 
@@ -34,10 +34,10 @@ Wenn Sie bereits über eine 2D-Windows-App im Store verfügen, stellen Sie siche
 
 |  Startpunkt  |  Ziel der AppX-Manifest-Plattform  |  Wie wird dies universell gemacht? | 
 |----------|----------|----------|
-|  Windows Phone (Silverlight)  |  Silverlight-App-Manifest |  [Migrieren zu WinRT](https://msdn.microsoft.com/library/windows/apps/dn642486(v=vs.105).aspx) | 
-|  Windows Phone 8,1 universell  |  8,1 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8  |  8 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8,1 universell  |  8,1 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Phone (Silverlight)  |  Silverlight-App-Manifest |  [Migrieren zu WinRT](/previous-versions/windows/apps/dn642486(v=vs.105)) | 
+|  Windows Phone 8,1 universell  |  8,1 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8  |  8 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8,1 universell  |  8,1 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
 Wenn Sie bereits über eine 2D-Unity-App verfügen, die heute als Win32-App auf dem **PC, Mac & eigenständiges** Build-Ziel für Linux erstellt wurde, wechseln Sie zum **universelle Windows-Plattform** Build-Ziel für Mixed Reality.
 
@@ -51,7 +51,7 @@ Wechseln Sie einfach zum Startmenü im Mixed Reality-Headset, und starten Sie di
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>Ziel für immersive Headsets und hololens
 
-Glückwunsch! Ihre APP verwendet jetzt die Windows 10-universelle Windows-Plattform (UWP).
+Herzlichen Glückwunsch! Ihre APP verwendet jetzt die Windows 10-universelle Windows-Plattform (UWP).
 
 Ihre APP ist nun in der Lage, auf den heutigen Windows-Geräten wie Desktop, Mobile, Xbox, Windows Mixed Reality-und Windows-Geräte mit gemischtem Betrieb, hololens und zukünftigen Windows-Geräten ausgeführt werden. Allerdings müssen Sie sicherstellen, dass Ihre APP auf die Windows-Anwendung ausgerichtet ist, damit Sie tatsächlich auf alle diese Geräte abzielen. Universelle Gerätefamilie.
 
@@ -116,7 +116,7 @@ Nun, da ihre UWP-App auf immersiven Headsets und hololens als 2D Hologram ausgef
 
 ![Vom reaktionsfähigen Design](images/scale-500px.png)
 
-Windows 10 verschiebt den gesamten visuellen Entwurf von "Real Screen Pixels" in " **effektive Pixel**". Das heißt, Entwickler entwerfen Ihre Benutzeroberfläche gemäß den Windows 10-Richtlinien für die Benutzeroberfläche für effektive Pixel, und die Windows-Skalierung stellt sicher, dass diese effektiven Pixel die richtige Größe für die Verwendbarkeit über Geräte, Auflösungen, dpi usw. sind. Weitere Informationen finden [Sie auf der MSDN](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx) -Website und in dieser buildpräsentation. [](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)
+Windows 10 verschiebt den gesamten visuellen Entwurf von "Real Screen Pixels" in " **effektive Pixel**". Das heißt, Entwickler entwerfen Ihre Benutzeroberfläche gemäß den Windows 10-Richtlinien für die Benutzeroberfläche für effektive Pixel, und die Windows-Skalierung stellt sicher, dass diese effektiven Pixel die richtige Größe für die Verwendbarkeit über Geräte, Auflösungen, dpi usw. sind. Weitere Informationen finden [Sie auf der MSDN](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) -Website und in dieser buildpräsentation. [](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)
 
 Auch wenn die einzigartige Möglichkeit besteht, apps in einer Reihe von Entfernungen in ihrer Welt zu platzieren, wird empfohlen, TV-ähnliche Anzeige Abstände zu erzielen, um die beste Lesbarkeit und Interaktion mit Blick und Gesten zu erzielen. Aus diesem Grund zeigt ein virtuelles Slate in der Mixed Reality-Startseite ihre flache UWP-Ansicht an:
 
@@ -131,7 +131,7 @@ Diese Lösung bietet mehrere Vorteile:
 
 **Können**
 * Befolgen Sie die [Windows 10 Human Interface Guidelines (hig)](https://dev.windows.com/design) für Stile, Schriftgrößen und Schaltflächen Größen. Hololens führt die Arbeit aus, um sicherzustellen, dass Ihre APP über kompatible App-Muster, lesbare Textgrößen und geeignete Treffer Zielgrößen verfügt.
-* Stellen Sie sicher, dass Ihre Benutzeroberfläche die bewährten Methoden für das [reaktionsfähige Design](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) befolgt, um die einzigartige Auflösung und den dpi-Wert von Hol
+* Stellen Sie sicher, dass Ihre Benutzeroberfläche die bewährten Methoden für das [reaktionsfähige Design](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) befolgt, um die einzigartige Auflösung und den dpi-Wert von Hol
 * Verwenden Sie die "Light"-Farbdesign Empfehlungen von Windows.
 
 **Tue nicht:**
@@ -147,7 +147,7 @@ Das [App-Modell](../../design/app-model.md) für Mixed Reality ist für die Verw
 
 **Title:** zeigt den *Display Name* der der app-Instanz zugeordneten Kachel an.
 
-**Zurück-Schaltfläche:** löst beim Drücken das *[Rück](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* gerufene Ereignis aus. Die Sichtbarkeit der Schaltfläche "zurück" wird durch *[systemnavigationmanager. appviewbackbuttonvisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* gesteuert.
+**Zurück-Schaltfläche:** löst beim Drücken das *[Rück](/uwp/api/Windows.UI.Core.SystemNavigationManager)* gerufene Ereignis aus. Die Sichtbarkeit der Schaltfläche "zurück" wird durch *[systemnavigationmanager. appviewbackbuttonvisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)* gesteuert.
 
 ![Benutzeroberfläche der APP-Leiste in der 2D-App](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *Benutzeroberfläche der APP-Leiste in der 2D-App*
@@ -162,7 +162,7 @@ Hololens verwendet erweiterte tiefen Sensoren, um die Welt anzuzeigen und Benutz
 
 Mit Desktop-Headsets können Benutzer Bewegungs Controller verwenden, um auf apps zu verweisen und Maßnahmen zu ergreifen. Sie können auch einen Gamepad verwenden, der auf Objekte mit dem Blick abzielt.
 
-Windows kümmert sich um all diese Komplexität für UWP-apps und übersetzt Ihren [Blick](../../design/gaze-and-commit.md), Gesten, Stimme und Bewegungs Controller Eingaben in [Zeiger Ereignisse](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) , die den Eingabe Mechanismus abstrahieren. Ein Benutzer hat z. b. möglicherweise eine Luft tippen oder den SELECT-Auslösevorgang auf einem Motion Controller abgerufen, aber 2D-Anwendungen müssen nicht wissen, woher die Eingabe stammt. es wird nur ein 2D-touchpress angezeigt, wie bei einem Touchscreen.
+Windows kümmert sich um all diese Komplexität für UWP-apps und übersetzt Ihren [Blick](../../design/gaze-and-commit.md), Gesten, Stimme und Bewegungs Controller Eingaben in [Zeiger Ereignisse](/windows/uwp/design/input/handle-pointer-input#pointer_events) , die den Eingabe Mechanismus abstrahieren. Ein Benutzer hat z. b. möglicherweise eine Luft tippen oder den SELECT-Auslösevorgang auf einem Motion Controller abgerufen, aber 2D-Anwendungen müssen nicht wissen, woher die Eingabe stammt. es wird nur ein 2D-touchpress angezeigt, wie bei einem Touchscreen.
 
 Im folgenden finden Sie die grundlegenden Konzepte und Szenarios, die Sie für die Eingabe verstehen sollten, wenn Sie Ihre UWP-app in hololens bringen:
 * Der [Blick](../../design/gaze-and-commit.md) wandelt sich in Hover-Ereignisse um, die unerwartet Menüs, Flyouts oder andere Elemente der Benutzeroberfläche aufklappen können, um nur durch das Überprüfen der APP herum zu navigieren.
