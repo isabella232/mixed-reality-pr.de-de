@@ -44,7 +44,7 @@
 ### [Immersive Headsets: Integrität,-Sicherheit und-Komfort](wmr-health-safety-comfort.md)
 ### [Mixed Reality: Übersicht zur Software und Versionsverlauf](mixed-reality-software.md)
 ### [Funktionsweise von Inside-Out-Tracking](tracking-system.md)
-### [HP Reverb G2-Controller in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-### [HP Reverb G2-Controller in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+### [HP Reverb G2-Controller in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [HP Reverb G2-Controller in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
 ## [Anleitung für die Mitwirkung](contributing.md)
