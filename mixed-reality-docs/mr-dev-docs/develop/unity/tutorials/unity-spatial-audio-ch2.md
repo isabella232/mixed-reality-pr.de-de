@@ -1,63 +1,66 @@
 ---
-title: Versehen von Sounds für die Schaltflächeninteraktion mit räumlichen Effekten
-description: Erfahren Sie, wie Sie eine Schaltfläche Hinzufügen und die Tasten für die Schaltflächen Interaktion in einer Mixed Reality-Anwendung räumlichen.
+title: 'Lernprogramme für räumliche Audiodaten: 2. Versehen von Sounds für die Schaltflächeninteraktion mit räumlichen Effekten'
+description: Fügen Sie dem Projekt eine Schaltfläche hinzu, und räumlichen Sie die Sound der Schaltflächen Interaktion.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Prefabs, volumekurve
-ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007360"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578491"
 ---
-# <a name="spatializing-button-interaction-sounds"></a>Versehen von Sounds für die Schaltflächeninteraktion mit räumlichen Effekten
+# <a name="2-spatializing-button-interaction-sounds"></a>2. Versehen von Sounds für die Schaltflächeninteraktion mit räumlichen Effekten
+
+## <a name="overview"></a>Übersicht
+
+In diesem Tutorial erfahren Sie, wie Sie die schaltflächeninteraktionssounds spatialisieren und außerdem erfahren, wie Sie einen Audioclip verwenden, um eine räumliche Schaltflächen Interaktion zu testen.  
 
 ## <a name="objectives"></a>Ziele
 
-In diesem zweiten Kapitel des Moduls "Spatial AUDIOMODULE" der hololens 2-Tutorials werden folgende Schritte durchgehen:
-* Hinzufügen einer Schaltfläche
-* Schaltflächen Klick-Sounds spatialisieren
+* Hinzufügen und spatialisieren der Schaltflächen Klick-Sounds
 
 ## <a name="add-a-button"></a>Hinzufügen einer Schaltfläche
 
-Wählen Sie im **Projekt** Bereich **Assets** aus, und geben Sie "PressableButtonHoloLens2" in die Suchleiste ein:
+Wählen Sie zum Hinzufügen der Prefab-Schaltfläche im **Projekt** Fenster die Option **Assets** aus, und geben Sie in der Suchleiste "PressableButtonHoloLens2" ein.
 
-![Schaltflächen vorfab in Assets](images/spatial-audio/button-prefab-in-assets.png)
+![Schaltflächen vorfab in Assets](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 
-Bei der Prefab-Schaltfläche handelt es sich um den durch ein blaues Symbol dargestellten Eintrag anstelle eines weißen Symbols. Ziehen Sie das präfab mit dem Namen **PressableButtonHoloLens2** in den Bereich **Hierarchie** . Legen Sie im **Inspektor** -Bereich für die neue Schaltfläche die **Positions** Eigenschaft auf (0,-0,4, 2) fest, damit Sie vor dem Benutzer angezeigt wird, wenn die Anwendung gestartet wird. Die **Transformations** Komponente der Schaltfläche sieht wie folgt aus:
+Die Schaltflächen-vorfab ist der durch ein blaues Symbol dargestellte Eintrag. Klicken und ziehen Sie die **PressableButtonHoloLens2** -vorfab in die Hierarchie. Wenn das **PressableButtonHoloLens2** -Objekt noch ausgewählt ist, konfigurieren Sie die **Transformations** Komponente im Inspektor-Fenster wie folgt:
 
-![Schaltflächen Transformation](images/spatial-audio/button-transform.png)
+* **Position**: X = 0, Y =-0,4, Z = 2
+* **Drehung**: X = 0, Y = 0, Z = 0
+* **Skalierung**: X = 1, Y = 1, Z = 1
+
+![Schaltflächen Transformation](images/spatial-audio/spatial-audio-02-section1-step1-2.png)
+
+Um sich auf die Objekte in der Szene zu konzentrieren, können Sie auf das **PressableButtonHoloLens2** -Objekt doppelklicken und anschließend etwas vergrößern:
 
 ## <a name="spatialize-button-feedback"></a>Schaltflächen-Feedback spatialisieren
 
-In diesem Schritt Stufen Sie das Audiofeedback für die Schaltfläche ein. Verwandte Entwurfsvorschläge finden Sie unter [Spatial Sound Design](../../../design/spatial-sound-design.md). 
+In diesem Schritt Stufen Sie das Audiofeedback für die Schaltfläche ein. Verwandte Entwurfsvorschläge finden Sie unter [Spatial Sound Design](../../../design/spatial-sound-design.md).
 
-Im Bereich **Audiomixer** definieren Sie Ziele, die als **mixergruppen** bezeichnet werden, für die Audiowiedergabe aus **audioquellkomponenten** . 
-* Öffnen Sie den Bereich **Audiomixer** in der Menüleiste mithilfe von **Windows > Audio> Audiomixer** .
-* Erstellen Sie einen **Mixer** , indem Sie auf "+" neben " **Mixer**" klicken. Der neue Mixer enthält eine Standard **Gruppe** namens **Master**.
+Im Fenster **Audiomixer** definieren Sie Ziele, die als **mischungsgruppen** bezeichnet werden, für die Audiowiedergabe aus **audioquellkomponenten** .
 
-Ihr **Mischbereich** sieht nun wie folgt aus:
+Um das **audiomischfenster** zu öffnen, klicken Sie im Unity-Menü auf **Fenster**  >    >  **audioaudiomixer**: ![ geöffneten audiomischerfenster.](images/spatial-audio/spatial-audio-02-section2-step1-1.png)
 
-![Mischbereich mit dem ersten Mixer](images/spatial-audio/mixer-panel-with-first-mixer.png)
+ Erstellen Sie einen **Mixer** , indem Sie auf "+" neben " **Mixer** " klicken und einen passenden Namen für den Mixer eingeben, z. b. _räumlicher Audiomixer_. Der neue Mixer enthält eine Standard **Gruppe** namens **Master**.
 
-> [!NOTE]
-> Bis der Reverb in [Kapitel 5](unity-spatial-audio-ch5.md)aktiviert ist, zeigt die Volume-Verbrauchseinheit des Mischers keine Aktivitäten für Sounds an, die über den Microsoft spatializer abgespielt werden.
-
-Klicken Sie im Bereich **Hierarchie** auf die **PressableButtonHoloLens2** . Im **Inspektor** -Bereich:
-1. Suchen der **audioquellkomponente**
-2. Klicken Sie für die **Output** -Eigenschaft auf die Auswahl, und wählen Sie Ihren Mixer aus.
-3. Aktivieren Sie das Kontrollkästchen **spatialize** .
-4. Verschieben Sie den Schieberegler **räumlicher Blend** in 3D (1).
+![Mischbereich mit dem ersten Mixer](images/spatial-audio/spatial-audio-02-section2-step1-2.png)
 
 > [!NOTE]
-> In Versionen von Unity vor 2019 befindet sich das Kontrollkästchen "spatialize" am unteren Rand des **inspektorbereichs** für die **Audioquelle**.
+> Bis das "Reverb" in einem [fünften Kapitel aktiviert ist: das Hinzufügen von Abstand zu räumlichen Audiodaten](unity-spatial-audio-ch5.md)durch die Verwendung von "Hall" wird nicht angezeigt.
 
-Nachdem diese Änderungen vorgenommen wurden, sieht die **audioquellkomponente** Ihrer **PressableButtonHoloLens2** wie folgt aus:
+Wählen Sie im Fenster Hierarchie den **PressableButtonHoloLens2** aus, suchen Sie im Inspektor-Fenster die **audioquellkomponente** , und konfigurieren Sie die audioquellkomponente wie folgt:
 
-![Schaltflächen-Audioquelle](images/spatial-audio/button-audio-source.png)
+1. Klicken Sie für die **Output** -Eigenschaft auf die Auswahl, und wählen Sie den von Ihnen erstellten **Mixer** aus.
+2. Aktivieren Sie das Kontrollkästchen **spatialize** .
+3. Verschieben Sie den Schieberegler **räumlicher Blend** in 3D (1).
+
+![Schaltflächen-Audioquelle](images/spatial-audio/spatial-audio-02-section2-step1-3.png)
 
 > [!NOTE]
 > Wenn Sie **räumliche Blend** in 1 (3D) verschieben, ohne das **spatialize** -Kontrollkästchen zu aktivieren, verwendet Unity den Schwenk räumlichen spatializer anstelle von **Microsoft spatializer** mit HRTFs.
@@ -66,30 +69,33 @@ Nachdem diese Änderungen vorgenommen wurden, sieht die **audioquellkomponente**
 
 Standardmäßig vermindert Unity spatialisierte Sounds, wenn Sie weiter vom Listener entfernt werden. Wenn diese Dämpfung auf Interaktions Feedback Sounds angewendet wird, kann die Verwendung der Schnittstelle schwieriger werden.
 
-Um diese Dämpfung zu deaktivieren, passen Sie die **volumekurve** an. In der Komponente **Audioquelle** des **inspektorbereichs** für den **PressableButtonHoloLens2** gibt es einen Abschnitt mit dem Namen **3D Sound Settings**. In diesem Abschnitt:
-1. Legen Sie die Eigenschaft **Volume Rolloff** auf Linear fest.
+Um diese Dämpfung zu deaktivieren, müssen Sie die **volumekurve** in der **audioquellkomponente** anpassen.
+
+Wählen Sie im Fenster Hierarchie den **PressableButtonHoloLens2** aus, und navigieren Sie dann im Inspektor-Fenster zu **Audioquelle**  >  **3D Sound Settings** , und konfigurieren Sie wie folgt:
+
+1. Festlegen der **volumerolloff** -Eigenschaft auf Linear Rolloff
 2. Ziehen Sie den Endpunkt der **volumekurve** (die rote Kurve) von "0" auf der y-Achse auf "1".
 3. Wenn Sie die Form der **volumekurve** an eine flache Größe anpassen möchten, ziehen Sie das Steuerelement der weißen Kurve auf parallel zur X-Achse.
 
-Nachdem diese Änderungen vorgenommen wurden, sieht der Abschnitt **3D-Sound Einstellungen** in den **audioquellgenschaften** der **PressableButtonHoloLens2** wie folgt aus:
-
-![Schaltflächen-3D-Soundeinstellungen](images/spatial-audio/button-3d-sound-settings.png)
+![Schaltflächen-3D-Soundeinstellungen](images/spatial-audio/spatial-audio-02-section3-step1-1.png)
 
 ## <a name="testing-the-spatialize-audio"></a>Testen der spatialize-Audiodatei
 
-Sie können die neuen räumlichen Schaltflächen-Interaktions Sounds testen:
+Um die spatialize-Audiodatei im Unity-Editor zu testen, müssen Sie einen Audioclip in der **audioquellkomponente** mit **Schleifen** Option hinzufügen, die für das **PressableButtonHoloLens2** -Objekt aktiviert ist.
 
-* Geben Sie im Unity-Editor den Spielmodus ein, idealerweise mit einem Beispiel für eine Schleife in der Szene.
-* Verschieben Sie das Objekt mit der Audioquelle von links nach rechts, und vergleichen Sie es mit und ohne räumliche Audiodaten. Sie können die Einstellungen für die Audioquelle zum Testen ändern von:
-    * Verschieben der Spatial Blend-Eigenschaft zwischen 0-1 (2D, nicht räumlich und 3D-spatialized Sound)
-    * Überprüfen und Deaktivieren der spatialize-Eigenschaft
+Verschieben Sie das **PressableButtonHoloLens2** -Objekt im Wiedergabemodus von links nach rechts, und vergleichen Sie es mit und ohne räumliche Audiodaten auf Ihrer Arbeitsstation. Sie können auch die Einstellungen für die Audioquelle zum Testen ändern, indem Sie Folgendes ausführen:
 
-## <a name="next-steps"></a>Nächste Schritte
+* Verschieben der **Spatial Blend** -Eigenschaft zwischen 0-1 (2D, nicht räumlich und 3D-spatialized Sound)
+* Überprüfen und Deaktivieren der **spatialize** -Eigenschaft
 
-Testen Sie Ihre APP auf einem hololens 2 oder im Unity-Editor. In der App können Sie auf die Schaltfläche tippen und die räumlichen Schaltflächen-Interaktions Sounds hören.
+Testen Sie die APP auf hololens 2. In der App können Sie auf die Schaltfläche klicken und die Kontext-Sounds für räumliche Schaltflächen hören.
 
-Wenn Sie im Unity-Editor testen, drücken Sie die Leertaste, und Scrollen Sie mit dem Mausrad, um die Hand Simulation zu aktivieren. Weitere Informationen finden Sie in der [mrtk-Dokumentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene).
+> [!TIP]
+> Falls Sie eine Auffrischung zum Erstellen und Bereitstellen Ihres Unity-Projekts auf HoloLens 2 benötigen, lesen Sie die Anweisungen unter [Erstellen Ihrer App auf dem HoloLens 2-Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
+
+## <a name="congratulations"></a>Herzlichen Glückwunsch!
+
+In diesem Tutorial haben Sie gelernt, den Schaltflächen-Interaktions Sound zu verräumlichen und einen Audioclip zu verwenden, um eine räumliche Schaltflächen Interaktion zu testen. Im nächsten Tutorial erfahren Sie, wie Sie Audiodaten aus einer Videoquelle spatialisieren.
 
 > [!div class="nextstepaction"]
-> [Kapitel 3](unity-spatial-audio-ch3.md)
-
+> [Nächstes Tutorial: 3. spatialisieren von Audiodaten aus einem Video](unity-spatial-audio-ch3.md)
