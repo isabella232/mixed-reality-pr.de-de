@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Hololens, Windows-Geräte Portal, API, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006650"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581254"
 ---
 # <a name="device-portal-api-reference"></a>Referenz der Geräteportal-API
 
@@ -297,7 +297,7 @@ Beispiel:
 $.post("/api/holographic/mapmanager/import?FileName=" + spaceID, function() { alert("Import was successful!"); })
 ```
 
-### <a name="other"></a>Sonstige
+### <a name="other"></a>Andere
 
 **/API/Holographic/mapmanager/resetmapandanchorsandsrdb (Post)**
 
@@ -696,6 +696,6 @@ Parameter
 Daten zurückgeben
 * Beim Start wird der WPR-Sitzungs Status zurückgegeben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Verwenden des Windows-Geräteportals](using-the-windows-device-portal.md)
-* [API-Referenz für den Geräte Portal (UWP)](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
+* [API-Referenz für den Geräte Portal (UWP)](/windows/uwp/debug-test-perf/device-portal-api-core)

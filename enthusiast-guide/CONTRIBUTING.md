@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865435"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580179"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>Beitrag zum Mixed Reality-Enthusiasten-Leitfaden
 
@@ -22,7 +22,7 @@ Vielen Dank für Ihr Interesse am begeisterten Leitfaden. Wir freuen uns über I
 > [!IMPORTANT]
 > Für alle Repositorys, die in „docs.microsoft.com“ veröffentlichen, gilt der [Microsoft Open Source-Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/). Weitere Informationen finden Sie in den [häufig gestellten Fragen zum Verhaltenskodex](https://opensource.microsoft.com/codeofconduct/faq/). Sie können sich mit Ihren Fragen oder Kommentaren auch an [opencode@microsoft.com](mailto:opencode@microsoft.com) wenden.<br>
 >
-> Für kleinere Korrekturen oder Klarstellungen zu Dokumentation und Codebeispielen in öffentlichen Repositorys gelten die [Nutzungsbestimmungen zu docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Neue oder signifikante Änderungen haben einen Kommentar im Pull Request zur Folge, in dem wir Sie bitten, online eine Lizenzvereinbarung für Beiträge (Contribution License Agreement, CLA) zu übermitteln. Dies gilt, wenn Sie kein Mitarbeiter von Microsoft sind. Sie müssen das Onlineformular ausfüllen, damit wir Ihren Pull Request annehmen können.
+> Für kleinere Korrekturen oder Klarstellungen zu Dokumentation und Codebeispielen in öffentlichen Repositorys gelten die [Nutzungsbestimmungen zu docs.microsoft.com](/legal/termsofuse). Neue oder signifikante Änderungen haben einen Kommentar im Pull Request zur Folge, in dem wir Sie bitten, online eine Lizenzvereinbarung für Beiträge (Contribution License Agreement, CLA) zu übermitteln. Dies gilt, wenn Sie kein Mitarbeiter von Microsoft sind. Sie müssen das Onlineformular ausfüllen, damit wir Ihren Pull Request annehmen können.
 
 ## <a name="before-you-start"></a>Vorbereitung
 
@@ -53,7 +53,7 @@ Das Veröffentlichungs System ist an GitHub gebunden, sodass diese Schritte wich
 | 5. Klicken Sie auf Vorschau der Änderungen, um sicherzustellen, dass die Formatierung erwartungsgemäß aussieht | ![Vorschau der Änderungen](images/edit-in-github.png)|
 | 6. Wenn Sie fertig sind, Scrollen Sie zum unteren Rand der Seite, und klicken Sie auf "Datei Änderung vorschlagen". Daraufhin wird die Seite "Änderungen werden verglichen" angezeigt, auf der Sie Ihre Änderungen überprüfen können. Klicken Sie dann auf die Schaltfläche "Create Pull Request", um die Änderungen zu übermitteln. An diesem Punkt sind Sie fertig! | ![Änderung vorschlagen](images/propose.jpg)|
 
-Nachdem Sie Änderungen (über eine Pull Request) übermittelt haben, werden Sie von einem Mitglied des Dokumentationsteams geprüft. Wenn Ihre Anforderung akzeptiert wird, werden Updates in veröffentlicht [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide) .
+Nachdem Sie Änderungen (über eine Pull Request) übermittelt haben, werden Sie von einem Mitglied des Dokumentationsteams geprüft. Wenn Ihre Anforderung akzeptiert wird, werden Updates in veröffentlicht [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide) .
 
 * Zur internen Überprüfung können Sie Ihre Änderungen unter sehen [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master) .
 
@@ -128,7 +128,7 @@ Verwenden Sie den folgenden Workflow, um *neue Artikel* im Dokumentations Reposi
 
 ## <a name="working-with-branches"></a>Arbeiten mit Verzweigungen
 
-Das [GitHub-Repository für gemischte Realität](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) verwendet zwei übergeordnete Haupt Verzweigungen: [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), dieser Inhalt kann auf der [Stagingsite](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)überprüft werden und [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), um Inhalte zu erhalten, die auf der [Live Website](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)angezeigt werden.
+Das [GitHub-Repository für gemischte Realität](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide) verwendet zwei übergeordnete Haupt Verzweigungen: [Master](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master), dieser Inhalt kann auf der [Stagingsite](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)überprüft werden und [Live](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live), um Inhalte zu erhalten, die auf der [Live Website](/windows/mixed-reality/enthusiast-guide)angezeigt werden.
 
 Wenn Sie Beiträge leisten, senden Sie Ihren Pull Request (PR) an den **masterb** Ranch. Diese Verzweigung kann auf der Stagingsite angezeigt werden und sollte nur Beiträge enthalten, die für die Liveveröffentlichung bereit sind. Sie können auch einen Branch mit Ihrem eigenen eindeutigen branchnamen erstellen und übermitteln, der in der Stagingsite ausgewählt und angezeigt werden kann. (Die **Live** Verzweigung ist nur für die Verwendung durch die Inhalts Administratoren zulässig.)
 
@@ -138,13 +138,13 @@ Die folgenden Ressourcen helfen Ihnen, zu erfahren, wie Sie die Dokumentation mi
 
 - [Markdown-Grundlagen](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown-Referenz Poster mit einem Blick](images/MarkdownPoster.pdf)
-- [Zusätzliche Ressourcen zum Schreiben von markdown für docs.Microsoft.com](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [Zusätzliche Ressourcen zum Schreiben von markdown für docs.Microsoft.com](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>Hinzufügen von Tabellen
 
 Aufgrund der Art und Weise, in der docs.Microsoft.com Stile Tabellen haben, haben Sie keine Rahmen oder benutzerdefinierten Stile, auch wenn Sie das Inline-CSS ausprobieren. Es scheint für einen kurzen Zeitraum zu funktionieren, aber schließlich entfernt die Plattform das Formatieren aus der Tabelle. Planen Sie also voraus, und halten Sie die Tabellen einfach. [Im folgenden finden Sie eine Website, mit der markdown-Tabellen einfach](https://www.tablesgenerator.com/markdown_tables)werden.
 
-Die [docs markdown-Erweiterung für Visual Studio Code](https://docs.microsoft.com/teamblog/docs-extension) erleichtert auch die Tabellen Generierung, wenn Sie [Visual Studio Code (siehe unten)](#using-visual-studio-code) verwenden, um die Dokumentation zu bearbeiten.
+Die [docs markdown-Erweiterung für Visual Studio Code](/teamblog/docs-extension) erleichtert auch die Tabellen Generierung, wenn Sie [Visual Studio Code (siehe unten)](#using-visual-studio-code) verwenden, um die Dokumentation zu bearbeiten.
 
 ### <a name="adding-images"></a>Hinzufügen von Bildern
 

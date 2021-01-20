@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Koordinatensystem, geografischer Koordinatensystem, nur Ausrichtung, sitzender Skalierung, Dauer Skala, Raum Skala, Welt weite, 360 Grad, sitzender, stehender, Raum, Welt, Dezimalstellen, Position, Ausrichtung, stationär, angefügt, Phase, Anker, räumlicher Anker, weltweit gesperrt, Platzsperre, Body-Lock, Body-Lock, Begrenzungen, Persistenz, Freigabe, nach Verfolgungs Verlust, cloudräumlicher Anker, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Toolkit, hololens
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848019"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582418"
 ---
 # <a name="coordinate-systems"></a>Koordinatensysteme
 
@@ -32,9 +32,9 @@ Im Kern platzieren Mixed Reality-apps [holograms](../discover/hologram.md) in ih
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive Headsets</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>Immersive Headsets</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">Stationärer Frame des Verweises</a></td>
@@ -105,7 +105,7 @@ Der Stufen Rahmen des Verweises wird in hololens noch nicht unterstützt. Eine R
 
 ## <a name="spatial-coordinate-systems"></a>Räumliche Koordinatensysteme
 
-Alle 3D-Grafikanwendungen verwenden [kartesische Koordinatensysteme](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) , um die Positionen und Ausrichtungen von virtuellen Objekten zu verwenden. Diese Koordinatensysteme richten drei senkrechte Achsen ein, um Objekte zu positionieren: eine X-, Y-und Z-Achse.
+Alle 3D-Grafikanwendungen verwenden [kartesische Koordinatensysteme](/windows/uwp/graphics-concepts/coordinate-systems) , um die Positionen und Ausrichtungen von virtuellen Objekten zu verwenden. Diese Koordinatensysteme richten drei senkrechte Achsen ein, um Objekte zu positionieren: eine X-, Y-und Z-Achse.
 
 In [gemischter Realität](../discover/mixed-reality.md)haben ihre apps Informationen zu virtuellen und physischen Koordinatensystemen. Windows Ruft ein Koordinatensystem auf, das in der physischen Welt ein **räumliches Koordinatensystem** hat.
 
@@ -191,13 +191,13 @@ Sie können die räumlichen Anker, die Ihre APP erstellt, auf dem Datenträger s
 
 Durch das Beibehalten von Ankern im Geschäft können Ihre Benutzer individuelle Hologramme platzieren oder einen Arbeitsbereich platzieren, in dem eine APP die verschiedenen holograms platzieren wird. Anschließend finden Sie diese Hologramme später, wo Sie erwartet werden, über viele Verwendungszwecke Ihrer APP.
 
-Sie können auch <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> für die asynchrone – Hologramm-Persistenz über hololens-, IOS-und Android-Geräte verwenden.  Durch die gemeinsame Nutzung eines permanenten clouddiensts können mehrere Geräte im Lauf der Zeit dasselbe persistente Hologramm beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
+Sie können auch <a href="/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> für die asynchrone – Hologramm-Persistenz über hololens-, IOS-und Android-Geräte verwenden.  Durch die gemeinsame Nutzung eines permanenten clouddiensts können mehrere Geräte im Lauf der Zeit dasselbe persistente Hologramm beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
 
 ### <a name="spatial-anchor-sharing"></a>Räumliche Anker Freigabe
 
 Ihre APP kann auch einen räumlichen Anker in Echtzeit mit anderen Geräten freigeben, sodass Sie gemeinsam genutzte Echtzeitumgebungen nutzen können.
 
-Durch die Verwendung von <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumlichen Azure-Ankern</a>kann Ihre APP einen räumlichen Anker für mehrere hololens-, IOS-und Android-Geräte freigeben. Indem jedes Gerät ein Hologramm mit demselben Raumanker rendert, wird das Hologramm in der realen Welt für alle Benutzer an der gleichen Stelle angezeigt.
+Durch die Verwendung von <a href="/azure/spatial-anchors/overview" target="_blank">räumlichen Azure-Ankern</a>kann Ihre APP einen räumlichen Anker für mehrere hololens-, IOS-und Android-Geräte freigeben. Indem jedes Gerät ein Hologramm mit demselben Raumanker rendert, wird das Hologramm in der realen Welt für alle Benutzer an der gleichen Stelle angezeigt.
 
 ## <a name="avoid-head-locked-content"></a>Vermeiden von Kopf gesperrten Inhalten
 
@@ -239,5 +239,5 @@ Manchmal kann ein Zuhause oder ein anderer Bereich zwei identische Bereiche habe
 * [Koordinatensysteme in DirectX](../develop/native/coordinate-systems-in-directx.md)
 * [Raumanker](spatial-anchors.md)
 * [Gemeinsame Erlebnisse in Mixed Reality](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Fallstudie – Schauen durch Löcher in Ihrer Realität](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

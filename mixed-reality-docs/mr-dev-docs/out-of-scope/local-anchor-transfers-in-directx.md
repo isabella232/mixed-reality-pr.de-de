@@ -6,32 +6,32 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Hololens, synchronisieren, räumlicher Anker, Übertragung, Multiplayer, Ansicht, Szenario, Exemplarische Vorgehensweise, Beispielcode, Übertragung, lokale Anker Übertragung, Anker Export, Anker Import
-ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009650"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582805"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>Lokale Anker Übertragungen in DirectX
 
-In Fällen, in denen Sie keine <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">räumlichen Anker von Azure</a>verwenden können, ermöglichen lokale Anker Übertragungen einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.
+In Fällen, in denen Sie keine <a href="/azure/spatial-anchors" target="_blank">räumlichen Anker von Azure</a>verwenden können, ermöglichen lokale Anker Übertragungen einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.
 
 >[!NOTE]
->Lokale Anker Übertragungen bieten weniger robusten Anker als Anker als <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">räumliche Azure-Anker</a>, und IOS-und Android-Geräte werden von diesem Ansatz nicht unterstützt.
+>Lokale Anker Übertragungen bieten weniger robusten Anker als Anker als <a href="/azure/spatial-anchors" target="_blank">räumliche Azure-Anker</a>, und IOS-und Android-Geräte werden von diesem Ansatz nicht unterstützt.
 
 >[!NOTE]
 >Die Code Ausschnitte in diesem Artikel veranschaulichen derzeit die Verwendung von C++/CX anstelle von C + +17-kompatiblen C++/WinRT, wie Sie in der [C++ Holographic-Projektvorlage](../develop/native/creating-a-holographic-directx-project.md)verwendet werden.  Die Konzepte sind äquivalent zu einem C++/WinRT-Projekt. Sie müssen jedoch den Code übersetzen.
 
 ## <a name="transferring-spatial-anchors"></a>Übertragen räumlicher Anker
 
-Räumliche Anker können mithilfe von [spatialanchortransfermanager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)zwischen Windows Mixed Reality-Geräten übertragen werden. Mit dieser API können Sie einen Anker mit allen unterstützenden Sensordaten bündeln, die erforderlich sind, um den genauen Ort auf der Welt zu finden und dann dieses Paket auf ein anderes Gerät zu importieren. Nachdem die APP auf dem zweiten Gerät diesen Anker importiert hat, kann jede APP Hologramme mithilfe des Koordinatensystems des freigegebenen räumlichen Ankers Rendering erzeugen, das dann an derselben Stelle in der realen Welt angezeigt wird.
+Räumliche Anker können mithilfe von [spatialanchortransfermanager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)zwischen Windows Mixed Reality-Geräten übertragen werden. Mit dieser API können Sie einen Anker mit allen unterstützenden Sensordaten bündeln, die erforderlich sind, um den genauen Ort auf der Welt zu finden und dann dieses Paket auf ein anderes Gerät zu importieren. Nachdem die APP auf dem zweiten Gerät diesen Anker importiert hat, kann jede APP Hologramme mithilfe des Koordinatensystems des freigegebenen räumlichen Ankers Rendering erzeugen, das dann an derselben Stelle in der realen Welt angezeigt wird.
 
 Beachten Sie, dass räumliche Anker nicht zwischen verschiedenen Gerätetypen übertragen werden können, z. b. kann ein räumlicher hololens-Anker nicht mithilfe eines immersiven Headsets verwendet werden.  Übertragene Anker sind ebenfalls nicht mit IOS-oder Android-Geräten kompatibel.
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Einrichten Ihrer APP für die Verwendung der spatialperception-Funktion
 
-Ihrer APP muss die Berechtigung zum Verwenden der spatialperception-Funktion erteilt werden, bevor Sie den [spatialanchortransfermanager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)verwenden kann. Dies ist erforderlich, da das übertragen eines räumlichen Ankers das Freigeben von Sensor Bildern im Laufe der Zeit in der Nähe dieses Ankers beinhaltet, die vertrauliche Informationen enthalten können.
+Ihrer APP muss die Berechtigung zum Verwenden der spatialperception-Funktion erteilt werden, bevor Sie den [spatialanchortransfermanager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)verwenden kann. Dies ist erforderlich, da das übertragen eines räumlichen Ankers das Freigeben von Sensor Bildern im Laufe der Zeit in der Nähe dieses Ankers beinhaltet, die vertrauliche Informationen enthalten können.
 
 Deklarieren Sie diese Funktion in der Datei "Package. appxmanifest" für Ihre APP. Hier sehen Sie ein Beispiel:
 
@@ -53,11 +53,11 @@ Die Funktion stammt aus dem **uap2** -Namespace. Um Zugriff auf diesen Namespace
     >
 ```
 
-**Hinweis:** Ihre APP muss die Funktion zur Laufzeit anfordern, bevor Sie auf die APIs für den Zugriff auf spatialanchor exportieren/importieren zugreifen kann. Weitere Informationen finden Sie in den folgenden Beispielen unter [requestaccessasync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) .
+**Hinweis:** Ihre APP muss die Funktion zur Laufzeit anfordern, bevor Sie auf die APIs für den Zugriff auf spatialanchor exportieren/importieren zugreifen kann. Weitere Informationen finden Sie in den folgenden Beispielen unter [requestaccessasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) .
 
 ## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>Serialisieren von Anker Daten durch Exportieren mit spatialanchortransfermanager
 
-Eine Hilfsfunktion ist im Codebeispiel zum Exportieren (Serialisieren) der [spatialanchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) -Daten enthalten. Diese Export-API serialisiert alle Anker in einer Auflistung von Schlüssel-Wert-Paaren, die Zeichen folgen mit Ankern zuordnen.
+Eine Hilfsfunktion ist im Codebeispiel zum Exportieren (Serialisieren) der [spatialanchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Daten enthalten. Diese Export-API serialisiert alle Anker in einer Auflistung von Schlüssel-Wert-Paaren, die Zeichen folgen mit Ankern zuordnen.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -274,7 +274,7 @@ Wenn die Daten importiert werden können, erhalten Sie eine Kartenansicht von Sc
 
 ## <a name="special-considerations"></a>Besondere Überlegungen
 
-Die [tryexportanchorsasync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) -API ermöglicht das Exportieren mehrerer [spatialanchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) -Werte in dasselbe nicht transparente binäre Blob. Es gibt jedoch einen geringfügigen Unterschied, welche Daten das BLOB enthält, abhängig davon, ob ein einzelner spatialanchor oder mehrere spatialanchor-Elemente in einem einzelnen-Befehl exportiert werden.
+Die [tryexportanchorsasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) -API ermöglicht das Exportieren mehrerer [spatialanchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Werte in dasselbe nicht transparente binäre Blob. Es gibt jedoch einen geringfügigen Unterschied, welche Daten das BLOB enthält, abhängig davon, ob ein einzelner spatialanchor oder mehrere spatialanchor-Elemente in einem einzelnen-Befehl exportiert werden.
 
 ### <a name="export-of-a-single-spatialanchor"></a>Exportieren eines einzelnen spatialanchor
 
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-Das war's. Nun sollten Sie über genügend Informationen verfügen, um zu versuchen, die Anker zu suchen, die über das Netzwerk empfangen werden. Beachten Sie, dass der Client über ausreichend visuelle Überwachungsdaten verfügen muss, damit der-Platz gefunden werden kann. Wenn es nicht sofort funktioniert, versuchen Sie es für eine Weile. Wenn dies immer noch nicht funktioniert, lassen Sie den Server weitere Anker senden, und verwenden Sie die Netzwerkkommunikation, um eine Zustimmung für den Client zu erhalten. Sie können dies ausprobieren, indem Sie das holographicspatialanchortransfersample herunterladen, die Client-und Server-IPS konfigurieren und Sie auf Client-und Server-hololens-Geräten bereitstellen.
+Das ist alles! Nun sollten Sie über genügend Informationen verfügen, um zu versuchen, die Anker zu suchen, die über das Netzwerk empfangen werden. Beachten Sie, dass der Client über ausreichend visuelle Überwachungsdaten verfügen muss, damit der-Platz gefunden werden kann. Wenn es nicht sofort funktioniert, versuchen Sie es für eine Weile. Wenn dies immer noch nicht funktioniert, lassen Sie den Server weitere Anker senden, und verwenden Sie die Netzwerkkommunikation, um eine Zustimmung für den Client zu erhalten. Sie können dies ausprobieren, indem Sie das holographicspatialanchortransfersample herunterladen, die Client-und Server-IPS konfigurieren und Sie auf Client-und Server-hololens-Geräten bereitstellen.
 
-## <a name="see-also"></a>Siehe auch
-* [Parallel Patterns Library (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
-* [Windows. Networking. Streamsocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [Windows. Networking. streamsocketlistener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+## <a name="see-also"></a>Weitere Informationen
+* [Parallel Patterns Library (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [Windows. Networking. Streamsocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. Networking. streamsocketlistener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Pre-Sale, Research, Purchase, vor dem Kauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725511"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580289"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>Vor dem Kauf von häufig gestellten Fragen
 
@@ -63,7 +63,7 @@ Weitere Informationen zu gemischter Realität finden Sie hier: <https://docs.mic
 
 * **Externe Nachverfolgung** Oculus, Vive und andere verwenden außerhalb der Nachverfolgung.  Bei einer externen Überwachung wird das Headset von einem oder mehreren externen Geräten nachverfolgt. Die Kamera (en) ist in diese externen Geräte integriert, um die Umgebung zu platzieren und wird verwendet, um die Position des Headsets basierend auf der Umgebung zu bestimmen.
 
-Erfahren Sie mehr über die [in-out-Nachverfolgung](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system).
+Erfahren Sie mehr über die [in-out-Nachverfolgung](./tracking-system.md).
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>Kann die Nachverfolgung von Bewegungs Controllern aufgrund von Kamera-FOV meine Spiel Wiedergabe beeinflussen
 
@@ -368,7 +368,7 @@ Die oben aufgeführten technischen Details werden von den Hersteller Spezifikati
 
 **Schnelle Antwort:** Ja, die gemischte Realität von Windows funktioniert auch, wenn Sie nicht viel Platz haben. Sie können dies während des Setups festlegen, indem Sie die "Desk-Scale"-Funktion auswählen.
 
-## <a name="content"></a>Inhalt
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>Welche Spiele und apps werden in Windows Mixed Reality ausgeführt?
 

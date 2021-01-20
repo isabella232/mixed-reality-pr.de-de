@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Mixed Reality, VR, LBE, Location, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, Hardware, hololens, Multi-Player, Cloud Services, Azure
-ms.openlocfilehash: 323981d49c99f5cb175b71645851496bfa1f268c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757828"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580677"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Location based Entertainment mit Windows Mixed Reality
 
@@ -98,11 +98,11 @@ Die JSON-Datei sollte den folgenden Inhalt aufweisen, wenn "true" für eine der 
  
 **F: gibt es Hinweise zum Konfigurieren des Playspace?**
 
-A: das Konfigurieren eines Playspace sollte wie bei der Benutzer Einrichtung durch den Consumer erfolgen. Mit dem Einrichtungs Vorgang für Räume können Sie auch Ihre Raum Grenzen definieren. Weitere Informationen zum Konfigurieren von Raum Begrenzungen finden Sie [hier](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+A: das Konfigurieren eines Playspace sollte wie bei der Benutzer Einrichtung durch den Consumer erfolgen. Mit dem Einrichtungs Vorgang für Räume können Sie auch Ihre Raum Grenzen definieren. Weitere Informationen zum Konfigurieren von Raum Begrenzungen finden Sie [hier](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 Wie bereits im obigen Dokument erläutert, liegt der maximal zulässige Wert für die einfache Koordinate bei etwa 5mx5m. Wenn Sie über einen größeren Bereich verfügen möchten, können Sie die Funktion räumlicher Anker im Windows Holographic-API-Stapel verwenden. Die Verwendung dieser API erfordert eine benutzerdefinierte Entwicklung in den Erfahrungen, die Sie erzeugen.  
 
-Weitere Informationen zum Optimieren von Inhalten für verschiedene Speicherplatz Größen finden Sie [hier](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems).
+Weitere Informationen zum Optimieren von Inhalten für verschiedene Speicherplatz Größen finden Sie [hier](//windows/mixed-reality/coordinate-systems).
  
 
 **F: der Speicherplatz ist zu groß, und es treten Fehler auf, wenn ich versuche, eine bestehende Funktion mit Grenzen einzurichten. Was soll ich tun, um meine große kostenlose Roaming-Arbeit einzurichten?**
@@ -113,7 +113,7 @@ Sie können den Modus "sitzend" einrichten, in dem die Grenze nicht angezeigt wi
 
 Der Anwendungsentwickler ist dafür verantwortlich, die erforderlichen Sicherheitsvorkehrungen anzuzeigen, damit Benutzer nicht mit der physischen Umgebung in Konflikt stehen.  Dabei kann es sich um digitale Wände innerhalb der Darstellung oder um ein angepasstes visuelles Spielelement handeln. 
 
-Anleitungen zum Einrichten der Raumgrenze mit WMR finden Sie [hier](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
+Anleitungen zum Einrichten der Raumgrenze mit WMR finden Sie [hier](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary).
 
 **F: wo befindet sich der Ursprung des Playspace?**
 
@@ -125,7 +125,7 @@ A: der Ursprung des Playspace wird durch die Einrichtung des Raums festgelegt, g
 
 A: Wenn Sie sich für den Build von Windows 20h1 oder höher über unser Insider-Programm entscheiden, können Sie auf eine neue Schnittstelle für die Karten Freigabe zugreifen. Diese neue Funktionalität ist über die [Map Manager](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) -Schnittstelle des Windows-Geräte Portals verfügbar. Führen Sie die folgenden Schritte aus, um dieses Tool zu verwenden:
 * Stellen Sie sicher, dass Sie 2019 für 20h1 oder höher angemeldet sind. Dies bedeutet, dass das Insider Programm verwendet wird.
-* Aktivieren Sie das Windows-Geräte Portal (WDP) mithilfe dieser [Anweisungen](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop) .
+* Aktivieren Sie das Windows-Geräte Portal (WDP) mithilfe dieser [Anweisungen](/windows/uwp/debug-test-perf/device-portal-desktop) .
 * Einbinden eines Windows Mixed Reality-HMD, bei dem Sie entweder eine vorhandene Karte herunterladen oder eine neue Karte importieren möchten
 * Navigieren Sie im Browser Ihrer Wahl zum WDP, und verwenden Sie dabei die URL, die auf dem Bildschirm Einstellungen angegeben ist.
     * Navigieren Sie anschließend zum Abschnitt "Mixed Reality", und wählen Sie "Map Manager" aus.
@@ -140,13 +140,13 @@ A: Wenn Sie sich für den Build von Windows 20h1 oder höher über unser Insider
 
 F: wie funktioniert die nach Verfolgungs Technologie in den Windows Mixed Reality-Headsets?  
 
-Gemischte Realität nutzt dieselbe nach Verfolgungs Technologie wie hololens. Weitere Informationen zum in-out-nach Verfolgungs [System finden Sie in der Dokumentation.](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/tracking-system)
+Gemischte Realität nutzt dieselbe nach Verfolgungs Technologie wie hololens. Weitere Informationen zum in-out-nach Verfolgungs [System finden Sie in der Dokumentation.](//windows/mixed-reality/enthusiast-guide/tracking-system)
 
 Eine Beschreibung der Funktionsweise des räumlichen Zuordnungs Systems auf höherer Ebene finden Sie [hier](../design/spatial-mapping.md).
 
 **F: gibt es bewährte Methoden, um ein zuverlässiges nach Verfolgungs Volume zu erhalten?**
 
-Zum optimalen Konfigurieren der Umgebung für die erfolgreiche Überwachung können Sie die bewährten Methoden in diesem [Beitrag](../environment-considerations-for-hololens.md)lesen.
+Zum optimalen Konfigurieren der Umgebung für die erfolgreiche Überwachung können Sie die bewährten Methoden in diesem [Beitrag](/hololens/hololens-environment-considerations)lesen.
 
 **F: gibt es bestimmte Nuancen bei der Nachverfolgung von Speicherplätzen oder Optimierungen, die in Erwägung gezogen werden sollen?**
 
@@ -188,13 +188,13 @@ A: Azure playfab ist eine umfassende Back-End-Plattform für Live Spiele. Weiter
 
 **F: Ich verwende "steamvr", um meine Erfahrungen bereitzustellen. Funktioniert Windows Mixed Reality mit steamvr?**
 
-A: Windows Mixed Reality für steamvr ermöglicht Benutzern das Ausführen von steamvr-Erfahrungen auf Windows Mixed Reality-immersiven Headsets. Weitere Informationen zu "steamvr" mit WMR [finden Sie hier](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
+A: Windows Mixed Reality für steamvr ermöglicht Benutzern das Ausführen von steamvr-Erfahrungen auf Windows Mixed Reality-immersiven Headsets. Weitere Informationen zu "steamvr" mit WMR [finden Sie hier](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality).
 
 ### <a name="support-and-community"></a>Support und Community  
 
 Wir haben einige hilfreiche Ressourcen, die Ihnen helfen, sich mit Fachleuten in unserem Team in Verbindung zu setzen, Support bei der Problembehandlung zu erhalten und zur umfassenderen Community dev Community beizutragen.  
 
-Wenn Sie Probleme mit öffentlich veröffentlichten Features haben, melden Sie einen Fehler mit dem Feedback-Hub. eine Anleitung finden Sie auf dieser [Seite](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback).
+Wenn Sie Probleme mit öffentlich veröffentlichten Features haben, melden Sie einen Fehler mit dem Feedback-Hub. eine Anleitung finden Sie auf dieser [Seite](//windows/mixed-reality/enthusiast-guide/filing-feedback).
 
 Wenn Sie weitere Hilfe zur Problembehandlung bei WMR benötigen, können Sie eine [Supportanfrage](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) an unser Kundensupport Team einreichen.
 

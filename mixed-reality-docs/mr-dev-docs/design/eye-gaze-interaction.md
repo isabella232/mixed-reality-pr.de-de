@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Entwurf, Interaktionen
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008580"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582379"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Auf Augenblick basierende Interaktion auf hololens 2
 
 ![Demo zur Eye-Nachverfolgung in mrtk](images/mrtk_et_scenemenu.jpg)
 
-Eine unserer spannenden neuen Funktionen in hololens 2 ist die Augen Verfolgung. Auf unserer Seite " [Eye Tracking auf hololens 2](eye-tracking.md) " haben wir erwähnt, dass jeder Benutzer eine [Kalibrierung](https://docs.microsoft.com/hololens/hololens-calibration)durchlaufen, einige Entwickler Anleitungen bereitgestellt und Anwendungsfälle für die Augen Verfolgung hervorgehoben hat. Die Eingabe für den Augenblick ist immer noch eine neue Art von Benutzereingaben, und es gibt viel zu erlernen. 
+Eine unserer spannenden neuen Funktionen in hololens 2 ist die Augen Verfolgung. Auf unserer Seite " [Eye Tracking auf hololens 2](eye-tracking.md) " haben wir erwähnt, dass jeder Benutzer eine [Kalibrierung](/hololens/hololens-calibration)durchlaufen, einige Entwickler Anleitungen bereitgestellt und Anwendungsfälle für die Augen Verfolgung hervorgehoben hat. Die Eingabe für den Augenblick ist immer noch eine neue Art von Benutzereingaben, und es gibt viel zu erlernen. 
 
 Obwohl die Eingabe von Augenblicken nur in der Holographic Shell-Oberfläche (die Benutzeroberfläche, die beim Starten der hololens 2 angezeigt wird) verwendet wird, zeigen mehrere apps, wie z. b. ["hololens Playground"](https://www.microsoft.com/p/mr-playground/9nb31lh723s2), hervor artige Beispiele dazu, wie Sie mit Blick auf die Eingaben Ihrer Holographic-Oberfläche sorgen können.
 Auf dieser Seite werden Entwurfs Überlegungen für die Integration von Eye-Eye-Eingaben für die Interaktion mit ihren Holographic-Anwendungen erläutert.
@@ -35,7 +35,7 @@ Sie erfahren mehr über wichtige Vorteile und auch über einzigartige Herausford
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
 </tr>

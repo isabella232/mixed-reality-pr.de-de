@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Navigate, get around, apps, Games, Microsoft Edge, Chrom, Edge, 360, 360 Video, 360 Viewer
-ms.openlocfilehash: d3ed8f95285eefacf43177915d512bfb41730243
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 26691dd3cf1b8e620373ef150de61cd2c7f461db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725781"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581308"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality und die neue Microsoft Edge
 
@@ -48,7 +48,7 @@ Nachdem Sie das kumulative Update 2020-01 für Windows 10, Version 1903 oder hö
 
 **Warum dies geschieht**
 
-Die Unterstützung für klassische Win32-Anwendungen in Windows Mixed Reality wurde mit dem [Windows 10-Update von Mai 2019](https://docs.microsoft.com/windows/mixed-reality/release-notes-may-2019)eingeführt. Um diese Unterstützung zu aktivieren, muss ein virtueller Monitor erstellt werden, um die Win32-Anwendung zu hosten. Jedes Mal, wenn eine neue Win32-Anwendung gestartet wird, muss ein weiterer virtueller Monitor erstellt werden. Leider ist das Erstellen eines virtuellen Monitors eine intensive Aufgabe, die dazu führen kann, dass die Headset-Anzeige kurz fixiert wird. Kunden haben Feedback gegeben, dass die benutzerfreundliche und unterbrechungsfreie benutzerfreundliche Aufgrund der zusätzlichen Verwendung von Win32-Anwendungen haben wir uns entschieden, drei virtuelle Monitore während des Starts von Windows Mixed Reality vorab zuzuweisen, um diese Unterbrechung zu verhindern und es den Kunden zu ermöglichen, bis zu drei gleichzeitige Win32-Anwendungen zu starten, ohne dass die Kopplung der Headset-Anzeige auftritt.
+Die Unterstützung für klassische Win32-Anwendungen in Windows Mixed Reality wurde mit dem [Windows 10-Update von Mai 2019](/windows/mixed-reality/release-notes-may-2019)eingeführt. Um diese Unterstützung zu aktivieren, muss ein virtueller Monitor erstellt werden, um die Win32-Anwendung zu hosten. Jedes Mal, wenn eine neue Win32-Anwendung gestartet wird, muss ein weiterer virtueller Monitor erstellt werden. Leider ist das Erstellen eines virtuellen Monitors eine intensive Aufgabe, die dazu führen kann, dass die Headset-Anzeige kurz fixiert wird. Kunden haben Feedback gegeben, dass die benutzerfreundliche und unterbrechungsfreie benutzerfreundliche Aufgrund der zusätzlichen Verwendung von Win32-Anwendungen haben wir uns entschieden, drei virtuelle Monitore während des Starts von Windows Mixed Reality vorab zuzuweisen, um diese Unterbrechung zu verhindern und es den Kunden zu ermöglichen, bis zu drei gleichzeitige Win32-Anwendungen zu starten, ohne dass die Kopplung der Headset-Anzeige auftritt.
 
 **Problemumgehung**
 

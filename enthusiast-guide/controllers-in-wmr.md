@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007800"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580548"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Motion Controller in Windows Mixed Reality
 
@@ -94,7 +94,7 @@ Im folgenden wird erläutert, wie Sie in gemischter Realität mit Bewegungs Cont
 |  Aufgabe  |  Bewegungscontroller  | Gamepad | Maus und Tastatur |
 | --- | --- | --- | --- |
 | Teleport | Drücken Sie den Fingerabdruck, und zeigen Sie dann auf den gewünschten Controller. Geben Sie den Finger Stick frei. | Drücken Sie den linken Finger Stick vorwärts, und sehen Sie sich an, wohin Sie navigieren möchten. Geben Sie den Finger Stick frei. | Wählen Sie die Rechte Schaltfläche aus, und halten Sie sie gedrückt. Geben Sie die Schaltfläche frei. |
-| Wählen Sie das | Zeigen Sie auf den Controller, und ziehen Sie dann den-Server per Pull oder das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
+| Auswählen | Zeigen Sie auf den Controller, und ziehen Sie dann den-Server per Pull oder das Touchpad. | Schauen Sie sich das Ziel an, und drücken Sie dann ein. | Zeigen Sie die Maus, und klicken Sie dann mit der linken Maustaste. |
 | Öffnen des Startmenüs | Drücken Sie die **Windows** -Taste. | Klicken Sie auf die Schaltfläche **Xbox** . | Drücken Sie die **Windows-Logo-Taste**. |
 | Immersive app verlassen | Drücken Sie die **Windows** -Taste. Wählen Sie dann im Menü schnell Aktionen die Option **gemischte Reality-Startseite** aus. | Klicken Sie auf die Schaltfläche **Xbox** . Wählen Sie dann im Menü schnell Aktionen die Schaltfläche **Mixed Reality Home** aus. | Drücken Sie die Taste * * Windows-Taste. Wählen Sie dann im angezeigten Menü schnell Aktionen die Start Schaltfläche **Mixed Reality** aus. |
 | Rotate | Verschieben Sie den Finger Stick nach links oder rechts. | Verschieben Sie den rechten Stift nach links oder rechts. | Nicht verfügbar. |
@@ -149,10 +149,10 @@ Ihr Controller kommuniziert damit, was er tut, indem er seine LED-Leuchten vibri
 
 Geben Sie uns Feedback im Feedback-Hub mit der Kategorie "Mixed Reality-> Input".
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [HP-Controller in Unity](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [HP-Controller in Unreal](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [HP-Controller in Unity](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [HP-Controller in Unreal](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [Die Community fragen](https://answers.microsoft.com)
 - [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)
 - [Problembehandlung](troubleshooting-windows-mixed-reality.md)

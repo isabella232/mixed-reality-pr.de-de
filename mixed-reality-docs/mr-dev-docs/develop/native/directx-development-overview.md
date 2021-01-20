@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX, Holographic Rendering, Native, Native APP, WinRT, WinRT-APP, Plattform-APIs, benutzerdefiniertes Modul, Middleware, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006850"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581043"
 ---
 # <a name="native-development-overview"></a>Native Entwicklung: Übersicht
 
@@ -32,7 +32,7 @@ Windows Mixed Reality unterstützt [zwei Arten von apps](../../design/app-views.
 * UWP-oder Win32- **Anwendungen mit gemischter Realität** , die die [holographicspace-API](getting-a-holographicspace.md) oder [openxr-API](openxr.md) verwenden, um eine [immersive Ansicht](../../design/app-views.md) zu erzeugen, die die Headset-Anzeige
 * **2D-apps** (UWP), die DirectX, XAML oder ein anderes Framework zum Rendering von [2D-Ansichten](../../design/app-views.md#2d-views) auf Slate in der Windows Mixed Reality-Startseite verwenden
 
-Die Unterschiede zwischen der DirectX [-Entwicklung für 2D-Ansichten und immersive Ansichten](../../design/app-views.md) betreffen in erster Linie das holografische Rendering und räumliche Eingaben. Die [iframeworkview](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) ihrer UWP-Anwendung oder das HWND ihrer Win32-Anwendung ist erforderlich und bleibt größtenteils unverändert. Das gleiche gilt für die WinRT-APIs, die für Ihre app verfügbar sind. Sie müssen jedoch eine andere Teilmenge dieser APIs verwenden, um die Vorteile der Holographic-Features zu nutzen. Das System für Holographic-Anwendungen verwaltet z. b. die vorhandenes SwapChain und den Frame, die eine Pose-vorhergesagte Frame Schleife ermöglichen.
+Die Unterschiede zwischen der DirectX [-Entwicklung für 2D-Ansichten und immersive Ansichten](../../design/app-views.md) betreffen in erster Linie das holografische Rendering und räumliche Eingaben. Die [iframeworkview](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) ihrer UWP-Anwendung oder das HWND ihrer Win32-Anwendung ist erforderlich und bleibt größtenteils unverändert. Das gleiche gilt für die WinRT-APIs, die für Ihre app verfügbar sind. Sie müssen jedoch eine andere Teilmenge dieser APIs verwenden, um die Vorteile der Holographic-Features zu nutzen. Das System für Holographic-Anwendungen verwaltet z. b. die vorhandenes SwapChain und den Frame, die eine Pose-vorhergesagte Frame Schleife ermöglichen.
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -68,6 +68,6 @@ Wenn Sie Ihr openxr-Spiel skalieren möchten, sehen Sie sich die folgenden Links
 * [OpenXR – Leistung](openxr-performance.md)
 * [OpenXR – Problembehandlung](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [App-Modell](../../design/app-model.md)
 * [App-Ansichten](../../design/app-views.md)

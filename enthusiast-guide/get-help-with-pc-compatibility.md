@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: e3d150544c3bce99d1aa808229d282b3d2fe1dd0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 28b377108fdb51d7f922710e579d62e7103ef765
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007480"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580529"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>Hilfe zur PC-Kompatibilität in Windows Mixed Reality
 
@@ -116,7 +116,7 @@ Wenn die Probleme weiterhin bestehen:
 
 ### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>Auf diesem PC ist Bluetooth 4,0 für Controller nicht vorhanden.
 
-2018 und neuere Windows Mixed Reality-Headsets verfügen bereits über das integrierte Bluetooth, aber wenn Sie über ein älteres Headset verfügen, ist Bluetooth 4,0 für Mixed Reality Motion-Controller erforderlich. Sie können [Windows Mixed Reality weiterhin mit einem Xbox-Controller](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), einer [Maus und einer Tastatur](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)oder einem [USB-Bluetooth-Adapter verwenden, um Motion-Controller](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) mit Ihrem PC zu verbinden. [Empfohlene Adapter anzeigen](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+2018 und neuere Windows Mixed Reality-Headsets verfügen bereits über das integrierte Bluetooth, aber wenn Sie über ein älteres Headset verfügen, ist Bluetooth 4,0 für Mixed Reality Motion-Controller erforderlich. Sie können [Windows Mixed Reality weiterhin mit einem Xbox-Controller](motion-controller-problems.md#can-i-pair-my-xbox-controller-to-my-pc-so-i-can-use-it-in-headset), einer [Maus und einer Tastatur](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home#keyboard-and-mouse)oder einem [USB-Bluetooth-Adapter verwenden, um Motion-Controller](motion-controller-problems.md#how-can-i-tell-if-im-using-bluetooth-technology) mit Ihrem PC zu verbinden. [Empfohlene Adapter anzeigen](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ### <a name="depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers"></a>Abhängig von Ihrem Headset benötigen Sie möglicherweise einen Bluetooth-Adapter für die Verwendung von Motion-Controllern.
 

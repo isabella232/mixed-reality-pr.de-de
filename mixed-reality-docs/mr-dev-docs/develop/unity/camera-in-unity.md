@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, nicht transparent, transparent, Clip, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006390"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581126"
 ---
 # <a name="camera-in-unity"></a>Kamera in Unity
 
@@ -33,7 +33,7 @@ Wenn Sie ein Mixed Reality-Headset durch tragen, wird es zur Mitte ihrer Hologra
 Die Standardeinstellungen für die Unity-Kamera-Komponente gelten für herkömmliche 3D-Anwendungen, die einen Skybox-ähnlichen Hintergrund benötigen, da Sie nicht über eine reale Welt verfügen.
 
 * Bei der Ausführung auf einem **[immersiven Headset](../../discover/immersive-headset-hardware-details.md)** Rendern Sie alles, was dem Benutzer angezeigt wird, und Sie möchten die Skybox wahrscheinlich behalten.
-* Wenn Sie jedoch auf einem **Holographic-Headset** wie [hololens](../../hololens-hardware-details.md)ausgeführt werden, sollte die reale Welt hinter der von der Kamera gerendert werden. Legen Sie den Kamera Hintergrund auf "transparent" (in hololens, schwarz rendert als transparent) anstelle einer Skybox-Textur fest:
+* Wenn Sie jedoch auf einem **Holographic-Headset** wie [hololens](/hololens/hololens1-hardware)ausgeführt werden, sollte die reale Welt hinter der von der Kamera gerendert werden. Legen Sie den Kamera Hintergrund auf "transparent" (in hololens, schwarz rendert als transparent) anstelle einer Skybox-Textur fest:
     1. Wählen Sie die Hauptkamera im Hierarchie Panel aus.
     2. Suchen Sie im Inspektor-Panel die Kamera Komponente, und ändern Sie die Dropdown Liste Flag Löschen von Skybox in voll Tonfarbe.
     3. Wählen Sie die Hintergrund Farbauswahl aus, und ändern Sie die RGBA-Werte in (0,0).
@@ -81,7 +81,7 @@ Wenn Sie wissen, dass Sie eine [nur-Orientierung-](coordinate-systems-in-unity.m
 Durch die Freigabe des tiefen Puffers Ihrer APP für die einzelnen Frames erhält Ihre APP einen von zwei Verb esse ungen in der – Hologramm-Stabilität, basierend auf der Art des von Ihnen Renderns:
 
 * **Immersive Headsets** können bei der Bereitstellung eines tiefen Puffers die neuprojektion von Positionen durchführen, wobei die Hologramme sowohl an der Position als auch an der Ausrichtung für die mitediction angepasst werden.
-* **Holographic-Headsets** haben einige verschiedene Methoden. Hololens 1 wählt automatisch einen [Fokuspunkt](focus-point-in-unity.md) aus, wenn ein tiefen Puffer bereitgestellt wird. Dadurch wird die – Hologramm-Stabilität entlang der Ebene optimiert, die den meisten Inhalt überschneidet. Hololens 2 stabilisiert Inhalte mithilfe der [tiefen LSR (siehe Hinweise)](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
+* **Holographic-Headsets** haben einige verschiedene Methoden. Hololens 1 wählt automatisch einen [Fokuspunkt](focus-point-in-unity.md) aus, wenn ein tiefen Puffer bereitgestellt wird. Dadurch wird die – Hologramm-Stabilität entlang der Ebene optimiert, die den meisten Inhalt überschneidet. Hololens 2 stabilisiert Inhalte mithilfe der [tiefen LSR (siehe Hinweise)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
 
 So legen Sie fest, ob Ihre Unity-APP einen tiefen Puffer für Windows bereitstellt:
 

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Installation
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726061"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581662"
 ---
 # <a name="installation-errors"></a>Installationsfehler
 
@@ -31,7 +31,7 @@ Für Windows Mixed Reality ist ein Grafikkartentreiber erforderlich, der mindest
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>"Bevor Sie Windows Mixed Reality einrichten können, muss Ihr Administrator es für Ihre Organisation aktivieren. Weitere Informationen "
 
-Sie befinden sich wahrscheinlich in einem vom Unternehmen verwalteten Netzwerk, und Ihre Organisation verwendet Windows Server Update Services (WSUS). Diese und andere Richtlinien, die den Download blockieren können. Wenden Sie sich an die IT-Abteilung oder den Systemadministrator Ihrer Organisation, um [Windows Mixed Reality zu aktivieren](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable).
+Sie befinden sich wahrscheinlich in einem vom Unternehmen verwalteten Netzwerk, und Ihre Organisation verwendet Windows Server Update Services (WSUS). Diese und andere Richtlinien, die den Download blockieren können. Wenden Sie sich an die IT-Abteilung oder den Systemadministrator Ihrer Organisation, um [Windows Mixed Reality zu aktivieren](/windows/application-management/manage-windows-mixed-reality#enable).
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>"Wir konnten die Mixed-Reality-Software nicht herunterladen
 

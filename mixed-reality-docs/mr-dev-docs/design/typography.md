@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Style, Font, Typografie, UI, UX, Text, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
-ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007650"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580272"
 ---
 # <a name="typography"></a>Typografie
 
@@ -37,9 +37,9 @@ Buildkontrast und Hierarchie mit unterschiedlichen typgrößen und Gewichtungen.
 
 ### <a name="limit-your-fonts"></a>Schriftarten einschränken
 
-Vermeiden Sie die Verwendung von mehr als zwei unterschiedlichen Schriftfamilien in einem einzigen Kontext. Zu viele Schriftarten unterbrechen die Harmonie und Konsistenz ihrer Benutzeroberflächen und erschweren die Nutzung von Informationen. Da die Informationen in hololens oberhalb der physischen Umgebung überlagert werden, wird die Umgebung durch die Verwendung zu vieler Schriftart Stile herabgestuft. Segoe UI ist die Schriftart für alle digitalen Microsoft-Entwürfe. Sie wird in der Windows Mixed Reality-Shell konsistent verwendet. Sie können die Segoe UI Schriftart Datei von der [Windows Design Toolkit-Seite](https://docs.microsoft.com/windows/uwp/design-downloads/)herunterladen.
+Vermeiden Sie die Verwendung von mehr als zwei unterschiedlichen Schriftfamilien in einem einzigen Kontext. Zu viele Schriftarten unterbrechen die Harmonie und Konsistenz ihrer Benutzeroberflächen und erschweren die Nutzung von Informationen. Da die Informationen in hololens oberhalb der physischen Umgebung überlagert werden, wird die Umgebung durch die Verwendung zu vieler Schriftart Stile herabgestuft. Segoe UI ist die Schriftart für alle digitalen Microsoft-Entwürfe. Sie wird in der Windows Mixed Reality-Shell konsistent verwendet. Sie können die Segoe UI Schriftart Datei von der [Windows Design Toolkit-Seite](/windows/uwp/design-downloads/)herunterladen.
 
-[Weitere Informationen zur Segoe UI Schriftart](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[Weitere Informationen zur Segoe UI Schriftart](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>Vermeiden von Thin Font-Gewichtungen
 
@@ -129,7 +129,7 @@ In den meisten Fällen funktioniert Segoe UI (die Standard Schriftart für Windo
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Text in Unity](../develop/unity/text-in-unity.md)
-* [Farbe, Licht und Materialien](../color,-light-and-materials.md)
+* [Farbe, Licht und Materialien](./color-light-and-materials.md)

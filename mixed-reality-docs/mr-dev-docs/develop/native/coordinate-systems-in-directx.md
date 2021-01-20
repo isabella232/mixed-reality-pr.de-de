@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Gemischte Realität, räumlicher Locator, räumlicher Referenzrahmen, räumliches Koordinatensystem, räumliche Phase, Beispielcode, Bildstabilisierung, räumlicher Anker, räumlicher Anker Speicher, nach Verfolgungs Verlust, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7cf463e4c3bb9b2fe06c834376eb46e3ee20c1ee
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006860"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581071"
 ---
 # <a name="coordinate-systems-in-directx"></a>Koordinatensysteme in DirectX
 
@@ -27,27 +27,27 @@ Die heutigen VR-oder Einzel Raum-VR-Geräte richten ein Primäres Koordinatensys
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Räumliche Koordinatensysteme in Windows
 
-Der Kerntyp, der in Bezug auf echte Koordinatensysteme in Windows verwendet wird, ist das <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">spatialcoordinatesystem</a>. Eine Instanz dieses Typs stellt ein beliebiges Koordinatensystem dar, das eine Methode zum erhalten von Transformationsmatrix Daten bereitstellt, die Sie zum Transformieren zwischen zwei Koordinatensystemen verwenden können, ohne die Details der einzelnen Koordinaten zu verstehen.
+Der Kerntyp, der in Bezug auf echte Koordinatensysteme in Windows verwendet wird, ist das <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">spatialcoordinatesystem</a>. Eine Instanz dieses Typs stellt ein beliebiges Koordinatensystem dar, das eine Methode zum erhalten von Transformationsmatrix Daten bereitstellt, die Sie zum Transformieren zwischen zwei Koordinatensystemen verwenden können, ohne die Details der einzelnen Koordinaten zu verstehen.
 
 Methoden, die räumliche Informationen zurückgeben, akzeptieren einen spatialcoordinatesystem-Parameter, um Ihnen die Entscheidung über das Koordinatensystem zu ermöglichen, in dem die zurück zugebende Koordinaten am nützlichsten sind. Räumliche Informationen werden als Punkte, Strahlen oder Volumes in der Benutzerumgebung dargestellt, und die Einheiten für diese Koordinaten sind immer in Meter.
 
 Ein spatialcoordinatesystem verfügt über eine dynamische Beziehung mit anderen Koordinatensystemen, einschließlich derjenigen, die die Position des Geräts darstellen. An jedem Punkt kann das Gerät einige Koordinatensysteme und keine anderen suchen. Für die meisten Koordinatensysteme muss Ihre APP bereit sein, Zeiträume zu verarbeiten, in denen Sie nicht gefunden werden können.
 
 Die Anwendung sollte spatialcoordinatesystems nicht direkt erstellen, stattdessen sollten Sie über die perception-APIs genutzt werden. Es gibt drei primäre Quellen für Koordinatensysteme in den perception-APIs, von denen jede einem auf der Seite [Koordinatensysteme](../../design/coordinate-systems.md) beschriebenen Konzept zugeordnet ist:
-* Um einen stationären Verweis Rahmen zu erhalten, erstellen Sie ein <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">spatialstationaryframeofreferenzierungspaar</a> , oder rufen Sie ein aus der aktuellen <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">spatialstageframeofreferenzierung</a>ab.
-* Um einen räumlichen Anker zu erhalten, erstellen Sie ein <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">spatialanchor</a>.
-* Um einen angefügten Frame des Verweises zu erhalten, erstellen Sie ein <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">spatidepanorattachedframeofreferenzierungsverzeichnis</a>.
+* Um einen stationären Verweis Rahmen zu erhalten, erstellen Sie ein <a href="/uwp/api/windows.perception.spatial.spatialstationaryframeofreference" target="_blank">spatialstationaryframeofreferenzierungspaar</a> , oder rufen Sie ein aus der aktuellen <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference" target="_blank">spatialstageframeofreferenzierung</a>ab.
+* Um einen räumlichen Anker zu erhalten, erstellen Sie ein <a href="/uwp/api/windows.perception.spatial.spatialanchor" target="_blank">spatialanchor</a>.
+* Um einen angefügten Frame des Verweises zu erhalten, erstellen Sie ein <a href="/uwp/api/windows.perception.spatial.spatiallocatorattachedframeofreference" target="_blank">spatidepanorattachedframeofreferenzierungsverzeichnis</a>.
 
 Alle Koordinatensysteme, die von diesen Objekten zurückgegeben werden, sind mit der rechten Hand, mit + y nach oben, + x nach rechts und + z rückwärts. Sie können sich merken, welche Richtung die positive z-Achse zeigt, indem Sie die Finger entweder von Links oder rechts in der positiven x-Richtung zeigen und in die positive y-Richtung hinein. Die Richtung, auf die sich der Ziehpunkt von Ihnen befindet, ist die Richtung, auf die die positive z-Achse für dieses Koordinatensystem zeigt. In der folgenden Abbildung werden diese beiden Koordinatensysteme veranschaulicht.
 
 ![Linke und Rechte Koordinatensysteme](images/left-hand-right-hand.gif)<br>
 *Linke und Rechte Koordinatensysteme*
 
-Verwenden Sie die <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">spatizuweisung</a> -Klasse, um entweder einen angefügten oder einen stationären Verweis Rahmen zu erstellen, der auf der Grundlage der hololens-Position in ein spatialcoordinatesystem Bootstrap. Fahren Sie mit dem nächsten Abschnitt fort, um weitere Informationen zu diesem Vorgang zu erhalten.
+Verwenden Sie die <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">spatizuweisung</a> -Klasse, um entweder einen angefügten oder einen stationären Verweis Rahmen zu erstellen, der auf der Grundlage der hololens-Position in ein spatialcoordinatesystem Bootstrap. Fahren Sie mit dem nächsten Abschnitt fort, um weitere Informationen zu diesem Vorgang zu erhalten.
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>Platzieren von holograms weltweit mithilfe einer räumlichen Phase
 
-Das Koordinatensystem für nicht transparente Windows Mixed Reality-immersive Headsets wird mithilfe der statischen <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">spatialstageframeofreferen:: Current</a> -Eigenschaft aufgerufen. Diese API bietet Folgendes:
+Das Koordinatensystem für nicht transparente Windows Mixed Reality-immersive Headsets wird mithilfe der statischen <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">spatialstageframeofreferen:: Current</a> -Eigenschaft aufgerufen. Diese API bietet Folgendes:
 
 * Ein Koordinatensystem
 * Informationen dazu, ob der Player oder mobil ist
@@ -289,9 +289,9 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ## <a name="place-holograms-in-the-world-using-a-stationary-frame-of-reference"></a>Platzieren von holograms auf der Welt mithilfe eines stationären Frame Rahmens
 
-Die [spatialstationaryframeofreferenzierungsklasse](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialstationaryframeofreference.aspx) stellt einen Frame von Reference dar, der relativ zur Benutzerumgebung [stationär bleibt](../../design/coordinate-systems.md#stationary-frame-of-reference) , wenn der Benutzer sich bewegt. Dieser Frame des Verweises priorisiert die Stabilität der Koordinaten in der Nähe des Geräts. Eine zentrale Verwendung eines spatialstationaryframeofreferenzierungssystems besteht darin, beim Rendern von holograms als das zugrundeliegende weltweite Koordinatensystem in einer Rendering-Engine zu fungieren.
+Die [spatialstationaryframeofreferenzierungsklasse](/uwp/api/Windows.Perception.Spatial.SpatialStationaryFrameOfReference) stellt einen Frame von Reference dar, der relativ zur Benutzerumgebung [stationär bleibt](../../design/coordinate-systems.md#stationary-frame-of-reference) , wenn der Benutzer sich bewegt. Dieser Frame des Verweises priorisiert die Stabilität der Koordinaten in der Nähe des Geräts. Eine zentrale Verwendung eines spatialstationaryframeofreferenzierungssystems besteht darin, beim Rendern von holograms als das zugrundeliegende weltweite Koordinatensystem in einer Rendering-Engine zu fungieren.
 
-Um eine spatialstationaryframeofreferenzierung abzurufen, verwenden Sie die [spatizuweisung](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.aspx) -Klasse und den Aufruf von " [foratestationaryframeofreferenceatcurrentlocation](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatiallocator.createstationaryframeofreferenceatcurrentlocation.aspx)".
+Um eine spatialstationaryframeofreferenzierung abzurufen, verwenden Sie die [spatizuweisung](/uwp/api/Windows.Perception.Spatial.SpatialLocator) -Klasse und den Aufruf von " [foratestationaryframeofreferenceatcurrentlocation](/uwp/api/Windows.Perception.Spatial.SpatialLocator)".
 
 Aus dem Windows Holographic-App-Vorlagen Code:
 
@@ -314,21 +314,21 @@ Sobald das Koordinatensystem eines räumalanchors definiert ist, wird es ständi
 
 Die Auswirkungen der Anpassungen, die den Anker an Ort halten, werden vergrößert, wenn sich die Entfernung vom Anker vergrößert. Sie sollten das Rendern von Inhalten in Relation zu einem Anker vermeiden, der mehr als ungefähr 3 Meter vom Ursprung dieses Ankers ist.
 
-Die [CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx) -Eigenschaft ruft ein Koordinatensystem ab, mit dem Sie Inhalte relativ zum Anker platzieren können, wobei eine Beschleunigung angewendet wird, wenn das Gerät den genauen Speicherort des Ankers anpasst.
+Die [CoordinateSystem](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Eigenschaft ruft ein Koordinatensystem ab, mit dem Sie Inhalte relativ zum Anker platzieren können, wobei eine Beschleunigung angewendet wird, wenn das Gerät den genauen Speicherort des Ankers anpasst.
 
-Verwenden Sie die [rawcoordinatesystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystem.aspx) -Eigenschaft und das zugehörige [rawcoordinatesystemadjusted](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.rawcoordinatesystemadjusted.aspx) -Ereignis, um diese Anpassungen selbst zu verwalten.
+Verwenden Sie die [rawcoordinatesystem](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Eigenschaft und das zugehörige [rawcoordinatesystemadjusted](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Ereignis, um diese Anpassungen selbst zu verwalten.
 
 ### <a name="persist-and-share-spatial-anchors"></a>Beibehalten und freigeben räumlicher Anker
 
-Sie können ein spatialanchor lokal mithilfe der [spatialanchorstore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) -Klasse beibehalten und dann in einer zukünftigen App-Sitzung auf demselben hololens-Gerät wiederholen.
+Sie können ein spatialanchor lokal mithilfe der [spatialanchorstore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore) -Klasse beibehalten und dann in einer zukünftigen App-Sitzung auf demselben hololens-Gerät wiederholen.
 
-Mithilfe der <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumlichen Anker von Azure</a>können Sie einen permanenten cloudenanchor von einem lokalen spatialanchor erstellen, das Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers über mehrere Geräte hinweg kann jeder Benutzer in Echtzeit Inhalte sehen, die relativ zu diesem Anker am gleichen physischen Standort gerendert werden. 
+Mithilfe der <a href="/azure/spatial-anchors/overview" target="_blank">räumlichen Anker von Azure</a>können Sie einen permanenten cloudenanchor von einem lokalen spatialanchor erstellen, das Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers über mehrere Geräte hinweg kann jeder Benutzer in Echtzeit Inhalte sehen, die relativ zu diesem Anker am gleichen physischen Standort gerendert werden. 
 
-Sie können auch <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> für die asynchrone – Hologramm-Persistenz über hololens-, IOS-und Android-Geräte verwenden.  Durch die gemeinsame Nutzung eines permanenten clouddiensts können mehrere Geräte im Lauf der Zeit dasselbe persistente Hologramm beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
+Sie können auch <a href="/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> für die asynchrone – Hologramm-Persistenz über hololens-, IOS-und Android-Geräte verwenden.  Durch die gemeinsame Nutzung eines permanenten clouddiensts können mehrere Geräte im Lauf der Zeit dasselbe persistente Hologramm beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
 
-Um mit der Einführung von freigegebenen Erfahrungen in der hololens-APP zu beginnen, testen Sie den Schnellstart mit den fünfminütigen <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchor hololens</a>.
+Um mit der Einführung von freigegebenen Erfahrungen in der hololens-APP zu beginnen, testen Sie den Schnellstart mit den fünfminütigen <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchor hololens</a>.
 
-Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">Anker in hololens erstellen und lokalisieren</a>.  Exemplarische Vorgehensweisen sind auch für <a href="https://docs.microsoft.com/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android und IOS</a> verfügbar, sodass Sie dieselben Anker auf allen Geräten gemeinsam verwenden können.
+Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">Anker in hololens erstellen und lokalisieren</a>.  Exemplarische Vorgehensweisen sind auch für <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android und IOS</a> verfügbar, sodass Sie dieselben Anker auf allen Geräten gemeinsam verwenden können.
 
 ### <a name="create-spatialanchors-for-holographic-content"></a>Erstellen von spatialanchor für Holographic Content
 
@@ -382,7 +382,7 @@ Sehen wir uns an, wie Sie eine samplespatialanchorhelper-Klasse schreiben, die d
 * Anker aus dem spatialanchorstore des Systems werden geladen, die von der lokalen Auflistung im Arbeitsspeicher getrennt aufbewahrt werden.
 * Speichern der lokalen in-Memory-Auflistung von Ankern im spatialanchorstore, wenn die App dafür entscheidet.
 
-Im folgenden wird beschrieben, wie Sie [spatialanchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) -Objekte im [spatialanchorstore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx)speichern.
+Im folgenden wird beschrieben, wie Sie [spatialanchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Objekte im [spatialanchorstore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore)speichern.
 
 Wenn die Klasse gestartet wird, fordern wir den spatialanchorstore asynchron an. Dies umfasst die System-e/a, da die API den Anker Speicher lädt, und diese API wird asynchron erstellt, sodass die e/a-Vorgänge nicht blockiert werden.
 
@@ -539,7 +539,7 @@ Sie benötigen eine eigene in-Memory Database von spatialanchor, um Zeichen folg
 
 ### <a name="clear-the-anchor-store-when-needed"></a>Den Anker Speicher bei Bedarf löschen
 
-Manchmal müssen Sie den App-Status löschen und neue Daten schreiben. Im folgenden wird erläutert, wie Sie mit dem [spatialanchorstore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx)Vorgehen.
+Manchmal müssen Sie den App-Status löschen und neue Daten schreiben. Im folgenden wird erläutert, wie Sie mit dem [spatialanchorstore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore)Vorgehen.
 
 Mit unserer Hilfsklasse ist es fast unnötig, die Clear-Funktion zu wrappen. Wir entscheiden uns hierfür in unserer Beispiel Implementierung, da unsere Hilfsklasse die Verantwortung für den Besitz der spatialanchorstore-Instanz erhält.
 
@@ -561,7 +561,7 @@ Mit unserer Hilfsklasse ist es fast unnötig, die Clear-Funktion zu wrappen. Wir
 
 ### <a name="example-relating-anchor-coordinate-systems-to-stationary-reference-frame-coordinate-systems"></a>Beispiel: Verknüpfen von Anker Koordinatensystemen mit stationären Reference Frame-Koordinatensystemen
 
-Nehmen wir an, Sie haben einen Anker, und Sie möchten etwas im Koordinatensystem Ihres Ankers mit dem spatialstationaryreferenceframe verknüpfen, den Sie bereits für Ihre anderen Inhalte verwenden. Sie können [trygettransformto](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) verwenden, um eine Transformation vom Koordinatensystem des Ankers zu der des stationären Referenzrahmens zu erhalten:
+Nehmen wir an, Sie haben einen Anker, und Sie möchten etwas im Koordinatensystem Ihres Ankers mit dem spatialstationaryreferenceframe verknüpfen, den Sie bereits für Ihre anderen Inhalte verwenden. Sie können [trygettransformto](/uwp/api/Windows.Perception.Spatial.SpatialCoordinateSystem) verwenden, um eine Transformation vom Koordinatensystem des Ankers zu der des stationären Referenzrahmens zu erhalten:
 
 ```
    // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -740,7 +740,7 @@ Aus **holographictagalongsamplemain:: Rendering**:
        );
 ```
 
-Das war's. Das – Hologramm ist nun eine Position, die zwei Meter vor der Blick Richtung des Benutzers ist.
+Das ist alles! Das – Hologramm ist nun eine Position, die zwei Meter vor der Blick Richtung des Benutzers ist.
 
 >[!NOTE]
 >In diesem Beispiel werden auch weitere Inhalte geladen, siehe stationaryquadrenderer. cpp.
@@ -804,10 +804,10 @@ Aus **appmain. cpp:**
 
 Die APIs für die [räumliche Zuordnung](spatial-mapping-in-directx.md) verwenden Koordinatensysteme, um Modell Transformationen für Oberflächen Netze zu erhalten.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * [Raumanker](../../design/spatial-anchors.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Anvisieren mit dem Kopf und mit den Augen in DirectX](gaze-in-directx.md)
 * [Hände und Motion-Controller in DirectX](hands-and-motion-controllers-in-directx.md)
 * [Räumliche Abbildung in DirectX](spatial-mapping-in-directx.md)

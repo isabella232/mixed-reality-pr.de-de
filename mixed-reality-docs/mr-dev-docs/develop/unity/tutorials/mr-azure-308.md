@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Benachrichtigung, Funktionen, Tabellen, Notification Hubs, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 4b71968eb546cc5d7a5cd767f2ecafae102c763c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679539"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581275"
 ---
 # <a name="mr-and-azure-308-cross-device-notifications"></a>MR und Azure 308: Geräteübergreifende Benachrichtigungen
 
@@ -26,11 +26,11 @@ ms.locfileid: "94679539"
 
 In diesem Kurs erfahren Sie, wie Sie mithilfe von Azure Notification Hubs, Azure-Tabellen und Azure Functions Notification Hubs Funktionen zu einer gemischten Reality-Anwendung hinzufügen.
 
-**Azure Notification Hubs** ist ein Microsoft-Dienst, der es Entwicklern ermöglicht, gezielte und personalisierte Pushbenachrichtigungen an jede beliebige Plattform zu senden, die alle in der Cloud betrieben wird. Dadurch können Entwickler in Abhängigkeit vom jeweiligen Szenario mit Endbenutzern oder sogar zwischen verschiedenen Anwendungen kommunizieren. Weitere Informationen finden Sie auf der [Seite](https://docs.microsoft.com/azure/notification-hubs/notification-hubs-push-notification-overview) **Azure Notification Hubs** .
+**Azure Notification Hubs** ist ein Microsoft-Dienst, der es Entwicklern ermöglicht, gezielte und personalisierte Pushbenachrichtigungen an jede beliebige Plattform zu senden, die alle in der Cloud betrieben wird. Dadurch können Entwickler in Abhängigkeit vom jeweiligen Szenario mit Endbenutzern oder sogar zwischen verschiedenen Anwendungen kommunizieren. Weitere Informationen finden Sie auf der [Seite](/azure/notification-hubs/notification-hubs-push-notification-overview) **Azure Notification Hubs** .
 
-**Azure Functions** ist ein Microsoft-Dienst, der Entwicklern das Ausführen von kleinen Code Elementen ("Functions") in Azure ermöglicht. Dies bietet eine Möglichkeit zum Delegieren von Arbeit an die Cloud und nicht an Ihre lokale Anwendung, die viele Vorteile haben kann. **Azure Functions** unterstützt mehrere Entwicklungs Sprachen, wie z \# . b. C, F \# , Node.js, Java und PHP. Weitere Informationen finden Sie auf der **Azure Functions** [Seite](https://docs.microsoft.com/azure/azure-functions/functions-overview)Azure Functions.
+**Azure Functions** ist ein Microsoft-Dienst, der Entwicklern das Ausführen von kleinen Code Elementen ("Functions") in Azure ermöglicht. Dies bietet eine Möglichkeit zum Delegieren von Arbeit an die Cloud und nicht an Ihre lokale Anwendung, die viele Vorteile haben kann. **Azure Functions** unterstützt mehrere Entwicklungs Sprachen, wie z \# . b. C, F \# , Node.js, Java und PHP. Weitere Informationen finden Sie auf der  [Seite](/azure/azure-functions/functions-overview)Azure Functions.
 
-**Azure-Tabellen** sind ein Microsoft-clouddienst, mit dem Entwickler strukturierte nicht-SQL-Daten in der Cloud speichern können, sodass Sie überall problemlos zugänglich sind. Der Dienst verfügt über einen Schema losen Entwurf, der die Weiterentwicklung von Tabellen nach Bedarf ermöglicht und daher sehr flexibel ist. Weitere Informationen finden Sie auf der **Azure Tables** [Seite](https://docs.microsoft.com/azure/cosmos-db/table-storage-overview) mit den Azure-Tabellen.
+**Azure-Tabellen** sind ein Microsoft-clouddienst, mit dem Entwickler strukturierte nicht-SQL-Daten in der Cloud speichern können, sodass Sie überall problemlos zugänglich sind. Der Dienst verfügt über einen Schema losen Entwurf, der die Weiterentwicklung von Tabellen nach Bedarf ermöglicht und daher sehr flexibel ist. Weitere Informationen finden Sie auf der  [Seite](/azure/cosmos-db/table-storage-overview) mit den Azure-Tabellen.
 
 Nachdem Sie diesen Kurs abgeschlossen haben, verfügen Sie über eine gemischte Reality-Headset-Anwendung und eine Desktop-PC-Anwendung, die Folgendes ausführen kann:
 
@@ -48,7 +48,7 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 308: Geräteübergreifende Benachrichtigungen</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -69,7 +69,7 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Internet Zugriff für Azure-Setup und für den Zugriff auf Notification Hubs
 
 ## <a name="before-you-start"></a>Vorbereitung
@@ -145,7 +145,7 @@ Nachdem Sie die Anmelde Informationen für Ihre apps abgerufen haben, müssen Si
 
     4.  Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal). 
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal). 
 
     5.  Wählen Sie ein entsprechendes **Abonnement** aus.
 
@@ -212,7 +212,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 
     9.  Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     10. Lassen Sie **virtuelle Netzwerke** **deaktiviert** , wenn dies eine Option für Sie ist.
 
@@ -253,7 +253,7 @@ Nachdem Sie das Speicher **Dienst** -Speicherkonto eingerichtet haben, ist es an
 
 1.  Öffnen Sie **Visual Studio**.
 
-2.  Klicken Sie im Menü auf **View**  >  **Cloud-Explorer** anzeigen.
+2.  Klicken Sie im Menü auf   >  **Cloud-Explorer** anzeigen.
 
     ![Cloud-Explorer öffnen](images/AzureLabs-Lab8-22.png)
 
@@ -362,7 +362,7 @@ Zunächst müssen Sie eine Datei erstellen, die es ihrer Azure-Funktion ermögli
 
     4. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Labs) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter diesem [Link zum Verwalten einer Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
 
     5. Klicken Sie für **Betriebssystem** auf Windows, da dies die beabsichtigte Plattform ist.
 
@@ -653,7 +653,7 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
     ![Erstellen des Projekts](images/AzureLabs-Lab8-53.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![Festlegen externer vs-Tools](images/AzureLabs-Lab8-54.png)
 
@@ -661,7 +661,7 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
     ![Plattformen wechseln](images/AzureLabs-Lab8-55.png)
 
-5.  **File**  >  Stellen Sie sicher, dass in den **Einstellungen** für die Dateierstellung Folgendes angezeigt wird:
+5.    >  Stellen Sie sicher, dass in den **Einstellungen** für die Dateierstellung Folgendes angezeigt wird:
 
     1.  Das **Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
 
@@ -715,14 +715,14 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
 9.  Schließen Sie das Fenster **Buildeinstellungen**.
 
-10. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >  **Save Scene / File**  >  **Save Project**.
+10. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >    >  .
 
     > [!IMPORTANT]
     > Wenn Sie die *Unity-Setup* Komponente für dieses Projekt (Desktop-App) überspringen und direkt mit dem Code fortfahren möchten, können Sie [dieses. unitypackage herunterladen](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage), es als [**benutzerdefiniertes Paket**](https://docs.unity3d.com/Manual/AssetPackages.html)in Ihr Projekt importieren und dann aus [Kapitel 9](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)fortfahren.  Sie müssen weiterhin die Skript Komponenten hinzufügen.
 
 ## <a name="chapter-8---importing-the-dlls-in-unity"></a>Kapitel 8: Importieren der DLLs in Unity
 
-Sie verwenden Azure Storage für Unity (das wiederum das .NET SDK für Azure nutzt). Weitere Informationen finden Sie unter diesem [Link zu Azure Storage für Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Sie verwenden Azure Storage für Unity (das wiederum das .NET SDK für Azure nutzt). Weitere Informationen finden Sie unter diesem [Link zu Azure Storage für Unity](/sandbox/gamedev/unity/azure-storage-unity).
 
 Zurzeit gibt es ein bekanntes Problem in Unity, das erfordert, dass Plug-ins nach dem Importieren neu konfiguriert werden. Diese Schritte (4-7 in diesem Abschnitt) werden nicht mehr benötigt, nachdem der Fehler behoben wurde.
 
@@ -790,7 +790,7 @@ So erstellen Sie diese Klasse:
 
 2.  Doppelklicken Sie auf den soeben erstellten Ordner, um ihn zu öffnen.
 
-3.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create**  >  **c#-Skript** erstellen Benennen Sie das Skript **tabledescene**.
+3.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript **tabledescene**.
 
     ![neues c#-Skript ](images/AzureLabs-Lab8-68.png)
      ![ Umbenennen von tableumscene](images/AzureLabs-Lab8-69.png)
@@ -1138,7 +1138,7 @@ So erstellen Sie das zweite Skript:
 
 Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, wurde nun abgeschlossen.
 
-1.  Navigieren Sie zu **Buildeinstellungen** (**dateibuildeinstellungen**  >  **Build Settings**).
+1.  Navigieren Sie zu **Buildeinstellungen** (**dateibuildeinstellungen**  >  ).
 
 2.  Klicken Sie im Fenster " **Buildeinstellungen** " auf " **Erstellen**".
 
@@ -1169,15 +1169,15 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
     ![Name unitymrnotishub](images/AzureLabs-Lab8-80.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **Edit** zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
     ![externen Editor auf vs festlegen](images/AzureLabs-Lab8-81.png)
 
-4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >  **Build Settings** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >   , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
     ![Plattformen zu UWP wechseln](images/AzureLabs-Lab8-82.png)
 
-5.  Wechseln Sie zu **dateibuildeinstellungen**  >  **Build Settings** , und stellen Sie Folgendes sicher:
+5.  Wechseln Sie zu **dateibuildeinstellungen**  >   , und stellen Sie Folgendes sicher:
 
     1.  Das **Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
 
@@ -1235,14 +1235,14 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
 9.  Nachdem Sie diese Änderungen vorgenommen haben, schließen Sie das Fenster Buildeinstellungen.
 
-10. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >  **Save Scene / File**  >  **Save Project**.
+10. Speichern Sie Ihre Szene-und Projekt **Datei**, und speichern Sie das Projekt in der Szene  >    >  .
 
     > [!IMPORTANT]
     > Wenn Sie die *Unity-Setup* Komponente für dieses Projekt (Mixed Reality-APP) überspringen und direkt mit dem Code fortfahren möchten, können Sie [dieses. unitypackage herunterladen](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage), es als [**benutzerdefiniertes Paket**](https://docs.unity3d.com/Manual/AssetPackages.html)in das Projekt importieren und dann aus [Kapitel 14](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project)fortfahren. Sie müssen weiterhin die Skript Komponenten hinzufügen.
 
 ### <a name="chapter-13---importing-the-dlls-in-the-mixed-reality-unity-project"></a>Kapitel 13: Importieren der DLLs im Mixed Reality Unity-Projekt
 
-Sie verwenden Azure Storage für die Unity-Bibliothek (in der das .NET SDK für Azure verwendet wird). Folgen Sie diesem [Link zur Verwendung von Azure Storage mit Unity](https://docs.microsoft.com/sandbox/gamedev/unity/azure-storage-unity).
+Sie verwenden Azure Storage für die Unity-Bibliothek (in der das .NET SDK für Azure verwendet wird). Folgen Sie diesem [Link zur Verwendung von Azure Storage mit Unity](/sandbox/gamedev/unity/azure-storage-unity).
 Zurzeit gibt es ein bekanntes Problem in Unity, das erfordert, dass Plug-ins nach dem Importieren neu konfiguriert werden. Diese Schritte (4-7 in diesem Abschnitt) werden nicht mehr benötigt, nachdem der Fehler behoben wurde.
 
 Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie das neueste [. unitypackage](https://aka.ms/azstorage-unitysdk)heruntergeladen haben. Gehen Sie nun wie folgt vor:
@@ -1485,7 +1485,7 @@ So erstellen Sie das **notificationreceiver** -Skript:
 
 Dieses Kapitel ist mit dem Buildprozess für das vorherige Projekt identisch. Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, ist nun abgeschlossen, sodass es an der Zeit ist, Sie aus Unity zu erstellen.
 
-1.  Navigieren Sie zu **Buildeinstellungen** ( **dateibuildeinstellungen**  >  **Build Settings** ).
+1.  Navigieren Sie zu **Buildeinstellungen** ( **dateibuildeinstellungen**  >   ).
 
 2.  Stellen Sie im Menü **Buildeinstellungen** sicher, dass **Unity c#-Projekte** _ getickt ist (sodass Sie die Skripts in diesem Projekt nach dem Build bearbeiten können).
 
@@ -1643,9 +1643,9 @@ So stellen Sie die **unitymrnotifhub** -App auf Ihrem lokalen Computer bereit:
 
 1.  Öffnen Sie die Projektmappendatei Ihrer **unitymrnotilohub** -app in **Visual Studio 2017**.
 
-2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
+2.  Wählen Sie auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
     ![Projekt Konfiguration festlegen](images/AzureLabs-Lab8-109.png)
 
@@ -1657,9 +1657,9 @@ So stellen Sie die **unitydesktopnotifhub** -App auf dem lokalen Computer bereit
 
 1.  Öffnen Sie die **Projektmappendatei ihrer unitydesktopnotilohub** -app in **Visual Studio 2017**.
 
-2.  Wählen Sie **Solution Platform** auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
+2.  Wählen Sie auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
 
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
 
     ![Projekt Konfiguration festlegen](images/AzureLabs-Lab8-110.png)
 

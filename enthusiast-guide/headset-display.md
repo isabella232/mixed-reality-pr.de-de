@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725411"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580510"
 ---
 # <a name="headset-display-faqs"></a>FAQs anzeigen FAQs
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725411"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>Meine Headset-Anzeige wird nach einiger Verwendung gelegentlich schwarz.
 
-* Versuchen Sie, alle USB-Suspend-oder Energiespar Features auf Ihrem PC zu deaktivieren. Beispielsweise können Sie in " **Einstellungen" > System > Energie & Energiesparmodus > " [USB-Selektierungs](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)** Vorgang" zulassen, dass der Computer dieses Gerät ausschalten, um Energie zu sparen "in Geräte-Manager und alle USB-Energiespareinstellungen in der Firmware Ihres PCs.
+* Versuchen Sie, alle USB-Suspend-oder Energiespar Features auf Ihrem PC zu deaktivieren. Beispielsweise können Sie in " **Einstellungen" > System > Energie & Energiesparmodus > " [USB-Selektierungs](/windows-hardware/drivers/usbcon/usb-selective-suspend)** Vorgang" zulassen, dass der Computer dieses Gerät ausschalten, um Energie zu sparen "in Geräte-Manager und alle USB-Energiespareinstellungen in der Firmware Ihres PCs.
 * Trennen Sie vorübergehend alle anderen USB-Geräte und Peripheriegeräte, die mit dem PC verbunden sind.
 * Überprüfen Sie, ob die Version des GPU-Treibers aktuell ist, und überprüfen Sie, ob neue Leistungs-und Kompatibilitätsprobleme aufgetreten sind.
 

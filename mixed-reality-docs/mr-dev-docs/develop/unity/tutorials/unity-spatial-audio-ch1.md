@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
-ms.openlocfilehash: 1eb2913f1953e334cfe75b786f96bb51a9852fc5
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578447"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580220"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. hinzufügen räumlicher Audiodaten zu Ihrem Unity-Projekt
 
@@ -21,7 +21,7 @@ Willkommen beim Tutorial zu räumlichen Audiodaten für Unity auf HoloLens2. In 
 
 Das [GitHub-Repository für Microsoft spatializer](https://github.com/microsoft/spatialaudio-unity) verfügt über ein abgeschlossenes Unity-Projekt für diese tutorialsequenz.
 
-Ein Verständnis der Bedeutung von Sounds mithilfe von HRTF-basierten spatialisierungs Technologien und Empfehlungen für den Fall, dass es hilfreich sein kann, finden Sie unter [Spatial Sound Design](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design).
+Ein Verständnis der Bedeutung von Sounds mithilfe von HRTF-basierten spatialisierungs Technologien und Empfehlungen für den Fall, dass es hilfreich sein kann, finden Sie unter [Spatial Sound Design](/windows/mixed-reality/spatial-sound-design).
 
 ## <a name="what-is-hrtf-offload"></a>Was ist HRTF Offload?
 

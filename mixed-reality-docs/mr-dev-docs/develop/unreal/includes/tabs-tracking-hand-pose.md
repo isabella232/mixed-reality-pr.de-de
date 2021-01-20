@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717482"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581107"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -57,7 +57,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-Sie können die numerischen Werte für jeden enumerationsfall in der Tabelle " [Windows. perception. People. handjointkind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) " finden.
+Sie können die numerischen Werte für jeden enumerationsfall in der Tabelle " [Windows. perception. People. handjointkind](/uwp/api/windows.perception.people.handjointkind) " finden.
 
 ### <a name="supporting-hand-tracking"></a>Unterstützende Hand Verfolgung
 
@@ -95,4 +95,3 @@ Im folgenden finden Sie eine Aufschlüsselung der Funktionsparameter von gethand
 * **Transformation** – Koordinaten und Ausrichtung der Basis von Bone. Sie können die Basis des nächsten Knochens anfordern, um die Transformations Daten für das Ende eines Knochens zu erhalten. Ein spezieller Tip-Bone gibt das Ende der distal-Tabelle an.
 * * * Radius – Radius der Basis des-Knochens.
 * * * Rückgabewert – true, wenn der Rahmen dieses Frames nachverfolgt wird, false, wenn der Knochen nicht nachverfolgt wird.
-

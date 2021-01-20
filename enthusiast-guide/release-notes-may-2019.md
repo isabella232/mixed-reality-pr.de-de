@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: Anmerkungen zu dieser Version, Version, Windows 10, Build, 19h1, Betriebssystem, Mai 2019
-ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007120"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581503"
 ---
 # <a name="release-notes---may-2019"></a>Anmerkungen zu dieser Version-Mai 2019
 
@@ -50,7 +50,7 @@ Wir verfolgen ein Problem, bei dem ein Monitor mit dem PC verbunden werden muss,
 
 ## <a name="provide-feedback-and-report-issues"></a>Bereitstellen von Feedback und melden von Problemen
 
-Verwenden Sie die [Feedback-Hub-App auf Ihrem Windows 10-PC](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) oder Ihrem hololens-Gerät, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell Debuggen und beheben können.
+Verwenden Sie die [Feedback-Hub-App auf Ihrem Windows 10-PC](/windows/mixed-reality/give-us-feedback) oder Ihrem hololens-Gerät, um Feedback zu geben und Probleme zu melden. Die Verwendung von Feedback Hub stellt sicher, dass alle erforderlichen Diagnoseinformationen enthalten sind, damit unsere Techniker das Problem schnell Debuggen und beheben können.
 
 >[!NOTE]
 >Stellen **Sie sicher** , dass Sie die Eingabeaufforderung akzeptieren, in der Sie gefragt werden, ob der Feedback-Hub auf den Ordner "Dokumente" zugreifen soll.
@@ -65,9 +65,8 @@ Verwenden Sie die [Feedback-Hub-App auf Ihrem Windows 10-PC](https://docs.micros
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Siehe auch
-* [Immersive Headset-Unterstützung (externer Link)](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+## <a name="see-also"></a>Weitere Informationen
+* [Immersive Headset-Unterstützung (externer Link)](./troubleshooting-windows-mixed-reality.md)
 * [Hololens-Unterstützung (externer Link)](https://support.microsoft.com/products/hololens)
-* [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [Installieren der Tools](/windows/mixed-reality/develop/install-the-tools)
 * [Geben Sie uns Feedback] (https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

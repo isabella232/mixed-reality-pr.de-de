@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Augen Verfolgung, Head-Tracking, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007640"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582136"
 ---
 # <a name="gaze-and-dwell"></a>Anvisieren und Verweilen
 
@@ -40,7 +40,7 @@ Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkze
     </colgroup>
     <tr>
         <td><strong>Eingabemodell</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -63,7 +63,7 @@ Der Garagenbereich ist laut, mit einem ständigen Klopfen und Knarren der Werkze
 
 ---
 
- ## <a name="see-also"></a>Siehe auch
+ ## <a name="see-also"></a>Weitere Informationen
 
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)

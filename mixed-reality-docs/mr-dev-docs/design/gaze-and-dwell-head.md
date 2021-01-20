@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, wohnen, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, UX, Richtlinien, Listenansicht
-ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e70536b7247153979b8650ba1f5bcbe1a7cd08af
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007080"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582203"
 ---
 # <a name="head-gaze-and-dwell"></a>Anvisieren mit dem Kopf und Verweilen
 
@@ -32,7 +32,7 @@ In Szenarien, in denen die Hände einer Person mit anderen Aufgaben beschäftigt
     </colgroup>
     <tr>
         <td><strong>Eingabemodell</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -182,7 +182,7 @@ Umschalter erfordern eine differenzierte Logik, um ordnungsgemäß zu funktionie
 
 ---
  
- ## <a name="see-also"></a>Siehe auch
+ ## <a name="see-also"></a>Weitere Informationen
 
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Hände – Direkte Manipulation](direct-manipulation.md)

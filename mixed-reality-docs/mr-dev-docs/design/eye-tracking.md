@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Kalibrierung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Intent, Actions
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009600"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582319"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Blickverfolgung auf HoloLens 2
 
@@ -32,7 +32,7 @@ Die Eye Tracking-API wurde mit dem Datenschutz eines Benutzers entworfen, sodass
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ Die Eye Tracking-API wurde mit dem Datenschutz eines Benutzers entworfen, sodass
 
 ## <a name="calibration"></a>Kalibrierung 
 
-Damit die Eye-Nachverfolgung ordnungsgemäß funktioniert, muss jeder Benutzer eine nach [Verfolgungs Benutzer-Kalibrierung](../calibration.md) durchlaufen, für die der Benutzer eine Reihe von Holographic-Zielen betrachten muss. Dies ermöglicht es dem Gerät, das System für eine komfortablere und qualitativ hochwertige Anzeige für den Benutzer anzupassen und gleichzeitig eine genaue Eye-Nachverfolgung sicherzustellen. 
+Damit die Eye-Nachverfolgung ordnungsgemäß funktioniert, muss jeder Benutzer eine nach [Verfolgungs Benutzer-Kalibrierung](/hololens/hololens-calibration) durchlaufen, für die der Benutzer eine Reihe von Holographic-Zielen betrachten muss. Dies ermöglicht es dem Gerät, das System für eine komfortablere und qualitativ hochwertige Anzeige für den Benutzer anzupassen und gleichzeitig eine genaue Eye-Nachverfolgung sicherzustellen. 
 
 Die Eye-Nachverfolgung sollte für die meisten Benutzer funktionieren, aber es gibt selten Fälle, in denen ein Benutzer nicht erfolgreich kalibrieren kann. Die Kalibrierung kann aus verschiedenen Gründen fehlschlagen, einschließlich, aber nicht beschränkt auf: 
 * Der Benutzer hat sich zuvor für den Kalibrierungsprozess entschieden.
@@ -59,13 +59,13 @@ Die Eye-Nachverfolgung sollte für die meisten Benutzer funktionieren, aber es g
 
 Entwickler sollten sicherstellen, dass Sie angemessene Unterstützung für Benutzer bereitstellen, für die Augen Verfolgungs Daten möglicherweise nicht verfügbar sind (die nicht in der Lage sind, erfolgreich zu kalibrieren). Wir haben Empfehlungen für Fall Back Lösungen im Abschnitt unten auf dieser Seite bereitgestellt. 
 
-Weitere Informationen zur Kalibrierung und zur Gewährleistung eines reibungslosen Erlebnisses finden Sie auf unserer Seite zur [Benutzer seitigen Überwachung](../calibration.md) .
+Weitere Informationen zur Kalibrierung und zur Gewährleistung eines reibungslosen Erlebnisses finden Sie auf unserer Seite zur [Benutzer seitigen Überwachung](/hololens/hololens-calibration) .
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>Verfügbare Augen Verfolgungs Daten
 
-Bevor Sie sich ausführlich über bestimmte Anwendungsfälle für die Augenblick Eingaben beschäftigen, möchten wir kurz auf die Funktionen hinweisen, die von der hololens 2 [Eye Tracking-API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) bereitstellt werden. Entwickler erhalten Zugriff auf einen Augenblick Strahl ("Ursprung" und "Richtung") bei ungefähr _30 fps (30 Hz)_.
+Bevor Sie sich ausführlich über bestimmte Anwendungsfälle für die Augenblick Eingaben beschäftigen, möchten wir kurz auf die Funktionen hinweisen, die von der hololens 2 [Eye Tracking-API](/uwp/api/windows.perception.people.eyespose) bereitstellt werden. Entwickler erhalten Zugriff auf einen Augenblick Strahl ("Ursprung" und "Richtung") bei ungefähr _30 fps (30 Hz)_.
 Ausführlichere Informationen zum Zugreifen auf die Augen Verfolgungs Daten finden Sie in den Entwickler Handbüchern zur Verwendung von [Eye-Blick in DirectX](../develop/native/gaze-in-directx.md) und im Blickwinkel [in Unity](https://aka.ms/mrtk-eyes).
 
 Der vorhergesagte Augenblick liegt ungefähr innerhalb von 1,5 Grad im visuellen Winkel um das eigentliche Ziel (siehe Abbildung unten). Da geringfügige unveränderungen erwartet werden, sollten Entwickler einen gewissen Rand um diesen niedrigeren Grenzwert planen (z. b. können 2.0-3.0 Grad zu einer viel komfortableren Umgebung führen). Im folgenden wird erläutert, wie die Auswahl kleiner Ziele genauer behandelt wird. Damit die Blickverfolgung exakt funktioniert, muss jeder Benutzer eine Benutzerkalibrierung für seine Blickverfolgung durchlaufen. 
@@ -135,8 +135,8 @@ Einerseits bewegen sich die Augen so schnell, dass Sie sorgfältig darauf achten
 
 In seltenen Fällen sind die Augen Verfolgungs Daten möglicherweise nicht verfügbar.
 Dies kann aus verschiedenen Gründen geschehen, in denen die gängigsten aufgeführt sind:
-* Das System konnte [den Benutzer nicht kalibrieren](../calibration.md).
-* Der Benutzer hat die [Kalibrierung](../calibration.md)übersprungen.    
+* Das System konnte [den Benutzer nicht kalibrieren](/hololens/hololens-calibration).
+* Der Benutzer hat die [Kalibrierung](/hololens/hololens-calibration)übersprungen.   
 * Der Benutzer ist zwar kalibriert, hat sich jedoch entschieden, der APP keine Berechtigung zur Verwendung der Augen Verfolgungs Daten zu erteilen.    
 * Der Benutzer hat eine eindeutige Brillen-oder Augen Bedingung, die das System noch nicht unterstützt. 
 * Externe Faktoren behindern die zuverlässige Eye-Nachverfolgung, wie z. b. smudges auf den holten-Hypervisor oder-Brillen, intensive direkte Sonneneinstrahlung und-oksionen aufgrund von Haaren vor Augen.  
@@ -166,14 +166,12 @@ Auch hier wird empfohlen, dass Sie dem Benutzer, der möglicherweise nicht weiß
 
 Auf dieser Seite haben Sie hoffentlich einen guten Überblick erhalten, mit dem Sie die Rolle der Eye-Nachverfolgung und die Eingabe des Augenblicks für hololens 2 verstanden haben. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen über die Rolle des [Augenblicks für die Interaktion mit holograms](eye-gaze-interaction.md), den [Augenblick in Unity](https://aka.ms/mrtk-eyes) und den [Augenblick in DirectX](../develop/native/gaze-in-directx.md)an.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-* [Kalibrierung](../calibration.md)
+* [Kalibrierung](/hololens/hololens-calibration)
 * [Komfort](comfort.md)
 * [Interaktion durch Anvisieren](eye-gaze-interaction.md)
 * [Blick in DirectX](../develop/native/gaze-in-directx.md)
 * [Blick in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Spracheingabe](../out-of-scope/voice-design.md)
-
-

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: immersive Ansicht, 2D-Ansicht, Slate, APP, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a16fc3b1ac45d74874f37ce44a36d3e144fee8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009630"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580104"
 ---
 # <a name="app-views"></a>App-Ansichten
 
@@ -24,7 +24,7 @@ Bei der Vollbildansicht erhält Ihre Anwendung die Möglichkeit, Hologramme in d
 ![Wenn Sie sich in einer immersiven Ansicht befinden, können Sie auf der ganzen Welt holograms platzieren.](images/designoverview-940px.jpg)<br>
 *Wenn Sie sich in einer immersiven Ansicht befinden, können holograms auf der ganzen Welt platziert werden.*
 
-Bei [hololens](https://docs.microsoft.com/hololens/hololens1-hardware)rendert Ihre APP Ihre Hologramme auf der realen Umgebung des Benutzers. In einem [Windows Mixed Reality-immersiven Headset](../discover/immersive-headset-hardware-details.md)kann der Benutzer die reale Welt nicht sehen, sodass Ihre APP alles Rendering muss, was dem Benutzer angezeigt wird.
+Bei [hololens](/hololens/hololens1-hardware)rendert Ihre APP Ihre Hologramme auf der realen Umgebung des Benutzers. In einem [Windows Mixed Reality-immersiven Headset](../discover/immersive-headset-hardware-details.md)kann der Benutzer die reale Welt nicht sehen, sodass Ihre APP alles Rendering muss, was dem Benutzer angezeigt wird.
 
 Die [Windows Mixed Reality-Startseite](../discover/navigating-the-windows-mixed-reality-home.md) (einschließlich Start Menü und holograms, die Sie in der Umgebung platziert haben) wird in einer immersiven Ansicht nicht angezeigt. Bei hololens leitet Cortana alle System Benachrichtigungen ein, die auftreten, während eine immersive Ansicht angezeigt wird, auf die der Benutzer mit der Spracheingabe Antworten kann.
 
@@ -43,7 +43,7 @@ Eine zentrale Verwendung von 2D-Sichten zeigt ein Texteingabe Formular, das die 
 
 Eine APP kann über 2D-Ansichten sowohl auf dem Desktop Monitor als auch in einem angeschlossenen Headset auf einem Desktop-PC verfügen. Beispielsweise können Sie mit der zweiten 2D-Ansicht Edge auf dem Desktop Monitor durchsuchen, um ein Video mit dem 360-Grad zu finden. Wenn Sie das Video abspielen, startet Edge eine sekundäre immersive Ansicht im Headset, um die immersiven Videoinhalte anzuzeigen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [App-Modell](app-model.md)
 * [Aktualisieren von 2D-UWP-Apps für Mixed Reality](../develop/porting-apps/building-2d-apps.md)

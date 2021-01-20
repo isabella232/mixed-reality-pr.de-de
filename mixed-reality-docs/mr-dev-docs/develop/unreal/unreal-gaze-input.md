@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010140"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98579981"
 ---
 # <a name="gaze-input"></a>Blick Eingabe
 
@@ -117,7 +117,7 @@ Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-development-overview.md#2-core-building-blocks) zurückkehren.
 
 ## <a name="see-also"></a>Siehe auch
-* [Kalibrierung](../../calibration.md)
+* [Kalibrierung](/hololens/hololens-calibration)
 * [Komfort](../../design/comfort.md)
 * [Anvisieren und Ausführen](../../design/gaze-and-commit.md)
 * [Spracheingabe](../../out-of-scope/voice-design.md)

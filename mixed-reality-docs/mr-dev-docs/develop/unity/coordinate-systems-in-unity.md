@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Koordinatensystem, räumliches Koordinatensystem, nur Ausrichtung, sitzender Skalierung, Raum Skalierung, Welt weite, 360 Grad, sitzend, Position, Raum, Welt, Skala, Position, Ausrichtung, Unity, Anker, räumlicher Anker, Welt Anker, weltweit gesperrt, Platzsperre, gesperrter Text, Body-Lock, nach Verfolgungs Verlust, loerbarkeit, Begrenzungen, recenter, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010281"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581059"
 ---
 # <a name="coordinate-systems-in-unity"></a>Koordinatensysteme in Unity
 
@@ -102,7 +102,7 @@ Um einen Welt Anker hinzuzufügen, nennen Sie addComponent <WorldAnchor> () für
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-Das war's. Dieses Spielobjekt wird nun an seinem aktuellen Speicherort in der physischen Welt verankert. möglicherweise werden die Unity-Weltkoordinaten im Laufe der Zeit leicht angepasst, um die physische Ausrichtung sicherzustellen. Verwenden Sie [Persistenz](persistence-in-unity.md) , um diesen verankerten Standort in einer zukünftigen App-Sitzung wieder zu suchen.
+Das ist alles! Dieses Spielobjekt wird nun an seinem aktuellen Speicherort in der physischen Welt verankert. möglicherweise werden die Unity-Weltkoordinaten im Laufe der Zeit leicht angepasst, um die physische Ausrichtung sicherzustellen. Verwenden Sie [Persistenz](persistence-in-unity.md) , um diesen verankerten Standort in einer zukünftigen App-Sitzung wieder zu suchen.
 
 ### <a name="removing-a-world-anchor"></a>Entfernen eines Welt Ankers
 
@@ -163,11 +163,11 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>Gemeinsame Nutzung von Ankern Geräten
 
-Verwenden Sie <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> , um einen permanenten cloudanker von einem lokalen worldanchor zu erstellen, den Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers auf mehreren Geräten kann jeder Benutzer den Inhalt in Relation zu diesem Anker am gleichen physischen Speicherort sehen.  Dies ermöglicht gemeinsame Erfahrungen in Echtzeit.
+Verwenden Sie <a href="/azure/spatial-anchors/overview" target="_blank">räumliche Azure-Anker</a> , um einen permanenten cloudanker von einem lokalen worldanchor zu erstellen, den Ihre APP dann über mehrere hololens-, IOS-und Android-Geräte hinweg finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen räumlichen Ankers auf mehreren Geräten kann jeder Benutzer den Inhalt in Relation zu diesem Anker am gleichen physischen Speicherort sehen.  Dies ermöglicht gemeinsame Erfahrungen in Echtzeit.
 
-Um mit der Einführung von freigegebenen Erfahrungen in Unity zu beginnen, testen Sie die fünfminütigen <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchor Unity-Schnellstarts</a>.
+Um mit der Einführung von freigegebenen Erfahrungen in Unity zu beginnen, testen Sie die fünfminütigen <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchor Unity-Schnellstarts</a>.
 
-Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Anker in Unity erstellen und lokalisieren</a>.
+Sobald Sie mit räumlichen Azure-Ankern arbeiten, können Sie <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Anker in Unity erstellen und lokalisieren</a>.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
@@ -190,5 +190,5 @@ Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-dev
 * [Raumanker](../../design/spatial-anchors.md)
 * [Persistenz in Unity](persistence-in-unity.md)
 * [Gemeinsame Erlebnisse in Unity](shared-experiences-in-unity.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchor SDK für Unity</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchor SDK für Unity</a>

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Hand Coach, immersives Headset, mrtk, Hands, helfende Hand, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009160"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582272"
 ---
 # <a name="hand-coach"></a>Hand Coach
 
@@ -146,7 +146,7 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 
 ## <a name="implementing-hands-into-your-unity-project"></a>Implementieren von Hand in Ihr Unity-Projekt
 
-### <a name="best-practices"></a>Empfohlene Methoden
+### <a name="best-practices"></a>Bewährte Methoden
 
 * Es wird empfohlen, die Hände in Unity auf 0,6 zu skalieren.
 * Hände sollten zweimal abgespielt werden und, wenn Sie nicht abgeschlossen ist, bis zum Abschluss der Bewegung fortlaufend. Die Hände sollten zweimal Schleifen, um sicherzustellen, dass der Benutzer Zeit hat, sich zu registrieren und die Geste anzuzeigen. Die Hände sollten Zwischenschleifen ein-und ausgeblendet werden. 
@@ -173,11 +173,11 @@ Nachdem Sie mit ihrer Animation zufrieden sind
     *   Pro-Projekt-Einstellung
         *   Szene, die auf UWP festgelegt ist: Anweisungen finden Sie im [Unity-Projekt](../develop/unity/Configure-Unity-Project.md) für Windows Mixed Reality.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Interaktion: Grundlagen](interaction-fundamentals.md)
 * [Asset-Erstellungs Prozess](asset-creation-process.md)
-* [Gesten](../gestures.md)
+* [Gesten](./interaction-fundamentals.md)
 * [Installieren der Tools](../develop/install-the-tools.md)
 * [Unity-Projekt konfigurieren](../develop/unity/Configure-Unity-Project.md)
 * [Unity-Entwicklung – Übersicht](../develop/unity/unity-development-overview.md)

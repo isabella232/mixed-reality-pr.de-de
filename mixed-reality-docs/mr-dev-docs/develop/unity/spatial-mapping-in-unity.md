@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, räumliche Zuordnung, Renderer, Collider, Mesh, Scan, Komponente, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009290"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582546"
 ---
 # <a name="spatial-mapping-in-unity"></a>Räumliche Abbildung in Unity
 
@@ -34,7 +34,7 @@ Um die räumliche Zuordnung in der APP zu verwenden, muss die spatialperception-
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>Hololens (erste Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>Hololens (erste Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -496,7 +496,7 @@ Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 
 Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * [Koordinatensysteme in Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Hololens (1st Gen), hololens 2, Mixed Reality, Cursors, Zielplattform, Blick, Gesten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Rays, Input
-ms.openlocfilehash: 3d1bc215f7f5c37f1c2c3ae33c3bc2e4031b354a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848005"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582407"
 ---
 # <a name="cursors"></a>Cursor
 
@@ -32,7 +32,7 @@ Es gibt drei Arten von Cursorn: **Finger, Ray** und **Head-Gaze**. Diese zeigend
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -141,7 +141,7 @@ Wenn Sie das Verhalten und den Anschein von Cursor Feedback anpassen möchten, f
 * Der Cursor kann verwendet werden, um den Eingabe Zustand oder die Absicht des Benutzers anzuzeigen. Beispielsweise könnte ein Symbol angezeigt werden, das dem Benutzer mitteilt, dass das System seinen Hand Zustand hat und die Anwendung weiß, dass Sie bereit sind, Maßnahmen zu ergreifen.
 * Wir könnten auch den Cursor verwenden, um Benutzern anzuzeigen, dass Sprachbefehle vom System über eine Änderung der momentanen Farbe gehört wurden.
 
-* Die folgenden Cursor Zustände können auf unterschiedliche Weise implementiert werden. Sie können diese verschiedenen Zustände implementieren, indem Sie den Cursor wie einen Zustands Automat modellieren. Zum Beispiel:
+* Die folgenden Cursor Zustände können auf unterschiedliche Weise implementiert werden. Sie können diese verschiedenen Zustände implementieren, indem Sie den Cursor wie einen Zustands Automat modellieren. Beispiel:
     * Im Leerlaufzustand wird der Standard Cursor angezeigt.
     * Der Status "bereit" ist, wenn Sie festgestellt haben, dass der Benutzer die Hand hat.
     * Der Interaktions Zustand ist, wenn der Benutzer eine bestimmte Interaktion durch nimmt.
@@ -163,7 +163,7 @@ Das Entwerfen ohne Cursor wird empfohlen, wenn das Eintauchen eine wichtige Komp
 
 ## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>Cursor im mrtk (Mixed Reality Toolkit) für Unity
 
-Standardmäßig stellt [mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) eine Cursor-vorfab ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) bereit, die denselben visuellen Zustand aufweist wie der System Cursor der Shell. Sie wird im Eingabe Profil von mrtk unter Zeiger zugewiesen. Sie können diesen Cursor für Ihre Benutzeroberflächen ersetzen/anpassen. Für die Verwendung von Eye-Tracking-Eingaben bietet mrtk auch den "eyegazecursor", der über eine feine Visualisierung verfügt, um die Ablenkung zu minimieren.
+Standardmäßig stellt [mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) eine Cursor-vorfab ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) bereit, die denselben visuellen Zustand aufweist wie der System Cursor der Shell. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. Sie können diesen Cursor für Ihre Benutzeroberflächen ersetzen/anpassen. Für die Verwendung von Eye-Tracking-Eingaben bietet mrtk auch den "eyegazecursor", der über eine feine Visualisierung verfügt, um die Ablenkung zu minimieren.
 
 * [MRTK – Zeigerprofil](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK – Eingabesystem](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)

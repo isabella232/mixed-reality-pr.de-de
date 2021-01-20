@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Maschinelles sehen, hololens, immersive, VR, Microsoft bot Framework V4, Web-App-bot, bot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 6c172bbede50062064a654543362afe38b46be63
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b8b4624615a3c3f62800b396803572b0b67ad1a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679449"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582465"
 ---
 # <a name="mr-and-azure-312-bot-integration"></a>MR und Azure 312: Bot-Integration
 
@@ -36,7 +36,7 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td> MR und Azure 312: Bot-Integration</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -57,18 +57,18 @@ Für diesen Kurs empfehlen wir die folgende Hardware und Software:
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017,4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](../../../hololens-hardware-details.md) mit aktiviertem Entwicklermodus
+- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
 - Internet Zugang für Azure und für den Azure-bot-Abruf. Weitere Informationen [finden Sie unter diesem Link](https://dev.botframework.com/).
 
 ### <a name="before-you-start"></a>Vorbereitung
 
 1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
-2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](https://docs.microsoft.com/hololens/hololens-setup). 
+2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup). 
 3.  Es empfiehlt sich, eine Kalibrierung und Sensor Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen). 
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](../../../calibration.md#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](../../../sensor-tuning.md).
+Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
 
 ## <a name="chapter-1--create-the-bot-application"></a>Kapitel 1 – Erstellen der bot-Anwendung
 
@@ -88,7 +88,7 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
 
     ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-03.png)
 
-5.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das *Projekt* **mybot**, und klicken Sie auf Klasse **Hinzufügen** **|** **Class**.
+5.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das *Projekt* **mybot**, und klicken Sie auf Klasse **Hinzufügen** **|** .
 
     ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-04.png)
 
@@ -98,7 +98,7 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
 
 7.  Wiederholen Sie den vorherigen Punkt, um eine weitere Klasse mit dem Namen " **Kontexts**" zu erstellen 
 
-8.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **wwwroot** , und klicken Sie auf **Add** **|** **Neues Element** hinzufügen. Wählen Sie  **HTML-Seite** aus (Sie finden Sie im unter Abschnitt Web). Benennen Sie die Datei **default.html**. Klicken Sie auf **Hinzufügen**.
+8.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **wwwroot** , und klicken Sie auf  **|** **Neues Element** hinzufügen. Wählen Sie  **HTML-Seite** aus (Sie finden Sie im unter Abschnitt Web). Benennen Sie die Datei **default.html**. Klicken Sie auf **Hinzufügen**.
 
     ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-06.png)
 
@@ -249,7 +249,7 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
     }
     ```
 
-14. Denken Sie daran, die Änderungen zu speichern, und klicken Sie **File** hierzu auf  >  der Symbolleiste oben in Visual Studio auf Datei **Alle speichern**.
+14. Denken Sie daran, die Änderungen zu speichern, und klicken Sie hierzu auf  >  der Symbolleiste oben in Visual Studio auf Datei **Alle speichern**.
 
 ## <a name="chapter-2---create-the-azure-bot-service"></a>Kapitel 2: Erstellen des Azure bot Service
 
@@ -273,7 +273,7 @@ Nachdem Sie den Code für den bot erstellt haben, müssen Sie ihn im Azure-Porta
     2. Wählen Sie ein **Abonnement** aus.
     3. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [diesem Link](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal) .
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [diesem Link](/azure/azure-resource-manager/resource-group-portal) .
 
     4. Bestimmen Sie den Speicherort für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
     5. Wählen Sie den für **Sie geeigneten Tarif** aus. Wenn Sie zum ersten Mal einen Web- *App-bot* -Dienst erstellen, sollte Ihnen ein Free-Tarif (mit dem Namen "F0") zur Verfügung stehen.
@@ -1260,8 +1260,8 @@ So stellen Sie auf hololens bereit:
     5. Legen Sie den Entwicklermodus auf fest.
 
 2.  Navigieren Sie zu Ihrem neuen Unity-Build ( **App** -Ordner), und öffnen Sie die Projektmappendatei mit **Visual Studio**.
-3.  Wählen Sie **Solution Configuration** in der Projektmappenkonfiguration **Debuggen**.
-4.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **Remote Computer** aus. **Solution Platform** 
+3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
+4.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **Remote Computer** aus.  
 
     ![Stellen Sie die Lösung aus Visual Studio bereit.](images/AzureLabs-Lab312-39.png)
  
@@ -1269,7 +1269,7 @@ So stellen Sie auf hololens bereit:
 6.  Ihre APP sollte nun in der Liste der installierten apps auf Ihren hololens angezeigt werden, die bereit sind, gestartet zu werden.
 
     > [!NOTE]
-    > Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf **Solution Platform** *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann auf dem lokalen Computer bereit, indem Sie im **Menü Erstellen** die Option *Lösung* bereitstellen auswählen. 
+    > Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf  *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann auf dem lokalen Computer bereit, indem Sie im **Menü Erstellen** die Option *Lösung* bereitstellen auswählen. 
 
 ## <a name="chapter-16--using-the-application-on-the-hololens"></a>Kapitel 16 – verwenden der Anwendung auf den hololens
 

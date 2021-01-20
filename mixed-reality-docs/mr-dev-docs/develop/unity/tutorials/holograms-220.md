@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumlicher Sound, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678369"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582761"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR räumlich 220: Raumklang
 
 >[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](../../../mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
 
 [Räumlicher Sound](../../../design/spatial-sound.md) atmet Leben in holograms und bietet Ihnen die Präsenz in unserer Welt. Holograms bestehen aus Licht und Ton, und wenn Sie Ihre Hologramme nicht vergessen, kann räumlicher Sound Ihnen helfen, Sie zu finden. Der räumliche Sound ist nicht mit dem typischen Sound vergleichbar, den Sie im Radio hören würden, es handelt sich um Sound, der in 3D-Raum positioniert ist. Mit räumlichem Sound können Sie holograms so gestalten, wie Sie sich hinter ihnen befinden, oder auch auf Ihrem Kopf! In diesem Kurs werden Sie wie folgt vorgehen:
 
@@ -30,7 +30,7 @@ ms.locfileid: "94678369"
 
 <table>
 <tr>
-<th>Kurs</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
+<th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
 <td>MR räumlich 220: Raumklang</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -512,6 +512,6 @@ Die Unterwelt wird ausgeblendet, und die zuvor ausgeblendeten holograms werden e
 
 ## <a name="the-end"></a>Das Ende
 
-Glückwunsch! Sie haben jetzt den räumlichen **Ton 220: Spatial Sound** abgeschlossen.
+Herzlichen Glückwunsch! Sie haben jetzt den räumlichen **Ton 220: Spatial Sound** abgeschlossen.
 
 Lauschen Sie auf die Welt, und bringen Sie Ihre Erfahrungen mit Sound!

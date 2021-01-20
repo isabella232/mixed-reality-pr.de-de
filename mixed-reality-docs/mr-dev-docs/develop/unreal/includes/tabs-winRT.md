@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745714"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580405"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ Im ersten Schritt sollten Sie eine packages.config ( https://docs.microsoft.com/
 </packages>
 ```
 
-Nun können Sie nuget, die erforderlichen Pakete oder die nuget- [Dokumentation](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)herunterladen.
+Nun können Sie nuget, die erforderlichen Pakete oder die nuget- [Dokumentation](/nuget/consume-packages/install-use-packages-nuget-cli)herunterladen.
 
 Öffnen Sie YourModule.Build.cs, und fügen Sie den folgenden Code hinzu:
 
@@ -533,5 +533,4 @@ Wenn Unreal "OpenFileDialog" aufruft, wird ein Datei Dialogfeld in den hololens 
 
 ## <a name="summary"></a>Zusammenfassung 
 
-Wir empfehlen Ihnen, dieses Tutorial als Ausgangspunkt für die Verwendung von WinRT-Code in Unreal zu verwenden, wenn Sie Dateien mit dem gleichen Datei Dialogfeld wie Windows auf dem Datenträger "hololens" speichern müssen.  Der gleiche Vorgang gilt für den Export zusätzlicher Funktionen aus dem hololenswinrtdll-Header und die Verwendung in Unreal.  Achten Sie besonders auf den DLL-Code, der auf Async-WinRT-Code in einem MTA-Hintergrund Thread wartet, der das Deadlocks des Unreal Game-Threads vermeidet. 
-
+Wir empfehlen Ihnen, dieses Tutorial als Ausgangspunkt für die Verwendung von WinRT-Code in Unreal zu verwenden, wenn Sie Dateien mit dem gleichen Datei Dialogfeld wie Windows auf dem Datenträger "hololens" speichern müssen.  Der gleiche Vorgang gilt für den Export zusätzlicher Funktionen aus dem hololenswinrtdll-Header und die Verwendung in Unreal.  Achten Sie besonders auf den DLL-Code, der auf Async-WinRT-Code in einem MTA-Hintergrund Thread wartet, der das Deadlocks des Unreal Game-Threads vermeidet.

@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, Blick auf das Ziel, Interaktion, Entwurf, Augen Verfolgung, Head-Tracking, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847927"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582332"
 ---
 # <a name="gaze-and-commit"></a>Anvisieren und Bestätigen
 
@@ -40,7 +40,7 @@ Im folgenden finden Sie einige Beispiele für die Art und Weise, wie Sie als Ent
     </colgroup>
     <tr>
         <td><strong>Eingabemodell</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ Nachdem ein Objekt oder ein UI-Element als Ziel verwendet wurde, kann der Benutz
 Die folgenden Methoden zum Ausführen werden unterstützt:
 - Tippen Sie auf die Handbewegung, und bringen Sie den Finger und den Ziehpunkt des Indexes ein.
 - Sagen _Sie "Select"_ oder einen der Ziel Sprachbefehle
-- Eine einzelne Schaltfläche auf einem [hololens-Clicker](https://docs.microsoft.com/hololens/hololens1-clicker) drücken
+- Eine einzelne Schaltfläche auf einem [hololens-Clicker](/hololens/hololens1-clicker) drücken
 - Schaltfläche "A" auf einem Xbox Gamepad drücken
 - Schaltfläche "A" auf einem adaptiven Xbox-Controller drücken
 
@@ -295,4 +295,3 @@ Sie sollten die folgenden drei Aspekte berücksichtigen:
 * [Hände – Zeigen und Ausführen](point-and-commit.md)
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Spracheingabe](voice-input.md)
-

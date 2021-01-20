@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: Gemischte Realität, Blick, Blick auf die Ausrichtung, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Ziel, Fokus, Glättung
-ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009450"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582282"
 ---
 # <a name="head-gaze-and-commit"></a>Anvisieren mit dem Kopf und Ausführen
 
@@ -28,7 +28,7 @@ Der _Kopf-und Commit-_ Vorgang ist ein Sonderfall des "Blick"- [und](gaze-and-co
     </colgroup>
     <tr>
         <td><strong>Eingabemodell</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -89,7 +89,7 @@ Dieser Mechanismus kann sich als allgemeinere Version der nächstgelegenen Verkn
 
 Wenn Sie bestimmen, welche interaktiven Elemente in der Nähe bereitgestellt werden sollen, wird der Fokus auf festgelegt, und der Fokus ist für das Element, das derzeit fokussiert ist. Dies trägt dazu bei, das Verhalten von erratischen Fokus Wechselverhalten zu verringern, wenn Sie in einem Mittelpunkt zwischen zwei Elementen mit natürlichem Rauschen schweben
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Augenbasierte Interaktion](eye-gaze-interaction.md)
 * [Anvisieren und Verweilen](gaze-and-dwell.md)
@@ -98,6 +98,3 @@ Wenn Sie bestimmen, welche interaktiven Elemente in der Nähe bereitgestellt wer
 * [Hände – Zeigen und Ausführen](point-and-commit.md)
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Spracheingabe](voice-input.md)
-
-
-

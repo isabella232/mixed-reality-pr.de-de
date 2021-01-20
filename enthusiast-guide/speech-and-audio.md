@@ -3,12 +3,12 @@ title: FAQ zu Sprache und audiofragen
 description: Sprach-und Audioinformationen zu Windows Mixed Reality Problembehandlung, die über die standardmäßige Kundensupport Dokumentation hinausgeht.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Audioprobleme, Sprachprobleme
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725891"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581409"
 ---
 # <a name="speech-and-audio-faqs"></a>FAQ zu Sprache und audiofragen
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725891"
 
 * Einige apps, wie solche, die über steamvr gestartet werden, können Audiodaten verlieren, wenn sich das Audiogerät ändert, wenn Sie das Mixed Reality-Portal starten oder beenden. Um dies zu beheben, öffnen Sie das Mixed Reality-Portal, und starten Sie die APP neu.
 * Wenn ein anderes Multimedia-USB-Gerät (z. b. eine Web-Cam) denselben internen oder externen USB-Hub mit dem Windows Mixed Reality-Headset nutzt, kann der Headset-AudioJack oder die Kopfhörer gelegentlich einen rauschenden Sound oder überhaupt keine Audiodaten aufweisen. Binden Sie Ihr Headset an einen USB-Anschluss, der einen anderen Hub verwendet, oder trennen bzw. deaktivieren Sie Ihr anderes USB-Multimediagerät.
-* Wenn Sie eine laute Rausch Blase von ihren verbundenen Hand Hörern bemerken, kann der USB-Hub des PCs möglicherweise nicht genügend Stromversorgung für das Windows Mixed Reality-Headset bereitstellen. Wenn dies auftritt, melden Sie einen [Feedback-Hub](https://docs.microsoft.com/hololens/hololens-feedback) -Bug, und versuchen Sie Folgendes:
+* Wenn Sie eine laute Rausch Blase von ihren verbundenen Hand Hörern bemerken, kann der USB-Hub des PCs möglicherweise nicht genügend Stromversorgung für das Windows Mixed Reality-Headset bereitstellen. Wenn dies auftritt, melden Sie einen [Feedback-Hub](/hololens/hololens-feedback) -Bug, und versuchen Sie Folgendes:
     * Entfernen von Erweiterungs Kabeln
     * Verwenden eines dedizierten, externen USB 3,0-Hubs
     * einen anderen USB-Anschluss auf dem PC

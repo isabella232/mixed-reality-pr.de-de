@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010040"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580817"
 ---
 # <a name="the-making-of-kippys-escape"></a>Das Erstellen von Kippy-Escapezeichen
 
@@ -22,7 +22,7 @@ Kippy der Roboter wird reaktiviert, um sich auf einer Insel zu finden. Es liegt 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass Sie **Unreal Engine 4,25 oder** höher verwenden, wenn Sie Kippy-Escapezeichen aus dem GitHub-Repository erstellen.
 
-Die Escapezeichen-Escapesequenz ist eine Open Source-Beispiel-App mit [hololens 2](https://docs.microsoft.com/hololens/hololens2-hardware) für Unreal Engine 4 und [Mixed Reality UX Tools für Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In diesem Beitrag wird der Prozess von den ersten Prinzipien und dem visuellen Entwurf bis hin zur Implementierung und Optimierung der-Funktion erläutert. Weitere Informationen zum entwickeln gemischter Reality-Anwendungen mit mrtk-UX-Tools finden Sie in der [Übersicht über die Unreal-Entwicklung](unreal-development-overview.md).
+Die Escapezeichen-Escapesequenz ist eine Open Source-Beispiel-App mit [hololens 2](/hololens/hololens2-hardware) für Unreal Engine 4 und [Mixed Reality UX Tools für Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal). In diesem Beitrag wird der Prozess von den ersten Prinzipien und dem visuellen Entwurf bis hin zur Implementierung und Optimierung der-Funktion erläutert. Weitere Informationen zum entwickeln gemischter Reality-Anwendungen mit mrtk-UX-Tools finden Sie in der [Übersicht über die Unreal-Entwicklung](unreal-development-overview.md).
 
 ## <a name="first-principles"></a>Erste Prinzipien 
 
@@ -115,4 +115,4 @@ Starten Sie die hololens 2, und laden Sie die APP aus dem Microsoft Store [herun
 </tr>
 </table>
 
-Vielen Dank an unsere Freunde bei [Framestore](https://www.framestore.com/) , um uns dabei zu unterstützen, das Escapezeichen in den Leben zu bringen. Von der Zeichen Entwicklung bis hin zum Asset-Design und zur Spielprogrammierung war die Zusammenarbeit mit diesem Projekt entscheidend.  
+Vielen Dank an unsere Freunde bei [Framestore](https://www.framestore.com/) , um uns dabei zu unterstützen, das Escapezeichen in den Leben zu bringen. Von der Zeichen Entwicklung bis hin zum Asset-Design und zur Spielprogrammierung war die Zusammenarbeit mit diesem Projekt entscheidend.

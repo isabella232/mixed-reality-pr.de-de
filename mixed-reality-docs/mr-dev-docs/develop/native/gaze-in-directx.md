@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Augenblick, Kopf-und Haupt Nachverfolgung, Augen Verfolgung, DirectX, Input, holograms, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 551fbf10a4a2e3028ce08bcfa80b92ef38bdf23f
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009550"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580958"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>Eingaben in den Kopf-und Augenblick in DirectX
 
@@ -24,7 +24,7 @@ Der **Kopf** zeilig stellt die Richtung dar, in der die Kopfzeile des Benutzers 
 
 Der Augen **Blick** stellt die Richtung dar, in der die Augen des Benutzers suchen. Der Ursprung befindet sich zwischen den Augen des Benutzers.  Es ist auf Geräten mit gemischter Realität verfügbar, die ein Augen Verfolgungssystem enthalten.
 
-Mit der  [spatialpointerpose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) -API ist sowohl der Kopf-als auch der Augenblick-Strahlen zugänglich. Nennen Sie [spatialpointerpose:: trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) , um ein neues spatialpointerpose-Objekt am angegebenen Zeitstempel und [Koordinatensystem](coordinate-systems-in-directx.md)zu empfangen. Diese spatialpointerpose enthält den Ursprung und die Richtung des Haupt Blicks. Sie enthält außerdem einen Blick auf den Ursprung und die Richtung des Augenblicks, wenn die Augen Verfolgung verfügbar ist.
+Mit der  [spatialpointerpose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) -API ist sowohl der Kopf-als auch der Augenblick-Strahlen zugänglich. Nennen Sie [spatialpointerpose:: trygetattimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) , um ein neues spatialpointerpose-Objekt am angegebenen Zeitstempel und [Koordinatensystem](coordinate-systems-in-directx.md)zu empfangen. Diese spatialpointerpose enthält den Ursprung und die Richtung des Haupt Blicks. Sie enthält außerdem einen Blick auf den Ursprung und die Richtung des Augenblicks, wenn die Augen Verfolgung verfügbar ist.
 
 ### <a name="device-support"></a>Geräteunterstützung
 
@@ -37,7 +37,7 @@ Mit der  [spatialpointerpose](https://docs.microsoft.com//uwp/api/Windows.UI.Inp
 </colgroup>
 <tr>
      <td><strong>Feature</strong></td>
-     <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
 </tr>
@@ -57,9 +57,9 @@ Mit der  [spatialpointerpose](https://docs.microsoft.com//uwp/api/Windows.UI.Inp
 
 ## <a name="using-head-gaze"></a>Verwenden des Haupt Blicks
 
-Um auf den Kopf Blick zuzugreifen, rufen Sie zunächst  [spatialpointerpose:: trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) auf, um ein neues spatialpointerpose-Objekt zu erhalten. Übergeben Sie die folgenden Parameter.
- - Ein [spatialcoordinatesystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) , das das Koordinatensystem darstellt, das für den Head-Blick bestimmt werden soll. Dies wird von der *CoordinateSystem* -Variablen im folgenden Code dargestellt. Weitere Informationen finden Sie im Entwicklerhandbuch zu [Koordinatensystemen](coordinate-systems-in-directx.md) .
- - Ein [Zeitstempel](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) , der die genaue Uhrzeit der angeforderten Kopfzeile darstellt.  In der Regel verwenden Sie einen Zeitstempel, der der Uhrzeit entspricht, zu der der aktuelle Frame angezeigt wird. Sie können diesen vorhergesagten Anzeigezeit Stempel von einem  [holographicframevorhersage](https://docs.microsoft.com//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) -Objekt erhalten, das über den aktuellen [holographicframe](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe)zugänglich ist.  Dieses holographicframevorhersage-Objekt wird durch die *Vorhersage* Variable im folgenden Code dargestellt.
+Um auf den Kopf Blick zuzugreifen, rufen Sie zunächst  [spatialpointerpose:: trygetattimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) auf, um ein neues spatialpointerpose-Objekt zu erhalten. Übergeben Sie die folgenden Parameter.
+ - Ein [spatialcoordinatesystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) , das das Koordinatensystem darstellt, das für den Head-Blick bestimmt werden soll. Dies wird von der *CoordinateSystem* -Variablen im folgenden Code dargestellt. Weitere Informationen finden Sie im Entwicklerhandbuch zu [Koordinatensystemen](coordinate-systems-in-directx.md) .
+ - Ein [Zeitstempel](//uwp/api/windows.graphics.holographic.holographicframeprediction.timestamp#Windows_Graphics_Holographic_HolographicFramePrediction_Timestamp) , der die genaue Uhrzeit der angeforderten Kopfzeile darstellt.  In der Regel verwenden Sie einen Zeitstempel, der der Uhrzeit entspricht, zu der der aktuelle Frame angezeigt wird. Sie können diesen vorhergesagten Anzeigezeit Stempel von einem  [holographicframevorhersage](//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction) -Objekt erhalten, das über den aktuellen [holographicframe](//uwp/api/windows.graphics.holographic.holographicframe)zugänglich ist.  Dieses holographicframevorhersage-Objekt wird durch die *Vorhersage* Variable im folgenden Code dargestellt.
 
  Sobald Sie über eine gültige spatialpointerpose verfügen, sind die Kopf-und Vorwärtsrichtung als Eigenschaften zugänglich.  Der folgende Code zeigt, wie Sie darauf zugreifen können.
 
@@ -79,14 +79,14 @@ if (pointerPose)
 
 ## <a name="using-eye-gaze"></a>Verwenden des Augenblicks
 
-Damit Ihre Benutzer die Augenblick Eingaben verwenden können, muss jeder Benutzer bei der erstmaligen Verwendung des Geräts eine [Augen nach Verfolgungs Benutzer-Kalibrierung](../../calibration.md) durchlaufen. Die Eye-Eye-API ähnelt der Kopfzeile.
-Dabei wird dieselbe [spatialpointerpose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) -API verwendet, die einen Strahl Ursprung und eine Richtung bereitstellt, die Sie für Ihre Szene bereitstellen können.  Der einzige Unterschied besteht darin, dass Sie die Eye-Überwachung vor der Verwendung explizit aktivieren müssen:
+Damit Ihre Benutzer die Augenblick Eingaben verwenden können, muss jeder Benutzer bei der erstmaligen Verwendung des Geräts eine [Augen nach Verfolgungs Benutzer-Kalibrierung](/hololens/hololens-calibration) durchlaufen. Die Eye-Eye-API ähnelt der Kopfzeile.
+Dabei wird dieselbe [spatialpointerpose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) -API verwendet, die einen Strahl Ursprung und eine Richtung bereitstellt, die Sie für Ihre Szene bereitstellen können.  Der einzige Unterschied besteht darin, dass Sie die Eye-Überwachung vor der Verwendung explizit aktivieren müssen:
 1. Fordern Sie die Benutzer Berechtigung zum Verwenden der Augen Verfolgung in Ihrer APP an.
 2. Aktivieren Sie die Funktion "Blick auf Eingaben" in Ihrem Paket Manifest.
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>Anfordern des Zugriffs auf die Eingabe des Augenblicks
 
-Wenn Ihre APP gestartet wird, können Sie [eyespose:: requestaccessasync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) aufrufen, um den Zugriff auf die Eye-Nachverfolgung anzufordern. Das System fordert den Benutzer bei Bedarf auf und gibt " [gazeinputaccessstatus:: Allowed](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) " zurück, nachdem der Zugriff gewährt wurde. Dabei handelt es sich um einen asynchronen-Befehl, der eine gewisse zusätzliche Verwaltung erfordert. Im folgenden Beispiel wird ein getrennter Std:: Thread aufgerufen, um auf das Ergebnis zu warten, das in einer Element Variablen mit dem Namen *m_isEyeTrackingEnabled* gespeichert wird.
+Wenn Ihre APP gestartet wird, können Sie [eyespose:: requestaccessasync](//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) aufrufen, um den Zugriff auf die Eye-Nachverfolgung anzufordern. Das System fordert den Benutzer bei Bedarf auf und gibt " [gazeinputaccessstatus:: Allowed](//uwp/api/windows.ui.input.gazeinputaccessstatus) " zurück, nachdem der Zugriff gewährt wurde. Dabei handelt es sich um einen asynchronen-Befehl, der eine gewisse zusätzliche Verwaltung erfordert. Im folgenden Beispiel wird ein getrennter Std:: Thread aufgerufen, um auf das Ergebnis zu warten, das in einer Element Variablen mit dem Namen *m_isEyeTrackingEnabled* gespeichert wird.
 
 ```cpp
 using namespace winrt::Windows::Perception::People;
@@ -105,7 +105,7 @@ std::thread requestAccessThread([this]()
 requestAccessThread.detach();
 
 ```
-Das Starten eines getrennten Threads ist nur eine Option für die Behandlung von asynchronen Aufrufen. Sie können auch die neuen [co_await](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/concurrency) Funktionen verwenden, die von C++ unterstützt werden/WinRT.
+Das Starten eines getrennten Threads ist nur eine Option für die Behandlung von asynchronen Aufrufen. Sie können auch die neuen [co_await](//windows/uwp/cpp-and-winrt-apis/concurrency) Funktionen verwenden, die von C++ unterstützt werden/WinRT.
 Im folgenden finden Sie ein weiteres Beispiel für das Anfordern von Benutzerberechtigungen:
 -   Mit eyespose:: IsSupported () kann die Anwendung das Berechtigungs Dialogfeld nur aufrufen, wenn ein Eye Tracker vorhanden ist.
 -   Gazinput Access Status-m_gazeInputAccessStatus; Dadurch wird verhindert, dass die Berechtigungs Aufforderung immer wieder nach oben und wiederholt wird.
@@ -150,7 +150,7 @@ Dadurch werden dem *Paket* Abschnitt in der appxmanifest-Datei die folgenden Zei
 ### <a name="getting-the-eye-gaze-ray"></a>Der Augenblick Strahl
 
 Nachdem Sie den Zugriff auf das et erhalten haben, können Sie den Augenblick Strahl jeden Frame abrufen.
-Rufen Sie wie bei der Kopf Zeitangabe die [spatialpointerpose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) durch Aufrufen von [spatialpointerpose:: trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) mit einem gewünschten Zeitstempel und Koordinatensystem ab. Spatialpointerpose enthält ein [eyespose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose) -Objekt über die [Augen](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) Eigenschaft. Dieser Wert ist nur ungleich NULL, wenn die Eye-Nachverfolgung aktiviert ist. Von dort aus können Sie überprüfen, ob der Benutzer auf dem Gerät über eine Eye Tracking-Kalibrierung verfügt, indem Sie [eyespose:: iscalibrationvalid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)aufrufen.  Verwenden Sie als nächstes die Eigenschaft " [Blick](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) ", um das [spatialray](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) mit der Position und Richtung des Augenblicks zu erhalten. Die Eigenschaft "Blick" kann in manchen Fällen NULL sein. Achten Sie daher darauf, dies zu überprüfen. Dies kann vorkommen, wenn ein Benutzer mit einem kalibrierten Benutzer die Augen vorübergehend schließt.
+Rufen Sie wie bei der Kopf Zeitangabe die [spatialpointerpose](//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) durch Aufrufen von [spatialpointerpose:: trygetattimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) mit einem gewünschten Zeitstempel und Koordinatensystem ab. Spatialpointerpose enthält ein [eyespose](//uwp/api/windows.perception.people.eyespose) -Objekt über die [Augen](//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes) Eigenschaft. Dieser Wert ist nur ungleich NULL, wenn die Eye-Nachverfolgung aktiviert ist. Von dort aus können Sie überprüfen, ob der Benutzer auf dem Gerät über eine Eye Tracking-Kalibrierung verfügt, indem Sie [eyespose:: iscalibrationvalid](//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)aufrufen.  Verwenden Sie als nächstes die Eigenschaft " [Blick](//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) ", um das [spatialray](//uwp/api/windows.perception.spatial.spatialray) mit der Position und Richtung des Augenblicks zu erhalten. Die Eigenschaft "Blick" kann in manchen Fällen NULL sein. Achten Sie daher darauf, dies zu überprüfen. Dies kann vorkommen, wenn ein Benutzer mit einem kalibrierten Benutzer die Augen vorübergehend schließt.
 
 Der folgende Code zeigt, wie Sie auf den Augenblick-Strahl zugreifen können.
 
@@ -187,11 +187,11 @@ Es gibt verschiedene Gründe dafür, dass Daten nicht verfügbar sind:
 
 Einige der APIs wurden bereits in diesem Dokument erwähnt. im folgenden finden Sie eine Übersicht darüber, wie Sie erkennen können, dass die Augen Verfolgung als Kurzübersicht verfügbar ist: 
 
-* Überprüfen Sie, ob das System die Augen Verfolgung unterstützt. Wenden Sie die folgende *Methode* an: [Windows. perception. People. eyespose. IsSupported ()](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* Überprüfen Sie, ob das System die Augen Verfolgung unterstützt. Wenden Sie die folgende *Methode* an: [Windows. perception. People. eyespose. IsSupported ()](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* Überprüfen Sie, ob der Benutzer auf eine Kalibrierung fest. Folgende *Eigenschaft* aufzurufen: [Windows. perception. People. eyespose. iscalibrationvalid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid) 
+* Überprüfen Sie, ob der Benutzer auf eine Kalibrierung fest. Folgende *Eigenschaft* aufzurufen: [Windows. perception. People. eyespose. iscalibrationvalid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
 
-* Überprüfen Sie, ob der Benutzer Ihre APP berechtigt hat, ihre Überwachungsdaten zu verwenden: Rufen Sie den aktuellen _"gazeinputaccessstatus"_ ab. Ein Beispiel hierfür finden Sie unter [anfordern des Zugriffs auf die Eingabe](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input).   
+* Überprüfen Sie, ob der Benutzer Ihre APP berechtigt hat, ihre Überwachungsdaten zu verwenden: Rufen Sie den aktuellen _"gazeinputaccessstatus"_ ab. Ein Beispiel hierfür finden Sie unter [anfordern des Zugriffs auf die Eingabe](/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input). 
 
 Sie können auch überprüfen, ob Ihre Eye-Überwachungsdaten nicht veraltet sind, indem Sie ein Timeout zwischen empfangenen Datenaktualisierungen für die Augen Verfolgung hinzufügen und andernfalls auf den Haupt Blick zurückgreifen, wie unten erläutert.   
 Weitere Informationen finden Sie in unseren [Fall Back Entwurfs Überlegungen](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) .
@@ -200,15 +200,15 @@ Weitere Informationen finden Sie in unseren [Fall Back Entwurfs Überlegungen](.
 
 ## <a name="correlating-gaze-with-other-inputs"></a>Korrelieren von Blick mit anderen Eingaben
 
-Manchmal stellen Sie möglicherweise fest, dass Sie eine [spatialpointerpose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) benötigen, die einem Ereignis in der Vergangenheit entspricht. Wenn der Benutzer z. b. eine lufttap-Aktion durchführt, möchte Ihre APP möglicherweise wissen, was Sie sich angeschaut haben. Zu diesem Zweck wäre die einfache Verwendung von [spatialpointerpose:: trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) mit der vorhergesagten Frame Zeit aufgrund der Latenz zwischen der System Eingabe Verarbeitung und der Anzeigezeit ungenau. Wenn Sie den Augenblick für das Ziel verwenden, werden die Augen auch vor dem Beenden einer Commit-Aktion weiter bewegt. Dabei handelt es sich weniger um ein Problem bei einer einfachen Luft tippen, aber es wird wichtiger, wenn Sie lange Sprachbefehle mit fast-Eye-Bewegungen kombinieren. Eine Möglichkeit zur Behandlung dieses Szenarios besteht darin, einen zusätzlichen aufzurufenden  [spatialpointerpose:: trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)mithilfe eines historischen Zeitstempels zu erstellen, der dem Eingabe Ereignis entspricht.  
+Manchmal stellen Sie möglicherweise fest, dass Sie eine [spatialpointerpose](//uwp/api/windows.ui.input.spatial.spatialpointerpose) benötigen, die einem Ereignis in der Vergangenheit entspricht. Wenn der Benutzer z. b. eine lufttap-Aktion durchführt, möchte Ihre APP möglicherweise wissen, was Sie sich angeschaut haben. Zu diesem Zweck wäre die einfache Verwendung von [spatialpointerpose:: trygetattimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) mit der vorhergesagten Frame Zeit aufgrund der Latenz zwischen der System Eingabe Verarbeitung und der Anzeigezeit ungenau. Wenn Sie den Augenblick für das Ziel verwenden, werden die Augen auch vor dem Beenden einer Commit-Aktion weiter bewegt. Dabei handelt es sich weniger um ein Problem bei einer einfachen Luft tippen, aber es wird wichtiger, wenn Sie lange Sprachbefehle mit fast-Eye-Bewegungen kombinieren. Eine Möglichkeit zur Behandlung dieses Szenarios besteht darin, einen zusätzlichen aufzurufenden  [spatialpointerpose:: trygetattimestamp](//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)mithilfe eines historischen Zeitstempels zu erstellen, der dem Eingabe Ereignis entspricht.  
 
-Bei Eingaben, die den spatialinteraktionmanager weiterleiten, gibt es jedoch eine einfachere Methode. Der [spatialinteraktionsourcestate](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) verfügt über eine eigene [trygetattimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) -Funktion. Der Aufruf von, der eine perfekt korrelierte [spatialpointerpose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) ohne den "Guess work" bereitstellt. Weitere Informationen zum Arbeiten mit spatialinteraktionsourcestates finden Sie [in den Hand-und Bewegungs Controllern in der DirectX-](hands-and-motion-controllers-in-directx.md) Dokumentation.
+Bei Eingaben, die den spatialinteraktionmanager weiterleiten, gibt es jedoch eine einfachere Methode. Der [spatialinteraktionsourcestate](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) verfügt über eine eigene [trygetattimestamp](//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) -Funktion. Der Aufruf von, der eine perfekt korrelierte [spatialpointerpose](//uwp/api/windows.ui.input.spatial.spatialpointerpose) ohne den "Guess work" bereitstellt. Weitere Informationen zum Arbeiten mit spatialinteraktionsourcestates finden Sie [in den Hand-und Bewegungs Controllern in der DirectX-](hands-and-motion-controllers-in-directx.md) Dokumentation.
 
 <br>
 
 ## <a name="calibration"></a>Kalibrierung
 
-Damit die Eye-Nachverfolgung ordnungsgemäß funktioniert, muss jeder Benutzer über eine [Eye Tracking-benutzerkalibrierung](../../calibration.md)verfügen. Dies ermöglicht es dem Gerät, das System für eine komfortablere und qualitativ hochwertige Anzeige für den Benutzer anzupassen und gleichzeitig eine genaue Eye-Nachverfolgung sicherzustellen. Entwickler müssen nichts auf Ihrem Ende durchführen, um die benutzerkalibrierung zu verwalten. Das System stellt sicher, dass der Benutzer in den folgenden Situationen aufgefordert wird, das Gerät zu kalibrieren:
+Damit die Eye-Nachverfolgung ordnungsgemäß funktioniert, muss jeder Benutzer über eine [Eye Tracking-benutzerkalibrierung](/hololens/hololens-calibration)verfügen. Dies ermöglicht es dem Gerät, das System für eine komfortablere und qualitativ hochwertige Anzeige für den Benutzer anzupassen und gleichzeitig eine genaue Eye-Nachverfolgung sicherzustellen. Entwickler müssen nichts auf Ihrem Ende durchführen, um die benutzerkalibrierung zu verwalten. Das System stellt sicher, dass der Benutzer in den folgenden Situationen aufgefordert wird, das Gerät zu kalibrieren:
 * Der Benutzer verwendet das Gerät zum ersten Mal.
 * Der Benutzer hat sich zuvor für den Kalibrierungsprozess entschieden.
 * Der Kalibrierungsprozess war nicht erfolgreich, als der Benutzer das Gerät zum letzten Mal verwendet hat.
@@ -217,9 +217,9 @@ Entwickler sollten sicherstellen, dass Sie angemessene Unterstützung für Benut
 
 <br>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-* [Kalibrierung](../../calibration.md)
+* [Kalibrierung](/hololens/hololens-calibration)
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)
 * [Blick auf hololens 2](../../design/eye-tracking.md)
 * [Überblicks-und Commit-Eingabe Modell](../../design/gaze-and-commit.md)

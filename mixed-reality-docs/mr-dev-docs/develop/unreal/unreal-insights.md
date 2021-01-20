@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Development, profling, Unreal Insights, Dokumentation, Guides, Features, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486378"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580838"
 ---
 # <a name="profiling-with-unreal-insights"></a>Profilerstellung mit Unreal Insights 
 

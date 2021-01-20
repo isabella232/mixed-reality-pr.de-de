@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Shell, Betriebssystem, Plattform, Klippe, Haus, zuhause, Umgebung, Start, Startmenü, Startmenü, Pins, APP, starten von apps, platzieren von apps, teleportieren, verschieben, navigieren, Mixed Reality-Headset, Virtual Reality-Headset, Virtual Reality
-ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009690"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582636"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Navigieren auf der Startseite von Windows Mixed Reality
 
@@ -28,7 +28,7 @@ Das Startmenü besteht aus folgendem:
 * Cortana (auf immersiven Headsets, eine Start Kachel, auf hololens oben im Startmenü)
 * Fixierte apps
 * Schaltfläche "alle apps" (Pluszeichen)
-* Foto-und Video Schaltflächen für die [gemischte Erfassung](../mixed-reality-capture.md)
+* Foto-und Video Schaltflächen für die [gemischte Erfassung](/hololens/holographic-photos-and-videos)
 
 Wechseln Sie zwischen den Ansichten angeheftete apps und alle apps, indem Sie die Schaltflächen Plus oder minus auswählen. Um das Startmenü auf hololens zu öffnen, verwenden Sie die aufblütebewegung. Drücken Sie auf einem immersiven Headset die Windows-Taste auf dem Controller.
 
@@ -40,7 +40,7 @@ Um die APP auszuführen, müssen Sie Sie in ihrer eigenen Homepage platzieren:
 1. Verwenden Sie Ihren [Blick](../design/gaze-and-commit.md) oder Controller, um die APP zu positionieren, wo Sie Sie möchten. Sie wird automatisch (in Größe und Position) angepasst, damit Sie dem Platz entspricht, in dem Sie Sie platzieren.
 2. Platzieren Sie die App mithilfe von Air-Tap (hololens) oder der Schaltfläche auswählen (immersives Headsets). Wenn Sie das Startmenü abbrechen und wieder zurückkehren möchten, verwenden Sie die Schaltfläche mit den aufblühen oder Windows.
 
-[2D-apps](../develop/porting-apps/building-2d-apps.md), die für Desktop, Mobile oder Xbox erstellt wurden, können so geändert werden, dass Sie mit der [holographicspace-API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)als immersive gemischte Realität-apps ausgeführt werden. Eine immersive App bringt den Benutzer aus der Startseite und in eine immersive Darstellung. Benutzer können die Startseite mit der Blüten Bewegung (hololens) oder durch Drücken der Windows-Taste auf Ihrem Controller (immersive Headsets) zurückgeben.
+[2D-apps](../develop/porting-apps/building-2d-apps.md), die für Desktop, Mobile oder Xbox erstellt wurden, können so geändert werden, dass Sie mit der [holographicspace-API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)als immersive gemischte Realität-apps ausgeführt werden. Eine immersive App bringt den Benutzer aus der Startseite und in eine immersive Darstellung. Benutzer können die Startseite mit der Blüten Bewegung (hololens) oder durch Drücken der Windows-Taste auf Ihrem Controller (immersive Headsets) zurückgeben.
 
 Apps können auch über eine APP-zu-app-API oder über Cortana gestartet werden.
 
@@ -122,7 +122,7 @@ Sie können auch Sprachbefehle verwenden, um zu Hause zu gelangen. Zeigen Sie z.
 Windows Mixed Reality verfügt über mehrere integrierte apps, wie z. b.:
 * **Microsoft Store** zum erhalten von apps und spielen
 * **Feedback-Hub** zum Übermitteln von Feedback über die System-und System-apps
-* **Einstellungen** zum Konfigurieren von Systemeinstellungen ([einschließlich Netzwerk](../connecting-to-wi-fi-on-hololens.md) -und Systemupdates)
+* **Einstellungen** zum Konfigurieren von Systemeinstellungen ([einschließlich Netzwerk](/hololens/hololens-network) -und Systemupdates)
 * **Microsoft Edge** zum Durchsuchen von Websites
 * **Fotos** zum Anzeigen und Freigeben von Fotos und Videos
 * **Kalibrierung** (nur hololens) zum Anpassen der hololens-Darstellung an den aktuellen Benutzer
@@ -134,10 +134,10 @@ Windows Mixed Reality verfügt über mehrere integrierte apps, wie z. b.:
 * **Desktop** (immersive Headsets) zum Anzeigen Ihres Desktop Monitors in einem immersiven Headset
 * **Datei-Explorer** Zugreifen auf Dateien und Ordner, die sich auf Ihrem Gerät befinden
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 * [App-Ansichten](../design/app-views.md)
 * [Motion-Controller](../design/motion-controllers.md)
 * [Hardware-Zubehör](hardware-accessories.md)
-* [Umgebungsüberlegungen für HoloLens](../environment-considerations-for-hololens.md)
+* [Umgebungsüberlegungen für HoloLens](/hololens/hololens-environment-considerations)
 * [Implementieren von 3D-App-Launchern](../distribute/implementing-3d-app-launchers.md)
 * [Erstellen von 3D-Modellen für die Verwendung in der Windows Mixed Reality-Startseite](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

@@ -3,12 +3,12 @@ title: Verwenden von webvr mit gemischter Windows-Realität
 description: Erfahren Sie mehr über die Grundlagen von webvr, wie Sie diese mit Microsoft Edge auf Windows Mixed Reality-Headsets verwenden und häufige Probleme bei der Problembehandlung.
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, webvr, Edge, Microsoft Edge, Webbrowser
-ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 89d9e51bf4adb63e7836968a0112849f7ac403d0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009440"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581755"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>Verwenden von webvr mit gemischter Windows-Realität
 
@@ -35,7 +35,7 @@ Nein. Ein Windows Mixed Reality-Headset ist erforderlich, um webvr in Edge zu ve
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>Wo finde ich die webvr-Entwicklerdokumentation?
 
-Die Entwicklerdokumentation finden Sie hier: [webvr-Entwicklerdokumentation](https://docs.microsoft.com/microsoft-edge/webvr/).
+Die Entwicklerdokumentation finden Sie hier: [webvr-Entwicklerdokumentation](/microsoft-edge/webvr/).
 
 ## <a name="ive-found-a-website-with-webvr-that-doesnt-work-in-windows-mixed-reality-what-do-i-do"></a>Ich habe eine Website mit webvr gefunden, die in Windows Mixed Reality nicht funktioniert. Was soll ich tun
 
@@ -61,7 +61,7 @@ Um webvr-Inhalte auf einem Windows Mixed Reality-Headset (mit Hardware oder Simu
 5. Wenn Sie zum ersten Mal versuchen, VR in eine bestimmte Domäne einzugeben, fordert der Browser die Zustimmung zur Verwendung der immersiven Ansicht an, und wählen Sie ja: ![Benutzeroberfläche für Zustimmung, die beim ersten Versuch angezeigt wird, VR in eine bestimmte Domäne einzugeben](images/1053px-Webvr-consent-ui.png)
 6. Ihr Headset sollte mit dem Anzeigen der webvr-Inhalte beginnen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Problembehandlung > webvr](webvr-questions.md)
 * [Vorgehensweise beim Einstieg in Ihre erste webvr-Benutzer Darstellung](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

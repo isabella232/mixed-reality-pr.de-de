@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008630"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581815"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup
 
@@ -28,7 +28,7 @@ Probieren Sie die folgenden Schritte aus:
 * Starten Sie den PC neu, und versuchen Sie es erneut. Sie müssen möglicherweise mehrmals wiederholt werden oder die Windows Update Problembehandlung ausführen, um ausstehende Updates zu löschen.
 
 > [!NOTE]
-> * Wenn Sie sich in einem im Unternehmen verwalteten Netzwerk befinden, wenden Sie sich an Ihren Administrator. Möglicherweise müssen Sie Windows Mixed Reality aktivieren. Suchen Sie nach den Anweisungen für IT-Experten? Informationen finden Sie in **[diesem Artikel](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**.
+> * Wenn Sie sich in einem im Unternehmen verwalteten Netzwerk befinden, wenden Sie sich an Ihren Administrator. Möglicherweise müssen Sie Windows Mixed Reality aktivieren. Suchen Sie nach den Anweisungen für IT-Experten? Informationen finden Sie in **[diesem Artikel](/windows/application-management/manage-windows-mixed-reality)**.
 > * Wenn die Wi-Fi Netzwerkverbindung auf "getaktet" festgelegt ist, ändern Sie Sie in "nicht gemessen". **[Weitere Informationen](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>Ich erhalte eine Meldung, die besagt, dass etwas schief gelaufen ist, und wir konnten Windows Mixed Reality nicht starten.
@@ -126,7 +126,7 @@ Testen Sie Folgendes:
 
 Wenn Sie eine Wi-Fi Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Bewegungs Controller möglicherweise das WLAN. Führen Sie einen der folgenden Schritte aus:
 
-* Wechseln Sie ggf. zu einer Wi-Fi Verbindung mit 5 GHz. Erfahren Sie mehr
+* Wechseln Sie ggf. zu einer Wi-Fi Verbindung mit 5 GHz. Weitere Informationen
 * Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion-Controller mit Ihrem PC zu verbinden. [Empfohlene Adapter anzeigen](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 > [!NOTE]
@@ -158,7 +158,7 @@ Wenn dies nicht der Fall ist:
     3. Wenn Ihre Motion-Controller mit Ihrem PC gekoppelt sind, wählen Sie **Einstellungen > Geräte > Bluetooth & andere Geräte** aus, um Sie zu entkoppeln. Wählen Sie jeden Controller und dann "Gerät entfernen" aus. Wenn Ihre Controller mit Ihrem Headset gekoppelt sind, können Sie diesen Schritt überspringen.
     4. Anschließen Sie Ihr Headset wieder an Ihren PC, um Windows Mixed Reality neu zu installieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Die Community fragen](https://answers.microsoft.com)
 * [Kontaktieren Sie uns zur Unterstützung](https://support.microsoft.com/contactus/)

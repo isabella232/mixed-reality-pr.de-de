@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Handbücher, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010160"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581101"
 ---
 # <a name="hand-tracking-in-unreal"></a>Handtracking in Unreal
 
@@ -156,7 +156,7 @@ Das Abrufen von Hand stellen funktioniert für schließen-Interaktionen wie das 
 
 ## <a name="gestures"></a>Gesten
 
-Hololens 2 verfolgt räumliche Gesten, was bedeutet, dass Sie diese Gesten als Eingabe erfassen können. Die Gesten Verfolgung basiert auf einem Abonnement Modell. Verwenden Sie die Funktion "Gesten konfigurieren", um dem Gerät mitzuteilen, welche Gesten Sie nachverfolgen möchten.  Weitere Informationen zu Gesten finden Sie im Artikel zur [grundlegenden Verwendung von hololens 2](https://docs.microsoft.com/hololens/hololens2-basic-usage) .
+Hololens 2 verfolgt räumliche Gesten, was bedeutet, dass Sie diese Gesten als Eingabe erfassen können. Die Gesten Verfolgung basiert auf einem Abonnement Modell. Verwenden Sie die Funktion "Gesten konfigurieren", um dem Gerät mitzuteilen, welche Gesten Sie nachverfolgen möchten.  Weitere Informationen zu Gesten finden Sie im Artikel zur [grundlegenden Verwendung von hololens 2](/hololens/hololens2-basic-usage) .
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 
