@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, OpenXR
-ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009760"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247733"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
@@ -54,7 +54,7 @@ Das [Mixed Reality-Toolkit für Unreal](https://github.com/microsoft/MixedRealit
 > [!NOTE]
 > Weitere Informationen finden Sie im **[UX-Tools für Unreal GitHub](https://github.com/microsoft/MixedReality-UXTools-Unreal)** -Repository.
 
-### <a name="3-platform-capabilities-and-apis"></a>3. Plattformfunktionen und APIs
+### <a name="3-advanced-features"></a>3. Erweiterte Features
 
 Andere wichtige Features, die in Mixed Reality-Anwendungen eine Rolle spielen, sind ohne Zusatzpakete oder Setup verfügbar. Diese Features können Unreal-Projekten mit oder ohne installiertes MRTK hinzugefügt werden. Nachdem Sie sich mit diesen erweiterten Funktionen beschäftigt haben, werden Sie imstande sein, komplexere Mixed Reality-Apps zu erstellen.
 

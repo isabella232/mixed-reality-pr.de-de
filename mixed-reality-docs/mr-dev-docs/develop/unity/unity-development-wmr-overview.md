@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: ba63f137e90b68345f3e5bbb831aba6abd6fe538
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98040565"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226429"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Unity-Entwicklung für VR und Windows Mixed Reality
 
@@ -42,7 +42,7 @@ Nachdem Sie ein neues immersives Projekt begonnen haben, benötigen Sie einige G
 
 [!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
 
-### <a name="3-platform-capabilities-and-apis"></a>3. Plattformfunktionen und APIs
+### <a name="3-advanced-features"></a>3. Erweiterte Features
 
 Andere wichtige Features, die in immersiven Anwendungen eine Rolle spielen, sind über Unity-APIs ohne Zusatzpakete oder Setup verfügbar. Nachdem Sie sich mit den erweiterten Funktionen beschäftigt haben, die Unity bietet, werden Sie imstande sein, tiefere, komplexe VR-Apps zu erstellen.
 
