@@ -6,22 +6,22 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Keine
-ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
-ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
+ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97676133"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583169"
 ---
-# <a name="title-be-as-specific-as-possible-use-human-terms"></a><span data-ttu-id="b919f-105">Title (so spezifisch wie möglich, mit menschlichen Begriffen)</span><span class="sxs-lookup"><span data-stu-id="b919f-105">Title (be as specific as possible, use human terms)</span></span> 
+# <a name="title-be-as-specific-as-possible-use-human-terms"></a><span data-ttu-id="71ff3-105">Title (so spezifisch wie möglich, mit menschlichen Begriffen)</span><span class="sxs-lookup"><span data-stu-id="71ff3-105">Title (be as specific as possible, use human terms)</span></span> 
 
 ![Fügen Sie Hero Image ein.](images/image-hero-template.jpg)
 
-<span data-ttu-id="b919f-109">**Einführung: allgemeine Übersicht über das Thema.**</span><span class="sxs-lookup"><span data-stu-id="b919f-109">**Introduction - high-level overview of the topic.**</span></span> <span data-ttu-id="b919f-110">Modernipsum dolor sit amet Idealismus Neo-Minimalism, Pop Art Street Art Cubo-Futurism-Cobra, Realismus Expressionismus Academic Jugendstil.</span><span class="sxs-lookup"><span data-stu-id="b919f-110">Modernipsum dolor sit amet idealism neo-minimalism, pop art street art cubo-futurism cobra, realism expressionism academic jugendstil.</span></span> <span data-ttu-id="b919f-111">Romantik Cubism Video Game Art synchromism neoklassiziclassiismus International Gothic Barock, vorese Street Art suprematism Abstract Expressionismus.</span><span class="sxs-lookup"><span data-stu-id="b919f-111">Romanticism cubism video game art synchromism neoclassicism international gothic baroque, vorticism street art suprematism abstract expressionism.</span></span> 
+<span data-ttu-id="71ff3-109">**Einführung: allgemeine Übersicht über das Thema.**</span><span class="sxs-lookup"><span data-stu-id="71ff3-109">**Introduction - high-level overview of the topic.**</span></span> <span data-ttu-id="71ff3-110">Modernipsum dolor sit amet Idealismus Neo-Minimalism, Pop Art Street Art Cubo-Futurism-Cobra, Realismus Expressionismus Academic Jugendstil.</span><span class="sxs-lookup"><span data-stu-id="71ff3-110">Modernipsum dolor sit amet idealism neo-minimalism, pop art street art cubo-futurism cobra, realism expressionism academic jugendstil.</span></span> <span data-ttu-id="71ff3-111">Romantik Cubism Video Game Art synchromism neoklassiziclassiismus International Gothic Barock, vorese Street Art suprematism Abstract Expressionismus.</span><span class="sxs-lookup"><span data-stu-id="71ff3-111">Romanticism cubism video game art synchromism neoclassicism international gothic baroque, vorticism street art suprematism abstract expressionism.</span></span> 
 
 <br>
 
-## <a name="device-support"></a><span data-ttu-id="b919f-112">Geräteunterstützung</span><span class="sxs-lookup"><span data-stu-id="b919f-112">Device support</span></span>
+## <a name="device-support"></a><span data-ttu-id="71ff3-112">Geräteunterstützung</span><span class="sxs-lookup"><span data-stu-id="71ff3-112">Device support</span></span>
 
 <table>
 <colgroup>
@@ -31,16 +31,16 @@ ms.locfileid: "97676133"
     <col width="22%" />
 </colgroup>
 <tr>
-     <td><span data-ttu-id="b919f-113"><strong>Feature</strong></span><span class="sxs-lookup"><span data-stu-id="b919f-113"><strong>Feature</strong></span></span></td>
-     <td><span data-ttu-id="b919f-114"><a href="../hololens-hardware-details.md"><strong>HoloLens (1. Generation)</strong></a></span><span class="sxs-lookup"><span data-stu-id="b919f-114"><a href="../hololens-hardware-details.md"><strong>HoloLens (1st gen)</strong></a></span></span></td>
-     <td><span data-ttu-id="b919f-115"><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></span><span class="sxs-lookup"><span data-stu-id="b919f-115"><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></span></span></td>
-     <td><span data-ttu-id="b919f-116"><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></span><span class="sxs-lookup"><span data-stu-id="b919f-116"><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></span></span></td>
+     <td><span data-ttu-id="71ff3-113"><strong>Feature</strong></span><span class="sxs-lookup"><span data-stu-id="71ff3-113"><strong>Feature</strong></span></span></td>
+     <td><span data-ttu-id="71ff3-114"><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></span><span class="sxs-lookup"><span data-stu-id="71ff3-114"><a href="/hololens/hololens1-hardware"><strong>HoloLens (1st gen)</strong></a></span></span></td>
+     <td><span data-ttu-id="71ff3-115"><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></span><span class="sxs-lookup"><span data-stu-id="71ff3-115"><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></span></span></td>
+     <td><span data-ttu-id="71ff3-116"><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></span><span class="sxs-lookup"><span data-stu-id="71ff3-116"><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive headsets</strong></a></span></span></td>
 </tr>
 <tr>
-     <td><span data-ttu-id="b919f-117">Betreff oder Artikel Titel</span><span class="sxs-lookup"><span data-stu-id="b919f-117">Subject matter or article title</span></span></td>
-     <td><span data-ttu-id="b919f-118">❌ Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="b919f-118">❌ Not supported</span></span></td>
-     <td><span data-ttu-id="b919f-119">✔️ Empfohlen</span><span class="sxs-lookup"><span data-stu-id="b919f-119">✔️ Recommended</span></span></td>
-     <td><span data-ttu-id="b919f-120">✔️ Empfohlen</span><span class="sxs-lookup"><span data-stu-id="b919f-120">✔️ Recommended</span></span></td>
+     <td><span data-ttu-id="71ff3-117">Betreff oder Artikel Titel</span><span class="sxs-lookup"><span data-stu-id="71ff3-117">Subject matter or article title</span></span></td>
+     <td><span data-ttu-id="71ff3-118">❌ Nicht unterstützt</span><span class="sxs-lookup"><span data-stu-id="71ff3-118">❌ Not supported</span></span></td>
+     <td><span data-ttu-id="71ff3-119">✔️ Empfohlen</span><span class="sxs-lookup"><span data-stu-id="71ff3-119">✔️ Recommended</span></span></td>
+     <td><span data-ttu-id="71ff3-120">✔️ Empfohlen</span><span class="sxs-lookup"><span data-stu-id="71ff3-120">✔️ Recommended</span></span></td>
 </tr>
 </table>
 
@@ -48,42 +48,42 @@ ms.locfileid: "97676133"
 
 
 
-## <a name="section-1---2--3-columns"></a><span data-ttu-id="b919f-121">Abschnitt #1-2 & 3 Spalten</span><span class="sxs-lookup"><span data-stu-id="b919f-121">Section #1 - 2 & 3 columns</span></span>
+## <a name="section-1---2--3-columns"></a><span data-ttu-id="71ff3-121">Abschnitt #1-2 & 3 Spalten</span><span class="sxs-lookup"><span data-stu-id="71ff3-121">Section #1 - 2 & 3 columns</span></span>
 
-<span data-ttu-id="b919f-122">Ein Abschnitt kann eine beliebige oder alle der folgenden Zeichen enthalten:</span><span class="sxs-lookup"><span data-stu-id="b919f-122">A section can contain any or all of the following:</span></span>  
+<span data-ttu-id="71ff3-122">Ein Abschnitt kann eine beliebige oder alle der folgenden Zeichen enthalten:</span><span class="sxs-lookup"><span data-stu-id="71ff3-122">A section can contain any or all of the following:</span></span>  
 
-*   <span data-ttu-id="b919f-123">Erklärungen</span><span class="sxs-lookup"><span data-stu-id="b919f-123">Explanations</span></span>
-*   <span data-ttu-id="b919f-124">Überlegungen</span><span class="sxs-lookup"><span data-stu-id="b919f-124">Considerations</span></span>
-*   <span data-ttu-id="b919f-125">Faustregeln</span><span class="sxs-lookup"><span data-stu-id="b919f-125">Rules of thumb</span></span> 
-*   <span data-ttu-id="b919f-126">Verwendungsmethoden</span><span class="sxs-lookup"><span data-stu-id="b919f-126">Methods of use</span></span> 
-*   <span data-ttu-id="b919f-127">Vorteile</span><span class="sxs-lookup"><span data-stu-id="b919f-127">Benefits</span></span>
-*   <span data-ttu-id="b919f-128">Und es ist</span><span class="sxs-lookup"><span data-stu-id="b919f-128">Do’s and don’t’s</span></span>
+*   <span data-ttu-id="71ff3-123">Erklärungen</span><span class="sxs-lookup"><span data-stu-id="71ff3-123">Explanations</span></span>
+*   <span data-ttu-id="71ff3-124">Überlegungen</span><span class="sxs-lookup"><span data-stu-id="71ff3-124">Considerations</span></span>
+*   <span data-ttu-id="71ff3-125">Faustregeln</span><span class="sxs-lookup"><span data-stu-id="71ff3-125">Rules of thumb</span></span> 
+*   <span data-ttu-id="71ff3-126">Verwendungsmethoden</span><span class="sxs-lookup"><span data-stu-id="71ff3-126">Methods of use</span></span> 
+*   <span data-ttu-id="71ff3-127">Vorteile</span><span class="sxs-lookup"><span data-stu-id="71ff3-127">Benefits</span></span>
+*   <span data-ttu-id="71ff3-128">Und es ist</span><span class="sxs-lookup"><span data-stu-id="71ff3-128">Do’s and don’t’s</span></span>
 
-<span data-ttu-id="b919f-129">Redaktionelle Konventionen:</span><span class="sxs-lookup"><span data-stu-id="b919f-129">Editorial conventions:</span></span>
+<span data-ttu-id="71ff3-129">Redaktionelle Konventionen:</span><span class="sxs-lookup"><span data-stu-id="71ff3-129">Editorial conventions:</span></span>
 
-*   <span data-ttu-id="b919f-130">Verwenden Sie Common Sense.</span><span class="sxs-lookup"><span data-stu-id="b919f-130">Use common sense.</span></span>
-*   <span data-ttu-id="b919f-131">Versuchen Sie nicht, lustig zu sein.</span><span class="sxs-lookup"><span data-stu-id="b919f-131">Don't try to be funny.</span></span>
-*   <span data-ttu-id="b919f-132">Schreiben Sie mit der Rechtschreibung und den Konventionen von en-US (USA English).</span><span class="sxs-lookup"><span data-stu-id="b919f-132">Write using en-us (United States English) spelling and conventions.</span></span>
-*   <span data-ttu-id="b919f-133">**Verwenden Sie die Satz Schreibweise für Titel, Abschnittsüberschriften und... alles gut.**</span><span class="sxs-lookup"><span data-stu-id="b919f-133">**Use sentence casing for titles, section headings and... well everything.**</span></span> <span data-ttu-id="b919f-134">Innerhalb von Sätzen sind die einzigen Wörter, die groß geschrieben werden sollten, echte Nomen (genau wie Sie in der Grammatikschule gelernt haben).</span><span class="sxs-lookup"><span data-stu-id="b919f-134">Within sentences, the only words that should be capitalized are proper nouns (just as you learned in grammar school).</span></span> <span data-ttu-id="b919f-135">Markennamen (z. b. Microsoft hololens) sind richtige Nomen.</span><span class="sxs-lookup"><span data-stu-id="b919f-135">Brand names (e.g. Microsoft HoloLens) are proper nouns.</span></span> <span data-ttu-id="b919f-136">Funktionsnamen (z. b. räumliche Zuordnung) sind keine richtigen Nomen, es sei denn, Sie sind mit einem Gegenteiliges</span><span class="sxs-lookup"><span data-stu-id="b919f-136">Feature names (e.g. spatial mapping) are not proper nouns unless they are trademarked.</span></span>
-*   <span data-ttu-id="b919f-137">Schreiben Sie keine Verknüpfungen im Formular "Weitere Informationen finden Sie [hier](../contributing.md)."</span><span class="sxs-lookup"><span data-stu-id="b919f-137">Do not write links of the form, "For more information go [here](../contributing.md)."</span></span> <span data-ttu-id="b919f-138">Platzieren Sie [stattdessen Links,](../contributing.md) ohne den Reader an eine andere Stelle weiterleiten zu müssen.</span><span class="sxs-lookup"><span data-stu-id="b919f-138">Instead, place links [contextually](../contributing.md) without directing the reader to go somewhere else.</span></span>
-*   <span data-ttu-id="b919f-139">Diese Dokumentation ist die Quelle der Wahrheit.</span><span class="sxs-lookup"><span data-stu-id="b919f-139">This documentation is the source of truth.</span></span> <span data-ttu-id="b919f-140">Die Informationen müssen genau und aktuell sein.</span><span class="sxs-lookup"><span data-stu-id="b919f-140">Information must be accurate and current.</span></span>
+*   <span data-ttu-id="71ff3-130">Verwenden Sie Common Sense.</span><span class="sxs-lookup"><span data-stu-id="71ff3-130">Use common sense.</span></span>
+*   <span data-ttu-id="71ff3-131">Versuchen Sie nicht, lustig zu sein.</span><span class="sxs-lookup"><span data-stu-id="71ff3-131">Don't try to be funny.</span></span>
+*   <span data-ttu-id="71ff3-132">Schreiben Sie mit der Rechtschreibung und den Konventionen von en-US (USA English).</span><span class="sxs-lookup"><span data-stu-id="71ff3-132">Write using en-us (United States English) spelling and conventions.</span></span>
+*   <span data-ttu-id="71ff3-133">**Verwenden Sie die Satz Schreibweise für Titel, Abschnittsüberschriften und... alles gut.**</span><span class="sxs-lookup"><span data-stu-id="71ff3-133">**Use sentence casing for titles, section headings and... well everything.**</span></span> <span data-ttu-id="71ff3-134">Innerhalb von Sätzen sind die einzigen Wörter, die groß geschrieben werden sollten, echte Nomen (genau wie Sie in der Grammatikschule gelernt haben).</span><span class="sxs-lookup"><span data-stu-id="71ff3-134">Within sentences, the only words that should be capitalized are proper nouns (just as you learned in grammar school).</span></span> <span data-ttu-id="71ff3-135">Markennamen (z. b. Microsoft hololens) sind richtige Nomen.</span><span class="sxs-lookup"><span data-stu-id="71ff3-135">Brand names (e.g. Microsoft HoloLens) are proper nouns.</span></span> <span data-ttu-id="71ff3-136">Funktionsnamen (z. b. räumliche Zuordnung) sind keine richtigen Nomen, es sei denn, Sie sind mit einem Gegenteiliges</span><span class="sxs-lookup"><span data-stu-id="71ff3-136">Feature names (e.g. spatial mapping) are not proper nouns unless they are trademarked.</span></span>
+*   <span data-ttu-id="71ff3-137">Schreiben Sie keine Verknüpfungen im Formular "Weitere Informationen finden Sie [hier](../contributing.md)."</span><span class="sxs-lookup"><span data-stu-id="71ff3-137">Do not write links of the form, "For more information go [here](../contributing.md)."</span></span> <span data-ttu-id="71ff3-138">Platzieren Sie [stattdessen Links,](../contributing.md) ohne den Reader an eine andere Stelle weiterleiten zu müssen.</span><span class="sxs-lookup"><span data-stu-id="71ff3-138">Instead, place links [contextually](../contributing.md) without directing the reader to go somewhere else.</span></span>
+*   <span data-ttu-id="71ff3-139">Diese Dokumentation ist die Quelle der Wahrheit.</span><span class="sxs-lookup"><span data-stu-id="71ff3-139">This documentation is the source of truth.</span></span> <span data-ttu-id="71ff3-140">Die Informationen müssen genau und aktuell sein.</span><span class="sxs-lookup"><span data-stu-id="71ff3-140">Information must be accurate and current.</span></span>
 
 <br>
 
 ---
 
-### <a name="2-columns"></a><span data-ttu-id="b919f-141">2 Spalten</span><span class="sxs-lookup"><span data-stu-id="b919f-141">2 columns</span></span>
+### <a name="2-columns"></a><span data-ttu-id="71ff3-141">2 Spalten</span><span class="sxs-lookup"><span data-stu-id="71ff3-141">2 columns</span></span>
 
 :::row:::
     :::column:::
-        <span data-ttu-id="b919f-142">![Beschreibung der hier aufgeführten Bilder.](images/image-466x466px-2-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-142">![Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)</span></span><br>
-        <span data-ttu-id="b919f-143">**Bild #1 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-143">**Image #1 label text**</span></span><br>
-        <span data-ttu-id="b919f-144">Weitere Erläuterungen und Beschreibung von Image: optional, bei Bedarf verwenden</span><span class="sxs-lookup"><span data-stu-id="b919f-144">Further clarification and description of image - optional, use as needed</span></span>
+        <span data-ttu-id="71ff3-142">![Beschreibung der hier aufgeführten Bilder.](images/image-466x466px-2-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-142">![Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)</span></span><br>
+        <span data-ttu-id="71ff3-143">**Bild #1 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-143">**Image #1 label text**</span></span><br>
+        <span data-ttu-id="71ff3-144">Weitere Erläuterungen und Beschreibung von Image: optional, bei Bedarf verwenden</span><span class="sxs-lookup"><span data-stu-id="71ff3-144">Further clarification and description of image - optional, use as needed</span></span>
     :::column-end:::
     :::column:::
-        <span data-ttu-id="b919f-145">![Beschreibung der hier aufgeführten Bilder.](images/image-466x466px-2-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-145">![Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)</span></span><br>
-        <span data-ttu-id="b919f-146">**Bild #2 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-146">**Image #2 label text**</span></span><br>
-        <span data-ttu-id="b919f-147">Weitere Erläuterungen und Beschreibung von Image: optional, bei Bedarf verwenden</span><span class="sxs-lookup"><span data-stu-id="b919f-147">Further clarification and description of image - optional, use as needed</span></span>
+        <span data-ttu-id="71ff3-145">![Beschreibung der hier aufgeführten Bilder.](images/image-466x466px-2-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-145">![Description of what the pictures is here.](images/image-466x466px-2-columns.jpg)</span></span><br>
+        <span data-ttu-id="71ff3-146">**Bild #2 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-146">**Image #2 label text**</span></span><br>
+        <span data-ttu-id="71ff3-147">Weitere Erläuterungen und Beschreibung von Image: optional, bei Bedarf verwenden</span><span class="sxs-lookup"><span data-stu-id="71ff3-147">Further clarification and description of image - optional, use as needed</span></span>
     :::column-end:::
 :::row-end:::
 
@@ -92,22 +92,22 @@ ms.locfileid: "97676133"
 ---
 
 
-### <a name="3-columns"></a><span data-ttu-id="b919f-148">3 Spalten</span><span class="sxs-lookup"><span data-stu-id="b919f-148">3 columns</span></span>
+### <a name="3-columns"></a><span data-ttu-id="71ff3-148">3 Spalten</span><span class="sxs-lookup"><span data-stu-id="71ff3-148">3 columns</span></span>
 
-<span data-ttu-id="b919f-149">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, remodernismus geometrische Abstraktion geometrische Abstraktion konzeptionelle Kunst, Säkularismus Structuralism Neo-Minimalism maniismus.</span><span class="sxs-lookup"><span data-stu-id="b919f-149">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.</span></span><br>
+<span data-ttu-id="71ff3-149">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, remodernismus geometrische Abstraktion geometrische Abstraktion konzeptionelle Kunst, Säkularismus Structuralism Neo-Minimalism maniismus.</span><span class="sxs-lookup"><span data-stu-id="71ff3-149">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.</span></span><br>
 
 :::row:::
     :::column:::
-       <span data-ttu-id="b919f-150">![Beschreibung der hier aufgeführten Bilder.](images/image-306x306px-3-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-150">![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)</span></span><br>
-       <span data-ttu-id="b919f-151">**Bild #1 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-151">**Image #1 label text**</span></span><br>
+       <span data-ttu-id="71ff3-150">![Beschreibung der hier aufgeführten Bilder.](images/image-306x306px-3-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-150">![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)</span></span><br>
+       <span data-ttu-id="71ff3-151">**Bild #1 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-151">**Image #1 label text**</span></span><br>
     :::column-end:::
     :::column:::
-       <span data-ttu-id="b919f-152">![Beschreibung der hier aufgeführten Bilder.](images/image-306x306px-3-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-152">![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)</span></span><br>
-        <span data-ttu-id="b919f-153">**Bild #2 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-153">**Image #2 label text**</span></span><br>
+       <span data-ttu-id="71ff3-152">![Beschreibung der hier aufgeführten Bilder.](images/image-306x306px-3-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-152">![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)</span></span><br>
+        <span data-ttu-id="71ff3-153">**Bild #2 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-153">**Image #2 label text**</span></span><br>
     :::column-end:::
     :::column:::
-       <span data-ttu-id="b919f-154">![Beschreibung der hier aufgeführten Bilder.](images/image-306x306px-3-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-154">![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)</span></span><br>
-       <span data-ttu-id="b919f-155">**Bild #3 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-155">**Image #3 label text**</span></span><br>
+       <span data-ttu-id="71ff3-154">![Beschreibung der hier aufgeführten Bilder.](images/image-306x306px-3-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-154">![Description of what the pictures is here.](images/image-306x306px-3-columns.jpg)</span></span><br>
+       <span data-ttu-id="71ff3-155">**Bild #3 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-155">**Image #3 label text**</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -116,56 +116,56 @@ ms.locfileid: "97676133"
 
 ---
 
-## <a name="section-2---4-columns"></a><span data-ttu-id="b919f-156">Abschnitt #2-4-Spalten</span><span class="sxs-lookup"><span data-stu-id="b919f-156">Section #2 - 4 columns</span></span>
+## <a name="section-2---4-columns"></a><span data-ttu-id="71ff3-156">Abschnitt #2-4-Spalten</span><span class="sxs-lookup"><span data-stu-id="71ff3-156">Section #2 - 4 columns</span></span>
 
-<span data-ttu-id="b919f-157">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, remodernismus geometrische Abstraktion geometrische Abstraktion konzeptionelle Kunst, Säkularismus Structuralism Neo-Minimalism maniismus.</span><span class="sxs-lookup"><span data-stu-id="b919f-157">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.</span></span> <span data-ttu-id="b919f-158">Divisionism International Gothic Barock Situationist International lettrism vorese Gothic Art Modern Art, International Gothic Systems Art Post moderniromanisch Pop Art.</span><span class="sxs-lookup"><span data-stu-id="b919f-158">Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art.</span></span> <span data-ttu-id="b919f-159">"Luminism Situationist International Neoclassicism".</span><span class="sxs-lookup"><span data-stu-id="b919f-159">Luminism situationist international neoclassicism.</span></span><br>
+<span data-ttu-id="71ff3-157">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, remodernismus geometrische Abstraktion geometrische Abstraktion konzeptionelle Kunst, Säkularismus Structuralism Neo-Minimalism maniismus.</span><span class="sxs-lookup"><span data-stu-id="71ff3-157">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.</span></span> <span data-ttu-id="71ff3-158">Divisionism International Gothic Barock Situationist International lettrism vorese Gothic Art Modern Art, International Gothic Systems Art Post moderniromanisch Pop Art.</span><span class="sxs-lookup"><span data-stu-id="71ff3-158">Divisionism international gothic baroque situationist international lettrism vorticism gothic art modern art, international gothic systems art postmodernism romanesque pop art.</span></span> <span data-ttu-id="71ff3-159">"Luminism Situationist International Neoclassicism".</span><span class="sxs-lookup"><span data-stu-id="71ff3-159">Luminism situationist international neoclassicism.</span></span><br>
 
-### <a name="4-columns"></a><span data-ttu-id="b919f-160">4 Spalten</span><span class="sxs-lookup"><span data-stu-id="b919f-160">4 columns</span></span>
+### <a name="4-columns"></a><span data-ttu-id="71ff3-160">4 Spalten</span><span class="sxs-lookup"><span data-stu-id="71ff3-160">4 columns</span></span>
 
-<span data-ttu-id="b919f-161">Neo-georkalismus Structuralism Post-Impressionismus der Brücke existentialität Superflat, Neo-Dada Idealismus gründa.</span><span class="sxs-lookup"><span data-stu-id="b919f-161">Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.</span></span><br>
+<span data-ttu-id="71ff3-161">Neo-georkalismus Structuralism Post-Impressionismus der Brücke existentialität Superflat, Neo-Dada Idealismus gründa.</span><span class="sxs-lookup"><span data-stu-id="71ff3-161">Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.</span></span><br>
 
 :::row:::
     :::column:::
-       <span data-ttu-id="b919f-162">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-162">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
-       <span data-ttu-id="b919f-163">**Bild #1 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-163">**Image #1 label text**</span></span><br>
+       <span data-ttu-id="71ff3-162">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-162">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
+       <span data-ttu-id="71ff3-163">**Bild #1 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-163">**Image #1 label text**</span></span><br>
     :::column-end:::
     :::column:::
-       <span data-ttu-id="b919f-164">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-164">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
-        <span data-ttu-id="b919f-165">**Bild #2 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-165">**Image #2 label text**</span></span><br>
+       <span data-ttu-id="71ff3-164">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-164">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
+        <span data-ttu-id="71ff3-165">**Bild #2 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-165">**Image #2 label text**</span></span><br>
     :::column-end:::
     :::column:::
-       <span data-ttu-id="b919f-166">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-166">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
-       <span data-ttu-id="b919f-167">**Bild #3 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-167">**Image #3 label text**</span></span><br>
+       <span data-ttu-id="71ff3-166">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-166">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
+       <span data-ttu-id="71ff3-167">**Bild #3 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-167">**Image #3 label text**</span></span><br>
     :::column-end:::
     :::column:::
-       <span data-ttu-id="b919f-168">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-168">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
-       <span data-ttu-id="b919f-169">**Bild #4 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="b919f-169">**Image #4 label text**</span></span><br>
+       <span data-ttu-id="71ff3-168">![Beschreibung der hier aufgeführten Bilder.](images/image-226x226px-4-columns.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-168">![Description of what the pictures is here.](images/image-226x226px-4-columns.jpg)</span></span><br>
+       <span data-ttu-id="71ff3-169">**Bild #4 Bezeichnungs Text**</span><span class="sxs-lookup"><span data-stu-id="71ff3-169">**Image #4 label text**</span></span><br>
     :::column-end:::
 :::row-end:::
 
-### <a name="subsection-name"></a><span data-ttu-id="b919f-170">Unterabschnitts Name</span><span class="sxs-lookup"><span data-stu-id="b919f-170">Subsection name</span></span>
+### <a name="subsection-name"></a><span data-ttu-id="71ff3-170">Unterabschnitts Name</span><span class="sxs-lookup"><span data-stu-id="71ff3-170">Subsection name</span></span>
 
-<span data-ttu-id="b919f-171">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, remodernismus geometrische Abstraktion geometrische Abstraktion konzeptionelle Kunst, Säkularismus Structuralism Neo-Minimalism maniismus.</span><span class="sxs-lookup"><span data-stu-id="b919f-171">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.</span></span> <span data-ttu-id="b919f-172">Divisionism International Gothic Barock Situationist International lettrism vorese Gothic Art.</span><span class="sxs-lookup"><span data-stu-id="b919f-172">Divisionism international gothic baroque situationist international lettrism vorticism gothic art.</span></span><br>
+<span data-ttu-id="71ff3-171">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, remodernismus geometrische Abstraktion geometrische Abstraktion konzeptionelle Kunst, Säkularismus Structuralism Neo-Minimalism maniismus.</span><span class="sxs-lookup"><span data-stu-id="71ff3-171">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism neo-minimalism mannerism.</span></span> <span data-ttu-id="71ff3-172">Divisionism International Gothic Barock Situationist International lettrism vorese Gothic Art.</span><span class="sxs-lookup"><span data-stu-id="71ff3-172">Divisionism international gothic baroque situationist international lettrism vorticism gothic art.</span></span><br>
 
 <br>
 
 ---
 
-## <a name="section-3---split-textimage-and-bullets"></a><span data-ttu-id="b919f-173">Abschnitt #3-Teilen von Text/Bild und Aufzählungs Zeichen</span><span class="sxs-lookup"><span data-stu-id="b919f-173">Section #3 - Split text/image and bullets</span></span>
+## <a name="section-3---split-textimage-and-bullets"></a><span data-ttu-id="71ff3-173">Abschnitt #3-Teilen von Text/Bild und Aufzählungs Zeichen</span><span class="sxs-lookup"><span data-stu-id="71ff3-173">Section #3 - Split text/image and bullets</span></span>
 
-<span data-ttu-id="b919f-174">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, Umgestaltung der konzeptionellen Abstraktion von Sozialisten Realismus geometrische Abstraktion, Säkularismus Structuralism.</span><span class="sxs-lookup"><span data-stu-id="b919f-174">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.</span></span><br>
+<span data-ttu-id="71ff3-174">Les Nabis Photorealism-Aktion zeichnen Sie das Farbfeld Zeichnen von Stuckism International cloisonnism, Umgestaltung der konzeptionellen Abstraktion von Sozialisten Realismus geometrische Abstraktion, Säkularismus Structuralism.</span><span class="sxs-lookup"><span data-stu-id="71ff3-174">Les nabis photorealism action painting color field painting stuckism international cloisonnism, remodernism socialist realism geometric abstraction conceptual art, secularism structuralism.</span></span><br>
 
 
 :::row:::
     :::column:::
-        ### <a name="2-columns---text-left-image-rightbr"></a><span data-ttu-id="b919f-175">2 Spalten-Text Links, Bild rechts</span><span class="sxs-lookup"><span data-stu-id="b919f-175">2 columns - text left, image right</span></span><br>
-        <span data-ttu-id="b919f-176">Beschreibungstext Left-Action Paint Color Field Description New Objektivität Stuckism Modern Art Structuralism Neo-Dada Stuckism International New Objektivität, Video Game Art primitivitivismus lyrische Abstraktion postminimalism remodernisierung.</span><span class="sxs-lookup"><span data-stu-id="b919f-176">Description text left - Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism.</span></span> <span data-ttu-id="b919f-177">"Ego-Futurism Surrealismus Installation" Grafik Grafik "Caravaggisti".</span><span class="sxs-lookup"><span data-stu-id="b919f-177">Ego-futurism surrealism installation art kinetic art caravaggisti.</span></span><br>
+        ### <a name="2-columns---text-left-image-rightbr"></a><span data-ttu-id="71ff3-175">2 Spalten-Text Links, Bild rechts</span><span class="sxs-lookup"><span data-stu-id="71ff3-175">2 columns - text left, image right</span></span><br>
+        <span data-ttu-id="71ff3-176">Beschreibungstext Left-Action Paint Color Field Description New Objektivität Stuckism Modern Art Structuralism Neo-Dada Stuckism International New Objektivität, Video Game Art primitivitivismus lyrische Abstraktion postminimalism remodernisierung.</span><span class="sxs-lookup"><span data-stu-id="71ff3-176">Description text left - Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism.</span></span> <span data-ttu-id="71ff3-177">"Ego-Futurism Surrealismus Installation" Grafik Grafik "Caravaggisti".</span><span class="sxs-lookup"><span data-stu-id="71ff3-177">Ego-futurism surrealism installation art kinetic art caravaggisti.</span></span><br>
         <br>
-        <span data-ttu-id="b919f-178">*Image: Beschreibung des hier aufgeführten Bilds.*</span><span class="sxs-lookup"><span data-stu-id="b919f-178">*Image: Description of what the image is here.*</span></span>
+        <span data-ttu-id="71ff3-178">*Image: Beschreibung des hier aufgeführten Bilds.*</span><span class="sxs-lookup"><span data-stu-id="71ff3-178">*Image: Description of what the image is here.*</span></span>
     :::column-end:::
         :::column:::
-        <span data-ttu-id="b919f-179">![Fügen Sie diesen Abstandhalter hinzu, wenn Sie versuchen, den H3-Text in der oberen](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="b919f-179">![Add this spacer when trying to top align with H3 text](images/spacer-20x582.png)</span></span><br>
-       <span data-ttu-id="b919f-180">![Visuelles Feedback in der Nähe](images/HoloLens2_Proximity.gif)</span><span class="sxs-lookup"><span data-stu-id="b919f-180">![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)</span></span><br>
+        <span data-ttu-id="71ff3-179">![Fügen Sie diesen Abstandhalter hinzu, wenn Sie versuchen, den H3-Text in der oberen](images/spacer-20x582.png)</span><span class="sxs-lookup"><span data-stu-id="71ff3-179">![Add this spacer when trying to top align with H3 text](images/spacer-20x582.png)</span></span><br>
+       <span data-ttu-id="71ff3-180">![Visuelles Feedback in der Nähe](images/HoloLens2_Proximity.gif)</span><span class="sxs-lookup"><span data-stu-id="71ff3-180">![Visual feedback on hand proximity](images/HoloLens2_Proximity.gif)</span></span><br>
     :::column-end:::
 :::row-end:::
 
@@ -174,42 +174,42 @@ ms.locfileid: "97676133"
 
 ---
 
-### <a name="bullet-list"></a><span data-ttu-id="b919f-181">Aufzählung</span><span class="sxs-lookup"><span data-stu-id="b919f-181">Bullet list</span></span>
+### <a name="bullet-list"></a><span data-ttu-id="71ff3-181">Aufzählung</span><span class="sxs-lookup"><span data-stu-id="71ff3-181">Bullet list</span></span>
 
-<span data-ttu-id="b919f-182">Les Nabis Photorealism-Aktion Zeichnen eines Farbfelds Zeichnen von Stuckism International cloisonnism:</span><span class="sxs-lookup"><span data-stu-id="b919f-182">Les nabis photorealism action painting color field painting stuckism international cloisonnism the following:</span></span>
+<span data-ttu-id="71ff3-182">Les Nabis Photorealism-Aktion Zeichnen eines Farbfelds Zeichnen von Stuckism International cloisonnism:</span><span class="sxs-lookup"><span data-stu-id="71ff3-182">Les nabis photorealism action painting color field painting stuckism international cloisonnism the following:</span></span>
 
-* <span data-ttu-id="b919f-183">Aufzählungs **Element 1** -weitere Erläuterung und Beschreibung (optional, bei Bedarf verwenden)</span><span class="sxs-lookup"><span data-stu-id="b919f-183">**Bullet item 1** - Further clarification and description (optional, use as needed)</span></span>
-* <span data-ttu-id="b919f-184">Aufzählungs **Element 2** -weitere Erläuterungen und Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b919f-184">**Bullet item 2** - Further clarification and description</span></span>
-* <span data-ttu-id="b919f-185">Aufzählungs **Element 3** -weitere Erläuterungen und Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b919f-185">**Bullet item 3** - Further clarification and description</span></span>
+* <span data-ttu-id="71ff3-183">Aufzählungs **Element 1** -weitere Erläuterung und Beschreibung (optional, bei Bedarf verwenden)</span><span class="sxs-lookup"><span data-stu-id="71ff3-183">**Bullet item 1** - Further clarification and description (optional, use as needed)</span></span>
+* <span data-ttu-id="71ff3-184">Aufzählungs **Element 2** -weitere Erläuterungen und Beschreibung</span><span class="sxs-lookup"><span data-stu-id="71ff3-184">**Bullet item 2** - Further clarification and description</span></span>
+* <span data-ttu-id="71ff3-185">Aufzählungs **Element 3** -weitere Erläuterungen und Beschreibung</span><span class="sxs-lookup"><span data-stu-id="71ff3-185">**Bullet item 3** - Further clarification and description</span></span>
 
 <br>
 
 ---
 
-## <a name="section-4---large-images"></a><span data-ttu-id="b919f-186">Abschnitt #4 großen Images</span><span class="sxs-lookup"><span data-stu-id="b919f-186">Section #4 - Large images</span></span>
+## <a name="section-4---large-images"></a><span data-ttu-id="71ff3-186">Abschnitt #4 großen Images</span><span class="sxs-lookup"><span data-stu-id="71ff3-186">Section #4 - Large images</span></span>
 
-### <a name="table-layout"></a><span data-ttu-id="b919f-187">Tabellenlayout</span><span class="sxs-lookup"><span data-stu-id="b919f-187">Table layout</span></span>
+### <a name="table-layout"></a><span data-ttu-id="71ff3-187">Tabellenlayout</span><span class="sxs-lookup"><span data-stu-id="71ff3-187">Table layout</span></span>
 
-<span data-ttu-id="b919f-188">Neo-georkalismus Structuralism Post-Impressionismus der Brücke existentialität Superflat, Neo-Dada Idealismus gründa.</span><span class="sxs-lookup"><span data-stu-id="b919f-188">Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.</span></span>
+<span data-ttu-id="71ff3-188">Neo-georkalismus Structuralism Post-Impressionismus der Brücke existentialität Superflat, Neo-Dada Idealismus gründa.</span><span class="sxs-lookup"><span data-stu-id="71ff3-188">Neo-geo humanism structuralism post-impressionism die brücke existentialism superflat, neo-dada idealism gründerzeit.</span></span>
 
-| <span data-ttu-id="b919f-189">Abstand</span><span class="sxs-lookup"><span data-stu-id="b919f-189">Distance</span></span> | <span data-ttu-id="b919f-190">Anzeige Winkel</span><span class="sxs-lookup"><span data-stu-id="b919f-190">Viewing angle</span></span> | <span data-ttu-id="b919f-191">Größe</span><span class="sxs-lookup"><span data-stu-id="b919f-191">Size</span></span> |
+| <span data-ttu-id="71ff3-189">Abstand</span><span class="sxs-lookup"><span data-stu-id="71ff3-189">Distance</span></span> | <span data-ttu-id="71ff3-190">Anzeige Winkel</span><span class="sxs-lookup"><span data-stu-id="71ff3-190">Viewing angle</span></span> | <span data-ttu-id="71ff3-191">Size</span><span class="sxs-lookup"><span data-stu-id="71ff3-191">Size</span></span> |
 |---------|---------|---------|
-| <span data-ttu-id="b919f-192">45cm</span><span class="sxs-lookup"><span data-stu-id="b919f-192">45cm</span></span>  | <span data-ttu-id="b919f-193">nicht kleiner als 2 °</span><span class="sxs-lookup"><span data-stu-id="b919f-193">no smaller than 2°</span></span> | <span data-ttu-id="b919f-194">1,6 x 1,6 cm</span><span class="sxs-lookup"><span data-stu-id="b919f-194">1.6 x 1.6 cm</span></span> |
+| <span data-ttu-id="71ff3-192">45cm</span><span class="sxs-lookup"><span data-stu-id="71ff3-192">45cm</span></span>  | <span data-ttu-id="71ff3-193">nicht kleiner als 2 °</span><span class="sxs-lookup"><span data-stu-id="71ff3-193">no smaller than 2°</span></span> | <span data-ttu-id="71ff3-194">1,6 x 1,6 cm</span><span class="sxs-lookup"><span data-stu-id="71ff3-194">1.6 x 1.6 cm</span></span> |
 
-### <a name="large-edge-to-edge-image-min-width-of-asset--940px"></a><span data-ttu-id="b919f-195">Großes Edge-zu-Edge-Bild (minimale Breite von Asset = 940px)</span><span class="sxs-lookup"><span data-stu-id="b919f-195">Large edge-to-edge image (min width of asset = 940px)</span></span>
+### <a name="large-edge-to-edge-image-min-width-of-asset--940px"></a><span data-ttu-id="71ff3-195">Großes Edge-zu-Edge-Bild (minimale Breite von Asset = 940px)</span><span class="sxs-lookup"><span data-stu-id="71ff3-195">Large edge-to-edge image (min width of asset = 940px)</span></span>
 
-<span data-ttu-id="b919f-196">Farben Feld "Aktion zeichnen" neue Objektivität Stuckism Modern Art Structuralism Neo-Dada Stuckism International New Objektivität, Video Game Art primitivitivismus lyrische Abstraktion postminimalism remoderniism.</span><span class="sxs-lookup"><span data-stu-id="b919f-196">Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism.</span></span> <span data-ttu-id="b919f-197">"Ego-Futurism Surrealismus Installation" Grafik Grafik "Caravaggisti".</span><span class="sxs-lookup"><span data-stu-id="b919f-197">Ego-futurism surrealism installation art kinetic art caravaggisti.</span></span>
+<span data-ttu-id="71ff3-196">Farben Feld "Aktion zeichnen" neue Objektivität Stuckism Modern Art Structuralism Neo-Dada Stuckism International New Objektivität, Video Game Art primitivitivismus lyrische Abstraktion postminimalism remoderniism.</span><span class="sxs-lookup"><span data-stu-id="71ff3-196">Action painting color field painting new objectivity stuckism modern art structuralism neo-dada stuckism international new objectivity, video game art primitivism lyrical abstraction postminimalism remodernism illusionism.</span></span> <span data-ttu-id="71ff3-197">"Ego-Futurism Surrealismus Installation" Grafik Grafik "Caravaggisti".</span><span class="sxs-lookup"><span data-stu-id="71ff3-197">Ego-futurism surrealism installation art kinetic art caravaggisti.</span></span>
 
-<span data-ttu-id="b919f-198">![Beschreibung der hier aufgeführten Bilder.](images/image-hero-template.jpg)</span><span class="sxs-lookup"><span data-stu-id="b919f-198">![Description of what the pictures is here.](images/image-hero-template.jpg)</span></span><br>
-<span data-ttu-id="b919f-199">*Beschreibung der hier aufgeführten Bilder.*</span><span class="sxs-lookup"><span data-stu-id="b919f-199">*Description of what the pictures is here.*</span></span>
+<span data-ttu-id="71ff3-198">![Beschreibung der hier aufgeführten Bilder.](images/image-hero-template.jpg)</span><span class="sxs-lookup"><span data-stu-id="71ff3-198">![Description of what the pictures is here.](images/image-hero-template.jpg)</span></span><br>
+<span data-ttu-id="71ff3-199">*Beschreibung der hier aufgeführten Bilder.*</span><span class="sxs-lookup"><span data-stu-id="71ff3-199">*Description of what the pictures is here.*</span></span>
 
 <br>
 
 ---
 
-### <a name="edge-to-edge-youtube-video"></a><span data-ttu-id="b919f-200">Edge-zu-Edge-YouTube-Video</span><span class="sxs-lookup"><span data-stu-id="b919f-200">Edge-to-edge YouTube video</span></span> 
+### <a name="edge-to-edge-youtube-video"></a><span data-ttu-id="71ff3-200">Edge-zu-Edge-YouTube-Video</span><span class="sxs-lookup"><span data-stu-id="71ff3-200">Edge-to-edge YouTube video</span></span> 
 
-<span data-ttu-id="b919f-201">Legen Sie IFRAME auf Width = "940" Height = "530" fest.</span><span class="sxs-lookup"><span data-stu-id="b919f-201">Set iframe to width="940" height="530".</span></span>
+<span data-ttu-id="71ff3-201">Legen Sie IFRAME auf Width = "940" Height = "530" fest.</span><span class="sxs-lookup"><span data-stu-id="71ff3-201">Set iframe to width="940" height="530".</span></span>
 
 <br>
 
@@ -221,20 +221,20 @@ ms.locfileid: "97676133"
 
 ---
 
-## <a name="section-5---pull-quotes"></a><span data-ttu-id="b919f-202">Abschnitts #5-Pull-Anführungszeichen</span><span class="sxs-lookup"><span data-stu-id="b919f-202">Section #5 - Pull quotes</span></span>
+## <a name="section-5---pull-quotes"></a><span data-ttu-id="71ff3-202">Abschnitts #5-Pull-Anführungszeichen</span><span class="sxs-lookup"><span data-stu-id="71ff3-202">Section #5 - Pull quotes</span></span>
 
-> <span data-ttu-id="b919f-203">*"Umso mehr, was Sie lesen, umso mehr wissen Sie. Umso mehr, was Sie lernen, desto mehr Orte werden Sie besuchen. "*</span><span class="sxs-lookup"><span data-stu-id="b919f-203">*“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”*</span></span><br>
-> <span data-ttu-id="b919f-204">– Dr. \*</span><span class="sxs-lookup"><span data-stu-id="b919f-204">— Dr. Seuss</span></span>
+> <span data-ttu-id="71ff3-203">*"Umso mehr, was Sie lesen, umso mehr wissen Sie. Umso mehr, was Sie lernen, desto mehr Orte werden Sie besuchen. "*</span><span class="sxs-lookup"><span data-stu-id="71ff3-203">*“The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”*</span></span><br>
+> <span data-ttu-id="71ff3-204">– Dr. \*</span><span class="sxs-lookup"><span data-stu-id="71ff3-204">— Dr. Seuss</span></span>
 
-> <span data-ttu-id="b919f-205">*"Ein Blick auf ein Buch, und Sie hören die Stimme einer anderen Person, möglicherweise jemand, der seit 1.000 Jahren gestorben ist. Lesen Sie, um zu lesen. "*</span><span class="sxs-lookup"><span data-stu-id="b919f-205">*“One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.”*</span></span><br>
-> <span data-ttu-id="b919f-206">– Carl Sagan</span><span class="sxs-lookup"><span data-stu-id="b919f-206">— Carl Sagan</span></span>
+> <span data-ttu-id="71ff3-205">*"Ein Blick auf ein Buch, und Sie hören die Stimme einer anderen Person, möglicherweise jemand, der seit 1.000 Jahren gestorben ist. Lesen Sie, um zu lesen. "*</span><span class="sxs-lookup"><span data-stu-id="71ff3-205">*“One glance at a book and you hear the voice of another person, perhaps someone dead for 1,000 years. To read is to voyage through time.”*</span></span><br>
+> <span data-ttu-id="71ff3-206">– Carl Sagan</span><span class="sxs-lookup"><span data-stu-id="71ff3-206">— Carl Sagan</span></span>
 
 <br>
 
 ---
 
-## <a name="see-also"></a><span data-ttu-id="b919f-207">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="b919f-207">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="71ff3-207">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="71ff3-207">See also</span></span>
 
-* [<span data-ttu-id="b919f-208">Verwandter Artikel 1 Name</span><span class="sxs-lookup"><span data-stu-id="b919f-208">Related article 1 name</span></span>](../design/design.md)
-* [<span data-ttu-id="b919f-209">Verwandter Artikel 2 Name</span><span class="sxs-lookup"><span data-stu-id="b919f-209">Related article 2 name</span></span>](../design/design.md)
-* [<span data-ttu-id="b919f-210">Verwandter Artikel 3: Link zu einem bestimmten Abschnitt</span><span class="sxs-lookup"><span data-stu-id="b919f-210">Related article 3 name - link to a specific section</span></span>](../design/design.md#2-core-concepts)
+* [<span data-ttu-id="71ff3-208">Verwandter Artikel 1 Name</span><span class="sxs-lookup"><span data-stu-id="71ff3-208">Related article 1 name</span></span>](../design/design.md)
+* [<span data-ttu-id="71ff3-209">Verwandter Artikel 2 Name</span><span class="sxs-lookup"><span data-stu-id="71ff3-209">Related article 2 name</span></span>](../design/design.md)
+* [<span data-ttu-id="71ff3-210">Verwandter Artikel 3: Link zu einem bestimmten Abschnitt</span><span class="sxs-lookup"><span data-stu-id="71ff3-210">Related article 3 name - link to a specific section</span></span>](../design/design.md#2-core-concepts)
