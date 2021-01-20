@@ -1,107 +1,119 @@
 ---
-title: Versehen des Audiosignals eines Videoclips mit räumlichen Effekten
-description: Erfahren Sie, wie Sie ein Video Medienobjekt in Ihr Unity Mixed Reality-Projekt importieren und die Audiodaten aus dem Video eingrenzen.
+title: 'Lernprogramme für räumliche Audiodaten: 3. Versehen des Audiosignals eines Videoclips mit räumlichen Effekten'
+description: Importieren Sie ein Video Medienobjekt in Ihr Unity-Projekt, und räumlichen Sie die Audiodaten aus dem Video.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Video Import, Video Player
-ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6474da522e650d23349a21c3deeac00222b8ce93
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007411"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578572"
 ---
-# <a name="spatializing-audio-from-a-video"></a><span data-ttu-id="8bd6c-104">Versehen des Audiosignals eines Videoclips mit räumlichen Effekten</span><span class="sxs-lookup"><span data-stu-id="8bd6c-104">Spatializing audio from a video</span></span>
+# <a name="3-spatializing-audio-from-a-video"></a><span data-ttu-id="4b001-105">3. Versehen des Audiosignals eines Videoclips mit räumlichen Effekten</span><span class="sxs-lookup"><span data-stu-id="4b001-105">3. Spatializing audio from a video</span></span>
 
-<span data-ttu-id="8bd6c-105">In diesem dritten Kapitel des Moduls Spatial-Audiodaten der Unity-Lernprogramme hololens 2 werden Sie Folgendes tun:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-105">In this 3rd chapter of the spatial audio module of the HoloLens 2 Unity tutorials, you'll:</span></span>
-* <span data-ttu-id="8bd6c-106">Importieren eines Videos und Hinzufügen eines Video Players</span><span class="sxs-lookup"><span data-stu-id="8bd6c-106">Import a video and add a Video Player</span></span>
-* <span data-ttu-id="8bd6c-107">Video auf einem Quadranten abspielen</span><span class="sxs-lookup"><span data-stu-id="8bd6c-107">Play the video onto a quadrangle</span></span>
-* <span data-ttu-id="8bd6c-108">Leiten Sie Audiodaten aus dem Video an das Quadrangle weiter, und räumlichen Sie die Audiodaten.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-108">Route audio from the video to the quadrangle, and spatialize the audio</span></span>
+## <a name="overview"></a><span data-ttu-id="4b001-106">Übersicht</span><span class="sxs-lookup"><span data-stu-id="4b001-106">Overview</span></span>
 
-## <a name="import-a-video-and-add-a-video-player"></a><span data-ttu-id="8bd6c-109">Importieren eines Videos und Hinzufügen eines Video Players</span><span class="sxs-lookup"><span data-stu-id="8bd6c-109">Import a video and add a Video Player</span></span>
+<span data-ttu-id="4b001-107">In diesem Tutorial erfahren Sie, wie Sie Audiodaten aus einer Videoquelle spatialisieren und diese im Unity-Editor und in hololens 2 testen.</span><span class="sxs-lookup"><span data-stu-id="4b001-107">In this tutorial, you will learn how to spatialize audio from an video source and test this in the unity editor and HoloLens 2.</span></span>
 
-<span data-ttu-id="8bd6c-110">Ziehen Sie eine Videodatei in das **Projekt** Bereich Ihres Unity-Projekts.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-110">Drag a video file into the **Project** pane in your Unity project.</span></span> <span data-ttu-id="8bd6c-111">Sie können [dieses Video](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) aus dem Beispiel Projekt für räumliche Audiodaten verwenden.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-111">You can use [this video](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) from the spatial audio sample project.</span></span>
+## <a name="objectives"></a><span data-ttu-id="4b001-108">Ziele</span><span class="sxs-lookup"><span data-stu-id="4b001-108">Objectives</span></span>
 
-![Ordner "Assets" mit Video](images/spatial-audio/assets-folder-with-video.png)
+* <span data-ttu-id="4b001-109">Importieren eines Videos und Hinzufügen eines Video Players</span><span class="sxs-lookup"><span data-stu-id="4b001-109">Import a video and add a Video Player</span></span>
+* <span data-ttu-id="4b001-110">Video auf einem Quadranten abspielen</span><span class="sxs-lookup"><span data-stu-id="4b001-110">Play the video onto a quadrangle</span></span>
+* <span data-ttu-id="4b001-111">Leiten Sie Audiodaten aus dem Video an das Quadrangle weiter, und räumlichen Sie die Audiodaten.</span><span class="sxs-lookup"><span data-stu-id="4b001-111">Route audio from the video to the quadrangle, and spatialize the audio</span></span>
 
-<span data-ttu-id="8bd6c-113">Durch das Anpassen der Qualitätseinstellungen für den Videoclip kann die reibungslose Wiedergabe auf hololens 2 sichergestellt werden.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-113">Adjusting the quality settings on the video clip can ensure smooth playback on HoloLens 2.</span></span> <span data-ttu-id="8bd6c-114">Klicken Sie im **Projekt** Bereich auf die Videodatei.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-114">Click on the video file in the **Project** pane.</span></span> <span data-ttu-id="8bd6c-115">Überschreiben Sie im **Inspektor** -Bereich der Videodatei die Einstellungen für Windows Store-Apps und:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-115">Then in the **Inspector** pane for the video file, override the settings for Windows Store Apps, and:</span></span>
-* <span data-ttu-id="8bd6c-116">**Transcode** aktivieren</span><span class="sxs-lookup"><span data-stu-id="8bd6c-116">Enable **Transcode**</span></span>
-* <span data-ttu-id="8bd6c-117">Legen Sie **Codec** auf H264 fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-117">Set **Codec** to H264</span></span>
-* <span data-ttu-id="8bd6c-118">**Modus "Bitrate** " auf "niedrig" festlegen</span><span class="sxs-lookup"><span data-stu-id="8bd6c-118">Set **Bitrate Mode** to Low</span></span>
-* <span data-ttu-id="8bd6c-119">Legen Sie **räumliche Qualität** auf mittlere räumliche Qualität fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-119">Set **Spatial Quality** to Medium Spatial Quality</span></span>
+## <a name="import-a-video-and-add-a-video-player-to-the-scene"></a><span data-ttu-id="4b001-112">Importieren eines Videos und Hinzufügen eines Video Players zur Szene</span><span class="sxs-lookup"><span data-stu-id="4b001-112">Import a video and add a Video Player to the Scene</span></span>
 
-<span data-ttu-id="8bd6c-120">Nach diesen Anpassungen sieht der **Inspektor** -Bereich für die Videodatei wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-120">After these adjustments, the **Inspector** pane for the video file will look like this:</span></span>
+<span data-ttu-id="4b001-113">In diesem Tutorial verwenden Sie [dieses Video](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) aus dem Beispiel Projekt für räumliche Audiodateien.</span><span class="sxs-lookup"><span data-stu-id="4b001-113">For this tutorial use You can use [this video](https://github.com/microsoft/spatialaudio-unity/blob/develop/Samples/MicrosoftSpatializerSample/Assets/Microsoft%20HoloLens%20-%20Spatial%20Sound-PTPvx7mDon4.mp4?raw=true) from the spatial audio sample project.</span></span>
 
-![Video-Eigenschaften Bereich](images/spatial-audio/video-property-pane.png)
+<span data-ttu-id="4b001-114">Zum Importieren von Videos in das Unity-Projekt.</span><span class="sxs-lookup"><span data-stu-id="4b001-114">To import Video into the unity project.</span></span> <span data-ttu-id="4b001-115">Wählen Sie im Unity-Menü **Asset**  >  **Import New Asset** Import 
+ ![ Asset aus.](images/spatial-audio/spatial-audio-03-section1-step1-1.png)</span><span class="sxs-lookup"><span data-stu-id="4b001-115">in the Unity menu select **Asset** > **Import New Asset**
+![Importing Asset](images/spatial-audio/spatial-audio-03-section1-step1-1.png)</span></span>
 
-<span data-ttu-id="8bd6c-122">Fügen Sie als nächstes der **Hierarchie** ein **Video Player** -Objekt hinzu, indem Sie mit der rechten Maustaste auf den Bereich **Hierarchie** klicken und **Video > Video Player** auswählen:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-122">Next, add a **Video Player** object to the **Hierarchy** by right-clicking on the **Hierarchy** pane and choosing **Video -> Video Player**:</span></span>
+<span data-ttu-id="4b001-116">Wählen Sie im Fenster **Neues Asset importieren...** die heruntergeladene **Microsoft hololens-Spatial Sound-PTPvx7mDon4-** Datei aus, und klicken Sie auf die Schaltfläche **Öffnen** , um das Objekt in das Projekt zu importieren:</span><span class="sxs-lookup"><span data-stu-id="4b001-116">In the **Import New Asset...** window, select the **Microsoft HoloLens - Spatial Sound-PTPvx7mDon4** file you downloaded and click the **Open** button to import the asset into the project:</span></span>
 
-![Video Player in der Hierarchie](images/spatial-audio/video-player-in-hierarchy.png)
+![Medienobjekt auswählen](images/spatial-audio/spatial-audio-03-section1-step1-2.png)
 
-## <a name="play-video-onto-a-quadrangle"></a><span data-ttu-id="8bd6c-124">Abspielen von Videos auf einem Quadranten</span><span class="sxs-lookup"><span data-stu-id="8bd6c-124">Play video onto a quadrangle</span></span>
+<span data-ttu-id="4b001-118">Durch das Anpassen der Qualitätseinstellungen für den Videoclip kann die reibungslose Wiedergabe auf hololens 2 sichergestellt werden.</span><span class="sxs-lookup"><span data-stu-id="4b001-118">Adjusting the quality settings on the video clip can ensure smooth playback on HoloLens 2.</span></span> <span data-ttu-id="4b001-119">Wählen Sie die Videodatei im **Projekt** Fenster und im Inspektor-Fenster der Videodatei aus, und über **Schreiben** Sie die Einstellungen für **Windows Store-Apps** und:</span><span class="sxs-lookup"><span data-stu-id="4b001-119">Select the video file in the **Project** window and in the Inspector window of the video file, **override** the settings for **Windows Store Apps**, and:</span></span>
 
-<span data-ttu-id="8bd6c-125">Das **Video Player** -Objekt benötigt ein texturiertes Spielobjekt, auf dem das Video dargestellt werden soll.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-125">The **Video Player** object needs a textured game object on which to render the video.</span></span> <span data-ttu-id="8bd6c-126">Fügen Sie zunächst der **Hierarchie** ein **Quad** hinzu, indem Sie mit der rechten Maustaste auf den Bereich **Hierarchie** klicken und **3D-Objekt-> Quad**:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-126">First, add a **Quad** to your **Hierarchy** by right-clicking on the **Hierarchy** pane and choosing **3D Object -> Quad**:</span></span>
+* <span data-ttu-id="4b001-120">**Transcode** aktivieren</span><span class="sxs-lookup"><span data-stu-id="4b001-120">Enable **Transcode**</span></span>
+* <span data-ttu-id="4b001-121">Legen Sie **Codec** auf H264 fest.</span><span class="sxs-lookup"><span data-stu-id="4b001-121">Set **Codec** to H264</span></span>
+* <span data-ttu-id="4b001-122">**Modus "Bitrate** " auf "niedrig" festlegen</span><span class="sxs-lookup"><span data-stu-id="4b001-122">Set **Bitrate Mode** to Low</span></span>
+* <span data-ttu-id="4b001-123">Legen Sie **räumliche Qualität** auf mittlere räumliche Qualität fest.</span><span class="sxs-lookup"><span data-stu-id="4b001-123">Set **Spatial Quality** to Medium Spatial Quality</span></span>
 
-![Quad zur Hierarchie hinzufügen](images/spatial-audio/add-quad-to-hierarchy.png)
+<span data-ttu-id="4b001-124">Nachdem Sie diese Anpassungen vorgenommen haben, klicken Sie auf übernehmen, um die Qualitätseinstellung für den Videoclip zu ändern.</span><span class="sxs-lookup"><span data-stu-id="4b001-124">After these adjustments, click on Apply to change the quality setting on the video clip.</span></span>
 
-<span data-ttu-id="8bd6c-128">Um sicherzustellen, dass das **Quad** vor dem Benutzer angezeigt wird, wenn die Anwendung gestartet wird, legen Sie die **Positions** -Eigenschaft des **Quad** auf (0, 0, 2) und die **Scale** -Eigenschaft auf (1,28, 0,72, 1) fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-128">To ensure the **Quad** appears in front of the user when the application starts, set the **Position** property of the **Quad** to (0, 0, 2), and the **Scale** property to (1.28, 0.72, 1).</span></span> <span data-ttu-id="8bd6c-129">Nachdem diese Änderungen vorgenommen wurden, sieht die **Transformations** Komponente im **Inspektor** -Bereich für das **Quad** wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-129">After these changes, the **Transform** component on the **Inspector** pane for the **Quad** will look like this:</span></span>
+![Video-Eigenschaften Änderung](images/spatial-audio/spatial-audio-03-section1-step1-3.png)
 
-![Quad-Transformation](images/spatial-audio/quad-transform.png)
+<span data-ttu-id="4b001-126">Klicken Sie mit der rechten Maustaste auf die Hierarchie, und wählen Sie **Video**  >  **Video Player** , um die Video Player Komponente</span><span class="sxs-lookup"><span data-stu-id="4b001-126">Right click on the Hierarchy, Select **Video** > **Video Player** to add Video player component.</span></span>
 
-<span data-ttu-id="8bd6c-131">Um das Vierfache mit **Video zu strukturieren** , erstellen Sie eine neue **Rendering-Textur**.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-131">To texture the **Quad** with video, create a new **Render Texture**.</span></span> <span data-ttu-id="8bd6c-132">Klicken Sie im **Projekt** Bereich mit der rechten Maustaste, und wählen Sie **Create-> Rendering Texture** aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-132">In the **Project** pane, right-click and choose **Create -> Render Texture**:</span></span>
+![Video Player hinzufügen](images/spatial-audio/spatial-audio-03-section1-step1-4.png)
 
-![Rendering-Textur erstellen](images/spatial-audio/create-render-texture.png)
+## <a name="play-video-onto-a-quadrangle"></a><span data-ttu-id="4b001-128">Abspielen von Videos auf einem Quadranten</span><span class="sxs-lookup"><span data-stu-id="4b001-128">Play video onto a quadrangle</span></span>
 
-<span data-ttu-id="8bd6c-134">Legen Sie im **inspektorbereich** der **Rendering-Textur** die **size** -Eigenschaft so fest, dass Sie mit der nativen Auflösung des Videos in Auflösung von 1280X720 identisch ist</span><span class="sxs-lookup"><span data-stu-id="8bd6c-134">On the **Inspector** pane of the **Render Texture**, set the **Size** property to match the video's native resolution of 1280x720.</span></span> <span data-ttu-id="8bd6c-135">Um dann eine gute Renderingleistung auf hololens 2 sicherzustellen, legen Sie die **Tiefe Puffer** Eigenschaft auf **mindestens 16 Bits** fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-135">Then, to ensure good rendering performance on HoloLens 2, set the **Depth Buffer** property to **At least 16 bits depth**.</span></span> <span data-ttu-id="8bd6c-136">Nach diesen Einstellungen sieht der **Inspektor** -Bereich für die **Rendering-Textur** wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-136">After these settings, the **Inspector** pane for the **Render Texture** will look like this:</span></span>
+<span data-ttu-id="4b001-129">Das **Video Player** -Objekt benötigt ein texturiertes Spielobjekt zum Rendering des Videos.</span><span class="sxs-lookup"><span data-stu-id="4b001-129">The **Video Player** object needs a textured game object to render the video.</span></span>
 
-![Rendering-Textur Eigenschaften](images/spatial-audio/render-texture-properties.png)
+<span data-ttu-id="4b001-130">Klicken Sie mit der rechten Maustaste auf die Hierarchie, wählen Sie **3D-Objekt**  >  **Quad** aus, um ein Quad zu erstellen, und konfigurieren Sie die </span><span class="sxs-lookup"><span data-stu-id="4b001-130">Right click the Hierarchy , Select **3D Object** > **Quad** to create a quad and configure its **Transform** component as follows:</span></span>
 
-<span data-ttu-id="8bd6c-138">Verwenden Sie als **nächstes die neue** Rendering- **Textur** als Textur für das Vierfache:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-138">Next, use your new **Render Texture** as the texture for the **Quad**:</span></span>
-1. <span data-ttu-id="8bd6c-139">Ziehen Sie **die Rendering-Textur** aus dem **Projekt** Bereich **auf das Vierfache in der** **Hierarchie** .</span><span class="sxs-lookup"><span data-stu-id="8bd6c-139">Drag the **Render Texture** from the **Project** pane onto the **Quad** in the **Hierarchy**</span></span>
-2. <span data-ttu-id="8bd6c-140">Um eine gute Leistung bei hololens 2 sicherzustellen, wählen Sie im **Inspektor** -Bereich für den **Quad** den **Standard-Shader von Mixed Reality Toolkit** aus.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-140">To ensure good performance on HoloLens 2, on the **Inspector** pane for the **Quad**, select the **Mixed Reality Toolkit Standard Shader**.</span></span>
+* <span data-ttu-id="4b001-131">**Position**: X = 0, Y = 0, Z = 2</span><span class="sxs-lookup"><span data-stu-id="4b001-131">**Position**: X = 0, Y = 0, Z = 2</span></span>
+* <span data-ttu-id="4b001-132">**Drehung**: X = 0, Y = 0, Z = 0</span><span class="sxs-lookup"><span data-stu-id="4b001-132">**Rotation**: X = 0, Y = 0, Z = 0</span></span>
+* <span data-ttu-id="4b001-133">**Skalierung**: X = 1,28, Y = 0,72, Z = 1</span><span class="sxs-lookup"><span data-stu-id="4b001-133">**Scale**: X = 1.28, Y = 0.72, Z = 1</span></span>
 
-<span data-ttu-id="8bd6c-141">Mit diesen Einstellungen sieht die **Textur** Komponente im **Inspektor** -Bereich für das **Quad** wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-141">With these settings, the **Texture** component on the **Inspector** pane for the **Quad** will look like this:</span></span>
+![Hinzufügen eines Quad-](images/spatial-audio/spatial-audio-03-section2-step1-1.png)
 
-![Vier Textur Eigenschaften](images/spatial-audio/quad-texture-properties.png)
+<span data-ttu-id="4b001-135">Nun müssen Sie das Vierfache **mit dem** Video strukturieren. Klicken Sie dazu im **Projekt** Fenster mit der rechten Maustaste, und wählen Sie   >  **Rendering-Textur** erstellen aus, um eine Rendering-Textur Komponente zu erstellen, und geben Sie einen passenden Namen für die Rendering-Textur ein, z.b. _räumliche audiotextur_:</span><span class="sxs-lookup"><span data-stu-id="4b001-135">Now you need to texture the **Quad** with the video, In the **Project** window, right-click and choose **Create** > **Render Texture** to create a Render Texture component, enter a suitable name to the Render Texture for example, _Spatial Audio Texture_:</span></span>
 
-<span data-ttu-id="8bd6c-143">Öffnen Sie den **Inspektor** -Bereich für den **Video Player** , und legen Sie Folgendes fest, um den neuen **Video Player** und die **Rendering-Textur** für die Wiedergabe des Videoclips</span><span class="sxs-lookup"><span data-stu-id="8bd6c-143">To set your new **Video Player** and **Render Texture** to play your video clip, open the **Inspector** pane for the **Video Player** and:</span></span>
-* <span data-ttu-id="8bd6c-144">Legen Sie die Eigenschaft " **Video Clip** " auf Ihre Videodatei fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-144">Set the **Video Clip** property to your video file</span></span>
-* <span data-ttu-id="8bd6c-145">Aktivieren Sie das Kontrollkästchen **Schleife** .</span><span class="sxs-lookup"><span data-stu-id="8bd6c-145">Check the **Loop** checkbox</span></span>
-* <span data-ttu-id="8bd6c-146">Festlegen der **Ziel Textur** auf die neue rendertextur</span><span class="sxs-lookup"><span data-stu-id="8bd6c-146">Set **Target Texture** to your new render texture</span></span>
+![Rendering-Textur erstellen](images/spatial-audio/spatial-audio-03-section2-step1-2.png)
 
-<span data-ttu-id="8bd6c-147">Der **Inspektor** -Bereich für den **Video Player** sieht nun wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-147">The **Inspector** pane for the **Video Player** will now look like this:</span></span>
+<span data-ttu-id="4b001-137">Wählen Sie die **Rendering-Textur** aus, und legen Sie im Inspektor-Fenster die **size** -Eigenschaft so fest, dass Sie mit der nativen Auflösung des Videos in der Auflösung</span><span class="sxs-lookup"><span data-stu-id="4b001-137">Select the **Render Texture** and in the Inspector window set the **Size** property to match the video's native resolution of 1280x720.</span></span> <span data-ttu-id="4b001-138">Um dann eine gute Renderingleistung auf hololens 2 sicherzustellen, legen Sie die **Tiefe Puffer** Eigenschaft auf **mindestens 16 Bits** fest.</span><span class="sxs-lookup"><span data-stu-id="4b001-138">Then, to ensure good rendering performance on HoloLens 2, set the **Depth Buffer** property to **At least 16 bits depth**.</span></span>
 
-![Video Player-Eigenschaften](images/spatial-audio/video-player-properties.png)
+![Rendering-Textur Eigenschaften](images/spatial-audio/spatial-audio-03-section2-step1-3.png)
 
-## <a name="spatialize-the-audio-from-the-video"></a><span data-ttu-id="8bd6c-149">Spatialisieren der Audiodaten aus dem Video</span><span class="sxs-lookup"><span data-stu-id="8bd6c-149">Spatialize the audio from the video</span></span>
+<span data-ttu-id="4b001-140">Verwenden Sie als nächstes die erstellte **Darstellung der Struktur** für das **räumliche** Rendering als Textur für das Vierfache:</span><span class="sxs-lookup"><span data-stu-id="4b001-140">Next, use the created Render Texture **Spatial Audio Texture** as the texture for the **Quad**:</span></span>
 
-<span data-ttu-id="8bd6c-150">Erstellen Sie im **Inspektor** -Bereich **für das** vierfache eine **Audioquelle** , an die Sie die Audiodatei aus dem Video weiterleiten:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-150">In the **Inspector** pane for the **Quad**, create an **Audio Source** to which you'll route the audio from the video:</span></span>
-* <span data-ttu-id="8bd6c-151">Klicken Sie am unteren Rand des Bereichs auf **Komponente hinzufügen** .</span><span class="sxs-lookup"><span data-stu-id="8bd6c-151">Click **Add Component** at the bottom of the pane</span></span>
-* <span data-ttu-id="8bd6c-152">Hinzufügen einer **Audioquelle**</span><span class="sxs-lookup"><span data-stu-id="8bd6c-152">Add an **Audio Source**</span></span>
+1. <span data-ttu-id="4b001-141">Ziehen Sie die **räumliche audiotextur** aus dem **Projekt** Fenster auf **das Vierfache in der hier** Archie, um die Rendering-Textur dem Quad hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="4b001-141">Drag the **Spatial Audio Texture** from the **Project** window onto the **Quad** in the Hierarchy to add the Render Texture to the Quad</span></span>
+2. <span data-ttu-id="4b001-142">Um eine gute Leistung bei hololens 2 sicherzustellen, wählen Sie Quad in der Hierarchie aus, und wählen Sie im Inspektor-Fenster für Shader das **Mixed Reality Toolkit**  >  **Standard** -Shader aus.</span><span class="sxs-lookup"><span data-stu-id="4b001-142">To ensure good performance on HoloLens 2, select Quad in the Hierarchy and in the Inspector window for shader select the **Mixed Reality Toolkit** > **Standard** Shader.</span></span>
 
-<span data-ttu-id="8bd6c-153">Dann in der **Audioquelle**:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-153">Then, on the **Audio Source**:</span></span>
-* <span data-ttu-id="8bd6c-154">**Ausgabe** auf Ihren Mixer festlegen</span><span class="sxs-lookup"><span data-stu-id="8bd6c-154">Set **Output** to your mixer</span></span>
-* <span data-ttu-id="8bd6c-155">Aktivieren Sie das Feld **spatialize** .</span><span class="sxs-lookup"><span data-stu-id="8bd6c-155">Check the **Spatialize** box</span></span>
-* <span data-ttu-id="8bd6c-156">Verschieben Sie den Schieberegler für **räumliche Blend** auf 1 (3D).</span><span class="sxs-lookup"><span data-stu-id="8bd6c-156">Move the **Spatial Blend** slider to 1 (3D)</span></span>
+![Vier Textur Eigenschaften](images/spatial-audio/spatial-audio-03-section2-step1-4.png)
 
-<span data-ttu-id="8bd6c-157">Nachdem diese Änderungen vorgenommen wurden, sieht die **audioquellkomponente** im **Inspektor** -Bereich für das **Quad** wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-157">After these changes, the **Audio Source** component on the **Inspector** pane for the **Quad** will look like this:</span></span>
+<span data-ttu-id="4b001-144">Wählen Sie den **Video Player** in der **Hierarchie** aus **, und klicken** Sie im **Inspektor** - **Fenster auf**</span><span class="sxs-lookup"><span data-stu-id="4b001-144">To set **Video Player** and **Render Texture** to play the video clip, select the **Video Player** in the **Hierarchy** and in the **Inspector** window,</span></span>
 
-![Quad-audioquellinspektor](images/spatial-audio/quad-audio-source-inspector.png)
+* <span data-ttu-id="4b001-145">Legen Sie die Eigenschaft " **Video Clip** " auf die heruntergeladene Videodatei "Microsoft hololens-Spatial Sound-PTPvx7mDon4" fest.</span><span class="sxs-lookup"><span data-stu-id="4b001-145">Set the **Video Clip** property to the downloaded video file 'Microsoft HoloLens - Spatial Sound-PTPvx7mDon4'</span></span>
+* <span data-ttu-id="4b001-146">Aktivieren Sie das Kontrollkästchen **Schleife** .</span><span class="sxs-lookup"><span data-stu-id="4b001-146">Check the **Loop** checkbox</span></span>
+* <span data-ttu-id="4b001-147">Legen Sie die **Ziel Textur** auf die neue Darstellung der gentexgenräumlichen Darstellung fest </span><span class="sxs-lookup"><span data-stu-id="4b001-147">Set **Target Texture** to your new render texture **Spatial Audio Texture**</span></span>
 
-<span data-ttu-id="8bd6c-159">Um den **Video Player** so festzulegen, dass seine Audiodaten an die **Audioquelle** auf dem **Quad** weitergeleitet werden, öffnen Sie den **Inspektor** -Bereich für den **Video Player** und:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-159">To set the **Video Player** to route its audio to the **Audio Source** on the **Quad**, open the **Inspector** pane for the **Video Player** and:</span></span>
-* <span data-ttu-id="8bd6c-160">Legen Sie den **Audioausgabemodus** auf "Audioquelle" fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-160">Set the **Audio Output Mode** to 'Audio Source'</span></span>
-* <span data-ttu-id="8bd6c-161">Legen Sie die Eigenschaft **Audioquelle** auf Quad fest.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-161">Set the **Audio Source** property to your Quad</span></span>
+![Video Player-Eigenschaften](images/spatial-audio/spatial-audio-03-section2-step1-5.png)
 
-<span data-ttu-id="8bd6c-162">Nachdem diese Änderungen vorgenommen wurden, sieht der Bereich **Inspector** für den **Video Player** wie folgt aus:</span><span class="sxs-lookup"><span data-stu-id="8bd6c-162">After these changes, the **Inspector** pane for the **Video Player** will look like this:</span></span>
+## <a name="spatialize-the-audio-from-the-video"></a><span data-ttu-id="4b001-149">Spatialisieren der Audiodaten aus dem Video</span><span class="sxs-lookup"><span data-stu-id="4b001-149">Spatialize the audio from the video</span></span>
 
-![Video Player-Audioquelle festlegen](images/spatial-audio/video-player-set-audio-source.png)
+<span data-ttu-id="4b001-150">Wählen Sie im Fenster Hierarchie die Option **Quad** Object aus, und verwenden Sie dann im Inspektor-Fenster die Schaltfläche **Komponente hinzufügen** , um **Audioquelle** hinzuzufügen, an die Sie die Audiodaten aus dem Video weiterleiten.</span><span class="sxs-lookup"><span data-stu-id="4b001-150">In the Hierarchy window, select **Quad** object, then in the Inspector window, use the **Add Component** button to add **Audio Source** to which you'll route the audio from the video.</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="8bd6c-164">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="8bd6c-164">Next steps</span></span>
+<span data-ttu-id="4b001-151">In der **Audioquelle**:</span><span class="sxs-lookup"><span data-stu-id="4b001-151">In the **Audio Source**:</span></span>
 
-<span data-ttu-id="8bd6c-165">Testen Sie Ihre APP auf einem hololens 2 oder im Unity-Editor.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-165">Try out your app on a HoloLens 2 or in the Unity editor.</span></span> <span data-ttu-id="8bd6c-166">Sie sehen und hören das Video, und die Audiodaten aus dem Video werden räumlich.</span><span class="sxs-lookup"><span data-stu-id="8bd6c-166">You'll see and hear the video, and the audio from the video will be spatialized.</span></span>
+* <span data-ttu-id="4b001-152">Festlegen der **Ausgabe** auf den **räumlichen Audiomixer**</span><span class="sxs-lookup"><span data-stu-id="4b001-152">Set **Output** to the **Spatial Audio Mixer**</span></span>
+* <span data-ttu-id="4b001-153">Aktivieren Sie das Feld **spatialize** .</span><span class="sxs-lookup"><span data-stu-id="4b001-153">Check the **Spatialize** box</span></span>
+* <span data-ttu-id="4b001-154">Verschieben Sie den Schieberegler für **räumliche Blend** auf 1 (3D).</span><span class="sxs-lookup"><span data-stu-id="4b001-154">Move the **Spatial Blend** slider to 1 (3D)</span></span>
+
+![Quad-audioquellinspektor](images/spatial-audio/spatial-audio-03-section3-step1-1.png)
+
+<span data-ttu-id="4b001-156">Um den Video Player so festzulegen, dass seine Audiodaten an die **Audioquelle** weitergeleitet werden, wählen Sie im Fenster Hierarchie den **Video Player** aus, und führen Sie im inspektorobjekt im Inspektor die folgenden Änderungen aus.</span><span class="sxs-lookup"><span data-stu-id="4b001-156">To set the Video Player to route its audio to the **Audio Source**, select the **Video Player** In the Hierarchy window, and in Video Player object in the Inspector do the following changes.</span></span>
+
+* <span data-ttu-id="4b001-157">Festlegen des **Audioausgabemodus** auf **Audioquelle**</span><span class="sxs-lookup"><span data-stu-id="4b001-157">Set the **Audio Output Mode** to **Audio Source**</span></span>
+* <span data-ttu-id="4b001-158">Legen Sie die Eigenschaft **Audioquelle** auf **Quad** fest.</span><span class="sxs-lookup"><span data-stu-id="4b001-158">Set the **Audio Source** property to the **Quad**</span></span>
+
+![Video Player-Audioquelle festlegen](images/spatial-audio/spatial-audio-03-section3-step1-2.png)
+
+> [!TIP]
+> <span data-ttu-id="4b001-160">Falls Sie eine Auffrischung zum Erstellen und Bereitstellen Ihres Unity-Projekts auf HoloLens 2 benötigen, lesen Sie die Anweisungen unter [Erstellen Ihrer App auf dem HoloLens 2-Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2).</span><span class="sxs-lookup"><span data-stu-id="4b001-160">For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.</span></span>
+
+## <a name="congratulations"></a><span data-ttu-id="4b001-161">Herzlichen Glückwunsch!</span><span class="sxs-lookup"><span data-stu-id="4b001-161">Congratulations</span></span>
+
+<span data-ttu-id="4b001-162">In diesem Tutorial haben Sie gelernt, wie Sie Audiodaten aus einer Videoquelle eingrenzen, indem Sie Ihre APP auf einem hololens 2 oder im Unity-Editor testen.</span><span class="sxs-lookup"><span data-stu-id="4b001-162">In this tutorial, you have learned how to spatialize audio from an video source Try out your app on a HoloLens 2 or in the Unity editor.</span></span> <span data-ttu-id="4b001-163">Sie sehen und hören das Video, und die Audiodaten aus dem Video sind räumlich.</span><span class="sxs-lookup"><span data-stu-id="4b001-163">You'll see and hear the video, and the audio from the video is spatialized.</span></span>
+
+<span data-ttu-id="4b001-164">Im nächsten Tutorial erfahren Sie, wie Sie die Spatialisierung zur Laufzeit aktivieren und deaktivieren.</span><span class="sxs-lookup"><span data-stu-id="4b001-164">In the next tutorial you will learn how to Enable and disable spatialization at run time</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="8bd6c-167">Kapitel 4</span><span class="sxs-lookup"><span data-stu-id="8bd6c-167">Chapter 4</span></span>](unity-spatial-audio-ch4.md) 
-
+> [<span data-ttu-id="4b001-165">Nächstes Tutorial: 4. aktivieren und Deaktivieren der Spatialisierung zur Laufzeit</span><span class="sxs-lookup"><span data-stu-id="4b001-165">Next Tutorial: 4. Enabling and disabling spatialization at run time</span></span>](unity-spatial-audio-ch4.md)
