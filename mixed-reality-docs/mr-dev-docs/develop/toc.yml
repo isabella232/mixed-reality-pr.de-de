@@ -256,8 +256,14 @@
   items:
     - name: 'Unreal-Entwicklung: Übersicht'
       href: unreal/unreal-development-overview.md
+    - name: Einführung in MRTK
+      href: unreal/unreal-mrtk-introduction.md
     - name: Upgrade von Projekten in Unreal
       href: unreal/unreal-porting.md
+    - name: Schnellstarts
+      items:
+        - name: Erstellen eines HoloLens-Projekts
+          href: unreal/unreal-quickstart.md
     - name: Lernprogramme
       items:
         - name: Erstellen einer Schach-App mit MRTK-UX-Tools
@@ -290,7 +296,19 @@
           href: unreal/unreal-azure-spatial-anchors.md
         - name: Spracheingabe
           href: unreal/unreal-voice-input.md
-    - name: Erweiterte Funktionen
+    - name: Bewährte Methoden
+      items:
+        - name: Allgemeine bewährte Methoden
+          href: unreal/unreal-best-practices.md
+        - name: Leistungsempfehlungen für Unreal
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Materialempfehlungen in Unreal
+          href: unreal/unreal-materials.md
+        - name: Profilerstellung mit Unreal Insights
+          href: unreal/unreal-insights.md
+        - name: Editor-Erweiterungen in Unreal
+          href: unreal/unreal-editor-extensions.md
+    - name: Plattformfunktionen und APIs
       items:
         - name: HoloLens-Foto-/Videokamera
           href: unreal/unreal-hololens-camera.md
@@ -300,6 +318,8 @@
           href: unreal/unreal-umg-keyboard.md
         - name: WinRT
           href: unreal/unreal-winrt.md
+        - name: Streaming in Unreal
+          href: unreal/unreal-streaming.md
     - name: Immersive VR
       items:
         - name: HP Reverb G2-Controller
@@ -308,20 +328,12 @@
       items:
         - name: Kippys Flucht
           href: unreal/unreal-kippys-escape.md
-    - name: Bereitstellung und Leistung
+    - name: Bereitstellung und Veröffentlichung
       items:
         - name: Auf Gerät bereitstellen
           href: unreal/unreal-deploying.md
         - name: Veröffentlichen im Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Leistungsempfehlungen
-          href: unreal/performance-recommendations-for-unreal.md
-        - name: Materialempfehlungen
-          href: unreal/unreal-materials.md
-        - name: Profilerstellung mit Unreal Insights
-          href: unreal/unreal-insights.md
-        - name: Streaming
-          href: unreal/unreal-streaming.md
 - name: Web
   items:
     - name: Webentwicklung – Übersicht
@@ -387,7 +399,7 @@
         - name: Gemeinsame Erlebnisse in Mixed Reality
           href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
         - name: Azure Spatial Anchors
-          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+          href: /azure/spatial-anchors/
         - name: Spectator View
           href: platform-capabilities-and-apis/spectator-view.md
         - name: WebRTC
@@ -423,9 +435,9 @@
         - name: Versionsverlauf
           href: platform-capabilities-and-apis/holographic-remoting-version-history.md
         - name: Holographic Remoting-Software – Lizenzbedingungen
-          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting für HoloLens (Gen1)
-          href: 'https://docs.microsoft.com'
+          href: null
         - name: Hinzufügen von Holographic Remoting
           href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App-Qualität und Tests
