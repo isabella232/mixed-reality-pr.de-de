@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
-ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc7a4db5a3b4d853f2912a5e8e022fddd372e105
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580220"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635388"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. hinzufügen räumlicher Audiodaten zu Ihrem Unity-Projekt
 
@@ -63,7 +63,7 @@ Befolgen Sie zu diesem Zweck zunächst die Anweisungen unter [Initialisieren des
 
 1. [Erstellen und Festlegen der Szene](mr-learning-base-02.md#creating-and-configuring-the-scene) und versehen eines geeigneten namens für die Szene, z. b. *spatialaudio*
 
-Befolgen Sie dann die Anweisungen unter [Ändern der Anzeige Option räumliches Bewusstsein](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) , um sicherzustellen, dass das mrtk-Konfigurations Profil für Ihre Szene **defaultxrsdkconfigurationprofile** ist, und ändern Sie die Anzeigeoptionen für das Mesh Spatial Awareness in **oksion**.
+Befolgen Sie dann die Anweisungen unter [Ändern der Anzeige Option räumliches Bewusstsein](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) , um sicherzustellen, dass das mrtk-Konfigurations Profil für Ihre Szene **DefaultHoloLens2ConfigurationProfile** ist, und ändern Sie die Anzeigeoptionen für das Mesh Spatial Awareness in **oksion**.
 
 ## <a name="adding-microsoft-spatializer-to-the-project"></a>Hinzufügen von Microsoft spatializer zum Projekt
 

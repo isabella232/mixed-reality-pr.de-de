@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580817"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635398"
 ---
 # <a name="the-making-of-kippys-escape"></a>Das Erstellen von Kippy-Escapezeichen
 
@@ -62,21 +62,21 @@ Um den kurzen Produktions Zeitplan beizubehalten, haben wir uns zugestimmt, dass
 
 Der Escapezeichen-Escapezeichen basiert stark auf den Komponenten der Mixed Reality-UX-Tools, um das Spiel interaktiv zu gestalten, d.h. Hand Interaktionen, Steuerelemente, Manipulatoren, Schieberegler und Schaltflächen.   
 
-Der [Actor für die Hand Interaktion](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html) ermöglicht die direkte und lange Bearbeitung von holograms. Zu Beginn der "Kippy"-Escapesequenz erhält der Benutzer die Möglichkeit, den Speicherort des Spiels festzulegen. Hand Balken, die sich aus der Benutzer Palme erstrecken, erleichtern es Ihnen, große Hologramme zu bearbeiten, die weit entfernt sind, wie im folgenden GIF dargestellt.  
+Der [Actor für die Hand Interaktion](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) ermöglicht die direkte und lange Bearbeitung von holograms. Zu Beginn der "Kippy"-Escapesequenz erhält der Benutzer die Möglichkeit, den Speicherort des Spiels festzulegen. Hand Balken, die sich aus der Benutzer Palme erstrecken, erleichtern es Ihnen, große Hologramme zu bearbeiten, die weit entfernt sind, wie im folgenden GIF dargestellt.  
 
 ![Hand Interaktion Actor GIF](images/kippys-escape/kippys-escape-img-06.gif)
 
-Die Platzhalter Szene selbst kann mithilfe der [bounds-Steuerungs](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/BoundsControl.html) Komponente der UX-Tools gezogen und gedreht werden.  
+Die Platzhalter Szene selbst kann mithilfe der [bounds-Steuerungs](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/BoundsControl.html) Komponente der UX-Tools gezogen und gedreht werden.  
 
-Auf der zweiten Insel muss der Benutzer Edelsteine abrufen und in den entsprechenden Slots platzieren. In den Edelsteinen sind [Manipulatoren](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/Manipulator.html) angefügt, die es dem Benutzer ermöglichen, diese auszuwählen und zu platzieren. 
+Auf der zweiten Insel muss der Benutzer Edelsteine abrufen und in den entsprechenden Slots platzieren. In den Edelsteinen sind [Manipulatoren](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) angefügt, die es dem Benutzer ermöglichen, diese auszuwählen und zu platzieren. 
 
 ![Manipulatorbeispiel GIF](images/kippys-escape/kippys-escape-img-07.gif)
 
-Eine [Schaltfläche](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PressableButton.html) , die Sie verwenden können, ist der Schlüssel, um Bomben zur Verwendung auf der dritten Insel aufzubringen.  
+Eine [Schaltfläche](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) , die Sie verwenden können, ist der Schlüssel, um Bomben zur Verwendung auf der dritten Insel aufzubringen.  
 
 ![Beispiel für eine Schaltfläche zum Komprimieren](images/kippys-escape/kippys-escape-img-08.gif)
 
-Auf [](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/PinchSlider.html) der vierten Insel wird eine Schiebereglerkomponente angezeigt, die die endgültige Bridge auslöst, die ausgelöst werden soll.  
+Auf [](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PinchSlider.html) der vierten Insel wird eine Schiebereglerkomponente angezeigt, die die endgültige Bridge auslöst, die ausgelöst werden soll.  
 
 ![Beispiel für Schieberegler-Komponente GIF](images/kippys-escape/kippys-escape-img-09.gif) 
 

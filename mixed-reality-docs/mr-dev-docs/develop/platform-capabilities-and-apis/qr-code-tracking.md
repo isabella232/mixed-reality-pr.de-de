@@ -3,19 +3,19 @@ title: Nachverfolgen von QR-Codes
 description: Erfahren Sie, wie Sie QR-Codes erkennen, Webcam-Funktionen hinzufügen und Koordinatensysteme in Mixed Reality-Apps auf HoloLens 2 verwalten.
 author: dorreneb
 ms.author: dobrown
-ms.date: 05/15/2019
+ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, standortbezogene Unterhaltung, VR-Arcade, Arcade, immersiv, QR, QR-Code, hololens2
-ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583141"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635432"
 ---
 # <a name="qr-code-tracking"></a>Nachverfolgen von QR-Codes
 
-HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordinatensystem an der Position jedes Codes in der realen Welt einrichten.
+HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordinatensystem an der Position jedes Codes in der realen Welt einrichten. Nachdem Sie die Webcam Ihres Geräts aktiviert haben, können Sie QR-Codes in den neuesten Versionen ihrer Unreal-oder Unity-Projekte erkennen. Bevor Sie in die Produktion gehen, empfiehlt es sich, die [bewährten Methoden](#best-practices-for-qr-code-detection) zu befolgen, die wir am Ende des Artikels festgelegt haben.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
