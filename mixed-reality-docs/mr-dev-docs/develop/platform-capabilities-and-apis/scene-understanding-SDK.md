@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity
-ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
+ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583753"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758370"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Übersicht über das Szene Verständnis von SDK
 
@@ -432,7 +432,7 @@ Wenn Sie über eine HoloLens2 verfügen, können Sie jede Szene speichern, die S
 
 Wenn Sie nicht über ein HoloLens2-Gerät verfügen, aber mit Szenen Verständnis experimentieren möchten, müssen Sie eine vorab erfasste Szene herunterladen. Das Beispiel für Szenen Verständnis wird derzeit in serialisierten Szenen geliefert, die Sie herunterladen und in ihrer eigenen Weise verwenden können. Sie finden Sie hier:
 
-[Szenen Einblick in Beispiel Szenen](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[Szenen Einblick in Beispiel Szenen](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>Siehe auch
 
