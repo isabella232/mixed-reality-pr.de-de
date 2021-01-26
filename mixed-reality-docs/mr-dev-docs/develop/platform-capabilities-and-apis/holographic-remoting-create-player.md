@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, nuget, App-Manifest, Player Kontext, Remote-app, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: b6a0d65b8ec1f07f7ebaae17b9921d48105474a4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 391650025398b4bdd89e30db1df7df5e3d6ab5f2
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581243"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810128"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>Schreiben einer benutzerdefinierten Holographic Remoting Player-App
 
@@ -27,7 +27,7 @@ Ein Holographic Remoting Player ermöglicht Ihrer APP das Anzeigen von Holograph
 Ein guter Ausgangspunkt ist eine funktionierende DirectX-basierte UWP-APP, die bereits auf die Windows Mixed Reality-API abzielt. Weitere Informationen finden Sie unter [Übersicht über die DirectX-Entwicklung](../native/directx-development-overview.md). Wenn Sie keine vorhandene APP haben und von Grund auf neu beginnen möchten, ist die [Projektvorlage C++ Holographic](../native/creating-a-holographic-directx-project.md) ein guter Ausgangspunkt.
 
 >[!IMPORTANT]
->Jede APP, die Holographic Remoting verwendet, sollte für die Verwendung eines [Multithread-Apartment](//windows/win32/com/multithreaded-apartments)erstellt werden. Die Verwendung eines [Single Thread-Apartment](//windows/win32/com/single-threaded-apartments) wird unterstützt, führt jedoch zu einer nicht optimalen Leistung und kann während der Wiedergabe möglicherweise zu einem stutor werden. Bei Verwendung von C++/WinRT [WinRT:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) ist ein Multithread-Apartment der Standard.
+>Jede APP, die Holographic Remoting verwendet, sollte für die Verwendung eines [Multithread-Apartment](/windows/win32/com/multithreaded-apartments)erstellt werden. Die Verwendung eines [Single Thread-Apartment](/windows/win32/com/single-threaded-apartments) wird unterstützt, führt jedoch zu einer nicht optimalen Leistung und kann während der Wiedergabe möglicherweise zu einem stutor werden. Bei Verwendung von C++/WinRT [WinRT:: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) ist ein Multithread-Apartment der Standard.
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Holen Sie sich das Holographic Remoting-nuget-Paket.
 
@@ -94,7 +94,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 >[!WARNING]
 >Holographic Remoting funktioniert durch das Ersetzen der Windows Mixed Reality-Laufzeit, die Teil von Windows ist, durch eine Remoting-spezifische Laufzeit. Dies erfolgt während der Erstellung des Player Kontexts. Aus diesem Grund kann jeder beliebige Windows Mixed Reality-API-Aufrufe vor dem Erstellen des Player Kontexts zu unerwartetem Verhalten führen. Die empfohlene Vorgehensweise besteht darin, den Player Kontext so früh wie möglich zu erstellen, bevor Sie mit jeder gemischten Reality-API interagieren. Erstellen oder Abrufen von Objekten, die über eine Windows Mixed Reality-API erstellt oder abgerufen wurden, vor dem aufgerufenen ```PlayerContext::Create``` von Objekten, die später erstellt oder abgerufen werden
 
-Als nächstes kann der holographicspace durch Aufrufen von [holographicspace. createforcorewindow](//uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)erstellt werden.
+Als nächstes kann der holographicspace durch Aufrufen von [holographicspace. createforcorewindow](/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)erstellt werden.
 
 ```cpp
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
@@ -177,9 +177,9 @@ winrt::Microsoft::Holographic::AppRemoting::ConnectionState state = m_playerCont
 
 ## <a name="display-the-remotely-rendered-frame"></a>Remote gerenderten Frame anzeigen
 
-Um den Remote gerenderten Inhalt anzuzeigen, aufrufen Sie, ```PlayerContext::BlitRemoteFrame``` während Sie einen [holographicframe](//uwp/api/windows.graphics.holographic.holographicframe)rendern. 
+Um den Remote gerenderten Inhalt anzuzeigen, aufrufen Sie, ```PlayerContext::BlitRemoteFrame``` während Sie einen [holographicframe](/uwp/api/windows.graphics.holographic.holographicframe)rendern. 
 
-```BlitRemoteFrame``` erfordert, dass der Hintergrund Puffer für den aktuellen holographicframe als Renderziel gebunden ist. Der Hintergrund Puffer kann von [holographiccamer-deringparameters](//uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters) über die [Direct3D11BackBuffer](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer) -Eigenschaft empfangen werden.
+```BlitRemoteFrame``` erfordert, dass der Hintergrund Puffer für den aktuellen holographicframe als Renderziel gebunden ist. Der Hintergrund Puffer kann von [holographiccamer-deringparameters](/uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters) über die [Direct3D11BackBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer) -Eigenschaft empfangen werden.
 
 Wenn Sie aufgerufen wird, wird ```BlitRemoteFrame``` der letzte empfangene Frame aus der Remote Anwendung in den BackBuffer von holographicframe kopiert. Außerdem wird der Fokus Punktsatz festgelegt, wenn die Remote Anwendung während des Renderings des Remote Frames einen Fokuspunkt angegeben hat.
 
@@ -190,8 +190,8 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 >[!NOTE]
 >```PlayerContext::BlitRemoteFrame``` überschreibt möglicherweise den Fokuspunkt für den aktuellen Frame. 
->- Um einen Fall Back Fokuspunkt anzugeben, nennen Sie [holographiccamerarenderingparameters:: setfocuspoint](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) vor ```PlayerContext::BlitRemoteFrame``` . 
->- Um den Remote Fokuspunkt zu überschreiben, wenden Sie [holographiccamer-deringparameters:: setfocuspoint](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  nach an ```PlayerContext::BlitRemoteFrame``` .
+>- Um einen Fall Back Fokuspunkt anzugeben, nennen Sie [holographiccamerarenderingparameters:: setfocuspoint](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) vor ```PlayerContext::BlitRemoteFrame``` . 
+>- Um den Remote Fokuspunkt zu überschreiben, wenden Sie [holographiccamer-deringparameters:: setfocuspoint](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)  nach an ```PlayerContext::BlitRemoteFrame``` .
 
 Bei Erfolg wird ```BlitRemoteFrame``` zurückgegeben ```BlitResult::Success_Color``` . Andernfalls wird die Fehlerursache zurückgegeben:
 - ```BlitResult::Failed_NoRemoteFrameAvailable```: Fehlgeschlagen, da kein Remote Rahmen verfügbar ist.
@@ -237,7 +237,7 @@ m_playerContext.BlitRemoteFrameTimeout(500ms);
 
 ## <a name="optional-get-statistics-about-the-last-remote-frame"></a>Optional: Statistiken zum letzten Remote Rahmen erhalten
 
-Zum Diagnostizieren von Leistungs-oder Netzwerkproblemen können Statistiken über den letzten Remote Rahmen über die- ```PlayerContext::LastFrameStatistics``` Eigenschaft abgerufen werden. Statistiken werden während des Aufrufes [holographicframe aktualisiert::P "Ressentiments usingcurrentvorhersage](//uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)".
+Zum Diagnostizieren von Leistungs-oder Netzwerkproblemen können Statistiken über den letzten Remote Rahmen über die- ```PlayerContext::LastFrameStatistics``` Eigenschaft abgerufen werden. Statistiken werden während des Aufrufes [holographicframe aktualisiert::P "Ressentiments usingcurrentvorhersage](/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)".
 
 ```cpp
 // Get statistics for the last presented frame.
@@ -256,5 +256,5 @@ Benutzerdefinierte Datenkanäle können zum Senden von Benutzerdaten über die b
 * [Benutzerdefinierte Holographic Remoting-Datenkanäle](holographic-remoting-custom-data-channels.md)
 * [Einrichten einer sicheren Verbindung mit Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting-Software – Lizenzbedingungen](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

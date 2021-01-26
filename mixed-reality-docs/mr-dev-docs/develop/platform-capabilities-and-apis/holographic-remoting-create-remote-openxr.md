@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, nuget
-ms.openlocfilehash: da3114b2c8c4e04d8da9296687f92d0b23945281
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c5ba1b5c309b5d0ddd3bd46f0730f28c946d3c3f
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581230"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810086"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>Schreiben einer Holographic Remoting-Remote-App mithilfe der openxr-API
 
@@ -27,7 +27,7 @@ Sämtlicher Code auf dieser Seite und in den Arbeitsprojekten finden Sie im [Git
 Ein guter Ausgangspunkt ist eine funktionierende openxr-basierte Desktop-oder UWP-app. Weitere Informationen finden Sie [unter Getting Started with openxr](../native/openxr-getting-started.md).
 
 >[!IMPORTANT]
->Jede APP, die Holographic Remoting verwendet, sollte für die Verwendung eines [Multithread-Apartment](//windows/win32/com/multithreaded-apartments)erstellt werden. Die Verwendung eines [Single Thread-Apartment](//windows/win32/com/single-threaded-apartments) wird unterstützt, führt jedoch zu einer nicht optimalen Leistung und kann während der Wiedergabe möglicherweise zu einem stutor werden. Bei Verwendung von C++/WinRT [WinRT:: init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) ist ein Multithread-Apartment der Standard.
+>Jede APP, die Holographic Remoting verwendet, sollte für die Verwendung eines [Multithread-Apartment](/windows/win32/com/multithreaded-apartments)erstellt werden. Die Verwendung eines [Single Thread-Apartment](/windows/win32/com/single-threaded-apartments) wird unterstützt, führt jedoch zu einer nicht optimalen Leistung und kann während der Wiedergabe möglicherweise zu einem stutor werden. Bei Verwendung von C++/WinRT [WinRT:: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) ist ein Multithread-Apartment der Standard.
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Holen Sie sich das Holographic Remoting-nuget-Paket.
 
@@ -209,5 +209,5 @@ Wenn Ihre Remote-app DX12 verwendet, verwenden Sie XrRemotingFrameMirrorImageD3D
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Einrichten einer sicheren Verbindung mit Holographic Remoting](holographic-remoting-secure-connection.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting-Software – Lizenzbedingungen](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

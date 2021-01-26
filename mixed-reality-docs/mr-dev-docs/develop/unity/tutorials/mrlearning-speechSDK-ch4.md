@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10, LUIS, LUIS-Portal, Absicht, Entitäten, Äußerungen, Verstehen natürlicher Sprache
 ms.localizationpriority: high
-ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 8d840855321de5d4e055b944783649c9d8028f9a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007770"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581477"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Einrichten des Verstehens von Absichten und natürlicher Sprache
 
@@ -73,7 +73,7 @@ Geben Sie noch auf der Seite „Erstellen“ die folgenden Werte ein:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
-Navigieren Sie als nächstes zur Registerkarte **Überprüfen + Erstellen**, überprüfen Sie die Details, und klicken Sie dann auf die Schaltfläche **Erstellen** am unteren Rand der Seite, um die Ressource sowie die neue Ressourcengruppe zu erstellen, falls Sie die Erstellung einer Ressourcengruppe konfiguriert haben:
+Klicken Sie als Nächstes auf die Registerkarte **Überprüfen + Erstellen**, überprüfen Sie die Details, und klicken Sie dann auf die Schaltfläche **Erstellen** am unteren Rand der Seite, um die Ressource sowie die neue Ressourcengruppe zu erstellen, falls Sie die Erstellung einer Ressourcengruppe konfiguriert haben:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
@@ -107,13 +107,14 @@ Dies sind die wichtigsten Schritte, die Sie durchführen müssen:
 Melden Sie sich bei <a href="https://www.luis.ai" target="_blank">LUIS</a> mit demselben Benutzerkonto an, das Sie zum Erstellen der Azure-Ressource im vorherigen Abschnitt verwendet haben, wählen Sie Ihr Land/Ihre Region aus, und stimmen Sie den Nutzungsbedingungen zu. Wenn Sie im nächsten Schritt aufgefordert werden, **Ihr Azure-Konto zu verknüpfen**, wählen Sie **Weiterhin den Testschlüssel verwenden** aus, um stattdessen eine Azure-Erstellungsressource zu verwenden.
 
 > [!NOTE]
-> Wenn Sie sich bereits für LUIS registriert haben und Ihr Erstellungs-Testschlüssel abgelaufen ist, finden Sie Informationen zum Umstellen Ihrer LUIS-Erstellungsressource auf Azure in der [Migrieren zu einem Azure-Ressourcen-Erstellungsschlüssel](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring)-Dokumentation.
+> Wenn Sie sich bereits für LUIS registriert haben und Ihr Erstellungs-Testschlüssel abgelaufen ist, finden Sie Informationen zum Umstellen Ihrer LUIS-Erstellungsressource auf Azure in der [Migrieren zu einem Azure-Ressourcen-Erstellungsschlüssel](/azure/cognitive-services/luis/luis-migration-authoring)-Dokumentation.
 
-Navigieren Sie nach der Anmeldung zur Seite **Meine Apps**, klicken Sie auf **Neue App erstellen**, und geben Sie im Fenster **Neue App erstellen** die folgenden Werte ein:
+Klicken Sie nach der Anmeldung auf **Neue App**, und geben Sie folgende Werte in das Popupfenster **Neue App erstellen** ein:
 
 * Geben Sie für **Name** einen passenden Namen ein, z. B. *MRTK-Tutorials – AzureSpeechServices*
 * Wählen Sie für **Kultur** die Option **Englisch** aus
 * Geben Sie für **Beschreibung** optional eine passende Beschreibung ein
+* Wählen Sie als **Vorhersageressource** die Vorhersageressource in der Dropdownliste aus, die im Azure-Portal erstellt wurde.
 
 Klicken Sie dann auf die Schaltfläche **Erstellen**, um die neue App zu erstellen.
 
@@ -125,7 +126,7 @@ Wenn die neue App erstellt wurde, werden Sie zur **Dashboard** Seite der App gel
 
 ### <a name="2-create-intents"></a>2. Erstellen von Absichten
 
-Navigieren Sie von der Dashboard-Seite zur Seite „Build > App Assets > **Intents**“ (Erstellen > App-Ressourcen > Absichten), klicken Sie dann auf **Create new intent** (Neue Absicht erstellen), und geben Sie den folgenden Wert im Popupfenster **Create new intent** ein:
+Navigieren Sie von der Dashboard-Seite zur Seite „Build > App Assets > **Intents**“ (Erstellen > App-Ressourcen > Absichten), klicken Sie dann auf **Create** (Erstellen), und geben Sie den folgenden Wert im Popupfenster **Create new intent** (Neue Absicht erstellen) ein:
 
 * Geben Sie als **Absichtsname** **PressButton** ein
 
@@ -164,12 +165,12 @@ Wenn alle Beispieläußerungen hinzugefügt wurden, sollte die Seite Ihrer Absic
 
 ### <a name="4-create-entities"></a>4. Erstellen von Entitäten
 
-Navigieren Sie von der Seite der Absicht PressButton zur Seite Erstellen > App-Ressourcen > **Entitäten**, klicken Sie dann auf **Neue Entität erstellen**, und geben Sie die folgenden Werte im Popupfenster **Neue Entität erstellen** ein:
+Navigieren Sie von der Seite der Absicht PressButton zur Seite Erstellen > App-Ressourcen > **Entitäten**, klicken Sie dann auf **Erstellen**, und geben Sie die folgenden Werte im Popupfenster **Neue Entität erstellen** ein:
 
 * Geben Sie als **Entitätsname** **Aktion** ein
-* Wählen Sie als **Entitätstyp** **Einfach** aus
+* Wählen Sie als **Entitätstyp** **Maschinell gelernt** aus.
 
-Klicken Sie dann auf die Schaltfläche **Fertig**, um die neue Entität zu erstellen.
+Klicken Sie dann auf die Schaltfläche **Erstellen**, um die neue Entität zu erstellen:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
@@ -188,7 +189,7 @@ Sobald Sie sich wieder auf der Seite der Absicht PressButton befinden, klicken S
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
-Der Ausdruck **Fahre fort** ist jetzt als Entitätswert für **Aktion** definiert. Wenn Sie den Mauszeiger auf dem Entitätsnamen „Aktion“ ruhen lassen, können Sie den zugeordneten Wert der Entität Aktion sehen:
+Der Ausdruck **Fahre fort** ist jetzt als Entitätswert für **Aktion** definiert. Nun wird der Aktionsentitätswert unter dem Ausdruck „Fahre fort“ angezeigt:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
@@ -199,7 +200,7 @@ Klicken Sie als nächstes auf das Wort **starte**, und wählen Sie dann im Konte
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
-Das Wort **starte** ist jetzt als Entitätswert für **Ziel** definiert. Wenn Sie den Mauszeiger auf dem Entitätsnamen „Ziel“ ruhen lassen, können Sie den zugeordneten Wert der Entität Ziel sehen:
+Das Wort **starte** ist jetzt als Entitätswert für **Ziel** definiert. Nun wird der Entitätswert von „Ziel“ unter dem Wort „starte“ angezeigt:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
@@ -219,14 +220,6 @@ Die Beispieläußerung „Fahre fort, starte die Rakete“ für die PressButton-
 Wenn alle Beispieläußerungen bezeichnet wurden, sollte die Seite Ihrer Absicht PressButton so ähnlich aussehen:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
-
-Um mit einem alternativen Verfahren zu prüfen, ob Sie die richtigen Entitäten zugewiesen haben, klicken Sie auf das Menü **Ansichtsoptionen**, und wechseln Sie zur Ansicht **Entitätswerte anzeigen**:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-6.png)
-
-Jetzt, mit einer Ansicht, in der Entitätswerte angezeigt werden, können Sie den Mauszeiger auf den bezeichneten Wörtern und Ausdrücken ruhen lassen, um schnell den Namen der zugewiesenen Entität zu überprüfen:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-7.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6. Trainieren, Testen und Veröffentlichen der App
 
@@ -249,7 +242,7 @@ Wenn die Testäußerung verarbeitet wurde, klicken Sie auf **Prüfen**, um das T
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
-Um die App zu veröffentlichen, klicken Sie oben rechts auf die Schaltfläche **Publish** (Veröffentlichen), wählen Sie dann im Popupfenster **Choose your publishing slot and settings** (Wählen Sie Ihren Veröffentlichungsslot und Ihre Einstellungen) **Production** (Produktion) aus, und klicken Sie auf die Schaltfläche **Publish**:
+Um die App zu veröffentlichen, klicken Sie oben rechts auf die Schaltfläche **Publish** (Veröffentlichen), wählen Sie dann im Popupfenster **Choose your publishing slot and settings** (Wählen Sie Ihren Veröffentlichungsslot und Ihre Einstellungen) **Production** (Produktion) aus, und klicken Sie auf die Schaltfläche **Fertig**:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
@@ -257,25 +250,9 @@ Warten Sie auf den Abschluss des Veröffentlichungsprozesses:
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-### <a name="7-assign-an-azure-prediction-resource-to-the-app"></a>7. Zuweisen einer Azure-Vorhersageressource zur App
+Navigieren Sie zur Seite „Verwalten > Anwendungseinstellungen > **Azure-Ressourcen**“. Ihre Seite „Azure-Ressourcen“ sollte ungefähr wie folgt aussehen:
 
-Navigieren Sie zur Seite Verwalten > Anwendungseinstellungen > **Azure-Ressourcen**:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-1.png)
-
-Klicken Sie auf der Seite „Azure-Ressourcen“ auf die Schaltfläche **Vorhersageressource hinzufügen**, und wählen Sie die folgenden Werte im Popupfenster **Ihrer App eine Ressource zuweisen** aus:
-
-* Wählen Sie als **Mandantenname** den Namen Ihres Mandanten aus
-* Wählen Sie als **Abonnementname** das gleiche Abonnement aus, das Sie zuvor beim [Erstellen der Azure Language Understanding-Ressource](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource) verwendet haben
-* Wählen Sie als **Name der LUIS-Ressource** die gleiche Vorhersageressource aus, die Sie zuvor beim [Erstellen der Azure Language Understanding-Ressource](mrlearning-speechSDK-ch4.md#creating-the-azure-language-understanding-resource) erstellt haben
-
-Klicken Sie dann auf die Schaltfläche **Ressource zuweisen**, um Ihrer App die Azure-Vorhersageressource zuzuweisen:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-2.png)
-
-Wenn die Ressource zugewiesen wurde, sollte Ihre Seite „Azure-Ressourcen“ so ähnlich wie in der folgenden Abbildung aussehen:
-
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step7-3.png)
+![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>Verbinden des Unity-Projekts mit der LUIS-App
 

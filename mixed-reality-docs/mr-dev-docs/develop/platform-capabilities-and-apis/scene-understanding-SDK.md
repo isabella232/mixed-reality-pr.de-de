@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity
-ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
-ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
+ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758370"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810136"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Übersicht über das Szene Verständnis von SDK
 
@@ -117,7 +117,7 @@ Sceneobjects können eine der folgenden Möglichkeiten aufweisen:
 
 <table>
 <tr>
-<th>Sceneobjectkind</th> <th>BESCHREIBUNG</th>
+<th>Sceneobjectkind</th> <th>Beschreibung</th>
 </tr>
 <tr><td>Hintergrund</td><td>Das sceneobject-Objekt ist bekannt, dass es sich <b>nicht</b> um eines der anderen erkannten Arten von Szenen Objekten handelt. Diese Klasse sollte nicht mit unknown verwechselt werden, wenn der Hintergrund bekanntermaßen nicht "Wall/Floor/Ceiling" ist usw... Obwohl Unknown noch nicht kategorisiert ist.</b></td></tr>
 <tr><td>Wall</td><td>Eine physische Wand. Wände werden als unveränderbare Umgebungs Strukturen angesehen.</td></tr>
@@ -265,7 +265,7 @@ Beachten Sie, dass es sich um das sceneobject-Objekt mit der Transformation hand
 
 Das Verständnis der Szene hat beim Umgang mit Transformationen einen absichtlichen Versuch unternommen, an herkömmlichen 3D-Szenen Darstellungen auszurichten. Daher ist jede Szene auf ein einzelnes Koordinatensystem beschränkt, ähnlich wie die gängigsten 3D-Umwelt Darstellungen. Sceneobjects stellen jeweils ihren Speicherort relativ zu diesem Koordinatensystem bereit. Wenn Ihre Anwendung mit Szenen beschäftigt ist, die das Limit eines einzelnen Ursprungs überschreiten, können Sie sceneobjects an spatialanchor anfügen oder mehrere Szenen generieren und zusammen zusammenführen, aber aus Gründen der Einfachheit gehen wir davon aus, dass die wasserdichten Szenen in Ihrem eigenen Ursprung vorhanden sind, der durch eine durch Scene. originspatialgraphnodeid definierte NodeId lokalisiert wird.
 
-Der folgende Unity-Code zeigt beispielsweise, wie Sie die Windows-perception-und Unity-APIs verwenden, um Koordinatensysteme gleich abzustimmen. Ausführliche Informationen zum Abrufen eines spatialcoordinatesystem, das dem Welt [Ursprung von Unity](//windows/mixed-reality/unity-xrdevice-advanced) entspricht, finden Sie unter [spatialcoordinatesystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [spatialgraphinteroppreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) .
+Der folgende Unity-Code zeigt beispielsweise, wie Sie die Windows-perception-und Unity-APIs verwenden, um Koordinatensysteme gleich abzustimmen. Ausführliche Informationen zum Abrufen eines spatialcoordinatesystem, das dem Welt [Ursprung von Unity](/windows/mixed-reality/unity-xrdevice-advanced) entspricht, finden Sie unter [spatialcoordinatesystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [spatialgraphinteroppreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) .
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

@@ -7,21 +7,21 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Objektinteraktionen, Begrenzungsrahmen
 ms.localizationpriority: high
-ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007930"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578751"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interagieren mit 3D-Objekten
 
-In diesem Tutorial erfahren Sie, wie Sie die nahe und ferne Manipulation von 3D-Objekten aktivieren und die zulässigen Manipulationsarten einschränken. Darüber hinaus erfahren Sie, wie Sie 3D-Objekte mit Begrenzungsrahmen umgeben, um die Steuerung der Objektmanipulation zu vereinfachen.
+In diesem Tutorial erfahren Sie, wie Sie die nahe und ferne Manipulation von 3D-Objekten aktivieren und die zulässigen Manipulationsarten einschränken. Darüber hinaus erfahren Sie, wie Sie 3D-Objekte mit Begrenzungssteuerelementen umgeben, um die Steuerung der Objektmanipulation zu vereinfachen.
 
 ## <a name="objectives"></a>Ziele
 
 * Erfahren, wie 3D-Objekte so konfiguriert werden, dass Interaktion mit ihnen möglich ist
-* Erfahren, wie 3D-Objekte mit Begrenzungsrahmen versehen werden
+* Erfahren, wie 3D-Objekte mit Begrenzungssteuerelementen versehen werden
 
 ## <a name="manipulating-3d-objects"></a>Manipulieren von 3D-Objekten
 
@@ -59,6 +59,9 @@ Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts**“
 > Um mehrere Objekte auszuwählen, die sich nicht nebeneinander befinden, drücken und halten Sie die STRG-Taste, während Sie die Maus verwenden, um ein beliebiges Objekt auszuwählen.
 
 > [!NOTE]
+> Wenn Sie einen Objektmanipulator (Skript) hinzufügen, wird in diesem Fall der Einschränkungs-Manager (Skript) automatisch hinzugefügt, weil der Objektmanipulator (Skript) davon abhängt.
+
+> [!NOTE]
 > Im Rahmen dieses Tutorials wurden den Rover-Teilen bereits Collider hinzugefügt. Weitere Informationen zu Collidern finden Sie in der Unity-Dokumentation zu <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collidern</a>.
 
 > [!NOTE]
@@ -73,7 +76,7 @@ Konfigurieren Sie im Inspektorfenster, während alle Rover-Teilobjekte und das R
 > [!NOTE]
 > An diesem Punkt haben Sie die Objektmanipulation für alle Rover-Teilobjekte und das RoverAssembly-Objekt aktiviert.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Audio** (Medienobjekte > MRTK > SDK > Standardmedienobjekte), um die Audioclips zu suchen:
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **StandardAssets** > **Audio**, um die Audioclips zu suchen:
 
 ![Unity-Projektfenster mit ausgewähltem Ordner „Audio“](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -123,7 +126,7 @@ Wählen Sie im Hierarchiefenster das **RoverExplorer**-Objekt aus, und verwenden
 * **BoundingBox**-Komponente(Begrenzungsrahmen)
 * **Object Manipulator (Script)** -Komponente
 
-**Deaktivieren** Sie dann das Kontrollkästchen neben beiden Komponenten, um sie als standardmäßig **deaktiviert** festzulegen:
+**Deaktivieren** Sie dann das Kontrollkästchen neben allen Komponenten, um sie als standardmäßig **deaktiviert** festzulegen:
 
 ![Unity mit ausgewähltem RoverExplorer-Objekt und hinzugefügten und deaktivierten Komponenten](images/mr-learning-base/base-07-section2-step1-1.png)
 
@@ -131,7 +134,10 @@ Wählen Sie im Hierarchiefenster das **RoverExplorer**-Objekt aus, und verwenden
 > Die Visualisierung von Begrenzungsrahmen wird zur Laufzeit erstellt und ist daher erst sichtbar, wenn Sie in den Spielmodus wechseln.
 
 > [!NOTE]
-> Die BoundingBox-Komponente fügt zur Laufzeit automatisch die NearInteractionGrabbable-Komponente hinzu. Daher brauchen wir diese Komponente nicht hinzuzufügen, um die eingeschlossenen Objekte mit nachverfolgten Händen zu greifen.
+>Die BoundingBox-Komponente fügt zur Laufzeit automatisch die NearInteractionGrabbable-Komponente hinzu. Daher brauchen wir diese Komponente nicht hinzuzufügen, um die eingeschlossenen Objekte mit nachverfolgten Händen zu greifen.
+
+> [!NOTE]
+>Der Objektmanipulator (Skript) fügt automatisch den Einschränkungs-Manager (Skript) hinzu.
 
 Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection**“ (Menü > Schaltflächensammlung) auf, um die vier Schaltflächen anzuzeigen, benennen Sie die dritte Schaltfläche in **BoundingBox_Enable** um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
@@ -143,7 +149,7 @@ Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection**“ (M
 * Weisen Sie das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **ObjectManipulator** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist
-* Belassen Sie das **Symbol** als Symbol „Cube mit Begrenzungsrahmen“
+* Belassen Sie das **Symbol** als Symbol „Cube mit Begrenzungssteuerelement“.
 
 ![Unity mit ausgewähltem BoundingBox_Enable-Schaltflächenobjekt und konfigurierter Button Config Helper-Komponente](images/mr-learning-base/base-07-section2-step1-2.png)
 
@@ -157,11 +163,11 @@ Benennen Sie die vierte und letzte Schaltfläche in **BoundingBox_Disable** um, 
 * Weisen Sie das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
 * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **ObjectManipulator** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
-* Ändern Sie das **Symbol** in das Symbol „Cube mit Begrenzungsrahmen“
+* Ändern Sie das **Symbol** in das Symbol „Cube mit Begrenzungssteuerelement“.
 
 ![Unity mit ausgewähltem BoundingBox_Disable-Schaltflächenobjekt und konfigurierter Button Config Helper-Komponente](images/mr-learning-base/base-07-section2-step1-3.png)
 
-Wenn Sie jetzt in den Spielmodus wechseln und den Begrenzungsrahmen aktivieren, indem Sie auf die Schaltfläche „Aktivieren“ klicken, können Sie nahe oder ferne Interaktion verwenden, um den Begrenzungsrahmen zu bewegen, drehen und skalieren, und die Schaltfläche „Deaktivieren“ verwenden, um den Begrenzungsrahmen wieder zu deaktivieren:
+Wenn Sie jetzt in den Spielmodus wechseln und das Begrenzungssteuerelement aktivieren, indem Sie auf die Schaltfläche „Aktivieren“ klicken, können Sie nahe oder ferne Interaktion verwenden, um den Begrenzungsrahmen zu bewegen, drehen und skalieren, und die Schaltfläche „Deaktivieren“ verwenden, um den Begrenzungsrahmen wieder zu deaktivieren:
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit manipulierter Bounding Box](images/mr-learning-base/base-07-section2-step1-4.png)
 
