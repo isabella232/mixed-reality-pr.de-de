@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98052761"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605251"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,8 +17,8 @@ Erstellen Sie eine plattformübergreifende, umfassende Mixed Reality-App mit Un
 Bei der Erstellung von Mixed Reality-Apps mit Unity stehen Ihnen mehrere Hardware- und Emulatoroptionen zur Verfügung. Während sich unsere Entwicklerdokumentation auf HoloLens-Geräte konzentriert, finden Sie Abschnitte zur Geräteunterstützung mit Details zur Bereitstellung von immersiven Headsets, falls zutreffend.
 
 **Augmented Reality-Geräte**
-* [HoloLens (1. Generation)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1. Generation)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive Headsets (VR)**
 * HP Reverb und Reverb G2
@@ -48,7 +48,7 @@ Sie können **Microsoft Dynamics 365-Leitfäden** verwenden, um holografische A
 
 ## <a name="examples"></a>Beispiele
 
-Wir haben mehrere Open-Source-[Beispiel-Apps](../unity/samples.md), die Sie herunterladen können, um damit zu experimentieren und ein Gefühl für ein Mixed Reality-Endprodukt in Unity zu bekommen. Es stehen auch MRTK-Beispielszenen bereit, mit denen Sie bestimmte Features testen können:
+Wir haben mehrere Open-Source-[Beispiel-Apps](../features-and-samples.md), die Sie herunterladen können, um damit zu experimentieren und ein Gefühl für ein Mixed Reality-Endprodukt in Unity zu bekommen. Es stehen auch MRTK-Beispielszenen bereit, mit denen Sie bestimmte Features testen können:
 * [Szene mit Beispielen für Handinteraktion (MRTK) für Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor): Die Beispielszene „HandInteractionExamples.unity“ enthält verschiedene Typen von Interaktionen und Steuerelementen der Benutzeroberfläche, die artikulierte Handeingaben hervorheben.
 
 * [Beispiele für Eyetracking (MRTK) für Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html): Auf dieser Seite erfahren Sie, wie Sie schnell mit der Verwendung der Blickverfolgung (Eyetracking) in MRTK beginnen können, indem Sie auf unseren bereitgestellten MRTK-Beispielen für die Blickverfolgung aufbauen.
@@ -67,8 +67,8 @@ Erstellen Sie eine plattformübergreifende, umfassende Mixed Reality-App mit Un
 Bei der Erstellung von Mixed Reality-Apps mit der Unreal-Engine stehen Ihnen mehrere Hardware-, Emulator- und Streamingoptionen zur Verfügung. Unsere Entwicklerdokumentation konzentriert sich zwar auf HoloLens-Geräte, aber Sie können Ihre Unreal-Projekte als x64-Desktop-Apps verpacken und sie genauso gut auf immersiven Headsets ausführen.
 
 **Augmented Reality-Geräte**
-* [HoloLens (1. Generation)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (1. Generation)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive Headsets (VR)**
 * HP Reverb und Reverb G2
@@ -84,7 +84,8 @@ Bei der Erstellung von Mixed Reality-Apps mit der Unreal-Engine stehen Ihnen meh
 
 |  Tool/SDK  |  Beschreibung  |
 | --- | --- |
-| [Mixed Reality-Toolkit für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | Das Mixed Reality-Toolkit für Unreal (MRTK-Unreal) umfasst eine Reihe von Komponenten in Form von Plug-Ins, Beispielen und Dokumentationsmaterial, um die Entwicklung von Mixed Reality-Anwendungen mit der Unreal Engine zu beschleunigen. |
+| [UX-Tools für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX Tools ist das erste Plug-In, das veröffentlicht wird. Derzeit wird es nur auf HoloLens 2 unterstützt. Das Plug-In enthält C++-Code, Blaupausen und Beispielressourcen für gängige UX-Funktionen für Eingabesimulationen, Handinteraktionen, Oberflächenmagnetismus und vieles mehr. |
+| [Grafiktools für Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | Grafiktools ist ein UE-Spiele-Plug-In mit Code, Blaupausen und Beispielobjekten, die erstellt wurden, um die visuelle Genauigkeit von Mixed Reality-Anwendungen zu verbessern und gleichzeitig Leistungsbudgets einzuhalten. |
 
 ## <a name="cloud-services"></a>Clouddienste
 
@@ -119,7 +120,7 @@ Erstellen Sie Mixed Reality-Apps mit einer direkten Verbindung zu den Windows Mi
 Bei der Erstellung von Mixed Reality-Apps mit der OpenXR-Entwicklung stehen Ihnen mehrere Hardware-, Emulator- und Streamingoptionen zur Verfügung. 
 
 **Augmented Reality-Geräte**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **Immersive Headsets (VR)**
 * HP Reverb und Reverb G2

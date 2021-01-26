@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, Solver, Eye Tracking, Sprachbefehle
 ms.localizationpriority: high
-ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a917aea812c262e3589110a29e2399da4c1e5348
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008080"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579269"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Einführung in die MRTK-Tutorials
 
@@ -42,14 +42,14 @@ Die Tutorials in dieser Reihe sind auf eine bestimmte Abfolge ausgelegt, also ar
 * Ein Windows 10-PC, der mit den richtigen [Tools konfiguriert](../../install-the-tools.md) ist
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) (10.0.18362.0 oder höher)
 * Ein für die [Entwicklung konfiguriertes](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode) HoloLens 2-Gerät
+
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019 LTS und hinzugefügtem Buildunterstützungsmodul für die Universelle Windows-Plattform
 
 > [!CAUTION]
-> Die empfohlene MRTK-Version für diese Tutorialreihe ist MRTK 2.4.0.
+> Die empfohlene MRTK-Version für diese Tutorialreihe ist MRTK 2.5.1.
 
 > [!CAUTION]
 > Die empfohlene Unity-Version für diese Tutorialserie ist Unity 2019 LTS. Diese Information hat Vorrang vor allen Unity-Versionsanforderungen, die in den oben verlinkten Voraussetzungen angegeben sind.
 
 > [!div class="nextstepaction"]
 > [Nächstes Tutorial: 2. Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung](mr-learning-base-02.md)
-

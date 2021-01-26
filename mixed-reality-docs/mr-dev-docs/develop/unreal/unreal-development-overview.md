@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, OpenXR
-ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247733"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580051"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
@@ -49,6 +49,8 @@ Das [Mixed Reality-Toolkit für Unreal](https://github.com/microsoft/MixedRealit
 
 * [UX Tools für Unreal](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools) ist das erste Plug-In, das veröffentlicht wird. Derzeit wird es nur auf HoloLens 2 unterstützt. Das Plug-In enthält C++-Code, Blaupausen und Beispielressourcen für gängige UX-Funktionen für Eingabesimulationen, Handinteraktionen, Oberflächenmagnetismus und vieles mehr.
 
+* [Grafiktools für Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) ist ein UE-Spiele-Plug-In mit Code, Blaupausen und Beispielobjekten, die erstellt wurden, um die visuelle Genauigkeit von Mixed Reality-Anwendungen zu verbessern und gleichzeitig Leistungsbudgets einzuhalten.
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
@@ -82,7 +84,7 @@ Die Arbeit eines Entwicklers ist nie getan, insbesondere nicht beim Lernen eines
 
 ### <a name="debugging"></a>Debuggen
 
-Wenn Sie die Anwendung mit Visual Studio debuggen möchten, während sie auf dem Gerät ausgeführt wird, befolgen Sie diese [Anweisungen](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote).
+Wenn Sie die Anwendung mit Visual Studio debuggen möchten, während sie auf dem Gerät ausgeführt wird, befolgen Sie diese [Anweisungen](/visualstudio/debugger/debug-installed-app-package#remote).
 
 ### <a name="performance"></a>Leistung
 
@@ -104,7 +106,7 @@ Die Entwicklung für Mixed Reality ist mit Leistungsprüfpunkten verbunden, die 
 | Räumliche Audiowiedergabe | 4.23 | ✔️ |
 | Zuschauerbildschirmunterstützung für Streaming | 4.24 |
 | Planar-LSR über Streaming | 4.24 |
-| [Beispiel-Apps](unreal-samples.md) | 4.24 | ✔️ |
+| [Beispiel-Apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile Multiansicht: Leistung erreicht 60 FPS | 4.25 | ✔️ |
 | Rendering der dritten Kamera | 4.25 |
 | Streaming aus einer verpackten Desktop-App | 4.25.1 | ✔️ |

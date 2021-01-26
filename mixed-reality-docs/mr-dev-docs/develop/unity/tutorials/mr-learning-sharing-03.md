@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007210"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699064"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Verbinden mehrerer Benutzer
 
@@ -63,13 +63,13 @@ Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponent
 
 Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Photon View (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
-* Weisen Sie die Komponente **Generic Net Sync (Script)** dem Feld **Observed Components** (Beobachtete Komponenten) zu.
+* Stellen Sie sicher, dass die Komponente **Generic Net Sync (Script)** dem Feld **Observed Components** (Beobachtete Komponenten) zugewiesen ist.
 
 ![Unity mit hinzugefügter und konfigurierter Photon View-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2. Erstellen des Avatars
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **StandardAssets** > **Materials**, um nach den MRTK-Materialien zu suchen.
+Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **StandardAssets** > **Materials**, um nach den MRTK-Materialien zu suchen.
 
 Klicken Sie dann im Hierarchiefenster mit der rechten Maustaste auf das **PhotonUser**-Objekt, wählen Sie **3D Object** > **Sphere** (3D-Objekt > Kugel) aus, um ein Kugelobjekt als untergeordnetes Objekt des PhotonUser-Objekts zu erstellen, und konfigurieren Sie es folgendermaßen:
 
@@ -112,7 +112,7 @@ Wenn Sie das Unity-Projekt jetzt für Ihr HoloLens-Gerät erstellen und bereitst
 ![Animation, die Unity mit vernetzten Benutzern zeigt.](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> Falls Sie eine Auffrischung zum Erstellen und Bereitstellen Ihres Unity-Projekts auf HoloLens 2 benötigen, lesen Sie die Anweisungen unter [Erstellen Ihrer App auf dem HoloLens 2-Gerät](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
+> Falls Sie eine Auffrischung zum Erstellen und Bereitstellen Ihres Unity-Projekts auf HoloLens 2 benötigen, lesen Sie die Anweisungen unter [Erstellen Ihrer App auf dem HoloLens 2-Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 > [!CAUTION]
 > Die App muss eine Verbindung mit Photon herstellen, achten Sie also darauf, dass Ihr Computer/Gerät mit dem Internet verbunden ist.

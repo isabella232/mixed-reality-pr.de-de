@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Prefabs, Hologramme, QuickInfos
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008060"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635553"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Erstellen der Benutzeroberfläche
 
@@ -97,17 +97,17 @@ Benennen Sie im Hierarchiefenster das Objekt in **Menü** um, und klappen Sie da
 
 ![Unity mit ausgewähltem Menü-Objekt und erweitertem ButtonCollection-Objekt](images/mr-learning-base/base-06-section2-step1-2.png)
 
-Benennen Sie die erste Schaltfläche in **Indicator** (Indikator) um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
+Benennen Sie die erste Schaltfläche in der ButtonCollection in „Indicator“ (Indikator) um, und konfigurieren Sie im Inspektorfenster die Komponente „Button Config Helper (Script)“ wie folgt:
 
 * Ändern Sie den **Main Label Text** (Hauptbezeichnungstext) so, dass er dem Namen der Schaltfläche entspricht.
-* Weisen Sie das **Indicator**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das Indicator-Objekt, das wie ein Chevron aussieht, dem Feld „None (Object)“ (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **GameObject** > **SetActive (bool)** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
 * Überprüfen Sie, ob das Argumentkontrollkästchen **aktiviert** ist.
 * Ändern Sie das **Symbol** zum Symbol „Suchen“
 
 ![Unity mit konfiguriertem Button Config Helper für Indicator-Schaltflächenobjekt](images/mr-learning-base/base-06-section2-step1-3.png)
 
-Wählen Sie im Hierarchiefenster das **Indikator**-Objekt aus, und führen Sie dann im Inspektorfenster folgende Aktionen aus:
+Um das Chevron-Indicator-Objekt zu deaktivieren, wählen Sie das Indicator-Objekt, das wie ein Chevron aussieht, im Hierarchiefenster aus, und gehen Sie dann wie folgt im Inspektorfenster vor:
 
 * Deaktivieren Sie das Kontrollkästchen neben ihrem Namen, um sie als standardmäßig inaktiv festzulegen.
 * Verwenden Sie die Schaltfläche **Komponente hinzufügen**, um die Komponente **Directional Indicator Controller (Script)** hinzuzufügen.
@@ -115,7 +115,7 @@ Wählen Sie im Hierarchiefenster das **Indikator**-Objekt aus, und führen Sie d
 ![Unity mit ausgewähltem und deaktiviertem Indicator-Objekt sowie hinzugefügter DirectionalIndicatorController-Komponente](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> Jetzt ist der Indikator beim Starten der App standardmäßig deaktiviert und kann durch Drücken der Schaltfläche „Indicator“ (Indikator) aktiviert werden.
+> Jetzt ist der Chevron-Indikator beim Starten der App standardmäßig deaktiviert und kann durch Drücken der Schaltfläche „Indicator“ (Indikator) aktiviert werden.
 
 Benennen Sie die zweite Schaltfläche in **TapToPlace** (Zum Platzieren tippen) um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
@@ -169,7 +169,7 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **
 Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts**“ auf, und wählen Sie alle seine untergeordneten Rover-Teilobjekte aus. Verwenden Sie dann im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um die Komponente **ToolTipSpawner** hinzuzufügen, und konfigurieren Sie sie wie folgt:
 
 * Vergewissern Sie sich, dass das Kontrollkästchen **Focus Enabled** (Fokus aktiviert) aktiviert ist, um vorzuschreiben, dass der Benutzer das Teil anblickt, damit die QuickInfo angezeigt wird.
-* Weisen Sie das **Simple Line ToolTip**-Prefab (Einfachlinie-QuickInfo) aus dem Projektfenster dem Feld **Tool Tip Prefab** (QuickInfo-Prefab) zu.
+* Weisen Sie das **Simple Line ToolTip**-Prefab (Einfachlinie-QuickInfo) aus dem Projektfenster dem Feld **Prefab** zu.
 * Ändern Sie den „ToolTip Override Settings > **Settings Mode**“ (QuickInfo-Einstellungen für die Außerkraftsetzung > Einstellungsmodus) in **Override** (Außer Kraft setzen).
 * Ändern Sie die „ToolTip Override Settings > **Manual Pivot Local Position Y**“ (QuickInfo-Einstellungen für die Außerkraftsetzung > Manuelle lokale Y-Pivotposition) in **1,5**.
 
@@ -196,4 +196,5 @@ Drücken Sie die Wiedergabe-Schaltfläche, um in den Spielmodus zu wechseln, dr�
 
 In diesem Tutorial haben Sie gelernt, wie Sie eine einfache Benutzeroberfläche mit den von MRTK bereitgestellten Schaltfläche- und Menü-Prefabs in Kombination mit der TextMeshPro-Komponente von Unity erstellen und wie Sie die Schaltflächen für das Auslösen von Ereignissen konfigurieren, wenn sie gedrückt werden. Sie haben außerdem gelernt, wie Sie dynamische QuickInfo-Elemente zur Benutzeroberfläche hinzufügen, um dem Benutzer zusätzliche Informationen an die Hand zu geben.
 
-[Nächstes Tutorial: 7. Interagieren mit 3D-Objekten](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[Nächstes Tutorial: 7. Interagieren mit 3D-Objekten](mr-learning-base-07.md)

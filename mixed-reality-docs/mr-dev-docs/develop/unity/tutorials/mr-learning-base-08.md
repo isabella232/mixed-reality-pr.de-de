@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007890"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635473"
 ---
 # <a name="8-using-eye-tracking"></a>8. Verwenden von Eye Tracking
 
@@ -33,7 +33,7 @@ Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Un
 ![Unity MRTK-Projektkonfigurator-Fenster](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> Die Funktion zur Eingabe durch Anvisieren hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#selecting-mrtk-and-project-settings) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
+> Die Funktion zur Eingabe durch Anvisieren hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#creating-and-configuring-the-scene) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Aktivieren des Anvisierens mit den Augen im Blickanbieter
 
@@ -55,9 +55,9 @@ Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus, und nav
 
 * Klappen Sie den Abschnitt **Input Data Providers** > **Input Simulation Service** (Eingabedatenanbieter > Eingabesimulationsdienst) auf
 * Klonen Sie das Profil **DefaultMixedRealityInputSimulationProfile**, und geben Sie ihm einen passenden Namen, beispielsweise _GettingStarted_MixedRealityInputSimulationProfile_
-* Suchen Sie den Abschnitt **Eye Simulation** (Augensimulation), und aktivieren Sie das Kontrollkästchen **Simulate Eye Position** (Augenposition simulieren)
+* Suchen Sie die **„Anvisieren mit den Augen“-Simulation**, und legen Sie den **Standardmodus für die „Anvisieren mit den Augen“-Simulation** auf **Vorwärts gerichtete Kameraachse** fest.
 
-![Unity MixedRealityToolkit-Komponente mit neu erstelltem, angewendetem Profil und aktivierter Eye Simulation](images/mr-learning-base/base-08-section3-step1-1.png)
+![Unity mit ausgewähltem TextMeshPro-Objekt](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>Hinzufügen von Eye Tracking zu Objekten
 
