@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 4b9a1c20a8d885ea796c296f6a542d41e3ab58ef
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: b6e75419ef9cdd4595e23e6217ab1b1762cd134e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98052958"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605160"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -48,7 +48,7 @@ Das Windows SDK funktioniert am besten unter dem Betriebssystem Windows 10. Das
 
 #### <a name="for-hololens-development"></a>HoloLens-Entwicklung
 
-Wenn Sie Ihren Entwicklungs-PC für die HoloLens-Entwicklung einrichten, stellen Sie sicher, dass er die Systemanforderungen sowohl für <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> als auch für <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> erfüllt. Wenn Sie Ihre App auf einem HoloLens-Gerät ausführen möchten, müssen Sie die [Einrichtungsanweisungen im Windows-Geräteportal](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal) befolgen. Wenn Sie planen, den [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) zu verwenden, sollten Sie sicherstellen, dass Ihr PC auch die [Systemanforderungen des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) erfüllt.
+Wenn Sie Ihren Entwicklungs-PC für die HoloLens-Entwicklung einrichten, stellen Sie sicher, dass er die Systemanforderungen sowohl für <a href="https://unity3d.com/unity/system-requirements" target="_blank">Unity</a> als auch für <a href="//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> erfüllt. Wenn Sie Ihre App auf einem HoloLens-Gerät ausführen möchten, müssen Sie die [Einrichtungsanweisungen im Windows-Geräteportal](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal) befolgen. Wenn Sie planen, den [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) zu verwenden, sollten Sie sicherstellen, dass Ihr PC auch die [Systemanforderungen des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) erfüllt.
 
 Informationen zu den ersten Schritten mit dem HoloLens-Emulator finden Sie unter [Verwendung des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md).
 
@@ -58,21 +58,21 @@ Wenn Sie planen, sowohl für HoloLens als auch für immersive Windows Mixed Real
 
 ##### <a name="setting-developer-mode-is-grayed-out"></a>Einstellung „Entwicklermodus“ ist abgeblendet
 
-Wenn beim Aktivieren des Entwicklermodus auf Ihrem Gerät Probleme auftreten, sind Sie möglicherweise nicht der [Gerätebesitzer](https://docs.microsoft.com/hololens/security-adminless-os). Im Mehrbenutzermodus ist die Person, die das Gerät als Erster verwendet, der Gerätebesitzer. Alle nachfolgenden Benutzer verfügen nicht über die erforderlichen Berechtigungen, um den Entwicklermodus zu aktivieren oder andere Konfigurationsänderungen vorzunehmen. Es gibt jedoch eine Ausnahme, bei der der erste Benutzer in einer Autopilot-Umgebung möglicherweise nicht der Besitzer des Geräts ist, die detailliert in der [HoloLens-Sicherheitsdokumentation](https://docs.microsoft.com/hololens/security-adminless-os#device-owner) beschrieben ist.
+Wenn beim Aktivieren des Entwicklermodus auf Ihrem Gerät Probleme auftreten, sind Sie möglicherweise nicht der [Gerätebesitzer](/hololens/security-adminless-os). Im Mehrbenutzermodus ist die Person, die das Gerät als Erster verwendet, der Gerätebesitzer. Alle nachfolgenden Benutzer verfügen nicht über die erforderlichen Berechtigungen, um den Entwicklermodus zu aktivieren oder andere Konfigurationsänderungen vorzunehmen. Es gibt jedoch eine Ausnahme, bei der der erste Benutzer in einer Autopilot-Umgebung möglicherweise nicht der Besitzer des Geräts ist, die detailliert in der [HoloLens-Sicherheitsdokumentation](/hololens/security-adminless-os#device-owner) beschrieben ist.
 
 Folgende Lösungen sind möglich:
 
 * Bitten Sie den Gerätebesitzer, den Entwicklermodus zu aktivieren, bevor das Gerät an andere Benutzer oder Entwickler übergeben wird.
-* Schlagen Sie vor, dass Ihr IT-/MDM-Administrator die CSP-[Richtlinie ApplicationManagement/ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) für das spezifische Gerät oder eine Entwicklergerätegruppe aktiviert. 
-    * Diese Richtlinie kann über [Bereitstellungspakete](https://docs.microsoft.com/hololens/hololens-provisioning) oder über [MDM für HoloLens-Geräte](https://docs.microsoft.com/hololens/hololens-mdm-configure) festgelegt werden.
-* Verwenden des [Advanced Recovery Companion (ARC)](https://docs.microsoft.com/hololens/hololens-recovery) (Begleiter für erweiterte Wiederherstellung)
+* Schlagen Sie vor, dass Ihr IT-/MDM-Administrator die CSP-[Richtlinie ApplicationManagement/ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) für das spezifische Gerät oder eine Entwicklergerätegruppe aktiviert. 
+    * Diese Richtlinie kann über [Bereitstellungspakete](/hololens/hololens-provisioning) oder über [MDM für HoloLens-Geräte](/hololens/hololens-mdm-configure) festgelegt werden.
+* Verwenden des [Advanced Recovery Companion (ARC)](/hololens/hololens-recovery) (Begleiter für erweiterte Wiederherstellung)
 
 > [!NOTE]
-> Weitere Informationen zur Geräteverwaltung finden Sie in der Übersicht der **[HoloLens-Geräteverwaltung](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** .
+> Weitere Informationen zur Geräteverwaltung finden Sie in der Übersicht der **[HoloLens-Geräteverwaltung](/hololens/hololens-csp-policy-overview)** .
 
 ##### <a name="i-cant-deploy-over-usb"></a>Bereitstellen über USB nicht möglich
 
-Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Sie sicher, dass Sie alle oben aufgeführten Installationsanforderungen erfüllt haben, und befolgen Sie unsere [schrittweise Anleitung](../unity/tutorials/mr-learning-base-02.md#building-and-deploying-to-your-hololens-2).
+Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Sie sicher, dass Sie alle oben aufgeführten Installationsanforderungen erfüllt haben, und befolgen Sie unsere [schrittweise Anleitung](../unity/tutorials/mr-learning-base-02.md#building-your-application-to-your-hololens-2).
 
 #### <a name="immersive-vr-headset-requirements"></a>Anforderungen an immersive Headsets (VR)
 
@@ -80,11 +80,11 @@ Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Si
 >Die folgenden Richtlinien sind die derzeit empfohlenen Mindestanforderungen und Spezifikationen für Ihren *Entwicklungs-PC* für immersive Headsets (VR) und werden regelmäßig aktualisiert.
 
 >[!WARNING]
->Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
+>Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
 
-Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
+Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
 
-Es gibt derzeit [bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) bei einigen Hardwarekonfigurationen, insbesondere bei Notebooks mit Hybridgrafik.
+Es gibt derzeit [bekannte Probleme](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) bei einigen Hardwarekonfigurationen, insbesondere bei Notebooks mit Hybridgrafik.
 
 <table>
 <tr>
@@ -171,7 +171,7 @@ Das Windows SDK funktioniert am besten unter dem Betriebssystem Windows 10. Das
 
 #### <a name="for-hololens-development"></a>HoloLens-Entwicklung
 
-Wenn Sie Ihren Entwicklungs-PC für die HoloLens-Entwicklung einrichten, stellen Sie sicher, dass er die Systemanforderungen sowohl für [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) als auch für <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> erfüllt. Wenn Sie Ihre App auf einem HoloLens-Gerät ausführen möchten, müssen Sie die [Einrichtungsanweisungen im Windows-Geräteportal](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal) befolgen. Wenn Sie planen, den [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) zu verwenden, sollten Sie sicherstellen, dass Ihr PC auch die [Systemanforderungen des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) erfüllt.
+Wenn Sie Ihren Entwicklungs-PC für die HoloLens-Entwicklung einrichten, stellen Sie sicher, dass er die Systemanforderungen sowohl für [Unreal](https://docs.unrealengine.com/GettingStarted/RecommendedSpecifications/index.html) als auch für <a href="//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> erfüllt. Wenn Sie Ihre App auf einem HoloLens-Gerät ausführen möchten, müssen Sie die [Einrichtungsanweisungen im Windows-Geräteportal](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal) befolgen. Wenn Sie planen, den [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) zu verwenden, sollten Sie sicherstellen, dass Ihr PC auch die [Systemanforderungen des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) erfüllt.
 
 Wenn Sie planen, sowohl für HoloLens als auch für immersive Windows Mixed Reality-Headsets (VR) zu entwickeln, verwenden Sie die Systemempfehlungen und Anforderungen im folgenden Abschnitt.
 
@@ -179,17 +179,17 @@ Wenn Sie planen, sowohl für HoloLens als auch für immersive Windows Mixed Real
 
 ##### <a name="setting-developer-mode-is-grayed-out"></a>Einstellung „Entwicklermodus“ ist abgeblendet
 
-Wenn beim Aktivieren des Entwicklermodus auf Ihrem Gerät Probleme auftreten, sind Sie möglicherweise nicht der [Gerätebesitzer](https://docs.microsoft.com/hololens/security-adminless-os). Im Mehrbenutzermodus ist die Person, die das Gerät als Erster verwendet, der Gerätebesitzer. Alle nachfolgenden Benutzer verfügen nicht über die erforderlichen Berechtigungen, um den Entwicklermodus zu aktivieren oder andere Konfigurationsänderungen vorzunehmen. Es gibt jedoch eine Ausnahme, bei der der erste Benutzer in einer Autopilot-Umgebung möglicherweise nicht der Besitzer des Geräts ist, die detailliert in der [HoloLens-Sicherheitsdokumentation](https://docs.microsoft.com/hololens/security-adminless-os#device-owner) beschrieben ist.
+Wenn beim Aktivieren des Entwicklermodus auf Ihrem Gerät Probleme auftreten, sind Sie möglicherweise nicht der [Gerätebesitzer](/hololens/security-adminless-os). Im Mehrbenutzermodus ist die Person, die das Gerät als Erster verwendet, der Gerätebesitzer. Alle nachfolgenden Benutzer verfügen nicht über die erforderlichen Berechtigungen, um den Entwicklermodus zu aktivieren oder andere Konfigurationsänderungen vorzunehmen. Es gibt jedoch eine Ausnahme, bei der der erste Benutzer in einer Autopilot-Umgebung möglicherweise nicht der Besitzer des Geräts ist, die detailliert in der [HoloLens-Sicherheitsdokumentation](/hololens/security-adminless-os#device-owner) beschrieben ist.
 
 Folgende Lösungen sind möglich:
 
 * Bitten Sie den Gerätebesitzer, den Entwicklermodus zu aktivieren, bevor das Gerät an andere Benutzer oder Entwickler übergeben wird.
-* Schlagen Sie vor, dass Ihr IT-/MDM-Administrator die CSP-[Richtlinie ApplicationManagement/ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) für das spezifische Gerät oder eine Entwicklergerätegruppe aktiviert. 
-    * Diese Richtlinie kann über [Bereitstellungspakete](https://docs.microsoft.com/hololens/hololens-provisioning) oder über [MDM für HoloLens-Geräte](https://docs.microsoft.com/hololens/hololens-mdm-configure) festgelegt werden.
-* Verwenden des [Advanced Recovery Companion (ARC)](https://docs.microsoft.com/hololens/hololens-recovery) (Begleiter für erweiterte Wiederherstellung)
+* Schlagen Sie vor, dass Ihr IT-/MDM-Administrator die CSP-[Richtlinie ApplicationManagement/ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) für das spezifische Gerät oder eine Entwicklergerätegruppe aktiviert. 
+    * Diese Richtlinie kann über [Bereitstellungspakete](/hololens/hololens-provisioning) oder über [MDM für HoloLens-Geräte](/hololens/hololens-mdm-configure) festgelegt werden.
+* Verwenden des [Advanced Recovery Companion (ARC)](/hololens/hololens-recovery) (Begleiter für erweiterte Wiederherstellung)
 
 > [!NOTE]
-> Weitere Informationen zur Geräteverwaltung finden Sie in der Übersicht der **[HoloLens-Geräteverwaltung](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** .
+> Weitere Informationen zur Geräteverwaltung finden Sie in der Übersicht der **[HoloLens-Geräteverwaltung](/hololens/hololens-csp-policy-overview)** .
 
 ##### <a name="i-cant-deploy-over-usb"></a>Bereitstellen über USB nicht möglich
 
@@ -201,11 +201,11 @@ Wenn Sie eine Anwendung nicht direkt über USB bereitstellen können, stellen Si
 >Die folgenden Richtlinien sind die derzeit empfohlenen Mindestanforderungen und Spezifikationen für Ihren *Entwicklungs-PC* für immersive Headsets (VR) und werden regelmäßig aktualisiert.
 
 >[!WARNING]
->Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
+>Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
 
-Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
+Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
 
-Es gibt derzeit [bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) bei einigen Hardwarekonfigurationen, insbesondere bei Notebooks mit Hybridgrafik.
+Es gibt derzeit [bekannte Probleme](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) bei einigen Hardwarekonfigurationen, insbesondere bei Notebooks mit Hybridgrafik.
 
 <table>
 <tr>
@@ -259,7 +259,7 @@ Das Windows SDK funktioniert am besten unter dem Betriebssystem Windows 10. Das
 
 #### <a name="for-hololens-development"></a>HoloLens-Entwicklung
 
-Wenn Sie Ihren Entwicklungs-PC für die HoloLens-Entwicklung einrichten, stellen Sie sicher, dass er die Systemanforderungen für <a href="https://docs.microsoft.com//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> erfüllt. Wenn Sie Ihre App auf einem HoloLens-Gerät ausführen möchten, müssen Sie die [Einrichtungsanweisungen im Windows-Geräteportal](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal) befolgen. Wenn Sie planen, den [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) zu verwenden, sollten Sie sicherstellen, dass Ihr PC auch die [Systemanforderungen des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) erfüllt.
+Wenn Sie Ihren Entwicklungs-PC für die HoloLens-Entwicklung einrichten, stellen Sie sicher, dass er die Systemanforderungen für <a href="//visualstudio/releases/2019/system-requirements" target="_blank">Visual Studio</a> erfüllt. Wenn Sie Ihre App auf einem HoloLens-Gerät ausführen möchten, müssen Sie die [Einrichtungsanweisungen im Windows-Geräteportal](../platform-capabilities-and-apis/using-the-windows-device-portal.md#setting-up-hololens-to-use-windows-device-portal) befolgen. Wenn Sie planen, den [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md) zu verwenden, sollten Sie sicherstellen, dass Ihr PC auch die [Systemanforderungen des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-emulator-system-requirements) erfüllt.
 
 Wenn Sie planen, sowohl für HoloLens als auch für immersive Windows Mixed Reality-Headsets (VR) zu entwickeln, verwenden Sie die Systemempfehlungen und Anforderungen im folgenden Abschnitt.
 
@@ -270,17 +270,17 @@ Wenn Sie planen, sowohl für HoloLens als auch für immersive Windows Mixed Real
 
 ##### <a name="setting-developer-mode-is-grayed-out"></a>Einstellung „Entwicklermodus“ ist abgeblendet
 
-Wenn beim Aktivieren des Entwicklermodus auf Ihrem Gerät Probleme auftreten, sind Sie möglicherweise nicht der [Gerätebesitzer](https://docs.microsoft.com/hololens/security-adminless-os). Im Mehrbenutzermodus ist die Person, die das Gerät als Erster verwendet, der Gerätebesitzer. Alle nachfolgenden Benutzer verfügen nicht über die erforderlichen Berechtigungen, um den Entwicklermodus zu aktivieren oder andere Konfigurationsänderungen vorzunehmen. Es gibt jedoch eine Ausnahme, bei der der erste Benutzer in einer Autopilot-Umgebung möglicherweise nicht der Besitzer des Geräts ist, die detailliert in der [HoloLens-Sicherheitsdokumentation](https://docs.microsoft.com/hololens/security-adminless-os#device-owner) beschrieben ist.
+Wenn beim Aktivieren des Entwicklermodus auf Ihrem Gerät Probleme auftreten, sind Sie möglicherweise nicht der [Gerätebesitzer](/hololens/security-adminless-os). Im Mehrbenutzermodus ist die Person, die das Gerät als Erster verwendet, der Gerätebesitzer. Alle nachfolgenden Benutzer verfügen nicht über die erforderlichen Berechtigungen, um den Entwicklermodus zu aktivieren oder andere Konfigurationsänderungen vorzunehmen. Es gibt jedoch eine Ausnahme, bei der der erste Benutzer in einer Autopilot-Umgebung möglicherweise nicht der Besitzer des Geräts ist, die detailliert in der [HoloLens-Sicherheitsdokumentation](/hololens/security-adminless-os#device-owner) beschrieben ist.
 
 Folgende Lösungen sind möglich:
 
 * Bitten Sie den Gerätebesitzer, den Entwicklermodus zu aktivieren, bevor das Gerät an andere Benutzer oder Entwickler übergeben wird.
-* Schlagen Sie vor, dass Ihr IT-/MDM-Administrator die CSP-[Richtlinie ApplicationManagement/ApplicationManagement/AllowDeveloperUnlock](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) für das spezifische Gerät oder eine Entwicklergerätegruppe aktiviert. 
-    * Diese Richtlinie kann über [Bereitstellungspakete](https://docs.microsoft.com/hololens/hololens-provisioning) oder über [MDM für HoloLens-Geräte](https://docs.microsoft.com/hololens/hololens-mdm-configure) festgelegt werden.
-* Verwenden des [Advanced Recovery Companion (ARC)](https://docs.microsoft.com/hololens/hololens-recovery) (Begleiter für erweiterte Wiederherstellung)
+* Schlagen Sie vor, dass Ihr IT-/MDM-Administrator die CSP-[Richtlinie ApplicationManagement/ApplicationManagement/AllowDeveloperUnlock](/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowdeveloperunlock) für das spezifische Gerät oder eine Entwicklergerätegruppe aktiviert. 
+    * Diese Richtlinie kann über [Bereitstellungspakete](/hololens/hololens-provisioning) oder über [MDM für HoloLens-Geräte](/hololens/hololens-mdm-configure) festgelegt werden.
+* Verwenden des [Advanced Recovery Companion (ARC)](/hololens/hololens-recovery) (Begleiter für erweiterte Wiederherstellung)
 
 > [!NOTE]
-> Weitere Informationen zur Geräteverwaltung finden Sie in der Übersicht der **[HoloLens-Geräteverwaltung](https://docs.microsoft.com/hololens/hololens-csp-policy-overview)** .
+> Weitere Informationen zur Geräteverwaltung finden Sie in der Übersicht der **[HoloLens-Geräteverwaltung](/hololens/hololens-csp-policy-overview)** .
 
 #### <a name="immersive-vr-headset-requirements"></a>Anforderungen an immersive Headsets (VR)
 
@@ -288,11 +288,11 @@ Folgende Lösungen sind möglich:
 >Die folgenden Richtlinien sind die derzeit empfohlenen Mindestanforderungen und Spezifikationen für Ihren *Entwicklungs-PC* für immersive Headsets (VR) und werden regelmäßig aktualisiert.
 
 >[!WARNING]
->Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
+>Verwechseln Sie dies nicht mit den [Richtlinien zur minimalen PC-Hardwarekompatibilität](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines), die die *Spezifikationen von Consumer-PCs* umreißen, auf die Sie Ihre immersive Headset-App (VR) oder Ihr Spiel ausrichten sollten.
 
-Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
+Wenn Ihr Entwicklungs-PC für immersive Headsets nicht über vollwertige HDMI- und/oder USB 3.0-Anschlüsse verfügt, benötigen Sie [Adapter](/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs), um Ihr Headset anzuschließen.
 
-Es gibt derzeit [bekannte Probleme](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) bei einigen Hardwarekonfigurationen, insbesondere bei Notebooks mit Hybridgrafik.
+Es gibt derzeit [bekannte Probleme](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality) bei einigen Hardwarekonfigurationen, insbesondere bei Notebooks mit Hybridgrafik.
 
 <table>
 <tr>

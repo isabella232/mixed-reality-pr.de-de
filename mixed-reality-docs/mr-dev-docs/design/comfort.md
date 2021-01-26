@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Design, Bequemlichkeit, HoloLens 2, HoloLens (1. Generation), Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Fortbewegung
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847494"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582489"
 ---
 # <a name="comfort"></a>Komfort
 
@@ -78,15 +78,15 @@ PD bezeichnet den Abstand zwischen den Pupillen der Augen von Personen. VO bezei
 
 #### <a name="hololens-1st-gen"></a>HoloLens (1. Generation)
 
-Bei HoloLens (1. Gen.) wird die PD geschätzt und während der [Kalibrierung](https://docs.microsoft.com/hololens/hololens-calibration) des Geräts festgelegt. Für neue Benutzer eines bereits eingerichteten Geräts muss die Kalibrierung durchgeführt werden, oder die PD muss manuell eingestellt werden. VO hängt ausschließlich von der Anpassung des Geräts ab. Insbesondere muss sich zur Minimierung von VO das Gerät so auf dem Kopf des Benutzers befinden, dass sich die Displays auf einer Höhe mit der Achse der Augen des Benutzers befinden. 
+Bei HoloLens (1. Gen.) wird die PD geschätzt und während der [Kalibrierung](/hololens/hololens-calibration) des Geräts festgelegt. Für neue Benutzer eines bereits eingerichteten Geräts muss die Kalibrierung durchgeführt werden, oder die PD muss manuell eingestellt werden. VO hängt ausschließlich von der Anpassung des Geräts ab. Insbesondere muss sich zur Minimierung von VO das Gerät so auf dem Kopf des Benutzers befinden, dass sich die Displays auf einer Höhe mit der Achse der Augen des Benutzers befinden. 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-Bei HoloLens 2 wird die PD geschätzt und während der [Kalibrierung](https://docs.microsoft.com/hololens/hololens-calibration) von Auge/Gerät festgelegt. Für neue Benutzer eines bereits eingerichteten Geräts muss die Kalibrierung durchgeführt werden, um sicherzustellen, dass die PD ordnungsgemäß eingestellt ist. VO wird in HoloLens 2 automatisch berücksichtigt. 
+Bei HoloLens 2 wird die PD geschätzt und während der [Kalibrierung](/hololens/hololens-calibration) von Auge/Gerät festgelegt. Für neue Benutzer eines bereits eingerichteten Geräts muss die Kalibrierung durchgeführt werden, um sicherzustellen, dass die PD ordnungsgemäß eingestellt ist. VO wird in HoloLens 2 automatisch berücksichtigt. 
 
 ### <a name="guidance-for-immersive-devices"></a>Leitfaden für immersive Geräte
 
-Immersive HMDs für Windows Mixed Reality besitzen keine automatische Kalibrierung für PD oder VO. Die PD kann manuell in Software eingestellt werden (unter den Einstellungen im Mixed Reality-Portal, siehe [Kalibrierung](https://docs.microsoft.com/hololens/hololens-calibration)). Einige HMDs weisen auch einen manuellen Schieberegler auf, der die Anpassung des Linsenabstands an eine komfortable Position ermöglicht, eine Position, die ungefähr der PD des Benutzers entspricht. 
+Immersive HMDs für Windows Mixed Reality besitzen keine automatische Kalibrierung für PD oder VO. Die PD kann manuell in Software eingestellt werden (unter den Einstellungen im Mixed Reality-Portal, siehe [Kalibrierung](/hololens/hololens-calibration)). Einige HMDs weisen auch einen manuellen Schieberegler auf, der die Anpassung des Linsenabstands an eine komfortable Position ermöglicht, eine Position, die ungefähr der PD des Benutzers entspricht. 
 
 ## <a name="rendering-rates"></a>Renderingraten
 
@@ -177,4 +177,4 @@ Die Muskeln können ermüden, wenn von Benutzern erwartet wird, eine Hand währe
 * [Hologrammstabilität](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [Instinktive Interaktionen](interaction-fundamentals.md)
 * [Holografischer Rahmen](holographic-frame.md)
-* [Kalibrierung](https://docs.microsoft.com/hololens/hololens-calibration)
+* [Kalibrierung](/hololens/hololens-calibration)
