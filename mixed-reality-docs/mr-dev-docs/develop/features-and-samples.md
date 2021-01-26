@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Lernen, Beispiele, MRTK, Forschungsmodus, HoloLens 2, QR-Codes, WebRTC, Mixed Reality-Aufnahme, Holographic Remoting, UX-Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007610"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583197"
 ---
 # <a name="samples-and-feature-apps"></a>Beispiele und Feature-Apps
 
@@ -30,7 +30,7 @@ Die unten aufgeführten Featurebeispiele entsprechen bestimmten Implementierunge
 
 ### <a name="research-mode"></a>Forschungsmodus
 
-Der Forschungsmodus wurde in der HoloLens der 1. Generation eingeführt, um Zugriff auf wesentliche Sensoren des Geräts zu gewähren, insbesondere für Forschungsanwendungen, die nicht für die Bereitstellung vorgesehen sind. Die folgenden Beispielanwendungen sind Beispiele für den Zugriff auf und die Aufzeichnung von Forschungsmodus-Datenströmen und die Verwendung der [intrinsischen und extrinsischen Funktionen](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
+Der Forschungsmodus wurde in der HoloLens der 1. Generation eingeführt, um Zugriff auf wesentliche Sensoren des Geräts zu gewähren, insbesondere für Forschungsanwendungen, die nicht für die Bereitstellung vorgesehen sind. Die folgenden Beispielanwendungen sind Beispiele für den Zugriff auf und die Aufzeichnung von Forschungsmodus-Datenströmen und die Verwendung der [intrinsischen und extrinsischen Funktionen](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world).
 
 <br>
 
@@ -67,7 +67,7 @@ Mit Mixed Reality-Aufnahme (MRC) wird die „Erste Person“-Erfahrung (Ego-Pers
 
 | Referenzartikel | Beispiel |
 | --- | --- |
-| [Mixed Reality-Aufnahme](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Beispiele für Mixed Reality-Aufnahme](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [Mixed Reality-Aufnahme](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [Beispiele für Mixed Reality-Aufnahme](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>Holographic Remoting
 

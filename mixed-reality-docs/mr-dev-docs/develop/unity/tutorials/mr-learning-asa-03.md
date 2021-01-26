@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, App-Sitzungen
 ms.localizationpriority: high
-ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008360"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582051"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3. Speichern, Abrufen und Freigeben von Azure Spatial Anchors
 
@@ -58,7 +58,7 @@ Wenn Sie die aktualisierte App für Ihre HoloLens erstellen, können Sie jetzt A
 8. Suchen eines Azure Anchors (platziert den Rover Explorer an der Position aus Schritt 3)
 
 > [!NOTE]
-> Für einen vollständigen Neustart der App muss nach dem Schließen der immersiven App-Ansicht das App-Fenster in der Mixed Reality Startumgebung geschlossen werden, bevor die App über das Startmenü neu gestartet wird. Weitere Details finden Sie in der Dokumentation [Verwenden von Apps in HoloLens](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens).
+> Für einen vollständigen Neustart der App muss nach dem Schließen der immersiven App-Ansicht das App-Fenster in der Mixed Reality Startumgebung geschlossen werden, bevor die App über das Startmenü neu gestartet wird. Weitere Details finden Sie in der Dokumentation [Verwenden von Apps in HoloLens](/hololens/holographic-home#using-apps-on-hololens).
 
 ## <a name="sharing-azure-spatial-anchors-between-devices"></a>Teilen von Azure Spatial Anchors zwischen Geräten
 

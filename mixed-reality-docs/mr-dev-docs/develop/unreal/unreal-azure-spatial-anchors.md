@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure-Entwicklung, Raumanker, Mixed Reality, Entwicklung, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009770"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583027"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Azure-Raumanker in Unreal
 
@@ -30,17 +30,17 @@ Um diese Anleitung durchzuführen, stellen Sie sicher, dass Folgendes erfüllt i
 
 - [Unreal, Version 4.25](https://www.unrealengine.com/get-now) oder höher, ist installiert.
 - Eine [HoloLens 2-Projekt](tutorials/unreal-uxt-ch1.md)einrichtung in Unreal ist vorhanden. 
-- Sie haben die [Azure-Raumanker: Übersicht](https://docs.microsoft.com/azure/spatial-anchors/overview) gelesen.
+- Sie haben die [Azure-Raumanker: Übersicht](/azure/spatial-anchors/overview) gelesen.
 - Grundkenntnisse in C++ und Unreal
 
 ## <a name="getting-azure-spatial-anchors-account-info"></a>Abrufen von Azure-Raumanker-Kontoinformationen
 
 Bevor Sie Azure-Raumanker in Ihrem Projekt verwenden können, müssen Sie Folgendes erledigen:
-* [Erstellen Sie eine Raumankerressource](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource), und kopieren Sie die unten aufgeführten Kontofelder. Diese Werte werden verwendet, um Benutzer mit dem Konto Ihrer Anwendung zu authentifizieren:
+* [Erstellen Sie eine Raumankerressource](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource), und kopieren Sie die unten aufgeführten Kontofelder. Diese Werte werden verwendet, um Benutzer mit dem Konto Ihrer Anwendung zu authentifizieren:
     * **Konto-ID**
     * **Kontoschlüssel**
 
-Weitere Informationen finden Sie unter [Azure-Raumanker: Authentifizierung](https://docs.microsoft.com/azure/spatial-anchors/concepts/authentication?tabs=csharp).
+Weitere Informationen finden Sie unter [Azure-Raumanker: Authentifizierung](/azure/spatial-anchors/concepts/authentication?tabs=csharp).
 
 > [!NOTE]
 > Azure-Raumanker in Unreal 4.25 unterstützen keine Azure AD-Authentifizierungstoken, aber Unterstützung für diese Funktionalität wird in einer späteren Version verfügbar sein.
@@ -65,7 +65,7 @@ Eine Azure-Raumankersitzung ermöglicht Clientanwendungen die Kommunikation mit 
 ![Screenshot des Bereichs „Details“ mit hervorgehobener Konto-ID, Schlüssel und Variablentyp für Azure Spatial Anchors](images/asa-unreal/unreal-spatial-anchors-img-02.png)
 
 Starten Sie eine Azure Spatial Anchors-Sitzung wie folgt:
-1. Überprüfen Sie, ob eine **AR-Sitzung** in der HoloLens-Anwendung ausgeführt wird, da die Azure Spatial Anchors-Sitzung erst gestartet werden kann, wenn eine AR-Sitzung ausgeführt wird. Wenn Sie keine eingerichtet haben, [erstellen Sie eine AR-Sitzungsressource](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
+1. Überprüfen Sie, ob eine **AR-Sitzung** in der HoloLens-Anwendung ausgeführt wird, da die Azure Spatial Anchors-Sitzung erst gestartet werden kann, wenn eine AR-Sitzung ausgeführt wird. Wenn Sie keine eingerichtet haben, [erstellen Sie eine AR-Sitzungsressource](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset).
 2. Fügen Sie das benutzerdefinierte Ereignis **-Sitzung starten** hinzu, und konfigurieren Sie es, wie im folgenden Screenshot gezeigt.
     * Beim Erstellen einer Sitzung wird die Sitzung nicht standardmäßig gestartet, sodass Sie die Sitzung für die Authentifizierung beim Azure Spatial Anchors-Dienst konfigurieren können.
 
@@ -216,6 +216,6 @@ Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-d
 
 ## <a name="next-steps"></a>Nächste Schritte
 * [Lokale Raumanker](unreal-spatial-anchors.md)
-* [Raumanker-Dokumentation](https://docs.microsoft.com/azure/spatial-anchors/)
+* [Raumanker-Dokumentation](/azure/spatial-anchors/)
 * [Raumankerfunktionen](https://azure.microsoft.com/services/spatial-anchors/#features)
-* [Richtlinien für eine effektive Ankererfahrung](https://docs.microsoft.com/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)
+* [Richtlinien für eine effektive Ankererfahrung](/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)

@@ -7,16 +7,16 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Bot Service, LUIS, natürliche Sprache, Unterhaltungs-Bot, Azure Cloud Services, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 70d136467bc677c028614429e6e197ce25b30327
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7119dfd54c2b5384ff0e219a494ca8423fe4ebfc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008250"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583385"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5. Integrieren von Azure Bot Service
 
-In diesem Tutorial erfahren Sie, wie Sie **Azure Bot Service** in der **HoloLens 2**-Demoanwendung verwenden, um Language Understanding (LUIS) hinzuzufügen, damit der Bot Benutzer bei der Suche nach **nachverfolgten Objekten** unterstützen kann. Dies ist ein zweiteiliges Tutorial, in dem Sie im ersten Teil den Bot mit [Bot Composer](https://docs.microsoft.com/composer/introduction) als codefreie Lösung erstellen und einen kurzen Blick auf die Azure-Funktion werfen, die den Bot mit den benötigten Daten versorgt. Im zweiten Teil verwenden Sie **BotManager (Skript)** im Unity-Projekt, um den gehosteten Bot Service zu nutzen.
+In diesem Tutorial erfahren Sie, wie Sie **Azure Bot Service** in der **HoloLens 2**-Demoanwendung verwenden, um Language Understanding (LUIS) hinzuzufügen, damit der Bot Benutzer bei der Suche nach **nachverfolgten Objekten** unterstützen kann. Dies ist ein zweiteiliges Tutorial, in dem Sie im ersten Teil den Bot mit [Bot Composer](/composer/introduction) als codefreie Lösung erstellen und einen kurzen Blick auf die Azure-Funktion werfen, die den Bot mit den benötigten Daten versorgt. Im zweiten Teil verwenden Sie **BotManager (Skript)** im Unity-Projekt, um den gehosteten Bot Service zu nutzen.
 
 ## <a name="objectives"></a>Ziele
 
@@ -33,9 +33,9 @@ In diesem Tutorial erfahren Sie, wie Sie **Azure Bot Service** in der **HoloLens
 
 ## <a name="understanding-azure-bot-service"></a>Grundlegendes zu Azure Bot Service
 
-**Azure Bot Service** versetzt Entwickler in die Lage, intelligente Bots zu erstellen, die dank **LUIS** eine natürlichsprachige Konversation mit Benutzern führen können. Ein Unterhaltungs-Bot ist eine hervorragende Möglichkeit, die Optionen zu erweitern, wie ein Benutzer mit Ihrer Anwendung interagieren kann. Ein Bot kann als Wissensdatenbank mit einem [QnA Maker fungieren](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true), um eine anspruchsvolle Unterhaltung mit der Leistung von [Language Understanding (LUIS)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) zu führen.
+**Azure Bot Service** versetzt Entwickler in die Lage, intelligente Bots zu erstellen, die dank **LUIS** eine natürlichsprachige Konversation mit Benutzern führen können. Ein Unterhaltungs-Bot ist eine hervorragende Möglichkeit, die Optionen zu erweitern, wie ein Benutzer mit Ihrer Anwendung interagieren kann. Ein Bot kann als Wissensdatenbank mit einem [QnA Maker fungieren](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0), um eine anspruchsvolle Unterhaltung mit der Leistung von [Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0) zu führen.
 
-Weitere Informationen zu [Azure Bot Service](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true).
+Weitere Informationen zu [Azure Bot Service](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0).
 
 ## <a name="part-1---creating-the-bot"></a>Teil 1: Erstellen des Bots
 
@@ -50,18 +50,18 @@ Laden Sie das Azure-Funktionsprojekt für nachverfolgte Objekte herunter: [Azure
 
 Diese Azure-Funktion verfügt über zwei Aktionen: **Count** (Anzahl) und **Find** (Suchen), die über grundlegende *HTTP* *GET*-Aufrufe aufgerufen werden können. Sie können den Code in **Visual Studio** untersuchen.
 
-Weitere Informationen zu [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview).
+Weitere Informationen zu [Azure Functions](/azure/azure-functions/functions-overview).
 
 Die Funktion **Count** fragt aus **Table Storage** alle **TrackedObjects** aus der Tabelle ab. Dies ist ein sehr einfacher Vorgang. Die Funktion **Find** nimmt ihrerseits einen Abfrageparameter *name* aus der *GET*-Anforderung an, fragt **Table Storage** nach einem passenden **TrackedObject** ab und gibt dann ein DTO als JSON zurück.
 
 Sie können diese **Azure-Funktion** direkt aus **Visual Studio** bereitstellen.
-Hier finden Sie alle Informationen zur [Bereitstellung von Azure-Funktionen](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true).
+Hier finden Sie alle Informationen zur [Bereitstellung von Azure-Funktionen](/azure/devops/pipelines/targets/azure-functions?preserve-view=true&tabs=dotnet-core%2cyaml&view=azure-devops).
 
 Nachdem Sie die Bereitstellung abgeschlossen haben, öffnen Sie im **Azure Portal** die entsprechende Ressource und klicken dann auf **Konfiguration**. Diese Option befindet sich unter dem Abschnitt *Einstellungen*. Dort müssen Sie unter **Anwendungseinstellungen** die *Verbindungszeichenfolge* für den **Azure Storage**-Speicher angeben, in dem die **nachverfolgten Objekte** gespeichert werden. Klicken Sie auf **Neue Anwendungseinstellung**, und verwenden Sie den folgenden Namen: **AzureStorageConnectionString**. Geben Sie als Wert die richtige *Verbindungszeichenfolge* an. Klicken Sie anschließend auf **Speichern**. Die **Azure-Funktion** ist nun bereit, den *Bot* mit Daten zu versorgen, den Sie im nächsten Schritt erstellen.
 
 ### <a name="creating-a-conversation-bot"></a>Erstellen eines Unterhaltungs-Bots
 
-Es gibt mehrere Möglichkeiten, einen auf einem Bot Framework basierenden Unterhaltungs-Bot zu entwickeln. In dieser Lektion verwenden Sie die Desktopanwendung [Bot Framework Composer](https://docs.microsoft.com/composer/), bei der es sich um einen visuellen Designer handelt, der optimal für schnelle Entwicklung geeignet ist.
+Es gibt mehrere Möglichkeiten, einen auf einem Bot Framework basierenden Unterhaltungs-Bot zu entwickeln. In dieser Lektion verwenden Sie die Desktopanwendung [Bot Framework Composer](/composer/), bei der es sich um einen visuellen Designer handelt, der optimal für schnelle Entwicklung geeignet ist.
 
 Sie können die neuesten Releases aus dem [GitHub-Repository](https://github.com/microsoft/BotFramework-Composer/releases) herunterladen. Die Anwendung ist für Windows, Mac und Linux verfügbar.
 
@@ -77,7 +77,7 @@ Klicken Sie in der oberen Leiste auf **Öffnen**, und wählen Sie das herunterge
 
 Wir konzentrieren uns auf die linke Seite, auf der Sie den **Dialogbereich** sehen können. Hier befindet sich ein Dialog mit dem Namen **TrackedObjectsBot** unter dem mehrere **Trigger** angezeigt werden.
 
-Weitere Informationen zum [Bot Framework-Konzept](https://docs.microsoft.com/composer/concept-dialog).
+Weitere Informationen zum [Bot Framework-Konzept](/composer/concept-dialog).
 
 Diese Trigger führen folgende Aktionen aus:
 
@@ -97,7 +97,7 @@ Dies sind die Auslöserbegriffe:
 
 ![Auslöser des AskForCount-Dialogs für das TrackedObjectsBot-Projekt](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-Dank [LUIS](https://docs.microsoft.com/composer/how-to-use-luis) muss der *Benutzer* die Begriffe nicht genau so verwenden. Der *Benutzer* kann eine natürlichsprachige Unterhaltung führen.
+Dank [LUIS](/composer/how-to-use-luis) muss der *Benutzer* die Begriffe nicht genau so verwenden. Der *Benutzer* kann eine natürlichsprachige Unterhaltung führen.
 
 In diesem Dialog kommuniziert der *Bot* auch mit der Azure-Funktion **Count**. Weitere Informationen dazu später.
 
@@ -130,7 +130,7 @@ Suchen Sie schließlich nach dem Trigger **FindEntity** und der Aktion *HTTP-Anf
 
 Nachdem alles festgelegt wurde, kann der Bot nun bereitgestellt werden. Da Sie Bot Framework Composer installiert haben, können Sie den Bot direkt von dort aus veröffentlichen.
 
-Weitere Informationen zum [Veröffentlichen eines Bots aus Bot Composer](https://docs.microsoft.com/composer/how-to-publish-bot).
+Weitere Informationen zum [Veröffentlichen eines Bots aus Bot Composer](/composer/how-to-publish-bot).
 
 > [!TIP]
 > Sie können mit dem Bot experimentieren, indem Sie weitere Triggerbegriffe, neue Antworten oder Unterhaltungsverzweigungen hinzufügen.

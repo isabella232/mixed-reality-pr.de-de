@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 65b45d448854f8903ed37466ebaa3c427dea3089
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226429"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582944"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Unity-Entwicklung für VR und Windows Mixed Reality
 
@@ -66,14 +66,14 @@ Die Arbeit eines Entwicklers ist nie getan, insbesondere beim Lernen eines neuen
 
 Wenn Sie über vorhandene Apps verfügen, die Sie portieren möchten, sind die unten aufgeführten Artikel Ihr nächster Anlaufpunkt:
 
-* [Portieren von VR-Apps zu Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=project)
-* [Aktualisieren von SteamVR-Apps für Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)
+* [Portieren von VR-Apps zu Windows Mixed Reality](../porting-apps/porting-guides.md?tabs=project)
+* [Aktualisieren von SteamVR-Apps für Windows Mixed Reality](../porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)
 
 ### <a name="additional-resources"></a>Zusätzliche Ressourcen
 
 Bevor Sie sich auf eigene Faust in die Welt der Mixed Reality aufmachen, sollten Sie sich die unten aufgeführte zusätzliche Dokumentation ansehen. 
 
-* [VR-Handbuch für Enthusiasten](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+* [VR-Handbuch für Enthusiasten](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity Asset Store](https://www.assetstore.unity3d.com)
 
 ## <a name="see-also"></a>Weitere Informationen 

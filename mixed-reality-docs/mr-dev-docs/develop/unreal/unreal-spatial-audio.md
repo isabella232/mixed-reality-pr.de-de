@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, räumliche Audiowiedergabe
-ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fdb4f401188a813b99884929cd835453dec5aaf0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009970"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580435"
 ---
 # <a name="spatial-audio-in-unreal"></a>Räumliche Audiowiedergabe in Unreal
 
@@ -124,6 +124,6 @@ Sie können jederzeit zu den [Prüfpunkten für die Unreal-Entwicklung](unreal-d
 
 
 ## <a name="see-also"></a>Siehe auch
-* [Raumklang](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [Raumklangentwurf](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [MR räumlich 220: Raumklang](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [Raumklang](/windows/mixed-reality/spatial-sound)
+* [Raumklangentwurf](/windows/mixed-reality/spatial-sound-design)
+* [MR räumlich 220: Raumklang](/windows/mixed-reality/holograms-220)

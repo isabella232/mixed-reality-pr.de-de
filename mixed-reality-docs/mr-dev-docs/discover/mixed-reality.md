@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: Mixed Reality, holographic, AR, VR, MR, XR, Augmented Reality, Virtual Reality, Erläuterung, Fallstudie, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality
 ms.localizationpriority: high
-ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757698"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583009"
 ---
 # <a name="what-is-mixed-reality"></a>Was ist Mixed Reality?
 
@@ -34,7 +34,7 @@ Mixed Reality ist eine Mischung aus physischer und digitaler Welt, die die Verkn
 
 In den letzten Jahrzehnten wurde die Untersuchung der Beziehung zwischen menschlicher und Computereingabe fortgeführt. Dies führte zu der Disziplin, die als *Mensch-Computer-Interaktion* oder HCI (Human Computer Interaction) bezeichnet wird. Menschliche Eingaben erfolgen mit einer Reihe von Mitteln, darunter Tastaturen, Mäuse, Berührung, Freihand, Sprache und sogar Skelettnachverfolgung (Kinect).
 
-Fortschritte bei Sensoren und Verarbeitung schaffen ein neues Zeitalter der Computereingaben aus der Umgebung. Die Interaktion zwischen Computern und Umgebungen stellt ein Verstehen der Umwelt oder *Wahrnehmung* dar, weshalb die APIs in Windows, die Umgebungsinformationen offenlegen, als [Wahrnehmungs-APIs](https://docs.microsoft.com/uwp/api/Windows.Perception) bezeichnet werden. Bei der Umgebungseingabe werden Dinge wie die Position einer Person in der Welt ([Kopfnachverfolgung](../design/coordinate-systems.md)), Flächen und Begrenzungen ([räumliche Abbildung](../design/spatial-mapping.md) und [Szenenverständnis](../design/scene-understanding.md)), Umgebungslicht, Umgebungsgeräusche, Objekterkennung und Standort erfasst.
+Fortschritte bei Sensoren und Verarbeitung schaffen ein neues Zeitalter der Computereingaben aus der Umgebung. Die Interaktion zwischen Computern und Umgebungen stellt ein Verstehen der Umwelt oder *Wahrnehmung* dar, weshalb die APIs in Windows, die Umgebungsinformationen offenlegen, als [Wahrnehmungs-APIs](/uwp/api/Windows.Perception) bezeichnet werden. Bei der Umgebungseingabe werden Dinge wie die Position einer Person in der Welt ([Kopfnachverfolgung](../design/coordinate-systems.md)), Flächen und Begrenzungen ([räumliche Abbildung](../design/spatial-mapping.md) und [Szenenverständnis](../design/scene-understanding.md)), Umgebungslicht, Umgebungsgeräusche, Objekterkennung und Standort erfasst.
 
 <br>
 
@@ -117,5 +117,3 @@ Wenn Sie der [Erkundungs-Journey](get-started-with-mr.md) folgen, die wir entwor
 
 > [!div class="nextstepaction"]
 > [Was ist ein Hologramm?](hologram.md)
-
-

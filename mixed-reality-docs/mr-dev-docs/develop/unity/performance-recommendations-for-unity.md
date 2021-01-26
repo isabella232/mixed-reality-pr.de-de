@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009350"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583188"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 
@@ -84,7 +84,7 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="avoid-expensive-operations"></a>Vermeiden aufwändiger Vorgänge
 
-1) **Vermeiden Sie die Verwendung von [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
+1) **Vermeiden Sie die Verwendung von [LINQ](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
     Zwar kann LINQ sauber und einfach zu lesen und zu schreiben sein, es erfordert im Allgemeinen aber mehr Berechnungen und Speicher, als sie für einen manuell geschriebenen Algorithmus erforderlich wären.
 
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **Vermeiden von Boxing**
 
-    [Boxing](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing) ist ein Grundkonzept der C#- Sprache und ihrer Runtime. Dabei handelt es sich um den Prozess, Variablen eines Werttyps, wie etwa `char`, `int`, `bool` usw., mit Variablen vom Verweistyp zu umschließen. Wenn eine Variable eines Werttyps „geboxt“ ist, ist sie von einem `System.Object` umschlossen, das auf dem verwalteten Heap gespeichert wird. Speicher wird zugewiesen und muss gegebenenfalls beim Verwerfen vom Garbage Collector verarbeitet werden. Diese Zuweisungen und ihre Aufhebung bringen Leistungskosten mit sich und sind in vielen Szenarien unnötig oder können leicht durch preiswertere Alternativen ersetzt werden.
+    [Boxing](/dotnet/csharp/programming-guide/types/boxing-and-unboxing) ist ein Grundkonzept der C#- Sprache und ihrer Runtime. Dabei handelt es sich um den Prozess, Variablen eines Werttyps, wie etwa `char`, `int`, `bool` usw., mit Variablen vom Verweistyp zu umschließen. Wenn eine Variable eines Werttyps „geboxt“ ist, ist sie von einem `System.Object` umschlossen, das auf dem verwalteten Heap gespeichert wird. Speicher wird zugewiesen und muss gegebenenfalls beim Verwerfen vom Garbage Collector verarbeitet werden. Diese Zuweisungen und ihre Aufhebung bringen Leistungskosten mit sich und sind in vielen Szenarien unnötig oder können leicht durch preiswertere Alternativen ersetzt werden.
 
     Um das Boxing zu vermeiden, stellen Sie sicher, dass die Variablen, Felder und Eigenschaften, in denen Sie numerische Typen und Strukturen (einschließlich `Nullable<T>`) speichern, stark als spezifische Typen typisiert sind, wie z. B. `int`, `float?` oder `MyStruct`, anstatt ein Objekt zu verwenden.  Wenn Sie diese Objekte in eine Liste einfügen, stellen Sie sicher, dass Sie eine stark typisierte Liste verwenden, z. B. `List<int>` anstatt `List<object>` oder `ArrayList`.
 
@@ -180,7 +180,7 @@ Alle wiederholten Unity-Rückruf-Funktionen (d. h. Update), die mehrmals pro Se
 
 4) **Vermeiden der Übergabe von Strukturen über den Wert**
 
-    Im Gegensatz zu Klassen sind Strukturen Werttypen, und bei der direkten Übergabe an eine Funktion werden ihre Inhalte in eine neu erstellte Instanz kopiert. Diese Kopie bewirkt höhere CPU-Kosten sowie zusätzlichen Speicherbedarf auf dem Stack. Für kleine Strukturen ist der Effekt minimal und daher akzeptabel. Bei Funktionen, die in jedem Frame wiederholt aufgerufen werden, sowie bei Funktionen, die große Strukturen akzeptieren, ändern Sie nach Möglichkeit die Funktionsdefinition, um durch Verweis zu übergeben. [Weitere Informationen finden Sie hier](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    Im Gegensatz zu Klassen sind Strukturen Werttypen, und bei der direkten Übergabe an eine Funktion werden ihre Inhalte in eine neu erstellte Instanz kopiert. Diese Kopie bewirkt höhere CPU-Kosten sowie zusätzlichen Speicherbedarf auf dem Stack. Für kleine Strukturen ist der Effekt minimal und daher akzeptabel. Bei Funktionen, die in jedem Frame wiederholt aufgerufen werden, sowie bei Funktionen, die große Strukturen akzeptieren, ändern Sie nach Möglichkeit die Funktionsdefinition, um durch Verweis zu übergeben. [Weitere Informationen finden Sie hier](/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>Verschiedenes
 
@@ -337,9 +337,9 @@ Unity hat eine hervorragende Seite zur Verfügung gestellt, auf der die Arbeitsw
 Eine der gängigsten Methoden, die zu einer übermäßigen Garbage Collection führt, besteht darin, in der Unity-Entwicklung keine Verweise auf Komponenten und Klassen zwischenzuspeichern. Alle Verweise sollten während Start() oder Awake() erfasst und in späteren Funktionen wie Update() oder LateUpdate() wiederverwendet werden.
 
 Weitere schnelle Tipps:
-- Verwenden Sie die [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder)-Klasse von C#, um dynamisch zur Laufzeit komplexe Zeichenfolgen zu generieren
+- Verwenden Sie die [StringBuilder](/dotnet/api/system.text.stringbuilder)-Klasse von C#, um dynamisch zur Laufzeit komplexe Zeichenfolgen zu generieren
 - Entfernen Sie Aufrufe von Debug.Log(), wenn sie nicht mehr erforderlich sind, da sie in allen Buildversionen einer App trotzdem noch ausgeführt werden
-- Wenn Ihre Holografie-App allgemein viel Arbeitsspeicher erfordert, erwägen Sie das Aufrufen von [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect) in Ladephasen etwa beim Anzeigen eines Lade- oder Übergangsbildschirms
+- Wenn Ihre Holografie-App allgemein viel Arbeitsspeicher erfordert, erwägen Sie das Aufrufen von [_**System.GC.Collect()**_](/dotnet/api/system.gc.collect) in Ladephasen etwa beim Anzeigen eines Lade- oder Übergangsbildschirms
 
 #### <a name="object-pooling"></a>Objektpooling
 

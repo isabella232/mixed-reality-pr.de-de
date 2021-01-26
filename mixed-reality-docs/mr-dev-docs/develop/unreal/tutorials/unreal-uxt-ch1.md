@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 762247f550a3471bbbb6d1004283c6f901346503
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a46b9fef96f75f3d80b9ebbd5cbd724730374b41
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009790"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580568"
 ---
 # <a name="1-getting-started"></a>1. Erste Schritte
 
-Einsteigern in die Welt der Mixed Reality ebenso wie erfahrenen Experten wird hier gleichermaßen der ideale Ausgangspunkt geboten, um ihre [HoloLens 2](https://docs.microsoft.com/windows/mixed-reality/)- und [Unreal Engine](https://www.unrealengine.com/en-US/)-Journey zu beginnen. In dieser Tutorialreihe erhalten Sie eine ausführliche Anleitung zum Erstellen einer interaktiven Schach-App mit dem [UX Tools-Plug-In](https://github.com/microsoft/MixedReality-UXTools-Unreal), das Teil des [Mixed Reality Toolkit für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) ist. Das Plug-in unterstützt Sie beim Hinzufügen allgemeiner UX-Features zu Ihren Projekten anhand von Code, Blaupausen und Beispielen. 
+Einsteigern in die Welt der Mixed Reality ebenso wie erfahrenen Experten wird hier gleichermaßen der ideale Ausgangspunkt geboten, um ihre [HoloLens 2](../../../index.yml)- und [Unreal Engine](https://www.unrealengine.com/en-US/)-Journey zu beginnen. In dieser Tutorialreihe erhalten Sie eine ausführliche Anleitung zum Erstellen einer interaktiven Schach-App mit dem [UX Tools-Plug-In](https://github.com/microsoft/MixedReality-UXTools-Unreal), das Teil des [Mixed Reality Toolkit für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) ist. Das Plug-in unterstützt Sie beim Hinzufügen allgemeiner UX-Features zu Ihren Projekten anhand von Code, Blaupausen und Beispielen. 
 
 ![Fertige Szene im Viewport](images/unreal-uxt/5-endscene.PNG)
 
@@ -40,7 +40,7 @@ Achten Sie darauf, dass Sie die folgenden Produkte installiert haben, bevor Sie 
 
 Stellen Sie zunächst sicher, dass Ihre Einrichtung über alle erforderlichen Visual Studio-Pakete verfügt:
 1. Installieren Sie die aktuelle Version von [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/).
-1. Installieren Sie die folgenden [Workloads](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads):
+1. Installieren Sie die folgenden [Workloads](/visualstudio/install/modify-visual-studio#modify-workloads):
     * Desktopentwicklung mit C++
     * .NET-Desktopentwicklung
     * Entwicklung für die universelle Windows-Plattform
@@ -48,7 +48,7 @@ Stellen Sie zunächst sicher, dass Ihre Einrichtung über alle erforderlichen Vi
     * USB-Gerätekonnektivität
     * UWP-Tools (Universelle Windows-Plattform) für C++ (v142)
 
-1. Installieren Sie die folgenden [Komponenten](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components):
+1. Installieren Sie die folgenden [Komponenten](/visualstudio/install/modify-visual-studio#modify-individual-components):
     * „Compiler, Buildtools und Runtimes“ > „MSVC v142 – VS 2019 C++-ARM64-Buildtools“ (neueste Version)
 
 Sie können die Installation mit der folgenden Abbildung bestätigen

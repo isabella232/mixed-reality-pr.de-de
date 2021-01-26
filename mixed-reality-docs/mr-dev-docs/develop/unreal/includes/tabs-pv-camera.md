@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
-ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
+ms.openlocfilehash: e79b14c19a452b5b78c6f8cf7ea24bd65bfa0eaa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98225531"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605266"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -197,7 +197,7 @@ So abonnieren Sie das Rendering von der FV-Kamera:
 Unreal verarbeitet dann Anforderungen von MRC, aus der Perspektive der FV-Kamera zu rendern.
 
 > [!NOTE]
-> Nur wenn [Mixed Reality Capture](../../../mixed-reality-capture.md) (Mixed Reality-Aufnahme) ausgelöst wird, wird die App aufgefordert, aus der Perspektive der Foto-/Videokamera zu rendern.
+> Nur wenn [Mixed Reality Capture](/hololens/holographic-photos-and-videos) (Mixed Reality-Aufnahme) ausgelöst wird, wird die App aufgefordert, aus der Perspektive der Foto-/Videokamera zu rendern.
 
 ## <a name="using-the-pv-camera"></a>Verwenden der FV-Kamera
 
@@ -224,4 +224,3 @@ So wird das Kamerabild gerendert:
 5. Achten Sie darauf, dass das Material über einen Parameter verfügt, der mit dem Namen in **SetTextureParameterValue** übereinstimmt, der an einen Farbeintrag gebunden ist. Ohne den Parameter kann das Kamerabild nicht ordnungsgemäß angezeigt werden.
 
 ![Kamera: Textur](../images/unreal-camera-material.PNG)
-

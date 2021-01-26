@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver, Rasterobjektsammlung
 ms.localizationpriority: high
-ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613254"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579209"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4. Positionieren von Objekten in der Szene
 
@@ -143,4 +143,5 @@ Klicken Sie dann auf die Schaltfläche **Update Collection** (Sammlung aktualisi
 
 In diesem Tutorial haben Sie gelernt, wie Objekte relativ zum Benutzer in der Szene positioniert werden und wie das Feature Rasterobjektsammlung des MRTK verwendet wird, um Objekte in einer Sammlung zu organisieren.
 
-[Nächstes Tutorial: 5. Erstellen dynamischer Inhalte mithilfe von Solvern](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[Nächstes Tutorial: 5. Erstellen dynamischer Inhalte mithilfe von Solvern](mr-learning-base-05.md)

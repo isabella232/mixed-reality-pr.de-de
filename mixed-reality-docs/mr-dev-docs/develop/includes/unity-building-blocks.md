@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6d5f40f94f490901d95d70583da38bf393b2599
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195376"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583000"
 ---
 # <a name="available-in-mrtk"></a>[In MRTK verfügbar](#tab/mrtk)
 
@@ -15,7 +15,7 @@ ms.locfileid: "98195376"
 | [Anvisieren](../unity/gaze-in-unity.md) | Ermöglichen Sie Benutzern das Anzielen von Hologrammen durch Anblicken |
 | [Motion-Controller](../unity/motion-controllers-in-unity.md) | Fügen Sie Ihren Mixed Reality-Apps räumliche Aktionen hinzu |
 | [Gesten](../unity/gestures-in-unity.md) | Verwenden Sie Handgesten als Eingabe in ihren Mixed Reality-Umgebungen |
-| [Hand- und Eye-Tracking](../unity/hand-eye-in-unit.md) | Integrieren Sie artikulierte Eingaben des Hand- und Eyetrackings in Ihre Benutzererfahrung |
+| [Hand- und Eye-Tracking](../unity/hand-eye-in-unity.md) | Integrieren Sie artikulierte Eingaben des Hand- und Eyetrackings in Ihre Benutzererfahrung |
 | [Räumliche Abbildung](../unity/spatial-mapping-in-unity.md) | Bilden Sie Ihren physischen Raum mit einem überlagerten virtuellen Gittermodell ab, um die Begrenzungen Ihrer Umgebung zu kennzeichnen |
 | [Text](../unity/text-in-unity.md) | Erhalten Sie scharfen Text in hoher Qualität mit in Größe und Qualität beherrschbarem Rendering |
 | [Spracheingabe](../unity/voice-input-in-unity.md) | Erfassen Sie gesprochene Schlüsselwörter, Ausdrücke und Diktate von Benutzern|
@@ -34,5 +34,3 @@ ms.locfileid: "98195376"
 | [Raumklang](../unity/spatial-sound-in-unity.md) | Verbessern Sie Ihre Apps mit immersivem 3D-Audio |
 | [Text](../unity/text-in-unity.md) | Erhalten Sie scharfen Text in hoher Qualität mit in Größe und Qualität beherrschbarem Rendering |
 | [Spracheingabe](../unity/voice-input-in-unity.md) | Erfassen Sie gesprochene Schlüsselwörter, Ausdrücke und Diktate von Benutzern|
-
-

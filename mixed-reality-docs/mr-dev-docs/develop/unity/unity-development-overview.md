@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226439"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583007"
 ---
 # <a name="unity-development-for-hololens"></a>Unity-Entwicklung für HoloLens
 
@@ -85,7 +85,7 @@ Die Arbeit eines Entwicklers ist nie getan, insbesondere beim Lernen eines neuen
 
 Wenn Sie über vorhandene Apps verfügen, die Sie portieren möchten, sind die unten aufgeführten Artikel Ihr nächster Halt:
 
-* [HoloToolkit/MRTK zu MRTK v2](mrtk-porting-guide.md)
+* [HoloToolkit/MRTK zu MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [Leitfaden zum Portieren von immersiven Apps](../porting-apps/porting-guides.md)
 * [Portierungsleitfaden importieren](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

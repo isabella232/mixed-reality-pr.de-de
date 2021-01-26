@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865395"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583652"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6. Verpacken und Bereitstellen auf einem Gerät oder in einem Emulator
 
@@ -25,7 +25,7 @@ Im vorhergehenden Tutorial haben Sie eine einfache Schaltfläche hinzugefügt, m
 
 ## <a name="device-only-streaming"></a>Streamen (nur Gerät)
 
-[Holografisches Remoting](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting) bedeutet das Streamen von Daten von einem PC oder einem eigenständigen UWP-Gerät auf die HoloLens 2, ohne den Kanal zu wechseln. Dabei empfängt die Remotinghost-App einen Eingabedatenstrom von einer HoloLens, rendert die Inhalte in einer virtuellen Rundumsicht und streamt die Inhaltsframes über WLAN zurück an die HoloLens. Streaming ermöglicht es Ihnen, Remoteansichten mit der vorhandenen Desktop-PC-Software zu generieren und mehr Systemressourcen zu nutzen.
+[Holografisches Remoting](/windows/mixed-reality/add-holographic-remoting) bedeutet das Streamen von Daten von einem PC oder einem eigenständigen UWP-Gerät auf die HoloLens 2, ohne den Kanal zu wechseln. Dabei empfängt die Remotinghost-App einen Eingabedatenstrom von einer HoloLens, rendert die Inhalte in einer virtuellen Rundumsicht und streamt die Inhaltsframes über WLAN zurück an die HoloLens. Streaming ermöglicht es Ihnen, Remoteansichten mit der vorhandenen Desktop-PC-Software zu generieren und mehr Systemressourcen zu nutzen.
 
 Um diese Möglichkeit für die Schach-App zu nutzen, müssen einige Voraussetzungen erfüllt sein:
 
@@ -81,7 +81,7 @@ Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläch
 5. Navigieren Sie zu **File > Package Project** („Datei“ > „Projekt verpacken“), und wählen Sie **HoloLens** aus.
     * Erstellen Sie einen neuen Ordner zum Speichern Ihres Pakets, und klicken Sie auf **Select Folder** (Ordner auswählen).
 
-6.  Öffnen Sie nach dem Verpacken der App das [Windows-Geräteportal](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal), navigieren Sie zu **Views > Apps** (Ansichten > Apps), und suchen Sie nach dem Abschnitt **Deploy apps** (Apps bereitstellen).
+6.  Öffnen Sie nach dem Verpacken der App das [Windows-Geräteportal](/windows/mixed-reality/using-the-windows-device-portal), navigieren Sie zu **Views > Apps** (Ansichten > Apps), und suchen Sie nach dem Abschnitt **Deploy apps** (Apps bereitstellen).
 
 7.  Klicken Sie auf **Durchsuchen...** , navigieren Sie zur Datei **ChessApp.appxbundle**, und klicken Sie auf **Öffnen**.
 
@@ -91,7 +91,7 @@ Wenn die Verbindung hergestellt wurde, klicken Sie rechts neben der Schaltfläch
 8.  Klicken Sie auf **Install** (Installieren).
     * Sie können jetzt zu **All Apps** (Alle Apps) wechseln und auf die neu installierte App tippen, um sie auszuführen. Sie können die App jedoch auch direkt über das **Windows-Geräteportal** starten. 
 
-Herzlichen Glückwunsch! Ihre Mixed Reality-Anwendung für HoloLens ist fertig und einsatzbereit. Das ist aber noch nicht alles. MRTK verfügt über viele eigenständige Features, die Sie zu Ihren Projekten hinzufügen können, einschließlich räumlicher Zuordnung, Anvisieren und Spracheingabe und sogar QR-Codes. Weitere Informationen zu diesen Features finden Sie unter [Unreal-Entwicklung: Übersicht](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview).
+Herzlichen Glückwunsch! Ihre Mixed Reality-Anwendung für HoloLens ist fertig und einsatzbereit. Das ist aber noch nicht alles. MRTK verfügt über viele eigenständige Features, die Sie zu Ihren Projekten hinzufügen können, einschließlich räumlicher Zuordnung, Anvisieren und Spracheingabe und sogar QR-Codes. Weitere Informationen zu diesen Features finden Sie unter [Unreal-Entwicklung: Übersicht](/windows/mixed-reality/unreal-development-overview).
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 

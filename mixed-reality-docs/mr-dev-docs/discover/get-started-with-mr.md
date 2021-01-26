@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009720"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583350"
 ---
 # <a name="get-started-with-mixed-reality"></a>Erste Schritte mit Mixed Reality
 
@@ -152,7 +152,7 @@ Wenn Sie wissen möchten, wie die unterschiedliche/n Hardware und Dienste von Mi
 |  Konzept  |  Ergebnis  |
 | --- | --- |
 | [HoloLens-Hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 bietet die komfortabelste und immersivste verfügbare Mixed Reality-Umgebung mit branchenführenden Lösungen, die innerhalb von Minuten einen Mehrwert bringen – dies alles auf Basis der Zuverlässigkeit, Sicherheit und Skalierbarkeit der Cloud- und KI-Dienste von Microsoft. |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Erkunden Sie eine Reihe von Produkten, die mit Dynamics 365 Mitarbeiter ermächtigen und Vorgänge optimieren können, einschließlich [Remoteunterstützung](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview), Layout und [Handbüchern](https://docs.microsoft.com/dynamics365/mixed-reality/guides/). Sinnhafte Erkenntnisse ergeben sich aus praktischer Arbeit mit realen Szenarien, echten Geräten und echten Benutzern. |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Erkunden Sie eine Reihe von Produkten, die mit Dynamics 365 Mitarbeiter ermächtigen und Vorgänge optimieren können, einschließlich [Remoteunterstützung](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout und [Handbüchern](/dynamics365/mixed-reality/guides/). Sinnhafte Erkenntnisse ergeben sich aus praktischer Arbeit mit realen Szenarien, echten Geräten und echten Benutzern. |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Erstellen Sie überzeugende immersive Erfahrungen auf verschiedenen Plattformen mit räumlicher Wahrnehmung, Raumankern und Rendering komplexer 3D-Modelle. |
 
 ## <a name="what-would-you-like-to-do-next"></a>Wie möchten Sie fortfahren?
@@ -181,5 +181,4 @@ Wenn Sie wissen möchten, wie die unterschiedliche/n Hardware und Dienste von Mi
 <br>
 
 >[!IMPORTANT]
->Alle Mixed Reality-Entwicklungsmaterialien werden auf dieser Website nur zu Ihrer Information zur Verfügung gestellt. Deine Anwendung, deren Nutzung sowie deren Auswirkungen auf die Endbenutzer liegen in deiner alleinigen Verantwortung als Anwendungsentwickler. Du musst sicherstellen, dass die Anwendung keine Unannehmlichkeiten, Verletzungen oder sonstigen Schäden beim Endbenutzer verursacht, und entsprechende Warnungen und Haftungsausschlüsse einschließen. Sie müssen jederzeit entsprechende geeignete Schritte bei der Entwicklung und Veröffentlichung Ihrer Anwendung unternehmen, um sicherzustellen, dass Ihre Anwendung sicher ist und Sie alle Verpflichtungen aus Ihrer mit Microsoft geschlossenen [Vereinbarung für App-Entwickler](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement) erfüllen.
-
+>Alle Mixed Reality-Entwicklungsmaterialien werden auf dieser Website nur zu Ihrer Information zur Verfügung gestellt. Deine Anwendung, deren Nutzung sowie deren Auswirkungen auf die Endbenutzer liegen in deiner alleinigen Verantwortung als Anwendungsentwickler. Du musst sicherstellen, dass die Anwendung keine Unannehmlichkeiten, Verletzungen oder sonstigen Schäden beim Endbenutzer verursacht, und entsprechende Warnungen und Haftungsausschlüsse einschließen. Sie müssen jederzeit entsprechende geeignete Schritte bei der Entwicklung und Veröffentlichung Ihrer Anwendung unternehmen, um sicherzustellen, dass Ihre Anwendung sicher ist und Sie alle Verpflichtungen aus Ihrer mit Microsoft geschlossenen [Vereinbarung für App-Entwickler](/legal/windows/agreements/app-developer-agreement) erfüllen.
