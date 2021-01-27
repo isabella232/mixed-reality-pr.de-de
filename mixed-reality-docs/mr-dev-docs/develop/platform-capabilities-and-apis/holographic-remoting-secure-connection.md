@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Sicherheit, Authentifizierung, Server-zu-Client
-ms.openlocfilehash: 6b8c26bfa32661a180f1f58acc5c4aa13529f3bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea00565580fdbc850a11d103520351be53cb37b5
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583848"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810117"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>Aktivieren der Verbindungssicherheit für Holographic-Remoting
 
@@ -115,7 +115,7 @@ Diese Aufrufe erfordern, dass Sie Implementierungen bestimmter Schnittstellen be
 Alle Schnittstellen verfügen über eine Funktion, die Sie anfordert, Maßnahmen zu ergreifen, die ein Rückruf Objekt als Parameter empfängt. Mithilfe dieses Objekts können Sie die asynchrone Verarbeitung der Anforderung problemlos implementieren. Behalten Sie einen Verweis auf dieses Objekt bei, und nennen Sie die Vervollständigungsfunktion, wenn die asynchrone Aktion abgeschlossen ist. Die Vervollständigungsfunktion kann von jedem Thread aufgerufen werden.
 
 >[!TIP]
->Das Implementieren von WinRT-Schnittstellen kann problemlos mithilfe von C++ erfolgen./WinRT. Im Kapitel " [Autoren-APIs mit C++/WinRT](//windows/uwp/cpp-and-winrt-apis/author-apis) " wird dies ausführlich beschrieben.
+>Das Implementieren von WinRT-Schnittstellen kann problemlos mithilfe von C++ erfolgen./WinRT. Im Kapitel " [Autoren-APIs mit C++/WinRT](/windows/uwp/cpp-and-winrt-apis/author-apis) " wird dies ausführlich beschrieben.
 
 >[!IMPORTANT]
 >Der `build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl` im nuget-Paket enthält eine ausführliche Dokumentation für die API, die sich auf sichere Verbindungen bezieht.
@@ -193,5 +193,5 @@ Diese API ähnelt der IDL-basierten API, die unter [Implementieren von Holograph
 * [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
-* [Holographic Remoting-Software – Lizenzbedingungen](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
