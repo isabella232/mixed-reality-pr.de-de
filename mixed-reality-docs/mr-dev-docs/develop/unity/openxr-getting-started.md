@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: c5d312161b7d0f4f832e8d09dbacf5af700ffd8d
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: 1adfb979cfc22be5da18ed990c9db55e6bad97f3
+ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108881"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99238124"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Verwenden des gemischten Reality openxr-Plug-Ins für Unity
 
@@ -27,51 +27,11 @@ Ab Unity, Version 2020,2, ist das gemischte openxr-Plug-in-Paket von Microsoft m
 > [!NOTE]
 > Wenn Sie VR-Anwendungen auf einem Windows-PC entwickeln, ist das gemischte openxr-Plug-in für die gemischte Realität nicht unbedingt erforderlich. Sie sollten das Plug-in jedoch installieren, wenn Sie die Controller Zuordnung für HP-Reverb-G2-Controller anpassen oder apps entwickeln, die sowohl für hololens 2-als auch für VR-Headsets geeignet sind.
 
-## <a name="installing-the-mixed-reality-openxr-plugin"></a>Installieren des Mixed Reality openxr-Plug-ins
+## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a>Installieren von openxr mit dem Feature-Tool Mixed Reality
 
-Das Projekt muss das **openxr** -Plug-in und das **Management** Pack für den Wenn Sie diese bereits installiert haben, ist es toll! Wenn dies nicht der Fall ist, werden Sie beim Installieren des Plug-Ins für gemischte Realität automatisch als Abhängigkeiten installiert:
+Installieren Sie das openxr-Plug-in mit der neuen Anwendung Mixed Reality Feature Tool. Befolgen Sie die [Installations-und Verwendungs Anweisungen](welcome-to-mr-feature-tool.md) , und wählen Sie das **gemischte openxr-Plug** -in in der Kategorie Mixed Reality-Toolkit aus:
 
-1. Navigieren Sie im Unity-Editor zum **Bearbeiten > Projekteinstellungen > Paket-Manager** .
-2. Erweitern Sie den Bereich Bereichs bezogene **Registrierungen** , geben Sie die folgenden Informationen ein, und klicken Sie dann auf **Speichern**:
-    * Legen Sie **Name** auf **Microsoft Mixed Reality** fest.
-    * **URL** festlegen auf **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**
-    * **Bereich (e)** auf **com. Microsoft. mixedreality** festlegen
-
-3. Wählen Sie unter **Erweiterte Einstellungen** die Option **Vorschau Pakete aktivieren** aus.
-
-![Screenshot des Fensters "Unity-Paket-Manager" in den Projekteinstellungen](images/openxr-img-01.png)
-
-Der Unity-Paket-Manager verwendet eine Manifestressource mit dem Namen *manifest.json* , um zu bestimmen, welche Pakete installiert werden müssen und welche Registrierungen Sie installieren können.
-
-> [!IMPORTANT]
-> Openxr ist in Unity immer noch experimentell, und dieser Prozess kann sich im Laufe der Zeit ändern, da wir arbeiten, um die Entwickler Oberfläche zu optimieren.
-
-### <a name="registering-the-mixed-reality-dependency"></a>Registrieren der Mixed Reality-Abhängigkeit
-
-Nachdem die Microsoft Mixed Reality-Bereichs bezogene Registrierung dem Manifest hinzugefügt wurde, kann das openxr-Paket angegeben werden.
-
-So fügen Sie das openxr-Paket hinzu:
-
-1. Öffnen Sie **[projectroot]/Packages/manifest.js** in einem Text-Editor wie Visual Studio Code
-    1. Klicken Sie dazu im linken Bereich des Projekt Fensters mit der rechten Maustaste auf **Pakete** . Klicken Sie dann **auf in Explorer anzeigen**.
-    ![Screenshot der Paket Auflistung im Projektfenster](images/packages.png)
-1. Ändern Sie den Abschnitt "Abhängigkeiten" der *Pakete/manifest.jsin* der Datei wie folgt:
-
-    > [!IMPORTANT]
-    > In ihrer Manifest-Datei sind möglicherweise weitere Abhängigkeiten vorhanden, die hier nicht aufgeführt sind. Löschen Sie keines dieser Elemente, und fügen Sie der Liste einfach die openxr-Abhängigkeit hinzu.
-
-    ``` json
-      "dependencies": {
-        "com.microsoft.mixedreality.openxr": "0.1.2",
-      }
-    ```
-
-1. Speichern Sie die Datei, wechseln Sie zurück zum Unity-Editor, und öffnen Sie den **Paket-Manager** , um die Installation des Plug-ins zu bestätigen:
-
-    ![Screenshot des Unity-Paket-Managers, geöffnet im Unity-Editor mit hervorgehobenem gemischtes openxr-Plug-in](images/openxr-img-03.png)
-
-    > [!Note]
-    > Wenn das openxr-Paket mit dem Unity-Paket-Manager entfernt wird, müssen Sie es mithilfe der zuvor beschriebenen Schritte erneut hinzufügen.
+![Fenster "Mixed Reality Feature Tool Packages" mit hervorgehobenem Open XR](images/feature-tool-openxr.png)
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>Konfigurieren der XR-Plug-in-Verwaltung für openxr
 
@@ -124,9 +84,13 @@ Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [
 
 ## <a name="using-mrtk-with-openxr-support"></a>Verwenden von mrtk mit openxr-Unterstützung
 
-Mrtk Unity unterstützt das Mixed Reality openxr-Plug-in, beginnend mit der 2.5.3-Version.  Mrtk-Plug-Ins können aus den gleichen Bereichs bezogenen Registrierungen installiert werden, die Sie bei [der Installation des Mixed Reality openxr-Plug](#installing-the-mixed-reality-openxr-plugin)-ins eingerichtet haben. Ausführlichere Informationen finden Sie in der [Dokumentation zu mrtk](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
+Mrtk Unity unterstützt das Mixed Reality openxr-Plug-in, beginnend mit der 2.5.3-Version.  
 
-1. Fügen Sie die folgenden Pakete in Ihrem **[projectroot]/Packages/-manifest.jsfür** die Datei hinzu:
+1. Öffnen Sie das [Mixed Reality Feature-Tool](welcome-to-mr-feature-tool.md) erneut, und wählen Sie das **gemischte openxr-Plug** -in in der Kategorie Platt Form Unterstützung aus.
+
+<!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
+
+1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
 
 ```json
 "dependencies": {
@@ -135,7 +99,7 @@ Mrtk Unity unterstützt das Mixed Reality openxr-Plug-in, beginnend mit der 2.5.
     "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
     …
 }
-```
+``` -->
 
 2. Wechseln Sie zum Skript "mixedreality Toolkit-Komponente" im Inspektor, und wechseln Sie zum Profil " **defaultoperxrconfigurationprofile** ":
 
@@ -157,7 +121,7 @@ Nachdem Sie Ihr Projekt für openxr konfiguriert haben und Zugriff auf Beispiele
 
 Openxr ist noch immer experimentell. Wir freuen uns über jedes Feedback, das Sie uns zur Verbesserung der IT-Unterstützung bieten können. Sie finden uns in den [Unity-Foren](https://aka.ms/unityforums) , indem Sie Ihren Forumsbeitrag mit **Microsoft**  +  **openxr** und entweder **hololens 2** oder **Windows Mixed Reality** markieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Konfigurieren von Projekten ohne MRTK](configure-unity-project.md)
 * [Empfohlene Einstellungen für Unity](recommended-settings-for-unity.md)
