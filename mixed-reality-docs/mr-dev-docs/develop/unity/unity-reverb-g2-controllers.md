@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity, Reverb, Reverb G2, HP-Simulator G2, gemischte Realität, Entwicklung, Motion Controller, Benutzereingaben, Features, neues Projekt, Emulator, Dokumentation, Anleitungen, Features, Hologramme, Spieleentwicklung
-ms.openlocfilehash: fa9b80076d65978ae1602fc4f9519d7e11c651b5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583578"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421393"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>HP-Reverb-G2-Controller in Unity
 
@@ -31,38 +31,11 @@ Da die neuen Eingaben nicht über vorhandene Windows-und Unity-APIs zugänglich 
 
 Sie können die "mutioncontroller"-Instanzen durch Erstellen eines " *mutioncontrollerwatcher* "-Instanzen erfassen und deren Ereignisse abonnieren, ähnlich wie bei der Verwendung von *Interaction Manager* -Ereignissen zum Ermitteln neuer *Interaction Source* -Instanzen. Die Methoden und Eigenschaften von "mutioncontroller" beschreiben die Eingaben, die vom Controller unterstützt werden, einschließlich der Schaltflächen, Trigger, 2D-Achse und des Finger Anglers. Die Klasse "mutioncontroller" macht auch Methoden für den Zugriff auf Eingabe Zustände über die Klasse *"Klasse"* verfügbar. Die Klasse "mutioncontrollerreading" stellt eine Momentaufnahme des Controller Zustands zu einem bestimmten Zeitpunkt dar. 
 
-## <a name="installing-microsoftmixedrealityinput-using-the-unity-package-manager"></a>Installieren von Microsoft. mixedreality. Input mithilfe des Unity-Paket-Managers 
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>Installieren von Microsoft. mixedreality. Input mit dem Feature-Tool Mixed Reality
 
-Der Unity-Paket-Manager verwendet eine [Manifest-Datei](https://docs.unity3d.com/Manual/upm-manifestPkg.html) (manifest.json), um zu bestimmen, welche Pakete installiert werden müssen, und die Registrierungen (Server), aus denen Sie installiert werden können. Bevor Sie das Microsoft. mixedreality. Input-Paket verwenden können, müssen Sie den gemischten Reality-Komponenten Server registrieren.
+Installieren Sie das Plug-in "Microsoft. mixedreality. Input" mit der neuen Anwendung Mixed Reality Feature Tool. Befolgen Sie die [Installations-und Verwendungs Anweisungen](welcome-to-mr-feature-tool.md) , und wählen Sie in der Kategorie Mixed Reality Toolkit das **gemischte Eingabe** Paket aus:
 
-### <a name="registering-the-mixed-reality-component-server"></a>Registrieren des gemischten Reality-Komponenten Servers 
-
-Für jedes Projekt, das das gemischte Reality-Eingabe Paket verwendet, muss für die manifest.jsfür die Datei (im Ordner "Pakete") die gemischte Registrierungs Bereichs bezogene Registrierung hinzugefügt werden. So ändern Sie manifest.jsauf, um gemischte Realität zu unterstützen: 
-    1. Öffnen Sie <projectRoot> /Packages/manifest.jsin einem Text-Editor, z. b. Visual Studio Code. 
-    2. Fügen Sie am Anfang der Manifestressource dem Bereich für die Bereichs bezogene Registrierung den Mixed Reality-Server hinzu, und speichern Sie die Datei. 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
-
-### <a name="adding-the-microsoftmixedrealityinput-package"></a>Hinzufügen des Pakets "Microsoft. mixedreality. Input" 
-
-Ändern Sie den Abschnitt Abhängigkeiten der <projectRoot> Datei/Packages/manifest.jsin der Datei im Text-Editor, um das Paket com. Microsoft. mixedreality. Input hinzuzufügen und die Datei zu speichern. 
-
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+![Gemischtes Fenster mit gemischter Reality-Eingabe hervorgehoben](images/feature-tool-mrinput.png)
 
 ## <a name="using-microsoftmixedrealityinput"></a>Verwenden von "Microsoft. mixedreality. Input" 
 
@@ -505,7 +478,7 @@ private void stateCache_InputPressed(object sender, MotionControllerStateCache.M
 } 
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 <!-- ## Getting started
 
