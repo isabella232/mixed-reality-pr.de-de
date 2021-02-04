@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines HoloLens-Projekts
+title: Erstellen Ihrer ersten HoloLens Unreal-Anwendung
 description: Erfahren Sie, wie Sie ein Unreal-Projekt korrekt mit Szenenobjekten und Eingabeinteraktionen für die Mixed Reality-Entwicklung für HoloLens konfigurieren.
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, Unreal-Editor, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Dokumentation, Leitfäden, Features, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Portieren, Upgrade
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672737"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421429"
 ---
-# <a name="creating-a-hololens-project"></a>Erstellen eines HoloLens-Projekts
+# <a name="creating-your-first-hololens-unreal-application"></a>Erstellen Ihrer ersten HoloLens Unreal-Anwendung
+
+In dieser Anleitung erfahren Sie, wie Sie Ihre erste Mixed Reality-App auf der HoloLens in der Unreal Engine zum Laufen bringen. In der Tradition von "Hallo Welt" erstellen Sie eine einfache App, die einen Würfel auf dem Bildschirm anzeigt. Um die App nützlicher zu machen, erstellen Sie außerdem Ihre erste Geste zum Drehen des Würfels und zum Beenden der Anwendung. 
+
+## <a name="objectives"></a>Ziele
+
+* Beginnen eines HoloLens-Projekts
+* Aktivieren der richtigen Plug-Ins
+* Erstellen einer ARSessionConfig-Datenobjekts
+* Einrichten der Gesteneingabe
+* Erstellen einer einfachen Ebene
+* Implementieren einer Zusammendrückbewegung
+
+## <a name="creating-a-new-project"></a>Erstellen eines neuen Projekts
 
 Als erstes benötigen Sie ein Projekt, mit dem Sie arbeiten können. Wenn Sie Einsteiger in die Unreal-Entwicklung sind, müssen Sie aus dem Epic-Startprogramm [unterstützende Dateien herunterladen](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal).
 
@@ -29,7 +42,8 @@ Als erstes benötigen Sie ein Projekt, mit dem Sie arbeiten können. Wenn Sie Ei
 
 4. Legen Sie in den **Projekteinstellungen**, **C++, Skalierbares 3D oder 2D, Mobilgerät/Tablet** und **Keine Startinhalte** fest, wählen Sie dann einen Speicherort aus, und klicken Sie auf **Projekt erstellen**.
 
-> [!NOTE] Verwenden Sie eher ein C++- anstelle eines Blaupausenprojekts, um das OpenXR-Plug-In später verwenden zu können. In dieser Schnellstartanleitung wird das OpenXR-Standard-Plug-In aus dem Lieferumfang der Unreal Engine verwendet. Es wird jedoch empfohlen, das offizielle OpenXR-Plug-In von Microsoft herunterzuladen und zu verwenden. Hierfür ist es erforderlich, dass das Projekt ein C++-Projekt ist.
+> [!NOTE] 
+> Verwenden Sie eher ein C++- anstelle eines Blaupausenprojekts, um das OpenXR-Plug-In später verwenden zu können. In dieser Schnellstartanleitung wird das OpenXR-Standard-Plug-In aus dem Lieferumfang der Unreal Engine verwendet. Es wird jedoch empfohlen, das offizielle OpenXR-Plug-In von Microsoft herunterzuladen und zu verwenden. Hierfür ist es erforderlich, dass das Projekt ein C++-Projekt ist.
 
 ![Fenster „Projekteinstellungen“ mit hervorgehobenen Optionen „Projekt“, „Leistung“, „Zielplattform“ und „Startinhalte“.](images/unreal-quickstart-img-03.png)
 
@@ -131,14 +145,18 @@ Nachdem dies erledigt ist, überzeugen Sie sich im nächsten Schritt davon, dass
 
 ![Aktionszuordnungen mit hervorgehobenen Optionen für die OpenXR MSFT-Handinteraktion.](images/unreal-quickstart-img-16.jpg)
 
-4. Öffnen Sie die **Ebenenblaupause**, und fügen Sie eine **InputAction RightPinch** und **InputAction LeftPinch** hinzu.
+## <a name="setting-up-gestures"></a>Einrichten von Gesten
+
+Nachdem wir die Eingaben eingerichtet haben, können wir nun zum spannenden Teil kommen: Hinzufügen von Gesten! Lassen Sie uns den Würfel mit einem rechten Zusammendrücken (Right Pinch) drehen und die Anwendung bei einem linken Zusammendrücken (Left Pinch) schließen.
+
+1. Öffnen Sie die **Ebenenblaupause**, und fügen Sie eine **InputAction RightPinch** und **InputAction LeftPinch** hinzu.
 * Verbinden Sie das RighPinch-Ereignis mit einer **AddActorLocalRotation**, wobei Ihr **Würfel** als Ziel und **Deltadrehung** auf **X = 0, Y = 0** und **Z = 20** festgelegt werden. Der Würfel wird jetzt bei jedem Zusammendrücken um 20 Grad gedreht.
 * Verbinden Sie das LeftPinch-Ereignis mit **Spiel beenden**.
 
 ![Geöffnete Ebenenblaupause wird mit Eingabeaktionen für die Ereignisse RightPinch und LeftPinch.](images/unreal-quickstart-img-17.jpg)
 
-5. Legen Sie in den Einstellungen zum **Transformieren** die Option **Mobilität** auf **Verschiebbar** fest, damit dynamisches Verschieben ermöglicht wird:
+2. Legen Sie in den Einstellungen zum **Transformieren** die Option **Mobilität** auf **Verschiebbar** fest, damit dynamisches Verschieben ermöglicht wird:
 
 ![Transformationseinstellungen mit hervorgehobener Eigenschaft „Mobilität“.](images/unreal-quickstart-img-18.jpg)
 
-An diesem Punkt sind Sie jetzt bereit, um die Anwendung bereitzustellen und zu testen.
+An diesem Punkt sind Sie so weit, die Anwendung bereitzustellen und zu testen!

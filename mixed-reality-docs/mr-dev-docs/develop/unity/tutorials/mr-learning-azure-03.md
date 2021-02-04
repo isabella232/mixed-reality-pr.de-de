@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services, Azure Cloud Services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7676a55a2276b88f3bc123dda90a1b8d39536a61
+ms.sourcegitcommit: daa45a19a3a353334380cda78fee7fa149f0e48b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581936"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98981719"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrieren von Azure-Custom Vision
 
@@ -50,17 +50,17 @@ Ziehen Sie dort das Prefab **ObjectDetectionManager** in die Hierarchie der Szen
 ![Unity mit im Inspektor angezeigten Konfigurationsfeldern der ObjectDetectionManager (Skript)-Komponente](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 Suchen Sie im Hierarchiefenster nach dem **ObjectDetectionManager**-Objekt, und wählen Sie es aus.
-Das Prefab **ObjectDetectionManager** enthält die Komponente **ObjectDetectionManager (Script)** . Wie Sie im Inspektor-Fenster erkennen können, hängt sie von mehreren Einstellungen ab.
+Das Prefab **ObjectDetectionManager** enthält die Komponente **ObjectDetectionManager (Skript)** , und wie Sie im Inspektorfenster sehen können, hängt sie von Azure-Einstellungen und Projekteinstellungen ab.
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>Abrufen von Azure-API-Ressourcenanmeldeinformationen
 
 Die erforderlichen Anmeldeinformationen für die Einstellungen von **ObjectDetectionManager (Script)** können aus dem Azure-Portal und aus dem Custom Vision-Portal abgerufen werden.
 
-### <a name="azure-portal"></a>Azure-Portal
+### <a name="retrieving-azure-settings-credentials"></a>Abrufen der Anmeldeinformationen für Azure-Einstellungen
 
-Suchen Sie nach der Custom Vision-Ressource vom Typ **Cognitive Services**, die Sie im Abschnitt *Vorbereiten der Szene* dieses Tutorials erstellt haben. Klicken Sie dort auf *Keys and Endpoint* (Schlüssel und Endpunkt), um die erforderlichen Anmeldeinformationen abzurufen.
+Suchen Sie nach der Custom Vision-Ressource vom Typ **Cognitive Services**, die Sie im Abschnitt *Vorbereiten der Szene* dieses Tutorials erstellt haben (wählen Sie den Namen der Custom Vision-Ressource aus, gefolgt von *-Prediction*). Klicken Sie dort auf *Overview* (Übersicht) oder *Keys and Endpoint* (Schlüssel und Endpunkt), um die erforderlichen Anmeldeinformationen abzurufen.
 
-### <a name="custom-vision-dashboard"></a>Custom Vision-Dashboard
+### <a name="retrieving-project-settings-credentials"></a>Abrufen der Anmeldeinformationen für Projekteinstellungen
 
 Öffnen Sie das Projekt, das Sie für dieses Tutorial erstellt haben, im [Custom Vision](https://www.customvision.ai/projects)-Dashboard, und klicken Sie auf das Zahnradsymbol in der rechten oberen Ecke der Seite, um die Seite mit den Einstellungen zu öffnen. Hier finden Sie die erforderlichen Anmeldeinformationen im Abschnitt *Ressourcen* auf der rechten Seite.
 
@@ -87,6 +87,10 @@ Wenn Sie über genügend Bilder verfügen, klicken Sie auf die Schaltfläche **T
 > **ObjectDetectionManager (Script)** lädt die aufgenommenen Bilder direkt in den Custom Vision-Dienst hoch. Als Alternative akzeptiert die Custom Vision-API URLs zu den Bildern. Als Übung können Sie **ObjectDetectionManager (Script)** , ändern, um die Bilder stattdessen in einen Blobspeicher hochzuladen.
 
 ## <a name="detect-objects"></a>Erkennen von Objekten
+
+Vor dem Erkennen der Objekte müssen Sie unter „Projekteinstellungen“ den in **ObjectDetectionManager (Skript)** vorhandenen API-Schlüssel ändern, dem bereits ein Custom Vision-Schlüssel zugewiesen wurde.
+
+Suchen Sie die Custom Vision-Ressource im Azure-Portal, und wechseln Sie zu ihr. Klicken Sie auf *Keys and Endpoint* (Schlüssel und Endpunkt), um den API-Schlüssel abzurufen und ihn durch den alten API-Schlüssel unter „Projekteinstellungen“ zu ersetzen.
 
 Sie können das trainierte Modell nun testen, die Anwendung ausführen und im *Hauptmenü* auf **Search Object** (Objekt suchen) klicken und den Namen des betreffenden **nachverfolgten Objekts** eingeben. Die **Objektkarte** wird angezeigt. Klicken Sie auf die Schaltfläche **Custom Vision**. Hier beginnt **ObjectDetectionManager**, Bilder von der Kamera im Hintergrund zu erfassen, und der Status wird im Menü angezeigt. Richten Sie die Kamera auf das Objekt, mit dem Sie das Modell trainiert haben, und Sie sehen, dass das Objekt nach kurzer Zeit erkannt wird.
 

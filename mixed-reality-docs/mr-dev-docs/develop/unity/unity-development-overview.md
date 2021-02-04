@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583007"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421409"
 ---
 # <a name="unity-development-for-hololens"></a>Unity-Entwicklung für HoloLens
 
@@ -36,6 +36,7 @@ Die einfachste Möglichkeit zum Entwickeln in Unity stellt das Mixed Reality Too
 | [Was ist MRTK?](mrtk-getting-started.md) | Beginnen Sie Ihren Weg, indem Sie sich mit dem Mixed Reality Toolkit und den Optionen vertraut machen, die es zu bieten hat |
 | [Installieren der neuesten Tools](../install-the-tools.md) | Laden Sie das aktuellste Unreal-Paket herunter, installieren Sie es, und richten Sie Ihr Projekt für Mixed Reality ein |
 | [Hololens 2-Tutorialreihe](tutorials/mr-learning-base-01.md) | Vertiefen Sie sich in die MRTK-Tutorials für HoloLens 2-Hardware auf Einstiegsebene |
+| **Optional** [Laden Sie das Mixed Reality-Featuretool herunter](welcome-to-mr-feature-tool.md) | Ein neues Entwicklertool zum Entdecken, Aktualisieren und Hinzufügen von Mixed Reality-Featurepaketen zu ihren Unity-Projekten |
 
 > [!IMPORTANT]
 > Wenn Sie ein neues Unity-Projekt erstellen möchten, ohne das Mixed Reality Toolkit zu importieren, müssen einige Unity-Einstellungen manuell geändert werden, um für Windows Mixed Reality zu entwickeln. Diese gliedern sich in zwei Kategorien: projektbezogene und szenenbezogene. Sehen Sie sich unseren [Konfigurationsleitfaden](configure-unity-project.md) an, um sich über den Schritt-für-Schritt-Prozess zu informieren.
