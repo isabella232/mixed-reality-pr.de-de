@@ -3,15 +3,15 @@ title: 'Lernprogramme für räumliche Audiodaten: 4. Aktivieren und Deaktivieren
 description: Verwenden Sie eine Schaltfläche, um die Spatialisierung von Audiodaten zur Laufzeit zu aktivieren und zu deaktivieren.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
-ms.openlocfilehash: 9239c45efa5196b94fe2e05f85a2e83df6c7789f
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578315"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590732"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. aktivieren und Deaktivieren der Spatialisierung zur Laufzeit
 

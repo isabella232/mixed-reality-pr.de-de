@@ -3,15 +3,15 @@ title: Lernprogramme für räumliche Audiodaten-5. Verwenden von Hall zum Hinzuf
 description: Fügen Sie einen Hall Effekt hinzu, um den Sinn der Abstands Variation zu räumlichem Audiomaterial zu verbessern.
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Audiomixer, SFX-Reverb
-ms.openlocfilehash: 3d19bb0b22c507eb692a752aa318ecb82a1cf2f7
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: f7a5270d969f2e462db0244bd6c68b99347ae1a7
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578381"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590722"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
 
