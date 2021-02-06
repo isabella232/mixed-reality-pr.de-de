@@ -6,37 +6,40 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Spracheingabe, keywordrecognizer, grammarerkenzer, Mikrofon, Diktat, Voice, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: c6364b190ca90c5e6faf7fb8ef79314134e93cfc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583726"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606115"
 ---
 # <a name="voice-input-in-unity"></a>Spracheingabe in Unity
 
->[!NOTE]
->Verwenden Sie anstelle der nachfolgenden Informationen das Unity-Plug-in für das Cognitive Speech Services SDK, das deutlich bessere Ergebnisse bei der sprach Genauigkeit aufweist und einen einfachen Zugriff auf die Spracherkennung und Erweiterte Spracherkennung ermöglicht, wie z. b. Dialog, Intent-basierte Interaktion, Übersetzung, Text-zu-Sprache-Synthese und Spracherkennung in natürlicher Sprache. Hier finden Sie das Beispiel und Dokumentation: https://docs.microsoft.com//azure/cognitive-services/speech-service/quickstart-csharp-unity   
+> [!CAUTION]
+> Bevor Sie beginnen, sollten Sie das Unity-Plug-in für das Cognitive Speech Services SDK verwenden. Das Plug-in bietet bessere Ergebnisse bei der sprach Genauigkeit und einen einfachen Zugriff auf die Sprache-zu-Text-Decodierung sowie erweiterte sprach Features wie Dialog, Intent-basierte Interaktion, Übersetzung, Text-zu-Sprache-Synthese und Spracherkennung in natürlicher Sprache. Informationen zu den ersten Schritten finden Sie im [Beispiel und](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity)in der Dokumentation.
 
-Unity bietet drei Möglichkeiten zum Hinzufügen von [Spracheingaben](../../design/voice-input.md) zu ihrer Unity-Anwendung.
+Unity bietet drei Möglichkeiten zum Hinzufügen von [Spracheingaben](../../design/voice-input.md) zu ihrer Unity-Anwendung, die ersten beiden Typen von phraserecognizer:
+* Der stellt der `KeywordRecognizer` App ein Array von Zeichen folgen Befehlen zur Verfügung, die überwacht werden sollen.
+* Der weist `GrammarRecognizer` Ihrer APP eine SRGS-Datei zu, die eine bestimmte Grammatik zum lauschen definiert.
+* Mit dem kann `DictationRecognizer` Ihre APP auf ein beliebiges Wort lauschen und dem Benutzer einen Hinweis oder eine andere Anzeige seiner Sprache bereitstellen.
 
-Mit keywordrecognizer (einem von zwei Typen von phraserecognizers) kann Ihrer APP ein Array von Zeichen folgen Befehlen zugewiesen werden, die überwacht werden sollen. Mit dem Grammatiken von Grammatiken (dem anderen Typ von phraserecognizer) kann Ihrer APP eine SRGS-Datei zugewiesen werden, die eine bestimmte Grammatik zum lauschen definiert. Mit dem "diktationerkenzer" kann Ihre APP auf ein beliebiges Wort lauschen und dem Benutzer einen Hinweis oder eine andere Anzeige seiner Sprache bereitstellen.
-
->[!NOTE]
->Nur die Diktat-oder Ausdrucks Erkennung kann gleichzeitig behandelt werden. Dies bedeutet, dass ein "yntationerkenzer" nicht aktiv sein kann und umgekehrt ist, wenn ein "grammmarerkenzer" oder "keywordrecognizer" aktiv ist.
+> [!NOTE]
+> Diktat-und Ausdrucks Erkennung können nicht gleichzeitig behandelt werden. Wenn ein Grammatik oder keywordrecognizer aktiv ist, kann ein "diktationerkenzer" nicht aktiv sein und umgekehrt.
 
 ## <a name="enabling-the-capability-for-voice"></a>Aktivieren der Sprachfunktion
 
 Die **Mikrofon** Funktion muss für eine APP deklariert werden, um eine Spracheingabe zu verwenden.
-1. Navigieren Sie im Unity-Editor zu den Player Einstellungen, indem Sie zu "> Projekteinstellungen bearbeiten > Player" navigieren.
-2. Wählen Sie auf der Registerkarte "Windows Store" aus.
-3. Aktivieren Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die **Mikrofon** Funktion.
+1. Navigieren Sie im Unity-Editor zu **Bearbeiten > Projekteinstellungen > Player** .
+2. Registerkarte " **Windows Store** " auswählen
+3. Überprüfen Sie im Abschnitt **Veröffentlichungs Einstellungen > Funktionen** die **Mikrofon** Funktion.
+4. Erteilen von Berechtigungen für die APP für den Mikrofon Zugriff auf Ihrem hololens-Gerät
+    * Sie werden zum Starten des Geräts aufgefordert, aber wenn Sie versehentlich auf "Nein" geklickt haben, können Sie die Berechtigungen in den Geräteeinstellungen ändern.
 
 ## <a name="phrase-recognition"></a>Ausdrucks Erkennung
 
 Damit Ihre APP auf bestimmte vom Benutzer gesprochene Ausdrücke lauschen kann, müssen Sie Folgendes tun:
-1. Angeben der zu überwachenden Ausdrücke mithilfe eines keywordrecognizer-oder grammarerkenzer-Elements
-2. Behandeln Sie das onphraserecognized-Ereignis, und ergreifen Sie entsprechende Aktionen für den erkannten Ausdruck.
+1. Angeben der abzuhörenden Ausdrücke mithilfe von `KeywordRecognizer` oder `GrammarRecognizer`
+2. Behandeln `OnPhraseRecognized` Sie das-Ereignis, und ergreifen Sie entsprechende Aktionen für den erkannten Ausdruck.
 
 ### <a name="keywordrecognizer"></a>Keywordrecognizer
 
@@ -58,7 +61,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-Fügen Sie nun dem Wörterbuch ein Schlüsselwort hinzu, z. b. in einer Start ()-Methode. Das Schlüsselwort "aktivieren" wird in diesem Beispiel hinzugefügt:
+Fügen Sie nun dem Wörterbuch ein Schlüsselwort hinzu, z. b. in einer- `Start()` Methode. Das Schlüsselwort "aktivieren" wird in diesem Beispiel hinzugefügt:
 
 ```
 //Create keywords for keyword recognizer
@@ -74,7 +77,7 @@ Erstellen Sie die Schlüsselwort Erkennung, und teilen Sie Ihnen mit, was wir er
 keywordRecognizer = new KeywordRecognizer(keywords.Keys.ToArray());
 ```
 
-Registrieren Sie sich jetzt für das onphraserecognized-Ereignis.
+Registrieren Sie sich jetzt für das `OnPhraseRecognized` Ereignis.
 
 ```
 keywordRecognizer.OnPhraseRecognized += KeywordRecognizer_OnPhraseRecognized;
@@ -113,20 +116,20 @@ Sobald Sie die SRGS-Grammatik haben und sich in Ihrem Projekt in einem [Ordner "
 <PROJECT_ROOT>/Assets/StreamingAssets/SRGS/myGrammar.xml
 ```
 
-Erstellen Sie eine grammatisierungsklasse, und übergeben Sie Ihr den Pfad zu ihrer SRGS-Datei:
+Erstellen `GrammarRecognizer` Sie eine, und übergeben Sie Ihr den Pfad zu ihrer SRGS-Datei:
 
 ```
 private GrammarRecognizer grammarRecognizer;
 grammarRecognizer = new GrammarRecognizer(Application.streamingDataPath + "/SRGS/myGrammar.xml");
 ```
 
-Registrieren Sie sich jetzt für das onphraserecognized-Ereignis.
+Registrieren Sie sich jetzt für das `OnPhraseRecognized` Ereignis.
 
 ```
 grammarRecognizer.OnPhraseRecognized += grammarRecognizer_OnPhraseRecognized;
 ```
 
-Sie erhalten einen Rückruf mit Informationen, die in der SRGS-Grammatik angegeben sind, die Sie entsprechend behandeln können. Die meisten wichtigen Informationen werden im semanticbedeutungen-Array bereitgestellt.
+Sie erhalten einen Rückruf mit Informationen, die in der SRGS-Grammatik angegeben sind, die Sie entsprechend behandeln können. Die meisten wichtigen Informationen werden im-Array bereitgestellt `semanticMeanings` .
 
 ```
 private void Grammar_OnPhraseRecognized(PhraseRecognizedEventArgs args)
@@ -147,19 +150,22 @@ grammarRecognizer.Start();
 **Namespace:** *unityengine. Windows. Speech*<br>
 **Typen**: " *diktationerkenzer*", "sprecherfehler", " *Redner Systemstatus* 
 
-Verwenden Sie das diktationerkenzer-Element, um die Sprache des Benutzers in Text zu konvertieren. Der Diktat-Erkennungs Modul macht [Diktat](../../design/voice-input.md#dictation) Funktionen verfügbar und unterstützt das registrieren und lauschen auf Hypothese und Ausdrucks fertige Ereignisse, sodass Sie Ihrem Benutzer Feedback geben können, während Sie sprechen und danach. Die Methoden "Start ()" und "stoppt ()" aktivieren und deaktivieren die Diktat Erkennung. Sobald die Erkennung erfolgt ist, sollte Sie mithilfe der verwerfen ()-Methode freigegeben werden, um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
+Verwenden `DictationRecognizer` Sie, um die Sprache des Benutzers in Text zu konvertieren. Der Diktat-Erkennungs Modul macht [Diktat](../../design/voice-input.md#dictation) Funktionen verfügbar und unterstützt das registrieren und lauschen auf Hypothese und Ausdrucks fertige Ereignisse, sodass Sie Ihrem Benutzer Feedback geben können, während Sie sprechen und danach. `Start()` die `Stop()` Methoden und aktivieren bzw. deaktivieren die Diktat Erkennung. Sobald die Erkennung erfolgt ist, sollte Sie mithilfe von verworfen werden, `Dispose()` um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während der Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
 
 Für den Einstieg in das Diktat müssen nur wenige Schritte ausgeführt werden:
-1. Erstellen eines neuen "diktationerkenzer"
+1. Erstellen eines neuen `DictationRecognizer`
 2. Behandeln von Diktat Ereignissen
 3. "Diktationerkenzer" starten
 
 ### <a name="enabling-the-capability-for-dictation"></a>Aktivieren der Funktion für das Diktat
 
-Die Funktion "Internet Client" muss zusammen mit der oben erwähnten Funktion "Mikrofon" deklariert werden, damit eine Anwendung die Diktat Funktion nutzt.
-1. Navigieren Sie im Unity-Editor zu den Player Einstellungen, indem Sie zur Seite "> Projekteinstellungen bearbeiten > Player" navigieren.
-2. Wählen Sie auf der Registerkarte "Windows Store" aus.
-3. Überprüfen Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die Funktion " **Internetclient** ".
+Die **Internet Client** -und **Mikrofon** Funktionen müssen für eine APP deklariert werden, um die Diktat Verwendung zu verwenden:
+1. Wechseln Sie im Unity-Editor zu **Edit > Project Settings > Player** .
+2. Auf der Registerkarte " **Windows Store** " auswählen
+3. Überprüfen Sie im Abschnitt **Veröffentlichungs Einstellungen > Funktionen** die Funktion **Internetclient** .
+    * Wenn Sie das Mikrofon nicht bereits aktiviert haben, überprüfen Sie optional die **Mikrofon** Funktion.
+4. Erteilen von Berechtigungen für die APP für den Zugriff auf das Mikrofon auf Ihrem hololens-Gerät, sofern noch nicht geschehen
+    * Sie werden zum Starten des Geräts aufgefordert, aber wenn Sie versehentlich auf "Nein" geklickt haben, können Sie die Berechtigungen in den Geräteeinstellungen ändern.
 
 ### <a name="dictationrecognizer"></a>Diktationerkenzer
 
@@ -170,16 +176,16 @@ dictationRecognizer = new DictationRecognizer();
 ```
 
 Es gibt vier Diktat Ereignisse, die abonniert und behandelt werden können, um das Diktat Verhalten zu implementieren.
-1. "Ditationresult"
-2. "Ditationcomplete"
-3. "Ditationhypothese"
-4. "Ditationerror"
+1. `DictationResult`
+2. `DictationComplete`
+3. `DictationHypothesis`
+4. `DictationError`
 
 **"Ditationresult"**
 
 Dieses Ereignis wird ausgelöst, nachdem der Benutzer angehalten wurde, in der Regel am Ende eines Satzes. Hier wird die vollständig erkannte Zeichenfolge zurückgegeben.
 
-Abonnieren Sie zunächst das Ereignis "" für das ""-Ereignis:
+Abonnieren Sie zunächst das- `DictationResult` Ereignis:
 
 ```
 dictationRecognizer.DictationResult += DictationRecognizer_DictationResult;
@@ -198,7 +204,7 @@ private void DictationRecognizer_DictationResult(string text, ConfidenceLevel co
 
 Dieses Ereignis wird fortlaufend ausgelöst, während der Benutzer spricht. Wie die Erkennung hört, bietet Sie Text zu den bisher gehörenden.
 
-Abonnieren Sie zunächst das Ereignis "ditationhypothese":
+Abonnieren Sie zunächst das- `DictationHypothesis` Ereignis:
 
 ```
 dictationRecognizer.DictationHypothesis += DictationRecognizer_DictationHypothesis;
@@ -217,7 +223,7 @@ private void DictationRecognizer_DictationHypothesis(string text)
 
 Dieses Ereignis wird ausgelöst, wenn die Erkennung angehalten wird, und zwar unabhängig davon, ob von "Stopp ()" aufgerufen wird, ein Timeout auftritt oder ein anderer Fehler vorliegt.
 
-Abonnieren Sie zunächst das Ereignis "" für das Ereignis "".
+Abonnieren Sie zunächst das- `DictationComplete` Ereignis:
 
 ```
 dictationRecognizer.DictationComplete += DictationRecognizer_DictationComplete;
@@ -236,7 +242,7 @@ private void DictationRecognizer_DictationComplete(DictationCompletionCause caus
 
 Dieses Ereignis wird ausgelöst, wenn ein Fehler auftritt.
 
-Abonnieren Sie zunächst das Ereignis "" für "" "".
+Abonnieren Sie zunächst das- `DictationError` Ereignis:
 
 ```
 dictationRecognizer.DictationError += DictationRecognizer_DictationError;
@@ -268,9 +274,9 @@ dictationRecognizer.Dispose();
 ```
 
 **Tipps**
-* Die Methoden "Start ()" und "stoppt ()" aktivieren und deaktivieren die Diktat Erkennung.
-* Sobald die Erkennung erfolgt ist, muss Sie mithilfe der Methode "verwerfen ()" freigegeben werden, um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
-* Timeouts treten nach einer festgelegten Zeitspanne auf. Sie können diese Timeouts im Ereignis "ditationcomplete" überprüfen. Es gibt zwei Timeouts, die Sie beachten sollten:
+* `Start()` die `Stop()` Methoden und aktivieren bzw. deaktivieren die Diktat Erkennung.
+* Sobald die Erkennung erfolgt ist, muss Sie mithilfe von verworfen werden, `Dispose()` um die verwendeten Ressourcen freizugeben. Diese Ressourcen werden während der Garbage Collection automatisch freigegeben, wenn Sie noch nicht freigegeben werden.
+* Timeouts treten nach einer festgelegten Zeitspanne auf. Sie können diese Timeouts im Ereignis überprüfen `DictationComplete` . Es gibt zwei Timeouts, die Sie beachten sollten:
    1. Wenn die Erkennung gestartet wird und in den ersten fünf Sekunden keine Audiodaten mehr angezeigt werden, tritt ein Timeout auf.
    2. Wenn die Erkennung ein Ergebnis erhalten hat, aber dann 20 Sekunden lang Stillen wird, tritt ein Timeout auf.
 
@@ -282,7 +288,7 @@ Wenn Sie in Ihrer APP sowohl die Erkennung als auch das Diktat von Ausdrücken v
 PhraseRecognitionSystem.Shutdown();
 ```
 
-Wenn Sie alle erkenners in Ihrem vorherigen Zustand wiederherstellen möchten, können Sie nach dem Beenden von "diktationerkenzer" Folgendes aufzurufen:
+Sie können aufzurufen `Restart()` , um alle erkenners in Ihrem vorherigen Zustand wiederherzustellen, nachdem der "diktationerkenzer" angehalten wurde:
 
 ```
 PhraseRecognitionSystem.Restart();
@@ -290,16 +296,11 @@ PhraseRecognitionSystem.Restart();
 
 Sie können auch einfach einen keywordrecognizer starten, mit dem auch das phraserecognitionsystem neu gestartet wird.
 
-## <a name="using-the-microphone-helper"></a>Verwenden des Mikrofon-Hilfsprogramms
-
-Das Mixed Reality Toolkit auf GitHub enthält eine Mikrofon-Hilfsklasse, mit der Entwickler darauf hinweisen können, ob im System ein brauchbares Mikrofon vorhanden ist. Eine Verwendung hierfür ist, wo Sie überprüfen möchten, ob ein Mikrofon auf dem System vorhanden ist, bevor Sie die sprach Interaktions Hinweise in der Anwendung darstellen.
-
-Das Mikrofon-Hilfsobjekt befindet sich im [Ordner Input/Scripts/Utilities](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/MicrophoneHelper.cs). Das GitHub-Repository enthält auch ein [kleines Beispiel](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scripts/MicrophoneHelperSample.cs) , das zeigt, wie das Hilfsprogramm verwendet werden kann.
-
 ## <a name="voice-input-in-mixed-reality-toolkit"></a>Spracheingabe im Mixed Reality Toolkit
-Die Beispiele für die Spracheingabe finden Sie in dieser Szene.
 
-- [HoloToolkit-examples/Input/Szenen/speechinputsource. unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Input/Scenes/SpeechInputSource.unity)
+In den folgenden Demoszenen finden Sie mrtk-Beispiele für die Spracheingabe:
+* [Diktieren](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [Speech](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
