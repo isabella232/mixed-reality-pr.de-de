@@ -3,16 +3,16 @@ title: Hinzufügen eines Offlinemodus für die lokale Sprache-zu-Text-Übersetzu
 description: In diesem Kurs lernen Sie, wie Sie der Spracherkennung in Mixed-Reality-Anwendungen den Offlinemodus für die lokale Übersetzung hinzufügen.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 06/27/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010080"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590152"
 ---
 # <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Hinzufügen eines Offlinemodus für die lokale Sprache-zu-Text-Übersetzung
 

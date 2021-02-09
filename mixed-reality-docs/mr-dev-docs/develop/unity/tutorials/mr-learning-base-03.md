@@ -1,20 +1,22 @@
 ---
-title: Konfigurieren der MRTK-Profile
-description: In diesem Kurs erfahren Sie, wie Sie die MRTK-Profile (Mixed Reality Toolkit) für Ihre Mixed Reality-Apps konfigurieren.
+title: 'Tutorials zu den ersten Schritten: 3 Konfigurieren der MRTK-Profile'
+description: In diesem Kurs erfahren Sie, wie Sie die MRTK-Profile (Mixed Reality Toolkit) konfigurieren.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, räumliche Wahrnehmung
 ms.localizationpriority: high
-ms.openlocfilehash: 9b0c914bd1f518d53abdd681b3a5f6959c9a6211
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579303"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590472"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3. Konfigurieren der MRTK-Profile
+
+## <a name="overview"></a>Übersicht
 
 In diesem Tutorial erfahren Sie, wie die MRTK-Profile angepasst und konfiguriert werden.
 
@@ -47,7 +49,7 @@ Dies sind die wichtigsten Schritte, die Sie ausführen, um das Gittermodell zur 
 > [!NOTE]
 > Das Konfigurationsprofil ist das Profil der obersten Ebene. Folglich müssen Sie, um andere Profile bearbeiten zu können, zuerst das Konfigurationsprofil klonen.
 
-Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus, und überprüfen Sie dann im Inspektorfenster, ob das Konfigurationsprofil **MixedRealityToolkit** auf **DefaultXRSDKConfigurationProfile** festgelegt ist:
+Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus, und ändern Sie dann im Inspektorfenster das Konfigurationsprofil des **Mixed Reality-Toolkits** in **DefaultHoloLens2ConfigurationProfile**:
 
 ![MixedRealityToolkit-Komponente von Unity mit ausgewähltem DefaultHoloLens2ConfigurationProfile](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -55,7 +57,7 @@ Klicken Sie mit immer noch ausgewähltem **MixedRealityToolkit**-Objekt im Inspe
 
 ![„Copy & Paste“-Schaltfläche der MixedRealityToolkit-Komponente von Unity](images/mr-learning-base/base-03-section1-step1-2.png)
 
-Geben Sie im Fenster „Profil klonen“ einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_XRSDKConfigurationProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultXRSDKConfigurationProfile** zu erstellen:
+Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_HoloLens2ConfigurationProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultHololens2ConfigurationProfile** zu erstellen:
 
 ![Popupfenster „Konfigurationsprofil klonen“ des MixedRealityToolkit von Unity](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -83,7 +85,7 @@ Klicken Sie auf der Registerkarte **Spatial Awareness** (Räumliche Wahrnehmung)
 
 ![MixedRealityToolkit-Komponente von Unity mit ausgewählter Registerkarte „Spatial Awareness“ (räumliche Wahrnehmung)](images/mr-learning-base/base-03-section1-step3-1.png)
 
-Geben Sie im Fenster „Profil klonen“ einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_XRSDKSpatialAwarenessSystemProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultXRSDKSpatialAwarenessSystemProfile** zu erstellen:
+Geben Sie im Fenster „Clone Profile“ (Profil klonen) einen passenden **Profilnamen** ein, beispielsweise _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_, und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um eine bearbeitbare Kopie des **DefaultMixedRealitySpatialAwarenessSystemProfile** zu erstellen:
 
 ![Popupfenster „Spatial Awareness-Systemprofil klonen“ des MixedRealityToolkit von Unity](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -93,7 +95,7 @@ Das neu erstellte Profil des Systems für räumliche Wahrnehmung wird Ihrem Konf
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4. Klonen des Standardprofils des Betrachters für räumliche Gittermodelle
 
-Erweitern Sie bei immer noch ausgewählter Registerkarte **Spatial Awareness** (Räumliche Wahrnehmung) den Abschnitt **XR SDK Windows Mixed Reality Spatial Mesh Observer** (Betrachter für das räumliche Gittermodell von XR SDK Windows Mixed Reality), und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um das Clone Profile-Fenster (Profil klonen) zu öffnen:
+Erweitern Sie bei immer noch ausgewählter Registerkarte **Spatial Awareness** (Räumliche Wahrnehmung) den Abschnitt **Windows Mixed Reality Spatial Mesh Observer** (Betrachter für das räumliche Gittermodell von Windows Mixed Reality), und klicken Sie dann auf die Schaltfläche **Clone** (Klonen), um das Clone Profile-Fenster (Profil klonen) zu öffnen:
 
 ![MixedRealityToolkit-Komponente von Unity mit erweitertem Abschnitt „Windows Mixed Reality Raum-Mesh-Betrachter“](images/mr-learning-base/base-03-section1-step4-1.png)
 

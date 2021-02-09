@@ -3,16 +3,16 @@ title: Einrichten des Verständnisses von Absichten und natürlicher Sprache
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Absichten und Verstehen natürlicher Sprache in Mixed-Reality-Anwendungen eingerichtet werden.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10, LUIS, LUIS-Portal, Absicht, Entitäten, Äußerungen, Verstehen natürlicher Sprache
 ms.localizationpriority: high
-ms.openlocfilehash: 8d840855321de5d4e055b944783649c9d8028f9a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 49e2b44000add22e924d9552f60b63ac1ac30288
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581477"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590362"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4. Einrichten des Verstehens von Absichten und natürlicher Sprache
 
