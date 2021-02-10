@@ -3,16 +3,16 @@ title: Einführung in die Tutorials zu Azure Spatial Anchors
 description: In diesem Kurs erfahren Sie, wie Sie Azure Spatial Anchors in einer Mixed Reality-Anwendung implementieren.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, iOS, Android, Windows 10, ARCore, macOS, Android-Buildunterstützung, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 9529b12968c5cbc985f4af8eb0053d277eb00c03
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 6ef488dec38a918e0a3707b06644002a51c7d5e5
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699029"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590692"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1. Einführung in die Tutorials zu Azure Spatial Anchors
 
@@ -50,7 +50,7 @@ Tutorials in dieser Reihe:
   * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019 LTS und hinzugefügtem Buildunterstützungsmodul für iOS
 
 > [!CAUTION]
-> Die empfohlene Mixed Reality Toolkit-Version für diese Tutorialreihe ist MRTK 2.5.1.
+> Die empfohlene Mixed Reality Toolkit-Version für diese Tutorialreihe ist MRTK 2.5.3.
 
 > [!CAUTION]
 > Die empfohlene Unity-Version für diese Tutorialreihe ist Unity 2019 LTS. Diese ersetzt alle Unity-Versionsanforderungen, die in den oben verlinkten Voraussetzungen angegeben sind.

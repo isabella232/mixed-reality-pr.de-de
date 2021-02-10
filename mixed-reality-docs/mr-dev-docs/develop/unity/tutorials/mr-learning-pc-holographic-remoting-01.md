@@ -3,16 +3,16 @@ title: Erste Schritte mit Holographic Remoting am PC
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Remotestreaming von Mixed Reality-Anwendungen von Ihrem PC an HoloLens 2 verwenden können.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, QuickInfos, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581965"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590382"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Erste Schritte mit Holographic Remoting am PC
 
@@ -67,7 +67,7 @@ Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoption der räumlich
 Laden Sie [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage) herunter, und **importieren** Sie das Paket.
 
 >[!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren des Mixed Reality-Toolkits](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit).
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich wie die folgende Abbildung aussehen:
 
@@ -129,9 +129,9 @@ Führen Sie für jede der verbleibenden Schaltflächen den oben beschriebenen Vo
 
 Nun sind Ihre Schaltflächen so konfiguriert, dass Sie die Modellwechsel- und Clippingfunktionen veranschaulichen können. Es ist an der Zeit, dem Skript 3D-Modelle und die Clippingobjekte hinzuzufügen.
 
-Wir haben sechs verschiedene 3D-Modelle zur Demonstrationszwecken bereitgestellt. Erweitern Sie das **_ModelParentobject_* _, um diese 3D-Modelle verfügbar zu machen.
+Wir haben sechs verschiedene 3D-Modelle zur Demonstrationszwecken bereitgestellt. Erweitern Sie das ***ModelParentobject***, um diese 3D-Modelle anzuzeigen.
 
-Während das ButtonParent-Objekt weiterhin im Hierarchiefenster ausgewählt ist, suchen Sie im Inspektor-Fenster nach der Komponente _ *View Button Control (Script)* *, und erweitern Sie die Variable **Models**.
+Während das ButtonParent-Objekt weiterhin im Hierarchiefenster ausgewählt ist, suchen Sie im Inspektor-Fenster nach der Komponente **View Button Control (Script)** , und erweitern Sie die Variable **Models**.
 
 Geben Sie im Feld **Size** (Größe) die Anzahl der 3D-Modelle ein, die Sie in Ihrer Szene verwenden möchten. In diesem Fall sind es sechs Modelle. Es werden Felder zum Hinzufügen neuer 3D-Modelle erstellt.
 
@@ -169,7 +169,7 @@ In diesem Abschnitt wird erläutert, wie Sie Eye-Tracking in Ihrem Projekt aktiv
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1. Identifizieren von Zielobjekten und zugehörigen QuickInfos
 
-Wählen Sie im Hierarchiefenster das ModelParent-Objekt aus. Erweitern Sie **_MarsCuriosity > Rover_ *_, um fünf Hauptbestandteile von MarsCuriosityRover zu ermitteln: _* POI-Camera**, **POI-Wheels**, **POI-Antena**, **POI-Spectrometer**, **POI-RUHF Antenna**.
+Wählen Sie im Hierarchiefenster das ModelParent-Objekt aus. Erweitern Sie ***MarsCuriosity > Rover** _, um fünf Hauptbestandteile von MarsCuriosityRover zu ermitteln: _*POI-Camera**, **POI-Wheels**, **POI-Antenna**, **POI-Spectrometer**, **POI-RUHF Antenna**.
 
 * Beachten Sie die fünf entsprechenden QuickInfo-Objekte, die mit MarsCuriosityRover-Teilen im Hierarchiefenster verknüpft sind.
 * Sie konfigurieren diese Objekte so, dass sie hervorgehoben werden, wenn Sie sich die MarsCuriosityRover-Teile ansehen.

@@ -3,16 +3,16 @@ title: Erstellen dynamischer Inhalte mithilfe von Solvern
 description: In diesem Kurs erfahren Sie, wie Sie die Solver des Mixed Reality Toolkits (MRTK) verwenden, um dynamischen Inhalt zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver
 ms.localizationpriority: high
-ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579161"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590482"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Erstellen dynamischer Inhalte mithilfe von Solvern
 
@@ -26,14 +26,14 @@ In diesem Tutorial lernen Sie Möglichkeiten zur dynamischen Platzierung von Hol
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>Speicherort der Solver im MRTK
 
- Die Solver des MRTK befinden sich im MRTK SDK-Ordner. Um die verfügbaren Solver in Ihrem Projekt anzuzeigen, navigieren Sie im Projektfenster zu **Assets** > **MRTK** > **SDK** > **Features** > **Utilities** > **Solvers** (Medienobjekte > MRTK > SDK > Features > Hilfsprogramme > Solver):
+ Die Solver des MRTK befinden sich im MRTK SDK-Ordner. Zum Anzeigen der verfügbaren Solver in Ihrem Projekt navigieren Sie im Projektfenster zu **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **Utilities** > **Solvers** (Pakete > Mixed Reality Toolkit Foundation > SDK > Features > Hilfsprogramme > Solver):
 
 ![Unity-Projektfenster mit ausgewähltem Ordner „Solvers“](images/mr-learning-base/base-05-section1-step1-1.png)
 
 In diesem Tutorial behandeln wir die Implementierung des Solvers Directional Indicator (Richtungsanzeige) und des Solvers Tap To Place (Zum Platzieren tippen). Weitere Informationen zur ganzen Bandbreite der im MRTK verfügbaren Solver finden Sie im [Solver](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)-Leitfaden im [MRTK-Dokumentationsportal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
 
 > [!NOTE]
-> Der Richtungsanzeige-Solver befindet sich nicht in den oben angegebenen Solver-Ordnern, sondern im Ordner „Assets“ > „MRTK“ > „SDK“ > „Experimental“ > „Features“ > „Utilities“ (Medienobjekte > MRTK > SDK > Experimentell > Features > Hilfsprogramme), da es sich um ein experimentelles Feature handelt.
+> Der Richtungsanzeige-Solver befindet sich nicht in den oben angegebenen Solver-Ordnern, sondern im Ordner „Packages“ > „Mixed Reality Toolkit Foundation“ > „SDK“ > „Experimental“ > „Features“ > „Utilities“, da es sich um ein experimentelles Feature handelt.
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>Verwenden des Richtungsanzeige-Solvers, um den Benutzer zu Objekten zu führen
 

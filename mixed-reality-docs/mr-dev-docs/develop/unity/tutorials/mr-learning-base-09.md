@@ -3,16 +3,16 @@ title: Verwenden von Sprachbefehlen
 description: In diesem Kurs erfahren Sie, wie Sie Sprachbefehle in Mixed Reality-Apps mit dem Mixed Reality Toolkit (MRTK) einrichten, erstellen und verwenden.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Sprachbefehle, Spracheingabe
 ms.localizationpriority: high
-ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635449"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590392"
 ---
 # <a name="9-using-speech-commands"></a>9. Verwenden von Sprachbefehlen
 
@@ -59,7 +59,7 @@ Klicken Sie im Abschnitt „Speech > **Speech Commands**“ (Sprache > Sprachbef
 
 ## <a name="controlling-speech-commands"></a>Steuern von Sprachbefehlen
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** (Medienobjekte > MRTK > SDK > Features > UX > Prefabs > QuickInfo), um die QuickInfo-Prefabs zu suchen:
+Navigieren Sie im Projektfenster zum Ordner **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** (Paket > Mixed Reality Toolkit Foundation > SDK > Features > UX > Prefabs > QuickInfo), um die QuickInfo-Prefabs zu suchen:
 
 ![Öffnen des QuickInfo-Ordners](images/mr-learning-base/base-09-section3-step1-1.png)
 

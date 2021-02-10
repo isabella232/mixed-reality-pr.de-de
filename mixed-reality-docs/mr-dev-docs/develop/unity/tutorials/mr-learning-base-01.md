@@ -3,16 +3,16 @@ title: Einführung in die MRTK-Tutorials
 description: In diesem Kurs erfahren Sie, wie Sie das Mixed Reality Toolkit (MRTK) verwenden, um eine Mixed Reality-Anwendung von Grund auf zu erstellen.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, Solver, Eye Tracking, Sprachbefehle
 ms.localizationpriority: high
-ms.openlocfilehash: a917aea812c262e3589110a29e2399da4c1e5348
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 8bae8b821e7ffe67b745bbbab763193612a58485
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579269"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590412"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1. Einführung in die MRTK-Tutorials
 
@@ -46,7 +46,7 @@ Die Tutorials in dieser Reihe sind auf eine bestimmte Abfolge ausgelegt, also ar
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019 LTS und hinzugefügtem Buildunterstützungsmodul für die Universelle Windows-Plattform
 
 > [!CAUTION]
-> Die empfohlene MRTK-Version für diese Tutorialreihe ist MRTK 2.5.1.
+> Die empfohlene MRTK-Version für diese Tutorialreihe ist MRTK 2.5.3.
 
 > [!CAUTION]
 > Die empfohlene Unity-Version für diese Tutorialserie ist Unity 2019 LTS. Diese Information hat Vorrang vor allen Unity-Versionsanforderungen, die in den oben verlinkten Voraussetzungen angegeben sind.

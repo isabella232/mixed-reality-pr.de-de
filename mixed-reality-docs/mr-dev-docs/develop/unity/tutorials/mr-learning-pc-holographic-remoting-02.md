@@ -3,16 +3,16 @@ title: Erstellen einer PC-Anwendung für Holographic Remoting
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie eine Anwendung erstellen, die Mixed Reality-Remoting von Ihrem PC zu HoloLens 2 ausführt.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007330"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590302"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Erstellen einer PC-Anwendung für Holographic Remoting
 
@@ -53,11 +53,11 @@ Aktivieren Sie im Abschnitt **XR Settings** (XR-Einstellungen) das Kontrollkäst
 
 Wählen Sie im Unity-Menü „File > Build Settings“ (Datei > Buildeinstellungen) aus, um das Fenster „Build Settings“ (Buildeinstellungen) zu öffnen.
 
-Klicken Sie im Fenster „Build Settings“ (Buildeinstellungen) auf die Schaltfläche **_Add Open Scenes_* _ (Geöffnete Szenen hinzufügen), um den Szenen die aktuelle Szene hinzuzufügen. Klicken Sie in der Liste „Build“ auf die _*_Schaltfläche „Build“_*_, um das Fenster „Build Universal Windows Platform“ (Universelle Windows-Plattform erstellen) zu öffnen:
+Klicken Sie im Fenster „Build Settings“ (Buildeinstellungen) auf die Schaltfläche ***Add Open Scenes** _ (Geöffnete Szenen hinzufügen), um den Szenen die aktuelle Szene hinzuzufügen. Klicken Sie in der Liste „Build“ auf die Schaltfläche _ *_Build_**, um das Fenster „Build Universal Windows Platform“ (Universelle Windows-Plattform erstellen) zu öffnen:
 
 ![Unity-Fenster „Build Settings“ mit hinzugefügter Szene](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
-Wählen Sie im Fenster „Build Universal Windows Platform“ einen passenden Speicherort zum Speichern Ihres Builds aus, z. B. „Documents\MixedRealityLearning“. Erstellen Sie einen neuen Ordner, und geben Sie ihm einen geeigneten Namen, z. B. „PCHolographicRemoting“. Klicken Sie dann auf die Schaltfläche _*_Select Folder_*_ (Ordner auswählen), um den Buildprozess zu starten:
+Wählen Sie im Fenster „Build Universal Windows Platform“ einen passenden Speicherort zum Speichern Ihres Builds aus, z. B. „Documents\MixedRealityLearning“. Erstellen Sie einen neuen Ordner, und geben Sie ihm einen geeigneten Namen, z. B. „PCHolographicRemoting“. Klicken Sie dann auf die Schaltfläche ***Select Folder*** (Ordner auswählen), um den Buildprozess zu starten:
 
 ![Unity-Fenster „Build Settings“ mit Aufforderungsfenster zum Auswählen eines Ordners](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
 
@@ -78,7 +78,7 @@ Konfigurieren Sie Visual Studio für den PC, indem Sie die Releasekonfiguration,
 
 ![Visual Studio, konfiguriert für den lokalen Computer](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
 
-Klicken Sie auf die Schaltfläche _*_Lokaler Computer_*_. Die Anwendung wird auf Ihrem PC erstellt und bereitgestellt. Die Anwendung wird standardmäßig auf Ihrem PC installiert.
+Klicken Sie auf die Schaltfläche ***Lokaler Computer***. Die Anwendung wird auf Ihrem PC erstellt und bereitgestellt. Die Anwendung wird standardmäßig auf Ihrem PC installiert.
 
 ## <a name="testing-holographic-remoting-remote-application"></a>Testen einer Holographic Remoting-Remoteanwendung
 
@@ -86,7 +86,7 @@ Zum Herstellen einer Verbindung Ihrer PC-Anwendung mit HoloLens 2 führen Sie d
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1. Installieren der Remoting Player-Anwendung auf HoloLens 2-Geräten
 
-_ Besuchen Sie auf Ihrem HoloLens 2-Gerät die Store-App, und suchen Sie nach „**Remoting Player**“.
+* Besuchen Sie auf dem HoloLens 2-Gerät die Store-App, und suchen Sie nach „**Remoting Player**“.
 * Wählen Sie die **Remoting Player**-App aus.
 * Tippen Sie auf **Installieren**, um die App herunterzuladen und zu installieren.
 

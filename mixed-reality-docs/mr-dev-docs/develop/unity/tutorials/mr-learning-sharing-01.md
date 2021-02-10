@@ -3,16 +3,16 @@ title: Einführung in die Tutorials zu Mehrbenutzerfunktionen
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie freigegebene Mehrbenutzerumgebungen in einer HoloLens 2-Anwendung implementieren.
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: c18bd7c10ed042278053a51c2d1894564000dfe2
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 90c5b2ee3f25c39fc644aee0fbbf49643f7d2a59
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699019"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590172"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1. Einführung in die Tutorials zu Mehrbenutzerfunktionen
 
@@ -50,7 +50,7 @@ Tutorials in dieser Reihe:
   * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a> mit installiertem Unity 2019 LTS und hinzugefügtem Buildunterstützungsmodul für iOS
 
 > [!CAUTION]
-> Die empfohlene Mixed Reality Toolkit-Version für diese Tutorialreihe ist MRTK 2.5.1.
+> Die empfohlene Mixed Reality Toolkit-Version für diese Tutorialreihe ist MRTK 2.5.3.
 
 > [!CAUTION]
 > Die empfohlene Unity-Version für diese Tutorialreihe ist Unity 2019 LTS. Diese ersetzt alle Unity-Versionsanforderungen, die in den oben verlinkten Voraussetzungen angegeben sind.

@@ -7,20 +7,22 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: c45fa347768e5d35441f2c1fd59da815a80ec707
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: 0b952922c7723bf0e2c87ddb7fed9a896d65e833
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166775"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606125"
 ---
 # <a name="install-the-tools"></a>Installieren der Tools
 
 Holen Sie sich die Tools, die Sie benötigen, um Anwendungen für Microsoft HoloLens und immersive Windows Mixed Reality-Headsets (VR) zu entwickeln. Es gibt kein separates SDK für die Entwicklung für Windows Mixed Reality. Sie verwenden Visual Studio mit dem Windows 10 SDK.
 
-Sie besitzen kein Mixed Reality-Gerät? Sie können den [HoloLens-Emulator](platform-capabilities-and-apis/using-the-hololens-emulator.md) installieren, um einige Funktionen von Mixed Reality-Anwendungen ohne eine HoloLens zu testen. Sie können auch den [Windows Mixed Reality-Simulator](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) verwenden, um Ihre Mixed Reality-Anwendungen für immersive Headsets zu testen. Wenn Sie Unity verwenden, können Sie die Eingabesimulation des [Mixed Reality-Toolkits (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity) nutzen, um verschiedene Arten von Eingabeinteraktionen zu testen, wie die Eingabe per Handtracking und Eye Tracking.
+Sie besitzen kein Mixed Reality-Gerät? Sie können den [HoloLens-Emulator](platform-capabilities-and-apis/using-the-hololens-emulator.md) installieren, um einige Funktionen von Mixed Reality-Anwendungen ohne eine HoloLens zu testen. Sie können auch den [Windows Mixed Reality-Simulator](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) verwenden, um Ihre Mixed Reality-Anwendungen für immersive Headsets zu testen. 
 
-Wir empfehlen die Installation der Unity-Spielengine – dies ist die einfachste Möglichkeit, mit dem Erstellen von Mixed Reality-Apps zu beginnen. DirectX kann auch verwendet werden, wenn eine benutzerdefinierte Engine gewünscht ist.
+Wir empfehlen die Installation entweder der Unity- oder der Unreal-Spielengine – dies ist die einfachste Möglichkeit, mit dem Erstellen von Mixed Reality-Apps zu beginnen. DirectX kann auch verwendet werden, wenn eine benutzerdefinierte Engine gewünscht ist.
+
+Wenn Sie Unity verwenden, können Sie die Eingabesimulation des [Mixed Reality-Toolkits für Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity) nutzen, um verschiedene Arten von Eingabeinteraktionen zu testen, wie die Eingabe per Handtracking und Eye Tracking. Verwenden Sie für Unreal-Projekte das [UX Tools-Plug-In](https://github.com/microsoft/MixedReality-UXTools-Unreal), um häufig verwendete Eingabeinteraktionen und Funktionen der Benutzererfahrung zu testen.
 
 >[!TIP]
 >Fügen Sie diese Seite als Lesezeichen hinzu und überprüfen Sie sie regelmäßig, um über die neueste Version der einzelnen Tools auf dem Laufenden zu bleiben, die für die Mixed Reality-Entwicklung empfohlen werden.
