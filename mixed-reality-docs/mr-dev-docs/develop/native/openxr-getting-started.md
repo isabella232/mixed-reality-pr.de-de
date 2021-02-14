@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: Openxr, Khronos, basicxrapp, Windows Mixed Reality, openxr Entwicklertools, DirectX, Native, Native APP, Custom Engine, Middleware, Getting Started, 101, Preview Extensions, openxr Runtime Version, Systemstatus
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613194"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496068"
 ---
 # <a name="getting-started-with-openxr"></a>Erste Schritte mit OpenXR
 
@@ -35,7 +35,7 @@ So beginnen Sie mit der Entwicklung von openxr-Anwendungen für immersive Window
 1. Stellen Sie sicher, dass Sie mindestens das Windows 10-Update von Mai 2019 (1903) ausführen. Dies ist die Mindestanforderung für Endbenutzer von Windows Mixed Reality, openxr-Anwendungen auszuführen.  Wenn Sie eine frühere Version von Windows 10 verwenden, können Sie ein Upgrade mit dem <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 Update Assistant</a>durchführen.
 2. Richten Sie ein Windows Mixed Reality-Headset ein, oder befolgen Sie die Anweisungen zum [Aktivieren des Windows Mixed Reality-Simulators](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md).
 
-Das war's.  Die Windows Mixed Reality openxr-Laufzeit wird installiert und automatisch für alle Windows Mixed Reality-Benutzer aktiviert.  Der Microsoft Store speichert die Laufzeit dann auf dem neuesten Stand.
+Das ist alles!  Die Windows Mixed Reality openxr-Laufzeit wird installiert und automatisch für alle Windows Mixed Reality-Benutzer aktiviert.  Der Microsoft Store speichert die Laufzeit dann auf dem neuesten Stand.
 
 Wenn Sie die Windows Mixed Reality openxr-Laufzeit erneut aktivieren möchten, starten Sie das Mixed Reality-Portal über das Startmenü, und wählen Sie oben im Fenster die Option "reparieren" aus.  Wenn diese Schaltfläche fehlt, ist die openxr-Laufzeit bereits aktiv.<br>
 

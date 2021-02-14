@@ -6,17 +6,29 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Versionsverlauf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699009"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496038"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic Remoting-Versionsverlauf
 
 > [!IMPORTANT]
 > Diese Anleitung gilt speziell für Holographic-Remoting auf hololens 2.
+
+## <a name="version-250-february-12-2021"></a>Version 2.5.0 (12. Februar 2021) <a name="v2.5.0"></a>
+* Holographic Remoting mithilfe der [openxr-API](../native/openxr.md) unterstützt jetzt Folgendes:
+  * XR_MSFT_spatial_anchor Erweiterung. Diese Erweiterung ermöglicht es einer Anwendung, räumliche Anker zu erstellen, bei denen es sich um beliebige FreeSpace-Punkte in der physischen Umgebung des Benutzers handelt, die von der Laufzeit nachverfolgt werden.
+  * XR_MSFT_controller_model Erweiterung. Diese Erweiterung bietet einen Mechanismus zum Laden von gltf-Modellen für Controller.
+  * Benutzerdefinierte Datenkanäle als Teil der XR_MSFT_holographic_remoting-Erweiterung. Ein Beispiel für, das im [openxr-Remote Beispiel](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)angezeigt wird.
+* Verbesserte Synchronisierung zwischen Player und Remote Seite. Dies ermöglicht die dynamische Änderung von Pose und Frame Pufferung, wodurch sichergestellt wird, dass der Remote gerenderte Inhalt die Anzeige mit der erwarteten zielframeworkrate reibungslos erreicht
+* Verbesserte Leistung des Holographic Remoting-Players, der über die Microsoft Store verfügbar ist. Auf hololens 2 führt der Player nun einen Solid-Wert auf 60 Frames pro Sekunde aus.
+* Optimierte Übertragung räumlicher Oberflächen Netze, die über [spatialsurfaceobserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) durch eine Remote-app abgefragt werden können.
+* Es wurde ein Problem behoben, bei dem der Aufruf der spatialanchormanager-Methode oder der Freigabe Anker beim trennen zu Ausnahmen geführt hat
+* Das Thread Problem wurde behoben, was zu Abstürzen führte, wenn playercontext-oder remotecontext-Instanzen geschlossen werden.
+* Viele andere Fehlerbehebungen und Verbesserungen der Stabilität.
 
 ## <a name="version-241-january-22-2021"></a>Version 2.4.1 (22. Januar 2021) <a name="v2.4.1"></a>
 
@@ -128,7 +140,7 @@ ms.locfileid: "98699009"
 
 * Erstes öffentliches Release von Holographic Remoting für hololens 2.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Schreiben einer Holographic Remoting-Remote-app mit Windows Mixed Reality-APIs](holographic-remoting-create-remote-wmr.md)
 * [Schreiben einer Holographic Remoting-Remote-App mithilfe von openxr-APIs](holographic-remoting-create-remote-openxr.md)
