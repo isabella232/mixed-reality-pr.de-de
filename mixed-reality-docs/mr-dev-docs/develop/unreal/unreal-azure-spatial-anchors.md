@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, Azure, Azure-Entwicklung, Raumanker, Mixed Reality, Entwicklung, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583027"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496193"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Azure-Raumanker in Unreal
 
@@ -44,6 +44,12 @@ Weitere Informationen finden Sie unter [Azure-Raumanker: Authentifizierung](/azu
 
 > [!NOTE]
 > Azure-Raumanker in Unreal 4.25 unterstützen keine Azure AD-Authentifizierungstoken, aber Unterstützung für diese Funktionalität wird in einer späteren Version verfügbar sein.
+
+## <a name="enabling-internet-access"></a>Aktivieren des Internetzugriffs
+
+Öffnen Sie **Projekteinstellungen > HoloLens**, und aktivieren Sie die Funktion **Internetclient**:
+
+![HoloLens-Projekteinstellungen mit hervorgehobenen Funktionen](images/asa-enable-wifi-connection.jpg)
 
 ## <a name="adding-azure-spatial-anchors-plugins"></a>Hinzufügen von Azure-Raumanker-Plug-Ins
 
