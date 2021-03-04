@@ -6,18 +6,18 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, nicht transparent, transparent, Clip, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581126"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759766"
 ---
 # <a name="camera-in-unity"></a>Kamera in Unity
 
 Wenn Sie ein Mixed Reality-Headset durch tragen, wird es zur Mitte ihrer Holographic World. Die Unity- [Kamera](https://docs.unity3d.com/Manual/class-Camera.html) Komponente verarbeitet das stereorenderingrendering automatisch und folgt der Bewegung und Drehung des Kopfes. Sie sollten jedoch die unten beschriebenen Kameraeinstellungen festlegen, um die visuelle Qualität und die [Stabilität des Hologramms](../platform-capabilities-and-apis/hologram-stability.md)vollständig zu optimieren.
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
 1. Wechseln Sie zum Abschnitt **andere Einstellungen** der **Windows Store-Player-Einstellungen** .
 2. Wählen Sie **Windows Mixed Reality** als Gerät aus, das in älteren Versionen von Unity als **Windows Holographic** aufgeführt werden kann.
@@ -93,7 +93,7 @@ Ein tiefen Puffer kann die visuelle Qualität verbessern, solange Windows die no
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>Automatisches Einrichten von Szenen und Kameras mit Mixed Reality Toolkit 
 
-Befolgen Sie die [Schritt-für-Schritt](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) -Anleitung zum Hinzufügen von Mixed Reality Toolkit zu Ihrem Unity-Projekt, und das Projekt wird automatisch konfiguriert. Sie können das Projekt auch ohne mrtk manuell konfigurieren, indem Sie das Handbuch im Abschnitt unten durchführen.
+Befolgen Sie die [Schritt-für-Schritt](tutorials/mr-learning-base-01.md) -Anleitung zum Hinzufügen von Mixed Reality Toolkit zu Ihrem Unity-Projekt, und das Projekt wird automatisch konfiguriert. Sie können das Projekt auch ohne mrtk manuell konfigurieren, indem Sie das Handbuch im Abschnitt unten durchführen.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 

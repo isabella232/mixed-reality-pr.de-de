@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, App-Leiste, Begrenzungsfeld, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: aba2e318439fec2bbb9e986c2ff7cac7a8a5fb3a
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847648"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759436"
 ---
 # <a name="bounding-box-and-app-bar"></a>Begrenzungsrahmen und App-Leiste
 ![Das Begrenzungs Zeichen ist die Standardschnittstelle für die Objekt Bearbeitung in gemischter Realität.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -95,7 +95,7 @@ Die APP-Leiste ist ein Menü auf Objektebene, das eine Reihe von Schaltflächen 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Begrenzungsfeld in mrtk (Mixed Reality Toolkit) für Unity
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts und Prefabs für das umgebende Feld und die APP-Leiste bereit. Sie können ein Begrenzungsfeld hinzufügen, indem Sie das BoundingBox.cs-Skript einem beliebigen Objekt zuweisen.
 
-* [Mrtk-Begrenzungsfeld](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
+* [Mrtk-Begrenzungsfeld](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/bounding-box.md)
 
 
 <br>

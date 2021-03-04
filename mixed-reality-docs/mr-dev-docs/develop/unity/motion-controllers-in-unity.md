@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: Motion Controllers, Unity, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583508"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759061"
 ---
 # <a name="motion-controllers-in-unity"></a>Motion-Controller in Unity
 
@@ -434,9 +434,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk-v2"></a>Motion-Controller in mrtk v2
+## <a name="motion-controllers-in-mrtk"></a>Motion-Controller in mrtk
 
-Sie können über den Eingabe-Manager auf [Gesten-und Bewegungs Controller](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) zugreifen.
+Sie können über den Eingabe-Manager auf [Gesten-und Bewegungs Controller](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) zugreifen.
 
 ## <a name="follow-along-with-tutorials"></a>Immer am Ball mit Tutorials
 

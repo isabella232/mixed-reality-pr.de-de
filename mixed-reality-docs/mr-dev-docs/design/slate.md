@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Slate, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 444116b8946c763b284cdc83d45f5de118e965aa
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008810"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759836"
 ---
 # <a name="slate"></a>Filmklappe
 
@@ -25,13 +25,13 @@ Ein Slate ist ein schlankes Fenster Stil Steuerelement für die Anzeige von 2D-I
 
 ## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>Slate in mrtk (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-Slate](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Slate.html)
+* [Mrtk-Slate](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/slate.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

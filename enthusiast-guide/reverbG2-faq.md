@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support, Leistung
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242535"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759285"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>Häufig gestellte Fragen zu HP Reverb G2
 
@@ -102,3 +102,8 @@ Vergewissern Sie sich, dass das mit dem Headset verbundene Kabel vollständig si
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>Wie kann ich das Headset ausschalten, während mein PC weiterhin verwendet wird
 
 Deinstallieren Sie den AC-Verbindungs Adapter aus dem Linkfeld des Headset-Kabels, um die Stromversorgung für das Headset zu entfernen.
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>Das Bild der Anzeige des Reverb-G2 ist kleiner und nur in der linken oberen Ecke.
+
+Wenn Sie über eine AMD-Power GPU verfügen, müssen Sie die automatische upskalierung deaktivieren. Wenn Ihr Headset verbunden ist, navigieren Sie zu Einstellungen-> gemischte Reality->->-Auflösung.
+Wählen Sie im Dropdown Menü die Option "4320 x 2160 (beste Qualität)" aus. Wenn "Automatische uploadskalierung (beste Leistung)" ausgewählt ist, kann das Problem mit der Anzeige angezeigt werden.

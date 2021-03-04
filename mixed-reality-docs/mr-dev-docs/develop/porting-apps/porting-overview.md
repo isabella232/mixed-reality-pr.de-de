@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: portieren, Unity, Middleware, Engine, UWP, Win32
-ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583580"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759111"
 ---
 # <a name="porting-overview"></a>Übersicht zum Portieren
 
@@ -35,7 +35,7 @@ Unsere aktuelle Empfehlung für die Unity-Entwicklung mit gemischter Realität i
 > [!CAUTION]
 > Obwohl das XR SDK mit dieser Version von Unity verfügbar ist, ist Azure Spatial Anchor zurzeit mit diesem Setup nicht kompatibel. Diese Empfehlung wird mit einer zukünftigen Version des Azure Spatial Anchor-Pakets für Unity aktualisiert. 
 > 
-> * Wenn Sie keine räumlichen Azure-Anker benötigen, können Sie [Ihr Unity-Projekt für XR konfigurieren und die](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ersten Schritte [mit dem mrtk-und XR SDK durchsetzen](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html).
+> * Wenn Sie keine räumlichen Azure-Anker benötigen, können Sie [Ihr Unity-Projekt für XR konfigurieren und die](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ersten Schritte [mit dem mrtk-und XR SDK durchsetzen](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md).
 > 
 > * Wenn Sie zurzeit das XR SDK in Ihrem Projekt verwenden und Azure Spatial Anchor verwenden möchten, deinstallieren Sie das SDK SDK, und installieren Sie das Legacy-XR-Paket erneut, um Ihre Projekteinstellungen wiederherzustellen.
 

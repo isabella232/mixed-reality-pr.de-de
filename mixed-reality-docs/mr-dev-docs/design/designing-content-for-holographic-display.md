@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Design der Benutzeroberfläche, holografische Anzeige, Inhalts Design, dunkles Design, helle Themen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Design, Pixel
-ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6bf65b9e40e42f1609b1108b366ac65637fcf106
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009090"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759275"
 ---
 # <a name="designing-content-for-holographic-display"></a>Entwerfen von Inhalten für die holografische Anzeige
 
@@ -85,7 +85,7 @@ Um die Holographic-neuprojektion bzw. – Hologramm-Stabilität zu verbessern, k
 
 Standardmäßig werden von transparenten oder durchlässigen Objekten keine tiefen geschrieben, um eine ordnungsgemäße Mischung zu ermöglichen. Zu den Möglichkeiten, dieses Problem zu beheben, gehören die Verwendung von nicht transparenten Objekten, das sicherstellen, dass die übergreifenden Objekte nahe bei nicht transparenten Objekten angezeigt werden (z. b. eine durchlässige Schaltfläche vor einem nicht transparenten Backplate), das Erzwingen von durchlässigen Objekten, um Tiefe (nicht in allen Szenarien zutreffend) und das Rendern von Proxy Objekten zu gewährleisten.
 
-Lösungen in mrtk-Unity: https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html#depth-buffer-sharing-in-unity  
+Lösungen in mrtk-Unity: https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/hologram-stabilization.md#depth-buffer-sharing-in-unity  
 
 Durch die Verwendung eines soliden und nicht transparenten Backplate können wir die Zuverlässigkeit und Interaktion gewährleisten.
 
@@ -103,15 +103,15 @@ Wenn das Projekt transparente Objekte verwenden muss, versuchen Sie, die Anzahl 
 
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet viele Beispiele für Benutzeroberflächen Bausteine, die auf den dunklen Farbschemas basieren.
 
-* [Near-Menü](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
-* [Dialogfeld](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)
-* [Hand Menü](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
+* [Near-Menü](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
+* [Dialogfeld](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md)
+* [Hand Menü](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/hand-menu.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Farbe, Licht und Materialien](color-light-and-materials.md)
 * [Cursor](cursors.md)

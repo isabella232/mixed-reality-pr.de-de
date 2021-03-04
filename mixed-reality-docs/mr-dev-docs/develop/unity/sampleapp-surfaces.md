@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Gemischte Windows-Realität, Design, Beispiel-APP, Steuerelemente, mrtk, Mixed Reality Toolkit, Unity, Beispiel-apps, Beispiel-apps, Open Source, Microsoft Store, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: bfb93574212dc9e6624d8baac636caf5c8df428a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: bd4ecabda749d4a2760fe0225caf7c53966a1b98
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009310"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759716"
 ---
 # <a name="surfaces"></a>Oberflächen
 
@@ -31,8 +31,8 @@ Aufgezeichnet mit hololens 2 mithilfe von Mixed Reality Capture
 ## <a name="about-the-app"></a>Informationen zur APP
 
 Oberflächen zeigt, wie das Eingabe System von Mixed Reality Toolkit (mrtk) und die Bausteine zum Erstellen einer APP-Oberfläche für hololens 2 verwendet werden. In diesem Projekt finden Sie die Beispiele für:
-- Verwenden Sie das [Eingabe System](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)von mrtk, insbesondere die Hand-und gemeinsame Nachverfolgung.
-- Verwenden Sie den [Standard-Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) von mrtk für leistungsfähige Grafiken.
+- Verwenden Sie das [Eingabe System](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)von mrtk, insbesondere die Hand-und gemeinsame Nachverfolgung.
+- Verwenden Sie den [Standard-Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) von mrtk für leistungsfähige Grafiken.
 
 Sie können diese Projektkomponenten verwenden, um Ihre eigenen Umgebungen mit gemischter Reality-APP zu erstellen.
 
@@ -61,9 +61,9 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 </tr>
 </table>
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-* [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Hub für MRTK-Beispiele](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

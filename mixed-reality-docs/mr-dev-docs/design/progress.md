@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows Mixed Reality, Design, Steuerelemente, UI, UX, Fortschrittsanzeige, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f323559c9a50a6f01636f0aba0bddc93b547125b
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009460"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759846"
 ---
 # <a name="progress-indicator"></a>Statusanzeige
 
@@ -31,7 +31,7 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 
 :::row:::
     :::column:::
-        ### <a name="progress-barbr"></a>Statusanzeige<br>
+        ### <a name="progress-barbr"></a>Statusleiste<br>
         Eine Statusanzeige zeigt den Prozentsatz der abgeschlossenen Aufgabe an. Er sollte bei einem Vorgang verwendet werden, dessen Dauer bekannt ist (determinate), aber sein Fortschritt sollte die Interaktion des Benutzers mit der APP nicht blockieren.<br>
         <br>
         *Bild: Statusanzeige Beispiel in hololens*
@@ -80,7 +80,8 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 
 ---
 
-## <a name="best-practices"></a>Empfohlene Methoden
+## <a name="best-practices"></a>Bewährte Methoden
+
 * Schließen Sie das [Abrechnungs-oder tagboarding](billboarding-and-tag-along.md) eng mit der Anzeige des Fortschritts ab, da der Benutzer problemlos seinen Kopf in einen leeren Bereich verschieben und Kontext verlieren kann. Ihre APP könnte so aussehen, als ob Sie abgestürzt ist, wenn der Benutzer nichts sehen kann. Das fakboardingboarding und das Tag-Along sind in den Fortschritt vorfab integriert.
 * Es ist immer gut, Statusinformationen zu den Ereignissen für den Benutzer bereitzustellen. Die Fortschritts präfab stellt verschiedene visuelle Stile bereit, einschließlich des Windows-standardmäßigen Rings-Typs zum Angeben des Status. Sie können auch ein benutzerdefiniertes Mesh mit einer Animation verwenden, wenn Sie möchten, dass der Stil Ihres Fortschritts an der Marke Ihrer APP ausgerichtet wird.
 
@@ -91,14 +92,14 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Fortschrittsanzeige in mrtk (Mixed Reality Toolkit) für Unity
 
 * [Mrtk-Fortschrittsanzeige (Prefabs)](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [Mrtk-Szenen Übergangs Dienst](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Extensions/SceneTransitionService/SceneTransitionServiceOverview.html)
+* [Mrtk-Szenen Übergangs Dienst](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/extensions/scene-transition-service.md)
 
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

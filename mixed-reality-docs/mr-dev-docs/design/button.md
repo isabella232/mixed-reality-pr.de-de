@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Schaltfläche
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847593"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759426"
 ---
 # <a name="button"></a>Schaltfläche
 
@@ -46,13 +46,13 @@ Mit einer Schaltfläche können Ihre Benutzer sofort Aktionen in gemischter Real
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Schaltfläche im mrtk (Mixed Reality Toolkit) für Unity
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet verschiedene Typen von Schaltflächen-Prefabs, einschließlich Schaltflächen im shellstil für hololens 2 und hololens (1. Gen). Die Prefab-Schaltfläche "hololens 2" enthält mehrere ausführliche Kosten, die zur Verbesserung der Benutzer Zuverlässigkeit beitragen:
+**[Mrtk für Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet verschiedene Typen von Schaltflächen-Prefabs, einschließlich Schaltflächen im shellstil für hololens 2 und hololens (1. Gen). Die Prefab-Schaltfläche "hololens 2" enthält mehrere ausführliche Kosten, die zur Verbesserung der Benutzer Zuverlässigkeit beitragen:
 
 * Near-based-Hervorhebung
 * Komprimieren des Front-Käfigs
 * Pulse Effect on-Triggern.
 
-* Weitere Anweisungen und angepasste Beispiele finden Sie in der [mrtk-Schaltfläche](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) .
+* Weitere Anweisungen und angepasste Beispiele finden Sie in der [mrtk-Schaltfläche](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) .
 
 <br>
 

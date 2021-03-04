@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGV, Voice, Cortana, Speech, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Blick
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583226"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759141"
 ---
 # <a name="voice-input"></a>Spracheingabe
 
@@ -208,7 +208,7 @@ Obwohl die Spracheingabe für viele verschiedene Anwendungen großartig ist, ste
 Der Schlüssel besteht darin, die Herausforderung in Ihrer Anwendung zu beheben. Geben Sie Ihren Benutzern Feedback, wenn das System lauscht, und das, was das System verstanden hat, um potenzielle Probleme zu verdeutlichen, die die Benutzersprache verstehen.  
 
 **Spracheingabe in freigegebenen Leerzeichen** Die Stimme ist möglicherweise nicht in den Bereichen, die Sie für andere Personen freigeben, akzeptabel.
-Folgende Rollen stehen beispielsweise zur Verfügung:
+Hier sind einige Beispiele:
 * Der Benutzer möchte möglicherweise keine anderen Benutzer stören (z. b. in einer stillen Bibliothek oder einem freigegebenen Büro).
 * Benutzer sind vielleicht nicht in der Öffentlichkeit,
 * Ein Benutzer ist möglicherweise unbequem, wenn er eine persönliche oder vertrauliche Nachricht (einschließlich Kenn Wörtern) einhört, während andere Benutzer lauschen.
@@ -290,7 +290,7 @@ Für Windows Mixed Reality Developer Edition, Version 2017, funktioniert die aud
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Spracheingabe in mrtk (Mixed Reality Toolkit) für Unity
 Mit **[mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** können Sie den Voice-Befehl problemlos für beliebige Objekte zuweisen. Verwenden Sie das **Spracheingabe Profil** von mrtk, um Ihre Schlüsselwörter zu definieren. Indem Sie das Skript " **speechinputhandler** " zuweisen, können Sie festlegen, dass jedes Objekt auf die im Spracheingabe Profil definierten Schlüsselwörter antwortet. Der speechinputhandler bietet auch eine Bezeichnung für die sprach Bestätigung, um das Vertrauen des Benutzers zu verbessern.
 
-* [Befehl "mrtk-Voice"](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [Befehl "mrtk-Voice"](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 

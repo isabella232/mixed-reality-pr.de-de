@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Slider, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 29a10389e476fcb40edd97619796a56cbb579c89
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009560"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759826"
 ---
 # <a name="slider"></a>Schieberegler
 
@@ -25,13 +25,13 @@ Ein Schieberegler ist eine Benutzeroberflächen Komponente, mit der ein Wert fes
 
 ## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Schieberegler im mrtk (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-Schieberegler](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Sliders.html)
+* [Mrtk-Schieberegler](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/sliders.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

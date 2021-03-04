@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Tastatur, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 8efb5446479e53569349eda302c7d4dcb844a137
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 9f42940b689a8fef77c9cf2f269100fccccfe6e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009730"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759856"
 ---
 # <a name="keyboard"></a>Tastatur
 
@@ -25,7 +25,7 @@ Ihre gemischte Reality-Anwendung kann die System Tastatur jederzeit aufrufen, wa
 
 ## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>System Tastatur in mrtk (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-System Tastatur](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_SystemKeyboard.html)
+* [Mrtk-System Tastatur](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
 
 <br>
 
@@ -38,7 +38,7 @@ Wenn Sie der Unity-Entwicklungs Journey folgen, die wir gerade angelegt haben, b
 > [!div class="nextstepaction"]
 > [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

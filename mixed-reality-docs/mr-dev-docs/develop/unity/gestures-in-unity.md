@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: Gesten, Unity, Blick, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583892"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759081"
 ---
 # <a name="gestures-in-unity"></a>Gesten in Unity
 
@@ -131,11 +131,11 @@ Ein Beispiel für die Implementierung von "throw" finden Sie [hier](https://gith
 
 Das auslösen wird mit zukünftigen Windows-Updates weiter verbessern, und Sie können davon ausgehen, dass Sie hier weitere Informationen finden.
 
-## <a name="gesture-and-motion-controllers-in-mrtk-v2"></a>Gesten-und Bewegungs Controller in mrtk v2
+## <a name="gesture-and-motion-controllers-in-mrtk"></a>Gesten-und Bewegungs Controller in mrtk
 
 Sie können über den Eingabe-Manager auf Gesten-und Bewegungs Controller zugreifen.
-* [Geste in mrtk v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [Motion Controller in mrtk v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [Gesten in mrtk](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [Motion Controller in mrtk](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## <a name="follow-along-with-tutorials"></a>Immer am Ball mit Tutorials

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D-APP, UWP, flatapp, hololens, immersives Headset, App-Modell, Schaltfläche "zurück", App-Leiste, dpi, Auflösung, Skalierung, Portierung, hololens 1. gen, hololens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10
-ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583535"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759796"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Aktualisieren von 2D UWP-Apps für Windows Mixed Reality
 
@@ -108,7 +108,7 @@ Diese Schritte führen Sie durch das Debuggen der UWP-App mit dem Visual Studio-
 
 ## <a name="update-your-ui"></a>Aktualisieren der Benutzeroberfläche
 
-Nun, da ihre UWP-App auf immersiven Headsets und hololens als 2D Hologram ausgeführt wird, werden wir als nächstes sicherstellen, dass Sie sehr schön aussieht. Nachfolgend sind einige Dinge aufgeführt, die Sie bedenken sollten:
+Nun, da ihre UWP-App auf immersiven Headsets und hololens als 2D Hologram ausgeführt wird, werden wir als nächstes sicherstellen, dass Sie sehr schön aussieht. Folgende Punkte sollten berücksichtigt werden:
 * Windows Mixed Reality führt alle 2D-apps mit fester Auflösung und dpi-Wert aus, der 853x480 effektiven Pixeln entspricht. Berücksichtigen Sie, ob Ihr Design in dieser Skala verfeinert werden muss, und überprüfen Sie den unten stehenden Entwurfs Leit Faden, um Ihre Benutzeroberflächen und immersive Headsets zu verbessern.
 * Windows Mixed Reality [unterstützt keine](../../design/app-model.md) 2D-Live Kacheln. Wenn die Kernfunktionalität Informationen zu einer Live-Kachel anzeigt, sollten Sie diese Informationen in Ihre APP zurück verschieben oder [3D-App-Launcher](../../distribute/3d-app-launcher-design-guidance.md)erkunden.
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, Cues, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Audio
-ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007200"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759876"
 ---
 # <a name="interactable-object"></a>Interaktionsfähiges Objekt
 
@@ -41,19 +41,19 @@ Für alle Objekte, die der Benutzer mit dem Blick auf "Blick", "Hand Strahl" und
 
 :::row:::
     :::column:::
-       ![interactibleobject-States-default](images/interactibleobject-states-default.jpg)<br>
+       ![Interactable-Objekt mit Standardzustand](images/interactibleobject-states-default.jpg)<br>
        **Standardzustand (Überwachung)**<br>
         Der standardmäßige Leerlauf Status des Objekts.
     Der Cursor befindet sich nicht im-Objekt. Hand wird nicht erkannt.
     :::column-end:::
     :::column:::
-       ![interactibleobject: Zustände-Ziel](images/interactibleobject-states-targeted.jpg)<br>
+       ![Interactable-Objekt mit Ziel-und Hover-Zustand](images/interactibleobject-states-targeted.jpg)<br>
         **Zielzustand (Hover)**<br>
         , Wenn das Objekt mit dem Cursor Cursor, der fingernähe oder dem Bewegungs Controller Zeiger ausgerichtet ist.
     Der Cursor befindet sich auf dem-Objekt. Hand ist erkannt, bereit.
     :::column-end:::
     :::column:::
-       ![interactibleobject-Zustände-gedrückt](images/interactibleobject-states-pressed.jpg)<br>
+       ![Interactable-Objekt mit gedrücktem Zustand](images/interactibleobject-states-pressed.jpg)<br>
        **Gedrückter Zustand**<br>
         Wenn das Objekt mit einer Tastenkombination gedrückt wird, drücken Sie die Schaltfläche "auswählen" von Finger oder Motion Controller.
     Der Cursor befindet sich auf dem-Objekt. Hand ist erkannt, Air tippt.
@@ -70,15 +70,15 @@ Diese Zustände sehen auf einer **Holographic-Schaltfläche** wie folgt aus:
 
 :::row:::
     :::column:::
-       ![interactibleobject-States-default](images/MRTK_InteractableState-default.jpg)<br>
+       ![Holographic-Schaltfläche im Standardzustand](images/MRTK_InteractableState-default.jpg)<br>
        **Standardzustand (Überwachung)**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject: Zustände-Ziel](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Holographic-Schaltfläche im Ziel-und Hover-Zustand](images/MRTK_InteractableState-targeted.jpg)<br>
         **Zielzustand (Hover)**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-Zustände-gedrückt](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![Holographic-Schaltfläche im gedrückten Zustand](images/MRTK_InteractableState-pressed.jpg)<br>
        **Gedrückter Zustand**<br>
     :::column-end:::
 :::row-end:::
@@ -224,7 +224,7 @@ Im folgenden finden Sie die Empfehlungen für die Mindestgröße von Interaktion
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Zielgröße für direkte Interaktion
 
-| Abstand | Anzeige Winkel | Größe |
+| Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
 | 45 cm  | nicht kleiner als 2 ° | 1,6 x 1,6 cm |
 
@@ -247,7 +247,7 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 <br>
 
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Zielgröße für die Hand Strahl-oder Blick Interaktion
-| Abstand | Anzeige Winkel | Größe |
+| Abstand | Anzeige Winkel | Size |
 |---------|---------|---------|
 | 2 Mio.  | nicht kleiner als 1 ° | 3,5 x 3,5 cm |
 
@@ -264,12 +264,12 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 
 In **[mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** können Sie das Skript [**interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) verwenden, damit Objekte auf verschiedene Typen von Eingabe Interaktions Zuständen reagieren. Es unterstützt verschiedene Arten von Designs, mit denen Sie visuelle Zustände definieren können, indem Sie Objekteigenschaften wie z. b. Farbe, Größe, Material und Shader steuern.
 
-* [Interaktionen](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Schaltfläche](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [Interaktionen](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [Schaltfläche](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [Beispiel Szenen für Hand Interaktion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 Der Standard-Shader von mixedrealitytoolkit bietet verschiedene Optionen, wie z. b. **near Light** , mit denen Sie visuelle und Audiohinweise erstellen können.
-* [Mrtk-Standard-Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [Mrtk-Standard-Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>
@@ -277,7 +277,7 @@ Der Standard-Shader von mixedrealitytoolkit bietet verschiedene Optionen, wie z.
 ---
 
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

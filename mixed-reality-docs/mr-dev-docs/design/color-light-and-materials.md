@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows Mixed Reality-, Design-, Color-, Light-, Material-, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: bf64413793aa40d158fde9f9a416d9a9b66af236
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6e5857436b0325537d0ea5d0321d296c58c09eae
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580064"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759265"
 ---
 # <a name="color-light-and-materials"></a>Farbe, Licht und Materialien
 
@@ -88,7 +88,7 @@ Beim Entwerfen von Inhalten für Holographic-anzeigen müssen Sie mehrere Elemen
     :::column:::
 Material sind wichtige Elemente zum Treffen realistischer holograms. Durch die Bereitstellung geeigneter visueller Merkmale können Sie überzeugende Holographic-Objekte erstellen, die sich gut mit der physischen Umgebung vermischen. Material ist auch für die Bereitstellung von visuellem Feedback für die verschiedenen Arten von Benutzereingabe Interaktionen wichtig.  
 
-[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) bietet einen mrtk-Standard-Shader mit verschiedenen visuellen Effekt Optionen, die für visuelles Feedback verwendet werden können. Beispielsweise können Sie die Eigenschaft "Near Light" verwenden, um einen Beleuchtungs Effekt bereitzustellen, wenn der Finger des Benutzers die Oberfläche des Objekts nähert. Weitere Informationen zum [mrtk-Standard-Shader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)
+[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) bietet einen mrtk-Standard-Shader mit verschiedenen visuellen Effekt Optionen, die für visuelles Feedback verwendet werden können. Beispielsweise können Sie die Eigenschaft "Near Light" verwenden, um einen Beleuchtungs Effekt bereitzustellen, wenn der Finger des Benutzers die Oberfläche des Objekts nähert. Weitere Informationen zum [mrtk-Standard-Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
     :::column-end:::
         :::column:::
     *Video Schleife: Beispiel für visuelles Feedback basierend auf der Nähe eines* 

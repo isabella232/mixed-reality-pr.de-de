@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, fakboardingvorgang, tagparallel, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009611"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759406"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding und Tag-along
 
@@ -49,7 +49,7 @@ Ebenso wie wirklich mit dem Titel gesperrter Inhalt können sich taggingobjekte 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Fakboardingvorgang und tagparallel in mrtk (Mixed Reality Toolkit) für Unity
 **[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts für das fakboardingverhalten und das tagbasierte Verhalten bereit. Weisen Sie das Billboard.cs-Skript einem beliebigen Objekt zu, um das Verhalten von Verhaltensweisen hinzuzufügen, und machen Sie das Objekt immer als Verwenden Sie das RadialView.cs-Skript, um das tagbasierte Verhalten hinzuzufügen. Sie können verschiedene Optionen wie z. b. lerping-Zeit, Entfernung und Grad anpassen.
 
-* [-Solver der mrtk-radialen Ansicht](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html#radialview)
+* [-Solver der mrtk-radialen Ansicht](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
 * [Mrtk-Billboard-Skript](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
@@ -57,7 +57,7 @@ Ebenso wie wirklich mit dem Titel gesperrter Inhalt können sich taggingobjekte 
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)
