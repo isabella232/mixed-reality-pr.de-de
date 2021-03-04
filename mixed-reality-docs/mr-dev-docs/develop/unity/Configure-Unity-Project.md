@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, gemischte Realität, Entwicklung, Einstieg, neues Projekt, Windows Mixed Reality, UWP, XR, Leistung
-ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: bd25c56947007f90c0310ea9802bba91a81b0914
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496078"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117624"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Konfigurieren von Projekten ohne MRTK
 
@@ -56,8 +56,10 @@ Nachdem Sie Ihre Plattform festgelegt haben, müssen Sie Unity mitteilen, dass S
 
 ![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor geöffnet, mit hervorgehobener Verwaltung von XR](images/wmr-config-img-7.png)
 
-4. Erweitern Sie den Abschnitt " **XR Plug-in-Verwaltung** ", und wählen Sie **Windows Mixed Reality**
-5. Aktivieren Sie alle Felder, und legen Sie den tiefen Übermittlungs **Modus** auf **Tiefe 16 Bit** fest
+4. Erweitern Sie den Abschnitt **XR-Plug-in-Verwaltung** , und wählen Sie die Registerkarte **universelle Windows-Plattform**
+5. Wenn Sie Unity 2020 oder höher verwenden, sehen Sie die Optionen zum Überprüfen von **openxr (Vorschau)** oder **Windows Mixed Reality** .
+6. Sie können beide Laufzeitoptionen auswählen.  Wenn Sie speziell für die hololens 2 oder den HP-Reverb-G2 entwickeln und das **openxr (Preview)** testen möchten, wählen Sie das Feld openxr (Vorschau) aus, und lesen Sie unser Handbuch zum [Verwenden des gemischten Reality openxr-Plug-Ins für Unity](openxr-getting-started.md) , um sich vor der Rückkehr zu diesem Tutorial ordnungsgemäß für diese Geräte einzurichten.
+7. Wenn Sie das **Windows Mixed Reality** -Plug-in auswählen, aktivieren Sie alle Kontrollkästchen, und legen Sie den tiefen Übermittlungs **Modus** auf **Tiefe 16 Bit** fest.
 
 ![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor geöffnet mit hervorgehobenem Windows Mixed Reality-Abschnitt](images/wmr-config-img-8.png)
 
@@ -90,11 +92,11 @@ Es wird empfohlen, dass Sie die Manifest-Deklarationen in Unity vornehmen, um Si
 
 ### <a name="quality-settings"></a>Qualitätseinstellungen
 
-Hololens verfügt über eine GPU mobiler Klasse. Wenn Ihre APP auf hololens ausgerichtet ist, sollten Sie die Qualitätseinstellungen in Ihrer APP auf die schnellste Leistung optimieren, um sicherzustellen, dass Sie die vollständige Framerate beibehält:
+Hololens verfügt über eine GPU mobiler Klasse. Wenn Ihre APP auf hololens ausgerichtet ist, sollten Sie mit den Qualitätseinstellungen Ihrer APP beginnen, die für die schnellste Leistung optimiert ist, um sicherzustellen, dass Sie die vollständige Framerate beibehält.  Nachdem Sie Ihre Entwicklung weiterentwickelt haben, können Sie die Qualitätseinstellungen in Erwägung gezogen, um das richtige Gleichgewicht der Qualität und Leistung zu finden: 
 
-1. Wählen Sie **> Projekteinstellungen bearbeiten > Qualität** aus.
-2. Wählen Sie im **Windows Store** -Logo die **Dropdown** Liste aus, und wählen Sie **sehr niedrig** aus. Sie werden feststellen, dass die Einstellung ordnungsgemäß angewendet wird, wenn das Feld in der Windows Store-Spalte und die **sehr niedrige** Zeile grün ist.
-3. Wählen Sie im Abschnitt **Shadows** die Option **Shadows deaktivieren** aus.
+1. Wählen Sie **> Projekteinstellungen bearbeiten > Qualität** aus. 
+2. Wählen Sie im  **Windows Store**-Logo die **Dropdown** Liste aus,   und wählen Sie  **sehr niedrig** aus. Sie werden feststellen, dass die Einstellung ordnungsgemäß angewendet wird, wenn das Feld in der Windows Store-Spalte und die sehr niedrige Zeile grün ist. 
+3. Wählen Sie im Abschnitt **Shadows** die Option    **Shadows deaktivieren** aus. 
 
 ![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobenem Abschnitt "Qualitätseinstellungen"](images/wmr-config-img-10.png)<br>
 *Unity-Qualitätseinstellungen*
