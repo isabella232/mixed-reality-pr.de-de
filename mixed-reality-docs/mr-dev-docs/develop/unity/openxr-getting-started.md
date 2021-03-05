@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: a4606eeb1fa6c8dc0858653a196c1e536ae473d4
+ms.sourcegitcommit: e2228b9585302eeff1d853ddb54be8421a21c954
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496168"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102189122"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Verwenden des gemischten Reality openxr-Plug-Ins für Unity
 
@@ -84,20 +84,23 @@ Wenn Sie eines oder mehrere der Beispiele verwenden möchten, installieren Sie [
 
 ## <a name="using-mrtk-with-openxr-support"></a>Verwenden von mrtk mit openxr-Unterstützung
 
-Mrtk Unity unterstützt das Mixed Reality openxr-Plug-in, beginnend mit der 2.5.3-Version.  
+MRTK-Unity unterstützt das Mixed Reality openxr-Plug-in, beginnend mit der 2.5.3-Version.
 
-1. Öffnen Sie das [Mixed Reality Feature-Tool](welcome-to-mr-feature-tool.md) erneut, und wählen Sie das **gemischte openxr-Plug** -in in der Kategorie Platt Form Unterstützung aus.
+1. Öffnen Sie das [Mixed Reality-Feature-Tool](welcome-to-mr-feature-tool.md) erneut, um das Mixed Reality Toolkit zu installieren, falls Sie dies noch nicht getan haben. Openxr-Unterstützung ist im **Foundation** -Paket.
 2. Wechseln Sie zum Skript "mixedreality Toolkit-Komponente" im Inspektor, und wechseln Sie zum Profil " **defaultoperxrconfigurationprofile** ":
 
-![Screenshot: Wechseln der mrtk-Konfiguration in der Mixed Reality Toolkit-Komponente im Inspektor](images/openxr-img-11.png)
+    ![Screenshot: Wechseln der mrtk-Konfiguration in der Mixed Reality Toolkit-Komponente im Inspektor](images/openxr-img-11.png)
 
-### <a name="known-issues"></a>Bekannte Probleme 
+    1. [Ausführliche Informationen zum Migrieren zu openxr finden Sie in](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)der Dokumentation zu mrtk.
 
-Fügen Sie in der Datei **Assets/mixedrealitytoolkit. generated/link.xml** die folgende Zeile hinzu, wenn Sie das Hand Verfolgungs Feature verwenden:
-
-```
-<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
-```
+> [!NOTE]
+> Wenn Sie von einer früheren Version von mrtk aktualisieren, stellen Sie sicher, dass sich die folgende Zeile in der Datei **Assets/mixedrealitytoolkit. generated/link.xml** befindet:
+>
+> ```xml
+> <assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+> ```
+>
+> Diese Zeile wird standardmäßig hinzugefügt, wenn Sie mit mrtk 2.5.4 oder höher gestartet haben.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
