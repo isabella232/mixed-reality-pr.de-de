@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496140"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230741"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Gemischte Funktionen von openxr unterstützten Funktionen in Unity
 
@@ -34,6 +34,7 @@ Die folgenden Funktionen werden derzeit unterstützt:
 * Kompatibel mit mrtk Unity 2.5.3 und neuer über die [Unterstützung von mrtk openxr-Anbietern](openxr-getting-started.md#using-mrtk-with-openxr-support).
 * Kompatibel mit Unity [arfoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) oder höher.
 * (In 0.1.3 hinzugefügt) Unterstützt die [Desktop-App Holographic Remoting](#holographic-remoting-in-desktop-app) aus einer erstellten und bereitgestellten eigenständigen Windows-app.
+* (In 0.1.4 hinzugefügt) Unterstützt die [QR-Code Überwachung](#qr-codes) auf HoloLens2 über spatialgraphnode
 
 ## <a name="holographic-remoting-setup"></a>Holographic Remoting-Setup
 
@@ -205,13 +206,19 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 Informationen zur Verwendung von Haptik im XR-Eingabe System von Unity finden Sie im [Unity-Handbuch für Unity-Eingabe-und-Haptik](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics).
 
+## <a name="qr-codes"></a>QR-Codes
+
+HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordinatensystem an der Position jedes Codes in der realen Welt einrichten. Weitere Informationen finden Sie in der Dokumentation zur [QR-Code](../platform-capabilities-and-apis/qr-code-tracking.md) -Nachverfolgung.  Wenn Sie das openxr-Plug-in verwenden, rufen Sie den [ `SpatialGraphNodeId` von der QR-API ab](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) , und verwenden `Microsoft.MixedReality.OpenXR.SpatialGraphNode` Sie die API zum Suchen des QR-Codes
+
+Als Referenz haben wir ein [Beispiel Projekt für QR-Nachverfolgung auf GitHub](https://github.com/yl-msft/QRTracking) mit einer ausführlicheren Verwendungs Erklärung für die [ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs).
+
 ## <a name="whats-coming-soon"></a>Bald verfügbar
 
 Die folgenden Probleme und fehlenden Features sind mit der **Version 0.1.0** des openxr-Plug-ins von Mixed Reality bekannt. Wir arbeiten an diesen und veröffentlichen Korrekturen und neue Features in zukünftigen Versionen.
 
 * **Arplanesubsystem** wird noch nicht unterstützt. **Arplanemanager**, **arraycastmanager** und verwandte APIs wie **aranchormanager. attachanchor** werden auf hololens 2 ebenfalls nicht unterstützt.
-* **Anker** wird noch nicht von Holographic Remoting unterstützt, wird jedoch in naher Zukunft angezeigt.
-* **Hand Mesh** -Nachverfolgung, **QR-Codes** und **xrmeshsubsystem** werden noch nicht unterstützt.
+* Die **Anker Persistenz** wird von Holographic Remoting noch nicht unterstützt, aber in naher Zukunft.
+* **Hand Mesh** -Nachverfolgung und **xrmeshsubsystem** werden noch nicht unterstützt.
 * Die Unterstützung von **räumlichen Azure-Ankern** wird in einer zukünftigen Version angezeigt.
 * **ARM64** ist die einzige unterstützte Plattform für hololens 2-apps. Die **Arm** -Plattform wird in einer zukünftigen Version angezeigt.
 
