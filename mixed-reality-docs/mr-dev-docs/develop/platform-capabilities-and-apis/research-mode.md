@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: Research Mode, CV, RS4, Maschinelles sehen, Forschung, hololens, hololens 2
-ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6737f9b668b73258e65f8d00e85dcd19c28ddfb5
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583133"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237131"
 ---
 # <a name="hololens-research-mode"></a>HoloLens-Forschungsmodus
 
@@ -104,7 +104,7 @@ Nachdem Sie das Gerät neu gestartet haben, können die Anwendungen, die über d
 *Fenster "Forschungs Modus" im hololens-Geräte Portal*
 
 > [!IMPORTANT]
-> Der Forschungs Modus für hololens 2 ist ab Build 19041,1356 verfügbar. Wenn Sie in einem früheren Build Zugriff benötigen, registrieren Sie sich für unser [Insider-Vorschau](/hololens/hololens-insider) Programm.
+> Der Forschungs Modus für hololens 2 ist ab Build 19041,1364 verfügbar. Wenn Sie in einem früheren Build Zugriff benötigen, registrieren Sie sich für unser [Insider-Vorschau](/hololens/hololens-insider) Programm. Weitere Informationen finden Sie im [GitHub-Repository](https://github.com/microsoft/HoloLens2ForCV)für den Research-Modus.
 
 ### <a name="using-sensor-data-in-your-apps"></a>Verwenden von Sensordaten in ihren apps
 

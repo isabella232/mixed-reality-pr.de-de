@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Foto, Video, hololens, Kamera, Unity, loerable, PVC, Foto Videokamera, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Webcam, Foto Erfassung, Video Erfassung
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226419"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236901"
 ---
 # <a name="locatable-camera-in-unity"></a>Ausrichtbare Kamera in Unity
 
@@ -26,7 +26,8 @@ Nur ein einzelner Vorgang kann gleichzeitig mit der Kamera erfolgen. Sie können
 
 ## <a name="photo-capture"></a>Foto Erfassung
 
-**Namespace:** *unityengine. XR. WSA. Webcam*<br>
+**Namespace:**  
+*Unityengine. XR. WSA. Webcam (Unity \~ 2018) unityengine. Windows. Webcam (Unity 2019 \~ )*<br>
 **Typ:** *photocapture*
 
 Mit dem Typ *photocapture* können Sie weiterhin Fotos mit der Foto Video Kamera aufnehmen. Das allgemeine Muster für die Verwendung von *Photo Capture* für die Aufnahme eines Fotos sieht wie folgt aus:

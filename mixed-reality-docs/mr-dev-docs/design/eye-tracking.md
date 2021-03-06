@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Augen Verfolgung, gemischte Realität, Eingabe, Augenblick, Kalibrierung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Intent, Actions
-ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c72eb830d87a435a579256b85747822ad4ef8be5
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582319"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236921"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Blickverfolgung auf HoloLens 2
 
@@ -81,7 +81,7 @@ Mit der Blickverfolgung können Anwendungen in Echtzeit verfolgen, wohin der Ben
 Diese Anwendungsfälle sind noch nicht Teil der Holographic Shell-Oberfläche (d. h. die Schnittstelle, die Sie beim Start der hololens-2 sehen).
 Sie können einige davon im [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)ausprobieren, das einige interessante und leistungsstarke Beispiele für die Verwendung der Eye-Nachverfolgung bereitstellt, wie z. b. schnelle und mühelose durchschauen unterstützte Ziel Optionen, und automatisch durch Text scrollen, je nachdem, was der Benutzer sieht. 
 
-### <a name="user-intent"></a>Benutzerabsicht    
+### <a name="user-intent"></a>Benutzerabsicht
 
 Informationen dazu, wo und was ein Benutzer untersucht, bieten einen leistungsstarken **Kontext für andere Eingaben**, z. b. sprach-, Hand-und Controller.
 Dies kann für verschiedene Aufgaben verwendet werden.
@@ -101,12 +101,11 @@ Andere Anwendungsfälle für _implizite Aktionen_ können Folgendes umfassen:
 - **Intelligente Benachrichtigungen:** Haben Sie sich immer über Benachrichtigungen benachrichtigt, wenn Sie sich mit den Nachrichten vertraut machen? Wenn Sie das Konto berücksichtigen, auf das ein Benutzer achten wird, können Sie diese Umgebung verbessern, indem Sie Benachrichtigungen von dem Speicherort der Benutzer auslagern Dadurch werden Ablenkungen eingeschränkt und automatisch geschlossen, sobald der Benutzer das Lesen abgeschlossen hat. 
 - **Aufmerksame Hologramme:** Holograms, die bei der Verwendung von auf eine beliebige Weise reagieren. Dies kann von leicht leuchtenden Benutzeroberflächen Elementen bis hin zu einem langsam blühenden Blumen Wert zu einem virtuellen Hund, der mit der Betrachtung des Benutzers beginnt, und dem Ende seines Endes. Diese Interaktion kann ein interessantes Gefühl der Konnektivität und Zufriedenheit in Ihrer Anwendung darstellen.
 
-### <a name="attention-tracking"></a>Aufmerksamkeitsverfolgung   
+### <a name="attention-tracking"></a>Aufmerksamkeitsverfolgung
 
 Informationen dazu, wo oder was Benutzer sehen, können ein äußerst leistungsfähiges Tool sein. Es kann helfen, die Nutzbarkeit von Entwürfen zu bewerten und Probleme in Workflows zu identifizieren, um Sie effizienter zu gestalten.
 Die Visualisierung und Analyse von Augen Nachverfolgung ist eine gängige Vorgehensweise in verschiedenen Anwendungsbereichen. Mit hololens 2 bieten wir eine neue Dimension für dieses Verständnis, da 3D holograms in realen Kontexten platziert und entsprechend bewertet werden können. Das [Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html) enthält grundlegende Beispiele für das Protokollieren und Laden von Augen Verfolgungs Daten und deren Visualisierung.
 Microsoft ist für die Vereinfachung von Innovationen vorgesehen und stellt gleichzeitig sicher, dass die Benutzer über eine fundierte und transparente benutzerfreundliche Darstellung verfügen.  Wir arbeiten mit unseren Entwicklern und UX-Teams zusammen, um eine Anleitung für Drittanbieter bereitzustellen, um sicherzustellen, dass die Benutzererfahrung auf den Benutzer ausgerichtet ist.  
-
 
 Zu diesem Bereich zählen möglicherweise auch die folgenden Anwendungen: 
 -   Remote Ansicht für den **Augenblick:** Remote-Blick Visualisierungen: visualisieren Sie, welche Remote Mitarbeiter sich ansehen, um sofortiges Feedback bereitstellen und genauere Informationen verarbeiten zu können.
@@ -139,19 +138,17 @@ Dies kann aus verschiedenen Gründen geschehen, in denen die gängigsten aufgef�
 * Der Benutzer hat die [Kalibrierung](/hololens/hololens-calibration)übersprungen.   
 * Der Benutzer ist zwar kalibriert, hat sich jedoch entschieden, der APP keine Berechtigung zur Verwendung der Augen Verfolgungs Daten zu erteilen.    
 * Der Benutzer hat eine eindeutige Brillen-oder Augen Bedingung, die das System noch nicht unterstützt. 
-* Externe Faktoren behindern die zuverlässige Eye-Nachverfolgung, wie z. b. smudges auf den holten-Hypervisor oder-Brillen, intensive direkte Sonneneinstrahlung und-oksionen aufgrund von Haaren vor Augen.  
+* Externe Faktoren behindern die zuverlässige Eye-Nachverfolgung, wie z. b. smudges auf den holten-Hypervisor oder-Brillen, intensive direkte Sonneneinstrahlung und-oksionen aufgrund von Haaren vor Augen.
 
 Entwickler sollten sicherstellen, dass für diese Benutzer eine entsprechende Ausweich Unterstützung vorhanden ist. Auf der Seite " [Eye Tracking in DirectX](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) " werden die APIs erläutert, die erforderlich sind, um zu ermitteln, ob Eye-Überwachungsdaten verfügbar sind. 
 
 Einige Benutzer haben sich möglicherweise bewusst entschieden, den Zugriff auf Ihre Augen Verfolgungs Daten aufzuheben, und sind mit dem Nachteil einer geringeren Benutzerfunktion für den Datenschutz, der keinen Zugriff auf Ihre Augen Verfolgungs Daten bereitstellt, in einigen Fällen unbeabsichtigt. Wenn Ihre APP die Augen Verfolgung verwendet, und dies ein wichtiger Bestandteil der Benutzeroberflächen ist, empfiehlt es sich, diese Funktion an den Benutzer zu übermitteln.   
 
-Wenn Sie den Benutzer darüber informieren, warum die Augen Verfolgung für Ihre Anwendung wichtig ist (vielleicht sogar einige erweiterte Features auflisten), um das volle Potenzial Ihrer Anwendung zu erhalten, kann der Benutzer helfen, die Ergebnisse besser zu verstehen.    
-Helfen Sie dem Benutzer, herauszufinden, warum die Eye-Nachverfolgung möglicherweise nicht funktioniert (basierend auf den obigen Überprüfungen), und bieten Sie einige Vorschläge, um potenzielle Probleme schnell zu beheben. 
-    
-Wenn Sie z. b. feststellen können, dass das System die Eye-Nachverfolgung unterstützt, wird der Benutzer kalibriert und hat selbst seine Berechtigung, aber es werden keine Augen Verfolgungs Daten empfangen.    
+Wenn Sie den Benutzer darüber informieren, warum die Augen Verfolgung für Ihre Anwendung wichtig ist (vielleicht sogar einige erweiterte Features auflisten), um das volle Potenzial Ihrer Anwendung zu erhalten, kann der Benutzer helfen, die Ergebnisse besser zu verstehen. Helfen Sie dem Benutzer, herauszufinden, warum die Eye-Nachverfolgung möglicherweise nicht funktioniert (basierend auf den obigen Überprüfungen), und bieten Sie einige Vorschläge, um potenzielle Probleme schnell zu beheben. 
 
-Es gibt selten Fälle von Benutzern, für die die Eye-Nachverfolgung möglicherweise nicht funktioniert.   
-Achten Sie daher darauf, dass Sie Erinnerungen zum Aktivieren der Eye-Nachverfolgung in Ihrer APP verwerfen oder sogar deaktivieren können.
+Wenn Sie z. b. feststellen können, dass das System die Eye-Nachverfolgung unterstützt, wird der Benutzer kalibriert und hat selbst seine Berechtigung, aber es werden keine Augen Verfolgungs Daten empfangen. 
+
+Es gibt selten Fälle von Benutzern, für die die Eye-Nachverfolgung möglicherweise nicht funktioniert. Achten Sie daher darauf, dass Sie Erinnerungen zum Aktivieren der Eye-Nachverfolgung in Ihrer APP verwerfen oder sogar deaktivieren können.
 
 ### <a name="fall-back-for-apps-using-eye-gaze-as-a-primary-input-pointer"></a>Fallback für apps, die den Augenblick als primären Eingabe Zeiger verwenden
 

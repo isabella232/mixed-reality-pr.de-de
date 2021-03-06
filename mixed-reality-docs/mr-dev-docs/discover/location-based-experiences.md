@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Mixed Reality, VR, LBE, Location, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, Hardware, hololens, Multi-Player, Cloud Services, Azure
-ms.openlocfilehash: 1cc54ad0ef4b9892c49e13c7437a4d5356093c79
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810102"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236911"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Location based Entertainment mit Windows Mixed Reality
 
@@ -49,7 +49,7 @@ Unsere OEMs bieten eine unglaubliche Auswahl von Rucksack-PCs, die genau für di
 
 HP hat soeben seinen HP VR-Rucksack G2 gestartet, der weltweit leistungsfähigste tragbaren PC – optimiert für die kostenlose Roaming-Umgebung, die jetzt 30% mehr Leistung mit einer RTX 2080-GPU in hat. [Details](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>Einrichtung
+### <a name="setup"></a>Einrichten
 
 **F: Wie kann ich das Setup leichter konfigurieren und das Mixed Reality-Portal für LBE anpassen?**
 
@@ -68,7 +68,7 @@ Installieren von Apps aus dem Store überspringen: beim normalen Setup werden me
 
 Vorschau anzeigen im Vollbild – im Mixed Reality-Portal wird standardmäßig die Headset-Vorschau im Vollbildmodus auf dem Desktop-PC angezeigt, während das Headset verwendet wird.  
 
-Die Option "neu" im Bereich "Seite" – verhindert, dass die neue für den Bereich beim Starten des gemischten Reality-Portals erweitert wird.  
+Neue Option für den Seitenbereich ausblenden – verhindert, dass das neue Fenster für Sie bei der Einführung des gemischten Reality-Portals erweitert wird.  
 
 #### <a name="how-to-configure"></a>Vorgehensweise zur Konfiguration:  
 
