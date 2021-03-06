@@ -1,0 +1,8 @@
+- name: Kamerasystemübersicht
+  href: camera-system-overview.md
+- name: Anbieter für Einstellungserstellung
+  href: create-settings-provider.md
+- name: Unity-AR-Kameraeinstellungen
+  href: unity-ar-camera-settings.md
+- name: Windows Mixed Reality-Kameraeinstellungen
+  href: windows-mixed-reality-camera-settings.md

@@ -1,0 +1,8 @@
+- name: Erstellen und Bereitstellen
+  href: build-and-deploy.md
+- name: Upgraden von HTK
+  href: htk-to-mrtk-porting-guide.md
+- name: MRTK und Entfernen von verwaltetem Code
+  href: mrtk-and-managed-code-stripping.md
+- name: Aktualisieren von früheren Versionen
+  href: updating.md

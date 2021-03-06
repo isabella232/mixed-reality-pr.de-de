@@ -1,0 +1,4 @@
+- name: Übersicht über Solver
+  href: solver.md
+- name: Zum Platzieren tippen
+  href: tap-to-place.md

@@ -1,0 +1,14 @@
+- name: Übersicht
+  href: eye-tracking-main.md
+- name: Grundlegende Einrichtung
+  href: eye-tracking-basic-setup.md
+- name: Anbieter für Anvisieren (Gaze)
+  href: eye-tracking-eye-gaze-provider.md
+- name: Augen und Hände
+  href: eye-tracking-eyes-and-hands.md
+- name: Augenkalibrierung
+  href: eye-tracking-is-user-calibrated.md
+- name: Navigation
+  href: eye-tracking-navigation.md
+- name: Zielauswahl
+  href: eye-tracking-target-selection.md

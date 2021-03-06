@@ -1,0 +1,28 @@
+- name: Controller
+  href: controllers.md
+- name: Anbieter für Datenerstellung
+  href: create-data-provider.md
+- name: Diktieren
+  href: dictation.md
+- name: Anvisieren
+  href: gaze.md
+- name: Gesten
+  href: gestures.md
+- name: Handtracking
+  href: hand-tracking.md
+- name: Hinzufügen von nähebezogener Interaktivität
+  href: how-to-add-near-interactivity.md
+- name: Eingabeaktionen
+  href: input-actions.md
+- name: Eingabeereignisse
+  href: input-events.md
+- name: Eingabeanbieter
+  href: input-providers.md
+- name: Eingabezustand
+  href: input-state.md
+- name: Übersicht
+  href: overview.md
+- name: Zeiger
+  href: pointers.md
+- name: Spracheingabe
+  href: speech.md

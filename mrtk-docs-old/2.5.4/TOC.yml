@@ -1,0 +1,18 @@
+- name: Willkommen bei MRTK
+  href: welcome-to-mrtk.md
+- name: Roadmap
+  href: roadmap.md
+- name: Konfiguration
+  href: configuration/toc.yml
+- name: Aufbau
+  href: architecture/toc.yml
+- name: Features
+  href: features/toc.yml
+- name: Leistung und bewährte Methoden
+  href: performance/toc.yml
+- name: Updates und Bereitstellung
+  href: updates-deployment/toc.yml
+- name: Pakete und Anmerkungen zu dieser Version
+  href: packages-releases/toc.yml
+- name: Mitwirken
+  href: contributing/toc.yml

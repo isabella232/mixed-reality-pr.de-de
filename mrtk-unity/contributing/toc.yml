@@ -1,0 +1,14 @@
+- name: Mitwirkung – Übersicht
+  href: contributing.md
+- name: Richtlinien für das Codieren
+  href: coding-guidelines.md
+- name: Schreiben und Ausführen von Tests
+  href: unit-tests.md
+- name: Dokumentationsrichtlinien
+  href: documentation-guide.md
+- name: Pull Requests
+  href: pull-requests.md
+- name: Experimentelle Features
+  href: experimental-features.md
+- name: Aktuelle Änderungen
+  href: breaking-changes.md
