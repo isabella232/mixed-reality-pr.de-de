@@ -1,0 +1,10 @@
+- name: Konfigurieren des Beobachters von Gittermodellen für räumliche Wahrnehmung
+  href: configuring-spatial-awareness-mesh-observer.md
+- name: Anbieter für Datenerstellung
+  href: create-data-provider.md
+- name: 'Räumliche Wahrnehmung: Erste Schritte'
+  href: spatial-awareness-getting-started.md
+- name: Beobachter von Gittermodellen für räumliche Objekte
+  href: spatial-object-mesh-observer.md
+- name: Benutzerhandbuch
+  href: usage-guide.md

@@ -1,0 +1,4 @@
+- name: 'Begrenzungssystem: Erste Schritte'
+  href: boundary-system-getting-started.md
+- name: Konfigurieren der Begrenzungsvisualisierung
+  href: configuring-boundary-visualization.md

@@ -1,0 +1,18 @@
+- name: 'Eyetracking (Blickverfolgung): Grundlegende Einrichtung'
+  href: eye-tracking-basic-setup.md
+- name: 'Eyetracking (Blickverfolgung): Beispieleübersicht'
+  href: eye-tracking-examples-overview.md
+- name: 'Eyetracking (Blickverfolgung): Anbieter für Anvisieren (Gaze)'
+  href: eye-tracking-eye-gaze-provider.md
+- name: 'Eyetracking (Blickverfolgung): Augen und Hände'
+  href: eye-tracking-eyes-and-hands.md
+- name: 'Eyetracking (Blickverfolgung): Benutzer kalibriert?'
+  href: eye-tracking-is-user-calibrated.md
+- name: 'Eyetracking (Blickverfolgung): Haupt'
+  href: eye-tracking-main.md
+- name: 'Eyetracking (Blickverfolgung): Navigation'
+  href: eye-tracking-navigation.md
+- name: 'Eyetracking (Blickverfolgung): Positionierung'
+  href: eye-tracking-positioning.md
+- name: 'Eyetracking (Blickverfolgung): Zielauswahl'
+  href: eye-tracking-target-selection.md

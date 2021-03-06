@@ -1,0 +1,14 @@
+- name: Übersicht
+  href: overview.md
+- name: Framework und Runtime
+  href: framework-and-runtime.md
+- name: Eingabesystem
+  items:
+    - name: Begriff
+      href: terminology.md
+    - name: Kernsystem
+      href: core-system.md
+    - name: 'Controller, Zeiger und Fokus'
+      href: controllers-pointers-and-focus.md
+- name: 'Systeme, Erweiterungsdienste und Datenanbieter'
+  href: systems-extensions-providers.md
