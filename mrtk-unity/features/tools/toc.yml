@@ -1,0 +1,18 @@
+- name: Controller-Zuordnungstool
+  href: controller-mapping-tool.md
+- name: Abhängigkeitsfenster
+  href: dependency-window.md
+- name: Assistent zum Erstellen von Erweiterungsdiensten
+  href: extension-service-creation-wizard.md
+- name: Holographic Remoting
+  href: holographic-remoting.md
+- name: Eingabefunktionsverwendungs-Tool
+  href: input-feature-usage-tool.md
+- name: Migrationsfenster
+  href: migration-window.md
+- name: Optimierungsfenster
+  href: optimize-window.md
+- name: Screenshot-Hilfsprogramm
+  href: screenshot-utility.md
+- name: Shader-Update
+  href: update-mrtk-shaders.md
