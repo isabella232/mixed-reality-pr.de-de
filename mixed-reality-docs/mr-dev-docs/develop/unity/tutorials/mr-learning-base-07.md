@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Objektinteraktionen, Begrenzungssteuerelemente
 ms.localizationpriority: high
-ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590438"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237241"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interagieren mit 3D-Objekten
 
@@ -113,7 +113,7 @@ Wenn Sie jetzt in den Spielmodus wechseln, können Sie nahe oder ferne Interakti
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit gedrückter Schaltfläche „Reset“](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Weitere Informationen über die Objektmanipulator-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Objektmanipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) im [MRTK-Dokumentationsportal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Weitere Informationen über die Objektmanipulator-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Objektmanipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
 
 ## <a name="adding-bounds-control"></a>Hinzufügen des Begrenzungssteuerelements
 
@@ -132,9 +132,6 @@ Wählen Sie im Hierarchiefenster das **RoverExplorer**-Objekt aus, und verwenden
 
 > [!NOTE]
 > Die Visualisierung des Begrenzungssteuerelements wird zur Laufzeit erstellt und ist daher erst sichtbar, wenn Sie in den Spielmodus wechseln.
-
-> [!NOTE]
->Die BoundsControl-Komponente fügt zur Laufzeit automatisch die NearInteractionGrabbable-Komponente hinzu. Daher brauchen wir diese Komponente nicht hinzuzufügen, um die eingeschlossenen Objekte mit nachverfolgten Händen zu greifen.
 
 > [!NOTE]
 >Der Objektmanipulator (Skript) fügt automatisch den Einschränkungs-Manager (Skript) hinzu.
@@ -171,7 +168,7 @@ Wenn Sie jetzt in den Spielmodus wechseln und das Begrenzungssteuerelement aktiv
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit manipuliertem Begrenzungssteuerelement](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Weitere Informationen über die Bounds Control-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) im [MRTK-Dokumentationsportal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+Weitere Informationen über die Bounds Control-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 
