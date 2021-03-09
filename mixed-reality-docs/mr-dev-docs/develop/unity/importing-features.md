@@ -3,16 +3,16 @@ title: Importieren von Features
 description: Erfahren Sie, wie Sie Features aus dem MR-Featuretool für die HoloLens- und VR-Entwicklung importieren.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: a82eea93a07b662314f3a718eef0c1bd18a4ca4e
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243913"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230815"
 ---
 # <a name="importing-features"></a>Importieren von Features
 
@@ -22,26 +22,18 @@ Nachdem Ihre Features heruntergeladen wurden, können sie überprüft und in das
 
 ## <a name="features-list"></a>Features list
 
-Die Liste **Features** enthält die Sammlung von Paketen, die während der Ermittlung ausgewählt wurden. 
-* Die einzelnen Features können vor dem Importieren ausgewählt oder abgewählt werden. Paketdetails können über den unten abgebildeten Link **Details** angezeigt werden
+Die Liste **Features** enthält die Sammlung von Paketen, die während der Ermittlung ausgewählt wurden. Die einzelnen Features können vor dem Importieren ausgewählt oder abgewählt werden. Paketdetails können über den unten abgebildeten Link **Details** angezeigt werden
 
 ![Features list](images/FeaturesList.png)
 
 ## <a name="required-dependencies-list"></a>Liste der erforderlichen Abhängigkeiten
 
-Die Liste **Required dependencies** (Erforderliche Abhängigkeiten) enthält die Pakete, die für die Funktion eines oder mehrerer der ausgewählten Features erforderlich sind. Diese Liste enthält auch Abhängigkeiten von Abhängigkeiten.
-* Jede Abhängigkeit kann vor dem Importieren ausgewählt oder abgewählt werden. Paketdetails können über den unten abgebildeten Link **Details** angezeigt werden
+Die Liste **Required dependencies** (Erforderliche Abhängigkeiten) enthält die Pakete, die für die Funktion eines oder mehrerer der ausgewählten Features erforderlich sind. Diese Liste enthält auch Abhängigkeiten von Abhängigkeiten. Jede Abhängigkeit kann vor dem Importieren ausgewählt oder abgewählt werden. Paketdetails können über den unten abgebildeten Link **Details** angezeigt werden
 
 ![Liste „Dependencies“ (Abhängigkeiten)](images/RequiredDependencyList.png)
 
 > [!NOTE]
 > Das Aufheben der Auswahl erforderlicher Abhängigkeiten führt beim Laden des Projekts in Unity zu mindestens einem Fehler wegen fehlender Abhängigkeiten. Die betroffenen Features sind dann im Projekt nicht nutzbar.
-
-## <a name="specifying-the-unity-project-path"></a>Angeben des Unity-Projektpfads
-
-Bevor Features in das Projekt importiert werden können, müssen Sie den Pfad beim Mixed Reality-Featuretool registrieren.
-
-![Festlegen des Projektpfads](images/ProjectPath.png)
 
 ## <a name="validating-selections"></a>Überprüfen der Auswahl
 
@@ -50,11 +42,6 @@ Wir empfehlen dringend, die Featureauswahl vor dem Importieren zu überprüfen. 
 ![Probleme bei der Überprüfung](images/ValidationIssues.png)
 
 Das Mixed Reality-Featuretool bietet zwei automatische Fehlerbehebungen (in den folgenden Abschnitten beschrieben) und die Option zum Abbrechen und manuellen Beheben von Fehlern.
-
-> [!IMPORTANT]
-> Das Mixed Reality-Featuretool kann Fehler im Zusammenhang mit der erforderlichen Unity-Version nicht automatisch beheben. Diese Probleme müssen manuell durch ein Upgrade der vom Projekt verwendeten Version von Unity oder durch Deaktivieren der Features behoben werden, für die eine neuere Version erforderlich ist.
->
-> Eine kommende Version des Mixed Reality-Featuretools wird eine bessere Filterung der Features nach der vom Projekt verwendeten Unity-Version bieten.
 
 ### <a name="enable-dependencies"></a>Aktivieren von Abhängigkeiten
 

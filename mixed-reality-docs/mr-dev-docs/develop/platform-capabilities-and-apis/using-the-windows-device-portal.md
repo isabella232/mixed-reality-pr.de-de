@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows-Geräteportal, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: c354a6f7c3afd6164182f915c39bbf1ce306ef39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 83bc2183d40f9dbfb00799475522606ff59ccfa0
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583239"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117644"
 ---
 # <a name="using-the-windows-device-portal"></a>Verwenden des Windows-Geräteportals
 
@@ -65,7 +65,7 @@ Diese Dokumentation befasst sich speziell mit dem Windows-Geräteportal für Hol
 > Wenn bei der USB-Konnektivität Probleme auftreten, überprüfen Sie, ob die optionale Komponente für die USB-Gerätekonnektivität als Teil ihres **[Visual Studio-Toolpaket](../install-the-tools.md#installation-checklist)** installiert ist.
 
 2. Verbinden Sie Ihre HoloLens mit einem Micro-USB-Kabel für HoloLens (1. Gen) oder USB-C für HoloLens 2.
-3. Navigieren Sie in einem Webbrowser auf Ihrem PC zu [https://127.0.0.1:10080](https://127.0.0.1:10080).
+3. Navigieren Sie in einem Webbrowser auf Ihrem PC zu [http://127.0.0.1:10080](http://127.0.0.1:10080).
 
 ### <a name="moving-files-over-usb"></a>Verschieben von Dateien über USB
 

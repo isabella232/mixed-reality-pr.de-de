@@ -3,16 +3,16 @@ title: Autorisieren von Projektänderungen
 description: Erfahren Sie, wie Sie Projektänderungen mit dem MR-Featuretool für die HoloLens- und VR-Entwicklung autorisieren.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: b9e4f53c9a1e5503cfa92a612879be1971422acc
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: db7ae079e19c7739f57f0b9e4a375a3e6f9a3cdd
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243908"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230768"
 ---
 # <a name="authorizing-project-changes"></a>Autorisieren von Projektänderungen
 

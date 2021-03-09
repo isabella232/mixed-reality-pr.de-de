@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
+ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421409"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102126613"
 ---
 # <a name="unity-development-for-hololens"></a>Unity-Entwicklung für HoloLens
 
 ![Unity-Bannerlogo](../images/unity_logo_banner.png)
 
-Den schnellsten Weg zum Entwickeln einer HoloLens-[Mixed Reality-App](../../design/app-views.md) in [Unity](https://unity.com) bietet das Mixed Reality Toolkit. Wenn Sie mit Unity noch nicht vertraut sind, empfehlen wir Ihnen, sich mit den [Tutorials](https://unity3d.com/learn/tutorials) für Einsteiger auf der Unity-Lernplattform zu befassen, bevor Sie fortfahren. Außerdem ist es eine gute Idee, den umfassenden [Asset Store](https://www.assetstore.unity3d.com/) und die [Unity Mixed Reality-Foren](https://forum.unity3d.com/forums/hololens.102/) zu besuchen, um mit der Onlinecommunity in Kontakt zu kommen, die Mixed Reality-Apps entwickelt. Sie können schlicht nicht wissen, welche tollen Medienobjekte oder Lösungen Sie abseits ausgetretener Pfade finden. Wenn Sie bereit sind, mit dem MRTK loszulegen, gehen Sie zu den Prüfpunkten für die Entwicklung unten!
+Den schnellsten Weg zum Entwickeln einer HoloLens-[Mixed Reality-App](../../design/app-views.md) in [Unity](https://unity.com) bietet das Mixed Reality Toolkit. Wenn Sie mit Unity noch nicht vertraut sind, empfehlen wir Ihnen, sich mit den [Tutorials](https://unity3d.com/learn/tutorials) für Einsteiger auf der Unity-Lernplattform zu befassen, bevor Sie fortfahren. Außerdem ist es eine gute Idee, den umfassenden [Asset Store](https://assetstore.unity.com) und die [Unity Mixed Reality-Foren](https://forum.unity3d.com/forums/hololens.102/) zu besuchen, um mit der Onlinecommunity in Kontakt zu kommen, die Mixed Reality-Apps entwickelt. Sie können schlicht nicht wissen, welche tollen Medienobjekte oder Lösungen Sie abseits ausgetretener Pfade finden. Wenn Sie bereit sind, mit dem MRTK loszulegen, gehen Sie zu den Prüfpunkten für die Entwicklung unten!
 
 > [!IMPORTANT]
 > Sehen Sie sich unsere **[Portierungsleitfäden](../porting-apps/porting-overview.md)** an, wenn Sie ein vorhandenes Unity-Projekt besitzen, das Sie auf HoloLens 2 bringen möchten. Wir haben Leitfäden für Projekte, die HTK, MRTK v1 oder SteamVR verwenden.
@@ -104,7 +104,7 @@ Bevor Sie sich auf eigene Faust in die Welt der Mixed Reality aufmachen, sollten
 | --- | --- |
 | [MRTK-Architektur – Übersicht](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | Erwerben Sie ein tieferes Verständnis der Funktionsweise des MRTK SDKs in Ihren Projekten |
 | [Einstellungen und Leistung](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | Erstellen Sie Profile für Ihre App, aktualisieren Sie Ihre Unity-Einstellungen, und erzielen Sie die bestmögliche Hologrammstabilisierung |
-| [Erste Schritte mit MRTK + XR](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) | Stellen Sie auf die alternative XR-Pipeline von Unity um |
+| [Erste Schritte mit MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | Stellen Sie auf die alternative XR-Pipeline von Unity um |
 
 ### <a name="unity-resources"></a>Unity-Ressourcen
 

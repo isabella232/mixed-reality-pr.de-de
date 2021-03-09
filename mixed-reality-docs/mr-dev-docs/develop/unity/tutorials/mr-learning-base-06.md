@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Prefabs, Hologramme, QuickInfos
 ms.localizationpriority: high
-ms.openlocfilehash: 3b32faab4be13d42f228659285244c206680466e
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 8e7ab83fa195fc48d8fe1c1daf8207c49e3ec71e
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590552"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760026"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Erstellen der Benutzeroberfläche
 
@@ -67,7 +67,7 @@ Wählen Sie im Hierarchiefenster das Schaltflächenobjekt **Hints** (Hinweise) a
 ![Unity mit konfiguriertem OnClick-Ereignis für das Hints-Schaltflächenobjekt](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Die Interactable-Komponente ist ein Universalcontainer (All-in-One), mit dem jedes Objekt problemlos in die Lage versetzt werden kann, mit Eingaben zu interagieren und darauf zu reagieren. Interactable fungiert als Generalcontainer für alle Eingabetypen, einschließlich Toucheingabe, Handstrahl, Sprache usw., und leitet diese Interaktionen in Ereignisse und visuelle Designantworten. Informationen, wie Sie die Komponente für verschiedene Eingabetypen konfigurieren und ihr visuelle Design anpassen, finden Sie im [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)-Leitfaden im [MRTK-Dokumentationsportal](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html).
+> Die Interactable-Komponente ist ein Universalcontainer (All-in-One), mit dem jedes Objekt problemlos in die Lage versetzt werden kann, mit Eingaben zu interagieren und darauf zu reagieren. Interactable fungiert als Generalcontainer für alle Eingabetypen, einschließlich Toucheingabe, Handstrahl, Sprache usw., und leitet diese Interaktionen in Ereignisse und visuelle Designantworten. Informationen, wie Sie die Komponente für verschiedene Eingabetypen konfigurieren und ihr visuelle Design anpassen, finden Sie im [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/).
 
 Wählen Sie im Hierarchiefenster das Schaltflächenobjekt **Explode** (Explodieren) aus, und konfigurieren Sie dann im Inspektorfenster das **Interactable.OnClick()** -Ereignis wie folgt:
 
