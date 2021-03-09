@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583188"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759726"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 
@@ -309,7 +309,7 @@ Daher können mit dem Verringern der Zahl der Vorgänge im Fragmentshader im All
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternativen zu den Unity-Standardshadern
 
-Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html) bereit, der für Mixed Reality-Projekte optimiert wurde.
+Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) bereit, der für Mixed Reality-Projekte optimiert wurde.
 
 Unity bietet darüber hinaus unlit (nicht beleuchtet), vertex lit (nach Scheitelpunkten beleuchtet), diffuse (diffus), und weitere vereinfachte Shaderoptionen, die im Vergleich schneller arbeiten als der Unity-Standardshader. Detailliertere Informationen finden Sie unter [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Verwendung und Leistung der integrierten Shader).
 

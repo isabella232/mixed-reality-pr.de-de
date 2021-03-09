@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Interaktion, Design, HoloLens, Hände, fern, Zeigen und Ausführen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Handstrahlen, Objektmanipulation, MRTK, Mixed Reality Toolkit, DoF, Freiheitsgrade
-ms.openlocfilehash: 3351a38cad99089a60555ffe450447fc5c356fdc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583207"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759866"
 ---
 # <a name="point-and-commit-with-hands"></a>Zeigen und Ausführen mit den Händen
 
@@ -204,9 +204,9 @@ Das Konzept des Zeigens und Ausführens für die ferne Interaktion wurde für da
 
 Standardmäßig stellt das MRTK einen vorkonfigurierten Handlichtstrahl ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) zur Verfügung, der den gleichen visuellen Status wie der System-Handlichtstrahl der Shell aufweist. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. In einem immersiven Headset werden dieselben Strahlen für die Motion-Controller verwendet.
 
-* [MRTK – Zeigerprofil](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK – Eingabesystem](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK – Zeiger](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK – Zeigerprofil](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK – Eingabesystem](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK – Zeiger](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 

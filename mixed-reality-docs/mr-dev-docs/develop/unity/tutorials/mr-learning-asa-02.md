@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: a44e79d656875d7730ee155e10260bd5ebb6265f
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590746"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237121"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Erste Schritte mit Azure Spatial Anchors
 
@@ -129,7 +129,7 @@ Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **Find
 
 Wählen Sie im Hierarchiefenster die nächste Schaltfläche mit dem Namen **DeleteAzureAnchor** aus, und konfigurieren Sie dann im Inspektorfenster das **On Click ()** -Ereignis der **Button Config Helper (Script)** -Komponente wie folgt:
 
-* Weisen Sie das **DeleteAzureAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
+* Weisen Sie das **ParentAnchor**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu.
 * Wählen Sie in der Dropdownliste **No Function** (Keine Funktion) **AnchorModuleScript** > **DeleteAzureAnchor ()** aus, um diese Funktion als die beim Auslösen des Ereignisses auszuführende Aktion festzulegen.
 
 ![Unity mit konfiguriertem OnClick-Ereignis für die DeleteAzureAnchor-Schaltfläche](images/mr-learning-asa/asa-02-section5-step1-6.png)
