@@ -6,19 +6,21 @@ ms.author: moelhama
 ms.date: 02/09/2021
 ms.topic: article
 keywords: Hololens, Emulator, Builds, Versionen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Archive
-ms.openlocfilehash: 40a9428aee0aa115ee9ac20de6d6813a31d46970
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0466ebe84388164e1c29f6f93325987118bb80b4
+ms.sourcegitcommit: 55dab2b9f2d9b98fdb1cb9f26d3d075bb8f95dcd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496047"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102526017"
 ---
 # <a name="hololens-2-emulator-archive"></a>Hololens 2-Emulator-Archiv
 
 Der hololens-Emulator (First Gen) und der hololens 2-emulatorbuild werden nebeneinander installiert. Es wird empfohlen, den neuesten verfügbaren Build zu verwenden. es gibt jedoch Fälle, in denen Sie eine APP mit einem alten Emulator testen möchten. Diese Seite enthält Links zu allen veröffentlichten Versionen.
 
-|  Entwickeln |  Veröffentlichungsdatum |  Hinweise |
+|  Erstellen |  Veröffentlichungsdatum |  Hinweise |
 |----------|----------|----------|
+|  [Hololens 2-emulatorbuild 10.0.19041.1140](https://go.microsoft.com/fwlink/?linkid=2156684) | 9. März 2021 | Windows Holographic, Version 20h2 März 2021 Update.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [Hololens 2-emulatorbuild 10.0.18362.1102](https://go.microsoft.com/fwlink/?linkid=2156989) | 9. März 2021 | Update von Windows Holographic, Version 1903, März 2021.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.19041.1136](https://go.microsoft.com/fwlink/?linkid=2154784) | 9\. Februar 2021 | Windows Holographic, Version 20h2 Februar 2021 Update.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.18362.1098](https://go.microsoft.com/fwlink/?linkid=2154381) | 9\. Februar 2021 | Update von Windows Holographic, Version 1903, Februar 2021.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.19041.1134](https://go.microsoft.com/fwlink/?linkid=2152389) | 13. Januar 2021 | Update von Windows Holographic, Version 20h2, Januar 2021.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -40,7 +42,7 @@ Der hololens-Emulator (First Gen) und der hololens 2-emulatorbuild werden nebene
 |  [Hololens 2-emulatorbuild 10.0.18362.1061](https://go.microsoft.com/fwlink/?linkid=2129833) | 12. Mai 2020 | Windows Holographic, Version 1903, Update von Mai 2020.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.18362.1059](https://go.microsoft.com/fwlink/?linkid=2126826) | 13. April 2020 | Update von Windows Holographic, Version 1903, April 2020.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.18362.1056](https://go.microsoft.com/fwlink/?linkid=2121323) | 10. März 2020 | Update von Windows Holographic, Version 1903, März 2020.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
-|  [Hololens 2-emulatorbuild 10.0.18362.1053](https://go.microsoft.com/fwlink/?linkid=2118321) | 11. Februar 2020 | Update von Windows Holographic, Version 1903, Februar 2020.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [Hololens 2-emulatorbuild 10.0.18362.1053](https://go.microsoft.com/fwlink/?linkid=2118321) | 11. Februar 2020 | Update von Windows Holographic, Version 1903, Februar 2020.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.18362.1044](https://go.microsoft.com/fwlink/?linkid=2114824) | 13. Januar 2020 | Windows Holographic, Version 1903, Januar 2020, Update.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.18362.1042](https://go.microsoft.com/fwlink/?linkid=2112589) | 6. Dezember 2019 | Windows Holographic, Version 1903, Dezember 2019, Update.  Behebt ein Problem, wenn eine Holographic-APP, die im Emulator ausgeführt wird, unerwartet angehalten wird, wenn der PIN-Bereich angezeigt wird  Ermöglicht die Konnektivität mit einem Remote Emulator, wenn die Wahrnehmungs Simulations-API oder die perception Simulation Control-App verwendet wird.  Allgemeine hololens 2-Versions Anmerkungen finden Sie unter https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [Hololens 2-emulatorbuild 10.0.18362.1034](https://go.microsoft.com/fwlink/?linkid=2106649) | 8\. Oktober 2019 | Windows Holographic, Version 1903, Oktober 2019, Update.  Beim Ausführen einer Version, die älter als die neueste verfügbare Version ist, wird der Emulator aufgefordert, auf eine neue Version zu aktualisieren.  Bei Verwendung des Emulators unter Windows 10 Mai 2019 Update oder neuer ermöglicht die neue NAT-Konfigurations Registerkarte Entwicklern das Öffnen von Ports für Anwendungen, die auf separaten Geräten ausgeführt werden, um eine Verbindung mit dem Emulator herzustellen  Weitere Informationen finden Sie in der [hololens-Emulator-Dokumentation](using-the-hololens-emulator.md) . |
@@ -52,7 +54,7 @@ Der hololens-Emulator (First Gen) und der hololens 2-emulatorbuild werden nebene
 
 ## <a name="hololens-emulator-first-gen-archive"></a>Hololens-Emulator (erste Generation) Archive
 
-|  Entwickeln |  Veröffentlichungsdatum |  Hinweise |
+|  Erstellen |  Veröffentlichungsdatum |  Hinweise |
 |----------|----------|----------|
 |  [Hololens-Emulator-Build 10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | 19. November 2018 | Aktueller hololens (First Gen)-Build. Windows 10-Update vom Oktober 2018. |
 |  [Hololens-Emulator-Build 10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | 21. Mai 2018 |
