@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, entwickeln, Entwicklung, HoloLens, Clouddienste, Azure, Remote Rendering, Raumanker, Cognitive Services, Kognition, Unity, Machine Learning, Sprachübersetzung, maschinelles Sehen, Microsoft Graph
-ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
-ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
+ms.openlocfilehash: 0c123c2bca412589086799c41b183eb6f9364d0c
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99973070"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547229"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Übersicht der Azure Mixed Reality-Clouddienste
 
@@ -47,7 +47,7 @@ Als zusätzlicher Bonus schränkt ARR die Auswahl der Benutzeroberflächen, die 
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com /azure/spatial-anchors/) ist ein plattformübergreifender Dienst, der es Ihnen ermöglicht, Mixed Reality-Anwendungen mit räumlicher Wahrnehmung zu erstellen. Mithilfe von Azure Spatial Anchors können Sie holografische Inhalte über mehrere Geräte und im realen Maßstab hinweg zuordnen, speichern und teilen. 
+[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/) ist ein plattformübergreifender Dienst, der es Ihnen ermöglicht, Mixed Reality-Anwendungen mit räumlicher Wahrnehmung zu erstellen. Mithilfe von Azure Spatial Anchors können Sie holografische Inhalte über mehrere Geräte und im realen Maßstab hinweg zuordnen, speichern und teilen. 
 
 Azure Spatial Anchors ist eine einzigartige, maßgeschneiderte Lösung für gängige Anwendungsfälle in Mixed Reality, darunter:
 * **Wegermittlung**: Hierbei können zwei oder mehr Raumanker verbunden werden, um eine Aufgabenliste oder Points-of-Interest zu erstellen, mit denen ein Benutzer interagieren muss.
