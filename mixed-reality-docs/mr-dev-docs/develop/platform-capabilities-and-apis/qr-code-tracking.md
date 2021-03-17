@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, standortbezogene Unterhaltung, VR-Arcade, Arcade, immersiv, QR, QR-Code, hololens2
-ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635432"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574946"
 ---
 # <a name="qr-code-tracking"></a>Nachverfolgen von QR-Codes
 
@@ -209,9 +209,10 @@ Die genaue Zeit, die zum Erkennen von Codes benötigt wird, hängt nicht nur von
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Abstand und Winkelposition gegenüber dem QR-Code
 Die Überwachungskameras besitzen eine eingeschränkte Detailauflösung. Bei kleinen Codes – < 10 cm Kantenlänge – müssen Sie recht nah an den Code herangehen. Für einen QR-Code der Version 1 mit einer Breite zwischen 10 und 25 cm liegt der Mindestabstand für die Erkennung zwischen 0,15 und 0,5 m. 
 
-Der Erkennungsabstand steigt mit der Größe linear an. 
+Der Erkennungsabstand für die Größe erhöht sich linear, hängt jedoch auch von der QR-Version oder der Modulgröße ab. Je höher die Version, desto kleiner die Module, die nur von einer genaueren Position erkannt werden können. Sie können auch Mikro QR-Codes ausprobieren, wenn die Entfernung der Erkennung länger sein soll. Die QR-Erkennung funktioniert in einem Winkelbereich von += 45°, um sicherzustellen, dass die Auflösung zum Erkennen des Codes ausreicht.
 
-Die QR-Erkennung funktioniert in einem Winkelbereich von += 45°, um sicherzustellen, dass die Auflösung zum Erkennen des Codes ausreicht.
+> [!IMPORTANT]
+> Stellen Sie immer sicher, dass Sie über ausreichende Kontraste und einen geeigneten Rahmen verfügen.
 
 ### <a name="qr-codes-with-logos"></a>QR-Codes mit Logos
 QR-Codes mit Logos wurden nicht getestet und werden zurzeit nicht unterstützt.
