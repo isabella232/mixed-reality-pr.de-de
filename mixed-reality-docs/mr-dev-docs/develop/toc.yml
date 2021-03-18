@@ -192,24 +192,24 @@
               href: unity/reviewing-changes.md
     - name: Grundbausteine
       items:
-        - name: Kamera
+        - name: Kamerasetup
           href: unity/camera-in-unity.md
-        - name: Koordinatensysteme
-          href: unity/coordinate-systems-in-unity.md
-        - name: Persistenz
-          href: unity/persistence-in-unity.md
-        - name: Anvisieren mit dem Kopf
-          href: unity/gaze-in-unity.md
+        - name: Raumanker
+          href: unity/spatial-anchors-in-unity.md
+        - name: Interaktionen
+          items:
+            - name: Bewegungscontroller
+              href: unity/motion-controllers-in-unity.md
+            - name: Gesten
+              href: unity/gestures-in-unity.md
+            - name: Hand- und Eye-Tracking
+              href: unity/hand-eye-in-unity.md
+            - name: Anvisieren mit dem Kopf
+              href: unity/gaze-in-unity.md
+            - name: Spracheingabe
+              href: unity/voice-input-in-unity.md
         - name: Text
           href: unity/text-in-unity.md
-        - name: Bewegungscontroller
-          href: unity/motion-controllers-in-unity.md
-        - name: Gesten
-          href: unity/gestures-in-unity.md
-        - name: Hand- und Eye-Tracking
-          href: unity/hand-eye-in-unit.md
-        - name: Spracheingabe
-          href: unity/voice-input-in-unity.md
         - name: Räumliche Abbildung
           href: unity/spatial-mapping-in-unity.md
         - name: Raumklang
@@ -220,6 +220,8 @@
           href: unity/shared-experiences-in-unity.md
         - name: Ausrichtbare Kamera
           href: unity/locatable-camera-in-unity.md
+        - name: Holographic Remoting in der Desktop-App
+          href: unity/holographic-remoting-desktop.md
         - name: Fokuspunkt
           href: unity/focus-point-in-unity.md
         - name: Verlust der Nachverfolgung
