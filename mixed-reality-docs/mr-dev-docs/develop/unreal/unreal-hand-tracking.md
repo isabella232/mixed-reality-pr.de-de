@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Handbücher, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ea4ba3ad5905e899eae474e4d571585fef77c0c2
-ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
+ms.openlocfilehash: 415a0773586ab232e925fd0f18a3a8e6f8217e88
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102117654"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695801"
 ---
 # <a name="hand-tracking-in-unreal"></a>Handtracking in Unreal
 
@@ -21,7 +21,8 @@ Das Hand Verfolgungssystem verwendet die Palmen und Finger der Person als Eingab
 
 Hand darstellen ermöglicht Ihnen die Nachverfolgung und Verwendung der Hände und Finger der Benutzer als Eingabe, auf die in Blueprints und C++ zugegriffen werden kann. Die Unreal-API sendet die Daten als Koordinatensystem, wobei Ticks mit der Unreal-Engine synchronisiert werden.
 
-![Hand Gerüst](images/hand-tracking-skeleton-update.png)
+![Hand Skelett Bild mit Gelenken Overlay- ](images/hand-tracking-img-02.png)
+ ![ Hand Skelett](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 

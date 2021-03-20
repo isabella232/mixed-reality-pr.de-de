@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 308: Geräteübergreifende Benachrichtigungen'
+title: Hololens (1. Gen) und Azure 308-Geräte übergreifende Benachrichtigungen
 description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie Azure Notification Hubs, Azure Functions und Azure Storage und Tabellen in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Benachrichtigung, Funktionen, Tabellen, Notification Hubs, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5bf6720fe7be178bf4fb15ae2b87f4ff502afe9b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8fef7fe2da76e228264037ca51daa57662fbc554
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581275"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730587"
 ---
-# <a name="mr-and-azure-308-cross-device-notifications"></a>MR und Azure 308: Geräteübergreifende Benachrichtigungen
+# <a name="hololens-1st-gen-and-azure-308-cross-device-notifications"></a>Hololens (1. Gen) und Azure 308: Geräte übergreifende Benachrichtigungen
 
 <br>
 
@@ -124,22 +124,22 @@ Nachdem Sie die Anmelde Informationen für Ihre apps abgerufen haben, müssen Si
     > [!NOTE] 
     > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
 
-2.  Nachdem Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Notification Hub**, und klicken Sie auf **_Enter_* _.
+2.  Nachdem Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Notification Hub**, und drücken Sie die **_Eingabe_** Taste.
 
     ![nach benachrichtigungshub suchen](images/AzureLabs-Lab8-06.png)
 
     > [!NOTE] 
-    > Das Wort _*_New_*_ wurde möglicherweise durch _ * Create a Resource * * in neueren Portalen ersetzt.
+    > Das Wort ***New** _ wurde möglicherweise durch _ * Create a Resource * * in neueren Portalen ersetzt.
 
 3.  Auf der neuen Seite wird eine Beschreibung des *Notification Hubs* Dienstanbieter bereitgestellt. Wählen Sie unten links in dieser Eingabeaufforderung die Schaltfläche **Erstellen** aus, um eine Verknüpfung mit diesem Dienst zu erstellen.
 
     ![Benachrichtigungs-Hubs-Instanz erstellen](images/AzureLabs-Lab8-07.png)
 
-4.  Nachdem Sie auf **_Create_* _ geklickt haben:
+4.  Nachdem Sie auf ***Erstellen*** geklickt haben, klicken Sie auf:
 
     1.  Fügen Sie den gewünschten Namen für diese Dienst Instanz ein.
 
-    2.  Geben Sie einen _-*Namespace** an, den Sie dieser APP zuordnen können.
+    2.  Geben Sie einen **Namespace** an, den Sie dieser APP zuordnen können.
 
     3.  Wählen Sie einen **Speicherort aus.**
 
@@ -182,7 +182,7 @@ Nachdem Sie Ihre Notification Hubs Dienst Instanz erstellt haben, navigieren Sie
 2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach **Speicherkonto**, und drücken Sie die **Eingabe** Taste.
 
     > [!NOTE] 
-    > Das Wort **_New_*_ wurde möglicherweise durch _* Create a Resource** in neueren Portalen ersetzt.
+    > Das Wort ***New** _ wurde möglicherweise durch _ * Create a Resource * * in neueren Portalen ersetzt.
 
 3.  Wählen Sie **Speicherkonto-BLOB, Datei, Tabelle, Warteschlange** aus der Liste aus.
 
@@ -734,9 +734,9 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
     ![in Paket importieren](images/AzureLabs-Lab8-61.png)
 
-3.  Klicken Sie auf die Schaltfläche **_importieren_* _, um die Elemente Ihrem Projekt hinzuzufügen.
+3.  Klicken Sie auf die Schaltfläche ***importieren*** , um dem Projekt die Elemente hinzuzufügen.
 
-4.  Wechseln Sie in der Projektansicht unter Plug-in zum Ordner _ *Storage**, und wählen Sie *nur* die folgenden Plug- **ins aus:**
+4.  Wechseln Sie in der Projektansicht **unter Plug** -in zum Ordner **Speicher** , und wählen Sie *nur* die folgenden Plug-ins aus:
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -759,7 +759,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
         !["nicht verarbeiten" für DLLs festlegen](images/AzureLabs-Lab8-64.png)
 
-7.  Aktivieren Sie das Kontrollkästchen **nicht verarbeiten** unter **Platt Form Einstellungen** , und klicken Sie auf **_anwenden_* _.
+7.  Aktivieren Sie das Kontrollkästchen **nicht verarbeiten** unter **Platt Form Einstellungen** , und klicken Sie auf **_anwenden_**.
 
     ![keine Verarbeitung anwenden](images/AzureLabs-Lab8-65.png)
 
@@ -770,7 +770,7 @@ Um das SDK in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie d
 
 Sie müssen nun die Skripts erstellen, die den Code enthalten, um diese Anwendung auszuführen.
 
-Das erste Skript, das Sie erstellen müssen, ist _ * tabletoiszene * *, das für Folgendes zuständig ist:
+Das erste Skript, das Sie erstellen müssen, ist " **tabletoiscene**", das für Folgendes zuständig ist:
 
 -   Lesen von Entitäten in der Azure-Tabelle.
 -   Bestimmen Sie anhand der Tabellendaten, welche Objekte zu erzeugen sind und an welcher Position.
@@ -1216,8 +1216,8 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
     1.  Auf der Registerkarte **andere Einstellungen** :
 
         1.  Die **Skript Lauf Zeit Version** sollte **experimentell** sein (.NET 4,6-Entsprechung).
-        2.  Skripts für die **Skript** Erstellung sollten **_.net_* _
-        3.  _ *API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
+        2.  **Skript** -Back-End sollte **_.net_ sein**
+        3.  **API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
 
             ![API-Kompatibilität](images/AzureLabs-Lab8-87.png)
 
@@ -1487,9 +1487,9 @@ Dieses Kapitel ist mit dem Buildprozess für das vorherige Projekt identisch. Al
 
 1.  Navigieren Sie zu **Buildeinstellungen** ( **dateibuildeinstellungen**  >   ).
 
-2.  Stellen Sie im Menü **Buildeinstellungen** sicher, dass **Unity c#-Projekte** _ getickt ist (sodass Sie die Skripts in diesem Projekt nach dem Build bearbeiten können).
+2.  Vergewissern Sie sich, dass im Menü " **Buildeinstellungen** " die Option **Unity c#-Projekte*** getickt ist (sodass Sie die Skripts in diesem Projekt nach dem erstellen bearbeiten können).
 
-3.  Klicken Sie anschließend auf _ * Build * *.
+3.  Klicken Sie anschließend auf **Erstellen**.
 
     ![Projekt erstellen](images/AzureLabs-Lab8-99.png)
 
@@ -1523,7 +1523,7 @@ So importieren Sie das nuget-Paket:
 
     ![nuget-Manager öffnen](images/AzureLabs-Lab8-102.png)
 
-3.  Wählen Sie die **Registerkarte _Durchsuchen_*_ aus, und suchen* Sie nach _ WindowsAzure. Messaging. Managed**.
+3.  Wählen Sie die Registerkarte ***Durchsuchen** _ aus, und suchen Sie nach _ * WindowsAzure. Messaging. Managed * *.
 
     ![Windows Azure-Messaging Paket suchen](images/AzureLabs-Lab8-103.png)
 
@@ -1680,10 +1680,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azur
  
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Können Sie herausfinden, wie Sie die Farbe der gameobjects ändern und diese Benachrichtigung an andere apps, die die Szene anzeigen, senden?
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Können Sie die gameobjects-Bewegung zu ihrer Mr-app hinzufügen und die aktualisierte Szene in Ihrer Desktop-App sehen?
