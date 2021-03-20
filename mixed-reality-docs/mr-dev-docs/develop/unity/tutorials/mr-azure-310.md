@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 310: Objekterkennung'
+title: Hololens (1. Gen) und Azure 310-Objekterkennung
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie ein Machine Learning-Modell trainieren und verwenden, um ähnliche Objekte und ihre Position in der realen Welt zu erkennen.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Custom Vision, Objekterkennung, gemischte Realität, Academy, Unity, Tutorial, API, hololens, Windows 10, Visual Studio
-ms.openlocfilehash: edbd583c5361f8074dc57fedb66d6ab01df16de8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 29b3622e510a0d97ee3f1dea04661b7d6ab51f9f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583475"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730347"
 ---
-# <a name="mr-and-azure-310-object-detection"></a>Mr und Azure 310: Objekterkennung
+# <a name="hololens-1st-gen-and-azure-310-object-detection"></a>Hololens (1. Gen) und Azure 310: Objekterkennung
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es gibt eine neue Reihe von Tutorials, die in Zukunft veröffentlicht werden, um die Entwicklung für hololens 2 zu veranschaulichen.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn diese veröffentlicht werden.
@@ -1331,11 +1331,11 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die das Azur
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Wenn Sie der Text Bezeichnung hinzufügen, verwenden Sie einen semitransparenten Cube, um das echte Objekt in einem umgebenden 3D- *Feld* zu schließen.
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Trainieren Sie Ihre Custom Vision Service, um weitere Objekte zu erkennen.
 

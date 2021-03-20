@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 311: Microsoft Graph'
+title: Hololens (1. Gen) und Azure 311-Microsoft Graph
 description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie Microsoft Graph nutzen und eine Verbindung mit den Daten herstellen, die die Produktivität innerhalb einer gemischten Reality-Anwendung steigern
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Microsoft Graph, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 699e520fb9db8d8d3b5bab8b98d92fa39f0acb2d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6afa1e8c5d2baa2d46652901558b2917c5c43d70
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583439"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730247"
 ---
-# <a name="mr-and-azure-311---microsoft-graph"></a>MR und Azure 311: Microsoft Graph
+# <a name="hololens-1st-gen-and-azure-311---microsoft-graph"></a>Hololens (1. Gen) und Azure 311-Microsoft Graph
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es gibt eine neue Reihe von Tutorials, die in Zukunft veröffentlicht werden, um die Entwicklung für hololens 2 zu veranschaulichen.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn diese veröffentlicht werden.
@@ -234,7 +234,7 @@ So importieren Sie das Paket:
 
         ![](images/AzureLabs-Lab311-23.png)
 
-7.  Klicken Sie auf **Anwenden**.
+7.  Klicken Sie auf **Übernehmen**.
 
 ## <a name="chapter-4---camera-setup"></a>Kapitel 4: Kamera Einrichtung
 
@@ -987,12 +987,12 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die die Micr
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Verwenden Sie Microsoft Graph, um weitere Informationen zum Benutzer anzuzeigen.
 
 -   Benutzer-e-Mail/Telefonnummer/Profilbild
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Implementieren Sie das Voice-Steuerelement, um die Microsoft Graph-Benutzeroberfläche

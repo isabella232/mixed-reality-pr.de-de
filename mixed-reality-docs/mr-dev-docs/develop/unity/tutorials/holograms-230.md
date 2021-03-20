@@ -1,19 +1,19 @@
 ---
-title: 'MR Spatial 230: Räumliche Abbildung'
+title: Hololens (1. Gen) Spatial 230-räumliche Zuordnung
 description: Befolgen Sie diese exemplarische Vorgehensweise für die Code Erstellung mithilfe von Unity, Visual Studio und hololens, um die Details der Konzepte räumlicher Zuordnung kennenzulernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumliche Zuordnung, Oberflächenrekonstruktion, Mesh, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582929"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730137"
 ---
-# <a name="mr-spatial-230-spatial-mapping"></a>MR räumlich 230: Räumliche Abbildung
+# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>Hololens (1. Gen) räumlich 230: räumliche Zuordnung
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -151,7 +151,7 @@ Betrachten wir nun, wie sich die räumliche Zuordnung auf die Leistung auswirken
 * Klicken Sie auf **Verbinden**.
 * Beachten Sie die Anzahl der Millisekunden, die die GPU zum Rendering eines Frames benötigt.
 * Verhindern, dass die Anwendung auf dem Gerät ausgeführt wird.
-* Kehren Sie zu Visual Studio zurück, und öffnen Sie **SpatialMappingObserver.cs**. Sie finden ihn im Ordner holotoolkit\spatialmapping des Projekts Assembly-CSharp (Universal Windows).
+* Kehren Sie zu Visual Studio zurück, und öffnen Sie **spatialmappingobserver. cs**. Sie finden ihn im Ordner holotoolkit\spatialmapping des Projekts Assembly-CSharp (Universal Windows).
 * Suchen Sie die Funktion " **Awa()** ", und fügen Sie die folgende Codezeile hinzu: " **testanglespercubicmeter = 1200;** "
 * Stellen Sie das Projekt erneut auf Ihrem Gerät bereit, und stellen Sie dann **erneut eine Verbindung mit dem Profiler** her. Beachten Sie die Änderung in der Anzahl von Millisekunden zum Rendering eines Frames.
 * Verhindern, dass die Anwendung auf dem Gerät ausgeführt wird.
@@ -231,15 +231,15 @@ Unity bietet eine hervorragende Vorschau der Materialien, aber es ist immer eine
 * Suchen Sie im **Projekt** Panel von Unity im Ordner **holograms** das **spatialprocessing** -Objekt.
 * Ziehen Sie & das **spatialprocessing** -Objekt in den Bereich **Hierarchie** ablegen.
 
-Das spatialprocessing-präfab umfasst Komponenten für die Verarbeitung der räumlichen Zuordnungsdaten. **SurfaceMeshesToPlanes.cs** findet und generiert auf der Grundlage der räumlichen Zuordnungsdaten Ebenen. Wir verwenden in unserer Anwendung Flächen zum Darstellen von Wänden, Flächen und Oberflächen. Diese vorfab umfasst auch **RemoveSurfaceVertices.cs** , mit dem Vertices aus dem räumlichen zuordnungsmesh entfernt werden können. Dies kann verwendet werden, um Löcher im Mesh zu erstellen oder um überzählige Dreiecke zu entfernen, die nicht mehr benötigt werden (da stattdessen Flächen verwendet werden können).
+Das spatialprocessing-präfab umfasst Komponenten für die Verarbeitung der räumlichen Zuordnungsdaten. " **Surfakemeshestoplanes. cs** " findet und generiert auf der Grundlage der räumlichen Zuordnungsdaten Ebenen. Wir verwenden in unserer Anwendung Flächen zum Darstellen von Wänden, Flächen und Oberflächen. Diese Prefab umfasst auch **removesurfakevertices. cs** , mit dem Vertices aus dem räumlichen zuordnungsmesh entfernt werden können. Dies kann verwendet werden, um Löcher im Mesh zu erstellen oder um überzählige Dreiecke zu entfernen, die nicht mehr benötigt werden (da stattdessen Flächen verwendet werden können).
 
 * Suchen Sie im **Projekt** Panel von Unity im Ordner **holograms** das **spacecollection** -Objekt.
 * Ziehen Sie das **spacecollection** -Objekt per Drag & Drop in den Bereich **Hierarchie** .
 * Wählen Sie im Bereich **Hierarchie** das **spatialprocessing** -Objekt aus.
 * Suchen Sie im **Inspektor** -Panel die Komponente " **Play Space Manager (Skript)** ".
-* Doppelklicken Sie auf **PlaySpaceManager.cs** , um es in Visual Studio zu öffnen.
+* Doppelklicken Sie auf **playspacemanager. cs** , um es in Visual Studio zu öffnen.
 
-PlaySpaceManager.cs enthält anwendungsspezifischen Code. Wir werden diesem Skriptfunktionen hinzufügen, um folgendes Verhalten zu ermöglichen:
+Playspacemanager. cs enthält anwendungsspezifischen Code. Wir werden diesem Skriptfunktionen hinzufügen, um folgendes Verhalten zu ermöglichen:
 
 1. Die Erfassung räumlicher Zuordnungsdaten wird beendet, wenn das Überprüfungs Zeit Limit (10 Sekunden) überschritten wird.
 2. Verarbeiten Sie die räumlichen Mapping-Daten:
@@ -247,7 +247,7 @@ PlaySpaceManager.cs enthält anwendungsspezifischen Code. Wir werden diesem Skri
     2. Verwenden Sie removesurfacevertices, um Oberflächen überdreitel zu entfernen, die innerhalb der Ebenen liegen.
 3. Generieren Sie eine Sammlung von holograms auf der ganzen Welt, und platzieren Sie Sie in der Nähe des Benutzers auf der Wand-und Bodenebene.
 
-Führen Sie die in PlaySpaceManager.cs markierten Codierungs Übungen aus, oder ersetzen Sie das Skript durch die fertige Projekt Mappe aus folgendem:
+Führen Sie die in "playspacemanager. cs" markierten Codierungs Übungen aus, oder ersetzen Sie das Skript durch die fertige Projekt Mappe aus folgendem:
 
 ```cs
 using System.Collections.Generic;
@@ -470,7 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * Suchen Sie im **Inspektor** -Panel nach der Komponente, die an die Flächen **(Skript)** ausgerichtet ist.
 * Ändern Sie die Eigenschaft **zeichnen-Ebenen** in **nichts** , um die Auswahl zu löschen.
 * Ändern Sie die Eigenschaft **zeichnen-Ebenen** in **Wall**, sodass nur die Zeichen Wandflächen gerendert werden.
-* Doppelklicken Sie im **Projekt** Panel im Ordner **Skripts** auf **Placeable.cs** , um es in Visual Studio zu öffnen.
+* Doppelklicken Sie im **Projekt** Panel auf den Ordner **Skripts** , **um ihn** in Visual Studio zu öffnen.
 
 Das **ersetzbare** Skript ist bereits an das Poster-und Projektions Feld angefügt, die nach Abschluss der Flächensuche erstellt werden. Wir müssen lediglich Code auskommentieren, und mit diesem Skript wird Folgendes erreicht:
 
@@ -482,7 +482,7 @@ Das **ersetzbare** Skript ist bereits an das Poster-und Projektions Feld angefü
 6. Richten Sie das Hologramm erneut an den Surface-Typ (vertikal oder horizontal) aus, zu dem er eine Affinität hat.
 7. Platzieren Sie das – Hologramm reibungslos auf der ausgewählten Oberfläche, um das Springen oder Ausrichtungs Verhalten zu vermeiden.
 
-Kommentieren Sie den gesamten Code in der Codierungs Übung unten aus, oder verwenden Sie diese abgeschlossene Lösung in **Placeable.cs**:
+Heben Sie die Auskommentierung für den gesamten Code in der Codierungs Übung unten auf, oder verwenden Sie diese abgeschlossene **Lösung in der** Datei "
 
 ```cs
 using System.Collections.Generic;
@@ -1098,13 +1098,13 @@ Als Nächstes fügen wir ein spezielles Verhalten zur Erde hinzu, sodass es eine
 * Suchen Sie im **Inspektor** -Panel nach dem Material der Erde (untere Komponente).
 * Ändern Sie in der **Shader-Dropdown-** Datei den Shader in **benutzerdefiniertes > oksionrim**. Dadurch wird eine blaue Hervorhebung um die Erde herum gerendert, wenn Sie von einem anderen Objekt verdeckt wird.
 
-Zum Schluss aktivieren wir einen x-ray-Vision-Effekt für Planeten in unserem Sonnensystem. Wir müssen **PlanetOcclusion.cs** (im Ordner scripz\solarsystem) bearbeiten, um Folgendes zu erreichen:
+Zum Schluss aktivieren wir einen x-ray-Vision-Effekt für Planeten in unserem Sonnensystem. Wir müssen " **planetocclusion. cs** " (im Ordner "scripz\solarsystem") bearbeiten, um Folgendes zu erreichen:
 
 1. Stellen Sie fest, ob ein Planet von der spatialmapping-Schicht (Raum-und Flächen) verdeckt wird.
 2. Zeigt die Draht Modell-Darstellung eines Planeten an, wenn er von der spatialmapping-Ebene verdeckt wird.
 3. Blenden Sie die Draht Modell-Darstellung eines Planeten aus, wenn er nicht durch die spatialmapping-Ebene blockiert wird.
 
-Befolgen Sie die Codierungs Übung in PlanetOcclusion.cs, oder verwenden Sie die folgende Lösung:
+Befolgen Sie die Codierungs Übung in planetocclusion. cs, oder verwenden Sie die folgende Lösung:
 
 ```cs
 using UnityEngine;

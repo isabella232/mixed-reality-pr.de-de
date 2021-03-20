@@ -1,19 +1,19 @@
 ---
-title: 'MR Input 210: Anvisieren'
+title: Hololens (1. Gen) Eingabe 210-Blick
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details von Blick Konzepten zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Blick, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583860"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730327"
 ---
-# <a name="mr-input-210-gaze"></a>MR-Eingabe 210: Anvisieren
+# <a name="hololens-1st-gen-input-210-gaze"></a>Hololens (1. Gen) Eingabe 210: Blick
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -74,7 +74,7 @@ Wir haben hier einen freundlichen Astronauten, der Sie beim Erlernen von Blick K
 * Importieren von Assets und Einrichten der Szene
 * Anzeigen des Astronauten in den hololens.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Starten Sie Unity.
 2. Wählen Sie auf **Neues Projekt** aus.
@@ -184,7 +184,7 @@ Wir werden unsere Arbeit auf einige Grundsätze von Cursor Entwürfen basieren, 
 * Lassen Sie den Cursor nicht zu klein oder groß werden.
 * Vermeiden Sie das Blockieren von Inhalt.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Suchen Sie im Ordner **holotoolkit\input\prefabs** nach dem **InputManager** -Objekt.
 2. Ziehen Sie den **InputManager** in die **Hierarchie**.
@@ -203,11 +203,11 @@ Wir werden unsere Arbeit auf einige Grundsätze von Cursor Entwürfen basieren, 
 4. Klicken Sie auf **Debuggen > starten ohne Debugging** , oder drücken Sie **STRG + F5**.
 5. Beobachten Sie, wie der Cursor gezeichnet wird, und wie sich die Darstellung ändert, wenn Sie ein Hologram berührt.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Erweitern Sie im Bereich **Hierarchie** den Knoten **Astroman** -> **GEO_G** -> **Back_Center** .
-2. Doppelklicken Sie auf **Interactible.cs** , um es in Visual Studio zu öffnen.
-3. Heben Sie die Auskommentierung der Zeilen in den Rückrufe **ifocverwendbare. onfocusenter ()** und **ifocverwendbare. onfocusexit ()** in **Interactible.cs** auf. Diese werden vom InputManager des Mixed Reality-Toolkits aufgerufen, wenn der Fokus (entweder durch den Blick oder durch den Controller) in den Konflikt des jeweiligen gameobject-Objekts wechselt und diesen verlässt.
+2. Doppelklicken Sie auf " **interacable. cs** ", um Sie in Visual Studio zu öffnen.
+3. Heben Sie die Auskommentierung der Zeilen in den Rückrufe **ifocverwendbare. onfocusenter ()** und **ifocverwendbare. onfocusexit ()** in **interacable. cs** auf. Diese werden vom InputManager des Mixed Reality-Toolkits aufgerufen, wenn der Fokus (entweder durch den Blick oder durch den Controller) in den Konflikt des jeweiligen gameobject-Objekts wechselt und diesen verlässt.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -248,7 +248,7 @@ void IFocusable.OnFocusExit()
 * Vereinfachen Sie das Ziel von holograms.
 * Stabilisiert natürliche Head-Bewegungen.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Wählen Sie im Bereich **Hierarchie** das Objekt **InputManager** aus.
 2. Suchen Sie im **Inspektor** -Panel nach dem Skript für den **Blick-Stabilisator** . Klicken Sie auf die Datei, um Sie in Visual Studio zu öffnen, wenn Sie ein Bild sehen möchten.
@@ -263,15 +263,15 @@ void IFocusable.OnFocusExit()
 
 * Fügen Sie einen direktionalen Indikator für den Cursor hinzu, um Hologramme zu finden.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
-Wir verwenden die Datei **DirectionIndicator.cs** , um Folgendes zu tun:
+Wir verwenden die Datei " **directionindicator. cs** ", um Folgendes zu tun:
 
 1. Zeigen Sie den direktionalen Indikator an, wenn der Benutzer nicht mit den holograms-Vorgängen.
 2. Blenden Sie den direktionalen Indikator aus, wenn der Benutzer bei den holograms einen Blick anzeigt.
 3. Aktualisieren Sie den direktionalen Indikator, sodass er auf die holograms zeigt.
 
-Fangen wir also an.
+Lassen Sie uns loslegen!
 
 1. Klicken Sie im **Hierarchie** Panel auf das **Astroman** -Objekt, und klicken Sie auf **den Pfeil** , um es zu erweitern.
 2. Wählen Sie im Bereich **Hierarchie** das **directionalindicator** -Objekt unter **Astroman** aus.
@@ -279,7 +279,7 @@ Fangen wir also an.
 4. Geben Sie im Menü den Suchfeld- **Richtungsindikator** ein. Wählen Sie das Suchergebnis aus.
 5. Ziehen Sie im Bereich **Hierarchie** das **Cursor** Objekt per Drag & Drop auf die **Cursor** -Eigenschaft des **Inspektors**.
 6. Ziehen Sie im **Projekt** Panel im Ordner **holograms** das **directionalindicator** -Asset per Drag & Drop auf die **direktionale Indikator** Eigenschaft im **Inspektor**.
-7. Erstellen und Bereitstellen der app.
+7. Erstellen Sie die App, und stellen Sie sie bereit.
 8. Sehen Sie, wie das direktionale Indikator Objekt Ihnen hilft, den Astronaut zu finden.
 
 ## <a name="chapter-5---billboarding"></a>Kapitel 5: Abrechnung
@@ -290,7 +290,7 @@ Fangen wir also an.
 
 * Verwenden Sie das-Abrechnungs Board, um holograms immer für Sie zu verwenden.
 
-Wir verwenden die Datei **Billboard.cs** , um ein gameobject-Objekt so zu speichern, dass es dem Benutzer jederzeit zusteht.
+Wir verwenden die Datei " **Billboard. cs** ", um ein gameobject-Objekt so zu speichern, dass es dem Benutzer jederzeit zusteht.
 
 1. Wählen Sie im Bereich **Hierarchie** das Objekt **Astroman** aus.
 2. Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
@@ -318,15 +318,15 @@ Die hier verwendete Lösung ist die Verwendung eines "tagbasierten" Ansatzes.
 
 Ein tagansichts Objekt verlässt die Ansicht des Benutzers niemals vollständig. Sie können sich ein Tag als ein Objekt vorstellen, das an den Kopf des Benutzers durch Gummibänder angehängt ist. Wenn der Benutzer sich bewegt, bleibt der Inhalt in einem einfachen Blick, indem er an den Rand der Ansicht bewegt wird, ohne dass er vollständig verlässt. Wenn der Benutzer in Richtung des tagbasierten Objekts zeigt, wird es vollständig in die Ansicht integriert.
 
-Wir verwenden die Datei **SimpleTagalong.cs** , um Folgendes zu tun:
+Wir verwenden die Datei **simpletagalong. cs** , um Folgendes zu tun:
 
 1. Bestimmen Sie, ob sich das Tag-Along Objekt innerhalb der Kamera Begrenzungen befindet.
 2. Wenn dies nicht der Wert der Ansicht ist, positionieren Sie den Tag-Along auf teilweise innerhalb der Ansicht.
 3. Positionieren Sie andernfalls die Tag-Along in einem Standardabstand vom Benutzer.
 
-Zu diesem Zweck müssen wir zuerst das **Interactible.cs** -Skript ändern, um die **Tagalong-Aktion** aufzurufen.
+Zu diesem Zweck müssen wir zuerst das **interacable. cs** -Skript ändern, um die **tagalongaction-Aktion** aufzurufen.
 
-1. Bearbeiten Sie **Interactible.cs** , indem Sie die Codierungs Übung 6. a abschließen (auskommentieren von Zeilen 84 bis 87).
+1. Bearbeiten Sie die **interacable. cs** -Datei, indem Sie die Codierungs Übung 6. a abschließen (aus den Zeilen 84 bis 87).
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,9 +337,9 @@ if (interactibleAction != null)
 }
 ```
 
-Das **InteractibleAction.cs** -Skript in Kombination mit **Interactible.cs** führt benutzerdefinierte Aktionen aus, wenn Sie auf holograms tippen. In diesem Fall verwenden wir eine speziell für das Tag.
+Das **interactibleaction. cs** -Skript, das mit **interacable. cs** gekoppelt ist, führt benutzerdefinierte Aktionen aus, wenn Sie auf holograms tippen. In diesem Fall verwenden wir eine speziell für das Tag.
 
-* Klicken Sie im Ordner **Scripts** auf **TagalongAction.cs** Asset, um es in Visual Studio zu öffnen.
+* Klicken Sie im Ordner **Scripts** auf **tagalongaction. cs** Asset, um es in Visual Studio zu öffnen.
 * Führen Sie die Codierungs Übung aus, oder ändern Sie Sie in Folgendes:
   * Geben Sie oben in der **Hierarchie** in der Suchleiste **ChestButton_Center** ein, und wählen Sie das Ergebnis aus.
   * Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
@@ -357,7 +357,7 @@ Wir müssen Folgendes hinzufügen:
 * Fügen Sie dem Objekt "gazed-on" einen fakboardingvorgang hinzu, und legen Sie die pivotachse auf XY fest
 * Fügen Sie dann dem-Objekt einfache Tag-Along hinzu.
 
-Hier ist unsere Lösung, von **TagalongAction.cs**:
+Hier ist unsere Lösung, von **tagalongaction. cs**:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -407,5 +407,5 @@ public class TagalongAction : InteractibleAction
 }
 ```
 
-* Testen Erstellen und Bereitstellen der app.
+* Testen Erstellen Sie die App, und stellen Sie sie bereit.
 * Sehen Sie sich an, wie der Inhalt der Mitte des Blick Punkts folgt, aber nicht kontinuierlich und ohne Blockierung.

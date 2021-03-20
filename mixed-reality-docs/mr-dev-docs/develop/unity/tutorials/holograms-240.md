@@ -1,19 +1,19 @@
 ---
-title: 'MR Sharing 240: Mehrere HoloLens-Geräte'
+title: Hololens (1st Gen) Sharing 240-Multiple hololens Devices
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details der Freigabe von holograms zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Sharing, Networking, Academy, Tutorial, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 97f2067c043912e7608361e73e54fdf769b8bf51
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8e3631c80702f04e9f7e50c98bed91d92c332841
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582923"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730147"
 ---
-# <a name="mr-sharing-240-multiple-hololens-devices"></a>MR-Freigabe 240: Mehrere HoloLens-Geräte
+# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>Hololens (1st Gen) Sharing 240: mehrere hololens-Geräte
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -66,10 +66,10 @@ In diesem Kapitel richten wir das erste Unity-Projekt ein und durchlaufen den Bu
 * Einrichten von Unity zum Entwickeln von Holographic apps.
 * Sehen Sie sich Ihr Hologram!
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Starten Sie Unity.
-* Wählen Sie **Open**(Öffnen).
+* Klicken Sie auf **Öffnen**.
 * Geben Sie den Speicherort als Ordner **sharedholograms** ein, den Sie zuvor nicht archiviert haben.
 * Wählen Sie **Projekt Name** , und klicken Sie auf **Ordner auswählen**.
 * Klicken Sie in der **Hierarchie** mit der rechten Maustaste auf die **Hauptkamera** , und wählen Sie **Löschen**.
@@ -121,7 +121,7 @@ In diesem Kapitel interagieren wir mit unseren holograms. Zuerst fügen wir eine
 * Verwenden Sie die Blick Eingabe, um einen Cursor zu steuern.
 * Verwenden Sie Gesten Eingaben für die Interaktion mit holograms.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 **Anvisieren**
 
@@ -168,7 +168,7 @@ Es ist Spaß, Hologramme zu sehen und mit Ihnen zu interagieren, aber wir gehen 
 >2. Klicken Sie auf die Registerkarte "Windows Store".
 >3. Überprüfen Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die Funktion " **internetclientserver** " und die Funktion " **privatenetworkclientserver** ".
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Navigieren Sie im **Projekt Panel** zum Ordner **HoloToolkit-Sharing-240\Prefabs\Sharing** .
 * Ziehen Sie die **Freigabe** vorfab per Drag & amp; Drop in den Bereich **Hierarchie**.
@@ -319,7 +319,7 @@ Alle Benutzer können jetzt dasselbe Hologram sehen! Sehen wir uns nun an, dass 
 * Wählen Sie einen Player Avatar aus, und geben Sie ihn frei
 * Fügen Sie den Player Avatar neben den Köpfen der Menschen an.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Navigieren Sie im **Projekt Panel** zum Ordner **holograms** .
 * Verschieben Sie den **playeravatarstore** per Drag & amp; Drop in die **Hierarchie**.
@@ -618,7 +618,7 @@ In diesem Kapitel wird der Anker auf realen Oberflächen platziert. Wir verwende
 
 * Platzieren Sie holograms basierend auf der Hauptposition des Players im räumlichen Mapping-Mesh.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Navigieren Sie im **Projekt Panel** zum Ordner **holograms** .
 * Ziehen Sie die **customspatialmapping** -vorfab per Drag & Drop auf die **Hierarchie**.
@@ -997,7 +997,7 @@ In diesem Kapitel fügen wir holograms hinzu, die aus realen Oberflächen spring
 * Starten Sie Projekt Kacheln, die aus realen Oberflächen springen.
 * Geben Sie die Projekt Kacheln frei, damit Sie von anderen Playern angezeigt werden.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Wählen Sie in der **Hierarchie** das **hologramcollection** -Objekt aus.
 * Klicken Sie im **Inspektor** auf **Komponente hinzufügen**.
@@ -1019,7 +1019,7 @@ In diesem Kapitel wird ein Portal erläutert, das nur mit der Zusammenarbeit erm
 
 * Arbeiten Sie zusammen, um auf dem Anker ausreichend Projekt Kacheln zu starten, um ein geheimes Portal zu entdecken.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Navigieren Sie im **Projekt Panel** zum Ordner **holograms** .
 * Verschieben Sie das Objekt " **Underworld** " per Drag & Drop als untergeordnetes Element **von hologramcollection**.

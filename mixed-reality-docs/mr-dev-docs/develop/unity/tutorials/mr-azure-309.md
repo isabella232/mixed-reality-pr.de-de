@@ -1,19 +1,19 @@
 ---
-title: Mr und Azure 309-Application Insights
+title: Hololens (1. Gen) und Azure 309-Application Insights
 description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie mit dem Azure-Anwendung Insights-Dienst Analysen bezüglich des Benutzer Verhaltens in einer gemischten Reality-Anwendung sammeln.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Application Insights, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5d599e7c3c6f887675bf010a10fb8841e80143db
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: efd6a3f8bf526dcf6a7eaee199f5c22ffa1dd639
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582968"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730377"
 ---
-# <a name="mr-and-azure-309-application-insights"></a>MR und Azure 309: Application Insights
+# <a name="hololens-1st-gen-and-azure-309-application-insights"></a>Hololens (1. Gen) und Azure 309: Application Insights
 
 <br>
 
@@ -86,11 +86,11 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
     > [!NOTE]
     > Das Wort **New** wurde möglicherweise durch **Create a Resource** in neueren Portalen ersetzt.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-01.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-01.png)
 
 3.  Die neue Seite auf der rechten Seite enthält eine Beschreibung des *Azure-Anwendung Insights* -Dienstanbieter. Klicken Sie unten links auf dieser Seite auf die Schaltfläche **Erstellen** , um eine Verknüpfung mit diesem Dienst zu erstellen.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-02.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-02.png)
 
 4.  Nachdem Sie auf **Erstellen** geklickt haben, klicken Sie auf:
 
@@ -110,21 +110,21 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
 
     7.  Klicken Sie auf **Erstellen**.
 
-        ![das Azure-Portal](images/AzureLabs-Lab309-03.png)
+        ![Azure-Portal](images/AzureLabs-Lab309-03.png)
 
 5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. dieser Vorgang kann einige Minuten in Anspruch nehmen.
 
 6.  Nachdem die Dienst Instanz erstellt wurde, wird im Portal eine Benachrichtigung angezeigt.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-04.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-04.png)
 
 7.  Klicken Sie auf die Benachrichtigungen, um die neue Dienst Instanz zu untersuchen.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-05.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-05.png)
 
 8.  Klicken Sie in der Benachrichtigung auf die Schaltfläche **Gehe zu Ressource** , um die neue Dienst Instanz zu untersuchen. Sie gelangen zu ihrer neuen *Application Insights Dienst* Instanz.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-06.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-06.png)
 
     > [!NOTE]
     >  Diese Webseite offen und leicht zugänglich zu machen, wird hier wieder häufig angezeigt, um die gesammelten Daten anzuzeigen.
@@ -134,21 +134,21 @@ Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal eine
 
 9.  Um den **Instrumentierungs Schlüssel** zu suchen, müssen Sie einen Bildlauf nach unten in der Liste der Dienstfunktionen durchführen und auf **Eigenschaften** klicken. auf der angezeigten Registerkarte wird der **Dienst Schlüssel** angezeigt.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-07.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-07.png)
 
 10. Unter den folgenden **Eigenschaften** finden Sie den **API-Zugriff**, auf den Sie klicken müssen. Im Bereich auf der rechten Seite wird die **Anwendungs-ID** Ihrer APP bereitgestellt.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-08.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-08.png)
 
 11. Wenn der Bereich **Anwendungs-ID** weiterhin geöffnet ist, klicken Sie auf API- **Schlüssel erstellen**. Dadurch wird der Bereich *API-Schlüssel erstellen* geöffnet.
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-09.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-09.png)
 
 12. Geben Sie im jetzt geöffneten Bereich *API-Schlüssel erstellen* eine Beschreibung ein, und klicken Sie auf **die drei Felder**.
 
 13. Klicken Sie auf **Schlüssel generieren**. Ihr **API-Schlüssel** wird erstellt und angezeigt. 
 
-    ![das Azure-Portal](images/AzureLabs-Lab309-10.png)
+    ![Azure-Portal](images/AzureLabs-Lab309-10.png)
         
     > [!WARNING]
     > Dies ist der einzige Zeitpunkt, an dem der **Dienst Schlüssel** angezeigt wird. Stellen Sie also sicher, dass Sie jetzt eine Kopie erstellen.
@@ -265,7 +265,7 @@ Wenn Sie Application Insights in Ihr eigenes Projekt importieren möchten, stell
     > [!NOTE]
     > Wenn Sie die Plug-ins wie diese markieren, werden diese so konfiguriert, dass Sie nur im Unity-Editor verwendet werden. Der WSA-Ordner enthält einen anderen Satz von DLLs, die nach dem Exportieren des Projekts aus Unity verwendet werden.
 
-6.  Im nächsten Schritt müssen Sie den Ordner " **WSA** " im Ordner " **Insights** " öffnen. Es wird eine Kopie derselben Datei angezeigt, die Sie soeben konfiguriert haben. Wählen Sie diese Datei aus, und vergewissern Sie sich dann im Inspektor, dass **alle Plattformen** **deaktiviert sind.** stellen Sie dann sicher, dass **nur** **wsaplayer** **aktiviert** ist. Klicken Sie auf **Anwenden**.
+6.  Im nächsten Schritt müssen Sie den Ordner " **WSA** " im Ordner " **Insights** " öffnen. Es wird eine Kopie derselben Datei angezeigt, die Sie soeben konfiguriert haben. Wählen Sie diese Datei aus, und vergewissern Sie sich dann im Inspektor, dass **alle Plattformen** **deaktiviert sind.** stellen Sie dann sicher, dass **nur** **wsaplayer** **aktiviert** ist. Klicken Sie auf **Übernehmen**.
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-25.png)
 
@@ -1274,10 +1274,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Appl
 
 ## <a name="bonus-exercises"></a>Bonus Übungen
 
-**Übung 1**
+**Übung 1**
 
 Versuchen Sie, die objectinscene-Objekte zu erstellen, anstatt Sie manuell zu erstellen, und legen Sie Ihre Koordinaten auf der Ebene innerhalb Ihrer Skripts fest. Auf diese Weise könnten Sie Azure das am häufigsten verwendete Objekt (aus Blick auf das Ergebnis oder die Near-Ergebnisse) Fragen und ein *zusätzliches* von diesen Objekten erzeugen.
 
-**Übung 2**
+**Übung 2**
 
 Sortieren Sie Ihre Application Insights Ergebnisse nach Zeit, damit Sie die relevantesten Daten erhalten, und implementieren Sie diese zeitsensiblen Daten in der Anwendung.
