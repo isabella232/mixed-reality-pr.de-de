@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 301: Sprachübersetzung'
+title: Hololens (1. Gen) und Azure 301-Sprachübersetzung
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie die Azure-Textübersetzungs-API in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Translator Text, hololens, immersive, VR, Sprachübersetzung, Windows 10, Visual Studio
-ms.openlocfilehash: 0b7e7c2e4146d3c60e62c25764aae48260fdf3ef
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: d02b86b6e62a46cd3ed4ebe7e6188cfda18e0d49
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583293"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730577"
 ---
-# <a name="mr-and-azure-301-language-translation"></a>MR und Azure 301: Sprachübersetzung
+# <a name="hololens-1st-gen-and-azure-301-language-translation"></a>Hololens (1. Gen) und Azure 301: Sprachübersetzung
 
 <br>
 
@@ -267,7 +267,7 @@ Zum Anzeigen der Eingabe und der Ausgabe der Übersetzung muss eine grundlegende
 
     1. Für die Komponente *Rect Transform* :
 
-        | Name                   | Transformation- *Position*             | Breite      | Höhe    |
+        | name                   | Transformation- *Position*             | Breite      | Höhe    |
         |:----------------------:|:----------------------------------:|:----------:|:---------:|
         | "Mikrophonestatus Label"  | **X** -80 **Y** 90 **Z** 0         | 300        | 30        |
         | Azureresponselabel     | **X** -80 **Y** 30 **Z** 0         | 300        | 30        |
@@ -296,7 +296,7 @@ Zum Anzeigen der Eingabe und der Ausgabe der Übersetzung muss eine grundlegende
 
     1. Für die Komponente **Rect Transform** :
 
-        | Name                  | Transformation- *Position* | Breite      | Höhe    |
+        | name                  | Transformation- *Position* | Breite      | Höhe    |
         |:---------------------:|:----------------------:|:----------:|:---------:|
         | "Mikrophonestatustext"  | X 0 Y-30 Z 0          | 300        | 30        |
         | Azureresponabtext     | X 0 Y-30 Z 0          | 300        | 30        |
@@ -784,10 +784,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die die Text
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Können Sie der APP Text-zu-Sprache-Funktionen hinzufügen, sodass der zurückgegebene Text gesprochen wird?
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Ermöglicht es dem Benutzer, die Quell-und Ausgabesprachen ("from" und "to") innerhalb der APP selbst zu ändern, sodass die APP nicht jedes Mal neu erstellt werden muss, wenn Sie die Sprachen ändern möchten.

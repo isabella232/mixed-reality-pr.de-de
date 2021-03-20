@@ -1,19 +1,19 @@
 ---
-title: 'MR Basics 101E: Vollständiges Projekt mit Emulator'
+title: Hololens (1. Gen) Grundlagen 101 e-vervollständigen eines Projekts mit Emulator
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und den hololens-Emulator verwenden, um die Grundlagen einer Holographic-Anwendung kennenzulernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Gemischte Realität, Windows Mixed Reality, Hologram, Academy, Tutorial, Emulator, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10, Blick, Gesten, Spracheingabe, räumlicher Sound, räumliche Zuordnung
-ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583695"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730287"
 ---
-# <a name="mr-basics-101e-complete-project-with-emulator"></a>MR-Grundlagen 101E: Vollständiges Projekt mit Emulator
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>Hololens (1. Gen) Grundlagen 101 e: vervollständigen eines Projekts mit Emulator
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
@@ -63,10 +63,10 @@ In diesem Kapitel richten wir das erste Unity-Projekt ein und durchlaufen den Bu
 * Erstellen Sie ein Hologram.
 * Sehen Sie sich ein von Ihnen vorgenommene – Hologramm an.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Starten Sie Unity.
-* Wählen Sie **Open**(Öffnen).
+* Klicken Sie auf **Öffnen**.
 * Geben Sie Location als den Ordner **Origami** ein, den Sie zuvor nicht archiviert haben.
 * Wählen Sie **Origami** , und klicken Sie auf **Ordner auswählen**.
 * Speichern Sie die neue Szene: **File**  /  **Save scene as**.
@@ -128,7 +128,7 @@ In diesem Kapitel werden die ersten von drei Möglichkeiten vorgestellt, mit den
 
 * Visualisieren Sie Ihren Blick mithilfe eines weltweit gesperrten Cursors.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Wechseln Sie zurück zu Ihrem Unity-Projekt, und schließen Sie das Fenster mit den Buildeinstellungen, wenn es noch geöffnet ist.
 * Wählen Sie im **Projekt Panel** den Ordner **holograms** aus.
@@ -141,7 +141,7 @@ In diesem Kapitel werden die ersten von drei Möglichkeiten vorgestellt, mit den
 * Wählen Sie im **Hierarchie Panel** das **Cursor** Objekt aus.
 * Verschieben Sie das **worldcursor** -Skript per Drag & amp; Drop in den Bereich **Inspector**.
 * Doppelklicken Sie auf das Skript **worldcursor** , um es in Visual Studio zu öffnen.
-* Fügen Sie diesen Code in **WorldCursor.cs** ein, und **Speichern Sie alle**.
+* Kopieren Sie diesen Code, und fügen Sie ihn in **worldcursor. cs** ein, und **Speichern Sie alle**
 
 ```cs
 using UnityEngine;
@@ -204,7 +204,7 @@ In diesem Kapitel wird die Unterstützung für [Gesten](../../../design/gaze-and
 
 * Steuern Sie Ihre Hologramme mit der SELECT-Geste.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 Wir beginnen mit dem Erstellen eines Skripts, als die SELECT-Geste erkennen zu können.
 
@@ -316,12 +316,12 @@ In diesem Kapitel fügen wir die Unterstützung für zwei [Sprachbefehle](../../
 * Fügen Sie Sprachbefehle hinzu, die immer im Hintergrund lauschen.
 * Erstellen Sie ein – Hologramm, das auf einen Voice-Befehl reagiert.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Erstellen Sie **im Ordner Skripts ein** Skript mit dem Namen " **Redner-Manager**".
 * Ziehen Sie das **sprach-Manager** -Skript auf das **origamicollection** -Objekt in der Hierarchie.
 * Öffnen Sie das **sprach-Manager** -Skript in Visual Studio.
-* Kopieren Sie diesen Code, und fügen Sie ihn in **SpeechManager.cs** ein. **Speichern Sie alle**
+* Kopieren Sie diesen Code **, und fügen** Sie ihn in das **sprach-Manager. cs ein.**
 
 ```cs
 using System.Collections.Generic;
@@ -438,7 +438,7 @@ In diesem Kapitel werden wir der App Musik hinzufügen und dann bei bestimmten A
 
 * Hören Sie holograms in ihrer Welt.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Wählen Sie in Unity im oberen Menü **> Projekteinstellungen > Audiodatei** aus.
 * Suchen Sie die Einstellung **spatializer Plugin** , und wählen Sie **MS HRTF spatializer** aus.
@@ -548,7 +548,7 @@ Nun verwenden wir die [räumliche Zuordnung](../../../design/spatial-mapping.md)
 * Bringen Sie Ihre reale Welt in die virtuelle Welt.
 * Platzieren Sie Ihre Hologramme, wo Sie für Sie am wichtigsten sind.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Klicken Sie im Projekt Panel auf den Ordner **holograms** .
 * Ziehen Sie das Objekt für die **räumliche Zuordnung** in den Stamm der **Hierarchie**.

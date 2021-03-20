@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 306: Streamen von Video'
+title: Hololens (1st Gen) und Azure 306-Streaming-Video
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Azure Media Services in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Media Services, Streaming-Video, 360, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583449"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730567"
 ---
-# <a name="mr-and-azure-306-streaming-video"></a>MR und Azure 306: Streamen von Video
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>Hololens (1. Gen) und Azure 306: Streaming-Video
 
 <br>
 
@@ -207,7 +207,7 @@ Zum Verwenden von Azure Media Service müssen Sie eine Instanz des Dienstanbiete
 
         ![Das Azure-Portal](images/AzureLabs-Lab6-16.png)
 
-16. Klicken Sie auf die Schaltfläche **Erstellen** .
+16. Klicken Sie auf die Schaltfläche **Erstellen**.
 
 17. Sie werden feststellen, dass ein Balken mit dem **hinzugefügten Codierungs Auftrag hinzugefügt** wurde. Klicken Sie auf diese Leiste, und ein Panel mit dem darin angezeigten Codierungs Fortschritt
 
@@ -285,7 +285,7 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
 
     ![Das Azure-Portal](images/AzureLabs-Lab6-30.png)
 
-4.  Navigieren Sie als nächstes zu **_dateibuildeinstellungen_** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Navigieren Sie als nächstes zu ***dateibuildeinstellungen*** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
 
 5.  Stellen Sie außerdem Folgendes sicher:
 
@@ -367,7 +367,7 @@ Gewusst wie: Importieren von **vstu**:
 
 4.  Wählen Sie in der **Hierarchie** das **Hauptkamera** Objekt aus, und aktualisieren Sie die folgenden Komponenten:
 
-    1.  **Transformieren**
+    1.  **Transform**
 
         1.  Position = **X**: 0, **Y**: 0, **Z**: 0.
 
@@ -629,7 +629,7 @@ So erstellen Sie diese Klasse:
 
 2.  Klicken Sie mit der rechten Maustaste in das **Projekt** Panel **Create* * C \# Script * *. Benennen Sie das **Skript mit** dem Namen.
 
-3.  Doppelklicken Sie auf das neue "Gaze"- ***Skript, um es mit _* Visual Studio 2017 zu öffnen.**
+3.  Doppelklicken Sie auf das neue Skript "***Blick** _", um es mit _ *Visual Studio 2017* zu öffnen.*
 
 4.  Stellen Sie sicher, dass sich der folgende Namespace oben im Skript befindet, und entfernen Sie alle anderen:
 
@@ -881,10 +881,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azur
 
 ## <a name="bonus-exercises"></a>Bonus Übungen
 
-**Übung 1**
+**Übung 1**
 
 Es ist durchaus möglich, nur eine einzige Szene zu verwenden, um Videos in diesem Tutorial zu ändern. Experimentieren Sie mit Ihrer Anwendung, und machen Sie Sie in einer einzigen Szene. Fügen Sie der Mischung vielleicht sogar ein weiteres Video hinzu.
 
-**Übung 2**
+**Übung 2**
 
 Experimentieren Sie mit Azure und Unity, und versuchen Sie, die Fähigkeit der APP zu implementieren, automatisch ein Video mit einer anderen Dateigröße auszuwählen, abhängig von der Stärke einer Internet Verbindung.

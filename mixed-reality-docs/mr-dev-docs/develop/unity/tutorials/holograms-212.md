@@ -1,19 +1,19 @@
 ---
-title: 'MR Input 212: Sprache'
+title: Hololens (1. Gen) Eingabe 212-Stimme
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details der sprach Konzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Voice, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583687"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730447"
 ---
-# <a name="mr-input-212-voice"></a>MR-Eingabe 212: Sprache
+# <a name="hololens-1st-gen-input-212-voice"></a>Hololens (1. Gen) Eingabe 212: Spracheingabe
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -76,10 +76,10 @@ In diesem Kurs überprüfen wir den Modell-Explorer, den wir in der [Eingabe 210
 
 ## <a name="unity-setup"></a>Unity-Setup
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Starten Sie Unity.
-2. Wählen Sie **Open**(Öffnen).
+2. Klicken Sie auf **Öffnen**.
 3. Navigieren Sie zum Ordner **holographicacademy-holograms-212-Voice** , den Sie zuvor nicht archiviert haben.
 4. Suchen und wählen Sie den **Start** / **Modell-Explorer** -Ordner aus.
 5. Klicken Sie auf die Schaltfläche **Ordner auswählen** .
@@ -152,14 +152,14 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
     6. Remove (Entfernen)
 * Verwenden Sie ähnliche Sounds. Versuchen Sie, die Verwendung von Sprachbefehlen zu vermeiden, die sich in der Wenn Sie über eine Einkaufs Anwendung verfügen, in der *"Store anzeigen"* und *"mehr anzeigen"* als Sprachbefehle unterstützt werden, sollten Sie einen der Befehle deaktivieren, während der andere verwendet wurde. Beispielsweise können Sie die Schaltfläche *"Store anzeigen"* verwenden, um den Store zu öffnen, und dann diesen Befehl deaktivieren, wenn der Speicher angezeigt wird, sodass der Befehl *"Weitere anzeigen"* zum Durchsuchen verwendet werden kann.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Verwenden Sie im Bereich **Hierarchie** von Unity das Suchtool, um das **holoComm_screen_mesh** Objekt zu suchen.
 * Doppelklicken Sie auf das **holoComm_screen_mesh** Objekt, um es in der **Szene** anzuzeigen. Dies ist die Überwachung des Astronauten, die auf unsere Sprachbefehle antwortet.
 * Suchen Sie im **Inspektor** -Panel die Komponente **Spracheingabe Quelle (Skript)** .
 * Erweitern Sie den Abschnitt **Schlüsselwörter** , um den unterstützten Sprachbefehl anzuzeigen: **Open Communicator**.
 * Klicken Sie rechts auf das Zahnrad Symbol, und wählen Sie **Skript bearbeiten** aus.
-* Erkunden Sie **SpeechInputSource.cs** , um zu verstehen, wie das **keywordrecognizer** zum Hinzufügen von Sprachbefehlen verwendet wird.
+* Untersuchen Sie die Datei " **speechinputsource. cs** ", um zu verstehen, wie Sie mit **keywordrecognizer** Sprachbefehle hinzufügen kann.
 
 ### <a name="build-and-deploy"></a>Erstellen und Bereitstellen
 
@@ -192,7 +192,7 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
 >2. Klicken Sie auf die Registerkarte "universelle Windows-Plattform".
 >3. Aktivieren Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die **Mikrofon** Funktion.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Überprüfen Sie im Bereich **Hierarchie** der Unity, ob das **holoComm_screen_mesh** Objekt ausgewählt ist.
 * Suchen Sie im **Inspektor** -Panel nach der Komponente " **Astronauten Überwachung (Skript)** ".
@@ -203,9 +203,9 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
 * Beachten Sie, dass das **Communicator** -Objekt über eine **Spracheingabe Handler-Komponente (Skript)** für die Antwort auf den Befehl " **Nachricht senden** " verfügt.
 * Sehen Sie sich die **Communicator (Script)** -Komponente an, und doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
 
-Communicator.cs ist dafür verantwortlich, die richtigen Schaltflächen Zustände auf dem Communicator-Gerät festzulegen. Dies ermöglicht es unseren Benutzern, eine Nachricht aufzuzeichnen, wieder abzuspielen und die Nachricht an den Astronauten zu senden. Außerdem wird ein animiertes Wellen Formular gestartet und angehalten, um dem Benutzer zu bestätigen, dass seine Stimme gehört.
+Communicator. cs ist dafür verantwortlich, die richtigen Schaltflächen Zustände auf dem Communicator-Gerät festzulegen. Dies ermöglicht es unseren Benutzern, eine Nachricht aufzuzeichnen, wieder abzuspielen und die Nachricht an den Astronauten zu senden. Außerdem wird ein animiertes Wellen Formular gestartet und angehalten, um dem Benutzer zu bestätigen, dass seine Stimme gehört.
 
-* Löschen Sie in **Communicator.cs** die folgenden Zeilen (81 und 82) aus der **Start** -Methode. Dadurch wird die Schaltfläche "Record" auf dem Communicator aktiviert.
+* Löschen Sie in **Communicator. cs** die folgenden Zeilen (81 und 82) aus der **Start** -Methode. Dadurch wird die Schaltfläche "Record" auf dem Communicator aktiviert.
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -248,9 +248,9 @@ In diesem Kapitel verwenden wir die Diktat Erkennung, um eine Nachricht für den
 >2. Klicken Sie auf die Registerkarte "universelle Windows-Plattform".
 >3. Aktivieren Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die **Mikrofon** Funktion.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
-Wir werden **MicrophoneManager.cs** bearbeiten, um die Diktat Erkennung zu verwenden. Dies fügen wir hinzu:
+Wir bearbeiten " **mikrophonemanager. cs** ", um die Diktat Erkennung zu verwenden. Dies fügen wir hinzu:
 
 1. Wenn die **Schaltfläche "Datensatz** " gedrückt ist, **starten wir das "diktationerkenzer**".
 2. Zeigen Sie die **Hypothese** an, was der diktationerkenzer verstanden hat.
@@ -259,7 +259,7 @@ Wir werden **MicrophoneManager.cs** bearbeiten, um die Diktat Erkennung zu verwe
 5. Wenn die **Schaltfläche "beenden** " gedrückt wird oder bei der MIC-Sitzung ein Timeout auftritt, **Beenden Sie das "diktationerkenzer**".
 6. Starten Sie den **keywordrecognizer** neu, der auf den Befehl " **Nachricht senden** " lauscht.
 
-Fangen wir also an. Vervollständigen Sie alle Codierungs Übungen für 3. a in **MicrophoneManager.cs**, oder kopieren Sie den unten stehenden Code, und fügen Sie ihn ein:
+Lassen Sie uns loslegen! Vervollständigen Sie alle Codierungs Übungen für 3. a in " **mikrophonemanager. cs**", oder kopieren Sie den unten stehenden Code, und fügen Sie ihn ein:
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -475,7 +475,7 @@ namespace Academy
 >2. Klicken Sie auf die Registerkarte "universelle Windows-Plattform".
 >3. Aktivieren Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die **Mikrofon** Funktion.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Suchen Sie im Bereich **Hierarchie** nach **Jetpack_Center** , und wählen Sie ihn aus.
 2. Suchen Sie im **Inspektor** -Panel nach dem Skript " **Tagalong Action** ".

@@ -1,19 +1,19 @@
 ---
-title: Mr und Azure 303-Natural Language Understanding (Luis)
+title: Hololens (1. Generation) und Azure 303-Natural Language Understanding (Luis)
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Azure Language Understanding Intelligence Service (Luis) in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Language Understanding Intelligence Service, Luis, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: a91fcd2e20ce1e1731bd398fa72923f6ff5e8406
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583432"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730557"
 ---
-# <a name="mr-and-azure-303-natural-language-understanding-luis"></a>Mr und Azure 303: verstehen in natürlicher Sprache (Luis)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>Hololens (1. Gen) und Azure 303: Natural Language Understanding (Luis)
 
 <br>
 
@@ -1111,10 +1111,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azur
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Wenn Sie diese Anwendung verwenden, werden Sie möglicherweise bemerken, dass Sie bei der Betrachtung des Floor-Objekts sehen, dass die Farbe geändert wird. Können Sie herausfinden, wie Sie Ihre Anwendung daran hindern, die Bodenfarbe zu ändern?
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Erweitern Sie die Luis-und App-Funktionen, und fügen Sie zusätzliche Funktionen für Objekte in der Szene hinzu. Erstellen Sie z. b. neue Objekte auf dem Blickpunkt, je nachdem, was der Benutzer sagt, und können Sie diese Objekte mit den vorhandenen Befehlen neben den aktuellen Szenen Objekten verwenden.

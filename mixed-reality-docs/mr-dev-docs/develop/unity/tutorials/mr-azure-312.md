@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 312: Botintegration'
+title: Hololens (1st Gen) und Azure 312-bot-Integration
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie einen bot mit Microsoft bot Framework V4 erstellen und bereitstellen und in einer gemischten Reality-Anwendung mit ihm kommunizieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Maschinelles sehen, hololens, immersive, VR, Microsoft bot Framework V4, Web-App-bot, bot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 6b8b4624615a3c3f62800b396803572b0b67ad1a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582465"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730317"
 ---
-# <a name="mr-and-azure-312-bot-integration"></a>MR und Azure 312: Bot-Integration
+# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>Hololens (1. Gen) und Azure 312: bot-Integration
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es gibt eine neue Reihe von Tutorials, die in Zukunft veröffentlicht werden, um die Entwicklung für hololens 2 zu veranschaulichen.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn diese veröffentlicht werden.
@@ -1303,10 +1303,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azur
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Die Konversations Struktur in dieser Übungseinheit ist sehr einfach. Verwenden Sie Microsoft Luis, um den bot-Funktionen für natürliche Sprache zu verwenden.
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Dieses Beispiel umfasst nicht das Beenden einer Konversation und das Neustarten einer neuen Konversation. Um die bot-Funktion abzuschließen, versuchen Sie, den Abschluss der Konversation zu implementieren.

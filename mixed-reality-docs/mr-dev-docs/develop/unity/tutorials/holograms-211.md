@@ -1,19 +1,19 @@
 ---
-title: 'MR Input 211: Gesten'
+title: Hololens (1. Gen) Eingabe 211-Geste
 description: Befolgen Sie diese exemplarische Vorgehensweise für die Codierung mithilfe von Unity, Visual Studio und hololens, um die Details der Gesten Konzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Gesten, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583700"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730457"
 ---
-# <a name="mr-input-211-gesture"></a>MR-Eingabe 211: Geste
+# <a name="hololens-1st-gen-input-211-gesture"></a>Hololens (1. Gen) Eingabe 211: Geste
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -68,10 +68,10 @@ In diesem Kurs besuchen wir den Unity-Projekt **Modell-Explorer**, den wir in de
 
 ## <a name="chapter-0---unity-setup"></a>Kapitel 0: Einrichtung von Unity
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Starten Sie Unity.
-2. Wählen Sie **Open**(Öffnen).
+2. Klicken Sie auf **Öffnen**.
 3. Navigieren Sie zu dem **Gesten** Ordner, den Sie zuvor nicht archiviert haben.
 4. Suchen und wählen Sie den **Start** / **Modell-Explorer** -Ordner aus.
 5. Klicken Sie auf die Schaltfläche **Ordner auswählen** .
@@ -124,12 +124,12 @@ Bei der Bereitstellung auf einem immersiven Headset:
 >[!NOTE]
 >Bei hololens 2 werden Hände erkannt, wenn die Hände sichtbar sind (nicht nur, wenn ein Finger nach oben zeigt).
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Erweitern Sie im Bereich **Hierarchie** das **InputManager** -Objekt.
 * Suchen Sie nach dem **gesturesinput** -Objekt, und wählen Sie es aus.
 
-Das Skript **InteractionInputSource.cs** führt folgende Schritte aus:
+Das Skript **interaktioninputsource. cs** führt folgende Schritte aus:
 
 1. Abonniert das interaktionsourceerkannte-Ereignis und das interaktionsourcelost-Ereignis.
 2. Legt den handerkannten Zustand fest.
@@ -170,9 +170,9 @@ Die **Cursor Zustandsdaten** funktionieren wie folgt:
 
 * Verwenden Sie Navigations Gesten Ereignisse, um den Astronaut zu drehen.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
-Um Navigations Gesten in unserer APP zu verwenden, bearbeiten wir **GestureAction.cs** , um Objekte zu drehen, wenn die Navigations Bewegung auftritt. Außerdem wird dem Cursor Feedback hinzugefügt, das angezeigt wird, wenn die Navigation verfügbar ist.
+Um Navigations Gesten in unserer APP zu verwenden, bearbeiten wir **gestureaction. cs** , um Objekte zu drehen, wenn die Navigations Bewegung auftritt. Außerdem wird dem Cursor Feedback hinzugefügt, das angezeigt wird, wenn die Navigation verfügbar ist.
 
 1. Erweitern Sie im Bereich **Hierarchie** den Eintrag **Cursor-Feedback**.
 2. Suchen Sie im Ordner **holograms** das **scrollfeedback** -Medienobjekt.
@@ -185,7 +185,7 @@ Um Navigations Gesten in unserer APP zu verwenden, bearbeiten wir **GestureActio
 9. Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
 10. Geben Sie im Menü die Aktion in der **Aktion** Suchfeld ein. Wählen Sie das Suchergebnis aus.
 
-Öffnen Sie als nächstes **GestureAction.cs** in Visual Studio. Bearbeiten Sie in der Codierungs Übung 2. c das Skript, um Folgendes durchzuführen:
+Öffnen Sie als nächstes " **gestureaction. cs** " in Visual Studio. Bearbeiten Sie in der Codierungs Übung 2. c das Skript, um Folgendes durchzuführen:
 
 1. **Drehen Sie das Astroman** -Objekt immer dann, wenn eine Navigations Geste ausgeführt wird.
 2. Berechnen Sie den " **rotationfactor** ", um die auf das Objekt angewendete Drehung zu steuern.
@@ -314,7 +314,7 @@ Sie werden feststellen, dass die anderen Navigations Ereignisse bereits mit eini
 * Verwenden Sie die **Hand Leit Faden Bewertung** , um vorherzusagen, wann die Hand Verfolgung verloren geht.
 * Geben Sie **Feedback zu dem Cursor** an, der angezeigt wird, wenn die Hand des Benutzers den Rand der Ansicht der Kamera anzeigt.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 1. Wählen Sie im Bereich **Hierarchie** das **Cursor** -Objekt aus.
 2. Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
@@ -339,14 +339,14 @@ Sie werden feststellen, dass die anderen Navigations Ereignisse bereits mit eini
 * Verwenden Sie Manipulations Ereignisse, um den Astronaut mit ihren Händen zu verschieben.
 * Geben Sie Feedback für den Cursor an, damit der Benutzer weiß, wann die Bearbeitung verwendet werden kann.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
-Mit GestureManager.cs und AstronautManager.cs können wir folgende Aktionen ausführen:
+Mit "gesturemanager. cs" und "astronautmanager. cs" können wir folgende Aktionen ausführen:
 
 1. Verwenden Sie das Speech-Schlüsselwort "**Move Astronaut**", um **Manipulations** Gesten zu aktivieren und "**Astronaut**" zu deaktivieren, um Sie zu deaktivieren.
 2. Wechseln Sie zur Reaktion auf die **Erkennungs Gestenerkennung**.
 
-Fangen wir also an.
+Lassen Sie uns loslegen!
 
 1. Erstellen Sie im **Hierarchie** Panel ein neues leeres gameobject-Objekt. Nennen Sie es "**astronautmanager**".
 2. Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
@@ -361,7 +361,7 @@ Nun fügen wir die Sprachbefehle hinzu, die erforderlich sind, um den Interaktio
 3. Geben Sie das Schlüsselwort als **Move Astronaut** ein. Wenn gewünscht, können Sie eine Tastenkombination hinzufügen.
 4. Klicken Sie **+** auf der rechten Seite, um ein neues Schlüsselwort hinzuzufügen.
 5. Geben Sie das Schlüsselwort zum **Drehen des Astronauten** ein. Wenn gewünscht, können Sie eine Tastenkombination hinzufügen.
-6. Der entsprechende Handlercode finden Sie in **GestureAction.cs** im **iredner Handler. onredner keywordrecognized** -Handler.
+6. Der entsprechende Handlercode befindet sich in **gestureaction. cs** im **iredner Handler. onredner keywordrecognized** -Handler.
 
 ![Einrichten der Spracheingabe Quelle für Kapitel 4](images/holograms211-speech.png)
 
@@ -372,13 +372,13 @@ Als nächstes richten wir das Manipulations Feedback für den Cursor ein.
 3. Klicken Sie im **Hierarchie** Panel auf " **Cursor**".
 4. Ziehen Sie das **pathingfeedback** -Objekt per Drag & amp; Drop aus der- **Hierarchie** auf die Eigenschaft für die Eigenschaft "" **für das** **festgelegte Spiel** im **Inspektor**.
 
-Nun müssen Sie **GestureAction.cs** Code hinzufügen, um Folgendes zu ermöglichen:
+Nun müssen Sie " **gestureaction. cs** " Code hinzufügen, um Folgendes zu ermöglichen:
 
 1. Fügen Sie der **imanipulationhandler. onmanipulationaktualisierte** -Funktion Code hinzu, mit dem der Astronaut verschoben wird, wenn eine **Manipulations** Bewegung erkannt wird.
 2. Berechnen Sie den **Bewegungsvektor** , um zu bestimmen, an welcher Stelle der Astronaut auf der Grundlage der Handposition verschoben werden soll.
 3. **Verschieben** Sie den Astronauten an die neue Position.
 
-Vervollständigen Sie die Codierungs Übung 4. a in **GestureAction.cs**, oder verwenden Sie unten unsere abgeschlossene Lösung:
+Vervollständigen Sie die Codierungs Übung 4. a in **gestureaction. cs**, oder verwenden Sie unten unsere abgeschlossene Lösung:
 
 ```cs
 using HoloToolkit.Unity.InputModule;
@@ -506,7 +506,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * Erweitern Sie das Modell "Astronaut" in mehrere kleinere Teile, mit denen der Benutzer interagieren kann.
 * Verschieben Sie jedes Stück einzeln mithilfe von Navigations-und Bearbeitungs Gesten.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 In diesem Abschnitt werden die folgenden Aufgaben ausgeführt:
 

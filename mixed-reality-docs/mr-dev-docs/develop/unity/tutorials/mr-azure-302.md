@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 302: Maschinelles Sehen'
+title: Hololens (1. Gen) und Azure 302-Maschinelles Sehen
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie visuelle Inhalte in einem bereitgestellten Image mithilfe von Azure Maschinelles sehen in einer Mixed Reality-Anwendung erkennen.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Maschinelles sehen, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 2ba5f01b0b14c655f8639f74590a511629350fbb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 119d83ec9fef97b4e4017b2226a9593404847a71
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583288"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730537"
 ---
-# <a name="mr-and-azure-302-computer-vision"></a>MR und Azure 302: Maschinelles Sehen
+# <a name="hololens-1st-gen-and-azure-302-computer-vision"></a>Hololens (1. Gen) und Azure 302: Maschinelles Sehen
 
 <br>
 
@@ -737,10 +737,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die die Azur
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Ebenso wie Sie den Parameter " *Tags* " (wie in dem *Endpunkt* , der innerhalb von " *visionmanager*" verwendet wird) verwendet haben, erweitern Sie die APP, um weitere Informationen zu erkennen. Werfen Sie einen Blick auf die anderen Parameter, auf die Sie [hier](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa)zugreifen können.
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Zeigen Sie die zurückgegebenen Azure-Daten in einer besser lesbaren und lesbaren Weise an, und verbergen Sie die Zahlen vielleicht. So, als ob ein bot für den Benutzer sprechen könnte.

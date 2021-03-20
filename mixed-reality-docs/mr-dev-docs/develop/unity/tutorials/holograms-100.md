@@ -1,19 +1,19 @@
 ---
-title: 'MR Basics 100: Erste Schritte mit Unity'
+title: Hololens (1. Gen) Grundlagen 100-erste Schritte mit Unity
 description: Erfahren Sie, wie Sie Ihre erste grundlegende gemischte "Hello World"-Anwendung für hololens und Windows Mixed Reality-Geräte erstellen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Windows Mixed Reality, hololens, immersive, VR, Mr, Get Started, Hologram, Academy, Tutorial, Mixed Reality Academy, Unity, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583736"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730357"
 ---
-# <a name="mr-basics-100-getting-started-with-unity"></a>MR-Grundlagen 100: Erste Schritte mit Unity
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Hololens (1. Gen) Grundlagen 100: Erste Schritte mit Unity
 
 >[!IMPORTANT]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
@@ -143,7 +143,7 @@ Das Erstellen eines Cubes in Ihrem Unity-Projekt erfolgt genauso wie das Erstell
 
 Nachdem wir nun den Cube erstellt haben, ist es an der Zeit, eine schnell Überprüfung im Gerät durchzuführen. Sie können dies direkt im Unity-Editor tun.
 
-### <a name="initial-setup"></a>Ersteinrichtung
+### <a name="initial-setup"></a>Erste Einrichtung
 
 1. Öffnen Sie auf dem Entwicklungs-PC in Unity das Fenster **Datei > Fenster Build-Einstellungen** .
 2. Ändern Sie **Platform** in **universelle Windows-Plattform** und klicken Sie auf **Plattform wechseln** .

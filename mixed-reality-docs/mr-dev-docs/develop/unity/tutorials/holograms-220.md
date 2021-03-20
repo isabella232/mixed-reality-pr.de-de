@@ -1,19 +1,19 @@
 ---
-title: 'MR Spatial 220: Raumklang'
+title: Hololens (1. Gen) Spatial 220-Spatial Sound
 description: Befolgen Sie diese Codierungs Exemplarische Vorgehensweise mit Unity, Visual Studio und hololens, um die Details der räumlichen audiokonzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumlicher Sound, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582761"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730307"
 ---
-# <a name="mr-spatial-220-spatial-sound"></a>MR räumlich 220: Raumklang
+# <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>Hololens (1. Gen) räumlich 220: räumlicher Sound
 
 >[!NOTE]
 >Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
@@ -67,10 +67,10 @@ ms.locfileid: "98582761"
 * Ändern Sie die Sound Konfiguration von Unity, sodass Sie Microsoft Spatial Sound verwendet.
 * Hinzufügen eines 3D-Sounds zu einem Objekt in Unity.
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>Anweisungen
 
 * Starten Sie Unity.
-* Wählen Sie **Open**(Öffnen).
+* Klicken Sie auf **Öffnen**.
 * Navigieren Sie zu Ihrem Desktop, und suchen Sie den Ordner, den Sie zuvor nicht archiviert haben.
 * Klicken Sie auf den Ordner **starting\decibel** , und klicken Sie dann auf die Schaltfläche **Ordner auswählen** .
 * Warten Sie, bis das Projekt in Unity geladen wurde.
@@ -134,7 +134,7 @@ Bei der Bereitstellung auf einem immersiven Headset:
 
 Der richtige Speicherort für den Sound hängt von dem Hologram ab. Wenn das – Hologramm z. b. von einem Menschen ist, sollte sich die Audioquelle nahe dem Mund und nicht der Fußzeile befinden.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>Anweisungen
 
 Die folgenden Anweisungen fügen einen räumlichen Sound an ein Hologramm an.
 
@@ -159,7 +159,7 @@ Durch das Festlegen von Doppler-Level auf NULL werden die Änderungen in der dur
 
 Ein Beispiel für die gewonnenen Erwartungen ist, dass die Vögel in der Regel über den Köpfen der Menschen sind. Wenn ein Benutzer ein vogelton hört, besteht die anfängliche Reaktion darin, nach oben zu suchen. Das Platzieren eines Vogels unterhalb des Benutzers kann dazu führen, dass er mit der richtigen Richtung des Sounds zurechtkommt, aber das – Hologramm nicht finden kann, je nachdem, dass er gesucht werden muss.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>Anweisungen
 
 Mithilfe der folgenden Anweisungen können Sie P0LY hinter Ihnen verbergen, damit Sie den Sound verwenden können, um das Hologram zu suchen.
 
@@ -178,7 +178,7 @@ Mithilfe der folgenden Anweisungen können Sie P0LY hinter Ihnen verbergen, dami
 * Bewegen Sie die Benutzer übermäßig lauter Sounds nicht auf die gleiche Weise
 * Feine Sounds funktionieren am besten
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>Anweisungen
 
 * Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection**.
 * Erweitern Sie **energyhub** , und wählen Sie **Basis** aus.
@@ -228,7 +228,7 @@ Hinweis: Es gibt einen Textbereich, der mit Ihnen versehen wird. Diese werden di
 
 Beispielsweise sollte das Festlegen eines Cup für eine Tabelle einen ruhigeren Sound als das Löschen eines Boulders auf einem Metal-Gerät machen.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>Anweisungen
 
 * Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection**.
 * Erweitern Sie **energyhub**, und wählen Sie **Basis** aus.
@@ -251,7 +251,7 @@ Beispielsweise sollte das Festlegen eines Cup für eine Tabelle einen ruhigeren 
 
 Ein klassisches Beispiel ist eine Concert Hall. Wenn ein Listener außerhalb der Halle steht und die Tür geschlossen ist, hört sich die Musik mit gedämpften Tönen an. Es gibt in der Regel auch eine Reduzierung des Volumes. Wenn die Tür geöffnet ist, wird das gesamte Spektrum des Sounds auf dem eigentlichen Volume gehört. Sounds mit hoher Frequenz werden im Allgemeinen mehr als niedrige Frequenzen erfasst.
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>Anweisungen
 
 * Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection** , und wählen Sie **P0LY** aus.
 * Klicken Sie im **Inspektor** -Panel auf **Komponente hinzufügen** , und fügen Sie **audioemitter** hinzu.
@@ -435,7 +435,7 @@ In Unity können Sie eine Audiodatei für das Streaming in den Import Einstellun
 * Das Erstellen von Ansichten in eine verborgene Welt ist visuell attraktiv.
 * Verbessern Sie die Realismus durch Hinzufügen von Audioeffekten, wenn ein – Hologramm oder der Benutzer sich in der Nähe der verborgenen Welt befindet
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>Anweisungen
 
 * Erweitern Sie im Bereich **Hierarchie** den Knoten **hologrammcollection** , und wählen Sie dann **Underworld** aus.
 * Erweitern Sie **Underworld** , und wählen Sie **voicesource** aus.

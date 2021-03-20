@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 304: Gesichtserkennung'
+title: Hololens (1. Gen) und Azure 304-Gesichtserkennung
 description: In diesem Kurs erfahren Sie, wie Sie die Azure-Gesichtserkennung in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Gesichtserkennung, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 6cdb8b7af9988bbfbc6670d0ef79f00487db7f3c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6266cb206a0686745bcd7a92f64d78436c71a228
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583373"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730507"
 ---
-# <a name="mr-and-azure-304-face-recognition"></a>MR und Azure 304: Gesichtserkennung
+# <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>Hololens (1. Gen) und Azure 304: Gesichtserkennung
 
 <br>
 
@@ -860,10 +860,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azur
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Der **Azure-Gesichtserkennungs-API** ist leistungsfähig genug, um bis zu 64 Gesichter in einem einzelnen Image zu erkennen. Erweitern Sie die Anwendung so, dass Sie unter vielen anderen Personen zwei oder drei Gesichter erkennen kann.
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Der **Azure-Gesichtserkennungs-API** kann auch alle Arten von Attributinformationen zurückgeben. Integrieren Sie diese in die Anwendung. Dies könnte noch interessanter sein, wenn Sie mit dem [Emotionen-API](https://azure.microsoft.com/services/cognitive-services/emotion/)kombiniert werden.

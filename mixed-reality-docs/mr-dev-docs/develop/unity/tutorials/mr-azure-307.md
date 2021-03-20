@@ -1,19 +1,19 @@
 ---
-title: Mr und Azure 307-Machine Learning
+title: Hololens (1. Gen) und Azure 307-Machine Learning
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Azure Machine Learning Studio (klassisch) in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Machine Learning, ml, Machine Learning Studio, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c9d6408d41340b1c0fcb1f41b61d84ba115258c3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583392"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730517"
 ---
-# <a name="mr-and-azure-307-machine-learning"></a>MR und Azure 307: Maschinelles Lernen
+# <a name="hololens-1st-gen-and-azure-307-machine-learning"></a>Hololens (1. Gen) und Azure 307: Machine Learning
 
 <br>
 
@@ -242,7 +242,7 @@ So beginnen Sie mit dem Erstellen eines Experiments:
 
     ![Die Machine Learning Studio (klassisch): das Experiment](images/AzureLabs-Lab7-20.png)
 
-8.  In der **_unteren linken_ Ecke *_ des _*-Daten** Elements "Split" ziehen Sie eine Verbindung in der **oberen rechten** Ecke des " **Train Model** "-Elements. Die erste 70%-Aufteilung aus dem DataSet wird vom Train-Modell zum Trainieren des Algorithmus verwendet.
+8.  Ziehen Sie in der ***unteren linken** _ des Elements _ *Split Data** eine Verbindung mit der **rechten oberen** Ecke des Moduls **Train Model** . Die erste 70%-Aufteilung aus dem DataSet wird vom Train-Modell zum Trainieren des Algorithmus verwendet.
 
     ![Die Machine Learning Studio (klassisch): das Experiment](images/AzureLabs-Lab7-21.png)
 
@@ -338,11 +338,11 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
 2.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu  >  **Einstellungen** bearbeiten, und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
 
-3.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >   , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **_Switch Platform_* _ klicken.
+3.  Navigieren Sie als nächstes zu **dateibuildeinstellungen**  >   , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **_Plattform wechseln_** klicken.
 
 4.  Stellen Sie außerdem Folgendes sicher:
 
-    1.  _ *Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
+    1.  Das **Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
 
         > Legen Sie für Microsoft hololens das **Zielgerät** auf *hololens* fest.
 
@@ -368,9 +368,9 @@ Richten Sie Ihr immersives Headset mit gemischter Realität ein und testen Sie e
 
         1.  Die **Skript** **Lauf Zeit Version** sollte **experimentell** sein (.NET 4,6-Entsprechung).
 
-        2. Skripts für die **Skript** Erstellung sollten **_.net_* _
+        2. **Skript** -Back-End sollte **_.net_ sein**
 
-        3. _ *API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
+        3. **API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
 
             ![Einrichten des Unity-Projekts](images/AzureLabs-Lab7-36.png)
 
@@ -880,10 +880,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die die Azur
 
 ## <a name="exercise"></a>Übung
 
-**Übung 1**
+**Übung 1**
 
 Experimentieren Sie mit der Sortierreihenfolge Ihrer Anwendung, und lassen Sie die drei untersten Vorhersagen im Regal anzeigen, da diese Daten möglicherweise auch nützlich sind.
 
-**Übung 2**
+**Übung 2**
 
 Die Verwendung von **Azure-Tabellen** füllt eine neue Tabelle mit Wetterinformationen auf und erstellt mithilfe der Daten ein neues Experiment.

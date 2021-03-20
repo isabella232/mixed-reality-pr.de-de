@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 305: Funktionen und Speicher'
+title: Hololens (1. Gen) und Azure 305-Funktionen und Speicher
 description: Arbeiten Sie diesen Kurs durch, um zu erfahren, wie Sie Azure Storage und Funktionen innerhalb einer gemischten Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Funktionen, Speicher, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 5c9784446923b3eae7a600b8e672574ce6465038
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b55acaf003a1cdf50a5a78e48fdf05a9ab07d0d6
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583426"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730547"
 ---
-# <a name="mr-and-azure-305-functions-and-storage"></a>MR und Azure 305: Funktionen und Speicher
+# <a name="hololens-1st-gen-and-azure-305-functions-and-storage"></a>Hololens (1. Gen) und Azure 305: Funktionen und Speicher
 
 <br>
 
@@ -180,7 +180,7 @@ So erstellen Sie eine Azure-Funktion:
 
         ![Details der Eingabefunktionen-App](images/AzureLabs-Lab5-10.png)
 
-4.  Klicken Sie auf die Schaltfläche **Erstellen** .
+4.  Klicken Sie auf die Schaltfläche **Erstellen**.
 
 5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. dieser Vorgang kann einige Minuten in Anspruch nehmen.
 
@@ -225,7 +225,7 @@ So erstellen Sie eine Azure-Funktion:
         }
     ```
 
-13. Wählen Sie **Speichern** aus.
+13. Klicken Sie auf **Speichern**.
 
 14. Das Ergebnis sollte wie in der folgenden Abbildung aussehen.
 
@@ -1237,10 +1237,10 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die sowohl d
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Erstellen Sie einen zweiten Erstellungs Punkt, und notieren Sie den-Punkt, aus dem ein Objekt erstellt wurde. Wenn Sie die Datendatei laden, stellen Sie die Formen wieder her, die aus dem Speicherort der ursprünglichen Erstellung erstellt werden.
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Erstellen Sie eine Möglichkeit, die APP neu zu starten, anstatt Sie jedes Mal erneut öffnen zu müssen. Das **Laden von Szenen** ist ein guter Ausgangspunkt. Erstellen Sie anschließend eine Möglichkeit, die gespeicherte Liste in *Azure Storage* zu löschen, damit Sie problemlos von der APP zurückgesetzt werden kann.

@@ -1,19 +1,19 @@
 ---
-title: 'MR und Azure 302b: Benutzerdefiniertes Sehen'
+title: Hololens (1. Gen) und Azure 302b-benutzerdefinierte Vision
 description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie ein Machine Learning-Modell trainieren, und verwenden Sie dann das trainierte Modell, um ähnliche Objekte in einer gemischten Realität zu erkennen.
 author: drneil
 ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Custom Vision, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: cba2df5841911df6d60a7060a70f835975a21f62
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 97fd0ae72401b67a83752cb2cf6799fa2b1ccc0c
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583404"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730527"
 ---
-# <a name="mr-and-azure-302b-custom-vision"></a>MR und Azure 302b: Custom Vision
+# <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>Hololens (1. Gen) und Azure 302b: benutzerdefinierte Vision
 
 <br>
 
@@ -1750,11 +1750,11 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die die Azur
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
-### <a name="exercise-1"></a>Übung 1
+### <a name="exercise-1"></a>Übung 1
 
 Trainieren Sie Ihre **Custom Vision Service** , um weitere Objekte zu erkennen.
 
-### <a name="exercise-2"></a>Übung 2
+### <a name="exercise-2"></a>Übung 2
 
 Um zu erfahren, was Sie gelernt haben, führen Sie die folgenden Übungen aus:
 
