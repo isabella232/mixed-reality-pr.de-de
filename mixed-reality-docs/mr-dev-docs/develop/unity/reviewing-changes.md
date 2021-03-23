@@ -8,53 +8,53 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
 ms.openlocfilehash: db7ae079e19c7739f57f0b9e4a375a3e6f9a3cdd
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102230768"
 ---
-# <a name="authorizing-project-changes"></a><span data-ttu-id="8758d-104">Autorisieren von Projektänderungen</span><span class="sxs-lookup"><span data-stu-id="8758d-104">Authorizing project changes</span></span>
+# <a name="authorizing-project-changes"></a><span data-ttu-id="eab4b-104">Autorisieren von Projektänderungen</span><span class="sxs-lookup"><span data-stu-id="eab4b-104">Authorizing project changes</span></span>
 
-<span data-ttu-id="8758d-105">Bevor Sie das Unity-Projekt ändern, müssen die Änderungen an den Manifest- und Projektdateien überprüft und genehmigt werden:</span><span class="sxs-lookup"><span data-stu-id="8758d-105">Before modifying the Unity project, changes to the manifest and project files need to be reviewed and approved:</span></span>
+<span data-ttu-id="eab4b-105">Bevor Sie das Unity-Projekt ändern, müssen die Änderungen an den Manifest- und Projektdateien überprüft und genehmigt werden:</span><span class="sxs-lookup"><span data-stu-id="eab4b-105">Before modifying the Unity project, changes to the manifest and project files need to be reviewed and approved:</span></span>
 
 ![Anfordern von Autorisierung](images/FeatureToolApprovalRequest.png)
 
-## <a name="manifest"></a><span data-ttu-id="8758d-107">Manifest</span><span class="sxs-lookup"><span data-stu-id="8758d-107">Manifest</span></span>
+## <a name="manifest"></a><span data-ttu-id="eab4b-107">Manifest</span><span class="sxs-lookup"><span data-stu-id="eab4b-107">Manifest</span></span>
 
-<span data-ttu-id="8758d-108">Die vorgeschlagenen Manifeständerungen können in der Spalte **Manifest** auf der linken Seite angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="8758d-108">The proposed manifest changes can be viewed in the **Manifest** column on the left.</span></span> <span data-ttu-id="8758d-109">Der Inhalt ist genau das, was in das Projektmanifest geschrieben wird (**Packages/manifest.json**):</span><span class="sxs-lookup"><span data-stu-id="8758d-109">The contents are exactly what will be written to the project manifest (**Packages/manifest.json**):</span></span>
+<span data-ttu-id="eab4b-108">Die vorgeschlagenen Manifeständerungen können in der Spalte **Manifest** auf der linken Seite angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="eab4b-108">The proposed manifest changes can be viewed in the **Manifest** column on the left.</span></span> <span data-ttu-id="eab4b-109">Der Inhalt ist genau das, was in das Projektmanifest geschrieben wird (**Packages/manifest.json**):</span><span class="sxs-lookup"><span data-stu-id="eab4b-109">The contents are exactly what will be written to the project manifest (**Packages/manifest.json**):</span></span>
 
 ![Manifestvorschau](images/ManifestPreview.png)
 
-## <a name="files-to-be-copied-into-the-project"></a><span data-ttu-id="8758d-111">Dateien, die in das Projekt kopiert werden sollen</span><span class="sxs-lookup"><span data-stu-id="8758d-111">Files to be copied into the project</span></span>
+## <a name="files-to-be-copied-into-the-project"></a><span data-ttu-id="eab4b-111">Dateien, die in das Projekt kopiert werden sollen</span><span class="sxs-lookup"><span data-stu-id="eab4b-111">Files to be copied into the project</span></span>
 
-<span data-ttu-id="8758d-112">Im Abschnitt **Files to be copied into the project** (Dateien, die in das Projekt kopiert werden sollen) auf der rechten Seite listet die spezifischen Featurepaketdateien auf, die in das Unity-Projekt kopiert werden sollen:</span><span class="sxs-lookup"><span data-stu-id="8758d-112">The **Files to be copied into the project** section on the right lists the specific feature package files that will be copied into the Unity project:</span></span>
+<span data-ttu-id="eab4b-112">Im Abschnitt **Files to be copied into the project** (Dateien, die in das Projekt kopiert werden sollen) auf der rechten Seite listet die spezifischen Featurepaketdateien auf, die in das Unity-Projekt kopiert werden sollen:</span><span class="sxs-lookup"><span data-stu-id="eab4b-112">The **Files to be copied into the project** section on the right lists the specific feature package files that will be copied into the Unity project:</span></span>
 
 ![Manifestvorschau mit Dateien, die kopiert werden sollen](images/FilesToCopy.png)
 
-## <a name="compare-manifests"></a><span data-ttu-id="8758d-114">Vergleichen von Manifesten</span><span class="sxs-lookup"><span data-stu-id="8758d-114">Compare manifests</span></span>
+## <a name="compare-manifests"></a><span data-ttu-id="eab4b-114">Vergleichen von Manifesten</span><span class="sxs-lookup"><span data-stu-id="eab4b-114">Compare manifests</span></span>
 
-<span data-ttu-id="8758d-115">Sie können einen detaillierten Vergleich aller vorgeschlagenen Änderungen anzeigen, indem Sie **Compare** (Vergleichen) auswählen:</span><span class="sxs-lookup"><span data-stu-id="8758d-115">You can see a detailed side-by-side comparison of all proposed changes by selecting **Compare**:</span></span>
+<span data-ttu-id="eab4b-115">Sie können einen detaillierten Vergleich aller vorgeschlagenen Änderungen anzeigen, indem Sie **Compare** (Vergleichen) auswählen:</span><span class="sxs-lookup"><span data-stu-id="eab4b-115">You can see a detailed side-by-side comparison of all proposed changes by selecting **Compare**:</span></span>
 
 ![Vergleichen von Manifesten](images/FeatureToolCompareManifest.png)
 
-## <a name="approving-changes"></a><span data-ttu-id="8758d-117">Genehmigen von Änderungen</span><span class="sxs-lookup"><span data-stu-id="8758d-117">Approving changes</span></span>
+## <a name="approving-changes"></a><span data-ttu-id="eab4b-117">Genehmigen von Änderungen</span><span class="sxs-lookup"><span data-stu-id="eab4b-117">Approving changes</span></span>
 
-<span data-ttu-id="8758d-118">Wenn die vorgeschlagenen Änderungen genehmigt werden, werden die aufgelisteten Dateien in das Unity-Projekt kopiert, und das Manifest wird mit Verweisen auf diese Dateien aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="8758d-118">When the proposed changes are approved, the listed files will be copied into the Unity project and the manifest will be updated with references to these files.</span></span>
+<span data-ttu-id="eab4b-118">Wenn die vorgeschlagenen Änderungen genehmigt werden, werden die aufgelisteten Dateien in das Unity-Projekt kopiert, und das Manifest wird mit Verweisen auf diese Dateien aktualisiert.</span><span class="sxs-lookup"><span data-stu-id="eab4b-118">When the proposed changes are approved, the listed files will be copied into the Unity project and the manifest will be updated with references to these files.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8758d-119">Die Featurepaketdateien (TGZ) sollten der Quellcodeverwaltung hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="8758d-119">The feature package (\*.tgz) files should be added to source control.</span></span> <span data-ttu-id="8758d-120">Auf sie wird mithilfe eines relativen Pfads verwiesen, um Entwicklungsteams das einfache Teilen von Features und Manifeständerungen zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="8758d-120">They are referenced using a relative path to enable development teams to easily share features and manifest changes.</span></span>
+> <span data-ttu-id="eab4b-119">Die Featurepaketdateien (TGZ) sollten der Quellcodeverwaltung hinzugefügt werden.</span><span class="sxs-lookup"><span data-stu-id="eab4b-119">The feature package (\*.tgz) files should be added to source control.</span></span> <span data-ttu-id="eab4b-120">Auf sie wird mithilfe eines relativen Pfads verwiesen, um Entwicklungsteams das einfache Teilen von Features und Manifeständerungen zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="eab4b-120">They are referenced using a relative path to enable development teams to easily share features and manifest changes.</span></span>
 
- <span data-ttu-id="8758d-121">Im Rahmen der Änderungen wird die aktuelle **manifest.json**-Datei gesichert.</span><span class="sxs-lookup"><span data-stu-id="8758d-121">As part of the modifications, the current **manifest.json** file will be backed up.</span></span>
+ <span data-ttu-id="eab4b-121">Im Rahmen der Änderungen wird die aktuelle **manifest.json**-Datei gesichert.</span><span class="sxs-lookup"><span data-stu-id="eab4b-121">As part of the modifications, the current **manifest.json** file will be backed up.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="8758d-122">Wenn Sie Manifestsicherungen anzeigen, trägt die älteste Sicherung den Namen **manifest.json.backup**.</span><span class="sxs-lookup"><span data-stu-id="8758d-122">When viewing the manifest backups, the oldest will be called **manifest.json.backup**.</span></span> <span data-ttu-id="8758d-123">Neuere Sicherungen werden mit einem Zahlenwert ergänzt, beginnend bei (0).</span><span class="sxs-lookup"><span data-stu-id="8758d-123">Newer backups will be annotated with a numeric value, beginning with zero (0).</span></span>
+> <span data-ttu-id="eab4b-122">Wenn Sie Manifestsicherungen anzeigen, trägt die älteste Sicherung den Namen **manifest.json.backup**.</span><span class="sxs-lookup"><span data-stu-id="eab4b-122">When viewing the manifest backups, the oldest will be called **manifest.json.backup**.</span></span> <span data-ttu-id="eab4b-123">Neuere Sicherungen werden mit einem Zahlenwert ergänzt, beginnend bei (0).</span><span class="sxs-lookup"><span data-stu-id="eab4b-123">Newer backups will be annotated with a numeric value, beginning with zero (0).</span></span>
 
-## <a name="going-back-to-the-previous-step"></a><span data-ttu-id="8758d-124">Zurückwechseln zum vorherigen Schritt</span><span class="sxs-lookup"><span data-stu-id="8758d-124">Going back to the previous step</span></span>
+## <a name="going-back-to-the-previous-step"></a><span data-ttu-id="eab4b-124">Zurückwechseln zum vorherigen Schritt</span><span class="sxs-lookup"><span data-stu-id="eab4b-124">Going back to the previous step</span></span>
 
-<span data-ttu-id="8758d-125">Wenn Sie Änderungen an Ihrer Featureauswahl vornehmen müssen, verwenden Sie **Go Back** (Zurück), um zum Schritt [import](importing-features.md) zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="8758d-125">If you need to make changes to your feature selections, use **Go Back** to return to the [import](importing-features.md) step.</span></span>
+<span data-ttu-id="eab4b-125">Wenn Sie Änderungen an Ihrer Featureauswahl vornehmen müssen, verwenden Sie **Go Back** (Zurück), um zum Schritt [import](importing-features.md) zurückzukehren.</span><span class="sxs-lookup"><span data-stu-id="eab4b-125">If you need to make changes to your feature selections, use **Go Back** to return to the [import](importing-features.md) step.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="8758d-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8758d-126">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="eab4b-126">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="eab4b-126">See also</span></span>
 
-- [<span data-ttu-id="8758d-127">Willkommen beim Mixed Reality-Featuretool</span><span class="sxs-lookup"><span data-stu-id="8758d-127">Welcome to the Mixed Reality Feature Tool</span></span>](welcome-to-mr-feature-tool.md)
-- [<span data-ttu-id="8758d-128">Importieren ausgewählter Pakete</span><span class="sxs-lookup"><span data-stu-id="8758d-128">Importing selected packages</span></span>](importing-features.md)
+- [<span data-ttu-id="eab4b-127">Willkommen beim Mixed Reality-Featuretool</span><span class="sxs-lookup"><span data-stu-id="eab4b-127">Welcome to the Mixed Reality Feature Tool</span></span>](welcome-to-mr-feature-tool.md)
+- [<span data-ttu-id="eab4b-128">Importieren ausgewählter Pakete</span><span class="sxs-lookup"><span data-stu-id="eab4b-128">Importing selected packages</span></span>](importing-features.md)
