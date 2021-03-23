@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Home, Custom Environment, Places, Cliff House, SkyLoft, User, CREATE, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583300"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881217"
 ---
 # <a name="design-your-own-immersive-environments"></a>Entwerfen eigener immersiver Umgebungen
 
@@ -82,7 +82,7 @@ Windows Mixed Reality basiert auf binärem gltf (. GLB) als Übermittlungs Forma
 
 Der erste Schritt beim Exportieren von Assets, die als benutzerdefinierte Heimumgebung verwendet werden sollen, ist das Erstellen eines gltf 2,0-Modells. Die Arbeitsgruppe "gltf" verwaltet eine [Liste der unterstützten Export-und Konverter](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) , um ein gltf 2,0-Modell zu erstellen. Verwenden Sie zum Einstieg eines der auf dieser Seite aufgeführten Programme, um ein gltf 2,0-Modell zu erstellen und zu exportieren, oder konvertieren Sie ein vorhandenes Modell mit einem der unterstützten Konverter.
 
-Informieren Sie sich darüber hinaus [dieser hilfreiche Artikel enthält einen Überblick über einen Kunst Workflow zum direkten Exportieren von gltf-Modellen aus Blender und 3ds max. 
+<!-- Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly.  -->
 
 ### <a name="environment-limits"></a>Umgebungs Limits
 

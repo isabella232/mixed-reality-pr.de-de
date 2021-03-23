@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126613"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730487"
 ---
 # <a name="unity-development-for-hololens"></a>Unity-Entwicklung für HoloLens
 
@@ -27,7 +27,7 @@ Den schnellsten Weg zum Entwickeln einer HoloLens-[Mixed Reality-App](../../desi
 
 Nutzen Sie die folgenden Prüfpunkte, um Ihre Unity-Spiele und Anwendungen in eine Mixed Reality-Welt einzubringen. Wenn Sie sich noch nicht mit der [Beispielanwendung zum Entwerfen von Hologrammen](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) befasst haben, empfehlen wir Ihnen, sie herunterzuladen und zu verwenden, um sich mit den Grundlagen von Mixed Reality UX vertraut zu machen.
 
-### <a name="1-getting-started"></a>1. Erste Schritte
+## <a name="1-getting-started"></a>1. Erste Schritte
 
 Die einfachste Möglichkeit zum Entwickeln in Unity stellt das Mixed Reality Toolkit dar. MRTK hilft Ihnen, ein Projekt für Mixed Reality automatisch einzurichten und bietet eine Reihe von Funktionen zur Beschleunigung Ihres Entwicklungsprozesses. Am Ende dieses Abschnitts haben Sie ein grundlegendes Verständnis des Mixed Reality Toolkits, besitzen eine ordnungsgemäß konfigurierte Entwicklungsumgebung für Mixed Reality-Apps und verfügen über ein funktionierendes MRTK-Projekt in Unity, das Sie selbst erstellt haben.
 
@@ -44,13 +44,13 @@ Die einfachste Möglichkeit zum Entwickeln in Unity stellt das Mixed Reality Too
 > [!NOTE]
 > Nachdem Sie MRTK V2 in Ihrem Projekt eingerichtet haben, erscheinen umgehend standardmäßige Unity-Spieleobjekte wie die Kamera für ein sitzendes Aktivitätserlebnis. Anweisungen zum Ändern des Erlebnismaßstabs für Ihre Anwendung finden Sie auf der Seite zu [Koordinatensystemen](coordinate-systems-in-unity.md).
 
-### <a name="2-core-building-blocks"></a>2. Grundbausteine
+## <a name="2-core-building-blocks"></a>2. Grundbausteine
 
 Alle Hauptbausteine für Mixed Reality-Anwendungen werden in einer Weise verfügbar gemacht, die mit anderen Unity-APIs konsistent ist. Diese Bausteine stehen als eigenständige Features und über das Mixed Reality Toolkit zur Verfügung. Sie benötigen sie möglicherweise nicht alle auf einmal, aber wir empfehlen Ihnen, sich frühzeitig mit ihnen vertraut zu machen. Nachdem Sie sich mit den unten aufgeführten Grundbausteinen beschäftigt haben, verfügen Sie über eine mit Funktionen angefüllte Toolbox, die Sie eigenständig oder mithilfe von MRTK in ein Mixed Reality-Projekt integrieren können.
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-advanced-features"></a>3. Erweiterte Features
+## <a name="3-advanced-features"></a>3. Erweiterte Features
 
 Andere wichtige Features, die in Mixed Reality-Anwendungen eine Rolle spielen, sind über Unity-APIs ohne Zusatzpakete oder Setup verfügbar. Diese Features können Unity-Projekten mit oder ohne installiertes MRTK hinzugefügt werden. Nachdem Sie sich mit den erweiterten Funktionen beschäftigt haben, die Unity bietet, werden Sie imstande sein, tiefere, komplexe Mixed Reality-Apps zu erstellen.
 
@@ -62,7 +62,7 @@ Andere wichtige Features, die in Mixed Reality-Anwendungen eine Rolle spielen, s
 | [Verlust der Nachverfolgung](tracking-loss-in-unity.md) | Behandeln Sie Szenarien, in denen Ihr Gerät sich im Weltbereich der Anwendung nicht finden kann |
 | [Tastatureingabe](keyboard-input-in-unity.md) | Rufen Sie Eingaben von realen und Mixed Reality-Tastaturen in Ihren Apps ab |
 
-### <a name="4-deploying-to-a-device-or-emulator"></a>4. Bereitstellen auf einem Gerät oder in einem Emulator
+## <a name="4-deploying-to-a-device-or-emulator"></a>4. Bereitstellen auf einem Gerät oder in einem Emulator
 
 Sobald Sie Ihr Unity-Holografieprojekt bis zur Testreife gebracht haben, besteht der nächste Schritt im Exportieren und Erstellen einer Unity Visual Studio-Projektmappe. Mit dieser VS-Projektmappe können Sie Ihre Anwendung auf eine von drei Weisen ausführen und dazu ein reales oder ein simuliertes Gerät verwenden. Am Ende dieses Abschnitts können Sie die Anwendung auf jedem Gerät oder Emulator bereitstellen, das bzw. der Ihren Entwicklungsanforderungen entspricht.
 
@@ -70,7 +70,7 @@ Sobald Sie Ihr Unity-Holografieprojekt bis zur Testreife gebracht haben, besteht
 * [HoloLens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
 * [Simulator für immersives Headset für Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### <a name="5-adding-services"></a>5. Hinzufügen von Diensten
+## <a name="5-adding-services"></a>5. Hinzufügen von Diensten
 
 An diesem Punkt auf Ihrem Entwicklungsweg suchen Sie vielleicht nach Möglichkeiten zum Hinzufügen von Diensten oder nach Hilfe zur kommerziellen Bereitstellung. Das Integrieren von [Azure Cloud Services](../mixed-reality-cloud-services.md) und Features von Dynamics 365 kann Ihre Projekte auf eine ganz andere Stufe heben. Wir haben für Sie einige Ausgangspunkte zum Erkunden und zum Erweitern Ihrer Mixed Reality-Kenntnisse zusammengetragen.
 
