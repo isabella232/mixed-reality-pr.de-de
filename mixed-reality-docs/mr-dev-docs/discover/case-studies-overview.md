@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Windows Mixed Reality, hololens, Fallstudie, Vision, Szenarios, Fallstudien, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757648"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895157"
 ---
 # <a name="case-study-gallery"></a>Katalog der Fallstudien
 
@@ -19,23 +19,28 @@ Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden h
 
 :::row:::
     :::column:::
-       [ ![ 3 holostudio UI and Interaktionsdesign Erkenntnisse](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 holostudio UI and Interaktionen Design Erkenntnisse](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        Holostudio war eine der ersten Apps für hololens. Aus diesem Grund mussten wir neue bewährte Methoden für die 3D-Benutzeroberfläche und den Interaktions Entwurf erstellen. Wir haben dies durch Benutzer Tests, Prototypen und Test-und Fehler Tests durchgeführt.<br>
-        *Juli 2016*
+       Ford [ ![ GT40 erleben](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) von **[Ford GT40](../develop/unreal/unreal-ford-gt40.md)**<br>
+        Diese Fallstudie ermöglicht es Ihnen, mit dem legendären Race-AR zu beginnen, das Ferrari in den 1966 24 Stunden von Le Mans Race schlägt, da der Ford GT40 in der Tabelle vor ihnen leben kann.<br>
+        *Februar 2021*
+    :::column-end:::
+    :::column:::
+       [ ![ Geräte übergreifende Skalierung von DataSet mit unterschiedlichen Leistungsmetriken](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) für **[Geräte mit unterschiedlicher Leistung](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        Diese Fallstudie bietet Einblicke in die Art und Weise, wie Microsoft-Entwickler die datascape-App optimiert haben, um eine überzeugende Geräte übergreifende Darstellung mit einer Reihe von Leistungs Funktionen zu bieten<br>
+        *August 2017*
     :::column-end:::
     :::column:::
        [ ![ Erstellen von holosketch, eine APP für das räumliche Layout und eine UX-App für hololens Erstellen von](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[holosketch, ein räumliches Layout und eine UX-skizzieren-App für hololens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         Holosketch ist ein auf dem Gerät räumliches Layout und UX-skeshottool für hololens, das Sie bei der Erstellung von Holographic-Erfahrungen unterstützt.<br>
          *Juli 2017*
     :::column-end:::
-    :::column:::
-       [ ![ Erstellen eines immersiven Erlebnisses in Fragmenten](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[Erstellen einer immersiven Darstellung in Fragmenten](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Fragmente sind ein interaktives Kriminalitäts Drama für Microsoft hololens, bei dem Sie die Hinweise zum Lösen eines Geheimnisses befolgen, das in Ihrem realen Raum stattfindet.<br>
-        *August 2016*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+       [ ![ Verwenden der Stabilisierungs Ebene zum Verringern von Holographic-Turbulenzen](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[mithilfe der Stabilisierungs Ebene, um holografische Turbulenzen zu verringern](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+        Das Arbeiten mit holograms kann schwierig sein. Die Tatsache, dass Sie Ihren Raum verschieben und die Hologramme aus allen verschiedenen Winkeln anzeigen können, bietet eine Ebene des einfügebens, die Sie nicht mit einem normalen Computerbildschirm erreichen können.<br>
+        *April 2017*
+    :::column-end:::
     :::column:::
        [ ![ Erweitern der räumlichen Mapping-Funktionen von hololens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[Erweitern der räumlichen Mapping-Funktionen von hololens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         Beim Erstellen unserer ersten Apps für Microsoft hololens waren wir gespannt darauf zu sehen, wie weit wir die Grenzen der räumlichen Zuordnung auf dem Gerät Übertragung konnten.<br>
@@ -46,20 +51,18 @@ Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden h
         Das hololens-Team möchte einige bewährte Methoden gemeinsam nutzen, die aus dem hololens-Projekt von Lowe abgeleitet wurden.<br>
         *September 2016*
     :::column-end:::
-    :::column:::
-       [ ![ Verwenden der Stabilisierungs Ebene zum Verringern von Holographic-Turbulenzen](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[mithilfe der Stabilisierungs Ebene, um holografische Turbulenzen zu verringern](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        Das Arbeiten mit holograms kann schwierig sein. Die Tatsache, dass Sie Ihren Raum verschieben und die Hologramme aus allen verschiedenen Winkeln anzeigen können, bietet eine Ebene des einfügebens, die Sie nicht mit einem normalen Computerbildschirm erreichen können.<br>
-        *April 2017*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Geräte übergreifende Skalierung von DataSet mit unterschiedlichen Leistungsmetriken](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) für **[Geräte mit unterschiedlicher Leistung](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        Diese Fallstudie bietet Einblicke in die Art und Weise, wie Microsoft-Entwickler die datascape-App optimiert haben, um eine überzeugende Geräte übergreifende Darstellung mit einer Reihe von Leistungs Funktionen zu bieten<br>
-        *August 2017*
+       [ ![ Erstellen eines immersiven Erlebnisses in Fragmenten](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[Erstellen einer immersiven Darstellung in Fragmenten](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        Fragmente sind ein interaktives Kriminalitäts Drama für Microsoft hololens, bei dem Sie die Hinweise zum Lösen eines Geheimnisses befolgen, das in Ihrem realen Raum stattfindet.<br>
+        *August 2016*
     :::column-end:::
     :::column:::
+       [ ![ 3 holostudio UI and Interaktionsdesign Erkenntnisse](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 holostudio UI and Interaktionen Design Erkenntnisse](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        Holostudio war eine der ersten Apps für hololens. Aus diesem Grund mussten wir neue bewährte Methoden für die 3D-Benutzeroberfläche und den Interaktions Entwurf erstellen. Wir haben dies durch Benutzer Tests, Prototypen und Test-und Fehler Tests durchgeführt.<br>
+        *Juli 2016*
     :::column-end:::
     :::column:::
     :::column-end:::

@@ -8,14 +8,18 @@ ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, bereitstellen auf Geräten, PCs, Dokumentationen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d610907123898471e92598da134e9c4d77a195e9
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: ca577bdc5bc30aebf80c9888345eb0e2d5c3ce6d
+ms.sourcegitcommit: cc9d90b046a9fce792058fea25ae13a9186e43e7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104909092"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008925"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>Die Darstellung der "Ford GT40"-Funktion
+
+*"Pre-mrtk, Entwicklung für hololens 2 mithilfe von Unreal war etwas mühsam, da alle räumlichen Interaktionen in C++ per handcodiert werden mussten. Der mrtk für Unreal machte viele dieser Aufgaben trivial. Ich würde schätzen, dass die benötigte Zeit für den anfänglichen Prototyp in der Hälfte verkürzt wird. "* -Jose Rodriguez, Software Entwickler
+
+*"Der Ford GT40-Vorgang ist ein Beleg dafür, dass eine hochwertige hololens 2-app in nur wenigen Monaten mit einem gering fügenden Budget abgeschlossen werden kann, aber trotzdem äußerst wirkungsvolle Ergebnisse liefert."*  -Daniel Cheetham, Chief Innovation Officer, glückliche Fertigstellung
 
 Mit dem Mixed Reality Toolkit (mrtk) für Unreal war die glückliche Fertigstellung des Creative Production-Unternehmens eine "hololens 2"-Umgebung, die eine neue Perspektive für den Ford GT40 bietet, das legendäre Rennfahrzeug, das Ferrari zu den 24 Stunden von Le Mans schlug
 
@@ -120,14 +124,6 @@ Laut Cheetham hat die globale Pandemie ein riesiges neues Interesse an der immer
 > [Herunterladen der Ford GT40-App](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 Weitere Informationen finden Sie in der [Einführung in die Entwicklung mit gemischter Realität auf hololens 2](../development.md) oder [mrtk für Unreal](https://github.com/microsoft/MixedRealityToolkit-Unreal) auf GitHub.
-
-## <a name="what-people-are-saying"></a>Was Benutzer sagen
-
-*"Pre-mrtk, Entwicklung für hololens 2 mithilfe von Unreal war etwas mühsam, da alle räumlichen Interaktionen in C++ per handcodiert werden mussten. Der mrtk für Unreal machte viele dieser Aufgaben trivial. Ich würde schätzen, dass die benötigte Zeit für den anfänglichen Prototyp in der Hälfte verkürzt wird. "*
-- Jose Rodriguez, Software Entwickler
-
-*"Der Ford GT40-Vorgang ist ein Beleg dafür, dass eine hochwertige hololens 2-app in nur wenigen Monaten mit einem gering fügenden Budget abgeschlossen werden kann, aber trotzdem äußerst wirkungsvolle Ergebnisse liefert."*  
-- Daniel Cheetham, Chief Innovation Officer, glückliche Fertigstellung
 
 <!-- ## About the team
 
