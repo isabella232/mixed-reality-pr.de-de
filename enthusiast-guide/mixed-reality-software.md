@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Software Components, releaseverlauf, Versions Hinweise, Versionsverlauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea65dd2c6c821189b1248bf3b418e38fdd7a6d7f
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581649"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105029388"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Mixed Reality: Übersicht zur Software und Versionsverlauf
 
@@ -105,6 +105,7 @@ Dieser Treiber wird automatisch über Windows Update heruntergeladen und install
 
    | Version          | Veröffentlichungsdatum          | Wichtige Änderungen                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23. März 2021  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Aktualisieren Sie die Sortierreihenfolge des ausgeblendeten Bereichs Netzes für den HP-Reverb-G2, damit es mit anderen Headsets konsistent ist</li><li>Verbesserungen der visuellen Qualität der HP-Hall-G2-Headsets.</li><li>Windows Mixed Reality-Headset-Plattform und Zuverlässigkeitsverbesserungen.</li>|
    | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10. Dezember 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Neue Controller Firmware für den HP-Controller, um ein Problem zu beheben, bei dem einige Controller nicht funktionsfähige Trigger aufweisen.</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8. Oktober 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Offizielle Unterstützung für den HP-Reverb G2, HP omnicept und den neuen HP-Controller.</li><li>Kleinere Anzeige Korrekturen für HP Reverb und Samsung Odyssee + Headsets. (Erfordert den [OS-Build 19041,546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) oder höher oder [Betriebssystem-Builds 18362,1110 und 18363,1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) oder höher).</li><li>Verbesserungen an der Umstellung des Computer Energie Zustands aus dem Standbymodus, um Fehler beim Austauschen von 1-4 WS</li><li>Windows Mixed Reality-Headset-Plattform kleinere Korrekturen und Zuverlässigkeitsverbesserungen.|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7\. Mai 2020      | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Windows Mixed Reality-Headset-Plattform kleinere Korrekturen und Zuverlässigkeitsverbesserungen.</li></ul>  |
@@ -175,7 +176,7 @@ In Windows 10, Version 1809 und höher, wird das [Mixed Reality-Portal](https://
    | 2000.19101.1211.0  | 11. November 2019     | <ul><li>Behandelt ein Problem, das das Umschalten von visuellen Raum Begrenzungs Elementen verhindert.</li><li>Behandelt ein Problem, das verhindert, dass Sie ein Headset beim Einrichten der Raum Begrenzung überschreiben.</li></ul>  | 
    | 2000.19081.1301.0  | 23. September 2019    | <ul><li>Es wird ein Problem behoben, bei dem bei Geräten mit Hardwareproblemen eine falsche Fehlermeldung angezeigt wurde. Benutzer, die in früheren Versionen einen 1-4-Fehlercode erhalten haben, erhalten nun möglicherweise einen spezifischeren Fehlercode für den Gerätezustand.</li></ul>  |
    | 2000.19071.1302.0  | 13. August 2019     | <ul><li>Unterstützung für Anwendungen mit [openxr](/windows/mixed-reality/openxr) auf Geräten mit dem Update von Mai 2019.</li></ul>  | 
-   | 2000.19061.1011.0  | 16. Juli 2019         | <ul><li>Unterstützung für JSON-Konfigurationsoptionen zum Anpassen des App-Verhaltens. Weitere Informationen finden Sie unter https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup .</li></ul>  | 
+   | 2000.19061.1011.0  | 16. Juli 2019         | <ul><li>Unterstützung für JSON-Konfigurationsoptionen zum Anpassen des App-Verhaltens. Weitere Informationen finden Sie unter https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup .</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>Verlauf der steamvr-Version ###
 
