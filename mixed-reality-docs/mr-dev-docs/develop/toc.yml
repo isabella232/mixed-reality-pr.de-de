@@ -348,6 +348,8 @@
       items:
         - name: Kippys Flucht
           href: unreal/unreal-kippys-escape.md
+        - name: Ford GT40-Erlebnis
+          href: unreal/unreal-ford-gt40.md
     - name: Bereitstellung und Veröffentlichung
       items:
         - name: Auf Gerät bereitstellen
@@ -357,11 +359,19 @@
 - name: JavaScript
   items:
     - name: JavaScript-Entwicklung – Übersicht
-      href: web/javascript-development-overview.md
+      href: javascript/javascript-development-overview.md
     - name: WebXR
-      href: web/webxr-overview.md
-    - name: WebVR
-      href: web/webvr-overview.md
+      href: javascript/webxr-overview.md
+    - name: Tutorials
+      items:
+        - name: „Hallo Welt“ mithilfe von BabylonJS
+          items:
+            - name: 1. Einführung
+              href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
+            - name: 2. Vorbereiten einer Szene mit einem einfachen 3D-Objekt
+              href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
+            - name: 3. Interagieren mit einem 3D-Objekt
+              href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: Systemeigenes Format
   items:
     - name: 'Native Entwicklung: Übersicht'
