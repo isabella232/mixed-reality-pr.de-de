@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Sprachbefehle, Spracheingabe
 ms.localizationpriority: high
-ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590392"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237213"
 ---
 # <a name="9-using-speech-commands"></a>9. Verwenden von Sprachbefehlen
 
@@ -49,8 +49,8 @@ Klicken Sie im Abschnitt „Speech > **Speech Commands**“ (Sprache > Sprachbef
 
 * Enable Indicator (Indikator aktivieren)
 * Enable Tap to Place (Zum Platzieren tippen aktivieren)
-* Enable Bounding Box (Begrenzungsrahmen aktivieren)
-* Disable Bounding Box (Begrenzungsrahmen deaktivieren)
+* Aktivieren des Begrenzungssteuerelements
+* Deaktivieren des Begrenzungssteuerelements
 
 ![Hinzufügen neuer Sprachbefehle](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -88,10 +88,10 @@ Klappen Sie **Element 0** auf, und konfigurieren Sie es wie folgt:
 
 Klappen Sie **Element 1** auf, und konfigurieren Sie es wie folgt:
 
-* Geben Sie im Feld **Keyword** (Schlüsselwort) **Enable Bounding Box** (Begrenzungsrahmen aktivieren) ein, um auf den Sprachbefehl „Enable Bounding Box“ (Begrenzungsrahmen aktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
+* Geben Sie im Feld **Keyword** (Schlüsselwort) **Enable Bounds Control**  (Begrenzungssteuerelement aktivieren) ein, um auf den Sprachbefehl „Enable Bounds Control“ (Begrenzungssteuerelement aktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
 * Klicken Sie auf das kleine **+** -Symbol, um ein Ereignis hinzuzufügen
 * Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
-* Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundingBox** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
+* Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundsControl** > **bool enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Aktivieren Sie das Argumentkontrollkästchen, so dass es **aktiviert** ist
 * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
 * Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
@@ -102,10 +102,10 @@ Klappen Sie **Element 1** auf, und konfigurieren Sie es wie folgt:
 
 Klappen Sie **Element 2** auf, und konfigurieren Sie es wie folgt:
 
-* Geben Sie im Feld **Keyword** (Schlüsselwort) **Disable Bounding Box** (Begrenzungsrahmen deaktivieren) ein, um auf den Sprachbefehl „Disable Bounding Box“ (Begrenzungsrahmen deaktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
+* Geben Sie im Feld **Keyword** (Schlüsselwort) **Disable Bounds Control**  (Begrenzungssteuerelement deaktivieren) ein, um auf den Sprachbefehl „Disable Bounds Control“ (Begrenzungssteuerelement deaktivieren) zu verweisen, den Sie im vorherigen Abschnitt erstellt haben
 * Klicken Sie auf das kleine **+** -Symbol, um ein Ereignis hinzuzufügen
 * Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu
-* Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundingBox** > **bool Enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
+* Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **BoundsControl** > **bool enabled** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
 * Vergewissern Sie sich, dass das Argumentkontrollkästchen **deaktiviert** ist
 * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
 * Weisen Sie im Hierarchiefenster das **RoverExplorer**-Objekt dem Feld **None (Object)** (Ohne (Objekt)) zu

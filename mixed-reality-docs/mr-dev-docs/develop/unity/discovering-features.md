@@ -1,18 +1,18 @@
 ---
 title: Ermitteln und Erwerben von Features
-description: Kennenlernen und Herunterladen von Mixed Reality-Features.
+description: Ermitteln und Herunterladen von Mixed Reality-Features.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: 4da6b6fdfc0205d4fa7fb5bf4ae9e48993d7c1e6
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99243933"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102230715"
 ---
 # <a name="discovering-and-acquiring-features"></a>Ermitteln und Erwerben von Features
 
@@ -51,8 +51,7 @@ Die Features werden in der entsprechenden Kategorie aufgelistet. Die Featureeint
 
 ## <a name="refresh-the-feature-catalog"></a>Aktualisieren des Featurekatalogs
 
-Zur Suche nach neuen und aktualisierten Features klicken Sie auf die Schaltfläche zum Aktualisieren ![Schaltfläche „Aktualisieren“](images/RefreshButton.png) Schaltfläche. Dadurch wird eine Verbindung mit der Katalogwebsite hergestellt, und die neuesten Informationen werden abgerufen.
-* Nachdem der Katalog gelesen wurde, werden das Datum und die Uhrzeit des letzten Updates angezeigt.
+Zur Suche nach neuen und aktualisierten Features klicken Sie auf die Schaltfläche zum Aktualisieren ![Schaltfläche „Aktualisieren“](images/RefreshButton.png) Schaltfläche. Dadurch wird eine Verbindung mit der Katalogwebsite hergestellt, und die neuesten Informationen werden abgerufen. Nachdem der Katalog gelesen wurde, werden das Datum und die Uhrzeit des letzten Updates angezeigt.
 
 ## <a name="select-features"></a>Auswählen von Features
 
@@ -73,7 +72,7 @@ Nachdem dem Abschluss des Downloads wechselt das Mixed Reality-Featuretool zum S
 
 ## <a name="going-back-to-the-previous-step"></a>Zurückwechseln zum vorherigen Schritt
 
-Von **Discover features** (Features ermitteln) erlaubt Ihnen das Mixed Reality-Featuretool die Navigation zurück zum Anfang. Wählen Sie **Go back** (Zurück) aus, um erneut zu beginnen.
+Von **Discover features** (Features ermitteln) erlaubt Ihnen das Mixed Reality-Featuretool die Navigation zurück zur Projektauswahl. Wählen Sie **Go back** (Zurück) aus, um erneut zu beginnen.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635441"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237151"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Interaktives Gestalten der Szene
 
@@ -69,7 +69,7 @@ Das **Ereignisdiagramm** sollte wie im folgenden Screenshot aussehen:
 
 ![Erzeugen von UXT-Handinteraktionsakteuren](images/unreal-uxt/4-spawnactor.PNG)
 
-Beide UXT-Handinteraktionsakteure benötigen Besitzer und Ausgangspositionen für die Transformation. Die Ausgangstransformation spielt in diesem Fall keine Rolle, da bei den UX-Tools die Handinteraktionsakteure zu den virtuellen Händen springen, sobald Sie sichtbar sind. Die Funktion `SpawnActor` erfordert jedoch eine Transformationseingabe, um einen Compilerfehler zu vermeiden. Verwenden Sie daher die Standardwerte.
+Beide UXT-Handinteraktionsakteure benötigen Besitzer und Ausgangspositionen für die Transformation. Die Ausgangstransformation spielt in diesem Fall keine Rolle, da bei den UX-Tools die Handinteraktionsakteure zu den virtuellen Händen springen, sobald sie sichtbar sind. Die Funktion `SpawnActor` erfordert jedoch eine Transformationseingabe, um einen Compilerfehler zu vermeiden. Verwenden Sie daher die Standardwerte.
 
 1. Ziehen Sie den Pin aus einer den Pins **Spawn Transform** (Transformation generieren), und lassen Sie ihn los, um einen neuen Knoten zu platzieren.
     * Suchen Sie nach dem Knoten **Make Transform** (Transformation erstellen), und ziehen Sie dann den **Return Value** (Rückgabewert) auf **Spawn Transform** der anderen Hand, sodass beide **SpawnActor**-Knoten verbunden sind.

@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: 65b45d448854f8903ed37466ebaa3c427dea3089
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582944"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237141"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Unity-Entwicklung für VR und Windows Mixed Reality
 
@@ -74,7 +74,7 @@ Wenn Sie über vorhandene Apps verfügen, die Sie portieren möchten, sind die u
 Bevor Sie sich auf eigene Faust in die Welt der Mixed Reality aufmachen, sollten Sie sich die unten aufgeführte zusätzliche Dokumentation ansehen. 
 
 * [VR-Handbuch für Enthusiasten](/windows/mixed-reality/enthusiast-guide/vr-journey)
-* [Unity Asset Store](https://www.assetstore.unity3d.com)
+* [Unity Asset Store](https://assetstore.unity.com)
 
 ## <a name="see-also"></a>Weitere Informationen 
 

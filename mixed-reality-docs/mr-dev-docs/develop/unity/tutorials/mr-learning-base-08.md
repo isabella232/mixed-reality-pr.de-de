@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590372"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "102237173"
 ---
 # <a name="8-using-eye-tracking"></a>8. Verwenden von Eye Tracking
 
@@ -61,35 +61,34 @@ Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus, und nav
 
 ## <a name="adding-eye-tracking-to-objects"></a>Hinzufügen von Eye Tracking zu Objekten
 
-Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **Buttons**“ (RoverExplorer > Schaltflächen) auf, klappen Sie dann für jedes der drei untergeordneten Schaltflächenobjekte das Objekt „SeeItSayItLabel > **TextMeshPro**“ auf, und wählen Sie es aus:
+Erweitern Sie im Hierarchie Fenster **RoverExplorer** > **Buttons**, und wählen Sie dann alle drei untergeordneten Schaltflächenobjekte aus:
 
-![Unity mit ausgewähltem TextMeshPro-Objekt](images/mr-learning-base/base-08-section4-step1-1.png)
+![Unity mit ausgewähltem Button-Objekt](images/mr-learning-base/base-08-section4-step1-1.png)
 
-Verwenden Sie, während die drei TextMeshPro-Objekte noch ausgewählt sind, im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um allen ausgewählten Objekten die folgenden Komponenten hinzuzufügen:
-
-* **Box Collider**-Komponente
-* **EyeTrackingTarget**-Komponente
+Während die drei Button-Objekte noch ausgewählt sind, verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um allen ausgewählten Objekten die **EyeTrackingTarget**-Komponente hinzuzufügen:
 
 ![Unity mit ausgewähltem TextMeshPro-Objekt und hinzugefügten Komponenten](images/mr-learning-base/base-08-section4-step1-2.png)
 
-Wählen Sie im Hierarchiefenster das Objekt **Hints** > SeeItSayItLabel > **TextMeshPro** (Hinweise > SeeItSayItLabel > TextMeshPro) aus, und konfigurieren Sie dann die **EyeTrackingTarget**-Komponente wie folgt:
+Klappen Sie im Hierarchiefenster **RoverExplorer** > **Buttons** > **Hints** > **SeeItSayItLabel** > **TextMeshPro** auf
+
+Wählen Sie anschließend im Hierarchiefenster das Schaltflächenobjekt **Hints** (Hinweise) aus, und konfigurieren Sie die **EyeTrackingTarget**-Komponente wie folgt:
 
 * Im Ereignisabschnitt **On Look At Start ()**
   * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
-  * Weisen Sie das Objekt selbst, d. h. das gleiche **TextMeshPro**-Objekt, dem Feld **None (Object)** (Ohne (Objekt)) zu
+  * Weisen Sie das **TextMeshPro**-Objekt von der Schaltfläche **Hints** (Hinweise) dem Feld **None (Object)** (Ohne (Objekt)) zu
   * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **TextMeshPro** > **float fontSize** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
   * Legen Sie das Argument auf **0,06** fest, um den aktuellen Schriftgrad von 0,04 um 50 % zu erhöhen
 * Im Ereignisabschnitt **On Look Away ()**
   * Klicken Sie auf das kleine **+** -Symbol, um ein weiteres Ereignis hinzuzufügen
-  * Weisen Sie das Objekt selbst, d. h. das gleiche **TextMeshPro**-Objekt, dem Feld **None (Object)** (Ohne (Objekt)) zu
+  * Weisen Sie das **TextMeshPro**-Objekt von der Schaltfläche **Hints** (Hinweise) dem Feld **None (Object)** (Ohne (Objekt)) zu
   * Wählen Sie in der Dropdownliste **No Function** (Ohne Funktion) **TextMeshPro** > **float fontSize** aus, um diesen Eigenschaftswert zu aktualisieren, wenn das Ereignis ausgelöst wird
   * Legen Sie das Argument auf **0,04** fest, um den Schriftgrad wieder auf 0,04 zurückzusetzen
 
 ![Unity mit ausgewähltem Hints TextMeshPro-Objekt und konfigurierter EyeTrackingTarget-Komponente](images/mr-learning-base/base-08-section4-step1-3.png)
 
-**Wiederholen** Sie diesen Schritt für das Objekt **Explode** > SeeItSayItLabel > **TextMeshPro** (Explodieren > SeeItSayItLabel > TextMeshPro) und das Objekt **Reset** > SeeItSayItLabel > **TextMeshPro** (Zurücksetzen > SeeItSayItLabel > TextMeshPro).
+**Wiederholen** Sie diesen Schritt für die Schaltflächenobjekte **Explode** (Explodieren) und **Reset** (Zurücksetzen), um Eyetracking für die verbleibenden Schaltflächen zu konfigurieren.
 
-Wenn Sie jetzt in den Spielmodus wechseln, dann die rechte Maustaste drücken und sie gedrückt halten, während Sie die Maus bewegen, bis der Blick auf eine der Bezeichnungen trifft, sehen Sie dass sich der Schriftgrad um 50 % vergrößert und wieder zur normalen Größe zurückkehrt, wenn Sie den Blick abwenden:
+Wenn Sie jetzt in den Spielmodus wechseln, dann die rechte Maustaste drücken und sie gedrückt halten, während Sie die Maus bewegen, bis der Blick auf eine der Schaltflächen trifft, sehen Sie, dass sich der Schriftgrad des Texts um 50 % vergrößert und wieder zur normalen Größe zurückkehrt, wenn Sie den Blick abwenden:
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit Anvisier-Zugriff per Eye Tracking auf Ziel und Schaltflächenbezeichnung „Explode“](images/mr-learning-base/base-08-section4-step1-4.png)
 
