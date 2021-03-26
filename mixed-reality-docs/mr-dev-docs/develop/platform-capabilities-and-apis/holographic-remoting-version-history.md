@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Hololens, Remoting, Holographic Remoting, Versionsverlauf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496038"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550130"
 ---
 # <a name="holographic-remoting-version-history"></a>Holographic Remoting-Versionsverlauf
 
@@ -25,7 +25,7 @@ ms.locfileid: "100496038"
   * Benutzerdefinierte Datenkanäle als Teil der XR_MSFT_holographic_remoting-Erweiterung. Ein Beispiel für, das im [openxr-Remote Beispiel](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)angezeigt wird.
 * Verbesserte Synchronisierung zwischen Player und Remote Seite. Dies ermöglicht die dynamische Änderung von Pose und Frame Pufferung, wodurch sichergestellt wird, dass der Remote gerenderte Inhalt die Anzeige mit der erwarteten zielframeworkrate reibungslos erreicht
 * Verbesserte Leistung des Holographic Remoting-Players, der über die Microsoft Store verfügbar ist. Auf hololens 2 führt der Player nun einen Solid-Wert auf 60 Frames pro Sekunde aus.
-* Optimierte Übertragung räumlicher Oberflächen Netze, die über [spatialsurfaceobserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) durch eine Remote-app abgefragt werden können.
+* Optimierte Übertragung räumlicher Oberflächen Netze, die über [spatialsurfaceobserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) durch eine Remote-app abgefragt werden können.
 * Es wurde ein Problem behoben, bei dem der Aufruf der spatialanchormanager-Methode oder der Freigabe Anker beim trennen zu Ausnahmen geführt hat
 * Das Thread Problem wurde behoben, was zu Abstürzen führte, wenn playercontext-oder remotecontext-Instanzen geschlossen werden.
 * Viele andere Fehlerbehebungen und Verbesserungen der Stabilität.

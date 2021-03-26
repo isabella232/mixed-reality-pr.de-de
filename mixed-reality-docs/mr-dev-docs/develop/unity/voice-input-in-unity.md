@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Spracheingabe, keywordrecognizer, grammarerkenzer, Mikrofon, Diktat, Voice, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
-ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99606115"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550380"
 ---
 # <a name="voice-input-in-unity"></a>Spracheingabe in Unity
 
 > [!CAUTION]
-> Bevor Sie beginnen, sollten Sie das Unity-Plug-in für das Cognitive Speech Services SDK verwenden. Das Plug-in bietet bessere Ergebnisse bei der sprach Genauigkeit und einen einfachen Zugriff auf die Sprache-zu-Text-Decodierung sowie erweiterte sprach Features wie Dialog, Intent-basierte Interaktion, Übersetzung, Text-zu-Sprache-Synthese und Spracherkennung in natürlicher Sprache. Informationen zu den ersten Schritten finden Sie im [Beispiel und](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity)in der Dokumentation.
+> Bevor Sie beginnen, sollten Sie das Unity-Plug-in für das Cognitive Speech Services SDK verwenden. Das Plug-in bietet bessere Ergebnisse bei der sprach Genauigkeit und einen einfachen Zugriff auf die Sprache-zu-Text-Decodierung sowie erweiterte sprach Features wie Dialog, Intent-basierte Interaktion, Übersetzung, Text-zu-Sprache-Synthese und Spracherkennung in natürlicher Sprache. Informationen zu den ersten Schritten finden Sie im [Beispiel und](/azure/cognitive-services/speech-service/quickstart-csharp-unity)in der Dokumentation.
 
 Unity bietet drei Möglichkeiten zum Hinzufügen von [Spracheingaben](../../design/voice-input.md) zu ihrer Unity-Anwendung, die ersten beiden Typen von phraserecognizer:
 * Der stellt der `KeywordRecognizer` App ein Array von Zeichen folgen Befehlen zur Verfügung, die überwacht werden sollen.

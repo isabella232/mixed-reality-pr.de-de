@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Gemischte Windows-Realität, gemischte Realität, Virtual Reality, VR, Mr, Leistung, Optimierung, CPU, GPU
-ms.openlocfilehash: 5012c30dce1ca4149324c916355922086a33c258
-ms.sourcegitcommit: 6725b83adf13f6573faacb27db2bcaafe80df472
+ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98615126"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550120"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Grundlegendes zur Leistung für gemischte Realität
 
@@ -19,7 +19,7 @@ Dieser Artikel ist eine Einführung in das Verständnis der Bedeutung der Leistu
 
 Die leistungsstarken Framerate-Werte für jede Zielplattform sind unten aufgeführt.
 
-| Platform (Plattform) | Zielframe Rate |
+| Plattform | Zielframe Rate |
 |----------|-------------------|
 | [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
 | [Windows Mixed Reality Ultra PCs](../../discover/immersive-headset-hardware-details.md) | 90 fps |
@@ -139,12 +139,12 @@ Die Auswirkungen nach der Verarbeitung können teuer sein und die Füllrate Ihre
 
 Objekt Pooling ist ein gängiges Verfahren, um die Kosten von kontinuierlichen Zuordnungen und Aufhebungen von Objekten zu verringern. Dies erfolgt durch Zuordnen eines großen Pools identischer Objekte und Wiederverwendung inaktiver, verfügbarer Instanzen aus diesem Pool, statt im Lauf der Zeit ständig neue Objekte zu erstellen und zu entfernen. Objektpools eignen sich hervorragend für wiederverwendbare Komponenten, die im Rahmen einer App eine variable Lebensdauer haben.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 - [Leistungsempfehlungen für Unity](../unity/performance-recommendations-for-unity.md)
 - [Empfohlene Einstellungen für Unity](../unity/recommended-settings-for-unity.md)
 - [Leistungsempfehlungen für Unreal](../unreal/performance-recommendations-for-unreal.md)
 - [Materialempfehlungen in Unreal](../unreal/unreal-materials.md)
-- [Optimieren von 3D-Modellen](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [Bewährte Methoden zum umrechnen und Optimieren von Echt Zeit 3D-Modellen](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
+- [Optimieren von 3D-Modellen](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [Bewährte Methoden zum umrechnen und Optimieren von Echt Zeit 3D-Modellen](/dynamics365/mixed-reality/import-tool/best-practices)
 - [Leistungsrichtlinien für Entwickler und Designer für Unreal](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/Guidelines/index.html)
 - [Bewährte Methoden für VR](https://docs.unrealengine.com/en-US/SharingAndReleasing/XRDevelopment/VR/DevelopVR/ContentSetup/index.html)

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Hand Coach, immersives Headset, mrtk, Hands, helfende Hand, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550070"
 ---
 # <a name="hand-coach"></a>Hand Coach
 
@@ -85,7 +85,7 @@ Sie sollten nicht erwarten, dass Benutzer eine Reihe von Anweisungen über eine 
 
 ## <a name="can-i-create-my-own"></a>Kann ich meine eigene erstellen?
 
-Ja. Wir empfehlen Ihnen, eine eigene, einzigartige Geste für Ihr Spiel zu erstellen und zur Community beizutragen.
+Ja! Wir empfehlen Ihnen, eine eigene, einzigartige Geste für Ihr Spiel zu erstellen und zur Community beizutragen.
 Wir haben eine Maya-Datei für eine manipulierte Hand bereitgestellt, die für Ihre APP verwendet werden kann. Sie können hier heruntergeladen werden: <a href="files/HandCoach_MRTK.zip"> Download HandCoach_MRTK.zip </a>
 
 ![Beispiel für animierte Hände in Maya](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -169,7 +169,7 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 * Hände sollten nur einmal vermittelt werden. Über lehrungen können Verwirrung und Verwirrung verursachen.
 *   Wenn Sie es in Unity einbinden, laden Sie den aktuellen mrtk hier herunter: https://github.com/microsoft/MixedRealityToolkit-Unity
     *   Material: Teaching_Hand2
-    *   Skripts: siehe mrtk Guidelines for <a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> mrtk Hand Coach </a>
+    *   Skripts: siehe mrtk Guidelines for <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> mrtk Hand Coach </a>
     *   Pro-Projekt-Einstellung
         *   Szene, die auf UWP festgelegt ist: Anweisungen finden Sie im [Unity-Projekt](../develop/unity/Configure-Unity-Project.md) für Windows Mixed Reality.
 
@@ -181,4 +181,4 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 * [Installieren der Tools](../develop/install-the-tools.md)
 * [Unity-Projekt konfigurieren](../develop/unity/Configure-Unity-Project.md)
 * [Unity-Entwicklung – Übersicht](../develop/unity/unity-development-overview.md)
-* [Mrtk 101](../develop/unity/mrtk-101.md)
+* [Mrtk 101](../out-of-scope/mrtk-101.md)
