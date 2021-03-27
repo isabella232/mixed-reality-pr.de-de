@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, Fokuspunkt, Fokusebene, Stabilisierungs Ebene, Stabilisierungs Punkt, neuprojektion, LSR, tiefen Puffer, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226399"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636222"
 ---
 # <a name="focus-point-in-unity"></a>Fokuspunkt in Unity
 
@@ -49,7 +49,7 @@ void Update()
 ```
 
 > [!NOTE]
-> Der einfache Code oben kann die Stabilität des Hologramms verringern, wenn das fokussierte Objekt hinter dem Benutzer endet. Im Allgemeinen wird empfohlen, die **[tiefen Puffer Freigabe zu aktivieren](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** , anstatt manuell einen Fokuspunkt anzugeben.
+> Der einfache Code oben kann die Stabilität des Hologramms verringern, wenn das fokussierte Objekt hinter dem Benutzer endet. Im Allgemeinen wird empfohlen, die **[tiefen Puffer Freigabe zu aktivieren](camera-in-unity.md#sharing-depth-buffers)** , anstatt manuell einen Fokuspunkt anzugeben.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 

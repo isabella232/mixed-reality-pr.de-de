@@ -1,17 +1,17 @@
 ---
-title: Hololens (1. Gen) Grundlagen 100-erste Schritte mit Unity
+title: 'HoloLens (1. Generation) Grundlagen 100: Erste Schritte mit Unity'
 description: Erfahren Sie, wie Sie Ihre erste grundlegende gemischte "Hello World"-Anwendung für hololens und Windows Mixed Reality-Geräte erstellen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Windows Mixed Reality, hololens, immersive, VR, Mr, Get Started, Hologram, Academy, Tutorial, Mixed Reality Academy, Unity, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730357"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636172"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Hololens (1. Gen) Grundlagen 100: Erste Schritte mit Unity
 
@@ -77,7 +77,7 @@ Zweitens benötigt der Standard Hintergrund der Kamera einige Gedanken.
 
 Als drittes betrachten wir die Near-Clip-Ebene in Unity und verhindern, dass Objekte zu nah an den Benutzern gerendert werden, wenn ein Benutzer ein Objekt nähert oder ein Objekt einen Benutzer nähert.
 
-**Bei hololens-Anwendungen** kann die Near-Clip-Ebene auf die [hololens-empfohlenen](../camera-in-unity.md#clip-planes) 0,85 Meter festgelegt werden.
+**Bei hololens-Anwendungen** kann die Near-Clip-Ebene auf die [hololens-empfohlenen](../camera-in-unity.md#using-clipping-planes) 0,85 Meter festgelegt werden.
 
 1. Wenn im **Hierarchie** Panel noch die **Hauptkamera** ausgewählt ist, suchen Sie im **Inspektor** -Panel nach der **Kamera** Komponente, und ändern Sie das Feld **near-Clip Plane** von der Standardeinstellung **0,3** in das Feld hololens Recommended **0,85**.
 
@@ -223,7 +223,7 @@ Stellen Sie sicher, dass das Gerät über das USB-Kabel angeschlossen ist.
 
 Nachdem Sie Ihre APP bereitgestellt haben, versuchen Sie, alle den Cube zu verschieben, und beobachten Sie, dass Sie in der Welt vor Ihnen bleibt.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Unity-Entwicklung – Übersicht](../unity-development-overview.md)
 * [Bewährte Methoden für das Arbeiten mit Unity und Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)
