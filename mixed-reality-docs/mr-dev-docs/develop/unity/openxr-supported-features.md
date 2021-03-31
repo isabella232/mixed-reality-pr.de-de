@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623630"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937426"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Gemischte Funktionen von openxr unterstützten Funktionen in Unity
 
-Das **gemischte openxr-Plug** -in für die Realität ist eine Erweiterung des Unity **openxr-Plug** -ins und unterstützt eine Reihe von Features für hololens 2-und Windows Mixed Reality-Headsets. Bevor Sie fortfahren, stellen Sie sicher, dass Sie **Unity 2020,2** oder höher, **openxr Plugin, Version 0.1.3** oder höher, installiert haben und Ihr Unity-Projekt [für openxr konfiguriert](openxr-getting-started.md)ist.
+Das **gemischte openxr-Plug** -in für die Realität ist eine Erweiterung des Unity **openxr-Plug** -ins und unterstützt eine Reihe von Features für hololens 2-und Windows Mixed Reality-Headsets. Bevor Sie fortfahren, stellen Sie sicher, dass Ihr Unity-Projekt [für openxr konfiguriert](openxr-getting-started.md)ist.
 
 ## <a name="whats-supported"></a>Unterstützte Funktionen
 
@@ -35,6 +35,9 @@ Die folgenden Funktionen werden derzeit unterstützt:
 * Kompatibel mit Unity [arfoundation 4,0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) oder höher.
 * (In 0.1.3 hinzugefügt) Unterstützt die [Desktop-App Holographic Remoting](holographic-remoting-desktop.md) aus einer erstellten und bereitgestellten eigenständigen Windows-app.
 * (In 0.1.4 hinzugefügt) Unterstützt die [QR-Code Überwachung](#qr-codes) auf HoloLens2 über spatialgraphnode
+* (In 0.2.0 hinzugefügt) Unterstützt **Anker** in Holographic Remoting
+* (In 0.2.0 hinzugefügt) Unterstützt sowohl **Handgelenke als auch Hand Gitter Verfolgung**
+* (In 0.2.0 hinzugefügt) Unterstützt **arplanesubsystems** für die Ebenenerkennung und das Platzieren von – Hologramm mithilfe von **arraycastmanager**.
 
 ## <a name="holographic-remoting-setup"></a>Holographic Remoting-Setup
 
@@ -73,7 +76,7 @@ Das Mixed Reality openxr-Plug-in bietet zusätzliche Eingabe Interaktions Profil
 | ---- | ---- | ---- |
 | primary2DAxis | Steuern | |
 | primary2DAxisClick | Joystick Klick | |
-| Trigger | Trigger  | |
+| Trigger (trigger) | Trigger  | |
 | Hand | Hand | Luft tippen oder drücken |
 | primarybutton | [X/A]-drücken | In die Luft tippen |
 | secondarybutton | [J/B]-drücken | |
@@ -112,9 +115,6 @@ Als Referenz haben wir ein [Beispiel Projekt für QR-Nachverfolgung auf GitHub](
 
 Die folgenden Probleme und fehlenden Features sind mit der **Version 0.1.0** des openxr-Plug-ins von Mixed Reality bekannt. Wir arbeiten an diesen und veröffentlichen Korrekturen und neue Features in zukünftigen Versionen.
 
-* **Arplanesubsystem** wird noch nicht unterstützt. **Arplanemanager**, **arraycastmanager** und verwandte APIs wie **aranchormanager. attachanchor** werden auf hololens 2 ebenfalls nicht unterstützt.
-* Die **Anker Persistenz** wird von Holographic Remoting noch nicht unterstützt, aber in naher Zukunft.
-* **Hand Mesh** -Nachverfolgung und **xrmeshsubsystem** werden noch nicht unterstützt.
 * Die Unterstützung von **räumlichen Azure-Ankern** wird in einer zukünftigen Version angezeigt.
 * **ARM64** ist die einzige unterstützte Plattform für hololens 2-apps. Die **Arm** -Plattform wird in einer zukünftigen Version angezeigt.
 
