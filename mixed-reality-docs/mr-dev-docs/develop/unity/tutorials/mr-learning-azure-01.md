@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Azure, Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchor, Azure Bot Framework, Azure Cloud Services, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 60ca15ebccaa8348ebd47f7d4bf6245ca1496775
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fbb48cfd3c2c9d5c48099f3dfe8ddca8c6136c87
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590702"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550390"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Azure Cloud Services für HoloLens 2
 
@@ -104,7 +104,7 @@ Wählen Sie im Unity-Menü **Fenster** > **Package Manager** (Paket-Manager) aus
 
 ## <a name="importing-the-tutorial-assets"></a>Importieren der Tutorialressourcen
 
-Fügen Sie Ihrem Unity-Projekt das AzurespatialAnchors SDK V2.7.1 hinzu. Um die Pakete hinzuzufügen, befolgen Sie dieses [Tutorial](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+Fügen Sie Ihrem Unity-Projekt das AzurespatialAnchors SDK V2.7.1 hinzu. Um die Pakete hinzuzufügen, befolgen Sie dieses [Tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
 

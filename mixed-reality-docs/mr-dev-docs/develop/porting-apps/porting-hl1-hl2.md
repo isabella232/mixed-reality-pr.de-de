@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, Test, MRTK, MRTK-Version 2, HoloLens 2, Unity, Portieren, HoloLens (1. Generation), Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Migration, Bewährte Methoden, ARM
-ms.openlocfilehash: 6f3c12bf54a4f4339c54908a47369746e0d743a4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 52055f35df05c2cc69e960c681598adac7bd6f1c
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759131"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636232"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>Porting von HoloLens-Apps (1. Generation) zu HoloLens 2
 
@@ -107,7 +107,7 @@ Informationen zu speziellen API-Unterschieden zwischen HTK/MRTK und MRTK v2, fin
     - Diese Aktion vereinfacht Aufnahmen und Updates von zukünftigen MRTKs.
 - Prüfen und untersuchen Sie die Beispielszenen, die im MRTK bereitgestellt werden, insbesondere *HandInteractionExamples.scene*.
 - Erstellen Sie eine canvasbasierte Benutzeroberfläche neu mit Quads, Collidern und TextMeshPro-Text.
-- Aktivieren Sie [gemeinsame Nutzung des Tiefenpuffers](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows) oder [Festlegen des Fokuspunkts](../unity/focus-point-in-unity.md). Verwenden Sie bevorzugt einen 16-Bit-Tiefenpuffer, um die Leistung zu verbessern. Stellen Sie sicher, dass Sie beim Rendern von Farbe auch Tiefe rendern. Unity schreibt im Allgemeinen keine Tiefe für transparente und Text-gameobjects. 
+- Aktivieren Sie [gemeinsame Nutzung des Tiefenpuffers](../unity/camera-in-unity.md#sharing-depth-buffers) oder [Festlegen des Fokuspunkts](../unity/focus-point-in-unity.md). Verwenden Sie bevorzugt einen 16-Bit-Tiefenpuffer, um die Leistung zu verbessern. Stellen Sie sicher, dass Sie beim Rendern von Farbe auch Tiefe rendern. Unity schreibt im Allgemeinen keine Tiefe für transparente und Text-gameobjects. 
 - Legen Sie den Single Pass-instanziierten Renderingpfad fest.
 - Verwenden Sie das [HoloLens 2-Konfigurationsprofil für MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile)
 
