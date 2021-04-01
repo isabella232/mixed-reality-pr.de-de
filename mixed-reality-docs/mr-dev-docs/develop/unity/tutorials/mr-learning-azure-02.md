@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Storage, Azure Cloud Services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: cebf86901ec7b91888e1e46a13e5dee47f640c6c
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 189fea44da6d2da7cd98629a4a67c2f7c9340d2b
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590562"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550330"
 ---
 # <a name="2-integrating-azure-storage"></a>2. Integrieren von Azure Storage
 
@@ -28,7 +28,7 @@ In diesem Tutorial erfahren Sie, wie Sie Entitätsdaten in Azure Table Storage u
 
 **Azure Storage** ist eine Microsoft-Speicherlösung in der Cloud, die viele Szenarien und Anforderungen abdecken kann. Sie kann massiv skaliert werden und ist für Entwickler problemlos zugänglich. Alle Dienste können im Rahmen eines **Azure Storage-Kontos** genutzt werden. In unserem Anwendungsfall verwenden wir *Table Storage* und *Blob Storage*.
 
-Weitere Informationen zu [Azure-Speicherdiensten](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview).
+Weitere Informationen zu [Azure-Speicherdiensten](/azure/storage/blobs/storage-blobs-overview).
 
 ### <a name="azure-table-storage"></a>Azure Table Storage
 
@@ -36,18 +36,18 @@ Dieser Dienst ermöglicht es uns, Daten auf NoSQL-Art zu speichern. In diesem Pr
 
 Im Kontext der Demoanwendung benötigen Sie zwei Tabellen: eine Tabelle zum Speichern von Informationen zum Projekt mit Informationen über den Zustand der trainierten Modelle (mehr dazu im Tutorial [Integrieren von Azure Custom Vision](mr-learning-azure-03.md)) und eine zweite Tabelle zum Speichern von Informationen zu *nachverfolgten Objekten*.
 
-Weitere Informationen zu [Azure Table Storage](https://docs.microsoft.com/azure/storage/tables/table-storage-overview).
+Weitere Informationen zu [Azure Table Storage](/azure/storage/tables/table-storage-overview).
 
 ### <a name="azure-blob-storage"></a>Azure Blob Storage
 
 Dieser Dienst ermöglicht das Speichern großer Binärdateien. Diese werden zum Speichern von Fotos verwendet, die für *nachverfolgte Objekte* als Miniaturansicht erstellt wurden.
 Für die Demoanwendung benötigen Sie einen Blobcontainer, um die Bilder zu speichern.
 
-Weitere Informationen zu [Azure Blob Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction).
+Weitere Informationen zu [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction).
 
 ## <a name="preparing-azure-storage"></a>Vorbereiten von Azure Storage
 
-Um die Azure-Speicherdienste nutzen zu können, benötigen Sie ein Azure-Speicherkonto. Informationen zum Erstellen eines Speicherkontos finden Sie unter [Erstellen eines Speicherkontos](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal). Weitere Informationen zu Speicherkonten finden Sie unter [Übersicht über das Azure-Speicherkonto](https://docs.microsoft.com/azure/storage/common/storage-account-overview).
+Um die Azure-Speicherdienste nutzen zu können, benötigen Sie ein Azure-Speicherkonto. Informationen zum Erstellen eines Speicherkontos finden Sie unter [Erstellen eines Speicherkontos](/azure/storage/common/storage-account-create?tabs=azure-portal). Weitere Informationen zu Speicherkonten finden Sie unter [Übersicht über das Azure-Speicherkonto](/azure/storage/common/storage-account-overview).
 
 Sobald Sie über ein Speicherkonto verfügen, können Sie die Verbindungszeichenfolge aus dem **Azure-Portal** abrufen, die im nächsten Abschnitt dieser Lektion benötigt wird.
 
@@ -58,7 +58,7 @@ Obwohl Sie alle Datenänderungen über die Benutzeroberfläche innerhalb der Anw
 > [!TIP]
 > Zum Testen innerhalb des Unity-Editors können Sie einen lokalen Emulator verwenden:
 >
-> * Unter Windows 10 können Sie den [Azure-Speicheremulator](https://docs.microsoft.com/azure/storage/common/storage-use-emulator) verwenden.
+> * Unter Windows 10 können Sie den [Azure-Speicheremulator](/azure/storage/common/storage-use-emulator) verwenden.
 > * Unter macOS/Linux können Sie [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) für Docker verwenden.
 
 ## <a name="preparing-the-scene"></a>Vorbereiten der Szene
