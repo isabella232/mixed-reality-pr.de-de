@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer
-ms.openlocfilehash: 7ed1355e3c522fcd94a96dd761a8a9ebb01c4c4c
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 7964ecdc8adee7c61c4c7086b8d04983f6e3903f
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590042"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982793"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. hinzufügen räumlicher Audiodaten zu Ihrem Unity-Projekt
 
@@ -70,7 +70,7 @@ Befolgen Sie dann die Anweisungen unter [Ändern der Anzeige Option räumliches 
 Herunterladen und Importieren von Microsoft spatializer  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">Microsoft. spatialaudio. spatializer. Unity. 1.0.18. unitypackage </a>
 
 >[!TIP]
-> Eine Erinnerung zum Importieren eines benutzerdefinierten Unity-Pakets finden Sie in den Anweisungen zum [Importieren der](mr-learning-base-04.md#importing-the-tutorial-assets) Lernprogramm Ressourcen.
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>Aktivieren des Microsoft spatializer-Plug-ins
 

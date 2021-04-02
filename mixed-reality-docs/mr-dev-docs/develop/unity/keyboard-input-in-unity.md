@@ -1,17 +1,17 @@
 ---
 title: Tastatureingabe in Unity
 description: Unity stellt die touchscreenkeyboard-Klasse bereit, um Tastatureingaben zu akzeptieren, wenn keine physische Tastatur verfügbar ist.
-author: thetuvix
-ms.author: alexturn
-ms.date: 03/21/2018
+author: MaxWang-MS
+ms.author: wangmax
+ms.date: 03/30/2021
 ms.topic: article
-keywords: Tastatur, Eingabe, Unity, touchscreenkeyboard, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 90416f91a7de369ff97a2254fed4b3773724408b
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+keywords: Tastatur, Eingabe, Unity, touchscreenkeyboard, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, hololens 2
+ms.openlocfilehash: 398a7c57dc701fc848fe9091949b45b2c1796987
+ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226409"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098272"
 ---
 # <a name="keyboard-input-in-unity"></a>Tastatureingabe in Unity
 
@@ -24,39 +24,7 @@ Unity stellt die *[touchscreenkeyboard](https://docs.unity3d.com/ScriptReference
 
 ## <a name="hololens-system-keyboard-behavior-in-unity"></a>Hololens System Tastatur Verhalten in Unity
 
-Auf hololens nutzt *touchscreenkeyboard* die Bildschirmtastatur des Systems. Die Bildschirmtastatur des Systems kann nicht oberhalb einer Volumetrische Ansicht überlagert werden. Unity muss eine sekundäre 2D-XAML-Ansicht erstellen, um die Tastatur anzuzeigen und dann zur volumetriansicht zurückzukehren, sobald die Eingabe übermittelt wurde. Der Benutzer Ablauf sieht wie folgt aus:
-1. Der Benutzer führt eine Aktion aus, die bewirkt, dass APP-Code *touchscreenkeyboard* aufruft.
-    * Die APP ist für das Anhalten des App-Zustands vor dem Aufrufen von *touchscreenkeyboard* verantwortlich.
-    * Die APP kann beendet werden, bevor Sie zur Volumetrische-Ansicht zurück wechselt.
-2. Unity wechselt zu einer 2D-XAML-Ansicht, die automatisch in der Welt angezeigt wird.
-3. Der Benutzer gibt mithilfe der System Tastatur Text ein und übermittelt oder bricht ihn ab.
-4. Unity wechselt zurück zur volumetriansicht
-    * Die APP ist für das Fortsetzen des App-Zustands verantwortlich, wenn *touchscreenkeyboard* abgeschlossen ist.
-5. Der übermittelte Text ist in *touchscreenkeyboard* verfügbar.
-
-### <a name="available-keyboard-views"></a>Verfügbare Tastatur Ansichten
-
-Es stehen sechs verschiedene Tastatur Ansichten zur Verfügung:
-* Einzeilige Textfeld
-* Einzeilige Textfeld mit Titel
-* Mehrzeilige Textfeld
-* Mehrzeilige Textfeld mit Titel
-* Einzeilige Kenn Wort Feld
-* Einzeilige Kenn Wort Feld mit Titel
-
-## <a name="how-to-enable-the-system-keyboard-in-unity"></a>Aktivieren der System Tastatur in Unity
-
-Die System Tastatur hololens ist nur für Unity-Anwendungen verfügbar, die mit dem "UWP Build Type" auf "XAML" exportiert werden. Wenn Sie "XAML" als "UWP Build Type" über "D3D" auswählen, müssen Sie die vor-und Nachteile treffen. Wenn Sie mit diesen vor-und Nachteile nicht vertraut sind, möchten Sie möglicherweise eine [Alternative Eingabe Lösung](#alternative-keyboard-options) für die System Tastatur untersuchen.
-1. Öffnen Sie das Menü **Datei** , und wählen Sie Buildeinstellungen aus **.**
-2. Stellen Sie sicher, dass die **Plattform** auf **Windows Store** festgelegt ist, das **SDK** auf **Universal 10** festgelegt ist, und legen Sie den **UWP-Buildtyp** auf **XAML** fest.
-3. Wählen Sie im Dialogfeld " **Buildeinstellungen** " die Schaltfläche **Player Einstellungen... aus.**
-4. Wählen Sie die Registerkarte **Einstellungen für Windows Store aus** .
-5. Erweitern Sie die Gruppe **andere Einstellungen** .
-6. Aktivieren Sie im Abschnitt " **Rendering** " das Kontrollkästchen " **Virtual Reality supported** ", um eine neue **Virtual Reality-Geräte** Liste hinzuzufügen.
-7. Stellen Sie sicher, dass **Windows Holographic** in der Liste der Virtual Reality sdert angezeigt wird.
-
->[!NOTE]
->Wenn Sie den Build nicht als virtuelle Realität markieren, die mit dem hololens-Gerät unterstützt wird, exportiert das Projekt als 2D-XAML-app.
+Auf hololens nutzt *touchscreenkeyboard* die Bildschirmtastatur des Systems und überlagert direkt über die volumetriansicht ihrer Mr-Anwendung. Die Vorgehensweise ähnelt der Verwendung von Tastatur in den integrierten Apps von hololens. Beachten Sie, dass sich die System Tastatur gemäß den Funktionen der Zielplattform verhält, z. b. wenn die Tastatur auf hololens 2 direkte Interaktionen unterstützt, während die Tastatur auf hololens (1st Gen) GGV unterstützen würde (Blick, Bewegung und Stimme). Außerdem wird die System Tastatur nicht angezeigt, wenn Unity-Remoting vom Editor zu einem hololens durchgeführt wird.
 
 ## <a name="using-the-system-keyboard-in-your-unity-app"></a>Verwenden der System Tastatur in ihrer Unity-App
 
@@ -71,50 +39,25 @@ public static string keyboardText = "";
 
 ### <a name="invoke-the-keyboard"></a>Tastatur aufrufen
 
-Wenn ein Ereignis beim Anfordern von Tastatureingaben auftritt, können Sie eine dieser Funktionen aufrufen, abhängig vom Typ der Eingabe, die Sie mit dem Titel im textplachalter-Parameter verwenden möchten.
+Wenn ein Ereignis beim Anfordern von Tastatureingaben auftritt, verwenden Sie Folgendes, um die Tastatur anzuzeigen.
 
 ```cs
-// Single-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false);
-
-// Single-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, false, false, "Single-line title");
-
-// Multi-line textbox
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false);
-
-// Multi-line textbox with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, true, false, false, "Multi-line Title");
-
-// Single-line password box
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false);
-
-// Single-line password box with title
-keyboard = TouchScreenKeyboard.Open("", TouchScreenKeyboardType.Default, false, false, true, false, "Secure Single-line Title");
+keyboard = TouchScreenKeyboard.Open("text to edit");
 ```
+
+Sie können zusätzliche Parameter verwenden, die an die Funktion weitergegeben werden `TouchScreenKeyboard.Open` , um das Verhalten der Tastatur zu steuern (z. b. das Festlegen von Platzhalter Text oder die Unterstützung der AutoKorrektur Die vollständige Liste der Parameter finden Sie in der [Unity-Dokumentation](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.Open.html).
 
 ### <a name="retrieve-typed-contents"></a>Abrufen von typisiertem Inhalt
 
-Überprüfen Sie in der Update Schleife, ob die Tastatur neue Eingaben empfangen hat, und speichern Sie Sie an anderer Stelle.
+Der Inhalt kann einfach durch Aufrufen von abgerufen werden `keyboard.text` . Möglicherweise möchten Sie den Inhalt pro Frame oder nur dann abrufen, wenn die Tastatur geschlossen wird.
 
 ```cs
-if (TouchScreenKeyboard.visible == false && keyboard != null)
-{
-       if (keyboard.status == TouchScreenKeyboard.Status.Done)
-       {
-           keyboardText = keyboard.text;
-           keyboard = null;
-       }
-}
+keyboardText = keyboard.text;
 ```
 
 ## <a name="alternative-keyboard-options"></a>Alternative Tastatur Optionen
 
-Wir wissen, dass das Wechseln aus einer Volumetrische-Sicht in eine 2D-Ansicht nicht die ideale Methode ist, um Texteingaben vom Benutzer zu erhalten.
-
-Die aktuellen Alternativen zur Verwendung der System Tastatur über Unity umfassen Folgendes:
-* Verwendung der Spracherkennung für die Eingabe (<b>Hinweis:</b> Dies ist oft fehleranfällig für Wörter, die im Wörterbuch nicht gefunden werden und nicht für die Kenn Wort Eingabe geeignet sind).
-* Erstellen einer Tastatur, die in der exklusiven Ansicht Ihrer Anwendungen funktioniert
+Wenn Sie die *touchscreenkeyboard* -Klasse direkt verwenden, können Sie auch Benutzereingaben über das Benutzeroberflächen- *Eingabefeld* von Unity oder das *Eingabefeld "textmeschpro*" erhalten. Außerdem gibt es eine auf *touchscreenkeyboard* basierende Implementierung in der [handinteraktionexamples-Szene](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) von [mrtk](/windows/mixed-reality/mrtk-unity) (auf der linken Seite befindet sich ein Beispiel für eine Tastatur Interaktion).
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
