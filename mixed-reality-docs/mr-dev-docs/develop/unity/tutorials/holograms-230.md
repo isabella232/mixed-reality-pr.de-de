@@ -1,22 +1,22 @@
 ---
-title: Hololens (1. Gen) Spatial 230-räumliche Zuordnung
+title: 'HoloLens (1. Generation) Räumlich 230: Räumliche Abbildung'
 description: Befolgen Sie diese exemplarische Vorgehensweise für die Code Erstellung mithilfe von Unity, Visual Studio und hololens, um die Details der Konzepte räumlicher Zuordnung kennenzulernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, räumliche Zuordnung, Oberflächenrekonstruktion, Mesh, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 24814925bfc154989822e326d2f088fe459c7aa0
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730137"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269909"
 ---
 # <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>Hololens (1. Gen) räumlich 230: räumliche Zuordnung
 
->[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>[!IMPORTANT]
+>Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
 [Räumliche Zuordnung](../../../design/spatial-mapping.md) kombiniert die reale und die virtuelle Welt zusammen, indem Hologramme über die Umgebung vermittelt werden. Im räumlichen 230 (Project Planetarium) erfahren Sie Folgendes:
 
@@ -1208,7 +1208,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 ## <a name="the-end"></a>Das Ende
 
-Herzlichen Glückwunsch! Sie haben jetzt die räumliche **230: räumliche Zuordnung** abgeschlossen.
+Glückwunsch! Sie haben jetzt die räumliche **230: räumliche Zuordnung** abgeschlossen.
 
 * Sie wissen, wie Sie Ihre Umgebung scannen und räumliche Mapping-Daten in Unity laden.
 * Sie verstehen die Grundlagen von Shadern und die Art und Weise, wie Materialien zum erneuten visualisieren der Welt eingesetzt werden können.

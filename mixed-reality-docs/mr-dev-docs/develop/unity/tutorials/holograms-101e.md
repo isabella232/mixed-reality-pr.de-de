@@ -1,22 +1,22 @@
 ---
-title: Hololens (1. Gen) Grundlagen 101 e-vervollständigen eines Projekts mit Emulator
+title: 'HoloLens (1. Generation) Grundlagen 101E: Vollständiges Projekt mit Emulator'
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und den hololens-Emulator verwenden, um die Grundlagen einer Holographic-Anwendung kennenzulernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Gemischte Realität, Windows Mixed Reality, Hologram, Academy, Tutorial, Emulator, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10, Blick, Gesten, Spracheingabe, räumlicher Sound, räumliche Zuordnung
-ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: b1099c7db8c320c456c8eb726caef44cb5b52def
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730287"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269936"
 ---
 # <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>Hololens (1. Gen) Grundlagen 101 e: vervollständigen eines Projekts mit Emulator
 
->[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
+>[!IMPORTANT]
+>Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
 <br>
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr,
-ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007060"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223931"
 ---
 # <a name="start-your-vr-journey"></a>Starten Sie Ihre VR-Journey
 
@@ -33,7 +33,7 @@ Der PC muss die von Ihnen gekauften VR-Hardware verarbeiten, um die beste Einric
 
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
-| [Vorbereitung](before-you-start.md) | Stellen Sie sicher, dass Sie alles haben, was Sie zum Starten Ihrer VR-Journey benötigen |
+| [Vor der Installation](before-you-start.md) | Stellen Sie sicher, dass Sie alles haben, was Sie zum Starten Ihrer VR-Journey benötigen |
 | [Richtlinien für die PC-Hardware](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | Alles, was Sie über die Ausführung von Windows Mixed Reality, Windows Mixed Reality Ultra und der Windows Mixed Reality-Portal-App wissen müssen |
 | [Hilfe zur PC-Kompatibilität](get-help-with-pc-compatibility.md) | Grundlegendes zum generierten Bericht von der Windows Mixed Reality-PC-Prüfung |
 | [Häufig gestellte Fragen](before-you-buy-faqs.md) | Erhalten Sie Antworten auf alle Ihre Kauf Fragen zu technischen Spezifikationen, Geräten und Controllern. |
@@ -60,7 +60,7 @@ Es gibt verschiedene Features und Dienste, die über Windows Mixed Reality und i
 
 <br>
 
-|  Prüfpunkt  |  Feature  |
+|  Prüfpunkt  |  Funktion  |
 | --- | --- |
 | [Lernen von Mixed Reality](learn-mixed-reality.md) | Erfahren Sie, wie Sie Ihren Blick, ihre Stimme, ihre Controller und Tastatur-/Maus-Eingaben verwenden. |
 | [Navigieren Sie in der Windows Mixed Reality-Startseite](your-mixed-reality-home.md) | Erkunden Sie die virtuelle Umgebung des Windows Mixed Reality-Home  |
@@ -76,12 +76,13 @@ Suchen Sie in den folgenden Ressourcen nach immersiven spielen, Desktop Anwendun
 
 <br>
 
-|  Prüfpunkt  |  Feature  |
+|  Prüfpunkt  |  Funktion  |
 | --- | --- |
 | [Spiele, 360-Video-und-Apps](using-games-and-apps-in-windows-mixed-reality.md) | Erste Schritte mit Ihrem ersten immersiven Spiel, 2D-Speicher Slates, Desktop Anwendungen und webvr-Erfahrungen |
 | [Verwenden von SteamVR](using-steamvr-with-windows-mixed-reality.md) | Verbinden Sie Ihr Gerät, und spielen Sie steamvr-Spiele und Informationen zum Windows Insider-Programm |
 | [Verwenden von Microsoft Edge](using-microsoft-edge.md) | Installieren Sie die neueste Version von Microsoft Edge auf Ihrem immersiven Gerät. |
 | [Verwenden von webvr](webvr.md) | Einrichten, um VR in ihrer Browserumgebung kennenzulernen |
+| [Erkunden von altspacevr](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | Erkunden Sie die erweiternde Welt der VR-Veranstaltungen mit altspacevr |
 
 ## <a name="troubleshooting-tips--resources"></a>Problembehandlung, Tipps & Ressourcen
 

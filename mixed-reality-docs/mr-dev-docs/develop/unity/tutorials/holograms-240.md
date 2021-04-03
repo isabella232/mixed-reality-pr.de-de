@@ -1,22 +1,22 @@
 ---
-title: Hololens (1st Gen) Sharing 240-Multiple hololens Devices
+title: 'HoloLens (1. Generation) Freigabe 240: Mehrere HoloLens-Geräte'
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details der Freigabe von holograms zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Sharing, Networking, Academy, Tutorial, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 8e3631c80702f04e9f7e50c98bed91d92c332841
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 446f82558781e47b5381ee3f59af70953954ad2a
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730147"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269916"
 ---
 # <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>Hololens (1st Gen) Sharing 240: mehrere hololens-Geräte
 
->[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>[!IMPORTANT]
+>Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
 Holograms sind in unserer Welt vorhanden, da Sie sich im Raum bewegen. Hololens hält Hologramme an, indem verschiedene [Koordinatensysteme](../../../design/coordinate-systems.md) verwendet werden, um den Speicherort und die Ausrichtung von Objekten nachzuverfolgen. Wenn wir diese Koordinatensysteme zwischen Geräten teilen, können wir eine gemeinsame Umgebung erstellen, die es uns ermöglicht, an einer freigegebenen Holographic World teilzunehmen.
 

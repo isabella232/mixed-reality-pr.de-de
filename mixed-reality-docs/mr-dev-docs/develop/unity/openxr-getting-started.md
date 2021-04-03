@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: 6e300c6117e04e2a49b060bcd7a6d268204f14da
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: ebe7d32b236e28259b2ed9a7915bd337f84f8762
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937481"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088507"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>Verwenden des gemischten Reality openxr-Plug-Ins für Unity
 
@@ -27,14 +27,14 @@ Ab Unity, Version 2020,2, ist das gemischte openxr-Plug-in-Paket von Microsoft m
 > [!NOTE]
 > Wenn Sie VR-Anwendungen auf einem Windows-PC entwickeln, ist das gemischte openxr-Plug-in für die gemischte Realität nicht unbedingt erforderlich. Sie sollten das Plug-in jedoch installieren, wenn Sie die Controller Zuordnung für HP-Reverb-G2-Controller anpassen oder apps entwickeln, die sowohl für hololens 2-als auch für VR-Headsets geeignet sind.
 
-<!-- ## Setting up your project with MRTK
+## <a name="setting-up-your-project-with-mrtk"></a>Einrichten Ihres Projekts mit mrtk
 
-MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+MRTK für Unity bietet ein plattformübergreifendes Eingabesystem, Grundlagenkomponenten und gemeinsame Bausteine für räumliche Interaktionen. MRTK, Version 2, soll die Anwendungsentwicklung für Microsoft HoloLens, für immersive Windows Mixed Reality-Headsets (VR) und für die OpenVR-Plattform beschleunigen. Das Projekt ist darauf ausgerichtet, die Einstiegshürden zum Erstellen von Mixed Reality-Anwendungen zu verringern, und einen Beitrag für die Community auf diesem stetig wachsenden Gebiet zu leisten.
 
 > [!div class="nextstepaction"]
-> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
+> [Einrichten des Projekts mithilfe von mrtk](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
-Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details. -->
+Weitere Featuredetails finden Sie in [der Dokumentation zu mrtk](/windows/mixed-reality/mrtk-unity) .
 
 ## <a name="manual-setup-without-mrtk"></a>Manuelles Setup ohne mrtk
 
@@ -80,7 +80,7 @@ Wenn Sie für hololens 2 entwickeln, navigieren Sie zu **gemischte Realität> op
 ![Screenshot des Menü Elements mit gemischter Realität geöffnet mit ausgewähltem openxr](images/openxr-img-08.png)
 
 > [!IMPORTANT]
-> Wenn ein rotes Warnsymbol neben **openxr-Plug-in (Vorschau)** angezeigt wird, klicken Sie auf das Symbol, und wählen Sie **alle korrigieren** , bevor Sie fortfahren. Der Unity-Editor muss möglicherweise neu gestartet werden, damit die Änderungen wirksam werden.
+> Wenn ein rotes Warnsymbol neben **openxr-Plug**-in angezeigt wird, klicken Sie auf das Symbol, und wählen Sie **alle korrigieren** , bevor Sie fortfahren. Der Unity-Editor muss möglicherweise neu gestartet werden, damit die Änderungen wirksam werden.
 
 ![Screenshot des Fensters "openxr Project Validation"](images/openxr-img-06.png)
 
@@ -135,7 +135,7 @@ Nachdem Sie Ihr Projekt für openxr konfiguriert haben und Zugriff auf Beispiele
 
 Openxr ist noch immer experimentell. Wir freuen uns über jedes Feedback, das Sie uns zur Verbesserung der IT-Unterstützung bieten können. Sie finden uns in den [Unity-Foren](https://aka.ms/unityforums) , indem Sie Ihren Forumsbeitrag mit **Microsoft**  +  **openxr** und entweder **hololens 2** oder **Windows Mixed Reality** markieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Konfigurieren von Projekten ohne MRTK](configure-unity-project.md)
 * [Empfohlene Einstellungen für Unity](recommended-settings-for-unity.md)

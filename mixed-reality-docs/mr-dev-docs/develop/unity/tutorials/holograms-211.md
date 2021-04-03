@@ -1,22 +1,22 @@
 ---
-title: Hololens (1. Gen) Eingabe 211-Geste
+title: 'HoloLens (1. Generation) Eingabe 211: Geste'
 description: Befolgen Sie diese exemplarische Vorgehensweise für die Codierung mithilfe von Unity, Visual Studio und hololens, um die Details der Gesten Konzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Gesten, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 1431c9b53657e2cec1bd6ade1a3629e628e15917
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730457"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269986"
 ---
 # <a name="hololens-1st-gen-input-211-gesture"></a>Hololens (1. Gen) Eingabe 211: Geste
 
->[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>[!IMPORTANT]
+>Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
 [Gesten](../../../design/gaze-and-commit.md#composite-gestures) verwandeln die Benutzer Absicht in eine Aktion. Mithilfe von Gesten können Benutzer mit Hologrammen interagieren. In diesem Kurs erfahren Sie, wie Sie die Hände des Benutzers nachverfolgen, auf Benutzereingaben reagieren und dem Benutzer Feedback geben können, der auf dem Hand Bundesland und-Speicherort basiert.
 
@@ -543,7 +543,7 @@ Hierzu fügen wir der Spracheingabe Quelle aus dem vorherigen Kapitel zwei weite
 
 ## <a name="the-end"></a>Das Ende
 
-Herzlichen Glückwunsch! Sie haben nun die **Eingabe 211: Geste** abgeschlossen.
+Glückwunsch! Sie haben nun die **Eingabe 211: Geste** abgeschlossen.
 
 * Sie wissen, wie Hand Verfolgungs-, Navigations-und Bearbeitungs Ereignisse erkannt und beantwortet werden.
 * Sie verstehen den Unterschied zwischen Navigation und Manipulations Gesten.

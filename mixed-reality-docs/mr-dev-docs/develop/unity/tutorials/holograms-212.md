@@ -1,22 +1,22 @@
 ---
-title: Hololens (1. Gen) Eingabe 212-Stimme
+title: 'HoloLens (1. Generation) Eingabe 212: Sprache'
 description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details der sprach Konzepte zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Voice, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 8e36233ff4abd3ac91670dd7d04b6675bec045ff
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730447"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269926"
 ---
 # <a name="hololens-1st-gen-input-212-voice"></a>Hololens (1. Gen) Eingabe 212: Spracheingabe
 
->[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](./mr-learning-base-01.md) für HoloLens 2 veröffentlicht.
+>[!IMPORTANT]
+>Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
 Die [Spracheingabe](../../../design/voice-input.md) bietet uns eine weitere Möglichkeit, mit unseren holograms zu interagieren. Sprachbefehle funktionieren auf sehr natürliche und einfache Weise. Entwerfen Sie Ihre Sprachbefehle so, dass Sie wie folgt lauten:
 
@@ -149,7 +149,7 @@ In diesem Kapitel erfahren Sie mehr über das Entwerfen von Sprachbefehlen. Beim
     3. Zoom Tool
     4. Tool ziehen
     5. Anpassen
-    6. Remove (Entfernen)
+    6. Entfernen
 * Verwenden Sie ähnliche Sounds. Versuchen Sie, die Verwendung von Sprachbefehlen zu vermeiden, die sich in der Wenn Sie über eine Einkaufs Anwendung verfügen, in der *"Store anzeigen"* und *"mehr anzeigen"* als Sprachbefehle unterstützt werden, sollten Sie einen der Befehle deaktivieren, während der andere verwendet wurde. Beispielsweise können Sie die Schaltfläche *"Store anzeigen"* verwenden, um den Store zu öffnen, und dann diesen Befehl deaktivieren, wenn der Speicher angezeigt wird, sodass der Befehl *"Weitere anzeigen"* zum Durchsuchen verwendet werden kann.
 
 ### <a name="instructions"></a>Anweisungen
@@ -500,7 +500,7 @@ In der SRGS-Datei gibt es drei Arten von Regeln:
 
 ## <a name="the-end"></a>Das Ende
 
-Herzlichen Glückwunsch! Nun haben Sie die **Mr-Eingabe 212: Voice** abgeschlossen.
+Glückwunsch! Nun haben Sie die **Mr-Eingabe 212: Voice** abgeschlossen.
 
 * Sie kennen die DOS-und die TS von Voice-Befehlen.
 * Sie haben gesehen, wie Quick Infos verwendet wurden, um die Benutzer auf Sprachbefehle aufmerksam zu machen.

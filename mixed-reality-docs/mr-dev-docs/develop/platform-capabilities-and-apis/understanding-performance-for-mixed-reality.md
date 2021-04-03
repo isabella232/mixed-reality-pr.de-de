@@ -6,16 +6,21 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Gemischte Windows-Realität, gemischte Realität, Virtual Reality, VR, Mr, Leistung, Optimierung, CPU, GPU
-ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550120"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269956"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>Grundlegendes zur Leistung für gemischte Realität
 
 Dieser Artikel ist eine Einführung in das Verständnis der Bedeutung der Leistung für ihre gemischte Reality-app.  Die Benutzer Leistung kann erheblich beeinträchtigt werden, wenn Ihre Anwendung nicht mit optimaler Framerate ausgeführt wird. Holograms werden instabil angezeigt, und die Kopf Nachverfolgung der Umgebung ist ungenau, was zu einem schlechten Benutzer Verhalten führt. Die Leistung muss als erstklassige Funktion für die Entwicklung in gemischter Realität und nicht als polnische Aufgabe angesehen werden.
+
+Vor kurzem haben wir eine Anwendung mit dem Namen "Quality Fundamentals" veröffentlicht, die häufige Probleme mit der Leistung, dem Entwurf und der Umgebung und Lösungen für hololens 2-apps Diese APP ist ein hervorragend visuelles Demo für die folgenden Inhalte.
+
+> [!div class="nextstepaction"]
+> [Herunterladen der Quality Fundamentals-App](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
 
 Die leistungsstarken Framerate-Werte für jede Zielplattform sind unten aufgeführt.
 

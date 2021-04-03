@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: Mixed Reality, Windows Mixed Reality, hololens, immersive, VR, Mr, Get Started, Hologram, Academy, Tutorial, Mixed Reality Academy, Unity, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset
-ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 68939eda0a18e2d49948d2a87b9f709389857bf3
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636172"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269976"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>Hololens (1. Gen) Grundlagen 100: Erste Schritte mit Unity
 
 >[!IMPORTANT]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
+>Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
 Dieses Tutorial führt Sie durch die Erstellung einer einfachen Mixed Reality-APP, die mit Unity erstellt wurde.
 
@@ -223,7 +223,7 @@ Stellen Sie sicher, dass das Gerät über das USB-Kabel angeschlossen ist.
 
 Nachdem Sie Ihre APP bereitgestellt haben, versuchen Sie, alle den Cube zu verschieben, und beobachten Sie, dass Sie in der Welt vor Ihnen bleibt.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Unity-Entwicklung – Übersicht](../unity-development-overview.md)
 * [Bewährte Methoden für das Arbeiten mit Unity und Visual Studio](../best-practices-for-working-with-unity-and-visual-studio.md)

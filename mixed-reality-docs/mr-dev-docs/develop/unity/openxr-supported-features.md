@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr, Unity, hololens, hololens 2, Mixed Reality, mrtk, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, erlernen, Tutorial, Getting Started
-ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937426"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088489"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>Gemischte Funktionen von openxr unterstützten Funktionen in Unity
 
@@ -38,6 +38,7 @@ Die folgenden Funktionen werden derzeit unterstützt:
 * (In 0.2.0 hinzugefügt) Unterstützt **Anker** in Holographic Remoting
 * (In 0.2.0 hinzugefügt) Unterstützt sowohl **Handgelenke als auch Hand Gitter Verfolgung**
 * (In 0.2.0 hinzugefügt) Unterstützt **arplanesubsystems** für die Ebenenerkennung und das Platzieren von – Hologramm mithilfe von **arraycastmanager**.
+* (0.9.0) unterstützt **xrmeshsubsystem** und **armeshmanager** für räumliche Zuordnung.
 
 ## <a name="holographic-remoting-setup"></a>Holographic Remoting-Setup
 
@@ -113,7 +114,7 @@ Als Referenz haben wir ein [Beispiel Projekt für QR-Nachverfolgung auf GitHub](
 
 ## <a name="whats-coming-soon"></a>Bald verfügbar
 
-Die folgenden Probleme und fehlenden Features sind mit der **Version 0.1.0** des openxr-Plug-ins von Mixed Reality bekannt. Wir arbeiten an diesen und veröffentlichen Korrekturen und neue Features in zukünftigen Versionen.
+Die folgenden Probleme und fehlenden Features sind mit der **Version 0.9.0** des openxr-Plug-ins von Mixed Reality bekannt. Wir arbeiten an diesen und veröffentlichen Korrekturen und neue Features in zukünftigen Versionen.
 
 * Die Unterstützung von **räumlichen Azure-Ankern** wird in einer zukünftigen Version angezeigt.
 * **ARM64** ist die einzige unterstützte Plattform für hololens 2-apps. Die **Arm** -Plattform wird in einer zukünftigen Version angezeigt.
