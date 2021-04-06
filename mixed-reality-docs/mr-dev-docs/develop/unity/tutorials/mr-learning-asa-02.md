@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: ca7eef92721afb24ae359ddf00e810ecc63c2eb4
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550400"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983143"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Erste Schritte mit Azure Spatial Anchors
 
@@ -56,7 +56,6 @@ Fügen Sie Ihrem Unity-Projekt das AzurespatialAnchors SDK V2.7.1 hinzu. Um die
 
 Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
 
-
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
 
@@ -68,7 +67,7 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 > Wenn CS0618-Warnungen angezeigt werden, dass „WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)“ veraltet ist, können Sie diese Warnungen ignorieren.
 
 > [!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 ## <a name="preparing-the-scene"></a>Vorbereiten der Szene
 

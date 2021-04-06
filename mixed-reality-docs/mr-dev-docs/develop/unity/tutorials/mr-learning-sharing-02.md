@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: dd4eb8400a7aac491cb893d19e18afc6d6401d1b
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 4b81ed3a78cc47f4ad0463cab085621102060dc8
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550240"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982763"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Einrichten von Photon Unity Networking
 
@@ -82,7 +82,7 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 ![Unity-Fenster „Hierarchie“, „Szene“ und „Projekt“ nach dem Importieren der Tutorialressourcen](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 > [!NOTE]
 > Nach dem Importieren des Pakets mit den MultiUserCapabilities-Tutorialressourcen werden im Konsolenfenster mehrere [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246)-Fehler angezeigt, die besagen, dass der Typ oder Namespace fehlt. Dies ist das erwartungsgemäße Verhalten, das im nächsten Abschnitt durch das Importieren der PUN-Ressourcen behoben wird.

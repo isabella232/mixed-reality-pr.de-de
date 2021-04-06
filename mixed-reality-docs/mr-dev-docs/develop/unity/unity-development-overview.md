@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730487"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982783"
 ---
 # <a name="unity-development-for-hololens"></a>Unity-Entwicklung für HoloLens
 
@@ -102,9 +102,9 @@ Bevor Sie sich auf eigene Faust in die Welt der Mixed Reality aufmachen, sollten
 
 |  Thema  |  Beschreibung  |
 | --- | --- |
-| [MRTK-Architektur – Übersicht](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | Erwerben Sie ein tieferes Verständnis der Funktionsweise des MRTK SDKs in Ihren Projekten |
-| [Einstellungen und Leistung](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | Erstellen Sie Profile für Ihre App, aktualisieren Sie Ihre Unity-Einstellungen, und erzielen Sie die bestmögliche Hologrammstabilisierung |
-| [Erste Schritte mit MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | Stellen Sie auf die alternative XR-Pipeline von Unity um |
+| [MRTK-Architektur – Übersicht](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Erwerben Sie ein tieferes Verständnis der Funktionsweise des MRTK SDKs in Ihren Projekten |
+| [Einstellungen und Leistung](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Erstellen Sie Profile für Ihre App, aktualisieren Sie Ihre Unity-Einstellungen, und erzielen Sie die bestmögliche Hologrammstabilisierung |
+| [Erste Schritte mit MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Stellen Sie auf die alternative XR-Pipeline von Unity um |
 
 ### <a name="unity-resources"></a>Unity-Ressourcen
 

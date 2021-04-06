@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 53cb83725bcc9f8f810ba40df5d08e81ec545f19
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583000"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105582231"
 ---
 # <a name="available-in-mrtk"></a>[In MRTK verfügbar](#tab/mrtk)
 
 |  Funktion  |  Funktionen  |
 | --- | --- |
-| [Grundlegende Interaktionen](../unity/mrtk-101.md) | Lernen Sie die Grundlagen der Interaktion mit Objekten im immersiven Raum kennen |
+| [Grundlegende Interaktionen](../../out-of-scope/mrtk-101.md) | Lernen Sie die Grundlagen der Interaktion mit Objekten im immersiven Raum kennen |
 | [Kamera](../unity/camera-in-unity.md) | Optimieren Sie die visuelle Qualität und die Stabilität von Hologrammen in Ihren Mixed Reality-Apps umfassend |
 | [Anvisieren](../unity/gaze-in-unity.md) | Ermöglichen Sie Benutzern das Anzielen von Hologrammen durch Anblicken |
 | [Motion-Controller](../unity/motion-controllers-in-unity.md) | Fügen Sie Ihren Mixed Reality-Apps räumliche Aktionen hinzu |

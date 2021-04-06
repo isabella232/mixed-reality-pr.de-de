@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, QuickInfos, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3c564c28485ca7e0595b9fd438af961dc5bc5986
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590382"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982963"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Erste Schritte mit Holographic Remoting am PC
 
@@ -67,7 +67,7 @@ Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoption der räumlich
 Laden Sie [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage) herunter, und **importieren** Sie das Paket.
 
 >[!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-04.md#importing-the-tutorial-assets).
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
 
 Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich wie die folgende Abbildung aussehen:
 

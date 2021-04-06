@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Sprachbefehle, Spracheingabe
 ms.localizationpriority: high
-ms.openlocfilehash: c87f3bb801b2fc32ed1aa42f2a4754bc83320587
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550250"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982935"
 ---
 # <a name="9-using-speech-commands"></a>9. Verwenden von Sprachbefehlen
 
@@ -23,14 +23,7 @@ In diesem Tutorial erfahren Sie, wie Sie Sprachbefehle erstellen und diese globa
 * Erfahren, wie Sprachbefehle erstellt werden
 * Erfahren, wie Sie Sprachbefehle global und lokal gesteuert werden
 
-## <a name="ensuring-the-microphone-capability-is-enabled"></a>Sicherstellen, dass die Mikrofonfunktion aktiviert ist
-
-Wählen Sie im Unity-Menü „Mixed Reality Toolkit > Utilities > **Configure Unity Project**“ (Mixed Reality Toolkit > Hilfsprogramme > Unity-Projekt konfigurieren) aus, um das Fenster **MRTK Project Configurator** (MRTK-Projektkonfigurator) zu öffnen, und überprüfen Sie dann im Abschnitt **UWP Capabilities** (UWP-Funktionen), ob die Funktion **Enable Microphone Capability** (Mikrofonfunktion aktivieren) grau dargestellt wird:
-
-![Aktivieren der Mikrofonfunktion](images/mr-learning-base/base-09-section1-step1-1.png)
-
-> [!NOTE]
-> Die Mikrofonfunktion hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#creating-and-configuring-the-scene) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
+[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
 
 ## <a name="creating-speech-commands"></a>Erstellen von Sprachbefehlen
 
