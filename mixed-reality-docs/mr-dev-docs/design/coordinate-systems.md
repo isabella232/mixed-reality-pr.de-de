@@ -98,7 +98,7 @@ Die oben beschriebenen Ober skalamöglichkeiten folgen einem "Schachteln von Pup
 |  **Ja** |  Nein |  - |  - |  - |  **Sitzen** | 
 |  **Ja** |  **Ja** |  Nein |  - |  - |  **Fortschritt** | 
 |  **Ja** |  **Ja** |  **Ja** |  Nein |  - |  **Steht-360 °** | 
-|  **Ja** |  **Ja** |  **Ja** |  **Ja** |  Nein |  **Raum** | 
+|  **Ja** |  **Ja** |  **Ja** |  **Ja** |  Nein |  **Versand** | 
 |  **Ja** |  **Ja** |  **Ja** |  **Ja** |  **Ja** |  **World** | 
 
 Der Stufen Rahmen des Verweises wird in hololens noch nicht unterstützt. Eine Raum basierte App auf hololens muss derzeit [räumliche Zuordnung](spatial-mapping.md) oder [Szenen Verständnis](scene-understanding.md) verwenden, um den Boden und die Wände des Benutzers zu ermitteln.
@@ -107,7 +107,7 @@ Der Stufen Rahmen des Verweises wird in hololens noch nicht unterstützt. Eine R
 
 Alle 3D-Grafikanwendungen verwenden [kartesische Koordinatensysteme](/windows/uwp/graphics-concepts/coordinate-systems) , um die Positionen und Ausrichtungen von virtuellen Objekten zu verwenden. Diese Koordinatensysteme richten drei senkrechte Achsen ein, um Objekte zu positionieren: eine X-, Y-und Z-Achse.
 
-In [gemischter Realität](../discover/mixed-reality.md)haben ihre apps Informationen zu virtuellen und physischen Koordinatensystemen. Windows Ruft ein Koordinatensystem auf, das in der physischen Welt ein **räumliches Koordinatensystem** hat.
+In [gemischter Realität ](../discover/mixed-reality.md)haben ihre apps Informationen zu virtuellen und physischen Koordinatensystemen. Windows Ruft ein Koordinatensystem auf, das in der physischen Welt ein **räumliches Koordinatensystem** hat.
 
 Räumliche Koordinatensysteme drücken ihre Koordinaten Werte in Meter. Dies bedeutet, dass Objekte, die zwei Einheiten in der X-, Y-oder Z-Achse ablegen, zwei Meter voneinander getrennt erscheinen, wenn Sie in gemischter Realität gerendert werden. Wenn Sie dies wissen, können Sie problemlos Objekte und Umgebungen in der realen Skalierung darstellen.
 
@@ -215,7 +215,7 @@ Manchmal können die Sensoren des Headsets nicht ermitteln, wo sich das Headset 
 
 * Der Raum ist dunkel
 * Wenn die Sensoren durch Haare oder Hände abgedeckt werden
-* , Wenn die Umgebung nicht über genügend Textur verfügt.
+* Wenn die Umgebung nicht über genügend Textur verfügt.
 
 Wenn dies der Fall ist, kann das Headset seine Position nicht mit ausreichender Genauigkeit nachverfolgen, um die Welt gesperrten holograms zu erzeugen. Sie können nicht herausfinden, wo ein räumlicher Anker, ein stationärer Frame oder ein stagingframe auf dem Gerät basiert. Sie können jedoch nach wie vor im angefügten Frame des Verweises Text mit gesperrtem Inhalt Rendering.
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605251"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105206"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ Bei der Erstellung von Mixed Reality-Apps mit Unity stehen Ihnen mehrere Hardwar
 |  Tool/SDK  |  Beschreibung  |
 | --- | --- |
 | [Mixed Reality-Toolkit für Unity](../unity/mrtk-getting-started.md) | Das Mixed Reality-Toolkit für Unity ist ein plattformübergreifendes Open-Source-Entwicklungskit, das entwickelt wurde, um die Entwicklung von Anwendungen für Microsoft HoloLens, immersive Windows Mixed Reality-Headsets (VR) und die OpenVR-Plattform zu beschleunigen. |
+| [Microsoft Mesh](/mesh/overview) – private Vorschau | Füllen Sie das Formular zum [Interesse an der Registrierung für Microsoft Mesh](https://aka.ms/meshsignup) aus, um auf dem neuesten Stand der Ankündigungen und Neuigkeiten zu Mesh zu bleiben. Mit Mesh können Sie virtuelle Besprechungen verbessern, virtuelle Entwurfssitzungen abhalten, andere Personen remote unterstützen und virtuelle Besprechungen hosten. |
 
 ## <a name="cloud-services"></a>Clouddienste
 
@@ -49,9 +50,10 @@ Sie können **Microsoft Dynamics 365-Leitfäden** verwenden, um holografische A
 ## <a name="examples"></a>Beispiele
 
 Wir haben mehrere Open-Source-[Beispiel-Apps](../features-and-samples.md), die Sie herunterladen können, um damit zu experimentieren und ein Gefühl für ein Mixed Reality-Endprodukt in Unity zu bekommen. Es stehen auch MRTK-Beispielszenen bereit, mit denen Sie bestimmte Features testen können:
-* [Szene mit Beispielen für Handinteraktion (MRTK) für Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor): Die Beispielszene „HandInteractionExamples.unity“ enthält verschiedene Typen von Interaktionen und Steuerelementen der Benutzeroberfläche, die artikulierte Handeingaben hervorheben.
 
-* [Beispiele für Eyetracking (MRTK) für Unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html): Auf dieser Seite erfahren Sie, wie Sie schnell mit der Verwendung der Blickverfolgung (Eyetracking) in MRTK beginnen können, indem Sie auf unseren bereitgestellten MRTK-Beispielen für die Blickverfolgung aufbauen.
+* [Szene mit Beispielen für Handinteraktion (MRTK) für Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples): Die Beispielszene „HandInteractionExamples.unity“ enthält verschiedene Typen von Interaktionen und Steuerelementen der Benutzeroberfläche, die artikulierte Handeingaben hervorheben.
+
+* [Beispiele für Eyetracking (MRTK) für Unity](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview): Auf dieser Seite erfahren Sie, wie Sie schnell mit der Verwendung der Blickverfolgung (Eyetracking) in MRTK beginnen können, indem Sie auf unseren bereitgestellten MRTK-Beispielen für die Blickverfolgung aufbauen.
 
 >[!NOTE]
 >Beide MRTK-Beispielszenen erfordern die Installation der Pakete MRTK Foundation und Example Unity.
@@ -106,7 +108,7 @@ Sie können **Microsoft Dynamics 365-Leitfäden** verwenden, um holografische A
 
 ![Web](../images/javascript_logo_banner.png)
 
-Die Geräte-API von WebXR ist eine offene Spezifikation, die es Ihnen ermöglicht, Mixed Reality-Apps in Ihrem Browser auf beliebigen Plattformen zu erleben. Informationen zu den ersten Schritten beim Entwickeln von Mixed Reality-Apps für beliebige Plattformen finden Sie in der [JavaScript-Entwicklungsübersicht](../web/javascript-development-overview.md).
+Die Geräte-API von WebXR ist eine offene Spezifikation, die es Ihnen ermöglicht, Mixed Reality-Apps in Ihrem Browser auf beliebigen Plattformen zu erleben. Informationen zu den ersten Schritten beim Entwickeln von Mixed Reality-Apps für beliebige Plattformen finden Sie in der [JavaScript-Entwicklungsübersicht](../javascript/javascript-development-overview.md).
 
 
 # <a name="native-openxr"></a>[Nativ (OpenXR)](#tab/native)
