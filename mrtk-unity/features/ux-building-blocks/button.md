@@ -409,7 +409,7 @@ Jedem Klavierschlüssel ist ein `PressableButton` -und ein- `NearInteractionTouc
 
 <img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Interaktionsfähig](interactable.md)
 * [Visuelle Designs](visual-themes.md)

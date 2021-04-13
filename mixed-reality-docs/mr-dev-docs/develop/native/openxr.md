@@ -110,7 +110,7 @@ Eine Einführung in die Hauptkomponenten der openxr-API sowie Beispiele der real
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * <a href="https://www.khronos.org/openxr/" target="_blank">Weitere Informationen zu openxr</a>
 * <a href="https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html" target="_blank">Openxr 1,0-Spezifikation</a>
