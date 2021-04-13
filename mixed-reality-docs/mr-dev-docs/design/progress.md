@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gemischte Windows Mixed Reality, Design, Steuerelemente, UI, UX, Fortschrittsanzeige, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: f323559c9a50a6f01636f0aba0bddc93b547125b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e949d8805446429d3853a3fedb1b776c50c710dd
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759846"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299735"
 ---
 # <a name="progress-indicator"></a>Statusanzeige
 
@@ -91,8 +91,8 @@ Es ist wichtig, dass Sie die Benutzerinformationen zu den Vorgängen bereitstell
 
 ## <a name="progress-indicator-in-mrtk-mixed-reality-toolkit-for-unity"></a>Fortschrittsanzeige in mrtk (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-Fortschrittsanzeige (Prefabs)](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
-* [Mrtk-Szenen Übergangs Dienst](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/extensions/scene-transition-service.md)
+* [Mrtk-Fortschrittsanzeige (Prefabs)](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/Features/UX/Prefabs/ProgressIndicators)
+* [Mrtk-Szenen Übergangs Dienst](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/extensions/scene-transition-service)
 
 
 <br>

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: Hololens (1st Gen), hololens 2, Mixed Reality, Cursors, Zielplattform, Blick, Gesten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Rays, Input
-ms.openlocfilehash: 0b35c832e6d13ff10d14686909754de60b83fa23
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 744e75f4212046b7c237a6c6634a4980e9148b0e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759416"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300085"
 ---
 # <a name="cursors"></a>Cursor
 
@@ -165,9 +165,9 @@ Das Entwerfen ohne Cursor wird empfohlen, wenn das Eintauchen eine wichtige Komp
 
 Standardmäßig stellt [mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity) eine Cursor-vorfab ([DefaultCursor. Prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) bereit, die denselben visuellen Zustand aufweist wie der System Cursor der Shell. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. Sie können diesen Cursor für Ihre Benutzeroberflächen ersetzen/anpassen. Für die Verwendung von Eye-Tracking-Eingaben bietet mrtk auch den "eyegazecursor", der über eine feine Visualisierung verfügt, um die Ablenkung zu minimieren.
 
-* [MRTK – Zeigerprofil](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/mixed-reality-configuration-guide.md#pointer-configuration)
-* [MRTK – Eingabesystem](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
-* [MRTK – Zeiger](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
+* [MRTK – Zeigerprofil](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK – Eingabesystem](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK – Zeiger](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

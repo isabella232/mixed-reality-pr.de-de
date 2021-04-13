@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Schaltfläche
-ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 177ccfc1c07df9a9523c9ed6733d3da61bdb7921
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759426"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299755"
 ---
 # <a name="button"></a>Schaltfläche
 
@@ -52,7 +52,7 @@ Mit einer Schaltfläche können Ihre Benutzer sofort Aktionen in gemischter Real
 * Komprimieren des Front-Käfigs
 * Pulse Effect on-Triggern.
 
-* Weitere Anweisungen und angepasste Beispiele finden Sie in der [mrtk-Schaltfläche](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) .
+* Weitere Anweisungen und angepasste Beispiele finden Sie in der [mrtk-Schaltfläche](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button) .
 
 <br>
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, Einstellungen, gemischte Realität, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Leistung, Qualitätseinstellungen, Beleuchtungseinstellungen, tiefen Puffer, XR, nach Verfolgungs Verlust
-ms.openlocfilehash: cc1d2692a172c84274299580a0ce580264f65fcf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b8da51bdc57d8586706d11e86ca3b7543023c119
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759696"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300125"
 ---
 # <a name="recommended-settings-for-unity"></a>Empfohlene Einstellungen für Unity
 
@@ -68,7 +68,7 @@ Außerdem wird empfohlen, unter der Einstellung **Tiefe Format** in diesem Panel
 
 Damit die Windows Mixed Reality-Plattform die – Hologramm-Stabilität optimieren kann, basiert Sie darauf, dass der tiefen Puffer genau ist und jedem gerenderten Hologramm auf dem Bildschirm entspricht. Daher ist bei der tiefen Puffer Freigabe in wichtig, wenn die Farbe gerendert wird, damit auch die Tiefe gerendert wird. In Unity werden die meisten nicht transparenten oder transparentcutout-Materialien standardmäßig in der Tiefe gerenden, aber transparente und Textobjekte Renten keine Tiefe, obwohl dies von Shader abhängig ist usw.
 
-Wenn Sie den [Mixed Reality Toolkit Standard-Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)verwenden, um Tiefe für transparente Objekte zu Renten:
+Wenn Sie den [Mixed Reality Toolkit Standard-Shader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)verwenden, um Tiefe für transparente Objekte zu Renten:
 
 1) Wählen Sie das transparente Material aus, das den mrtk-Standard-Shader verwendet, und öffnen Sie das Fenster Inspektor Editor.
 2) Wählen Sie in der Warnung "Tiefe Puffer Freigabe" die Schaltfläche **jetzt reparieren** aus. Dies kann auch manuell erfolgen, indem der **Renderingmodus** auf **Benutzer** definiert festgelegt wird. Legen Sie dann den **Modus** auf **transparent** fest, und legen Sie schließlich die **Tiefe Schreib** Vorgänge **auf**
@@ -114,8 +114,8 @@ So schalten Sie den Holographic-Begrüßungsbildschirm um:
 
 |  Unity-Begrüßungsbildschirm anzeigen  |  Holographic-Begrüßungs Bild  |  Verhalten |
 |----------|----------|----------|
-|  Andererseits  |  Keine  |  Standardmäßiger Unity-Begrüßungsbildschirm für 5 Sekunden oder bis zum Laden der App anzeigen, je nachdem, welcher Zeitraum länger ist. |
-|  Andererseits  |  Benutzerdefiniert  |  Benutzerdefinierten Begrüßungsbildschirm für 5 Sekunden oder bis zum Laden der App anzeigen, je nachdem, welcher Zeitraum länger ist. |
+|  Ein  |  Keine  |  Standardmäßiger Unity-Begrüßungsbildschirm für 5 Sekunden oder bis zum Laden der App anzeigen, je nachdem, welcher Zeitraum länger ist. |
+|  Ein  |  Benutzerdefiniert  |  Benutzerdefinierten Begrüßungsbildschirm für 5 Sekunden oder bis zum Laden der App anzeigen, je nachdem, welcher Zeitraum länger ist. |
 |  Aus  |  Keine  |  Zeigen Sie transparent Black (Nothing) an, bis die App geladen wird. |
 |  Aus  |  Benutzerdefiniert  |  Benutzerdefinierten Begrüßungsbildschirm für 5 Sekunden oder bis zum Laden der App anzeigen, je nachdem, welcher Zeitraum länger ist. |
 

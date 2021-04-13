@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759726"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300155"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 
@@ -301,15 +301,15 @@ Eine einfache Annäherung für den Leistungsvergleich von Shadern besteht darin,
 
 #### <a name="optimize-pixel-shaders"></a>Optimieren von Pixelshadern
 
-Beim Blick auf die compilierten Statistikergebnisse unter Verwendung der Methode oben zeigt sich, dass der [Fragmentshader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) im Mittel mehr Vorgänge als der [Vertexshader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) ausführt. Der Fragmentshader, auch als Pixelshader bezeichnet, wird pro Pixel der Bildschirmausgabe ausgeführt, während der Vertexshader nur pro Scheitelpunkt aller Gittermodelle ausgeführt wird, die auf dem Bildschirm gezeichnet werden. 
+Beim Blick auf die compilierten Statistikergebnisse unter Verwendung der Methode oben zeigt sich, dass der [Fragmentshader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) im Mittel mehr Vorgänge als der [Vertexshader](https://en.wikipedia.org/wiki/Shader#Vertex_shaders) ausführt. Der Fragmentshader, auch als Pixelshader bezeichnet, wird pro Pixel der Bildschirmausgabe ausgeführt, während der Vertexshader nur pro Scheitelpunkt aller Gittermodelle ausgeführt wird, die auf dem Bildschirm gezeichnet werden.
 
-Daher weisen Fragmentshader aufgrund der vielen Beleuchtungsberechnungen nicht nur mehr Anweisungen auf, sie werden auch fast immer auf einem größeren Dataset ausgeführt. Wenn die Bildschirmausgabe beispielsweise ein Bild mit 2.000 mal 2.000 Pixeln ist, kann der Fragmentshader 2.000*2.000 = 4.000.000 Mal ausgeführt werden. Wenn zwei Augen gerendert werden, verdoppelt sich diese Zahl, da zwei Bildschirme vorhanden sind. Wenn eine Mixed Reality-Anwendung mehrere Durchgänge, Nachbearbeitungseffekte im Vollbildmodus und/oder Rendering mehrerer Gittermodelle für das gleiche Pixel aufweist, erhöht sich diese Zahl dramatisch. 
+Daher weisen Fragmentshader aufgrund der vielen Beleuchtungsberechnungen nicht nur mehr Anweisungen auf, sie werden auch fast immer auf einem größeren Dataset ausgeführt. Wenn die Bildschirmausgabe beispielsweise ein Bild mit 2.000 mal 2.000 Pixeln ist, kann der Fragmentshader 2.000*2.000 = 4.000.000 Mal ausgeführt werden. Wenn zwei Augen gerendert werden, verdoppelt sich diese Zahl, da zwei Bildschirme vorhanden sind. Wenn eine Mixed Reality-Anwendung mehrere Durchgänge, Nachbearbeitungseffekte im Vollbildmodus und/oder Rendering mehrerer Gittermodelle für das gleiche Pixel aufweist, erhöht sich diese Zahl dramatisch.
 
 Daher können mit dem Verringern der Zahl der Vorgänge im Fragmentshader im Allgemeinen viel größere Leistungssteigerungen als durch Optimierungen im Vertexshader erreicht werden.
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternativen zu den Unity-Standardshadern
 
-Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) bereit, der für Mixed Reality-Projekte optimiert wurde.
+Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) bereit, der für Mixed Reality-Projekte optimiert wurde.
 
 Unity bietet darüber hinaus unlit (nicht beleuchtet), vertex lit (nach Scheitelpunkten beleuchtet), diffuse (diffus), und weitere vereinfachte Shaderoptionen, die im Vergleich schneller arbeiten als der Unity-Standardshader. Detailliertere Informationen finden Sie unter [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Verwendung und Leistung der integrierten Shader).
 

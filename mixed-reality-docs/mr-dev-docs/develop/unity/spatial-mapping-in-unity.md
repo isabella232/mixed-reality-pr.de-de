@@ -6,18 +6,19 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, räumliche Zuordnung, Renderer, Collider, Mesh, Scan, Komponente, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549950"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300165"
 ---
 # <a name="spatial-mapping-in-unity"></a>Räumliche Abbildung in Unity
 
 mithilfe der [räumlichen Zuordnung](../../design/spatial-mapping.md) können Sie Dreiecksnetze abrufen, die die Oberflächen weltweit um ein hololens-Gerät darstellen. Sie können Surface-Daten für die Platzierung, die oksion und die Raumanalyse verwenden, um für Ihre Unity-Projekte eine zusätzliche Verarbeitungs Möglichkeit zu erhalten.
 
 Unity bietet vollständige Unterstützung für die räumliche Zuordnung, die Entwicklern auf folgende Weise zur Verfügung gestellt wird:
+
 1. In mixedrealitytoolkit verfügbare räumliche Zuordnungskomponenten, die einen einfachen und schnellen Weg für den Einstieg in die räumliche Zuordnung bieten
 2. Räumliche Mapping-APIs auf niedrigerer Ebene, die Vollzugriff bieten und eine anspruchsvollere anwendungsspezifische Anpassung ermöglichen
 
@@ -51,6 +52,7 @@ Um die räumliche Zuordnung in der APP zu verwenden, muss die spatialperception-
 Damit eine APP räumliche Zuordnungs Daten verarbeiten kann, muss die spatialperception-Funktion aktiviert werden.
 
 Aktivieren der spatialperception-Funktion:
+
 1. Öffnen Sie im Unity-Editor den Bereich **"Player Einstellungen"** (Bearbeiten > Projekteinstellungen > Player).
 2. Wählen Sie auf der Registerkarte **"Windows Store"** aus.
 3. Erweitern Sie **"Veröffentlichungs Einstellungen"** , und überprüfen Sie die Funktion **"spatialperception"** in der Liste **"Funktionen"** .
@@ -59,6 +61,7 @@ Aktivieren der spatialperception-Funktion:
 > Wenn Sie Ihr Unity-Projekt bereits in eine Visual Studio-Projekt Mappe exportiert haben, müssen Sie entweder in einen neuen Ordner exportieren oder [Diese Funktion manuell in "appxmanifest" in Visual Studio festlegen](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
 
 Die räumliche Zuordnung erfordert auch ein maxversiongetestet von mindestens 10.0.10586.0:
+
 1. Klicken Sie in Visual Studio im Projektmappen-Explorer mit der rechten Maustaste auf " **Package. appxmanifest** ", und wählen Sie **Code anzeigen** aus.
 2. Suchen Sie die Zeile, in der **targetdevicefamily** angegeben ist, und ändern Sie **maxversiongete= "10.0.10240.0"** in **maxversiongete= "10.0.10586.0"** .
 3. **Speichern** Sie die Datei "Package. appxmanifest".
@@ -84,6 +87,7 @@ Der Collider der räumlichen Zuordnung ermöglicht die holografische Inhalts Int
 Wenn Sie physische Oberflächen visualisieren und mit ihnen interagieren möchten, können Sie Ihrer APP beide Komponenten hinzufügen.
 
 So verwenden Sie diese beiden Komponenten in ihrer Unity-App:
+
 1. Wählen Sie ein gameobject-Objekt in der Mitte des Bereichs aus, in dem Sie räumliche Oberflächen Netze erkennen möchten.
 2. **Fügen Sie** im Inspektor-Fenster Komponenten-XR-zuordnungszuordnungszuweisung  >    >   und- **Renderer für räumliche Zuordnung** hinzu
 
@@ -92,6 +96,7 @@ Weitere Informationen zur Verwendung dieser Komponenten finden Sie auf der <a hr
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Über die integrierten Komponenten für räumliche Zuordnung hinausgehen
 
 Diese Komponenten vereinfachen den Einstieg in die räumliche Zuordnung.  Wenn Sie fortfahren möchten, können Sie zwei Haupt Pfade untersuchen:
+
 * Wenn Sie eine eigene Mesh-Verarbeitung auf niedrigerer Ebene durchführen möchten, finden Sie im Abschnitt weiter unten Informationen zur Skript-API auf niedriger Ebene.
 * Informationen zu einer übergeordneten Mesh-Analyse finden Sie im Abschnitt weiter unten über die spatialunderstanding-Bibliothek in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">mixedrealitytoolkit</a>.
 
@@ -137,6 +142,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### <a name="handling-surface-changes"></a>Verarbeiten von Oberflächen Änderungen
 
 Es gibt mehrere Hauptfälle für die Behandlung von-hinzugefügten und aktualisierten, die denselben Codepfad verwenden und entfernt werden können.
+
 * In den hinzugefügten und aktualisierten Fällen fügen wir das gameobject-Objekt, das dieses Mesh darstellt, aus dem Wörterbuch hinzu, erstellen eine surfacedata-Struktur mit den erforderlichen Komponenten und rufen dann requestmeshdataasync auf, um das gameobject-Objekt mit den Netz Daten und der Position in der Szene aufzufüllen.
 * Im entfernten Fall entfernen wir das gameobject, das dieses Mesh darstellt, aus dem Wörterbuch und zerstören es.
 
@@ -268,7 +274,7 @@ Im Unity-Beispiel wandelt der Cursor einen Strahl in jedem Frame um. Zuerst für
 
 ### <a name="topology-queries"></a>Topologieabfragen
 
-Innerhalb der DLL übernimmt der topologiemanager die Bezeichnung der Umgebung. Wie bereits erwähnt, werden viele der Daten in Surfels gespeichert, das in einem Voxel-Volume enthalten ist. Außerdem wird die "playspaceinfos"-Struktur zum Speichern von Informationen über den Playspace verwendet, einschließlich der Welt Ausrichtung (weitere Details zu diesem unten), der Etage und der Höhe des ceiling. Heuristiken werden zum Bestimmen von Boden, Ceiling und Wänden verwendet. Beispielsweise wird die größte und niedrigste horizontale Oberfläche mit einer größer als 1-m2-Oberfläche als Floor betrachtet. 
+Innerhalb der DLL übernimmt der topologiemanager die Bezeichnung der Umgebung. Wie bereits erwähnt, werden viele der Daten in Surfels gespeichert, das in einem Voxel-Volume enthalten ist. Außerdem wird die "playspaceinfos"-Struktur zum Speichern von Informationen über den Playspace verwendet, einschließlich der Welt Ausrichtung (weitere Details zu diesem unten), der Etage und der Höhe des ceiling. Heuristiken werden zum Bestimmen von Boden, Ceiling und Wänden verwendet. Beispielsweise wird die größte und niedrigste horizontale Oberfläche mit einer größer als 1-m2-Oberfläche als Floor betrachtet.
 
 > [!NOTE]
 > Bei diesem Vorgang wird auch der Kamerapfad während des Scanvorgangs verwendet.
@@ -470,21 +476,23 @@ Der Scanvorgang, der vom "spatialunderstanding"-Verhalten gesteuert wird, ruft i
 
 ### <a name="understanding-mesh"></a>Grundlegendes zum Mesh
 
-Die Understanding dll speichert den Playspace intern als Raster von Voxel-Cubes mit 8 cm-Größen. Während des ersten Teils der Überprüfung wird eine Analyse der primären Komponenten abgeschlossen, um die Achsen des Raums zu ermitteln. Intern speichert Sie seinen Voxel-Bereich, der auf diese Achsen ausgerichtet ist. Ein Mesh wird ungefähr jede Sekunde generiert, indem die Isofläche aus dem Voxel-Volume extrahiert wird. 
+Die Understanding dll speichert den Playspace intern als Raster von Voxel-Cubes mit 8 cm-Größen. Während des ersten Teils der Überprüfung wird eine Analyse der primären Komponenten abgeschlossen, um die Achsen des Raums zu ermitteln. Intern speichert Sie seinen Voxel-Bereich, der auf diese Achsen ausgerichtet ist. Ein Mesh wird ungefähr jede Sekunde generiert, indem die Isofläche aus dem Voxel-Volume extrahiert wird.
 
 ![Generiertes Mesh, das vom Voxel-Volume erstellt wurde](images/su-custommesh.jpg)<br>
 *Generiertes Mesh, das vom Voxel-Volume erstellt wurde*
 
 ## <a name="troubleshooting"></a>Problembehandlung
+
 * Stellen Sie sicher, dass Sie die Funktion [spatialperception](#setting-the-spatialperception-capability) festgelegt haben
 * Wenn die Nachverfolgung verloren geht, entfernt das nächste onsurfacechanged-Ereignis alle Meshes.
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Räumliche Zuordnung im Mixed Reality Toolkit
-Weitere Informationen zur Verwendung der räumlichen Zuordnung mit Mixed Reality Toolkit v2 finden Sie im <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">Abschnitt räumliche</a> Informationen der mrtk-Dokumentation.
+
+Weitere Informationen zur Verwendung der räumlichen Zuordnung mit Mixed Reality Toolkit v2 finden Sie im <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">Abschnitt räumliche</a> Informationen der mrtk-Dokumentation.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren: 
+Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -497,6 +505,7 @@ Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
 ## <a name="see-also"></a>Weitere Informationen
+
 * [Koordinatensysteme](../../design/coordinate-systems.md)
 * [Koordinatensysteme in Unity](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

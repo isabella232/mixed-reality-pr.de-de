@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Interaktion, Design, HoloLens, Hände, fern, Zeigen und Ausführen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Handstrahlen, Objektmanipulation, MRTK, Mixed Reality Toolkit, DoF, Freiheitsgrade
-ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759866"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299805"
 ---
 # <a name="point-and-commit-with-hands"></a>Zeigen und Ausführen mit den Händen
 
@@ -202,15 +202,16 @@ Das Konzept des Zeigens und Ausführens für die ferne Interaktion wurde für da
 
 ## <a name="hand-ray-in-mrtk-mixed-reality-toolkit-for-unity"></a>Handlichtstrahl in MRTK (Mixed Reality Toolkit) für Unity
 
-Standardmäßig stellt das MRTK einen vorkonfigurierten Handlichtstrahl ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) zur Verfügung, der den gleichen visuellen Status wie der System-Handlichtstrahl der Shell aufweist. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. In einem immersiven Headset werden dieselben Strahlen für die Motion-Controller verwendet.
+Standardmäßig stellt das MRTK einen vorkonfigurierten Handlichtstrahl ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) zur Verfügung, der den gleichen visuellen Status wie der System-Handlichtstrahl der Shell aufweist. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. In einem immersiven Headset werden dieselben Strahlen für die Motion-Controller verwendet.
 
-* [MRTK – Zeigerprofil](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
-* [MRTK – Eingabesystem](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
-* [MRTK – Zeiger](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
+* [MRTK – Zeigerprofil](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK – Eingabesystem](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK – Zeiger](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 
 ## <a name="see-also"></a>Weitere Informationen
+
 * [Direkte Manipulation mit den Händen](direct-manipulation.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Hände – Direkte Manipulation](direct-manipulation.md)

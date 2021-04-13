@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver
 ms.localizationpriority: high
-ms.openlocfilehash: 5e231fe91c96dc8b6a7c07c6fdbc2c07286d6ab2
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: b2d23601419c36f2a79a0c6e19d06eda6dc54d09
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982983"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300395"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Erstellen dynamischer Inhalte mithilfe von Solvern
 
@@ -30,7 +30,7 @@ In diesem Tutorial lernen Sie Möglichkeiten zur dynamischen Platzierung von Hol
 
 ![Unity-Projektfenster mit ausgewähltem Ordner „Solvers“](images/mr-learning-base/base-05-section1-step1-1.png)
 
-In diesem Tutorial behandeln wir die Implementierung des Solvers Directional Indicator (Richtungsanzeige) und des Solvers Tap To Place (Zum Platzieren tippen). Weitere Informationen zur ganzen Bandbreite der im MRTK verfügbaren Solver finden Sie im [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+In diesem Tutorial behandeln wir die Implementierung des Solvers Directional Indicator (Richtungsanzeige) und des Solvers Tap To Place (Zum Platzieren tippen). Weitere Informationen zur ganzen Bandbreite der im MRTK verfügbaren Solver finden Sie im [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
 
 > [!NOTE]
 > Der Richtungsanzeige-Solver befindet sich nicht in den oben angegebenen Solver-Ordnern, sondern im Ordner „Packages“ > „Mixed Reality Toolkit Foundation“ > „SDK“ > „Experimental“ > „Features“ > „Utilities“, da es sich um ein experimentelles Feature handelt.
@@ -140,7 +140,7 @@ Wenn Sie das Testen des Features im Spielmodus abgeschlossen haben, klicken Sie 
 
 In diesem Tutorial haben Sie gelernt, wie Sie den Richtungsindikator-Solver aus dem MRTK dazu verwenden können, den Benutzer durch ein Benutzeroberflächenelement intuitiv zu Objekten zu führen. Sie haben darüber hinaus erfahren, wie der Zum-Platzieren-tippen-Solver verwendet wird, um die Position von Objekten auf einfache Weise zu ändern.
 
-Weitere Informationen zu diesen und anderen Solvern, die im MRTK enthalten sind, finden im [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver.md)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Weitere Informationen zu diesen und anderen Solvern, die im MRTK enthalten sind, finden im [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
 
 > [!div class="nextstepaction"]
 >[Nächstes Tutorial: 6. Erstellen der Benutzeroberfläche](mr-learning-base-06.md)

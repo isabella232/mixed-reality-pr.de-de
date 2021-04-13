@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: Gemischte Realität, hololens, UI-Steuerelemente, Interaktion, UI, UX, UX-Entwurf, räumliche Benutzeroberfläche, räumliche Interaktion, 3D-Benutzeroberfläche, 3D-UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: c9e1bf3e263214f9691f6c788f6115f93e690489
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 18e446f6b35e8073f939d065de3572204e2967a1
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759255"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299995"
 ---
 # <a name="dialog"></a>Dialog
 
@@ -33,7 +33,7 @@ Mrtk bietet Dialogfeld Steuerung in drei Größen mit einer oder zwei Schaltflä
 ![Screenshot der unterschiedlichen Größen Dialogfelder, die in hololens ausgeführt werden](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* Weitere Informationen finden Sie unter [mrtk-Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md).
+* Weitere Informationen finden Sie unter [mrtk-Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog).
 
 <br>
 

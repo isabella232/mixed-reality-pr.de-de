@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, fakboardingvorgang, tagparallel, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759406"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299885"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding und Tag-along
 
@@ -47,9 +47,9 @@ Ebenso wie wirklich mit dem Titel gesperrter Inhalt können sich taggingobjekte 
 ---
 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Fakboardingvorgang und tagparallel in mrtk (Mixed Reality Toolkit) für Unity
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts für das fakboardingverhalten und das tagbasierte Verhalten bereit. Weisen Sie das Billboard.cs-Skript einem beliebigen Objekt zu, um das Verhalten von Verhaltensweisen hinzuzufügen, und machen Sie das Objekt immer als Verwenden Sie das RadialView.cs-Skript, um das tagbasierte Verhalten hinzuzufügen. Sie können verschiedene Optionen wie z. b. lerping-Zeit, Entfernung und Grad anpassen.
+**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts für das fakboardingverhalten und das tagbasierte Verhalten bereit. Weisen Sie das Skript "Billboard. cs" einem beliebigen Objekt zu, um das Verhalten des fakboardings zu erhöhen und das Objekt immer zu erstellen. Verwenden Sie zum Hinzufügen eines tagbasierten Verhaltens das Skript "radialview. cs". Sie können verschiedene Optionen wie z. b. lerping-Zeit, Entfernung und Grad anpassen.
 
-* [-Solver der mrtk-radialen Ansicht](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
+* [-Solver der mrtk-radialen Ansicht](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [Mrtk-Billboard-Skript](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 

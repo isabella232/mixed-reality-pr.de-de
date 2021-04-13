@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Hand Coach, immersives Headset, mrtk, Hands, helfende Hand, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550070"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300045"
 ---
 # <a name="hand-coach"></a>Hand Coach
 
@@ -157,7 +157,7 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 *   Wenn Sie die Hände mindestens einmal gelehrt haben, wiederholen Sie die Geste nur, wenn erkannt wird, dass der Benutzer nicht mehr reagiert.
 *   Wenn bestimmte Finger-/uhrzeitanpositionen kritisch sind, stellen Sie sicher, dass Benutzer diese Nuancen in der Animation eindeutig sehen können. Probieren Sie die Hände, damit die wichtigsten Teile klar sichtbar sind. 
 * Wenn Sie feststellen, dass Sie eine Verzerrung haben, müssen Sie die Qualitätseinstellungen der Unity erhöhen, um die Anzahl der Knochen zu erhöhen. 
- Wechseln Sie zu Unity-> Projekteinstellungen > Quality > andere > Blend-Gewichtungen. Stellen Sie sicher, dass "4 Knochen" ausgewählt sind, um glatte Gelenke anzuzeigen. 
+ Wechseln Sie zu Unity-> Projekteinstellungen > Quality > andere > Blend-Gewichtungen. Stellen Sie sicher, dass "4 Knochen" ausgewählt sind, um glatte Gelenke anzuzeigen.
 
    ![Beispiel: Fenster "Projekteinstellungen"](images/HandCoach/ProjectSettings.png)<br>
 
@@ -167,11 +167,11 @@ Nachdem Sie mit ihrer Animation zufrieden sind
 * Skalieren der Hände zu groß
 * die Hände werden dem Benutzer zu nah platziert.
 * Hände sollten nur einmal vermittelt werden. Über lehrungen können Verwirrung und Verwirrung verursachen.
-*   Wenn Sie es in Unity einbinden, laden Sie den aktuellen mrtk hier herunter: https://github.com/microsoft/MixedRealityToolkit-Unity
-    *   Material: Teaching_Hand2
-    *   Skripts: siehe mrtk Guidelines for <a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md"> mrtk Hand Coach </a>
-    *   Pro-Projekt-Einstellung
-        *   Szene, die auf UWP festgelegt ist: Anweisungen finden Sie im [Unity-Projekt](../develop/unity/Configure-Unity-Project.md) für Windows Mixed Reality.
+* Wenn Sie es in Unity einbinden, laden Sie den aktuellen mrtk hier herunter: https://github.com/microsoft/MixedRealityToolkit-Unity
+  * Material: Teaching_Hand2
+  * Skripts: siehe mrtk Guidelines for <a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach"> mrtk Hand Coach </a>
+  * Pro-Projekt-Einstellung
+    * Szene, die auf UWP festgelegt ist: Anweisungen finden Sie im [Unity-Projekt](../develop/unity/Configure-Unity-Project.md) für Windows Mixed Reality.
 
 ## <a name="see-also"></a>Weitere Informationen
 

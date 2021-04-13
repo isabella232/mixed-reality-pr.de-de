@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Tastatur, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 9f42940b689a8fef77c9cf2f269100fccccfe6e0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d20fabb2536b028ce4c48aac84592bbdc3a0c291
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759856"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300435"
 ---
 # <a name="keyboard"></a>Tastatur
 
@@ -25,7 +25,7 @@ Ihre gemischte Reality-Anwendung kann die System Tastatur jederzeit aufrufen, wa
 
 ## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>System Tastatur in mrtk (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-System Tastatur](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/system-keyboard.md)
+* [Mrtk-System Tastatur](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -33,7 +33,7 @@ Ihre gemischte Reality-Anwendung kann die System Tastatur jederzeit aufrufen, wa
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Journey folgen, die wir gerade angelegt haben, besteht die nächste Aufgabe darin, Ihre Anwendung auf einem Gerät oder Emulator bereitzustellen. 
+Wenn Sie der Unity-Entwicklungs Journey folgen, die wir gerade angelegt haben, besteht die nächste Aufgabe darin, Ihre Anwendung auf einem Gerät oder Emulator bereitzustellen.
 
 > [!div class="nextstepaction"]
 > [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: portieren, Unity, Middleware, Engine, UWP, Win32
-ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5b89d3448a7baf12cc76dd3677140fcf6e297ee2
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759111"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299785"
 ---
 # <a name="porting-overview"></a>Übersicht zum Portieren
 
@@ -33,14 +33,13 @@ Es ist wichtig, Ihre Projekte auf dem neuesten Stand zu halten, unabhängig davo
 Unsere aktuelle Empfehlung für die Unity-Entwicklung mit gemischter Realität ist **Unity 2019 LTS mit dem alten XR-Paket**. Wenn Ihr Projekt das Mixed Reality Toolkit verwendet, überprüfen Sie, ob Sie die neueste Version verwenden, die zurzeit **mrtk-Unity 2,5** ist.
 
 > [!CAUTION]
-> Obwohl das XR SDK mit dieser Version von Unity verfügbar ist, ist Azure Spatial Anchor zurzeit mit diesem Setup nicht kompatibel. Diese Empfehlung wird mit einer zukünftigen Version des Azure Spatial Anchor-Pakets für Unity aktualisiert. 
+> Obwohl das XR SDK mit dieser Version von Unity verfügbar ist, ist Azure Spatial Anchor zurzeit mit diesem Setup nicht kompatibel. Diese Empfehlung wird mit einer zukünftigen Version des Azure Spatial Anchor-Pakets für Unity aktualisiert.
 > 
-> * Wenn Sie keine räumlichen Azure-Anker benötigen, können Sie [Ihr Unity-Projekt für XR konfigurieren und die](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ersten Schritte [mit dem mrtk-und XR SDK durchsetzen](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md).
+> * Wenn Sie keine räumlichen Azure-Anker benötigen, können Sie [Ihr Unity-Projekt für XR konfigurieren und die](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ersten Schritte [mit dem mrtk-und XR SDK durchsetzen](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk).
 > 
 > * Wenn Sie zurzeit das XR SDK in Ihrem Projekt verwenden und Azure Spatial Anchor verwenden möchten, deinstallieren Sie das SDK SDK, und installieren Sie das Legacy-XR-Paket erneut, um Ihre Projekteinstellungen wiederherzustellen.
 
-
-### <a name="unreal"></a>Unreal 
+### <a name="unreal"></a>Unreal
 
 Unsere aktuelle Empfehlung für die Unreal-Entwicklung mit gemischter Realität ist **Unreal Engine 4,26**. Wenn Ihr Projekt die Mixed Reality Toolkit-UX-Tools verwendet, stellen Sie sicher, dass Sie die neueste Version verwenden, die derzeit **UXT 0,10** ist.
 

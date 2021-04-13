@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: GGV, Voice, Cortana, Speech, Input, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Blick
-ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759141"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300295"
 ---
 # <a name="voice-input"></a>Spracheingabe
 
@@ -148,7 +148,7 @@ Es gibt viele Sprachbefehle, die Sie bei der Betrachtung bei einem – Hologramm
 **Hologram-Bearbeitungsbefehle**
 * Gesicht
 * Größer | Verbessern
-* Geringeren
+* Kleiner
 
 Auf hololens 2 können Sie auch natürlichere Interaktionen in Kombination mit Eye-Blick erstellen, die implizit Kontextinformationen über das, auf das Sie verweisen, bereitstellt. Beispielsweise könnten Sie ein Hologramm betrachten und "put this" ( _diese_) und _dann überprüfen_, wo Sie es platzieren möchten.
 Oder Sie können sich einen Holographic-Teil auf einem komplexen Computer ansehen und sagen: "Weitere Informationen zu _diesem_".
@@ -273,7 +273,7 @@ Für Anwendungen, die die von hololens bereitgestellten angepassten audioeingabe
 
 Die gesamte Audioverarbeitung ist Hardware beschleunigt. Dies bedeutet, dass die Features viel weniger Leistung als bei der Verarbeitung der hololens-CPU benötigen. Vermeiden Sie die Ausführung einer anderen audioeingabeverarbeitung auf der CPU, um die Akku Lebensdauer zu maximieren und die integrierte, offloaded audioeingabeverarbeitung zu nutzen.
 
-## <a name="languages"></a>Sprachen
+## <a name="languages"></a>Languages
 
 Hololens 2 [unterstützt mehrere Sprachen](/hololens/hololens2-language-support). Beachten Sie, dass Sprachbefehle immer in der Anzeige Sprache des Systems ausgeführt werden, auch wenn mehrere Tastaturen installiert sind oder wenn apps versuchen, eine Spracherkennung in einer anderen Sprache zu erstellen.
 
@@ -290,7 +290,7 @@ Für Windows Mixed Reality Developer Edition, Version 2017, funktioniert die aud
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>Spracheingabe in mrtk (Mixed Reality Toolkit) für Unity
 Mit **[mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** können Sie den Voice-Befehl problemlos für beliebige Objekte zuweisen. Verwenden Sie das **Spracheingabe Profil** von mrtk, um Ihre Schlüsselwörter zu definieren. Indem Sie das Skript " **speechinputhandler** " zuweisen, können Sie festlegen, dass jedes Objekt auf die im Spracheingabe Profil definierten Schlüsselwörter antwortet. Der speechinputhandler bietet auch eine Bezeichnung für die sprach Bestätigung, um das Vertrauen des Benutzers zu verbessern.
 
-* [Befehl "mrtk-Voice"](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
+* [Befehl "mrtk-Voice"](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

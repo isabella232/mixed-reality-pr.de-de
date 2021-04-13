@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Eye-Blick, Head-Eye, Unity, Hologram, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759686"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300365"
 ---
 # <a name="head-gaze-in-unity"></a>Kopf schauen in Unity
 
@@ -51,8 +51,9 @@ Obwohl das obige Beispiel ein einzelnes raycast aus der Update-Schleife auslöst
 
 Wie bei einem Mauszeiger auf einem Computer sollten Sie einen [Cursor](../../design/cursors.md) implementieren, der den Kopf des Benutzers darstellt. Wenn Sie wissen, mit welchem Inhalt ein Benutzer als Ziel dient, erhöhen Sie das Vertrauen in die Interaktion mit dem Benutzer.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Der Haupt Blick im Mixed Reality Toolkit 
-Sie können über den [Eingabe-Manager](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) in mrtk auf den Haupt Blick zugreifen.
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Der Haupt Blick im Mixed Reality Toolkit
+
+Sie können über den [Eingabe-Manager](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) in mrtk auf den Haupt Blick zugreifen.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
