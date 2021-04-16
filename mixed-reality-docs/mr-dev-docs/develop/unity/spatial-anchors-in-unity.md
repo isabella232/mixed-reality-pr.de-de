@@ -1,36 +1,65 @@
 ---
-title: Räumliche Anker in Unity
-description: Erfahren Sie, wie Sie räumliche Anker in Unity-Anwendungen mit gemischter Realität erstellen, speichern und abrufen.
+title: Weltsperren und Raumanker in Unity
+description: Erfahren Sie, wie Sie World Locking Tools und Raumanker in Unity Mixed Reality-Anwendungen verwenden.
 author: hferrone
 ms.author: v-hferrone
-ms.date: 03/16/2021
+ms.date: 04/7/2021
 ms.topic: article
-keywords: Unity, räumliche Anker, Anker Speicher, hololens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 665cdae56f271a061972922af835ff64bdc35496
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+keywords: Unity, Raumanker, Ankerspeicher, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Weltsperrtools, Hologramme
+ms.openlocfilehash: 4fc982244a766bb34f15b356d608f2aad18f7a88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623620"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528813"
 ---
-# <a name="spatial-anchors-in-unity"></a>Räumliche Anker in Unity
+# <a name="world-locking-and-spatial-anchors-in-unity"></a>Weltsperren und Raumanker in Unity
 
-Räumliche Anker sparen holograms im realen Raum zwischen Anwendungs Sitzungen. Nachdem Sie im Anker Speicher der hololens gespeichert wurden, können Sie gefunden und in verschiedene Sitzungen geladen werden. Sie sind ein idealer Fall Back, wenn keine Internetverbindung besteht.
+![Herobild der Weltsperrtools](images/wlt-img-01.jpeg)
+
+Das Abrufen ihrer Hologramme, um mit Ihnen zu bleiben, sich mit Ihnen zu bewegen oder sich in einigen Fällen relativ zu anderen Hologrammen zu positionieren, ist ein großer Teil der Erstellung Mixed Reality Anwendungen. Dieser Artikel führt Sie durch unsere empfohlene Lösung mithilfe von World Locking Tools, aber wir behandeln auch das manuelle Einrichten von Raumankern in Ihren Unity-Projekten. Bevor wir in code einsteigen, ist es wichtig zu verstehen, wie Unity Koordinatenraum und Anker in seiner eigenen Engine behandelt.
+
+## <a name="world-scale-coordinate-systems"></a>Koordinatensysteme auf Weltrang
+
+Heute besteht der typische Ansatz beim Schreiben von Spielen, Datenvisualisierungs-Apps oder Virtual Reality-Apps darin, ein absolutes **Weltkoordinatensystem** einzurichten, dem alle anderen Koordinaten zuverlässig zugeordnet werden können. In dieser Umgebung finden Sie immer eine stabile Transformation, die eine Beziehung zwischen zwei beliebigen Objekten in dieser Welt definiert. Wenn Sie diese Objekte nicht verschoben haben, bleiben ihre relativen Transformationen immer gleich. Diese Art von globalem Koordinatensystem ist leicht zu erreichen, wenn Sie eine rein virtuelle Welt rendern, in der Sie die gesamte Geometrie im Voraus kennen. Raumbezogene VR-Apps richten heute in der Regel diese Art absoluter Raumkoordinatensysteme mit ihrem Ursprung auf der Etage ein.
+
+Im Gegensatz dazu verfügt ein nicht weiter entferntes Mixed Reality-Gerät wie HoloLens über ein dynamisches sensorgesteuertes Verständnis der Welt und passt sein Wissen im Laufe der Zeit kontinuierlich an die Umgebung des Benutzers an, während er viele Meter über eine gesamte Etage eines Gebäudes führt. Wenn Sie all Ihre Hologramme in einem naiven starren Koordinatensystem platziert haben, würden diese Hologramme im Laufe der Zeit abdriften, entweder basierend auf der Welt oder relativ zueinander.
+
+Beispielsweise könnte das Headset derzeit glauben, dass zwei Standorte auf der Welt 4 Meter voneinander entfernt sind, und verfeinern später dieses Verständnis, da es lernt, dass die Standorte tatsächlich 3,9 Meter voneinander entfernt sind. Wenn diese Hologramme anfänglich 4 Meter voneinander entfernt in einem einzigen festen Koordinatensystem platziert worden wären, würde eines davon immer 0,1 Meter von der realen Welt entfernt erscheinen.
+
+Sie können raumbezogene Anker manuell in Unity platzieren, um die Position eines Hologramms in der physischen Welt zu erhalten, wenn der Benutzer mobil ist. Dies führt jedoch zu einer **Selbstkonsistenz** innerhalb der virtuellen Welt. Verschiedene Anker bewegen sich ständig in Beziehung zueinander und bewegen sich auch durch den globalen Koordinatenraum. In diesem Szenario werden einfache Aufgaben wie Layout schwierig und die Physikalische Simulation problematisch.
+
+**Die World Locking Tools** bieten Ihnen das Beste aus beiden Welten, indem sie ein einzelnes starres Koordinatensystem mit einer internen Bereitstellung von Raumankern über die virtuelle Szene verteilen, während sich der Benutzer bewegt. Die Tools analysieren die Koordinaten der Kamera und diese Raumanker in jedem Frame. Anstatt die Koordinaten aller Koordinaten auf der Welt zu ändern, um die Korrekturen in den Koordinaten des Kopfs des Benutzers zu kompensieren, korrigieren die Tools stattdessen einfach die Koordinaten des Kopfs.
+
+## <a name="choosing-your-world-locking-approach"></a>Auswählen ihres weltweiten Sperransatzes
+
+* **Es wird** empfohlen, world **locking Tools für** alle Ihre Hologrammpositionierungsanforderungen zu verwenden. 
+    * World Locking Tools bietet ein stabiles Koordinatensystem, das die sichtbaren Inkonsistenzen zwischen virtuellen und realen Markern minimiert. Anders ausgedrückt: Sie sperrt die gesamte Szene mit einem gemeinsamen Pool von Ankern, anstatt jede Gruppe von Objekten mit dem eigenen individuellen Anker der Gruppe zu sperren.
+* **Für Unity 2019/2020 mit OpenXR oder dem Windows XR-Plug-In** müssen Sie **ARAnchorManager** verwenden.
+* **Für ältere Unity-Versionen oder WSA-Projekte** müssen Sie **WorldAnchor** verwenden.
+
+## <a name="setting-up-world-locking"></a>Einrichten von World Locking 
+
+[!INCLUDE[](includes/world-locking/world-locking-setup.md)]
+
+## <a name="persistent-world-locking"></a>Permanente Weltsperrung
+
+Raumanker speichern Hologramme zwischen Anwendungssitzungen im realen Raum. Nachdem sie im Ankerspeicher der HoloLens gespeichert wurden, können sie in verschiedenen Sitzungen gefunden und geladen werden und sind ein idealer Fallback, wenn keine Internetverbindung besteht.
 
 > [!IMPORTANT]
 > Lokale Anker werden auf dem Gerät gespeichert, während Azure-Raumanker in der Cloud gespeichert werden. Wenn Sie Azure Cloud Services zum Speichern Ihrer Anker verwenden möchten, verfügen wir über ein Dokument, in dem Sie durch den Integrationsprozess für [Azure-Raumanker](../mixed-reality-cloud-services.md#azure-spatial-anchors) geführt werden. Beachten Sie, dass Sie sowohl lokale als auch Azure-Anker im selben Projekt haben können, ohne dass Konflikte auftreten.
 
-## <a name="understanding-anchors"></a>Grundlegendes zu Anker
+[!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-[!INCLUDE[](includes/unity-understanding-anchors.md)]
+## <a name="sharing-coordinate-spaces"></a>Freigeben von Koordinatenbereichen 
 
-## <a name="using-the-anchorstore"></a>Verwenden des anchorstores
+Wenn Sie einen weltweit gesperrten Koordinatenraum freigeben möchten, sehen Sie sich unsere umfassende [Dokumentation zur gemeinsamen Erfahrung](shared-experiences-in-unity.md)an.
 
-[!INCLUDE[](includes/unity-spatial-anchorstore.md)]
+Beachten Sie, dass Azure Spatial Anchors noch nicht direkt in World Locking Tools unterstützt wird. Daher müssen Sie für freigegebene Erfahrungen manuell Raumanker erstellen.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Prüf Punkt Journey folgen, die wir gerade angelegt haben, sind Sie in der Mitte, dass Sie die Grundbausteine der gemischten Realität erkunden. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie die von uns festgelegte Unity-Entwicklungsprüfpunkt-Journey verfolgen, sind Sie dabei, die Mixed Reality wichtigsten Bausteine zu untersuchen. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Räumliche Abbildung](spatial-mapping-in-unity.md)
@@ -43,10 +72,14 @@ Oder fahren Sie mit den Funktionen und APIs der Mixed Reality-Plattform fort:
 Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#2-core-building-blocks) zurückkehren.
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Dauerhaftigkeit räumlicher Anker](../../design/coordinate-systems.md#spatial-anchor-persistence)
+* [Einführung in die World Locking Tools](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/IntroFAQ.html)
+* [Schnellstarthandbücher](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/QuickStart.html)
+* [Tutorials](https://microsoft.github.io/MixedReality-WorldLockingTools-Samples/Tutorial/01_Minimal/01_Minimal.html)
+* [Beispiele](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/SampleApplications.html)
+* [Persistenz des Raumankers](../../design/coordinate-systems.md#spatial-anchor-persistence)
 * <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchor SDK für Unity</a>
-* [Skalierungsmöglichkeiten](../../design/coordinate-systems.md#mixed-reality-experience-scales)
+* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">Azure Spatial Anchors SDK für Unity</a>
+* [Erfahrungsskala](../../design/coordinate-systems.md#mixed-reality-experience-scales)
 * [Räumliche Phase](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Verfolgbarkeitsverlust in Unity](tracking-loss-in-unity.md)
 * [Raumanker](../../design/spatial-anchors.md)
