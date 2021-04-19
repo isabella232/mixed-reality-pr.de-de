@@ -168,11 +168,13 @@
                   href: unity/tutorials/mr-azure-301.md
     - name: Einrichten Ihres Projekts
       items:
-        - name: Einführung in MRTK
-          href: unity/mrtk-getting-started.md
-        - name: Konfigurieren von Projekten ohne MRTK
-          href: unity/configure-unity-project.md
-        - name: Verwenden des Mixed Reality OpenXR-Plug-Ins
+        - name: Auswählen einer Unity-Version und eines XR-Plug-Ins
+          href: unity/choosing-unity-version.md
+        - name: Verwenden der integrierten Legacy-XR-Unterstützung
+          href: unity/legacy-xr-support.md
+        - name: Verwenden des Windows XR-Plug-Ins
+          href: unity/windows-xr-plugin.md
+        - name: Verwenden des OpenXR-Plug-Ins
           href: unity/openxr-getting-started.md
         - name: Unterstützte Funktionen des OpenXR-Plug-Ins
           href: unity/openxr-supported-features.md
@@ -194,8 +196,10 @@
       items:
         - name: Kamerasetup
           href: unity/camera-in-unity.md
-        - name: Raumanker
+        - name: Weltsperren und Raumanker
           href: unity/spatial-anchors-in-unity.md
+        - name: Gemeinsame Erfahrung
+          href: unity/shared-experiences-in-unity.md
         - name: Interaktionen
           items:
             - name: Bewegungscontroller
@@ -216,8 +220,6 @@
           href: unity/spatial-sound-in-unity.md
     - name: Erweiterte Funktionen
       items:
-        - name: Gemeinsame Erfahrung
-          href: unity/shared-experiences-in-unity.md
         - name: Foto-/Videokamera in Unity
           href: unity/locatable-camera-in-unity.md
         - name: Holographic Remoting in der Desktop-App
