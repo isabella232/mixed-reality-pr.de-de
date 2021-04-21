@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237141"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528721"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Unity-Entwicklung für VR und Windows Mixed Reality
 
@@ -34,13 +34,23 @@ Es gibt eine kleine Gruppe von Unity-Einstellungen, die Sie für die Entwicklung
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
 | [Installieren der neuesten Tools](../install-the-tools.md) | Laden Sie das aktuellste Unreal-Paket herunter, installieren Sie es, und richten Sie Ihr Projekt für Mixed Reality ein |
-| [Konfigurieren Ihres Projekts für WMR](configure-unity-project.md) | Erfahren Sie, wie Sie Anwendungen erstellen, die digitale Inhalte auf holografischen und VR-Anzeigegeräten darstellen |
+| [Konfigurieren Ihres Projekts für WMR](windows-xr-plugin.md) | Erfahren Sie, wie Sie Anwendungen erstellen, die digitale Inhalte auf holografischen und VR-Anzeigegeräten darstellen |
+
+> [!IMPORTANT]
+> Weitere Informationen zum Einrichten Ihrer Projekte finden Sie in unserem [Konfigurationshandbuch](choosing-unity-version.md) für Unity-Projekte.
 
 ### <a name="2-core-building-blocks"></a>2. Grundbausteine
 
 Nachdem Sie ein neues immersives Projekt begonnen haben, benötigen Sie einige Grundbausteine zum Entwickeln immersiver Apps. Alle Hauptbausteine für Mixed Reality-Anwendungen werden in einer Weise verfügbar gemacht, die mit anderen Unity-APIs konsistent ist. Sie benötigen sie möglicherweise nicht alle auf einmal, aber wir empfehlen Ihnen, sich frühzeitig mit ihnen vertraut zu machen. Nachdem Sie sich mit den unten aufgeführten Grundbausteinen beschäftigt haben, verfügen Sie über eine mit Funktionen angefüllte Toolbox, die Sie in ein VR-Projekt integrieren können.
 
-[!INCLUDE[](../includes/unity-building-blocks-wmr.md)]
+|  Funktion  |  Funktionen  |
+| --- | --- |
+| [Kamera](../unity/camera-in-unity.md) | Optimieren Sie die visuelle Qualität und die Stabilität von Hologrammen in Ihren Mixed Reality-Apps umfassend |
+| [Sperren der Welt und Raumanker](spatial-anchors-in-unity.md) | Löst Stabilisierungsprobleme, implementiert eine Kameraanpassung und integriert eine stabile Koordinatensystemlösung || [Motion-Controller](../unity/motion-controllers-in-unity.md) | Fügen Sie Ihren Mixed Reality-Apps räumliche Aktionen hinzu |
+| [Gesten](../unity/gestures-in-unity.md) | Verwenden Sie Handgesten als Eingabe in ihren Mixed Reality-Umgebungen |
+| [Raumklang](../unity/spatial-sound-in-unity.md) | Verbessern Sie Ihre Apps mit immersivem 3D-Audio |
+| [Text](../unity/text-in-unity.md) | Erhalten Sie scharfen Text in hoher Qualität mit in Größe und Qualität beherrschbarem Rendering |
+| [Spracheingabe](../unity/voice-input-in-unity.md) | Erfassen Sie gesprochene Schlüsselwörter, Ausdrücke und Diktate von Benutzern|
 
 ### <a name="3-advanced-features"></a>3. Erweiterte Features
 

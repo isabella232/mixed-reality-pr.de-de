@@ -3,16 +3,16 @@ title: Konfigurieren des Mixed Reality-Featuretools
 description: Erfahren Sie, wie Sie Mixed Reality Unity-Pakete über das MR-Featuretool für die HoloLens- und VR-Entwicklung herunterladen und installieren.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: 4201f96ac87a6e9ab33607072c0d8f5f50df38a1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5b61924ccf4d3eb5f5433c9042582ff2a850bb04
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99243929"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107731949"
 ---
 # <a name="configuring-the-mixed-reality-feature-tool"></a>Konfigurieren des Mixed Reality-Featuretools
 
@@ -22,13 +22,14 @@ Beim Verwenden des Mixed Reality-Featuretools haben Sie Zugriff auf drei verschi
 * [Featureeinstellungen](#feature-settings)
 * [Importieren von Einstellungen](#import-settings)
 
-![Einstellungen](images/FeatureToolSettings.png)
-
 ## <a name="download-settings"></a>Downloadeinstellungen
+
+![Downloadeinstellungen](images/FeatureToolSettings-Download.png)
 
 ### <a name="overwrite-existing-package-files"></a>Vorhandene Paketdateien überschreiben
 
 Wenn Sie diese Einstellung aktivieren, werden die Paketdateien bei jedem Abrufen heruntergeladen. 
+
 * **Wir empfehlen, diese Option deaktiviert zu lassen, um den Verbrauch an Netzwerkbandbreite zu verringern**
 * Standardmäßig werden zuvor erworbene Featurepaketdateien nicht erneut heruntergeladen.
 
@@ -41,7 +42,9 @@ Wenn Sie diese Einstellung aktivieren, werden die Paketdateien bei jedem Abrufen
 
 ## <a name="feature-settings"></a>Featureeinstellungen
 
-### <a name="include-preview-releases"></a>Vorabversionen einschließen
+![Featureeinstellungen](images/FeatureToolSettings-Feature.png)
+
+### <a name="show-preview-releases"></a>Vorschauversionen anzeigen
 
 Aktivieren Sie diese Einstellung, um Vorschauversionen zu erhalten.
 * Standardmäßig werden Vorschauversionen nicht im Mixed Reality-Featuretool angezeigt 
@@ -49,20 +52,53 @@ Aktivieren Sie diese Einstellung, um Vorschauversionen zu erhalten.
 > [!NOTE]
 > Eine Vorschauversion ist dadurch gekennzeichnet, dass sie die Bezeichnung **"-preview"** in der Paketversion enthält.
 
+### <a name="show-early-access-program-features"></a>Features des Early Access-Programms anzeigen
+
+Aktivieren Sie diese Einstellung, um Features aus registrierten Releases von Early Access-Programmen zu erhalten.
+
+* Standardmäßig werden Early Access-Features nicht im Mixed Reality-Featuretool angezeigt. 
+
+> [!NOTE]
+> Die Aktivierung von `Show early access program features` ohne `Show preview releases` kann dazu führen, dass Early Access-Pakete nicht in der Ermittlung angezeigt werden.
+
 ## <a name="import-settings"></a>Importieren von Einstellungen
+
+![Importieren von Einstellungen](images/FeatureToolSettings-Import.png)
 
 ### <a name="replace-existing-package-files"></a>Vorhandene Paketdateien ersetzen
 
 Standardmäßig entfernt das Mixed Reality-Featuretool vorherige Exemplare von Paketen, die importiert werden, um die Dateigröße und unnötige Berechnungen zu verringern. 
+
 * Deaktivieren Sie diese Einstellung, wenn Sie alle Versionen behalten möchten.
 
 ### <a name="project-relative-import-path"></a>Relativer Importpfad des Projekts
 
 Ändern Sie diese Einstellung, um den Ordnerpfad des Projekts zu aktualisieren, in den Featurepakete beim Importieren kopiert werden. 
+
 * Wenn der Projektordner beispielsweise **C:\GalaxyExplorer** ist, lautet der vollqualifizierte Importpfad **C:\GalaxyExplorer\Packages\MixedReality**.
 
 > [!NOTE]
 > Diese Einstellung ist in dieser Version **schreibgeschützt**. In zukünftigen Versionen wird diese Einstellung möglicherweise konfigurierbar.
+
+## <a name="early-access-settings"></a>Early Access-Einstellungen
+
+![Early Access-Einstellungen](images/FeatureToolSettings-EarlyAccess.png)
+ 
+### <a name="ask-for-confirmation-before-removing-an-early-access-program"></a>Vor dem Entfernen eines Early Access-Programms zur Bestätigung auffordern
+
+Diese Einstellung bestimmt, ob jedes Mal, wenn ein Early Access-Programm entfernt wird, eine Benachrichtigung angezeigt wird.
+
+### <a name="my-previews"></a>Meine Vorschauversionen
+
+Die Liste der registrierten Early Access-Programme. Verwenden Sie die Schaltflächen `Add`, `Edit` und `Remove`, um die Sammlung der registrierten Programme zu verwalten.
+
+## <a name="diagnostic-settings"></a>Diagnoseeinstellungen
+
+![Diagnoseeinstellungen](images/FeatureToolSettings-Diagnostics.png)
+
+### <a name="log-file"></a>Protokolldatei
+
+Zeigt den Pfad zur Datei des Diagnoseprotokolls an.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -3,16 +3,16 @@ title: Ermitteln und Erwerben von Features
 description: Ermitteln und Herunterladen von Mixed Reality-Features.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230715"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107732008"
 ---
 # <a name="discovering-and-acquiring-features"></a>Ermitteln und Erwerben von Features
 
@@ -37,6 +37,10 @@ Die Kategoriekopfzeile im Screenshot oben enthält von links nach rechts die fol
 - Kategoriename (Bsp.: Mixed Reality-Toolkit)
 - Anzahl der ausgewählten Features
 - Anzahl der verfügbaren Features
+- Abschnittsschaltflächen
+
+> [!NOTE]
+> Die Auswahlschaltflächen sind kontextsensitiv. Basierend auf dem Status der Featureauswahl innerhalb der Kategorie wird eine oder werden beide der Schaltflächen `Select All` und `Select None` angezeigt.
 
 ### <a name="feature"></a>Funktion
 
@@ -49,6 +53,9 @@ Die Features werden in der entsprechenden Kategorie aufgelistet. Die Featureeint
 - Liste der verfügbaren Versionen
 - Link zu den [Featurepaketdetails](viewing-package-details.md)
 
+> [!NOTE]
+> Wenn ein Feature von einem Early Access-Programm (auch als private Vorschauversion bezeichnet) bereitgestellt wird, wird ein Indikatorsymbol ![Early Access](images/EarlyAccess.png) angezeigt.
+
 ## <a name="refresh-the-feature-catalog"></a>Aktualisieren des Featurekatalogs
 
 Zur Suche nach neuen und aktualisierten Features klicken Sie auf die Schaltfläche zum Aktualisieren ![Schaltfläche „Aktualisieren“](images/RefreshButton.png) Schaltfläche. Dadurch wird eine Verbindung mit der Katalogwebsite hergestellt, und die neuesten Informationen werden abgerufen. Nachdem der Katalog gelesen wurde, werden das Datum und die Uhrzeit des letzten Updates angezeigt.
@@ -58,6 +65,8 @@ Zur Suche nach neuen und aktualisierten Features klicken Sie auf die Schaltfläc
 Sie wählen Features aus, indem Sie eine Kategorie erweitern, eine Version auswählen und auf das Kontrollkästchen klicken:
 
 ![Ausgewählte Features](images/SelectedFeatures.png)
+
+Zum Auswählen jedes Pakets innerhalb einer Kategorie steht eine Schaltfläche `Select All` zur Verfügung. `Select None` deaktiviert die Auswahl aller ausgewählten Pakete. 
 
 Jede Kategorie mit mindestens einem ausgewählten Feature wird aktualisiert, um die Anzahl anzuzeigen.
 

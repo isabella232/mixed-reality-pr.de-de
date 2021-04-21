@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, TextMeshPro
 ms.localizationpriority: high
-ms.openlocfilehash: c9cf580b1123002e9e8cdfd5c3914c3aa39e2825
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: b0b8d97471dfae9d6dc6bbee26079af04f97de62
+ms.sourcegitcommit: 94ae851f78e5b861af601b445f8f0a3405197c40
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003129"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107716021"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2. Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung
 
@@ -186,7 +186,7 @@ Wiederholen Sie diesen Vorgang, um dem Cube eine Komponente vom Typ **Near Inter
 > [!NOTE]
 > Im Rahmen dieses Tutorials wurden dem Cube-Objekt bereits Collider hinzugefügt. Weitere Informationen zu Collidern finden Sie in der Unity-Dokumentation zu <a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">Collidern</a>.
 
-Zum Testen im Unity-Editor können Sie in den Spielmodus wechseln und die **LeftShift**-Taste oder die **Leertaste** gedrückt halten, um den Controller zu aktivieren. Durch die Mausbewegung wird der Controller bewegt, und mithilfe des Mausrads ist zudem eine Bewegung weiter weg von der Kamera bzw. näher hin zur Kamera möglich. Wenn sich der Zeiger auf dem Cube befindet, halten Sie die **rechte Maustaste** gedrückt, um das Cube-Objekt zu verschieben.
+Zum Testen im Unity-Editor können Sie in den Spielmodus wechseln und die **LeftShift**-Taste oder die **Leertaste** gedrückt halten, um den Controller zu aktivieren. Durch die Mausbewegung wird der Controller bewegt, und mithilfe des Mausrads ist zudem eine Bewegung weiter weg von der Kamera bzw. näher hin zur Kamera möglich. Wenn sich der Zeiger auf dem Cube befindet, halten Sie die **linke Maustaste** gedrückt, um das Cube-Objekt zu verschieben.
 
 ![Spielmodus](images/mr-learning-base/base-02-section8-step1-4.png)
 
