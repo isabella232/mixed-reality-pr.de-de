@@ -1,62 +1,62 @@
 ---
 title: Problembehandlung bei Windows Mixed Reality
-description: Bleiben Sie mit der Windows Mixed Reality-Problembehandlung auf dem neuesten Stand, das über unsere standardmäßige consumerdienstdokumentation hinausgeht
+description: Halten Sie sich über Windows Mixed Reality Problembehandlung auf dem Laufenden, die über unsere Standarddokumentation für den Kundensupport hinausgeht.
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Problembehandlung, Fehler, Hilfe, Support
-ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Problembehandlung, Fehler, Hilfe, Support
+ms.openlocfilehash: 2fbdb434eb3ccc0a327af990b4f4854faafbdf85
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009480"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944641"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>Problembehandlung bei Windows Mixed Reality (FAQs)
 
-![Header Logo zur Problembehandlung](images/1050px-Mixedrealityportal.png)
+![Kopfzeilenlogo zur Problembehandlung](images/1050px-Mixedrealityportal.png)
 
-## <a name="whats-new"></a>Neues!
+## <a name="whats-new"></a>Neuerungen!
 
-Beachten Sie, dass wir eine [dedizierte FAQ-Seite](reverbG2-faq.md) für alle Dinge von G2 kompiliert haben. In diesem Artikel werden alle Aspekte von Verbindungsproblemen und Bild Übersichtlichkeit bis hin zu Bewegungs Controllern und der Ausführung gemischter Realität behandelt
+Zu Zwecken des neu veröffentlichten HP Reverb G2-Headsets und der -Controller haben wir eine [dedizierte FAQ-Seite](reverbG2-faq.yml) für alle Dinge G2 zusammengestellt. In diesem Artikel wird alles behandelt, von Verbindungsproblemen und Bildklarheit über Motion Controller-Probleme bis hin zur Ausführung Mixed Reality.
 
 ## <a name="troubleshooting-topics"></a>Themen zur Problembehandlung
 
-Wenn Sie Probleme mit der immersiven Hardware haben, ist es wichtig, den allgemeinen Problembereich zu diagnostizieren und in den folgenden Artikeln eine ausführlichere Hilfe zu finden. 
+Wenn Sie Probleme mit Ihrer immersiven Hardware haben, ist es wichtig, den allgemeinen Problembereich zu diagnostizieren. Ausführlichere Hilfe finden Sie in den folgenden Artikeln. 
 
-### <a name="installation-and-setup-issues"></a>Probleme bei der Installation und Einrichtung
+### <a name="installation-and-setup-issues"></a>Installations- und Setupprobleme
 
-Weitere Informationen zu Problemen mit der Installation und Ausführung von Windows Mixed Reality, Setup Fehlern, Mindestanforderungen an PCs oder Administrator Berechtigungen finden Sie in den folgenden beiden FAQs:
+Informationen zu Problemen mit der Installation, der Ausführung Windows Mixed Reality, Setupfehlern, mindesten PC-Anforderungen oder Administratorberechtigungen finden Sie in den folgenden beiden häufig gestellten Fragen:
 
 - [Installationsfehler](installation_errors.md)
-- [Einrichtung](wmr-setup-faq.md)
+- [Einrichtung](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>Hardwareprobleme
 
-In den folgenden Artikeln finden Sie Informationen zu Problemen mit dem physischen Headset-Gerät, Kabelverbindungen, Verbindungsfehlern, dem Starten des Mixed Reality-Portals und schwarzen oder leeren Headset-anzeigen:
+Informationen zu Problemen mit Ihrem physischen Headsetgerät, Kabelverbindungen, Verbindungsfehlern, dem Starten der Mixed Reality-Portal und schwarzen oder leeren Headsetanzeigen finden Sie in den folgenden Artikeln:
 
 - [Headset-Konnektivität](headset-connectivity.md)
 - [Headset-Anzeige](headset-display.md)
 - [Motion-Controller](motion-controller-problems.md)
 
-### <a name="core-experience-issues"></a>Grundlegende Probleme
+### <a name="core-experience-issues"></a>Grundlegende Probleme mit der Benutzeroberfläche
 
-Wenn Sie Probleme beim Erstellen von Grenzen haben, hören oder nicht hören von Sounds, Bluetooth-Audio oder der Headset-Nachverfolgung, sehen Sie sich die folgenden FAQs an:
+Wenn Sie Probleme beim Erstellen von Grenzen, Hören oder Nichthören von Audio, Bluetooth-Audio oder Headset-Nachverfolgung haben, lesen Sie die folgenden häufig gestellten Fragen:
 
 - [Standortgrenzen](boundary-questions.md)
 - [Sprache und Audio](speech-and-audio.md)
 - [Nachverfolgungssystem](tracking.md)
 
-### <a name="vr-experience-issues"></a>VR-Erfahrungs Probleme
+### <a name="vr-experience-issues"></a>Probleme mit der VR-Umgebung
 
-Wenn Sie Probleme mit steamvr-spielen haben, den Windows-Entwicklermodus installieren oder webvr-Inhalte in einem Browser anzeigen, sind die folgenden Artikel die folgenden:
+Wenn Sie Probleme mit SteamVR-Spielen, der Installation des Windows-Entwicklermodus oder dem Anzeigen von WebVR-Inhalten in einem Browser haben, finden Sie in den folgenden Artikeln Folgendes:
 
 - [SteamVR](steamvr-questions.md)
 - [WebVR](webvr-questions.md)
 
 ### <a name="performance-issues"></a>Leistungsprobleme 
 
-Wenn Sie auf dem PC langsam arbeiten, sich im Hintergrund im Hintergrund befinden oder nur die visuellen Elemente sehen, haben wir die folgenden Themen abgedeckt:
+Wenn Ihr PC langsam ausgeführt wird, im Kopf zu warm wird oder einfach nur geschnittene Visuals erleben, werden sie behandelt:
 
 - [Leistung](performance-questions.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen:
 - [Weitere Fragen](other-questions.md)
