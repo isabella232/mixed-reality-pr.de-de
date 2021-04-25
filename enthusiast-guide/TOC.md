@@ -9,7 +9,7 @@
 ### [Anschließen Ihres Headsets](plug-in-your-headset.md)
 ### [Installieren von Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [Einrichten von Windows Mixed Reality](set-up-windows-mixed-reality.md)
-### [Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup](wmr-setup-faq.md)
+### [Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup](wmr-setup-faq.yml)
 
 ## Verwenden von Windows Mixed Reality
 ### [Lernumgebung in Mixed Reality](learn-mixed-reality.md)
@@ -20,7 +20,7 @@
 ### [Verwenden von SteamVR](using-steamvr-with-windows-mixed-reality.md)
 ### [Verwenden von Microsoft Edge](using-microsoft-edge.md)
 ### [Was ist WebVR?](webvr.md)
-### [Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality](using-wmr-faq.md)
+### [Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality](using-wmr-faq.yml)
 
 ## Problembehandlung und häufig gestellte Fragen
 ### [FAQ-Übersicht](troubleshooting-windows-mixed-reality.md)
@@ -38,7 +38,7 @@
 ### [Nachverfolgungssystem](tracking.md)
 ### [WebVR](webvr-questions.md)
 ### [Weitere Fragen](other-questions.md)
-### [Häufig gestellte Fragen (FAQ) zu HP Reverb G2](reverbG2-faq.md)
+### [Häufig gestellte Fragen (FAQ) zu HP Reverb G2](reverbG2-faq.yml)
 
 ## Ressourcen
 ### [Immersive Headsets: Integrität,-Sicherheit und-Komfort](wmr-health-safety-comfort.md)
