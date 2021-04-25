@@ -1,0 +1,100 @@
+### YamlMime:FAQ
+metadata:
+  title: Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality
+  description: Hier finden Sie Ressourcen zu häufig gestellten Fragen bei der Arbeit mit Windows Mixed Reality Anwendungen und Hardware.
+  author: hferrone
+  ms.author: v-hferrone
+  ms.date: 09/15/2020
+  ms.topic: article
+  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
+  appliesto:
+  - Windows 10
+  ms.openlocfilehash: 2369f44eab8717e94d86cb62dabfe45dfbc32646
+  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 04/24/2021
+  ms.locfileid: "107953757"
+title: Häufig gestellte Fragen (FAQ) zum Verwenden von Windows Mixed Reality
+summary: >
+  Wenn Sie Hilfe bei der Verwendung Ihres Windows Mixed Reality immersiven Headsets benötigen, finden Sie in diesen Themen allgemeine Informationen und Problembehandlung.
+
+
+  Benötigen Sie weitere Unterstützung? Informationen zur erweiterten Problembehandlung finden Sie in diesem Artikel.
+sections:
+- name: Wird ignoriert.
+  questions:
+  - question: >
+      Es wird die Meldung "Lost tracking" (Nachverfolgung verloren) oder "We don't have a boundary for this space" (Wir haben keine Grenze für diesen Bereich) angezeigt.
+    answer: "Wählen Sie start > Mixed Reality-Portal on your desktop **(Start > Mixed Reality-Portal** auf Ihrem Desktop) aus. Wählen Sie **Menü** und dann **Setup ausführen** aus, um eine neue Grenze zu erstellen. Windows Mixed Reality unterstützt mehrere Standorte und identifiziert den Bereich, in dem Sie sich beim Start befinden, solange sich der Raum nicht geändert hat.  \n"
+  - question: >
+      Ich kann keinen Sound hören, oder der Sound stammt von meinem Computer anstelle meines Headsets.
+    answer: "Wenn Ihr immersives Headset keine integrierten Headsets enthält, müssen Sie Dienen mit der Audiobuchse auf dem Headset verbinden. (Die Buchse befindet sich häufig direkt hinter dem Headsetvisier oder den Headsetobjektiven. Wenden Sie sich an den Hersteller Ihres Headsets, wenn Sie Probleme bei der Suche haben.) \n\nEinige Audio-Headsets verfügen über physische Schaltflächen zum Steuern der Lautstärke. Wenn audio nicht funktioniert, überprüfen Sie, ob die Lautstärke herunter- oder stummgeschaltet ist.\n\nWindows Mixed Reality ist für die Wiedergabe von Sound über Ihr immersives Headset konzipiert, wenn Sie es befüllen und mit ihm verbunden sind. Wenn Sie das Headset ausziehen oder das Visier nach oben drehen, wechselt die Audiodatei zu Ihrem Windows-Standardwiedergabegerät. Sie können diese Einstellung unter **Einstellungen > Mixed Reality > Audio und Sprache** ändern.\n\n> [!NOTE]\n> * Windows Mixed Reality räumliche Audio funktioniert am besten mit in Ihr immersives Headset integrierten oder direkt mit diesem verbundenen Lautsprechern. PC-Lautsprecher oder -Lautsprecher, die mit dem PC verbunden sind, funktionieren für räumliche Audiodaten möglicherweise nicht gut.\n> * Windows Mixed Reality unterstützt keine Bluetooth-Audio-Headsets.\n"
+  - question: >
+      Sprachbefehle funktionieren nicht
+    answer: >
+      Um Speech-Befehle zu verwenden, müssen die Sprach- und Spracheinstellungen Ihres PCs auf eine [unterstützte Windows Mixed Reality Region und Sprache](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)festgelegt werden. Um Ihre Windows-Region und -Sprache zu überprüfen, wählen Sie **Einstellungen > Time & Language > Region & aus.** Um Ihre Sprachsprache zu überprüfen, wählen **Sie Einstellungen > Time & Language > Speech aus.**
+
+
+      Wenn Ihr Headset nicht über ein integriertes Mikrofon verfügen, fügen Sie ein Paar von Mikrofonen mit einem Mikrofon an Ihr Headset oder Ihren PC an. Wählen **Sie Einstellungen > Mixed Reality > Audio und** Sprache aus, um ihre Mikrofoneingabe automatisch auf Ihr Headset umschalten zu können, wenn Ihre Mikrofone verbunden sind. Stellen Sie sicher, **dass beim Tragen meines Headsets das Headset-Mikrofon** eingeschaltet ist.
+
+
+      Einige Audio-Headsets verfügen über eine physische Schaltfläche zum Stummschalten und Entmuten des Mikrofons. Wenn Speech-Befehle nicht funktionieren, überprüfen Sie, ob Ihr Mikrofon stummgeschaltet ist.
+  - question: >
+      Die Grenze ist immer sichtbar. Wie kann ich es weggehen lassen?
+    answer: "Wenn Sie sich in der Nähe der Grenze befinden, wird sie angezeigt. Wenn Ihre Grenze Abschnitte enthält, die eine schmale oder unregelmäßige Form haben, können Sie sich ihr möglicherweise häufiger als erwartet nahe kommen – und dies dazu verursachen, dass sie angezeigt wird. Versuchen Sie, die Begrenzung erneut zu erstellen, und verwenden Sie dabei eine größere und regulärere Form, um dieses Problem zu beheben. Wählen **Sie Start > Mixed Reality-Portal** auf Ihrem Desktop und dann Setup ausführen **aus.** \n\nSie können die Grenze auch vorübergehend von der Mixed Reality-Portal: Wählen Sie **Menü** aus, und verwenden Sie dann die Umschaltleiste, um die Grenze zu deaktivieren. Wenn die Grenze deaktiviert ist, müssen Sie an einer Stelle bleiben, um Hindernisse zu vermeiden.\n"
+  - question: >
+      Ich habe Probleme mit meinen Motion-Controllern.
+    answer: "Wenn Ihre Motion-Controller nicht ordnungsgemäß funktionieren, keine Verbindung herstellen, oder wenn Sie kein Bild der Controller sehen, wenn Sie Ihr Headset tragen:\n\n* Stellen Sie sicher, dass Ihre Controller aktiviert sind. Um sie zu aktivieren, halten Sie die **Windows-Schaltfläche** 2 Sekunden lang gedrückt.\n* Wählen **Sie start > Mixed Reality-Portal** auf Ihrem PC aus, und wählen Sie dann **Menü** Sie sollten Ihre Motion-Controller zusammen mit einer Statusmeldung aufgelistet werden aus:\n    * Bereit: Die Controller sind alle festgelegt.\n    * Verlorene Nachverfolgung: Mixed Reality-Portal können Ihre Controller nicht finden. Halten Sie sie vor Ihrem Headset, und starten Sie sie neu, indem Sie 4 Sekunden lang auf die **Windows-Schaltfläche** und dann 2 Sekunden lang erneut drücken.\n    * Niedrige Akkukapazität: Ersetzen Sie die Controllerakkus.\n* Wenn Sie WLAN verwenden, versuchen Sie, Ihren PC mit einem Wi-Fi-Netzwerk mit 5 GHz zu verbinden, um Funkstörungen zu reduzieren. \n* Wählen Sie für neuere Headsets, die sich direkt mit den Controllern koppeln, die Option **\"...\" aus.** klicken Sie in **Mixed Reality-Portal,** und wählen **Sie Controller einrichten aus.** Dadurch gelangen Sie zur Headset-App, um die Controller mit dem Headset zu koppeln.  \n* Für ältere Headsets, die nicht über integriertes Bluetooth verfügen, damit die Controller direkt gekoppelt werden können:  \n    * Wählen Sie Einstellungen > Geräte > Bluetooth & anderen Geräten auf Ihrem PC aus, und stellen Sie sicher, dass die Controller als gekoppelt aufgeführt sind.Wenn nicht, müssen Sie sie koppeln. \n    * Wenn Sie über andere Bluetooth-Geräte verfügen, die mit Ihrem PC gekoppelt sind, z. B. Brillen oder Gamepads, versuchen Sie, einige zu entfernen. Wählen Sie **Einstellungen > Geräte > Bluetooth & anderen Geräten** auf Ihrem PC aus, wählen Sie die Geräte aus, und wählen Sie dann Gerät **entfernen** aus.\n    * Entfernen Sie Bluetooth-Geräte und -Lautsprecher unter **Einstellungen > Geräte > Bluetooth & anderen Geräten,** und deaktivieren Sie die Geräte. \n    * Wenn Sie einen USB-Bluetooth-Adapter verwenden, stellen Sie sicher, dass er an einen schwarzen USB 2.0-Anschluss angeschlossen ist. Stellen Sie außerdem sicher, dass der Adapter so weit wie möglich von anderen Funksendern oder USB-Speichersticks angeschlossen ist, einschließlich des USB-Connectors für Ihr Headset. \n    * Wenn Ihr PC über integriertes Bluetooth verfügt und Verbindungsprobleme auftreten, versuchen Sie stattdessen, einen USB-Bluetooth-Adapter zu verwenden. (Hierzu müssen Sie auch Ihr integriertes Bluetooth-Radio in [Geräte-Manager](https://support.microsoft.com/help/4026149)deaktivieren und dann Ihre anderen Bluetooth-Geräte mit dem neuen Adapter koppeln.)\n* Wenn die App Einstellungen auf der Seite Bluetooth & anderen Geräten geöffnet ist, schließen Sie sie.\n"
+  - question: >
+      Ich bin unermüdlich, wenn ich mein Headset verwende
+    answer: >
+      Allgemeine Informationen zum Komfort in Windows Mixed Reality finden Sie Windows Mixed Reality Integrität, Sicherheit und Komfort des immersiven [Headsets.](wmr-health-safety-comfort.md) Weitere Informationen zu Ihrem spezifischen Headset finden Sie beim Hersteller des Headsets.
+  - question: >
+      Meine Visuals sind abgesengt, werden langsam geladen oder sehen nicht gut aus.
+    answer: >
+      Wenn Ihre Mixed Reality-Visuals nicht optimal aussehen:
+
+
+      * Stellen Sie sicher, dass Ihr Headset an die richtige Grafikkarte auf Ihrem PC angeschlossen ist. Einige PCs verfügen sowohl über integrierte als auch über diskrete Grafikkarten. Die diskrete Karte bietet im Allgemeinen die beste Leistung. [Erfahren Sie mehr über PC-Hardware.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+
+      * Schließen Sie nicht verwendete Apps auf Ihrem Desktop.
+
+      * Passen Sie die Anpassung Ihres Headsets an: Bewegen Sie es nach unten und höher oder nach links und rechts, und stellen Sie sicher, dass es gut passt.
+
+      * Passen Sie die visuellen Einstellungen Ihres Headsets an (**Einstellungen > Mixed Reality > Headset-Anzeige**). Wenn **die visuelle Qualität** auf Automatisch **festgelegt** ist, wählen wir die beste Mixed Reality-Erfahrung für Ihren PC aus. Legen Sie visuelle Qualität auf Hoch fest, um mehr visuelle **Details** **zu erhalten.** Wenn Ihre Visuals abgesät sind, sollten Sie eine niedrigere Einstellung auswählen.
+
+      * Versuchen Sie, die Kalibrierung Ihres Headsets anzupassen. Die Brillen sollten entsprechend Ihrer Interpupillary-Entfernung (INTERPupillary Distance, IPD) angepasst werden, d. h. dem Abstand zwischen Ihren Brillen. Wenn Sie Ihre IPD nicht kennen, kann ein Optometrist sie für Sie messen. Es gibt auch Websites, die zum Messen der IPD entwickelt wurden. Sobald Sie Ihre IPD kennen, verwenden Sie den Kalibrierungsregler Ihres Headsets, um Anpassungen vorzunehmen. Wenn das Headset nicht über einen Kalibrierungsregler verfügen, wählen Sie Einstellungen > **Mixed Reality > Headsetanzeige** aus, und passen Sie das Kalibrierungssteuersystem an.
+  - question: >
+      Ich habe Fragen zur Hardware meines Headsets.
+    answer: >
+      Ausführliche Informationen zu Ihrem Headset finden Sie beim Hersteller. Möglicherweise ist ein Produktleitfaden im Feld enthalten, oder Sie können die Website des Herstellers ausprobieren.
+  - question: >
+      Der Boden in Mixed Reality scheint sich an der falschen Stelle zu befinden.
+    answer: >
+      Wenn der Boden aussieht (z. B. haben Sie das Gefühl, dass Sie unverankert sind), wählen **Sie Start > Room adjustment (Raumanpassung starten)** aus, während Sie Ihr Headset anpassen, um Änderungen vorzunehmen.
+  - question: >
+      Ich habe eine Nachricht mit dem Hinweis erhalten, dass mein PC angeschlossen und in Rechnung gestellt werden soll. Warum?
+    answer: >
+      Wenn Sie einen Laptop verwenden, funktioniert Windows Mixed Reality am besten, wenn der PC vollständig in Rechnung gestellt und angeschlossen ist.
+  - question: >
+      Gewusst wie Windows Mixed Reality deinstallieren?
+    answer: "Wählen **Sie Start > Settings > Mixed Reality** und dann **Deinstallieren** aus. Stellen Sie sicher, dass Sie Ihr Headset von Ihrem PC trennen und Mixed Reality-Portal schließen, bevor Sie die Deinstallation durchführen.\n\nWenn Sie bereit sind, Ihr Headset erneut zu verwenden, schließen Sie es an, und Mixed Reality-Portal führen Sie durch das Setup.\n\n> [!NOTE]\n> Wenn eine Meldung mit dem Hinweis angezeigt wird, dass das Entfernen Windows Mixed Reality nicht abgeschlossen werden konnte, bedeutet dies, dass sich einige Dateien, einschließlich Informationen zu Ihrer Umgebung, möglicherweise noch auf Ihrem Computer befinden. Dies kann zu Problemen führen, wenn Sie Windows Mixed Reality später erneut installieren möchten.\n> \n> Informationen dazu, wie Sie alle verbleibenden Windows Mixed Reality Informationen manuell von Ihrem PC entfernen, finden Sie **[in diesem Artikel.](installation_errors.md)**\n"
+  - question: >
+      Meine Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality
+    answer: >
+      Wenn Sie eine Wi-Fi-Verbindung mit 2,4 GHz verwenden, verlangsamen Ihre Motion-Controller möglicherweise das WLAN:
+
+
+      <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
+
+      * Wechseln Sie zu einer 5-GHz-Wi-Fi-Verbindung, sofern verfügbar. [Weitere Informationen](https://support.microsoft.com/help/4000461)
+
+      * Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion Controller mit Ihrem PC zu verbinden. [Weitere Informationen finden Sie unter Empfohlene Adapter.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+  - question: >
+      Was ist die Einstellung "Benutzeroberflächesoptionen"?
+    answer: "Mit der Einstellung Experience options (**Settings > Mixed reality > Headset display > Experience options**) können Sie die Windows Mixed Reality ändern. Auf diese Weise können Sie die bestmögliche Erfahrung für Ihre Hardwarekonfiguration für eine Vielzahl von Inhalten auswählen. Die 90-Hz-Erfahrung ist für alle Systeme verfügbar, aber Sie sollten zuerst Die automatische Umgebung ausprobieren, um zu sehen, welche Einstellung Sie bevorzugen.\n\nHier sind die Optionen:\n\n* Automatisch oder Windows entscheiden lassen: Windows Mixed Reality die beste Erfahrung für Ihre Hardwarekonfiguration. Für die meisten Personen ist dies die beste Wahl für den Einstieg.\n* 60 Hz: Legt die Aktualisierungsrate auf 60 Hz fest und deaktiviert bestimmte Features wie Videoaufnahme und Vorschau in Mixed Reality-Portal.\n* 90 Hz: Legt die Aktualisierungsrate auf 90 Hz fest, wenn Ihr Headset mit dieser Geschwindigkeit ausgeführt werden kann. Wenn Kabelprobleme verhindern, dass das Headset mit 90 Hz ausgeführt wird, wird möglicherweise beim Start ein Fehler mit ausgewähltem Modus angezeigt. \n"
+  - question: >
+      Es wird eine Meldung mit dem Text "Put on your headset" (Headset setzen) angezeigt, obwohl ich mein Headset einsetset.
+    answer: "Wenn Sie Ihr Headset anlasten, Windows Mixed Reality etwas Zeit benötigt, um Den Raum neu zu laden. Dies kann einige Zeit dauern. Wenn diese Nachricht nicht entfernt wird, stellen Sie sicher, dass der Schutzsticker aus dem Näherungssensor, der sich innerhalb des Headsets befindet, zwischen den Brillen entfernt wurde. Wenn der Headset entfernt wurde und weiterhin Probleme auftreten, wenden Sie sich an den Hersteller Ihres Headsets. Durch **Drücken von Win+Y** auf der Tastatur wird die Ausführung des Headsets manuell ausgelöst, wenn der Näherungssensor nicht automatisch ausgelöst wird. \n\nBenötigen Sie weitere Unterstützung? Informationen zur erweiterten Problembehandlung finden Sie [in diesem Artikel.](troubleshooting-windows-mixed-reality.md)\n"
+additionalContent: "\n## <a name=\"see-also\"></a>Weitere Informationen:\n\n* [Die Community fragen](https://answers.microsoft.com)\n* [Wenden Sie sich an uns, um Support zu erhalten.](https://support.microsoft.com/contactus/)"
