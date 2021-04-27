@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2b0dc328a1a47d9a0bd385cac6a88563dcc3938d
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d8d46da1a1a095074f059b53ebd997e1b6f89961
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327720"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984466"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 und Windows-XR-Plugin](#tab/winxr)
 
@@ -60,13 +60,13 @@ Nachdem Unity die Installation der XR-Plug-In-Verwaltung abgeschlossen hat. Stel
 
 ![Unity: XR-Einstellungen mit ausgewählten Optionen „OpenXR“ und „Microsoft HoloLens-Funktionen“](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-Navigieren Sie in der Menüleiste oben auf dem Bildschirms zu **Mixed Reality > OpenXR > Empfohlene Projekteinstellungen für HoloLens 2 anwenden**, um eine bessere App-Leistung zu erzielen.
-
-![Mixed Reality-Menü mit ausgewählten Optionen „OpenXR“ und „Empfohlene Projekteinstellungen für HoloLens 2 anwenden“](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >Wenn ein rotes Warnsymbol neben den OpenXR-Plugin (Vorschau) angezeigt wird, klicken Sie auf das Symbol, und wählen Sie „Alle korrigieren“, bevor Sie fortfahren. Der Unity-Editor muss möglicherweise neu gestartet werden, damit die Änderungen wirksam werden.
 >![OpenXR-Projektvalidierungsmenü mit allen zur Korrektur ausgewählten Problemen](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+Navigieren Sie in der Menüleiste oben auf dem Bildschirms zu **Mixed Reality > OpenXR > Empfohlene Projekteinstellungen für HoloLens 2 anwenden**, um eine bessere App-Leistung zu erzielen.
+
+![Mixed Reality-Menü mit ausgewählten Optionen „OpenXR“ und „Empfohlene Projekteinstellungen für HoloLens 2 anwenden“](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 Nachdem Unity das Importieren der erforderlichen Dateien abgeschlossen hat, sollte wieder das Fenster des MRTK-Projektkonfigurators angezeigt werden. Wenn dies nicht der Fall ist, verwenden Sie das Unity-Menü, um es zu öffnen.
 
