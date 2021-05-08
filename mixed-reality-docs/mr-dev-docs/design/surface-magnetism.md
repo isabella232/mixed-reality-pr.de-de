@@ -1,40 +1,40 @@
 ---
 title: Oberflächenmagnetismus
-description: Mithilfe der Surface-Magnetismus-Technik können Sie ein Holographic-Objekt auf einer realen physischen Oberfläche platzieren.
+description: Mithilfe der Oberflächen-Magnetismus-Technik können Sie ein holografisches Objekt auf einer realen physischen Oberfläche platzieren.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Surface Magnetismus
-ms.openlocfilehash: c8e1c7e03f46992dd584f974c9573deb1d0e6474
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Oberflächen-Magnetismus
+ms.openlocfilehash: e3cf8511a2486c8ea862fcc70a20f5956e5095c4
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300335"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489220"
 ---
 # <a name="surface-magnetism"></a>Oberflächenmagnetismus
 
 ![Oberflächenmagnetismus](images/MRTK_SurfaceMagnetism.gif)
 
-Mithilfe von Oberflächen Magnetismus können Sie Holographic-Objekte auf realen physischen Oberflächen platzieren. Wenn Sie die Ausrichtung des Objekts mit der realen Oberfläche ausrichten, können Sie für den Benutzer eine immersive und natürlichere Benutzeroberfläche erstellen.
+Mit Oberflächen-Magnetismus können Sie holografische Objekte auf realen physischen Oberflächen platzieren. Indem Sie die Ausrichtung des Objekts an der realen Oberfläche ausrichten, können Sie eine immersive und natürlichere Benutzeroberfläche für den Benutzer erstellen.
 
 <br>
 
 ---
 
-## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Surface-Magnetismus in mrtk (Mixed Reality Toolkit) für Unity
+## <a name="surface-magnetism-in-mrtk-mixed-reality-toolkit-for-unity"></a>Oberflächen magnetism in MRTK (Mixed Reality Toolkit) für Unity
 
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts und Beispiel Szenen für die Surface-Magnetismus-Technik bereit. Sie können Surface-Magnetismus mit verschiedenen Typen von Eingaben verwenden, wie z. b. Hand Strahl, Augenblick und Bewegungs Controller.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts und Beispielszenen für die Oberflächen-Magnetismus-Technik bereit. Sie können Oberflächen-Magnetismus mit verschiedenen Arten von Eingaben verwenden, z. B. Handstrahl, Anvisierter mit den Augen und Motion-Controller.
 
-* [Mrtk-Surface Magnetismus-Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
-* [Mrtk-Beispiel Szenen für räumliche Erkennung und Oberflächen Magnetismus](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
+* [MRTK – Surface Magnetism Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
+* [MRTK – Räumliche Wahrnehmung + Oberflächen-Magnetismus – Beispielszenen](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Informationen:
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

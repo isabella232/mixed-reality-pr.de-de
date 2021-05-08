@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Softwarekomponenten, Releaseverlauf, Versionshinweise, Versionsverlauf
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e6cdcbc7d91a6c1fadb519f94fc0339bdd39ca7
-ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
+ms.openlocfilehash: 5e0673f8ead5bd1211b403a7b67287cec95c0d4a
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108069204"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644826"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>Mixed Reality: Übersicht zur Software und Versionsverlauf
 
@@ -54,11 +54,11 @@ Wie [bereits angekündigt,](/windows/mixed-reality/new-microsoft-edge)haben wir 
 
 #### <a name="improved-settings-for-wmr"></a>Verbesserte Einstellungen für WMR
 
-Dank Ihres Feedbacks haben wir einstellungen auf der Headset-Anzeigeseite hinzugefügt und verdeutlicht:
+Dank Ihres Feedbacks haben wir Einstellungen auf der Headset-Anzeigeseite hinzugefügt und verdeutlicht:
 
 * **Visuelle Qualität meines Hauses:** Das Ändern dieser Einstellungen wirkt sich nur auf die Mixed Reality Startumgebung Umgebung (Haus an den Klippen und Skyitatt) aus:
 
-* **Anpassen des Detailgrads und der Qualität von Effekten im Mixed Reality Startumgebung** – dies ändert einige der Renderingeffekte, die wir im Home-Bereich verwenden. Insbesondere die visuelle Qualität verschiedener Materialien (Wood, Concrete usw.) wird skaliert, wenn Sie diese Einstellung von niedrig in hoch ändern.
+* **Anpassen des Detailgrads und der Qualität der Effekte im Mixed Reality Startumgebung** – dies ändert einige der Renderings, die wir im Home-Bereich verwenden. Insbesondere die visuelle Qualität verschiedener Materialien (Wood, Concrete usw.) wird skaliert, wenn Sie diese Einstellung von niedrig in hoch ändern.
 
 * Ändern der Auflösung des **App-Fensters:** Standardmäßig werden die meisten 2D-Fenster, die in der Startseite gestartet werden, mit einer Auflösung von 720 p gestartet. Sie können die Größe manuell horizontal & vertikal ändern, aber Sie können auch entscheiden, dass sie alle stattdessen mit 1080p gestartet werden. Zuvor war diese Option unter Visuelle Qualität als Option Sehr hoch (Beta) verfügbar. Wir haben es jetzt entsprechend als separate Einstellung aufgeteilt.
 
@@ -107,7 +107,7 @@ Dieser Treiber wird automatisch heruntergeladen und über Windows Update install
    |------------------|-----------------------|---------------------------------------------------------------|
    | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 23. März 2021  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Aktualisieren Sie die Ziehreihenfolge des verborgenen Bereichsgitters für HP Reverb G2, um mit anderen Headsets konsistent zu sein.</li><li>Verbesserungen der Visualqualität für die HP Reverb G2-Headsets.</li><li>Windows Mixed Reality Headsetplattform und Zuverlässigkeitsverbesserungen.</li>|
    | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 10. Dezember 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Neue Controllerfirmware für den HP Controller, um ein Problem zu beheben, bei dem einige Controller nicht funktionierende Trigger aufweisen.</li>|
-   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8. Oktober 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Offizielle Unterstützung für HP Reverb G2, HP Omnicept und den neuen HP Controller.</li><li>Kleinere Anzeigekorrekturen für HP Reverb- und Samsung Odyssey+-Headsets. (Erfordert [Betriebssystembuild 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) oder höher oder [Betriebssystembuilds 18362.1110 und 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) oder höher).</li><li>Verbesserungen beim Übergang des Computerstromzustands aus dem Energiesparmodus, um SWW 1-4-Fehler zu reduzieren.</li><li>Windows Mixed Reality headset platform minor fixes and reliability improvements (Kleinere Fehlerbehebungen und Zuverlässigkeitsverbesserungen für headset-Plattformen).|
+   | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 8. Oktober 2020  | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Offizielle Unterstützung für HP Reverb G2, HP Omnicept und den neuen HP Controller.</li><li>Kleinere Anzeigekorrekturen für HP Reverb- und Samsung Odyssey+-Headsets. (Erfordert [Betriebssystembuild 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) oder höher oder [Betriebssystembuilds 18362.1110 und 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) oder höher).</li><li>Verbesserungen beim Übergang des Computerstromzustands aus dem Energiesparmodus, um SWW 1-4-Fehler zu reduzieren.</li><li>Windows Mixed Reality headset platform minor fixes and reliability improvements (Kleinere Fehlerbehebungen und Verbesserungen der Zuverlässigkeit der Headsetplattform).|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 7\. Mai 2020      | Kompatibel mit Windows 10, Version 1903 und höher.<br/><ul><li>Windows Mixed Reality der Headsetplattform kleinere Korrekturen und Zuverlässigkeitsverbesserungen.</li></ul>  |
 
 #### <a name="windows-10-version-1903-may-2019-update"></a>Windows 10, Version 1903 (Update mai 2019) ####
@@ -123,8 +123,8 @@ Dieser Treiber wird automatisch heruntergeladen und über Windows Update install
    | Version          | Veröffentlichungsdatum          | Wichtige Änderungen                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
    | [10.0.17763.1069](https://www.microsoft.com/en-us/download/details.aspx?id=57702)  | 2. Januar 2019      | Kompatibel mit Windows 10 Version 1803 und neuer.<br/><ul><li>Korrekturen für Headset-Nachverfolgungs-Jitter und -Bereinigungen</li><li>Fehlerbehebungen für die Zuverlässigkeit des Taschenlampenmodus</li></ul>  | 
-   | [10.0.17760.1000](https://www.microsoft.com/en-us/download/details.aspx?id=57358)  | 1. Oktober 2018      | Erste öffentliche Version des Treibers für Windows 10, Version 1809.<br/>Kompatibel mit Windows 10, Version 1803 und höher.<br/><ul><li>Aktiviert neue Windows Mixed Reality Features wie den Taschenlampenmodus in Windows 10, Version 1809</li><li>Verbesserungen der Nachverfolgung und Zuverlässigkeit von Headsets</li><li>Motion Controller-Nachverfolgung und Leistungsverbesserungen</li><li>USB-Leistung und -Verbesserungen</li></ul>  | 
-   | [10.0.17134.1004](https://www.microsoft.com/en-us/download/details.aspx?id=56845)  | 27. April 2018      | Erste öffentliche Version des Treibers für Windows 10, Version 1803<br/> <ul><li>Verbesserungen der Nachverfolgung und Zuverlässigkeit von Headsets</li><li>Motion Controller-Nachverfolgung und Leistungsverbesserungen</li></ul>  |
+   | [10.0.17760.1000](https://www.microsoft.com/en-us/download/details.aspx?id=57358)  | 1. Oktober 2018      | Erste öffentliche Version des Treibers für Windows 10, Version 1809.<br/>Kompatibel mit Windows 10, Version 1803 und höher.<br/><ul><li>Aktiviert neue Windows Mixed Reality Features wie den Taschenlampenmodus in Windows 10, Version 1809</li><li>Verbesserungen bei der Nachverfolgung und Zuverlässigkeit von Headsets</li><li>Motion Controller-Nachverfolgung und Leistungsverbesserungen</li><li>USB-Leistung und -Verbesserungen</li></ul>  | 
+   | [10.0.17134.1004](https://www.microsoft.com/en-us/download/details.aspx?id=56845)  | 27. April 2018      | Erste öffentliche Version des Treibers für Windows 10, Version 1803<br/> <ul><li>Verbesserungen bei der Nachverfolgung und Zuverlässigkeit von Headsets</li><li>Motion Controller-Nachverfolgung und Leistungsverbesserungen</li></ul>  |
 
 #### <a name="windows-10-version-1709-fall-creators-update"></a>Windows 10, version 1709 (Fall Creators Update) ####
 
@@ -168,16 +168,16 @@ In Windows 10, Version 1809 und [neueren](https://www.microsoft.com/store/apps/9
 
    | Version            | Veröffentlichungsdatum          | Wichtige Änderungen                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.21041.1051.0  | 26. April 2020        | <ul><li>Aktualisiert das App-Symbol für Mixed Reality-Portal.</li></ul>  |
+   | 2000.21041.1051.0  | 26. April 2021        | <ul><li>Aktualisiert das App-Symbol für Mixed Reality-Portal.</li></ul>  |
    | 2000.20111.1381.0  | 10. Dezember 2020        | <ul><li>Aktualisiert die Landing Page des Mixed Reality-Portal.</li><li>Reduziert Headset-Konnektivitätsfehler während Firmwareupdates. </li></ul>  |
    | 2000.20071.1133.0  | 5\. August 2020        | <ul><li>Unterstützung für [OpenXR zum](/windows/mixed-reality/openxr) Anhalten des Vorschaufensters.</li></ul>  | 
    | 2000.20041.1212.0  | 11. Mai 2020          | <ul><li>Behebt ein Zeitsteuerungsproblem, das zu einem inkonsistenten 15-5-Fehler führt.</li><li>Verbesserte Unterstützung für die Ausführung Windows Mixed Reality ohne Internetverbindung.</li><li>Verbesserte Unterstützung für das Koppeln von Motion-Controllern über **Setupcontroller.**</li></ul>  | 
-   | 2000.20031.1202.0  | 14. April 2020        | <ul><li>Unterstützung für die Registrierung von Informationen, Tipps und Angeboten zu Windows Mixed Reality.</li></ul>  | 
+   | 2000.20031.1202.0  | 14. April 2020        | <ul><li>Unterstützung für die Registrierung von Informationen, Tipps und Angeboten zu Windows Mixed Reality.</li></ul>  | 
    | 2000.20011.1312.0  | 11. Februar 2020     | <ul><li>Verbesserte Unterstützung für Anwendungen, die [OpenXR](/windows/mixed-reality/openxr) auf Geräten mit dem Update vom Mai 2019 verwenden.</li><li>Behandeln von Problemen mit der Barrierefreiheit und dem Tastaturfokus</li></ul>  | 
-   | 2000.19101.1211.0  | 11. November 2019     | <ul><li>Es wird ein Problem behoben, das verhindert, dass Sie Raumbegrenzungsvisuals umstellen können.</li><li>Es wird ein Problem behoben, das verhindert, dass Sie während der Einrichtung der Raumgrenze ein Headset zentrieren.</li></ul>  | 
+   | 2000.19101.1211.0  | 11. November 2019     | <ul><li>Behebt ein Problem, das sie daran hindert, Raumbegrenzungsvisuals umzustellen.</li><li>Es wird ein Problem behoben, das verhindert, dass Sie während der Einrichtung der Raumgrenze ein Headset zentrieren.</li></ul>  | 
    | 2000.19081.1301.0  | 23. September 2019    | <ul><li>Behebt ein Problem, bei dem Headsets mit Hardwareproblemen eine falsche Fehlermeldung angezeigt wurden. Benutzer, die in früheren Versionen einen Fehlercode zwischen 1 und 4 erhalten haben, erhalten jetzt möglicherweise einen spezifischeren Fehlercode für ihren Gerätezustand.</li></ul>  |
    | 2000.19071.1302.0  | 13. August 2019     | <ul><li>Unterstützung für Anwendungen, die [OpenXR](/windows/mixed-reality/openxr) auf Geräten mit dem Update vom Mai 2019 verwenden.</li></ul>  | 
-   | 2000.19061.1011.0  | 16. Juli 2019         | <ul><li>Unterstützung für JSON-Konfigurationsoptionen zum Anpassen des App-Verhaltens. Weitere Informationen finden Sie unter https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup .</li></ul>  | 
+   | 2000.19061.1011.0  | 16. Juli 2019         | <ul><li>Unterstützung für JSON-Konfigurationsoptionen zum Anpassen des App-Verhaltens. Weitere Informationen finden Sie unter https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup .</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>Verlauf der Veröffentlichung von SteamVR ###
 
