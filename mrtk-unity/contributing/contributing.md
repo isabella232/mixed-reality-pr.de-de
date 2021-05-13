@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Fehlerbericht,
-ms.openlocfilehash: 525e704ae2f09580c8c19ca7e8a25dad4aed2647
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 11a62708b4cb1a5acc3d230f933be2e88e0ac87b
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489260"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850366"
 ---
 # <a name="contributing"></a>Mitwirken
 
@@ -21,7 +21,7 @@ Sie können der Slack-Community über den [automatischen Einladungsversender](ht
 
 ## <a name="submission-process"></a>Einreichungsprozess
 
-Wir bieten mehrere Pfade, mit denen Entwickler am Mixed Reality Toolkit mitwirken können, wobei alle mit dem [Erstellen eines neuen Problems](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues/new/choose)beginnen.
+Wir bieten mehrere Pfade, um Entwicklern die Mitwirkung am Mixed Reality Toolkit zu ermöglichen, die alle mit der [Erstellung eines neuen Problems](https://github.com/Microsoft/MixedRealityToolkit-Unity/issues/new/choose)beginnen.
 
 <img src="../features/images/contributing/SelectIssueType.png" width="600" alt="Select Issue Type">
 
@@ -51,7 +51,7 @@ Wenn Sie noch nicht mit dem Git-Workflow arbeiten, sehen [Sie sich diese Einfüh
 
 Führen Sie beim Hinzufügen einer Fehlerbehebung oder eines Features die folgenden Schritte aus:
 
-1. Implementieren Sie die Fehlerbehebung oder das Feature . Anweisungen zum Erstellen und Bereitstellen von MRTK finden Sie unter [BuildAndDeploy](../updates-deployment/build-and-deploy.md). Beachten Sie, dass Sie die [Codierungsrichtlinien befolgen.](../contributing/coding-guidelines.md)
+1. Implementieren Sie die Fehlerbehebung oder das Feature . Anweisungen zum Erstellen und Bereitstellen von MRTK finden Sie unter [Bereitstellen auf Hololens- und WMR-Geräten.](../supported-devices/wmr-mrtk.md) Beachten Sie, dass Sie die [Codierungsrichtlinien befolgen.](../contributing/coding-guidelines.md)
 1. Wenn Sie ein Feature hinzufügen, fügen Sie auch eine Beispielszene hinzu, die das Feature veranschaulicht.
 1. Wenn Sie ein experimentelles Feature hinzufügen, ist das Schreiben von Tests und Dokumentation nicht erforderlich. Befolgen Sie stattdessen [experimentelle Featurerichtlinien.](../contributing/experimental-features.md)
 1. Fügen Sie Tests hinzu, um die Fehlerbehebung bzw. das Feature zu überprüfen. Anweisungen zum Schreiben und Ausführen von Tests finden Sie unter [UnitTests.](../contributing/unit-tests.md)

@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK
-ms.openlocfilehash: cb8b95cf9e563e8a277fa0d4b253639a763f5ad5
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: cef4bcf671caaaf8d5cb7cdc639446c6c6e91fa0
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489300"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850436"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>Was ist das Mixed Reality Toolkit?
 
@@ -47,10 +47,10 @@ Wenn Sie sich erst mit dem MRTK oder der Mixed Reality-Entwicklung in Unity vert
 Sobald Sie sich ein Bild gemacht haben, was Mixed Reality und MRTK zu bieten haben, installieren Sie die erforderlichen Tools, und folgen Sie unserer Tutorialreihe zur HoloLens 2 für Einsteiger.
 
 > [!div class="nextstepaction"]
-> [Installieren der Tools](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+> [Installieren der Tools](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
 > [!div class="nextstepaction"]
-> [HoloLens 2-Tutorialreihe](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [HoloLens 2-Tutorialreihe](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 Möchten Sie wissen, wie es unter der Haube aussieht?
 > [!div class="nextstepaction"]
@@ -90,8 +90,8 @@ Möchten Sie wissen, wie es unter der Haube aussieht?
 
 :::row:::
     :::column:::
-       [![Hand-Tracking (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)<br>
-        **[Hand-Tracking <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
+       [![Hand-Tracking (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](supported-devices/leap-motion-mrtk.md)<br>
+        **[Hand-Tracking <br/> (Ultraleap)](supported-devices/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
         [![UI-Steuerelemente](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)<br>
