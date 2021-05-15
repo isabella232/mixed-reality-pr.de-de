@@ -20,3 +20,5 @@
   href: roadmap.md
 - name: Mitwirken
   href: contributing/toc.yml
+- name: Archivierte Dokumentation (vor 2.6)
+  href: 'https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html'
