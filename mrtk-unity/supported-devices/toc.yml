@@ -1,0 +1,10 @@
+- name: Bereitstellen in Hololens und WMR
+  href: wmr-mrtk.md
+- name: Bereitstellen in Oculus Quest
+  href: oculus-quest-mrtk.md
+- name: Verwenden von Leap Motion
+  href: leap-motion-mrtk.md
+- name: Verwenden von AR Foundation
+  href: using-ar-foundation.md
+- name: Erkennen von Plattformfunktionen
+  href: detecting-platform-capabilities.md
