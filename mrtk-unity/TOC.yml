@@ -4,13 +4,15 @@
   href: running-examples-hub.md
 - name: Konfiguration
   href: configuration/toc.yml
+- name: Übersicht der unterstützten Geräte
+  href: supported-devices/toc.yml
 - name: Aufbau
   href: architecture/toc.yml
 - name: Funktionsübersichten
   href: features/toc.yml
 - name: Leistung und bewährte Methoden
   href: performance/toc.yml
-- name: Updates und Bereitstellung
+- name: Updates und Upgrades
   href: updates-deployment/toc.yml
 - name: Pakete
   href: packages/toc.yml
