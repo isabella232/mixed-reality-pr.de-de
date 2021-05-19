@@ -1,0 +1,214 @@
+---
+title: Eingabesimulationsdienste
+description: Dokumentation zum Eingabesimulationsdienst in MRTK
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
+ms.openlocfilehash: 81e7dcab7e0f349d05521f93d75bba6927761fd1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.translationtype: MT
+ms.contentlocale: de-DE
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145093"
+---
+# <a name="input-simulation-service"></a><span data-ttu-id="e3003-104">Eingabesimulationsdienst</span><span class="sxs-lookup"><span data-stu-id="e3003-104">Input simulation service</span></span>
+
+<span data-ttu-id="e3003-105">Der Eingabesimulationsdienst emuliert das Verhalten von Geräten und Plattformen, die möglicherweise nicht im Unity-Editor verfügbar sind.</span><span class="sxs-lookup"><span data-stu-id="e3003-105">The Input Simulation Service emulates the behavior of devices and platforms that may not be available in the Unity editor.</span></span> <span data-ttu-id="e3003-106">Beispiele:</span><span class="sxs-lookup"><span data-stu-id="e3003-106">Examples include:</span></span>
+
+* <span data-ttu-id="e3003-107">HoloLens- oder VR-Gerätekopfverfolgung</span><span class="sxs-lookup"><span data-stu-id="e3003-107">HoloLens or VR device head tracking</span></span>
+* <span data-ttu-id="e3003-108">HoloLens-Handgesten</span><span class="sxs-lookup"><span data-stu-id="e3003-108">HoloLens hand gestures</span></span>
+* <span data-ttu-id="e3003-109">HoloLens 2 artikulierte Handverfolgung</span><span class="sxs-lookup"><span data-stu-id="e3003-109">HoloLens 2 articulated hand tracking</span></span>
+* <span data-ttu-id="e3003-110">HoloLens 2 Eyetracking</span><span class="sxs-lookup"><span data-stu-id="e3003-110">HoloLens 2 eye tracking</span></span>
+* <span data-ttu-id="e3003-111">VR-Gerätecontroller</span><span class="sxs-lookup"><span data-stu-id="e3003-111">VR device controllers</span></span>
+
+<span data-ttu-id="e3003-112">Benutzer können eine herkömmliche Kombination aus Tastatur und Maus verwenden, um simulierte Geräte zur Laufzeit zu steuern.</span><span class="sxs-lookup"><span data-stu-id="e3003-112">Users can use a conventional keyboard and mouse combination to control simulated devices at runtime.</span></span> <span data-ttu-id="e3003-113">Dieser Ansatz ermöglicht das Testen von Interaktionen im Unity-Editor, ohne zuerst auf einem Gerät bereitgestellt zu werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-113">This approach allows testing of interactions in the Unity editor without first deploying to a device.</span></span>
+
+> [!WARNING]
+> <span data-ttu-id="e3003-114">Dies funktioniert nicht, wenn die XR Holographic Emulation von Unity > Emulationsmodus = "Simulate in Editor" (Im Editor simulieren) verwendet wird.</span><span class="sxs-lookup"><span data-stu-id="e3003-114">This does not work when using Unity's XR Holographic Emulation > Emulation Mode = "Simulate in Editor".</span></span> <span data-ttu-id="e3003-115">Die In-Editor-Simulation von Unity wird die Kontrolle über die Eingabesimulation des MRTK übernehmen.</span><span class="sxs-lookup"><span data-stu-id="e3003-115">Unity's in-editor simulation will take control away from MRTK's input simulation.</span></span> <span data-ttu-id="e3003-116">Um den MRTK-Eingabesimulationsdienst verwenden zu können, müssen Sie XR Holographic Emulation auf Emulation Mode = *"None" (Keine) festlegen.*</span><span class="sxs-lookup"><span data-stu-id="e3003-116">In order to use the MRTK input simulation service, you will need to set XR Holographic Emulation to Emulation Mode = *"None"*</span></span>
+
+## <a name="enabling-the-input-simulation-service"></a><span data-ttu-id="e3003-117">Aktivieren des Eingabesimulationsdiensts</span><span class="sxs-lookup"><span data-stu-id="e3003-117">Enabling the input simulation service</span></span>
+
+<span data-ttu-id="e3003-118">Die Eingabesimulation ist in den Profilen, die im MRTK-Versand sind, standardmäßig aktiviert.</span><span class="sxs-lookup"><span data-stu-id="e3003-118">Input simulation is enabled by default in the profiles that ship with MRTK.</span></span>
+
+<span data-ttu-id="e3003-119">Unter der Konfiguration des Eingabesystemdatenanbieters kann der Eingabesimulationsdienst wie folgt konfiguriert werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-119">Under the Input System Data provider configuration, the Input Simulation service can be configured with the following.</span></span>
+
+* <span data-ttu-id="e3003-120">**Typ** muss *Microsoft.MixedReality.Toolkit.Input > InputSimulationService sein.*</span><span class="sxs-lookup"><span data-stu-id="e3003-120">**Type** must be *Microsoft.MixedReality.Toolkit.Input > InputSimulationService*.</span></span>
+* <span data-ttu-id="e3003-121">**Unterstützte Plattformen umfassen standardmäßig** alle *Editor-Plattformen,* da der Dienst Tastatur- und Mauseingaben verwendet.</span><span class="sxs-lookup"><span data-stu-id="e3003-121">**Supported Platform(s)** by default includes all *Editor* platforms, since the service uses keyboard and mouse input.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e3003-122">Der Eingabesimulationsdienst kann auf anderen Plattformendpunkten verwendet werden, z. B. eigenständig, indem die Eigenschaft Unterstützte **Plattform(en)** geändert wird, um die gewünschten Ziele ein- und einaufnahme.</span><span class="sxs-lookup"><span data-stu-id="e3003-122">The Input Simulation service can be used on other platform endpoints such as standalone by changing the **Supported Platform(s)** property to include the desired targets.</span></span>
+> <span data-ttu-id="e3003-123">![Unterstützte Plattformen für die Eingabesimulation](../images/input-simulation/InputSimulationSupportedPlatforms.gif)</span><span class="sxs-lookup"><span data-stu-id="e3003-123">![Input Simulation Supported Platforms](../images/input-simulation/InputSimulationSupportedPlatforms.gif)</span></span>
+
+## <a name="input-simulation-tools-window"></a><span data-ttu-id="e3003-124">Fenster "Eingabesimulationstools"</span><span class="sxs-lookup"><span data-stu-id="e3003-124">Input simulation tools window</span></span>
+
+<span data-ttu-id="e3003-125">Aktivieren Sie das Fenster eingabesimulationstools über das Menü **eingabesimulation** für Mixed Reality  >  **Toolkit-Hilfsprogramme.**  >  </span><span class="sxs-lookup"><span data-stu-id="e3003-125">Enable the input simulation tools window from the  **Mixed Reality Toolkit** > **Utilities** > **Input Simulation** menu.</span></span> <span data-ttu-id="e3003-126">Dieses Fenster ermöglicht den Zugriff auf den Zustand der Eingabesimulation während des Wiedergabemodus.</span><span class="sxs-lookup"><span data-stu-id="e3003-126">This window provides access to the state of input simulation during play mode.</span></span>
+
+## <a name="viewport-buttons"></a><span data-ttu-id="e3003-127">Viewportschaltflächen</span><span class="sxs-lookup"><span data-stu-id="e3003-127">Viewport buttons</span></span>
+
+<span data-ttu-id="e3003-128">Ein Prefab für Schaltflächen im Editor, um die einfache Handplatzierung zu steuern, kann im Eingabesimulationsprofil unter **Indikatoren prefab** angegeben werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-128">A prefab for in-editor buttons to control basic hand placement can be specified in the input simulation profile under **Indicators Prefab**.</span></span> <span data-ttu-id="e3003-129">Dies ist ein optionales Hilfsprogramm. Auf die gleichen Features kann im [Eingabesimulationstools-Fenster](#input-simulation-tools-window)zugegriffen werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-129">This is an optional utility, the same features can be accessed in the [input simulation tools window](#input-simulation-tools-window).</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e3003-130">Die Viewportindikatoren sind standardmäßig deaktiviert, da sie derzeit manchmal interaktionen mit der Unity-Benutzeroberfläche beeinträchtigen können.</span><span class="sxs-lookup"><span data-stu-id="e3003-130">The viewport indicators are disabled by default, as they currently can sometimes interfere with Unity UI interactions.</span></span> <span data-ttu-id="e3003-131">Weitere Informationen finden Sie unter Problem [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106).</span><span class="sxs-lookup"><span data-stu-id="e3003-131">See issue [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106).</span></span> <span data-ttu-id="e3003-132">Fügen Sie zum Aktivieren das Prefab InputSimulationIndicators zu **Indicators Prefab hinzu.**</span><span class="sxs-lookup"><span data-stu-id="e3003-132">To enable, add the InputSimulationIndicators prefab to **Indicators Prefab**.</span></span>
+
+<span data-ttu-id="e3003-133">Handsymbole zeigen den Zustand der simulierten Hände an:</span><span class="sxs-lookup"><span data-stu-id="e3003-133">Hand icons show the state of the simulated hands:</span></span>
+
+* ![Symbol für nicht nachgeverfolgungslose Hand](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) <span data-ttu-id="e3003-135&quot;>Die Hand wird nicht nachverfolgung.</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;e3003-135&quot;>The hand is not tracking.</span></span> <span data-ttu-id=&quot;e3003-136&quot;>Klicken Sie auf diese Option, um die Hand zu aktivieren.</span><span class=&quot;sxs-lookup&quot;><span data-stu-id=&quot;e3003-136&quot;>Click to enable the hand.</span></span>
+* <span data-ttu-id=&quot;e3003-137&quot;>![Symbol für nachverfolgte Hand](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png &quot;Symbol für nachverfolgte Hand") Die Hand wird nachverfolgt, aber nicht vom Benutzer gesteuert.</span><span class="sxs-lookup"><span data-stu-id="e3003-137">![Tracked hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "Tracked hand icon") The hand is tracked, but not controlled by the user.</span></span> <span data-ttu-id="e3003-138">Klicken Sie auf diese Schaltfläche, um die Hand auszublenden.</span><span class="sxs-lookup"><span data-stu-id="e3003-138">Click to hide the hand.</span></span>
+* <span data-ttu-id="e3003-139">![Symbol für kontrollierte Hand](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Symbol &quot;Kontrollierte Hand&quot;") Die Hand wird vom Benutzer nachverfolgt und gesteuert.</span><span class="sxs-lookup"><span data-stu-id="e3003-139">![Controlled hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Controlled hand icon") The hand is tracked and controlled by the user.</span></span> <span data-ttu-id="e3003-140">Klicken Sie auf diese Schaltfläche, um die Hand auszublenden.</span><span class="sxs-lookup"><span data-stu-id="e3003-140">Click to hide the hand.</span></span>
+* <span data-ttu-id="e3003-141">![Symbol "Hand zurücksetzen"](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Symbol &quot;Hand zurücksetzen&quot;") Klicken Sie auf diese Schaltfläche, um die Hand auf die Standardposition zurückzusetzen.</span><span class="sxs-lookup"><span data-stu-id="e3003-141">![Reset hand icon](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Reset hand icon") Click to reset the hand to default position.</span></span>
+
+## <a name="in-editor-input-simulation-cheat-sheet"></a><span data-ttu-id="e3003-142">Spickzettel für Die Eingabesimulation im Editor</span><span class="sxs-lookup"><span data-stu-id="e3003-142">In editor input simulation cheat sheet</span></span>
+
+<span data-ttu-id="e3003-143">Drücken Sie in der HandInteractionExamples-Szene nach links STRG+H, um ein Spickzettel mit Eingabesimulationssteuerelementen auf den Weg zu bringen.</span><span class="sxs-lookup"><span data-stu-id="e3003-143">Press Left Ctrl + H in the HandInteractionExamples scene to bring up a cheat sheet with Input simulation controls.</span></span>
+
+![Spickzettel für die Eingabesimulation](https://user-images.githubusercontent.com/39840334/86066480-13637f00-ba27-11ea-8814-d222d548f684.gif)
+
+## <a name="camera-control"></a><span data-ttu-id="e3003-145">Kamerasteuerelement</span><span class="sxs-lookup"><span data-stu-id="e3003-145">Camera control</span></span>
+
+<span data-ttu-id="e3003-146">Die Kopfbewegung kann vom Eingabesimulationsdienst emuliert werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-146">Head movement can be emulated by the Input Simulation Service.</span></span>
+
+### <a name="rotating-the-camera"></a><span data-ttu-id="e3003-147">Drehen der Kamera</span><span class="sxs-lookup"><span data-stu-id="e3003-147">Rotating the camera</span></span>
+
+1. <span data-ttu-id="e3003-148">Zeigen Sie auf das Viewport-Editorfenster.</span><span class="sxs-lookup"><span data-stu-id="e3003-148">Hover over the viewport editor window.</span></span>
+    <span data-ttu-id="e3003-149">*Möglicherweise müssen Sie auf das Fenster klicken, um den Eingabefokus zu erhalten, wenn schaltflächendrücken nicht funktionieren.*</span><span class="sxs-lookup"><span data-stu-id="e3003-149">*You may need to click the window to give it input focus if button presses don't work.*</span></span>
+1. <span data-ttu-id="e3003-150">Halten Sie die **Maustaste** gedrückt (Standardeinstellung: Rechte Maustaste).</span><span class="sxs-lookup"><span data-stu-id="e3003-150">Press and hold the **Mouse Look Button** (default: Right mouse button).</span></span>
+1. <span data-ttu-id="e3003-151">Bewegen Sie die Maus im Viewportfenster, um die Kamera zu drehen.</span><span class="sxs-lookup"><span data-stu-id="e3003-151">Move the mouse in the viewport window to rotate the camera.</span></span>
+1. <span data-ttu-id="e3003-152">Verwenden Sie das Scrollrad, um die Kamera um die Ansichtsrichtung zu drehen.</span><span class="sxs-lookup"><span data-stu-id="e3003-152">Use the scroll wheel to roll the camera around the view direction.</span></span>
+
+<span data-ttu-id="e3003-153">Die Kameradrehungsgeschwindigkeit kann konfiguriert werden, indem die Einstellung **Mouse Look Speed** im Eingabesimulationsprofil geändert wird.</span><span class="sxs-lookup"><span data-stu-id="e3003-153">Camera rotation speed can be configured by changing the **Mouse Look Speed** setting in the input simulation profile.</span></span>
+
+<span data-ttu-id="e3003-154">Alternativ können Sie die Vertikalen Achsen für **horizontales Aussehen** verwenden, /  um die Kamera zu drehen (Standard: game controller right thumbstick).</span><span class="sxs-lookup"><span data-stu-id="e3003-154">Alternatively, use the **Look Horizontal**/**Look Vertical** axes to rotate the camera (default: game controller right thumbstick).</span></span>
+
+### <a name="moving-the-camera"></a><span data-ttu-id="e3003-155">Bewegen der Kamera</span><span class="sxs-lookup"><span data-stu-id="e3003-155">Moving the camera</span></span>
+
+<span data-ttu-id="e3003-156">Verwenden Sie die Achsen **Move Horizontal** Move Vertical (Horizontales / **Verschieben** vertikal verschieben), um die Kamera zu verschieben (Standardeinstellung: WASD-Tasten oder Gamecontroller– linker Thumbstick).</span><span class="sxs-lookup"><span data-stu-id="e3003-156">Use the **Move Horizontal**/**Move Vertical** axes to move the camera (default: WASD keys or game controller left thumbstick).</span></span>
+
+<span data-ttu-id="e3003-157">Kameraposition und Drehwinkel können auch explizit im Toolfenster festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-157">Camera position and rotation angles can be set explicitly in the tools window, as well.</span></span> <span data-ttu-id="e3003-158">Die Kamera kann mithilfe der Schaltfläche **Zurücksetzen** auf ihre Standardeinstellung zurückgesetzt werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-158">The camera can be reset to its default using the **Reset** button.</span></span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## <a name="controller-simulation"></a><span data-ttu-id="e3003-159">Controllersimulation</span><span class="sxs-lookup"><span data-stu-id="e3003-159">Controller simulation</span></span>
+
+<span data-ttu-id="e3003-160">Die Eingabesimulation unterstützt emulierte Controllergeräte (d. h. Motion Controller und Hände).</span><span class="sxs-lookup"><span data-stu-id="e3003-160">The input simulation supports emulated controller devices (i.e. motion controllers and hands).</span></span> <span data-ttu-id="e3003-161">Diese virtuellen Controller können mit jedem Objekt interagieren, das reguläre Controller unterstützt, z. B. Schaltflächen oder fähige Objekte.</span><span class="sxs-lookup"><span data-stu-id="e3003-161">These virtual controllers can interact with any object that supports regular controllers, such as buttons or grabbable objects.</span></span>
+
+### <a name="controller-simulation-mode"></a><span data-ttu-id="e3003-162">Controllersimulationsmodus</span><span class="sxs-lookup"><span data-stu-id="e3003-162">Controller simulation mode</span></span>
+
+<span data-ttu-id="e3003-163">Im [Fenster "Eingabesimulationstools"](#input-simulation-tools-window) wechselt die Einstellung **Standardcontroller-Simulationsmodus** zwischen drei unterschiedlichen Eingabemodellen.</span><span class="sxs-lookup"><span data-stu-id="e3003-163">In the [input simulation tools window](#input-simulation-tools-window) the **Default Controller Simulation Mode** setting switches between three distinct input models.</span></span> <span data-ttu-id="e3003-164">Dieser Standardmodus kann auch im Eingabesimulationsprofil festgelegt werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-164">This default mode can also be set in the input simulation profile.</span></span>
+
+* <span data-ttu-id="e3003-165">*Artikulierte Hände:* Simuliert ein vollständig artikuliertes Handgerät mit Gemeinsamen Positionsdaten.</span><span class="sxs-lookup"><span data-stu-id="e3003-165">*Articulated Hands*: Simulates a fully articulated hand device with joint position data.</span></span>
+
+   <span data-ttu-id="e3003-166">Emuliert HoloLens 2 Interaktionsmodell.</span><span class="sxs-lookup"><span data-stu-id="e3003-166">Emulates HoloLens 2 interaction model.</span></span>
+
+   <span data-ttu-id="e3003-167">Interaktionen, die auf der präzisen Positionierung der Hand oder der Verwendung von Touching basieren, können in diesem Modus simuliert werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-167">Interactions that are based on the precise positioning of the hand or use touching can be simulated in this mode.</span></span>
+
+* <span data-ttu-id="e3003-168">*Handgesten:* Simuliert ein vereinfachtes Handmodell mit Tippbewegungen in die Luft und grundlegenden Gesten.</span><span class="sxs-lookup"><span data-stu-id="e3003-168">*Hand Gestures*: Simulates a simplified hand model with air tap and basic gestures.</span></span>
+
+   <span data-ttu-id="e3003-169">Emuliert [das HoloLens-Interaktionsmodell.](/windows/mixed-reality/gestures)</span><span class="sxs-lookup"><span data-stu-id="e3003-169">Emulates [HoloLens interaction model](/windows/mixed-reality/gestures).</span></span>
+
+   <span data-ttu-id="e3003-170">Der Fokus wird mithilfe des Anvingzeigers gesteuert.</span><span class="sxs-lookup"><span data-stu-id="e3003-170">Focus is controlled using the Gaze pointer.</span></span> <span data-ttu-id="e3003-171">Die *Geste Tippen* in die Luft wird verwendet, um mit Schaltflächen zu interagieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-171">The *Air Tap* gesture is used to interact with buttons.</span></span>
+
+* <span data-ttu-id="e3003-172">*Motion Controller*: Simuliert einen Motion Controller, der mit VR-Headsets verwendet wird und ähnlich wie bei fernen Interaktionen mit Artikulierten Händen funktioniert.</span><span class="sxs-lookup"><span data-stu-id="e3003-172">*Motion Controller*: Simulates a motion controller used with VR headsets that works similarly to far interactions with Articulated Hands.</span></span>
+
+   <span data-ttu-id="e3003-173">Emuliert das VR-Headset mit dem Controllerinteraktionsmodell.</span><span class="sxs-lookup"><span data-stu-id="e3003-173">Emulates VR headset with controllers interaction model.</span></span>
+
+   <span data-ttu-id="e3003-174">Trigger, Greif- und Menütasten werden per Tastatur- und Mauseingabe simuliert.</span><span class="sxs-lookup"><span data-stu-id="e3003-174">The trigger, grab and menu keys are simulated via keyboard and mouse input.</span></span>
+
+### <a name="simulating-controller-movement"></a><span data-ttu-id="e3003-175">Simulieren der Controllerbewegung</span><span class="sxs-lookup"><span data-stu-id="e3003-175">Simulating controller movement</span></span>
+
+<span data-ttu-id="e3003-176">Drücken Und halten Sie die Taste für  die Controllerbearbeitung nach **links/rechts** (Standard: Linke UMSCHALTTASTE für den linken Controller und *Leerzeichen* für den rechten Controller), um die Kontrolle über beide Controller zu erlangen.</span><span class="sxs-lookup"><span data-stu-id="e3003-176">Press and hold the **Left/Right Controller Manipulation Key** (default: *Left Shift* for left controller and *Space* for right controller) to gain control of either controller.</span></span> <span data-ttu-id="e3003-177">Während die Manipulationstaste gedrückt wird, wird der Controller im Viewport angezeigt.</span><span class="sxs-lookup"><span data-stu-id="e3003-177">While the manipulation key is pressed, the controller will appear in the viewport.</span></span> <span data-ttu-id="e3003-178">Nachdem der Manipulationsschlüssel freigegeben wurde, werden die Controller nach einem kurzen Timeout für das Ausblenden des **Controllers nicht mehr verwendet.**</span><span class="sxs-lookup"><span data-stu-id="e3003-178">Once the manipulation key is released, the controllers will disappear after a short **Controller Hide Timeout**.</span></span>
+
+<span data-ttu-id="e3003-179">Controller können ein- und fixiert werden, relativ [](#input-simulation-tools-window) zur Kamera im Fenster der Eingabesimulationstools oder durch Drücken der Umschalttaste **links/rechts** (Standard: *T* für links und *Y* für rechts).</span><span class="sxs-lookup"><span data-stu-id="e3003-179">Controllers can be toggled on and frozen relative to the camera in the [input simulation tools window](#input-simulation-tools-window) or by pressing the **Toggle Left/Right Controller Key** (default: *T* for left and *Y* for right).</span></span> <span data-ttu-id="e3003-180">Drücken Sie erneut die Umschalttaste, um die Controller erneut auszublenden.</span><span class="sxs-lookup"><span data-stu-id="e3003-180">Press the toggle key again to hide the controllers again.</span></span> <span data-ttu-id="e3003-181">Um die Controller zu bearbeiten, muss **der Linke/rechte Controllermanipulationsschlüssel** gehalten werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-181">To manipulate the controllers, the **Left/Right Controller Manipulation Key** needs to be held.</span></span> <span data-ttu-id="e3003-182">Durch doppelklickendes **Tippen auf den Links-/Rechtscontroller-Manipulationsschlüssel** können die Controller auch ein-/ausgeschaltet werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-182">Double tapping the **Left/Right Controller Manipulation Key** can also toggle the controllers on/off.</span></span>
+
+<span data-ttu-id="e3003-183">Die Mausbewegung bewegt den Controller in der Ansichtsebene.</span><span class="sxs-lookup"><span data-stu-id="e3003-183">Mouse movement will move the controller in the view plane.</span></span> <span data-ttu-id="e3003-184">Controller können mit dem **Mausrad** weiter oder näher an die Kamera verschoben werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-184">Controllers can be moved further or closer to the camera using the **mouse wheel**.</span></span>
+
+<span data-ttu-id="e3003-185">Um Controller mit der Maus zu drehen, halten Sie sowohl die **Bearbeitungstaste des linken/rechten Controllers** *(Linke UMSCHALTTASTE* oder *Leertaste)* *als* auch die **Controllerschaltfläche Rotieren** (Standard: *Linke STRG-Taste)* gedrückt, und bewegen Sie dann die Maus, um den Controller zu drehen.</span><span class="sxs-lookup"><span data-stu-id="e3003-185">To rotate controllers using the mouse, hold both the **Left/Right Controller Manipulation Key** (*Left Shift* or *Space*) *and* the **Controller Rotate Button** (default: *Left Ctrl* button) and then move the mouse to rotate the controller.</span></span> <span data-ttu-id="e3003-186">Die Geschwindigkeit der Controllerrotation kann konfiguriert werden, indem die Einstellung Für die Drehgeschwindigkeit des **Mauscontrollers** im Eingabesimulationsprofil geändert wird.</span><span class="sxs-lookup"><span data-stu-id="e3003-186">Controller rotation speed can be configured by changing the **Mouse Controller Rotation Speed** setting in the input simulation profile.</span></span>
+
+<span data-ttu-id="e3003-187">Die gesamte Handplatzierung kann auch im [Eingabesimulationstoolsfenster](#input-simulation-tools-window)geändert werden, einschließlich des Zurücksetzens der Hände auf den Standardwert.</span><span class="sxs-lookup"><span data-stu-id="e3003-187">All hand placement can also changed in the [input simulation tools window](#input-simulation-tools-window), including resetting hands to default.</span></span>
+
+### <a name="additional-profile-settings"></a><span data-ttu-id="e3003-188">Zusätzliche Profileinstellungen</span><span class="sxs-lookup"><span data-stu-id="e3003-188">Additional profile settings</span></span>
+
+* <span data-ttu-id="e3003-189">**Der Multiplikator** für die Controllertiefe steuert die Empfindlichkeit der Mausrad-Tiefenbewegung.</span><span class="sxs-lookup"><span data-stu-id="e3003-189">**Controller Depth Multiplier** controls the sensitivity of the mouse scroll wheel depth movement.</span></span> <span data-ttu-id="e3003-190">Eine größere Zahl beschleunigt den Zoom des Controllers.</span><span class="sxs-lookup"><span data-stu-id="e3003-190">A larger number will speed up controller zoom.</span></span>
+* <span data-ttu-id="e3003-191">**Standardcontrollerabstand** ist der anfängliche Abstand der Controller von der Kamera.</span><span class="sxs-lookup"><span data-stu-id="e3003-191">**Default Controller Distance** is the initial distance of controllers from the camera.</span></span> <span data-ttu-id="e3003-192">Wenn Sie auf die Schaltfläche **Zurücksetzen** klicken, werden Controller ebenfalls in dieser Entfernung platzieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-192">Clicking the **Reset** button controllers will also place controllers at this distance.</span></span>
+* <span data-ttu-id="e3003-193">**Controller Jitter Amount** fügt Controllern zufällige Bewegung hinzu.</span><span class="sxs-lookup"><span data-stu-id="e3003-193">**Controller Jitter Amount** adds random motion to controllers.</span></span> <span data-ttu-id="e3003-194">Dieses Feature kann verwendet werden, um ungenaue Controllernachverfolgung auf dem Gerät zu simulieren und sicherzustellen, dass Interaktionen mit lauten Eingaben gut funktionieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-194">This feature can be used to simulate inaccurate controller tracking on the device, and ensure that interactions work well with noisy input.</span></span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### <a name="hand-gestures"></a><span data-ttu-id="e3003-195">Handgesten</span><span class="sxs-lookup"><span data-stu-id="e3003-195">Hand gestures</span></span>
+
+<span data-ttu-id="e3003-196">Handgesten wie Zusammendrücken, Greifen, Klappen usw. können ebenfalls simuliert werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-196">Hand gestures such as pinching, grabbing, poking, etc. can also be simulated.</span></span>
+
+1. <span data-ttu-id="e3003-197">Aktivieren der Handsteuerung mithilfe des Bearbeitungsschlüssels für den **linken/rechten Controller** *(Linke UMSCHALTTASTE* oder *LEERTASTE)*</span><span class="sxs-lookup"><span data-stu-id="e3003-197">Enable hand control using the **Left/Right Controller Manipulation Key** (*Left Shift* or *Space*)</span></span>
+
+2. <span data-ttu-id="e3003-198">Halten Sie beim Bearbeiten eine Maustaste gedrückt, um eine Handgeste auszuführen.</span><span class="sxs-lookup"><span data-stu-id="e3003-198">While manipulating, press and hold a mouse button to perform a hand gesture.</span></span>
+
+<span data-ttu-id="e3003-199">Jede der Maustasten kann zugeordnet werden, um die Handform mithilfe der Einstellungen für *linke/mittlere/rechte Mausgeste* in eine andere Geste zu transformieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-199">Each of the mouse buttons can be mapped to transform the hand shape into a different gesture using the *Left/Middle/Right Mouse Hand Gesture* settings.</span></span> <span data-ttu-id="e3003-200">Die *Standardmäßige Handgeste* ist die Form der Hand, wenn keine Schaltfläche gedrückt wird.</span><span class="sxs-lookup"><span data-stu-id="e3003-200">The *Default Hand Gesture* is the shape of the hand when no button is pressed.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e3003-201">Die *Geste Zusammendringen* ist die einzige Geste, die an diesem Punkt die Aktion "Auswählen" ausführt.</span><span class="sxs-lookup"><span data-stu-id="e3003-201">The *Pinch* gesture is the only gesture that performs the "Select" action at this point.</span></span>
+
+### <a name="one-hand-manipulation"></a><span data-ttu-id="e3003-202">Einseitige Bearbeitung</span><span class="sxs-lookup"><span data-stu-id="e3003-202">One-hand manipulation</span></span>
+
+1. <span data-ttu-id="e3003-203">Drücken und halten Sie **die Bearbeitungstaste für den linken/rechten Controller** gedrückt *(Linke UMSCHALTTASTE* oder *LEERTASTE).*</span><span class="sxs-lookup"><span data-stu-id="e3003-203">Press and hold **Left/Right Controller Manipulation Key** (*Left Shift* or *Space*)</span></span>
+2. <span data-ttu-id="e3003-204">Zeigen auf das Objekt</span><span class="sxs-lookup"><span data-stu-id="e3003-204">Point at object</span></span>
+3. <span data-ttu-id="e3003-205">Halten Sie die Maustaste gedrückt, um sie zu heften.</span><span class="sxs-lookup"><span data-stu-id="e3003-205">Hold mouse button to pinch</span></span>
+4. <span data-ttu-id="e3003-206">Verwenden der Maus zum Verschieben des Objekts</span><span class="sxs-lookup"><span data-stu-id="e3003-206">Use your mouse to move the object</span></span>
+5. <span data-ttu-id="e3003-207">Lassen Sie die Maustaste los, um die Interaktion zu beenden.</span><span class="sxs-lookup"><span data-stu-id="e3003-207">Release the mouse button to stop interaction</span></span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### <a name="two-hand-manipulation"></a><span data-ttu-id="e3003-208">Zweihandmanipulation</span><span class="sxs-lookup"><span data-stu-id="e3003-208">Two-hand manipulation</span></span>
+
+<span data-ttu-id="e3003-209">Für die gleichzeitige Bearbeitung von Objekten mit zwei Händen wird der persistente Handmodus empfohlen.</span><span class="sxs-lookup"><span data-stu-id="e3003-209">For manipulating objects with two hands at the same time, the persistent hand mode is recommended.</span></span>
+
+1. <span data-ttu-id="e3003-210">Umschalten an beiden Händen durch Drücken der Umschalttasten (*T/Y*).</span><span class="sxs-lookup"><span data-stu-id="e3003-210">Toggle on both hands by pressing the toggle keys (*T/Y*).</span></span>
+1. <span data-ttu-id="e3003-211">Bearbeiten Sie eine Hand nach der anderen:</span><span class="sxs-lookup"><span data-stu-id="e3003-211">Manipulate one hand at a time:</span></span>
+    1. <span data-ttu-id="e3003-212">Halten **Sie den Platz,** um die rechte Hand zu steuern.</span><span class="sxs-lookup"><span data-stu-id="e3003-212">Hold **Space** to control the right hand</span></span>
+    1. <span data-ttu-id="e3003-213">Bewegen sie die Hand an den Ort, an dem Sie das Objekt greifen möchten.</span><span class="sxs-lookup"><span data-stu-id="e3003-213">Move the hand to where you want to grab the object</span></span>
+    1. <span data-ttu-id="e3003-214">Drücken Sie die **linke Maustaste,** um die Stiftbewegung *zu* aktivieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-214">Press the **left mouse button** to activate the *Pinch* gesture.</span></span>
+    1. <span data-ttu-id="e3003-215">**Freigabebereich,** um die Steuerung der rechten Hand zu beenden.</span><span class="sxs-lookup"><span data-stu-id="e3003-215">Release **Space** to stop controlling the right hand.</span></span> <span data-ttu-id="e3003-216">Die Hand wird an Ort und  Stelle fixiert und in der Stiftgeste gesperrt, da sie nicht mehr bearbeitet wird.</span><span class="sxs-lookup"><span data-stu-id="e3003-216">The hand will be frozen in place and be locked into the *Pinch* gesture since it is no longer being manipulated.</span></span>
+1. <span data-ttu-id="e3003-217">Wiederholen Sie den Vorgang mit der anderen Hand, und greifen Sie dasselbe Objekt an einer zweiten Stelle.</span><span class="sxs-lookup"><span data-stu-id="e3003-217">Repeat the process with the other hand, grabbing the same object in a second spot.</span></span>
+1. <span data-ttu-id="e3003-218">Da nun beide Hände dasselbe Objekt greifen, können Sie beide bewegen, um eine zweihändige Bearbeitung durchzuführen.</span><span class="sxs-lookup"><span data-stu-id="e3003-218">Now that both hands are grabbing the same object, you can move either of them to perform two-handed manipulation.</span></span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### <a name="ggv-gaze-gesture-and-voice-interaction"></a><span data-ttu-id="e3003-219">GGV-Interaktion (Anving, Geste und Stimme)</span><span class="sxs-lookup"><span data-stu-id="e3003-219">GGV (Gaze, Gesture, and Voice) interaction</span></span>
+
+<span data-ttu-id="e3003-220">Standardmäßig ist die GGV-Interaktion im Editor aktiviert, während in der Szene keine artikulierten Hände vorhanden sind.</span><span class="sxs-lookup"><span data-stu-id="e3003-220">By default, GGV interaction is enabled in-editor while there are no articulated hands present in the scene.</span></span>
+
+1. <span data-ttu-id="e3003-221">Drehen der Kamera, um den Anvitätscursor auf das interaktionsfähige Objekt zu zeigen (rechte Maustaste)</span><span class="sxs-lookup"><span data-stu-id="e3003-221">Rotate the camera to point the gaze cursor at the interactable object (right mouse button)</span></span>
+1. <span data-ttu-id="e3003-222">Klicken und halten Sie **die linke Maustaste gedrückt, um** zu interagieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-222">Click and hold **left mouse button** to interact</span></span>
+1. <span data-ttu-id="e3003-223">Drehen Sie die Kamera erneut, um das Objekt zu bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="e3003-223">Rotate the camera again to manipulate the object</span></span>
+
+<span data-ttu-id="e3003-224">Sie können dies deaktivieren, indem Sie die Option *Is Hand Free Input Enabled* im Eingabesimulationsprofil umschalten.</span><span class="sxs-lookup"><span data-stu-id="e3003-224">You can turn this off by toggling the *Is Hand Free Input Enabled* option inside the Input Simulation Profile.</span></span>
+
+<span data-ttu-id="e3003-225">Darüber hinaus können Sie simulierte Hände für die GGV-Interaktion verwenden.</span><span class="sxs-lookup"><span data-stu-id="e3003-225">In addition, you can use simulated hands for GGV interaction</span></span>
+
+1. <span data-ttu-id="e3003-226">Aktivieren der GGV-Simulation durch Wechseln des **Handsimulationsmodus** zu Gesten im [Eingabesimulationsprofil](#enabling-the-input-simulation-service) </span><span class="sxs-lookup"><span data-stu-id="e3003-226">Enable GGV simulation by switching **Hand Simulation Mode** to *Gestures* in the [Input Simulation Profile](#enabling-the-input-simulation-service)</span></span>
+1. <span data-ttu-id="e3003-227">Drehen Sie die Kamera, um den Anviertcursor auf das interaktive Objekt zu zeigen (rechte Maustaste).</span><span class="sxs-lookup"><span data-stu-id="e3003-227">Rotate the camera to point the gaze cursor at the interactable object (right mouse button)</span></span>
+1. <span data-ttu-id="e3003-228">Halten Sie **Platz,** um die rechte Hand zu steuern.</span><span class="sxs-lookup"><span data-stu-id="e3003-228">Hold **Space** to control the right hand</span></span>
+1. <span data-ttu-id="e3003-229">Klicken und halten Sie die **linke Maustaste** gedrückt, um zu interagieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-229">Click and hold **left mouse button** to interact</span></span>
+1. <span data-ttu-id="e3003-230">Verwenden der Maus zum Verschieben des Objekts</span><span class="sxs-lookup"><span data-stu-id="e3003-230">Use your mouse to move the object</span></span>
+1. <span data-ttu-id="e3003-231">Loslassen der Maustaste zum Beenden der Interaktion</span><span class="sxs-lookup"><span data-stu-id="e3003-231">Release the mouse button to stop interaction</span></span>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### <a name="raising-teleport-events"></a><span data-ttu-id="e3003-232">Auslösen von Teleportereignissen</span><span class="sxs-lookup"><span data-stu-id="e3003-232">Raising Teleport Events</span></span>
+
+<span data-ttu-id="e3003-233">Um das Teleportereignis in der Eingabesimulation auszulösung, konfigurieren Sie die Handgesteneinstellungen im Eingabesimulationsprofil so, dass eine die **Teleport-Startgeste** und die andere die **Teleport-Endgeste** ausführt.</span><span class="sxs-lookup"><span data-stu-id="e3003-233">To raise the teleport event in input simulation, configure the Hand Gesture Settings in the Input Simulation Profile so that one performs the **Teleport Start** Gesture while the other performs the **Teleport End** Gesture.</span></span> <span data-ttu-id="e3003-234">Mit der **Teleport-Startgeste** wird der Teleport-Zeiger angezeigt, während das **Teleport-End-Gesure** die Teleportaktion abschließt und den Benutzer bewegt.</span><span class="sxs-lookup"><span data-stu-id="e3003-234">The **Teleport Start** gesture will bring up the Teleport Pointer, while the **Teleport End** gesure will complete the teleport action and move the user.</span></span>
+
+<span data-ttu-id="e3003-235">Die y-Position des resultierenden Teleports hängt von der Verschiebung der Kamera entlang der y-Achse ab.</span><span class="sxs-lookup"><span data-stu-id="e3003-235">The y-position of your resulting teleport is dependent on the camera's displacement along the y-axis.</span></span> <span data-ttu-id="e3003-236">Im Editor ist dies standardmäßig 0. Verwenden Sie daher die **Schlüssel Q** und **E,** um sie an die entsprechende Höhe anzupassen.</span><span class="sxs-lookup"><span data-stu-id="e3003-236">In editor, this is 0 by default, so use the **Q** and **E** keys to adjust it to the appropriate height.</span></span>
+
+![Eingabesimulation – Teleporteinstellungen](../images/input-simulation/InputSimulationTeleport.gif)
+
+### <a name="motion-controller-interaction"></a><span data-ttu-id="e3003-238">Interaktion des Bewegungscontrollers</span><span class="sxs-lookup"><span data-stu-id="e3003-238">Motion controller interaction</span></span>
+
+<span data-ttu-id="e3003-239">Die simulierten Motion-Controller können auf die gleiche Weise bearbeitet werden wie artikulierte Hände.</span><span class="sxs-lookup"><span data-stu-id="e3003-239">The simulated motion controllers can be manipulated the same way articulated hands are.</span></span> <span data-ttu-id="e3003-240">Das Interaktionsmodell ähnelt der fernen Interaktion der artikulierten Hand, während trigger, grab und menu keys der *linken Maustaste* bzw. *G-* bzw. *M-Taste* zugeordnet werden.</span><span class="sxs-lookup"><span data-stu-id="e3003-240">The interaction model is similar to far interaction of articulated hand while the trigger, grab and menu keys are mapped to *left mouse button*, *G* and *M* key respectively.</span></span>
+
+### <a name="eye-tracking"></a><span data-ttu-id="e3003-241">Eyetracking – Blickverfolgung</span><span class="sxs-lookup"><span data-stu-id="e3003-241">Eye tracking</span></span>
+
+<span data-ttu-id="e3003-242">[Die Eyetrackingsimulation](../input/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor) kann aktiviert werden, indem Sie die Option **Blickposition simulieren** im [Eingabesimulationsprofil](#enabling-the-input-simulation-service)aktivieren.</span><span class="sxs-lookup"><span data-stu-id="e3003-242">[Eye tracking simulation](../input/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor) can be enabled by checking the **Simulate Eye Position** option in the [Input Simulation Profile](#enabling-the-input-simulation-service).</span></span> <span data-ttu-id="e3003-243">Dies sollte nicht bei Interaktionen im GGV- oder Motion Controller-Stil verwendet werden (stellen Sie daher sicher, dass **der Standard-Controllersimulationsmodus** auf *Artikulierte Hand* festgelegt ist).</span><span class="sxs-lookup"><span data-stu-id="e3003-243">This should not be used with GGV or motion controller style interactions (so ensure that **Default Controller Simulation Mode** is set to *Articulated Hand*).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="e3003-244">Weitere Informationen</span><span class="sxs-lookup"><span data-stu-id="e3003-244">See also</span></span>
+
+* <span data-ttu-id="e3003-245">[Eingabesystemprofil](../input/input-providers.md).</span><span class="sxs-lookup"><span data-stu-id="e3003-245">[Input System profile](../input/input-providers.md).</span></span>

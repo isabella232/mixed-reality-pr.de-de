@@ -1,20 +1,20 @@
 ### YamlMime:FAQ
 metadata:
-  title: Häufig gestellte Fragen zu HP Reverb G2
-  description: Bleiben Sie mit häufig gestellten Fragen zur Verwendung des HP Reverb G2-Headsets mit Windows Mixed Reality immersiven Headsets auf dem Laufenden.
+  title: HÄUFIG GESTELLTE FRAGEN zu HP Reverb G2
+  description: Bleiben Sie mit häufig gestellten Fragen zur Verwendung des HP Reverb G2-Headsets mit Windows Mixed Reality immersiven Headsets auf dem laufenden.
   ms.author: v-hferrone
   ms.date: 09/15/2020
   ms.topic: article
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 7715af5f2a94378a0c56ddcdcb83d1d21fc83700
-  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.openlocfilehash: a15a29f36d4ad053f9f76016239c94365695d7c3
+  ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/24/2021
-  ms.locfileid: "107953767"
-title: Häufig gestellte Fragen zu HP Reverb G2
+  ms.lasthandoff: 05/19/2021
+  ms.locfileid: "110143267"
+title: HP Reverb G2 – Häufig gestellte Fragen
 summary: ''
 sections:
 - name: Wird ignoriert.
@@ -25,28 +25,28 @@ sections:
       HP empfiehlt Folgendes:
 
 
-      - Verbinden Sie das Sechs-Meter-Kabel zuerst mit dem Headset, bevor Sie eine Verbindung mit dem PC oder der Stromversorgung herstellen.
+      - Verbinden Sie zunächst das 6-Meter-Kabel mit dem Headset, bevor Sie eine Verbindung mit dem PC oder der Stromversorgung herstellen.
 
-      - Lassen Sie das Sechs-Meter-Kabel nach der Erstinstallation mit dem Headset verbunden.
+      - Lassen Sie das 6-Meter-Kabel nach der Erstinstallation mit dem Headset verbunden.
 
-      - Wenn das Headset nicht verwendet wird, trennen Sie das Netzadapter vom Sechs-Meter-Kabel.
+      - Wenn das Headset nicht verwendet wird, trennen Sie den Netzadapter vom 6-Meter-Kabel.
   - question: >
-      Was soll ich tun, um ein Bild zu erhalten?
+      Was soll ich tun, um ein bildigeres Bild zu erhalten?
     answer: >
-      Es gibt einige Dinge, die Sie ausprobieren können, wenn Sie das Gefühl haben, dass Ihre Anzeige ein wenig unscharf aussieht:
+      Es gibt einige Dinge, die Sie ausprobieren können, wenn Sie der Meinung sind, dass Ihre Anzeige etwas unscharf aussieht:
 
 
-      - Stellen Sie sicher, dass Sich Ihr Headset ordnungsgemäß auf dem Kopf befindet und ihre Augen auf die Brillen zentriert sind.
+      - Stellen Sie sicher, dass Ihr Headset ordnungsgemäß mit den Augen auf den Brillen zentriert ist.
 
-      - Versuchen Sie, die IPD (Interpupillary Distance) anzupassen. Für Reverb G2 wird eine Hardware-IPD verwendet. Um es zu ändern, suchen Sie nach IPD-Anpassung auf Ihrem Headset.
+      - Versuchen Sie, die IPD (interpupillary distance) anzupassen. Reverb G2 verwendet eine Hardware-IPD. Um dies zu ändern, suchen Sie auf Ihrem Headset nach IPD-Anpassung.
 
-      - Wenn Sie eine Brille oder Kontakte benötigen, müssen Sie sie tragen, wenn Sie das Gerät verwenden.
+      - Wenn Sie Brillen oder Kontakte benötigen, müssen Sie sie beim Verwenden des Geräts tragen.
 
-      - Überprüfen Sie, ob Ihre Brillen sauber sind (nur Mikrofiber– keine Fluide).
+      - Überprüfen Sie, ob Ihre Brillen sauber sind (nur Mikrofizierer – keine Fluide).
 
-      - Aufgrund des erweiterten Headsetdesigns kann es in den ersten Minuten beim Starten des Geräts zu einem geringfügigen Bildin ghosting kommen, bis die LCDs die Möglichkeit haben, sich aufzuwärmen.
+      - Aufgrund des erweiterten Headsetdesigns kann es in den ersten Minuten beim Starten des Geräts zu geringfügigen Ins ghosting-Daten des Bilds geben, bis die LCDs die Möglichkeit haben, sich zu aufwärmen.
   - question: >
-      Ich erhalte einen 7-14-Fehler "Something Went Wrong", wenn ich mein Headset einstecke.
+      Ich habe einen 7-14-Fehler "Etwas ist falsch gelaufen", wenn ich mein Headset einstecke.
     answer: >
       Der Code 7-14 Something Went Wrong bedeutet, dass einige der erforderlichen USB2-Komponenten nicht gefunden wurden.  Aufgrund des besonders langen Kabels von HP Reverb G2 sind einige der Toleranzen für die USB-Signale enger.  Dies bedeutet, dass ein Port auf Ihrem Computer möglicherweise zuverlässiger als ein anderer Port funktioniert.
 
@@ -67,8 +67,6 @@ sections:
 
       > [!NOTE]
 
-      > HP empfiehlt, mit Reverb G2-Geräten nur USB-Controller zu verwenden, die in die Hauptplatine integriert sind.
-
       > Wenn Sie Ihr Gerät nicht verbinden können, wenden Sie sich an den [HP-Support.](https://support.hp.com/us-en)
   - question: >
       Ich habe den Fehler 13-14 "Something Went Wrong" (Etwas ist schief gelaufen), wenn mein PC aus dem Ruhezustand fortgesetzt wird (S4)
@@ -81,25 +79,25 @@ sections:
   - question: >
       Andere geben an, dass ich laut bin oder dass meine Audiodaten abgeschnitten werden, während ich das Mikrofon mit einigen Anwendungen verwendet.
     answer: >
-      Die Eingangsvolumenebenen werden automatisch auf 100 % festgelegt, wenn das HP Reverb G2-Mikrofon zum ersten Mal von einem Windows-PC erkannt wird. Aufgrund der hochwertigen Mikrofone von Reverb G2 ist die Eingabesensitivität viel höher als die Windows 10 erwartet. Es wird empfohlen, die Mikrofoneingabestufe von Reverb G2 auf 50 % zu setzen und von dort hoch zu skalieren. Eine optimale Einstellung ist für den Benutzer spezifisch, insbesondere bei Der Verwendung von Anwendungen, die keine Mikrofoneinstellung für die automatische Verstärkung haben. Beispiele für Anwendungen mit "automatischer Gewinnsteigerung" sind Skype, Zoom, Teams und Cisco WebEx, aber nicht alle VR Social- oder Broadcasting-Anwendungen verfügen über dieses Feature.
+      Die Eingangsvolumenebenen werden automatisch auf 100 % festgelegt, wenn das HP Reverb G2-Mikrofon zum ersten Mal von einem Windows-PC erkannt wird. Aufgrund der hochwertigen Mikrofone von Reverb G2 ist die Eingabesensitivität viel höher als die Windows 10 erwartet. Es wird empfohlen, die Mikrofoneingabestufe von Reverb G2 auf 50 % zu setzen und von dort hoch zu skalieren. Eine optimale Einstellung ist für den Benutzer spezifisch, insbesondere bei Der Verwendung von Anwendungen, die keine Mikrofoneinstellung für die automatische Verstärkung haben. Beispiele für Anwendungen mit "automatischer Verstärkung" sind Skype, Zoom, Teams und Cisco WebEx, aber nicht alle SOCIAL- oder Broadcasting-Anwendungen von VR verfügen über dieses Feature.
   - question: >
-      In der Mixed Reality-Portal wird "Mixed Reality kann nicht auf diesem Headset ausgeführt werden", aber dies hat mit meinem vorherigen WMR-Headset funktioniert.
+      Die Mixed Reality-Portal besagt"Mixed Reality kann auf diesem Headset nicht ausgeführt werden", aber dies hat mit meinem vorherigen WMR-Headset gut funktioniert.
     answer: >
-      Dies kann passieren, weil Ihr HP Reverb G2 einen leistungsfähigeren PC benötigt, um die beste Erfahrung zu gewährleisten. Weitere Informationen finden Sie in den [PC-Mindestanforderungen.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+      Dies kann passieren, weil Ihr HP Reverb G2 einen leistungsfähigeren PC erfordert, um die beste Erfahrung zu gewährleisten. Weitere Informationen finden Sie in den [PC-Mindestanforderungen.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
   - question: >
       Es sieht so aus, als ob meine linke Anzeige gestreckt ist und die rechte Anzeige nicht zentriert und halb schwarz ist.
     answer: >
-      Dies kann passieren, wenn Ihr Headset nicht mit der nativen Auflösung ausgeführt wird. Aufgrund der Art der hochauflösenden Displays im HP Reverb G2 HMD können nicht alle Systeme die native Auflösung rendern. In einer zukünftigen Windows Update gibt es eine Lösung, mit der das Renderingproblem behoben wird, wenn sich das Headset nicht in der nativen Auflösung befindet.
+      Dies kann passieren, wenn Ihr Headset nicht mit der nativen Auflösung ausgeführt wird. Aufgrund der Art der hochauflösenden Displays im HP Reverb G2 HMD können nicht alle Systeme die native Auflösung rendern. In einer zukünftigen Windows Update gibt es eine Korrektur, mit der das Renderingproblem behoben wird, wenn das Headset nicht die native Auflösung aufwies.
 
 
-      Es gibt einige Gründe, warum Ihr System nicht mit der nativen Auflösung rendern kann:
+      Es gibt einige Gründe, warum Ihr System nicht in der Lage ist, mit der nativen Auflösung zu rendern:
 
 
       - DisplayPort auf dem System ist möglicherweise nicht 1.3-kompatibel, oder es werden möglicherweise nicht alle vier Lanes unterstützt.
 
       - Wenn Sie einen Adapter verwenden, unterstützt er möglicherweise nicht HBR3-kompatibel, oder es werden nicht alle vier Lanes unterstützt.
 
-      - Wenn Ihr System über eine Hybrid-GPU verfügt, kann dies die für DisplayPort verfügbare Bandbreite einschränken.
+      - Wenn Ihr System über eine Hybrid-GPU verfügt, kann dies die bandbreite einschränken, die für DisplayPort verfügbar ist.
   - question: >
       Warum werden meine HP Motion Controller-Modelle in einem Spiel nicht richtig angezeigt?
     answer: >
@@ -107,12 +105,12 @@ sections:
   - question: >
       Meine SteamVR-Spiele funktionieren anscheinend nicht ordnungsgemäß mit meinen HP Motion-Controllern.
     answer: >
-      Während Entwickler daran arbeiten, ihre Spiele für die Kompatibilität mit HP Motion Controller zu aktualisieren, haben wir benutzerdefinierte Controllerbindungen für viele der beliebtesten Spiele auf Steam bereitgestellt. Wenn "Windows Mixed Reality für SteamVR" vollständig auf Version 1.2.444 aktualisiert wurde, sollten diese Bindungen automatisch verwendet werden, wenn Ihr Spiel ausgeführt wird. Wenn Ihr Spiel ihre Aktionen zu diesem Zeitpunkt jedoch nicht zu registrieren scheint, können Sie manuell über das Menü "Einstellungen für "Menuvr" nach benutzerdefinierten Bindungsprofilen suchen.
+      Während Entwickler daran arbeiten, ihre Spiele für hp Motion Controller-Kompatibilität zu aktualisieren, haben wir benutzerdefinierte Controllerbindungen für viele der beliebtesten Spiele auf Steam bereitgestellt. Wenn "Windows Mixed Reality for SteamVR" vollständig auf Version 1.2.444 aktualisiert wurde, sollten diese Bindungen automatisch übernommen werden, wenn Ihr Spiel ausgeführt wird. Wenn Ihr Spiel ihre Aktionen derzeit jedoch nicht zu registrieren scheint, können Sie manuell über das Menü "SteamVR-Einstellungen" nach benutzerdefinierten Bindungsprofilen suchen.
 
       Aufgabe
 
 
-      - Öffnen Sie das Menü "SteamVR", indem Sie die Menüschaltfläche des rechten Bewegungscontrollers drücken.
+      - Öffnen Sie das Menü "SteamVR", indem Sie die Menüschaltfläche des rechten Motion-Controllers drücken.
 
       - Wählen Sie das Symbol "Einstellungen" in der unteren rechten Ecke des Menüs "SteamVR" aus.
 
@@ -121,23 +119,23 @@ sections:
       - Wählen Sie die Option "Controllerbindungen verwalten" aus.
 
 
-      Von hier aus können Sie Ihre aktive Controllerbindung in "Benutzerdefiniert" ändern, wodurch die Option zum Testen freigegebener Spielbindungen in der Community geöffnet wird.
+      Hier können Sie Ihre aktive Controllerbindung in "Benutzerdefiniert" ändern. Dadurch wird die Option zum Testen von von der Community freigegebenen Spielbindungen geöffnet.
 
-      Wenn noch keine benutzerdefinierten Spielbindungen für dieses Spiel freigegeben wurden (oder Wenn Sie mit denjenigen, die Sie ausprobiert haben, nicht vollständig zufrieden sind), können Sie auch eigene benutzerdefinierte Spielbindungen erstellen und sogar dem Rest der Community helfen, indem Sie sie nach einigen Spielsitzungen freigeben.
+      Wenn noch keine benutzerdefinierten Spielbindungen für dieses Spiel freigegeben wurden (oder wenn Sie mit den von Ihnen ausprobierten nicht vollständig zufrieden sind), können Sie auch eigene benutzerdefinierte Spielbindungen erstellen und sogar dem Rest der Community helfen, indem Sie sie nach einigen Spielsitzungen freigeben.
   - question: >
-      Ich habe alle Kabel mit dem Headset und PC verbunden, aber es wird nicht ein-/
+      Ich habe alle Kabel mit dem Headset und dem PC verbunden, aber es wird nicht eingeschaltet.
     answer: >
-      Vergewissern Sie sich, dass das mit dem Headset verbundene Kabel vollständig angeschlossen ist. Am oberen Rand des Kabels befindet sich ein kleiner Punkt, der neben dem oberen Rand des Headsets angezeigt wird, wenn es vollständig eingefügt wurde:
+      Vergewissern Sie sich, dass das mit dem Headset verbundene Kabel voll ausgestattet ist. Am oberen Rand des Kabels befindet sich ein kleiner Punkt, der sich neben dem oberen Rand des Headsets befindet, wenn es vollständig eingefügt wurde:
 
 
-      ![Kleiner Punkt am Oberen des Kabels](images/small-dot.jpg)
+      ![Kleiner Punkt am oberen Rand des Kabels](images/small-dot.jpg)
   - question: >
-      Wie kann ich das Headset während der Verwendung meines PCs ein-/aus-netzen?
+      Wie kann ich das Headset ausschalten, während ich meinen PC trotzdem verwende?
     answer: >
-      Trennen Sie den Ac-Verbindungsadapter aus dem Anschlussfeld des Headsetkabels, um die Stromversorgung des Headsets zu entfernen.
+      Trennen Sie den Netzadapter aus dem Linkfeld des Headsetkabels, um die Stromversorgung des Headsets zu entfernen.
   - question: >
-      Das Bild der Anzeigen von Reverb G2 ist kleiner und nur in der oberen linken Ecke
+      Das Bild der Anzeige von Reverb G2 ist kleiner und nur oben links.
     answer: >-
-      Wenn Sie über eine AMD-Leistungs-GPU verfügen, müssen Sie die automatische upscaling deaktivieren. Navigieren Sie während der Verbindung ihres Headsets zu Einstellungen -> Mixed Reality -> Headset -> Resolution.
+      Wenn Sie über eine AMD-Energie-GPU verfügen, müssen Sie die automatische Upscaling deaktivieren. Navigieren Sie während der Verbindung ihres Headsets zu Einstellungen -> Mixed Reality -> Headset -> Auflösung.
 
-      Wählen Sie im Dropdownmenü die Option "4320 x 2160 (beste Qualität)" aus. Wenn "Automatische Upskalierung (beste Leistung)" ausgewählt ist, kann das Problem mit der Anzeige angezeigt werden.
+      Wählen Sie im Dropdownmenü die Option "4320 x 2160 (beste Qualität)" aus. Wenn "Automatische Upscaling (beste Leistung)" ausgewählt ist, tritt möglicherweise das Problem mit der Anzeige auf.
