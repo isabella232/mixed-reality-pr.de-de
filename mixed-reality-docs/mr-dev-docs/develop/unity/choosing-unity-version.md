@@ -1,83 +1,82 @@
 ---
-title: Auswählen einer Unity-Version und eines XR-Plug-ins
-description: Bleiben Sie auf dem neuesten Stand mit den neuesten Empfehlungen für Unity und XR-Plug-Ins für die hololens-Anwendungsentwicklung.
+title: Auswählen einer Unity-Version und eines XR-Plug-Ins
+description: Bleiben Sie über die neuesten Unity- und XR-Plug-In-Empfehlungen für die Entwicklung von HoloLens-Anwendungen auf dem laufenden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/26/2021
 ms.topic: article
-keywords: mixedrealitytoolkit, mixedrealitytoolkit-Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity
-ms.openlocfilehash: b8f5f0131da811393ee053541e0c2fa0c735472e
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity
+ms.openlocfilehash: 3bdaa35f495d7a647a7cbf37ddcd4f85e96d74d0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105938140"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143675"
 ---
-# <a name="choosing-a-unity-version-and-xr-plugin"></a>Auswählen einer Unity-Version und eines XR-Plug-ins
+# <a name="choosing-a-unity-version-and-xr-plugin"></a>Auswählen einer Unity-Version und eines XR-Plug-Ins
 
-Wir empfehlen zurzeit die **Installation von Unity 2019,4 LTS und die Verwendung von Legacy-integrierten XR** für die Entwicklung mit gemischter Realität. Außerdem können Sie Apps mit anderen Unity-Konfigurationen erstellen.
+Es wird derzeit empfohlen, **Unity 2019.4 LTS** zu installieren und ältere integrierte XR-Daten für die Mixed Reality-Entwicklung zu verwenden. Sie können aber auch Apps mit anderen Unity-Konfigurationen erstellen.
 
-## <a name="unity-20194-lts-recommended"></a>Unity 2019,4 LTS (empfohlen)
+## <a name="unity-20194-lts-recommended"></a>Unity 2019.4 LTS (empfohlen)
 
-Die zurzeit Empfohlene Unity-Konfiguration von Microsoft für hololens 2 und die Windows Mixed Reality-Entwicklung ist **Unity 2019,4 LTS mit der integrierten** Unterstützung von XR.
+Die derzeit von Microsoft empfohlene Unity-Konfiguration für HoloLens 2- und Windows Mixed Reality-Entwicklung ist **Unity 2019.4 LTS mit integrierter Legacy-XR-Unterstützung.**
 
-Die beste Möglichkeit zum Installieren und Verwalten von Unity besteht im <a href="https://unity3d.com/get-unity/download" target="_blank">[Unity-Hub]</a>. Öffnen Sie nach der Installation den Unity-Hub:
+Die beste Möglichkeit zum Installieren und Verwalten von Unity ist der <a href="https://unity3d.com/get-unity/download" target="_blank">[Unity Hub]</a>. Wenn sie installiert ist, öffnen Sie Unity Hub:
 
-1. Wählen Sie die Registerkarte **Installationen** und dann **Hinzufügen** aus.
-2. Wählen Sie Unity 2019,4 LTS aus, und klicken Sie auf **weiter**
+1. Wählen Sie die **Registerkarte Installs (Installationen)** und dann **ADD (HINZUFÜGEN) aus.**
+2. Wählen Sie Unity 2019.4 LTS aus, und klicken Sie auf **Weiter.**
 
-![Neue Version des Unity-Hubs 2010-32](images/unity-hub-img-01.png)
+![Neue Version des Unity-Hubs](images/unity-hub-img-01.png)
 
-3. Überprüfen Sie die folgenden Komponenten unter **"Plattformen"**
-    * **Universelle Windows-Plattform Build-Unterstützung** 
-    * **Unterstützung für Windows-Builds (IL2CPP)**
+3. Überprüfen Sie die folgenden Komponenten unter **"Plattformen".**
+    * **Buildunterstützung für Universelle Windows-Plattform** 
+    * **Windows-Buildunterstützung (IL2CPP)**
 
-![Unity-universelle Windows-Plattform Build-Unterstützungs Option](../images/Unity_Install_Option_UWP.png)
+![Unity: Option „Buildunterstützung für Universelle Windows-Plattform“](../images/Unity_Install_Option_UWP.png)
 
-4. Wenn Sie Unity ohne diese Optionen installiert haben, können Sie Sie über das Menü **"Module hinzufügen"** im Unity-Hub hinzufügen:
+4. Wenn Sie Unity ohne diese Optionen installiert haben, können Sie diese über das Menü **"Module hinzufügen"** in Unity Hub hinzufügen:
 
-![Unity-Windows-Buildunterstützung](../images/Unity_Install_Option_UWP2.png)
+![Unity: Option „Windows-Buildunterstützung“](../images/Unity_Install_Option_UWP2.png)
 
-Klicken Sie hier, um mit der integrierten Version XR in Unity 2019,4 LTS zu beginnen:
+Klicken Sie hier, um mit der älteren integrierten XR in Unity 2019.4 LTS zu beginnen:
 
 > [!div class="nextstepaction"]
-> [Einrichten von Legacy-integrierter XR](legacy-xr-support.md)
+> [Einrichten von legacy-integriertem XR](legacy-xr-support.md)
 
 > [!NOTE]
-> Unity hat seine ältere integrierte XR-Unterstützung seit Unity 2019 als veraltet markiert.  Während Unity 2019 ein neues XR-Plug-in-Framework bietet, wird dieser Pfad von Microsoft aufgrund von Inkompatibilitäten in Azure Spatial-verankert mit AR Foundation 2 derzeit nicht in Unity 2019 empfohlen.  In Unity 2020 wird Azure Spatial Anchor im XR-Plug-in-Framework unterstützt.
+> Unity hat die integrierte Legacy-XR-Unterstützung ab Unity 2019 als veraltet bezeichnet.  Unity 2019 bietet zwar ein neues XR-Plug-In-Framework, Microsoft empfiehlt diesen Pfad in Unity 2019 jedoch aufgrund von Azure Spatial Anchors-Inkompatibilitäten mit AR Foundation 2 nicht.  In Unity 2020 wird Azure Spatial Anchors im XR-Plug-In-Framework unterstützt.
 
-Wenn Sie Apps für hololens (1. Generation) entwickeln, werden diese Headsets in Unity 2019 LTS mit Legacy-integrierter XR für den vollständigen Lebenszyklus von Unity 2019 LTS bis Mitte 2022 unterstützt.
+Wenn Sie Apps für HoloLens (1. Generation) entwickeln, werden diese Headsets in Unity 2019 LTS mit integriertem Legacy-XR für den gesamten Lebenszyklus von Unity 2019 LTS bis Mitte 2022 weiterhin unterstützt.
 
-## <a name="unity-20203-lts"></a>Unity 2020,3 LTS 
+## <a name="unity-20203-lts"></a>Unity 2020.3 LTS 
 
-Wenn Sie **Unity 2020,3 LTS** verwenden, können Sie das Windows- **XR-Plug** -in verwenden, um hololens 2-und Windows Mixed Reality-Anwendungen zu entwickeln.
+Wenn Sie **Unity 2020.3 LTS** verwenden, können Sie das **Windows XR-Plug-In** verwenden, um anwendungen HoloLens 2 Windows Mixed Reality entwickeln.
 
-Es gibt jedoch bekannte Probleme, die die – Hologramm-Stabilität und andere Features auf hololens 2 beeinflussen: 
+Es gibt jedoch bekannte Probleme, die sich auf die Hologrammstabilität und andere Features auf HoloLens 2 auswirken: 
 
-* Die Tiefe Puffer Übermittlung wurde in aktuellen Unity 2020-Builds zurückgekehrt, was zu einer schwerwiegenden – Hologramm-Instabilität führt.
-* Holographic App-Remoting-Anwendungen, die das universelle Windows-Plattform Build-Ziel verwenden, funktionieren nicht.
-* Das Unity-Grafik Auftrags System ist standardmäßig eingeschaltet, obwohl es nicht mit hololens-Projekten kompatibel ist.
+* Holografische App-Remotinganwendungen, die das Universelle Windows-Plattform Buildziel verwenden, funktionieren nicht.
+* Das Unity-Grafikaufträgesystem ist standardmäßig aktiviert, obwohl es nicht mit HoloLens-Projekten kompatibel ist.
 
-Wenn Sie noch heute ein neues Projekt in Unity 2020 starten möchten, sollten Sie sich in den kommenden Monaten für aktualisierte Unity-Builds und Windows-XR-Plug-in-Builds vor dem Versenden Ihrer APP informieren.  Dadurch wird sichergestellt, dass Ihre Benutzer über die richtige – Hologramm-Stabilität verfügen.
-
-> [!div class="nextstepaction"]
-> [Verwenden des Windows XR-Plug-ins](windows-xr-plugin.md)
-
-### <a name="using-openxr"></a>Verwenden von openxr
-
-Unity 2020,3 LTS unterstützt auch eine öffentliche Vorschau des **Mixed Reality openxr** -Plug-ins.
-
-Das Mixed Reality openxr-Plug-in unterstützt AR Foundation 4,0 vollständig und stellt die Implementierungen arplanemanager und arraycastmanager bereit. Auf diese Weise können Sie Code für die Treffer Überprüfung schreiben, der dann die hololens 2-und Arcore-/Arkit-Telefone und-Tablets umfasst. 
-
-Im weiteren Verlauf dieses Jahres wird **Unity 2020,3 LTS mit dem openxr-Plug-in** die empfohlene Unity-Konfiguration, und zukünftige hololens 2-Funktionen in Unity werden nur über dieses Plug-in verfügbar gemacht.  Sie können das Projekt jetzt hier starten. Wenn Ihr Projekt jedoch auf hololens 2 ausgerichtet ist, stoßen Sie derzeit auf die Stabilität von Unity 2020 – Hologramm und andere Probleme, die oben aufgeführt sind.  Stellen Sie sicher, dass Sie sich in den kommenden Monaten für aktualisierte Unity-Builds und openxr-Plug-in-Builds ansehen, bevor Sie Ihre APP versenden  Dadurch wird sichergestellt, dass Ihre Benutzer über die richtige – Hologramm-Stabilität verfügen. 
+Wenn Sie noch heute ein neues Projekt in Unity 2020 starten möchten, sollten Sie in den kommenden Monaten nach aktualisierten Unity-Builds und Windows XR-Plug-In-Builds suchen, bevor Sie Ihre App versenden.  Dadurch wird sichergestellt, dass Ihre Benutzer die richtige Hologrammstabilität erhalten.
 
 > [!div class="nextstepaction"]
-> [Verwenden des openxr-Plug-ins](openxr-getting-started.md)
+> [Verwenden des Windows XR-Plug-Ins](windows-xr-plugin.md)
 
-## <a name="unity-20211"></a>Unity 2021,1
+### <a name="using-openxr"></a>Verwenden von OpenXR
 
-Wenn Sie frühe **Unity 2021,1** -Builds ausprobieren, sollten Sie zum **openxr-Plug**-in wechseln, da das Windows-XR-Plug-in dort veraltet ist.  Ab Unity 2021,2 ist das openxr-Plug-in der einzige Pfad für die Entwicklung mit gemischter Realität, da das Windows-XR-Plug-in nicht mehr unterstützt wird.
+Unity 2020.3 LTS unterstützt auch eine öffentliche Vorschauversion des Mixed Reality OpenXR-Plug-Ins. 
 
-## <a name="unity-20184-lts"></a>Unity 2018,4 LTS
+Das Mixed Reality OpenXR-Plug-In unterstützt AR Foundation 4.0 vollständig und stellt ARPlaneManager- und ARRaycastManager-Implementierungen bereit. Dadurch können Sie einmal Treffertestcode schreiben, der sich dann über HoloLens 2 und ARCore/ARKit-Smartphones und -Tablets erstreckt. 
 
-Wenn Sie bereits über ein Projekt verfügen, das Unity 2018,4 LTS verwendet, wird Ihre Unity-Engine nach der Veröffentlichung weiterhin 2 Jahre lang unterstützt.  Unity 2018 LTS erreicht das Dienst Ende im Frühjahr 2021.
+Später in diesem Jahr wird **Unity 2020.3 LTS mit dem OpenXR-Plug-In** zur empfohlenen Unity-Konfiguration, und zukünftige HoloLens 2 Features in Unity werden nur über dieses Plug-In verfügbar gemacht.
+
+> [!div class="nextstepaction"]
+> [Verwenden des OpenXR-Plug-Ins](openxr-getting-started.md)
+
+## <a name="unity-20211"></a>Unity 2021.1
+
+Wenn Sie frühe **Unity 2021.1-Builds** ausprobieren, sollten Sie mit dem **OpenXR-Plug-In** fortschreiten, da das Windows XR-Plug-In dort veraltet ist.  Ab Unity 2021.2 ist das OpenXR-Plug-In der einzige Pfad für Mixed Reality Entwicklung, da das Windows XR-Plug-In nicht mehr unterstützt wird.
+
+## <a name="unity-20184-lts"></a>Unity 2018.4 LTS
+
+Wenn Sie bereits über ein Projekt mit Unity 2018.4 LTS verfügen, wird Ihre Unity-Engine nach der Veröffentlichung 2 Jahre lang unterstützt.  Unity 2018 LTS wird im Spring 2021 das Ende des Diensts erreichen.

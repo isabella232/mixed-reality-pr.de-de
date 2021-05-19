@@ -1,16 +1,16 @@
 ---
-title: OculusQuestMRTK
+title: Oculus Quest MRTK
 description: Dokumentation zum Konfigurieren für Oculus Quest im MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Oculus Quest,
-ms.openlocfilehash: 9350ed7c8426c3bb31cf41493056fb6fc1e26107
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852367"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143963"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>Konfigurieren von Oculus Quest in MRTK mithilfe der XR SDK-Pipeline
 
@@ -63,7 +63,7 @@ Dieser Datenanbieter  verwendet NICHT die **XR-Pipeline** von Unity oder die **L
     - Wenn sie nicht beabsichtigen, die Konfigurationsprofile zu ändern
         - Ändern Sie Ihr Profil in DefaultXRSDKConfigurationProfile, und wechseln Sie zu [Erstellen und Bereitstellen Ihres Projekts in Oculus Quest.](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
 
-    - Gehen Sie andernfalls wie folgt vor:
+    - Andernfalls gehen Sie wie folgt vor:
         - Wählen Sie das MixedRealityToolkit-Spielobjekt in der Hierarchie aus, und wählen Sie Kopieren und **Anpassen aus,** um das Mixed Reality-Standardprofil zu klonen.
 
         ![Profil klonen](../images/cross-platform/CloneProfile.png)
@@ -76,9 +76,9 @@ Dieser Datenanbieter  verwendet NICHT die **XR-Pipeline** von Unity oder die **L
 
         ![Klonen des Eingabesystemprofils](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - Öffnen Sie den Abschnitt  **Eingabedatenanbieter,** wählen Sie oben Datenanbieter Hinzufügen aus, und am Ende der Liste wird ein neuer Datenanbieter hinzugefügt.  Öffnen Sie den neuen Datenanbieter, und legen Sie **type** auf **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager fest.**
+        - Öffnen Sie **den Abschnitt Eingabedatenanbieter,** wählen Sie oben **Datenanbieter** Hinzufügen aus, und am Ende der Liste wird ein neuer Datenanbieter hinzugefügt.  Öffnen Sie den neuen Datenanbieter, und legen Sie **type** auf **Microsoft.MixedReality.Toolkit.XRSDK.Oculus > OculusXRSDKDeviceManager fest.**
 
-        ![Oculus: XRSDK-Datenanbieter](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+        ![Oculus Add XRSDK Datenanbieter](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
 
 1. Das Oculus XR SDK Datenanbieter enthält ein OVR Camera Oc Prefab, das das Projekt automatisch mit einem OVR-Kameragerät und OVR-Händen konfiguriert, um Eingaben ordnungsgemäß weiter zu routen. Das manuelle Hinzufügen eines OVR-Kamerageräts zur Szene erfordert eine manuelle Konfiguration von Einstellungen und Eingaben.
 
@@ -92,7 +92,7 @@ Dieser Datenanbieter  verwendet NICHT die **XR-Pipeline** von Unity oder die **L
     ![Oculus Run Device](../images/cross-platform/oculus-quest/OculusRunDevice.png)
 
 1. Wählen Sie Erstellen und ausführen aus.
-    - Die folgenden Buildfehler treten wahrscheinlich auf, wenn Sie Beim ersten Mal *erstellen und* ausführen auswählen. Sie sollten in der Lage sein, die Bereitstellung erfolgreich durchzuführen, wenn *Sie Erneut erstellen und ausführen* auswählen.
+    - Die folgenden Buildfehler treten wahrscheinlich auf, wenn Sie Beim ersten Mal *erstellen und* ausführen auswählen. Sie sollten die Bereitstellung erfolgreich ausführen können, wenn Sie *Erneut erstellen und ausführen* auswählen.
 
     ![Oculus: Erwartete Buildfehler](../images/cross-platform/oculus-quest/OculusExpectedBuildErrors.png)
 
@@ -101,10 +101,10 @@ Dieser Datenanbieter  verwendet NICHT die **XR-Pipeline** von Unity oder die **L
 
 ## <a name="removing-oculus-integration-from-the-project"></a>Entfernen der Oculus-Integration aus dem Projekt
 
-1. Navigieren Sie zum Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules  ![ Oculus Separation Asmdef.](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
-1. Lassen Sie Unity aktualisieren, da Verweise in Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef und anderen Dateien in diesem Schritt geändert werden.
+1. Navigieren Sie zum Mixed Reality Toolkit > Oculus > Separate Oculus Integration Unity Modules  ![ Oculus Separation Asmdef](../images/cross-platform/oculus-quest/OculusSeparationAsmdef.png)
+1. Lassen Sie Unity als Verweise in Microsoft.MixedReality.Toolkit.Providers.Oculus.asmdef aktualisieren, und andere Dateien werden in diesem Schritt geändert.
 1. Schließen von Unity
-1. Schließen sie Visual Studio, wenn es geöffnet ist.
+1. Schließen Sie Visual Studio, wenn es geöffnet ist.
 1. Öffnen Sie den Datei-Explorer, und navigieren Sie zum Stamm des MRTK-Unity-Projekts.
 1. Löschen des UnityProjectName/Library-Verzeichnisses
 1. Löschen des Verzeichnisses UnityProjectName/Assets/Oculus

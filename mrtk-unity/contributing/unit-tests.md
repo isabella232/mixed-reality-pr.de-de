@@ -1,16 +1,16 @@
 ---
-title: UnitTests
+title: Komponententests
 description: UnitTests zum Überprüfen der Zuverlässigkeit von MRTK.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, UnitTest,
-ms.openlocfilehash: 51a485ff258ceafb8841ff1b86e715b1623f3255
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 76d246634cf190787fcfd78c849a0bd6da3a2135
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489240"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144711"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>Schreiben und Ausführen von Tests in MRTK
 
@@ -36,9 +36,9 @@ Die [Unity-Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunne
 
 ### <a name="command-line"></a>Befehlszeile
 
-Tests können auch von einem [PowerShell-Skript](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) unter ausgeführt `Scripts\test\run_playmode_tests.ps1` werden. Dadurch werden die Playmode-Tests genau so ausgeführt, wie sie auf GitHub/CI ausgeführt werden (siehe unten) und Ergebnisse drucken. Hier finden Sie einige Beispiele für die Ausführung des Skripts.
+Tests können auch von einem [PowerShell-Skript](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) unter ausgeführt `Scripts\test\run_playmode_tests.ps1` werden. Dadurch werden die Playmode-Tests genau so ausgeführt, wie sie auf GitHub/CI ausgeführt werden (siehe unten) und Ergebnisse drucken. Im Folgenden finden Sie einige Beispiele für die Ausführung des Skripts.
 
-Führen Sie die Tests für das Projekt unter H:\mrtk.dev mit Unity 2018.4 aus (z.B. Unity 2018.4.26f1).
+Führen Sie die Tests für das Projekt unter H:\mrtk.dev mit Unity 2018.4 (z.B. Unity 2018.4.26f1) aus.
 
 ```ps
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
@@ -50,25 +50,25 @@ Führen Sie die Tests für das Projekt unter H:\mrtk.dev mit Unity 2018.4 aus, u
 .\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
-Es ist auch möglich, die Playmode-Tests mehrmals über das `run_repeat_tests.ps1` Skript auszuführen. Alle in verwendeten `run_playmode_tests.ps1` Parameter können verwendet werden.
+Es ist auch möglich, die Playmode-Tests mehrmals über das `run_repeat_tests.ps1` Skript auszuführen. Alle in verwendeten Parameter `run_playmode_tests.ps1` können verwendet werden.
 
 ```ps
 .\run_repeat_tests.ps1 -Times 5
 ```
 
-### <a name="pull-request-validation"></a>Pull Request-Überprüfung
+### <a name="pull-request-validation"></a>Überprüfung von Pull Requests
 
-Die CI des MRTK wird MRTK in allen Konfigurationen erstellen und alle Bearbeitungs- und Wiedergabemodustests ausführen. CI kann ausgelöst werden, indem ein Kommentar auf dem GitHub-PR veröffentlicht `/azp run mrtk_pr` wird, wenn der Benutzer über ausreichende Rechte verfügt. CI-Läufe werden auf der Registerkarte "Überprüfungen" des PR angezeigt.
+DER CI von MRTK erstellt MRTK in allen Konfigurationen und führt alle Bearbeitungs- und Wiedergabemodustests aus. CI kann ausgelöst werden, indem ein Kommentar auf dem GitHub-PR gepostet `/azp run mrtk_pr` wird, wenn der Benutzer über ausreichende Rechte verfügt. CI-Ausführungen werden auf der Registerkarte "Überprüfungen" des PR angezeigt.
 
 Erst nachdem alle Tests erfolgreich bestanden wurden, kann der PR mit main zusammengeführt werden.
 
 ### <a name="stress-tests--bulk-tests"></a>Belastungstests/Massentests
 
-Manchmal schlagen Tests nur gelegentlich fehl, was das Debuggen frustrieren kann.
+Manchmal schlagen Tests nur gelegentlich fehl, was das Debuggen frustrierend sein kann.
 
-Um mehrere Testläufe lokal zu haben, ändern Sie die entsprechend Testskripts. Das folgende Python-Skript sollte dieses Szenario praktischer machen.
+Um mehrere Testläufe lokal zu erhalten, ändern Sie die entsprechend den Testskripts. Das folgende Python-Skript sollte dieses Szenario praktischer gestalten.
 
-Voraussetzung für die Ausführung des Python-Skripts ist, [dass Python 3.X installiert ist.](https://www.python.org/downloads/)
+Voraussetzung für die Ausführung des Python-Skripts ist die Installation von [Python 3.X.](https://www.python.org/downloads/)
 
 Für einen einzelnen Test, der mehrmals ausgeführt werden muss:
 
@@ -77,7 +77,7 @@ Für einen einzelnen Test, der mehrmals ausgeführt werden muss:
 public IEnumerator MyTest() {...}
 ```
 
-Führen Sie Folgendes über eine Befehlszeile aus[(PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) wird empfohlen).
+Führen Sie Folgendes über eine Befehlszeile aus ([PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core) wird empfohlen)
 
 ```powershell
 cd scripts\tests
@@ -85,7 +85,7 @@ cd scripts\tests
 python .\generate_repeat_tests.py -n 5 -t MyTest
 ```
 
-Kopieren Sie die Ausgabe, und fügen Sie sie in Ihre Testdatei ein. Mit dem folgenden Skript werden mehrere Tests nacheinander ausgeführt:
+Kopieren Sie die Ausgabe, und fügen Sie sie in die Testdatei ein. Das folgende Skript dient zum Ausführen mehrerer Tests nacheinander:
 
 ```powershell
 cd scripts\tests
@@ -121,12 +121,12 @@ Es gibt zwei Arten von Tests, die für neuen Code hinzugefügt werden können.
 
 MRTK-Wiedergabemodustests können testen, wie Ihr neues Feature auf verschiedene Eingabequellen wie Hände oder Augen reagiert.
 
-Neue Tests im Wiedergabemodus können [BasePlayModeTests erben,](xref:Microsoft.MixedReality.Toolkit.Tests) oder das folgende Gerüst kann verwendet werden.
+Neue Wiedergabemodustests können [BasePlayModeTests erben,](xref:Microsoft.MixedReality.Toolkit.Tests) oder das folgende Gerüst kann verwendet werden.
 
 So erstellen Sie einen neuen Wiedergabemodustest:
 
 * Navigieren Sie zu Assets > MRTK > Tests > PlayModeTests.
-* Klicken Sie mit der rechten Maustaste auf Create > Testing > C#-Testskript.
+* Klicken Sie mit der rechten Maustaste auf > Testing > C#-Testskripts.
 * Ersetzen Sie die Standardvorlage durch das folgende Gerüst.
 
 ```c#
@@ -221,7 +221,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="edit-mode-tests"></a>Bearbeiten von Modustests
 
-Bearbeitungsmodustests werden im Bearbeitungsmodus von Unity ausgeführt und können im Ordner **MRTK-Tests**  >    >  **EditModeTests** im Repository Mixed Reality Toolkit hinzugefügt werden.
+Bearbeitungsmodustests werden im Bearbeitungsmodus von Unity ausgeführt und können im Repository des Mixed Reality Toolkits unter dem Ordner **MRTK**  >  **Tests**  >  **EditModeTests** hinzugefügt werden.
 Zum Erstellen eines neuen Tests kann die folgende Vorlage verwendet werden:
 
 ```c#
@@ -246,8 +246,8 @@ namespace Microsoft.MixedReality.Toolkit.Tests
 
 ### <a name="test-naming-conventions"></a>Testbenennungskonventionen
 
-Tests sollten in der Regel basierend auf der Klasse benannt werden, die sie testen, oder dem Szenario, das sie testen.
-Beispiel für eine zu testende Klasse:
+Tests sollten in der Regel basierend auf der Klasse benannt werden, die sie testen, oder dem Szenario, in dem sie getestet werden.
+Beispiel für eine zu testete Klasse:
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Input
@@ -258,7 +258,7 @@ namespace Microsoft.MixedReality.Toolkit.Input
 }
 ```
 
-Benennen sie den Test.
+Erwägen Sie, den Test zu benennen.
 
 ```c#
 namespace Microsoft.MixedReality.Toolkit.Tests.Input
@@ -277,13 +277,13 @@ Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs
 Test: Assets/MRTK/Tests/EditModeTests/Core/Utilities/InterestingUtilityClassTest.cs
 ```
 
-Dadurch wird sichergestellt, dass es eine klare Möglichkeit gibt, die entsprechende Testklasse jeder Klasse zu finden, wenn eine solche Testklasse vorhanden ist.
+Dadurch soll sichergestellt werden, dass es eine klare Möglichkeit gibt, die entsprechende Testklasse jeder Klasse zu finden, wenn eine solche Testklasse vorhanden ist.
 
-Die Platzierung von szenariobasierten Tests ist weniger definiert: Wenn der Test beispielsweise das gesamte Eingabesystem durchsetzt, sollten Sie es in einen Ordner "InputSystem" im entsprechenden Bearbeitungsmodus oder Testordner für den Wiedergabemodus platzieren.
+Die Platzierung szenariobasierter Tests ist weniger definiert. Wenn der Test z. B. das gesamte Eingabesystem austestet, sollten Sie es in einen Ordner "InputSystem" im entsprechenden Testordner für den Bearbeitungs- oder Wiedergabemodus platzieren.
 
-### <a name="test-script-icons"></a>Testen von Skriptsymbolen
+### <a name="test-script-icons"></a>Testskriptsymbole
 
-Wenn Sie einen neuen Test hinzufügen, ändern Sie das Skript, um das richtige MRTK-Symbol zu erhalten. Hierzu gibt es ein einfaches MRTK-Tool:
+Wenn Sie einen neuen Test hinzufügen, ändern Sie das Skript, um das richtige MRTK-Symbol zu erhalten. Dazu gibt es ein einfaches MRTK-Tool:
 
 1. Wechseln Sie zum Menüelement Mixed Reality Toolkit.
 1. Klicken Sie auf Hilfsprogramme, dann auf Aktualisieren und dann auf Symbole.

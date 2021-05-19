@@ -1,16 +1,16 @@
 ---
-title: Erkennen vonPlatformCapabilities
+title: Erkennen von Plattformfunktionen
 description: Details zu den verschiedenen Funktionen, die mrtk unterstützt
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Funktionen,
-ms.openlocfilehash: 62e03c6d47deb079d3460759b5c694dd258a7767
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: e6f5a70120b2634a4c8c75cdca3d8b369967c4b0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852371"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143859"
 ---
 # <a name="detecting-platform-capabilities"></a>Erkennen von Plattformfunktionen
 
@@ -22,13 +22,13 @@ Das Mixed Reality Toolkit stellt die [`MixedRealityCapability`](xref:Microsoft.M
 
 ### <a name="input-system-capabilities"></a>Eingabesystemfunktionen
 
-Das MRTK-Standardeingabesystem unterstützt das Abfragen der folgenden Funktionen:
+Das STANDARDMÄßIGE MRTK-Eingabesystem unterstützt das Abfragen der folgenden Funktionen:
 
 | Funktion | Beschreibung |
 |---|---|
 | ArticulatedHand | Artikulierte Handeingabe |
 | EyeTracking (Blickverfolgung) | Anvisieren mit den Augen |
-| GGVHand | Handeingabe mit Anv-Gesten-Stimme |
+| GGVHand | Handeingabe mit Anv-Geste-Stimme |
 | MotionController | Motion Controller-Eingabe |
 | VoiceCommand | Sprachbefehle mit von der App definierten Schlüsselwörtern |
 | VoiceDictation | Sprach-zu-Text-Diktat |
@@ -67,7 +67,7 @@ if (capabilityCheck != null)
 }
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 - [Dokumentation zur IMixedRealityCapabilityCheck-API](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
 - [MixedRealityCapability-Dokumentation](xref:Microsoft.MixedReality.Toolkit.MixedRealityCapability)

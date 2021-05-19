@@ -1,16 +1,16 @@
 ---
-title: ScreenshotUtility
+title: Screenshot-Hilfsprogramm
 description: Dokumentation zur Verwendungsweise des Screenshot-Tools in MRTKL
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 4fbd5457dd0af502ddedf30a10482690cd8e1a1d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
-ms.translationtype: HT
+ms.openlocfilehash: 59bf0df2a32030281c8bf0a1a8574b4dd9bf4607
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693067"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143791"
 ---
 # <a name="screenshot-utility"></a>Screenshot-Hilfsprogramm
 

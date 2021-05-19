@@ -1,47 +1,49 @@
 ---
 title: Grundlegendes zu Szenen
-description: Erfahren Sie, wie Sie mit Szenen Verständnis für hololens entwickeln, einschließlich SDK, Funktionen und häufig verwendeter Verwendungs Szenarien.
+description: Erfahren Sie, wie Sie mit Szenenverständnis für HoloLens entwickeln, einschließlich SDK, Funktionen und gängigen Verwendungsszenarien.
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: Szenen Verständnis, räumliche Zuordnung, Windows Mixed Reality, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Okklusion, SDK
-ms.openlocfilehash: 1458ca9e70a52913ae150c58393c3e030e2c1add
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Szenenverständnis, räumliche Abbildung, Windows Mixed Reality, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Okklusion, SDK
+ms.openlocfilehash: 06a4fdb6f3ad777c47151950acbd4ccdec9935ca
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583337"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143593"
 ---
 # <a name="scene-understanding"></a>Grundlegendes zu Szenen
 
-Das Verständnis von Szenen bietet Entwicklern gemischter Realität eine strukturierte, allgemeine Darstellung in der Umgebung, die entwickelt wurde, um die Entwicklung für Anwendungen mit hoher Ebene intuitiv zu gestalten. Der Einblick in die Szene ermöglicht das Kombinieren der Leistungsfähigkeit vorhandener gemischter Laufzeiten, z. b. der hochgradig präzisen, aber weniger strukturierten [räumlichen Zuordnung](spatial-mapping.md) und neuer Ki-gesteuerter Runtimes. Durch die Kombination dieser Technologien generiert das Szene Verständnis Darstellungen von 3D-Umgebungen, die denen ähneln, die Sie möglicherweise in Frameworks wie Unity oder Arkit/Arcore verwendet haben. Der Einstiegspunkt der Szene beginnt mit einem Szenen Beobachter, der von Ihrer Anwendung aufgerufen wird, um eine neue Szene zu berechnen. Heute kann die Technologie drei verschiedene, aber verwandte Objektkategorien generieren: 
+Szenenverständnis bietet Mixed Reality Entwicklern eine strukturierte, umfassende Umgebungsdarstellung, die die Entwicklung für benutzerorientierte Anwendungen intuitiv macht. Das Szenenverständnis kombiniert dazu die Leistung der vorhandenen Mixed Reality-Runtimes, z. B. die hochgradig genaue, aber weniger strukturierte räumliche Zuordnung und neue KI-gesteuerte Runtimes. [](spatial-mapping.md) Durch die Kombination dieser Technologien generiert Scene Understanding Darstellungen von 3D-Umgebungen, die denen ähneln, die Sie möglicherweise in Frameworks wie Unity oder ARKit/ARCore verwendet haben. Der Einstiegspunkt "Szenenverständnis" beginnt mit einem Szenenbeobachter, der von Ihrer Anwendung aufgerufen wird, um eine neue Szene zu berechnen. Heute kann die Technologie drei unterschiedliche, aber verwandte Objektkategorien generieren:
 
-* Vereinfachte wasserdichte Umgebungs Netze, die die planare Raumstruktur ohne Übersichtlichkeit ableiten
-* Ebenen für die Platzierung, die wir als Quads bezeichnen
-* Eine Momentaufnahme des Netzes für [räumliche Zuordnung](spatial-mapping.md) , das sich auf die von uns angezeigten Daten mit Quads/wasserdichten richtet
+* Vereinfachte Gitternetze für die wasserdichte Umgebung, die die planare Raumstruktur ohne Unübersichtlichkeit abgeleitet haben
+* Ebenenregionen für die Platzierung, die wir Quads nennen
+* Eine Momentaufnahme des [Gitters für](spatial-mapping.md) die räumliche Abbildung, die an den Quads-/Watertight-Daten ausgerichtet ist, die wir an die Oberfläche bringen.
 
-![Räumliches Mapping-Mesh, Bezeichnung planare Oberflächen, wasserdichtes Mesh](images/SUScenarios.png)
+![Gitternetz für räumliche Abbildung, beschriftete planare Oberflächen, wasserdichtes Gitternetz](images/SUScenarios.png)
 
-Dieses Dokument soll eine Szenarioübersicht bereitstellen und die Beziehung erläutern, die von der Szene und der räumlichen Zuordnung gemeinsam genutzt wird.
+Dieses Dokument soll eine Szenarioübersicht bereitstellen und die Beziehung verdeutlichen, die szenenbezogenes Verständnis und räumliche Zuordnung teilen. Wenn Sie Scene Understanding in Aktion sehen möchten, sehen Sie sich unsere Videodemo [Designing Holograms - Spatial Awareness]() (Entwerfen von Hologrammen – räumliche Wahrnehmung) weiter unten an:
 
-## <a name="developing-with-scene-understanding"></a>Entwickeln mit Szenen Verständnis
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-Dieser Artikel bietet nur eine Einführung in die Szene, die Laufzeit und Konzepte versteht. Wenn Sie nach einer Dokumentation zur Entwicklung mit Szenen Verständnis suchen, sind Sie möglicherweise an den folgenden Artikeln interessiert:
+## <a name="developing-with-scene-understanding"></a>Entwickeln mit Scene Understanding
 
-[Übersicht über das Szene Verständnis von SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+Dieser Artikel dient nur zur Einführung in die Scene Understanding-Runtime und -Konzepte. Wenn Sie nach Dokumentation zur Entwicklung mit Scene Understanding suchen, sind möglicherweise die folgenden Artikel für Sie von Interesse:
 
-Sie können die Beispiel-App für szeneninformationen von der GitHub-Beispiel Website herunterladen:
+[Übersicht über das Scene Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
-[Beispiel für Szenen Verständnis](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
+Sie können die Scene Understanding-Beispiel-App von der GitHub-Beispielwebsite herunterladen:
 
-Wenn Sie nicht über ein Gerät verfügen und auf Beispiel Szenen zugreifen möchten, um szeneninformationen auszuprobieren, gibt es im Beispiel Ordner "Asset" Szenen:
+[Scene Understanding-Beispiel](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
-[Szenen Einblick in Beispiel Szenen](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
+Wenn Sie kein Gerät haben und auf Beispielszenen zugreifen möchten, um Scene Understanding auszuprobieren, befinden sich Szenen im Beispielobjektordner:
+
+[Scene Understanding-Beispielszenen](https://github.com/sceneunderstanding-microsoft/unitysample/tree/master/Assets/Resources/SerializedScenesForPCPath)
 
 ### <a name="sdk"></a>SDK
 
-Wenn Sie nach bestimmten Details zum Entwickeln mit Szenen Verständnis suchen, finden Sie in der Dokumentation zum Thema " [Scene Understanding SDK Overview](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) " Weitere Informationen.
+Wenn Sie nach spezifischen Details zur Entwicklung mit Scene Understanding suchen, lesen Sie die Übersichtsdokumentation zum [Scene Understanding SDK.](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
 ### <a name="sample"></a>Beispiel
 
@@ -70,60 +72,60 @@ Wenn Sie nach bestimmten Details zum Entwickeln mit Szenen Verständnis suchen, 
 
 ## <a name="common-usage-scenarios"></a>Allgemeine Verwendungsszenarios
 
-![Abbildungen allgemeiner Verwendungs Szenarien für räumliche Zuordnung: Platzierung, oksion, Physik und Navigation](images/sm-concepts-1000px.png)<br>
-*Gängige Verwendungs Szenarien für räumliche Zuordnung: Platzierung, oksion, Physik und Navigation.*
+![Abbildungen allgemeiner Verwendungsszenarien für räumliche Zuordnungen: Platzierung, Verdeckung, Physik und Navigation](images/sm-concepts-1000px.png)<br>
+*Allgemeine Verwendungsszenarien für räumliche Zuordnungen: Platzierung, Verdeckung, Physik und Navigation.*
 
 <br>
 
-Viele der Kern Szenarien für umweltbewusste Anwendungen können sowohl durch räumliche Zuordnung als auch durch Szenen Verständnis behandelt werden. Diese Kern Szenarien umfassen Platzierung, Okklusion, Physik und so weiter. Ein Hauptunterschied zwischen Szenen Verständnis und räumlicher Zuordnung ist der Nachteil der maximalen Genauigkeit und Latenz bei der Struktur und Einfachheit. Wenn für Ihre Anwendung die möglichen Werte mit niedrigster Latenz und Gitter Dreiecke erforderlich sind, auf die nur Sie zugreifen möchten, verwenden Sie die räumliche Zuordnung direkt. Wenn Sie die Verarbeitung auf höherer Ebene durcharbeiten, können Sie in Erwägung gezogen werden, dass Sie in das Szene Verständnis Modell wechseln, da Sie eine Reihe von Funktionen bereitstellen sollten. Sie können jederzeit auf die vollständigsten und präziseren räumlichen Zuordnungsdaten zugreifen, da die Darstellung von Szenen eine Momentaufnahme des Netzes der räumlichen Zuordnung als Teil der Darstellung bietet.
+Viele der Kernszenarien für fähige Anwendungen können sowohl durch räumliche Zuordnung als auch durch Szenenverständnis behandelt werden. Zu diesen Kernszenarien gehören Platzierung, Verdeckung, Physik usw. Ein Hauptunterschied zwischen Szenenverständnis und räumlicher Zuordnung ist ein Kompromiss zwischen maximaler Genauigkeit und Latenz gegenüber Struktur und Einfachheit. Wenn Ihre Anwendung die geringstmögliche Latenz und Gitterdreiecke erfordert, auf die nur Sie zugreifen möchten, verwenden Sie die räumliche Zuordnung direkt. Wenn Sie eine Verarbeitung auf höherer Ebene durchführen, können Sie erwägen, zum Scene Understanding-Modell zu wechseln, da es Ihnen eine Obermenge an Funktionen bieten sollte. Sie haben immer Zugriff auf die vollständigsten und präzisesten räumlichen Zuordnungsdaten, da Scene Understanding eine Momentaufnahme des Gitternetzes für räumliche Zuordnungen als Teil seiner Darstellung bereitstellt.
 
-In den folgenden Abschnitten werden die wichtigsten Szenarios für räumliche Mapping im Kontext des neuen Szenarios für die Szenarios erläutert.
+In den folgenden Abschnitten werden die wichtigsten Szenarien für die räumliche Zuordnung im Kontext des neuen Scene Understanding SDK erneut erläutert.
 
 ### <a name="placement"></a>Platzierung
 
-Das Verständnis von Szenen bietet neue Konstrukte zur Vereinfachung von Platzierungs Szenarios. Eine Szene kann primitive als scenequads berechnen, die flache Oberflächen beschreiben, auf denen holograms platziert werden können. Scenequads wurden um die Platzierung entworfen und beschreiben eine 2D-Oberfläche und stellen eine API für die Platzierung auf dieser Oberfläche bereit. Zuvor musste bei Verwendung des Dreiecks Netzes für die Platzierung alle Bereiche der vier vier Punkte durchsucht werden, um für die Objekt Platzierung gute Positionen zu ermitteln. Dies ist bei Quads nicht immer erforderlich, da die Szene, die Laufzeitumgebung versteht, ermittelt, welche vier Bereiche nicht gescannt wurden, und die Bereiche, die nicht Teil der Oberfläche sind, ungültig machen
+Szenenverständnis bietet neue Konstrukte zur Vereinfachung von Platzierungsszenarien. Eine Szene kann Primitive mit dem Namen SceneQuads berechnen, die flache Oberflächen beschreiben, auf denen Hologramme platziert werden können. SceneQuads wurden für die Platzierung entworfen und beschreiben eine 2D-Oberfläche und stellen eine API für die Platzierung auf dieser Oberfläche bereit. Zuvor musste bei der Verwendung des Dreiecksgittermodells für die Platzierung alle Bereiche des Quaderbereichs gescannt und Füll- bzw. Nachbearbeitungsvorgänge durchführen, um gute Positionen für die Objektplatzierung zu identifizieren. Dies ist bei Quads nicht immer erforderlich, da die Scene Understanding Runtime daraus abgeleitet wird, welche Viererbereiche nicht gescannt wurden, und Bereiche ungültig machen, die nicht Teil der Oberfläche sind.
 
 :::row:::
     :::column:::
-       ![Scenequads mit deaktiviertem Rückschluss, wobei Platzierungs Bereiche für überprüfte Bereiche erfasst werden.](images/SUQuads.png)<br>
-       **Bild #1** -scenequads mit deaktiviertem Rückschluss, wobei Platzierungs Bereiche für überprüfte Bereiche erfasst werden.
+       ![SceneQuads mit deaktivierten Rückschlüssen, die Platzierungsbereiche für gescannte Bereiche erfassen.](images/SUQuads.png)<br>
+       **Image #1:** SceneQuads mit deaktivierten Rückschlüssen, die Platzierungsbereiche für gescannte Regionen erfassen.
     :::column-end:::
         :::column:::
-       ![Quads mit aktiviertem Inferenz ist die Platzierung nicht mehr auf überprüfte Bereiche beschränkt.](images/SUWatertight.png)<br>
-        **Image #2** -Quads mit aktiviertem Typrückschluss ist die Platzierung nicht mehr auf überprüfte Bereiche beschränkt.
+       ![Quads mit aktiviertem Rückschluss, die Platzierung ist nicht mehr auf gescannte Bereiche beschränkt.](images/SUWatertight.png)<br>
+        **Bild #2:** Quads mit aktiviertem Rückschluss, die Platzierung ist nicht mehr auf gescannte Bereiche beschränkt.
     :::column-end:::
 :::row-end:::
 
 <br>
 
 
-Wenn Ihre Anwendung die Möglichkeit hat, 2D-oder 3D-Hologramme in starre Strukturen Ihrer Umgebung zu platzieren, ist die Einfachheit und Vereinfachung von scenequads für die Platzierung besser, wenn diese Informationen aus dem [räumlichen Mapping](spatial-mapping.md) -Mesh berechnet werden. Weitere Informationen zu diesem Thema finden Sie in der [Scene Understanding SDK-Referenz](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) .
+Wenn Ihre Anwendung beabsichtigt, 2D- oder 3D-Hologramme auf festen Strukturen Ihrer Umgebung zu platzieren, ist die Einfachheit [](spatial-mapping.md) und Benutzerfreundlichkeit von SceneQuads für die Platzierung dem Berechnen dieser Informationen aus dem Gitternetz der räumlichen Zuordnung vorzuziehen. Weitere Informationen zu diesem Thema finden Sie in der [Scene Understanding SDK-Referenz.](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 
-**Hinweis** Für Legacy-Platzierungs Code, der vom Mesh für räumliche Zuordnungen abhängt, kann das räumliche Zuordnungen-Mesh zusammen mit scenequads berechnet werden, indem die enableworldmesh-Einstellung festgelegt wird. Wenn die Scene Understanding API die Latenz Anforderungen Ihrer Anwendung nicht erfüllt, wird empfohlen, weiterhin die [räumliche Mapping-API](spatial-mapping.md#placement)zu verwenden.
+**Hinweis:** Für Legacyplatzierungscode, der vom Gitternetz der räumlichen Zuordnung abhängt, kann das Gitternetz für räumliche Zuordnung zusammen mit SceneQuads berechnet werden, indem die Einstellung EnableWorldMesh aktiviert wird. Wenn die Scene Understanding-API die Latenzanforderungen Ihrer Anwendung nicht erfüllt, empfehlen wir Ihnen, weiterhin die API für räumliche [Zuordnung zu verwenden.](spatial-mapping.md#placement)
 
 ### <a name="occlusion"></a>Okklusion
 
-Die [Okklusion für räumliche](spatial-mapping.md#occlusion) Zuordnungen ist die niedrigste Methode zum Erfassen des Echt Zeit Zustands der Umgebung. Obwohl dies nützlich sein kann, um die Okklusion in sehr dynamischen Szenen bereitzustellen, empfiehlt es sich unter Umständen, das Verständnis der Szene in der Szene aus verschiedenen Gründen zu verstehen. Wenn Sie das durch Szene Verständnis generierte räumliche zuordnungsmesh verwenden, können Sie Daten aus räumlicher Zuordnung anfordern, die nicht im lokalen Cache gespeichert werden und nicht über die perception-APIs verfügbar sind. Die Verwendung der räumlichen Zuordnung für die Okklusion neben wasserdichten Netzen stellt zusätzlichen Wert bereit, insbesondere den Abschluss der nicht gescannten Raumstruktur.
+[Die Verdecken der räumlichen Zuordnung bleibt](spatial-mapping.md#occlusion) die am wenigsten latente Möglichkeit, den Echtzeitzustand der Umgebung zu erfassen. Obwohl dies nützlich sein kann, um die Verdecken in sehr dynamischen Szenen zu ermöglichen, sollten Sie scene understanding for occlusion aus verschiedenen Gründen in Betracht ziehen. Wenn Sie das von Scene Understanding generierte Gitternetz für die räumliche Zuordnung verwenden, können Sie Daten aus der räumlichen Zuordnung anfordern, die nicht im lokalen Cache gespeichert werden und nicht über die Wahrnehmungs-APIs verfügbar sind. Die Verwendung der räumlichen Zuordnung für okklusion neben wasserdichten Gittern bietet zusätzlichen Nutzen, insbesondere die Vervollständigung der nicht gekannten Raumstruktur.
 
-Wenn Ihre Anforderungen die zunehmende Latenz von Szenen Verständnis tolerieren können, sollten Anwendungsentwickler die Verwendung der Szene verstehen, die das Wasser enge Mesh und das räumliche Mapping-Mesh in gemeinsamen mit planaren Darstellungen unterliegt. Dies wäre ein "Beste aus beiden Welten"-Szenario, in dem die vereinfachte wasserdichte mit einer feineren nicht planaren Geometrie verheiratet ist, die die realistischsten Karten für die Karten Zuordnung bereitstellt.
+Wenn Ihre Anforderungen die erhöhte Latenz des Szenenverständnisses tolerieren können, sollten Anwendungsentwickler erwägen, das gitterförmige Gitternetz scene understanding und das Gitternetz für räumliche Zuordnungen in Einklang mit planaren Darstellungen zu verwenden. Dies wäre ein "Best of Both Worlds"-Szenario, in dem eine vereinfachte, wasserdichte Verdeckung mit einer feineren nichtplanaren Geometrie zusammengestellt wird, die die realistischsten Verdeckungskarten bietet.
 
 ### <a name="physics"></a>Physische Effekte
 
-Szenen Verständnis generiert Wasser enge Netze, die Leerzeichen mit Semantik zerlegen, insbesondere, um viele Einschränkungen der Physik zu berücksichtigen, die von den Netzen räumlicher Zuordnung auferlegt werden. Wasserdichte Strukturen sorgen für eine einfachere Generierung von physikalischer Ray-Umwandlungen, und die semantische Zerlegung ermöglicht eine einfachere Generierung von Navigations Netzen für die Navigation in einem Wie im Abschnitt zu [Okklusion](#occlusion)beschrieben, wird durch das Erstellen einer Szene mit enablesceneobjectmeshes und enableworldmesh das am meisten physisch umfassende Mesh ermöglicht. Die Eigenschaft "Watertight" des Umgebungs Netzes verhindert, dass Treffer Tests auf Oberflächen verzichten. Mithilfe der Mesh-Daten wird sichergestellt, dass die Physik mit allen Objekten in der Szene und nicht nur mit der Raumstruktur interagiert.
+Szenenverständnis generiert wasserdichte Gitternetze, die den Raum mit Semantik zerlegen, insbesondere um viele Einschränkungen der Physik zu berücksichtigen, die räumliche Zuordnungsgitternetze vorgeben. Wasserdichte Strukturen stellen sicher, dass physikalische Raycasts immer getroffen werden, und die semantische Zerlegung ermöglicht eine einfachere Generierung von Navigationsleisten für die Gebäudenavigation. Wie im Abschnitt zur [Verdeckung](#occlusion)beschrieben, erzeugt das Erstellen einer Szene mit EnableSceneObjectMeshes und EnableWorldMesh das physisch vollständigste Gitternetz. Die wasserdichte Eigenschaft des Umgebungsgitternetzes verhindert, dass Treffertests nicht auf Oberflächen treffen können. Die Gitternetzdaten stellen sicher, dass die Physik mit allen Objekten in der Szene und nicht nur mit der Raumstruktur interagiert.
 
 ### <a name="navigation"></a>Navigation
 
-Planare Netzen, die durch die semantische Klasse zerlegt werden, sind ideale Konstrukte für die Navigation und die Pfad Planung. Dadurch werden viele der Probleme, die in der Übersicht über die [Navigation über räumliche](spatial-mapping.md#navigation) Die scenemesh-Objekte, die in der Szene berechnet werden, werden aus dem Surface-Typ zerlegt, um sicherzustellen, dass die NAV-Mesh-Generierung auf Oberflächen beschränkt ist, auf die Sie sich Aufgrund der Einfachheit der Bodenstrukturen ist die dynamische NAV-Mesh-Generierung in 3D--Engines wie Unity abhängig von den Echtzeitanforderungen erreichbar.
+Planare Gitternetze, die durch eine semantische Klasse zerlegt werden, sind ideale Konstrukte für die Navigation und Pfadplanung, die viele der in der Übersicht über die Navigation der [räumlichen Zuordnung](spatial-mapping.md#navigation) beschriebenen Probleme erleichtern. Die in der Szene berechneten SceneMesh-Objekte werden nach Oberflächentyp dekomponiert, um sicherzustellen, dass die Navigationsgitternetzgenerierung auf Oberflächen beschränkt ist, die durchgehen können. Aufgrund der Einfachheit der Bodenstrukturen ist die dynamische Navigationsnetzgenerierung in 3D-Engines wie Unity je nach Echtzeitanforderungen erreichbar.
 
-Das Erstellen von exakten NAV-Meshes erfordert zurzeit noch die Nachbearbeitung. Anwendungen müssen nach wie vor in der-Etage auf dem Boden stehen, um sicherzustellen, dass die Navigation nicht durch Übersichtlichkeit/Tabellen verläuft und so weiter. Die präzisere Methode hierfür ist das Projizieren der World Mesh-Daten, die bereitgestellt werden, wenn die Szene mit dem enableworldmesh-Flag berechnet wird.
+Das Generieren präziser Navigationsgitternetze erfordert derzeit noch eine Nachverarbeitung, d. h. Anwendungen müssen occluders immer noch auf den Boden prognostieren, um sicherzustellen, dass die Navigation nicht überladen/Tabellen durchgeht usw. Die genaueste Möglichkeit, dies zu erreichen, besteht darin, die weltweiten Gitternetzdaten zu projektieren, die bereitgestellt werden, wenn die Szene mit dem EnableWorldMesh-Flag berechnet wird.
 
 ### <a name="visualization"></a>Visualisierung
 
-Obwohl die Visualisierung für die [räumliche Zuordnung](spatial-mapping.md#visualization) für Echtzeitfeedback der Umgebung verwendet werden kann, gibt es viele Szenarios, in denen die Einfachheit von planaren und wasserdichten Objekten mehr Leistung oder visuelle Qualität bietet. Schattenprojektions-und Erdungs Techniken, die mithilfe räumlicher Zuordnung beschrieben werden, sind möglicherweise ansprechender, wenn Sie auf den planaren Oberflächen projiziert werden, die von Quads oder dem planaren wasserdichten Mesh Dies gilt insbesondere für Umgebungen/Szenarien, in denen eine gründliche vorab Überprüfung nicht optimal ist, da die Szene nicht optimal ist
+Die Visualisierung der [räumlichen Zuordnung](spatial-mapping.md#visualization) kann zwar für Echtzeitfeedback der Umgebung verwendet werden, es gibt jedoch viele Szenarien, in denen die Einfachheit planarer und wasserdichter Objekte eine größere Leistung oder visuelle Qualität bietet. Schattenprojektions- und Erdungstechniken, die mithilfe der räumlichen Zuordnung beschrieben werden, können ansprechender sein, wenn sie auf die planaren Oberflächen projiziert werden, die von Quads oder dem planaren, wasserdichten Gitternetz bereitgestellt werden. Dies gilt insbesondere für Umgebungen/Szenarien, in denen eine gründliche Vorabüberprüfung nicht optimal ist, da die Szene rückschlüsset und vollständige Umgebungen und planare Annahmen Artefakte minimieren.
 
-Außerdem wird die Gesamtanzahl der von der räumlichen Zuordnung zurückgegebenen Oberflächen durch den internen räumlichen Cache beschränkt, während die Version des Netzes für räumliche Zuordnung auf räumliche Zuordnungsdaten zugreifen kann, die nicht zwischengespeichert werden. Aus diesem Grund ist das Verständnis der Szene besser für die Erfassung von Netz Darstellungen für größere Bereiche (z. b. mehr als einen einzelnen Raum) für die Visualisierung oder weitere Gitter Verarbeitung geeignet. Das mit enableworldmesh zurückgegebene World Mesh verfügt über eine konsistente Detailebene, die bei gerenderter Darstellung als Wireframe eine ansprechendere Visualisierung ergeben kann.
+Darüber hinaus wird die Gesamtzahl der von der räumlichen Zuordnung zurückgegebenen Oberflächen durch den internen räumlichen Cache beschränkt, während die Scene Understanding-Version des Spatial Mapping-Gitters auf räumliche Zuordnungsdaten zugreifen kann, die nicht zwischengespeichert werden. Aus diesem Grund eignet sich Scene Understanding besser für die Erfassung von Gitternetzdarstellungen für größere Räume (z. B. größer als ein einzelner Raum) für die Visualisierung oder die weitere Gitternetzverarbeitung. Das mit EnableWorldMesh zurückgegebene Weltgittermodell hat durchgängig einen konsistenten Detailgrad, der zu einer ansprechenderen Visualisierung führen kann, wenn es als Wireframe gerendert wird.
 
 ### <a name="see-also"></a>Weitere Informationen
 
-* [Scene Understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [Scene understanding SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
 * [Räumliche Abbildung](spatial-mapping.md)

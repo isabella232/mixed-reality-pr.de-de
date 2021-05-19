@@ -1,32 +1,32 @@
 ---
-title: Teleporthotspot
-description: Dokumentation zur teleporthotspot-Komponente in mrtk
+title: Teleport-Hotspot
+description: Dokumentation zur Teleport Hotspot-Komponente in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
-keywords: Unity, hololens, hololens 2, gemischte Realität, Entwicklung, mrtk, teleportsystem, Teleport-Hotspot
-ms.openlocfilehash: 986105dd771c38b1e26fd9f86df90224110591a4
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Teleport-System, Teleport-Hotspot
+ms.openlocfilehash: 0cbdad3c038d457109077b742d3f453d63436ae4
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105582962"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144430"
 ---
-# <a name="teleport-hotspot-experimental"></a>Teleport-Hotspot [experimentell]
+# <a name="teleport-hotspot-experimental"></a>Teleport-Hotspot [Experimentell]
 
-Der Teleport-Hotspot ist eine Komponente, die Sie Ihrem gameobject hinzufügen können, um sicherzustellen, dass sich der Benutzer an einer bestimmten Position und Ausrichtung befindet, wenn er an diesen Speicherort teleportieren soll.
+Der Teleport-Hotspot ist eine Komponente, die Sie Ihrem Gameobject hinzufügen können, um sicherzustellen, dass sich der Benutzer an einer bestimmten Position und Ausrichtung befindet, wenn er an diesen Ort teleportieren soll.
 
 ## <a name="usage"></a>Verwendung
 
 ### <a name="how-to-create-a-teleport-hotspot"></a>Erstellen eines Teleport-Hotspots
 
-Um einen Teleport-Hotspot zu erstellen, fügen Sie die teleporthotspot-Komponente einem Objekt hinzu, das auch über eine Collider-Komponente verfügt. 
+Um einen Teleport-Hotspot zu erstellen, fügen Sie die TeleportHotspot-Komponente einem Objekt hinzu, das ebenfalls über eine Colliderkomponente verfügt. 
 
-![Teleport-Hotspot-Komponente](../images/teleport/TeleportHotspotComponent.png)
+![Teleport Hotspot-Komponente](../images/teleport/TeleportHotspotComponent.png)
 
-Nun ändert sich der Indikator des Teleport-Zeigers, wenn er über einen teleporthotspot geleitet wird. Wenn die teleportaktion über den Hotspot abgeschlossen ist, wird der Benutzer in den Mittelpunkt des teleporthotspot-Vorgangs übertragen.
+Nun ändert sich die Farbe des Teleportzeigers, wenn er über einen TeleportHotspot geleitet wird. Wenn die Teleportaktion über den Hotspot abgeschlossen ist, wird der Benutzer zum Mittelpunkt des TeleportHotspots teleportieren.
 
-Wenn das Flag zur Überschreibungs Ausrichtung deaktiviert ist, entspricht die Ausrichtung des Benutzers dem des Teleport-Hotspots.
+Wenn das Flag für die Außerkraftsetzungsausrichtung deaktiviert ist, entspricht die Ausrichtung des Benutzers der Ausrichtung des Teleport-Hotspots.
 
-![Beispiel für teleporthotspot](../images/teleport/TeleportHotspotExample.gif)
+![Beispiel für Teleport-Hotspot](../images/teleport/TeleportHotspotExample.gif)

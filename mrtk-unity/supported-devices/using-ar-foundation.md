@@ -1,22 +1,22 @@
 ---
-title: UsingARFoundation
+title: Verwenden von AR Foundation
 description: Dokumentation zur Verwendung von ARFoundation in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, AR Core, AR Kit
-ms.openlocfilehash: d96c5cab2439b581c0de9d59a1a349abccf34fb5
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1c39950e8b64968e182ddc551ef344dee42060e9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852366"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143943"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Konfigurieren des MRTK für iOS und Android [Experimentell]
 
 ## <a name="install-required-packages"></a>Installieren erforderlicher Pakete
 
-1. Laden Sie das **Paket Microsoft.MixedReality.Toolkit.Unity.Foundation** von [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) oder dem Unity-Projekt herunter, und [importieren Sie es Paket-Manager](../configuration/usingupm.md)
+1. Laden Sie das **Paket Microsoft.MixedReality.Toolkit.Unity.Foundation** von [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) oder der [Unity-Paket-Manager](../configuration/usingupm.md) herunter, und importieren Sie es.
 
 1. Installieren Sie im Unity Paket-Manager (UPM) die folgenden Pakete:
 
@@ -24,8 +24,8 @@ ms.locfileid: "109852366"
 
     | **Android** | **iOS** | Kommentare |
     | --- | --- | --- |
-    | AR Foundation  <br/> Version: 1.5.0 – Preview 6 | AR Foundation  <br/> Version: 1.5.0 – Preview 6 | Für Unity 2018.4 ist dieses Paket als Vorschauversion enthalten. So zeigen Sie das Paket an: `Window` > `Package Manager` > `Advanced` > `Show Preview Packages` |
-    | ARCore-XR-Plug-In <br/> Version: 2.1.2 | ARKit XR-Plug-In <br/> Version: 2.1.2 | |
+    | AR Foundation  <br/> Version: 1.5.0 – Vorschauversion 6 | AR Foundation  <br/> Version: 1.5.0 – Vorschauversion 6 | Für Unity 2018.4 ist dieses Paket als Vorschauversion enthalten. So zeigen Sie das Paket an: `Window` > `Package Manager` > `Advanced` > `Show Preview Packages` |
+    | ARCore XR-Plug-In <br/> Version: 2.1.2 | ARKit XR-Plug-In <br/> Version: 2.1.2 | |
 
     **Unity 2019.4.x**
 
@@ -51,19 +51,19 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
     ![KONFIGURIERTE MRTK-Szenenhierarchie](../features/images/MRTK_ConfiguredHierarchy.png)
 
-1. Wählen **Sie Kopieren und anpassen aus,** um das MRTK-Profil zu klonen, um die benutzerdefinierte Konfiguration zu aktivieren.
+1. Wählen Sie **Kopieren und anpassen** aus, um das MRTK-Profil zu klonen, um die benutzerdefinierte Konfiguration zu aktivieren.
 
     ![Klonen des MRTK-Profils](../features/images/camera-system/CloneProfileARFoundation.png)
 
-1. Klicken **Sie neben** dem Kameraprofil auf Klonen.
+1. Klicken Sie neben dem Kameraprofil auf **Klonen.**
 
     ![Klonen des MRTK-Kameraprofils](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. Navigieren Sie im Inspektorbereich zum Abschnitt Kamerasystem, und erweitern Sie den Abschnitt **Kameraeinstellungsanbieter.**
+1. Navigieren Sie im Bereich Inspektor zum Abschnitt Kamerasystem, und erweitern Sie den Abschnitt Anbieter für **Kameraeinstellungen.**
 
     ![Erweitern von Einstellungsanbietern](../features/images/camera-system/ExpandProviders.png)
 
-1. Klicken **Sie auf Kameraeinstellungsanbieter hinzufügen,** und erweitern Sie den neu hinzugefügten Eintrag **Neue Kameraeinstellungen.**
+1. Klicken Sie auf **Kameraeinstellungsanbieter hinzufügen,** und erweitern Sie den neu hinzugefügten Eintrag **Neue Kameraeinstellungen.**
 
     ![Erweitern des neuen Einstellungsanbieters](../features/images/camera-system/ExpandNewProvider.png)
 
@@ -71,20 +71,20 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
     ![Auswählen des Unity AR-Einstellungsanbieters](../features/images/camera-system/SelectUnityArSettings.png)
 
-    Weitere Informationen zum Konfigurieren des Unity AR-Kameraeinstellungsanbieters: [Unity AR-Kameraeinstellungsanbieter](../features/camera-system/unity-ar-camera-settings.md).
+    Weitere Informationen zum Konfigurieren des Unity AR-Kameraeinstellungsanbieters finden Sie unter [Unity AR-Kameraeinstellungsanbieter.](../features/camera-system/unity-ar-camera-settings.md)
 
 > [!NOTE]
-> Diese Installation überprüft (wenn die Anwendung gestartet wird), ob sich die AR Foundation-Komponenten in der Szene befinden. Falls nicht, werden sie automatisch hinzugefügt, damit sie mit ARCore und ARKit funktionieren.
+> Diese Installation überprüft (wenn die Anwendung gestartet wird), ob sich die AR Foundation-Komponenten in der Szene befinden. Andernfalls werden sie automatisch hinzugefügt, damit sie mit ARCore und ARKit funktionieren.
 > Wenn Sie ein bestimmtes Verhalten festlegen müssen, sollten Sie die benötigten Komponenten selbst hinzufügen.
 > Weitere Informationen zu AR Foundation-Komponenten und zur Installation finden Sie in dieser [Dokumentation.](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html#samples)
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>Erstellen einer Szene für Android- und iOS-Geräte
 
-1. Stellen Sie sicher, dass Sie ihrer Szene den UnityAR-Kameraeinstellungsanbieter hinzugefügt haben.
+1. Stellen Sie sicher, dass Sie der Szene den UnityAR-Kameraeinstellungsanbieter hinzugefügt haben.
 
 1. Wechseln der Plattform zu Android oder iOS in den Unity-Buildeinstellungen
 
-    Wenn Sie die Plattform wechseln, sollte das MRTK-Projektkonfigurationsfenster mit Einstellungen für die ausgewählte Plattform angezeigt werden.  Klicken Sie auf Übernehmen, um plattformspezifische Einstellungen zu aktivieren.
+    Wenn Sie die Plattform wechseln, sollte das MRTK-Projektkonfiguratorfenster mit Einstellungen für die ausgewählte Plattform angezeigt werden.  Klicken Sie auf Übernehmen, um plattformspezifische Einstellungen zu aktivieren.
 
     iOS-Projektkonfiguratoreinstellungen
 
@@ -92,15 +92,15 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
 1. Nach dem Wechseln der Plattform für Android sind keine weiteren Schritte erforderlich.
 
-1. Wenn die Plattform iOS ist, deaktivieren Sie > Projekteinstellungen bearbeiten > Player > Andere Einstellungen, und **deaktivieren Sie** unter dem Header Optimierung die Option Strip Engine Code (Engine-Code löschen).
+1. Wenn die Plattform iOS ist, bearbeiten Sie > Projekteinstellungen > Player > Andere Einstellungen, und deaktivieren Sie unter dem Header Optimierung die Option **Strip** Engine Code (Engine-Code stripen).
 
     ![iOS-Einstellungen](../features/images/camera-system/UncheckStripEngineCodeiOS.png)
 
     > [!NOTE]
-    > Das Deaktivieren von Strip Engine Code ist die kurzfristige Lösung für einen Fehler in Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646).  Wir arbeiten an einer langfristigen Lösung.
+    > Das Deaktivieren von Strip Engine Code ist die kurzfristige Lösung für einen Fehler in Xcode [#6646.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646)  Wir arbeiten an einer langfristigen Lösung.
 
 1. Erstellen und Ausführen der Szene
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Unity AR-Kameraeinstellungen](../features/camera-system/unity-ar-camera-settings.md)
+- [Unity-AR-Kameraeinstellungen](../features/camera-system/unity-ar-camera-settings.md)
