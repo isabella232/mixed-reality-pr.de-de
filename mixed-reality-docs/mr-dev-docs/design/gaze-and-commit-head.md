@@ -1,21 +1,21 @@
 ---
 title: Anvisieren mit dem Kopf und Ausführen
-description: Beginnen Sie mit den ersten Schritten mit dem Haupt-und Commit-Eingabe Modell, einschließlich der Größenanpassung, Platzierung und Stabilisierung des Ziels.
+description: Beginnen Sie mit dem Eingabemodell mit dem Anvisieren mit dem Kopf und dem Commit, einschließlich Zielsizing, Platzierung und Stabilität.
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Gemischte Realität, Blick, Blick auf die Ausrichtung, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Ziel, Fokus, Glättung
-ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Mixed Reality, Anvisierten, Anvisierten, Interaktion, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Ziel, Fokus, Glättung
+ms.openlocfilehash: 74f963a6b450d1fb7f1302886a01c12cf79ce28a
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582282"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196515"
 ---
 # <a name="head-gaze-and-commit"></a>Anvisieren mit dem Kopf und Ausführen
 
-Der _Kopf-und Commit-_ Vorgang ist ein Sonderfall des "Blick"- [und](gaze-and-commit.md) "Commit"-Eingabe Modells, bei dem ein Objekt mit der Benutzer Kopfzeile verwendet wird. Sie können das Ziel mit einer sekundären Eingabe, wie z. b. dem Befehl "Handbewegung Air Tap" oder "Select", für das Ziel handeln. 
+_Anvität mit dem Kopf_ und [](gaze-and-commit.md) Commit ist ein Sonderfall des Eingabemodells zum Anvieren und Commiten, bei dem ein Objekt mit der Kopfrichtung des Benutzer als Ziel verwendet wird. Sie können auf das Ziel mit einer sekundären Eingabe wie dem Tippen auf die Handgestenbewegung oder dem Sprachbefehl "Select" (Auswählen) agieren. 
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -42,9 +42,17 @@ Der _Kopf-und Commit-_ Vorgang ist ein Sonderfall des "Blick"- [und](gaze-and-co
 
 ---
 
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo zu Designkonzepten für Kopf- und Blickverfolgung
+
+Wenn Sie die Designkonzepte für Kopf- und Blickverfolgung in Aktion sehen möchten, sehen Sie sich die Videodemo **Designing Holograms - Head Tracking and Eye Tracking** (Entwerfen von Hologrammen – Kopfverfolgung und Eyetracking) weiter unten an. Wenn Sie fertig sind, fahren Sie fort, um ausführlichere Informationen zu bestimmten Themen zu erhalten.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Dieses Video wurde aus der App "Entwerfen von Hologrammen" HoloLens 2 aufgenommen. Laden Sie hier herunter, und profitieren Sie [von der vollständigen Erfahrung.](https://aka.ms/dhapp)*
+
 ## <a name="target-sizing-and-feedback"></a>Skalieren von Zielen und Feedback
 
-Der Kopf Zeilenvektor wurde wiederholt angezeigt, um für die fein Ausrichtung geeignet zu sein. er eignet sich jedoch oft am besten für das anvisieren von größeren Zielen. Die minimalen Zielgrößen von 1 Grad bis 1,5 Grad ermöglichen in den meisten Szenarien erfolgreiche Benutzeraktionen, obwohl Ziele von 3 Grad häufig eine höhere Geschwindigkeit ermöglichen. Die Größe, auf die der Benutzer ausgerichtet ist, ist tatsächlich ein 2D-Bereich, auch bei 3D-Elementen, und die Projektion, mit der er konfrontiert ist, sollte der Zielbereich sein. Das Bereitstellen eines hervorragenden Anweisungs Elements, dass ein Element "aktiv" ist (das der Benutzer als Ziel verwendet), ist hilfreich. Dies kann z. b. z. b. sichtbare "Hover"-Effekte, audiohighlights oder Klicks oder eine klare Ausrichtung eines Cursors mit einem Element umfassen.
+Der Anvisierungsvektor mit dem Kopf wurde wiederholt als für die Zieladressierung verwendet werden können, funktioniert aber häufig am besten für die Bruttozieladressierung – das Abrufen größerer Ziele. Minimale Zielgrößen von 1 bis 1,5 Grad ermöglichen in den meisten Szenarien erfolgreiche Benutzeraktionen, obwohl Ziele von 3 Grad häufig eine höhere Geschwindigkeit ermöglichen. Die Größe, auf die der Benutzer ausgerichtet ist, ist im Wesentlichen ein 2D-Bereich, auch für 3D-Elemente – die Projektion, auf die sie ausgerichtet sind, sollte der zielfähige Bereich sein. Es ist hilfreich, einen wichtigen Hinweis darauf zu geben, dass ein Element "aktiv" ist (dass der Benutzer es als Ziel hat). Dies kann z. B. sichtbare "Hover"-Effekte, Audiohighlights oder Klicks oder eine klare Ausrichtung eines Cursors mit einem Element umfassen.
 
 ![Optimale Zielgröße im Abstand von 2 Metern](images/gazetargeting-size-1000px.jpg)<br>
 *Optimale Zielgröße bei 2-Meter-Entfernung*
@@ -56,38 +64,38 @@ Der Kopf Zeilenvektor wurde wiederholt angezeigt, um für die fein Ausrichtung g
 
 ## <a name="target-placement"></a>Zielpositionierung
 
-Benutzer können häufig keine Benutzeroberflächen Elemente finden, die sich entweder zu hoch oder zu niedrig im Sichtfeld befinden. Der größte Teil ihrer Aufmerksamkeit liegt am Ende der Bereiche, die sich in der Nähe des Hauptfokus befinden. Die Positionierung der meisten Ziele in einem vernünftigen Bereich auf Augenhöhe kann helfen. Angesichts der Tendenz, dass sich Benutzer jederzeit auf einen relativ kleinen visuellen Bereich konzentrieren können (der Teilnehmer ist ungefähr 10 Grad), kann das Gruppieren von Benutzeroberflächen Elementen zu dem Grad, den Sie konzeptionell verknüpft haben, das Verhalten der Aufmerksamkeit Verkettung von Item zu Item verwenden, wenn ein Benutzer den Blick durch einen Bereich verschiebt. Beachten Sie beim Entwerfen der Benutzeroberfläche die potenziellen großen Unterschiede beim Sichtfeld zwischen HoloLens und immersiven Headsets.
+Benutzer finden benutzeroberflächenelemente häufig nicht, die sich in ihrem Sichtfeld entweder zu hoch oder niedrig befinden. Die meiste Aufmerksamkeit liegt auf Bereichen um ihren Hauptfokus, die ungefähr auf Augenebene liegt. Die Positionierung der meisten Ziele in einem vernünftigen Bereich auf Augenhöhe kann helfen. Angesichts der Tatsache, dass Benutzer sich jederzeit auf einen relativ kleinen visuellen Bereich konzentrieren (der Aufmerksamkeitskegel des Sehens beträgt ungefähr 10 Grad), kann das Gruppieren von Ui-Elementen in dem Maße, in dem sie konzeptionell miteinander verknüpft sind, Aufmerksamkeitsverkettungsverhalten von Element zu Element verwenden, während ein Benutzer den Blick durch einen Bereich bewegt. Beachten Sie beim Entwerfen der Benutzeroberfläche die potenziellen großen Unterschiede beim Sichtfeld zwischen HoloLens und immersiven Headsets.
 
 ![Beispiel für gruppierte Benutzeroberflächenelemente zur einfacheren Zielbestimmung in Galaxy Explorer](images/gazetargeting-grouping-1000px.jpg).<br>
 *Beispiel für gruppierte Benutzeroberflächenelemente zur einfacheren Zielbestimmung in Galaxy Explorer*.
 
 ## <a name="improving-targeting-behaviors"></a>Verbessern des Verhaltens bei der Zielbestimmung
 
-Wenn der Benutzer beabsichtigt ist, etwas zu erreichen, kann es hilfreich sein, und es kann hilfreich sein, die Near-Fehler Interaktion zu akzeptieren, als ob Sie ordnungsgemäß als Ziel festgelegt wurden. Hier sind einige der erfolgreichen Methoden, die in gemischte Realität integriert werden können:
+Wenn die Absicht des Benutzers, auf etwas abzuzielen, bestimmt oder eng angenähert werden kann, kann es hilfreich sein, Interaktionsversuche nahezu ausgelassen zu akzeptieren, als wären sie korrekt ausgerichtet. Hier sind einige erfolgreiche Methoden, die in Mixed Reality-Erfahrungen integriert werden können:
 
 ### <a name="head-gaze-stabilization-gravity-wells"></a>Stabilisierung beim Anvisieren mit dem Kopf („Gravitationsbrunnen“)
 
-Dies sollte in den meisten Fällen oder in der Zeit aktiviert werden. Durch diese Vorgehensweise werden die natürlichen Kopf-und Hals jittoren entfernt, die Benutzer möglicherweise auch aufgrund der Betrachtung und des Sprech Verhaltens Verhalten haben.
+Dies sollte die meiste Zeit oder die ganze Zeit aktiviert sein. Mit dieser Technik werden die natürlichen Kopf- und Sprechbewegungen entfernt, die Benutzer aufgrund des Aussehens und Sprechverhaltens möglicherweise haben.
 
 ### <a name="closest-link-algorithms"></a>Algorithmen für die engste Verbindung
 
-Diese Algorithmen funktionieren am besten in Bereichen mit interaktiven Inhalten mit geringer Dichte. Wenn eine hohe Wahrscheinlichkeit besteht, dass Sie bestimmen können, mit welchem Benutzer Sie interagieren wollten, können Sie die Ziel Fähigkeiten ergänzen, indem Sie eine gewisse Absicht annehmen.
+Diese Algorithmen funktionieren am besten in Bereichen mit wenig interaktivem Inhalt. Wenn es eine hohe Wahrscheinlichkeit gibt, dass Sie bestimmen können, mit welchem Benutzer versucht wurde, zu interagieren, können Sie seine Zielfähigkeiten ergänzen, indem Sie ein gewisses Maß an Absicht annehmen.
 
-### <a name="backdating-and-postdating-actions"></a>Sicherungs-und postdating-Aktionen
+### <a name="backdating-and-postdating-actions"></a>Backdating- und Postdating-Aktionen
 
-Dieser Mechanismus ist hilfreich bei Aufgaben, die Geschwindigkeit erfordern. Wenn ein Benutzer mit der Geschwindigkeit eine Reihe von Ziel-und Aktivierungs Manövern durchläuft, ist es sinnvoll, eine beabsichtigte Absicht anzunehmen. Außerdem ist es hilfreich, die Ausführung von versäumten Schritten für Ziele zu ermöglichen, auf die sich der Benutzer vor oder nach dem tippen etwas ausgewirkt hat (50 ms vor/nach war in frühen Tests wirksam).
+Dieser Mechanismus ist hilfreich bei Aufgaben, die Geschwindigkeit erfordern. Wenn ein Benutzer eine Reihe von Ziel- und Aktivierungsreaktivierungen schnell durchgeht, ist es hilfreich, eine Absicht anzunehmen. Es ist auch hilfreich, verpasste Schritte zuzulassen, um auf Ziele zu reagieren, die der Benutzer vor oder nach dem Tippen leicht im Fokus hatte (50 ms vorher/nach waren in frühen Tests wirksam).
 
 ### <a name="smoothing"></a>Glättung
 
-Dieser Mechanismus ist nützlich für die Bewegung von Bewegungen und reduziert die leichte Jitter und wackeln aufgrund natürlicher Kopf Verschiebungs Merkmale. Bei der Glättung von bewegungsbewegungen durch die Größe und die Entfernung von Bewegungen und nicht über die Zeit.
+Dieser Mechanismus ist nützlich für das Verschieben von Bewegungen, wodurch das leichte Jittern und Wackeln aufgrund natürlicher Kopfbewegungsmerkmale reduziert wird. Beim Glätten über Pfadbewegungen, glätten Sie nach Größe und Entfernung von Bewegungen und nicht im Laufe der Zeit.
 
 ### <a name="magnetism"></a>Magnetismus
 
-Dieser Mechanismus kann sich als allgemeinere Version der nächstgelegenen Verknüpfungs Algorithmen vorstellen: das Zeichnen eines Cursors in Richtung eines Ziels oder das einfache erhöhen der Treffer Felder, egal ob sichtbar oder nicht, wenn Benutzer wahrscheinliche Ziele erreichen, indem Sie einige Kenntnisse des interaktiven Layouts verwenden, um die Benutzer Absicht besser zu betrachten. Dies kann für kleine Ziele leistungsstark sein.
+Dieser Mechanismus kann als allgemeinere Version von Algorithmen für nahe bezogene Verknüpfungen bezeichnet werden– das Zeichnen eines Cursors in Richtung eines Ziels oder das einfache Erhöhen von Trefferboxen, ob sichtbar oder nicht, da Benutzer wahrscheinliche Ziele nähern, indem sie ein gewisses Wissen über das interaktive Layout verwenden, um die Benutzerabsicht besser zu erreichen. Dies kann für kleine Ziele leistungsfähig sein.
 
 ### <a name="focus-stickiness"></a>Fokusbindung
 
-Wenn Sie bestimmen, welche interaktiven Elemente in der Nähe bereitgestellt werden sollen, wird der Fokus auf festgelegt, und der Fokus ist für das Element, das derzeit fokussiert ist. Dies trägt dazu bei, das Verhalten von erratischen Fokus Wechselverhalten zu verringern, wenn Sie in einem Mittelpunkt zwischen zwei Elementen mit natürlichem Rauschen schweben
+Bei der Bestimmung, welchen interaktiven Elementen in der Nähe der Fokus zu geben ist, sorgt die Fokushaftigkeit für eine Verzerrung des Elements, das gerade fokussiert ist. Dies trägt dazu bei, das Verhalten bei einem erratischen Fokuswechsel zu reduzieren, wenn das Gleiten an einem Mittelpunkt zwischen zwei Elementen mit natürlichem Rauschen vor sich geht.
 
 ## <a name="see-also"></a>Weitere Informationen
 

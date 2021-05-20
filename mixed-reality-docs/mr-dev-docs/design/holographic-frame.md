@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens, Windows Mixed Reality, holografischer Rahmen, Sichtfeld, FOV, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Interaktionen, Navigation, Menü
-ms.openlocfilehash: fee6af6370f9f3d166768144e689e09fd3fda2db
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 5edab22751b9f2196f02a500279c4de385b57b5d
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143255"
+ms.locfileid: "110196555"
 ---
 # <a name="holographic-frame"></a>Holografischer Rahmen
 
@@ -65,9 +65,11 @@ Der holografische Rahmen stellt ein Tool dar, mit dem Entwickler Interaktionen a
 
 Anvis können auch verwendet werden, um die Aufmerksamkeit der Benutzer über eine Benutzeroberfläche zu verfolgen und zu sehen, auf welche Objekte oder Teile der Szene der Benutzer am meisten achten sollte. Dies kann insbesondere zum Debuggen einer Beerfahrung verwendet werden, sodass Analysetools wie Heatmaps erkennen können, wo Benutzer die meiste Zeit verbringen oder bestimmte Objekte oder Interaktionen fehlen. Die Nachverfolgung von Anvitatoren kann auch ein leistungsstarkes Tool für Vermittler in Erfahrungen sein (siehe [Lowe es Eye-Beispiel).](holographic-frame.md#lowes-kitchen)
 
-Wenn Sie design concepts in action (Designkonzepte für Kopf- und Eyetracking) in Aktion sehen möchten, sehen Sie sich die Videodemo [Designing Holograms - Head Tracking and Eye Tracking]() (Entwerfen von Hologrammen – Kopfverfolgung und Eyetracking) weiter unten an:
+Wenn Sie design concepts in action (Designkonzepte für Kopf- und Eyetracking) in Aktion sehen möchten, sehen Sie sich die Videodemo **Designing Holograms - Head Tracking and Eye Tracking** (Entwerfen von Hologrammen – Kopfverfolgung und Eyetracking) weiter unten an:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Dieses Video wurde aus der App "Entwerfen von Hologrammen" HoloLens 2 aufgenommen. Laden Sie hier herunter, und profitieren Sie [von der vollständigen Erfahrung.](https://aka.ms/dhapp)*
 
 <br>
 
@@ -89,7 +91,7 @@ Digitaler Inhalt innerhalb des holografischen Rahmens der HoloLens kann auch mit
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/DilzwF90vec" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In der Befahrenserfahrung von Überl. Cars sind Kunden eingeladen, sich über die Funktionen eines neuen Autos in einer HoloLens-Erfahrung zu informieren, die von einem Mitarbeiter von Einer-Mitarbeiter geleitet wird. Beim holografischen Rahmen stand Einer der Herausforderungen gegenüber: Ein Fahrzeug in voller Größe ist zu groß, um es direkt neben einem Benutzer zu setzen. Die Lösung war, die Erfahrung mit einem physischen Wahrzeichen zu beginnen, einer zentralen Tabelle in der Tafel, mit einem kleineren digitalen Modell des Autos, das über der Tabelle platziert wurde. Dadurch wird sichergestellt, dass der Benutzer das vollständige Auto sieht, wenn es eingeführt wird, was ein Gefühl des räumlichen Verständnisses ermöglicht, sobald das Auto später auf seine reale Größe anwällt.
+In der Befahrenserfahrung von Überl. Cars sind Kunden eingeladen, sich über die Funktionen eines neuen Autos in einer HoloLens-Erfahrung zu informieren, die von einem Mitarbeiter von Einer-Mitarbeiter geleitet wird. Beim holografischen Rahmen stand Einer der Herausforderungen gegenüber: Ein Fahrzeug in voller Größe ist zu groß, um es direkt neben einem Benutzer zu setzen. Die Lösung bestand darin, die Benutzeroberfläche mit einem physischen Wahrzeichen zu beginnen, einer zentralen Tabelle im Hotel, wobei ein kleineres digitales Modell des Autos oben auf der Tabelle platziert wurde. Dadurch wird sichergestellt, dass der Benutzer das vollständige Auto sieht, wenn es eingeführt wird, was ein Gefühl des räumlichen Verständnisses ermöglicht, sobald das Auto später auf seine reale Größe anwällt.
 
 Die Erfahrung macht sich auch mit visuellen Leitungen aus und erzeugt einen langen visuellen Effekt vom Kleinwagenmodell auf dem Tisch bis zu einer Wand im Showraum. Dies führt zu einem "magischen Fenster"-Effekt, der die vollständige Ansicht des Autos in einer Entfernung anzeigt und weitere Merkmale des Autos im realen Maßstab veranschaulicht. Die Kopfbewegung ist horizontal, ohne direkte Interaktion durch den Benutzer (stattdessen das visuelle Erfassen von Hinweisen und die Sprachausgabe der Benutzeroberfläche des Zuordnungsbenutzers).
 
