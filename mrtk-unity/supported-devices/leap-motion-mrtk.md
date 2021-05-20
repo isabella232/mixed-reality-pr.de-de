@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Leap Motion,
-ms.openlocfilehash: 285328b1248f04504f30192f1294e9ae665b3fc9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 44593713f08a00fa53325eebfae2cf9042d386be
+ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145196"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110207472"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Konfigurieren der Handnachverfolgung von Leap Motion (von Ultraleap) im MRTK
 
@@ -22,23 +22,24 @@ Die Leap Motion Datenanbieter ermöglicht die artikulierte Handverfolgung für V
 
 Dieser Anbieter kann im Editor und auf dem Gerät auf der eigenständigen Plattform verwendet werden.  Sie kann auch im Editor auf der UWP-Plattform, aber NICHT in einem UWP-Build verwendet werden.
 
-|Unterstützte Leap Motion Unity-Modulversionen|
-|---|
-|4.5.0|
-|4.5.1|
+| MRTK-Version | Unterstützte Leap Motion Unity-Modulversionen |
+| --- | --- |
+|2.6.x | 4.5.0, 4.5.1|
+|2.7.x| 4.5.0, 4.5.1, 4.6.0, 4.7.0, 4.7.1|
+
 
 ## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>Verwenden der Handnachverfolgung von Leap Motion (von Ultraleap) im MRTK
 
 1. Importieren von MRTK und den Leap Motion Unity-Modulen
-    - Installieren Sie das [Leap Motion SDK 4.0.0,](https://developer.leapmotion.com/releases/?category=orion) wenn es noch nicht installiert ist.
+    - Installieren Sie das neueste [Leap Motion SDK,](https://developer.leapmotion.com/releases/?category=orion) falls es noch nicht installiert ist.
     - Importieren Sie das **Paket Microsoft.MixedReality.Toolkit.Foundation** in das Unity-Projekt.
     - Laden Sie die neueste Version der [Leap Motion Unity-Module](https://developer.leapmotion.com/unity) herunter, und importieren Sie sie in das Projekt.
         - Importieren Sie nur das **Core-Paket** innerhalb der Unity-Module.
 
 1. Integrieren der Leap Motion Unity-Module in MRTK
-    - Nachdem sich die Unity-Module im Projekt befinden, navigieren Sie zu **Mixed Reality Toolkit**  >  **Leap Motion** Integrate Leap Motion Unity  >  **Modules**
+    - Nachdem sich die Unity-Module im Projekt befinden, navigieren Sie zu Mixed Reality **Toolkit**  >  **Leap Motion** Integrate Leap Motion Unity  >  **Modules**
     > [!NOTE]
-    > Durch die Integration der Unity-Module in MRTK werden dem Projekt 10 Assemblydefinitionen und Verweise auf die **Assemblydefinition Microsoft.MixedReality.Toolkit.Providers.LeapMotion** hinzugefügt. Vergewissern Sie sich, dass Visual Studio geschlossen ist.
+    > Durch die Integration der Unity-Module in MRTK werden dem Projekt 10 Assemblydefinitionen und Verweise auf die **Assemblydefinition Microsoft.MixedReality.Toolkit.Providers.LeapMotion** hinzufügt. Vergewissern Sie sich, dass Visual Studio geschlossen ist.
 
      ![LeapMotionIntegration](../images/cross-platform/leap-motion/LeapMotionIntegrateMenu.png)
 
@@ -65,9 +66,9 @@ Dieser Anbieter kann im Editor und auf dem Gerät auf der eigenständigen Plattf
 
     ![LeapDataProviderPreClone](../images/cross-platform/leap-motion/LeapMotionDeviceManagerProfile.png)
 
-    - Der Leap Motion Datenanbieter enthält die `LeapControllerOrientation` -Eigenschaft, die die Position des Leap Motion-Controllers ist. `LeapControllerOrientation.Headset` gibt an, dass der Controller auf einem Headset bereitgestellt ist. `LeapControllerOrientation.Desk` gibt an, dass der Controller flach auf dem Desk platziert ist. Der Standardwert ist auf `LeapControllerOrientation.Headset` festgelegt.
+    - Der Leap Motion Datenanbieter enthält die `LeapControllerOrientation` -Eigenschaft, die die Position des Leap Motion-Controllers ist. `LeapControllerOrientation.Headset` gibt an, dass der Controller auf einem Headset eingebunden ist. `LeapControllerOrientation.Desk` gibt an, dass der Controller flach auf dem Arbeitsplatz platziert wird. Der Standardwert ist auf `LeapControllerOrientation.Headset` festgelegt.
     - Jede Controllerausrichtung enthält Offseteigenschaften:
-      - Die  Headset-Ausrichtungsoffseteigenschaften spiegeln die Offseteigenschaften in der LeapXRServiceProvider-Komponente wieder.  Verfügt über `LeapVRDeviceOffsetMode` drei Optionen: Standard, Manueller Kopfoffset und Transformation.  Wenn der Offsetmodus Standard ist, wird kein Offset auf den Schaltbewegungscontroller angewendet.  Der Modus Manueller Kopfoffset ermöglicht die Änderung von drei Eigenschaften: `LeapVRDeviceOffsetY` `LeapVRDeviceOffsetZ` und `LeapVRDeviceTiltX` .  Die Achsenoffset-Eigenschaftswerte werden dann auf die Standardcontrollerplatzierung angewendet.  Der Transformationsoffsetmodus enthält die `LeapVRDeviceOrigin` Transform-Eigenschaft, die einen neuen Ursprung für den Leap Motion Controller angibt.
+      - Die **Eigenschaften** des Headsetausrichtungsoffsets spiegeln die Offseteigenschaften in der LeapXRServiceProvider-Komponente wider.  Verfügt über `LeapVRDeviceOffsetMode` drei Optionen: Standard, Manueller Kopfoffset und Transformation.  Wenn der Offsetmodus Standard ist, wird kein Offset auf den Schaltbewegungscontroller angewendet.  Der Modus Manueller Kopfoffset ermöglicht die Änderung von drei Eigenschaften: `LeapVRDeviceOffsetY` `LeapVRDeviceOffsetZ` und `LeapVRDeviceTiltX` .  Die Achsenoffset-Eigenschaftswerte werden dann auf die Standardcontrollerplatzierung angewendet.  Der Transformationsoffsetmodus enthält die `LeapVRDeviceOrigin` Transform-Eigenschaft, die einen neuen Ursprung für den Leap Motion Controller angibt.
       - Die **Desk-Ausrichtung** enthält die `LeapControllerOffset` -Eigenschaft, die die Ankerposition der Schalthand des Desks definiert.  Der Offset wird relativ zur Hauptkameraposition berechnet, und der Standardwert ist (0,-0,2, 0,35), um sicherzustellen, dass die Hände vor und in der Kamera angezeigt werden.
 
         > [!NOTE]
@@ -84,7 +85,7 @@ Dieser Anbieter kann im Editor und auf dem Gerät auf der eigenständigen Plattf
     ![LeapHeadsetGif](../images/cross-platform/leap-motion/LeapHeadsetOrientationExampleMetacarpals.gif)  |  ![LeapDeskGif](../images/cross-platform/leap-motion/LeapDeskOrientationExampleMetacarpals.gif)
     ![LeapHeadsetInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerHeadset.png) |     ![LeapDeskInspector](../images/cross-platform/leap-motion/LeapMotionDeviceManagerDesk.png)
 
-1. Testen der Datenanbieter
+1. Testen des Leap Motion Datenanbieter
     - Nachdem Leap Motion Datenanbieter dem Eingabesystemprofil hinzugefügt wurde, drücken Sie die Wiedergabe, bewegen Sie Ihre Hand vor dem Leap Motion Controller, und Sie sollten die gemeinsame Darstellung der Hand sehen.
 
 1. Erstellen Ihres Projekts
@@ -146,34 +147,34 @@ public class LeapHandJoints : MonoBehaviour, IMixedRealityHandJointHandler
 
 Die Verwendung des Leap Motion Datenanbieter erfordert kein VR-Headset.  Änderungen an einer MRTK-App können im Editor mit den Leap-Händen ohne Headset getestet werden.
 
-Die Leap Motion Hands werden im Editor angezeigt, ohne dass ein VR-Headset angeschlossen ist.  Wenn der auf Headset festgelegt ist, muss der Leap Motion-Controller um eine Hand mit der nach vorn gerichteten `LeapControllerOrientation` Kamera gehalten werden. 
+Die Leap Motion Hands werden im Editor angezeigt, ohne dass ein VR-Headset angeschlossen ist.  Wenn auf `LeapControllerOrientation` **Headset** festgelegt ist, muss der Leap Motion-Controller mit der Kamera nach vorn mit einer Hand gehalten werden.
 
 > [!NOTE]
-> Wenn die Kamera mithilfe von WASD-Tasten im Editor bewegt wird und headset ist, folgen die Hände `LeapControllerOrientation` nicht der Kamera.  Die Hände folgen nur der Kamerabewegung, wenn ein VR-Headset angeschlossen ist, während `LeapControllerOrientation` das **Headset festgelegt ist.**  Die Leap-Hände folgen der Kamerabewegung im Editor, wenn `LeapControllerOrientation` auf **Desk festgelegt ist.**
+> Wenn die Kamera mithilfe von WASD-Schlüsseln im Editor bewegt wird und das `LeapControllerOrientation` **Headset** ist, folgen die Hände nicht der Kamera. Die Hände folgen nur der Kamerabewegung, wenn ein VR-Headset angeschlossen ist, während das `LeapControllerOrientation` **Headset** festgelegt ist.  Die Schalthand folgt der Kamerabewegung im Editor, wenn auf `LeapControllerOrientation` **Desk** festgelegt ist.
 
 ## <a name="removing-leap-motion-from-the-project"></a>Entfernen von Leap Motion aus dem Projekt
 
-1. Navigieren Sie zu den **Mixed Reality Toolkit**  >  **Leap Motion** Separate Leap Motion Unity  >  **Modules**
-    - Lassen Sie Unity aktualisieren, wenn Verweise in der **Datei Microsoft.MixedReality.Toolkit.Providers.LeapMotion.asmdef** in diesem Schritt geändert werden.
+1. Navigieren Sie zu den **Unity-Modulen Mixed Reality Toolkit**  >  **Leap Motion** Separate Leap  >  **Motion**
+    - Lassen Sie Unity aktualisieren, da Verweise in der Datei **Microsoft.MixedReality.Toolkit.Providers.LeapMotion.asmdef** in diesem Schritt geändert werden.
 1. Schließen von Unity
-1. Schließen Visual Studio, wenn sie geöffnet ist
+1. Schließen Sie Visual Studio, wenn es geöffnet ist.
 1. Öffnen Sie den Datei-Explorer, und navigieren Sie zum Stamm des MRTK-Unity-Projekts.
-    - Löschen des **Verzeichnisses UnityProjectName/Library**
+    - Löschen des **UnityProjectName/Library-Verzeichnisses**
     - Löschen des **Verzeichnisses UnityProjectName/Assets/Plugins/LeapMotion**
-    - Löschen Sie die **Datei UnityProjectName/Assets/Plugins/LeapMotion.meta.**
+    - Löschen Sie die Datei **UnityProjectName/Assets/Plugins/LeapMotion.meta.**
 1. Unity erneut öffnen
 
-In Unity 2018.4 werden Sie möglicherweise feststellen, dass nach dem Löschen der Bibliothek und der Leap Motion Core-Objekte weiterhin Fehler in der Konsole verbleiben.
-Wenn Fehler nach dem erneuten Öffnen protokolliert werden, starten Sie Unity erneut.
+In Unity 2018.4 können Sie feststellen, dass Fehler nach dem Löschen der Bibliothek und der Leap Motion Core-Objekte weiterhin in der Konsole verbleiben.
+Wenn nach dem erneuten Öffnen Fehler protokolliert werden, starten Sie Unity erneut neu.
 
 ## <a name="common-errors"></a>Häufige Fehler
 
-### <a name="leap-motion-has-not-integrated-with-mrtk"></a>Leap Motion wurde nicht in MRTK integriert
+### <a name="leap-motion-has-not-integrated-with-mrtk"></a>Leap Motion wurde nicht in MRTK integriert.
 
-So testen Sie, ob die Leap Motion Unity-Module in MRTK integriert sind:
+So testen Sie, ob die Leap Motion Unity-Module in MRTK integriert wurden:
 
-- Navigieren Sie **zu Mixed Reality Toolkit > Utilities > Leap Motion> Integrationsstatus überprüfen.**
-  - Dadurch wird ein Popupfenster mit einer Meldung angezeigt, ob die Leap Motion Unity-Module in MRTK integriert sind oder nicht.
+- Navigieren Sie zu **Mixed Reality Toolkit > Utilities > Leap Motion > Check Integration Status (Integrationsstatus überprüfen).**
+  - Dadurch wird ein Popupfenster mit einer Meldung darüber angezeigt, ob die Leap Motion Unity-Module in MRTK integriert wurden oder nicht.
 - Wenn in der Meldung angezeigt wird, dass die Objekte nicht integriert wurden:
   - Stellen Sie sicher, dass sich die Leap Motion Unity-Module im Projekt befinden.
   - Stellen Sie sicher, dass die hinzugefügte Version unterstützt wird. Informationen zu den unterstützten Versionen finden Sie in der Tabelle oben auf der Seite.
@@ -181,7 +182,7 @@ So testen Sie, ob die Leap Motion Unity-Module in MRTK integriert sind:
 
 ### <a name="copying-assembly-multiplayer-hlapi-failed"></a>Fehler beim Kopieren der Assembly "Multiplayer HLAPI"
 
-Beim Importieren der Leap Motion Unity Core Assets kann dieser Fehler protokolliert werden:
+Beim Import der Leap Motion Unity Core Assets kann dieser Fehler protokolliert werden:
 
 ```
 Copying assembly from 'Temp/com.unity.multiplayer-hlapi.Runtime.dll' to 'Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll' failed
@@ -189,15 +190,15 @@ Copying assembly from 'Temp/com.unity.multiplayer-hlapi.Runtime.dll' to 'Library
 
 **Lösung**
 
-- Eine kurzfristige Lösung besteht darin, Unity neu zu starten. Weitere Informationen finden Sie unter [Problem 7761.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/7761)
+- Eine kurzfristige Lösung ist der Neustart von Unity. Weitere Informationen finden Sie unter Issue [7761 (Problem 7761).](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/7761)
 
-## <a name="leap-motion-example-scene"></a>Leap Motion-Beispielszene
+## <a name="leap-motion-example-scene"></a>Beispielszene für Schaltbewegung
 
-Die Beispielszene verwendet das Profil DefaultLeapMotionConfiguration und bestimmt, ob das Unity-Projekt ordnungsgemäß für die Verwendung des Leap Motion-Datenanbieter konfiguriert wurde.
+Die Beispielszene verwendet das Profil DefaultLeapMotionConfiguration und ermittelt, ob das Unity-Projekt ordnungsgemäß für die Verwendung des Leap Motion-Datenanbieter.
 
-Die Beispielszene ist im Paket **Microsoft.MixedReality.Toolkit.Examples** im Verzeichnis **MRTK/Examples/Demos/HandTracking/** enthalten.  
+Die Beispielszene ist im **Paket Microsoft.MixedReality.Toolkit.Examples** im **Verzeichnis MRTK/Examples/Demos/HandTracking/** enthalten.  
 
 ## <a name="see-also"></a>Weitere Informationen
 
--[Eingabeanbieter](../features/input/input-providers.md) 
+- [Eingabeanbieter](../features/input/input-providers.md)
 - [Handtracking](../features/input/hand-tracking.md)
