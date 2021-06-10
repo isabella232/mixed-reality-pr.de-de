@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Profile,
-ms.openlocfilehash: 384614f27c099af197ea8a9aedc72c711f0c099e
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
-ms.translationtype: HT
+ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881227"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908239"
 ---
 # <a name="profiles"></a>Profiles
 
@@ -31,9 +31,14 @@ Es gibt auch Profile, die für die Eingabefeatures bestimmter Geräte erstellt w
 
 ## <a name="xr-sdk"></a>XR SDK
 
+::: moniker range=">= mrtkunity-2021-05"
+Verwenden Sie eines der MRTK-Standardprofile, die alle über die XR-Pipelines von Unity konfiguriert sind. Die vorherigen "DefaultOpenXRConfigurationProfile" und "DefaultXRSDKConfigurationProfile" sind jetzt veraltet.
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 Zurzeit werden zwei Profile für das XR SDK bereitgestellt, `DefaultXRSDKConfigurationProfile` und `DefaultHoloLens2XRSDKConfigurationProfile`. Das hat zur Folge, dass aufgrund von szenen- und szenariospezifischen Konfigurationen nicht alle Beispielszenen in vollem Umfang unterstützt werden. Alle Beispiele, die `DefaultMixedRealityToolkitConfigurationProfile` und `DefaultHoloLens2ConfigurationProfile` verwenden, _können_ auf ihre entsprechenden XR SDK-Profile umgestellt werden. Wenn Sie OpenXR mit XR SDK verwenden, nutzen Sie stattdessen das `DefaultOpenXRConfigurationProfile`.
 
 Zusätzliche Arbeiten werden durchgeführt, um die Konfiguration zu vereinfachen und alle Beispielszenen zu unterstützen, sodass sowohl das Legacy-XR als auch das XR SDK parallel konfiguriert werden können. Sie können dies unter Problem [#9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) nachverfolgen.
+::: moniker-end
 
 Weitere Informationen zur Konvertierung von Profilen zwischen dem Legacy-XR und dem XR SDK finden Sie unter [Konfigurieren von MRTK für die XR-SDK-Pipeline](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline).
 
