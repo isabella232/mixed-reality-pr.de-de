@@ -1,27 +1,27 @@
 ---
 title: Handmenü
-description: Mithilfe von Hand Menüs können Benutzer schnell Hand anfügende Benutzeroberflächen für häufig verwendete Funktionen aktivieren.
+description: Handmenüs ermöglichen es Benutzern, schnell eine hand angefügte Benutzeroberfläche für häufig verwendete Funktionen zu öffnen.
 author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: Hand, Menü, Schaltfläche, schnell Zugriff, Layout, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: e222d792d883ccacc71b177fbde21979c8dfcc77
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Hand, Menü, Schaltfläche, Schnellzugriff, Layout, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: f007ada2d7a594f141d30a3619d4d80ac74621d8
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299915"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600329"
 ---
 # <a name="hand-menu"></a>Handmenü
 
-![Ulnar Seitenposition](images/UX_Hero_HandMenu.jpg)
+![Ulnar-Seitenposition](images/UX_Hero_HandMenu.jpg)
 
-Das Menü "Hand" ist eines der einzig testen UX-Muster in hololens 2. Mit dieser Option können Sie schnell Hand anfügende Benutzeroberflächen einrichten. Da es jederzeit zugänglich ist und leicht angezeigt und ausgeblendet werden kann, ist es hervorragend für schnelle Aktionen geeignet.
+Das Handmenü ist eines der einzigartigsten UX-Muster in HoloLens 2. Dadurch können Sie schnell eine hand angefügte Benutzeroberfläche anzeigen. Da sie jederzeit zugänglich ist und einfach angezeigt und ausgeblendet werden kann, ist sie ideal für schnelle Aktionen.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
 
-Sie finden unsere empfohlenen bewährten Methoden für die Arbeit mit Hand Menüs in der folgenden Liste. Sie finden auch eine Beispiel Szene, die das Hand Menü in [mrtk](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)demonstriert.
+Unsere empfohlenen bewährten Methoden für die Arbeit mit Handmenüs finden Sie in der folgenden Liste. Sie finden auch eine Beispielszene, die das Handmenü in [MRTK zeigt.](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 
@@ -29,83 +29,83 @@ Sie finden unsere empfohlenen bewährten Methoden für die Arbeit mit Hand Menü
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-**Anzahl von Schaltflächen klein halten** 
+**Halten Sie die Anzahl der Schaltflächen klein.** 
 
-Aufgrund der engen Entfernung zwischen einem Hand gesperrten Menü und den Augen und der Tendenz, dass sich Benutzer jederzeit auf einen relativ kleinen visuellen Bereich konzentrieren können (der Teilnehmer Kegel ist ungefähr 10 Grad), empfiehlt es sich, die Anzahl der Schaltflächen gering zu halten. Basierend auf unserer Untersuchung funktioniert eine Spalte mit drei Schaltflächen gut, indem der gesamte Inhalt in der Ansicht (FOV) beibehalten wird, auch wenn ein Benutzer seine Hände in den Mittelpunkt des FOV verschiebt. 
+Aufgrund der nähen Entfernung zwischen einem handgesperrten Menü und den Augen und der Neigung, dass benutzer sich jederzeit auf einen relativ kleinen visuellen Bereich konzentrieren (der Augenkegel beträgt ungefähr 10 Grad), wird empfohlen, die Anzahl der Schaltflächen klein zu halten. Basierend auf unserer Untersuchung funktioniert eine Spalte mit drei Schaltflächen gut, indem alle Inhalte innerhalb des Sichtfelds (Field of View, FOV) selbst dann zentriert bleiben, wenn ein Benutzer seine Hände in die Mitte des FOV bewegt. 
 
-**Verwenden des Hand Menüs für die schnelle Aktion** 
+**Verwenden des Handmenüs für schnelle Aktionen** 
 
-Das Auslösen eines Arm und das Aufrechterhalten der Position könnte leicht eine Arm-Müdigkeit verursachen. Verwenden Sie eine Hand gesperrte Methode für das Menü, das eine kurze Interaktion erfordert. Wenn Ihr Menü Komplex ist und erweiterte Interaktions Zeiten erfordert, sollten Sie stattdessen "World-Locked" oder "Body-Lock" verwenden. 
+Das Erhöhen eines Arms und das Beibehalten der Position kann leicht zu Armermüdung führen. Verwenden Sie eine handgesperrte Methode für das Menü, das eine kurze Interaktion erfordert. Wenn Ihr Menü komplex ist und längere Interaktionszeiten erfordert, sollten Sie stattdessen die Verwendung von welt- oder textgesperrt in Betracht ziehen. 
 
-**Schaltflächen-/Panel-Winkel**
+**Schaltflächen-/Panelwinkel**
 
-Menüs sollten in der gegenüberliegenden Schulter und der Mitte des Kopfes angezeigt werden: Dadurch kann eine natürliche Handbewegung mit dem Menü mit umgekehrter Hand interagieren und alle umständlichen oder unbequemen Handpositionen beim Berühren von Schaltflächen vermeiden. 
+Menüs sollten sich gegen die entgegengesetzte Kopf- und Kopfmitte bewegen: Dies ermöglicht eine natürliche Handbewegung, um mit der entgegengesetzten Hand mit dem Menü zu interagieren, und vermeidet unhandliche oder träge Handpositionen beim Berühren von Schaltflächen. 
 
-**In Erwägung gezogen, ein-oder frei Hand Vorgang zu unterstützen.**
+**Erwägen Sie die Unterstützung eines einhändigen oder freihändigen Vorgangs.**
 
-Gehen Sie nicht davon aus, dass beide Hände des Benutzers immer verfügbar sind. Stellen Sie sich einen großen Bereich von Kontexten vor, wenn eine oder beide Hände nicht verfügbar sind, und stellen Sie sicher, dass Ihre Entwurfs Konten für diese Situationen sind. Um ein eindimensionales Menü zu unterstützen, können Sie versuchen, die Menü Platzierung von Hand gesperrt auf die gesperrte Seite zu übertragen, wenn die Hand kippt (in den Blättern). Bei praktischen Szenarios sollten Sie einen Sprachbefehl verwenden, um das Menü "Hand" aufzurufen.
+Gehen Sie nicht davon aus, dass beide Hände des Benutzers immer verfügbar sind. Stellen Sie sich eine Vielzahl von Kontexten vor, wenn eine oder beide Hände nicht verfügbar sind, und stellen Sie sicher, dass Ihr Entwurf für diese Situationen kontent. Um ein einhändiges Handmenü zu unterstützen, können Sie versuchen, die Menüplatzierung von handgesperrt in weltgesperrt zu überstellen, wenn die Hand kippt (die Hand nach unten geht). Erwägen Sie für Freihandszenarien die Verwendung eines Sprachbefehls zum Aufrufen des Handmenüs.
 
-**Vermeiden Sie das Hinzufügen von Schaltflächen in der Nähe der Hand**
+**Vermeiden des Hinzufügens von Schaltflächen in der Nähe des Handgelenks (System-Startschaltfläche)**
 
-Wenn die Menü Schaltflächen "Hand" zu nah an der Start Schaltfläche platziert werden, kann Sie versehentlich bei der Interaktion mit dem Menü "Hand" auftreten.
+Wenn die Handmenüschaltflächen zu nah an der Startschaltfläche platziert werden, kann dies bei der Interaktion mit dem Handmenü versehentlich ausgelöst werden.
 
 <br>
 
-## <a name="hand-menu-with-large-and-complex-ui-controls"></a>Hand Menü mit großen und komplexen UI-Steuerelementen
+## <a name="hand-menu-with-large-and-complex-ui-controls"></a>Handmenü mit großen und komplexen Ui-Steuerelementen
 
 <img src="images/HandMenu_SizeExample.png" alt="HoloLens perspective of a menu system that always faces the user" width="940px">
-Es wird empfohlen, die Anzahl der Schaltflächen oder UI-Steuerelemente in Hand anfügenden Menüs einzuschränken. Dies liegt daran, dass die erweiterte Interaktion mit einer großen Anzahl von Benutzeroberflächen Elementen eine Arm-Müdigkeit verursachen kann. Wenn Ihre Benutzerumgebung ein großes Menü erfordert, stellen Sie dem Benutzer eine einfache Möglichkeit zur Verfügung, um das Menü zu sperren. Eine Methode, die wir empfehlen, ist die Welt, in der das Menü angezeigt wird, wenn das Handumdrehen vom Benutzer gelöscht oder umgekehrt wird. Ein zweites Verfahren besteht darin, dem Benutzer zu gestatten, das Menü direkt mit der anderen Seite zu übernehmen. Wenn der Benutzer das Menü loslässt, sollte das Menü auf der ganzen Welt gesperrt werden. Auf diese Weise kann ein Benutzer über einen längeren Zeitraum bequem und sicher mit verschiedenen Benutzeroberflächen Elementen interagieren. 
+Es wird empfohlen, die Anzahl der Schaltflächen oder Ui-Steuerelemente in hand angefügten Menüs zu beschränken. Dies liegt daran, dass die erweiterte Interaktion mit einer großen Anzahl von Benutzeroberflächenelementen zu Armermüdung führen kann. Wenn Ihre Erfahrung ein umfangreiches Menü erfordert, bieten Sie dem Benutzer eine einfache Möglichkeit, das Menü weltweit zu sperren. Eine methode, die wir empfehlen, ist das Weltsperren und dann das Menü, wenn die Hand vom Benutzer abfällt oder sich davon kippt. Ein zweites Verfahren besteht in der Möglichkeit, dem Benutzer zu ermöglichen, das Menü direkt mit der anderen Hand zu greifen. Wenn der Benutzer das Menü freilässt, sollte das Menü weltsperren. Auf diese Weise kann ein Benutzer über einen längeren Zeitraum bequem und sicher mit verschiedenen Benutzeroberflächenelementen interagieren. 
 
-Wenn das Menü weltweit gesperrt ist, stellen Sie sicher, dass Sie eine Möglichkeit zum Verschieben des Menüs und zum Schließen des Menüs haben, wenn es nicht mehr benötigt wird. Legen Sie die Position des Menüs durch Bereitstellen von Handles auf den Seiten oder dem oberen Rand des Menüs auf den Fügen Sie eine Schaltfläche Schließen hinzu, um das Schließen des Menüs zuzulassen. Hiermit wird das erneute Anfügen des Menüs an die Hand ermöglicht, wenn der Benutzer dem Benutzer die Hand gibt. Außerdem wird empfohlen, dass die Benutzer ihre Hand betrachten, um falsche Aktivierungen zu verhindern (siehe unten).
+Wenn das Menü weltgesperrt ist, stellen Sie sicher, dass Sie eine Möglichkeit zum Verschieben des Menüs bereitstellen und das Menü schließen, wenn es nicht mehr benötigt wird. Machen Sie das Menü verschiebbar, indem Sie Ziehpunkte an den Seiten oder oben im Menü bereitstellen. Fügen Sie eine Schaltfläche zum Schließen hinzu, damit das Menü geschlossen werden kann. Lassen Sie zu, dass das Menü erneut an die Hand angefügt wird, wenn der Benutzer dem Benutzer die Hand stellt. Es wird auch empfohlen, dass die Benutzer an ihre Hand schauen, um falsche Aktivierungen zu verhindern (siehe unten).
 
-**Großes Menü, das ein Problem mit der Benutzerfreundlichkeit anzeigt**
+**Großes Menü, das ein Benutzerfreundlichkeitsproblem zeigt**
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AOPx]
 
-**Weltweit gesperrtes Menü im Handschlag**
+**World-locked menu on hand drop**
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AGZi]
 
-**Manueller Abruf & Pullvorgang an der Welt: Sperren Sie das Menü.**
+**Manuelles Greifen & zum Weltsperren des Menüs**
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAf]
 
-## <a name="how-to-prevent-false-activation"></a>Verhindern der falsch Aktivierung
+## <a name="how-to-prevent-false-activation"></a>Verhindern einer falschen Aktivierung
 
-Wenn Sie nur die Option "Palm-up" als Ereignis verwenden, um das Menü "Hand" zu starten, wird es möglicherweise versehentlich angezeigt, wenn Sie es nicht benötigen (falsch positiv), da Personen die Hände absichtlich (für die Kommunikation und Objekt Bearbeitung) und unbeabsichtigt verschieben. Um falsche Aktivierungen zu reduzieren, fügen Sie neben dem Palm-up-Ereignis einen zusätzlichen Schritt hinzu, um das Menü "Hand" (z. b. vollständig geöffnete Finger) aufzurufen.
+Wenn Sie das Handmenü nur als Ereignis auslösen, wird es möglicherweise versehentlich angezeigt, wenn Sie es nicht benötigen (falsch positiv), da Benutzer ihre Hände sowohl absichtlich (zur Kommunikation als auch zur Objektbearbeitung) und unbeabsichtigt bewegen. Um falsche Aktivierungen zu reduzieren, fügen Sie neben dem Handmenü einen zusätzlichen Schritt hinzu, um das Handmenü auf dem Handmenü auf zu rufen (z. B. vollständig geöffnete Finger oder der Benutzer, der absichtlich an der Hand blättern soll).
 
-**Flache Palme erforderlich**
+**Flache Handfläche erforderlich**
 
-Wenn Sie eine flache öffnende Hand benötigen, können Sie die falsche Aktivierung verhindern, die auftreten kann, wenn der Benutzer während der Kommunikation innerhalb einer Umgebung Objekte oder Gesten bearbeitet. 
+Wenn Sie eine flache offene Hand benötigen, können Sie eine falsche Aktivierung verhindern, die auftreten kann, wenn der Benutzer Objekte oder Gesten während der Kommunikation innerhalb einer Umgebung bearbeitet. 
 
-**Blick erfordern**
+**Anving erfordern**
 
-Wenn der Benutzer die Hand betrachten muss (entweder mit dem Augenblick oder dem Kopf), werden falsche Aktivierungen verhindert, da der Benutzer die Aufmerksamkeit auf die Hand als sekundären Aktivierungs Schritt lenken muss (mit einem anpassbaren Entfernungs Schwellenwert, der für den Benutzerkomfort verwendet wird).  
+Indem der Benutzer an seine Hand anviert werden muss (entweder mit dem Anving mit den Augen oder mit dem Kopf), werden falsche Aktivierungen verhindert, da der Benutzer seine Aufmerksamkeit als sekundären Aktivierungsschritt auf die Hand richten muss (mit einem abstimmbaren Entfernungsschwellenwert, der für Benutzerfreundlichkeit verwendet wird).  
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Asn4]
 
 ---
 
-## <a name="hand-menu-placement-best-practices"></a>Bewährte Methoden für die Platzierung von Hand Menüs
+## <a name="hand-menu-placement-best-practices"></a>Bewährte Methoden für die Platzierung von Handmenüs
 
-Bei der menschlichen Anatomie ist der ulnar-Nerv ein Nerv, der in der Nähe des Ulna-knochenverläuft. Die Ulna ist ein langer Ring in der forearm, der vom Bogen zum kleinsten Finger reicht.
+In der menschlichen Anatomie ist die Ulnar-Menschlichen ein Menschlichen, der in der Nähe des Ulna-Menschlichen ausgeführt wird. Die Ulna ist ein langer Glied im Unterarm, der sich vom Glied bis zum kleinsten Finger erstreckt.
 
-Im folgenden finden Sie zwei empfohlene Platzierungen, die auf unseren Explorationen basieren:
+Im Folgenden finden Sie zwei empfohlene Platzierungen basierend auf unseren Untersuchungen:
 
 :::row:::
     :::column:::
-        ![Ularies Seitenposition innerhalb der Palme](images/UlnarSideHandMenu.gif)<br>
-        **Ein. ulnar in der Palme**<br>
-        Diese Position ist zuverlässig, da die Hände einander nicht überlappen. Dies ist wichtig für die genaue Erkennung und Nachverfolgung von Hand.
+        ![Ulnar-Seitenposition innerhalb der Hand](images/UlnarSideHandMenu.gif)<br>
+        **A. Ulnar in der Handfläche**<br>
+        Diese Position ist zuverlässig, da sich die Hände nicht überlappen. Dies ist wichtig für eine genaue Handerkennung und Nachverfolgung.
     :::column-end:::
     :::column:::
-        ![Ulnar Seitenposition oberhalb der Hand](images/UlnarAboveHandMenu.gif)<br>
-        **B. ulnar oberhalb der Hand**<br>
-        Dieser Speicherort ist für Benutzer praktisch, da Sie den Arm nicht zu groß machen müssen, um mit dem Hand Menü zu interagieren. Es empfiehlt sich, die Menüs **13 cm** oberhalb der Palme zu platzieren und die Schaltflächen innerhalb der ulnar-Palme auszurichten. [Weitere Informationen zur optimalen Schaltflächen Größe](interactable-object.md)<br>
+        ![Ulnar-Seitenposition über der Hand](images/UlnarAboveHandMenu.gif)<br>
+        **B. Ulnar oben**<br>
+        Dieser Ort ist für Benutzer bequem, da sie ihren Arm nicht zu stark erhöhen müssen, um mit dem Handmenü zu interagieren. Es wird empfohlen, Menüs **13 cm** über der Handfläche zu platzieren und die Schaltflächen in der Ulnar-Handfläche auszurichten. [Erfahren Sie mehr über die optimale Schaltflächengröße.](interactable-object.md)<br>
         <br>
-        Aus technischen Gründen wird dieser Speicherort mit einer erforderlichen Implementierung empfohlen: der Entwickler muss das Menü fixieren, wenn die gegenüberliegende Seite des Benutzers in der Nähe der Interaktion mit dem Benutzer steht. Dadurch wird die überlappende Hände von jitterität vermieden, und es ist auch möglich, dass die Schaltflächen schneller ausgerichtet werden.<br>
+        Aus technischen Gründen empfehlen wir diesen Speicherort mit einer erforderlichen Implementierung: Der Entwickler muss das Menü einfrieren, sobald die entgegengesetzte Hand des Benutzers der Interaktion nahe kommt. Dies vermeidet Jitteriness durch überlappende Hände und ermöglicht auch eine schnellere Ausrichtung der Schaltflächen.<br>
         <br>
-        Hololens 2 Kameras identifizieren Hände genau, wenn Sie voneinander getrennt sind. Überlappende Hände können dazu führen, dass Hand Menüs von der Ankerposition Weg wechseln.<br>
+        HoloLens 2 Die Hände werden von Kameras genau identifiziert, wenn sie voneinander getrennt sind. Überlappende Hände können dazu führen, dass Handmenüs von der Ankerposition entfernt werden.<br>
     :::column-end:::
 :::row-end:::
 
@@ -113,22 +113,22 @@ Im folgenden finden Sie zwei empfohlene Platzierungen, die auf unseren Explorati
 
 ---
 
-## <a name="menu-positions-that-arent-recommended"></a>Nicht empfohlene Menü Positionen
+## <a name="menu-positions-that-arent-recommended"></a>Menüpositionen, die nicht empfohlen werden
 
-Wir haben die Benutzer Forschung mit verschiedenen Menüs und Standorten durchgeführt. die folgenden Menü Positionen werden **nicht empfohlen**. Sie finden die Nachteile der einzelnen nachfolgenden Nachforschungen:
+Wir haben Benutzerforschung mit verschiedenen Menülayouts und -standorten durchgeführt. Die folgenden Menüpositionen werden **NICHT** empfohlen. Die Nachteile jeder Studie finden Sie unten:
 
 :::row:::
     :::column:::
-        ![Oberhalb von Arm](images/AboveArm.gif)<br>
-        **Oberhalb der Arm**<br>
-        1: schwer zu verwaltender guter Hand Verfolgung<br>
-        2: verursacht eine Benutzer Müdigkeit aufgrund der unnatürlichen Position.
+        ![Über arm](images/AboveArm.gif)<br>
+        **Über dem Arm**<br>
+        1 – Schwierig, eine gute Handverfolgung zu verwalten<br>
+        2 : Verursacht Benutzermüdigkeit aufgrund einer unnatürlichen Position
     :::column-end:::
     :::column:::
-        ![Über Fingern](images/AboveFingers.gif)<br>
-        **Über Fingern**<br>
-        eine Hand Müdigkeit aufgrund einer langen Zeitüberschreitung<br>
-        2-Hand-nach Verfolgungs Probleme bei Index-und mittelfingern
+        ![Über den Fingern](images/AboveFingers.gif)<br>
+        **Über den Fingern**<br>
+        1 – Handermüdung aufgrund der langen Handhaltung<br>
+        2: Probleme bei der Handnachverfolgung an Index- und Mittelfingern
     :::column-end:::
 :::row-end:::
 
@@ -136,16 +136,16 @@ Wir haben die Benutzer Forschung mit verschiedenen Menüs und Standorten durchge
 
 :::row:::
     :::column:::
-        ![Oberhalb der mittleren Palme](images/handCenter.gif)<br>
-        **Oberhalb-Mittelpunkt**<br>
-        1-Hand-nach Verfolgungs Probleme aufgrund von überlappenden Händen<br>
-        2-Hand-Müdigkeit aufgrund der langen Zeit für die Interaktion mit Menüs
+        ![Obere Mittelfläche](images/handCenter.gif)<br>
+        **Obere Mittelfläche**<br>
+        1– Probleme bei der Handnachverfolgung aufgrund von überlappenden Händen<br>
+        2– Handermüdung aufgrund der langen Handhaltung für die Interaktion mit Menüs
     :::column-end:::
     :::column:::
-        ![Top Fingertip ](images/TopFingerTip.gif) **Top Fingertip**<br>
-        1-Hand-nach Verfolgungs Probleme<br>
-        2-Hand Müdigkeit von Hand über normalem Status<br>
-        3: Fehler beim Drücken von Schaltflächen mit anderen Fingern aufgrund von eingeschränktem Leerraum zwischen Fingern.
+        ![Fingerspitze oben ](images/TopFingerTip.gif) **Fingerspitze**<br>
+        1– Probleme mit der Handverfolgung<br>
+        2– Handermüdung, wenn die Hand über dem normalen Zustand hält<br>
+        3. Probleme beim Drücken von Schaltflächen mit anderen Fingern aufgrund von begrenztem Abstand zwischen den Fingern
     :::column-end:::
 :::row-end:::
 
@@ -153,10 +153,10 @@ Wir haben die Benutzer Forschung mit verschiedenen Menüs und Standorten durchge
 
 :::row:::
     :::column:::
-        ![Zurück zum Arm](images/BackOfTheArm.gif)<br>
-        **Zurück zum Arm**<br>
-        1: Start Schaltfläche nach einem Unfall<br>
-        2-keine natürliche oder bequeme Position
+        ![Rückseite des Arms](images/BackOfTheArm.gif)<br>
+        **Rückseite des Arms**<br>
+        1. Kann die Startschaltfläche aus Zufall auslösen<br>
+        2 – Keine natürliche oder komfortable Position
     :::column-end:::
     :::column:::
     :::column-end:::
@@ -166,22 +166,22 @@ Wir haben die Benutzer Forschung mit verschiedenen Menüs und Standorten durchge
 
 ---
 
-## <a name="hand-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Hand Menü im mrtk (Mixed Reality Toolkit) für Unity
+## <a name="hand-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Handmenü im MRTK (Mixed Reality Toolkit) für Unity
 
-**[Mrtk](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts und Beispiel Szenen für das Hand Menü bereit. Das handeinschränintpalmup-Solver-Skript ermöglicht es Ihnen, alle Objekte mit verschiedenen konfigurierbaren Optionen an die Hände anzufügen. Die Hand Menü Beispiele von mrtk enthalten nützliche Optionen, wie z. b. eine flache Palme und eine Blick Anforderung zum Verhindern der falschen Aktivierung.
+**[MRTK stellt](https://github.com/Microsoft/MixedRealityToolkit-Unity)** Skripts und Beispielszenen für das Handmenü zur Verfügung. Mit dem Solverskript HandConstraintPalmUp können Sie alle Objekte mit verschiedenen konfigurierbaren Optionen an die Hände anfügen. Die Handmenübeispiele des MRTK enthalten nützliche Optionen wie flache Handfläche und Anvisanforderung, um eine falsche Aktivierung zu verhindern.
 
-* [Hand Menü-Documentationen](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
-* [Beispiel Szene für Hand Menü](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
+* [Hand Menu Documentations](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [Beispielszene für Handmenü](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
 
-Sie können die Menü Beispiele in hololens 2 mit der mrtk examples Hub-App ausprobieren.
+Sie können Handmenübeispiele in der HoloLens 2 mit der MRTK Examples Hub-App ausprobieren.
 
-* [Hand Menü Szene im mrtk-Beispiel-Hub](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
+* [Handmenüszene im MRTK-Beispielhub](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4?activetab=pivot:overviewtab)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

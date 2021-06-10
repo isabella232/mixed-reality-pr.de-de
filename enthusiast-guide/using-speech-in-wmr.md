@@ -1,6 +1,6 @@
 ---
 title: Verwenden von Sprache in Windows Mixed Reality
-description: Erfahren Sie, wie Sie mithilfe von Spracheingaben Befehle, 3D-Objekte und Diktat in Ihren Windows Mixed Reality steuern.
+description: Erfahren Sie, wie Sie mithilfe der Spracheingabe Befehle, 3D-Objekte und Diktat in Ihren Windows Mixed Reality steuern.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944677"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647018"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>Verwenden von Sprache in Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Haben Sie Probleme mit Spracherkennung? [Hilfe erhalten](using-wmr-faq.yml#speec
 
 > [!NOTE]
 > * Wenn Die Spracherkennung aktiviert ist, Windows Mixed Reality immer ab. Wenn Sie mit dem Internet verbunden sind, senden wir alles, was Sie sagen, an die Cloud, damit Microsoft Speech-Dienste noch mehr Ihrer Befehle erkennen können.
-> * Sprachbefehle werden nicht in allen Sprachen unterstützt. Erfahren Sie mehr
+> * Sprachbefehle werden nicht in allen Sprachen unterstützt. Weitere Informationen
 > * Bluetooth-Headsets und Lautsprecher werden in der Windows Mixed Reality.
 
 ## <a name="see-it-say-it"></a>Sehen, sagen
@@ -38,15 +38,15 @@ Verwenden Sie die folgenden Sprachbefehle in Windows Mixed Reality, um schneller
 
 | Aufgabe | Sagen Sie dies |
 | --- | --- |
-| Select | Sagen Sie "Select", um den Anviertcursor auf den Cursor zu bringen. Drehen Sie dann den Kopf, um den Cursor auf das zu positionieren, was Sie auswählen möchten, und sagen Sie erneut "auswählen". |
+| Select | Sagen Sie "select", um den Anvitätscursor auf die Anzeige zu bringen. Drehen Sie dann den Kopf, um den Cursor auf dem Auszuwählenden zu positionieren, und sagen Sie erneut "Auswählen". |
 | Öffnen des Startmenüs | Gehe zu Start |
-| Belassen einer immersiven App | Sagen Sie "Gehe zu Anfang", um das Menü für schnelle Aktionen aufzurufen, und sagen Sie dann "Mixed Reality Home". |
-| Ein-/Ausschalten der Taschenlampe | Sagen Sie "Gehe zu Anfang", um das Menü für schnelle Aktionen aufzurufen, und sagen Sie dann "Mixed Reality Home". |
-| Teleport | Kehren Sie zum gewünschten Ort zurück, und sagen Sie dann "Teleport". (Um eine präzisere Ausrichtung zu erhalten, sagen Sie zuerst "select", um den Anvisieren-Cursor auf den Cursor zu bringen, und dann "teleport".) |
-| Nach links oder rechts drehen | Nach links/rechts drehen |
-| 180 Grad drehen | Dreh dich um |
-| Vorankommen | Vorwärts-/Exemplarische Schritte |
-| Sichern | Zurück-/Rücklauf |
+| Verlassen einer immersiven App | Sagen Sie "Gehe zu Start", um das Menü für schnelle Aktionen zu öffnen, und sagen Sie dann "Mixed Reality Home". |
+| Taschenlampe aktivieren/deaktivieren | Taschenlampe ein-/ausschalten |
+| Teleport | Drehen Sie den Kopf auf den Ort, an dem Sie hingehen möchten, und sagen Sie dann "teleport". (Für eine präzisere Zielgruppenadressierung sagen Sie zuerst "select", um den Anvitätscursor auf die Anzeige zu bringen, und dann "teleport".) |
+| Nach links oder rechts drehen | Nach links/rechts abkn.) |
+| Turn 180 degrees (180 Grad drehen) | Dreh dich um |
+| Vorankommen | Vorwärts/Exemplarische Vorgehensweise |
+| Sichern | Zurück/Zurück gehen |
 | Nach links verschieben | Nach links verschieben/nach links gehen |
 | Nach rechts verschieben | Nach rechts verschieben/nach rechts gehen |
 
@@ -73,23 +73,23 @@ Betrachten Sie ein App-Fenster oder ein 3D-Objekt, um diese Befehle zu verwenden
 | Beenden der Anpassung | Fertig |
 | Ausblenden der App-Leiste für ein 3D-Objekt | Menü ausblenden |
 | Anzeigen der App-Leiste für ein 3D-Objekt | Menü "Anzeigen" |
-| Zurück zum vorherigen Bildschirm oder zur vorherigen Seite in einer App mit der Schaltfläche "Zurück"  | Zurück |
+| Wechseln Sie zurück zum vorherigen Bildschirm oder zur vorherigen Seite in einer App, die über die Schaltfläche Zurück wechseln verfügt.  | Zurück |
 | Verwenden Sie Ihren Xbox-Controller als Gamepad und nicht als Mixed Reality-Controller in der App, die Sie sich ansehen. | Als Gamepad verwenden |
-| Verwenden Sie Ihren Xbox-Controller als Mixed Reality-Controller (wenn Sie ihn als Gamepad verwendet haben). | Mit Anvisieren verwenden |
+| Verwenden Sie Ihren Xbox-Controller als Mixed Reality-Controller (wenn Sie ihn bereits als Gamepad verwendet haben). | Mit Anvisieren verwenden |
 
-## <a name="start-menu-commands"></a>Startmenü Befehle
+## <a name="start-menu-commands"></a>Startmenü Befehlen
 
-Sehen Sie sich die Startmenü an, um die folgenden Befehle zu verwenden:
+Sehen Sie sich die Startmenü an, um diese Befehle zu verwenden:
 
-| Aufgabe | Sagen Sie dies. |
+| Aufgabe | Sagen Sie dies |
 | --- | --- |
-| Zur Liste Alle Apps wechseln | Alle Apps |
+| Wechseln Sie zur Liste Alle Apps. | Alle Apps |
 | Nach oben oder unten beim Starten oder Alle Apps | Bild auf/Bild ab |
-| Wechseln Sie von Alle Apps zurück zu Startmenü. | Zurück |
+| Wechseln Sie zurück zu Startmenü von Alle Apps | Zurück |
 | Foto aufnehmen | Kamera |
 | Video ansehen | Video |
-| Anzeigen der Headsetansicht in Mixed Reality-Portal auf Ihrem Desktop | Vorschau |
-| Öffnen Sie das Volumesteuerelement beim Starten. | Ändern der Lautstärke |
+| Anzeigen der Headsetansicht in Mixed Reality-Portal Desktop | Vorschau |
+| Öffnen sie das Volumesteuersteuersystem beim Starten. | Ändern der Lautstärke |
 | Mute | Mute |
 | Unmute | Unmute |
 | Schließen sie die Startmenü | Schließen oder Abbrechen |
@@ -98,17 +98,17 @@ Sehen Sie sich die Startmenü an, um die folgenden Befehle zu verwenden:
 
 Sagen Sie "Hey Cortana", und verwenden Sie dann einen der folgenden Befehle:
 
-| Aufgabe | Sagen Sie dies |
+| Aufgabe | Sagen Sie dies. |
 | --- | --- |
 | Finden Sie heraus, was Sie Cortana sagen können. | Was kann ich sagen? |
-| Erhöhen/Verringern des Volumens | Aktivieren/Deaktivieren des Volumes |
-| Stummschalten/Stummschalten | Stummschalten/Stummschalten |
+| Erhöhen/Verringern des Volumens | Volume hoch-/herunterschalten |
+| Stummschalten/Aufheben der Stummschaltung | Stummschalten/Aufheben der Stummschaltung |
 | Starten einer App | Starten [App-Name] |
-| Öffnen Sie eine Website in Microsoft Edge | Öffnen Sie [Websitename] (z. B. "Open bing.com"). |
-| Foto aufnehmen | Aufnahme |
+| Öffnen einer Website in Microsoft Edge | Öffnen Sie [Websitename] (z. B. "bing.com öffnen"). |
+| Foto aufnehmen | Bild aufnehmen |
 | Starten der Aufzeichnung eines Videos | Starten der Aufzeichnung |
-| Aufzeichnung eines Videos beenden | Aufzeichnung beenden |
-| Zeit anzeigen | Wie spät ist es? |
+| Beenden der Aufzeichnung eines Videos | Aufzeichnung beenden |
+| Anzeigen der Zeit | Wie spät ist es? |
 | Öffnen des Startmenüs | Öffnen Startmenü |
 | Festlegen eines Timers | Festlegen eines Timers |
 | Festlegen einer Erinnerung | Festlegen einer Erinnerung |
@@ -144,15 +144,15 @@ Hier sind die Satzzeichenschlüsselwörter, die Sie verwenden können:
 * Punkt, Komma, Fragezeichen, Ausrufezeichen/Ausrufezeichen
 * Neue Zeile/neuer Absatz
 * Semikolon, Doppelpunkt
-* Anführungszeichen öffnen, Anführungszeichen schließen
-* Hashtag, Smiley/Smiley, Stirnrunzeln, Winky
+* Öffnen von Anführungszeichen, Schließen von Anführungszeichen
+* Hashtag, Smiley-/Smiley-Gesicht, Stirnrunzeln, Winky
 * Dollar, Prozent
 
-Manchmal ist es hilfreich, Dinge wie E-Mail-Adressen zu schreiben. Um beispielsweise vorschreiben zu können, würden Sie example@outlook.com "E X A M P L E at outlook dot-com" sagen.
+Manchmal ist es hilfreich, E-Mail-Adressen zu schreiben. Um beispielsweise zu diktieren, example@outlook.com würden Sie "E X A M P L E at outlook dot-com" sagen.
 
-Wählen Sie Fertig aus, um das Diktieren **zu beenden.**
+Um das Diktieren zu beenden, wählen Sie **Fertig** aus.
 
-## <a name="see-also"></a>Weitere Informationen:
+## <a name="see-also"></a>Siehe auch
 
 * [Die Community fragen](https://answers.microsoft.com)
-* [Wenden Sie sich an uns, um Support zu erhalten.](https://support.microsoft.com/contactus/)
+* [Wenden Sie sich an uns, um Support zu haben.](https://support.microsoft.com/contactus/)

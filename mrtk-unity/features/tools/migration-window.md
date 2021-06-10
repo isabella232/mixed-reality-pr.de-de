@@ -1,16 +1,16 @@
 ---
 title: Migrationsfenster
-description: Dokumentation zum Migrieren zu einem Update in MRTK
+description: Dokumentation zum Migrieren zu einem Update im MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 8e03848097c313a518f638de591f692ab71f0985
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a6e268dd28be2a3d485f937ec5b5ce6b1f29851f
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143876"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647124"
 ---
 # <a name="migration-window"></a>Migrationszeitfenster
 
@@ -21,7 +21,7 @@ Das Migrationsfenster ist ein Tool, mit dem Benutzer automatisch eine Teilmenge 
 
 ## <a name="usage"></a>Verwendung
 
-Um das Fenster zu öffnen, wählen Sie *Mixed Reality Toolkit Utilities* Migration Window  >  (Migrationsfenster für *Toolkit-Hilfsprogramme)*  >  *aus.* Sobald das Migrationsfenster geöffnet ist, können die Navigationsregisterkarte für den Auswahlmodus aktiviert werden, indem Sie die komponentenspezifische Implementierung des Migrationshandlers auswählen.  
+Um das Fenster zu öffnen, wählen **Sie** Mixed Reality Toolkit Utilities Migration Window  >  **(Migrationsfenster**  >  **für Toolkit-Hilfsprogramme)**  >  **aus.** Sobald das Migrationsfenster geöffnet ist, können die Navigationsregisterkarte für den Auswahlmodus aktiviert werden, indem Sie die komponentenspezifische Implementierung des Migrationshandlers auswählen.  
 
 ![Migrationsauswahlmodi](../images/migration-window/MRTK_Migration_Modes.png)
 
@@ -30,7 +30,7 @@ Um das Fenster zu öffnen, wählen Sie *Mixed Reality Toolkit Utilities* Migrati
 Wenn Sie die Registerkarte Objekte auswählen, wird das ObjektFeld aktiviert, in das der Benutzer alle Game-Objekte aus der aktuell geöffneten Szene oder prefabs aus dem zu migrierenden Projektordner ziehen und ablegen kann.
 Durch Drücken der *Schaltfläche entfernen (-),* die rechts neben dem aufgelisteten Objekt angezeigt wird, wird das Objekt aus der Auswahlliste entfernt.
 
-Sobald alle gewünschten Objekte in der Liste  enthalten sind, werden durch Drücken der Schaltfläche Migrieren die änderungen angewendet, die für die implementierung des ausgewählten Migrationshandlers erforderlich sind, auf alle Komponenten in der Auswahl, die mit der Implementierung übereinstimmen.
+Sobald alle gewünschten Objekte in der Liste  enthalten sind, werden durch Drücken der Schaltfläche Migrieren die änderungen angewendet, die für die ausgewählte Implementierung des Migrationshandlers erforderlich sind, auf alle Komponenten in der Auswahl, die mit der Implementierung übereinstimmen.
 
 ![Auswahlmigration](../images/migration-window/MRTK_Object_Migration.png)
 
@@ -46,7 +46,7 @@ Wenn Sie auf *die Schaltfläche* Migrieren klicken, wird die Komponente aktualis
 
 ![Migrieren eines vollständigen Projekts](../images/migration-window/MRTK_Project_Migration.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Aktualisieren von früheren Versionen](../../updates-deployment/updating.md)
 - [Microsoft Mixed Reality Toolkit-Releases](../../release-notes/mrtk-26-release-notes.md)

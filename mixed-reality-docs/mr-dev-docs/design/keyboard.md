@@ -1,31 +1,31 @@
 ---
 title: Tastatur
-description: Erfahren Sie, wie Sie die System Tastatur mit dem Mixed Reality Toolkit aufrufen und verwenden.
+description: Erfahren Sie, wie Sie die Systemtastatur mithilfe des Mixed Reality Toolkits aufrufen und verwenden.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Tastatur, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: d20fabb2536b028ce4c48aac84592bbdc3a0c291
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Tastatur, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 096a408a8106ec5ee6a820865e158c3cd019f702
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300435"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600139"
 ---
 # <a name="keyboard"></a>Tastatur
 
 ![Tastatur](images/UX_Hero_Keyboard.jpg)
 
-Ihre gemischte Reality-Anwendung kann die System Tastatur jederzeit aufrufen, was sich entsprechend den Funktionen der Zielplattform verhält. Die Tastatur auf hololens 2 unterstützt z. b. direkte Hand Interaktionen, während hololens (1st Gen)-Tastaturen den Blick und die Luft Abzweigungen unterstützen.
+Ihre Mixed Reality-Anwendung kann jederzeit die Systemtastatur aufrufen, die sich entsprechend den Funktionen der Zielplattform verhält. Beispielsweise unterstützt die Tastatur auf HoloLens 2 direkte Handinteraktionen, während HoloLens-Tastaturen (1. Generation) Anvits und Tippen in die Luft unterstützen.
 
 <br>
 
 ---
 
-## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>System Tastatur in mrtk (Mixed Reality Toolkit) für Unity
+## <a name="system-keyboard-in-mrtk-mixed-reality-toolkit-for-unity"></a>Systemtastatur im MRTK (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-System Tastatur](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
+* [MRTK – Systemtastatur](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/system-keyboard)
 
 <br>
 
@@ -33,12 +33,12 @@ Ihre gemischte Reality-Anwendung kann die System Tastatur jederzeit aufrufen, wa
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Journey folgen, die wir gerade angelegt haben, besteht die nächste Aufgabe darin, Ihre Anwendung auf einem Gerät oder Emulator bereitzustellen.
+Wenn Sie die von uns bereitgestellte Unity-Entwicklungsreise ausführen, besteht Ihre nächste Aufgabe darin, Ihre Anwendung auf einem Gerät oder Emulator bereitzustellen.
 
 > [!div class="nextstepaction"]
-> [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
+> [Bereitstellen in HoloLens oder Windows Mixed Reality immersive Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

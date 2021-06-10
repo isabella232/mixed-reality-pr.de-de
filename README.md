@@ -1,61 +1,61 @@
 ---
-ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
-ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
+ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98181737"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647015"
 ---
 ![Virtueller Kolibri mit menschlicher Hand](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
-Willkommen bei der Mixed Reality-Dokumentation, dem Ort für alle Dinge, Mr, VR und AR bei Microsoft!
+Willkommen bei Mixed Reality Dokumentation, der Ort für alles, was MR, VR und AR bei Microsoft ist!
 
 ## <a name="contributing"></a>Mitwirken
 
-Wenn Sie Dokumentations Inhalte bereitstellen oder aktualisieren, stellen Sie bitte Ihre Pull Requests als Ziel für den korrekten untergeordneten docset bereit (Mr-dev-docs, Enthusiast-Guide usw.). Neue Mitwirkende sollten unsere ausführlicheren Beitrags Richtlinien für jedes teildocset ansehen:
+Wenn Sie Dokumentationsinhalte mitwirken oder aktualisieren, stellen Sie sicher, dass Ihre Pull Requests auf das richtige Unterdokument (mr-dev-docs, fans-guide und so weiter) abzielen. Neue Mitwirkende sollten sich unsere ausführlicheren Richtlinien für Beiträge für jede Unterdokdation durchlesen:
 
-* [Mitwirkende gemischte Realität](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [Leitfaden für VR-Enthusiasten](mixed-reality-docs/enthusiast-guide/CONTRIBUTING.md)
+* [Mixed Reality Mitwirkende](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
+* [Vr-Guide-Mitwirkende](enthusiast-guide/CONTRIBUTING.md)
 
-Verwenden Sie bei Problemen mit der Dokumentation die Fußzeilen unten in jedem Dokument, oder senden Sie Sie direkt an [microsoftdocs/Mixed-Reality/Issues](https://github.com/MicrosoftDocs/mixed-reality/issues).
+Verwenden Sie für docs-bezogene Probleme die Fußzeilen unten in jedem Dokument, oder senden Sie direkt an [MicrosoftDocs/mixed-reality/issues](https://github.com/MicrosoftDocs/mixed-reality/issues).
 
-Sie können jederzeit Fragen zu Beitrags Richtlinien oder-Prozessen an Harrison Ferrone oder Sean kerawala über Teams oder e-Mails senden. 
+Sie können gerne Fragen zu Beitragsrichtlinien oder -prozessen per Teams oder per E-Mail an Daseinsen oder Sean Kerawala senden. 
 
 ## <a name="getting-started"></a>Erste Schritte 
 
-Jeder Pfad über unsere Dokumentation verfügt über eine zusammengestellte Journey, die Ihnen hilft, Ihre Hilfe zu finden. Egal, ob es sich um die Entwicklung, Entwicklung oder Verteilung Ihrer Apps auf der ganzen Welt handelt, wir haben Sie abgedeckt. 
+Jeder Pfad durch unsere Dokumentation verfügt über eine zusammengestellte Reise, die Ihnen hilft, Ihre Fußzeile zu finden. Unabhängig davon, ob es sich um Entwurf, Entwicklung oder verteilung Ihrer Apps auf die Welt geht, haben wir Sie abgedeckt. 
 
-### <a name="mixed-reality-for-hololens"></a>Gemischte Realität für hololens
+### <a name="mixed-reality-for-hololens"></a>Mixed Reality für HoloLens
 
-Es wird empfohlen, mit den **Grundlagen von Mixed Reality** zu beginnen und von dort aus zu wechseln:
+Es wird empfohlen, mit Mixed Reality **grundlagen zu beginnen** und von dort aus weiter zu gehen:
 
-* [Einstieg in Mixed Reality](mixed-reality-docs/mr-dev-docs/discover/get-started-with-mr.md)
+* [Erste Schritte mit Mixed Reality](mixed-reality-docs/mr-dev-docs/discover/get-started-with-mr.md)
 
-Wenn Sie an der **Entwurfs** Seite interessiert sind:
+Wenn Sie an der Entwurfsseite **der** Dinge interessiert sind:
 
 * [Einstieg in Entwerfen und Prototyping](mixed-reality-docs/mr-dev-docs/design/design.md)
 
-Wenn Sie bereit sind, mit der **Entwicklung** zu beginnen, wählen Sie die Engine und das Gerät aus, die Ihren Anforderungen am besten entspricht:
+Wenn Sie bereit sind, mit der Entwicklung **von zu** beginnen, wählen Sie die Engine und das Gerät aus, die Ihren Anforderungen am besten entsprechen:
 
 * [Einführung in die Mixed Reality-Entwicklung](mixed-reality-docs/mr-dev-docs/develop/development.md)
 
-Wählen Sie für Engine-spezifischen Inhalt einen der folgenden Pfade aus:
+Wählen Sie für enginespezifische Inhalte einen der folgenden Pfade aus:
 
 * [Unity-Entwicklung – Übersicht](mixed-reality-docs/mr-dev-docs/develop/unity/unity-development-overview.md)
 * [Ureal-Entwicklung – Übersicht](mixed-reality-docs/mr-dev-docs/develop/unreal/unreal-development-overview.md)
-* [Native (openxr)-Entwicklung (Übersicht)](mixed-reality-docs/mr-dev-docs/develop/native/directx-development-overview.md)
+* [Übersicht über die native (OpenXR)-Entwicklung](mixed-reality-docs/mr-dev-docs/develop/native/directx-development-overview.md)
 
-Wenn Sie endlich bereit sind, Ihre APP an Ihre Benutzer zu übernehmen:
+Wenn Sie zum Schluss bereit sind, Ihre App für Ihre Benutzer verfügbar zu machen:
 
-* [Verteilen von apps](mixed-reality-docs/mr-dev-docs/distribute/distribute-overview.md)
+* [Verteilen Ihrer Apps](mixed-reality-docs/mr-dev-docs/distribute/distribute-overview.md)
 
 ### <a name="vr-enthusiast-guide"></a>VR-Handbuch für Enthusiasten
 
-Wenn Sie mit VR-Geräten noch nicht vertraut sind, empfehlen wir Ihnen, mit unserem Leitfaden für Anfänger zu beginnen:
+Wenn Sie noch keine Erfahrung mit VR-Geräten haben, empfehlen wir Ihnen, mit unserem Anfängerhandbuch zu beginnen:
 
 * [Starten Sie Ihre VR-Journey](enthusiast-guide/vr-journey.md)
 
-## <a name="contributor-license-agreement-cla"></a>Lizenzvereinbarung für Mitwirkende (CLA)
+## <a name="contributor-license-agreement-cla"></a>Lizenzvertrag für Mitwirkende (CLA)
 
 Beiträge und Vorschläge für dieses Projekt sind willkommen. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. Einzelheiten dazu finden Sie unter [https://cla.opensource.microsoft.com](https://cla.opensource.microsoft.com).
 

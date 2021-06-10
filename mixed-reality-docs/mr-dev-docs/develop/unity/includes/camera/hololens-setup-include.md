@@ -1,68 +1,68 @@
 ---
-ms.openlocfilehash: 7470690a96380184ead7319d4461005042c6db82
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636301"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748482"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Führen Sie dieses [Schritt-für-Schritt-Tutorial](../../tutorials/mr-learning-base-01.md) aus, um das Mixed Reality Toolkit in Ihrem Unity-Projekt hinzuzufügen und automatisch zu konfigurieren. Es ist auch möglich, direkt mit der [mixedrealityplayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) -Klasse von mrtk für Unity zu arbeiten und die **zielskala** auf **World** festzulegen:
+Befolgen Sie dieses [Schritt-für-Schritt-Tutorial,](../../tutorials/mr-learning-base-01.md) um Mixed Reality Toolkit in Ihrem Unity-Projekt hinzuzufügen und automatisch zu konfigurieren. Es ist auch möglich, direkt mit der [MixedRealityPlayspace-Klasse](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) von MRTK für Unity zu arbeiten und die **Zielskala** auf **World** festzulegen:
 
-![Fenster "mrtk-Einstellungen"](../../images/mrtk-target-scale.png)
+![MRTK-Einstellungsfenster](../../images/mrtk-target-scale.png)
 
-Mrtk sollte die Position von Playspace und Kamera automatisch verarbeiten, aber es ist gut, eine Überprüfung durchzuführen:
+MRTK sollte die Position des Playspace und der Kamera automatisch behandeln, aber es ist gut, folgendes zu überprüfen:
 
-![Mrtk-Playspace](../../images/mrtk-playspace.png)
+![MRTK-Playspace](../../images/mrtk-playspace.png)
 
-1. Erweitern Sie im Bereich **Hierarchie** das " **mixedrealityplayspace** "-gameobject, und suchen Sie nach dem untergeordneten Objekt der **Hauptkamera** .
-2. Suchen Sie im **Inspektor** -Panel die **Transformations** Komponente, und ändern Sie die **Position** in **(X: 0, Y: 0, Z: 0)** .
+1. Erweitern Sie im **Hierarchiebereich** das **GameObject MixedRealityPlayspace,** und suchen Sie nach dem untergeordneten **Hauptkameraobjekt.**
+2. Suchen Sie im **Inspektorbereich** nach der **Komponente Transformieren,** und ändern Sie die **Position** in **(X: 0, Y: 0, Z: 0).**
 
 # <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Legen Sie den nach Verfolgungs Ursprungs Modus für das [xrinputsubsystem](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html)fest. Nachdem Sie das Subsystem erhalten haben, wenden Sie sich an [trysettrackingoriginmode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html):
+Legen Sie den Nachverfolgungsursprungsmodus im [XRInputSubsystem fest.](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.html) Rufen Sie nach dem Abrufen des Subsystems [TrySetTrackingOriginMode](https://docs.unity3d.com/Documentation/ScriptReference/XR.XRInputSubsystem.TrySetTrackingOriginMode.html)auf:
 
 ```cs
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Unbounded); // Recommendation for OpenXR
 ```
 
-Sie können [arsession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) für hololens-Anwendungen verwenden, die mit Anker und Arkit/Arcore besser funktionieren.
+Sie können [ARSession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) für HoloLens-Anwendungen verwenden, was mit Ankern und ARKit/ARCore besser funktioniert.
 
 ![AR-Sitzung in der Hierarchie](../../images/xrsdk-arsession.png)
 
 > [!IMPORTANT]
-> Für AR-Sitzung und verwandte Funktionen muss AR Foundation installiert sein.
+> AR-Sitzung und zugehörige Features müssen AR Foundation installiert sein.
 
-Es ist auch möglich, die Kamera Änderungen manuell ohne die Verwendung von "arsession" anzuwenden:
+Es ist auch möglich, die Kameraänderungen manuell anzuwenden, ohne ARSession zu verwenden:
 
-1. Auswählen der **Hauptkamera** im **Hierarchie** Panel
-1. Suchen Sie im **Inspektor** -Panel die **Transformations** Komponente, und ändern Sie die **Position** in **(X: 0, Y: 0, Z: 0)** .
+1. Auswählen der **Hauptkamera** im **Hierarchiebereich**
+1. Suchen Sie im **Inspektorbereich** nach der **Komponente Transformieren,** und ändern Sie die **Position** in **(X: 0, Y: 0, Z: 0).**
 
-   ![Kamera im Inspektor-Bereich in Unity](../../images/maincamera-350px.png)  
-   *Kamera im Inspektor-Bereich in Unity*
+   ![Kamera im Inspektorbereich in Unity](../../images/maincamera-350px.png)  
+   *Kamera im Inspektorbereich in Unity*
 
-1. Hinzufügen eines **trackedtargedriver** zur **Hauptkamera**
+1. Hinzufügen eines **TrackedPoseDriver** zur **Hauptkamera**
 
 # <a name="legacy-wsa"></a>[Legacy-WSA](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. Auswählen der **Hauptkamera** im **Hierarchie** Panel
-1. Suchen Sie im **Inspektor** -Panel die **Transformations** Komponente, und ändern Sie die **Position** in **(X: 0, Y: 0, Z: 0)** .
+1. Auswählen der **Hauptkamera** im **Hierarchiebereich**
+1. Suchen Sie im **Inspektorbereich** nach der **Komponente Transformieren,** und ändern Sie die **Position** in **(X: 0, Y: 0, Z: 0).**
 
-   ![Kamera im Inspektor-Bereich in Unity](../../images/maincamera-350px.png)  
-   *Kamera im Inspektor-Bereich in Unity*
+   ![Kamera im Inspektorbereich in Unity](../../images/maincamera-350px.png)  
+   *Kamera im Inspektorbereich in Unity*
 
-1. Wechseln Sie zum Abschnitt **andere Einstellungen** der **Windows Store-Player-Einstellungen** .
+1. Wechseln Sie zum Abschnitt **Andere Einstellungen** der Windows **Store Player-Einstellungen.**
 1. Wählen Sie **Windows Mixed Reality** als Gerät aus, das in älteren Versionen von Unity als **Windows Holographic** aufgeführt werden kann.
-1. **Unterstützte virtuelle Realität** auswählen
+1. Wählen Sie **Virtual Reality Supported (Unterstützte Virtuelle Realität) aus.**
 
-Da das Hauptkamera Objekt automatisch als Kamera gekennzeichnet wird, ermöglicht Unity die gesamte Bewegung und Übersetzung.
+Da das Hauptkameraobjekt automatisch als Kamera gekennzeichnet wird, unterstützt Unity alle Bewegungen und Übersetzungen.
 
 >[!NOTE]
->Diese Einstellungen müssen in jeder Szene der APP auf die Kamera angewendet werden.
+>Diese Einstellungen müssen in jeder Szene Ihrer App auf die Kamera angewendet werden.
 >
->Wenn Sie in Unity eine neue Szene erstellen, enthält diese standardmäßig ein Hauptkamera-gameobject in der Hierarchie, die die Kamera Komponente enthält, die Einstellungen aber möglicherweise nicht ordnungsgemäß angewendet werden.
+>Wenn Sie eine neue Szene in Unity erstellen, enthält sie standardmäßig ein Hauptkamera-GameObject in der Hierarchie, das die Kamerakomponente enthält, aber möglicherweise nicht ordnungsgemäß auf die Einstellungen angewendet wird.

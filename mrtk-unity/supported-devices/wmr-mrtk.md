@@ -1,24 +1,33 @@
 ---
-title: Bereitstellen auf Hololens- und WMR-Geräten
+title: Bereitstellen auf Hololens- und WMR-Headsets
 description: Dokumentation zum Erstellen und Bereitstellen von Apps auf verschiedenen Geräten.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Visual Studio
-ms.openlocfilehash: ec66c6ccb8cf1c702fed804230f5cf3ca0526139
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852372"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441159"
 ---
-# <a name="building-and-deploying-mrtk-uwp"></a>Erstellen und Bereitstellen von MRTK (UWP)
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Bereitstellen auf Hololens- und WMR-Headsets
 
-Um eine App auf einem Gerät als eigenständige App (für HoloLens, Android, iOS usw.) auszuführen, muss der Schritt zum Erstellen und Bereitstellen im Unity-Projekt ausgeführt werden. Das Entwickeln und Bereitstellen einer App, die MRTK verwendet, ist wie das Entwickeln und Bereitstellen jeder anderen Unity-App. Es gibt keine MRTK-spezifischen Anweisungen. Im Folgenden finden Sie ausführliche Schritte zum Erstellen und Bereitstellen einer Unity-App für HoloLens. Weitere Informationen zum Erstellen für andere Plattformen finden Sie unter [Veröffentlichen von Builds](https://docs.unity3d.com/Manual/PublishingBuilds.html).
+Es gibt zwei Möglichkeiten zum Bereitstellen von Anwendungen, die mit MRTK erstellt wurden, auf Ihrem Windows-Gerät: die Universelle Windows-Plattform (UWP) und die eigenständige Plattform. Anwendungen, die für HoloLens 1 oder HoloLens 2 entwickelt wurden, müssen UWP als Ziel verwenden, während Anwendungen, die für WMR-Headsets erstellt wurden, UWP oder eigenständig als Ziel verwenden können.
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>Erstellen und Bereitstellen von MRTK für HoloLens 1, HoloLens 2 und WMR-Headsets (UWP)
 
 Anweisungen zum Erstellen und Bereitstellen für **HoloLens 1** und **HoloLens 2** (UWP) finden Sie unter Erstellen Ihrer Anwendung [auf dem Gerät.](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device) Mit diesen Schritten können Sie auch für **WMR-Headsets bereitstellen.**
+
+> [!NOTE]
+> Wenn Sie Ihre Anwendung auf Ihrem Gerät in Visual Studio bereitstellen, müssen Sie Visual Studio je nach Gerät etwas anders konfigurieren. Die Konfigurationen lauten wie folgt:
+>
+>| Plattform | Konfiguration | Aufbau | Ziel |
+|---|---|---|---|
+| HoloLens 2 | Release oder Master | ARM64 | Gerät |
+| HoloLens 1 | Release oder Master | x86 | Gerät |
+| WMR-Headsets | Release oder Master | x64 | Lokaler Computer |
 
 **Tipp:** Beim Erstellen für HoloLens 1, HoloLens 2 oder WMR wird empfohlen, dass die Buildeinstellungen "Ziel-SDK-Version" und "Mindestplattformversion" wie in der folgenden Abbildung aussehen:
 
@@ -50,9 +59,9 @@ Bei Verwendung des XR-Plug-Ins:
 >
 > Wenn die ARM-Architektur erforderlich ist, navigieren Sie zu **Bearbeiten > Projekteinstellungen, Player**, und deaktivieren Sie im Menü **Weitere Einstellungen** die Option **Grafikaufträge**. Durch das Deaktivieren von **Grafikaufträge** kann die App mithilfe der ARM-Buildarchitektur für Unity 2019.3.x bereitgestellt werden, doch empfohlen wird ARM64.
 
-## <a name="building-and-deploying-mrtk-standalone"></a>Erstellen und Bereitstellen von MRTK (eigenständig)
+## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>Erstellen und Bereitstellen von MRTK für WMR-Headsets (eigenständig)
 
-Eigenständige MrTK-Builds können auf WMR-Headsets verwendet werden. Ein eigenständiger Build für ein WMR-Headset erfordert die folgenden zusätzlichen Schritte:
+Eigenständige MRTK-Builds können auf WMR-Headsets verwendet werden. Ein eigenständiger Build für ein WMR-Headset erfordert die folgenden zusätzlichen Schritte:
 
 > [!NOTE]
 > Das XR SDK von Unity unterstützt auch native WMR in eigenständigen Builds, erfordert aber kein SteamVR- oder WMR-Plug-In. Diese Schritte sind für die Legacy-XR von Unity erforderlich.

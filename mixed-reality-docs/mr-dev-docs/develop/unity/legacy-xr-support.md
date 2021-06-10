@@ -1,56 +1,56 @@
 ---
-title: Verwenden der integrierten Unterstützung von XR
-description: Erfahren Sie, wie Sie Ihre Unity-Projekte mit und ohne mrtk mithilfe der vordefinierten Unterstützung von XR einrichten.
+title: Verwenden der integrierten Legacy-XR-Unterstützung
+description: Erfahren Sie, wie Sie Ihre Unity-Projekte mit und ohne MRTK mithilfe der integrierten Legacy-XR-Unterstützung einrichten.
 author: hferrone
 ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
-keywords: Unity, gemischte Realität, Entwicklung, Einstieg, neues Projekt, Windows Mixed Reality, UWP, XR, Leistung, Legacy, mrtk
-ms.openlocfilehash: 09989b3b2b7fa1d351235a2cc9b885d4795dc2b6
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+keywords: Unity, Mixed Reality, Entwicklung, erste Schritte, neues Projekt, Windows Mixed Reality, UWP, XR, Leistung, Legacy, mrtk
+ms.openlocfilehash: b5faa48ec913c5095b12361318729b6f14276f30
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088529"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743502"
 ---
-# <a name="using-legacy-built-in-xr-support"></a>Verwenden der integrierten Unterstützung von XR
+# <a name="using-legacy-built-in-xr-support"></a>Verwenden der integrierten Legacy-XR-Unterstützung
 
-## <a name="setting-up-your-project-with-mrtk"></a>Einrichten Ihres Projekts mit mrtk
+## <a name="setting-up-your-project-with-mrtk"></a>Einrichten Ihres Projekts mit MRTK
 
 MRTK für Unity bietet ein plattformübergreifendes Eingabesystem, Grundlagenkomponenten und gemeinsame Bausteine für räumliche Interaktionen. MRTK, Version 2, soll die Anwendungsentwicklung für Microsoft HoloLens, für immersive Windows Mixed Reality-Headsets (VR) und für die OpenVR-Plattform beschleunigen. Das Projekt ist darauf ausgerichtet, die Einstiegshürden zum Erstellen von Mixed Reality-Anwendungen zu verringern, und einen Beitrag für die Community auf diesem stetig wachsenden Gebiet zu leisten.
 
 > [!div class="nextstepaction"]
-> [Testen Sie unsere mrtk-Tutorials](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=wsa)
+> [Probieren Sie unsere MRTK-Tutorials aus](./tutorials/mr-learning-base-02.md?tabs=wsa)
 
-Weitere Featuredetails finden Sie in [der Dokumentation zu mrtk](/windows/mixed-reality/mrtk-unity) .
+Weitere Details zu Features finden Sie in der [MRTK-Dokumentation](/windows/mixed-reality/mrtk-unity).
 
-## <a name="manual-setup-without-mrtk"></a>Manuelles Setup ohne mrtk
+## <a name="manual-setup-without-mrtk"></a>Manuelle Einrichtung ohne MRTK
 
-Wenn Sie auf Desktop VR abzielen, empfiehlt es sich, die eigenständige PC-Plattform zu verwenden, die für ein neues Unity-Projekt standardmäßig ausgewählt ist:
+Wenn Sie desktop VR als Ziel verwenden möchten, empfehlen wir, die pc Standalone Platform zu verwenden, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
 
-![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit PC, Mac & eigenständige Plattform hervorgehoben](images/wmr-config-img-3.png)
+![Screenshot des Fensters "Buildeinstellungen", das im Unity-Editor geöffnet ist, wobei PC, Mac & eigenständige Plattform hervorgehoben ist](images/wmr-config-img-3.png)
 
-Wenn Sie hololens 2 als Ziel verwenden, müssen Sie zum universelle Windows-Plattform wechseln:
+Wenn Sie HoloLens 2 als Ziel haben, müssen Sie zum Universelle Windows-Plattform wechseln:
 
-1.  **Datei > Buildeinstellungen auswählen...**
-2.  Wählen Sie in der Platt Form Liste **universelle Windows-Plattform** aus, und wählen Sie **Plattform wechseln**
-3.  **Architektur** auf **Arm 64** festlegen
-4.  **Zielgerät** auf **hololens** festlegen
-5.  **Buildtyp** auf **D3D** festlegen
-6.  **UWP SDK** auf **Letztes installiert** festlegen
-7.  **Buildkonfiguration** auf **Release** festlegen, da beim Debuggen bekannte Leistungsprobleme auftreten
+1.  Wählen Sie **Datei > Buildeinstellungen... aus.**
+2.  Wählen Sie **Universelle Windows-Plattform** in der Liste Plattform und dann **Plattform wechseln** aus.
+3.  Legen Sie **Architektur** auf **ARM 64** fest
+4.  Legen Sie **Zielgerät** auf **HoloLens** fest
+5.  Legen Sie **Buildtyp** auf **D3D** fest
+6.  Legen Sie **UWP SDK** auf **Zuletzt installiert** fest
+7.  Legen Sie **Buildkonfiguration** auf **Release** fest, da beim Debuggen bekannte Leistungsprobleme auftreten.
 
-![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor öffnen mit hervorgehobener universelle Windows-Plattform](images/wmr-config-img-4.png)
+![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener Universelle Windows-Plattform](images/wmr-config-img-4.png)
 
-Nachdem Sie Ihre Plattform festgelegt haben, müssen Sie Unity mitteilen, dass Sie beim Exportieren eine [immersive Ansicht](../../design/app-views.md) anstelle einer 2D-Ansicht erstellen soll.
+Nachdem Sie Ihre Plattform festgelegt haben, müssen Sie Unity mitteilen, dass beim Exportieren eine [immersive Ansicht](../../design/app-views.md) anstelle einer 2D-Ansicht erstellt werden soll.
 
 > [!CAUTION]
-> Legacy XR ist in Unity 2019 veraltet und wurde in Unity 2020 entfernt.
+> Legacy-XR ist in Unity 2019 veraltet und wurde in Unity 2020 entfernt.
 
-1. **Player Einstellungen** öffnen... aus den **Buildeinstellungen... Fenster** und erweitern Sie die Gruppe " **XR-Einstellungen** ".
-2. Wählen Sie im Abschnitt " **XR-Einstellungen** " die Option **virtuelle Realität unterstützt** aus, um die Liste Virtual Reality-Geräte
-3. Festlegen des **tiefen Formats** auf eine **16-Bit-Tiefe** und Aktivieren der **tiefen Puffer Freigabe**
-4. Festlegen des **Stereo Renderingmodus** auf eine **Einzel Pass Instanz**
-5. Wählen Sie **WSA Holographic Remoting unterstützt** aus, wenn Sie Holographic Remoting verwenden möchten. 
+1. Öffnen **Sie Playereinstellungen...** aus den **Buildeinstellungen... Fenster** und Erweitern der Gruppe **"XR-Einstellungen"**
+2. Wählen Sie im Abschnitt **XR-Einstellungen** die Option **Virtual Reality Unterstützt** aus, um die Liste Virtual Reality-Geräte hinzuzufügen.
+3. Festlegen des **Tiefenformats** auf **16-Bit-Tiefe** und Aktivieren der **Tiefenpufferfreigabe**
+4. Festlegen **des Stereorenderingmodus** auf **eine Einzeldurchlaufinstanz**
+5. Wählen Sie **WSA Holographic Remoting Supported (Unterstütztes WSA Holographic Remoting)** aus, wenn Sie Holographic Remoting verwenden möchten. 
 
-![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobenem Abschnitt "Player Einstellungen"](images/wmr-config-img-9.png)
+![Screenshot: Geöffnetes Fenster "Projekteinstellungen" im Unity-Editor mit hervorgehobenen Player-Einstellungen](images/wmr-config-img-9.png)

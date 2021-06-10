@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: 0dfbe2cda2779c2eafe54b01d2d28e703444fd1a
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 76f72ac81b677acabf98444f626b7a6b908c29fb
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636368"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748529"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-Mrtk verarbeitet bestimmte Kameraeinstellungen automatisch basierend auf der [Konfiguration im Kamerasystem Profil](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings).
+MRTK verarbeitet bestimmte Kameraeinstellungen automatisch, basierend auf der [Konfiguration im Kamerasystemprofil.](/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings)
 
-**Namespace:** *Microsoft. mixedreality. Toolkit. camerasystem*<br>
-**Typ:** *mixedrealitycamerasystem*
+**Namespace:** *Microsoft.MixedReality.Toolkit.CameraSystem*<br>
+**Typ:** *MixedRealityCameraSystem*
 
-Zum Überprüfen der Verfügbarkeit der Kamera hat das mixedrealitycamera-System [eine- `IsOpaque` Eigenschaft](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque).
+Um die Nichtdurchsichtigkeit der Kamera zu überprüfen, verfügt das MixedRealityCamera-System über [die `IsOpaque` Eigenschaft](/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque).
 
 ```cs
 CoreServices.CameraSystem.IsOpaque;
@@ -23,15 +23,15 @@ CoreServices.CameraSystem.IsOpaque;
 # <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-**Namespace:** *unityengine. XR*<br>
-**Typ:** *xrdisplaysubsystem*
+**Namespace:** *UnityEngine.XR*<br>
+**Typ:** *XRDisplaySubsystem*
 
-Sie können Skriptcode verwenden, um zur Laufzeit zu bestimmen, ob das Headset immersiv oder holografisch ist, indem Sie [displayopaque](https://docs.unity3d.com/ScriptReference/XR.XRDisplaySubsystem-displayOpaque.html) auf dem aktiv ausgelaufenden [xrdisplaysubsystem](https://docs.unity3d.com/ScriptReference/XR.XRDisplaySubsystem.html)überprüfen.
+Sie können Skriptcode verwenden, um zur Laufzeit zu bestimmen, ob das Headset immersiver oder holografischer Ist, indem Sie [displayOpaque](https://docs.unity3d.com/ScriptReference/XR.XRDisplaySubsystem-displayOpaque.html) auf dem aktiv ausgeführten [XRDisplaySubsystem](https://docs.unity3d.com/ScriptReference/XR.XRDisplaySubsystem.html)überprüfen.
 
 # <a name="legacy-wsa"></a>[Legacy-WSA](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-**Namespace:** *unityengine. XR. WSA*<br>
-**Typ:** *holographicsettings*
+**Namespace:** *UnityEngine.XR.WSA*<br>
+**Typ:** *HolographicSettings*
 
-Sie können Skriptcode verwenden, um zur Laufzeit zu bestimmen, ob das Headset durch das Überprüfen von [holographicsettings. isdisplayopisch](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html)durch ein immersives oder Holographic ist.
+Sie können Skriptcode verwenden, um zur Laufzeit zu bestimmen, ob das Headset immersive oder holographic ist, indem Sie [HolographicSettings.IsDisplayOpaque](https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html)überprüfen.

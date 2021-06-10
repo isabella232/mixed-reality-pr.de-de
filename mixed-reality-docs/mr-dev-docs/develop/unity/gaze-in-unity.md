@@ -1,29 +1,29 @@
 ---
 title: Anvisieren in Unity
-description: Erfahren Sie, wie Sie die Blickwinkel Eingabe als primäre Methode für Benutzer verwenden können, um die Hologramme, die Ihre APP in gemischter Realität erstellt, als Ziel
+description: Erfahren Sie, wie Sie die Eingabe zum Anvieren als primäre Möglichkeit für Benutzer verwenden, die Hologramme zu verwenden, die Ihre App in Mixed Reality erstellt.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Eye-Blick, Head-Eye, Unity, Hologram, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Anvisiert mit den Augen, Anvieren mit dem Kopf, Unity, Hologramm, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300365"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600149"
 ---
-# <a name="head-gaze-in-unity"></a>Kopf schauen in Unity
+# <a name="head-gaze-in-unity"></a>Anvischen mit dem Kopf in Unity
 
-Der [Blick](../../design/gaze-and-commit.md) ist die primäre Methode für Benutzer, die auf die von ihrer app in [gemischter Realität](../../discover/mixed-reality.md)erstellten [Hologramme](../../discover/hologram.md) abzielen.
+[Das Anvieren](../../design/gaze-and-commit.md) ist die primäre Möglichkeit für Benutzer, [Hologramme](../../discover/hologram.md) als Ziel zu verwenden, die Ihre App in [Mixed Reality](../../discover/mixed-reality.md)erstellt.
 
-## <a name="implementing-head-gaze"></a>Implementieren von Head-Gaze
+## <a name="implementing-head-gaze"></a>Implementieren des Anvingens mit dem Kopf
 
-Konzeptionell bestimmen Sie den [Kopf Blick](../../design/gaze-and-commit.md) , indem Sie einen Strahl vorwärts aus dem Headset des Benutzers projizieren, um zu sehen, was er trifft. In Unity werden die Head-Position und die Richtung des Benutzers über die [Kamera](camera-in-unity.md)verfügbar gemacht, insbesondere [unityengine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) und [unityengine. Camera. Main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [Transform. Position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
+Konzeptionell bestimmen Sie das [Anverfolgen](../../design/gaze-and-commit.md) mit dem Kopf, indem Sie einen Strahl nach vorn vom Headset des Benutzers pro projektieren, um zu sehen, was er trifft. In Unity werden die Kopfposition und -richtung des Benutzers über die [Kamera](camera-in-unity.md)verfügbar gemacht, insbesondere [UnityEngine.Camera.main.](https://docs.unity3d.com/ScriptReference/Camera-main.html) [transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) und [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html). [transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).
 
-Durch den Aufruf von " [Physik. raycast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) " erhalten Sie ein [raycasthit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) , das Informationen über die Kollision enthält, einschließlich des 3D-Kollisions Punkts und des anderen gameobject, das das Head-Gaze-Ray trifft.
+Wenn Sie ["Physics.RayCast"](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) aufrufen, erhalten Sie ein [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) mit Informationen zum Konflikt, einschließlich des 3D-Kollisionspunkts und des anderen GameObject, auf das der Anverfolger mit dem Kopf strahlt.
 
-### <a name="example-implement-head-gaze"></a>Beispiel: Implementieren des Haupt Blicks
+### <a name="example-implement-head-gaze"></a>Beispiel: Implementieren des Anvingens mit dem Kopf
 
 ```cs
 void Update()
@@ -45,19 +45,19 @@ void Update()
 
 ### <a name="best-practices"></a>Bewährte Methoden
 
-Obwohl das obige Beispiel ein einzelnes raycast aus der Update-Schleife auslöst, um das Ziel zu finden, auf dem sich die Kopfzeile des Benutzers befindet, empfiehlt es sich, ein einzelnes-Objekt zum Verwalten aller Head-Blick-Prozesse zu verwenden. Durch die Kombination ihrer Head-Do-Logik wird Ihre APP als wertvolle Verarbeitungsleistung gespart, und Sie können die Raycasting-Einstellung auf eine pro Frame beschränken
+Während im obigen Beispiel ein einzelner Raycast aus der Updateschleife ausgelöst wird, um die Kopfpunkte des Benutzers zu finden, wird empfohlen, ein einzelnes Objekt zu verwenden, um alle Prozesse zum Anvieren mit dem Kopf zu verwalten. Wenn Sie Ihre Logik für das Anvieren mit dem Kopf kombinieren, sparen Sie Ihrer App wertvolle Verarbeitungsleistung und beschränken Ihr Raycasting auf einen pro Frame.
 
-## <a name="visualizing-head-gaze"></a>Visualisieren des Haupt Blicks
+## <a name="visualizing-head-gaze"></a>Visualisieren des Anvisierens mit dem Kopf
 
-Wie bei einem Mauszeiger auf einem Computer sollten Sie einen [Cursor](../../design/cursors.md) implementieren, der den Kopf des Benutzers darstellt. Wenn Sie wissen, mit welchem Inhalt ein Benutzer als Ziel dient, erhöhen Sie das Vertrauen in die Interaktion mit dem Benutzer.
+Genau wie bei einem Mauszeiger auf einem Computer sollten Sie einen [Cursor](../../design/cursors.md) implementieren, der den Anverweisen mit dem Kopf des Benutzers darstellt. Wenn Sie wissen, auf welche Inhalte ein Benutzer abzielt, wird das Vertrauen in die Interaktion mit erhöht.
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Der Haupt Blick im Mixed Reality Toolkit
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>Anvischen mit dem Kopf im Mixed Reality Toolkit
 
-Sie können über den [Eingabe-Manager](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) in mrtk auf den Haupt Blick zugreifen.
+Sie können über den [Eingabe-Manager](/windows/mixed-reality/mrtk-unity/features/input/overview) im MRTK auf das Anvischen mit dem Kopf zugreifen.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie die von uns festgelegte Unity-Entwicklungsreise verfolgen, befinden Sie sich in der Mitte der MRTK-Kernbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Motion-Controller](motion-controllers-in-unity.md)

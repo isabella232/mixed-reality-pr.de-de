@@ -1,60 +1,60 @@
 ---
 title: Objektsammlung
-description: Die Objekt Auflistung ist ein Layoutsteuerelement, das Ihnen hilft, ein Array von Objekten in einer vordefinierten dreidimensionalen Form festzulegen.
+description: Die Objektsammlung ist ein Layoutsteuerfeld, mit dem Sie ein Array von Objekten in einer vordefinierten dreidimensionalen Form strukturieren können.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Steuerelemente, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Objektsammlung, 2D, 3D, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 109dcd59a2b52a8eec82096c5aa88cd1070f5649
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Windows Mixed Reality, Steuerelemente, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Objektsammlung, 2D, 3D, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 9648f3bd22a09c53de2f903ed8ba0274c634db7c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299725"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600199"
 ---
 # <a name="object-collection"></a>Objektsammlung
 
-![Objektsammlung, die in der periodischen Tabelle der Elements-App verwendet wird.](images/UX_Hero_ObjectCollection.jpg)<br>
+![Objektsammlung, die im Periodensystem der Elements-App verwendet wird](images/UX_Hero_ObjectCollection.jpg)<br>
 
-Die Objekt Auflistung ist ein Layoutsteuerelement, das Ihnen hilft, ein Array von Objekten in einer vordefinierten dreidimensionalen Form festzulegen. Es unterstützt verschiedene Oberflächen Stile: * * Ebene, Zylinder, Kugel und **radiale**. Sie können den RADIUS und die Größe der Objekte sowie den Leerraum zwischen Ihnen anpassen. Die Objekt Auflistung unterstützt ein beliebiges Objekt aus Unity (2D und 3D). Im **[Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** haben wir ein Unity-Skript und Beispiele erstellt, die Sie beim Erstellen einer Objektsammlung unterstützen.
+Die Objektsammlung ist ein Layoutsteuerfeld, mit dem Sie ein Array von Objekten in einer vordefinierten dreidimensionalen Form strukturieren können. Es unterstützt verschiedene Oberflächenstile: **Ebene, Zylinder, Kugel und **radiale**. Sie können den Radius und die Größe der Objekte und den Abstand zwischen ihnen anpassen. Die Objektsammlung unterstützt alle Objekte aus Unity – sowohl 2D als auch 3D. Im Mixed Reality **[Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** haben wir Unity-Skripts und Beispiele erstellt, mit denen Sie eine Objektsammlung erstellen können.
 
-## <a name="object-collection-examples"></a>Beispiele für die Objektsammlung
+## <a name="object-collection-examples"></a>Beispiele für Objektsammlungen
 
-[Die periodische Tabelle der-Elemente](../develop/unity/periodic-table-of-the-elements.md) ist eine Beispiel-APP, die die Funktionsweise der Objekt Auflistung veranschaulicht. Sie verwendet die Objekt Auflistung, um 3D-Elemente für das chemische Element in verschiedenen Formen anzuordnen.
+[Periodic Table of the Elements](../develop/unity/periodic-table-of-the-elements.md) ist eine Beispiel-App, die die Funktionsweise der Objektsammlung veranschaulicht. Sie verwendet die Objektsammlung, um 3D-Chemieelementfelder in verschiedenen Formen zu gestalten.
 
-![Beispiele für die Objektsammlung, die in der periodischen Tabelle der Elements-App angezeigt werden](images/periodictable-collections-1000px.jpg)<br>
-*Beispiele für die Objektsammlung, die in der periodischen Tabelle der Beispiel-App für Elemente angezeigt werden*
+![Beispiele für Objektsammlungen in der Periodentabelle der Elements-App](images/periodictable-collections-1000px.jpg)<br>
+*Beispiele für Objektsammlungen, die im Periodensystem der Beispiel-App "Elemente" gezeigt werden*
 
 ### <a name="3d-objects"></a>3D-Objekte
 
-Sie können die Objekt Auflistung verwenden, um importierte 3D-Objekte festzulegen. Das folgende Beispiel zeigt eine Ebene und ein Zylinder Layout für einige 3D-Stuhl Objekte.
+Sie können die Objektsammlung verwenden, um importierte 3D-Objekte zu erstellen. Das folgende Beispiel zeigt eine Ebene und ein Zylinderlayout einiger 3D-Designobjekte.
 
-![Beispiele für die Ebenen-und zylindrischen Layouts von 3D-Objekten](images/objectcollection-3dobjects-1000px.jpg)<br>
-*Beispiele für die Ebenen-und zylindrischen Layouts von 3D-Objekten*
+![Beispiele für Ebenen- und zylindrische Layouts von 3D-Objekten](images/objectcollection-3dobjects-1000px.jpg)<br>
+*Beispiele für Ebenen- und zylindrische Layouts von 3D-Objekten*
 
 ### <a name="2d-objects"></a>2D-Objekte
 
-Sie können auch 2D-Images mit der Objektsammlung verwenden. In den folgenden Beispielen wird veranschaulicht, wie 2D-images in einem Raster angezeigt werden können.
+Sie können auch 2D-Bilder mit Der Objektsammlung verwenden. Die folgenden Beispiele veranschaulichen, wie 2D-Bilder in einem Raster angezeigt werden können.
 
-![Beispiel für 2D-Bilder mit Objekt Auflistung](images/940px-layout-3dobjects-3.jpg)
+![Beispiel für 2D-Bilder mit Objektsammlung](images/940px-layout-3dobjects-3.jpg)
 
-![Beispiele für die Verwendung der Objektsammlung mit 2D-images](images/940px-layout-2dimages.jpg)<br>
-*Beispiele für die Verwendung der Objektsammlung mit 2D-images*
-
-<br>
-
----
-
-## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objektsammlung in mrtk (Mixed Reality Toolkit) für Unity
-
-* [Mrtk-Objektsammlung](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
+![Beispiele für die Verwendung der Objektsammlung mit 2D-Bildern](images/940px-layout-2dimages.jpg)<br>
+*Beispiele für die Verwendung der Objektsammlung mit 2D-Bildern*
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objektsammlung im MRTK (Mixed Reality Toolkit) für Unity
+
+* [MRTK – Objektsammlung](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
+
+<br>
+
+---
+
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

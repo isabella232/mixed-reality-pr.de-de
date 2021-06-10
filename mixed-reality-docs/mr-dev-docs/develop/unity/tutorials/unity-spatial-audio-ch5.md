@@ -1,71 +1,71 @@
 ---
-title: Lernprogramme für räumliche Audiodaten-5. Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
-description: Fügen Sie einen Hall Effekt hinzu, um den Sinn der Abstands Variation zu räumlichem Audiomaterial zu verbessern.
+title: 'Tutorials zu räumlichen Audioinhalten: 5. Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe'
+description: Fügen Sie einen Halleffekt hinzu, um das Gefühl der Entfernungsvariation zu räumlichen Audiodaten zu verbessern.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
-keywords: Mixed Reality, Unity, Tutorial, hololens2, Spatial Audiodatei, mrtk, Mixed Reality Toolkit, UWP, Windows 10, HRTF, Head-Related Transfer Function, Reverb, Microsoft spatializer, Audiomixer, SFX-Reverb
-ms.openlocfilehash: f7a5270d969f2e462db0244bd6c68b99347ae1a7
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+keywords: Mixed Reality, Unity, Tutorial, HoloLens2, räumliche Audiodaten, MRTK, Mixed Reality-Toolkit, UWP, Windows 10, HRTF, kopfbezogene Übertragungsfunktion, Hall, Microsoft Spatializer, Audiomixer, SFX-Hall
+ms.openlocfilehash: 6f41fe904c21591915e0ef13b61dc6bff04527fe
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590722"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712687"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5. Verwenden von Hall zum Hinzufügen von Abstand zu räumlicher Audiowiedergabe
 
 ## <a name="overview"></a>Übersicht
 
-Im vorherigen Tutorial haben Sie eine räumliche Struktur hinzugefügt, um Ihnen einen Eindruck von der Richtung in diesem Tutorial zu geben. Sie fügen einen einfügeeffekt hinzu, um Klänge einen Eindruck von der Entfernung zu geben.
+Im vorherigen Tutorial haben Sie die Räumliche Raumisierung für die Sounds hinzugefügt, um ihnen in diesem Tutorial ein Gefühl für die Richtung zu geben. In diesem Tutorial fügen Sie einen Halleffekt hinzu, um Sounds ein Gefühl von Abstand zu geben.
 
 ## <a name="objectives"></a>Ziele
 
-* Verbessern Sie die wahrgenommene Entfernung von Soundquellen durch Hinzufügen von Reverb
-* Steuern Sie den erkannten Abstand des Sounds mithilfe der Entfernung des Listener zum Hologram.
+* Verbessern Sie den wahrgenommenen Abstand von Soundquellen, indem Sie Hall hinzufügen.
+* Steuern Sie den wahrgenommenen Abstand des Sounds mithilfe des Abstands des Listeners zum Hologramm.
 
-## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Hinzufügen einer mischkeitsgruppe und eines einfügenden Effekts
+## <a name="add-a-mixer-group-and-a-reverb-effect"></a>Hinzufügen einer Mixergruppe und eines Halleffekts
 
-Im [Tutorial "spatialisieren von Schaltflächen Interaktion Sounds](unity-spatial-audio-ch2.md)" haben wir einen Mixer hinzugefügt. Der Mixer enthält standardmäßig eine **Gruppe** namens **Master**. Da wir nur einen "Hall"-Effekt auf einige Sounds anwenden möchten, fügen wir eine zweite Gruppe für diese Sounds hinzu. Um eine Gruppe hinzuzufügen, klicken Sie mit der rechten Maustaste auf die Master Gruppe im **Audiomixer** , wählen Sie untergeordnete **Gruppe hinzufügen** aus, und geben Sie passenden Namen für Beispiel _Raumeffekt_
+Unter [Spatializing button interaction sounds Tutorial (Tutorial:](unity-spatial-audio-ch2.md)Raumisieren von Schaltflächeninteraktionsgeräuschen) haben wir einen Mixer hinzugefügt. Der Mixer enthält standardmäßig **eine Gruppe** namens **Master.** Da wir nur einen Halleffekt auf einige Sounds anwenden möchten, fügen wir eine zweite Gruppe für diese Sounds hinzu. Klicken Sie zum Hinzufügen einer Gruppe im **Audiomixer** mit der rechten Maustaste auf die Gruppe Master, und wählen Sie untergeordnete Gruppe hinzufügen aus, und geben Sie einen geeigneten Namen ein, z. B. _Room Effect:_ 
 
-![Untergeordnete Gruppe hinzufügen](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
+![Hinzufügen einer untergeordneten Gruppe](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 
-Jede **Gruppe** hat einen eigenen Satz von Effekten. Fügen Sie der neuen Gruppe einen connectoreffekt hinzu, indem Sie in der neuen Gruppe auf **Hinzufügen** klicken, und wählen Sie **SFX-Hall**:
+Jede **Gruppe** hat einen eigenen Satz von Effekten. Fügen Sie der neuen Gruppe einen Halleffekt hinzu, indem Sie in der neuen Gruppe auf **Hinzufügen...** klicken und **SFX Reverb auswählen:**
 
-![SFX-Reverb hinzufügen](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
+![Hinzufügen von SFX Reverb](images/spatial-audio/spatial-audio-05-section1-step1-2.PNG)
 
-In der audioterminologie wird der ursprüngliche, nicht widerzuhallte _Audiopfad als trockener Pfad_ bezeichnet, und die Audiodatei nach dem Filtern mit dem Hall Filter wird als _Nasser Pfad_ bezeichnet. Beide Pfade werden an die Audioausgabe gesendet, und ihre relativen Stärken in dieser Mischung werden als _nass/trocken Mischung_ bezeichnet. Die nasse/trockene Mischung wirkt sich stark auf den Sinn der Entfernung aus.
+In der Audioterminologie wird das ursprüngliche, nicht hallierte Audio als "Dry Path" bezeichnet, und das Audio nach dem Filtern mit dem Hallfilter wird als Versauungspfad _bezeichnet._ Beide Pfade werden an die Audioausgabe gesendet, und ihre relativen Stärken in dieser Mischung werden als _versauend/heiter bezeichnet._ Die Versenkungs-/Drymischung wirkt sich stark auf das Gefühl der Entfernung aus.
 
-Der **SFX-Reverb umfasst Steuer** Elemente, mit denen die nasse/trockene Mischung innerhalb des Effekts angepasst wird. Da das **Microsoft spatializer** -Plug-in den trockenen Pfad behandelt, verwenden wir den **SFX-Reverb** nur für den nassen Pfad. Im inspektorbereich Ihres **SFX-einhall**:
+Der **SFX Reverb enthält** Steuerelemente, um die Versheiterungs-/Probemischung innerhalb des Effekts anzupassen. Da das **Microsoft Spatializer-Plug-In** den Probepfad verarbeitet, verwenden wir **SFX Reverb** nur für den Verwerfungspfad. Im Inspektorbereich Ihres **SFX-Halls:**
 
-* Legen Sie die Eigenschaft " **Dry Level** " auf die niedrigste Einstellung fest (-10000 MB).
-* Legen Sie die **Eigenschaft "Room** " auf die höchste Einstellung (0 MB) fest.
+* Legen Sie **die Eigenschaft Dry Level** auf die niedrigste Einstellung fest (-10000 mB).
+* Legen Sie **die Eigenschaft Room** auf die höchste Einstellung (0 mB) fest.
 
-![SFX-Reverb-Eigenschaften](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
+![SFX Reverb-Eigenschaften](images/spatial-audio/spatial-audio-05-section1-step1-3.PNG)
 
-Mit den anderen Einstellungen wird das Gefühl des simulierten Raums gesteuert. Die **verwahrzeit** bezieht sich insbesondere auf die wahrgenommene Raum Größe.
+Die anderen Einstellungen steuern das Verhalten des simulierten Raums. Insbesondere bezieht sich **die Abklingzeit** auf die wahrgenommene Raumgröße.
 
-## <a name="enable-reverb-on-the-video-playback"></a>Aktivieren von "Reverb" für die Videowiedergabe
+## <a name="enable-reverb-on-the-video-playback"></a>Aktivieren von Hall bei der Videowiedergabe
 
-Zum Aktivieren von "Reverb" in einer Audioquelle müssen zwei Schritte ausgeführt werden:
+Es gibt zwei Schritte, um Hall für eine Audioquelle zu aktivieren:
 
-* Leiten Sie die **Audioquelle** an die entsprechende **Gruppe** weiter.
-* Festlegen des **Microsoft spatializer** -Plug-ins, um Audioinformationen zur Verarbeitung an die **Gruppe** zu übergeben
+* Routen der **Audioquelle** an die entsprechende **Gruppe**
+* Festlegen des **Microsoft Spatializer-Plug-Ins,** um Audio zur Verarbeitung an die **Gruppe** zu übergeben
 
-In den folgenden Schritten passen Sie das Skript an, um das Audiorouting zu steuern, und fügen ein Steuerungs Skript an, das mit dem **Microsoft spatializer** -Plug-in bereitgestellt wird, um Daten in den Reverb zu übertragen
+In den folgenden Schritten passen Sie das Skript an, um das Audiorouting zu steuern, und fügen ein Steuerungsskript an, das mit dem **Microsoft Spatializer-Plug-In** bereitgestellt wird, um Daten in den Hall zu geben.
 
-Klicken Sie bei ausgewähltem **Quad** in der Hierarchie im Inspektor-Fenster auf **Komponente hinzufügen** , und fügen Sie die **Sende Ebene des Raum Effekts (Skript)** hinzu:
+Klicken Sie **bei ausgewähltem Quad** in der Hierarchie im Inspektorfenster auf Add **Component** (Komponente hinzufügen), und fügen Sie room Effect **Send Level(Script) hinzu:**
 
-![Skript für Sende Ebene hinzufügen](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
+![Hinzufügen eines Skripts auf Sendeebene](images/spatial-audio/spatial-audio-05-section2-step1-1.PNG)
 
 > [!NOTE]
-> Es sei denn, Sie aktivieren das Feature " **Sende Ebene für raumeffekte** " des **Microsoft spatializer** -Plug-ins, es sendet keine Audiodaten an die Unity-Audioengine zur Auswirkung der Verarbeitung.
+> Sofern Sie das **Room Effect Send Level-Feature** des Microsoft Spatializer-Plug-Ins nicht aktivieren, sendet es keine Audiodaten zur Effektverarbeitung zurück an die Unity-Audio-Engine. 
 
-Die Bereichs Effekt-Komponente der **Sende Ebene** enthält ein Graph-Steuerelement, mit dem die Audioebene festgelegt wird, die für die Verarbeitung von Reverb an die Unity-Audioengine Um das Diagramm Steuerelement zu öffnen, klicken Sie auf die **Sende Ebene des Raum Effekts**.  Klicken und ziehen Sie die grüne Kurve nach unten, um die Ebene auf ungefähr-30dB festzulegen:
+Die **Komponente Room Effect Send Level** enthält ein Graphsteuerelement, das die Audioebene für die Hallverarbeitung an die Unity-Audio-Engine fest legt. Klicken Sie zum Öffnen des Graph-Steuerelements auf **die Raumeffekt-Sendeebene**.  Klicken Sie auf die grüne Kurve, und ziehen Sie sie nach unten, um die Ebene auf etwa -30dB zu setzen:
 
-![Hall Kurve anpassen](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
+![Anpassen der Hallkurve](images/spatial-audio/spatial-audio-05-section2-step1-2.PNG)
 
-Entfernen Sie dann die Auskommentierung der vier kommentierten Zeilen im **spatializeonoff** -Skript. Das Skript sieht nun wie folgt aus:
+Kommentieren Sie als Nächstes die vier kommentierten Zeilen im **SpatializeOnOff-Skript** aus. Das Skript sieht nun wie im folgenden Beispiel aus:
 
 ```c#
 using System.Collections;
@@ -122,18 +122,18 @@ public class SpatializeOnOff : MonoBehaviour
 }
 ```
 
-Nachdem diese Zeilen auskommentiert wurden, werden dem Inspektor des **spatializeonoff-Skripts** zwei Eigenschaften hinzugefügt. Weisen Sie diese im Inspektor-Fenster der **spatializeonoff** -Komponente von **Quad** zu.
+Nachdem diese Zeilen auskommentiert wurden, werden dem Inspektor des **SpatializeOnOff-Skripts zwei Eigenschaften hinzufügt.** Weisen Sie diese im Inspektorfenster der **SpatializeOnOff-Komponente** von **Quad zu.**
 
-Wenn das Quad-Objekt in der Hierarchie noch ausgewählt ist, suchen Sie im Inspektor-Fenster die **spatializeonoff-Skript** Komponente und:
+Wenn das Quad-Objekt in der Hierarchie noch ausgewählt ist, suchen Sie im Inspektorfenster die **SpatializeOnOff-Skriptkomponente** und :
 
-* Legen Sie die Eigenschaft " **Raumeffekt** " auf Ihre neue Platz Effekt-mischkeitsgruppe fest.
-* Festlegen der **Master Group** -Eigenschaft auf die Master-Mixer-Gruppe
+* Legen Sie die **Eigenschaft Room Effect Group** auf Ihre neue Room Effect-Mixergruppe fest.
+* Legen Sie die **Eigenschaft Mastergruppe** auf die Mastermixergruppe fest.
 
-![Spatialize on off (erweitert)](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
+![Spatialize On Off Extended](images/spatial-audio/spatial-audio-05-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 
-Sie haben die Lernprogramme "hololens 2 Spatial audiotutorial" für Unity abgeschlossen. Testen Sie die APP auf einem hololens 2 oder Unity. Wenn Sie in der APP auf die Schaltfläche klicken, um die Spatialisierung zu aktivieren, leitet das Skript die Audiodatei an die Raumeffekt Gruppe weiter, um den Code hinzuzufügen. Beim Wechsel zu Stereo wird das Audiomaterial an die Master Gruppe weitergeleitet, und es wird vermieden, dass das Hinzufügen von Reverb erfolgt.
+Sie haben die Tutorials HoloLens 2 räumliche Audioinhalte für Unity abgeschlossen. Testen Sie die App auf einem HoloLens 2 unity. Wenn Sie in der App auf die Schaltfläche klicken, um die Räumliche Vertonung zu aktivieren, wird das Audio des Videos vom Skript an die Room Effect-Gruppe geroutet, um Hall hinzuzufügen. Wenn Sie zu Stereo wechseln, wird die Audiodatei an die Mastergruppe geroutet, und es wird vermieden, Dass Hall hinzugefügt wird.
 
 > [!TIP]
 > Falls Sie eine Auffrischung zum Erstellen und Bereitstellen Ihres Unity-Projekts auf HoloLens 2 benötigen, lesen Sie die Anweisungen unter [Erstellen Ihrer App auf dem HoloLens 2-Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2).

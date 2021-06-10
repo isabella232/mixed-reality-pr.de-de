@@ -1,37 +1,37 @@
 ---
 title: Schieberegler
-description: Erfahren Sie, wie Sie mithilfe der Benutzeroberflächen Komponente des Schiebereglers einen Wert festlegen, indem Sie mit dem Mixed Reality Toolkit einen Knopf oder einen Hebel in eine Spur verschieben.
+description: Erfahren Sie, wie Sie mithilfe der Benutzeroberflächenkomponente des Schiebereglers einen Wert festlegen, indem Sie mithilfe des Mixed Reality Toolkits einen Regler oder Hebel auf einer Spur bewegen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Gemischte Realität, Steuerelemente, Interaktion, UI, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, Slider, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: e3a50ea617beac6b341ebdf27cad333168222c07
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Schieberegler, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: c1619a90b7df1a34fa1541663a3f521ba5e75662
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299705"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600159"
 ---
 # <a name="slider"></a>Schieberegler
 
 ![Schieberegler](images/UX_Hero_Slider.jpg)
 
-Ein Schieberegler ist eine Benutzeroberflächen Komponente, mit der ein Wert festgelegt wird. Sie bietet eine visuelle Angabe von anpassbarem Inhalt und die aktuelle Einstellung im gesamten Inhalts Bereich. Es wird als Track mit Optionen auf beiden Seiten angezeigt. Ein Knopf oder ein Hebel wird zu einem Ende gezogen, um die Auswahl zu treffen, die den aktuellen Wert angibt. Der Schieberegler für die Schieberegler kann verschoben werden, indem der Schieberegler direkt oder in einer Entfernung direkt abgepackt wird. Schieberegler arbeiten mit verschiedenen Eingabetypen wie z. b. "Blick" und "Air-Tap" und einem Bewegungs Controller
+Ein Schieberegler ist eine Benutzeroberflächenkomponente, die zum Festlegen eines Werts verwendet wird. Sie bietet einen visuellen Hinweis auf anpassbaren Inhalt und die aktuelle Einstellung im gesamten Inhaltsbereich. Es wird als Spur mit Optionen auf beiden Seiten angezeigt. Ein Regler oder Hebel wird an ein oder das andere Ende gezogen, um die Auswahl zu treffen, was den aktuellen Wert angibt. Der Schieberegler zum Anheften kann durch direktes Greifen des Schiebereglers verschoben werden, entweder direkt oder in der Entfernung. Schieberegler arbeiten mit verschiedenen Eingabetypen, z. B. anv und Tippen in die Luft und einem Motion-Controller.
 
 <br>
 
 ---
 
-## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Schieberegler im mrtk (Mixed Reality Toolkit) für Unity
+## <a name="slider-in-mrtk-mixed-reality-toolkit-for-unity"></a>Schieberegler im MRTK (Mixed Reality Toolkit) für Unity
 
-* [Mrtk-Schieberegler](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
+* [MRTK – Schieberegler](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/sliders)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

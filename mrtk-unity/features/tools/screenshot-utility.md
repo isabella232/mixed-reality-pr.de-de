@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 59bf0df2a32030281c8bf0a1a8574b4dd9bf4607
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a0c66969a9058adc790919f0054783b7368da8f6
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143791"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647074"
 ---
 # <a name="screenshot-utility"></a>Screenshot-Hilfsprogramm
 
@@ -20,7 +20,7 @@ Die ScreenshotUtility-Klasse hilft beim Erstellen von Screenshots über Menüele
 
 ## <a name="taking-screenshots"></a>Erstellen von Screenshots
 
-Screenshots lassen sich problemlos im Editor aufzeichnen, indem Sie zuerst *Mixed Reality Toolkit->Hilfsprogramme->Screenshot erstellen* auswählen und dann die gewünschte Option. Stellen Sie sicher, dass die Registerkarte mit dem Spielfenster sichtbar ist, wenn Sie einen Screenshot erstellen, während Sie nicht spielen, da der Screenshot sonst möglicherweise nicht gespeichert wird.
+Screenshots können einfach im Editor erfasst werden, indem Sie **Mixed Reality** Toolkit Utilities Take Screenshot (Screenshot der  >    >  **Toolkit-Hilfsprogramme)**  >   auswählen und dann die gewünschte Option auswählen. Stellen Sie sicher, dass die Registerkarte mit dem Spielfenster sichtbar ist, wenn Sie einen Screenshot erstellen, während Sie nicht spielen, da der Screenshot sonst möglicherweise nicht gespeichert wird.
 
 Standardmäßig werden alle Screenshots in Ihrem [temporären Cachepfad](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html) gespeichert. Der Pfad zum Screenshot wird in der Unity-Konsole angezeigt.
 

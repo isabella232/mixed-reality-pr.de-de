@@ -1,45 +1,45 @@
 ---
 title: Dialog
-description: Erfahren Sie mehr über Dialog Überlagerungen in mrtk und deren Verwendung in Anwendungen mit gemischter Realität.
+description: Erfahren Sie mehr über Dialogüberlagerungen in MRTK und deren Verwendung in Mixed Reality Anwendungen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: Gemischte Realität, hololens, UI-Steuerelemente, Interaktion, UI, UX, UX-Entwurf, räumliche Benutzeroberfläche, räumliche Interaktion, 3D-Benutzeroberfläche, 3D-UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit
-ms.openlocfilehash: 18e446f6b35e8073f939d065de3572204e2967a1
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+keywords: Mixed Reality, HoloLens, UI-Steuerelemente, Interaktion, Ui, ux, UX Design, räumliche Benutzeroberfläche, räumliche Interaktion, 3D-Benutzeroberfläche, 3D-Benutzeroberfläche, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: aa85402f765e8b02842054db0c2fb37ca4fa9d93
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299995"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600309"
 ---
 # <a name="dialog"></a>Dialog
 
-![Screenshot eines Dialog Felds mit Ja und ohne Schaltflächen, die in hololens angezeigt werden](images/MRTK_UX_Dialog.jpg)
+![Screenshot einer Dialogüberlagerung mit schaltflächen "Ja" und "Nein" auf HoloLens](images/MRTK_UX_Dialog.jpg)
 
-Dialog Feld Steuerelemente sind UI-Überlagerungen, die kontextbezogene app-Informationen bereitstellen und häufig eine Benutzeraktion anfordern Verwenden Sie die Dialogfelder, um Benutzern wichtige Informationen zu geben und eine Bestätigung oder zusätzliche Informationen anzufordern, bevor eine Aktion abgeschlossen werden kann.
-
-<br>
-
----
-
-## <a name="dialog-in-mrtk-mixed-reality-toolkit-for-unity"></a>Dialog Feld in mrtk (Mixed Reality Toolkit) für Unity
-Mrtk bietet Dialogfeld Steuerung in drei Größen mit einer oder zwei Schaltflächen Optionen. Sie können auch den Platzierungs Abstand für den Bereich für die Near-oder weite Interaktion angeben. 
-
-- DialogSmall_192x96. Prefab: 192 x96mm
-- DialogMedium_192x128. Prefab: 192 x128 mm
-- DialogLarge_192x192. Prefab: 192 x192 mm
-
-![Screenshot der unterschiedlichen Größen Dialogfelder, die in hololens ausgeführt werden](images/MRTK_UX_Dialog_Types.jpg)
-
-
-* Weitere Informationen finden Sie unter [mrtk-Dialog](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog).
+Dialogsteuerelemente sind Benutzeroberflächenüberlagerungen, die kontextbezogene App-Informationen bereitstellen und häufig eine Benutzeraktion anfordern. Verwenden Sie Dialoge, um Benutzern wichtige Informationen und Anforderungsbestätigungen oder zusätzliche Informationen zu geben, bevor eine Aktion abgeschlossen werden kann.
 
 <br>
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="dialog-in-mrtk-mixed-reality-toolkit-for-unity"></a>Dialogfeld im MRTK (Mixed Reality Toolkit) für Unity
+MRTK bietet Dialogsteuerung in drei Größen mit einer oder zwei Schaltflächenoptionen. Sie können auch den Platzierungsabstand für den nah- oder fernen Interaktionsbereich angeben. 
+
+- DialogSmall_192x96.prefab: 192x96mm
+- DialogMedium_192x128.prefab: 192x128mm
+- DialogLarge_192x192.prefab: 192x192mm
+
+![Screenshot von Dialogüberlagerungen mit unterschiedlicher Größe, die auf HoloLens ausgeführt werden](images/MRTK_UX_Dialog_Types.jpg)
+
+
+* Weitere Informationen finden Sie unter [MRTK – Dialog](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog).
+
+<br>
+
+---
+
+## <a name="see-also"></a>Siehe auch
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)
