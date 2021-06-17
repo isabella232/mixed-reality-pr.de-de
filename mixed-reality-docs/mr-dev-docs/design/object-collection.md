@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Steuerelemente, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Objektsammlung, 2D, 3D, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 9648f3bd22a09c53de2f903ed8ba0274c634db7c
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: fd5629f58e092b33410c833885037582ba5ca4a1
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600199"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110139"
 ---
 # <a name="object-collection"></a>Objektsammlung
 
 ![Objektsammlung, die im Periodensystem der Elements-App verwendet wird](images/UX_Hero_ObjectCollection.jpg)<br>
 
-Die Objektsammlung ist ein Layoutsteuerfeld, mit dem Sie ein Array von Objekten in einer vordefinierten dreidimensionalen Form strukturieren können. Es unterstützt verschiedene Oberflächenstile: **Ebene, Zylinder, Kugel und **radiale**. Sie können den Radius und die Größe der Objekte und den Abstand zwischen ihnen anpassen. Die Objektsammlung unterstützt alle Objekte aus Unity – sowohl 2D als auch 3D. Im Mixed Reality **[Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** haben wir Unity-Skripts und Beispiele erstellt, mit denen Sie eine Objektsammlung erstellen können.
+Die Objektsammlung ist ein Layoutsteuerfeld, mit dem Sie ein Array von Objekten in einer vordefinierten dreidimensionalen Form strukturieren können. Es unterstützt verschiedene Oberflächenstile: **Ebene, Zylinder, Kugel und **radiale**. Sie können den Radius und die Größe der Objekte und den Abstand zwischen ihnen anpassen. Die Objektsammlung unterstützt alle Objekte aus Unity – sowohl 2D als auch 3D. Im Mixed Reality **[Toolkit](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)** haben wir Unity-Skripts und Beispiele erstellt, mit denen Sie eine Objektsammlung erstellen können.
 
 ## <a name="object-collection-examples"></a>Beispiele für Objektsammlungen
 
@@ -35,7 +35,7 @@ Sie können die Objektsammlung verwenden, um importierte 3D-Objekte zu erstellen
 
 ### <a name="2d-objects"></a>2D-Objekte
 
-Sie können auch 2D-Bilder mit Der Objektsammlung verwenden. Die folgenden Beispiele veranschaulichen, wie 2D-Bilder in einem Raster angezeigt werden können.
+Sie können auch 2D-Bilder mit Objektsammlung verwenden. Die folgenden Beispiele veranschaulichen, wie 2D-Bilder in einem Raster angezeigt werden können.
 
 ![Beispiel für 2D-Bilder mit Objektsammlung](images/940px-layout-3dobjects-3.jpg)
 
@@ -46,7 +46,7 @@ Sie können auch 2D-Bilder mit Der Objektsammlung verwenden. Die folgenden Beisp
 
 ---
 
-## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objektsammlung im MRTK (Mixed Reality Toolkit) für Unity
+## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Objektsammlung in MRTK (Mixed Reality Toolkit) für Unity
 
 * [MRTK – Objektsammlung](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)
 
