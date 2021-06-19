@@ -6,16 +6,16 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: VR, LBE, standortbezogene Unterhaltung, VR-Arcade, Arcade, immersiv, QR, QR-Code, hololens2
-ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
-ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
+ms.openlocfilehash: 9d3a5d9696fbf875b2e6a890ed837efc055a9e6e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103574946"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394334"
 ---
 # <a name="qr-code-tracking"></a>Nachverfolgen von QR-Codes
 
-HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordinatensystem an der Position jedes Codes in der realen Welt einrichten. Nachdem Sie die Webcam Ihres Geräts aktiviert haben, können Sie QR-Codes in den neuesten Versionen ihrer Unreal-oder Unity-Projekte erkennen. Bevor Sie in die Produktion gehen, empfiehlt es sich, die [bewährten Methoden](#best-practices-for-qr-code-detection) zu befolgen, die wir am Ende des Artikels festgelegt haben.
+HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordinatensystem an der Position jedes Codes in der realen Welt einrichten. Sobald Sie die Webcam Ihres Geräts aktiviert haben, können Sie QR-Codes in den neuesten Versionen Ihrer Unreal- oder Unity-Projekte erkennen. Bevor Sie mit der Produktion [](#best-practices-for-qr-code-detection) arbeiten, empfehlen wir Ihnen, die bewährten Methoden zu verwenden, die wir am Ende des Artikels beschrieben haben.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -33,6 +33,12 @@ HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordi
 ## <a name="getting-the-qr-package"></a>Abrufen des QR-Pakets
 
 Sie können das NuGet-Paket für die QR-Code-Erkennung [hier](https://nuget.org/Packages/Microsoft.MixedReality.QR) herunterladen.
+
+## <a name="using-openxr"></a>Verwenden von OpenXR
+
+Wenn Sie das OpenXR-Plug-In verwenden, greifen Sie von der [ `SpatialGraphNodeId` QR-API,](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference) und verwenden Sie die `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API, um den QR-Code zu finden.
+
+Als Referenz finden Sie ein [Beispielprojekt für](https://github.com/yl-msft/QRTracking) die QR-Nachverfolgung auf GitHub mit einer ausführlicheren Erläuterung der Verwendung für die [ `SpatialGraphNode` API.](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs)
 
 ## <a name="detecting-qr-codes"></a>Erkennen von QR-Codes
 
@@ -209,10 +215,10 @@ Die genaue Zeit, die zum Erkennen von Codes benötigt wird, hängt nicht nur von
 ### <a name="distance-and-angular-position-from-the-qr-code"></a>Abstand und Winkelposition gegenüber dem QR-Code
 Die Überwachungskameras besitzen eine eingeschränkte Detailauflösung. Bei kleinen Codes – < 10 cm Kantenlänge – müssen Sie recht nah an den Code herangehen. Für einen QR-Code der Version 1 mit einer Breite zwischen 10 und 25 cm liegt der Mindestabstand für die Erkennung zwischen 0,15 und 0,5 m. 
 
-Der Erkennungsabstand für die Größe erhöht sich linear, hängt jedoch auch von der QR-Version oder der Modulgröße ab. Je höher die Version, desto kleiner die Module, die nur von einer genaueren Position erkannt werden können. Sie können auch Mikro QR-Codes ausprobieren, wenn die Entfernung der Erkennung länger sein soll. Die QR-Erkennung funktioniert in einem Winkelbereich von += 45°, um sicherzustellen, dass die Auflösung zum Erkennen des Codes ausreicht.
+Der Erkennungsabstand für die Größe nimmt linear zu, hängt aber auch von der QR-Version oder Modulgröße ab. Je höher die Version, desto kleiner sind die Module, die nur von einer näheren Position erkannt werden können. Sie können auch Micro-QR-Codes ausprobieren, wenn die Entfernung der Erkennung länger sein soll. Die QR-Erkennung funktioniert in einem Winkelbereich von += 45°, um sicherzustellen, dass die Auflösung zum Erkennen des Codes ausreicht.
 
 > [!IMPORTANT]
-> Stellen Sie immer sicher, dass Sie über ausreichende Kontraste und einen geeigneten Rahmen verfügen.
+> Stellen Sie immer sicher, dass genügend Kontrast und ein ordnungsgemäßer Rahmen vorhanden sind.
 
 ### <a name="qr-codes-with-logos"></a>QR-Codes mit Logos
 QR-Codes mit Logos wurden nicht getestet und werden zurzeit nicht unterstützt.
