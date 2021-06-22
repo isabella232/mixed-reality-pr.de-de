@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: Scene Understanding, Spatial Mapping, Windows Mixed Reality, Unity
-ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644836"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449729"
 ---
 # <a name="scene-understanding-sdk-overview"></a>Übersicht über das Scene Understanding SDK
 
@@ -31,15 +31,15 @@ SceneUnderstanding erfordert Windows SDK Version 18362 oder höher.
 
 ### <a name="the-scene"></a>Die Szene
 
-Ihr Mixed Reality-Gerät integriert ständig Informationen darüber, was es in Ihrer Umgebung sieht. Scene Understanding trichtert alle diese Datenquellen und erzeugt eine einzelne kohäsive Abstraktion. Scene Understanding generiert Szenen, bei denen es sich um eine Komposition von [SceneObjects](scene-understanding-SDK.md#sceneobjects) handelt, die eine Instanz eines einzelnen Objekts darstellen (z. B. eine Wand, eine Decke oder einen Boden). Szenenobjekte selbst sind eine Komposition von [SceneComponents, die präzisere Teile darstellen, aus denen sich dieses SceneObject zusammensetzen. Beispiele für Komponenten sind Quads und Gitter, aber in Zukunft könnten Begrenzungsfelder, Kollisionsgitter, Metadaten usw. stehen.
+Ihr Mixed Reality-Gerät integriert ständig Informationen darüber, was es in Ihrer Umgebung sieht. Scene Understanding trichtert alle diese Datenquellen und erzeugt eine einzelne kohäsive Abstraktion. Scene Understanding generiert Szenen, bei denen es sich um eine Komposition von [SceneObjects](scene-understanding-SDK.md#sceneobjects) handelt, die eine Instanz eines einzelnen Objekts darstellen (z. B. eine Wand/Hänge/Etage). Szenenobjekte selbst sind eine Komposition von [SceneComponents), die präzisere Teile darstellen, aus denen dieses SceneObject besteht. Beispiele für Komponenten sind Quads und Gitternetze, aber in Zukunft könnten Begrenzungsfelder, Kollisionsgitternetze, Metadaten usw. dargestellt werden.
 
-Der Prozess der Konvertierung der rohen Sensordaten in eine Szene ist ein potenziell kostspieliger Vorgang, der bei großen Räumen (ca. 50 x 50 m) Sekunden für mittlere Räume (ca. 10 x 10 m) in Minuten dauern kann und daher nicht ohne Anwendungsanforderung vom Gerät berechnet wird. Stattdessen wird die Szenengenerierung von Ihrer Anwendung bei Bedarf ausgelöst. Die SceneObserver-Klasse verfügt über statische Methoden, die eine Szene berechnen oder deserialisieren können, mit denen Sie dann aufzählen/interagieren können. Die Aktion "Compute" wird bei Bedarf ausgeführt und auf der CPU ausgeführt, jedoch in einem separaten Prozess (Mixed Reality Treiber). Während wir jedoch in einem anderen Prozess berechnen, werden die resultierenden Szenendaten in Ihrer Anwendung im Szenenobjekt gespeichert und verwaltet. 
+Der Prozess der Konvertierung der rohen Sensordaten in eine Szene ist ein potenziell kostspieliger Vorgang, der bei großen Bereichen (~50 x 50 m) sekundenlang dauern kann (~10 x 10 m) und daher nicht vom Gerät ohne Anwendungsanforderung berechnet wird. Stattdessen wird die Szenengenerierung von Ihrer Anwendung bei Bedarf ausgelöst. Die SceneObserver-Klasse verfügt über statische Methoden, die eine Szene berechnen oder deserialisieren können, mit denen Sie dann aufzählen/interagieren können. Die Aktion "Compute" wird bei Bedarf ausgeführt und auf der CPU ausgeführt, jedoch in einem separaten Prozess (der Mixed Reality-Treiber). Während wir jedoch Compute in einem anderen Prozess durchführen, werden die resultierenden Szenendaten in Ihrer Anwendung im Scene-Objekt gespeichert und verwaltet. 
 
-Das folgende Diagramm veranschaulicht diesen Prozessablauf und zeigt Beispiele für zwei Anwendungen, die mit der Scene Understanding-Runtime zusammenarbeiten. 
+Im Folgenden finden Sie ein Diagramm, das diesen Prozessfluss veranschaulicht und Beispiele für zwei Anwendungen zeigt, die mit der Scene Understanding-Runtime verbunden sind. 
 
 ![Prozessdiagramm](images/SU-ProcessFlow.png)
 
-Auf der linken Seite befindet sich ein Diagramm der Mixed Reality-Runtime, die immer in einem eigenen Prozess ausgeführt wird. Diese Runtime ist für die Durchführung von Gerätenachverfolgung, räumlicher Zuordnung und anderen Vorgängen verantwortlich, die Scene Understanding verwendet, um die Welt um Sie herum zu verstehen und zu verstehen. Auf der rechten Seite des Diagramms zeigen wir zwei theoretische Anwendungen, die Scene Understanding verwenden. Die erste Anwendung ist mit MRTK verbunden, die intern das Scene Understanding SDK verwendet, die zweite App berechnet und verwendet zwei separate Szeneninstanzen. Alle drei Szenen in diesem Diagramm generieren unterschiedliche Instanzen der Szenen. Der Treiber verfolgt den globalen Zustand, der von Anwendungen gemeinsam genutzt wird, und Szenenobjekte in einer Szene nicht in einer anderen Szene. Scene Understanding bietet einen Mechanismus, der im Laufe der Zeit nachverfolgt werden kann, aber dies erfolgt mithilfe des SDK. Der Nachverfolgungscode wird bereits im SDK im Prozess Ihrer App ausgeführt.
+Auf der linken Seite befindet sich ein Diagramm der Mixed Reality-Runtime, die immer aktiv ist und in einem eigenen Prozess ausgeführt wird. Diese Runtime ist für die Durchführung von Gerätenachverfolgung, räumlicher Zuordnung und anderen Vorgängen verantwortlich, die Scene Understanding verwendet, um die Welt um Sie herum zu verstehen und zu verstehen. Auf der rechten Seite des Diagramms werden zwei theoretische Anwendungen gezeigt, die Scene Understanding nutzen. Die erste Anwendung arbeitet mit MRTK zusammen, das intern das Scene Understanding SDK verwendet, die zweite App berechnet und verwendet zwei separate Szeneninstanzen. Alle drei Szenen in diesem Diagramm generieren unterschiedliche Instanzen der Szenen. Der Treiber verfolgt den globalen Zustand, der von Anwendungen gemeinsam genutzt wird, und Szenenobjekte in einer Szene nicht in einer anderen Szene. Scene Understanding bietet einen Mechanismus, der im Laufe der Zeit nachverfolgt werden kann, aber dies erfolgt mithilfe des SDK. Der Nachverfolgungscode wird bereits im SDK im Prozess Ihrer App ausgeführt.
 
 Da jede Szene ihre Daten im Arbeitsspeicher Ihrer Anwendung speichert, können Sie davon ausgehen, dass die gesamte Funktion des Scene-Objekts oder seine internen Daten immer im Prozess Ihrer Anwendung ausgeführt werden.
 
@@ -91,19 +91,19 @@ Unten sehen Sie ein Beispiel für eine -Struktur in ihrer flachen und logischen 
 </tr>
 </table>
 
-Diese Abbildung veranschaulicht den Unterschied zwischen dem physischen und logischen Layout der Szene. Auf der linken Seite sehen wir das hierarchische Layout der Daten, die Ihre Anwendung beim Aufzählen der Szene sieht. Auf der rechten Seite sehen wir, dass die Szene aus 12 verschiedenen Komponenten besteht, auf die bei Bedarf einzeln zugegriffen werden kann. Bei der Verarbeitung einer neuen Szene erwarten wir, dass Anwendungen diese Hierarchie logisch durchverteilen. Bei der Nachverfolgung zwischen Szenenupdates sind einige Anwendungen jedoch möglicherweise nur an bestimmten Komponenten interessiert, die von zwei Szenen gemeinsam genutzt werden.
+In dieser Abbildung wird der Unterschied zwischen dem physischen und logischen Layout der Szene hervorgehoben. Auf der linken Seite sehen wir das hierarchische Layout der Daten, die Ihrer Anwendung beim Aufzählen der Szene angezeigt werden. Auf der rechten Seite sehen wir, dass die Szene aus 12 unterschiedlichen Komponenten besteht, auf die bei Bedarf einzeln zugegriffen werden kann. Bei der Verarbeitung einer neuen Szene erwarten wir, dass Anwendungen diese Hierarchie logisch durchgehen. Bei der Nachverfolgung zwischen Szenenupdates sind einige Anwendungen jedoch möglicherweise nur an bestimmten Komponenten interessiert, die von zwei Szenen gemeinsam genutzt werden.
 
 ## <a name="api-overview"></a>API-Übersicht
 
-Der folgende Abschnitt bietet eine grundlegende Übersicht über die Konstrukte in Scene Understanding. In diesem Abschnitt erhalten Sie einen Überblick darüber, wie Szenen dargestellt werden und wofür die verschiedenen Komponenten verwendet werden. Der nächste Abschnitt enthält konkrete Codebeispiele und zusätzliche Details, die in dieser Übersicht erläutert werden.
+Der folgende Abschnitt bietet eine allgemeine Übersicht über die Konstrukte in Scene Understanding. In diesem Abschnitt erfahren Sie, wie Szenen dargestellt werden und wofür die verschiedenen Komponenten verwendet werden. Der nächste Abschnitt enthält konkrete Codebeispiele und zusätzliche Details, die in dieser Übersicht erläutert werden.
 
 Alle unten beschriebenen Typen befinden sich im `Microsoft.MixedReality.SceneUnderstanding` -Namespace.
 
 ### <a name="scenecomponents"></a>SceneComponents
 
-Nachdem Sie nun das logische Layout von Szenen verstanden haben, können wir nun das Konzept von SceneComponents und deren Verwendung zum Erstellen von Hierarchien präsentieren. SceneComponents sind die präzisesten Zerlegungen in SceneUnderstanding, die ein einzelnes Kernstück darstellen, z. B. ein Gitternetz, ein Quad oder ein Begrenzungsfeld. SceneComponents sind Dinge, die unabhängig aktualisiert werden können und auf die von anderen SceneComponents verwiesen werden kann. Daher verfügen sie über eine einzelne globale Eigenschaft mit einer eindeutigen ID, die diese Art von Nachverfolgungs-/Verweismechanismus ermöglicht. IDs werden für die logische Zusammensetzung der Szenenhierarchie sowie für die Objektpersistenz (das Aktualisieren einer Szene relativ zu einer anderen) verwendet. 
+Nachdem Sie nun das logische Layout von Szenen verstanden haben, können wir nun das Konzept von SceneComponents und ihre Verwendung zum Erstellen von Hierarchien darstellen. SceneComponents sind die präzisesten Zerlegungen in SceneUnderstanding, die einen einzelnen Kern darstellen, z. B. ein Gitternetz oder ein Quader oder ein Begrenzungsfeld. SceneComponents sind Dinge, die unabhängig aktualisiert werden können und von anderen SceneComponents referenziert werden können. Daher verfügen sie über eine einzelne globale Eigenschaft mit einer eindeutigen ID, die diesen Typ von Nachverfolgungs-/Verweismechanismus ermöglicht. IDs werden für die logische Zusammensetzung der Szenenhierarchie und objektpersistenz verwendet (das Aktualisieren einer Szene relativ zu einer anderen). 
 
-Wenn Sie jede neu berechnete Szene als eindeutig behandeln und einfach alle Daten in ihr aufzählen, sind IDs für Sie größtenteils transparent. Wenn Sie jedoch planen, Komponenten über mehrere Updates nachzuverfolgen, verwenden Sie die IDs, um SceneComponents zwischen Szenenobjekten zu indizieren und zu suchen.
+Wenn Sie jede neu berechnete Szene als eindeutig behandeln und einfach alle darin enthaltenen Daten aufzählen, sind die IDs für Sie weitgehend transparent. Wenn Sie jedoch planen, Komponenten über mehrere Updates nachzuverfolgen, verwenden Sie die IDs, um SceneComponents zwischen Szenenobjekten zu indizieren und zu suchen.
 
 ### <a name="sceneobjects"></a>SceneObjects
 
@@ -113,37 +113,40 @@ SceneObjects kann eine der folgenden Funktionen aufweisen:
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>BESCHREIBUNG</th>
+<th>SceneObjectKind</th> <th>Beschreibung</th>
 </tr>
 <tr><td>Hintergrund</td><td>Das SceneObject ist bekannt dafür, dass es <b>sich nicht</b> um eine der anderen erkannten Arten von Szenenobjekten handelt. Diese Klasse sollte nicht mit Unknown verwechselt werden, wobei Background bekanntermaßen nicht "Wall", "Floor", "ceiling" usw. ist. während unbekannt noch nicht kategorisiert ist.</b></td></tr>
 <tr><td>Wall</td><td>Eine physische Wand. Es wird davon ausgegangen, dass Es sich um wähnbare Umgebungsstrukturen handelt.</td></tr>
 <tr><td>Etage</td><td>Etagen sind alle Oberflächen, auf denen sie begehbar sind. Hinweis: Dies sind keine Etagen. Beachten Sie auch, dass Die Etagen eine beliebige begehbare Oberfläche annehmen und daher keine explizite Annahme einer einzelnen Etage besteht. Strukturen auf mehreren Ebenen, Rampen usw. sollte alle als Floor klassifiziert werden.</td></tr>
 <tr><td>Ceiling</td><td>Die obere Oberfläche eines Raumes.</td></tr>
 <tr><td>Plattform</td><td>Eine große flache Oberfläche, auf der Sie Hologramme platzieren können. Diese stellen in der Regel Tabellen, Arbeitsflächen und andere große horizontale Oberflächen dar.</td></tr>
-<tr><td>World</td><td>Eine reservierte Bezeichnung für geometrische Daten, die von der Bezeichnung unabhängig sind. Das Gitternetz, das durch Festlegen des EnableWorldMesh-Updateflags generiert wird, würde als World klassifiziert.</td></tr>
-<tr><td>Unbekannt</td><td>Dieses Szenenobjekt muss noch klassifiziert und einer Art zugewiesen werden. Dies sollte nicht mit Background verwechselt werden, da dieses Objekt etwas sein könnte, das System hat einfach noch keine ausreichend starke Klassifizierung dafür erstellt.</td></tr>
+<tr><td>World</td><td>Eine reservierte Bezeichnung für geometrische Daten, die von der Bezeichnung unabhängig sind. Das Gitternetz, das durch Festlegen des EnableWorldMesh-Updateflags generiert wird, wird als world klassifiziert.</td></tr>
+<tr><td>Unbekannt</td><td>Dieses Szenenobjekt muss noch klassifiziert und einer Art zugewiesen werden. Dies sollte nicht mit Background verwechselt werden, da es sich bei diesem Objekt um etwas handelt, hat das System noch keine stark genug klassifizierung dafür eingerichtet.</td></tr>
 </tr>
 </table>
 
 ### <a name="scenemesh"></a>SceneMesh
 
-Ein SceneMesh ist eine SceneComponent, die der Geometrie beliebiger geometrischer Objekte mithilfe einer Dreiecksliste ungefährt. SceneMeshes werden in verschiedenen Kontexten verwendet. Sie können Komponenten der wasserdichten Zellenstruktur oder als WorldMesh darstellen, das das Gitternetz für die räumliche Zuordnung darstellt, das der Szene zugeordnet ist. Die index- und vertex-Daten, die mit jedem Gitternetz bereitgestellt werden, verwenden das gleiche vertraute Layout wie die Scheitelpunkt- und Indexpuffer, die zum Rendern von [Dreiecksgittern](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) in allen modernen Rendering-APIs verwendet werden. In Scene Understanding verwenden Gitternetze 32-Bit-Indizes und müssen möglicherweise für bestimmte Rendering-Engines in Brüche zerlegt werden.
+Eine SceneMesh ist eine SceneComponent, die die Geometrie beliebiger geometrischer Objekte mithilfe einer Dreiecksliste annähert. SceneMeshes werden in verschiedenen Kontexten verwendet. Sie können Komponenten der wasserdichten Zellstruktur oder als WorldMesh darstellen, das das der Szene zugeordnete Gitternetz für die ungebundene räumliche Zuordnung darstellt. Die index- und vertex-Daten, die mit jedem Gitternetz bereitgestellt werden, verwenden das gleiche vertraute Layout wie die [Scheitelpunkt- und Indexpuffer,](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) die zum Rendern von Dreiecksgittern in allen modernen Rendering-APIs verwendet werden. In Scene Understanding verwenden Gitternetze 32-Bit-Indizes und müssen möglicherweise in Blöcke für bestimmte Rendering-Engines unterteilt werden.
 
-#### <a name="winding-order-and-coordinate-systems"></a>Wickelrichtungs- und Koordinatensysteme
+#### <a name="winding-order-and-coordinate-systems"></a>Windingreihenfolge und Koordinatensysteme
 
-Von allen Gittern, die von Scene Understanding erzeugt werden, wird erwartet, dass sie Gitternetze in Right-Handed Koordinatensystem mit der Wickelrichtung im Uhrzeigersinn zurückgeben. 
+Von allen von Scene Understanding erzeugten Gitternetzen wird erwartet, dass sie Gitternetze in einem Right-Handed Koordinatensystem zurückgeben, indem sie im Uhrzeigersinn gewunden werden. 
 
-Hinweis: Betriebssystem-Builds vor .191105 weisen möglicherweise einen bekannten Fehler auf, bei dem "World"-Gitternetze in einer Counter-Clockwise-Reihenfolge zurückgelangen, die anschließend behoben wurde.
+Hinweis: Betriebssystembuilds vor .191105 weisen möglicherweise einen bekannten Fehler auf, bei dem "World"-Gitternetze in Counter-Clockwise Wickelreihenfolge zurückgegeben wurden, die anschließend behoben wurde.
 
 ### <a name="scenequad"></a>SceneQuad
 
-Ein SceneQuad ist eine SceneComponent, die 2d-Oberflächen darstellt, die die 3D-Welt einnehmen. SceneQuads können ähnlich wie ARKit ARPlaneAnchor- oder ARCore-Ebenen verwendet werden, bieten jedoch eine erweiterte Funktionalität als 2D-Canvases, die von flachen Apps oder erweiterter UX verwendet werden können. 2D-spezifische APIs werden für Quads bereitgestellt, die die Platzierung und das Layout einfach zu verwenden machen, und die Entwicklung (mit Ausnahme des Renderings) mit Quads sollte sich eher an die Arbeit mit 2d-Canvases als an 3D-Gittern anfühlen.
+Ein SceneQuad ist eine SceneComponent, die 2d-Oberflächen darstellt, die die 3D-Welt einnehmen. SceneQuads können ähnlich wie ARKit ARPlaneAnchor oder ARCore Planes verwendet werden, bieten jedoch eine allgemeinere Funktionalität als 2D-Canvass, die von flachen Apps oder einer erweiterten Benutzererfahrung verwendet werden können. 2D-spezifische APIs werden für Quader bereitgestellt, die die Verwendung von Platzierung und Layout vereinfachen. Die Entwicklung (mit Ausnahme des Renderings) mit Quadern sollte sich eher wie die Arbeit mit 2D-Canvass als mit 3D-Gitternetzen anfühlen.
 
 #### <a name="scenequad-shape"></a>SceneQuad-Form
 
-SceneQuads definieren eine begrenzungsbegrenzete rechteckige Oberfläche in 2d. SceneQuads stellen jedoch Oberflächen mit beliebigen und potenziell komplexen Formen dar (z. B. eine donutförmige Tabelle). Um die komplexe Form der Oberfläche eines Quaders darzustellen, können Sie die GetSurfaceMask-API verwenden, um die Form der Oberfläche in einem von Ihnen bereitgestellten Bildpuffer zu rendern. Wenn das SceneObject mit dem Quader ebenfalls über ein Gitternetz verfügt, sollten die Gittergitterdreiecke diesem gerenderten Bild entsprechen. Beide stellen die echte Geometrie der Oberfläche dar, entweder in 2d- oder 3d-Koordinaten.
+SceneQuads definieren eine umgrenzte rechteckige Oberfläche in 2d. SceneQuads stellen jedoch Oberflächen mit beliebigen und potenziell komplexen Formen dar (z. B. eine donutförmige Tabelle). Um die komplexe Form der Oberfläche eines Quaders darzustellen, können Sie die GetSurfaceMask-API verwenden, um die Form der Oberfläche in einem von Ihnen bereitgestellten Bildpuffer zu rendern. Wenn das SceneObject mit dem Quader ebenfalls über ein Gitternetz verfügt, sollten die Gittergitterdreiecke diesem gerenderten Bild entsprechen. Beide stellen die echte Geometrie der Oberfläche dar, entweder in 2d- oder 3d-Koordinaten.
 
 ## <a name="scene-understanding-sdk-details-and-reference"></a>Details und Referenz zum Scene Understanding SDK
+
+> [!NOTE] 
+> Beachten Sie bei der Verwendung von MRTK, dass Sie mit MRTKs interagieren [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) und daher diesen Abschnitt in den meisten Fällen überspringen können. Weitere Informationen finden Sie in der [MRTK Scene Understanding-Dokumentation.](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding)
 
 Der folgende Abschnitt hilft Ihnen, sich mit den Grundlagen von SceneUnderstanding vertraut zu machen. Dieser Abschnitt sollte Ihnen die Grundlagen bieten. An diesem Punkt sollten Sie über genügend Kontext verfügen, um die Beispielanwendungen zu durchsuchen, um zu sehen, wie SceneUnderstanding ganzheitlicher verwendet wird.
 
@@ -181,7 +184,7 @@ Scene myScene = SceneObserver.ComputeAsync(querySettings, 10.0f).GetAwaiter().Ge
 
 ### <a name="initialization-from-data-also-known-as-the-pc-path"></a>Initialisierung aus Daten (auch bekannt als . PC-Pfad)
 
-Szenen können zwar für die direkte Nutzung berechnet werden, sie können aber auch zur späteren Verwendung in serialisierter Form berechnet werden. Dies hat sich als nützlich für die Entwicklung erwiesen, da Entwickler damit Scene Understanding ohne geräteloses Arbeiten und Testen testen können. Das Serialisieren einer Szene ist nahezu identisch mit der Berechnung. Die Daten werden an Ihre Anwendung zurückgegeben, anstatt lokal vom SDK deserialisiert zu werden. Sie können sie dann selbst deserialisieren oder zur zukünftigen Verwendung speichern.
+Szenen können zwar für die direkte Nutzung berechnet werden, sie können aber auch zur späteren Verwendung in serialisierter Form berechnet werden. Dies hat sich als nützlich für die Entwicklung erwiesen, da Entwickler damit Scene Understanding ohne geräteloses Arbeiten und Testen testen können. Die Serialisierung einer Szene ist nahezu identisch mit der Berechnung. Die Daten werden an Ihre Anwendung zurückgegeben, anstatt lokal vom SDK deserialisiert zu werden. Sie können es dann selbst deserialisieren oder zur zukünftigen Verwendung speichern.
 
 ```cs
 // Create Query settings for the scene update
@@ -200,7 +203,7 @@ Scene mySceneDeSerialized = Scene.Deserialize(newSceneData);
 
 ### <a name="sceneobject-enumeration"></a>SceneObject-Enumeration
 
-Nachdem Ihre Anwendung nun über eine Szene verfügt, wird ihre Anwendung SceneObjects anzeigen und mit ihnen interagieren. Dies erfolgt durch Zugriff auf die **SceneObjects-Eigenschaft:**
+Nachdem Ihre Anwendung nun über eine Szene verfügt, wird ihre Anwendung SceneObjects betrachten und mit ihnen interagieren. Dazu greifen Sie auf die **SceneObjects-Eigenschaft** zu:
 
 ```cs
 SceneObject firstFloor = null;
@@ -216,9 +219,9 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-### <a name="component-update-and-refinding-components"></a>Komponentenupdate und -neufinden von Komponenten
+### <a name="component-update-and-refinding-components"></a>Komponentenaktualisierung und Neusuche von Komponenten
 
-Es gibt eine weitere Funktion, die Komponenten in der Szene mit dem Namen ***FindComponent abruft.*** Diese Funktion ist nützlich, wenn Sie Nachverfolgungsobjekte aktualisieren und später finden. Der folgende Code berechnet eine neue Szene relativ zu einer vorherigen Szene und findet dann den Boden in der neuen Szene.
+Es gibt eine weitere Funktion, die Komponenten in der Szene mit dem Namen ***FindComponent abruft.*** Diese Funktion ist nützlich, wenn Nachverfolgungsobjekte aktualisiert und in späteren Szenen gefunden werden. Der folgende Code berechnet eine neue Szene relativ zu einer vorherigen Szene und sucht dann den Boden in der neuen Szene.
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -233,9 +236,9 @@ if (firstFloor != null)
 }
 ```
 
-## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Zugreifen auf Gitter und Quader von Szenenobjekten
+## <a name="accessing-meshes-and-quads-from-scene-objects"></a>Zugreifen auf Gitternetze und Quader aus Szenenobjekten
 
-Sobald SceneObjects gefunden wurde, möchte Ihre Anwendung höchstwahrscheinlich auf die Daten zugreifen, die in den Quads/Meshes enthalten sind, aus denen sie besteht. Auf diese Daten wird mit den Eigenschaften ***Quads** _ und _ *_Meshes_** zugegriffen. Im folgenden Code werden alle Quads und Gitter des Bodenobjekts aufzählt.
+Sobald SceneObjects gefunden wurde, möchte Ihre Anwendung höchstwahrscheinlich auf die Daten zugreifen, die in den Quadern/Gitternetzen enthalten sind, aus denen sie besteht. Auf diese Daten wird mit den Eigenschaften ***Quads** _ und _ *_Meshes_** zugegriffen. Mit dem folgenden Code werden alle Quader und Gitternetze des Floor-Objekts aufzählt.
 
 ```cs
 
@@ -255,11 +258,11 @@ foreach (var mesh in firstFloor.Meshes)
 }
 ```
 
-Beachten Sie, dass es das SceneObject ist, das über die Transformation verfügt, die relativ zum Ursprung der Szene ist. Dies liegt daran, dass das SceneObject eine Instanz eines "Objekts" darstellt und im Raum verwendbar ist, die Quads und Gitternetze die Geometrie darstellen, die relativ zu ihrem übergeordneten Element transformiert wird. Es ist möglich, dass separate SceneObjects auf die gleichen SceneMesh/SceneQuad SceneComponents verweisen, und es ist auch möglich, dass ein SceneObject über mehr als ein SceneMesh/SceneQuad verfügt.
+Beachten Sie, dass es sich um das SceneObject handelt, das über die Transformation verfügt, die relativ zum Ursprung der Szene ist. Dies liegt daran, dass das SceneObject eine Instanz eines "Dings" darstellt und im Raum veranladbar ist, die Quader und Gitternetze Geometrie darstellen, die relativ zu ihrem übergeordneten Element transformiert wird. Es ist möglich, dass separate SceneObjects auf dieselben SceneMesh/SceneQuad SceneComponents verweisen, und es ist auch möglich, dass ein SceneObject über mehr als eine SceneMesh/SceneQuad verfügt.
 
 ### <a name="dealing-with-transforms"></a>Umgang mit Transformationen
 
-Scene Understanding hat beim Umgang mit Transformationen bewusst versucht, sich an herkömmlichen 3D-Szenendarstellungen auszurichten. Jede Szene ist daher ähnlich wie die gängigsten 3D-Umgebungsdarstellungen auf ein einzelnes Koordinatensystem beschränkt. SceneObjects stellen jeweils ihre Position relativ zu diesem Koordinatensystem zur Verfügung. Wenn Ihre Anwendung mit Szenen zu tun hat, die die Grenze des von einem einzelnen Ursprung bereitgestellten Objekts ausdehnen, kann sie SceneObjects in SpatialAnchors verankern oder mehrere Szenen generieren und zusammenführen. Der Einfachheit halber gehen wir jedoch davon aus, dass sich wässrige Szenen in ihrem eigenen Ursprung befinden, der durch eine NodeId lokalisiert ist, die durch Scene.OriginSpatialGraphNodeId definiert wird.
+Scene Understanding hat einen absichtlichen Versuch unternommen, sich beim Umgang mit Transformationen an herkömmlichen 3D-Szenendarstellungen auszurichten. Jede Szene ist daher auf ein einzelnes Koordinatensystem beschränkt, ähnlich wie die meisten gängigen 3D-Umgebungsdarstellungen. SceneObjects geben jeweils ihre Position relativ zu diesem Koordinatensystem an. Wenn Ihre Anwendung mit Szenen zu tun hat, die die Grenze des von einem einzelnen Ursprung bereitgestellten Objekts ausdehnen, kann sie SceneObjects in SpatialAnchors verankern oder mehrere Szenen generieren und zusammenführen. Der Einfachheit halber gehen wir jedoch davon aus, dass sich wässrige Szenen in ihrem eigenen Ursprung befinden, der durch eine NodeId lokalisiert ist, die durch Scene.OriginSpatialGraphNodeId definiert wird.
 
 Der folgende Unity-Code zeigt beispielsweise, wie Sie Windows Perception- und Unity-APIs verwenden, um Koordinatensysteme zusammen auszurichten. Ausführliche Informationen zu den Windows Perception-APIs finden Sie unter [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) und [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) und [Mixed Reality nativen Objekte in Unity,](/windows/mixed-reality/unity-xrdevice-advanced) um Details zum Abrufen eines SpatialCoordinateSystem zu erhalten, das dem Ursprung von Unity entspricht.
 
@@ -352,7 +355,7 @@ Quader verfügen über rechteckige Kästchen, stellen aber beliebig formatierte 
 > [!NOTE]
 > Die Koordinaten der Ausgabe sind relativ zum Quader im "Quad space", wobei die linke obere Ecke (x = 0, y = 0) ist, genau wie bei anderen Rect-Typen von Fenstern. Berücksichtigen Sie dies unbedingt, wenn Sie mit den Ursprüngen Ihrer eigenen Objekte arbeiten. 
 
-Das folgende Beispiel zeigt, wie Sie die zentriertste positionierbare Position finden und ein Hologramm am Quader verankern.
+Im folgenden Beispiel wird gezeigt, wie Sie die ortsmittelbarste Position finden und ein Hologramm am Quader ankert.
 
 ```cs
 // This code assumes you already have a "Root" object that attaches the Scene's Origin.
@@ -382,7 +385,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 }
 ```
 
-Die Schritte 1 bis 4 hängen stark von Ihrem jeweiligen Framework bzw. Ihrer Implementierung ab, die Designs sollten jedoch ähnlich sein. Es ist wichtig zu beachten, dass das Quad einfach eine 2D-Begrenzungsebene darstellt, die im Raum lokalisiert ist. Wenn Ihre Engine/Ihr Framework weiß, wo sich das Quad befindet, und Ihre Objekte relativ zum Quader rooten, werden Ihre Hologramme im Hinblick auf die reale Welt korrekt gefunden. 
+Die Schritte 1 bis 4 hängen stark von Ihrem spezifischen Framework bzw. Ihrer Implementierung ab, die Designs sollten jedoch ähnlich sein. Es ist wichtig zu beachten, dass der Quader einfach eine umgrenzte 2D-Ebene darstellt, die im Raum lokalisiert ist. Wenn Ihre Engine/Ihr Framework weiß, wo sich das Quad befindet, und Ihre Objekte relativ zum Quader stammen, werden Ihre Hologramme in Bezug auf die reale Welt korrekt angeordnet. 
 
 <!-- 
 // TODO: Add sample link when released
@@ -391,7 +394,7 @@ For more detailed information please see our samples on quads which show specifi
 
 ### <a name="mesh"></a>Mesh
 
-Gitternetze stellen geometrische Darstellungen von Objekten oder Umgebungen dar. Ähnlich [wie](../../design/spatial-mapping.md)bei der räumlichen Zuordnung verwenden Gitternetzindex- und Vertexdaten, die mit jedem Gitternetz für räumliche Oberflächen bereitgestellt werden, das gleiche vertraute Layout wie die Scheitelpunkt- und Indexpuffer, die zum Rendern von Dreiecksgittern in allen modernen Rendering-APIs verwendet werden. Scheitelpunktpositionen werden im Koordinatensystem von `Scene` bereitgestellt. Die spezifischen APIs, die verwendet werden, um auf diese Daten zu verweisen, lauten wie folgt:
+Gittermodelle stellen geometrische Darstellungen von Objekten oder Umgebungen dar. Ähnlich wie [bei der räumlichen Zuordnung](../../design/spatial-mapping.md)verwenden Gitterindex- und Vertexdaten, die mit jedem Raumoberflächengitternetz bereitgestellt werden, das gleiche vertraute Layout wie die Scheitelpunkt- und Indexpuffer, die zum Rendern von Dreiecksgitternetzen in allen modernen Rendering-APIs verwendet werden. Scheitelpunktpositionen werden im Koordinatensystem des `Scene` bereitgestellt. Die spezifischen APIs, die zum Verweisen auf diese Daten verwendet werden, lauten wie folgt:
 
 ```cs
 void GetTriangleIndices(int[] indices);
@@ -408,11 +411,11 @@ mesh.GetTriangleIndices(indices);
 mesh.GetVertexPositions(positions);
 ```
 
-Die Index-/Scheitelpunktpuffer müssen >= Index-/Scheitelpunktanzahl angegeben werden, können aber andernfalls beliebig dimensioniert werden, um eine effiziente Speicherwiederverwendung zu ermöglichen.
+Die Index-/Scheitelpunktpuffer müssen >= index/vertex counts sein, können aber andernfalls beliebig dimensioniert werden, um eine effiziente Speicherwiederverwendung zu ermöglichen.
 
 ### <a name="collidermesh"></a>ColliderMesh
 
-Szenenobjekte ermöglichen den Zugriff auf Gitter- und Collidermeshdaten über die Eigenschaften Meshes und ColliderMeshes. Diese Gitternetze werden immer übereinstimmen, was bedeutet, dass der i'th-Index der Meshes-Eigenschaft die gleiche Geometrie wie der i'th-Index der ColliderMeshes-Eigenschaft darstellt. Wenn die Laufzeit bzw. das Objekt Collidergitter unterstützt, erhalten Sie garantiert das niedrigste Polygon und die höchste Näherung, und es ist eine bewährte Methode, ColliderMeshes überall dort zu verwenden, wo Ihre Anwendung Collider verwenden würde. Wenn das System keine Collider unterstützt, ist das in ColliderMeshes zurückgegebene Mesh-Objekt dasselbe Objekt wie das Netz, das Arbeitsspeichereinschränkungen reduziert.
+Szenenobjekte ermöglichen den Zugriff auf Mesh- und Collidermeshdaten über die Eigenschaften Meshes und ColliderMeshes. Diese Gitternetze stimmen immer überein, was bedeutet, dass der i'th-Index der Meshes-Eigenschaft die gleiche Geometrie wie der i'th-Index der ColliderMeshes-Eigenschaft darstellt. Wenn die Laufzeit bzw. das Objekt Collidergitternetze unterstützt, erhalten Sie garantiert das niedrigste Polygon und die höchste Näherung der Reihenfolge, und es empfiehlt sich, ColliderMeshes überall dort zu verwenden, wo Ihre Anwendung Collider verwenden würde. Wenn das System keine Collider unterstützt, ist das in ColliderMeshes zurückgegebene Mesh-Objekt dasselbe Objekt wie das Gittermodell, das Arbeitsspeichereinschränkungen reduziert.
 
 ## <a name="developing-with-scene-understanding"></a>Entwickeln mit Szenenverständnis
 
@@ -422,13 +425,13 @@ An diesem Punkt sollten Sie die grundlegenden Bausteine der Szene verstehen, die
 
 Scene Understanding-Beispielcode für Unity finden Sie auf unserer [Unity-Beispielseite.](https://github.com/sceneunderstanding-microsoft/unitysample) Mit dieser Anwendung können Sie mit Ihrem Gerät kommunizieren und die verschiedenen Szenenobjekte rendern, oder Sie können eine serialisierte Szene auf Ihrem PC laden und Scene Understanding ohne Gerät erleben.
 
-### <a name="where-can-i-get-sample-scenes"></a>Wo erhalte ich Beispielszenen?
+### <a name="where-can-i-get-sample-scenes"></a>Wo finde ich Beispielszenen?
 
-Wenn Sie über eine HoloLens2 verfügen, können Sie jede erfasste Szene speichern, indem Sie die Ausgabe von ComputeSerializedAsync in einer Datei speichern und sie nach Belieben deserialisieren. 
+Wenn Sie über eine HoloLens2 verfügen, können Sie jede von Ihnen erfasste Szene speichern, indem Sie die Ausgabe von ComputeSerializedAsync in einer Datei speichern und nach Beholholen deserialisieren. 
 
-Wenn Sie kein HoloLens2-Gerät haben, aber mit Scene Understanding spielen möchten, müssen Sie eine vorab erfasste Szene herunterladen. Das Scene Understanding-Beispiel enthält derzeit serialisierte Szenen, die heruntergeladen und nach Belieben verwendet werden können. Sie finden sie hier:
+Wenn Sie kein HoloLens2-Gerät haben, aber mit Scene Understanding spielen möchten, müssen Sie eine vorab erfasste Szene herunterladen. Das Scene Understanding-Beispiel wird derzeit mit serialisierten Szenen bereitgestellt, die heruntergeladen und nach Behebung verwendet werden können. Sie finden sie hier:
 
-[Scene Understanding-Beispielszenen](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
+[Szenenverständnis von Beispielszenen](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>Siehe auch
 

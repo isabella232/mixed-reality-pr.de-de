@@ -1,22 +1,22 @@
 ---
-title: Android- und iOS-MRTK-Konfiguration (ARFoundation)
-description: Dokumentation zum Konfigurieren von MRTK für Android und iOS (ARFoundation) in Unity
+title: Erstellen und Bereitstellen für Android und iOS über AR Foundation
+description: Dokumentation zum Konfigurieren des MRTK für Android und iOS (ARFoundation) in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: 9f621008db76e3f8e443545b795db442d7c17dda
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345133"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449739"
 ---
-# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>Konfigurieren des MRTK für iOS und Android [Experimentell]
+# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>Erstellen und Bereitstellen für Android und iOS über AR Foundation [Experimentell]
 
 ## <a name="install-required-packages"></a>Installieren erforderlicher Pakete
 
-1. Laden Sie das **Paket Microsoft.MixedReality.Toolkit.Unity.Foundation** von [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0) oder der [Unity-Paket-Manager](../configuration/usingupm.md) herunter, und importieren Sie es.
+1. Laden Sie das **Paket Microsoft.MixedReality.Toolkit.Unity.Foundation** von [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) oder dem Unity-Projekt herunter, und [importieren Sie es Paket-Manager](../configuration/usingupm.md)
 
 1. Installieren Sie im Unity Paket-Manager (UPM) die folgenden Pakete:
 
@@ -24,49 +24,49 @@ ms.locfileid: "110345133"
 
     | **Android** | **iOS** | Kommentare |
     | --- | --- | --- |
-    | AR Foundation  <br/> Version: 1.5.0 – Vorschauversion 6 | AR Foundation  <br/> Version: 1.5.0 – Vorschauversion 6 | Für Unity 2018.4 ist dieses Paket als Vorschauversion enthalten. So zeigen Sie das Paket an: `Window` > `Package Manager` > `Advanced` > `Show Preview Packages` |
-    | ARCore XR-Plug-In <br/> Version: 2.1.2 | ARKit XR-Plug-In <br/> Version: 2.1.2 | |
+    | AR Foundation  <br/> Version: 1.5.0 – Preview 6 | AR Foundation  <br/> Version: 1.5.0 – Preview 6 | Für Unity 2018.4 ist dieses Paket als Vorschauversion enthalten. So zeigen Sie das Paket an: `Window` > `Package Manager` > `Advanced` > `Show Preview Packages` |
+    | ARCore-XR-Plug-In <br/> Version: 2.1.2 | ARKit XR-Plug-In <br/> Version: 2.1.2 | |
 
     **Unity 2019.4.x**
 
     | **Android** | **iOS** |
     | --- | --- |
     | AR Foundation  <br/> Version: 2.1.8 |  AR Foundation  <br/> Version: 2.1.8 |
-    | ARCore XR-Plug-In <br/> Version: 2.1.11 | ARKit XR-Plug-In <br/> Version: 2.1.9 |
+    | ARCore-XR-Plug-In <br/> Version: 2.1.11 | ARKit XR-Plug-In <br/> Version: 2.1.9 |
 
-    **Unity 2020.1.x (derzeit nicht formal unterstützt, nur zu Informationszwecken enthalten)**
+    **Unity 2020.3.x**
 
     | **Android** | **iOS** |
     | --- | --- |
-    | AR Foundation  <br/> Version: 3.1.3 |  AR Foundation  <br/> Version: 3.1.3 |
-    | ARCore XR-Plug-In <br/> Version: 3.1.4 | ARKit XR-Plug-In <br/> Version: 3.1.3 |
+    | AR Foundation  <br/> Version: 3.1.3 |  AR Foundation  <br/> Version: 4.0.12 |
+    | ARCore-XR-Plug-In <br/> Version: 3.1.4 | ARKit XR-Plug-In <br/> Version: 4.1.7 |
 
-1. Aktualisieren Sie die VON UNITYAR definierten MRTK-Skripts, indem Sie das Menüelement **aufrufen: Mixed Reality > Toolkit > Utilities > UnityAR > Update Scripting Defines**
+1. Aktualisieren Sie die definitionen MRTK UnityAR-Skripts, indem Sie das Menüelement aufrufen: **Mixed Reality > Toolkit > Utilities > UnityAR > Update Scripting Defines**
 
-    ![Update Scripting Defines](../features/images/UpdateScriptingDefineUnityAR.png)
+    ![Skripterstellung aktualisieren definiert](../features/images/UpdateScriptingDefineUnityAR.png)
 
 
 ## <a name="enabling-the-unity-ar-camera-settings-provider"></a>Aktivieren des Unity AR-Kameraeinstellungsanbieters
 
-In den folgenden Schritten wird davon ausgegangen, dass das MixedRealityToolkit-Objekt verwendet wird. Die für andere Dienstregistrierungsstellen erforderlichen Schritte können unterschiedlich sein.
+Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts voraus. Die für andere Dienstregistrierungen erforderlichen Schritte können unterschiedlich sein.
 
 1. Wählen Sie das MixedRealityToolkit-Objekt in der Szenenhierarchie aus.
 
-    ![KONFIGURIERTE MRTK-Szenenhierarchie](../features/images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK– Konfigurierte Szenenhierarchie](../features/images/MRTK_ConfiguredHierarchy.png)
 
-1. Wählen Sie **Kopieren und anpassen** aus, um das MRTK-Profil zu klonen, um die benutzerdefinierte Konfiguration zu aktivieren.
+1. Wählen **Sie Kopieren und anpassen aus,** um das MRTK-Profil zu klonen, um die benutzerdefinierte Konfiguration zu aktivieren.
 
-    ![Klonen eines MRTK-Profils](../features/images/camera-system/CloneProfileARFoundation.png)
+    ![Klonen des MRTK-Profils](../features/images/camera-system/CloneProfileARFoundation.png)
 
-1. Klicken Sie neben dem Kameraprofil auf **Klonen.**
+1. Klicken **Sie neben** dem Kameraprofil auf Klonen.
 
     ![Klonen des MRTK-Kameraprofils](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. Navigieren Sie im Bereich Inspektor zum Abschnitt Kamerasystem, und erweitern Sie den Abschnitt Anbieter für **Kameraeinstellungen.**
+1. Navigieren Sie im Inspektorbereich zum Abschnitt Kamerasystem, und erweitern Sie den Abschnitt **Kameraeinstellungsanbieter.**
 
     ![Erweitern von Einstellungsanbietern](../features/images/camera-system/ExpandProviders.png)
 
-1. Klicken Sie auf **Kameraeinstellungsanbieter hinzufügen,** und erweitern Sie den neu hinzugefügten Eintrag **Neue Kameraeinstellungen.**
+1. Klicken **Sie auf Kameraeinstellungsanbieter hinzufügen,** und erweitern Sie den neu hinzugefügten Eintrag **Neue Kameraeinstellungen.**
 
     ![Erweitern des neuen Einstellungsanbieters](../features/images/camera-system/ExpandNewProvider.png)
 
@@ -74,10 +74,10 @@ In den folgenden Schritten wird davon ausgegangen, dass das MixedRealityToolkit-
 
     ![Auswählen des Unity AR-Einstellungsanbieters](../features/images/camera-system/SelectUnityArSettings.png)
 
-    Weitere Informationen zum Konfigurieren des Unity AR-Kameraeinstellungsanbieters finden Sie unter [Unity AR camera settings provider (Unity AR-Kameraeinstellungsanbieter).](../features/camera-system/unity-ar-camera-settings.md)
+    Weitere Informationen zum Konfigurieren des Unity AR-Kameraeinstellungsanbieters: [Unity AR-Kameraeinstellungsanbieter](../features/camera-system/unity-ar-camera-settings.md).
 
 > [!NOTE]
-> Diese Installation überprüft (wenn die Anwendung gestartet wird), ob sich die AR Foundation-Komponenten in der Szene befinden. Andernfalls werden sie automatisch hinzugefügt, damit sie mit ARCore und ARKit funktionieren.
+> Diese Installation überprüft (wenn die Anwendung gestartet wird), ob sich die AR Foundation-Komponenten in der Szene befinden. Falls nicht, werden sie automatisch hinzugefügt, damit sie mit ARCore und ARKit funktionieren.
 > Wenn Sie ein bestimmtes Verhalten festlegen müssen, sollten Sie die benötigten Komponenten selbst hinzufügen.
 > Weitere Informationen zu AR Foundation-Komponenten und zur Installation finden Sie in dieser [Dokumentation.](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.2/manual/index.html#samples)
 
@@ -89,10 +89,10 @@ In den folgenden Schritten wird davon ausgegangen, dass das MixedRealityToolkit-
 
 1. Stellen Sie sicher, dass der zugeordnete XR-Plug-In-Verwaltungsanbieter aktiviert ist.
 
-    iOS XR-Plug-In-Verwaltung:  ![ XR-Plug-In-Verwaltung iOS](../features/images/XRManagementiOS.png)
+    iOS-XR-Plug-In-Verwaltung:  ![ XR-Plug-In-Verwaltung iOS](../features/images/XRManagementiOS.png)
 
 1. Erstellen und Ausführen der Szene
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Unity AR-Kameraeinstellungen](../features/camera-system/unity-ar-camera-settings.md)
+- [Unity-AR-Kameraeinstellungen](../features/camera-system/unity-ar-camera-settings.md)
