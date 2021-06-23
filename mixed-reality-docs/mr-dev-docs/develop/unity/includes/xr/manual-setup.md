@@ -1,31 +1,31 @@
 ---
-ms.openlocfilehash: 2af7fd36e29ed9aca2c7f743a40dc7b9dad17f09
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: c965eb1b4edc91421e0b8b2e96893a04431aef6e
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394584"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112535698"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
-Installieren Sie das OpenXR-Plug-In mit der neuen Mixed Reality Feature Tool-Anwendung. Befolgen Sie [die Installations- und Verwendungsanweisungen,](../../welcome-to-mr-feature-tool.md) und wählen Sie **Mixed Reality OpenXR-Plug-In-Paket** in der Kategorie Mixed Reality Toolkit aus:
+Installieren Sie das OpenXR-Plug-In mit der neuen Anwendung Mixed Reality Feature Tool. Befolgen Sie die [Installations- und Nutzungsanweisungen,](../../welcome-to-mr-feature-tool.md) und wählen Sie das **Mixed Reality OpenXR-Plug-In-Paket** in der Kategorie **Plattformunterstützung** aus:
 
-![Mixed Reality fenster feature tool packages with open xr plugin (Öffnen des XR-Plug-Ins hervorgehoben)](../../images/feature-tool-openxr.png)
+![Mixed Reality Fenster "Featuretoolpakete" mit hervorgehobener Hervorhebung des geöffneten xr-Plug-Ins](../../images/feature-tool-openxr.png)
 
 ### <a name="setting-your-build-target"></a>Festlegen des Buildziels
 
-Wenn Sie Desktop VR als Ziel verwenden möchten, empfehlen wir die Verwendung der eigenständigen PC-Plattform, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
+Wenn Sie desktop VR als Ziel verwenden möchten, empfehlen wir, die pc Standalone Platform zu verwenden, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
 
-![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener eigenständiger &-Plattform](../../images/wmr-config-img-3.png)
+![Screenshot des Fensters "Buildeinstellungen", das im Unity-Editor geöffnet ist, wobei PC, Mac & eigenständige Plattform hervorgehoben ist](../../images/wmr-config-img-3.png)
 
-Wenn Sie auf HoloLens 2 möchten, müssen Sie zum folgenden Universelle Windows-Plattform:
+Wenn Sie HoloLens 2 als Ziel haben, müssen Sie zum Universelle Windows-Plattform wechseln:
 
-1. Wählen **Sie Datei > Buildeinstellungen... aus.**
-2. Wählen **Universelle Windows-Plattform** in der Liste Plattform aus, und wählen Sie **Plattform wechseln aus.**
-3. Legen Sie **Architektur** auf **ARM 64** fest
+1. Wählen Sie **Datei > Buildeinstellungen... aus.**
+2. Wählen Sie **Universelle Windows-Plattform** in der Liste Plattform und dann **Plattform wechseln** aus.
+3. Legen Sie **Architecture** (Architektur) auf **ARM64** fest.
 4. Legen Sie **Zielgerät** auf **HoloLens** fest
-5. Legen Sie **Buildtyp** auf **D3D** fest
-6. Legen Sie **UWP SDK** auf **Zuletzt installiert** fest
+5. Legen Sie **Build Type** (Buildtyp) auf **D3D Project** (D3D-Projekt) fest.
+6. Festlegen der **Ziel-SDK-Version** auf **"Latest installed" (Neueste Installation)**
 
 ![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener Universelle Windows-Plattform](../../images/wmr-config-img-4.png)
 
@@ -33,98 +33,98 @@ Wenn Sie auf HoloLens 2 möchten, müssen Sie zum folgenden Universelle Windows-
 
 So legen Sie OpenXR als Runtime in Unity fest:
 
-1. Navigieren Sie im Unity-Editor zu **Bearbeiten > Projekteinstellungen.**
-2. Wählen Sie in der Liste der Einstellungen **XR-Plug-In-Verwaltung aus.**
-3. Aktivieren Sie die **Kontrollkästchen XR beim Start initialisieren** und **OpenXR.**
-4. Wenn Sie HoloLens 2 auswählen, stellen Sie sicher, dass Sie sich auf der UWP-Plattform sind, und wählen **Sie Microsoft HoloLens Feature Set (Featuresatz) aus.**
+1. Navigieren Sie im Unity-Editor zu **> Projekteinstellungen bearbeiten.**
+2. Wählen Sie in der Liste der Einstellungen die Option **XR-Plug-In-Verwaltung** aus.
+3. Wählen Sie **XR-Plug-In-Verwaltung installieren** aus, wenn das ![ Fenster "Projekteinstellungen" im Unity-Editor geöffnet und die XR-Plug-In-Verwaltung hervorgehoben angezeigt wird.](../../images/wmr-config-img-5.png)
+4. Aktivieren Sie das Kontrollkästchen **XR beim Start initialisieren.**
+5. Wenn Sie desktop-VR als Ziel verwenden, bleiben Sie auf der Registerkarte PC Standalone (Monitor) und aktivieren Sie die Kontrollkästchen **OpenXR** und **Windows Mixed Reality Featuresatz.**
+6. Wenn HoloLens 2 als Ziel festgelegt ist, wechseln Sie zur Registerkarte Universelle Windows-Plattform (Windows-Logo), und wählen Sie die Felder **OpenXR** und **Microsoft HoloLens Featuresatz** aus.
 
-![Screenshot des im Unity-Editor geöffneten Projekteinstellungspanels mit hervorgehobener XR-Plug-In-Verwaltung](../../images/openxr-img-05.png)
+![Screenshot des im Unity-Editor geöffneten Bereichs "Projekteinstellungen" mit hervorgehobener XR-Plug-In-Verwaltung](../../images/openxr-img-05.png)
+
+> [!IMPORTANT]
+> Wenn neben **OpenXR-Plug-In** ein gelbes Warnsymbol angezeigt wird, klicken Sie auf das Symbol, und wählen **Sie Alle korrigieren** aus, bevor Sie fortfahren. Der Unity-Editor muss möglicherweise neu gestartet werden, damit die Änderungen wirksam werden.
+
+![Screenshot des Fensters "OpenXR-Projektvalidierung"](../../images/openxr-img-06.png)
 
 ### <a name="optimization"></a>Optimization
 
-Wenn Sie für HoloLens 2 entwickeln, navigieren Sie zu Mixed Reality> **OpenXR >** Empfohlene Projekteinstellungen für HoloLens 2 anwenden, um eine bessere App-Leistung zu erzielen.
+Wenn Sie für HoloLens 2 entwickeln, wählen Sie das **Mixed Reality > Projekt > Empfohlene Projekteinstellungen für HoloLens 2** Menüelement anwenden aus, um eine bessere App-Leistung zu erzielen.
 
-![Screenshot des geöffneten Mixed Reality-Menüelements mit ausgewählter Option "OpenXR"](../../images/openxr-img-08.png)
+![Screenshot: Geöffnetes Mixed Reality-Menüelement mit ausgewählter Option "OpenXR"](../../images/openxr-img-08.png)
 
-> [!IMPORTANT]
-> Wenn neben Dem OpenXR-Plug-In ein gelbes **Warnsymbol** angezeigt wird, klicken Sie auf das Symbol, und wählen **Sie Alles korrigieren aus,** bevor Sie fortfahren. Der Unity-Editor muss möglicherweise neu gestartet werden, damit die Änderungen wirksam werden.
-
-![Screenshot des OpenXR-Projektüberprüfungsfensters](../../images/openxr-img-06.png)
-
-Sie können nun mit der Entwicklung mit OpenXR in Unity beginnen.  Fahren Sie mit dem nächsten Abschnitt fort, um zu erfahren, wie Sie die OpenXR-Beispiele verwenden.
+Sie können nun mit der Entwicklung mit OpenXR in Unity beginnen!  Fahren Sie mit dem nächsten Abschnitt fort, um zu erfahren, wie Sie die OpenXR-Beispiele verwenden.
 
 ### <a name="unity-sample-projects-for-openxr-and-hololens-2"></a>Unity-Beispielprojekte für OpenXR und HoloLens 2
 
-Sehen Sie sich das [Repository mit OpenXR](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) Mixed Reality-Beispielen für Unity-Beispielprojekte an, in dem gezeigt wird, wie Sie Unity-Anwendungen für HoloLens 2- oder Mixed Reality-Headsets mithilfe des Mixed Reality OpenXR-Plug-Ins erstellen.
+Sehen Sie sich das Repository mit [OpenXR-Mixed Reality-Beispielen](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) für Unity-Beispielprojekte an, in dem veranschaulicht wird, wie Unity-Anwendungen für HoloLens 2 oder Mixed Reality Headsets mithilfe des Mixed Reality OpenXR-Plug-Ins erstellt werden.
+
+Wenn Sie bereit sind, selbst mit einem leeren Projekt zu beginnen, fahren Sie mit dem Artikel [Kameraeinrichtung](../../camera-in-unity.md) fort.
 
 # <a name="windows-xr"></a>[Windows XR](#tab/windowsxr)
 
-Wenn Sie Desktop VR als Ziel verwenden möchten, empfehlen wir die Verwendung der eigenständigen PC-Plattform, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
+> [!CAUTION]
+> Das Windows XR-Plug-In ist in Unity 2021.1 veraltet und wird in Unity 2021.2 entfernt.  Für die Unity 2020-Entwicklung empfiehlt Microsoft stattdessen das OpenXR-Plug-In.
 
-![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener eigenständiger &-Plattform](../../images/wmr-config-img-3.png)
+Wenn Sie desktop VR als Ziel verwenden möchten, empfehlen wir, die pc Standalone Platform zu verwenden, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
 
-Wenn Sie auf HoloLens 2 möchten, müssen Sie zum folgenden Universelle Windows-Plattform:
+![Screenshot des Fensters "Buildeinstellungen", das im Unity-Editor geöffnet ist, wobei PC, Mac & eigenständige Plattform hervorgehoben ist](../../images/wmr-config-img-3.png)
 
-1.  Wählen **Sie Datei > Buildeinstellungen... aus.**
-2.  Wählen **Universelle Windows-Plattform** in der Liste Plattform aus, und wählen Sie **Plattform wechseln aus.**
-3.  Legen Sie **Architektur** auf **ARM 64** fest
+Wenn Sie HoloLens 2 als Ziel haben, müssen Sie zum Universelle Windows-Plattform wechseln:
+
+1.  Wählen Sie **Datei > Buildeinstellungen... aus.**
+2.  Wählen Sie **Universelle Windows-Plattform** in der Liste Plattform und dann **Plattform wechseln** aus.
+3.  Legen Sie **Architecture** (Architektur) auf **ARM64** fest.
 4.  Legen Sie **Zielgerät** auf **HoloLens** fest
-5.  Legen Sie **Buildtyp** auf **D3D** fest
-6.  Legen Sie **UWP SDK** auf **Zuletzt installiert** fest
+5.  Legen Sie **Build Type** (Buildtyp) auf **D3D Project** (D3D-Projekt) fest.
+6.  Festlegen der **Ziel-SDK-Version** auf **"Latest installed" (Neueste Installation)**
 7.  Legen Sie **Buildkonfiguration** auf **Release** fest, da beim Debuggen bekannte Leistungsprobleme auftreten.
 
 ![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener Universelle Windows-Plattform](../../images/wmr-config-img-4.png)
 
-Nachdem Sie Ihre Plattform festlegen, müssen Sie [](../../../../design/app-views.md) Unity darüber informieren, dass beim Exportieren eine immersive Ansicht anstelle einer 2D-Ansicht erstellt werden soll:
+Nachdem Sie Ihre Plattform festgelegt haben, müssen Sie Unity mitteilen, dass beim Exportieren eine [immersive Ansicht](../../../../design/app-views.md) anstelle einer 2D-Ansicht erstellt werden soll:
 
-1. Navigieren Sie im Unity-Editor zu Bearbeiten > **Projekteinstellungen,** und wählen Sie **XR-Plug-In-Verwaltung aus.**
+1. Navigieren Sie im Unity-Editor zu **> Projekteinstellungen bearbeiten,** und wählen Sie **XR-Plug-In-Verwaltung** aus.
 
-2. Wählen Sie **XR-Plug-In-Verwaltung installieren aus.**
+2. Wählen Sie **XR-Plug-In-Verwaltung installieren** aus, wenn es angezeigt wird.
 
-![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobener XR-Plug-In-Verwaltung](../../images/wmr-config-img-5.png)
+![Screenshot: Geöffnetes Fenster "Projekteinstellungen" im Unity-Editor mit hervorgehobener XR-Plug-In-Verwaltung](../../images/wmr-config-img-5.png)
 
-3. Wählen **Sie XR beim Start initialisieren und Windows Mixed Reality** 
+3. Wählen Sie **XR beim Start initialisieren** und **Windows Mixed Reality**
 
-![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobener XR-Plug-In-Verwaltung](../../images/wmr-config-img-7.png)
+![Screenshot: Fenster "Projekteinstellungen" im Unity-Editor mit hervorgehobener XR-Plug-In-Verwaltung](../../images/wmr-config-img-7.png)
 
-4. Erweitern Sie den **Abschnitt XR-Plug-In-Verwaltung,** und wählen Sie die Registerkarte **"Einstellungen für die Windows-Plattform"** aus.
-5. Wenn Sie Unity 2020 oder höher verwenden, sehen Sie die Optionen zum Überprüfen von **OpenXR** **oder Windows Mixed Reality**. 
-    * Sie können eine der beiden Laufzeiten auswählen.  Wenn Sie speziell für die HoloLens 2 oder HP Reverb G2 entwickeln und sich entschließen, **OpenXR** auszuprobieren, wählen Sie das Feld OpenXR aus, und sehen Sie sich unseren Leitfaden unter Verwenden des Mixed Reality OpenXR-Plug-Ins für [Unity](../../openxr-getting-started.md) an, um sich für diese Geräte richtig einrichten zu lassen, bevor Sie zu diesem Tutorial zurückkehren.
-
-> [!NOTE]
-> Ab Unity 2020 LTS geht Microsoft von der Entwicklung mit OpenXR aus.  Bei der Migration zu diesem Pfad wird in Unity 2021.1 das Windows XR-Plug-In veraltet sein und in 2021.2 entfernt, wodurch OpenXR der einzige unterstützte Pfad ist. Weitere Informationen finden Sie unter [Verwenden des Mixed Reality OpenXR-Plug-Ins.](../../openxr-getting-started.md)
-
-6. Wenn Sie sich für das **Windows Mixed Reality-Plug-In** entscheiden, aktivieren Sie alle Kontrollkästchen, und legen Sie **Tiefenübermittlungsmodus** auf Tiefe **16 Bit fest.**
+4. Wählen Sie den Abschnitt **XR-Plug-In-Verwaltung**  >  **Windows Mixed Reality** aus, aktivieren Sie alle Kontrollkästchen, und legen Sie **Tiefenpufferformat** auf **Tiefenpuffer 16 Bit** fest.
 
 ![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobener Windows Mixed Reality Abschnitt](../../images/wmr-config-img-8.png)
 
 # <a name="legacy-xr"></a>[Legacy-XR](#tab/legacy)
 
-Wenn Sie Desktop VR als Ziel verwenden möchten, empfehlen wir die Verwendung der eigenständigen PC-Plattform, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
+> [!CAUTION]
+> Legacy-XR ist in Unity 2019 veraltet und wurde in Unity 2020 entfernt.
 
-![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener eigenständiger &-Plattform](../../images/wmr-config-img-3.png)
+Wenn Sie desktop VR als Ziel verwenden möchten, empfehlen wir, die pc Standalone Platform zu verwenden, die standardmäßig für ein neues Unity-Projekt ausgewählt ist:
 
-Wenn Sie auf HoloLens 2 möchten, müssen Sie zum folgenden Universelle Windows-Plattform:
+![Screenshot des Fensters "Buildeinstellungen", das im Unity-Editor geöffnet ist, wobei PC, Mac & eigenständige Plattform hervorgehoben ist](../../images/wmr-config-img-3.png)
 
-1.  Wählen **Sie Datei > Buildeinstellungen... aus.**
-2.  Wählen **Universelle Windows-Plattform** in der Liste Plattform aus, und wählen Sie **Plattform wechseln aus.**
-3.  Legen Sie **Architektur** auf **ARM 64** fest
+Wenn Sie HoloLens 2 als Ziel haben, müssen Sie zum Universelle Windows-Plattform wechseln:
+
+1.  Wählen Sie **Datei > Buildeinstellungen... aus.**
+2.  Wählen Sie **Universelle Windows-Plattform** in der Liste Plattform und dann **Plattform wechseln** aus.
+3.  Legen Sie **Architecture** (Architektur) auf **ARM64** fest.
 4.  Legen Sie **Zielgerät** auf **HoloLens** fest
-5.  Legen Sie **Buildtyp** auf **D3D** fest
-6.  Legen Sie **UWP SDK** auf **Zuletzt installiert** fest
+5.  Legen Sie **Build Type** (Buildtyp) auf **D3D Project** (D3D-Projekt) fest.
+6.  Festlegen der **Ziel-SDK-Version** auf **"Latest installed" (Neueste Installation)**
 7.  Legen Sie **Buildkonfiguration** auf **Release** fest, da beim Debuggen bekannte Leistungsprobleme auftreten.
 
 ![Screenshot des Fensters "Buildeinstellungen" im Unity-Editor mit hervorgehobener Universelle Windows-Plattform](../../images/wmr-config-img-4.png)
 
-Nachdem Sie Ihre Plattform festlegen, müssen Sie [](../../../../design/app-views.md) Unity darüber informieren, dass beim Exportieren eine immersive Ansicht anstelle einer 2D-Ansicht erstellt werden soll.
+Nachdem Sie Ihre Plattform festgelegt haben, müssen Sie Unity mitteilen, dass beim Exportieren eine [immersive Ansicht](../../../../design/app-views.md) anstelle einer 2D-Ansicht erstellt werden soll.
 
-> [!CAUTION]
-> Legacy-XR ist in Unity 2019 veraltet und wurde in Unity 2020 entfernt.
+1. Öffnen **Sie Playereinstellungen...** aus den **Buildeinstellungen... Fenster** und Erweitern der Gruppe **"XR-Einstellungen"**
+2. Wählen Sie im Abschnitt **XR-Einstellungen** die Option **Virtual Reality Unterstützt** aus, um die Liste Virtual Reality-Geräte hinzuzufügen.
+3. Legen Sie **das Tiefenformat** auf **16-Bit-Tiefe** fest, und aktivieren **Sie Die Tiefenpufferfreigabe aktivieren.**
+4. Legen Sie **Stereo Rendering Mode** (Stereorenderingmodus) auf **Single Pass Instanced** (Einzeldurchlauf instanziiert) fest.
+5. Wählen Sie **WSA Holographic Remoting Supported (WSA Holographic Remoting unterstützt)** aus, wenn Sie Remoting im holografischen Wiedergabemodus verwenden möchten.
 
-1. Öffnen **Sie Playereinstellungen...** aus **den Buildeinstellungen... Und** erweitern Sie die **Gruppe XR-Einstellungen.**
-2. Wählen Sie **im Abschnitt XR-Einstellungen** die Option **Virtual Reality Unterstützt aus,** um die Liste Virtual Reality-Geräte hinzuzufügen.
-3. Festlegen **des Tiefenformats** auf **16-Bit-Tiefe und** Aktivieren der **Tiefenpufferfreigabe**
-4. Festlegen des **Stereo-Renderingmodus** auf **eine Einzelpassinstanz**
-5. Wählen **Sie WSA Holographic Remoting Supported (WSA Holographic Remoting Unterstützt)** aus, wenn Sie Holographic Remoting verwenden möchten. 
-
-![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobener Seite "Playereinstellungen"](../../images/wmr-config-img-9.png)
+![Screenshot: Geöffnetes Fenster "Projekteinstellungen" im Unity-Editor mit hervorgehobenen Player-Einstellungen](../../images/wmr-config-img-9.png)
