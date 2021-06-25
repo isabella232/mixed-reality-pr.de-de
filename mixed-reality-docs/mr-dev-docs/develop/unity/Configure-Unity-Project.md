@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, Mixed Reality, Entwicklung, erste Schritte, neues Projekt, Windows Mixed Reality, UWP, XR, Leistung
-ms.openlocfilehash: c496dc415ff09eea3015b5195e131554c43a98f1
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 12c3272708c6375b550d87eac86fe13a60c1f36d
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110257"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906886"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>Konfigurieren von Projekten ohne MRTK
 
@@ -58,10 +58,10 @@ Nachdem Sie Ihre Plattform festgelegt haben, müssen Sie Unity mitteilen, dass b
 
 4. Erweitern Sie den Abschnitt **XR-Plug-In-Verwaltung,** und wählen Sie die Registerkarte **Windows Platform Settings (Windows-Plattformeinstellungen)** aus.
 5. Wenn Sie Unity 2020 oder höher verwenden, werden die Optionen zum Überprüfen von **OpenXR** oder **Windows Mixed Reality** angezeigt. 
-    * Sie können eine der beiden Laufzeiten auswählen.  Wenn Sie speziell für die HoloLens 2 oder HP Reverb G2 entwickeln und **openXR** ausprobieren möchten, wählen Sie das Feld OpenXR aus, und lesen Sie unseren Leitfaden [zum Verwenden des Mixed Reality OpenXR-Plug-Ins für Unity,](openxr-getting-started.md) um sich für diese Geräte ordnungsgemäß einzurichten, bevor Sie zu diesem Tutorial zurückkehren.
+    * Sie können eine der beiden Laufzeiten auswählen.  Wenn Sie speziell für die HoloLens 2 oder HP Reverb G2 entwickeln und **openXR** ausprobieren möchten, wählen Sie das Feld OpenXR aus, und lesen Sie unseren Leitfaden [zum Verwenden des Mixed Reality OpenXR-Plug-Ins für Unity,](./xr-project-setup.md) um sich für diese Geräte ordnungsgemäß einzurichten, bevor Sie zu diesem Tutorial zurückkehren.
 
 > [!NOTE]
-> Ab Unity 2020 LTS setzt Microsoft auf die Entwicklung mit OpenXR.  Bei der Migration zu diesem Pfad wird in Unity 2021.1 das Windows XR-Plug-In veraltet sein und in 2021.2 entfernt, sodass OpenXR der einzige unterstützte Pfad ist. Weitere Informationen finden Sie unter [Verwenden des Mixed Reality OpenXR-Plug-Ins.](openxr-getting-started.md)
+> Ab Unity 2020 LTS setzt Microsoft auf die Entwicklung mit OpenXR.  Bei der Migration zu diesem Pfad wird in Unity 2021.1 das Windows XR-Plug-In veraltet sein und in 2021.2 entfernt, sodass OpenXR der einzige unterstützte Pfad ist. Weitere Informationen finden Sie unter [Verwenden des Mixed Reality OpenXR-Plug-Ins.](./xr-project-setup.md)
 
 6. Wenn Sie sich  für das Windows Mixed Reality-Plug-In entscheiden, aktivieren Sie alle Kontrollkästchen, und legen Sie **Den Tiefenübermittlungsmodus** auf **Tiefe 16 Bit** fest.
 
@@ -102,14 +102,14 @@ HoloLens verfügt über eine GPU der Mobilen Klasse. Wenn Ihre App HoloLens als 
 2. Wählen Sie die **Dropdownliste** unter dem  **Windows Store-Logo**   und dann Sehr  **niedrig** aus. Sie wissen, dass die Einstellung ordnungsgemäß angewendet wird, wenn das Feld in der Windows Store-Spalte und die Zeile "Sehr niedrig" grün sind. 
 3. Wählen Sie im Abschnitt **Schatten** die   Option Schatten deaktivieren **aus.** 
 
-![Screenshot des Fensters "Projekteinstellungen" im Unity-Editor mit hervorgehobener Abschnitt "Qualitätseinstellungen"](images/wmr-config-img-10.png)<br>
+![Screenshot: Geöffnetes Fenster "Projekteinstellungen" im Unity-Editor mit hervorgehobener Abschnitt "Qualitätseinstellungen"](images/wmr-config-img-10.png)<br>
 *Unity-Qualitätseinstellungen*
 
 ## <a name="per-scene-settings"></a>Einstellungen pro Szene
 
 ### <a name="unity-camera-settings"></a>Unity-Kameraeinstellungen
 
-Wenn **Virtual Reality Unterstützt aktiviert ist,** verarbeitet die [Unity-Kamerakomponente](camera-in-unity.md) die [Kopfnachverfolgung und stereoskopisches Rendering.](../platform-capabilities-and-apis/rendering.md) Das bedeutet, dass Sie das Hauptkameraobjekt nicht durch eine benutzerdefinierte Kamera ersetzen müssen.
+Wenn **Virtual Reality Unterstützt aktiviert ist,** verarbeitet die [Unity-Kamerakomponente](camera-in-unity.md) die [Kopfverfolgung und stereoskopisches Rendering.](../platform-capabilities-and-apis/rendering.md) Das bedeutet, dass Sie das Hauptkameraobjekt nicht durch eine benutzerdefinierte Kamera ersetzen müssen.
 
 Wenn Ihre App speziell auf HoloLens ausgerichtet ist, müssen Sie einige Einstellungen ändern, um die Anzeige transparent auf dem Gerät zu optimieren. Mit diesen Einstellungen können Ihre holografischen Inhalte der physischen Welt angezeigt werden:
 

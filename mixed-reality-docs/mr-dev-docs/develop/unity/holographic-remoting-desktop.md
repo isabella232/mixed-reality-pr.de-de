@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/16/2021
 ms.topic: article
 keywords: openxr, unity, hololens, hololens 2, mixed reality, MRTK, Mixed Reality Toolkit, Augmented Reality, Virtual Reality, Mixed Reality-Headsets, Lernen, Tutorial, Erste Schritte, holografisches Remoting, Desktop
-ms.openlocfilehash: 18557af1f08ea05715b92b5072460871bb05a329
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: b04f7e003cff41ae6970bef71c37231b2475ca75
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333414"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906726"
 ---
 # <a name="holographic-remoting-in-desktop-app"></a>Holographic Remoting in der Desktop-App
 
@@ -29,7 +29,7 @@ ms.locfileid: "110333414"
 
     ![Screenshot: Bereich "Projekteinstellungen" im Unity-Editor mit aktivierter App-Remoting](images/openxr-features-img-03-app.png)
 
-5. Schreiben Sie als Nächstes Code, um die Remotingkonfiguration zu konfigurieren und die XR-Initialisierung auszulösen. Die Beispiel-App, die mit dem [Mixed Reality OpenXR-Plug-In](openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2) verteilt wird, enthält AppRemoting.cs. Dies zeigt ein Beispielszenario für das Herstellen einer Verbindung mit einer bestimmten IP-Adresse zur Laufzeit. Wenn Sie die Beispiel-App an diesem Punkt auf einem lokalen Computer bereitstellen, wird ein Eingabefeld für die IP-Adresse mit einer Schaltfläche "Verbinden" angezeigt. Wenn Sie eine IP-Adresse eingeben und auf Verbinden klicken, wird XR initialisiert und versucht, eine Verbindung mit dem Zielgerät herzustellen:
+5. Schreiben Sie als Nächstes Code, um die Remotingkonfiguration zu konfigurieren und die XR-Initialisierung auszulösen. Die Beispiel-App, die mit dem [Mixed Reality OpenXR-Plug-In](./xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2) verteilt wird, enthält AppRemoting.cs. Dies zeigt ein Beispielszenario für das Herstellen einer Verbindung mit einer bestimmten IP-Adresse zur Laufzeit. Wenn Sie die Beispiel-App an diesem Punkt auf einem lokalen Computer bereitstellen, wird ein Eingabefeld für die IP-Adresse mit einer Schaltfläche "Verbinden" angezeigt. Wenn Sie eine IP-Adresse eingeben und auf Verbinden klicken, wird XR initialisiert und versucht, eine Verbindung mit dem Zielgerät herzustellen:
 
     ![Screenshot der Beispiel-App mit Beispiel-App-Remoting-Benutzeroberfläche](images/openxr-sample-app-remoting.png)
 
@@ -39,7 +39,7 @@ ms.locfileid: "110333414"
     StartCoroutine(Remoting.AppRemoting.Connect(remotingConfiguration));
     ```
 
-7. Während der Ausführung können Sie den aktuellen Verbindungsstatus mit der API abrufen und optional XR mit trennen `AppRemoting.TryGetConnectionState` und `AppRemoting.Disconnect()` initialisieren. Dies kann verwendet werden, um die Verbindung mit einem anderen Gerät innerhalb derselben App-Sitzung zu trennen und erneut herzustellen. Die Beispiel-App stellt einen Cube bereit, der die Remotingsitzung trennt, wenn darauf getippt wird.
+7. Während der Ausführung können Sie den aktuellen Verbindungsstatus mit der API abrufen und optional XR mit trennen `AppRemoting.TryGetConnectionState` und `AppRemoting.Disconnect()` initialisieren. Dies kann verwendet werden, um die Verbindung zu trennen und innerhalb derselben App-Sitzung erneut mit einem anderen Gerät zu verbinden. Die Beispiel-App stellt einen umsetzbaren Cube zur Auswahl, mit dem die Remotingsitzung getrennt wird, wenn sie angeknippt wird.
 
 ### <a name="migration-from-previous-apis"></a>Migration von vorherigen APIs
 
@@ -51,7 +51,7 @@ Aus dem Beispielcode in [der Unity-Dokumentation:](https://docs.unity3d.com/2018
 | ---- | ---- |
 | `HolographicRemoting.Connect(String)` | `AppRemoting.Connect(RemotingConfiguration)` |
 | `HolographicRemoting.ConnectionState` | `AppRemoting.TryGetConnectionState(out ConnectionState, out DisconnectReason)`|
-| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: Wird automatisch beim Aufrufen von `AppRemoting.Connect` ]  |
+| `StartCoroutine(LoadDevice("WindowsMR"))`| [N/A: Automatisch beim Aufrufen von `AppRemoting.Connect` ]  |
 
 #### <a name="unityenginexrwindowsmrwindowsmrremoting"></a>UnityEngine.XR.WindowsMR.WindowsMRRemoting
 

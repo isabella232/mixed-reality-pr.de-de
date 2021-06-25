@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Eye Tracking, Mixed Reality, Input, Eye-Gaze, Mixed Reality Headset, Windows Mixed Reality Headset, Virtual Reality Headset, HoloLens, MRTK, Mixed Reality Toolkit, Design, Interaktionen
-ms.openlocfilehash: 207f8d0f179f722a2e4dd6d6e2bdd9cbf75b2250
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 3067f5533dbe70d4decb6b5cf94a3f1c5029115a
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196575"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906866"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>Interaktion mit den Augen auf HoloLens 2
 
@@ -59,28 +59,28 @@ Wenn Sie die Entwurfskonzepte für Head und Eye Tracking in Aktion sehen möchte
 
 Das Erstellen einer Interaktion, die sich schnell bewegende Blickrichtung nutzt, kann eine Herausforderung darstellen. In diesem Abschnitt werden die wichtigsten Vorteile und Herausforderungen zusammengefasst, die beim Entwerfen Ihrer Anwendung zu berücksichtigen sind. 
 
-### <a name="benefits-of-eye-gaze-input"></a>Vorteile der Eingabe mit dem Anving mit den Augen
+### <a name="benefits-of-eye-gaze-input"></a>Vorteile der Eingabe mit den Augen
 
-- **Zeigen mit hoher Geschwindigkeit.** Das Augengefäuss ist die schnellste Reaktion im menschlichen Körper. 
+- **Zeigen mit hoher Geschwindigkeit.** Der Augenlichter ist der am schnellsten reagierende Körper im menschlichen Körper. 
 
 - **Wenig Aufwand.** Es sind kaum physische Bewegungen erforderlich. 
 
-- **Selbstverständlichkeit.** Informationen zu den Augenbewegungen eines Benutzers, die von Benutzern häufig als "Mind Reading" (Denken lesen) beschrieben werden, informieren das System darüber, welches Ziel der Benutzer einspricht. 
+- **Selbstverständlichkeit.** Informationen zu den Augenbewegungen eines Benutzers werden häufig von Benutzern als "Mind Reading" bezeichnet und informieren das System darüber, welches Ziel der Benutzer verwenden möchte. 
 
-- **Alternativer Eingabekanal.** Mit den Augen können Sie eine leistungsstarke unterstützungsbasierte Eingabe für Hand- und Spracheingaben bereitstellen, die auf der erfahrungsbasierten Erfahrung der Benutzer basierend auf ihrer Hand-Augen-Koordination aufbaut.
+- **Alternativer Eingabekanal.** Das Anvieren mit den Augen kann eine leistungsstarke unterstützende Eingabe für Hand- und Spracheingaben bereitstellen, die auf der Erfahrung von Benutzern basierend auf ihrer Hand-Augen-Koordination basiert.
 
-- **Visuelle Aufmerksamkeit.** Ein weiterer wichtiger Vorteil ist die Möglichkeit, daraus zu ziehen, worauf ein Benutzer achten muss. Dies kann in verschiedenen Anwendungsbereichen helfen, von der effektiveren Auswertung verschiedener Entwürfe bis hin zur Unterstützung intelligenterer Benutzeroberflächen und verbesserter sozialer Hinweise für die Remotekommunikation.
+- **Visuelle Aufmerksamkeit.** Ein weiterer wichtiger Vorteil ist die Möglichkeit, abzuleitung, worauf ein Benutzer achten soll. Dies kann in verschiedenen Anwendungsbereiche hilfreich sein, von der effektiveren Bewertung verschiedener Entwürfe bis hin zur Unterstützung intelligenterer Benutzeroberflächen und verbesserter sozialer Hinweise für die Remotekommunikation.
 
-Kurz gesagt bietet die Verwendung des Anvisierens mit den Augen als Eingabe ein schnelles und müheloses kontextbezogenes Eingabesignal. Dies ist in Kombination mit  anderen  Eingaben wie Spracheingaben und manuellen Eingaben zum Bestätigen der Absicht des Benutzers leistungsstark.
+Kurz gesagt bietet die Verwendung des Anvisierens mit den Augen als Eingabe ein schnelles und müheloses kontextbezogenes Eingabesignal. Dies ist leistungsfähig, wenn sie mit anderen Eingaben wie *Spracheingaben* und *manuellen* Eingaben kombiniert wird, um die Absicht des Benutzers zu bestätigen.
 
 
-### <a name="challenges-of-eye-gaze-as-an-input"></a>Herausforderungen beim Anvingen mit den Augen als Eingabe
+### <a name="challenges-of-eye-gaze-as-an-input"></a>Herausforderungen des Anvischens mit den Augen als Eingabe
 
-Obwohl das Anvieren mit den Augen verwendet werden kann, um zufriedenstellende Benutzererfahrungen zu schaffen, die Ihnen das Gefühl geben, ein Superhero zu sein, ist es auch wichtig zu wissen, wofür es nicht gut ist, dies entsprechend zu berücksichtigen. In der folgenden Liste werden einige *zu berücksichtigende* Herausforderungen und deren Bewältigung bei der Arbeit mit Der Blickeingabe erläutert: 
+Obwohl das Anvieren mit den Augen verwendet werden kann, um zufriedenstellende Benutzeroberflächen zu schaffen, die Ihnen das Gefühl eines Superheros geben, ist es auch wichtig zu wissen, wozu es nicht gut ist, dies angemessen zu berücksichtigen. In der folgenden Liste werden einige *zu berücksichtigende Herausforderungen* erläutert, und es wird erläutert, wie sie bei der Arbeit mit Anvisieren mit den Augen berücksichtigt werden müssen: 
 
-- **Ihr Anving mit den Augen ist "immer ein"** In dem Moment, in dem Sie Ihre Augenlider öffnen, beginnen Ihre Augen mit der Korrektur der Dinge in der Umgebung. Wenn Sie auf jedes von Ihnen durchgeführte Aussehen reagieren und versehentlich Aktionen ausführen, da Sie etwas zu lange durchdrungen haben, würde dies zu einer unbesättigenden Erfahrung führen.
-Es wird empfohlen, das Anvieren mit  den Augen mit einem Sprachbefehl, einer Handgeste, einem Schaltflächenklick oder einem erweiterten Verweilen zu kombinieren, um die Auswahl eines Ziels auszulösen (weitere Informationen finden Sie unter Anvieren mit den Augen und [Ausführen).](gaze-and-commit-eyes.md)
-Diese Lösung ermöglicht auch einen Modus, in dem sich der Benutzer frei umschauen kann, ohne durch unfreiwilliges Auslösen von etwas überfordert zu werden. Dieses Problem sollte auch beim Entwerfen von visuellem und akustischem Feedback beim Betrachten eines Ziels berücksichtigt werden.
+- **Das Anvieren mit den Augen ist "immer eingeschaltet".** Sobald Sie Ihre Augenklappen öffnen, beginnen Ihre Augen mit der Fixierung von Dingen in der Umgebung. Wenn Sie auf jeden Blick reagieren und versehentlich Aktionen ausgeben, da Sie etwas zu lange betrachtet haben, würde dies zu einer unbeaufsichtigten Erfahrung führen.
+Es wird empfohlen, das Anvieren mit den Augen mit einem *Sprachbefehl,* einer *Handgeste,* *einem Schaltflächenklick* oder einem erweiterten Verweilen zu kombinieren, um die Auswahl eines Ziels auszulösen (weitere Informationen finden Sie unter [Anvieren mit](gaze-and-commit-eyes.md)den Augen und Ausführen von ).
+Diese Lösung ermöglicht auch einen Modus, in dem sich der Benutzer frei umsehen kann, ohne überlastet zu werden, indem er unwillkürlich etwas auslöst. Dieses Problem sollte auch beim Entwerfen von visuellem und akustischem Feedback beim Betrachten eines Ziels berücksichtigt werden.
 Versuchen Sie nicht, den Benutzer mit sofortigen Pop-Out-Effekten oder Hover-Sounds zu überfordern. Dezentität ist der Schlüssel. Im Folgenden werden einige bewährte Methoden für dieses Thema erläutert, wenn wir über [Entwurfsempfehlungen](eye-gaze-interaction.md#design-recommendations)sprechen.
 
 - **Beobachtung und Kontrolle** Stellen Sie sich vor, Sie möchten ein Foto genau an der Wand begradigen. Sie schauen zuerst auf den Rahmen und dann auf die Umgebung, um festzustellen, ob es richtig ausgerichtet ist. Stellen Sie sich nun vor, wie Sie dies tun würden, wenn Sie Das Anvieren mit den Augen als Eingabe verwenden möchten, um das Bild zu verschieben. Schwierig, nicht wahr? Dies beschreibt die doppelte Rolle des Anverfolgens mit den Augen, wenn es sowohl für die Eingabe als auch für die Steuerung erforderlich ist. 
@@ -101,16 +101,16 @@ Dies sollte sich nicht unbedingt auf den Anwendungsentwurf auswirken, da die Gen
 Im Folgenden sind spezifische Entwurfsempfehlungen aufgeführt, die auf den beschriebenen Vorteilen und Herausforderungen für die Eingabe mit den Augen basieren:
 
 1. **Das Anvischen mit den Augen ist nicht identisch mit dem Anvischen mit dem Kopf:**
-    - **Überlegen Sie, ob schnelle, aber unbende Augenbewegungen zu Ihrer Eingabeaufgabe passen:** Während unsere schnellen und lappenden Augenbewegungen sich gut in der schnellen Auswahl von Zielen in unserem Sichtfeld befinden, sind sie weniger anwendbar für Aufgaben, die reibungslose Eingabebewegungen erfordern (z. B. Zeichnen oder Umkreisen von Anmerkungen). In diesem Fall ist das Zeigen mit Hand oder Kopf zu bevorzugen.
+    - **Überlegen Sie, ob schnelle, aber unregelmäßige Augenbewegungen zu Ihrer Eingabeaufgabe passen:** Unsere schnellen und unregelmäßigen Augenbewegungen eignen sich hervorragend für die schnelle Auswahl von Zielen in unserem Sichtfeld, aber es ist weniger anwendbar für Aufgaben, die reibungslose Eingabebewegungen erfordern (z. B. Zeichnen oder Umkreisen von Anmerkungen). In diesem Fall ist das Zeigen mit Hand oder Kopf zu bevorzugen.
   
-    - **Vermeiden Sie es, etwas direkt an das Anvieren mit den Augen des Benutzers (z. B. einen Schieberegler oder Cursor) anfügen.**
-Bei Cursorn kann dies aufgrund von geringfügigen Offsets im projizierten Signal zum Anvisieren mit den Augen zu einem "flüchtigen Cursoreffekt" führen. Bei einem Schieberegler kann es zu Konflikten mit der doppelten Rolle führen, den Schieberegler mit Ihren Augen zu steuern, während gleichzeitig überprüft werden soll, ob sich das Objekt an der richtigen Position befindet. Für das Beispiel des Schiebereglers ist es sinnvoller, das Anvingen mit den Augen in Kombination mit Handgesten zu verwenden. Dies bedeutet, dass der Benutzer schnell und mühelos zwischen vielen Schiebereglern wechseln und die Hand hochziehen und den Daumen und den Zeigefinger anheften kann, um sie zu greifen und zu bewegen. Wenn der Schieberegler freigegeben wird, wird der Schieberegler nicht mehr bewegt. Benutzer könnten überfordert und abgelenkt werden, insbesondere, wenn das Signal für diesen Benutzer unpräzise ist. 
+    - **Vermeiden Sie es, etwas direkt an das Anvieren mit den Augen des Benutzers anzufügen (z. B. einen Schieberegler oder Cursor).**
+Bei Cursorn kann dies aufgrund von geringfügigen Abweichungen im projizierten Anvisieren mit den Augen zu einem "springenden Cursoreffekt" führen. Mit einem Schieberegler kann dies mit der doppelten Rolle der Steuerung des Schiebereglers mit ihren Augen in Konflikt stehen, während gleichzeitig überprüft werden soll, ob sich das Objekt an der richtigen Position befindet. Für das Beispiel des Schiebereglers ist es sinnvoller, das Anvischen mit den Augen in Kombination mit Handgesten zu verwenden. Dies bedeutet, dass der Benutzer schnell und mühelos zwischen vielen Schiebereglern wechseln kann, seine Hand hochhebt und den Daumen und den Zeigefinger drückt, um ihn zu greifen und zu bewegen. Wenn das Heften losgelassen wird, wird der Schieberegler nicht mehr bewegt. Benutzer können überlastet und ablenkend werden, insbesondere, wenn das Signal für diesen Benutzer unpräzise ist. 
   
-2. **Kombinieren Sie das Anvingen mit den Augen mit anderen Eingaben:** Die Integration von EyeTracking in andere Eingaben, z. B. Handgesten, Sprachbefehle oder Tastendruck, bietet mehrere Vorteile:
-    - **Kostenlose Beobachtung zulassen:** Da die Hauptaufgabe unserer Augen die Beobachtung unserer Umgebung ist, ist es wichtig, dass Benutzer sich umschauen dürfen, ohne Feedback oder Aktionen auszulösen (visuell, a audity und so weiter). 
-    Die Kombination von EyeTracking mit einem anderen Eingabesteuerfeld ermöglicht einen reibungslosen Übergang zwischen der Eyetracking-Beobachtung und den Eingabesteuerungsmodi.
+2. **Kombinieren des Anvingens mit den Augen mit anderen Eingaben:** Die Integration der Blickverfolgung in andere Eingaben, z. B. Handgesten, Sprachbefehle oder Tastendrucke, bietet mehrere Vorteile:
+    - **Kostenlose Beobachtung zulassen:** Angesichts der Tatsache, dass die Hauptaufgabe unserer Augen darin besteht, unsere Umgebung zu beobachten, ist es wichtig, dass Benutzer sich umsehen dürfen, ohne Feedback oder Aktionen auszulösen (visual, audity usw.). 
+    Die Kombination der Eyetracking mit einem anderen Eingabesteuerelement ermöglicht einen reibungslosen Übergang zwischen Blickverfolgungs- und Eingabesteuerungsmodi.
   
-    - **Leistungsstarker Kontextanbieter:** Die Verwendung von Informationen darüber, wo und was der Benutzer beim Sagen eines Sprachbefehls oder mithilfe einer Handgeste betrachtet, ermöglicht die nahtlose Kanalierung der Eingabe über das Sichtfeld. Beispiel: Sagen Sie _"Put that there",_ um ein Hologramm schnell und reibungslos in der gesamten Szene auszuwählen und zu positionieren, indem Sie ein Ziel und sein beabsichtigtes Ziel betrachten. 
+    - **Leistungsstarker Kontextanbieter:** Die Verwendung von Informationen dazu, wo und was der Benutzer beim Sprechen eines Sprachbefehls oder mithilfe einer Handgeste ansieht, ermöglicht das nahtlose Kanalisieren der Eingabe über das Sichtfeld. Beispiel: Sagen Sie _"Put that there",_ um ein Hologramm schnell und reibungslos in der gesamten Szene auszuwählen und zu positionieren, indem Sie ein Ziel und sein beabsichtigtes Ziel betrachten. 
 
     - **Notwendigkeit der Synchronisierung von kombinierten Eingaben:** Die Kombination schneller Augenbewegungen mit komplexeren Eingaben, z. B. langen Sprachbefehlen oder Handgesten, birgt das Risiko, dass der Benutzer sich bereits umsehen kann, bevor der zusätzliche Eingabebefehl abgeschlossen und erkannt wird. Wenn Sie ihre eigenen Eingabesteuerelemente erstellen (z. B. benutzerdefinierte Handgesten), stellen Sie sicher, dass Sie den Beginn dieser Eingabe oder die ungefähre Dauer protokollieren, um sie mit dem zu korrelieren, was ein Benutzer in der Vergangenheit betrachtet hat.
     
@@ -123,13 +123,13 @@ Bei Cursorn kann dies aufgrund von geringfügigen Offsets im projizierten Signal
   
 <br>
 
-Auf dieser Seite haben Sie eine gute Übersicht erhalten, damit Sie mit dem Anvischen mit den Augen als Eingabe in Mixed Reality beginnen können. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen zu Anvingen mit den Augen [in Unity](https://aka.ms/mrtk-eyes) und [Anvingen mit den Augen in DirectX an.](../develop/native/gaze-in-directx.md)
+Auf dieser Seite haben Sie eine gute Übersicht erhalten, damit Sie mit dem Anvischen mit den Augen als Eingabe in Mixed Reality beginnen können. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen zum [Anvischen](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) mit den Augen in Unity und [zum Anvischen mit den Augen in DirectX](../develop/native/gaze-in-directx.md)an.
 
 
 ## <a name="see-also"></a>Siehe auch
 * [Komfort](comfort.md)
-* [Anvingen mit den Augen in DirectX](../develop/native/gaze-in-directx.md)
-* [Anvingen mit den Augen in Unity (Mixed Reality Toolkit)](https://aka.ms/mrtk-eyes)
+* [Anvischen mit den Augen in DirectX](../develop/native/gaze-in-directx.md)
+* [Anvieren mit den Augen in Unity (Mixed Reality Toolkit)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)
 * [Anvisieren und Verweilen](gaze-and-dwell.md)
