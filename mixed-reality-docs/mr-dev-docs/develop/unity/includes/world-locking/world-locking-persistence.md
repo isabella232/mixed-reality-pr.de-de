@@ -1,18 +1,18 @@
 ---
-ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349986"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112908043"
 ---
 # <a name="world-locking-tools-recommended"></a>[World Locking Tools (empfohlen)](#tab/wlt)
 
-Standardmäßig stellen world locking Tools das Unity-Koordinatensystem in Bezug auf die physische Welt sitzungsübergreifend wieder auf. Dies bedeutet, dass das Hologramm nur wieder dieselbe Pose haben muss, damit ein Hologramm nach dem Beenden und erneuten Ausführen der Anwendung an der gleichen Stelle in der physischen Welt angezeigt wird.
+Standardmäßig stellt World Locking Tools das Unity-Koordinatensystem sitzungsübergreifend relativ zur physischen Welt wieder wieder zur Verfügung. Dies bedeutet, dass das Hologramm nur wieder dieselbe Pose haben muss, damit ein Hologramm nach dem Beenden und erneuten Ausführen der Anwendung an der gleichen Stelle in der physischen Welt angezeigt wird.
 
 ![Kontextkomponente "Weltsperrung" im Unity-Inspektor](../../images/world-locking-tools-img-02.png)
 
-Wenn die Anwendung eine feiner geschaltete Steuerung benötigt, werden **auto-save** und **auto-load** möglicherweise im Inspektor deaktiviert, und persistenz wird über ein Skript verwaltet, wie im Abschnitt persistenz der Dokumentation [beschrieben.](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)
+Wenn die Anwendung eine feiner geschaltete Steuerung benötigt, werden **auto-save** und **auto-load** möglicherweise im Inspektor deaktiviert und Persistenz über ein Skript verwaltet, wie im Abschnitt persistenz der [Dokumentation beschrieben.](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
@@ -99,7 +99,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Ein vollständiges Beispiel für das Beibehalten/Nicht beibehalten von Ankern finden Sie im Skript Anchors -> Anchors Sample GameObject und AnchorsSample.cs in der [Mixed Reality OpenXR-Plug-In-Beispielszene:](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2)
+Ein vollständiges Beispiel für das Beibehalten/Nicht beibehalten von Ankern finden Sie im Skript Anchors -> Anchors Sample GameObject und AnchorsSample.cs in der [Mixed Reality OpenXR-Plug-In-Beispielszene:](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)
 
 ![Screenshot des im Unity-Editor geöffneten Hierarchiebereichs mit hervorgehobener Ankerbeispiel](../../images/openxr-features-img-04.png)
 
@@ -128,7 +128,7 @@ So speichern Sie Hologramme für zukünftige Sitzungen:
 
 ### <a name="getting-the-worldanchorstore"></a>Abrufen des WorldAnchorStore
 
-Sie sollten einen Verweis auf den WorldAnchorStore behalten, damit Sie wissen, wann er bereit ist, einen Vorgang durchzuführen. Da es sich um einen asynchronen Aufruf handelt, möchten Sie möglicherweise kurz nach dem Start Aufrufen von:
+Sie sollten einen Verweis auf den WorldAnchorStore behalten, damit Sie wissen, wann er zum Ausführen eines Vorgangs bereit ist. Da es sich um einen asynchronen Aufruf handelt, möchten Sie möglicherweise nach dem Start Aufrufen von:
 
 ```cs
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -193,7 +193,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>Beibehalten von Hologrammen für mehrere Geräte
 
-Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> verwenden, um einen permanenten Cloudanker aus einem lokalen WorldAnchor zu erstellen, den Ihre App dann auf mehreren HoloLens-, iOS- und Android-Geräten finden kann, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.  Da Cloudanker persistent sind, können mehrere Geräte im Laufe der Zeit Inhalte sehen, die relativ zu diesem Anker am gleichen physischen Ort gerendert werden.
+Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> verwenden, um einen permanenten Cloudanker aus einem lokalen WorldAnchor zu erstellen, den Ihre App dann auf mehreren HoloLens-, iOS- und Android-Geräten finden kann, auch wenn diese Geräte nicht gleichzeitig zusammen vorhanden sind.  Da Cloudanker persistent sind, können mehrere Geräte im Laufe der Zeit Inhalte sehen, die relativ zu diesem Anker am gleichen physischen Ort gerendert werden.
 
 Probieren Sie die fünfminütigen Schnellstartanleitungen zu Azure Spatial Anchors Unity aus, um mit dem Erstellen gemeinsamer Erfahrungen in <a href="/azure/spatial-anchors/unity-overview" target="_blank">Unity zu beginnen.</a>
 
