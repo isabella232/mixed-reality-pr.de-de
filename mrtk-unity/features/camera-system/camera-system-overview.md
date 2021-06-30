@@ -1,16 +1,16 @@
 ---
 title: Kamerasystemübersicht
-description: Landing Page für das Kamerasystem im MRTK
+description: Landing Page für kamerasystem in MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Kamera,
-ms.openlocfilehash: 1dc5328f2a6390246918063b6564837f150d28d8
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: e3b7caacaa9baa67fd81f6d32f3fd8c9f123e66d
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144472"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121288"
 ---
 # <a name="camera-system"></a>Kamerasystem
 
@@ -20,11 +20,11 @@ Das Kamerasystem ermöglicht es dem Microsoft Mixed Reality Toolkit, die Kamera 
 
 Das Kamerasystem wird vom MixedRealityToolkit-Objekt (oder einer anderen Dienstregistrierungskomponente) verwaltet.
 
-Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts voraus. Die schritte, die für andere Dienstregistrierungsstelle erforderlich sind, können sich unterscheiden.
+Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts voraus. Die für andere Dienstregistrierungen erforderlichen Schritte können unterschiedlich sein.
 
 1. Wählen Sie das MixedRealityToolkit-Objekt in der Szenenhierarchie aus.
 
-    ![MRTK- konfigurierte Szenenhierarchie](../images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK– Konfigurierte Szenenhierarchie](../images/MRTK_ConfiguredHierarchy.png)
 
 2. Navigieren Sie im Inspektorbereich zum Abschnitt Kamerasystem, und stellen Sie sicher, dass **Kamerasystem** aktivieren aktiviert ist.
 
@@ -44,7 +44,7 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
 ![Kameraeinstellungsanbieter](../images/camera-system/CameraSettingsProviders.png)
 
-Kameraeinstellungsanbieter ermöglichen die plattformspezifische Konfiguration der Kamera. Diese Einstellungen können benutzerdefinierte Konfigurationsschritte und/oder Komponenten enthalten.
+Kameraeinstellungsanbieter ermöglichen die plattformspezifische Konfiguration der Kamera. Diese Einstellungen können benutzerdefinierte Konfigurationsschritte und/oder Komponenten umfassen.
 
 Anbieter können hinzugefügt werden, indem Sie auf die **Schaltfläche Add Camera Settings Provider (Anbieter für Kameraeinstellungen hinzufügen)** klicken. Sie können entfernt werden, indem Sie auf die Schaltfläche rechts vom **-** Anbieternamen klicken.
 
@@ -55,7 +55,7 @@ Anbieter können hinzugefügt werden, indem Sie auf die **Schaltfläche Add Came
 
 ![Kameraanzeigeeinstellungen](../images/camera-system/CameraDisplaySettings.png)
 
-Anzeigeeinstellungen werden sowohl für nicht transparente (z. B. Virtual Reality) als auch für transparente (z. B. Microsoft HoloLens)-Anzeigen angegeben. Die Kamera wird zur Laufzeit mithilfe dieser Einstellungen konfiguriert.
+Anzeigeeinstellungen werden sowohl für nicht transparente (z.B. Virtual Reality) als auch für transparente (z. B. Microsoft HoloLens) Anzeige angegeben. Die Kamera wird zur Laufzeit mithilfe dieser Einstellungen konfiguriert.
 
 **Near Clip**
 
@@ -63,7 +63,7 @@ Die nahe Clipebene ist die nächstgelegene ( in Metern) , die ein virtuelles Obj
 
 **Far Clip**
 
-Die entfernte Clipebene ist die weiteste in Metern, die ein virtuelles Objekt für die Kamera sein und noch gerendert werden kann. Für transparente Geräte wird empfohlen, diesen Wert relativ nahe zu legen, um den realen Raum nicht zu überschreiten und die immersiven Qualitäten der Anwendung zu unterbricht.
+Die entfernte Clipebene ist die weiteste in Metern, die ein virtuelles Objekt für die Kamera sein und noch gerendert werden kann. Für transparente Geräte wird empfohlen, dass dieser Wert relativ nahe ist, um den realen Raum nicht zu überschreiten und die immersiven Qualitäten der Anwendung zu unterbricht.
 
 **Flags löschen**
 
@@ -77,7 +77,7 @@ Wenn die Clear-Flags nicht auf Skybox festgelegt sind, wird die Hintergrundfarbe
 
 Der Wert für die Qualitätseinstellungen gibt die Grafikqualität an, die Unity beim Rendern der Szene verwenden soll. Die Qualitätsstufe ist eine Einstellung auf Projektebene und nicht spezifisch für eine Kamera. Weitere Informationen finden Sie im Artikel [Qualität](https://docs.unity3d.com/Manual/class-QualitySettings.html) in der Unity-Dokumentation.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Dokumentation zur Kamerasystem-API](xref:Microsoft.MixedReality.Toolkit.CameraSystem)
 - [Erstellen eines Kameraeinstellungsanbieters](create-settings-provider.md)

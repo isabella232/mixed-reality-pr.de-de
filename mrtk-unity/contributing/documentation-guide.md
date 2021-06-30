@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: cc5572e65540fa40cb1b8db56afbdd0986c467b9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144801"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121388"
 ---
 # <a name="documentation-guidelines"></a>Dokumentationsrichtlinien
 
@@ -37,14 +37,14 @@ In diesem Abschnitt werden häufig benötigte Features beschrieben. Um zu sehen,
    1. Die tatsächliche Zahl im Code ist irrelevant. Bei der Analyse wird die richtige Elementnummer festgelegt.
 
 - Aufzählungszeichenlisten
-  - Geschachtelte Aufzählungspunkte
-- Fett **formatiertem** Text mit \* \* doppeltem Sternchen\*\*
+  - Geschachtelte Aufzählungspunktlisten
+- Fett **formatiertes** Text mit \* \* doppeltem Sternchen\*\*
 - _Text_ *mit* \_ Unterstrich \_ oder \* einzelnem Sternchen\*
 - Text `highlighted as code` innerhalb eines Satzes mit \` Rückquotes\`
 - Links zu dokumentationsseitigen [MRTK-Dokumentationsrichtlinien](documentation-guide.md)
 - Links zu [Ankern innerhalb einer Seite](#style); Anker werden gebildet, indem Leerzeichen durch Bindestriche ersetzt und in Kleinbuchstaben konvertiert werden.
 
-Für Codebeispiele verwenden wir die Blöcke mit drei Backticks und geben \` \` \` *csharp* als Sprache für die Syntaxhervorhebung an:
+Für Codebeispiele verwenden wir die Blöcke mit drei Backticks \` \` \` und geben *csharp* als Sprache für die Syntaxhervorhebung an:
 
 ```c#
 int SampleFunction(int i)
@@ -53,22 +53,22 @@ int SampleFunction(int i)
 }
 ```
 
-Wenn Code in einem Satz erwähnt `use a single backtick` wird.
+Wenn Code innerhalb eines Satzes erwähnt `use a single backtick` wird.
 
 ### <a name="todos"></a>Todos
 
-Vermeiden Sie die Verwendung von TODOs in Dokumentationen, da diese TODOs (z. B. Code-TODOs) im Laufe der Zeit dazu tendieren, sich anzusammeln und Informationen darüber zu erhalten, wie sie aktualisiert werden sollten und warum sie verloren gehen.
+Vermeiden Sie die Verwendung von TODOs in der Dokumentation, da diese TODOs (z. B. Code-TODOs) im Laufe der Zeit in der Regel ansammeln und Informationen darüber sammeln, wie sie aktualisiert werden sollten und warum verloren gehen.
 
-Wenn das Hinzufügen eines ToDO unbedingt erforderlich ist, führen Sie die folgenden Schritte aus:
+Wenn es unbedingt erforderlich ist, einen Todo hinzuzufügen, führen Sie die folgenden Schritte aus:
 
-1. Erstellen Sie ein neues Problem auf GitHub, das den Kontext hinter dem TODO beschreibt, und stellen Sie genügend Hintergrund zur Verfügung, damit ein anderer Mitwirkender den ToDO verstehen und dann beheben kann.
-2. Verweisen Sie in der Dokumentation auf die Problem-URL in der Todo-Datei.
+1. Erstellen Sie ein neues Problem auf GitHub, in dem der Kontext hinter dem TODO beschrieben wird, und stellen Sie genügend Hintergrund bereit, den ein anderer Mitwirkender verstehen und dann die TODO-Datei beheben kann.
+2. Verweisen Sie in der Dokumentation im Todo auf die Problem-URL.
 
 \<\!-- TODO[https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
 
 ### <a name="highlighted-sections"></a>Hervorgehobene Abschnitte
 
-Um bestimmte Punkte für den Reader hervorzuheben, verwenden Sie *> [!NOTE]* , und , um die folgenden *> [!WARNING]* *> [!IMPORTANT]* Stile zu erzeugen. Es wird empfohlen, Hinweise für allgemeine Punkte und Warnungs-/wichtige Punkte nur für spezielle relevante Fälle zu verwenden.
+Um bestimmte Punkte für den Reader hervorzuheben, verwenden Sie *> [!NOTE]* , und , um die folgenden *> [!WARNING]* *> [!IMPORTANT]* Stile zu erzeugen. Es wird empfohlen, Hinweise für allgemeine Punkte und Warnungen/wichtige Punkte nur für spezielle relevante Fälle zu verwenden.
 
 > [!NOTE]
 > Beispiel für eine Notiz
@@ -83,15 +83,15 @@ Um bestimmte Punkte für den Reader hervorzuheben, verwenden Sie *> [!NOTE]* , u
 
 ### <a name="introduction"></a>Einführung
 
-Der Teil direkt nach dem Haupttitel des Kapitels sollte als kurze Einführung in das Kapitel dienen. Lassen Sie dies nicht zu lang, sondern fügen Sie untergeordnete Überschriften hinzu. Diese ermöglichen das Verknüpfen mit Abschnitten und können als Lesezeichen gespeichert werden.
+Der Teil direkt nach dem Titel des Hauptkapitels sollte als kurze Einführung dienen, worum es im Kapitel geht. Machen Sie dies nicht zu lang, sondern fügen Sie untergeordnete Überschriften hinzu. Diese ermöglichen das Verknüpfen mit Abschnitten und können als Lesezeichen gespeichert werden.
 
-### <a name="main-body"></a>Hauptteil
+### <a name="main-body"></a>Haupttext
 
-Verwenden Sie Zwei- und Dreiebenen-Überschriften, um den Rest zu strukturieren.
+Verwenden Sie Überschriften mit zwei ebenen und drei Ebenen, um den Rest zu strukturiert.
 
 **Miniabschnitte**
 
-Verwenden Sie eine fett formatierten Textzeile für Blöcke, die hervorgehoben werden sollten. Wir könnten dies zu einem bestimmten Zeitpunkt durch Vier-Level-Überschriften ersetzen.
+Verwenden Sie eine fett formatierte Textzeile für Blöcke, die hervorgehoben werden sollten. Wir könnten dies zu einem bestimmten Zeitpunkt durch Vier-Ebenen-Überschriften ersetzen.
 
 ### <a name="see-also-section"></a>Abschnitt "Siehe auch"
 
@@ -111,10 +111,10 @@ Allgemeine Faustregel: Versuchen Sie, professional zu **klingen.** Dies bedeutet
 1. Versuchen Sie nicht, (übermäßig) heiter zu sein.
 2. Nie "I" schreiben
 3. Vermeiden Sie "we". Dies kann in der Regel einfach mithilfe von "MRTK" umformuliert werden. Beispiel: "Wir unterstützen dieses Feature" -> "MRTK unterstützt dieses Feature" oder "Die folgenden Features werden unterstützt...".
-4. Versuchen Sie auf ähnliche Weise, "Sie" zu vermeiden. Beispiel: "Mit dieser einfachen Änderung kann Ihr Shader konfiguriert werden!" -> "Shader können mit geringem Aufwand konfigurierbar gemacht werden."
+4. Versuchen Sie auf ähnliche Weise, "Sie" zu vermeiden. Beispiel: "Mit dieser einfachen Änderung kann der Shader konfiguriert werden!" -> "Shader können mit geringem Aufwand konfigurierbar gemacht werden."
 5. Verwenden Sie keine Diskettenausdrücke.
 6. Vermeiden Sie es, übermäßig aufgeregt zu klingen, da wir nichts verkaufen müssen.
-7. Vermeiden Sie auf ähnliche Weise, zu drastisch zu sein. Ausrufezeichen sind selten erforderlich.
+7. Vermeiden Sie auf ähnliche Weise, zu drastisch zu sein. Ausrufezeichen werden selten benötigt.
 
 ### <a name="capitalization"></a>Großbuchstaben
 
@@ -126,61 +126,61 @@ Allgemeine Faustregel: Versuchen Sie, professional zu **klingen.** Dies bedeutet
 
 ### <a name="emphasis-and-highlighting"></a>Hervorhebung
 
-Es gibt zwei Möglichkeiten, Wörter hervorzuheben oder hervorzuheben, indem Sie sie fett oder kursiv gestalten. Der Effekt von fett formatiertem Text ist, dass **fetter Text ausfällt** und daher leicht bemerkt werden kann, wenn ein Textteil übersprungen wird oder sogar nur über eine Seite gescrollt wird. Fett ist hervorragend, um Ausdrücke hervorzuheben, die sich Menschen merken sollten. Verwenden Sie jedoch **nur selten fetten Text,** da er im Allgemeinen ablenkend ist.
+Es gibt zwei Möglichkeiten, Wörter hervorzuheben oder hervorzuheben, indem Sie sie fett oder kursiv gestalten. Der Effekt von fett formatiertem Text besteht darin, dass **fetter Text ausfällt** und daher leicht bemerkt werden kann, wenn ein Textteil übersprungen oder sogar nur über eine Seite gescrollt wird. Fett ist hervorragend, um Ausdrücke hervorzuheben, die sich Menschen merken sollten. Verwenden Sie jedoch **nur selten fetten Text,** da er im Allgemeinen ablenkend ist.
 
-Häufig möchte man etwas , das logisch zusammengehörig ist, "gruppiert" oder einen bestimmten Begriff hervorheben, da er eine besondere Bedeutung hat. Solche Dinge müssen nicht aus dem gesamten Text herausstehen. Verwenden Sie italischen Text als einfache *Methode, um* etwas hervorzuheben.
+Häufig möchte man entweder etwas gruppieren, das logisch zusammen gehört, oder einen bestimmten Begriff hervorheben, da er eine besondere Bedeutung hat. Solche Dinge müssen sich nicht aus dem Gesamttext herausstellen. Verwenden Sie italischen Text als *einfache Methode,* um etwas hervorzuheben.
 
-Wenn ein Dateiname, ein Pfad oder ein Menüeintrag im Text erwähnt wird, bevorzugen Sie es, es kursalisch zu machen, um ihn logisch zu gruppieren, ohne ablenkend zu sein.
+Wenn ein Dateiname, ein Pfad oder ein Menüeintrag im Text erwähnt wird, bevorzugen Sie es, italisch zu machen, um ihn logisch zu gruppieren, ohne ablenkend zu sein.
 
-Versuchen Sie im Allgemeinen, unnötige **Texthervorhebungen zu vermeiden.** Spezielle Begriffe können einmal hervorgehoben werden, um den Leser darauf aufmerksam zu machen. Wiederholen Sie diese Hervorhebungen nicht im gesamten Text, wenn sie keinen Zweck mehr erfüllen und nur abgelenkt sind.
+Versuchen Sie im Allgemeinen, **unnötige Texthervorhebungen** zu vermeiden. Sonderbegriffe können einmal hervorgehoben werden, um den Leser darauf aufmerksam zu machen. Wiederholen Sie diese Hervorhebung nicht im gesamten Text, wenn sie keinen Zweck mehr erfüllt und nur ablenkt.
 
 ### <a name="mentioning-menu-entries"></a>Erwähnen von Menüeinträgen
 
-Wenn ein Benutzer auf einen Menüeintrag klickt, gilt die aktuelle *Konvention: Project > Files > Create > Leaf*
+Wenn sie einen Menüeintrag erwähnen, auf den ein Benutzer klicken soll, lautet die aktuelle Konvention: *Project > Files > Create > Leaf*
 
 ### <a name="links"></a>Links
 
-Fügen Sie so viele nützliche Links wie möglich zu anderen Seiten ein, aber jeder Link nur einmal. Angenommen, ein Leser klickt auf jeden Link auf der Seite und überlegen, wie lästig es wäre, wenn dieselbe Seite 20 Mal geöffnet wird.
+Fügen Sie so viele nützliche Links wie möglich zu anderen Seiten ein, jedoch nur einmal. Angenommen, ein Leser klickt auf jeden Link auf der Seite, und denken Sie darüber nach, wie ängstlich es wäre, wenn dieselbe Seite 20 Mal geöffnet würde.
 
 Links bevorzugen, die in einen Satz eingebettet sind:
 
-- BAD: Richtlinien sind nützlich. Weitere [Informationen finden Sie](../contributing/documentation-guide.md) in diesem Kapitel.
+- BAD: Richtlinien sind nützlich. Weitere Informationen finden Sie [in diesem Kapitel.](../contributing/documentation-guide.md)
 - GUT: [Richtlinien](documentation-guide.md) sind nützlich.
 
-Vermeiden Sie externe Links. Sie können veraltet sein oder urheberrechtlich geschützte Inhalte enthalten.
+Vermeiden Sie externe Links, da diese veraltet sein oder urheberrechtlich geschützte Inhalte enthalten können.
 
-Wenn Sie einen Link hinzufügen, überlegen Sie, ob er auch im Abschnitt [Siehe auch aufgeführt werden](#see-also) soll. Überprüfen Sie auf ähnliche Weise, ob ein Link zur neuen Seite der Seite mit Verknüpfter Seite hinzugefügt werden soll.
+Berücksichtigen Sie beim Hinzufügen eines Links, ob er auch im Abschnitt [Siehe auch](#see-also) aufgeführt werden soll. Überprüfen Sie auf ähnliche Weise, ob der Seite, mit der verknüpft wird, ein Link zur neuen Seite hinzugefügt werden soll.
 
 ### <a name="images--screenshots"></a>Bilder/Screenshots
 
-**Verwenden Sie Screenshots mit Sparendem.** Das Verwalten von Bildern in der Dokumentation ist eine menge Arbeit, kleine Änderungen an der Benutzeroberfläche können viele Screenshots veraltet machen. Die folgenden Regeln verringern den Wartungsaufwand:
+**Verwenden Sie Screenshots mit geringem Nutzen.** Die Verwaltung von Bildern in der Dokumentation ist sehr arbeitsaufwänd, kleine Änderungen an der Benutzeroberfläche können dazu führen, dass viele Screenshots veraltet sind. Die folgenden Regeln verringern den Wartungsaufwand:
 
-1. Verwenden Sie keine Screenshots für Dinge, die in Text beschrieben werden können. Erstellen **Sie insbesondere niemals einen Screenshot eines Eigenschaftenrasters,** um nur Eigenschaftennamen und -werte zu zeigen.
+1. Verwenden Sie keine Screenshots für Dinge, die in Text beschrieben werden können. Erstellen **Sie insbesondere niemals einen Screenshot eines Eigenschaftenrasters,** um ausschließlich Eigenschaftennamen und -werte zu zeigen.
 2. Schließen Sie keine Dinge in einen Screenshot ein, die für das Angezeigte irrelevant sind. Wenn z. B. ein Renderingeffekt angezeigt wird, erstellen Sie einen Screenshot des Viewports, schließen Sie jedoch alle benutzeroberflächen um ihn herum aus. Wenn Sie eine Benutzeroberfläche anzeigen, versuchen Sie, Fenster so zu verschieben, dass nur dieser wichtige Teil im Bild zu sehen ist.
-3. Wenn Sie die Screenshot-Benutzeroberfläche einschließen, zeigen Sie nur die wichtigen Teile an. Wenn Sie z. B. über Schaltflächen in einer Symbolleiste sprechen, erstellen Sie ein kleines Bild, das die wichtigen Symbolleistenschaltflächen anzeigt, aber alles um sie herum ausschließt.
+3. Wenn Sie die Screenshot-Benutzeroberfläche einschließen, zeigen Sie nur die wichtigen Teile an. Wenn Sie z. B. über Schaltflächen in einer Symbolleiste sprechen, erstellen Sie ein kleines Bild, das die wichtigen Symbolleistenschaltflächen anzeigt, aber alles um sich herum ausschließt.
 4. Verwenden Sie nur Bilder, die einfach zu reproduzieren sind. Das bedeutet, dass Sie keine Marker oder Hervorhebungen in Screenshots zeichnen. Erstens gibt es keine konsistenten Regeln, wie diese aussehen sollten. Zweitens ist das Reproduzieren eines solchen Screenshots ein zusätzlicher Aufwand. Beschreiben Sie stattdessen die wichtigen Teile im Text. Es gibt Ausnahmen von dieser Regel, aber sie sind selten.
 5. Natürlich ist es viel aufwendiger, ein animiertes GIF neu zu erstellen. Erwarten Sie, dass sie bis zum Ende der Zeit neu erstellt werden soll, oder erwarten Sie, dass Personen sie auslösen, wenn sie diese Zeit nicht aufwenden möchten.
 6. Halten Sie die Anzahl der Bilder in einem Artikel gering. Häufig ist es eine gute Methode, einen Gesamtscreenshot eines Tools zu erstellen, das alles zeigt, und dann den Rest im Text zu beschreiben. Dies erleichtert das Ersetzen des Screenshots bei Bedarf.
 
 Einige andere Aspekte:
 
-- Die Editor-Benutzeroberfläche für Screenshots sollte den hellgrauen Design-Editor verwenden, da nicht alle Benutzer Zugriff auf das dunkle Design haben und wir die Dinge so konsistent wie möglich halten möchten.
-- Die Standardbildbreite beträgt 500 Pixel, da dies auf den meisten Monitoren gut angezeigt wird. Versuchen Sie nicht, zu stark davon zu abweichen. Eine Breite von 800 Pixeln sollte das Maximum sein.
+- Die Benutzeroberfläche des Editors für Screenshots sollte den Editor für hellgraue Designs verwenden, da nicht alle Benutzer Zugriff auf das dunkle Design haben und wir die Konsistenz so konsistent wie möglich halten möchten.
+- Die Standardbildbreite beträgt 500 Pixel, da dies auf den meisten Monitoren gut angezeigt wird. Versuchen Sie nicht, zu viel davon abzuweichen. Die Breite sollte maximal 800 Pixel betragen.
 - Verwenden Sie PNGs für Screenshots der Benutzeroberfläche.
 - Verwenden Sie PNGs oder JPGs für 3D-Viewport-Screenshots. Qualität gegenüber Komprimierungsverhältnis bevorzugen.
 
 ### <a name="list-of-component-properties"></a>Liste der Komponenteneigenschaften
 
-Verwenden Sie beim Dokumentieren einer Liste von Eigenschaften fett formatierten Text, um den Eigenschaftsnamen hervorzuheben, und beschreiben Sie sie dann mit Zeilenumbrüchen und regulärem Text. Verwenden Sie keine Unter- oder Aufzählungszeichen.
+Verwenden Sie beim Dokumentieren einer Liste von Eigenschaften fetten Text, um den Eigenschaftennamen zu markieren, und verwenden Sie dann Zeilenumbrüche und regulären Text, um sie zu beschreiben. Verwenden Sie keine Unterkapitel oder Aufzählungslisten.
 
-Vergessen Sie auch nicht, alle Sätze mit einem Zeitraum zu beenden.
+Vergessen Sie außerdem nicht, alle Sätze mit einem Punkt fertig zu stellen.
 
-## <a name="page-completion-checklist"></a>Checkliste für den Seitenabschluss
+## <a name="page-completion-checklist"></a>Prüfliste für seitenseitige Vervollständigung
 
 1. Stellen Sie sicher, dass die Richtlinien dieses Dokuments eingehalten wurden.
-1. Durchsuchen Sie die Dokumentstruktur, und sehen Sie sich an, ob das neue Dokument im Abschnitt [Siehe auch](#see-also) auf anderen Seiten erwähnt werden könnte.
-1. Falls verfügbar, sollten Sie eine Person mit Kenntnissen des Themas "Proof-Read" auf der Seite auf technische Richtigkeit prüfen lassen.
-1. Sie müssen die Seite für Stil und Formatierung lesen. Dies kann jemand sein, der mit dem Thema nicht vertraut ist. Dies ist auch eine gute Idee, um Feedback darüber zu erhalten, wie verständlich die Dokumentation ist.
+1. Durchsuchen Sie die Dokumentstruktur, und überprüfen Sie, ob das neue Dokument im Abschnitt [Siehe auch](#see-also) auf anderen Seiten erwähnt werden kann.
+1. Falls verfügbar, sollten Sie jemanden mit Kenntnissen zum Thema bitten, die Seite auf technische Richtigkeit zu überprüfen.
+1. Bitten Sie jemanden, die Seite für Stil und Formatierung zu lesen. Dies kann jemand sein, der mit dem Thema nicht vertraut ist. Dies ist auch eine gute Idee, feedback zu erhalten, wie verständlich die Dokumentation ist.
 
 ## <a name="source-documentation"></a>Quelldokumentation
 
@@ -217,7 +217,7 @@ Pull Requests, die ohne Zusammenfassungen für Klassen, Strukturen oder Enumerat
 
 ### <a name="property-method-event-summary-blocks"></a>Eigenschaften-, Methoden- und Ereigniszusammenfassungsblöcke
 
-Eigenschaften, Methoden und Ereignisse (PMEs) sowie Felder müssen unabhängig von der Codesichtbarkeit (öffentlich, privat, geschützt und intern) mit Zusammenfassungsblöcken dokumentiert werden. Das Tool zur Dokumentationsgenerierung ist für das Herausfiltern und Veröffentlichen nur der öffentlichen und geschützten Features verantwortlich.
+Eigenschaften, Methoden und Ereignisse (PMEs) sowie Felder müssen unabhängig von der Codesichtbarkeit (öffentlich, privat, geschützt und intern) mit Zusammenfassungsblöcken dokumentiert werden. Das Tool zur Dokumentationsgenerierung ist dafür verantwortlich, nur die öffentlichen und geschützten Features heraus zu filtern und zu veröffentlichen.
 
 HINWEIS: Ein Zusammenfassungsblock ist für Unity-Methoden **nicht** erforderlich (z. B. "Aktualisieren", "Starten", "Aktualisieren").
 
@@ -275,7 +275,7 @@ Beim Definieren und Aufzählen muss code auch die Bedeutung der Enumerationswert
 /// </remarks>
 ```
 
-## <a name="how-to-documentation"></a>Dokumentation zur Vorgehensweise
+## <a name="how-to-documentation"></a>Dokumentation mit Anleitung
 
 Viele Benutzer des Mixed Reality Toolkits müssen die API-Dokumentation möglicherweise nicht verwenden. Diese Benutzer nutzen unsere vorgefertigten, wiederverwendbaren Prefabs und Skripts, um ihre Erfahrungen zu erstellen.
 
@@ -297,11 +297,11 @@ Einige Beispiele, in denen die Entwurfsdokumentation hilfreich sein kann:
 
 Diese Art von Dokumentation wird **dringend** empfohlen und **kann** im Rahmen einer Pull Request-Überprüfung angefordert werden.
 
-Dies kann sich von der Entwurfsempfehlung auf der [MS Developer-Website unterscheiden.](/windows/mixed-reality/design)
+Dies kann sich von der Entwurfsempfehlung auf der [MS Developer-Website](/windows/mixed-reality/design) unterscheiden oder nicht.
 
 ## <a name="performance-notes"></a>Leistungshinweise
 
-Einige wichtige Features sind mit Leistungskosten ausgestattet. Häufig hängt dieser Code davon ab, wie sie konfiguriert sind.
+Einige wichtige Features sind mit Leistungskosten verbunden. Dieser Code hängt häufig davon ab, wie sie konfiguriert sind.
 
 Beispiel:
 
@@ -310,13 +310,13 @@ When using the spatial mapping component, the performance impact will increase w
 It is recommended to use the least detail possible for the desired experience.
 ```
 
-Leistungshinweise werden für CPU- und/oder  GPU-komponenten empfohlen und können im Rahmen einer Pull Request-Überprüfung angefordert werden. Alle anwendbaren Leistungshinweise müssen in der API- und **Übersichtsdokumentation** enthalten sein.
+Leistungshinweise werden für CPU- und/oder GPU-starke Komponenten empfohlen und **können** im Rahmen einer Pull Request-Überprüfung angefordert werden. Alle anwendbaren Leistungshinweise müssen in der **API- und** Übersichtsdokumentation enthalten sein.
 
 ## <a name="breaking-changes"></a>Aktuelle Änderungen
 
-Die Dokumentation zu Breaking Changes besteht aus einer Datei der obersten [Ebene,](../contributing/breaking-changes.md) die mit den einzelnen Features der einzelnen Breaking-changes.md.
+Die Dokumentation zu Breaking Changes besteht aus einer [Datei](../contributing/breaking-changes.md) der obersten Ebene, die mit den einzelnen breaking-changes.md jedes Featurebereichs verknüpft ist.
 
-Der Featurebereich breaking-changes.md Dateien enthält die Liste aller bekannten Breaking Changes  für ein bestimmtes Release sowie den Verlauf der Breaking Changes aus früheren Releases.
+Der Funktionsbereich breaking-changes.md Dateien enthält die Liste aller bekannten Breaking Changes für ein bestimmtes Release **sowie** den Verlauf der Breaking Changes aus früheren Releases.
 
 Beispiel:
 
@@ -334,9 +334,9 @@ No known breaking changes
 ...
 ```
 
-Die informationen, die in den Breaking-changes.md enthalten sind, werden in den Versionshinweisen für jedes neue MRTK-Release aggregiert.
+Die Informationen auf Featureebene breaking-changes.md Dateien werden in den Versionshinweisen für jedes neue MRTK-Release aggregiert.
 
-Alle Breaking Changes, die Teil einer Änderung **sind,** müssen als Teil eines Pull Requests dokumentiert werden.
+Alle Breaking Changes, die Teil einer Änderung sind, **müssen** als Teil eines Pull Requests dokumentiert werden.
 
 ## <a name="tools-for-editing-markdown"></a>Tools zum Bearbeiten von MarkDown
 
@@ -344,12 +344,12 @@ Alle Breaking Changes, die Teil einer Änderung **sind,** müssen als Teil eines
 
 Beim Schreiben der Dokumentation wird auch dringend empfohlen, die folgenden beiden Erweiterungen zu installieren:
 
-- Docs Markdown-Erweiterung für Visual Studio Code: Verwenden Sie ALT+M, um ein Menü mit Dokumenterstellungsoptionen zu öffnen.
+- Docs Markdown Extension for Visual Studio Code : Verwenden Sie ALT+M, um ein Menü mit Dokumenterstellungsoptionen aufzurufen.
 
-- Rechtschreibprüfung für Code: Falsch geschriebene Wörter werden unterstrichen. Klicken Sie mit der rechten Maustaste auf ein falsch geschriebenes Wort, um es zu ändern oder im Wörterbuch zu speichern.
+- Code spell checker ( Rechtschreibprüfung für Code): Falsch geschriebene Wörter werden unterstrichen. Klicken Sie mit der rechten Maustaste auf ein falsch geschriebenes Wort, um es zu ändern oder im Wörterbuch zu speichern.
 
 Beides ist im von Microsoft veröffentlichten Docs Authoring Pack enthalten.
 
-## <a name="see-also"></a>Weitere Informationen 
+## <a name="see-also"></a>Siehe auch 
 
 * [Beispiellink](https://www.google.com)

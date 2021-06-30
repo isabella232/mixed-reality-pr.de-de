@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Ereignisse
-ms.openlocfilehash: 12719a6c749a03648d4f75e9e6461b85cc9ab275
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144297"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121598"
 ---
 # <a name="core-system"></a>Kernsystem
 
@@ -34,20 +34,20 @@ Eingabeereignisse werden in der Regel auf zwei verschiedenen Kanälen ausgelöst
 
 ### <a name="objects-in-focus"></a>Objekte im Fokus
 
-Ereignisse können direkt an ein GameObject gesendet werden, das den Fokus besitzt. Ein Objekt kann beispielsweise über ein Skript verfügen, das [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) implementiert.
+Ereignisse können direkt an ein GameObject gesendet werden, das den Fokus besitzt. Ein Objekt kann z. B. über ein Skript verfügen, das [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) implementiert.
 Dieses Objekt würde Berührungsereignisse erhalten, wenn es von einer Hand, die sich in der Nähe befindet, fokussiert wird. Diese Ereignistypen werden in der GameObject-Hierarchie "nach oben" angezeigt, bis ein GameObject gefunden wird, das das Ereignis behandeln kann.
 
 Dies erfolgt [mithilfe von ExecuteHierarchy](https://docs.unity3d.com/ScriptReference/EventSystems.ExecuteEvents.ExecuteHierarchy.html) innerhalb der Standardimplementierung des Eingabesystems.
 
 ### <a name="global-listeners"></a>Globale Listener
 
-Ereignisse können an globale Listener gesendet werden. Es ist möglich, sich für alle Eingabeereignisse zu registrieren, indem Sie die Schnittstelle des Eingabesystems [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) verwenden. Es wird empfohlen, die [RegisterHandler-Methode](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) für die Registrierung für globale Ereignisse zu verwenden. Die veraltete `Register` Funktion bewirkt, dass Listener über ALLE Eingabeereignisse benachrichtigt werden, anstatt nur Eingabeereignisse eines bestimmten Typs (wobei der Typ durch die Ereignisschnittstelle definiert wird).
+Ereignisse können an globale Listener gesendet werden. Es ist möglich, sich mithilfe der -Schnittstelle des Eingabesystems für alle Eingabeereignisse zu [`IMixedRealityEventSystem`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem) registrieren. Es wird empfohlen, die [RegisterHandler-Methode](xref:Microsoft.MixedReality.Toolkit.IMixedRealityEventSystem.RegisterHandler%2A) zum Registrieren für globale Ereignisse zu verwenden. Die veraltete Funktion verursacht, dass Listener über ALLE Eingabeereignisse benachrichtigt werden, anstatt nur Eingabeereignisse eines bestimmten Typs (wobei der Typ von der Ereignisschnittstelle definiert `Register` wird).
 
-Beachten Sie, dass [Fallbacklistener](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) eine andere Art von globalen Listenern sind, von denen ebenfalls abgeraten wird, da sie jedes einzelne Eingabeereignis empfangen, das nicht an anderer Stelle in der Szene behandelt wurde.
+Beachten Sie, dass [Fallbacklistener](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) eine weitere Art von globalen Listenern sind, von denen ebenfalls abgeraten wird, da sie jedes einzelne Eingabeereignis empfangen, das nicht an anderer Stelle in der Szene behandelt wurde.
 
-### <a name="order-of-event-dispatch"></a>Reihenfolge der Ereignisdisponent
+### <a name="order-of-event-dispatch"></a>Reihenfolge der Ereignisversand
 
-Im Allgemeinen werden Ereignisse wie folgt an Listener gesendet. Beachten Sie Folgendes: Wenn einer der folgenden Schritte das Ereignis als [behandelt](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html)markiert, wird der Ereignisdisponierungsprozess beendet.
+Im Allgemeinen werden Ereignisse auf folgende Weise an Listener gesendet. Beachten Sie, dass der Ereignis dispatch-Prozess beendet wird, wenn einer der folgenden Schritte das Ereignis als behandelt bezeichnet. [](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html)
 
 1. Das Ereignis wird an globale Listener gesendet.
 2. Das Ereignis wird an modale Dialoge des fokussierten Objekts gesendet.
@@ -56,11 +56,11 @@ Im Allgemeinen werden Ereignisse wie folgt an Listener gesendet. Beachten Sie Fo
 
 ## <a name="device-managers-and-data-providers"></a>Geräte-Manager und Datenanbieter
 
-Diese Entitäten sind für die Verknüpfung mit APIs auf niedrigerer Ebene (z. B. Windows Mixed Reality-APIs oder OpenVR-APIs) und die Übersetzung von Daten aus diesen Systemen in Solche verantwortlich, die den übergeordneten Eingabeabstraktionen des MRTK entsprechen. Sie sind für das Erkennen, Erstellen und Verwalten der Lebensdauer von [Controllern](controllers-pointers-and-focus.md#controllers)verantwortlich.
+Diese Entitäten sind für die Interfacing mit APIs auf niedrigerer Ebene (z. B. Windows Mixed Reality-APIs oder OpenVR-APIs) und für die Übersetzung von Daten aus diesen Systemen in Solche verantwortlich, die den Eingabeabstraktionen des MRTK auf höherer Ebene passen. Sie sind für die Erkennung, Erstellung und Verwaltung der Lebensdauer von [Controllern verantwortlich.](controllers-pointers-and-focus.md#controllers)
 
-Der grundlegende Ablauf eines Geräte-Managers umfasst Folgendes:
+Der grundlegende Ablauf eines Geräte-Managers umfasst:
 
 1. Der Geräte-Manager wird vom Eingabesystemdienst instanziiert.
-2. Der Geräte-Manager registriert sich beim zugrunde liegenden System (z. B. registriert sich der Windows Mixed Reality Geräte-Manager für [Eingabe-](../features/input/input-events.md) und [Gestenereignisse.](../features/input/gestures.md#gesture-events)
-3. Er erstellt Controller, die er aus dem zugrunde liegenden System ermittelt (z. B. kann der Anbieter das Vorhandensein von artikulierten Händen erkennen)
-4. Rufen Sie in der Update()-Schleife UpdateController() auf, um den neuen Zustand des zugrunde liegenden Systems abzufragen und seine Controllerdarstellung zu aktualisieren.
+2. Der Geräte-Manager registriert sich bei seinem zugrunde liegenden System (z. B. registriert Windows Mixed Reality Geräte-Manager für Eingabe- [und](../features/input/input-events.md) [Gestenereignisse.](../features/input/gestures.md#gesture-events)
+3. Er erstellt Controller, die er aus dem zugrunde liegenden System ermittelt (z. B. könnte der Anbieter das Vorhandensein von artikulierten Händen erkennen).
+4. Rufen Sie in der Update()-Schleife UpdateController() auf, um den neuen Zustand des zugrunde liegenden Systems zu erhalten und seine Controllerdarstellung zu aktualisieren.

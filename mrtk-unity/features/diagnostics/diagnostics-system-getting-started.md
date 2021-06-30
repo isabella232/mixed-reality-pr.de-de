@@ -1,22 +1,22 @@
 ---
-title: 'Diagnosesystem: Erste Schritte'
+title: Übersicht über das Diagnosesystem
 description: Dokumentation zum Aktivieren und Deaktivieren der Diagnose in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 66d68902dd9ffa36a5b30c1130a8640d154ac5e1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0de7b904a48453d6021cf7aed5835412c19b7884
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144724"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121778"
 ---
 # <a name="diagnostic-system"></a>Diagnosesystem
 
-Das Mixed Reality Toolkit Diagnostic System stellt Diagnosetools bereit, die in der Anwendung ausgeführt werden, um die Analyse von Anwendungsprobleme zu ermöglichen.
+Das Mixed Reality Toolkit-Diagnosesystem stellt Diagnosetools bereit, die in der Anwendung ausgeführt werden, um die Analyse von Anwendungsproblemen zu ermöglichen.
 
-Das erste Release des Diagnosesystems enthält den [Visual Profiler,](using-visual-profiler.md) der die Analyse von Leistungsproblemen während der Verwendung der Anwendung ermöglicht.
+Die erste Version des Diagnosesystems enthält [den Visual Profiler,](using-visual-profiler.md) der die Analyse von Leistungsproblemen während der Verwendung der Anwendung ermöglicht.
 
 ## <a name="getting-started"></a>Erste Schritte
 
@@ -30,33 +30,33 @@ Es gibt zwei wichtige Schritte, um mit der Verwendung des Diagnosesystems zu beg
 
 ### <a name="enable-diagnostics"></a>Aktivieren der Diagnosefunktion
 
-Das Diagnosesystem wird vom MixedRealityToolkit-Objekt (oder einer anderen [Dienstregistrierungsstellenkomponente)](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) verwaltet.
+Das Diagnosesystem wird vom MixedRealityToolkit-Objekt (oder einer anderen [Dienstregistrierungskomponente)](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) verwaltet.
 
-In den folgenden Schritten wird davon ausgegangen, dass das MixedRealityToolkit-Objekt verwendet wird. Die für andere Dienstregistrierungsstellen erforderlichen Schritte können unterschiedlich sein.
+Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts voraus. Die für andere Dienstregistrierungen erforderlichen Schritte können unterschiedlich sein.
 
 1. Wählen Sie das MixedRealityToolkit-Objekt in der Szenenhierarchie aus.
 
-    ![KONFIGURIERTE MRTK-Szenenhierarchie](../images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK– Konfigurierte Szenenhierarchie](../images/MRTK_ConfiguredHierarchy.png)
 
-1. Navigieren Sie im Bereich Inspector zum Abschnitt Diagnosesystem, und aktivieren Sie Aktivieren.
+1. Navigieren Sie im Inspektorbereich zum Abschnitt Diagnosesystem, und aktivieren Sie Aktivieren.
 1. Auswählen der Diagnosesystemimplementierung
 
     ![Auswählen der Diagnosesystemimplementierung](../images/diagnostics/DiagnosticsSelectSystemType.png)
 
 > [!NOTE]
-> Benutzer des Standardprofils `DefaultMixedRealityToolkitConfigurationProfile` (Assets/MRTK/SDK/Profile) haben das Diagnosesystem für die Verwendung des Objekts vorkonfiguriert. [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem)
+> Für Benutzer des Standardprofils (Assets/MRTK/SDK/Profiles) ist das Diagnosesystem für die Verwendung des Objekts `DefaultMixedRealityToolkitConfigurationProfile` [`MixedRealityDiagnosticsSystem`](xref:Microsoft.MixedReality.Toolkit.Diagnostics.MixedRealityDiagnosticsSystem) vorkonfiguriert.
 
 ### <a name="configure-diagnostic-options"></a>Konfigurieren von Diagnoseoptionen
 
-Das Diagnosesystem verwendet ein Konfigurationsprofil, um anzugeben, welche Komponenten angezeigt werden sollen, und um ihre Einstellungen zu konfigurieren. Weitere Informationen zu den verfügbaren Komponenteneinstellungen finden Sie unter Konfigurieren des [Diagnosesystems.](configuring-diagnostics.md)
+Das Diagnosesystem verwendet ein Konfigurationsprofil, um anzugeben, welche Komponenten angezeigt werden sollen, und um deren Einstellungen zu konfigurieren. Weitere Informationen [zu den verfügbaren Komponenteneinstellungen](configuring-diagnostics.md) finden Sie unter Konfigurieren des Diagnosesystems.
 
 > [!IMPORTANT]
 > Während es möglich ist, den Unity-Wiedergabemodus bei der Entwicklung von Anwendungen zu verwenden, ohne dass die Schritte zum Erstellen und Bereitstellen erforderlich sind, ist es wichtig, die Diagnosesystemergebnisse mithilfe einer kompilierten Anwendung zu bewerten, die auf der Zielhardware und -plattform ausgeführt wird.
 >
 > Die Leistungsdiagnose, z. B. [Visual Profiler,](using-visual-profiler.md)spiegelt die tatsächliche Anwendungsleistung möglicherweise nicht genau wider, wenn sie im Editor ausgeführt wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Diagnose-API-Dokumentation](xref:Microsoft.MixedReality.Toolkit.Diagnostics)
 - [Konfigurieren des Diagnosesystems](configuring-diagnostics.md)
-- [Verwenden des Visual Profilers](using-visual-profiler.md)
+- [Verwenden von Visual Profiler](using-visual-profiler.md)

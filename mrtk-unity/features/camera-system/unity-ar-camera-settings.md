@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, AR-Kamera,
-ms.openlocfilehash: baa54f4a7c6238b136a108cf5adcbddd29c3ee1b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: e1c032805bc4b733cfcc51e1ceac5096c73715cf
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143468"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121198"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Unity AR-Kameraeinstellungsanbieter
 
@@ -37,12 +37,12 @@ Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben.
 | Zentrum | Das mittlere Auge eines mit dem Kopf bestückten Geräts. |
 | Farbkamera | Die Farbkamera eines mobilen Geräts. |
 | Head | Das Kopfauge eines mit dem Kopf bestückten Geräts, häufig etwas über dem mittleren Auge. |
-| Linkes Auge | Das linke Auge eines am Kopf eingebauten Geräts. |
-| Linke Pose | Die Linke Controller-Pose. |
-| Rechtes Auge | Das rechte Auge eines mit dem Kopf gelagerten Geräts. |
-| Right Pose | Die Rechte Controller-Pose. |
+| Linkes Auge | Das linke Auge eines auf dem Kopf installierten Geräts. |
+| Linke Pose | Die linke Controllerpose. |
+| Rechtes Auge | Das rechte Auge eines am Kopf eingebauten Geräts. |
+| Rechte Pose | Die rechte Controllerpose. |
 
-Der Standardwert für die Posenquelle ist **Color Camera**, um eine transparente Anzeige auf mobilen Geräten wie einem Smartphone oder Tablet zu ermöglichen.
+Der Standardwert für die Posenquelle ist **Farbkamera**, um eine transparente Anzeige auf mobilen Geräten wie einem Smartphone oder Tablet zu ermöglichen.
 
 **Überwachungstyp**
 
@@ -56,23 +56,23 @@ Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben.
 | Drehung | Die Drehung des Geräts. |
 | Drehung und Position | Die Position und Drehung des Geräts. |
 
-Der Standardwert für den Nachverfolgungstyp ist **Drehung und Position**, um eine umfassende Nachverfolgungserfahrung zu ermöglichen.
+Der Standardwert für den Nachverfolgungstyp ist **Drehung und Position**, um die größtmögliche Nachverfolgungserfahrung zu ermöglichen.
 
 **Updatetyp**
 
-Der Updatetyp definiert, an welchen Punkten während der Frameverarbeitung die Posendaten entnommen werden.
+Der Updatetyp definiert, an welchen Punkten während der Frameverarbeitung die Pose-Daten entnommen werden.
 
 Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben.
 
 | Option | Beschreibung |
 | --- | --- |
-| Vor dem Rendern | Kurz vor dem Rendering. |
+| Vor dem Rendern | Direkt vor dem Rendern. |
 | Aktualisieren | Während der Aktualisierungsphase des Frames. |
 | Aktualisieren von und vor dem Rendern | Während der Aktualisierungsphase und direkt vor dem Rendern. |
 
 Der Standardwert für den Nachverfolgungstyp lautet **Update and Before Render**, um die niedrigste Nachverfolgungslatenz zu ermöglichen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Kamerasystemübersicht](camera-system-overview.md)
 - [Erstellen eines Kameraeinstellungsanbieters](create-settings-provider.md)

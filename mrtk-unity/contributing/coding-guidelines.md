@@ -1,44 +1,44 @@
 ---
-title: Richtlinien für das Codieren
-description: Programmierprinzipien und Konventionen, die beim Beitragen zum MRTK zu befolgen sind.
+title: Codierungsrichtlinien
+description: Programmierprinzipien und Konventionen, die bei der Mitwirkung am MRTK befolgt werden müssen.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, C#,
-ms.openlocfilehash: 8887e248bd550bdd7a59f19c16df1ec3647ceff7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145248"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121438"
 ---
 # <a name="coding-guidelines"></a>Codierungsrichtlinien
 
-In diesem Dokument werden die Codierungsprinzipien und -konventionen beschrieben, die beim Beitragen zum MRTK zu befolgen sind.
+In diesem Dokument werden Codierungsprinzipien und Konventionen beschrieben, die bei der Mitwirkung am MRTK befolgt werden müssen.
 
 ---
 
 ## <a name="philosophy"></a>Philosophie
 
-### <a name="be-concise-and-strive-for-simplicity"></a>Seien Sie präzise, und setzen Sie sich für Einfachheit ein.
+### <a name="be-concise-and-strive-for-simplicity"></a>Seien Sie präzise, und achten Sie auf Einfachheit.
 
-Die einfachste Lösung ist häufig die beste. Dies ist ein überschreibende Ziel dieser Richtlinien und sollte das Ziel aller Codierungsaktivitäten sein. Ein Teil des einfachen Seins ist, präzise und konsistent mit vorhandenem Code zu sein. Versuchen Sie, den Code einfach zu halten.
+Die einfachste Lösung ist häufig die beste. Dies ist ein übergeordnetes Ziel dieser Richtlinien und sollte das Ziel aller Codierungsaktivitäten sein. Ein Teil der Einfachheit ist die Präzise und Konsistenz mit vorhandenem Code. Versuchen Sie, Ihren Code einfach zu halten.
 
-Leser sollten nur Artefakte finden, die nützliche Informationen bereitstellen. Kommentare, die das offensichtliche Wiedererlädnen wieder geben, liefern beispielsweise keine zusätzlichen Informationen und erhöhen das Rauschen zu Signalverhältnis.
+Leser sollten nur auf Artefakte stoßen, die nützliche Informationen bereitstellen. Kommentare, die das Offensichtliche neu darstellen, liefern z. B. keine zusätzlichen Informationen und erhöhen das Rausch-zu-Signal-Verhältnis.
 
-Halten Sie die Codelogik einfach. Beachten Sie, dass es sich dabei nicht um eine Aussage zur Verwendung der geringsten Anzahl von Zeilen handelt, um die Größe von Bezeichnernamen oder geschweiften Klammern zu minimieren, sondern um die Reduzierung der Anzahl von Konzepten und die Maximierung der Sichtbarkeit dieser Zeilen durch vertraute Muster.
+Halten Sie die Codelogik einfach. Beachten Sie, dass es sich hierbei nicht um eine Anweisung zur Verwendung der geringsten Anzahl von Zeilen handelt, um die Größe von Bezeichnernamen oder geschweiften Klammern zu minimieren, sondern um die Reduzierung der Anzahl von Konzepten und die Maximierung der Sichtbarkeit dieser Zeilen durch vertraute Muster.
 
-### <a name="produce-consistent-readable-code"></a>Erstellen von konsistentem, lesbaren Code
+### <a name="produce-consistent-readable-code"></a>Erstellen von konsistentem, lesbarem Code
 
-Die Lesbarkeit von Code ist mit niedrigen Mängelraten korreliert. Versuchen Sie, Leicht lesbaren Code zu erstellen. Versuchen Sie, Code zu erstellen, der über einfache Logik verfügt und vorhandene Komponenten erneut verwendet, da dies auch zur Sicherstellung der Richtigkeit beiträgt.
+Die Lesbarkeit des Codes ist mit niedrigen Fehlerraten korreliert. Versuchen Sie, Code zu erstellen, der einfach zu lesen ist. Versuchen Sie, Code mit einfacher Logik zu erstellen und vorhandene Komponenten erneut zu verwenden, da dies auch zur Gewährleistung der Korrektheit beitragen kann.
 
-Alle Details des codes, den Sie erzeugen, sind wichtig, von den grundlegendsten Details der Richtigkeit bis zu konsistentem Stil und konsistenter Formatierung. Halten Sie Ihren Codierungsstil konsistent mit dem, was bereits vorhanden ist, auch wenn er nicht Ihren Anforderungen entspricht. Dies erhöht die Lesbarkeit der gesamten Codebasis.
+Alle Details des Codes, den Sie erzeugen, sind wichtig, von den grundlegendsten Details der Korrektheit bis hin zu konsistentem Stil und konsistenter Formatierung. Halten Sie Ihren Codierungsstil konsistent mit dem, was bereits vorhanden ist, auch wenn er nicht Ihren Wünschen entspricht. Dies erhöht die Lesbarkeit der gesamten Codebasis.
 
 ### <a name="support-configuring-components-both-in-editor-and-at-run-time"></a>Unterstützung der Konfiguration von Komponenten sowohl im Editor als auch zur Laufzeit
 
 MRTK unterstützt eine Vielzahl von Benutzern: Personen, die Komponenten im Unity-Editor konfigurieren und Prefabs laden möchten, und Personen, die Objekte zur Laufzeit instanziieren und konfigurieren müssen.
 
-Der gesamte Code sollte funktionieren, indem SOWOHL eine Komponente zu einem GameObject in einer gespeicherten Szene hinzugefügt als auch diese Komponente im Code instanziiert wird. Tests sollten einen Testfall sowohl zum Instanziieren von Prefabs als auch zum Instanziieren und Konfigurieren der Komponente zur Laufzeit enthalten.
+Der gesamte Code sollte funktionieren, indem BEIDE eine Komponente zu einem GameObject in einer gespeicherten Szene hinzufügen und diese Komponente im Code instanziieren. Tests sollten einen Testfall sowohl zum Instanziieren von Prefabs als auch zum Instanziieren und Konfigurieren der Komponente zur Laufzeit enthalten.
 
 ### <a name="play-in-editor-is-your-first-and-primary-target-platform"></a>Play-in-Editor ist Ihre erste und primäre Zielplattform.
 
@@ -54,13 +54,13 @@ Neue öffentliche Mitglieder sollten sorgfältig überprüft werden. Jedes öffe
 
 ### <a name="prioritize-writing-tests"></a>Priorisieren des Schreibens von Tests
 
-MRTK ist ein Communityprojekt, das von einer Vielzahl von Mitwirkenden geändert wird. Diese Mitwirkenden kennen möglicherweise die Details Ihrer Fehlerbehebung/Ihres Features nicht und unterbricht versehentlich Ihr Feature. [MRTK führt Continuous Integration-Tests aus,](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) bevor jeder Pull Request abgeschlossen wird. Änderungen, die Tests zum Einchecken unterbrechen, können nicht einchecken. Daher sind Tests die beste Möglichkeit, um sicherzustellen, dass andere Personen Ihr Feature nicht unterbricht.
+MRTK ist ein Communityprojekt, das von einer Vielzahl von Mitwirkenden geändert wird. Diese Mitwirkenden kennen möglicherweise nicht die Details Ihrer Fehlerbehebung bzw. Ihres Features und unterbrechen ihr Feature versehentlich. [MRTK führt Continuous Integration-Tests](https://dev.azure.com/aipmr/MixedRealityToolkit-Unity-CI/_build?definitionId=16) aus, bevor jeder Pull Request abgeschlossen wird. Änderungen, die Tests unterbrechen, können nicht eingecheckt werden. Daher sind Tests die beste Möglichkeit, um sicherzustellen, dass andere Personen Ihr Feature nicht unterbrechen.
 
-Wenn Sie einen Fehler beheben, schreiben Sie einen Test, um sicherzustellen, dass er in Zukunft nicht zurück geht. Wenn Sie ein Feature hinzufügen, schreiben Sie Tests, die überprüfen, ob Ihr Feature funktioniert. Dies ist für alle UX-Features mit Ausnahme experimenteller Features erforderlich.
+Wenn Sie einen Fehler beheben, schreiben Sie einen Test, um sicherzustellen, dass er in Zukunft nicht zurückgeht. Wenn Sie ein Feature hinzufügen, schreiben Sie Tests, die überprüfen, ob Ihr Feature funktioniert. Dies ist für alle UX-Features mit Ausnahme experimenteller Features erforderlich.
 
 ## <a name="c-coding-conventions"></a>C#-Codierungskonventionen
 
-### <a name="script-license-information-headers"></a>Skriptlizenzinformationsheader
+### <a name="script-license-information-headers"></a>Header für Skriptlizenzinformationen
 
 Alle Microsoft-Mitarbeiter, die neue Dateien beitragen, sollten den folgenden Standard-Lizenzheader am Anfang aller neuen Dateien hinzufügen, genau wie unten dargestellt:
 
@@ -69,9 +69,9 @@ Alle Microsoft-Mitarbeiter, die neue Dateien beitragen, sollten den folgenden St
 // Licensed under the MIT License.
 ```
 
-### <a name="function--method-summary-headers"></a>Zusammenfassungsheader für Funktionen/Methoden
+### <a name="function--method-summary-headers"></a>Funktions-/Methodenzusammenfassungsheader
 
-Alle öffentlichen Klassen, Strukturen, Enums, Funktionen, Eigenschaften und Felder, die im MRTK veröffentlicht werden, sollten genau wie unten dargestellt als Zweck und Verwendung beschrieben werden:
+Alle öffentlichen Klassen, Strukturen, Enumerationen, Funktionen, Eigenschaften und Felder, die an das MRTK gesendet werden, sollten entsprechend ihrem Zweck beschrieben und verwendet werden, genau wie unten dargestellt:
 
 ```c#
 /// <summary>
@@ -86,13 +86,13 @@ public struct Controller
 }
 ```
 
-Dadurch wird sichergestellt, dass die Dokumentation für alle Klassen, Methoden und Eigenschaften ordnungsgemäß generiert und verbreitet wird.
+Dadurch wird sichergestellt, dass die Dokumentation für alle Klassen, Methoden und Eigenschaften ordnungsgemäß generiert und verteilt wird.
 
 Alle Skriptdateien, die ohne ordnungsgemäße Zusammenfassungstags übermittelt werden, werden abgelehnt.
 
 ### <a name="mrtk-namespace-rules"></a>MRTK-Namespaceregeln
 
-Das Mixed Reality Toolkit verwendet ein featurebasiertes Namespacemodell, bei dem alle grundlegenden Namespaces mit "Microsoft.MixedReality.Toolkit" beginnen. Im Allgemeinen müssen Sie die Toolkitebene (z. B. Kern, Anbieter, Dienste) nicht in Ihren Namespaces angeben.
+Das Mixed Reality Toolkit verwendet ein featurebasiertes Namespacemodell, bei dem alle grundlegenden Namespaces mit "Microsoft.MixedReality.Toolkit" beginnen. Im Allgemeinen müssen Sie die Toolkitebene (z. B. Core, Providers, Services) in Ihren Namespaces nicht angeben.
 
 Die derzeit definierten Namespaces sind:
 
@@ -113,7 +113,7 @@ Wenn Sie den Namespace für eine Schnittstelle, klasse oder einen Datentyp wegla
 
 Stellen Sie beim Hinzufügen neuer MonoBehaviour-Skripts mit einem Pull Request sicher, dass das [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) -Attribut auf alle anwendbaren Dateien angewendet wird. Dadurch wird sichergestellt, dass die Komponente im Editor unter der Schaltfläche *Komponente hinzufügen* leicht auffindbar ist. Das Attributflag ist nicht erforderlich, wenn die Komponente nicht im Editor angezeigt werden kann, z. B. in einer abstrakten Klasse.
 
-Im folgenden Beispiel sollte das *Paket hier* mit dem Paketspeicherort der Komponente gefüllt werden. Wenn Sie ein Element im *MRTK-/SDK-Ordner* platzieren, ist das Paket *SDK*.
+Im folgenden Beispiel sollte das *Paket hier* mit dem Paketspeicherort der Komponente gefüllt werden. Wenn Sie ein Element im *MRTK-/SDK-Ordner* platzieren, ist das Paket *SDK.*
 
 ```c#
 [AddComponentMenu("Scripts/MRTK/{Package here}/MyNewComponent")]
@@ -124,7 +124,7 @@ public class MyNewComponent : MonoBehaviour
 
 Versuchen Sie im Allgemeinen, das Erstellen von benutzerdefinierten Inspektorskripts für MRTK-Komponenten zu vermeiden. Dies erhöht den Mehraufwand und die Verwaltung der Codebasis, die von der Unity-Engine verarbeitet werden kann.
 
-Wenn eine Inspektorklasse erforderlich ist, versuchen Sie, unity zu [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html) verwenden. Dies vereinfacht erneut die Inspektorklasse und überlässt einen Großen Teil der Arbeit Unity.
+Wenn eine Inspektorklasse erforderlich ist, versuchen Sie, unity zu [`DrawDefaultInspector()`](https://docs.unity3d.com/ScriptReference/Editor.DrawDefaultInspector.html) verwenden. Dies vereinfacht wiederum die Inspektorklasse und überlässt unity einen Großteil der Arbeit.
 
 ```c#
 public override void OnInspectorGUI()
@@ -135,11 +135,11 @@ public override void OnInspectorGUI()
 }
 ```
 
-Wenn benutzerdefiniertes Rendering in der Inspektorklasse erforderlich ist, versuchen Sie, und [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) zu [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) verwenden. Dadurch wird sichergestellt, dass Unity das Rendern geschachtelter Prefabs und geänderter Werte ordnungsgemäß verarbeitet.
+Wenn benutzerdefiniertes Rendering in der Inspektorklasse erforderlich ist, versuchen Sie, und zu [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) verwenden. Dadurch wird sichergestellt, dass Unity das Rendern geschachtelter Prefabs und geänderter Werte ordnungsgemäß verarbeitet.
 
-Wenn aufgrund einer Anforderung in der benutzerdefinierten Logik nicht verwendet werden kann, stellen Sie [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) sicher, dass die verwendungsspezifische um eine umschlossen [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html) ist. Dadurch wird sichergestellt, dass Unity den Inspektor für geschachtelte Prefabs und geänderte Werte mit der angegebenen Eigenschaft ordnungsgemäß rendert.
+Wenn [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) aufgrund einer Anforderung in der benutzerdefinierten Logik nicht verwendet werden kann, stellen Sie sicher, dass die gesamte Verwendung um eine umschlossen [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html) ist. Dadurch wird sichergestellt, dass Unity den Inspektor für geschachtelte Prefabs und geänderte Werte mit der angegebenen Eigenschaft ordnungsgemäß rendert.
 
-Versuchen Sie außerdem, die benutzerdefinierte Inspektorklasse mit einem zu [`CanEditMultipleObjects`](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html) verzieren. Dieses Tag stellt sicher, dass mehrere Objekte mit dieser Komponente in der Szene zusammen ausgewählt und geändert werden können. Alle neuen Inspektorklassen sollten testen, ob ihr Code in dieser Situation in der Szene funktioniert.
+Versuchen Sie außerdem, die benutzerdefinierte Inspektorklasse mit einer zu [`CanEditMultipleObjects`](https://docs.unity3d.com/ScriptReference/CanEditMultipleObjects.html) ergänzen. Dieses Tag stellt sicher, dass mehrere Objekte mit dieser Komponente in der Szene zusammen ausgewählt und geändert werden können. Alle neuen Inspektorklassen sollten testen, ob ihr Code in dieser Situation in der Szene funktioniert.
 
 ```c#
     // Example inspector class demonstrating usage of SerializedProperty & EditorGUILayout.PropertyField
@@ -184,11 +184,11 @@ Versuchen Sie außerdem, die benutzerdefinierte Inspektorklasse mit einem zu [`C
 
 ### <a name="adding-new-scriptableobjects"></a>Hinzufügen neuer ScriptableObjects
 
-Stellen Sie beim Hinzufügen neuer ScriptableObject-Skripts sicher, dass [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) das -Attribut auf alle anwendbaren Dateien angewendet wird. Dadurch wird sichergestellt, dass die Komponente im Editor über die Menüs zum Erstellen von Ressourcen leicht erkennbar ist. Das Attributflag ist nicht erforderlich, wenn die Komponente nicht im Editor wie einer abstrakten Klasse angezeigt werden kann.
+Stellen Sie beim Hinzufügen neuer ScriptableObject-Skripts sicher, dass das [`CreateAssetMenu`](https://docs.unity3d.com/ScriptReference/CreateAssetMenu.html) -Attribut auf alle anwendbaren Dateien angewendet wird. Dadurch wird sichergestellt, dass die Komponente im Editor über die Menüs zum Erstellen von Medienobjekten leicht auffindbar ist. Das Attributflag ist nicht erforderlich, wenn die Komponente nicht im Editor angezeigt werden kann, z. B. in einer abstrakten Klasse.
 
-Im folgenden Beispiel sollte der *Unterordner* ggf. mit dem MRTK-Unterordner gefüllt werden. Wenn Sie ein Element im *MrTK/Providers-Ordner* platzieren, ist das Paket *Providers*. Wenn Sie ein Element im *MRTK/Core-Ordner* platzieren, legen Sie dies auf "Profile" fest.
+Im folgenden Beispiel sollte der *Unterordner* ggf. mit dem MRTK-Unterordner gefüllt werden. Wenn Sie ein Element im Ordner *MRTK/Providers* ablegen, ist das Paket *Anbieter.* Wenn Sie ein Element im Ordner *MRTK/Core* platzieren, legen Sie dies auf "Profile" fest.
 
-Im folgenden Beispiel wird *myNewService | MyNewProvider* sollte ggf. mit dem Namen Ihrer neuen Klasse gefüllt werden. Wenn Sie ein Element im *Ordner MixedRealityToolkit* platzieren, lassen Sie diese Zeichenfolge weg.
+Im folgenden Beispiel *| MyNewProvider* sollte ggf. mit dem Namen Ihrer neuen Klasse ausgefüllt werden. Wenn Sie ein Element im Ordner *MixedRealityToolkit* platzieren, lassen Sie diese Zeichenfolge aus.
 
 ```c#
 [CreateAssetMenu(fileName = "MyNewProfile", menuName = "Mixed Reality Toolkit/{Subfolder}/{MyNewService | MyNewProvider}/MyNewProfile")]
@@ -205,15 +205,15 @@ Ein interessantes Beispiel, bei dem die Protokollierung nützlich ist (zusammen 
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-Diese Art der Protokollierung kann dabei helfen, Probleme wie [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) abzufangen, die durch nicht übereinstimmende ermittelte Quell- und Quellverlustereignisse verursacht wurden.
+Diese Art der Protokollierung kann dazu beitragen, Probleme wie zu erfassen, die durch nicht übereinstimmende Quellereignisse und [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) verlorene Ereignisse verursacht wurden.
 
-Vermeiden Sie das Hinzufügen von Protokollen für Daten und Ereignisse, die in jedem Frame auftreten. Im Idealfall sollte die Protokollierung "interessante" Ereignisse abdecken, die durch unterschiedliche Benutzereingaben gesteuert werden (d. h. ein "Klick" durch einen Benutzer und der Satz von Änderungen und Ereignissen, die aus stammen, die für die Protokollierung interessant sind). Der fortlaufende Zustand "Benutzer hält immer noch eine Geste" protokolliert jeder Frame ist nicht interessant und überfordert die Protokolle.
+Vermeiden Sie das Hinzufügen von Protokollen für Daten und Ereignisse, die in jedem Frame auftreten. Im Idealfall sollte die Protokollierung "interessante" Ereignisse abdecken, die von unterschiedlichen Benutzereingaben gesteuert werden (d. h. ein "Klick" durch einen Benutzer und der Satz von Änderungen und Ereignissen, die von diesen stammen, die für die Protokollierung interessant sind). Der fortlaufende Status "Benutzer hält immer noch eine Geste" protokolliert jeder Frame ist nicht interessant und überlastet die Protokolle.
 
-Beachten Sie, dass diese ausführliche Protokollierung nicht standardmäßig aktiviert ist (sie muss in den Einstellungen des [Diagnosesystems](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)aktiviert sein).
+Beachten Sie, dass diese ausführliche Protokollierung nicht standardmäßig aktiviert ist (sie muss in den Einstellungen des [Diagnosesystems aktiviert werden).](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)
 
-### <a name="spaces-vs-tabs"></a>Leerzeichen und Registerkarten
+### <a name="spaces-vs-tabs"></a>Leerzeichen im Vergleich zu Registerkarten
 
-Achten Sie darauf, dass Sie 4 Leerzeichen anstelle von Registerkarten verwenden, wenn Sie zu diesem Projekt beitragen.
+Achten Sie darauf, dass Sie bei der Mitwirkung an diesem Projekt 4 Leerzeichen anstelle von Registerkarten verwenden.
 
 ### <a name="spacing"></a>Abstand
 
@@ -240,9 +240,9 @@ private Foo()
 }
 ```
 
-### <a name="naming-conventions"></a>Benennungskonventionen
+### <a name="naming-conventions"></a>Namenskonventionen
 
-Verwenden Sie immer `PascalCase` für Eigenschaften. Verwenden Sie `camelCase` für die meisten Felder, mit Ausnahme der `PascalCase` Felder und `static readonly` `const` . Die einzige Ausnahme hiervon ist für Datenstrukturen, die erfordern, dass die Felder von serialisiert `JsonUtility` werden.
+Verwenden Sie immer `PascalCase` für Eigenschaften. Verwenden `camelCase` Sie für die meisten Felder, mit Ausnahme der Felder und `PascalCase` `static readonly` `const` . Die einzige Ausnahme ist dies für Datenstrukturen, die erfordern, dass die Felder von serialisiert `JsonUtility` werden.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -264,11 +264,11 @@ private string myField;
 
 Deklarieren Sie immer einen Zugriffsmodifizierer für alle Felder, Eigenschaften und Methoden.
 
-- Alle Unity-API-Methoden sollten `private` standardmäßig sein, es sei denn, Sie müssen sie in einer abgeleiteten Klasse überschreiben. In diesem Fall `protected` sollte verwendet werden.
+- Alle Unity-API-Methoden sollten standardmäßig sein, es sei denn, Sie `private` müssen sie in einer abgeleiteten Klasse überschreiben. In diesem Fall `protected` sollte verwendet werden.
 
-- Felder sollten immer `private` , mit - oder `public` `protected` -Eigenschaftenaccessoren sein.
+- Felder sollten immer `private` , mit - oder `public` `protected` -Eigenschaftenzugriffsoren sein.
 
-- Verwenden Von [Ausdruckskörpermembern](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) und [automatischen Eigenschaften](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) nach Möglichkeit
+- Verwenden [Sie nach Möglichkeit Ausdrucks-Bodied-Member](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) und [automatische](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) Eigenschaften.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -335,9 +335,9 @@ private Foo()
 }
 ```
 
-### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Öffentliche Klassen, Strukturen und Enumerationen sollten alle in ihren eigenen Dateien gespeichert werden.
+### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Öffentliche Klassen, Strukturen und Aufzählen sollten alle in ihren eigenen Dateien enthalten sein.
 
-Wenn die Klasse, Struktur oder Enumeration privat gemacht werden kann, ist es in Ordnung, in derselben Datei enthalten zu sein.  Dadurch werden Kompilierungsprobleme mit Unity vermieden, und es wird sichergestellt, dass eine ordnungsgemäße Codeabstraktion auftritt. Außerdem werden Konflikte und Breaking Changes reduziert, wenn Code geändert werden muss.
+Wenn die Klasse, Struktur oder Enum privat gemacht werden kann, ist es in Ordnung, in derselben Datei enthalten zu sein.  Dadurch werden Kompilierungsprobleme mit Unity vermieden, und es wird sichergestellt, dass eine ordnungsgemäße Codeabstraktion auftritt. Außerdem werden Konflikte und Breaking Changes reduziert, wenn Code geändert werden muss.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -536,10 +536,10 @@ Bei einigen Zielplattformen dieses Projekts muss die Leistung berücksichtigt we
 
 ### <a name="encapsulation"></a>Kapselung
 
-Verwenden Sie immer private Felder und öffentliche Eigenschaften, wenn der Zugriff auf das Feld von außerhalb der Klasse oder Struktur benötigt wird.  Stellen Sie sicher, dass Sie das private Feld und die öffentliche Eigenschaft zusammenfinden. Dadurch können Sie auf einen Blick leichter erkennen, was die Eigenschaft unterstützt und ob das Feld durch ein Skript geändert werden kann.
+Verwenden Sie immer private Felder und öffentliche Eigenschaften, wenn Der Zugriff auf das Feld von außerhalb der Klasse oder Struktur erforderlich ist.  Stellen Sie sicher, dass Sie das private Feld und die öffentliche Eigenschaft zusammenfinden. Dies erleichtert es, auf einen Blick zu erkennen, was die Eigenschaft zurückbewegt und dass das Feld per Skript geändert werden kann.
 
 > [!NOTE]
-> Die einzige Ausnahme ist dies für Datenstrukturen, die erfordern, dass die Felder von serialisiert werden, wobei eine Datenklasse über alle öffentlichen Felder verfügen `JsonUtility` muss, damit die Serialisierung funktioniert.
+> Die einzige Ausnahme ist dies für Datenstrukturen, die erfordern, dass die Felder von serialisiert werden. Dabei ist eine Datenklasse erforderlich, damit alle öffentlichen Felder für die `JsonUtility` Serialisierung funktionieren.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -594,9 +594,9 @@ public float AbsMyValue
 }
 ```
 
-### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Zwischenspeichern von Werten und serialisieren sie nach Möglichkeit in der Szene/im Prefab
+### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Zwischenspeichern und Serialisieren von Werten in der Szene/im Prefab, wann immer dies möglich ist
 
-Unter Berücksichtigung von HoloLens empfiehlt es sich, die Leistung zu optimieren und Verweise in der Szene oder im Prefab zwischenzuspeichern, um die Speicherbelegung der Laufzeit einzuschränken.
+Vor dem Hintergrund von HoloLens ist es am besten, die Leistung zu optimieren und Verweise in der Szene oder im Prefab zwischenzuspeichern, um die Speicherbelegung der Laufzeit zu begrenzen.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -628,9 +628,9 @@ private void Update()
 }
 ```
 
-### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>Zwischenspeichern von Verweisen auf Materialien, nicht jedes Mal ".material" aufrufen
+### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>Cacheverweise auf Materialien, rufen Sie nicht jedes Mal ".material" auf.
 
-Unity erstellt jedes Mal, wenn Sie ".material" verwenden, ein neues Material, das zu einem Speicherverlust führt, wenn es nicht ordnungsgemäß bereinigt wird.
+Unity erstellt jedes Mal, wenn Sie ".material" verwenden, ein neues Material. Dies verursacht einen Speicherverlust, wenn die Bereinigung nicht ordnungsgemäß durchgeführt wird.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -673,21 +673,21 @@ public class MyClass
 > [!NOTE]
 > Verwenden Sie alternativ die Unity-Eigenschaft "SharedMaterial", die nicht jedes Mal, wenn darauf verwiesen wird, ein neues Material erstellt.
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Verwenden der [plattformabhängigen Kompilierung,](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) um sicherzustellen, dass das Toolkit den Build auf einer anderen Plattform nicht unterbricht
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Verwenden [der plattformabhängigen](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) Kompilierung, um sicherzustellen, dass das Toolkit den Build nicht auf einer anderen Plattform unterbricht
 
-- Verwenden Sie `WINDOWS_UWP` , um UWP-spezifische, nicht Unity-APIs zu verwenden. Dadurch wird verhindert, dass sie versuchen, im Editor oder auf nicht unterstützten Plattformen auszuführen. Dies entspricht `UNITY_WSA && !UNITY_EDITOR` und sollte zugunsten von verwendet werden.
-- Verwenden Sie `UNITY_WSA` , um UWP-spezifische Unity-APIs wie den Namespace zu `UnityEngine.XR.WSA` verwenden. Dies wird im Editor ausgeführt, wenn die Plattform auf UWP festgelegt ist, sowie in integrierten UWP-Apps.
+- Verwenden `WINDOWS_UWP` Sie , um UWP-spezifische, nicht-Unity-APIs zu verwenden. Dadurch wird verhindert, dass sie versuchen, im Editor oder auf nicht unterstützten Plattformen ausgeführt zu werden. Dies entspricht `UNITY_WSA && !UNITY_EDITOR` und sollte zugunsten von verwendet werden.
+- Verwenden `UNITY_WSA` Sie , um UWP-spezifische Unity-APIs wie den -Namespace zu `UnityEngine.XR.WSA` verwenden. Dies wird im Editor ausgeführt, wenn die Plattform auf UWP und in erstellten UWP-Apps festgelegt ist.
 
-Dieses Diagramm kann Ihnen bei der Entscheidung helfen, welche Sie `#if` verwenden möchten, abhängig von Ihren Anwendungsfällen und den erwarteten Buildeinstellungen.
+Dieses Diagramm kann Ihnen dabei helfen, je nach Ihren Anwendungsfällen und den build-Einstellungen, die Sie `#if` erwarten, zu entscheiden, welche Verwendet werden soll.
 
 |Plattform | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |
-| `UNITY_EDITOR` | False | False | True |
+| `UNITY_EDITOR` | Falsch | False | True |
 | `UNITY_WSA` | True | True | True |
 | `WINDOWS_UWP` | True | True | False |
 | `UNITY_WSA && !UNITY_EDITOR` | True | True | False |
-| `ENABLE_WINMD_SUPPORT` | True | True | False |
-| `NETFX_CORE` | False | True | False |
+| `ENABLE_WINMD_SUPPORT` | True | True | Falsch |
+| `NETFX_CORE` | False | True | Falsch |
 
 ### <a name="prefer-datetimeutcnow-over-datetimenow"></a>"DateTime.UtcNow" gegenüber "DateTime.Now" bevorzugen
 
@@ -699,6 +699,6 @@ Verwenden Sie DateTime.UtcNow, es sei denn, Sie benötigen tatsächlich die loka
 
 Eine Teilmenge der MRTK-Codebasis verwendet PowerShell für die Pipelineinfrastruktur und verschiedene Skripts und Hilfsprogramme. Neuer PowerShell-Code sollte dem [PoshCode-Stil folgen.](https://poshcode.gitbooks.io/powershell-practice-and-style/)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
  [C#-Codierungskonventionen von MSDN](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

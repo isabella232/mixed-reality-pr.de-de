@@ -1,16 +1,16 @@
 ---
 title: Pull Requests
-description: Details im Zusammenhang mit Pull Requests.
+description: Details zu GitHub-Pull Requests.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, PR,
-ms.openlocfilehash: 7fb0dea4616acbf91b0459397f4a05f05a167947
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 580a57972f3356143fa796ae6ff4b08db2eb447a
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144748"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121368"
 ---
 # <a name="pull-requests"></a>Pull Requests
 
@@ -24,7 +24,7 @@ Ein Kommentar in dem PR informiert Sie darüber.
 
 ## <a name="creating-a-pull-request"></a>Erstellen eines Pull Requests
 
-Wenn Sie bereit sind, einen Pull Request zu übermitteln, [erstellen Sie einen Pull Request](https://github.com/microsoft/MixedRealityToolkit-Unity/compare/main...main?expand=1) für den [Hauptzweig.](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/main) Suchen Sie nach der neuesten Verzweigung, um Fehlerkorrekturen während einer Release-Stabilisierungsphase zu `prerelease/*` suchen. Neue Features sollten immer in aufgenommen `main` werden.
+Wenn Sie bereit sind, einen Pull Request zu übermitteln, erstellen [Sie einen Pull Request für](https://github.com/microsoft/MixedRealityToolkit-Unity/compare/main...main?expand=1) den [Hauptzweig.](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/main) Um Programmfehlerbehebungen während eines Releasestabilisierungszeitraums zu finden, suchen Sie nach dem neuesten `prerelease/*` Branch. Neue Features sollten immer in berücksichtigt `main` werden.
 
 Lesen Sie die Richtlinien, und stellen Sie sicher, dass Ihr Pull Request diese erfüllt.
 

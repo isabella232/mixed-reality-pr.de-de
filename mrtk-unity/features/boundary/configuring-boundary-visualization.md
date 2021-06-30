@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Boundary System,
-ms.openlocfilehash: 36717493107b129a7200dd3f912bcbdc3337b9a1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144490"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121248"
 ---
 # <a name="configuring-the-boundary-visualization"></a>Konfigurieren der Begrenzungsvisualisierung
 
@@ -50,50 +50,50 @@ Die Ebene, auf der die Bodenebene festgelegt werden soll. Der Standardwert ist d
 
 **Anzeigen**
 
-Gibt an, ob ein Rechteck für den Wiedergabebereich erstellt und der Szene hinzugefügt wird. Der Standardwert lautet „true“.
+Gibt an, ob ein Wiedergabebereichrechteck erstellt und der Szene hinzugefügt wird. Der Standardwert lautet „true“.
 
 **Material**
 
-Gibt das Material an, das beim Erstellen des Wiedergabebereichsobjekts verwendet werden soll.
+Gibt das Material an, das beim Erstellen des Play Area-Objekts verwendet werden soll.
 
-**Physikalische Schicht**
+**Physikschicht**
 
-Die Ebene, auf der der Wiedergabebereich festgelegt werden soll. Der Standardwert ist die *Ignore Raycast-Schicht.*
+Die Ebene, auf der der Wiedergabebereich festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
-## <a name="tracked-area-settings"></a>Einstellungen für nachverfolgte Bereiche
+## <a name="tracked-area-settings"></a>Einstellungen für nachverfolgten Bereich
 
-![Einstellungen für nachverfolgte Bereiche der Begrenzungsvisualisierung](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
+![Einstellungen für nachverfolgte Flächen der Begrenzungsvisualisierung](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Anzeigen**
 
-Gibt an, ob der Umriss des nachverfolgten Bereichs erstellt und der Szene hinzugefügt wird. Der Standardwert lautet „true“.
+Gibt an, ob die Kontur des nachverfolgten Bereichs erstellt und der Szene hinzugefügt wird. Der Standardwert lautet „true“.
 
 **Material**
 
 Gibt das Material an, das beim Erstellen der nachverfolgten Bereichsgliederung verwendet werden soll.
 
-**Physikalische Schicht**
+**Physikschicht**
 
-Die Ebene, auf der der nachverfolgte Bereich festgelegt werden soll. Der Standardwert ist die *Ignore Raycast-Schicht.*
+Die Ebene, auf der der nachverfolgte Bereich bestimmt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
 ## <a name="boundary-wall-settings"></a>Begrenzungswandeinstellungen
 
-![Begrenzungsvisualisierung – Begrenzungswandeinstellungen](../images/boundary/BoundaryVisualizationWallSettings.png)
+![Begrenzungsvisualisierung– Begrenzungswandeinstellungen](../images/boundary/BoundaryVisualizationWallSettings.png)
 
 **Anzeigen**
 
-Gibt an, ob Begrenzungsebenen erstellt und der Szene hinzugefügt werden sollen. Der Standardwert ist „FALSE“.
+Gibt an, ob Begrenzungswandebenen erstellt und der Szene hinzugefügt werden sollen. Der Standardwert ist „FALSE“.
 
 **Material**
 
 Gibt das Material an, das beim Erstellen der Begrenzungswandebenen verwendet werden soll.
 
-**Physikalische Schicht**
+**Physikschicht**
 
-Die Schicht, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert ist die *Ignore Raycast-Schicht.*
+Die Ebene, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
 > [!NOTE]
-> Das Festlegen der Begrenzungswandkomponente auf eine andere Physikalische Schicht als *Raycast ignorieren* kann Benutzer daran hindern, mit Objekten innerhalb der Szene zu interagieren.
+> Wenn Sie die Begrenzungswandkomponente auf eine andere physikalische Ebene als *Raycast* ignorieren festlegen, können Benutzer möglicherweise nicht mit Objekten innerhalb der Szene interagieren.
 
 ## <a name="boundary-ceiling-settings"></a>Einstellungen für die Begrenzungsobergrenze
 
@@ -114,7 +114,7 @@ Die Ebene, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert 
 > [!NOTE]
 > Das Festlegen der Begrenzungsbegrenzungskomponente auf eine andere physikalische Ebene als *Raycast ignorieren* kann verhindern, dass Benutzer mit Objekten innerhalb der Szene interagieren.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Dokumentation zur Begrenzungs-API](xref:Microsoft.MixedReality.Toolkit.Boundary)
 - [Begrenzungs- system](boundary-system-getting-started.md)

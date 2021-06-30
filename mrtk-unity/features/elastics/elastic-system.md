@@ -1,47 +1,47 @@
 ---
 title: Elastisches System
-description: Dokumentation zur Simulation von elastischen Datenbanken in MRTK
+description: Dokumentation zur Simulation elastischer Datenbanken im MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, ElasticsSystem,
-ms.openlocfilehash: 01a4c4a337593252e0955c03e883e35e1329fc45
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1f90864ee6d3b6756b863de600ade8423a44cacc
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145186"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121238"
 ---
 # <a name="elastic-system-experimental"></a>Elastisches System (experimentell)
 
 ![Elastisches System](../images/elastics/Elastics_Main1.gif)
 
-MRTK verfügt über ein elastisches Simulationssystem, das eine Vielzahl von erweiterbaren und flexiblen Unterklassen umfasst und Bindungen für 4-dimensionale Quaternionsveralbungen, 3-dimensionale Volume-Bänder und einfache lineare Federsysteme bietet.
+MRTK verfügt über ein elastisches Simulationssystem, das eine Vielzahl von erweiterbaren und flexiblen Unterklassen enthält und Bindungen für vierdimensionale Quaternionsmaße, dreidimensionale Volumenmaße und einfache lineare Springsysteme bietet.
 
-Derzeit können die folgenden MRTK-Komponenten, die [den Elastics Manager unterstützen,](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) elastische Funktionen nutzen:
+Derzeit können die folgenden MRTK-Komponenten, die den [Elastics Manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) unterstützen, die Funktionalität für elastische Datenbanken nutzen:
 
-- [Steuerelement "Begrenzungen"](../ux-building-blocks/bounds-control.md)
+- [Begrenzungssteuerelement](../ux-building-blocks/bounds-control.md)
 - [Objektmanipulator](../ux-building-blocks/object-manipulator.md)
 
 ## <a name="elastics-manager"></a>Manager für elastische Datenbanken
 
 ![Elastic System2](../images/elastics/Elastics_Main.gif)
 
-Der Elastics Manager verarbeitet übergebene Transformationen und gibt sie in das Elastiksystem ein.
+Der Elastics Manager verarbeitet übergebene Transformationen und leitet sie in das System für elastische Datenbanken ein.
 
-Die Aktivierung von elastischen Komponenten für benutzerdefinierte Komponenten kann mit zwei Schritten erreicht werden:
+Das Aktivieren von elastischen Datenbanken für benutzerdefinierte Komponenten kann mit zwei Schritten erreicht werden:
 
-1. Durch Aufrufen der Initialize-Methode beim Start der Bearbeitung wird das System mit der aktuellen Hosttransformation aktualisiert.
-1. Abfragen von ApplyHostTransform, wenn für die aktualisierte Zieltransformation eine Elastikberechnung durchgeführt werden soll.
+1. Durch Aufrufen der Initialize-Methode beim Manipulationsstart wird das System mit der aktuellen Hosttransformation aktualisiert.
+1. Abfragen von ApplyHostTransform, wenn eine Berechnung für elastische Datenbanken für die aktualisierte Zieltransformation durchgeführt werden soll.
 
-Beachten Sie, dass elastische Datenbanken weiterhin simulieren, sobald die Bearbeitung beendet ist (über die Updateschleife des Elastics-Managers). Um das Verhalten zu blockieren, kann [enableElasticsUpdate für elastische](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager.EnableElasticsUpdate) Datenbanken auf FALSE festgelegt werden.
+Beachten Sie, dass elastische Datenbanken weiterhin simulieren, sobald die Bearbeitung beendet ist (über die Updateschleife des Managers für elastische Datenbanken). Um das Verhalten zu blockieren, kann [EnableElasticsUpdate](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager.EnableElasticsUpdate) für elastische Datenbanken automatisch auf FALSE festgelegt werden.
 
-Standardmäßig sind für die Elastics Manager-Komponente keine elastischen Datenbanken für transformationstypen aktiviert, wenn sie einem Spielobjekt hinzugefügt werden.
-Das Feld muss für bestimmte Transformationstypen aktiviert werden, um elastische Konfigurationen und Extents für `Manipulation types using elastic feedback` den ausgewählten Typ zu erstellen.
+Standardmäßig sind für die Elastics Manager-Komponente beim Hinzufügen zu einem Spielobjekt keine elastischen Datenbanken für jeden Transformationstyp aktiviert.
+Das Feld `Manipulation types using elastic feedback` muss für bestimmte Transformationstypen aktiviert werden, um elastische Konfigurationen und Erweiterungen für den ausgewählten Typ zu erstellen.
 
-### <a name="elastics-configurations"></a>Elastische Konfigurationen
+### <a name="elastics-configurations"></a>Konfigurationen für elastische Datenbanken
 
-Ähnlich wie [bei Begrenzungssteuerungskonfigurationen](../ux-building-blocks/bounds-control.md#configuration-objects)enthält elastic manager eine Reihe von Konfigurationsobjekten, die als skriptfähige Objekte gespeichert und von verschiedenen Instanzen oder Prefabs gemeinsam genutzt werden können. Konfigurationen können entweder als einzelne skriptfähige Assetdateien oder als geschachtelte skriptfähige Objekte innerhalb von Prefabs freigegeben und verknüpft werden. Weitere Konfigurationen können auch direkt auf der Instanz definiert werden, ohne eine Verknüpfung mit einem externen oder geschachtelten Skriptobjekt zu erstellen.
+Ähnlich wie [bei Begrenzungssteuerelementkonfigurationen](../ux-building-blocks/bounds-control.md#configuration-objects)verfügt der Elastische Manager über eine Reihe von Konfigurationsobjekten, die als skriptfähige Objekte gespeichert und von verschiedenen Instanzen oder Prefabs gemeinsam genutzt werden können. Konfigurationen können als einzelne skriptfähige Medienobjektdateien oder als geschachtelte skriptfähige Objekte innerhalb von Prefabs freigegeben und verknüpft werden. Weitere Konfigurationen können auch direkt auf der Instanz definiert werden, ohne eine Verknüpfung mit einem externen oder geschachtelten Skriptobjekt zu erstellen.
 
 Der Inspektor des Managers für elastische Datenbanken gibt an, ob eine Konfiguration als Teil der aktuellen Instanz freigegeben oder inline ist, indem eine Meldung im Eigenschafteninspektor angezeigt wird. Darüber hinaus können freigegebene Instanzen nicht direkt im Eigenschaftenfenster des Managers für elastische Datenbanken selbst bearbeitet werden. Stattdessen muss die Ressource, mit der sie verknüpft wird, direkt geändert werden, um versehentliche Änderungen an freigegebenen Konfigurationen zu vermeiden.
 
@@ -73,7 +73,7 @@ Volumendehnungen definieren einen dreidimensionalen Raum, in dem sich der 160-Gr
 ![Elastische Volumedehnungsgrenzen](../images/elastics/Elastics_Volume_Bounds.gif)
 
 - **StretchBounds:** Stellt die unteren Grenzen des elastischen Raums dar.
-- **UseBounds:** Gibt an, ob die Stretchinggrenzen vom System berücksichtigt werden sollen. True gibt an, dass die Endkraft angewendet wird, wenn sich die aktuelle Iteration der Zielposition außerhalb der Stretchinggrenzen befindet.
+- **UseBounds:** Gibt an, ob die Stretchinggrenzen vom System berücksichtigt werden sollen. True gibt an, dass die Endkraft angewendet wird, wenn sich die aktuelle Iteration der Zielposition außerhalb der Streckungsgrenzen befindet.
 - **SnapPoints:** Punkte innerhalb des Leerzeichens, an dem das System ausgerichtet wird.
 - **RepeatSnapPoints:** wiederholt die Ausrichtungspunkte auf unendlich. Vorhandene Ausrichtungspunkte dienen als Modulo, wobei die tatsächlichen Ausrichtungspunkte den nächsten ganzzahligen Vielfachen jedes Ausrichtungspunkts zugeordnet werden.
 - **SnapRadius:** Abstand, an dem Andockpunkte beginnen, die Feder zu erzwingen.
@@ -82,7 +82,7 @@ Volumendehnungen definieren einen dreidimensionalen Raum, in dem sich der 160-Gr
 
 #### <a name="quaternion-elastic-extent"></a>Elastischer Quaternion-Extent
 
-Quaternion-Erweiterungen definieren einen vierdimensionalen Drehungsbereich, in dem der 100-Grad-Oszillatoren frei rotiert werden kann.
+Quaternion-Erweiterungen definieren einen vierdimensionalen Drehungsbereich, in dem der 100-Grad-Oszillatoren frei gedreht werden kann.
 
 ![Beispiel für elastische Rotation](../images/elastics/Elastics_Rotation.gif)
 

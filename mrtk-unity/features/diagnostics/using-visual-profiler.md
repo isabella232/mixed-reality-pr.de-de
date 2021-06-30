@@ -1,16 +1,16 @@
 ---
-title: Verwenden von Visual Profiler
+title: Verwenden des visuellen Profilers
 description: Dokumentation zur Verwendung von Visual Profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 4830615fd55a39614dd775dd7628938ee3af1c3b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c3238aed60f6bbf824c74c034ddf506f49f436c7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143718"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121648"
 ---
 # <a name="using-the-visual-profiler"></a>Verwenden des visuellen Profilers
 
@@ -47,38 +47,38 @@ Die spezifische Plattform- und Hardwarekonfiguration spielt eine wichtige Rolle 
 - Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> Aufgrund der [Drosselung der Bildfrequenz auf HoloLens, wenn der Standard-MRC aktiv ist,](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)blendet sich der visuelle Profiler aus, während Videos und Fotos erfasst werden. Diese Einstellung kann im Diagnosesystemprofil überschrieben werden.
+> Aufgrund der [Frameratendrosselung auf HoloLens,](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)wenn mrC standardmäßig aktiv ist, blendet sich der visuelle Profiler selbst aus, während Videos und Fotos erfasst werden. Diese Einstellung kann im Diagnosesystemprofil überschrieben werden.
 
 ### <a name="frame-time"></a>Framedauer
 
-Rechts neben der Bildfrequenz befindet sich die Für die CPU aufgewendete Framezeit in Millisekunden. Um die zuvor erwähnten Zielframeraten zu erreichen, kann eine Anwendung die folgende Zeit pro Frame aufwenden:
+Rechts neben der Bildfrequenz befindet sich die Für die CPU ausgegebene Framezeit in Millisekunden. Um die zuvor erwähnten Zielframeraten zu erreichen, kann eine Anwendung die folgende Zeit pro Frame verbringen:
 
-- 60 fps: 16,6 ms
-- 90 fps: 11,1 ms
+- 60 Fps: 16,6 ms
+- 90 Fps: 11,1 ms
 
-Die GPU-Zeit soll in einer zukünftigen Version hinzugefügt werden.
+Die GPU-Zeit soll in einem zukünftigen Release hinzugefügt werden.
 
-### <a name="frame-graph"></a>Framegraph
+### <a name="frame-graph"></a>Framediagramm
 
-Das Framediagramm bietet eine grafische Darstellung des Verlaufs der Framerate der Anwendung.
+Das Framediagramm stellt eine grafische Darstellung des Verlaufs der Anwendungsrahmenrate dar.
 
-![Visual Profiler– Diagramm für verpassten Frame](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Visual Profiler – Diagramm für verpasste Frames](../images/diagnostics/VisualProfilerMissedFrames.png)
 
-Wenn Sie die Anwendung verwenden, suchen Sie nach verpassten Frames, die darauf hinweisen, dass die Anwendung ihre Zielbildfrequenz nicht erreicht und möglicherweise Optimierungsaufgaben benötigt.
+Wenn Sie die Anwendung verwenden, suchen Sie nach verpassten Frames, die darauf hinweisen, dass die Anwendung die Zielbildrate nicht erreicht und möglicherweise Optimierungsarbeit benötigt.
 
 ### <a name="memory-utilization"></a>Arbeitsspeichernutzung
 
-Die Anzeige der Speicherauslastung ermöglicht ein einfaches Verständnis der Auswirkungen der aktuellen Ansicht auf den Arbeitsspeicherverbrauch einer Anwendung.
+Die Anzeige der Speicherauslastung ermöglicht ein einfaches Verständnis der Auswirkungen der aktuellen Ansicht auf die Arbeitsspeichernutzung einer Anwendung.
 
 ![Visual Profiler-Speicherdiagramm](../images/diagnostics/VisualProfilerMemory.png)
 
-Wenn Sie die Anwendung verwenden, suchen Sie nach der Gesamtspeicherauslastung. Zu den Schlüsselindikatoren gehören das Fasten des Arbeitsspeicherlimits und schnelle Änderungen bei der Nutzung.
+Wenn Sie die Anwendung verwenden, suchen Sie nach der Gesamtspeicherauslastung. Zu den Schlüsselindikatoren zählen das Nähern des Arbeitsspeicherlimits und schnelle Änderungen bei der Nutzung.
 
-## <a name="customizing-the-visual-profiler"></a>Anpassen des visuellen Profiler
+## <a name="customizing-the-visual-profiler"></a>Anpassen des visuellen Profilers
 
-Die Darstellung und das Verhalten des Visual Profilers können über das Diagnosesystemprofil angepasst werden. Weitere Informationen finden Sie unter [Konfigurieren des Diagnosesystems.](configuring-diagnostics.md)
+Die Darstellung und das Verhalten des Visual Profilers können über das Diagnosesystemprofil angepasst werden. Weitere Informationen [finden Sie unter Konfigurieren](configuring-diagnostics.md) des Diagnosesystems.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Diagnosesystem](diagnostics-system-getting-started.md)
 - [Konfigurieren des Diagnosesystems](configuring-diagnostics.md)

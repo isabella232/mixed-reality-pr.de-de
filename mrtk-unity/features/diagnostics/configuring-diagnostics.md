@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 2ff761baa728017eb011cb9105cf203e6e3a72e4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 211ee2ed06ba9b13bd90169bcc7ee50da4594034
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144171"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121798"
 ---
 # <a name="configuring-the-diagnostics-system"></a>Konfigurieren des Diagnosesystems
 
@@ -48,19 +48,19 @@ An welchem Teil des Ansichtsport sollte das Profilerfenster verankert werden. De
 
 ### <a name="window-offset"></a>Fensteroffset
 
-Der Offset von der Mitte des Ansichtsports, um den Visual Profiler zu platzieren. Der Offset befindet sich in Richtung der *Window Anchor-Eigenschaft.*
+Der Offset von der Mitte des Ansichtsport, um den Visual Profiler zu platzieren. Der Offset wird in Richtung der Eigenschaft *Fensteranker* angezeigt.
 
 ### <a name="window-scale"></a>Fensterskala
 
 Auf das Profilerfenster angewendeter Größenmultiplikator. Wenn Sie beispielsweise den Wert auf 2 festlegen, wird die Fenstergröße verdoppelt.
 
-### <a name="window-follow-speed"></a>Fensterfolgegeschwindigkeit
+### <a name="window-follow-speed"></a>Fenster folgt Geschwindigkeit
 
-Die Geschwindigkeit, mit der das Profilerfenster verschoben werden soll, um die Sichtbarkeit im Ansichtsport beizubehalten.
+Die Geschwindigkeit, mit der das Profilerfenster bewegt werden soll, um die Sichtbarkeit innerhalb des Ansichtsport zu erhalten.
 
-## <a name="programmatically-controlling-the-diagnostics-system"></a>Programmgesteuerte Steuerung des Diagnosesystems
+## <a name="programmatically-controlling-the-diagnostics-system"></a>Programmgesteuertes Steuern des Diagnosesystems
 
-Es ist auch möglich, die Sichtbarkeit des Diagnosesystems und des Profilers zur Laufzeit umzuschalten. Der folgende Code blendet beispielsweise das Diagnosesystem und den Profiler aus.
+Es ist auch möglich, die Sichtbarkeit des Diagnosesystems und des Profilers zur Laufzeit umschalten. Der folgende Code blendet z. B. das Diagnosesystem und den Profiler aus.
 
 ```c#
 CoreServices.DiagnosticsSystem.ShowDiagnostics = false;
@@ -68,7 +68,7 @@ CoreServices.DiagnosticsSystem.ShowDiagnostics = false;
 CoreServices.DiagnosticsSystem.ShowProfiler = false;
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Diagnosesystem](diagnostics-system-getting-started.md)
 - [Verwenden von Visual Profiler](using-visual-profiler.md)
