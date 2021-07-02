@@ -1,20 +1,20 @@
 ---
-title: Controller in MRTK
+title: Erkennen von Controllern in MRTK
 description: Dokumentation zur Verwendung verschiedener Controller mit MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Controller, HP Reverb, Oculus, UNITY Vive, Hands
-ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 2bb749f4e2f6294c4feb74f97af55ecb857d5f76
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743583"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175593"
 ---
-# <a name="controllers-in-mrtk"></a>Controller in MRTK
+# <a name="detecting-controllers-in-mrtk"></a>Erkennen von Controllern in MRTK
 
-MRTK bietet Unterstützung für viele verschiedene Controller. Viele Controller, wie z. B. BLEND Vive Knuckles und BLEND Vive Wands, funktionieren nativ, sobald eine mit MRTK konstruierte Anwendung auf dem kompatiblen Gerät gestartet wird. Andere Controller, z. B. die artikulierten Hände auf den Oculus Quest- und HP Reverb G2-Controllern, erfordern zusätzliche Pakete, bevor sie vom MRTK erkannt werden.
+MRTK bietet Unterstützung für viele verschiedene Controller. Viele Controller, wie z.B. BLEND Vive Knuckles und BLEND Vive Wands, funktionieren nativ, sobald eine mit MRTK konstruierte Anwendung auf dem kompatiblen Gerät gestartet wird. Andere Controller, z. B. die artikulierten Hände auf oculus Quest und den HP Reverb G2-Controllern, erfordern zusätzliche Pakete, bevor sie vom MRTK erkannt werden.
 
 In diesem Dokument werden die gängigen Szenarien beschrieben, in denen zusätzliche Pakete installiert werden müssen. Anweisungen zum Bereitstellen auf Ihrem Gerät finden Sie auf den [**Bereitstellungsseiten hololens/WMR**](./wmr-mrtk.md) oder [**Oculus Quest.**](/windows/mixed-reality/mrtk-unity/supported-devices/oclus-quest-mrtk) Weitere Informationen zu Controllern finden Sie auf der [**Featureseite**](../features/input/controllers.md). Informationen zum Debuggen von Problemen mit Controllern finden Sie unter [ **Controllerzuordnungstool.**](../features/tools/controller-mapping-tool.md)
 

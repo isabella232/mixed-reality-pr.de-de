@@ -1,20 +1,20 @@
 ---
-title: Bereitstellen in HoloLens- und WMR-Headsets
+title: Bereitstellen auf HoloLens- und WMR-Headsets
 description: Dokumentation zum Erstellen und Bereitstellen von Apps auf verschiedenen Geräten.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Visual Studio
-ms.openlocfilehash: 12384c3d3c0c2208d86a9a946580d0311f8a8955
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: 137e1b699e9a0cda1e8a454a6c3219b581fa71b4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042301"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176377"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>Bereitstellen in HoloLens- und WMR-Headsets
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Bereitstellen auf HoloLens- und WMR-Headsets
 
-Es gibt zwei Möglichkeiten, anwendungen, die mit MRTK erstellt wurden, auf Ihrem Windows-Gerät bereitzustellen: die Universelle Windows-Plattform (UWP) und die eigenständige Plattform. Anwendungen, die für HoloLens 1 oder HoloLens 2 erstellt wurden, müssen UWP als Ziel verwenden, während Anwendungen, die für WMR-Headsets erstellt wurden, entweder auf UWP oder eigenständig ausgerichtet sein können.
+Es gibt zwei Möglichkeiten, anwendungen, die mit MRTK erstellt wurden, auf Ihrem Windows-Gerät bereitzustellen: die Universelle Windows-Plattform (UWP) und die eigenständige Plattform. Anwendungen, die für HoloLens 1 oder HoloLens 2 erstellt wurden, müssen UWP als Ziel verwenden, während Anwendungen, die für WMR-Headsets erstellt wurden, entweder UWP oder Eigenständig sein können.
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>Erstellen und Bereitstellen von MRTK für HoloLens 1, HoloLens 2 und WMR-Headsets (UWP)
 

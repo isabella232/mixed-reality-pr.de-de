@@ -5,12 +5,12 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/9/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK
-ms.openlocfilehash: c277cadffb356b93ffc359233b0b8307f43e8d57
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 50ef252913575988b5f377dd9ff92f9e9ade3a72
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144138"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176167"
 ---
 # <a name="asset-swap-utility"></a>Hilfsprogramm zum Austauschen von Medienobjekten
 
@@ -22,7 +22,7 @@ Suchen und Ersetzen ist bei der Arbeit mit Text- und Inhaltserstellungstools ubi
 
 Das Austauschen von Ressourcen ist einfach, nachdem Sie eine erstellt `AssetSwapCollection` haben. Wir veranschaulichen die Verwendung, indem wir zwei rote Würfel mit zwei blauen Kugeln in einer Szene austauschen. Fügen Sie ihrer Szene zunächst zwei rote Würfel hinzu, die den Unity-Standardcube und das `MRTK_Standard_Red` Material verwenden.
 
-Navigieren Sie zum Erstellen eines `AssetSwapCollection` zu Mixed Reality Toolkit > Utilities > Create Asset Swap **Collection**. Füllen Sie mit dem `AssetSwapCollection` ausgewählten die Eigenschaften aus, wie in der folgenden Abbildung dargestellt:
+Navigieren Sie zum Erstellen eines zu Mixed Reality Toolkit > Utilities > Create Asset Swap Collection (Sammlung zum Austauschen von `AssetSwapCollection` **Medienobjekten erstellen).** Füllen Sie mit dem `AssetSwapCollection` ausgewählten die Eigenschaften aus, wie in der folgenden Abbildung dargestellt:
 
 ![Sammlung zum Austauschen von Medienobjekten im Unity-Editor](images/asset-swap-img-01.png)
 
@@ -30,7 +30,7 @@ Wählen Sie als Nächstes in der Dropdownliste "Ausgewähltes Design" die Option
 
 ![Sammlung zum Austauschen von Medienobjekten im Unity-Editor mit ausgewähltem Design hervorgehoben](images/asset-swap-img-02.png)
 
-In diesem Beispiel haben wir eine vollständige Szenenersetzung durchgeführt, aber Sie können Teile Ihrer Szene ersetzen, indem Sie den Auswahlmodus ändern. Sie können auch wieder zu roten Cubes wechseln, indem Sie in der Dropdownliste "Ausgewähltes Design" "Red Cubes" auswählen und erneut auf "Übernehmen" klicken.
+In diesem Beispiel haben wir eine vollständige Szenenersetzung durchgeführt, aber Sie können Teile Ihrer Szene ersetzen, indem Sie den Auswahlmodus ändern. Sie können auch wieder zu roten Cubes wechseln, indem Sie in der Dropdownliste "Ausgewähltes Design" die Option "Red Cubes" auswählen und erneut auf "Übernehmen" klicken.
 
 > [!NOTE]
-> Es ist möglich, jeden Assettyp wie Audiodateien, Schriftarten, Prefabs usw. zu tauschen. Führt `AssetSwapUtility` einige Überprüfungen der Nität durch, um sicherzustellen, dass Sie auf ähnliche Typen umtauschen.
+> Es ist möglich, alle Medienobjekttypen wie Audiodateien, Schriftarten, Prefabs usw. auszutauschen. Führt `AssetSwapUtility` einige Überprüfungen der Bereinigung durch, um sicherzustellen, dass Sie einen Austausch zu ähnlichen Typen durchführen.

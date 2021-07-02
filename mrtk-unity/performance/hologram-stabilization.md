@@ -1,16 +1,16 @@
 ---
-title: Hologrammstabilisierung
+title: Hologramm-Stabilität
 description: Leistung von Hologrammen unter unterschiedlichen Umgebungs- und Bildfrequenzbedingungen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Umgebungsnachverfolgung, TMP,
-ms.openlocfilehash: 338ae2719764b84b7c58c1422e08fe02176eccf0
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: 7aab167f2d850a4bca88a2cc40aae4f3cc50fb4b
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333432"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176480"
 ---
 # <a name="hologram-stabilization"></a>Hologramm-Stabilität
 
@@ -20,11 +20,11 @@ Damit die zugrunde liegende Mixed Reality-Plattform und das Gerät die besten Er
 
 ## <a name="environment-tracking"></a>Umgebungsnachverfolgung
 
-Stabiles holografisches Rendering basiert stark auf der Nachverfolgung von Kopfposen durch die Plattform & Gerät. Unity rendert die Szene mit jedem Frame aus der Kamerapose, die von der zugrunde liegenden Plattform geschätzt und bereitgestellt wird. Wenn diese Nachverfolgung der tatsächlichen Kopfbewegung nicht ordnungsgemäß folgt, erscheinen Hologramme visuell ungenau. Dies ist besonders offensichtlich und wichtig für AR-Geräte wie HoloLens, bei denen Benutzer virtuelle Hologramme mit der realen Welt in Beziehung stellen können. Die Leistung ist für die zuverlässige Kopfverfolgung wichtig, aber es kann auch [andere wichtige Features](/windows/mixed-reality/environment-considerations-for-hololens)geben. Die Typen von Umgebungselementen, die sich auf die Benutzerfreundlichkeit auswirken, hängen von den spezifischen Zielplattformdaten ab.
+Stabiles holografisches Rendering basiert stark auf der Nachverfolgung von Kopfposen durch die Plattform & Gerät. Unity rendert die Szene in jedem Frame aus der Kamerapose, die geschätzt und von der zugrunde liegenden Plattform bereitgestellt wird. Wenn diese Nachverfolgung der tatsächlichen Kopfbewegung nicht ordnungsgemäß folgt, erscheinen Hologramme visuell ungenau. Dies ist besonders offensichtlich und wichtig für AR-Geräte wie HoloLens, bei denen Benutzer virtuelle Hologramme mit der realen Welt in Beziehung stellen können. Die Leistung ist für die zuverlässige Kopfverfolgung wichtig, aber es kann auch [andere wichtige Features](/windows/mixed-reality/environment-considerations-for-hololens)geben. Die Typen von Umgebungselementen, die sich auf die Benutzerfreundlichkeit auswirken, hängen von den spezifischen Zielplattformdaten ab.
 
 ## <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-Die Windows Mixed Reality-Plattform stellt [Referenzmaterial](/windows/mixed-reality/hologram-stability) für die Verfingung von Hologrammen auf der Plattform zur Verfügung. Es gibt jedoch einige wichtige Tools, die Entwickler verwenden können, um die visuelle Hologrammerfahrung für Benutzer zu verbessern.
+Die Windows Mixed Reality-Plattform stellt [Referenzmaterial für](/windows/mixed-reality/hologram-stability) die Entwicklung von Hologrammen auf der Plattform zur Verfügung. Es gibt jedoch einige wichtige Tools, die Entwickler verwenden können, um die visuelle Hologrammerfahrung für Benutzer zu verbessern.
 
 ### <a name="depth-buffer-sharing"></a>Tiefenpufferfreigabe
 
@@ -32,41 +32,41 @@ Unity-Entwickler haben die Möglichkeit, den Tiefenpuffer der Anwendung mit der 
 
 #### <a name="late-stage-reprojection"></a>Neuprojektion in später Phase
 
-Am Ende des Renderns eines Frames nimmt die Windows Mixed Reality Plattform die Farbe & von der Anwendung erzeugten Tiefenrenderingziele an und transformiert die endgültige Bildschirmausgabe, um jede geringfügige Kopfbewegung seit der letzten Vorhersage der Kopfpose zu berücksichtigen. Die Ausführung der Spielschleife einer Anwendung nimmt Zeit in Anspruch. Bei 60 FPS bedeutet dies beispielsweise, dass die Anwendung ~16,667 ms zum Rendern eines Frames nimmt. Auch wenn dies wie eine kleine Zeitspanne erscheinen mag, ändern sich die Position und Ausrichtung des Kopfes des Benutzers, was zu neuen Projektionsmatrizen für die Kamera beim Rendern führt. Die neu projizierte Spätphase transformiert die Pixel im endgültigen Bild, um diese neue Perspektive zu berücksichtigen.
+Am Ende des Renderns eines Frames verwendet die Windows Mixed Reality-Plattform die von der Anwendung erzeugten Farb- &-Tiefenrenderingziele und transformiert die endgültige Bildschirmausgabe, um jede geringfügige Kopfbewegung seit der letzten Kopfstellungsvorhersage zu berücksichtigen. Die Ausführung der Spielschleife einer Anwendung dauert eine Zeit. Bei 60 FPS bedeutet dies beispielsweise, dass die Anwendung ca. 16,667 ms zum Rendern eines Frames verwendet. Obwohl dies wie eine miniscule-Zeit erscheinen mag, ändern sich die Position und Ausrichtung des Kopfes des Benutzers, was zu neuen Projektionsmatrizen für die Kamera beim Rendering führt. Bei der Neuprojektion in später Phase werden die Pixel im endgültigen Bild transformiert, um diese neue Perspektive zu berücksichtigen.
 
-#### <a name="per-pixel-vs-stabilization-plane-lsr"></a>LSR pro Pixel im Vergleich zur Stabilisierungsebene
+#### <a name="per-pixel-vs-stabilization-plane-lsr"></a>LSR pro Pixel im Vergleich zur Stabilitätsebene
 
-Abhängig vom Geräteendpunkt und der Betriebssystemversion, die auf einem Windows Mixed Reality Gerät ausgeführt wird, wird der Late-Stage Reprojection-Algorithmus entweder pro Pixel oder über eine [Stabilisierungsebene](/windows/mixed-reality/hologram-stability#stabilization-plane)ausgeführt.
+Abhängig vom Geräteendpunkt und der Betriebssystemversion, die auf einem Windows Mixed Reality-Gerät ausgeführt werden, wird der Late-StageLate-Stage-Algorithmus für die Neuprojektion entweder pro Pixel oder über eine [Stabilitätsebene ausgeführt.](/windows/mixed-reality/hologram-stability#stabilization-plane)
 
-##### <a name="per-pixel-depth-based"></a>Tiefenbasiert pro Pixel
+##### <a name="per-pixel-depth-based"></a>Tiefenbasierte Pixelgröße
 
-Die auf der Pixeltiefe basierende Neuprojektion umfasst die Verwendung des Tiefenpuffers, um die Bildausgabe pro Pixel zu ändern und so Hologramme in verschiedenen Entfernungen zu stabilieren. Beispielsweise kann sich eine 1 m entfernte Kugel vor einer Säule befindet, die 10 m entfernt ist. Die Pixel, die die Kugel darstellen, haben eine andere Transformation als die weit entfernten Pixel, die die Säule darstellen, wenn der Benutzer den Kopf leicht geneigt hat. Bei der Pro-Pixel-Neuprojektion wird dieser Abstandsunterschied bei jedem Pixel berücksichtigt, um eine genauere Neuprojektion zu ermöglichen.
+Bei der tiefenbasierten Neuprojektion pro Pixel wird der Tiefenpuffer verwendet, um die Bildausgabe pro Pixel zu ändern und somit Hologramme in verschiedenen Entfernungen zu stabilisiert. Beispielsweise kann eine Kugel 1 m entfernt vor einer Säule stehen, die 10 m entfernt ist. Die Pixel, die die Kugel darstellen, haben eine andere Transformation als die weit entfernten Pixel, die die Säule darstellen, wenn der Benutzer den Kopf leicht gekippt hat. Bei der Neuprojektion pro Pixel wird dieser Abstandsunterschied bei jedem Pixel berücksichtigt, um eine genauere Neuprojektion zu erreichen.
 
-##### <a name="stabilization-plane"></a>Stabilisierungsebene
+##### <a name="stabilization-plane"></a>Stabilitätsebene
 
-Wenn es nicht möglich ist, einen genauen Tiefenpuffer für die Freigabe mit der Plattform zu erstellen, verwendet eine andere Form von LSR eine Stabilisierungsebene. Alle Hologramme in einer Szene erhalten eine gewisse Stabilisierung, aber Hologramme, die auf der gewünschten Ebene stehen, erhalten die maximale Hardwarestabilität. Der Punkt und der Normalwert für die Ebene können der Plattform über die [von Unity bereitgestellte](/windows/mixed-reality/focus-point-in-unity) *HolographicSettings.SetFocusPointForFrame-API* bereitgestellt werden.
+Wenn es nicht möglich ist, einen genauen Tiefenpuffer für die Freigabe mit der Plattform zu erstellen, verwendet eine andere Form von LSR eine Stabilitätsebene. Alle Hologramme in einer Szene erhalten eine gewisse Stabilität, aber Hologramme, die auf der gewünschten Ebene gespeichert sind, erhalten die maximale Hardwarestabilisierung. Der Punkt und der Normalwert für die Ebene können über die von Unity bereitgestellte *HolographicSettings.SetFocusPointForFrame-API* für [die Plattform bereitgestellt werden.](/windows/mixed-reality/focus-point-in-unity)
 
 #### <a name="depth-buffer-format"></a>Tiefenpufferformat
 
-Wenn HoloLens für die Entwicklung als Ziel verwendet wird, wird dringend empfohlen, das 16-Bit-Tiefenpufferformat im Vergleich zu 24-Bit zu verwenden. Dies kann zu erheblichen Leistungssteigerungen führen, obwohl Tiefenwerte weniger Genauigkeit haben. Um die geringere Genauigkeit zu kompensieren und [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) [](https://docs.unity3d.com/Manual/class-Camera.html) zu vermeiden, wird empfohlen, die Clipebene von dem von Unity festgelegten Standardwert von 1.000 m zu verringern.
+Wenn Sie HoloLens entwickeln möchten, wird dringend empfohlen, das 16-Bit-Tiefenpufferformat im Vergleich zu 24-Bit zu verwenden. Dies kann zu erheblichen Leistungssteigerungen führen, obwohl Tiefenwerte eine geringere Genauigkeit haben. Um die geringere Genauigkeit zu kompensieren und [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) [](https://docs.unity3d.com/Manual/class-Camera.html) zu vermeiden, wird empfohlen, die Clipebene von dem von Unity festgelegten Standardwert von 1.000 m zu verringern.
 
 > [!NOTE]
 > Bei Verwendung *des 16-Bit-Tiefenformats* funktionieren die erforderlichen Effekte des Schablonenpuffers nicht, da Unity in dieser Einstellung keinen Schablonenpuffer erstellt. [](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) Wenn Sie *umgekehrt das 24-Bit-Tiefenformat* auswählen, wird in der Regel ein [8-Bit-Schablonenpuffer](https://docs.unity3d.com/Manual/SL-Stencil.html)erstellt, sofern dies auf der Endpunktgrafikplattform zu finden ist.
 
-#### <a name="depth-buffer-sharing-in-unity"></a>Gemeinsame Nutzung des Tiefenpuffers in Unity
+#### <a name="depth-buffer-sharing-in-unity"></a>Tiefenpufferfreigabe in Unity
 
 Um die tiefenbasierte LSR nutzen zu können, müssen Entwickler zwei wichtige Schritte ausführen.
 
-1. Unter **Projekteinstellungen**  >  **bearbeiten**  >  **Player**  >  **XR Settings** Virtual Reality  >  **SDKs** > Aktivieren der **Tiefenpufferfreigabe**
-    1. Wenn HoloLens als Ziel verwendet wird, wird empfohlen, auch **das 16-Bit-Tiefenformat** auszuwählen.
+1. Aktivieren **Sie unter**  >  **Project Einstellungen**  >  **Player**  >  **XR Einstellungen** Virtual Reality SDKs >  >   **Tiefenpufferfreigabe aktivieren.**
+    1. Wenn sie HoloLens, wird empfohlen, auch **das 16-Bit-Tiefenformat** auszuwählen.
 1. Wenn Sie Farbe auf dem Bildschirm rendern, rendern Sie auch die Tiefe.
 
-[Opake GameObjects](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) in Unity schreiben in der Regel automatisch in die Tiefe. Allerdings schreiben transparente & Textobjekte in der Regel nicht standardmäßig in die Tiefe. Wenn Sie den MRTK-Standard-Shader oder Text Mesh Pro verwenden, kann dies problemlos behoben werden.
+[Opake GameObjects](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html) in Unity schreiben in der Regel automatisch in die Tiefe. Allerdings schreiben transparente & Textobjekte in der Regel nicht standardmäßig in die Tiefe. Wenn Sie den MRTK-Standard-Shader oder das Text mesh-Pro, kann dies problemlos behoben werden.
 
 > [!NOTE]
-> Um schnell zu bestimmen, welche Objekte in einer Szene nicht visuell in den Tiefenpuffer schreiben, können Sie das Hilfsprogramm [ *Render Depth Buffer*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) unter den *Editoreinstellungen* im MRTK-Konfigurationsprofil verwenden.
+> Um schnell zu bestimmen, welche Objekte in einer Szene nicht visuell in den Tiefenpuffer schreiben, können Sie das Hilfsprogramm Render [ *Depth Buffer*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) unter dem *Editor Einstellungen* im MRTK-Konfigurationsprofil verwenden.
 
-##### <a name="transparent-mrtk-standard-shader"></a>Transparent MRTK Standard-Shader
+##### <a name="transparent-mrtk-standard-shader"></a>Transparenter MRTK Standard-Shader
 
 Wählen Sie für transparente Materialien, die [den MRTK Standard-Shader](../features/rendering/MRTK-standard-shader.md)verwenden, das Material aus, um es im Inspektorfenster *anzuzeigen.* Klicken Sie dann auf die *Schaltfläche Fix Now* (Jetzt korrigieren), um das zu schreibende Material in die Tiefe zu konvertieren (d.h. Z-Write On).
 
@@ -78,15 +78,15 @@ Nach
 
 ![MrTK-Standard-Shader mit festem Tiefenpuffer](../features/images/performance/DepthBufferFixNow_After.PNG)
 
-##### <a name="text-mesh-pro"></a>Text Mesh Pro
+##### <a name="text-mesh-pro"></a>Text Mesh-Pro
 
-Wählen Sie für Text Mesh Pro-Objekte das TMP GameObject aus, um es im Inspektor anzuzeigen. Wechseln Sie unter der Materialkomponente den Shader für das zugewiesene Material, um den MRTK TextMeshPro-Shader zu verwenden.
+Wählen Sie für Text Mesh Pro-Objekte das TMP-GameObject aus, um es im Inspektor zu sehen. Wechseln Sie unter der Materialkomponente den Shader für das zugewiesene Material, um den MRTK TextMeshPro-Shader zu verwenden.
 
-![Korrektur des Textgitters pro Tiefenpuffer](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
+![Text mesh Pro Depth Buffer Fix](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
 
 ##### <a name="custom-shader"></a>Benutzerdefinierter Shader
 
-Wenn Sie einen benutzerdefinierten Shader schreiben, fügen Sie das [ZWrite-Flag](https://docs.unity3d.com/Manual/SL-CullAndDepth.html) am Anfang der *Pass-Blockdefinition* hinzu, um den Shader so zu konfigurieren, dass er in den Tiefenpuffer schreibt.
+Wenn Sie einen benutzerdefinierten Shader schreiben, fügen Sie das [ZWrite-Flag](https://docs.unity3d.com/Manual/SL-CullAndDepth.html) am Anfang der *Pass-Blockdefinition* hinzu, um den Shader für das Schreiben in den Tiefenpuffer zu konfigurieren.
 
 ```
 Shader "Custom/MyShader"
@@ -103,18 +103,18 @@ Shader "Custom/MyShader"
 }
 ```
 
-##### <a name="opaque-backings"></a>Nicht transparente Unterstützungen
+##### <a name="opaque-backings"></a>Nicht transparente Backings
 
-Wenn die oben genannten Methoden für ein bestimmtes Szenario (d. h. mithilfe der Unity-Benutzeroberfläche), ist es möglich, dass ein anderes Objekt in den Tiefenpuffer geschrieben wird. Ein gängiges Beispiel ist die Verwendung von Unity UI Text in einem unverankerten Panel in einer Szene. Wenn das Panel nicht transparent ist oder zumindest in die Tiefe geschrieben wird, wird der Text & des Bereichs durch die Plattform stabil, da ihre Z-Werte so nah beieinander liegen.
+Wenn die oben genannten Methoden für ein bestimmtes Szenario nicht funktionieren (d. h. Mithilfe der Unity-Benutzeroberfläche ist es möglich, dass ein anderes Objekt in den Tiefenpuffer schreibt. Ein gängiges Beispiel ist die Verwendung von Unity UI Text in einem unverankerten Panel in einer Szene. Wenn der Bereich undurchsichtig ist oder zumindest in die Tiefe geschrieben wird, wird der Text & dem Bereich durch die Plattform stabilisiert, da sich die Z-Werte so nah beieinander befinden.
 
 ### <a name="worldanchors-hololens"></a>WorldAnchors (HoloLens)
 
-Neben der Sicherstellung, dass die richtigen Konfigurationen erfüllt sind, um die visuelle Stabilität sicherzustellen, ist es wichtig sicherzustellen, dass Hologramme an den richtigen physischen Positionen stabil bleiben. Um die Plattform an wichtigen Orten in einem physischen Raum zu informieren, können Entwickler [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) auf GameObjects nutzen, die an einem Ort bleiben müssen. Ein [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) ist eine Komponente, die einem GameObject hinzugefügt wird und die absolute Kontrolle über die Transformation dieses Objekts übernimmt.
+Neben der Sicherstellung, dass die richtigen Konfigurationen erfüllt werden, um die visuelle Stabilität sicherzustellen, ist es wichtig, sicherzustellen, dass Hologramme an ihren richtigen physischen Positionen stabil bleiben. Um die Plattform über wichtige Orte in einem physischen Raum zu informieren, können Entwickler [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) auf GameObjects nutzen, die an einem Ort bleiben müssen. Ein [WorldAnchor ist](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) eine Komponente, die einem GameObject hinzugefügt wird und die absolute Kontrolle über die Transformation dieses Objekts übernimmt.
 
-Geräte wie HoloLens scannen und lernen ständig die Umgebung. Da die HoloLens die Bewegung & Position im Raum verfolgt, werden die Schätzungen aktualisiert und das [Unity-Koordinatensystem angepasst.](/windows/mixed-reality/coordinate-systems-in-unity) Wenn z. B. ein GameObject 1 m von der Kamera am Anfang entfernt platziert wird, während die HoloLens die Umgebung verfolgt, erkennt es möglicherweise den physischen Punkt, an dem sich das GameObject befindet, tatsächlich 1,1 m entfernt ist. Dies würde zu einer Hologrammabweichung führen. Durch Anwenden eines WorldAnchor auf ein GameObject kann der Anker die Transformation des Objekts steuern, sodass das Objekt an der richtigen physischen Position (d. h. zur Laufzeit auf 1,1 m statt auf 1 m aktualisiert). Um [WorldAnchors sitzungsübergreifend](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) zu speichern, können Entwickler [worldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) verwenden, um [WorldAnchors](/windows/mixed-reality/persistence-in-unity)zu speichern und zu laden.
+Geräte wie HoloLens werden ständig gescannt und lernen die Umgebung. Wenn der HoloLens die Bewegung & position im Raum verfolgt, werden seine Schätzungen aktualisiert und das [Unity-Koordinatensystem angepasst.](/windows/mixed-reality/coordinate-systems-in-unity) Wenn ein GameObject beispielsweise 1 m von der Kamera zu Beginn platziert wird, während die HoloLens die Umgebung verfolgt, kann es erkennen, dass der physische Punkt, an dem sich das GameObject befindet, tatsächlich 1,1 m entfernt ist. Dies würde zu einem Hologrammdrift führen. Durch anwenden eines WorldAnchor auf ein GameObject kann der Anker die Transformation des Objekts steuern, sodass das Objekt an der richtigen physischen Position verbleibt (d. h. zur Laufzeit auf 1,1 m statt auf 1 m aktualisiert). Um [WorldAnchors sitzungsübergreifend](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) zu speichern, können Entwickler [worldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) verwenden, um [WorldAnchors](/windows/mixed-reality/persistence-in-unity)zu speichern und zu laden.
 
 > [!NOTE]
-> Sobald einem GameObject eine WorldAnchor-Komponente hinzugefügt wurde, ist es nicht mehr möglich, die Transformation dieses GameObject zu ändern (d. h. transform.position = x). Ein Entwickler muss worldAnchor entfernen, um die Transformation zu bearbeiten.
+> Nachdem einem GameObject eine WorldAnchor-Komponente hinzugefügt wurde, ist es nicht mehr möglich, die Transformation dieses GameObject zu ändern (d. h. transform.position = x). Ein Entwickler muss worldAnchor entfernen, um die Transformation zu bearbeiten.
 
 ```c#
 WorldAnchor m_anchor;

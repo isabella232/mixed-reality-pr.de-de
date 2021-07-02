@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Hand tracking,
-ms.openlocfilehash: 6cd55bc76d9fba42640954bcbf50e62f66454a94
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 68e936cb4121027008f37aae72496fe59445b636
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143352"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176891"
 ---
 # <a name="hand-tracking"></a>Handtracking
 
@@ -39,32 +39,32 @@ Das Handgitternetz wird verwendet, wenn vom Handtrackinggerät vollständig defi
 
 <img src="../images/input-simulation/MRTK_Core_Input_Hands_ArticulatedHandMesh.png" width="350px" alt="Input Hand Mesh"  style="display:block;">
 
-Die Anzeige des Handgitternetzes kann eine merkliche Auswirkung auf die Leistung haben. Aus diesem Grund kann sie vollständig deaktiviert werden, indem die Option **Handnetzvisualisierung aktivieren** deaktiviert wird.
+Die Anzeige des Handgitternetzes kann eine spürbare Auswirkung auf die Leistung haben. Aus diesem Grund kann es vollständig deaktiviert werden, indem die Option **Handnetzvisualisierung aktivieren** deaktiviert wird.
 
 ## <a name="hand-visualization-settings"></a>Einstellungen für die Handvisualisierung
 
-Die Handgitter- und Hand-Hand-Fugenvisualisierungen können über die Einstellung Hand Mesh Visualization Modes (Handgittervisualisierungsmodi) bzw. Hand Joint Visualization Modes (Handgenetzvisualisierungsmodi) ein- bzw. *ausgeschaltet* werden.  Diese Einstellungen sind anwendungsmodusspezifisch, d. h., es ist möglich, einige Features im Editor zu aktivieren (z. B. um Fugen mit In-Editor-Simulationen zu sehen), während dieselben Features bei der Bereitstellung auf dem Gerät (in Player-Builds) deaktiviert sind.
+Die Handgitternetz- und Handverbindungsvisualisierungen können über die Einstellung *Hand Mesh Visualization Modes* bzw. Hand Joint Visualization *Modes* aus- oder eingeschaltet werden. Diese Einstellungen sind anwendungsmodusspezifisch, d. h., es ist möglich, einige Features im Editor zu aktivieren (um z. B. Joints mit der Simulation im Editor anzuzeigen), während die gleichen Features deaktiviert sind, wenn sie auf dem Gerät bereitgestellt werden (in Playerbuilds).
 
-Beachten Sie, dass es im Allgemeinen empfohlen wird, die Hand-Fugenvisualisierung im Editor eingeschaltet zu haben (damit die In-Editor-Simulation zeigt, wo sich die Handgelenke befinden), und sowohl die Hand-Fugevisualisierung als auch die Handgittervisualisierung im Player ausgeschaltet zu haben (da sie zu einem Leistungstreffer führen).
+Beachten Sie, dass es im Allgemeinen empfohlen wird, die Handverbindungsvisualisierung im Editor zu aktiviert zu lassen (damit die Simulation im Editor zeigt, wo sich die Handverbindungen befinden), und dass sowohl die Handverbindungsvisualisierung als auch die Handgittermodellvisualisierung im Spieler deaktiviert werden (da sie zu leistungsbezogenen Treffern führt).
 
 ## <a name="scripting"></a>Skripterstellung
 
-Position und Drehung können vom Eingabesystem für jedes einzelne Handgelenk als angefordert [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) werden.
+Position und Drehung können vom Eingabesystem für jedes einzelne Handgesamt als angefordert [`MixedRealityPose`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) werden.
 
-Alternativ ermöglicht das System den Zugriff auf [GameObjects,](https://docs.unity3d.com/ScriptReference/GameObject.html) die den Fugen folgen. Dies kann nützlich sein, wenn ein anderes GameObject kontinuierlich ein Gemeinsames nachverfolgen soll.
+Alternativ ermöglicht das System den Zugriff auf [GameObjects,](https://docs.unity3d.com/ScriptReference/GameObject.html) die den Fugen folgen. Dies kann nützlich sein, wenn ein anderes GameObject ein Gemeinsames kontinuierlich nachverfolgen soll.
 
-Verfügbare Joints sind in der [`TrackedHandJoint`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint) -Enum aufgeführt.
+Verfügbare Fugen sind in der [`TrackedHandJoint`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedHandJoint) Enumeration aufgeführt.
 
 > [!NOTE]
-> Das gemeinsame Objekt wird zerstört, wenn die Handverfolgung verloren geht! Stellen Sie sicher, dass alle Skripts, die das gemeinsame Objekt verwenden, den Fall ordnungsgemäß `null` behandeln, um Fehler zu vermeiden!
+> Gemeinsame Objekte werden zerstört, wenn die Handverfolgung verloren geht! Stellen Sie sicher, dass alle Skripts, die das gemeinsame -Objekt verwenden, den `null` Fall ordnungsgemäß behandeln, um Fehler zu vermeiden!
 
 ### <a name="accessing-a-given-hand-controller"></a>Zugreifen auf einen bestimmten Handcontroller
 
-Ein bestimmter Handcontroller ist häufig verfügbar, z. B. bei der Behandlung von Eingabeereignissen. In diesem Fall können die gemeinsamen Daten über die Schnittstelle direkt vom Gerät angefordert [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) werden.
+Ein bestimmter Handcontroller ist häufig verfügbar, z. B. bei der Behandlung von Eingabeereignissen. In diesem Fall können die gemeinsamen Daten über die -Schnittstelle direkt vom Gerät angefordert [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) werden.
 
-#### <a name="polling-joint-pose-from-controller"></a>Abruf der Gemeinsamen Pose vom Controller
+#### <a name="polling-joint-pose-from-controller"></a>Abfragen der gemeinsamen Posen vom Controller
 
-Die [`TryGetJoint`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand.TryGetJoint*) Funktion gibt `false` zurück, wenn das angeforderte Joint aus irgendeinem Grund nicht verfügbar ist. In diesem Fall ist die resultierende Pose [`MixedRealityPose.ZeroIdentity`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose.ZeroIdentity) .
+Die [`TryGetJoint`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand.TryGetJoint*) Funktion gibt `false` zurück, wenn das angeforderte Gemeinsame aus irgendeinem Grund nicht verfügbar ist. In diesem Fall ist die resultierende Pose [`MixedRealityPose.ZeroIdentity`](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose.ZeroIdentity) .
 
 ```c#
 public void OnSourceDetected(SourceStateEventData eventData)
@@ -80,9 +80,9 @@ public void OnSourceDetected(SourceStateEventData eventData)
 }
 ```
 
-#### <a name="joint-transform-from-hand-visualizer"></a>Gemeinsame Transformation aus der Handvis visualisieren
+#### <a name="joint-transform-from-hand-visualizer"></a>Gemeinsame Transformation aus Hand-Schnellansicht
 
-Gemeinsame Objekte können über die Controller-Schnellansicht [angefordert werden.](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityController.Visualizer)
+Gemeinsame Objekte können über die [Controller-Schnellansicht](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityController.Visualizer)angefordert werden.
 
 ```c#
 public void OnSourceDetected(SourceStateEventData eventData)
@@ -100,7 +100,7 @@ public void OnSourceDetected(SourceStateEventData eventData)
 
 ### <a name="simplified-joint-data-access"></a>Vereinfachter gemeinsamer Datenzugriff
 
-Wenn kein bestimmter Controller angegeben wird, werden Hilfsprogrammklassen für den komfortablen Zugriff auf Hand-Joint-Daten bereitgestellt. Diese Funktionen fordern gemeinsame Daten vom ersten verfügbaren Gerät an, das derzeit nachverfolgt wird.
+Wenn kein bestimmter Controller angegeben wird, werden Hilfsprogrammklassen für den bequemen Zugriff auf gemeinsame Handdaten bereitgestellt. Diese Funktionen fordern gemeinsame Daten vom ersten verfügbaren Handgerät an, das derzeit nachverfolgt wird.
 
 #### <a name="polling-joint-pose-from-handjointutils"></a>Polling joint pose from HandJointUtils
 

@@ -1,20 +1,20 @@
 ---
-title: Optimierungsfenster
+title: Fenster "Optimieren"
 description: Fenster "Dokumentationsoptimierung" im MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 7ffc2173cc55c83f126f66002d9240cb349d7f59
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f9f8ad638b8f7cb1007c923f6b568dffc4340360
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144318"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177558"
 ---
 # <a name="optimize-window"></a>Fenster "Optimieren"
 
-Das MRTK-Optimierungsfenster ist ein Hilfsprogramm zum Automatisieren und Informieren beim Konfigurieren eines Mixed Reality-Projekts für optimale [Leistung](../../performance/perf-getting-started.md) in Unity. Dieses Tool konzentriert sich in der Regel auf Renderingkonfigurationen, die bei der richtigen Voreinstellung Millisekunden an Verarbeitung sparen können.
+Das MRTK-Optimierungsfenster ist ein Hilfsprogramm zum Automatisieren und Informieren beim Konfigurieren eines Mixed Reality-Projekts für die [beste](../../performance/perf-getting-started.md) Leistung in Unity. Dieses Tool konzentriert sich im Allgemeinen auf Renderingkonfigurationen, die bei der richtigen Voreinstellung Millisekunden der Verarbeitung sparen können.
 
 Das *aktive Buildziel* ist die [Buildplattform, auf die](https://docs.unity3d.com/Manual/BuildSettings.html) das Projekt derzeit für die Kompilierung ausgerichtet ist.
 
@@ -32,7 +32,7 @@ Auf der Registerkarte "Optimierung der Einstellungen" werden einige der wichtige
 
 Ein grünes Häkungssymbol bedeutet, dass im Projekt bzw. in der Szene für diese bestimmte Einstellung ein optimaler Wert konfiguriert wurde. Ein gelbes Warnsymbol gibt an, dass die aktuelle Konfiguration verbessert werden kann. Durch Klicken auf die zugeordnete Schaltfläche in einem bestimmten Abschnitt wird diese Einstellung im Unity-Projekt bzw. in der Unity-Szene automatisch auf einen besseren Wert konfiguriert.
 
-![MRTK-Fenstereinstellungen optimieren](../images/performance/OptimizeWindow_Settings.png)
+![MRTK-Optimierungsfenster Einstellungen](../images/performance/OptimizeWindow_Settings.png)
 
 ### <a name="single-pass-instanced-rendering"></a>Rendering mit Einzelpassinstanz
 
@@ -44,7 +44,7 @@ Zur Verbesserung [der Hologramms-Stabilität](../../performance/hologram-Stabili
 
 ### <a name="depth-buffer-format"></a>Tiefenpufferformat
 
-Darüber hinaus wird für *AR-Headsets* empfohlen, beim Aktivieren der Tiefenpufferfreigabe im Vergleich zu 24-Bit ein 16-Bit-Tiefenformat zu verwenden. Dies bedeutet eine geringere Genauigkeit, spart aber die Leistung. Wenn [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) auftritt, weil es weniger Genauigkeit bei der Berechnung der [](https://docs.unity3d.com/Manual/class-Camera.html) Tiefe für Pixel gibt, wird empfohlen, die entfernte Clipebene näher an die Kamera zu verschieben (z. B. 50 m anstelle von 1.000 m).
+Darüber hinaus wird für *AR-Headsets* empfohlen, beim Aktivieren der Tiefenpufferfreigabe im Vergleich zu 24-Bit ein 16-Bit-Tiefenformat zu verwenden. Dies bedeutet eine geringere Genauigkeit, spart aber die Leistung. Wenn [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) auftritt, weil die Berechnung der Tiefe für Pixel weniger [](https://docs.unity3d.com/Manual/class-Camera.html) genau ist, empfiehlt es sich, die entfernte Clipebene näher an die Kamera zu verschieben (z. B. 50 m anstelle von 1000 m).
 
 > [!NOTE]
 > Bei Verwendung *des 16-Bit-Tiefenformats* funktionieren die erforderlichen Effekte des Schablonenpuffers nicht, da Unity in dieser Einstellung keinen Schablonenpuffer erstellt. [](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) Wenn Sie *umgekehrt das 24-Bit-Tiefenformat* auswählen, wird in der Regel ein [8-Bit-Schablonenpuffer](https://docs.unity3d.com/Manual/SL-Stencil.html)erstellt, sofern dies auf der Endpunktgrafikplattform zu finden ist.
@@ -62,7 +62,7 @@ Darüber hinaus wird für *AR-Headsets* empfohlen, beim Aktivieren der Tiefenpuf
 
 Die *Registerkarte Szenenanalyse* dient dazu, Entwickler darüber zu informieren, welche Elemente, die sich derzeit in der Szene befindet, wahrscheinlich die größten Auswirkungen auf die Leistung haben.
 
-![MRTK– Optimieren der Szenenanalyse für Fenstereinstellungen](../images/performance/OptimizeWindow_SceneAnalysis.png)
+![MRTK Optimize Window Einstellungen scene Analysis](../images/performance/OptimizeWindow_SceneAnalysis.png)
 
 ### <a name="lighting-analysis"></a>Beleuchtungsanalyse
 
@@ -70,19 +70,19 @@ In diesem Abschnitt werden die Anzahl der derzeit in der Szene verfügbaren Lich
 
 ### <a name="polygon-count-analysis"></a>Polygonanzahlanalyse
 
-Das Tool stellt auch Statistiken zur Polygonanzahl bereit. Es kann sehr hilfreich sein, schnell zu ermitteln, welche GameObjects in einer bestimmten Szene die höchste Polygonkomplexität aufweisen, um optimierungszielend zu sein.
+Das Tool stellt auch Polygonzählungsstatistiken zur Verfügung. Es kann sehr hilfreich sein, schnell zu ermitteln, welche GameObjects in einer bestimmten Szene die höchste Polygonkomplexität für Optimierungen haben.
 
 ### <a name="unity-ui-raycast-analysis"></a>Raycastanalyse der Unity-Benutzeroberfläche
 
-Grafik-Raycastvorgänge werden pro Zeiger im MRTK ausgeführt, um zu bestimmen, ob Unity-Benutzeroberflächenelemente im Fokus stehen. Diese Raycasts können sehr teuer sein. Um die Leistung zu verbessern, sollten Benutzeroberflächenelemente, die nicht in den Ergebnissen zurückgegeben werden müssen, als Raycastziele deaktiviert werden. Jedes [Graphic-Element](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic.html) verfügt über eine [`Graphic.raycastTarget`](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic-raycastTarget.html) -Eigenschaft. Dieses Tool sucht nach Text-UI-Elementen, für die diese Eigenschaft aktiviert ist und die daher wahrscheinlich deaktiviert werden können.
+Grafik-Raycastvorgänge werden pro Zeiger im MRTK ausgeführt, um zu bestimmen, ob Unity-Benutzeroberflächenelemente im Fokus stehen. Diese Raycasts können sehr teuer sein, und um die Leistung zu verbessern, sollten Benutzeroberflächenelemente, die nicht in den Ergebnissen zurückgegeben werden müssen, als Raycastziele deaktiviert werden. Jedes [Graphic-Element](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic.html) verfügt über eine [`Graphic.raycastTarget`](https://docs.unity3d.com/2018.4/Documentation/ScriptReference/UI.Graphic-raycastTarget.html) -Eigenschaft. Dieses Tool sucht nach Textbenutzeroberflächenelementen, für die diese Eigenschaft aktiviert ist und die daher wahrscheinlich deaktiviert werden können.
 
 ## <a name="shader-analysis"></a>Shaderanalyse
 
-Der [Unity Standard-Shader](https://docs.unity3d.com/Manual/shader-StandardShader.html) kann sehr hochwertige visuelle Ergebnisse für Spiele erzeugen, eignet sich jedoch im Allgemeinen nicht für die Leistungsanforderungen von Mixed Reality-Anwendungen, insbesondere da solche Anwendungen im Allgemeinen GPU-gebunden sind. Daher wird Entwicklern empfohlen, den [MRTK Standard-Shader](../rendering/mrtk-standard-shader.md) zu verwenden, um Dies & grafischen Features mit der Leistung in Einklang zu bringen.
+Der [Unity Standard-Shader](https://docs.unity3d.com/Manual/shader-StandardShader.html) kann sehr hochwertige visuelle Ergebnisse für Spiele erzeugen, eignet sich aber im Allgemeinen nicht am besten für die Leistungsanforderungen von Mixed Reality-Anwendungen, insbesondere da solche Anwendungen im Allgemeinen gpu-gebunden sind. Daher wird Entwicklern empfohlen, den [MRTK Standard-Shader](../rendering/mrtk-standard-shader.md) zu verwenden, um eine Balance zwischen & grafischen Features und Leistung zu erzielen.
 
-Die Registerkarte *Shaderanalyse* scannt den Ressourcenordner des aktuellen Projekts nach Materialien, die den Unity Standard-Shader verwenden, oder, falls gewünscht, alle Materialien, die nicht Mixed Reality Toolkit bereitgestellte Shader verwenden. Nach derEntdeckung können Entwickler alle Materialien konvertieren oder einzeln mit den entsprechenden Schaltflächen konvertieren.
+Auf der *Registerkarte Shaderanalyse* wird der Asset-Ordner des aktuellen Projekts auf Materialien überprüft, die den Unity Standard-Shader verwenden, oder bei Wunsch alle Materialien, die nicht von Mixed Reality Toolkit bereitgestellte Shader verwenden. Nach derEntmittelung können Entwickler alle Materialien oder einzeln mithilfe der entsprechenden Schaltflächen konvertieren.
 
-![MRTK Optimize Window Settings shader analysis (MRTK Optimize Window Settings Shader-Analyse)](../images/performance/OptimizeWindow_ShaderAnalysis.png)
+![MRTK Optimize Window Einstellungen shader analysis](../images/performance/OptimizeWindow_ShaderAnalysis.png)
 
 ## <a name="see-also"></a>Siehe auch
 

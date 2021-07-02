@@ -1,24 +1,24 @@
 ---
-title: ProgressIndicator
-description: Übersicht über den Statusindikator im MRTK
+title: Statusanzeige
+description: Übersicht über den Fortschrittsindikator im MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 9170a376812901cb063038a5513d4fbf79ad0a28
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 268d13d00bc0bcf1d522eaa6809dab9892624e11
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110121"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176575"
 ---
-# <a name="progress-indicators"></a>Statusindikatoren
+# <a name="progress-indicator"></a>Statusanzeige
 
 ![Statusindikatoren](../images/progress-indicator/MRTK_ProgressIndicator_Main.png)
 
 ## <a name="example-scene"></a>Beispielszene
 
-Beispiele für die Verwendung von Fortschrittsindikatoren finden Sie in der `ProgressIndicatorExamples` Szene. In dieser Szene werden alle im SDK enthaltenen Statusindikator-Prefabs veranschaulicht. Außerdem wird veranschaulicht, wie Fortschrittsindikatoren in Verbindung mit einigen gängigen asynchronen Aufgaben wie dem Laden von Szenen verwendet werden.
+Beispiele für die Verwendung von Statusindikatoren finden Sie in der `ProgressIndicatorExamples` Szene. Diese Szene veranschaulicht die einzelnen Prefabs der Statusanzeige, die im SDK enthalten sind. Außerdem wird veranschaulicht, wie Statusindikatoren in Verbindung mit einigen häufigen asynchronen Aufgaben wie dem Laden von Szenen verwendet werden.
 
 <img src="../images/progress-indicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator Examples 1">
 
@@ -37,11 +37,11 @@ private void Start()
 }
 ```
 
-Die `IProgressIndicator.OpenAsync()` Methoden und geben Tasks `IProgressIndicator.CloseAsync()` [zurück.](xref:System.Threading.Tasks.Task) Es wird empfohlen, auf diese Aufgaben in einer asynchronen Methode zu warten.
+Die `IProgressIndicator.OpenAsync()` Methoden und geben `IProgressIndicator.CloseAsync()` [Tasks](xref:System.Threading.Tasks.Task)zurück. Es wird empfohlen, auf diese Aufgaben in einer asynchronen Methode zu warten.
 
-Die Standard-Statusanzeige-Prefabs des MRTK sollten inaktiv sein, wenn sie in einer Szene platziert werden. Wenn ihre `IProgressIndicator.OpenAsync()` Methoden aufgerufen werden, aktivieren und deaktivieren die Statusindikatoren ihre Gameobjects automatisch. (Dieses Muster ist keine Anforderung der IProgressIndicator-Schnittstelle.)
+Die Standardpräfabs der MRTK-Statusanzeige sollten inaktiv sein, wenn sie in einer Szene platziert werden. Wenn ihre `IProgressIndicator.OpenAsync()` Methoden aufgerufen werden, werden die Statusindikatoren automatisch aktiviert und deaktiviert. (Dieses Muster ist keine Anforderung der IProgressIndicator-Schnittstelle.)
 
-Legen Sie die -Eigenschaft `Progress` des Indikators auf einen Wert zwischen 0 und 1 fest, um den angezeigten Status zu aktualisieren. Legen Sie die `Message` -Eigenschaft fest, um die angezeigte Meldung zu aktualisieren. Dieser Inhalt kann in verschiedenen Implementierungen auf unterschiedliche Weise angezeigt werden.
+Legen Sie die -Eigenschaft des Indikators `Progress` auf einen Wert zwischen 0 und 1 fest, um den angezeigten Fortschritt zu aktualisieren. Legen Sie die `Message` -Eigenschaft fest, um die angezeigte Meldung zu aktualisieren. Unterschiedliche Implementierungen können diesen Inhalt auf unterschiedliche Weise anzeigen.
 
 ```c#
 private async void OpenProgressIndicator()
@@ -63,9 +63,9 @@ private async void OpenProgressIndicator()
 
 ## <a name="indicator-states"></a>Indikatorzustände
 
-Die -Eigenschaft eines `State` Indikators bestimmt, welche Vorgänge gültig sind. Wenn Sie eine ungültige Methode aufrufen, wird der Indikator in der Regel einen Fehler melden und keine Aktion ergreifen.
+Die -Eigenschaft eines `State` Indikators bestimmt, welche Vorgänge gültig sind. Das Aufrufen einer ungültigen Methode bewirkt in der Regel, dass der Indikator einen Fehler meldet und keine Aktion vornimmt.
 
-Zustand | Gültige Vorgänge
+State | Gültige Vorgänge
 --- | ---
 `ProgressIndicatorState.Opening` | `AwaitTransitionAsync()`
 `ProgressIndicatorState.Open` | `CloseAsync()`

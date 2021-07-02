@@ -1,28 +1,28 @@
 ---
-title: Eingabe-Animationsdateiformat
+title: Format der Eingabeanimationsdatei
 description: Dokumentation zur Spezifikation des Binärdateiformats für Eingabeanimationen in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: ba232818c0a49d803ca6fae0b5adbc64e6deefa8
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145125"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176998"
 ---
-# <a name="input-animation-binary-file-format-specification"></a>Spezifikation des Binärdateiformats für die Eingabeanimation
+# <a name="input-animation-file-format"></a>Format der Eingabeanimationsdatei
 
 ## <a name="overall-structure"></a>Gesamtstruktur
 
-Die Binärdatei der Eingabeanimation beginnt mit einer magischen 64-Bit-Ganzzahlzahl. Der Wert dieser Zahl in Hexadezimal notation ist `0x6a8faf6e0f9e42c6` und kann verwendet werden, um gültige Eingabeanimationsdateien zu identifizieren.
+Die Binärdatei der Eingabeanimation beginnt mit einer magischen 64-Bit-Ganzzahl. Der Wert dieser Zahl in Hexadezimal notation ist `0x6a8faf6e0f9e42c6` und kann verwendet werden, um gültige Eingabeanimationsdateien zu identifizieren.
 
 Die nächsten acht Bytes sind zwei Int32-Werte, die die Haupt- und Nebenversionsnummer der Datei deklarieren.
 
 Der Rest der Datei wird von Animationsdaten übernommen, die sich zwischen Versionsnummern ändern können.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Magische Zahl | Int64 |
 | Hauptversionsnummer | Int32 |
@@ -33,25 +33,25 @@ Der Rest der Datei wird von Animationsdaten übernommen, die sich zwischen Versi
 
 Die Eingabeanimationsdaten bestehen aus drei booleschen Werten, die angeben, ob die Animation Kamera-, Hand- und Eye Gaze-Daten enthält, gefolgt von einer Sequenz von Animationskurven. Die vorhandenen Kurven hängen von den Werten dieser booleschen Werte ab. Jede Kurve kann eine andere Anzahl von Keyframes aufweisen.
 
-| `Section` | type | Notizen |
+| `Section` | Typ | Hinweise |
 |---------|------|------|
 | Hat Kamerapose | Boolean | |
 | Has Hand Data | Boolean | |
 | Has Eye Gaze| Boolean | |
 | Kamera | [Pose Curves](#pose-curves) | Nur, wenn "Has Camera Pose" (Kamerapose hat) "true" ist |
-| Hand Tracked Left | [Boolesche Kurve](#boolean-curve) | Nur wenn Has Hand Data true ist |
-| Hand nachverfolgt rechts | [Boolesche Kurve](#boolean-curve) | Nur wenn Has Hand Data true ist |
-| Handgekleinerung nach links | [Boolesche Kurve](#boolean-curve) | Nur wenn Has Hand Data true ist |
-| Rechtes Anheften mit der Hand | [Boolesche Kurve](#boolean-curve) | Nur wenn Has Hand Data true ist |
-| Hand Joints Left | [Kurven der gemeinsamen Pose](#joint-pose-curves) | Nur wenn Has Hand Data true ist |
-| Handgelenke rechts | [Kurven der gemeinsamen Pose](#joint-pose-curves) | Nur wenn Has Hand Data true ist |
-| Anvingen mit den Augen | [Ray Curves](#ray-curves)] | Nur wenn "Has Eye Gaze" true ist |
+| Hand Tracked Left | [Boolesche Kurve](#boolean-curve) | Nur, wenn Has Hand Data true ist |
+| Hand nach rechts nachverfolgt | [Boolesche Kurve](#boolean-curve) | Nur, wenn Has Hand Data true ist |
+| Hand zusammendrücken nach links | [Boolesche Kurve](#boolean-curve) | Nur, wenn Has Hand Data true ist |
+| Hand zusammendrücken nach rechts | [Boolesche Kurve](#boolean-curve) | Nur, wenn Has Hand Data true ist |
+| Handverbindungen links | [Gemeinsame Posenkurven](#joint-pose-curves) | Nur, wenn Has Hand Data true ist |
+| Handverbindungen rechts | [Gemeinsame Posenkurven](#joint-pose-curves) | Nur, wenn Has Hand Data true ist |
+| Anväuten mit den Augen | [Ray Curves](#ray-curves)] | Nur, wenn "Has Eye Gaze" wahr ist |
 
 ## <a name="version-10"></a>Version 1.0
 
 Die Eingabeanimationsdaten bestehen aus einer Sequenz von Animationskurven. Anzahl und Bedeutung von Animationskurven sind fest, aber jede Kurve kann eine andere Anzahl von Keyframes aufweisen.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Kamera | [Pose Curves](#pose-curves) |
 | Hand Tracked Left | [Boolesche Kurve](#boolean-curve) |
@@ -63,20 +63,20 @@ Die Eingabeanimationsdaten bestehen aus einer Sequenz von Animationskurven. Anza
 
 ### <a name="joint-pose-curves"></a>Gemeinsame Posenkurven
 
-Für jede Hand wird eine Sequenz von gemeinsamen Animationskurven gespeichert. Die Anzahl der Fugen ist fest, und für jedes Joint wird eine Reihe von Posenkurven gespeichert.
+Für jede Hand wird eine Sequenz von gemeinsamen Animationskurven gespeichert. Die Anzahl der Fugen ist festgelegt, und für jedes Joint wird eine Reihe von Posenkurven gespeichert.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
-| Keiner | [Pose Curves](#pose-curves) |
-| Handgelenk | [Posenkurven](#pose-curves) |
-| Palm | [Posenkurven](#pose-curves) |
-| ThumbMetacarpalJoint | [Posenkurven](#pose-curves) |
-| ThumbProximalJoint | [Posenkurven](#pose-curves) |
-| ThumbDistalJoint | [Posenkurven](#pose-curves) |
-| ThumbTip | [Posenkurven](#pose-curves) |
-| IndexMetacarpal | [Posenkurven](#pose-curves) |
-| IndexKnuckle | [Posenkurven](#pose-curves) |
-| IndexMiddleJoint | [Posenkurven](#pose-curves) |
+| Keine | [Pose Curves](#pose-curves) |
+| Handgelenk | [Pose Curves](#pose-curves) |
+| Palm | [Pose Curves](#pose-curves) |
+| ThumbMetacarpalJoint | [Pose Curves](#pose-curves) |
+| ThumbProximalJoint | [Pose Curves](#pose-curves) |
+| ThumbDistalJoint | [Pose Curves](#pose-curves) |
+| ThumbTip | [Pose Curves](#pose-curves) |
+| IndexMetacarpal | [Pose Curves](#pose-curves) |
+| IndexKnuckle | [Pose Curves](#pose-curves) |
+| IndexMiddleJoint | [Pose Curves](#pose-curves) |
 | IndexDistalJoint | [Posenkurven](#pose-curves) |
 | IndexTip | [Posenkurven](#pose-curves) |
 | MiddleMetacarpal | [Posenkurven](#pose-curves) |
@@ -89,22 +89,22 @@ Für jede Hand wird eine Sequenz von gemeinsamen Animationskurven gespeichert. D
 | RingMiddleJoint | [Posenkurven](#pose-curves) |
 | RingDistalJoint | [Posenkurven](#pose-curves) |
 | RingTip | [Posenkurven](#pose-curves) |
-| RosayMetacarpal | [Pose Curves](#pose-curves) |
-| RosayKnuckle | [Pose Curves](#pose-curves) |
-| RosayMiddleJoint | [Pose Curves](#pose-curves) |
-| RosayDistalJoint | [Pose Curves](#pose-curves) |
-| RosayTip | [Pose Curves](#pose-curves) |
+| RosayMetacarpal | [Posenkurven](#pose-curves) |
+| RosayKnuckle | [Posenkurven](#pose-curves) |
+| RosayMiddleJoint | [Posenkurven](#pose-curves) |
+| RosayDistalJoint | [Posenkurven](#pose-curves) |
+| RosayTip | [Posenkurven](#pose-curves) |
 
 ### <a name="pose-curves"></a>Posenkurven
 
-Pose-Kurven sind eine Sequenz von drei Animationskurven für den Positionsvektor, gefolgt von vier Animationskurven für die Drehquaternion.
+Posenkurven sind eine Sequenz von 3 Animationskurven für den Positionsvektor, gefolgt von 4 Animationskurven für die Drehungs quaternion.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Position X | [Gleitkommakurve](#float-curve) |
 | Position Y | [Gleitkommakurve](#float-curve) |
 | Position Z | [Gleitkommakurve](#float-curve) |
-| Rotation X | [Gleitkommakurve](#float-curve) |
+| Drehung X | [Gleitkommakurve](#float-curve) |
 | Drehung Y | [Gleitkommakurve](#float-curve) |
 | Drehung Z | [Gleitkommakurve](#float-curve) |
 | Drehung W | [Gleitkommakurve](#float-curve) |
@@ -113,7 +113,7 @@ Pose-Kurven sind eine Sequenz von drei Animationskurven für den Positionsvektor
 
 Raykurven sind eine Sequenz von 3 Animationskurven für den Ursprungsvektor, gefolgt von 3 Animationskurven für den Richtungsvektor.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Ursprung X | [Gleitkommakurve](#float-curve) |
 | Ursprung Y | [Gleitkommakurve](#float-curve) |
@@ -124,20 +124,20 @@ Raykurven sind eine Sequenz von 3 Animationskurven für den Ursprungsvektor, gef
 
 ### <a name="float-curve"></a>Gleitkommakurve
 
-Gleitkommakurven sind vollständig gereifte Bézierkurven mit einer variablen Anzahl von Keyframes. Jeder Keyframe speichert einen Zeit- und einen Kurvenwert sowie Tangenten und Gewichtungen auf der linken und rechten Seite jedes Keyframes.
+Gleitkommakurven sind vollständig ausgefeilte Bézierkurven mit einer variablen Anzahl von Keyframes. Jeder Keyframe speichert eine Zeit und einen Kurvenwert sowie Tangens und Gewichtungen auf der linken und rechten Seite jedes Keyframes.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
-| Vorumbruchmodus | Int32, [Umbruchmodus](#wrap-mode) |
-| Nach dem Umbruchmodus | Int32, [Umbruchmodus](#wrap-mode) |
-| Anzahl der Keyframes | Int32 |
+| Pre-Wrap-Modus | Int32, [Wrap-Modus](#wrap-mode) |
+| Post-Wrap-Modus | Int32, [Wrap-Modus](#wrap-mode) |
+| Anzahl von Keyframes | Int32 |
 | Keyframes | [Float-Keyframe](#float-keyframe) |
 
 ### <a name="float-keyframe"></a>Float-Keyframe
 
-Ein float-Keyframe speichert Tangens- und Gewichtungswerte zusammen mit der Basiszeit und dem Basiswert.
+Ein Float-Keyframe speichert Tangens- und Gewichtungswerte zusammen mit der grundlegenden Zeit und dem Grundlegenden Wert.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Time | Float32 |
 | Wert | Float32 |
@@ -145,13 +145,13 @@ Ein float-Keyframe speichert Tangens- und Gewichtungswerte zusammen mit der Basi
 | OutTangent | Float32 |
 | InWeight | Float32 |
 | OutWeight | Float32 |
-| WeightedMode | Int32, [gewichteter Modus](#weighted-mode) |
+| WeightedMode | Int32, [Gewichteter Modus](#weighted-mode) |
 
 ### <a name="boolean-curve"></a>Boolesche Kurve
 
-Boolesche Kurven sind einfache Sequenzen von Ein-/Aus-Werten. In jedem Keyframe wird der Wert der Kurve sofort gekippt.
+Boolesche Kurven sind einfache Sequenzen von On/Off-Werten. Bei jedem Keyframe kippt der Wert der Kurve sofort.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Pre-Wrap-Modus | Int32, [Wrap-Modus](#wrap-mode) |
 | Post-Wrap-Modus | Int32, [Wrap-Modus](#wrap-mode) |
@@ -162,7 +162,7 @@ Boolesche Kurven sind einfache Sequenzen von Ein-/Aus-Werten. In jedem Keyframe 
 
 Ein boolescher Keyframe speichert nur eine Zeit und einen Wert.
 
-| `Section` | type |
+| `Section` | Typ |
 |---------|------|
 | Time | Float32 |
 | Wert | Float32 |

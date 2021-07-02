@@ -1,18 +1,18 @@
 ---
-title: Eye Tracking Example Overview
+title: Übersicht über Eyetrackingbeispiele
 description: Beispiel zum Erstellen von Eyetracking in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, EyeTracking,
-ms.openlocfilehash: b5fd3ee35e54c54f2f6b21dc1ce53625c68f65b4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 4cdeaa10725e00ac1a041c3692d64c1bd6488854
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144679"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175544"
 ---
-# <a name="eye-tracking-examples"></a>Eyetrackingbeispiele
+# <a name="eye-tracking-examples-overview"></a>Übersicht über Eyetrackingbeispiele
 
 In diesem Thema wird beschrieben, wie Sie schnell mit eye tracking in MRTK beginnen können, indem Sie auf MRTK-Eyetrackingbeispielen (Assets/MRTK/Examples/Demos/EyeTracking) aufbauen.
 Mit diesen Beispielen können Sie eine unserer neuen magischen Eingabefunktionen erleben: **Eye tracking**!
@@ -31,37 +31,37 @@ Die MRTK-Blickverfolgungs-Demoszenen werden [additiv geladen,](https://docs.unit
 
 ### <a name="eye-supported-target-selection"></a>[**Durch die Augen unterstützte Zielauswahl**](../input/eye-tracking/eye-tracking-target-selection.md)
 
-In diesem Tutorial wird veranschaulicht, wie einfach der Zugriff auf Daten zum Anvisierten mit den Augen ist, um Ziele auszuwählen.
-Es enthält ein Beispiel für dezentes, aber leistungsstarkes Feedback, um dem Benutzer die Gewissheit zu geben, dass ein Ziel fokussiert ist, ohne überwältigend zu sein.
+In diesem Tutorial wird veranschaulicht, wie einfach der Zugriff auf Daten zum Anvisierten der Augen zum Auswählen von Zielen ist.
+Es enthält ein Beispiel für ein dezentes, aber leistungsstarkes Feedback, um dem Benutzer das Vertrauen zu geben, dass ein Ziel fokussiert ist, ohne überwältigend zu sein.
 Darüber hinaus gibt es ein einfaches Beispiel für intelligente Benachrichtigungen, die nach dem Lesen automatisch ausgeblendet werden.
 
 **Zusammenfassung:** Schnelle und mühelose Zielauswahl mithilfe einer Kombination aus Augen, Stimme und Handeingabe.
 
-### <a name="eye-supported-navigation"></a>[**Eye-Supported Navigation**](../input/eye-tracking/eye-tracking-navigation.md)
+### <a name="eye-supported-navigation"></a>[**Durch die Augen unterstützte Navigation**](../input/eye-tracking/eye-tracking-navigation.md)
 
-Angenommen, Sie lesen einige Informationen auf einer entfernten Anzeige oder ihrem E-Reader. Wenn Sie das Ende des angezeigten Texts erreichen, scrollt der Text automatisch nach oben, um weitere Inhalte anzuzeigen.
-Oder wie sieht es aus, direkt auf den Ort zu zoomen, an dem Sie sich das zielten?
-Dies sind einige der Beispiele, die in diesem Tutorial zur brillengestützten Navigation gezeigt werden.
-Darüber hinaus gibt es ein Beispiel für die Freihandrotation von 3D-Hologrammen, indem diese automatisch auf Grundlage Ihres aktuellen Fokus gedreht werden.
+Imagine, dass Sie einige Informationen auf einer entfernten Anzeige oder ihrem E-Reader lesen und wenn Sie das Ende des angezeigten Texts erreichen, scrollt der Text automatisch nach oben, um weitere Inhalte anzuzeigen.
+Oder wie sieht es mit dem magischen Zoomen direkt an dem Ort aus, an dem Sie sich befanden?
+Dies sind einige der Beispiele, die in diesem Tutorial zur durch die Augen unterstützten Navigation vorgestellt werden.
+Darüber hinaus gibt es ein Beispiel für die freihändige Drehung von 3D-Hologrammen, indem sie basierend auf Ihrem aktuellen Fokus automatisch gedreht werden.
 
-**Zusammenfassung:** Scrollen, Schwenken, Zoomen, 3D-Drehung mit einer Kombination aus Augen, Stimme und Handeingabe.
+**Zusammenfassung: Scrollen,** Schwenken, Zoomen, 3D-Drehung mithilfe einer Kombination aus Augen, Stimme und Handeingabe.
 
-### <a name="eye-supported-positioning"></a>[**Eye-Supported Positioning**](../input/eye-tracking/eye-tracking-eyes-and-hands.md)
+### <a name="eye-supported-positioning"></a>[**Durch die Augen unterstützte Positionierung**](../input/eye-tracking/eye-tracking-eyes-and-hands.md)
 
-In diesem Tutorial wird ein Eingabeszenario mit dem Namen [Put-That-There](https://youtu.be/CbIn8p4_4CQ) gezeigt, das sich anfang der 1980er Jahre mit Blick-, Hand- und Stimmeingaben im MIT Media Lab recherchierte.
+In diesem Tutorial wird ein Eingabeszenario mit dem Namen [Put-That-There](https://youtu.be/CbIn8p4_4CQ) gezeigt, das anfang der 1980er Jahre mit Augen-, Hand- und Spracheingaben auf die Forschung vom MIT Media Lab zurückgeht.
 Die Idee ist einfach: Profitieren Sie von Ihren Augen für eine schnelle Zielauswahl und Positionierung.
-Sehen Sie sich einfach ein Hologramm an, und sagen Sie _"put this",_ sehen Sie sich an, wo Sie es platzieren möchten, und sagen _Sie "there!"._
-Um Ihr Hologramm genauer zu positionieren, können Sie zusätzliche Eingaben von Ihren Händen, Stimmen oder Controllern verwenden.
+Sehen Sie sich einfach ein Hologramm an, und sagen _Sie "Put this",_ und sehen Sie sich an, wo Sie es platzieren möchten, und sagen _Sie "There!"._
+Um Ihr Hologramm genauer zu positionieren, können Sie zusätzliche Eingaben von Den Händen, Stimmen oder Controllern verwenden.
 
-**Summary**: Positioning holograms using eyes, voice and hand input (*drag-and-drop*). Schieberegler mit Augen und Händen, die von den Augen unterstützt werden.
+**Summary**: Positioning holograms using eyes, voice and hand input (*drag-and-drop*). Von den Augen unterstützte Schieberegler mit Augen und Händen.
 
 ### <a name="visualization-of-visual-attention"></a>**Visualisierung der visuellen Aufmerksamkeit**
 
-Daten, die darauf basieren, wo Benutzer aussehen, sind ein äußerst leistungsstarkes Tool, um die Verwendbarkeit eines Entwurfs zu bewerten und Probleme in effizienten Arbeitsströmen zu identifizieren.
-In diesem Tutorial werden verschiedene Eyetrackingvisualisierungen und deren Anpassung an verschiedene Anforderungen erläutert.
-Wir stellen grundlegende Beispiele für die Protokollierung und das Laden von Eyetrackingdaten sowie Beispiele für deren Visualisierung zur Verfügung.
+Daten, die auf dem Blick der Benutzer basieren, sind ein äußerst leistungsfähiges Tool, um die Nutzbarkeit eines Entwurfs zu bewerten und Probleme in effizienten Arbeitsströmen zu identifizieren.
+In diesem Tutorial werden verschiedene Visualisierungen für die Blickverfolgung erläutert, und es wird erläutert, wie sie unterschiedliche Anforderungen erfüllen.
+Wir stellen grundlegende Beispiele für das Protokollieren und Laden von Eyetrackingdaten sowie Beispiele für deren Visualisierung bereit.
 
-**Zusammenfassung:** Zweidimensionale Aufmerksamkeitskarte (Heatmaps) auf Tafeln. Aufzeichnen & Wiedervergennung von Eyetrackingdaten.
+**Zusammenfassung:** Karte mit zweidimensionaler Aufmerksamkeit (Wärmebild) auf Schiefern. Aufzeichnen & Wiedergeben von Eyetrackingdaten.
 
 ## <a name="setting-up-the-mrtk-eye-tracking-samples"></a>Einrichten der MRTK-Eyetrackingbeispiele
 
@@ -87,44 +87,44 @@ Standardmäßig ist dies _EyeTrackingDemo-02-TargetSelection_.
 
 ### <a name="2-adding-scenes-to-the-build-menu"></a>2. Hinzufügen von Szenen zum Buildmenü
 
-Um additive Szenen während der Laufzeit zu laden, müssen Sie diese Szenen zuerst dem Menü _Buildeinstellungen -> Szenen im Buildmenü_ hinzufügen.
+Um additive Szenen während der Laufzeit zu laden, müssen Sie diese Szenen zuerst dem Menü _Build Einstellungen -> Scenes in Build_ hinzufügen.
 Es ist wichtig, dass die Stammszene als erste Szene in der Liste angezeigt wird:
 
-![Szenenmenü "Buildeinstellungen" für Eyetrackingbeispiele](../images/eye-tracking/mrtk_et_build_settings.jpg)
+![Erstellen Einstellungen Szenenmenüs für Eyetrackingbeispiele](../images/eye-tracking/mrtk_et_build_settings.jpg)
 
 ### <a name="3-play-the-eye-tracking-samples-in-the-unity-editor"></a>3. Wiedergeben der Eyetrackingbeispiele im Unity-Editor
 
-Nachdem Sie den Buildeinstellungen die Eyetracking-Szenen hinzugefügt und das _EyeTrackingDemo-00-RootScene_ geladen haben, sollten Sie als Letztes folgendes überprüfen: Ist das Skript _"OnLoadStartScene"_ aktiviert, das an _das GameObject MixedRealityBasicSceneSetup_ angefügt ist? Dies soll der Stammszene mitteilen, welche Demoszene zuerst geladen werden soll.
+Nachdem Sie dem Build Einstellungen die Blickverfolgungsszenen hinzugefügt und das _EyeTrackingDemo-00-RootScene_ geladen haben, sollten Sie als Letztes überprüfen: Ist das Skript _"OnLoadStartScene"_ aktiviert, das an _das MixedRealityBasicSceneSetup_ GameObject angefügt ist? Dies soll der Stammszene mitteilen, welche Demoszene zuerst geladen werden soll.
 
 ![Beispiel für das OnLoad_StartScene-Skript](../images/eye-tracking/mrtk_et_onloadstartscene.jpg)
 
-Lass uns einen Roll! Treffer _"Play"_!
+Jetzt geht es los! Klicken Sie auf _"Play"_!
 Es sollten mehrere Gems und das Szenenmenü oben angezeigt werden.
 
-![Beispiel screenshot from the ET target select scene (Beispielabbildung aus der Auswahlszene des ET-Ziels)](../images/eye-tracking/mrtk_et_targetselect.png)
+![Beispielscreenshot der Et-Zielauswahl-Szene](../images/eye-tracking/mrtk_et_targetselect.png)
 
-Sie sollten auch einen kleinen halbtransparenten Kreis in der Mitte der Spielansicht bemerken.
-Dies fungiert als Indikator (Cursor) Ihres simulierten Anvistiks mit den _Augen:_ Drücken Sie einfach die rechte Maustaste, und bewegen Sie die Maus, um ihre Position zu ändern. 
-Wenn der Cursor mit dem Mauszeiger auf die Gems zeigt, werden Sie feststellen, dass er an der Mitte des aktuell angezeigten Gems andockt.
+Sie sollten auch einen kleinen halbtransparenten Kreis in der Mitte Ihrer Spielansicht bemerken.
+Dies fungiert als Indikator (Cursor) des _simulierten Anvierens_ der Augen: Drücken Sie einfach die _rechte Maustaste_ nach unten, und bewegen Sie die Maus, um ihre Position zu ändern.
+Wenn der Cursor auf die Gems zeigen, werden Sie feststellen, dass er an der Mitte des aktuell angezeigten Gems ausgerichtet wird.
 Dies ist eine hervorragende Möglichkeit, um zu testen, ob Ereignisse wie erwartet ausgelöst werden, wenn ein Ziel _"betrachtet"_ wird.
-Beachten Sie, dass _das simulierte_ Anvieren mit den Augen über die Maussteuerung eine eher schlechte Ergänzung unserer schnellen und unbeabsichtigten Augenbewegungen ist.
-Sie ist jedoch ideal, um die grundlegende Funktionalität zu testen, bevor Sie den Entwurf durch Bereitstellen auf dem HoloLens 2 iterieren.
-Zurück zu unserer Eyetracking-Beispielszene: Das Gem dreht sich, solange es betrachtet wird, und kann zerstört werden, indem es "betrachtet" wird und ...
+Beachten Sie, dass das _simulierte Anvisierten_ der Augen über das Maussteuerelement eine eher schlechte Ergänzung unserer schnellen und unbeabsichtigten Augenbewegungen ist.
+Sie eignet sich jedoch hervorragend zum Testen der grundlegenden Funktionalität, bevor Sie den Entwurf durch Bereitstellung auf dem HoloLens 2 Gerät iterieren.
+Zurück zur Blickverfolgungs-Beispielszene: Das Gem wird gedreht, solange es betrachtet wird und zerstört werden kann, indem es sich ansieht und ...
 
-- Drücken _der EINGABETASTE_ (wodurch das Sagen "Auswählen" simuliert wird)
-- _"Select" (Auswählen)_ in Ihr Mikrofon
-- Klicken Sie _beim Drücken_ des Leerzeichens zum Anzeigen der simulierten Handeingabe auf die linke Maustaste, um eine simulierte Stecknadel durchzuführen.
+- Drücken _der EINGABETASTE_ (wodurch "Select" simuliert wird)
+- _"Auswählen"_ ins Mikrofon
+- Klicken Sie beim Drücken von _Leertaste_ zum Anzeigen der simulierten Handeingabe auf die linke Maustaste, um eine simulierte Zusammendrückung durchzuführen.
 
-Ausführlichere Informationen dazu, wie Sie diese Interaktionen erreichen können, finden Sie in unserem Tutorial zur Zielauswahl [**mit**](../input/eye-tracking/eye-tracking-target-selection.md) Blickgestützter Unterstützung.
+In unserem Tutorial [**Eye-Supported Target Selection (Eye-Supported Target Selection)**](../input/eye-tracking/eye-tracking-target-selection.md) wird ausführlicher beschrieben, wie Sie diese Interaktionen erreichen können.
 
-Wenn Sie den Cursor auf die obere Menüleiste in der Szene bewegen, werden Sie feststellen, dass das element, auf das gerade mit dem Mauszeiger gezeigert wird, subtly hervorhebt.
-Sie können das derzeit hervorgehobene Element mithilfe einer der oben beschriebenen Commitmethoden auswählen (z. B. drücken Sie die _EINGABETASTE)._
+Wenn Sie den Cursor auf die obere Menüleiste in der Szene bewegen, werden Sie feststellen, dass das aktuell gezeigte Element subtly hervorgehoben wird.
+Sie können das aktuell hervorgehobene Element auswählen, indem Sie eine der oben beschriebenen Commitmethoden verwenden (z. B. drücken Sie die _EINGABETASTE)._
 Auf diese Weise können Sie zwischen den verschiedenen Eyetracking-Beispielszenen wechseln.
 
-### <a name="4-how-to-test-specific-sub-scenes"></a>4. Testen bestimmter Unterszenen
+### <a name="4-how-to-test-specific-sub-scenes"></a>4. Testen bestimmter Teilszenen
 
-Wenn Sie an einem bestimmten Szenario arbeiten, sollten Sie nicht jedes Mal das Szenenmenü durchgehen.
-Stattdessen sollten Sie direkt mit der Szene beginnen, an der Sie gerade arbeiten, wenn Sie auf die _Wiedergabeschaltfläche_ klicken.
+Wenn Sie an einem bestimmten Szenario arbeiten, möchten Sie das Szenenmenü möglicherweise nicht jedes Mal durchlaufen.
+Stattdessen sollten Sie direkt von der Szene aus beginnen, an der Sie gerade arbeiten, wenn Sie auf die Schaltfläche _Wiedergabe_ klicken.
 Kein Problem. Folgendes können Sie tun:
 
 1. Laden der _Stammszene_
@@ -135,7 +135,7 @@ Kein Problem. Folgendes können Sie tun:
 
 4. Klicken Sie auf _Wiedergabe._
 
-Beachten Sie, dass das Laden der untergeordneten Szene wie folgt nicht persistent ist: Wenn Sie Ihre App auf dem HoloLens 2 Gerät bereitstellen, wird nur die Stammszene geladen (vorausgesetzt, sie wird oben in den Buildeinstellungen angezeigt).
+Beachten Sie, dass das Laden der untergeordneten Szene wie folgt nicht persistent ist: Wenn Sie Ihre App auf dem HoloLens 2 Gerät bereitstellen, wird nur die Stammszene geladen (vorausgesetzt, sie wird oben im Build Einstellungen angezeigt).
 Wenn Sie Ihr Projekt für andere freigeben, werden die Untergeordneten Szenen nicht automatisch geladen.
 
 ---

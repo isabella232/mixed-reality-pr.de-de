@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 1adf4d1d70313c917d63224b91a14d995d1888c1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6e57a76d54d0f3f63ce8dcb80582e178effa39d9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144999"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176378"
 ---
 # <a name="proximity-light"></a>Näherungslicht
 
@@ -57,6 +57,6 @@ private const int proximityLightCount = 4;
 >
 >`Property (_ProximityLightData) exceeds previous array size (24 vs 12). Cap to previous size.`
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [MRTK-Standard-Shader](mrtk-standard-shader.md)

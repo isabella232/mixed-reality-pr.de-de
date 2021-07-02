@@ -1,16 +1,16 @@
 ---
-title: BoundsControl
+title: Begrenzungssteuerelement
 description: Übersicht über das Begrenzungssteuerelement in MRTK
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Bounds Control,
-ms.openlocfilehash: 65558861955f782cf9d81a8bb4ec3a31dee03fde
-ms.sourcegitcommit: 95ea5f3cf873acc93c4614fbccaa093e0f5186f0
+ms.openlocfilehash: f5f5e1f463f741eb23f75c9826034b8974baf947
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "110487727"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176463"
 ---
 # <a name="bounds-control"></a>Begrenzungssteuerelement
 
@@ -18,7 +18,7 @@ ms.locfileid: "110487727"
 
 *BoundsControl* ist die neue Komponente für das Manipulationsverhalten, die zuvor in *BoundingBox* gefunden wurde. Das Begrenzungssteuerelement führt eine Reihe von Verbesserungen und Vereinfachungen beim Setup durch und fügt neue Features hinzu. Diese Komponente ist ein Ersatz für den Begrenzungsfeld, der veraltet ist.
 
-Das [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) Skript bietet grundlegende Funktionen zum Transformieren von Objekten in Mixed Reality. Ein Begrenzungssteuerelement zeigt ein Feld um das Hologramm an, um anzugeben, dass es mit ihm interagiert werden kann. Handles an den Ecken und Rändern des Felds ermöglichen das Skalieren, Drehen oder Übersetzen des Objekts. Das Begrenzungssteuerelement reagiert auch auf Benutzereingaben. Auf HoloLens 2 reagiert das Begrenzungssteuerelement z. B. auf die Fingernähe und gibt visuelles Feedback, um den Abstand zum Objekt zu erkennen. Alle Interaktionen und Visuals können einfach angepasst werden.
+Das [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) Skript bietet grundlegende Funktionen zum Transformieren von Objekten in Mixed Reality. Ein Begrenzungssteuerelement zeigt ein Feld um das Hologramm an, um anzugeben, dass es mit ihm interagiert werden kann. Handles an den Ecken und Rändern des Felds ermöglichen das Skalieren, Drehen oder Übersetzen des Objekts. Das Begrenzungssteuerelement reagiert auch auf Benutzereingaben. Auf HoloLens 2 reagiert das Begrenzungssteuerelement z. B. auf Fingernähe und gibt visuelles Feedback, um die Entfernung zum Objekt zu erkennen. Alle Interaktionen und Visuals können einfach angepasst werden.
 
 ## <a name="example-scene"></a>Beispielszene
 
@@ -82,11 +82,11 @@ Derzeit bietet das Begrenzungssteuerelement Optionen für Konfigurationsobjekte 
 
 ### <a name="box-configuration"></a>Box-Konfiguration
 
-Die Boxkonfiguration ist für das Rendern eines volltonigen Felds mit Begrenzungen verantwortlich, die über Collidergröße und Feldauffüllung definiert werden. Die folgenden Eigenschaften können eingerichtet werden:
+Die Boxkonfiguration ist für das Rendern eines Volltonfelds mit Begrenzungen verantwortlich, die über Collidergröße und Feldauffüllung definiert werden. Die folgenden Eigenschaften können eingerichtet werden:
 
 * **Feldmaterial:** Definiert das Material, das auf das gerenderte Feld angewendet wird, wenn keine Interaktion stattfindet. Ein Feld wird nur gerendert, wenn dieses Material festgelegt ist.
 * **Gepacktes Material:** Material für die Box, wenn der Benutzer mit dem Steuerelement interagiert, indem er über nah- oder ferninteraktion greift.
-* **Anzeigeskala für flache Achsen:** Eine Skala, die auf die Feldanzeige angewendet wird, wenn eine der Achsen [flacher](#flatten-axis)ist.
+* **Anzeigeskala für flache Achsen:** Eine Skala, die auf die Feldanzeige angewendet wird, wenn eine der Achsen [flacher](#flatten-axis)wird.
 
 ### <a name="scale-handles-configuration"></a>Konfiguration von Skalierungshandles
 
@@ -103,7 +103,7 @@ Dieser Eigenschaftenschubladen ermöglicht es, das Verhalten und die Visualisier
 * **Skalierungshandles anzeigen:** Steuert die Sichtbarkeit des Handles.
 * **Skalierungsverhalten:** Kann auf einheitliche oder nicht einheitliche Skalierung festgelegt werden.
 
-### <a name="rotation-handles-configuration"></a>Rotation behandelt konfiguration
+### <a name="rotation-handles-configuration"></a>Rotation behandelt Konfiguration
 
 Diese Konfiguration definiert das Rotationshandleverhalten.
 
@@ -146,7 +146,7 @@ Die Linkkonfiguration aktiviert das Wireframe-Feature des Begrenzungssteuereleme
 
 ### <a name="proximity-effect-configuration"></a>Konfiguration des Näherungseffekts
 
-Zeigen Sie die Handles basierend auf der Entfernung zu den Händen mit Animation an, und blenden Sie sie aus. Sie verfügt über zweistufige Skalierungsanimation. Standardwerte werden auf HoloLens 2 Stilverhalten festgelegt.
+Zeigen Sie die Handles basierend auf der Entfernung zu den Händen mit Animation an, und blenden Sie sie aus. Sie verfügt über zweistufige Skalierungsanimationen. Standardwerte werden auf HoloLens 2 Stilverhalten festgelegt.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Proximity.png" alt="Bounds control Proximity">
 
@@ -154,15 +154,15 @@ Zeigen Sie die Handles basierend auf der Entfernung zu den Händen mit Animation
 * **Objekt mittlere Nähe:** Entfernung für die Skalierung im ersten Schritt
 * Objekt close proximity :Distance for the 2nd step scaling **(Objektnähe:** Entfernung für die Skalierung im zweiten Schritt)
 * **Far Scale**: Der Standardskalierenwert des Handlemedienobjekts, wenn sich die Hände außerhalb des Bereichs der Begrenzungssteuerungsinteraktion befinden (entfernung oben durch "Mittlere Nähe behandeln" definiert). Verwenden Sie 0, um das Handle standardmäßig auszublenden.)
-* **Mittlere Skalierung:** Skalierungswert des Handlemedienobjekts, wenn sich die Hände innerhalb des Bereichs der Interaktion der Begrenzungssteuerelement befinden (entfernung oben durch "Handle Close Proximity" definiert). Verwenden Sie 1, um die normale Größe anzuzeigen.)
+* **Mittlere Skalierung:** Der Skalierungswert des Handlemedienobjekts, wenn sich die Hände innerhalb des Bereichs der Begrenzungssteuerelementinteraktion befinden (entfernung oben durch "Handle Close Proximity" definiert). Verwenden Sie 1, um die normale Größe anzuzeigen.)
 * **Skala schließen:** Skalierungswert des Handleobjekts, wenn sich die Hände innerhalb des Bereichs der Ziehinteraktion befinden (entfernung oben durch "Handle Close Proximity" definiert). Verwenden Sie 1.x, um eine größere Größe anzuzeigen.)
 * **Far Grow Rate**:Rate a proximity scaled object scales when the hand moves from medium to far proximity.
 * **Mittlere Zuwachsrate:** Raten Sie, dass ein näher skaliertes Objekt skaliert wird, wenn sich die Hand von mittel in nah bewegt.
-* **Nah-Zuwachsrate:** Bewerten Sie eine Skalierung eines näher skalierten Objekts, wenn sich die Hand von der Nähe zum Objektcenter bewegt.
+* **Close Grow Rate (Zuwachsrate** schließen): Raten Sie, dass ein näher skaliertes Objekt skaliert wird, wenn sich die Hand von der Nähe zum Objektcenter bewegt.
 
 ## <a name="constraint-system"></a>Einschränkungssystem
 
-Das Begrenzungssteuerelement unterstützt die Verwendung des [Einschränkungs-Managers,](constraint-manager.md) um das Übersetzungs-, Drehungs- oder Skalierungsverhalten einzuschränken oder zu ändern, während Begrenzungssteuerelementhandles verwendet werden.
+Das Begrenzungssteuerelement unterstützt die Verwendung des [Einschränkungs-Managers](constraint-manager.md) zum Einschränken oder Ändern des Übersetzungs-, Drehungs- oder Skalierungsverhaltens bei Verwendung von Begrenzungssteuerelementhandles.
 
 Der Eigenschafteninspektor zeigt alle verfügbaren Einschränkungs-Manager, die an dasselbe Spielobjekt angefügt sind, in einer Dropdownliste mit einer Option zum Scrollen und Hervorheben des ausgewählten Einschränkungs-Managers an.
 
@@ -176,20 +176,20 @@ Das Bounds-Steuerelement stellt die folgenden Ereignisse bereit. In diesem Beisp
 * **Rotieren beendet:** Wird ausgelöst, wenn die Drehung beendet wird.
 * **Skalierung gestartet:** Wird ausgelöst, wenn die Skalierung gestartet wird.
 * **Skalierung beendet:** Wird ausgelöst, wenn die Skalierung beendet wird.
-* **Translate Started**:Wird ausgelöst, wenn die Übersetzung beginnt.
+* **Translate Started**: Wird ausgelöst, wenn die Übersetzung beginnt.
 * **Translate Stopped**: Wird ausgelöst, wenn die Übersetzung beendet wird.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Events.png" width="450" alt="Bounds control Events">
 
 ## <a name="elastics-experimental"></a>Elastische Datenbanken (experimentell)
 
-Elastische Datenbanken können verwendet werden, wenn Objekte über das Begrenzungssteuerelement bearbeitet werden. Beachten Sie, dass sich das [System für elastische Datenbanken](../elastics/elastic-system.md) noch im experimentellen Zustand befindet. Um elastische Datenbanken zu aktivieren, verknüpfen Sie entweder eine vorhandene Elastics Manager-Komponente, oder erstellen und verknüpfen Sie über die Schaltfläche einen neuen Manager für elastische `Add Elastics Manager` Datenbanken.
+Elastische Datenbanken können verwendet werden, wenn Objekte über das Begrenzungssteuerelement bearbeitet werden. Beachten Sie, dass sich das [System für elastische Datenbanken](../experimental/elastic-system.md) noch im experimentellen Zustand befindet. Um elastische Datenbanken zu aktivieren, verknüpfen Sie entweder eine vorhandene Elastics Manager-Komponente, oder erstellen und verknüpfen Sie über die Schaltfläche einen neuen Manager für elastische `Add Elastics Manager` Datenbanken.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Elastics.png" width="450" alt="Bounds control Elastics">
 
-## <a name="handle-styles"></a>Verarbeiten von Stilen
+## <a name="handle-styles"></a>Handlestile
 
-Wenn Sie das Skript nur zuweisen, wird standardmäßig [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) das Handle des HoloLens-Stils der ersten Generation angezeigt. Um HoloLens 2 Stilhandles verwenden zu können, müssen Sie geeignete Handlepräfabs und Materialien zuweisen.
+Wenn Sie das Skript nur zuweisen, wird standardmäßig [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) das Handle des HoloLens 1. Generation angezeigt. Um HoloLens 2 Stilhandles verwenden zu können, müssen Sie geeignete Handlepräfabs und Materialien zuweisen.
 
 ![Bounds Control Handle Styles 2 (Steuerelementhandlestile für Begrenzungen 2)](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
@@ -215,13 +215,13 @@ Ein Begrenzungssteuerelement kann in Kombination mit verwendet [`ObjectManipulat
 
 <img src="../images/bounds-control/MRTK_BoundsControl_ObjectManipulator.png" width="450" alt="Bounds control Object Manipulator">
 
-Damit sich die Begrenzungssteuerelementränder beim Verschieben mithilfe der fernen Interaktion des Steuerelements auf die gleiche Weise [`ObjectManipulator`](object-manipulator.md) verhalten, wird empfohlen, die Zugehörigen Ereignisse für *On Manipulation Started* On Manipulation Ended mit jeweils mit zu  /   `BoundsControl.HighlightWires`  /  `BoundsControl.UnhighlightWires` verbinden, wie im obigen Screenshot gezeigt.
+Damit sich die Begrenzungssteuerelementränder beim Verschieben mit der fernen Interaktion des Steuerelements auf die gleiche Weise [`ObjectManipulator`](object-manipulator.md) verhalten, wird empfohlen, die Ereignisse für On Manipulation Started On Manipulation Ended *(Bei* Manipulation gestartet  /  *bei Manipulation beendet)* `BoundsControl.HighlightWires`  /  `BoundsControl.UnhighlightWires` mit zu verbinden, wie im obigen Screenshot gezeigt.
 
 ## <a name="how-to-add-and-configure-a-bounds-control-using-unity-inspector"></a>Hinzufügen und Konfigurieren eines Begrenzungssteuerelements mithilfe von Unity Inspector
 
 1. Hinzufügen von Box Collider zu einem Objekt
 2. Zuweisen `BoundsControl` eines Skripts zu einem Objekt
-3. Konfigurieren von Optionen, z. B. Aktivierungsmethoden (siehe Abschnitt [Inspektoreigenschaften](#inspector-properties) weiter unten)
+3. Konfigurieren von Optionen, z. B. Aktivierungsmethoden (siehe Abschnitt [Inspektoreigenschaften](#inspector-properties) unten)
 4. (Optional) Zuweisen von Prefabs und Materialien für ein HoloLens 2 Stilbegrenzungssteuerelement (siehe Abschnitt [Handlestile](#handle-styles) weiter unten)
 
 > [!NOTE]
@@ -310,7 +310,7 @@ private void PutABoundsControlAroundIt(GameObject target)
 
 Vorhandene Prefabs und Instanzen, die [begrenzungsfeld](bounding-box.md) verwenden, können über das [Migrationsfenster,](../tools/migration-window.md) das Teil des MRTK-Toolspakets ist, auf das neue Begrenzungssteuerelement aktualisiert werden.
 
-Für das Upgrade einzelner Instanzen von Begrenzungsboxen gibt es auch eine Migrationsoption innerhalb des Eigenschafteninspektors der Komponente.
+Für das Upgrade einzelner Instanzen des Begrenzungsfelds gibt es auch eine Migrationsoption innerhalb des Eigenschafteninspektors der Komponente.
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Migrate.png" width="450" alt="Bounds control Migrate">
 
@@ -319,4 +319,4 @@ Für das Upgrade einzelner Instanzen von Begrenzungsboxen gibt es auch eine Migr
 * [Objektmanipulator](object-manipulator.md)
 * [Einschränkungs-Manager](constraint-manager.md)
 * [Migrationszeitfenster](../tools/migration-window.md)
-* [Elastics-System (experimentell)](../elastics/elastic-system.md)
+* [Elastics-System (experimentell)](../experimental/elastic-system.md)

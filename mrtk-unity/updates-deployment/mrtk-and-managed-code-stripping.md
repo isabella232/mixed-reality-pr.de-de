@@ -1,27 +1,27 @@
 ---
-title: MRTK und Entfernen von verwaltetem Code
-description: Code stripping in MRTK und Unity
+title: MRTK und verwaltetes Codestriping
+description: Codestriping in MRTK und Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 09e5140fd9585c19eacac5ba937eaf4ea8f2a8ea
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8b8e0f4488a6e955e599084c0b59d8c80f553a78
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143737"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176295"
 ---
-# <a name="mrtk-and-unity-managed-code-stripping"></a>MRTK- und Unity-Stripping für verwalteten Code
+# <a name="mrtk-and-managed-code-stripping"></a>MRTK und verwaltetes Codestriping
 
-Bei Verwendung des IL2CPP-Skript-Back-Ends von Unity (optional in Unity 2018.4, erforderlich ab 2019) erfolgt das Stripping von [verwaltetem Code.](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
-Der Linker von Unity führt diesen Prozess aus, um die Binärgröße zu reduzieren und die Buildzeiten zu verkürzen.
+Wenn Sie das IL2CPP-Skript-Back-End von Unity verwenden (optional in Unity 2018.4, erforderlich in 2019 und [neuer),](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) wird verwalteter Code entfernt.
+Der Unity-Linker führt diesen Prozess aus, um die Binärgröße zu reduzieren und die Buildzeiten zu verringern.
 
-Das Mixed Reality Toolkit verwendet eine Datei, `link.xml` , um zu beeinflussen, wie der Linker von Unity MRTK-Assemblys verarbeitet. Diese Datei, die vollständig in der [Unity-Dokumentation](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)beschrieben ist, stellt dem Linker Anweisungen zum Beibehalten von Code bereit, wenn seine Verwendung nicht abgeleitet werden kann (z. B. über Reflektion verwendet).
+Das Mixed Reality Toolkit verwendet die Datei , um zu beeinflussen, wie der `link.xml` Unity-Linker MRTK-Assemblys verarbeitet. Diese Datei, die vollständig in der [Unity-Dokumentation](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)beschrieben wird, bietet dem Linker Anweisungen zum Beibehalten von Code, wenn seine Verwendung nicht abgeleitet werden kann (z. B. über Reflektion).
 
-Als flexible und anpassbare Plattform erstellt MRTK die `link.xml` Datei beim Import in , wenn sie nicht vorhanden `Assets/MixedRealityToolkit.Generated` ist. Bereits vorhandene link.xml Dateien werden nicht überschrieben. Es wird empfohlen, `link.xml` und `link.xml.meta` der Versionskontrolle hinzuzufügen. Entwickler sollten sich gerne an die Anforderungen des Projekts anpassen `Assets/MixedRealityToolkit.Generated/link.xml` lassen.
+Als flexible und anpassbare Plattform erstellt MRTK die Datei beim Import in , wenn sie nicht `link.xml` `Assets/MixedRealityToolkit.Generated` vorhanden ist. Bereits vorhandene link.xml werden nicht überschrieben. Es wird empfohlen, `link.xml` und `link.xml.meta` der Versionskontrolle hinzugefügt zu werden. Entwickler können die Anpassungen an `Assets/MixedRealityToolkit.Generated/link.xml` die Anforderungen des Projekts anpassen.
 
-Standardmäßig behält die von MRTK erstellte link.xml-Datei die gesamten Assemblys bei, die in den folgenden Daten angezeigt werden.
+Standardmäßig behält die link.xml MRTK erstellte Datei die gesamte Assembly bei, die in den folgenden Daten gezeigt wird.
 
 ``` xml
 <linker> 
@@ -61,9 +61,9 @@ Standardmäßig behält die von MRTK erstellte link.xml-Datei die gesamten Assem
 </linker>
 ```
 
-Weitere Informationen zum link.xml-Dateiformat finden Sie in der Unity-Dokumentation.
+Weitere Informationen zum formatierten link.xml finden Sie in der Unity-Dokumentation.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-- [Unity: Stripping von verwaltetem Code](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
-- [Unity: LINK-XML-Datei](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)
+- [Unity: Beschriftung von verwaltetem Code](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
+- [Unity: Verknüpfen der XML-Datei](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)

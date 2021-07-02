@@ -1,25 +1,25 @@
 ---
 title: Materialinstanz
-description: Dokumentation zu Material Instance und deren Verwendung in MRTK
+description: Dokumentation zu Material Instance und deren Verwendung im MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, MaterialInstance,
-ms.openlocfilehash: 216fa72af6bb6caaf47e30c156f7caf1b1dab71e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, MaterialInstance,
+ms.openlocfilehash: ecd8f9e14564cbd03cb6faa848b06ca55a024207
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145210"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176719"
 ---
 # <a name="material-instance"></a>Materialinstanz
 
-Das [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) Verhalten hilft bei der Nachverfolgung der Lebensdauer von Instanzmaterial und zerstört automatisch instanzierte Materialien für den Benutzer. Diese Hilfsprogrammkomponente kann als Ersatz für [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) oder [Renderer.materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html)verwendet werden.
+Das Verhalten spricht für die Nachverfolgung der Lebensdauer von Instanzmaterial und zerstört automatisch [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) Instanzmaterialien für den Benutzer. Diese Hilfsprogrammkomponente kann als Ersatz für [Renderer.material oder](https://docs.unity3d.com/ScriptReference/Renderer-material.html) [Renderer.materials verwendet werden.](https://docs.unity3d.com/ScriptReference/Renderer-materials.html)
 
 > [!NOTE]
-> [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) werden gegenüber der Materialinstanzierung bevorzugt, sind aber nicht immer in allen Szenarien verfügbar.
+> [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) werden der Materialinstancierung vorgezogen, sind aber nicht immer in allen Szenarien verfügbar.
 
-Warum kann die Verwendung von [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) ein Problem darstellen? Wenn Sie den folgenden Code zu einer Unity-Szene hinzufügen und die Nutzung des Arbeitsspeichers der Trefferwiedergabe fortgesetzt wird, wird dies weiter steigen:
+Warum kann die [Verwendung von Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) ein Problem sein? Wenn Sie den folgenden Code zu einer Unity-Szene hinzufügen und die Speicherauslastung für Trefferplays weiterhin heiter und tosend ist:
 
 ```c#
 public class Leak : MonoBehaviour
@@ -36,9 +36,9 @@ public class Leak : MonoBehaviour
 ```
 
 > [!NOTE]
-> Das oben genannte Leak-Verhalten **stürzt Unity ab,** wenn es zu lange ausgeführt wird.
+> Das oben genannte **Leak-Verhalten stürzt Unity ab,** wenn es zu lange läuft!
 
-Alternativ können Sie versuchen, das -Verhalten zu [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) verwenden:
+Alternativ können Sie versuchen, das Verhalten [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) zu verwenden:
 
 ```c#
 public class NoLeak : MonoBehaviour
@@ -56,9 +56,9 @@ public class NoLeak : MonoBehaviour
 
 ## <a name="usage"></a>Verwendung
 
-Beim Aufrufen von [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s) von Unity instanziiert Unity automatisch neue Materialien. Es liegt in der Verantwortung des Aufrufers, die Materialien zu zerstören, wenn ein Material nicht mehr benötigt wird oder das Spielobjekt zerstört wird. Das [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) Verhalten hilft dabei, Materialverluste zu vermeiden und die Materialzuordnungspfade während der Bearbeitungs- und Laufzeit konsistent zu halten.
+Beim Aufrufen von [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s) von Unity instanziiert Unity automatisch neue Materialien. Es liegt in der Verantwortung des Aufrufers, die Materialien zu zerstören, wenn ein Material nicht mehr benötigt wird oder das Spielobjekt zerstört wird. Das [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) Verhalten hilft dabei, Materiallecks zu vermeiden und die Materialzuordnungspfade während der Bearbeitung und Laufzeit konsistent zu halten.
 
-Wenn ein [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) nicht verwendet werden kann und ein Material instanziert werden muss, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) kann wie folgt verwendet werden:
+Wenn ein [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) nicht verwendet werden kann und ein Material instanziert werden muss, kann wie [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) folgt verwendet werden:
 
 ```c#
 public class MyBehaviour : MonoBehaviour
@@ -75,7 +75,7 @@ public class MyBehaviour : MonoBehaviour
 }
 ```
 
-Wenn mehrere Objekte den Besitz der Materialinstanz benötigen, ist es am besten, den expliziten Besitz für die Verweisnachverfolgung zu übernehmen. (Eine optionale Schnittstelle namens [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) ist vorhanden, um den Besitz zu unterstützen.) Im Folgenden finden Sie ein Beispiel für die Verwendung:
+Wenn mehrere Objekte den Besitz der Materialinstanz benötigen, ist es am besten, den expliziten Besitz für die Verweisnachverfolgung zu übernehmen. (Zur Unterstützung des [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) Besitzes ist eine optionale Schnittstelle namens vorhanden.) Im Folgenden finden Sie ein Beispiel für die Verwendung:
 
 ```c#
 public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
@@ -103,8 +103,8 @@ public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
 }
 ```
 
-Weitere Informationen finden Sie in der Beispielverwendung, die innerhalb des Verhaltens veranschaulicht [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) wird.
+Weitere Informationen finden Sie in der Beispielverwendung, die innerhalb des Verhaltens demonstriert [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) wird.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [MRTK-Standard-Shader](mrtk-standard-shader.md)

@@ -1,51 +1,51 @@
 ---
 title: Übersicht über das Begrenzungssystem
-description: Landing page for boundary system in MRTK
+description: Landing Page für das Begrenzungssystem in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Begrenzungssystem,
-ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, Boundary System,
+ms.openlocfilehash: fd70479e5183e9a7557de5c5a532cc87161be017
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121358"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177086"
 ---
-# <a name="boundary-system"></a>Begrenzungssystem
+# <a name="boundary-system-overview"></a>Übersicht über das Begrenzungssystem
 
-Das Begrenzungssystem bietet Unterstützung für die Visualisierung von Virtual Reality-Begrenzungskomponenten in Mixed Reality-Anwendungen. Grenzen definieren den Bereich, in dem sich Benutzer sicher bewegen können, während sie ein VR-Headset tragen. Grenzen sind eine wichtige Komponente einer Mixed Reality-Erfahrung, mit der Benutzer ungesehene Hindernisse beim Tragen eines VR-Headsets vermeiden können.
+Das Begrenzungssystem bietet Unterstützung für die Visualisierung von Virtual Reality-Begrenzungskomponenten in Mixed Reality-Anwendungen. Grenzen definieren den Bereich, in dem Benutzer sich sicher bewegen können, während sie ein VR-Headset verwenden. Grenzen sind eine wichtige Komponente einer Mixed Reality-Umgebung, um Benutzern zu helfen, unsichtbare Hindernisse zu vermeiden, während sie ein VR-Headset tragen.
 
-Viele Virtual Reality-Plattformen bieten eine automatische Anzeige, z. B. einen weißen Umriss, der auf der virtuellen Welt überlagert wird, wenn sich der Benutzer oder sein Controller der Grenze nähert. Das Begrenzungssystem des Mixed Reality Toolkits erweitert dieses Feature, um die Anzeige einer Gliederung des nachverfolgten Bereichs, einer Bodenebene und anderer Features zu ermöglichen, die verwendet werden können, um Benutzern zusätzliche Informationen bereitzustellen.
+Viele Virtual Reality-Plattformen bieten eine automatische Anzeige, z. B. eine weiße Kontur, die der virtuellen Welt überlagert wird, wenn sich der Benutzer oder sein Controller der Grenze nähert. Das Boundary System des Mixed Reality Toolkits erweitert dieses Feature, um die Anzeige eines Umrisses des nachverfolgten Bereichs, einer Bodenebene und anderer Features zu ermöglichen, die verwendet werden können, um benutzern zusätzliche Informationen zur Verfügung zu stellen.
 
 ## <a name="getting-started"></a>Erste Schritte
 
-Das Hinzufügen von Unterstützung für Grenzen erfordert zwei Hauptkomponenten des Mixed Reality Toolkits: das Begrenzungssystem und eine Virtual Reality-Plattform, die mit einer Grenze konfiguriert ist.
+Das Hinzufügen von Unterstützung für Grenzen erfordert zwei Hauptkomponenten des Mixed Reality Toolkits: das Boundary System und eine Virtual Reality-Plattform, die mit einer Grenze konfiguriert ist.
 
 1. [Aktivieren](#enable-boundary-system) des Begrenzungssystems
-2. [Konfigurieren](#configure-boundary-visualization) der Begrenzungsvisualisierung
+2. [Konfigurieren der](#configure-boundary-visualization) Begrenzungsvisualisierung
 3. [Erstellen und Bereitstellen](#build-and-deploy) auf einer VR-Plattform mit einer konfigurierten Grenze
 
 ## <a name="enable-boundary-system"></a>Aktivieren des Begrenzungssystems
 
-Das Begrenzungssystem wird vom MixedRealityToolkit-Objekt (oder einer anderen [Dienstregistrierungsstellenkomponente)](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) verwaltet.
+Das Boundary System wird vom MixedRealityToolkit-Objekt (oder einer anderen [Dienstregistrierungskomponente)](xref:Microsoft.MixedReality.Toolkit.IMixedRealityServiceRegistrar) verwaltet.
 
-In den folgenden Schritten wird davon ausgegangen, dass das MixedRealityToolkit-Objekt verwendet wird. Die für andere Dienstregistrierungsstellen erforderlichen Schritte können unterschiedlich sein.
+Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts voraus. Die für andere Dienstregistrierungen erforderlichen Schritte können unterschiedlich sein.
 
 1. Wählen Sie das MixedRealityToolkit-Objekt in der Szenenhierarchie aus.
 
-    ![KONFIGURIERTE MRTK-Szenenhierarchie](../images/MRTK_ConfiguredHierarchy.png)
+    ![MRTK– Konfigurierte Szenenhierarchie](../images/MRTK_ConfiguredHierarchy.png)
 
-1. Navigieren Sie im Bereich Inspector (Inspektor) zum Abschnitt Boundary System (Begrenzungssystem), und aktivieren Sie Enable (Aktivieren).
+1. Navigieren Sie im Inspektorbereich zum Abschnitt Begrenzungssystem, und aktivieren Sie Aktivieren.
 
     ![Aktivieren des Begrenzungssystems](../images/boundary/MRTKConfig_Boundary.png)
 
-1. Wählen Sie die Implementierung des Begrenzungssystems aus. Die vom MRTK bereitgestellte Standardklassenimplementierungen sind : [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
+1. Wählen Sie die Implementierung des Begrenzungssystems aus. Die vom MRTK bereitgestellte Standardklassenimplementierung ist die [`MixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.MixedRealityBoundarySystem)
 
     ![Auswählen der Implementierung des Begrenzungssystems](../images/boundary/BoundarySelectSystemType.png)
 
 > [!NOTE]
-> Alle Implementierungen des Begrenzungssystems müssen die [`IMixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.IMixedRealityBoundarySystem)
+> Alle Boundary System-Implementierungen müssen die [`IMixedRealityBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.Boundary.IMixedRealityBoundarySystem)
 
 ## <a name="configure-boundary-visualization"></a>Konfigurieren der Begrenzungsvisualisierung
 
@@ -54,7 +54,7 @@ Das [Begrenzungssystem verwendet ein Konfigurationsprofil,](configuring-boundary
 ![Optionen für die Begrenzungsvisualisierung](../images/boundary/BoundaryVisualizationProfile.png)
 
 > [!NOTE]
-> Benutzer des `DefaultMixedRealityBoundaryVisualizationProfile` Standardprofils (Assets/MRTK/SDK/Profile) haben das Begrenzungssystem vorkonfiguriert, um eine Bodenebene, den Spielbereich und den nachverfolgten Bereich anzuzeigen.
+> Benutzer des Standardprofils (Assets/MRTK/SDK/Profiles) haben das Begrenzungssystem vorkonfiguriert, um eine Bodenebene, den Wiedergabebereich und den nachverfolgten Bereich `DefaultMixedRealityBoundaryVisualizationProfile` anzuzeigen.
 
 ## <a name="build-and-deploy"></a>Erstellen und Bereitstellen
 
@@ -65,7 +65,7 @@ Nachdem das Begrenzungssystem mit den gewünschten Visualisierungsoptionen konfi
 
 ## <a name="accessing-boundary-system-via-code"></a>Zugreifen auf das Begrenzungssystem über Code
 
-Wenn diese Option aktiviert und konfiguriert ist, kann über die statische Hilfsklasse CoreServices auf das Begrenzungssystem zugegriffen werden. Der Verweis kann dann verwendet werden, um die Boundary-Parameter dynamisch zu ändern und auf verwandte GameObjects zuzugreifen, die vom System verwaltet werden.
+Wenn aktiviert und konfiguriert, kann über die statische CoreServices-Hilfsklasse auf das Boundary System zugegriffen werden. Der Verweis kann dann verwendet werden, um die Begrenzungsparameter dynamisch zu ändern und auf zugehörige GameObjects zu zugreifen, die vom System verwaltet werden.
 
 ```c#
 // Hide Boundary Walls at runtime

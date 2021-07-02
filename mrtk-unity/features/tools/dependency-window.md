@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: fd17db3f365d8bd97b8cd9c43a6111e2b82a61fe
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 590476add6904f76081630c4416184bea9f694ab
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647035"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176661"
 ---
 # <a name="dependency-window"></a>Abhängigkeitsfenster
 
@@ -24,11 +24,11 @@ Um das Fenster zu öffnen, wählen Sie **Mixed Reality**  >  **Abhängigkeitsfen
 
 ![Abhängigkeitsfenster](../images/dependency-window/MRTK_Dependency_Window.png)
 
-Im Fenster werden eine Liste der Ressourcen, von denen das derzeit ausgewählte Medienobjekt abhängt, und eine hierarchische Liste der Davon abhängigen Ressourcen angezeigt. Wenn nichts vom derzeit ausgewählten Medienobjekt abhängt, können Sie es aus Ihrem Projekt löschen (beachten Sie, dass einige Objekte programmgesteuert über APIs wie Shader.Find() geladen werden und möglicherweise nicht vom Abhängigkeitsnachverfolgungs-Objekt abgefangen werden.
+Das Fenster zeigt eine Liste der Ressourcen an, von denen das aktuell ausgewählte Medienobjekt abhängt, sowie eine hierarchische Liste von Ressourcen, die davon abhängig sind. Wenn nichts vom derzeit ausgewählten Medienobjekt abhängt, können Sie es aus Ihrem Projekt löschen (beachten Sie, dass einige Ressourcen programmgesteuert über APIs wie Shader.Find() geladen werden und möglicherweise nicht vom Abhängigkeitsnachverfolgungs-Objekt abgefangen werden.
 
-Im Fenster kann auch nur eine Liste aller Ressourcen angezeigt werden, auf die keine anderen Ressourcen verweisen und die für den Löschvorgang in Betracht gezogen werden können:
+Das Fenster kann auch nur eine Liste aller Ressourcen anzeigen, auf die keine anderen Ressourcen verweisen und die für den Löschvorgang in Betracht gezogen werden können:
 
-![Abhängigkeitsfenster mit nicht abgeleiteten Ressourcen](../images/dependency-window/MRTK_Dependency_Window_Unreferenced.png)
+![Abhängigkeitsfenster mit nicht zurückgeleiteten Ressourcen](../images/dependency-window/MRTK_Dependency_Window_Unreferenced.png)
 
 > [!NOTE]
 > Wenn Objekte geändert, hinzugefügt oder entfernt werden, während das Abhängigkeitsfenster verwendet wird, wird empfohlen, das Abhängigkeitsdiagramm für die aktuellsten Ergebnisse zu aktualisieren.

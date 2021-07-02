@@ -1,16 +1,16 @@
 ---
-title: Dokumentationsleitfaden
+title: Dokumentationsrichtlinien
 description: Dokumentationsrichtlinien und Standards für das MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121388"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175352"
 ---
 # <a name="documentation-guidelines"></a>Dokumentationsrichtlinien
 
@@ -136,67 +136,67 @@ Versuchen Sie im Allgemeinen, **unnötige Texthervorhebungen** zu vermeiden. Son
 
 ### <a name="mentioning-menu-entries"></a>Erwähnen von Menüeinträgen
 
-Wenn sie einen Menüeintrag erwähnen, auf den ein Benutzer klicken soll, lautet die aktuelle Konvention: *Project > Files > Create > Leaf*
+Wenn sie einen Menüeintrag erwähnt, auf den ein Benutzer klicken soll, lautet die aktuelle Konvention: *Project > Files > Create > Leaf*
 
 ### <a name="links"></a>Links
 
-Fügen Sie so viele nützliche Links wie möglich zu anderen Seiten ein, jedoch nur einmal. Angenommen, ein Leser klickt auf jeden Link auf der Seite, und denken Sie darüber nach, wie ängstlich es wäre, wenn dieselbe Seite 20 Mal geöffnet würde.
+Fügen Sie so viele nützliche Links wie möglich zu anderen Seiten ein, aber jeder Link nur einmal. Angenommen, ein Leser klickt auf jeden Link auf der Seite und überlegen, wie lästig es wäre, wenn dieselbe Seite 20 Mal geöffnet wird.
 
 Links bevorzugen, die in einen Satz eingebettet sind:
 
-- BAD: Richtlinien sind nützlich. Weitere Informationen finden Sie [in diesem Kapitel.](../contributing/documentation-guide.md)
+- BAD: Richtlinien sind nützlich. Weitere [Informationen finden Sie](../contributing/documentation-guide.md) in diesem Kapitel.
 - GUT: [Richtlinien](documentation-guide.md) sind nützlich.
 
-Vermeiden Sie externe Links, da diese veraltet sein oder urheberrechtlich geschützte Inhalte enthalten können.
+Vermeiden Sie externe Links. Sie können veraltet sein oder urheberrechtlich geschützte Inhalte enthalten.
 
-Berücksichtigen Sie beim Hinzufügen eines Links, ob er auch im Abschnitt [Siehe auch](#see-also) aufgeführt werden soll. Überprüfen Sie auf ähnliche Weise, ob der Seite, mit der verknüpft wird, ein Link zur neuen Seite hinzugefügt werden soll.
+Wenn Sie einen Link hinzufügen, überlegen Sie, ob er auch im Abschnitt [Siehe auch aufgeführt werden](#see-also) soll. Überprüfen Sie auf ähnliche Weise, ob ein Link zur neuen Seite zur Verknüpften Seite hinzugefügt werden soll.
 
 ### <a name="images--screenshots"></a>Bilder/Screenshots
 
-**Verwenden Sie Screenshots mit geringem Nutzen.** Die Verwaltung von Bildern in der Dokumentation ist sehr arbeitsaufwänd, kleine Änderungen an der Benutzeroberfläche können dazu führen, dass viele Screenshots veraltet sind. Die folgenden Regeln verringern den Wartungsaufwand:
+**Verwenden Sie Screenshots mit Sparende.** Das Verwalten von Bildern in der Dokumentation ist eine menge Arbeit, kleine Änderungen an der Benutzeroberfläche können viele Screenshots veraltet machen. Die folgenden Regeln verringern den Wartungsaufwand:
 
-1. Verwenden Sie keine Screenshots für Dinge, die in Text beschrieben werden können. Erstellen **Sie insbesondere niemals einen Screenshot eines Eigenschaftenrasters,** um ausschließlich Eigenschaftennamen und -werte zu zeigen.
-2. Schließen Sie keine Dinge in einen Screenshot ein, die für das Angezeigte irrelevant sind. Wenn z. B. ein Renderingeffekt angezeigt wird, erstellen Sie einen Screenshot des Viewports, schließen Sie jedoch alle benutzeroberflächen um ihn herum aus. Wenn Sie eine Benutzeroberfläche anzeigen, versuchen Sie, Fenster so zu verschieben, dass nur dieser wichtige Teil im Bild zu sehen ist.
-3. Wenn Sie die Screenshot-Benutzeroberfläche einschließen, zeigen Sie nur die wichtigen Teile an. Wenn Sie z. B. über Schaltflächen in einer Symbolleiste sprechen, erstellen Sie ein kleines Bild, das die wichtigen Symbolleistenschaltflächen anzeigt, aber alles um sich herum ausschließt.
-4. Verwenden Sie nur Bilder, die einfach zu reproduzieren sind. Das bedeutet, dass Sie keine Marker oder Hervorhebungen in Screenshots zeichnen. Erstens gibt es keine konsistenten Regeln, wie diese aussehen sollten. Zweitens ist das Reproduzieren eines solchen Screenshots ein zusätzlicher Aufwand. Beschreiben Sie stattdessen die wichtigen Teile im Text. Es gibt Ausnahmen von dieser Regel, aber sie sind selten.
-5. Natürlich ist es viel aufwendiger, ein animiertes GIF neu zu erstellen. Erwarten Sie, dass sie bis zum Ende der Zeit neu erstellt werden soll, oder erwarten Sie, dass Personen sie auslösen, wenn sie diese Zeit nicht aufwenden möchten.
-6. Halten Sie die Anzahl der Bilder in einem Artikel gering. Häufig ist es eine gute Methode, einen Gesamtscreenshot eines Tools zu erstellen, das alles zeigt, und dann den Rest im Text zu beschreiben. Dies erleichtert das Ersetzen des Screenshots bei Bedarf.
+1. Verwenden Sie keine Screenshots für Dinge, die im Text beschrieben werden können. Insbesondere sollten **Sie niemals einen Screenshot eines Eigenschaftenrasters** erstellen, um nur Eigenschaftsnamen und -werte zu zeigen.
+2. Schließen Sie keine Dinge in einen Screenshot ein, die für das Angezeigte irrelevant sind. Wenn z. B. ein Renderingeffekt angezeigt wird, erstellen Sie einen Screenshot des Viewports, aber schließen Sie alle benutzeroberflächen um ihn herum aus. Wenn Sie einige Benutzeroberflächen anzeigen, versuchen Sie, Fenster so zu verschieben, dass nur dieser wichtige Teil im Bild zu finden ist.
+3. Wenn Sie die Screenshotbenutzeroberfläche verwenden, zeigen Sie nur die wichtigen Teile an. Wenn Sie beispielsweise über Schaltflächen in einer Symbolleiste sprechen, erstellen Sie ein kleines Bild, das die wichtigen Symbolleistenschaltflächen zeigt, aber schließen Sie alles um sie herum aus.
+4. Verwenden Sie nur Bilder, die leicht zu reproduzieren sind. Das bedeutet, dass Sie keine Marker oder Highlights in Screenshots zeichnen. Erstens gibt es keine konsistenten Regeln, wie diese ohnehin aussehen sollten. Zweitens ist die Reproduktion eines solchen Screenshots ein zusätzlicher Aufwand. Beschreiben Sie stattdessen die wichtigen Teile im Text. Es gibt Ausnahmen von dieser Regel, aber sie sind selten.
+5. Natürlich ist es viel schwieriger, ein animiertes GIF neu zu erstellen. Erwarten Sie, dass Sie dafür verantwortlich sind, sie bis zum Ende der Zeit neu zu erstellen, oder erwarten Sie, dass Dies von Denkverlangen wird, wenn sie diese Zeit nicht verbringen möchten.
+6. Halten Sie die Anzahl der Bilder in einem Artikel niedrig. Häufig ist es eine gute Methode, einen allgemeinen Screenshot eines Tools zu erstellen, das alles zeigt, und dann den Rest im Text zu beschreiben. Dadurch kann der Screenshot bei Bedarf problemlos ersetzt werden.
 
 Einige andere Aspekte:
 
-- Die Benutzeroberfläche des Editors für Screenshots sollte den Editor für hellgraue Designs verwenden, da nicht alle Benutzer Zugriff auf das dunkle Design haben und wir die Konsistenz so konsistent wie möglich halten möchten.
-- Die Standardbildbreite beträgt 500 Pixel, da dies auf den meisten Monitoren gut angezeigt wird. Versuchen Sie nicht, zu viel davon abzuweichen. Die Breite sollte maximal 800 Pixel betragen.
+- Die Editor-Benutzeroberfläche für Screenshots sollte den hellgrauen Design-Editor verwenden, da nicht alle Benutzer Zugriff auf das dunkle Design haben und wir die Dinge so konsistent wie möglich halten möchten.
+- Die Standardbildbreite beträgt 500 Pixel, da dies auf den meisten Monitoren gut angezeigt wird. Versuchen Sie nicht, zu stark davon zu abweichen. Eine Breite von 800 Pixeln sollte das Maximum sein.
 - Verwenden Sie PNGs für Screenshots der Benutzeroberfläche.
 - Verwenden Sie PNGs oder JPGs für 3D-Viewport-Screenshots. Qualität gegenüber Komprimierungsverhältnis bevorzugen.
 
 ### <a name="list-of-component-properties"></a>Liste der Komponenteneigenschaften
 
-Verwenden Sie beim Dokumentieren einer Liste von Eigenschaften fetten Text, um den Eigenschaftennamen zu markieren, und verwenden Sie dann Zeilenumbrüche und regulären Text, um sie zu beschreiben. Verwenden Sie keine Unterkapitel oder Aufzählungslisten.
+Verwenden Sie beim Dokumentieren einer Liste von Eigenschaften fett formatierten Text, um den Eigenschaftsnamen hervorzuheben, und beschreiben Sie sie dann mit Zeilenumbrüchen und regulärem Text. Verwenden Sie keine Unter- oder Aufzählungszeichen.
 
-Vergessen Sie außerdem nicht, alle Sätze mit einem Punkt fertig zu stellen.
+Vergessen Sie auch nicht, alle Sätze mit einem Zeitraum zu beenden.
 
-## <a name="page-completion-checklist"></a>Prüfliste für seitenseitige Vervollständigung
+## <a name="page-completion-checklist"></a>Checkliste für den Seitenabschluss
 
 1. Stellen Sie sicher, dass die Richtlinien dieses Dokuments eingehalten wurden.
-1. Durchsuchen Sie die Dokumentstruktur, und überprüfen Sie, ob das neue Dokument im Abschnitt [Siehe auch](#see-also) auf anderen Seiten erwähnt werden kann.
-1. Falls verfügbar, sollten Sie jemanden mit Kenntnissen zum Thema bitten, die Seite auf technische Richtigkeit zu überprüfen.
-1. Bitten Sie jemanden, die Seite für Stil und Formatierung zu lesen. Dies kann jemand sein, der mit dem Thema nicht vertraut ist. Dies ist auch eine gute Idee, feedback zu erhalten, wie verständlich die Dokumentation ist.
+1. Durchsuchen Sie die Dokumentstruktur, und sehen Sie sich an, ob das neue Dokument im Abschnitt [Siehe auch](#see-also) auf anderen Seiten erwähnt werden könnte.
+1. Falls verfügbar, sollten Sie eine Person mit Kenntnissen des Themas "Proof-Read" auf der Seite auf technische Richtigkeit prüfen lassen.
+1. Sie müssen die Seite für Stil und Formatierung lesen. Dies kann jemand sein, der mit dem Thema nicht vertraut ist. Dies ist auch eine gute Idee, um Feedback darüber zu erhalten, wie verständlich die Dokumentation ist.
 
 ## <a name="source-documentation"></a>Quelldokumentation
 
 Die API-Dokumentation wird automatisch aus den MRTK-Quelldateien generiert. Um dies zu vereinfachen, müssen Quelldateien Folgendes enthalten:
 
-- [Klassen-, Struktur- und Enumerationszusammenfassungsblöcke](#class-struct-enum-summary-blocks)
-- [Eigenschaft, Methode, Ereigniszusammenfassungsblöcke](#property-method-event-summary-blocks)
-- [Featureeinführungsversion und Abhängigkeiten](#feature-introduction-version-and-dependencies)
+- [Klassen-, Struktur- und Aufzählzusammenfassungsblöcke](#class-struct-enum-summary-blocks)
+- [Eigenschaften-, Methoden- und Ereigniszusammenfassungsblöcke](#property-method-event-summary-blocks)
+- [Einführungsversion und Abhängigkeiten von Features](#feature-introduction-version-and-dependencies)
 - [Serialisierte Felder](#serialized-fields)
 - [Enumerationswerte](#enumeration-values)
 
-Darüber hinaus sollte der Code gut kommentiert werden, um Wartung, Fehlerbehebungen und eine einfache Anpassung zu ermöglichen.
+Darüber hinaus sollte der Code gut kommentiert werden, um Wartung, Fehlerbehebungen und einfache Anpassungen zu ermöglichen.
 
-### <a name="class-struct-enum-summary-blocks"></a>Klassen-, Struktur- und Enumerationszusammenfassungsblöcke
+### <a name="class-struct-enum-summary-blocks"></a>Klassen-, Struktur- und Aufzählzusammenfassungsblöcke
 
-Wenn dem MRTK eine Klasse, Struktur oder Enumeration hinzugefügt wird, muss ihr Zweck beschrieben werden. Dies erfolgt in Form eines Zusammenfassungsblocks über der -Klasse.
+Wenn eine Klasse, Struktur oder Enum dem MRTK hinzugefügt wird, muss ihr Zweck beschrieben werden. Dies ist in Form eines Zusammenfassungsblocks oberhalb der -Klasse.
 
 ```c#
 /// <summary>
@@ -204,7 +204,7 @@ Wenn dem MRTK eine Klasse, Struktur oder Enumeration hinzugefügt wird, muss ihr
 /// </summary>
 ```
 
-Wenn Abhängigkeiten auf Klassenebene vorhanden sind, sollten sie in einem Hinweisblock direkt unterhalb der Zusammenfassung dokumentiert werden.
+Wenn Abhängigkeiten auf Klassenebene vorhanden sind, sollten sie in einem Hinweiseblock unmittelbar unterhalb der Zusammenfassung dokumentiert werden.
 
 ```c#
 /// <remarks>
@@ -213,17 +213,17 @@ Wenn Abhängigkeiten auf Klassenebene vorhanden sind, sollten sie in einem Hinwe
 /// </remarks>
 ```
 
-Pull Requests, die ohne Zusammenfassungen für Klassen, Strukturen oder Enumerationen übermittelt werden, werden nicht genehmigt.
+Pull Requests, die ohne Zusammenfassungen für Klassen, Strukturen oder Aufzählen übermittelt werden, werden nicht genehmigt.
 
 ### <a name="property-method-event-summary-blocks"></a>Eigenschaften-, Methoden- und Ereigniszusammenfassungsblöcke
 
-Eigenschaften, Methoden und Ereignisse (PMEs) sowie Felder müssen unabhängig von der Codesichtbarkeit (öffentlich, privat, geschützt und intern) mit Zusammenfassungsblöcken dokumentiert werden. Das Tool zur Dokumentationsgenerierung ist dafür verantwortlich, nur die öffentlichen und geschützten Features heraus zu filtern und zu veröffentlichen.
+Eigenschaften, Methoden und Ereignisse (PMEs) sowie Felder müssen mit Zusammenfassungsblöcken dokumentiert werden, unabhängig von der Codesichtbarkeit (öffentlich, privat, geschützt und intern). Das Tool zur Dokumentationsgenerierung ist für das Herausfiltern und Veröffentlichen nur der öffentlichen und geschützten Features verantwortlich.
 
-HINWEIS: Ein Zusammenfassungsblock ist für Unity-Methoden **nicht** erforderlich (z. B. "Aktualisieren", "Starten", "Aktualisieren").
+HINWEIS: Ein Zusammenfassungsblock ist **für** Unity-Methoden nicht erforderlich (z.B. "Weck", "Starten", "Aktualisieren").
 
-Die PME-Dokumentation ist **erforderlich,** damit ein Pull Request genehmigt werden kann.
+Die PME-Dokumentation **ist erforderlich,** damit ein Pull Request genehmigt wird.
 
-Als Teil eines PME-Zusammenfassungsblocks sind die Bedeutung und der Zweck von Parametern und zurückgegebenen Daten erforderlich.
+Im Rahmen eines PME-Zusammenfassungsblocks ist die Bedeutung und der Zweck von Parametern und zurückgegebenen Daten erforderlich.
 
 ```c#
 /// <summary>
@@ -233,11 +233,11 @@ Als Teil eines PME-Zusammenfassungsblocks sind die Bedeutung und der Zweck von P
 /// <returns>The new cutoff frequency value.</returns>
 ```
 
-### <a name="feature-introduction-version-and-dependencies"></a>Featureeinführungsversion und Abhängigkeiten
+### <a name="feature-introduction-version-and-dependencies"></a>Einführungsversion und Abhängigkeiten von Features
 
-Im Rahmen der API-Zusammenfassungsdokumentation sollten Informationen zur MRTK-Version, in der das Feature eingeführt wurde, und alle Abhängigkeiten in einem Hinweisblock dokumentiert werden.
+Als Teil der API-Zusammenfassungsdokumentation sollten Informationen zur MRTK-Version, in der das Feature eingeführt wurde, und alle Abhängigkeiten in einem Hinweiseblock dokumentiert werden.
 
-Abhängigkeiten sollten Erweiterungs- und/oder Plattformabhängigkeiten enthalten.
+Abhängigkeiten sollten Erweiterungs- und/oder Plattformabhängigkeiten umfassen.
 
 ```c#
 /// <remarks>
@@ -250,9 +250,9 @@ Abhängigkeiten sollten Erweiterungs- und/oder Plattformabhängigkeiten enthalte
 
 ### <a name="serialized-fields"></a>Serialisierte Felder
 
-Es ist eine bewährte Methode, das ToolTip-Attribut von Unity zu verwenden, um Laufzeitdokumentation für die Felder eines Skripts im Inspektor bereitzustellen.
+Es ist eine bewährte Methode, das Tooltip-Attribut von Unity zu verwenden, um Laufzeitdokumentation für die Felder eines Skripts im Inspektor zur Verfügung zu stellen.
 
-Damit Konfigurationsoptionen in der API-Dokumentation enthalten sind, müssen Skripts *mindestens* den QuickInfo-Inhalt in einen Zusammenfassungsblock einschließen.
+Damit Konfigurationsoptionen in der API-Dokumentation enthalten sind, müssen Skripts mindestens den QuickInfo-Inhalt in einem Zusammenfassungsblock enthalten. 
 
 ```c#
 /// <summary>
@@ -263,7 +263,7 @@ Damit Konfigurationsoptionen in der API-Dokumentation enthalten sind, müssen Sk
 
 ### <a name="enumeration-values"></a>Enumerationswerte
 
-Beim Definieren und Aufzählen muss code auch die Bedeutung der Enumerationswerte mithilfe eines Zusammenfassungsblocks dokumentieren. Anmerkungsblöcke können optional verwendet werden, um zusätzliche Details bereitzustellen, um das Verständnis zu verbessern.
+Beim Definieren von und Enumeration muss der Code auch die Bedeutung der Enumerationswerte mithilfe eines Zusammenfassungsblocks dokumentieren. Hinweiseblöcke können optional verwendet werden, um zusätzliche Details zur Verbesserung des Verständnisses zur Verfügung zu stellen.
 
 ```c#
 /// <summary>
@@ -279,15 +279,15 @@ Beim Definieren und Aufzählen muss code auch die Bedeutung der Enumerationswert
 
 Viele Benutzer des Mixed Reality Toolkits müssen die API-Dokumentation möglicherweise nicht verwenden. Diese Benutzer nutzen unsere vorgefertigten, wiederverwendbaren Prefabs und Skripts, um ihre Erfahrungen zu erstellen.
 
-Jeder Featurebereich enthält eine oder mehrere Markdowndateien (MD), die auf einer relativ hohen Ebene beschreiben, was bereitgestellt wird. Abhängig von der Größe und/oder Komplexität eines bestimmten Featurebereichs sind möglicherweise zusätzliche Dateien erforderlich, bis zu einer pro bereitgestellter Funktion.
+Jeder Funktionsbereich enthält eine oder mehrere Markdowndateien (MD), die auf relativ hoher Ebene beschreiben, was bereitgestellt wird. Je nach Größe und/oder Komplexität eines bestimmten Funktionsbereichs müssen möglicherweise zusätzliche Dateien benötigt werden, bis zu einer pro bereitgestellten Funktion.
 
 Wenn ein Feature hinzugefügt wird (oder die Nutzung geändert wird), muss eine Übersichtsdokumentation bereitgestellt werden.
 
-Im Rahmen dieser Dokumentation sollten Anleitungsabschnitte, einschließlich Abbildungen, bereitgestellt werden, um Kunden zu helfen, die noch nicht mit einem Feature oder Konzept bei den ersten Schritte begonnen haben.
+Im Rahmen dieser Dokumentation sollten Abschnitte mit Informationen, einschließlich Abbildungen, bereitgestellt werden, um Kunden bei den ersten Schritte mit einem Feature oder Konzept zu unterstützen.
 
 ## <a name="design-documentation"></a>Entwurfsdokumentation
 
-Mixed Reality bietet die Möglichkeit, völlig neue Welten zu schaffen. Ein Teil davon ist wahrscheinlich die Erstellung von benutzerdefinierten Ressourcen für die Verwendung mit dem MRTK. Damit dies für Kunden so reibungslos wie möglich ist, sollten Komponenten eine Entwurfsdokumentation bereitstellen, in der alle Formatierungs- oder anderen Anforderungen für Diess-Objekte beschrieben werden.
+Mixed Reality bietet die Möglichkeit, völlig neue Welten zu erstellen. Ein Teil davon ist wahrscheinlich die Erstellung benutzerdefinierter Ressourcen für die Verwendung mit dem MRTK. Um dies für Kunden so reibungslos wie möglich zu gestalten, sollten Komponenten eine Entwurfsdokumentation bereitstellen, in der alle Formatierungs- oder anderen Anforderungen an Artefakte beschrieben werden.
 
 Einige Beispiele, in denen die Entwurfsdokumentation hilfreich sein kann:
 
@@ -295,13 +295,13 @@ Einige Beispiele, in denen die Entwurfsdokumentation hilfreich sein kann:
 - Visualisierungen der räumlichen Zuordnung
 - Soundeffektdateien
 
-Diese Art von Dokumentation wird **dringend** empfohlen und **kann** im Rahmen einer Pull Request-Überprüfung angefordert werden.
+Diese Art von Dokumentation wird **dringend** empfohlen und **kann im** Rahmen einer Pull Request-Überprüfung angefordert werden.
 
-Dies kann sich von der Entwurfsempfehlung auf der [MS Developer-Website](/windows/mixed-reality/design) unterscheiden oder nicht.
+Dies kann sich von der Entwurfsempfehlung auf der [MS Developer-Website unterscheiden.](/windows/mixed-reality/design)
 
 ## <a name="performance-notes"></a>Leistungshinweise
 
-Einige wichtige Features sind mit Leistungskosten verbunden. Dieser Code hängt häufig davon ab, wie sie konfiguriert sind.
+Einige wichtige Features sind mit Leistungskosten ausgestattet. Häufig hängt dieser Code davon ab, wie er konfiguriert ist.
 
 Beispiel:
 
@@ -310,7 +310,7 @@ When using the spatial mapping component, the performance impact will increase w
 It is recommended to use the least detail possible for the desired experience.
 ```
 
-Leistungshinweise werden für CPU- und/oder GPU-starke Komponenten empfohlen und **können** im Rahmen einer Pull Request-Überprüfung angefordert werden. Alle anwendbaren Leistungshinweise müssen in der **API- und** Übersichtsdokumentation enthalten sein.
+Leistungshinweise werden für CPU- und/oder  GPU-komponenten empfohlen und können im Rahmen einer Pull Request-Überprüfung angefordert werden. Alle anwendbaren Leistungshinweise müssen in der **API- und** Übersichtsdokumentation enthalten sein.
 
 ## <a name="breaking-changes"></a>Aktuelle Änderungen
 
@@ -344,12 +344,12 @@ Alle Breaking Changes, die Teil einer Änderung sind, **müssen** als Teil eines
 
 Beim Schreiben der Dokumentation wird auch dringend empfohlen, die folgenden beiden Erweiterungen zu installieren:
 
-- Docs Markdown Extension for Visual Studio Code : Verwenden Sie ALT+M, um ein Menü mit Dokumenterstellungsoptionen aufzurufen.
+- Docs Markdown Extension for Visual Studio Code : Verwenden Sie ALT+M, um ein Menü mit Dokumenterstellungsoptionen anzuzeigen.
 
-- Code spell checker ( Rechtschreibprüfung für Code): Falsch geschriebene Wörter werden unterstrichen. Klicken Sie mit der rechten Maustaste auf ein falsch geschriebenes Wort, um es zu ändern oder im Wörterbuch zu speichern.
+- Code-Rechtschreibprüfung: Falsch geschriebene Wörter werden unterstrichen. Klicken Sie mit der rechten Maustaste auf ein falsch geschriebenes Wort, um es zu ändern oder im Wörterbuch zu speichern.
 
 Beides ist im von Microsoft veröffentlichten Docs Authoring Pack enthalten.
 
-## <a name="see-also"></a>Siehe auch 
+## <a name="see-also"></a>Siehe auch
 
-* [Beispiellink](https://www.google.com)
+- [Beispiellink "siehe auch" für die Dokumentation](https://www.microsoft.com)

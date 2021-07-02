@@ -1,18 +1,18 @@
 ---
-title: Wird aktualisiert
+title: Aktualisieren von früheren Versionen
 description: Dokumentation zur Migration von einer niedrigeren Version von MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 97f45328bc8f9b811e815da0240138790db699c6
-ms.sourcegitcommit: 0b09536c16f6802acc120a973d720aec7e30f617
+ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107742236"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175100"
 ---
-# <a name="updating-the-microsoft-mixed-reality-toolkit"></a>Aktualisieren des Microsoft Mixed Reality Toolkits
+# <a name="updating-from-earlier-versions"></a>Aktualisieren von früheren Versionen
 
 - [Upgrade auf eine neue Version von MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 bis 2.4.0](#updating-230-to-240)
@@ -26,7 +26,7 @@ ms.locfileid: "107742236"
 Befolgen Sie diese Anweisungen, um herauszufinden, welche Version des MRTK Sie derzeit verwenden:
 
 1. Öffnen Ihres MRTK-Projekts in Unity
-2. Navigieren Sie im Projektfenster zum Ordner "MixedRealityToolkit".
+2. Navigieren Sie in Ihrem Project fenster zum Ordner "MixedRealityToolkit".
 3. Öffnen Sie die Datei "Version".
 
 Wenn die datei und der Ordner oben nicht vorhanden sind, verwenden Sie eine neuere Version des MRTK. Versuchen Sie in diesem Fall Folgendes:
@@ -39,26 +39,26 @@ Wenn die datei und der Ordner oben nicht vorhanden sind, verwenden Sie eine neue
 
 *Es wird dringend empfohlen, das [Migrationstool](../features/tools/migration-window.md) auszuführen, nachdem das MRTK-Update* für die automatische Fehlerbehebung und das Upgrade von veralteten Komponenten und die Anpassung an breaking changes durchgeführt wurde. Das Migrationstool ist Teil des **Tools-Pakets.**
 
-Die folgenden Anweisungen beschreiben den Upgradepfad von 2.4.0 auf 2.5.0. Wenn Ihr Projekt 2.3.0 oder früher installiert [](#updating-230-to-240) ist, lesen Sie die Änderungen zwischen [](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) den Versionen, um den Upgradepfad zu verstehen, oder lesen Sie die Anweisungen des vorherigen Release, um ein Versionsupgrade vorzunehmen.
+In den folgenden Anweisungen wird der Upgradepfad von 2.4.0 auf 2.5.0 beschrieben. Wenn Ihr Projekt auf Version 2.3.0 oder früher basiert, lesen Sie die Änderungen zwischen den [Versionen,](#updating-230-to-240) um den Upgradepfad zu verstehen, oder lesen Sie die Anweisungen der vorherigen [Version,](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) um ein Versionsupgrade durchzuführen.
 
 ### <a name="mixed-reality-feature-tool"></a>Mixed Reality Feature-Tool
-Die einfachste Möglichkeit, MRTK auf eine neuere Version des MRTK zu aktualisieren, ist die Verwendung des Mixed Reality Feature Tools, um die neuesten Pakete herunterzuladen und sie direkt in Ihr [Unity-Projekt](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) zu laden.
+Die einfachste Möglichkeit zum Aktualisieren von MRTK auf eine neuere Version von MRTK ist die Verwendung des [Mixed Reality Feature Tools,](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) um die neuesten Pakete herunterzuladen und direkt in Ihr Unity-Projekt zu laden.
 
-Wenn das Projekt zuvor Unity-Ressourcendateien (.unitypackage) verwendet hat, lesen Sie [diese Anweisungen.](#switching-from-unity-asset-files-to-mixed-reality-feature-tool) 
+Wenn das Projekt zuvor Unity-Medienobjektdateien (.unitypackage) verwendet hat, lesen Sie [diese Anweisungen.](#switching-from-unity-asset-files-to-mixed-reality-feature-tool) 
 
-### <a name="unity-asset-unitypackage-files"></a>Unity-Assetdateien (.unitypackage)
+### <a name="unity-asset-unitypackage-files"></a>Unity-Medienobjektdateien (.unitypackage)
 
-Ein weiterer Upgradepfad ist das manuelle Herunterladen von MRTK-Unity-Paketen und deren Anwendung auf Ihr Projekt. Sehen Sie sich die folgenden Schritte an:
+Ein weiterer Upgradepfad besteht darin, MRTK-Unity-Pakete manuell herunterzuladen und auf Ihr Projekt anzuwenden. Sehen Sie sich die folgenden Schritte an:
 
-1. Speichern Sie eine Kopie Ihres aktuellen Projekts, falls Sie zu einem beliebigen Zeitpunkt in den Upgradeschritten auf Dies treffen.
+1. Speichern Sie eine Kopie Des aktuellen Projekts, falls Sie zu einem beliebigen Zeitpunkt in den Upgradeschritten auf Fehler stoßen.
 1. Schließen von Unity
-1. Löschen Sie *im* Ordner Assets die folgenden **MRTK-Ordner** zusammen mit ihren META-Dateien (das Projekt enthält möglicherweise nicht alle aufgelisteten Ordner).
+1. Löschen Sie im Ordner *Assets* die folgenden **MRTK-Ordner** zusammen mit ihren META-Dateien (das Projekt enthält möglicherweise nicht alle aufgelisteten Ordner).
     - MRTK/Core
     - MRTK/Beispiele
-    - MRTK/Erweiterungen
+    - MRTK/Extensions
     - MRTK/Providers
     - MRTK/SDK
-    - MRTK/Dienste
+    - MRTK/Services
     - MRTK/StandardAssets
     > [!IMPORTANT]
     > Wenn Änderungen an den MRTK-Shadern vorgenommen wurden, erstellen Sie eine lokale Sicherung, bevor Sie den Ordner MRTK/StandardAssets löschen.
@@ -81,31 +81,31 @@ Ein weiterer Upgradepfad ist das manuelle Herunterladen von MRTK-Unity-Paketen u
     - Löschen Sie **MixedRealityToolkit** und **MixedRealityPlayspace** aus der Hierarchie, sofern vorhanden. Dadurch wird die Hauptkamera gelöscht, aber im nächsten Schritt neu erstellt. Wenn Eigenschaften der Hauptkamera manuell geändert wurden, müssen diese nach der Erstellung der neuen Kamera manuell erneut angewendet werden.
     - Wählen Sie **MixedRealityToolkit -> Zur Szene hinzufügen und konfigurieren aus.**
     - Wählen Sie **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles** (Nur einmal erforderlich) aus. Dadurch werden alle benutzerdefinierten Controllerzuordnungsprofile mit aktualisierten Achsen und Daten aktualisiert, während Ihre benutzerdefinierten Zugewiesenen Eingabeaktionen intakt bleiben.
-1. Führen Sie das [Migrationstool](../features/tools/migration-window.md) aus, und führen Sie das Tool unter *Vollständiges Projekt* aus, um sicherzustellen, dass der gesamte Code auf den neuesten Stand aktualisiert wird.
-   Das Migrationsfenster enthält eine Reihe verschiedener Migrationshandler, die jeweils eigenständig ausgeführt werden müssen. Dieser Schritt umfasst:
-   - Wählen Sie in der Dropdownliste **Migrationshandlerauswahl** den ersten Migrationshandler aus.
-   - Klicken Sie auf die Schaltfläche "Vollständiges Projekt".
-   - Klicken Sie auf die Schaltfläche "Add full project for migration" (Vollständiges Projekt für Migration hinzufügen). Dadurch wird das gesamte Projekt auf zu migrierende Objekte überprüft.
-   - Klicken Sie auf die Schaltfläche "Migrieren", die aktiviert werden sollte, wenn migrierte Objekte gefunden wurden.
+1. Führen Sie das [Migrationstool](../features/tools/migration-window.md) aus, und führen Sie das Tool auf der *vollständigen Project* aus, um sicherzustellen, dass der gesamte Code auf den neuesten Stand aktualisiert wird.
+   Das Migrationsfenster enthält eine Reihe verschiedener Migrationshandler, die jeweils eigenständig ausgeführt werden müssen. Dieser Schritt umfasst Folgendes:
+   - Wählen Sie den ersten Migrationshandler aus der Dropdownliste Auswahl des **Migrationshandlers** aus.
+   - Klicken Sie auf die Schaltfläche "Full Project".
+   - Klicken Sie auf die Schaltfläche "Vollständiges Projekt zur Migration hinzufügen" (dadurch wird das gesamte Projekt nach zu migrierenden Objekten überprüft).
+   - Klicken Sie auf die Schaltfläche "Migrieren", die aktiviert werden soll, wenn migrierte Objekte gefunden wurden.
    - Wiederholen Sie die vorherigen drei Schritte für jeden Migrationshandler in der Dropdownliste.
-     (Siehe [dieses Problem,](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) in dem die Arbeit behandelt wird, die zur Vereinfachung dieses Migrationsprozesses in einer zukünftigen Version durchgeführt werden kann.)
+     (In [diesem Problem](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) wird die Arbeit behandelt, die zur Vereinfachung dieses Migrationsprozesses in einem zukünftigen Release ausgeführt werden kann.)
 
-### <a name="switching-from-unity-asset-files-to-mixed-reality-feature-tool"></a>Wechseln von Unity-Ressourcendateien zum Mixed Reality Featuretool
+### <a name="switching-from-unity-asset-files-to-mixed-reality-feature-tool"></a>Wechseln von Unity-Medienobjektdateien zu Mixed Reality Feature-Tool
 
-Der Wechsel von Unity-Ressourcendateien zu Mixed Reality FeatureTool-Paketen bietet eine Reihe von Vorteilen:
+Der Wechsel von Unity-Medienobjektdateien zu Mixed Reality FeatureTool-Paketen bietet eine Reihe von Vorteilen:
 
 - Einfacheres Aktualisieren
 - Schnellere Kompilierungszeiten
 - Weniger Projekte in der Visual Studio Projektmappe
 
-Für die Verwendung des Mixed Reality Featuretools ist ein einmaliger Satz manueller Schritte erforderlich.
+Die Umstellung auf die Verwendung des Mixed Reality Feature Tools erfordert einen einmaligen Satz manueller Schritte.
 
 1. Speichern Sie eine Kopie Ihres aktuellen Projekts.
 1. Schließen von Unity
-1. Löschen Sie *im* Ordner Assets die folgenden **MRTK-Ordner** zusammen mit ihren META-Dateien (das Projekt enthält möglicherweise nicht alle aufgelisteten Ordner).
+1. Löschen Sie im Ordner *Assets* die folgenden **MRTK-Ordner** zusammen mit ihren META-Dateien (das Projekt enthält möglicherweise nicht alle aufgelisteten Ordner).
     - MRTK/Core
     - MRTK/Beispiele
-    - MRTK/Erweiterungen
+    - MRTK/Extensions
     - MRTK/Providers
     - MRTK/SDK
     - MRTK/Services
@@ -135,25 +135,25 @@ Die MixedRealityToolkit-Ordner wurden umbenannt und in Version 2.4 in eine allge
 | --- | --- |
 | MixedRealityToolkit | MRTK/Core |
 | MixedRealityToolkit.Examples | MRTK/Beispiele |
-| MixedRealityToolkit.Extensions | MRTK/Erweiterungen |
+| MixedRealityToolkit.Extensions | MRTK/Extensions |
 | MixedRealityToolkit.Providers | MRTK/Providers |
 | MixedRealityToolkit.SDK | MRTK/SDK |
-| MixedRealityToolkit.Services | MRTK/Dienste |
+| MixedRealityToolkit.Services | MRTK/Services |
 | MixedRealityToolkit.Tests | MRTK/Tests |
 | MixedRealityToolkit.Tools | MRTK/Tools |
 
 > [!IMPORTANT]
-> Enthält `MixedRealityToolkit.Generated` vom Kunden generierte Dateien und bleibt unverändert.
+> `MixedRealityToolkit.Generated`Enthält vom Kunden generierte Dateien und bleibt unverändert.
 
-### <a name="eye-gaze-setup-in-240"></a>Einrichtung des Anvings mit den Augen in 2.4.0
+### <a name="eye-gaze-setup-in-240"></a>Einrichtung des Anvischens mit den Augen in 2.4.0
 
-Diese Version des MRTK ändert die schritte, die für die Einrichtung des Anvismus mit den Augen erforderlich sind. Das _Kontrollkästchen "IsEyeTrackingEnabled"_ finden Sie in den Anvitierungseinstellungen des Eingabezeigerprofils. Wenn Sie dieses Kontrollkästchen aktivieren, wird das anvische Blick auf die Augen statt auf dem Standardkopf aktiviert.
+Diese Version von MRTK ändert die Schritte, die für die Einrichtung des Anvischens mit den Augen erforderlich sind. Das _Kontrollkästchen "IsEyeTrackingEnabled"_ befindet sich in den Anverfolgungseinstellungen des Eingabezeigerprofils. Wenn Sie dieses Kontrollkästchen aktivieren, wird das anvische Anvieren auf Augenbasis statt des standardmäßigen kopfbasierten Anvierens aktiviert.
 
-Weitere Informationen zu diesen Änderungen und vollständige Anweisungen für die Einrichtung der Eyetracking finden Sie im [Artikel Eyetracking.](../features/input/eye-tracking/eye-tracking-basic-setup.md)
+Weitere Informationen zu diesen Änderungen und vollständige Anweisungen für die Eyetrackingeinrichtung finden Sie im Artikel [eye tracking (Blickverfolgung).](../features/input/eye-tracking/eye-tracking-basic-setup.md)
 
-### <a name="eye-gaze-pointer-behavior-in-240"></a>Verhalten des Anvingzeigers mit den Augen in 2.4.0
+### <a name="eye-gaze-pointer-behavior-in-240"></a>Verhalten des Anvischens von Augenzeigern in 2.4.0
 
-Das Standardzeigerverhalten für das Anvieren mit den Augen wurde so geändert, dass es dem Standardzeigerverhalten des Anvierens mit dem Kopf angepasst wird. Ein Blickzeiger wird automatisch unterdrückt, sobald eine Hand erkannt wird. Der Blickzeiger wird wieder sichtbar, nachdem er "Auswählen" gesagt hat.
+Das Standardzeigerverhalten für das Anvieren mit den Augen wurde so geändert, dass es dem Standardzeigerverhalten des Anvierens mit dem Kopf entspricht. Ein Blickzeiger wird automatisch unterdrückt, sobald eine Hand erkannt wird. Der Blickzeiger wird wieder sichtbar, nachdem er "Auswählen" gesagt hat.
 
 Details zu Anviert- und Handeinrichtung finden Sie im Artikel [Augen und Hände.](../features/input/eye-tracking/eye-tracking-eyes-and-hands.md#how-to-keep-gaze-pointer-always-on)
 
@@ -196,23 +196,23 @@ Die folgenden WindowsApiChecker-Eigenschaften wurden als veraltet markiert. Verw
 - UniversalApiContractV4_IsAvailable
 - UniversalApiContractV3_IsAvailable
 
-Es ist nicht geplant, WindowsApiChecker Eigenschaften für zukünftige API-Vertragsversionen hinzuzufügen.
+Es ist nicht geplant, Eigenschaften zu WindowsApiChecker für zukünftige API-Vertragsversionen hinzuzufügen.
 
 **GltfMeshPrimitiveAttributes schreibgeschützt**
 
-Die primitiven gltf mesh-Attribute, die früher festgelegt werden können, sind jetzt schreibgeschützt. Ihre Werte werden einmal festgelegt, wenn sie deserialisiert werden.
+Die primitiven Gltf Mesh-Attribute, die früher festgelegt werden können, sind jetzt schreibgeschützt. Ihre Werte werden einmal festgelegt, wenn sie deserialisiert werden.
 
-### <a name="custom-button-icon-migration"></a>Migration benutzerdefinierter Schaltflächensymbole
+### <a name="custom-button-icon-migration"></a>Migration des Benutzerdefinierten Schaltflächensymbols
 
-Zuvor mussten benutzerdefinierte Schaltflächensymbole dem Quadrenderer der Schaltfläche ein neues Material zuweisen. Dies ist nicht mehr erforderlich, und es wird empfohlen, benutzerdefinierte Symboltexturen in ein IconSet zu verschieben. Vorhandene benutzerdefinierte Materialien und Symbole werden beibehalten. Sie sind jedoch weniger optimal, bis ein Upgrade durchgeführt wird.
-Verwenden Sie ButtonConfigHelperMigrationHandler, um die Objekte auf allen Schaltflächen im Projekt auf das neue empfohlene Format zu aktualisieren.
+Zuvor benutzerdefinierte Schaltflächensymbole mussten dem Quadrenderer der Schaltfläche ein neues Material zugewiesen werden. Dies ist nicht mehr erforderlich, und es wird empfohlen, benutzerdefinierte Symboltexturen in ein IconSet zu verschieben. Vorhandene benutzerdefinierte Materialien und Symbole werden beibehalten. Allerdings sind sie bis zum Upgrade weniger optimal.
+Verwenden Sie ButtonConfigHelperMigrationHandler, um die Objekte für alle Schaltflächen im Projekt auf das neue empfohlene Format zu aktualisieren.
 (Mixed Reality Toolkit -> Utilities -> Migration Window -> Migration Handler Selection -> Microsoft.MixedReality.Toolkit.Utilities.ButtonConfigHelperMigrationHandler)
 
-![Upgradefensterdialog](https://user-images.githubusercontent.com/39840334/82096923-bd28bf80-96b6-11ea-93a9-ceafcb822242.png)
+![Dialogfeld "Upgradefenster"](https://user-images.githubusercontent.com/39840334/82096923-bd28bf80-96b6-11ea-93a9-ceafcb822242.png)
 
-Wenn während der Migration kein Symbol im Standardsymbolsatz gefunden wird, wird in MixedRealityToolkit.Generated/CustomIconSets ein benutzerdefinierter Symbolsatz erstellt. Ein Dialogfeld gibt an, dass dies stattgefunden hat.
+Wenn während der Migration kein Symbol im Standardsymbolsatz gefunden wird, wird in MixedRealityToolkit.Generated/CustomIconSets ein benutzerdefinierter Symbolsatz erstellt. Ein Dialogfeld gibt an, dass dies erfolgt ist.
 
-![Benutzerdefinierte Symbolbenachrichtigung](https://user-images.githubusercontent.com/9789716/82093856-c57dfc00-96b0-11ea-83ab-4df57446d661.PNG)
+![Benachrichtigung über benutzerdefinierte Symbole](https://user-images.githubusercontent.com/9789716/82093856-c57dfc00-96b0-11ea-83ab-4df57446d661.PNG)
 
 ## <a name="updating-220-to-230"></a>Aktualisieren von 2.2.0 auf 2.3.0
 
@@ -228,7 +228,7 @@ Der Setter der öffentlichen ControllerPoseSynchronizer.Handedness-Eigenschaft w
 
 **MSBuild für Unity**
 
-Diese Version von MRTK verwendet eine neuere Version von MSBuild für Unity als frühere Versionen. Wenn während des Ladens des Projekts die ältere Version im Unity-Paket-Manager-Manifest aufgeführt ist, wird das Konfigurationsdialogfeld mit aktivierter Option MSBuild für Unity aktivieren angezeigt. Durch anwenden wird ein Upgrade ausgeführt.
+Diese Version des MRTK verwendet eine neuere Version von MSBuild für Unity als frühere Versionen. Wenn die ältere Version während des Ladens des Projekts im Unity-Paket-Manager-Manifest aufgeführt ist, wird das Konfigurationsdialogfeld mit aktivierter Option Enable MSBuild for Unity (MSBuild für Unity aktivieren) angezeigt. Durch anwenden wird ein Upgrade ausgeführt.
 
 **ScriptingUtilities**
 
@@ -265,11 +265,11 @@ Die folgenden Prefabs verwenden jetzt die PressableButton-Komponente anstelle vo
 - UnityUIRadialButton
 - UnityUIToggleButton
 
-Aufgrund dieser Änderung muss der Anwendungscode möglicherweise aktualisiert werden.
+Aufgrund dieser Änderung ist möglicherweise eine Aktualisierung des Anwendungscodes erforderlich.
 
 **WindowsMixedRealityUtilities-Namespace**
 
-Der Namespace von WindowsMixedRealityUtilities wurde von Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input in Microsoft.MixedReality.Toolkit.WindowsMixedReality ([#6863 ) geändert.](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6989)
+Der Namespace von WindowsMixedRealityUtilities wurde von Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input in Microsoft.MixedReality.Toolkit.WindowsMixedReality ([#6863](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6989)) geändert.
 
 Aktualisieren Sie #using Anweisungen, um Kompilierungsfehler zu beheben.
 
@@ -298,7 +298,7 @@ Eine zweite Eigenschaft, ExcludedTypes, wurde ebenfalls hinzugefügt.
 
 **BaseNearInteractionTouchable**
 
-Wurde `BaseNearInteractionTouchable` geändert, um die `OnValidate` -Methode als virtuell zu markieren. Klassen, die erweitert `BaseNearInteractionTouchable` werden (z. B. `NearInteractionTouchableUnityUI` ), wurden aktualisiert, um diese Änderung widerzuspiegeln.
+Wurde `BaseNearInteractionTouchable` geändert, um die Methode `OnValidate` als virtuell zu markieren. Klassen, die `BaseNearInteractionTouchable` erweitern (z. B. `NearInteractionTouchableUnityUI` ), wurden aktualisiert, um diese Änderung widerzuent halten.
 
 **ColliderNearInteractionTouchable**
 
@@ -306,22 +306,22 @@ Die `ColliderNearInteractionTouchable`-Klasse ist veraltet. Aktualisieren Sie Co
 
 **IMixedRealityMouseDeviceManager**
 
-**_hinzugefügt_**
+**_Hinzugefügt_**
 
-`IMixedRealityMouseDeviceManager` wurde `CursorSpeed` den Eigenschaften und `WheelSpeed` hinzugefügt. Mit diesen Eigenschaften können Anwendungen einen Multiplikatorwert angeben, mit dem die Geschwindigkeit des Cursors bzw. des Rads skaliert wird.
+`IMixedRealityMouseDeviceManager` wurden die `CursorSpeed` Eigenschaften und `WheelSpeed` hinzugefügt. Mit diesen Eigenschaften können Anwendungen einen Multiplikatorwert angeben, mit dem die Geschwindigkeit des Cursors bzw. des Rads skaliert wird.
 
-Dies ist eine Breaking Change und erfordert, dass vorhandene Implementierungen des Mausgeräte-Managers geändert werden.
+Dies ist eine breaking change und erfordert, dass vorhandene Implementierungen des Mausgeräte-Managers geändert werden.
 
 >[!NOTE]
 >Diese Änderung ist nicht abwärtskompatibel mit Version 2.0.0.
 
-**_Veraltet_**
+**_Als veraltet markiert_**
 
-Die `MouseInputProfile` Eigenschaft wurde als veraltet markiert und wird aus einer zukünftigen Version des Microsoft Mixed Reality Toolkits entfernt. Es wird empfohlen, diese Eigenschaft im Anwendungscode nicht mehr zu verwenden.
+Die Eigenschaft wurde als veraltet markiert und wird aus einer zukünftigen Version des `MouseInputProfile` Microsoft Mixed Reality Toolkits entfernt. Es wird empfohlen, dass Anwendungscode diese Eigenschaft nicht mehr verwendet.
 
 **Interaktionsfähig**
 
-Die folgenden Methoden und Eigenschaften sind veraltet und werden aus einer zukünftigen Version des Microsoft Mixed Reality Toolkits entfernt. Es wird empfohlen, den Anwendungscode gemäß den Anweisungen zu aktualisieren, die im Obsolete-Attribut enthalten sind und in der Konsole angezeigt werden.
+Die folgenden Methoden und Eigenschaften sind veraltet und werden aus einer zukünftigen Version des Microsoft Mixed Reality Toolkits entfernt. Es wird empfohlen, den Anwendungscode nach den Anweisungen im Obsolete-Attribut zu aktualisieren, das in der Konsole angezeigt wird.
 
 - `public bool Enabled`
 - `public bool FocusEnabled`
@@ -380,26 +380,26 @@ Das Eingabesimulationssystem wurde aktualisiert, wodurch einige Einstellungen im
     - RightHandManipulationKey
 
 1. `MouseLookToggle` war zuvor in der `MouseLookButton` -Enum als `InputSimulationMouseButton.Focused` enthalten, jetzt ist es eine separate Option. Wenn diese Option aktiviert ist, wird die Kamera nach dem Loslassen der Schaltfläche weiter mit der Maus gedreht, bis die Escapetaste gedrückt wird.
-1. `HandDepthMultiplier` Der Standardwert wurde von 0,1 auf 0,03 gesenkt, um einige Änderungen an der Eingabesimulation zu berücksichtigen. Wenn die Kamera beim Scrollen zu schnell bewegt wird, versuchen Sie, diesen Wert zu verringern.
-1. Tasten zum Drehen von Händen wurden entfernt, die Handdrehung wird jetzt auch mit der Maus gesteuert. Wenn Sie `HandRotateButton` (STRG) zusammen mit der Bearbeitungstaste links/rechts (LShift/Space) halten, wird die Handrotation ermöglicht.
-1. Eine neue Achse "UpDown" wurde in die Eingabeachsenliste eingeführt. Dadurch wird die Kamerabewegung in der Vertikalen gesteuert, und standardmäßig werden Q/E-Schlüssel sowie die Controllertriggerschaltflächen verwendet.
+1. `HandDepthMultiplier` Der Standardwert wurde von 0,1 auf 0,03 gesenkt, um einige Änderungen an der Eingabesimulation zu berücksichtigten. Wenn die Kamera beim Scrollen zu schnell bewegt wird, versuchen Sie, diesen Wert zu senken.
+1. Schlüssel zum Drehen der Hände wurden entfernt. Die Handdrehung wird jetzt auch mit der Maus gesteuert. Wenn `HandRotateButton` Sie (STRG) zusammen mit der linken/rechten Manipulationstaste (LShift/Space) halten, wird die Handdrehung ermöglicht.
+1. In der Eingabeachsenliste wurde eine neue Achse "UpDown" eingeführt. Dies steuert die Kamerabewegung in der vertikalen Und verwendet standardmäßig Q/E-Tasten sowie die Controllertriggertasten.
 
 Weitere Informationen zu diesen Änderungen finden Sie im Artikel [zum Eingabesimulationsdienst.](../features/input-simulation/input-simulation-service.md)
 
 **Mausdatenanbieterprofil**
 
-Das Mausdatenanbieterprofil wurde aktualisiert, um die neuen Eigenschaften und verfügbar zu `CursorSpeed` `WheelSpeed` machen. Für vorhandene benutzerdefinierte Profile werden automatisch Standardwerte bereitgestellt. Wenn das Profil gespeichert wird, werden diese neuen Werte beibehalten.
+Das Profil des Mausdatenanbieters wurde aktualisiert, um die neuen Eigenschaften und `CursorSpeed` `WheelSpeed` verfügbar zu machen. Für vorhandene benutzerdefinierte Profile werden automatisch Standardwerte bereitgestellt. Wenn das Profil gespeichert wird, werden diese neuen Werte beibehalten.
 
 **Controllerzuordnungsprofil**
 
-Einige Achsen und Eingabetypen wurden in Version 2.1.0 aktualisiert, insbesondere rund um die OpenVR-Plattform. Achten Sie darauf, dass Sie beim Upgrade **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles (MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles)** auswählen. Dadurch werden alle benutzerdefinierten Controllerzuordnungsprofile mit den aktualisierten Achsen und Daten aktualisiert, während Ihre benutzerdefinierten Zugewiesenen Eingabeaktionen intakt bleiben.
+Einige Achsen und Eingabetypen wurden in Version 2.1.0 aktualisiert, insbesondere im Bereich der OpenVR-Plattform. Wählen Sie beim Upgrade **MixedRealityToolkit -> Utilities -> Update -> Controller Mapping Profiles** aus. Dadurch werden alle benutzerdefinierten Controllerzuordnungsprofile mit den aktualisierten Achsen und Daten aktualisiert, während Ihre benutzerdefinierten Eingabeaktionen intakt bleiben.
 
 ## <a name="updating-rc2-to-200"></a>Aktualisieren von RC2 auf 2.0.0
 
-Zwischen den Releases RC2 und 2.0.0 des Microsoft Mixed Reality Toolkits wurden Änderungen vorgenommen, die sich auf vorhandene Projekte auswirken können. In diesem Dokument werden diese Änderungen und das Aktualisieren von Projekten auf version 2.0.0 beschrieben.
+Zwischen rc2 und 2.0.0 des Microsoft Mixed Reality Toolkits wurden Änderungen vorgenommen, die sich auf vorhandene Projekte auswirken können. In diesem Dokument werden diese Änderungen und das Aktualisieren von Projekten auf das Release 2.0.0 beschrieben.
 
 - [API-Änderungen](#api-changes-in-200)
-- [Änderungen des Assemblynamens](#assembly-name-changes-in-200)
+- [Änderungen am Assemblynamen](#assembly-name-changes-in-200)
 
 ### <a name="api-changes-in-200"></a>API-Änderungen in 2.0.0
 
@@ -441,7 +441,7 @@ GameObject playAreaVisualization = MixedRealityToolkit.BoundarySystem?.GetPlayAr
 GameObject playAreaVisualization = CoreServices.BoundarySystem?.GetPlayAreaVisualization();
 ```
 
-Die Verwendung der neuen CoreSystem-Klasse stellt sicher, dass Ihr Anwendungscode nicht aktualisiert werden muss, wenn Sie die Anwendung so ändern, dass sie eine andere Dienstregistrierungsstelle verwendet (z.B. einer der experimentellen Dienst-Manager).
+Die Verwendung der neuen CoreSystem-Klasse stellt sicher, dass Ihr Anwendungscode nicht aktualisiert werden muss, wenn Sie die Anwendung so ändern, dass sie eine andere Dienstregistrierungsstelle verwendet (z. B. einer der experimentellen Dienst-Manager).
 
 **IMixedRealityRaycastProvider**
 
@@ -457,25 +457,25 @@ Um diese Probleme zu beheben, fügen Sie Ihrem Eingabesystemprofil eine IMixedRe
 
 - Die `IMixedRealityEventSystem` alten `Register` API-Methoden und wurden als veraltet `Unregister` markiert. Sie werden aus Gründen der Abwärtskompatibilität beibehalten.
 - `InputSystemGlobalListener` wurde als veraltet markiert. Seine Funktionalität hat sich nicht geändert.
-- `BaseInputHandler` Die Basisklasse wurde von `InputSystemGlobalListener` in `InputSystemGlobalHandlerListener` geändert. Dies ist eine Breaking Change für alle Nachfolger von `BaseInputHandler` .
+- `BaseInputHandler` Die Basisklasse wurde von in `InputSystemGlobalListener` `InputSystemGlobalHandlerListener` geändert. Dies ist eine breaking change für alle Nachfolger von `BaseInputHandler` .
 
 **_Motivation hinter der Änderung_**
 
-Die alte Ereignissystem-API `Register` und kann möglicherweise mehrere Probleme in der Laufzeit `Unregister` verursachen, hauptsächlich:
+Die alte Ereignissystem-API und kann möglicherweise mehrere Probleme in der `Register` `Unregister` Laufzeit verursachen, hauptsächlich:
 
-- Wenn sich eine Komponente für globale Ereignisse registriert, empfängt sie globale Eingabeereignisse *aller* Typen.
-- Wenn sich eine der Komponenten eines Objekts für globale Eingabeereignisse registriert, empfangen alle Komponenten dieses Objekts globale Eingabeereignisse *aller* Typen.
-- Wenn sich zwei Komponenten im selben Objekt bei globalen Ereignissen registrieren und dann eine zur Laufzeit deaktiviert ist, empfängt die zweite keine globalen Ereignisse mehr.
+- Wenn eine Komponente für globale Ereignisse registriert wird, würde sie globale Eingabeereignisse aller *Typen* empfangen.
+- Wenn eine der Komponenten eines Objekts für globale Eingabeereignisse registriert wird, empfangen alle Komponenten in diesem Objekt globale Eingabeereignisse *aller* Typen.
+- Wenn sich zwei Komponenten im gleichen Objekt für globale Ereignisse registrieren und dann eine komponente zur Laufzeit deaktiviert wird, empfängt die zweite keine globalen Ereignisse mehr.
 
 Neue API `RegisterHandler` und `UnregisterHandler` :
 
-- Stellt eine explizite und präzise Steuerung bereit, auf welche Eingabeereignisse global gelescht werden soll und welche fokussiert sein sollten.
-- Ermöglicht es mehreren Komponenten desselben Objekts, unabhängig voneinander auf globale Ereignisse zu lauschen.
+- Bietet eine explizite und präzise Kontrolle darüber, auf welche Eingabeereignisse global und welche fokussiert sein sollen.
+- Ermöglicht mehreren Komponenten im gleichen Objekt, unabhängig voneinander auf globale Ereignisse zu lauschen.
 
 **_Migrieren_**
 
-- Wenn Sie die API bereits direkt zuvor aufgerufen `Register` / `Unregister` haben, ersetzen Sie diese Aufrufe durch Aufrufe von `RegisterHandler` / `UnregisterHandler` . Verwenden Sie Handlerschnittstellen, die Sie als generische Parameter implementieren. Wenn Sie mehrere Schnittstellen implementieren und mehrere von ihnen auf globale Eingabeereignisse lauschen, rufen Sie `RegisterHandler` mehrmals auf.
-- Wenn Sie von geerbt `InputSystemGlobalListener` haben, ändern Sie die Vererbung in `InputSystemGlobalHandlerListener` . Implementieren `RegisterHandlers` und `UnregisterHandlers` abstrahieren Sie Methoden. Rufen Sie im Implementierungsaufruf `inputSystem.RegisterHandler` ( `inputSystem.UnregisterHandler` ) auf, um sich für alle Handlerschnittstellen zu registrieren, auf die Sie globale Ereignisse lauschen möchten.
+- Wenn Sie die API bereits direkt `Register` / `Unregister` zuvor aufrufen, ersetzen Sie diese Aufrufe durch Aufrufe von `RegisterHandler` / `UnregisterHandler` . Verwenden Sie Handlerschnittstellen, die Sie als generische Parameter implementieren. Wenn Sie mehrere Schnittstellen implementieren und mehrere von ihnen auf globale Eingabeereignisse lauschen, rufen `RegisterHandler` Sie mehrmals auf.
+- Wenn Sie von geerbt `InputSystemGlobalListener` haben, ändern Sie die Vererbung in `InputSystemGlobalHandlerListener` . Implementieren `RegisterHandlers` und `UnregisterHandlers` abstrahieren Sie Methoden. Im Implementierungsaufruf `inputSystem.RegisterHandler` ( ), um sich für alle `inputSystem.UnregisterHandler` Handlerschnittstellen zu registrieren, auf die Sie globale Ereignisse lauschen möchten.
 - Wenn Sie von geerbt `BaseInputHandler` haben, implementieren Sie die abstrakten Methoden und `RegisterHandlers` `UnregisterHandlers` (wie für `InputSystemGlobalListener` ).
 
 **_Beispiele für die Migration_**
@@ -580,8 +580,8 @@ Einige Solverkomponenten und die SolverHandler-Manager-Klasse wurden geändert, 
 **_SolverHandler_**
 
 - Die Klasse erweitert nicht mehr von `ControllerFinder`
-- `TrackedObjectToReference` öffentliche Eigenschaft veraltet und in umbenannt `TrackedTargetType`
-- `TrackedObjectType` veraltete rechte & Controllerwerte. Verwenden Sie stattdessen `MotionController` - oder `HandJoint` -Werte, und aktualisieren Sie die neue `TrackedHandedness` Eigenschaft, um die Nachverfolgung auf den linken oder rechten Controller zu beschränken.
+- `TrackedObjectToReference` öffentliche Eigenschaft veraltet und wurde in umbenannt. `TrackedTargetType`
+- `TrackedObjectType` veraltete werte & rechten Controller. Verwenden Sie stattdessen `MotionController` - oder `HandJoint` -Werte, und aktualisieren Sie die neue `TrackedHandedness` Eigenschaft, um die Nachverfolgung auf den linken oder rechten Controller zu beschränken.
 
 **_Dazwischen_**
 
@@ -593,41 +593,41 @@ Einige Solverkomponenten und die SolverHandler-Manager-Klasse wurden geändert, 
 - `MaxDistance` öffentliche Eigenschaft veraltet und wurde in umbenannt. `MaxRaycastDistance`
 - `CloseDistance` öffentliche Eigenschaft veraltet und wurde in umbenannt. `ClosestDistance`
 - Der Standardwert für `RaycastDirectionMode` ist `TrackedTargetForward` jetzt, welche Raycasts in Richtung der nachverfolgten Zieltransformation vorwärts gehen.
-- `OrientationMode`Enumerationswerte und `Vertical` `Full` wurden in `TrackedTarget` bzw. umbenannt. `SurfaceNormal`
-- `KeepOrientationVertical` Die public-Eigenschaft wurde hinzugefügt, um zu steuern, ob die Ausrichtung des zugeordneten GameObject vertikal bleibt.
+- `OrientationMode` -Enum-Werte `Vertical` und `Full` wurden in `TrackedTarget` `SurfaceNormal` bzw. umbenannt.
+- `KeepOrientationVertical` Die öffentliche Eigenschaft wurde hinzugefügt, um zu steuern, ob die Ausrichtung des zugeordneten GameObject vertikal bleibt.
 
 **Schaltflächen**
 
-- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) hat die -Eigenschaft jetzt `DistanceSpaceMode` auf den Standardwert `Local` festgelegt. Dadurch können Schaltflächen skaliert werden, während sie weiterhin gedrückt werden können.
+- [`PressableButton`](xref:Microsoft.MixedReality.Toolkit.UI.PressableButton) die `DistanceSpaceMode` -Eigenschaft ist jetzt als `Local` Standard festgelegt. Dadurch können Schaltflächen skaliert werden, während sie weiterhin gedrückt werden können.
 
 **Clipping Sphere**
 
 Die ClippingSphere-Schnittstelle wurde geändert, um die APIs in ClippingBox und ClippingPlane zu spiegeln.
 
-Die Radius-Eigenschaft von ClippingSphere wird jetzt implizit basierend auf der Transformationsskala berechnet. Zuvor mussten Entwickler den Radius der ClippingSphere im Inspektor angeben. Wenn Sie den Radius ändern möchten, aktualisieren Sie einfach die Transformationsskala der Transformation wie gewohnt.
+Die Radius-Eigenschaft von ClippingSphere wird jetzt implizit basierend auf der Transformationsskala berechnet. Bevor Entwickler den Radius von ClippingSphere im Inspektor angeben müssen. Wenn Sie den Radius ändern möchten, aktualisieren Sie einfach die Transformationsskala der Transformation wie gewohnt.
 
-**NearInteractionTouchable und Der PointePointer**
+**NearInteractionTouchable und PokePointer**
 
-- NearInteractionTouchable verarbeitet die Canvas der Unity-Benutzeroberfläche nicht mehr. Die NearInteractionTouchableUnityUI-Klasse muss jetzt für Benutzeroberfläche-Touchables von Unity verwendet werden.
-- ColliderNearInteractionTouchable ist die neue Basisklasse für Touchables, die auf Collidern basieren, d.h. alle touchierbaren Mit Ausnahme von NearInteractionTouchableUnityUI.
-- "BaseNearInteractionTouchable.DistFront" wurde verschoben und in "Hexadepointer.TouchableDistance" umbenannt. Dies ist die Entfernung, über die der Hexadepointer mit touchables interagieren kann. Bisher hatte jedes touchierbare eine eigene maximale Interaktionsdistanz, aber jetzt ist dies in Der Zustreichpunkter definiert, der eine bessere Optimierung ermöglicht.
-- "BaseNearInteractionTouchable.DistBack" wurde in "HexadeThreshold" umbenannt. Dadurch wird deutlich, dass Es sich bei "Hexadethreshold" um das Pendant zu "DebounceThreshold" handelt. Ein touchierbarer wird aktiviert, wenn der "MsieThreshold" überschritten wird, und wird freigegeben, wenn DebutnceThreshold überschritten wird.
+- NearInteractionTouchable verarbeitet unity ui canvas touching nicht mehr. Die NearInteractionTouchableUnityUI-Klasse muss jetzt für Benutzeroberflächenelemente von Unity verwendet werden.
+- ColliderNearInteractionTouchable ist die neue Basisklasse für Touchables, die auf Collidern basiert, d. h. jede berührbare Klasse mit Ausnahme von NearInteractionTouchableUnityUI.
+- BaseNearInteractionTouchable.DistFront wurde verschoben und in PokePointer.TouchableDistance umbenannt. Dies ist die Entfernung, und der PokePointer kann mit touchables interagieren. Zuvor hatte jedes berührbare -System einen eigenen maximalen Interaktionsabstand, aber jetzt ist dies im PokePointer definiert, was eine bessere Optimierung ermöglicht.
+- BaseNearInteractionTouchable.DistBack wurde in PokeThreshold umbenannt. Dadurch wird deutlich, dass PokeThreshold das Gegenstück zu DebounceThreshold ist. Ein berührbares wird aktiviert, wenn der PokeThreshold überschritten wird, und wird freigegeben, wenn DebounceThreshold überschritten wird.
 
 **ReadOnlyAttribute**
 
-Der `Microsoft.MixedReality.Toolkit` Namespace wurde zu , und `ReadOnlyAttribute` `BeginReadOnlyGroupAttribute` `EndReadOnlyGroupAttribute` hinzugefügt.
+Der `Microsoft.MixedReality.Toolkit` -Namespace wurde , `ReadOnlyAttribute` und `BeginReadOnlyGroupAttribute` `EndReadOnlyGroupAttribute` hinzugefügt.
 
 **PointerClickHandler**
 
-Die `PointerClickHandler`-Klasse ist veraltet. `PointerHandler`Stattdessen sollte verwendet werden, es bietet die gleiche Funktionalität.
+Die `PointerClickHandler`-Klasse ist veraltet. Stattdessen `PointerHandler` sollte verwendet werden, es bietet die gleiche Funktionalität.
 
-**HoloLens-Clickerunterstützung**
+**HoloLens-Clicker-Unterstützung**
 
-Die Controllerzuordnungen des HoloLens-Clickers haben sich von einer nicht behandelten zu einer [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) nicht behandelten [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand) geändert. Um dies zu berücksichtigen, wird ein automatischer Updater ausgeführt, wenn Sie Ihr ControllerMapping-Profil zum ersten Mal öffnen. Öffnen Sie nach dem Upgrade auf 2.0.0 mindestens einmal benutzerdefinierte Profile, um diesen einmaligen Migrationsschritt auszulösen.
+Die HoloLens-Zuordnungen des Clickers haben sich von einer nicht behandelten zu einer nicht [`WindowsMixedRealityController`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityController) behandelten [`WindowsMixedRealityGGVHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityGGVHand) geändert. Um dies zu berücksichtigen, wird ein automatisches Updater ausgeführt, wenn Sie Ihr ControllerMapping-Profil zum ersten Mal öffnen. Öffnen Sie nach dem Upgrade auf 2.0.0 mindestens einmal benutzerdefinierte Profile, um diesen einmaligen Migrationsschritt auszulösen.
 
 **InteractableHighlight**
 
-Die `InteractableHighlight`-Klasse ist veraltet. Stattdessen `InteractableOnFocus` sollten die Klasse und das Asset verwendet `FocusInteractableStates` werden. Um ein neues Asset für zu erstellen, klicken Sie mit der rechten Maustaste in das Projektfenster, und wählen `Theme` `InteractableOnFocus` Sie *Create* Mixed Reality  >  Toolkit Interactable Theme (Interagierbares Design Mixed Reality *Toolkit*  >    >  *erstellen) aus.*
+Die `InteractableHighlight`-Klasse ist veraltet. Stattdessen `InteractableOnFocus` sollten die Klasse und das Asset verwendet `FocusInteractableStates` werden. Um ein neues Asset für zu erstellen, klicken Sie mit der rechten Maustaste in das Projektfenster, und wählen `Theme` `InteractableOnFocus` Sie *Create* Mixed Reality Toolkit Interactable Theme (Interagierbares Design des  >    >  *Toolkits*  >  *erstellen) aus.*
 
 **HandInteractionPanZoom**
 
@@ -651,7 +651,7 @@ In den folgenden Tabellen wird beschrieben, wie die RC2-ASMDEF-Dateinamen dem Re
 | --- | --- |
 | MixedRealityToolkit.asmdef | Microsoft.MixedReality.Toolkit.asmdef |
 | MixedRealityToolkit.Core.BuildAndDeploy.asmdef | Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.asmdef |
-| MixedRealityToolkit.Core.Definitions.Utilities.Editor.asmdef | Entfernen, Verwenden von Microsoft.MixedReality.Toolkit.Editor.Utilities.asmdef |
+| MixedRealityToolkit.Core.Definitions.Utilities.Editor.asmdef | Entfernt, Microsoft.MixedReality.Toolkit.Editor.Utilities.asmdef verwenden |
 | MixedRealityToolkit.Core.Extensions.EditorClassExtensions.asmdef | Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.asmdef
 | MixedRealityToolkit.Core.Inspectors.asmdef | Microsoft.MixedReality.Toolkit.Editor.Inspectors.asmdef |
 | MixedRealityToolkit.Core.Inspectors.ServiceInspectors.asmdef | Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors.asmdef |

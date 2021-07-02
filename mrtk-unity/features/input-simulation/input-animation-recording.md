@@ -1,45 +1,45 @@
 ---
-title: Eingabeanimationsaufzeichnung
-description: Dokumentation zum Eingabeanimation-Aufzeichnungssystem in MRTK
+title: Aufzeichnung der Eingabeanimation
+description: Dokumentation zum Eingabeanimationsaufzeichnungssystem in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 81e49178a9f218e5d3be796ec6253ccabe5d44fc
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6bdb764c5905352b9aec7c1512a73e727b60573a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143913"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176944"
 ---
 # <a name="input-animation-recording"></a>Aufzeichnung der Eingabeanimation
 
-MRTK verfügt über ein Aufzeichnungssystem, mit dem Kopfbewegungs- und Handverfolgungsdaten in Animationsdateien gespeichert werden können. Die aufgezeichneten Daten können dann mithilfe des [Eingabesimulationssystems abgespielt werden.](input-simulation-service.md)
+MRTK verfügt über ein Aufzeichnungssystem, mit dem Kopfbewegungen und Daten zur Handnachverfolgung in Animationsdateien gespeichert werden können. Die aufgezeichneten Daten können dann mithilfe des [Eingabesimulationssystems](input-simulation-service.md)wiedergegeben werden.
 
-Das Aufzeichnen von Eingaben ist ein nützliches Tool in einer Vielzahl von Situationen:
+Die Aufzeichnung von Eingaben ist ein nützliches Tool in einer Vielzahl von Situationen:
 
-* Erstellen automatisierter Tests für Interaktion, Manipulationen, Solver usw. Das Erstellen der Bewegung von Controllern und Händen für diese Tests kann zeitaufwändig sein. Das direkte Aufzeichnen von Eingaben kann den Prozess beschleunigen und reale Daten bereitstellen.
-* Hier lernen Sie die Verwendung von UX-Elementen durch Animationen bei.
-  Wenn Sie Benutzern zeigen, wie sie mit Schaltflächen und anderen Objekten interagieren, kann die Lernkurve geglättet werden.
-* Debuggen von unerwartetem Verhalten, das bei regelmäßiger Verwendung auftreten kann.
+* Erstellen automatisierter Tests für Interaktion, Manipulationen, Solver usw. Das Erstellen der Bewegung von Controllern und Händen für diese Tests kann zeitaufwändig sein. Die direkte Aufzeichnung von Eingaben kann den Prozess beschleunigen und reale Daten bereitstellen.
+* Vermitteln der Verwendung von UX-Elementen durch Animationen.
+  Benutzer zu zeigen, wie sie mit Schaltflächen und anderen Objekten interagieren, kann die Lernkurve glätten.
+* Debuggen unerwartetes Verhalten, das während der regulären Verwendung auftreten kann.
   Das Aufzeichnungssystem unterstützt ein Konzept des "rollierenden Puffers", das die Aufzeichnung aktueller Eingaben im Hintergrund ermöglicht.
-  Weitere Informationen finden [Sie unter Input Recording Service](#input-recording-service).
+  Weitere Informationen finden Sie unter [Eingabeaufzeichnungsdienst](#input-recording-service).
 
 ## <a name="recording-and-playback-services"></a>Aufzeichnungs- und Wiedergabedienste
 
-Es werden zwei Eingabesystemdienste bereitgestellt, um Eingaben aufzeichnen bzw. wieder geben zu können.
+Zwei Eingabesystemdienste werden bereitgestellt, um Eingaben aufzuzeichnen bzw. wiederzugeben.
 
 ### <a name="input-recording-service"></a>Eingabeaufzeichnungsdienst
 
-[`InputRecordingService`](xref:Microsoft.MixedReality.Toolkit.Input.InputRecordingService) nimmt Daten aus der Hauptkameratransformation und aktiven Handcontrollern und speichert sie in einem internen Puffer. Bei Der Angeforderten werden diese Daten dann zur Speicherung und späteren Wiedergabe in Binärdateien serialisiert.
+[`InputRecordingService`](xref:Microsoft.MixedReality.Toolkit.Input.InputRecordingService) erfasst Daten von der Hauptkameratransformation und den aktiven Handcontrollern und speichert sie in einem internen Puffer. Wenn diese Daten angefordert werden, werden sie zur Speicherung und späteren Wiedergabe in Binärdateien serialisiert.
 
 <a target="_blank" href="../images/input-simulation/MRTK_InputAnimation_RecordingDiagram.png">
   <img src="../images/input-simulation/MRTK_InputAnimation_RecordingDiagram.png" title="Aufzeichnen der Eingabeanimation" width="80%" alt="Recording diagram" class="center" />
 </a>
 
-Um mit der Aufzeichnung der Eingabe zu beginnen, rufen Sie die [`StartRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StartRecording) -Funktion auf. [`StopRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StopRecording) hält die Aufzeichnung an (verwirft jedoch die bisher aufgezeichneten Daten nicht, verwenden Sie , [`DiscardRecordedInput`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.DiscardRecordedInput) um dies bei Bedarf zu tun).
+Rufen Sie die Funktion auf, um mit der Aufzeichnung der Eingabe zu [`StartRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StartRecording) beginnen. [`StopRecording`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.StopRecording) hält die Aufzeichnung an (aber verwirft die bisher aufgezeichneten Daten nicht. Verwenden Sie [`DiscardRecordedInput`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.DiscardRecordedInput) dazu bei Bedarf ).
 
-Standardmäßig ist die Größe des Aufzeichnungspuffers auf 30 Sekunden beschränkt. Dadurch kann der Aufzeichnungsdienst die Aufzeichnung im Hintergrund beibehalten, ohne zu viele Daten zu sammeln, und die letzten 30 Sekunden bei Bedarf speichern. Das Zeitintervall kann mithilfe der -Eigenschaft geändert werden, oder die [`RecordingBufferTimeLimit`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.RecordingBufferTimeLimit) Aufzeichnung kann mithilfe der Option unbegrenzt [`UseBufferTimeLimit`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.UseBufferTimeLimit) sein.
+Standardmäßig ist die Größe des Aufzeichnungspuffers auf 30 Sekunden beschränkt. Dadurch kann der Aufzeichnungsdienst die Aufzeichnung im Hintergrund beibehalten, ohne zu viele Daten zu sammeln, und die letzten 30 Sekunden bei Bedarf speichern. Das Zeitintervall kann mithilfe der -Eigenschaft geändert werden, oder die [`RecordingBufferTimeLimit`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.RecordingBufferTimeLimit) Aufzeichnung kann mithilfe der -Option unbegrenzt [`UseBufferTimeLimit`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.UseBufferTimeLimit) sein.
 
 Die Daten im Aufzeichnungspuffer können mithilfe der [SaveInputAnimation-Funktion](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputRecordingService.SaveInputAnimation*) in einer Binärdatei gespeichert werden.
 

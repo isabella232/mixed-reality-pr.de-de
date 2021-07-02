@@ -1,126 +1,126 @@
 ---
-title: 'MRTK 2.5: Anmerkungen zu dieser Version'
+title: Versionshinweise zu MRTK 2.5
 description: Versionshinweise für MRTK Version 2.5
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 536a37b56b4c7de9875ce1e1642922bd363fecb1
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562490"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177513"
 ---
-# <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Versionshinweise Mixed Reality Microsoft Mixed Reality Toolkit 2.5
+# <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Versionshinweise zu Microsoft Mixed Reality Toolkit 2.5
 
 > [!IMPORTANT]
-> Es gibt ein bekanntes Compilerproblem, das anwendungen betrifft, die für Microsoft HoloLens 2 mit ARM64 erstellt wurden. Dieses Problem wird behoben, indem Visual Studio 2019 auf Version 16.8 oder höher aktualisiert wird. Wenn sie nicht aktualisiert werden Visual Studio, importieren Sie das `com.microsoft.mixedreality.toolkit.tools` Paket, um eine Problemumgehung anzuwenden.
+> Es gibt ein bekanntes Compilerproblem, das sich auf Anwendungen auswirkt, die mit ARM64 für Microsoft HoloLens 2 erstellt wurden. Dieses Problem wird behoben, indem Visual Studio 2019 auf Version 16.8 oder höher aktualisiert wird. Wenn Sie Visual Studio nicht aktualisieren können, importieren Sie das `com.microsoft.mixedreality.toolkit.tools` Paket, um eine Problemumgehung anzuwenden.
 
-## <a name="whats-new-in-254"></a>Neues in 2.5.4
+## <a name="whats-new-in-254"></a>Neuerungen in 2.5.4
 
 ### <a name="fixes-a-bug-with-oculus-integration-when-using-upm"></a>Behebt einen Fehler bei der Oculus-Integration bei Verwendung von UPM
 
-Bei Verwendung von UPM würden die [Prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9160)von OculusXRSDKDeviceManagerProfile beim Start immer auf Keine festgelegt. Dieses Release konfiguriert die Geräte-Manager, um beim Start auf einen funktionierenden Satz von Prefabs zu verweisen.
+Wenn Sie UPM verwenden, sind die [Prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9160)für OculusXRSDKDeviceManagerProfile beim Start immer auf None festgelegt. In diesem Release wird die Geräte-Manager so konfiguriert, dass sie beim Start auf einen Funktionierenden Satz von Prefabs verweist.
 
 ### <a name="fixes-an-issue-with-openxr-via-upm"></a>Behebt ein Problem mit OpenXR über UPM
 
-Behebt ein Problem, bei dem die OpenXR-Anbieter standardmäßig nicht zum link.xml hinzugefügt wurden, sodass neue Projekte nicht auf dem Gerät ausgeführt werden können, wenn OpenXR und MRTK über die Unity-Paket-Manager. Für vorhandene Projekte, für die ein Upgrade durchgeführt wird, muss dies weiterhin manuell hinzugefügt werden.
+Behebt ein Problem, bei dem die OpenXR-Anbieter standardmäßig nicht zum link.xml hinzugefügt wurden, wodurch neue Projekte nicht auf dem Gerät ausgeführt werden konnten, wenn OpenXR und MRTK über die Paket-Manager von Unity verwendet wurden. Vorhandene Projekte, für die ein Upgrade durchgeführt wird, müssen diese weiterhin manuell hinzugefügt werden.
 
-## <a name="whats-new-in-253"></a>Neues in 2.5.3
+## <a name="whats-new-in-253"></a>Neuerungen in 2.5.3
 
-### <a name="fixes-a-regression-with-oculus-introduced-in-252"></a>Korrektur einer Regression mit Oculus, die in 2.5.2 eingeführt wurde
+### <a name="fixes-a-regression-with-oculus-introduced-in-252"></a>Korrigiert eine Regression mit Oculus, die in Version 2.5.2 eingeführt wurde
 
-2.5.2 führte zu einem Buildproblem bei der [Integration des Oculus SDK](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9083). Dieses Problem wird in diesem Release wie zurückgewendet.
+In 2.5.2 wurde [ein Buildproblem bei der Integration des Oculus SDK](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9083)eingeführt. In dieser Version wird dieses Problem behoben.
 
-## <a name="whats-new-in-252"></a>Neues in 2.5.2
+## <a name="whats-new-in-252"></a>Neuerungen in 2.5.2
 
-### <a name="add-support-for-openxr"></a>Unterstützung für OpenXR hinzugefügt
+### <a name="add-support-for-openxr"></a>Hinzufügen von Unterstützung für OpenXR
 
-Die erste Unterstützung für das OpenXR-Vorschaupaket von Unity und das OpenXR Mixed Reality Paket von Microsoft wurde hinzugefügt. Weitere Informationen finden Sie auf der Seite [MRTK/XRSDK getting started (Erste Schritte mit MRTK/XRSDK),](../configuration/getting-started-with-mrtk-and-xrsdk.md)im [Unity-Forumbeitrag](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)oder in der [Microsoft-Dokumentation.](/windows/mixed-reality/develop/unity/openxr-getting-started)
+Anfängliche Unterstützung für das OpenXR-Vorschaupaket von Unity und das Mixed Reality OpenXR-Paket von Microsoft wurde hinzugefügt. Weitere Informationen finden Sie [auf der MRTK-/XRSDK-Seite](../configuration/getting-started-with-mrtk-and-xrsdk.md)mit den ersten Schritte, im [Unity-Forumbeitrag](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)oder [in der Microsoft-Dokumentation.](/windows/mixed-reality/develop/unity/openxr-getting-started)
 
 > [!IMPORTANT]
 > OpenXR in Unity wird nur unter Unity 2020.3 und höher unterstützt.
 > Außerdem werden nur x64-, ARM- und ARM64-Builds unterstützt.
 
-### <a name="boundary-visualization-errors-fixed"></a>Behobene Fehler bei der Begrenzungsvisualisierung
+### <a name="boundary-visualization-errors-fixed"></a>Fehler bei der Begrenzungsvisualisierung behoben
 
-Begrenzungsvisualisierungen, z. B. der Boden oder die Wand, werden jetzt ordnungsgemäß konfiguriert und zur Laufzeit entsprechend dem Begrenzungsprofil angezeigt.
+Begrenzungsvisualisierungen, z. B. der Boden oder die Wände, werden nun ordnungsgemäß konfiguriert und zur Laufzeit entsprechend dem Begrenzungsprofil sichtbar.
 
-### <a name="msbuild-for-unity-support"></a>Unterstützung von MSBuild für Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild für Unity-Unterstützung
 
-Die Unterstützung für MSBuild für Unity wurde ab Version 2.5.2 entfernt, um sie an die neuen Paketanleitungen von [Unity auszurichten.](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)
+Die Unterstützung für MSBuild für Unity wurde ab Version 2.5.2 entfernt, um den [neuen Paketleitfaden von Unity](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)anzupassen.
 
-## <a name="whats-new-in-251"></a>Neues in 2.5.1
+## <a name="whats-new-in-251"></a>Neuerungen in 2.5.1
 
 ### <a name="package-dependency-errors-fixed"></a>Behobene Paketabhängigkeitsfehler
 
-Dieses Release behebt falsche Abhängigkeiten zwischen Paketdateien (z. B.: Dateien in Standardressourcen verweisen nicht mehr falsch auf Dateien in Foundation). Version 2.5.1 fügt auch eine explizite Abhängigkeit von Text Mesh Pro hinzu.
+Dieses Release behebt falsche Abhängigkeiten zwischen Paketdateien (z. B. Dateien in Standardressourcen verweisen nicht mehr fälschlicherweise auf Dateien in Foundation). Version 2.5.1 fügt auch eine explizite Abhängigkeit von Text Mesh Pro hinzu.
 
-### <a name="standard-assets-package-shaders-copied-to-assetsmrtkshaders"></a>In Assets/MRTK/Shaders kopierte Standard Assets-Paket-Shader
+### <a name="standard-assets-package-shaders-copied-to-assetsmrtkshaders"></a>Standard Assets package shaders copied to Assets/MRTK/Shaders
 
-Wenn das Standardressourcenpaket über UPM installiert wird, werden die Shader in den Ordner Assets/MRTK/Shaders kopiert, damit sie nicht mehr unveränderlich sind. Dadurch wird das Problem behoben, dass Shader, die für die universelle Renderpipeline (UNIVERSAL Render Pipeline, URP) aktualisiert wurden, das Legacyverhalten beim nächsten Laden des Projekts rückgängig machen.
+Wenn das Standardressourcenpaket über UPM installiert wird, werden die Shader in den Ordner Assets/MRTK/Shaders kopiert, damit sie nicht mehr unveränderlich sind. Dadurch wird das Problem behoben, dass Shader für die Universelle Renderpipeline (UNIVERSAL Render Pipeline, URP) aktualisiert wurden und das Legacyverhalten beim nächsten Laden des Projekts zurückgesetzt wird.
 
-### <a name="fixed-teleport-cursor-sticking-to-hands"></a>Fest, dass der Teleportcursor an den Händen bleibt
+### <a name="fixed-teleport-cursor-sticking-to-hands"></a>Fixieren des Teleportcursors an den Händen
 
-Dieses Release behebt ein [Problem,](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8755) bei dem der Zielcursor des Teleports an Handvisu visuals bleiben kann.
+Dieses Release behebt ein [Problem,](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8755) bei dem der Zielcursor des Teleports an Handvisuals halten kann.
 
-## <a name="whats-new-in-250"></a>Neues in 2.5.0
+## <a name="whats-new-in-250"></a>Neuerungen in 2.5.0
 
-### <a name="unity-package-manager-upm-support"></a>Unity-Paket-Manager (UPM)
+### <a name="unity-package-manager-upm-support"></a>Unterstützung von Unity Paket-Manager (UPM)
 
-Das Mixed Reality Toolkit kann jetzt mithilfe des Unity-Tools Paket-Manager.
+Das Mixed Reality Toolkit kann jetzt mithilfe der Unity-Paket-Manager verwaltet werden.
 
 ![MRTK Foundation UPM-Paket](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> Es sind einige manuelle Schritte erforderlich, um die MRTK-UPM-Pakete zu importieren. Weitere Informationen [finden Mixed Reality Toolkit und Unity Paket-Manager](../configuration/usingupm.md) Unity-Tools.
+> Es sind einige manuelle Schritte erforderlich, um die MRTK-UPM-Pakete zu importieren. Weitere Informationen finden Sie unter [Mixed Reality Toolkit und Unity Paket-Manager.](../configuration/usingupm.md)
 
 ### <a name="oculus-quest-xr-sdk-support"></a>Oculus Quest XR SDK-Unterstützung
 
-MRTK unterstützt jetzt die Ausführung von Oculus Quest-Headsets und -Controllern mithilfe der nativen XR SDK-Pipeline. Handtracking wird dank [eric Provenchers](https://twitter.com/prvncher) Arbeit an MRTK-Quest auch mit dem [Oculus Integration Unity-Paket](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) unterstützt.
+MRTK unterstützt jetzt die Ausführung von Oculus Quest Headsets und Controllern mithilfe der nativen XR SDK-Pipeline. Handtracking wird dank [eric Provenchers](https://twitter.com/prvncher) Arbeit an MRTK-Quest auch mit dem [Oculus Integration Unity-Paket](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) unterstützt.
 
-Anweisungen zum Bereitstellen Ihres Geräts auf der Oculus Quest mithilfe der neuen Pipeline finden Sie im [Oculus Quest Setup Guide (Oculus Quest-Setuphandbuch).](../supported-devices/oculus-quest-mrtk.md)
+Anweisungen zum Bereitstellen Ihres Geräts auf der Oculus Quest mithilfe der neuen Pipeline finden Sie im [Oculus Quest-Setuphandbuch.](../supported-devices/oculus-quest-mrtk.md)
 
 ### <a name="scrolling-object-collection"></a>Scrolling-Objektsammlung
 
-Die MRTK-UX-Komponente wurde von einem experimentellen Feature aktualisiert und bietet mehr Freiheit beim Layout von 3D-Inhalten unterschiedlicher Größe mit zusätzlicher Unterstützung für Objekte, an die keine Collider angefügt sind. Eine neue Option zum Deaktivieren der Inhaltsmaskierung wurde ebenfalls hinzugefügt, wodurch die Prototyperstellung vereinfacht wird.
+Die MRTK-UX-Komponente wurde von einem experimentellen Feature aktualisiert und bietet mehr Freiraum für das Layout von 3D-Inhalten verschiedener Größen mit zusätzlicher Unterstützung für Objekte, an die keine Collider angefügt sind. Eine neue Option zum Deaktivieren der Inhaltsmaskierung wurde ebenfalls hinzugefügt, um die Prototyperstellung zu vereinfachen.
 
-Weitere [Informationen finden Sie unter Scrollen der](../features/ux-building-blocks/scrolling-object-collection.md) Objektsammlung.
+Weitere Informationen finden Sie unter [Scrollen der Objektauflistung.](../features/ux-building-blocks/scrolling-object-collection.md)
 
 ![Scrolling-Objektsammlung](https://user-images.githubusercontent.com/16922045/94465118-51537900-01b7-11eb-8f8b-bf864a8fee03.gif)
 
-### <a name="teleport-pointer-animation-handling-and-sound-improvements"></a>Verbesserungen bei Animation, Verarbeitung und Sound von Teleportzeigern
+### <a name="teleport-pointer-animation-handling-and-sound-improvements"></a>Verbesserungen an Animation, Verarbeitung und Sound von Teleportzeigern
 
-Der Teleportzeiger verfügt jetzt über verbesserte Animationen und Audiofeedback. Wir haben auch die Handhabung des Teleportzeigers verbessert, sodass er beim Übergang vom Zeigen auf nahe gelegenen Oberflächen zu weiter entfernten Oberflächen reibungsloser verarbeitet wird.
+Der Teleportzeiger verfügt nun über verbesserte Animationen und Audiofeedback. Wir haben auch die Verarbeitung des Teleportzeigers verbessert, sodass er beim Übergang von der Zeigen auf oberflächen in der Nähe zu weiter entfernten Oberflächen reibungsloser behandelt wird.
 
-### <a name="input-simulation-cheat-sheet"></a>Cheat Sheet für die Eingabesimulation
+### <a name="input-simulation-cheat-sheet"></a>Spickzettel für die Eingabesimulation
 
 Die HandInteractionExamples-Szene verfügt jetzt über eine konfigurierbare Verknüpfung, um eine Hilfeseite für die Eingabesimulation anzuzeigen.
 
-![Cheat Sheet für die Eingabesimulation](https://user-images.githubusercontent.com/13754172/93232433-dea8cd80-f7b4-11ea-8500-eaee202f606f.png)
+![Spickzettel für die Eingabesimulation](https://user-images.githubusercontent.com/13754172/93232433-dea8cd80-f7b4-11ea-8500-eaee202f606f.png)
 
-### <a name="input-simulation-eye-gaze-with-mouse"></a>Eingabesimulation: Anvschauen mit dem Mauszeiger
+### <a name="input-simulation-eye-gaze-with-mouse"></a>Eingabesimulation: Anväuschen mit den Augen mit der Maus
 
-Benutzer können jetzt die Maus verwenden, um eye tracking zu simulieren. Sehen Sie sich `Eye Simulation Mode` das Feld im Eingabesimulationsprofil an, und legen Sie es auf Maus fest. Dadurch wird das vorherige Feld `Simulate Eye Position` ersetzt.
+Benutzer können jetzt die Maus zum Simulieren der Eyetracking verwenden. Sehen Sie sich das `Eye Simulation Mode` Feld im Eingabesimulationsprofil an, und legen Sie es auf Maus fest. Dadurch wird das vorherige `Simulate Eye Position` Feld ersetzt.
 
-![Eye Gaze Mouse](https://user-images.githubusercontent.com/39840334/87720928-892b5280-c76a-11ea-9411-73ab69fc756c.gif)
+![Maus mit den Augen anväuschen](https://user-images.githubusercontent.com/39840334/87720928-892b5280-c76a-11ea-9411-73ab69fc756c.gif)
 
-### <a name="input-simulation-motion-controller-in-editor-play-mode"></a>Eingabesimulations-Bewegungscontroller im Editor-Wiedergabemodus
+### <a name="input-simulation-motion-controller-in-editor-play-mode"></a>Eingabesimulations-Bewegungscontroller im Wiedergabemodus des Editors
 
-Benutzer können nun den Bewegungscontroller genau wie Hände im Editor-Wiedergabemodus simulieren. Die Trigger-, Greif- und Menüschaltflächen werden derzeit unterstützt.
+Benutzer können jetzt den Bewegungscontroller genau wie die Hände im Editor-Wiedergabemodus simulieren. Die Schaltflächen "Trigger", "Greifen" und "Menü" werden derzeit unterstützt.
 
-### <a name="conical-grab-pointer"></a>Conical-Greifzeiger
+### <a name="conical-grab-pointer"></a>Konische Klammerzeiger
 
-Greifze0er können jetzt so konfiguriert werden, dass sie objekte in der Nähe abfragen, indem ein Kegel vom Greifpunkt anstelle einer Kugel verwendet wird. Dies ähnelt eher dem Verhalten der standarden HoloLens 2-Schnittstelle, die objekte in der Nähe mithilfe eines Kegels abfragt. Das DefaultHoloLens2InputSystemProfile wurde ebenfalls angepasst, um das neue zu `ConicalGrabPointer` verwenden.
+Greifen-Zeiger können jetzt so konfiguriert werden, dass sie in der Nähe befindliche Objekte mithilfe eines Kegels vom Greifenpunkt anstelle einer Kugel abfragen. Dies ähnelt eher dem Verhalten der Standardschnittstelle HoloLens 2, die mithilfe eines Kegels objekte in der Nähe abfragt. Das DefaultHoloLens2InputSystemProfile wurde ebenfalls angepasst, um das neue zu `ConicalGrabPointer` verwenden.
 
-![Conical Grab-Zeiger](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
+![Konische Klammerzeiger](https://user-images.githubusercontent.com/39840334/82500569-72d58300-9aa8-11ea-8102-ec9a62832d4e.png)
 
-### <a name="testutilities-package"></a>Paket "TestUtilities"
+### <a name="testutilities-package"></a>TestUtilities-Paket
 
-Es gibt jetzt ein Paket (Microsoft.MixedReality.Toolkit.Unity.TestUtilities.2.5.0.unitypackage), das die PlayMode- und TestMode-Testinfrastruktur enthält, die das MRTK zum Erstellen von End-to-End-Tests verwendet. Diese Infrastruktur war für das MRTK-Team selbst äußerst praktisch, und wir freuen uns, dass Dies von den Kunden zum Hinzufügen von Testabdeckung zu ihren eigenen Projekten verwendet wird.
+Es gibt jetzt ein Paket (Microsoft.MixedReality.Toolkit.Unity.TestUtilities.2.5.0.unitypackage), das die PlayMode- und TestMode-Testinfrastruktur enthält, die das MRTK zum Erstellen von End-to-End-Tests verwendet. Diese Infrastruktur war für das MRTK-Team selbst äußerst praktisch, und wir freuen uns, dass Kunden diese Infrastruktur nutzen können, um ihren eigenen Projekten eine Testabdeckung hinzuzufügen.
 
-Der folgende Code zeigt, wie Sie eine Testhand erstellen, sie an einer bestimmten Position anzeigen, verschieben und dann einheften und öffnen.
+Der folgende Code zeigt, wie Sie eine Testhand erstellen, an einem bestimmten Ort anzeigen, verschieben und dann zusammendrücken und öffnen.
 
 ```csharp
 TestHand leftHand = new TestHand(Handedness.Left);
@@ -132,39 +132,39 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 
 Anweisungen zum Schreiben eines Tests mithilfe dieser TestUtilities finden Sie in diesem Abschnitt zum [Schreiben von Tests.](../contributing/unit-tests.md#writing-tests)
 
-Beispiele für vorhandene Tests, die diese Infrastruktur verwenden, finden Sie unter [PlayModeTests des MRTK.](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Tests/PlayModeTests)
+Beispiele für vorhandene Tests, die diese Infrastruktur verwenden, finden Sie unter [PlayModeTests](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Tests/PlayModeTests)des MRTK.
 
 ### <a name="support-for-the-leap-motion-451-unity-modules"></a>Unterstützung für die Leap Motion 4.5.1 Unity-Module
 
-Unterstützung für die Leap Motion Unity Modules Version 4.5.1 wurde hinzugefügt, und die Unterstützung für die 4.4.0-Objekte wurde entfernt. Die aktuellen unterstützten Versionen der Leap Motion Unity-Module sind 4.5.0 und 4.5.1.
+Die Unterstützung für die Leap Motion Unity-Module, Version 4.5.1, wurde hinzugefügt, und die Unterstützung für die 4.4.0-Ressourcen wurde entfernt. Die aktuellen unterstützten Versionen der Leap Motion Unity-Module sind 4.5.0 und 4.5.1.
 
-Es gibt auch einen zusätzlichen Schritt für die anfängliche Leap Motion-Integration. Weitere Informationen finden Sie unter How to Configure the Leap Motion Hand Tracking in MRTK (Konfigurieren der [Leap Motion Hand Tracking in MRTK).](../supported-devices/leap-motion-mrtk.md)
+Es gibt auch einen zusätzlichen Schritt für die anfängliche Leap Motion-Integration. Weitere Informationen finden Sie unter [How to Configure the Leap Motion Hand Tracking in MRTK (Konfigurieren der Leap Motion Hand Tracking in MRTK).](../supported-devices/leap-motion-mrtk.md)
 
-### <a name="spatial-awareness-mesh-observer-better-handles-customization-of-materials"></a>Spatial Awareness Mesh Observer übernimmt die Anpassung von Materialien besser
+### <a name="spatial-awareness-mesh-observer-better-handles-customization-of-materials"></a>Spatial Awareness Mesh Observer besser für die Anpassung von Materialien
 
-Mit diesem Release haben `Windows Mixed Reality Spatial Mesh Observer` die - und `Generic XR SDK Spatial Mesh Observer` -Komponenten die Verarbeitung visueller Materialien verbessert. Materialien werden jetzt beibehalten, wenn ein Gitternetz vom Beobachter aktualisiert wurde, wobei sie zuvor auf den Standardwert VisibleMaterial zurückgesetzt wurden, wie im Profil konfiguriert.
+Mit diesem Release haben die `Windows Mixed Reality Spatial Mesh Observer` Komponenten und die Verarbeitung `Generic XR SDK Spatial Mesh Observer` visueller Materialien verbessert. Materialien werden jetzt beibehalten, wenn ein Gitternetz vom Beobachter aktualisiert wurde, wobei sie zuvor auf den Standardwert VisibleMaterial zurückgesetzt wurden, wie im Profil konfiguriert.
 
-Dadurch können Entwickler das Gitternetzmaterial ändern und die Änderungen nicht unerwartet überschreiben lassen.
+Dadurch können Entwickler das Gitternetzmaterial ändern, ohne dass die Änderungen unerwartet überschrieben werden.
 
-### <a name="linkxml-created-in-the-mixedrealitytoolkitgenerated-folder"></a>Link.xml im Ordner MixedRealityToolkit.Generated erstellt
+### <a name="linkxml-created-in-the-mixedrealitytoolkitgenerated-folder"></a>Link.xml im Ordner MixedRealityToolkit.Generated erstellt.
 
-Mit der Einführung von Unity Package Manager MRTK schreibt MRTK jetzt eine Datei in den `link.xml` `Assets/MixedRealityToolkit.Generated` Ordner, sofern keine vorhanden ist. Es wird empfohlen, diese Datei (und `link.xml.meta` ) der Quellcodeverwaltung hinzuzufügen. Link.xml wird verwendet, um die [Funktionalität](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML) des Unity-Linkers für verwaltetes Codestriping zu beeinflussen.
+Mit der Einführung des Unity Package Manager MRTK schreibt MRTK jetzt eine `link.xml` Datei in den `Assets/MixedRealityToolkit.Generated` Ordner, wenn keine vorhanden ist. Es wird empfohlen, diese Datei (und `link.xml.meta` ) der Quellcodeverwaltung hinzuzufügen. Link.xml wird verwendet, um die [Strippingfunktion](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML) von verwaltetem Code des Unity-Linkers zu beeinflussen.
 
-Weitere Informationen zur MRTK-link.xml finden Sie im Artikel [ZUM MRTK](../updates-deployment/mrtk-and-managed-code-stripping.md) und zum Berenken von verwaltetem Code.
+Weitere Informationen zur MRTK-link.xml-Datei finden Sie im Artikel [MRTK und Stripping von verwaltetem Code.](../updates-deployment/mrtk-and-managed-code-stripping.md)
 
-### <a name="unity-20193-mrtk-configuration-dialog-no-longer-attempts-to-enable-legacy-xr-support"></a>Unity 2019.3+: MRTK-Konfigurationsdialogfeld versucht nicht mehr, Legacy-XR-Unterstützung zu aktivieren
+### <a name="unity-20193-mrtk-configuration-dialog-no-longer-attempts-to-enable-legacy-xr-support"></a>Unity 2019.3+: MRTK-Konfigurationsdialogfeld versucht nicht mehr, die Legacy-XR-Unterstützung zu aktivieren
 
-Um potenzielle Konflikte bei der Verwendung der XR-Plattform von Unity zu vermeiden, wurde die Option zum Aktivieren der Legacy-XR-Unterstützung aus dem MRTK-Konfigurationsdialogfeld entfernt. Bei Wunsch kann die Legacy-XR-Unterstützung in Unity 2019 mithilfe von **Edit**  >  **Project Settings**  >
- **Player**  >  **XR Settings** Virtual Reality Supported aktiviert  >  **werden.**
+Um potenzielle Konflikte bei der Verwendung der XR-Plattform von Unity zu vermeiden, wurde die Option zum Aktivieren der Legacy-XR-Unterstützung aus dem MRTK-Konfigurationsdialogfeld entfernt. Bei Bedarf kann die Legacy-XR-Unterstützung in Unity 2019 mit edit Project Einstellungen Player XR Einstellungen Virtual Reality Supported **(Bearbeiten**  >  **Project Einstellungen**  >
+ **Player**  >  **XR Einstellungen** Virtual Reality  >  **Unterstützt)** aktiviert werden.
 
-### <a name="reduction-in-initializeonload-overhead"></a>Reduzierung des InitializeOnLoad-Aufwands
+### <a name="reduction-in-initializeonload-overhead"></a>Reduzierung des InitializeOnLoad-Overheads
 
-Wir haben daran arbeitet, die Menge an Arbeit zu reduzieren, die in InitializeOnLoad-Handlern ausgeführt wird, was zu Verbesserungen bei der Entwicklungsgeschwindigkeit der inneren Schleife führen sollte. InitializeOnLoad-Handler werden jedes Mal ausgeführt, wenn ein Skript kompiliert wird, bevor sie in den Wiedergabemodus wechseln, und auch beim Start des Editors. Diese Handler werden jetzt in deutlich weniger Fällen ausgeführt, was zu allgemeinen Verbesserungen der Reaktionsfähigkeit von Unity führt.
+Wir haben daran gearbeitet, den Arbeitsaufwand zu reduzieren, der in InitializeOnLoad-Handlern ausgeführt wird. Dies sollte zu Verbesserungen der Entwicklungsgeschwindigkeit der inneren Schleife führen. InitializeOnLoad-Handler werden jedes Mal ausgeführt, wenn ein Skript kompiliert wird, bevor sie in den Wiedergabemodus und auch beim Start des Editors wechseln. Diese Handler werden jetzt in weitaus weniger Fällen ausgeführt, was zu allgemeinen Verbesserungen der Unity-Reaktionsfähigkeit führt.
 
-In einigen Fällen musste ein Kompromiss getroffen werden:
+In einigen Fällen gab es einen Kompromiss, der vorgenommen werden musste:
 
-- Den [zusätzlichen Integrationsschritt finden Sie](../supported-devices/leap-motion-mrtk.md) unter Leap Motion Hand Tracking Configuration (Leap Motion Hand Tracking-Konfiguration).
-- Für Diejenigen, die ARFoundation verwenden, gibt es nun einen zusätzlichen manuellen Schritt in den Schritten für die ersten Schritte.
+- Weitere Informationen zum zusätzlichen Integrationsschritt finden Sie unter Leap Motion Hand Tracking Configuration ( [Leap Motion Hand Tracking Configuration).](../supported-devices/leap-motion-mrtk.md)
+- Für Diejenigen, die ARFoundation verwenden, gibt es nun einen zusätzlichen manuellen Schritt in den Ersten Schritten.
   Die neuen Schritte finden Sie unter [ARFoundation.](../supported-devices/using-ar-foundation.md#install-required-packages)
 - Für Diejenigen, die [Holographic Remoting mit legacy-XR-Pipeline](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) auf HoloLens 2 verwenden, ist jetzt ein [manueller Schritt](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) erforderlich.
 
@@ -178,7 +178,7 @@ Hier finden Sie eine Liste der Highlights dieses Updates:
 - -Eigenschaften werden in Konfigurationen aufgeteilt, wodurch das Einrichten des Begrenzungssteuerelements vereinfacht wird.
 - Konfigurationen können über skriptfähige Objekte freigegeben werden.
 - Jede Eigenschaft/skriptfähige Eigenschaft kann zur Laufzeit konfiguriert werden.
-- bounds control rig wird bei Eigenschaftenänderungen nicht mehr neu erstellt.
+- bounds control rig wird bei Eigenschaftsänderungen nicht mehr neu erstellt.
 - Unterstützung von Übersetzungshandles
 - Vollständige Einschränkungsunterstützung über den Einschränkungs-Manager
 - Systemintegration für elastische Datenbanken (experimentell)
@@ -195,11 +195,11 @@ Aus diesem Grund hat sich die Art und Weise, wie Einschränkungen im Eigenschaft
 <img src="../features/images/constraint-manager/ManualSelection.png" width="600" alt="Inspector view showing manual constraint manager selection">
 
 Die Einschränkungen, die auf die Komponente angewendet werden, werden jetzt als Liste in der Einschränkungs-Manager-Komponente angezeigt, während die Komponente, die den Einschränkungs-Manager verwendet (entweder [Begrenzungssteuerelement](../features/ux-building-blocks/bounds-control.md#constraint-system) oder [Objektmanipulator),](../features/ux-building-blocks/object-manipulator.md#constraint-manager)nun den ausgewählten Einschränkungs-Manager und -Modus (automatisch oder manuell) zeigt.
-Weitere Informationen finden Sie im Abschnitt [Einschränkungs-Manager](../features/ux-building-blocks/constraint-manager.md) in unserer Dokumentation.
+Weitere Informationen finden Sie im Abschnitt [einschränkungs-manager](../features/ux-building-blocks/constraint-manager.md) in unserer Dokumentation.
 
 ### <a name="hololens-2-button-material-update"></a>Materialaktualisierung für HoloLens 2 Schaltflächen
 
-Das Vordermaterial HoloLens 2 Schaltfläche wurde aktualisiert, um die schwarze Farbe in MRC zu entfernen.
+Es wurde HoloLens 2 Vorderfeldmaterial der Schaltfläche aktualisiert, um die schwarze Farbe im MRC zu entfernen.
 
 ![Materialaktualisierung für HoloLens 2 Schaltflächen](https://user-images.githubusercontent.com/13754172/94341269-dcf7c900-0042-11eb-9028-e55abd2ead67.png)
 
@@ -213,13 +213,13 @@ Der Beschreibungsbereich wurde aktualisiert. (SceneDescriptionPanelRev.prefab) N
 
 Das Pulse-Shader-Beispiel für das räumliche Gitternetz wurde aktualisiert, damit es dem Shellverhalten HoloLens 2 entspricht.
 
-![Pulse on air-tap (Pulse beim Tippen in die Luft)](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
+![Pulse on air-tap](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
 ### <a name="elastic-system-experimental"></a>Elastisches System (experimentell)
 
 ![Elastic System2](../features/images/elastics/Elastics_Main.gif)
 
-MRTK verfügt jetzt über ein [elastisches Simulationssystem,](../features/elastics/elastic-system.md) das eine Vielzahl von erweiterbaren und flexiblen Unterklassen enthält und Bindungen für 4-dimensionale Quaternionsmaße, 3-dimensionale Volumenmaße und einfache lineare Springsysteme bietet.
+MRTK verfügt jetzt über ein [elastisches Simulationssystem,](../features/experimental/elastic-system.md) das eine Vielzahl von erweiterbaren und flexiblen Unterklassen enthält und Bindungen für 4-dimensionale Quaternionsmaße, 3-dimensionale Volumenmaße und einfache lineare Springsysteme bietet.
 
 Derzeit können die folgenden MRTK-Komponenten, die den [Elastics Manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) unterstützen, die Funktionalität für elastische Datenbanken nutzen:
 
@@ -231,7 +231,7 @@ Derzeit können die folgenden MRTK-Komponenten, die den [Elastics Manager](xref:
 
 ### <a name="joystick-experimental"></a>Schalter (experimentell)
 
-Ein Beispiel für eine Schnittstelle, die ein großes Zielobjekt steuern kann.
+Ein Beispiel für eine Schnittstellenschnittstelle, die ein großes Zielobjekt steuern kann.
 
 ![Joystick](https://user-images.githubusercontent.com/43013191/86156887-769ef100-babb-11ea-85be-ed6a6aed89d2.png)
 
@@ -241,7 +241,7 @@ Ein experimentelles Steuerelement, das es einfach macht, Materialfarben für jed
 
 ![Drei verschiedene Methoden des Farbauswahl-Steuerelements](https://user-images.githubusercontent.com/43013191/85468370-3b536e00-b561-11ea-812c-b3f7d43dd999.png)
 
-![Vier verschiedene Methoden des Farbauswahl-Steuerelements](https://user-images.githubusercontent.com/43013191/85468994-fa0f8e00-b561-11ea-89f2-0810d1998518.png)
+![Vier verschiedene Methoden des Farbauswahlsteuerelements](https://user-images.githubusercontent.com/43013191/85468994-fa0f8e00-b561-11ea-89f2-0810d1998518.png)
 
 ## <a name="breaking-changes"></a>Aktuelle Änderungen
 
@@ -261,7 +261,7 @@ Wenn Sie über einen benutzerdefinierten Zeigermediator verfügen, der keine Def
 
 ### <a name="rest--device-portal-api"></a>REST-/Geräteportal-API
 
-Die `UseSSL` statische Eigenschaft wurde von zu `Rest` `DevicePortal` verschoben.
+Die `UseSSL` statische Eigenschaft wurde von in `Rest` `DevicePortal` verschoben.
 
 Wenn Sie dies zuvor getan haben...
 
@@ -277,7 +277,7 @@ DevicePortal.UseSSL = true
 
 ### <a name="linkxml"></a>Link.xml
 
-Wenn eine Anwendung zuvor die NuGet-Verteilung des MRTK verwendet hat, wurde die `link.xml` Datei aus dem Foundation-Paket entfernt. Zum Wiederherstellen von Regeln für die Beibehaltung von Code wird beim einmaligen Öffnen des Projekts in Unity eine `link.xml` Standarddatei in `Assets/MixedRealityToolkit.Generated` erstellt. Es wird empfohlen, diese Datei (und `link.xml.meta` ) der Quellcodeverwaltung hinzuzufügen.
+Wenn eine Anwendung zuvor die NuGet Verteilung des MRTK verwendet hat, wurde die `link.xml` Datei aus dem Foundation-Paket entfernt. Zum Wiederherstellen von Regeln für die Beibehaltung von Code wird beim einmaligen Öffnen des Projekts in Unity eine `link.xml` Standarddatei in `Assets/MixedRealityToolkit.Generated` erstellt. Es wird empfohlen, diese Datei (und `link.xml.meta` ) der Quellcodeverwaltung hinzuzufügen.
 
 ### <a name="transform-constraint-changes"></a>Transformationseinschränkungsänderungen
 
@@ -293,7 +293,7 @@ Der `AudioClip` IMixedRealityDictationSystem-Schnittstelle wurde eine neue Eigen
 
 Dienstfronten werden in 2.5 ausgeschaltet. Dieses Feature wurde ursprünglich hinzugefügt, um die Konfiguration der MRTK-Profile zu vereinfachen (durch Erstellen von gefälschten GameObjects in der Szene, die die einzelnen MRTK-Dienste darstellten). Auf lange Sicht möchten wir verhindern, dass gefälschte In-Game-Objekte erstellt werden, und versuchen, sie synchron zu halten (da Datensynchronisierungs- und "Source of Truth"-Probleme schwierig zu skalieren und richtig zu werden sind).
 
-In Version 2.5 werden die Dienstfronthandler beibehalten, um sicherzustellen, dass das Projektupgrade reibungslos verläuft. Alle im Projekt vorhandenen Fassaden werden vom Service-Fassadenhandler gelöscht, um sicherzustellen, dass in 2.5 geöffnete Szenen automatisch korrigiert werden.
+In Version 2.5 werden die Dienstfronthandler beibehalten, um sicherzustellen, dass das Projektupgrade reibungslos verläuft. Alle im Projekt vorhandenen Fassaden werden vom Dienst-Fassadenhandler gelöscht, um sicherzustellen, dass in 2.5 geöffnete Szenen automatisch korrigiert werden.
 
 Der verbleibende Code, der der Dienstfrontfunktion zugeordnet ist, wird in einer zukünftigen Version entfernt.
 
@@ -320,7 +320,7 @@ Wenn kein Audio spatializer konfiguriert ist, wird die Warnung "No spatializer w
 Stellen Sie zum Beheben dieser Probleme Sicher, dass:
 
 - **Fenster**  >  **Paket-Manager** mindestens ein XR-Paket installiert ist
-- **Mixed Reality Toolkit**  >  **Hilfsprogramme**  >  **Konfigurieren des Unity-Projekts** und Treffen einer Auswahl für **Audio Spatializer**
+- **Mixed Reality Toolkit**  >  **Hilfsprogramme**  >  **Konfigurieren von Unity Project** und Treffen einer Auswahl für **Audio Spatializer**
 
   ![Auswählen von Audio Spatializer](images/SpatializerSelection.png)
 

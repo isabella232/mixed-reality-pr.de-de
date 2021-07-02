@@ -4,29 +4,29 @@ description: Details zum Konfigurieren des Begrenzungssystems im MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Boundary System,
-ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, Boundary System,
+ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121248"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177095"
 ---
-# <a name="configuring-the-boundary-visualization"></a>Konfigurieren der Begrenzungsvisualisierung
+# <a name="configuring-boundary-visualization"></a>Konfigurieren der Begrenzungsvisualisierung
 
 Das *Profil für die Begrenzungsvisualisierung* bietet Optionen zum Konfigurieren der visuellen Darstellungen und anderer verwandter Parameter für das Begrenzungssystem. Begrenzungsvisualisierungen werden an Mixed Reality Playspace-Objekt in der Szene angefügt und mit dem Benutzer übertragen.
 
 ## <a name="general-settings"></a>Allgemeine Einstellungen
 
-![Allgemeine Einstellungen für die Begrenzungsvisualisierung](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![Allgemeine Einstellungen](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>Begrenzungshöhe
 
-Die Begrenzungshöhe gibt den Abstand über der Bodenebene an, an dem die Begrenzungsgrenze gerendert werden soll. Der Standardwert ist 3 Meter.
+Die Begrenzungshöhe gibt den Abstand über der Bodenebene an, an dem die Begrenzungsobergrenze gerendert werden soll. Der Standardwert ist 3 Meter.
 
 ## <a name="floor-settings"></a>Einstellungen für den Boden
 
-![Begrenzungsvisualisierung – Grundeinstellungen](../images/boundary/BoundaryVisualizationFloorSettings.png)
+![Begrenzungsvisualisierung – Einstellungen](../images/boundary/BoundaryVisualizationFloorSettings.png)
 
 **Anzeigen**
 
@@ -46,7 +46,7 @@ Die Ebene, auf der die Bodenebene festgelegt werden soll. Der Standardwert ist d
 
 ## <a name="play-area-settings"></a>Wiedergabebereichseinstellungen
 
-![Wiedergabebereichseinstellungen für Die Begrenzungsvisualisierung](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
+![Wiedergabebereich für Die Begrenzungsvisualisierung Einstellungen](../images/boundary/BoundaryVisualizationPlayAreaSettings.png)
 
 **Anzeigen**
 
@@ -60,9 +60,9 @@ Gibt das Material an, das beim Erstellen des Play Area-Objekts verwendet werden 
 
 Die Ebene, auf der der Wiedergabebereich festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
-## <a name="tracked-area-settings"></a>Einstellungen für nachverfolgten Bereich
+## <a name="tracked-area-settings"></a>Einstellungen für nachverfolgte Flächen
 
-![Einstellungen für nachverfolgte Flächen der Begrenzungsvisualisierung](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
+![Begrenzungsvisualisierung: Nachverfolgte Einstellungen](../images/boundary/BoundaryVisualizationTrackedAreaSettings.png)
 
 **Anzeigen**
 
@@ -78,7 +78,7 @@ Die Ebene, auf der der nachverfolgte Bereich bestimmt werden soll. Der Standardw
 
 ## <a name="boundary-wall-settings"></a>Begrenzungswandeinstellungen
 
-![Begrenzungsvisualisierung– Begrenzungswandeinstellungen](../images/boundary/BoundaryVisualizationWallSettings.png)
+![Begrenzungsvisualisierung Begrenzungswand Einstellungen](../images/boundary/BoundaryVisualizationWallSettings.png)
 
 **Anzeigen**
 
@@ -97,7 +97,7 @@ Die Ebene, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert 
 
 ## <a name="boundary-ceiling-settings"></a>Einstellungen für die Begrenzungsobergrenze
 
-![Begrenzungsvisualisierung– Begrenzungsbegrenzungseinstellungen](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![Begrenzungsvisualisierung: Begrenzungsobergrenze Einstellungen](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **Anzeigen**
 
@@ -112,7 +112,7 @@ Gibt das Material an, das beim Erstellen der Begrenzungsbegrenzungsebene verwend
 Die Ebene, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
 > [!NOTE]
-> Das Festlegen der Begrenzungsbegrenzungskomponente auf eine andere physikalische Ebene als *Raycast ignorieren* kann verhindern, dass Benutzer mit Objekten innerhalb der Szene interagieren.
+> Das Festlegen der Begrenzungsbegrenzungskomponente auf eine andere physikalische Ebene als *Raycast* ignorieren kann verhindern, dass Benutzer mit Objekten innerhalb der Szene interagieren.
 
 ## <a name="see-also"></a>Siehe auch
 

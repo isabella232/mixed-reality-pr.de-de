@@ -1,25 +1,25 @@
 ---
-title: Zuschnitt-Primitiv
+title: Clippingprimitive
 description: Dokumentation zu Clippingprimitiven mit Beispielen in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Clipping primitive,
-ms.openlocfilehash: 35b7166045986df34eaf2c23161efc6379160ead
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, Clipping primitive,
+ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145206"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176745"
 ---
-# <a name="clipping-primitive"></a>Zuschnitt-Primitiv
+# <a name="clipping-primitive"></a>Clippingprimitive
 
 Die Verhaltensweisen ermöglichen eine performante , - und -Formausschneidung mit der Möglichkeit, anzugeben, auf welcher Seite des Primitivs (innerhalb oder außerhalb) abgeschnitten werden soll, wenn sie mit [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane) [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) MRTK-Shadern verwendet wird.
 
 ![Primitive Clipping-Klammern](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
 
 > [!NOTE]
-> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) Verwenden [Sie Clip/Discard-Anweisungen](https://developer.download.nvidia.com/cg/clip.html) in Shadern, und deaktivieren Sie die Fähigkeit von Unity, beschnittene Renderer als Batch zu verwenden. Berücksichtigen Sie diese Auswirkungen auf die Leistung bei der Verwendung von Clippingprimitiven.
+> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) Verwenden [Sie Clip/Discard-Anweisungen](https://developer.download.nvidia.com/cg/clip.html) in Shadern, und deaktivieren Sie die Fähigkeit von Unity, abgeschnittene Renderer als Batch zu verwenden. Berücksichtigen Sie diese Auswirkungen auf die Leistung bei der Verwendung von Clippingprimitiven.
 
 [`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) und können verwendet [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) werden, um primitive Clippingeigenschaften einfach zu steuern. Verwenden Sie diese Komponenten mit den folgenden Shadern, um Clippingszenarien zu nutzen.
 
@@ -123,6 +123,6 @@ public class SecondClippingBox : ClippingBox
 
 Fügen Sie abschließend ihrer Szene eine - und eine SecondClippingBox-Komponente hinzu, und geben [`ClippingBox`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) Sie denselben Renderer für beide Felder an. Der Renderer sollte nun von beiden Feldern gleichzeitig abgeschnitten werden.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [MRTK-Standard-Shader](mrtk-standard-shader.md)

@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, C#,
-ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121438"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175333"
 ---
 # <a name="coding-guidelines"></a>Codierungsrichtlinien
 
@@ -24,7 +24,7 @@ In diesem Dokument werden Codierungsprinzipien und Konventionen beschrieben, die
 
 Die einfachste Lösung ist häufig die beste. Dies ist ein übergeordnetes Ziel dieser Richtlinien und sollte das Ziel aller Codierungsaktivitäten sein. Ein Teil der Einfachheit ist die Präzise und Konsistenz mit vorhandenem Code. Versuchen Sie, Ihren Code einfach zu halten.
 
-Leser sollten nur auf Artefakte stoßen, die nützliche Informationen bereitstellen. Kommentare, die das Offensichtliche neu darstellen, liefern z. B. keine zusätzlichen Informationen und erhöhen das Rausch-zu-Signal-Verhältnis.
+Leser sollten nur auf Artefakte stoßen, die nützliche Informationen bereitstellen. Beispielsweise liefern Kommentare, die das Offensichtliche neu darstellen, keine zusätzlichen Informationen und erhöhen das Rauschen zum Signalverhältnis.
 
 Halten Sie die Codelogik einfach. Beachten Sie, dass es sich hierbei nicht um eine Anweisung zur Verwendung der geringsten Anzahl von Zeilen handelt, um die Größe von Bezeichnernamen oder geschweiften Klammern zu minimieren, sondern um die Reduzierung der Anzahl von Konzepten und die Maximierung der Sichtbarkeit dieser Zeilen durch vertraute Muster.
 
@@ -38,7 +38,7 @@ Alle Details des Codes, den Sie erzeugen, sind wichtig, von den grundlegendsten 
 
 MRTK unterstützt eine Vielzahl von Benutzern: Personen, die Komponenten im Unity-Editor konfigurieren und Prefabs laden möchten, und Personen, die Objekte zur Laufzeit instanziieren und konfigurieren müssen.
 
-Der gesamte Code sollte funktionieren, indem BEIDE eine Komponente zu einem GameObject in einer gespeicherten Szene hinzufügen und diese Komponente im Code instanziieren. Tests sollten einen Testfall sowohl zum Instanziieren von Prefabs als auch zum Instanziieren und Konfigurieren der Komponente zur Laufzeit enthalten.
+Der gesamte Code sollte funktionieren, indem SOWOHL eine Komponente zu einem GameObject in einer gespeicherten Szene hinzugefügt als auch diese Komponente im Code instanziiert wird. Tests sollten einen Testfall sowohl zum Instanziieren von Prefabs als auch zum Instanziieren und Konfigurieren der Komponente zur Laufzeit enthalten.
 
 ### <a name="play-in-editor-is-your-first-and-primary-target-platform"></a>Play-in-Editor ist Ihre erste und primäre Zielplattform.
 
@@ -92,7 +92,7 @@ Alle Skriptdateien, die ohne ordnungsgemäße Zusammenfassungstags übermittelt 
 
 ### <a name="mrtk-namespace-rules"></a>MRTK-Namespaceregeln
 
-Das Mixed Reality Toolkit verwendet ein featurebasiertes Namespacemodell, bei dem alle grundlegenden Namespaces mit "Microsoft.MixedReality.Toolkit" beginnen. Im Allgemeinen müssen Sie die Toolkitebene (z. B. Core, Providers, Services) in Ihren Namespaces nicht angeben.
+Das Mixed Reality Toolkit verwendet ein featurebasiertes Namespacemodell, bei dem alle grundlegenden Namespaces mit "Microsoft.MixedReality.Toolkit" beginnen. Im Allgemeinen müssen Sie nicht die Toolkitebene (z. B. Core, Anbieter, Dienste) in Ihren Namespaces angeben.
 
 Die derzeit definierten Namespaces sind:
 
@@ -113,7 +113,7 @@ Wenn Sie den Namespace für eine Schnittstelle, klasse oder einen Datentyp wegla
 
 Stellen Sie beim Hinzufügen neuer MonoBehaviour-Skripts mit einem Pull Request sicher, dass das [`AddComponentMenu`](https://docs.unity3d.com/ScriptReference/AddComponentMenu.html) -Attribut auf alle anwendbaren Dateien angewendet wird. Dadurch wird sichergestellt, dass die Komponente im Editor unter der Schaltfläche *Komponente hinzufügen* leicht auffindbar ist. Das Attributflag ist nicht erforderlich, wenn die Komponente nicht im Editor angezeigt werden kann, z. B. in einer abstrakten Klasse.
 
-Im folgenden Beispiel sollte das *Paket hier* mit dem Paketspeicherort der Komponente gefüllt werden. Wenn Sie ein Element im *MRTK-/SDK-Ordner* platzieren, ist das Paket *SDK.*
+Im folgenden Beispiel sollte das *Paket hier* mit dem Paketspeicherort der Komponente gefüllt werden. Wenn Sie ein Element im *MRTK-/SDK-Ordner* platzieren, ist das Paket *SDK*.
 
 ```c#
 [AddComponentMenu("Scripts/MRTK/{Package here}/MyNewComponent")]
@@ -135,7 +135,7 @@ public override void OnInspectorGUI()
 }
 ```
 
-Wenn benutzerdefiniertes Rendering in der Inspektorklasse erforderlich ist, versuchen Sie, und zu [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) verwenden. Dadurch wird sichergestellt, dass Unity das Rendern geschachtelter Prefabs und geänderter Werte ordnungsgemäß verarbeitet.
+Wenn benutzerdefiniertes Rendering in der Inspector-Klasse erforderlich ist, versuchen Sie, und zu [`SerializedProperty`](https://docs.unity3d.com/ScriptReference/SerializedProperty.html) [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) verwenden. Dadurch wird sichergestellt, dass Unity das Rendern geschachtelter Prefabs und geänderter Werte ordnungsgemäß verarbeitet.
 
 Wenn [`EditorGUILayout.PropertyField`](https://docs.unity3d.com/ScriptReference/EditorGUILayout.PropertyField.html) aufgrund einer Anforderung in der benutzerdefinierten Logik nicht verwendet werden kann, stellen Sie sicher, dass die gesamte Verwendung um eine umschlossen [`EditorGUI.PropertyScope`](https://docs.unity3d.com/ScriptReference/EditorGUI.PropertyScope.html) ist. Dadurch wird sichergestellt, dass Unity den Inspektor für geschachtelte Prefabs und geänderte Werte mit der angegebenen Eigenschaft ordnungsgemäß rendert.
 
@@ -197,23 +197,23 @@ public class MyNewProfile : ScriptableObject
 
 ### <a name="logging"></a>Protokollierung
 
-Wenn Sie neue Features hinzufügen oder vorhandene Features aktualisieren, sollten Sie DebugUtilities.LogVerbose-Protokolle zu interessantem Code hinzufügen, der für zukünftiges Debuggen nützlich sein kann. Es gibt hier einen Kompromiss zwischen dem Hinzufügen der Protokollierung und dem zusätzlichen Rauschen und nicht genügend Protokollierung (was die Diagnose erschwert).
+Wenn Sie neue Features hinzufügen oder vorhandene Features aktualisieren, sollten Sie erwägen, DebugUtilities.LogVerbose-Protokolle zu interessantem Code hinzuzufügen, der für das zukünftige Debuggen nützlich sein kann. Es gibt hier einen Kompromiss zwischen dem Hinzufügen der Protokollierung und dem hinzugefügten Rauschen und nicht genügend Protokollierung (was die Diagnose erschwert).
 
-Ein interessantes Beispiel, bei dem die Protokollierung nützlich ist (zusammen mit einer interessanten Nutzlast):
+Ein interessantes Beispiel, in dem die Protokollierung nützlich ist (zusammen mit einer interessanten Nutzlast):
 
 ```c#
 DebugUtilities.LogVerboseFormat("RaiseSourceDetected: Source ID: {0}, Source Type: {1}", source.SourceId, source.SourceType);
 ```
 
-Diese Art der Protokollierung kann dazu beitragen, Probleme wie zu erfassen, die durch nicht übereinstimmende Quellereignisse und [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) verlorene Ereignisse verursacht wurden.
+Diese Art der Protokollierung kann dabei helfen, Probleme wie [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8016) abzufangen, die durch nicht übereinstimmende ermittelte Quell- und Quellverlustereignisse verursacht wurden.
 
-Vermeiden Sie das Hinzufügen von Protokollen für Daten und Ereignisse, die in jedem Frame auftreten. Im Idealfall sollte die Protokollierung "interessante" Ereignisse abdecken, die von unterschiedlichen Benutzereingaben gesteuert werden (d. h. ein "Klick" durch einen Benutzer und der Satz von Änderungen und Ereignissen, die von diesen stammen, die für die Protokollierung interessant sind). Der fortlaufende Status "Benutzer hält immer noch eine Geste" protokolliert jeder Frame ist nicht interessant und überlastet die Protokolle.
+Vermeiden Sie das Hinzufügen von Protokollen für Daten und Ereignisse, die in jedem Frame auftreten. Im Idealfall sollte die Protokollierung "interessante" Ereignisse abdecken, die durch unterschiedliche Benutzereingaben gesteuert werden (d. h. ein "Klick" durch einen Benutzer und der Satz von Änderungen und Ereignissen, die aus stammen, die für die Protokollierung interessant sind). Der fortlaufende Zustand "Benutzer hält immer noch eine Geste" protokolliert jeder Frame ist nicht interessant und überfordert die Protokolle.
 
-Beachten Sie, dass diese ausführliche Protokollierung nicht standardmäßig aktiviert ist (sie muss in den Einstellungen des [Diagnosesystems aktiviert werden).](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)
+Beachten Sie, dass diese ausführliche Protokollierung nicht standardmäßig aktiviert ist (sie muss in den Einstellungen des [Diagnosesystems](../features/diagnostics/configuring-diagnostics.md#enable-verbose-logging)aktiviert sein).
 
-### <a name="spaces-vs-tabs"></a>Leerzeichen im Vergleich zu Registerkarten
+### <a name="spaces-vs-tabs"></a>Leerzeichen und Registerkarten
 
-Achten Sie darauf, dass Sie bei der Mitwirkung an diesem Projekt 4 Leerzeichen anstelle von Registerkarten verwenden.
+Achten Sie darauf, dass Sie 4 Leerzeichen anstelle von Registerkarten verwenden, wenn Sie zu diesem Projekt beitragen.
 
 ### <a name="spacing"></a>Abstand
 
@@ -242,7 +242,7 @@ private Foo()
 
 ### <a name="naming-conventions"></a>Namenskonventionen
 
-Verwenden Sie immer `PascalCase` für Eigenschaften. Verwenden `camelCase` Sie für die meisten Felder, mit Ausnahme der Felder und `PascalCase` `static readonly` `const` . Die einzige Ausnahme ist dies für Datenstrukturen, die erfordern, dass die Felder von serialisiert `JsonUtility` werden.
+Verwenden Sie immer `PascalCase` für Eigenschaften. Verwenden Sie `camelCase` für die meisten Felder, mit Ausnahme der `PascalCase` Felder und `static readonly` `const` . Die einzige Ausnahme hiervon ist für Datenstrukturen, die erfordern, dass die Felder von serialisiert `JsonUtility` werden.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -264,11 +264,11 @@ private string myField;
 
 Deklarieren Sie immer einen Zugriffsmodifizierer für alle Felder, Eigenschaften und Methoden.
 
-- Alle Unity-API-Methoden sollten standardmäßig sein, es sei denn, Sie `private` müssen sie in einer abgeleiteten Klasse überschreiben. In diesem Fall `protected` sollte verwendet werden.
+- Alle Unity-API-Methoden sollten `private` standardmäßig sein, es sei denn, Sie müssen sie in einer abgeleiteten Klasse überschreiben. In diesem Fall `protected` sollte verwendet werden.
 
-- Felder sollten immer `private` , mit - oder `public` `protected` -Eigenschaftenzugriffsoren sein.
+- Felder sollten immer `private` , mit - oder `public` `protected` -Eigenschaftenaccessoren sein.
 
-- Verwenden [Sie nach Möglichkeit Ausdrucks-Bodied-Member](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) und [automatische](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) Eigenschaften.
+- Verwenden Von [Ausdruckskörpermembern](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#expression-bodied-function-members) und [automatischen Eigenschaften](https://github.com/dotnet/roslyn/wiki/New-Language-Features-in-C%23-6#auto-property-enhancements) nach Möglichkeit
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -335,9 +335,9 @@ private Foo()
 }
 ```
 
-### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Öffentliche Klassen, Strukturen und Aufzählen sollten alle in ihren eigenen Dateien enthalten sein.
+### <a name="public-classes-structs-and-enums-should-all-go-in-their-own-files"></a>Öffentliche Klassen, Strukturen und Enumerationen sollten alle in ihren eigenen Dateien gespeichert werden.
 
-Wenn die Klasse, Struktur oder Enum privat gemacht werden kann, ist es in Ordnung, in derselben Datei enthalten zu sein.  Dadurch werden Kompilierungsprobleme mit Unity vermieden, und es wird sichergestellt, dass eine ordnungsgemäße Codeabstraktion auftritt. Außerdem werden Konflikte und Breaking Changes reduziert, wenn Code geändert werden muss.
+Wenn die Klasse, Struktur oder Enumeration privat gemacht werden kann, ist es in Ordnung, in derselben Datei enthalten zu sein.  Dadurch werden Kompilierungsprobleme mit Unity vermieden, und es wird sichergestellt, dass eine ordnungsgemäße Codeabstraktion auftritt. Außerdem werden Konflikte und Breaking Changes reduziert, wenn Code geändert werden muss.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -395,9 +395,9 @@ public class MyClass
 }
 ```
 
-### <a name="initialize-enums"></a>Initialisieren von Enums
+### <a name="initialize-enums"></a>Initialisieren von Enumerationen
 
-Um sicherzustellen, dass alle Aufumerungen ab 0 ordnungsgemäß initialisiert werden, bietet .NET Ihnen eine gute Verknüpfung, um die -Enum automatisch zu initialisieren, indem Sie einfach den ersten (Starter)-Wert hinzufügen. (z.B. Wert 1 = 0 Verbleibende Werte sind nicht erforderlich)
+Um sicherzustellen, dass alle Enumerationen ab 0 ordnungsgemäß initialisiert werden, bietet Ihnen .NET eine aufgeräumte Verknüpfung, um die Enumeration automatisch zu initialisieren, indem Sie einfach den ersten Wert (Starter) hinzufügen. (z.B. Wert 1 = 0 Verbleibende Werte sind nicht erforderlich)
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -421,9 +421,9 @@ public enum ValueType
 }
 ```
 
-### <a name="order-enums-for-appropriate-extension"></a>Reihenfolge von Aufzählen für die entsprechende Erweiterung
+### <a name="order-enums-for-appropriate-extension"></a>Reihenfolgenen für die entsprechende Erweiterung
 
-Es ist wichtig, dass, wenn eine Enum wahrscheinlich in Der Zukunft erweitert wird, um Standardwerte am Anfang der Enumerierung zu bestellen, dies sicherstellt, dass Enum-Indizes von neuen Ergänzungen nicht betroffen sind.
+Es ist wichtig, dass, wenn eine Enumeration wahrscheinlich in Zukunft erweitert wird, um Standardwerte am Anfang der Enumeration zu ordnen, dies sicherstellt, dass Enumerationsindizes nicht von neuen Hinzufügungen betroffen sind.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -470,11 +470,11 @@ public enum SDKType
 }
 ```
 
-### <a name="review-enum-use-for-bitfields"></a>Überprüfen der enum-Verwendung für Bitfelder
+### <a name="review-enum-use-for-bitfields"></a>Überprüfen der Enumerationsverwendung für Bitfelder
 
-Wenn für eine -Enum mehrere Zustände als Wert erforderlich sind, z. B. "Handedness = Left & Right". Anschließend muss die Enum ordnungsgemäß mit BitFlags verziert werden, damit sie ordnungsgemäß verwendet werden kann.
+Wenn es möglich ist, dass eine Enumeration mehrere Zustände als Wert erfordert, z. B. Handheit = Links & Rechts. Anschließend muss die Enumeration ordnungsgemäß mit BitFlags versehen werden, damit sie ordnungsgemäß verwendet werden kann.
 
-Die Datei "Handedness.cs" verfügt dafür über eine konkrete Implementierung.
+Die Datei "Handedness.cs" verfügt über eine konkrete Implementierung dafür.
 
 ### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -502,12 +502,12 @@ public enum Handedness
 
 ### <a name="hard-coded-file-paths"></a>Hart codierte Dateipfade
 
-Gehen Sie beim Generieren von Zeichenfolgendateipfaden und insbesondere beim Schreiben hart codierter Zeichenfolgenpfade wie folgt vor:
+Gehen Sie wie folgt vor, wenn Sie Zeichenfolgendateipfade generieren und insbesondere hart codierte Zeichenfolgenpfade schreiben:
 
-1. Verwenden Sie nach Möglichkeit [ `Path` C#-APIs](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) wie `Path.Combine` oder `Path.GetFullPath` .
+1. Verwenden Sie nach Möglichkeit die [ `Path` APIs](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) von C#, z. `Path.Combine` B. oder `Path.GetFullPath` .
 1. Verwenden Sie / oder [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) anstelle von \ oder \\ \\ .
 
-Diese Schritte stellen sicher, dass MRTK sowohl auf Windows- als auch auf Unix-basierten Systemen funktioniert.
+Diese Schritte stellen sicher, dass MRTK sowohl auf Windows als auch auf Unix-basierten Systemen funktioniert.
 
 ### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -532,14 +532,14 @@ string cleanedFilePath = Path.GetFullPath(unknownSourceFilePath);
 
 ## <a name="best-practices-including-unity-recommendations"></a>Bewährte Methoden, einschließlich Unity-Empfehlungen
 
-Bei einigen Zielplattformen dieses Projekts muss die Leistung berücksichtigt werden. Achten Sie vor diesem Hintergrund immer auf Vorsicht, wenn Sie Arbeitsspeicher in häufig aufgerufenem Code in engen Updateschleifen oder Algorithmen zuweisen.
+Einige der Zielplattformen dieses Projekts müssen die Leistung berücksichtigen. Achten Sie vor diesem Hintergrund immer darauf, dass Sie Arbeitsspeicher in häufig aufgerufenem Code in engen Updateschleifen oder Algorithmen zuweisen.
 
 ### <a name="encapsulation"></a>Kapselung
 
-Verwenden Sie immer private Felder und öffentliche Eigenschaften, wenn Der Zugriff auf das Feld von außerhalb der Klasse oder Struktur erforderlich ist.  Stellen Sie sicher, dass Sie das private Feld und die öffentliche Eigenschaft zusammenfinden. Dies erleichtert es, auf einen Blick zu erkennen, was die Eigenschaft zurückbewegt und dass das Feld per Skript geändert werden kann.
+Verwenden Sie immer private Felder und öffentliche Eigenschaften, wenn der Zugriff auf das Feld von außerhalb der Klasse oder Struktur benötigt wird.  Stellen Sie sicher, dass Sie das private Feld und die öffentliche Eigenschaft zusammenfinden. Dadurch können Sie auf einen Blick leichter erkennen, was die Eigenschaft unterstützt und ob das Feld durch ein Skript geändert werden kann.
 
 > [!NOTE]
-> Die einzige Ausnahme ist dies für Datenstrukturen, die erfordern, dass die Felder von serialisiert werden. Dabei ist eine Datenklasse erforderlich, damit alle öffentlichen Felder für die `JsonUtility` Serialisierung funktionieren.
+> Die einzige Ausnahme ist dies für Datenstrukturen, die erfordern, dass die Felder von serialisiert werden, wobei eine Datenklasse über alle öffentlichen Felder verfügen `JsonUtility` muss, damit die Serialisierung funktioniert.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -594,9 +594,9 @@ public float AbsMyValue
 }
 ```
 
-### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Zwischenspeichern und Serialisieren von Werten in der Szene/im Prefab, wann immer dies möglich ist
+### <a name="cache-values-and-serialize-them-in-the-sceneprefab-whenever-possible"></a>Zwischenspeichern von Werten und serialisieren sie nach Möglichkeit in der Szene/im Prefab
 
-Vor dem Hintergrund von HoloLens ist es am besten, die Leistung zu optimieren und Verweise in der Szene oder im Prefab zwischenzuspeichern, um die Speicherbelegung der Laufzeit zu begrenzen.
+Im Hinblick auf die HoloLens empfiehlt es sich, die Leistung zu optimieren und Verweise in der Szene oder im Prefab zwischenzuspeichern, um die Speicherbelegung der Laufzeit einzuschränken.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -628,9 +628,9 @@ private void Update()
 }
 ```
 
-### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>Cacheverweise auf Materialien, rufen Sie nicht jedes Mal ".material" auf.
+### <a name="cache-references-to-materials-do-not-call-the-material-each-time"></a>Zwischenspeichern von Verweisen auf Materialien, nicht jedes Mal ".material" aufrufen
 
-Unity erstellt jedes Mal, wenn Sie ".material" verwenden, ein neues Material. Dies verursacht einen Speicherverlust, wenn die Bereinigung nicht ordnungsgemäß durchgeführt wird.
+Unity erstellt jedes Mal, wenn Sie ".material" verwenden, ein neues Material, das zu einem Speicherverlust führt, wenn es nicht ordnungsgemäß bereinigt wird.
 
 #### <a name="dont"></a>Sie sollten auf keinen Fall
 
@@ -673,12 +673,12 @@ public class MyClass
 > [!NOTE]
 > Verwenden Sie alternativ die Unity-Eigenschaft "SharedMaterial", die nicht jedes Mal, wenn darauf verwiesen wird, ein neues Material erstellt.
 
-### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Verwenden [der plattformabhängigen](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) Kompilierung, um sicherzustellen, dass das Toolkit den Build nicht auf einer anderen Plattform unterbricht
+### <a name="use-platform-dependent-compilation-to-ensure-the-toolkit-wont-break-the-build-on-another-platform"></a>Verwenden der [plattformabhängigen Kompilierung,](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html) um sicherzustellen, dass das Toolkit den Build auf einer anderen Plattform nicht unterbricht
 
-- Verwenden `WINDOWS_UWP` Sie , um UWP-spezifische, nicht-Unity-APIs zu verwenden. Dadurch wird verhindert, dass sie versuchen, im Editor oder auf nicht unterstützten Plattformen ausgeführt zu werden. Dies entspricht `UNITY_WSA && !UNITY_EDITOR` und sollte zugunsten von verwendet werden.
-- Verwenden `UNITY_WSA` Sie , um UWP-spezifische Unity-APIs wie den -Namespace zu `UnityEngine.XR.WSA` verwenden. Dies wird im Editor ausgeführt, wenn die Plattform auf UWP und in erstellten UWP-Apps festgelegt ist.
+- Verwenden Sie `WINDOWS_UWP` , um UWP-spezifische, nicht Unity-APIs zu verwenden. Dadurch wird verhindert, dass sie versuchen, im Editor oder auf nicht unterstützten Plattformen auszuführen. Dies entspricht `UNITY_WSA && !UNITY_EDITOR` und sollte zugunsten von verwendet werden.
+- Verwenden Sie `UNITY_WSA` , um UWP-spezifische Unity-APIs wie den Namespace zu `UnityEngine.XR.WSA` verwenden. Dies wird im Editor ausgeführt, wenn die Plattform auf UWP festgelegt ist, sowie in integrierten UWP-Apps.
 
-Dieses Diagramm kann Ihnen dabei helfen, je nach Ihren Anwendungsfällen und den build-Einstellungen, die Sie `#if` erwarten, zu entscheiden, welche Verwendet werden soll.
+Dieses Diagramm kann Ihnen bei der Entscheidung helfen, welche Sie `#if` verwenden möchten, abhängig von Ihren Anwendungsfällen und den erwarteten Buildeinstellungen.
 
 |Plattform | UWP IL2CPP | UWP .NET | Editor |
 | --- | --- | --- | --- |

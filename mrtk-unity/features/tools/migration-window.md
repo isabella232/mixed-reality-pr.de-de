@@ -1,16 +1,16 @@
 ---
-title: Migrationsfenster
+title: Migrationszeitfenster
 description: Dokumentation zum Migrieren zu einem Update im MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: a6e268dd28be2a3d485f937ec5b5ce6b1f29851f
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 9d960d01e738736edd452a124db5c306b5d752ce
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647124"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176128"
 ---
 # <a name="migration-window"></a>Migrationszeitfenster
 
@@ -28,7 +28,7 @@ Um das Fenster zu öffnen, wählen **Sie** Mixed Reality Toolkit Utilities Migra
 ### <a name="object-mode"></a>Objektmodus
 
 Wenn Sie die Registerkarte Objekte auswählen, wird das ObjektFeld aktiviert, in das der Benutzer alle Game-Objekte aus der aktuell geöffneten Szene oder prefabs aus dem zu migrierenden Projektordner ziehen und ablegen kann.
-Durch Drücken der *Schaltfläche entfernen (-),* die rechts neben dem aufgelisteten Objekt angezeigt wird, wird das Objekt aus der Auswahlliste entfernt.
+Durch Drücken der Schaltfläche zum Entfernen *(-),* die rechts neben dem aufgelisteten Objekt angezeigt wird, wird das Objekt aus der Auswahlliste entfernt.
 
 Sobald alle gewünschten Objekte in der Liste  enthalten sind, werden durch Drücken der Schaltfläche Migrieren die änderungen angewendet, die für die ausgewählte Implementierung des Migrationshandlers erforderlich sind, auf alle Komponenten in der Auswahl, die mit der Implementierung übereinstimmen.
 
@@ -40,7 +40,7 @@ Ermöglicht dem Benutzer das Ziehen und Ablegen von Szenenobjekten, die zu migri
 
 ![Auswählen von Szenen für die Migration](../images/migration-window/MRTK_Scene_Selection.png)
 
-### <a name="project-mode"></a>Projektmodus
+### <a name="project-mode"></a>Project Modus
 
 Wenn Sie auf *die Schaltfläche* Migrieren klicken, wird die Komponente aktualisiert, auf die die Implementierung des Migrationshandlers für alle Prefabs und Szenen im Projekt ausgerichtet ist.
 

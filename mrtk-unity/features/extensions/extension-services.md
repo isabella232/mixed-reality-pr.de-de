@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: a39616a091a3f6800c429dc797ec2f3130e96f40
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: f8f7b8dbac0355c226e4bbfae39246e5c1c58f69
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144539"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176275"
 ---
 # <a name="extension-services"></a>Erweiterungsdienste
 
@@ -19,7 +19,7 @@ Erweiterungsdienste sind Komponenten, die die Funktionalität des Mixed Reality-
 ## <a name="creating-an-extension-service"></a>Erstellen eines Erweiterungsdiensts
 
 Die effizienteste Methode zum Erstellen eines Erweiterungsdiensts ist die Verwendung des Assistenten zum Erstellen [des Erweiterungsdiensts.](../tools/extension-service-creation-wizard.md)
-Wählen Sie zum Starten des Assistenten zum Erstellen des Erweiterungsdiensts Mixed Reality **Toolkit > Hilfsprogramme > Erweiterungsdienst erstellen aus.**
+Wählen Sie zum Starten des Assistenten zum Erstellen des Erweiterungsdiensts Mixed Reality Toolkit > **Utilities > Create Extension Service (Erweiterungsdienst erstellen) aus.**
 
 ![Assistent zum Erstellen des Erweiterungsdiensts](../images/extension-wizard/ExtensionServiceCreationWizard.png)
 
@@ -36,7 +36,7 @@ Nach Abschluss des Assistenten kann die Dienstfunktionalität implementiert werd
 
 Um für eine Anwendung zugänglich zu sein, muss der neue Erweiterungsdienst beim Mixed Reality Werden registriert werden.
 
-Der Assistent zum Erstellen des Erweiterungsdiensts kann verwendet werden, um den Dienst zu registrieren.
+Der Assistent zum Erstellen des Erweiterungsdiensts kann zum Registrieren des Diensts verwendet werden.
 
 ![Registrierung des Assistenten zum Erstellen des Erweiterungsdiensts](../images/extension-wizard/ExtensionServiceWizardRegister.png)
 
@@ -62,9 +62,9 @@ if (MixedRealityServiceRegistry.TryGetService<INewService>(out service))
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [Systeme, Erweiterungsdienste und Datenanbieter](../../architecture/systems-extensions-providers.md)
-- [Assistent zum Erstellen eines Erweiterungsdiensts](../tools/extension-service-creation-wizard.md)
+- [Assistent zum Erstellen des Erweiterungsdiensts](../tools/extension-service-creation-wizard.md)
 - [IMixedRealityExtensionService](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService)
 - [MixedRealityServiceRegistry](xref:Microsoft.MixedReality.Toolkit.MixedRealityServiceRegistry)

@@ -1,18 +1,18 @@
 ---
-title: 'Szenensystem: Erste Schritte'
+title: Erste Schritte mit dem Szenensystem
 description: Landing Page für Szenensystem mit MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 205b89d4defdeb5418a8a82896551d681cccde3d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 16adf431498f8146ca2cc60565e59dc8ae03fd92
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144307"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177573"
 ---
-# <a name="scene-system-overview"></a>Szenensystemübersicht
+# <a name="scene-system-getting-started"></a>Erste Schritte mit dem Szenensystem
 
 ## <a name="when-to-use-the-scene-system"></a>Wann das Szenensystem verwendet werden soll
 
@@ -32,7 +32,7 @@ Standardmäßig verwendet das Szenensystem ein Szenenobjektpaar (DefaultManagerS
 
 >! [Hinweis] Wenn das Projekt benutzerdefinierte Manager- und Beleuchtungsszenen verwendet, kann diese Meldung sicher ignoriert werden.
 
-In den folgenden Abschnitten wird beschrieben, wie Sie diese Meldung auflösen, je nachdem, welche Methode zum Importieren des Mixed Reality Wurde.
+In den folgenden Abschnitten wird beschrieben, wie Sie diese Meldung auflösen, je nachdem, welche Methode zum Importieren des Mixed Reality Toolkits verwendet wurde.
 
 ### <a name="unity-package-manager-upm"></a>Unity Paket-Manager (UPM)
 
@@ -40,21 +40,21 @@ In den Mixed Reality Toolkit-UPM-Paketen werden die Szenensystemressourcen als B
 
 Führen Sie zum Importieren die folgenden Schritte aus:
 
-- Fenster   >  **auswählen Paket-Manager**
+- Wählen Sie **Fenster**  >  **Paket-Manager**
 - Wählen Sie **Mixed Reality Toolkit Foundation aus.**
-- Suchen von **Szenensystemressourcen** im Abschnitt **"Beispiele"**
+- Suchen **von Szenensystemressourcen** im **Abschnitt "Beispiele"**
 
   ![Importieren von Szenensystemressourcen](../images/scene-system/UpmImportSceneSystemResources.png)
 
 - Wählen Sie **Importieren aus.**
 
-### <a name="asset-unitypackage-files"></a>Assetdateien (UNITYPACKAGE)
+### <a name="asset-unitypackage-files"></a>Assetdateien (.unitypackage)
 
 Wenn der Ordner SceneSystemResources gelöscht oder während des Imports deaktiviert wurde, kann er mit den folgenden Schritten wiederhergestellt werden:
 
-- Auswählen **von "Assets** Import Package Custom  >    >  **Package" (Benutzerdefiniertes Paket** importieren)
-- Öffnen Sie das **Paket Microsoft.MixedReality.Toolkit.Foundation.**
-- Stellen Sie sicher, dass **Services/SceneSystem/SceneSystemResources** und alle untergeordneten Optionen ausgewählt sind.
+- Wählen Sie **Assets** Import Package Custom Package  >  **(Benutzerdefiniertes Paket**  >  **importieren) aus.**
+- Öffnen Sie **das Paket Microsoft.MixedReality.Toolkit.Foundation.**
+- Stellen Sie **sicher, dass Services/SceneSystem/SceneSystemResources** und alle untergeordneten Optionen ausgewählt sind.
 
   ![Erneutes Importieren von Szenensystemressourcen](../images/scene-system/ReimportSceneSystemResources.png)
 
@@ -69,7 +69,7 @@ Wenn der Ordner SceneSystemResources gelöscht oder während des Imports deaktiv
 
 ## <a name="editor-settings"></a>Editor-Einstellungen
 
-Standardmäßig erzwingt das Szenensystem mehrere Verhaltensweisen im Unity-Editor. Wenn Sie eines dieser Verhaltensweisen mit vielen Händen finden, können sie im Abschnitt **Editoreinstellungen** Ihres Szenensystemprofils deaktiviert werden.
+Standardmäßig erzwingt das Szenensystem mehrere Verhaltensweisen im Unity-Editor. Wenn Sie eines dieser Verhaltensweisen sehr stark finden, können sie im Abschnitt **Editor Einstellungen** Ihres Szenensystemprofils deaktiviert werden.
 
 - `Editor Manage Build Settings:` Wenn true, aktualisiert der Dienst Ihre Buildeinstellungen automatisch und stellt sicher, dass alle Manager-, Beleuchtungs- und Inhaltsszenen hinzugefügt werden. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle über die Buildeinstellungen wünschen.
 
@@ -77,6 +77,6 @@ Standardmäßig erzwingt das Szenensystem mehrere Verhaltensweisen im Unity-Edit
 
 - `Editor Manage Loaded Scenes:` Bei "true" stellt der Dienst sicher, dass die Manager-, Inhalts- und Beleuchtungsszenen immer geladen werden. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle darüber haben möchten, welche Szenen im Editor geladen werden.
 
-- `Editor Enforce Lighting Scene Types:` Bei "true" stellt der Dienst sicher, dass nur die in definierten beleuchtungsbezogenen `PermittedLightingSceneComponentTypes` Komponenten in Beleuchtungsszenen zulässig sind. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle über den Inhalt von Beleuchtungsszenen wünschen.
+- `Editor Enforce Lighting Scene Types:` Bei "true" stellt der Dienst sicher, dass nur die in definierten beleuchtungsbezogenen Komponenten `PermittedLightingSceneComponentTypes` in Beleuchtungsszenen zulässig sind. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle über den Inhalt von Beleuchtungsszenen wünschen.
 
 ![Einstellungen des Szenensystem-Editors](../images/scene-system/MRTK_SceneSystemProfileEditorSettings.PNG)

@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 06/18/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Schieberegler,
-ms.openlocfilehash: be19806e0202f6cb3ddcea1a80c2c40811aff4f2
-ms.sourcegitcommit: e9661d3bab061f9499134226ef3b87751ec56277
+ms.openlocfilehash: c8a2b6c377762918bfff79008ab34d3dfe4e20bb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112426876"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177503"
 ---
 # <a name="sliders"></a>Schieberegler
 
@@ -32,7 +32,7 @@ Drag and drop the **PinchSlider** prefab into the scene hierarchy. Wenn Sie eine
 Es wird auch empfohlen, die folgende Hierarchie zu verwenden:
 
 - PinchSlider: Enthält den SliderComponent
-  - TouchCollider: Collider, der den gesamten auswählbaren Bereich des Schiebereglers enthält. Aktiviert das Snap-To-Position-Verhalten.
+  - TouchCollider: Collider mit dem gesamten auswählbaren Bereich des Schiebereglers. Aktiviert das Verhalten "An Position ausrichten".
   - SliderThumb: Enthält den verschiebbaren Daumen
   - TrackVisuals: Enthält die Spur und alle anderen Visuals.
   - OtherVisuals: Enthält alle anderen Visuals.
@@ -47,7 +47,7 @@ Schieberegler machen die folgenden Ereignisse verfügbar:
 - OnHoverEntered: Wird aufgerufen, wenn die Hand bzw. der Controller des Benutzers über den Schieberegler mit der Nah- oder Ferninteraktion geschwebt wird.
 - OnHoverExited: Wird aufgerufen, wenn sich die Hand/der Controller des Benutzers nicht mehr in der Nähe des Schiebereglers befindet.
 
-## <a name="configuring-slider-bound-and-axis"></a>Konfigurieren von Schieberegler und Achse
+## <a name="configuring-slider-bound-and-axis"></a>Konfigurieren der Schieberegler-Gebundene und -Achse
 
 Sie können den Start- und den Endpunkt des Schiebereglers direkt verschieben, indem Sie die Ziehpunkte in der Szene verschieben:
 
@@ -61,7 +61,7 @@ Wenn Sie die Ziehpunkte nicht verwenden können, können Sie stattdessen die Sta
 
 **Thumb Root** Das Gameobject, das den Schiebereglerfinger enthält.
 
-**An Position ausrichten** Gibt an, ob dieser Schieberegler an der angegebenen Position auf dem Schieberegler positioniert wird
+**An Position ausrichten** Gibt an, ob dieser Schieberegler an der angegebenen Position auf dem Schieberegler positioniert wird.
 
 **Ist berührbar** Gibt an, ob dieser Schieberegler über Touchereignisse steuerbar ist.
 
@@ -88,7 +88,7 @@ Wenn Sie die Ziehpunkte nicht verwenden können, können Sie stattdessen die Sta
 **Schieberegler– Endabstand** An der Stelle, an der die Schiebereglerspur endet, als Abstand vom Mittelpunkt entlang der Schiebereglerachse in einheiten des lokalen Raums.
 
 Wenn der Benutzer den Wert der Schiebereglerachse im Editor aktualisiert, wird die Transformation aktualisiert, wenn Visuelle Elemente nachverfolgen oder Visuelle Teilstriche angegeben werden.
-Insbesondere wird ihre lokale Position zurückgesetzt, und ihre lokale Drehung wird auf die Ausrichtung der Schiebereglerachse festgelegt.
+Insbesondere wird ihre lokale Position zurückgesetzt, und ihre lokale Drehung ist so festgelegt, dass sie der Ausrichtung der Schiebereglerachsentiert.
 Die Skalierung wird nicht geändert.
 Wenn Teilstriche über eine Grid Object Collection-Komponente verfügen, werden Layout und CellWidth oder CellHeight entsprechend der Schiebereglerachse aktualisiert.
 

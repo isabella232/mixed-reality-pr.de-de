@@ -1,16 +1,16 @@
 ---
-title: Impuls-Shader
+title: Pulse-Shader
 description: Beschreibung zu Pulse-Shadern im MRTK.
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: e03c021689b6701b86ae25ba9fa253ece1368428
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 087806d48c7304d43f8383285cbaa2a12d8bf99a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144948"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176308"
 ---
 # <a name="pulse-shader"></a>Pulse-Shader
 
@@ -29,9 +29,9 @@ In den folgenden Materialien **wird SR_Triangles** Shader verwendet. Sie können
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Stellen Sie für das Beispiel für ein räumliches Gitternetz sicher, dass MRTK_Pulse_ArticulatedHandMeshBlue.mat oder MRTK_Pulse_ArticulatedHandMeshPurple.mat unter MRTK-Einstellungen -> Räumliche Wahrnehmung -> Anzeigeeinstellungen -> sichtbares Material zugewiesen ist.
+Stellen Sie für das Beispiel für ein räumliches Gitternetz sicher, dass MRTK_Pulse_ArticulatedHandMeshBlue.mat oder MRTK_Pulse_ArticulatedHandMeshPurple.mat unter MRTK Einstellungen -> Spatial Awareness -> Display Einstellungen -> Visible Material zugewiesen ist.
 
-Stellen Sie für das Handgitternetzbeispiel sicher, dass MRTK_Pulse_SpatialMeshBlue.mat oder MRTK_Pulse_SpatialMeshPurple.mat in "ArticulatedHandMesh.prefab" zugewiesen ist. Dies sollte in den MRTK-Einstellungen -> Eingabe -> Hand Tracking -> Hand Mesh Prefab selbst zugewiesen werden.
+Stellen Sie für das Handgitternetzbeispiel sicher, dass MRTK_Pulse_SpatialMeshBlue.mat oder MRTK_Pulse_SpatialMeshPurple.mat in "ArticulatedHandMesh.prefab" zugewiesen ist, das selbst in MRTK Einstellungen -> Input -> Hand Tracking -> Hand Mesh Prefab zugewiesen werden sollte.
 
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -41,10 +41,10 @@ Der Handnetz-Shader verwendet UVs, um den Pulse entlang des Handgitternetzes zuz
 
 Ähnlich wie bei HoloLens 2 Shell können Sie mit dem Handstrahl zeigen und in die Luft tippen, um einen pulsierenden Effekt auf das räumliche Netz zu generieren. Die Beispielszene enthält das ExampleSpatialMesh-Objekt, bei dem es sich um räumliche Testgittermodelldaten für den Spielmodus von Unity handelt. Dieses Objekt wird deaktiviert und auf dem Gerät ausgeblendet.
 
-Das Skript **PulseShaderSpatialMeshHandler.cs** generiert den Pulse-Effekt auf das räumliche Gitternetz an der Trefferpunktposition, wenn `PulseOnSelect` true ist. Die -Eigenschaft kann auch im Material selbst für eine sich wiederholende Animation auf  `Auto Pulse` TRUE festgelegt werden.  In der Beispielszene wird dieses Skript an das PulseShaderSpatialMeshParent-Prefab angefügt.  Auf dieses Prefab wird unter der Spatial Awareness Profile through Runtime Spatial Mesh Prefab-Eigenschaft verwiesen. Zur Laufzeit wird das PulseShaderSpatialMeshParent-Prefab instanziiert und der Hierarchie räumlicher Gitternetze hinzugefügt (dieses Verhalten kann nur auf dem Gerät im Editor nicht beobachtet werden).
+Das Skript **PulseShaderSpatialMeshHandler.cs** generiert den Pulse-Effekt auf das räumliche Gitternetz an der Trefferpunktposition, wenn `PulseOnSelect` true ist. Die  `Auto Pulse` -Eigenschaft kann auch im Material selbst für eine sich wiederholende Animation auf TRUE festgelegt werden.  In der Beispielszene ist dieses Skript an das Prefab PulseShaderSpatialMeshParent angefügt.  Auf dieses Prefab wird unter der Spatial Awareness Profile through Runtime Spatial Mesh Prefab-Eigenschaft verwiesen. Während der Laufzeit wird das PulseShaderSpatialMeshParent-Prefab instanziiert und der Hierarchie des räumlichen Gitternetzes hinzugefügt (nur auf dem Gerät kann dieses Verhalten im Editor nicht beobachtet werden).
 
-## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>Hand Mesh-Beispiel: PulseShaderHandMeshExample.unity
+## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>Hand Mesh-Beispiel – PulseShaderHandMeshExample.unity
 
-Diese Beispielszene veranschaulicht die Handgittervisualisierung mithilfe eines Pulse Shaders. Wenn eine Hand vom HoloLens-Gerät erkannt wird, wird die Pulse-Animation einmal ausgelöst. Dieses visuelle Feedback kann die Interaktionsvertrauen des Benutzers erhöhen. 
+In dieser Beispielszene wird die Visualisierung des Handgitternetzes mithilfe des Pulse-Shaders veranschaulicht. Wenn eine Hand vom HoloLens Gerät erkannt wird, wird die Pulse-Animation einmal ausgelöst. Dieses visuelle Feedback kann die Interaktionssicherheit des Benutzers erhöhen. 
 
-**Das Skript PulseShaderHandMeshHandler.cs** generiert pulse effect auf das zugewiesene Material. Standardmäßig ist "Pulse On Hand Detected" aktiviert.
+Das Skript **PulseShaderHandMeshHandler.cs** generiert Einen Pulse-Effekt auf das zugewiesene Material. Standardmäßig ist "Pulse On Hand Detected" aktiviert.

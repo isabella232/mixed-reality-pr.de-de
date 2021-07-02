@@ -1,43 +1,43 @@
 ---
-title: TextPrefab
+title: Text-Prefab
 description: Übersicht über TextPrefab in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, TMP,
-ms.openlocfilehash: 7d50a35e3761cf2313a43fcc6ad43ed5bd3064a1
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 1839109043cfad9a20697c5d6526b349fd7ea2e4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489290"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175644"
 ---
-# <a name="text-prefab"></a>Text prefab
+# <a name="text-prefab"></a>Text-Prefab
 
-Diese Prefabs sind für die Renderingqualität in der Windows Mixed Reality. Weitere Informationen finden Sie in der Richtlinie [Text in Unity](/windows/mixed-reality/text-in-unity) auf Microsoft Windows Dev Center.
+Diese Prefabs sind für die Renderingqualität in Windows Mixed Reality optimiert. Weitere Informationen finden Sie [in](/windows/mixed-reality/text-in-unity) der Richtlinie Text in Unity auf Microsoft Windows Dev Center.
 
 ## <a name="prefabs"></a>Prefabs
 
 ### <a name="3dtextprefab"></a>3DTextPrefab
 
-3D Text Mesh-Prefab (Assets/MRTK/SDK/StandardAssets/Prefabs/Text) mit optimiertem Skalierungsfaktor bei 2-Meter-Entfernung. (Lesen Sie die anweisungen unten.)
+3D-Textmesh-Prefab (Assets/MRTK/SDK/StandardAssets/Prefabs/Text) mit optimiertem Skalierungsfaktor bei einer Entfernung von 2 Metern. (Lesen Sie die folgenden Anweisungen.)
 
 ### <a name="uitextprefab"></a>UITextPrefab
 
-Ui Text Mesh Prefab (Assets/MRTK/SDK/StandardAssets/Prefabs/Text) mit optimiertem Skalierungsfaktor bei 2 Meter Entfernung. (Lesen Sie die anweisungen unten.)
+Ui Text Mesh prefab (Assets/MRTK/SDK/StandardAssets/Prefabs/Text) with optimized scaling factor at 2-meter distance(Ui-Textmesh-Prefab (Assets/MRTK/SDK/StandardAssets/Prefabs/Text)) mit optimiertem Skalierungsfaktor bei einer Entfernung von 2 Metern. (Lesen Sie die folgenden Anweisungen.)
 
 ## <a name="fonts"></a>Schriftarten
 
-Open-Source-Schriftarten (Assets/MRTK/Core/StandardAssets/Fonts), die im Mixed Reality sind.
+Open-Source-Schriftarten (Assets/MRTK/Core/StandardAssets/Fonts), die in Mixed Reality Toolkit enthalten sind.
 
 > [!IMPORTANT]
-> Text Prefab verwendet die Open Source-Schriftart "Sewikik". Um Text Prefab mit einer anderen Schriftart zu verwenden, importieren Sie die Schriftartdatei, und befolgen Sie die folgenden Anweisungen. Das folgende Beispiel zeigt, wie Sie die Schriftart "Segoe UI" mit text prefab verwenden.
+> Text Prefab verwendet die Open Source-Schriftart "Selawik". Um text prefab mit einer anderen Schriftart zu verwenden, importieren Sie die Schriftartdatei, und befolgen Sie die folgenden Anweisungen. Das folgende Beispiel zeigt die Verwendung der Schriftart "Segoe UI" mit Text prefab.
 
 ![Importieren Segoe UI Schriftartdatei](../images/text-prefab/TextPrefabInstructions01.png)
 
-1. Weisen Sie dem Material 3DTextSegoeUI.mat eine Schriftarttextur zu.
+1. Weisen Sie die Schrifttextur dem 3DTextSegoeUI.mat-Material zu.
 
-    ![Zuweisen der Schriftarttextur](../images/text-prefab/TextPrefabInstructions02.png)
+    ![Zuweisen der Schrifttextur](../images/text-prefab/TextPrefabInstructions02.png)
 
 1. Wählen Sie auf dem Material 3DTextSegoeUI.mat den Shader Custom/3DTextShader.shader aus.
 
@@ -49,7 +49,7 @@ Open-Source-Schriftarten (Assets/MRTK/Core/StandardAssets/Fonts), die im Mixed R
 
 ### <a name="working-with-fonts-in-unity"></a>Arbeiten mit Schriftarten in Unity
 
-Beim Hinzufügen einer neuen 3D-Textmesh zu einer Szene in Unity gibt es zwei Probleme, die visuell offensichtlich sind. Eine, die Schriftart wird sehr groß und zwei, die Schriftart erscheint sehr unscharf. Es ist auch interessant zu beachten, dass der Standardmäßige Schriftgradwert im Inspector auf 0 (null) festgelegt ist. Das Ersetzen dieses Nullwerts durch 13 zeigt keinen Größenunterschied, da 13 tatsächlich der Standardwert ist.
+Beim Hinzufügen einer neuen 3D-Textmesh zu einer Szene in Unity gibt es zwei Probleme, die visuell offensichtlich sind. Eine, die Schriftart wird sehr groß und zwei, die Schriftart erscheint sehr unscharf. Es ist auch interessant zu beachten, dass der Standardmäßige Schriftgradwert im Inspector auf 0 (null) festgelegt ist. Wenn Sie diesen Nullwert durch 13 ersetzen, wird kein Größenunterschied angezeigt, da 13 tatsächlich der Standardwert ist.
 
 Unity geht davon aus, dass alle neuen Elemente, die einer Szene hinzugefügt werden, eine Unity-Einheit oder eine 100%ige Transformationsskala aufweisen, was auf der HoloLens etwa eine Meter groß ist. Bei Schriftarten ist das Begrenzungsfeld für eine 3D-Textmesh standardmäßig bei etwa einer Meter Höhe enthalten.
 
@@ -61,18 +61,18 @@ In beiden Fällen ermöglicht die Skalierung des Textobjekts oder Containers auf
 
 ### <a name="ui-text"></a>Text der Benutzeroberfläche
 
-Wenn Sie einer Szene ein Benutzeroberflächen- oder Canvas-basiertes Textelement hinzufügen, ist die Größenunterschiede immer noch größer. Die Unterschiede in den beiden Größen sind etwa 1000 %, wodurch der Skalierungsfaktor für benutzeroberflächenbasierte Textkomponenten auf 0,00046 (0,0004586111116) oder 0,0005 für den gerundeten Wert erhöht würde.
+Wenn Sie einer Szene ein benutzeroberflächen- oder canvasbasiertes Text-Element hinzufügen, ist die Größenunterschiede immer noch größer. Die Unterschiede in den beiden Größen betragen etwa 1000 %, wodurch der Skalierungsfaktor für benutzeroberflächenbasierte Textkomponenten auf 0,00046 (0,0004586111116) oder 0,0005 für den gerundeten Wert erhöht würde.
 
-**Haftungsausschluss:** Der Standardwert einer beliebigen Schriftart kann durch die Texturgröße dieser Schriftart oder die Art und Weise, wie die Schriftart in Unity importiert wurde, beeinträchtigt werden. Diese Tests wurden basierend auf der standardmäßigen Arial-Schriftart in Unity sowie auf einer anderen importierten Schriftart durchgeführt.
+**Haftungsausschluss:** Der Standardwert einer beliebigen Schriftart kann durch die Texturgröße dieser Schriftart oder die Art und Weise, wie die Schriftart in Unity importiert wurde, beeinträchtigt werden. Diese Tests wurden basierend auf der Arial-Standardschriftart in Unity sowie auf einer anderen importierten Schriftart ausgeführt.
 
 ![Schriftgrad mit Skalierungsfaktoren](../images/text-prefab/TextPrefabInstructions07.png)
 
-### <a name="text3dselawikmat"></a>[Text3DSewikik.mat](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Materials/)
+### <a name="text3dselawikmat"></a>[Text3DSelawik.mat](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Materials/)
 
-Material für 3DTextPrefab mit Okklusionsunterstützung. Erfordert 3DTextShader.shader
+Material für 3DTextPrefab mit Occlusion-Unterstützung. Erfordert 3DTextShader.shader
 
-![Standardschriftart im Vergleich zu 3DTextSegoeUI-Material](../images/text-prefab/TextPrefabInstructions06.png)
+![Standardschriftartmaterial im Vergleich zu 3DTextSegoeUI-Material](../images/text-prefab/TextPrefabInstructions06.png)
 
 ### <a name="text3dshadershader"></a>[Text3DShader.shader](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/StandardAssets/Shaders)
 
-Shader für 3DTextPrefab mit Okklusionsunterstützung.
+Shader für 3DTextPrefab mit Occlusion-Unterstützung.

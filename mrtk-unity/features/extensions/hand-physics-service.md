@@ -1,48 +1,48 @@
 ---
-title: Übersicht über den Hand physics-Dienst
-description: Dokumentation zur Verwendung des Hand-Physics-Erweiterungsdiensts in MRTK
+title: Hand-Physikalischer Dienst
+description: Dokumentation zur Verwendung des Erweiterungsdiensts "Hand physics" in MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 751aec148d3a40da4728d2fdd60a60402b59a4de
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145082"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176256"
 ---
-# <a name="hand-physics-extension-service"></a>Hand physikalischer Erweiterungsdienst
+# <a name="hand-physics-service"></a>Hand-Physikalischer Dienst
 
 ![Hand Physics Extension Service](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 
-Der Hand physikalischer Dienst ermöglicht feste Körperkollisionsereignisse und Interaktionen mit artikulierten Händen.
+Der Hand-Physikalische Dienst ermöglicht feste Körperkollisionsereignisse und Interaktionen mit artikulierten Händen.
 
 ## <a name="enabling-the-extension"></a>Aktivieren der Erweiterung
 
-Um die Erweiterung zu aktivieren, öffnen Sie Ihr RegisteredServiceProvider-Profil. Klicken `Register a new Service Provider` Sie auf diese Schaltfläche, um eine neue Konfiguration hinzuzufügen. Wählen Sie im Feld Komponententyp die Option HandPhysicsService aus. Wählen Sie im Feld Konfigurationsprofil das standardmäßige Hand-Physics-Profil aus, das in der Erweiterung enthalten ist.
+Um die Erweiterung zu aktivieren, öffnen Sie Ihr RegisteredServiceProvider-Profil. Klicken Sie `Register a new Service Provider` auf diese Schaltfläche, um eine neue Konfiguration hinzuzufügen. Wählen Sie im Feld Komponententyp die Option HandPhysicsService aus. Wählen Sie im Feld Konfigurationsprofil das in der Erweiterung enthaltene Standardprofil für die Handmechanik aus.
 
 ## <a name="profile-options"></a>Profiloptionen
 
-### <a name="hand-physics-layer"></a>Hand physics layer (Hand-Physik-Schicht)
+### <a name="hand-physics-layer"></a>Hand-Physikalische Schicht
 
-Steuert die Ebene, zu der die instanziierten Handgelenke wechseln.
+Steuert die Ebene, zu der die instanziierten Handverbindungen gelangen.
 
-Während der Dienst standardmäßig auf die "Standardebene" (0) festgelegt ist, wird empfohlen, eine separate Ebene für Handkörperobjekte zu verwenden. Andernfalls kann es zu unerwünschten Kollisionen und/oder ungenauen Raycasts gekommen sein.
+Während der Dienst standardmäßig die "Standardebene" (0) verwendet, wird empfohlen, eine separate Ebene für Objekte der Handmechanik zu verwenden. Andernfalls kann es zu unerwünschten Kollisionen und/oder ungenauen Raycasts kommen.
 
-### <a name="finger-tip-kinematic-body-prefab"></a>Kinematisches Körper-Prefab für Fingerspitzen
+### <a name="finger-tip-kinematic-body-prefab"></a>Finger tip kinematic body prefab
 
-Steuert, welches Prefab an Fingerspitzen instanziiert wird. Damit der Dienst wie erwartet funktioniert, erfordert das Prefab:
+Steuert, welches Prefab auf Fingerspitzen instanziiert wird. Damit der Dienst wie erwartet funktioniert, erfordert das Prefab Folgendes:
 
-- Eine Festkörperkomponente, bei der isKinematic aktiviert ist
+- Eine starre Komponente, bei der isKinematic aktiviert ist
 - Ein Collider
 - `JointKinematicBody`-Komponente
 
-### <a name="use-palm-kinematic-body"></a>Verwenden des kinematischen Handflächenkörpers
+### <a name="use-palm-kinematic-body"></a>Verwenden des kinetischen Handflächenkörpers
 
 Steuert, ob der Dienst versucht, ein Prefab auf der Handfläche zu instanziieren.
 
-### <a name="palm-kinematic-body-prefab"></a>Wad kinematic body prefab
+### <a name="palm-kinematic-body-prefab"></a>Handflächen-Kinematic Body Prefab
 
 Wenn `UsePalmKinematicBody` aktiviert ist, ist dies das Prefab, das instanziiert wird. Genau wie `FingerTipKinematicBodyPrefab` erfordert dieses Prefab:
 

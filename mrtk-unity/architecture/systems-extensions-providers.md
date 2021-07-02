@@ -1,16 +1,16 @@
 ---
-title: Systemerweiterungsanbieter
-description: MRTK-Erweiterungen und Datenanbieter
+title: Systeme, Erweiterungsdienste und Datenanbieter
+description: MRTK-Erweiterungen und -Datenanbieter
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Systemerweiterungen,
-ms.openlocfilehash: 358294702971b7d9e8de1b842d3bc1844e5dc9bf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 668df40cec9b9443b37f63d80fcf8a1ca2e0bcbc
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121468"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177425"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>Systeme, Erweiterungsdienste und Datenanbieter
 
@@ -32,31 +32,31 @@ Jedes der aufgeführten Systeme wird im Konfigurationsprofil der MixedRealityToo
 
 ## <a name="extensions"></a>Erweiterungen
 
-Erweiterungsdienste sind Komponenten, die die Funktionalität des Mixed Reality-Toolkits erweitern. Alle Erweiterungsdienste müssen angeben, dass sie die -Schnittstelle [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) implementieren.
+Erweiterungsdienste sind Komponenten, die die Funktionalität des Mixed Reality Toolkits erweitern. Alle Erweiterungsdienste müssen angeben, dass sie die [`IMixedRealityExtensionService`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityExtensionService) -Schnittstelle implementieren.
 
 Informationen zum Erstellen von Erweiterungsdiensten finden Sie im Artikel [Erweiterungsdienste.](../features/extensions/extension-services.md)
 
-Um für das MRTK zugänglich zu sein, werden Erweiterungsdienste mithilfe des Abschnitts Erweiterungen des Konfigurationsprofils der MixedRealityToolkit-Komponente registriert und konfiguriert.
+Um für das MRTK zugänglich zu sein, werden Erweiterungsdienste im Abschnitt Erweiterungen des Konfigurationsprofils der MixedRealityToolkit-Komponente registriert und konfiguriert.
 
 ![Konfigurieren eines Erweiterungsdiensts](../features/images/profiles/ConfiguredExtensionService.png)
 
 ## <a name="data-providers"></a>Datenanbieter
 
-Datenanbieter sind Komponenten, die nach ihrem Namen Daten für einen Mixed Reality Toolkit-Dienst bereitstellen. Alle Datenanbieter müssen angeben, dass sie die -Schnittstelle [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) implementieren.
+Datenanbieter sind Komponenten, die gemäß ihrem Namen Daten für einen Mixed Reality Toolkit-Dienst bereitstellen. Alle Datenanbieter müssen angeben, dass sie die [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) -Schnittstelle implementieren.
 
 > [!NOTE]
-> Nicht alle Dienste erfordern Datenanbieter. Von den Mixed Reality Toolkits sind die Eingabe- und Räumliche Wahrnehmungssysteme die einzigen Dienste, die Datenanbieter nutzen.
+> Nicht alle Dienste erfordern Datenanbieter. Von den Systemen des Mixed Reality Toolkits sind die Systeme Input und Spatial Awareness die einzigen Dienste, die Datenanbieter nutzen.
 
 Um für den spezifischen MRTK-Dienst zugänglich zu sein, werden Datenanbieter im Konfigurationsprofil des Diensts registriert.
 
-Anwendungscode greifen über die -Schnittstelle auf Datenanbieter [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) zu. Um den Zugriff zu vereinfachen, können Datenanbieter auch über die `CoreServices` Hilfsklasse abgerufen werden.
+Anwendungscode greift über die -Schnittstelle auf Datenanbieter [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) zu. Um den Zugriff zu vereinfachen, können Datenanbieter auch über die Hilfsklasse abgerufen `CoreServices` werden.
 
 ```c#
 var inputSimulationService = CoreServices.GetDataProvider<IInputSimulationService>(CoreServices.InputSystem);
 ```
 
 > [!IMPORTANT]
-> Obwohl `IMixedRealityDataProvider` von `IMixedRealityService` erbt, werden Datenanbieter nicht bei `MixedRealityServiceRegistry` registriert. Für den Zugriff auf Datenanbieter muss der Anwendungscode die Dienstinstanz abfragen, für die sie registriert wurden (z. B. Eingabesystem).
+> Obwohl `IMixedRealityDataProvider` von `IMixedRealityService` erbt, sind Datenanbieter nicht bei `MixedRealityServiceRegistry` registriert. Für den Zugriff auf Datenanbieter muss Anwendungscode die Dienstinstanz abfragen, für die sie registriert wurden (z. B. Eingabesystem).
 
 ### <a name="input"></a>Eingabe
 
@@ -81,7 +81,7 @@ if (dataProviderAccess != null)
 }
 ```
 
-Der Zugriff auf einen Datenanbieter für das Kerneingabesystem kann auch mithilfe der `CoreServices` Hilfsklasse vereinfacht werden.
+Der Zugriff auf einen Datenanbieter für das Kerneingabesystem kann auch mithilfe der Hilfsklasse vereinfacht `CoreServices` werden.
 
 ```c#
 var inputSimulationService = CoreServices.GetInputSystemDataProvider<IInputSimulationService>();
@@ -98,11 +98,11 @@ Informationen zum Schreiben eines Datenanbieters für das MRTK-Eingabesystem fin
 
 ### <a name="spatial-awareness"></a>Räumliche Wahrnehmung
 
-Das MRTK-Raumbewusstseinssystem nutzt nur Datenanbieter, die die -Schnittstelle [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) implementieren.
+Das MRTK-System für räumliche Wahrnehmung verwendet nur Datenanbieter, die die [`IMixedRealitySpatialAwarenessObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver) -Schnittstelle implementieren.
 
-![Anbieter von Räumlichen Wahrnehmungssystemdaten](../features/images/spatial-awareness/SpatialAwarenessProfile.png)
+![Systemdatenanbieter für räumliche Wahrnehmung](../features/images/spatial-awareness/SpatialAwarenessProfile.png)
 
-Im folgenden Beispiel wird der Zugriff auf die registrierten Räumlichen Gitternetz-Datenanbieter und das Ändern der Sichtbarkeit der Gitternetze veranschaulicht.
+Im folgenden Beispiel wird der Zugriff auf die registrierten Datenanbieter für räumliche Gitternetze und das Ändern der Sichtbarkeit der Gitternetze veranschaulicht.
 
 ```c#
 IMixedRealityDataProviderAccess dataProviderAccess =
@@ -121,7 +121,7 @@ if (dataProviderAccess != null)
 }
 ```
 
-Der Zugriff auf einen Datenanbieter für das zentrale räumliche Bewusstseinssystem kann auch mithilfe der `CoreServices` Hilfsklasse vereinfacht werden.
+Der Zugriff auf einen Datenanbieter für das Kernsystem für räumliche Wahrnehmung kann auch mithilfe der Hilfsklasse vereinfacht `CoreServices` werden.
 
 ```c#
 var dataProvider = CoreServices.GetSpatialAwarenessSystemDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
@@ -132,9 +132,9 @@ if (dataProvider != null)
 ```
 
 > [!NOTE]
-> Das Räumliche Bewusstseinssystem gibt nur Datenanbieter zurück, die für die Plattform unterstützt werden, auf der die Anwendung ausgeführt wird.
+> Das System für räumliche Wahrnehmung gibt nur Datenanbieter zurück, die für die Plattform unterstützt werden, auf der die Anwendung ausgeführt wird.
 
-Informationen zum Schreiben eines Datenanbieters für das MRTK-System für räumliche Wahrnehmung finden Sie unter Erstellen eines Systemdatenanbieters für [räumliche Wahrnehmung.](../features/spatial-awareness/create-data-provider.md)
+Informationen zum Schreiben eines Datenanbieters für das MRTK-System zur räumlichen Wahrnehmung finden Sie unter [Erstellen eines Systemdatenanbieters](../features/spatial-awareness/create-data-provider.md)für räumliche Wahrnehmung.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,14 +5,14 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK-Pakete,
-ms.openlocfilehash: e3e7a2d06cd38d7a9e8daf579f1a312904a86280
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 524783c48b82722aec26648ea54477a6c7bcd4ae
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345073"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177322"
 ---
-# <a name="mixed-reality-toolkit-and-unity-package-manager"></a>Mixed Reality Toolkit und Unity Paket-Manager
+# <a name="using-the-unity-package-manager"></a>Verwenden des Unity-Paket-Managers
 
 Ab Version 2.5.0 kann das Microsoft Mixed Reality Toolkit mithilfe des [Mixed Reality Feature Tools](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)in unity Paket-Manager (UPM) integriert werden, wenn Unity 2019.4 und höher verwendet wird.
 
@@ -51,8 +51,8 @@ Im Gegensatz zur Verwendung von Assetpaketdateien (UNITYPACKAGE) `com.microsoft.
 Führen Sie die folgenden Schritte aus, um eines oder mehrere der Beispiele zu verwenden:
 
 1. Navigieren Sie im Unity-Editor zu . `Window` > `Package Manager`
-1. Wählen Sie in der Liste der Pakete die Option aus. `Mixed Reality Toolkit Examples`
-1. Suchen der gewünschten Stichproben in der `Samples` Liste
+1. Wählen Sie in der Liste der Pakete folgende Option aus: `Mixed Reality Toolkit Examples`
+1. Suchen Sie die gewünschten Stichproben in der `Samples` Liste.
 1. Klicken Sie auf `Import into Project`.
 
 ![Importieren von Beispielen](../features/images/packaging/MRTK_ExamplesUpm.png)
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um eines oder mehrere der Beispiele zu v
 Wenn ein Beispielpaket aktualisiert wird, bietet Unity die Option zum Aktualisieren importierter Beispiele.
 
 > [!NOTE]
-> Beim Aktualisieren eines importierten Beispiels werden alle Änderungen überschrieben, die an diesem Beispiel und den zugeordneten Ressourcen vorgenommen wurden.
+> Beim Aktualisieren eines importierten Beispiels werden alle Änderungen überschrieben, die an diesem Beispiel und den zugehörigen Ressourcen vorgenommen wurden.
 
 ## <a name="see-also"></a>Weitere Informationen
 

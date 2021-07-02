@@ -1,16 +1,16 @@
 ---
-title: Übersicht über den Scene Transition Service
+title: Szenenübergangsdienst
 description: Dokumentation zum Szenenübergang in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, SceneTransition,
-ms.openlocfilehash: 5ea76b572b3cddc097e8266d3c31f152b63a13aa
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b645012a055f693fdac794b79e24fd20154fdb65
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144287"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176208"
 ---
 # <a name="scene-transition-service"></a>Szenenübergangsdienst
 
@@ -26,9 +26,9 @@ Um die Erweiterung zu aktivieren, öffnen Sie Ihr RegisteredServiceProvider-Prof
 
 ### <a name="use-default-progress-indicator"></a>Standardfortschrittsanzeige verwenden
 
-Wenn diese Überprüfung aktiviert ist, wird das Standard-Statusanzeige-Prefab verwendet, wenn beim Aufruf von Kein Statusindikatorobjekt bereitgestellt wird. Wenn ein Statusindikatorobjekt bereitgestellt wird, wird der Standardwert `DoSceneTransition.` ignoriert.
+Wenn diese Aktiviert ist, wird das Standard-Statusanzeige-Prefab verwendet, wenn beim Aufrufen von Kein Statusindikatorobjekt bereitgestellt wird. Wenn ein Statusindikatorobjekt bereitgestellt wird, wird der Standardwert `DoSceneTransition.` ignoriert.
 
-### <a name="use-fade-color"></a>Verwenden der Ausblenden-Farbe
+### <a name="use-fade-color"></a>Verwenden der Farbe "Ausblenden"
 
 Wenn diese Überprüfung angezeigt wird, wird vom Übergangsdienst während des Übergangs eine Ausblendung angewendet. Diese Einstellung kann zur Laufzeit über die -Eigenschaft des Diensts geändert `UseFadeColor` werden.
 
@@ -38,30 +38,30 @@ Steuert die Farbe des Fade-Effekts. Alpha wird ignoriert. Diese Einstellung kann
 
 ### <a name="fade-targets"></a>Ausblenden von Zielen
 
-Steuert, welche Kameras einen Einblendeffekt haben, der auf sie angewendet wird. Diese Einstellung kann zur Laufzeit über die -Eigenschaft des Diensts geändert `FadeTargets` werden.
+Steuert, auf welche Kameras ein Fadeneffekt angewendet wird. Diese Einstellung kann zur Laufzeit über die -Eigenschaft des Diensts geändert `FadeTargets` werden.
 
 Einstellung | Zielkameras
 --- | --- | ---
-Main | Wendet den Ausblendeffekt auf die Hauptkamera an.
-Benutzeroberfläche | Wendet den Ausblendeffekt auf Kameras auf der Ui-Ebene an. (Wirkt sich nicht auf die Überlagerungsbenutzeroberfläche aus)
-Alles | Gilt sowohl für Haupt- als auch für Benutzeroberflächenkameras.
+Main | Wendet den Fade-Effekt auf die Hauptkamera an.
+Benutzeroberfläche | Wendet einen Fadeneffekt auf Kameras auf der Benutzeroberflächenebene an. (Wirkt sich nicht auf die Überlagerungsbenutzeroberfläche aus))
+Alle | Gilt sowohl für Hauptkameras als auch für Benutzeroberflächenkameras.
 Benutzerdefiniert | Gilt für einen benutzerdefinierten Satz von Kameras, die über bereitgestellt werden. `SetCustomFadeTargetCameras`
 
-### <a name="fade-out-time--fade-in-time"></a>Ausblendzeit/Einblendungszeit
+### <a name="fade-out-time--fade-in-time"></a>Ausblendzeit/Zeit einblenden
 
-Standardeinstellungen für die Dauer einer Einblendung beim Eingeben/Beenden eines Übergangs. Diese Einstellungen können zur Laufzeit über die Eigenschaften und des Diensts geändert `FadeOutTime` `FadeInTime` werden.
+Standardeinstellungen für die Dauer einer Ausblendung beim Eingeben/Beenden eines Übergangs. Diese Einstellungen können zur Laufzeit über die Eigenschaften und des Diensts `FadeOutTime` `FadeInTime` geändert werden.
 
-### <a name="camera-fader-type"></a>Kamerafadertyp
+### <a name="camera-fader-type"></a>Kamerablendertyp
 
-Welche `ICameraFader` Klasse zum Anwenden eines Blendeffekts auf Kameras verwendet werden soll. Die `CameraFaderQuad` Standardklasse instanziiert ein Quader mit einem transparenten Material vor der Zielkamera in der Nähe der Clipebene. Ein anderer Ansatz kann die Verwendung eines Posteffektsystems sein.
+Welche `ICameraFader` Klasse zum Anwenden eines Fadeneffekts auf Kameras verwendet werden soll. Die Standardklasse instanziiert ein Quader mit einem transparenten Material vor der Zielkamera in der Nähe `CameraFaderQuad` der Clipebene. Ein anderer Ansatz könnte die Verwendung eines Post-Effects-Systems sein.
 
 ## <a name="using-the-extension"></a>Verwenden der Erweiterung
 
-Sie verwenden den Übergangsdienst, indem Sie Aufgaben übergeben, die ausgeführt werden, während die Kamera ausgeblendet wird.
+Sie verwenden den Übergangsdienst, indem Sie Aufgaben übergeben, die ausgeführt werden, während die Kamera ausgeblendet ist.
 
 ### <a name="using-scene-system-tasks"></a>Verwenden von Szenensystemaufgaben
 
-In den meisten Fällen verwenden Sie aufgaben, die vom SceneSystem-Dienst bereitgestellt werden:
+In den meisten Fällen verwenden Sie vom SceneSystem-Dienst bereitgestellte Aufgaben:
 
 ```c#
 private async void TransitionToScene()
@@ -78,7 +78,7 @@ private async void TransitionToScene()
 }
 ```
 
-### <a name="using-custom-tasks"></a>Verwenden von benutzerdefinierten Aufgaben
+### <a name="using-custom-tasks"></a>Verwenden benutzerdefinierter Aufgaben
 
 In anderen Fällen möchten Sie möglicherweise einen Übergang durchführen, ohne tatsächlich eine Szene zu laden:
 
@@ -173,7 +173,7 @@ private async Task FadeAudio(float targetVolume, float duration)
 
 ## <a name="using-the-progress-indicator"></a>Verwenden der Statusanzeige
 
-Eine Statusanzeige ist alles, was die -Schnittstelle `IProgressIndicator` implementiert. Dies kann in Form eines Begrüßungsbildschirms, eines 3D-Tagalong-Ladeindikators oder eines anderen Indikators, der Feedback zum Fortschritt des Übergangs liefert, verwendet werden.
+Eine Statusanzeige ist alles, was die -Schnittstelle `IProgressIndicator` implementiert. Dies kann in Form eines Begrüßungsbildschirms, eines 3D-Tagalong-Ladeindikators oder eines anderen Indikators, der Feedback zum Übergangsfortschritt liefert, verwendet werden.
 
 Wenn im SceneTransitionService-Profil überprüft wird, wird eine Statusanzeige `UseDefaultProgressIndicator` instanziiert, wenn ein Übergang beginnt. Für die Dauer des Übergangs können auf die Eigenschaften und dieses Indikators über die Methoden und des `Progress` `Message` Diensts `SetProgressValue` zugegriffen `SetProgressMessage` werden.
 
