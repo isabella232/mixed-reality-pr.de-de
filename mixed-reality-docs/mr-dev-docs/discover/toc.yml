@@ -8,29 +8,29 @@
   href: mr-learning-overview.md
 - name: Erweitern Ihres Entwurfsprozesses
   href: case-study-expanding-the-design-process-for-mixed-reality.md
-- name: Ausführen des MRTK-Beispielhubs
-  href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/running-examples-hub'
 - name: Entwerfen von Hologrammen
   href: designing-holograms.md
 - name: Fallstudien – Übersicht
   href: case-studies-overview.md
-- name: HoloLens-Hardware
+- name: Hardware
   items:
-    - name: HoloLens 2 – Hardwaredetails
-      href: /hololens/hololens2-hardware
-    - name: HoloLens (1. Gen.) – Hardwaredetails
-      href: /hololens/hololens1-hardware
-- name: Immersive Headsets
-  items:
-    - name: Immersives Headset – Hardwaredetails
-      href: immersive-headset-hardware-details.md
-    - name: Navigieren auf der Startseite von Windows Mixed Reality
-      href: navigating-the-windows-mixed-reality-home.md
-    - name: VR-Handbuch für Enthusiasten
-      href: /windows/mixed-reality/enthusiast-guide/
-    - name: Standortbezogene Unterhaltung
-      href: location-based-experiences.md
+    - name: HoloLens
+      items:
+        - name: HoloLens 2 – Hardwaredetails
+          href: /hololens/hololens2-hardware
+        - name: HoloLens (1. Gen.) – Hardwaredetails
+          href: /hololens/hololens1-hardware
+    - name: Immersive Headsets
+      items:
+        - name: Immersives Headset – Hardwaredetails
+          href: immersive-headset-hardware-details.md
+        - name: Navigieren auf der Startseite von Windows Mixed Reality
+          href: navigating-the-windows-mixed-reality-home.md
+        - name: VR-Handbuch für Enthusiasten
+          href: /windows/mixed-reality/enthusiast-guide/
+        - name: Standortbezogene Unterhaltung
+          href: location-based-experiences.md
+    - name: Accessories
+      href: hardware-accessories.md
 - name: Communityressourcen
   href: community.md
-- name: Hardware-Zubehör
-  href: hardware-accessories.md
