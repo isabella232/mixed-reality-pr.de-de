@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Interaktion, Design, HoloLens, Hände, fern, Zeigen und Ausführen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Handstrahlen, Objektmanipulation, MRTK, Mixed Reality Toolkit, DoF, Freiheitsgrade
-ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a33927396d0d9a349d655245355733d24ea7d9ad
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299805"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600609"
 ---
 # <a name="point-and-commit-with-hands"></a>Zeigen und Ausführen mit den Händen
 
@@ -32,7 +32,7 @@ Das Zeigen und Ausführen mit den Händen ist ein Eingabemodell, mit dem Benutze
 <tr>
      <td><strong>Eingabemodell</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (1. Generation)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
 </tr>
 <tr>
@@ -204,9 +204,9 @@ Das Konzept des Zeigens und Ausführens für die ferne Interaktion wurde für da
 
 Standardmäßig stellt das MRTK einen vorkonfigurierten Handlichtstrahl ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers)) zur Verfügung, der den gleichen visuellen Status wie der System-Handlichtstrahl der Shell aufweist. Es wird im Eingabeprofil des MRTK unter „Zeiger“ zugewiesen. In einem immersiven Headset werden dieselben Strahlen für die Motion-Controller verwendet.
 
-* [MRTK – Zeigerprofil](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
-* [MRTK – Eingabesystem](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
-* [MRTK – Zeiger](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
+* [MRTK – Zeigerprofil](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK – Eingabesystem](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK – Zeiger](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

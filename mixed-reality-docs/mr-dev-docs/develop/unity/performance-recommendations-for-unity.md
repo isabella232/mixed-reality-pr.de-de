@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: Grafik, CPU, GPU, Rendering, Garbage Collection, Hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 7d672af0c9309e4dd2965cc3cb315671a720a58a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300155"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743437"
 ---
 # <a name="performance-recommendations-for-unity"></a>Leistungsempfehlungen für Unity
 
@@ -309,7 +309,7 @@ Daher können mit dem Verringern der Zahl der Vorgänge im Fragmentshader im All
 
 #### <a name="unity-standard-shader-alternatives"></a>Alternativen zu den Unity-Standardshadern
 
-Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) bereit, der für Mixed Reality-Projekte optimiert wurde.
+Anstatt ein physikalisch basiertes Rendering (PBR) oder einen anderen hochwertigen Shader zu verwenden, sollten Sie einen leistungsfähigeren und kostengünstigeren Shader nutzen. Im [Mixed Reality-Toolkit](https://github.com/Microsoft/MixedRealityToolkit-Unity) steht der [MRTK-Standardshader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) bereit, der für Mixed Reality-Projekte optimiert wurde.
 
 Unity bietet darüber hinaus unlit (nicht beleuchtet), vertex lit (nach Scheitelpunkten beleuchtet), diffuse (diffus), und weitere vereinfachte Shaderoptionen, die im Vergleich schneller arbeiten als der Unity-Standardshader. Detailliertere Informationen finden Sie unter [Usage and Performance of Built-in Shaders](https://docs.unity3d.com/Manual/shader-Performance.html) (Verwendung und Leistung der integrierten Shader).
 

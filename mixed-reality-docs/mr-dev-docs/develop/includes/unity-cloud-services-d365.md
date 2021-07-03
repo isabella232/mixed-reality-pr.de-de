@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ee466c65bd6de166b15042f93989b5d8829c8d59
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2f7424bc25e358bd368e651af7d906930afe6ccc
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98582999"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741961"
 ---
 # <a name="azure-remote-rendering"></a>[Azure Remote Rendering](#tab/arr)
 
@@ -27,14 +27,3 @@ Azure Spatial Anchors (ASA) ist ein plattformübergreifender Dienst, der es Ihne
 * [Ermitteln nahe gelegener Anker](/azure/spatial-anchors/how-tos/set-up-coarse-reloc-unity)
 * [Tutorial: Sitzungs- und geräteübergreifendes Freigeben von Ankern](/azure/spatial-anchors/tutorials/tutorial-share-anchors-across-devices?tabs=VS%2cAndroid)  
 * [Azure Spatial Anchors-Beispiele (GitHub)](https://github.com/Azure/azure-spatial-anchors-samples) 
-
-# <a name="dynamics-365"></a>[Dynamics 365](#tab/D365)
-
-Microsoft Dynamics 365-Leitfäden sind eine Mixed Reality-Anwendung für Microsoft HoloLens, mit der Operatoren während der praktischen Arbeit lernen, weil ihnen holografische Anweisungen geboten werden, wann und wo sie gebraucht werden. Diese Anweisungskarten sind mit dem Ort, an dem die Arbeit erledigt werden muss, visuell verknüpft, und können Bilder, Videos und holografische 3D-Modelle beinhalten.
-
-* [Übersicht](/dynamics365/mixed-reality/guides/) 
-* [Erste Schritte](/dynamics365/mixed-reality/guides/get-started) 
-* [Ich bin Administrator](/dynamics365/mixed-reality/guides/setup)
-* [Ich bin Autor](/dynamics365/mixed-reality/guides/authoring-overview) 
-* [Ich bin Operator](/dynamics365/mixed-reality/guides/operator-overview) 
-* [Entitätsreferenz für Entwickler](/dynamics365/mixed-reality/guides/developer-entity-reference)
