@@ -24,7 +24,7 @@
   href: overview.md
 - name: Zeiger
   href: pointers.md
-- name: Spracheingabe/-ausgabe
+- name: Spracheingabe
   href: speech.md
-- name: Eyetracking
+- name: Eyetracking – Blickverfolgung
   href: eye-tracking/toc.yml

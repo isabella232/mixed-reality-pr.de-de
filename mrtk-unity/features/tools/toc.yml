@@ -1,4 +1,4 @@
-- name: Erstellen-Fenster
+- name: Fenster „Build“ (Erstellen)
   href: build-window.md
 - name: Asset Swap-Hilfsprogramm
   href: asset-swap-utility.md
@@ -12,7 +12,7 @@
   href: holographic-remoting.md
 - name: Eingabefunktionsverwendungs-Tool
   href: input-feature-usage-tool.md
-- name: Migrationsfenster
+- name: Migrationszeitfenster
   href: migration-window.md
 - name: Optimierungsfenster
   href: optimize-window.md

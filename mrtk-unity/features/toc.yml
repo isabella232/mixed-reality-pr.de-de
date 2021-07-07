@@ -6,6 +6,8 @@
   href: diagnostics/toc.yml
 - name: Beispielszenen
   href: example-scenes/toc.yml
+- name: Einstellungen für die Benutzererfahrung
+  href: experience-settings/toc.yml
 - name: Experimentell
   href: experimental/toc.yml
 - name: Erweiterungen
