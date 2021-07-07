@@ -1,7 +1,7 @@
 - name: Andocken
   href: dock.md
-- name: Handphysikdienst
-  href: hand-physics-service.md
+- name: Elastisches System
+  href: elastic-system.md
 - name: Interaktives Element
   href: interactive-element.md
 - name: Mixed Reality-Tastatur

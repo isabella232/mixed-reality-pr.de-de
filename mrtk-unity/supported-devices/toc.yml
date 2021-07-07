@@ -1,12 +1,12 @@
-- name: Bereitstellen in Hololens und WMR
+- name: Bereitstellen in HoloLens und WMR
   href: wmr-mrtk.md
 - name: Bereitstellen in Oculus Quest
   href: oculus-quest-mrtk.md
+- name: Bereitstellen unter Android und iOS (AR Foundation)
+  href: using-ar-foundation.md
 - name: Verwenden von Leap Motion
   href: leap-motion-mrtk.md
 - name: Erkennen von Controllern im MRTK
   href: controllers-mrtk.md
-- name: Verwenden von AR Foundation
-  href: using-ar-foundation.md
 - name: Erkennen von Plattformfunktionen
   href: detecting-platform-capabilities.md

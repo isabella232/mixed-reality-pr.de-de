@@ -2,6 +2,8 @@
   href: index.md
 - name: Beispiel-Hub testen
   href: running-examples-hub.md
+- name: Beispielszenen
+  href: running-example-scenes.md
 - name: Konfiguration
   href: configuration/toc.yml
 - name: Übersicht der unterstützten Geräte
@@ -16,7 +18,7 @@
   href: updates-deployment/toc.yml
 - name: Pakete
   href: packages/toc.yml
-- name: Versionsinformationen
+- name: Versionshinweise
   href: release-notes/toc.yml
 - name: Roadmap
   href: roadmap.md

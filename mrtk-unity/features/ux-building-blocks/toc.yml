@@ -1,6 +1,6 @@
 - name: App-Leiste
   href: app-bar.md
-- name: Umgebendes Feld
+- name: Begrenzungsrahmen
   href: bounding-box.md
 - name: Begrenzungssteuerelement
   href: bounds-control.md
@@ -10,6 +10,8 @@
   href: constraint-manager.md
 - name: Dialog
   href: dialog.md
+- name: Verweilen
+  href: dwell.md
 - name: Fingerspitzenvisualisierung
   href: fingertip-visualization.md
 - name: Hand Coach

@@ -1,8 +1,8 @@
 - name: Verwenden des Unity-Paket-Managers
   href: usingupm.md
-- name: Dialogfeld „MRTFK-Konfiguration“
+- name: Dialogfeld „MRTK-Konfiguration“
   href: mrtk-configuration-dialog.md
-- name: Erste Schritte mit MRTK und XRSDK
+- name: Erste Schritte mit MRTK und XR SDK
   href: getting-started-with-mrtk-and-xrsdk.md
-- name: Konfigurationshandbuch für Mixed Reality
+- name: MRTK-Profilkonfigurations-Leitfaden
   href: mixed-reality-configuration-guide.md

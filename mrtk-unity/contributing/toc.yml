@@ -1,6 +1,8 @@
+- name: Authors
+  href: authors.md
 - name: Mitwirkung – Übersicht
   href: contributing.md
-- name: Richtlinien für das Codieren
+- name: Codierungsrichtlinien
   href: coding-guidelines.md
 - name: Schreiben und Ausführen von Tests
   href: unit-tests.md
@@ -10,5 +12,5 @@
   href: pull-requests.md
 - name: Experimentelle Features
   href: experimental-features.md
-- name: Aktuelle Änderungen
+- name: Breaking Changes
   href: breaking-changes.md
