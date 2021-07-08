@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Sprachbefehle, Spracheingabe
 ms.localizationpriority: high
-ms.openlocfilehash: 3aea23d5a259e555f47ca9ea41d77f345c977aeb
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 9422c16781af33fa3d68d7f6046e3a86c4b36b44
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982935"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403371"
 ---
 # <a name="9-using-speech-commands"></a>9. Verwenden von Sprachbefehlen
 
@@ -23,7 +23,14 @@ In diesem Tutorial erfahren Sie, wie Sie Sprachbefehle erstellen und diese globa
 * Erfahren, wie Sprachbefehle erstellt werden
 * Erfahren, wie Sie Sprachbefehle global und lokal gesteuert werden
 
-[!INCLUDE[](includes/ensuring-microphone-capabality.md)]
+## <a name="ensuring-the-microphone-capability-is-enabled"></a>Sicherstellen, dass die Mikrofonfunktion aktiviert ist
+
+Wählen Sie im Unity-Menü „Mixed Reality > Toolkit > Utilities > **Configure Project for MRTK**“ (Mixed Reality Toolkit > Hilfsprogramme > Projekt für MRTK konfigurieren) aus, um das Fenster **MRTK Project Configurator** (MRTK-Projektkonfigurator) zu öffnen, und überprüfen Sie dann im Abschnitt **UWP Capabilities** (UWP-Funktionen), ob die Funktion **Enable Microphone Capability** (Mikrofonfunktion aktivieren) abgeblendet ist:
+
+![Aktivieren der Mikrofonfunktion](images/mr-learning-base/base-09-section1-step1-1.png)
+
+> [!NOTE]
+> Die Mikrofonfunktion hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
 
 ## <a name="creating-speech-commands"></a>Erstellen von Sprachbefehlen
 
@@ -137,6 +144,6 @@ In den beiden nächsten Tutorialreihen, den [Azure Spatial Anchors-Tutorials](mr
 Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, besteht Ihre nächste Aufgabe darin, sich mit den Grundbausteinen von Mixed Reality-Anwendungen vertraut zu machen.
 
 > [!div class="nextstepaction"]
-> [Grundlegende Interaktionen](../../../out-of-scope/mrtk-101.md)
+> [Grundlegende Interaktionen](/windows/mixed-reality/mrtk-unity/)
 
 Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](../unity-development-overview.md#1-getting-started) zurückkehren.

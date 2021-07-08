@@ -7,16 +7,16 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, Test, Mixed Reality Toolkit, MRTK-Version 2, MRTK, Tools, SDK, HoloLens, HoloLens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, plattformübergreifend
-ms.openlocfilehash: 4aa21cbee75c4c362abfd609add922ad9c922682
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3d46b92dbf3182ca5a50a8e106d2b947e4f7120f
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98584749"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394284"
 ---
 # <a name="introducing-mrtk-for-unreal"></a>Einführung in MRTK für Unreal
 
-![MRTK](../../design/images/MRTK_UX_Hero.png)
+![MRTK-Bannerbild](../../design/images/MRTK_UX_Hero.png)
 
 ## <a name="what-is-mixed-reality-toolkit-mrtk"></a>Was ist das Mixed Reality Toolkit (MRTK)?
 
@@ -25,10 +25,6 @@ MRTK ist ein fantastisches Open-Source-Toolkit, das seit der ersten Veröffentli
 Das Mixed Reality-Toolkit für Unreal (MRTK-Unreal) umfasst eine Reihe von Komponenten in Form von Plug-Ins, Beispielen und Dokumentationsmaterial, um die Entwicklung von Mixed Reality-Anwendungen mit der Unreal Engine zu unterstützen. Das Toolkit besteht derzeit aus Folgendem:
 * [UX-Tools für Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), das Code, Blaupausen und Beispiele bereitstellt, um UX-Funktionen für HoloLens 2-Anwendungen zu implementieren.
 * [Grafiktools für Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal), das hilft, die visuelle Genauigkeit von Mixed Reality-Anwendungen zu verbessern und gleichzeitig Leistungsbudgets einzuhalten.
-
-<br>
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
 Werfen Sie einen Blick in die [MRTK-Dokumentation auf GitHub](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html), und beginnen Sie mit den Installationsanleitungen für [UX-Tools](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) oder [Grafiktools](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md).
 
@@ -39,6 +35,11 @@ Wir haben MRTK Unreal modular aufgebaut, es ist also nicht notwendig, jeden Teil
 ### <a name="performant"></a>Leistungsfähig
 
 Für das Arbeiten mit mobilen Plattformen haben wir MRTK Unter mit dem Augenmerk auf Leistung aufgebaut. Das ist äußerst wichtig, und wir wollten sicherstellen, dass die Tools sich Ihnen nicht in den Weg stellen.
+
+## <a name="project-setup"></a>Projekteinrichtung
+
+> [!div class="nextstepaction"]
+> [Unreal-Engine und MRTK herunterladen](unreal-project-setup.md)
 
 ## <a name="see-also"></a>Siehe auch
 

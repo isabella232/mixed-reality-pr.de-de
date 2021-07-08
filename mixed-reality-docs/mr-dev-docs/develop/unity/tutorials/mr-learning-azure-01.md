@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Azure, Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Blob Storage, Azure Table Storage, Azure Spatial Anchor, Azure Bot Framework, Azure Cloud Services, Azure Custom Vision, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f82253ce4894038a8d8e34b06f5d699289fef691
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: c38f3102adfb5178a4d2b5429eeb24c0733db50a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982913"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175528"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1. Azure Cloud Services für HoloLens 2
 
@@ -86,10 +86,9 @@ Befolgen Sie zunächst die Anweisungen unter [Initialisieren des Projekts und de
 
 1. [Erstellen des Unity-Projekts](mr-learning-base-02.md#creating-the-unity-project), das mit einem passenden Namen bezeichnet wird, beispielsweise *Azure-Cloudtutorials*
 2. [Wechseln der Buildplattform](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importieren des Mixed Reality-Toolkits](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Erstellen und Konfigurieren der Szene](mr-learning-base-02.md#creating-and-configuring-the-scene) und Bezeichnen der Szene mit einem passenden Namen, z. B. *AzureCloudServices*
+3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Importieren des Mixed Reality Toolkits und Konfigurieren des Unity-Projekts](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Erstellen und Konfigurieren der Szene](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) und Bezeichnen der Szene mit einem passenden Namen, z. B. *AzureCloudServices*
 
 Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoption der räumlichen Wahrnehmung](mr-learning-base-03.md#changing-the-spatial-awareness-display-option), um sicherzustellen, dass das MRTK-Konfigurationsprofil für Ihre Szene **DefaultXRSDKConfigurationProfile** ist, und ändern Sie die Anzeigeoptionen für das Gittermodell zur räumlichen Wahrnehmung in **Occlusion** (Verdeckung).
 
@@ -112,7 +111,7 @@ Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importi
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich wie die folgende Abbildung aussehen:
 

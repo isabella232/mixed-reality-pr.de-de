@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, räumliche Abbildung, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: b6d8d44851813f340997c41b2f25104b51dee2fa
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528738"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394294"
 ---
 # <a name="unity-development-for-hololens"></a>Unity-Entwicklung für HoloLens
 
 ![Unity-Bannerlogo](../images/unity_logo_banner.png)
 
-Den schnellsten Weg zum Entwickeln einer HoloLens-[Mixed Reality-App](../../design/app-views.md) in [Unity](https://unity.com) bietet das Mixed Reality Toolkit. Wenn Sie mit Unity noch nicht vertraut sind, empfehlen wir Ihnen, sich mit den [Tutorials](https://unity3d.com/learn/tutorials) für Einsteiger auf der Unity-Lernplattform zu befassen, bevor Sie fortfahren. Außerdem ist es eine gute Idee, den umfassenden [Asset Store](https://assetstore.unity.com) und die [Unity Mixed Reality-Foren](https://forum.unity3d.com/forums/hololens.102/) zu besuchen, um mit der Onlinecommunity in Kontakt zu kommen, die Mixed Reality-Apps entwickelt. Sie können schlicht nicht wissen, welche tollen Medienobjekte oder Lösungen Sie abseits ausgetretener Pfade finden. Wenn Sie bereit sind, mit dem MRTK loszulegen, gehen Sie zu den Prüfpunkten für die Entwicklung unten!
+Unity ist eine der führenden Echtzeit-Entwicklungsplattformen am Markt. Der Code der zugrunde liegenden Runtime ist in C++ geschrieben, und die gesamte Skripterstellung in der Entwicklung erfolgt in C#. Unabhängig davon, ob Sie Spiele, Filme und Animationsfilme erstellen oder sogar Architektur- oder technische Konzepte in einer virtuellen Welt rendern möchten, bietet Unity die Infrastruktur, um Sie dabei zu unterstützen. Wenn Sie bereit sind, um loszulegen, gehen Sie zu den Prüfpunkten für die Entwicklung unten!
 
 > [!IMPORTANT]
 > Sehen Sie sich unsere **[Portierungsleitfäden](../porting-apps/porting-overview.md)** an, wenn Sie ein vorhandenes Unity-Projekt besitzen, das Sie auf HoloLens 2 bringen möchten. Wir haben Leitfäden für Projekte, die HTK, MRTK v1 oder SteamVR verwenden.
@@ -83,11 +83,15 @@ Sobald Sie Ihr Unity-Holografieprojekt bis zur Testreife gebracht haben, besteht
 
 ## <a name="5-adding-services"></a>5. Hinzufügen von Diensten
 
-An diesem Punkt auf Ihrem Entwicklungsweg suchen Sie vielleicht nach Möglichkeiten zum Hinzufügen von Diensten oder nach Hilfe zur kommerziellen Bereitstellung. Das Integrieren von [Azure Cloud Services](../mixed-reality-cloud-services.md) und Features von Dynamics 365 kann Ihre Projekte auf eine ganz andere Stufe heben. Wir haben für Sie einige Ausgangspunkte zum Erkunden und zum Erweitern Ihrer Mixed Reality-Kenntnisse zusammengetragen.
+An diesem Punkt auf Ihrem Entwicklungsweg suchen Sie vielleicht nach Möglichkeiten zum Hinzufügen von Diensten oder nach Hilfe zur kommerziellen Bereitstellung. Das Integrieren von [Azure Cloud Services](../mixed-reality-cloud-services.md) kann Ihre Projekte auf eine ganz andere Stufe heben. Wir haben für Sie einige Ausgangspunkte zum Erkunden und zum Erweitern Ihrer Mixed Reality-Kenntnisse zusammengetragen.
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
 Außerdem bieten wir eine [umfassende Liste der Supportdokumentation für zusätzliche Azure-Dienste](../mixed-reality-cloud-services.md#standalone-unity-services), die Sie Ihren Unity-Projekten auf Self-Service-Basis hinzufügen können.
+
+## <a name="6-low-code-alternatives"></a>6. Low-Code-Alternativen
+
+[!INCLUDE[](../includes/unity-low-code.md)]
 
 ## <a name="whats-next"></a>Wie geht es weiter?
 
@@ -113,9 +117,9 @@ Bevor Sie sich auf eigene Faust in die Welt der Mixed Reality aufmachen, sollten
 
 |  Thema  |  Beschreibung  |
 | --- | --- |
-| [MRTK-Architektur – Übersicht](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | Erwerben Sie ein tieferes Verständnis der Funktionsweise des MRTK SDKs in Ihren Projekten |
-| [Einstellungen und Leistung](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Erstellen Sie Profile für Ihre App, aktualisieren Sie Ihre Unity-Einstellungen, und erzielen Sie die bestmögliche Hologrammstabilisierung |
-| [Erste Schritte mit MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Stellen Sie auf die alternative XR-Pipeline von Unity um |
+| [MRTK-Architektur – Übersicht](/windows/mixed-reality/mrtk-unity/architecture/overview) | Erwerben Sie ein tieferes Verständnis der Funktionsweise des MRTK SDKs in Ihren Projekten |
+| [Einstellungen und Leistung](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | Erstellen Sie Profile für Ihre App, aktualisieren Sie Ihre Unity-Einstellungen, und erzielen Sie die bestmögliche Hologrammstabilisierung |
+| [Erste Schritte mit MRTK + XR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | Stellen Sie auf die alternative XR-Pipeline von Unity um |
 
 ### <a name="unity-resources"></a>Unity-Ressourcen
 
@@ -137,7 +141,7 @@ Sie finden uns in den [Unity-Foren](https://aka.ms/unityforums) über den Tag **
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* Legacy-XR 
+* Legacy-XR
 
 ## <a name="see-also"></a>Siehe auch
 

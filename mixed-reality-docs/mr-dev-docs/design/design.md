@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Kernkonzepte, Interaktion, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
-ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
+ms.openlocfilehash: c4d9f9b4c4be1c5012ac8dc84fb55e6c5fa9eaee
+ms.sourcegitcommit: 85ba3af69ec2a9056f759bab7b66f79f09a016b2
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107221562"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111454766"
 ---
 # <a name="start-designing-and-prototyping"></a>Mit Entwerfen und Prototyping beginnen
 
@@ -89,20 +89,20 @@ Die Arbeit eines Entwerfers ist nie getan, insbesondere wenn es darum geht, imme
 
 :::row:::   
     :::column:::    
-       [![Erlernen von Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
+        [![MRTK Figma-Toolkit](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Figma-Toolkit](figma-toolkit.md)**<br>   
+        Das Figma-Toolkit stellt die Ressourcen bereit, die zum Skizzieren und Layouten der Benutzeroberfläche verwendet werden können. Alle Benutzeroberflächensteuerelemente basieren auf den im MRTK verfügbaren Komponenten.
+    :::column-end:::        
+    :::column:::    
+       [![Erlernen von Unity](../images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[Erlernen von Unity](https://learn.unity.com/)**<br>
         Erfahren Sie, wie Sie mit Unity interaktive Erlebnisse erstellen können. Lernen durch Handeln, von Anfang bis Ende.
     :::column-end:::    
     :::column:::    
         [![Mixed Reality-Toolkit (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
-        **[Mixed Reality-Toolkit (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
+        **[Mixed Reality-Toolkit (MRTK)](/windows/mixed-reality/mrtk-unity/)**<br>  
         Mit räumlicher Interaktion und Bausteinen für die Benutzeroberfläche starten Sie Ihren Mixed Reality-Entwurf und Ihre Entwicklung mit Unity.   
     :::column-end:::
-    :::column:::    
-        [![Mixed Reality-Design-Labs](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
-        **[Mixed Reality-Design-Labs](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
-        Erhalten Sie Beispiel-Apps, die Ihnen zeigen, wie Sie die MRTK-Bausteine nutzen können, um ansprechende Mixed Reality-Erlebnisse zu kreieren.
-    :::column-end:::        
     :::column:::    
         [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  

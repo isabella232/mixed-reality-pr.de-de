@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590302"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392539"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2. Erstellen einer PC-Anwendung für Holographic Remoting
 
@@ -24,61 +24,22 @@ In diesem Tutorial erfahren Sie, wie Sie eine PC-App für Holographic Remoting e
 * Erfahren Sie, wie Sie die Anwendung mit Visual Studio erstellen und bereitstellen
 * Entwickeln von Holographic Remoting-Anwendungen und Herstellen einer Verbindung mit HoloLens
 
-## <a name="configuring-your-scene-for-holographic-remoting"></a>Konfigurieren Ihrer Szene für Holographic Remoting
+## <a name="configuring-the-capabilities"></a>Konfigurieren der Funktionen
 
-In diesem Abschnitt konfigurieren Sie das Projekt so, dass Sie Ihre Mixed Reality-Lösung in Echtzeit über eine WLAN-Verbindung von Ihrem PC aus auf das HoloLens 2-Gerät streamen können.
+Erweitern Sie im Fenster **Projekteinstellungen** die **Veröffentlichungseinstellungen**, scrollen Sie nach unten zum Bereich „Funktionen“, und aktivieren Sie zusätzlich zu den vorhandenen Funktionen das unten angezeigte Funktionskontrollkästchen.
 
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs**, klicken Sie auf das Prefab **HolographicRemoting**, und ziehen Sie es in ihre Szene.
+* Internet Client Server
+* Privates Netzwerk Client Server
 
-![Unity mit neu hinzugefügtem, noch ausgewähltem HolographicRemoting-Prefab](images/mrlearning-pc-holographic-remoting/Tutorial2-Section1-Step1-1.png)
+![Aktivieren von Funktionen](images/mrlearning-pc-holographic-remoting/tutorial2-section0-step1-1.png)
+
+[!INCLUDE[](includes/configuring-scene-for-holographic-remoting.md)]
 
 ## <a name="build-your-application-to-pc"></a>Erstellen Ihrer Anwendung auf dem PC
 
 Ihre Holographic Remoting-App kann jetzt auf Ihrem PC erstellt werden. Führen Sie die folgenden Schritte aus, und nehmen Sie diese Änderungen vor, um die Anwendung auf Ihrem PC zu erstellen.
 
-### <a name="1-set-the-player-settings"></a>1. Festlegen der Playereinstellungen
-
-Wählen Sie im Unity-Menü „Edit > Project Settings“ (Bearbeiten > Projekteinstellungen) aus, um das Fenster „Player Settings“ (Playereinstellungen) zu öffnen.
-
-Erweitern Sie im Fenster „Projekteinstellungen“ die **Veröffentlichungseinstellungen**, scrollen Sie nach unten zum Bereich **Funktionen**, und aktivieren Sie zusätzlich zu den vorhandenen Funktionen das unten angezeigte Funktionskontrollkästchen.
-
-* Internet Client Server
-* Privates Netzwerk Client Server
-
-Aktivieren Sie im Abschnitt **XR Settings** (XR-Einstellungen) das Kontrollkästchen **WSA Holographic Remoting Supported** (WSA Holographic Remoting unterstützt), und aktivieren Sie Holographic Remoting.
-
-![Unity-Fenster XR-Einstellungen mit aktiviertem „WSA Holographic Remoting Supported“](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step1-1.png)
-
-### <a name="2-build-the-unity-project"></a>2. Erstellen des Unity-Projekts
-
-Wählen Sie im Unity-Menü „File > Build Settings“ (Datei > Buildeinstellungen) aus, um das Fenster „Build Settings“ (Buildeinstellungen) zu öffnen.
-
-Klicken Sie im Fenster „Build Settings“ (Buildeinstellungen) auf die Schaltfläche ***Add Open Scenes** _ (Geöffnete Szenen hinzufügen), um den Szenen die aktuelle Szene hinzuzufügen. Klicken Sie in der Liste „Build“ auf die Schaltfläche _ *_Build_**, um das Fenster „Build Universal Windows Platform“ (Universelle Windows-Plattform erstellen) zu öffnen:
-
-![Unity-Fenster „Build Settings“ mit hinzugefügter Szene](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
-
-Wählen Sie im Fenster „Build Universal Windows Platform“ einen passenden Speicherort zum Speichern Ihres Builds aus, z. B. „Documents\MixedRealityLearning“. Erstellen Sie einen neuen Ordner, und geben Sie ihm einen geeigneten Namen, z. B. „PCHolographicRemoting“. Klicken Sie dann auf die Schaltfläche ***Select Folder*** (Ordner auswählen), um den Buildprozess zu starten:
-
-![Unity-Fenster „Build Settings“ mit Aufforderungsfenster zum Auswählen eines Ordners](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-2.png)
-
-Warten Sie, bis Unity den Buildvorgang abgeschlossen hat.
-
-![Unity: Buildvorgang wird ausgeführt](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-3.png)
-
-### <a name="3-build-and-deploy-the-application"></a>3. Erstellen und Bereitstellen der Anwendung
-
-Wenn der Buildvorgang abgeschlossen ist, fordert Unity den Windows Datei-Explorer auf, den Speicherort zu öffnen, in dem Sie den Build gespeichert haben. Navigieren Sie im Ordner, und doppelklicken Sie auf die SLN-Datei, um sie in Visual Studio zu öffnen:
-
-![Windows-Explorer mit neu erstellter, ausgewählter Visual Studio-Projektmappe](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-1.png)
-
-> [!NOTE]
-> Wenn Sie von Visual Studio zur Installation neuer Komponenten aufgefordert werden, nehmen Sie sich einen Moment Zeit, um zu überprüfen, ob alle erforderlichen Komponenten (wie in der Dokumentation „Installieren der Tools“ angegeben) installiert sind.
-
-Konfigurieren Sie Visual Studio für den PC, indem Sie die Releasekonfiguration, die x64-Architektur und einen lokalen Computer als Ziel auswählen:
-
-![Visual Studio, konfiguriert für den lokalen Computer](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step3-2.png)
-
-Klicken Sie auf die Schaltfläche ***Lokaler Computer***. Die Anwendung wird auf Ihrem PC erstellt und bereitgestellt. Die Anwendung wird standardmäßig auf Ihrem PC installiert.
+[!INCLUDE[](includes/build-your-application-to-pc.md)]
 
 ## <a name="testing-holographic-remoting-remote-application"></a>Testen einer Holographic Remoting-Remoteanwendung
 

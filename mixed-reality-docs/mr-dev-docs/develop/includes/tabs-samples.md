@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: cd8a8229c7f70891a8f01d39ee1d6315c47429f6
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: f540c1cb417f64c412657ce291c0a0822961e55d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104988259"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112255722"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,7 +12,7 @@ Die Open Source-Beispiel-Apps wurden von unseren Teams erstellt, um Ihnen Hilfe 
 
 ### <a name="hololens-2-open-source-sample-apps"></a>HoloLens 2: Open-Source-Beispiel-Apps
 
-* [Hub für MRTK-Beispiele](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [Hub für MRTK-Beispiele](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](../unity/sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/p/surfaces/9nvkpv3sk3x0)
 * [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](../unity/galaxy-explorer-update.md)

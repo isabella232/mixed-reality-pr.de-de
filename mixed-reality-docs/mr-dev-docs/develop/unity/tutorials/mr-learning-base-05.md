@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Solver
 ms.localizationpriority: high
-ms.openlocfilehash: b2d23601419c36f2a79a0c6e19d06eda6dc54d09
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
+ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300395"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112270425"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5. Erstellen dynamischer Inhalte mithilfe von Solvern
 
@@ -30,7 +30,7 @@ In diesem Tutorial lernen Sie Möglichkeiten zur dynamischen Platzierung von Hol
 
 ![Unity-Projektfenster mit ausgewähltem Ordner „Solvers“](images/mr-learning-base/base-05-section1-step1-1.png)
 
-In diesem Tutorial behandeln wir die Implementierung des Solvers Directional Indicator (Richtungsanzeige) und des Solvers Tap To Place (Zum Platzieren tippen). Weitere Informationen zur ganzen Bandbreite der im MRTK verfügbaren Solver finden Sie im [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+In diesem Tutorial behandeln wir die Implementierung des Solvers Directional Indicator (Richtungsanzeige) und des Solvers Tap To Place (Zum Platzieren tippen). Weitere Informationen zur ganzen Bandbreite der im MRTK verfügbaren Solver finden Sie im [Solver](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)-Leitfaden im [MRTK-Dokumentationsportal](/windows/mixed-reality/mrtk-unity).
 
 > [!NOTE]
 > Der Richtungsanzeige-Solver befindet sich nicht in den oben angegebenen Solver-Ordnern, sondern im Ordner „Packages“ > „Mixed Reality Toolkit Foundation“ > „SDK“ > „Experimental“ > „Features“ > „Utilities“, da es sich um ein experimentelles Feature handelt.
@@ -51,9 +51,6 @@ Benennen Sie das neu hinzugefügte Chevron-Objekt in **Indicator** um, und verwe
 > [!NOTE]
 > Wenn Sie einen Solver hinzufügen, in diesem Fall die Komponente „DirectionalIndicator“, wird die Solver Handler-Komponente automatisch hinzugefügt, weil der Solver sie benötigt.
 
-> [!NOTE]
-> Die Directional Indicator Controller (Script)-Komponente ist nicht Teil des MRTK sondern ist in den Medienobjekten des Tutorials enthalten.
-
 Konfigurieren Sie die Komponenten DirectionalIndicator und SolverHandler wie folgt:
 
 * Vergewissern Sie sich, dass der **Tracked Target Type** (Typ des nachverfolgten Ziels) der **SoverHandler**-Komponente auf **Head** (Kopf) festgelegt ist.
@@ -72,7 +69,7 @@ Drücken Sie die Wiedergabe-Schaltfläche, um in den Spielmodus zu wechseln, dr�
 > Wenn Sie in Ihrem Szenefenster den Kamerastrahl nicht sehen, vergewissern Sie sich, dass Ihr Gizmos-Menü aktiviert ist, wie in der Abbildung oben dargestellt.
 
 > [!TIP]
-> Informationen zum Verwenden der in den Editor integrierten Eingabesimulation finden Sie im Leitfaden [Using the In-Editor Hand Input Simulation to test a scene](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene) (Verwenden der in den Editor integrierten Handeingabesimulation zum Testen einer Szene) im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity).
+> Informationen zum Verwenden der in den Editor integrierten Eingabesimulation finden Sie im Leitfaden [Using the In-Editor Hand Input Simulation to test a scene](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service) (Verwenden der in den Editor integrierten Handeingabesimulation zum Testen einer Szene) im [MRTK-Dokumentationsportal](/windows/mixed-reality/mrtk-unity).
 
 > [!TIP]
 > Wenn Ihr Computer ein Mikrofon aufweist, können Sie den Aktivitätszustand des Diagnosepanels, das im Spielfenster angezeigt wird, leicht umschalten, indem Sie den Sprachbefehl „toggle diagnostics“ (Diagnose umschalten) verwenden. Alternativ können Sie es im MRTK-Konfigurationsprofil deaktivieren, „Profile“ > „Diagnostics“ > „Enable Diagnostics System“ (Profil > Diagnose > Diagnosesystem aktivieren). Im allgemeinen empfiehlt es sich aber, das Diagnosesystem während der Entwicklung aktiviert zu lassen.
@@ -91,7 +88,7 @@ Wählen Sie im Hierarchiefenster das Objekt RoverExplorer > **RoverAssembly** au
 > [!NOTE]
 > Die Einstellung „Magnetic Surfaces“ (Magnetische Oberflächen) bestimmt, welche Objekte von der Komponente Tap To Place (Script) beim Platzieren eines Objekts erkannt werden. Indem Sie die Einstellung nur zu Spatial Awareness (Räumliche Wahrnehmung) ändern, kann die Tap To Place (Script)-Komponente den Rover nur auf Objekten platzieren, die sich auf der Unity-Ebene mit dem Namen „Spatial Awareness“ befinden, und das ist standardmäßig das von HoloLens generierte Spatial Awareness Mesh (Gittermodell für räumliche Wahrnehmung).
 >
->Weitere Informationen zu Ebenen finden Sie in der Dokumentation zu <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Ebenen</a> von Unity.
+> Weitere Informationen zu Ebenen finden Sie in der Dokumentation zu <a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">Ebenen</a> von Unity.
 
 > [!TIP]
 > Wenn Sie beim Testen der Tap to Place-Funktionalität das Gittermodell für räumliche Wahrnehmung sehen möchten, können Sie die Anzeigeoption des Spatial Mesh Observer auf „Visible“ (Sichtbar) festlegen. Wenn Sie eine Auffrischung zum Ändern der Anzeigeoption benötigen, informieren Sie sich in den Anweisungen zum [Ändern der Anzeigeoptionen für räumliche Wahrnehmung](mr-learning-base-03.md#changing-the-spatial-awareness-display-option).
@@ -140,7 +137,7 @@ Wenn Sie das Testen des Features im Spielmodus abgeschlossen haben, klicken Sie 
 
 In diesem Tutorial haben Sie gelernt, wie Sie den Richtungsindikator-Solver aus dem MRTK dazu verwenden können, den Benutzer durch ein Benutzeroberflächenelement intuitiv zu Objekten zu führen. Sie haben darüber hinaus erfahren, wie der Zum-Platzieren-tippen-Solver verwendet wird, um die Position von Objekten auf einfache Weise zu ändern.
 
-Weitere Informationen zu diesen und anderen Solvern, die im MRTK enthalten sind, finden im [Solver](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Weitere Informationen zu diesen und anderen Solvern, die im MRTK enthalten sind, finden im [Solver](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)-Leitfaden im [MRTK-Dokumentationsportal](/windows/mixed-reality/mrtk-unity/).
 
 > [!div class="nextstepaction"]
->[Nächstes Tutorial: 6. Erstellen der Benutzeroberfläche](mr-learning-base-06.md)
+> [Nächstes Tutorial: 6. Erstellen der Benutzeroberfläche](mr-learning-base-06.md)

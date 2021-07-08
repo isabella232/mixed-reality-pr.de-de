@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, Mixed Reality, debuggen, bereitstellen
-ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100496092"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543226"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>Verwenden von Visual Studio zum Bereitstellen und Debuggen
 
@@ -37,7 +37,7 @@ Aktivieren Sie zunächst den **Entwicklermodus** auf Ihrem Gerät, damit Visual 
 3. Wählen Sie die Kachel **Einstellungen** aus, um die App in Ihrer Umgebung zu starten.
 4. Wählen Sie das Menüelement **Aktualisieren** aus.
 5. Wählen Sie das Menüelement **Für Entwickler** aus.
-6. Aktivieren Sie den **Entwicklermodus**, um auf Ihrer HoloLens Apps aus Visual Studio bereitzustellen.
+6. Aktivieren Sie **Use developer feature** (Entwicklerfunktion verwenden), um auf Ihrer HoloLens Apps aus Visual Studio bereitzustellen. Wenn auf Ihrem Gerät Windows Holographic, Version 21H1 oder höher ausgeführt wird, aktivieren Sie außerdem **Device Discovery** (Geräteermittlung).
 7. Optional: Scrollen Sie nach unten, und aktivieren Sie auch das **Geräteportal**, mit dem Sie sich über einen Webbrowser mit dem [Windows-Geräteportal](using-the-windows-device-portal.md) auf Ihrer HoloLens verbinden können.
 
 ### <a name="windows-pc"></a>Windows PC

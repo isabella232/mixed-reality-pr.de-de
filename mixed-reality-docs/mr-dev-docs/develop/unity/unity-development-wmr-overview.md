@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, Mixed Reality, Entwicklung, Erste Schritte, neues Projekt, Portieren, Funktion, Kamera, Simulation, Emulation, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Spracheingabe, ausrichtbare Kamera, Emulator, Azure, Tutorials
-ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 074f42fd077d888523c2cf0a7da5bcafcfadb0f0
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528721"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906966"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>Unity-Entwicklung für VR und Windows Mixed Reality
 
@@ -25,7 +25,7 @@ Wenn Sie mit Unity noch nicht vertraut sind, empfehlen wir Ihnen, sich mit den [
 
 ## <a name="development-checkpoints"></a>Prüfpunkte für die Entwicklung
 
-Nutzen Sie die folgenden Prüfpunkte, um Ihre Unity-Spiele und Anwendungen in eine Mixed Reality-Welt einzubringen. 
+Nutzen Sie die folgenden Prüfpunkte, um Ihre Unity-Spiele und Anwendungen in eine Mixed Reality-Welt einzubringen.
 
 ### <a name="1-getting-started"></a>1. Erste Schritte
 
@@ -34,7 +34,7 @@ Es gibt eine kleine Gruppe von Unity-Einstellungen, die Sie für die Entwicklung
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
 | [Installieren der neuesten Tools](../install-the-tools.md) | Laden Sie das aktuellste Unreal-Paket herunter, installieren Sie es, und richten Sie Ihr Projekt für Mixed Reality ein |
-| [Konfigurieren Ihres Projekts für WMR](windows-xr-plugin.md) | Erfahren Sie, wie Sie Anwendungen erstellen, die digitale Inhalte auf holografischen und VR-Anzeigegeräten darstellen |
+| [Konfigurieren Ihres Projekts für VR- und Windows Mixed Reality-Headsets](./xr-project-setup.md?tabs=openxr) | Erfahren Sie, wie Sie Anwendungen erstellen, die digitale Inhalte auf holografischen und VR-Anzeigegeräten darstellen |
 
 > [!IMPORTANT]
 > Weitere Informationen zum Einrichten Ihrer Projekte finden Sie in unserem [Konfigurationshandbuch](choosing-unity-version.md) für Unity-Projekte.

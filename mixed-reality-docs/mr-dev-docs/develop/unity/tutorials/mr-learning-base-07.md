@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Objektinteraktionen, Begrenzungssteuerelemente
 ms.localizationpriority: high
-ms.openlocfilehash: c2cca67afe19665ea899eb56140011bd9c756a7f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: cbf2bbf78a34cfdd4856b7b8d192e4ac7c2f0154
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982863"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110261"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7. Interagieren mit 3D-Objekten
 
@@ -88,7 +88,7 @@ Wählen Sie im Hierarchiefenster erneut alle **Rover-Teilobjekte** aus, verwende
 
 ![Unity mit allen Rover-Teilen ausgewählt und hinzugefügter und konfigurierter Audio Source-Komponente](images/mr-learning-base/base-07-section1-step1-4.png)
 
-Klappen Sie im Hierarchiefenster das Objekt „RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints**“ auf, um alle Platzierungshinweisobjekte anzuzeigen, wählen Sie dann das erste Rover-Teil „RoverParts > **Camera_Part**“ aus, und konfigurieren Sie die Komponente **Part Assembly Controller (Script)** wie folgt:
+Klappen Sie im Hierarchiefenster das Objekt „RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints**“ auf, um alle Platzierungshinweisobjekte anzuzeigen, wählen Sie dann das Rover-Teil „Camera_part“ aus („RoverParts > **Camera_Part**“), und konfigurieren Sie die Komponente **Part Assembly Controller (Script)** wie folgt:
 
 * Weisen Sie das Objekt **Camera_PlacementHint** dem Feld **Location To Place** zu
 
@@ -113,7 +113,7 @@ Wenn Sie jetzt in den Spielmodus wechseln, können Sie nahe oder ferne Interakti
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit gedrückter Schaltfläche „Reset“](images/mr-learning-base/base-07-section1-step1-7.png)
 
-Weitere Informationen über die Objektmanipulator-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Objektmanipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Weitere Informationen über die Objektmanipulator-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Objektmanipulator](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-manipulator) im [MRTK-Dokumentationsportal](/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="adding-bounds-control"></a>Hinzufügen des Begrenzungssteuerelements
 
@@ -134,7 +134,7 @@ Wählen Sie im Hierarchiefenster das **RoverExplorer**-Objekt aus, und verwenden
 > Die Visualisierung des Begrenzungssteuerelements wird zur Laufzeit erstellt und ist daher erst sichtbar, wenn Sie in den Spielmodus wechseln.
 
 > [!NOTE]
->Der Objektmanipulator (Skript) fügt automatisch den Einschränkungs-Manager (Skript) hinzu.
+> Der Objektmanipulator (Skript) fügt automatisch den Einschränkungs-Manager (Skript) hinzu.
 
 Klappen Sie im Hierarchiefenster das Objekt „Menu > **ButtonCollection**“ (Menü > Schaltflächensammlung) auf, um die vier Schaltflächen anzuzeigen, benennen Sie die dritte Schaltfläche in **BoundsControl_Enable** um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
@@ -168,7 +168,7 @@ Wenn Sie jetzt in den Spielmodus wechseln und das Begrenzungssteuerelement aktiv
 
 ![Geteilte Ansicht des Unity-Wiedergabemodus mit manipuliertem Begrenzungssteuerelement](images/mr-learning-base/base-07-section2-step1-4.png)
 
-Weitere Informationen über die Bounds Control-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Bounds Control](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html) im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+Weitere Informationen über die Bounds Control-Komponente und die ihr zugeordneten Eigenschaften finden Sie in der Anleitung zum [Bounds Control](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounds-control) im [MRTK-Dokumentationsportal](/windows/mixed-reality/mrtk-unity/).
 
 ## <a name="congratulations"></a>Herzlichen Glückwunsch!
 

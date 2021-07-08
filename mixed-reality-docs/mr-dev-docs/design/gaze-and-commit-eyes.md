@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Eye Tracking, Mixed Reality, Eingabe, Anvisieren mit den Augen, Zielen mit den Augen, HoloLens 2, Blickgestützte Auswahl, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Anvisieren
-ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847870"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196465"
 ---
 # <a name="eye-gaze-and-commit"></a>Anvisieren mit den Augen und Ausführen
 
@@ -26,8 +26,18 @@ Mit HoloLens 2 haben wir die großartige Möglichkeit, das Eingabemodell _Anvisi
    - Sprachbefehl (z. B. „Auswählen“)
    - Verweilen (d. h. der Benutzer schaut zum Auswählen weiterhin auf das Ziel)
 
-„Anvisieren mit den Augen“ verhält sich jedoch anders als das Anvisieren mit dem Kopf und bringt viele spezielle Herausforderungen mit sich. In den [Entwurfsrichtlinien für das Anvisieren mit den Augen](eye-tracking.md) sind die allgemeinen Vorteile und Herausforderungen zusammengefasst, die sich beim Verwenden der Blickverfolgung als Eingabemodell für die holografische App stellen. In diesem Abschnitt konzentrieren wir uns auf die speziellen Entwurfsüberlegungen für das Modell _Anvisieren mit den Augen und Ausführen_.
+„Anvisieren mit den Augen“ verhält sich jedoch anders als das Anvisieren mit dem Kopf und bringt viele spezielle Herausforderungen mit sich. 
+
+In den [Entwurfsrichtlinien für das Anvisieren mit den Augen](eye-tracking.md) sind die allgemeinen Vorteile und Herausforderungen zusammengefasst, die sich beim Verwenden der Blickverfolgung als Eingabemodell für die holografische App stellen. In diesem Abschnitt konzentrieren wir uns auf die speziellen Entwurfsüberlegungen für das Modell _Anvisieren mit den Augen und Ausführen_.
 Zu Beginn sei vorausgeschickt, dass unsere Augen sich unglaublich schnell bewegen und hervorragend für die schnelle Zieladressierung im Sichtfeld geeignet sind. Das Anvisieren mit den Augen ist ideal für schnelle Aktionen des Typs „Anvisieren und Ausführen“ geeignet, besonders in Kombination mit schnellen Ausführaktionen wie Tippen in die Luft oder Drücken einer Schaltfläche.
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo der Entwurfskonzepte für Kopf- und Eyetracking
+
+Wenn Sie die Entwurfskonzepte für Kopf- und Eyetracking in Aktion sehen möchten, sehen Sie sich unten unsere Videodemo **Entwerfen von Hologrammen: Kopf- und Eyetracking** an. Wenn Sie fertig sind, fahren Sie mit einem ausführlicheren Einblick in bestimmte Themen fort.
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*Dieses Video wurde aus der HoloLens 2-App „Entwerfen von Hologrammen“ aufgenommen. Laden Sie die vollständige Erfahrung [hier](https://aka.ms/dhapp) herunter, und genießen Sie sie.*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>Entwurfsrichtlinien für „Anvisieren mit den Augen und Ausführen“
 

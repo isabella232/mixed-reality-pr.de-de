@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, lernen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Sprachübersetzung, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
-ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
+ms.openlocfilehash: e21f6245be5a47797c2b58fd8f57c4c6179b1751
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581552"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906876"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn – Übersicht
 
@@ -23,7 +23,7 @@ Je mehr Tools Ihnen zum Entwickeln für Mixed Reality zur Verfügung stehen, des
 Unsere Lernmodule helfen Ihnen, sich mit der Mixed Reality-Entwicklung vertraut zu machen. Sie weisen eine modulbasierte Struktur auf, die Ihnen den Einstieg in wichtige Tools wie Mixed Reality Toolkit, Unity und Azure Mixed Reality Services erleichtert. Der Weg zu „Hallo Welt“ war noch nie so eben, da wir die Lernziele, die Voraussetzungen und die erwartete Zeit bis zum Abschluss alle in einer Oberfläche zusammenfassen. 
 
 > [!div class="nextstepaction"]
-> [Erste Schritte mit unserem Mixed Reality-Lernpfad](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
+> [Erste Schritte mit unserem Mixed Reality-Lernpfad](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Allgemeine Module
 
@@ -46,6 +46,22 @@ In diesem Modul lernen Sie Folgendes:
 ## <a name="unity-modules"></a>Unity-Module
 
 Gleich, ob Sie gerade die ersten Schritte tun oder ein erfahrener Experte sind, mit unseren praxisorientierten Ansatz zur Mixed Reality-Entwicklung in Unity erreichen Sie Ihre Ziele schneller, mit mehr Selbstvertrauen und in Ihrem eigenen Tempo.
+
+### <a name="build-mixed-reality-digital-twins-with-azure-digital-twins-and-unity"></a>[Erstellen digitaler Mixed Reality-Zwillinge mit Azure Digital Twins und Unity](/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+
+Erfahren Sie, wie Sie eine Mixed Reality-HoloLens 2-Anwendung mit Azure Digital Twins und Unity, einer Echtzeit-3D-Plattform, erstellen.
+
+**Lernziele**
+
+Am Ende dieses Lernpfads können Sie folgende Aktionen durchführen:
+
+* Installieren und Konfigurieren Ihrer Entwicklungsumgebung für das Erstellen von Mixed-Reality-Lösungen für HoloLens 2 mit Azure Digital Twins und Unity
+* Erstellen einer 3D-Szene in Unity mit statischen und dynamischen Geländedaten mit dem Karten-SDK von Microsoft
+* Verwenden von MRTK-Interaktionen zum Bereitstellen eines umfassenderen Benutzererlebnisses
+* Herstellen einer Verbindung mit einer Digital Twins-Datenquelle in Azure
+* Streamen von Telemetriedaten an Objekte in Ihrer Unity-Szene mithilfe von Azure-Diensten, einschließlich ADT
+* Visualisieren der Daten auf einem HoloLens 2-Gerät über SignalR
+* Senden von Datenupdates von der HoloLens 2-App zurück an Azure Digital Twins
 
 ### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[Einrichten eines Mixed Reality-Projekts in Unity mit dem Mixed Reality Toolkit](/learn/modules/mixed-reality-toolkit-project-unity/)
 

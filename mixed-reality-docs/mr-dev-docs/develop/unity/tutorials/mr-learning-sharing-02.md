@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 4b81ed3a78cc47f4ad0463cab085621102060dc8
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982763"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175421"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2. Einrichten von Photon Unity Networking
 
@@ -28,14 +28,13 @@ In diesem Tutorial bereiten Sie sich mithilfe des Photon Unity-Netzwerks (PUN) a
 
 In diesem Abschnitt erstellen Sie ein neues Unity-Projekt und bereiten es für die MRTK-Entwicklung vor.
 
-Befolgen Sie zunächst die Anweisungen unter [Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung](mr-learning-base-02.md) – jedoch ohne die Anweisungen zum [Erstellen Ihrer Anwendung auf Ihrem Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2) – die die folgenden Schritte beinhalten:
+Befolgen Sie zunächst die Anweisungen unter [Initialisieren Ihres Projekts und Bereitstellen Ihrer ersten Anwendung](mr-learning-base-02.md), jedoch ohne die Anweisungen zum [Hinzufügen von Handinteraktion zu einem Objekt](mr-learning-base-02.md#adding-hand-interaction-to-an-object) und zum [Erstellen Ihrer Anwendung auf Ihrem Gerät](mr-learning-base-02.md#building-your-application-to-your-hololens-2), die die folgenden Schritte beinhalten:
 
 1. [Erstellen eines neuen Unity-Projekts](mr-learning-base-02.md#creating-the-unity-project), das mit einem passenden Namen bezeichnet wird, beispielsweise *MRTK-Tutorials*
 2. [Wechseln der Buildplattform](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importieren des Mixed Reality-Toolkits](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Erstellen und Konfigurieren der Szene](mr-learning-base-02.md#creating-and-configuring-the-scene) und Bezeichnen der Szene mit einem passenden Namen, z. B. *MultiUserCapabilities*
+3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Importieren des Mixed Reality Toolkits und Konfigurieren des Unity-Projekts](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Erstellen der Szene und Konfigurieren des MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) sowie Bezeichnen der Szene mit einem passenden Namen, z. B. *MultiUserCapabilities*
 
 Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoptionen für räumliche Wahrnehmung](mr-learning-base-03.md#changing-the-spatial-awareness-display-option), um die folgenden Aufgaben auszuführen:
 
@@ -82,7 +81,7 @@ Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich w
 ![Unity-Fenster „Hierarchie“, „Szene“ und „Projekt“ nach dem Importieren der Tutorialressourcen](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
+> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-04.md#importing-the-tutorial-assets).
 
 > [!NOTE]
 > Nach dem Importieren des Pakets mit den MultiUserCapabilities-Tutorialressourcen werden im Konsolenfenster mehrere [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246)-Fehler angezeigt, die besagen, dass der Typ oder Namespace fehlt. Dies ist das erwartungsgemäße Verhalten, das im nächsten Abschnitt durch das Importieren der PUN-Ressourcen behoben wird.

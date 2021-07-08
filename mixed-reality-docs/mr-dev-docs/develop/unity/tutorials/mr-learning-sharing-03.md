@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590192"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772423"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Verbinden mehrerer Benutzer
 
@@ -69,7 +69,7 @@ Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponent
 
 ### <a name="2-create-the-avatar"></a>2. Erstellen des Avatars
 
-Navigieren Sie im Projektfenster zum Ordner **Packages** > **Mixed Reality Toolkit Foundation** > **SDK** > **StandardAssets** > **Materials** (Pakete > Mixed Reality Toolkit Foundation > SDK > Standardressouren > Materialien), um die MRTK-Materialien zu suchen:
+Navigieren Sie im Projektfenster zum Ordner **Packages** > **Mixed Reality Toolkit Standard Assets** > **Materials** (Pakete > Mixed Reality Toolkit-Standardressourcen > Materialien), um die MRTK-Materialien zu suchen.
 
 Klicken Sie dann im Hierarchiefenster mit der rechten Maustaste auf das **PhotonUser**-Objekt, wählen Sie **3D Object** > **Sphere** (3D-Objekt > Kugel) aus, um ein Kugelobjekt als untergeordnetes Objekt des PhotonUser-Objekts zu erstellen, und konfigurieren Sie es folgendermaßen:
 

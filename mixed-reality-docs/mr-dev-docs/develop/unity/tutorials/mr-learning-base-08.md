@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: bf7bd266eb471193979c588d97d14dd37aed175e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: a5b93b9e66ffb1e4e9f60251cdc146f48005ae8b
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982885"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110713764"
 ---
 # <a name="8-using-eye-tracking"></a>8. Verwenden von Eye Tracking
 
@@ -26,7 +26,14 @@ In diesem Tutorial erfahren Sie, wie Sie Eye Tracking für HoloLens 2 aktivier
 * Erfahren, wie Eye Tracking für HoloLens 2 aktiviert wird
 * Erfahren, wie Eye Tracking zum Auslösen von Aktionen verwendet wird
 
-[!INCLUDE[](includes/ensuring-eye-gaze-capabality.md)]
+## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>Sicherstellen, dass die Eingabe durch Anvisieren mit den Augen aktiviert ist
+
+Wählen Sie im Unity-Menü „Mixed Reality > Toolkit > Utilities > **Configure Project for MRTK**“ (Mixed Reality Toolkit > Hilfsprogramme > Projekt für MRTK konfigurieren) aus, um das Fenster **MRTK Project Configurator** (MRTK-Projektkonfigurator) zu öffnen, und überprüfen Sie dann im Abschnitt **UWP Capabilities** (UWP-Funktionen), ob die Funktion **Enable Eye Gaze Input Capability** (Funktion für Eingabe per Anvisieren mit den Augen aktivieren) abgeblendet ist:
+
+![Unity MRTK-Projektkonfigurator-Fenster](images/mr-learning-base/base-08-section1-step1-1.png)
+
+> [!NOTE]
+> Die Funktion zur Eingabe durch Anvisieren hätte im Rahmen der Anweisungen zum [Übernehmen der Einstellungen des MRTK-Projektkonfigurators](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) aktiviert werden sollen, während der ursprünglichen Konfiguration des Unity-Projekts zu Beginn dieser Tutorialreihe. Sollte sie nicht aktiviert sein, achten Sie darauf, sie jetzt zu aktivieren.
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>Aktivieren des Anvisierens mit den Augen im Blickanbieter
 

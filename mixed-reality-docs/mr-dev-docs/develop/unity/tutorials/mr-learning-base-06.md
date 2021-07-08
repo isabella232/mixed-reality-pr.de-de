@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Prefabs, Hologramme, QuickInfos
 ms.localizationpriority: high
-ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982973"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110274"
 ---
 # <a name="6-creating-user-interfaces"></a>6. Erstellen der Benutzeroberfläche
 
@@ -67,7 +67,7 @@ Wählen Sie im Hierarchiefenster das Schaltflächenobjekt **Hints** (Hinweise) a
 ![Unity mit konfiguriertem OnClick-Ereignis für das Hints-Schaltflächenobjekt](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Die Interactable-Komponente ist ein Universalcontainer (All-in-One), mit dem jedes Objekt problemlos in die Lage versetzt werden kann, mit Eingaben zu interagieren und darauf zu reagieren. Interactable fungiert als Generalcontainer für alle Eingabetypen, einschließlich Toucheingabe, Handstrahl, Sprache usw., und leitet diese Interaktionen in Ereignisse und visuelle Designantworten. Informationen, wie Sie die Komponente für verschiedene Eingabetypen konfigurieren und ihr visuelle Design anpassen, finden Sie im [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)-Leitfaden im [MRTK-Dokumentationsportal](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/).
+> Die Interactable-Komponente ist ein Universalcontainer (All-in-One), mit dem jedes Objekt problemlos in die Lage versetzt werden kann, mit Eingaben zu interagieren und darauf zu reagieren. Interactable fungiert als Generalcontainer für alle Eingabetypen, einschließlich Toucheingabe, Handstrahl, Sprache usw., und leitet diese Interaktionen in Ereignisse und visuelle Designantworten. Informationen, wie Sie die Komponente für verschiedene Eingabetypen konfigurieren und ihr visuelle Design anpassen, finden Sie im [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)-Leitfaden im [MRTK-Dokumentationsportal](/windows/mixed-reality/mrtk-unity/).
 
 Wählen Sie im Hierarchiefenster das Schaltflächenobjekt **Explode** (Explodieren) aus, und konfigurieren Sie dann im Inspektorfenster das **Interactable.OnClick()** -Ereignis wie folgt:
 
@@ -116,6 +116,9 @@ Um das Chevron-Indicator-Objekt zu deaktivieren, wählen Sie das Indicator-Objek
 
 > [!NOTE]
 > Jetzt ist der Chevron-Indikator beim Starten der App standardmäßig deaktiviert und kann durch Drücken der Schaltfläche „Indicator“ (Indikator) aktiviert werden.
+
+> [!NOTE]
+> Die Directional Indicator Controller (Script)-Komponente ist nicht Teil des MRTK sondern ist in den Medienobjekten des Tutorials enthalten.
 
 Benennen Sie die zweite Schaltfläche in **TapToPlace** (Zum Platzieren tippen) um, und konfigurieren Sie dann im Inspektorfenster die Komponente **Button Config Helper (Script)** wie folgt:
 
@@ -175,7 +178,7 @@ Klappen Sie im Hierarchiefenster das Objekt „RoverExplorer > **RoverParts**“
 
 ![Unity mit allen Rover-Teil-Objekten ausgewählt und hinzugefügter und konfigurierter ToolTipSpawner-Komponente](images/mr-learning-base/base-06-section4-step1-2.png)
 
-Wählen Sie im Hierarchiefenster das erste Rover-Teil aus „RoverParts > **Camera_Part**“ aus, und konfigurieren Sie die **ToolTipSpawner**-Komponente wie folgt:
+Wählen Sie im Hierarchiefenster das „Camera_Part“ aus („RoverParts > **Camera_Part**“), und konfigurieren Sie die **ToolTipSpawner**-Komponente wie folgt:
 
 * Ändern Sie den **Tool Tip Text** (QuickInfo-Text) so, dass er den Namen des Teils wiedergibt, d. h. **Camera** (Kamera).
 
@@ -197,4 +200,4 @@ Drücken Sie die Wiedergabe-Schaltfläche, um in den Spielmodus zu wechseln, dr�
 In diesem Tutorial haben Sie gelernt, wie Sie eine einfache Benutzeroberfläche mit den von MRTK bereitgestellten Schaltfläche- und Menü-Prefabs in Kombination mit der TextMeshPro-Komponente von Unity erstellen und wie Sie die Schaltflächen für das Auslösen von Ereignissen konfigurieren, wenn sie gedrückt werden. Sie haben außerdem gelernt, wie Sie dynamische QuickInfo-Elemente zur Benutzeroberfläche hinzufügen, um dem Benutzer zusätzliche Informationen an die Hand zu geben.
 
 > [!div class="nextstepaction"]
->[Nächstes Tutorial: 7. Interagieren mit 3D-Objekten](mr-learning-base-07.md)
+> [Nächstes Tutorial: 7. Interagieren mit 3D-Objekten](mr-learning-base-07.md)
