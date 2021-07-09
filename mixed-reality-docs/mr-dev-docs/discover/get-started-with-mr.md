@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, Entdecken, Verteilen, Index, Einstiegsseite, Entwurf, Entwicklung, Tutorials, Beispiel-Apps, Grundlagen, Fallstudien, Ressourcen, HoloLens-Vorgehensweise, Open-Source-Projekte, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583350"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403381"
 ---
 # <a name="get-started-with-mixed-reality"></a>Erste Schritte mit Mixed Reality
 
@@ -20,35 +20,12 @@ ms.locfileid: "98583350"
 
 Das Mixed Reality-Ökosystem ist eine sich entwickelnde Landschaft physischer und digitaler Interaktionen, die nur von Ihrer Vorstellungskraft begrenzt wird. Unabhängig davon, ob Sie ein erfahrener Entwickler oder ein Neueinsteiger sind, empfehlen wir, dass Sie Ihre Mixed Reality-Journey mit den Ressourcen beginnen, die wir unten bereitstellen. Es gibt eine Menge neuer Dinge zu entdecken, also fangen wir an. 
 
-## <a name="choose-your-track"></a>Wählen Sie Ihren Titel aus
-
-Wenn Sie bereits wissen, welchen Bereich der Mixed Reality Sie erkunden möchten, können Sie direkt zu jeder der nachfolgenden Spuren springen. Behalten Sie diese Seite jedoch in Ihren Lesezeichen, damit Sie zu einem späteren Zeitpunkt auch noch die grundlegenden konzeptionellen Inhalte nachlesen können.
-
-:::row:::
-    :::column:::
-       [![Ich habe noch keine Erfahrung mit Mixed Reality](images/Tile-New.jpg)](#understand-the-basics)<br>
-        **[Ich habe noch keine Erfahrung mit Mixed Reality](#understand-the-basics)**<br>
-        Verstehen der Grundlagen
-    :::column-end:::
-    :::column:::
-       [![Ich bin Designer](images/Tile-Create.jpg)](../design/design.md)<br>
-        **[Ich bin Designer](../design/design.md)**<br>
-        Mit Entwerfen und Prototyping beginnen
-    :::column-end:::
-    :::column:::
-       [![Ich bin Entwickler](images/Tile-Develop.jpg)](../develop/development.md)<br>
-        **[Ich bin Entwickler](../develop/development.md)**<br>
-        Erlernen von Tools und Architektur
-    :::column-end:::
-:::row-end:::
-
-<br>
-
----
-
 ## <a name="understand-the-basics"></a>Verstehen der Grundlagen
 
-Wenn Sie noch keine Erfahrungen mit Mixed Reality haben, ist es wichtig, dass Sie von Grund auf beginnen und sich mit den Kernkonzepten, -erfahrungen und -funktionen nach oben vorarbeiten. Wir haben eine sequenzielle Journey entwickelt, die Ihnen dabei helfen soll, eine solide Grundlage für das Entwerfen und Entwickeln Ihrer eigenen Ideen in Mixed Reality zu erlangen.
+Wenn Sie noch keine Erfahrungen mit Mixed Reality haben, ist es wichtig, dass Sie von Grund auf beginnen und sich mit den Kernkonzepten, -erfahrungen und -funktionen nach oben vorarbeiten. Hier haben Sie zwei Möglichkeiten: Wir haben ein schwerpunktorientiertes Modul auf Microsoft Learn, das Sie in kürzester Zeit auf den Weg bringt, oder Sie können eine „à la carte“-Journey erkunden, die wir unten eingerichtet haben. Beide dieser Pfade helfen Ihnen dabei, eine solide Grundlage für das Entwerfen und Entwickeln Ihrer eigenen Ideen in Mixed Reality zu erlangen.
+
+> [!div class="nextstepaction"]
+> [Einführung in das Mixed Reality-Modul](/learn/modules/intro-to-mixed-reality)
 
 ### <a name="what-is-mixed-reality"></a>Was ist Mixed Reality?
 
@@ -154,16 +131,17 @@ Wenn Sie wissen möchten, wie die unterschiedliche/n Hardware und Dienste von Mi
 | [HoloLens-Hardware](https://www.microsoft.com//hololens/hardware) | HoloLens 2 bietet die komfortabelste und immersivste verfügbare Mixed Reality-Umgebung mit branchenführenden Lösungen, die innerhalb von Minuten einen Mehrwert bringen – dies alles auf Basis der Zuverlässigkeit, Sicherheit und Skalierbarkeit der Cloud- und KI-Dienste von Microsoft. |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | Erkunden Sie eine Reihe von Produkten, die mit Dynamics 365 Mitarbeiter ermächtigen und Vorgänge optimieren können, einschließlich [Remoteunterstützung](/dynamics365/mixed-reality/remote-assist/ra-overview), Layout und [Handbüchern](/dynamics365/mixed-reality/guides/). Sinnhafte Erkenntnisse ergeben sich aus praktischer Arbeit mit realen Szenarien, echten Geräten und echten Benutzern. |
 | [Azure Cloud Services](../develop/mixed-reality-cloud-services.md) | Erstellen Sie überzeugende immersive Erfahrungen auf verschiedenen Plattformen mit räumlicher Wahrnehmung, Raumankern und Rendering komplexer 3D-Modelle. |
+| [Microsoft Mesh](/mesh/overview) | Mit Mesh können Menschen von jedem Ort der Welt aus präsent sein, Objekte in Räumen freigeben und gemeinsam arbeiten – dank Mesh-aktivierter Mixed Reality-Erfahrungen. Mit Mesh können Sie virtuelle Besprechungen verbessern, virtuelle Entwurfssitzungen abhalten, andere Personen remote unterstützen und virtuelle Besprechungen hosten. |
 
 ## <a name="what-would-you-like-to-do-next"></a>Wie möchten Sie fortfahren?
 
 :::row:::
     :::column:::
-        [![Ersteller werden](images/icon-design.png)](../design/design.md)<br>
-        **[Ersteller werden](../design/design.md)**<br>
+        [![Mit dem Entwerfen beginnen](images/icon-design.png)](../design/design.md)<br>
+        **[Mit dem Entwerfen beginnen](../design/design.md)**<br>
         Lernen Sie die grundlegenden Konzepte kennen, die Sie für den Einstieg in Entwerfen und Prototyping benötigen.
     :::column-end:::
-        :::column:::
+    :::column:::
         [![In die Entwicklung einsteigen](images/icon-developer.png)](../develop/development.md)<br>
         **[In die Entwicklung einsteigen](../develop/development.md)**<br>
         Wählen Sie auf der Grundlage Ihrer Kenntnissen, Ihres Arbeitsstils oder Ihrer Plattform einen Entwicklungspfad aus.
@@ -174,9 +152,6 @@ Wenn Sie wissen möchten, wie die unterschiedliche/n Hardware und Dienste von Mi
         Sehen Sie die Hardware, und lassen Sie sich durch ein praktisches Lernprogramm beim Erstellen Ihrer ersten HoloLens 2-Anwendung führen.
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 

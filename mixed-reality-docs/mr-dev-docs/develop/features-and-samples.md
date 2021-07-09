@@ -3,16 +3,16 @@ title: Beispiele und Feature-Apps
 description: Bleiben Sie bei allen verfügbaren Microsoft-Beispielen und Mixed Reality-Feature-Apps für HoloLens auf dem neuesten Stand.
 author: hferrone
 ms.author: jemccull
-ms.date: 12/3/2020
+ms.date: 6/7/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Lernen, Beispiele, MRTK, Forschungsmodus, HoloLens 2, QR-Codes, WebRTC, Mixed Reality-Aufnahme, Holographic Remoting, UX-Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 78a9e343fde4a6cbc23268f0be353577498d67b6
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583197"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906896"
 ---
 # <a name="samples-and-feature-apps"></a>Beispiele und Feature-Apps
 
@@ -27,6 +27,17 @@ Jede Entwicklungs-Journey beginnt mit einem Blick zurück auf das, was andere En
 ## <a name="feature-samples"></a>Featurebeispiele
 
 Die unten aufgeführten Featurebeispiele entsprechen bestimmten Implementierungen, die in unserer Dokumentation behandelt werden, und decken eine Reihe von Entwicklungsplattformen und Hardwaregeräten ab.
+
+### <a name="openxr"></a>OpenXR
+
+Entwickler, die für Unity 2020 entwickeln, um HoloLens 2- oder Mixed Reality-Anwendungen zu erstellen, können das OpenXR-Plug-In anstelle des WindowsXR-Plug-Ins verwenden, um eine bessere plattformübergreifende Kompatibilität zu erzielen. Das Mixed Reality OpenXR-Plug-In funktioniert auch gut mit dem neuesten Mixed Reality Toolkit 2.7.
+
+<br>
+
+| Referenzartikel | Beispiel |
+| --- | --- |
+| [Verwenden des OpenXR-Plug-Ins](./unity/xr-project-setup.md) | [Mixed Reality OpenXR mit Unity-Beispielen](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| – | [OpenXR MRTK-Basisprojekt für Unity](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### <a name="research-mode"></a>Forschungsmodus
 
@@ -47,7 +58,17 @@ HoloLens 2 kann QR-Codes in der Umgebung um das Headset erkennen und ein Koordi
 
 | Referenzartikel | Beispiel |
 | --- | --- |
-| [QR-Codes](platform-capabilities-and-apis/qr-code-tracking.md) | [Nachverfolgen von QR-Codes in Unity](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
+| [QR-Codes](platform-capabilities-and-apis/qr-code-tracking.md) | [Nachverfolgen von QR-Codes in Unity](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+
+### <a name="scene-understanding"></a>Grundlegendes zu Szenen
+
+Szenenverständnis bietet Mixed Reality-Entwicklern eine strukturierte, allgemeine Umgebungsdarstellung, die die Entwicklung für umgebungssensible Anwendungen intuitiv macht. Das Szenenverständnis erreicht dies durch die Kombination der Leistung vorhandener Mixed Reality-Runtimes wie der hochgenauen, aber weniger strukturierten räumlichen Abbildung mit neuen KI-gesteuerten Runtimes.
+
+<br>
+
+| Referenzartikel | Beispiel |
+| --- | --- |
+| [Grundlegendes zu Szenen](../design/scene-understanding.md) | [Beispiele für Mixed Reality-Szenenverständnis](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
 
 ### <a name="webrtc"></a>WebRTC
 

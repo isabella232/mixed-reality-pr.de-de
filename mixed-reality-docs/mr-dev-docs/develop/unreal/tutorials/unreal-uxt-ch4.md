@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Tutorial, Erste Schritte, MRTK, UXT, UX-Tools, Dokumentation, Mixed Reality-Headset Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237151"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712605"
 ---
 # <a name="4-making-your-scene-interactive"></a>4. Interaktives Gestalten der Szene
 
@@ -20,26 +20,28 @@ Im vorhergehenden Tutorial haben Sie „ARSession“, „Pawn“ und den Spielem
 
 ## <a name="objectives"></a>Ziele
 
-* Installieren des UX-Tools-Plug-Ins für Mixed Reality von GitHub
+* Installieren des UX-Tools-Plug-Ins für Mixed Reality
 * Hinzufügen von Handinteraktionsakteuren für Ihre Fingerspitzen
 * Erstellen und Hinzufügen von Manipulatoren zu Objekten in der Szene
 * Überprüfen des Projekts mithilfe der Eingabesimulation
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>Herunterladen des UX-Tools-Plug-Ins für Mixed Reality
-Bevor Sie mit Benutzereingaben arbeiten können, müssen Sie das Plug-In dem Projekt hinzufügen.
+Bevor Sie mit Benutzereingaben arbeiten können, müssen Sie dem Projekt das UX-Tools-Plug-In für Mixed Reality hinzufügen. Weitere Informationen zu UX-Tools finden Sie in dem Projekt auf [GitHub](https://aka.ms/uxt-unreal).
 
-1. Navigieren Sie auf der [Versionsseite](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases) des Mixed Reality UX Tools auf GitHub zur UX Tools für Unreal-Version 0.10.0, und laden Sie **UXTools.0.10.0.zip** herunter. Entzippen Sie die Datei.
+1. Öffnen Sie den Epic Games Launcher. Navigieren Sie zum Unreal Engine Marketplace, und suchen Sie nach „[Mixed Reality UX Tools](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)“. Installieren Sie das Plug-In in Ihrer Engine.
 
-2.  Erstellen Sie im Stammordner des Projekts einen neuen Ordner mit dem Namen **Plugins**. Kopieren Sie das entzippte UXTools-Plug-In in diesen Ordner, und starten Sie den Unreal-Editor neu.
+![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-![Erstellen eines Plug-In-Ordners für das Projekt](images/unreal-uxt/4-plugins.PNG)
+2. Zurück im Unreal-Editor, wechseln Sie zu **Projekteinstellungen** > **Plug-Ins**, und suchen Sie nach „Mixed Reality UX Tools“. Stellen Sie sicher, dass das Plug-In aktiviert ist, und starten Sie den Editor neu, wenn Sie dazu aufgefordert werden.
 
-3.  Das UXTools-Plug-In besitzt einen Ordner „Content“ mit den Unterordnern **Buttons** (Schaltflächen), **Input Simulation** (Eingabesimulation) und **Pointers** (Zeiger) und einen Ordner „C++ Classes“ mit zusätzlichem Code.  
+![Aktivieren des UX-Tools-Plug-Ins für Mixed Reality](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.  Das UXTools-Plug-In besitzt einen Ordner „Content“ mit den Unterordnern **Buttons** (Schaltflächen), **XR Simulation** (XR-Simulation) und **Pointers** (Zeiger) und einen Ordner „C++ Classes“ mit zusätzlichem Code.  
 
 > [!NOTE]
-> Wenn im **Inhaltsbrowser** der Abschnitt **UXTools Content** nicht angezeigt wird, klicken Sie auf **View Options > Show Plugin Content** (Ansichtsoptionen > Plug-In-Inhalt anzeigen).
+> Wenn im **Inhaltsbrowser** der Abschnitt **UXTools Content** nicht angezeigt wird, klicken Sie auf **View Options > Show Engine Content** (Ansichtsoptionen > Engine-Inhalt anzeigen).
 
-![Anzeigen des Plug-In-Inhalts](images/unreal-uxt/4-showplugincontent.PNG)
+![Engine-Inhalt anzeigen](images/unreal-uxt/4-showenginecontent.PNG)
 
 Weitere Plug-In-Dokumentation finden Sie im GitHub-[Repository](https://aka.ms/uxt-unreal) der UX-Tools für Mixed Reality.
 

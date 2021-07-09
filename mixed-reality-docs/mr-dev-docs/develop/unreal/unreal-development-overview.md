@@ -7,18 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, OpenXR
-ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1225c507ec46c6f42c2fc10582a7920802860ad0
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99421419"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394314"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
 ![Unreal-Bannerlogo](../images/unreal_logo_banner.png)
 
-Die ersten Schritte mit <a href="https://docs.microsoft.com/windows/mixed-reality" target="_blank" title="Mixed Reality-Dokumentation"> Mixed Reality-Anwendungen</a> sind eine Herausforderung. Neue Konzepte, Plattformen und neuartige Hardware können sich als Hürden erweisen. Wenn Sie jedoch Unreal-Entwickler sind, haben Sie Glück. Unreal Engine 4 besitzt vollständige Unterstützung für <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality-Dokumentation">Windows Mixed Reality</a> (VR) und <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2-Dokumentation">HoloLens 2</a> (AR)-Geräte.
+Die ersten Schritte mit <a href="/windows/mixed-reality" target="_blank" title="Mixed Reality-Dokumentation"> Mixed Reality-Anwendungen</a> sind eine Herausforderung. Neue Konzepte, Plattformen und neuartige Hardware können sich als Hürden erweisen. Wenn Sie jedoch Unreal-Entwickler sind, haben Sie Glück. Unreal Engine 4 besitzt vollständige Unterstützung für <a href="https://www.microsoft.com/windows/windows-mixed-reality" target="_blank" title="Windows Mixed Reality-Dokumentation">Windows Mixed Reality</a> (VR) und <a href="https://www.microsoft.com/hololens/hardware" target="_blank" title="HoloLens 2-Dokumentation">HoloLens 2</a> (AR)-Geräte.
 
 [!INCLUDE[](includes/tabs-unreal-features.md)]
 
@@ -38,9 +38,10 @@ Zunächst müssen Sie die Tools für die HoloLens 2-Entwicklung installieren. A
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
 | [Installieren der neuesten Tools](../install-the-tools.md) | Laden Sie die neueste Version der Unreal Engine herunter, installieren Sie sie, und richten Sie Ihr Projekt für Mixed Reality ein |
+| [Einrichten des Projekts](unreal-project-setup.md) | Abrufen der neuesten Version der Unreal Engine und des MRTK |
 | [Erstellen Ihrer ersten HoloLens Unreal-Anwendung](unreal-quickstart.md) | Beginnen Sie Ihre Reise in die Unreal- und HoloLens-Entwicklung mit dem Erstellen einer einfachen Mixed Reality-Anwendung |
 | [Hololens 2-Tutorialreihe](tutorials/unreal-uxt-ch1.md) | Richten Sie sich für die Mixed Reality-Entwicklung in Unreal ein, erstellen Sie Ihre erste App mit MRTK, und stellen Sie Ihre App in HoloLens 2 bereit. |
-| (Optional) Erste Schritte mit [OpenXR](../native/openxr.md) in Unreal. | Wenn Sie eine OpenXR-App in Unreal erstellen möchten, sollten Sie das folgende Engine-Plug-In deaktivieren:<ul><li>Windows Mixed Reality</li></ul><br>Laden Sie das folgende Plug-In in Ihr Projekt von GitHub herunter, und aktivieren Sie es:<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>Die vollständige Liste der derzeit unterstützten Funktionen in OpenXR finden Sie weiter [unten](#supported-features).|
+| Erste Schritte mit [OpenXR](../native/openxr.md) in Unreal | Installieren und aktivieren Sie das folgende Plug-In aus dem Unreal Engine Marketplace:<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>Stellen Sie sicher, dass das Microsoft Windows Mixed Reality-Plug-In deaktiviert ist.<br><br>Die vollständige Liste der derzeit unterstützten Funktionen in OpenXR finden Sie weiter [unten](#supported-features).|
 
 ### <a name="2-core-building-blocks"></a>2. Grundbausteine
 
@@ -75,9 +76,13 @@ Wenn Sie zum ersten Mal eine Unreal-App für HoloLens 2 bereitstellen, müssen 
 
 ### <a name="5-adding-services"></a>5. Hinzufügen von Diensten
 
-An diesem Punkt auf Ihrem Entwicklungsweg suchen Sie vielleicht nach Möglichkeiten zum Hinzufügen von Diensten oder nach Hilfe zur kommerziellen Bereitstellung. Das Integrieren von [Azure Cloud Services](../mixed-reality-cloud-services.md) und Features von Dynamics 365 kann Ihre Projekte auf eine ganz andere Stufe heben. Wir haben für Sie einige Ausgangspunkte zum Erkunden und zum Erweitern Ihrer Mixed Reality-Kenntnisse zusammengetragen.
+An diesem Punkt auf Ihrem Entwicklungsweg suchen Sie vielleicht nach Möglichkeiten zum Hinzufügen von Diensten oder nach Hilfe zur kommerziellen Bereitstellung. Das Integrieren von [Azure Cloud Services](../mixed-reality-cloud-services.md) kann Ihre Projekte auf eine ganz andere Stufe heben. Wir haben für Sie einige Ausgangspunkte zum Erkunden und zum Erweitern Ihrer Mixed Reality-Kenntnisse zusammengetragen.
 
 [!INCLUDE[](../includes/unreal-cloud-services-d365.md)]
+
+### <a name="6-low-code-alternatives"></a>6. Low-Code-Alternativen
+
+[!INCLUDE[](../includes/unreal-low-code.md)]
 
 ## <a name="whats-next"></a>Wie geht es weiter?
 
@@ -93,7 +98,7 @@ Die Entwicklung für Mixed Reality ist mit Leistungsprüfpunkten verbunden, die 
 
 ## <a name="supported-features"></a>Unterstützte Features
 
-| HoloLens 2-Feature | Niedrigste unterstützte Unreal Engine-Version | Unterstützt in OpenXR (4.26) |
+| HoloLens 2-Feature | Niedrigste unterstützte Unreal Engine-Version | Unterstützt in OpenXR (4.26+) |
 | ----------- | ----------- | ----------- |
 | ARM64-Unterstützung | 4.23 | ✔️ |
 | Streaming von einem PC | 4.23 | ✔️ |
@@ -102,21 +107,21 @@ Die Entwicklung für Mixed Reality ist mit Leistungsprüfpunkten verbunden, die 
 | Eyetracking – Blickverfolgung | 4.23 | ✔️ |
 | Spracheingabe | 4.23 | ✔️ |
 | Raumanker | 4.23 | ✔️ |
-| Kamerazugriff | 4.23 |
+| Kamerazugriff | 4.23 | ✔️ |
 | QR-Codes | 4.23 | ✔️ |
 | Räumliche Audiowiedergabe | 4.23 | ✔️ |
 | Zuschauerbildschirmunterstützung für Streaming | 4.24 |
 | Planar-LSR über Streaming | 4.24 |
 | [Beispiel-Apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile Multiansicht: Leistung erreicht 60 FPS | 4.25 | ✔️ |
-| Rendering der dritten Kamera | 4.25 |
+| Rendering der dritten Kamera | 4.25 | ✔️ |
 | Streaming aus einer verpackten Desktop-App | 4.25.1 | ✔️ |
-| Azure Spatial Anchors für HoloLens 2 (Beta) | 4.25 |
+| Azure Spatial Anchors für HoloLens 2 | 4.25 | ✔️ |
 | Unterstützung von Mixed Reality UX Tools | 4.25 | ✔️ |
 | Dokumentation und Tutorials für Entwickler | 4.25 | ✔️ |
 | Systemtastatur | 4.26 | ✔️ |
 | HoloLens Media Player-Plug-In | 4.26 | ✔️ |
-| Azure Spatial Anchors für iOS und Android (Beta) | 4.26 |
+| Azure Spatial Anchors für iOS und Android | 4.26 |
 | Microsoft OpenXR-Plug-In mit den herstellerspezifischen OpenXR-Erweiterungen von Microsoft | 4.26 | ✔️ |
 | Streaming von Azure zu HoloLens 2 | 4.26 | ✔️ |
 | Compliance des Zertifizierungskits für Windows-Apps für verpackte Apps | 4.26 | ✔️ |

@@ -3,16 +3,16 @@ title: Willkommen beim Mixed Reality-Featuretool
 description: Lernen Sie die Grundlagen des MR-Featuretools für die HoloLens- und VR-Entwicklung kennen.
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: 0aad81ddd625467dd9159232d590b1a4bf68d06b
-ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
+ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570253"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772413"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Willkommen beim Mixed Reality-Featuretool
 
@@ -33,13 +33,31 @@ Damit Sie das Mixed Reality-Featuretool ausführen können, benötigen Sie Folge
 > [!NOTE]
 > Das Mixed Reality-Featuretool kann zurzeit nur unter Windows ausgeführt werden, MacOS-Unterstützung wird aber in Kürze verfügbar sein.
 
-## <a name="download"></a>Download 
+## <a name="download"></a>Download
 
 Nachdem Sie Ihre Umgebung eingerichtet haben:
 
 * [Laden Sie die neueste Version des Mixed Reality-Featuretools](https://aka.ms/MRFeatureTool) aus dem Microsoft Download Center herunter.
 * Wenn der Download abgeschlossen ist, entpacken Sie die Datei, und speichern Sie sie auf Ihrem Desktop.
     * Es empfiehlt sich, für den schnelleren Zugriff eine Verknüpfung zur ausführbaren Datei zu erstellen
+
+> [!NOTE]
+> Wenn Sie noch keine Erfahrung mit der Verwendung des Unity-Paket-Managers haben, befolgen Sie unsere [UPM-Anweisungen](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager).
+
+## <a name="changes-in-this-release"></a>Änderungen in diesem Release
+
+Version 1.0.2103 Beta enthält die folgenden Fehlerkorrekturen:
+
+* Verbesserungen bei der Erkennung von Downloadfehlern.
+* Aktualisierungen an der Art, in der Manifeste geschrieben werden, um Fehler bei der korrekten Aktualisierung zu vermeiden.
+* Die Verwendung von Escapezeichen wurde aus Dateipfaden im Projektmanifest entfernt.
+
+Dieses Release wurde um die folgenden Features erweitert:
+
+* Der Featurekatalog wird jetzt zwischengespeichert. Um nach neuen Features und Updates zu suchen, verwenden Sie die Schaltfläche „Aktualisieren“ in „Discovery“ (Ermittlung).
+* Die Projektauswahl wurde aus dem Importschritt vor die Ermittlung verschoben.
+* Verfügbare Pakete werden nach der angegebenen Unity-Version des Projekts gefiltert.
+* In der Ermittlungsansicht werden jetzt die aktuell installierten Pakete angezeigt.
 
 ## <a name="1-getting-started"></a>1. Erste Schritte
 
@@ -53,26 +71,43 @@ Auf der Startseite können Sie Folgendes ausführen:
 * Verwenden der Schaltfläche mit dem **Fragezeichen** zum Starten des Webbrowsers und Anzeigen unserer Dokumentation
 * Auswähle von **Start**, um mit dem Ermitteln von Featurepaketen zu beginnen
 
-## <a name="2-discovering-and-acquiring-feature-packages"></a>2. Ermitteln und Erwerben von Featurepaketen
+## <a name="2-selecting-your-unity-project"></a>2. Auswählen Ihres Unity-Projekts
 
-Der Katalog der Featurepakete wird abgerufen, sobald Sie auf „Start“ klicken. Die Features sind zur besseren Orientierung nach Kategorien gruppiert. Beispielsweise weist die **Mixed Reality-Toolkit**-Kategorie mehrere Features auf, unter denen Sie wählen können:
+Um sicherzustellen, dass alle ermittelten Features in der Unity-Version Ihres Projekts unterstützt werden, besteht der erste Schritt darin, das Mixed Reality-Featuretool mithilfe der Schaltfläche mit den **Auslassungszeichen** (rechts neben dem Feld „Projektpfad“) auf Ihr Projekt zu verweisen.
+
+![Auswählen des Unity-Projekts](images/FeatureToolSelectUnityProject.png)
+
+> [!NOTE]
+> Das Dialogfeld, das angezeigt wird, wenn Sie das Dateisystem nach dem Unity-Projektordner durchsuchen, enthält '_' als den Dateinamen. Es muss ein Wert für den Dateinamen vorhanden sein, um die Auswahl des Ordners zu ermöglichen.
+
+Wenn Sie den Ordner Ihres Projekts gefunden haben, klicken Sie auf die Schaltfläche „Öffnen“, um zum Mixed Reality-Featuretool zurückzukehren.
+
+> [!IMPORTANT]
+> Das Mixed Reality-Featuretool führt eine Überprüfung durch, um sicherzustellen, dass die Weiterleitung an einen Unity-Projektordner erfolgt. Der Ordner muss die Ordner `Assets`, `Packages` und `Project Settings` enthalten.
+
+## <a name="3-discovering-and-acquiring-feature-packages"></a>3. Ermitteln und Erwerben von Featurepaketen
+
+> [!NOTE]
+> Version 1.0.2103 Beta speichert jetzt den Inhalt des Featurekatalogs zwischen, wenn auf den Server zugegriffen wird. Diese Änderung ermöglicht den schnellen Zugriff auf verfügbare Features auf Kosten der Anzeige der absolut neuesten Daten. Verwenden Sie zum Aktualisieren des Katalogs die Schaltfläche **Aktualisieren**.
+
+Die Features sind zur besseren Orientierung nach Kategorien gruppiert. Beispielsweise weist die **Mixed Reality-Toolkit**-Kategorie mehrere Features auf, unter denen Sie wählen können:
 
 ![Ermittlung und Erwerb](images/FeatureToolDiscovery.png)
 
+Wenn das Mixed Reality-Featuretool zuvor importierte Features erkennt, zeigt es für jedes eine Benachrichtigung an.
+
+![Benachrichtigung über importiertes Features](images/feature-tool-imported-note.png)
+
+
 Sobald Sie Ihre Wahl getroffen haben, wählen Sie **Get features** (Features abrufen) aus, um alle benötigten Pakete aus dem Katalog abzurufen. Weitere Informationen finden Sie unter [discovering and acquiring features](discovering-features.md) (Ermitteln und Erwerben von Features).
 
-## <a name="3-importing-feature-packages"></a>3. Importieren von Featurepaketen
+## <a name="4-importing-feature-packages"></a>4. Importieren von Featurepaketen
 
 Nach dem Erwerb wird der gesamte Satz von Paketen zusammen mit einer Liste der erforderlichen Abhängigkeiten angezeigt. Wenn Sie die Auswahl eines Features oder Pakets ändern müssen, ist dies der richtige Zeitpunkt:
 
 ![Importieren von Paketen](images/FeatureToolImport.png)
 
 Wir empfehlen dringend, die Schaltfläche **Validate** (Überprüfen) zu verwenden, um sicherzustellen, dass das Unity-Projekt die ausgewählten Features erfolgreich importieren kann. Nach der Überprüfung wird ein Popupdialogfeld mit einer Erfolgsmeldung oder einer Liste der identifizierten Probleme angezeigt.
-
-Ferner müssen Sie vor dem Importieren noch den Speicherort des Unity-Zielprojekts festlegen. Verwenden Sie die Schaltfläche mit dem **Auslassungszeichen** auf der linken Seite des Projektpfadfelds zum Durchsuchen. Wenn Sie die Navigation in Ihrem Dateisystem abgeschlossen haben, öffnen Sie den Ordner, der Ihr Unity-Zielprojekt enthält.
-
-> [!NOTE]
-> Das Dialogfeld, das angezeigt wird, wenn Sie das Dateisystem nach dem Unity-Projektordner durchsuchen, enthält '_' als den Dateinamen. Es muss ein Wert für den Dateinamen vorhanden sein, um die Auswahl des Ordners zu ermöglichen.
 
 Wählen Sie **Importieren** aus, um fortzufahren.
 
@@ -81,7 +116,7 @@ Wählen Sie **Importieren** aus, um fortzufahren.
 
 Weitere Informationen finden Sie unter [Importieren von Features](importing-features.md).
 
-## <a name="4-reviewing-and-approving-project-changes"></a>4. Überprüfen und Genehmigen von Projektänderungen
+## <a name="5-reviewing-and-approving-project-changes"></a>5. Überprüfen und Genehmigen von Projektänderungen
 
 Der letzte Schritt besteht im Überprüfen und Genehmigen der vorgeschlagenen Änderungen an den Manifest- und Projektdateien:
 
@@ -93,9 +128,9 @@ Der letzte Schritt besteht im Überprüfen und Genehmigen der vorgeschlagenen Ä
 
 Weitere Informationen finden Sie unter [Überprüfen und Genehmigen von Projektänderungen](reviewing-changes.md).
 
-## <a name="5-project-updated"></a>5. Projekt aktualisiert
+## <a name="6-project-updated"></a>6. Projekt aktualisiert
 
-Wenn die vorgeschlagenen Änderungen genehmigt werden, wird Ihr Unity-Zielprojekt aktualisiert, um auf die ausgewählten Mixed Reality-Features zu verweisen:
+Wenn die vorgeschlagenen Änderungen genehmigt wurden, wird Ihr Unity-Zielprojekt so aktualisiert, dass es auf die ausgewählten Mixed Reality-Features verweist.
 
 ![Projekt aktualisiert](images/FeatureToolProjectUpdated.png)
 

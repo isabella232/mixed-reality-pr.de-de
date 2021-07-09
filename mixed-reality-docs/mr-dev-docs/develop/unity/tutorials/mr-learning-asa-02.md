@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983143"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175561"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2. Erste Schritte mit Azure Spatial Anchors
 
@@ -31,43 +31,15 @@ Befolgen Sie zunächst die Anweisungen unter [Initialisieren Ihres Projekts und 
 
 1. [Erstellen eines neuen Unity-Projekts](mr-learning-base-02.md#creating-the-unity-project), das mit einem passenden Namen bezeichnet wird, beispielsweise *MRTK-Tutorials*
 2. [Wechseln der Buildplattform](mr-learning-base-02.md#switching-the-build-platform)
-3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [Importieren des Mixed Reality-Toolkits](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [Konfigurieren des Unity-Projekts](mr-learning-base-02.md#configuring-the-unity-project)
-6. [Erstellen und Konfigurieren der Szene](mr-learning-base-02.md#creating-and-configuring-the-scene) und Bezeichnen der Szene mit einem passenden Namen, z. B. *AzureSpatialAnchors*
+3. [Importieren der TextMeshPro Essential-Ressourcen](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [Importieren des Mixed Reality Toolkits und Konfigurieren des Unity-Projekts](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [Erstellen und Konfigurieren der Szene](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) und Bezeichnen der Szene mit einem passenden Namen, z. B. *AzureSpatialAnchors*
 
-Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoptionen für räumliche Wahrnehmung](mr-learning-base-03.md#changing-the-spatial-awareness-display-option), um die folgenden Aufgaben auszuführen:
+Befolgen Sie dann die Anweisungen unter [Ändern der Anzeigeoption der räumlichen Wahrnehmung](mr-learning-base-03.md#changing-the-spatial-awareness-display-option), um sicherzustellen, dass das MRTK-Konfigurationsprofil für Ihre Szene **DefaultHoloLens2ConfigurationProfile** ist, und ändern Sie die Anzeigeoptionen für das Gittermodell zur räumlichen Wahrnehmung in **Occlusion** (Verdeckung).
 
-1. Ändern des **MRTK-Konfigurationsprofils** in **DefaultHoloLens2ConfigurationProfile**.
-1. Ändern der **Anzeigeoptionen für das Gittermodell für räumliche Wahrnehmung** in **Occlusion** (Verdeckung).
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>Installieren von integrierten Unity-Paketen und Importieren der Tutorialressourcen
 
-## <a name="installing-inbuilt-unity-packages"></a>Installieren von integrierten Unity-Paketen
-
-Wählen Sie im Unity-Menü **Fenster** > **Package Manager** (Paket-Manager) aus, um das Fenster „Package Manager“ zu öffnen, wählen Sie **AR Foundation** aus, und klicken Sie auf die Schaltfläche **Install** (Installieren), um das Paket zu installieren:
-
-![Unity-Paket-Manager mit ausgewählter AR Foundation](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> Sie installieren das AR Foundation-Paket, da es für das Azure Spatial Anchor SDK erforderlich ist, das Sie im nächsten Abschnitt importieren.
-
-## <a name="importing-the-tutorial-assets"></a>Importieren der Tutorialressourcen
-
-Fügen Sie Ihrem Unity-Projekt das AzurespatialAnchors SDK V2.7.1 hinzu. Um die Pakete hinzuzufügen, befolgen Sie dieses [Tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
-
-Laden Sie die folgenden benutzerdefinierten Unity-Pakete herunter, und **importieren** Sie sie **in der Reihenfolge, in der sie aufgelistet sind**:
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-Nach dem Importieren der Tutorialressourcen sollte Ihr Projektfenster ähnlich wie die folgende Abbildung aussehen:
-
-![Unity-Fenster „Hierarchie“, „Szene“ und „Projekt“ nach dem Importieren der Tutorialressourcen](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> Wenn CS0618-Warnungen angezeigt werden, dass „WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)“ veraltet ist, können Sie diese Warnungen ignorieren.
-
-> [!TIP]
-> Wenn Sie eine Auffrischung zum Importieren eines benutzerdefinierten Unity-Pakets benötigen, lesen Sie die Anweisungen unter [Importieren der Tutorialressourcen](mr-learning-base-02.md#importing-the-tutorial-assets).
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## <a name="preparing-the-scene"></a>Vorbereiten der Szene
 
@@ -84,6 +56,20 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureS
 
 > [!TIP]
 > Wenn Sie die großen Symbole in Ihrer Szene, beispielsweise die mit großen Rahmen umgebenen ‚T‘-Symbole, irritierend finden, können Sie diese ausblenden, indem Sie <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">die Gizmos umschalten</a> (in die Aus-Position), wie in der Abbildung oben dargestellt.
+
+Wählen Sie im Hierarchiefenster das **MixedRealityToolkit**-Objekt aus, und verwenden Sie die Schaltfläche **Add Component** (Komponente hinzufügen) im Inspektorfenster, um die folgenden Komponenten hinzuzufügen:
+
+* AR Anchor Manager (Script)
+* DisableDiagnosticsSystem (Script)
+
+![Unity-Objekt „MixedRealityToolkit“ mit hinzugefügten AR Anchor Manager- und DisableDiagnosticsSystem-Komponenten ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!WARNING]
+> Es gibt ein bekanntes Problem mit ASA v2.9.0 und v2.10.0-preview.1, bei dem zwei zusätzliche Objekte in der Szene platziert werden müssen. Verwenden Sie die Schaltfläche **Add Component** (Komponente hinzufügen) im Inspektorfenster, um dem **MixedRealityToolkit**-Objekt einen AR-Kamera-Manager (Skript) und eine AR-Sitzung (Skript) hinzuzufügen. Stellen Sie sicher, dass Sie die Kamera deaktivieren, die beim Hinzufügen des AR-Kamera-Managers (Skript) automatisch erstellt wird, indem Sie das Kontrollkästchen neben dem Camera-Objekt im Inspektorfenster deaktivieren. Dieses Problem wird im vollständigen Release von ASA v2.10.0 behoben.
+> 
+
+> [!NOTE]
+> Wenn Sie die Komponente „AR Anchor Manager (Script)“ hinzufügen, wird die Komponente „AR Session Origin (Script)“ automatisch hinzugefügt, da sie von der Komponente „AR Anchor Manager (Script)“ benötigt wird.
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>Konfigurieren der Schaltflächen zum Betreiben der Szene
 
@@ -153,15 +139,15 @@ Azure Spatial Anchors können nicht in Unity ausgeführt werden, daher müssen S
 Wenn die App auf Ihrem Gerät ausgeführt wird, befolgen Sie die Anweisungen auf dem Bildschirm, die im Anweisungsbereich des Azure Spatial Anchor-Tutorials angezeigt werden:
 
 1. Bewegen Sie den Würfel an einen anderen Ort
-1. Starten Sie die Azure-Sitzung
-1. Erstellen Sie einen Azure-Anker (erstellt einen Anker an der Position des Würfels).
-1. Beenden Sie die Azure-Sitzung
-1. Entfernen Sie den lokalen Anker (ermöglicht es dem Benutzer, den Würfel zu bewegen)
-1. Bewegen Sie den Würfel an eine andere Stelle
-1. Starten Sie die Azure-Sitzung
-1. Suchen Sie einen Azure Anchor (positioniert den Würfel am Ort aus Schritt 3)
-1. Löschen Sie den Azure Anchor
-1. Beenden Sie die Azure-Sitzung
+2. Starten Sie die Azure-Sitzung
+3. Erstellen Sie einen Azure-Anker (erstellt einen Anker an der Position des Würfels).
+4. Beenden Sie die Azure-Sitzung
+5. Entfernen Sie den lokalen Anker (ermöglicht es dem Benutzer, den Würfel zu bewegen)
+6. Bewegen Sie den Würfel an eine andere Stelle
+7. Starten Sie die Azure-Sitzung
+8. Suchen Sie einen Azure Anchor (positioniert den Würfel am Ort aus Schritt 3)
+9. Löschen Sie den Azure Anchor
+10. Beenden Sie die Azure-Sitzung
 
 ![Unity mit ausgewähltem Instructions-Objekt](images/mr-learning-asa/asa-02-section7-step1-1.png)
 

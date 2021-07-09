@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, Anvisieren, Zielbestimmung, Interaktion, Entwurf, HoloLens, MMR, kombiniert, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens
-ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 55e23ac2fb802af599fb9cc7d771d89d6ba36c47
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847290"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196415"
 ---
 # <a name="introducing-instinctual-interactions"></a>Einführung in instinktive Interaktionen
 
@@ -28,6 +28,14 @@ Wir haben zwar erkannt, dass Mixed Reality (MR) Tausende von effektiven, ansprec
 * Diese Anleitung um die drei primären Interaktionsmodelle und die für jedes einzelne Modell erforderlichen Komponenten und Muster.
 * Zusätzliche Anleitungen zu weiteren Vorteilen, die unsere Plattform bietet.
 * Allgemeine Anleitungen zur Auswahl des geeigneten Interaktionsmodells für Ihr Entwicklungsszenario.
+
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>Demo zu grundlegendem Handtracking und instinktiven Interaktionen
+
+Sehen Sie sich unten unsere Videodemo **Entwerfen von Hologrammen: Kopf- und Eyetracking** an, und fahren Sie dann mit spezifischeren Themen fort:
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+*Dieses Video wurde aus der HoloLens 2-App „Entwerfen von Hologrammen“ aufgenommen. Laden Sie die vollständige Erfahrung [hier](https://aka.ms/dhapp) herunter, und genießen Sie sie.*
 
 ## <a name="multimodal-interaction-models"></a>Kombinierte Interaktionsmodelle
 
