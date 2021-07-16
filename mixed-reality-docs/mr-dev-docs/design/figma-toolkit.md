@@ -6,21 +6,21 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, Design, Designer, Designdatei, UX-Design, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644856"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224326"
 ---
 # <a name="figma-toolkit"></a>Figma-Toolkit
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-Figma Toolkit stellt die Ressourcen bereit, die zum Skizzieren und Entwerfen der Benutzeroberfläche verwendet werden können. Alle Benutzeroberflächensteuerelemente basieren auf den komponenten, die im MRTK verfügbar sind. 
+Das MRTK Figma Toolkit bietet 2D-Versionen der HoloLens 2 Ui-Steuerelemente, die Sie im MRTK für Unity oder MRTK für Unreal finden. Sie können dies im Entwurfsprozess zum Erstellen von Benutzeroberflächenlayouts und Storyboards verwenden.
 
 > [!div class="nextstepaction"]
-> [Anzeigen des Figma-Toolkits](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [Anzeigen des Figma-Toolkits](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>Verwenden des Figma-Toolkits
 Verwenden Sie **Duplizieren im Menü "Entwürfe",** um eine Kopie zu erstellen.
@@ -50,6 +50,9 @@ Auf der Seite Ui Gallery and Components (UI-Katalog und Komponenten) werden alle
 
 ![Figma Toolkit-Beispiel – Menübenutzeroberfläche 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
 
+
+![Figma Toolkit-Beispiel – Menübenutzeroberfläche 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
+
 Auf der Registerkarte **Assets** können Sie diese Komponenten durchsuchen und auf Ihre Seite ziehen.
 
 <img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px" alt="Assets tab"><br>
@@ -59,7 +62,7 @@ Auf der Registerkarte **Assets** können Sie diese Komponenten durchsuchen und a
 
 Figma Toolkit kann nützlich sein, um die Menüoberfläche zu skizzieren. 
 
-![Figma Toolkit-Beispiel – Menübenutzeroberfläche 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Figma Toolkit-Beispiel – Menübenutzeroberfläche 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 Ressourcen können für Storyboarding verwendet werden.

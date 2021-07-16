@@ -1,20 +1,20 @@
 ---
-title: Erstellen eines Einstellungsanbieters
-description: Datenanbieter für Kameraeinstellungen im MRTK
+title: Erstellen eines Anbieters für Kameraeinstellungen
+description: Datenanbieter für Kameraeinstellungen in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: d07b84c3cf550f9a235e58286b4cd239ac43b649
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121188"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282033"
 ---
-# <a name="creating-a-camera-settings-provider"></a>Erstellen eines Kameraeinstellungsanbieters
+# <a name="creating-a-camera-settings-provider"></a>Erstellen eines Anbieters für Kameraeinstellungen
 
-Das Kamerasystem ist ein erweiterbares System zur Bereitstellung von Unterstützung für plattformspezifische Kamerakonfigurationen. Um Unterstützung für eine neue Kamerakonfiguration hinzuzufügen, ist möglicherweise ein benutzerdefinierter Einstellungsanbieter erforderlich.
+Das Kamerasystem ist ein erweiterbares System für die Unterstützung plattformspezifischer Kamerakonfigurationen. Um Unterstützung für eine neue Kamerakonfiguration hinzuzufügen, ist möglicherweise ein benutzerdefinierter Einstellungsanbieter erforderlich.
 
 > [!NOTE]
 > Den vollständigen Quellcode, der in diesem Beispiel verwendet wird, finden Sie im Ordner **MRTK/Providers/UnityAR.**
@@ -23,21 +23,21 @@ Das Kamerasystem ist ein erweiterbares System zur Bereitstellung von Unterstütz
 
 Datenanbieter können auf zwei Arten verteilt werden:
 
-1. Drittanbieter-Add-Ons
-1. Teil des Microsoft Mixed Reality Toolkits
+1. Add-Ons von Drittanbietern
+1. Teil des Microsoft Mixed Reality Toolkit
 
-Der Genehmigungsprozess für die Übermittlung neuer Datenanbieter an das MRTK variiert von Fall zu Fall und wird zum Zeitpunkt des ersten Vorschlags kommuniziert. Vorschläge können übermittelt werden, indem ein neues Problem mit dem [ *Funktionsanforderungstyp* erstellt wird.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)
+Der Genehmigungsprozess für die Übermittlung neuer Datenanbieter an das MRTK variiert von Fall zu Fall und wird zum Zeitpunkt des ursprünglichen Vorschlags kommuniziert. Vorschläge können übermittelt werden, indem ein neues Problem vom Typ [ *Featureanforderung*](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)erstellt wird.
 
-### <a name="third-party-add-ons"></a>Drittanbieter-Add-Ons
+### <a name="third-party-add-ons"></a>Add-Ons von Drittanbietern
 
 **Namespace**
 
-Datenanbieter müssen über einen Namespace verfügen, um potenzielle Namenskollisionen zu minimieren. Es wird empfohlen, dass der -Namespace die folgenden Komponenten enthält.
+Datenanbieter müssen über einen Namespace verfügen, um potenzielle Namenskonflikte zu minimieren. Es wird empfohlen, dass der Namespace die folgenden Komponenten enthält.
 
-- Unternehmensname, der das Add-On erzeugt
+- Firmenname, der das Add-On erzeugt
 - Featurebereich
 
-Ein Kameraeinstellungsanbieter, der vom Unternehmen Contoso erstellt und ausgeliefert wird, kann *beispielsweise "Contoso.MixedReality.Toolkit.Camera" sein.*
+Ein Anbieter für Kameraeinstellungen, der vom Contoso-Unternehmen erstellt und ausgeliefert wird, kann beispielsweise *"Contoso.MixedReality.Toolkit.Camera" sein.*
 
 **Ordnerstruktur**
 
@@ -45,29 +45,29 @@ Es wird empfohlen, den Quellcode für Datenanbieter in einer Ordnerhierarchie zu
 
 ![Beispiel für die Paketordnerstruktur](../images/camera-system/ExampleProviderFolderStructure.png)
 
-Enthält der *Ordner ContosoCamera* die Implementierung des Datenanbieters, enthält der *Ordner Editor* den Inspektor (und jeden anderen spezifischen Code des Unity-Editors), und der Ordner *Profiles* enthält mindestens ein vorgefertigtes Profil, für das Skripts erstellt werden können.
+Wenn der Ordner *ContosoCamera* die Implementierung des Datenanbieters enthält, enthält der *Ordner Editor* den Inspektor (und jeglichen anderen Unity-Editor-spezifischen Code), und der Ordner *Profile* enthält ein oder mehrere vorgefertigte Profile, die skriptfähig sind.
 
 ### <a name="mrtk-submission"></a>MRTK-Übermittlung
 
 **Namespace**
 
-Wenn ein Kameraeinstellungsanbieter [an das Mixed Reality Toolkit-Repository](https://github.com/Microsoft/MixedRealityToolkit-Unity)  übermittelt wird, muss der Namespace mit Microsoft.MixedReality.Toolkit (z.B. *Microsoft.MixedReality.Toolkit.CameraSystem) beginnen.*
+Wenn ein Kameraeinstellungsanbieter an das [Mixed Reality Toolkit-Repository](https://github.com/Microsoft/MixedRealityToolkit-Unity)übermittelt wird, **muss** der Namespace mit Microsoft.MixedReality.Toolkit (z.B. *Microsoft.MixedReality.Toolkit.CameraSystem)* beginnen.
 
 **Ordnerstruktur**
 
-Der code muss sich in einem Ordner unter MRTK/Providers befinden (z.B. MRTK/Providers/UnityAR).
+Der gesamte Code muss sich in einem Ordner unter MRTK/Providers (z.B. MRTK/Providers/UnityAR) befinden.
 
 ## <a name="define-the-camera-settings-object"></a>Definieren des Kameraeinstellungsobjekts
 
-Der erste Schritt beim Erstellen eines Kameraeinstellungsanbieters besteht in der Bestimmung des Datentyps (z. B. Gitternetze oder Ebenen), die er für Anwendungen bereitstellen wird.
+Der erste Schritt beim Erstellen eines Kameraeinstellungsanbieters besteht darin, den Typ der Daten (z. B. Gitternetze oder Ebenen) zu bestimmen, die für Anwendungen zur Verfügung stehen.
 
-Alle räumlichen Datenobjekte müssen die -Schnittstelle [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) implementieren.
+Alle räumlichen Datenobjekte müssen die [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) -Schnittstelle implementieren.
 
 ## <a name="implement-the-settings-provider"></a>Implementieren des Einstellungsanbieters
 
-### <a name="specify-interface-andor-base-class-inheritance"></a>Angeben der Vererbung von Schnittstellen und/oder Basisklassen
+### <a name="specify-interface-andor-base-class-inheritance"></a>Angeben der Schnittstellen- und/oder Basisklassenvererbung
 
-Alle Kameraeinstellungsanbieter müssen die -Schnittstelle implementieren, die die für das Kamerasystem erforderliche [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) Mindestfunktionalität angibt. Die MRTK-Grundlage enthält die [`BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider) -Klasse, die eine Standardimplementierung der erforderlichen Funktionalität bietet.
+Alle Kameraeinstellungsanbieter müssen die [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) -Schnittstelle implementieren, die die mindest erforderliche Funktionalität des Kamerasystems angibt. Die MRTK-Grundlage enthält die [`BaseCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider) -Klasse, die eine Standardimplementierung der erforderlichen Funktionalität bereitstellt.
 
 ```c#
 namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
@@ -79,7 +79,7 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 #### <a name="apply-the-mixedrealitydataprovider-attribute"></a>Anwenden des MixedRealityDataProvider-Attributs
 
-Ein wichtiger Schritt beim Erstellen eines Kameraeinstellungsanbieters ist das Anwenden des [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) -Attributs auf die -Klasse. Dieser Schritt ermöglicht das Festlegen des Standardprofils und der Plattform(en) für den Datenanbieter, wenn es im Profil Kamerasystem ausgewählt ist, sowie name, folder path und mehr.
+Ein wichtiger Schritt beim Erstellen eines Kameraeinstellungsanbieters besteht darin, das [`MixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.MixedRealityDataProviderAttribute) -Attribut auf die -Klasse anzuwenden. Mit diesem Schritt können Sie das Standardprofil und die Plattformen für den Datenanbieter festlegen, wenn sie im Kamerasystemprofil ausgewählt sind, sowie Name, Ordnerpfad usw.
 
 ```c#
     [MixedRealityDataProvider(
@@ -94,12 +94,12 @@ Ein wichtiger Schritt beim Erstellen eines Kameraeinstellungsanbieters ist das A
 
 ### <a name="implement-the-imixedrealitydataprovider-methods"></a>Implementieren der IMixedRealityDataProvider-Methoden
 
-Nachdem die Klasse definiert wurde, besteht der nächste Schritt im Bereitstellen der Implementierung der [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) -Schnittstelle.
+Nachdem die -Klasse definiert wurde, besteht der nächste Schritt darin, die Implementierung der [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) -Schnittstelle bereitzustellen.
 
 > [!NOTE]
-> Die [`BaseDataProvider`](xref:Microsoft.MixedReality.Toolkit.BaseDataProvider`1) -Klasse stellt über [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) die -Klasse leere Implementierungen für [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) -Methoden zur Anwendung. Die Details dieser Methoden sind im Allgemeinen datenanbieterspezifisch.
+> Die [`BaseDataProvider`](xref:Microsoft.MixedReality.Toolkit.BaseDataProvider`1) -Klasse stellt über die [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) -Klasse leere Implementierungen für [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) Methoden bereit. Die Details dieser Methoden sind im Allgemeinen datenanbieterspezifisch.
 
-Die Methoden, die vom Datenanbieter implementiert werden sollten, sind:
+Der Datenanbieter sollte folgende Methoden implementieren:
 
 - `Destroy()`
 - `Disable()`
@@ -115,13 +115,13 @@ Die Methoden, die vom Datenanbieter implementiert werden sollten, sind:
 
 Im nächsten Schritt fügen Sie die Logik des Einstellungsanbieters hinzu, indem Sie [`IMixedRealityCameraSettingsProvider`](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider) implementieren. Dieser Teil des Datenanbieters ist in der Regel kamerakonfigurationsspezifisch.
 
-## <a name="create-the-profile-and-inspector"></a>Erstellen des Profils und Inspektors
+## <a name="create-the-profile-and-inspector"></a>Erstellen des Profils und des Inspektors
 
-Im Mixed Reality Toolkit werden Datenanbieter mithilfe der Profile [konfiguriert.](../profiles/profiles.md)
+Im Mixed Reality Toolkit werden Datenanbieter mithilfe von [Profilen](../profiles/profiles.md)konfiguriert.
 
 ### <a name="define-the-profile"></a>Definieren des Profils
 
-Der Profilinhalt sollte die von Entwicklern auswählbaren Konfigurationsoptionen spiegeln. Alle vom Benutzer konfigurierbaren Eigenschaften, die in jeder Schnittstelle definiert sind, sollten ebenfalls im Profil enthalten sein.
+Profilinhalte sollten die vom Entwickler auswählbaren Konfigurationsoptionen widerspiegeln. Alle vom Benutzer konfigurierbaren Eigenschaften, die in jeder Schnittstelle definiert sind, sollten auch im Profil enthalten sein.
 
 ```c#
 using UnityEngine.SpatialTracking;
@@ -164,13 +164,13 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 }
 ```
 
-Das -Attribut kann auf die Profilklasse angewendet werden, damit Kunden mithilfe des Menüs Ressourcen erstellen Mixed Reality `CreateAssetMenu`   >    >  **Toolkitprofile eine Profilinstanz**  >  **erstellen** können.
+Das `CreateAssetMenu` -Attribut kann auf die Profilklasse angewendet werden, damit Kunden mithilfe des  >  Menüs **Objekte**  >  **Mixed Reality Toolkitprofile** erstellen eine Profilinstanz erstellen  >   können.
 
 ### <a name="implement-the-inspector"></a>Implementieren des Inspektors
 
-Profilinspektoren sind die Benutzeroberfläche zum Konfigurieren und Anzeigen von Profilinhalten. Jeder Profilinspektor sollte die -Klasse [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) erweitern.
+Profilinspektoren sind die Benutzeroberfläche zum Konfigurieren und Anzeigen von Profilinhalten. Jeder Profilinspektor sollte die [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) -Klasse erweitern.
 
-Das `CustomEditor` -Attribut informiert Unity über den Typ des Assets, auf das der Inspektor angewendet wird.
+Das `CustomEditor` -Attribut informiert Unity über den Typ des Medienobjekts, für das der Inspektor gilt.
 
 ```c#
 namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
@@ -185,11 +185,11 @@ namespace namespace Microsoft.MixedReality.Toolkit.Experimental.UnityAR
 
 Das Mixed Reality Toolkit verwendet Assemblydefinitionsdateien[(ASMDEF-Dateien),](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)um Abhängigkeiten zwischen Komponenten anzugeben und Unity bei der Reduzierung der Kompilierungszeit zu unterstützen.
 
-Es wird empfohlen, Assemblydefinitionsdateien für alle Datenanbieter und deren Editor-Komponenten zu erstellen.
+Es wird empfohlen, Assemblydefinitionsdateien für alle Datenanbieter und deren Editorkomponenten zu erstellen.
 
-Bei Verwendung [der Ordnerstruktur](#namespace-and-folder-structure) im früheren Beispiel gibt es zwei ASMDEF-Dateien für den Datenanbieter ContosoCamera.
+Wenn Sie die [Ordnerstruktur](#namespace-and-folder-structure) im vorherigen Beispiel verwenden, gibt es zwei ASMDEF-Dateien für den ContosoCamera-Datenanbieter.
 
-Die erste Assemblydefinition ist für den Datenanbieter. In diesem Beispiel heißt sie ContosoCamera und befindet sich im Ordner *ContosoCamera des Beispiels.* Diese Assemblydefinition muss eine Abhängigkeit von Microsoft.MixedReality.Toolkit und allen anderen Assemblys angeben, von denen sie abhängt.
+Die erste Assemblydefinition ist für den Datenanbieter. In diesem Beispiel heißt sie ContosoCamera und befindet sich im Ordner *ContosoCamera* des Beispiels. Diese Assemblydefinition muss eine Abhängigkeit von Microsoft.MixedReality.Toolkit und allen anderen Assemblys angeben, von denen sie abhängt.
 
 Die Assemblydefinition ContosoCameraEditor gibt den Profilinspektor und jeden editorspezifischen Code an. Diese Datei muss sich im Stammordner des Editorcodes befinden. In diesem Beispiel befindet sich die Datei im Ordner *ContosoCamera\Editor.* Diese Assemblydefinition enthält einen Verweis auf die ContosoCamera-Assembly sowie:
 
@@ -199,19 +199,19 @@ Die Assemblydefinition ContosoCameraEditor gibt den Profilinspektor und jeden ed
 
 ## <a name="register-the-data-provider"></a>Registrieren des Datenanbieters
 
-Nach derEntstellung kann der Datenanbieter beim Kamerasystem registriert werden, das in der Anwendung verwendet werden soll.
+Nach der Erstellung kann der Datenanbieter beim Kamerasystem registriert werden, das in der Anwendung verwendet werden soll.
 
-![Auswählen des Kameraeinstellungsanbieters](../images/camera-system/SelectUnityArSettings.png)
+![Auswählen des Anbieters für Kameraeinstellungen](../images/camera-system/SelectUnityArSettings.png)
 
 ## <a name="packaging-and-distribution"></a>Verpacken und Verteilen
 
-Datenanbieter, die als Drittanbieterkomponenten verteilt werden, haben die spezifischen Details der Paketierung und Verteilung nach Wunsch des Entwicklers. Wahrscheinlich ist die gängigste Lösung das Generieren eines UNITYPACKAGE und die Verteilung über den Unity Asset Store.
+Datenanbieter, die als Drittanbieterkomponenten verteilt werden, verfügen über die spezifischen Details der Paketierung und Verteilung, die dem Entwickler überlassen werden. Wahrscheinlich ist die gängigste Lösung die Generierung eines UNITYPACKAGE-Pakets und das Verteilen über das Unity-Medienobjekt Store.
 
-Wenn ein Datenanbieter als Teil des Microsoft Mixed Reality Toolkit-Pakets übermittelt und akzeptiert wird, packt und verteilt das Microsoft MRTK-Team es im Rahmen der MRTK-Angebote.
+Wenn ein Datenanbieter als Teil des Microsoft Mixed Reality Toolkit-Pakets übermittelt und akzeptiert wird, packt und verteilt das Microsoft MRTK-Team ihn im Rahmen der MRTK-Angebote.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Kamerasystemübersicht](camera-system-overview.md)
+- [Übersicht über das Kamerasystem](camera-system-overview.md)
 - [`BaseCameraSettingsProvider`-Klasse](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)
 - [`IMixedRealityCameraSettingsProvider` Schnittstelle](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider)
 - [`IMixedRealityDataProvider` Schnittstelle](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)

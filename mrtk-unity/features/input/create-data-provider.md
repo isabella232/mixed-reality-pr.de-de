@@ -1,40 +1,40 @@
 ---
-title: Erstellen von Eingabedatenanbietern
-description: Dokumentation zum Erstellen eines Eingabesystems und eines Datenanbieters in MRTK
+title: Erstellen eines Eingabesystemdatenanbieters
+description: Dokumentation zum Erstellen eines Eingabesystems und Datenanbieters in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: c164fa406ae6822f4d889aff3bf615cf7fa76337
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0b6012871a4d4988fdb70336a3c33455f479bcac
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144073"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281923"
 ---
 # <a name="creating-an-input-system-data-provider"></a>Erstellen eines Eingabesystemdatenanbieters
 
-Das Mixed Reality Toolkit-Eingabesystem ist ein erweiterbares System zum Aktivieren der Eingabegeräteunterstützung. Um Unterstützung für eine neue Hardwareplattform hinzuzufügen, ist möglicherweise ein benutzerdefinierter Eingabedatenanbieter erforderlich.
+Das eingabesystem Mixed Reality Toolkit ist ein erweiterbares System zum Aktivieren der Unterstützung von Eingabegeräten. Um Unterstützung für eine neue Hardwareplattform hinzuzufügen, ist möglicherweise ein benutzerdefinierter Eingabedatenanbieter erforderlich.
 
-In diesem Artikel wird beschrieben, wie Sie benutzerdefinierte Datenanbieter, auch als Geräte-Manager bezeichnet, für das Eingabesystem erstellen. Der hier gezeigte Beispielcode ist aus dem [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) .
+In diesem Artikel wird beschrieben, wie Sie benutzerdefinierte Datenanbieter, auch als Geräte-Manager bezeichnet, für das Eingabesystem erstellen. Der hier gezeigte Beispielcode stammt aus dem [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) .
 
 > Den vollständigen Code, der in diesem Beispiel verwendet wird, finden Sie im Ordner MRTK/Providers/WindowsMixedReality.
 
 ## <a name="namespace-and-folder-structure"></a>Namespace- und Ordnerstruktur
 
-Datenanbieter können als Drittanbieter-Add-On oder als Teil des Microsoft Mixed Reality Toolkits verteilt werden. Der Genehmigungsprozess für die Übermittlung neuer Datenanbieter an das MRTK variiert von Fall zu Fall und wird zum Zeitpunkt des ersten Vorschlags kommuniziert.
+Datenanbieter können als Add-On von Drittanbietern oder als Teil des Microsoft Mixed Reality Toolkits verteilt werden. Der Genehmigungsprozess für die Übermittlung neuer Datenanbieter an das MRTK variiert von Fall zu Fall und wird zum Zeitpunkt des ursprünglichen Vorschlags kommuniziert.
 
 > [!Important]
-> Wenn ein Eingabesystemdatenanbieter an das [Mixed Reality Toolkit-Repository](https://github.com/Microsoft/MixedRealityToolkit-Unity)übermittelt  wird, muss der Namespace mit Microsoft.MixedReality.Toolkit (z.B. Microsoft.MixedReality.Toolkit.WindowsMixedReality) beginnen, und der Code sollte sich in einem Ordner unter MRTK/Providers (z.B. MRTK/Providers/WindowsMixedReality) befinden.
+> Wenn ein Eingabesystemdatenanbieter an das [Mixed Reality Toolkit-Repository](https://github.com/Microsoft/MixedRealityToolkit-Unity)übermittelt wird, **muss** der Namespace mit Microsoft.MixedReality.Toolkit (z.B. Microsoft.MixedReality.Toolkit.WindowsMixedReality) beginnen, und der Code sollte sich in einem Ordner unter MRTK/Providers (z.B. MRTK/Providers/WindowsMixedReality) befinden.
 
 ### <a name="namespace"></a>Namespace
 
-Datenanbieter müssen über einen Namespace verfügen, um potenzielle Namenskollisionen zu minimieren. Es wird empfohlen, dass der -Namespace die folgenden Komponenten enthält.
+Datenanbieter müssen über einen Namespace verfügen, um potenzielle Namenskonflikte zu minimieren. Es wird empfohlen, dass der Namespace die folgenden Komponenten enthält.
 
 - Unternehmensname
 - Featurebereich
 
-Ein Eingabedatenanbieter, der vom Unternehmen Contoso erstellt wurde, kann beispielsweise "Contoso.MixedReality.Toolkit.Input" sein.
+Beispielsweise kann ein vom Contoso-Unternehmen erstellter Eingabedatenanbieter "Contoso.MixedReality.Toolkit.Input" sein.
 
 ### <a name="recommended-folder-structure"></a>Empfohlene Ordnerstruktur
 
@@ -42,7 +42,7 @@ Es wird empfohlen, den Quellcode für Datenanbieter in einer Ordnerhierarchie zu
 
 ![Beispiel für die Paketordnerstruktur](../images/input/ExampleProviderFolderStructure.png)
 
-Wenn ContosoInput die Implementierung des Datenanbieters enthält, enthält der Ordner Editor den Inspektor (und anderen spezifischen Code des Unity-Editors), der Ordner Texturen enthält Bilder der unterstützten Controller und Profile ein oder mehrere vorgefertigte Profile.
+Wenn ContosoInput die Implementierung des Datenanbieters enthält, enthält der Ordner Editor den Inspektor (und jeglichen anderen Unity-Editor-spezifischen Code), der Ordner Textures enthält Bilder der unterstützten Controller und Profile ein oder mehrere vorgefertigte Profile.
 
 > [!Note]
 > Einige gängige Controllerbilder finden Sie im Ordner MixedRealityToolkit\StandardAssets\Textures.
@@ -87,7 +87,7 @@ Nachdem die -Klasse definiert wurde, besteht der nächste Schritt darin, die Imp
 > [!Note]
 > Die `BaseInputDeviceManager` -Klasse stellt über die `BaseService` -Klasse nur leere Implementierungen für `IMixedRealityDataProvider` Methoden bereit. Die Details dieser Methoden sind im Allgemeinen datenanbieterspezifisch.
 
-Folgende Methoden sollten vom Datenanbieter implementiert werden:
+Der Datenanbieter sollte folgende Methoden implementieren:
 
 - `Destroy()`
 - `Disable()`
@@ -98,7 +98,7 @@ Folgende Methoden sollten vom Datenanbieter implementiert werden:
 
 ### <a name="implement-the-data-provider-logic"></a>Implementieren der Datenanbieterlogik
 
-Im nächsten Schritt fügen Sie die Logik für die Verwaltung der Eingabegeräte hinzu, einschließlich der zu unterstützenden Controller.
+Der nächste Schritt besteht darin, die Logik für die Verwaltung der Eingabegeräte hinzuzufügen, einschließlich aller zu unterstützenden Controller.
 
 ### <a name="implement-the-controller-classes"></a>Implementieren der Controllerklassen
 
@@ -115,7 +115,7 @@ Im nächsten Schritt fügen Sie die Logik für die Verwaltung der Eingabegeräte
 
 #### <a name="apply-the-mixedrealitycontroller-attribute"></a>Anwenden des MixedRealityController-Attributs
 
-Wenden Sie als Nächstes [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerAttribute) das -Attribut auf die -Klasse an. Dieses Attribut gibt den Typ des Controllers (z. B. artikulierte Hand), die Übergabe (z. B. links oder rechts) und ein optionales Controllerimage an.
+Wenden Sie als Nächstes das [`MixedRealityController`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityControllerAttribute) -Attribut auf die -Klasse an. Dieses Attribut gibt den Typ des Controllers (z. B. artikulierte Hand), die Handkraft (z. B. links oder rechts) und ein optionales Controllerbild an.
 
 ```c#
 [MixedRealityController(
@@ -127,9 +127,9 @@ Wenden Sie als Nächstes [`MixedRealityController`](xref:Microsoft.MixedReality.
 
 #### <a name="configure-the-interaction-mappings"></a>Konfigurieren der Interaktionszuordnungen
 
-Im nächsten Schritt wird der Satz von Interaktionszuordnungen definiert, die vom Controller unterstützt werden. Für Geräte, die ihre Daten über die [](../tools/controller-mapping-tool.md) Eingabeklasse von Unity empfangen, ist das Controllerzuordnungstool eine hilfreiche Ressource, um die richtigen Achsen- und Schaltflächenzuordnungen zu bestätigen, die Interaktionen zugewiesen werden sollen.
+Der nächste Schritt besteht darin, den Satz von Interaktionszuordnungen zu definieren, die vom Controller unterstützt werden. Für Geräte, die ihre Daten über die Input-Klasse von Unity empfangen, ist das [Controllerzuordnungstool](../tools/controller-mapping-tool.md) eine hilfreiche Ressource zum Bestätigen der richtigen Achsen- und Schaltflächenzuordnungen, die Interaktionen zugewiesen werden sollen.
 
-Das folgende Beispiel wird von der -Klasse abgekürzt, die sich im Ordner `GenericOpenVRController` MRTK/Providers/OpenVR befindet.
+Das folgende Beispiel wird von der -Klasse abgekürzt, `GenericOpenVRController` die sich im Ordner MRTK/Providers/OpenVR befindet.
 
 ```c#
 public override MixedRealityInteractionMapping[] DefaultLeftHandedInteractions => new[]
@@ -144,13 +144,13 @@ public override MixedRealityInteractionMapping[] DefaultLeftHandedInteractions =
 ```
 
 >[!Note]
->Die [`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary) -Klasse stellt symbolische Konstanten für die Unity-Eingabeachsen- und Schaltflächendefinitionen dar.
+>Die [`ControllerMappingLibrary`](xref:Microsoft.MixedReality.Toolkit.Input.ControllerMappingLibrary) -Klasse stellt symbolische Konstanten für die Unity-Eingabeachse und Schaltflächendefinitionen bereit.
 
-### <a name="raise-notification-events"></a>Benachrichtigungsereignisse
+### <a name="raise-notification-events"></a>Auslösen von Benachrichtigungsereignissen
 
-Damit Anwendungen auf Eingaben des Benutzers reagieren können, löst der Datenanbieter Benachrichtigungsereignisse aus, die den In den Schnittstellen und definierten Controllerzustandsänderungen [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) entsprechend sind.
+Damit Anwendungen auf Eingaben des Benutzers reagieren können, löst der Datenanbieter Benachrichtigungsereignisse aus, die den in den Schnittstellen und definierten Controllerzustandsänderungen [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) entsprechen.
 
-Bei steuerelementen vom Typ "Digital" (Schaltfläche) können Sie die Ereignisse OnInputDown und OnInputUp erstellen.
+Für digitale Typsteuerelemente (Schaltflächen) können Sie die Ereignisse OnInputDown und OnInputUp auslösen.
 
 ```c#
 // inputAction is the input event that is to be raised.
@@ -172,7 +172,7 @@ InputSystem?.RaisePositionInputChanged(InputSource, ControllerHandedness, intera
 
 ### <a name="add-unity-profiler-instrumentation"></a>Hinzufügen der Unity Profiler-Instrumentierung
 
-Die Leistung ist in Mixed Reality-Anwendungen von entscheidender Bedeutung. Jede Komponente erhöht den Mehraufwand, den Anwendungen berücksichtigen müssen. Zu diesem Zweck ist es wichtig, dass alle Eingabedatenanbieter die Unity Profiler-Instrumentierung in inneren Schleifen und häufig verwendeten Codepfaden enthalten.
+Leistung ist in Mixed Reality-Anwendungen von entscheidender Bedeutung. Jede Komponente erhöht den Mehraufwand, den Anwendungen berücksichtigen müssen. Zu diesem Zweck ist es wichtig, dass alle Eingabedatenanbieter die Unity Profiler-Instrumentierung in einer inneren Schleife und häufig verwendeten Codepfaden enthalten.
 
 Es wird empfohlen, das Muster zu implementieren, das vom MRTK beim Instrumentieren benutzerdefinierter Anbieter verwendet wird.
 
@@ -232,13 +232,13 @@ Das `CustomEditor` -Attribut informiert Unity über den Typ des Medienobjekts, f
 
 ## <a name="create-assembly-definitions"></a>Erstellen von Assemblydefinitionen
 
-Das Mixed Reality Toolkit verwendet Assemblydefinitionsdateien ([.asmdef](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)), um Abhängigkeiten zwischen Komponenten anzugeben und Unity bei der Reduzierung der Kompilierungszeit zu unterstützen.
+Das Mixed Reality Toolkit verwendet Assemblydefinitionsdateien[(ASMDEF-Dateien),](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)um Abhängigkeiten zwischen Komponenten anzugeben und Unity bei der Reduzierung der Kompilierungszeit zu unterstützen.
 
 Es wird empfohlen, Assemblydefinitionsdateien für alle Datenanbieter und deren Editorkomponenten zu erstellen.
 
 Wenn Sie die [Ordnerstruktur](#recommended-folder-structure) im vorherigen Beispiel verwenden, gibt es zwei ASMDEF-Dateien für den ContosoInput-Datenanbieter.
 
-Die erste Assemblydefinition gilt für den Datenanbieter. In diesem Beispiel heißt sie ContosoInput und befindet sich im Ordner ContosoInput des Beispiels.
+Die erste Assemblydefinition ist für den Datenanbieter. In diesem Beispiel heißt sie ContosoInput und befindet sich im Ordner ContosoInput des Beispiels.
 Diese Assemblydefinition muss eine Abhängigkeit von Microsoft.MixedReality.Toolkit und allen anderen Assemblys angeben, von denen sie abhängt.
 
 Die Assemblydefinition ContosoInputEditor gibt den Profilinspektor und jeden editorspezifischen Code an. Diese Datei muss sich im Stammordner des Editorcodes befinden. In diesem Beispiel befindet sich die Datei im Ordner ContosoInput\Editor. Diese Assemblydefinition enthält einen Verweis auf die ContosoInput-Assembly sowie:
@@ -255,7 +255,7 @@ Nach der Erstellung kann der Datenanbieter beim Eingabesystem registriert und in
 
 ## <a name="packaging-and-distribution"></a>Verpacken und Verteilen
 
-Datenanbieter, die als Drittanbieterkomponenten verteilt werden, verfügen über die spezifischen Details der Paketierung und Verteilung, die dem Entwickler überlassen werden. Die gängigste Lösung ist wahrscheinlich das Generieren eines UNITYPACKAGE und das Verteilen über den Unity Asset Store.
+Datenanbieter, die als Drittanbieterkomponenten verteilt werden, verfügen über die spezifischen Details der Paketierung und Verteilung, die dem Entwickler überlassen werden. Wahrscheinlich ist die gängigste Lösung die Generierung eines UNITYPACKAGE-Pakets und das Verteilen über das Unity-Medienobjekt Store.
 
 Wenn ein Datenanbieter als Teil des Microsoft Mixed Reality Toolkit-Pakets übermittelt und akzeptiert wird, packt und verteilt das Microsoft MRTK-Team ihn im Rahmen der MRTK-Angebote.
 
@@ -268,4 +268,4 @@ Wenn ein Datenanbieter als Teil des Microsoft Mixed Reality Toolkit-Pakets über
 - [`IMixedRealityInputHandler<T>` Schnittstelle](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1)
 - [`IMixedRealityDataProvider` Schnittstelle](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [`IMixedRealityCapabilityCheck` Schnittstelle](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)
-- [Controller-Zuordnungstool](../tools/controller-mapping-tool.md)
+- [Controllerzuordnungstool](../tools/controller-mapping-tool.md)

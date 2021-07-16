@@ -1,20 +1,20 @@
 ---
-title: Hinzufügen eines Offlinemodus für die lokale Sprache-zu-Text-Übersetzung
-description: In diesem Kurs lernen Sie, wie Sie der Spracherkennung in Mixed-Reality-Anwendungen den Offlinemodus für die lokale Übersetzung hinzufügen.
+title: Ausführen von Befehlen mithilfe der Azure-Spracherkennung
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Befehle mittels Azure-Spracherkennung in Mixed-Reality-Anwendungen ausführen.
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590152"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656620"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2. Hinzufügen eines Offlinemodus für die lokale Sprache-zu-Text-Übersetzung
+# <a name="2-execute-commands-using-azure-speech-recognition"></a>2. Ausführen von Befehlen mithilfe der Azure-Spracherkennung
 
 In diesem Tutorial fügen Sie die Möglichkeit hinzu, Befehle mithilfe der Azure-Spracherkennung auszuführen, sodass Sie basierend auf dem von Ihnen definierten Wort oder Ausdruck eine Aktion auslösen können.
 

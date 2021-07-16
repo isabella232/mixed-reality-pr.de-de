@@ -1,22 +1,22 @@
 ---
-title: Erstellen und Bereitstellen für Android und iOS über AR Foundation
+title: Bereitstellen unter Android und iOS (AR Foundation) [Experimentell]
 description: Dokumentation zum Konfigurieren des MRTK für Android und iOS (ARFoundation) in Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, AR Core, AR Kit, iOS, IOS, Android, AR Foundation
-ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449739"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281941"
 ---
-# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>Erstellen und Bereitstellen für Android und iOS über AR Foundation [Experimentell]
+# <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>Bereitstellen unter Android und iOS (AR Foundation) [Experimentell]
 
 ## <a name="install-required-packages"></a>Installieren erforderlicher Pakete
 
-1. Laden Sie das **Paket Microsoft.MixedReality.Toolkit.Unity.Foundation** von [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) oder dem Unity-Projekt herunter, und [importieren Sie es Paket-Manager](../configuration/usingupm.md)
+1. Laden Sie das **Paket Microsoft.MixedReality.Toolkit.Unity.Foundation** herunter, und importieren Sie es [aus](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/) GitHub [unity Paket-Manager](../configuration/usingupm.md)
 
 1. Installieren Sie im Unity Paket-Manager (UPM) die folgenden Pakete:
 
@@ -62,15 +62,15 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
     ![Klonen des MRTK-Kameraprofils](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. Navigieren Sie im Inspektorbereich zum Abschnitt Kamerasystem, und erweitern Sie den Abschnitt **Kameraeinstellungsanbieter.**
+1. Navigieren Sie im Inspektorbereich zum Abschnitt Kamerasystem, und erweitern Sie den Abschnitt **Kamera Einstellungen Anbieter.**
 
     ![Erweitern von Einstellungsanbietern](../features/images/camera-system/ExpandProviders.png)
 
-1. Klicken **Sie auf Kameraeinstellungsanbieter hinzufügen,** und erweitern Sie den neu hinzugefügten Eintrag **Neue Kameraeinstellungen.**
+1. Klicken **Sie auf Kamera Einstellungen Anbieter hinzufügen,** und erweitern Sie den neu hinzugefügten Eintrag Neue **Kameraeinstellungen.**
 
     ![Erweitern des neuen Einstellungsanbieters](../features/images/camera-system/ExpandNewProvider.png)
 
-1. Auswählen des Unity AR-Kameraeinstellungsanbieters
+1. Auswählen des Unity-AR-Kameraanbieters Einstellungen
 
     ![Auswählen des Unity AR-Einstellungsanbieters](../features/images/camera-system/SelectUnityArSettings.png)
 
@@ -83,9 +83,9 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>Erstellen einer Szene für Android- und iOS-Geräte
 
-1. Stellen Sie sicher, dass Sie ihrer Szene den UnityAR-Kameraeinstellungsanbieter hinzugefügt haben.
+1. Stellen Sie sicher, dass Sie ihrer Szene Einstellungen UnityAR Camera-Anbieter hinzugefügt haben.
 
-1. Wechseln der Plattform zu Android oder iOS in den Unity-Buildeinstellungen
+1. Wechseln Sie im Unity Build-Gerät zu Android oder iOS Einstellungen
 
 1. Stellen Sie sicher, dass der zugeordnete XR-Plug-In-Verwaltungsanbieter aktiviert ist.
 
@@ -93,6 +93,6 @@ Die folgenden Schritte setzen die Verwendung des MixedRealityToolkit-Objekts vor
 
 1. Erstellen und Ausführen der Szene
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
-- [Unity-AR-Kameraeinstellungen](../features/camera-system/unity-ar-camera-settings.md)
+- [Unity AR Camera Einstellungen](../features/camera-system/unity-ar-camera-settings.md)

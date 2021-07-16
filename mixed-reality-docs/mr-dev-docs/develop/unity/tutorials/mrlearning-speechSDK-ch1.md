@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors, Spracherkennung, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 39eaa8a17d4616dc9c044f9bff7522dde41cffb7
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175451"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656632"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1. Integrieren und Verwenden von Spracherkennung und Transkription
 
@@ -166,4 +166,4 @@ Sie haben die von Azure unterstützte Spracherkennung implementiert. Führen Sie
 Im nächsten Tutorial erfahren Sie, wie Sie Befehle mit der Azure-Spracherkennung ausführen.
 
 > [!div class="nextstepaction"]
-> [Nächstes Tutorial: 2. Verwenden der Spracherkennung zum Ausführen von Befehlen](mrlearning-speechSDK-ch2.md)
+> [Nächstes Tutorial: 2. Ausführen von Befehlen mithilfe der Azure-Spracherkennung](mrlearning-speechSDK-ch2.md)
