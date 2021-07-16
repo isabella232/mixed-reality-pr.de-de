@@ -4,7 +4,7 @@
   href: bounding-box.md
 - name: Begrenzungssteuerelement
   href: bounds-control.md
-- name: Schaltfläche
+- name: Schaltflächen
   href: button.md
 - name: Einschränkungs-Manager
   href: constraint-manager.md
