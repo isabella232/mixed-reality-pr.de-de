@@ -1,4 +1,4 @@
-- name: Konfigurieren der Diagnose
+- name: Konfigurieren des Diagnosesystems
   href: configuring-diagnostics.md
 - name: Übersicht des Diagnosesystems
   href: diagnostics-system-getting-started.md

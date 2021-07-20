@@ -1,8 +1,8 @@
-- name: Bereitstellen in HoloLens und WMR
+- name: Bereitstellen in HoloLens und WMR-Headsets
   href: wmr-mrtk.md
 - name: Bereitstellen in Oculus Quest
   href: oculus-quest-mrtk.md
-- name: Bereitstellen unter Android und iOS (AR Foundation)
+- name: 'Bereitstellen unter Android und iOS (AR Foundation) [Experimentell]'
   href: using-ar-foundation.md
 - name: Verwenden von Leap Motion
   href: leap-motion-mrtk.md

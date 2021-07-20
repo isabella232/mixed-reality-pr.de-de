@@ -1,6 +1,6 @@
 - name: Kamerasystemübersicht
   href: camera-system-overview.md
-- name: Anbieter für Einstellungserstellung
+- name: Erstellen eines Anbieters für Kameraeinstellungen
   href: create-settings-provider.md
 - name: Unity-AR-Kameraeinstellungen
   href: unity-ar-camera-settings.md
