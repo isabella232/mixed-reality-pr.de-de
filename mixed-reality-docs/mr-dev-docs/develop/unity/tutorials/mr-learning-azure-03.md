@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, HoloLens 2, Azure Custom Vision, Azure Cognitive Services, Azure Cloud Services, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: cb391aa2cdb7944234cdeede7dd05825c008d0d8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7624ed28c337f3621a29f15f1ab3b0e98aeb89db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590572"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224233"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3. Integrieren von Azure-Custom Vision
 
@@ -87,10 +87,6 @@ Wenn Sie über genügend Bilder verfügen, klicken Sie auf die Schaltfläche **T
 > **ObjectDetectionManager (Script)** lädt die aufgenommenen Bilder direkt in den Custom Vision-Dienst hoch. Als Alternative akzeptiert die Custom Vision-API URLs zu den Bildern. Als Übung können Sie **ObjectDetectionManager (Script)** , ändern, um die Bilder stattdessen in einen Blobspeicher hochzuladen.
 
 ## <a name="detect-objects"></a>Erkennen von Objekten
-
-Vor dem Erkennen der Objekte müssen Sie unter „Projekteinstellungen“ den in **ObjectDetectionManager (Skript)** vorhandenen API-Schlüssel ändern, dem bereits ein Custom Vision-Schlüssel zugewiesen wurde.
-
-Suchen Sie die Custom Vision-Ressource im Azure-Portal, und wechseln Sie zu ihr. Klicken Sie auf *Keys and Endpoint* (Schlüssel und Endpunkt), um den API-Schlüssel abzurufen und ihn durch den alten API-Schlüssel unter „Projekteinstellungen“ zu ersetzen.
 
 Sie können das trainierte Modell nun testen, die Anwendung ausführen und im *Hauptmenü* auf **Search Object** (Objekt suchen) klicken und den Namen des betreffenden **nachverfolgten Objekts** eingeben. Die **Objektkarte** wird angezeigt. Klicken Sie auf die Schaltfläche **Custom Vision**. Hier beginnt **ObjectDetectionManager**, Bilder von der Kamera im Hintergrund zu erfassen, und der Status wird im Menü angezeigt. Richten Sie die Kamera auf das Objekt, mit dem Sie das Modell trainiert haben, und Sie sehen, dass das Objekt nach kurzer Zeit erkannt wird.
 

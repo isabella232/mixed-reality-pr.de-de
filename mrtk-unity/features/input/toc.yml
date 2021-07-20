@@ -1,6 +1,6 @@
 - name: Controller
   href: controllers.md
-- name: Anbieter für Datenerstellung
+- name: Erstellen eines Eingabesystem-Datenanbieters
   href: create-data-provider.md
 - name: Diktieren
   href: dictation.md
