@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 207c451ee616ee4065e948ca78c17ad59f7dd190
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772423"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702473"
 ---
 # <a name="3-connecting-multiple-users"></a>3. Verbinden mehrerer Benutzer
 
@@ -39,63 +39,9 @@ Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.AzureS
 
 ![Unity mit neu hinzugefügtem, ausgewähltem DebugWindow-Prefab](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
-## <a name="creating-the-user-prefab"></a>Erstellen des Benutzerprefabs
-
-In diesem Abschnitt erstellen Sie ein Prefab, das verwendet wird, um auf der freigegebenen Benutzeroberfläche die Benutzer darzustellen.
-
-### <a name="1-create-and-configure-the-user"></a>1. Erstellen und Konfigurieren des Benutzers
-
-Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf einen leeren Bereich, wählen Sie **Create Empty** (Leer erstellen) aus, um Ihrer Szene ein leeres Objekt hinzuzufügen, benennen Sie das Objekt **PhotonUser**, und konfigurieren Sie es folgendermaßen:
-
-* Vergewissern Sie sich, dass die **Transformationsposition** auf X = 0, Y = 0, Z = 0 festgelegt ist:
-
-![Unity mit neu erstelltem, ausgewähltem PhotonUser-Objekt](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
-
-Wählen Sie im Hierarchiefenster das **PhotonUser**-Objekt aus, und verwenden Sie dann im Inspektor-Fenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Photon User (Script)** hinzuzufügen:
-
-![Unity mit hinzugefügter Photon User-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
-
-Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Generic Net Sync (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
-
-* Aktivieren Sie das Kontrollkästchen **Is User** (Ist Benutzer)
-
-![Unity mit hinzugefügter und konfigurierter Generic Net Sync-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
-
-Verwenden Sie im Inspektorfenster die Schaltfläche **Add Component** (Komponente hinzufügen), um dem PhotonUser-Objekt die Komponente **Photon View (Script)** hinzuzufügen, und konfigurieren Sie sie wie folgt:
-
-* Stellen Sie sicher, dass die Komponente **Generic Net Sync (Script)** dem Feld **Observed Components** (Beobachtete Komponenten) zugewiesen ist.
-
-![Unity mit hinzugefügter und konfigurierter Photon View-Komponente](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
-
-### <a name="2-create-the-avatar"></a>2. Erstellen des Avatars
-
-Navigieren Sie im Projektfenster zum Ordner **Packages** > **Mixed Reality Toolkit Standard Assets** > **Materials** (Pakete > Mixed Reality Toolkit-Standardressourcen > Materialien), um die MRTK-Materialien zu suchen.
-
-Klicken Sie dann im Hierarchiefenster mit der rechten Maustaste auf das **PhotonUser**-Objekt, wählen Sie **3D Object** > **Sphere** (3D-Objekt > Kugel) aus, um ein Kugelobjekt als untergeordnetes Objekt des PhotonUser-Objekts zu erstellen, und konfigurieren Sie es folgendermaßen:
-
-* Vergewissern Sie sich, dass die **Transformationsposition** auf X = 0, Y = 0, Z = 0 festgelegt ist
-* Ändern Sie den **Transformationsmaßstab** auf eine passende Größe beispielsweise X = 0,15, Y = 0,15, Z = 0,15
-* Weisen Sie dem Feld „MeshRenderer > Materials > **Element 0**“ das Material **MRTK_Standard_White** zu.
-
-![Unity mit neu erstellter und konfigurierter Avatar-Kugel](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
-
-### <a name="3-create-the-prefab"></a>3. Erstellen der Prefab
-
-Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources**:
-
-![Unity-Projektfenster mit ausgewähltem Ordner „Ressource“](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
-
-**Klicken und ziehen** Sie bei noch ausgewähltem Ordner „Resources“ das **PhotonUser**-Objekt aus dem Hierarchiefenster in den **Resources**-Ordner, um aus dem PhotonUser-Objekt ein Prefab zu machen:
-
-![Unity mit neu erstelltem, ausgewähltem PhotonUser-Prefab](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
-
-Klicken Sie im Hierarchiefenster mit der rechten Maustaste auf das **PhotonUser**-Objekt, und wählen Sie **Löschen** aus, um es aus der Szene zu entfernen:
-
-![Unity mit neu erstelltem, aus der Szene entferntem PhotonUser-Prefab-Objekt](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
-
 ## <a name="configuring-pun-to-instantiate-the-user-prefab"></a>Konfigurieren von PUN zum Instanziieren des Benutzerprefabs
 
-In diesem Abschnitt konfigurieren Sie das Projekt für die Verwendung des PhotonUser-Prefabs, das Sie im vorherigen Abschnitt erstellt haben.
+In diesem Abschnitt konfigurieren Sie das Projekt für die Verwendung des PhotonUser-Prefabs.
 
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Resources**.
 

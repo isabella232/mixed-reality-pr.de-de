@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Mehrbenutzerfunktionen, Photon, MRTK, Mixed Reality Toolkit, UWP, Azure Spatial Anchors
 ms.localizationpriority: high
-ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590062"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702486"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4. Freigeben von Objektbewegungen für mehrere Benutzer
 
@@ -27,9 +27,17 @@ In diesem Tutorial erfahren Sie, wie Sie die Bewegungen von Objekten teilen, dam
 
 In diesem Abschnitt bereiten Sie die Szene vor, indem Sie das Tutorial-Prefab hinzufügen.
 
+Erweitern Sie im Hierarchiefenster das Objekt **MixedRealityPlayspace**, und wählen Sie das untergeordnete Objekt **Hauptkamera** aus. Verwenden Sie dann im Inspektorfenster die Schaltfläche **Komponente hinzufügen**, um dem **Hauptkameraobjekt** die Komponente **AR-Kamera-Manager (Skript)** hinzuzufügen:
+
+![Unity mit teilweise konfigurierter AR-Kamera-Manager-Komponente](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 Navigieren Sie im Projektfenster zum Ordner **Assets** > **MRTK.Tutorials.MultiUserCapabilities** > **Prefabs**, und ziehen Sie das **TableAnchor**-Prefab auf das **SharedPlayground**-Objekt im Hierarchiefenster, um es Ihrer Szene als untergeordnetes Objekt des SharedPlayground-Objekts hinzuzufügen:
 
 ![Unity mit neu hinzugefügtem, ausgewähltem TableAnchor-Prefab](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+Vergewissern Sie sich, dass im Hierarchiefenster das Objekt **MixedRealityPlayspace** aufgeklappt und das Objekt **TableAnchor** ausgewählt ist. Ziehen Sie die Komponente **Hauptkamera** auf das Feld **Kamera** der Komponente **AR Session Origin** (AR-Sitzungsursprung) von **TableAnchor**:
+
+![Unity mit konfigurierter Zuweisung für die AR-Sitzungsursprung-Hauptkamera](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>Konfigurieren von PUN zum Instanziieren der Objekte
 

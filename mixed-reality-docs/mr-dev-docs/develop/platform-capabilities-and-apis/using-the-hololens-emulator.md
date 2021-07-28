@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, Emulator
-ms.openlocfilehash: a9ecb121652dde39be0f91a24a4d57856a874071
-ms.sourcegitcommit: eb39526f9620f0459bd30e4484307892f4609334
+ms.openlocfilehash: 701cffbe576c64333874fc88c3cd6a6b821bc458
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201631"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713588"
 ---
 # <a name="using-the-hololens-emulator"></a>Verwendung des HoloLens-Emulators
 
@@ -283,20 +283,6 @@ Wenn Ihre Liste der Debugziele in Visual Studio leer ist (z. B. ist „Start“ 
 
 Wenn Ihr System beim Starten des Emulators hängen bleibt, deaktivieren Sie die Hardwarebeschleunigung für Emulatorgrafiken.
 * Erstellen Sie in der Registrierung einen DWORD-Wert namens „DisableGPU“ unter „HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0“, und legen Sie seinen Wert auf 1 fest.
-
-## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
-
-Wenn Sie dem Weg der Unity-Entwicklungsprüfpunkte folgen, den wir entworfen haben, befinden Sie sich in der Mitte der Bereitstellungsphase. Von hier aus können Sie mit dem nächsten Thema fortfahren:
-
-> [!div class="nextstepaction"]
-> [Bereitstellen im HoloLens-Emulator](using-the-hololens-emulator.md)
-
-Oder fahren Sie direkt mit dem Hinzufügen erweiterter Dienste fort:
-
-> [!div class="nextstepaction"]
-> [Erweiterte Dienste](../../develop/unity/unity-development-overview.md#5-adding-services)
-
-Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator) zurückkehren.
 
 ## <a name="see-also"></a>Siehe auch
 * [Erweiterte Eingabe für HoloLens-Emulator und Mixed Reality-Simulator](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)
