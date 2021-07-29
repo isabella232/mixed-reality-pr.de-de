@@ -1,103 +1,103 @@
 ---
 title: Lunar-Modul
-description: Erfahren Sie, wie Sie die Basisgesten von HoloLens mit zweihändigen Nachverfolgungs- und Xbox-Controllereingaben erweitern, reaktive Objekte erstellen und Menüsysteme implementieren.
+description: Erfahren Sie, wie HoloLens gesten mit zweihändiger Nachverfolgung und Xbox-Controllereingabe erweitern, reaktive Objekte erstellen und Menüsysteme implementieren.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Beispiel-Apps, Design, MRTK, Mixed Reality Toolkit, Unity, Beispiel-Apps, Beispiel-Apps, Open Source, Microsoft Store, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ebac2c5680524b408d6dde8635d2585236fa0b08
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 4a736990a94d7f5c97a1bfc2edf998e327071bcb
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743508"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757222"
 ---
 # <a name="lunar-module"></a>Lunar-Modul
 
 >[!NOTE]
->In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erkenntnisse und Vorschläge für die Entwicklung von Mixed Reality-Apps teilen. Unsere artikel- und codebezogenen Entwurfsartikel werden sich weiterentwickeln, wenn wir neue Ermittlungen vornehmen.
+>In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erfahrungen und Vorschläge für die Entwicklung von Mixed Reality-Apps teilen. Unsere designbezogenen Artikel und der Code werden weiterentwickelt, wenn wir neue Erkenntnisse machen.
 
-[Lunar Module](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) ist eine Open-Source-Beispiel-App aus den Mixed Reality Design Labs von Microsoft. Erfahren Sie, wie Sie die Basisgesten von HoloLens mit zweihändigen Nachverfolgungs- und Xbox-Controllereingaben erweitern, Objekte erstellen, die auf Oberflächenzuordnung und Ebenensuche reaktiv sind, und einfache Menüsysteme implementieren. Alle Komponenten des Projekts stehen zur Verwendung in Ihren eigenen Mixed Reality-App-Erfahrungen zur Verfügung.
+[Lunar Module ist](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) eine Open-Source-Beispiel-App aus Mixed Reality Design Labs von Microsoft. Erfahren Sie, wie HoloLens Gesten mit zweihändiger Nachverfolgung und Xbox-Controllereingabe erweitern, Objekte erstellen, die reaktiv für die Oberflächenzuordnung und Ebenensuche sind, und einfache Menüsysteme implementieren. Alle Komponenten des Projekts stehen für die Verwendung in Ihren eigenen Mixed Reality-App-Erfahrungen zur Verfügung.
 
 ## <a name="demo-video"></a>Demovideo 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
 
-Aufgezeichnet mit HoloLens 2 mithilfe von Mixed Reality-Aufnahme
+Aufgezeichnet mit HoloLens 2 mit Mixed Reality-Aufnahme
 
-## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Neudenklassigen klassischer Funktionen für Windows Mixed Reality
+## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>Überdacht klassische Erfahrungen für Windows Mixed Reality
 
-Hoch oben in der Umgebung durchknöpft ein kleines Boot des Moduls "Apollo" das verzweigte Gelände darunter. Unsere unbefürchteten Pilotprojekte stellen einen geeigneten Zielbereich her. Der Abstieg ist mühsam, aber glücklicherweise wurde dieser Weg bereits mehrmals durchgeführt...
+Hoch oben in der Umgebung stellt ein kleiner Ship-1-Mitarbeiter des Moduls "Stil" unten methodisch verknustetes Gelände auf. Unser unfreier Pilot macht einen geeigneten Zielbereich aus. Der Abstieg ist mühsam, aber glücklicherweise wurde dieser Weg schon mehrmals gemacht...
 
-![Ursprüngliche Schnittstelle aus Ataris Lunar Lander von 1979](images/640px-atari-lunar-lander.png)<br>
-*Ursprüngliche Schnittstelle aus Ataris Lunar Lander von 1979*
+![Ursprüngliche Schnittstelle von Ataris Mondlander von 1979](images/640px-atari-lunar-lander.png)<br>
+*Ursprüngliche Schnittstelle von Ataris Mondlander von 1979*
 
-[Lunar Lander](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)) ist ein klassischer Mondlander, bei dem Spieler versuchen, einen Mondlander auf eine flache Stelle des Mondlandeplatzes zu bringen. Jeder, der in den 1970er Jahren stammt, hat höchstwahrscheinlich Stunden in einem Bogen mit den Augen verbracht, die mit diesem Vektorversand vom Himmel geklebt wurden. Wenn ein Spieler sein Boot in Richtung eines Zielbereichs navigiert, wird das Gelände skaliert, um progressiv mehr Details zu zeigen. Erfolg bedeutet, dass innerhalb des sicheren Schwellenwerts horizontaler und vertikaler Geschwindigkeit gelandet wird. Punkte werden für die zeitaufgewendete Landezeit und den verbleibenden Kraftstoff mit einem Multiplikator basierend auf der Größe des Zielbereichs vergeben.
+[Lunar Lander ist](https://en.wikipedia.org/wiki/Lunar_Lander_(1979_video_game)) ein klassisches Mondland, bei dem Spieler versuchen, ein Mondlander an einem flachen Ort des Mondlandes zu pilotieren. Jeder, der in den 1970er Jahren geerbt wurde, hat höchstwahrscheinlich Stunden in einem 30-Stunden-Paar mit den Augen verbracht, die an das vom Himmel her aufgestürzte Vektor-Ship verknaust sind. Wenn ein Spieler sein Boot zu einem Zielbereich navigiert, wird das Gelände skaliert, um zunehmend mehr Details zu zeigen. Erfolg bedeutet, innerhalb des sicheren Schwellenwerts der horizontalen und vertikalen Geschwindigkeit zu landen. Punkte werden für die zeitbezogene Landezeit und den verbleibenden Kraftstoff mit einem Multiplikator basierend auf der Größe des Zielbereichs vergeben.
 
-Abgesehen vom Spielbetrieb führte die Zeit der Spiele zu konstanten Innovationen von Steuerungsschemas. Von den einfachsten Vier-Wege-Brillen- und Schaltflächenkonfigurationen (in der Brille [Pac-Man)](https://en.wikipedia.org/wiki/Pac-Man)bis hin zu den sehr spezifischen und komplizierten Schemas, die in den späten 90er und 00er-Jahren (z. B. in Simulatoren und Schienenschienen) zu sehen waren. Das eingabeschema, das auf dem Lunar Lander-Computer verwendet wird, ist aus zwei Gründen nicht erfolgreich: Aus gründen der Rekursion und der Immersion.
+Abgesehen vom Spielstil führte die Spielzeit zu einer konstanten Innovation von Steuerungsschemas. Von den einfachsten Vier-Wege-Knopf- und Schaltflächenkonfigurationen (wie in der hier genannten [Pac-Man-Datei)](https://en.wikipedia.org/wiki/Pac-Man)bis hin zu den äußerst spezifischen und komplizierten Schemas, die in den 90er und 00er Jahren zu sehen waren (z. B. in Simulatoren und Schienenschienen). Das eingabeschema, das auf dem Lunar Lander-Computer verwendet wird, ist aus zwei Gründen verzirrend: Drosselung und Immersion.
 
-![Lunar Lander-Konsole von Atari](images/atariconsole.png)<br>
+![Konsole "Lunar Lander" von Atari](images/atariconsole.png)<br>
 *Lunar Lander-Konsole von Atari*
 
-Warum entschieden sich Atari und so viele andere Spieleunternehmen, die Eingabe zu überdenken?
+Warum haben sich Atari und so viele andere Spieleunternehmen dazu entschieden, die Eingabe zu überdenken?
 
-Ein Kind, das durch einen Gang geht, wird natürlich von der neuesten, blitzschnellsten Maschine durchsucht. Lunar Lander verfügt jedoch über ein neues Eingabegerät, das sich von der Menge abmeldet.
+Ein Kind, das durch einen 2000Er-Computer geht, ist natürlich von der neuesten, flashesten Maschine versiert. Lunar Lander verfügt jedoch über einen neuen Eingabebeiger, der sich aus der Menge ausdrängt.
 
-Lunar Lander verwendet zwei Schaltflächen zum Drehen des Versands nach links und rechts und einen **Drehungshöpf,** um die Menge der Vom landenden Maschinen zu steuern. Dieser Hebel bietet Benutzern ein bestimmtes Maß an Finesse, das ein regulärer Schleusung nicht bieten kann. Es ist auch eine Komponente, die modernen Cockpits gemeinsam ist. Atari wollte, dass Lunar Lander dem Benutzer das Gefühl vermittelt, tatsächlich ein Mondlandefähremodul zu steuern. Dieses Konzept wird als **taktile Immersion** bezeichnet.
+Lunar Lander verwendet zwei Schaltflächen, um das  Boot nach links und rechts zu drehen, und einen Knopf, um die Menge der vom Versand erzeugten Schubsen zu steuern. Dieser Hebel gibt Benutzern ein bestimmtes Maß an Hand, das ein regulärer Zettel nicht bereitstellen kann. Es ist auch eine Komponente, die modernen Cockpits gemeinsam ist. Atari wollte, dass Lunar Lander den Benutzer in das Gefühl versetzt, tatsächlich ein Mondlandmodul zu pilotieren. Dieses Konzept wird als **taktile Immersion bezeichnet.**
 
-Taktile Immersion ist die Erfahrung sensorischen Feedbacks durch sich wiederholende Aktionen. In diesem Fall hilft die sich wiederholende Aktion der Anpassung des Drosselungshänders und der Drehung, die unsere Augen sehen und unsere Hörer hören, den Spieler mit dem Anlanden eines Versands auf der Mondoberfläche zu verbinden. Dieses Konzept kann an das Konzept "Flow" gebunden werden. Wenn ein Benutzer vollständig in eine Aufgabe aufgenommen wird, die über die richtige Mischung aus Herausforderung und Belohnung verfügt, oder einfacher ausgedrückt, befindet er sich "in der Zone".
+Taktiles Immersion ist die Erfahrung von sensorischem Feedback bei sich wiederholenden Aktionen. In diesem Fall hilft die sich wiederholende Aktion der Anpassung des Drosselungshbels und der Drehung, die unsere Augen sehen und unsere Augen hören, den Spieler mit der Aktion zu verbinden, ein Boot auf der Mondoberfläche zu landen. Dieses Konzept kann an das Konzept des "Flusses" gebunden werden. Wenn ein Benutzer vollständig in einer Aufgabe mit der richtigen Mischung aus Herausforderung und Belohnung oder einfach ausgedrückt ist, befindet er sich "in der Zone".
 
-Wohl ist die wichtigste Art von Immersion in Mixed Reality räumliche Immersion. Der ganze Punkt von Mixed Reality besteht darin, sich selbst in die Aufnahme dieser digitalen Objekte zu verarscht, die in der realen Welt vorhanden sind. Wir synthetisieren Hologramme in unserer Umgebung, die in ganzen Umgebungen und Umgebungen räumlich zusammengestellt sind. Dies bedeutet nicht, dass wir in unseren Erfahrungen nicht immer noch andere Arten von Immersion einsetzen können, so wie es Atari mit taktiler Immersion in Lunar Lander getan hat.
+Wohl ist der wichtigste Typ des Immersions in Mixed Reality das räumliche Immersion. Der eigentliche Punkt von Mixed Reality ist es, sich selbst zu übertäuischen, dass diese digitalen Objekte in der realen Welt vorhanden sind. Wir synthetisieren Hologramme in unserer Umgebung, räumlich versetzt in ganze Umgebungen und Umgebungen. Dies bedeutet nicht, dass wir nicht immer noch andere Arten von Immersion in unseren Erfahrungen einsetzen können, wie atari es bei der taktilen Immersion in Lunar Lander getan hat.
 
 ## <a name="designing-with-immersion"></a>Entwerfen mit Immersion
 
-Wie können wir die taktile Immersion auf eine aktualisierte volumetrische Sequel auf den klassischen Atari-Artikel anwenden? Vor dem Umgang mit dem Eingabeschema muss das Spielkonstrukt für den dreidimensionalen Raum behandelt werden.
+Wie können wir die taktile Immersion auf eine aktualisierte volumetrischen Sequel auf den Atari-Classic anwenden? Bevor sie das Eingabeschema in Angriff nehmen, muss das Spielkonstrukt für den dreidimensionalen Raum behandelt werden.
 
 ![Visualisieren der Oberflächenzuordnung in HoloLens](images/surfacemapping.png)<br>
-*Visualisieren der räumlichen Zuordnung in HoloLens*
+*Visualisieren der räumlichen HoloLens*
 
-Durch die Nutzung der Umgebung eines Benutzers stehen uns unendliche Geländeoptionen für die Ziellandung unseres Mondlandemoduls zur Verfügung. Damit das Spiel dem ursprünglichen Titel am ähnlichsten ist, könnte ein Benutzer potenziell Zielpads mit unterschiedlichen Schwierigkeiten in seiner Umgebung bearbeiten und platzieren.
+Durch die Nutzung der Umgebung eines Benutzers haben wir effektiv unendliche Geländeoptionen, um unser Mondlandemodul zu landen. Damit das Spiel dem ursprünglichen Titel am meisten gefällt, könnte ein Benutzer Zielpads mit unterschiedlichen Schwierigkeiten in seiner Umgebung manipulieren und platzieren.
 
-![Das Mondlandefähremodul](images/640px-lm-hero.jpg)<br>
-*Das Mondlandefähremodul*
+![Bekringen des Mondlandmoduls](images/640px-lm-hero.jpg)<br>
+*Bekringen des Mondlandmoduls*
 
-Der Benutzer muss das Eingabeschema erlernen, das Landeziel steuern und ein kleines Ziel haben. Eine erfolgreiche Spielerfahrung bietet die richtige Mischung aus Herausforderung und Belohnung. Der Benutzer kann ein Bestimmtes Maß an Schwierigkeiten auswählen, wobei der einfachste Modus einfach erfordert, dass der Benutzer erfolgreich in einen benutzerdefinierten Bereich auf einer Oberfläche gelangen muss, die von der HoloLens gescannt wird. Sobald ein Benutzer das Spiel hängt, kann er die Schwierigkeiten nach Bedarf hochholen.
+Der Benutzer muss das Eingabeschema erlernen, das Versandsystem steuern und über ein kleines Ziel verfügen, auf dem er landen kann. Eine erfolgreiche Spielerfahrung bietet die richtige Mischung aus Herausforderung und Belohnung. Der Benutzer kann einen Grad an Schwierigkeiten auswählen. Der einfachste Modus erfordert lediglich, dass der Benutzer erfolgreich in einen benutzerdefinierten Bereich auf einer Oberfläche landen muss, die vom Benutzer gescannt HoloLens. Sobald ein Benutzer das Spiel abfängt, kann er die Schwierigkeiten nach Besendung ankurbeln.
 
 ### <a name="adding-input-for-hand-gestures"></a>Hinzufügen von Eingaben für Handgesten
 
-Die HoloLens-Basiseingabe verfügt nur über zwei Gesten: [Air Tap und Bloom](../../design/gaze-and-commit.md#composite-gestures). Benutzer müssen sich keine kontextbezogenen Nuancen oder eine Liste bestimmter Gesten merken, die die Benutzeroberfläche der Plattform vielseitig und leicht zu erlernen machen. Während das System diese beiden Gesten möglicherweise nur verfügbar macht, kann HoloLens als Gerät zwei Hände gleichzeitig nachverfolgen. Unser Ode an Lunar Lander ist eine [immersive App, d.h., wir können den Basissatz von Gesten erweitern, um zwei Hände zu nutzen und unsere eigenen, übermäßig taktilen Mittel für die Navigation von Mondlandemodulen hinzuzufügen.
+HoloLens Basiseingabe verfügt nur über zwei Gesten: [Air Tap und Bloom](../../design/gaze-and-commit.md#composite-gestures). Benutzer müssen sich keine kontextbezogenen Nuancen oder eine liste mit bestimmten Gesten merken, die die Plattformschnittstelle vielseitig und leicht zu erlernen machen. Während das System diese beiden Gesten möglicherweise nur verfügbar macht, HoloLens gerät zwei Hände gleichzeitig nachverfolgen. Unser Ode zu Lunar Lander ist eine [immersive App. Das bedeutet, dass wir den Basissatz von Gesten erweitern können, um zwei Hände zu nutzen und unsere eigenen taktilen Mittel für die Navigation mit Mondmodulen hinzuzufügen.
 
-Wenn wir auf das ursprüngliche Steuerelementschema zurückblicken, **mussten wir für Diess und Drehung lösen.** Der Nachteil ist, dass die Drehung im neuen Kontext eine zusätzliche Achse hinzufügt (technisch gesehen zwei, aber die Y-Achse ist weniger wichtig für das Ziel). Die beiden unterschiedlichen Versandbewegungen eignen sich natürlich, um jeder Hand zugeordnet zu werden:
+Wenn wir auf das ursprüngliche Steuerungsschema zurückkommen, **mussten wir für die Drehung und die Drehung lösen.** Der Nachteil ist, dass die Drehung im neuen Kontext eine zusätzliche Achse hinzufügt (technisch gesehen zwei, aber die Y-Achse ist für die Landung weniger wichtig). Die beiden unterschiedlichen Versandbewegungen eignen sich natürlich für die Zuordnung zu jeder Hand:
 
-![Tippen und ziehen Sie die Geste, um das Lander auf allen drei Achsen zu drehen.](images/module-handdrag.gif)<br>
-*Tippen und ziehen Sie die Geste, um das Lander auf allen drei Achsen zu drehen.*
+![Tippen und Ziehen der Geste zum Drehen des Landers auf allen drei Achsen](images/module-handdrag.gif)<br>
+*Tippen und Ziehen der Geste zum Drehen des Landers auf allen drei Achsen*
 
 **Schub**
 
-Der Hebel auf dem ursprünglichen Maschinenautomaten, der einer Skala von Werten zugeordnet ist, je höher der Hebel verschoben wurde, desto mehr Strahl wurde auf das Boot angewendet. Eine wichtige Feinheiten, die hier zu beachten sind, ist, wie der Benutzer seine Kontrolle übernehmen und einen gewünschten Wert beibehalten kann. Wir können das Verhalten beim Tippen und Ziehen effektiv verwenden, um das gleiche Ergebnis zu erzielen. Der Wert beginnt bei 0 (null). Der Benutzer tippt und zieht, um den Wert zu erhöhen. An diesem Punkt könnten sie loslassen, um sie zu verwalten. Jede Änderung des Werts der Tipp- und Ziehgeste wäre das Delta zum ursprünglichen Wert.
+Je höher der Hebel bewegt wurde, desto mehr Schub wurde auf das Boot angewendet, um den Hebel auf dem ursprünglichen Maschinengerät einer Skala von Werten zu unterordnen. Eine wichtige Nuance, auf die hier hingezeiget werden muss, ist, wie der Benutzer die Hand vom Steuerelement nehmen und einen gewünschten Wert verwalten kann. Wir können effektiv das Verhalten beim Tippen und Ziehen verwenden, um das gleiche Ergebnis zu erzielen. Der Stoßwert beginnt bei 0 (null). Der Benutzer tippt und zieht, um den Wert zu erhöhen. An diesem Punkt könnten sie es warten lassen. Jede Änderung des Tipp- und Ziehgestenwerts wäre das Delta des ursprünglichen Werts.
 
 **Drehung**
 
-Dies ist etwas komplizierter. Wenn holografische Schaltflächen zum Tippen "gedreht" werden, ist dies ein unerhörliches Erlebnis. Es gibt keine physische Kontrolle, die genutzt werden muss, sodass das Verhalten aus der Bearbeitung eines Objekts stammen muss, das den Lander darstellt, oder mit dem Lander selbst. Wir haben eine Methode mit Tippen und Ziehen entwickelt, die es einem Benutzer ermöglicht, sie effektiv in die gewünschte Richtung zu "pushen und zu pullen". Jedes Mal, wenn ein Benutzer tippt und hält, wird der Punkt im Raum, an dem die Geste initiiert wurde, zum Ursprung für die Drehung. Beim Ziehen vom Ursprung wird das Delta der Handübersetzung (X,Y,Z) konvertiert und auf das Delta der Drehungswerte des Landers angewendet. Oder einfach *ausgedrückt: Wenn Sie nach links <-> nach rechts, nach oben <-> nach unten ziehen, <-> zurück in Leerzeichen ziehen, wird das Versand entsprechend gedreht.*
+Dies ist etwas schwieriger. Holografische "Drehen"-Schaltflächen zum Tippen machen dies zu einem lässigsten Erlebnis. Es gibt kein physisches Steuerelement, das genutzt werden kann, daher muss das Verhalten aus der Bearbeitung eines Objekts stammen, das den Lander darstellt, oder mit dem Lander selbst. Wir haben eine Methode mit "Tippen und Ziehen" entwickelt, die es einem Benutzer ermöglicht, es effektiv in die Richtung zu "pushen und zu pullen", in der er es sehen möchte. Wenn ein Benutzer tippt und hält, wird der Punkt im Raum, an dem die Geste initiiert wurde, zum Ursprung für die Drehung. Durch Ziehen vom Ursprung wird das Delta der Übersetzung der Hand (X,Y,Z) konvertiert und auf das Delta der Drehungswerte des Landers angewendet. Oder einfach: Wenn Sie nach links <-> nach oben <-> nach unten *ziehen, <->* wieder in Leerzeichen zurück ziehen, wird das Boot entsprechend gedreht.
 
-Da die HoloLens zwei Hände nachverfolgen kann, kann die Drehung der rechten Hand zugewiesen werden, während die Luftbewegung von links gesteuert wird. Finesse ist der entscheidende Faktor für den Erfolg in diesem Spiel. Das *Gefühl* dieser Interaktionen ist die absolute höchste Priorität. Insbesondere im Kontext der taktilen Immersion. Ein Zu schnelles Versenden wäre schwierig zu steuern, während ein zu langsames das "Pushen und Pullen" des Benutzers auf dem Versand für einen umständlich langen Zeitraum erfordern würde.
+Da die HoloLens zwei Hände nachverfolgen kann, kann die Drehung der rechten Hand zugewiesen werden, während die Drehung von der linken Seite gesteuert wird. Die Spielweise ist der Faktor für den Erfolg in diesem Spiel. Das *Gefühl* dieser Interaktionen hat die absolute höchste Priorität. Insbesondere im Kontext der taktilen Immersion. Ein Versand, der zu schnell reagiert, wäre schwierig zu steuern, während ein zu langsames Boot erfordert, dass der Benutzer das Boot für einen umstänglich langen Zeitraum "pushen und pullen" muss.
 
 ### <a name="adding-input-for-game-controllers"></a>Hinzufügen von Eingaben für Gamecontroller
 
-Handgesten auf der HoloLens stellen zwar eine neue Methode der differenzierten Steuerung bereit, aber es gibt immer noch ein gewisses Fehlen von "echtem" taktilem Feedback, das Sie von analogen Steuerelementen erhalten. Durch das Verbinden eines Xbox-Spielcontrollers können wir dieses Gefühl der Physischen wiedererlangen und gleichzeitig die Steuerungsstäbchen nutzen, um eine differenzierte Steuerung zu erhalten.
+Während Handgesten auf dem HoloLens eine neue Methode der feinen Steuerung bieten, gibt es immer noch ein gewisses Fehlen von "echtem" taktilem Feedback, das Sie von analogen Steuerelementen erhalten. Das Verbinden eines Xbox-Spielcontrollers ermöglicht es uns, dieses Gefühl der Physischen zu nutzen, während wir die Steuerstäbchen nutzen, um eine fein abgrenzende Kontrolle zu behalten.
 
-Es gibt mehrere Möglichkeiten, das relativ einfache Steuerungsschema auf den Xbox-Controller anzuwenden. Da wir versuchen, so nah wie möglich an der ursprünglichen Einrichtung zu bleiben, wird **Dies** am besten der Triggerschaltfläche zugeordnet. Bei diesen Schaltflächen handelt es sich um analoge Steuerelemente, d. h., sie verfügen über mehr als einfache *Ein- und Aus-Zustände* und reagieren tatsächlich auf den Druckgrad, der auf sie zunimmt. Dies gibt uns ein ähnliches Konstrukt wie das **Ehrmittelmittel**. Im Gegensatz zum ursprünglichen Spiel und der Handgeste schneidet dieses Steuerelement die Brille des Versands ab, sobald ein Benutzer den Trigger nicht mehr unter Druck setzt. Es gibt dem Benutzer immer noch das gleiche Maß an Finesse wie das ursprüngliche Spiel.
+Es gibt mehrere Möglichkeiten, das relativ einfache Steuerungsschema auf den Xbox-Controller anzuwenden. Da wir versuchen, so nah wie möglich an der ursprünglichen Einrichtung zu bleiben, wird die Schaltfläche **"Trigger"** am besten von "1" verwendet. Diese Schaltflächen sind analoge Steuerelemente,  d. h., sie haben mehr als einfache Ein- und Aus-Zustände, sie reagieren tatsächlich auf den Grad des Drucks, der auf sie gesetzt wird. Dadurch erhalten wir ein ähnliches Konstrukt wie **der 2016-Hebel**. Im Gegensatz zum ursprünglichen Spiel und der Handgeste schneide dieses Steuerelement die Schubkraft des Versands ab, sobald ein Benutzer den Trigger nicht mehr unter Druck setzt. Es bietet dem Benutzer immer noch den gleichen Grad an Freundlichkeit wie das ursprüngliche Spiel.
 
-![Der linke Thumbstick ist Yaw und Roll zugeordnet, der rechte Ziehstäbchen wird Tonhöhe und Roll zugeordnet.](images/thumbsticksidebyside.gif)<br>
-*Der linke Thumbstick wird yaw und roll zugeordnet. Der rechte Thumbstick wird Tonhöhe und Roll zugeordnet.*
+![Linker Thumbstick wird "Yaw" und "Roll" zugeordnet, der rechte Thumbstick "Pitch" und "Roll".](images/thumbsticksidebyside.gif)<br>
+*Linker Thumbstick wird yaw und roll zugeordnet. Rechter Fingerabdruck wird Tonhöhe und Roll zugeordnet*
 
-Die dualen Sticks eignen sich natürlich für die Steuerung der Drehung des Versands. Leider gibt es drei Achsen, auf denen sich das Boot drehen kann, und zwei Thumbsticks, die beide zwei Achsen unterstützen. Dieser Konflikt bedeutet, dass entweder ein Thumbstick eine Achse steuert. oder es gibt eine Überlappung der Achsen für die Sticks. Die frühere Lösung hat sich "gebrochen" gefühlt, da Daumenstäbchen ihre lokalen X- und Y-Werte inhärent kombinieren. Die zweite Lösung erforderte einige Tests, um zu ermitteln, welche redundanten Achsen sich am natürlichsten anfühlen. Im letzten Beispiel werden *yaw* und *roll* (Y- und X-Achsen) für den linken Thumbstick und *pitch* and *roll* (Z- und X-Achsen) für den rechten Thumbstick verwendet. Dies hat das natürlichste gefühlt, da *Roll* scheinbar unabhängig voneinander gut mit *Gier* und *Tonhöhe* gekoppelt ist. Beachten Sie, dass die Verwendung beider Thumbsticks für *roll* ebenfalls den Drehwert verdoppelt. Es macht ziemlich viel Spaß, die Lander-Do-Schleifen zu haben.
+Die dualen Thumbsticks eignen sich natürlich für die Steuerung der Versandrotation. Leider gibt es drei Achsen, auf denen sich das Boot drehen kann, und zwei Thumbsticks, die beide zwei Achsen unterstützen. Dieser Konflikt bedeutet, dass entweder ein Thumbstick eine Achse steuert. oder es gibt eine Überlappung der Achsen für die Sticks. Die frühere Lösung hat sich als "fehlerhaft" gefühlt, da Die Daumenstäbchen ihre lokalen X- und Y-Werte inhärent kombinieren. Die zweite Lösung erforderte einige Tests, um zu ermitteln, welche redundanten Achsen sich am natürlichsten anfühlen. Im letzten Beispiel werden *yaw* und *roll* (Y- und X-Achsen) für den linken Thumbstick und *pitch* and *roll* (Z- und X-Achsen) für den rechten Thumbstick verwendet. Dies hat das natürlichste gefühlt, da *roll* scheinbar unabhängig gut mit *yaw* und pitch gekoppelt *ist.* Beachten Sie, dass die Verwendung beider Thumbsticks für *roll* ebenfalls den Drehwert verdoppelt. Es macht ziemlich viel Spaß, die Lander-Do-Schleifen zu haben.
 
-Diese Beispiel-App veranschaulicht, wie räumliche Erkennung und taktiler Immersion eine Benutzeroberfläche dank der erweiterbaren Eingabemuster Windows Mixed Reality erheblich verändern können. Während Lunar Lander fast 40 Jahre alt sein kann, werden die konzepte, die mit diesem kleinen Oktaggon-mit-Anstieg verfügbar gemacht werden, dauerhaft weiterleben. Warum sollten Sie sich bei der Vorstellung von der Zukunft nicht die Vergangenheit ansehen?
+Diese Beispiel-App veranschaulicht, wie räumliche Erkennung und taktiler Immersion eine Benutzererfahrung dank der erweiterbaren Eingabemuster Windows Mixed Reality erheblich verändern können. Während Lunar Lander fast 40 Jahre alt sein kann, werden die konzepte, die mit diesem kleinen Oktaggon-mit-Anstieg verfügbar gemacht werden, dauerhaft weiterleben. Warum sollten Sie sich bei der Vorstellung von der Zukunft nicht die Vergangenheit ansehen?
 
 ## <a name="technical-details"></a>Technische Details
 
-Skripts und Prefabs für die Lunar Module-Beispiel-App finden Sie auf [Mixed Reality Design Labs GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule).
+Skripts und Prefabs für die Lunar Module-Beispiel-App finden Sie auf der [Mixed Reality Design Labs GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule).
 
 ## <a name="about-the-author"></a>Informationen zum Autor
 
@@ -112,5 +112,5 @@ Skripts und Prefabs für die Lunar Module-Beispiel-App finden Sie auf [Mixed Rea
 
 * [Hub für MRTK-Beispiele](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [Oberflächen](sampleapp-surfaces.md) - [(Aus dem Microsoft Store in HoloLens 2 herunterladen)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
-* [Periodensystem der Elemente 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Periodensystem der Elemente 2.0](periodic-table-of-the-elements-2.md)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

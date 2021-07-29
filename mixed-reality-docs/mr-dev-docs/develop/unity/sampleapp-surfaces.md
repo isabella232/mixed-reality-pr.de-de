@@ -1,64 +1,64 @@
 ---
 title: Oberflächen
-description: Erfahren Sie, wie Sie in der Beispiel-App Oberflächen taktile Hefte mit Visuellem, Audio und artikuliertem Handtracking erstellen.
+description: Erfahren Sie, wie Sie in der Beispiel-App Oberflächen taktile Beläge mit visueller, Audio- und artikulierter Handverfolgung erstellen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Entwurf, Beispiel-App, Steuerelemente, MRTK, Mixed Reality Toolkit, Unity, Beispiel-Apps, Beispiel-Apps, Open Source, Microsoft Store, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 28f8bc1e1f30573936067a83b1ad26133c23c5b8
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: a4259148926ec20bca53a23074a6d1ea285f0aa2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743390"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757002"
 ---
 # <a name="surfaces"></a>Oberflächen
 
->[!NOTE]
->In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erkenntnisse und Vorschläge für die Entwicklung von Mixed Reality-Apps teilen. Unsere artikel- und codebezogenen Entwurfsartikel werden sich weiterentwickeln, wenn wir neue Ermittlungen vornehmen.
-
-[Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)  ist eine Open-Source-Beispiel-App aus den Mixed Reality Design Labs von Microsoft. Es wird untersucht, wie wir einen taktilen Hefter mit visuellen, Audio- und vollständig formulierten Handtrackings erstellen können.
-
 ![Oberflächen](images/MRDL_Surfaces_1.jpg)
+
+>[!NOTE]
+>In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erfahrungen und Vorschläge für die Entwicklung von Mixed Reality-Apps teilen. Unsere designbezogenen Artikel und der Code werden weiterentwickelt, wenn wir neue Erkenntnisse machen.
+
+[Oberflächen](https://github.com/microsoft/MRDL_Unity_Surfaces)  ist eine Open-Source-Beispiel-App aus Mixed Reality Design Labs von Microsoft. Es wird untersucht, wie wir mit visuellen, Audio- und vollständig artikulierten Handtrackings ein taktiles Zeug erstellen können.
+
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Laden Sie die App Microsoft Store in HoloLens 2
+Wenn Sie über HoloLens 2 verfügen, können Sie die App direkt herunterladen und auf Ihrem Gerät installieren.
+
+<a href='//www.microsoft.com/store/apps/9nvkpv3sk3x0?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 ## <a name="demo-video"></a>Demovideo 
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
-Aufgezeichnet mit HoloLens 2 mithilfe von Mixed Reality-Aufnahme
+Aufgezeichnet mit HoloLens 2 mit Mixed Reality-Aufnahme
 
 ## <a name="about-the-app"></a>Informationen zur App
 
-Oberflächen veranschaulichen die Verwendung des Eingabesystems und der Bausteine von Mixed Reality Toolkit (MRTK), um eine App-Erfahrung für HoloLens 2 zu erstellen. In diesem Projekt finden Sie beispiele für:
+Oberflächen zeigen, wie sie das Eingabesystem und die Bausteine des Mixed Reality Toolkits (MRTK) verwenden, um eine App-Erfahrung für HoloLens 2. In diesem Projekt finden Sie beispiele für:
 
-- Verwenden Sie das [MRTK-Eingabesystem,](/windows/mixed-reality/mrtk-unity/features/input/overview)insbesondere hand-/joint tracking.
-- Verwenden Sie den [Standard-Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) von MRTK für performante Grafiken.
+- Verwenden Sie das [Eingabesystem](/windows/mixed-reality/mrtk-unity/features/input/overview)des MRTK, insbesondere hand-/joint tracking.
+- Verwenden Sie den [Standard-Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) des MRTK für performante Grafiken.
 
 Sie können die Komponenten dieses Projekts verwenden, um Ihre eigenen Mixed Reality-App-Erfahrungen zu erstellen.
 
-## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>MR Dev Days 2020 – Erkenntnisse aus der MR-Oberflächen-App
+## <a name="mr-dev-days-2020---learnings-from-the-mr-surfaces-app"></a>MR Dev Days 2020 – Learnings from the MR Surfaces App (MR Dev Days 2020: Lerninhalte aus der MR-Oberflächen-App)
 
-[Erkenntnisse aus der MR-Oberflächen-App](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
+[Lernen aus der MR-Oberflächen-App](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App)
 
-Dieser Senior Designer hinter der APP FÜRL-Oberflächen spricht über die Designstory und die technischen Highlights der App.
+Board Simkins, Senior Designer hinter der BESL-Oberflächen-App, spricht über die Entwurfsgeschichte und technische Highlights der App.
 
-## <a name="project-repository-on-github"></a>Projekt-Repository auf GitHub
+## <a name="project-repository-on-github"></a>Project repository on GitHub
 
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
-## <a name="download-app-from-microsoft-store-in-hololens-2"></a>Herunterladen der App aus Microsoft Store in HoloLens 2
-
-https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
-
-(Die App ist nur auf HoloLens 2 verfügbar.)
 
 ## <a name="about-the-author"></a>Informationen zum Autor
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong-Yoon-Park</b><br>UX-Designer @Microsoft</td>
+<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon Park</b></a><br>UX-Designer @Microsoft</td>
 </tr>
 </table>
 
