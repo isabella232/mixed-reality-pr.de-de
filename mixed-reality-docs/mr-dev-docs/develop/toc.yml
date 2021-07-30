@@ -222,8 +222,6 @@
       items:
         - name: Foto-/Videokamera in Unity
           href: unity/locatable-camera-in-unity.md
-        - name: Holographic Remoting in der Desktop-App
-          href: unity/holographic-remoting-desktop.md
         - name: Fokuspunkt
           href: unity/focus-point-in-unity.md
         - name: Verlust der Nachverfolgung
@@ -249,7 +247,7 @@
             - name: Oberflächen
               href: unity/sampleapp-surfaces.md
             - name: Periodensystem der Elemente 2.0
-              href: 'https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158'
+              href: unity/periodic-table-of-the-elements-2.md
             - name: "Galaxie-Explorer\_2.0"
               href: unity/galaxy-explorer-update.md
             - name: Qualitätsgrundlagen
@@ -268,8 +266,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Empfohlene Einstellungen für Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Unity-Wiedergabemodus
-          href: unity/unity-play-mode.md
+        - name: Anzeigen einer Vorschau Ihrer Arbeit mit Holographic Remoting
+          href: unity/holographic-remoting-in-unity.md
     - name: Visual Studio-Projektmappen
       items:
         - name: Exportieren und Erstellen einer Unity-Projektmappe für Visual Studio
@@ -454,6 +452,8 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
+        - name: Überblick
+          href: platform-capabilities-and-apis/holographic-remoting-overview.md
         - name: Holographic Remoting-Player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
         - name: Schreiben einer Holographic Remoting-Remote-App
@@ -475,9 +475,7 @@
         - name: Holographic Remoting-Software – Lizenzbedingungen
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: Holographic Remoting für HoloLens (Gen1)
-          items:
-            - name: Hinzufügen von Holographic Remoting
-              href: platform-capabilities-and-apis/add-holographic-remoting.md
+          href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: App-Qualität und Tests
       items:
         - name: Kriterien für die App-Qualität
