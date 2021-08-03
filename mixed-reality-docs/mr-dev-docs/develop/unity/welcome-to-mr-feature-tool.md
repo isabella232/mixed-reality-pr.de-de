@@ -7,16 +7,16 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Aktuell, Tools, Erste Schritte, Grundlagen, Unity, Visual Studio, Toolkit, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Installation, Windows, HoloLens, Emulator, Unreal, OpenXR
-ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1244f9cd4da0d6ae0b5c6f92698f87f0edd812e2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772413"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757092"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>Willkommen beim Mixed Reality-Featuretool
 
-![Mixed Reality-Featuretool-Bannerbild](images/feature-tool-banner.png)
+![Mixed Reality-Featuretool-Bannerbild](images/feature-tool-banner.jpg)
 
 > [!IMPORTANT]
 > Das Mixed Reality-Featuretool ist zurzeit nur für Unity verfügbar. Wenn Sie in Unreal entwickeln, finden Sie weitere Informationen in der Dokumentation zur [Toolinstallation](../install-the-tools.md).
