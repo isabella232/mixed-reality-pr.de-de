@@ -2,25 +2,27 @@
 title: Erste Schritte mit Holographic Remoting am PC
 description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Remotestreaming von Mixed Reality-Anwendungen von Ihrem PC an HoloLens 2 verwenden können.
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Holographic Remoting am PC, QuickInfos, Eye Tracking
 ms.localizationpriority: high
-ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175441"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757352"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1. Erste Schritte mit Holographic Remoting am PC
 
 Willkommen bei den HoloLens 2-Tutorials. In dieser zweiteiligen Tutorialreihe erfahren Sie, wie Sie eine Mixed Reality-Demo und eine PC-App für Holographic Remoting erstellen.
 
+[Erlernen der Grundlagen von Holographic Remoting.](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
+
 In diesem Tutorial erfahren Sie, wie Sie eine Mixed Reality-Erfahrung erstellen. Es werden Benutzeroberflächenelemente, 3D-Modellbearbeitung, Modellclipping und Funktionen für Eye-Tracking veranschaulicht.
 
-Im zweiten Tutorial, [Erstellen einer Holographic Remoting-Anwendung](mr-learning-pc-holographic-remoting-02.md), erfahren Sie, wie Sie eine PC-App für Holographic Remoting erstellen. Stellen Sie jederzeit eine Verbindung mit HoloLens 2 her, um 3D-Inhalte in Mixed Reality visuell darzustellen.
+Im zweiten Tutorial, [Erstellen einer Holographic Remoting-Anwendung,](mr-learning-pc-holographic-remoting-02.md)erfahren Sie, wie Sie eine PC-App erstellen, die Holographic Remoting verwendet, sodass Sie den aktuellen Stand Ihrer Arbeit an die HoloLens streamen und anzeigen können, ohne ihn zuerst erstellen zu müssen.
 
 ## <a name="objectives"></a>Ziele
 
