@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Ereignisse
-ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: ff4c23b796374940de1a1de6b72e08702d6fd24f79234e8ef80dc1210d13d103
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190180"
 ---
 # <a name="core-system"></a>Kernsystem
 
@@ -22,8 +22,8 @@ Das Kernstück des Eingabesystems ist [inputSystem.](../features/input/overview.
 Dieser Dienst ist für Folgendes verantwortlich:
 
 - Lesen des [Eingabesystemprofils](../configuration/mixed-reality-configuration-guide.md#input-system-settings)
-- Starten der [konfigurierten Datenanbieter](../features/input/input-providers.md) (z. B. `Windows Mixed Reality Device Manager` und `OpenVR Device Manager` ).
-- Instanziierung von [GazeProvider,](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider)einer Komponente, die für die Bereitstellung von Anvisierungsinformationen im HoloLens-Stil (1. Generation) verantwortlich ist, zusätzlich zu HoloLens 2 anvisierungsinformationen.
+- Starten der konfigurierten [Datenanbieter](../features/input/input-providers.md) (z. B. `Windows Mixed Reality Device Manager` und `OpenVR Device Manager` ).
+- Instanziierung von [GazeProvider,](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider)einer Komponente, die für die Bereitstellung von Anvisierungsinformationen im HoloLens-Stil (1. Generation) zusätzlich zu HoloLens 2 Anvisierungsinformationen im Anvisierungsstil verantwortlich ist.
 - Instanziierung des [FocusProvider,](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider)bei dem es sich um eine Komponente handelt, die für die Bestimmung von Objekten zuständig ist, die den Fokus haben. Dies wird im Abschnitt Zeiger [und](controllers-pointers-and-focus.md#pointers-and-focus) Fokus der Dokumentation genauer beschrieben.
 - Bereitstellen von Registrierungspunkten für alle Eingabeereignisse [(als globale Listener).](#global-listeners)
 - Bereitstellen von Ereignis dispatch-Funktionen für diese Eingabeereignisse.
@@ -34,7 +34,7 @@ Eingabeereignisse werden in der Regel auf zwei verschiedenen Kanälen ausgelöst
 
 ### <a name="objects-in-focus"></a>Objekte im Fokus
 
-Ereignisse können direkt an ein GameObject gesendet werden, das den Fokus besitzt. Ein Objekt kann z. B. über ein Skript verfügen, das [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) implementiert.
+Ereignisse können direkt an ein GameObject gesendet werden, das den Fokus besitzt. Ein Objekt kann beispielsweise über ein Skript verfügen, das [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) implementiert.
 Dieses Objekt würde Berührungsereignisse erhalten, wenn es von einer Hand, die sich in der Nähe befindet, fokussiert wird. Diese Ereignistypen werden in der GameObject-Hierarchie "nach oben" angezeigt, bis ein GameObject gefunden wird, das das Ereignis behandeln kann.
 
 Dies erfolgt [mithilfe von ExecuteHierarchy](https://docs.unity3d.com/ScriptReference/EventSystems.ExecuteEvents.ExecuteHierarchy.html) innerhalb der Standardimplementierung des Eingabesystems.
@@ -45,7 +45,7 @@ Ereignisse können an globale Listener gesendet werden. Es ist möglich, sich mi
 
 Beachten Sie, dass [Fallbacklistener](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityInputSystem.PushFallbackInputHandler%2A) eine weitere Art von globalen Listenern sind, von denen ebenfalls abgeraten wird, da sie jedes einzelne Eingabeereignis empfangen, das nicht an anderer Stelle in der Szene behandelt wurde.
 
-### <a name="order-of-event-dispatch"></a>Reihenfolge der Ereignisversand
+### <a name="order-of-event-dispatch"></a>Reihenfolge der Ereignissendung
 
 Im Allgemeinen werden Ereignisse auf folgende Weise an Listener gesendet. Beachten Sie, dass der Ereignis dispatch-Prozess beendet wird, wenn einer der folgenden Schritte das Ereignis als behandelt bezeichnet. [](https://docs.unity3d.com/ScriptReference/EventSystems.AbstractEventData-used.html)
 
@@ -56,7 +56,7 @@ Im Allgemeinen werden Ereignisse auf folgende Weise an Listener gesendet. Beacht
 
 ## <a name="device-managers-and-data-providers"></a>Geräte-Manager und Datenanbieter
 
-Diese Entitäten sind für die Interfacing mit APIs auf niedrigerer Ebene (z. B. Windows Mixed Reality-APIs oder OpenVR-APIs) und für die Übersetzung von Daten aus diesen Systemen in Solche verantwortlich, die den Eingabeabstraktionen des MRTK auf höherer Ebene passen. Sie sind für die Erkennung, Erstellung und Verwaltung der Lebensdauer von [Controllern verantwortlich.](controllers-pointers-and-focus.md#controllers)
+Diese Entitäten sind für die Interfacing mit APIs auf niedrigerer Ebene (z. B. Windows Mixed Reality-APIs oder OpenVR-APIs) und für die Übersetzung von Daten aus diesen Systemen in Solche zuständig, die den Eingabeabstraktionen des MRTK auf höherer Ebene passen. Sie sind für die Erkennung, Erstellung und Verwaltung der Lebensdauer von [Controllern verantwortlich.](controllers-pointers-and-focus.md#controllers)
 
 Der grundlegende Ablauf eines Geräte-Managers umfasst:
 

@@ -1,18 +1,18 @@
 ---
-title: Assistent zum Erstellen des Erweiterungsdiensts
-description: Dokumentation zum Assistenten für den Übergang von Singletons zu MrTK-Diensten
+title: Assistent zum Erstellen von Erweiterungsdiensten
+description: Dokumentation zum Assistenten zum Übergang von Singletons zu Diensten – MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 4be9a58c7d63ab3bc93bcc326a90260cf6a3366b
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 6b4efa39a99755f3c031757c7298465886d0c39512c93750f4653200edce9e17
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214296"
 ---
-# <a name="extension-service-creation-wizard"></a>Assistent zum Erstellen des Erweiterungsdiensts
+# <a name="extension-service-creation-wizard"></a>Assistent zum Erstellen von Erweiterungsdiensten
 
 Der Übergang von Singletons zu Diensten kann schwierig sein. Dieser Assistent kann unsere andere Dokumentation und unseren Beispielcode ergänzen, indem entwicklern ermöglicht wird, neue Dienste mit (ungefähr) der gleichen Einfachheit wie beim Erstellen eines neuen MonoBehaviour-Skripts zu erstellen. Informationen zum Erstellen von Diensten von Grund auf finden Sie in unserem [Leitfaden zum Erstellen registrierter Dienste](../../configuration/mixed-reality-configuration-guide.md) (Bald verfügbar).
 
@@ -20,7 +20,7 @@ Der Übergang von Singletons zu Diensten kann schwierig sein. Dieser Assistent k
 
 Starten Sie den Assistenten über das Hauptmenü: **MixedRealityToolkit/Utilities/Create Extension Service.** Der Assistent führt Sie dann durch den Prozess zum Generieren Ihres Dienstskripts, ihrer Schnittstelle und Ihrer Profilklasse.
 
-## <a name="editing-your-service-script"></a>Bearbeiten Ihres Dienstskripts
+## <a name="editing-your-service-script"></a>Bearbeiten ihres Dienstskripts
 
 Standardmäßig werden Ihre neuen Skriptressourcen im Ordner `MixedRealityToolkit.Generated/Extensions` generiert. Nachdem Sie den Assistenten abgeschlossen haben, navigieren Sie hier, und öffnen Sie Ihr neues Dienstskript.
 

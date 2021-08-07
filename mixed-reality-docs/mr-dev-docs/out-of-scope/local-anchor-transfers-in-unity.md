@@ -1,50 +1,50 @@
 ---
-title: Lokale Anker Übertragungen in Unity
-description: Erfahren Sie, wie Anker zwischen mehreren hololens-Geräten in einer Unity Mixed Reality-Anwendung übertragen werden.
+title: Lokale Ankerübertragungen in Unity
+description: Erfahren Sie, wie Sie Anker zwischen mehreren HoloLens in einer Unity Mixed Reality-Anwendung übertragen.
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Freigabe, Anker, worldanchor, Mr Sharing 250, worldanchortransferbatch, spatialperception, Transfer, local Anchor Transfer, Anchor Export, Anchor Import
-ms.openlocfilehash: 4949dd49817d723729974fb5666d5defb64b72ba
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Sharing, Anchor, WorldAnchor, MR Sharing 250, WorldAnchorTransferBatch, SpatialPerception, transfer, local anchor transfer, anchor export, anchor import
+ms.openlocfilehash: eaf25edbae39aab628277aa29f975f3d4d9d7374c796fd1b7b159053d4a46b95
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189127"
 ---
-# <a name="local-anchor-transfers-in-unity"></a>Lokale Anker Übertragungen in Unity
+# <a name="local-anchor-transfers-in-unity"></a>Lokale Ankerübertragungen in Unity
 
-In Fällen, in denen Sie keine <a href="/azure/spatial-anchors" target="_blank">räumlichen Anker von Azure</a>verwenden können, ermöglichen lokale Anker Übertragungen einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.
-
->[!NOTE]
->Lokale Anker Übertragungen bieten weniger robusten Anker als Anker als <a href="/azure/spatial-anchors" target="_blank">räumliche Azure-Anker</a>, und IOS-und Android-Geräte werden von diesem Ansatz nicht unterstützt.
-
-### <a name="setting-the-spatialperception-capability"></a>Festlegen der spatialperception-Funktion
-
-Damit eine APP räumliche Anker übertragen kann, muss die *spatialperception* -Funktion aktiviert werden.
-
-Aktivieren der *spatialperception* -Funktion:
-1. Öffnen Sie im Unity-Editor den Bereich **"Player Einstellungen"** (Bearbeiten > Projekteinstellungen > Player).
-2. Klicken Sie auf die Registerkarte **"Windows Store"** .
-3. Erweitern Sie **"Veröffentlichungs Einstellungen"** , und überprüfen Sie die Funktion **"spatialperception"** in der Liste **"Funktionen"** .
+In Situationen, in denen Sie <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>nicht verwenden können, ermöglichen lokale Ankerübertragungen einem HoloLens-Gerät, einen Anker zu exportieren, der von einem zweiten Gerät HoloLens wird.
 
 >[!NOTE]
->Wenn Sie Ihr Unity-Projekt bereits in eine Visual Studio-Projekt Mappe exportiert haben, müssen Sie entweder in einen neuen Ordner exportieren oder [Diese Funktion manuell in "appxmanifest" in Visual Studio festlegen](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability).
+>Lokale Ankerübertragungen bieten weniger stabile Ankerrückrufe als <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, und iOS- und Android-Geräte werden von diesem Ansatz nicht unterstützt.
 
-### <a name="anchor-transfer"></a>Anker Übertragung
+### <a name="setting-the-spatialperception-capability"></a>Festlegen der SpatialPerception-Funktion
 
-**Namespace:** *unityengine. XR. WSA. Sharing*<br>
-**Typ**: *worldanchortransferbatch*
+Damit eine App Raumanker übertragen kann, muss die *SpatialPerception-Funktion* aktiviert sein.
 
-Zum Übertragen eines [worldanchors](../develop/unity/coordinate-systems-in-unity.md)müssen Sie den Anker einrichten, der übertragen werden soll. Der Benutzer eines hololens scannt seine Umgebung und wählt entweder manuell oder Programm gesteuert einen Punkt im Bereich aus, um als Anker für die gemeinsame Nutzung zu gelten. Die Daten, die diesen Punkt darstellen, können dann serialisiert und an die anderen Geräte übertragen werden, die in der-Funktion gemeinsam genutzt werden. Jedes Gerät deserialisiert dann die Anker Daten und versucht, diesen Punkt im Speicherplatz zu finden. Damit die Anker Übertragung funktioniert, muss jedes Gerät in genügend der Umgebung gescannt werden, damit der durch den Anker dargestellte Punkt identifiziert werden kann.
+Aktivieren der *SpatialPerception-Funktion:*
+1. Öffnen Sie im Unity-Editor den **Bereich "Player Einstellungen"** (Bearbeiten > Project Einstellungen > Player).
+2. Klicken Sie auf **die Registerkarte "Windows Store".**
+3. Erweitern **Sie "Einstellungen",** und überprüfen Sie die **Funktion "SpatialPerception"** in der **Liste "Funktionen".**
 
-### <a name="setup"></a>Einrichten
+>[!NOTE]
+>Wenn Sie Ihr Unity-Projekt bereits in eine Visual Studio-Projektmappe exportiert haben, müssen Sie entweder in einen neuen Ordner exportieren oder diese Funktion manuell im [AppxManifest in](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)Visual Studio.
 
-Der Beispielcode auf dieser Seite verfügt über einige Felder, die initialisiert werden müssen:
-1. *Gameobject rootgameobject* ist ein *gameobject* in Unity, das über eine *worldanchor* -Komponente verfügt. Ein Benutzer in der freigegebenen Benutzer Darstellung wird dieses *gameobject* platzieren und die Daten an die anderen Benutzer exportieren.
-2. *Worldanchor gamerootanchor* ist das *unityengine. XR. WSA. worldanchor* -Objekt, das auf *rootgameobject* basiert.
-3. *Byte [] importeddata ist ein Bytearray* für den serialisierten Anker, der von jedem Client über das Netzwerk empfangen wird.
+### <a name="anchor-transfer"></a>Ankerübertragung
+
+**Namespace:** *UnityEngine.XR.WSA.Sharing*<br>
+**Typ:** *WorldAnchorTransferBatch*
+
+Um einen [WorldAnchor zu übertragen,](../develop/unity/coordinate-systems-in-unity.md)muss der zu übertragende Anker einrichten. Der Benutzer eines HoloLens seine Umgebung und wählt entweder manuell oder programmgesteuert einen Punkt im Raum als Anker für die freigegebene Benutzeroberfläche aus. Die Daten, die diesen Punkt repräsentieren, können dann serialisiert und an die anderen Geräte übertragen werden, die in der Benutzererfahrung gemeinsam verwendet werden. Jedes Gerät deseriiert dann die Ankerdaten und versucht, diesen Punkt im Raum zu finden. Damit Anchor Transfer funktioniert, muss jedes Gerät in einer ausreichenden Umgebung gescannt worden sein, damit der durch den Anker dargestellte Punkt identifiziert werden kann.
+
+### <a name="setup"></a>Setup
+
+Der Beispielcode auf dieser Seite enthält einige Felder, die initialisiert werden müssen:
+1. *GameObject rootGameObject* ist ein *GameObject* in Unity, das über eine *WorldAnchor-Komponente* verfügt. Ein Benutzer in der freigegebenen Benutzeroberfläche platzieren dieses *GameObject* und exportiert die Daten an die anderen Benutzer.
+2. *WorldAnchor gameRootAnchor* ist *unityEngine.XR.WSA.WorldAnchor,* das sich auf *rootGameObject befindet.*
+3. *byte[] importedData ist* ein Bytearray für den serialisierten Anker, den jeder Client über das Netzwerk empfängt.
 
 ```
 public GameObject rootGameObject;
@@ -61,16 +61,16 @@ void Start ()
 }
 ```
 
-### <a name="exporting"></a>Export
+### <a name="exporting"></a>Exportieren
 
-Zum Exportieren benötigen wir lediglich einen *worldanchor* und wissen, wie wir ihn nennen werden, damit er für die empfangende App sinnvoll ist. Ein Client in der freigegebenen Darstellung führt diese Schritte aus, um den gemeinsamen Anker zu exportieren:
-1. Erstellen eines *worldanchortransferbatches*
-2. Zu übertragenden *worldanchors* hinzufügen
-3. Export starten
-4. Behandeln Sie das *onexportdataavailable* -Ereignis, wenn Daten verfügbar werden.
-5. Behandeln des *onexportcomplete* -Ereignisses
+Für den Export benötigen wir nur ein *WorldAnchor* und müssen wissen, was wir es nennen werden, damit es für die empfangende App sinnvoll ist. Ein Client in der freigegebenen Beerfahrung führt die folgenden Schritte aus, um den freigegebenen Anker zu exportieren:
+1. Erstellen eines *WorldAnchorTransferBatch*
+2. Hinzufügen der *zu übertragenden WorldAnchors*
+3. Starten des Exports
+4. Behandeln des *OnExportDataAvailable-Ereignisses,* wenn Daten verfügbar werden
+5. Behandeln des *OnExportComplete-Ereignisses*
 
-Wir erstellen einen *worldanchortransferbatch* , um zu kapseln, was wir übertragen werden, und exportieren Sie dann in Bytes:
+Wir erstellen ein *WorldAnchorTransferBatch-Objekt,* um das zu übertragende Objekt zu kapseln und anschließend in Bytes zu exportieren:
 
 ```
 private void ExportGameRootAnchor()
@@ -81,7 +81,7 @@ private void ExportGameRootAnchor()
 }
 ```
 
-Wenn Daten verfügbar werden, senden Sie die Bytes an den Client oder Puffer, wenn Daten Segmente verfügbar sind, und senden Sie Sie über beliebige Möglichkeiten:
+Wenn Daten verfügbar werden, senden Sie die Bytes an den Client oder Puffer, wenn Datensegmente verfügbar sind, und senden Sie sie über die gewünschten Mittel:
 
 ```
 private void OnExportDataAvailable(byte[] data)
@@ -90,7 +90,7 @@ private void OnExportDataAvailable(byte[] data)
 }
 ```
 
-Nachdem der Export abgeschlossen ist, weisen Sie den Client an, die Daten zu verwerfen, wenn die Daten übertragen wurden und die Serialisierung fehlgeschlagen ist. Wenn die Serialisierung erfolgreich war, teilen Sie dem Client mit, dass alle Daten übertragen wurden und der Import Vorgang gestartet werden kann:
+Wenn nach Abschluss des Exports Daten übertragen wurden und bei der Serialisierung ein Fehler auftraten, teilen Sie dem Client mit, die Daten zu verwerfen. Wenn die Serialisierung erfolgreich war, teilen Sie dem Client mit, dass alle Daten übertragen wurden, und der Importvorgang kann gestartet werden:
 
 ```
 private void OnExportComplete(SerializationCompletionReason completionReason)
@@ -108,7 +108,7 @@ private void OnExportComplete(SerializationCompletionReason completionReason)
 
 ### <a name="importing"></a>Importieren
 
-Nachdem alle Bytes vom Absender empfangen wurden, können wir die Daten zurück in ein *worldanchortransferbatch* importieren und das Stamm Spielobjekt an demselben physischen Speicherort sperren. Hinweis: der Import schlägt gelegentlich fehl, und es muss ein erneuter Versuch unternommen werden:
+Nachdem alle Bytes vom Absender empfangen wurden, können wir die Daten wieder in *ein WorldAnchorTransferBatch-Objekt* importieren und unser Stammspielobjekt am gleichen physischen Speicherort sperren. Hinweis: Der Importvorgang kann vorübergehend fehlschlagen und muss wiederholt werden:
 
 ```
 // This byte array should have been updated over the network from TransferDataToClient
@@ -137,4 +137,4 @@ private void OnImportComplete(SerializationCompletionReason completionReason, Wo
 }
 ```
 
-Nachdem ein *gameobject-Objekt* über den *Lock Object* -Befehl gesperrt wurde, verfügt es über einen *worldanchor* , der ihn an derselben physischen Position in der Welt hält, er kann sich aber an einem anderen Speicherort im Unity-Koordinaten Bereich befinden als andere Benutzer.
+Nachdem *ein GameObject* über den *LockObject-Aufruf* gesperrt wurde, wird es über einen *WorldAnchor* verfügen, der es an der gleichen physischen Position in der Welt hält, aber es kann sich an einer anderen Position im Unity-Koordinatenraum befinden als andere Benutzer.

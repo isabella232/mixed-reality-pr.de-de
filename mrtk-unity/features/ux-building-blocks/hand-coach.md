@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3e5a56f7498288e79963acea6fca223421fee2607004a9a2bae639f81441e0d9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209024"
 ---
 # <a name="hand-coach"></a>Hand Coach
 
@@ -26,7 +26,7 @@ Das aktuelle Interaktionsmodell stellt eine Vielzahl von Gestensteuerelementen d
 - Rotieren: Wird verwendet, um zu zeigen, wie Hologramme oder Objekte gedreht werden.
 - Skalierung: Wird verwendet, um zu zeigen, wie Hologramme so bearbeitet werden, dass sie größer oder kleiner sind.
 - Handkippen: Wird zum Aufrufen eines Startbereichs der Benutzeroberfläche oder von Handmenüs verwendet.
-- Handfläche hoch: Wird für den Moment verwendet, der vor der Schachtelung verwendet wird. Ein weiterer Vorschlag könnte sein, einen Startbereich für die Benutzeroberfläche zu starten.
+- Handfläche hoch: Wird für die Vor-Und-Uhr-Nutzung verwendet. Ein weiterer Vorschlag könnte sein, einen Startbereich für die Benutzeroberfläche zu starten.
 - Scrollen: Wird zum Scrollen einer Liste oder eines langen Dokuments verwendet.
 
 ## <a name="example-scene"></a>Beispielszene
@@ -51,7 +51,7 @@ Das `InteractionHint.cs` Skript stellt Wrapperfunktionen zum Auslösen von Anima
 
 #### <a name="how-to-set-up-an-interaction-hint"></a>Einrichten eines Interaktionshinweises
 
-Zum Einrichten eines Interaktionshinweises wird empfohlen, die bereitgestellten Prefabs "StaticHandCoachRoot_L.prefab" und "StaticHandCoachRoot_R.prefab" zu verwenden. Dieses Prefab enthält das InteractionHint-Skript und die Handplattform sowie die richtige Hierarchie, um sicherzustellen, dass die bereitgestellten Hinweisanimationen wie vorgesehen funktionieren.
+Zum Einrichten eines Interaktionshinweises wird empfohlen, die bereitgestellten Prefabs "StaticHandCoachRoot_L.prefab" und "StaticHandCoachRoot_R.prefab" zu verwenden. Dieses Prefab enthält das InteractionHint-Skript und das Hand-Rig sowie die richtige Hierarchie, um sicherzustellen, dass die bereitgestellten Hinweisanimationen wie vorgesehen funktionieren.
 Andernfalls müssen Sie das Skript auf einem gameObject-Element auf einer übergeordneten Ebene von Ihrer Handplattform mit Animator nach oben platzieren.
 
 #### <a name="inspector-properties"></a>Inspektoreigenschaften

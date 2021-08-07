@@ -1,67 +1,67 @@
 ---
-title: Übersicht über die Fallstudie
-description: Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden hat
+title: Fallstudie – Übersicht
+description: Storys, Erkenntnisse und Erfahrungen, die das Mixed Reality Team auf dem Weg gefunden und gelernt hat.
 author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality, hololens, Fallstudie, Vision, Szenarios, Fallstudien, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+keywords: Windows Mixed Reality, HoloLens, Fallstudie, Vision, Szenarien, Fallstudien, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: a9a2cc3ed32d6a0f28a639fbbbb468930941e47afc5b8a0d35bb43b2c86144ff
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209908"
 ---
 # <a name="case-study-gallery"></a>Katalog der Fallstudien
 
-Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden hat
+Storys, Erkenntnisse und Erfahrungen, die das Mixed Reality Team auf dem Weg gefunden und gelernt hat.
 
 :::row:::
     :::column:::
-       Ford [ ![ GT40 erleben](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) von **[Ford GT40](../develop/unreal/unreal-ford-gt40.md)**<br>
-        Diese Fallstudie ermöglicht es Ihnen, mit dem legendären Race-AR zu beginnen, das Ferrari in den 1966 24 Stunden von Le Mans Race schlägt, da der Ford GT40 in der Tabelle vor ihnen leben kann.<br>
+       [ ![ Ford GT40-Benutzeroberfläche](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) **[Ford GT40-Benutzeroberfläche](../develop/unreal/unreal-ford-gt40.md)**<br>
+        Mit dieser Fallstudie können Sie sich dem 1966 24-Stunden-Race von Le Mans nähern, als der Ford GT40-Fahrer sich auf dem Tisch vor Ihnen befindet.<br>
         *Februar 2021*
     :::column-end:::
     :::column:::
-       [ ![ Geräte übergreifende Skalierung von DataSet mit unterschiedlichen Leistungsmetriken](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) für **[Geräte mit unterschiedlicher Leistung](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        Diese Fallstudie bietet Einblicke in die Art und Weise, wie Microsoft-Entwickler die datascape-App optimiert haben, um eine überzeugende Geräte übergreifende Darstellung mit einer Reihe von Leistungs Funktionen zu bieten<br>
+       [ ![ Skalieren von Datascape auf Geräten mit unterschiedlicher Leistung](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[Skalieren von Datascape auf Geräten mit unterschiedlicher Leistung](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        Diese Fallstudie bietet Erkenntnisse darüber, wie Microsoft-Entwickler die Datascape-App optimiert haben, um eine überzeugende Benutzeroberfläche für Geräte mit einer Reihe von Leistungsfunktionen bereitzustellen.<br>
         *August 2017*
     :::column-end:::
     :::column:::
-       [ ![ Erstellen von holosketch, eine APP für das räumliche Layout und eine UX-App für hololens Erstellen von](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[holosketch, ein räumliches Layout und eine UX-skizzieren-App für hololens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
-        Holosketch ist ein auf dem Gerät räumliches Layout und UX-skeshottool für hololens, das Sie bei der Erstellung von Holographic-Erfahrungen unterstützt.<br>
+       [ ![ Erstellen von HoloSketch, einer App für räumliches Layout und UX-Skizzierung für HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) Building **[HoloSketch, einem räumlichen Layout und einer UX-Skizzierungs-App für HoloLens](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+        HoloSketch ist ein räumliches Layout und UX-Skizzierungstool für HoloLens, um holografische Erfahrungen zu erstellen.<br>
          *Juli 2017*
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Verwenden der Stabilisierungs Ebene zum Verringern von Holographic-Turbulenzen](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[mithilfe der Stabilisierungs Ebene, um holografische Turbulenzen zu verringern](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
-        Das Arbeiten mit holograms kann schwierig sein. Die Tatsache, dass Sie Ihren Raum verschieben und die Hologramme aus allen verschiedenen Winkeln anzeigen können, bietet eine Ebene des einfügebens, die Sie nicht mit einem normalen Computerbildschirm erreichen können.<br>
+       [ ![ Verwenden der Stabilisierungsebene zur Reduzierung holografischer Schwankungen](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md) **[Mithilfe der Stabilisierungsebene zur Reduzierung holografischer Schwankungen](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)**<br>
+        Das Arbeiten mit Hologrammen kann schwierig sein. Die Tatsache, dass Sie sich in Ihrem Raum bewegen und Ihre Hologramme aus allen verschiedenen Winkeln sehen können, bietet ein Immersionsniveau, das Sie mit einem normalen Computerbildschirm nicht erreichen können.<br>
         *April 2017*
     :::column-end:::
     :::column:::
-       [ ![ Erweitern der räumlichen Mapping-Funktionen von hololens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[Erweitern der räumlichen Mapping-Funktionen von hololens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
-        Beim Erstellen unserer ersten Apps für Microsoft hololens waren wir gespannt darauf zu sehen, wie weit wir die Grenzen der räumlichen Zuordnung auf dem Gerät Übertragung konnten.<br>
+       [ ![ Erweitern der Räumlichen Zuordnungsfunktionen von HoloLens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) Erweitern der **[Räumlichen Zuordnungsfunktionen von HoloLens](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
+        Beim Erstellen unserer ersten Apps für Microsoft HoloLens wollten wir sehen, wie weit wir die Grenzen der räumlichen Zuordnung auf dem Gerät verschieben können.<br>
         *Dezember 2016*
     :::column-end:::
     :::column:::
-       [ ![ Lektionen aus den Küchen](images/lowes.jpg)](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md) Lektionen von Lowe **[von der Lowe-Küche](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md)**<br>
-        Das hololens-Team möchte einige bewährte Methoden gemeinsam nutzen, die aus dem hololens-Projekt von Lowe abgeleitet wurden.<br>
+       [ ![ Lektionen aus der Lowe es-Kita](images/lowes.jpg)](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md) **[Lektionen aus der Lowe es Wirt](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md)**<br>
+        Das HoloLens-Team möchte einige der bewährten Methoden teilen, die aus dem HoloLens-Projekt von Lowe abgeleitet wurden.<br>
         *September 2016*
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Erstellen eines immersiven Erlebnisses in Fragmenten](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[Erstellen einer immersiven Darstellung in Fragmenten](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        Fragmente sind ein interaktives Kriminalitäts Drama für Microsoft hololens, bei dem Sie die Hinweise zum Lösen eines Geheimnisses befolgen, das in Ihrem realen Raum stattfindet.<br>
+       [ ![ Erstellen einer immersiven Benutzeroberfläche in Fragmenten](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md) **[Erstellen einer immersiven Benutzeroberfläche in Fragmenten](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        Fragmente sind ein interaktivesDelikt für Microsoft HoloLens, bei dem Sie den Hinweisen folgen, um ein Häufchen zu lösen, das sich in Ihrem realen Raum abspielt.<br>
         *August 2016*
     :::column-end:::
     :::column:::
-       [ ![ 3 holostudio UI and Interaktionsdesign Erkenntnisse](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 holostudio UI and Interaktionen Design Erkenntnisse](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        Holostudio war eine der ersten Apps für hololens. Aus diesem Grund mussten wir neue bewährte Methoden für die 3D-Benutzeroberfläche und den Interaktions Entwurf erstellen. Wir haben dies durch Benutzer Tests, Prototypen und Test-und Fehler Tests durchgeführt.<br>
+       [ ![ 3 HoloStudio Ui and Interaction Design Learnings](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio UI and interaction design learnings](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio war eine der ersten Apps für HoloLens. Aus diesem Grund mussten wir neue bewährte Methoden für die 3D-Benutzeroberfläche und den Interaktionsentwurf erstellen. Wir haben dies durch Benutzertests, Prototyperstellung und Testversion und Fehler durchgeführt.<br>
         *Juli 2016*
     :::column-end:::
     :::column:::
@@ -72,17 +72,17 @@ Stories, Erkenntnisse und Erfahrungen, die das gemischte Reality-Team gefunden h
 
 ## <a name="galaxy-explorer"></a>Galaxy Explorer
 
-Bevor Microsoft hololens ausgeliefert wurde, fragten wir unsere Entwickler Community, welche Art von APP Ihnen einen erfahrenen internen TeamBuild für das neue Gerät bereitstellen möchte. Mehr als 5000 Ideen wurden freigegeben, und nach einer 24-stündigen Twitter-Umfrage war der Gewinner eine Idee namens "Galaxy Explorer".
+Bevor Microsoft HoloLens ausgeliefert wurde, haben wir unsere Entwicklercommunity gefragt, welche Art von App sie wünschen, um einen erfahrenen internen Teambuild für das neue Gerät zu sehen. Mehr als 5.000 Ideen wurden geteilt, und nach einer 24-Stunden-Twitter-Umfrage war der Gewinner eine Idee namens Galaxy Explorer.
 
 :::row:::
     :::column:::
-       [ ![ Erstellen einer Galaxy-Mischung in gemischter Realität](images/full-galaxy-500px.png)](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md) **[](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)**<br>
-        Bevor Microsoft hololens ausgeliefert wurde, fragten wir unsere Entwickler Community, welche Art von APP Ihnen einen erfahrenen internen TeamBuild für das neue Gerät bereitstellen möchte. Mehr als 5000 Ideen wurden freigegeben, und nach einer 24-stündigen Twitter-Umfrage war der Gewinner eine Idee namens "Galaxy Explorer".<br>
+       [ ![ Erstellen einer Galaxy in Mixed Reality](images/full-galaxy-500px.png)](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md) Erstellen einer Galaxy in Mixed **[Reality](../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)**<br>
+        Bevor Microsoft HoloLens ausgeliefert wurde, haben wir unsere Entwicklercommunity gefragt, welche Art von App sie wünschen, um einen erfahrenen internen Teambuild für das neue Gerät zu sehen. Mehr als 5.000 Ideen wurden geteilt, und nach einer 24-Stunden-Twitter-Umfrage war der Gewinner eine Idee namens Galaxy Explorer.<br>
          *Februar 2016*
     :::column-end:::
     :::column:::
-       [ ![ Die Erstellung von Galaxy Explorer für hololens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) **[das Erstellen von Galaxy Explorer für hololens 2](../develop/unity/galaxy-explorer-update.md)**<br>
-        Willkommen bei der Vorgehensweise beim Aktualisieren von Galaxy Explorer für hololens 2. Der Galaxy Explorer wurde ursprünglich als Open-Source-Anwendung für hololens (1. Generation) durch das Teilen Ihres Ideen Programms entwickelt und ist eine der ersten gemischten Szenarien, in denen viele Personen sich befinden. Nun aktualisieren wir Sie für die neuen Funktionen von hololens 2.<br>
+       [ ![ Making of Galaxy Explorer for HoloLens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) The Making of Galaxy Explorer for **[HoloLens 2](../develop/unity/galaxy-explorer-update.md)**<br>
+        Willkommen bei der Aktualisierung von Galaxy Explorer für HoloLens 2. Galaxy Explorer wurde ursprünglich als Open-Source-Anwendung für HoloLens (1. Generation) über das Share Your Idea-Programm entwickelt und ist eine der ersten Mixed Reality-Erfahrungen, die viele Menschen hatten. Jetzt aktualisieren wir es für die neuen Funktionen von HoloLens 2.<br>
         *Juni 2019*
     :::column-end:::
     :::column:::
@@ -91,43 +91,43 @@ Bevor Microsoft hololens ausgeliefert wurde, fragten wir unsere Entwickler Commu
 
 ---
 
-## <a name="holotour"></a>Holotour
+## <a name="holotour"></a>HoloTour
 
-Holotour für Microsoft hololens bietet immersive persönliche 3D-Touren von berühmten Standorten auf der ganzen Welt. Wie Designer, Entwickler, Producer, audiodesigner und Entwickler, die an diesem Projekt arbeiten, haben Sie herausgefunden. das Erstellen eines überzeugender realen 3D-Renderings eines bekannten Standorts ist eine einzigartige Mischung aus Creative und Logical Wizardry.
+HoloTour für Microsoft HoloLens bietet immersive persönliche 3D-3D-Orte mit einzigartigen Orten auf der ganzen Welt. Wie die Designer, Interpreten, Producer, Audiodesigner und Entwickler, die an diesem Projekt arbeiten, erkannt haben, ist die Erstellung eines echten 3D-Renderings eines bekannten Orts eine einzigartige Mischung aus kreativer und technologischer Assistenten.
 
 :::row:::
     :::column:::
-       [ ![ Räumlicher Sound Entwurf für](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) das **[räumliche Audiodesign von holotour für holotour](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
-        Zum Erstellen einer wahrhaft immersiven 3D-Tour für Microsoft hololens sind die Panorama Videos und Holographic-Kulissen nur Teil der Formel.<br>
+       [ ![ Räumlicher Soundentwurf für HoloTour](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[Spatial sound design for HoloTour (Raumklangdesign für HoloTour)](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
+        Um eine wirklich immersive virtuelle 3D-Tour für Microsoft HoloLens zu erstellen, sind die beeindruckenden Videos und holografischen Landschaften nur Teil der Formel.<br>
          *August 2016*
     :::column-end:::
     :::column:::
-       [ ![ Erstellen von nicht möglichen Perspektiven für holotour](../out-of-scope/images/rome-colosseum-overlay-500px.png)](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md) **[Erstellen von nicht möglichen Perspektiven für holotour](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)**<br>
-        Wir wollten, dass Ihre Erfahrungen in holotour für hololens unvergesslich sind. Zusätzlich zu den herkömmlichen touristischen Stopps haben wir einige "unmögliche Perspektiven" eingeplant.<br>
+       [ ![ Erstellen unmöglicher Perspektiven für HoloTour](../out-of-scope/images/rome-colosseum-overlay-500px.png)](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md) **[Erstellen unmöglicher Perspektiven für HoloTour](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)**<br>
+        Wir wollten, dass Ihre Erfahrungen in HoloTour für HoloLens sehr willkommen sind. Zusätzlich zu den herkömmlichen Stationstopps haben wir einige "unmögliche Perspektiven" geplant.<br>
         *August 2016*
     :::column-end:::
     :::column:::
-       [ ![ Erfassen und Erstellen von Inhalten für](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) die **[Erfassung und Erstellung](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) von Inhalten für Machu Pichu holotour**<br>
-        Holotour bietet immersive persönliche 3D-Touren von berühmten Standorten auf der ganzen Welt. Wie wir herausgefunden haben, ist das Erstellen eines überzeugender realen 3D-Renderings eines bekannten Standorts eine Mischung aus Creative und Logical Wizardry.<br>
+       [ ![ Erfassen und Erstellen von Inhalten für pichu HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[Erfassen und Erstellen von Inhalten für HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
+        HoloTour bietet immersive, persönliche 3D-3D-Angebote mit beeindruckenden Orten auf der ganzen Welt. Wie wir festgestellt haben, ist die Erstellung eines echten 3D-Renderings eines bekannten Standorts eine Mischung aus kreativer und technologischer Assistenten.<br>
         *August 2016*
     :::column-end:::
 :::row-end:::
 
 ---
 
-## <a name="roboraid"></a>Roboraid
+## <a name="roboraid"></a>RoboRaid
 
-Verwenden Sie in diesem gemischten Reality-Ersteller den Augenblick und die Geste, um Feinde anzuzielen und den eingehenden Feuer mithilfe natürlicher Bewegungen zu umgehen. Die räumliche Zuordnung wandelt jeden Raum in eine eindeutige Spielebene um, während räumlicher Sound den gesamten Raum für die Wiedergabe verwenden kann – auch die dahinter liegenden Plätze.
+Verwenden Sie in dieser Mixed Reality-First-Person-Bewegung Anvieren und Gesten, um Aufständische anzuzielen, und dodgen Sie eingehenden Brand mithilfe natürlicher Bewegungen. Die räumliche Zuordnung wandelt jeden Raum in eine einzigartige Spielebene um, während Sie mit räumlichem Sound den gesamten Raum verwenden können, um zu spielen – sogar die Räume hinter Ihnen.
 
 :::row:::
     :::column:::
-       [ ![ Verwenden von räumlichem Sound in roboraid](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md) **[mit räumlichem Sound in roboraid](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
-        Räumlicher Sound ist eines der interessantesten Features von Microsoft hololens und bietet Benutzern die Möglichkeit, das Problem zu erkennen, wenn die Objekte nicht mehr in der Sicht sind.<br>
+       [ ![ Verwenden von räumlichem Sound in RoboRaid](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md) **[Mit räumlichem Sound in RoboRaid](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
+        Räumlicher Sound ist eines der interessantesten Features von Microsoft HoloLens und bietet Benutzern die Möglichkeit, zu erkennen, was um sie herum passiert, wenn Objekte sich außerhalb der Sichtlinie befinden.<br>
          *Februar 2016*
     :::column-end:::
     :::column:::
-       [ ![ Durchlaufen der Lücken in ihrer Realität](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md) **[](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
-        In dieser Fallstudie wird erläutert, wie der "Magic Window"-Effekt auf hololens implementiert wird, sodass der Benutzer hinter den Wänden, in der Etage und in virtuellen Öffnungen innerhalb der eigentlichen Umgebung sehen kann.<br>
+       [ ![ Durchsuchen von Löchern in Ihrer Realität](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md) Suchen nach **[Löchern in Ihrer Realität](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
+        In dieser Fallstudie wird erläutert, wie der Effekt "magisches Fenster" auf HoloLens implementiert wird, sodass der Benutzer hinter Wänden, unter dem Boden und in virtuellen Öffnungen innerhalb seiner tatsächlichen Umgebung sehen kann.<br>
         *Februar 2016*
     :::column-end:::
     :::column:::
@@ -136,32 +136,32 @@ Verwenden Sie in diesem gemischten Reality-Ersteller den Augenblick und die Gest
 
 ---
 
-## <a name="design-and-human-experience"></a>Design und Personal
+## <a name="design-and-human-experience"></a>Design und menschliche Erfahrung
 
-Lesen Sie unsere grundlegenden Gedanken, und verstehen Sie die folgenden Prinzipien.
+Lesen Sie unsere allgemeinen Überlegungen, und verstehen Sie die Prinzipien, die wir befolgen.
 
 :::row:::
     :::column:::
-       [ ![ Darstellung von Menschen in gemischter Realität](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) , die **[Menschen in gemischter Realität darstellen](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
-        Welche Chancen entstehen, wenn wir nicht nur fantastische Elemente erstellen können, sondern die realistischsten Erfassungen von Umgebungen, Objekten und Menschen in gemischter Realität verwenden?<br>
+       [ ![ Darstellen von Menschen in Mixed Reality](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md) Repräsentiert Menschen in Mixed **[Reality](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)**<br>
+        Welche Möglichkeiten ergeben sich, wenn wir nicht nur hervorragende Elemente erstellen, sondern die realistischsten Erfassungen von Umgebungen, Objekten und Personen in Mixed Reality verwenden können?<br>
          *November 2017*
     :::column-end:::
     :::column:::
-       [ ![ Mein erstes Jahr im hololens-Entwurfs Team](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md) **[mein erstes Jahr im hololens-Entwurfs Team](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
-        Mein Weg von einem 2D-Flatland zur 3D-Welt begann, als ich das hololens-Entwurfs Team im Januar 2016 antrat.<br>
+       [ ![ Mein erstes Jahr im HoloLens-Entwurfsteam](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md) **[Mein erstes Jahr im HoloLens-Entwurfsteam](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
+        Meine Reise von einer 2D-Flachland- in die 3D-Welt begann, als ich im Januar 2016 dem HoloLens-Designteam beigetreten bin.<br>
         *Januar 2016*
     :::column-end:::
     :::column:::
-       [ ![ Erfassen und Erstellen von Inhalten für](images/academyteam1000.png)](case-study-expanding-the-design-process-for-mixed-reality.md) die **[Erfassung und Erstellung von Inhalten](case-study-expanding-the-design-process-for-mixed-reality.md) für holotour**<br>
-        Fügen Sie Techniken zum Entwurfsprozess hinzu, damit Ihr Team räumlich und leichter in gemischte Umgebungen denkt.<br>
+       [ ![ Erfassen und Erstellen von Inhalten für HoloTour](images/academyteam1000.png)](case-study-expanding-the-design-process-for-mixed-reality.md) **[Erfassen und Erstellen von Inhalten für HoloTour](case-study-expanding-the-design-process-for-mixed-reality.md)**<br>
+        Hinzufügen von Techniken zu Ihrem Entwurfsprozess, damit Ihr Team räumliches Denken und eine einfachere Bereitstellung von Mixed Reality-Erfahrungen unterstützt.<br>
         *April 2018*
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ Prozess-, Prototyperstellung, Prototyperstellung, Erstellung](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md) der Nachfolgeversion, Erstellung **[von Prototypen, Erstellung](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
-        Zurzeit arbeiten wir mit Ihnen zusammen, um Ihre Ideen und Bestrebungen in konkrete, vollständig operative Produkte und Erfahrungen für den Markt zu verwandeln. Bevor wir jedoch eine einzelne Codezeile schreiben, erstellen wir eine Blaupause durch einen Prozess namens "Projekt".<br>
+       [ ![ AfterNow es process - envisioning, prototyping, building](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md) **[AfterNow es process - envisioning, prototyping, building](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
+        Bei AfterNow arbeiten wir mit Ihnen zusammen, um Ihre Ideen und Ziele in konkrete, vollständig betriebsbereite Produkte und Markterfahrungen umzuwandeln. Bevor wir jedoch eine einzelne Codezeile schreiben, erstellen wir eine Blaupause über einen Prozess namens "envisioning".<br>
         *April 2017*
     :::column-end:::
     :::column:::

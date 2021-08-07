@@ -1,18 +1,18 @@
 ---
-title: Hinzufügen von Nahezu-Interaktivität
+title: Hinzufügen von nähebezogener Interaktivität
 description: Dokumentation zur nahezuen Interaktion in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Near Interaction,
-ms.openlocfilehash: 241425f0c158d684cad6dad8c88c8d692cbec42f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 174623ebf340e800848c15e22dc2299aaf997b484a1329d67c28540acd79515a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212596"
 ---
-# <a name="how-to-add-near-interactivity"></a>Hinzufügen von Nahezu-Interaktivität
+# <a name="how-to-add-near-interactivity"></a>Hinzufügen von nähebezogener Interaktivität
 
 Nahinteraktionen erfolgen in Form von Berührungen und Greifen. Berührungs- und Tastenereignisse werden als Zeigerereignisse von [Der PointePointer](pointers.md#pokepointer) bzw. [SpherePointer](pointers.md#spherepointer)ausgelöst.
 
@@ -36,13 +36,13 @@ Drei wichtige Schritte sind erforderlich, um auf Touch- und/oder Eingabeereignis
 
 1. Fügen Sie auf dem GameObject, das ziehbar sein soll, sowohl einen [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) als auch einen Collider hinzu.
 
-    Stellen Sie sicher, dass sich die Ebene des GameObject auf einer gierbaren Ebene befindet. Standardmäßig können alle Ebenen außer *Räumliche Wahrnehmung* und *Raycasts ignorieren* gepackt werden. Überprüfen Sie die *Grab Layer Masks* in Ihrem *GrabPointer-Prefab,* um zu überprüfen, welche Ebenen gepackt werden können.
+    Stellen Sie sicher, dass sich die Ebene des GameObject auf einer gierbaren Ebene befindet. Standardmäßig sind alle Ebenen außer *räumlicher Wahrnehmung* und *Ignore Raycasts* greifend. Überprüfen Sie die *Grab Layer Masks* in Ihrem *GrabPointer-Prefab,* um zu überprüfen, welche Ebenen gepackt werden können.
 
 1. Fügen Sie auf dem GameObject oder einem seiner Vorgänger eine Skriptkomponente hinzu, die die [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler) -Schnittstelle implementiert. Jeder Vorgänger des -Objekts mit dem [`NearInteractionGrabbable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionGrabbable) kann auch Zeigerereignisse empfangen.
 
-### <a name="grab-code-example"></a>Beispiel für den Codegrabber
+### <a name="grab-code-example"></a>Beispiel für Den Code greifen
 
-Im Folgenden finden Sie ein Skript, das gedruckt wird, wenn es sich bei einem Ereignis um eine Toucheingabe oder ein Greifen handelt. In der relevanten *IMixedRealityPointerHandler-Schnittstellenfunktion* kann der Typ des Zeigers betrachtet werden, der dieses Ereignis über die [`MixedRealityPointerEventData`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerEventData) auslöst. Wenn der Zeiger ein *SpherePointer* ist, ist die Interaktion ein Greifen.
+Im Folgenden finden Sie ein Skript, das gedruckt wird, wenn es sich bei einem Ereignis um eine Toucheingabe oder ein Greifen handelt. In der relevanten *IMixedRealityPointerHandler-Schnittstellenfunktion* kann der Typ des Zeigers betrachtet werden, der dieses Ereignis über den [`MixedRealityPointerEventData`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityPointerEventData) auslöst. Wenn der Zeiger ein *SpherePointer* ist, ist die Interaktion ein Greifen.
 
 ```c#
 public class PrintPointerEvents : MonoBehaviour, IMixedRealityPointerHandler
@@ -69,15 +69,15 @@ public class PrintPointerEvents : MonoBehaviour, IMixedRealityPointerHandler
 
 Der Prozess zum Hinzufügen von Touchinteraktionen für UnityUI-Elemente unterscheidet sich von der Vorgehensweise für 3D-GameObjects von Vane. Sie können mit dem folgenden Abschnitt( *Unity UI*) zum Aktivieren von Komponenten der Unity-Benutzeroberfläche springen.
 
-Stellen Sie jedoch für **beide** Arten von UX-Elementen sicher, dass ein Element vom Typ ["PointerePointer"](pointers.md#pokepointer) im *MRTK-Zeigerprofil* registriert ist.
+Stellen Sie jedoch für **beide** Arten von UX-Elementen sicher, dass ein [PointerePointer](pointers.md#pokepointer) im *MRTK-Zeigerprofil* registriert ist.
 
-Das MRTK-Standardprofil und das Standardprofil für HoloLens 2 enthalten bereits ein *Von-Pointer-Profil.* Sie können bestätigen, dass ein PointerePointer erstellt wird, indem Sie das MRTK-Konfigurationsprofil auswählen und zu  >  **Eingabezeigerzeigeroptionen**  >  navigieren. Das `PokePointer` Standard-Prefab (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) sollte mit dem *Controllertyp* *"Artikulierte Hand"* aufgelistet werden. Ein benutzerdefiniertes Prefab kann verwendet werden, solange es die [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) -Klasse implementiert.
+Das MRTK-Standardprofil und das Standardprofil für HoloLens 2 enthalten bereits einen *Derpointer*. Sie können bestätigen, dass ein PointerePointer erstellt wird, indem Sie das MRTK-Konfigurationsprofil auswählen und zu  >  **Eingabezeigerzeigeroptionen**  >  navigieren. Das `PokePointer` Standard-Prefab (Assets/MRTK/SDK/Features/UX/Prefabs/Pointers) sollte mit dem *Controllertyp* *"Artikulierte Hand"* aufgelistet werden. Ein benutzerdefiniertes Prefab kann verwendet werden, solange es die [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) -Klasse implementiert.
 
 ![Beispiel für Zeigerprofil](../images/input/Pointers/PokePointer_MRTKProfile.png)
 
 ### <a name="3d-gameobjects"></a>3D GameObjects
 
-Es gibt zwei verschiedene Möglichkeiten, Touchinteraktionen zu 3D GameObjects hinzuzufügen, je nachdem, ob Ihr 3D-Objekt nur eine einzelne touchierbare Ebene haben soll, oder davon, ob es basierend auf seinem gesamten Collider touchierbar sein soll.
+Es gibt zwei verschiedene Möglichkeiten, 3D-GameObjects Touchinteraktionen hinzuzufügen, je nachdem, ob Ihr 3D-Objekt nur eine einzelne touchierbare Ebene haben soll, oder ob es basierend auf seinem gesamten Collider touchierbar sein soll.
 Die erste Möglichkeit besteht in der Regel in Objekten mit BoxColliders, bei denen nur ein einzelnes Gesicht des Colliders auf Berührungsereignisse reagieren soll. Die andere ist für Objekte, die je nach Collider aus beliebiger Richtung erreichbar sein müssen.
 
 ### <a name="single-face-touch"></a>Toucheingabe mit einzelnem Gesicht
@@ -96,12 +96,12 @@ Dies ist nützlich, um Situationen zu ermöglichen, in denen nur ein einzelnes G
    Schnittstelle implementiert. Alle Vorgänger des Objekts mit dem `NearInteractionTouchable` [] (xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) können ebenfalls Zeigerereignisse empfangen.
 
 > [!NOTE]
-> Beachten Sie in der Editor-Szenenansicht, in der *nearInteractionTouchable* GameObject ausgewählt ist, ein weißes Konturquadrat und einen Pfeil. Der Pfeil zeigt auf die "Front" des touchierbaren . Das kollisionsfähige ist nur von dieser Richtung aus erreichbar. Informationen zum Touchieren eines Colliders aus allen Richtungen finden Sie im Abschnitt zu [beliebigen Collidereingaben.](#arbitrary-collider-touch)
+> Beachten Sie in der Szenenansicht des Editors, in der *nearInteractionTouchable* GameObject ausgewählt ist, ein weißes Konturquadrat und einen Pfeil. Der Pfeil zeigt auf die "Front" des touchierbaren . Das kollisionsfähige ist nur von dieser Richtung aus erreichbar. Informationen zum Touchieren eines Colliders aus allen Richtungen finden Sie im Abschnitt zu [beliebigen Collidereingaben.](#arbitrary-collider-touch)
 > ![NearInteractionTouchable–Mos ](../images/input/Pointers/NearInteractionTouchableGizmos.png)
 
 ### <a name="arbitrary-collider-touch"></a>Beliebige Collider-Toucheingabe
 
-Dies ist nützlich, um Situationen zu ermöglichen, in denen das Spielobjekt entlang seines gesamten Collidergesichts berührt werden muss. Dies kann z. B. verwendet werden, um Touchinteraktionen für ein Objekt mit einem SphereCollider zu aktivieren, wobei der gesamte Collider touchierbar sein muss.
+Dies ist nützlich, um Situationen zu ermöglichen, in denen das Spielobjekt entlang seines gesamten Collidergesichts berührt werden muss. Dies kann z. B. verwendet werden, um Touchinteraktionen für ein Objekt mit einem SphereCollider zu aktivieren, wobei der gesamte Collider berührt werden muss.
 
 1. Fügen Sie auf dem GameObject, das touchierbar sein soll, einen Collider und eine `NearInteractionTouchableVolume` [] (xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableVolume)-Komponente hinzu.
 

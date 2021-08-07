@@ -1,32 +1,32 @@
 ---
-ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fb8b5b509ef83e2a4f9d978dbf0faebbf3e0be1d10d6697f16cfb9366d7a2edb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717725"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187420"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
-Um die Daten für die Hand-Strahlen zu erhalten, sollten Sie die Get Motion Controller-Daten Funktion aus dem vorherigen Abschnitt verwenden. Die zurückgegebene Struktur enthält zwei Parameter, die Sie verwenden können, um eine Hand Strahl-– **Ziel Position** und **Ziel Drehung** zu erstellen. Diese Parameter bilden einen Strahl, der von Ihrem Bogen gesteuert wird. Sie sollten diese übernehmen und ein – Hologramm finden, auf das verweist.
+Um die Daten für den Handlichtstrahl abzurufen, sollten Sie die Funktion Get Motion Controller Data (Bewegungscontrollerdaten abrufen) aus dem vorherigen Abschnitt verwenden. Die zurückgegebene Struktur enthält zwei Parameter, die Sie zum Erstellen eines Handstrahls verwenden können: **Zielposition** und **Zielrotation.** Diese Parameter bilden einen Strahl, der vom Ellenbogen geleitet wird. Sie sollten sie aufnehmen und ein Hologramm finden, auf das gezeigt wird.
 
-Im folgenden finden Sie ein Beispiel für die Bestimmung, ob ein Hand Strahl auf ein Widget trifft und ein benutzerdefiniertes Treffer Ergebnis festlegt:
+Im Folgenden finden Sie ein Beispiel für die Bestimmung, ob ein Handstrahl auf ein Widget trifft und ein benutzerdefiniertes Trefferergebnis festlegt:
 
-![Blaupause der Get Motion Controller-Daten Funktion](../images/unreal-hand-tracking-img-04.png) 
+![Blaupause für die Datenfunktion "Bewegungscontroller abrufen"](../images/unreal-hand-tracking-img-04.png) 
 
 # <a name="425"></a>[4.25](#tab/425)
 
-Um Hand Abdrücke in Blaupausen zu verwenden, suchen Sie nach den Aktionen unter **Windows Mixed Reality HMD**:
+Um Handstrahl in Blaupausen zu verwenden, suchen Sie nach einer der Aktionen unter **Windows Mixed Reality HMD**:
 
-![Hand Strahlen-BP](../images/unreal/hand-rays-bp.png)
+![Hand ray BP](../images/unreal/hand-rays-bp.png)
 
-Wenn Sie in C++ auf Sie zugreifen möchten, schließen Sie am `WindowsMixedRealityFunctionLibrary.h` Anfang der aufrufenden Codedatei ein.
+Um in C++ darauf zuzugreifen, schließen `WindowsMixedRealityFunctionLibrary.h` Sie am Anfang der aufrufenden Codedatei ein.
 
 ### <a name="enum"></a>Enumeration
 
-Sie haben auch Zugriff auf die Eingabe Fälle unter **ehmdinputcontrollerbuttons**, die in Blaupausen verwendet werden können:
+Sie haben auch Zugriff auf Eingabefälle unter **EHMDInputControllerButtons,** die in Blaupausen verwendet werden können:
 
-![Eingabe Controller-Schaltflächen](../images/unreal/input-controller-buttons.png)
+![Eingabecontroller-Schaltflächen](../images/unreal/input-controller-buttons.png)
 
 Verwenden Sie für den Zugriff in C++ die `EHMDInputControllerButtons` Enumerationsklasse:
 ```cpp
@@ -38,14 +38,14 @@ enum class EHMDInputControllerButtons : uint8
 };
 ```
 
-Im folgenden finden Sie eine Aufschlüsselung der beiden anwendbaren Aufzählungs Fälle:
+Im Folgenden finden Sie eine Aufschlüsselung der beiden anwendbaren Enumerationsfälle:
 
-* **Select** -User hat Select-Ereignis ausgelöst.
-    * Ausgelöst in hololens 2 durch Luft tippen, Überblicks und Commit oder durch "Select" mit aktivierter [Spracheingabe](../unreal-voice-input.md) .
-* Das von Benutzern ausgelöste Ereignis **zum Erfassen von** Ereignissen.
-    * Wird in hololens 2 ausgelöst, indem die Finger des Benutzers in einem Hologram geschlossen werden.
+* **Wählen Sie** – Vom Benutzer ausgelöstes Select-Ereignis aus.
+    * Wird in HoloLens 2 ausgelöst, indem auf die Luft tippt, anviert und committet oder "Auswählen" mit aktivierter [Spracheingabe](../unreal-voice-input.md) angezeigt wird.
+* **Greifen:** Vom Benutzer ausgelöstes Ereignis "Greifen".
+    * Wird in HoloLens 2 ausgelöst, indem die Finger des Benutzers auf einem Hologramm geschlossen werden.
 
-Sie können auf den Überwachungs Status Ihres Hand Netzes in C++ über die unten gezeigte Aufzählung zugreifen `EHMDTrackingStatus` :
+Sie können auf den Nachverfolgungsstatus Ihres Handgitternetzes in C++ über die `EHMDTrackingStatus` unten gezeigte Enumeration zugreifen:
 
 ```cpp
 enum class EHMDTrackingStatus : uint8
@@ -56,24 +56,24 @@ enum class EHMDTrackingStatus : uint8
 };
 ```
 
-Im folgenden finden Sie eine Aufschlüsselung der beiden anwendbaren Aufzählungs Fälle:
+Im Folgenden finden Sie eine Aufschlüsselung der beiden anwendbaren Enumerationsfälle:
 
-* **Notverfolgt** – die Hand ist nicht sichtbar.
-* Nach **verfolgte** –: die Hand ist vollständig nachverfolgt.
+* **NotTracked** : Die Hand ist nicht sichtbar
+* **Nachverfolgt** – die Hand ist vollständig nachverfolgt.
 
 ### <a name="struct"></a>Struktur
 
-Die pointerposeinfo-Struktur kann Ihnen Informationen zu den folgenden Daten liefern:
+Die PointerPoseInfo-Struktur kann Ihnen Informationen zu den folgenden Handdaten liefern:
 
-* **Ursprung** – Ursprung der Hand
-* **Richtung** – Richtung der Hand
-* **Up** – Up Vector of the Hand
-* **Ausrichtung** – Ausrichtung Quaternion
-* **Überwachungs Status** – aktueller Überwachungs Status
+* **Ursprung:** Ursprung der Hand
+* **Richtung** : Richtung der Hand
+* **Nach** oben – Nach oben Vektor der Hand
+* **Ausrichtung** : Ausrichtungsquaternion
+* **Nachverfolgungsstatus** – aktueller Nachverfolgungsstatus
 
-Sie können auf die pointerposeinfo-Struktur über Blaupausen zugreifen, wie unten dargestellt:
+Sie können wie unten dargestellt über Blaupausen auf die PointerPoseInfo-Struktur zugreifen:
 
-![Zeiger stellen Informationen BP dar](../images/unreal/pointer-pose-info-bp.png)
+![Zeigerposeinfo BP](../images/unreal/pointer-pose-info-bp.png)
 
 Oder mit C++:
 
@@ -90,57 +90,57 @@ struct FPointerPoseInfo
 
 ### <a name="functions"></a>Functions
 
-Alle unten aufgeführten Funktionen können für jeden Frame aufgerufen werden, der eine kontinuierliche Überwachung ermöglicht.
+Alle unten aufgeführten Funktionen können für jeden Frame aufgerufen werden, was eine kontinuierliche Überwachung ermöglicht.
 
-1. **Get Pointer Pose Info** gibt alle Informationen über die Richtung des Hand Gers im aktuellen Frame zurück.
+1. **Get Pointer Pose Info** gibt vollständige Informationen zur Handstrahlrichtung im aktuellen Frame zurück.
 
-Karte
+Blueprint:
 
-![Informationen zum Darstellen von Zeigern](../images/unreal/get-pointer-pose-info.png)
+![Get Pointer Pose Info](../images/unreal/get-pointer-pose-info.png)
 
 C++:
 ```cpp
 static FPointerPoseInfo UWindowsMixedRealityFunctionLibrary::GetPointerPoseInfo(EControllerHand hand);
 ```
 
-2. **Ist** "-Wert" gibt "true" zurück, wenn die Hand im aktuellen Frame erfasst wird.
+2. **Is Grasped** gibt TRUE zurück, wenn die Hand im aktuellen Frame erkannt wird.
 
-Karte
+Blueprint:
 
-![Erfasste BP](../images/unreal/is-grasped-bp.png)
+![Is Grasped BP](../images/unreal/is-grasped-bp.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityFunctionLibrary::IsGrasped(EControllerHand hand);
 ```
 
-3. **Ist SELECT gedrückt** gibt true zurück, wenn der Benutzer SELECT im aktuellen Frame ausgelöst hat.
+3. **Wählen Sie Gedrückt** gibt true zurück, wenn der Benutzer Im aktuellen Frame Auswählen ausgelöst hat.
 
-Karte
+Blueprint:
 
-![Ist SELECT-Taste für BP](../images/unreal/is-select-pressed-bp.png)
+![Is Select Pressed BP](../images/unreal/is-select-pressed-bp.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityFunctionLibrary::IsSelectPressed(EControllerHand hand);
 ```
 
-4. **Wird auf die Schaltfläche "wird geklickt** " zurückgegeben, wenn das Ereignis oder die Schaltfläche im aktuellen Frame ausgelöst wird
+4. **Ist Schaltfläche Geklickt** gibt TRUE zurück, wenn das Ereignis oder die Schaltfläche im aktuellen Frame ausgelöst wird.
 
-Karte
+Blueprint:
 
-![Ist Schaltfläche, auf die ein](../images/unreal/is-button-clicked-bp.png)
+![Is Button Clicked BP](../images/unreal/is-button-clicked-bp.png)
 
 C++:
 ```cpp
 static bool UWindowsMixedRealityFunctionLibrary::IsButtonClicked(EControllerHand hand, EHMDInputControllerButtons button);
 ```
 
-5. **Get Controller Tracking Status** gibt den verfolgungsstatus im aktuellen Frame zurück.
+5. **Get Controller Tracking Status** gibt den Nachverfolgungsstatus im aktuellen Frame zurück.
 
-Karte
+Blueprint:
 
-![Controller-Überwachungs Status-BP erhalten](../images/unreal/get-controller-tracking-status-bp.png)
+![Abrufen des Controllernachverfolgungsstatus BP](../images/unreal/get-controller-tracking-status-bp.png)
 
 C++:
 ```cpp

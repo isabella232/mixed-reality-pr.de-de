@@ -1,88 +1,88 @@
 ---
-title: Verwenden von spielen und apps in Windows Mixed Reality
-description: Erfahren Sie, wie Sie immersive und 2D-apps und Spiele starten, den Desktop anzeigen und webvr-und steamvr-Inhalte erleben.
+title: Verwenden von Spielen und Apps in Windows Mixed Reality
+description: Hier erfahren Sie, wie Sie immersive und 2D-Apps und -Spiele starten, den Desktop anzeigen und WebVR- und SteamVR-Inhalte erleben.
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, apps, Games, Desktop, steamvr, webvr, Steam
-ms.openlocfilehash: e277ede1af3e38d7f1525412431d9006092f93b6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Apps, Spiele, Desktop, SteamVR, WebVR, Steam
+ms.openlocfilehash: 6de20937204c8513819c5e2b8b2481cc3751143e5f8eeb4b27e33769ba2fc599
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212495"
 ---
-# <a name="using-games-and-apps-in-windows-mixed-reality"></a>Verwenden von spielen und apps in Windows Mixed Reality
+# <a name="using-games-and-apps-in-windows-mixed-reality"></a>Verwenden von Spielen und Apps in Windows Mixed Reality
 
-Windows Mixed Reality ist nur Windows, was bedeutet, dass Sie immersive Spiele ausführen können, die für Mixed Reality entwickelt wurden. Sie können auch alle regulären 2D-apps, die Sie kennen und schätzen, auf Ihrem Desktop ausführen (z. b. Candy Crush oder Photoshop/AutoCAD).
+Windows Mixed Reality ist einfach Windows, was bedeutet, dass Sie immersive Spiele ausführen können, die für Mixed Reality entwickelt wurden. Sie können auch alle regulären 2D-Apps ausführen, die Sie kennen und die Sie auf Ihrem Desktop (z. B. 1000 bzw. 2D-Apps) kennen und AutoCAD.
 
-## <a name="how-to-get-into-your-first-immersive-game"></a>Einstieg in Ihr erstes immersives Spiel
+## <a name="how-to-get-into-your-first-immersive-game"></a>So steigen Sie in Ihr erstes immersives Spiel ein
 
-1. Wechseln Sie zum Store Slate, das sich in der Windows Mixed Reality-Startseite befindet.
-2. Suchen Sie nach holotour.
-3. Herunterladen und installieren.
-4. Öffnen Sie das Mixed Reality-Startmenü, indem Sie die Windows-Taste auf Ihrem Controller (oder Windows-Taste auf der Tastatur) drücken. Suchen Sie nach holotour. Möglicherweise müssen Sie alle apps auswählen.
-5. Wählen Sie in Start die Option holotour aus, und platzieren Sie das Schiefer
-6. Mit holotour wird die Benutzerfunktion in Ihrem Headset gestartet.
+1. Wechseln Sie zur Store, die in der Startseite Windows Mixed Reality wird.
+2. Suchen Sie nach HoloTour.
+3. Laden Sie es herunter, und installieren Sie es.
+4. Öffnen Sie die Mixed Reality Startmenü, indem Sie Windows-Taste auf ihrem Controller drücken (oder Windows auf der Tastatur drücken). Suchen Sie nach HoloTour. Möglicherweise müssen Sie Alle Apps auswählen.
+5. Wählen Sie holoTour in Start aus, und platzieren Sie die Tafel.
+6. HoloTour startet die Erfahrung in Ihrem Headset!
 
-## <a name="how-to-place-your-first-2d-app-slate"></a>So platzieren Sie Ihre erste 2D-App Slate
+## <a name="how-to-place-your-first-2d-app-slate"></a>Platzieren Ihrer ersten 2D-App-Slate
 
-1. Wechseln Sie zum Store Slate, das sich in der Windows Mixed Reality-Startseite befindet.
-2. Suchen Sie nach ihrer bevorzugten 2D-app (z. b. Candy Crush).
-3. Herunterladen und installieren.
-4. Öffnen Sie das Mixed Reality-Startmenü, indem Sie auf den Controller (oder die Windows-Taste auf der Tastatur) drücken. Suchen Sie nach Candy Crush. Möglicherweise müssen Sie alle apps auswählen.
-5. Wählen Sie im Startmenü "Candy Crush" aus, und platzieren Sie das
-6. Sie können jetzt mit dem 2D-Slate interagieren, indem Sie Ihre Controller/Maus & Tastatur/Gamepad verwenden!
+1. Wechseln Sie zur Store, die in der Startseite Windows Mixed Reality wird.
+2. Suchen Sie nach Ihrer bevorzugten 2D-App (z.B. "2D-App" (z. B. "1000000000000").)
+3. Laden Sie es herunter, und installieren Sie es.
+4. Öffnen Sie die Mixed Reality Startmenü, indem Sie auf ihrem Controller auf Start drücken (oder Windows Auf der Tastatur drücken). Suchen Sie nach "Bonbons". Möglicherweise müssen Sie Alle Apps auswählen.
+5. Wählen Sie in Start Die Tafel aus, und platzieren Sie die Tafel.
+6. Sie können jetzt mit der 2D-Slate interagieren, indem Sie Ihre Controller/Maus-& Tastatur/Gamepad verwenden!
 
-## <a name="how-to-use-a-full-desktop-application"></a>Verwenden einer vollständigen Desktop Anwendung
+## <a name="how-to-use-a-full-desktop-application"></a>Verwenden einer vollständigen Desktopanwendung
 
-1. Öffnen Sie das Mixed Reality-Startmenü, indem Sie auf den Controller (oder die Windows-Taste auf der Tastatur) drücken. Suchen Sie nach Desktop Vorschau. Möglicherweise müssen Sie alle apps drücken.
-2. Wählen Sie im Startmenü Desktop Vorschau aus, und platzieren Sie das Schiefer.
-3. Sie können Ihren Desktop jetzt sehen!
-4. Wählen Sie das Schiefer aus, und verwenden Sie die Maus und Tastatur, um alle gewünschten vollständigen Desktop Anwendungen zu starten (z. b. Photoshop oder AutoCAD).
+1. Öffnen Sie die Mixed Reality Startmenü, indem Sie auf ihrem Controller auf Start drücken (oder Windows Auf der Tastatur drücken). Suchen Sie nach Desktopvorschau. Möglicherweise müssen Sie alle Apps drücken.
+2. Wählen Sie unter Start die Option Desktopvorschau aus, und platzieren Sie die Tafel.
+3. Sie können jetzt Ihren Desktop sehen!
+4. Wählen Sie die Tafel aus, und verwenden Sie Maus und Tastatur, um eine beliebige vollständige Desktopanwendung zu starten (z. B. <a0/&AutoCAD).
 
-## <a name="how-to-get-into-your-first-webvr-experience"></a>Vorgehensweise beim Einstieg in Ihre erste webvr-Benutzer Darstellung
+## <a name="how-to-get-into-your-first-webvr-experience"></a>Erste WebVR-Erfahrung
 
 1. Stellen Sie sicher, dass Ihr Headset angeschlossen ist und ihre Controller eingeschaltet und verbunden sind.
-2. Wechseln Sie zu Microsoft Edge Slate, das in gemischter Realität oder Microsoft Edge-Anwendung auf dem Windows-Desktop platziert ist.
-3. Navigieren Sie zu einer Website, die webvr unterstützt. Einige Beispiele:
-   * [Ein-Maler](https://aframe.io/a-painter/)
-   * [A-Blast](https://aframe.io/a-blast/)
-   * ["Schrätchfab"](https://sketchfab.com/)
+2. Wechseln Sie zur Microsoft Edge, die sich in der Mixed Reality befindet, oder Microsoft Edge anwendung auf dem Windows Desktop.
+3. Navigieren Sie zu einer Website, die WebVR unterstützt. Einige Beispiele:
+   * [A-1-Zeichner](https://aframe.io/a-painter/)
+   * [A-Explosion](https://aframe.io/a-blast/)
+   * [Sketchfab](https://sketchfab.com/)
    * [CNN/VR](https://cnn.com/vr)
-4. Wählen Sie die Schaltfläche "Enter VR" auf der Webseite aus. Dies könnte etwa wie folgt aussehen: \
-   ![VR-Brillen Bild](images/75px-enter-vr.png)
-5. Wenn Sie zum ersten Mal versuchen, VR in eine bestimmte Domäne einzugeben, fordert der Browser die Zustimmung zur Verwendung der immersiven Ansicht an. Wählen Sie ja: ![Benutzeroberfläche für Zustimmung, die beim ersten Versuch angezeigt wird, VR in eine bestimmte Domäne einzugeben](images/1053px-Webvr-consent-ui.png)
-6. Der webvr-Inhalt wird in Ihrem Headset gestartet!
+4. Wählen Sie auf der Webseite die Schaltfläche "VR eingeben" aus. Dies kann in etwa wie:\ aussehen.
+   ![VR Goggles-Bild](images/75px-enter-vr.png)
+5. Wenn Sie zum ersten Mal versuchen, VR in einer bestimmten Domäne einzuholen, wird der Browser zur Zustimmung zur Verwendung der immersiven Ansicht auffordern. Wählen Sie Ja aus: ![Zustimmungsbenutzeroberfläche, die beim ersten Versuch angezeigt wird, VR für eine bestimmte Domäne einzuholen](images/1053px-Webvr-consent-ui.png)
+6. Der WebVR-Inhalt wird in Ihrem Headset gestartet!
 
-**Hinweis:** Sie können webvr-Erlebnisse von Microsoft Edge entweder innerhalb von Windows Mixed Reality oder auf dem Windows-Desktop starten.
+**Hinweis:** Sie können WebVR-Funktionen über Microsoft Edge entweder innerhalb Windows Mixed Reality oder auf dem Windows starten.
 
-![Eingabe von VR von Microsoft Edge auf dem Desktop](images/450px-webvr-desktop.png)
+![Eingeben von VR Microsoft Edge auf dem Desktop](images/450px-webvr-desktop.png)
 
-Die Eingabe von VR von Microsoft Edge auf dem Desktop.
+Die Eingabe von VR Microsoft Edge auf dem Desktop.
 
-![Eingabe von VR von Microsoft Edge innerhalb des gemischten Realität cliffhouse](images/450px-enter-vr-cliffhouse.jpg)
+![Eingeben von VR aus Microsoft Edge im Mixed Reality House](images/450px-enter-vr-cliffhouse.jpg)
 
-Die Eingabe von VR von Microsoft Edge innerhalb der gemischten Realität cliffhouse.
+Eingabe von VR Microsoft Edge innerhalb des Mixed Reality House.
 
-**So lassen Sie eine webvr-Ober Arbeit zu:**
-* Drücken Sie die Windows-Taste auf einem Bewegungs Controller oder auf der Tastatur.
-* Drücken Sie auf der Tastatur die Escape-Taste.
-* Einige Seiten bieten möglicherweise eine Möglichkeit zum Beenden von VR innerhalb ihrer immersiven Darstellung.
-* Für Desktop Microsoft Edge:
-  * Schalten Sie Ihr Headset aus, und navigieren Sie zu einer anderen Browser Registerkarte.
-  * Einige Seiten verfügen möglicherweise über eine Schaltfläche auf der 2D-Website, um "Exit VR" zu beenden.
+**So verlassen Sie eine WebVR-Erfahrung:**
+* Drücken Sie die Windows auf einem Motion-Controller oder auf der Tastatur.
+* Drücken Sie die Escapetaste auf der Tastatur.
+* Einige Seiten bieten möglicherweise eine Möglichkeit, VR innerhalb ihrer immersiven Umgebung zu verlassen.
+* Für desktop Microsoft Edge:
+  * Deaktivieren Sie Ihr Headset, und wechseln Sie zu einer anderen Browserregisterkarte.
+  * Einige Seiten bieten möglicherweise eine Schaltfläche auf der 2D-Website zum Beenden von VR.
 
-## <a name="how-to-get-into-your-first-steamvr-experience"></a>Einstieg in die erste Verwendung von "steamvr"
+## <a name="how-to-get-into-your-first-steamvr-experience"></a>So machen Sie sich mit Ihrer ersten "SteamVR"-Erfahrung
 
-Windows Mixed Reality für steamvr ermöglicht Benutzern das Ausführen von steamvr-Umgebungen in Windows Mixed Reality-immersiven Headsets. Nachdem Sie Windows Mixed Reality für steamvr installiert haben, können Sie Ihre bevorzugten steamvr-Anwendungen über eine Desktop-oder eine Steam-Bibliothek starten und direkt auf Ihrem Windows-Headset abspielen.
+Windows Mixed Reality für SteamVR ermöglicht Benutzern das Ausführen von SteamVR-Umgebungen Windows Mixed Reality immersive Headsets. Nach der Installation von Windows Mixed Reality für SteamVR können Sie Ihre bevorzugten Anwendungen vom Computer aus über eine Desktop- oder Eine -Bibliothek starten und diese direkt auf dem Headset Windows wiedererspielen.
 
-Befolgen Sie zunächst die [Anleitungen für die Einrichtung von "steamvr" für Windows Mixed Reality](./using-steamvr-with-windows-mixed-reality.md).
+Um zu beginnen, befolgen Sie die Anweisungen zum Einrichten von [SteamVR für Windows Mixed Reality](./using-steamvr-with-windows-mixed-reality.md).
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-Wenn Sie mehr darüber erfahren möchten, wie Windows Mixed Reality funktioniert, können Sie auch folgendes lesen:
+Wenn Sie mehr über die Funktionsweise von Windows Mixed Reality erfahren möchten, können Sie sich auch über Folgendes interessieren:
 * [Ihre Mixed Reality-Startumgebung](your-mixed-reality-home.md)
 * [Nachverfolgungssystem](tracking-system.md)
 * [Motion-Controller](controllers-in-wmr.md)
 * [WebVR](webvr.md)
-* [Verwenden von "steamvr" mit Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
+* [Verwenden von SteamVR mit Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)
 * [Einreichen von Feedback](filing-feedback.md)

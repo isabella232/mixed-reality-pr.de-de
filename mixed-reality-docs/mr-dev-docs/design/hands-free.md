@@ -1,23 +1,23 @@
 ---
 title: Freihändig
-description: Erfahren Sie mehr über die Schwierigkeiten, die Benutzer mit einer Hand-und Controller Schnittstelle haben können, und über verschiedene Freihand freie Alternativen.
+description: Erfahren Sie mehr über die Schwierigkeiten, mit denen Benutzer möglicherweise mit einer Schnittstelle für Hände und Controller konfrontiert sind, und über verschiedene Freihandalternativen.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: Mixed Reality, Hands-Free, Gaze, Blick auf das Ziel, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Spracheingabe, Benutzerfreundlichkeit
-ms.openlocfilehash: 2864e58fdd8a29ae8f981b42f50735eb13a50869
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Mixed Reality, Freihand, Anvisieren, Anvisieren, Zielgruppenadressierung, Interaktion, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Spracheingabe, Benutzerfreundlichkeit
+ms.openlocfilehash: 725d8886d21b42ee4643680c0dc91c1d29c25f8409b0ed0828256564dde7545c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847683"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213534"
 ---
 # <a name="hands-free"></a>Freihändig
 
 ## <a name="scenarios"></a>Szenarien
 
-Wie in der [Übersicht über das Interaktionsmodell](interaction-fundamentals.md)erläutert, stellen Sie nach der Identifizierung Ihrer Benutzer und ihrer Ziele selbst fest, welche Umgebungs-oder situations Probleme bei der Ausführung ihrer Aufgaben auftreten können. Beispielsweise müssen viele Benutzer ihre Hände zum Erreichen Ihrer wirklichen Ziele verwenden, und Sie haben Schwierigkeiten bei der Interaktion mit einer auf der Basis-und Controller basierten Schnittstelle.
+Wie in der Übersicht über das [Interaktionsmodell](interaction-fundamentals.md)beschrieben, fragen Sie sich nach der Identifizierung Ihrer Benutzer und deren Ziele, welchen Umgebungs- oder Situationsproblemen sie möglicherweise gegenüberstehen, wenn sie ihre Aufgaben erfüllen. Beispielsweise müssen viele Benutzer ihre Hände verwenden, um ihre realen Ziele zu erreichen, und sie haben Schwierigkeiten bei der Interaktion mit einer auf Händen und Controllern basierenden Schnittstelle.
 
 Zu den spezifischen Szenarien gehören: 
 * Führung durch eine Aufgabe, während die Hände des Benutzers beschäftigt sind
@@ -25,72 +25,72 @@ Zu den spezifischen Szenarien gehören:
 * Ermüden der Hände
 * Handschuhe, die nicht nachverfolgt werden können
 * Tragen von Gegenständen in den Händen
-* Soziale Unbekümmertheit bei der Verwendung von großen Handgesten
+* Soziale Umständlichkeit bei der Verwendung großer Handgesten
 * Beengte Raumverhältnisse
 
-## <a name="hands-free-modalities"></a>Hände freie Modalitäten
+## <a name="hands-free-modalities"></a>Freihändige Verzeichnisse
 
 ### <a name="voice-input"></a>[Spracheingabe](voice-input.md)
 
-Die Verwendung Ihrer Stimme für die Befehls-und Steuerungsmöglichkeiten einer Schnittstelle bietet eine bequeme Möglichkeit, die Hände frei zu betreiben und Verknüpfungen zu verwenden, um mehrere Schritte bei Bedarf zu überspringen. Mit der Spracheingabe kann der Benutzer den Namen einer beliebigen Schaltfläche mit dem Namen "Loud" lesen, um ihn zu aktivieren _("See it, Say it")_ und sich mit einem Digital Agent zu informieren, der Aufgaben für Sie erledigen kann.
+Die Verwendung Ihrer Stimme zum Befehlen und Steuern einer Schnittstelle bietet eine bequeme Möglichkeit zum Ausführen von freihändigen Sprechfunktionen und zum Verwenden von Tastenkombinationen, um bei Bedarf mehrere Schritte zu überspringen. Mit der Spracheingabe kann der Benutzer den Namen einer beliebigen Schaltfläche laut vorlesen, um sie zu aktivieren _("sie sehen, sagen")_ und mit einem digitalen Agent kommunizieren, der Aufgaben für Sie erledigen kann.
 
 ### <a name="gaze-and-dwell"></a>[Anvisieren und Verweilen](gaze-and-dwell.md)
 
-In einigen praktischen Situationen ist die Verwendung Ihrer Stimme nicht ideal oder gar nicht möglich. Laute Factory-Umgebungen, Datenschutz oder soziale Standards können Einschränkungen aufweisen. Mit dem "Eye + Dwell"-Modell kann der Benutzer durch eine APP navigieren, ohne dass zusätzliche Eingaben von der Augen-oder Kopfzeile entfernt werden: der Benutzer sorgt einfach dafür, dass er sich am Ziel befindet, und er wird für einen Moment zum Aktivieren des Ziels angezeigt. Weitere Informationen zu den einzelnen Entwurfs Überlegungen für "Blick" und "Wohnen" finden Sie unter " [Eye-Eye](gaze-and-dwell-eyes.md) " und "Wohnen" und " [Kopf-](gaze-and-dwell-head.md)und neben schauen"
+In einigen Situationen ohne Hände ist die Verwendung Ihrer Stimme nicht ideal oder sogar möglich. Laute Fabrikumgebungen, Datenschutz oder soziale Normen können Einschränkungen sein. Mit dem Modell "Anvieren + Verweilen" kann der Benutzer ohne zusätzliche Eingaben neben dem Anvieren mit dem Auge oder dem Kopf durch eine App navigieren: Der Benutzer hält einfach (mit dem Kopf oder den Augen) am Ziel weiter und verweilt dort für einen Moment, um es zu aktivieren. Weitere Informationen zu den einzelnen Entwurfsüberlegungen für Anverweise und Verweilen finden Sie unter [Anväuschen mit den Augen und Verweilen](gaze-and-dwell-eyes.md) mit dem Kopf und [Verweilen.](gaze-and-dwell-head.md)
 
-## <a name="transitioning-in-and-out-of-hands-free"></a>Wechsel in und aus der Praxis freie Umstellung
+## <a name="transitioning-in-and-out-of-hands-free"></a>Übergang in und aus der Freihandfunktion
 
-In diesen Szenarien kann es von einer absoluten Anforderung bis zum Ende der Interaktion mit holograms für die Befehls-und Navigationsmöglichkeiten reichen, dass es sich um eine absolute Anforderung zum vollständigen betreiben der Anwendung handelt. 
+In diesen Szenarien kann es von einer absoluten Anforderung bis hin zum End-to-End-Betrieb der Anwendung bis hin zu einem zusätzlichen Komfort reichen, dass der Benutzer jederzeit ein- und aussteigen kann, um die Hand von der Interaktion mit Hologrammen für Befehle und Navigation zu lassen. 
 
-Wenn die Anwendung erfordert, dass Sie immer mit der Hand frei verwendet wird, unabhängig davon, ob Sie den Befehl "weiter", benutzerdefinierte Sprachbefehle oder den einzelnen Sprachbefehl "Select" verwenden, stellen Sie sicher, dass Sie die entsprechenden Unternehmen in Ihrer Benutzeroberfläche verwenden. 
+Wenn die Anwendung erfordert, dass sie immer freihändig verwendet wird, unabhängig davon, ob Sie verweilen, benutzerdefinierte Sprachbefehle oder den Befehl "select" mit einzelner Stimme verwenden, stellen Sie sicher, dass Sie die entsprechenden Gänge in Ihrer Benutzeroberfläche vornehmen. 
 
-Wenn Ihr Ziel Benutzer nach eigenem Ermessen von Hand zu Hause wechseln muss, ist es wichtig, dass Sie die folgenden Prinzipien berücksichtigen.
+Wenn Ihr Zielbenutzer nach eigenem Ermessen von der Hand zur Freihand wechseln muss, ist es wichtig, die folgenden Prinzipien zu berücksichtigen.
 
-### <a name="assume-the-user-is-already-in-the-mode-that-they-want-to-switch-to"></a>Gehen Sie davon aus, dass der Benutzer bereits im Modus ist, zu dem gewechselt werden soll.
-Wenn sich der Benutzer beispielsweise auf der Werks Seite befindet, sehen Sie sich einen Video Verweis auf den hololens an und beschließt, einen Schraubendreher zu starten, um die Arbeit zu starten. er würde höchstwahrscheinlich in Hand arbeiten arbeiten, ohne den Schrauben Strich zum Drücken einer Schaltfläche ablegen zu müssen. Sie kann eine sprach Sitzung mit einem Sprachbefehl aufrufen, sich auf einer bereits sichtbaren Benutzeroberfläche befinden, um zu beginnen, oder das Wort "Select".
+### <a name="assume-the-user-is-already-in-the-mode-that-they-want-to-switch-to"></a>Angenommen, der Benutzer befindet sich bereits im Modus, zu dem er wechseln möchte.
+Wenn sich der Benutzer z. B. in der Fabrik befindet, sich einen Videoverweis auf ihrem HoloLens ansieht und entscheidet, einen Schraubenschlüssel zu holen, um mit der Arbeit zu beginnen, beginnt er höchstwahrscheinlich frei zu arbeiten, ohne den Schraubenschlüssel zum Drücken einer Schaltfläche zu setzen. Sie kann eine Sprachsitzung mit einem Sprachbefehl aufrufen, auf einer bereits sichtbaren Benutzeroberfläche verweilen, um mit dem Verweilen zu beginnen, oder das Wort "select" sagen.
 
-Der Benutzer kann folgende Aktionen ausführen: 
-* Wechseln Sie in die Hände frei, während Sie kostenlos
-* Wechseln Sie zur Hand.
+Der Benutzer kann folgende Möglichkeiten haben: 
+* Wechseln zu "Freihändigen" während der Freihandfunktion
+* Wechseln sie mit den Händen zu den Händen.
 * Wechseln zum Controller mithilfe eines Controllers 
 
-### <a name="create-redundant-ways-to-switch-modes"></a>Erstellen von redundanten Möglichkeiten zum Wechseln von Modi
+### <a name="create-redundant-ways-to-switch-modes"></a>Erstellen redundanter Methoden zum Wechseln von Modi
 
-Beim ersten Prinzip geht es um den Zugriff, bei dem zweiten Prinzip um die Verfügbarkeit. Es darf nur eine Möglichkeit zum Wechseln in einen und aus einem Modus geben. 
+Während das erste Prinzip den Zugriff betrifft, geht es im zweiten um die Verfügbarkeit. Es sollte nicht nur eine einzige Möglichkeit zum Ein- und Ausstieg aus einem Modus geben. 
 
-Einige Beispiele sind: 
-* Eine Schaltfläche zum Starten von sprach Interaktionen
-* Ein Sprachbefehl für den Übergang zu, Verwendung von Head-Gaze und wohnen
+Beispiele hierfür sind: 
+* Eine Schaltfläche zum Starten von Sprachinteraktionen
+* Ein Sprachbefehl für den Übergang zu mithilfe von Anvieren mit dem Kopf und Verweilen
 
-### <a name="add-a-dash-of-drama"></a>Hinzufügen eines Bindestrichs
+### <a name="add-a-dash-of-drama"></a>Hinzufügen eines Bindestrichs mit einem Bindestrich
 
-Ein Modusschalter ist ein großer Teil. Es ist wichtig, dass diese Übergängen auftreten, wenn Sie ein expliziter, sogar ein dramatischer Switch sind, um dem Benutzer mitzuteilen, was passiert ist. 
+Ein Moduswechsel ist eine große Sache. Wenn diese Übergänge auftreten, ist es wichtig, dass sie ein expliziter, sogar ein drastischer Schalter sind, um den Benutzer darüber zu informieren, was passiert ist. 
 
-## <a name="usability-checklist"></a>Benutzerfreundlichkeit
+## <a name="usability-checklist"></a>Checkliste zur Benutzerfreundlichkeit
 
-**Kann der Benutzer alles durchführen, und alles, was für das Ende von Hand ist.**
-* Jede austauschbare Tabelle sollte auf die Hand frei zugreifen können.
-* Stellen Sie sicher, dass alle benutzerdefinierten Gesten ersetzt werden, z. b. das Ändern der Größe, das platzieren, Schwenken, tippen usw.
-* Stellen Sie sicher, dass der Benutzer die Benutzeroberflächen Präsenz, Platzierung und Ausführlichkeit immer sicher kontrolliert.
-    * So erhalten Sie die Benutzeroberfläche
-    * Adressieren der Benutzeroberfläche, die nicht in der Ansicht angezeigt wird (FOV)
+**Kann der Benutzer alles und alles freihändige, end-to-end-Tun?**
+* Jeder interaktivierbare Sollte frei zugänglich sein.
+* Stellen Sie sicher, dass es einen Ersatz für alle benutzerdefinierten Gesten gibt, z. B. Größenänderung, Platzierung, Wischbewegungen, Tippen usw.
+* Stellen Sie sicher, dass der Benutzer immer eine sichere Kontrolle über die Präsenz, Platzierung und Ausführlichkeit der Benutzeroberfläche hat.
+    * Benutzeroberfläche aus dem Weg gehen
+    * Adressierung der Benutzeroberfläche außerhalb des Sichtfelds (FOV)
     * Wie viel ich sehe, wo, wann
 
-**Werden die Mechanismen der Interaktion mit den richtigen Kosten für die Interaktion gelehrt und verstärkt?**
+**Werden die Mechanismen der Interaktion trainiert und mit den richtigen Geboten trainiert?**
 
-Versteht der Benutzer...
-* ... In welchem Modus befinden Sie sich?
-* ... Was können Sie in diesem Modus tun?
-* ... Was ist der aktuelle Zustand?
-* ... Wie können Sie übergehen?
+Versteht der Benutzer ...
+* ... In welchem Modus befinden sie sich?
+* ... Welche Möglichkeiten haben sie in diesem Modus?
+* ... Wie lautet der aktuelle Status?
+* ... Wie kann der Übergang erfolgen?
     
-**Ist die Benutzeroberfläche für die Hände frei optimiert?**   
+**Ist die Benutzeroberfläche für freihändige Zwecke optimiert?**   
 
-* Beispiel: das Verb bauen von Strukturen ist nicht in typische 2D-Muster integriert.
-* Beispiel: die sprach Ausrichtung ist besser mit der Objekt Hervorhebung.
-* Beispiel: sprach Interaktionen sind besser mit Untertiteln, die eingeschaltet werden müssen
+* Beispiel: Verweilen ist nicht in typische 2D-Muster integriert.
+* Beispiel: Sprachadressierung ist besser mit Objekthervorhebung
+* Beispiel: Sprachinteraktionen sind besser mit Untertiteln, die aktiviert werden müssen
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Blickverfolgung auf HoloLens 2](eye-tracking.md)
 * [Anvisieren und Ausführen](gaze-and-commit.md)

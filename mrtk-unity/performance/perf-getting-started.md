@@ -5,29 +5,29 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 6c8e060af585d7994774ea0bb575b6e5172b9558
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 50128100d058b5ec3bca7eac523c78287ce657925c3ac116e4336174e34e75c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281769"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211180"
 ---
 # <a name="performance"></a>Leistung
 
 ## <a name="getting-started"></a>Erste Schritte
 
-Die einfachste Möglichkeit, die Leistung zu rationalisieren, ist die Verwendung der Framerate oder der Anzahl, mit der Ihre Anwendung ein Bild pro Sekunde rendern kann. Es ist wichtig, die Zielframerate zu erreichen, wie von der Zielplattform (d. h. [Windows Mixed Reality,](/windows/mixed-reality/understanding-performance-for-mixed-reality) [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)usw.). Bei HoloLens beträgt die Zielframerate beispielsweise 60 FPS. Anwendungen mit niedriger Framerate können zu einer Verschlechterung der Benutzerfreundlichkeit führen, z. B. zur Stabilisierung von [Hologrammen,](../performance/hologram-stabilization.md)weltlicher Nachverfolgung, Handtracking und vielem mehr. Das Mixed Reality Toolkit bietet eine Vielzahl von Tools und Skripts, um Entwicklern das Nachverfolgen und Erzielen von Qualitätsframeraten zu erleichtern.
+Die einfachste Möglichkeit, die Leistung zu rationalisieren, ist die Verwendung der Framerate oder der Anzahl, mit der Ihre Anwendung ein Bild pro Sekunde rendern kann. Es ist wichtig, die Zielframerate zu erreichen, wie von der Zielplattform (d. h. [Windows Mixed Reality,](/windows/mixed-reality/understanding-performance-for-mixed-reality) [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)usw.). Bei HoloLens beträgt die Zielframerate beispielsweise 60 FPS. Anwendungen mit niedriger Framerate können zu einer Verschlechterung der Benutzerfreundlichkeit führen, z. B. eine aufgesenkte [Hologrammstabilität,](../performance/hologram-stabilization.md)weltliche Nachverfolgung, Handtracking und vieles mehr. Das Mixed Reality Toolkit bietet eine Vielzahl von Tools und Skripts, um Entwicklern das Nachverfolgen und Erzielen von Qualitätsframeraten zu erleichtern.
 
 ### <a name="visual-profiler"></a>Visueller Profiler
 
-Um die Leistung über die Lebensdauer der Entwicklung hinweg kontinuierlich nachzuverfolgen, wird dringend empfohlen, beim Ausführen & Debuggen einer Anwendung immer ein Visuelles mit Framerate anzuzeigen. Das Mixed Reality Toolkit stellt das [Diagnosetool Visual Profiler](../features/diagnostics/using-visual-profiler.md) bereit, das Echtzeitinformationen zum aktuellen FPS und zur Speicherauslastung in der Anwendungsansicht bereitstellt. Der Visual Profiler kann über das [Diagnosesystem Einstellungen](../features/diagnostics/diagnostics-system-getting-started.md) unter dem [MRTK Profiles Inspector](../configuration/mixed-reality-configuration-guide.md)konfiguriert werden.
+Um die Leistung über die Lebensdauer der Entwicklung hinweg kontinuierlich nachzuverfolgen, wird dringend empfohlen, beim Ausführen & Debuggen einer Anwendung immer ein Visuelles mit Framerate anzuzeigen. Das Mixed Reality Toolkit stellt das [Diagnosetool Visual Profiler](../features/diagnostics/using-visual-profiler.md) bereit, das Echtzeitinformationen zum aktuellen FPS und zur Speicherauslastung in der Anwendungsansicht bereitstellt. Der Visual Profiler kann über das [Diagnosesystem Einstellungen](../features/diagnostics/diagnostics-system-getting-started.md) unter dem [MRTK-Profilinspektor](../configuration/mixed-reality-configuration-guide.md)konfiguriert werden.
 
 Darüber hinaus ist es besonders wichtig, den Visual Profiler zu verwenden, um die Framerate nachzuverfolgen, wenn er auf dem Gerät ausgeführt wird, anstatt im Unity-Editor oder in einem Emulator ausgeführt zu werden. Die genauesten Leistungsergebnisse werden bei der Ausführung auf dem Gerät mit [Releasekonfigurationsbuilds](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019)dargestellt.
 
 > [!NOTE]
 > Wenn Sie für Windows Mixed Reality erstellen, stellen Sie mit [MASTER-Konfigurationsbuilds](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution) bereit.
 
-![Grafische Profiler-Schnittstelle](../features/images/Diagnostics/VisualProfiler.png)
+![Visual Profiler-Schnittstelle](../features/images/Diagnostics/VisualProfiler.png)
 
 ### <a name="optimize-window"></a>Optimierungsfenster
 
@@ -35,7 +35,7 @@ Das [MRTK-Fenster "Optimieren"](../features/tools/optimize-window.md) bietet Inf
 
 Im Allgemeinen umfassen diese Einstellungen Renderingkonfigurationen, die ideal für Mixed Reality sind. Mixed Reality-Anwendungen sind im Vergleich zur herkömmlichen 3D-Grafikentwicklung einzigartig, da es zwei Bildschirme gibt (d. h. zwei Augen), die für die gesamte Szene gerendert werden sollen.
 
-Die unten aufgeführten empfohlenen Einstellungen können mithilfe des MRTK-Optimierungsfensters automatisch in einem Unity-Projekt konfiguriert werden.
+Die empfohlenen Einstellungen, auf die unten verwiesen wird, können in einem Unity-Projekt mithilfe des MRTK-Optimierungsfensters automatisch konfiguriert werden.
 
 ![MRTK Optimize Window Einstellungen](../features/images/performance/OptimizeWindow_Settings.png)
 
@@ -60,7 +60,7 @@ Um komfortable Bildfrequenzen (in der Regel 60 Frames pro Sekunde) zu gewährlei
 
 In diesem Beispiel wurde die Hierarchie erweitert, um zu zeigen, dass die UpdateHandData-Methode der WindowsMixedRealityArticulatedHand-Klasse während des analysierten Frames 0,44 ms CPU-Zeit verbraucht. Anhand dieser Daten kann ermittelt werden, ob ein Leistungsproblem mit Anwendungscode oder von einem anderen System aus zusammenhängt.
 
-Es wird dringend empfohlen, Anwendungscode auf ähnliche Weise zu instrumentieren. Der Hauptfokus für die Instrumentierung von Anwendungscode liegt innerhalb von Ereignishandlern, da diese Methoden der MRTK-Updateschleife in Rechnung gestellt werden, wenn Ereignisse ausgelöst werden. Hohe Framezeiten innerhalb der MRTK-Updateschleife können auf teuren Code in Ereignishandlermethoden hindeuten.
+Entwicklern wird dringend empfohlen, Anwendungscode auf ähnliche Weise zu instrumentieren. Der Hauptfokus für die Instrumentierung von Anwendungscode liegt innerhalb von Ereignishandlern, da diese Methoden der MRTK-Updateschleife in Rechnung gestellt werden, wenn Ereignisse ausgelöst werden. Hohe Framezeiten innerhalb der MRTK-Updateschleife können auf teuren Code in Ereignishandlermethoden hindeuten.
 
 ## <a name="recommended-settings-for-unity"></a>Empfohlene Einstellungen für Unity
 
@@ -68,7 +68,7 @@ Es wird dringend empfohlen, Anwendungscode auf ähnliche Weise zu instrumentiere
 
 Die Standardrenderingkonfiguration für XR in Unity ist [Multipass.](https://docs.unity3d.com/ScriptReference/StereoRenderingPath.MultiPass.html) Diese Einstellung weist Unity an, die gesamte Renderpipeline zweimal auszuführen, einmal für jedes Auge. Dies kann optimiert werden, indem Sie stattdessen [Single Pass Instanced Rendering](https://docs.unity3d.com/Manual/SinglePassInstancing.html) auswählen. Diese Konfiguration nutzt [Renderzielarrays,](https://en.wikipedia.org/wiki/Multiple_Render_Targets) um einen einzelnen Zeichnen-Aufruf ausführen zu können, der für jedes Auge das entsprechende [Renderziel](https://en.wikipedia.org/wiki/Render_Target) eingibt. Darüber hinaus ermöglicht dieser Modus das Gesamte Rendering in einer einzelnen Ausführung der Renderingpipeline. Daher kann die Auswahl des Single Pass Instanced-Renderings als Renderingpfad für eine Mixed Reality-Anwendung [erhebliche Zeit auf der CPU-& GPU sparen](https://blogs.unity3d.com/2017/11/21/how-to-maximize-ar-and-vr-performance-with-advanced-stereo-rendering/) und ist die empfohlene Renderingkonfiguration.
 
-Um jedoch einen einzelnen Zeichnen-Aufruf für jedes Gitternetz für jedes Auge auszugeben, muss die [GPU-Instanziierung](https://docs.unity3d.com/Manual/GPUInstancing.html) von allen Shadern unterstützt werden. Die Instanziierung ermöglicht der GPU das Multiplex-Zeichnen von Aufrufen über beide Augen hinweg. Integrierte Unity-Shader sowie der [MRTK Standard-Shader](../features/rendering/mrtk-standard-shader.md) enthalten standardmäßig die erforderlichen Instanziierungsanweisungen im Shadercode. Wenn Sie jedoch benutzerdefinierte Shader für Unity schreiben, müssen diese Shader möglicherweise aktualisiert werden, um single pass Instanced-Rendering zu unterstützen.
+Um jedoch einen einzelnen Zeichnen-Aufruf für jedes Gitternetz für jedes Auge auszugeben, muss die [GPU-Instanziierung](https://docs.unity3d.com/Manual/GPUInstancing.html) von allen Shadern unterstützt werden. Die Instanziierung ermöglicht es der GPU, Aufrufe über beide Augen hinweg zu multiplexen. Integrierte Unity-Shader sowie der [MRTK Standard-Shader](../features/rendering/mrtk-standard-shader.md) enthalten standardmäßig die erforderlichen Instanziierungsanweisungen im Shadercode. Wenn Sie jedoch benutzerdefinierte Shader für Unity schreiben, müssen diese Shader möglicherweise aktualisiert werden, um das Rendern von Single Pass Instanced zu unterstützen.
 
 #### <a name="example-code-for-custom-shader"></a>[Beispielcode für benutzerdefinierten Shader](https://docs.unity3d.com/Manual/SinglePassInstancing.html)
 
@@ -110,10 +110,10 @@ v2f vert (appdata v)
 Unity bietet [Voreinstellungen zum Steuern](https://docs.unity3d.com/Manual/class-QualitySettings.html) der Renderingqualität für jeden Plattformendpunkt. Diese Voreinstellungen steuern, welche grafischen Features aktiviert werden können, z. B. Schatten, Antialiasing, globale Beleuchtung und vieles mehr. Es wird empfohlen, diese Einstellungen zu verringern und die Anzahl von Berechnungen zu optimieren, die während des Renderings durchgeführt werden.
 
 *Schritt 1:* Aktualisieren von Mixed Reality-Unity-Projekten für die Verwendung der Einstellung *"Niedrige Qualitätsstufe"*  
-**Bearbeiten**  >  **Project Einstellungen**, und wählen Sie dann die Kategorie **Qualität** aus, > Wählen Sie *niedrige Qualität* für die UWP-Plattform aus.
+**Bearbeiten**  >  **Project Einstellungen**, und wählen Sie dann die Kategorie **Qualität** > Wählen Sie *niedrige Qualität* für die UWP-Plattform aus.
 
-*Schritt 2:* Deaktivieren Sie für jede [Unity-Szenendatei "Global Unity" in Echtzeit.](https://docs.unity3d.com/Manual/LightMode-Realtime.html)  
-**Fenster**  >  **Rendering**  >  **Beleuchtung Einstellungen**  >  [Deaktivieren Der *globale Echtzeitausgehungs-Kontrollkästchen*](https://docs.unity3d.com/Manual/GlobalIllumination.html)
+*Schritt 2:* Deaktivieren Sie für jede [Unity-Szenendatei global Auswechseln](https://docs.unity3d.com/Manual/LightMode-Realtime.html) in Echtzeit.  
+**Fenster**  >  **Rendering**  >  **Beleuchtung Einstellungen**  >  [Deaktivieren Der *globale Echtzeitausgehungsauscheck*](https://docs.unity3d.com/Manual/GlobalIllumination.html)
 
 ### <a name="depth-buffer-sharing-hololens"></a>Tiefenpufferfreigabe (HoloLens)
 
@@ -122,12 +122,12 @@ Bei der Entwicklung für die Windows Mixed Reality-Plattform und insbesondere f�
 Wenn [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) aufgrund des niedrigeren Bitformats auftritt, vergewissern Sie sich, dass die [entfernte Clipebene](https://docs.unity3d.com/Manual/class-Camera.html) aller Kameras auf den niedrigsten möglichen Wert für die Anwendung festgelegt ist. Unity legt standardmäßig eine entfernte Clipebene von 1.000 m fest. Auf HoloLens ist eine weit entfernte Clipebene von 50 m in der Regel für die meisten Anwendungsszenarien mehr als ausreichend.
 
 > [!NOTE]
-> Bei Verwendung des *16-Bit-Tiefenformats* funktionieren die erforderlichen Auswirkungen des Schablonenpuffers nicht, da Unity in dieser Einstellung [keinen Schablonenpuffer erstellt.](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) Wenn Sie umgekehrt das *24-Bit-Tiefenformat* auswählen, wird in der Regel ein 8-Bit-Schablonenpuffer erstellt, sofern dies auf der Endpunktgrafikplattform anwendbar ist.
+> Bei Verwendung des *16-Bit-Tiefenformats* funktionieren die erforderlichen Auswirkungen des Schablonenpuffers nicht, da Unity in dieser Einstellung [keinen Schablonenpuffer erstellt.](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) Wenn Sie umgekehrt das *24-Bit-Tiefenformat* auswählen, wird in der Regel ein 8-Bit-Schablonenpuffer erstellt, sofern dies auf der Endpunktgrafikplattform gilt.
 >
 > Wenn Sie eine [Mask-Komponente](https://docs.unity3d.com/Manual/script-Mask.html) verwenden, die den Schablonenpuffer erfordert, erwägen Sie stattdessen die Verwendung von [RectMask2D,](https://docs.unity3d.com/Manual/script-RectMask2D.html) die den Schablonenpuffer nicht benötigt und daher in Verbindung mit einem *16-Bit-Tiefenformat* verwendet werden kann.
 
 > [!NOTE]
-> Um schnell zu bestimmen, welche Objekte in einer Szene nicht visuell in den Tiefenpuffer schreiben, können Sie das [ *Hilfsprogramm Tiefenpuffer rendern*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) unter dem *Editor-Einstellungen* im MRTK-Konfigurationsprofil verwenden.
+> Um schnell zu bestimmen, welche Objekte in einer Szene nicht visuell in den Tiefenpuffer schreiben, können Sie das [ *Hilfsprogramm Tiefenpuffer rendern*](../configuration/mixed-reality-configuration-guide.md#editor-utilities) unter dem *Editor Einstellungen* im MRTK-Konfigurationsprofil verwenden.
 
 ### <a name="optimize-mesh-data"></a>Optimieren von Meshdaten
 
@@ -148,14 +148,14 @@ Da die meisten Plattformen für Mixed Reality-Anwendungen [stereokopiertes Rende
 Wenn Sie sich auf die GPU konzentrieren, gibt es im Allgemeinen zwei wichtige Phasen, in denen eine Anwendung jeden Frame abschließen muss.
 
 1. Ausführen des [Vertex-Shaders](https://en.wikipedia.org/wiki/Shader#Vertex_shaders)
-2. Führen Sie den [Pixelshader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) (auch als Fragment-Shader bezeichnet) aus.
+2. Ausführen des [Pixelshader](https://en.wikipedia.org/wiki/Shader#Pixel_shaders) (auch als Fragment-Shader bezeichnet)
 
 Ohne einen tieferen Einblick in das komplexe Feld der Computergrafiken & [Renderingpipelines](https://en.wikipedia.org/wiki/Graphics_pipeline)ist jede Shaderphase ein Programm, das auf der GPU ausgeführt wird, um Folgendes zu erzeugen.
 
 1. Vertex-Shader transformieren Netzvertices in Koordinaten im Bildschirmbereich (d. h. Pro Scheitelpunkt ausgeführter Code)
-2. Pixel-Shader berechnen die Farbe, die für ein bestimmtes Pixel- und Gitternetzfragment gezeichnet werden soll (d.h. Codeausführung pro Pixel)
+2. Pixel-Shader berechnen die Farbe, die für ein bestimmtes Pixel- und Gitternetzfragment gezeichnet werden soll (d. h. Codeausführung pro Pixel)
 
-Im Hinblick auf die Leistungsoptimierung ist es in der Regel schwieriger, sich auf die Optimierung der Vorgänge im Pixel-Shader zu konzentrieren. Eine Anwendung muss möglicherweise nur einen Würfel zeichnen, der nur 8 Scheitelpunkte hat. Der Bildschirmbereich, den der Cube belegt, liegt jedoch wahrscheinlich in der Größenordnung von Millionen von Pixeln. Daher kann die Reduzierung von Shadercode um z. B. 10 Vorgänge erheblich mehr Arbeit sparen, wenn der Pixel-Shader reduziert wird als der Vertex-Shader.
+Im Hinblick auf die Leistungsoptimierung ist es in der Regel schwieriger, sich auf die Optimierung der Vorgänge im Pixel-Shader zu konzentrieren. Eine Anwendung muss möglicherweise nur einen Cube zeichnen, der nur 8 Scheitelpunkte hat. Der Bildschirmbereich, den der Cube belegt, liegt jedoch wahrscheinlich in der Größenordnung von Millionen von Pixeln. Daher kann die Reduzierung von Shadercode um z. B. 10 Vorgänge erheblich mehr Arbeit sparen, wenn der Pixel-Shader reduziert wird als der Vertex-Shader.
 
 Dies ist einer der Hauptgründe für die Nutzung des [MRTK Standard-Shaders,](../features/rendering/mrtk-standard-shader.md) da dieser Shader im Allgemeinen viel weniger Anweisungen pro Pixel & Scheitelpunkt als der Unity Standard-Shader ausführen und gleichzeitig vergleichbare ergebnisse erzielen kann.
 
@@ -169,7 +169,7 @@ Dies ist einer der Hauptgründe für die Nutzung des [MRTK Standard-Shaders,](..
 
 ### <a name="draw-call-instancing"></a>Draw-Aufrufinstancing
 
-Einer der häufigsten Fehler in Unity, der die Leistung verringert, ist das Klonen von Materialien zur Laufzeit. Wenn GameObjects dasselbe Material gemeinsam nutzen und/oder dasselbe Gitternetz sind, können sie *[](https://docs.unity3d.com/Manual/DrawCallBatching.html)* mit Techniken wie statischer Batchverarbeitung, *[](https://docs.unity3d.com/Manual/DrawCallBatching.html)* dynamischer Batchverarbeitung und GPU-Instanzion *[für](https://docs.unity3d.com/Manual/GPUInstancing.html)* einzelne Zeichnen-Aufrufe optimiert werden. Wenn Entwickler jedoch eigenschaften des Materials eines [Renderers](https://docs.unity3d.com/ScriptReference/Renderer-material.html) zur Laufzeit ändern, erstellt Unity eine Klonkopie des zugewiesenen Materials.
+Einer der häufigsten Fehler in Unity, der die Leistung verringert, ist das Klonen von Materialien zur Laufzeit. Wenn GameObjects das gleiche Material gemeinsam nutzen und/oder dasselbe Gitternetz sind, können sie *[](https://docs.unity3d.com/Manual/DrawCallBatching.html)* mit Techniken wie statische Batchverarbeitung, *[](https://docs.unity3d.com/Manual/DrawCallBatching.html)* dynamische Batchverarbeitung und GPU-Instanzion für einzelne Zeichnen-Aufrufe optimiert *[werden.](https://docs.unity3d.com/Manual/GPUInstancing.html)* Wenn Entwickler jedoch eigenschaften des Materials eines [Renderers](https://docs.unity3d.com/ScriptReference/Renderer-material.html) zur Laufzeit ändern, erstellt Unity eine Klonkopie des zugewiesenen Materials.
 
 Wenn z. B. eine Szene 100 Würfel enthält, kann ein Entwickler jeder zur Laufzeit eine eindeutige Farbe zuweisen. Durch den Zugriff [*auf renderer.material.color*](https://docs.unity3d.com/ScriptReference/Material-color.html) in C# erstellt Unity ein neues Material im Arbeitsspeicher für diesen bestimmten Renderer/GameObject. Jeder der 100 Cubes verfügt über ein eigenes Material und kann daher nicht zu einem Zeichnen-Aufruf zusammengeführt werden, sondern zu 100 Draw-Aufrufanforderungen von der CPU an die GPU.
 
@@ -205,7 +205,7 @@ Unity bietet hervorragende Leistungstools, die in den Editor integriert sind.
 - [Unity Profiler](https://docs.unity3d.com/Manual//Profiler.html)
 - [Unity-Framedebugger](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
-Wenn Sie den ungefähren Leistungsabbruch zwischen einem Shader und einem anderen abschätzen, ist es hilfreich, jeden Shader zu kompilieren und die Anzahl der Vorgänge pro Shaderphase zu sehen. Wählen Sie hierzu ein [Shader-Objekt](https://docs.unity3d.com/Manual/class-Shader.html) aus, und klicken Sie auf die *Schaltfläche Code kompilieren und* anzeigen. Dadurch werden alle Shadervarianten kompiliert und Visual Studio mit den Ergebnissen geöffnet. Hinweis: Die erzeugten Statistikergebnisse können variieren, je nachdem, welche Features für Materialien aktiviert wurden, die den angegebenen Shader verwenden. Unity kompiliert nur die Shadervarianten, die direkt im aktuellen Projekt verwendet werden.
+Wenn Sie den ungefähren Leistungsabbruch zwischen einem Shader und einem anderen abschätzen, ist es hilfreich, jeden Shader zu kompilieren und die Anzahl der Vorgänge pro Shaderstufe zu sehen. Wählen Sie hierzu ein [Shader-Objekt](https://docs.unity3d.com/Manual/class-Shader.html) aus, und klicken Sie auf die *Schaltfläche Code kompilieren und* anzeigen. Dadurch werden alle Shadervarianten kompiliert und Visual Studio mit den Ergebnissen geöffnet. Hinweis: Die erzeugten Statistikergebnisse können variieren, je nachdem, welche Features für Materialien aktiviert wurden, die den angegebenen Shader verwenden. Unity kompiliert nur die Shadervarianten, die direkt im aktuellen Projekt verwendet werden.
 
 Unity Standard-Shader-Statistikbeispiel
 
@@ -215,7 +215,7 @@ MrTK Standard-Shaderstatistikbeispiel
 
 ![MRTK Standard Shader Statistics 2](../features/images/performance/MRTKStandardShader-Stats.PNG)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 ### <a name="unity"></a>Unity
 

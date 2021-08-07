@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: Eyetracking, Mixed Reality, Eingabe, Anvisiert mit den Augen, Kalibrierung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Absicht, Aktionen
-ms.openlocfilehash: 6bcd64a0ecc6e5c92966569d0675703afde5cbd5
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ce8ffcb6b8b59b6b0484ba4b3db256a8df5810ea2719416bea9e3f4366ad6afe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906847"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214143"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>Blickverfolgung auf HoloLens 2
 
 ![Eye tracking demo in MRTK](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 ermöglicht eine neue Ebene des Kontexts und des menschlichen Verständnisses innerhalb der holografischen Erfahrung, indem Entwicklern die Möglichkeit geboten wird, Informationen dazu zu verwenden, was der Benutzer ansieht. Auf dieser Seite wird erläutert, wie Entwickler von eye tracking für verschiedene Anwendungsfälle profitieren können und was beim Entwerfen von Benutzerinteraktionen mit blickbasiertem Anverfolgen zu suchen ist. 
+HoloLens 2 ermöglicht eine neue Ebene des Kontexts und des menschlichen Verständnisses innerhalb der holografischen Erfahrung, indem Entwicklern die Möglichkeit bietet, Informationen dazu zu verwenden, was der Benutzer ansieht. Auf dieser Seite wird erläutert, wie Entwickler von eye tracking für verschiedene Anwendungsfälle profitieren können und was beim Entwerfen von Benutzerinteraktionen mit anverfolgten Augen zu suchen ist. 
 
 Die Eyetracking-API wurde unter Berücksichtigung des Datenschutzes eines Benutzers entwickelt und vermeidet die Übergabe identifizierbarer Informationen, insbesondere biometrischer Daten. Für Eyetracking-fähige Anwendungen muss der Benutzer der App die Berechtigung zum Verwenden von Eyetrackinginformationen erteilen.
 
@@ -46,24 +46,24 @@ Die Eyetracking-API wurde unter Berücksichtigung des Datenschutzes eines Benutz
 
 <br>
 
-## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo zu Designkonzepten für Head- und Eyetracking
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>Demo der Entwurfskonzepte für Kopf- und Eyetracking
 
-Wenn Sie die Entwurfskonzepte für Head und Eye Tracking in Aktion sehen möchten, sehen Sie sich unsere Videodemo **designing Holograms - Head Tracking and Eye Tracking (Entwerfen von Hologrammen – Kopfverfolgung und Eye tracking)** unten an. Wenn Sie fertig sind, fahren Sie mit einem ausführlicheren Einblick in bestimmte Themen fort.
+Wenn Sie die Entwurfskonzepte für Kopf- und Eyetracking in Aktion sehen möchten, sehen Sie sich unten unsere Videodemo **Entwerfen von Hologrammen: Kopf- und Eyetracking** an. Wenn Sie fertig sind, fahren Sie mit einem ausführlicheren Einblick in bestimmte Themen fort.
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*Dieses Video stammt aus der App "Entwerfen von Hologrammen" HoloLens 2. Laden Sie herunter, und nutzen Sie die vollständige Benutzeroberfläche [hier.](https://aka.ms/dhapp)*
+*Dieses Video wurde aus der HoloLens 2-App „Entwerfen von Hologrammen“ aufgenommen. Laden Sie die vollständige Erfahrung [hier](https://aka.ms/dhapp) herunter, und genießen Sie sie.*
 
 ## <a name="calibration"></a>Kalibrierung 
 
 Damit eye tracking korrekt funktioniert, muss jeder Benutzer eine [Eyetracking-Benutzer-Kalibrierung](/hololens/hololens-calibration) durchlaufen, für die der Benutzer eine Reihe holografischer Ziele betrachten muss. Dadurch kann das Gerät das System anpassen, um eine komfortablere und qualitativ hochwertigere Anzeige für den Benutzer zu gewährleisten und gleichzeitig eine genaue Blickverfolgung sicherzustellen. 
 
 Eyetracking sollte für die meisten Benutzer funktionieren, aber es gibt selten Fälle, in denen ein Benutzer nicht erfolgreich kalibrieren kann. Die Kalibrierung kann aus verschiedenen Gründen fehlschlagen, einschließlich, aber nicht beschränkt auf: 
-* Der Benutzer hat sich zuvor vom Kalibrierungsprozess abgemeldet.
+* Der Benutzer hat sich zuvor von dem Kalibrierungsvorgang abgemeldet
 * Der Benutzer wurde ablenkend und hat die Kalibrierungsziele nicht befolgt.
 * Der Benutzer verfügt über bestimmte Arten von Kontaktobjektiven und Brillen, die das System noch nicht unterstützt. 
 * Der Benutzer hat bestimmte Augen- oder Augenbedingungen oder hatte Augenaussichten, die das System noch nicht unterstützt.  
-* Externe Faktoren, die eine zuverlässige Blickverfolgung verhindern, z. B. Verblendungen auf dem HoloLens-Visier oder der Brille, intensive direkte Brillen und Verdeckungen durch Diebe vor den Augen
+* Externe Faktoren, die eine zuverlässige Blickverfolgung verhindern, z. B. Wischschatten auf dem HoloLens oder Brillen, intensive direkte Brillen und Verdeckungen aufgrund von Kopfbeweis vor den Augen
 
 Entwickler sollten sicherstellen, dass sie eine angemessene Unterstützung für Benutzer bereitstellen, für die eye tracking-Daten möglicherweise nicht verfügbar sind (die nicht in der Lage sind, erfolgreich zu kalibrieren). Im Abschnitt am unteren Rand dieser Seite haben wir Empfehlungen für Fallbacklösungen bereitgestellt. 
 
@@ -73,10 +73,10 @@ Weitere Informationen zur Kalibrierung und zur Sicherstellung eines reibungslose
 
 ## <a name="available-eye-tracking-data"></a>Verfügbare Eyetrackingdaten
 
-Bevor wir uns mit bestimmten Anwendungsfällen für die Eingabe von Anverfolgen mit den Augen nähern, möchten wir kurz auf die Funktionen hinweisen, die die HoloLens 2 [Eye Tracking-API](/uwp/api/windows.perception.people.eyespose) bietet. Entwickler erhalten Bei ca. _30 FPS (30 Hz)_ Zugriff auf einen einzelnen Anviert-Strahl mit den Augen (Ursprung und Richtung des Anvierens).
-Ausführlichere Informationen zum Zugriff auf Eyetrackingdaten finden Sie in unseren Entwicklerhandbüchern zur Verwendung des [Anvierens mit](../develop/native/gaze-in-directx.md) den Augen in DirectX und [des Anvierens mit den Augen in Unity.](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
+Bevor wir uns mit bestimmten Anwendungsfällen für die Eingabe des Anverfolgens mit den Augen nähern, möchten wir kurz auf die Funktionen hinweisen, die die HoloLens 2 [Eye Tracking-API](/uwp/api/windows.perception.people.eyespose) bietet. Entwickler erhalten Bei ca. _30 FPS (30 Hz)_ Zugriff auf einen einzelnen Anviert-Strahl mit den Augen (Ursprung und Richtung des Anvierens).
+Ausführlichere Informationen zum Zugriff auf Eyetrackingdaten finden Sie in unseren Entwicklerhandbüchern zum Verwenden des [Anvierens mit](../develop/native/gaze-in-directx.md) den Augen in DirectX und [zum Anvieren mit den Augen in Unity.](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 
-Das vorhergesagte Anvieren mit den Augen liegt ungefähr innerhalb von 1,5 Grad im visuellen Winkel um das tatsächliche Ziel (siehe abbildung unten). Da geringfügige Ungenauigkeiten erwartet werden, sollten Entwickler einen Gewissensrand um diesen unteren Grenzwert planen (z.B. können 2,0 bis 3,0 Grad zu einer viel komfortableren Erfahrung führen). Im Folgenden erfahren Sie, wie Sie die Auswahl kleiner Ziele genauer behandeln. Damit die Blickverfolgung exakt funktioniert, muss jeder Benutzer eine Benutzerkalibrierung für seine Blickverfolgung durchlaufen. 
+Das vorhergesagte Anvieren mit den Augen liegt ungefähr innerhalb von 1,5 Grad im visuellen Winkel um das tatsächliche Ziel (siehe abbildung unten). Da geringfügige Ungenauigkeiten erwartet werden, sollten Entwickler einen Gewissensrand um diesen unteren Grenzwert planen (z.B. können 2,0 bis 3,0 Grad zu einer viel komfortableren Umgebung führen). Im Folgenden erfahren Sie, wie Sie die Auswahl kleiner Ziele genauer behandeln. Damit die Blickverfolgung exakt funktioniert, muss jeder Benutzer eine Benutzerkalibrierung für seine Blickverfolgung durchlaufen. 
 
 ![Optimale Zielgröße im Abstand von 2 Metern](images/gazetargeting-size-1000px.jpg)<br>
 *Optimale Zielgröße in einer Entfernung von 2 Metern*
@@ -100,14 +100,14 @@ Darüber hinaus kann ein Beispiel für eine Benutzerabsicht die Verwendung von I
 ### <a name="implicit-actions"></a>Implizite Aktionen
 
 Die Kategorie der impliziten Aktionen steht in enger Beziehung zur Benutzerabsicht.
-Die Idee ist, dass Hologramme oder Benutzeroberflächenelemente auf instinktive Weise reagieren, die möglicherweise nicht einmal das Gefühl hat, als interagiere der Benutzer mit dem System, sondern dass das System und der Benutzer synchron sind. Ein Beispiel hierfür ist das **automatische Scrollen** mit den Augen, bei dem der Benutzer einen langen Text lesen kann, der automatisch mit dem Scrollen beginnt, sobald der Benutzer zum Ende des Textfelds gelangt, um den Benutzer im Lesefluss zu halten, ohne einen Finger zu heben.  
+Die Idee ist, dass Hologramme oder Benutzeroberflächenelemente auf instinktive Weise reagieren, die möglicherweise nicht einmal das Gefühl hat, als interagiere der Benutzer überhaupt mit dem System, sondern dass das System und der Benutzer synchron sind. Ein Beispiel hierfür ist das **automatische Scrollen** mit den Augen, bei dem der Benutzer einen langen Text lesen kann, der automatisch mit dem Scrollen beginnt, sobald der Benutzer zum Ende des Textfelds gelangt, um den Benutzer im Lesefluss zu halten, ohne einen Finger zu heben.  
 Ein wichtiger Aspekt ist, dass sich die Bildlaufgeschwindigkeit an die Lesegeschwindigkeit des Benutzers anpasst.
-Ein weiteres Beispiel ist das **mit den Augen unterstützte Zoomen und Schwenken,** bei dem der Benutzer das Gefühl hat, genau auf das zu springen, worauf er sich konzentriert. Das Auslösen und Steuern der Zoomgeschwindigkeit kann durch Spracheingaben oder Handeingaben gesteuert werden. Dies ist wichtig, um dem Benutzer das Gefühl der Kontrolle zu geben und gleichzeitig eine Überlastung zu vermeiden. Im Folgenden werden diese Entwurfsüberlegungen ausführlicher erläutert. Nach dem Vergrößern kann der Benutzer problemlos dem Lauf einer Straße folgen, um seine Umgebung mithilfe des Anvierens mit den Augen zu erkunden.
+Ein weiteres Beispiel ist das **mit den Augen unterstützte Zoomen und Schwenken,** bei dem der Benutzer das Gefühl hat, genau auf das zu springen, worauf er sich konzentriert. Das Auslösen und Steuern der Zoomgeschwindigkeit kann durch Spracheingaben oder Handeingaben gesteuert werden. Dies ist wichtig, um dem Benutzer das Gefühl der Kontrolle zu geben und gleichzeitig eine Überlastung zu vermeiden. Im Folgenden werden diese Entwurfsüberlegungen ausführlicher erläutert. Nach dem Vergrößern kann der Benutzer problemlos dem Lauf einer Straße folgen, um seine Umgebung mit den Augen zu erkunden.
 Demobeispiele für diese Arten von Interaktion finden Sie im Beispiel [Mixed Reality Toolkit – Eye-supported Navigation](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) (Mixed Reality-Toolkit – Blickgestützte Navigation).
 
 Andere Anwendungsfälle für _implizite Aktionen_ können Folgendes umfassen:
 - **Intelligente Benachrichtigungen:** Haben Sie sich jemals darüber geärgert, dass Benachrichtigungen genau dort angezeigt werden, wo Sie suchen? Unter Berücksichtigung der Aufmerksamkeit, auf die ein Benutzer achten muss, können Sie diese Erfahrung verbessern, indem Sie Benachrichtigungen von dem Ort abstellen, an dem der Benutzer gerade arbeitet. Dies schränkt Ablenkungen ein und schließt sie automatisch, sobald der Benutzer das Lesen abgeschlossen hat. 
-- **Hologramme:** Hologramme, die beim Anvieren unaufdinglich reagieren. Dies kann von leicht leuchtenden UI-Elementen, einer langsamen Blume bis hin zu einem virtuellen Hund reichen, der mit dem Blick auf den Benutzer beginnt und sein Ende wackelt. Diese Interaktion kann ein interessantes Gefühl für Konnektivität und Zufriedenheit in Ihrer Anwendung bieten.
+- **Hologramme:** Hologramme, die beim Anvieren unaufdinglich reagieren. Dies kann von leicht leuchtenden UI-Elementen, einer langsamen Blume bis hin zu einem virtuellen Hund reichen, der beginnt, auf den Benutzer zurückzugehen und sein Ende zu verwaschen. Diese Interaktion kann ein interessantes Gefühl für Konnektivität und Zufriedenheit in Ihrer Anwendung bieten.
 
 ### <a name="attention-tracking"></a>Aufmerksamkeitsverfolgung
 
@@ -119,7 +119,7 @@ Zu diesem Bereich zählen möglicherweise auch die folgenden Anwendungen:
 -   **Visualisierung mit remotem Anvesten mit den Augen:** Visualisierungen mit remotem Anvieren mit den Augen: Visualisieren Sie, was Remotemitarbeiter betrachten, um sofortiges Feedback zu geben und eine genauere Informationsverarbeitung zu ermöglichen.
 -   **Studien zur Benutzerforschung:** Die Aufmerksamkeitsnachverfolgung kann Forscher dabei unterstützen, mehr Einblicke in die Wahrnehmung und Interaktion von Benutzern in der natürlichen Umgebung zu erhalten, ohne zu beeinträchtigen, um instinktive Interaktionen zwischen Menschen und Computern zu entwerfen. Eyetracking kann Informationen liefern, die nicht direkt von den Teilnehmern der Studie formuliert werden, die andernfalls vom Forscher leicht übersehen werden können. 
 -   **Trainings- und Leistungsüberwachung:** Üben und optimieren Sie die Ausführung von Aufgaben, indem Sie Engpässe im Ausführungsfluss effektiver identifizieren. Eyetracking kann natürliche, Echtzeit- und Zielinformationen bereitstellen, um das Training, die Produktivität und die Sicherheit am Arbeitsplatz zu verbessern. 
--   **Designauswertungen, Marketing und Verbraucherforschung:** Eyetracking ermöglicht kommerziellen Unternehmen, Marketing- und Verbraucherstudien in realen Umgebungen durchzuführen oder zu analysieren, was die Aufmerksamkeit eines Benutzers erfasst, um das Produkt- oder Raumdesign zu verbessern. 
+-   **Entwurfsauswertungen, Marketing und Verbraucherforschung:** Eyetracking ermöglicht kommerziellen Unternehmen, Marketing- und Verbraucherstudien in realen Umgebungen durchzuführen oder zu analysieren, was die Aufmerksamkeit eines Benutzers erfasst, um das Produkt- oder Raumdesign zu verbessern. 
 
 ### <a name="other-use-cases"></a>Weitere Anwendungsfälle
 
@@ -127,7 +127,7 @@ Zu diesem Bereich zählen möglicherweise auch die folgenden Anwendungen:
 Wandeln Sie Diensel in Steine um, oder frieren Sie sie ein. Verwenden Sie Ihren Röntgenblick, um Gebäude zu erkunden. Ihrer Phantasie sind keine Grenzen gesetzt!
 Achten Sie jedoch darauf, den Benutzer nicht zu überfordern. Um mehr zu erfahren, sehen Sie sich unsere Richtlinien zum Entwerfen von [Eingaben an, die auf anviert](eye-gaze-interaction.md)werden.
 
-- **Ausdrucksstärker Avatar:** Eyetracking unterstützt ausdrucksstärkeere 3D-Avatare, indem mithilfe von Live-Blickverfolgungsdaten die Augen des Avatars animiert werden, die angeben, was der Benutzer ansieht. 
+- **Ausdrucksstärkete Avatare:** Eyetracking unterstützt ausdrucksstärkeere 3D-Avatare, indem mithilfe von Live-Blickverfolgungsdaten die Augen des Avatars animiert werden, die angeben, was der Benutzer ansieht. 
 
 - **Texteintrag:** Eyetracking kann als Alternative für Texteingaben mit geringem Aufwand verwendet werden, insbesondere dann, wenn Sprache oder Hände unpraktisch zu verwenden sind. 
 
@@ -146,17 +146,17 @@ Dies kann verschiedene Gründe haben, aus denen die gängigsten unten aufgeführ
 * Der Benutzer hat die [Kalibrierung übersprungen.](/hololens/hololens-calibration)   
 * Der Benutzer ist kalibriert, hat sich aber entschieden, Ihrer App keine Berechtigung zur Verwendung seiner Eyetrackingdaten zu erteilen.    
 * Der Benutzer verfügt über eine eindeutige Brille oder eine Augenbedingung, die das System noch nicht unterstützt. 
-* Externe Faktoren, die eine zuverlässige Blickverfolgung verhindern, z. B. Verblendungen des HoloLens-Visiers oder der Brille, intensive direkte Brillen und Verdeckungen aufgrund von Härchen vor den Augen.
+* Externe Faktoren, die eine zuverlässige Blickverfolgung verhindern, z. B. Wischschatten auf dem HoloLens oder Brillen, intensive direkte Brillen und Verdeckungen aufgrund von Härchen vor den Augen.
 
 Entwickler sollten sicherstellen, dass für diese Benutzer geeignete Fallbackunterstützung vorhanden ist. Auf der Seite [Eye Tracking in DirectX (Blickverfolgung in DirectX)](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) werden die APIs erläutert, die erforderlich sind, um zu erkennen, ob Eyetrackingdaten verfügbar sind. 
 
-Einige Benutzer haben sich möglicherweise bewusst dafür entschieden, den Zugriff auf ihre Eyetrackingdaten aufzuheben, und sind mit dem Kompromiss einer vertrauenswürdigen Benutzererfahrung mit dem Datenschutz in Ordnung, dass sie keinen Zugriff auf ihre Eyetrackingdaten bieten, in einigen Fällen kann dies unabsichtlich sein. Wenn Ihre App eye tracking verwendet und dies ein wichtiger Teil der Benutzeroberfläche ist, empfehlen wir, dies dem Benutzer klar mitzuteilen.   
+Einige Benutzer haben sich möglicherweise bewusst dafür entschieden, den Zugriff auf ihre Eyetrackingdaten aufzuheben, und sind mit dem Kompromiss einer vertrauenswürdigen Benutzererfahrung mit dem Datenschutz in Ordnung, dass sie keinen Zugriff auf ihre Eyetrackingdaten bieten, in einigen Fällen kann dies unbeabsichtigt sein. Wenn Ihre App eye tracking verwendet und dies ein wichtiger Teil der Benutzeroberfläche ist, empfehlen wir, dies dem Benutzer klar mitzuteilen.   
 
-Wenn Sie dem Benutzer mitteilen, warum eye tracking für Ihre Anwendung wichtig ist (möglicherweise sogar einige erweiterte Features auflisten), um das volle Potenzial Ihrer Anwendung zu erleben, kann der Benutzer besser verstehen, was er aufgibt. Helfen Sie dem Benutzer, zu ermitteln, warum die Blickverfolgung möglicherweise nicht funktioniert (basierend auf den oben genannten Überprüfungen), und bieten Sie einige Vorschläge, um potenzielle Probleme schnell zu beheben. 
+Wenn Sie dem Benutzer mitteilen, warum eye tracking für Ihre Anwendung wichtig ist (möglicherweise sogar einige erweiterte Features auflisten), um das volle Potenzial Ihrer Anwendung zu erleben, kann der Benutzer besser verstehen, was er aufgibt. Helfen Sie dem Benutzer, zu ermitteln, warum die Blickverfolgung möglicherweise nicht funktioniert (basierend auf den obigen Überprüfungen), und bieten Sie einige Vorschläge, um potenzielle Probleme schnell zu beheben. 
 
 Wenn Sie z. B. erkennen können, dass das System eye tracking unterstützt, der Benutzer kalibriert ist und sogar seine Berechtigung erteilt hat, aber keine Blickverfolgungsdaten empfangen werden, kann dies auf einige andere Probleme hinweisen, z. B. verblendet oder die Augen, die verdeckt werden. 
 
-Es gibt selten Fälle von Benutzern, für die eye tracking möglicherweise nicht funktioniert. Lassen Sie sich davon nicht auskennen, indem Sie es zulassen, Erinnerungen zu verwerfen oder sogar zu deaktivieren, um die Blickverfolgung in Ihrer App zu ermöglichen.
+Es gibt selten Fälle von Benutzern, für die die Blickverfolgung möglicherweise nicht funktioniert. Lassen Sie sich davon nicht auskennen, indem Sie es zulassen, Erinnerungen für die Aktivierung der Blickverfolgung in Ihrer App zu verwerfen oder sogar zu deaktivieren.
 
 ### <a name="fall-back-for-apps-using-eye-gaze-as-a-primary-input-pointer"></a>Fallback für Apps, die das Anvieren mit den Augen als primären Eingabezeiger verwenden
 
@@ -164,12 +164,12 @@ Wenn Ihre App das Anverfolgen mit den Augen als Zeigereingabe verwendet, um Holo
 
 ### <a name="fall-back-for-other-eye-tracking-specific-applications"></a>Fallback für andere Eyetracking-spezifische Anwendungen
 
-Ihre App kann das Anvieren mit den Augen auf eine einzigartige Weise verwenden, die speziell auf die Augen zugeschnitten ist. Beispielsweise das Animieren der Augen eines Avatars oder für Wärmebilds mit blickbasierter Aufmerksamkeit, die auf präzisen Informationen zur visuellen Aufmerksamkeit basieren. In diesem Fall gibt es keinen eindeutigen Fallback. Wenn eye tracking nicht verfügbar ist, müssen diese Funktionen möglicherweise deaktiviert werden.
+Ihre App kann das Anvieren mit den Augen auf eine einzigartige Weise verwenden, die speziell auf die Augen zugeschnitten ist. Beispielsweise das Animieren der Augen eines Avatars oder für wärmende Wärmebilds mit blickbasierter Aufmerksamkeit, die auf präzisen Informationen zur visuellen Aufmerksamkeit basieren. In diesem Fall gibt es keinen eindeutigen Fallback. Wenn eye tracking nicht verfügbar ist, müssen diese Funktionen möglicherweise deaktiviert werden.
 Auch hier empfehlen wir, dies dem Benutzer klar mitzuteilen, der möglicherweise nicht weiß, dass die Funktion nicht funktioniert.
 
 <br>
 
-Auf dieser Seite haben Sie hoffentlich eine gute Übersicht erhalten, damit Sie die Rolle der Eyetracking- und Eye-Gaze-Eingabe für HoloLens 2 verstehen können. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen zur Rolle des Anvierens mit den Augen für die [Interaktion mit Hologrammen,](eye-gaze-interaction.md)das [Anvieren mit](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) den Augen in Unity und das [Anvieren mit den Augen in DirectX](../develop/native/gaze-in-directx.md)an.
+Auf dieser Seite haben Sie hoffentlich eine gute Übersicht erhalten, damit Sie die Rolle der Blickverfolgung und der Eingabe für das Anverfolgen mit den Augen für HoloLens 2 verstehen können. Um mit der Entwicklung zu beginnen, sehen Sie sich unsere Informationen zur Rolle des Anvierens mit den Augen für die [Interaktion mit Hologrammen,](eye-gaze-interaction.md)das [Anvieren mit](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) den Augen in Unity und das [Anvieren mit den Augen in DirectX](../develop/native/gaze-in-directx.md)an.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -1,94 +1,94 @@
 ---
 title: Materialempfehlungen in Unreal
-description: Übersicht über Materialien in der Unreal Engine.
+description: Übersicht über Materialien in der Unreal-Engine.
 author: hferrone
 ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Entwicklung, Materialien, Dokumentation, Leitfäden, Features, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Entwicklung, Materialien, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: d5ce702495c95e8ca6d07a0209a4bc7d02f5d4d682415b028d63995e8910a7e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187698"
 ---
 # <a name="material-recommendations-in-unreal"></a>Materialempfehlungen in Unreal
 
-Die Materialien, die Sie verwenden, können direkt beeinflussen, wie gut Ihre Projekte in der Unreal Engine ausgeführt werden. Diese Seite fungiert als Schnellstart für die grundlegenden Einstellungen, die Sie verwenden sollten, um die optimale Leistung Ihrer gemischten Reality-Anwendungen zu erzielen.
+Die materialien, die Sie verwenden, können sich direkt darauf auswirken, wie gut Ihre Projekte in der Unreal-Engine ausgeführt werden. Diese Seite dient als Schnellstart für die grundlegenden Einstellungen, die Sie verwenden sollten, um die beste Leistung Ihrer Mixed Reality-Anwendungen zu erzielen.
 
-## <a name="using-customizeduvs"></a>Verwenden von customizeduvs
+## <a name="using-customizeduvs"></a>Verwenden von customizedUVs
 
-Wenn Sie eine UV-tisierung für Ihr Material durchführen müssen, verwenden Sie stattdessen customizeduvs, anstatt die UV-Struktur des Textur Knotens direkt zu ändern. Mit customizeduvs können Sie benutzerdefinierte Benutzerkonten in den Vertex-Shadern und nicht im Pixelshader bearbeiten.
+Wenn Sie UV-Kacheln für Ihr Material bereitstellen müssen, verwenden Sie CustomizedUVs, anstatt das UV des Texturknotens direkt zu ändern. Mit customizedUVs können Sie UVs in den Vertex-Shadern und nicht im Pixel-Shader bearbeiten.
 
-![Material Einstellungen in Unreal](images/unreal-materials-img-01c.png)
+![Materialeinstellungen in Unreal](images/unreal-materials-img-01c.png)
 
-Material Details finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) und in den bewährten Beispielen in den folgenden Screenshots:
+Ausführliche Informationen finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html) und beispiele für bewährte Methoden in den folgenden Screenshots:
 
-[ ![ Empfohlene Material Einstellungen in der ](images/unreal-materials-img-01.png) von Unreal ](images/unreal-materials-img-01.png#lightbox) 
- *empfohlenen Material Einrichtung*
+[ ![ Empfohlene Materialeinstellungen in ](images/unreal-materials-img-01.png) Unreal ](images/unreal-materials-img-01.png#lightbox) 
+ *– Setup empfohlener Materialien*
 
-[ ![ Nicht empfohlene Material Einstellungen in Unreal ](images/unreal-materials-img-01b.png) ](images/unreal-materials-img-01b.png#lightbox) 
- *Non-Recommended Material Setup*
+[ ![ Nicht empfohlene Materialeinstellungen ](images/unreal-materials-img-01b.png) in Unreal– ](images/unreal-materials-img-01b.png#lightbox) 
+ *Nicht empfohlene Materialeinrichtung*
 
 ## <a name="changing-blend-mode"></a>Ändern des Blend-Modus
 
-Es wird empfohlen, den Blend-Modus auf "undurchsichtig" festzulegen, es sei denn, es gibt einen starken Grund dafür Maskierte und durchlässiges Material sind langsam. Weitere Details zu den Materialien finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+Es wird empfohlen, den Blend-Modus auf nicht transparent festzulegen, es sei denn, es gibt einen starken Grund, dies andernfalls zu tun. Maskierte und transluzente Materialien sind langsam. Weitere Informationen zu Materialien finden Sie in der [Unreal Engine-Dokumentation.](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 
-![Ändern des Blend-Modus](images/unreal-materials-img-02.jpg)
+![Ändern des Blendmodus](images/unreal-materials-img-02.jpg)
 
-## <a name="updating-lighting-for-mobile"></a>Aktualisieren der Beleuchtung für mobile Geräte
+## <a name="updating-lighting-for-mobile"></a>Aktualisieren der Beleuchtung für Mobilgeräte
 
-Die vollständige Genauigkeit sollte deaktiviert werden. Lightmap-Beleuchtung kann durch das Einschalten von direktionalen Informationen abgewählt werden. Wenn diese Option deaktiviert ist, ist die Beleuchtung aus lightmaps flach, aber günstiger.
+Die vollständige Genauigkeit sollte deaktiviert werden. Die Beleuchtung von Lightmaps kann durch Drehen von Richtungsinformationen heruntergewählt werden. Wenn diese Option deaktiviert ist, ist die Beleuchtung von Lightmaps flach, aber kostengünstiger.
 
-![Mobile Material Einstellungen in Unreal](images/unreal-materials-img-03.jpg)
+![Einstellungen für mobiles Material in Unreal](images/unreal-materials-img-03.jpg)
 
-## <a name="adjusting-forward-shading"></a>Anpassen der vorwärts Schattierung
+## <a name="adjusting-forward-shading"></a>Anpassen der Vorwärtsschattierung
 
-Diese Optionen verbessern die visuelle Genauigkeit auf Kosten der Leistung. Sie sollten für maximale Leistung ausgeschaltet werden.
+Diese Optionen verbessern die Visuelle Genauigkeit auf Kosten der Leistung. Sie sollten für maximale Leistung deaktiviert werden.
 
-![Weiterleiten von Schattierungs Material-Einstellungen in Unreal](images/unreal-materials-img-04.jpg)
+![Einstellungen für Das Schattierungsmaterial in Unreal weiterleiten](images/unreal-materials-img-04.jpg)
 
-## <a name="setting-material-translucency"></a>Festlegen der Material Durchlässigkeit
+## <a name="setting-material-translucency"></a>Festlegen der Materialtransluzenz
 
-Gibt an, dass das lichtdurchlässiges Material nicht von der Blüte oder von DOF beeinflusst werden soll. Da beide Effekte in Mr selten vorkommen, sollte diese Einstellung standardmäßig auf ON festgelegt sein.
+Gibt an, dass das durchscheinende Material nicht von Derb oder DOF beeinflusst werden soll. Da beide Auswirkungen im MR selten sind, sollte diese Einstellung standardmäßig aktiviert sein.
 
-![Einstellung "Mobile separate Transluzenz" in Unreal](images/unreal-materials-img-05.jpg)
+![Mobile separate Transparenzeinstellung in Unreal](images/unreal-materials-img-05.jpg)
 
 ## <a name="optional-settings"></a>Optionale Einstellungen
 
-Die folgenden Einstellungen können die Leistung verbessern, aber beachten Sie, dass Sie bestimmte Funktionen deaktivieren. Verwenden Sie diese Einstellungen nur, wenn Sie sicher sind, dass Sie die betreffenden Features nicht benötigen.
+Die folgenden Einstellungen können die Leistung verbessern, aber beachten Sie, dass sie bestimmte Features deaktivieren. Verwenden Sie diese Einstellungen nur, wenn Sie sicher sind, dass Sie die betreffenden Features nicht benötigen.
 
-![Optionale Material Einstellungen in Unreal](images/unreal-materials-img-06.jpg)
+![Optionale Materialeinstellungen in Unreal](images/unreal-materials-img-06.jpg)
 
-Wenn Ihr Material keine Reflektionen oder glänzen erfordert, kann das Festlegen dieser Option zu einer enormen Leistungssteigerung führt. Bei internen Tests ist es so schnell wie "nicht beleuchtet", während Beleuchtungs Informationen bereitgestellt werden.
+Wenn Ihr Material keine Reflektionen oder Leuchtmittel erfordert, kann das Festlegen dieser Option eine enorme Leistungssteigerung bieten. Bei internen Tests ist es so schnell wie "unbelichtet", während Beleuchtungsinformationen zur Verfügung stehen.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
-Die folgenden Einstellungen sind nicht "Einstellungen", wie Sie die bewährten Methoden für Materialien betreffen.
+Im Folgenden sind nicht so viele "Einstellungen" enthalten wie bewährte Methoden im Zusammenhang mit Materialien.
 
-Wenn Sie Parameter erstellen, bevorzugen Sie die Verwendung von "statischen Parametern", sofern möglich. Statische Switches können verwendet werden, um einen vollständigen Branch eines Materials ohne Lauf Zeit Kosten zu entfernen. Instanzen können unterschiedliche Werte aufweisen, sodass es möglich ist, einen Vorlagen basierten Shader ohne Leistungseinbußen einzurichten. Der Nachteil ist, dass mehrere Permutationen erstellt werden, die eine erneute Shader-Kompilierung bewirken. Versuchen Sie, die Anzahl der statischen Parameter im Material und die Anzahl der Permutationen der verwendeten statischen Parameter zu minimieren. Weitere Informationen zum Rendern von Materialparametern finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter).
+Beim Erstellen von Parametern sollten Sie nach Möglichkeit "Statische Parameter" verwenden. Statische Switches können verwendet werden, um eine gesamte Verzweigung eines Materials ohne Laufzeitkosten zu entfernen. Instanzen können unterschiedliche Werte aufweisen, sodass ein Shader mit Vorlagen ohne Leistungseinbußen eingerichtet werden kann. Der Nachteil besteht darin, dass mehrere Permutationen erstellt werden, die zu einer Neukompilierung des Shaders führen. Versuchen Sie, die Anzahl der statischen Parameter im Material und die Anzahl der Permutationen dieser verwendeten statischen Parameter zu minimieren. Weitere Informationen zum Rendern von Materialparametern finden Sie in der [Unreal Engine-Dokumentation.](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)
 
-![Bewährte Methoden für Material Einstellungen](images/unreal-materials-img-07.jpg)
+![Bewährte Methoden für Materialeinstellungen](images/unreal-materials-img-07.jpg)
 
-Beim Erstellen von Material Instanzen sollte die-Einstellung für die **Material Instanz-Konstante** über die dynamische Material Instanz bevorzugt werden. Die **materialinstanzkonstante** ist ein instanziziertes Material, das nur einmal vor der Laufzeit berechnet.
+Beim Erstellen von Material Instances sollte Material **Instance Constant** gegenüber Material Instance Dynamic bevorzugt werden. **Material Instance Constant** ist ein instanziertes Material, das vor der Laufzeit nur einmal berechnet wird.
 
-Die über den Inhalts Browser erstellte Material Instanz (mit der **rechten Maustaste auf > Create Material instance**) ist eine Material Instanz-Konstante. Die dynamische Material Instanz wird über Code erstellt. Weitere Informationen zu Material Instanzen finden Sie in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html).
+Die über den Inhaltsbrowser erstellte Materialinstanz (**Rechtsklick > Materialinstanz erstellen)** ist eine Material Instance-Konstante. Material Instance Dynamic wird über Code erstellt. Weitere Informationen zu materialen Instanzen finden Sie in der [Unreal Engine-Dokumentation.](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)
 
-![Erstellen von Material Instanzen in Unreal](images/unreal-materials-img-08.png)
+![Erstellen von Materialinstanzen in Unreal](images/unreal-materials-img-08.png)
 
-Beobachten Sie die Komplexität ihrer Materialien/Shader. Sie können die Kosten für Ihr Material auf verschiedenen Plattformen anzeigen, indem Sie auf das Platt Form Statistik-Symbol klicken. Weitere Informationen zu Materialien finden Sie auch in der [Unreal Engine-Dokumentation](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html).
+Behalten Sie die Komplexität Ihrer Materialien/Shader im Auge. Sie können die Kosten für Ihr Material auf verschiedenen Plattformen anzeigen, indem Sie auf das Symbol Plattformstatistik klicken. Weitere Informationen zu Materialien finden Sie auch in der [Unreal Engine-Dokumentation.](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 
-![Erstellen von dynamischen Einstellungen für Material Instanzen in Unreal](images/unreal-materials-img-09.png)
+![Erstellen dynamischer Einstellungen für Materialinstanzen in Unreal](images/unreal-materials-img-09.png)
 
-Sie erhalten einen kurzen Überblick über die relative Komplexität Ihres Shaders über den Shader-Komplexitäts [Ansichtsmodus](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html).
+Sie können sich einen schnellen Überblick über die relative Komplexität [](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)Ihres Shaders über den Shader-Komplexitätsansichtsmodus verschaffen.
 
-* Hotkey im Ansichtsmodus: alt + 8
-* Konsolen Befehl: ViewMode shaderkomplexität
+* Hotkey im Ansichtsmodus: ALT + 8
+* Konsolenbefehl: viewmode shadercomplexity
 
-![Komplexität von Material in Unreal](images/unreal-materials-img-10.png)
+![Materialkomplexität in Unreal](images/unreal-materials-img-10.png)
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Mobile Materialien](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)
 * [Ansichtsmodi](https://docs.unrealengine.com/Engine/UI/LevelEditor/Viewports/ViewModes/index.html)
-* [Material Instanzen](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)
+* [Material instances (Materialinstanzen)](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)

@@ -1,43 +1,43 @@
 ---
 title: Rendern in DirectX
-description: Erfahren Sie, wie Sie Inhalte in DirectX-Anwendungen für Windows Mixed Reality aktualisieren und Rendering.
+description: Erfahren Sie, wie Sie Inhalte in DirectX-Anwendungen aktualisieren und rendern, um Windows Mixed Reality.
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, Rendering, 3D-Grafiken, holographicframe, Renderschleife, Update Schleife, Exemplarische Vorgehensweise, Beispielcode, Direct3D
-ms.openlocfilehash: f62df75f8febc3f3ee6e7c98f2c8fd91082a4466
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality, Hologramme, Rendering, 3D-Grafiken, HolographicFrame, Renderschleife, Updateschleife, exemplarische Vorgehensweise, Beispielcode, Direct3D
+ms.openlocfilehash: 2c3dd32f5782d6096c6560ec6db55ef1cc7bb533dddb0a4b5fe87cd91bb2f81b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583785"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209448"
 ---
 # <a name="rendering-in-directx"></a>Rendern in DirectX
 
 > [!NOTE]
-> Dieser Artikel bezieht sich auf die älteren WinRT-APIs.  Bei neuen nativen App-Projekten wird die Verwendung der **[openxr-API](openxr-getting-started.md)** empfohlen.
+> Dieser Artikel bezieht sich auf die älteren nativen WinRT-APIs.  Für neue native App-Projekte wird die Verwendung der **[OpenXR-API empfohlen.](openxr-getting-started.md)**
 
-Windows Mixed Reality basiert auf DirectX, um für Benutzer eine umfassende, grafische Darstellung von 3D-Funktionen zu erstellen. Die Renderingleistung befindet sich direkt oberhalb von DirectX, wodurch Apps die Position und Ausrichtung der vom System vorhergesagten von Holographic Scene-Observer überschreiten können. Der Entwickler kann dann basierend auf den einzelnen Kameras seine Hologramme finden, sodass die APP diese Hologramme in verschiedenen räumlichen Koordinatensystemen gereinigen kann, wenn der Benutzer sich bewegt.
+Windows Mixed Reality basiert auf DirectX, um umfangreiche, 3D-grafische Benutzeroberflächen für Benutzer zu erzeugen. Die Renderingabstraktion befindet sich direkt über DirectX, wodurch Apps über die Position und Ausrichtung von holografischen Szenenbeobachtern, die vom System vorhergesagt werden, eine Vorhersage erhalten. Der Entwickler kann dann seine Hologramme basierend auf jeder Kamera suchen, damit die App diese Hologramme in verschiedenen räumlichen Koordinatensystemen rendern kann, während sich der Benutzer bewegt.
 
-Hinweis: in dieser exemplarischen Vorgehensweise wird das Holographic-Rendering in Direct3D 11 beschrieben. Eine Direct3D 12-Windows Mixed Reality-App-Vorlage wird auch mit der Erweiterung "Mixed Reality App Templates" bereitgestellt.
+Hinweis: In dieser exemplarischen Vorgehensweise wird das holografische Rendering in Direct3D 11 beschrieben. Eine Direct3D 12 Windows Mixed Reality-App-Vorlage wird auch mit der Mixed Reality-App-Vorlagenerweiterung bereitgestellt.
 
 ## <a name="update-for-the-current-frame"></a>Update für den aktuellen Frame
 
-Um den Anwendungs Zustand für holograms zu aktualisieren, führt die APP einmal pro Frame folgende Aktionen aus:
-* Verschaffen Sie sich einen <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> aus dem Anzeige Verwaltungssystem.
-* Aktualisieren Sie die Szene mit der aktuellen Vorhersage, bei der die Kameraansicht angezeigt wird, wenn das Rendering abgeschlossen ist. Beachten Sie, dass für die Holographic-Szene mehr als eine Kamera vorhanden sein kann.
+Um den Anwendungsstatus für Hologramme zu aktualisieren, wird die App einmal pro Frame:
+* Hier erhalten <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">Sie einen HolographicFrame</a> aus dem Anzeigeverwaltungssystem.
+* Aktualisieren Sie die Szene mit der aktuellen Vorhersage, wo sich die Kameraansicht befindet, wenn das Rendern abgeschlossen ist. Beachten Sie, dass es mehrere Kamera für die holografische Szene geben kann.
 
-Zum Rendering in Holographic Camera-Ansichten führt die APP einmal pro Frame folgende Aktionen aus:
-* Rendering Sie für jede Kamera die Szene für den aktuellen Frame, indem Sie die Kameraansicht und Projektions Matrizen aus dem System verwenden.
+Zum Rendern in holografischen Kameraansichten wird die App einmal pro Frame:
+* Rendern Sie für jede Kamera die Szene für den aktuellen Frame, indem Sie die Kameraansicht und Projektionsmatrizen aus dem System verwenden.
 
-### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>Erstellen Sie einen neuen Holographic Frame, und rufen Sie seine Vorhersage ab
+### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>Erstellen eines neuen holografischen Rahmens und Erhalten der Vorhersage
 
-Der <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> enthält Informationen, die die APP benötigt, um den aktuellen Frame zu aktualisieren und zu Rendering. Die APP startet jeden neuen Frame durch Aufrufen der **createnextframe** -Methode. Wenn diese Methode aufgerufen wird, werden Vorhersagen mit den neuesten verfügbaren Sensordaten erstellt und im **currentvorhersage** -Objekt gekapselt.
+Der <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame enthält</a> Informationen, die die App aktualisieren und den aktuellen Frame rendern muss. Die App beginnt jeden neuen Frame, indem sie die **CreateNextFrame-Methode** aufruft. Wenn diese Methode aufgerufen wird, werden Vorhersagen mithilfe der neuesten verfügbaren Sensordaten getroffen und im **CurrentPrediction-Objekt gekapselt.**
 
-Für jeden gerenderten Frame muss ein neues Frame Objekt verwendet werden, da es nur für einen Zeitpunkt gültig ist. Die **currentvorhersage** -Eigenschaft enthält Informationen, wie z. b. die Kameraposition. Die Informationen werden auf den genauen Zeitpunkt hochgerechnet, zu dem der Frame erwartungsgemäß für den Benutzer sichtbar ist.
+Für jeden gerenderten Frame muss ein neues Frameobjekt verwendet werden, da es nur für einen bestimmten Zeitpunkt gültig ist. Die **CurrentPrediction-Eigenschaft** enthält Informationen wie die Kameraposition. Die Informationen werden auf den genauen Zeitpunkt extrapoliert, zu dem der Frame für den Benutzer sichtbar sein soll.
 
-Der folgende Code wird aus **appmain:: Update** entnommen:
+Der folgende Code wurde aus **AppMain::Update entfernt:**
 
 ```cpp
 // The HolographicFrame has information that the app needs in order
@@ -50,17 +50,17 @@ HolographicFrame holographicFrame = m_holographicSpace.CreateNextFrame();
 HolographicFramePrediction prediction = holographicFrame.CurrentPrediction();
 ```
 
-### <a name="process-camera-updates"></a>Verarbeiten von Kamera Updates
+### <a name="process-camera-updates"></a>Verarbeiten von Kameraupdates
 
-Backpuffer können von Frame zu Frame geändert werden. Ihre APP muss den Hintergrund Puffer für jede Kamera validieren und Ressourcen Sichten und tiefen Puffer nach Bedarf freigeben und neu erstellen. Beachten Sie, dass der Satz von Posen in der Vorhersage die autoritative Liste der Kameras ist, die im aktuellen Frame verwendet werden. Normalerweise verwenden Sie diese Liste, um den Satz von Kameras zu durchlaufen.
+Hintergrundpuffer können sich von Frame zu Frame ändern. Ihre App muss den Hintergrundpuffer für jede Kamera überprüfen und Ressourcenansichten und Tiefenpuffer nach Bedarf frei geben und neu erstellen. Beachten Sie, dass die Gruppe von Posen in der Vorhersage die autoritative Liste der Kameras ist, die im aktuellen Rahmen verwendet werden. In der Regel verwenden Sie diese Liste, um die Gruppe von Kameras zu iterieren.
 
-Aus **appmain:: Update**:
+Über **AppMain::Update:**
 
 ```cpp
 m_deviceResources->EnsureCameraResources(holographicFrame, prediction);
 ```
 
-Aus **deviceresources:: ensurecameraresources**:
+Über **DeviceResources::EnsureCameraResources:**
 
 ```cpp
 for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
@@ -71,20 +71,20 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 }
 ```
 
-### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>Das Koordinatensystem zur Verwendung als Grundlage für das Rendering erhalten
+### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>Das Koordinatensystem, das als Grundlage für das Rendering verwendet werden soll
 
-Windows Mixed Reality ermöglicht der APP, verschiedene [Koordinatensysteme](coordinate-systems-in-directx.md)zu erstellen, z. b. angefügte und stationäre Bezugsrahmen für die Nachverfolgung von Positionen in der physischen Welt. Diese Koordinatensysteme können von Ihrer APP dann verwendet werden, um zu verdeutlichen, wo die einzelnen Frames von holograms dargestellt werden. Wenn Sie Koordinaten über eine API anfordern, übergeben Sie immer das <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">spatialcoordinatesystem</a> , in dem Sie die Koordinaten ausdrücken möchten.
+Windows Mixed Reality Kann Ihre App verschiedene Koordinatensysteme [erstellen,](coordinate-systems-in-directx.md)z. B. angefügte und festliche Referenzframes zum Nachverfolgen von Orten in der physischen Welt. Ihre App kann dann diese Koordinatensysteme verwenden, um zu erfahren, wo Hologramme für jeden Frame gerendert werden. Wenn Sie Koordinaten von einer API anfordern, übergeben Sie immer das <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem,</a> in dem diese Koordinaten ausgedrückt werden sollen.
 
-Aus **appmain:: Update**:
+Über **AppMain::Update:**
 
 ```cpp
 pose = SpatialPointerPose::TryGetAtTimestamp(
     m_stationaryReferenceFrame.CoordinateSystem(), prediction.Timestamp());
 ```
 
-Diese Koordinatensysteme können dann zum Generieren von Stereo Ansichts Matrizen verwendet werden, wenn der Inhalt in der Szene gerendert wird.
+Diese Koordinatensysteme können dann verwendet werden, um Beim Rendern des Inhalts in Ihrer Szene Stereoansichtsmatrizen zu generieren.
 
-Aus **cameraresources:: updateviewprojectionbuffer**:
+Von **CameraResources::UpdateViewProjectionBuffer:**
 
 ```cpp
 // Get a container object with the view and projection matrices for the given
@@ -92,18 +92,18 @@ Aus **cameraresources:: updateviewprojectionbuffer**:
 auto viewTransformContainer = cameraPose.TryGetViewTransform(coordinateSystem);
 ```
 
-### <a name="process-gaze-and-gesture-input"></a>Verarbeiten von Blick und Gesten Eingaben
+### <a name="process-gaze-and-gesture-input"></a>Verarbeiten der Eingabe von Anving und Gesten
 
-Die Eingaben und [Hand](hands-and-motion-controllers-in-directx.md) Eingaben sind nicht Zeit basiert und müssen in der **Steptimer** [-Funktion](gaze-in-directx.md) nicht aktualisiert werden. Diese Eingabe muss jedoch in den einzelnen Frames angezeigt werden.
+[Anving](gaze-in-directx.md) [und](hands-and-motion-controllers-in-directx.md) Handeingaben sind nicht zeitbasierte Eingaben und müssen in der **StepTimer-Funktion nicht aktualisiert** werden. Diese Eingabe ist jedoch etwas, das die App jeden Frame betrachten muss.
 
-### <a name="process-time-based-updates"></a>Zeitbasierte Updates verarbeiten
+### <a name="process-time-based-updates"></a>Verarbeiten zeitbasierter Updates
 
-Jede Echtzeit-renderinganwendung benötigt eine Methode, um zeitbasierte Updates zu verarbeiten. die Windows Holographic-App-Vorlage verwendet eine **Step Timer** -Implementierung, ähnlich wie der in der APP-Vorlage DirectX 11 UWP bereitgestellte Steptimer. Diese Beispiel-Hilfsklasse von Steptimer kann festes Update für Zeit Schritte, Variablen Aktualisierungszeit Schritte und den Standardmodus für Variablen Zeit Schritte bereitstellen.
+Jede Echtzeit-Rendering-App benötigt eine Möglichkeit, zeitbasierte Updates zu verarbeiten. Die Windows Holographic-App-Vorlage verwendet eine **StepTimer-Implementierung,** ähnlich der StepTimer-Implementierung, die in der DirectX 11-UWP-App-Vorlage bereitgestellt wird. Diese StepTimer-Beispiel-Hilfsklasse kann feste Zeitschrittupdates, variable Zeitschrittupdates bereitstellen, und der Standardmodus ist variable Zeitschritte.
 
-Für das Holographic-Rendering haben wir uns entschieden, die Timer-Funktion nicht zu viel zu nutzen, da Sie Sie als einen festgelegten Zeit Schritt konfigurieren können. Sie wird möglicherweise mehrmals pro Frame aufgerufen – oder überhaupt nicht für einige Frames – und unsere Holographic-Datenaktualisierungen sollten einmal pro Frame erfolgen.
+Für holografisches Rendering haben wir uns dafür entschieden, nicht zu viel in die Timerfunktion zu setzen, da Sie sie als festen Zeitschritt konfigurieren können. Es kann mehr als einmal pro Frame oder gar nicht für einige Frames aufgerufen werden, und unsere holografischen Datenaktualisierungen sollten einmal pro Frame geschehen.
 
 
-Aus **appmain:: Update**:
+Über **AppMain::Update:**
 
 ```cpp
 m_timer.Tick([this]()
@@ -112,11 +112,11 @@ m_timer.Tick([this]()
 });
 ```
 
-### <a name="position-and-rotate-holograms-in-your-coordinate-system"></a>Positionieren und Drehen von holograms im Koordinatensystem
+### <a name="position-and-rotate-holograms-in-your-coordinate-system"></a>Positionieren und Drehen von Hologrammen in Ihrem Koordinatensystem
 
-Wenn Sie in einem einzelnen Koordinatensystem arbeiten, wie die Vorlage mit **spatialstationaryreferenceframe** funktioniert, unterscheidet sich dieser Vorgang nicht von dem, was Sie anderweitig in 3D-Grafiken verwendet haben. Hier drehen wir den Cube und legen die Modell Matrix basierend auf der Position im stationären Koordinatensystem fest.
+Wenn Sie in einem einzelnen Koordinatensystem arbeiten, wie dies bei der Vorlage mit dem **SpatialStationaryReferenceFrame** der Fall ist, ist dieser Prozess nicht anders als sonst in 3D-Grafiken. Hier drehen wir den Würfel und legen die Modellmatrix basierend auf der Position im stationären Koordinatensystem fest.
 
-Von **spinningcuberenderer:: Update**:
+Von **SpinningCubeRenderer::Update:**
 
 ```cpp
 // Rotate the cube.
@@ -141,13 +141,13 @@ const XMMATRIX modelTransform = XMMatrixMultiply(modelRotation, modelTranslation
 XMStoreFloat4x4(&m_modelConstantBufferData.model, XMMatrixTranspose(modelTransform));
 ```
 
-**Hinweis zu erweiterten Szenarien:** Der spincube ist ein einfaches Beispiel dafür, wie ein – Hologramm innerhalb eines einzelnen Referenzrahmens positioniert wird. Es ist auch möglich, [mehrere spatialcoordinatesystems](coordinate-systems-in-directx.md) gleichzeitig im gleichen gerenderten Frame zu verwenden.
+**Beachten Sie erweiterte Szenarien:** Der sich drehende Würfel ist ein einfaches Beispiel für die Position eines Hologramms innerhalb eines einzelnen Referenzrahmens. Es ist auch möglich, mehrere [SpatialCoordinateSystems](coordinate-systems-in-directx.md) gleichzeitig im gleichen gerenderten Frame zu verwenden.
 
-### <a name="update-constant-buffer-data"></a>Aktualisieren konstanter Puffer Daten
+### <a name="update-constant-buffer-data"></a>Aktualisieren konstanter Pufferdaten
 
-Modell Transformationen für Inhalt werden wie gewohnt aktualisiert. Jetzt verfügen Sie über die gültigen Transformationen für das Koordinatensystem, das Sie in rendern.
+Modelltransformationen für Inhalte werden wie gewohnt aktualisiert. Sie haben nun gültige Transformationen für das Koordinatensystem berechnet, das Sie rendern werden.
 
-Von **spinningcuberenderer:: Update**:
+Von **SpinningCubeRenderer::Update:**
 
 ```cpp
 // Update the model transform buffer for the hologram.
@@ -161,36 +161,36 @@ context->UpdateSubresource(
 );
 ```
 
-Wie sieht es mit Ansichts-und Projektions Transformationen aus? Um optimale Ergebnisse zu erzielen, möchten wir warten, bis wir fast bereit für unsere Draw-Aufrufe sind, bevor wir diese erhalten.
+Wie sieht es mit Ansichts- und Projektionstransformationen aus? Um optimale Ergebnisse zu erzielen, möchten wir warten, bis wir für unsere Zeichnen-Aufrufe fast bereit sind, bevor wir diese erhalten.
 
-## <a name="render-the-current-frame"></a>Aktuellen Frame Rendering
+## <a name="render-the-current-frame"></a>Rendern des aktuellen Frames
 
-Das Rendering in Windows Mixed Reality unterscheidet sich nicht wesentlich vom Rendering in einer 2D-Mono-Anzeige, es gibt jedoch einige Unterschiede:
-* Holographic-Frame Vorhersagen sind wichtig. Je näher die Vorhersage ist, wenn Ihr Frame dargestellt wird, desto besser werden die Hologramme aussehen.
-* Windows Mixed Reality steuert die Kameraansichten. Geben Sie für jeden ein, da der Holographic-Frame Sie später für Sie darstellt.
-* Es wird empfohlen, das Stereo Rendering mithilfe der instanzierten Zeichnung in ein renderzielarray durchzusetzen. In der Holographic-App-Vorlage wird die empfohlene Vorgehensweise für das Zeichnen in ein renderzielarray verwendet, das eine renderzielansicht in einem **Texture2DArray** verwendet.
-* Wenn Sie ohne Stereo-Instanziierung Renderingfunktion verwenden möchten, müssen Sie zwei nicht-Array-rendertargetviews erstellen, eine für jedes Auge. Jede rendertargetviews verweist auf einen der beiden Slices in der **Texture2DArray** , die für die APP vom System bereitgestellt werden. Dies wird nicht empfohlen, da es in der Regel langsamer als die Verwendung der Instanziierung ist.
+Das Rendern auf Windows Mixed Reality sich nicht wesentlich vom Rendern auf einem 2D-Mono-Display, aber es gibt einige Unterschiede:
+* Holografische Framevorhersagen sind wichtig. Je näher die Vorhersage an der Vorhersage liegt, wenn Ihr Frame dargestellt wird, desto besser sehen Ihre Hologramme aus.
+* Windows Mixed Reality steuert die Kameraansichten. Rendern Sie in jedem, da der holografische Rahmen sie später für Sie präsentiert.
+* Es wird empfohlen, Stereorendering mithilfe von Instanzzeichnungen in ein Renderzielarray zu erstellen. Die holografische App-Vorlage verwendet den empfohlenen Ansatz der Instanzzeichnung in ein Renderzielarray, das eine Renderzielansicht auf einem **Texture2DArray verwendet.**
+* Wenn Sie rendern möchten, ohne Stereo-Instancing zu verwenden, müssen Sie zwei RenderTargetViews ohne Array erstellen, eine für jedes Auge. Jedes RenderTargetViews-Objekt verweist auf einen der beiden Slices im **Texture2DArray,** das der App vom System bereitgestellt wird. Dies wird nicht empfohlen, da es in der Regel langsamer als die Verwendung der -Instancing ist.
 
-### <a name="get-an-updated-holographicframe-prediction"></a>Holen Sie sich eine aktualisierte holographicframe-Vorhersage
+### <a name="get-an-updated-holographicframe-prediction"></a>Erhalten einer aktualisierten HolographicFrame-Vorhersage
 
-Durch das Aktualisieren der Frame Vorhersage wird die Effektivität der Bildstabilisierung erhöht. Sie erhalten eine genauere Positionierung von holograms aufgrund der kürzeren Zeit zwischen der Vorhersage und dem Zeitpunkt, zu dem der Frame für den Benutzer sichtbar ist. Aktualisieren Sie Ihre Frame Vorhersage idealerweise direkt vor dem Rendering.
+Durch das Aktualisieren der Framevorhersage wird die Effektivität der Bildstabilisierung verbessert. Sie erhalten eine genauere Positionierung von Hologrammen aufgrund der kürzeren Zeit zwischen der Vorhersage und dem Zeitpunkt, zu dem der Frame für den Benutzer sichtbar ist. Im Idealfall aktualisieren Sie Ihre Framevorhersage direkt vor dem Rendering.
 
 ```cpp
 holographicFrame.UpdateCurrentPrediction();
 HolographicFramePrediction prediction = holographicFrame.CurrentPrediction();
 ```
 
-### <a name="render-to-each-camera"></a>An jede Kamera Rendering
+### <a name="render-to-each-camera"></a>Rendern für jede Kamera
 
-Schleife für den Satz von Kamera stellt in der Vorhersage dar und renderauf jeder Kamera in diesem Satz.
+Schleife der Kamera, die in der Vorhersage dargestellt wird, und Rendern für jede Kamera in diesem Satz.
 
-**Einrichten Ihres Renderings**
+**Einrichten des Renderingpasses**
 
-Windows Mixed Reality verwendet das stereorenderingrendering, um die Illusion von Tiefe zu verbessern und die stereoscopiisch zu rendern, sodass sowohl die linke als auch die Rechte Anzeige aktiv ist. Beim stereorenderrendering gibt es einen Offset zwischen den beiden anzeigen, die das Gehirn als tatsächliche Tiefe abstimmen kann. In diesem Abschnitt wird das stereoserienrendering mithilfe der Instanziierung mithilfe von Code aus der Windows Holographic App-Vorlage behandelt.
+Windows Mixed Reality verwendet stereoaktives Rendering, um die Tiefe zu verbessern und stereoaktiv zu rendern, sodass sowohl die linke als auch die rechte Anzeige aktiv sind. Beim Stereodarstellungsrendering gibt es einen Offset zwischen den beiden Anzeigen, den das Gehirn als tatsächliche Tiefe abstimmen kann. In diesem Abschnitt wird das Stereo-Rendering mithilfe von Instancing mithilfe von Code aus der Windows Holographic-App-Vorlage behandelt.
 
-Jede Kamera verfügt über ein eigenes Renderziel (BackBuffer) und Ansichts-und Projektions Matrizen in den Holographic-Raum. Ihre APP muss alle anderen kamerabasierten Ressourcen erstellen, z. b. den tiefen Puffer pro Kamera. In der Windows Holographic-App-Vorlage stellen wir eine Hilfsklasse bereit, um diese Ressourcen zusammen in DX:: cameraresources zu bündeln. Beginnen Sie, indem Sie die renderzielsichten einrichten:
+Jede Kamera verfügt über ein eigenes Renderziel (Hintergrundpuffer) und Ansichts- und Projektionsmatrizen im holografischen Raum. Ihre App muss alle anderen kamerabasierten Ressourcen , z. B. den Tiefenpuffer, pro Kamera erstellen. In der Windows Holographic-App-Vorlage stellen wir eine Hilfsklasse zum Bündeln dieser Ressourcen in DX::CameraResources zur Verfügung. Beginnen Sie mit dem Einrichten der Renderzielansichten:
 
-Aus **appmain:: Rendering**:
+Aus **AppMain::Render:**
 
 ```cpp
 // This represents the device-based resources for a HolographicCamera.
@@ -219,11 +219,11 @@ context->ClearDepthStencilView(
     depthStencilView, D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 ```
 
-**Verwenden der Vorhersage, um die Ansichts-und Projektions Matrizen für die Kamera zu erhalten**
+**Verwenden der Vorhersage zum Erhalten der Ansichts- und Projektionsmatrizen für die Kamera**
 
-Die Ansichts-und Projektions Matrizen für jede holografische Kamera werden bei jedem Frame geändert. Aktualisieren Sie die Daten im Konstanten Puffer für jede holografische Kamera. Führen Sie diese Schritte aus, nachdem Sie die Vorhersage aktualisiert haben und bevor Sie für diese Kamera Draw-Aufrufe durchführen.
+Die Ansichts- und Projektionsmatrizen für jede holografische Kamera ändern sich mit jedem Frame. Aktualisieren Sie die Daten im konstanten Puffer für jede holografische Kamera. Tun Sie dies, nachdem Sie die Vorhersage aktualisiert haben, und bevor Sie Zeichnen-Aufrufe für diese Kamera machen.
 
-Aus **appmain:: Rendering**:
+Aus **AppMain::Render:**
 
 ```cpp
 // The view and projection matrices for each holographic camera will change
@@ -239,10 +239,10 @@ if (m_stationaryReferenceFrame)
 bool cameraActive = pCameraResources->AttachViewProjectionBuffer(m_deviceResources);
 ```
 
-Hier wird gezeigt, wie die Matrizen von der Kamera bezogen werden. Während dieses Vorgangs erhalten wir auch den aktuellen Viewport für die Kamera. Beachten Sie, wie wir ein Koordinatensystem bereitstellen: Dies ist das gleiche Koordinatensystem, das wir zum Verständnis des Blicks verwendet haben. es ist dasselbe Koordinatensystem, das wir zum Positionieren des drehenden Cubes verwendet haben.
+Hier zeigen wir, wie die Matrizen aus der Kamerapose erworben werden. Während dieses Vorgangs erhalten wir auch den aktuellen Viewport für die Kamera. Beachten Sie, wie wir ein Koordinatensystem bereitstellen: Dies ist das gleiche Koordinatensystem, das wir zum Verstehen des Anvierens verwendet haben, und es ist dasselbe, das wir zum Positionieren des sich drehenden Würfels verwendet haben.
 
 
-Aus **cameraresources:: updateviewprojectionbuffer**:
+Von **CameraResources::UpdateViewProjectionBuffer:**
 
 ```cpp
 // The system changes the viewport on a per-frame basis for system optimizations.
@@ -290,10 +290,10 @@ if (viewTransformAcquired)
 }
 ```
 
-Der Viewport sollte jeden Frame festlegen. Der Vertex-Shader (zumindest) benötigt in der Regel Zugriff auf die Ansichts-/Projektionsdaten.
+Der Viewport sollte für jeden Frame festgelegt werden. Ihr Vertex-Shader (zumindest) benötigt im Allgemeinen Zugriff auf die Ansichts-/Projektionsdaten.
 
 
-Aus **cameraresources:: attachviewprojectionbuffer**:
+Von **CameraResources::AttachViewProjectionBuffer:**
 
 ```cpp
 // Set the viewport for this camera.
@@ -307,15 +307,15 @@ context->VSSetConstantBuffers(
 );
 ```
 
-**Renderer in den Kamera-Hintergrund Puffer und Commit für den tiefen Puffer** aus:
+**Rendern Sie in den Kamera-Hintergrundpuffer, und führen Sie einen Commit für den Tiefenpuffer aus:**
 
-Es empfiehlt sich, zu überprüfen, ob **trygetviewtransform** erfolgreich war, bevor versucht wird, die Ansichts-/Projektionsdaten zu verwenden, denn wenn das Koordinatensystem nicht erstellbar ist (z. b. wenn die Überwachung unterbrochen wurde), kann Ihre APP nicht für diesen Frame Renderingvorgänge Die Vorlage ruft " **Rendering** " nur für den drehenden Cube auf, wenn die **cameraresources** -Klasse ein erfolgreiches Update angibt.
+Es empfiehlt sich, zu überprüfen, ob **TryGetViewTransform** erfolgreich war, bevor Sie versuchen, die Ansichts-/Projektionsdaten zu verwenden, da Ihre App für diesen Frame nicht rendern kann, wenn das Koordinatensystem nicht lösbar ist (z. B. wenn die Nachverfolgung unterbrochen wurde). Die Vorlage ruft **Render** für den drehenden Cube nur auf, wenn die **CameraResources-Klasse** ein erfolgreiches Update angibt.
 
-Windows Mixed Reality umfasst Features für die [Bildstabilisierung](../platform-capabilities-and-apis/hologram-stability.md) , damit holograms positioniert werden, wenn ein Entwickler oder Benutzer Sie in der Welt einfügt. Die Bildstabilisierung hilft dabei, die in einer Renderingpipeline enthaltene Latenz zu verbergen, um den Benutzern eine optimale Benutzererfahrung zu bieten. Es kann ein Fokuspunkt angegeben werden, um die Bildstabilisierung noch weiter zu verbessern, oder es kann ein tiefen Puffer bereitgestellt werden, um die optimierte Bildstabilisierung in Echtzeit zu berechnen.
+Windows Mixed Reality enthält Funktionen für die [Bildstabilität,](../platform-capabilities-and-apis/hologram-stability.md) um Hologramme an der Position zu halten, an der ein Entwickler oder Benutzer sie in der Welt positioniert. Die Bildstabilität hilft dabei, die Latenz in einer Renderingpipeline auszublenden, um die besten holografischen Erfahrungen für Benutzer sicherzustellen. Ein Fokuspunkt kann angegeben werden, um die Bildunterstärkung noch weiter zu verbessern, oder ein Tiefenpuffer kann bereitgestellt werden, um eine optimierte Bildstabilität in Echtzeit zu berechnen.
 
-Um optimale Ergebnisse zu erzielen, sollte Ihre APP einen tiefen Puffer mithilfe der <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> -API bereitstellen. Die gemischte Realität von Windows kann dann Geometrie Informationen aus dem tiefen Puffer verwenden, um die Bildstabilisierung in Echtzeit zu optimieren. Die Vorlage für die Windows Holographic-App führt standardmäßig einen Commit für den tiefen Puffer der app durch
+Um optimale Ergebnisse zu erzielen, sollte Ihre App mithilfe der <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer-API</a> einen Tiefenpuffer bereitstellen. Windows Mixed Reality können dann Geometrieinformationen aus dem Tiefenpuffer verwenden, um die Bildstabilität in Echtzeit zu optimieren. Die Windows Holographic-App-Vorlage committet standardmäßig den Tiefenpuffer der App und hilft dabei, die Hologrammstabilität zu optimieren.
 
-Aus **appmain:: Rendering**:
+Über **AppMain::Render:**
 
 ```cpp
 // Only render world-locked content when positional tracking is active.
@@ -343,9 +343,9 @@ if (cameraActive)
 ```
 
 >[!NOTE]
->Windows verarbeitet Ihre tiefe Textur auf der GPU, daher muss es möglich sein, den tiefen Puffer als Shaderressource zu verwenden. Der ID3D11Texture2D, den Sie erstellen, sollte ein typloses Format aufweisen und als Shader-Ressourcen Ansicht gebunden werden. Im folgenden finden Sie ein Beispiel für das Erstellen einer tiefen Textur, die für die Bildstabilisierung committet werden kann.
+>Windows verarbeitet Ihre Tiefentextur auf der GPU, daher muss es möglich sein, Ihren Tiefenpuffer als Shaderressource zu verwenden. Die id3D11Texture2D, die Sie erstellen, sollte in einem typlosen Format vorliegen und als Shaderressourcenansicht gebunden werden. Im Folgenden finden Sie ein Beispiel für das Erstellen einer Tiefentextur, die für die Bildinstabilisierung festgelegt werden kann.
 
-Code für die **Erstellung von tiefen Puffer Ressourcen für CommitDirect3D11DepthBuffer**:
+Code für **die Erstellung von Tiefenpufferressourcen für CommitDirect3D11DepthBuffer:**
 
 ```cpp
 // Create a depth stencil view for use with 3D rendering if needed.
@@ -377,11 +377,11 @@ winrt::check_hresult(
     ));
 ```
 
-**Holographic-Inhalt zeichnen**
+**Zeichnen holografischer Inhalte**
 
-Die Vorlage für die Windows Holographic-App rendert Inhalte in Stereo mithilfe der empfohlenen Vorgehensweise zum Zeichnen der instanziierten Geometrie in eine Texture2DArray der Größe 2. Sehen wir uns den Teil der Instanziierung an und erläutert, wie er in Windows Mixed Reality funktioniert.
+Die Windows Holographic-App-Vorlage rendert Inhalte in Stereo, indem die empfohlene Technik verwendet wird, instanzierte Geometrie in ein Texture2DArray der Größe 2 zu zeichnen. Sehen wir uns den Instanziierungsteil und die Funktionsweise auf Windows Mixed Reality an.
 
-Von **spinningcuberenderer:: Rendering**:
+Von **SpinningCubeRenderer::Render**:
 
 ```cpp
 // Draw the objects.
@@ -394,9 +394,9 @@ context->DrawIndexedInstanced(
 );
 ```
 
-Jede Instanz greift auf eine andere Ansicht/Projektions Matrix aus dem Konstanten Puffer zu. Hier ist die Konstante Puffer Struktur, die nur ein Array aus zwei Matrizen ist.
+Jede Instanz greift auf eine andere Ansichts-/Projektionsmatrix aus dem Konstantenpuffer zu. Hier ist die konstante Pufferstruktur, die nur ein Array von zwei Matrizen ist.
 
-Aus " **vertexshadershared. HLSL**", enthalten in " **vprtvertexshader. HLSL**":
+Aus **VertexShaderShared.hlsl**, enthalten durch **VPRTVertexShader.hlsl**:
 
 ```HLSL
 // A constant buffer that stores each set of view and projection matrices in column-major format.
@@ -406,9 +406,9 @@ cbuffer ViewProjectionConstantBuffer : register(b1)
 };
 ```
 
-Der Array Index des Renderziels muss für jedes Pixel festgelegt werden. Im folgenden Code Ausschnitt wird "Output. viewId" der **SV_RenderTargetArrayIndex** Semantik zugeordnet. Dies erfordert die Unterstützung einer optionalen Direct3D 11,3-Funktion, mit der die Semantik des Renderziel-Array Indexes aus jeder Shader-Stufe festgelegt werden kann.
+Der Renderzielarrayindex muss für jedes Pixel festgelegt werden. Im folgenden Codeausschnitt wird output.viewId der **SV_RenderTargetArrayIndex** Semantik zugeordnet. Dies erfordert Unterstützung für ein optionales Direct3D 11.3-Feature, mit dem die Indexsemantik des Renderzielarrays in jeder Shaderphase festgelegt werden kann.
 
-Aus **vprtvertexshader. HLSL**:
+Über **VPRTVertexShader.hlsl**:
 
 ```HLSL    
 // Per-vertex data passed to the geometry shader.
@@ -422,7 +422,7 @@ struct VertexShaderOutput
 };
 ```
 
-Aus " **vertexshadershared. HLSL**", enthalten in " **vprtvertexshader. HLSL**":
+Aus **VertexShaderShared.hlsl**, enthalten durch **VPRTVertexShader.hlsl**:
 
 ```HLSL
 // Per-vertex data used as input to the vertex shader.
@@ -462,13 +462,13 @@ VertexShaderOutput main(VertexShaderInput input)
 }
 ```
 
-Wenn Sie Ihre vorhandenen instanziierten Zeichentechniken mit dieser Methode zum Zeichnen in ein Array von Stereo Renderziel verwenden möchten, zeichnen Sie die doppelte Anzahl von Instanzen, die Sie normalerweise besitzen. Dividieren Sie im Shader **Input. instId** durch 2, um die ursprüngliche Instanz-ID zu erhalten, die in (z. b.) einen Puffer von objektbezogenen Daten indiziert werden kann: `int actualIdx = input.instId / 2;`
+Wenn Sie Ihre vorhandenen instanzierten Zeichnungstechniken mit dieser Methode zum Zeichnen in ein Stereorenderingzielarray verwenden möchten, zeichnen Sie doppelt so viele Instanzen wie gewohnt. Dividieren Sie **input.instId im** Shader durch 2, um die ursprüngliche Instanz-ID abzurufen, die in einen Puffer von Objektdaten indiziert werden kann (z. B.): `int actualIdx = input.instId / 2;`
 
-### <a name="important-note-about-rendering-stereo-content-on-hololens"></a>Wichtiger Hinweis zum Rendern von Stereo Inhalten in hololens
+### <a name="important-note-about-rendering-stereo-content-on-hololens"></a>Wichtiger Hinweis zum Rendern von Stereoinhalten auf HoloLens
 
-Windows Mixed Reality unterstützt die Möglichkeit, den Renderziel-Array Index aus jeder Shader-Stufe festzulegen. Normalerweise handelt es sich hierbei um eine Aufgabe, die nur in der Geometrie-Shader-Phase durchgeführt werden kann, weil die Semantik für Direct3D 11 definiert ist. Hier finden Sie ein umfassendes Beispiel für das Einrichten einer Renderingpipeline, in der nur die Vertex-und Pixel-Shader-Stufen festgelegt sind. Der Shader-Code ist wie oben beschrieben.
+Windows Mixed Reality unterstützt die Möglichkeit, den Renderzielarrayindex aus einer beliebigen Shaderphase festzulegen. Normalerweise ist dies eine Aufgabe, die aufgrund der Art und Weise, wie die Semantik für Direct3D 11 definiert ist, nur in der Geometry Shader-Phase ausgeführt werden konnte. Hier sehen Sie ein vollständiges Beispiel für das Einrichten einer Renderingpipeline, bei der nur die Vertex- und Pixel-Shaderstufen festgelegt sind. Der Shadercode ist wie oben beschrieben.
 
-Von **spinningcuberenderer:: Rendering**:
+Von **SpinningCubeRenderer::Render**:
 
 ```cpp
 const auto context = m_deviceResources->GetD3DDeviceContext();
@@ -521,13 +521,13 @@ context->DrawIndexedInstanced(
 );
 ```
 
-### <a name="important-note-about-rendering-on-non-hololens-devices"></a>Wichtiger Hinweis zum Rendern auf nicht hololens-Geräten
+### <a name="important-note-about-rendering-on-non-hololens-devices"></a>Wichtiger Hinweis zum Rendern auf Geräten ohne HoloLens
 
-Wenn Sie den renderzielarray-Index im Vertexshader festlegen, muss der Grafiktreiber ein optionales Direct3D 11,3-Feature unterstützen, das hololens unterstützt. Ihre APP kann auf sichere Weise nur diese Technik für das Rendering implementieren, und alle Anforderungen werden für die Ausführung auf den Microsoft hololens erfüllt.
+Das Festlegen des Renderzielarrayindexes im Vertex-Shader erfordert, dass der Grafiktreiber ein optionales Direct3D 11.3-Feature unterstützt, das HoloLens unterstützt. Ihre App kann genau diese Technik für das Rendering sicher implementieren, und alle Anforderungen für die Ausführung auf dem Microsoft HoloLens werden erfüllt.
 
-Möglicherweise möchten Sie auch den hololens-Emulator verwenden, der ein leistungsfähiges Entwicklungs Tool für Ihre Holographic APP sein kann und Windows Mixed Reality-immersive Headset-Geräte unterstützen, die an Windows 10-PCs angeschlossen sind. Unterstützung für den nicht hololens-Renderingpfad: für alle Windows Mixed Reality ist auch in der Windows Holographic-App-Vorlage integriert. Im Vorlagen Code finden Sie Code, mit dem Ihre Holographic-App auf der GPU auf dem Entwicklungs-PC ausgeführt werden kann. Im folgenden wird erläutert, wie die **deviceresources** -Klasse diese optionale Funktions Unterstützung prüft.
+Es kann auch der Fall sein, dass Sie den HoloLens Emulator verwenden möchten, der ein leistungsstarkes Entwicklungstool für Ihre holografische App sein kann und Windows Mixed Reality immersive Headset-Geräte unterstützt, die an Windows 10 PCs angefügt sind. Die Unterstützung für den nicht HoloLens Renderingpfad – für alle Windows Mixed Reality – ist ebenfalls in die Windows Holographic-App-Vorlage integriert. Im Vorlagencode finden Sie Code, mit dem Ihre holografische App auf dem ENTWICKLUNGS-PC auf der GPU ausgeführt werden kann. So überprüft die **DeviceResources-Klasse** diese optionale Featureunterstützung.
 
-Aus **deviceresources:: kreatedeviceresources**:
+Über **DeviceResources::CreateDeviceResources:**
 
 ```cpp
 // Check for device support for the optional feature that allows setting the render target array index from the vertex shader stage.
@@ -539,9 +539,9 @@ if (options.VPAndRTArrayIndexFromAnyShaderFeedingRasterizer)
 }
 ```
 
-Um das Rendering ohne diese optionale Funktion zu unterstützen, muss Ihre APP einen Geometry-Shader verwenden, um den Renderziel-Array Index festzulegen. Dieser Code Ausschnitt wird *nach* **vssetconstantbuffers** und *vor* **pssetshader** im Codebeispiel im vorherigen Abschnitt hinzugefügt, in dem erläutert wird, wie Stereo in hololens dargestellt wird.
+Um das Rendering ohne dieses optionale Feature zu unterstützen, muss Ihre App einen Geometrie-Shader verwenden, um den Index des Renderzielarrays festzulegen. Dieser Codeausschnitt wird *nach* **VSSetConstantBuffers** und *vor* **PSSetShader** im Codebeispiel im vorherigen Abschnitt hinzugefügt, in dem erläutert wird, wie Stereo auf HoloLens gerendert wird.
 
-Von **spinningcuberenderer:: Rendering**:
+Von **SpinningCubeRenderer::Render**:
 
 ```cpp
 if (!m_usingVprtShaders)
@@ -558,9 +558,9 @@ if (!m_usingVprtShaders)
 }
 ```
 
-**HLSL-Hinweis**: in diesem Fall müssen Sie auch einen leicht geänderten Vertexshader laden, der den renderzielarray-Index an den Geometry-Shader übergibt, indem er eine immer zulässige Shader-Semantik verwendet, z. b. TEXCOORD0. Der Geometry-Shader muss keine Arbeit erledigen. der Vorlagen Geometrie-Shader durchläuft alle Daten, mit Ausnahme des Renderziel-Array Indexes, der zum Festlegen der SV_RenderTargetArrayIndex Semantik verwendet wird.
+**HLSL HINWEIS:** In diesem Fall müssen Sie auch einen leicht geänderten Vertex-Shader laden, der den Renderzielarrayindex mithilfe einer immer zulässigen Shadersemantik wie TEXCOORD0 an den Geometry-Shader übergibt. Der geometry-Shader muss keine Arbeit erledigen. der Geometrie-Shader der Vorlage durchläuft alle Daten, mit Ausnahme des Renderzielarrayindexes, der zum Festlegen der SV_RenderTargetArrayIndex Semantik verwendet wird.
 
-App-Vorlagen Code für **geometryshader. HLSL**:
+App-Vorlagencode für **GeometryShader.hlsl:**
 
 ```HLSL
 // Per-vertex data from the vertex shader.
@@ -598,21 +598,21 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ## <a name="present"></a>Anzahl
 
-### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Aktivieren des Holographic Frame zum Darstellen der SwapChain
+### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>Aktivieren des holografischen Rahmens zum Darstellen der Swapkette
 
-Mit Windows Mixed Reality steuert das System die Swapkette. Das System verwaltet dann die Anzeige von Frames für jede holografische Kamera, um eine qualitativ hochwertige Benutzer Leistung sicherzustellen. Außerdem bietet es eine Viewport-Aktualisierung jedes Frames für jede Kamera, um die Aspekte des Systems zu optimieren, wie z. b. die Bildstabilisierung oder die Transformation für gemischte Realität. Eine Holographic-APP, die DirectX verwendet, **ruft daher** nicht in einer DXGI-SwapChain auf. Stattdessen verwenden Sie die <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> -Klasse, um alle SwapChain für einen Frame darzustellen, sobald Sie das Zeichnen abgeschlossen haben.
+Mit Windows Mixed Reality steuert das System die Swapkette. Das System verwaltet dann die Darstellung von Frames für jede holografische Kamera, um eine hochwertige Benutzererfahrung sicherzustellen. Außerdem wird ein Viewportupdate für jeden Frame für jede Kamera zur Optimierung von Systemaspekten wie bildstabiler oder Mixed Reality-Aufnahme. Daher ruft eine holografische App, die DirectX verwendet, **Present** in einer DXGI-Swapkette nicht auf. Stattdessen verwenden Sie die <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame-Klasse,</a> um alle Swapchains für einen Frame darzustellen, sobald Sie mit dem Zeichnen fertig sind.
 
-Aus **deviceresources::P erneut gesendet**:
+Über **DeviceResources::P Resent:**
 
 ```
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-Standardmäßig wartet diese API, bis der Frame abgeschlossen ist, bevor Sie zurückkehrt. Holographic apps sollten warten, bis der vorherige Frame abgeschlossen ist, bevor die Arbeit an einem neuen Frame gestartet wird, da dadurch die Latenzzeit reduziert wird und bessere Ergebnisse aus Holographic Frame-Vorhersagen erzielt werden können. Dies ist keine harte Regel, und wenn Sie über Frames verfügen, die mehr als eine Bildschirm Aktualisierung zum Renderingvorgang benötigen, können Sie diesen warte Vorgang deaktivieren, indem Sie den holographicframepresentwaitbehavior-Parameter an <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">presentusingcurrentvorhersage</a>übergeben. In diesem Fall würden Sie wahrscheinlich einen asynchronen Renderingthread verwenden, um eine fortlaufende Last auf der GPU aufrechtzuerhalten. Die Aktualisierungsrate des hololens-Geräts beträgt 60 Hz, wobei ein Frame eine Dauer von ungefähr 16 MS hat. Immersive Headset-Geräte können zwischen 60 Hz und 90 Hz liegen. beim Aktualisieren der Anzeige bei 90 Hz erhält jeder Frame eine Dauer von ungefähr 11 ms.
+Standardmäßig wartet diese API, bis der Frame abgeschlossen ist, bevor er zurückgegeben wird. Holografische Apps sollten warten, bis der vorherige Frame abgeschlossen ist, bevor sie mit der Arbeit an einem neuen Frame beginnen, da dies die Latenz reduziert und bessere Ergebnisse aus holografischen Framevorhersagen ermöglicht. Dies ist keine harte Regel. Wenn Das Rendern von Frames länger als eine Bildschirmaktualisierung dauert, können Sie diese Wartezeit deaktivieren, indem Sie den HolographicFramePresentWaitBehavior-Parameter an <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>übergeben. In diesem Fall würden Sie wahrscheinlich einen asynchronen Renderingthread verwenden, um eine kontinuierliche Auslastung der GPU aufrechtzuerhalten. Die Aktualisierungsrate des HoloLens Geräts beträgt 60 Hz, wobei ein Frame eine Dauer von ca. 16 ms hat. Geräte mit immersivem Headset können zwischen 60 hz und 90 Hz reichen. Beim Aktualisieren der Anzeige bei 90 Hz hat jeder Frame eine Dauer von ca. 11 ms.
 
-### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>Behandeln von DeviceLost-Szenarien in Zusammenarbeit mit holographicframe
+### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>Behandeln von DeviceLost-Szenarien in Zusammenarbeit mit HolographicFrame
 
-DirectX 11-apps müssten in der Regel das von der **Present** -Funktion der DXGI-SwapChain zurückgegebene HRESULT überprüfen, um herauszufinden, ob ein **DeviceLost** -Fehler aufgetreten ist. Die <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a> -Klasse übernimmt diese für Sie. Überprüfen Sie das zurückgegebene <a href="/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">holographicframepresentresult</a> , um herauszufinden, ob Sie das Direct3D-Gerät und Geräte basierte Ressourcen freigeben und neu erstellen müssen.
+DirectX 11-Apps möchten in der Regel das HRESULT überprüfen, das von der **Present-Funktion** der DXGI-Swapkette zurückgegeben wird, um zu ermitteln, ob ein **DeviceLost-Fehler** aufgetreten ist. Die <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame-Klasse</a> behandelt dies für Sie. Überprüfen Sie das zurückgegebene <a href="/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult,</a> um herauszufinden, ob Sie das Direct3D-Gerät und gerätebasierte Ressourcen freigeben und neu erstellen müssen.
 
 ```cpp
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -625,25 +625,25 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-Wenn das Direct3D-Gerät verloren gegangen ist und Sie es neu erstellt haben, müssen Sie den <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">holographicspace</a> anweisen, das neue Gerät zu verwenden. Die Swapkette wird für dieses Gerät neu erstellt.
+Wenn das Direct3D-Gerät verloren gegangen ist und Sie es neu erstellt haben, müssen Sie <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> anweisen, mit der Verwendung des neuen Geräts zu beginnen. Die Swapkette wird für dieses Gerät neu erstellt.
 
-Aus **deviceresources:: initializeusingholographicspace**:
+Über **DeviceResources::InitializeUsingHolographicSpace:**
 
 ```
 m_holographicSpace.SetDirect3D11Device(m_d3dInteropDevice);
 ```
 
-Sobald Ihr Frame angezeigt wird, können Sie zur Hauptprogramm Schleife zurückkehren und zulassen, dass Sie mit dem nächsten Frame fortfahren.
+Sobald Ihr Frame angezeigt wird, können Sie zur Hauptprogrammschleife zurückkehren und zulassen, dass er mit dem nächsten Frame fortzufahren ist.
 
-## <a name="hybrid-graphics-pcs-and-mixed-reality-applications"></a>Hybrid Grafik-PCs und Mixed Reality-Anwendungen
+## <a name="hybrid-graphics-pcs-and-mixed-reality-applications"></a>Hybridgrafik-PCs und Mixed Reality-Anwendungen
 
-Windows 10 Creators Update-PCs **können mit diskreten** und integrierten GPUs konfiguriert werden. Mit diesen Computertypen wählt Windows den Adapter aus, mit dem das Headset verbunden ist. Anwendungen müssen sicherstellen, dass das von Ihnen erstellte DirectX-Gerät denselben Adapter verwendet.
+Windows 10 Creators Update PCs können sowohl mit diskreten **als auch** mit integrierten GPUs konfiguriert werden. Bei diesen Computertypen wählen Windows den Adapter aus, mit dem das Headset verbunden ist. Anwendungen müssen sicherstellen, dass das directX-Gerät, das es erstellt, denselben Adapter verwendet.
 
-Allgemeiner Direct3D Beispielcode veranschaulicht das Erstellen eines DirectX-Geräts mithilfe des Standard Hardware Adapters, der auf einem Hybridsystem möglicherweise nicht identisch mit dem für das Headset verwendeten ist.
+Der allgemeine Direct3D-Beispielcode veranschaulicht das Erstellen eines DirectX-Geräts mithilfe des Standardhardwareadapters, der auf einem Hybridsystem möglicherweise nicht mit dem für das Headset verwendeten identisch ist.
 
-Um Probleme zu umgehen, verwenden Sie <a href="/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">holographicadapterid</a> von <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">holographicspace</a>. Primaryadapterid () oder <a href="/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">holographicdisplay</a>. Adapterid (). Diese Adapter-ID kann dann verwendet werden, um den richtigen dxgiadapter mithilfe von "IDXGIFactory4. endumadapterbyluid" auszuwählen.
+Um Probleme zu umgehen, verwenden Sie die <a href="/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a> aus <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>. PrimaryAdapterId() oder <a href="/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>. AdapterId(). Diese adapterId kann dann verwendet werden, um den richtigen DXGIAdapter mit IDXGIFactory4.EnumAdapterByLuid auszuwählen.
 
-Aus **deviceresources:: initializeusingholographicspace**:
+Über **DeviceResources::InitializeUsingHolographicSpace:**
 
 ```cpp
 // The holographic space might need to determine which adapter supports
@@ -685,7 +685,7 @@ else
 }
 ```
 
-Code zum **Aktualisieren von deviceresources:: kreatedeviceresources zur Verwendung von idxgiadapter**
+Code zum **Aktualisieren von DeviceResources::CreateDeviceResources zur Verwendung von IDXGIAdapter**
 
 ```cpp
 // Create the Direct3D 11 API device object and a corresponding context.
@@ -707,13 +707,13 @@ const HRESULT hr = D3D11CreateDevice(
 );
 ```
 
-**Hybrid Grafiken und Media Foundation**
+**Hybridgrafik und Media Foundation**
 
-Die Verwendung von Media Foundation auf Hybridsystemen kann zu Problemen führen, bei denen das Video nicht gerrendern oder die Video Textur beschädigt ist, da Media Foundation ein Systemverhalten als Standard verwendet. In einigen Szenarien ist das Erstellen eines separaten ID3D11Device erforderlich, um Multithreading zu unterstützen, und die richtigen erstellungsflags werden festgelegt.
+Die Verwendung von Media Foundation auf Hybridsystemen kann zu Problemen führen, bei denen Video nicht gerendert wird oder die Videotextur beschädigt ist, da Media Foundation standardmäßig ein Systemverhalten verwendet. In einigen Szenarien ist das Erstellen einer separaten ID3D11Device erforderlich, um Multithreading zu unterstützen, und die richtigen Erstellungsflags sind festgelegt.
 
-Beim Initialisieren des ID3D11Device muss D3D11_CREATE_DEVICE_VIDEO_SUPPORT Flag als Teil des D3D11_CREATE_DEVICE_FLAG definiert werden. Nachdem das Gerät und der Kontext erstellt wurden, müssen Sie <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">setmultithreadprotected</a> aufrufen, um Multithreading zu aktivieren. Um das Gerät dem <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">imfdxgidebug</a>Manager zuzuordnen, verwenden Sie die <a href="/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">imfdxgide vicemanager:: ResetDevice</a> -Funktion.
+Beim Initialisieren von ID3D11Device muss D3D11_CREATE_DEVICE_VIDEO_SUPPORT Flag als Teil der D3D11_CREATE_DEVICE_FLAG definiert werden. Nachdem das Gerät und der Kontext erstellt wurden, rufen <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">Sie SetMultithreadProtected</a> auf, um Multithreading zu aktivieren. Verwenden Sie zum Zuordnen des Geräts zur Zuordnen des GERÄTs zum <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">16.</a> <a href="/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank"></a>
 
-Code zum **Zuordnen eines ID3D11Device zu imfdxgidevicemanager**:
+Code zum **Zuordnen einer ID3D11Device zu EINEMDXGIDeviceManager:**
 
 ```cpp
 // create dx device for media pipeline
@@ -746,6 +746,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Koordinatensysteme in DirectX](coordinate-systems-in-directx.md)
 * [Verwendung des HoloLens-Emulators](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

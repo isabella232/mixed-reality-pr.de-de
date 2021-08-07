@@ -1,20 +1,20 @@
 ---
-title: Hand-Joint-Verfolger
-description: Hand-Joint-Verfolger in MRTK
+title: Handgelenksverfolgung
+description: Hand-Joint-Verfolger im MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 0beac2dae5aa12cf07f193dab9a6db7bc7ddf2e5
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 376dcd0e1ff01d6e9020aedf35ed2bb2b7b39fa8a119d125aa8c3a96bf0024fe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175360"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189562"
 ---
-# <a name="hand-joint-chaser"></a>Hand-Joint-Verfolger
+# <a name="hand-joint-chaser"></a>Handgelenksverfolgung
 
-![Hand-Joint-Verfolger In dieser Beispielszene wird veranschaulicht, wie Sie Solver verwenden, um Objekte ](../images/hand-joint-chaser/MRTK_HandJointChaser_Main.jpg) an die Handgelenke zu anfügen.
+![Hand-Joint-Verfolger ](../images/hand-joint-chaser/MRTK_HandJointChaser_Main.jpg) In dieser Beispielszene wird veranschaulicht, wie Sie solver verwenden, um Objekte an die Handverbindungen anzufügen.
 
 ## <a name="example-scene"></a>Beispielszene
 
@@ -22,6 +22,6 @@ Sie finden die Beispielszene **HandJointChaserExample-Szene** im `Assets/MRTK/Ex
 
 ## <a name="solver-handler"></a>Solverhandler
 
-Klicken Sie **auf Nachverfolgte Objekte, auf die verwiesen werden soll,** und wählen Sie **Hand joint left oder** Hand Joint Right **aus.** Die Dropdownliste **Tracked Hand Joint (Tracked Hand Joint) wird** angezeigt. In der Dropdownliste können Sie ein bestimmtes nachverfolgungsspezifisches Joint auswählen. In dieser Beispielszene wird der Radial View Solver verwendet, damit ein Objekt dem Zielobjekt folgt. Weitere Informationen finden Sie auf der Seite [Solver.](../ux-building-blocks/solvers/solver.md)
+Klicken Sie auf **Nachverfolgtes Objekt, auf das verwiesen werden soll,** und wählen Sie **Hand Joint Left** oder Hand Joint **Right** aus. Die Dropdown-Dropdown-Seite **Tracked Hand Joint (Nachverfolgte Handverbindungen)** wird angezeigt. In der Dropdownliste können Sie bestimmte gemeinsame Verbindungen auswählen, die nachverfolgt werden sollen. In dieser Beispielszene wird der Radial View Solver verwendet, damit ein Objekt dem Zielobjekt folgt. Weitere Informationen finden Sie auf der Seite ["Solver".](../ux-building-blocks/solvers/solver.md)
 
-![Hand-Fugen-Solver](../images/hand-joint-chaser/MRTK_Solver_HandJoint.jpg)
+![Hand-Gemeinsam-Solver](../images/hand-joint-chaser/MRTK_Solver_HandJoint.jpg)

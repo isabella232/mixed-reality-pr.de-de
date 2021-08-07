@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, Boundary System,
-ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 29ffe7826d797fd32387fab42f24232f98ab283740848b7fce928718f95f0fc9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177095"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211560"
 ---
 # <a name="configuring-boundary-visualization"></a>Konfigurieren der Begrenzungsvisualisierung
 
@@ -22,7 +22,7 @@ Das *Profil für die Begrenzungsvisualisierung* bietet Optionen zum Konfiguriere
 
 ### <a name="boundary-height"></a>Begrenzungshöhe
 
-Die Begrenzungshöhe gibt den Abstand über der Bodenebene an, an dem die Begrenzungsobergrenze gerendert werden soll. Der Standardwert ist 3 Meter.
+Die Begrenzungshöhe gibt den Abstand über der Bodenebene an, an dem die Begrenzungsgrenze gerendert werden soll. Der Standardwert ist 3 Meter.
 
 ## <a name="floor-settings"></a>Einstellungen für den Boden
 
@@ -40,7 +40,7 @@ Gibt das Material an, das beim Erstellen der Bodenebene verwendet werden soll.
 
 Gibt die Größe der zu erstellenden Bodenebene in Metern an. Die Standardskala ist ein Quadrat mit 3 x 3 Meter.
 
-**Physikschicht**
+**Physikalische Ebene**
 
 Die Ebene, auf der die Bodenebene festgelegt werden soll. Der Standardwert ist die *Standardebene.*
 
@@ -56,7 +56,7 @@ Gibt an, ob ein Wiedergabebereichrechteck erstellt und der Szene hinzugefügt wi
 
 Gibt das Material an, das beim Erstellen des Play Area-Objekts verwendet werden soll.
 
-**Physikschicht**
+**Physikalische Ebene**
 
 Die Ebene, auf der der Wiedergabebereich festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
@@ -66,13 +66,13 @@ Die Ebene, auf der der Wiedergabebereich festgelegt werden soll. Der Standardwer
 
 **Anzeigen**
 
-Gibt an, ob die Kontur des nachverfolgten Bereichs erstellt und der Szene hinzugefügt wird. Der Standardwert lautet „true“.
+Gibt an, ob der Umriss des nachverfolgten Bereichs erstellt und der Szene hinzugefügt wird. Der Standardwert lautet „true“.
 
 **Material**
 
 Gibt das Material an, das beim Erstellen der nachverfolgten Bereichsgliederung verwendet werden soll.
 
-**Physikschicht**
+**Physikalische Ebene**
 
 Die Ebene, auf der der nachverfolgte Bereich bestimmt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
@@ -88,7 +88,7 @@ Gibt an, ob Begrenzungswandebenen erstellt und der Szene hinzugefügt werden sol
 
 Gibt das Material an, das beim Erstellen der Begrenzungswandebenen verwendet werden soll.
 
-**Physikschicht**
+**Physikalische Ebene**
 
 Die Ebene, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
@@ -107,12 +107,12 @@ Gibt an, ob eine Begrenzungsbegrenzungsebene erstellt und der Szene hinzugefügt
 
 Gibt das Material an, das beim Erstellen der Begrenzungsbegrenzungsebene verwendet werden soll.
 
-**Physikschicht**
+**Physikalische Ebene**
 
 Die Ebene, auf der die Begrenzungswand festgelegt werden soll. Der Standardwert ist die *Raycastebene ignorieren.*
 
 > [!NOTE]
-> Das Festlegen der Begrenzungsbegrenzungskomponente auf eine andere physikalische Ebene als *Raycast* ignorieren kann verhindern, dass Benutzer mit Objekten innerhalb der Szene interagieren.
+> Das Festlegen der Begrenzungsbegrenzungskomponente auf eine andere physikalische Ebene als *Raycast ignorieren* kann verhindern, dass Benutzer mit Objekten innerhalb der Szene interagieren.
 
 ## <a name="see-also"></a>Siehe auch
 

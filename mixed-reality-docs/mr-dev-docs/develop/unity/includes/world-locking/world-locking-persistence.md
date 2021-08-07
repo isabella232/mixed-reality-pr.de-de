@@ -1,25 +1,25 @@
 ---
-ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112908043"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208852"
 ---
-# <a name="world-locking-tools-recommended"></a>[World Locking Tools (empfohlen)](#tab/wlt)
+# <a name="world-locking-tools-recommended"></a>[World Locking Tools (Empfohlen)](#tab/wlt)
 
-Standardmäßig stellt World Locking Tools das Unity-Koordinatensystem sitzungsübergreifend relativ zur physischen Welt wieder wieder zur Verfügung. Dies bedeutet, dass das Hologramm nur wieder dieselbe Pose haben muss, damit ein Hologramm nach dem Beenden und erneuten Ausführen der Anwendung an der gleichen Stelle in der physischen Welt angezeigt wird.
+Standardmäßig stellt World Locking Tools das Unity-Koordinatensystem in Bezug auf die physische Welt sitzungsübergreifend wieder her. Dies bedeutet, dass ein Hologramm nach dem Beenden und erneuten Ausführen der Anwendung an der gleichen Stelle in der physischen Welt angezeigt wird, dass das Hologramm nur wieder die gleiche Pose aufweisen muss.
 
-![Kontextkomponente "Weltsperrung" im Unity-Inspektor](../../images/world-locking-tools-img-02.png)
+![Kontextkomponente "World Locking" im Unity-Inspektor](../../images/world-locking-tools-img-02.png)
 
-Wenn die Anwendung eine feiner geschaltete Steuerung benötigt, werden **auto-save** und **auto-load** möglicherweise im Inspektor deaktiviert und Persistenz über ein Skript verwaltet, wie im Abschnitt persistenz der [Dokumentation beschrieben.](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)
+Wenn die Anwendung eine feiner kontrollierte Steuerung benötigt, können **automatisches Speichern** und **automatisches Laden** im Inspektor deaktiviert und persistenz über ein Skript verwaltet werden, wie im [Abschnitt "Persistenz" der Dokumentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)beschrieben.
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
-Mit einer zusätzlichen API namens **XRAnchorStore** können Anker zwischen Sitzungen beibehalten werden. Der XRAnchorStore ist eine Darstellung der gespeicherten Anker auf einem Gerät. Anker können aus **ARAnchors** in der Unity-Szene beibehalten, aus dem Speicher in neue **ARAnchors** geladen oder aus dem Speicher gelöscht werden.
+Mit einer zusätzlichen API namens **XRAnchorStore** können Anker zwischen Sitzungen beibehalten werden. XRAnchorStore ist eine Darstellung der gespeicherten Anker auf einem Gerät. Anker können aus **ARAnchors** in der Unity-Szene beibehalten, aus dem Speicher in neue **ARAnchors** geladen oder aus dem Speicher gelöscht werden.
 
 > [!NOTE]
-> Diese Anker müssen auf demselben Gerät gespeichert und geladen werden. Geräteübergreifender Ankerspeicher wird in einem Spatial Anchors Azure-Portal unterstützt.
+> Diese Anker müssen auf demselben Gerät gespeichert und geladen werden. Geräteübergreifender Ankerspeicher wird in einer zukünftigen Version über Azure Spatial Anchors unterstützt.
 
 ### <a name="namespaces"></a>Namespaces
 
@@ -60,9 +60,9 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 }
 ```
 
-### <a name="getting-an-anchor-store-reference"></a>Abrufen eines Ankerspeicherverweises 
+### <a name="getting-an-anchor-store-reference"></a>Abrufen eines Ankerspeicherverweis 
 
-Um XRAnchorStore mit **Unity 2020 und OpenXR** zu laden, verwenden Sie die Erweiterungsmethode für das XRAnchorSubsystem, das Subsystem eines ARAnchorManager:
+Verwenden Sie zum Laden von XRAnchorStore mit **Unity 2020 und OpenXR** die Erweiterungsmethode für das XRAnchorSubsystem, das Subsystem eines ARAnchorManager:
 
 ``` cs
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
@@ -80,7 +80,7 @@ public static Task<XRAnchorStore> TryGetAnchorStoreAsync(this XRAnchorSubsystem 
 
 ### <a name="loading-an-anchor-store"></a>Laden eines Ankerspeichers
 
-Um einen Ankerspeicher in **Unity 2020 und OpenXR** zu laden, greifen Sie wie folgt über das Subsystem von ARAnchorManager darauf zu:
+Um einen Ankerspeicher in **Unity 2020 und OpenXR** zu laden, greifen Sie wie folgt über das Subsystem eines ARAnchorManager darauf zu:
 
 ``` cs
 ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
@@ -99,42 +99,42 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-Ein vollständiges Beispiel für das Beibehalten/Nicht beibehalten von Ankern finden Sie im Skript Anchors -> Anchors Sample GameObject und AnchorsSample.cs in der [Mixed Reality OpenXR-Plug-In-Beispielszene:](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)
+Ein vollständiges Beispiel für das Beibehalten/Aufheben von Ankern finden Sie im Skript Anchors -> Anchors Sample GameObject und AnchorsSample.cs in der [Mixed Reality OpenXR-Plug-In-Beispielszene:](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)
 
-![Screenshot des im Unity-Editor geöffneten Hierarchiebereichs mit hervorgehobener Ankerbeispiel](../../images/openxr-features-img-04.png)
+![Screenshot des im Unity-Editor geöffneten Hierarchiebereichs mit hervorgehobenen Ankerbeispielen](../../images/openxr-features-img-04.png)
 
 ![Screenshot des im Unity-Editor geöffneten Inspektorbereichs mit hervorgehobener Anchors-Beispielskript](../../images/openxr-features-img-05.png)
 
 # <a name="worldanchor"></a>[WorldAnchor](#tab/worldanchor)
 
-**WorldAnchorStore** ist der Schlüssel zum Erstellen holografischer Erfahrungen, bei denen Hologramme in bestimmten realen Positionen über Instanzen der Anwendung hinweg bleiben. Benutzer können dann einzelne Hologramme anheften, wo sie möchten, und sie später an derselben Stelle bei vielen Verwendungen Ihrer App finden.
+**WorldAnchorStore** ist der Schlüssel zum Erstellen holografischer Erfahrungen, bei denen Hologramme in bestimmten realen Positionen über Instanzen der Anwendung hinweg verbleiben. Benutzer können dann einzelne Hologramme an jeder gewünschten Stelle anheften und sie später bei vielen Verwendungsmöglichkeiten Ihrer App an der gleichen Stelle finden.
 
 **Namespace:** *UnityEngine.XR.WSA.Persistence*<br>
 **Klasse:** *WorldAnchorStore*
 
-Mit worldAnchorStore können Sie den Speicherort von WorldAnchor sitzungsübergreifend beibehalten. Um Hologramme tatsächlich sitzungsübergreifend zu erhalten, müssen Sie Ihre GameObjects, die einen bestimmten Weltanker verwenden, separat nachverfolgen. Es ist oft sinnvoll, einen GameObject-Stamm mit einem Weltanker zu erstellen und von ihm verankerte hologramme mit einem lokalen Positionsoffset zu verankern.
+Mit WorldAnchorStore können Sie den Speicherort von WorldAnchor sitzungsübergreifend beibehalten. Um Hologramme tatsächlich sitzungsübergreifend beizubehalten, müssen Sie Ihre GameObjects, die einen bestimmten Weltanker verwenden, separat nachverfolgen. Es ist oft sinnvoll, einen GameObject-Stamm mit einem Weltanker zu erstellen und untergeordnete Hologramme mit einem lokalen Positionsoffset zu verankern.
 
 So laden Sie Hologramme aus vorherigen Sitzungen:
 
-1. WorldAnchorStore herunterladen
-2. Laden von App-Daten im Zusammenhang mit dem Weltanker, der Ihnen die ID des Weltankers gibt
+1. Abrufen des WorldAnchorStore
+2. Laden von App-Daten im Zusammenhang mit dem Weltanker, der Ihnen die ID des Weltankers liefert
 3. Laden eines Weltankers aus seiner ID
 
 So speichern Sie Hologramme für zukünftige Sitzungen:
 
-1. WorldAnchorStore herunterladen
-2. Speichern eines Weltankers unter Angabe einer ID
+1. Abrufen des WorldAnchorStore
+2. Speichern eines Weltankers, der eine ID angibt
 3. Speichern von App-Daten im Zusammenhang mit dem Weltanker zusammen mit einer ID
 
 ### <a name="getting-the-worldanchorstore"></a>Abrufen des WorldAnchorStore
 
-Sie sollten einen Verweis auf den WorldAnchorStore behalten, damit Sie wissen, wann er zum Ausführen eines Vorgangs bereit ist. Da es sich um einen asynchronen Aufruf handelt, möchten Sie möglicherweise nach dem Start Aufrufen von:
+Sie sollten einen Verweis auf WorldAnchorStore beibehalten, damit Sie wissen, wann er bereit ist, einen Vorgang auszuführen. Da dies ein asynchroner Aufruf ist, möchten Sie möglicherweise nach dem Start Aufrufen von:
 
 ```cs
 WorldAnchorStore.GetAsync(StoreLoaded);
 ```
 
-StoreLoaded ist in diesem Fall unser Handler für den Fall, dass der WorldAnchorStore das Laden abgeschlossen hat:
+StoreLoaded ist in diesem Fall unser Handler für den Fall, dass das Laden des WorldAnchorStore abgeschlossen wurde:
 
 ```cs
 private void StoreLoaded(WorldAnchorStore store)
@@ -143,11 +143,11 @@ private void StoreLoaded(WorldAnchorStore store)
 }
 ```
 
-Wir verfügen nun über einen Verweis auf den WorldAnchorStore, den wir zum Speichern und Laden bestimmter World Anchors verwenden.
+Wir haben nun einen Verweis auf den WorldAnchorStore, den wir zum Speichern und Laden bestimmter World Anchors verwenden.
 
 ### <a name="saving-a-worldanchor"></a>Speichern eines WorldAnchor
 
-Um zu speichern, müssen wir einfach benennen, was wir speichern, und es an den WorldAnchor übergeben, den wir zuvor beim Speichern haben. Hinweis: Beim Versuch, zwei Anker in derselben Zeichenfolge zu speichern, ist ein Fehler (Speicher. "Speichern" gibt "false" zurück. Löschen Sie den vorherigen Speicher, bevor Sie den neuen speichern:
+Um zu speichern, müssen wir einfach benennen, was wir speichern, und es im WorldAnchor übergeben, den wir zuvor erhalten haben, als wir speichern möchten. Hinweis: Beim Versuch, zwei Anker in derselben Zeichenfolge zu speichern, tritt ein Fehler auf (speichern. Speichern gibt FALSE zurück. Löschen Sie den vorherigen Speicher, bevor Sie den neuen speichern:
 
 ```cs
 private void SaveGame()
@@ -163,7 +163,7 @@ private void SaveGame()
 
 ### <a name="loading-a-worldanchor"></a>Laden eines WorldAnchor
 
-Und laden Sie:
+Und zum Laden:
 
 ```cs
 private void LoadGame()
@@ -177,11 +177,11 @@ private void LoadGame()
 }
 ```
 
-Darüber hinaus können wir store verwenden. Delete(), um einen Zuvor gespeicherten und gespeicherten Anker zu entfernen. Clear(), um alle zuvor gespeicherten Daten zu entfernen.
+Darüber hinaus können wir store verwenden. Delete() zum Entfernen eines Zuvor gespeicherten und gespeicherten Ankers. Clear(), um alle zuvor gespeicherten Daten zu entfernen.
 
 ### <a name="enumerating-existing-anchors"></a>Aufzählen vorhandener Anker
 
-Rufen Sie GetAllIds auf, um zuvor gespeicherte Anker zu finden.
+Rufen Sie GetAllIds auf, um zuvor gespeicherte Anker zu ermitteln.
 
 ```cs
 string[] ids = this.store.GetAllIds();
@@ -193,8 +193,8 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>Beibehalten von Hologrammen für mehrere Geräte
 
-Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> verwenden, um einen permanenten Cloudanker aus einem lokalen WorldAnchor zu erstellen, den Ihre App dann auf mehreren HoloLens-, iOS- und Android-Geräten finden kann, auch wenn diese Geräte nicht gleichzeitig zusammen vorhanden sind.  Da Cloudanker persistent sind, können mehrere Geräte im Laufe der Zeit Inhalte sehen, die relativ zu diesem Anker am gleichen physischen Ort gerendert werden.
+Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> verwenden, um einen permanenten Cloudanker aus einem lokalen WorldAnchor zu erstellen, den Ihre App dann auf mehreren HoloLens-, iOS- und Android-Geräten finden kann, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.  Da Cloudanker persistent sind, können mehrere Geräte im Laufe der Zeit jeweils Inhalte sehen, die relativ zu diesem Anker an demselben physischen Ort gerendert werden.
 
-Probieren Sie die fünfminütigen Schnellstartanleitungen zu Azure Spatial Anchors Unity aus, um mit dem Erstellen gemeinsamer Erfahrungen in <a href="/azure/spatial-anchors/unity-overview" target="_blank">Unity zu beginnen.</a>
+Probieren Sie die fünfminütigen <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity-Schnellstarts</a>aus, um mit dem Erstellen von gemeinsamen Erfahrungen in Unity zu beginnen.
 
-Sobald Sie azure Spatial Anchors haben, können Sie Anker in Unity erstellen <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">und suchen.</a>
+Sobald Sie mit Azure Spatial Anchors ausgeführt werden, können Sie <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Anker in Unity erstellen und suchen.</a>

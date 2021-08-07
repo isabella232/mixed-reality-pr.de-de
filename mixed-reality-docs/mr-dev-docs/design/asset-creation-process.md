@@ -1,32 +1,32 @@
 ---
 title: Inhaltsobjekt-Erstellungsprozess
-description: Erfahren Sie, wie Sie Assets für gemischte Umgebungen erstellen, erwerben und portieren.
+description: Erfahren Sie, wie Sie Ressourcen für Mixed Reality-Erfahrungen erstellen, kaufen und portieren.
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Asset, Creation, Process, Budget, Polygons, Texturen, Shadern, Leistung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Assets
-ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Asset, Erstellung, Prozess, Budget, Polygone, Texturen, Shader, Leistung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Ressourcen
+ms.openlocfilehash: 5c5dcdbe24a8028bb8a3c57e57b9d95079f9e832954d12aa31421dd75f1b6982
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009619"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214108"
 ---
 # <a name="asset-creation-process"></a>Inhaltsobjekt-Erstellungsprozess
 
-Windows Mixed Reality baut auf den jahrzehntelangen Investitionen auf, die Microsoft in DirectX getätigt hat. Alle Erfahrung und Fähigkeiten, die Entwickler bei der Entwicklung von 3D-Grafiken haben, sind bei hololens weiterhin wertvoll.
+Windows Mixed Reality basiert auf den seit Jahrzehnten erfolgten Investitionen, die Microsoft in DirectX investiert hat. Alle Erfahrungen und Fähigkeiten, die Entwickler mit dem Erstellen von 3D-Grafiken haben, sind mit der Entwicklung HoloLens.
 
-Die Assets, die Sie für ein Projekt erstellen, sind in vielen Formen und Formularen enthalten. Sie können aus einer Reihe von Texturen/Bildern, Audiodaten, Videos, 3D-Modellen und Animationen bestehen. Wir können nicht alle Tools abdecken, die verfügbar sind, um die verschiedenen Typen von Assets zu erstellen, die in einem Projekt verwendet werden. In diesem Artikel konzentrieren wir uns auf die Methoden zum Erstellen von 3D-Assets.
+Die Objekte, die Sie für ein Projekt erstellen, sind in vielen Formen und Formen erhältlich. Sie können aus einer Reihe von Texturen/Bildern, Audio, Video, 3D-Modellen und Animationen bestehen. Wir können nicht alle Tools abdecken, die verfügbar sind, um die verschiedenen Typen von Ressourcen zu erstellen, die in einem Projekt verwendet werden. In diesem Artikel konzentrieren wir uns auf Methoden zum Erstellen von 3D-Ressourcen.
 
-![Konzept, Erstellung, Integration und Iterations Fluss](images/concept-creation-integration-iteration-flow-640px.jpg)<br>
-*Konzept, Erstellung, Integration und Iterations Fluss*
+![Konzept, Erstellung, Integration und Iterationsablauf](images/concept-creation-integration-iteration-flow-640px.jpg)<br>
+*Konzept, Erstellung, Integration und Iterationsablauf*
 
 ## <a name="things-to-consider"></a>Zu beachtende Aspekte
 
-Wenn Sie sich die Arbeit ansehen, erstellen Sie Sie als **Budget** , das Sie für die Erstellung der besten Leistung aufwenden können. Es gibt nicht unbedingt feste Beschränkungen hinsichtlich der Anzahl von **Polygonen** oder **Materialtypen** , die Sie in ihren Assets verwenden können. Stellen Sie sich mehr als einen geplanten Satz von Kompromisse vor.
+Wenn Sie sich die Benutzererfahrung ansind, die  Sie erstellen möchten, stellen Sie sich dies als Budget vor, das Sie ausgeben können, um zu versuchen, die beste Erfahrung zu schaffen. Es gibt nicht unbedingt harte Grenzwerte für die Anzahl von **Polygonen** oder Materialtypen, **die** Sie in Ihren Ressourcen verwenden können. Stellen Sie sich dies eher als budgetierten Satz von Kompromissen vor.
 
-Im folgenden finden Sie ein Beispiel Budget für Ihre Benutzer. Die Leistung ist nicht Single Point of Failure, sondern der Tod durch tausend Kürzungen.
+Im Folgenden finden Sie ein Beispielbudget für Ihre Erfahrung. Die Leistung ist kein Single Point of Failure, sondern der Tod um tausend Schnitte.
 <br>
 
 <table style="float:right; margin-left: 10px;">
@@ -43,84 +43,84 @@ Im folgenden finden Sie ein Beispiel Budget für Ihre Benutzer. Die Leistung ist
 </tr><tr>
 <td> Physische Effekte</td><td> 5 %</td><td> 15 %</td><td> 0 %</td>
 </tr><tr>
-<td> Echtzeitbeleuchtung</td><td> 10 %</td><td> 0 %</td><td> 0 %</td>
+<td> Beleuchtung in Echtzeit</td><td> 10 %</td><td> 0 %</td><td> 0 %</td>
 </tr><tr>
-<td> Medien (Audiodatei/Video)</td><td> -</td><td> 15 %</td><td> 25 %</td>
+<td> Medien (Audio/Video)</td><td> -</td><td> 15 %</td><td> 25 %</td>
 </tr><tr>
 <td> Skript/Logik</td><td> 25 %</td><td> 0 %</td><td> 5 %</td>
 </tr><tr>
-<td> Allgemeiner Verwaltungsaufwand</td><td> 5 %</td><td> 5 %</td><td> 5 %</td>
+<td> Allgemeiner Mehraufwand</td><td> 5 %</td><td> 5 %</td><td> 5 %</td>
 </tr><tr>
 <td> <b>Gesamt</b></td><td> <b>65%</b></td><td> <b>90%</b></td><td> <b>70 %</b></td>
 </tr>
 </table>
 
-**Gesamtanzahl von Assets**
-* Wie viele Assets sind in der Szene aktiv?
+**Gesamtanzahl der Ressourcen**
+* Wie viele Ressourcen sind in der Szene aktiv?
 
-**Komplexität von Assets**
+**Komplexität von Ressourcen**
 * Wie viele Dreiecke/Polygone?
-* Wie komplex ist der Shader? Wenn Sie das Mixed Reality Toolkit verwenden, empfiehlt es sich, den [Mixed Reality Toolkit Standard-Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) zu verwenden, um die Shader-Komplexität zu verringern.
+* Wie komplex ist der Shader? Wenn Sie das Mixed Reality Toolkit verwenden, wird empfohlen, den [Mixed Reality Toolkit Standard-Shader](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md) zu verwenden, um die Shaderkomplexität zu reduzieren.
 
-Sowohl Entwickler als auch Künstler müssen die Funktionen des Geräts und der Grafik-Engine in Erwägung gezogen werden. Microsoft hololens verfügt über alle in das Gerät integrierten Berechnungs-und Grafikdaten. Es gibt die Funktionen, die Entwickler auf einer mobilen Plattform finden.
+Sowohl Entwickler als auch Grafiker müssen die Funktionen des Geräts und der Grafik-Engine berücksichtigen. Microsoft HoloLens verfügt über alle in das Gerät integrierten Berechnungs- und Grafikressourcen. Sie teilt die Funktionen, die Entwickler auf einer mobilen Plattform finden würden.
 
-Der Erstellungs Prozess des Assets ist identisch, unabhängig davon, ob es sich um ein [holografisches Gerät oder ein immersives Gerät](../discover/mixed-reality.md#the-mixed-reality-spectrum)handelt. Der wichtigste Aspekt ist die Geräte Funktion und-Skalierung. Sie können die reale Welt in gemischter Realität sehen, sodass Sie die richtige Skalierung basierend auf der Umgebung beibehalten möchten.
+Der Erstellungsprozess für Mediengeräte ist identisch, unabhängig davon, ob Ihre Erfahrung auf [ein holografisches oder ein immersives Gerät zielt.](../discover/mixed-reality.md#the-mixed-reality-spectrum) Beachten Sie vor allem die Gerätefunktion und -skalierung. Sie können die reale Welt in Mixed Reality sehen, daher sollten Sie die richtige Skalierung basierend auf der Erfahrung verwalten.
 
-## <a name="authoring-assets"></a>Erstellen von Assets
+## <a name="authoring-assets"></a>Erstellen von Ressourcen
 
 Wir beginnen mit den Möglichkeiten, Ressourcen für Ihr Projekt zu erhalten:
-1. Erstellen von Assets (Authoring Tools und Objekt Erfassung)
-2. Erwerben von Assets (erwerben von Assets Online)
-3. Portieren von Assets (vorhandene Objekte werden übernommen)
-4. Auslagerung von Assets (Importieren von Assets von Drittanbietern)
+1. Erstellen von Objekten (Erstellungstools und Objekterfassung)
+2. Erwerb von Assets (Onlinekauf von Assets)
+3. Portieren von Ressourcen (Verwenden vorhandener Ressourcen)
+4. Assets von Überlagerungen (Importieren von Assets von Drittanbietern)
 
-### <a name="creating-assets"></a>Erstellen von Assets
+### <a name="creating-assets"></a>Erstellen von Ressourcen
 
-**Authoring Tools**<br>
-Zuerst können Sie Ihre eigenen Ressourcen auf verschiedene Arten erstellen. 3D-Künstler verwenden verschiedene Anwendungen und Tools zum Erstellen von Modellen, die aus **Netzen**, **Texturen** und **Materialien** bestehen. Diese werden dann in einem Dateiformat gespeichert, das von der von der APP verwendeten Grafik-Engine importiert oder verwendet werden kann, z **. b.. Oder** **. Obj**. Jedes Tool, das ein Modell generiert, das von der ausgewählten Grafik-Engine unterstützt wird, funktioniert in **hololens**. Bei 3D-Künstlern entscheiden sich viele für die Verwendung [von Autodesk Maya, da Sie hololens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) zum Transformieren der Art und Weise verwenden können, wie Assets erstellt werden. Wenn Sie etwas schneller erhalten möchten, können Sie auch [3D-](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) Generator verwenden, der in Windows zum Exportieren verfügbar ist. Obj für die Verwendung in Ihrer Anwendung.
+**Erstellungstools**<br>
+Zunächst können Sie ihre eigenen Ressourcen auf verschiedene Arten erstellen. 3D-Menschen verwenden verschiedene Anwendungen und Tools, um Modelle zu erstellen, die aus Gittermodellen, **Texturen** und Materialien **bestehen.** Dieser wird dann in einem Dateiformat gespeichert, das von der von der App verwendeten Grafik-Engine importiert oder verwendet werden kann, z. **B. . FBX** oder **. OBJ**. Jedes Tool, das ein Modell generiert, das von der ausgewählten Grafik-Engine unterstützt wird, funktioniert auf **HoloLens.** Unter den 3D-Frauen entscheiden sich viele für die Verwendung von [Autodesks Maya,](https://www.youtube.com/watch?v=q0K3n0Gf8mA) da sie HoloLens, um die Art und Weise zu transformieren, wie Ressourcen erstellt werden. Wenn Sie schnell etwas erhalten möchten, [](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) können Sie auch die 3D Builder verwenden, die im Windows zum Exportieren von ist. OBJ für die Verwendung in Ihrer Anwendung.
 
-**Objekt Erfassung**<br>
-Es gibt auch die Option zum Erfassen von Objekten in 3D. Die Erfassung von inanimieren-Objekten in 3D und deren Bearbeitung mit Software zur Erstellung digitaler Inhalte ist immer beliebter, wenn 3D-Druck entsteht. Mithilfe des **kinect 2** -Sensors und des [3D-](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) Generators können Sie mit der Capture-Funktion Ressourcen aus realen Objekten erstellen. Dabei handelt es **sich um eine** [Suite von Tools](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) , mit denen Sie die gleichen Schritte durchführen können, indem Sie mehrere Bilder zum Zusammenführen und Mesh und Texturen verarbeiten.
+**Objekterfassung**<br>
+Es gibt auch die Option zum Erfassen von Objekten in 3D. Das Erfassen von unanimierten Objekten in 3D und deren Bearbeitung mit Software zur Erstellung digitaler Inhalte wird mit dem 3D-Druck immer beliebter. Mit dem **Kinect 2-Sensor** und 3D Builder Können Sie mithilfe des Erfassungsfeatures Objekte aus realen Objekten erstellen. [](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) Dies ist auch eine [Reihe von](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) Tools, um dies bei der **Fotogrammetrie** zu erreichen, indem mehrere Bilder verarbeitet werden, um zusammengehefte und Gitter- und Texturen zu gittern.
 
-### <a name="purchasing-assets"></a>Erwerben von Assets
+### <a name="purchasing-assets"></a>Erwerb von Ressourcen
 
-Eine weitere hervorragende Möglichkeit besteht darin, Ressourcen für Ihre Benutzer zu erwerben. Es gibt eine Menge von Ressourcen, die über Dienste wie z. b. den Unity-Ressourcen [Speicher](https://www.assetstore.unity3d.com/) oder den [TurboSquid](https://www.turbosquid.com/) unter anderen angeboten werden.
+Eine weitere hervorragende Option ist der Erwerb von Ressourcen für Ihre Erfahrung. Es gibt eine Reihe von Ressourcen, die über Dienste wie [unity asset Store](https://www.assetstore.unity3d.com/) oder [TurboSquid](https://www.turbosquid.com/) verfügbar sind.
 
-Wenn Sie Assets von einem Drittanbieter erwerben, sollten Sie immer die folgenden Eigenschaften überprüfen:
-* **Was ist die Anzahl der polyds?**
-  * Passt Sie in Ihr Budget?
-* **Gibt es Detailstufen (LODs) für das Modell?**
-  * Mit einem modelldetailgrad können Sie die Details eines Modells für die Leistung skalieren.
+Wenn Sie Ressourcen von einem Drittanbieter erwerben, sollten Sie immer die folgenden Eigenschaften überprüfen:
+* **Was ist die Polyanzahl?**
+  * Passt sie in Ihr Budget?
+* **Gibt es Detailebenen (LODs) für das Modell?**
+  * Mit der Detailebene "Modelle" können Sie die Details eines Modells für die Leistung skalieren.
 * **Ist die Quelldatei verfügbar?**
-  * Nicht im [Unity-Asset-Speicher](https://www.assetstore.unity3d.com/) enthalten, aber immer in Diensten wie [Turbo squid](https://www.turbosquid.com/)enthalten.
-  * Ohne die Quelldatei können Sie das Medienobjekt nicht ändern.
-  * Stellen Sie sicher, dass die angegebene Quelldatei von ihren 3D-Tools importiert werden kann.
-* **Wissen Sie, was Sie erhalten**
+  * Nicht im [Unity Asset Store,](https://www.assetstore.unity3d.com/) aber immer in Diensten wie [TurboSquid enthalten.](https://www.turbosquid.com/)
+  * Ohne die Quelldatei können Sie das Asset nicht ändern.
+  * Stellen Sie sicher, dass die bereitgestellte Quelldatei von Ihren 3D-Tools importiert werden kann.
+* **Wissen, was Sie erhalten**
   * Werden Animationen bereitgestellt?
-  * Stellen Sie sicher, dass Sie die Inhaltsliste des Assets, das Sie kaufen, überprüfen.
+  * Überprüfen Sie die Inhaltsliste der Ressource, die Sie erwerben.
 
-### <a name="porting-assets"></a>Portieren von Assets
+### <a name="porting-assets"></a>Portieren von Ressourcen
 
-In einigen Fällen werden Sie vorhandene Assets übergeben, die ursprünglich für andere Geräte und verschiedene apps erstellt wurden. In den meisten Fällen können diese Assets in Formate konvertiert werden, die mit der von Ihrer APP verwendeten Grafik-Engine kompatibel sind.
+In einigen Fällen werden Ihnen vorhandene Ressourcen übergeben, die ursprünglich für andere Geräte und verschiedene Apps erstellt wurden. In den meisten Fällen können diese Objekte in Formate konvertiert werden, die mit der Grafik-Engine kompatibel sind, die ihre App verwendet.
 
-Beim Portieren von Assets für die Verwendung in der hololens-Anwendung sollten Sie die folgenden Fragen stellen:
-* **Können Sie direkt importieren oder müssen in ein anderes Format konvertiert werden?** Überprüfen Sie das Format, das Sie mit der Grafik-Engine importieren, die Sie verwenden.
-* **Wenn die Umstellung in ein kompatibles Format etwas verlorengeht?** Manchmal können Details verloren gehen oder das Importieren von Artefakten bewirken, die in einem 3D-Authoring Tool bereinigt werden müssen.
-* **Was ist die Dreiecks-/Polygon-Anzahl für das Asset?** Basierend auf dem Budget für Ihre Anwendung können Sie [Simplygon](https://www.simplygon.com/) oder ähnliche Tools verwenden, um das ursprüngliche Asset zu dezimieren, das in das Budget Ihrer Anwendungen passt.
+Beim Portieren von Ressourcen zur Verwendung in Ihrer HoloLens-Anwendung sollten Sie die folgenden Fragen stellen:
+* **Können Sie direkt importieren oder müssen sie in ein anderes Format konvertiert werden?** Überprüfen Sie das Format, das Sie mit der verwendeten Grafik-Engine importieren.
+* **Wenn die Konvertierung in ein kompatibles Format verloren geht?** Manchmal können Details verloren gehen, oder der Import kann dazu führen, dass Artefakte in einem 3D-Erstellungstool bereinigt werden müssen.
+* **Wie lautet die Dreiecks-/Polygonanzahl für das Medienobjekt?** Basierend auf dem Budget für Ihre Anwendung können Sie [Simplygon](https://www.simplygon.com/) oder ähnliche Tools verwenden, um die ursprüngliche Ressource entsprechend Ihrem Anwendungsbudget zu dezimieren (prozedural oder manuell die Polyanzahl zu reduzieren).
 
-### <a name="outsourcing-assets"></a>Outsourcing von Assets
+### <a name="outsourcing-assets"></a>Assets des Assets "Assets"
 
-Eine weitere Option für größere Projekte, die mehr Ressourcen benötigen, als Ihr Team zur Erstellung benötigt, besteht darin, die Medienobjekt Erstellung auszulagern. Der Prozess des Outsourcing umfasst das Auffinden der richtigen Studio-oder Agentur, die auf das Outsourcing von Assets spezialisiert ist. Dies kann die aufwendigste Option sein, Sie ist jedoch auch die flexibelste Option, die Sie erhalten.
-* **Definieren Sie eindeutig das, was Sie anfordern.**
+Eine weitere Option für größere Projekte, die mehr Ressourcen erfordern, als Ihr Team erstellen kann, ist das Auslagern der Ressourcenerstellung. Der Prozess des Auslagerns umfasst die Suche nach dem richtigen Studio oder der richtigen Agentur, die auf Asset-Assets spezialisiert ist. Dies kann die teuerste Option, aber auch die flexibelste lösungsfähig sein.
+* **Definieren Sie eindeutig, was Sie anfordern.**
   * Geben Sie so viele Details wie möglich an.
-  * Bilder des Front-, Side-und Back-Konzepts
-  * Referenz Kunst mit Asset im Kontext
-  * Skalierung des Objekts (normalerweise in Zentimetern angegeben)
-* **Budget bereitstellen**
-  * Bereich für die polyzahl
-  * Anzahl von Texturen
-  * Typ des Shader (für Unity und hololens sollten Sie zuerst standardmäßig Mobile Shader einsetzen)
-* **Verstehen der Kosten**
-  * Was ist die Richtlinie für die Auslagerung von Änderungsanforderungen?
+  * Front-, Side- und Back-Konzeptbilder
+  * Referenzgrafik zum Anzeigen von Medienobjekten im Kontext
+  * Skalierung des Objekts (in der Regel in Centimetern angegeben)
+* **Bereitstellen eines Budgets**
+  * Polyanzahlbereich
+  * Anzahl der Texturen
+  * Typ des Shaders (für Unity und HoloLens sollten Sie immer zuerst mobile Shader verwenden)
+* **Grundlegendes zu den Kosten**
+  * Wie sieht die Richtlinie für das Auslagern von Änderungsanforderungen aus?
 
-Das Outsourcing funktioniert auf Grundlage ihrer Projekt Zeitachse gut, erfordert jedoch mehr Kontrolle, um sicherzustellen, dass Sie die richtigen Ressourcen erhalten, die Sie zum ersten Mal benötigen.
+Das Auslagern kann basierend auf ihrer Projektzeitachse gut funktionieren, erfordert jedoch mehr Überwachung, um sicherzustellen, dass Sie die richtigen Ressourcen erhalten, die Sie beim ersten Mal benötigen.

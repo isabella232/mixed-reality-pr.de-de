@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Port, Unity, Unreal, Middleware, Engine, UWP, Win32, Portierung, HoloLens 1. Generation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10, Eingabezuordnung,
-ms.openlocfilehash: bb76325c0a2d10150cff6604e29c7ead8a97df8e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: c8f0ed76fc7288ed406e2044eb2f3edb8982865b5c956f460d2bc1b815e503df
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394464"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213512"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>Portieren von VR-Apps zu Windows Mixed Reality
 
-Windows 10 bietet Unterstützung für immersive und holografische Headsets. Wenn Sie Inhalte für andere Geräte wie Oculus Rift oder OCulus Vive erstellt haben, bestehen Abhängigkeiten von Bibliotheken, die oberhalb der Plattform-API des Betriebssystems vorhanden sind. Das Überführen vorhandener Win32-Unity-VR-Apps in Windows Mixed Reality umfasst die Neuzuweisen der Nutzung anbieterspezifischer VR SDKs für die herstellerübergreifenden VR-APIs von Unity.
+Windows 10 bietet Unterstützung für immersive und holografische Headsets. Wenn Sie Inhalte für andere Geräte wie Oculus Rift oder CSV Vive erstellt haben, bestehen Abhängigkeiten von Bibliotheken, die oberhalb der Plattform-API des Betriebssystems vorhanden sind. Die Umstellung vorhandener Win32 Unity-VR-Apps auf Windows Mixed Reality umfasst die Neuzuweisen der Nutzung herstellerspezifischer VR SDKs für die herstellerübergreifenden VR-APIs von Unity.
 
 ## <a name="porting-requirements"></a>Portierungsanforderungen
 
@@ -30,15 +30,15 @@ Auf hoher Ebene sind die folgenden Schritte an der Portierung vorhandener Inhalt
 
 ### <a name="1-make-sure-you-have-the-right-development-hardware"></a>1. Stellen Sie sicher, dass Sie über die richtige Entwicklungshardware verfügen.
 
-Auf der Seite [VR-Fanleitfaden](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) werden die empfohlenen Entwicklungshardware aufgeführt.
+Auf der Seite [VR-Fanleitfaden](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) wird die empfohlene Entwicklungshardware aufgeführt.
 
 ### <a name="2-upgrade-to-the-latest-flight-of-windows-10"></a>2. Upgrade auf den letzten Flight von Windows 10
 
-Die Windows Mixed Reality-Plattform befindet sich noch in der aktiven Entwicklung. Es wird [empfohlen, am Windows-Insider-Programm teilzunehmen,](https://insider.windows.com/) um auf den "Windows-Insider Fast"-Flug zuzugreifen.
+Die Windows Mixed Reality-Plattform befindet sich noch in der aktiven Entwicklung. Es wird [empfohlen, am Windows Insider Program teilzunehmen,](https://insider.windows.com/) um auf den "Windows Insider Fast"-Flug zuzugreifen.
 1. Installieren der [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
-2. Treten Sie dem Windows-Insider-Programm [bei.](https://insider.windows.com/)
+2. Treten Sie dem Windows Insider-Programm [bei.](https://insider.windows.com/)
 3. Aktivieren des [Entwicklermodus](/windows/uwp/get-started/enable-your-device-for-development)
-4. Wechseln Sie im Abschnitt Einstellungen > Update & **Security (Einstellungen &-Sicherheit) zum Windows-Insider** [Fast-Flights.](/archive/blogs/uktechnet/joining-insider-preview)
+4. Wechseln Sie über Einstellungen > Abschnitt "Update & **Security" zum Windows Insider Fast-Flug.** [](/archive/blogs/uktechnet/joining-insider-preview)
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. Upgrade auf den letzten Build von Visual Studio
 * Wenn Sie Visual Studio verwenden, führen Sie ein Upgrade auf den letzten Build durch.
@@ -59,7 +59,7 @@ Die Windows Mixed Reality-Plattform befindet sich noch in der aktiven Entwicklun
 ## <a name="see-also"></a>Siehe auch
 * [Windows Mixed Reality Mindestrichtlinien für die PC-Hardwarekompatibilität](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [Grundlegendes zur Leistung für Mixed Reality](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
-* [Leistungsempfehlungen für Unity](../unity/performance-recommendations-for-unity.md)
+* [Leistungs-Empfehlungen für Unity](../unity/performance-recommendations-for-unity.md)
 * [Motion-Controller](../../design/motion-controllers.md)
 * [Motion-Controller in Unity](../unity/motion-controllers-in-unity.md)
 * [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)

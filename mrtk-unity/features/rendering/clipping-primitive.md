@@ -1,25 +1,25 @@
 ---
-title: Clippingprimitive
+title: Zuschnitt-Primitiv
 description: Dokumentation zu Clippingprimitiven mit Beispielen in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, Clipping primitive,
-ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1feecbbd51eb80ff6113e66d053f032acb3005b9c7d1debbd5dfd46da0925798
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214412"
 ---
-# <a name="clipping-primitive"></a>Clippingprimitive
+# <a name="clipping-primitive"></a>Zuschnitt-Primitiv
 
 Die Verhaltensweisen ermöglichen eine performante , - und -Formausschneidung mit der Möglichkeit, anzugeben, auf welcher Seite des Primitivs (innerhalb oder außerhalb) abgeschnitten werden soll, wenn sie mit [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [`plane`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane) [`sphere`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) [`box`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) MRTK-Shadern verwendet wird.
 
 ![Primitive Clipping-Klammern](../images/mrtk-standard-shader/MRTK_PrimitiveClippingGizmos.gif)
 
 > [!NOTE]
-> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) Verwenden [Sie Clip/Discard-Anweisungen](https://developer.download.nvidia.com/cg/clip.html) in Shadern, und deaktivieren Sie die Fähigkeit von Unity, abgeschnittene Renderer als Batch zu verwenden. Berücksichtigen Sie diese Auswirkungen auf die Leistung bei der Verwendung von Clippingprimitiven.
+> [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) Verwenden [Sie Clip/Discard-Anweisungen](https://developer.download.nvidia.com/cg/clip.html) in Shadern, und deaktivieren Sie die Fähigkeit von Unity, beschnittene Renderer als Batch zu verwenden. Berücksichtigen Sie diese Auswirkungen auf die Leistung bei der Verwendung von Clippingprimitiven.
 
 [`ClippingPlane.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPlane), [`ClippingSphere.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingSphere) und können verwendet [`ClippingBox.cs`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingBox) werden, um primitive Clippingeigenschaften einfach zu steuern. Verwenden Sie diese Komponenten mit den folgenden Shadern, um Clippingszenarien zu nutzen.
 
@@ -33,7 +33,7 @@ Die **ClippingExamples-** und **MaterialGallery-Szenen** veranschaulichen die Ve
 
 ## <a name="advanced-usage"></a>Erweiterte Nutzung
 
-Standardmäßig kann nur ein [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [Renderer gleichzeitig](https://docs.unity3d.com/ScriptReference/Renderer.html) abgeschnitten werden. Wenn ihr Projekt mehr als einen benötigt, um einen Renderer zu beeinflussen, veranschaulicht der folgende Beispielcode, [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) wie dies erreicht werden kann. [](https://docs.unity3d.com/ScriptReference/Renderer.html)
+Standardmäßig kann nur ein [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) [Renderer gleichzeitig](https://docs.unity3d.com/ScriptReference/Renderer.html) abgeschnitten werden. Wenn ihr Projekt mehr als eins erfordert, um einen Renderer zu beeinflussen, veranschaulicht der folgende Beispielcode, [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) wie dies erreicht werden kann. [](https://docs.unity3d.com/ScriptReference/Renderer.html)
 
 > [!NOTE]
 > Wenn ein [`ClippingPrimitives`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) Renderer mehrere [Beschneidungen verwendet,](https://docs.unity3d.com/ScriptReference/Renderer.html) werden die Anweisungen für den Pixel-Shader erhöht, und die Leistung wird dadurch verbessert. Erstellen Sie ein Profil für diese Änderungen in Ihrem Projekt.

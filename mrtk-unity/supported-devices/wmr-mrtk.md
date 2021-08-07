@@ -1,18 +1,18 @@
 ---
-title: Bereitstellen auf HoloLens- und WMR-Headsets
+title: Bereitstellen in HoloLens und WMR-Headsets
 description: Dokumentation zum Erstellen und Bereitstellen von Apps auf verschiedenen Geräten.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Visual Studio
-ms.openlocfilehash: 137e1b699e9a0cda1e8a454a6c3219b581fa71b4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 622c7ca4b9c527630b5677fe377d1d3108bdfe08c9dc616bfd4d3256b83b9ab0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209477"
 ---
-# <a name="deploying-to-hololens-and-wmr-headsets"></a>Bereitstellen auf HoloLens- und WMR-Headsets
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>Bereitstellen in HoloLens und WMR-Headsets
 
 Es gibt zwei Möglichkeiten, anwendungen, die mit MRTK erstellt wurden, auf Ihrem Windows-Gerät bereitzustellen: die Universelle Windows-Plattform (UWP) und die eigenständige Plattform. Anwendungen, die für HoloLens 1 oder HoloLens 2 erstellt wurden, müssen UWP als Ziel verwenden, während Anwendungen, die für WMR-Headsets erstellt wurden, entweder UWP oder Eigenständig sein können.
 
@@ -23,10 +23,10 @@ Anweisungen zum Erstellen und Bereitstellen für **HoloLens 1** und **HoloLens 2
 > [!NOTE]
 > Wenn Sie Ihre Anwendung auf Ihrem Gerät in Visual Studio bereitstellen, müssen Sie Visual Studio je nach Gerät etwas anders konfigurieren. Die Konfigurationen sind wie folgt:
 >
->| Plattform | Konfiguration | Aufbau | Target (Ziel) |
+>| Plattform | Konfiguration | Aufbau | Ziel |
 |---|---|---|---|
-| HoloLens 2 | Release oder Master | ARM64 | Gerät |
-| HoloLens 1 | Release oder Master | x86 | Gerät |
+| HoloLens 2 | Release oder Master | ARM64 | Sicherungsmedium |
+| HoloLens 1 | Release oder Master | x86 | Sicherungsmedium |
 | WMR-Headsets | Release oder Master | x64 | Lokaler Computer |
 
 **Tipp:** Beim Erstellen für HoloLens 1, HoloLens 2 oder WMR wird empfohlen, dass die Buildeinstellungen "Ziel-SDK-Version" und "Mindestplattformversion" wie in der folgenden Abbildung aussehen:

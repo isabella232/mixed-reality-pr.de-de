@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Unity Paket-Manager,
-ms.openlocfilehash: 3c2a11dd4036a78ccb96aa2c640ef8324181c1e0
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 13f18c0a43d8b0cf6cc8eb66949b506c51ca9bbaa733e74cd38de110f70d8ee1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212564"
 ---
 # <a name="mrtk-packages"></a>MRTK-Pakete
 
@@ -75,14 +75,14 @@ Das MRTK Foundation-Paket enthält Folgendes.
 | | Oculus | Unterstützung für Oculus-Geräte, z. B. Quest. |
 | | [UnityAR](../features/camera-system/unity-ar-camera-settings.md) | (Experimentell) Anbieter von Kameraeinstellungen, der die MRTK-Verwendung mit mobilen AR-Geräten ermöglicht. |
 | | WindowsMixedReality | Unterstützung für Windows Mixed Reality Geräte, einschließlich Microsoft HoloLens und immersiven Headsets. |
-| | Windows | Unterstützung für Microsoft Windows spezifischen APIs, z. B. Sprach- und Diktaterkennung. |
+| | Windows | Unterstützung für Microsoft Windows spezifischen APIs, z. B. Sprach- und Diktat. |
 | | XR SDK | (Experimentell) Unterstützung für [das neue XR-Framework von Unity](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) in Unity 2019.3 und neuer. |
 | MRTK/SDK | | |
 | | Experimentell | Experimentelle Features, z. B. Shader, Steuerelemente der Benutzeroberfläche und einzelne System-Manager. |
-| | Features | Funktionalität, die auf dem Foundation-Paket aufbaut. |
+| | Funktionen | Funktionalität, die auf dem Foundation-Paket aufbaut. |
 | | Profiles | Standardprofile für die Microsoft Mixed Reality Toolkit-Systeme und -Dienste. |
 | | StandardAssets | Allgemeine Ressourcen; Modelle, Texturen, Materialien usw. |
-| MRTK/SceneSystemResources | | Ressourcen und Ressourcen, die vom Szenensystem verwendet werden |
+| MRTK/SceneSystemResources | | Vom Szenensystem verwendete Ressourcen und Ressourcen |
 | MRTK/Services | | |
 | | [BoundarySystem](../features/boundary/boundary-system-getting-started.md) | System, das VR-Begrenzungsunterstützung implementiert. |
 | | [CameraSystem](../features/camera-system/camera-system-overview.md) | System, das die Kamerakonfiguration und -verwaltung implementiert. |
@@ -90,7 +90,7 @@ Das MRTK Foundation-Paket enthält Folgendes.
 | | [InputSystem](../features/input/overview.md) | System, das Unterstützung für den Zugriff auf und die Verarbeitung von Benutzereingaben bereitstellt. |
 | | [SceneSystem](../features/scene-system/scene-system-getting-started.md) | System, das Unterstützung für Anwendungen mit mehreren Szenen bereitstellt. |
 | | [SpatialAwarenessSystem](../features/spatial-awareness/spatial-awareness-getting-started.md) | System, das Unterstützung für die Kenntnis der Umgebung des Benutzers bereitstellt. |
-| | [TeleportSystem](../features/teleport-system/teleport-system.md) | System, das Unterstützung für Teleporting bereitstellt (Umstieg auf die Erfahrung bei Sprüngen). |
+| | [TeleportSystem](../features/teleport-system/teleport-system.md) | System, das Unterstützung für Teleporting bereitstellt (Umstieg auf die Erfahrung in Sprungen). |
 | MRTK/StandardAssets | | MRTK Standard-Shader, Basismaterialien und andere Standardressourcen für Mixed Reality-Erfahrungen |
 
 ### <a name="extensions-package"></a>Erweiterungspaket
@@ -103,7 +103,7 @@ Das optionale Paket Microsoft.MixedRealityToolkit.Unity.Extensions enthält zus�
 | Ordner | Komponente | Beschreibung |
 | --- | --- | --- |
 | MRTK/Erweiterungen | |
-| | [HandPhysicsService](../features/extensions/hand-physics-service.md) | Dienst, der den artikulierten Händen physikalische Unterstützung hinzufügt. |
+| | [HandPhysicsService](../features/extensions/hand-physics-service.md) | Dienst, der den artikulierten Händen Physikalische Unterstützung hinzufügt. |
 | | LostTrackingService | Dienst, der die Behandlung von Nachverfolgungsverlusten auf Microsoft HoloLens vereinfacht. |
 | | [SceneTransitionService](../features/extensions/scene-transition-service.md) | Dienst, der das Hinzufügen reibungsloser Szenenübergänge vereinfacht. |
 
@@ -203,7 +203,7 @@ Das Basispaket ( `com.microsoft.mixedreality.toolkit.foundation` ) bildet die Gr
 | | XR SDK | (Experimentell) Unterstützung für [das neue XR-Framework von Unity](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) in Unity 2019.3 und neuer. |
 | MRTK/SDK | | |
 | | Experimentell | Experimentelle Features, z. B. Shader, Steuerelemente der Benutzeroberfläche und einzelne System-Manager. |
-| | Features | Funktionalität, die auf dem Foundation-Paket aufbaut. |
+| | Funktionen | Funktionalität, die auf dem Foundation-Paket aufbaut. |
 | | Profiles | Standardprofile für die Microsoft Mixed Reality Toolkit-Systeme und -Dienste. |
 | | StandardAssets | Allgemeine Ressourcen; Modelle, Texturen, Materialien usw. |
 | MRTK/Services | | |

@@ -1,143 +1,143 @@
 ---
 title: Navigieren auf der Startseite von Windows Mixed Reality
-description: Erfahren Sie, wie Sie in der Windows Mixed Reality-Startseite auf hololens und Windows Mixed Reality-Headsets navigieren können.
+description: Hier erfahren Sie, wie Sie Windows Mixed Reality zu Hause HoloLens und Windows Mixed Reality Headsets navigieren.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Shell, Betriebssystem, Plattform, Klippe, Haus, zuhause, Umgebung, Start, Startmenü, Startmenü, Pins, APP, starten von apps, platzieren von apps, teleportieren, verschieben, navigieren, Mixed Reality-Headset, Virtual Reality-Headset, Virtual Reality
-ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Shell, Betriebssystem, Plattform, Haus, Umgebung, Start, Startmenü, Startmenü, Stecknadeln, App, Apps starten, Apps platzieren, Teleport, Verschieben, Navigieren, Mixed Reality-Headset, Virtual Reality-Headset, Was ist virtuelle Realität?
+ms.openlocfilehash: 39ca5e974e242019d7eb14fba0362151213c6558cce7f13328390712b3642901
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190272"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>Navigieren auf der Startseite von Windows Mixed Reality
 
-Ebenso wie die Windows-PC-Darstellung mit dem Desktop startet, beginnt Windows Mixed Reality mit der Startseite. Die Windows Mixed Reality-Startseite nutzt unsere angeborenen Möglichkeiten, um 3D-Orte zu verstehen und zu navigieren. Bei hololens ist Ihr Zuhause Ihr physischer Raum, aber mit immersiven Headsets ist Ihr Zuhause ein virtueller Ort.
+Genau wie die Windows pc-Erfahrung mit dem Desktop beginnt, Windows Mixed Reality mit der Startseite. Das Windows Mixed Reality verwendet unsere eigene Fähigkeit, 3D-Orte zu verstehen und zu navigieren. Mit HoloLens ist Ihr Haus Ihr physischer Raum, aber mit immersiven Headsets ist Ihr Haus ein virtueller Ort.
 
-In Ihrer Startseite verwenden Sie auch das Startmenü, um apps und Inhalte zu öffnen und zu platzieren. Sie können Ihre Startseite mit gemischtem Reality-Inhalt und Multitaskings auffüllen, indem Sie mehrere apps gleichzeitig verwenden. Die Dinge, die Sie in Ihrem Zuhause platzieren, bleiben auch dann, wenn Sie Ihr Gerät neu starten.
+In Ihrer Startseite verwenden Sie auch die Startmenü, um Apps und Inhalte zu öffnen und zu platzieren. Sie können Ihr Haus mit Mixed Reality-Inhalten und Multitasks füllen, indem Sie mehrere Apps gleichzeitig verwenden. Die Dinge, die Sie in Ihrem Haus platzieren, bleiben dort, auch wenn Sie Ihr Gerät neu starten.
 
 ## <a name="start-menu"></a>Startmenü
 
-![Startmenü für Microsoft hololens](images/start-500px.png)
+![Startmenü auf Microsoft HoloLens](images/start-500px.png)
 
-Das Startmenü besteht aus folgendem:
-* System Informationen (Netzwerkstatus, Akku Prozentsatz, aktuelle Uhrzeit und Volume)
-* Cortana (auf immersiven Headsets, eine Start Kachel, auf hololens oben im Startmenü)
-* Fixierte apps
-* Schaltfläche "alle apps" (Pluszeichen)
-* Foto-und Video Schaltflächen für die [gemischte Erfassung](/hololens/holographic-photos-and-videos)
+Die Startmenü besteht aus:
+* Systeminformationen (Netzwerkstatus, Akkuprozentsatz, aktuelle Zeit und Volumen)
+* Cortana (auf immersiven Headsets, eine Startkachel; HoloLens, oben in Start)
+* Angeheftete Apps
+* Schaltfläche Alle Apps (Pluszeichen)
+* Foto- und Videoschaltflächen für [die Mixed Reality-Aufnahme](/hololens/holographic-photos-and-videos)
 
-Wechseln Sie zwischen den Ansichten angeheftete apps und alle apps, indem Sie die Schaltflächen Plus oder minus auswählen. Um das Startmenü auf hololens zu öffnen, verwenden Sie die aufblütebewegung. Drücken Sie auf einem immersiven Headset die Windows-Taste auf dem Controller.
+Wechseln Sie zwischen den angeheftete Apps und Alle Apps, indem Sie die Plus- oder Minusschaltflächen auswählen. Um die Startmenü auf HoloLens öffnen, verwenden Sie die Blumengeste. Drücken Sie auf einem immersiven Headset die Windows des Controllers.
 
-## <a name="launching-apps"></a>Starten von apps
+## <a name="launching-apps"></a>Starten von Apps
 
-Um eine APP zu starten, wählen Sie Sie im Startmenü aus. Das Startmenü wird ausgeblendet, und die APP wird im Platzierungs Modus geöffnet, entweder als 2D-Fenster oder als [3D-Modell](../distribute/implementing-3d-app-launchers.md).
+Um eine App zu starten, wählen Sie sie auf Starten aus. Der Startmenü wird nicht mehr angezeigt, und die App wird im Platzierungsmodus geöffnet, entweder als 2D-Fenster oder [als 3D-Modell.](../distribute/implementing-3d-app-launchers.md)
 
-Um die APP auszuführen, müssen Sie Sie in ihrer eigenen Homepage platzieren:
-1. Verwenden Sie Ihren [Blick](../design/gaze-and-commit.md) oder Controller, um die APP zu positionieren, wo Sie Sie möchten. Sie wird automatisch (in Größe und Position) angepasst, damit Sie dem Platz entspricht, in dem Sie Sie platzieren.
-2. Platzieren Sie die App mithilfe von Air-Tap (hololens) oder der Schaltfläche auswählen (immersives Headsets). Wenn Sie das Startmenü abbrechen und wieder zurückkehren möchten, verwenden Sie die Schaltfläche mit den aufblühen oder Windows.
+Um die App ausführen zu können, müssen Sie sie in Ihrer Startseite platzieren:
+1. Verwenden Sie Ihren [Anving](../design/gaze-and-commit.md) oder Controller, um die App dort zu positionieren, wo Sie sie möchten. Es wird automatisch angepasst (in Größe und Position), um dem Raum zu entsprechen, in dem Sie ihn platzieren.
+2. Platzieren Sie die App per Tippen in die Luft (HoloLens) oder über die Schaltfläche Auswählen (immersive Headsets). Um den Vorgang abzubricht und Startmenü, verwenden Sie die Blumengeste oder Windows Schaltfläche.
 
-[2D-apps](../develop/porting-apps/building-2d-apps.md), die für Desktop, Mobile oder Xbox erstellt wurden, können so geändert werden, dass Sie mit der [holographicspace-API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)als immersive gemischte Realität-apps ausgeführt werden. Eine immersive App bringt den Benutzer aus der Startseite und in eine immersive Darstellung. Benutzer können die Startseite mit der Blüten Bewegung (hololens) oder durch Drücken der Windows-Taste auf Ihrem Controller (immersive Headsets) zurückgeben.
+[2D-Apps,](../develop/porting-apps/building-2d-apps.md)die für Desktop, mobilgeräte oder Xbox erstellt wurden, können mithilfe der [HolographicSpace-API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)so geändert werden, dass sie als immersive Mixed Reality-Apps ausgeführt werden. Eine immersive App führt den Benutzer aus der Startseite in eine immersive Umgebung. Benutzer können mit der Blumengeste (HoloLens) oder durch Drücken der Windows taste auf ihrem Controller (immersive Headsets) nach Hause zurückkehren.
 
-Apps können auch über eine APP-zu-app-API oder über Cortana gestartet werden.
+Apps können auch über eine App-zu-App-API oder über Cortana.
 
-![Apps in der Windows Mixed Reality-Startseite](images/mixed-reality-home-500px.png)
+![Apps im Windows Mixed Reality Start](images/mixed-reality-home-500px.png)
 
-## <a name="moving-and-adjusting-apps"></a>Verschieben und Anpassen von apps
+## <a name="moving-and-adjusting-apps"></a>Verschieben und Anpassen von Apps
 
-Wählen Sie in der APP-Leiste **Anpassen** aus, um Steuerelemente anzuzeigen, die Inhalte mit gemischter Realität verschieben, skalieren und drehen. Wenn Sie fertig sind **, wählen Sie fertig aus**.
+Wählen **Sie auf** der App-Leiste Anpassen aus, um Steuerelemente anzuzeigen, die Mixed Reality-Inhalte verschieben, skalieren und drehen. Wenn Sie fertig sind, wählen Sie **Fertig aus.**
 
-![Das Speicher Slate im Anpassungsmodus (blauer Frame). Beachten Sie, dass die APP-Leiste (oben) geändert wurde, sodass Sie die Schaltflächen "Done" und "Remove" enthält.](images/adjust-500px.png)
+![Die Store-Slate im Anpassungsmodus (blauer Rahmen). Beachten Sie, dass sich die App-Leiste (oben) so geändert hat, dass sie die Schaltflächen "Fertig" und "Entfernen" enthält.](images/adjust-500px.png)
 
-Unterschiedliche Apps können andere Optionen auf der APP-Leiste haben. Microsoft Edge verfügt beispielsweise über *Scroll*-, *Drag*-und *Zoom* -Optionen. 
+Verschiedene Apps haben möglicherweise andere Optionen auf der App-Leiste. Beispielsweise verfügt Microsoft Edge über die *Optionen Scrollen,* *Ziehen* und *Zoomen.* 
 
-![App-Leiste für 2D-apps, die auf hololens ausgeführt werden](images/holobar-500px.png)
+![App-Leiste für 2D-Apps, die auf HoloLens](images/holobar-500px.png)
 
-Die Schaltfläche " **zurück** " navigiert zurück zu den zuvor angezeigten Bildschirmen in der app. Der Vorgang wird beendet, wenn Sie den Anfang der in der APP angezeigten Erfahrungen erreichen und nicht zu anderen apps navigieren.
+Die **Schaltfläche Zurück** navigiert zurück zu den zuvor angezeigten Bildschirmen in der App. Sie wird nicht mehr angezeigt, wenn Sie den Anfang der in der App angezeigten Beerlebnisse erreichen und nicht zu anderen Apps navigieren.
 
-## <a name="getting-around-your-home"></a>Zu Hause
+## <a name="getting-around-your-home"></a>Auf dem Weg zu Hause
 
-Mit **hololens** bewegen Sie den physischen Raum, um zu Ihrem Zuhause zu navigieren.
+Mit **HoloLens** bewegen Sie sich durch den physischen Raum, um sich in Ihrem Haus zu bewegen.
 
-Mit **immersiven Headsets** können Sie in Ihrem Wiedergabe Bereich fortfahren, um in einem ähnlichen Bereich in der virtuellen Welt zu navigieren. Wenn Sie über längere Entfernungen hinweg wechseln möchten, verwenden Sie den Finger Stick auf dem Controller, um *dies zu erreichen* .
+Mit **immersiven Headsets** können Sie sich in Ihrem Playspace in einem ähnlichen Bereich in der virtuellen Welt bewegen. Um längere Entfernungen zu verlassen, verwenden Sie den Fingerabdruck auf Ihrem Controller, um praktisch zu "laufen", oder Sie können die *Teleportation* verwenden, um sofort längere Entfernungen zu springen.
 
-![Teleportierung in der Windows Mixed Reality-Startseite](images/teleportation-500px.png)
+![Teleportation im Windows Mixed Reality](images/teleportation-500px.png)
 
-**An Teleport:**
-1. Rufen Sie den Teleportations-Reticle auf.
-   * Verwenden von [Bewegungs Controllern](../design/motion-controllers.md): Drücken Sie den Finger Stick vorwärts, und halten Sie ihn an dieser Position gedrückt.
-   * Verwenden eines Xbox-Controllers: Drücken Sie den linken Finger Stick vorwärts, und halten Sie ihn an dieser Position gedrückt.
-   * Mit der Maus: halten Sie die Maustaste gedrückt, und verwenden Sie das Mausrad, um die Richtung zu drehen, die Sie beim teleportieren möchten.
-2. Platzieren Sie den Reticle, an den Sie teleportieren möchten.
-   * Verwenden von [Bewegungs Controllern](../design/motion-controllers.md): neigen Sie den Controller (auf dem Sie den Finger Stick halten), um den Reticle zu verschieben.
-   * Verwenden eines Xbox-Controllers: Verwenden Sie den [Blick](../design/gaze-and-commit.md) , um den Reticle zu verschieben.
-   * Mit der Maus: bewegen Sie die Maus, um den Reticle zu verschieben.
-3. Geben Sie die Schaltfläche an den Teleport an, an dem der Reticle abgelegt wurde.
+**So teleportieren Sie:**
+1. Bringen Sie die Teleportation reticle (Teleportation reticle) auf.
+   * Verwenden [von Motion-Controllern:](../design/motion-controllers.md)Drücken Sie den Stick nach vorn, und halten Sie ihn an dieser Position.
+   * Verwenden eines Xbox-Controllers: Drücken Sie den linken Fingerabdruck nach vorn, und halten Sie ihn an dieser Position.
+   * Verwenden einer Maus: Halten Sie die Maustaste mit der rechten Maustaste gedrückt (und verwenden Sie das Scrollrad, um die Richtung zu drehen, die Sie beim Teleportieren sehen möchten).
+2. Platzieren Sie das Reticle an der Stelle, an der Sie teleportieren möchten.
+   * Verwenden [von Motion-Controllern:](../design/motion-controllers.md)Kippen Sie den Controller (auf dem Sie den Stick nach vorn halten), um das Reticle zu verschieben.
+   * Verwenden eines Xbox-Controllers: Verwenden Sie Ihren [Blick,](../design/gaze-and-commit.md) um das Reticle zu verschieben.
+   * Verwenden einer Maus: Bewegen Sie die Maus, um das Reticle zu verschieben.
+3. Lassen Sie die Schaltfläche los, um den Teleport an der Stelle zu senden, an der das Reticle platziert wurde.
 
-**Bis zu "Walk:"**
-* Verwenden von [Bewegungs Controllern](../design/motion-controllers.md): Klicken Sie auf dem Finger Stick auf nach unten, und bewegen Sie den Finger Stick in der Richtung, die Sie "durchlaufen".
-* Verwenden eines Xbox-Controllers: Klicken Sie auf der linken Seite auf nach unten, und halten Sie den Finger Stick in der Richtung, die Sie durchlaufen möchten.
+**So gehen Sie praktisch "walk:"**
+* Verwenden [von Motion-Controllern:](../design/motion-controllers.md)Klicken Sie nach unten auf den Stick, halten Sie ihn, und bewegen Sie den Thumbstick dann in die Richtung, die Sie "walk" (Gehen) möchten.
+* Verwenden eines Xbox-Controllers: Klicken Sie nach unten auf den linken Fingerabdruck, halten Sie ihn, und bewegen Sie den Fingerabdruck in die Richtung, die Sie "walk" (Gehen) möchten.
 
-## <a name="immersive-headset-input-support"></a>Unterstützung von immersiven Headset-Eingaben
+## <a name="immersive-headset-input-support"></a>Unterstützung für immersive Headseteingaben
 
-[Immersive Headsets in Windows Mixed Reality](immersive-headset-hardware-details.md) unterstützen mehrere Eingabetypen für die Navigation in der Windows Mixed Reality-Startseite. Hololens unterstützt keine Zubehör Eingaben für die Navigation, da Sie physisch herumlaufen und Ihre Umgebung sehen. Hololens [unterstützt jedoch Eingaben](hardware-accessories.md) für die Interaktion mit apps.
+[Windows Mixed Reality immersive Headsets unterstützen](immersive-headset-hardware-details.md) mehrere Eingabetypen für die Navigation in Windows Mixed Reality Startseite. HoloLens unterstützt keine Accessoryeingaben für die Navigation, da Sie physisch navigieren und Ihre Umgebung sehen. Allerdings unterstützt HoloLens [Eingaben für](hardware-accessories.md) die Interaktion mit Apps.
 
 ### <a name="motion-controllers"></a>Bewegungscontroller
 
-Die beste Windows Mixed Reality-Lösung ist die Verwendung von Windows Mixed Reality [Motion-Controllern](../design/motion-controllers.md) , die sechs Grad an Freiheits Überwachung unterstützen, indem nur die Sensoren in Ihrem Headset verwendet werden, ohne dass externe Kameras oder Marker erforderlich sind!
+Die beste Windows Mixed Reality ist die Verwendung von [](../design/motion-controllers.md) Windows Mixed Reality-Motion-Controllern, die die Nachverfolgung von sechs Grad an Freiheit unterstützen, indem nur die Sensoren in Ihrem Headset verwendet werden – keine externen Kameras oder Marker erforderlich!
 
-Navigations Befehle in Kürze verfügbar.
+Navigationsbefehle werden in Kürze verfügbar sein.
 
 ### <a name="gamepad"></a>Gamepad
-* **Linker Finger Stick:**
-  * Halten Sie den linken Finger Stick nach vorne, um den [Teleportations](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) -Reticle aufzurufenden.
-  * Tippen Sie auf den Finger Stick Links, rechts oder zurück, um in kleinen Schritten nach links, rechts oder zurück zu wechseln.
-  * Klicken Sie auf der linken Seite auf nach unten, und halten Sie den Finger Stick in der Richtung, die Sie [virtuell durchlaufen möchten.](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
-* Tippen Sie auf den **rechten Finger Stick** Links oder rechts, um die Richtung um 45 Grad zu drehen.
-* Wenn Sie auf **die Schaltfläche** klicken, wird die Schaltfläche " [Air Tap](../design/gaze-and-commit.md#composite-gestures) " ausgewählt.
-* Wenn Sie die Schaltfläche " **Guide** " drücken, [wird das](../design/system-gesture.md#bloom) [Startmenü](navigating-the-windows-mixed-reality-home.md#start-menu) geöffnet.
-* Wenn Sie den **linken und den rechten Trigger** drücken, können Sie eine 2D-Desktop-App, mit der Sie interagieren, in der Startseite vergrößern und verkleinern.
+* **Linker Thumbstick:**
+  * Halten Sie den linken Stick gedrückt, um das [Teleportations-Reticle](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) auf den Weg zu bringen.
+  * Tippen Sie auf den Stick nach links, rechts oder zurück, um in kleinen Schritten nach links, rechts oder zurück zu wechseln.
+  * Klicken Sie nach unten auf den linken Stick, halten Sie ihn, und bewegen Sie den Thumbstick dann in die Richtung, die Sie [virtuell "walk" machen möchten.](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
+* Tippen Sie **auf den rechten Fingerabdruck** nach links oder rechts, um die Richtung um 45 Grad zu drehen.
+* Durch Drücken der **Schaltfläche A** wird ausgewählt und wie die Tippbewegung in [die Luft](../design/gaze-and-commit.md#composite-gestures) fungiert.
+* Durch Drücken **der Schaltfläche** Guide (Leitfaden) wird [die Startmenü](navigating-the-windows-mixed-reality-home.md#start-menu) und verhält sich wie die [Blumengeste.](../design/system-gesture.md#bloom)
+* Durch Drücken **des linken und rechten Triggers** können Sie eine 2D-Desktop-App, mit der Sie zu Hause interagieren, vergrößern und verkleinern.
 
 ### <a name="keyboard-and-mouse"></a>Tastatur und Maus
 
-**Hinweis:** Verwenden Sie die **Windows-Taste + Y** , um die Maus zwischen dem Steuern des Desktops Ihres PCs und der Windows Mixed Reality-Startseite zu wechseln.
+**Hinweis:** Verwenden **Windows Taste + Y,** um mit der Maus zwischen dem Steuern des Desktops Ihres PCs und dem Windows Mixed Reality zu wechseln.
 
-Innerhalb der Windows Mixed Reality-Startseite:
-* Wenn Sie mit der **linken Maustaste klicken** , wird die Schaltfläche " [Air Tap](../design/gaze-and-commit.md#composite-gestures) " ausgewählt und fungiert.
-* Wenn Sie mit der **rechten Maustaste klicken** , wird der [teleportationsreticle](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) angezeigt.
-* Wenn Sie die **Windows** -Taste auf der Tastatur drücken, wird das [Startmenü](navigating-the-windows-mixed-reality-home.md#start-menu) geöffnet, und Sie verhält sich wie die [Blüte](../design/system-gesture.md#bloom) Bewegung.
-* Wenn Sie in einer 2D-Desktop-App mit der **linken Maustaste klicken** , klicken [Sie mit der](../design/gaze-and-commit.md) **rechten** Maustaste, um Kontextmenüs anzuzeigen, und verwenden Sie das **Mausrad** , um einen Bildlauf durchzuführen (genau wie auf dem Desktop Ihres PCs).
+Im Windows Mixed Reality:
+* Wenn Sie die **Maustaste mit der linken Maustaste** drücken, wird ausgewählt, und sie verhält sich wie die [Tippbewegung in die](../design/gaze-and-commit.md#composite-gestures) Luft.
+* Wenn Sie die **Maustaste mit der rechten Maustaste** gedrückt halten, wird das [Teleportations-Reticle](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) angezeigt.
+* Wenn Sie **die Windows** auf der Tastatur drücken, wird das [Startmenü angezeigt](navigating-the-windows-mixed-reality-home.md#start-menu) und verhält sich wie die [Blumengeste.](../design/system-gesture.md#bloom)
+* Wenn [](../design/gaze-and-commit.md) Sie eine 2D-Desktop-App  verwenden, können Sie mit der linken Maustaste klicken, um  sie **auszuwählen,** mit der rechten Maustaste auf kontextmenüs klicken und das Scrollrad zum Scrollen verwenden (genau wie auf dem Desktop Ihres PCs).
 
 ## <a name="cortana"></a>Cortana
 
-[Cortana](../design/voice-input.md#hey-cortana) ist Ihr persönlicher Assistent in Windows Mixed Reality, ebenso wie auf dem PC und Telefon. Hololens verfügt über ein integriertes Mikrofon, aber immersive Headsets erfordern möglicherweise zusätzliche Hardware. Verwenden Sie Cortana, um apps zu öffnen, Ihr Gerät neu zu starten, Dinge online zu suchen und vieles mehr. Entwickler können sich auch für die [Integration von Cortana](https://dev.windows.com/cortana) in Ihre Erfahrungen entscheiden.
+[Cortana](../design/voice-input.md#hey-cortana) ist Ihr persönlicher Assistent in Windows Mixed Reality, genau wie auf PC und Telefon. HoloLens verfügt über ein integriertes Mikrofon, aber immersive Headsets erfordern möglicherweise zusätzliche Hardware. Verwenden Cortana, um Apps zu öffnen, Ihr Gerät neu zu starten, Dinge online zu suchen und vieles mehr. Entwickler können sich auch dafür entscheiden, [Cortana](https://dev.windows.com/cortana) in ihre Erfahrungen zu integrieren.
 
-Sie können auch Sprachbefehle verwenden, um zu Hause zu gelangen. Zeigen Sie z. b. auf eine Schaltfläche (über einen [Blick](../design/gaze-and-commit.md) oder einen Controller, je nach Gerät), und sagen Sie "Select". Weitere Sprachbefehle sind "Go Home", "Bigger", "kleiner", "Close" und "Face Me".
+Sie können auch Sprachbefehle verwenden, um zu Hause zu bleiben. Zeigen Sie z. B. [](../design/gaze-and-commit.md) auf eine Schaltfläche (mit Anvität oder Controller, je nach Gerät), und sagen Sie "Auswählen". Andere Sprachbefehle sind "Go home", "Bigger", "Smaller", "Close" und "Zu mir drehen".
 
-## <a name="store-settings-and-system-apps"></a>Store-, Einstellungs-und System-apps
+## <a name="store-settings-and-system-apps"></a>Store, Einstellungen und System-Apps
 
-Windows Mixed Reality verfügt über mehrere integrierte apps, wie z. b.:
-* **Microsoft Store** zum erhalten von apps und spielen
-* **Feedback-Hub** zum Übermitteln von Feedback über die System-und System-apps
-* **Einstellungen** zum Konfigurieren von Systemeinstellungen ([einschließlich Netzwerk](/hololens/hololens-network) -und Systemupdates)
+Windows Mixed Reality verfügt über mehrere integrierte Apps, z. B.:
+* **Microsoft Store** zum Herunterladen von Apps und Spielen
+* **Feedback-Hub** Feedback zu den System- und System-Apps senden
+* **Einstellungen** zum Konfigurieren von Systemeinstellungen ([einschließlich Netzwerk-](/hololens/hololens-network) und Systemupdates)
 * **Microsoft Edge** zum Durchsuchen von Websites
 * **Fotos** zum Anzeigen und Freigeben von Fotos und Videos
-* **Kalibrierung** (nur hololens) zum Anpassen der hololens-Darstellung an den aktuellen Benutzer
-* **Erlernen Sie Gesten** (hololens), oder **erlernen Sie Gemischte Realität** (immersives Headsets), um mehr über die Verwendung Ihres Geräts zu erfahren.
-* **3D-Viewer** zur Ergänzung ihrer Welt mit gemischtem Reality-Inhalt
-* **Gemischtes Reality-Portal** (Desktop) zum Einrichten und Verwalten Ihres immersiven Headsets und Streamen einer Live Vorschau Ihrer Ansicht im Headset, damit Sie von anderen Benutzern angezeigt werden.
-* **Filme und TV** zum Anzeigen von 360-Videos und die neuesten Filme und Fernsehsendungen
+* **Kalibrierung** (nur HoloLens) zum Anpassen der HoloLens an den aktuellen Benutzer
+* **Lernen Sie Gesten** (HoloLens) oder **Mixed Reality-Tutorial** (immersive Headsets) an, um mehr über die Verwendung Ihres Geräts zu erfahren.
+* **3D-Viewer,** um Ihre Welt mit Mixed Reality-Inhalten zu verzieren
+* **Mixed Reality-Portal** (Desktop) zum Einrichten und Verwalten Ihres immersiven Headsets und zum Streamen einer Livevorschau Ihrer Ansicht im Headset, damit sie von anderen angezeigt werden kann.
+* **Filme und Fernsehsendungen** zum Anzeigen von 360 Videos und den neuesten Filmen und Fernsehsendungen
 * **Cortana** für alle Anforderungen Ihres virtuellen Assistenten
-* **Desktop** (immersive Headsets) zum Anzeigen Ihres Desktop Monitors in einem immersiven Headset
-* **Datei-Explorer** Zugreifen auf Dateien und Ordner, die sich auf Ihrem Gerät befinden
+* **Desktop** (immersive Headsets) zum Anzeigen Ihres Desktopmonitors in einem immersiven Headset
+* **Datei-Explorer** Zugreifen auf Dateien und Ordner auf Ihrem Gerät
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [App-Ansichten](../design/app-views.md)
 * [Motion-Controller](../design/motion-controllers.md)
 * [Hardware-Zubehör](hardware-accessories.md)
 * [Umgebungsüberlegungen für HoloLens](/hololens/hololens-environment-considerations)
 * [Implementieren von 3D-App-Launchern](../distribute/implementing-3d-app-launchers.md)
-* [Erstellen von 3D-Modellen für die Verwendung in der Windows Mixed Reality-Startseite](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [Erstellen von 3D-Modellen für die Verwendung im Windows Mixed Reality Home](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

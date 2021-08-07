@@ -1,65 +1,65 @@
 ---
 title: Übersicht über Beispiele
-description: Probieren Sie Unity-Beispiel-Apps aus, die Maquette verwenden.
+description: Probieren Sie Unity-Beispiel-Apps aus, die Ma csv verwenden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Maquette, Prototyperstellung, gemischte Realität, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
-ms.openlocfilehash: 746ec983ec68db0f410871e559e2ce8166d978dd
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+keywords: Windows Mixed Reality, Ma bugs, prototyping, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback-Hub, Bugs
+ms.openlocfilehash: 5a15dcd707e9dfe023580908e5f51db48b4677fb249821f93b5fa5595fc69c96
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212740"
 ---
 # <a name="samples-overview"></a>Übersicht über Beispiele
 
 <!-- TODO(Harrison): Need consolidated logo with text -->
-![Beispiel-Apps für Logo- ](../images/MaquetteIcon.png) Maquette-Skript
+![Beispiel-Apps für ](../images/MaquetteIcon.png) Logo-Ma scripts
 
 <!-- TODO(Stefan): Do these examples exist or do they need to be created? -->
 ## <a name="examples"></a>Beispiele
 
-* Die Betonung zeigt, wie und wo Sie verwendet werden können, um eine bestimmte Funktion oder API zu erläutern.
-* Ausführlichere Informationen, da Sie auch Workflows erläutern
-* Sie sind grundsätzlich komplette Beispiele für die Verwendung von Skripts.
+* Der Schwerpunkt liegt auf der Darstellung, wie und wo sie verwendet werden kann, um etwas zu tun, im Gegensatz zur Erläuterung eines bestimmten Features oder einer API.
+* Vollständiger, da sie auch Workflows erklären
+* Sie sind grundsätzlich vollständige Beispiele für die Verwendung von Skripts.
 
 <!-- TODO(Stefan): Have these scripts been released yet or still waiting on update/review? -->
 ` The following scripts are not released yet...need update/review.`
-* Entpacken Sie die folgende zipfile-Datei in Ihr ~/Documents/Maquette/Scripts-Verzeichnis: 
+* Entpacken Sie die folgende ZIP-Datei in Ihr Verzeichnis ~/Documents/Ma scripts: 
 
 <p align="center">
-Beispiel Skripts: <a href="files/ExampleScripts.zip" download="ExampleScripts.zip">
+Beispielskripts: <a href="files/ExampleScripts.zip" download="ExampleScripts.zip">
   <img src="images/jsicon.png" alt="Example Scripts">
 </a>
 </p>
 
-## <a name="maquettes-spotlights"></a>Maquettes-Scheinwerfer
+## <a name="maquettes-spotlights"></a>Maspots-Blickpunkt
 
 <!-- TODO(Stefan): Do these projects exist somewhere? -->
 * Tic Tac Toe
 * Tetris
-* Storyboard für die Ricardo-App
-* 360 Schulungs-App
-* Beispiel für photogrammmetrie-VR und Vorfreude (ASA/HL2)
-  * Erläuterung/Tour
+* Storyboard für Diess-App
+* 360 Training-App
+* Photogrammetriebeispiel – VR und Antizipieren von AR (ASA/HL2)
+  * Erklärung/Tour
   * Problembehandlung/Dokumentation
   * IoT
   * Home-Steuerelement
-  * Wartung wird aufgebaut
-* Visualisierung von covid-oder Stock-oder Wetterdaten aus Web JSON
-* Schulungs Workshop – Link zu Schul Lesson-Plänen
+  * Gebäudewartung
+* COVID oder Visualisierung von Lager- oder Wetterdaten aus Web-JSON
+* Education Workshop – link to School Lesson Plan(s)
 
-## <a name="scripting-tutorials"></a>Skriptinglernprogramme
+## <a name="scripting-tutorials"></a>Skripttutorials
 
 <!-- TODO(Harrison/Stefan): Need to break these out into their own docs and create content for them. -->
-Beispiele für die Funktionsweise der Skripterstellung: Fokus auf das Ausführen bestimmter Vorgänge
-* Funktions Beispiel 1
-* Funktions Beispiel 2
-* Funktions Beispiel 3
-* Funktions Beispiel 4
-* Dialog Feld aus Skript erstellen
-* Eigenschaften Blatt aus JSON
-* Auf Web-JSON zugreifen
+Beispiele für die Funktionsweise von Skripts: Konzentrieren Sie sich auf die Vorgehensweise für bestimmte Vorgänge.
+* Featurebeispiel 1
+* Featurebeispiel 2
+* Featurebeispiel 3
+* Featurebeispiel 4
+* Dialogfeld "Erstellen" aus skriptbasiertem Skript
+* Eigenschaftenblatt aus JSON
+* Zugreifen auf Web-JSON
 * Excel-Daten

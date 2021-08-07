@@ -1,19 +1,19 @@
 ---
-ms.openlocfilehash: 612168d7a1e56f74350ee8244e26e5ad886503c2
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+ms.openlocfilehash: 78296dd4e6667c34926c954774547b21a223c5f4b6635476c51046c7ca22cdc3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208400"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 
-## <a name="windowsmixedrealityutilities"></a>Windowsmixedrealityutilities
+## <a name="windowsmixedrealityutilities"></a>WindowsMixedRealityUtilities
 
-**Namespace:** *Microsoft. mixedreality. Toolkit. windowsmixedreality*<br>
-**Typ:** *windowsmixedrealityutilities*
+**Namespace:** *Microsoft.MixedReality.Toolkit.WindowsMixedReality*<br>
+**Typ:** *WindowsMixedRealityUtilities*
 
-Mrtk stellt über die **windowsmixedrealityutilities** -Klasse bereits gemarshallte Typen für die Legacy-WSA und das XR SDK bereit.
+MRTK stellt über die **WindowsMixedRealityUtilities-Klasse** bereits marshalled-Typen für ältere WSA und das XR SDK bereit.
 
 ```cs
 public static HolographicFrame CurrentHolographicFrame { get; }
@@ -23,12 +23,12 @@ public static SpatialInteractionManager SpatialInteractionManager { get; }
 
 # <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 
-## <a name="windowsmrenvironment"></a>Windowsmrenvironment
+## <a name="windowsmrenvironment"></a>WindowsMREnvironment
 
-**Namespace:** *unityengine. XR. windowsmr*<br>
-**Typ:** *windowsmrenvironment*
+**Namespace:** *UnityEngine.XR.WindowsMR*<br>
+**Typ:** *WindowsMREnvironment*
 
-Die statische **windowsmrenvironment** -Klasse ermöglicht den Zugriff auf mehrere Native Zeiger.
+Die statische **WindowsMREnvironment-Klasse** bietet Zugriff auf mehrere native Zeiger.
 
 ```cs
 public static IntPtr CurrentHolographicRenderFrame { get; } // Windows::Graphics::Holographic::IHolographicFrame
@@ -38,12 +38,12 @@ public static IntPtr OriginSpatialCoordinateSystem { get; } // Windows::Percepti
 
 # <a name="legacy-wsa"></a>[Legacy-WSA](#tab/wsa)
 
-## <a name="xrdevice"></a>Xrdevice
+## <a name="xrdevice"></a>XRDevice
 
-**Namespace:** *unityengine. XR*<br>
-**Typ:** *xrdevice*
+**Namespace:** *UnityEngine.XR*<br>
+**Typ:** *XRDevice*
 
-Der <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">**xrdevice**</a> -Typ ermöglicht es Ihnen, mithilfe der <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">getnativeptr</a> -Methode Zugriff auf zugrunde liegende Native Objekte zu erhalten. Was getnativeptr zurückgibt, variiert zwischen verschiedenen Plattformen. Bei der universelle Windows-Plattform für Windows Mixed Reality gibt xrdevice. getnativeptr einen Zeiger (IntPtr) an die folgende Struktur zurück:
+Mit dem <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">**XRDevice-Typ**</a> können Sie mithilfe der <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr-Methode</a> Zugriff auf zugrunde liegende native Objekte erhalten. Die Rückgabe von GetNativePtr variiert je nach Plattform. Auf der universellen Windows Platform gibt XRDevice.GetNativePtr bei der Festlegung auf Windows Mixed Reality einen Zeiger (IntPtr) auf die folgende Struktur zurück:
 
 ```cs
 using System;
@@ -60,11 +60,11 @@ struct HolographicFrameNativeData
 }
 ```
 
-Sie können es mithilfe der Marshal. ptrumstructure-Methode in holographicframenativedata konvertieren:
+Sie können es mithilfe der Marshal.PtrToStructure-Methode in HolographicFrameNativeData konvertieren:
 
 ```cs
 IntPtr nativePtr = UnityEngine.XR.XRDevice.GetNativePtr();
 HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativePtr);
 ```
 
-***Iholographiccameraptr** ist ein Array von IntPtr, das als UnmanagedType. ByValArray gemarshallt wird, wobei eine Länge gleich maxnumofkameras ist.*
+***IHolographicCameraPtr** ist ein Array von IntPtr, das als UnmanagedType.ByValArray gemarshallt wird und deren Länge maxNumberOfCameras entspricht.*

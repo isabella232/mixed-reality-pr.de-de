@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 6e57a76d54d0f3f63ce8dcb80582e178effa39d9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1be58cd22228258d51f63b2a4db0294bceaec1320640ecbbfa2795edde5e39bd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208320"
 ---
 # <a name="proximity-light"></a>Näherungslicht
 
@@ -23,14 +23,14 @@ Damit ein Material von einem Mixed Reality [`ProximityLight`](xref:Microsoft.Mix
 
 ## <a name="examples"></a>Beispiele
 
-Die meisten Szenen im MRTK verwenden eine [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) . Den häufigsten Einsatzfall finden Sie unter MRTK/SDK/Features/UX/Prefabs/Cursors/FingerCursor.prefab.
+Die meisten Szenen im MRTK verwenden eine [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) . Den häufigsten Verwendungsfall finden Sie unter MRTK/SDK/Features/UX/Prefabs/Cursors/FingerCursor.prefab.
 
 ## <a name="advanced-usage"></a>Erweiterte Nutzung
 
 Standardmäßig können nur [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) zwei ein Material [gleichzeitig](https://docs.unity3d.com/ScriptReference/Material.html) beleuchten. Wenn ihr Projekt mehr als zwei benötigt, um ein Material zu beeinflussen, veranschaulicht der folgende Beispielcode, [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) wie dies erreicht werden kann. [](https://docs.unity3d.com/ScriptReference/Material.html)
 
 > [!NOTE]
-> Wenn ein [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) Material mit vielen Farben [belichtet wird,](https://docs.unity3d.com/ScriptReference/Material.html) werden die Anweisungen für Denkpixel-Shader erhöht, was sich auf die Leistung auswirken wird. Erstellen Sie ein Profil für diese Änderungen in Ihrem Projekt.
+> Wenn ein [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) Material durch viele [Betonungen belichtet](https://docs.unity3d.com/ScriptReference/Material.html) wird, werden die Anweisungen für Denkpixel-Shader erhöht, und dies wirkt sich auf die Leistung aus. Erstellen Sie ein Profil für diese Änderungen in Ihrem Projekt.
 
 *Erhöhen der Anzahl der verfügbaren Daten [`ProximityLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) von zwei auf vier.*
 

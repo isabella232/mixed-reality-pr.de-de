@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Bounding Box
-ms.openlocfilehash: e8e3587ba871e127590a975b688a70db337daa19
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: fa1ace9d7aaf547ee677accfc4254ce9c64aebdfa6a01f11962812b058bc9ceb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214212"
 ---
 # <a name="bounding-box"></a>Begrenzungsrahmen
 
@@ -70,7 +70,7 @@ Beispiele für Begrenzungsfeldkonfigurationen finden Sie in der `BoundingBoxExam
 1. (Optional) Zuweisen von Prefabs und Materialien für ein HoloLens 2 Umrandungsfeld. Dies erfordert weiterhin Zuweisungen über den Inspektor, da die Materialien und Prefabs dynamisch geladen werden sollten.
 
 > [!NOTE]
-> Die Verwendung des Ordners "Resources" von Unity oder [shader.Find]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) zum dynamischen Laden von Shadern wird nicht empfohlen, da Shader-Permutationen zur Laufzeit möglicherweise fehlen.
+> Die Verwendung des Unity-Ordners "Resources" oder [von Shader.Find]( https://docs.unity3d.com/ScriptReference/Shader.Find.html) zum dynamischen Laden von Shadern wird nicht empfohlen, da Shader-Permutationen zur Laufzeit möglicherweise fehlen.
 
 ```c#
 bbox.BoxMaterial = [Assign BoundingBox.mat]
@@ -117,7 +117,7 @@ private void PutABoxAroundIt(GameObject target)
 
 Diese Eigenschaft gibt an, welches Objekt durch die Bearbeitung des Begrenzungsfelds transformiert wird. Wenn kein Objekt festgelegt ist, wird das Begrenzungsfeld standardmäßig auf das Besitzerobjekt festgelegt.
 
-### <a name="bounds-override"></a>Außerkraftsetzung von Begrenzungen
+### <a name="bounds-override"></a>Begrenzungen überschreiben
 
 Legt einen Feld-Collider aus dem -Objekt für die Berechnung von Begrenzungen fest.
 
@@ -183,20 +183,20 @@ Im Folgenden finden Sie die Prefabs, Materialien und skalierungswerte für die H
 
 ### <a name="proximity-setup-for-hololens-2-style"></a>Näherung (Setup für HoloLens 2 Format)
 
-Zeigen Sie die Ziehpunkte mit Animation basierend auf dem Abstand zu den Händen an, und blenden Sie sie aus. Es verfügt über eine animation zur zweistufigen Skalierung.
+Blenden Sie die Ziehpunkte mit Animation basierend auf dem Abstand zu den Händen ein und aus. Es verfügt über eine animation zur zweistufigen Skalierung.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_Proximity.png" alt="Proximity">
 
 * **Näherungseffekt aktiv:** Aktivierung des näherungsbasierten Handles aktivieren
 * **Mittlere Nähe behandeln:** Entfernung für die Skalierung im ersten Schritt
 * **Handle Close Proximity**:Distance for the 2nd step scaling
-* **Fernskala:** Der Standardskalierungswert des Handle-Assets, wenn die Hände sich nicht im Bereich der Interaktion des Begrenzungsfelds befinden (Der Abstand wird oben durch "Mittlere Nähe behandeln" definiert). Verwenden Sie 0, um handle standardmäßig auszublenden.)
+* **Fernskala:** Der Standardskalierungswert des Handle-Assets, wenn sich die Hände nicht im Bereich der Interaktion des Begrenzungsfelds befinden (Der Abstand wird oben durch "Mittlere Nähe behandeln" definiert). Verwenden Sie 0, um handle standardmäßig auszublenden.)
 * **Mittelmaßstab:** Skalierungswert des Handle-Medienwerts, wenn sich die Hände innerhalb des Bereichs der Begrenzungsfeldinteraktion befinden (über "Handle Close Proximity" definierter Abstand). Verwenden Von 1 zum Anzeigen der normalen Größe)
 * Close Scale :Scale value of the handle asset when the hands are within range of the grab interaction (Close **Scale:** Skalierungswert des Handle-Assets, wenn sich die Hände innerhalb des Bereichs der Greifinteraktion befinden (Der Abstand wird oben durch "Handle Close Proximity" definiert). Verwenden Von 1.x zum Anzeigen einer größeren Größe)
 
 ## <a name="making-an-object-movable-with-manipulation-handler"></a>Bewegbares Objekt mit Manipulationshandler
 
-Ein Begrenzungsfeld kann mit kombiniert werden, um das Objekt mithilfe der [`ManipulationHandler.cs`](manipulation-handler.md) Ferninteraktion verschiebbar zu machen. Der Manipulationshandler unterstützt sowohl ein- als auch zweihändige Interaktionen. [Die Handverfolgung](../input/hand-tracking.md) kann verwendet werden, um mit einem Objekt in der Nähe zu interagieren.
+Ein Begrenzungsfeld kann mit kombiniert werden, um das Objekt mithilfe von Ferninteraktion [`ManipulationHandler.cs`](manipulation-handler.md) verschiebbar zu machen. Der Manipulationshandler unterstützt sowohl ein- als auch zweihändige Interaktionen. [Handtracking](../input/hand-tracking.md) kann verwendet werden, um mit einem Objekt aus der Nähe zu interagieren.
 
 <img src="../images/bounding-box/MRTK_BoundingBox_ManipulationHandler.png" width="450" alt="Manipulation Handler">
 
@@ -204,7 +204,7 @@ Damit sich die Begrenzungsfeldränder beim Verschieben mithilfe der Ferninterakt
 
 ## <a name="migrating-to-bounds-control"></a>Migrieren zur Begrenzungssteuerung
 
-Vorhandene Prefabs und [](bounding-box.md) Instanzen mit Begrenzungsfeld können über das Migrationsfenster, das Teil des MRTK-Toolspakets ist, auf das neue Begrenzungssteuerfeld aktualisiert werden. [](../tools/migration-window.md)
+Vorhandene Prefabs und [](bounding-box.md) Instanzen mit begrenzungsgebundenem Feld können über [](../tools/migration-window.md) das Migrationsfenster, das Teil des MRTK-Toolspakets ist, auf das neue Begrenzungssteuerfeld aktualisiert werden.
 
 Für das Upgrade einzelner Instanzen des Begrenzungsfelds gibt es auch eine Migrationsoption innerhalb des Eigenschafteninspektors der Komponente.
 

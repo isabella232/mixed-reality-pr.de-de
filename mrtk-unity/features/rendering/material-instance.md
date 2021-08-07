@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, MaterialInstance,
-ms.openlocfilehash: ecd8f9e14564cbd03cb6faa848b06ca55a024207
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 6d9a2a35a009bfce1fcfae15000ea02c47be637a8c5a483254ea30d9948922e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176719"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210050"
 ---
 # <a name="material-instance"></a>Materialinstanz
 
@@ -19,7 +19,7 @@ Das Verhalten spricht für die Nachverfolgung der Lebensdauer von Instanzmateria
 > [!NOTE]
 > [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) werden der Materialinstancierung vorgezogen, sind aber nicht immer in allen Szenarien verfügbar.
 
-Warum kann die [Verwendung von Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) ein Problem sein? Wenn Sie den folgenden Code zu einer Unity-Szene hinzufügen und die Speicherauslastung für Trefferplays weiterhin heiter und tosend ist:
+Warum kann die [Verwendung von Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) ein Problem sein? Wenn Sie den folgenden Code zu einer Unity-Szene hinzufügen und die Speicherauslastung für Trefferplays weiterhin tosen und totschlagen wird:
 
 ```c#
 public class Leak : MonoBehaviour
@@ -54,7 +54,7 @@ public class NoLeak : MonoBehaviour
 }
 ```
 
-## <a name="usage"></a>Verwendung
+## <a name="usage"></a>Verbrauch
 
 Beim Aufrufen von [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s) von Unity instanziiert Unity automatisch neue Materialien. Es liegt in der Verantwortung des Aufrufers, die Materialien zu zerstören, wenn ein Material nicht mehr benötigt wird oder das Spielobjekt zerstört wird. Das [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) Verhalten hilft dabei, Materiallecks zu vermeiden und die Materialzuordnungspfade während der Bearbeitung und Laufzeit konsistent zu halten.
 

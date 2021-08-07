@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Tastatur, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 096a408a8106ec5ee6a820865e158c3cd019f702
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: f0045f6008384f5ed709597d625dc4526723921df51a6a1c6d25641ac95f0b34
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600139"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208346"
 ---
 # <a name="keyboard"></a>Tastatur
 
 ![Tastatur](images/UX_Hero_Keyboard.jpg)
 
-Ihre Mixed Reality-Anwendung kann jederzeit die Systemtastatur aufrufen, die sich entsprechend den Funktionen der Zielplattform verhält. Beispielsweise unterstützt die Tastatur auf HoloLens 2 direkte Handinteraktionen, während HoloLens-Tastaturen (1. Generation) Anvits und Tippen in die Luft unterstützen.
+Ihre Mixed Reality-Anwendung kann jederzeit die Systemtastatur aufrufen, die sich entsprechend den Funktionen der Zielplattform verhält. Beispielsweise unterstützt die Tastatur auf HoloLens 2 direkte Handinteraktionen, während HoloLens Tastaturen (1. Generation) Anvits und Tippen in die Luft unterstützen.
 
 <br>
 
@@ -36,7 +36,7 @@ Ihre Mixed Reality-Anwendung kann jederzeit die Systemtastatur aufrufen, die sic
 Wenn Sie die von uns bereitgestellte Unity-Entwicklungsreise ausführen, besteht Ihre nächste Aufgabe darin, Ihre Anwendung auf einem Gerät oder Emulator bereitzustellen.
 
 > [!div class="nextstepaction"]
-> [Bereitstellen in HoloLens oder Windows Mixed Reality immersive Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
+> [Bereitstellen für HoloLens oder Windows Mixed Reality immersive Headsets](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
 ## <a name="see-also"></a>Siehe auch
 

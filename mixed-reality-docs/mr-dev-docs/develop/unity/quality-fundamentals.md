@@ -6,16 +6,16 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: Qualitätsgrundlagen, Fallstudie, Projekt, Beispiel, MRTK, Mixed Reality Toolkit, Unity, Beispiel-Apps, Beispiel-Apps, Open Source, Microsoft Store, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: e91ea1c69aeafaafa9c9bae30af6e5a288754764
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702919"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211955"
 ---
 # <a name="quality-fundamentals"></a>Qualitätsgrundlagen
 
-Quality Fundamentals ist eine HoloLens 2-App, die die Grundlagen der Erstellung einer hervorragenden Mixed Reality-Erfahrung veranschaulicht.  Anstatt nur mit Qualitätsproblemen in Mixed Reality zu lernen und zu lesen, können wir nun allgemeine Umgebungs-, Entwurfs- und Leistungsprobleme und Lösungen aus erster Hand erleben, indem wir die in der App bereitgestellten Optionen auswählen.
+Quality Fundamentals ist eine HoloLens 2-App, die die Grundlagen der Erstellung einer hervorragenden Mixed Reality-Erfahrung veranschaulicht.  Anstatt nur mehr über Qualitätsprobleme in Mixed Reality zu erfahren und zu lesen, können wir nun allgemeine Umgebungs-, Entwurfs- und Leistungsprobleme und Lösungen aus erster Hand erleben, indem wir die in der App bereitgestellten Optionen auswählen.
 
 Um die App herunterzuladen und zu installieren, wechseln Sie zur Downloadseite der App:
 
@@ -38,7 +38,7 @@ Starten Sie die Quality Fundamentals-App auf HoloLens. Sobald die Startseite der
 
 ### <a name="surfaces"></a>Oberflächen
 
-Spiegel oder Oberflächen mit gespiegelten Oberflächen können die HoloLens Sensoren hinsichtlich der Form des Objekts verwechseln.  Objekte, die auf der Oberfläche reflektiert werden, können vom Gerät als sich ändernde Umgebung interpretiert werden, was dazu führen kann, dass das Gerät die Nachverfolgung verliert.  Wenn gespiegelte Oberflächen Herausforderungen für HoloLens verursachen, erwägen Sie das Hinzufügen eines Bildschirms oder verleumderter Blinde.
+Spiegel oder Oberflächen mit gespiegelten Oberflächen können die HoloLens Sensoren hinsichtlich der Form des Objekts verwechseln.  Objekte, die auf der Oberfläche reflektiert werden, können vom Gerät als sich ändernde Umgebung interpretiert werden, was dazu führen kann, dass das Gerät die Nachverfolgung verliert.  Wenn gespiegelte Oberflächen Herausforderungen für HoloLens verursachen, sollten Sie erwägen, einen Bildschirm oder closable Blinds hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Oberflächen in einem Raum](/hololens/hololens-environment-considerations#surfaces-in-a-space) in HoloLens [Umgebungsüberlegungen.](/hololens/hololens-environment-considerations)
 
@@ -48,9 +48,9 @@ HoloLens Leistung kann durch sehr niedrige oder sehr helle Lichtbedingungen beei
 
 Weitere Informationen finden Sie unter [Überlegungen zur Beleuchtung](/hololens/hololens-environment-considerations?branch=pr-en-us-3071#lighting) in [HoloLens Umgebung.](/hololens/hololens-environment-considerations)
 
-## <a name="anchor-fundamentals"></a>Grundlagen des Ankers
+## <a name="anchor-fundamentals"></a>Grundlagen zum Anker
 
-Um zu erfahren, wie Sie Spatial Anchors verwenden, um Hologramme an einem physischen Raum auszurichten, wählen Sie **anchor Fundametals** auf der Startseite der App aus.
+Wählen Sie auf der Startseite der App **Anchor Fundametals** aus, um zu erfahren, wie Sie mit Spatial Anchors Hologramme an einem physischen Raum ausrichten.
 
 In diesem Teil der App untersuchen wir die folgenden Benutzerszenarien:
 
@@ -84,7 +84,7 @@ Weitere Informationen finden Sie im Artikel [zur Hologrammstabilität](/windows/
 
 ### <a name="late-stage-reprojection-lsr"></a>Late Stage Reprojection (LSR)
 
-Die Neuprojektion wird verwendet, um Hologramme zu stabilen, wenn sich Benutzer in ihrem Raum bewegen.  Probieren Sie die verschiedenen Projektionsoptionen aus, die von diesem Teil der App bereitgestellt werden, um den Unterschied in der Hologrammqualität zu sehen.
+Die Neuprojektion wird verwendet, um Hologramme zu stabilen, wenn sich Benutzer in ihrem Raum bewegen.  Probieren Sie die verschiedenen Projektierungsoptionen aus, die von diesem Teil der App bereitgestellt werden, um den Unterschied in der Hologrammqualität zu sehen.
 
 ![Testen Sie die verschiedenen Optionen für die Neuprojektion, um den Unterschied zu erleben.](images\qf-lsr-modes.jpg)
 
@@ -96,7 +96,7 @@ Z-Fighting tritt auf, wenn die Mixed Reality-Anwendung nicht erkennen kann, welc
 
 ![Erleben Sie Z-Fighting mit Objektplatzierungen.](images\qf-z-fighting.jpg)
 
-Ausführliche Informationen zum Z-Fighting finden Sie im Artikel Empfohlene [Einstellungen für Unity](/windows/mixed-reality/develop/unity/recommended-settings-for-unity) unter Aktivieren der [Tiefenpufferfreigabe.](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing)
+Ausführliche Informationen zum Z-Fighting finden Sie im Artikel Aktivieren der [Tiefenpufferfreigabe](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing) im Artikel [empfohlene Einstellungen für Unity.](/windows/mixed-reality/develop/unity/recommended-settings-for-unity)
 
 ### <a name="anti-aliasing"></a>Antialiasing
 
@@ -132,7 +132,7 @@ Weitere Informationen finden Sie unter [MRTK Standard Shader](/windows/mixed-rea
 
 ### <a name="draw-calls"></a>Zeichnen von Aufrufen
 
-Draw-Aufrufe sind ressourcenintensive Aufrufe der Grafikkarte.  In diesem Teil der App können Sie den visuellen Unterschied aus erster Hand erleben, da sich die Anzahl der Zeichnen-Aufrufe auf FPS auswirkt.
+Zeichnen-Aufrufe sind ressourcenintensive Aufrufe der Grafikkarte.  Erleben Sie in diesem Teil der App den visuellen Unterschied aus erster Hand, da sich die Anzahl der Zeichnen-Aufrufe auf FPS auswirkt.
 
 ![Zeichnen-Aufrufe sollten optimiert werden, um die Leistung zu steigern.](images\qf-3d-asset-draw-calls.jpg)
 

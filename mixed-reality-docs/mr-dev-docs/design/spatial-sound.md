@@ -1,32 +1,32 @@
 ---
-title: Audioinhalte in gemischter Realität
-description: Audioinhalte in gemischter Realität können das Vertrauen von Benutzeroberflächen Interaktionen erhöhen und Benutzer in der Benutzeroberfläche eintauchen.
+title: Audio in Mixed Reality
+description: Audio in Mixed Reality kann das Vertrauen der Benutzer in Interaktionen mit der Benutzeroberfläche erhöhen und benutzerfreundlicher machen.
 author: kegodin
 ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
-keywords: räumlicher Sound, Umschließungs Sound, 3D--Audio, 3D--Ton, räumliche Audiodaten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Fallstudien, Akustik
-ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Raumklang, Umschließen von Sound, 3D-Audio, 3D-Sound, räumliche Audiodaten, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Fallstudien, Akustik
+ms.openlocfilehash: 75b87098f90611140d2c43bb596e7c5d50dab9c47fc49426d5bcbbe0095c3847
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583251"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188820"
 ---
-# <a name="audio-in-mixed-reality"></a>Audioinhalte in gemischter Realität
+# <a name="audio-in-mixed-reality"></a>Audio in Mixed Reality
 
-Das Audiomaterial ist ein wesentlicher Bestandteil von Design und Produktivität in gemischter Realität. Sound kann:
-* Erhöhen Sie das Vertrauen von Benutzern in Gesten-und sprach Interaktionen.
-* Leiten Sie die Benutzer zu den nächsten Schritten.
+Audio ist ein wesentlicher Bestandteil von Design und Produktivität in Mixed Reality. Sound kann:
+* Erhöhen Sie das Vertrauen der Benutzer in Gesten- und Sprachinteraktionen.
+* Führen Sie Benutzer zu den nächsten Schritten.
 * Kombinieren Sie virtuelle Objekte effektiv mit der realen Welt.
 
-Die Head-Nachverfolgung mit niedriger Latenz von Mixed Reality-Headsets (einschließlich hololens) unterstützt die auf hoher Qualität basierende Spatialisierung. Sie können Audiodaten in Ihrer Anwendung für Folgendes spatialisieren:
-* Beachten Sie, dass visuelle Elemente aufgerufen werden.
-* Helfen Sie Benutzern dabei, das Bewusstsein ihrer realen Umgebung zu wahren.
+Die Kopfnachverfolgung von Mixed Reality-Headsets mit geringer Latenz, einschließlich HoloLens, unterstützt hochwertige HRTF-basierte Räumliche Raumisierung. Sie können audio in Ihrer Anwendung spatialisieren, um:
+* Achten Sie auf visuelle Elemente.
+* Helfen Sie Benutzern, das Bewusstsein für ihre reale Umgebung zu behalten.
 
-Die Akustik verbindet Hologramme tiefer mit der Mixed-Reality-Welt. Es stellt Hinweise zur Umgebung und zum Objektzustand bereit.
+Akustik verbindet Hologramme tiefer mit der Mixed Reality-Welt. Sie enthält Hinweise zum Umgebungs- und Objektzustand.
 
-Weitere Informationen finden Sie [unter ausführliche Entwurfs Beispiele für die Verwendung von Audiodateien](spatial-sound-design.md).
+Sehen Sie sich [ausführliche Beispiele für den Entwurf an, der Audio verwendet.](spatial-sound-design.md)
 
 <br>
 
@@ -43,7 +43,7 @@ Weitere Informationen finden Sie [unter ausführliche Entwurfs Beispiele für di
     </colgroup>
     <tr>
         <td><strong>Feature</strong></td>
-        <td><a href="/hololens/hololens1-hardware"><strong>Hololens (erste Generation)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (erste Generation)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>Immersive Headsets</strong></a></td>
     </tr>
@@ -54,58 +54,58 @@ Weitere Informationen finden Sie [unter ausführliche Entwurfs Beispiele für di
         <td>✔️</td>
     </tr>
      <tr>
-        <td>Beschleunigung der spatialisierungs Hardware</td>
+        <td>Hardwarebeschleunigung für räumliche Raumbeschleunigung</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
     </tr>
 </table>
 
-## <a name="use-of-sounds-in-mixed-reality"></a>Verwendung von Sounds in gemischter Realität
+## <a name="use-of-sounds-in-mixed-reality"></a>Verwendung von Sounds in Mixed Reality
 
-Die [Verwendung von Sounds in gemischter Realität](spatial-sound-design.md) erfordert einen anderen Ansatz als in der Touchscreen-und Tastatur-und Maus Anwendungen. Wichtige Entscheidungen zum Entwurf von Entscheidungen umfassen, welche Sounds räumlich und welche Interaktionen mit sonify zu tun haben. Diese Entscheidungen wirken sich stark auf Benutzer vertrauen, Produktivität und Lernkurve aus.
+[Die Verwendung von Sounds in Mixed Reality](spatial-sound-design.md) erfordert einen anderen Ansatz als bei Touch- und Tastatur- und Mausanwendungen. Wichtige Entwurfsentscheidungen für Sound sind u. a. die zu räumlichen Töne und interaktionen, die vertont werden müssen. Diese Entscheidungen wirken sich stark auf die Benutzervertrauens-, Produktivitäts- und Lernkurve aus.
 
 ### <a name="case-studies"></a>Fallstudien
 
-Mit holotour werden Benutzer praktisch zu touristischen und historischen Websites auf der ganzen Welt. Weitere Informationen finden Sie in der Fallstudie [Sound Design for holotour](case-study-spatial-sound-design-for-holotour.md) . Ein spezielles Mikrofon und renderingsetup wurden zum Erfassen der Themenbereiche verwendet.
+HoloTour führt Benutzer virtuell zu Sehenswürdigkeiten und historischen Standorten auf der ganzen Welt. Weitere Informationen finden [Sie im Sound-Design für die](case-study-spatial-sound-design-for-holotour.md) HoloTour-Fallstudie. Ein spezielles Mikrofon- und Renderingsetup wurde verwendet, um die Betreffräume zu erfassen.
 
-Roboraid ist ein Hochenergie geschütztes Gerät für hololens. In der Fallstudie [Sound Design for roboraid](case-study-using-spatial-sound-in-roboraid.md) werden die Entwurfs Optionen beschrieben, die getroffen wurden, um sicherzustellen, dass räumliche Audiodaten in vollem Umfang dramatisch wirksam werden.
+RoboRaid ist ein Hochleistungs-Energieverbrauchser für HoloLens. Im [Sound-Entwurf für die RoboRaid-Fallstudie](case-study-using-spatial-sound-in-roboraid.md) werden die Entwurfsentscheidungen beschrieben, die getroffen wurden, um sicherzustellen, dass räumliche Audiodaten mit der höchsten drastischen Wirkung verwendet wurden.
 
 ## <a name="spatialization"></a>Raumklang
 
-Spatialization ist die direktionale Komponente räumlicher Audiodaten. Bei einem 7,1-Home-Theater-Setup ist die Spatialisierung so einfach wie das Schwenken zwischen Lautsprechern. Doch für Kopfhörer in gemischter Realität ist es von entscheidender Bedeutung, eine auf HRTF basierende Technologie für Genauigkeit und Komfort zu verwenden. Windows bietet eine auf HRTF basierende Spatialisierung. diese Unterstützung ist auf hololens 2 Hardware beschleunigt.
+Spatialization ist die direktionale Komponente räumlicher Audiodaten. Bei einer 7.1-Heimordnungseinrichtung ist die Räumliche Veranschaulichung so einfach wie das Schwenken zwischen Nerdungen. Für Mixed Reality-Menschen ist es jedoch wichtig, eine HRTF-basierte Technologie zu verwenden, um Genauigkeit und Komfort zu gewährleisten. Windows bietet HRTF-basierte Räumliche Raumisierung, und diese Unterstützung wird hardwarebeschleunigt auf HoloLens 2.
 
 <br>
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/aB3TDjYklmo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### <a name="should-i-spatialize"></a>Sollte ich räumlich spatialisieren?
+### <a name="should-i-spatialize"></a>Sollte ich raumisieren?
 
-Die Spatialisierung kann viele Sounds in gemischten Reality-Anwendungen verbessern. Die Spatialisierung nimmt einen Sound aus dem Kopf des Listener und platziert Sie in der Welt. Vorschläge zur effektiven Verwendung von spatialization in Ihrer Anwendung finden Sie unter [Spatial Sound Design](spatial-sound-design.md).
+Die Räumliche Raumisierung kann viele Sounds in Mixed Reality-Anwendungen verbessern. Die Raumklangisierung nimmt einen Sound aus dem Kopf des Listeners und platziert ihn in der Welt. Vorschläge zur effektiven Verwendung der Räumlichen Raumisierung in Ihrer Anwendung finden Sie unter [Raumklangentwurf](spatial-sound-design.md).
 
 ### <a name="spatializer-personalization"></a>Spatializer-Personalisierung
 
-HRTFs bearbeitet die Ebenen-und Phasenunterschiede zwischen den Ohren im Frequenzspektrum. Sie basieren auf physischen Modellen und Messungen von Menschen Kopf-, Rumpf-und Ohrformen (pinnae). Unsere Gehirne reagieren auf diese Unterschiede, um die wahrgenommene Richtung in Sound bereitzustellen.
+HRTFs ändern die Unterschiede zwischen Denk- und Phasenunterschieden zwischen Denk- und Häufigkeitsspektrum. Sie basieren auf physischen Modellen und Messungen von menschlichen Kopf-, Torso- und Gehörformen (Pinnae). Unsere Gehirne reagieren auf diese Unterschiede, um eine wahrgenommene Richtung im Sound zu ermöglichen.
 
-Jede Person verfügt über eine eindeutige Ohrform, Kopfgröße und Position. Das beste ist also die beste Lösung für Sie. Um die räumungsgenauigkeit zu erhöhen, verwendet hololens ihren Inter-pupilary Distance (IPD) aus den Headset-anzeigen, um den HRTFs für die Kopfgröße anzupassen.
+Jede Person verfügt über eine eindeutige Form des Kopfs und der Position des Kopfes. Daher entsprechen ihnen die besten HRTFs. Um die Genauigkeit der Räumlichen Vergrößerung zu erhöhen, verwendet HoloLens ipd-Entfernung (Inter-Ary Distance, IPD) von den Headsetanzeigen, um die HRTFs für Ihre Kopfgröße anzupassen.
 
-### <a name="spatializer-platform-support"></a>Unterstützung für spatializer-Plattform
+### <a name="spatializer-platform-support"></a>Unterstützung der Spatializer-Plattform
 
-Windows bietet mithilfe der [ispatialaudioclient-API](/windows/win32/coreaudio/spatial-sound)eine spatialization, einschließlich HRTFs. Diese API macht die Hardwarebeschleunigung von hololens 2 HRTF für Anwendungen verfügbar.
+Windows bietet raumbezogene Funktionen, einschließlich HRTFs, über die [ISpatialAudioClient-API.](/windows/win32/coreaudio/spatial-sound) Diese API macht die HoloLens 2 HRTF-Hardwarebeschleunigung für Anwendungen verfügbar.
 
-### <a name="spatializer-middleware-support"></a>Unterstützung für spatializer-Middleware
+### <a name="spatializer-middleware-support"></a>Spatializer-Middlewareunterstützung
 
-Die Unterstützung für Windows ' HRTFs ist für die folgenden Drittanbieter-AUDIOMODULE verfügbar.
-* Ein [Plug-in für Unity-Audiodateien](../develop/unity/spatial-sound-in-unity.md)
-* Ein [wwise-Audiomodul-Plug-](https://www.audiokinetic.com/products/plug-ins/msspatial/) in
+Unterstützung für Windows HRTFs ist für die folgenden Audio-Engines von Drittanbietern verfügbar.
+* Ein [Unity-Audio-Engine-Plug-In](../develop/unity/spatial-sound-in-unity.md)
+* Ein [Wwise-Audio-Engine-Plug-In](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
 ## <a name="acoustics"></a>Akustik
 
-Räumliche Audiodaten sind ungefähr mehr als die Richtung. Weitere Dimensionen sind Okklusion, Behinderung, Reverb, Porton und Quell Modellierung. Gemeinsam werden diese Dimensionen als *Akustik* bezeichnet. Ohne Akustik fehlt bei spatialisierten Sounds eine nicht wahrgenommene Entfernung.
+Bei räumlichen Audiodaten geht es um mehr als nur um die Richtung. Andere Dimensionen sind Okklusion, Hindernisse, Hall, Portal und Quellmodellierung. Zusammen werden diese Dimensionen als *Akustik bezeichnet.* Ohne Akustik fehlt raumisierten Tönen der wahrgenommene Abstand.
 
-Akustik Behandlungen reichen von einfachen bis zu komplexen. Sie können einen von beliebigen Audiomodulen unterstützten Reverb verwenden, um spatialisierte Sounds in die Umgebung des Listener zu überführen. Akustiksysteme wie z. b. die [Projekt Akustik](/gaming/acoustics/what-is-acoustics)  bieten umfangreichere und überzeugende Akustik Behandlungen. Die Projekt Akustik kann die Auswirkung von Wänden, Türen und anderen Szenen Geometrie in einem Sound modellieren. Es ist eine effektive Option in Fällen, in denen die relevante Szene Geometrie zur Entwicklungszeit bekannt ist.
+Die Akustik-Akustik reicht von einfach bis komplex. Sie können einen Hall verwenden, der von jeder Audio-Engine unterstützt wird, um spatialisierte Sounds in die Umgebung des Listeners zu pushen. Akustiksysteme wie [Project Akustik](/gaming/acoustics/what-is-acoustics) bieten eine vielfältigere und ansprechendere Akustikbehandlung. Project Akustik kann die Wirkung von Wänden, Türen und anderer Szenengeometrie auf einem Sound modellieren. Dies ist eine effektive Option für Fälle, in denen die relevante Szenengeometrie zur Entwicklungszeit bekannt ist.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Raumklang in Unity](../develop/unity/spatial-sound-in-unity.md)
-- [Verwenden von Sound in Anwendungen mit gemischter Realität](spatial-sound-design.md)
+- [Verwenden von Sound in Mixed Reality-Anwendungen](spatial-sound-design.md)

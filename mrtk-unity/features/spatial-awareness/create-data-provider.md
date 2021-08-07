@@ -1,22 +1,22 @@
 ---
-title: Erstellen eines räumlichen Bewusstseins Datenanbieter
+title: Erstellen von Datenanbieter für räumliche Wahrnehmung
 description: beschreibt, wie benutzerdefinierte Datenanbieter in MRTK erstellt werden.
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 04a0cdbd18f666b6a99c120eb28966234cc8c92d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 05186c418a7b0b7b143abc58be6a6afb64cb69f5a1c90c73ed516d51c2a5d8ea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145152"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188852"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>Erstellen eines Systemdatenanbieters für räumliche Wahrnehmung
 
-Das Spatial Awareness-System ist ein erweiterbares System zum Bereitstellen von Daten zu realen Umgebungen für Anwendungen. Um Unterstützung für eine neue Hardwareplattform oder eine neue Form von Spatial Awareness-Daten hinzuzufügen, ist möglicherweise ein benutzerdefinierter Datenanbieter erforderlich.
+Das Spatial Awareness-System ist ein erweiterbares System, mit dem Anwendungen Daten zu realen Umgebungen bereitstellen können. Um Unterstützung für eine neue Hardwareplattform oder eine neue Form von Räumlichen Wahrnehmungsdaten hinzuzufügen, ist möglicherweise ein benutzerdefinierter Datenanbieter erforderlich.
 
-In diesem Artikel wird beschrieben, wie [Sie](../../architecture/systems-extensions-providers.md)benutzerdefinierte Datenanbieter ( auch räumliche Beobachter genannt) für das Spatial Awareness-System erstellen. Der hier gezeigte Beispielcode ist aus der -Klassenimplementierung, die zum Laden von [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) [3D-Gitternetzdaten im Editor nützlich ist.](spatial-object-mesh-observer.md)
+In diesem Artikel wird beschrieben, wie [Sie benutzerdefinierte Datenanbieter](../../architecture/systems-extensions-providers.md), auch als Räumliche Beobachter bezeichnet, für das System für räumliche Wahrnehmung erstellen. Der hier gezeigte Beispielcode stammt aus der [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) Klassenimplementierungen, die zum Laden von [3D-Meshdaten im Editor nützlich](spatial-object-mesh-observer.md)ist.
 
 > [!NOTE]
 > Den vollständigen Quellcode, der in diesem Beispiel verwendet wird, finden Sie im `Assets/MRTK/Providers/ObjectMeshObserver` Ordner .
@@ -25,21 +25,21 @@ In diesem Artikel wird beschrieben, wie [Sie](../../architecture/systems-extensi
 
 Datenanbieter können auf zwei Arten verteilt werden:
 
-1. Drittanbieter-Add-Ons
-1. Teil des Microsoft Mixed Reality Toolkits
+1. Add-Ons von Drittanbietern
+1. Teil des Microsoft Mixed Reality Toolkit
 
-Der Genehmigungsprozess für die Übermittlung neuer Datenanbieter an das MRTK variiert von Fall zu Fall und wird zum Zeitpunkt des ersten Vorschlags kommuniziert. Vorschläge können übermittelt werden, indem ein neues Problem mit dem [ *Funktionsanforderungstyp* erstellt wird.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)
+Der Genehmigungsprozess für die Übermittlung neuer Datenanbieter an das MRTK variiert von Fall zu Fall und wird zum Zeitpunkt des ursprünglichen Vorschlags kommuniziert. Vorschläge können übermittelt werden, indem ein neues Problem vom Typ [ *Featureanforderung*](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)erstellt wird.
 
 ### <a name="third-party-add-on"></a>Drittanbieter-Add-On
 
 **Namespace**
 
-Datenanbieter müssen über einen Namespace verfügen, um potenzielle Namenskollisionen zu minimieren. Es wird empfohlen, dass der -Namespace die folgenden Komponenten enthält.
+Datenanbieter müssen über einen Namespace verfügen, um potenzielle Namenskonflikte zu minimieren. Es wird empfohlen, dass der Namespace die folgenden Komponenten enthält.
 
-- Unternehmensname, der das Add-On erzeugt
+- Firmenname, der das Add-On erzeugt
 - Featurebereich
 
-Ein Vom Unternehmen Contoso erstellter und ausgelieferter Spatial Awareness-Datenanbieter kann beispielsweise *"Contoso.MixedReality.Toolkit.SpatialAwareness" sein.*
+Ein Vom Contoso-Unternehmen erstellter und ausgelieferter Spatial Awareness-Datenanbieter kann beispielsweise *"Contoso.MixedReality.Toolkit.SpatialAwareness"* sein.
 
 **Ordnerstruktur**
 
@@ -115,7 +115,7 @@ Nachdem die -Klasse definiert wurde, besteht der nächste Schritt darin, die Imp
 > [!NOTE]
 > Die [`BaseSpatialObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver) -Klasse stellt über die [`BaseService`](xref:Microsoft.MixedReality.Toolkit.BaseService) -Klasse nur leere Implementierungen für [`IMixedRealityDataProvider`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider) -Methoden bereit. Die Details dieser Methoden sind im Allgemeinen datenanbieterspezifisch.
 
-Folgende Methoden sollten vom Datenanbieter implementiert werden:
+Der Datenanbieter sollte folgende Methoden implementieren:
 
 - `Destroy()`
 - `Disable()`
@@ -213,15 +213,15 @@ Es wird empfohlen, das Muster zu implementieren, das vom MRTK beim Instrumentier
 >
 > Es wird empfohlen, dass benutzerdefinierte Datenanbieter ein ähnliches Muster befolgen, um die Identifizierung bestimmter Komponenten und Methoden bei der Analyse von Ablaufverfolgungen zu vereinfachen.
 
-## <a name="create-the-profile-and-inspector"></a>Erstellen des Profils und Inspektors
+## <a name="create-the-profile-and-inspector"></a>Erstellen des Profils und des Inspektors
 
-Im Mixed Reality Toolkit werden Datenanbieter mithilfe der Profile [konfiguriert.](../profiles/profiles.md)
+Im Mixed Reality Toolkit werden Datenanbieter mithilfe von [Profilen](../profiles/profiles.md)konfiguriert.
 
 ### <a name="define-the-profile"></a>Definieren des Profils
 
-Der Profilinhalt sollte die zugänglichen Eigenschaften des Datenanbieters spiegeln (z. B. Updateintervall). Alle vom Benutzer konfigurierbaren Eigenschaften, die in jeder Schnittstelle definiert sind, sollten im Profil enthalten sein.
+Profilinhalte sollten die zugänglichen Eigenschaften des Datenanbieters spiegeln (z. B. Updateintervall). Alle vom Benutzer konfigurierbaren Eigenschaften, die in jeder Schnittstelle definiert sind, sollten im Profil enthalten sein.
 
-Basisklassen werden empfohlen, wenn ein neuer Datenanbieter einen vorhandenen Anbieter erweitert. Beispielsweise erweitert das , um Kunden die Bereitstellung eines [`SpatialObjectMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile) [`MixedRealitySpatialAwarenessMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile) 3D-Modells zu ermöglichen, das als Umgebungsdaten verwendet werden soll.
+Basisklassen werden empfohlen, wenn ein neuer Datenanbieter einen vorhandenen Anbieter erweitert. Beispielsweise erweitert die , [`SpatialObjectMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserverProfile) [`MixedRealitySpatialAwarenessMeshObserverProfile`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.MixedRealitySpatialAwarenessMeshObserverProfile) damit Kunden ein 3D-Modell bereitstellen können, das als Umgebungsdaten verwendet werden kann.
 
 ```c#
 [CreateAssetMenu(
@@ -241,13 +241,13 @@ public class SpatialObjectMeshObserverProfile : MixedRealitySpatialAwarenessMesh
 }
 ```
 
-Das -Attribut kann auf die Profilklasse angewendet werden, damit Kunden über das Menü Create Assets Mixed Reality Toolkit Profiles (Erstellen von Ressourcen `CreateAssetMenu`   >    >  **Mixed Reality Toolkitprofile)** eine Profilinstanz erstellen  >   können.
+Das `CreateAssetMenu` -Attribut kann auf die Profilklasse angewendet werden, damit Kunden mithilfe des  >  Menüs **Objekte**  >  **Mixed Reality Toolkitprofile** erstellen eine Profilinstanz erstellen  >   können.
 
 ### <a name="implement-the-inspector"></a>Implementieren des Inspektors
 
-Profilinspektoren sind die Benutzeroberfläche zum Konfigurieren und Anzeigen von Profilinhalten. Jeder Profilinspektor sollte die -Klasse [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) erweitern.
+Profilinspektoren sind die Benutzeroberfläche zum Konfigurieren und Anzeigen von Profilinhalten. Jeder Profilinspektor sollte die [`BaseMixedRealityToolkitConfigurationProfileInspector`](xref:Microsoft.MixedReality.Toolkit.Editor.BaseMixedRealityToolkitConfigurationProfileInspector) -Klasse erweitern.
 
-Das `CustomEditor` -Attribut informiert Unity über den Typ des Assets, auf das der Inspektor angewendet wird.
+Das `CustomEditor` -Attribut informiert Unity über den Typ des Medienobjekts, für das der Inspektor gilt.
 
 ```c#
 [CustomEditor(typeof(SpatialObjectMeshObserverProfile))]
@@ -259,13 +259,13 @@ public class SpatialObjectMeshObserverProfileInspector : BaseMixedRealityToolkit
 
 Das Mixed Reality Toolkit verwendet Assemblydefinitionsdateien[(ASMDEF-Dateien),](https://docs.unity3d.com/Manual/ScriptCompilationAssemblyDefinitionFiles.html)um Abhängigkeiten zwischen Komponenten anzugeben und Unity bei der Reduzierung der Kompilierungszeit zu unterstützen.
 
-Es wird empfohlen, Assemblydefinitionsdateien für alle Datenanbieter und deren Editor-Komponenten zu erstellen.
+Es wird empfohlen, Assemblydefinitionsdateien für alle Datenanbieter und deren Editorkomponenten zu erstellen.
 
-Bei Verwendung [der Ordnerstruktur](#namespace-and-folder-structure) im früheren Beispiel gibt es zwei ASMDEF-Dateien für den Datenanbieter ContosoSpatialAwareness.
+Wenn Sie die [Ordnerstruktur](#namespace-and-folder-structure) im vorherigen Beispiel verwenden, gibt es zwei ASMDEF-Dateien für den ContosoSpatialAwareness-Datenanbieter.
 
-Die erste Assemblydefinition ist für den Datenanbieter. In diesem Beispiel heißt sie ContosoSpatialAwareness und befindet sich im Ordner *ContosoSpatialAwareness des Beispiels.* Diese Assemblydefinition muss eine Abhängigkeit von Microsoft.MixedReality.Toolkit und allen anderen Assemblys angeben, von denen sie abhängt.
+Die erste Assemblydefinition gilt für den Datenanbieter. In diesem Beispiel heißt sie ContosoSpatialAwareness und befindet sich im Ordner *ContosoSpatialAwareness* des Beispiels. Diese Assemblydefinition muss eine Abhängigkeit von Microsoft.MixedReality.Toolkit und allen anderen Assemblys angeben, von denen sie abhängt.
 
-Die ContosoInputEditor-Assemblydefinition gibt den Profilinspektor und jeden editorspezifischen Code an. Diese Datei muss sich im Stammordner des Editorcodes befinden. In diesem Beispiel befindet sich die Datei im Ordner *ContosoSpatialAwareness\Editor.* Diese Assemblydefinition enthält einen Verweis auf die ContosoSpatialAwareness-Assembly sowie:
+Die Assemblydefinition ContosoInputEditor gibt den Profilinspektor und jeden editorspezifischen Code an. Diese Datei muss sich im Stammordner des Editorcodes befinden. In diesem Beispiel befindet sich die Datei im Ordner *ContosoSpatialAwareness\Editor.* Diese Assemblydefinition enthält einen Verweis auf die ContosoSpatialAwareness-Assembly sowie:
 
 - Microsoft.MixedReality.Toolkit
 - Microsoft.MixedReality.Toolkit.Editor.Inspectors
@@ -279,7 +279,7 @@ Nach der Erstellung kann der Datenanbieter beim Spatial Awareness-System registr
 
 ## <a name="packaging-and-distribution"></a>Verpacken und Verteilen
 
-Datenanbieter, die als Drittanbieterkomponenten verteilt werden, verfügen über die spezifischen Details der Paketierung und Verteilung, die dem Entwickler überlassen werden. Wahrscheinlich ist die gängigste Lösung die Generierung eines UNITY-Pakets und die Verteilung über den Unity Asset Store.
+Datenanbieter, die als Drittanbieterkomponenten verteilt werden, verfügen über die spezifischen Details der Paketierung und Verteilung, die dem Entwickler überlassen werden. Wahrscheinlich ist die gängigste Lösung die Generierung eines UNITYPACKAGE-Pakets und das Verteilen über das Unity-Medienobjekt Store.
 
 Wenn ein Datenanbieter als Teil des Microsoft Mixed Reality Toolkit-Pakets übermittelt und akzeptiert wird, packt und verteilt das Microsoft MRTK-Team ihn im Rahmen der MRTK-Angebote.
 

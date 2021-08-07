@@ -5,12 +5,12 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Scene Understanding
-ms.openlocfilehash: d5430e7885055a550347c4ccebc1452f68125922
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf6ceaf98f239e725de3e084bd1ca96a63abc6c28f2434e8ae84ba3f70ee025b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176233"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214362"
 ---
 # <a name="scene-understanding-observer"></a>Beobachter für Szenenverständnis
 
@@ -19,7 +19,7 @@ ms.locfileid: "113176233"
 Einige erwartete Anwendungsfälle dieser Technologie sind:
 * Platzieren von Objekten auf der nächsten Oberfläche einer bestimmten Art (z. B. Wand und Boden)
 * Erstellen eines Navigationsgitters für Spiele im Plattformstil
-* Bereitstellen von physikalischer Engine-freundlicher Geometrie als Quader
+* Bereitstellen einer physikalischen Engine-freundlichen Geometrie als Quader
 * Beschleunigen sie die Entwicklung, indem Sie vermeiden, ähnliche Algorithmen zu schreiben.
 
 Scene Understanding wird als __experimentelles__ Feature in MRTK 2.6 eingeführt. Sie ist als [räumlicher Beobachter](spatial-awareness-getting-started.md#register-observers) namens in MRTK [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) integriert. Scene Understanding funktioniert sowohl mit der Legacy-XR-Pipeline als auch mit der XR SDK-Pipeline (beide OpenXR (ab MRTK 2.7) und Windows XR-Plug-In). In beiden Fällen `WindowsSceneUnderstandingObserver` wird verwendet.
@@ -31,7 +31,7 @@ Scene Understanding wird als __experimentelles__ Feature in MRTK 2.6 eingeführt
 
 Wenn sie gefragt [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) wird, gibt [spatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) mit Attributen zurück, die für die Anwendung nützlich sind, um ihre Umgebung zu verstehen. Die Beobachtungshäufigkeit, der zurückgegebene Objekttyp (z. B. Wand, Boden) und andere Beobachterverhalten hängen von der Konfiguration des Beobachters über das Profil ab. Wenn z. B. die Verdeckungsmaske gewünscht ist, muss der Beobachter so konfiguriert werden, dass quads generiert wird. Die beobachtete Szene kann als serialisierte Datei gespeichert werden, die später geladen werden kann, um die Szene im Editor-Wiedergabemodus neu zu erstellen.
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
 > [!IMPORTANT]
 > Scene Understanding wird nur für HoloLens 2 und Unity 2019.4 und höher unterstützt.

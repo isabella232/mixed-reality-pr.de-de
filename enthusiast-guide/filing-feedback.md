@@ -1,74 +1,74 @@
 ---
 title: Einreichen von Bugs und Feedback
-description: Helfen Sie uns, die gemischte Realität von Windows zu verbessern, indem Sie Feedback mit den richtigen Kategorien in der Feedback-Hub-App einreichen
+description: Helfen Sie uns, Windows Mixed Reality verbessern, indem Sie Feedback mit den richtigen Kategorien in der Feedback-Hub senden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, Mr, Feedback, Feedback-Hub, Fehler
+keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback-Hub, Fehler
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9237a9e4d537a15ffe4369d589e1fd80e3881891
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b4ba5cf16aec84fa6c34ae2454ebfefa56512a04e4845dee0c3c894c4976cc53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188948"
 ---
 # <a name="filing-bugs-and-feedback"></a>Einreichen von Bugs und Feedback
 
-## <a name="why-its-important"></a>Warum es wichtig ist
+## <a name="why-its-important"></a>Warum dies wichtig ist
 
-Das Engineering-Team verwendet denselben Mechanismus für die Nachverfolgung und Korrektur interner Fehler. verwenden Sie daher den Feedback-Hub, um etwas merkwürdiges zu melden, das Sie sehen: wir lauschen!
+Das Entwicklungsteam verwendet den gleichen Mechanismus zum Nachverfolgen und Beheben interner Fehler. Verwenden Sie daher Feedback-Hub, um etwas Ungewöhnliches zu melden, das Ihnen auft kommt – wir hören zu!
 
-## <a name="before-you-file-feedback"></a>Vor dem Senden von Feedback
+## <a name="before-you-file-feedback"></a>Bevor Sie Feedback senden
 
-Stellen Sie sicher, dass Ihr PC so eingestellt ist, dass wir vollständige Daten für Feedback und Diagnose bereitstellen. Im folgenden wird erläutert, wie Sie die Einstellung auf Ihrem PC überprüfen, bevor Sie Feedback einreichen:
+Stellen Sie sicher, dass Ihr PC so eingerichtet ist, dass er uns vollständige Daten für Feedback und Diagnosen zur Verfügung stellt. So überprüfen Sie die Einstellung auf Ihrem PC, bevor Sie Feedback senden:
 
-1. Öffnen Sie die Windows- **Einstellungs** -app.
-2. Wählen Sie **Datenschutz** aus.
-3. Wechseln Sie im linken Bereich zu **Feedback & Diagnose** , der in "Diagnose" **& Feedback** in den letzten Windows Insider-Builds von Windows umbenannt wurde.
-4. Wählen Sie unter Wählen Sie aus, **wie viele Daten an Microsoft gesendet werden die** Option **voll** , wenn Sie nicht bereits ausgewählt ist.
-5. Stellen Sie sicher, dass der PC neu gestartet wird, und wiederholen Sie die Schritte zum reproduzieren Ihres Problems, bevor Sie Feedback
+1. Öffnen Sie Windows **Einstellungen** App.
+2. Wählen Sie Datenschutz **aus.**
+3. Wechseln Sie **im &** bereich zu Feedback und Diagnose, der in den letzten Windows Insider-Builds von & in Diagnostics **&** umbenannt Windows.
+4. Wählen **Sie unter Wählen Sie aus, wie viele Daten Sie an Microsoft** senden die Option Vollständig aus, wenn sie noch nicht ausgewählt ist. 
+5. Starten Sie Ihren PC neu, und wiederholen Sie die Schritte zum Reproduzieren Ihres Problems, bevor Sie Feedback senden.
 
-## <a name="how-to-file-feedback-for-windows-mixed-reality-immersive-headsets-on-pc"></a>Vorgehensweise beim Senden von Feedback für die immersiven Windows Mixed Reality-Headsets auf dem PC
+## <a name="how-to-file-feedback-for-windows-mixed-reality-immersive-headsets-on-pc"></a>Senden von Feedback für Windows Mixed Reality immersive Headsets auf dem PC
 
 1. Stellen Sie sicher, dass das immersive Headset mit Ihrem PC verbunden ist.
-2. Starten Sie den **Feedback-Hub** auf dem Desktop mit dem verbundenen HMD.
-3. Wechseln Sie im linken Bereich zur **Registerkarte Feedback** . ![Feedback Registerkarte](images/feedback1.png) 
-4. Wählen Sie neue Feedback-Schaltfläche **Hinzufügen** , um das Feedback einzugeben. ![„Neues Feedback hinzufügen“](images/feedback2.png)
-5. Wählen Sie in **welcher Art von Feedback das** **Problem** aus, um das Feedback zu ändern. ![Details und Reproduktions Schritte](images/feedback3.png)
-6. Geben Sie einen aussagekräftigen Feedback Titel im Feld zusammen **fassen Ihres Problems** ein.
-7. Geben Sie im Feld **Geben Sie weitere** Details Details und Schritte zum Reproduzieren des Problems an.
-8. Wählen Sie **gemischte Realität** als oberste Kategorie aus, und wählen Sie dann eine anwendbare Unterkategorie aus:
+2. Starten **Feedback-Hub** mit verbundenem HMD auf dem Desktop.
+3. Wechseln Sie **im linken Bereich** zur Registerkarte Feedback. ![Registerkarte "Feedback"](images/feedback1.png) 
+4. Wählen Sie **die Schaltfläche Neues Feedback hinzufügen** aus, um das Feedback einzuholen. ![„Neues Feedback hinzufügen“](images/feedback2.png)
+5. Wählen **Sie unter** Welche Art von Feedback ist das? die Option Problem **aus,** um das Feedback umsetzbar zu machen. ![Details und Repro-Schritte](images/feedback3.png)
+6. Geben Sie im Feld **Problem zusammenfassen einen aussagekräftigen Feedbacktitel** ein.
+7. Geben Sie details und Schritte zum Reproduzieren des Problems im Feld **Weitere Details an.**
+8. Wählen **Mixed Reality** als oberste Kategorie aus, und wählen Sie dann eine zutreffende Unterkategorie aus:
 
    | Unterkategorie      | BESCHREIBUNG                                                                           |
    |------------------|---------------------------------------------------------------------------------------|
    | Apps             | Probleme mit einer bestimmten Anwendung.                                                   |
-   | Entwickler        | Probleme beim Erstellen/Ausführen einer APP für gemischte Realität.                               |
+   | Entwickler        | Probleme beim Erstellen/Ausführen einer App für Mixed Reality.                               |
    | Sicherungsmedium           | Probleme mit dem HMD selbst.                                                           |
-   | Startseite  | Probleme mit ihrer VR-Umgebung: Interaktionen mit der Windows Mixed Reality-Startseite.    |
-   | Eingabe            | Probleme mit Eingabemethoden: Bewegungs Controller, Sprache, Gamepad, Maus und Tastatur.|
-   | Einrichten           | Alles, was das Einrichten des Geräts verhindert.                           |
+   | Home experience  | Probleme mit Ihrer VR-Umgebung: Interaktionen mit dem Windows Mixed Reality Home.    |
+   | Eingabe            | Probleme mit Eingabemethoden: Motion-Controller, Sprache, Gamepad oder Maus und Tastatur.|
+   | Einrichten           | Alles, was Sie daran hindert, das Gerät zu einrichten.                           |
    | Alle anderen Probleme | Irgendetwas anderes.                                                                        |
 
-9. Damit wir den Fehler schneller identifizieren und beheben können, ist die Erfassung von Ablauf Verfolgungen und Videos hilfreich. Um mit der Erfassung von Ablauf Verfolgungen zu beginnen, wählen Sie **Erfassung starten** Dadurch wird die Erfassung von Ablauf Verfolgungen und eine Video Erfassung Ihres Szenarios mit gemischter Realität begonnen. ![ Erfassung starten](images/feedback4.png)
-10. Belassen Sie die Feedback-APP, und führen Sie das unterbrochene Szenario aus. Schließen Sie die Feedback-Hub-APP an dieser Stelle nicht.
-11. Wenn Sie mit Ihrem Szenario fertig sind, kehren Sie zur Feedback-app zurück, und wählen Sie **Erfassung Abbrechen** aus. Nachdem Sie dies getan haben, sollten Sie sehen, dass eine Datei mit den Ablauf Verfolgungen hinzugefügt wurde.
-12. Wählen Sie **senden** aus. ![ Senden](images/feedback5.png)
+9. Um den Fehler schneller zu identifizieren und zu beheben, ist das Erfassen von Ablaufverfolgungen und Videos hilfreich. Um mit dem Sammeln von Ablaufverfolgungen zu beginnen, wählen **Sie Erfassung starten aus.** Dies beginnt mit dem Sammeln von Ablaufverfolgungen und einer Videoaufnahme Ihres Mixed Reality-Szenarios. ![ Starten der Erfassung](images/feedback4.png)
+10. Verlassen Sie die Feedback-App, und führen Sie das fehlerhafte Szenario aus. Schließen Sie die App Feedback-Hub an diesem Punkt nicht.
+11. Wenn Sie mit Ihrem Szenario fertig sind, wechseln Sie zurück zur Feedback-App, und wählen **Sie Capture beenden aus.** Sobald Sie dies tun, sollten Sie sehen, dass eine Datei mit den Ablaufverfolgungen hinzugefügt wurde.
+12. Wählen Sie **Senden aus.** ![ Senden](images/feedback5.png)
 
-Dadurch gelangen Sie zur Seite "Danke". An diesem Punkt wurde Ihr Feedback erfolgreich übermittelt.
+Dies führt Sie zur Seite "Vielen Dank". An diesem Punkt wurde Ihr Feedback erfolgreich übermittelt.
 
-Es ist ganz einfach, andere Personen nach der Übermittlung an Ihr Feedback weiterzuleiten, indem Sie auf **Feedback > mein Feedback** klicken, das Problem auswählen und das Symbol " **Freigeben** " verwenden, um eine verkürzte URL zu erhalten. Sie können die URL an Kollegen, Microsoft-Mitarbeiter, [Forumleser](https://forums.hololens.com/) usw. weiterleiten, um Sie abzustimmen oder zu eskalieren.
+Es ist einfach, andere Personen nach der Übermittlung zu Ihrem Feedback zu leitet, indem Sie  zu **Feedback > Mein Feedback,** Auswählen des Problems und Verwenden des Freigabesymbols, um eine verkürzte URL zu erhalten. Sie können die URL an Kollegen, [](https://forums.hololens.com/) Microsoft-Mitarbeiter, Forumleser und so weiter senden, um die Diskussion zu hoch- oder eskalieren.
 
 > [!IMPORTANT]
-> Stellen Sie vor dem Einreichen eines Fehlers sicher, dass Sie die folgenden Einschränkungen einhalten, damit die Protokolle erfolgreich mit dem Feedback hochgeladen werden.
->    * Auf dem Haupt Laufwerk des Geräts sind mindestens 3 GB freier Speicherplatz verfügbar.
->    * Stellen Sie sicher, dass ein nicht getaktetes Netzwerk verfügbar ist, um Cabs hochzuladen.
+> Stellen Sie vor dem Einreichen eines Fehlers sicher, dass Sie die folgenden Einschränkungen erfüllen, damit die Protokolle erfolgreich mit dem Feedback hochgeladen werden.
+>    * Auf dem Hauptlaufwerk des Geräts sind mindestens 3 GB freier Speicherplatz verfügbar.
+>    * Stellen Sie sicher, dass ein nicht gemessenes Netzwerk verfügbar ist, um Cabs hochzuladen.
 
 ## <a name="after-filing-feedback"></a>Nach dem Einreichen von Feedback
 
-Stellen Sie sicher, dass Sie sich nach der Einreichung von Feedback regelmäßig mit dem Feedback-Hub In den meisten Fällen versuchen wir, so bald wie möglich zu antworten. Wenn Sie sich beim Senden von Feedback nicht bereits mit uns in Verbindung setzen, können wir Ihnen mit der Problembehandlung oder weiteren Fragen nur über das comments-System in der Feedback-Hub-Lösung Antworten. Leider werden Benachrichtigungen zu diesem Zeitpunkt nicht außerhalb des feedhubs gesendet.
+Vergewissern Sie sich, dass Sie nach dem Einreichen von Feedback Feedback-Hub regelmäßig einChecken. In den meisten Fällen versuchen wir, so schnell wie möglich zu reagieren. Wenn Sie noch nicht mit uns in Kontakt sind, wenn Sie Feedback senden, können wir uns nur mit Vorschlägen zur Problembehandlung oder mit mehr Fragen über das Kommentarsystem in Feedback-Hub. Leider werden ihnen zu diesem Zeitpunkt keine Benachrichtigungen außerhalb des Feedback-Hub.
 
 ## <a name="see-also"></a>Siehe auch
 

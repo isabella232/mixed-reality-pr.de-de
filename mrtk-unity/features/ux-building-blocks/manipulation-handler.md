@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Manipulation,
-ms.openlocfilehash: 179ef40ba054b0fda3b13e9d578905eb064a58ab
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 24034c43bf8ce1f1ef463e894e9ca5293c2b0d2a146284535b161f8b4277dfa9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176637"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190210"
 ---
 # <a name="manipulation-handler"></a>Manipulationshandler
 
@@ -38,7 +38,7 @@ Damit das Objekt auf nahezu artikulierte Handeingaben reagiert, fügen Sie auch 
 * *Nur zweihändige*
 * *Ein- und Zweihändige*
 
-**Zweihändige Manipulationstypen**
+**Zweihändige Manipulationsart**
 
 * *Skalierung:* Es ist nur die Skalierung zulässig.
 * *Rotieren:* Es ist nur die Drehung zulässig.
@@ -59,9 +59,9 @@ Damit das Objekt auf nahezu artikulierte Handeingaben reagiert, fügen Sie auch 
 
 * *Ursprüngliche Drehung beibehalten:* Das Objekt wird beim Verschieben nicht gedreht.
 * *Rotation zum Benutzer beibehalten:* Behält die ursprüngliche Drehung des Objekts für die X/Y-Achse für den Benutzer bei.
-* Die ausrichtung der *Schwerkraft behält die Rotation zum Benutzer* bei: Behält die ursprüngliche Drehung des Objekts zum Benutzer bei, macht das Objekt jedoch vertikal. Nützlich für Objekte mit einem Begrenzungssteuerelement.
+* Die ausrichtung der *Schwerkraft behält die Drehung zum Benutzer* bei: Behält die ursprüngliche Drehung des Objekts zum Benutzer bei, macht das Objekt jedoch vertikal. Nützlich für Objekte mit einem Begrenzungssteuerelement.
 * *Gesichtsbenutzer:* Stellt sicher, dass das Objekt dem Benutzer immer gegenübersteht. Nützlich für Slates/Panels.
-* *Gesichtsabsicht vom Benutzer:* Stellt sicher, dass das Objekt immer vom Benutzer entfernt ist. Nützlich für Slates/Panels, die rückwärts konfiguriert sind.
+* *Face away from user (Gesichtsabsicht vom Benutzer):* Stellt sicher, dass das Objekt immer vom Benutzer entfernt ist. Nützlich für Slates/Panels, die rückwärts konfiguriert sind.
 * *Drehen um den Objektmittelpunkt:* Funktioniert nur für artikulierte Hände/Controller. Drehen Sie das Objekt mithilfe der Drehung der Hand/des Controllers, aber um den Objektmittelpunkt. Nützlich für die Untersuchung in einer Entfernung.
 * *Drehen um Denkpunkt:* Funktioniert nur für artikulierte Hände/Controller. Drehen Sie das Objekt so, als ob es von Hand/Controller gehalten würde. Nützlich für die Überprüfung.
 
@@ -70,7 +70,7 @@ Damit das Objekt auf nahezu artikulierte Handeingaben reagiert, fügen Sie auch 
 * *Nichts*
 * *Alles*
 * *Keep Velocity*
-* *Angular Geschwindigkeit beibehalten*
+* *Keep Angular Velocity (Geschwindigkeit beibehalten)*
 
 **Einschränkungen bei der Drehung** Gibt an, auf welcher Achse das Objekt gedreht wird, wenn es mit interagiert.
 
@@ -88,7 +88,7 @@ Damit das Objekt auf nahezu artikulierte Handeingaben reagiert, fügen Sie auch 
 
 **Glättung aktiv** Gibt an, ob die Glättung aktiv ist.
 
-**Smoothing Amount One Hand** Umfang der Glättung, die auf Die Bewegung, Skalierung und Drehung angewendet werden soll. Glättung von 0 bedeutet keine Glättung. Max value bedeutet, dass keine Änderung am Wert vorhanden ist.
+**Smoothing Amount One Hand** Umfang der Glättung, die auf Die Bewegung, Skalierung und Drehung angewendet werden soll. Glättung von 0 bedeutet keine Glättung. Max value bedeutet, dass keine Änderung am Wert vorfällt.
 
 ## <a name="events"></a>Ereignisse
 
@@ -96,5 +96,5 @@ Der Manipulationshandler stellt die folgenden Ereignisse bereit:
 
 * *OnManipulationStarted:* Wird ausgelöst, wenn die Bearbeitung gestartet wird.
 * *OnManipulationEnded:* Wird ausgelöst, wenn die Bearbeitung beendet wird.
-* *OnHoverStarted:* Wird ausgelöst, wenn eine Hand bzw. ein Controller auf das manipulatierbare ,nah oder fern' zusteuert.
+* *OnHoverStarted:* Wird ausgelöst, wenn eine Hand/ein Controller auf das manipulatierbare ,nahe oder fernen' zusteuert.
 * *OnHoverEnded:* Wird ausgelöst, wenn ein Hand/Controller den Mauszeiger auf den manipulatierbaren , nahe oder fernen ziehbar hält.

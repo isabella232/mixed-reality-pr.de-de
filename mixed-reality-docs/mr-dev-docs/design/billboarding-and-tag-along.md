@@ -1,17 +1,17 @@
 ---
 title: Billboarding und Tag-along
-description: Hier erfahren Sie, wie Sie Objekte mit Demieren verwenden, die sich immer darauf ausrichten, den Benutzer in Mixed Reality-Anwendungen zu sehen.
+description: Erfahren Sie, wie Sie Objekte mit Überhing verwenden, die sich immer so ausrichten, dass sie dem Benutzer in Mixed Reality-Anwendungen gegenüber stehen.
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Gaming, Tag-Along, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality, Teering, Tag-Along, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 7ffcbe1d3401601e92eb1ac81dfd84f2af9e8e79eeea809b01a1e943a85f0db9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600339"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214162"
 ---
 # <a name="billboarding-and-tag-along"></a>Billboarding und Tag-along
 
@@ -22,35 +22,35 @@ ms.locfileid: "110600339"
 
 ## <a name="what-is-billboarding"></a>Was ist Dies?
 
-Das Erstellen von Objekten ist ein Verhaltenskonzept, das auf Objekte in Mixed Reality angewendet werden kann. Objekte mit Demieren richten sich immer so aus, dass sie dem Benutzer gegenüber stehen. Text- und Menüsysteme sind häufige Anwendungsfälle, in denen statische Objekte, die in der Umgebung des Benutzers platziert werden (weltgesperrt), andernfalls verdeckt oder unlesbar sind, wenn sich Benutzer bewegen.
+Die Überhingung ist ein Verhaltenskonzept, das auf Objekte in Mixed Reality angewendet werden kann. Objekte mit Freundlicherung richten sich immer nach dem Benutzer. Text- und Menüsysteme sind gängige Anwendungsfälle, in denen statische Objekte, die in der Umgebung des Benutzers platziert werden (weltgesperrt), ansonsten verdeckt oder unlesbar wären, wenn Benutzer sich bewegen.
 
-Objekte mit aktivierter Umdrehung können sich in der Umgebung des Benutzers frei drehen. Sie können je nach Entwurfsüberlegungen auch auf eine einzelne Achse beschränkt werden. Beachten Sie, dass sich objekte, die zu nah an anderen Objekten platziert werden, oder in HoloLens zu nahe gescannte Oberflächen ausschneiden oder verdecken können. Um dies zu vermeiden, denken Sie an den gesamten Fußabdruck, den ein Objekt erzeugen kann, wenn es auf der Achse gedreht wird, die für das Auffahren aktiviert ist.
+Objekte mit aktivierter Drehung können in der Umgebung des Benutzers frei rotiert werden. Je nach Entwurfsüberlegungen können sie auch auf eine einzelne Achse beschränkt werden. Beachten Sie, dass sich überlappende Objekte selbst beschneiden oder verdecken können, wenn sie zu nah bei anderen Objekten oder in HoloLens, zu nah an gescannten Oberflächen platziert werden. Um dies zu vermeiden, denken Sie an den Gesamtfußabdruck, den ein Objekt erzeugen kann, wenn es auf der Achse rotiert wird, die für Diebung aktiviert ist.
 
 <br>
 
 ---
 ## <a name="what-is-a-tag-along"></a>Was ist ein Tag-Along?
 
-Tag-Along ist ein Verhaltenskonzept, das Hologrammen hinzugefügt werden kann. Ein Tag-Along-Objekt versucht, in einem Bereich zu bleiben, der dem Benutzer die Interaktion ermöglicht.
+Tag-Along ist ein Verhaltenskonzept, das Hologrammen hinzugefügt werden kann. Ein Tag-Along-Objekt versucht, in einem Bereich zu bleiben, der dem Benutzer die interaktionsbeweglich ermöglicht.
 
-![Der HoloLens-Pinbereich ist ein gutes Beispiel für das Tag-Along-Verhalten.](images/tagalong-1000px.jpg)<br>
-*Die HoloLens-Startmenü ist ein gutes Beispiel für das Tag-Along-Verhalten.*
+![Der HoloLens ist ein gutes Beispiel dafür, wie sich das Tag-Along-Verhalten verhält.](images/tagalong-1000px.jpg)<br>
+*Die HoloLens Startmenü ist ein gutes Beispiel für das Tag-Along-Verhalten.*
 
-Tag-Along-Objekte verfügen über Parameter, die das Verhalten optimieren können. Inhalte können sich in oder außerhalb der Sichtlinie des Benutzers befinden, während sich der Benutzer in seiner Umgebung bewegt. Während sie verschoben werden, versucht der Inhalt, innerhalb der Peripherie des Benutzers zu bleiben, indem er zum Rand der Ansicht gleitet. Der Inhalt ist möglicherweise vorübergehend nicht mehr angezeigt, je nachdem, wie schnell sich der Benutzer bewegt. Wenn der Benutzer auf das Tag-Along-Objekt anviert, wird es ausführlicher angezeigt. Denken Sie daran, dass Inhalte immer "einen Blick weg" sind, sodass Benutzer nie vergessen, in welche Richtung sich ihre Inhalte bewegen.
+Tag-Along-Objekte verfügen über Parameter, die das Verhalten optimieren können. Inhalte können sich in oder aus der Sicht des Benutzers heraus bewegen, während sich der Benutzer in seiner Umgebung bewegt. Während sie sich bewegen, versucht der Inhalt, innerhalb der Benutzerfreundlichkeit zu bleiben, indem er zum Rand der Ansicht gleitet. Der Inhalt kann vorübergehend nicht mehr angezeigt werden, je nachdem, wie schnell der Benutzer bewegt wird. Wenn der Benutzer das Tag-Along-Objekt anviert, wird es vollständiger angezeigt. Denken Sie daran, dass Inhalte immer "einen Blick entfernt" sind, sodass Benutzer nie vergessen, in welche Richtung sich ihre Inhalte bewegen.
 
-Zusätzliche Parameter können das Tag-Along-Objekt an den Kopf des Benutzers durch ein Blasenband anfügen. Die beschleunigungs- oder verlangsamungsbeschleunigende Beschleunigung gibt dem Objekt Gewicht, sodass es physisch vorhanden ist. Dieses Spring-Verhalten ist eine Variante, die dem Benutzer hilft, ein genaues mentales Modell für die Funktionsweise von Tag-Along zu erstellen. Audio hilft, andere Hinweise dafür bereitzustellen, wenn Benutzer Objekte im Tag-Along-Modus haben. Audio sollte die Geschwindigkeit der Bewegung verstärken. Ein schneller Kopflauf sollte einen wahrnehmbareren Soundeffekt bieten, während das Gehen mit natürlicher Geschwindigkeit minimale oder gar keine Audioeffekte haben sollte.
+Zusätzliche Parameter können dazu sorgen, dass das Tag-Along-Objekt durch ein Bänder an den Kopf des Benutzers angefügt wird. Durch die Beschleunigung oder Verlangsamung wird das Objekt gewichtet, wodurch es physisch besser vorhanden ist. Dieses Spring-Verhalten ist ein Preismodell, das dem Benutzer hilft, ein genaues mentales Modell für die Funktionsweise von Tag-Along zu erstellen. Audio hilft bei der Bereitstellung weiterer Hinweise, wenn Benutzer Objekte im Tag-Along-Modus haben. Audio sollte die Geschwindigkeit der Bewegung verstärken. Eine schnelle Kopfdrehung sollte einen deutlicheren Soundeffekt bieten, während das Gehen mit natürlicher Geschwindigkeit minimale oder keine Audioeffekte haben sollte.
 
-Genau wie wirklich kopfgesperrte Inhalte können sich Tag-Along-Objekte als überwältigend oder verzehrend erweisen, wenn sie sich wild oder zu stark in der Ansicht des Benutzers bewegen. Wenn ein Benutzer sich umsieht und dann schnell anhält, teilen seine Sinne ihm mit, dass er beendet wurde. Ihr Gleichgewicht informiert sie darüber, dass sich der Kopf nicht mehr drehen kann und dass sich die Welt nicht mehr drehen kann. Wenn sich das Tag-Along jedoch fortbewegt, wenn der Benutzer beendet wurde, kann dies seine Sinne verwirren.
+Genau wie wirklich kopfgesperrte Inhalte können sich Tag-Along-Objekte als überfordernd oder überfordernd erweisen, wenn sie sich in der Ansicht des Benutzers wild bewegen oder zu stark springen. Wenn ein Benutzer sich umsieht und dann schnell anhält, teilen seine Sinne ihm mit, dass er angehalten wurde. Ihr Gleichgewicht informiert sie darüber, dass sich ihr Kopf nicht mehr drehen kann und dass ihr Sehvermögen die Welt nicht mehr sieht. Wenn das Tag-Along jedoch weiter bewegt wird, wenn der Benutzer angehalten wurde, kann dies die Sinne verwirren.
 
 <br>
 
 ---
 
-## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Ausfüllen und Tag-Along im MRTK (Mixed Reality Toolkit) für Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** stellt Skripts für das Verhalten beim Generieren und Tag-Along bereit. Weisen Sie jedem Objekt das Skript "Scripts.cs" zu, um das Verhaltensverhalten zu erweitern und das Objekt immer auf Sie zu treffen. Verwenden Sie das Skript RadialView.cs, um das Tag-Along-Verhalten hinzuzufügen. Sie können verschiedene Optionen anpassen, z. B. Lerpingzeit, Entfernung und Grad.
+## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Erstellen und Markieren im MRTK (Mixed Reality Toolkit) für Unity
+**[MRTK stellt](https://github.com/Microsoft/MixedRealityToolkit-Unity)** Skripts für das Verhalten von "Ing" und "tag-along" zur Verfügung. Weisen Sie das Skript "Soll.cs" jedem Objekt zu, um Einfügeverhalten hinzuzufügen und das Objekt immer ins Gesicht zu stellen. Verwenden Sie das Skript RadialView.cs, um das Tag-Along-Verhalten hinzuzufügen. Sie können verschiedene Optionen anpassen, z. B. Lerpingzeit, Entfernung und Grad.
 
-* [MRTK – Radial View Solver](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
-* [MRTK – Skript "Scripts"](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
+* [MRTK – Solver für radiale Ansicht](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
+* [MRTK – Skript "Soll"](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 
 <br>

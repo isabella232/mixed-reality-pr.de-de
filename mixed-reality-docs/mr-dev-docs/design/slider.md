@@ -1,23 +1,23 @@
 ---
 title: Schieberegler
-description: Erfahren Sie, wie Sie mithilfe der Benutzeroberflächenkomponente des Schiebereglers einen Wert festlegen, indem Sie mithilfe des Mixed Reality Toolkits einen Regler oder Hebel auf einer Spur bewegen.
+description: Erfahren Sie, wie Sie die Schieberegler-UI-Komponente verwenden, um einen Wert festzulegen, indem Sie mithilfe des Mixed Reality Toolkits einen Knöpf oder Hebel auf einer Spur bewegen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Schieberegler, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: c1619a90b7df1a34fa1541663a3f521ba5e75662
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Mixed Reality, Steuerelemente, Interaktion, Benutzeroberfläche, Benutzeroberfläche, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, Schieberegler, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 5d07960566630afac0addd10585d885f33a80b46613c1a9f19374c9afa71bd7e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600159"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186914"
 ---
 # <a name="slider"></a>Schieberegler
 
 ![Schieberegler](images/UX_Hero_Slider.jpg)
 
-Ein Schieberegler ist eine Benutzeroberflächenkomponente, die zum Festlegen eines Werts verwendet wird. Sie bietet einen visuellen Hinweis auf anpassbaren Inhalt und die aktuelle Einstellung im gesamten Inhaltsbereich. Es wird als Spur mit Optionen auf beiden Seiten angezeigt. Ein Regler oder Hebel wird an ein oder das andere Ende gezogen, um die Auswahl zu treffen, was den aktuellen Wert angibt. Der Schieberegler zum Anheften kann durch direktes Greifen des Schiebereglers verschoben werden, entweder direkt oder in der Entfernung. Schieberegler arbeiten mit verschiedenen Eingabetypen, z. B. anv und Tippen in die Luft und einem Motion-Controller.
+Ein Schieberegler ist eine Benutzeroberflächenkomponente, die zum Festlegen eines Werts verwendet wird. Sie bietet einen visuellen Hinweis auf anpassbaren Inhalt und die aktuelle Einstellung im Gesamtinhaltsbereich. Sie wird als Spur mit Optionen auf beiden Seiten angezeigt. Ein Knöpf oder Hempf wird an das eine oder andere Ende gezogen, um die Auswahl zu treffen, die den aktuellen Wert angibt. Der Schieberegler zum Anheften kann durch direktes Greifen des Schiebereglers bewegt werden, entweder direkt oder in einer Entfernung. Schieberegler arbeiten mit verschiedenen Eingabetypen, z. B. anv und Tippen in die Luft und einem Motion Controller.
 
 <br>
 
@@ -31,7 +31,7 @@ Ein Schieberegler ist eine Benutzeroberflächenkomponente, die zum Festlegen ein
 
 ---
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Cursor](cursors.md)
 * [Handstrahl](point-and-commit.md)

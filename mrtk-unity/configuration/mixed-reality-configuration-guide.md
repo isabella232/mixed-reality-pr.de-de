@@ -1,70 +1,70 @@
 ---
-title: MRTK-Profilkonfigurationshandbuch
-description: Dokumentation zum Konfigurieren des MRTK in Unity.
+title: MRTK-Profilkonfigurations-Leitfaden
+description: Dokumentation zum Konfigurieren von MRTK in Unity.
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: e18695610b5e07c4f811e7c43bc13607857a9459407f9b16f39d4f7350f354e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214923"
 ---
-# <a name="mrtk-profile-configuration-guide"></a>MRTK-Profilkonfigurationshandbuch
+# <a name="mrtk-profile-configuration-guide"></a>MRTK-Profilkonfigurations-Leitfaden
 
-Das Mixed Reality Toolkit zentralisiert so viel wie möglich der Konfiguration, die für die Verwaltung des Toolkits erforderlich ist (mit Ausnahme echter Runtime-"Dinge").
+Das Mixed Reality Toolkit zentralisiert so viel konfiguration, wie für die Verwaltung des Toolkits erforderlich ist (mit Ausnahme echter Runtime-"Dinge").
 
-Dieser Leitfaden ist eine einfache exemplarische Vorgehensweise für jeden der Konfigurationsprofilbildschirme, die derzeit für das Toolkit verfügbar sind.
+Dieser Leitfaden ist eine einfache exemplarische Vorgehensweise für jeden Konfigurationsprofilbildschirm, der derzeit für das Toolkit verfügbar ist.
 
-## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>Das Hauptkonfigurationsprofil Mixed Reality Toolkit
+## <a name="the-main-mixed-reality-toolkit-configuration-profile"></a>Das Hauptkonfigurationsprofil für Mixed Reality Toolkit
 
-Das Hauptkonfigurationsprofil, das an *das MixedRealityToolkit* GameObject in Ihrer Szene angefügt ist, stellt den Haupteinstiegspunkt für das Toolkit in Ihrem Projekt bereit.
+Das Hauptkonfigurationsprofil, das dem *MixedRealityToolkit* GameObject in Ihrer Szene angefügt ist, stellt den Haupteinstiegspunkt für das Toolkit in Ihrem Projekt bereit.
 
 > [!NOTE]
-> Das Mixed Reality Toolkit sperrt die Standardkonfigurationsbildschirme, um sicherzustellen, dass Sie immer über einen gemeinsamen Startpunkt für Ihr Projekt verfügen, und es wird empfohlen, mit der Definition Ihrer eigenen Einstellungen zu beginnen, während ihr Projekt weiterentwickelt wird. Die MRTK-Konfiguration kann während des Wiedergabemodus nicht bearbeitet werden.
+> Das Mixed Reality Toolkit "sperrt" die Standardkonfigurationsbildschirme, um sicherzustellen, dass Sie immer über einen gemeinsamen Startpunkt für Ihr Projekt verfügen, und es wird empfohlen, mit der Definition Ihrer eigenen Einstellungen zu beginnen, wenn sich Ihr Projekt weiterentwickelt. Die MRTK-Konfiguration kann während des Wiedergabemodus nicht bearbeitet werden.
 
 ![MRTK-Konfigurationsprofil](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ActiveConfiguration.png)
 
 Alle Standardprofile für das Mixed Reality Toolkit finden Sie im SDK-Projekt im Ordner Assets/MRTK/SDK/Profiles.
 
 > [!IMPORTANT]
-> DefaultHoloLens2ConfigurationProfile ist für die HoloLens 2. Weitere [Informationen finden](../features/profiles/profiles.md) Sie unter Profile.
+> DefaultHoloLens2ConfigurationProfile ist für HoloLens 2 optimiert. Weitere Informationen finden Sie unter [Profile.](../features/profiles/profiles.md)
 
-Wenn Sie das Hauptkonfigurationsprofil Mixed Reality Toolkit öffnen, wird der folgende Bildschirm im Inspektor angezeigt:
+Wenn Sie den Haupt-Mixed Reality Toolkit-Konfigurationsprofil öffnen, wird der folgende Bildschirm im Inspektor angezeigt:
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_MixedRealityToolkitConfigurationScreen.png" width="650px" alt="MRTK configuration scene" style="display:block;">
 
-Wenn Sie ein MixedRealityToolkitConfigurationProfile-Objekt ohne MixedRealityToolkit in der Szene auswählen, werden Sie gefragt, ob das MRTK die Szene automatisch für Sie einrichten soll. Dies ist optional, es muss jedoch ein aktives MixedRealityToolkit-Objekt in der Szene geben, um auf alle Konfigurationsbildschirme zugreifen zu können.
+Wenn Sie ein MixedRealityToolkitConfigurationProfile-Medienobjekt ohne mixedRealityToolkit in der Szene auswählen, werden Sie gefragt, ob das MRTK die Szene automatisch für Sie einrichten soll. Dies ist optional. Es muss jedoch ein aktives MixedRealityToolkit-Objekt in der Szene vorhanden sein, um auf alle Konfigurationsbildschirme zugreifen zu können.
 
-Dies ist die aktuelle aktive Laufzeitkonfiguration für das Projekt.
+Hier ist die aktuelle aktive Laufzeitkonfiguration für das Projekt angegeben.
 
 Von hier aus können Sie zu allen Konfigurationsprofilen für das MRTK navigieren, einschließlich:
 
-- [Mixed Reality Toolkit für die Profilkonfiguration](#mrtk-profile-configuration-guide)
-  - [Das Hauptkonfigurationsprofil Mixed Reality Toolkit](#the-main-mixed-reality-toolkit-configuration-profile)
+- [Konfigurationsleitfaden für Mixed Reality Toolkit-Profile](#mrtk-profile-configuration-guide)
+  - [Das Hauptkonfigurationsprofil für Mixed Reality Toolkit](#the-main-mixed-reality-toolkit-configuration-profile)
   - [Einstellungen für die Benutzererfahrung](#experience-settings)
   - [Kameraeinstellungen](#camera-settings)
-  - [Eingabesystemeinstellungen](#input-system-settings)
+  - [Einstellungen des Eingabesystems](#input-system-settings)
   - [Einstellungen für die Begrenzungsvisualisierung](#boundary-visualization-settings)
   - [Teleportation-Systemauswahl](#teleportation-system-selection)
   - [Einstellungen für räumliche Wahrnehmung](#spatial-awareness-settings)
   - [Diagnoseeinstellungen](#diagnostics-settings)
-  - [Szenensystemeinstellungen](#scene-system-settings)
+  - [Einstellungen des Szenensystems](#scene-system-settings)
   - [Zusätzliche Diensteinstellungen](#additional-services-settings)
   - [Einstellungen für Eingabeaktionen](#input-actions-settings)
   - [Regeln für Eingabeaktionen](#input-actions-rules)
   - [Zeigerkonfiguration](#pointer-configuration)
   - [Gestenkonfiguration](#gestures-configuration)
-  - [Speech-Befehle](#speech-commands)
+  - [Sprachbefehle](#speech-commands)
   - [Konfiguration der Controllerzuordnung](#controller-mapping-configuration)
   - [Controllervisualisierungseinstellungen](#controller-visualization-settings)
   - [Editor-Hilfsprogramme](#editor-utilities)
     - [Dienstinspektoren](#service-inspectors)
     - [Tiefenpufferrenderer](#depth-buffer-renderer)
   - [Ändern von Profilen zur Laufzeit](#changing-profiles-at-runtime)
-    - [Pre MRTK-Initialisierungsprofilschalter](#pre-mrtk-initialization-profile-switch)
+    - [Pre MRTK initialization profile switch (Prä-MRTK-Initialisierungsprofilschalter)](#pre-mrtk-initialization-profile-switch)
     - [Aktiver Profilschalter](#active-profile-switch)
   - [Weitere Informationen](#see-also)
 
@@ -75,7 +75,7 @@ Diese Konfigurationsprofile werden unten in den entsprechenden Abschnitten ausf�
 
 ## <a name="experience-settings"></a>Einstellungen für die Benutzererfahrung
 
-Auf der Hauptseite Mixed Reality Toolkit-Konfiguration definiert diese Einstellung den Standardvorgang der [Mixed Reality-Umgebungsskalierung](/windows/mixed-reality/coordinate-systems-in-unity) für Ihr Projekt.
+Auf der Hauptseite Mixed Reality Toolkit-Konfiguration definiert diese Einstellung den Standardvorgang der [Mixed Reality Umgebungsskalierung](/windows/mixed-reality/coordinate-systems-in-unity) für Ihr Projekt.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" alt="Experiance settings" style="display:block;">
 
@@ -84,31 +84,31 @@ Auf der Hauptseite Mixed Reality Toolkit-Konfiguration definiert diese Einstellu
 
 ## <a name="camera-settings"></a>Kameraeinstellungen
 
-Die Kameraeinstellungen definieren, wie die Kamera für Ihr Mixed Reality-Projekt eingerichtet wird, und definieren die allgemeinen Einstellungen für Clipping, Qualität und Transparenz.
+Die Kameraeinstellungen definieren, wie die Kamera für Ihr Mixed Reality Projekt eingerichtet wird, und definieren die generischen Einstellungen für Clipping, Qualität und Transparenz.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_CameraProfile.png" width="650px" alt="Camera Profile" style="display:block;">
 
 ---
 <a name="inputsystem"></a>
 
-## <a name="input-system-settings"></a>Eingabesystemeinstellungen
+## <a name="input-system-settings"></a>Einstellungen des Eingabesystems
 
-Der Mixed Reality Project stellt ein robustes und gut trainiertes Eingabesystem zum Weiterleiten aller Eingabeereignisse rund um das Projekt zur Verfügung, das standardmäßig ausgewählt ist.
+Die Mixed Reality Project bietet ein robustes und gut trainiertes Eingabesystem zum Weiterleiten aller Eingabeereignisse um das Projekt, das standardmäßig ausgewählt ist.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1" style="display:block;">
 
-Hinter dem vom MRTK bereitgestellten Eingabesystem befinden sich mehrere andere Systeme, die dazu beitragen, die komplexen Inter-Reality-Aufgaben zu steuern und zu verwalten, die erforderlich sind, um die Komplexität eines Multiplattform-/Mixed Reality-Frameworks zu abstrahieren.
+Hinter dem vom MRTK bereitgestellten Eingabesystem befinden sich mehrere andere Systeme, die dazu beitragen, die komplexen Verschränkungen zu steuern und zu verwalten, die erforderlich sind, um die Komplexität eines Multiplattform-/Mixed Reality-Frameworks zu abstrahieren.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemProfile.png" width="650px" alt="Input System settings 2" style="display:block;">
 
-Die einzelnen Profile werden im Folgenden ausführlich beschrieben:
+Jedes der einzelnen Profile wird im Folgenden ausführlich beschrieben:
 
 - Fokus Einstellungen
 - [Einstellungen für Eingabeaktionen](#input-actions-settings)
 - [Regeln für Eingabeaktionen](#input-actions-rules)
 - [Zeigerkonfiguration](#pointer-configuration)
 - [Gestenkonfiguration](#gestures-configuration)
-- [Speech-Befehle](#speech-commands)
+- [Sprachbefehle](#speech-commands)
 - [Konfiguration der Controllerzuordnung](#controller-mapping-configuration)
 - [Controllervisualisierungseinstellungen](#controller-visualization-settings)
 
@@ -117,7 +117,7 @@ Die einzelnen Profile werden im Folgenden ausführlich beschrieben:
 
 ## <a name="boundary-visualization-settings"></a>Einstellungen für die Begrenzungsvisualisierung
 
-Das Begrenzungssystem übersetzt die wahrgenommene Grenze, die von der Zugrunde liegenden Plattformgrenze/dem Wächtersystem gemeldet wird. Mit der Konfiguration der Begrenzungs-Schnellansicht können Sie die aufgezeichnete Grenze innerhalb Ihrer Szene relativ zur Position des Benutzers automatisch anzeigen. Die Grenze reagiert bzw. aktualisiert auch basierend darauf, wo der Benutzer innerhalb der Szene teleportiert.
+Das Begrenzungssystem übersetzt die erkannte Grenze, die vom zugrunde liegenden Plattformbegrenzungs-/Wächtersystem gemeldet wird. Die Konfiguration der Begrenzungsschnellansicht bietet Ihnen die Möglichkeit, die aufgezeichnete Grenze in Ihrer Szene relativ zur Position des Benutzers automatisch anzuzeigen. Die Grenze reagiert/aktualisiert auch basierend darauf, wo der Benutzer in der Szene teleportiert.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_BoundaryVisualizationProfile.png" width="650px" alt="Boundry Visualization Settings" style="display:block;">
 
@@ -126,7 +126,7 @@ Das Begrenzungssystem übersetzt die wahrgenommene Grenze, die von der Zugrunde 
 
 ## <a name="teleportation-system-selection"></a>Teleportation-Systemauswahl
 
-Der Mixed Reality Project bietet ein umfassendes Teleportation-System zum Verwalten von Teleportationsereignissen im Projekt, das standardmäßig ausgewählt ist.
+Die Mixed Reality Project bietet ein voll funktionsfähiges Teleportation-System für die Verwaltung von Teleportierungsereignissen im Projekt, das standardmäßig ausgewählt ist.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_TeleportationSystemSelection.png" width="650px" alt="Teleport System settings" style="display:block;">
 
@@ -135,13 +135,13 @@ Der Mixed Reality Project bietet ein umfassendes Teleportation-System zum Verwal
 
 ## <a name="spatial-awareness-settings"></a>Einstellungen für räumliche Wahrnehmung
 
-Der Mixed Reality Project stellt ein neu erstelltes Räumliches Bewusstseinssystem für die Arbeit mit Räumlichen Überprüfungssystemen im Projekt zur Verfügung, das standardmäßig ausgewählt ist.
+Der Mixed Reality Project stellt ein neu erstelltes Räumliches Wahrnehmungssystem für die Arbeit mit räumlichen Scansystemen im Projekt bereit, das standardmäßig ausgewählt ist.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
-Mit der Mixed Reality Toolkit-Konfiguration für räumliche Wahrnehmung können Sie anpassen, wie das System gestartet wird, ob es automatisch erfolgt, wenn die Anwendung gestartet wird oder später programmgesteuert gestartet wird, sowie die Extents für das Sichtfeld festlegen.
+Mit der Mixed Reality Toolkit-Konfiguration für räumliche Wahrnehmung können Sie anpassen, wie das System gestartet wird, unabhängig davon, ob es automatisch beim programmgesteuerten Start der Anwendung oder später erfolgt, sowie die Erweiterungen für das Sichtfeld festlegen.
 
-Außerdem können Sie die Gitternetz- und Oberflächeneinstellungen konfigurieren und weiter anpassen, wie Ihr Projekt die Umgebung um Sie herum versteht.
+Außerdem können Sie die Gitternetz- und Oberflächeneinstellungen konfigurieren und so weiter anpassen, wie Ihr Projekt die Umgebung um Sie herum versteht.
 
 Dies gilt nur für Geräte, die eine gescannte Umgebung bereitstellen können.
 
@@ -156,16 +156,16 @@ Ein optionales, aber äußerst nützliches Feature des MRTK ist die Plug-In-Diag
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsSystemSelection.png" width="650px" alt="Diagnostics settings" style="display:block;">
 
-Das Diagnoseprofil bietet mehrere einfache Systeme, die während der Ausführung des Projekts überwacht werden können, einschließlich eines praktischen Ein-/Aus-Schalters zum Aktivieren/Deaktivieren des Anzeigebereichs in der Szene.
+Das Diagnoseprofil bietet mehrere einfache Systeme, die überwacht werden können, während das Projekt ausgeführt wird, einschließlich eines praktischen Ein/Aus-Schalters zum Aktivieren/Deaktivieren des Anzeigebereichs in der Szene.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DiagnosticsProfile.png" width="650px" alt="Diagnostics settings System settings 2" style="display:block;">
 
 ---
 <a name="scenesystem"></a>
 
-## <a name="scene-system-settings"></a>Szenensystemeinstellungen
+## <a name="scene-system-settings"></a>Einstellungen des Szenensystems
 
-Das MRTK bietet diesen optionalen Dienst, mit dem Sie komplexe additive Szenen beim Laden/Entladen verwalten können. Um zu entscheiden, ob das Szenensystem für Ihr Projekt geeignet ist, lesen Sie den Leitfaden zum [Szenensystem Erste Schritte.](../features/scene-system/scene-system-getting-started.md)
+Das MRTK bietet diesen optionalen Dienst, mit dem Sie komplexes Laden/Entladen von additiven Szenen verwalten können. Wenn Sie entscheiden möchten, ob das Szenensystem für Ihr Projekt geeignet ist, lesen Sie scene [system Erste Schritte Guide (Scene System Erste Schritte Guide).](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1" style="display:block;">
 
@@ -174,9 +174,9 @@ Das MRTK bietet diesen optionalen Dienst, mit dem Sie komplexe additive Szenen b
 
 ## <a name="additional-services-settings"></a>Zusätzliche Diensteinstellungen
 
-Einer der erweiterten Bereiche des Mixed Reality Toolkits [](https://en.wikipedia.org/wiki/Service_locator_pattern) ist die Implementierung des Dienstlocatormusters, die die Registrierung eines beliebigen "Diensts" beim Framework ermöglicht. Dadurch kann das Framework problemlos um neue Features/Systeme erweitert werden, aber auch Projekte können diese Funktionen nutzen, um ihre eigenen Laufzeitkomponenten zu registrieren.
+Einer der fortgeschritteneren Bereiche des Mixed Reality Toolkits ist die Implementierung des [Dienstlocatormusters,](https://en.wikipedia.org/wiki/Service_locator_pattern) die die Registrierung eines beliebigen "Diensts" beim Framework ermöglicht. Dadurch kann das Framework problemlos um neue Features/Systeme erweitert werden, aber projekte können diese Funktionen auch nutzen, um ihre eigenen Laufzeitkomponenten zu registrieren.
 
-Jeder registrierte Dienst erhält weiterhin den vollen Vorteil aller Unity-Ereignisse, ohne den Aufwand und die Kosten für die Implementierung eines MonoBehaviour- oder clunky-Singletonmusters. Dies ermöglicht reine C#-Komponenten ohne Szenenaufwand für die Ausführung von Vordergrund- und Hintergrundprozessen, z. B. Lawningsysteme, Laufzeitspiellogik oder praktisch alles andere.
+Jeder registrierte Dienst erhält weiterhin den vollständigen Vorteil aller Unity-Ereignisse, ohne den Aufwand und die Kosten für die Implementierung eines MonoBehaviour- oder clunky-Singletonmusters. Dies ermöglicht reine C#-Komponenten ohne Szenenaufwand für die Ausführung von Vordergrund- und Hintergrundprozessen, z. B. Spawningsysteme, Laufzeitspiellogik oder praktisch alles andere.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_RegisteredServiceProvidersProfile.png" width="650px" alt="additional System settings" style="display:block;">
 
@@ -185,25 +185,25 @@ Jeder registrierte Dienst erhält weiterhin den vollen Vorteil aller Unity-Ereig
 
 ## <a name="input-actions-settings"></a>Einstellungen für Eingabeaktionen
 
-Eingabeaktionen bieten eine Möglichkeit, physische Interaktionen und Eingaben aus einem Laufzeitprojekt zu abstrahieren. Alle physischen Eingaben (von Controllern/ Händen/ Maus usw.) werden in eine logische Eingabeaktion übersetzt, die in Ihrem Laufzeitprojekt verwendet werden kann. Dadurch wird sichergestellt, dass Ihr Projekt unabhängig davon, woher die Eingabe stammt, diese Aktionen einfach als "Zu tunde Dinge" oder "Interagieren mit" in Ihren Szenen implementiert.
+Eingabeaktionen bieten eine Möglichkeit, physische Interaktionen und Eingaben aus einem Laufzeitprojekt zu abstrahieren. Alle physischen Eingaben (von Controllern/ Händen / Maus usw.) werden in eine logische Eingabeaktion übersetzt, um sie in Ihrem Laufzeitprojekt zu verwenden. Dadurch wird sichergestellt, dass Ihr Projekt unabhängig davon, woher die Eingabe stammt, diese Aktionen einfach als "Dinge zu tun" oder "Interagieren mit" in Ihren Szenen implementiert.
 
-Um eine neue Eingabeaktion zu erstellen, klicken Sie einfach auf die Schaltfläche "Neue Aktion hinzufügen", und geben Sie einen benutzerfreundlichen Textnamen für das ein, was sie darstellt. Sie müssen dann nur eine Achse (den Datentyp) auswählen, die die Aktion vermitteln soll, oder im Fall von physischen Controllern den physischen Eingabetyp, an den sie angefügt werden kann, z. B.:
+Um eine neue Eingabeaktion zu erstellen, klicken Sie einfach auf die Schaltfläche "Neue Aktion hinzufügen", und geben Sie einen Anzeigetextnamen für das ein, was sie darstellt. Sie müssen dann nur eine Achse (den Typ der Daten) auswählen, die die Aktion vermitteln soll, oder im Fall von physischen Controllern den physischen Eingabetyp, an den sie angefügt werden kann, z. B.:
 
-| Achseneinschränkung | Datentyp | Beschreibung | Beispiel für die Verwendung |
+| Achseneinschränkung | Datentyp | Beschreibung | Beispielverwendung |
 | :--- | :--- | :--- | :--- |
 | Keine | Keine Daten | Wird für eine leere Aktion oder ein leeres Ereignis verwendet. | Ereignistrigger |
-| Rohdaten (reserviert) | object | Für die zukünftige Verwendung reserviert | – |
-| Digital | bool | Ein boolescher Wert für Daten vom Typ "On" oder "Off". | Schaltfläche "Controller" |
+| Rohdaten (reserviert) | Objekt (object) | Für die zukünftige Verwendung reserviert | – |
+| Digital | bool | Ein boolescher Wert für Daten vom Typ "On" oder "Off" | Schaltfläche "Controller" |
 | Einzelne Achse | float | Ein einzelner Genauigkeitsdatenwert | Eine Bereichseingabe, z. B. ein Trigger |
 | Duale Achse | Vector2 | Ein duales Float-Typdatum für mehrere Achsen | Ein Dpad oder Thumbstick |
 | Drei Dof-Positionen | Vector3 | Positionstypdaten von mit 3 Gleitkommaachsen | Nur 3D-Positionsformatcontroller |
-| Drei Dof-Drehungen | Quaternion | Nur Drehungseingabe mit 4 Gleitkommaachsen | Ein Controller im Drei-Grad-Stil, z. B. Oculus Go-Controller |
+| Drei Dof-Drehungen | Quaternion | Nur Drehungseingabe mit 4 Gleitkommaachsen | Ein Controller im Stil von drei Grad, z. B. Oculus Go-Controller |
 | Sechs Dof | Mixed Reality Pose (Vector3, Quaternion) | Eingabe im Stil "Position" und "Drehung" mit Vector3- und Quaternion-Komponenten | Ein Bewegungscontroller oder Zeiger |
 
 Ereignisse, die Eingabeaktionen verwenden, sind nicht auf physische Controller beschränkt und können weiterhin innerhalb des Projekts verwendet werden, damit Laufzeiteffekte neue Aktionen generieren.
 
 > [!NOTE]
-> Eingabeaktionen sind eine der wenigen Komponenten, die zur Laufzeit nicht bearbeitet werden können, sondern nur eine Entwurfszeitkonfiguration. Dieses Profil sollte nicht ausgetauscht werden, während das Projekt aufgrund der Abhängigkeit des Frameworks (und Ihrer Projekte) von den für jede Aktion generierten IDs ausgeführt wird.
+> Eingabeaktionen sind eine der wenigen Komponenten, die zur Laufzeit nicht bearbeitet werden können, sondern nur eine Entwurfszeitkonfiguration. Dieses Profil sollte nicht ausgetauscht werden, während das Projekt ausgeführt wird, da das Framework (und Ihre Projekte) von den für jede Aktion generierten IDs abhängig sind.
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputActionsProfile.png" width="650px" alt="Configuration Profile" style="display:block;">
 
@@ -214,7 +214,7 @@ Ereignisse, die Eingabeaktionen verwenden, sind nicht auf physische Controller b
 
 Eingabeaktionsregeln bieten eine Möglichkeit, ein Ereignis, das für eine Eingabeaktion in ausgelöst wird, basierend auf seinem Datenwert automatisch in verschiedene Aktionen zu übersetzen. Diese werden nahtlos innerhalb des Frameworks verwaltet und verursachen keine Leistungskosten.
 
-Beispiel: Konvertieren des Eingabeereignisses mit einer einzelnen Doppelachse von einem DPad in die vier entsprechenden Aktionen "Dpad Up" / "DPad Down" / "Dpad Left" / "Dpad Right" (wie in der folgenden Abbildung dargestellt).
+Beispiel: Konvertieren des Eingabeereignisses mit einer einzelnen Doppelachse von einem DPad in die 4 entsprechenden Aktionen "Dpad Up" / "DPad Down" / "Dpad Left" / "Dpad Right" (wie in der folgenden Abbildung dargestellt).
 
 Dies kann auch in Ihrem eigenen Code erfolgen. Da dies jedoch ein sehr gängiges Muster war, stellt das Framework einen Mechanismus bereit, um dies "sofort zu erledigen".
 
@@ -239,7 +239,7 @@ Zeiger können auch innerhalb der aktiven Szene mithilfe einer der vielen vom Mi
 - Debuggen von Zeichnen zeigender Lichtstrahlfarben: Eine Gruppe von Farben, die zum Visualisieren verwendet werden sollen.
 - Prefab des Anvisierenscursors: Erleichtert die Angabe eines globalen Anvisierenscursors für jede Szene.
 
-Es gibt eine zusätzliche Hilfsschaltfläche, mit der Sie schnell zum Gaze-Anbieter wechseln können, um bei Bedarf einige bestimmte Werte für Gaze außer Kraft zu setzen.
+Es gibt eine zusätzliche Hilfsschaltfläche, mit der Sie schnell zum Gaze-Anbieter springen können, um bei Bedarf bestimmte Werte für Gaze zu überschreiben.
 
 ---
 <a name="gestures"></a>
@@ -264,7 +264,7 @@ Wie Gesten bieten auch einige Laufzeitplattformen intelligente "Spracherkennung"
 2. Sprachbefehle: Registriert "Wörter" und übersetzt sie in Eingabeaktionen, die von Ihrem Projekt empfangen werden können. Sie können bei Bedarf auch an Tastaturaktionen angefügt werden.
 
 > [!IMPORTANT]
-> Das System unterstützt derzeit nur Sprache, wenn es auf Windows 10 Plattformen ausgeführt wird, z. B. HoloLens und Windows 10 Desktop, und wird für andere Systeme erweitert, da sie in Zukunft dem MRTK hinzugefügt werden (noch keine Datumsangaben).
+> Das System unterstützt sprache derzeit nur bei der Ausführung auf Windows 10 Plattformen, z. B. HoloLens und Windows 10 Desktop, und wird für andere Systeme erweitert, da sie in Zukunft dem MRTK hinzugefügt werden (noch keine Datumsangaben).
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpeechCommandsProfile.png" width="650px" alt="Configuration Profile screens" style="display:block;">
 
@@ -304,7 +304,7 @@ Es gibt auch einen erweiterten Bildschirm zum Konfigurieren anderer OpenVR- oder
 
 Zusätzlich zur Controllerzuordnung wird ein separates Konfigurationsprofil bereitgestellt, um anzupassen, wie Ihre Controller in Ihren Szenen dargestellt werden.
 
-Dies kann auf einem "Global" (alle Instanzen eines Controllers für eine bestimmte Hand) oder spezifisch für einen einzelnen Controllertyp/-hand konfiguriert werden.
+Dies kann auf einem "Globalen" (alle Instanzen eines Controllers für eine bestimmte Hand) oder spezifisch für einen einzelnen Controllertyp/eine einzelne Hand konfiguriert werden.
 
 Das MRTK unterstützt auch native SDK-Controllermodelle für Windows Mixed Reality und OpenVR. Diese werden als GameObjects in Ihre Szene geladen und mithilfe der Controllernachverfolgung der Plattform positioniert.
 
@@ -318,7 +318,7 @@ Wenn Ihre Controllerdarstellung in der Szene von der physischen Controllerpositi
 
 Die folgenden Hilfsprogramme funktionieren nur im Editor und sind nützlich, um die Entwicklungsproduktivität zu verbessern.
 
-![Konfigurations-Hilfsprogramme für den MRTK-Editor](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_EditorConfiguration.png)
+![MRTK-Editor- Konfigurations-Hilfsprogramme](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_EditorConfiguration.png)
 
 ### <a name="service-inspectors"></a>Dienstinspektoren
 
@@ -332,7 +332,7 @@ Sie können Dienstinspektoren aktivieren, indem *Sie dienstinspektoren verwenden
 
 Die Gemeinsame Nutzung des Tiefenpuffers mit einigen Mixed Reality-Plattformen kann die [Hologrammunterdärkung](../performance/hologram-stabilization.md)verbessern. Beispielsweise kann die Windows Mixed Reality Plattform die gerenderte Szene pro Pixel ändern, um geringfügige Kopfbewegungen während der Zeit zu berücksichtigen, die zum Rendern eines Frames gedauert hat. Diese Techniken erfordern jedoch Tiefenpuffer mit genauen Daten, um zu wissen, wo und wie weit die Geometrie vom Benutzer entfernt ist.
 
-Um sicherzustellen, dass eine Szene alle erforderlichen Daten im Tiefenpuffer rendert, können Entwickler die Funktion *Tiefenpuffer rendern* unter *Editor Einstellungen* im Konfigurationsprofil umschalten. Dadurch wird der aktuelle Tiefenpuffer als Farbe für die Szenenansicht gerendert, indem der Nachbearbeitungseffekt ( ) auf die Hauptkamera angewendet [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) wird.
+Um sicherzustellen, dass eine Szene alle erforderlichen Daten im Tiefenpuffer rendert, können Entwickler die Funktion *Tiefenpuffer rendern* unter *Editor Einstellungen* im Konfigurationsprofil umschalten. Dadurch wird der aktuelle Tiefenpuffer als Farbe für die Szenenansicht gerendert, indem der Nachbearbeitungseffekt auf die Hauptkamera angewendet [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) wird.
 
 ![Hilfsprogramm für Rendertiefepuffer ](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DepthBufferExample.gif)
  <sup>Der blaue Zylinder in der Szene weist ein Material mit ZWrite auf, sodass keine Tiefendaten geschrieben werden.</sup>
@@ -342,11 +342,11 @@ Um sicherzustellen, dass eine Szene alle erforderlichen Daten im Tiefenpuffer re
 Es ist möglich, Profile zur Laufzeit zu aktualisieren, und es gibt im Allgemeinen zwei verschiedene Szenarien und Zeiten, in denen dies hilfreich ist:
 
 1. **Pre MRTK initialization profile switch (Prä-MRTK-Initialisierungsprofilwechsel):** Beim Start, bevor das MRTK initialisiert wird und das Profil aktiv wird. Ersetzen Sie dabei das noch nicht genutzte Profil, um verschiedene Features basierend auf den Gerätefunktionen zu aktivieren/deaktivieren. Wenn die Umgebung beispielsweise in VR ausgeführt wird, die keine Hardware für räumliche Zuordnungen hat, ist es wahrscheinlich nicht sinnvoll, die Komponente für die räumliche Zuordnung zu aktivieren.
-1. **Aktiver Profilwechsel:** Nachdem das MRTK initialisiert wurde und ein Profil aktiv wurde, tauschen Sie das aktuell verwendete Profil aus, um das Verhalten bestimmter Features zu ändern. Es kann z. B. eine bestimmte untergeordnete Benutzeroberfläche in der Anwendung geben, die entfernte Handzeiger vollständig entfernen möchte.
+1. **Aktiver Profilwechsel:** Nachdem das MRTK initialisiert wurde und ein Profil aktiv wurde, tauschen Sie das aktuell verwendete Profil aus, um das Verhalten bestimmter Features zu ändern. Es kann z. B. eine bestimmte untergeordnete Benutzeroberfläche in der Anwendung geben, die entfernte Fernzeiger vollständig entfernen möchte.
 
 ### <a name="pre-mrtk-initialization-profile-switch"></a>Pre MRTK initialization profile switch (Prä-MRTK-Initialisierungsprofilschalter)
 
-Dies kann erreicht werden, indem Ein MonoBehaviour (Beispiel unten) angefügt wird, das vor der MRTK-Initialisierung ausgeführt wird (d. h. Awake()). Beachten Sie, dass das Skript (d. h. der Aufruf von ) vor dem Skript ausgeführt werden muss. Dies `SetProfileBeforeInitialization` kann durch Festlegen der `MixedRealityToolkit` [Skriptausführungsreihenfolge-Einstellungen](https://docs.unity3d.com/Manual/class-MonoManager.html)erreicht werden.
+Dies kann durch Anfügen eines MonoBehaviour (Beispiel unten) erreicht werden, das vor der MRTK-Initialisierung (d. h. "Awake()") ausgeführt wird. Beachten Sie, dass das Skript (d. h. der Aufruf von ) vor dem Skript ausgeführt werden muss. Dies kann durch Festlegen der Einstellungen für die `SetProfileBeforeInitialization` `MixedRealityToolkit` Skriptausführungs reihenfolge erreicht [werden.](https://docs.unity3d.com/Manual/class-MonoManager.html)
 
 ```csharp
 using Microsoft.MixedReality.Toolkit;
@@ -377,22 +377,22 @@ public class PreInitProfileSwapper : MonoBehaviour
 }
 ```
 
-Anstelle von "profileToUse" ist es möglich, über einen beliebigen Satz von Profilen zu verfügen, die für bestimmte Plattformen gelten (z. B. eine für HoloLens 1, eine für VR, eine für HoloLens 2 usw.). Es ist möglich, verschiedene andere Indikatoren (z. B. oder ob https://docs.unity3d.com/ScriptReference/SystemInfo.html die Kamera deckend/transparent ist) zu verwenden, um herauszufinden, welches Profil geladen werden soll.
+Anstelle von "profileToUse" ist es möglich, einen beliebigen Satz von Profilen zu verwenden, die für bestimmte Plattformen gelten (z. B. eines für HoloLens 1, eines für VR, eines für HoloLens 2 usw.). Es ist möglich, verschiedene andere Indikatoren (z. B. oder ob die Kamera nicht transparent ist) zu verwenden, um herauszufinden, welches Profil https://docs.unity3d.com/ScriptReference/SystemInfo.html geladen werden soll.
 
 ### <a name="active-profile-switch"></a>Aktiver Profilschalter
 
-Dies kann erreicht werden, indem die -Eigenschaft auf ein neues Profil festgelegt wird, `MixedRealityToolkit.Instance.ActiveProfile` das das aktive Profil ersetzt.
+Dies kann durch Festlegen der -Eigenschaft `MixedRealityToolkit.Instance.ActiveProfile` auf ein neues Profil erreicht werden, das das aktive Profil ersetzt.
 
 ```csharp
 MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
 ```
 
-Beachten Sie, dass beim Festlegen `ActiveProfile` während der Laufzeit die Zerstörung der derzeit ausgeführten Dienste nach dem letzten LateUpdate() aller Dienste erfolgt, und die Instanziierung und Initialisierung der Dienste, die dem neuen Profil zugeordnet sind, erfolgt vor dem ersten Update() aller Dienste.
+Beachten Sie, dass beim Festlegen während der Laufzeit die Zerstörung der derzeit ausgeführten Dienste nach dem letzten LateUpdate() aller Dienste und die Instanziierung und Initialisierung der Dienste, die dem neuen Profil zugeordnet sind, vor dem ersten Update() aller Dienste ausgeführt `ActiveProfile` wird.
 
-Während dieses Prozesses kann es zu einer merklichen Anwendungsbeendigung kommen. Außerdem kann jedes Skript mit höherer Priorität als das `MixedRealityToolkit` Skript sein Update eingeben, bevor das neue Profil ordnungsgemäß eingerichtet wird. Weitere Informationen zur Skriptpriorität finden Sie unter [Skriptausführungsreihenfolgeeinstellungen.](https://docs.unity3d.com/Manual/class-MonoManager.html)
+Während dieses Prozesses kann eine spürbare Anwendungshregung auftreten. Außerdem kann jedes Skript mit einer höheren Priorität als das Skript das Update eingeben, `MixedRealityToolkit` bevor das neue Profil ordnungsgemäß eingerichtet wird. Weitere [Informationen zur Skriptpriorität](https://docs.unity3d.com/Manual/class-MonoManager.html) finden Sie unter Skriptausführungsauftragseinstellungen.
 
-Im Prozess des Profilwechsels bleibt die vorhandene UI-Kamera unverändert, um sicherzustellen, dass Komponenten der Unity-Benutzeroberfläche, die Canvas erfordern, nach dem Wechsel weiterhin funktionieren.
+Während des Profilwechselprozesses bleibt die vorhandene UI-Kamera unverändert, um sicherzustellen, dass Unity UI-Komponenten, die Canvas erfordern, auch nach dem Wechsel weiterhin funktionieren.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Hologrammstabilisierung](../performance/hologram-stabilization.md)
+- [Hologramm-Stabilität](../performance/hologram-stabilization.md)

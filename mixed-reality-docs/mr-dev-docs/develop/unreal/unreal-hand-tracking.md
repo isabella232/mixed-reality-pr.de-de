@@ -1,85 +1,85 @@
 ---
 title: Handtracking in Unreal
-description: Erfahren Sie, wie Sie Hand nach Verfolgungs Eingaben, Pose, Hand-Meshes und Live Link Animationen in Unreal Mixed Reality-Apps verwenden.
+description: Erfahren Sie, wie Sie Eingaben, Posen, Handgitternetze und Livelinkanimationen in Unreal Mixed Reality-Apps verwenden.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality, Hand Verfolgung, Unreal, Unreal Engine 4, UE4, hololens, hololens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Handbücher, holograms, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 415a0773586ab232e925fd0f18a3a8e6f8217e88
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Windows Mixed Reality, Handtracking, Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 4c3b86c842fc875ebedbdf2527bf962fd8afd4d19cef90d168293cc85b664f70
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695801"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187264"
 ---
 # <a name="hand-tracking-in-unreal"></a>Handtracking in Unreal
 
-Das Hand Verfolgungssystem verwendet die Palmen und Finger der Person als Eingabe. Daten an Position und Drehung jedes Fingers, das gesamte Palmen und Handgesten sind verfügbar. Ab Unreal 4,26 basiert die Hand Verfolgung auf dem Unreal headmounteddisplay-Plug-in und verwendet eine gemeinsame API für alle XR-Plattformen und-Geräte. Die Funktionalität ist für Windows Mixed Reality und openxr Systems identisch.
+Das Handtrackingsystem verwendet die Handflächen und Finger einer Person als Eingabe. Daten zur Position und Drehung jedes Fingers, der gesamten Handfläche und handgesten sind verfügbar. Ab Unreal 4.26 basiert die Handnachverfolgung auf dem Unreal HeadMountedDisplay-Plug-In und verwendet eine gemeinsame API für alle XR-Plattformen und -Geräte. Die Funktionalität ist sowohl für Windows Mixed Reality als auch für OpenXR-Systeme identisch.
 
-## <a name="hand-pose"></a>Hand darstellen
+## <a name="hand-pose"></a>Handpose
 
-Hand darstellen ermöglicht Ihnen die Nachverfolgung und Verwendung der Hände und Finger der Benutzer als Eingabe, auf die in Blueprints und C++ zugegriffen werden kann. Die Unreal-API sendet die Daten als Koordinatensystem, wobei Ticks mit der Unreal-Engine synchronisiert werden.
+Mit der Handpose können Sie die Hände und Finger Ihrer Benutzer als Eingabe nachverfolgen und verwenden, auf die sowohl in Blueprints als auch in C++ zugegriffen werden kann. Die Unreal-API sendet die Daten als Koordinatensystem, wobei Ticks mit der Unreal-Engine synchronisiert werden.
 
-![Hand Skelett Bild mit Gelenken Overlay- ](images/hand-tracking-img-02.png)
- ![ Hand Skelett](images/hand-tracking-skeleton-update.png)
+![Hand skeleton image with joints overlay Hand Skeleton (Handgerüstbild mit Überlagerung von ](images/hand-tracking-img-02.png)
+ ![ Fugen)](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 
-## <a name="hand-live-link-animation"></a>Live Link Animation Hand
+## <a name="hand-live-link-animation"></a>Hand Live Link Animation
 
-Hand stellen werden der Animation mithilfe des [Live Link-Plug](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)-ins ausgesetzt.
+Handposen werden mithilfe des [Live Link-Plug-Ins](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)für Animationen verfügbar gemacht.
 
-Wenn die Windows Mixed Reality-und Live Link-Plug-ins aktiviert sind:
-1. Wählen Sie **Window > Live Link** aus, um das Fenster Live Link-Editor zu öffnen.
-2. **Quelle** auswählen und **Windows Mixed Reality-Hand Verfolgungs Quelle** aktivieren
+Wenn die Windows Mixed Reality- und Live Link-Plug-Ins aktiviert sind:
+1. Wählen Sie **Fenster > Live Link aus,** um das Live Link-Editorfenster zu öffnen.
+2. Wählen Sie **Quelle** aus, und aktivieren **Sie Windows Mixed Reality Handtrackingquelle.**
 
-![Live Link Quelle](images/unreal/live-link-source.png)
+![Live Link-Quelle](images/unreal/live-link-source.png)
 
-Nachdem Sie die Quelle aktiviert und ein Animations Objekt geöffnet haben, erweitern Sie den Abschnitt **Animation** auf der Registerkarte **Vorschau Szene** , um zusätzliche Optionen anzuzeigen.
+Nachdem Sie die Quelle aktiviert und ein Animationsobjekt geöffnet haben, erweitern Sie den Abschnitt **Animation** auf der Registerkarte **Vorschauszene,** um weitere Optionen anzuzeigen.
 
-![Live Link Animation](images/unreal/live-link-animation.png)
+![Live Link-Animation](images/unreal/live-link-animation.png)
 
-Die Hand Animations Hierarchie ist identisch mit der in `EWMRHandKeypoint` . Die Animation kann mithilfe von **windowsmixedrealityhandtrackinglebinkremapasset** neu zugewiesen werden:
+Die Hierarchie der Handanimation ist identisch mit in `EWMRHandKeypoint` . Animationen können mithilfe von **WindowsMixedRealityHandTrackingLiveLinkRemapAsset** neu ermittelt werden:
 
-![Live Link Animation 2](images/unreal/live-link-animation2.png)
+![Live Link-Animation 2](images/unreal/live-link-animation2.png)
 
-Sie kann auch im Editor untergeordnet werden:
+Sie kann auch im Editor untergliedert werden:
 
-![Live Link Neuzuordnung](images/unreal/live-link-remap.png)
+![Live Link Remap](images/unreal/live-link-remap.png)
 
-## <a name="hand-mesh"></a>Hand Netz
+## <a name="hand-mesh"></a>Handgitternetz
 
-### <a name="hand-mesh-as-a-tracked-geometry"></a>Hand Mesh als nach verfolgte Geometrie
+### <a name="hand-mesh-as-a-tracked-geometry"></a>Handgitter als nachverfolgte Geometrie
 
 > [!IMPORTANT]
-> Zum Abrufen von Hand Netzen als nach verfolgte Geometrie in openxr müssen Sie **Set use Hand Mesh** with **aktivierte Tracking Geometry** aufzurufen.
+> Zum Abrufen von Handgittern als nachverfolgte Geometrie in OpenXR müssen Sie **Set Use Hand Mesh** with Enabled Tracking **Geometry** aufrufen.
 
-Um diesen Modus zu aktivieren, müssen Sie **Set use Hand Mesh** with **aktivierte nach Verfolgungs Geometrie** verwenden:
+Um diesen Modus zu aktivieren, sollten Sie **Set Use Hand Mesh** with Enabled Tracking **Geometry** aufrufen:
 
-![Blaupause der Ereignis Start Wiedergabe, verbunden mit Set use Hand Mesh-Funktion mit aktiviertem nach Verfolgungs Geometrie Modus](images/unreal-hand-tracking-img-08.png)
+![Blaupause des Ereignisstarts wird verbunden, um die Verwendung der Handgitternetzfunktion mit aktivierter Nachverfolgung des Geometriemodus festzulegen.](images/unreal-hand-tracking-img-08.png)
 
 > [!NOTE]
-> Beide Modi können nicht gleichzeitig aktiviert werden. Wenn Sie eins aktivieren, wird das andere automatisch deaktiviert.
+> Es ist nicht möglich, dass beide Modi gleichzeitig aktiviert werden. Wenn Sie eine aktivieren, wird die andere automatisch deaktiviert.
 
 ### <a name="accessing-hand-mesh-data"></a>Zugreifen auf Hand Mesh-Daten
 
-![Hand Netz](images/unreal/hand-mesh.png)
+![Handgitternetz](images/unreal/hand-mesh.png)
 
-Bevor Sie auf Hand Netz Daten zugreifen können, müssen Sie folgende Schritte ausführen:
-- Wählen Sie das Objekt " **arsessionconfig** " aus, erweitern Sie die Einstellungen für " **AR Settings-> World Mapping** ", und aktivieren Sie die Option **Mesh-Daten aus der**
+Bevor Sie auf Handgitternetzdaten zugreifen können, müssen Sie:
+- Wählen Sie Ihr **ARSessionConfig-Medienobjekt** aus, erweitern Sie die Ar **Einstellungen -> World** Mapping-Einstellungen, und aktivieren **Sie Gitternetzdaten aus nachverfolgter Geometrie generieren.**
 
-Unten sind die standardmesh-Parameter aufgeführt:
+Im Folgenden sind die Standardgitternetzparameter aufgeführt:
 
-1.  Netzdaten für Okklusion verwenden
-2.  Konflikt für Mesh-Daten generieren
-3.  Navigations Gitter für Mesh-Daten generieren
-4.  Gitternetz Daten in Wireframe Renderingparameter – Debug
+1.  Verwenden von Gitternetzdaten für die Verdeckung
+2.  Generieren von Kollisionen für Gitternetzdaten
+3.  Generieren eines Navigationsgitters für Mesh-Daten
+4.  Render Mesh Data in Wireframe – Debugparameter, der das generierte Gittermodell anzeigt
 
-Diese Parameterwerte werden als Gitter-und Hand Netz Standardwerte verwendet. Sie können Sie jederzeit in Blaupausen oder Code für ein beliebiges Mesh ändern.
+Diese Parameterwerte werden als Standardeinstellungen für räumliche Zuordnung und Handgitternetz verwendet. Sie können sie jederzeit in Blaupausen oder Code für ein beliebiges Netz ändern.
 
 ### <a name="c-api-reference"></a>C++-API-Referenz
-Verwenden `EEARObjectClassification` Sie, um Hand gitterwerte in allen nachverfolgbare-Objekten zu suchen.
+Verwenden Sie `EEARObjectClassification` , um Handgitternetzwerte in allen nachverfolgbaren Objekten zu suchen.
 ```cpp
 enum class EARObjectClassification : uint8
 {
@@ -88,7 +88,7 @@ enum class EARObjectClassification : uint8
 };
 ```
 
-Die folgenden Delegaten werden aufgerufen, wenn das System ein ausführbares Objekt erkennt, einschließlich eines Hand Netzes.
+Die folgenden Delegaten werden aufgerufen, wenn das System ein nachverfolgbares Objekt erkennt, einschließlich eines Handgittermodells.
 
 ```cpp
 class FARSupportInterface
@@ -101,63 +101,63 @@ class FARSupportInterface
 };
 ```
 
-Stellen Sie sicher, dass die Delegathandler der folgenden Funktions Signatur folgen:
+Stellen Sie sicher, dass Ihre Delegathandler der unten angegebenen Funktionssignatur folgen:
 
 ```cpp
 void UARHandMeshComponent::OnTrackableAdded(UARTrackedGeometry* Added)
 ```
 
-Sie können über die folgenden Schritte auf Mesh-Daten zugreifen  `UARTrackedGeometry::GetUnderlyingMesh` :
+Sie können auf Meshdaten über  `UARTrackedGeometry::GetUnderlyingMesh` zugreifen:
 
 ```cpp
 UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 ```
 
-### <a name="blueprint-api-reference"></a>Referenz zur Blueprint-API
+### <a name="blueprint-api-reference"></a>Referenz zur Blaupausen-API
 
-So arbeiten Sie mit Hand-Meshes in Blaupausen:
-1. Hinzufügen einer **artrackablenotify** -Komponente zu einem Blueprint-Actor
+So arbeiten Sie mit Handgittern in Blaupausen:
+1. Hinzufügen einer **ARTrackableNotify-Komponente** zu einem Blueprint-Akteur
 
-![Meldung zu einem darstellbaren Element](images/unreal/ar-trackable-notify.png)
+![ARTrackable-Benachrichtigung](images/unreal/ar-trackable-notify.png)
 
-2. Wechseln Sie zum **Detail** Panel, und erweitern Sie den Abschnitt **Ereignisse** .
+2. Wechseln Sie zum **Bereich Details,** und erweitern Sie den Abschnitt **Ereignisse.**
 
-![Artrackable Benachrichtigen 2](images/unreal/ar-trackable-notify2.png)
+![ARTrackable Notify 2](images/unreal/ar-trackable-notify2.png)
 
-3. Überschreiben Sie beim Hinzufügen/Aktualisieren/Entfernen der überwachten Geometrie mit den folgenden Knoten im Ereignis Diagramm:
+3. Überschreiben Sie nachverfolgte Geometrie beim Hinzufügen/Aktualisieren/Entfernen mit den folgenden Knoten in Ihrer Event Graph:
 
-![Bei der über sichtbaren Benachrichtigung](images/unreal/on-artrackable-notify.png)
+![Bei ARTrackable-Benachrichtigung](images/unreal/on-artrackable-notify.png)
 
-### <a name="hand-mesh-visualization-in-openxr"></a>Hand Mesh-Visualisierung in openxr
+### <a name="hand-mesh-visualization-in-openxr"></a>Hand Mesh-Visualisierung in OpenXR
 
-Die empfohlene Vorgehensweise zum Visualisieren des Hand Netzes ist, das xrvisualisierung-Plug-in von epic gemeinsam mit dem [Microsoft openxr-Plug](https://github.com/microsoft/Microsoft-OpenXR-Unreal)-in zu verwenden 
+Die empfohlene Möglichkeit zum Visualisieren von Handgittern besteht darin, das XRVisualization-Plug-In von Epic zusammen mit dem [Microsoft OpenXR-Plug-In](https://github.com/microsoft/Microsoft-OpenXR-Unreal)zu verwenden. 
 
-Verwenden Sie dann im Blueprint-Editor die Option **use Hand Mesh** Function aus dem [Microsoft openxr-Plug](https://github.com/microsoft/Microsoft-OpenXR-Unreal) -in mit **aktiviertem xrvisualisierung** als Parameter.
+Verwenden Sie dann im Blaupausen-Editor die Funktion **Set Use Hand Mesh (Handnetz verwenden)** aus dem Microsoft [OpenXR-Plug-In](https://github.com/microsoft/Microsoft-OpenXR-Unreal) mit **aktivierter XRVisualization** als Parameter:
 
-![Blaupause für Ereignis BEGIN Play ist verbunden mit Set use Hand Mesh-Funktion mit aktiviertem xrvisualisierungs Modus](images/unreal-hand-tracking-img-05.png)
+![Blaupause der Ereignisstartwiedergabe verbunden, um die Verwendung der Handnetzfunktion mit aktivierten Xrvisualisierungsmodus festzulegen](images/unreal-hand-tracking-img-05.png)
 
-Um den Renderingprozess zu verwalten, sollten Sie **renderbewegungs-Controller** aus xrvisualisierung verwenden:
+Um den Renderingprozess zu verwalten, sollten Sie **den Render Motion Controller** aus XRVisualization verwenden:
 
-![Blaupause der Get Motion Controller-Daten Funktion, die mit der Funktion "Rendering Motion Controller" verbunden](images/unreal-hand-tracking-img-06.png)
+![Blaupause für die Get Motion Controller-Datenfunktion, die mit der Renderfunktion des Bewegungscontrollers verbunden ist](images/unreal-hand-tracking-img-06.png)
 
 Das Ergebnis:
 
-![Bild der digitalen Hand, die auf einer echten Menschen überladenen Hand ist](images/unreal-hand-tracking-img-07.png) 
+![Bild der digitalen Hand, die auf einer echten menschlichen Hand überlagert ist](images/unreal-hand-tracking-img-07.png) 
 
-Wenn Sie etwas komplizierteres benötigen (z. b. das Zeichnen eines Hand Diagramms mit einem benutzerdefinierten Shader), müssen Sie die Netzen als nach verfolgte Geometrie erhalten. 
+Wenn Sie etwas Komplizierteres benötigen, z. B. das Zeichnen eines Handgitters mit einem benutzerdefinierten Shader, müssen Sie die Gitternetze als nachverfolgte Geometrie abrufen. 
 
 ## <a name="hand-rays"></a>Handlichtstrahl
 
-Das Abrufen von Hand stellen funktioniert für schließen-Interaktionen wie das Durchsuchen von Objekten oder das Drücken von Manchmal müssen Sie jedoch mit holograms arbeiten, die von den Benutzern weit entfernt sind. Dies kann mit Hand Strahlen erreicht werden, die als Zeigegeräte sowohl in C++ als auch in Blaupausen verwendet werden können. Sie können einen Strahl von Hand zu einem Punkt zeichnen und, mit Hilfe von Unreal Ray Tracing, ein – Hologramm auswählen, das andernfalls nicht erreichbar wäre. 
+Das Abrufen der Handpose funktioniert für enge Interaktionen wie das Greifen von Objekten oder das Drücken von Schaltflächen. Manchmal müssen Sie jedoch mit Hologrammen arbeiten, die weit von Ihren Benutzern entfernt sind. Dies kann mit Handlichtlicht erreicht werden, das sowohl in C++ als auch in Blaupausen als zeigende Geräte verwendet werden kann. Sie können einen Strahl von der Hand bis zu einem fernen Punkt zeichnen und mithilfe der Unreal-Ray-Ablaufverfolgung ein Hologramm auswählen, das andernfalls nicht erreichbar wäre. 
 
 > [!IMPORTANT]
-> Da alle Funktions Ergebnisse jeden Frame ändern, werden Sie alle aufgerufen. Weitere Informationen zu reinen und impformen oder Aufruf baren Funktionen finden Sie in der Blueprint-Benutzer-GUID für [Funktionen](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure).
+> Da sich alle Funktionsergebnisse in jedem Frame ändern, werden sie alle aufrufbar gemacht. Weitere Informationen zu reinen und unreinen oder aufrufbaren Funktionen finden Sie unter Blueprint user guid on functions (Blaupausenbenutzer-GUID für [Funktionen).](https://docs.unrealengine.com/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
 
 [!INCLUDE[](includes/tabs-tracking-hand-ray.md)]
 
 ## <a name="gestures"></a>Gesten
 
-Hololens 2 verfolgt räumliche Gesten, was bedeutet, dass Sie diese Gesten als Eingabe erfassen können. Die Gesten Verfolgung basiert auf einem Abonnement Modell. Verwenden Sie die Funktion "Gesten konfigurieren", um dem Gerät mitzuteilen, welche Gesten Sie nachverfolgen möchten.  Weitere Informationen zu Gesten finden Sie im Artikel zur [grundlegenden Verwendung von hololens 2](/hololens/hololens2-basic-usage) .
+Der HoloLens 2 verfolgt räumliche Gesten nach, was bedeutet, dass Sie diese Gesten als Eingabe erfassen können. Die Gestennachverfolgung basiert auf einem Abonnementmodell. Sie sollten die Funktion "Gesten konfigurieren" verwenden, um dem Gerät mitzuteilen, welche Gesten Sie nachverfolgen möchten.  Weitere Informationen zu Gesten finden Sie im [dokument HoloLens 2 Grundlegende Verwendung.](/hololens/hololens2-basic-usage)
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

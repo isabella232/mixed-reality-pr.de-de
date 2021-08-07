@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, InputActions,
-ms.openlocfilehash: cf6ce2af304ee1cd706d0111d66a97018113fb09
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ffa8f201097c8d85b1ea19613b608487529412f3686ddf077f1acc1c34e93c1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211250"
 ---
 # <a name="input-actions"></a>Eingabeaktionen
 
-[**Eingabeaktionen**](input-actions.md) sind Abstraktionen über rohe Eingaben, die dazu beitragen sollen, die Anwendungslogik von den spezifischen Eingabequellen zu isolieren, die eine Eingabe erzeugen. Es kann beispielsweise nützlich sein, eine *Select-Aktion* zu definieren und sie der linken Maustaste, einer Schaltfläche in einem Gamepad und einem Trigger in einem 6-DOF-Controller zu zuordnen. Sie können ihre Anwendungslogik dann auf Select *input* action events (Eingabeaktionsereignisse auswählen) lauschen lassen, anstatt alle verschiedenen Eingaben kennen zu müssen, die sie erzeugen können.
+[**Eingabeaktionen**](input-actions.md) sind Abstraktionen von rohen Eingaben, die dazu beitragen sollen, die Anwendungslogik von den spezifischen Eingabequellen zu isolieren, die eine Eingabe erzeugen. Es kann beispielsweise nützlich sein, eine *Select-Aktion* zu definieren und sie der linken Maustaste, einer Schaltfläche in einem Gamepad und einem Trigger in einem 6-DOF-Controller zu zuordnen. Sie können ihre Anwendungslogik dann  auf Ereignisse der Aktion Eingabe auswählen lauschen lassen, anstatt alle verschiedenen Eingaben kennen zu müssen, die sie erzeugen können.
 
 ## <a name="creating-an-input-action"></a>Erstellen einer Eingabeaktion
 
@@ -29,7 +29,7 @@ Achseneinschränkung | Beschreibung
 Digital | Ein-/Aus-Eingabe wie eine binäre Schaltfläche in einem Gamepad oder einer Maus.
 Einzelne Achse | Einachseneingaben wie ein analoger Trigger in einem Gamepad.
 Duale Achse | Eingabe der Doppelachsen-Achse wie ein Fingerabdruck.
-Sechs Dof | 3D-Posen mit Übersetzung und Drehung wie bei 6 DOF-Controllern.
+Sechs Dof | 3D-Pose mit Übersetzung und Drehung wie die von 6 DOF-Controllern erzeugte.
 
 Die vollständige Liste finden Sie unter [`AxisType`](xref:Microsoft.MixedReality.Toolkit.Utilities.AxisType) .
 
@@ -43,19 +43,19 @@ Wechseln Sie unter **dem Eingabesystemprofil** zum *Controller-Eingabezuordnungs
 
 <img src="../images/input/ControllerInputMappingProfile.PNG" alt="Input maping profile" style="max-width:100%;">
 
-Wählen Sie das Dialogfeld aus, das Sie konfigurieren möchten, und es wird ein Dialogfeld mit allen Controllereingaben angezeigt, sodass Sie eine Aktion für jede von ihnen festlegen können:
+Wählen Sie das Dialogfeld aus, das Sie konfigurieren möchten, und ein Dialogfeld mit allen Controllereingaben wird angezeigt, sodass Sie eine Aktion für jede dieser Controller festlegen können:
 
 <img src="../images/input/InputActionAssignment.PNG" alt="Input Action Assignment" style="max-width:100%;">
 
 ### <a name="speech-input"></a>Spracheingabe
 
-Im **Speech-Befehlsprofil** finden Sie unter dem *Eingabesystemprofil* die Liste der derzeit definierten Sprachbefehle. Um einer Aktion eines davon zu zuordnen, wählen Sie es einfach in der *Dropdownliste Aktion* aus.
+Im **Speech-Befehlsprofil** finden Sie unter *dem Eingabesystemprofil* die Liste der derzeit definierten Sprachbefehle. Um einer Aktion eines davon zu zuordnen, wählen Sie es einfach in der *Dropdownliste Aktion* aus.
 
 <img src="../images/input/SpeechCommandsProfile.png" alt="Speech Commands profile" style="max-width:100%;">
 
 ### <a name="gesture-input"></a>Gesteneingabe
 
-Das **Gestenprofil** unter dem *Eingabesystemprofil* enthält alle definierten Gesten. Sie können jede aktion zuordnen, indem Sie sie in der *Dropdownliste Aktion* auswählen.
+Das **Gestenprofil** unter dem *Eingabesystemprofil* enthält alle definierten Gesten. Sie können sie jeweils einer Aktion zuordnen, indem Sie sie in der *Dropdownliste Aktion* auswählen.
 
 <img src="../images/input/GestureProfile.png" alt="Gesture profile" style="max-width:100%;">
 

@@ -1,27 +1,27 @@
 ---
 title: Dokumentationsrichtlinien
-description: Dokumentationsrichtlinien und Standards für das MRTK.
+description: Dokumentationsrichtlinien und -standards für das MRTK.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: aa583876d4ca9e115d4ea4507638eebab838207230693cb7c24b781d8f0b020b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175352"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210720"
 ---
 # <a name="documentation-guidelines"></a>Dokumentationsrichtlinien
 
 <img src="../features/images/MRTK_Logo_Rev.png" alt="MRTK">
 
-In diesem Dokument werden die Dokumentationsrichtlinien und Standards für das Mixed Reality Toolkit (MRTK) beschrieben. Dies bietet eine Einführung in technische Aspekte des Schreibens und Generierens von Dokumentationen, um häufige Fallstricke hervorzuheben und den empfohlenen Schreibstil zu beschreiben.
+In diesem Dokument werden die Dokumentationsrichtlinien und -standards für das Mixed Reality Toolkit (MRTK) beschrieben. Dies bietet eine Einführung in technische Aspekte des Schreibens und Erstellens von Dokumentation, um häufige Fallstricke hervorzuheben und den empfohlenen Schreibstil zu beschreiben.
 
-Die Seite selbst soll als Beispiel dienen und verwendet daher den beabsichtigten Stil und die gängigsten Markupfeatures der Dokumentation.
+Die Seite selbst sollte als Beispiel dienen, daher verwendet sie den beabsichtigten Stil und die gängigsten Markupfeatures der Dokumentation.
 
 - [Quelle](#source-documentation)
-- [Vorgehensweise](#how-to-documentation)
+- [How-to](#how-to-documentation)
 - [Design](#design-documentation)
 - [Leistungshinweise](#performance-notes)
 - [Wichtige Änderungen](#breaking-changes)
@@ -30,21 +30,21 @@ Die Seite selbst soll als Beispiel dienen und verwendet daher den beabsichtigten
 
 ## <a name="functionality-and-markup"></a>Funktionalität und Markup
 
-In diesem Abschnitt werden häufig benötigte Features beschrieben. Um zu sehen, wie sie funktionieren, sehen Sie sich den Quellcode der Seite an.
+In diesem Abschnitt werden häufig benötigte Features beschrieben. Sehen Sie sich den Quellcode der Seite an, um zu sehen, wie sie funktionieren.
 
 1. Nummerierte Listen
-   1. Geschachtelte nummerierte Listen mit mindestens 3 führenden Leerzeichen
-   1. Die tatsächliche Zahl im Code ist irrelevant. Bei der Analyse wird die richtige Elementnummer festgelegt.
+   1. Geschachtelte nummerierte Listen mit mindestens drei führenden Leerzeichen
+   1. Die tatsächliche Zahl im Code ist irrelevant. Die Analyse sorgt für das Festlegen der richtigen Elementnummer.
 
-- Aufzählungszeichenlisten
-  - Geschachtelte Aufzählungspunktlisten
-- Fett **formatiertes** Text mit \* \* doppeltem Sternchen\*\*
-- _Text_ *mit* \_ Unterstrich \_ oder \* einzelnem Sternchen\*
-- Text `highlighted as code` innerhalb eines Satzes mit \` Rückquotes\`
-- Links zu dokumentationsseitigen [MRTK-Dokumentationsrichtlinien](documentation-guide.md)
-- Links zu [Ankern innerhalb einer Seite](#style); Anker werden gebildet, indem Leerzeichen durch Bindestriche ersetzt und in Kleinbuchstaben konvertiert werden.
+- Aufzählungen
+  - Geschachtelte Aufzählungen
+- Fett **formatierten** Text \* \* mit doppeltem Sternchen\*\*
+- _Italischer Text_ *mit* \_ Unterstrich oder \_ \* einzelnem Sternchen\*
+- Text `highlighted as code` innerhalb eines Satzes \` mitHilfe von Backquotes\`
+- Links zu Dokumentationsseiten [MRTK-Dokumentationsrichtlinien](documentation-guide.md)
+- Links zu [Ankern innerhalb einer Seite;](#style) Anker werden gebildet, indem Leerzeichen durch Bindestriche ersetzt und in Kleinbuchstaben konvertiert werden.
 
-Für Codebeispiele verwenden wir die Blöcke mit drei Backticks \` \` \` und geben *csharp* als Sprache für die Syntaxhervorhebung an:
+Für Codebeispiele verwenden wir die Blöcke mit drei Backticks und geben \` \` \` *csharp* als Sprache für die Syntaxhervorhebung an:
 
 ```c#
 int SampleFunction(int i)
@@ -53,22 +53,22 @@ int SampleFunction(int i)
 }
 ```
 
-Wenn Code innerhalb eines Satzes erwähnt `use a single backtick` wird.
+Wenn Code in einem Satz erwähnt `use a single backtick` wird.
 
 ### <a name="todos"></a>Todos
 
-Vermeiden Sie die Verwendung von TODOs in der Dokumentation, da diese TODOs (z. B. Code-TODOs) im Laufe der Zeit in der Regel ansammeln und Informationen darüber sammeln, wie sie aktualisiert werden sollten und warum verloren gehen.
+Vermeiden Sie die Verwendung von TODOs in Dokumentationen, da diese TODOs (z. B. Code-TODOs) im Laufe der Zeit dazu tendieren, sich anzusammeln und Informationen darüber zu erhalten, wie sie aktualisiert werden sollten und warum verloren geht.
 
-Wenn es unbedingt erforderlich ist, einen Todo hinzuzufügen, führen Sie die folgenden Schritte aus:
+Wenn das Hinzufügen eines ToDO unbedingt erforderlich ist, führen Sie die folgenden Schritte aus:
 
-1. Erstellen Sie ein neues Problem auf GitHub, in dem der Kontext hinter dem TODO beschrieben wird, und stellen Sie genügend Hintergrund bereit, den ein anderer Mitwirkender verstehen und dann die TODO-Datei beheben kann.
-2. Verweisen Sie in der Dokumentation im Todo auf die Problem-URL.
+1. Erstellen Sie auf Github ein neues Problem, in dem der Kontext hinter dem TODO beschrieben wird, und stellen Sie genügend Hintergrundinformationen zur Verfügung, die ein anderer Mitwirkender verstehen und dann das TODO beheben kann.
+2. Verweisen Sie in der Dokumentation auf die Problem-URL in der Todo-Datei.
 
 \<\!-- TODO[https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/ISSUE_NUMBER_HERE): A brief blurb on the issue --\>
 
 ### <a name="highlighted-sections"></a>Hervorgehobene Abschnitte
 
-Um bestimmte Punkte für den Reader hervorzuheben, verwenden Sie *> [!NOTE]* , und , um die folgenden *> [!WARNING]* *> [!IMPORTANT]* Stile zu erzeugen. Es wird empfohlen, Hinweise für allgemeine Punkte und Warnungen/wichtige Punkte nur für spezielle relevante Fälle zu verwenden.
+Um bestimmte Punkte für den Reader hervorzuheben, verwenden Sie *> [!NOTE]* , und , um die folgenden *> [!WARNING]* *> [!IMPORTANT]* Stile zu erzeugen. Es wird empfohlen, Hinweise für allgemeine Punkte und Warnungs-/wichtige Punkte nur für spezielle relevante Fälle zu verwenden.
 
 > [!NOTE]
 > Beispiel für eine Notiz
@@ -83,60 +83,60 @@ Um bestimmte Punkte für den Reader hervorzuheben, verwenden Sie *> [!NOTE]* , u
 
 ### <a name="introduction"></a>Einführung
 
-Der Teil direkt nach dem Titel des Hauptkapitels sollte als kurze Einführung dienen, worum es im Kapitel geht. Machen Sie dies nicht zu lang, sondern fügen Sie untergeordnete Überschriften hinzu. Diese ermöglichen das Verknüpfen mit Abschnitten und können als Lesezeichen gespeichert werden.
+Der Teil direkt nach dem Haupttitel des Kapitels sollte als kurze Einführung in das Kapitel dienen. Lassen Sie dies nicht zu lang, sondern fügen Sie untergeordnete Überschriften hinzu. Diese ermöglichen das Verknüpfen mit Abschnitten und können als Lesezeichen gespeichert werden.
 
-### <a name="main-body"></a>Haupttext
+### <a name="main-body"></a>Hauptteil
 
-Verwenden Sie Überschriften mit zwei ebenen und drei Ebenen, um den Rest zu strukturiert.
+Verwenden Sie Zwei- und Dreiebenen-Überschriften, um den Rest zu strukturieren.
 
 **Miniabschnitte**
 
-Verwenden Sie eine fett formatierte Textzeile für Blöcke, die hervorgehoben werden sollten. Wir könnten dies zu einem bestimmten Zeitpunkt durch Vier-Ebenen-Überschriften ersetzen.
+Verwenden Sie eine fett formatierten Textzeile für Blöcke, die hervorgehoben werden sollten. Wir könnten dies zu einem bestimmten Zeitpunkt durch Vier-Level-Überschriften ersetzen.
 
 ### <a name="see-also-section"></a>Abschnitt "Siehe auch"
 
-Die meisten Seiten sollten mit einem Kapitel namens *Enden. Siehe auch*. Dieses Kapitel ist einfach eine Aufzählung von Links zu Seiten, die sich auf dieses Thema beziehen. Diese Links können ggf. auch innerhalb des Seitentexts angezeigt werden, dies ist jedoch nicht erforderlich. Ebenso kann der Seitentext Links zu Seiten enthalten, die nicht mit dem Hauptthema verknüpft sind. Diese sollten nicht in der Liste *Siehe auch* enthalten sein. Ein Beispiel für die Auswahl von Links finden Sie im [Kapitel "Siehe auch".](#see-also)
+Die meisten Seiten sollten mit einem Kapitel namens *Siehe auch enden.* Dieses Kapitel ist einfach eine Aufzählung von Links zu Seiten, die sich auf dieses Thema bezieht. Diese Links werden möglicherweise auch im Seitentext angezeigt, dies ist jedoch nicht erforderlich. Ebenso kann der Seitentext Links zu Seiten enthalten, die nicht mit dem Hauptthema verknüpft sind. Diese sollten nicht in der Liste *Siehe auch enthalten* sein. Im [Kapitel "Siehe auch"](#see-also) dieser Seite finden Sie ein Beispiel für die Auswahl von Links.
 
-## <a name="table-of-contents-toc"></a>Inhaltsverzeichnis (Toc)
+## <a name="table-of-contents-toc"></a>Inhaltsverzeichnis (Inhaltsverzeichnis)
 
-Toc-Dateien werden zum Generieren der Navigationsleisten in der MRTK-github.io-Dokumentation verwendet.
-Wenn eine neue Dokumentationsdatei hinzugefügt wird, stellen Sie sicher, dass in einer der toc.yml-Dateien des Dokumentationsordners ein Eintrag für diese Datei vorhanden ist. Nur in den Toc-Dateien aufgeführte Artikel werden im Navigationsbereich der Entwicklerdokumentation angezeigt. Es kann eine Toc-Datei für jeden Unterordner im Dokumentationsordner geben, die mit jeder vorhandenen Toc-Datei verknüpft werden kann, um sie dem entsprechenden Teil der Navigation als Unterabschnitt hinzuzufügen.
+Toc-Dateien werden zum Generieren der Navigationsleisten in der MRTK-Dokumentation github.io verwendet.
+Wenn eine neue Dokumentationsdatei hinzugefügt wird, stellen Sie sicher, dass in einer der dateien toc.yml des Dokumentationsordners ein Eintrag für diese Datei enthalten ist. Nur Artikel, die in den Toc-Dateien aufgeführt sind, werden in der Navigation der Entwickler-Dokumentation angezeigt. Es kann eine Toc-Datei für jeden Unterordner im Dokumentationsordner vorhanden sein, die mit einer vorhandenen Toc-Datei verknüpft werden kann, um sie als Unterabschnitt zum entsprechenden Teil der Navigation hinzuzufügen.
 
 ## <a name="style"></a>Style
 
 ### <a name="writing-style"></a>Schreibstil
 
-Allgemeine Faustregel: Versuchen Sie, professional zu **klingen.** Dies bedeutet in der Regel, dass ein "Konversationston" vermieden wird. Versuchen Sie auch, Hyperbole und Hassalismus zu vermeiden.
+Allgemeine Faustregel: Versuchen Sie, professionelle **zu klingt.** Dies bedeutet in der Regel, einen "Konversationston" zu vermeiden. Versuchen Sie auch, Hyperbole und Zierlichkeiten zu vermeiden.
 
-1. Versuchen Sie nicht, (übermäßig) heiter zu sein.
-2. Nie "I" schreiben
-3. Vermeiden Sie "we". Dies kann in der Regel einfach mithilfe von "MRTK" umformuliert werden. Beispiel: "Wir unterstützen dieses Feature" -> "MRTK unterstützt dieses Feature" oder "Die folgenden Features werden unterstützt...".
-4. Versuchen Sie auf ähnliche Weise, "Sie" zu vermeiden. Beispiel: "Mit dieser einfachen Änderung kann der Shader konfiguriert werden!" -> "Shader können mit geringem Aufwand konfigurierbar gemacht werden."
-5. Verwenden Sie keine Diskettenausdrücke.
-6. Vermeiden Sie es, übermäßig aufgeregt zu klingen, da wir nichts verkaufen müssen.
-7. Vermeiden Sie auf ähnliche Weise, zu drastisch zu sein. Ausrufezeichen werden selten benötigt.
+1. Versuchen Sie nicht, (zu viel) zu sein.
+2. Schreiben Sie nie "I".
+3. Vermeiden Sie "we". Dies kann in der Regel einfach mithilfe von "MRTK" umformuliert werden. Beispiel: "Wir unterstützen dieses Feature" -> "MRTK unterstützt dieses Feature" oder "die folgenden Features werden unterstützt...".
+4. Versuchen Sie auf ähnliche Weise, "Sie" zu vermeiden. Beispiel: "Mit dieser einfachen Änderung wird Ihr Shader konfigurierbar!" -> "Shader können mit wenig Aufwand konfigurierbar gemacht werden."
+5. Verwenden Sie keine "schrägen Ausdrücke".
+6. Vermeiden Sie es, zu aufgeregt zu klingen, da wir nichts verkaufen müssen.
+7. Vermeiden Sie ebenso, zu drastisch zu sein. Ausrufezeichen werden selten benötigt.
 
 ### <a name="capitalization"></a>Großbuchstaben
 
-- Verwenden Sie **den Satzfall für Überschriften.** Ie. Großschreibung des ersten Buchstabens und der Namen, aber nichts anderes.
-- Verwenden Sie reguläres Englisch für alles andere. Dies **bedeutet, dass keine beliebigen Wörter großgeschrieben werden,** auch wenn sie in diesem Kontext eine besondere Bedeutung haben. Bevorzugen Sie *italischen Text* zum Hervorheben bestimmter Wörter, [siehe unten](#emphasis-and-highlighting).
-- Wenn ein Link in einen Satz eingebettet ist (dies ist die bevorzugte Methode), verwendet der Standardkapitelname immer Großbuchstaben, wodurch die Regel der nicht willkürlichen Großschreibung innerhalb des Texts bricht. Verwenden Sie daher einen benutzerdefinierten Linknamen, um die Groß-/Großschreibung zu korrigieren. Hier sehen Sie beispielsweise einen Link zur Dokumentation zum [Begrenzungssteuerelement.](../features/ux-building-blocks/bounds-control.md)
-- Großschreibung von Namen, z. B. *Unity.*
-- Großschreibung von "Editor" beim Schreiben des *Unity-Editors NICHT.*
+- Verwenden **Sie satzfall für Überschriften.** Ie. Großbuchstaben und Namen, aber nichts anderes.
+- Verwenden Sie für alles andere reguläres Englisch. Das **bedeutet, dass sie keine beliebigen Wörter groß** machen, auch wenn sie in diesem Kontext eine besondere Bedeutung haben. Bevorzugen *Sie italischen Text zum* Hervorheben bestimmter Wörter, siehe [unten.](#emphasis-and-highlighting)
+- Wenn ein Link in einen Satz eingebettet ist (dies ist die bevorzugte Methode), verwendet der Standardname des Kapitels immer Großbuchstaben, wodurch die Regel der nicht willkürlichen Groß-/Kleinbuchstaben im Text verletzt wird. Verwenden Sie daher einen benutzerdefinierten Linknamen, um die Groß-/A-Groß-/Groß-/A-Setzung zu korrigieren. Hier finden Sie beispielsweise einen Link zur Dokumentation [zur Begrenzungssteuerung.](../features/ux-building-blocks/bounds-control.md)
+- Groß-/Groß-/Großnamen, z. *B. Unity.*
+- Großschreiben Sie "Editor" NICHT, wenn Sie *den Unity-Editor schreiben.*
 
-### <a name="emphasis-and-highlighting"></a>Hervorhebung
+### <a name="emphasis-and-highlighting"></a>Hervorhebung und Hervorhebung
 
-Es gibt zwei Möglichkeiten, Wörter hervorzuheben oder hervorzuheben, indem Sie sie fett oder kursiv gestalten. Der Effekt von fett formatiertem Text besteht darin, dass **fetter Text ausfällt** und daher leicht bemerkt werden kann, wenn ein Textteil übersprungen oder sogar nur über eine Seite gescrollt wird. Fett ist hervorragend, um Ausdrücke hervorzuheben, die sich Menschen merken sollten. Verwenden Sie jedoch **nur selten fetten Text,** da er im Allgemeinen ablenkend ist.
+Es gibt zwei Möglichkeiten, Wörter hervorzuheben oder hervorzuheben, um sie fett zu formatieren oder sie italisch zu machen. Der Effekt von fett  formatiertem Text ist, dass fetter Text nicht angezeigt wird und daher leicht bemerkt werden kann, wenn ein Textteil übersprungen oder sogar einfach über eine Seite gescrollt wird. Fett ist sehr gut, um Ausdrücke hervorzuheben, die sich die Menschen merken sollten. Verwenden Sie **fett formatierten Text jedoch selten,** da dies im Allgemeinen abgelenkt ist.
 
-Häufig möchte man entweder etwas gruppieren, das logisch zusammen gehört, oder einen bestimmten Begriff hervorheben, da er eine besondere Bedeutung hat. Solche Dinge müssen sich nicht aus dem Gesamttext herausstellen. Verwenden Sie italischen Text als *einfache Methode,* um etwas hervorzuheben.
+Häufig möchte man etwas , das logisch zusammengehörig ist, "gruppiert" oder einen bestimmten Begriff hervorheben, da er eine besondere Bedeutung hat. Solche Dinge müssen sich nicht vom gesamten Text abhingen. Verwenden Sie italischen Text als einfache *Methode, um* etwas hervorzuheben.
 
-Wenn ein Dateiname, ein Pfad oder ein Menüeintrag im Text erwähnt wird, bevorzugen Sie es, italisch zu machen, um ihn logisch zu gruppieren, ohne ablenkend zu sein.
+Wenn ein Dateiname, ein Pfad oder ein Menüeintrag im Text erwähnt wird, bevorzugen Sie es, es kursalisch zu machen, um ihn logisch zu gruppieren, ohne ablenkend zu sein.
 
-Versuchen Sie im Allgemeinen, **unnötige Texthervorhebungen** zu vermeiden. Sonderbegriffe können einmal hervorgehoben werden, um den Leser darauf aufmerksam zu machen. Wiederholen Sie diese Hervorhebung nicht im gesamten Text, wenn sie keinen Zweck mehr erfüllt und nur ablenkt.
+Versuchen Sie im Allgemeinen, unnötige **Texthervorhebungen zu vermeiden.** Spezielle Begriffe können einmal hervorgehoben werden, um den Leser darauf aufmerksam zu machen. Wiederholen Sie diese Hervorhebung nicht im gesamten Text, wenn sie keinen Zweck mehr erfüllt und nur abgelenkt ist.
 
 ### <a name="mentioning-menu-entries"></a>Erwähnen von Menüeinträgen
 
-Wenn sie einen Menüeintrag erwähnt, auf den ein Benutzer klicken soll, lautet die aktuelle Konvention: *Project > Files > Create > Leaf*
+Wenn ein Benutzer auf einen Menüeintrag klickt, gilt die aktuelle *Konvention:* Project > Files > Create > Leaf
 
 ### <a name="links"></a>Links
 
@@ -153,7 +153,7 @@ Wenn Sie einen Link hinzufügen, überlegen Sie, ob er auch im Abschnitt [Siehe 
 
 ### <a name="images--screenshots"></a>Bilder/Screenshots
 
-**Verwenden Sie Screenshots mit Sparende.** Das Verwalten von Bildern in der Dokumentation ist eine menge Arbeit, kleine Änderungen an der Benutzeroberfläche können viele Screenshots veraltet machen. Die folgenden Regeln verringern den Wartungsaufwand:
+**Verwenden Sie Screenshots mit Sparendem.** Das Verwalten von Bildern in der Dokumentation ist eine menge Arbeit, kleine Änderungen an der Benutzeroberfläche können viele Screenshots veraltet machen. Die folgenden Regeln verringern den Wartungsaufwand:
 
 1. Verwenden Sie keine Screenshots für Dinge, die im Text beschrieben werden können. Insbesondere sollten **Sie niemals einen Screenshot eines Eigenschaftenrasters** erstellen, um nur Eigenschaftsnamen und -werte zu zeigen.
 2. Schließen Sie keine Dinge in einen Screenshot ein, die für das Angezeigte irrelevant sind. Wenn z. B. ein Renderingeffekt angezeigt wird, erstellen Sie einen Screenshot des Viewports, aber schließen Sie alle benutzeroberflächen um ihn herum aus. Wenn Sie einige Benutzeroberflächen anzeigen, versuchen Sie, Fenster so zu verschieben, dass nur dieser wichtige Teil im Bild zu finden ist.
@@ -180,7 +180,7 @@ Vergessen Sie auch nicht, alle Sätze mit einem Zeitraum zu beenden.
 1. Stellen Sie sicher, dass die Richtlinien dieses Dokuments eingehalten wurden.
 1. Durchsuchen Sie die Dokumentstruktur, und sehen Sie sich an, ob das neue Dokument im Abschnitt [Siehe auch](#see-also) auf anderen Seiten erwähnt werden könnte.
 1. Falls verfügbar, sollten Sie eine Person mit Kenntnissen des Themas "Proof-Read" auf der Seite auf technische Richtigkeit prüfen lassen.
-1. Sie müssen die Seite für Stil und Formatierung lesen. Dies kann jemand sein, der mit dem Thema nicht vertraut ist. Dies ist auch eine gute Idee, um Feedback darüber zu erhalten, wie verständlich die Dokumentation ist.
+1. Sie müssen die Seite für Stil und Formatierung lesen. Dies kann jemand sein, der mit dem Thema nicht vertraut ist. Dies ist auch eine gute Idee, feedback zu erhalten, wie verständlich die Dokumentation ist.
 
 ## <a name="source-documentation"></a>Quelldokumentation
 
@@ -219,7 +219,7 @@ Pull Requests, die ohne Zusammenfassungen für Klassen, Strukturen oder Aufzähl
 
 Eigenschaften, Methoden und Ereignisse (PMEs) sowie Felder müssen mit Zusammenfassungsblöcken dokumentiert werden, unabhängig von der Codesichtbarkeit (öffentlich, privat, geschützt und intern). Das Tool zur Dokumentationsgenerierung ist für das Herausfiltern und Veröffentlichen nur der öffentlichen und geschützten Features verantwortlich.
 
-HINWEIS: Ein Zusammenfassungsblock ist **für** Unity-Methoden nicht erforderlich (z.B. "Weck", "Starten", "Aktualisieren").
+HINWEIS: Ein Zusammenfassungsblock ist **für** Unity-Methoden nicht erforderlich (z. B. "Weck", "Start", "Aktualisieren").
 
 Die PME-Dokumentation **ist erforderlich,** damit ein Pull Request genehmigt wird.
 
@@ -279,15 +279,15 @@ Beim Definieren von und Enumeration muss der Code auch die Bedeutung der Enumera
 
 Viele Benutzer des Mixed Reality Toolkits müssen die API-Dokumentation möglicherweise nicht verwenden. Diese Benutzer nutzen unsere vorgefertigten, wiederverwendbaren Prefabs und Skripts, um ihre Erfahrungen zu erstellen.
 
-Jeder Funktionsbereich enthält eine oder mehrere Markdowndateien (MD), die auf relativ hoher Ebene beschreiben, was bereitgestellt wird. Je nach Größe und/oder Komplexität eines bestimmten Funktionsbereichs müssen möglicherweise zusätzliche Dateien benötigt werden, bis zu einer pro bereitgestellten Funktion.
+Jeder Funktionsbereich enthält eine oder mehrere Markdowndateien (MD), die auf relativ hoher Ebene beschreiben, was bereitgestellt wird. Je nach Größe und/oder Komplexität eines bestimmten Funktionsbereichs kann es notwendig sein, zusätzliche Dateien bis zu einer pro bereitgestellten Funktion zu benötigen.
 
 Wenn ein Feature hinzugefügt wird (oder die Nutzung geändert wird), muss eine Übersichtsdokumentation bereitgestellt werden.
 
-Im Rahmen dieser Dokumentation sollten Abschnitte mit Informationen, einschließlich Abbildungen, bereitgestellt werden, um Kunden bei den ersten Schritte mit einem Feature oder Konzept zu unterstützen.
+Im Rahmen dieser Dokumentation sollten Abschnitte mit Einer-Hilfe,einschließlich Abbildungen, bereitgestellt werden, um Kunden bei den ersten Schritte mit einem Feature oder Konzept zu unterstützen.
 
 ## <a name="design-documentation"></a>Entwurfsdokumentation
 
-Mixed Reality bietet die Möglichkeit, völlig neue Welten zu erstellen. Ein Teil davon ist wahrscheinlich die Erstellung benutzerdefinierter Ressourcen für die Verwendung mit dem MRTK. Um dies für Kunden so reibungslos wie möglich zu gestalten, sollten Komponenten eine Entwurfsdokumentation bereitstellen, in der alle Formatierungs- oder anderen Anforderungen an Artefakte beschrieben werden.
+Mixed Reality bietet die Möglichkeit, völlig neue Welten zu erstellen. Ein Teil davon ist wahrscheinlich die Erstellung benutzerdefinierter Ressourcen für die Verwendung mit dem MRTK. Um dies für Kunden so reibungslos wie möglich zu gestalten, sollten Komponenten eine Entwurfsdokumentation bereitstellen, in der formatierungs- oder andere Anforderungen an Diesartwerte beschrieben werden.
 
 Einige Beispiele, in denen die Entwurfsdokumentation hilfreich sein kann:
 

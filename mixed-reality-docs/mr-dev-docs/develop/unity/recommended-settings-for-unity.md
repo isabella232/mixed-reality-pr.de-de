@@ -1,44 +1,44 @@
 ---
 title: Empfohlene Einstellungen für Unity
-description: Erfahren Sie mehr über die Leistung und das Veröffentlichungsverhalten von Unity für Mixed Reality-Apps, die über Projekteinstellungen umgeschaltet werden können.
+description: Erfahren Sie mehr über die Leistung und das Veröffentlichungsverhalten von Unity, die für Mixed Reality-Apps spezifisch sind, die über Projekteinstellungen umschaltet werden können.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity, Einstellungen, Mixed Reality, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Leistung, Qualitätseinstellungen, Beleuchtungseinstellungen, Tiefenpuffer, xr, Nachverfolgungsverlust
-ms.openlocfilehash: 7516ec89c49a12e7cb143d7e53d00efde0e44c4e
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 736ec4c1cc967eaae1ff53728d6e912c4f03a1f17ef75450c93e58b1a1f0064d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211838"
 ---
 # <a name="recommended-settings-for-unity"></a>Empfohlene Einstellungen für Unity
 
-Unity bietet eine Reihe von Standardoptionen, die im Allgemeinen der durchschnittliche Fall für alle Plattformen sind. Unity bietet jedoch einige für Mixed Reality spezifische Verhaltensweisen, die über Projekteinstellungen umgeschaltet werden können.
+Unity bietet eine Reihe von Standardoptionen, die im Allgemeinen die durchschnittliche Case für alle Plattformen sind. Unity bietet jedoch einige Mixed Reality-spezifische Verhaltensweisen, die über Projekteinstellungen umschaltet werden können.
 
-## <a name="performant-environment-set-up"></a>Einrichten einer performanten Umgebung
+## <a name="performant-environment-set-up"></a>Performante Umgebungsset up
 
 ### <a name="low-quality-settings"></a>Einstellungen mit niedriger Qualität
 
-Es ist wichtig, die **Unity-Qualitätseinstellungen** in **Sehr niedrig** zu ändern, damit Ihre Anwendung ausgeführt wird und mit der entsprechenden Framerate gut funktioniert, insbesondere für die HoloLens-Entwicklung. Für die Entwicklung von immersiven Headsets kann je nach den Spezifikationen des Desktops, der die VR-Umgebung anstreichen, immer noch eine Framerate ohne die Parameter der niedrigsten Qualität erzielt werden.
+Es ist wichtig, die **Unity Quality-Einstellungen** in **Sehr** niedrig zu ändern, damit Ihre Anwendung ausgeführt wird und mit der richtigen Framerate gut funktioniert, insbesondere für HoloLens Entwicklung. Für die Entwicklung mit immersiven Headsets kann abhängig von den Spezifikationen des Desktops, der die VR-Umgebung unterstützt, weiterhin Framerate ohne die Parameter der niedrigsten Qualität erreicht werden.
 
-In Unity 2019 LTS+ können Sie die Qualitätsstufe des Projekts festlegen, indem **Sie** zu  >  **Projekteinstellungsqualität** bearbeiten  >   und **standard** festlegen, indem Sie auf den Pfeil nach unten auf die Ebene **Sehr niedrige Qualität" klicken.
+In Unity 2019 LTS+ können Sie die Qualitätsstufe des Projekts festlegen, indem Sie zu Project Einstellungen Quality bearbeiten und den Standardwert festlegen, indem Sie auf den Pfeil nach unten auf die Stufe **Sehr niedrige Qualität  >    >   klicken. 
 
 ### <a name="lighting-settings"></a>Beleuchtungseinstellungen
 
-Ähnlich wie bei Quality-Szeneneinstellungen ist es wichtig, optimale Beleuchtungseinstellungen für Ihre Mixed Reality-Anwendung festzulegen. In Unity ist die Beleuchtungseinstellung, die in der Regel die größten Auswirkungen auf die Leistung Ihrer Szene hat, **Realtime Global Lighting**. Sie können die globale Beleuchtung deaktivieren, indem Sie zu  >  **Fensterrendering-Beleuchtungseinstellungen**  >    >  **In Echtzeit globaler Beleuchtung gehen.**
+Ähnlich wie bei den Einstellungen der Qualitätsszene ist es wichtig, optimale Beleuchtungseinstellungen für Ihre Mixed Reality festlegen. In Unity ist die Einstellung Beleuchtung, die in der Regel die größte Auswirkung auf die Leistung Ihrer Szene hat, **Realtime Global Unity.** Sie können die globale Beleuchtung deaktivieren, indem Sie zu **Window**  >  **Rendering**  >  **Lighting Einstellungen**  >  **Realtime Global Render (Globale Echtzeit-Beleuchtung) gehen.**
 
-Es gibt eine weitere Beleuchtungseinstellung, **Baked Global Lighting**. Diese Einstellung kann leistungs- und visuell ansprechende Ergebnisse auf immersiven Headsets liefern, ist aber nicht für die HoloLens-Entwicklung anwendbar. **Baked GlobalOas** wird nur für statische GameObjects berechnet, die in HoloLens-Szenen aufgrund der Natur einer unbekannten und sich ändernden Umgebung nicht gefunden werden.
+Es gibt eine weitere Beleuchtungseinstellung, **Baked Global International**. Diese Einstellung kann für immersive Headsets performante und visuell ansprechende Ergebnisse liefern, ist aber nicht für die entwicklung HoloLens anwendbar. **Globale Baked-Objekte** werden nur für statische GameObjects berechnet, die aufgrund der Art einer unbekannten und sich ändernden Umgebung nicht in HoloLens Szenen gefunden werden.
 
-Weitere Informationen finden Sie [unter Global Auslese aus Unity.](https://docs.unity3d.com/Manual/GIIntro.html) 
+Weitere [Informationen finden Sie unter Global Unity.](https://docs.unity3d.com/Manual/GIIntro.html) 
 
 >[!NOTE]
-> **Realtime Global Scene** wird pro Szene festgelegt, und daher müssen Entwickler diese Eigenschaft für jede **Unity-Szene** in ihrem Projekt speichern.
+> **"Realtime Global Unity"** wird pro Szene festgelegt, daher müssen Entwickler diese Eigenschaft für jede **Unity-Szene** in ihrem Projekt speichern.
 
-### <a name="single-pass-instancing-rendering-path"></a>Renderingpfad für Einzeldurchlaufinstanzierung
+### <a name="single-pass-instancing-rendering-path"></a>Renderingpfad für single pass instancing
 
-In Mixed Reality Anwendungen wird die Szene zweimal gerendert, einmal für jedes Auge des Benutzers. Im Vergleich zur herkömmlichen 3D-Entwicklung verdoppelt sich dadurch effektiv der Arbeitsaufwand, der berechnet werden muss. Es ist wichtig, den effizientesten Renderingpfad in Unity auszuwählen, um cpu- und GPU-Zeit zu sparen. Single-Pass-Instanzrendering optimiert die Unity-Renderingpipeline für Mixed Reality-Apps, und es wird empfohlen, diese Einstellung standardmäßig für jedes Projekt zu aktivieren.
+In Mixed Reality Anwendungen wird die Szene zweimal gerendert, einmal für jedes Auge für den Benutzer. Im Vergleich zur herkömmlichen 3D-Entwicklung verdoppelt dies effektiv die Menge an Arbeit, die berechnet werden muss. Es ist wichtig, den effizientesten Renderingpfad in Unity auszuwählen, um sowohl CPU- als auch GPU-Zeit zu sparen. Single Pass Instanced Rendering optimiert die Unity-Renderingpipeline für Mixed Reality-Apps, und es wird empfohlen, diese Einstellung standardmäßig für jedes Projekt zu aktivieren.
 
 Aktivieren dieser Funktion in Ihrem Unity-Projekt
 
@@ -57,113 +57,113 @@ Weitere Informationen zu diesem Renderingansatz finden Sie in den folgenden Arti
 
 ### <a name="enable-depth-buffer-sharing"></a>Aktivieren der Tiefenpufferfreigabe
 
-Um eine bessere Hologrammstabilität aus der Wahrnehmung des Benutzers zu erzielen, wird empfohlen, die **Eigenschaft Tiefenpufferfreigabe** in Unity zu aktivieren. Wenn Sie dies aktivieren, teilt Unity die von Ihrer Anwendung erzeugte Tiefenzuordnung mit der Windows Mixed Reality-Plattform. Die Plattform kann dann die Hologrammstabilität speziell für Ihre Szene für jeden frame verbessern, der von Ihrer Anwendung gerendert wird.
+Um eine bessere Hologrammstabilität aus der Wahrnehmung des Benutzers zu erzielen, wird empfohlen, die **Eigenschaft Tiefenpufferfreigabe** in Unity zu aktivieren. Wenn Sie dies aktivieren, teilt Unity die von Ihrer Anwendung erzeugte Tiefenzuordnung mit der Windows Mixed Reality Plattform. Die Plattform kann dann die Hologrammstabilität speziell für Ihre Szene für jeden frame optimieren, der von Ihrer Anwendung gerendert wird.
 
 Aktivieren dieser Funktion in Ihrem Unity-Projekt
 
 1) Öffnen Sie die **Player XR Settings** (Player XR-Einstellungen) (navigieren Sie zu **Edit** > **Project Settings** > **Player** > **XR Settings** („Bearbeiten > Projekteinstellungen > Player > XR-Einstellungen))
-2) Aktivieren Sie das Kontrollkästchen **Tiefenpufferfreigabe aktivieren** unter **Virtual Reality SDKs**  >  **Windows Mixed Reality** Erweiterung ( Das Kontrollkästchen **Virtual Reality unterstützt** muss aktiviert sein).
+2) Aktivieren Sie das Kontrollkästchen **Tiefenpufferfreigabe aktivieren** unter Virtual **Reality SDKs**  >  **Windows Mixed Reality** Erweiterung **(Kontrollkästchen Virtual Reality** unterstützt muss aktiviert sein).
 
-Darüber hinaus wird empfohlen, in diesem Bereich unter der Einstellung **Tiefenformat** die **16-Bit-Tiefe** auszuwählen, insbesondere für die HoloLens-Entwicklung. Die Auswahl von 16-Bit im Vergleich zu 24-Bit reduziert die Bandbreitenanforderungen erheblich, da weniger Daten verschoben/verarbeitet werden müssen.
+Darüber hinaus wird empfohlen, in diesem Bereich unter  der Einstellung Tiefenformat **die Option 16-Bit-Tiefe** auszuwählen, insbesondere für HoloLens Entwicklung. Die Auswahl von 16-Bit im Vergleich zu 24-Bit verringert die Bandbreitenanforderungen erheblich, da weniger Daten verschoben/verarbeitet werden müssen.
 
-Damit die Windows Mixed Reality Plattform die Hologrammstabilität optimieren kann, muss der Tiefenpuffer genau sein und mit allen gerenderten Hologrammen auf dem Bildschirm übereinstimmen. Daher ist es bei der Tiefenpufferfreigabe beim Rendern von Farben wichtig, auch die Tiefe zu rendern. In Unity rendern die meisten nicht transparenten oder TransparentCutout-Materialien standardmäßig die Tiefe, aber transparente und Textobjekte rendern die Tiefe nicht, obwohl dies shaderabhängig ist usw.
+Damit die Windows Mixed Reality Hologrammstabilität optimieren kann, muss der Tiefenpuffer genau sein und mit allen gerenderten Hologrammen auf dem Bildschirm übereinstimmen. Daher ist es bei der Tiefenpufferfreigabe beim Rendern der Farbe wichtig, auch die Tiefe zu rendern. In Unity rendern die meisten Opaque- oder TransparentCutout-Materialien standardmäßig die Tiefe, aber transparente Objekte und Textobjekte rendern keine Tiefe, obwohl dies shaderabhängig ist usw.
 
-Bei Verwendung des [Mixed Reality Toolkit Standard-Shaders](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)zum Rendern der Tiefe für transparente Objekte:
+Wenn Sie den [Mixed Reality Toolkit Standard-Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)verwenden, um die Tiefe für transparente Objekte zu rendern:
 
-1) Wählen Sie das transparente Material aus, das den MRTK Standard-Shader verwendet, und öffnen Sie das Inspektor-Editorfenster.
-2) Wählen Sie in der Warnung für die Tiefenpufferfreigabe die Schaltfläche **Jetzt korrigieren** aus. Dies kann auch manuell erfolgen, indem Sie den **Renderingmodus** auf **Benutzerdefiniert** festlegen. legen Sie dann **Modus** auf **Transparent** und schließlich **Tiefenschreibvorgang** auf **Ein** fest.
+1) Wählen Sie das transparente Material aus, das den MRTK Standard-Shader verwendet, und öffnen Sie das Editorfenster des Inspektors.
+2) Klicken Sie **in der Warnung zur** Tiefenpufferfreigabe auf die Schaltfläche Fix Now (Jetzt korrigieren). Dies kann auch manuell ausgeführt werden, indem der **Renderingmodus auf** Custom (Benutzerdefiniert) **festlegen.** legen Sie dann **Mode (Modus)** **auf Transparent (Transparent)** und schließlich Depth Write **(Tiefenschreiben)** auf **On (Ein) fest.**
 
 > [!IMPORTANT]
-> Entwickler sollten sich vor Z-Fighting schützen, wenn sie diese Werte zusammen mit den Einstellungen der Nah-/Fernebene der Kamera ändern. Z-Fighting tritt auf, wenn zwei Gameobjects versuchen, auf dasselbe Pixel und aufgrund von Genauigkeitsbeschränkungen des Tiefenpuffers zu rendern (d.h. z Tiefe), Unity kann nicht erkennen, welches Objekt sich vor dem anderen befindet. Entwickler werden ein Flackern zwischen zwei Spielobjekten bemerken, während *sie* auf denselben Z-Tiefenwert blättern. Dies kann durch Wechseln zum 24-Bit-Tiefenformat gelöst werden, da für jedes Objekt ein größerer Wertebereich für die Z-Tiefe der Kamera berechnet werden soll.
+> Entwickler sollten sich vor Z-Fighting beim Ändern dieser Werte sowie der Einstellungen der Nah-/Fernebene der Kamera vor dem Z-Fighting-System verlassen. Z-Fighting tritt auf, wenn zwei Gameobjects versuchen, auf das gleiche Pixel zu rendern, und aufgrund von Einschränkungen der Genauigkeit des Tiefenpuffers (d. h. z depth), kann Unity nicht erkennen, welches Objekt sich vor dem anderen befindet. Entwickler werden ein Flackern zwischen zwei Spielobjekten feststellen, während *sie nach* demselben Z-Tiefe-Wert fingieren. Dies kann durch Wechseln in das 24-Bit-Tiefenformat gelöst werden, da für jedes Objekt ein größerer Wertebereich für die Z-Tiefe der Kamera berechnet werden kann.
 >
-> Es wird jedoch insbesondere für die HoloLens-Entwicklung empfohlen, stattdessen die Nah- und Fernebenen der Kamera in einen kleineren Bereich zu ändern und das 16-Bit-Tiefenformat beizubehalten. Die Z-Tiefe wird nicht linear dem Wertebereich entlang der nah- und fernen Kameraebenen zugeordnet. Dies kann geändert werden, indem Sie die *Hauptkamera* in Ihrer Szene auswählen und unter **Inspektor** die Werte **near & Far Clipping Plane** ändern, um ihren Bereich zu verringern (d. h. von 1000m bis 100m oder einem anderen x-Wert usw.)
+> Es wird jedoch empfohlen, insbesondere für HoloLens-Entwicklung, die Nah- und Fernebene der Kamera stattdessen in einen kleineren Bereich zu ändern und das 16-Bit-Tiefenformat zu behalten. Die Z-Tiefe wird dem Wertebereich entlang der nah- und fernen Kameraebenen nicht linear zugeordnet. Sie können dies ändern, indem Sie *die* Hauptkamera in Ihrer Szene auswählen und unter Inspector die Near **& Far Clipping Plane-Werte** ändern, um ihren Bereich zu verringern (d. h.  von 1000m bis 100m oder einem anderen x-Wert usw.)
 
 >[!IMPORTANT]
-> [Unity erstellt keinen Schablonenpuffer,](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) wenn das 16-Bit-Tiefenformat verwendet wird. Daher funktionieren einige Unity-Ui-Effekte und andere Schablonen-erforderliche Effekte nur, wenn das 24-Bit-Tiefenformat ausgewählt ist, das einen [8-Bit-Schablonenpuffer](https://docs.unity3d.com/Manual/SL-Stencil.html)erstellt.
+> [Unity erstellt keinen Schablonenpuffer, wenn](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) das 16-Bit-Tiefenformat verwendet wird. Daher funktionieren einige Unity-Benutzeroberflächeneffekte und andere für Schablonen erforderliche Effekte nur, wenn das 24-Bit-Tiefenformat ausgewählt ist, wodurch ein [8-Bit-Schablonenpuffer erstellt wird.](https://docs.unity3d.com/Manual/SL-Stencil.html)
 
 ### <a name="building-for-il2cpp"></a>Erstellen für IL2CPP
 
-Unity verfügt über veraltete Unterstützung für das .NET-Skript-Back-End und empfiehlt entwicklern daher, **IL2CPP** für ihre UWP-Visual Studio-Builds zu verwenden. Obwohl dies verschiedene Vorteile bietet, kann die Erstellung Ihrer Visual Studio-Projektmappe aus Unity für **IL2CPP** langsamer sein als die alte .NET-Methode. Daher wird dringend empfohlen, die bewährten Methoden zum Erstellen von **IL2CPP** zu befolgen, um die Iterationszeit der Entwicklung zu sparen.
+Unity verfügt über veraltete Unterstützung für das .NET-Skript-Back-End und empfiehlt entwicklern daher, **IL2CPP** für ihre UWP-Visual Studio-Builds zu verwenden. Obwohl dies verschiedene Vorteile mit sich bringt, kann das Erstellen Ihrer Visual Studio-Projektmappe aus Unity für **IL2CPP** langsamer als die alte .NET-Methode sein. Daher wird dringend empfohlen, die bewährten Methoden zum Erstellen von **IL2CPP** zu befolgen, um die Iterationszeit für die Entwicklung zu sparen.
 
-1) Nutzen Sie inkrementelles Erstellen, indem Sie Ihr Projekt jedes Mal im selben Verzeichnis erstellen und die vorgefertigten Dateien dort wiederverwenden.
-2) Deaktivieren von Antischadsoftwarescans für Ihr Projekt & Buildordner
-   - Öffnen **Sie Virus & Threat Protection** unter Ihrer App mit den Windows 10-Einstellungen.
-   - Wählen Sie unter Einstellungen für **Viren & Bedrohungsschutz die Option** Einstellungen **verwalten** aus.
-   - Wählen Sie im Abschnitt **Ausschlüsse** die Option **Ausschlüsse hinzufügen oder entfernen** aus.
-   - Wählen **Sie Ausschluss hinzufügen** aus, und wählen Sie den Ordner mit Ihrem Unity-Projektcode und den Buildausgaben aus.
-3) Verwenden einer SSD zum Erstellen
+1) Nutzen Sie die inkrementelle Entwicklung, indem Sie Ihr Projekt jedes Mal im gleichen Verzeichnis erstellen und dort die vorgefertigten Dateien wiederverwendnen.
+2) Deaktivieren von Ansoftwarescans für Ihre Projekt- & Buildordnern
+   - Öffnen **Sie Virenschutz & Bedrohungsschutz** in Ihrer App Windows 10-Einstellungen.
+   - Wählen **Sie Einstellungen** Unter **Virenschutzeinstellungen & Bedrohungsschutz verwalten aus.**
+   - Wählen **Sie im Abschnitt Ausschlüsse die Option** **Ausschlüsse hinzufügen oder** entfernen aus.
+   - Wählen **Sie Ausschluss hinzufügen und dann** den Ordner aus, der Ihren Unity-Projektcode und Ihre Buildausgabe enthält.
+3) Verwenden eines SSD-Speichers zum Erstellen
 
-Weitere Informationen finden Sie unter [Optimieren der Buildzeiten für IL2CPP.](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
+Weitere Informationen finden Sie unter Optimieren der Buildzeiten für [IL2CPP.](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 
 > [!NOTE]
 > Darüber hinaus es kann vorteilhaft sein, besonders für Unity-Projekte mit sehr vielen Ressourcen (mit Ausnahme von Skriptdateien) oder ständig wechselnden Szenen/Ressourcen, einen [Cacheserver](https://docs.unity3d.com/Manual/CacheServer.html) einzurichten. Beim Öffnen eines Projekts speichert Unity die qualifizierenden Ressourcen in einem internen Cacheformat auf dem Entwicklercomputer. Bei Änderungen müssen die Elemente neu importiert und daher neu verarbeitet werden. Dieser Prozess kann einmal durchgeführt, in einem Cacheserver gespeichert und anschließend für andere Entwickler freigegeben werden, damit diese Zeit sparen und den erneuten Import der Änderungen nicht mehr einzeln und lokal verarbeiten müssen.
 
-## <a name="publishing-properties"></a>Veröffentlichen von Eigenschaften
+## <a name="publishing-properties"></a>Veröffentlichungseigenschaften
 
 ### <a name="holographic-splash-screen"></a>Holografischer Begrüßungsbildschirm
 
-HoloLens verfügt über eine CPU und GPU der mobilen Klasse, was bedeutet, dass das Laden von Apps etwas länger dauern kann. Während die App geladen wird, werden Benutzer nur schwarz angezeigt, sodass sie sich möglicherweise fragen, was passiert. Um sie während des Ladens zu bestärken, können Sie einen holografischen Begrüßungsbildschirm hinzufügen.
+HoloLens verfügt über eine CPU- und GPU-Klasse für Mobilgeräte, was bedeutet, dass das Laden von Apps etwas länger dauern kann. Während die App geladen wird, wird Benutzern nur Schwarz angezeigt, und sie fragen sich vielleicht, was passiert. Sie können einen holografischen Begrüßungsbildschirm hinzufügen, um sie beim Laden zu vertuschen.
 
-So schalten Sie den holografischen Begrüßungsbildschirm um:
+So können Sie den holografischen Begrüßungsbildschirm umschalten:
 
-1) Wechseln Sie zur Seite **Projekteinstellungen bearbeiten**  >    >  **Player.**
-2) Wählen Sie die Registerkarte **Windows Store** aus, und öffnen Sie den Abschnitt **Begrüßungsbild.**
-3) Wenden Sie Ihr Bild unter der **Windows Holographic > Holographic Splash Image-Eigenschaft** an.
-    - Durch Das Umschalten der Option **Unity-Begrüßungsbildschirm anzeigen** wird der Begrüßungsbildschirm mit Unity-Marke aktiviert oder deaktiviert. Wenn Sie nicht über eine Unity Pro-Lizenz verfügen, wird immer der Begrüßungsbildschirm mit Unity-Branding angezeigt.
-    - Wenn ein **Holographic Splash-Bild** angewendet wird, wird es immer angezeigt, unabhängig davon, ob das Kontrollkästchen Unity-Begrüßungsbildschirm anzeigen aktiviert oder deaktiviert ist. Die Angabe eines benutzerdefinierten holografischen Begrüßungsbilds ist nur für Entwickler mit einer Unity Pro-Lizenz verfügbar.
+1) Wechseln Sie **zur Seite**  >  **Project Einstellungen**  >  **Player** bearbeiten.
+2) Wählen Sie die **Windows Store** aus, und öffnen Sie den **Abschnitt Begrüßungsbild.**
+3) Wenden Sie Ihr Bild unter der Windows **Holographic > Holographic Splash Image an.**
+    - Wenn Sie die Option **Unity-Begrüßungsbildschirm anzeigen** umschalten, wird der Begrüßungsbildschirm mit Unity-Marke aktiviert oder deaktiviert. Wenn Sie nicht über eine Unity-lizenz Pro verfügen, wird immer der Begrüßungsbildschirm mit Unity-Marke angezeigt.
+    - Wenn ein **Holographic Splash-Bild** angewendet wird, wird es immer angezeigt, unabhängig davon, ob das Kontrollkästchen Unity-Begrüßungsbildschirm anzeigen aktiviert oder deaktiviert ist. Die Angabe eines benutzerdefinierten holografischen Begrüßungsbilds ist nur für Entwickler mit einer Unity-Lizenz Pro verfügbar.
 
 |  Unity-Begrüßungsbildschirm anzeigen  |  Holographic Splash Image  |  Verhalten |
 |----------|----------|----------|
-|  Ein  |  Keine  |  Anzeigen des Standardmäßigen Unity-Begrüßungsbildschirms für 5 Sekunden oder bis zum Laden der App, je nachdem, welcher Wert länger ist. |
-|  Ein  |  Benutzerdefiniert  |  Anzeigen eines benutzerdefinierten Begrüßungsbildschirms für 5 Sekunden oder bis zum Laden der App, je nachdem, welcher Wert länger ist. |
-|  Aus  |  Keine  |  Zeigen Sie transparent schwarz (nichts) an, bis die App geladen wird. |
-|  Aus  |  Benutzerdefiniert  |  Anzeige des benutzerdefinierten Begrüßungsbildschirms für 5 Sekunden oder bis zum Laden der App, je nach längerer Anzeige. |
+|  Ein  |  Keine  |  Standardmäßigen Unity-Begrüßungsbildschirm für 5 Sekunden oder bis zum Laden der App anzeigen, je nach Dem, was länger ist. |
+|  Ein  |  Benutzerdefiniert  |  Anzeige des benutzerdefinierten Begrüßungsbildschirms für 5 Sekunden oder bis zum Laden der App, je nach längerer Anzeige. |
+|  Aus  |  Keine  |  Zeigen Sie transparentes Schwarz (nichts) an, bis die App geladen wurde. |
+|  Aus  |  Benutzerdefiniert  |  Anzeigen eines benutzerdefinierten Begrüßungsbildschirms für 5 Sekunden oder bis zum Laden der App, je nachdem, welcher Wert länger ist. |
 
-Weitere Informationen finden Sie in der Dokumentation zum Begrüßungsbildschirm von [Unity.](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html)
+Weitere Informationen finden Sie in [der Unity-Dokumentation zu Begrüßungsbildschirmen.](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html)
 
 ### <a name="tracking-loss"></a>Verlust der Nachverfolgung
 
-Ein Mixed [Reality-Headset](coordinate-systems-in-unity.md)hängt davon ab, wie die Umgebung um es herum zu sehen ist, um weltweit gesperrte Koordinatensysteme zu erstellen, mit denen Hologramme in Position bleiben können. Wenn sich das Headset nicht auf der Welt finden kann, wird das Headset als *verlorene Nachverfolgung bezeichnet.* In diesen Fällen funktionieren Funktionen, die von weltgesperrten Koordinatensystemen abhängig sind, z. B. räumliche Phasen, Raumanker und räumliche Abbildung, nicht.
+Ein Mixed Reality-Headset hängt davon ab, die Umgebung um es herum zu sehen, um [weltweit gesperrte Koordinatensysteme](coordinate-systems-in-unity.md)zu erstellen, mit denen Hologramme an positioniert bleiben können. Wenn sich das Headset nicht auf der Welt finden kann, hat das Headset die *Nachverfolgung verloren.* In diesen Fällen funktionieren Funktionen, die von weltweit gesperrten Koordinatensystemen wie räumlichen Phasen, Raumankern und räumlicher Zuordnung abhängen, nicht.
 
-Wenn ein Verlust der Nachverfolgung auftritt, besteht das Standardverhalten von [](https://docs.unity3d.com/Manual/ExecutionOrder.html)Unity im Beenden des Renderns von Hologrammen, Anhalten der Spielschleife und Anzeigen einer Benachrichtigung zum Verlust der Nachverfolgung, die dem Anvitätsverhalten des Benutzer folgt. Benutzerdefinierte Benachrichtigungen können auch in Form eines Nachverfolgungsverlustbilds bereitgestellt werden. Für Apps, die von der Nachverfolgung für ihre gesamte Erfahrung abhängig sind, ist es ausreichend, Unity dies vollständig verarbeiten zu lassen, bis die Nachverfolgung wiedererlangt wird. Entwickler können ein benutzerdefiniertes Image zur Verfügung geben, das während des Verlusts der Nachverfolgung angezeigt wird.
+Wenn ein Verlust der Nachverfolgung auftritt, besteht das Standardverhalten von Unity darin, das Rendern von Hologrammen zu beenden, die [Spielschleife](https://docs.unity3d.com/Manual/ExecutionOrder.html)anzuhalten und eine Benachrichtigung über verlorene Nachverfolgung anzuzeigen, die dem Anverfolgen der Benutzer folgt. Benutzerdefinierte Benachrichtigungen können auch in Form eines Nachverfolgungsverlustbilds bereitgestellt werden. Für Apps, die für ihre gesamte Erfahrung von der Nachverfolgung abhängig sind, reicht es aus, Unity dies vollständig verarbeiten zu lassen, bis die Nachverfolgung wiedererlangt wird. Entwickler können ein benutzerdefiniertes Image bereitstellen, das während des Nachverfolgungsverlusts angezeigt werden soll.
 
-So passen Sie das Nachverfolgungsbild für verloren gegangene Bilder an:
+So passen Sie das Nachverfolgungsimage für verlorene Bilder an:
 
-1) Wechseln Sie zur **Seite Edit** Project Settings Player  >  **(Projekteinstellungen**  >  **bearbeiten).**
-2) Wählen Sie auf der **Registerkarte Windows Store aus,** und öffnen Sie den **Abschnitt Begrüßungsbild.**
-3) Wenden Sie Ihr Bild unter der **Eigenschaft Windows Holographic > Tracking Loss Image (Bild für Nachverfolgungsverlust)** an.
+1) Wechseln Sie zur Seite  >  **"Project Einstellungen**  >  **Player** bearbeiten".
+2) Wählen Sie auf der Registerkarte **Windows Store** aus, und öffnen Sie den Abschnitt **Begrüßungsbild.**
+3) Wenden Sie Ihr Bild unter der **Eigenschaft Windows Holographic > Tracking Loss Image an.**
 
 #### <a name="opt-out-of-automatic-pause"></a>Deaktivieren der automatischen Pause
 
-Einige Apps erfordern möglicherweise keine Nachverfolgung (z. [B.](coordinate-systems-in-unity.md) Apps mit ausschließlicher Ausrichtung, z. B. Videoanzeigen mit 360 Grad), oder sie müssen die Verarbeitung ohne Unterbrechung fortsetzen, während die Nachverfolgung verloren geht. Sie können den standardmäßigen Verlust des Nachverfolgungsverhaltens deaktivieren, aber Sie sind für das Ausblenden/Deaktivieren von Objekten verantwortlich, die in einem Szenario mit Nachverfolgungsverlust nicht ordnungsgemäß gerendert werden würden. In den meisten Fällen ist der einzige Inhalt, der in diesem Fall gerendert werden sollte, der textgesperrte Inhalt, der um die Hauptkamera zentriert ist.
+Einige Apps erfordern möglicherweise keine Nachverfolgung (z. B. apps [mit ausschließlicher Ausrichtung](coordinate-systems-in-unity.md) wie 360-Grad-Videoanzeigen) oder müssen möglicherweise die Verarbeitung unterbrechungsfrei fortsetzen, während die Nachverfolgung verloren geht. Sie können den standardmäßigen Verlust des Nachverfolgungsverhaltens deaktivieren, aber Sie sind dafür verantwortlich, objekte auszublenden/zu deaktivieren, was in einem Nachverfolgungsverlustszenario nicht ordnungsgemäß gerendert würde. In den meisten Fällen ist der einzige Inhalt, der in diesem Fall gerendert werden sollte, der textgesperrte Inhalt, der um die Hauptkamera zentriert ist.
 
 So deaktivieren Sie das automatische Pausenverhalten:
 
-1) Wechseln Sie zur Seite **Edit** Project Settings Player  >  **(Projekteinstellungsplayer**  >   bearbeiten).
-2) Wählen Sie die **Registerkarte Windows Store** aus, und öffnen Sie den Abschnitt **Begrüßungsbild.**
-3) Ändern Sie **das Kontrollkästchen Windows Holographic > On Tracking Loss Pause and Show Image (Windows Holographic > Bei Nachverfolgungsverlust anhalten und Bild** anzeigen).
+1) Wechseln **Sie** zur Seite  >  **Project Einstellungen**  >  **Player** bearbeiten.
+2) Wählen Sie die Registerkarte **Windows Store** aus, und öffnen Sie den Abschnitt **Begrüßungsbild.**
+3) Ändern Sie das **Kontrollkästchen Windows Holographic > On Tracking Loss Pause (Bei Nachverfolgungsverlust anhalten) und Show Image (Bild anzeigen).**
 
 #### <a name="tracking-loss-events"></a>Nachverfolgen von Verlustereignissen
 
-Um benutzerdefiniertes Verhalten zu definieren, wenn die Nachverfolgung verloren geht, behandeln Sie die globalen [Nachverfolgungsverlustereignisse.](tracking-loss-in-unity.md)
+Behandeln Sie die globalen [Nachverfolgungsverlustereignisse,](tracking-loss-in-unity.md)um ein benutzerdefiniertes Verhalten zu definieren, wenn die Nachverfolgung verloren geht.
 
 ### <a name="capabilities"></a>Funktionen
 
-Damit eine App bestimmte Funktionen nutzen kann, muss sie die entsprechenden Funktionen im Manifest deklarieren. Die Manifestdeklarationen können in Unity vorgenommen werden, damit sie in jedem zukünftigen Projektexport enthalten sind.
+Damit eine App bestimmte Funktionen nutzen kann, muss sie die entsprechenden Funktionen in ihrem Manifest deklarieren. Die Manifestdeklarationen können in Unity vorgenommen werden, damit sie in jedem zukünftigen Projektexport enthalten sind.
 
-Funktionen können für eine Mixed Reality aktiviert werden, indem:
+Funktionen können für eine Mixed Reality Anwendung wie folgt aktiviert werden:
 
-1) Wechseln Sie zur **Seite Edit** Project Settings Player  >  **(Projekteinstellungen**  >  **bearbeiten).**
-2) Wählen Sie die **Registerkarte Windows Store** aus, öffnen Sie den Abschnitt **Veröffentlichungseinstellungen,** und suchen Sie nach der **Liste Funktionen.**
+1) Wechseln Sie zur Seite  >  **"Project Einstellungen**  >  **Player** bearbeiten".
+2) Wählen Sie die Registerkarte **Windows Store** aus, öffnen Sie den Abschnitt **Veröffentlichen Einstellungen,** und suchen Sie nach der Liste **Funktionen.**
 
-Die anwendbaren Funktionen zum Aktivieren der häufig verwendeten APIs für Holographic-Apps sind:
+Die geeigneten Funktionen zum Aktivieren der häufig verwendeten APIs für Holographic-Apps sind:
 <br>
 
 |  Funktion  |  APIs, die Funktionen erfordern |
 |----------|----------|
 |  SpatialPerception  |  SurfaceObserver |
 |  Webcam  |  PhotoCapture und VideoCapture |
-|  PicturesLibrary/VideosLibrary  |  PhotoCapture bzw. VideoCapture (beim Speichern des erfassten Inhalts) |
+|  PicturesLibrary/VideosLibrary  |  PhotoCapture bzw. VideoCapture (beim Speichern der erfassten Inhalte) |
 |  Mikrofon  |  VideoCapture (beim Erfassen von Audio), DictationRecognizer, GrammarRecognizer und KeywordRecognizer |
 |  InternetClient  |  DictationRecognizer (und zur Verwendung des Unity Profilers) |
 

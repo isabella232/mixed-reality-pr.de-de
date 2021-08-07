@@ -1,7 +1,7 @@
 ### YamlMime:FAQ
 metadata:
   title: 'Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup'
-  description: Hier erhalten Sie Antworten auf häufig gestellte Fragen zum Setup, wenn Sie mit Windows Mixed Reality und Geräten arbeiten.
+  description: Erhalten Sie Antworten auf häufig gestellte Setupfragen bei der Arbeit mit Windows Mixed Reality Anwendungen und Geräten.
   author: hferrone
   ms.author: v-hferrone
   ms.date: 09/15/2020
@@ -9,59 +9,59 @@ metadata:
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Feedback, Feedback Hub, bugs
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 5b9e3e1e2967884d2d783b5b8e0cd944f20fadae
-  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.openlocfilehash: a5aee087b011cc168d39551d0bec36da18e3dced0b984f52f4f8b602a72f226d
+  ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/24/2021
-  ms.locfileid: "107953756"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115187612"
 title: 'Windows Mixed Reality: Häufig gestellte Fragen (FAQ) zum Setup'
-summary: Hier finden Sie einige Informationen zur Behandlung von Problemen, die beim Einrichten Ihres immersiven Headsets Windows Mixed Reality auftreten können.
+summary: Hier finden Sie einige Informationen zur Behandlung von Problemen, die beim Einrichten Ihres Windows Mixed Reality immersiven Headsets auftreten können.
 sections:
 - name: Wird ignoriert.
   questions:
   - question: >
-      Es wird eine Meldung mit dem Text "Wir konnten die Window Mixed Reality-Software nicht herunterladen" angezeigt, oder setup is stuck on the "Hang tight while we do some downloading" (Das Setup bleibt auf der Seite "Hang tight while we do some downloading" (Beim Herunterladen hängen) hängen.
+      Ich erhalte eine Meldung mit dem Hinweis, dass das Fenster Mixed Reality Software nicht heruntergeladen werden konnte, oder das Setup hängt auf der Seite "Hängen bleibt eng, während wir etwas herunterladen".
     answer: >
       Probieren Sie die folgenden Schritte aus:
 
 
-      * Wechseln Sie **zu Einstellungen > update & security > Windows Update,** und stellen Sie sicher, Windows Update aktiviert ist. Laden Sie dann alle Updates herunter, die auf die Installation warten, und installieren Sie sie.
+      * Wechseln Sie zu **Einstellungen > Update & Security > Windows Update,** und stellen Sie sicher, dass Windows Update aktiviert ist. Laden Sie dann alle Updates herunter, die auf die Installation warten, und installieren Sie sie.
 
       * Stellen Sie sicher, dass Ihr PC mit dem Internet verbunden ist und über mindestens 2 GB freien Speicherplatz verfügt.
 
-      * Starten Sie Ihren PC neu, und versuchen Sie es erneut. Sie müssen möglicherweise mehrmals wiederholen oder die Problembehandlung Windows Update ausführen, um ausstehende Updates zu löschen.
+      * Starten Sie Ihren PC neu, und versuchen Sie es erneut. Möglicherweise müssen Sie die Problembehandlung für Windows Update mehrmals wiederholen, um ausstehende Updates zu löschen.
 
 
       > [!NOTE]
 
-      > * Wenn Sie sich in einem vom Unternehmen verwalteten Netzwerk anmelden, wenden Sie sich an Ihren Administrator. Möglicherweise müssen sie die Windows Mixed Reality. Suchen Sie nach den Anweisungen für IT-Profis? Weitere Informationen **[finden Sie in diesem Artikel.](/windows/application-management/manage-windows-mixed-reality)**
+      > * Wenn Sie sich in einem von Unternehmen verwalteten Netzwerk befinden, wenden Sie sich an Ihren Administrator. Möglicherweise müssen sie Windows Mixed Reality aktivieren. Suchen Sie nach den Anweisungen für IT-Profis? Weitere Informationen finden Sie **[in diesem Artikel.](/windows/application-management/manage-windows-mixed-reality)**
 
-      > * Wenn ihre Wi-Fi Netzwerkverbindung auf "gemessen" festgelegt ist, ändern Sie sie in nicht gemessen. **[Weitere Informationen](https://support.microsoft.com/help/4028458)**
+      > * Wenn Ihre Wi-Fi Netzwerkverbindung auf getred festgelegt ist, ändern Sie sie in unmetered. **[Weitere Informationen](https://support.microsoft.com/help/4028458)**
   - question: >
-      Ich habe eine Meldung mit dem Text "Something was wrong, and we couldn't start Windows Mixed Reality".
+      Ich erhalte eine Meldung mit dem Hinweis, dass etwas schief gelaufen ist, und wir konnten nicht mit Windows Mixed Reality beginnen."
     answer: >
       Probieren Sie die folgenden Schritte aus:
 
 
-      1. Trennen Sie Ihr Headset von Ihrem Computer (beide Kabel).
+      1. Trennen Sie Ihr Headset vom Computer (beide Kabel).
 
       2. Starten Sie den Computer neu.
 
-      3. Wechseln **Sie einstellungen > Update & Security > Windows Update,** und stellen Sie sicher, Windows Update aktiviert ist. Laden Sie dann alle Updates herunter, die auf die Installation warten, und installieren Sie sie.
+      3. Wechseln Sie **Einstellungen > Update & Security > Windows Update,** und stellen Sie sicher, dass Windows Update aktiviert ist. Laden Sie dann alle Updates herunter, die auf die Installation warten, und installieren Sie sie.
 
-      4. Verbinden Sie Ihr Headset erneut mit dem Computer, und versuchen Sie es dann erneut.
+      4. Verbinden Sie Ihr Headset erneut mit dem Computer, und versuchen Sie es erneut.
 
 
-      Wenn die oben genannten Schritte nicht funktionieren, deinstallieren Sie die Anwendung, und installieren Sie Windows Mixed Reality. Wechseln Sie zu **Einstellungen > Mixed Reality > Deinstallieren,** und wählen Sie Deinstallieren **aus.** Starten Sie den Computer neu. Um den Setupvorgang erneut zu starten, schließen Sie einfach Ihr Headset an Ihren PC an.
+      Wenn die oben genannten Schritte nicht funktionieren, versuchen Sie, Windows Mixed Reality zu deinstallieren und neu zu installieren. Wechseln Sie zu **Einstellungen > Mixed Reality > Deinstallieren,** und wählen Sie Deinstallieren **aus.** Starten Sie den Computer neu. Um den Setupvorgang erneut zu starten, schließen Sie einfach Ihr Headset an Ihren PC an.
   - question: >
       Die Mixed Reality-Portal wird nicht geöffnet, wenn ich mein Headset einstecke.
     answer: >
-      Mixed Reality-Portal ist die App, die Sie durch Windows Mixed Reality Setup führt, so konzipiert, dass sie automatisch geöffnet wird, wenn Sie ein kompatibles Headset anschließen. Wenn sie nicht geöffnet wird, wechseln Sie zu Start, und geben Sie "Mixed Reality-Portal" in das Suchfeld ein, um die App zu öffnen. Möglicherweise müssen Sie [ein Update auf die neueste Version von Windows](https://support.microsoft.com/en-us/help/12373/windows-update-faq) durchführen, wenn Sie die Mixed Reality-Portal nicht finden können.
+      Mixed Reality-Portal ist die App, die Sie durch Windows Mixed Reality Setup führt, so konzipiert, dass sie automatisch geöffnet wird, wenn Sie ein kompatibles Headset anschließen. Wenn sie nicht geöffnet wird, wechseln Sie zu Start, und geben Sie "Mixed Reality-Portal" in das Suchfeld ein, um die App zu öffnen. Möglicherweise müssen Sie [auf die neueste Version von Windows aktualisieren,](https://support.microsoft.com/en-us/help/12373/windows-update-faq) wenn Sie die Mixed Reality-Portal nicht finden können.
   - question: >
-      Ich erhalte eine Meldung, dass mein PC nicht ausgeführt werden kann, Windows Mixed Reality
+      Ich erhalte eine Meldung mit dem Hinweis, dass mein PC nicht ausgeführt werden kann, Windows Mixed Reality
     answer: >
-      Wenn Diese Meldung angezeigt wird, erfüllt Ihr PC nicht die [Mindestanforderungen,](https://support.microsoft.com/help/4039260) die zum Ausführen von Windows Mixed Reality erforderlich sind. Die Hardwareeinrichtung des Computers ist möglicherweise nicht mit Windows Mixed Reality kompatibel, oder Sie müssen [auf die neueste Version von Windows aktualisieren.](https://support.microsoft.com/help/12373)
+      Wenn Diese Meldung angezeigt wird, erfüllt Ihr PC nicht die [Mindestanforderungen,](https://support.microsoft.com/help/4039260) die zum Ausführen Windows Mixed Reality erforderlich sind. Die Hardwareeinrichtung des Computers ist möglicherweise nicht mit Windows Mixed Reality kompatibel, oder Sie müssen [auf die neueste Version von Windows aktualisieren.](https://support.microsoft.com/help/12373)
 
 
       Hinweise zu Grafikkarten:
@@ -84,7 +84,7 @@ sections:
 
       * Ersetzen Sie die Akkus des Controllers.
 
-      * Wenn Sie einen Bluetooth-Controller verwenden, wechseln Sie zu **Einstellungen > Geräte > Bluetooth & anderen Geräten** auf Ihrem PC, und stellen Sie sicher, dass er gekoppelt ist (sie sollte auf der Seite aufgeführt werden).
+      * Wenn Sie einen Bluetooth Controller verwenden, wechseln Sie zu **Einstellungen > Geräte > Bluetooth & anderen Geräten** auf Ihrem PC, und stellen Sie sicher, dass er gekoppelt ist (sie sollte auf der Seite aufgeführt werden).
 
 
       [Weitere Informationen zu Xbox-Controllern](https://support.xbox.com/xbox-on-windows/accessories/connect-xbox-one-controller-to-pc)
@@ -94,82 +94,82 @@ sections:
       Probieren Sie die folgenden Schritte aus:
 
 
-      * Stellen Sie sicher, dass Ihre Controller eingeschaltet und vollständig in Rechnung gestellt sind.
+      * Stellen Sie sicher, dass Ihre Controller aktiviert sind und vollständig in Rechnung gestellt werden.
 
       * Ersetzen Sie die Akkus der Controller.
 
-      * Schalten Sie die Controller aus und wieder ein, während Sie sie vor Sich halten. Halten Sie die Windows-Taste 4 Sekunden lang gedrückt, um einen Controller zu deaktivieren, und halten Sie ihn dann 2 Sekunden lang gedrückt, um ihn zu aktivieren.
+      * Schalten Sie die Controller aus und wieder ein, während Sie sie vor Sich halten. Halten Sie die Windows 4 Sekunden lang gedrückt, um einen Controller zu deaktivieren, und halten Sie ihn dann zwei Sekunden lang gedrückt, um ihn zu aktivieren.
 
-      * Wechseln Sie **zu Einstellungen > Geräte > Bluetooth &** anderen Geräten auf Ihrem PC, und stellen Sie sicher, dass sie gekoppelt sind (sie sollten auf der Seite aufgeführt werden).
+      * Wechseln Sie zu **Einstellungen > Geräte > Bluetooth & anderen Geräten** auf Ihrem PC, und stellen Sie sicher, dass sie gekoppelt sind (sie sollten auf der Seite aufgeführt werden).
 
 
       [Weitere Informationen zu Motion-Controllern](controllers-in-wmr.md)
   - question: >
-      Ich habe eine Meldung mit dem Text "Connect your headset" (Headset verbinden) erhalten, obwohl ich mein Headset angeschlossen habe.
+      Ich erhalte die Meldung "Verbinden Ihr Headset", obwohl ich mein Headset angeschlossen habe.
     answer: >
       Probieren Sie die folgenden Schritte aus:
 
 
-      - Stellen Sie sicher, dass Ihr Headset mit den richtigen Anschlüssen auf Ihrem Computer verbunden ist. Es sollte an die diskrete Grafikkarte des PCs und einen USB 3.0-Anschluss angeschlossen werden. So identifizieren Sie die richtigen Ports:
-          - USB 3.0-Anschlüsse verfügen über ein spezielles Logo mit einer "SS"-Markierung (die auf "SuperSpeed" hinweist). Der Anschluss ist normalerweise blau, ältere USB 2.0-Anschlüsse sind jedoch in der Regel schwarz oder weiß.
-          - Wenn Ihr Computer über zwei PORTS verfügt, verwenden Sie den Port, der eine Verbindung mit der Grafikkarte herstellt, nicht die Hauptplatine des Computers. Es ist nicht immer offensichtlich, was ist, obwohl diskrete Ports sich häufig in einem Erweiterungsslot auf dem Computer befinden. Wenn Sie einen Port ausprobieren und er nicht funktioniert, versuchen Sie es mit dem anderen Port.
+      - Stellen Sie sicher, dass Ihr Headset mit den richtigen Ports auf Ihrem Computer verbunden ist. Es sollte an die diskrete Grafikkarte des PCs und einen USB 3.0-Anschluss angeschlossen werden. So identifizieren Sie die richtigen Ports:
+          - USB 3.0-Anschlüsse verfügen über ein spezielles Logo mit der Markierung "SS" (was auf "SuperSpeed" hinweist). Die Innenseite des Ports ist normalerweise blau, aber ältere USB 2.0-Anschlüsse sind in der Regel schwarz oder weiß im Inneren.
+          - Wenn Ihr Computer über zwei PORTS verfügt, verwenden Sie den Port, der eine Verbindung mit der Grafikkarte herstellt, und nicht mit der Hauptplatine des Computers. Es ist nicht immer offensichtlich, was ist, obwohl diskrete Ports sich häufig in einem Erweiterungsslot auf dem Computer befinden. Wenn Sie einen Port ausprobieren und er nicht funktioniert, versuchen Sie es mit dem anderen Port.
       - Wechseln Sie zur Website des Headsetherstellers, und aktualisieren Sie die Treiber und firmware für Ihr Headset.
   - question: >
-      Während Mixed Reality starte, bleibt ich bei "Turn your head side to side, and then at the floor" (Kopfseite zur Seite drehen und dann am Boden) hängen.
+      Beim Starten Mixed Reality bin ich bei "Drehen der Kopfseite zur Seite und dann am Boden" hängen geblieben.
     answer: >
-      Mit diesem Schritt kann Ihr Headset Ihren Raum erkennen und alle vorhandenen virtuellen Flächen und Grenzen wiederherstellen. Wenn Sie Ihr Headset anstauf setzen, kann dieser Überprüfungsprozess bis zu 10 Sekunden dauern. Nach Abschluss des Vorgangs befinden Sie sich entweder in Windows Mixed Reality Startseite, oder Sie werden aufgefordert, Ihre Grenze erneut einzurichten.
+      Mit diesem Schritt kann Ihr Headset Ihren Raum erkennen und alle vorhandenen virtuellen Etagen und Grenzen wiederherstellen. Wenn Sie Ihr Headset ansetzen, kann dieser Überprüfungsvorgang bis zu 10 Sekunden dauern. Nach Abschluss des Vorgangs befinden Sie sich entweder in Windows Mixed Reality Startseite, oder Sie werden aufgefordert, Ihre Grenze erneut einzurichten.
 
 
-      Wenn der Scanvorgang länger als 10 Sekunden dauert, kann ein Problem mit dem Näherungssensor im Headset vorliegen:
+      Wenn der Überprüfungsvorgang länger als 10 Sekunden dauert, kann ein Problem mit dem Näherungssensor im Headset vorliegen:
 
 
       1. Überprüfen Sie, ob der Aufstrich aus dem Näherungssensor entfernt wurde. Der Näherungssensor befindet sich im Headset ungefähr dort, wo sich der Mittelpunkt Der Kopf befindet.
 
-      2. Vergewissern Sie sich, dass Ihr Näherungssensor die Eingabe an Ihr Headset umschaltet: Decken Sie den Näherungssensor mit dem Finger ein paar Mal ab, und entdecken Sie den Näherungssensor, um zu überprüfen, ob die Eingabe zum Headset wechselt. Oben auf Ihrem PC sollte das Banner **Windows-Taste + Y** angezeigt werden. Sie können die Eingabe für das Headset jederzeit manuell wechseln, indem Sie **Windows-Taste + Y** auf der Tastatur eingeben.
+      2. Vergewissern Sie sich, dass Ihr Näherungssensor die Eingabe an Ihr Headset umschaltet: Decken Sie den Näherungssensor mit dem Finger ein paar Mal ab, und entdecken Sie den Näherungssensor, um zu überprüfen, ob die Eingabe zum Headset wechselt. Oben auf Ihrem PC sollte das Banner **Windows Key + Y (Schlüssel + Y)** angezeigt werden. Sie können jederzeit manuell in das Headset wechseln, indem Sie **Windows Taste + Y** auf der Tastatur eingeben.
   - question: >
       Die Etage meines Windows Mixed Reality Hauses scheint sich nicht in der richtigen Höhe zu befinden.
     answer: >
-      Wählen **Sie Start > Floor Adjustment** aus, die gestartet wird, sobald Sie die App auf der Ganzen Welt platzieren, um Änderungen vorzunehmen, während Sie das Headset verwenden. In dieser App werden Sie angewiesen, das Touchpad (Motion Controller) oder das Richtungspad (Gamepad) zum Anpassen der Bodenhöhe zu verwenden. Wenn sich der Boden richtig anfühlt, verwenden Sie die Windows-Schaltfläche, um zu Ihrem Haus zurückzukehren.
+      Wählen **Sie Start > Floor Adjustment** aus, die gestartet wird, sobald Sie die App auf der Ganzen Welt platzieren, um Änderungen vorzunehmen, während Sie das Headset verwenden. In dieser App werden Sie angewiesen, das Touchpad (Motion Controller) oder das Direction Pad (Gamepad) zum Anpassen der Bodenhöhe zu verwenden. Wenn sich der Boden richtig anfühlt, verwenden Sie die Schaltfläche Windows, um zu Ihrem Haus zurückzukehren.
   - question: >
       Ich kann auf meinem Desktop keine Vorschau anzeigen, was in meinem Headset angezeigt wird.
     answer: >
-      Windows Mixed Reality Portal verfügt über **eine** Wiedergabeschaltfläche am unteren Bildschirmrand, mit der Sie eine Vorschau anzeigen können, was in Ihrem Headset auf Dem Desktopbildschirm angezeigt wird. Aus Leistungsgründen ist dieses Feature nur auf PCs verfügbar, die auf Windows Mixed Reality Ultra (90 Hz) ausgeführt werden.
+      Windows Mixed Reality Das Portal verfügt über **eine** Wiedergabeschaltfläche am unteren Bildschirmrand, mit der Sie eine Vorschau anzeigen können, was in Ihrem Headset auf Dem Desktopbildschirm angezeigt wird. Aus Leistungsgründen ist dieses Feature nur auf PCs verfügbar, die auf Windows Mixed Reality Ultra (90 Hz) ausgeführt werden.
   - question: >
       Wie erhalte ich eine klarere Ansicht in meinem Headset?
     answer: >
-      Versuchen Sie, die Passform Ihres Headsets anzupassen. Passen Sie die Position auf Ihrem Gesicht an, indem Sie sie nach oben und unten oder links und rechts bewegen, und passen Sie die Bänder so an, dass sie mit dem Häkchen zurechtkommen.
+      Versuchen Sie, die Passform Ihres Headsets anzupassen. Passen Sie die Position auf Ihrem Gesicht an, indem Sie sie nach oben und unten oder nach links und rechts bewegen, und passen Sie die Bänder so an, dass sie sich mit dem Snug anfühlen.
 
 
       Wenn Ihr Headset dies unterstützt, können Sie auch die Kalibrierungseinstellungen anpassen. Wenn das Headset über einen Regler zum Anpassen der Kalibrierung verfügt, verwenden Sie diesen. Andernfalls wechseln Sie zu **Einstellungen > Mixed Reality > Visuelle Qualität,** und passen Sie die Kalibrierung dort an. Weitere Informationen zur Kalibrierung für Ihr spezifisches Gerät finden Sie bei Ihrem Headsethersteller.
   - question: >
-      Wenn ich mein Headset einstecke, geschieht nichts – Mixed Reality-Portal nicht geöffnet
+      Wenn ich mein Headset einstecke, geschieht nichts– Mixed Reality-Portal wird nicht geöffnet
     answer: >
-      Mixed Reality-Portal ist die App, die Sie durch Windows Mixed Reality Setup führt, so konzipiert, dass sie automatisch geöffnet wird, wenn Sie ein kompatibles Headset anschließen. Wenn er nicht geöffnet wird, wechseln Sie zu **Start,** und geben **Mixed Reality-Portal** suchfeld ein, um die App von dort aus zu öffnen.  Wenn Sie keine Mixed Reality-Portal finden, bedeutet dies möglicherweise, dass Sie auf die neueste Version von [Windows](https://support.microsoft.com/help/12373) aktualisieren müssen oder dass Ihr Headset nicht ordnungsgemäß mit dem PC verbunden ist.
+      Mixed Reality-Portal ist die App, die Sie durch Windows Mixed Reality Setup führt, so konzipiert, dass sie automatisch geöffnet wird, wenn Sie ein kompatibles Headset anschließen. Wenn sie nicht geöffnet wird, wechseln Sie zu **Start,** und geben **Sie Mixed Reality-Portal** in das **Feld Suchen**  ein, um die App von dort aus zu öffnen. Wenn Sie Mixed Reality-Portal nicht finden können, bedeutet [dies](https://support.microsoft.com/help/12373) möglicherweise, dass Sie auf die neueste Version von Windows aktualisieren müssen oder dass Ihr Headset nicht ordnungsgemäß mit dem PC verbunden ist.
   - question: >
-      Meine Anzeige für die Kopf-Bereitstellung funktioniert nicht, nachdem ich heruntergefahren bin und einen schnellen Start ausgeführt habe.
+      Meine Anzeige für die Hauptaufnahme funktioniert nach dem Herunterfahren und schnellem Starten nicht mehr.
     answer: >
-      Versuchen Sie Folgendes:
+      Testen Sie Folgendes:
 
 
-      * Trennen Sie das Anzeigekabel und das USB-Kabel von der Anzeige für die Hauptverkabelung, und schließen Sie sie dann wieder ein.
+      * Trennen Sie das Anzeigekabel und das USB-Kabel vom Bildschirm für die Kopfaufnahme, und schließen Sie sie dann wieder an.
   - question: >
-      Mein Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality
+      Meine Wi-Fi verlangsamt sich, wenn ich Windows Mixed Reality
     answer: >
-      Wenn Sie eine 2,4-GHz-Verbindung Wi-Fi, können Ihre Motion Controller Ihr WLAN verlangsamen. Führen Sie einen der folgenden Schritte aus:
+      Wenn Sie eine Wi-Fi-Verbindung mit 2,4 GHz verwenden, können Ihre Motion Controller ihr WLAN verlangsamen. Probieren Sie einen der folgenden Schritte aus:
 
 
-      * Wechseln Sie zu einer 5-GHz-Wi-Fi, sofern verfügbar. Erfahren Sie mehr
+      * Wechseln Sie zu einer 5-GHz-Wi-Fi-Verbindung, sofern verfügbar. Erfahren Sie mehr
 
-      * Verwenden Sie einen separaten Bluetooth-Adapter, um Ihre Motion-Controller mit Ihrem PC zu verbinden. [Weitere Informationen finden Sie unter Empfohlene Adapter.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+      * Verwenden Sie einen separaten Bluetooth Adapter, um Ihre Motion Controller mit Ihrem PC zu verbinden. [Weitere Informationen finden Sie unter Empfohlene Adapter.](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 
       > [!NOTE]
 
-      > Neuere Headsets werden über einen integrierten Bluetooth-Chip direkt mit den Controllern gekoppelt, und dieses Problem sollte nicht entstehen.
+      > Neuere Headsets koppeln über einen integrierten Bluetooth Chip direkt mit den Controllern und sollten dieses Problem nicht erleben.
   - question: >
-      Ich habe eine Fehlermeldung mit dem Hinweis erhalten, dass etwas schief gelaufen ist, oder ich habe Probleme im Mixed Reality-Portal
+      Ich habe die Fehlermeldung "Etwas ist schief gelaufen", oder ich habe Probleme in der Mixed Reality-Portal
     answer: >
-      Weitere Informationen zu einem bestimmten Fehlercode finden Sie [hier.](error-codes.md) Sie können auch versuchen, dies zu versuchen:
+      Weitere Informationen zu einem bestimmten Fehlercode finden Sie [hier.](error-codes.md) Sie können auch versuchen,
 
 
       Neustarten Windows Mixed Reality:
@@ -202,6 +202,6 @@ sections:
       3. Deinstallieren Sie Windows Mixed Reality, und installieren Sie sie neu:
           1. Trennen Sie beide Headsetkabel von Ihrem PC.
           2. Wählen Sie **Einstellungen > Mixed Reality > Deinstallieren aus.**
-          3. Wenn Ihre Motion-Controller mit Ihrem PC gekoppelt sind, wählen Sie **Einstellungen > Geräte > Bluetooth & anderen Geräten** aus, um sie zu entkoppeln. Wählen Sie jeden Controller und dann "Gerät entfernen" aus. Wenn Ihre Controller mit Ihrem Headset gekoppelt sind, können Sie diesen Schritt überspringen.
+          3. Wenn Ihre Motion-Controller mit Ihrem PC gekoppelt sind, wählen Sie **Einstellungen > Geräte > Bluetooth & andere Geräte** aus, um sie zu entkoppeln. Wählen Sie jeden Controller und dann "Gerät entfernen" aus. Wenn Ihre Controller mit Ihrem Headset gekoppelt sind, können Sie diesen Schritt überspringen.
           4. Schließen Sie Ihr Headset wieder an Ihren PC an, um Windows Mixed Reality neu zu installieren.
-additionalContent: "\n## <a name=\"see-also\"></a>Weitere Informationen:\n\n* [Die Community fragen](https://answers.microsoft.com)\n* [Wenden Sie sich an uns, um Support zu haben.](https://support.microsoft.com/contactus/)\n* [Problembehandlung](troubleshooting-windows-mixed-reality.md)"
+additionalContent: "\n## <a name=\"see-also\"></a>Weitere Informationen\n\n* [Die Community fragen](https://answers.microsoft.com)\n* [Wenden Sie sich an uns, um Support zu haben.](https://support.microsoft.com/contactus/)\n* [Problembehandlung](troubleshooting-windows-mixed-reality.md)"

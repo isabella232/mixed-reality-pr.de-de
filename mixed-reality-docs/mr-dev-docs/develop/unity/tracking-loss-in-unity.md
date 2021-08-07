@@ -1,43 +1,43 @@
 ---
 title: Verfolgbarkeitsverlust in Unity
-description: Erfahren Sie, wie Sie manuellen und standardmäßigen nach Verfolgungs Verlusten in einer Unity Mixed Reality-App behandeln.
+description: Erfahren Sie, wie Sie manuelle und standardmäßige Nachverfolgungsverluste in einer Unity Mixed Reality-App behandeln.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, Nachverfolgung von Verlusten, Abbild Verlust, Abruf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Unity, Nachverfolgungsverlust, Nachverfolgung von Verlustbildern, Abruf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: fe11c88bec60042901bd7ebb5c55116da97b6e28f0e44e889ef517a03d67245a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009850"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211352"
 ---
 # <a name="tracking-loss-in-unity"></a>Verfolgbarkeitsverlust in Unity
 
-Wenn das Gerät sich nicht auf der ganzen Welt finden kann, kann der APP-Verlust nachverfolgt werden. Standardmäßig hält Unity die Update Schleife an und zeigt dem Benutzer jedes Mal ein Begrüßungs Bild an, wenn die Nachverfolgung verloren geht. Nachdem die Nachverfolgung wieder hergestellt wurde, wird das Begrüßungs Bild entfernt, und die Update-Schleife wird fortgesetzt.
+Wenn sich das Gerät nicht auf der Welt platzieren kann, kommt es in der App zu "Nachverfolgungsverlust". Standardmäßig hält Unity die Updateschleife an und zeigt dem Benutzer jedes Mal ein Begrüßungsbild an, wenn die Nachverfolgung verloren geht. Sobald die Nachverfolgung wiederherzustellen ist, wird das Begrüßungsimage entfernt, und die Updateschleife wird fortgesetzt.
 
-Als Alternative kann der Benutzer diesen Übergang manuell durchführen, indem er die Einstellung auslässt. Der gesamte Inhalt wird beim Nachverfolgen des Verlusts als Text gesperrt angezeigt, wenn er nicht verarbeitet wird.
+Alternativ kann der Benutzer diesen Übergang manuell behandeln, indem er die Einstellung abschalten kann. Der gesamte Inhalt scheint während des Nachverfolgungsverlusts gesperrt zu werden, wenn nichts zur Behandlung des Inhalts unternommen wird.
 
 ## <a name="default-handling"></a>Standardbehandlung
 
-Die Update Schleife und alle Meldungen und Ereignisse werden für die Dauer der standardmäßigen Nachverfolgung von Verlusten angehalten. Gleichzeitig wird dem Benutzer ein Bild angezeigt. Sie können dieses Bild anpassen, indem Sie zu Edit->Settings->Player wechseln, auf Begrüßungs Bild klicken und das Image der Holographic-nach Verfolgungs Verluste festlegen.
+Die Updateschleife und alle Nachrichten und Ereignisse werden standardmäßig für die Dauer der Nachverfolgung von Verlusten beendet. Gleichzeitig wird dem Benutzer ein Bild angezeigt. Sie können dieses Bild anpassen, indem Sie zu >Einstellungen->Player bearbeiten, auf Begrüßungsbild klicken und das Bild Holographic Tracking Loss festlegen.
 
-## <a name="manual-handling"></a>Manuelle Behandlung
+## <a name="manual-handling"></a>Manuelle Verarbeitung
 
-Um den nach Verfolgungs Verlust manuell zu behandeln, müssen Sie mit  >  **Projekteinstellungen** bearbeiten  >    >  **universelle Windows-Plattform Registerkarte "Einstellungen**"  >    >  **Windows Holographic** auf der Registerkarte "Einstellungen" die Option "bei Nachverfolgung von Verlusten anhalten und Bild anzeigen" deaktivieren. Danach müssen Sie die Nachverfolgung von Änderungen mit den unten angegebenen APIs verarbeiten.
+Zum manuellen Behandeln von Nachverfolgungsverlusten müssen Sie zur Registerkarte **Einstellungen** für die universelle Project Einstellungen Windows Plattform von Player bearbeiten Windows Holographic wechseln und  >    >    >    >    >   "Bei Nachverfolgungsverlust anhalten und Bild anzeigen" deaktivieren. Danach müssen Sie die Nachverfolgung von Änderungen mit den unten angegebenen APIs verarbeiten.
 
-**Namespace:** *unityengine. XR. WSA*<br>
-**Typ:** *worldmanager*
+**Namespace:** *UnityEngine.XR.WSA*<br>
+**Typ:** *WorldManager*
 
-* World Manager macht ein Ereignis verfügbar, um die Nachverfolgung verlorener/ermittelter Objekte (*worldmanager. onpositionzudnorstatechanged*) und eine Eigenschaft zum Abfragen des aktuellen Zustands ("*worldmanager. State*") zu erkennen.
-* Wenn der Überwachungs Status nicht aktiv ist, wird die Kamera anscheinend nicht in der virtuellen Welt übersetzt, auch wenn der Benutzer Sie übersetzt. Objekte entsprechen keinem physischen Speicherort, und alle werden als gesperrt angezeigt.
+* World Manager macht ein Ereignis verfügbar, um verlorene/gewonnene Nachverfolgungen zu erkennen (*WorldManager.OnPositionalLocatorStateChanged*) und eine Eigenschaft zum Abfragen des aktuellen Zustands (*WorldManager.state*).
+* Wenn der Nachverfolgungszustand nicht aktiv ist, scheint die Kamera nicht in der virtuellen Welt zu übersetzen, selbst wenn der Benutzer übersetzt. Objekte entsprechen nicht mehr jeder physischen Position, und alle werden als textgesperrt angezeigt.
 
-Wenn Sie nach Verfolgungs Änderungen allein behandeln, müssen Sie entweder die State-Eigenschaft jedes Frames abrufen oder das *onpositionzuonorstatechanged* -Ereignis behandeln.
+Wenn Sie die Nachverfolgung von Änderungen selbst verarbeiten, müssen Sie entweder die Zustandseigenschaft für jeden Frame abfragen oder das *OnPositionalLocatorStateChanged-Ereignis* behandeln.
 
 ### <a name="polling"></a>Abruf
 
-Der wichtigste Status ist *positionzustatusorstate. Active*, was bedeutet, dass die Nachverfolgung voll funktionsfähig ist. Jeder andere Status führt nur zu Rotations Delta-zu-Haupt-Kameras. Beispiel:
+Der wichtigste Zustand ist *PositionalLocatorState.Active.* Dies bedeutet, dass die Nachverfolgung voll funktionsfähig ist. Jeder andere Zustand führt nur zu Drehdelta zur Hauptkamera. Beispiel:
 
 ```cs
 void Update()
@@ -58,9 +58,9 @@ void Update()
 }
 ```
 
-### <a name="handling-the-onpositionallocatorstatechanged-event"></a>Behandeln des onpositiondeponorstatechanged-Ereignisses
+### <a name="handling-the-onpositionallocatorstatechanged-event"></a>Behandeln des OnPositionalLocatorStateChanged-Ereignisses
 
-Bequemer ist, dass Sie *onpositiondepingorstatechanged* auch abonnieren können, um die Übergänge zu handhaben:
+Sie können *onPositionalLocatorStateChanged* auch abonnieren, um die Übergänge zu verarbeiten:
 
 ```cs
 void Start()
@@ -83,4 +83,4 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Behandeln von nach Verfolgungs Verlusten in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)
+* [Behandeln von Nachverfolgungsverlusten in DirectX](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

@@ -1,16 +1,16 @@
 ---
-title: Unity AR-Kameraeinstellungen
+title: Unity-AR-Kameraeinstellungen
 description: Dokumentation zur Verwendung der AR-Kamera in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, AR-Kamera,
-ms.openlocfilehash: e1c032805bc4b733cfcc51e1ceac5096c73715cf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: a2d145823557b473bd7d34170b283e782151c24277b8f16586516ffe78f8e735
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210064"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Unity AR-Kameraeinstellungsanbieter
 
@@ -20,29 +20,29 @@ Der Unity AR-Kameraeinstellungsanbieter ist eine experimentelle MRTK-Komponente,
 
 ![Konfiguration der Unity AR-Kameraeinstellungen](../images/camera-system/UnityArSettingsConfiguration.png)
 
-Eine Anleitung zum Hinzufügen des Anbieters zu Ihrer Szene: [Konfigurieren von MRTK für iOS und Android](../../supported-devices/using-ar-foundation.md)
+Eine Anleitung zum Hinzufügen des Anbieters zu Ihrer Szene: [Konfigurieren des MRTK für iOS und Android](../../supported-devices/using-ar-foundation.md)
 
 ### <a name="tracking-settings"></a>Nachverfolgungseinstellungen
 
-Der Unity AR-Kameraeinstellungsanbieter ermöglicht Konfigurationsoptionen für die Nachverfolgung. Diese Einstellungen sind spezifisch für die Implementierung des Unity AR-Kameraeinstellungsanbieters.
+Der Unity AR-Kameraeinstellungsanbieter ermöglicht Konfigurationsoptionen für die Nachverfolgung. Diese Einstellungen gelten speziell für die Implementierung des Unity AR-Kameraeinstellungsanbieters.
 
-**Pose-Quelle**
+**Posenquelle**
 
-Die Posenquelle definiert die verfügbaren Typen von Augmented Reality-Nachverfolgungsposen. Im Allgemeinen werden diese Werte einer Komponente des Geräts zugeordnet, auf dem die Anwendung ausgeführt wird.
+Die Posenquelle definiert die verfügbaren Arten von Augmented Reality-Nachverfolgungsposen. Im Allgemeinen werden diese Werte einer Komponente des Geräts, auf dem die Anwendung ausgeführt wird, zuordnen.
 
 Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben.
 
 | Option | Beschreibung |
 | --- | --- |
-| Zentrum | Das mittlere Auge eines mit dem Kopf bestückten Geräts. |
+| Zentrum | Das zentrierte Auge eines mit dem Kopf gelagerten Geräts. |
 | Farbkamera | Die Farbkamera eines mobilen Geräts. |
-| Head | Das Kopfauge eines mit dem Kopf bestückten Geräts, häufig etwas über dem mittleren Auge. |
-| Linkes Auge | Das linke Auge eines auf dem Kopf installierten Geräts. |
-| Linke Pose | Die linke Controllerpose. |
-| Rechtes Auge | Das rechte Auge eines am Kopf eingebauten Geräts. |
-| Rechte Pose | Die rechte Controllerpose. |
+| Head | Das Kopf-Auge eines geräts, das mit dem Kopf bereitgestellt wird, häufig etwas über dem zentrierten Auge. |
+| Linkes Auge | Das linke Auge eines mit dem Kopf bereitgestellten Geräts. |
+| Linke Pose | Die Linke Controller-Pose. |
+| Rechtes Auge | Das rechte Auge eines mit dem Kopf gelagerten Geräts. |
+| Rechte Pose | Die Rechte Controller-Pose. |
 
-Der Standardwert für die Posenquelle ist **Farbkamera**, um eine transparente Anzeige auf mobilen Geräten wie einem Smartphone oder Tablet zu ermöglichen.
+Der Standardwert für die Posenquelle ist **Color Camera**, um eine transparente Anzeige auf mobilen Geräten wie einem Smartphone oder Tablet zu ermöglichen.
 
 **Überwachungstyp**
 
@@ -56,23 +56,23 @@ Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben.
 | Drehung | Die Drehung des Geräts. |
 | Drehung und Position | Die Position und Drehung des Geräts. |
 
-Der Standardwert für den Nachverfolgungstyp ist **Drehung und Position**, um die größtmögliche Nachverfolgungserfahrung zu ermöglichen.
+Der Standardwert für den Nachverfolgungstyp ist **Drehung und Position,** um eine umfassende Nachverfolgungserfahrung zu ermöglichen.
 
 **Updatetyp**
 
-Der Updatetyp definiert, an welchen Punkten während der Frameverarbeitung die Pose-Daten entnommen werden.
+Der Updatetyp definiert, an welchen Punkten während der Frameverarbeitung die Posendaten entnommen werden.
 
 Die verfügbaren Optionen werden in der folgenden Tabelle beschrieben.
 
 | Option | Beschreibung |
 | --- | --- |
-| Vor dem Rendern | Direkt vor dem Rendern. |
-| Aktualisieren | Während der Aktualisierungsphase des Frames. |
-| Aktualisieren von und vor dem Rendern | Während der Aktualisierungsphase und direkt vor dem Rendern. |
+| Vor dem Rendern | Kurz vor dem Rendering. |
+| Update | Während der Aktualisierungsphase des Frames. |
+| Aktualisieren und vor dem Rendern | Während der Updatephase und kurz vor dem Rendering. |
 
-Der Standardwert für den Nachverfolgungstyp lautet **Update and Before Render**, um die niedrigste Nachverfolgungslatenz zu ermöglichen.
+Der Standardwert für den Nachverfolgungstyp ist **Update und vor dem Rendern,** um die niedrigste Nachverfolgungslatenz zu ermöglichen.
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Kamerasystemübersicht](camera-system-overview.md)
-- [Erstellen eines Kameraeinstellungsanbieters](create-settings-provider.md)
+- [Erstellen eines Kameraanbieters Einstellungen](create-settings-provider.md)

@@ -1,21 +1,21 @@
 ---
-title: Start Geste
-description: Erfahren Sie, wie Sie mit der Start Bewegung das Startmenü auf hololens und in Windows Mixed Reality-immersiven Headsets aufzurufen.
+title: Startgeste
+description: Erfahren Sie, wie Sie die Startgeste verwenden, um das Startmenü auf HoloLens und Windows Mixed Reality immersiven Headsets aufzurufen.
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: Gemischte Realität, Gesten, Interaktion, Entwurf, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens, mrtk, Mixed Reality Toolkit, Bloom
-ms.openlocfilehash: d0f3bd81cab945a01a523806ebaf4546752d74c1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Mixed Reality, Gesten, Interaktion, Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Bloom
+ms.openlocfilehash: f3ad9309c7232f20a25060b1d98d7374272ceea00f24be18d7263b8ec7002fb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213740"
 ---
-# <a name="start-gesture"></a>Start Geste
+# <a name="start-gesture"></a>Startgeste
 
-Die Start Geste ist eine Handbewegung, mit der das Startmenü aufgerufen wird. Dies entspricht dem Drücken der Windows-Taste auf den Tastaturen, der Xbox-Schaltfläche auf Xbox-Controllern oder der Windows-Schaltfläche auf immersiven Headset-Motion-Controllern. Achten Sie besonders auf die Gesten der reservierten Systeme auf jedem gemischten Reality-Gerät, um Konflikte beim Entwerfen von Interaktionen zu vermeiden.
+Die Startgeste ist eine Handgeste, die zum Aufrufen des Startmenüs verwendet wird. Dies entspricht dem Drücken der Windows-Taste auf Tastaturen, der Xbox-Taste auf Xbox-Controllern oder der Windows-Taste auf immersiven Headset-Motion-Controllern. Achten Sie besonders auf reservierte Systemgesten auf jedem Mixed Reality Gerät, um Konflikte beim Entwerfen von Interaktionen zu vermeiden.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -39,13 +39,13 @@ Die Start Geste ist eine Handbewegung, mit der das Startmenü aufgerufen wird. D
         <td>❌</td>
     </tr>
      <tr>
-        <td>Handgelenk Taste</td>
+        <td>Handflächenschaltfläche</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
     </tr>
     <tr>
-        <td>Eye-und Palmen Pfeil nach oben</td>
+        <td>Anvisieren mit den Augen und Anheften der Handfläche</td>
         <td>❌</td>
         <td>✔️</td>
         <td>❌</td>
@@ -54,16 +54,16 @@ Die Start Geste ist eine Handbewegung, mit der das Startmenü aufgerufen wird. D
 
 ## <a name="bloom"></a>Blüte
 
-Wir haben "Bloom" entworfen, um das Startmenü in hololens (1st Gen) aufzurufen. Dies ist eine symbolische Geste, die eine Blüten Blüte imitiert. Es ist eine besondere Interaktion, eine einfache Verwendung und eine schnelle Erinnerung. Wenn Sie die Geste verwenden möchten, halten Sie Ihre Hand an Ihre Hand, um die Hand zu öffnen, und öffnen Sie dann die Hand, indem Sie Ihre Finger verteilen.
+Wir haben "Bloom" entwickelt, um das Startmenü in HoloLens (1. Generation) zu öffnen. Dabei handelt es sich um eine symbolische Geste, die eine Blume imitiert. Sie ist einzigartig für eine sichere Interaktion, einfache Verwendung und schnelle Rückrufe. Um die Geste zu verwenden, halten Sie ihre Hand mit der Handfläche und den Fingerspitzen zusammen, und öffnen Sie ihre Hand, indem Sie ihre Finger verteilen.
 
 :::row:::
     :::column:::
-        ![Schließen der Blüte](images/bloom-close.png)<br>
-        **Schritt 1: überschreiten der Hand.**<br>
+        ![Bloom close](images/bloom-close.png)<br>
+        **Schritt 1: Handfläche nach oben mit fingertips together**<br>
     :::column-end:::
     :::column:::
-        ![Geöffnet, geöffnet](images/bloom-open.png)<br>
-        **Schritt 2: überschreiten der handbreiten Verteilung**<br>
+        ![Bloom open](images/bloom-open.png)<br>
+        **Schritt 2: Handfläche nach oben mit fingertips spread**<br>
     :::column-end:::
 :::row-end:::
 
@@ -71,18 +71,18 @@ Wir haben "Bloom" entworfen, um das Startmenü in hololens (1st Gen) aufzurufen.
 
 ---
 
-## <a name="start-gesture"></a>Start Geste
+## <a name="start-gesture"></a>Startgeste
 
-In hololens 2 wurde die Blüte Bewegung durch eine virtuelle Handgelenk Schaltfläche ersetzt, die für Benutzer besser instanzieller ist. Wenn die Benutzer die Schaltfläche auf dem Handgelenk anzeigt, können Sie sie intuitiv erreichen und mit der anderen Seite drücken.
+In HoloLens 2 haben wir die Geste "Bloom" durch eine virtuelle Handschaltfläche ersetzt, die für Benutzer instinktiver ist. Indem sie Benutzern die Schaltfläche auf dem Handband zeigen, können sie intuitiv auf die Hand stoßen und sie mit der anderen Hand drücken.
 
 :::row:::
     :::column:::
-        ![Handgelenk Taste](images/wrist-button-ready.png)<br>
-        **Schritt 1: Palme zum Anzeigen der Schaltfläche "Handgelenk"**<br>
+        ![Handschaltfläche bereit](images/wrist-button-ready.png)<br>
+        **Schritt 1: Handfläche nach oben, um die Handfläche anzuzeigen**<br>
     :::column-end:::
     :::column:::
-        ![Handgelenk Taste drücken](images/wrist-button-press.png)<br>
-        **Schritt 2: Klicken Sie auf das Handgelenk.**<br>
+        ![Schaltfläche "Handdruck" drücken](images/wrist-button-press.png)<br>
+        **Schritt 2: Drücken der Handfläche**<br>
     :::column-end:::
 :::row-end:::
 
@@ -90,23 +90,23 @@ In hololens 2 wurde die Blüte Bewegung durch eine virtuelle Handgelenk Schaltfl
 
 ---
 
-## <a name="one-handed-start-gesture"></a>Einstufige Start Geste
+## <a name="one-handed-start-gesture"></a>Einhändige Startgeste
 
 > [!IMPORTANT]
-> Damit die einstufige Start Geste funktioniert:
+> Voraussetzungen, damit die einhändige Startgeste funktioniert:
 >
-> 1. Sie müssen ein Update auf das Update von November 2019 (Build 18363,1039) oder höher durch haben.
-> 1. Die Augen müssen auf dem Gerät so kalibriert werden, dass die Eye-Nachverfolgung ordnungsgemäß funktioniert. Wenn Sie keine Umkreis Punkte um das Start Symbol sehen, wenn Sie es betrachten, werden die Augen nicht auf dem Gerät gekalibriert.
+> 1. Sie müssen auf das Update vom November 2019 (Build 18363.1039) oder höher aktualisieren.
+> 1. Ihre Augen müssen auf dem Gerät kalibriert sein, damit die Blickverfolgung ordnungsgemäß funktioniert. Wenn Sie beim Betrachten des Startsymbols keine umlaufenden Punkte sehen, sind Ihre Augen nicht für das Gerät kalibriert.
 
-Sie können auch die Start Geste nur mit einer Hand verwenden. Halten Sie Ihre Hand mit Ihrer Hand, und sehen Sie sich das **Start Symbol** auf Ihrem inneren Handgelenk an. **Wenn Sie das Symbol gedrückt halten**, können Sie den Ziehpunkt und den Finger des Indexes zusammenhalten.<br>
+Sie können die Startgeste auch nur mit einer Hand verwenden. Halten Sie Ihre Hand mit der Hand, und sehen Sie sich das **Startsymbol** auf Ihrem inneren Handband an. **Während Sie das Symbol im Auge behalten**, führen Sie Daumen und Zeigefinger zusammen.<br>
 :::row:::
     :::column:::
-        ![Handgelenk Taste](images/wrist-button-ready.png)<br>
-        **Schritt 1: Palme zum Anzeigen der Schaltfläche "Handgelenk"**<br>
+        ![Handschaltfläche bereit](images/wrist-button-ready.png)<br>
+        **Schritt 1: Handfläche nach oben, um die Handfläche anzuzeigen**<br>
     :::column-end:::
     :::column:::
-        ![Handgelenk Schaltfläche](images/wrist-button-pinch.png)<br>
-        **Schritt 2: Augenblick auf die Schaltfläche und dann auf die Schaltfläche**<br>
+        ![Handdruckknöpfe](images/wrist-button-pinch.png)<br>
+        **Schritt 2: Anvisieren mit den Augen auf die Schaltfläche und anschließendes Drücken**<br>
     :::column-end:::
 :::row-end:::
 
@@ -114,8 +114,8 @@ Sie können auch die Start Geste nur mit einer Hand verwenden. Halten Sie Ihre H
 
 ---
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 * [Instinktive Interaktionen](interaction-fundamentals.md)
-* [Augenblick](eye-tracking.md)
+* [Anväuten mit den Augen](eye-tracking.md)
 * [Spracheingabe](voice-input.md)

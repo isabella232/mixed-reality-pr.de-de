@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, Gaze,
-ms.openlocfilehash: 95dad85ca8154d35f73906b53019d3a52ced546f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a9d97ef73a7014a46001cbd42281c5ab28f6cf425dfd7605ce5b3c8c7fc45198
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176913"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208432"
 ---
 # <a name="gaze"></a>Anvisieren
 
-[Anving](/windows/mixed-reality/gaze) ist eine Form der Eingabe, die mit der Welt interagiert, je nach Dem, wo der Benutzer sucht. Anvisierte Anvisierte sind in zwei verschiedenen Varianten vorhanden.
+[Anving](/windows/mixed-reality/gaze) ist eine Form der Eingabe, die mit der Welt interagiert, je nach Dem, wo der Benutzer sucht. Anvisiertes Anvisiertes gibt es in zwei verschiedenen Varianten.
 
 ## <a name="head-gaze"></a>Anvisieren mit dem Kopf
 
@@ -24,7 +24,7 @@ Das Anvieren mit dem Kopf ist HoloLens 1-Stilinteraktionen zugeordnet, bei denen
 
 ## <a name="eye-gaze"></a>Anvisieren mit den Augen
 
-Diese Art des Anvings basiert darauf, wo die Augen des Benutzers aussehen. Das Anvieren mit den Augen ist nur auf Systemen vorhanden, die Eyetracking unterstützen. Weitere Informationen [zur Verwendung des](eye-tracking/eye-tracking-main.md) Anvings mit den Augen finden Sie in der Eyetrackingdokumentation.
+Diese Art des Anvings basiert darauf, wo die Augen des Benutzers aussehen. Das Anvieren mit den Augen ist nur auf Systemen vorhanden, die eye tracking unterstützen. Weitere Informationen [zur Verwendung des](eye-tracking/eye-tracking-main.md) Anvings mit den Augen finden Sie in der Eyetrackingdokumentation.
 
 ## <a name="gazeprovider"></a>GazeProvider
 
@@ -36,13 +36,13 @@ Wie andere Eingabequellen interagiert der Anvinganbieter mit Objekten in der Sze
 Im Fall des Anvitator wird sein Zeiger über implementiert und nicht `InternalGazePointer` über ein Profil konfiguriert.
 
 Es ist möglich, den anvisierten GazeProvider  durch eine alternative Implementierung zu ersetzen, indem Sie den Typ des Anvisierten Anbieters ändern, um auf eine andere Klasse zu verweisen, die [IMixedRealityProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider) und [IMixedRealityEyeProvider implementiert.](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityEyeGazeProvider)
-Es wird im Allgemeinen empfohlen, den Anvisierungsanbieter (und das Melden von Problemen beim Auffinden von Fehlern) zu verwenden, da die erneute Implementierung von GazeProvider nicht trivial ist.
+Im Allgemeinen wird empfohlen, den Anvisierungsanbieter (und das Melden von Problemen beim Auffinden von Fehlern) zu verwenden, da die erneute Implementierung von GazeProvider nicht trivial ist.
 
 ### <a name="alternative-platform-provided-gaze-poses"></a>Alternative von der Plattform bereitgestellte Anv gaze-Posen
 
 Standardmäßig verwendet der MRTK GazeProvider die Mitte des Kamerarahmens als Anving-Ursprung. Einige Plattformen, z. B. Windows Mixed Reality auf HoloLens 2, bieten eine alternativ definierte Anvingpose. Dies wird über die `Use Head Gaze Override` Einstellung in den Einstellungen für das Anvingen verwaltet. Wenn diese Option aktiviert ist, wird die Außerkraftsetzung des alternativen Anvings verwendet. Wenn diese Deaktiviert ist, wird der Standard-Frame center-Ursprung verwendet. Insbesondere für HoloLens 2 wird der Anvierungswinkel um mehrere Grad erhöht, um den Komfort des Benutzers bei der Verwendung des Kopfs für die Zieladressierung zu berücksichtigen.
 
-## <a name="usage"></a>Verwendung
+## <a name="usage"></a>Verbrauch
 
 ### <a name="how-get-the-current-gaze-target"></a>So erhalten Sie das aktuelle Anvingziel
 

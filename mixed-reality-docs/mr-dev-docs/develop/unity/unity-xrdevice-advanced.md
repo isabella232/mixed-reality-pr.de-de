@@ -1,37 +1,37 @@
 ---
 title: Native Mixed Reality-Objekte in Unity
-description: Erfahren Sie, wie Sie mit dem XR-Namespace Zugriff auf zugrunde liegende Holographic Native-Objekte in Unity erhalten.
+description: Erfahren Sie, wie Sie mithilfe des XR-Namespace Zugriff auf zugrunde liegende native Holographic-Objekte in Unity erhalten.
 author: vladkol
 ms.author: vladkol
 ms.date: 02/25/2021
 ms.topic: article
-keywords: Unity, Mixed Reality, Native, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, ispatialcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+keywords: Unity, Mixed Reality, nativ, xrdevice, spatialcoordinatesystem, holographicframe, holographiccamera, islipalcoordinatesystem, iholographicframe, iholographiccamera, getnativeptr, mixed reality headset, windows mixed reality headset, virtual reality headset
+ms.openlocfilehash: 63ee9c33a972cb918f141df3b4c1608a561b96dc5c37910deb77b089f7be69b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475073"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208401"
 ---
-# <a name="mixed-reality-native-interop-in-unity"></a>Gemischte Realität Native Interop in Unity
+# <a name="mixed-reality-native-interop-in-unity"></a>Native Mixed Reality-Interop in Unity
 
-Jede Mixed Reality-APP [erhält einen holographicspace](../native/getting-a-holographicspace.md) , bevor Sie mit dem Empfang von Kameradaten und renderingframes beginnt. In Unity übernimmt die Engine die Schritte für Sie, die Verarbeitung von Holographic-Objekten und die interne Aktualisierung im Rahmen der Renderingschleife.
+Jede Mixed Reality-App [erhält einen HolographicSpace,](../native/getting-a-holographicspace.md) bevor sie mit dem Empfang von Kameradaten und Renderingframes beginnt. In Unity übernimmt die Engine diese Schritte für Sie, um Holographic-Objekte zu behandeln und intern als Teil der Renderschleife zu aktualisieren.
 
-In erweiterten Szenarien müssen Sie jedoch möglicherweise Zugriff auf die zugrunde liegenden systemeigenen Objekte erhalten, wie z. b. <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">holographiccamera</a> und Current <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">holographicframe</a>.
+In erweiterten Szenarien müssen Sie jedoch möglicherweise Zugriff auf die zugrunde liegenden nativen Objekte wie <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> und den aktuellen <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame erhalten.</a>
 
 [!INCLUDE[](includes/unity-native-ptrs.md)]
 
-### <a name="unmarshaling-native-pointers"></a>Nicht Marshalling nativer Zeiger
+### <a name="unmarshaling-native-pointers"></a>Unmarshaling nativer Zeiger
 
-Nachdem Sie den `IntPtr` von einer der oben genannten Methoden (nicht benötigt für mrtk) erhalten haben, verwenden Sie die folgenden Code Ausschnitte, um Sie in verwaltete Objekte zu Mars Hallen.
+Verwenden Sie nach dem Abrufen von aus einer der oben genannten Methoden (für MRTK nicht erforderlich) die folgenden Codeausschnitte, um sie in verwaltete `IntPtr` Objekte zu marshallen.
 
-Wenn Sie [Microsoft. Windows. mixedreality. dotnetwinrt](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)verwenden, können Sie mithilfe der-Methode ein verwaltetes Objekt aus einem nativen Zeiger erstellen `FromNativePtr()` :
+Wenn Sie [Microsoft.Windows. MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT): Sie können ein verwaltetes Objekt mithilfe der -Methode aus einem nativen Zeiger `FromNativePtr()` erstellen:
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(spatialCoordinateSystemPtr);
 ```
 
-Verwenden Sie andernfalls `Marshal.GetObjectForIUnknown()` und in den gewünschten Typ:
+Verwenden Sie `Marshal.GetObjectForIUnknown()` andernfalls , und geben Sie sie in den von Ihnen angegebenen Typ um:
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -39,9 +39,9 @@ var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Wi
 #endif
 ```
 
-### <a name="converting-between-coordinate-systems"></a>Zwischen Koordinatensystemen
+### <a name="converting-between-coordinate-systems"></a>Konvertieren zwischen Koordinatensystemen
 
-Unity verwendet ein Links händiges Koordinatensystem, während die Windows-perception-APIs rechts gerichtete Koordinatensysteme verwenden. Zum Konvertieren zwischen diesen beiden Konventionen können Sie die folgenden Hilfsprogramme verwenden:
+Unity verwendet ein linkshändiges Koordinatensystem, während die Windows Perception-APIs rechtshändige Koordinatensysteme verwenden. Um zwischen diesen beiden Konventionen zu konvertieren, können Sie die folgenden Hilfsatoren verwenden:
 
 ```cs
 namespace NumericsConversion
@@ -67,14 +67,14 @@ namespace NumericsConversion
 }
 ```
 
-### <a name="using-holographicframe-native-data"></a>Verwenden von systemeigenen holographicframe-Daten
+### <a name="using-holographicframe-native-data"></a>Verwenden nativer HolographicFrame-Daten
 
 > [!NOTE]
-> Das Ändern des Zustands der systemeigenen Objekte, die über holographicframenativedata empfangen werden, kann zu unvorhersehbarem Verhalten und Rendern von Artefakten führen, insbesondere dann, wenn Unity auch für denselben Zustand verantwortlich ist.  Sie sollten z. b. holographicframe. updatecurrentvorhersage nicht aufrufen, oder andernfalls ist die Pose-Vorhersage, die Unity mit diesem Frame rendert, nicht mit der von Windows erwarteten Pose synchron. Dadurch wird die [– Hologramm-Stabilität](../platform-capabilities-and-apis/hologram-stability.md)reduziert.
+> Das Ändern des Zustands der nativen Objekte, die über HolographicFrameNativeData empfangen werden, kann zu unvorhersehbarem Verhalten und Renderingartefakten führen, insbesondere dann, wenn Unity denselben Zustand ebenfalls verursacht.  Sie sollten z. B. HolographicFrame.UpdateCurrentPrediction nicht aufrufen, da die Vorhersage der Posen, die Unity mit diesem Frame rendert, nicht mit der von Windows zu erwartenden Pose synchron ist, wodurch die [Hologrammstabilität](../platform-capabilities-and-apis/hologram-stability.md)reduziert wird.
 
-Wenn Sie Zugriff auf systemeigene Schnittstellen für Rendering-oder Debuggingzwecke benötigen, verwenden Sie Daten von holographicframenativedata in ihren systemeigenen Plug-ins oder c#-Code.
+Wenn Sie zu Rendering- oder Debugzwecken Zugriff auf native Schnittstellen benötigen, verwenden Sie Daten aus HolographicFrameNativeData in Ihren nativen Plug-Ins oder C#-Code.
 
-Im folgenden finden Sie ein Beispiel dafür, wie Sie holographicframenativedata verwenden können, um die Vorhersage des aktuellen Frames für die Photonen Zeit mithilfe der XR SDK-Erweiterungen zu erhalten.
+Hier ist ein Beispiel dafür, wie Sie HolographicFrameNativeData verwenden können, um die Vorhersage des aktuellen Frames für die Photonenzeit mithilfe der XR SDK-Erweiterungen zu erhalten.
 
 ```cs
 using System;
@@ -101,7 +101,7 @@ public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 ## <a name="see-also"></a>Weitere Informationen
 
 * [Verwenden des Windows-Namespace mit Unity-Apps für HoloLens](using-the-windows-namespace-with-unity-apps-for-hololens.md)
-* <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">Spatialcoordinatesystem</a>
+* <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>
 * <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>
 * <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a>
 * [Rendern in DirectX](../native/rendering-in-directx.md)

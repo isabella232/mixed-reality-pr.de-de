@@ -1,84 +1,84 @@
 ---
 title: UMG und Tastatur in Unreal
-description: Erfahren Sie, wie Sie unbereichbewegungs Grafiken verwenden, um ein UI-System aus Widgets zu erstellen.
+description: Erfahren Sie, wie Sie unrealm Motion Graphics verwenden, um ein Benutzeroberflächensystem aus Widgets zu erstellen.
 author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
-keywords: Windows Mixed Reality, holograms, hololens 2, Eye Tracking, Blick Eingaben, Head-eingebundene Anzeige, Unreal Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Widgets, UI, Umschlag, unechte Bewegungsgrafiken, Unreal Engine, UE, UE4
-ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+keywords: Windows Mixed Reality, Hologramme, HoloLens 2, Blickverfolgung, Eingabe zum Anvisierten anvisierter Kopf, Unreal-Engine, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Widgets, BENUTZEROBERFLÄCHE, UMG, Unreal Motion Graphics, Unreal Engine, UE, UE4
+ms.openlocfilehash: 8cb1c804757332ce7b78f0cb92cf895b873c1835208962b20d5bbbfae4684785
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609761"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212804"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>UMG und Tastatur in Unreal
 
-Unreal Motion Graphics (Umschlag) ist das integrierte UI-System von Unreal Engine, das zum Erstellen von Schnittstellen wie Menüs und Textfeldern verwendet wird. Benutzeroberflächen, die mit "Umschlag" erstellt wurden, bestehen aus Widgets. Wir führen Sie durch die Erstellung eines neuen Widgets, das Hinzufügen zu einem Welt Raum und das Aktivieren der Interaktion mithilfe der System Tastatur als Beispiel. Weitere Informationen zu "gg" finden Sie in der offiziellen Unreal Engine- [Dokumentation](https://docs.unrealengine.com/en-US/Engine/UMG/index.html). 
+Unreal Motion Graphics (UMG) ist das integrierte Benutzeroberflächensystem der Unreal Engine, das zum Erstellen von Schnittstellen wie Menüs und Textfeldern verwendet wird. Benutzeroberflächen, die mit UMG erstellt wurden, bestehen aus Widgets. Wir führen Sie durch das Erstellen eines neuen Widgets, das Hinzufügen des Widgets zum Weltraum und das Aktivieren der Interaktion mithilfe der Systemtastatur als Beispiel. Weitere Informationen zu UMG finden Sie in der offiziellen Unreal [Engine-Dokumentation.](https://docs.unrealengine.com/en-US/Engine/UMG/index.html) 
 
-## <a name="create-a-new-widget"></a>Neues Widget erstellen
+## <a name="create-a-new-widget"></a>Erstellen eines neuen Widgets
 
-- Erstellen Sie eine widgeblaupause, um die Benutzeroberfläche des Spiels zu erstellen:
+- Erstellen Sie eine Widget-Blaupause, um die Benutzeroberfläche des Spiels zu gestalten:
 
-![Screenshot: Hinzufügen einer widgeblaupause aus dem Unreal-Menü](images/unreal-umg-img-01.png)
+![Screenshot: Hinzufügen einer Widget-Blaupause aus dem Unreal-Menü](images/unreal-umg-img-01.png)
 
-- Öffnen Sie den neuen Blueprint, und fügen Sie der Canvas Komponenten aus der Palette hinzu.  In diesem Fall haben wir zwei Text Feld Komponenten aus dem Abschnitt "Input" hinzugefügt:
+- Öffnen Sie die neue Blaupause, und fügen Sie der Canvas Komponenten aus der Palette hinzu.  In diesem Fall haben wir zwei Textfeldkomponenten aus dem Abschnitt "Eingabe" hinzugefügt:
 
-![Screenshot des Fensters "Hierarchie" mit hervorgehobener und erweiterter textwidget-Komponente](images/unreal-umg-img-02.png)
+![Screenshot des Hierarchiefensters mit hervorgehobener und erweiterter Textwidgetkomponente](images/unreal-umg-img-02.png)
 
-- Wählen Sie im Fenster Hierarchie oder Designer ein Widget aus, und ändern Sie die Parameter im Detail Panel.  In diesem Fall haben wir einige Standardwerte für "Hinweis Text" und eine Farben hinzugefügt, die angezeigt werden, wenn Sie mit dem Mauszeiger auf das Textfeld zeigen.  In einem Textfeld wird eine virtuelle Tastatur auf hololens angezeigt, wenn Sie mit folgenden Aktionen interagiert:
+- Wählen Sie im Hierarchie- oder Designerfenster ein Widget aus, und ändern Sie die Parameter im Detailbereich.  In diesem Fall haben wir eine Standardfarbe für "Hinweistext" und eine Tönungsfarbe hinzugefügt, die angezeigt wird, wenn Sie mit dem Mauszeiger auf das Textfeld zeigen.  In einem Textfeld wird eine virtuelle Tastatur auf HoloLens angezeigt, wenn sie mit interagiert:
 
-![Screenshot der geänderten Parameter im Hierarchie Fenster](images/unreal-umg-img-03.png)
+![Screenshot der geänderten Parameter im Hierarchiefenster](images/unreal-umg-img-03.png)
 
-- Ereignisse können auch im Detail Panel abonniert werden:
+- Ereignisse können auch im Detailbereich abonniert werden:
 
-![Screenshot der Ereignisse im Detail Panel](images/unreal-umg-img-04.png)
+![Screenshot der Ereignisse im Detailbereich](images/unreal-umg-img-04.png)
 
-## <a name="add-a-widget-to-world-space"></a>Hinzufügen eines Widgets zum Raum
+## <a name="add-a-widget-to-world-space"></a>Hinzufügen eines Widgets zum Weltraum
 
-- Erstellen Sie einen neuen Actor, fügen Sie eine widgekomponente hinzu, und fügen Sie den Actor der Szene hinzu:
+- Erstellen Sie einen neuen Actor, fügen Sie eine Widget-Komponente hinzu, und fügen Sie den Akteur der Szene hinzu:
 
-![Screenshot eines Actors mit angefügtem widget](images/unreal-umg-img-05.png)
+![Screenshot eines Akteurs mit angefügtem Widget](images/unreal-umg-img-05.png)
 
-- Legen Sie im Detailbereich für das Widget die **Widget-Klasse** auf die zuvor erstellte widgeblaupause fest:
+- Legen Sie im Detailbereich für das Widget die **Widget-Klasse** auf die zuvor erstellte Widget-Blaupause fest:
 
-![Screenshot des Bereichs "Blaupausen Details" mit der Widget-Klassensatz](images/unreal-umg-img-06.png)
+![Screenshot des Bereichs "Blaupausendetails" mit dem Widgetklassensatz](images/unreal-umg-img-06.png)
 
-- Vergewissern Sie sich bei einem textwidget, dass **Empfangs Hardware Eingabe** deaktiviert ist, sodass nur der zugehörige Text von der virtuellen Tastatur aktualisiert wird:
+- Stellen Sie für ein Textwidget sicher, dass **Die Option Hardwareeingabe empfangen** deaktiviert ist, sodass der Text nur über die virtuelle Tastatur aktualisiert wird:
 
-![Screenshot des Abschnitts "Interaktion" mit "Hardware Eingabe empfangen" ist nicht aktiviert](images/unreal-umg-img-07.png)
+![Screenshot des Interaktionsabschnitts mit deaktivierter Option "Empfangshardwareeingabe"](images/unreal-umg-img-07.png)
 
-## <a name="widget-interaction"></a>Widget-Interaktion
+## <a name="widget-interaction"></a>Widgetinteraktion
 
-In der Regel erhalten die-Widgets Eingaben von einer Maus.  Bei hololens oder VR müssen wir eine Maus mit einer Widget-Interaktions Komponente simulieren, um die gleichen Ereignisse zu erhalten.
+UMG-Widgets empfangen in der Regel Eingaben von einer Maus.  Auf HoloLens oder VR müssen wir eine Maus mit einer Widgetinteraktionskomponente simulieren, um die gleichen Ereignisse zu erhalten.
 
-- Erstellen Sie einen neuen Actor, fügen Sie eine **Widget-Interaktions** Komponente hinzu, und fügen Sie den Actor Ihrer Szene hinzu:
+- Erstellen Sie einen neuen Actor, fügen Sie eine **Widgetinteraktionskomponente** hinzu, und fügen Sie den Akteur Ihrer Szene hinzu:
 
-![Screenshot eines neuen Actors mit hervorgehobener Widget-Interaktions Komponente](images/unreal-umg-img-08.png)
+![Screenshot eines neuen Akteurs mit hervorgehobener Widgetinteraktionskomponente](images/unreal-umg-img-08.png)
 
-- Im Detail Panel für die Widget-Interaktions Komponente:
-    - Legen Sie die Interaktions Distanz auf den gewünschten Entfernungswert fest.
-    - Legen Sie die **Interaktions Quelle** auf **Custom** fest.
-    - Legen Sie für die Entwicklung die Einstellung **Debug anzeigen** auf **true** fest:
+- Im Detailbereich für die Widgetinteraktionskomponente:
+    - Legen Sie die Interaktionsentfernung auf den gewünschten Entfernungswert fest.
+    - Festlegen der **Interaktionsquelle** auf **"Benutzerdefiniert"**
+    - Legen Sie **für** die Entwicklung Debug anzeigen auf **TRUE** fest:
 
-![Screenshot der Eigenschaften der Widget-Interaktion und Debugkomponente](images/unreal-umg-img-09.png)
+![Screenshot der Eigenschaften der Widgetinteraktion und des Debuggens von Komponenten](images/unreal-umg-img-09.png)
 
-Der Standardwert für die Interaktions Quelle ist "World", der Raycasts basierend auf der Weltposition der Widget-Interaktions Komponente senden soll. In AR und VR ist das nicht der Fall.  Das Aktivieren von "Debuggen anzeigen" und das Hinzufügen eines Hover-tints zu Widgets ist wichtig, um zu überprüfen, ob die Komponente für die Widget-Interaktion  Die Problem Umgehung besteht darin, eine benutzerdefinierte Quelle zu verwenden und den raycast aus dem Hand Strahl im Ereignis Diagramm festzulegen.  
+Die Standardeinstellung für Interaction Source ist "World", die Raycasts basierend auf der Weltposition der Widgetinteraktionskomponente senden sollte. In AR und VR ist dies nicht der Fall.  Das Aktivieren von "Debuggen anzeigen" und das Hinzufügen eines Farbtons mit dem Mauszeiger zu Widgets ist wichtig, um zu überprüfen, ob die Interaktionskomponente des Widgets die erwarteten Aktivitäten vornimmt.  Die Problemumgehung besteht darin, eine benutzerdefinierte Quelle zu verwenden und den Raycast aus dem Handstrahl im Ereignisdiagramm festzulegen.  
 
-Hier rufen wir dies von der Ereignis Tick-Methode auf:
+Hier rufen wir dies aus Dem Ereignist tick auf:
 
-![Blaupause von Ereignis Tick](images/unreal-umg-img-10.png)
+![Blaupause des Ereignisticks](images/unreal-umg-img-10.png)
 
-Fügen Sie dann der Widget-Interaktions Komponente Ereignisse für virtuelle Mauszeiger hinzu, die auf hololens-Eingaben reagieren.  Senden Sie in diesem Fall ein linkes mousepress-Ereignis, wenn die Hand erfasst wird, und ein linkes mousereleaseereignis, wenn es nicht verstanden wird:
+Fügen Sie dann der Widgetinteraktionskomponente virtuelle Mauszeigerereignisse hinzu, die auf HoloLens Eingabe reagieren.  Senden Sie in diesem Fall ein Left Mouse-Press-Ereignis, wenn die Hand erkannt wird, und ein Left Mouse-Releaseereignis, wenn es nicht erkannt wird:
 
 ![Blaupause mit hinzugefügten Ereignissen für virtuelle Mauszeiger](images/unreal-umg-img-13.png)
 
-Wenn Sie die App nun in den hololens 2 bereitstellen, wird ein Hand Strahl angezeigt, der von der rechten Seite aus erweitert wird. Wenn Sie den Text in einem der bearbeitbaren Textfelder und der Luft tippen, wird die Tastatur des Systems vor Ihnen angezeigt, und Sie können Text eingeben. 
+Wenn Sie die App nun im HoloLens 2 bereitstellen, sehen Sie einen Handstrahl, der sich von ihrer rechten Hand aus erstreckt. Wenn Sie sie an eines der bearbeitbaren Textfelder und das Tippen in die Luft leiten, wird die Systemtastatur vor Ihnen angezeigt, und Sie können Text eingeben. 
  
 > [!NOTE]
-> Die hololens-System Tastatur erfordert Unreal Engine 4,26 oder höher. Außerdem wird die Tastatur nicht angezeigt, wenn Ihre APP aus dem Unreal-Editor nicht an das Headset gestreamt wird, sondern nur, wenn die APP auf dem Gerät ausgeführt wird.
+> Die HoloLens Systemtastatur erfordert Unreal Engine 4.26 oder höher. Darüber hinaus wird die Tastatur nicht angezeigt, wenn Ihre App nur dann vom Unreal-Editor an das Headset gestreamt wird, wenn die App auf dem Gerät ausgeführt wird.
 
 ## <a name="see-also"></a>Siehe auch:
-* [Die-um-Dokumentation zu Unreal](https://docs.unrealengine.com/Engine/UMG/index.html)
-* ["Ung"-Tutorials von Unreal](https://docs.unrealengine.com/Programming/Tutorials/UMG/index.html)
+* [UMG-Dokumentation von Unreal](https://docs.unrealengine.com/Engine/UMG/index.html)
+* [UMG-Tutorials von Unreal](https://docs.unrealengine.com/Programming/Tutorials/UMG/index.html)

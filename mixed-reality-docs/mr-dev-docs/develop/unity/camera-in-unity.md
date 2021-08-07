@@ -1,116 +1,116 @@
 ---
-title: Kamera Einrichtung in Unity
-description: Erfahren Sie, wie Sie die Hauptkamera von Unity für die Windows Mixed Reality-Entwicklung einrichten und verwenden, um Holographic Rendering durchzuführen.
+title: Kameraeinrichtung in Unity
+description: Erfahren Sie, wie Sie die Unity-Hauptkamera für die entwicklung Windows Mixed Reality holografisches Rendering einrichten und verwenden.
 author: keveleigh
 ms.author: kurtie
 ms.date: 03/25/2021
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Holographic-Rendering, Holographic, immersive, Fokuspunkt, tiefen Puffer, nur Ausrichtung, Positional, nicht transparent, transparent, Clip, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d3f69c6cf1889587b23b68259f22b34b89b925a4
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, holographic rendering, holographic, immersive, focus point, depth buffer, orientation-only, positional, opaque, transparent, clip, mixed reality headset, windows mixed reality headset, virtual reality headset
+ms.openlocfilehash: 1ac8c16e7bdd6b85b05c837e1a27fbd1e4cf4489ccb03d10ea5e952b2656cbe8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212293"
 ---
-# <a name="camera-setup-in-unity"></a>Kamera Einrichtung in Unity
+# <a name="camera-setup-in-unity"></a>Kameraeinrichtung in Unity
 
-Wenn Sie ein Mixed Reality-Headset durch tragen, wird es zur Mitte ihrer Holographic World. Die Unity- [Kamera](https://docs.unity3d.com/Manual/class-Camera.html) Komponente verarbeitet das stereorenderingrendering automatisch und folgt der Bewegung und Drehung des Kopfes. Sie sollten jedoch die unten beschriebenen Kameraeinstellungen festlegen, um die visuelle Qualität und die [Stabilität des Hologramms](../platform-capabilities-and-apis/hologram-stability.md)vollständig zu optimieren.
+Wenn Sie ein Mixed Reality-Headset tragen, wird es zum Mittelpunkt Ihrer holografischen Welt. Die [Unity-Kamerakomponente](https://docs.unity3d.com/Manual/class-Camera.html) verarbeitet automatisch stereodarstellungsspezifisches Rendering und folgt Ihrer Kopfbewegung und Drehung. Um jedoch die visuelle Qualität und Hologrammstabilität vollständig zu [optimieren,](../platform-capabilities-and-apis/hologram-stability.md)sollten Sie die unten beschriebenen Kameraeinstellungen festlegen.
 
-## <a name="hololens-vs-vr-immersive-headsets"></a>Hololens im Vergleich zu den von VR immersiven Headsets
+## <a name="hololens-vs-vr-immersive-headsets"></a>HoloLens im Vergleich zu immersiven VR-Headsets
 
-Die Standardeinstellungen für die Unity-Kamera-Komponente gelten für herkömmliche 3D-Anwendungen, die einen Skybox-ähnlichen Hintergrund benötigen, da Sie nicht über eine reale Welt verfügen.
+Die Standardeinstellungen für die Unity-Kamerakomponente gelten für herkömmliche 3D-Anwendungen, die einen Skybox-einheitlichen Hintergrund benötigen, da sie keine reale Welt haben.
 
-* Bei der Ausführung auf einem **[immersiven Headset](../../discover/immersive-headset-hardware-details.md)** Rendern Sie alles, was dem Benutzer angezeigt wird, und Sie möchten die Skybox wahrscheinlich behalten.
-* Wenn Sie jedoch auf einem **Holographic-Headset** wie [hololens](/hololens/hololens2-hardware)ausgeführt werden, sollte die reale Welt hinter der von der Kamera gerendert werden. Legen Sie den Kamera Hintergrund auf "transparent" (in hololens, schwarz rendert als transparent) anstelle einer Skybox-Textur fest:
-    1. Wählen Sie die Hauptkamera im Hierarchie Panel aus.
-    2. Suchen Sie im Inspektor-Panel die Kamera Komponente, und ändern Sie die Dropdown Liste Flag Löschen von Skybox in voll Tonfarbe.
-    3. Wählen Sie die Hintergrund Farbauswahl aus, und ändern Sie die RGBA-Werte in (0,0).
-        1. Wenn Sie diese Einstellung aus dem Code festlegen, können Sie Unity [`Color.clear`](https://docs.unity3d.com/ScriptReference/Color-clear.html)
+* Wenn Sie auf einem **[immersiven Headset](../../discover/immersive-headset-hardware-details.md)** ausführen, rendern Sie alles, was dem Benutzer angezeigt wird, und daher sollten Sie die Skybox behalten.
+* Wenn Sie jedoch auf einem **holografischen** Headset wie HoloLens [ausführen,](/hololens/hololens2-hardware)sollte die reale Welt hinter allem erscheinen, was die Kamera rendert. Legen Sie den Kamerahintergrund auf transparent (in HoloLens, schwarz wird als transparent gerendert) und nicht auf eine Skybox-Textur fest:
+    1. Auswählen der Hauptkamera im Hierarchiebereich
+    2. Suchen Sie im Inspektorbereich nach der Kamerakomponente, und ändern Sie die Dropdownliste Flags löschen von Skybox in Solid Color.
+    3. Wählen Sie die Hintergrundfarbauswahl aus, und ändern Sie die RGBA-Werte in (0, 0, 0, 0).
+        1. Wenn Sie dies über Code festlegen, können Sie Unity verwenden. [`Color.clear`](https://docs.unity3d.com/ScriptReference/Color-clear.html)
 
 [!INCLUDE[](includes/camera/opaque-camera-include.md)]
 
 ## <a name="camera-setup"></a>Kamerasetup
 
-Je nachdem, welche Art von Benutzeroberflächen Sie entwickeln, ist die Hauptkamera immer die primäre Stereo-renderingkomponente, die an die von Ihrem Gerät angefügte Anzeige angeschlossen ist. Es ist einfacher, Ihre APP zu entwerfen, wenn Sie sich die Anfangsposition des Benutzers als (X: 0, Y: 0, Z: 0) vorstellen. Da die Hauptkamera die Bewegung des Benutzers nachverfolgt, kann die Startposition des Benutzers festgelegt werden, indem die Startposition der Hauptkamera festgelegt wird.
+Unabhängig davon, welche Art von Erfahrung Sie entwickeln, ist die Hauptkamera immer die primäre Stereo-Renderingkomponente, die an die am Kopf angeschlossene Anzeige Ihres Geräts angefügt ist. Es ist einfacher, Ihre App zu gestalten, wenn Sie sich die Anfangsposition des Benutzers als (X: 0, Y: 0, Z: 0) vorstellen. Da die Hauptkamera die Bewegung des Kopfs des Benutzers nachverfolgt, kann die Anfangsposition des Benutzers durch Festlegen der Anfangsposition der Hauptkamera festgelegt werden.
 
-Die zentrale Entscheidung, die Sie treffen müssen, ist, ob Sie für hololens oder für VR-immersive Headsets entwickeln. Sobald dies der Fall ist, fahren Sie mit dem jeweiligen Einrichtungs Abschnitt fort.
+Die zentrale Wahl, die Sie treffen müssen, ist, ob Sie für immersive Headsets HoloLens VR entwickeln. Sobald Sie dies haben, fahren Sie mit dem Setupabschnitt ab, der angewendet wird.
 
-### <a name="hololens-camera-setup"></a>Hololens-Kamera-Setup
+### <a name="hololens-camera-setup"></a>HoloLens der Kameraeinrichtung
 
-Bei hololens-apps müssen Sie Anker für alle Objekte verwenden, die Sie in der Szene Umgebung sperren möchten. Es wird empfohlen, unbegrenzten Speicherplatz zur Maximierung der Stabilität und zum Erstellen von Ankern in mehreren Räumen zu verwenden.
+Für HoloLens-Apps müssen Sie Anker für alle Objekte verwenden, die Sie für die Szenenumgebung sperren möchten. Es wird empfohlen, ungebundenen Raum zu verwenden, um die Stabilität zu maximieren und Anker in mehreren Räumen zu erstellen.
 
 [!INCLUDE[](includes/camera/hololens-setup-include.md)]
 
-### <a name="vr-camera-setup"></a>Einrichtung der VR-Kamera
+### <a name="vr-camera-setup"></a>VR-Kameraeinrichtung
 
-Windows Mixed Reality unterstützt Apps über eine Vielzahl von [Skalierungs](../../design/coordinate-systems.md#mixed-reality-experience-scales)Möglichkeiten hinweg, von ausgerichteten und skalierbaren apps bis hin zu hochskalierbaren apps. Auf hololens können Sie weitere apps erstellen und Apps erstellen, mit denen Benutzer mehr als 5 Meter durchlaufen können, indem Sie eine ganze Etage eines Builds und darüber hinaus untersuchen.
+Windows Mixed Reality unterstützt Apps für eine Vielzahl [](../../design/coordinate-systems.md#mixed-reality-experience-scales)von Benutzererfahrungsskalieren, von Apps mit ausrichtungs- und platzskalierten Apps bis hin zu Raum-Apps. Auf HoloLens können Sie weiter gehen und weltweit Apps erstellen, mit denen Benutzer mehr als 5 Meter laufen und eine ganze Etage eines Gebäudes und darüber hinaus erkunden können.
 
-Der erste Schritt beim Aufbau einer gemischten Realität in Unity besteht darin, zu bestimmen [, welche Benutzer](../../design/coordinate-systems.md) Oberfläche Ihre APP als Ziel hat:
+Der erste Schritt beim Erstellen einer Mixed Reality-Erfahrung in Unity besteht in der Bestimmung, für welche Benutzererfahrung [Ihre](../../design/coordinate-systems.md) App verwendet werden soll:
 
-* [Ausrichtung oder sitzender Maßstab](../../design/coordinate-systems.md#building-an-orientation-only-or-seated-scale-experience)
-* [Die Position oder die Raum Skala](../../design/coordinate-systems.md#building-a-standing-scale-or-room-scale-experience)
-* [Weltweit skalieren](../../design/coordinate-systems.md#building-a-world-scale-experience)
+* [Ausrichtung oder skalierungsbasierte Ausrichtung](../../design/coordinate-systems.md#building-an-orientation-only-or-seated-scale-experience)
+* [Stehend oder Raummaßstab](../../design/coordinate-systems.md#building-a-standing-scale-or-room-scale-experience)
+* [Weltweit](../../design/coordinate-systems.md#building-a-world-scale-experience)
 
-#### <a name="room-scale-or-standing-experiences"></a>Raum-oder Steh Erfahrung
+#### <a name="room-scale-or-standing-experiences"></a>Raumskala- oder Stehenderfahrungen
 
 > [!NOTE]
-> Wenn Sie für HL2 erstellen, empfiehlt es sich, eine benutzerfreundliche Oberfläche zu erstellen, oder Sie sollten die Verwendung von [Szenen](../platform-capabilities-and-apis/scene-understanding-sdk.md) Informationen in Erwägung gezogen haben.
+> Wenn Sie für HL2 erstellen, empfiehlt es sich, eine Erfahrung auf Augenhöhe zu erstellen, oder erwägen Sie die Verwendung von [Scene Understanding,](../platform-capabilities-and-apis/scene-understanding-sdk.md) um den Boden Ihrer Szene zu verstehen.
 
 [!INCLUDE[](includes/camera/vr-setup-standing-include.md)]
 
-#### <a name="seated-experiences"></a>Sitzender Erfahrungs
+#### <a name="seated-experiences"></a>Besendung
 
 [!INCLUDE[](includes/camera/vr-setup-seated-include.md)]
 
-### <a name="setting-up-the-camera-background"></a>Einrichten des Kamera Hintergrunds
+### <a name="setting-up-the-camera-background"></a>Einrichten des Kamerahintergrunds
 
-Wenn Sie mrtk verwenden, wird der Hintergrund der Kamera automatisch konfiguriert und verwaltet. Für das XR SDK oder ältere WSA-Projekte empfiehlt es sich, den Hintergrund der Kamera auf hololens auf "Solid Black" festzulegen und die Skybox für VR beizubehalten.
+Wenn Sie MRTK verwenden, wird der Hintergrund der Kamera automatisch konfiguriert und verwaltet. Für XR SDK- oder Legacy-WSA-Projekte empfiehlt es sich, den Hintergrund der Kamera auf dem HoloLens auf solid black zu setzen und die Skybox für VR zu behalten.
 
 ## <a name="using-multiple-cameras"></a>Verwenden mehrerer Kameras
 
-Wenn in der Szene mehrere Kamerakomponenten vorhanden sind, weiß Unity, welche Kamera für das stereorenrendering verwendet werden soll, je nachdem, welches gameobject über das maincamera-Tag verfügt. In Legacy XR wird dieses Tag auch verwendet, um die Head-Nachverfolgung zu synchronisieren. Im XR SDK wird die Head-Nachverfolgung durch ein an die Kamera angefügtes trackedtargedriver-Skript gesteuert.
+Wenn mehrere Kamerakomponenten in der Szene enthalten sind, weiß Unity, welche Kamera für stereodarstellung verwendet werden soll, je nachdem, welches GameObject über das MainCamera-Tag verfügt. In Legacy-XR wird dieses Tag auch verwendet, um die Nachverfolgung des Kopfs zu synchronisieren. Im XR SDK wird die Kopfverfolgung durch ein trackedPoseDriver-Skript gesteuert, das an die Kamera angefügt ist.
 
-## <a name="sharing-depth-buffers"></a>Freigeben von tiefen Puffern
+## <a name="sharing-depth-buffers"></a>Freigeben von Tiefenpuffern
 
-Durch die Freigabe des tiefen Puffers Ihrer APP für die einzelnen Frames erhält Ihre APP einen von zwei Verb esse ungen in der – Hologramm-Stabilität, basierend auf der Art des von Ihnen Renderns:
+Wenn Sie den Tiefenpuffer Ihrer App für Windows jeden Frame freigeben, erhalten Sie für Ihre App je nach Art des Headsets, für das Sie rendern möchten, eine von zwei Boosts für die Hologrammstabilität:
 
-* **VR-immersive Headsets** können bei der Bereitstellung eines tiefen Puffers die neuprojektion von Positionen durchführen, wobei die Hologramme sowohl an der Position als auch an der Ausrichtung für die mitediction angepasst werden.
-* **Hololens-Headsets** haben einige verschiedene Methoden. Hololens 1 wählt automatisch einen [Fokuspunkt](focus-point-in-unity.md) aus, wenn ein tiefen Puffer bereitgestellt wird. Dadurch wird die – Hologramm-Stabilität entlang der Ebene optimiert, die den meisten Inhalt überschneidet. Hololens 2 stabilisiert Inhalte mithilfe der [tiefen LSR (siehe Hinweise)](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint).
+* **Immersive VR-Headsets** können eine positionsbezogene Neuprojektion übernehmen, wenn ein Tiefenpuffer bereitgestellt wird, und Ihre Hologramme so anpassen, dass sie an Position und Ausrichtung falsch ausgerichtet sind.
+* **HoloLens Headsets** haben verschiedene Methoden. HoloLens 1 wählt automatisch einen [](focus-point-in-unity.md) Fokuspunkt aus, wenn ein Tiefenpuffer bereitgestellt wird, um die Hologrammstabilität entlang der Ebene zu optimieren, die den meisten Inhalt überschneidet. HoloLens 2 der Inhalt mithilfe der [Tiefen-LSR (siehe Hinweise) stabilisiert.](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)
 
 [!INCLUDE[](includes/camera/depth-buffer-include.md)]
 
-## <a name="using-clipping-planes"></a>Verwenden von Clipping-Ebenen
+## <a name="using-clipping-planes"></a>Verwenden von Clippingebenen
 
-Das Rendern von Inhalten zu nahe am Benutzer kann in gemischter Realität unbequem sein. Sie können die [Near-und Far-Clip-Plane](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) in der Kamera Komponente anpassen.
+Das Rendern von Inhalten, die dem Benutzer zu nahe sind, kann in Mixed Reality unermesslich sein. Sie können die [nah- und fernen Clipebenen der](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances) Kamerakomponente anpassen.
 
-1. Wählen Sie die **Hauptkamera** im **Hierarchie** Panel aus.
-2. Suchen Sie **im Inspektor** -Panel nach den **Ausschneide Flächen** der **Kamera** Komponente, und ändern Sie das Textfeld **in der Nähe** von **0,3** in **0,85**. Inhalte, die noch enger gerendert werden, können zu Benutzer Unannehmlichkeiten führen und sollten gemäß den [Richtlinien für die renderentfernungs](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances)
+1. Auswählen der **Hauptkamera** im **Hierarchiebereich**
+2. Suchen Sie **im Inspektorbereich** nach der **Kamerakomponente** **Clipping Planes,** und ändern Sie das Textfeld **Near** (Nah) von **0.3** in **0.85.** Inhalte, die noch näher gerendert werden, können zu Benutzerbeschwerden führen und sollten nach den Richtlinien für die [Renderentfernung vermieden werden.](../platform-capabilities-and-apis/hologram-stability.md#hologram-render-distances)
 
-## <a name="recentering-the-camera"></a>Wiedergeben der Kamera
+## <a name="recentering-the-camera"></a>Aktuelles Verwenden der Kamera
 
-Wenn Sie eine Umgebung mit [sitzender Skalierung](../../design/coordinate-systems.md)entwickeln, können Sie den Welt Ursprung von Unity an der aktuellen Hauptposition des Benutzers wiederholen, indem Sie den **[XR aufrufen. Inputtracking. recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** -Methode in der Legacy-Version XR oder der **[xrinputsubsystem. tryrecenter](https://docs.unity3d.com/ScriptReference/XR.XRInputSubsystem.TryRecenter.html)** -Methode im XR SDK.
+Wenn Sie eine besenskalierte Benutzeroberfläche [erstellen,](../../design/coordinate-systems.md)können Sie den Ursprung von Unity an der aktuellen Kopfposition des Benutzers verbessern, indem Sie **[XR aufrufen. InputTracking.Recenter-Methode](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html)** in legacy XR oder der **[XRInputSubsystem.TryRecenter-Methode](https://docs.unity3d.com/ScriptReference/XR.XRInputSubsystem.TryRecenter.html)** im XR SDK.
 
 ## <a name="teleportation"></a>Teleportation
 
-Diese Funktion ist in der Regel für die VR-Oberfläche reserviert:
+Dieses Feature ist in der Regel für VR-Funktionen reserviert:
 
 [!INCLUDE[](includes/camera/teleport-include.md)]
 
-## <a name="reprojection-modes"></a>Neuprojektions Modi
+## <a name="reprojection-modes"></a>Reprojection-Modi
 
-Sowohl hololens als auch immersive Headsets werden jeden Frame, der von der APP gerendert wird, neu projektet, um die tatsächliche Kopfzeile des Benutzers bei der Ausgabe von Phots anzupassen.
+Sowohl HoloLens headsets als auch immersive Headsets pro je nach Frame, den Ihre App rendert, werden neu projiziert, um die tatsächliche Kopfposition des Benutzers anzupassen, wenn Photonen ausgegeben werden.
 
 Standardmäßig:
 
-* **VR-immersive Headsets** übernimmt die neuprojektion von positionellen, wenn die APP einen tiefen Puffer für einen bestimmten Frame bereitstellt. Mit immersiven Headsets werden Ihre Hologramme auch an der Position und Ausrichtung angepasst. Wenn kein tiefen Puffer bereitgestellt wird, korrigiert das System nur die Fehleinstellungen in der Ausrichtung.
-* **Holographic-Headsets** wie hololens 2 kümmern sich um die neuprojektion von positionellen, unabhängig davon, ob die APP ihren tiefen Puffer bereitstellt. Eine positionelle neuprojektion ist ohne tiefen Puffer in hololens möglich, da das Rendering häufig geringer ist, wenn ein stabiler Hintergrund von der realen Welt bereitgestellt wird.
+* **Immersive VR-Headsets** übernehmen die neu projizierte Position, wenn die App einen Tiefenpuffer für einen bestimmten Frame bietet. Immersive Headsets passen Ihre Hologramme auch an positions- und ausrichtungsverfehlte Einstellungen an. Wenn kein Tiefenpuffer bereitgestellt wird, korrigiert das System nur Fehlausrichtungen in der Ausrichtung.
+* **Holografische Headsets** wie HoloLens 2 sorgen für eine positionsbezogene Neuprojektion, unabhängig davon, ob die App ihren Tiefenpuffer zur Verfügung stellt oder nicht. Eine positionsbezogene Neuprojektion ist ohne Tiefenpuffer auf dem HoloLens da das Rendering oft mit einem stabilen Hintergrund, der von der realen Welt bereitgestellt wird, nur eine spärliche Darstellung auftrat.
 
 [!INCLUDE[](includes/camera/reprojection-include.md)]
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs Journey folgen, die wir angelegt haben, befinden Sie sich mitten in der Untersuchung der mrtk Core-Bausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie den Weg zur Unity-Entwicklung, den wir ihnen auf den Weg geben, folgen, sind Sie gerade dabei, die MRTK-Kernbausteine zu erkunden. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Anvisieren](gaze-in-unity.md)
@@ -125,11 +125,11 @@ Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-dev
 ## <a name="see-also"></a>Siehe auch
 
 * [Hologrammstabilität](../platform-capabilities-and-apis/hologram-stability.md)
-* [Skalierungsmöglichkeiten](../../design/coordinate-systems.md#mixed-reality-experience-scales)
-* [Räumliche Phase](../../design/coordinate-systems.md#stage-frame-of-reference)
+* [Erfahrungsskala](../../design/coordinate-systems.md#mixed-reality-experience-scales)
+* [Räumliche Stufe](../../design/coordinate-systems.md#stage-frame-of-reference)
 * [Verfolgbarkeitsverlust in Unity](tracking-loss-in-unity.md)
 * [Raumanker](../../design/spatial-anchors.md)
 * [Persistenz in Unity](persistence-in-unity.md)
 * [Gemeinsame Erlebnisse in Unity](shared-experiences-in-unity.md)
 * [Azure Spatial Anchors](/azure/spatial-anchors)
-* [Azure Spatial Anchor SDK für Unity](/dotnet/api/Microsoft.Azure.SpatialAnchors)
+* [Azure Spatial Anchors SDK für Unity](/dotnet/api/Microsoft.Azure.SpatialAnchors)

@@ -1,24 +1,24 @@
 ---
-title: Informationen zum Windows Mixed Reality
-description: Hier finden Sie Ressourcen und hilfreiche Informationen Windows Mixed Reality.
+title: Abrufen von Informationen zu Windows Mixed Reality
+description: Hier finden Sie Ressourcen und hilfreiche Informationen zu Windows Mixed Reality.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 6/7/2021
 ms.topic: overview
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR,
-ms.openlocfilehash: dbe140b8634583d910f8c076700aba57a648002f
-ms.sourcegitcommit: 1d8fa82b5ca6d17cf03a5cf11d0669f32a31e5d0
+ms.openlocfilehash: da63ebe48f22635c9f8eb8e9a687c22f5c627354e483fcaca1eebe2fb8f57480
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "111579046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189400"
 ---
-# <a name="get-info-about-windows-mixed-reality"></a>Informationen zum Windows Mixed Reality
+# <a name="get-info-about-windows-mixed-reality"></a>Abrufen von Informationen zu Windows Mixed Reality
 
-Wenn Sie über ein Windows Mixed Reality Headset verfügen und Hilfe benötigen, finden Sie hier einige Ressourcen für den Einstieg:
+Wenn Sie über ein Windows Mixed Reality Headset verfügen und Hilfe suchen, finden Sie hier einige Ressourcen für den Einstieg:
 
 * [Allgemeine Hilfe zu Mixed Reality](index.yml)
 * [Erfahren Sie, wie Sie es einrichten.](set-up-windows-mixed-reality.md)
-* [Tipps und Tricks zur Verwendung Windows Mixed Reality](https://support.microsoft.com/tips/home)
+* [Tipps und Tricks für die Verwendung von Windows Mixed Reality](https://support.microsoft.com/tips/home)
 
-Möchten Sie ein immersives Headset kaufen? Informationen zu Spezifikationen, Anwendungen und mehr finden Sie unter [windows.com/mixedreality](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).
+Möchten Sie ein immersives Headset kaufen? Informationen zu Spezifikationen, Anwendungen und mehr erhalten Sie unter [windows.com/mixedreality](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1).

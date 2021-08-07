@@ -1,56 +1,56 @@
 ---
 title: Leitfaden für Eingabeportierung für Unity
-description: Erfahren Sie, wie Sie Eingaben für Windows Mixed Reality in Unity verarbeiten.
+description: Erfahren Sie, wie Sie Eingaben für Windows Mixed Reality in Unity behandeln.
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Eingabe, Unity, portieren
-ms.openlocfilehash: d6bef0f10cf1fc20d5067ac77a126bb793385f59
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+keywords: input, unity, porting
+ms.openlocfilehash: b2c328152d681a4c8753e29babf0f3ece6bdc0d3f21f9df6dd8de150c3fb47f0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192648"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212078"
 ---
 # <a name="input-porting-guide-for-unity"></a>Leitfaden für Eingabeportierung für Unity
 
-Sie können Ihre Eingabe Logik mithilfe eines von zwei Ansätzen auf Windows Mixed Reality portieren. Der erste besteht darin, die allgemeinen Eingabe. getbutton/getaxis-APIs von Unity zu verwenden, die sich über mehrere Plattformen erstrecken. Die zweite ist der Windows-spezifische XR. WSA. Eingabe-APIs, die umfangreichere Daten speziell für Bewegungs Controller und hololens-Hände bieten.
+Sie können Ihre Eingabelogik portieren, um Windows Mixed Reality einem von zwei Ansätzen zu verwenden. Die erste besteht in der Verwendung der allgemeinen Input.GetButton/GetAxis-APIs von Unity, die sich über mehrere Plattformen erstrecken. Die zweite ist Windows XR-spezifische XR. WSA. Eingabe-APIs, die umfangreiche Daten speziell für Motion Controller und HoloLens bieten.
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>Allgemeine Eingabe. getbutton/getaxis-APIs
+## <a name="general-inputgetbuttongetaxis-apis"></a>Allgemeine Input.GetButton/GetAxis-APIs
 
-Unity verwendet derzeit die allgemeinen Input. getbutton/Input. getaxis-APIs, um Eingaben für [das Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) und [das openvr SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html)verfügbar zu machen. Wenn Ihre apps bereits diese APIs für die Eingabe verwenden, sind die Input. getbutton/Input. getaxis-APIs die einfachsten Pfade für die Unterstützung von Bewegungs Controllern in Windows Mixed Reality. Sie müssen die Schaltflächen und Achsen nur im Eingabe-Manager neu zuordnen.
+Unity verwendet derzeit seine allgemeinen Input.GetButton/Input.GetAxis-APIs, um Eingaben für das [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html) und das [OpenVR SDK verfügbar zu machen.](https://docs.unity3d.com/Manual/OpenVRControllers.html) Wenn Ihre Apps diese APIs bereits für die Eingabe verwenden, sind die Input.GetButton/Input.GetAxis-APIs die einfachsten Pfade zur Unterstützung von Bewegungscontrollern in Windows Mixed Reality. Sie müssen nur Schaltflächen und Achsen im Eingabe-Manager neu zuzuordnungen.
 
-Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsen-Mapping-Tabelle](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) und [in der Übersicht über die gemeinsamen Unity-APIs](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis).
+Weitere Informationen finden Sie in der [Unity-Schaltflächen-/Achsenzuordnungstabelle](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) und in der Übersicht [über die allgemeinen Unity-APIs.](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)
 
-## <a name="windows-specific-xrwsainput-apis"></a>Windows-spezifischer XR. WSA. Eingabe-APIs
+## <a name="windows-specific-xrwsainput-apis"></a>Windows XR-spezifische xr. WSA. Eingabe-APIs
 
-Wenn Ihre APP bereits eine benutzerdefinierte Eingabe Logik für jede Plattform erstellt hat, können Sie die Windows-spezifischen räumlichen Eingabe-APIs im **unityengine. XR. WSA. Input** -Namespace verwenden. Von dort aus können Sie auf zusätzliche Informationen zugreifen, wie z. b. Die Positionsgenauigkeit oder die quellart, sodass Sie die Hände und Controller auf hololens aufteilen können.
+Wenn Ihre App bereits benutzerdefinierte Eingabelogik für jede Plattform erstellt, können Sie die Windows-spezifischen APIs für räumliche Eingaben im **UnityEngine.XR.WSA.Input-Namespace** verwenden. Von dort aus greifen Sie auf zusätzliche Informationen zu, z. B. die Positionsgenauigkeit oder die Quellart, damit Sie Hände und Controller bei der HoloLens.
 
-Weitere Informationen finden Sie in der [Übersicht über die unityengine. XR. WSA. Input-APIs](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput).
+Weitere Informationen finden Sie in der [Übersicht über die UnityEngine.XR.WSA.Input-APIs.](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)
 
-## <a name="grip-pose-vs-pointing-pose"></a>Ziehpunkt im Vergleich zu Zeige darstellen
+## <a name="grip-pose-vs-pointing-pose"></a>Greifpose im Vergleich zu zeigenden Posen
 
-Windows Mixed Reality unterstützt Bewegungs Controller in verschiedenen Formfaktoren. Der Entwurf eines Controllers unterscheidet sich in seiner Beziehung zwischen der Handposition des Benutzers und der natürlichen Vorwärtsrichtung, die apps zum zeigen beim Rendern des Controllers verwenden sollten.
+Windows Mixed Reality unterstützt Bewegungscontroller in verschiedenen Formfaktoren. Der Entwurf jedes Controllers unterscheidet sich in seiner Beziehung zwischen der Handposition des Benutzers und der natürlichen "Vorwärtsrichtung", die Apps verwenden sollten, um beim Rendern des Controllers zu zeigen.
 
-Um diese Controller besser darstellen zu können, gibt es zwei Arten von Posen, die Sie für die einzelnen Interaktions Quellen untersuchen können:
+Um diese Controller besser darstellen zu können, gibt es zwei Arten von Posen, die Sie für jede Interaktionsquelle untersuchen können:
 
-* Der Ziehpunkt, der den Speicherort der von einem hololens erkannten **Hand, oder** der Palme mit einem Bewegungs Controller darstellt.
-    * Bei immersiven Headsets eignet sich diese Pose am besten zum Rendering **der Benutzer Hand** oder **eines Objekts, das in der Hand des Benutzers gehalten** wird, z. b. ein Schwert oder eine Waffe.
-    * Die Zieh **Punktposition**: der Palmen Schwerpunkt bei der natürlichen Aufbewahrung des Controllers, nach links oder rechts, um die Position im Ziehpunkt zu zentrieren.
-    * Die **Rechte Achse** der Ziehpunkt Ausrichtung: Wenn Sie Ihre Hand vollständig geöffnet haben, um eine flache 5-Finger-Darstellung zu bilden, ist das Strahl-Ray, das normal ist (vorwärts von links nach links, rückwärts von rechter Palme).
-    * Die **Forward-Achse** der Ziehpunkt Ausrichtung: Wenn Sie die Hand teilweise schließen, als wenn Sie den Controller halten, wird der Strahl, der durch die durch ihre nicht-Thumb-Finger formatierte Röhre auf "Vorwärts" zeigt.
-    * Die **aufwärts Achse** der Ziehpunkt Ausrichtung: die aufwärts Achse, die durch die Rechte-und vorwärts Definitionen impliziert wird.
-    * Sie können auf die Ziehpunkt-Pose über die Anbieter übergreifende Eingabe-API von Unity (XR) zugreifen **[. Inputtracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). Getlocalposition/Rotation**) oder über die Windows-spezifische API (**SourceState. sourcepose. trygetposition/Rotation**, Anfordern der Ziehpunkt-Pose).
-* Die **Zeiger** Darstellung, die die Spitze des Controllers darstellt, der vorwärts zeigt.
-    * Diese Pose eignet sich am besten für raycast, wenn Sie **auf die Benutzeroberfläche zeigen** , wenn Sie das Controller Modell selbst rendern.
-    * Derzeit ist die Zeiger Pose nur über die Windows-spezifische API (**SourceState. sourcepose. trygetposition/Rotation**) verfügbar, die die Zeiger Pose anfordert.
+* Die **Greifhaltung,** die entweder die Position der Handfläche darstellt, die von einem Zweig erkannt HoloLens oder der Handfläche, die einen Bewegungscontroller hält.
+    * Bei immersiven Headsets wird diese  Pose am besten verwendet, um die Hand des Benutzers oder ein **Objekt in** der Hand des Benutzers zu rendern, z. B. eine Brille oder eine Brille.
+    * Die **Greifposition:** Der Handflächenschwerpunkt, wenn der Controller natürlich hält, nach links oder rechts angepasst, um die Position innerhalb des Greifs zu zentriert.
+    * Die **rechte** Achse der Greifausrichtung: Wenn Sie Ihre Hand vollständig öffnen, um eine flache 5-Finger-Pose zu bilden, den Strahl, der normal zu Ihrer Handfläche ist (vorwärts von der linken Handfläche, rückwärts von der rechten Handfläche).
+    * Die **Vorwärtsachse** der Greifausrichtung: Wenn Sie die Hand teilweise schließen, als würde sie den Controller halten, wird der Strahl, der durch die von Denkfingern gebildete Achse "vorwärts" zeigt.
+    * Die **Nach-oben-Achse** der Greifausrichtung: Die up-Achse, die durch die Definitionen "Right" und "Forward" impliziert wird.
+    * Sie können über die anbieterübergreifende Eingabe-API **(XR) von Unity auf die Greifpose [zugreifen. InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html). GetLocalPosition/Rotation**) oder über die Windows-spezifische API (**sourceState.sourcePose.TryGetPosition/Rotation**, anfordern der Greifposition).
+* Der **Zeiger stellt die Spitze** des Controllers darstellt, der nach vorn zeigen soll.
+    * Diese Darstellung wird am besten  für Raycast verwendet, wenn Sie auf die Benutzeroberfläche zeigen, wenn Sie das Controllermodell selbst rendern.
+    * Derzeit ist die Zeigerposition nur über die Windows-spezifische API verfügbar (**sourceState.sourcePose.TryGetPosition/Rotation**, anfordern der Zeigerposition).
 
-Diese posikoordinaten werden alle in Unity-Weltkoordinaten ausgedrückt.
+Diese Posenkoordinaten werden alle in Unity-Weltkoordinaten ausgedrückt.
 
-## <a name="see-also"></a>Weitere Informationen
-* [Bewegungs Controller]().. /.. /design/motion-controllers.md)
+## <a name="see-also"></a>Siehe auch
+* [Motion controllers]().. /.. /design/motion-controllers.md)
 * [Motion-Controller in Unity](../unity/motion-controllers-in-unity.md)
-* [Unityengine. XR. WSA. Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
-* [Unityengine. XR. inputtracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
+* [UnityEngine.XR.WSA.Input](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.html)
+* [UnityEngine.XR.InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)
 * [Portierungsleitfäden](porting-guides.md)

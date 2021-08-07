@@ -1,36 +1,36 @@
 ---
-title: Hololens (1st Gen) und Azure 312-bot-Integration
-description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie einen bot mit Microsoft bot Framework V4 erstellen und bereitstellen und in einer gemischten Reality-Anwendung mit ihm kommunizieren.
+title: 'HoloLens (1. Generation) und Azure 312: Botintegration'
+description: In diesem Kurs erfahren Sie, wie Sie einen Bot mithilfe von Microsoft Bot Framework v4 erstellen und bereitstellen und mit ihm in einer Mixed Reality-Anwendung kommunizieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Maschinelles sehen, hololens, immersive, VR, Microsoft bot Framework V4, Web-App-bot, bot Framework, Microsoft bot, Windows 10, Visual Studio
-ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Computer Vision, HoloLens, immersive, vr, Microsoft Bot Framework v4, Web-App-Bot, Bot Framework, Microsoft Bot, Windows 10, Visual Studio
+ms.openlocfilehash: 61a39806c2b434cb85d39a9b208ea8659ec8cbc301d8955ee1330bda4149f0db
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189810"
 ---
-# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>Hololens (1. Gen) und Azure 312: bot-Integration
+# <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (1. Generation) und Azure 312: Botintegration
 
 >[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es gibt eine neue Reihe von Tutorials, die in Zukunft veröffentlicht werden, um die Entwicklung für hololens 2 zu veranschaulichen.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn diese veröffentlicht werden.
+>Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es wird eine neue Reihe von Tutorials geben, die in Zukunft veröffentlicht werden, die veranschaulichen, wie Sie für die entwicklung HoloLens 2.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn sie veröffentlicht werden.
 
-In diesem Kurs erfahren Sie, wie Sie mithilfe von Microsoft bot Framework V4 einen Bot erstellen und bereitstellen und über eine Windows Mixed Reality-Anwendung mit ihm kommunizieren. 
+In diesem Kurs erfahren Sie, wie Sie einen Bot mithilfe von Microsoft Bot Framework V4 erstellen und bereitstellen und über eine Windows Mixed Reality kommunizieren. 
 
 ![](images/AzureLabs-Lab312-00.png)
 
-Das **Microsoft bot Framework V4** ist ein Satz von APIs, die Entwicklern die Tools zum Erstellen einer erweiterbaren und skalierbaren bot-Anwendung zur Verfügung stellen. Weitere Informationen finden Sie auf der [Microsoft bot Framework-Seite](https://dev.botframework.com/) oder im [V4-git-Repository](https://github.com/Microsoft/botbuilder-dotnet/wiki).
+Bei **Microsoft Bot Framework V4** handelt es sich um eine Reihe von APIs, mit deren Hilfe Entwickler die Tools zum Erstellen einer erweiterbaren und skalierbaren Botanwendung bereitstellen können. Weitere Informationen finden Sie auf der [Microsoft Bot Framework-Seite oder](https://dev.botframework.com/) im [V4-Git-Repository](https://github.com/Microsoft/botbuilder-dotnet/wiki).
 
-Nachdem Sie diesen Kurs abgeschlossen haben, haben Sie eine Windows Mixed Reality-Anwendung erstellt, die Folgendes ausführen kann:
+Nach Abschluss dieses Kurses haben Sie eine Windows Mixed Reality erstellt, die Folgendes tun kann:
 
-1. Verwenden Sie eine **Tap-Geste** , um den bot zu starten, der die Benutzer Stimme abhört.
-2. Wenn der Benutzer etwas gesagt hat, versucht der bot, eine Antwort bereitzustellen.
-3. Zeigen Sie die Bots-Antwort als Text an, der in der Nähe des bot in der Unity-Szene positioniert ist.
+1. Verwenden Sie eine **Tippbewegung,** um den Bot zu starten, der auf die Stimme der Benutzer lausiert.
+2. Wenn der Benutzer etwas gesagt hat, versucht der Bot, eine Antwort zu geben.
+3. Zeigen Sie die Antwort der Bots als Text in der Unity-Szene an, der in der Nähe des Bots positioniert ist.
 
-In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf integrieren. In diesem Kurs erfahren Sie, wie Sie einen Azure-Dienst in Ihr Unity-Projekt integrieren. Es ist Ihre Aufgabe, das wissen, das Sie aus diesem Kursgewinnen, zu nutzen, um ihre gemischte Reality-Anwendung zu verbessern.
+In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf integrieren. Dieser Kurs soll Ihnen beibringen, wie Sie einen Azure-Dienst in Ihr Unity-Projekt integrieren. Es ist Ihre Aufgabe, das Wissen aus diesem Kurs zu nutzen, um Ihre Mixed Reality-Anwendung zu verbessern.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -43,70 +43,70 @@ In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf in
 </table>
 
 > [!NOTE]
-> Dieser Kurs konzentriert sich in erster Linie auf hololens, aber Sie können auch das Erlernen, was Sie in diesem Kurs lernen, auf Windows Mixed Reality-(VR)-Headsets. Da immersive Headsets (VR) nicht über barrierefreie Kameras verfügen, benötigen Sie eine externe Kamera, die mit Ihrem PC verbunden ist. Wenn Sie den Kurs befolgen, finden Sie Hinweise zu allen Änderungen, die Sie möglicherweise für die Unterstützung von immersiven (VR)-Headsets verwenden müssen.
+> Während sich dieser Kurs hauptsächlich auf HoloLens konzentriert, können Sie das, was Sie in diesem Kurs lernen, auch auf immersive Headsets (VR) Windows Mixed Reality anwenden. Da immersive Headsets (VR) keine zugänglichen Kameras haben, benötigen Sie eine externe Kamera, die mit Ihrem PC verbunden ist. Im Verlauf des Kurses finden Sie Hinweise zu allen Änderungen, die Sie möglicherweise vornehmen müssen, um immersive Headsets (VR) zu unterstützen.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 > [!NOTE]
-> Dieses Tutorial richtet sich an Entwickler, die über grundlegende Kenntnisse in Unity und c# verfügen. Beachten Sie auch, dass die Voraussetzungen und Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt des Schreibens getestet und überprüft wurde (Juli 2018). Sie können die neueste Software verwenden, die im Artikel [Installieren der Tools](../../install-the-tools.md) aufgeführt ist. es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs genau mit den Informationen in neueren Software vergleichen, als im folgenden aufgeführt werden.
+> Dieses Tutorial ist für Entwickler konzipiert, die über grundlegende Erfahrung mit Unity und C# verfügen. Beachten Sie auch, dass die Voraussetzungen und die geschriebenen Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt der Erstellung (Juli 2018) getestet und überprüft wurde. Sie können die neueste Software verwenden, [](../../install-the-tools.md) wie im Artikel Installieren der Tools aufgeführt. Es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs perfekt mit dem übereinstimmen, was Sie in neuerer Software finden, als unten aufgeführt.
 
-Für diesen Kurs empfehlen wir die folgende Hardware und Software:
+Für diesen Kurs wird die folgende Hardware und Software empfohlen:
 
-- Einen Entwicklungs-PC, der [mit der Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for Immersive (VR)-Headset-Entwicklung kompatibel ist
-- [Windows 10 Fall Creators Update (oder höher) mit aktiviertem Entwicklermodus](../../install-the-tools.md#installation-checklist)
+- Ein Entwicklungs-PC, [der mit Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) für die Entwicklung immersiver Headsets (VR) kompatibel ist
+- [Windows 10 Fall Creators Update (oder höher) mit aktivierter Entwicklermodus](../../install-the-tools.md#installation-checklist)
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
-- [Unity 2017,4](../../install-the-tools.md#installation-checklist)
+- [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
-- Internet Zugang für Azure und für den Azure-bot-Abruf. Weitere Informationen [finden Sie unter diesem Link](https://dev.botframework.com/).
+- Ein [Windows Mixed Reality immersives Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [ein](/hololens/hololens1-hardware) Microsoft HoloLens mit aktivierten Entwicklermodus
+- Internetzugriff für Azure und für den Azure-Botabruf. Weitere Informationen finden Sie [unter diesem Link.](https://dev.botframework.com/)
 
 ### <a name="before-you-start"></a>Vorbereitung
 
-1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
-2.  Richten Sie Ihre hololens ein, und testen Sie Sie. Wenn Sie Unterstützung für die Einrichtung ihrer hololens benötigen, [besuchen Sie den Artikel zum Einrichten von hololens](/hololens/hololens-setup). 
-3.  Es empfiehlt sich, eine Kalibrierung und Sensor Optimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen hololens-App beginnen (manchmal kann es hilfreich sein, diese Aufgaben für jeden Benutzer auszuführen). 
+1.  Um Probleme beim Erstellen dieses Projekts zu vermeiden, wird dringend empfohlen, das in diesem Tutorial erwähnte Projekt in einem Stamm- oder Near-Root-Ordner zu erstellen (lange Ordnerpfade können zur Buildzeit Probleme verursachen).
+2.  Einrichten und Testen Ihrer HoloLens. Wenn Sie Unterstützung beim Einrichten Ihrer HoloLens benötigen, lesen Sie den Artikel HoloLens [Setup.](/hololens/hololens-setup) 
+3.  Es ist eine gute Idee, die Kalibrierung und Sensoroptimierung durchzuführen, wenn Sie mit der Entwicklung einer neuen HoloLens-App beginnen (manchmal kann es helfen, diese Aufgaben für jeden Benutzer auszuführen). 
 
-Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel zur hololens-Kalibrierung](/hololens/hololens-calibration#hololens-2).
+Hilfe zur Kalibrierung finden Sie unter diesem [Link zum Artikel HoloLens Kalibrierung.](/hololens/hololens-calibration#hololens-2)
 
-Hilfe zur Sensor Optimierung finden Sie unter diesem [Link zum Artikel zur Überwachung von hololens-Sensoren](/hololens/hololens-updates).
+Hilfe zur Sensoroptimierung finden Sie unter diesem [Link zum Artikel HoloLens Sensoroptimierung.](/hololens/hololens-updates)
 
-## <a name="chapter-1--create-the-bot-application"></a>Kapitel 1 – Erstellen der bot-Anwendung
+## <a name="chapter-1--create-the-bot-application"></a>Kapitel 1: Erstellen der Botanwendung
 
-Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu erstellen. Nachdem Sie den Vorgang abgeschlossen und getestet haben, veröffentlichen Sie ihn im Azure-Portal.
+Der erste Schritt besteht im Erstellen Ihres Bots als lokale ASP.Net Core-Webanwendung. Nachdem Sie es abgeschlossen und getestet haben, veröffentlichen Sie es im Azure-Portal.
 
-1.  Öffnen Sie Visual Studio. Erstellen Sie ein neues Projekt, wählen Sie **ASP NET Core-Webanwendung** als Projekttyp aus (Sie finden Sie im unter Abschnitt .net Core) und nennen Sie **mybot**. Klicken Sie auf **OK**.
+1.  Öffnen Sie Visual Studio. Erstellen Sie ein neues Projekt, wählen Sie **ASP NET Core-Webanwendung** als Projekttyp aus (sie finden es im Unterabschnitt .NET Core), und nennen Sie **es MyBot**. Klicken Sie auf **OK**.
 
-2.  Wählen Sie im angezeigten Fenster die Option **leer** aus. Stellen Sie außerdem sicher, dass das Ziel auf **ASP NET Core 2,0** festgelegt ist und die Authentifizierung auf **keine Authentifizierung** festgelegt ist. Klicken Sie auf **OK**.  
+2.  Wählen Sie im angezeigten Fenster die Option **Leer aus.** Stellen Sie außerdem sicher, dass das Ziel auf **ASP NET Core 2.0** und die -Authentifizierung auf **Keine Authentifizierung festgelegt ist.** Klicken Sie auf **OK**.  
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-01.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-01.png)
 
-3.  Die Projekt Mappe wird jetzt geöffnet. Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf Projekt Mappe **mybot** , und klicken Sie auf **nuget-Pakete für** Projekt Mappe verwalten. 
+3.  Die Projektmappe wird jetzt geöffnet. Klicken Sie im Projektmappen-Mybot mit der rechten **Maustaste** auf Projektmappen-Explorer klicken Sie auf Manage NuGet Packages for Solution (Pakete für  **Projektmappe verwalten).** 
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-02.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-02.png)
 
-4.  Suchen Sie auf der Registerkarte **Durchsuchen** nach **Microsoft. bot. Builder. Integration. Aspnet. Core** (stellen Sie sicher, dass die **Vorabversion** aktiviert ist). Wählen Sie die Paketversion **4.0.1-Vorschau** aus, und klicken Sie auf die Projekt Felder. Klicken Sie dann auf **Installieren**. Sie haben nun die Bibliotheken installiert, die für **bot Framework V4** benötigt werden. Schließen Sie die Seite "nuget".
+4.  Suchen Sie **auf der** Registerkarte Durchsuchen nach **Microsoft.Bot.Builder.Integration.AspNet.Core** (stellen Sie sicher, dass Vorabversionen **enthalten** überprüft ist). Wählen Sie die Paketversion **4.0.1-preview aus,** und aktivieren Sie die Projektfelder. Klicken Sie dann auf **Installieren.** Sie haben nun die Bibliotheken installiert, die für das Bot Framework **v4 erforderlich sind.** Schließen Sie die NuGet Seite.
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-03.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-03.png)
 
-5.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf das *Projekt* **mybot**, und klicken Sie auf Klasse **Hinzufügen** **|** .
+5.  Klicken Sie mit der rechten *Maustaste* auf Project , **MyBot,** im Projektmappen-Explorer **und** klicken Sie **auf** **|** **Klasse hinzufügen.**
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-04.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-04.png)
 
-6.  Benennen Sie die Klasse **mybot** , und klicken Sie auf **Hinzufügen**.
+6.  Nennen Sie die **Klasse MyBot,** und klicken Sie **auf Hinzufügen.**
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-05.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-05.png)
 
-7.  Wiederholen Sie den vorherigen Punkt, um eine weitere Klasse mit dem Namen " **Kontexts**" zu erstellen 
+7.  Wiederholen Sie den vorherigen Punkt, um eine weitere Klasse mit dem Namen **ConversationContext zu erstellen.** 
 
-8.  Klicken Sie im **Projektmappen-Explorer** mit der rechten Maustaste auf **wwwroot** , und klicken Sie auf  **|** **Neues Element** hinzufügen. Wählen Sie  **HTML-Seite** aus (Sie finden Sie im unter Abschnitt Web). Benennen Sie die Datei **default.html**. Klicken Sie auf **Hinzufügen**.
+8.  Klicken Sie mit der rechten Maustaste auf **wwwroot** im **Projektmappen-Explorer** und klicken Sie **auf Neues** **|** **Element hinzufügen.** Wählen Sie  **HTML-Seite** aus (sie finden sie im Unterabschnitt Web). Nennen Sie die **Dateidefault.html**. Klicken Sie auf **Hinzufügen**.
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-06.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-06.png)
 
-9.  Die Liste der Klassen/Objekte in der **Projektmappen-Explorer** sollte wie in der folgenden Abbildung aussehen.
+9.  Die Liste der Klassen/Objekte im Projektmappen-Explorer **sollte** wie in der folgenden Abbildung aussehen.
 
-    ![Erstellen der bot-Anwendung](images/AzureLabs-Lab312-07.png)
+    ![Erstellen der Botanwendung](images/AzureLabs-Lab312-07.png)
 
-10. Doppelklicken Sie auf die Klasse **conversationcontext** . Diese Klasse ist dafür verantwortlich, die Variablen beizubehalten, die vom bot verwendet werden, um den Konversations Kontext beizubehalten. Diese Konversations Kontext Werte werden in einer Instanz dieser Klasse verwaltet, da jede Instanz der **mybot** -Klasse jedes Mal aktualisiert wird, wenn eine Aktivität empfangen wird. Fügen Sie der-Klasse den folgenden Code hinzu:
+10. Doppelklicken Sie auf die **ConversationContext-Klasse.** Diese Klasse ist für das Halten der Variablen zuständig, die vom Bot verwendet werden, um den Kontext der Konversation zu verwalten. Diese Konversationskontextwerte werden in einer Instanz dieser Klasse verwaltet, da jede Instanz der **MyBot-Klasse** jedes Mal aktualisiert wird, wenn eine Aktivität empfangen wird. Fügen Sie der -Klasse den folgenden Code hinzu:
 
     ```csharp
     namespace MyBot
@@ -120,7 +120,7 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
     }
     ```
 
-11. Doppelklicken Sie auf die **mybot** -Klasse. Diese Klasse hostet die Handler, die von allen eingehenden Aktivitäten vom Kunden aufgerufen werden. In dieser Klasse fügen Sie den Code hinzu, der verwendet wird, um die Konversation zwischen dem bot und dem Kunden zu erstellen. Wie bereits erwähnt, wird eine Instanz dieser Klasse jedes Mal initialisiert, wenn eine Aktivität empfangen wird. Fügen Sie dieser Klasse den folgenden Code hinzu:
+11. Doppelklicken Sie auf die **MyBot-Klasse.** Diese Klasse hosten die Handler, die von jeder eingehenden Aktivität des Kunden aufgerufen werden. In dieser Klasse fügen Sie den Code hinzu, der zum Erstellen der Konversation zwischen dem Bot und dem Kunden verwendet wird. Wie bereits erwähnt, wird eine Instanz dieser Klasse jedes Mal initialisiert, wenn eine Aktivität empfangen wird. Fügen Sie dieser Klasse den folgenden Code hinzu:
 
     ```csharp
     using Microsoft.Bot;
@@ -174,7 +174,7 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
     }
     ```
 
-12. Doppelklicken Sie auf die **Startup** -Klasse. Diese Klasse initialisiert den bot. Fügen Sie der-Klasse den folgenden Code hinzu:
+12. Doppelklicken Sie auf die **Startup-Klasse.** Diese Klasse initialisiert den Bot. Fügen Sie der -Klasse den folgenden Code hinzu:
 
     ```csharp
     using Microsoft.AspNetCore.Builder;
@@ -226,7 +226,7 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
     }
     ```
 
-13. Öffnen Sie die **Programm** Klassendatei, und überprüfen Sie, ob der Code darin identisch mit folgendem ist:
+13. Öffnen Sie die Program-Klassendatei, und vergewissern Sie sich, dass der code in ihr mit dem folgenden identisch ist: 
 
     ```csharp
     using Microsoft.AspNetCore;
@@ -249,250 +249,250 @@ Der erste Schritt besteht darin, den bot als lokale Webanwendung ASP.net Core zu
     }
     ```
 
-14. Denken Sie daran, die Änderungen zu speichern, und klicken Sie hierzu auf  >  der Symbolleiste oben in Visual Studio auf Datei **Alle speichern**.
+14. Denken Sie daran, Ihre Änderungen zu speichern. Wechseln Sie dazu in der Symbolleiste am oberen Ende des  >  Visual Studio.
 
-## <a name="chapter-2---create-the-azure-bot-service"></a>Kapitel 2: Erstellen des Azure bot Service
+## <a name="chapter-2---create-the-azure-bot-service"></a>Kapitel 2: Erstellen der Azure Bot Service
 
-Nachdem Sie den Code für den bot erstellt haben, müssen Sie ihn im Azure-Portal in einer Instanz des *webapp* -botdiensts veröffentlichen. In diesem Kapitel erfahren Sie, wie Sie den bot-Dienst in Azure erstellen und konfigurieren und dann Ihren Code darauf veröffentlichen.
+Nachdem Sie den Code für Ihren Bot erstellt haben, müssen Sie ihn in einer Instanz des *Web-App-Botdiensts* im Azure-Portal veröffentlichen. In diesem Kapitel erfahren Sie, wie Sie die Bot Service in Azure erstellen und konfigurieren und dann Ihren Code dort veröffentlichen.
 
 1.  Melden Sie sich zunächst beim Azure-Portal an ( https://portal.azure.com) . 
 
-    1. Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
+    1. Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom- oder Lab-Situation durch verwenden, bitten Sie Ihren Dozenten oder einen der Proktoren um Hilfe beim Einrichten Ihres neuen Kontos.
 
-2.  Nachdem Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **Ressource erstellen** , suchen Sie nach *Web-App-bot*, und **drücken** Sie die EINGABETASTE.
+2.  Klicken Sie nach der Anmeldung  in der linken oberen Ecke auf Ressource erstellen, suchen Sie nach *Web-App-Bot,* und geben Sie **ein.**
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-08.png)
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-08.png)
  
-3.  Auf der neuen Seite wird eine Beschreibung des *Web-App* -botdiensts bereitgestellt. Klicken Sie unten links auf dieser Seite auf die Schaltfläche **Erstellen** , um eine Verknüpfung mit diesem Dienst zu erstellen.
+3.  Die neue Seite enthält eine Beschreibung des *Web-App-Botdiensts.* Wählen Sie unten links auf dieser Seite die Schaltfläche **Erstellen** aus, um eine Zuordnung zu diesem Dienst zu erstellen.
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-09.png)
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-09.png)
  
-4.  Nachdem Sie auf **Erstellen** geklickt haben, klicken Sie auf:
+4.  Nachdem Sie auf Erstellen geklickt **haben:**
 
-    1. Fügen Sie den gewünschten **Namen** für diese Dienst Instanz ein.
+    1. Fügen Sie den gewünschten **Namen für** diese Dienstinstanz ein.
     2. Wählen Sie ein **Abonnement** aus.
-    3. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
+    3. Wählen Sie eine **Ressourcengruppe aus,** oder erstellen Sie eine neue. Eine Ressourcengruppe bietet eine Möglichkeit zum Überwachen, Steuern des Zugriffs, Bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt zugeordnet sind (z. B. diese Kurse), unter einer gemeinsamen Ressourcengruppe zu halten.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie unter [diesem Link](/azure/azure-resource-manager/resource-group-portal) .
+        > Wenn Sie mehr über Azure-Ressourcengruppen erfahren möchten, folgen [Sie diesem Link.](/azure/azure-resource-manager/resource-group-portal)
 
-    4. Bestimmen Sie den Speicherort für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
-    5. Wählen Sie den für **Sie geeigneten Tarif** aus. Wenn Sie zum ersten Mal einen Web- *App-bot* -Dienst erstellen, sollte Ihnen ein Free-Tarif (mit dem Namen "F0") zur Verfügung stehen.
-    6. Der **Name der APP** kann nur mit dem *botnamen* übereinstimmen. 
-    7. Belassen Sie die *bot-Vorlage* als "Basic" **(c#)**.
-    8. Der *App Service-Plan/Standort* muss für Ihr Konto automatisch ausgefüllt werden.
-    9. Legen Sie die **Azure Storage** fest, die Sie zum Hosten des Bots verwenden möchten. Wenn Sie noch nicht über ein solches verfügen, können Sie es hier erstellen.
-    10. Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
+    4. Bestimmen Sie den Standort für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Standort befindet sich idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
+    5. Wählen Sie **den für** Sie geeigneten Tarif aus. Wenn Sie zum ersten Mal einen *Web-App-Botdienst* erstellen, sollte ihnen ein Free-Tarif (mit dem Namen F0) zur Verfügung stehen.
+    6. **Der App-Name** kann einfach mit dem *Botnamen identisch bleiben.* 
+    7. Belasse *die Botvorlage* **als Basic (C#)**.
+    8. *App Service-Plan/Standort* sollte für Ihr Konto automatisch ausgefüllt worden sein.
+    9. Legen Sie **die Azure Storage** fest, die Sie zum Hosten Ihres Bots verwenden möchten. Wenn Sie noch keines haben, können Sie es hier erstellen.
+    10. Sie müssen auch bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
     11. Klicken Sie auf „Erstellen“.
  
-        ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-10.png)
+        ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-10.png)
 
-5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. dieser Vorgang kann einige Minuten in Anspruch nehmen.
+5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. Dies kann eine Minute dauern.
 
-6.  Nachdem die Dienst Instanz erstellt wurde, wird im Portal eine Benachrichtigung angezeigt.
+6.  Nachdem die Dienstinstanz erstellt wurde, wird im Portal eine Benachrichtigung angezeigt.
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-11.png) 
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-11.png) 
  
-7.  Klicken Sie auf die Benachrichtigung, um die neue Dienst Instanz zu untersuchen. 
+7.  Klicken Sie auf die Benachrichtigung, um Ihre neue Dienstinstanz zu untersuchen. 
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-12.png)
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-12.png)
  
-8. Klicken Sie in der Benachrichtigung auf die Schaltfläche **Gehe zu Ressource** , um die neue Dienst Instanz zu untersuchen. Sie gelangen zu ihrer neuen Azure-Dienst Instanz. 
+8. Klicken Sie in **der Benachrichtigung auf die** Schaltfläche Zu Ressource wechseln, um Ihre neue Dienstinstanz zu untersuchen. Sie werden zu Ihrer neuen Azure-Dienstinstanz weitergenommen. 
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-13.png)
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-13.png)
  
-9.  An diesem Punkt müssen Sie eine Funktion namens **Direct Line** einrichten, damit Ihre Client Anwendung mit diesem botdienst kommunizieren kann. Klicken Sie auf **Channels**, und klicken Sie dann im Abschnitt **Hinzufügen eines vorgestellten Kanals** auf **direkt linienchannel konfigurieren**.
+9.  An diesem Punkt müssen Sie  ein Feature namens Direct Line einrichten, damit Ihre Clientanwendung mit diesem Client kommunizieren Bot Service. Klicken Sie **auf Kanäle** und dann im Abschnitt **Ausgewählte** Kanal hinzufügen auf Configure Direct Line channel (Konfigurieren **Direct Line Kanal).**
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-14.png)
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-14.png)
 
-10. Auf dieser Seite finden Sie die **geheimen Schlüssel** , mit denen sich Ihre Client-App bei dem bot authentifizieren kann. Klicken Sie auf die Schaltfläche **anzeigen** , und nehmen Sie eine Kopie einer der angezeigten Schlüssel auf, da Sie dies später in Ihrem Projekt benötigen. 
+10. Auf dieser Seite finden Sie die geheimen **Schlüssel,** mit denen sich Ihre Client-App beim Bot authentifizieren kann. Klicken Sie auf **die Schaltfläche** Anzeigen, und erstellen Sie eine Kopie eines der angezeigten Schlüssel, da Sie diese später in Ihrem Projekt benötigen. 
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-15.png)
+    ![Erstellen der Azure Bot Service](images/AzureLabs-Lab312-15.png)
 
-## <a name="chapter-3--publish-the-bot-to-the-azure-web-app-bot-service"></a>Kapitel 3 – Veröffentlichen des Bots für den Azure-Web-App-botdienst
+## <a name="chapter-3--publish-the-bot-to-the-azure-web-app-bot-service"></a>Kapitel 3: Veröffentlichen des Bots in der Azure-Web-App-Bot Service
 
-Nachdem Ihr Dienst bereit ist, müssen Sie den von Ihnen zuvor erstellten botcode in ihren neu erstellten Web-App-botdienst veröffentlichen.
+Nachdem Ihr Dienst nun bereit ist, müssen Sie Ihren bot-Code, den Sie zuvor erstellt haben, in Ihrer neu erstellten Web-App Bot Service.
 
 > [!NOTE] 
-> Sie müssen ihren bot jedes Mal im Azure-Dienst veröffentlichen, wenn Sie Änderungen an der bot-Lösung/dem Code vornehmen.
+> Sie müssen Ihren Bot jedes Mal im Azure-Dienst veröffentlichen, wenn Sie Änderungen an bot solution/code vornehmen.
 
-1.  Wechseln Sie zurück zu Ihrer Visual Studio-Projekt Mappe, die Sie zuvor erstellt haben. 
-2.  Klicken Sie mit der rechten Maustaste auf das Projekt **mybot** , und klicken Sie dann im **Projektmappen-Explorer** auf **veröffentlichen**.
+1.  Wechseln Sie zurück zu Ihrer Visual Studio, die Sie zuvor erstellt haben. 
+2.  Klicken Sie mit der rechten Maustaste auf Ihr **MyBot-Projekt,** klicken Sie im Projektmappen-Explorer **,** und klicken Sie dann **auf Veröffentlichen.**
 
-    ![Veröffentlichen des Bots im Azure-Web-App-botdienst](images/AzureLabs-Lab312-16.png)
+    ![Veröffentlichen des Bots in der Azure-Web-App-Bot Service](images/AzureLabs-Lab312-16.png)
 
-3.  Klicken Sie auf der Seite *Veröffentlichungsziel auswählen* auf **App Service**, wählen Sie dann **vorhandene** aus, klicken Sie schließlich auf **Profil erstellen** (möglicherweise müssen Sie neben der Schaltfläche *veröffentlichen* auf den Dropdown Pfeil klicken, wenn dies nicht angezeigt wird).
+3.  Klicken Sie *auf* der Seite Veröffentlichungsziel auswählen auf **App Service** und dann auf Vorhandene auswählen. Klicken Sie abschließend  auf Profil erstellen **.** (Wenn dies nicht sichtbar ist, müssen Sie möglicherweise auf den Dropdownpfeil neben der Schaltfläche Veröffentlichen klicken.)
 
-    ![Veröffentlichen des Bots im Azure-Web-App-botdienst](images/AzureLabs-Lab312-17.png)
+    ![Veröffentlichen des Bots in der Azure-Web-App-Bot Service](images/AzureLabs-Lab312-17.png)
 
 4. Wenn Sie noch nicht bei Ihrem Microsoft-Konto angemeldet sind, müssen Sie dies hier tun.
-5. Auf der Seite " **veröffentlichen** " müssen Sie das gleiche **Abonnement** festlegen, das Sie für die Erstellung des *Web-App* -botdiensts verwendet haben. Legen Sie dann die **Ansicht** als **Ressourcengruppe** fest, und wählen Sie in der Dropdown-Ordnerstruktur die **Ressourcengruppe** aus, die Sie zuvor erstellt haben. Klicken Sie auf **OK**. 
+5. Auf der **Seite** Veröffentlichen müssen Sie dasselbe Abonnement festlegen, das Sie für die Erstellung des *Web-App-Botdiensts* verwendet haben.  Legen Sie dann die **Ansicht** als **Ressourcengruppe fest,** und wählen Sie in der Dropdownordnerstruktur die Ressourcengruppe aus, die **Sie** zuvor erstellt haben. Klicken Sie auf **OK**. 
 
-    ![Veröffentlichen des Bots im Azure-Web-App-botdienst](images/AzureLabs-Lab312-18.png)
+    ![Veröffentlichen des Bots in der Azure-Web-App-Bot Service](images/AzureLabs-Lab312-18.png)
 
-6.  Klicken Sie jetzt auf die Schaltfläche "Publish" ( **veröffentlichen** ), und warten Sie, bis der bot veröffentlicht wird (es kann einige Minuten dauern).
+6.  Klicken Sie nun auf die **Schaltfläche Veröffentlichen,** und warten Sie, bis der Bot veröffentlicht wurde (es kann einige Minuten dauern).
 
-    ![Veröffentlichen des Bots im Azure-Web-App-botdienst](images/AzureLabs-Lab312-19.png)
+    ![Veröffentlichen des Bots in der Azure-Web-App-Bot Service](images/AzureLabs-Lab312-19.png)
 
 
-## <a name="chapter-4--set-up-the-unity-project"></a>Kapitel 4 – Einrichten des Unity-Projekts
+## <a name="chapter-4--set-up-the-unity-project"></a>Kapitel 4: Einrichten des Unity-Projekts
 
-Folgendes ist eine typische Einrichtung für die Entwicklung mit gemischter Realität und ist daher eine gute Vorlage für andere Projekte.
+Im Folgenden finden Sie eine typische Einrichtung für die Entwicklung mit Mixed Reality und daher eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie *Unity* , und klicken Sie auf **neu**. 
+1.  Öffnen Sie *Unity,* und klicken Sie **auf Neu.** 
 
     ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-20.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben. **Hololens-bot** einfügen. Stellen Sie sicher, dass die Projektvorlage auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
+2.  Sie müssen nun einen Unity-Projektnamen angeben. Fügen **Sie HoloLens Bot ein.** Stellen Sie sicher, dass die Projektvorlage auf **3D festgelegt ist.** Legen Sie **den Speicherort** auf einen für Sie geeigneten Speicherort fest (denken Sie daran, dass die Nähe zu Stammverzeichnissen besser ist). Klicken Sie dann auf **Projekt erstellen.**
 
     ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-21.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu **Edit > Preferences (Einstellungen bearbeiten** ), und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, ob der **Standardskript-Editor** auf **Visual Studio.** Wechseln Sie **zu > Bearbeiten,** und navigieren Sie dann im neuen Fenster zu **Externe Tools.** Ändern **Sie den editor für externe** **Skripts in Visual Studio 2017**. Schließen Sie das **Fenster Einstellungen.**
 
     ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-22.png)
 
-4.  Navigieren Sie als nächstes zu **Datei > Buildeinstellungen** , wählen Sie **universelle Windows-Plattform** aus, und klicken Sie dann auf die Schaltfläche **Plattform wechseln** , um Ihre Auswahl zu übernehmen
+4.  Wechseln Sie als Nächstes zu **Datei > Build Einstellungen,** wählen Sie **Universelle Windows-Plattform** aus, und klicken Sie dann auf die Schaltfläche Plattform wechseln, um Ihre Auswahl anzuwenden. 
 
     ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-23.png)
 
-5.  In **Datei > Buildeinstellungen** , und stellen Sie Folgendes sicher:
+5.  Vergewissern Sie **sich, dass > Datei Einstellungen** erstellen, und stellen Sie Sicher, dass:
 
-    1.  **Zielgerät** ist auf **hololens** festgelegt
+    1.  **Das Zielgerät** ist **auf** HoloLens
 
-        > Legen Sie für die immersiven Headsets das **Zielgerät** auf *ein beliebiges Gerät* fest.
+        > Legen Sie für die immersiven Headsets **Zielgerät auf** *Beliebiges Gerät fest.*
 
-    2.  Der **Buildtyp** ist auf **D3D** festgelegt.
+    2.  **Buildtyp** ist auf **D3D festgelegt**
 
-    3.  **SDK** ist auf **neueste installierte** Version festgelegt.
+    3.  **SDK** ist auf **Latest installed (Neueste installiert) festgelegt.**
 
-    4.  **Visual Studio-Version** ist auf **neueste installierte** Version festgelegt.
+    4.  **Visual Studio version** ist auf **Latest installed (Neueste installiert) festgelegt.**
 
-    5.  **Build und Run** sind auf **lokaler Computer** festgelegt.
+    5.  **Erstellen und Ausführen** ist auf Lokaler **Computer festgelegt.**
 
-    6.  Speichern Sie die Szene, und fügen Sie Sie dem Build hinzu. 
+    6.  Speichern Sie die Szene, und fügen Sie sie dem Build hinzu. 
 
-        1. Wählen Sie hierzu die Option **geöffnete Szenen hinzufügen** aus. Ein Fenster zum Speichern wird angezeigt.
+        1. Wählen Sie hierzu Geöffnete Szenen **hinzufügen aus.** Ein Speicherfenster wird angezeigt.
         
             ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-24.png)
 
-        2. Erstellen Sie einen neuen Ordner für dieses und jede zukünftige Szene, und wählen Sie dann die Schaltfläche **neuer Ordner** aus, um einen neuen Ordner zu **erstellen.**
+        2. Erstellen Sie einen neuen Ordner für diesen und jede  zukünftige Szene, und wählen Sie dann die Schaltfläche Neuer Ordner aus, um einen neuen Ordner zu erstellen, und nennen Sie **ihn Scenes**.
 
              ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-25.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname*: Text **botscene** ein, und klicken Sie dann auf **Speichern**.
+        3. Öffnen Sie den neu erstellten **Ordner Scenes,** und geben Sie dann im Feld Dateiname *:* Text **botScene** ein, und klicken Sie dann **auf Speichern.**
 
             ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-26.png)
 
-    7. Die restlichen Einstellungen in den **Buildeinstellungen** sollten vorerst als Standard belassen werden.
+    7. Die restlichen Einstellungen in **Build Einstellungen** sollten vorerde als Standardeinstellung be übrig bleiben.
 
-6. Klicken Sie im Fenster *Buildeinstellungen* auf die Schaltfläche **Player Einstellungen** . Dadurch wird der entsprechende Bereich in dem Bereich geöffnet, in dem sich der *Inspektor* befindet. 
+6. Klicken Sie *im Fenster Build Einstellungen* auf die Schaltfläche Player **Einstellungen,** um den entsprechenden Bereich in dem Bereich zu öffnen, in dem sich der *Inspektor* befindet. 
 
     ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-27.png)
 
 7. In diesem Bereich müssen einige Einstellungen überprüft werden:
 
-    1. Auf der Registerkarte **andere Einstellungen** :
+    1. Führen Sie **auf Einstellungen** Registerkarte Andere Optionen aus:
 
-        1. Die **Skript Lauf Zeit Version** sollte **experimentell sein (NET 4,6-Entsprechung)**; Wenn Sie dies ändern, muss der Editor neu gestartet werden.
-        2. **Skript** -Back-End sollte **.net** sein
-        3. **API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
+        1. **Die Skriptlaufzeitversion** sollte **experimentell sein (NET 4.6-Entsprechung).** Wenn Sie dies ändern, ist ein Neustart des Editors erforderlich.
+        2. **Das Skript-Back-End** sollte **.NET sein.**
+        3. **Der API-Kompatibilitätsgrad** sollte **.NET 4.6 sein.**
 
             ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-28.png)
       
-    2. Überprüfen Sie auf der Registerkarte **Veröffentlichungs Einstellungen** unter **Funktionen** Folgendes:
+    2. Aktivieren Sie **auf Einstellungen** Registerkarte Publishing Einstellungen unter **Capabilities (Funktionen)** die folgenden Optionen:
 
         - **InternetClient**
         - **Mikrofon**
 
             ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-29.png)
 
-    3. Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    3. Aktivieren Sie weiter unten im Bereich in **XR Einstellungen** (unter Publish **Einstellungen)** **(Virtual Reality** unterstützt), und stellen Sie sicher, dass das Windows Mixed Reality **SDK** hinzugefügt wird.
 
         ![Einrichten des Unity-Projekts](images/AzureLabs-Lab312-30.png)
 
-8.  Zurück in *Buildeinstellungen* : _Unity-c#_ -Projekte sind nicht mehr abgeblendet. Aktivieren Sie das Kontrollkästchen neben this. 
+8.  Zurück in *Build Einstellungen* _Unity C#-Projekte_ ist nicht mehr ausgegraut. aktivieren Sie das Kontrollkästchen daneben. 
 9.  Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
-10. Speichern Sie Ihre Szene und Ihr Projekt (**Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
+10. Speichern Sie Ihre Szene und Ihr Projekt (**FILE > SAVE SCENE/FILE > SAVE PROJECT**).
 
 
-## <a name="chapter-5--camera-setup"></a>Kapitel 5 – Kamera Einrichtung
+## <a name="chapter-5--camera-setup"></a>Kapitel 5– Kameraeinrichtung
 
 > [!IMPORTANT]
-> Wenn Sie die *Unity-Setup* Komponente dieses Kurses überspringen und direkt mit dem Code fortfahren möchten, können Sie dieses [Azure-Mr-312-Package. unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20312%20-%20Bot%20integration/Azure-MR-312.unitypackage)herunterladen, es als [**benutzerdefiniertes Paket**](https://docs.unity3d.com/Manual/AssetPackages.html)in Ihr Projekt importieren und dann aus [Kapitel 7](#chapter-8--create-the-botobjects-class)fortfahren.
+> Wenn Sie die *Unity-Komponente* Einrichten dieses Kurses überspringen und direkt mit dem Code fortfahren möchten, können Sie diese [Azure-MR-312-Package.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20312%20-%20Bot%20integration/Azure-MR-312.unitypackage)herunterladen, als benutzerdefiniertes Paket in Ihr Projekt importieren und dann mit Kapitel [7](#chapter-8--create-the-botobjects-class)fortfahren. [](https://docs.unity3d.com/Manual/AssetPackages.html)
 
-1.  Wählen Sie im Bereich *Hierarchie* die **Hauptkamera** aus. 
-2.  Nachdem Sie diese Option ausgewählt haben, können Sie alle Komponenten der **Hauptkamera** im *Inspektor-Panel* sehen.
+1.  Wählen Sie *im Bereich Hierarchie* die **Hauptkamera aus.** 
+2.  Nach der Auswahl können Sie alle Komponenten  der Hauptkamera im Inspektorbereich *sehen.*
 
-    1. Das **Kamera Objekt** muss als **Hauptkamera** benannt werden (Beachten Sie die Schreibweise).
-    2. Das Hauptkamera **Kennzeichen** muss auf **maincamera** festgelegt sein (Beachten Sie die Schreibweise).
-    3. Stellen Sie sicher, dass die **Transformations Position** auf **0, 0, 0** festgelegt ist.
-    4. Legen Sie **klar Flags** auf voll **Tonfarbe** fest.
-    5. Legen Sie die **Hintergrund** Farbe der Kamera Komponente auf **schwarz, Alpha 0 (Hexadezimal Code: #00000000)** fest.
+    1. Das **Camera-Objekt** muss den Namen **Hauptkamera haben** (beachten Sie die Schreibweise).
+    2. Das Main Camera **Tag** muss auf **MainCamera** festgelegt werden (beachten Sie die Schreibweise).
+    3. Stellen Sie **sicher, dass die Transformationsposition** auf **0, 0, 0 festgelegt ist.**
+    4. Legen **Sie Clear Flags auf** **Volltonfarbe fest.**
+    5. Legen Sie **die Hintergrundfarbe** der Kamerakomponente auf **Schwarz, Alpha 0 (Hexadezimalcode: #00000000) fest.**
 
-    ![Kamera-Setup](images/AzureLabs-Lab312-31.png)
+    ![Kameraeinrichtung](images/AzureLabs-Lab312-31.png)
  
 
-## <a name="chapter-6--import-the-newtonsoft-library"></a>Kapitel 6 – Importieren der newtonsoft-Bibliothek
+## <a name="chapter-6--import-the-newtonsoft-library"></a>Kapitel 6 : Importieren der Newtonsoft-Bibliothek
 
-Zum Deserialisieren und Serialisieren von Objekten, die empfangen und an den bot-Dienst gesendet werden, müssen Sie die **newtonsoft** -Bibliothek herunterladen. Sie finden eine [kompatible Version, die bereits mit der richtigen Unity-Ordnerstruktur organisiert](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20312%20-%20Bot%20integration/NewtonsoftDLL.unitypackage)ist. 
+Um Sie beim Deserialisieren und Serialisieren von empfangenen und an die Bot Service müssen Sie die **Newtonsoft-Bibliothek** herunterladen. Eine kompatible Version, [die bereits mit der richtigen Unity-Ordnerstruktur organisiert ist, finden Sie hier.](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20312%20-%20Bot%20integration/NewtonsoftDLL.unitypackage) 
 
-Verwenden Sie das Unity-Paket, das in diesem Kurs verwendet wurde, um die newtonsoft-Bibliothek in Ihr Projekt zu importieren.
+Um die Newtonsoft-Bibliothek in Ihr Projekt zu importieren, verwenden Sie das Unity-Paket, das in diesem Kurs enthalten ist.
 
-1.  Fügen Sie das *. unitypackage* zu Unity hinzu, indem Sie die Menüoption **Assets**  >  **Import Package**  >  **Custom Package** verwenden.
+1.  Fügen Sie *unitypackage mithilfe der* Menüoption Assets Import Package Custom Package **(Benutzerdefiniertes** Paket importieren) zu Unity  >    >   hinzu.
 
-    ![Importieren der newtonsoft-Bibliothek](images/AzureLabs-Lab312-34.png)
+    ![Importieren der Newtonsoft-Bibliothek](images/AzureLabs-Lab312-34.png)
 
-2.  Vergewissern Sie sich, dass im Feld **Unity-Paket importieren** , das angezeigt wird, alles unter (und **einschließlich) Plug** -ins ausgewählt ist.
+2.  Vergewissern Sie sich im angezeigten Feld **Unity-Paket** importieren, dass alles unter (und einschließlich) **Plug-Ins** ausgewählt ist.
 
-    ![Importieren der newtonsoft-Bibliothek](images/AzureLabs-Lab312-35.png)
+    ![Importieren der Newtonsoft-Bibliothek](images/AzureLabs-Lab312-35.png)
 
-3.  Klicken Sie auf die Schaltfläche **importieren** , um dem Projekt die Elemente hinzuzufügen.
+3.  Klicken Sie auf **die Schaltfläche** Importieren, um dem Projekt die Elemente hinzuzufügen.
 
-4.  Wechseln Sie in der Projekt **Ansicht in den** Ordner **Newton Soft** unter Plug-in, und wählen Sie das newtonsoft-Plug-in aus.
+4.  Wechseln Sie in der  Projektansicht unter Plug-Ins zum Ordner **Newtonsoft,** und wählen Sie das Newtonsoft-Plug-In aus.
 
     ![](images/AzureLabs-Lab312-35b.png)
 
-5.  Vergewissern **Sie sich**, dass die Option "newtonsoft" ausgewählt **ist, und stellen** Sie sicher, dass **alle Plattformen** deaktiviert sind. Stellen Sie dann **sicher, dass** **wsaplayer** ebenfalls deaktiviert ist Dies dient nur zur Bestätigung, dass die Dateien ordnungsgemäß konfiguriert sind.
+5.  Vergewissern Sie sich bei ausgewähltem Newtonsoft-Plug-In, dass Any **Platform** (Beliebige Plattform) deaktiviert **ist,** stellen Sie sicher, dass **auch WSAPlayer** deaktiviert **ist,** und klicken Sie dann **auf Anwenden.** Dadurch wird lediglich bestätigt, dass die Dateien ordnungsgemäß konfiguriert sind.
 
     ![](images/AzureLabs-Lab312-35c.png)
 
     > [!NOTE]
-    > Wenn Sie diese Plug-ins markieren, werden Sie nur im Unity-Editor verwendet. Im WSA-Ordner gibt es eine andere Gruppe, die verwendet wird, nachdem das Projekt aus Unity exportiert wurde.
+    > Durch das Markieren dieser Plug-Ins werden sie so konfiguriert, dass sie nur im Unity-Editor verwendet werden. Es gibt einen anderen Satz von ihnen im WSA-Ordner, der verwendet wird, nachdem das Projekt aus Unity exportiert wurde.
 
-6.  Als nächstes müssen Sie den Ordner " **WSA** " im Ordner " **newtonsoft** " öffnen. Es wird eine Kopie derselben Datei angezeigt, die Sie soeben konfiguriert haben. Wählen Sie die Datei aus, und vergewissern Sie sich dann im Inspektor, dass
-    -   **Jede Plattform** ist **deaktiviert** . 
-    -   **nur** **wsaplayer** ist **aktiviert** .
-    -   "Nicht **verarbeiten** " ist **aktiviert**
+6.  Als Nächstes müssen Sie den **Ordner WSA** im **Ordner Newtonsoft** öffnen. Sie sehen eine Kopie derselben Datei, die Sie gerade konfiguriert haben. Wählen Sie die Datei aus, und stellen Sie dann im Inspektor sicher, dass
+    -   **Alle Plattformen** **sind deaktiviert.** 
+    -   **Nur** **WSAPlayer** **ist überprüft.**
+    -   **Nicht überprüfter** **Prozess**
 
     ![](images/AzureLabs-Lab312-35d.png)
 
-## <a name="chapter-7--create-the-bottag"></a>Kapitel 7 – Erstellen des bottag
+## <a name="chapter-7--create-the-bottag"></a>Kapitel 7: Erstellen des BotTags
 
-1.  Erstellen Sie ein neues **tagobjekt** mit dem Namen **bottag**. Wählen Sie die Hauptkamera in der Szene aus. Klicken Sie im Inspektor-Panel auf das Dropdown Menü Tag. Klicken Sie auf **Tag hinzufügen**.
+1.  Erstellen Sie ein neues **Tag-Objekt** mit dem **Namen BotTag.** Wählen Sie die Hauptkamera in der Szene aus. Klicken Sie im Inspektorbereich auf das Dropdownmenü Tag. Klicken Sie auf **Tag hinzufügen.**
 
-    ![Kamera-Setup](images/AzureLabs-Lab312-32.png)
+    ![Kameraeinrichtung](images/AzureLabs-Lab312-32.png)
  
-2.  Klicken Sie auf das **+** Symbol. Nennen Sie das neue **Tag** als **bottag**, *Speichern*.
+2.  Klicken Sie auf das **+** Symbol. Nennen Sie das **neue Tag** **BotTag,** speichern *Sie*.
 
-    ![Kamera-Setup](images/AzureLabs-Lab312-33.png)
+    ![Kameraeinrichtung](images/AzureLabs-Lab312-33.png)
 
 > [!WARNING] 
-> Wenden Sie das **bottag** **nicht** auf die Hauptkamera an. Wenn Sie dies versehentlich abgeschlossen haben, stellen Sie sicher, dass Sie das Hauptkamera-Tag wieder in " *maincamera*" ändern.
+> **Wenden Sie** **botTag nicht auf** die Hauptkamera an. Wenn Sie dies versehentlich getan haben, stellen Sie sicher, dass Sie das Tag Hauptkamera wieder in *MainCamera ändern.*
 
-## <a name="chapter-8--create-the-botobjects-class"></a>Kapitel 8 – Erstellen der botobjects-Klasse
+## <a name="chapter-8--create-the-botobjects-class"></a>Kapitel 8: Erstellen der BotObjects-Klasse
 
-Das erste Skript, das Sie erstellen müssen, ist die **botobjects** -Klasse, bei der es sich um eine leere Klasse handelt, die erstellt wird, sodass eine Reihe von anderen Klassen Objekten innerhalb desselben Skripts gespeichert und von anderen Skripts in der Szene aufgerufen werden kann.
+Das erste Skript, das Sie erstellen müssen, ist die **BotObjects-Klasse,** bei der es sich um eine leere Klasse handelt, die erstellt wurde, sodass eine Reihe anderer Klassenobjekte innerhalb desselben Skripts gespeichert und von anderen Skripts in der Szene aufgerufen werden kann.
 
-Bei der Erstellung dieser Klasse handelt es sich lediglich um eine architektonische Wahl. diese Objekte könnten stattdessen in dem bot-Skript gehostet werden, das Sie später in diesem Kurs erstellen werden.
+Die Erstellung dieser Klasse ist eine rein architektonische Wahl. Diese Objekte könnten stattdessen im Botskript gehostet werden, das Sie später in diesem Kurs erstellen.
 
 So erstellen Sie diese Klasse: 
 
-1.  Klicken Sie mit der rechten Maustaste im *Projekt Panel*, und erstellen Sie dann **> Ordner**. Benennen Sie den Ordner mit **Skripts**. 
+1.  Klicken Sie mit der rechten Maustaste in *Project Bereich*, und klicken Sie dann auf **> Ordner**. Nennen Sie den Ordner **Scripts**. 
 
-    ![Erstellen Sie den Ordner Skripts.](images/AzureLabs-Lab312-36.png)
+    ![Erstellen Sie den Ordner skripts.](images/AzureLabs-Lab312-36.png)
 
-2.  Doppelklicken Sie auf den Ordner **Scripts** , um ihn zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste auf, und wählen Sie **> c#-Skript erstellen** aus. Benennen Sie das Skript mit dem Namen **botobjects**. 
+2.  Doppelklicken Sie auf den Ordner **Skripts,** um ihn zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste, und wählen Sie **Create > C# Script (C#-Skript erstellen) aus.** Nennen Sie das **Skript BotObjects**. 
 
-3.  Doppelklicken Sie auf das neue **botobjects** -Skript, um es in **Visual Studio** zu öffnen.
+3.  Doppelklicken Sie auf das neue **BotObjects-Skript,** um es mit **Visual Studio.**
 
 4.  Löschen Sie den Inhalt des Skripts, und ersetzen Sie ihn durch den folgenden Code:
 
@@ -552,21 +552,21 @@ So erstellen Sie diese Klasse:
     }
     ```
 
-6.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+6.  Achten Sie darauf, dass Sie Ihre Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-9--create-the-gazeinput-class"></a>Kapitel 9 – Erstellen der Klasse "gazeinput"
+## <a name="chapter-9--create-the-gazeinput-class"></a>Kapitel 9: Erstellen der GazeInput-Klasse
 
-Die nächste Klasse, die Sie erstellen, ist die " **gazeinput** "-Klasse. Diese Klasse ist für Folgendes zuständig:
+Die nächste Klasse, die Sie erstellen, ist die **GazeInput-Klasse.** Diese Klasse ist für Folgendes verantwortlich:
 
-- Erstellen eines Cursors, der den *Blick* des Players darstellt.
-- Erkennen von Objekten, die vom Blickpunkt des Players erreicht werden, und Speichern eines Verweises auf erkannte Objekte.
+- Erstellen eines Cursors, der den *Anving des* Players repräsentiert.
+- Erkennen von Objekten, die durch das Anvieren des Players getroffen werden, und Halten eines Verweises auf erkannte Objekte.
 
 So erstellen Sie diese Klasse: 
 
-1.  Wechseln Sie zum Ordner " **Scripts** ", den Sie zuvor erstellt haben. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner, und **Erstellen Sie > c#-Skript**. Nennen Sie das Skript " **gazeinput**". 
-3.  Doppelklicken Sie auf das neue **gazeinput** -Skript, um es in **Visual Studio** zu öffnen.
-4.  Fügen Sie die folgende Zeile rechts oben in den Klassennamen ein:
+1.  Wechseln Sie zum **Ordner Skripts,** den Sie zuvor erstellt haben. 
+2.  Klicken Sie mit der rechten Maustaste in den Ordner Create **> C#-Skript.** Rufen Sie das Skript **GazeInput auf.** 
+3.  Doppelklicken Sie auf das neue **GazeInput-Skript,** um es **mit** Visual Studio.
+4.  Fügen Sie die folgende Zeile direkt über dem Klassennamen ein:
 
     ```csharp
     /// <summary>
@@ -576,7 +576,7 @@ So erstellen Sie diese Klasse:
     public class GazeInput : MonoBehaviour
     ```
 
-5.  Fügen Sie dann die folgenden Variablen in der Klasse " **gazeinput** " oberhalb der Methode " **Start ()** " hinzu:
+5.  Fügen Sie dann die folgenden Variablen in der **GazeInput-Klasse** über der **Start()-Methode** hinzu:
 
     ```csharp
         [Tooltip("Used to compare whether an object is to be interacted with.")]
@@ -612,7 +612,7 @@ So erstellen Sie diese Klasse:
         private Vector3 _gazeDirection;
     ```
 
-6.  Code für die Methode " **Start ()** " sollte hinzugefügt werden. Dies wird aufgerufen, wenn die-Klasse initialisiert:
+6.  Code für **die Start()-Methode** sollte hinzugefügt werden. Dies wird aufgerufen, wenn die -Klasse initialisiert wird:
 
     ```csharp
         /// <summary>
@@ -625,7 +625,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-7.  Implementieren Sie eine Methode, die den Cursor Cursor instanziieren und einrichten soll: 
+7.  Implementieren Sie eine Methode, die den Anvistikcursor instanziiert und einsetze: 
 
     ```csharp
         /// <summary>
@@ -647,7 +647,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8.  Implementieren Sie die Methoden, die den raycast von der Hauptkamera einrichten, und verfolgen Sie das aktuelle fokussierte Objekt.
+8.  Implementieren Sie die Methoden, die raycast von der Hauptkamera einrichten und das aktuelle Fokusobjekt nachverfolgen.
 
     ```csharp
         /// <summary>
@@ -745,25 +745,25 @@ So erstellen Sie diese Klasse:
         }
     ```
  
-9.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+9.  Achten Sie darauf, dass Sie Ihre Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-10--create-the-bot-class"></a>Kapitel 10 – Erstellen der bot-Klasse
+## <a name="chapter-10--create-the-bot-class"></a>Kapitel 10 – Erstellen der Bot-Klasse
 
-Das Skript, das Sie jetzt erstellen, wird als **bot** bezeichnet. Dies ist die Kern Klasse Ihrer Anwendung, die gespeichert wird: 
+Das Skript, das Sie jetzt erstellen möchten, heißt **Bot.** Dies ist die Kernklasse Ihrer Anwendung. Sie speichert: 
 
-- Ihre Web-App-botanmelde Informationen
-- Die Methode, die die User Voice-Befehle sammelt.
-- Die erforderliche Methode zum Initiieren von Konversationen mit dem Web-App-bot 
-- Die erforderliche Methode zum Senden von Nachrichten an Ihren Web-App-bot 
+- Anmeldeinformationen für Ihren Web-App-Bot
+- Die Methode, die die Benutzerstimmenbefehle sammelt
+- Die Methode, die zum Initiieren von Konversationen mit Ihrem Web-App-Bot erforderlich ist 
+- Die Methode, die zum Senden von Nachrichten an Ihren Web-App-Bot erforderlich ist 
 
-Um Nachrichten an den botdienst zu senden, erstellt die **sendmessageybot ()** -Coroutine eine-Aktivität, bei der es sich um ein Objekt handelt, das vom bot Framework als vom Benutzer gesendete Daten erkannt wird. 
+Um Nachrichten an den Bot Service zu senden, erstellt die **SendMessageToBot()-Coroutine** eine Aktivität, bei der es sich um ein Objekt handelt, das vom Bot Framework als vom Benutzer gesendete Daten erkannt wird. 
  
 So erstellen Sie diese Klasse: 
 
-1. Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen. 
-2. Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Benennen Sie den Skript- **bot**. 
-3. Doppelklicken Sie auf das neue Skript, um es in Visual Studio zu öffnen.
-4. Aktualisieren Sie die Namespaces so, dass Sie am Anfang der **bot** -Klasse wie folgt lauten:
+1. Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen. 
+2. Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken Sie **> C#-Skript erstellen.** Nennen Sie das **Skript Bot**. 
+3. Doppelklicken Sie auf das neue Skript, um es mit dem Visual Studio.
+4. Aktualisieren Sie die Namespaces am Anfang der **Bot-Klasse** so, dass sie mit den folgenden identisch sind:
 
     ```csharp
     using Newtonsoft.Json;
@@ -774,7 +774,7 @@ So erstellen Sie diese Klasse:
     using UnityEngine.Windows.Speech;
     ```
  
-5. Fügen Sie innerhalb der **bot** -Klasse die folgenden Variablen hinzu:
+5. Fügen Sie **in der Bot-Klasse** die folgenden Variablen hinzu:
 
     ```csharp
         /// <summary>
@@ -836,9 +836,9 @@ So erstellen Sie diese Klasse:
     ```
 
     > [!NOTE] 
-    > Stellen Sie sicher, dass Sie Ihren botsecret- **Schlüssel** in die **botsecret** -Variable einfügen. Sie haben ihren **botsecret-Schlüssel** zu Beginn dieses Kurses in **[Kapitel 2](#chapter-2---create-the-azure-bot-service), Schritt 10** notiert.
+    > Stellen Sie sicher, dass Sie Ihren **geheimen Botschlüssel** in die **Variable botSecret** einfügen. Sie haben ihren geheimen **Botschlüssel** zu Beginn dieses Kurses notiert, in **[Kapitel 2](#chapter-2---create-the-azure-bot-service), Schritt 10.**
 
-7. Der Code für " **Awa()** " und " **Start ()** " muss nun hinzugefügt werden. 
+7. Code für **"Awake()"** **und "Start()"** muss nun hinzugefügt werden. 
 
     ```csharp
         /// <summary>
@@ -858,7 +858,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8. Fügen Sie die beiden Handler hinzu, die von den Sprach Bibliotheken aufgerufen werden, wenn die sprach Erfassung beginnt und endet. Der " *diktationerkenzer* " hält die Erfassung der Benutzer Stimme automatisch an, wenn der Benutzer seine Sprache stoppt.
+8. Fügen Sie die beiden Handler hinzu, die von den Sprachbibliotheken aufgerufen werden, wenn die Spracherfassung beginnt und endet. Der *DictationRecognizer* beendet automatisch die Erfassung der Benutzerstimme, wenn der Benutzer nicht mehr spricht.
 
     ```csharp
         /// <summary>
@@ -887,7 +887,7 @@ So erstellen Sie diese Klasse:
         
     ```
 
-1. Der folgende Handler sammelt das Ergebnis der User Voice-Eingabe und ruft die Coroutine auf, die für das Senden der Nachricht an den Web-App-botdienst zuständig ist.
+1. Der folgende Handler erfasst das Ergebnis der Benutzerstimmeneingabe und ruft die Coroutine auf, die für das Senden der Nachricht an die Web-App-Bot Service.
 
     ```csharp
         /// <summary>
@@ -904,7 +904,7 @@ So erstellen Sie diese Klasse:
         }     
     ```
 
-10. Die folgende Coroutine wird aufgerufen, um eine Konversation mit dem bot zu beginnen. Sie werden feststellen, dass nach Abschluss des Konversations Aufrufes die **sendmessagetocoroutine ()** aufruft, indem eine Reihe von Parametern übergeben wird, die festlegen, dass die Aktivität als leere Nachricht an den botdienst gesendet werden soll. Dadurch wird der botdienst aufgefordert, den Dialog zu initiieren.
+10. Die folgende Coroutine wird aufgerufen, um eine Konversation mit dem Bot zu beginnen. Sie werden feststellen, dass nach Abschluss des Konversationsaufrufs **SendMessageToCoroutine()** aufgerufen wird, indem eine Reihe von Parametern übergeben wird, die die aktivität, die an den Bot Service gesendet werden soll, als leere Nachricht festlegen. Dies erfolgt, um den Benutzer auf Bot Service, den Dialog zu initiieren.
 
     ```csharp
         /// <summary>
@@ -935,7 +935,7 @@ So erstellen Sie diese Klasse:
         }    
     ```
 
-11. Die folgende Coroutine wird aufgerufen, um die Aktivität zu erstellen, die an den bot-Dienst gesendet werden soll. 
+11. Die folgende Coroutine wird aufgerufen, um die Aktivität zu erstellen, die an die Bot Service. 
 
     ```csharp
         /// <summary>
@@ -984,7 +984,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-12. Die folgende Coroutine wird aufgerufen, um nach dem Senden einer Aktivität an den bot-Dienst eine Antwort anzufordern. 
+12. Die folgende Coroutine wird aufgerufen, um nach dem Senden einer Aktivität an die Bot Service. 
 
     ```csharp
         /// <summary>
@@ -1031,24 +1031,24 @@ So erstellen Sie diese Klasse:
     ```
 
     > [!NOTE] 
-    > In der Unity-Editor-Konsole wird möglicherweise ein Fehler angezeigt, in dem die **sceneorganisator** -Klasse fehlt. Ignorieren Sie diese Meldung, da Sie diese Klasse später in diesem Tutorial erstellen.
+    > Möglicherweise wird in der Unity-Editor-Konsole ein Fehler angezeigt, dass die **SceneOrganiser-Klasse fehlt.** Ignorieren Sie diese Meldung, da Sie diese Klasse später in diesem Tutorial erstellen.
 
-14.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+14.  Stellen Sie sicher, dass Sie Ihre Änderungen *in* Visual Studio speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-11--create-the-interactions-class"></a>Kapitel 11 – Erstellen der Klasse "Interaktionen"
+## <a name="chapter-11--create-the-interactions-class"></a>Kapitel 11 – Erstellen der Interactions-Klasse
 
-Die Klasse, die Sie jetzt erstellen, wird als **Interaktionen** bezeichnet. Diese Klasse wird zum Erkennen der hololens-Tap-Eingaben vom Benutzer verwendet. 
+Die Klasse, die Sie jetzt erstellen möchten, heißt **Interaktionen.** Diese Klasse wird verwendet, um zu erkennen, HoloLens Benutzer auf Eingabe tippt. 
 
-Wenn der Benutzer während der Betrachtung des *bot* -Objekts in der Szene tippt und der bot bereit ist, auf Spracheingaben zu lauschen, ändert sich das bot-Objekt in **rot** und beginnt mit dem lauschen auf Spracheingaben. 
+Wenn der Benutzer beim Sehen des *Botobjekts* in der Szene tippt und der Bot bereit  ist, auf Spracheingaben zu lauschen, ändert das Bot-Objekt die Farbe in Rot und beginnt mit dem Lauschen auf Spracheingaben. 
 
-Diese Klasse erbt von der Klasse " **gazeinput** " und kann daher auf die Methode " **Start ()** " und Variablen aus dieser Klasse verweisen, die durch die Verwendung von " **Base**" bezeichnet wird. 
+Diese Klasse erbt von der **GazeInput-Klasse** und kann daher auf die **Start()-Methode** und Variablen dieser Klasse verweisen, die durch die Verwendung der Basisklasse **bezeichnet werden.** 
  
 So erstellen Sie diese Klasse:
 
-1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Benennen Sie das Skript mit **Interaktionen**. 
-3.  Doppelklicken Sie auf das neue Skript, um es in Visual Studio zu öffnen.
-4.  Aktualisieren Sie die Namespaces und die Klassen Vererbung so, dass Sie am Anfang der Klasse **Interaktionen** mit der folgenden übereinstimmen:
+1.  Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen. 
+2.  Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken Sie **> C#-Skript erstellen.** Nennen Sie das Skript **Interaktionen**. 
+3.  Doppelklicken Sie auf das neue Skript, um es mit dem Visual Studio.
+4.  Aktualisieren Sie die Namespaces und die Klassenvererbung so, dass sie am Anfang der **Interactions-Klasse** mit den folgenden identisch sind:
 
     ```csharp
     using UnityEngine.XR.WSA.Input;
@@ -1057,7 +1057,7 @@ So erstellen Sie diese Klasse:
     {
     ```
 
-5.  Fügen Sie innerhalb der **Interaktionen** -Klasse die folgende Variable hinzu:
+5.  Fügen Sie **in der Interactions-Klasse** die folgende Variable hinzu:
 
     ```csharp
         /// <summary>
@@ -1065,7 +1065,7 @@ So erstellen Sie diese Klasse:
         /// </summary>
         private GestureRecognizer _gestureRecognizer;
     ```
-6.  Fügen Sie dann die Methode " **Start ()** " hinzu:
+6.  Fügen Sie dann die **Start()-Methode** hinzu:
 
     ```csharp
         /// <summary>
@@ -1083,7 +1083,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-7.  Fügen Sie den Handler hinzu, der ausgelöst wird, wenn der Benutzer die Tap-Geste vor der hololens-Kamera ausführt.
+7.  Fügen Sie den Handler hinzu, der ausgelöst wird, wenn der Benutzer die Tippbewegung vor der HoloLens ausführt.
 
     ```csharp
         /// <summary>
@@ -1113,18 +1113,18 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8. Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+8. Stellen Sie sicher, dass Sie Ihre Änderungen *in* Visual Studio speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-12--create-the-sceneorganiser-class"></a>Kapitel 12 – Erstellen der sceneorganisator-Klasse
+## <a name="chapter-12--create-the-sceneorganiser-class"></a>Kapitel 12 – Erstellen der SceneOrganiser-Klasse
 
-Die letzte in dieser Übungseinheit erforderliche Klasse heißt **sceneorganisator**. Diese Klasse wird die Szene Programm gesteuert einrichten, indem der Hauptkamera Komponenten und Skripts hinzugefügt werden und die entsprechenden Objekte in der Szene erstellt werden.
+Die letzte klasse, die in diesem Lab erforderlich ist, heißt **SceneOrganiser.** Mit dieser Klasse wird die Szene programmgesteuert eingerichtet, indem der Hauptkamera Komponenten und Skripts hinzugefügt und die entsprechenden Objekte in der Szene erstellt werden.
  
 So erstellen Sie diese Klasse:
 
-1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Nennen Sie das Skript **sceneorganisator**. 
-3.  Doppelklicken Sie auf das neue Skript, um es in Visual Studio zu öffnen.
-4.  Fügen Sie innerhalb der **sceneorganisator** -Klasse die folgenden Variablen hinzu:
+1.  Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen. 
+2.  Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken Sie **> C#-Skript erstellen.** Nennen Sie das **Skript SceneOrganiser**. 
+3.  Doppelklicken Sie auf das neue Skript, um es mit dem Visual Studio.
+4.  Fügen Sie **in der SceneOrganiser-Klasse** die folgenden Variablen hinzu:
 
     ```csharp
         /// <summary>
@@ -1138,7 +1138,7 @@ So erstellen Sie diese Klasse:
         internal TextMesh botResponseText;
     ```
 
-6.  Fügen Sie dann die Methoden " **Awa()** " und " **Start ()** " hinzu:
+6.  Fügen Sie dann die **Methoden "Awake()"** **und "Start()"** hinzu:
 
     ```csharp
         /// <summary>
@@ -1165,7 +1165,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-7.  Fügen Sie die folgende Methode hinzu, die für das Erstellen des bot-Objekts in der Szene und das Einrichten der Parameter und Komponenten zuständig ist:
+7.  Fügen Sie die folgende Methode hinzu, die für das Erstellen des Bot-Objekts in der Szene und das Einrichten der Parameter und Komponenten zuständig ist:
 
     ```csharp
         /// <summary>
@@ -1192,7 +1192,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-7.  Fügen Sie die folgende Methode hinzu, die für die Erstellung des UI-Objekts in der Szene zuständig ist und die Antworten vom bot darstellt:
+7.  Fügen Sie die folgende Methode hinzu, die für das Erstellen des UI-Objekts in der Szene verantwortlich ist und die Antworten des Bots darstellt:
 
     ```csharp
         /// <summary>
@@ -1219,73 +1219,73 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
-9.  Ziehen Sie im Unity-Editor das Skript " **sceneorganisator** " aus dem Ordner "Scripts" auf die Hauptkamera. Die Szene-Organisator-Komponente sollte nun auf dem Hauptkamera Objekt angezeigt werden, wie in der folgenden Abbildung dargestellt.
+8.  Stellen Sie sicher, dass Sie Ihre Änderungen *in* Visual Studio speichern, bevor Sie zu *Unity zurückkehren.*
+9.  Ziehen Sie im Unity-Editor das **Skript SceneOrganiser** aus dem Ordner Skripts auf die Hauptkamera. Die Komponente Szenenszenen sollte nun auf dem Hauptkameraobjekt angezeigt werden, wie in der folgenden Abbildung dargestellt.
 
-    ![Erstellen der Azure bot Service](images/AzureLabs-Lab312-37.png)
+    ![Erstellen des Azure Bot Service](images/AzureLabs-Lab312-37.png)
 
-## <a name="chapter-13--before-building"></a>Kapitel 13 – vor dem Aufbau
+## <a name="chapter-13--before-building"></a>Kapitel 13 – Vor dem Erstellen
 
-Um eine gründliche Test Ihrer Anwendung durchzuführen, müssen Sie Sie auf Ihre hololens querladen.
-Bevor Sie vorgehen, stellen Sie Folgendes sicher:
+Um ihre Anwendung gründlich zu testen, müssen Sie sie auf die HoloLens.
+Bevor Sie dies tun, stellen Sie Sicher, dass:
 
--   Alle in [**Kapitel 4**](#chapter-4--set-up-the-unity-project) erwähnten Einstellungen sind richtig festgelegt. 
--   Das Skript **sceneorganisator** ist an das **Hauptkamera** Objekt angefügt. 
--   Stellen Sie in der **bot** -Klasse sicher, dass Sie Ihren botsecret- **Schlüssel** in die **botsecret** -Variable eingefügt haben.
+-   Alle in Kapitel [**4 erwähnten**](#chapter-4--set-up-the-unity-project) Einstellungen sind ordnungsgemäß festgelegt. 
+-   Das Skript **SceneOrganiser** ist an das **Hauptkameraobjekt** angefügt. 
+-   Stellen Sie **in der Bot-Klasse** sicher, dass Sie Ihren geheimen **Botschlüssel** in die **Variable botSecret eingefügt** haben.
 
-## <a name="chapter-14--build-and-sideload-to-the-hololens"></a>Kapitel 14 – erstellen und Sideload auf die hololens
+## <a name="chapter-14--build-and-sideload-to-the-hololens"></a>Kapitel 14 : Erstellen und Sideloaden in HoloLens
 
-Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, ist nun abgeschlossen, sodass es an der Zeit ist, Sie aus Unity zu erstellen.
+Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, wurde abgeschlossen, daher ist es an der Zeit, es aus Unity zu erstellen.
 
-1.  Navigieren Sie zu **Buildeinstellungen**, **Datei > Buildeinstellungen...**.
-2.  Klicken Sie im Fenster " **Buildeinstellungen** " auf " **Erstellen**".
+1.  Navigieren Sie **zu Build Einstellungen**, Datei > Build **Einstellungen...**.
+2.  Klicken Sie **im Fenster Build Einstellungen** auf **Erstellen.**
 
-    ![Entwickeln der APP aus Unity](images/AzureLabs-Lab312-38.png)
+    ![Erstellen der App aus Unity](images/AzureLabs-Lab312-38.png)
 
-3.  Wenn dies nicht bereits geschehen ist, Tick Sie **Unity c#-Projekte**.
-4.  Klicken Sie auf **Erstellen**. Unity startet ein **Datei-Explorer** -Fenster, in dem Sie einen Ordner erstellen und auswählen müssen, in dem die App erstellt wird. Erstellen Sie diesen Ordner jetzt, und nennen Sie ihn " **App**". Klicken Sie dann mit ausgewähltem **App** -Ordner auf **Ordner auswählen**. 
-5.  Unity startet das Projekt in den **App** -Ordner. 
-6.  Nachdem die Erstellung von Unity abgeschlossen ist (Dies kann einige Zeit in Anspruch nehmen), wird ein **Datei-Explorer** -Fenster am Speicherort des Builds geöffnet (überprüfen Sie die Taskleiste, da Sie möglicherweise nicht immer über Ihrem Fenster angezeigt wird, sondern Sie über das Hinzufügen eines neuen Fensters benachrichtigt).
+3.  Wenn nicht bereits, aktivieren Sie **Unity C#-Projekte**.
+4.  Klicken Sie auf **Erstellen**. Unity startet ein **Datei-Explorer-Fenster,** in dem Sie einen Ordner erstellen und dann einen Ordner auswählen müssen, in dem die App erstellt werden soll. Erstellen Sie diesen Ordner jetzt, und nennen Sie ihn **App**. Klicken Sie dann bei ausgewähltem **App-Ordner** **auf Ordner auswählen.** 
+5.  Unity beginnt damit, Ihr Projekt im Ordner **App zu** erstellen. 
+6.  Sobald Unity die Erstellung abgeschlossen hat (dies kann einige Zeit dauern), wird ein **Datei-Explorer-Fenster** am Speicherort Ihres Buildfensters geöffnet (überprüfen Sie Ihre Taskleiste, da sie möglicherweise nicht immer über Ihren Fenstern angezeigt wird, sondern Sie über das Addition eines neuen Fensters benachrichtigt).
 
-## <a name="chapter-15--deploy-to-hololens"></a>Kapitel 15 – bereitstellen in hololens
+## <a name="chapter-15--deploy-to-hololens"></a>Kapitel 15 – Bereitstellen in HoloLens
 
-So stellen Sie auf hololens bereit:
+So stellen Sie auf HoloLens:
 
-1.  Sie benötigen die IP-Adresse Ihrer hololens (für die Remote Bereitstellung) und, um sicherzustellen, dass sich Ihre hololens im **Entwicklermodus** befinden. Gehen Sie dazu wie folgt vor:
+1.  Sie benötigen die IP-Adresse Ihres HoloLens (für Remote Deploy) und um sicherzustellen, dass sich HoloLens im **Entwicklermodus befindet.** Aufgabe:
 
-    1. Öffnen Sie die Einstellungen, während Sie die hololens- **Einstellungen** durch tragen.
-    2. Wechseln Sie zu **Netzwerk & Internet > Wi-Fi > Erweiterte Optionen** .
-    3. Notieren Sie sich die **IPv4** -Adresse.
-    4. Navigieren Sie als nächstes wieder zu **Einstellungen**, und aktualisieren Sie dann **& Sicherheits > für Entwickler** . 
-    5. Legen Sie den Entwicklermodus auf fest.
+    1. Öffnen Sie die HoloLens, während Sie **Einstellungen.**
+    2. Wechseln Sie **zu Netzwerk & Internet > Wi-Fi > Erweiterte Optionen.**
+    3. Notieren Sie sich **die IPv4-Adresse.**
+    4. Navigieren Sie als Nächstes zurück zu **Einstellungen**, und navigieren Sie dann zu **Update & Security > For Developers .)** 
+    5. Legen Sie entwicklermodus ein fest.
 
-2.  Navigieren Sie zu Ihrem neuen Unity-Build ( **App** -Ordner), und öffnen Sie die Projektmappendatei mit **Visual Studio**.
-3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
-4.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **Remote Computer** aus.  
+2.  Navigieren Sie zu Ihrem neuen Unity-Build (dem **Ordner App),** und öffnen Sie die Projektmappendatei mit **Visual Studio.**
+3.  Wählen Sie in **der Projektmappenkonfiguration** **Debuggen aus.**
+4.  Wählen Sie **auf der Projektmappenplattform** **x86**, **Remotecomputer aus.** 
 
-    ![Stellen Sie die Lösung aus Visual Studio bereit.](images/AzureLabs-Lab312-39.png)
+    ![Stellen Sie die Lösung über Visual Studio.](images/AzureLabs-Lab312-39.png)
  
-5.  Wechseln Sie zum **Menü Erstellen** , und klicken Sie auf **Lösung** bereitstellen, um die Anwendung auf die hololens quer zuladen.
-6.  Ihre APP sollte nun in der Liste der installierten apps auf Ihren hololens angezeigt werden, die bereit sind, gestartet zu werden.
+5.  Wechseln Sie zum **Menü Erstellen,** und klicken Sie auf **Projektmappe bereitstellen,** um die Anwendung in Ihre HoloLens.
+6.  Ihre App sollte jetzt in der Liste der installierten Apps auf Ihrer HoloLens angezeigt werden, die zum Start bereit sind!
 
     > [!NOTE]
-    > Legen Sie für die Bereitstellung auf dem immersiven Headset die Projektmappenplattform auf *lokaler Computer* fest, und legen Sie die **Konfiguration** auf  *Debuggen* und *x86* als **Plattform** fest. Stellen Sie dann auf dem lokalen Computer bereit, indem Sie im **Menü Erstellen** die Option *Lösung* bereitstellen auswählen. 
+    > Legen Sie zum Bereitstellen für immersive Headsets die  **Projektmappenplattform** auf *Lokaler* Computer und die Konfiguration auf *Debuggen* mit *x86* als Plattform **fest.** Stellen Sie dann auf dem lokalen Computer mithilfe des **Menüs Erstellen die** Option *Projektmappe bereitstellen aus.* 
 
-## <a name="chapter-16--using-the-application-on-the-hololens"></a>Kapitel 16 – verwenden der Anwendung auf den hololens
+## <a name="chapter-16--using-the-application-on-the-hololens"></a>Kapitel 16 – Verwenden der Anwendung auf HoloLens
 
-- Nachdem Sie die Anwendung gestartet haben, sehen Sie den bot als blaue Kugel vor Ihnen.
+- Nachdem Sie die Anwendung gestartet haben, sehen Sie den Bot als blaue Kugel vor Ihnen.
 
-- Verwenden Sie die **Tap-Geste** , während Sie die Kugel in der Kugel betrachten, um eine Konversation zu initiieren. 
+- Verwenden Sie **die Tippgeste,** während Sie sich an der Kugel befinden, um eine Konversation zu initiieren. 
  
-- Warten Sie, bis die Konversation gestartet wird (die Benutzeroberfläche zeigt eine Meldung an, wenn dies geschieht). Nachdem Sie die einführende Nachricht vom bot erhalten haben, tippen Sie erneut auf den bot, damit Sie rot wird und mit der Überwachung ihrer Stimme beginnt. 
+- Warten Sie, bis die Konversation gestartet wird (die Benutzeroberfläche zeigt eine Meldung an, wenn sie eintritt). Sobald Sie die einführungsmeldung vom Bot erhalten haben, tippen Sie erneut auf den Bot, damit er rot wird und mit dem Lauschen auf Ihre Stimme beginnt. 
 
-- Wenn Sie nicht mehr sprechen, sendet Ihre Anwendung Ihre Nachricht an den bot, und Sie erhalten umgehend eine Antwort, die in der Benutzeroberfläche angezeigt wird. 
+- Wenn Sie nicht mehr sprechen, sendet Ihre Anwendung Ihre Nachricht an den Bot, und Sie erhalten sofort eine Antwort, die auf der Benutzeroberfläche angezeigt wird. 
 
-- Wiederholen Sie den Vorgang, um weitere Nachrichten an Ihren bot zu senden (Sie müssen jedes Mal tippen, wenn Sie eine Nachricht übertragen möchten).
+- Wiederholen Sie den Vorgang, um weitere Nachrichten an Ihren Bot zu senden (Sie müssen jedes Mal tippen, wenn Sie eine Nachricht senden möchten).
 
-Diese Konversation veranschaulicht, wie der bot Informationen (ihren Namen) beibehalten und gleichzeitig bekannte Informationen bereitstellen kann (z. b. die Elemente, die gestockt sind).
+In dieser Konversation wird veranschaulicht, wie der Bot Informationen (Ihren Namen) beibehalten und gleichzeitig bekannte Informationen bereitstellen kann (z. B. die elemente, die vorbefüllt sind).
 
-#### <a name="some-questions-to-ask-the-bot"></a>Einige Fragen, um den bot zu Fragen:
+#### <a name="some-questions-to-ask-the-bot"></a>Einige Fragen, die dem Bot gestellt werden müssen:
 
 ```
 what do you sell? 
@@ -1295,9 +1295,9 @@ how much are umbrellas?
 how much are raincoats?
 ```
 
-## <a name="your-finished-web-app-bot-v4-application"></a>Ihre fertige Web-App-bot-Anwendung (v4)
+## <a name="your-finished-web-app-bot-v4-application"></a>Ihre fertige Web-App-Botanwendung (v4)
 
-Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azure-Web-App-bot, Microsoft bot Framework V4, nutzt.
+Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azure-Web-App-Bot Microsoft Bot Framework v4 nutzt.
 
 ![Endgültiges Produkt](images/AzureLabs-Lab312-00.png)
 
@@ -1305,8 +1305,8 @@ Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azur
 
 ### <a name="exercise-1"></a>Übung 1
 
-Die Konversations Struktur in dieser Übungseinheit ist sehr einfach. Verwenden Sie Microsoft Luis, um den bot-Funktionen für natürliche Sprache zu verwenden.
+Die Konversationsstruktur in diesem Lab ist sehr einfach. Verwenden Sie Microsoft LUIS, um Ihrem Bot Funktionen zum Verstehen natürlicher Sprache zu bieten.
 
 ### <a name="exercise-2"></a>Übung 2
 
-Dieses Beispiel umfasst nicht das Beenden einer Konversation und das Neustarten einer neuen Konversation. Um die bot-Funktion abzuschließen, versuchen Sie, den Abschluss der Konversation zu implementieren.
+Dieses Beispiel umfasst nicht das Beenden einer Konversation und das Neustarten einer neuen Konversation. Um das Botfeature vollständig zu machen, versuchen Sie, den Abschluss der Konversation zu implementieren.

@@ -1,46 +1,46 @@
 ---
-title: WinRT-APIs mit Unity für hololens
-description: 'Leanr: Verwenden von WinRT-APIs und des Windows-Namespace in ihren Unity Mixed Reality-Projekten für hololens.'
+title: WinRT-APIs mit Unity für HoloLens
+description: Erfahren Sie, wie Sie WinRT-APIs und den Windows-Namespace in Ihren Unity Mixed Reality-Projekten für HoloLens.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity, WinRT, Windows Mixed Reality, API, Exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Mixed Reality-APIs
-ms.openlocfilehash: cf80eff408b54c610c9e7878ccfa5185b3fbcca1
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: Unity, WinRT, Windows Mixed Reality, API, exemplarische Vorgehensweise, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Mixed Reality-APIs
+ms.openlocfilehash: 158c28d9186269108442226bbfcfc90a3c235a71336fdab9dbf9eadc21a309a1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98809994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215606"
 ---
-# <a name="winrt-apis-with-unity-for-hololens"></a>WinRT-APIs mit Unity für hololens
+# <a name="winrt-apis-with-unity-for-hololens"></a>WinRT-APIs mit Unity für HoloLens
 
-Auf dieser Seite wird beschrieben, wie Sie WinRT-APIs in Ihrem Unity-Projekt für hololens verwenden.
+Auf dieser Seite wird beschrieben, wie Sie WinRT-APIs in Ihrem Unity-Projekt für HoloLens.
 
 ## <a name="mixed-reality-apis"></a>Mixed Reality-APIs
 
-Eine gemischte Realität fokussierte Teilmenge der Windows SDK wurde in einer .NET Standard 2,0-kompatiblen Projektion zur Verfügung gestellt, die Sie in Ihrem Projekt ohne Präprozessordirektiven verwenden können. Die meisten APIs in Windows. Perception und Windows. UI. Input. räumliche Namespaces sind enthalten und können erweitert werden, um in Zukunft weitere APIs hinzufügen zu können. Die projizierten APIs können während der Ausführung im Editor verwendet werden, was die Verwendung des [Wiedergabemodus](/windows/mixed-reality/unity-play-mode)ermöglicht. Um diese Projektion zu verwenden, nehmen Sie die folgenden Änderungen am Projekt vor:
+Eine Mixed Reality Teilmenge des Windows SDK wurde in einer .NET Standard 2.0-kompatiblen Projektion zur Verfügung gestellt, die Sie ohne Präprozessordirektiven in Ihrem Projekt verwenden können. Die meisten APIs im Windows. Wahrnehmung und Windows. Benutzeroberfläche. Input.Spatial-Namespaces sind enthalten und können in Zukunft um zusätzliche APIs erweitert werden. Die projizierten APIs können während der Ausführung im Editor verwendet werden, was die Verwendung des [Wiedergabemodus ermöglicht.](/windows/mixed-reality/unity-play-mode) Um diese Projektion zu verwenden, nehmen Sie die folgenden Änderungen an Ihrem Projekt vor:
 
-1) Fügen Sie mithilfe [von nuget für Unity](https://github.com/GlitchEnzo/NuGetForUnity)einen Verweis auf das nuget-Paket [Microsoft. Windows. mixedreality. dotnetwinrt](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) hinzu.
-2) Verweise auf den `Windows` Namespace mit dem Präfix `Microsoft.` :
+1) Fügen Sie einen Verweis auf [microsoft.Windows. MixedReality.DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) NuGet paket using NuGet [for Unity](https://github.com/GlitchEnzo/NuGetForUnity).
+2) Präfixverweise auf den `Windows` Namespace mit `Microsoft.` :
 ```cs
 using namespace Microsoft.Windows.Perception.Spatial;
 ```
-3) Ersetzen Sie Native Zeiger Umwandlungen durch `FromNativePtr` :
+3) Ersetzen Sie native Zeigercasts durch `FromNativePtr` :
 ```cs
 var worldOrigin = SpatialCoordinateSystem.FromNativePtr(unityWorldOriginPtr);
 ```
 
-## <a name="conditionally-include-winrt-api-calls"></a>Bedingtes Einschließen von WinRT-API-aufrufen
+## <a name="conditionally-include-winrt-api-calls"></a>Bedingtes Schließen von WinRT-API-Aufrufen
 
-Sie können auch die WinRT-APIs in Unity-Projekten verwenden, die für die universelle Windows-Plattform-und Xbox One-Plattform mithilfe von Präprozessordirektiven erstellt wurden. Jeder Code, den Sie in Unity-Skripts schreiben, die auf WinRT-APIs abzielen, muss nur für diese Builds bedingt eingeschlossen werden. 
+Sie können die WinRT-APIs auch in Unity-Projekten verwenden, die für die Universelle Windows-Plattform und Xbox One-Plattform mithilfe von Präprozessordirektiven erstellt wurden. Jeder Code, den Sie in Unity-Skripts schreiben, die auf WinRT-APIs zielen, muss nur für diese Builds bedingt eingeschlossen werden. 
 
 Dies kann über zwei Schritte in Unity erfolgen:
-1) Der API-Kompatibilitäts Grad muss in den Player Einstellungen auf **.NET 4,6** oder **.NET Standard 2,0** festgelegt werden.
-    - **Bearbeiten**  >  **Projekteinstellungen**  >  **Player**  >  **Konfiguration**  >  **API-Kompatibilitäts Grad** auf **.NET 4,6** oder **.NET Standard 2,0**
-2) Die **ENABLE_WINMD_SUPPORT** der Präprozessordirektive muss von WinRT-verwendeter Code umschlossen werden.
+1) Der API-Kompatibilitätsgrad muss in den Playereinstellungen auf **.NET 4.6** oder **.NET Standard 2.0** festgelegt werden.
+    - **Bearbeiten**  >  **Project Einstellungen**  >  **Player**  >  **Konfiguration**  >  **API-Kompatibilitätsgrad** **bis .NET 4.6** **oder .NET Standard 2.0**
+2) Die Präprozessordi directive **ENABLE_WINMD_SUPPORT** muss um jeglichen von WinRT genutzten Code umschlossen werden.
 
-Der folgende Code Ausschnitt befindet sich auf der manuellen Seite von Unity für [universelle Windows-Plattform: WinRT-API in c#-Skripts](https://docs.unity3d.com/Manual/windowsstore-scripts.html). In diesem Beispiel wird eine Werbe-ID zurückgegeben, jedoch nur für UWP-und Xbox One-Builds:
+Der folgende Codeausschnitt ist von der Unity-Handbuchseite für [universal Windows Platform: WinRT-API in C#-Skripts.](https://docs.unity3d.com/Manual/windowsstore-scripts.html) In diesem Beispiel wird eine Werbe-ID zurückgegeben, jedoch nur auf UWP und Xbox One Builds:
 
 ```
 using UnityEngine;
@@ -60,10 +60,10 @@ public class WinRTAPI : MonoBehaviour {
 }
 ```
 
-## <a name="edit-your-scripts-in-a-unity-c-project"></a>Bearbeiten von Skripts in einem Unity c#-Projekt
+## <a name="edit-your-scripts-in-a-unity-c-project"></a>Bearbeiten Ihrer Skripts in einem Unity C#-Projekt
 
-Wenn Sie im Unity-Editor auf ein Skript doppelklicken, wird das Skript standardmäßig in einem Editor-Projekt gestartet. Die WinRT-APIs scheinen unbekannt zu sein, da das Visual Studio-Projekt nicht auf das Windows-Runtime verweist. Die **ENABLE_WINMD_SUPPORT** -Direktive ist nicht definiert, und jeder *#if* umschließende Code wird ignoriert, bis Sie das Projekt in eine UWP Visual Studio-Projekt Mappe erstellen.
+Wenn Sie im Unity-Editor auf ein Skript doppelklicken, wird ihr Skript standardmäßig in einem Editorprojekt gestartet. Die WinRT-APIs scheinen unbekannt zu sein, da das Visual Studio-Projekt nicht auf die Windows Verweist. Die  ENABLE_WINMD_SUPPORT-Direktive ist nicht *definiert,* und alle #if umschlossenen Code werden ignoriert, bis Sie Ihr Projekt in einer UWP-Visual Studio erstellen.
 
 ## <a name="see-also"></a>Siehe auch
 * [Exportieren und Erstellen einer Unity-Projektmappe für Visual Studio](exporting-and-building-a-unity-visual-studio-solution.md)
-* [Windows-Runtime Unterstützung von Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)
+* [Windows Runtime-Unterstützung für Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)

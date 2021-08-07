@@ -1,88 +1,88 @@
 ---
 title: Mixed Reality Dev Days Japan
-description: Ereignis Seite für Mixed Reality dev Days Japan
+description: Ereignisseite für Mixed Reality Dev Days Japan
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
-keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 93bafae605640a0576fd273f761eaec0a8994d86
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: Mixed Reality, Conference, Conference, Conference, Developer, HoloLens, HoloLens 2, Kinect
+ms.openlocfilehash: 9ad907cef86a1fbdb1a9ff01cd01d88f88fadaa640f34d8f270073ce5446646a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757598"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190373"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
 ![Mixed Reality Dev Days](images/MRDD/MRDevDaysJapanBanner.png)
 
-Wir freuen uns darauf, dass Sie uns bei Mixed Reality dev Day beitreten! Machen Sie sich bereit, von Microsoft-Führungskräften zu hören, von Experten zu lernen, und stellen Sie eine Verbindung mit der Community für gemischte Entwickler Registrieren Sie sich noch heute für die digitale Darstellung, ohne Kosten für Sie!
+Wir freuen uns darauf, dass Sie uns am Mixed Reality Dev Day beitreten! Machen Sie sich bereit, von Microsoft-Führungskräften zu hören, von Experten zu lernen und sich mit der Mixed Reality-Entwickler-Community zu verbinden. Registrieren Sie sich noch heute kostenlos für die digitale Erfahrung!
 
 ## <a name="important-details"></a>Wichtige Details
 
-**Datum-16. Dezember 2020**
+**Datum: 16. Dezember 2020**
 
-**Standort-Microsoft Teams-Live Veranstaltungen**
+**Standort – Microsoft Teams Liveereignisse**
 
-**Registrierungs frei**
+**Registrierung – KOSTENLOS**
 
-**Primärsprache-Japanisch**
+**Primäre Sprache – Japanisch**
 
-## <a name="session-recordings"></a>Sitzungs Aufzeichnungen
+## <a name="session-recordings"></a>Sitzungsaufzeichnungen
 
-[Alle Videos ansehen: YouTube-Wiedergabeliste](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
+[Alle Videos ansehen – YouTube-Wiedergabeliste](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-Vielen Dank für Ihre Teilnahme an Mixed Reality dev Days Japan. Alle Videos werden auf unserem YouTube-Kanal archiviert. Wir freuen uns, Sie zu sehen!
+Vielen Dank für Ihren Beitritt Mixed Reality Dev Days Japan. Alle Videos werden auf unserem YouTube-Kanal archiviert. Wir freuen uns darauf, Sie wieder zu sehen!
 
-## <a name="schedule---subject-to-change"></a>Zeitplan-Änderungen vorbehalten
+## <a name="schedule---subject-to-change"></a>Zeitplan – Änderungen unterliegen
 
-**Alle Uhrzeiten sind Japan Normalzeit (UTC + 9)** 
+**Alle Zeiten sind Japan Normalzeit (UTC+9).** 
 
 ### <a name="december-16"></a>16. Dezember
 
-**Wir haben eine Stunde nach dem ursprünglichen Zeitplan verzögert.**
+**Wir haben uns eine Stunde nach unserem ursprünglichen Zeitplan verzögert.**
 
-|**Time**|**Sitzungs Titel**|**Referent**|**Sprache**|**Level**|
+|**Time**|**Sitzungstitel**|**Referent**|**Sprache**|**Level**|
 |---------|---------|---------|---------|---------|
-|11:00AM-11:50uhr|[Eröffnungs Keynote mit einer besonderen Willkommensseite von Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda, Jesse McCulloch, Kaoru Nakamura, Tetsu Muranaka|Ja/en|–|
-|11:50uhr-12:00PM|**Pause (10 min.)**||||
-|12:00PM-12:25 Uhr|*Sitzung 1* Einführung [in gemischte Realität](https://youtu.be/HqJy91y8Of0)|Atsushi-Suzuki|JA|100|
-|12:30Uhr-12:55 Uhr|*Sitzung 2* [Mixed Reality-Geschäftsdynamik](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
-|1:00PM-1:50uhr|*Mittags Sitzung* Panel: interaktive, kostenlose Erörterung, Q und A, mrtk + Oculus Quest 2 * später aktualisieren|Madoka Chiyoda + Microsoft MVPs|JA|200|
-|1:50uhr-2 Uhr|**Pause (10 min.)**||||
-|2:00PM-2:25 Uhr|*Sitzung 3* : Übersicht über die [hololens 2-Entwicklung](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
-|2:30Uhr-2:55 Uhr|*Sitzung 4* [mrtk UX-Komponenten v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
-|3:00PM-3:25 Uhr|*Sitzung 5* : Einstieg [in die hololens 2 und Unreal Engine (mrtk-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|DE|300|
-|3:30Uhr-3:55 Uhr|*Sitzung 6* , [die das Entwerfen von holograms ermöglicht](https://youtu.be/jHn9yydiRTw)|Daniel Escudero|DE|300|
-|3:55 Uhr-4:15pm|**Pause (20 min.)**||||
-|4:15pm-4:40 Uhr|*Sitzung 7* [Azure-Objekt Anker](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|DE|300|
-|4:45uhr-5:10PM|*Sitzung 8* [Azure-Remote Rendering](https://youtu.be/MEhL12WGOW0)|Atsushi-Suzuki|JA|300|
-|5:15pm-5:40 Uhr|*Sitzung 9* [Ausrichten von Hologram und realer Welt durch räumliche Azure-Anker](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|DE|300|
-|5:45PM-6:10PM|*Sitzung 10* [Unity + pixyz](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity-Technologien Japan)|JA|200|
-|6:15pm-6:40 Uhr|*Sitzung 11* [Azure kinect DK Deep Dive, Fallstudie](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
-|6:45PM-7:00PM|Schließen|Madoka Chiyoda|JA|–|
+|11:00 Bis 11:50 Uhr|[Opening Keynote with special welcome from Alex Kipman](https://youtu.be/MamMO11TnzY)|Madoka Chiymos, Jchef McCulchef, KaoruKtormura, Tetsu Maskanaka|JA/EN|–|
+|11:50 Bis 12:00 Uhr|**Unterbrechung (10 Min.)**||||
+|12:00 bis 12:25 Uhr|Einführung in Sitzung *1* [Mixed Reality](https://youtu.be/HqJy91y8Of0)|Tibshi Gegen|JA|100|
+|12:30 -12:55 Uhr|*Sitzung 2 Mixed Reality* [Business-Schub](https://youtu.be/fJJ9I8UGbio)|Tetsu Polanaka|JA|200|
+|13:00 bis 13:50 Uhr|*Mittagssitzung* Panel: Interaktive kostenlose Diskussion, Q und A, MRTK + Oculus Quest 2 *Update später|Madoka Chiymedia + Microsoft-MVPs|JA|200|
+|13:50 Bis 14:00 Uhr|**Unterbrechung (10 Min.)**||||
+|14:00 bis 14:25 Uhr|*Sitzung 3:* [Übersicht über HoloLens 2 Entwicklung](https://youtu.be/_z0CwAVkbiQ)|Madoka Chiyoda|JA|200|
+|14:30 bis 14:55 Uhr|*Sitzung 4* [MRTK-UX-Komponenten v2.5.0](https://youtu.be/If5R9diyF50)|Yoon Park|JA|300|
+|15:00 bis 15:25 Uhr|*Sitzung 5:* [Erste Schritte mit HoloLens 2 und Unreal Engine (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|DE|300|
+|15:30 bis 15:55 Uhr|*Sitzung 6:* [Entwerfen von Hologramme](https://youtu.be/jHn9yydiRTw)|Daniel Pherdero|DE|300|
+|15:55 bis 16:15 Uhr|**Unterbrechung (20 Min.)**||||
+|16:15 bis 16:40 Uhr|*Sitzung 7* [Azure Object Anchors](https://youtu.be/dZCb6VJlaaU)|Jinnen McCul ben|DE|300|
+|16:45 Bis 17:10 Uhr|*Sitzung 8* [Azure Remote Rendering](https://youtu.be/MEhL12WGOW0)|Tibshi Gegen|JA|300|
+|17:15 bis 17:40 Uhr|*Session 9* [Aligning Hologram and Real World through Azure Spatial Anchors](https://youtu.be/ApBd_jSHg9Q)|Yingguang Muss|DE|300|
+|17:45 Bis 18:10 Uhr|*Sitzung 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Unity Technologies Japan (Unity Technologies Japan)|JA|200|
+|18:15 bis 18:40 Uhr|*Session 11* [Azure Kinect DK Deep Dive, Case Study](https://youtu.be/C6gg2jBL3Tw)|Chiba für Chiba in Chiji|JA|400|
+|18:45 Bis 19:00 Uhr|Schließen|Madoka Chiyoda|JA|–|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a>Mitwirkende (Technische Prüfer für die Untertitel)
 
-Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Takahiro Miyaura ( [@takabrz1](https://twitter.com/takabrz1) ), akihiro Ueyama ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Nakamura ( [@kaorun55](https://twitter.com/kaorun55) ), Shinya tachihara ( [@deco_c_](https://twitter.com/deco_c_) )
+Futo Horio ( [@Futo_Horio](https://twitter.com/Futo_Horio) ), Sollows Muraura ( [@takabrz1](https://twitter.com/takabrz1) ), Akiasa Uechef ( [@akihiro01051](https://twitter.com/akihiro01051) ), Kaoru Sollmura ( [@kaorun55](https://twitter.com/kaorun55) ), Shitya Taramos ( [@deco_c_](https://twitter.com/deco_c_) )
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
-Dieser Abschnitt wird häufig aktualisiert, da wir weitere Fragen von Ihnen erhalten!
+Dieser Abschnitt wird regelmäßig aktualisiert, da wir weitere Fragen von Ihnen erhalten!
 
-**F** : Wer sollte an Mixed Reality dev Day teilnehmen?
+**F** – Wer sollten am Mixed Reality Dev Day teilnehmen.
 
-**A** : Dieses Ereignis schließt alle Personen ein, die im gemischten Realitäts Raum arbeiten oder spielen. Der größte Teil der Inhalte ist Entwickler orientiert, aber wir wissen auch, dass es interessante Inhalte für eine Vielzahl von Rollen gibt. Denken Sie daran, den Zeitplan für Updates zu überprüfen, um die Art des von uns bereitgestellten Inhalts anzuzeigen.  
+**A:** Dieses Ereignis ist einschließlich aller Personen, die im Mixed Reality arbeiten oder spielen. Während der großteil der dargestellten Inhalte entwicklerorientiert ist, wissen wir auch, dass es interessante Inhalte für eine Vielzahl von Rollen gibt. Denken Sie daran, den Zeitplan für Updates zu überprüfen, um die Art der Inhalte anzuzeigen, die wir bereitstellen.  
 
-**F** : Ich kann das Ereignis in den Teams Live Veranstaltungen nicht finden.
+**F:** Ich kann das Ereignis nicht in Teams Liveereignissen finden.
 
-**A** : Wenn Sie teilnehmen möchten, wählen Sie den Link in der e-Mail aus, den Sie nach der Registrierung für das Ereignis erhalten. Wir empfehlen, die APP-PC-APP zu überwachen, und Sie können auch an den Teams Mobile App oder in Ihrem Desktop Browser teilnehmen.
+**A:** Wählen Sie für die Teilnahme den Link in der E-Mail aus, die Sie nach der Registrierung für das Ereignis erhalten. Es wird empfohlen, die App Teams PC zu beobachten, und Sie können auch an der Teams mobile App oder in Ihrem Desktopbrowser teilnehmen.
 
-Wenn Sie sich aus irgendeinem Grund nicht bei Teams anmelden können, überprüfen Sie den YouTube-Kanal, an dem das Ereignis gleichzeitig übertragen wird. Allerdings können Sie mit den Referenten nicht an QA teilnehmen.
+Wenn Sie sich aus irgendeinem Grund nicht bei Teams können, überprüfen Sie den YouTube-Kanal, auf dem das Ereignis gleichzeitig übertragen wird. Sie können jedoch nicht mit den Sprechern an QA teilnehmen.
 
-**F** : werden die Präsentationsmaterialien und Sitzungs Videos nach dem Ereignis verfügbar sein?
+**F:** Sind die Präsentationsmaterialien und Sitzungsvideos nach dem Ereignis verfügbar?
 
-**A** : Wir werden jede Videositzung veröffentlichen, aber aufgrund der damit verbundenen Zeit können Sie uns gerne Live beitreten.
+**A:** Wir werden jede Videositzung freigeben, aber aufgrund der Zeit, die damit verbunden ist, sollten Sie uns live beitreten, wenn dies möglich ist!
 
 <!--  
 **Q** -  
@@ -95,12 +95,12 @@ Wenn Sie sich aus irgendeinem Grund nicht bei Teams anmelden können, überprüf
 **A** -  
 -->
 
-## <a name="code-of-conduct-and-microsoft-standard-event-guidelines"></a>Verhaltensregeln und Richtlinien für Microsoft-Standard Ereignisse
+## <a name="code-of-conduct-and-microsoft-standard-event-guidelines"></a>Verhaltensregeln und Microsoft Standard-Ereignisrichtlinien
 
 ### <a name="code-of-conduct"></a>Verhaltensregeln 
 
-Microsoft verfolgt die Mission, weltweit jeden Menschen und jede Organisation dabei zu unterstützen, höhere Ziele zu erreichen. Dies umfasst alle Microsoft-Veranstaltungen und-Versammlungen, einschließlich digitaler Plattformen, bei denen wir uns für alle Teilnehmer sorgen, dass Sie ein respektvolles, freundliches, unterhaltsames und inklusives Verhalten erzielen.
+Microsoft verfolgt die Mission, weltweit jeden Menschen und jede Organisation dabei zu unterstützen, höhere Ziele zu erreichen. Dies schließt alle Microsoft-Veranstaltungen und -Veranstaltungen ein, auch auf digitalen Plattformen, auf denen wir versuchen, eine freundliche, spaßige und inklusive Erfahrung für alle Teilnehmer zu schaffen.
 
-Wir gehen davon aus, dass alle Digital Event-Teilnehmer die Prinzipien dieses Verhaltens Verhaltens einhalten, der das wichtigste digitale Ereignis und alle zugehörigen Aktivitäten behandelt. Wir tolerieren keinerlei Unterbrechungen oder unbehängend Verhalten, Nachrichten, Bilder oder Interaktionen von beteiligten Teilnehmern in beliebiger Form an einem beliebigen Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Belästigung oder Unterscheidung auf der Grundlage von Alter, Herkunft, Farbe, Geschlecht-Identität oder-Ausdruck, nationaler Ursprung, physischer oder physischer Behinderung, Religion, sexueller Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Bestimmungen und ordinanzen geschützt sind.  
+Wir erwarten, dass alle Teilnehmer digitaler Ereignisse den Prinzipien dieses Verhaltenscodes entsprechen, der das digitale Hauptereignis und alle zugehörigen Aktivitäten abdeckt. Wir tolerieren keine unterbrechungsfreien oder unvorsichtigen Verhaltensweisen, Nachrichten, Bilder oder Interaktionen von Parteiteilnehmern in irgendeiner Form an irgendeinem Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Handlungen oder Beeinträchtigungen aufgrund von Alter, Herkunft, Farbe, Geschlechtidentität oder -ausdruck, nationalem Ursprung, physischer oder mentaler Behinderungen, Geschlecht, geschlechtliche Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Vorschriften und Gesetze geschützt sind.  
 
-Das aufzeichnen, Video oder Aufzeichnen von Sitzungs Inhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen gemeinsam genutzt wird, ist unzulässig. Wir empfehlen allen Benutzern, eine einladende und sichere Umgebung zu erstellen. Melden Sie alle Bedenken, das Verhalten von Problemen, verdächtige Aktivitäten oder Störungen an der Business Behavior-Hotline (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, den Benutzern jederzeit nach eigenem Ermessen die Berechtigung zum ablehnen von Zutritt oder der Entfernung von Benutzern aus gemischten Reality-dev-Tagen zu verweigern. 
+Das Aufzeichnen von Sitzungsinhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen geteilt wird, ist nicht zulässig. Wir empfehlen allen, bei der Erstellung einer einladenden und sicheren Umgebung zu helfen. Melden Sie alle Bedenken, verhaltensverlässig, verdächtigen oder störenden Aktivitäten an Das Unternehmen (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, nach eigenem Ermessen jederzeit die Aufnahme von Personen Mixed Reality Dev Days zu verweigern oder daraus zu entfernen. 

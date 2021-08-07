@@ -1,118 +1,118 @@
 ---
 title: Testen Ihrer App auf HoloLens
-description: Erfahren Sie mehr über allgemeine Anleitungen und Vorschläge für Tests und Leistungsoptimierung ihrer hololens Mixed Reality-Anwendungen.
+description: Erfahren Sie mehr über allgemeine Anleitungen und Vorschläge zum Testen und Optimieren der Leistung Ihrer HoloLens Mixed Reality-Anwendungen.
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
-keywords: Hololens, testen
-ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, Testen
+ms.openlocfilehash: 2f423560191fea8b516db80d533898b5a1f15973442e7bb6cd8878d486e0ffba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583763"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212096"
 ---
 # <a name="testing-your-app-on-hololens"></a>Testen Ihrer App auf HoloLens
 
-Das Testen von hololens-Anwendungen ähnelt dem Testen von Windows-Anwendungen. Sie müssen weiterhin Funktionalität, Interoperabilität, Leistung, Sicherheit, Zuverlässigkeit usw. in Erwägung gezogen werden. Einige Bereiche, die nicht in PC-oder Phone-apps angezeigt werden, erfordern jedoch eine besondere Behandlung. Holographic apps müssen problemlos in verschiedenen Umgebungen ausgeführt werden. Außerdem müssen Sie jederzeit Leistung und Benutzerfreundlichkeit gewährleisten. Dieser Leitfaden hilft Ihnen beim Testen dieser Bereiche.
+Das Testen HoloLens Anwendungen ähnelt dem Testen Windows Anwendungen. Sie müssen weiterhin Funktionalität, Interoperabilität, Leistung, Sicherheit, Zuverlässigkeit usw. berücksichtigen. Einige Bereiche, die nicht in PC- oder Smartphone-Apps angezeigt werden, erfordern jedoch eine besondere Behandlung. Holographic-Apps müssen in einer Vielzahl von Umgebungen reibungslos ausgeführt werden. Außerdem müssen sie jederzeit Leistung und Benutzerfreundlichkeit aufrechterhalten. Dieser Leitfaden hilft Ihnen beim Testen dieser Bereiche.
 
 ## <a name="performance"></a>Leistung
 
-Holographic apps müssen problemlos in verschiedenen Umgebungen ausgeführt werden. Außerdem müssen Sie jederzeit Leistung und Benutzerfreundlichkeit gewährleisten. Die Leistung ist für die Benutzer Darstellung mit einer Holographic-APP, für die wir ein gesamtes Thema haben, so wichtig. Stellen Sie sicher, dass Sie die Grundlagen der [Leistung für gemischte Realität](understanding-performance-for-mixed-reality.md) lesen und befolgen.
+Holographic-Apps müssen in einer Vielzahl von Umgebungen reibungslos ausgeführt werden. Außerdem müssen sie jederzeit Leistung und Benutzerfreundlichkeit aufrechterhalten. Die Leistung ist für die Benutzererfahrung mit einer Holographic-App so wichtig, dass wir ein ganzes Thema haben. Stellen Sie sicher, dass Sie die Informationen zur Leistung für Mixed Reality lesen und [befolgen.](understanding-performance-for-mixed-reality.md)
 
 ## <a name="testing-3d-in-3d"></a>Testen von 3D in 3D
 
-1. **Testen Sie Ihre APP in so vielen unterschiedlichen Bereichen wie möglich.** Probieren Sie große Räume, kleine Räume, Bäder, Küchen, Schlafräume, Niederlassungen usw. aus. Berücksichtigen Sie auch Räume mit nicht standardmäßigen Merkmalen, wie z. b. nicht vertikale Wände, Kurven Wände, nicht horizontale Obergrenzen. Funktioniert es gut, wenn es Zwischenräumen, Etagen und Durchgänge oder Treppen wechselt?
-2. **Testen Sie Ihre APP in verschiedenen Beleuchtungsbedingungen.** Reagiert er ordnungsgemäß auf verschiedene Umgebungsbedingungen wie Beleuchtung, schwarze Oberflächen und transparente oder reflektierend Oberflächen wie Spiegel und Glas Wände.
-3. **Testen Sie Ihre APP in verschiedenen bewegungsbedingungen.** Legen Sie auf dem Gerät fest, und testen Sie Ihre Szenarios in verschiedenen Bewegungs Zuständen. Reagiert der Dienst ordnungsgemäß auf eine andere Verschiebung oder einen stabilen Zustand?
-4. **Testen Sie, wie Ihre APP aus unterschiedlichen Winkeln funktioniert.** Wenn Sie ein Welt gesperrtes Hologram haben, was passiert, wenn Ihr Benutzer darauf geht? Was geschieht, wenn etwas zwischen dem Benutzer und dem Hologram kommt? Was geschieht, wenn der Benutzer das – Hologramm von oben oder unten ansieht?
-5. **Verwenden Sie räumliche und Audiohinweise.** Stellen Sie sicher, dass Ihre APP räumliche und Audiohinweise verwendet, um zu verhindern, dass der Benutzer verloren geht.
-6. **Testen Sie Ihre APP auf unterschiedlichen Ebenen des Umgebungs Rauschens.** Wenn Sie Sprachbefehle implementiert haben, versuchen Sie, Sie mit unterschiedlichen Umgebungsgeräuschen aufzurufen.
-7. **Testen Sie Ihre APP, und stellen Sie Sie** ein. Stellen Sie sicher, dass Sie sowohl an der Platz Position als auch an der Position
-8. **Testen Sie Ihre APP aus unterschiedlichen Entfernungen**. Können UI-Elemente von weitem gelesen und interagiert werden? Reagiert Ihre APP darauf, dass Benutzer zu nahe an Ihren holograms gelangen?
-9. **Testen Sie Ihre APP mit häufigen Interaktionen mit der APP-Leiste**. Alle App-Kacheln und universellen 2D-apps verfügen über eine [App-Leiste](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) , mit der Sie die Position der apps in der gemischten Welt steuern können. Stellen Sie sicher, dass durch Klicken auf "entfernen" der App-Prozess ordnungsgemäß beendet wird und die Schaltfläche "zurück" im Kontext ihrer universellen 2D-App unterstützt Versuchen Sie, die APP im [Anpassungsmodus](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) zu skalieren und zu verschieben, während Sie aktiv ist, während Sie eine angehaltene App-Kachel ist.
+1. **Testen Sie Ihre App in so vielen verschiedenen Bereichen wie möglich.** Probieren Sie es in großen Räumen, kleinen Räumen, Filialen, Filialen, Filialen usw. aus. Berücksichtigen Sie auch Räume mit nicht standardmäßigen Merkmalen, z. B. nicht vertikale Wände, gekrümmte Wände, nicht horizontale Decken. Funktioniert es gut beim Übergang zwischen Räumen, Etagen, durch Hallen oder Durchgang?
+2. **Testen Sie Ihre App unter unterschiedlichen Beleuchtungsbedingungen.** Reagiert er ordnungsgemäß auf unterschiedliche Umgebungsbedingungen wie Beleuchtung, schwarze Oberflächen und transparente oder reflektierende Oberflächen wie Spiegel und Brillen.
+3. **Testen Sie Ihre App unter unterschiedlichen Bewegungsbedingungen.** Setzen Sie auf das Gerät, und probieren Sie Ihre Szenarien in verschiedenen Bewegungszuständen aus. Reagiert sie ordnungsgemäß auf unterschiedliche Bewegungen oder einen stabilen Zustand?
+4. **Testen Sie, wie Ihre App aus verschiedenen Winkeln funktioniert.** Wenn Sie über ein weltweit gesperrtes Hologramm verfügen, was geschieht, wenn Ihr Benutzer hinter ihm läuft? Was geschieht, wenn zwischen dem Benutzer und dem Hologramm etwas passiert? Was geschieht, wenn der Benutzer das Hologramm von oben oder unten betrachtet?
+5. **Verwenden Sie räumliche und Audiohinweise.** Stellen Sie sicher, dass Ihre App räumliche und Audiohinweise verwendet, um zu verhindern, dass der Benutzer verloren geht.
+6. **Testen Sie Ihre App auf unterschiedlichen Umgebungsrauschen.** Wenn Sie Sprachbefehle implementiert haben, versuchen Sie, sie mit unterschiedlichen Umgebungsrauschen aufzubringen.
+7. **Testen Sie Ihre App mit und im Stehen.** Stellen Sie sicher, dass Sie sowohl an der Position als auch an der Position im Stehen testen.
+8. **Testen Sie Ihre App aus unterschiedlichen Entfernungen.** Können Benutzeroberflächenelemente von weit entfernt gelesen und mit ihnen interagiert werden? Reagiert Ihre App darauf, dass Benutzer ihren Hologrammen zu nahe kommen?
+9. **Testen Sie Ihre App mit allgemeinen Interaktionen auf der App-Leiste.** Alle App-Kacheln und universellen 2D-Apps verfügen über eine [App-Leiste,](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) mit der Sie die Position der Apps in der Mixed World steuern können. Stellen Sie sicher, dass durch Klicken auf Entfernen Der App-Prozess ordnungsgemäß beendet wird und dass die Schaltfläche "Zurück" im Kontext Ihrer universellen 2D-App unterstützt wird. Versuchen Sie, Ihre App sowohl während ihrer Aktiven als auch während einer angehaltenen App-Kachel im [Modus Anpassen](../../discover/navigating-the-windows-mixed-reality-home.md#moving-and-adjusting-apps) zu skalieren und zu verschieben.
 
-### <a name="environmental-test-matrix"></a>Umgebungs Test Matrix
+### <a name="environmental-test-matrix"></a>Umgebungstestmatrix
 
-![Umgebungs Test Matrix für die hololens-App-Entwicklung](images/environment-matrix-600px.png)
+![Umgebungstestmatrix für HoloLens App-Entwicklung](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>Komfort
 
-1. **Ausschneide Flächen.** Achten Sie darauf, wo [holograms gerendert](hologram-stability.md#hologram-render-distances)werden.
-2. **Vermeiden Sie eine virtuelle Verschiebung, die sich nicht auf die tatsächliche Kopfbewegung** Vermeiden Sie das Verschieben der Kamera auf eine Weise, die für die tatsächliche Bewegung des Benutzers nicht repräsentativ ist. Wenn Ihre APP den Benutzer durch eine Szene verschieben muss, machen Sie die Bewegung vorhersagbar, minimieren Sie die Beschleunigung, und lassen Sie den Benutzer die Bewegung steuern.
-3. **Befolgen Sie die Richtlinien für die – Hologramm-Qualität.** Leistungsfähige apps, die den [Leitfaden für die Qualität von holograms](hologram-stability.md) implementieren, werden weniger wahrscheinlich zu Benutzer Unannehmlichkeiten führen.
-4. **Sie sollten Hologramme horizontal und nicht vertikal verteilen.** Wenn Sie den Benutzer zwingen, erweiterte Zeiträume für die Suche nach oben oder unten zu verbringen, kann dies zu Ermüdung im Nacken führen.
+1. **Clipebenen.** Achten Sie darauf, wo [Hologramme gerendert werden.](hologram-stability.md#hologram-render-distances)
+2. **Vermeiden Sie virtuelle Verschiebungen, die mit der tatsächlichen Kopfbewegung inkonsistent sind.** Vermeiden Sie es, die Kamera auf eine Weise zu bewegen, die nicht repräsentativ für die tatsächliche Bewegung des Benutzers ist. Wenn Ihre App das Verschieben des Benutzers durch eine Szene erfordert, machen Sie die Bewegung vorhersagbar, minimieren Sie die Beschleunigung, und lassen Sie den Benutzer die Bewegung steuern.
+3. **Befolgen Sie die Hologrammqualitätsrichtlinien.** Performante Apps, die den Leitfaden zur [Hologrammqualität](hologram-stability.md) implementieren, führen mit geringerer Wahrscheinlichkeit zu Benutzerfreundlichkeit.
+4. **Verteilen Sie Hologramme horizontal und nicht vertikal.** Wenn der Benutzer gezwungen wird, längere Zeit nach oben oder unten zu suchen, kann dies zu Ermüdung in der Ähre führen.
 
 ## <a name="input"></a>Eingabe
 
 ### <a name="interaction-models"></a>Interaktionsmodelle
 
-Stellen Sie sicher, dass die – Hologramm-Interaktionen mit dem gewählten [Interaktionsmodell](../../design/interaction-fundamentals.md)funktionieren.
-Es ist auch eine gute Idee, mit einem anderen Zubehör wie Maus und Tastatur zu validieren, wenn Sie für die Unterstützung der Barrierefreiheit benötigt werden.
+Stellen Sie sicher, dass die Hologramminteraktionen mit dem ausgewählten [Interaktionsmodell](../../design/interaction-fundamentals.md)funktionieren.
+Es ist auch eine gute Idee, mit unterschiedlichen Zubehör wie Maus und Tastatur zu überprüfen, ob sie zur Unterstützung der Barrierefreiheit benötigt werden.
 
-**Überprüfen Sie, ob Ihre APP über ein anderes Verhalten mit Maus und Fingereingabe verfügt.** Identifiziert Inkonsistenzen und hilft bei Entwurfsentscheidungen, um die Benutzeroberflächen für Benutzer natürlicher zu gestalten. Beispielsweise wird eine Aktion ausgelöst, die auf Hover basiert.
+**Überprüfen Sie mit Maus und Fingereingabe, ob Ihre App ein anderes Verhalten auf hat.** Identifiziert Inkonsistenzen und Hilfe bei Entwurfsentscheidungen, um die Benutzerfreundlichkeit zu verbessern. Beispielsweise das Auslösen einer Aktion basierend auf dem Mauszeiger.
 
 
 ### <a name="custom-voice-commands"></a>Benutzerdefinierte Sprachbefehle
 
-Die [Spracheingabe](../../design/voice-input.md) ist eine natürliche Form der Interaktion. Abhängig von der Auswahl der Befehle und ihrer Offenlegung kann die Benutzer Darstellung entweder magisch oder verwirrend sein. Als Regel sollten Sie keine System Sprachbefehle wie "Select" oder "Hey Cortana" als benutzerdefinierte Befehle verwenden. Hier sind einige Punkte zu beachten:
-1. **Vermeiden Sie die Verwendung von Befehlen, die ähnlich klingen.** Kann möglicherweise den falschen Befehl auslöst.
-2. **Wählen Sie nach Möglichkeit phonetisch Rich Words aus.** Minimiert und/oder vermeidet falsche Aktivierungen.
+[Die Spracheingabe](../../design/voice-input.md) ist eine natürliche Form der Interaktion. Je nachdem, wie Sie Befehle auswählen und wie Sie sie verfügbar machen, kann die Benutzeroberfläche verwirrend oder verwirrend sein. In der Regel sollten Sie keine Sprachbefehle des Systems wie "Select" oder "Hey Cortana" als benutzerdefinierte Befehle verwenden. Hier sind einige Punkte zu beachten:
+1. **Vermeiden Sie die Verwendung von Befehlen, die ähnlich klingen.** Kann möglicherweise den falschen Befehl auslösen.
+2. **Wählen Sie nach Möglichkeit phonetisch umfangreiche Wörter aus.** Minimiert und/oder vermeidet falsche Aktivierungen.
 
 ### <a name="peripherals"></a>Peripheriegeräte
 
-Benutzer können über [Peripherie](../../discover/hardware-accessories.md)Geräte mit Ihrer APP interagieren. Apps müssen nichts Besonderes tun, um diese Funktion nutzen zu können. es gibt jedoch einige Dinge, die überprüft werden müssen.
-1. **Überprüfen Sie benutzerdefinierte Interaktionen.** Dinge wie benutzerdefinierte Tastenkombinationen für Ihre APP.
-2. **Überprüfen der Umstellung von Eingabetypen** Es wird versucht, mehrere Eingabemethoden zu verwenden, um eine Aufgabe (z. b. sprach-, Gesten-, Maus-und Tastatureingaben) im gleichen Szenario abzuschließen.
+Benutzer können über [Peripheriegeräte](../../discover/hardware-accessories.md)mit Ihrer App interagieren. Apps müssen nichts Besonderes tun, um diese Funktion nutzen zu können. Es gibt jedoch einige Dinge, die überprüft werden sollten.
+1. **Überprüfen sie benutzerdefinierte Interaktionen.** Beispielsweise benutzerdefinierte Tastenkombinationen für Ihre App.
+2. **Überprüfen des Wechsels von Eingabetypen.** Es wurde versucht, mehrere Eingabemethoden zum Ausführen einer Aufgabe zu verwenden, z. B. Stimme, Geste, Maus und Tastatur im selben Szenario.
 
 ## <a name="system-integration"></a>Systemintegration
 
 ### <a name="battery"></a>Akku
 
-Testen Sie Ihre Anwendung, ohne dass eine Stromquelle verbunden ist, um zu verstehen, wie schnell der Akku abläuft. Mithilfe von Power LED-Messungen können Sie den Akku Status leicht nachvollziehen. 
+Testen Sie Ihre Anwendung ohne angeschlossene Stromquelle, um zu verstehen, wie schnell der Akku entladen wird. Sie können den Akkuzustand leicht nachvollziehen, indem Sie sich die Power LED-Messwerte ansehen. 
 
 ![LED-Zustände, die die Akkuleistung angeben](images/batterypowerledindication-500px.png)<br>
 
 *LED-Zustände, die die Akkuleistung angeben*
 
-### <a name="power-state-transitions"></a>Energie Zustandsübergänge
+### <a name="power-state-transitions"></a>Energiezustandsübergänge
 
-Überprüfen Sie, ob die wichtigsten Szenarien beim Übergang zwischen den Energiezuständen erwartungsgemäß funktionieren. Beispielsweise verbleibt die Anwendung an ihrer ursprünglichen Position? Behält sie seinen Status ordnungsgemäß bei? Funktioniert Sie weiterhin erwartungsgemäß?
-1. **Fortsetzung/fortsetzen.** Um in den Standbymodus zu wechseln, können Sie den Netzschalter sofort drücken und freigeben. Das Gerät wird nach 3 Minuten Inaktivität auch automatisch in den Standbymodus versetzt. Um den Standbymodus fortzusetzen, können Sie den Netzschalter sofort drücken und freigeben. Das Gerät wird auch dann fortgesetzt, wenn Sie eine Verbindung mit einer Stromquelle herstellen oder die Verbindung trennen.
-2. **Herunterfahren/neu starten.** Zum Herunterfahren halten Sie den Netzschalter fortlaufend für 6 Sekunden gedrückt. Um neu zu starten, klicken Sie auf den Schaltflächen Strom
+Überprüfen Sie, ob wichtige Szenarien beim Übergang zwischen Energiezuständen erwartungsgemäß funktionieren. Bleibt die Anwendung beispielsweise an ihrer ursprünglichen Position? Wird der Zustand ordnungsgemäß beibehalten? Funktioniert es weiterhin wie erwartet?
+1. **Stand-by/Resume.** Um in den Standbymodus zu gelangen, können Sie den Netzschalter sofort drücken und loslassen. Das Gerät wechselt auch nach 3 Minuten Inaktivität automatisch in den Standbymodus. Um den Betrieb aus dem Standbymodus fortzusetzen, können Sie den Netzschalter sofort drücken und loslassen. Das Gerät wird auch fortgesetzt, wenn Sie es mit einer Stromquelle verbinden oder trennen.
+2. **Herunterfahren/Neustart.** Drücken sie zum Herunterfahren, und halten Sie den Netzschalter 6 Sekunden lang kontinuierlich gedrückt. Drücken Sie zum Neustarten den Netzschalter.
 
-### <a name="multi-app-scenarios"></a>Szenarien mit mehreren apps
+### <a name="multi-app-scenarios"></a>Szenarien mit mehreren Apps
 
-Überprüfen Sie die Kernfunktionen der APP beim Wechseln zwischen apps, insbesondere, wenn Sie eine Hintergrundaufgabe implementiert haben. Beim Kopieren/Einfügen und der Integration von Cortana sollten Sie ggf. auch überprüfen.
+Überprüfen Sie die Kernfunktionen von Apps beim Wechseln zwischen Apps, insbesondere wenn Sie eine Hintergrundaufgabe implementiert haben. Kopieren/Einfügen und Cortana Integration sind ggf. ebenfalls zu überprüfen.
 
 ## <a name="telemetry"></a>Telemetrie
 
-Verwenden Sie Telemetrie und Analysen, um Sie zu begleiten. Durch die Integration von Analytics in Ihre APP erhalten Sie Einblicke in Ihre APP von ihren Beta-Testern und Endbenutzern. Diese Daten können verwendet werden, um die APP vor der Übermittlung an den Store und zukünftige Updates zu optimieren. Es gibt viele Analytics-Optionen. Wenn Sie nicht sicher sind, wo Sie beginnen sollen, sehen Sie sich die [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx)an.
+Verwenden Sie Telemetrie und Analysen, um Sie zu leiten. Die Integration von Analysen in Ihre App hilft Ihnen, Einblicke in Ihre App von Ihren Betatestern und Endbenutzern zu erhalten. Diese Daten können verwendet werden, um Ihre App zu optimieren, bevor sie an die Store und für zukünftige Updates eingereicht werden. Es gibt viele Analyseoptionen. Wenn Sie nicht sicher sind, wo Sie beginnen sollten, lesen Sie [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx).
 
 Zu berücksichtigende Fragen:
-1. Wie verwenden Benutzer den Speicherplatz?
-2. Wie kann die APP Objekte in der Welt platzieren? können Sie Probleme erkennen?
-3. Wie viel Zeit verbringen Sie in verschiedenen Phasen der Anwendung?
-4. Wie viel Zeit verbringen Sie in der APP?
-5. Was sind die häufigsten Verwendungs Pfade, die die Benutzer versuchen?
-6. Treten Benutzer unerwartete Zustände oder Fehler auf?
+1. Wie verwenden Benutzer den Bereich?
+2. Wie platziert die App Objekte auf der Welt– können Sie Probleme erkennen?
+3. Wie viel Zeit verbringen sie in verschiedenen Phasen der Anwendung?
+4. Wie viel Zeit verbringen sie in der App?
+5. Welche Nutzungspfade werden von Benutzern am häufigsten verwendet?
+6. Treten bei Benutzern unerwartete Zustände oder Fehler auf?
 
 ## <a name="emulator-and-simulated-input"></a>Emulator und simulierte Eingabe
 
-Der [hololens-Emulator](using-the-hololens-emulator.md) ist eine großartige Möglichkeit, um Ihre Holographic-App effizient mit verschiedenen Arten von simulierten Benutzer Merkmalen und Leerzeichen zu testen. Im folgenden finden Sie einige Vorschläge für die effektive Verwendung des Emulators zum Testen Ihrer APP:
-1. **Verwenden Sie die virtuellen Räume des Emulators, um die Tests zu erweitern.** Der Emulator verfügt über eine Reihe virtueller Räume, die Sie zum Testen Ihrer APP in noch mehr Umgebungen verwenden können.
-2. **Verwenden Sie den Emulator, um Ihre APP aus allen Winkeln zu betrachten.** Mit den Schlüsseln PageUp/pagedn wird der simulierte Benutzer größer oder kürzer.
-3. **Testen Sie Ihre APP mit einem echten hololens.** Der hololens-Emulator ist ein großartiges Tool, das Ihnen hilft, eine APP schnell zu durchlaufen und neue Fehler abzufangen. Sie sollten sich jedoch vor der Übermittlung an den Windows Store auch auf einen physischen hololens testen. Dies ist wichtig, um sicherzustellen, dass die Leistung und die Leistung auf echter Hardware groß sind.
+Der [HoloLens-Emulator](using-the-hololens-emulator.md) ist eine hervorragende Möglichkeit, Ihre Holographic-App effizient mit verschiedenen Arten simulierter Benutzermerkmale und -leerzeichen zu testen. Im Folgenden finden Sie einige Vorschläge für die effektive Verwendung des Emulators zum Testen Ihrer App:
+1. **Verwenden Sie die virtuellen Räume des Emulators, um Ihre Tests zu erweitern.** Der Emulator enthält eine Reihe von virtuellen Räumen, mit denen Sie Ihre App in noch mehr Umgebungen testen können.
+2. **Verwenden Sie den Emulator, um Ihre App aus allen Winkeln zu betrachten.** Die PageUp-/PageDn-Schlüssel sorgen dafür, dass Der simulierte Benutzer größer oder kürzer wird.
+3. **Testen Sie Ihre App mit einem echten HoloLens.** Das HoloLens Emulator ist ein hervorragendes Tool, mit dem Sie eine App schnell iterieren und neue Fehler abfangen können. Stellen Sie jedoch sicher, dass Sie auch auf einem physischen HoloLens testen, bevor Sie es an die Windows Store. Dies ist wichtig, um sicherzustellen, dass die Leistung und Erfahrung auf echter Hardware gut ist.
 
-## <a name="automated-testing-with-perception-simulation"></a>Automatisierte Tests mit der Wahrnehmungs Simulation
+## <a name="automated-testing-with-perception-simulation"></a>Automatisierte Tests mit Perception Simulation
 
-Einige App-Entwickler möchten möglicherweise das Testen Ihrer Apps automatisieren. Über einfache Komponententests hinaus können Sie den [Wahrnehmungs Simulations](perception-simulation.md) Stapel in hololens verwenden, um die Benutzer-und Welt Eingaben für Ihre APP zu automatisieren. Die Wahrnehmungs Simulations-API kann simulierte Eingaben an den hololens-Emulator oder an physische hololens senden.
+Einige App-Entwickler möchten das Testen ihrer Apps möglicherweise automatisieren. Neben einfachen Komponententests können [](perception-simulation.md) Sie den Wahrnehmungssimulationsstapel in HoloLens, um menschliche und weltliche Eingaben für Ihre App zu automatisieren. Die Wahrnehmungssimulations-API kann simulierte Eingaben entweder an den HoloLens Emulator oder an einen physischen HoloLens.
 
 ## <a name="windows-app-certification-kit"></a>Zertifizierungskit für Windows-Apps
 
-Damit Ihre APP die beste Chance erhält, [im Windows Store veröffentlicht](../../distribute/submitting-an-app-to-the-microsoft-store.md)zu werden, überprüfen und testen Sie Sie lokal, bevor Sie Sie zur Zertifizierung einreichen. Wenn Ihre APP auf die Windows. Holographic-Gerätefamilie abzielt, führt das [zertifizierungskit für Windows-apps](/windows/uwp/debug-test-perf/windows-app-certification-kit) nur lokale statische Analyse Tests auf Ihrem PC aus. Auf den hololens werden keine Tests ausgeführt.
+Um Ihrer App die beste Chance zu geben, auf dem Windows Store veröffentlicht zu [werden,](../../distribute/submitting-an-app-to-the-microsoft-store.md)überprüfen und testen Sie sie lokal, bevor Sie sie zur Zertifizierung einreichen. Wenn Ihre App auf die Windows. Die Holographic-Gerätefamilie, Windows [App Certification Kit](/windows/uwp/debug-test-perf/windows-app-certification-kit) nur lokale statische Analysetests auf Ihrem PC ausführen. Auf Ihrem Computer werden keine Tests HoloLens.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
-* [Übermitteln einer APP an den Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
+* [Übermitteln einer App an die Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

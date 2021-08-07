@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, XRSDK, XR SDK
-ms.openlocfilehash: bc2924f8e080b0c202f7c3e394a5382cf306431c
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 1560188d1a69f0083940a37da8c378691ee75a9d569c2c5088e0e3f614a44858
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603691"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188234"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>Erste Schritte mit MRTK und XR SDK
 
@@ -41,7 +41,7 @@ Wechseln Sie zum **unity-Paket-Manager,** und installieren Sie das XR-Plug-In-Pa
 
     ![XR-Plug-In-Verwaltung mit ausgewählter Registerkarte "Eigenständig"](images/xr-management-img-02.png)
 
-7. (**_Optional_**) Klicken Sie unter XR-Plug-In-Verwaltung auf die Registerkarte Windows Mixed Reality , und erstellen Sie ein benutzerdefiniertes Einstellungsprofil, um die Standardwerte zu ändern. Wenn die Liste der Einstellungen bereits vorhanden ist, muss kein Profil erstellt werden.
+7. (**_Optional)_** Klicken Sie unter XR-Plug-In-Verwaltung auf die Registerkarte Windows Mixed Reality, und erstellen Sie ein benutzerdefiniertes Einstellungsprofil, um die Standardwerte zu ändern. Wenn die Liste der Einstellungen bereits vorhanden ist, muss kein Profil erstellt werden.
 
     ![XR-Plug-In-Verwaltung mit ausgewählter Registerkarte "Windows"](images/xr-management-img-01.png)
 
@@ -67,7 +67,7 @@ Wechseln Sie zum **unity-Paket-Manager,** und installieren Sie das XR-Plug-In-Pa
 ![Plug-In-Verwaltung OpenXR](../features/images/xrsdk/PluginManagementOpenXR.png)
 
 > [!NOTE]
-> Wenn Sie über ein bereits vorhandenes Projekt verfügen, das MRTK von UPM verwendet, stellen Sie sicher, dass sich die folgende Zeile in der **link.xml-Datei** im Ordner MixedRealityToolkit.Generated befindet.
+> Wenn Sie über ein bereits vorhandenes Projekt verfügen, das MRTK von UPM verwendet, stellen Sie sicher, dass sich die folgende Zeile in der **dateilink.xml** befindet, die sich im Ordner MixedRealityToolkit.Generated befindet.
 
 `<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>`
 
@@ -77,7 +77,7 @@ Wechseln Sie zum **unity-Paket-Manager,** und installieren Sie das XR-Plug-In-Pa
 ## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a>Konfigurieren von MRTK für die XR SDK-Pipeline
 
 ::: moniker range=">= mrtkunity-2021-05"
-Verwenden Sie eines der MRTK-Standardprofile, die alle in den XR-Pipelines von Unity konfiguriert sind. Die vorherigen "DefaultOpenXRConfigurationProfile" und "DefaultXRSDKConfigurationProfile" sind jetzt veraltet.
+Verwenden Sie eines der MRTK-Standardprofile, die alle über die XR-Pipelines von Unity konfiguriert sind. Die vorherigen "DefaultOpenXRConfigurationProfile" und "DefaultXRSDKConfigurationProfile" sind jetzt veraltet.
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
 Wenn Sie OpenXR verwenden, wählen Sie "DefaultOpenXRConfigurationProfile" als aktives Profil aus, oder klonen Sie es, um Anpassungen vorzunehmen.
@@ -195,7 +195,7 @@ zu
 
 ### <a name="controller-mappings"></a>Controllerzuordnungen
 
-Wenn Sie benutzerdefinierte Controllerzuordnungsprofile verwenden, öffnen Sie eines davon, und führen Sie das Menüelement Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles aus, um sicherzustellen, dass die neuen XR SDK-Controllertypen definiert sind.
+Wenn Sie benutzerdefinierte Controllerzuordnungsprofile verwenden, öffnen Sie eines dieser Profile, und führen Sie das Menüelement Mixed Reality Toolkit -> Utilities -> Update -> Controller Mapping Profiles aus, um sicherzustellen, dass die neuen XR SDK-Controllertypen definiert sind.
 
 ## <a name="see-also"></a>Weitere Informationen
 

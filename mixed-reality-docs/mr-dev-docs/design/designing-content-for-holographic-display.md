@@ -1,97 +1,97 @@
 ---
 title: Entwerfen von Inhalten für die holografische Anzeige
-description: Erfahren Sie mehr über Entwurfsrichtlinien und bewährte Methoden für die holografische Anzeige auf HoloLens-Geräten.
+description: Erfahren Sie mehr über Entwurfsrichtlinien und bewährte Methoden für die holografische Anzeige auf HoloLens Geräten.
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI-Design, holografische Anzeige, Inhaltsdesign, dunkles Design, helles Design, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Design, Pixel
-ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 1fab172f6d737b25e95b10a6dded2a5ab805e0086de8d0fae40c5a6a4ef7d805
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212948"
 ---
 # <a name="designing-content-for-holographic-display"></a>Entwerfen von Inhalten für die holografische Anzeige
 
-![Ulnar-Seitenposition](images/UX_Hero_DarkTheme.jpg)
+![Ulnar side hand location (Ulnar-Seitenposition)](images/UX_Hero_DarkTheme.jpg)
 
-Beim Entwerfen von Inhalten für holografische Displays gibt es mehrere Elemente, die Sie berücksichtigen müssen, um die beste Erfahrung zu erzielen. Wir haben einige unserer Empfehlungen unten aufgelistet, und Sie können mehr über die Merkmale von holografischen Displays auf der Seite [Farbe, Licht und Materialien](color-light-and-materials.md) erfahren.
+Beim Entwerfen von Inhalten für holografische Displays gibt es mehrere Elemente, die Sie berücksichtigen müssen, um ein optimales Erlebnis zu erzielen. Wir haben unten einige unserer Empfehlungen aufgeführt, und Sie können mehr über die Merkmale holografischer Displays auf der Seite [Farbe, Licht und Materialien](color-light-and-materials.md) erfahren.
 
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>Herausforderungen mit hellem Farbton auf einer großen Oberfläche 
 
-Basierend auf unseren HoloLens-Erfahrungsforschungen und -Tests haben wir festgestellt, dass die Verwendung von hellen Farben in einem großen Bereich der Anzeige mehrere Probleme verursachen kann: 
+Basierend auf unseren HoloLens erfahrungsbezogenen Untersuchungen und Tests haben wir festgestellt, dass die Verwendung von hellen Farben in einem großen Bereich der Anzeige mehrere Probleme verursachen kann: 
 
-**Augenermüdung** 
+**Augenmüdigkeit** 
 
-Da die holografische Anzeige additiv ist, verwenden Hologramme mit hellen Farben mehr Licht. Helle, volltonige Farbe in einem großen Bereich der Anzeige kann für den Benutzer leicht zu Sehmüdigkeit führen. 
+Da die holografische Anzeige additiv ist, verwenden Hologramme mit hellen Farben mehr Licht. Helle Volltonfarbe in einem großen Bereich der Anzeige kann für den Benutzer leicht zu Augenmüdigkeit führen. 
 
-**Handverdecken** 
+**Handverdeckung** 
 
-Helle Farben erschweren es dem Benutzer, seine Hände zu sehen, wenn er direkt mit Objekten interagiert. Da der Benutzer seine Hände nicht sehen kann, wird es schwierig, die Tiefe/Entfernung zwischen der Hand/dem Finger und der Zieloberfläche zu erkennen. Der Fingercursor hilft dabei, dieses Problem zu kompensieren, kann aber auf einer weißen Oberfläche immer noch eine Herausforderung darstellen. 
+Helle Farbe erschwert es dem Benutzer, seine Hände zu sehen, wenn er direkt mit Objekten interagiert. Da der Benutzer seine Hände nicht sehen kann, wird es schwierig, die Tiefe/Entfernung zwischen der Hand/dem Finger und der Zieloberfläche zu erkennen. Der Fingercursor hilft dabei, dieses Problem zu kompensieren, aber es kann auf einer hell weißen Oberfläche immer noch eine Herausforderung darstellen. 
 
-![Farbe und Handver occlusion Schwierig, die Hand auf der farbigen ](images/color_handocclusion.jpg)
- *Inhalts-Hintergrundbaustein zu sehen*
+![Farbe und Handverdeckung ](images/color_handocclusion.jpg)
+ *Schwierig, die Hand auf der farbigen Hintergrundplattform* für Inhalte zu sehen
 
-**Farbeinheitlichkeit**
+**Farbgleichheit**
 
-Aufgrund der Merkmale von holografischen Displays kann ein großer, heller Bereich auf der Anzeige zu Blotogramm werden. Mithilfe von dunklen Farbschemas können Sie dieses Problem minimieren. 
+Aufgrund der Merkmale holografischer Displays kann ein großer, heller Bereich auf der Anzeige zu Blotogrammen werden. Mithilfe von dunklen Farbschemas können Sie dieses Problem minimieren. 
 
-## <a name="design-guidelines-for-color-choices"></a>Entwurfsrichtlinien für Farboptionen
+## <a name="design-guidelines-for-color-choices"></a>Entwurfsrichtlinien für Farbauswahl
 
-**Verwenden der dunklen Farbe für den Ui-Hintergrund**
+**Verwenden von dunkler Farbe für den Benutzeroberflächenhintergrund**
 
-Mithilfe des dunklen Farbschemas können Sie die Augenmüdigkeit minimieren und die Konfidenz bei direkten Handinteraktionen verbessern. 
+Mithilfe des dunklen Farbschemas können Sie die Augenmüdigkeit minimieren und die Zuverlässigkeit bei direkten Handinteraktionen verbessern. 
 
-![Beispiele für dunkle Farbe, die für den Inhaltshintergrund verwendet wird Beispiele für dunkle ](images/color_dark_examples.jpg)
- *Farbe, die für den Inhaltshintergrund verwendet wird*
+![Beispiele für dunkle Farbe, die für den Inhaltshintergrund verwendet wird ](images/color_dark_examples.jpg)
+ *Beispiele für dunkle Farbe, die für den Inhaltshintergrund verwendet wird*
 
-**Verwenden der Schriftgewichtung "semibold" oder "bold"**
+**Verwenden der Schriftbreite "semibold" oder "bold"**
 
-HoloLens ermöglicht es Ihrer Erfahrung, hochwertigen, hochauflösenden Text zu zeigen. Es wird jedoch empfohlen, schlanke Schriftgewichtungen wie hell oder halb hell zu vermeiden, da die vertikalen Striche in kleinem Schriftgrad jittern können. 
+HoloLens ermöglicht es Ihnen, ansprechenden, hochauflösenden Text anzuzeigen. Es wird jedoch empfohlen, schlanke Schriftbreiten wie Hell oder Halblicht zu vermeiden, da die vertikalen Striche in kleinem Schriftgrad jittern können. 
 
-![Fett oder halb fett formatiert (oberer Bereich) verbessert die Lesbarkeit Fett oder halb fett ](images/color_font_examples.jpg)
- *Schriftgrad (oberer Bereich) verbessert die Lesbarkeit.*
+![Die Schriftbreite fett oder halb fett (oberer Bereich) verbessert die Lesbarkeit ](images/color_font_examples.jpg)
+ *fett oder halb fett (oberer Bereich) verbessert die Lesbarkeit.*
 
-**Verwenden des HolographicBackplate-Materials des MRTK**
+**Verwenden des HolographicBackplate-Materials von MRTK**
 
-Das HolographicBackplate-Material wird auf mehrere Benutzeroberflächenpanels in der HoloLens-Shell angewendet. Eines der Features ist ein irideneffekt, der für Benutzer sichtbar ist, wenn sie ihre Position basierend auf dem Panel verschieben. Die Hintergrundfarbe verschiebt sich subtly über ein vordefiniertes Spektrum, wodurch ein ansprechender und dynamischer visueller Effekt ohne Beeinträchtigung der Lesbarkeit von Inhalten erstellt wird. Diese geringfügige Farbverschiebung dient auch dazu, kleinere Farbverschädigte zu kompensieren. 
+Das HolographicBackplate-Material wird auf mehrere Benutzeroberflächenpanels in der HoloLens Shell angewendet. Eines der Features ist ein irid überfälliger Effekt, der für Benutzer sichtbar ist, wenn sie ihre Position basierend auf dem Panel verschieben. Die Hintergrundfarbe verschiebt sich subtly über ein vordefiniertes Spektrum und erzeugt einen ansprechenden und dynamischen visuellen Effekt, ohne die Lesbarkeit von Inhalten zu beeinträchtigen. Diese geringfügige Farbverschiebung dient auch dazu, geringfügige Farbstörungen zu kompensieren. 
 
 
-## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Herausforderungen bei transparenten oder transparenten UI-Hintergrundbausteinen 
+## <a name="challenges-with-transparent-or-translucent-ui-backplate"></a>Herausforderungen bei transparenten oder transparenten Benutzeroberflächen-Backplates 
 
-![Beispiele für transparente ](images/color_transparent_examples.jpg)
- *BenutzeroberflächenBeispiele für eine transparente Ui-Backplate*
+![Beispiele für transparente Ui ](images/color_transparent_examples.jpg)
+ *Beispiele für eine transparente Benutzeroberflächen-Backplate*
 
 **Visuelle Komplexität und Barrierefreiheit**
 
-Da holografische Objekte mit der physischen Umgebung kombiniert werden, kann der Inhalt oder die Lesbarkeit der Benutzeroberfläche in transparenten oder transparenten Fenstern beeinträchtigt werden. Wenn transparente holografische Objekte übereinander überlagert werden, kann dies außerdem die Interaktion des Benutzers aufgrund der verwirrenden Tiefe erschweren.
+Da holografische Objekte mit der physischen Umgebung kombiniert werden, kann die Lesbarkeit von Inhalten oder Benutzeroberflächen in transparenten oder durchscheinenden Fenstern beeinträchtigt werden. Wenn transparente holografische Objekte übereinander überlagert werden, kann dies die Interaktion des Benutzers aufgrund der verwirrenden Tiefe erschweren.
 
 **Leistung**
 
-Damit transparente oder transparente Objekte ordnungsgemäß gerendert werden können, müssen sie sortiert und mit allen Objekten kombiniert werden, die im Hintergrund vorhanden sind. Das Sortieren von transparenten Objekten hat geringfügige CPU-Kosten, und das Mischen hat erhebliche GPU-Kosten, da die GPU die Entfernung verborgener Oberflächen nicht über Z-Culling (d. h. Tiefentests). Wenn das Entfernen ausgeblendeter Oberflächen nicht erlaubt wird, erhöht sich die Anzahl der Vorgänge, die für das endgültige gerenderte Pixel erforderlich sind. Dies führt zu einer stärkeren Einschränkung der Druckfüllrate.
+Damit transparente oder durchscheinende Objekte ordnungsgemäß gerendert werden können, müssen sie sortiert und mit allen Objekten kombiniert werden, die im Hintergrund vorhanden sind. Das Sortieren von transparenten Objekten hat geringfügige CPU-Kosten, und das Mischen hat erhebliche GPU-Kosten, da die GPU nicht in der Lage ist, ausgeblendete Oberflächen per Z-Culling zu entfernen (d.h. Tiefentests). Wenn das Entfernen ausgeblendeter Oberflächen nicht zugelassen wird, erhöht sich die Anzahl der Vorgänge, die für das endgültige gerenderte Pixel erforderlich sind. Dies führt zu mehr Einschränkungen bei der Füllrate für Druck.
 
-**Hologrammstabilitätsproblem mit Tiefen-LSR-Technologie**
+**Hologrammstabilitätsproblem bei der Tiefen-LSR-Technologie**
 
-Um die holografische Neuprojektion oder Hologrammstabilität zu verbessern, kann eine Anwendung für jeden gerenderten Frame einen Tiefenpuffer an das System übermitteln. Wenn Sie den Tiefenpuffer für die Neuprojektion verwenden, müssen Sie einen Tiefenpuffer für jedes gerenderte Farbpixel in einer entsprechenden Tiefe schreiben. Jedes Pixel mit einem Tiefenwert sollte auch einen Farbwert haben. Wenn die obige Anleitung nicht befolgt wird, können Bereiche des gerenderten Bilds, die keine gültigen Tiefeninformationen enthalten, auf eine Weise neu projiziert werden, die Artefakte erzeugt, die häufig als wellenbasierte Verzerrung sichtbar sind.
+Um die holografische Neuprojektion oder Hologrammstabilität zu verbessern, kann eine Anwendung für jeden gerenderten Frame einen Tiefenpuffer an das System übermitteln. Wenn Sie den Tiefenpuffer für die Neuprojektion verwenden, müssen Sie einen Tiefenpuffer für jedes farblich gerenderte Pixel mit einer entsprechenden Tiefe schreiben. Jedes Pixel mit einem Tiefenwert sollte ebenfalls einen Farbwert aufweisen. Wenn die obige Anleitung nicht befolgt wird, können Bereiche des gerenderten Bilds, für die keine gültigen Tiefeninformationen vorliegen, auf eine Weise neu projiziert werden, die Artefakte erzeugt, die häufig als wellenähnliche Verzerrung sichtbar sind.
 
 
 ## <a name="design-guidelines-for-transparent-elements"></a>Entwurfsrichtlinien für transparente Elemente
 
-**Verwenden des Hintergrunds der nicht transparenten Benutzeroberfläche**
+**Verwenden eines nicht transparenten Ui-Hintergrunds**
 
-Standardmäßig schreiben transparente oder durchsichtige Objekte keine Tiefe, um eine ordnungsgemäße Mischung zu ermöglichen. Zu den Möglichkeiten, dieses Problem zu beheben, gehören die Verwendung von nicht transparenten Objekten, das Sicherstellen, dass durchsichtige Objekte in der Nähe von nicht transparenten Objekten angezeigt werden (z. B. eine durchscheinende Schaltfläche vor einer nicht transparenten Hintergrundbaustein), das Erzwingen der Schreibtiefe durchscheinender Objekte (nicht in allen Szenarien anwendbar) oder das Rendern von Proxyobjekten, die nur tiefen Werte am Ende des Rahmens beitragen.
+Standardmäßig schreiben transparente oder durchscheinende Objekte keine Tiefe, um eine ordnungsgemäße Mischung zu ermöglichen. Zu den Möglichkeiten, dieses Problem zu beheben, gehören die Verwendung von nicht transparenten Objekten, die Sicherstellung, dass durchscheinende Objekte in der Nähe von nicht transparenten Objekten erscheinen (z. B. eine durchscheinende Schaltfläche vor einer nicht transparenten Backplate), das Erzwingen der Schreibtiefe durchscheinender Objekte (nicht in allen Szenarien anwendbar) oder das Rendern von Proxyobjekten, die nur tiefenwerte am Ende des Frames beitragen.
 
-Lösungen in MRTK-Unity: /windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
+Lösungen innerhalb von MRTK-Unity: /windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
 
-Durch die Verwendung einer soliden und nicht transparenten Backplate können wir Lesbarkeit und Interaktionsvertrauen sichern.
+Mithilfe einer soliden und nicht transparenten Backplate können wir die Lesbarkeit und Interaktionssicherheit sichern.
 
 **Minimieren der Anzahl der betroffenen Pixel**
 
-Wenn Ihr Projekt transparente Objekte verwenden muss, versuchen Sie, die Anzahl der betroffenen Pixel zu minimieren. Wenn ein Objekt beispielsweise nur unter bestimmten Bedingungen (z. B. einem additiven Leuchteffekt) sichtbar ist, deaktivieren Sie das Objekt, wenn es vollständig unsichtbar ist (anstatt die additive Farbe auf Schwarz zu setzen). Für einfache 2D-Formen, die mit einem Quad mit einer Alphamaske erstellt werden, sollten Sie stattdessen eine Gitternetzdarstellung der Form mit einem nicht transparenten Shader erstellen. 
+Wenn ihr Projekt transparente Objekte verwenden muss, versuchen Sie, die Anzahl der betroffenen Pixel zu minimieren. Wenn ein Objekt beispielsweise nur unter bestimmten Bedingungen (z. B. einem additiven Leuchteffekt) sichtbar ist, deaktivieren Sie das Objekt, wenn es vollständig unsichtbar ist (anstatt die additive Farbe auf Schwarz festzulegen). Für einfache 2D-Formen, die mit einem Quader mit einer Alphamaske erstellt wurden, sollten Sie stattdessen eine Gitternetzdarstellung der Form mit einem deckenden Shader erstellen. 
 
 <br/>
 
@@ -99,11 +99,11 @@ Wenn Ihr Projekt transparente Objekte verwenden muss, versuchen Sie, die Anzahl 
 
 <br/>
 
-## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>Beispiele für dunkle Benutzeroberflächen im MRTK (Mixed Reality Toolkit) für Unity
+## <a name="dark-ui-examples-in-mrtk-mixed-reality-toolkit-for-unity"></a>Beispiele für dunkle Ui im MRTK (Mixed Reality Toolkit) für Unity
 
-**[MRTK bietet](https://github.com/Microsoft/MixedRealityToolkit-Unity)** viele Beispiele für Benutzeroberflächenbausteinen, die auf den dunklen Farbschemas basieren.
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet viele Beispiele für Ui-Bausteine, die auf den dunklen Farbschemas basieren.
 
-* [Menü "Nah"](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [Menü "In der Nähe"](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
 * [Dialogfeld](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
 * [Handmenü](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 

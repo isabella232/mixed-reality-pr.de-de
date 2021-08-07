@@ -1,28 +1,28 @@
 ---
 layout: LandingPage
 title: Mixed Reality Dev Days
-description: Ereignis Seite für dev-Tage mit gemischter Realität
+description: Ereignisseite für Mixed Reality Dev Days
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/21/2020
 ms.topic: article
-keywords: Gemischte Realität, Konferenz, Summit, Entwickler, hololens, hololens 2, kinect
-ms.openlocfilehash: 9ff4d53b277f23a0b9abc6de7531db11240b800b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality, Conference, Conference, Conference, Developer, HoloLens, HoloLens 2, Kinect
+ms.openlocfilehash: b456455b95dc225a012133d22fc5fb04c5a6d0cfe81ea91e016b79712f80d449
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91686254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209430"
 ---
 ![Mixed Reality Dev Days](../whats-new/images/MRDD/MRDevDaysBanner.png)  
 
-# <a name="code-of-conduct-and-microsoft-standard-event-guidelines"></a>Verhaltensregeln und Richtlinien für Microsoft-Standard Ereignisse
+# <a name="code-of-conduct-and-microsoft-standard-event-guidelines"></a>Verhaltensregeln und Microsoft Standard-Ereignisrichtlinien
 
 ## <a name="code-of-conduct"></a>Verhaltensregeln 
 
-***Die Aufgabe von Microsoft besteht darin, jede Person und jede Organisation auf der ganzen Welt zu unterstützen, mehr zu erreichen. Dies umfasst alle Microsoft-Veranstaltungen und-Versammlungen, einschließlich digitaler Plattformen, bei denen wir uns für alle Teilnehmer sorgen, dass Sie ein respektvolles, freundliches, unterhaltsames und inklusives Verhalten erzielen.***  
+***Das Ziel von Microsoft ist es, jede Person und jede Organisation auf der Welt zu befähigen, mehr zu erreichen. Dies schließt alle Microsoft-Veranstaltungen und -Veranstaltungen ein, auch auf digitalen Plattformen, auf denen wir versuchen, eine freundliche, spaßige und inklusive Erfahrung für alle Teilnehmer zu schaffen.***  
 
-***Wir gehen davon aus, dass alle Digital Event-Teilnehmer die Prinzipien dieses Verhaltens Verhaltens einhalten, der das wichtigste digitale Ereignis und alle zugehörigen Aktivitäten behandelt. Wir tolerieren keinerlei Unterbrechungen oder unbehängend Verhalten, Nachrichten, Bilder oder Interaktionen von einem Teilnehmer in irgendeiner Form an einem beliebigen Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Belästigung oder Unterscheidung auf der Grundlage von Alter, Herkunft, Farbe, Geschlecht-Identität oder-Ausdruck, nationaler Ursprung, physischer oder physischer Behinderung, Religion, sexueller Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Bestimmungen und ordinanzen geschützt sind.***  
+***Wir erwarten, dass alle Teilnehmer digitaler Ereignisse die Prinzipien dieses Code of Conduct ,der das digitale Hauptereignis und alle zugehörigen Aktivitäten abdeckt, im Mittelpunkt stehen. Wir tolerieren keine unterbrechungsfreien oder unvoreinsichtigen Verhaltensweisen, Nachrichten, Bilder oder Interaktionen von Parteiteilnehmern in irgendeiner Form an irgendeinem Aspekt des Programms, einschließlich geschäftlicher und sozialer Aktivitäten, unabhängig vom Standort. Microsoft toleriert keine Handlungen oder Beeinträchtigungen aufgrund von Alter, Herkunft, Farbe, Geschlechtidentität oder -ausdruck, nationalem Ursprung, physischer oder mentaler Behinderungen, Geschlecht, geschlechtliche Ausrichtung oder anderen Merkmalen, die durch geltende lokale Gesetze, Vorschriften und Handlungen geschützt sind.***  
 
-***Fotos, Videos oder Aufzeichnungen von Sitzungs Inhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen gemeinsam genutzt wird, sind unzulässig. Wir empfehlen allen Benutzern, eine einladende und sichere Umgebung zu erstellen. Melden Sie alle Bedenken, das Verhalten von Problemen, verdächtige Aktivitäten oder Störungen an der Business Behavior-Hotline (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, den Benutzern jederzeit nach eigenem Ermessen die Berechtigung zum ablehnen von Zutritt oder der Entfernung von Benutzern aus gemischten Reality-dev-Tagen zu verweigern.***  
+***Das Aufzeichnen von Sitzungsinhalten oder Präsentationen in einem beliebigen Format, das in sozialen Kanälen geteilt wird, ist nicht zulässig. Wir empfehlen allen, bei der Erstellung einer einladenden und sicheren Umgebung zu helfen. Melden Sie alle Bedenken, verhaltensverlässig, verdächtigen oder störenden Aktivitäten an Business Conduct Soll (1-877-320-MSFT oder [buscond@microsoft.com](mailto:buscond@microsoft.com) ). Microsoft behält sich das Recht vor, nach eigenem Ermessen jederzeit die Aufnahme von Personen Mixed Reality Dev Days zu verweigern oder daraus zu entfernen.***  
 

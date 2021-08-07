@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Ultra, kompatibel, Kompatibilität, Systemanforderungen, PC
 appliesto:
 - Windows 10
-ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: ed9113c5aa54d74678fcd6f888fa96007533d0d27e921f91aa6feeda459d11b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757032"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187856"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality Mindestrichtlinien für die PC-Hardwarekompatibilität
 
@@ -33,10 +33,10 @@ Mit PCs mit höheren Enden erhalten Sie einige zusätzliche Funktionen und Featu
 
 Überprüfen Sie anhand der unten aufgeführten Hardwarerichtlinien und ausführen der Mixed Reality-Portal-App, ob Ihr PC [Windows Mixed Reality](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) ausführen kann.
 
-Denken Sie daran, dass Ihre Leistung je nach Ihrem genauen Setup variiert. Sie müssen auch sicherstellen, dass Ihr PC über die [richtigen Ports](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) für das Windows Mixed Reality immersive Headset verfügt, das Sie verwenden.
+Denken Sie daran, dass Ihre Leistung je nach Ihrem genauen Setup variiert. Außerdem müssen Sie sicherstellen, dass Ihr PC über die [richtigen Ports](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) für das Windows Mixed Reality immersive Headset verfügt, das Sie verwenden.
 
 >[!NOTE]
->Richtlinien für Entwicklungs-PCs sind höher als die richtlinien für Consumer-PCs, auf denen Mixed Reality-Apps ausgeführt werden. Wenn Sie Mixed Reality-Entwickler sind, [finden Sie weitere Informationen unter Empfohlene PC-Spezifikationen](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools#immersive_headset_development)für die Entwicklung.
+>Richtlinien für Entwicklungs-PCs sind höher als die Richtlinien für Consumer-PCs, auf denen Mixed Reality-Apps ausgeführt werden. Wenn Sie Mixed Reality-Entwickler sind, [finden Sie weitere Informationen unter Empfohlene PC-Spezifikationen](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools#immersive_headset_development)für die Entwicklung.
 
 ## <a name="mixed-reality-portal-app"></a>Mixed Reality-Portal-App
 
@@ -115,8 +115,8 @@ Beachten Sie für alle anderen HMDs die folgenden Anforderungen:
     <td style="vertical-align: middle; text-align: middle;">
             <li>Integrierte Intel HD Graphics 620 (oder höher) DX12-fähige integrierte GPU <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units">(überprüfen Sie, ob Ihr Modell größer ist)</a></li>
         <li>NVIDIA MX150 (oder höher) diskrete GPU</li>
-        <li>Nvidia GeForce GTX 1050 Diskrete GPU</li>
-        <li>Nvidia 965M diskrete GPU</li>
+        <li>Nvidia GeForce GTX 1050 diskrete GPU</li>
+        <li>Diskrete NVIDIA 965M-GPU</li>
         <li>AMD Rx Rx 460/560</li>
         </ul>
         <b>Hinweis:</b> Ältere Intel-GPUs wie HD Graphics 4xx, 5xx, 2xxx, 3xxx, 4xxx, 5xxx und 6xxx werden nicht unterstützt.
@@ -143,7 +143,7 @@ Beachten Sie für alle anderen HMDs die folgenden Anforderungen:
     <td style="vertical-align: middle; text-align: center;">60 Hz</td>
 </tr>
 <tr>
-    <td style="vertical-align: middle">Power</td>
+    <td style="vertical-align: middle">Leistung</td>
     <td style="vertical-align: middle; text-align: center;">USB 3.0-Anschlüsse</td>
     <td style="vertical-align: middle; text-align: center;">USB 3.0-Anschlüsse</td>
 </tr>
@@ -153,23 +153,23 @@ Beachten Sie für alle anderen HMDs die folgenden Anforderungen:
 
 * Größere Laptops mit Bildschirmen von mindestens 15" bieten die beste Lösung.
 * Hybridgrafikkonfigurationen sind nur mit Windows Mixed Reality 90Hz kompatibel. Der diskrete Grafikkarte in einer beliebigen Hybridkonfiguration muss alle Anforderungen erfüllen, die in den Windows Mixed Reality Richtlinien für diskrete Grafikkarten aufgeführt sind.
-* Wenn Sie über eine diskrete Grafikkarte verfügen, die Windows Mixed Reality 90Hz ausgeführt werden sollte, aber standardmäßig eine Aktualisierungsrate von 60Hz (60 Frames pro Sekunde) aufwies, verwenden Sie einen Full-Size DisplayPort to INTRANET 2.0-Adapter, um Ihr Headset einzustecken und eine Aktualisierungsrate von 90Hz zu aktivieren.
+* Wenn Sie über eine diskrete Grafikkarte verfügen, die Windows Mixed Reality 90Hz ausgeführt werden sollte, aber standardmäßig eine Aktualisierungsrate von 60Hz (60 Frames pro Sekunde) aufwies, verwenden Sie einen Full-Size DisplayPort to DEBIT 2.0-Adapter, um Ihr Headset einzustecken und eine Aktualisierungsrate von 90Hz zu aktivieren.
 * Verschiedene Headsets erfordern möglicherweise unterschiedliche [Hardwareports.](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) Stellen Sie daher sicher, dass Ihr PC über die richtigen Ports oder adapters verfügt, um eine Verbindung mit Ihrem Headset herzustellen.
 
 >[!NOTE]
->Diskrete und integrierte Grafikhardware, die die mindestens bestätigten Spezifikationen nicht erfüllt, wurde für Windows Mixed Reality nicht getestet, bestätigt oder optimiert und funktioniert möglicherweise nicht ordnungsgemäß oder überhaupt nicht.
+>Diskrete und integrierte Grafikhardware, die nicht den mindestens bestätigten Spezifikationen entspricht, wurde nicht getestet, bestätigt oder für Windows Mixed Reality optimiert und funktioniert möglicherweise nicht ordnungsgemäß oder überhaupt nicht.
 
 ## <a name="windows-mixed-reality-and-surface"></a>Windows Mixed Reality und Surface
 
-Für die beste Windows Mixed Reality-Erfahrung auf einem Surface-Gerät empfehlen wir das neueste SurfaceBook (15), das mindestens mit nvidia GeForce GTX 1060 GB und 16 GB RAM konfiguriert ist.  Diese Konfiguration unterstützt alle Windows Mixed Reality Features und wurde auf Windows Mixed Reality.  Die neuesten Surface Book (13.5), Surface Studio, Surface Laptop und Surface Pro (2017) unterstützen alle einige Windows Mixed Reality-Features, wenn sie mit einer Intel Core i5-CPU (oder besser) und mindestens 8 GB RAM konfiguriert sind.
+Für die beste Windows Mixed Reality auf einem Surface-Gerät empfehlen wir das neueste SurfaceBook (15"), das mindestens mit NVIDIA GeForce GTX 1060 GB und 16 GB RAM konfiguriert ist.  Diese Konfiguration unterstützt alle Windows Mixed Reality Features und wurde auf Windows Mixed Reality getestet.  Die neuesten Surface Book (13.5), Surface Studio, Surface Laptop und Surface Pro (2017) unterstützen alle einige Windows Mixed Reality Features, wenn sie mit einer Intel Core i5-CPU (oder höher) und mindestens 8 GB RAM konfiguriert sind.
 
 **Anforderungen:**
 
-* Surface-Produkte erfordern Treiberupdates, damit sie mit der Windows Mixed Reality. Diese Treiber können auf Ihrer Surface installiert werden, indem Sie Einstellungen > update and security > Check for Updates (Nach Updates **suchen) gehen.**
-* Surface-Produkte [](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) erfordern einen Adapter vom Videoport (Mini DisplayPort oder USB-C, je nach Surface-PC) bis zu DEN 2.0 für Windows Mixed Reality Headsets. Die neueste Version des Surface Mini-DisplayPort to ANTIVIRUS AV Adapters ist kompatibel mit ANTIVIRUS 2.0 (die ältere Version ist dies nicht). Auf ähnliche Weise ist der <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Surface USB-C-to-ADAPTER</a> auch mit DENEN 2.0 kompatibel.
+* Surface-Produkte erfordern Treiberupdates, um mit Windows Mixed Reality kompatibel zu sein. Diese Treiber können auf Ihrer Oberfläche installiert werden, indem Sie Einstellungen > Update and Security > Check for Updates (Nach **Updates suchen)**>.
+* Surface-Produkte erfordern einen [Adapter](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) vom Videoport (Mini DisplayPort oder USB-C, abhängig vom Surface-PC) bis ZUEGE 2.0 für Windows Mixed Reality Headsets. Die neueste Version des Surface-Mini-DisplayPort mit DEM AV-Adapter IST mit DER VERSION 2.0 kompatibel (die ältere Version ist nicht). Auf ähnliche Weise ist der <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">Surface USB-C to ADAPTER-Adapter</a> auch mit DEM USB-Adapter 2.0 kompatibel.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 * [Die Community fragen](https://answers.microsoft.com)
-* [Wenden Sie sich an uns, um Support zu erhalten.](https://support.microsoft.com/contactus/)
-* [Empfohlene Adapter für Windows Mixed Reality PCs](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
+* [Wenden Sie sich an uns, um Support zu haben.](https://support.microsoft.com/contactus/)
+* [Empfohlene Adapter für Windows Mixed Reality-fähige PCs](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

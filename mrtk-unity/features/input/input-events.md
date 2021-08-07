@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Ereignisse,
-ms.openlocfilehash: c8871aa575e2aa4507e9dbbdcc8bdf0fc0604633
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 25ac5bd4a4f5d5678a80ec362512ce7daac791a17e93944aa4832d9d09c02ee2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176781"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208332"
 ---
 # <a name="input-events"></a>Eingabeereignisse
 
@@ -24,11 +24,11 @@ In der folgenden Liste sind alle verfügbaren Eingabeereignisschnittstellen aufg
 | [`IMixedRealitySourceStateHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourceStateHandler) | Quelle erkannt/verloren | Wird ausgelöst, wenn eine Eingabequelle erkannt wird oder verloren geht, z. B. wenn eine artikulierte Hand erkannt wird oder verloren geht. |
 | [`IMixedRealitySourcePoseHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySourcePoseHandler) | Quellpose geändert | Wird bei Änderungen der Quellpose ausgelöst. Die Quellpose stellt die allgemeine Pose der Eingabequelle dar. Bestimmte Posen wie Greif- oder Zeigerpose in einem sechs DOF-Controller können über ermittelt `IMixedRealityInputHandler<MixedRealityPose>` werden. |
 | [`IMixedRealityInputHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler) | Eingabe nach unten/nach oben | Wird bei Änderungen an binären Eingaben wie Schaltflächen ausgelöst. |
-| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Eingabe geändert | Wird bei Änderungen an Eingaben des angegebenen Typs ausgelöst. **T** kann die folgenden Werte verwenden: <br/> - *float* (z. B. gibt einen analogen Trigger zurück)<br/> - *Vector2* (gibt z.B. die Gamepad-Thumbstickrichtung zurück) <br/> - *Vector3* (z.B. Rückgabeposition des nachverfolgten Geräts) <br/> - *Quaternion* (gibt z. B. die Ausrichtung des nachverfolgten Geräts zurück)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (z. B. gibt das vollständig nachverfolgte Gerät zurück) |
+| [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | Eingabe geändert | Wird bei Änderungen an Eingaben des angegebenen Typs ausgelöst. **T** kann die folgenden Werte verwenden: <br/> - *float* (z. B. gibt einen analogen Trigger zurück)<br/> - *Vector2* (gibt z. B. die Gamepad-Thumbstickrichtung zurück) <br/> - *Vector3* (z. B. Rückgabeposition des nachverfolgten Geräts) <br/> - *Quaternion* (z. B. Gibt die Ausrichtung des nachverfolgten Geräts zurück)<br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (z. B. gibt das vollständig nachverfolgte Gerät zurück) |
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | Speech-Schlüsselwort erkannt | Wird bei der Erkennung eines der Schlüsselwörter ausgelöst, die im *Speech-Befehlsprofil konfiguriert sind.* |
 | [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | Diktieren<br/> Hypothesis <br/> Ergebnis <br/> Abgeschlossen <br/> Fehler | Wird von Diktatsystemen ausgelöst, um die Ergebnisse einer Diktatsitzung zu melden. |
 | [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | Gestenereignisse für: <br/> Gestartet <br/> Aktualisiert <br/> Abgeschlossen <br/> Canceled | Wird bei der Gestenerkennung ausgelöst. |
-| [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Geste aktualisiert/abgeschlossen | Wird bei erkennung von Gesten ausgelöst, die zusätzliche Daten des angegebenen Typs enthalten. Weitere [**Informationen zu möglichen**](gestures.md#gesture-events) Werten für T finden Sie unter Gestenereignisse.  |
+| [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | Geste aktualisiert/abgeschlossen | Wird bei erkennung von Gesten ausgelöst, die zusätzliche Daten des angegebenen Typs enthalten. Details [**zu möglichen Werten**](gestures.md#gesture-events) für T finden Sie unter Gestenereignisse.  |
 | [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) | Handgelenke aktualisiert | Wird von artikulierten Handcontrollern ausgelöst, wenn Handgelenke aktualisiert werden. |
 | [`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) | Hand Mesh aktualisiert | Wird von artikulierten Handcontrollern ausgelöst, wenn ein Handgitternetz aktualisiert wird. |
 | [`IMixedRealityInputActionHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputActionHandler) | Aktion gestartet/beendet | Wird zum Angeben des Aktionsstarts und -endes für Eingaben, die Aktionen zugeordnet sind, aus. |
@@ -40,7 +40,7 @@ Auf Skriptebene können Eingabeereignisse verwendet werden, indem eine der in de
 1. Das MRTK-Eingabesystem erkennt, dass ein Eingabeereignis aufgetreten ist.
 1. Das MRTK-Eingabesystem gibt die relevante Schnittstellenfunktion des Eingabeereigniss für alle registrierten [globalen Eingabehandler aus.](#register-for-global-input-events)
 1. Für jeden aktiven Zeiger, der beim Eingabesystem registriert ist:
-    1. Das Eingabesystem bestimmt, welches GameObject sich im Fokus für den aktuellen Zeiger befindet.
+    1. Das Eingabesystem bestimmt, welches GameObject für den aktuellen Zeiger im Fokus steht.
     1. Das Eingabesystem verwendet [das Unity-Ereignissystem,](https://docs.unity3d.com/Manual/EventSystem.html) um die relevante Schnittstellenfunktion für alle übereinstimmenden Komponenten auf dem fokussierten GameObject zu verwenden.
     1. Wenn zu einem beliebigen Zeitpunkt ein Eingabeereignis als verwendet markiert [wurde,](#how-to-stop-input-events)wird der Prozess beendet, und keine weiteren GameObjects erhalten Rückrufe.
         - Beispiel: Komponenten, die die Schnittstelle implementieren, werden [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) gesucht, wenn ein Sprachbefehl erkannt wird.
@@ -78,7 +78,7 @@ public class ShowHideSpeechHandler : MonoBehaviour, IMixedRealitySpeechHandler
 
 ## <a name="register-for-global-input-events"></a>Registrieren für globale Eingabeereignisse
 
-Eine Komponente muss sich beim Eingabesystem registrieren, um eine Komponente zu erstellen, die auf globale Eingabeereignisse lausiert, ohne zu ignorieren, welches GameObject sich möglicherweise im Fokus hat. Nach der Registrierung empfangen alle Instanzen dieses MonoBehaviour-Objekts Eingabeereignisse zusammen mit allen GameObjects, die sich derzeit im Fokus befindet, und anderen globalen registrierten Listenern.
+Eine Komponente muss sich beim Eingabesystem registrieren, um eine Komponente zu erstellen, die auf globale Eingabeereignisse lausiert, ohne zu ignorieren, welches GameObject sich möglicherweise im Fokus hat. Nach der Registrierung erhalten alle Instanzen dieses MonoBehaviour-Objekts Eingabeereignisse zusammen mit allen GameObjects, die sich derzeit im Fokus befindet, und anderen globalen registrierten Listenern.
 
 Wenn ein Eingabeereignis als verwendet [markiert wurde,](#how-to-stop-input-events)empfangen globale registrierte Handler weiterhin Rückrufe. Das Ereignis wird jedoch nicht von GameObjects mit Fokus empfangen.
 
@@ -175,7 +175,7 @@ public class GlobalHandListenerExample : MonoBehaviour,
 
 ## <a name="how-to-stop-input-events"></a>Beenden von Eingabeereignissen
 
-Jede Eingabeereignisschnittstelle stellt ein [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData) Datenobjekt als Parameter für jede Funktion auf der Schnittstelle bereit. Dieses Ereignisdatenobjekt erweitert von Unitys [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html) eigenem .
+Jede Eingabeereignisschnittstelle stellt ein [`BaseInputEventData`](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputEventData) Datenobjekt als Parameter für jede Funktion auf der Schnittstelle bereit. Dieses Ereignisdatenobjekt erweitert von Unitys eigener [`AbstractEventData`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.html) .
 
 Um zu verhindern, dass ein Eingabeereignis wie beschrieben durch seine Ausführung weiterverteilt [wird,](#input-events-in-action)kann eine Komponente aufrufen, um das Ereignis [`AbstractEventData.Use()`](https://docs.unity3d.com/2019.1/Documentation/ScriptReference/EventSystems.AbstractEventData.Use.html) als verwendet zu markieren. Dadurch wird der Empfang des aktuellen Eingabeereigniss durch andere GameObjects mit Ausnahme von globalen Eingabehandlern nicht mehr empfangen.
 
