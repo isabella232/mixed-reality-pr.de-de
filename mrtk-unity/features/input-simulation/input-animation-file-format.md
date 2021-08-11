@@ -1,22 +1,22 @@
 ---
-title: Format der Eingabeanimationsdatei
+title: Eingabe-Animationsdateiformat
 description: Dokumentation zur Spezifikation des Binärdateiformats für Eingabeanimationen in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf77d976c9c894e6cf455a3a6b0e0c538912af2a9e8f8e2c7e847ba6e4657140
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222762"
 ---
-# <a name="input-animation-file-format"></a>Format der Eingabeanimationsdatei
+# <a name="input-animation-file-format"></a>Eingabe-Animationsdateiformat
 
 ## <a name="overall-structure"></a>Gesamtstruktur
 
-Die Binärdatei der Eingabeanimation beginnt mit einer magischen 64-Bit-Ganzzahl. Der Wert dieser Zahl in Hexadezimal notation ist `0x6a8faf6e0f9e42c6` und kann verwendet werden, um gültige Eingabeanimationsdateien zu identifizieren.
+Die Binärdatei der Eingabeanimation beginnt mit einer magischen 64-Bit-Ganzzahlzahl. Der Wert dieser Zahl in Hexadezimal notation ist `0x6a8faf6e0f9e42c6` und kann verwendet werden, um gültige Eingabeanimationsdateien zu identifizieren.
 
 Die nächsten acht Bytes sind zwei Int32-Werte, die die Haupt- und Nebenversionsnummer der Datei deklarieren.
 
@@ -24,7 +24,7 @@ Der Rest der Datei wird von Animationsdaten übernommen, die sich zwischen Versi
 
 | `Section` | Typ |
 |---------|------|
-| Magische Zahl | Int64 |
+| Magic Number | Int64 |
 | Hauptversionsnummer | Int32 |
 | Nebenversionsnummer | Int32 |
 | Animationsdaten | _Siehe Abschnitt "Version"._ |
@@ -35,9 +35,9 @@ Die Eingabeanimationsdaten bestehen aus drei booleschen Werten, die angeben, ob 
 
 | `Section` | Typ | Hinweise |
 |---------|------|------|
-| Hat Kamerapose | Boolean | |
-| Has Hand Data | Boolean | |
-| Has Eye Gaze| Boolean | |
+| Hat Kamerapose | Boolesch | |
+| Has Hand Data | Boolesch | |
+| Has Eye Gaze| Boolesch | |
 | Kamera | [Pose Curves](#pose-curves) | Nur, wenn "Has Camera Pose" (Kamerapose hat) "true" ist |
 | Hand Tracked Left | [Boolesche Kurve](#boolean-curve) | Nur, wenn Has Hand Data true ist |
 | Hand nach rechts nachverfolgt | [Boolesche Kurve](#boolean-curve) | Nur, wenn Has Hand Data true ist |
@@ -61,9 +61,9 @@ Die Eingabeanimationsdaten bestehen aus einer Sequenz von Animationskurven. Anza
 | Handverbindungen links | [Gemeinsame Posenkurven](#joint-pose-curves) |
 | Handverbindungen rechts | [Gemeinsame Posenkurven](#joint-pose-curves) |
 
-### <a name="joint-pose-curves"></a>Gemeinsame Posenkurven
+### <a name="joint-pose-curves"></a>Krümmungen für die Gemeinsame Pose
 
-Für jede Hand wird eine Sequenz von gemeinsamen Animationskurven gespeichert. Die Anzahl der Fugen ist festgelegt, und für jedes Joint wird eine Reihe von Posenkurven gespeichert.
+Für jede Hand wird eine Sequenz von gemeinsamen Animationskurven gespeichert. Die Anzahl der Fugen ist fest, und für jedes Joint wird eine Reihe von Posenkurven gespeichert.
 
 | `Section` | Typ |
 |---------|------|
@@ -97,7 +97,7 @@ Für jede Hand wird eine Sequenz von gemeinsamen Animationskurven gespeichert. D
 
 ### <a name="pose-curves"></a>Posenkurven
 
-Posenkurven sind eine Sequenz von 3 Animationskurven für den Positionsvektor, gefolgt von 4 Animationskurven für die Drehungs quaternion.
+Posenkurven sind eine Sequenz von 3 Animationskurven für den Positionsvektor, gefolgt von vier Animationskurven für die Drehungs quaternion.
 
 | `Section` | Typ |
 |---------|------|
@@ -139,7 +139,7 @@ Ein Float-Keyframe speichert Tangens- und Gewichtungswerte zusammen mit der grun
 
 | `Section` | Typ |
 |---------|------|
-| Time | Float32 |
+| Zeit | Float32 |
 | Wert | Float32 |
 | InTangent | Float32 |
 | OutTangent | Float32 |
@@ -164,7 +164,7 @@ Ein boolescher Keyframe speichert nur eine Zeit und einen Wert.
 
 | `Section` | Typ |
 |---------|------|
-| Time | Float32 |
+| Zeit | Float32 |
 | Wert | Float32 |
 
 ### <a name="wrap-mode"></a>Wrap-Modus

@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows-Geräteportal, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: edcd1796598b558f42232bf54ae3d40d3c509bb9515d8dcbe7f3cf9f2b7dfd62
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112919811"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221513"
 ---
 # <a name="using-the-windows-device-portal"></a>Verwenden des Windows-Geräteportals
 
@@ -27,6 +27,8 @@ ms.locfileid: "112919811"
 Mit dem Windows-Geräteportal für HoloLens können Sie Ihr Gerät remote über eine WLAN- oder USB-Verbindung konfigurieren und verwalten. Das Geräteportal ist ein Webserver auf der HoloLens, mit dem Sie über einen Webbrowser auf dem PC eine Verbindung herstellen können. Das Geräteportal enthält viele Tools, die Ihnen helfen, ihre HoloLens zu verwalten und ihre Apps zu debuggen und zu optimieren.
 
 Diese Dokumentation befasst sich speziell mit dem Windows-Geräteportal für HoloLens. Informationen zum Verwenden des Windows-Geräteportals für Desktop (einschließlich Windows Mixed Reality) finden Sie unter [Windows-Geräteportal (Übersicht)](/windows/uwp/debug-test-perf/device-portal).
+
+> [HINWEIS] Es wird nicht empfohlen, das Geräteportal für HoloLens-Geräte zu verwenden, die Sie in Ihrer Organisation bereitstellen.
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>Einrichten von HoloLens zur Verwendung des Windows-Geräteportals
 
@@ -175,6 +177,8 @@ Sobald die Installation abgeschlossen ist, gehen Sie zurück zur Seite **Alle Ap
 ![Windows-Geräteportal-Startseite auf Microsoft HoloLens](images/using-windows-portal-img-04.png)<br>
 *Windows-Geräteportal-Startseite auf Microsoft HoloLens*
 
+> [HINWEIS] Die im Geräteportal konfigurierten Einstellungen gelten für das gesamte Gerät und bleiben über Neustarts hinweg erhalten. Es empfiehlt sich, das Geräteportal nur bei der Entwicklung und nicht für bereitgestellte Geräten zu verwenden.
+
 Die Geräteportalsitzung beginnt auf der Startseite. Der Zugriff auf andere Seiten erfolgt über die Navigationsleiste links von der Startseite.
 
 Die Symbolleiste am oberen Rand der Seite ermöglicht den Zugriff auf häufig verwendete Status und Features.
@@ -241,6 +245,8 @@ Zum Importieren von Zuordnungen und Ankern wählen Sie **Upload a map file** (Zu
 
 ![Seite „Mixed Reality-Aufnahme“ im Windows-Geräteportal auf Microsoft HoloLens](images/using-windows-portal-img-07.png)<br>
 *Seite „Mixed Reality-Aufnahme“ im Windows-Geräteportal auf Microsoft HoloLens*
+
+> [WICHTIG] Die im Geräteportal konfigurierten Einstellungen gelten für das gesamte Gerät und bleiben über Neustarts hinweg erhalten. Alle im Geräteportal geänderten Einstellungen gelten für Mixed Reality-Erfassungen und -Apps. Da diese Einstellungen permanent sind, empfiehlt es sich, das Geräteportal nur bei der Entwicklung und nicht für bereitgestellte Geräte zu verwenden.
 
 Auf der Seite „Mixed Reality Capture“ können Sie Mediendatenströme von der HoloLens speichern.
 * **Capture Settings** (Aufnahmeeinstellungen): Steuern Sie die erfassten Mediendatenströme, indem Sie die folgenden Einstellungen aktivieren:

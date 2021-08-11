@@ -1,173 +1,173 @@
 ---
-title: 'Fallstudie: die Verfolgung von mehr persönlichen Computing'
+title: 'Fallstudie: Die Verfolgung von mehr Personal Computing'
 description: Die Chancen von morgen entstehen durch die Produkte, die heute produziert werden. Die von diesen Produkten gebotenen Lösungen öffnen den Blick für die Notwendigkeiten der Zukunft.
 author: danielescudero
 ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, hololens, Fallstudie, Vision, Szenarios
-ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality, HoloLens, Fallstudie, Vision, Szenarien
+ms.openlocfilehash: 0e365be307781d652474ab3a1d15e6b66eb38f1a61a1175f44cdb7a01705ca61
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223368"
 ---
-# <a name="case-study---the-pursuit-of-more-personal-computing"></a>Fallstudie: die Verfolgung von mehr persönlichen Computing
+# <a name="case-study---the-pursuit-of-more-personal-computing"></a>Fallstudie: Die Verfolgung von mehr Personal Computing
 
-Die Chancen von morgen entstehen durch die Produkte, die heute produziert werden. Die von diesen Produkten gebotenen Lösungen öffnen den Blick für die Notwendigkeiten der Zukunft. Mit gemischter Realität ist dies besonders wichtig: ein sinnvoller Einblick ergibt sich aus der Praxis mit echten arbeiten – echten Geräten, echten Kunden, echten Problemen.
+Die Chancen von morgen entstehen durch die Produkte, die heute produziert werden. Die von diesen Produkten gebotenen Lösungen öffnen den Blick für die Notwendigkeiten der Zukunft. Bei Mixed Reality trifft dies besonders zu: Aussagekräftige Erkenntnisse ergeben sich aus der praktischen Arbeit – echte Geräte, echte Kunden und echte Probleme.
 
-Bei Microsoft bin ich Teil des Entwurfs Teams, das Unternehmenspartnern bei der Erstellung von Erfahrungen für Ihr Unternehmen mithilfe von Windows Mixed Reality unterstützt. Im vergangenen Jahr hat unser Team sich auf hololens konzentriert und weiß, wie das Flaggschiff-Holographic-Gerät von Microsoft heute ihren Kunden Mehrwert bieten kann. Wenn Sie mit Designern und Entwicklern dieser Unternehmen eng zusammenarbeiten, konzentriert sich unser Team auf das abdecken von Lösungen, die technisch gesehen, finanziell nicht praktikabel oder anderweitig ohne hololens nicht realisierbar sind.
+Bei Microsoft bin ich Teil des Entwurfsteams, das Unternehmenspartner beim Erstellen von Erfahrungen für ihr Unternehmen mithilfe von Windows Mixed Reality unterstützt. Im letzten Jahr hat sich unser Team darauf konzentriert, HoloLens und zu verstehen, wie das holografische Gerät von Microsoft heute einen Mehrwert für Kunden bieten kann. Unser Team arbeitet eng mit Designern und Entwicklern dieser Unternehmen zusammen und konzentriert sich auf die Aufdeckung von Lösungen, die technisch nicht umsetzbar, wirtschaftlich unpraktisch oder anderweitig ohne HoloLens unmöglich wären.
 
-![Fall West Reserve University](images/case-western-reserve-university.jpg)<br>
-*Holoanatomy von Case Western Reserve University*
+![Case Western Reserve University](images/case-western-reserve-university.jpg)<br>
+*HoloAnatomy von der Case Western Reserve University*
 
-Die Erstellung dieser Lösungen hilft den internen Teams von Microsoft dabei, sich auf die nächste Generation von Computing vorzubereiten. Erfahren Sie, wie Einzelpersonen und Unternehmen mit Kerntechnologien wie gemischter Realität, Voice und Ki interagieren, damit Microsoft bessere Geräte, Plattformen und Tools für Entwickler entwickeln kann. Wenn Sie ein Designer oder Entwickler sind, der diesen Raum untersucht, ist es wichtig, dass Sie wissen, was unsere Teams heute von Partnern lernen.
+Die Erstellung dieser Lösungen hilft den internen Microsoft-Teams, sich auf die nächste Generation des Computing vorzubereiten. Learning, wie Einzelpersonen und Unternehmen mit Kerntechnologien wie Mixed Reality, Sprache und KI interagieren, hilft Microsoft dabei, bessere Geräte, Plattformen und Tools für Entwickler zu erstellen. Wenn Sie ein Designer oder Entwickler sind, der diesen Bereich untersucht, ist es wichtig zu verstehen, was unsere Teams heute von Partnern lernen, um sich auf die Mixed Reality-Möglichkeiten von morgen vorzubereiten.
 
-## <a name="microsofts-ambition-for-mixed-reality"></a>Der Ehrgeiz von Microsoft für gemischte Realität
+## <a name="microsofts-ambition-for-mixed-reality"></a>Microsoft-Wunsch für Mixed Reality
 
-Wir leben in zwei Welten: physisch und Digital. Beide verfügen über grundlegende stärken, die wir nutzen, um unsere Fähigkeiten zu erweitern und zu erweitern. Wir können mit einem Freund kommunizieren, indem wir unsere physischen Aspekte zum Verständnis von Text Sprache verwenden, oder wir können unsere Möglichkeit verbessern, sich mit einem Freund von Meilen zu beschäftigen. Bis jetzt wurden diese beiden Welten und ihre jeweiligen Stärken grundlegend getrennt.
+Wir leben unser Leben zwischen zwei Welten: dem physischen und dem digitalen. Beide verfügen über grundlegende Stärken, die wir nutzen, um unsere Fähigkeiten zu erweitern und zu erweitern. Wir können mit einem Freund persönlich sprechen, unsere physischen Sinne verwenden, um Dinge wie die Körpersprache zu verstehen, oder wir können unsere Fähigkeit erweitern, mit einem Freund aus meilenweiten Entfernungen per Videochat zu sprechen. Bisher wurden diese beiden Welten und ihre jeweiligen Stärken grundlegend voneinander getrennt.
 
-**Die physische Welt ist eine der Atome und der Physik.** Wir verwenden unsere Sinne, um Entscheidungen zu treffen, indem wir ein Jahr lang erlerntes Verhalten für die Interaktion mit Objekten und Personen in unserer Umgebung nutzen. Trotz der Erleichterung dieser Interaktionen sind wir durch unsere physischen Fähigkeiten und die Gesetze der Natur eingeschränkt.
+**Die physische Welt ist eines der Atome und der Physik.** Wir verwenden unsere Sinne, um Entscheidungen zu treffen, indem wir das seit Jahren erlernte Verhalten nutzen, um mit Objekten und Personen in unseren Umgebungen zu interagieren. Trotz der Einfachheit dieser Interaktionen sind wir durch unsere physischen Fähigkeiten und die Gesetze der Natur eingeschränkt.
 
-**Die digitale Welt ist eine von Bits und Logik.** Berechnungen werden sofort durchgeführt, während Informationen mühelos verteilt werden können. Trotz der Geschwindigkeit und des Informationsflusses sind Interaktionen zu häufig auf kleine Bildschirme, abstrakte Eingaben und Laute Feeds beschränkt.
+**Die digitale Welt ist eine von Bits und Logik.** Berechnungen werden sofort durchgeführt, während Informationen mühelos verteilt werden können. Trotz der Geschwindigkeit und des Informationsflusses sind Interaktionen zu oft auf kleine Bildschirme, abstrakte Eingaben und verrauschte Feeds beschränkt.
 
-![Holostudio](images/holostudio-450px.jpg)<br>
-*Holostudio*
+![HoloStudio](images/holostudio-450px.jpg)<br>
+*HoloStudio*
 
-Was geschieht, wenn wir die Vorteile der physischen und digitalen Welt kombinieren könnten? Dies ist der Grund für das Spektrum der gemischten Realität: ein Mittel, bei dem die physische und die digitale Zusammenarbeit vorhanden sind und nahtlos interagieren. Die Kombination dieser Welten bildet eine neue Grundlage für die Interaktion mit der Technologie – eine Entwicklung bei der persönlichen Verarbeitung.
+Was wäre, wenn wir die Vorteile der physischen und digitalen Welt kombinieren könnten? Dies ist der Grundpfeiler der Erfahrungen im gesamten Spektrum von Mixed Reality: ein Medium, auf dem physische und digitale Daten nebeneinander existieren und nahtlos interagieren. Die Kombination dieser Welten bildet eine neue Grundlage für die natürlichere Interaktion mit Technologie – einer Weiterentwicklung des Personal Computing.
 
-Das Spektrum der gemischten Realität ist Explodierter, da Entwickler mit der Untersuchung der Möglichkeiten für das Eintauchen und die Anwesenheit begonnen haben. Mit immersiven (Virtual Reality) Erfahrungen und der Erstellung digitaler Objekte in der physischen Welt mit Holographic (Augmented Reality)-Umgebungen in der digitalen Welt. Aber welche Vorteile bietet die Zuordnung der physischen Welt zur digitalen Welt? Was geschieht, wenn wir den Computern Augen sehen?
+Das Spektrum von Mixed Reality ist explodiert, als Entwickler damit begonnen haben, die Möglichkeiten von Immersion und Präsenz zu untersuchen. Integrieren von Benutzern in die digitale Welt mit immersiven Erfahrungen (Virtual Reality) und Erstellen digitaler Objekte in der physischen Welt mit holografischen (Augmented Reality)-Erfahrungen. Aber welche Vorteile bietet die Zuordnung der physischen Welt zur digitalen Welt? Was geschieht, wenn wir Computern Augen zum Sehen geben?
 
-Die grundlegende Technologie der Kamera Vision hinter holograms verhält sich wie ein Augen Paar für den Computer, um die Umgebung zu sehen: Objekte auf der Welt, Personen, die Sie durchlaufen. Ein digitales Verständnis ihres Kontexts in der physischen Welt. Dies führt zu einer enormen Menge an Informationen, die Auswirkungen, die wir erst verstehen.
+Die grundlegende Kamerabildtechnologie hinter Hologrammen verhält sich wie ein Augenpaar für den Computer, um die Umgebung um Sie herum zu sehen: Objekte in der Welt, Menschen um Sie herum, ändern sich, sobald sie eintreten. Ein digitales Verständnis Ihres Kontexts in der physischen Welt. Dies führt zu einer enormen Menge an Informationen, deren Auswirkungen wir erst zu verstehen beginnen.
 
-### <a name="culminating-core-technologies"></a>Die wichtigsten Technologien
+### <a name="culminating-core-technologies"></a>Vererenden von Kerntechnologien
 
-Das berechnen ist zu oft ein wichtiger Punkt. Wir freuen uns auf unsere Geräte, um Ihnen mitzuteilen, wer und was wir wollen. Wir halten unsere Meinung vor und passen uns an, was wir sagen, um zu erfahren, was wir glauben, dass der Computer zu hören ist.
+Computing ist zu oft ein konkretes Ding. Greifen Sie auf unsere Geräte, um ihnen mitzuteilen, wer wir sind und was wir möchten. Unsere Überlegungen verfälschen und das Gesagte an das ausrichten, was wir glauben, dass der Computer hören muss.
 
-Das Versprechen gemischter Realität, insbesondere in der realen Welt mit Holographic-Erfahrungen, besteht darin, den Aufwand für die Interaktion mit der Technologie zu verringern. Verringern der kognitiven Belastung, wenn Benutzer die Schichten der Abstraktion navigieren, die heute für die Computerverarbeitung inhärent sind Wie können wir Oberflächen entwerfen, die nicht nur von kontextbezogenen Informationen profitieren, sondern es einfacher machen, Einblicke zu gewinnen und Maßnahmen zu ergreifen? Zwei zugehörige Technologien versuchen auch, dieses Problem zu lösen:
-* **Stimme** in Bezug auf Sprache und Konversation ermöglicht es Benutzern, über natürlichere Weise mit Computern zu kommunizieren – indem Sie Bots durch Text beantworten oder Befehle für die Konversations Hardware ausgeben.
-* **Ki** ist eine Strom Umgebung, die aus immer komplexeren Datasets Einblicke gibt. Obwohl es sich bei AI um ein riesiges Thema handelt, hat der aktuelle Fortschritt die Grundlage für Geräte, die sich auf Maschinelles sehen, natürlicheren digitalen Assistenten und das empfehlen von Aktionen für Benutzer stützen.
+Das Potenzial von Mixed Reality, insbesondere in der realen Welt mit holografischen Erfahrungen, besteht darin, die Belastung der Interaktion mit Technologie zu verringern. Reduzieren der kognitiven Last, während Benutzer durch die Abstraktionsebenen navigieren, die dem Computing heute inhärent sind. Wie können wir Benutzererfahrungen entwerfen, die nicht nur kontextbezogenes Verständnis nutzen, sondern es einfacher machen, Erkenntnisse zu gewinnen und Maßnahmen zu ergreifen? Außerdem versuchen zwei technologien, dieses Problem zu lösen:
+* **Spracherkennung** und Konversation ermöglichen es Benutzern, auf natürlichere Weise mit Computern zu kommunizieren– bots per Text zu beantworten oder Befehle an Konversationshardware auszugeben.
+* **KI** macht Erfahrungen aus, die Erkenntnisse aus zunehmend komplexen Datasets gewinnen. Obwohl KI ein enormes Thema ist, hat der aktuelle Fortschritt die Grundlage für Geräte bereitgestellt, die auf dem Computerbild basieren, natürlichere digitale Assistenten und empfehlungen für Benutzeraktionen.
 
-Gemischte Realität bietet ein Mittel, um diese Technologien zu einer einzelnen Benutzer Darstellung zu kombinieren. Voice wird zu einer leistungsstarken, natürlichen Methode für Eingaben, wenn ein Holographic-Headset durch tragen wird. AI fungiert als kritische Chiffre, um die enormen Mengen von Informationen, die die physische und digitale Welt verbinden, zu kontextualisieren. Daher bezieht sich Sataya NADELLA auf hololens als "Ultimate Computer", und es handelt sich um ein gekulteres Gerät für drei Kerntechnologien. Eine Plattform, die es den Benutzern erleichtert, mit der wachsenden Komplexität von Geräten und Diensten zu interagieren.
+Mixed Reality bietet ein Medium, um diese Technologien in einer einzigen Benutzererfahrung zu kombinieren. Die Stimme wird zu einer leistungsstarken, natürlichen Methode für die Eingabe, wenn sie ein holografisches Headset verwendet. KI fungiert als kritische Verschlüsselung, um die enormen Mengen an Informationen zu kontextualisieren, die die physische und digitale Welt verbinden. Aus diesem Grund bezieht sich Satray Nadella auf HoloLens als "ultimate computer". Es handelt sich hierbei um ein anspruchsvolles Gerät für drei Kerntechnologien. Eine Plattform, mit der Menschen einfacher mit der zunehmenden Komplexität von Geräten und Diensten interagieren können.
 
-### <a name="less-interface-in-your-face"></a>Weniger Schnittstelle in ihrer Oberfläche
+### <a name="less-interface-in-your-face"></a>Weniger Schnittstelle im Gesicht
 
-Ein gekulteres Gerät, das eine Verbindung zwischen der physischen Welt und der digitalen Welt herstellt, ermöglicht uns das Entwerfen von Benutzeroberflächen, die auf natürliche Weise und ohne mühselig Sehen Sie sich die Erfahrungen an, die Sie erstellt haben: Wenn die Barrieren der Abstraktion entfernt werden, wie viel an ihrer Schnittstelle verbleiben? Welche Teile des App-Flows ändern sich, wenn Sie den Benutzer und seinen Kontext kennen? Wie viele Menüs und Schaltflächen bleiben bestehen?
+Ein anspruchsvolles Gerät, das die physische Welt mit der digitalen Welt verbindet, ermöglicht uns das Entwerfen von Erfahrungen, die natürlicher und ohne umständliche Abstraktionen passen. Betrachten Sie die Erfahrungen, die Sie erstellt haben: Wie viel von Ihrer Schnittstelle bleibt übrig, wenn die Abstraktionsbarrieren entfernt werden? Welche Teile Ihres App-Flows ändern sich, wenn Sie den Benutzer und dessen Kontext kennen? Wie viele Menüs und Schaltflächen verbleiben?
 
-Nehmen wir beispielsweise an, dass die gemeinsame Umgebung in gemischter Realität aussieht Anstatt ein System zum Betrachten von Martian-Daten (abstrahieren der Daten auf Bildschirme oder anzeigen) zu entwickeln, haben Sie Analysten in den Daten zusammengestellt und diese bei der Zusammenarbeit auf der Mars-Oberfläche abgelegt.
+Stellen Sie sich beispielsweise gemeinsame Erfahrungen in Mixed Reality vor, z.B. das Jet-Labor der NASA für Forscher. Anstatt ein System zu erstellen, um martische Daten zu betrachten (abstrahieren der Daten auf Bildschirmen oder Bildschirmen), haben sie Diener in die Daten aufgenommen und sie während der Zusammenarbeit effektiv auf der Marsoberfläche ablegt.
 
-![NASA onsight](images/nasa-onsight.jpg)<br>
-*NASA/JPL onsight*
+![NASA OnSight](images/nasa-onsight.jpg)<br>
+*NASA/JPL OnSight*
 
-Anstatt die Schaltfläche zu finden, um die Aufmerksamkeit auf eine martische Geologie zu lenken, können Wissenschaftler direkt darauf verweisen. Keine Menüs, keine Stifte, keine Lernkurve zur effektiven Verwendung des Tools. Durch die Nutzung unserer bekannten Fähigkeiten aus der physischen Welt können natürlichere Interaktionen in gemischter Realität eine umfassende technische Alphabetisierung in den fortschrittlichsten Industrie Tools umgehen.
+Anstatt die Schaltfläche zu finden, um die Aufmerksamkeit auf eine Martian-Geologie zu lenken, können Forscher direkt darauf zeigen. Keine Menüs, keine Stifte, keine Lernkurve zur effektiven Verwendung des Tools. Durch die Nutzung unserer bekannten Fähigkeiten aus der physischen Welt können natürlichere Interaktionen in Mixed Reality selbst in den fortgeschrittensten Branchentools tiefe technische Fähigkeiten umgehen.
 
-Ebenso können Sprach-und Ki-Interaktionen die natürliche Interaktion in dieser Weise erweitern. Wenn digitale Assistenten in der Welt rund um die Welt sehen können, werden die Konversationen weniger mühsam. Ein bot in der NASA-Tool extrahiert möglicherweise Kontext von den Analysten, die die Martian-Geologie übertragen, und fungiert als bereite (und Konversations-) Informationsquelle, wenn sich die Forscher angesten und Fragen zu "This" oder "This" stellen. Ein Computer, der ihren Kontext kennt, kann mit den für Sie geeigneten Informationen über eine Interaktions Methode, die am besten zu ihrem Kontext geeignet ist, springen.
+Ebenso können Stimme und KI die natürliche Interaktion auf diese Weise erweitern. Wenn digitale Assistenten die Welt um uns herum "sehen" können, werden Sich die Konversationen weniger umständlich anfühlen. Ein Bot im NASA-Tool kann Kontext von den Wissenschaftlern extrahieren, die sich für die Martian-Geologie interessieren und als bereite (und konversationsbereite) Informationsquelle fungieren, wenn Dies oder "das" von Denk- und Fragezeichen durch Dies geschieht. Ein Computer, der Ihren Kontext kennt, kann über eine für Ihren Kontext am besten geeignete Interaktionsmethode mit für Sie geeigneten Informationen springen.
 
-### <a name="building-on-a-foundation"></a>Aufbauen auf Grundlage einer Grundlage
+### <a name="building-on-a-foundation"></a>Aufbauen auf einer Grundlage
 
-In dieser Welt der kontextbezogenen Oberflächen ist die Bewirtung der Mobilität des Benutzers ein wichtiger Punkt. Durch den reibungslosen Übergang zwischen Geräten und Diensten und stark personalisierten Kontexten werden die Benutzer über die physische Welt nahtlos unterwegs – das Erstellen einer *großen* Platt Form Herausforderung. Wenn die physische Welt ein digitaler Endpunkt wird, herrscht Interoperabilität.
+In dieser Welt der kontextbezogenen Erfahrungen ist die Mobilität des Benutzers entscheidend. Bei der nahtlosen Bewegung zwischen Geräten und Diensten mit hochgradig personalisierten Kontexten werden Benutzer nahtlos durch die physische Welt reisen, wodurch eine *große* Herausforderung für die Plattform entsteht. Wenn die physische Welt zu einem digitalen Endpunkt wird, wird die Interoperabilität zu einem Übergreifenden.
 
 
-> *"Durch die Zusammenführung des digitalen Universums und der physischen Welt wird das menschliche Potenzial entsperrt... ermöglichen Sie allen Personen und Organisationen auf der ganzen Welt, mehr zu erreichen. "*<br>
-> – Satya NADELLA
+> *"Die Zusammenführung des digitalen Und der physischen Welt wird menschliches Potenzial... ermöglichen, dass jede Person und Organisation auf der Welt mehr erreichen kann."*<br>
+> – Satya Nadella
 
-Windows Mixed Reality ist ein Versuch, eine Plattform für ein Ökosystem von Geräten zu erstellen, mit der Entwickler immersive, kostengünstige und kompatible Umgebungen für die größtmögliche Zielgruppe erstellen können. Die Zukunft wird nicht auf einen einzelnen Hersteller beschränkt, sondern auf ein einzelnes Gerät. Headsets, Mobile Geräte, PCs, Zubehör... Alle diese physischen Dinge müssen über eine zugrunde liegende Plattform zusammenarbeiten (und digitale Dinge wie Diagramme und Dienste), um die Zusage gemischter Realität erfolgreich umsetzen zu können.
+Windows Mixed Reality ist ein Versuch, eine Plattform für ein Ökosystem von Geräten zu schaffen, sodass Entwickler immersive, kostengünstige und kompatible Umgebungen für eine möglichst große Zielgruppe erstellen können. Die Zukunft wird nicht auf einen einzelnen Hersteller beschränkt sein, ganz zu vergessen auf ein einzelnes Gerät. Headsets, mobile Geräte, PCs, Zubehör... all diese physischen Dinge müssen über eine zugrunde liegende Plattform zusammenarbeiten (sowie digitale Dinge wie Graphen und Dienste), um das Potenzial von Mixed Reality zu erfüllen.
 
-## <a name="designing-for-tomorrows-experiences-today"></a>Der Entwurf für die Erfahrungen von morgen heute
+## <a name="designing-for-tomorrows-experiences-today"></a>Entwerfen für die heutigen Erfahrungen von morgen
 
-![Der Entwurf für die Erfahrungen von morgen heute](images/designing-for-tomorrows-experiences-today-450px.jpg) 
+![Entwerfen für die heutigen Erfahrungen von morgen](images/designing-for-tomorrows-experiences-today-450px.jpg) 
 <br>
-Jede der Kerntechnologien hinter dieser neuen Benutzeroberfläche ermöglicht Entwicklern und Entwicklern das Erstellen von überzeugenden und erfolgreichen Erfahrungen heute. Durch die Reduzierung der Abstraktion können wir direkt mit der digitalen Welt interagieren, sodass wir so entwerfen können, dass die Benutzerfähigkeiten erweitert und verstärkt werden. Mit der Sprachtechnologie (durch Bots und digitale Assistenten wie Cortana) können Benutzer immer komplexere Konversationen und Szenarios durchführen, während Ki-Technologie (durch Tools wie Microsoft Cognitive Services) die Interaktion der Benutzer mit sämtlicher Interaktion zwischen sozialen Medien und Supply Chain Management überdenken soll.
+Jede der Kerntechnologien hinter dieser neuen Klasse von Erfahrungen ermöglicht Es Designern und Entwicklern, heute überzeugende und erfolgreiche Erfahrungen zu erstellen. Indem wir die Abstraktion reduzieren, können wir direkter mit der digitalen Welt interagieren, sodass wir so entwerfen können, dass menschliche Fähigkeiten erweitert und verstärkt werden. Sprachtechnologie (über Bots und digitale Assistenten wie Cortana) ermöglicht Es Benutzern, immer komplexere Konversationen und Szenarien durchzuführen, während KI-Technologie (über Tools wie Microsoft Cognitive Services) Unternehmen dazu veranlasst, zu überlegen, wie Benutzer mit allem interagieren, von sozialen Medien bis hin zur Lieferkettenverwaltung.
 
-Diese Arten von Interaktionen basieren sowohl auf einer neuen Klasse von Entwurfs Tools als auch auf grundlegender Unterstützung der Plattform. Wenn Sie diese Tools erstellen und diese Plattform für Geräte und Dienste erstellen, müssen Sie verstehen, wie die Erfahrungen von morgen realen, konkreten Problemen lösen werden. Wir haben fünf Verkaufschancen identifiziert, bei denen unsere Unternehmenspartner wertvolle Lösungen bereitgestellt haben und wir glauben, dass die fortgesetzten Investitionen uns bei der Vorbereitung auf diese neue Klasse von Computing helfen. 
+Diese Arten von Interaktionen basieren sowohl auf einer neuen Klasse von Entwurfstools als auch auf grundlegender Unterstützung von der Plattform. Das Erstellen dieser Tools und die Erstellung dieser Plattform für Geräte und Dienste basiert darauf, zu verstehen, wie die Erfahrungen von morgen echte, konkrete Probleme lösen werden. Wir haben fünf Bereiche identifiziert, in denen unsere Unternehmenspartner wertvolle Lösungen bereitgestellt haben und in denen wir der Meinung sind, dass weitere Investitionen uns bei der Vorbereitung auf diese neue Computingklasse unterstützen werden. 
 
-## <a name="areas-of-opportunity"></a>Verkaufschancen
+## <a name="areas-of-opportunity"></a>Verkaufschancenbereiche
 
-Das vergangene Jahr der Entwickler Partnerschaften hat die Bereiche der Gelegenheit aufgezeigt, die mit Kunden in Einklang treten und erfolgreiche Unternehmenslösungen erstellen. Von Wissenschaftlern und Technikern bis hin zu Designern und Clients haben sich fünf Verkaufschancen ergeben, in denen Microsoft-Partner einen Wert mit gemischter Realität finden. Diese Bereiche bieten bereits einen großen Einblick in die zukünftigen Anforderungen von Plattformen wie Windows Mixed Reality und können Ihnen dabei helfen zu verstehen, wie sich diese neuen Erfahrungen auf die Art und Weise auswirken, in der wir lernen, zusammenarbeiten, kommunizieren und erstellen.
+Im letzten Jahr der Entwicklerpartnerschaften wurden Bereiche mit Möglichkeiten entdeckt, die kundenresoniert sind und erfolgreiche Unternehmenslösungen erstellen. Von Experten und Technikern bis hin zu Designern und Kunden haben sich fünf Bereiche der Möglichkeiten ergeben, in denen Microsoft-Partner mit Mixed Reality einen Mehrwert finden. Diese Bereiche bieten bereits umfangreiche Einblicke in die zukünftigen Anforderungen von Plattformen wie Windows Mixed Reality und können Ihnen helfen zu verstehen, wie sich diese neuen Erfahrungen auf die Art und Weise auswirken, wie wir lernen, zusammenarbeiten, kommunizieren und erstellen.
 
-### <a name="1-creation-and-design"></a>1. erstellen und entwerfen
+### <a name="1-creation-and-design"></a>1. Erstellung und Entwurf
 
-Eine der wichtigsten Möglichkeiten der gemischten Realität ist die Möglichkeit, 3D-Entwürfe in Echtzeit zu sehen und zu bearbeiten, und zwar in einer realen Umgebung mit echter Größe und Skalierung. Entwurfs-und prototyptools haben die Begrenzungen der Bildschirme mit Escapezeichen versehen und werden zu einem Entwurfs Bereich zurückgekehrt, der in der Regel für konkrete, physische Materialien wie z
+Eine der wichtigsten Möglichkeiten von Mixed Reality ist die Möglichkeit, 3D-Entwürfe in Echtzeit in einer realen Umgebung mit echter Größe und Skalierung zu sehen und zu bearbeiten. Design- und Prototyptools haben die Grenzen von Bildschirmen verlassen und kehren zu einem Designbereich zurück, der in der Regel für konkrete, physische Materialien wie Wood und Materials reserviert ist.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/Hx6biWE2VsM]
 
-[Autodesk](https://www.youtube.com/watch?v=Hx6biWE2VsM) hat eine gemischte Realität entwickelt, die die Zusammenarbeit im gesamten Produkt Entwicklungsprozess verbessern soll. Die Fähigkeit von Technikern und Designern, 3D-Modelle in Ihrer Umgebung zu untersuchen und zu kritisieren, ermöglichte es Ihnen, einen Entwurf in Echtzeit zu durchlaufen. Dies hat nicht nur das schnellere Prototypen ermöglicht, sondern Sie hat noch mehr Vertrauens sicherere Entscheidungen im Prozess ermöglicht.
+[Autodesk](https://www.youtube.com/watch?v=Hx6biWE2VsM) hat eine Mixed Reality-Erfahrung entwickelt, um die Zusammenarbeit im gesamten Produktentwicklungsprozess zu verbessern. Dank der Fähigkeit von Technikern und Designern, 3D-Modelle in ihrer Umgebung zu befragen und zu entwickeln, konnten sie einen Entwurf in Echtzeit iterieren. Dies ermöglichte nicht nur eine schnellere Prototyperstellung, sondern führte auch zu zuverlässigeren Entscheidungen im Prozess.
 
-Diese Oberfläche hat den Bedarf an Kern Zusammenarbeits Umgebungen, die Möglichkeit für Benutzer, freigegebene Objekte anzuzeigen und mit Ihnen zu kommunizieren. Das Ziel von Autodesk besteht darin, das Produkt von Design Professional und Technikern zu digitalen Künstlern, Studenten und Hobby Entwicklern zu erweitern. Wenn die Ebene der 3D-Fachkenntnisse von Benutzern abnimmt, ist die Möglichkeit, mit Objekten zu interagieren, von entscheidender Bedeutung.
+Solche Erfahrungen verdeutlichen die Notwendigkeit von Zentralen Zusammenarbeitserfahrungen und die Möglichkeit für Benutzer, freigegebene Objekte anzuzeigen und mit ihnen zu kommunizieren. Autodesks Ziel ist es, das Produkt von Designprofis und -technikern bis zu digitalen Architekten, Studenten und Lehrern zu erweitern. Wenn das Maß an 3D-Kenntnissen der Benutzer abnimmt, wird die Fähigkeit, mit Objekten zu interagieren, von Natur aus entscheidend.
 
 ### <a name="2-assembly-and-manufacturing"></a>2. Assembly und Fertigung
 
-Von der wachsenden Menge an Spezialisierung auf Werk Werken bis hin zu den schnellen Verbesserungen von Supply Chain Management ist der nahtlose Zugriff auf relevante Informationen der Schlüssel. Gemischte Realität bietet die Möglichkeit, umfangreiche Datasets zu synthetisieren und visuelle anzeigen bereitzustellen, die in Bereichen wie Navigation und Betrieb helfen. Dabei handelt es sich häufig um sehr technische, Nische Felder, in denen die Integration in benutzerdefinierte Datasets und Dienste entscheidend ist, um die Komplexität zu reduzieren
+Von der zunehmenden Spezialisierung auf Fabrikflächen bis zu den schnellen Fortschritten bei der Lieferkettenverwaltung ist der nahtlose Zugriff auf relevante Informationen von entscheidender Bedeutung. Mixed Reality bietet die Möglichkeit, umfangreiche Datensätze zu synthetisieren und visuelle Anzeigen zu bieten, die in Bereichen wie Navigation und Vorgängen helfen. Hierbei handelt es sich häufig um äußerst technische Felder, bei denen die Integration in benutzerdefinierte Datasets und Dienste entscheidend ist, um die Komplexität zu reduzieren und eine erfolgreiche Benutzererfahrung zu ermöglichen.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/8OWhGiyR4Ns]
 
-Der Lift-Hersteller [ThyssenKrupp](https://www.youtube.com/watch?v=8OWhGiyR4Ns) hat eine Funktion für die Dienst Techniker von Lift Services entwickelt, mit denen Sie Probleme bei der Vorbereitung eines Auftrags visualisieren und identifizieren können. Mit einem Team, das mehr als 24.000 Techniker umfasst, ermöglichen Geräte wie hololens diesen Technikern den Remote Zugriff auf technische und Expertendaten.
+Der [Aufzugshersteller Durchzugshersteller Hat](https://www.youtube.com/watch?v=8OWhGiyR4Ns) hat ein Erlebnis für Aufzugdiensttechniker erstellt, mit dem sie Probleme bei der Vorbereitung auf einen Auftrag visualisieren und identifizieren können. Mit einem Team, das mehr als 24.000 Techniker umfasst, ermöglichen Geräte wie HoloLens diesen Technikern den remoten, freihenden Zugriff auf technische und expertenspezifische Informationen.
 
-ThyssenKrupp stellt hier ein leistungsfähiges Konzept dar, dass wichtige, Kontext relevante Informationen schnell an Benutzer übermittelt werden können. Wenn wir uns mit einer neuen Benutzeroberfläche beschäftigen, sind die Daten, die für den Benutzer relevant sind, sehr wichtig.
+Dabei wird ein leistungsstarkes Konzept verdeutlicht, mit dem wichtige, kontextbezogene Informationen schnell an Benutzer übermittelt werden können. Wenn wir auf eine neue Klasse von Erfahrungen blicken, ist es entscheidend, große Mengen möglicher Informationen auf Inhalte zu bringen, die für den Benutzer relevant sind.
 
-### <a name="3-training-and-development"></a>3. Schulung und Entwicklung
+### <a name="3-training-and-development"></a>3. Training und Entwicklung
 
-Das darstellen von Objekten und Informationen in drei Dimensionen bietet neue Möglichkeiten, Szenarios visuell und mit räumlichem Verständnis zu erläutern. Das Training wird zu einem zentralen Bereich der Verkaufschance und bietet die Möglichkeit, riesige, komplexe Objekte (wie Jet-Engines) Digital darzustellen, um Schulungs Simulationen für einen Bruchteil der Kosten einer physischen Lösung zu erstellen.
+Die Darstellung von Objekten und Informationen in drei Dimensionen bietet neue Möglichkeiten, Szenarien visuell und mit räumlichem Verständnis zu erklären. Training wird zu einem wichtigen Bereich der Verkaufschance, indem die Möglichkeit genutzt wird, riesige komplexe Objekte (z. B. Jet-Engines) digital darstellen zu können, um Trainingssimulationen für einen Bruchteil der Kosten einer physischen Lösung zu erstellen.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/GjZgI2oDcwM]
 
-[Japan Airlines](https://www.youtube.com/watch?v=GjZgI2oDcwM&t=158s) hat mit Konzept Programmen experimentieren, um zusätzliche Schulungen für Engine-Mechanismen und Flugbesatzungen bereitzustellen. Die großen Jet-Engines (sowohl in Größe als auch in Komplexität) können in 3D dargestellt werden, wobei die Einschränkungen der physischen Welt ignoriert werden, um virtuelle Objekte um die Auszubildenden zu verschieben und zu rotieren. so können Sie sehen, wie Fluggesellschaften in Echtzeit funktionieren.
+[Japan Hat mit](https://www.youtube.com/watch?v=GjZgI2oDcwM&t=158s) Konzeptprogrammen experimentiert, um zusätzliche Schulungen für Triebwerke und Flugpersonal zu bieten. Die riesigen Jet-Engines (sowohl in Der Größe als auch in der Komplexität) können in 3D dargestellt werden. Dabei werden die Einschränkungen der physischen Welt zum Verschieben und Drehen virtueller Objekte um Diebe ignoriert, sodass sie sehen können, wie Fluglinienkomponenten in Echtzeit funktionieren.
 
-Das Training mit virtuellen Komponenten (und die Reduzierung der Notwendigkeit von teuren, physischen Schulungssimulatoren) ist eine wichtige Methode, um heute einen Wert in Unternehmens Szenarios bereitzustellen. Wenn dieses Szenario erweitert wird (wie wir in Bereichen wie "Medizin" gesehen haben), ist das Maschinelles Sehen besonders wichtig, um eindeutige Objekte in der Umgebung zu erkennen, den Kontext des Benutzers zu verstehen und relevante Anweisungen zu liefern.
+Das Training mit virtuellen Komponenten (und das Reduzieren des Bedarfs an teuren, physischen Trainingssimulatoren) ist eine wichtige Möglichkeit, um heute einen Mehrwert in Unternehmensszenarien zu bieten. Wenn dieses Szenario erweitert wird (wie wir es in Bereichen wie der Medizin gesehen haben), wird das sehende Sehen besonders wichtig, um eindeutige Objekte in der Umgebung zu erkennen, den Kontext des Benutzers zu verstehen und relevante Anweisungen zu liefern.
 
 ### <a name="4-communication-and-understanding"></a>4. Kommunikation und Verständnis
 
-Interaktionen zwischen zwei Personen (unabhängig davon, ob beide Teilnehmer in gemischten Reality-Geräten oder einer auf einem herkömmlichen PC oder Telefon vorhanden sind), können einen Einblick in eine neue Umgebung oder eine Vorstellung von Präsenz bieten, wenn Sie praktisch mit anderen kommunizieren. In Unternehmens Szenarios ist dieser Einblick in Mobile Teams ein Segen für Mobile Teams, um das Verständnis von Projekten zu verbessern und den Bedarf an Reisen zu verringern.
+Interaktionen zwischen zwei Personen (unabhängig davon, ob sich beide Teilnehmer auf Mixed Reality-Geräten befinden oder eine auf einem herkömmlichen PC oder Smartphone ausgeführt wird) können sowohl ein Gefühl der Eindrung innerhalb einer neuen Umgebung als auch ein Gefühl der Präsenz bei der kommunikation mit anderen bieten. In Unternehmensszenarien ist dieses Gefühl der Präsenz für mobile Teams ein Boolescher Wert, der dazu beitruge, das Verständnis von Projekten zu erhöhen und den Bedarf an Reisen zu mindern.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/kXVW4sUsh3A]
 
-Der [kommerzielle Hersteller von](https://www.youtube.com/watch?v=kXVW4sUsh3A) Herstellern entwickelte eine Lösung für die Architektur und Konstruktion von Branchenexperten, die während der Entwicklung arbeiten und die Arbeit überprüfen. Fachleute können sich Remote in ein Projekt einarbeiten, um den Fortschritt zu erörtern oder sich an einem Standort zu orientieren und Pläne zu prüfen, wie Sie (in der endgültigen Form) in der Umgebung herum aussehen würden.
+Der Kommerzielle Technologiehersteller [Trimble](https://www.youtube.com/watch?v=kXVW4sUsh3A) hat eine Lösung für Architektur- und Baubranchenexperten entwickelt, um während der Entwicklung von Gebäudearbeiten zusammenzuarbeiten und die Arbeit zu überprüfen. Experten können sich remote in einem Projekt befinden, um den Fortschritt zu besprechen oder vor Ort zu sein und Pläne zu überprüfen, wie sie (in ihrer endgültigen Form) in der Umgebung um sie herum aussehen würden.
 
-Die gemeinsame Nutzung von Microsoft ist ein wichtiger Investitionsbereich für Microsoft, bei dem apps wie Skype neue Möglichkeiten zur Darstellung von Menschen im digitalen Raum untersuchen. Teams untersuchen volummetric-Videoaufzeichnungen, Avatare und Neuerstellung des physischen Raums eines Teilnehmers.
+Gemeinsame Erfahrungen sind ein wichtiger Investitionsbereich für Microsoft, bei dem Apps wie Skype neue Möglichkeiten erkunden, Menschen im digitalen Raum zu repräsentieren. Teams untersuchen volumetrischen Videoaufzeichnungen, Avatare und Neuaufnahmen des physischen Raums eines Teilnehmers.
 
 ### <a name="5-entertainment-and-engagement"></a>5. Unterhaltung und Engagement
 
-Die Art des Eintretens in gemischter Realität kann sich auf die Art und Weise auswirken, wie Kunden mit Unterhaltung und Marketing zusammenarbeiten. Künstler und Unterhaltungs Studio haben die gemischte Realität als überzeugendes Mittel für das Storytelling erforscht, während Unternehmen die Auswirkungen von Markenmarketing untersuchen. Von Produktdemos in privaten Showrooms bis hin zu den in den Handels Expos gestellten Vision-teilen können Inhalte auf rekursive und maßgeschneiderte Weise bereitgestellt werden.
+Die Art der Immersion in Mixed Reality kann einen enormen Einfluss auf die Art und Weise haben, wie Kunden mit Unterhaltung und Marketing interagieren. Musik- und Unterhaltungsstudios haben Mixed Reality als überzeugendes Medium für das Storying untersucht, während Unternehmen die Auswirkungen auf das Markenmarketing untersuchen. Von Produktdemos in privaten Katalogen bis zu Visionsteilen, die auf Trade Expos gesagt werden, können Inhalte auf immersivere und maßgeschneiderte Weise bereitgestellt werden.
 
 <br>
 
 >[!VIDEO https://www.youtube.com/embed/DilzwF90vec]
 
-Mit Volvo wurde eine benutzerfreundliche Lösung für das präsentieren ihrer neuesten Automodelle (Benutzer in verschiedenen Farben und Konfigurationen) entwickelt, während hervorgehoben wird, wie erweiterte Sensoren funktionieren, um ein besseres, sichereren Fahrverhalten zu erzielen. Wenn Sie die Kunden über einen geführten Ausstellungsbereich nehmen, können Sie die Story hinter dem Feature "Auto Mobil Feature" erzählen und gleichzeitig eine aussagekräftige Darstellung ihrer Marken Story bereitzustellen.
+Durch die Präsentation der neuesten Fahrzeugmodelle (das Ein immering von Benutzern in verschiedenen Farben und Konfigurationen) wurde hervorgehoben, wie fortgeschrittene Sensoren funktionieren, um ein besseres und sichereres Fahrerlebnis zu schaffen. Wenn Sie Kunden durch ein geführtes Fahrerlebnis leiten, können Sie die Geschichte hinter dem neuesten Fahrzeugfeature erzählen und gleichzeitig eine einprägsame Geschichte ihrer Marke liefern.
 
-Unterhaltung ist in vielerlei Hinsicht die Grenzen der gemischten Realität (insbesondere die virtuelle Realität) und vielleicht überzeugendsten in diesem Raum ist die Interaktion mit dem vorherigen Bereich der Verkaufschance: Kommunikation und verstehen. Mit mehreren Benutzern, die jeweils über eine eigene Variante von Geräten und Schnittstellen Methoden verfügen, können Sie sich eine große Zukunft der Personalisierung im Bereich der Unterhaltung vorstellen.
+Unterhaltung geht in vielerlei Hinsicht an die Grenzen von Mixed Reality (insbesondere virtuelle Realität) und ist vielleicht am überzeugendsten in diesem Bereich, wie sie mit dem vorherigen Bereich der Verkaufschance kombiniert wird: Kommunikation und Verständnis. Mit mehreren Benutzern, die jeweils eine eigene Variante von Geräten und Schnittstellenmethoden haben, können Sie sich eine große Zukunft der Personalisierung im Unterhaltungsbereich vorstellen.
 
-## <a name="start-building-today"></a>Heute mit dem Aufbau beginnen
+## <a name="start-building-today"></a>Beginnen Sie noch heute mit der Entwicklung.
 
-Es ist schwierig zu sagen, wie die weitaus Zukunft gemischter Realität für Consumer aussehen wird, sich jedoch auf eindeutige Probleme konzentriert, praktische Hardware zu nutzen und ***heute* mit dem Schnittpunkt zwischen gemischter Realität, Stimme und Ki zu experimentieren**. Microsoft ist erst einmal mit gemischter Realität vertraut, aber das Erlernen der Erfolge, die heute von Unternehmen realisiert werden, hilft Ihnen bei der Erstellung der Erfahrungen von morgen.
+Es ist schwierig zu sagen, wie die ferne Zukunft von Mixed Reality für die Verbraucher aussehen wird, aber die Konzentration auf einzigartige Probleme, die Praktische Arbeit mit echter Hardware und das Experimentieren mit der Schnittmenge zwischen **Mixed Reality,** Stimme und KI ist entscheidend. Microsoft beginnt gerade mit Mixed Reality, aber das Lernen aus den heute von Unternehmen erzielten Erfolgen hilft Ihnen, die Erfahrungen von morgen zu schaffen.
 
-## <a name="next-discovery-checkpoint"></a>Prüfpunkt für nächste Ermittlung
+## <a name="next-discovery-checkpoint"></a>Nächster Erkundungsprüfpunkt
 
-Wenn Sie der [Discovery Journey](../discover/get-started-with-mr.md) folgen, die wir gerade angelegt haben, sind Sie mitten in der Erkundung der Grundlagen von Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
+Wenn Sie der [Erkundungs-Journey](../discover/get-started-with-mr.md) folgen, die wir entworfen haben, befinden Sie sich mitten im Kennenlernen der Grundlagen der Mixed Reality. Von hier aus können Sie mit dem nächsten grundlegenden Thema fortfahren: 
 
 > [!div class="nextstepaction"]
 > [Immersiv, ergonomisch, instinktiv und ungebunden](https://www.microsoft.com//hololens/hardware)
 
-Oder springen Sie in gemischte Realität:
+Oder springen Sie in Mixed Reality grundlegenden Erfahrungen:
 
 > [!div class="nextstepaction"]
 > [Benutzer in einer Wohlfühlzone halten (Komfort)](../design/comfort.md)
 
-## <a name="about-the-author"></a>Zum Autor
+## <a name="about-the-author"></a>Informationen zum Autor
 
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60" padding-left="0px"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Markieren von vitazko</b><br>UX-Designer @Microsoft</td>
+<td style="border-style: none"><b>Mark Sollzko</b><br>UX-Designer @Microsoft</td>
 </tr>
 </table>
  

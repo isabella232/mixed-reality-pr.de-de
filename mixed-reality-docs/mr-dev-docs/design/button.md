@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, Steuerelemente, Interaktion, Benutzeroberfläche, Benutzeroberfläche, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Schaltfläche
-ms.openlocfilehash: ddad8b23950bddd03dd4024497c212d1cc950fb0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Schaltfläche
+ms.openlocfilehash: 602d5b8784c97676e29574e4a5b0ffb7b240f07c2c43bbe68e0f8bc49db9dd1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219318"
 ---
 # <a name="button"></a>Schaltfläche
 
@@ -25,7 +25,7 @@ Mit einer Schaltfläche können Benutzer sofortige Aktionen in einer Mixed Reali
        **Näherungslicht**<br>
     :::column-end:::
     :::column:::
-       ![Ausgewählte Schaltfläche mit hervorgehobener Fokuseffekt](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![Ausgewählte Schaltfläche mit Fokus-Hervorhebungseffekt](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **Fokusmarker**<br>
     :::column-end:::
 :::row-end:::
@@ -46,7 +46,7 @@ Mit einer Schaltfläche können Benutzer sofortige Aktionen in einer Mixed Reali
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>Schaltfläche im MRTK (Mixed Reality Toolkit) für Unity
-**[MRTK für Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet verschiedene Arten von Schaltflächenpräfabs, einschließlich Schaltflächen im Shellstil für HoloLens 2 und HoloLens (1. Generation). Das Prefab der HoloLens 2-Schaltfläche enthält mehrere detaillierte Angebot, die das Vertrauen der Benutzer verbessern:
+**[MRTK für Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet verschiedene Arten von Schaltflächenpräfabs, einschließlich Schaltflächen im Shellstil für HoloLens 2 und HoloLens (1. Generation). Das Prefab HoloLens 2 Schaltfläche enthält mehrere detaillierte Angebot, die das Vertrauen der Benutzer verbessern:
 
 * Näherungsbasierte Hervorhebung
 * Komprimieren von Frontboxen

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 9d960d01e738736edd452a124db5c306b5d752ce
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9e657e0b90f8087670b72c993ab1dcf78ae9e6680873139c6867d7c551a41895
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176128"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220048"
 ---
 # <a name="migration-window"></a>Migrationszeitfenster
 
@@ -19,7 +19,7 @@ Das Migrationsfenster ist ein Tool, mit dem Benutzer automatisch eine Teilmenge 
 
 ![Migrationszeitfenster](../images/migration-window/MRTK_Migration_Window.png)
 
-## <a name="usage"></a>Verwendung
+## <a name="usage"></a>Verbrauch
 
 Um das Fenster zu öffnen, wählen **Sie** Mixed Reality Toolkit Utilities Migration Window  >  **(Migrationsfenster**  >  **für Toolkit-Hilfsprogramme)**  >  **aus.** Sobald das Migrationsfenster geöffnet ist, können die Navigationsregisterkarte für den Auswahlmodus aktiviert werden, indem Sie die komponentenspezifische Implementierung des Migrationshandlers auswählen.  
 
@@ -40,7 +40,7 @@ Ermöglicht dem Benutzer das Ziehen und Ablegen von Szenenobjekten, die zu migri
 
 ![Auswählen von Szenen für die Migration](../images/migration-window/MRTK_Scene_Selection.png)
 
-### <a name="project-mode"></a>Project Modus
+### <a name="project-mode"></a>Project-Modus
 
 Wenn Sie auf *die Schaltfläche* Migrieren klicken, wird die Komponente aktualisiert, auf die die Implementierung des Migrationshandlers für alle Prefabs und Szenen im Projekt ausgerichtet ist.
 

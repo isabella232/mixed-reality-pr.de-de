@@ -1,52 +1,52 @@
 ---
-title: Schreiben einer Holographic Remoting-Remote-app (WMR)
-description: Erfahren Sie, wie Sie Remote Inhalt, der auf einem Remote Computer gerendert wird, mit Holographic Remoting-apps mit holographicspace in hololens 2 streamen.
+title: Schreiben einer Holographic Remoting-Remote-App (WMR)
+description: Erfahren Sie, wie Sie Remoteinhalte, die auf einem Remotecomputer gerendert wurden, mit Holographic Remoting-Apps mit HolographicSpace an HoloLens 2 streamen.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Hololens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, nuget
-ms.openlocfilehash: 6884c2679b155c36a21bcf89352524e4957a9f20
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens, Remoting, Holographic Remoting, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, NuGet
+ms.openlocfilehash: 0d8f7149533de7f3f095761b13feeb91c319cda711c99b9101a13300a591fc2c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219214"
 ---
-# <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Schreiben einer Holographic Remoting-Remote-App mithilfe der holographicspace-API
+# <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>Schreiben einer Holographic Remoting-Remote-App mithilfe der HolographicSpace-API
 
 >[!IMPORTANT]
->In diesem Dokument wird die Erstellung einer Remote Anwendung für hololens 2 mithilfe der [holographicspace-API](../native/getting-a-holographicspace.md)beschrieben. Für Remote Anwendungen für **hololens (1st Gen)** muss das nuget-Paketversion **1. x. x** verwendet werden. Dies bedeutet, dass für hololens 2 geschriebene Remote Anwendungen nicht mit hololens 1 und umgekehrt kompatibel sind. Die Dokumentation für hololens 1 finden Sie [hier](add-holographic-remoting.md).
+>In diesem Dokument wird die Erstellung einer Remoteanwendung für HoloLens 2 mithilfe der [HolographicSpace-API](../native/getting-a-holographicspace.md)beschrieben. Remoteanwendungen für **HoloLens (1. Generation)** müssen NuGet Paketversion **1.x.x** verwenden. Dies bedeutet, dass Remoteanwendungen, die für HoloLens 2 geschrieben wurden, nicht mit HoloLens 1 kompatibel sind und umgekehrt. Die Dokumentation für HoloLens 1 finden Sie [hier.](add-holographic-remoting.md)
 
-Holographic Remoting-Apps können per Remote Zugriff gerenderten Inhalt in hololens 2-und Windows Mixed Reality-immersive Headsets streamen. Sie können auch [auf](../../design/app-views.md) weitere Systemressourcen zugreifen und die in vorhandene Desktop-PC-Software integrieren. Eine Remote-app empfängt einen Eingabedaten Strom von hololens 2, rendert Inhalte in einer virtuellen immersiven Ansicht und streamt Inhalts Frames zurück an hololens 2. Die Verbindung wird mithilfe von Standard-Wi-Fi hergestellt. Holographic-Remoting wird mithilfe eines nuget-Pakets zu einer Desktop-oder UWP-app hinzugefügt. Zusätzlicher Code ist erforderlich, der die Verbindung verarbeitet und in einer immersiven Ansicht rendert. Eine typische remotingverbindung verfügt über bis zu 50 ms Latenzzeit. Die Player-App kann die Latenzzeit in Echtzeit melden.
+Holographic Remoting-Apps können per Remotezugriff gerenderte Inhalte an HoloLens 2 und Windows Mixed Reality immersive Headsets streamen. Sie können auch auf weitere Systemressourcen zugreifen und [immersive Remoteansichten](../../design/app-views.md) in vorhandene Desktop-PC-Software integrieren. Eine Remote-App empfängt einen Eingabedatenstrom von HoloLens 2, rendert Inhalte in einer virtuellen immersiven Ansicht und streamt Inhaltsframes zurück an HoloLens 2. Die Verbindung wird mithilfe von Standard-WLAN hergestellt. Holographic Remoting wird einer Desktop- oder UWP-App über ein NuGet Paket hinzugefügt. Es ist zusätzlicher Code erforderlich, der die Verbindung verarbeitet und in einer immersiven Ansicht rendert. Eine typische Remotingverbindung hat eine Latenz von bis zu 50 ms. Die Player-App kann die Latenz in Echtzeit melden.
 
-Sämtlicher Code auf dieser Seite und in den Arbeitsprojekten finden Sie im [GitHub-Repository "Holographic Remoting Samples](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)".
+Den gesamten Code auf dieser Seite und funktionierende Projekte finden Sie im [GitHub-Repository für Holographic Remoting-Beispiele.](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Ein guter Ausgangspunkt ist eine funktionierende DirectX-basierte Desktop-oder UWP-APP, die auf die [holographicspace-API](../native/getting-a-holographicspace.md)abzielt. Weitere Informationen finden Sie unter [Übersicht über die DirectX-Entwicklung](../native/directx-development-overview.md). Die [Projektvorlage C++ Holographic](../native/creating-a-holographic-directx-project.md) ist ein guter Ausgangspunkt.
+Ein guter Ausgangspunkt ist eine funktionierende DirectX-basierte Desktop- oder UWP-App, die auf die [HolographicSpace-API](../native/getting-a-holographicspace.md)ausgerichtet ist. Weitere Informationen finden Sie unter [Übersicht über die DirectX-Entwicklung.](../native/directx-development-overview.md) Die [holografische C++-Projektvorlage](../native/creating-a-holographic-directx-project.md) ist ein guter Ausgangspunkt.
 
 >[!IMPORTANT]
->Jede APP, die Holographic Remoting verwendet, sollte für die Verwendung eines [Multithread-Apartment](/windows/win32/com/multithreaded-apartments)erstellt werden. Die Verwendung eines [Single Thread-Apartment](/windows/win32/com/single-threaded-apartments) wird unterstützt, führt jedoch zu einer nicht optimalen Leistung und kann während der Wiedergabe möglicherweise zu einem stutor werden. Bei Verwendung von C++/WinRT [WinRT:: init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) ist ein Multithread-Apartment der Standard.
+>Jede App, die Holographic Remoting verwendet, sollte so erstellt werden, dass sie ein [Multithread-Apartment](/windows/win32/com/multithreaded-apartments)verwendet. Die Verwendung eines [Singlethread-Apartments](/windows/win32/com/single-threaded-apartments) wird unterstützt, führt aber zu einer suboptimalen Leistung und möglicherweise zu einem Stubing während der Wiedergabe. Bei Verwendung von C++/WinRT [winrt::init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) ist ein Multithread-Apartment die Standardeinstellung.
 
 
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>Holen Sie sich das Holographic Remoting-nuget-Paket.
+## <a name="get-the-holographic-remoting-nuget-package"></a>Abrufen des Holographic Remoting NuGet-Pakets
 
-Die folgenden Schritte sind erforderlich, um das nuget-Paket einem Projekt in Visual Studio hinzuzufügen.
+Die folgenden Schritte sind erforderlich, um das NuGet-Paket einem Projekt in Visual Studio hinzuzufügen.
 1. Öffnen Sie das Projekt in Visual Studio.
-2. Klicken Sie mit der rechten Maustaste auf den Projekt Knoten, und wählen Sie **nuget-Pakete verwalten aus.**
-3. Wählen Sie im angezeigten Bereich **Durchsuchen** aus, und suchen Sie dann nach "Holographic Remoting".
-4. Wählen Sie **Microsoft. Holographic. Remoting** aus, stellen Sie sicher, dass die neueste Version **2. x. x** ausgewählt ist, und wählen Sie **Installieren** aus.
-5. Wenn das Dialogfeld **Vorschau** angezeigt wird, klicken Sie auf **OK**.
-6. Wählen Sie **Ich akzeptiere** aus, wenn das Dialogfeld Lizenzvertrag angezeigt wird.
+2. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen **Sie NuGet Pakete verwalten... aus.**
+3. Wählen Sie im daraufhin angezeigten Bereich **Durchsuchen** aus, und suchen Sie dann nach "Holographic Remoting".
+4. Wählen Sie **Microsoft.Holographic.Remoting** aus, wählen Sie die neueste **Version von 2.x.x** aus, und wählen **Sie Installieren** aus.
+5. Wenn das Dialogfeld **Vorschau** angezeigt wird, wählen Sie **OK** aus.
+6. Wählen Sie **Ich stimme zu** aus, wenn das Dialogfeld "Lizenzvertrag" angezeigt wird.
 
 >[!NOTE]
->Version **1. x. x** des nuget-Pakets ist weiterhin für Entwickler verfügbar, die auf hololens 1 abzielen möchten. Weitere Informationen finden [Sie unter Hinzufügen von Holographic Remoting (hololens (1st Gen))](add-holographic-remoting.md).
+>Version **1.x.x** des NuGet-Pakets ist weiterhin für Entwickler verfügbar, die HoloLens 1 als Ziel verwenden möchten. Weitere Informationen finden Sie unter [Hinzufügen von Holographic Remoting (HoloLens (1. Generation)).](add-holographic-remoting.md)
 
-## <a name="create-the-remote-context"></a>Erstellen des Remote Kontexts
+## <a name="create-the-remote-context"></a>Erstellen des Remotekontexts
 
-Als ersten Schritt sollte die Anwendung einen Remote Kontext erstellen.
+Als ersten Schritt sollte die Anwendung einen Remotekontext erstellen.
 
 ```cpp
 // class declaration
@@ -71,23 +71,23 @@ CreateRemoteContext(m_remoteContext, 20000, false, PreferredVideoCodec::Default)
 ```
 
 >[!WARNING]
->Holographic Remoting funktioniert durch das Ersetzen der Windows Mixed Reality-Laufzeit, die Teil von Windows ist, durch eine Remoting-spezifische Laufzeit. Dies erfolgt während der Erstellung des Remote Kontexts. Aus diesem Grund kann jeder beliebige Windows Mixed Reality-API-Aufrufe vor dem Erstellen des Remote Kontexts zu unerwartetem Verhalten führen. Die empfohlene Vorgehensweise besteht darin, den Remote Kontext so früh wie möglich zu erstellen, bevor Sie mit jeder gemischten Reality-API interagieren. Erstellen oder Abrufen von Objekten, die über eine Windows Mixed Reality-API erstellt oder abgerufen wurden, vor dem Aufrufen von "" mit Objekten, die später erstellt oder abgerufen werden.
+>Holographic Remoting ersetzt die Windows Mixed Reality Runtime, die Teil Windows ist, durch eine Remoting-spezifische Runtime. Dies erfolgt während der Erstellung des Remotekontexts. Aus diesem Grund kann jeder Aufruf einer beliebigen Windows Mixed Reality-API vor dem Erstellen des Remotekontexts zu unerwartetem Verhalten führen. Der empfohlene Ansatz besteht darin, den Remotekontext so früh wie möglich vor der Interaktion mit einer beliebigen Mixed Reality-API zu erstellen. Mischen Sie niemals Objekte, die über eine Windows Mixed Reality-API erstellt oder abgerufen wurden, vor dem Aufruf von CreateRemoteContext mit Objekten, die anschließend erstellt oder abgerufen werden.
 
-Als nächstes muss der holografische Speicherplatz erstellt werden. Das Angeben eines corewindow ist nicht erforderlich. Desktop-Apps, die nicht über ein corewindow verfügen, können nur einen übergeben ```nullptr``` .
+Als Nächstes muss der holografische Raum erstellt werden. Die Angabe eines CoreWindow ist nicht erforderlich. Desktop-Apps ohne CoreWindow können einfach eine ```nullptr``` übergeben.
 
 ```cpp
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(nullptr);
 ```
 
-## <a name="connect-to-the-device"></a>Verbindung mit dem Gerät herstellen
+## <a name="connect-to-the-device"></a>Verbinden auf das Gerät
 
-Wenn die Remote-app zum Rendern von Inhalten bereit ist, kann eine Verbindung mit dem Player Gerät hergestellt werden.
+Wenn die Remote-App zum Rendern von Inhalten bereit ist, kann eine Verbindung mit dem Playergerät hergestellt werden.
 
-Die Verbindung kann auf zwei Arten erreicht werden.
-1) Die Remote-app stellt eine Verbindung zum Player her, der auf dem Gerät ausgeführt wird.
-2) Der Player, der auf dem Gerät ausgeführt wird, stellt eine Verbindung zur Remote-app her
+Die Verbindung kann auf zwei Arten hergestellt werden.
+1) Die Remote-App stellt eine Verbindung mit dem Player her, der auf dem Gerät ausgeführt wird.
+2) Der player, der auf dem Gerät ausgeführt wird, stellt eine Verbindung mit der Remote-App her.
 
-Um eine Verbindung zwischen der Remote-app und dem Player-Gerät herzustellen, müssen Sie die- ```Connect``` Methode im Remote Kontext angeben, die den Hostnamen und den Port angibt. Der von Holographic Remoting Player verwendete Port ist **8265**.
+Um eine Verbindung zwischen der Remote-App und dem Playergerät herzustellen, rufen Sie die ```Connect``` -Methode im Remotekontext auf, und geben Sie den Hostnamen und den Port an. Der Port, der vom Holographic Remoting Player verwendet wird, ist **8265**.
 
 ```cpp
 try
@@ -101,12 +101,12 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->Wie bei jeder C++/WinRT-API ```Connect``` könnte eine WinRT:: hresult_error ausgelöst werden, die behandelt werden muss.
+>Wie bei jeder C++/WinRT-API ```Connect``` kann eine winrt::hresult_error ausgelöst werden, die behandelt werden muss.
 
 >[!TIP]
->Um die Verwendung der [C++/WinRT](/windows/uwp/cpp-and-winrt-apis/) -sprach Projektion zu vermeiden, kann die Datei ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` im Holographic Remoting-nuget-Paket eingeschlossen werden. Sie enthält Deklarationen der zugrunde liegenden COM-Schnittstellen. Die Verwendung von C++/WinRT wird jedoch empfohlen.
+>Um die Verwendung der [C++/WinRT-Sprachprojektion](/windows/uwp/cpp-and-winrt-apis/) zu vermeiden, kann die Datei ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` im Holographic Remoting-NuGet Paket enthalten sein. Sie enthält Deklarationen der zugrunde liegenden COM-Schnittstellen. Die Verwendung von C++/WinRT wird jedoch empfohlen.
 
-Das Lauschen auf eingehende Verbindungen in der Remote-app kann durch Aufrufen der- ```Listen``` Methode erfolgen. Der Handshake-Port und der Transporttyp können während dieses Aufrufes angegeben werden. Der Handshake-Port wird für den ersten Handshake verwendet. Die Daten werden dann über den transportport gesendet. Standardmäßig werden **8265** und **8266** verwendet.
+Das Lauschen auf eingehende Verbindungen in der Remote-App kann durch Aufrufen der ```Listen``` -Methode erfolgen. Sowohl der Handshakeport als auch der Transportport können während dieses Aufrufs angegeben werden. Der Handshakeport wird für den ersten Handshake verwendet. Die Daten werden dann über den Transportport gesendet. Standardmäßig werden **8265** und **8266** verwendet.
 
 ```cpp
 try
@@ -120,12 +120,12 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->Der ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` im nuget-Paket enthält eine ausführliche Dokumentation für die API, die von Holographic Remoting verfügbar gemacht wird.
+>Die ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` im NuGet Paket enthält eine ausführliche Dokumentation für die API, die von Holographic Remoting verfügbar gemacht wird.
 
 ## <a name="handling-remoting-specific-events"></a>Behandeln von Remoting-spezifischen Ereignissen
 
-Der Remote Kontext macht drei Ereignisse verfügbar, die für die Überwachung des Zustands einer Verbindung wichtig sind.
-1) Onconnected: wird ausgelöst, wenn eine Verbindung mit dem Gerät erfolgreich hergestellt wurde.
+Der Remotekontext macht drei Ereignisse verfügbar, die wichtig sind, um den Zustand einer Verbindung zu überwachen.
+1) OnConnected: Wird ausgelöst, wenn eine Verbindung mit dem Gerät erfolgreich hergestellt wurde.
 ```cpp
 winrt::weak_ref<winrt::Microsoft::Holographic::AppRemoting::IRemoteContext> remoteContextWeakRef = m_remoteContext;
 
@@ -136,7 +136,7 @@ m_onConnectedEventRevoker = m_remoteContext.OnConnected(winrt::auto_revoke, [thi
     }
 });
 ```
-2) Ongetrennte: wird ausgelöst, wenn eine etablierte Verbindung geschlossen wird oder keine Verbindung hergestellt werden konnte.
+2) OnDisconnected: Wird ausgelöst, wenn eine hergestellte Verbindung geschlossen wird oder keine Verbindung hergestellt werden konnte.
 ```cpp
 m_onDisconnectedEventRevoker =
     m_remoteContext.OnDisconnected(winrt::auto_revoke, [this, remoteContextWeakRef](ConnectionFailureReason failureReason) {
@@ -162,7 +162,7 @@ m_onDisconnectedEventRevoker =
         }
     });
 ```
-3) Onlistening: beim lauschen auf eingehende Verbindungen wird gestartet.
+3) OnListening: Beim Lauschen auf eingehende Verbindungen wird gestartet.
 ```cpp
 m_onListeningEventRevoker = m_remoteContext.OnListening(winrt::auto_revoke, [this, remoteContextWeakRef]() {
     if (auto remoteContext = remoteContextWeakRef.get())
@@ -172,23 +172,23 @@ m_onListeningEventRevoker = m_remoteContext.OnListening(winrt::auto_revoke, [thi
 });
 ```
 
-Außerdem kann der Verbindungsstatus mithilfe der- ```ConnectionState``` Eigenschaft im Remote Kontext abgefragt werden.
+Darüber hinaus kann der Verbindungszustand mithilfe der ```ConnectionState``` -Eigenschaft im Remotekontext abgefragt werden.
 ```cpp
 auto connectionState = m_remoteContext.ConnectionState();
 ```
 
-## <a name="handling-speech-events"></a>Behandeln von sprach Ereignissen
+## <a name="handling-speech-events"></a>Behandeln von Sprachereignissen
 
-Mithilfe der Remote Sprachschnittstelle ist es möglich, sprach Trigger bei hololens 2 zu registrieren und Sie Remote mit der Remote Anwendung zu verbinden.
+Mithilfe der Remote speech-Schnittstelle können Sprachtrigger bei HoloLens 2 registriert und per Remotezugriff an die Remoteanwendung übertragen werden.
 
-Dieser zusätzliche Member ist erforderlich, um den Status der Remote Sprache zu verfolgen.
+Dieses zusätzliche Element ist erforderlich, um den Zustand der Remotesprache nachzuverfolgen.
 
 ```cpp
 winrt::Microsoft::Holographic::AppRemoting::IRemoteSpeech::OnRecognizedSpeech_revoker m_onRecognizedSpeechRevoker;
 
 ```
 
-Zuerst muss die Remote Sprachschnittstelle abgerufen werden.
+Zuerst muss die Remote speech-Schnittstelle abgerufen werden.
 
 ```cpp
 if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
@@ -197,7 +197,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-Mithilfe einer asynchronen Hilfsmethode können Sie dann die Remote Sprache initialisieren. Dies sollte asynchron erfolgen, da die Initialisierung eine beträchtliche Zeit in Anspruch nehmen kann. Parallelitäts [-und asynchrone Vorgänge mit C++/WinRT](/windows/uwp/cpp-and-winrt-apis/concurrency) erläutert, wie asynchrone Funktionen mit C++ erstellt werden können/WinRT.
+Mithilfe einer asynchronen Hilfsmethode können Sie dann die Remotesprache initialisieren. Dies sollte asynchron erfolgen, da die Initialisierung viel Zeit in Anspruch nehmen kann. [Parallelität und asynchrone Vorgänge mit C++/WinRT](/windows/uwp/cpp-and-winrt-apis/concurrency) erläutert, wie asynchrone Funktionen mit C++/WinRT erstellt werden.
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -233,11 +233,11 @@ winrt::fire_and_forget InitializeSpeechAsync(
 }
 ```
 
-Es gibt zwei Möglichkeiten zum Angeben von Ausdrücken, die erkannt werden sollen.
-1) Spezifikation in einer Sprachgrammatik-XML-Datei. Weitere Informationen finden [Sie unter Erstellen einer grundlegenden XML-Grammatik](/previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) .
-2) Geben Sie an, indem Sie Sie im Wörterbuch Vektor an übergeben ```ApplyParameters``` .
+Es gibt zwei Möglichkeiten, Ausdrücke anzugeben, die erkannt werden sollen.
+1) Spezifikation in einer XML-Datei für die Sprachgrammatik. Weitere Informationen finden Sie unter [Erstellen einer einfachen XML-Grammatik.](/previous-versions/office/developer/speech-technologies/hh361658(v=office.14))
+2) Geben Sie an, indem Sie sie innerhalb des Wörterbuchvektors an ```ApplyParameters``` übergeben.
 
-Innerhalb des onerkenzedspeech-Rückrufs können die sprach Ereignisse verarbeitet werden:
+Innerhalb des OnRecognizedSpeech-Rückrufs können die Sprachereignisse verarbeitet werden:
 
 ```cpp
 void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
@@ -264,9 +264,9 @@ void SampleRemoteMain::OnRecognizedSpeech(const winrt::hstring& recognizedText)
 }
 ```
 
-## <a name="preview-streamed-content-locally"></a>Vorschau der lokal gestreuten Inhalte
+## <a name="preview-streamed-content-locally"></a>Lokale Vorschau von gestreamten Inhalten
 
-Zum Anzeigen desselben Inhalts in der Remote-app, die an das Gerät gesendet wird, kann das- ```OnSendFrame``` Ereignis des Remote Kontexts verwendet werden. Das- ```OnSendFrame``` Ereignis wird jedes Mal ausgelöst, wenn die Holographic Remoting-Bibliothek den aktuellen Frame an das Remote Gerät sendet. Dies ist der ideale Zeitpunkt, um den Inhalt zu übernehmen und ihn im Desktop-oder UWP-Fenster zu blitten.
+Um den gleichen Inhalt in der Remote-App anzuzeigen, die an das Gerät gesendet wird, kann das ```OnSendFrame``` Ereignis des Remotekontexts verwendet werden. Das ```OnSendFrame``` Ereignis wird jedes Mal ausgelöst, wenn die Holographic Remoting-Bibliothek den aktuellen Frame an das Remotegerät sendet. Dies ist der ideale Zeitpunkt, um den Inhalt zu verwenden und ihn auch in das Desktop- oder UWP-Fenster zu integrieren.
 
 ```cpp
 #include <windows.graphics.directx.direct3d11.interop.h>
@@ -289,9 +289,9 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
     });
 ```
 
-## <a name="depth-reprojection"></a>Tiefen neuprojektion
+## <a name="depth-reprojection"></a>Tiefenreprojektion
 
-Ab Version [2.1.0](holographic-remoting-version-history.md#v2.1.0)unterstützt Holographic Remoting die [tiefen neuprojektion](hologram-stability.md#reprojection). Dies erfordert, dass sowohl der Farb Puffer als auch der tiefen Puffer von der Remote Anwendung auf die hololens 2 gestreamt werden. Standardmäßig ist das tiefen Puffer Streaming aktiviert und so konfiguriert, dass die Hälfte der Auflösung des Farb Puffers verwendet wird. Dies kann wie folgt geändert werden:
+Ab Version [2.1.0](holographic-remoting-version-history.md#v2.1.0)unterstützt Holographic Remoting [depth reprojection](hologram-stability.md#reprojection). Dies erfordert, dass sowohl der Farbpuffer als auch der Tiefenpuffer von der Remoteanwendung an die HoloLens 2 gestreamt werden. Standardmäßig ist das Tiefenpufferstreaming aktiviert und so konfiguriert, dass die Hälfte der Auflösung des Farbpuffers verwendet wird. Dies kann wie folgt geändert werden:
 
 ```cpp
 // class implementation
@@ -306,16 +306,16 @@ m_remoteContext.ConfigureDepthVideoStream(DepthBufferStreamResolution::Half_Reso
 
 ```
 
-Beachten Sie, dass, wenn Standardwerte nicht verwendet werden sollten, ```ConfigureDepthVideoStream``` vor dem Herstellen einer Verbindung mit den hololens 2 aufgerufen werden muss. Der beste Ort ist direkt, nachdem Sie den Remote Kontext erstellt haben. Mögliche Werte für depthbufferstreamresolution:
+Hinweis: Wenn keine Standardwerte verwendet werden sollen, ```ConfigureDepthVideoStream``` muss aufgerufen werden, bevor eine Verbindung mit dem HoloLens 2 hergestellt wird. Der beste Ort ist direkt nach dem Erstellen des Remotekontexts. Mögliche Werte für DepthBufferStreamResolution sind:
 
 * Full_Resolution
 * Half_Resolution
 * Quarter_Resolution
-* Deaktiviert (mit Version [2.1.3](holographic-remoting-version-history.md#v2.1.3) hinzugefügt und wird verwendet, wenn kein zusätzlicher ausführungsvideostream erstellt wird)
+* Deaktiviert (hinzugefügt mit Version [2.1.3](holographic-remoting-version-history.md#v2.1.3) und bei Verwendung wird kein zusätzlicher Tiefenvideostream erstellt)
 
-Beachten Sie, dass die Verwendung eines tiefen Puffers für die vollständige Auflösung auch die Bandbreitenanforderungen beeinflusst und in dem maximalen Bandbreitenwert berücksichtigt werden muss, der für bereitgestellt wird ```CreateRemoteContext``` .
+Beachten Sie, dass sich die Verwendung eines tiefen Puffers mit vollständiger Auflösung auch auf die Bandbreitenanforderungen auswirkt und im maximalen Bandbreitenwert berücksichtigt werden muss, den Sie für ```CreateRemoteContext``` angeben.
 
-Neben dem Konfigurieren der Auflösung müssen Sie auch einen tiefen Puffer über [holographiccamerderingparameters. CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)übertragen.
+Neben der Konfiguration der Auflösung müssen Sie auch einen Tiefenpuffer über [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer committen.](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
 
 ```cpp
 
@@ -351,11 +351,11 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
 ```
 
-Um zu überprüfen, ob die tiefen neuprojektion ordnungsgemäß auf hololens 2 funktioniert, können Sie eine tiefen Schnellansicht über das Geräte Portal aktivieren. Weitere Informationen finden Sie unter über [Prüfen der Tiefe festgelegt wurde](hologram-stability.md#verifying-depth-is-set-correctly) .
+Um zu überprüfen, ob die Tiefenreprojektion ordnungsgemäß an HoloLens 2 funktioniert, können Sie eine Tiefenansicht über die Geräteportal aktivieren. Weitere Informationen finden Sie unter [Überprüfen, ob die Tiefe richtig festgelegt ist.](hologram-stability.md#verifying-depth-is-set-correctly)
 
-## <a name="optional-custom-data-channels"></a>Optional: benutzerdefinierte Datenkanäle
+## <a name="optional-custom-data-channels"></a>Optional: Benutzerdefinierte Datenkanäle
 
-Benutzerdefinierte Datenkanäle können zum Senden von Benutzerdaten über die bereits festgelegte Remote Verbindung verwendet werden. Weitere Informationen finden Sie unter [benutzerdefinierte Datenkanäle](holographic-remoting-custom-data-channels.md) .
+Benutzerdefinierte Datenkanäle können verwendet werden, um Benutzerdaten über die bereits eingerichtete Remotingverbindung zu senden. Weitere Informationen finden Sie [unter Benutzerdefinierte Datenkanäle.](holographic-remoting-custom-data-channels.md)
 
 ## <a name="see-also"></a>Weitere Informationen
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)

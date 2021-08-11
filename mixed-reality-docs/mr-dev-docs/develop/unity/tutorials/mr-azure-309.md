@@ -1,40 +1,40 @@
 ---
-title: Hololens (1. Gen) und Azure 309-Application Insights
-description: Machen Sie sich mit diesem Kurs vertraut, um zu erfahren, wie Sie mit dem Azure-Anwendung Insights-Dienst Analysen bezüglich des Benutzer Verhaltens in einer gemischten Reality-Anwendung sammeln.
+title: 'HoloLens (1. Generation) und Azure 309: Application Insights'
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie mithilfe des Azure-Anwendung Insights-Diensts Analysen zum Benutzerverhalten in einer Mixed Reality-Anwendung sammeln.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Application Insights, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: efd6a3f8bf526dcf6a7eaee199f5c22ffa1dd639
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Application Insights, HoloLens, immersive, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 549afbd1e5a3f42bb0540714500d31edf022d36511961e887ac9e927b9af1ea3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730377"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222172"
 ---
-# <a name="hololens-1st-gen-and-azure-309-application-insights"></a>Hololens (1. Gen) und Azure 309: Application Insights
+# <a name="hololens-1st-gen-and-azure-309-application-insights"></a>HoloLens (1. Generation) und Azure 309: Application Insights
 
 <br>
 
 >[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es gibt eine neue Reihe von Tutorials, die in Zukunft veröffentlicht werden, um die Entwicklung für hololens 2 zu veranschaulichen.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn diese veröffentlicht werden.
+>Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es wird eine neue Reihe von Tutorials geben, die in Zukunft veröffentlicht werden, die veranschaulichen, wie sie für HoloLens 2 entwickelt werden.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn sie veröffentlicht werden.
 
 <br>
 
-![Endgültiges Produkt-Start](images/AzureLabs-Lab309-00.png)
+![final product -start](images/AzureLabs-Lab309-00.png)
 
-In diesem Kurs erfahren Sie, wie Sie Application Insights Funktionen zu einer gemischten Reality-Anwendung hinzufügen, indem Sie die Azure-Anwendung Insights-API verwenden, um Analysen bezüglich des Benutzer Verhaltens zu erfassen.
+In diesem Kurs erfahren Sie, wie Sie einer Mixed Reality-Anwendung Application Insights-Funktionen hinzufügen, indem Sie die Azure-Anwendung Insights-API verwenden, um Analysen zum Benutzerverhalten zu sammeln.
 
-Application Insights ist ein Microsoft-Dienst, der es Entwicklern ermöglicht, Analysen von Ihren Anwendungen zu sammeln und Sie über ein einfach zu verwendende Portal zu verwalten. Die Analyse kann von der Leistung bis hin zu benutzerdefinierten Informationen erfolgen, die Sie erfassen möchten. Weitere Informationen finden Sie auf der [Seite Application Insights](https://azure.microsoft.com/services/application-insights/).
+Application Insights ist ein Microsoft-Dienst, mit dem Entwickler Analysen aus ihren Anwendungen erfassen und über ein benutzerfreundliches Portal verwalten können. Die Analyse kann von der Leistung bis hin zu benutzerdefinierten Informationen sein, die Sie sammeln möchten. Weitere Informationen finden Sie auf der [Seite Application Insights](https://azure.microsoft.com/services/application-insights/).
 
-Nachdem Sie diesen Kurs abgeschlossen haben, verfügen Sie über eine gemischte Reality-Headset-Anwendung, die Folgendes ausführen kann:
+Nach Abschluss dieses Kurses verfügen Sie über eine Immersive Headset-Mixed Reality-Anwendung, die folgende Schritte ausführen kann:
 
-1.  Ermöglicht dem Benutzer das durchschauen und bewegen einer Szene.
-2.  Veranlassen Sie das Senden von Analysen an den *Application Insights-Dienst*, indem Sie die Verwendung von Blick und Nähe zu in-Scene-Objekten verwenden.
-3.  Die APP ruft auch auf dem Dienst auf und ruft in den letzten 24 Stunden Informationen darüber ab, welches Objekt vom Benutzer am meisten kontaktiert wurde. Dieses Objekt ändert seine Farbe in grün.
+1.  Ermöglicht es dem Benutzer, eine Szene anzuvschen und zu bewegen.
+2.  Lösen Sie das Senden von Analysen an den *Application Insights Service* aus, indem Sie Anverweise und Nähe zu Objekten in der Szene verwenden.
+3.  Die App ruft auch den Dienst auf und ruft innerhalb der letzten 24 Stunden Informationen dazu ab, welches Objekt vom Benutzer am meisten erreicht wurde. Dieses Objekt ändert seine Farbe in Grün.
 
-In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Application Insights-Dienst in einer Unity-basierten Beispielanwendung erhalten. Sie müssen diese Konzepte auf eine benutzerdefinierte Anwendung anwenden, die Sie möglicherweise aufbauen.
+In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus application Insights Service in einer Unity-basierten Beispielanwendung abrufen. Sie müssen diese Konzepte auf eine benutzerdefinierte Anwendung anwenden, die Sie möglicherweise erstellen.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -47,347 +47,347 @@ In diesem Kurs erfahren Sie, wie Sie die Ergebnisse aus dem Application Insights
 </table>
 
 > [!NOTE]
-> Dieser Kurs konzentriert sich in erster Linie auf Windows Mixed Reality immersive (VR)-Headsets, aber Sie können auch das, was Sie in diesem Kurs lernen, auf Microsoft hololens anwenden. Wenn Sie den Kurs befolgen, finden Sie Hinweise zu allen Änderungen, die Sie möglicherweise zur Unterstützung von hololens verwenden müssen. Wenn Sie hololens verwenden, bemerken Sie möglicherweise bei der sprach Erfassung einen Echo.
+> Während sich dieser Kurs hauptsächlich auf Windows Mixed Reality immersiven Headsets (VR) konzentriert, können Sie auch das, was Sie in diesem Kurs lernen, auf Microsoft HoloLens anwenden. Während Sie den Kurs durchgehen, werden Ihnen Hinweise zu allen Änderungen angezeigt, die Sie ggf. zur Unterstützung HoloLens verwenden müssen. Wenn Sie HoloLens verwenden, können Sie während der Spracherfassung ein Echo bemerken.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 > [!NOTE]
-> Dieses Tutorial richtet sich an Entwickler, die über grundlegende Kenntnisse in Unity und c# verfügen. Beachten Sie auch, dass die Voraussetzungen und Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt des Schreibens getestet und überprüft wurde (Juli 2018). Sie können die neueste Software verwenden, die im Artikel [Installieren der Tools](../../install-the-tools.md) aufgeführt ist. es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs genau mit den Informationen in neueren Software vergleichen, als im folgenden aufgeführt werden.
+> Dieses Tutorial richtet sich an Entwickler, die grundlegende Erfahrung mit Unity und C# haben. Beachten Sie auch, dass die Voraussetzungen und die geschriebenen Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt der Erstellung (Juli 2018) getestet und überprüft wurde. Sie können die neueste Software verwenden, wie im Artikel [installieren der Tools](../../install-the-tools.md) aufgeführt. Es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs perfekt mit dem übereinstimmen, was Sie in neuerer Software finden, als unten aufgeführt.
 
-Für diesen Kurs empfehlen wir die folgende Hardware und Software:
+Für diesen Kurs wird die folgende Hardware und Software empfohlen:
 
-- Einen Entwicklungs-PC, der [mit der Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for Immersive (VR)-Headset-Entwicklung kompatibel ist
-- [Windows 10 Fall Creators Update (oder höher) mit aktiviertem Entwicklermodus](../../install-the-tools.md#installation-checklist)
+- Ein Entwicklungs-PC, [der mit Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) für die Entwicklung immersiver Headsets (VR) kompatibel ist
+- [Windows 10 Fall Creators Update (oder höher) mit aktivierter Option "Entwicklermodus"](../../install-the-tools.md#installation-checklist)
 - [Das neueste Windows 10 SDK](../../install-the-tools.md#installation-checklist)
-- [Unity 2017,4](../../install-the-tools.md#installation-checklist)
+- [Unity 2017.4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
-- Eine Reihe von Kopfhörern mit einem integrierten Mikrofon (wenn das Headset nicht über eine integrierte Mic-und-sprechenden verfügt)
-- Internet Zugriff für Azure-Setup und Application Insights Datenabruf
+- Ein [Windows Mixed Reality immersives Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [ein Microsoft HoloLens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
+- Eine Reihe von Mikrofonen mit einem integrierten Mikrofon (wenn das Headset nicht über ein integriertes Mikrofon und Lautsprecher verfügt)
+- Internetzugriff für Azure-Setup und Anwendungs-Insights Datenabruf
 
 ## <a name="before-you-start"></a>Vorbereitung
 
-Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen).
+Um Probleme bei der Erstellung dieses Projekts zu vermeiden, wird dringend empfohlen, das in diesem Tutorial erwähnte Projekt in einem Stammordner oder in einem Ordner in der Nähe des Stammordners zu erstellen (lange Ordnerpfade können zur Buildzeit Probleme verursachen).
 
 > [!WARNING] 
-> Beachten Sie, dass die Daten, die *Application Insights* werden, Zeit in Rechnung stellen. Wenn Sie überprüfen möchten, ob der Dienst Ihre Daten empfangen hat, finden Sie in [Kapitel 14](#chapter-14---the-application-insights-service-portal)Weitere Informationen zum Navigieren im Portal.
+> Beachten Sie, dass daten, die an *Application Insights* gehen, Zeit in Anspruch nehmen, also seien Sie mit Vorsicht. Wenn Sie überprüfen möchten, ob der Dienst Ihre Daten empfangen hat, lesen Sie [Kapitel 14](#chapter-14---the-application-insights-service-portal), das Ihnen zeigt, wie Sie im Portal navigieren.
 
-## <a name="chapter-1---the-azure-portal"></a>Kapitel 1: Azure-Portal
+## <a name="chapter-1---the-azure-portal"></a>Kapitel 1: Das Azure-Portal
 
-Um *Application Insights* verwenden zu können, müssen Sie im Azure-Portal einen *Application Insights-Dienst* erstellen und konfigurieren.
+Um *Application Insights* zu verwenden, müssen Sie einen *Application Insights Service* in der Azure-Portal erstellen und konfigurieren.
 
 1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
     > [!NOTE]
-    > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
+    > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eins erstellen. Wenn Sie dieses Tutorial in einer Classroom- oder Lab-Situation durchgehen, bitten Sie Ihren Dozenten oder einen der Proctors um Hilfe beim Einrichten Ihres neuen Kontos.
 
-2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach *Application Insights*, und drücken Sie die **Eingabe** Taste.
+2.  Klicken Sie nach der Anmeldung oben links auf **Neu,** suchen Sie nach *Anwendung Insights*, und drücken Sie **die EINGABETASTE.**
 
     > [!NOTE]
-    > Das Wort **New** wurde möglicherweise durch **Create a Resource** in neueren Portalen ersetzt.
+    > Das Wort **Neu** wurde in neueren Portalen möglicherweise durch **Ressource erstellen** ersetzt.
 
     ![Azure-Portal](images/AzureLabs-Lab309-01.png)
 
-3.  Die neue Seite auf der rechten Seite enthält eine Beschreibung des *Azure-Anwendung Insights* -Dienstanbieter. Klicken Sie unten links auf dieser Seite auf die Schaltfläche **Erstellen** , um eine Verknüpfung mit diesem Dienst zu erstellen.
+3.  Die neue Seite auf der rechten  Seite enthält eine Beschreibung des Azure-Anwendung Insights-Diensts. Wählen Sie unten links auf dieser Seite die Schaltfläche **Erstellen** aus, um eine Zuordnung zu diesem Dienst zu erstellen.
 
     ![Azure-Portal](images/AzureLabs-Lab309-02.png)
 
-4.  Nachdem Sie auf **Erstellen** geklickt haben, klicken Sie auf:
+4.  Nachdem Sie auf **Erstellen** geklickt haben:
 
-    1.  Fügen Sie den gewünschten **Namen** für diese Dienst Instanz ein.
+    1.  Fügen Sie den gewünschten **Namen** für diese Dienstinstanz ein.
 
     2.  Wählen Sie als **Anwendungstyp** die Option **Allgemein** aus.
 
-    3.  Wählen Sie ein entsprechendes **Abonnement** aus.
+    3.  Wählen Sie ein **geeignetes Abonnement aus.**
 
-    4.  Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern.
+    4.  Wählen Sie eine **Ressourcengruppe** aus, oder erstellen Sie eine neue. Eine Ressourcengruppe bietet eine Möglichkeit zum Überwachen, Steuern des Zugriffs, Bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt zugeordnet sind (z. B. diese Kurse), einer gemeinsamen Ressourcengruppe zuzuordnen.
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel zu Ressourcengruppen.](/azure/azure-resource-manager/resource-group-portal)
 
     5.  Wählen Sie einen **Speicherort** aus.
 
-    6.  Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
+    6.  Sie müssen auch bestätigen, dass Sie die für diesen Dienst geltenden Geschäftsbedingungen verstanden haben.
 
     7.  Klicken Sie auf **Erstellen**.
 
         ![Azure-Portal](images/AzureLabs-Lab309-03.png)
 
-5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. dieser Vorgang kann einige Minuten in Anspruch nehmen.
+5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. Dies kann eine Minute dauern.
 
-6.  Nachdem die Dienst Instanz erstellt wurde, wird im Portal eine Benachrichtigung angezeigt.
+6.  Sobald die Dienstinstanz erstellt wurde, wird eine Benachrichtigung im Portal angezeigt.
 
     ![Azure-Portal](images/AzureLabs-Lab309-04.png)
 
-7.  Klicken Sie auf die Benachrichtigungen, um die neue Dienst Instanz zu untersuchen.
+7.  Klicken Sie auf die Benachrichtigungen, um Ihre neue Dienstinstanz zu untersuchen.
 
     ![Azure-Portal](images/AzureLabs-Lab309-05.png)
 
-8.  Klicken Sie in der Benachrichtigung auf die Schaltfläche **Gehe zu Ressource** , um die neue Dienst Instanz zu untersuchen. Sie gelangen zu ihrer neuen *Application Insights Dienst* Instanz.
+8.  Klicken Sie in der Benachrichtigung auf die Schaltfläche **Zu Ressource** wechseln, um Ihre neue Dienstinstanz zu untersuchen. Sie gelangen zu Ihrer neuen *Application Insights Service-Instanz.*
 
     ![Azure-Portal](images/AzureLabs-Lab309-06.png)
 
     > [!NOTE]
-    >  Diese Webseite offen und leicht zugänglich zu machen, wird hier wieder häufig angezeigt, um die gesammelten Daten anzuzeigen.
+    >  Lassen Sie diese Webseite geöffnet und leicht zugänglich. Sie kehren hier häufig zurück, um die gesammelten Daten anzuzeigen.
 
     > [!IMPORTANT]
-    > Zum Implementieren von Application Insights müssen drei (3) spezifische Werte verwendet werden: **Instrumentierungs Schlüssel**, **Anwendungs-ID** und **API-Schlüssel**. Unten sehen Sie, wie Sie diese Werte von Ihrem Dienst abrufen. Achten Sie darauf, diese Werte auf einer leeren *Notepad* -Seite zu notieren, da Sie Sie bald in Ihrem Code verwenden werden.
+    > Um Application Insights zu implementieren, müssen Sie drei (3) spezifische Werte verwenden: **Instrumentierungsschlüssel,** **Anwendungs-ID** und **API-Schlüssel.** Im Folgenden erfahren Sie, wie Sie diese Werte von Ihrem Dienst abrufen. Achten Sie darauf, diese Werte auf einer leeren *Editor* Seite zu notieren, da Sie sie in Kürze in Ihrem Code verwenden werden.
 
-9.  Um den **Instrumentierungs Schlüssel** zu suchen, müssen Sie einen Bildlauf nach unten in der Liste der Dienstfunktionen durchführen und auf **Eigenschaften** klicken. auf der angezeigten Registerkarte wird der **Dienst Schlüssel** angezeigt.
+9.  Um den **Instrumentierungsschlüssel** zu finden, müssen Sie in der Liste der Dienstfunktionen nach unten scrollen und auf **Eigenschaften** klicken. Auf der angezeigten Registerkarte wird der **Dienstschlüssel** angezeigt.
 
     ![Azure-Portal](images/AzureLabs-Lab309-07.png)
 
-10. Unter den folgenden **Eigenschaften** finden Sie den **API-Zugriff**, auf den Sie klicken müssen. Im Bereich auf der rechten Seite wird die **Anwendungs-ID** Ihrer APP bereitgestellt.
+10. Ein wenig unter **Eigenschaften** finden Sie **API-Zugriff**, auf den Sie klicken müssen. Im Bereich auf der rechten Seite wird die **Anwendungs-ID** Ihrer App angezeigt.
 
     ![Azure-Portal](images/AzureLabs-Lab309-08.png)
 
-11. Wenn der Bereich **Anwendungs-ID** weiterhin geöffnet ist, klicken Sie auf API- **Schlüssel erstellen**. Dadurch wird der Bereich *API-Schlüssel erstellen* geöffnet.
+11. Wenn der **Bereich Anwendungs-ID** noch geöffnet ist, klicken Sie auf **API-Schlüssel erstellen,** um den Bereich *API-Schlüssel erstellen* zu öffnen.
 
     ![Azure-Portal](images/AzureLabs-Lab309-09.png)
 
-12. Geben Sie im jetzt geöffneten Bereich *API-Schlüssel erstellen* eine Beschreibung ein, und klicken Sie auf **die drei Felder**.
+12. Geben Sie im jetzt geöffneten Bereich *API-Schlüssel erstellen* eine Beschreibung ein, und **aktivieren Sie die drei Kontrollkästchen**.
 
-13. Klicken Sie auf **Schlüssel generieren**. Ihr **API-Schlüssel** wird erstellt und angezeigt. 
+13. Klicken Sie auf **Schlüssel generieren.** Ihr **API-Schlüssel** wird erstellt und angezeigt. 
 
     ![Azure-Portal](images/AzureLabs-Lab309-10.png)
         
     > [!WARNING]
-    > Dies ist der einzige Zeitpunkt, an dem der **Dienst Schlüssel** angezeigt wird. Stellen Sie also sicher, dass Sie jetzt eine Kopie erstellen.
+    > Dies ist das einzige Mal, wenn Ihr **Dienstschlüssel** angezeigt wird. Stellen Sie daher sicher, dass Sie jetzt eine Kopie davon erstellen.
 
 ## <a name="chapter-2---set-up-the-unity-project"></a>Kapitel 2: Einrichten des Unity-Projekts
 
-Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemischter Realität und eine gute Vorlage für andere Projekte.
+Im Folgenden finden Sie eine typische Einrichtung für die Entwicklung mit Mixed Reality und ist daher eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie *Unity* , und klicken Sie auf **neu**.
+1.  Öffnen Sie *Unity,* und klicken Sie auf **Neu.**
 
-    ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-11.png)
+    ![Einrichten der Unity-Project](images/AzureLabs-Lab309-11.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben und **\_ Azure \_ Application \_ Insights** einfügen. Stellen Sie sicher, dass die *Vorlage* auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten *Speicherort* fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
+2.  Sie müssen nun einen Unity-Project angeben, **MR \_ Azure Application \_ Insights. \_** Stellen Sie *sicher, dass die* Vorlage auf **3D festgelegt ist.** Legen Sie *den Speicherort* auf einen für Sie geeigneten Speicherort fest (denken Sie daran, dass die Nähe zu Stammverzeichnissen besser ist). Klicken Sie dann auf **Projekt erstellen.**
 
-    ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-12.png)
+    ![Einrichten der Unity-Project](images/AzureLabs-Lab309-12.png)
 
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie **zu \> Einstellungen bearbeiten** , und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, ob der **Standardskript-Editor** auf **Visual Studio.** Wechseln Sie **zu \> Einstellungen bearbeiten,** und navigieren Sie dann im neuen Fenster zu **Externe Tools.** Ändern **Sie den editor für externe** **Skripts in Visual Studio 2017**. Schließen Sie das **Fenster Einstellungen.**
 
-    ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-13.png)
+    ![Einrichten der Unity-Project](images/AzureLabs-Lab309-13.png)
 
-4.  Navigieren Sie als nächstes zu **dateibuildeinstellungen \>** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Wechseln Sie als Nächstes **zu Datei \> Einstellungen,** und wechseln Sie zur **Universellen Windows-Plattform,** indem Sie auf die **Schaltfläche Plattform wechseln** klicken.
 
-    ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-14.png)
+    ![Einrichten der Unity-Project](images/AzureLabs-Lab309-14.png)
 
-5.  Wechseln Sie **zu \> dateibuildeinstellungen** , und stellen Sie Folgendes sicher:
+5.  Wechseln Sie **zu \> Datei Einstellungen,** und stellen Sie Sicher, dass:
 
-    1.  Das **Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
+    1.  **Zielgerät** ist auf **Beliebiges Gerät festgelegt.**
 
-        > Legen Sie für Microsoft hololens das **Zielgerät** auf *hololens* fest.
+        > Legen Sie für Microsoft HoloLens **Zielgerät auf** *HoloLens.*
 
-    2.  Der **Buildtyp** ist auf **D3D** festgelegt.
+    2.  **Buildtyp** ist auf **D3D festgelegt**
 
-    3.  **SDK** ist auf **neueste installierte** Version festgelegt.
+    3.  **SDK** ist auf **Latest installed (Neueste installiert) festgelegt.**
 
-    4.  **Build und Run** sind auf **lokaler Computer** festgelegt.
+    4.  **Erstellen und Ausführen** ist auf Lokaler **Computer festgelegt.**
 
-    5.  Speichern Sie die Szene, und fügen Sie Sie dem Build hinzu.
+    5.  Speichern Sie die Szene, und fügen Sie sie dem Build hinzu.
 
-        1.  Wählen Sie hierzu die Option **geöffnete Szenen hinzufügen** aus. Ein Fenster zum Speichern wird angezeigt.
+        1.  Wählen Sie hierzu Geöffnete Szenen **hinzufügen aus.** Ein Speicherfenster wird angezeigt.
 
-            ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-15.png)
+            ![Einrichten der Unity-Project](images/AzureLabs-Lab309-15.png)
 
-        2. Erstellen Sie einen neuen Ordner für dieses und jede zukünftige Szene, und klicken Sie dann auf die Schaltfläche **neuer Ordner** , um einen neuen Ordner zu **erstellen.**
+        2. Erstellen Sie einen neuen Ordner für diese und  jede zukünftige Szene, und klicken Sie dann auf die Schaltfläche Neuer Ordner, um einen neuen Ordner zu erstellen, und nennen Sie **ihn Scenes**.
 
-            ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-16.png)
+            ![Einrichten der Unity-Project](images/AzureLabs-Lab309-16.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname:* Text den Text **applicationinsightsscene** ein, und klicken Sie dann auf **Speichern**.
+        3. Öffnen Sie den neu erstellten **Ordner Scenes,** und geben Sie im Textfeld *Dateiname:* **applicationInsightsScene** ein, und klicken Sie dann **auf Speichern.**
 
-            ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-17.png)
+            ![Einrichten der Unity-Project](images/AzureLabs-Lab309-17.png)
 
-6.  Die restlichen Einstellungen in den **Buildeinstellungen** sollten vorerst als Standard belassen werden.
+6.  Die restlichen Einstellungen in **Build Einstellungen** sollten vorerde als Standardeinstellung be übrig bleiben.
 
-7.  Klicken Sie im Fenster **Buildeinstellungen** auf die Schaltfläche **Player Einstellungen** . Dadurch wird der entsprechende Bereich in dem Bereich geöffnet, in dem sich der **Inspektor** befindet.
+7.  Klicken Sie **im Fenster Build Einstellungen** auf die Schaltfläche Player **Einstellungen,** um den entsprechenden Bereich in dem Bereich zu öffnen, in dem sich der **Inspektor** befindet.
 
-    ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-18.png)
+    ![Einrichten der Unity-Project](images/AzureLabs-Lab309-18.png)
 
 8. In diesem Bereich müssen einige Einstellungen überprüft werden:
 
-    1.  Auf der Registerkarte **andere Einstellungen** :
+    1.  Führen Sie **auf Einstellungen** Registerkarte Andere Optionen aus:
 
-        1.   Die CLR- **Lauf Zeit Version** sollte **experimentell sein (.NET 4,6-Entsprechung)**, wodurch der Editor neu gestartet werden muss.
+        1.  **Die** **Skriptlaufzeitversion** sollte **experimentell (.NET 4.6 Equivalent)** sein, wodurch ein Neustart des Editors ausgelöst wird.
 
-        2.  **Skript** -Back-End sollte **.net** sein
+        2.  **Das Skript-Back-End** sollte **.NET sein.**
 
-        3.  **API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
+        3.  **Der API-Kompatibilitätsgrad** sollte **.NET 4.6 sein.**
 
-        ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-19.png)
+        ![Einrichten der Unity-Project](images/AzureLabs-Lab309-19.png)
 
-    2.  Überprüfen Sie auf der Registerkarte **Veröffentlichungs Einstellungen** unter **Funktionen** Folgendes:
+    2.  Aktivieren Sie **auf Einstellungen** Registerkarte Publishing Einstellungen unter **Capabilities (Funktionen)** Die folgenden Optionen:
 
         - **InternetClient**     
 
-            ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-20.png)
+            ![Einrichten der Unity-Project](images/AzureLabs-Lab309-20.png)
 
-    3.  Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    3.  Aktivieren Sie weiter unten im Bereich in **XR Einstellungen** (unter Publishing **Einstellungen)** **(Virtual Reality** unterstützt), und stellen Sie sicher, dass das Windows Mixed Reality **SDK** hinzugefügt wird.
 
-        ![Einrichten des Unity-Projekts](images/AzureLabs-Lab309-21.png)
+        ![Einrichten der Unity-Project](images/AzureLabs-Lab309-21.png)
 
-9.  Wieder in den **Buildeinstellungen** ist **Unity c#-Projekte** nicht mehr abgeblendet. Aktivieren Sie das Kontrollkästchen neben this.
+9.  Im **Build-Einstellungen** ist **Unity C#-Projekte** nicht mehr ausgegraut. aktivieren Sie das Kontrollkästchen daneben.
 
 10.  Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
 
-11.  Speichern Sie Ihre Szene und Ihr Projekt (**Datei**  >  **Speichern/Datei**  >  **speichern Projekt**).
+11.  Speichern Sie Ihre Szene und Project (**FILE**  >  **SAVE SCENE /FILE**  >  **SAVE PROJECT**).
 
 
 ## <a name="chapter-3---import-the-unity-package"></a>Kapitel 3: Importieren des Unity-Pakets
 
 > [!IMPORTANT]
-> Wenn Sie die *Unity-Setup* Komponenten dieses Kurses überspringen und direkt mit dem Code fortfahren möchten, können Sie dieses [Azure-Mr-309. unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/Azure-MR-309.unitypackage)herunterladen und es als [**benutzerdefiniertes Paket**](https://docs.unity3d.com/Manual/AssetPackages.html)in das Projekt importieren. Dies enthält auch die DLLs aus dem nächsten Kapitel. Fahren Sie nach dem Import aus [**Kapitel 6**](#chapter-6---create-the-applicationinsightstracker-class)fort.
+> Wenn Sie die *Unity-Komponenten* dieses Kurses einrichten überspringen und direkt mit dem Code fortfahren möchten, können Sie dieses [Azure-MR-309.unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/Azure-MR-309.unitypackage)herunterladen und als benutzerdefiniertes Paket in Ihr Projekt [**importieren.**](https://docs.unity3d.com/Manual/AssetPackages.html) Dieser enthält auch die DLLs aus dem nächsten Kapitel. Fahren Sie nach dem Import mit [**Kapitel 6 fort.**](#chapter-6---create-the-applicationinsightstracker-class)
 
 > [!IMPORTANT]
-> Um Application Insights in Unity verwenden zu können, müssen Sie die DLL für diese zusammen mit der newtonsoft-dll importieren. Zurzeit gibt es ein bekanntes Problem in Unity, das erfordert, dass Plug-ins nach dem Importieren neu konfiguriert werden. Diese Schritte (4-7 in diesem Abschnitt) werden nicht mehr benötigt, nachdem der Fehler behoben wurde.
+> Um Application Insights in Unity zu verwenden, müssen Sie die DLL dafür zusammen mit der Newtonsoft-DLL importieren. Derzeit gibt es ein bekanntes Problem in Unity, bei dem Plug-Ins nach dem Import neu konfiguriert werden müssen. Diese Schritte (4 bis 7 in diesem Abschnitt) sind nicht mehr erforderlich, nachdem der Fehler behoben wurde.
 
-Wenn Sie Application Insights in Ihr eigenes Projekt importieren möchten, stellen Sie sicher, dass Sie [das ". unitypackage" heruntergeladen haben, das die](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage)Plug-Ins enthält. Gehen Sie nun wie folgt vor:
+Um Application Insights in Ihr eigenes Projekt zu importieren, stellen Sie sicher, dass Sie das Paket [".unitypackage" mit den Plug-Ins heruntergeladen haben.](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage) Gehen Sie nun wie folgt vor:
 
-1.  Fügen Sie das **. unitypackage** zu Unity hinzu, indem Sie die Menüoption **Assets \> Import Package \> Custom Package** verwenden.
+1.  Fügen Sie **unitypackage mithilfe der** Menüoption **Assets Import Package Custom \> \> Package (Benutzerdefiniertes** Paket importieren) zu Unity hinzu.
 
-2.  Vergewissern Sie sich, dass im Feld **Unity-Paket importieren** , das angezeigt wird, alles unter (und **einschließlich) Plug** -ins ausgewählt ist.
+2.  Vergewissern Sie sich im angezeigten Feld **Unity-Paket** importieren, dass alles unter (und einschließlich) **Plug-Ins** ausgewählt ist.
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-22.png)
 
-3.  Klicken Sie auf die Schaltfläche **importieren** , um die Elemente Ihrem Projekt hinzuzufügen.
+3.  Klicken Sie auf **die Schaltfläche** Importieren, um dem Projekt die Elemente hinzuzufügen.
 
-4.  Wechseln Sie in der Projektansicht **unter Plug** -in zum Ordner **Insights** , und wählen Sie *nur* die folgenden Plug-ins aus:
+4.  Wechseln Sie in **der Insights** unter **Plug-Ins** zum Ordner Project, und wählen Sie nur die folgenden Plug-Ins *aus:*
 
     -   Microsoft.ApplicationInsights
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-23.png)
 
-5.  Wenn dieses *Plug* -in ausgewählt ist, **Stellen Sie sicher**, dass **alle Plattformen** deaktiviert **sind, und** stellen Sie **sicher, dass** **wsaplayer** ebenfalls deaktiviert ist. Hierdurch wird lediglich bestätigt, dass die Dateien ordnungsgemäß konfiguriert sind.
+5.  Wenn dieses *Plug-In* ausgewählt ist, stellen Sie sicher, dass Alle Plattformen deaktiviert **ist,** und stellen Sie dann sicher, dass **auch WSAPlayer** deaktiviert **ist,** und klicken Sie dann **auf Anwenden.**  Dadurch wird lediglich bestätigt, dass die Dateien ordnungsgemäß konfiguriert sind.
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-24.png)
 
     > [!NOTE]
-    > Wenn Sie die Plug-ins wie diese markieren, werden diese so konfiguriert, dass Sie nur im Unity-Editor verwendet werden. Der WSA-Ordner enthält einen anderen Satz von DLLs, die nach dem Exportieren des Projekts aus Unity verwendet werden.
+    > Wenn Sie die Plug-Ins wie diese markieren, werden sie so konfiguriert, dass sie nur im Unity-Editor verwendet werden. Es gibt einen anderen Satz von DLLs im WSA-Ordner, der verwendet wird, nachdem das Projekt aus Unity exportiert wurde.
 
-6.  Im nächsten Schritt müssen Sie den Ordner " **WSA** " im Ordner " **Insights** " öffnen. Es wird eine Kopie derselben Datei angezeigt, die Sie soeben konfiguriert haben. Wählen Sie diese Datei aus, und vergewissern Sie sich dann im Inspektor, dass **alle Plattformen** **deaktiviert sind.** stellen Sie dann sicher, dass **nur** **wsaplayer** **aktiviert** ist. Klicken Sie auf **Übernehmen**.
+6.  Als Nächstes müssen Sie den **WSA-Ordner** im **Ordner** Insights öffnen. Sie sehen eine Kopie derselben Datei, die Sie gerade konfiguriert haben. Wählen Sie diese Datei aus, und  stellen Sie dann im Inspektor  sicher, dass Alle Plattformen deaktiviert **ist,** und stellen Sie dann sicher, dass nur **WSAPlayer** **aktiviert ist.** Klicken Sie auf **Anwenden**.
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-25.png)
 
-7. Nun müssen Sie die **Schritte 4-6** ausführen, aber für die *newtonsoft* -Plug-ins. Sehen Sie sich den folgenden Screenshot an, um zu sehen, wie das Ergebnis aussehen sollte.
+7. Sie müssen nun die Schritte **4 bis 6** ausführen, aber stattdessen für *die Newtonsoft-Plug-Ins.* Im folgenden Screenshot sehen Sie, wie das Ergebnis aussehen sollte.
 
     ![Importieren des Unity-Pakets](images/AzureLabs-Lab309-25-5.png)    
 
-## <a name="chapter-4---set-up-the-camera-and-user-controls"></a>Kapitel 4: Einrichten der Kamera-und Benutzer Steuerelemente
+## <a name="chapter-4---set-up-the-camera-and-user-controls"></a>Kapitel 4: Einrichten der Kamera- und Benutzersteuerelemente
 
-In diesem Kapitel richten Sie die Kamera und die Steuerelemente ein, um dem Benutzer zu ermöglichen, die Szene anzuzeigen und zu verschieben.
+In diesem Kapitel richten Sie die Kamera und die Steuerelemente ein, damit der Benutzer die Szene sehen und sich bewegen kann.
 
-1.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im Bereich Hierarchie , und klicken Sie dann auf  >  **leere** erstellen.
+1.  Klicken Sie im Hierarchiebereich mit der rechten Maustaste auf einen leeren Bereich, und klicken Sie dann **auf Leere**  >  **erstellen.**
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-26.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-26.png)
 
-2.  Benennen Sie das neue leere gameobject in das über **geordnete** Element um.
+2.  Benennen Sie das neue leere GameObject in **Camera Parent um.**
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-27.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-27.png)
 
-3.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im Bereich Hierarchie, und klicken Sie dann auf **3D-Objekt** und dann auf **Kugel**.
+3.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im Hierarchiebereich, dann auf **3D-Objekt** und dann auf **Sphere.**
 
-4.  Benennen Sie die Kugel in den **rechten** Bereich um.
+4.  Benennen Sie die Kugel in **rechts um.**
 
-5.  Legen Sie die **Transformations Skala** der rechten Seite auf **0,1, 0,1, 0,1**
+5.  Legen Sie **die Transformationsskala** der rechten Seite auf **0,1, 0,1, 0,1 fest.**
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-28.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-28.png)
 
-6.  Entfernen Sie die **Kugel-Collider** -Komponente von der rechten Seite, indem Sie auf das **Zahnrad** in der *Kugel-Collider* -Komponente klicken, und entfernen Sie dann die **Komponente**.
+6.  Entfernen Sie **die Sphere Collider-Komponente** aus der rechten Hand, indem Sie **in** der *Sphere Collider-Komponente* auf das Zahnrad klicken und dann **Komponente entfernen.**
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-29.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-29.png)
 
-7.  Ziehen Sie im Hierarchie Panel die **Hauptkamera** und die **Rechte Seite** auf das über **geordnete Kamera** Objekt.
+7.  Ziehen Sie im Hierarchiebereich die **Hauptkamera** und die **rechten** Objekte auf das **übergeordnete Kameraobjekt.**
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-30.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-30.png)
 
-8.  Legen Sie die **Transformations Position** der **Hauptkamera** und des **rechten** Objekts auf **0, 0, 0** fest.
+8.  Legen Sie **die Transformationsposition** sowohl der **Hauptkamera** als auch des **rechten** Objekts auf **0, 0, 0 fest.**
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-31.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-31.png)
 
-    ![Richten Sie die Kamera und die Benutzer Steuerelemente ein.](images/AzureLabs-Lab309-32.png)
+    ![Einrichten der Kamera und der Benutzersteuerelemente](images/AzureLabs-Lab309-32.png)
 
 ## <a name="chapter-5---set-up-the-objects-in-the-unity-scene"></a>Kapitel 5: Einrichten der Objekte in der Unity-Szene
 
-Sie werden nun einige grundlegende Formen für Ihre Szene erstellen, mit denen der Benutzer interagieren kann.
+Sie erstellen nun einige grundlegende Formen für Ihre Szene, mit denen der Benutzer interagieren kann.
 
-1.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im *Hierarchie Panel*, und wählen Sie dann auf dem **3D-Objekt** die Option **Ebene** aus.
+1.  Klicken Sie im Hierarchiebereich mit der rechten Maustaste auf einen leeren *Bereich,* klicken Sie dann auf **3D-Objekt,** und wählen Sie dann **Ebene aus.**
 
-2.  Legen Sie die **Position** der Ebene Transformation auf **0,-1, 0** fest.
+2.  Legen Sie die Position **der Ebenentransformation** **auf 0, -1, 0 fest.**
 
-3.  Legen Sie für die Ebene **Transform Scale** den Wert **5, 1, 5** fest.
+3.  Legen Sie die Ebene **Transform Scale auf** **5, 1, 5 fest.**
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-33.png)
 
-4.  Erstellen Sie ein grundlegendes Material, das Sie mit dem **Plane** -Objekt verwenden können, damit die anderen Formen leichter zu sehen sind. Navigieren Sie zum *Projekt Panel*, klicken Sie mit der rechten Maustaste, klicken Sie dann auf **Erstellen** und dann auf **Ordner**, um einen neuen Ordner zu erstellen. Nennen Sie es **Material**.
+4.  Erstellen Sie ein grundlegendes Material, das mit Ihrem **Plane-Objekt verwendet** werden soll, damit die anderen Formen leichter zu erkennen sind. Navigieren Sie zum Project Bereich, klicken Sie mit der rechten Maustaste, und klicken Sie dann auf Erstellen und dann auf **Ordner**, um einen neuen Ordner zu erstellen.  Nennen Sie **es Materials**.
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-34.png) ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-35.png)
 
-5.  Öffnen Sie den Ordner **Material** , klicken Sie mit der rechten Maustaste auf, klicken Sie auf **Erstellen** und dann auf **Material**, um ein neues Material zu erstellen. Nennen Sie es **Blue**.
+5.  Öffnen Sie den Ordner **Materials (Materialien),** klicken Sie mit der rechten Maustaste darauf, klicken Sie auf **Erstellen** und dann auf **Material**, um ein neues Material zu erstellen. Nennen Sie es **Blau.**
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-36.png) ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-37.png)
 
-6.  Wenn das neue **blaue** Material ausgewählt ist, schauen Sie sich den *Inspektor* an, und klicken Sie auf das rechteckige Fenster neben **Albedo**. Wählen Sie eine blaue Farbe aus (die Abbildung unten ist hexadezimal **Farbe: \# 3592ffff**). Nachdem Sie ausgewählt haben, klicken Sie auf die Schaltfläche Schließen.
+6.  Wenn sie das neue **blaue** Material ausgewählt haben, sehen Sie sich den *Inspektor* an, und klicken Sie neben **Albedo** auf das rechteckige Fenster. Wählen Sie eine blaue Farbe aus (die folgende Abbildung ist **Hexadezimalfarbe: \# 3592FFFF**). Klicken Sie auf die Schaltfläche "Schließen", nachdem Sie ausgewählt haben.
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-38.png)
 
-7.  Ziehen Sie das neue Material aus dem Ordner **Material** in die neu erstellte **Ebene** innerhalb Ihrer Szene (oder legen Sie es auf dem **Ebene** -Objekt in der *Hierarchie* ab).
+7.  Ziehen Sie das neue Material aus dem Ordner **Materials (Materialien)** auf die neu erstellte **Ebene** innerhalb Ihrer Szene (oder legen Sie es im **Objekt Plane** innerhalb der *Hierarchie* ab).
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-39.png)
 
-8.  Klicken Sie mit der rechten Maustaste auf einen leeren Bereich im *Hierarchie Panel* und dann auf **3D-Objekt, Kapsel**.
+8.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im *Hierarchiebereich,* und klicken Sie dann auf **3D-Objekt, Kapselung.**
 
-    -  Wenn die **Kapsel** ausgewählt ist, ändern Sie die **Transformations** *Position* in: **-10, 1, 0**.
+    -  Ändern Sie die  *Transformationsposition* bei ausgewähltem **"10",** **"1", "0".**
 
-9.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im Bereich *Hierarchie*, und klicken Sie dann auf **3D-Objekt, Cube**.
+9.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich im *Hierarchiebereich,* und klicken Sie dann auf **3D-Objekt, Cube.**
 
-    -  Ändern Sie mit ausgewähltem **Cube** die **Transformations** *Position* in: **0, 0, 10**.
+    -  Ändern Sie bei ausgewähltem **Cube** die **Transformationsposition**  in **0, 0, 10.**
 
-10. Klicken Sie mit der rechten Maustaste auf einen leeren Bereich im *Hierarchie Panel* und dann auf **3D-Objekt, Kugel**.
+10. Klicken Sie mit der rechten Maustaste in einen leeren Bereich im *Hierarchiebereich,* und klicken Sie dann auf **3D-Objekt, Kugel.**
 
-    -  Wenn die **Kugel** ausgewählt ist, ändern Sie Ihre **Transformations** *Position* in: **10, 0, 0**.
+    -  Ändern Sie bei **ausgewähltem Sphere** die **Transformationsposition**  in **10, 0, 0**.
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-40.png)
 
     > [!NOTE]
-    > Bei diesen *Positions* Werten handelt es sich um *Vorschläge*. Sie können die Positionen der Objekte auf beliebige Weise festlegen, obwohl es für den Benutzer der Anwendung einfacher ist, wenn die Objekt Abstände nicht zu weit von der Kamera stammen.
+    > Diese *Positionswerte* sind *Vorschläge.* Sie können die Positionen der Objekte beliebig festlegen, obwohl es für den Benutzer der Anwendung einfacher ist, wenn die Entfernungen der Objekte nicht zu weit von der Kamera entfernt sind.
 
-11. Wenn die Anwendung ausgeführt wird, muss Sie in der Lage sein, die Objekte innerhalb der Szene zu identifizieren, um dies zu erreichen, müssen Sie gekennzeichnet werden. Wählen Sie eines der Objekte aus, und klicken Sie im *Inspektor* -Panel auf **Tag hinzufügen...**. Dadurch wird der *Inspektor* mit dem Bereich **Tags & Ebenen** ausgetauscht.
+11. Wenn Ihre Anwendung ausgeführt wird, muss sie in der Lage sein, die Objekte innerhalb der Szene zu identifizieren, um dies zu erreichen, müssen sie markiert werden. Wählen Sie eines der -Objekte aus, und klicken Sie im Bereich *Inspektor* auf **Tag hinzufügen...**, wodurch der *Inspektor* durch den Bereich **Tags & Ebenen** ausgetauscht wird.
 
     ![Einrichten der Objekte in der Unity-Szene ](images/AzureLabs-Lab309-41.png)![](images/AzureLabs-Lab309-42.png)
 
-12. Klicken Sie auf das Symbol **+ (plus)** , und geben Sie dann den Tagnamen als **objectinscene** ein.
+12. Klicken Sie auf das Symbol **+ (Pluszeichen),** und geben Sie den Tagnamen als **ObjectInScene** ein.
 
     ![Einrichten der Objekte in der Unity-Szene](images/AzureLabs-Lab309-43.png)
 
     > [!WARNING]
-    > Wenn Sie einen anderen Namen für das Tag verwenden, müssen Sie sicherstellen, dass diese Änderung auch die Skripts " *datafromanalytics*", " *objecttrigger*" und " *Gaze*" erstellt, damit Ihre Objekte in Ihrer Szene gefunden und erkannt werden.
+    > Wenn Sie einen anderen Namen für Ihr Tag verwenden, müssen Sie sicherstellen, dass diese Änderung auch an den Skripts *DataFromAnalytics,* *ObjectTrigger* und *Gaze* vorgenommen wird, damit Ihre Objekte in Ihrer Szene gefunden und erkannt werden.
 
-13. Nachdem Sie das Tag erstellt haben, müssen Sie es auf alle drei Objekte anwenden. Halten Sie in der *Hierarchie* die UMSCHALTTASTE gedrückt, und klicken Sie dann auf die **Schalt** Fläche " **Kapsel**", " **Cube**" und " **Kugel**". Klicken Sie dann im *Inspektor* auf das Dropdown Menü neben **Tag**, und klicken Sie dann auf das von Ihnen erstellte *Objekt objectinscene*
+13. Nachdem das Tag erstellt wurde, müssen Sie es jetzt auf alle drei Objekte anwenden. Halten Sie in der *Hierarchie* die **UMSCHALTTASTE** gedrückt, und klicken Sie dann auf die Objekte **Kapselung,** **Würfel** und **Kugel**, und klicken Sie dann im *Inspektor* neben **Tag** auf das Dropdownmenü, und klicken Sie dann auf das von Ihnen erstellte *ObjectInScene-Tag.*
 
     ![Einrichten der Objekte in der Unity-Szene ](images/AzureLabs-Lab309-44.png)![](images/AzureLabs-Lab309-45.png)
 
-## <a name="chapter-6---create-the-applicationinsightstracker-class"></a>Kapitel 6: Erstellen der applicationinsightstracker-Klasse
+## <a name="chapter-6---create-the-applicationinsightstracker-class"></a>Kapitel 6: Erstellen der ApplicationInsightsTracker-Klasse
 
-Das erste Skript, das Sie erstellen müssen, ist **applicationinsightstracker**, das für Folgendes zuständig ist:
+Das erste Skript, das Sie erstellen müssen, ist **ApplicationInsightsTracker,** das für Folgendes zuständig ist:
 
-1.  Erstellen von Ereignissen auf der Grundlage von Benutzerinteraktionen, um Azure-Anwendung Einblicke zu senden.
+1.  Erstellen von Ereignissen basierend auf Benutzerinteraktionen, die an Azure-Anwendung Insights übermittelt werden sollen.
 
-2. Erstellen geeigneter Ereignis Namen, abhängig von der Benutzerinteraktion.
+2. Erstellen geeigneter Ereignisnamen, abhängig von der Benutzerinteraktion.
 
-3. Ereignisse werden an die Application Insights-Dienst Instanz übermittelt.
+3. Übermitteln von Ereignissen an die Application Insights Service-Instanz.
 
 So erstellen Sie diese Klasse:
 
-1.  Klicken Sie mit der rechten Maustaste im *Projekt Panel*, und **Erstellen** Sie dann den  >  **Ordner**. Benennen Sie den Ordner mit **Skripts**.
+1.  Klicken Sie mit der rechten Maustaste im *Project Bereich* und dann auf   >  **Ordner** erstellen. Nennen Sie den Ordner **Skripts**.
 
-    ![Erstellen der applicationinsightstracker-Klasse](images/AzureLabs-Lab309-46.png)  ![Erstellen der applicationinsightstracker-Klasse](images/AzureLabs-Lab309-47.png)
+    ![Erstellen der ApplicationInsightsTracker-Klasse](images/AzureLabs-Lab309-46.png)  ![Erstellen der ApplicationInsightsTracker-Klasse](images/AzureLabs-Lab309-47.png)
 
-2.  Doppelklicken Sie nach dem Erstellen des **Skripts** auf den Ordner, um zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste auf, und **Erstellen** Sie ein  >  **c#-Skript**. Nennen Sie das Skript **applicationinsightstracker**.
+2.  Doppelklicken Sie nach dem Erstellen des **Ordners Scripts** darauf, um ihn zu öffnen. Klicken **Sie** dann in diesem Ordner mit der rechten Maustaste auf  >  **C#-Skript erstellen.** Nennen Sie das Skript **ApplicationInsightsTracker**.
 
-3.  Doppelklicken Sie auf das neue **applicationinsightstracker** -Skript, um es in **Visual Studio** zu öffnen.
+3.  Doppelklicken Sie auf das neue **ApplicationInsightsTracker-Skript,** um es mit **Visual Studio** zu öffnen.
 
-4.  Aktualisieren Sie die Namespaces oben im Skript so, dass Sie wie folgt lauten:
+4.  Aktualisieren Sie namespaces am Anfang des Skripts wie folgt:
 
     ```csharp
         using Microsoft.ApplicationInsights;
@@ -396,7 +396,7 @@ So erstellen Sie diese Klasse:
         using UnityEngine;
     ```
 
-5.  Fügen Sie in der-Klasse die folgenden Variablen ein:
+5.  Fügen Sie in der -Klasse die folgenden Variablen ein:
 
     ```csharp
         /// <summary>
@@ -431,9 +431,9 @@ So erstellen Sie diese Klasse:
     ```
 
     > [!NOTE] 
-    > Legen Sie die Werte **instrumentationkey, ApplicationId und API_Key** entsprechend fest, indem Sie die *Dienst Schlüssel* aus dem Azure-Portal verwenden, wie in [Kapitel 1](#chapter-1---the-azure-portal), Schritt 9 weiter oben beschrieben.
+    > Legen Sie die Werte **instrumentationKey, applicationId und API_Key** entsprechend fest, indem Sie die *Dienstschlüssel* aus dem Azure-Portal verwenden, wie in [Kapitel 1,](#chapter-1---the-azure-portal)Schritt 9 und weiter oben beschrieben.
 
-6.  Fügen Sie dann die Methoden **Start ()** und **Awa()** hinzu, die aufgerufen werden, wenn die Klasse initialisiert:
+6.  Fügen Sie dann die **Methoden Start()** und **Awake()** hinzu, die aufgerufen werden, wenn die Klasse initialisiert wird:
 
     ```csharp
         /// <summary>
@@ -499,17 +499,17 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+8.  Speichern Sie ihre Änderungen in *Visual Studio,* bevor Sie zu *Unity* zurückkehren.
 
-## <a name="chapter-7---create-the-gaze-script"></a>Kapitel 7: Erstellen des Blick Schrift Skripts
+## <a name="chapter-7---create-the-gaze-script"></a>Kapitel 7: Erstellen des Skripts "Anv"
 
-Das nächste Skript, das erstellt werden soll, ist das **Gaze** -Skript. Dieses Skript ist dafür verantwortlich, ein *raycast* zu erstellen, das von der *Hauptkamera* projiziert wird, um zu erkennen, welches Objekt der Benutzer untersucht. In diesem Fall muss der *raycast* ermitteln, ob der Benutzer ein Objekt mit dem Objekt " **objectinscene** " prüft, und dann zählen, wie lange der *Benutzer an diesem* Objekt mitnimmt.
+Das nächste skript,  das erstellt werden soll, ist das Gaze-Skript. Dieses Skript ist für die Erstellung eines *Raycasts* verantwortlich, der von der *Hauptkamera* nach vorne projiziert wird, um zu erkennen, welches Objekt der Benutzer ansieht. In diesem Fall muss *raycast* ermitteln, ob der Benutzer ein Objekt mit dem Tag **ObjectInScene** ansieht, und dann zählen, wie lange der Benutzer auf dieses Objekt *anviert.*
 
-1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
+1.  Doppelklicken Sie auf den Ordner **Skripts,** um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das **Skript mit** dem Namen.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Skripts,** und klicken Sie auf   >  **C#-Skript erstellen.** Nennen Sie das Skript **Gaze**.
 
-3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
+3.  Doppelklicken Sie auf das Skript, um es mit Visual Studio zu öffnen.
 
 4.  Ersetzen Sie den vorhandenen Code durch folgenden Code:
 
@@ -557,7 +557,7 @@ Das nächste Skript, das erstellt werden soll, ist das **Gaze** -Skript. Dieses 
         }
     ```
 
-5.  Der Code für die Methoden " **Awake ()** " und " **Start ()** " muss nun hinzugefügt werden.
+5.  Code für die **Methoden "Awake()"** und **"Start()"** muss jetzt hinzugefügt werden.
 
     ```csharp
         private void Awake()
@@ -594,7 +594,7 @@ Das nächste Skript, das erstellt werden soll, ist das **Gaze** -Skript. Dieses 
         }
     ```
 
-6.  Fügen Sie in der " **Blick** "-Klasse den folgenden Code in der **Update ()** -Methode hinzu, um ein *raycast* zu projizieren und den zieltreffer zu erkennen:
+6.  Fügen Sie in der **Gaze-Klasse** den folgenden Code in der **Update()-Methode** hinzu, um einen *Raycast* zu pro projectieren und den Zieltreffer zu erkennen:
 
     ```csharp
         /// <summary>
@@ -658,7 +658,7 @@ Das nächste Skript, das erstellt werden soll, ist das **Gaze** -Skript. Dieses 
         }
     ```
 
-7.  Fügen Sie die **resetfocusedobject ()** -Methode hinzu, um Daten an **Application Insights** zu senden, wenn der Benutzer ein Objekt betrachtet hat.
+7.  Fügen Sie die **ResetFocusedObject()-Methode** hinzu, um Daten an **Application Insights** zu senden, wenn der Benutzer ein Objekt betrachtet hat.
 
     ```csharp
         /// <summary>
@@ -688,22 +688,22 @@ Das nächste Skript, das erstellt werden soll, ist das **Gaze** -Skript. Dieses 
         }
     ```
 
-8.  Sie haben **nun das Skript** Skript abgeschlossen. Speichern Sie die Änderungen in *Visual Studio* , bevor Sie zu *Unity* zurückkehren.
+8.  Sie haben nun das **Skript "Anv"** abgeschlossen. Speichern Sie Ihre Änderungen in *Visual Studio,* bevor Sie zu *Unity* zurückkehren.
 
-## <a name="chapter-8---create-the-objecttrigger-class"></a>Kapitel 8: Erstellen der objecttrigger-Klasse
+## <a name="chapter-8---create-the-objecttrigger-class"></a>Kapitel 8: Erstellen der ObjectTrigger-Klasse
 
-Das nächste Skript, das Sie erstellen müssen, ist **objecttrigger**, das für Folgendes zuständig ist:
+Das nächste Skript, das Sie erstellen müssen, ist **ObjectTrigger,** das für Folgendes zuständig ist:
 
-- Hinzufügen von Komponenten, die für die Kollision auf der Hauptkamera erforderlich sind
-- Erkennen, ob sich die Kamera in der Nähe eines Objekts befindet, das als **objectinscene** gekennzeichnet ist
+- Hinzufügen von Komponenten, die für einen Konflikt zur Hauptkamera erforderlich sind.
+- Erkennt, ob sich die Kamera in der Nähe eines Objekts befindet, das als **ObjectInScene** gekennzeichnet ist.
 
 So erstellen Sie das Skript:
 
-1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
+1.  Doppelklicken Sie auf den Ordner **Skripts,** um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript **objecttrigger**.
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Skripts,** und klicken Sie auf   >  **C#-Skript erstellen.** Nennen Sie das Skript **ObjectTrigger**.
 
-3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen. Ersetzen Sie den vorhandenen Code durch folgenden Code:
+3.  Doppelklicken Sie auf das Skript, um es mit Visual Studio zu öffnen. Ersetzen Sie den vorhandenen Code durch folgenden Code:
 
     ```csharp
         using UnityEngine;
@@ -758,24 +758,24 @@ So erstellen Sie das Skript:
         }
     ```
 
-4.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+4.  Speichern Sie ihre Änderungen in *Visual Studio,* bevor Sie zu *Unity* zurückkehren.
 
-## <a name="chapter-9---create-the-datafromanalytics-class"></a>Kapitel 9: Erstellen der datafromanalytics-Klasse
+## <a name="chapter-9---create-the-datafromanalytics-class"></a>Kapitel 9: Erstellen der DataFromAnalytics-Klasse
 
-Sie müssen nun das **datafromanalytics** -Skript erstellen, das für Folgendes zuständig ist:
+Sie müssen nun das **DataFromAnalytics-Skript** erstellen, das für Folgendes zuständig ist:
 
-- Das Abrufen von Analysedaten über das Objekt, das von der Kamera am meisten angegangen wurde.
-- Mithilfe der *Dienst Schlüssel*, die die Kommunikation mit ihrer Azure-Anwendung Insights-Dienst Instanz ermöglichen.
-- Sortieren der Objekte in der Szene, je nachdem, welche die höchste Ereignis Anzahl aufweist.
-- Ändern der Material Farbe des am häufigsten angenäherten Objekts in *grün*.
+- Abrufen von Analysedaten zu dem Objekt, das von der Kamera am meisten erreicht wurde.
+- Mithilfe der *Dienstschlüssel*, die die Kommunikation mit Ihrer Azure-Anwendung Insights Service-Instanz ermöglichen.
+- Sortieren der Objekte in der Szene, nach denen die höchste Ereignisanzahl hat.
+- Ändern der Materialfarbe des am häufigsten angenäherten Objekts in *grün.*
 
 So erstellen Sie das Skript:
 
-1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
+1.  Doppelklicken Sie auf den Ordner **Skripts,** um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das Skript " **datafromanalytics**".
+2.  Klicken Sie mit der rechten Maustaste in den Ordner **Skripts,** und klicken Sie auf   >  **C#-Skript erstellen.** Nennen Sie das Skript **DataFromAnalytics.**
 
-3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
+3.  Doppelklicken Sie auf das Skript, um es mit Visual Studio zu öffnen.
 
 4.  Fügen Sie die folgenden Namespaces ein:
 
@@ -827,7 +827,7 @@ So erstellen Sie das Skript:
         }
     ```
 
-6.  Fügen Sie innerhalb der **datafromanalytics** -Klasse direkt nach der **Start ()** -Methode die folgende Methode namens **fetchanalytics ()** hinzu. Diese Methode ist für das Auffüllen der Liste der Schlüssel-Wert-Paare mit einem *gameobject-Objekt* und einer Platzhalter Ereignis Anzahl verantwortlich. Anschließend wird die " **GetWebRequest ()** "-Coroutine initialisiert. Die Abfrage Struktur des aufzurufenden *Application Insights* kann in dieser Methode auch als Endpunkt der *Abfrage-URL* gefunden werden.
+6.  Fügen Sie in der **DataFromAnalytics-Klasse** direkt nach der **Start()-Methode** die folgende Methode namens **FetchAnalytics()** hinzu. Diese Methode ist dafür verantwortlich, die Liste der Schlüsselwertpaare mit einem *GameObject* und einer Platzhalterereignisanzahl aufzufüllen. Anschließend wird die **GetWebRequest()-Coroutine** initialisiert. Die Abfragestruktur des Aufrufs von *Application Insights* finden Sie auch in dieser Methode als *Abfrage-URL-Endpunkt.*
 
     ```csharp
         private void FetchAnalytics()
@@ -859,7 +859,7 @@ So erstellen Sie das Skript:
         }
     ```
 
-7.  Fügen Sie direkt unterhalb der **fetchanalytics ()** -Methode eine Methode namens **GetWebRequest ()** hinzu, die einen *IEnumerator* zurückgibt. Diese Methode ist dafür verantwortlich, wie oft ein Ereignis, das einem bestimmten *gameobject* entspricht, in *Application Insights* aufgerufen wurde. Wenn alle gesendeten Abfragen zurückgegeben wurden, wird die **determinewinner ()** -Methode aufgerufen.
+7.  Fügen Sie direkt unterhalb der **FetchAnalytics()-Methode** eine Methode namens **GetWebRequest()** hinzu, die einen *IEnumerator* zurückgibt. Diese Methode ist dafür verantwortlich, die Anzahl der Aufrufe eines Ereignisses, das einem bestimmten *GameObject* entspricht, innerhalb von *Application Insights* anzufordern. Wenn alle gesendeten Abfragen zurückgegeben wurden, wird die **DetermineWinner()-Methode** aufgerufen.
 
     ```csharp
         /// <summary>
@@ -925,7 +925,7 @@ So erstellen Sie das Skript:
         }
     ```
 
-8.  Die nächste Methode ist " **determinewinner ()**", die die Liste der *gameobject* -und *int* -Paare entsprechend der höchsten Ereignis Anzahl sortiert. Anschließend wird die Material Farbe dieses *gameobject* in *grün* geändert (als Feedback für die Anwendung mit der höchsten Anzahl). Dadurch wird eine Meldung mit den Analyseergebnissen angezeigt.
+8.  Die nächste Methode ist **DetermineWinner()**, die die Liste der *GameObject-* und *Int-Paare* nach der höchsten Ereignisanzahl sortiert. Anschließend wird die Materialfarbe dieses *GameObject* in *Grün* geändert (als Feedback für die höchste Anzahl). Dadurch wird eine Meldung mit den Analyseergebnissen angezeigt.
 
     ```csharp
         /// <summary>
@@ -955,7 +955,7 @@ So erstellen Sie das Skript:
         }
     ```
 
-9.  Fügen Sie die Klassenstruktur hinzu, die zum Deserialisieren des JSON-Objekts verwendet wird, das von *Application Insights* empfangen wird. Fügen Sie diese Klassen ganz unten in der **datafromanalytics** -Klassendatei **außerhalb** der Klassendefinition hinzu.
+9.  Fügen Sie die Klassenstruktur hinzu, die zum Deserialisieren des JSON-Objekts verwendet wird, das von *Application Insights* empfangen wird. Fügen Sie diese Klassen ganz unten in der **DataFromAnalytics-Klassendatei** **außerhalb** der Klassendefinition hinzu.
 
     ```csharp
         /// <summary>
@@ -989,22 +989,22 @@ So erstellen Sie das Skript:
         }
     ```
 
-10. Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+10. Speichern Sie ihre Änderungen in *Visual Studio,* bevor Sie zu *Unity* zurückkehren.
 
-## <a name="chapter-10---create-the-movement-class"></a>Kapitel 10: Erstellen der Bewegungs Klasse
+## <a name="chapter-10---create-the-movement-class"></a>Kapitel 10 : Erstellen der Movement-Klasse
 
-Das Verschiebungs Skript ist das nächste Skript **, das Sie** erstellen müssen. IISConfigurator ist für Folgendes zuständig:
+Das **Movement-Skript** ist das nächste Skript, das Sie erstellen müssen. IISConfigurator ist für Folgendes zuständig:
 
-- Verschieben der Hauptkamera entsprechend der Richtung, in der die Kamera aussieht.
-- Hinzufügen aller anderen Skripts zu Scene-Objekten.
+- Bewegen der Hauptkamera entsprechend der Richtung, in die die Kamera blickt.
+- Hinzufügen aller anderen Skripts zu Szenenobjekten.
 
 So erstellen Sie das Skript:
 
-1.  Doppelklicken Sie auf den Ordner **Skripts** , um ihn zu öffnen.
+1.  Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen.
 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf   >  **c#-Skript** erstellen Benennen Sie das **Skript.**
+2.  Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken **Sie auf**  >  **C#-Skript erstellen.** Nennen Sie das Skript **Movement**.
 
-3.  Doppelklicken Sie auf das Skript, um es in *Visual Studio* zu öffnen.
+3.  Doppelklicken Sie auf das Skript, um es mit *dem* Visual Studio.
 
 4.  Ersetzen Sie den vorhandenen Code durch folgenden Code:
 
@@ -1061,7 +1061,7 @@ So erstellen Sie das Skript:
         }
     ```
 
-5.  Fügen Sie innerhalb der **Movement** -Klasse *unter* der leeren **Update ()** -Methode die folgenden Methoden ein, die dem Benutzer die Verwendung des Hand Controllers zum Verschieben im virtuellen Bereich ermöglichen:
+5.  Fügen Sie innerhalb  **der Movement-Klasse** unterhalb der leeren **Update()-Methode** die folgenden Methoden ein, die es dem Benutzer ermöglichen, den Handcontroller zum Verschieben im virtuellen Raum zu verwenden:
 
     ```csharp
         /// <summary>
@@ -1179,7 +1179,7 @@ So erstellen Sie das Skript:
         }   
     ```
 
-6.  Fügen Sie schließlich den Methoden aufrufin der **Update ()** -Methode hinzu.
+6.  Fügen Sie abschließend den Methodenaufruf in der **Update()-Methode** hinzu.
 
     ```csharp
         // Update is called once per frame
@@ -1189,95 +1189,95 @@ So erstellen Sie das Skript:
         }
     ```
 
-7.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+7.  Stellen Sie sicher, dass Sie Ihre Änderungen *in* Visual Studio speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-11---setting-up-the-scripts-references"></a>Kapitel 11: Einrichten der Skripts Verweise
+## <a name="chapter-11---setting-up-the-scripts-references"></a>Kapitel 11: Einrichten der Skriptverweise
 
-In diesem Kapitel müssen Sie das **Bewegungs** Skript auf der über **geordneten Kamera** platzieren und dessen Verweis Ziele festlegen. Dieses Skript behandelt dann das Platzieren der anderen Skripts, wenn Sie es benötigen.
+In diesem Kapitel müssen  Sie das Bewegungsskript auf dem übergeordneten **Kamera-Element** platzieren und seine Verweisziele festlegen. Dieses Skript verarbeitet dann das Platzieren der anderen Skripts, wo sie benötigt werden.
 
-1.  Ziehen Sie im Ordner " **Skripts** " im *Projekt Panel* das **Bewegungs** Skript in das über **geordnete Kamera** Objekt, das sich im Bereich *Hierarchie* befindet.
+1.  Ziehen Sie aus dem Ordner **Skripts** *im* Project-Bereich das Bewegungsskript auf das übergeordnete **Camera-Objekt,** das sich im  *Hierarchiebereich befindet.*
 
-    ![Einrichten der Skripts Verweise in der Unity-Szene](images/AzureLabs-Lab309-48.png)
+    ![Einrichten der Skriptverweise in der Unity-Szene](images/AzureLabs-Lab309-48.png)
 
-2.  Klicken Sie auf die über **geordnete Kamera**. Ziehen Sie im Bereich *Hierarchie* das **Rechte** Objekt aus dem Bereich *Hierarchie* in das Verweis Ziel, **Controller**, im *Inspektor-Panel*. Legen Sie die **Benutzer Geschwindigkeit** auf **5** fest, wie in der folgenden Abbildung dargestellt.
+2.  Klicken Sie auf die **übergeordnete Kamera.** Ziehen Sie *im Hierarchiebereich* das Rechte Objekt aus dem *Hierarchiebereich* auf das Verweisziel **Controller** im  *Inspektorbereich.* Legen Sie **die Benutzergeschwindigkeit** auf **5** fest, wie in der folgenden Abbildung dargestellt.
 
-    ![Einrichten der Skripts Verweise in der Unity-Szene](images/AzureLabs-Lab309-49.png)
+    ![Einrichten der Skriptverweise in der Unity-Szene](images/AzureLabs-Lab309-49.png)
 
 ## <a name="chapter-12---build-the-unity-project"></a>Kapitel 12: Erstellen des Unity-Projekts
 
-Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, ist nun abgeschlossen, sodass es an der Zeit ist, Sie aus Unity zu erstellen.
+Alles, was für den Unity-Abschnitt dieses Projekts erforderlich ist, wurde abgeschlossen, daher ist es an der Zeit, es aus Unity zu erstellen.
 
-1.  Navigieren Sie zu den **Buildeinstellungen**(**dateibuildeinstellungen**  >  ).
+1.  Navigieren Sie **zu Build Einstellungen**, (**File**  >  **Build Einstellungen**).
 
-2.  Klicken Sie im Fenster " **Buildeinstellungen** " auf " **Erstellen**".
+2.  Klicken Sie **im Fenster Build Einstellungen** auf **Erstellen.**
 
-    ![Erstellen des Unity-Projekts in der UWP-Lösung](images/AzureLabs-Lab309-50.png)
+    ![Erstellen der Unity-Project zu UWP-Projektmappe](images/AzureLabs-Lab309-50.png)
 
-3.  Ein **Datei-Explorer** -Fenster wird angezeigt, in dem Sie aufgefordert werden, einen Speicherort für den Build zu erhalten. Erstellen Sie einen neuen Ordner (indem Sie in der oberen linken Ecke auf **neuer Ordner** klicken), und nennen Sie ihn " **BUILDS**".
+3.  Ein **Datei-Explorer-Fenster** wird angezeigt, in dem Sie zur Eingabe eines Speicherorts für den Build aufgefordert werden. Erstellen Sie einen neuen Ordner (indem Sie **oben** links auf Neuer Ordner klicken), und nennen Sie ihn **BUILDS**.
 
-    ![Erstellen des Unity-Projekts in der UWP-Lösung](images/AzureLabs-Lab309-51.png)
+    ![Erstellen der Unity-Project zu UWP-Projektmappe](images/AzureLabs-Lab309-51.png)
 
-    1.  Öffnen Sie den Ordner neue **BUILDS** , und erstellen Sie einen weiteren Ordner (mehr als einen **neuen Ordner** ), und benennen Sie ihn mit **\_ Azure \_ Application \_ Insights**.
+    1.  Öffnen Sie den neuen **Ordner BUILDS,** erstellen Sie einen weiteren Ordner (verwenden Sie erneut **Neuer** Ordner), und nennen Sie ihn **MR Azure Application \_ \_ \_ Insights**.
 
-        ![Erstellen des Unity-Projekts in der UWP-Lösung](images/AzureLabs-Lab309-52.png)
+        ![Erstellen der Unity-Project zu UWP-Projektmappe](images/AzureLabs-Lab309-52.png)
 
-    2.  Klicken Sie bei ausgewähltem Ordner " **\_ Azure \_ Application \_ Insights** " auf **Ordner auswählen**. Es dauert eine Minute, bis das Projekt erstellt wird.
+    2.  Wenn Sie den **Ordner MR Azure Application \_ \_ \_ Insights** ausgewählt haben, klicken Sie **auf Ordner auswählen.** Die Erstellung des Projekts nimmt eine Minute in Dauern.
 
-4.  Im folgenden *Build* wird der **Datei-Explorer** angezeigt, in dem der Speicherort des neuen Projekts angezeigt wird.
+4.  Nach *dem Build* wird der **Datei-Explorer** mit dem Speicherort Des neuen Projekts angezeigt.
 
-## <a name="chapter-13---deploy-mr_azure_application_insights-app-to-your-machine"></a>Kapitel 13: Bereitstellen MR_Azure_Application_Insights App auf Ihrem Computer
+## <a name="chapter-13---deploy-mr_azure_application_insights-app-to-your-machine"></a>Kapitel 13: Bereitstellen MR_Azure_Application_Insights-App auf Ihrem Computer
 
-So stellen Sie **die \_ Azure \_ Application \_ Insights** -App auf Ihrem lokalen Computer bereit:
+So stellen Sie die **MR \_ Azure Application \_ \_ Insights-App** auf Ihrem lokalen Computer zur Bereitstellung:
 
-1.  Öffnen Sie die Projektmappendatei Ihrer **\_ Azure \_ Application \_ Insights** -app in **Visual Studio**.
+1.  Öffnen Sie die Projektmappendatei Ihrer **MR \_ Azure Application \_ \_ Insights-App** in **Visual Studio.**
 
-2.  Wählen Sie auf der Projektmappenplattform die Option **x86, lokaler Computer** aus.
+2.  Wählen Sie **auf der Projektmappenplattform** **x86, Lokaler Computer aus.**
 
-3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
+3.  Wählen Sie in **der Projektmappenkonfiguration** **Debuggen aus.**
 
-    ![Erstellen des Unity-Projekts in der UWP-Lösung](images/AzureLabs-Lab309-53.png)
+    ![Erstellen der Unity-Project zu UWP-Projektmappe](images/AzureLabs-Lab309-53.png)
 
-4.  Wechseln Sie zum **Menü Erstellen** , und klicken Sie auf **Lösung** bereitstellen, um die Anwendung auf Ihren Computer zu übertragen.
+4.  Wechseln Sie zum **Menü Erstellen,** und klicken Sie **auf Projektmappe bereitstellen,** um die Anwendung auf Ihren Computer zu laden.
 
-5.  Ihre APP sollte nun in der Liste der installierten apps angezeigt werden, die gestartet werden können.
+5.  Ihre App sollte nun in der Liste der installierten Apps angezeigt werden, die zum Start bereit sind.
 
 6. Starten Sie die Mixed Reality-Anwendung.
 
-7. Bewegen Sie sich um die Szene, sehen Sie sich die Objekte an, und sehen Sie sich diese an, wenn der *Azure Insight-Dienst* genügend Ereignisdaten gesammelt hat, legt er das Objekt fest, das am höchsten grün ist.
+7. Bewegen Sie sich in der Szene, nähern Sie sich Objekten, und sehen Sie sich diese an. Wenn *der Azure Insight Service* genügend Ereignisdaten gesammelt hat, wird das Objekt, das am meisten an den Anfang gesetzt wurde, auf Grün festgelegt.
 
 > [!IMPORTANT] 
-> Die durchschnittliche Wartezeit für die vom Dienst zu erfassenden *Ereignisse und Metriken* dauert etwa 15 Minuten, in manchen Fällen kann es jedoch bis zu einer Stunde dauern.
+> Während die durchschnittliche  Wartezeit für die vom Dienst zu sammelnden Ereignisse und Metriken etwa 15 Minuten dauert, kann es in einigen Fällen bis zu 1 Stunde dauern.
 
-## <a name="chapter-14---the-application-insights-service-portal"></a>Kapitel 14: das Application Insights Service-Portal
+## <a name="chapter-14---the-application-insights-service-portal"></a>Kapitel 14: Das Application Insights Service-Portal
 
-Nachdem Sie die Szene gewechselt und mit mehreren Objekten zusammengeführt haben, können Sie die im *Application Insights Service* -Portal gesammelten Daten sehen.
+Nachdem Sie die Szene umstreift und mehrere Objekte anviert haben, können Sie die im Application *Insights Service-Portal gesammelten Daten* sehen.
 
 1.  Wechseln Sie zurück zu Ihrem Application Insights Service-Portal.
 
-2.  Klicken Sie auf *Metrik-Explorer*.
+2.  Klicken Sie *auf Metrik-Explorer*.
 
-    ![Überprüfen der gesammelten Daten](images/AzureLabs-Lab309-54.png)
+    ![Blick auf gesammelte Daten](images/AzureLabs-Lab309-54.png)
 
-3.  Es wird auf einer Registerkarte geöffnet, die das Diagramm enthält, das die *Ereignisse und Metriken* für Ihre Anwendung darstellt. Wie bereits erwähnt, kann es einige Zeit dauern (bis zu 1 Stunde), bis die Daten im Diagramm angezeigt werden.
+3.  Es wird auf einer Registerkarte mit dem Diagramm geöffnet, das die Mit Ihrer Anwendung *verbundenen* Ereignisse und Metriken enthält. Wie bereits erwähnt, kann es einige Zeit (bis zu 1 Stunde) dauern, bis die Daten im Diagramm angezeigt werden.
 
-    ![Überprüfen der gesammelten Daten](images/AzureLabs-Lab309-55.png)
+    ![Blick auf gesammelte Daten](images/AzureLabs-Lab309-55.png)
 
-4.  Klicken Sie auf die *Ereignis Leiste* in der *Gesamtanzahl der Ereignisse* nach Anwendungs Version, um eine detaillierte Aufschlüsselung der Ereignisse mit ihren Namen anzuzeigen.
+4.  Klicken Sie in der  *Gesamtanzahl der* Ereignisse nach Anwendungsversion auf die Leiste Ereignisse, um eine detaillierte Aufschlüsselung der Ereignisse mit ihren Namen zu erhalten.
 
-    ![Überprüfen der gesammelten Daten](images/AzureLabs-Lab309-56.png)
+    ![Blick auf gesammelte Daten](images/AzureLabs-Lab309-56.png)
 
-## <a name="your-finished-your-application-insights-service-application"></a>Ihre Application Insights Service-Anwendung wurde beendet.
+## <a name="your-finished-your-application-insights-service-application"></a>Ihre Anwendung "Application Insights Service" wurde abgeschlossen.
 
-Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Application Insights-Dienst nutzt, um die Aktivität des Benutzers in Ihrer APP zu überwachen.
+Herzlichen Glückwunsch! Sie haben eine Mixed Reality-App erstellt, die den Application Insights Service nutzt, um die Aktivität des Benutzers in Ihrer App zu überwachen.
 
-![Kurs Ergebnis](images/AzureLabs-Lab309-00.png)
+![Kursergebnis](images/AzureLabs-Lab309-00.png)
 
-## <a name="bonus-exercises"></a>Bonus Übungen
+## <a name="bonus-exercises"></a>Bonusübungen
 
 **Übung 1**
 
-Versuchen Sie, die objectinscene-Objekte zu erstellen, anstatt Sie manuell zu erstellen, und legen Sie Ihre Koordinaten auf der Ebene innerhalb Ihrer Skripts fest. Auf diese Weise könnten Sie Azure das am häufigsten verwendete Objekt (aus Blick auf das Ergebnis oder die Near-Ergebnisse) Fragen und ein *zusätzliches* von diesen Objekten erzeugen.
+Versuchen Sie, die ObjectInScene-Objekte zu erzeugen, anstatt sie manuell zu erstellen, und legen Sie ihre Koordinaten auf der Ebene in Ihren Skripts fest. Auf diese Weise könnten Sie Azure fragen, was das am häufigsten verwendete Objekt war (entweder aus Anvitäts- oder Näherungsergebnissen) und ein zusätzliches *dieser* Objekte erstellen.
 
 **Übung 2**
 
-Sortieren Sie Ihre Application Insights Ergebnisse nach Zeit, damit Sie die relevantesten Daten erhalten, und implementieren Sie diese zeitsensiblen Daten in der Anwendung.
+Sortieren Sie ihre Insights ergebnisse nach Zeit, damit Sie die relevantesten Daten erhalten, und implementieren Sie diese zeitsensiblen Daten in Ihrer Anwendung.

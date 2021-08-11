@@ -4,40 +4,40 @@ description: Dokumentation zu InteractiveElement MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Interactive Element, Interactable
-ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Interactive-Element, Interactable
+ms.openlocfilehash: 6d8f36c4780844e991eb32943645402503fab8340c6843dbb607f1c11033d912
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220443"
 ---
 # <a name="interactive-element-experimental"></a>Interactive-Element [Experimentell]
 
-Ein vereinfachter zentralisierter Einstiegspunkt zum MRTK-Eingabesystem. Enthält Zustandsverwaltungsmethoden, Ereignisverwaltung und die Zustandseinstellungslogik für Kerninteraktionszustände.
+Ein vereinfachter zentralisierter Einstiegspunkt für das MRTK-Eingabesystem. Enthält Zustandsverwaltungsmethoden, Ereignisverwaltung und die Zustandseinstellungslogik für Kerninteraktionszustände.
 
-Interactive Element ist ein experimentelles Feature, das in Unity 2019.3 und bis unterstützt wird, da es eine neue Funktion für Unity 2019.3 nutzt: [Serialize Reference](https://docs.unity3d.com/ScriptReference/SerializeReference.html).
+Interactive Element ist ein experimentelles Feature, das ab Unity 2019.3 unterstützt wird, da es eine funktion nutzt, die neu in Unity 2019.3: [Serialize Reference](https://docs.unity3d.com/ScriptReference/SerializeReference.html)ist.
 
-### <a name="interactive-element-inspector"></a>Interactive Element Inspector
+### <a name="interactive-element-inspector"></a>Interaktiver Elementinspektor
 
-Während des Wiedergabemodus stellt der Interactive Element Inspector visuelles Feedback bereit, das angibt, ob der aktuelle Zustand aktiv ist. Wenn ein Zustand aktiv ist, wird er mit einer Cyanfarbe hervorgehoben.  Wenn der Zustand nicht aktiv ist, wird die Farbe nicht geändert. Die Zahlen neben den Zuständen im Inspektor sind die Zustandswerte. Wenn der Zustand aktiv ist, ist der Wert 1, wenn der Zustand nicht aktiv ist, ist der Wert 0.
+Während des Wiedergabemodus gibt der Interaktive Elementinspektor visuelles Feedback, das angibt, ob der aktuelle Zustand aktiv ist oder nicht. Wenn ein Zustand aktiv ist, wird er mit einer Zyanfarbe hervorgehoben.  Wenn der Status nicht aktiv ist, wird die Farbe nicht geändert. Die Zahlen neben den Statuswerten im Inspektor sind die Zustandswerte. Wenn der Zustand aktiv ist, ist der Wert 1, und wenn der Status nicht aktiv ist, ist der Wert 0.
 
-![Interaktives Element mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+![Interaktives Element mit Interaktion mit virtueller Hand](../images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
 ## <a name="core-states"></a>Kernzustände
 
-Interactive-Element enthält Kernzustände und unterstützt das Hinzufügen von [benutzerdefinierten Zuständen.](#custom-states)  Ein Kernzustand ist ein Zustand, für den bereits die Zustandseinstellungslogik in definiert `BaseInteractiveElement` ist. Im Folgenden sind die aktuellen eingabegesteuerten Kernzustände aufgeführt: 
+Interactive-Element enthält Kernzustände und unterstützt das Addition [benutzerdefinierter Zustände.](#custom-states)  Ein Kernzustand ist einer, in dem bereits die Zustandseinstellungslogik definiert `BaseInteractiveElement` ist. Im Folgenden finden Sie eine Liste der aktuellen eingabegesteuerten Kernzustände: 
 
 ### <a name="current-core-states"></a>Aktuelle Kernzustände
 
 - [Standard](#default-state) 
 
-Near and Far Interaction Core States (Kernzustände für nah und fernen Interaktion):
+Near and Far Interaction Core States (Nah- und Ferninteraktionskernzustände):
 - [Fokus](#focus-state) 
 
-Near Interaction Core States (Kernzustände der nahezuen Interaktion):
+Kernzustände in der Nähe der Interaktion:
 
-- [Fokus in der Nähe](#focus-near-state)
+- [Fokus nah](#focus-near-state)
 - [Toucheingabe](#touch-state)
 
 Kernzustände der Ferninteraktion:
@@ -53,12 +53,12 @@ Andere Kernzustände:
 
 1. Navigieren Sie **im Inspektor für Interactive-Element** zu Kernzustand hinzufügen.
 
-    ![Hinzufügen eines Kernzustands über inspector](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
+    ![Hinzufügen eines Kernzustands über den Inspektor](../images/interactive-element/InEditor/InteractiveElementAddCoreState.png)
 
 
 1. Wählen Sie die **Schaltfläche Status auswählen** aus, um den hinzuzufügenden Kernzustand auszuwählen. Die Zustände im Menü werden nach Interaktionstyp sortiert.
 
-    ![Hinzufügen eines Kernzustands über den Inspektor mit ausgewähltem Zustand](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
+    ![Hinzufügen eines Kernzustands über inspector mit ausgewähltem Zustand](../images/interactive-element/InEditor/InteractiveElementAddCoreStateSelectState.png)
 
 1. Öffnen Sie das Foldout Ereigniskonfiguration, um die Ereignisse und Eigenschaften des Zustands anzeigen zu können.
 
@@ -83,10 +83,10 @@ Die Zustände in Interactive Element sind vom Typ `InteractionState` .  Enthält
 
 - **Name:** Der Name des Zustands.
 - **Wert:** Der Zustandswert.  Wenn der Status "On" (Ein) ist, ist der Zustandswert 1. Wenn der Status deaktiviert ist, ist der Zustandswert 0.
-- **Aktiv:** Gibt an, ob der Zustand derzeit aktiv ist. Der Wert für die Active-Eigenschaft ist true, wenn der Zustand eingeschaltet ist, false, wenn der Status deaktiviert ist. 
+- **Aktiv:** Gibt an, ob der Zustand derzeit aktiv ist. Der Wert für die Active-Eigenschaft ist true, wenn der Status eingeschaltet ist, false, wenn der Zustand deaktiviert ist. 
 - **Interaktionstyp:** Der Interaktionstyp eines Zustands ist der Typ der Interaktion, für die ein Zustand vorgesehen ist. 
   - `None`: Unterstützt keine Form der Eingabeinteraktion.
-  - `Near`: Unterstützung der Interaktion in der Nähe. Eingaben werden als nahezu interaktionsnah betrachtet, wenn eine artikulierte Hand direkten Kontakt mit einem anderen Spielobjekt hat, d. h. die Position, in der sich die artikulierte Hand in der Nähe der Position des Spielobjekts im Weltraum befindet.
+  - `Near`: Unterstützung der Interaktion in der Nähe. Eingaben werden als nahezu interaktionsnah betrachtet, wenn eine artikulierte Hand direkten Kontakt mit einem anderen Spielobjekt hat, d. h. die Position, an der sich die artikulierte Hand in der Nähe der Position des Spielobjekts im Weltraum befindet.
   - `Far`: Unterstützung der Ferninteraktion. Die Eingabe wird als Ferninteraktion betrachtet, wenn kein direkter Kontakt mit dem Spielobjekt erforderlich ist. Beispielsweise wird die Eingabe über controller ray oder gaze als Ferninteraktionseingabe betrachtet.
   - `NearAndFar`: Umfasst die Unterstützung von Nah- und Ferninteraktion. 
   - `Other`: Zeigerunabhängige Interaktionsunterstützung.
@@ -132,7 +132,7 @@ T stateNameEvents = interactiveElement.GetStateEvents<T>("StateName");
 
 Der Standardzustand ist für ein interaktives Element immer vorhanden.  Dieser Zustand ist nur aktiv, wenn alle anderen Status nicht aktiv sind.  Wenn ein anderer Zustand aktiv wird, wird der Standardzustand intern auf off festgelegt. 
 
-Ein interaktives Element wird mit dem Standard- und Fokusstatus initialisiert, der in der Statusliste vorhanden ist. Der Standardzustand muss immer in der Statusliste vorhanden sein. 
+Ein interaktives Element wird mit den Standard- und Fokuszuständen initialisiert, die in der Statusliste vorhanden sind. Der Standardzustand muss immer in der Statusliste vorhanden sein. 
 
 #### <a name="getting-default-state-events"></a>Abrufen von Standardzustandsereignissen
 
@@ -182,19 +182,19 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 #### <a name="focus-near-vs-focus-far-behavior"></a>Focus Near vs Focus Far Behavior 
 
-![Fokus nah und fern mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
+![Nah- und Fernfokus mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/FocusNearFocusFar.gif)
 
-### <a name="focus-near-state"></a>Fokus nah am Zustand
+### <a name="focus-near-state"></a>Fokus near state
 
-Der Focus Near-Zustand wird festgelegt, wenn ein Fokusereignis ausgelöst wird, und der primäre Zeiger ist der Zeiger Der Zeiger ist ein Hinweis auf eine interaktionsnahe Interaktion. 
+Der Fokus nah-Zustand wird festgelegt, wenn ein Fokusereignis ausgelöst wird und der primäre Zeiger der Poke-Zeiger ist, ein Hinweis auf eine nahezue Interaktion. 
 
-**Verhalten des fokussensischen Zustands** 
- ![ Fokus bei zustandsnäher Interaktion mit virtueller Hand](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
+**Fokus des Verhaltens des zustandsnahen Zustands** 
+ ![ Fokus near state with virtual hand interaction (Nahzustandsfokus mit Virtueller Handinteraktion)](../images/interactive-element/InEditor/Gifs/FocusNearStateEditor.gif) 
 
-**Fokus Near State Inspector** 
+**Focus Near State Inspector** 
  ![ Fokus in der Nähe der Komponente im Inspektor](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
-#### <a name="getting-focusnear-state-events&quot;></a>Abrufen von FocusNear-Zustandsereignissen
+#### <a name="getting-focusnear-state-events&quot;></a>Abrufen von FocusNear State Events
 
 Ereigniskonfigurationstyp für den FocusNear-Zustand: `FocusEvents`
 
@@ -212,17 +212,17 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 });
 ```
 
-### <a name="focus-far-state"></a>Focus Far State
+### <a name="focus-far-state"></a>Fokus ferner Zustand
 
-Der Focus Far-Zustand wird festgelegt, wenn der primäre Zeiger nicht der Zeiger "Zeiger" ist.  Beispielsweise werden der Standardstrahlzeiger des Controllers und der GGV-Zeiger (Anvieren, Geste, Stimme) als Zeiger für fernen Interaktionszeiger betrachtet.
+Der Fokusweit-Zustand wird festgelegt, wenn der primäre Zeiger nicht der Poke-Zeiger ist.  Beispielsweise werden der Standardmäßige Controllerstrahlzeiger und der GGV-Zeiger (Gaze, Gesture, Voice) als Ferninteraktionszeiger betrachtet.
 
-**Fokuszustandsverhalten** 
- ![ Fokuszustand weit entfernt mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
+**Fokus fernen Zustandsverhaltens** 
+ ![ Fokuszustand weit mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/FocusFarStateEditor.gif)
 
 **Focus Far State Inspector** 
- ![ Focus far-Komponente im Inspektor](../images/interactive-element/InEditor/FocusFarStateInspector.png)
+ ![ Komponente "Fokus fern" im Inspektor](../images/interactive-element/InEditor/FocusFarStateInspector.png)
 
-#### <a name="getting-focus-far-state-events&quot;></a>Abrufen von &quot;Focus Far State&quot;-Ereignissen
+#### <a name="getting-focus-far-state-events&quot;></a>Abrufen von Fokus-Far State-Ereignissen
 
 Ereigniskonfigurationstyp für den FocusFar-Zustand: `FocusEvents`
 
@@ -242,9 +242,9 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 
 ### <a name="touch-state"></a>Touchzustand
 
-Der Touchzustand ist ein Nahezu-Interaktionszustand, der festgelegt wird, wenn eine artikulierte Hand das Objekt direkt berührt.  Eine direkte Berührung bedeutet, dass der Zeigefinger der artikulierten Hand sehr nah an der Weltposition des Objekts liegt. Standardmäßig wird eine `NearInteractionTouchableVolume` Komponente an das -Objekt angefügt, wenn der Touch-Zustand der Statusliste hinzugefügt wird.  Zum Erkennen von Touchereignissen ist das Vorhandensein einer  `NearInteractionTouchableVolume` - oder `NearInteractionTouchable` -Komponente erforderlich.  Der Unterschied zwischen `NearInteractionTouchableVolume` und `NearInteractionTouchable` besteht darin, dass eine Berührung basierend `NearInteractionTouchableVolume` auf dem Collider des Objekts und innerhalb `NearInteractionTouchable` eines definierten Bereichs einer Ebene erkennt.
+Der Touchzustand ist ein zustandsnaher Interaktionszustand, der festgelegt wird, wenn eine artikulierte Hand das Objekt direkt berührt.  Eine direkte Berührung bedeutet, dass sich der Zeigefinger der artikulierten Hand sehr nah an der Weltposition des Objekts befindet. Standardmäßig wird eine Komponente an das -Objekt angefügt, `NearInteractionTouchableVolume` wenn der Touchzustand der Statusliste hinzugefügt wird.  Zum Erkennen von Touchereignissen ist das Vorhandensein einer -  `NearInteractionTouchableVolume` `NearInteractionTouchable` oder -Komponente erforderlich.  Der Unterschied zwischen und besteht in der Erkennung einer Berührung basierend auf dem Collider des Objekts und der Berührung innerhalb eines definierten Bereichs `NearInteractionTouchableVolume` `NearInteractionTouchable` einer `NearInteractionTouchableVolume` `NearInteractionTouchable` Ebene.
 
-**Touchzustandsverhalten** 
+**Verhalten des Touchzustands** 
  ![ Touchzustand mit Interaktion mit virtueller Hand](../images/interactive-element/InEditor/Gifs/TouchStateEditor.gif)
 
 **Touch State Inspector** 
@@ -275,7 +275,7 @@ touchEvents.OnTouchUpdated.AddListener((touchData) =>
 
 ### <a name="select-far-state"></a>Wählen Sie Far State (Fernzustand) aus.
 
-Der Select Far-Status ist die `IMixedRealityPointerHandler` Oberfläche.  Bei diesem Zustand handelt es sich um einen zustandsweiten Interaktionszustand, der einen Weitklick (Tippen in die Luft) erkennt und die Verwendung von Ferninteraktionszeigern wie dem Standardmäßigen Controllerstrahlzeiger oder dem GGV-Zeiger durchfing.  Der Status Far auswählen verfügt über eine Option unter dem Foldout für die Ereigniskonfiguration mit dem Namen `Global` . Wenn `Global` true ist, wird `IMixedRealityPointerHandler` als globaler Eingabehandler registriert.  Der Fokus auf ein Objekt ist nicht erforderlich, um Eingabesystemereignisse auszulösen, wenn ein Handler als global registriert ist.  Wenn ein Benutzer z. B. wissen möchte, wann immer die Geste zum Tippen/Auswählen in die Luft ausgeführt wird, unabhängig vom Objekt im Fokus, legen Sie `Global` auf TRUE fest. 
+Der Select Far-Status ist die `IMixedRealityPointerHandler` Oberfläche.  Bei diesem Zustand handelt es sich um einen fernen Interaktionszustand, der einen Weitklick (Tippen in die Luft) erkennt und die Verwendung von Ferninteraktionszeigern wie dem Standardmäßigen Controllerstrahlzeiger oder dem GGV-Zeiger durchfing.  Der Status Far auswählen verfügt über eine Option unter dem Foldout für die Ereigniskonfiguration mit dem Namen `Global` . Wenn `Global` true ist, wird `IMixedRealityPointerHandler` als globaler Eingabehandler registriert.  Der Fokus auf ein Objekt ist nicht erforderlich, um Eingabesystemereignisse auszulösen, wenn ein Handler als global registriert ist.  Wenn ein Benutzer z. B. wissen möchte, wann immer die Geste zum Tippen in die Luft/Auswahl ausgeführt wird, unabhängig vom Objekt im Fokus, legen Sie `Global` auf TRUE fest. 
 
 **Wählen Sie Far State Behavior (Fernzustandsverhalten) aus.** 
  ![ Auswählen von "fern" mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/SelectFarStateEditor.gif)
@@ -313,7 +313,7 @@ selectFarEvents.OnSelectClicked.AddListener((pointerEventData) =>
 
 ### <a name="clicked-state"></a>Clicked State
 
-Der Clicked-Status wird standardmäßig durch einen Fern-Interaktionsklick (Far-Status auswählen) ausgelöst.  Dieser Zustand wird intern auf "Ein" umgeschaltet, ruft das OnClicked-Ereignis auf und wird dann sofort in "Aus" umgeschaltet. 
+Der Zustand Clicked (Geklickt) wird standardmäßig durch einen Fern-Interaktionsklick (Far-Status auswählen) ausgelöst.  Dieser Zustand wird intern auf "Ein" umgeschaltet, ruft das OnClicked-Ereignis auf und wird dann sofort in "Aus" umgeschaltet. 
 
 > [!NOTE]
 > Das visuelle Feedback im Inspektor basierend auf der Zustandsaktivität ist für den Zustand "Geklickt" nicht vorhanden, da es sofort ein- und ausgeschaltet wird. 
@@ -331,7 +331,7 @@ Der zustandsweise Klicken kann über zusätzliche Einstiegspunkte mithilfe der -
 
 #### <a name="getting-clicked-state-events&quot;></a>Abrufen von Statusereignissen, auf die geklickt wird
 
-Ereigniskonfigurationstyp für den Zustand &quot;Geklickt&quot;: `ClickedEvents`
+Ereigniskonfigurationstyp für den zustands geklickten Status: `ClickedEvents`
 
 ```c#
 ClickedEvents clickedEvent = interactiveElement.GetStateEvents<ClickedEvents>(&quot;Clicked");
@@ -349,7 +349,7 @@ Die Zustände Ein und Aus umschalten sind ein Paar und müssen beide vorhanden s
 **ToggleOn und Toggle Off State Behavior** 
  ![ Ein- und Ausschalten mit Interaktionen virtueller Hand](../images/interactive-element/InEditor/Gifs/ToggleOnToggleOffStateEditor.gif)
 
-**ToggleOn und Toggle Off State Inspector** 
+**Ein- und Ausschalten des Zustandsinspektors** 
  ![ Umschalten der Komponente im Inspektor](../images/interactive-element/InEditor/ToggleOnToggleOffStateInspector.png)
 
 **Near and Far Toggle States Example**  
@@ -360,7 +360,7 @@ Die Zustände Ein und Aus umschalten sind ein Paar und müssen beide vorhanden s
 #### <a name="getting-toggle-on-and-toggle-off-state-events&quot;></a>Ein- und Ausschalten von Zustandsereignissen
 
 Ereigniskonfigurationstyp für den ToggleOn-Zustand: `ToggleOnEvents`  
-Ereigniskonfigurationstyp für toggleOff State: `ToggleOffEvents`
+Ereigniskonfigurationstyp für den ToggleOff-Zustand: `ToggleOffEvents`
 
 ```c#
 // Toggle On Events
@@ -382,26 +382,26 @@ toggleOffEvent.OnToggleOff.AddListener(() =>
 
 ### <a name="speech-keyword-state"></a>Speech-Schlüsselwortzustand
 
-Der Zustand des Speech-Schlüsselworts lauscht auf die Schlüsselwörter, die im Mixed Reality Speech-Profil definiert sind. Jedes neue Schlüsselwort MUSS vor der Laufzeit im Sprachbefehlsprofil registriert werden (schritte unten). 
+Der Status des Speech-Schlüsselworts lausiert auf die Schlüsselwörter, die im Mixed Reality Speech-Profil definiert sind. Jedes neue Schlüsselwort MUSS vor der Laufzeit im Sprachbefehlsprofil registriert werden (schritte unten). 
 
-**Verhalten des Speech-Schlüsselwortzustands** 
+**Zustandsverhalten des Speech-Schlüsselworts** 
  ![ Speech-Schlüsselwort mit virtueller Interaktion](../images/interactive-element/InEditor/Gifs/SpeechKeywordStateEditor.gif)
 
-**Sprachschlüsselwort-Zustandsinspektor** 
+**Zustandsinspektor des Speech-Schlüsselworts** 
  ![ Speech-Schlüsselwortkomponente im Inspektor](../images/interactive-element/InEditor/SpeechKeywordStateInspector.png)
 
 > [!NOTE]
-> Der Speech-Schlüsselwortzustand wurde im Editor ausgelöst, indem die F5-Taste im gif oben gedrückt wurde. Die Einrichtung in Editor-Tests für Sprache wird in den folgenden Schritten beschrieben. 
+> Der Zustand des Speech-Schlüsselworts wurde im Editor durch Drücken der F5-Taste in der GIF-Datei oben ausgelöst. Die einrichtung im Editor für Sprachtests wird in den folgenden Schritten beschrieben. 
 
 #### <a name="how-to-register-a-speech-commandkeyword"></a>Registrieren eines Speech-Befehls/-Schlüsselworts
 
 1. Auswählen des **MixedRealityToolkit-Spielobjekts**
 
-1. Wählen Sie **Kopieren und Anpassen** des aktuellen Profils aus.
+1. Wählen Sie **Kopieren und Aktuelles** Profil anpassen aus.
 
-1. Navigieren Sie zum Abschnitt Eingabe, und wählen **Sie Klonen** aus, um die Änderung des Eingabeprofils zu aktivieren.
+1. Navigieren Sie zum Abschnitt Eingabe, und wählen Sie **Klonen aus,** um die Änderung des Eingabeprofils zu aktivieren.
 
-1. Scrollen Sie nach unten zum Abschnitt Speech im Eingabeprofil, und klonen Sie das Sprachprofil.
+1. Scrollen Sie im Eingabeprofil nach unten zum Abschnitt Speech, und klonen Sie das Sprachprofil.
 
     ![Speech-Schlüsselwortprofil im MRTK-Spielobjekt](../images/interactive-element/InEditor/SpeechKeywordProfileClone.png) 
 
@@ -409,11 +409,11 @@ Der Zustand des Speech-Schlüsselworts lauscht auf die Schlüsselwörter, die im
 
     ![Hinzufügen eines neuen Speech-Schlüsselworts im MRTK-Profil](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeyword.png) 
 
-1. Geben Sie das schlüsselwort new ein. Optional: Ändern Sie KeyCode in F5 (oder einen anderen KeyCode), um Tests im Editor zu ermöglichen. 
+1. Geben Sie das schlüsselwort new ein. Optional: Ändern Sie den KeyCode in F5 (oder einen anderen KeyCode), um Tests im Editor zu ermöglichen. 
 
-    ![Konfigurieren des Speech-Schlüsselworts im MRTK-Profil](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
+    ![Konfigurieren des Sprachschlüsselworts im MRTK-Profil](../images/interactive-element/InEditor/SpeechKeywordProfileAddKeywordName.png) 
 
-1. Wechseln Sie zurück zum Zustandsinspektor Interactive Element Speech-Schlüsselwort, und wählen **Sie Schlüsselwort hinzufügen** aus. 
+1. Wechseln Sie zurück zum Zustandsinspektor des Speech-Schlüsselworts für interaktive Elemente, und wählen Sie **Schlüsselwort hinzufügen aus.** 
 
     ![Hinzufügen eines Schlüsselworts zur interaktiven Elementkomponente](../images/interactive-element/InEditor/SpeechKeywordAddKeyword.png) 
 
@@ -467,7 +467,7 @@ Der über inspector erstellte benutzerdefinierte Zustand wird mit der Standardzu
 
    Dieser benutzerdefinierte Zustand wird mit der Standardereigniskonfiguration `StateEvents` initialisiert, die die Ereignisse und `OnStateOn` `OnStateOff` enthält. Informationen zum Erstellen einer benutzerdefinierten Ereigniskonfiguration für einen neuen Zustand finden Sie unter Erstellen eines [benutzerdefinierten Zustands mit einer benutzerdefinierten Ereigniskonfiguration.](#creating-a-custom-state-with-a-custom-event-configuration)
     
-    ![Neuer Status in der interaktiven Elementkomponente](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
+    ![Neuer Zustand, der in der interaktiven Elementkomponente angezeigt wird](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
 
 
 ### <a name="how-to-create-a-custom-state-via-script&quot;></a>Erstellen eines benutzerdefinierten Zustands per Skript
@@ -489,17 +489,17 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 
 ### <a name="creating-a-custom-state-with-a-custom-event-configuration"></a>Erstellen eines benutzerdefinierten Zustands mit einer benutzerdefinierten Ereigniskonfiguration 
 
-Beispieldateien für einen benutzerdefinierten Zustand namens **Tastatur** befinden sich hier: MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
+Beispieldateien für einen benutzerdefinierten Zustand mit dem Namen **Tastatur** befinden sich hier: MRTK\SDK\Experimental\InteractiveElement\Examples\Scripts\CustomStateExample
 
-In den folgenden Schritten wird ein vorhandenes Beispiel für das Erstellen einer benutzerdefinierten Zustandsereigniskonfiguration und von Empfängerdateien beschrieben.
+In den folgenden Schritten wird ein vorhandenes Beispiel zum Erstellen einer benutzerdefinierten Zustandsereigniskonfiguration und von Empfängerdateien beschrieben.
 
-1. Stellen Sie sich einen Zustandsnamen vor.  Dieser Name muss eindeutig sein und darf nicht mit den vorhandenen Kernzuständen identisch sein. Im Rahmen dieses Beispiels lautet der Statusname **Tastatur.**
+1. Stellen Sie sich einen Zustandsnamen vor.  Dieser Name muss eindeutig sein und darf nicht mit den vorhandenen Kernzuständen identisch sein. Im Rahmen dieses Beispiels wird der Statusname Tastatur **sein.**
 
-1. Erstellen Sie zwei CS-Dateien mit dem Namen state name + "Receiver" und state name + "Events". Die Benennung dieser Dateien wird intern berücksichtigt und muss der Konvention für Statusname und Ereignis/Empfänger entsprechen. 
+1. Erstellen Sie zwei CS-Dateien mit dem Namen state name + "Receiver" und state name + "Events". Die Benennung dieser Dateien wird intern berücksichtigt und muss der Konvention für Zustandsname + Ereignis/Empfänger folgen. 
 
     ![Tastaturzustandsskripts](../images/interactive-element/InEditor/KeyboardStateFiles.png)
 
-1. Weitere Informationen zum Dateiinhalt finden Sie in den Dateien KeyboardEvents.cs und KeyboardReceiver.cs. Neue Ereigniskonfigurationsklassen müssen von `BaseInteractionEventConfiguration` erben, und neue Ereignisempfängerklassen müssen von `BaseEventReceiver` erben.  Beispiele für die Statuseinstellung für den Tastaturzustand befinden sich in der `CustomStateSettingExample.cs` Datei. 
+1. Weitere Informationen zu Dateiinhalten finden Sie in den Dateien KeyboardEvents.cs und KeyboardReceiver.cs. Neue Ereigniskonfigurationsklassen müssen von `BaseInteractionEventConfiguration` erben, und neue Ereignisempfängerklassen müssen von `BaseEventReceiver` erben.  Beispiele für die Zustandseinstellung für den Tastaturzustand befinden sich in der `CustomStateSettingExample.cs` Datei. 
 
 1. Fügen Sie den Zustand dem Interactive-Element mithilfe des Zustandsnamens hinzu. Der Zustandsname wird erkannt, wenn Ereigniskonfigurations- und Ereignisempfängerdateien vorhanden sind.  Die Eigenschaften in der benutzerdefinierten Ereigniskonfigurationsdatei sollten im Inspektor angezeigt werden.
 
@@ -514,25 +514,25 @@ In den folgenden Schritten wird ein vorhandenes Beispiel für das Erstellen eine
 
 Die Beispielszene für Interactive Element + State Visualizer befindet sich hier: MRTK\SDK\Experimental\InteractiveElement\Examples\InteractiveElementExampleScene.unity
 
-![Beispielszene mit interaktivem Element und Zustands-Schnellansicht](../images/interactive-element/InEditor/ExampleScene.png)
+![Beispielszene mit interaktiver Element- und Zustandsansicht](../images/interactive-element/InEditor/ExampleScene.png)
 
-### <a name="compressable-button"></a>Schaltfläche "Komprimierbar"
+### <a name="compressable-button"></a>Komprimierbare Schaltfläche
 
-Die Beispielszene enthält Prefabs mit den Namen und . Diese Prefabs spiegeln das Verhalten der Schaltflächen, die mit dem Interactive-Element und der `CompressableButton` `CompressableButtonToggle` Zustandsvis `PressableButtonHoloLens2` visualisiert werden. Die `CompressableButton` Komponente ist derzeit eine Kombination von mit als `PressableButton`  +  `PressableButtonHoloLens2` `BaseInteractiveElement` Basisklasse. 
+Die Beispielszene enthält Prefabs mit den Namen `CompressableButton` und `CompressableButtonToggle` . Diese Prefabs spiegeln das Verhalten der `PressableButtonHoloLens2` Schaltflächen wider, die mithilfe des interaktiven Elements und der Zustandsansicht erstellt werden. Die `CompressableButton` -Komponente ist derzeit eine Kombination von `PressableButton`  +  `PressableButtonHoloLens2` mit als `BaseInteractiveElement` Basisklasse. 
 
-## <a name="state-visualizer-experimental"></a>Zustands-Schnellansicht [Experimentell]
+## <a name="state-visualizer-experimental"></a>Zustandsansicht [Experimentell]
 
-Die Komponente State Visualizer fügt einem Objekt Animationen hinzu, die auf den in einer verknüpften Komponente des interaktiven Elements definierten Zuzuständen basieren. Diese Komponente erstellt Animationsobjekte, platziert sie im Ordner MixedRealityToolkit.Generated und ermöglicht eine vereinfachte Keyframeeinstellung für Animationen, indem einem Zielspielobjekt Animatable-Eigenschaften hinzugefügt werden. Um Animationsübergänge zwischen Zuzuständen zu ermöglichen, wird ein AnimatorController-Objekt erstellt, und ein Standardzustandscomputer wird mit zugeordneten Parametern und allen Zustandsübergängen generiert.  Der Zustandsautomat kann im Unity-Fenster Animator angezeigt werden.
+Die State Visualizer-Komponente fügt einem Objekt Animationen hinzu, die auf den Zuständen basieren, die in einer verknüpften interaktiven Elementkomponente definiert sind. Diese Komponente erstellt Animationsobjekte, platziert sie im Ordner MixedRealityToolkit.Generated und ermöglicht eine vereinfachte Einstellung des Animationsschlüsselrahmens durch Hinzufügen von animierbaren Eigenschaften zu einem Zielspielobjekt. Um Animationsübergänge zwischen Zuständen zu aktivieren, wird ein Animator Controller-Medienobjekt erstellt, und ein Standardzustandscomputer wird mit zugeordneten Parametern und allen Zustandsübergängen generiert.  Der Zustandsautomat kann im Animatorfenster von Unity angezeigt werden.
 
-### <a name="state-visualizer-and-unity-animation-system"></a>Zustands-Schnellansicht und Unity-Animationssystem
+### <a name="state-visualizer-and-unity-animation-system"></a>Zustandsansicht und Unity-Animationssystem
 
-Die Zustands-Schnellansicht nutzt derzeit das Unity-Animationssystem. 
+Die Zustandsansicht nutzt derzeit das Unity-Animationssystem. 
 
-Wenn die **Schaltfläche Generate New Animation Clips** (Neue Animationsclips generieren) in der Zustandsansicht gedrückt wird, werden neue Animationsclipressourcen basierend auf den Zustandsnamen im Interactive-Element generiert und im Ordner MixedRealityToolkit.Generated platziert. Die Animation Clip-Eigenschaft in jedem Zustandscontainer wird auf den zugeordneten Animationsclip festgelegt.
+Wenn die Schaltfläche **Neue Animationsclips generieren** in der Zustandsansicht gedrückt wird, werden neue Animationsclipressourcen basierend auf den Statusnamen im Interactive-Element generiert und im Ordner MixedRealityToolkit.Generated platziert. Die Animation Clip-Eigenschaft in jedem Zustandscontainer wird auf den zugeordneten Animationsclip festgelegt.
 
-![Animationsclips in der Zustands-Schnellansichtskomponente](../images/interactive-element/StateVisualizer/AnimationClips.png)
+![Animationsclips in der Zustandsansichtskomponente](../images/interactive-element/StateVisualizer/AnimationClips.png)
 
-Außerdem [wird ein Animatorzustandscomputer](https://docs.unity3d.com/Manual/AnimationOverview.html) generiert, um reibungslose Übergänge zwischen Animationsclips zu verwalten.  Standardmäßig verwendet der Zustandscomputer den Zustand ["Any State",](https://docs.unity3d.com/Manual/class-State.html) um Übergänge zwischen einem beliebigen Zustand im interactive-Element zu ermöglichen. 
+Außerdem wird [ein Animatorstatuscomputer](https://docs.unity3d.com/Manual/AnimationOverview.html) generiert, um reibungslose Übergänge zwischen Animationsclips zu verwalten.  Standardmäßig verwendet der Zustandscomputer [beliebige](https://docs.unity3d.com/Manual/class-State.html) Zustände, um Übergänge zwischen beliebigen Zuständen in Interactive Element zuzulassen. 
 
 [Zustandsansichten, die im Animator ausgelöst](https://docs.unity3d.com/Manual/AnimationParameters.html) werden, werden auch für jeden Zustand generiert. Die Triggerparameter werden in der Zustandsansicht verwendet, um eine Animation auszulösen.
 
@@ -561,7 +561,7 @@ Die Zustandsansicht muss einem Objekt über den Inspektor hinzugefügt werden un
 
     ![Festlegen des Statusvisuierungsziels](../images/interactive-element/StateVisualizer/SetTarget.png)
 
-1. Öffnen des Foldouts cube Animatable Properties (Animatable-Eigenschaften)
+1. Öffnen des Foldouts Cube Animatable Properties (Animatable-Eigenschaften)
 1. Wählen Sie das Dropdownmenü Animatable property (Animatable-Eigenschaft) und **dann Color (Farbe) aus.**
 
     ![Festlegen der Farbe der Zustandsansicht](../images/interactive-element/StateVisualizer/SetColor.png)
@@ -576,13 +576,13 @@ Die Zustandsansicht muss einem Objekt über den Inspektor hinzugefügt werden un
 
 1. Drücken Sie die Wiedergabe, und beobachten Sie die Farbänderung der Übergangsfarbe.
 
-    ![Beispiel für farblich geänderte Übergangsfarbe mit Interaktion mit virtueller Hand](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+    ![Beispiel für farbliche Übergangsänderung mit Interaktion virtueller Hand](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ## <a name="animatable-properties"></a>Eigenschaften, die animiert werden können
 
-Der Hauptzweck der animierbaren Eigenschaften besteht in der Vereinfachung der Keyframeeinstellung für Animationsclips.  Wenn ein Benutzer mit dem Unity Animation System vertraut ist und lieber Keyframes direkt für die generierten Animationsclips festlegen möchte, kann er einem Zielobjekt einfach keine animierbaren Eigenschaften hinzufügen und den Clip im Unity-Fenster Animation (Windows > Animation > Animation) öffnen. 
+Der Hauptzweck der animierbaren Eigenschaften besteht darin, die Keyframeeinstellung für Animationsclips zu vereinfachen.  Wenn ein Benutzer mit dem Unity Animation System vertraut ist und es vorziehen würde, Keyframes direkt für die generierten Animationsclips festzulegen, kann er einfach keine animierbaren Eigenschaften zu einem Zielobjekt hinzufügen und den Clip im Animationsfenster von Unity öffnen (Windows > Animation > Animation). 
 
-Wenn Sie die animierbaren Eigenschaften für die Animation verwenden, wird der Kurventyp auf EaseInOut festgelegt.
+Wenn Sie die animierbaren Eigenschaften für Animationen verwenden, wird der Kurventyp auf EaseInOut festgelegt.
 
 **Aktuelle animierbare Eigenschaften:**
 - [Skalierungsoffset](#scale-offset)
@@ -594,13 +594,13 @@ Wenn Sie die animierbaren Eigenschaften für die Animation verwenden, wird der K
 
 ### <a name="scale-offset"></a>Skalierungsoffset
 
-Die Eigenschaft Scale Offset Animatable übernimmt die aktuelle Skala des Objekts und fügt den definierten Offset hinzu.
+Die animierbare Eigenschaft Skalierungsoffset übernimmt die aktuelle Skalierung des Objekts und fügt den definierten Offset hinzu.
 
 ![Skalierungsoffset mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/ScaleOffset.gif)
 
 ### <a name="position-offset"></a>Positionsoffset
 
-Die Eigenschaft Position Offset Animatable nimmt die aktuelle Position des Objekts an und fügt den definierten Offset hinzu.
+Die Position Offset Animatable -Eigenschaft nimmt die aktuelle Position des -Objekts an und fügt den definierten Offset hinzu.
 
 ![Positionsoffset mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/PositionOffset.gif)
 
@@ -608,43 +608,43 @@ Die Eigenschaft Position Offset Animatable nimmt die aktuelle Position des Objek
 
 Die Color Animatable-Eigenschaft stellt die Hauptfarbe eines Materials dar, wenn das Material über eine Hauptfarbeigenschaft verfügt. Diese Eigenschaft animiert die `material._Color` -Eigenschaft.
 
-![Farbänderung des Fokus mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
+![Fokusfarbänderung durch Interaktion mit virtuellen Hand](../images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### <a name="shader-color"></a>Shaderfarbe
 
-Die shader color Animatable-Eigenschaft verweist auf eine Shadereigenschaft vom Typ Color. Für alle Shadereigenschaften ist ein Eigenschaftenname erforderlich. Das folgende GIF veranschaulicht das Animieren einer Shaderfarbeigenschaft namens Fill_Color, die nicht die Hauptmaterialfarbe ist.  Beobachten Sie die sich ändernden Werte im Materialinspektor.
+Die Animatable-Eigenschaft Shaderfarbe bezieht sich auf eine Shadereigenschaft vom Typ Color. Für alle Shadereigenschaften ist ein Eigenschaftenname erforderlich. Das folgende GIF zeigt das Animieren einer Shaderfarbeigenschaft namens Fill_Color, die nicht die Hauptmaterialfarbe ist.  Beobachten Sie die sich ändernden Werte im Materialinspektor.
 
-![Schattierungsfarbe mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
+![Farbton mit Interaktion mit virtueller Hand](../images/interactive-element/InEditor/Gifs/ShaderColor.gif)
 
 ### <a name="shader-float"></a>Shader Float
 
-Die Float Animatable-Eigenschaft des Shaders verweist auf eine Shadereigenschaft vom Typ float. Für alle Shadereigenschaften ist ein Eigenschaftenname erforderlich. Beobachten Sie in der folgenden GIF-Datei die sich ändernden Werte im Materialinspektor für die Eigenschaft "Eigenschaft". 
+Die Float Animatable-Eigenschaft des Shaders verweist auf eine Shadereigenschaft vom Typ float. Für alle Shadereigenschaften ist ein Eigenschaftenname erforderlich. Beobachten Sie im gif unten die sich ändernden Werte im Materialinspektor für die Eigenschaft "Materials". 
 
-![Shader float mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
+![Shader float with virtual hand interaction](../images/interactive-element/InEditor/Gifs/ShaderFloat.gif)
 
 ### <a name="shader-vector"></a>Shadervektor
 
-Die animierbare Shader Vector-Eigenschaft verweist auf eine Shadereigenschaft vom Typ Vector4. Für alle Shadereigenschaften ist ein Eigenschaftenname erforderlich. Beobachten Sie im gif unten die sich ändernden Werte im Materialinspektor für die Eigenschaft Tiling (Main Tex_ST). 
+Die Shader Vector Animatable-Eigenschaft verweist auf eine Shadereigenschaft vom Typ Vector4. Für alle Shadereigenschaften ist ein Eigenschaftenname erforderlich. Beobachten Sie im gif unten die sich ändernden Werte im Materialinspektor für die Tiling (Main Tex_ST)-Eigenschaft. 
 
 ![Shadervektor mit virtueller Handinteraktion](../images/interactive-element/InEditor/Gifs/ShaderVector.gif)
 
 
-### <a name="how-to-find-animatable-shader-property-names"></a>Suchen nach animierbaren Shader-Eigenschaftennamen
+### <a name="how-to-find-animatable-shader-property-names"></a>Suchen nach animierbaren Shadereigenschaftennamen
 
-1. Navigieren Sie zu Window > Animation > Animation
+1. Navigieren Sie zu Window > Animation > Animation.
 1. Stellen Sie sicher, dass das Objekt mit der Zustandsansicht in der Hierarchie ausgewählt ist.
-1. Auswählen eines beliebigen Animationsclips im Fenster "Animation"
-1. Wählen Sie **Eigenschaft hinzufügen** aus, und öffnen Sie das Foldout des Mesh-Renderers. 
+1. Auswählen eines beliebigen Animationsclips im Animationsfenster
+1. Wählen Sie **Add Property (Eigenschaft hinzufügen)** aus, und öffnen Sie das Foldout des Mesh-Renderers. 
 
-    ![Hinzufügen der Animationseigenschaft im Animatorfenster](../images/interactive-element/StateVisualizer/AnimationWindow.png)
+    ![Hinzufügen einer Animationseigenschaft im Animatorfenster](../images/interactive-element/StateVisualizer/AnimationWindow.png)
 
-1. Diese Liste enthält die Namen aller Animatable-Eigenschaftennamen. 
+1. Diese Liste enthält die Namen aller Animatable-Eigenschaftsnamen. 
 
     ![Animationseigenschaften des Mesh-Renderers im Animatorfenster](../images/interactive-element/StateVisualizer/MeshRendererProperties.png)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [**Schaltflächen**](../ux-building-blocks/button.md)
 - [**Begrenzungssteuerelement**](../ux-building-blocks/bounds-control.md)
-- [**Grid-Objektaufsammlung**](../ux-building-blocks/object-collection.md)
+- [**Grid-Objektauflistung**](../ux-building-blocks/object-collection.md)
 - [**RadialView-Solver**](../ux-building-blocks/solvers/solver.md)

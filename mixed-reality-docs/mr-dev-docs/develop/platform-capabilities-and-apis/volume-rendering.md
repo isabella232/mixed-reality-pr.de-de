@@ -1,34 +1,34 @@
 ---
 title: Volumengrafik
-description: Erfahren Sie, wie Sie Rich-Volumetrische-Bilder effizient mit Deckkraft und Farben in Windows Mixed Reality Renderings.
+description: Erfahren Sie, wie Sie umfangreiche volumetrische Bilder mit Deckkraft und Farbe in Windows Mixed Reality effizient rendern.
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
-keywords: volumetribild, volumenrendering, Leistung, gemischte Realität
-ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: volumetrisches Bild, Volumerendering, Leistung, Mixed Reality
+ms.openlocfilehash: 3843f0f4e49a0564b41d834231630d281aa9e874df8d35c4feaa4fe5bba0ed68
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008780"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220928"
 ---
 # <a name="volume-rendering"></a>Volumengrafik
 
-Informationen zu medizinischen MRT-oder Engineering-Volumes finden Sie unter [Volume Rendering auf Wikipedia](https://en.wikipedia.org/wiki/Volume_rendering). Diese "Volumetric Images" enthalten umfangreiche Informationen mit Deckkraft und farbiger Farbe im gesamten Volume, das nicht einfach als Oberflächen, wie z. b. [polygonale Netze](https://en.wikipedia.org/wiki/Polygon_mesh), ausgedrückt werden kann.
+Informationen zu medizinischen MRI- oder Engineering-Volumes finden Sie unter [Volume Rendering auf Wikipedia.](https://en.wikipedia.org/wiki/Volume_rendering) Diese "volumetrischen Bilder" enthalten umfassende Informationen mit Deckkraft und Farbe im gesamten Volume, die nicht einfach als Oberflächen wie [polygonale Gitternetze](https://en.wikipedia.org/wiki/Polygon_mesh)ausgedrückt werden können.
 
-Wichtige Lösungen zum Verbessern der Leistung
-1. Schlecht: naive Vorgehensweise: gesamtes Volume anzeigen, wird in der Regel zu langsam ausgeführt.
-2. Gut: ausschnittsebene: nur ein einzelnes Slice des Volumes anzeigen
-3. Gut: das untergeordnete Volume wird abgeschnitten: Es werden nur wenige Ebenen des Volumes angezeigt.
-4. Gut: Verringern der Auflösung des volumerendering (siehe ' Mixed Resolution Scene Rendering ')
+Wichtige Lösungen zur Verbesserung der Leistung
+1. BAD: Naïve Approach: Show Whole Volume, generally runs too slowly
+2. GUT: Schnittebene: Nur einen einzelnen Slice des Volumes anzeigen
+3. GOOD: Cutting Sub-Volume: Nur wenige Ebenen des Volumes anzeigen
+4. GUT: Verringern Sie die Auflösung des Volumerenderings (siehe "Szenenrendering mit gemischter Auflösung")
 
-Es gibt nur eine bestimmte Menge von Informationen, die von der Anwendung auf den Bildschirm in einem bestimmten Frame übertragen werden können. Dies ist die gesamte Arbeitsspeicher Bandbreite. Außerdem erfordert jede Verarbeitung (oder ' Schattierung '), die zum Transformieren der Daten für die Präsentation erforderlich ist, Zeit. Die wichtigsten Überlegungen zum Rendern von Volumes lauten wie folgt:
-* Screen-Width * Screen-Height * Screen-Count * Volume-Layer-on-this-Pixel = Total-Volume-Samples-per Frame
-* 1028 * 720 * 2 * 256 = 378961920 (100%) (vollständiges res-Volume: zu viele Beispiele)
-* 1028 * 720 * 2 * 1 = 1480320 (0,3% vollständig) (dünner Slice: 1 Stichprobe pro Pixel, reibungsloses ausführen)
-* 1028 * 720 * 2 * 10 = 14803200 (3,9% vollständig) (subvolumeslice: 10 Stichproben pro Pixel, wird ziemlich reibungslos ausgeführt, sieht 3D aus)
-* 200 * 200 * 2 * 256 = 20480000 (5% vollständig) (niedrigeres Volume: weniger Pixel, vollständiges Volume, sieht 3D-, aber etwas verschwommen)
+Es gibt nur eine bestimmte Menge an Informationen, die von der Anwendung auf den Bildschirm in einem bestimmten Frame übertragen werden können, d. h. die Gesamtspeicherbandbreite. Außerdem erfordert jede Verarbeitung (oder Schattierung), die zum Transformieren dieser Daten für die Darstellung erforderlich ist, Zeit. Die wichtigsten Aspekte beim Rendern von Volumes sind folgende:
+* Screen-Width * Screen-Height * Screen-Count * Volume-Layers-On-That-Pixel = Total-Volume-Samples-Per-Frame
+* 1028 * 720 * 2 * 256 = 378961920 (100 %) (Vollständiges Res-Volume: zu viele Beispiele)
+* 1028 * 720 * 2 * 1 = 1480320 (0,3 % voll) (schlankes Slice: 1 Stichprobe pro Pixel, wird reibungslos ausgeführt)
+* 1028 * 720 * 2 * 10 = 14803200 (3,9 % voll) (teilvolumiger Slice: 10 Stichproben pro Pixel, verläuft ziemlich reibungslos, sieht 3d aus)
+* 200 * 200 * 2 * 256 = 20480000 (5 % voll) (geringeres Res-Volume: weniger Pixel, vollständiges Volume, sieht 3D aus, sieht jedoch etwas unscharf aus)
 
 ## <a name="representing-3d-textures"></a>Darstellen von 3D-Texturen
 
@@ -87,7 +87,7 @@ float3 _VolBufferSize;
 
 ## <a name="shading-and-gradients"></a>Schattierung und Farbverläufe
 
-Vorgehensweise beim schattieren eines Volumes (z. b. von MRT) für eine sinnvolle Visualisierung. Die primäre Methode besteht darin, ein "Intensitäts Fenster" (min und max) zu haben, in dem Sie die Intensität anzeigen möchten, und einfach in diesen Bereich zu skalieren, um die schwarze und weiße Intensität anzuzeigen. Eine ' Color-Ramp ' kann dann auf die Werte in diesem Bereich angewendet und als Textur gespeichert werden, sodass verschiedene Teile des Intensität-Spektrums unterschiedliche Farben schattiert werden können:
+Schattierung eines Volumes, z. B. MRI, zur nützlichen Visualisierung. Die primäre Methode besteht darin, ein "Intensitätsfenster" (min. und max.) zu haben, in dem Sie Dietensitäten anzeigen möchten, und einfach in diesen Raum zu skalieren, um die Schwarz-Weiß-Intensität anzuzeigen. Eine "Farbverlauf" kann dann auf die Werte innerhalb dieses Bereichs angewendet und als Textur gespeichert werden, sodass verschiedene Teile des Intensitätsspektrums unterschiedliche Farben schattiert werden können:
 
 ```
 float4 ShadeVol( float intensity ) {
@@ -98,7 +98,7 @@ float4 ShadeVol( float intensity ) {
    color.rgba = tex2d( ColorRampTexture, float2( unitIntensity, 0 ) );
 ```
 
-In vielen unserer Anwendungen speichern wir unsere Volumes sowohl als rohintensität als auch als Segmentierungs Index (zum Segmentieren verschiedener Teile wie Skin und Bone). diese Segmente werden von Experten in dedizierten Tools erstellt. Dies kann mit dem oben beschriebenen Ansatz kombiniert werden, um eine andere Farbe oder sogar eine andere Farbskala für jeden Segment Index zu platzieren:
+In vielen unserer Anwendungen speichern wir in unserem Volume sowohl einen rohen Intensitätswert als auch einen "Segmentierungsindex" (um verschiedene Teile wie Skin und Skin zu segmentieren; diese Segmente werden von Experten in dedizierten Tools erstellt). Dies kann mit dem oben beschriebenen Ansatz kombiniert werden, um eine andere Farbe oder sogar eine andere Farbverlaufsverlauf für jeden Segmentindex zu verwenden:
 
 ```
 // Change color to match segment index (fade each segment towards black):
@@ -107,7 +107,7 @@ In vielen unserer Anwendungen speichern wir unsere Volumes sowohl als rohintensi
 
 ## <a name="volume-slicing-in-a-shader"></a>Volumeslicing in einem Shader
 
-Ein hervorragend erster Schritt besteht darin, eine "Slicing Plane" zu erstellen, die sich durch das Volume bewegen kann, "Slicing" und die Überprüfungs Werte an jedem Punkt. Dabei wird davon ausgegangen, dass es einen "volumespace"-Cube gibt, der den Speicherort des Volumes im Raum der Welt darstellt, der als Verweis zum Platzieren der Punkte verwendet werden kann:
+Ein guter erster Schritt besteht darin, eine "Aufschneidende Ebene" zu erstellen, die sich durch das Volume bewegen, "aufschneiden" kann und wie die Scanwerte an jedem Punkt durchgeführt werden. Dabei wird davon ausgegangen, dass es einen VolumeSpace-Cube gibt, der darstellt, wo sich das Volume im Weltraum befindet, der als Verweis zum Platzieren der Punkte verwendet werden kann:
 
 ```
 // In the vertex shader:
@@ -120,9 +120,9 @@ Ein hervorragend erster Schritt besteht darin, eine "Slicing Plane" zu erstellen
  float4 color = ShadeVol( SampleVol( volSpace ) );
 ```
 
-## <a name="volume-tracing-in-shaders"></a>Volumeablauf Verfolgung in Shadern
+## <a name="volume-tracing-in-shaders"></a>Volumeablaufverfolgung in Shadern
 
-Verwenden der GPU zum Durchführen einer subvolumenablaufverfolgung (durchläuft einige einige Voxels tief, dann Ebenen der Daten von hinten nach vorne):
+Gewusst wie: Verwenden der GPU für die Ablaufverfolgung von untergeordneten Läufen (durchläuft einige Voxel tief und dann Ebenen der Daten von zurück nach vorne):
 
 ```
 float4 AlphaBlend(float4 dst, float4 src) {
@@ -164,9 +164,9 @@ float4 AlphaBlend(float4 dst, float4 src) {
  float4 color = volTraceSubVolume( volSpace, cameraInVolSpace );
 ```
 
-## <a name="whole-volume-rendering"></a>Gesamtes volumenrendering
+## <a name="whole-volume-rendering"></a>Rendering ganzer Volumes
 
-Wenn Sie den obigen Code ändern, wird Folgendes angezeigt:
+Wenn Sie den obigen untergeordneten Code ändern, erhalten wir Folgendes:
 
 ```
 float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
@@ -177,15 +177,15 @@ float4 volTraceSubVolume(float3 objPosStart, float3 cameraPosVolSpace) {
    int numLoops = min( distanceInVoxels, maxSamples ); // put a min on the voxels to sample
 ```
 
-## <a name="mixed-resolution-scene-rendering"></a>Rendern von gemischten Auflösungs Szenen
+## <a name="mixed-resolution-scene-rendering"></a>Szenenrendering mit gemischter Auflösung
 
-Gewusst wie: Rendering eines Teils der Szene mit niedriger Auflösung und Zurücksetzen der Szene:
-1. Richten Sie zwei Off-Screen-Kameras ein, um jedes Auge zu verfolgen, das jeden Frame aktualisiert.
-2. Einrichten von zwei Renderingzielen mit niedriger Auflösung (d. h. 200 x 200), die von den Kameras dargestellt werden
-3. Richten Sie einen Quad ein, der vor dem Benutzer wechselt.
+So rendern Sie einen Teil der Szene mit geringer Auflösung und setzen ihn wieder ein:
+1. Richten Sie zwei Off-Screen-Kameras ein, eine, um jedem Auge zu folgen, das jeden Frame aktualisiert.
+2. Einrichten von zwei Renderzielen mit niedriger Auflösung (d.b. jeweils 200 x 200), in die die Kameras gerendert werden
+3. Einrichten eines Quaders, das sich vor dem Benutzer bewegt
 
 Jeder Frame:
-1. Zeichnen Sie die Renderziele für jedes Auge bei niedriger Auflösung (Volumedaten, teure Shaders usw.).
-2. Zeichnen Sie die Szene normal als vollständige Auflösung (Meshes, UI usw.)
-3. Zeichnen Sie einen Quad vor dem Benutzer, über die Szene, und projizieren Sie die auf diese
-4. Ergebnis: visuelle Kombination von Elementen mit vollständiger Auflösung mit geringer Auflösung, aber Volumedaten mit hoher Dichte
+1. Zeichnen Sie die Renderziele für jedes Auge mit geringer Auflösung (Volumendaten, teure Shader usw.).
+2. Zeichnen Sie die Szene normal als vollständige Auflösung (Gitternetze, Benutzeroberfläche usw.).
+3. Zeichnen Sie ein Quader vor dem Benutzer, über die Szene, und pro project the low-res renders on that
+4. Ergebnis: visuelle Kombination von Vollständigauflösungselementen mit Daten mit geringer Auflösung, aber hoher Dichte

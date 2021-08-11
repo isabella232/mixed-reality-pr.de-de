@@ -4,150 +4,150 @@ description: Liste der MRTK-Autoren
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, C#, Mitwirkende, Community
-ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, C#, Contributors, Community
+ms.openlocfilehash: b80b61549d4780dcbc2dace411beba2d268caf94fc38939bbce39eadffc8077c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177290"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228720"
 ---
 # <a name="authors"></a>Authors
 
-Das Microsoft Mixed Reality Toolkit ist ein Gemeinsames Projekt, das Beiträge von Einzelpersonen auf der ganzen Welt enthält. Wir freuen uns bei allen, die diese haben und weiterhin mitwirken.
+Das Microsoft Mixed Reality Toolkit ist ein Gemeinsames Projekt, das Beiträge von Einzelpersonen auf der ganzen Welt enthält. Vielen Dank an alle, die über verfügen und weiterhin mit uns beitragen.
 
 - achaperon
 - Adam Adam (AdamMitchell-ms)
-- Addison Linville (enradikalad)
+- Addison Linville (radischeAder)
 - ADP-JoNeff
-- afarfar
-- Gegen Blitz (AgainstLightning)
+- Afarfarfar
+- Against Lightning (AgainstLightning)
 - alandergrouse (alandergrouse)
-- Alex Floyd (elbuchimpsma)
-- Andrew Hall (ryznoa)
-- Zap Zachesov (googlan)
+- Alex Floyd (elbuchefsma)
+- Andrew Hall (ryzngard)
+- Zachesov (Googlan)
 - Anuraag Puri (anuraag016)
-- ouflMS
-- Ben Senderard (genbod)
-- Solladette Thalzweig (thalbern)
-- Soll Oustriousre (Oustriere)
+- beiouflMS
+- Ben Sollard (Genbod)
+- Ttenadette Thaltte (thalbern)
+- Ige Oustriére (Oustriere)
 - Blake Gross (blgrossMS)
-- Brandon Brandtoisler (brandf)
-- Trunk Truong (solltruong93)
+- Brandon Brandtöffler (brandf)
+- Truong (): Truong (Wahrer Truong93)
 - C. M. Barth (chrisfromwork)
-- Soll (Soll-Micka)
-- cartwrightluke
-- Casey Crabb (ptc-corporab)
+- Zwischen und über die Ns-Mail-15-Jahre
+- cartwrightusche
+- Casey Crabb (ptc-ccrabb)
 - CDiaz-MS
 - cefoot
-- -Vergrößerung
+- -100000000
 - cihankurt98
 - CoPrez
-- Crististo Carvalhisto (ccarvalhisto)
-- Daniel Soll (danielungmann-ms)
-- David Evans (phoser)
-- DavidJs (djohnsomsft)
+- C wie Carvalhätz (ccarvalharr)
+- Daniel Soll (danielchefmann-ms)
+- David Evans (ratessphoer)
+- David Johnson (djohnsomsft)
 - David Kline (davidkline-ms)
 - deibich
-- soll nicht
+- -Bu
 - Derek (derekfreed)
-- Dino Fejzagiarische (FejZa)
-- Soll Songür (SollSononi)
-- TerrassischAwkloro
+- Dino Fejzagi): (FejZa)
+- Writing Songür (WritingSonchef)
+- StubApulloro
 - Eric Carter (Ecnassianer)
-- Eric Maximcus (MRW-Eric)
+- EricRiccus (MRW-Eric)
 - Eric O'Brien (ericob)
 - Eric Provencher (provencher)
-- zzmargraff (meulta)
-- Eusebiu –Eusebiu (eusebiu)
+- gsmargraff (meulta)
+- Eusebiu Mussu (eusebiu)
 - Evan Tice (in2dair)
-- Finn Sin sinus (Zee2)
-- Dass Jasche (SollJa)
+- Finn Sinündlich (Zee2)
+- Einer Jasche ():
 - Forrest Trepte (ForrestTrepte)
-- Une Clasadonte (musssaf)
-- gauravb4
-- Soll Johnston (gejohnst)
-- dassbdev (sollbdev)
+- Clasadonte (Clasadonte)
+- garavb4
+- Johnston (Gejohnst)
+- beibdev (nr. bdev)
 - Grace Lee (Grayclee)
-- Beim Übersen (gr über die 1600000000000
-- Hexadeon Hexadene (hferrone)
-- Sollon Yu (tibonjunk)
+- Grussin (Grlasses)
+- Sollon ( hferrone)
+- Sollon Yu ():/
 - hybridherbst
-- Hyung-il Centers (hyungilkim)
-- Jack Hue (jackyangzzh)
+- Hyung-il Il (hyungilkim)
+- Jack Jack (jackzzzzh)
 - Jared Bienz [MSFT] (jbienzms)
 - Jarod (Jarodshow)
-- Jerome Mutbert (djee-ms)
-- Jesse Vander Does (FreakTheMighty)
+- JeromeJsbert (djee-ms)
+- Jchef Vander Does (SollTheMighty)
 - John (johnppella)
-- Jon Palmer (JonPalmerGD)
-- Jon Dana (Nakda)
+- Jon Palmer (PalmerGD)
+- Ale Dana (Nakda)
 - Jon Palmer (JPalmerDev)
 - Joost van Schaik (LocalJoost)
-- JoshWiegener (jwitdrossel)
-- bei der
+- Josh Mussner (jwittner)
+- trära
 - Julia Schwarz (julenka)
-- im Juli 2016
-- BurJik Lee (fnwinter)
-- Ken Subjektub über ken (KenBinub über einen 1000-Prozent-160-Teil)
-- Soll1 (Soll1LG)
-- Kevin Soll (KevinKennedy)
+- -loehr-kg
+- Neujik Lee (fnwinter)
+- Ken Saiubzak (KenSaiubzak)
+- Igen1 (Igen1LG)
+- KevinIge (KevinKennedy)
 - Kevin Semple (polar-kev)
-- im 1.
-- kiyasu (holohkö)
-- Kborububub (K beiderUbubs)
-- Sollis (keveves)
+- mehr als 1
+- kjansu (holohjan)
+- Ksaiubzak (Ksaiubzak)
+- Falis (keveves)
 - LaneMax
-- Soll Simkins (Raillauf)
+- Simkins (Railchef)
 - Luis Valverde (luval-microsoft)
 - Luis Valverde (luis-valverde-ms)
-- Soll Tönne (solltoenneMS)
+- Itit Tönne (solltoenneMS)
 - Maciej Borowik (macborow)
-- Malcolm Tychenko (MalcolmTyautomat)
+- Malcolm Tycola (MalcolmTyprotokoll)
 - Marek Stój (marek-stoj)
 - Mark Finch (fast-slow-still)
-- MatteoIansiani (mvaloriani)
-- Mate Soll (matthejo)
-- MaxChef-MS
+- MatteoWertiani (mvaloriani)
+- Links (Matthejo)
+- Max Maxime-MS
 - mbeagley-MS
 - michael (insominx)
-- Michael House (Michael-House)
-- Michael Ko wies (mpkoz)
+- Michael House (michael-house)
+- Michael Ko kose (mpkoz)
 - ms738
 - Myranda (myrandaGoesToSpace)
-- Itit Oätzer (naostranMS)
+- Soll Oierer (naostranMS)
 - Niall Milsom (MenelvagorMilsom)
-- ksuke
-- Las Salandin (ossala)
+- soll nicht mehr
+- Sassalandin (ossala)
 - PatientEz
 - Patrick Cook (darax)
-- ): AllBecomesGood
-- ritritin
+- Soll (AllBecomesGood)
+- ritoriin
 - Robert Onulak (Ziugy)
-- Chef Sonnino (Siehe auch:
-- RogPodge
-- Dabei muss es sich um einen Bewegweger für Diesmeenk -1000-000-000-0
-- House (Listehouse)
+- Soll Sonnino (musss)
+- SollPodge
+- Soll Smeenk (musssmeenk)
+- Listehouse (Listehouse)
 - rwinj
-- SollinMGeorge
+- UlatorinMGeorge
 - Sarah (SarahSexton)
-- Shawn Gwin (sgwin)
-- Rjya T wies (decoc)
-- Simon (Darkside) Simon (SimonDarksideJ)
+- Rankn Gwin (sgwin)
+- Decoc (Decoc)
+- Simon (Darkside) Jackson (SimonDarksideJ)
 - sostel
-- Srinjoy Mussumdar (srinjoym)
-- Chef Wasserchef (wassx)
+- Srinjoy Bimumdar (srinjoym)
+- Martin Wasserproxy (wassx)
 - Stephen Hodgson (StephenHodgson)
-- Steve Chef (xwipeoutx)
+- Steve Ladung (xwipeoutx)
 - Sue Loh [MS] (sloh-ms)
 - tarukosu (tarukosu)
 - Tim Gerken (timGerken)
-- Todd Soll (antz)
-- TroyIgeell (Troy-Igenell)
+- ToddAnte (tensantz)
+- TroyOseell (Troy-Mooell)
 - Tux (NoTuxNoBux)
 - Vanessa Oliva (vaoliva)
-- W dsgvo (W dsgv.666)
+- W über W e (W e666)
 - Will (wiwei)
-- (" ("Wi")
+- Wifi Rhät (wi wlan)
 - Yoon Park (cre8ivepark)
-- yoyo (Yoyozilla)
+- yoyo (Yoyzoilla)

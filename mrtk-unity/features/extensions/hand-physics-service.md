@@ -1,18 +1,18 @@
 ---
-title: Hand-Physikalischer Dienst
-description: Dokumentation zur Verwendung des Erweiterungsdiensts "Hand physics" in MRTK
+title: Handphysikdienst
+description: Dokumentation zur Verwendung des Erweiterungsdiensts "Hand physics" im MRTK
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f54f8dabddba03bc279a090bf1c62b25656e64109b3b5671a4ed50d070445f14
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221726"
 ---
-# <a name="hand-physics-service"></a>Hand-Physikalischer Dienst
+# <a name="hand-physics-service"></a>Handphysikdienst
 
 ![Hand Physics Extension Service](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 
@@ -38,11 +38,11 @@ Steuert, welches Prefab auf Fingerspitzen instanziiert wird. Damit der Dienst wi
 - Ein Collider
 - `JointKinematicBody`-Komponente
 
-### <a name="use-palm-kinematic-body"></a>Verwenden des kinetischen Handflächenkörpers
+### <a name="use-palm-kinematic-body"></a>Verwenden des kinematischen Handflächenkörpers
 
 Steuert, ob der Dienst versucht, ein Prefab auf der Handfläche zu instanziieren.
 
-### <a name="palm-kinematic-body-prefab"></a>Handflächen-Kinematic Body Prefab
+### <a name="palm-kinematic-body-prefab"></a>Wad kinematic body prefab
 
 Wenn `UsePalmKinematicBody` aktiviert ist, ist dies das Prefab, das instanziiert wird. Genau wie `FingerTipKinematicBodyPrefab` erfordert dieses Prefab:
 
@@ -52,4 +52,4 @@ Wenn `UsePalmKinematicBody` aktiviert ist, ist dies das Prefab, das instanziiert
 
 ## <a name="how-to-use-the-service"></a>Verwenden des Diensts
 
-Verwenden Sie nach der Aktivierung die -Eigenschaft eines Colliders, `IsTrigger` um Kollisionsereignisse von allen 10 Ziffern (und Handflächen, wenn sie aktiviert sind) zu empfangen.
+Verwenden Sie nach der Aktivierung die -Eigenschaft eines beliebigen Colliders, `IsTrigger` um Kollisionsereignisse von allen 10 Ziffern (und Handflächen, wenn sie aktiviert sind) zu empfangen.

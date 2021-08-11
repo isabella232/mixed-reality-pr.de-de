@@ -6,12 +6,12 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Farbe, Licht, Materialien, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2e1626e72d49107c2a83bf1123b306d3ee5c8640
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 50789faa44e6786c0d9fd0b146daa84f459df451bedc52f06073e742ea8064a0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600359"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219860"
 ---
 # <a name="color-light-and-materials"></a>Farbe, Licht und Materialien
 
@@ -19,17 +19,17 @@ ms.locfileid: "110600359"
 
 Das Entwerfen von Inhalten für Mixed Reality erfordert eine sorgfältige Überlegung von Farbe, Beleuchtung und Materialien für alle Ihre virtuellen Ressourcen. Zu den Beweggründen kann die Verwendung von Licht und Material gehören, um den Ton einer immersiven Umgebung zu setzen, während funktionale Zwecke die Verwendung von Farben umfassen können, um Benutzer vor einer bevorstehenden Aktion zu warnen. Jede dieser Entscheidungen muss gegen die Möglichkeiten und Einschränkungen des Zielgeräts Ihrer Benutzererfahrung abgewogen werden.
 
-Im Folgenden finden Sie Richtlinien für das Rendern von Medienressourcen auf immersiven und holografischen Headsets. Viele davon sind eng mit anderen technischen Bereichen verknüpft, und [](color-light-and-materials.md#see-also) eine Liste verwandter Themen finden Sie im Abschnitt Siehe auch am Ende dieses Artikels.
+Im Folgenden finden Sie Richtlinien für das Rendern von Medienressourcen auf immersiven und holografischen Headsets. Viele davon sind eng mit anderen technischen Bereichen verknüpft, und eine Liste verwandter Themen finden Sie im Abschnitt [Siehe](color-light-and-materials.md#see-also) auch am Ende dieses Artikels.
 
 ## <a name="rendering-on-immersive-vs-holographic-devices"></a>Rendering auf immersiven und holografischen Geräten
 
-Inhalte, die in immersiven Headsets gerendert werden, werden visuell anders angezeigt als Inhalte, die in holografischen Headsets gerendert werden. Immersive Headsets rendern inhalte zwar in der Regel so, wie Sie es auf einem 2D-Bildschirm erwarten würden, holografische Headsets wie HoloLens verwenden farbkonsquentielle RGB-Anzeigen, um Hologramme zu rendern.
+Inhalte, die in immersiven Headsets gerendert werden, werden visuell anders angezeigt als Inhalte, die in holografischen Headsets gerendert werden. Immersive Headsets rendern inhalte zwar in der Regel so, wie Sie es auf einem 2D-Bildschirm erwarten würden, holografische Headsets wie HoloLens verwenden jedoch farbkonntente RGB-Anzeigen, um Hologramme zu rendern.
 
-Nehmen Sie sich immer Zeit, ihre holografischen Erfahrungen in einem holografischen Headset zu testen. Die Darstellung des Inhalts, selbst wenn er speziell für holografische Geräte erstellt wurde, unterscheidet sich, wie auf sekundären Monitoren, Momentaufnahmen und in der ansichtsbeobachten Ansicht zu sehen. Denken Sie daran, erfahrungen mit einem Gerät zu gehen, die Beleuchtung von Hologrammen zu testen und von allen Seiten (sowie von oben und unten) zu beobachten, wie Ihre Inhalte gerendert werden. Testen Sie unbedingt mit einer Reihe von Helligkeitseinstellungen auf dem Gerät. Es ist unwahrscheinlich, dass alle Benutzer eine angenommene Standardeinstellung und eine Vielzahl von Beleuchtungsbedingungen gemeinsam verwenden.
+Nehmen Sie sich immer Zeit, um Ihre holografischen Erfahrungen in einem holografischen Headset zu testen. Die Darstellung des Inhalts unterscheidet sich auch dann, wenn er speziell für holografische Geräte erstellt wurde, wie auf sekundären Monitoren, Momentaufnahmen und in der ansichtsbeobachten Ansicht zu sehen. Denken Sie daran, erfahrungen mit einem Gerät zu gehen, die Beleuchtung von Hologrammen zu testen und von allen Seiten (sowie von oben und unten) zu beobachten, wie Ihre Inhalte gerendert werden. Testen Sie unbedingt mit einer Reihe von Helligkeitseinstellungen auf dem Gerät. Es ist unwahrscheinlich, dass alle Benutzer eine angenommene Standardeinstellung und eine Vielzahl von Beleuchtungsbedingungen gemeinsam verwenden.
 
 ## <a name="fundamentals-of-rendering-on-holographic-devices"></a>Grundlagen des Renderings auf holografischen Geräten
 
-* **Holografische Geräte verfügen über additive** Displays– Hologramme werden durch Hinzufügen von Licht aus der realen Welt zum Licht erstellt– Weiß wird hell und Schwarz transparent angezeigt.
+* **Holografische Geräte** verfügen über additive Displays – Hologramme werden durch Hinzufügen von Licht zum Licht aus der realen Welt erstellt– Weiß wird hell und Schwarz transparent angezeigt.
 
 * **Die Auswirkung der Farben variiert je nach** Umgebung des Benutzers: Es gibt viele verschiedene Beleuchtungsbedingungen im Raum eines Benutzers. Erstellen Sie Inhalte mit geeigneten Kontrastebenen, um die Übersichtlichkeit zu verbessern.
 
@@ -39,13 +39,13 @@ Nehmen Sie sich immer Zeit, ihre holografischen Erfahrungen in einem holografisc
 
 Aufgrund der Art von additiven Displays können bestimmte Farben auf holografischen Displays unterschiedlich angezeigt werden. Einige Farben werden in Beleuchtungsumgebungen angezeigt, während andere als weniger einflussreich erscheinen. Kalte Farben tendieren dazu, in den Hintergrund zu wechseln, während warme Farben in den Vordergrund springen. Berücksichtigen Sie diese Faktoren, wenn Sie Farben in Ihren Erfahrungen untersuchen:
 
-* **Rendern von hellen Farben:** Weiß erscheint hell und sollte nur wenig verwendet werden. Ziehen Sie in den meisten Fällen einen weißen Wert um R 235 G 235 B 235 in Betracht. Große helle Bereiche können zu Benutzerbeschwerden führen. Für die Hintergrundfarbe des Benutzeroberflächenfensters wird empfohlen, dunkle Farben zu verwenden.
+* **Rendern von hellen Farben:** Weiß erscheint hell und sollte nur wenig verwendet werden. In den meisten Fällen sollten Sie einen weißen Wert um R 235 G 235 B 235 in Betracht ziehen. Große helle Bereiche können zu Benutzerbeschwerden führen. Für die Hintergrundfarbe des Benutzeroberflächenfensters wird empfohlen, dunkle Farben zu verwenden.
 
-* **Rendern dunkler Farben:** Aufgrund der Art von additiven Displays werden dunkle Farben transparent angezeigt. Ein voll schwarzes Objekt wird sich nicht von der realen Welt unterscheiden. Siehe Alphakanal weiter unten. Probieren Sie einen sehr dunkelgrauen RGB-Wert wie 16,16,16 aus, um das Aussehen von "schwarz" zu erhalten.
+* **Rendern dunkler Farben:** Aufgrund der Art von additiven Displays werden dunkle Farben transparent angezeigt. Ein massives schwarzes Objekt wird sich nicht von der realen Welt unterscheiden. Siehe Alphakanal weiter unten. Probieren Sie einen sehr dunkelgrauen RGB-Wert wie 16,16,16 aus, um das Aussehen von "schwarz" zu erhalten.
 
 * **Farbeinheitlichkeit:** Hologramme werden in der Regel so hell gerendert, dass sie unabhängig vom Hintergrund farblich einheitlich sind. Große Bereiche können zu "Blotlot" werden. Vermeiden Sie große Bereiche mit hellem Vollton.
 
-* **Gamut:** HoloLens profitiert von einem "breiten Farbton", der dem Konzept von Adobe RGB ähnelt. Daher können einige Farben unterschiedliche Qualitäten und Darstellungen auf dem Gerät zeigen.
+* **Gamut:** HoloLens profitieren von einem "breiten Farbumfang", der dem Konzept von Adobe RGB ähnelt. Daher können einige Farben unterschiedliche Qualitäten und Darstellungen auf dem Gerät zeigen.
 
 * **Gamma:** Die Helligkeit und der Kontrast des gerenderten Bilds variieren zwischen immersiven und holografischen Geräten. Diese Geräteunterschiede scheinen oft dunkle Farb- und Schattenbereiche zu machen, die mehr oder weniger hell sind.
 
@@ -53,9 +53,9 @@ Aufgrund der Art von additiven Displays können bestimmte Farben auf holografisc
 
 ## <a name="technical-considerations"></a>Technische Überlegungen
 
-* **Aliasing:** Denken Sie an Aliasing, verzoffene oder "100 Schritte", bei denen der Rand der Geometrie eines Hologramms der realen Welt entspricht. Die Verwendung von Texturen mit hohen Details kann diesen Effekt verstärken. Texturen sollten zugeordnet und die Filterung aktiviert werden. Ziehen Sie in Betracht, die Ränder von Hologrammen zu verfingen, oder fügen Sie eine Textur hinzu, die einen schwarzen Randrand um Objekte erstellt. Vermeiden Sie nach Möglichkeit eine schlanke Geometrie.
+* **Aliasing:** Denken Sie an Aliasing, verzoffene oder "unglige Schritte", bei denen der Rand der Geometrie eines Hologramms der realen Welt entspricht. Die Verwendung von Texturen mit hohen Details kann diesen Effekt verstärken. Texturen sollten zugeordnet und die Filterung aktiviert werden. Ziehen Sie in Betracht, die Ränder von Hologrammen zu verfingen, oder fügen Sie eine Textur hinzu, die einen schwarzen Randrand um Objekte erstellt. Vermeiden Sie nach Möglichkeit eine schlanke Geometrie.
 
-* **Alphakanal:** Sie müssen ihren Alphakanal für alle Teile, in denen Sie kein Hologramm rendern, vollständig transparent löschen. Wenn Sie das Alpha undefiniert lassen, führt dies zu visuellen Artefakten, wenn Bilder/Videos vom Gerät oder mit Der Bildansicht (Bzw. mit Der Bildansicht) gemacht werden.
+* **Alphakanal:** Sie müssen ihren Alphakanal für alle Teile, in denen Sie kein Hologramm rendern, vollständig transparent löschen. Wenn Sie das Alpha undefiniert lassen, führt dies zu visuellen Artefakten, wenn Bilder/Videos vom Gerät oder mit der Bildansicht (Bzw. mit Der Bildansicht) gemacht werden.
 
 * **Texturerweisung:** Da Licht in holografischen Displays additiv ist, ist es am besten, große Bereiche mit hellem Vollton zu vermeiden, da sie häufig nicht den beabsichtigten visuellen Effekt erzeugen.
 
@@ -71,11 +71,11 @@ Licht und Farbe können dazu beitragen, dass Ihre Hologramme in der Umgebung ein
 
 :::row:::
     :::column:::
-* **Vignetting:** Ein "Effect" zur Verdunkeln von Materialien kann dazu beitragen, die Aufmerksamkeit des Benutzers auf die Mitte des Sichtfelds zu konzentrieren. Durch diesen Effekt wird das Material des Hologramms in einem bestimmten Radius vom Anvisierungsvektor des Benutzers dunkler. Dies ist auch dann effektiv, wenn der Benutzer Hologramme aus einem schrägen oder abblendenden Winkel betrachtet.
+* **Vignetting:** Ein "Effect" zur Verdunkeln von Materialien kann dazu beitragen, die Aufmerksamkeit des Benutzers auf die Mitte des Sichtfelds zu konzentrieren. Durch diesen Effekt wird das Material des Hologramms in einem bestimmten Radius vom Anvisierungsvektor des Benutzers dunkler. Dies ist auch dann wirksam, wenn der Benutzer Hologramme aus einem schrägen oder abblendenden Winkel betrachtet.
 
-* **Hervorhebung:** Ziehen Sie die Aufmerksamkeit auf Objekte oder Interaktionspunkte, indem Sie Farben, Helligkeit und Beleuchtung gegenüberstellen. Einen ausführlicheren Blick auf Beleuchtungsmethoden im Story-Bereich finden Sie unter [Pixelgraphografie – Ein Beleuchtungsansatz für Computergrafiken.](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf)<br>
+* **Hervorhebung:** Ziehen Sie die Aufmerksamkeit auf Objekte oder Interaktionspunkte, indem Sie Farben, Helligkeit und Beleuchtung gegenüberstellen. Einen ausführlicheren Blick auf Beleuchtungsmethoden im Storyy finden Sie unter [Pixelgraphografie – Ein Beleuchtungsansatz für Computergrafiken](http://media.siggraph.org/education/cgsource/Archive/ConfereceCourses/S96/course30.pdf).<br>
         <br>
-        *Bild: Verwendung von Farbe, um die Hervorhebung fürZählelemente zu zeigen, die hier in einer Szene aus [Fragmenten gezeigt wird.](https://www.microsoft.com/p/fragments/9nblggh5ggm8)*
+        *Bild: Verwendung von Farbe, um die Hervorhebung für Story-Elemente zu zeigen, die hier in einer Szene aus [Fragmenten gezeigt wird.](https://www.microsoft.com/p/fragments/9nblggh5ggm8)*
     :::column-end:::
         :::column:::
         ![Verwendung von Farben, um die Hervorhebung für Dienerelemente zu zeigen, die hier in einer Szene aus Fragmenten gezeigt werden.](images/640px-fragments.jpg)<br>
@@ -86,7 +86,7 @@ Licht und Farbe können dazu beitragen, dass Ihre Hologramme in der Umgebung ein
 
 :::row:::
     :::column:::
-Materialien sind wichtige Elemente, um realistische Hologramme zu machen. Indem Sie die richtigen visuellen Merkmale bereitstellen, können Sie überzeugende holografische Objekte erstellen, die sich gut mit der physischen Umgebung verbinden können. Materialien sind auch wichtig, um visuelles Feedback für die verschiedenen Arten von Benutzereingabeinteraktionen zu geben.  
+Materialien sind wichtige Elemente, um realistische Hologramme zu machen. Indem Sie die richtigen visuellen Merkmale bereitstellen, können Sie überzeugende holografische Objekte erstellen, die sich gut mit der physischen Umgebung verbinden lassen. Materialien sind auch wichtig, um visuelles Feedback für die verschiedenen Arten von Benutzereingabeinteraktionen zu geben.  
 
 [MRTK stellt](https://github.com/Microsoft/MixedRealityToolkit-Unity) einen MRTK-Standard-Shader mit verschiedenen Optionen für visuelle Effekte zur Verfügung, die für visuelles Feedback verwendet werden können. Beispielsweise können Sie die Eigenschaft "Näherungslicht" verwenden, um einen Beleuchtungseffekt zu erzielen, wenn sich der Finger des Benutzers der Objektoberfläche nähert. Weitere Informationen zum [MRTK-Standard-Shader](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
@@ -105,4 +105,4 @@ Materialien sind wichtige Elemente, um realistische Hologramme zu machen. Indem 
 * [Farbtrennung](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [Hologramme](../discover/hologram.md)
 * [Microsoft Design Language – Farbe](https://www.microsoft.com/design/color)
-* [Universelle Windows-Plattform – Farbe](/windows/uwp/style/color)
+* [Universelle Windows Plattform – Farbe](/windows/uwp/style/color)

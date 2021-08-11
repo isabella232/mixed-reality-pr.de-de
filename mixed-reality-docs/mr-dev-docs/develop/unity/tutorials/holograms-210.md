@@ -1,37 +1,37 @@
 ---
 title: 'HoloLens (1. Generation) Eingabe 210: Anvisieren'
-description: Befolgen Sie diese exemplarische Vorgehensweise, indem Sie Unity, Visual Studio und hololens verwenden, um die Details von Blick Konzepten zu erlernen.
+description: Befolgen Sie diese exemplarische Vorgehensweise zum Programmieren mit Unity, Visual Studio und HoloLens, um die Details der Konzepte des Anvierens zu erlernen.
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-Unity, Academy, Tutorial, Blick, hololens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
-ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit, mixedrealitytoolkit, mixedrealitytoolkit-unity, academy, tutorial, gaze, HoloLens, Mixed Reality Academy, Unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Windows 10
+ms.openlocfilehash: e0d761c6292502f381618f8efa1bed9d26f0e6fbac8dbdafa8085e0bb41676ce
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269966"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220974"
 ---
-# <a name="hololens-1st-gen-input-210-gaze"></a>Hololens (1. Gen) Eingabe 210: Blick
+# <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (1. Generation) Eingabe 210: Anvits
 
 >[!IMPORTANT]
->Die Mixed Reality Academy-Lernprogramme wurden mit hololens (1st Gen), Unity 2017 und den immersiven und gemischten Reality-Köpfen entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für hololens 2 verwendet werden, und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
+>Die Mixed Reality Academy-Tutorials wurden mit HoloLens (1. Generation), Unity 2017 und Mixed Reality immersive Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen. Diese Tutorials werden **_nicht mit_** den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 und sind möglicherweise nicht mit neueren Versionen von Unity kompatibel.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. [Es wurde eine neue Reihe von Tutorials](mrlearning-base.md) für HoloLens 2 veröffentlicht.
 
-Der [Blick](../../../design/gaze-and-commit.md) ist die erste Form der Eingabe und zeigt die Absicht und das Bewusstsein des Benutzers an. Die Eingabe 210 (auch Projekt-Explorer genannt) ist ein tiefer Einblick in die im Blick zusammenhängenden Konzepte für Windows Mixed Reality. Wir werden dem Cursor und holograms kontextbezogene Informationen hinzufügen und dabei die Vorteile der APP im Überblick über den Benutzer in vollem Umfang nutzen.
+[Anvisiert](../../../design/gaze-and-commit.md) ist die erste Form der Eingabe und zeigt die Absicht und das Bewusstsein des Benutzers an. MR Input 210 (auch als Project Explorer bezeichnet) ist ein tiefer Einblick in konzeptebezogene Konzepte für Windows Mixed Reality. Wir werden unseren Cursorn und Hologrammen kontextbezogenes Bewusstsein hinzufügen und dabei das, was Ihre App über das Anvisieren des Benutzers weiß, voll ausnutzen.
 
 >[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]
 
-Wir haben hier einen freundlichen Astronauten, der Sie beim Erlernen von Blick Konzepten unterstützt. In den [Grundlagen 101](../../../develop/unity/tutorials/holograms-101.md)hatten wir einen einfachen Cursor, der genau auf Ihren Blick folgt. Heute verschieben wir einen Schritt über den einfachen Cursor hinaus:
+Wir verfügen hier über einen nutzerfreundlichen Astronauten, der Ihnen hilft, Konzepte zum Anvieren zu erlernen. In [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md)hatten wir einen einfachen Cursor, der ihrem Anving gerade folgt. Heute bewegen wir einen Schritt über den einfachen Cursor hinaus:
 
-* Wir machen den Cursor und den holograms im Blick: Beide Änderungen ändern sich je nachdem, wo der Benutzer sucht oder wo der Benutzer *nicht* sucht. Dies macht Sie Kontext abhängig.
-* Wir werden dem Cursor und holograms Feedback hinzufügen, um dem Benutzer mehr Kontext für das Ziel zu geben. Dieses Feedback kann ein Audiomaterial und ein visuelles Element sein.
-* Wir zeigen Ihnen gezielte Verfahren, mit denen Benutzer kleinere Ziele erreichen können.
-* Wir zeigen Ihnen, wie Sie die Aufmerksamkeit des Benutzers auf die Hologramme mit einem direktionalen Indikator zeichnen.
-* Wir informieren Sie über Techniken, mit denen Sie Ihre Hologramme mit dem Benutzer übernehmen, wenn Sie sich in ihrer Welt bewegen.
+* Wir machen den Cursor und unsere Hologramme anviert: Beides ändert sich je nach Dem, wo der Benutzer sucht oder wo der Benutzer *nicht* sucht. Dies macht sie kontextbewusst.
+* Wir fügen dem Cursor und hologramm Feedback hinzu, um dem Benutzer mehr Kontext zu geben, was als Ziel verwendet wird. Dieses Feedback kann audio und visual sein.
+* Wir zeigen Ihnen Zielgruppenadressierungstechniken, mit deren Hilfe Benutzer kleinere Ziele erreichen können.
+* Wir zeigen Ihnen, wie Sie die Aufmerksamkeit des Benutzers auf Ihre Hologramme mit einem Richtungsindikator lenken.
+* Wir vermitteln Ihnen Techniken, um Ihre Hologramme mit dem Benutzer zu nehmen, während er sich in Ihrer Welt bewegt.
 
 >[!IMPORTANT]
->Die in den folgenden Kapiteln eingebetteten Videos wurden mit einer älteren Version von Unity und dem Mixed Reality Toolkit aufgezeichnet. Die Schritt-für-Schritt-Anweisungen sind genau und aktuell, aber es werden möglicherweise Skripts und Visualisierungen in den entsprechenden Videos angezeigt, die veraltet sind. Die Videos bleiben in der einwelt enthalten und werden weiterhin angewendet.
+>Die in die einzelnen Kapitel unten eingebetteten Videos wurden mit einer älteren Version von Unity und dem Mixed Reality Toolkit aufgezeichnet. Obwohl die Schritt-für-Schritt-Anweisungen genau und aktuell sind, werden möglicherweise Skripts und Visuals in den entsprechenden Videos angezeigt, die veraltet sind. Die Videos bleiben für die Nachwelt enthalten, und da die behandelten Konzepte weiterhin gelten.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -47,24 +47,24 @@ Wir haben hier einen freundlichen Astronauten, der Sie beim Erlernen von Blick K
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-* Ein Windows 10-PC, der mit den richtigen [installierten Tools](../../../develop/install-the-tools.md)konfiguriert ist.
-* Einige grundlegende c#-Programmierfähigkeiten.
-* Sie sollten die [Grundlagen von 101](../../../develop/unity/tutorials/holograms-101.md)abgeschlossen haben.
-* Ein hololens-Gerät, das [für die Entwicklung konfiguriert](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)ist.
+* Ein Windows 10 PC, der mit den richtigen [installierten Tools konfiguriert ist.](../../../develop/install-the-tools.md)
+* Einige grundlegende C#-Programmierfunktionen.
+* Sie sollten die [MR-Grundlagen 101 abgeschlossen haben.](../../../develop/unity/tutorials/holograms-101.md)
+* Ein HoloLens, [das für die Entwicklung konfiguriert ist.](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)
 
 ### <a name="project-files"></a>Projektdateien
 
-* Herunterladen der [Dateien](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-210-Gaze.zip) , die für das Projekt erforderlich sind. Erfordert Unity 2017,2 oder höher.
-* Deinstallieren Sie die Dateien auf Ihrem Desktop oder an einem anderen leicht zugänglichen Speicherort.
+* Laden Sie [die für](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-210-Gaze.zip) das Projekt erforderlichen Dateien herunter. Erfordert Unity 2017.2 oder höher.
+* Archivieren Sie die Dateien auf Ihrem Desktop oder an einem anderen leicht erreichbaren Speicherort.
 
 >[!NOTE]
->Wenn Sie den Quellcode vor dem herunterladen durchsuchen möchten, ist er [auf GitHub verfügbar](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze).
+>Wenn Sie den Quellcode vor dem Herunterladen durchschauen möchten, ist er [auf GitHub.](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze)
 
-### <a name="errata-and-notes"></a>Errata und Notizen
+### <a name="errata-and-notes"></a>Errata und Hinweise
 
-* In Visual Studio muss "nur eigenen Code" unter Extras->Optionen->Debuggen deaktiviert (deaktiviert) werden, um Breakpoints im Code zu erreichen.
+* In Visual Studio muss "Nur eigenen Code" unter Extras->Optionen->Debuggen deaktiviert (deaktiviert) werden, um Breakpoints im Code zu finden.
 
-## <a name="chapter-1---unity-setup"></a>Kapitel 1: Einrichtung von Unity
+## <a name="chapter-1---unity-setup"></a>Kapitel 1: Unity-Setup
 
 >[!VIDEO https://www.youtube.com/embed/_Ccn6riQ6vU]
 
@@ -72,142 +72,142 @@ Wir haben hier einen freundlichen Astronauten, der Sie beim Erlernen von Blick K
 
 * Optimieren von Unity für die HoloLens-Entwicklung
 * Importieren von Assets und Einrichten der Szene
-* Anzeigen des Astronauten in den hololens.
+* Zeigen Sie den Astronauten in der HoloLens.
 
 ### <a name="instructions"></a>Anweisungen
 
 1. Starten Sie Unity.
 2. Wählen Sie auf **Neues Projekt** aus.
-3. Nennen Sie das Projekt **Model Explorer**.
-4. Geben Sie Location als **den Ordner** Folder ein, den Sie zuvor nicht archiviert haben.
+3. Nennen Sie das **Projekt ModelExplorer**.
+4. Geben Sie location als ordner **gaze** ein, den Sie zuvor nicht archiviert haben.
 5. Stellen Sie sicher, dass das Projekt auf **3D** festgelegt ist.
-6. Klicken Sie auf **Projekt erstellen**.
+6. Klicken Sie **auf Project**.
 
-### <a name="unity-settings-for-hololens"></a>Unity-Einstellungen für hololens
+### <a name="unity-settings-for-hololens"></a>Unity-Einstellungen für HoloLens
 
-Wir müssen Unity mitteilen, dass die zu exportierende App eine [immersive Ansicht](../../../design/app-views.md) anstelle einer 2D-Ansicht erstellen sollte. Dies geschieht, indem hololens als Virtual Reality-Gerät hinzugefügt wird.
+Wir müssen Unity wissen lassen, dass die App, die wir exportieren möchten, eine [immersive](../../../design/app-views.md) Ansicht anstelle einer 2D-Ansicht erstellen sollte. Dazu fügen wir HoloLens als Virtual Reality-Gerät hinzu.
 
-1. Wechseln Sie zu **Edit > Project Settings > Player**.
-2. Wählen Sie im **Inspektor-Panel** für die Player Einstellungen das **Windows Store** -Symbol aus.
+1. Wechseln Sie **zu Bearbeiten > Project Einstellungen > Player**.
+2. Wählen Sie **im Inspektorbereich** Einstellungen Player-Windows Store **aus.**
 3. Erweitern Sie die Gruppe **XR-Einstellungen**.
 4. Aktivieren Sie im Abschnitt **Rendering** das Kontrollkästchen **Virtuelle Realität unterstützt**, um eine neue Liste mit **Virtual Reality-SDKs** hinzuzufügen.
-5. Überprüfen Sie, ob in der Liste **Windows Mixed Reality** angezeigt wird. Wenn nicht, klicken Sie **+** auf die Schaltfläche unten in der Liste, und wählen Sie **Windows Holographic** aus.
+5. Überprüfen Sie, ob in der Liste **Windows Mixed Reality** angezeigt wird. Wenn nicht, wählen Sie die Schaltfläche unten in der Liste aus, **+** und wählen Sie Windows **Holographic aus.**
 
-Als nächstes müssen wir unser Skript-Back-End auf .net festlegen.
+Als Nächstes müssen wir unser Skript-Back-End auf .NET festlegen.
 
-1. Wechseln Sie zu **Edit > Project Settings > Player** (möglicherweise noch im vorherigen Schritt).
-2. Wählen Sie im **Inspektor-Panel** für die Player Einstellungen das **Windows Store** -Symbol aus.
-3. Stellen Sie sicher, dass im Konfigurations Abschnitt **andere Einstellungen** das Skript für die **Skript** Erstellung auf **.net** festgelegt ist.
+1. Wechseln Sie **zu > Project Einstellungen > Player bearbeiten** (dies ist möglicherweise noch im vorherigen Schritt der Fall).
+2. Wählen Sie **im Inspektorbereich** Einstellungen Player-Windows Store **aus.**
+3. Stellen Sie **im Abschnitt Einstellungen** Konfiguration sicher, dass **Skripterstellungs-Back-End** auf **.NET festgelegt ist.**
 
-Zum Schluss aktualisieren wir unsere Qualitätseinstellungen, um eine schnelle Leistung in hololens zu erzielen.
+Schließlich aktualisieren wir unsere Qualitätseinstellungen, um eine schnelle Leistung auf dem HoloLens.
 
-1. Wechseln Sie zu **Edit > Project Settings > Quality**.
-2. Klicken Sie in der **Standard** Zeile unter dem Windows Store-Symbol auf den Pfeil nach unten.
-3. Wählen Sie für **Windows Store-Apps** **sehr niedrig** aus.
+1. Wechseln Sie **zu Edit > Project Einstellungen > Quality (Bearbeiten > Project Einstellungen > Quality).**
+2. Klicken Sie auf den nach unten zeigenden Pfeil in der **Zeile Standard** unter dem Windows Store Symbol.
+3. Wählen **Sie sehr niedrig** für Windows Store Apps **aus.**
 
-### <a name="import-project-assets"></a>Projekt Objekte importieren
+### <a name="import-project-assets"></a>Importieren von Projektressourcen
 
-1. Klicken Sie im **Projekt** Panel mit der rechten Maustaste auf den Ordner **Assets** .
-2. Klicken Sie auf **Paket importieren > benutzerdefiniertes Paket**.
-3. Navigieren Sie zu den Projektdateien, die Sie heruntergeladen haben, und klicken Sie auf **modelexplorer. unitypackage**.
+1. Klicken Sie mit **der rechten Maustaste** auf den Ordner Assets im **Project** Bereich.
+2. Klicken Sie **auf Paket importieren > Benutzerdefiniertes Paket**.
+3. Navigieren Sie zu den heruntergeladenen Projektdateien, und klicken Sie auf **ModelExplorer.unitypackage**.
 4. Klicken Sie auf **Öffnen**.
-5. Nachdem das Paket geladen wurde, klicken Sie auf die Schaltfläche **importieren** .
+5. Nachdem das Paket geladen wurde, klicken Sie auf **die Schaltfläche Importieren.**
 
 ### <a name="setup-the-scene"></a>Einrichten der Szene
 
-1. Löschen Sie die **Hauptkamera** in der-Hierarchie.
-2. Öffnen Sie im Ordner **holotoolkit** den **Eingabe** Ordner, und öffnen Sie dann den Ordner **Prefabs** .
-3. Ziehen Sie die vorfab **mixedrealitycameraparent** aus dem Ordner **Prefabs** in die **Hierarchie**.
-4. Klicken Sie mit der rechten Maustaste auf den **direktionalen Licht** in der Hierarchie, **und wählen**
-5. Ziehen Sie im **holograms** -Ordner die folgenden Objekte per Drag & amp; Drop in den Stamm der **Hierarchie**:
-    * **Astroman**
+1. Löschen Sie in der Hierarchie die **Hauptkamera**.
+2. Öffnen Sie **im Ordner HoloToolkit** den **Ordner Input** und dann den **Ordner Prefabs.**
+3. Drag and drop the **MixedRealityCameraParent** prefab from the **Prefabs** folder into the **Hierarchy**.
+4. Klicken Sie mit der rechten Maustaste **auf das Richtungslicht** in der Hierarchie, und wählen Sie **Löschen aus.**
+5. In the **Holograms** folder, drag and drop the following assets into the root of the **Hierarchy**:
+    * **Dabei kann es sich um einen**
     * **Lichter**
-    * **Spaceaudiosource**
-    * **Spacebackground**
-6. Starten Sie den **Wiedergabemodus** ▶, um den Astronaut anzuzeigen.
-7. Klicken Sie erneut auf **Wiedergabemodus** ▶, um zu **verhindern**.
-8. Suchen Sie im Ordner **holograms** das **fitbox** -Asset, und ziehen Sie es in den Stamm der **Hierarchie**.
-9. Wählen Sie im Bereich **Hierarchie** die Option **fitbox** aus.
-10. Ziehen Sie die **Astroman** -Auflistung aus der **Hierarchie** in die **Hologram** -Auflistungs Eigenschaft von "fitbox" im **Inspektor** -Panel.
+    * **SpaceAudioSource**
+    * **SpaceBackground**
+6. Starten **Sie play mode ▶,** um den Astronauten zu sehen.
+7. Klicken **Sie erneut auf Wiedergabemodus▶** um zu **Beenden.**
+8. Suchen Sie **Hologramme** Ordner nach dem **Fitbox-Objekt,** und ziehen Sie es in das Stammverzeichnis der **Hierarchie**.
+9. Wählen Sie **im Bereich Hierarchie die** Option **Fitbox** aus.
+10. Ziehen Sie **die Sammlung "Sollman"** aus **der Hierarchie** auf die **Hologram Collection-Eigenschaft** des Fitbox-Fensters **im Inspektorbereich.**
 
-### <a name="save-the-project"></a>Speichern Sie das Projekt.
+### <a name="save-the-project"></a>Speichern des Projekts
 
-1. Speichern Sie die neue Szene: **File > Szene speichern** unter.
-2. Klicken Sie auf **neuer Ordner** , und benennen Sie die Ordner **Szenen**.
-3. Benennen Sie die Datei "**Model Explorer**", und speichern Sie Sie im Ordner **Szenen** .
+1. Speichern Sie die neue Szene: **Datei > Speichern der Szene unter**.
+2. Klicken Sie **auf Neuer Ordner,** und nennen Sie den Ordner **Scenes**.
+3. Nennen Sie die Datei **ModelExplorer,** und speichern Sie sie im **Ordner Scenes.**
 
 ### <a name="build-the-project"></a>Erstellen des Projekts
 
-1. Wählen Sie in Unity **Datei > Buildeinstellungen** aus.
-2. Klicken Sie auf **offene Szenen hinzufügen** , um die Szene hinzuzufügen.
-3. Wählen Sie in der Liste **Plattform** **universelle Windows-Plattform** aus, und klicken Sie auf **Plattform wechseln**.
-4. Wenn Sie speziell für hololens entwickeln, legen Sie **Zielgerät** auf **hololens** fest. Andernfalls sollten Sie es auf **jedem Gerät** belassen.
-5. Stellen Sie sicher, dass der **Buildtyp** auf **D3D** und das **SDK** auf **Latest installiert** festgelegt ist (was SDK 16299 oder höher sein sollte).
+1. Wählen Sie in Unity **Datei > Build Einstellungen.**
+2. Klicken **Sie auf Open Scenes hinzufügen,** um die Szene hinzuzufügen.
+3. Wählen **Sie universelle Windows Plattform** in der **Liste Plattform aus,** und klicken Sie **auf Plattform wechseln.**
+4. Wenn Sie speziell für die Entwicklung HoloLens, legen Sie **Zielgerät** auf **HoloLens.** Andernfalls belasse es auf **Beliebiges Gerät.**
+5. Stellen **Sie sicher,** dass build type (Buildtyp) auf **D3D** und **SDK** auf **Latest installed** (SDK 16299 oder neuer) festgelegt ist.
 6. Klicken Sie auf **Erstellen**.
-7. Erstellen Sie einen **neuen Ordner** mit dem Namen "App".
-8. Klicken Sie einfach auf den **App** -Ordner.
-9. Drücken **Sie Ordner auswählen**.
+7. Erstellen Sie **einen neuen Ordner** mit dem Namen "App".
+8. Klicken Sie mit nur einem Klick **auf den Ordner App.**
+9. Klicken Sie **auf Ordner auswählen.**
 
-Wenn Unity abgeschlossen ist, wird ein Datei-Explorer-Fenster angezeigt.
+Wenn Unity fertig ist, wird ein Datei-Explorer-Fenster angezeigt.
 
-1. Öffnen Sie den **App** -Ordner.
-2. Öffnen Sie die Visual Studio-Projekt Mappe **Model Explorer**.
+1. Öffnen Sie den **Ordner App.**
+2. Öffnen Sie **modelExplorer Visual Studio Solution**.
 
-Bei der Bereitstellung in hololens:
+Bei der Bereitstellung in HoloLens:
 
-1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x86**.
-2. Klicken Sie auf den Dropdown Pfeil neben der Schaltfläche lokaler Computer, und wählen Sie **Remote Computer** aus.
-3. Geben Sie **die IP-Adresse des hololens-Geräts** ein, und legen Sie den Authentifizierungsmodus auf **Universal (unverschlüsseltes Protokoll)** Klicken Sie auf **Auswählen**. Wenn Sie die IP-Adresse Ihres Geräts nicht kennen, suchen Sie unter **Einstellungen > Netzwerk & Internet > Erweiterte Optionen**.
-4. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**. Wenn Sie die Bereitstellung auf Ihrem Gerät zum ersten Mal durchführt, müssen Sie [es mit Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)koppeln.
-5. Wenn die APP bereitgestellt wurde, schließen Sie das **fitbox** -Gerät mit einer **Auswahl Bewegung** ab.
+1. Ändern Sie das Ziel über Visual Studio symbolleiste von Debuggen in **Release** und von ARM in **x86.**
+2. Klicken Sie auf den Dropdownpfeil neben der Schaltfläche Lokaler Computer, und wählen Sie **Remotecomputer aus.**
+3. Geben **Sie ihre HoloLens-IP-Adresse ein,** und legen Sie den Authentifizierungsmodus auf **Universell (unverschlüsselte Protokoll) fest.** Klicken Sie auf **Auswählen**. Wenn Sie Die IP-Adresse Ihres Geräts nicht kennen, finden Sie weitere Informationen unter Einstellungen > Network & Internet > Advanced Options ( Erweiterte **Optionen).**
+4. Klicken Sie in der oberen Menüleiste **auf Debuggen -> Ohne Debuggen** starten, oder drücken Sie **STRG+F5.** Wenn Dies die erste Bereitstellung auf Ihrem Gerät ist, müssen Sie es mit [einem Visual Studio.](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)
+5. Wenn die App bereitgestellt wurde, verknappen Sie **die Fitbox** mit einer **Auswahlgeste.**
 
 Bei der Bereitstellung auf einem immersiven Headset:
 
-1. Ändern Sie das Ziel mithilfe der oberen Symbolleiste in Visual Studio von Debug in **Release** und von Arm in **x64**.
-2. Stellen Sie sicher, dass das Bereitstellungs Ziel auf **lokaler Computer** festgelegt ist.
-3. Klicken Sie in der oberen Menüleiste auf **Debuggen-> starten ohne Debugging** , oder drücken Sie **STRG + F5**.
-4. Wenn die APP bereitgestellt wurde, schließen Sie die Funktion **, indem Sie den-** Typ auf einen Bewegungs Controller ziehen.
+1. Ändern Sie über die obere Symbolleiste in Visual Studio Ziel von Debuggen in **Release** und von ARM in **x64.**
+2. Stellen Sie sicher, dass das Bereitstellungsziel auf Lokaler **Computer festgelegt ist.**
+3. Klicken Sie in der oberen Menüleiste **auf Debuggen -> Ohne Debuggen** starten, oder drücken Sie **STRG+F5.**
+4. Wenn die App bereitgestellt wurde, verdringen Sie **die Fitbox,** indem Sie den Trigger auf einen Motion-Controller ziehen.
 
-## <a name="chapter-2---cursor-and-target-feedback"></a>Kapitel 2: Cursor-und Ziel Feedback
+## <a name="chapter-2---cursor-and-target-feedback"></a>Kapitel 2: Cursor- und Zielfeedback
 
 >[!VIDEO https://www.youtube.com/embed/S24u0V_T7ZI]
 
 ### <a name="objectives"></a>Ziele
 
-* Visueller Entwurf und Verhalten des Cursors.
-* Zeiger basiertes Cursor Feedback.
-* Auf Blick basierendes – Hologramm-Feedback.
+* Visuelles Cursordesign und -verhalten.
+* Anving-basiertes Cursorfeedback.
+* Feedback zu hologrammbasiertem Anvieren.
 
-Wir werden unsere Arbeit auf einige Grundsätze von Cursor Entwürfen basieren, nämlich:
+Wir werden unsere Arbeit auf einigen Cursorentwurfsprinzipien beruhen, nämlich:
 
 * Der Cursor ist immer vorhanden.
-* Lassen Sie den Cursor nicht zu klein oder groß werden.
-* Vermeiden Sie das Blockieren von Inhalt.
+* Lassen Sie den Cursor nicht zu klein oder groß.
+* Vermeiden Sie das Verhindern von Inhalten.
 
 ### <a name="instructions"></a>Anweisungen
 
-1. Suchen Sie im Ordner **holotoolkit\input\prefabs** nach dem **InputManager** -Objekt.
-2. Ziehen Sie den **InputManager** in die **Hierarchie**.
-3. Suchen Sie im Ordner **holotoolkit\input\prefabs** nach dem **Cursor** Medienobjekt.
-4. Ziehen Sie den **Cursor** per Drag & Drop in die **Hierarchie**.
-5. Wählen Sie das **InputManager** -Objekt in der **Hierarchie** aus.
-6. Ziehen Sie das **Cursor** Objekt aus der **Hierarchie** in das **Cursor** Feld " **simplesinglepointerselector**" von InputManager am unteren Rand des **Inspektors**.
+1. Suchen Sie **im Ordner HoloToolkit\Input\Prefabs** nach dem **InputManager-Objekt.**
+2. Drag and drop the **InputManager** onto the **Hierarchy**.
+3. Suchen Sie **im Ordner HoloToolkit\Input\Prefabs** nach dem **Objekt Cursor.**
+4. Drag and drop the **Cursor** onto the **Hierarchy**.
+5. Wählen Sie das **InputManager-Objekt** in der **Hierarchie aus.**
+6. Ziehen Sie **das Cursor-Objekt** aus der **Hierarchie** in das **Cursorfeld** **von SimpleSinglePointerSelector** von InputManager am unteren Rand des **Inspectors.**
 
-![Einfache Einrichtung von einzelzeigerselektor](images/holograms210-ssps.png)
+![Einfache Einrichtung der Einfachzeigerauswahl](images/holograms210-ssps.png)
 
 ### <a name="build-and-deploy"></a>Erstellen und Bereitstellen
 
-1. Erstellen Sie die APP aus dem **Datei > den Buildeinstellungen** neu.
-2. Öffnen Sie den **app-Ordner**.
-3. Öffnen Sie die Visual Studio-Projekt Mappe **Model Explorer**.
-4. Klicken Sie auf **Debuggen > starten ohne Debugging** , oder drücken Sie **STRG + F5**.
-5. Beobachten Sie, wie der Cursor gezeichnet wird, und wie sich die Darstellung ändert, wenn Sie ein Hologram berührt.
+1. Erstellen Sie die App unter **Datei > Build Einstellungen**.
+2. Öffnen Sie den **Ordner App**.
+3. Öffnen Sie **modelExplorer Visual Studio Solution**.
+4. Klicken **Sie auf Debuggen -> Ohne Debuggen starten,** oder drücken Sie **STRG+F5.**
+5. Beobachten Sie, wie der Cursor gezeichnet wird und wie er die Darstellung ändert, wenn er ein Hologramm berührt.
 
 ### <a name="instructions"></a>Anweisungen
 
-1. Erweitern Sie im Bereich **Hierarchie** den Knoten **Astroman** -> **GEO_G** -> **Back_Center** .
-2. Doppelklicken Sie auf " **interacable. cs** ", um Sie in Visual Studio zu öffnen.
-3. Heben Sie die Auskommentierung der Zeilen in den Rückrufe **ifocverwendbare. onfocusenter ()** und **ifocverwendbare. onfocusexit ()** in **interacable. cs** auf. Diese werden vom InputManager des Mixed Reality-Toolkits aufgerufen, wenn der Fokus (entweder durch den Blick oder durch den Controller) in den Konflikt des jeweiligen gameobject-Objekts wechselt und diesen verlässt.
+1. Erweitern Sie **im Bereich** Hierarchie die **GEO_G** ->  -> **Back_Center** Objekt.
+2. Doppelklicken Sie auf **Interactible.cs,** um sie in der Visual Studio.
+3. Auskommentierung der Zeilen in den **IFocusable.OnFocusEnter()-** und **IFocusable.OnFocusExit()-Rückrufen** in **Interactible.cs.** Diese werden vom InputManager des Mixed Reality Toolkits aufgerufen, wenn der Fokus (entweder durch Anvieren oder durch Zeigen des Controllers) in den Collider des jeweiligen GameObject eintritt und beendet wird.
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -232,101 +232,101 @@ void IFocusable.OnFocusExit()
 ```
 
 >[!NOTE]
->Wir verwenden `EnableKeyword` und `DisableKeyword` höher. Um diese in ihrer eigenen App mit dem Standard-Shader des Toolkits zu nutzen, müssen Sie die [Unity-Richtlinien für den Zugriff auf Materialien per Skript](https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html)befolgen. In diesem Fall haben wir bereits die [drei Varianten von hervorgehobenem Material](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze/Completed/ModelExplorer/Assets/Resources/Models/AstroMan/Materials) in den Ressourcen Ordner eingefügt (suchen Sie nach den drei Materialien, deren Name hervorgehoben ist).
+>Wir verwenden `EnableKeyword` und `DisableKeyword` höher. Um diese in Ihrer eigenen App mit dem Standard-Shader des Toolkits zu verwenden, müssen Sie die Unity-Richtlinien für den Zugriff auf Materialien über das [Skript befolgen.](https://docs.unity3d.com/Manual/MaterialsAccessingViaScript.html) In diesem Fall haben wir [](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze/Completed/ModelExplorer/Assets/Resources/Models/AstroMan/Materials) bereits die drei Varianten hervorgehobener Materialien in den Ordner Ressourcen aufgenommen (suchen Sie nach den drei Materialien mit Hervorhebung im Namen).
 
 ### <a name="build-and-deploy"></a>Erstellen und Bereitstellen
 
-1. Erstellen Sie wie zuvor das Projekt, und stellen Sie es auf den hololens bereit.
-2. Beobachten Sie, was geschieht, wenn der Blick auf ein Objekt gerichtet ist, und wenn es nicht.
+1. Erstellen Sie wie zuvor das Projekt, und stellen Sie es im HoloLens.
+2. Beobachten Sie, was geschieht, wenn das Anvitätsbild auf ein Objekt ausgerichtet ist und nicht.
 
-## <a name="chapter-3---targeting-techniques"></a>Kapitel 3: Ziel Technologien
+## <a name="chapter-3---targeting-techniques"></a>Kapitel 3: Zieltechniken
 
 >[!VIDEO https://www.youtube.com/embed/TFnuLva4VJ0]
 
 ### <a name="objectives"></a>Ziele
 
-* Vereinfachen Sie das Ziel von holograms.
-* Stabilisiert natürliche Head-Bewegungen.
+* Vereinfachen Sie das Ziel von Hologrammen.
+* Stabilität natürlicher Kopfbewegungen.
 
 ### <a name="instructions"></a>Anweisungen
 
-1. Wählen Sie im Bereich **Hierarchie** das Objekt **InputManager** aus.
-2. Suchen Sie im **Inspektor** -Panel nach dem Skript für den **Blick-Stabilisator** . Klicken Sie auf die Datei, um Sie in Visual Studio zu öffnen, wenn Sie ein Bild sehen möchten.
-    * Dieses Skript durchläuft Beispiele von raycast-Daten und trägt dazu bei, den Blick des Benutzers auf die Genauigkeit der Genauigkeit zu stabilisieren.
-3. Im **Inspektor** können Sie den Wert für **gespeicherte Stabilitäts Beispiele** bearbeiten. Dieser Wert stellt die Anzahl der Samplings dar, die der-Stabilisator durchläuft, um den stabilisierten Wert zu berechnen.
+1. Wählen Sie **im Bereich** Hierarchie das **InputManager-Objekt** aus.
+2. Suchen Sie **im Inspektorbereich** nach dem **Skript Anvisierer.** Klicken Sie darauf, um Visual Studio öffnen, wenn Sie einen Blick darauf werfen möchten.
+    * Dieses Skript durch iteriert Stichproben von Raycast-Daten und hilft, das Anvieren des Benutzers für die Zielgenauigkeit zu stabilisiert.
+3. Im **Inspektor** können Sie den Wert **gespeicherte Stabilitätsbeispiele** bearbeiten. Dieser Wert stellt die Anzahl der Stichproben dar, die der Schützer durch iteriert, um den stabilen Wert zu berechnen.
 
-## <a name="chapter-4---directional-indicator"></a>Kapitel 4: direktionaler Indikator
+## <a name="chapter-4---directional-indicator"></a>Kapitel 4: Richtungsindikator
 
 >[!VIDEO https://www.youtube.com/embed/htVbJCMlj64]
 
 ### <a name="objectives"></a>Ziele
 
-* Fügen Sie einen direktionalen Indikator für den Cursor hinzu, um Hologramme zu finden.
+* Fügen Sie dem Cursor einen Richtungsindikator hinzu, um Hologramme zu finden.
 
 ### <a name="instructions"></a>Anweisungen
 
-Wir verwenden die Datei " **directionindicator. cs** ", um Folgendes zu tun:
+Wir verwenden die Datei **DirectionIndicator.cs,** die:
 
-1. Zeigen Sie den direktionalen Indikator an, wenn der Benutzer nicht mit den holograms-Vorgängen.
-2. Blenden Sie den direktionalen Indikator aus, wenn der Benutzer bei den holograms einen Blick anzeigt.
-3. Aktualisieren Sie den direktionalen Indikator, sodass er auf die holograms zeigt.
+1. Zeigt den Richtungsindikator an, wenn sich der Benutzer nicht an den Hologrammen befindet.
+2. Blenden Sie den Richtungsindikator aus, wenn sich der Benutzer an den Hologrammen befindet.
+3. Aktualisieren Sie den Richtungsindikator so, dass er auf die Hologramme zeigt.
 
-Lassen Sie uns loslegen!
+Fangen wir also an.
 
-1. Klicken Sie im **Hierarchie** Panel auf das **Astroman** -Objekt, und klicken Sie auf **den Pfeil** , um es zu erweitern.
-2. Wählen Sie im Bereich **Hierarchie** das **directionalindicator** -Objekt unter **Astroman** aus.
-3. Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
-4. Geben Sie im Menü den Suchfeld- **Richtungsindikator** ein. Wählen Sie das Suchergebnis aus.
-5. Ziehen Sie im Bereich **Hierarchie** das **Cursor** Objekt per Drag & Drop auf die **Cursor** -Eigenschaft des **Inspektors**.
-6. Ziehen Sie im **Projekt** Panel im Ordner **holograms** das **directionalindicator** -Asset per Drag & Drop auf die **direktionale Indikator** Eigenschaft im **Inspektor**.
+1. Klicken Sie im Bereich  Hierarchie auf das **Objekt "Sollman",** und klicken Sie auf **den Pfeil,** um es zu erweitern.
+2. Wählen Sie **im Bereich** Hierarchie das **DirectionalIndicator-Objekt** **unterGraphMan aus.**
+3. Klicken Sie **im Inspektorbereich** auf **die Schaltfläche Add Component (Komponente** hinzufügen).
+4. Geben Sie im Menü in das Suchfeld **Richtungsindikator ein.** Wählen Sie das Suchergebnis aus.
+5. In the **Hierarchy** panel, drag and drop the **Cursor** object onto the **Cursor** property in the **Inspector**.
+6. In the **Project** panel, in the **Holograms** folder, drag and drop the **DirectionalIndicator** asset onto the **Directional Indicator** property in the **Inspector**.
 7. Erstellen Sie die App, und stellen Sie sie bereit.
-8. Sehen Sie, wie das direktionale Indikator Objekt Ihnen hilft, den Astronaut zu finden.
+8. Sehen Sie sich an, wie das direktionale Indikatorobjekt Ihnen hilft, den Astronauten zu finden.
 
-## <a name="chapter-5---billboarding"></a>Kapitel 5: Abrechnung
+## <a name="chapter-5---billboarding"></a>Kapitel 5: Beschilderung
 
 >[!VIDEO https://www.youtube.com/embed/qFiLr_LUACE]
 
 ### <a name="objectives"></a>Ziele
 
-* Verwenden Sie das-Abrechnungs Board, um holograms immer für Sie zu verwenden.
+* Verwenden Sie die -Brille, damit Hologramme immer ihnen gegenüber stehen.
 
-Wir verwenden die Datei " **Billboard. cs** ", um ein gameobject-Objekt so zu speichern, dass es dem Benutzer jederzeit zusteht.
+Wir verwenden die Datei **"Sollen.cs",** um ein GameObject so zu halten, dass es dem Benutzer jederzeit angezeigt wird.
 
-1. Wählen Sie im Bereich **Hierarchie** das Objekt **Astroman** aus.
-2. Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
-3. Geben Sie im Menü im Suchfeld den Suchbegriff **ein.** Wählen Sie das Suchergebnis aus.
-4. Legen Sie im **Inspektor** die **pivotachse** auf **Y** fest.
-5. Testen Erstellen und stellen Sie die APP wie zuvor bereit.
-6. Sehen Sie sich an, wie das Billboard-Objekt Ihnen unabhängig von der Änderung des Standpunkts steht.
-7. Löschen Sie das Skript für den Moment aus dem **Astroman** .
+1. Wählen Sie **im Bereich** Hierarchie das **Objekt "Steuerungsman"** aus.
+2. Klicken Sie **im Inspektorbereich** auf **die Schaltfläche Add Component (Komponente** hinzufügen).
+3. Geben Sie im Menü in das Suchfeld **Dann ein.** Wählen Sie das Suchergebnis aus.
+4. Legen Sie **im Inspektor** die **Pivotachse auf** **Y fest.**
+5. Testen Erstellen Sie die App wie zuvor, und stellen Sie sie bereit.
+6. Sehen Sie sich an, wie das Objekt "Faces" ihnen gegenübersteht, unabhängig davon, wie Sie den Blickpunkt ändern.
+7. Löschen Sie das Skript vorerst aus **der Liste DerMan.**
 
-## <a name="chapter-6---tag-along"></a>Kapitel 6: Tag-Along
+## <a name="chapter-6---tag-along"></a>Kapitel 6 – Tag-Along
 
 >[!VIDEO https://www.youtube.com/embed/Ct8ORZAX5JU]
 
 ### <a name="objectives"></a>Ziele
 
-* Verwenden Sie Tag-Along, damit unsere Hologramme um den Raum herum stehen.
+* Verwenden Sie Tag-Along, damit unsere Hologramme uns im Raum folgen.
 
-Wir arbeiten an diesem Problem, indem wir die folgenden Entwurfs Einschränkungen beachten:
+Während wir an diesem Problem arbeiten, werden wir von den folgenden Entwurfseinschränkungen geleitet:
 
-* Der Inhalt sollte immer auf einen Blick entfernt werden.
-* Der Inhalt sollte nicht auf dem Wege stehen.
-* Der Inhalt der Kopf Sperre ist unbequem.
+* Der Inhalt sollte immer einen Blick entfernt sein.
+* Der Inhalt sollte nicht im Weg stehen.
+* Kopfsperren sind unlösbare Inhalte.
 
-Die hier verwendete Lösung ist die Verwendung eines "tagbasierten" Ansatzes.
+Die hier verwendete Lösung besteht darin, einen "Tag-Along"-Ansatz zu verwenden.
 
-Ein tagansichts Objekt verlässt die Ansicht des Benutzers niemals vollständig. Sie können sich ein Tag als ein Objekt vorstellen, das an den Kopf des Benutzers durch Gummibänder angehängt ist. Wenn der Benutzer sich bewegt, bleibt der Inhalt in einem einfachen Blick, indem er an den Rand der Ansicht bewegt wird, ohne dass er vollständig verlässt. Wenn der Benutzer in Richtung des tagbasierten Objekts zeigt, wird es vollständig in die Ansicht integriert.
+Ein Tag-Along-Objekt verlässt nie vollständig die Ansicht des Benutzers. Sie können sich ein Tag-Along als ein Objekt vorstellen, das mithilfe von Bändern an den Kopf des Benutzers angefügt wird. Während sich der Benutzer bewegt, bleibt der Inhalt auf einen blickbaren Blick, indem er zum Rand der Ansicht gleitet, ohne vollständig zu verlassen. Wenn der Benutzer auf das Tag-Along-Objekt anviert, wird es ausführlicher angezeigt.
 
-Wir verwenden die Datei **simpletagalong. cs** , um Folgendes zu tun:
+Wir verwenden die Datei **SimpleTagalong.cs,** die Folgendes vorsieht:
 
-1. Bestimmen Sie, ob sich das Tag-Along Objekt innerhalb der Kamera Begrenzungen befindet.
-2. Wenn dies nicht der Wert der Ansicht ist, positionieren Sie den Tag-Along auf teilweise innerhalb der Ansicht.
-3. Positionieren Sie andernfalls die Tag-Along in einem Standardabstand vom Benutzer.
+1. Bestimmen Sie, ob sich das Tag-Along-Objekt innerhalb der Kameragrenzen befindet.
+2. Wenn sie sich nicht innerhalb des Ansichts-Frustums befinden, positionieren Sie die Tag-Along teilweise innerhalb des Ansichts-Frustums.
+3. Andernfalls positionieren Sie den Tag-Along auf einen Standardabstand zum Benutzer.
 
-Zu diesem Zweck müssen wir zuerst das **interacable. cs** -Skript ändern, um die **tagalongaction-Aktion** aufzurufen.
+Dazu müssen wir zuerst das Skript **Interactible.cs** ändern, um die **TagalongAction** aufzurufen.
 
-1. Bearbeiten Sie die **interacable. cs** -Datei, indem Sie die Codierungs Übung 6. a abschließen (aus den Zeilen 84 bis 87).
+1. Bearbeiten Sie **Interactible.cs,** indem Sie Codierungsübung 6.a abschließen (Auskommentierung der Zeilen 84 bis 87 aufheben).
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,27 +337,27 @@ if (interactibleAction != null)
 }
 ```
 
-Das **interactibleaction. cs** -Skript, das mit **interacable. cs** gekoppelt ist, führt benutzerdefinierte Aktionen aus, wenn Sie auf holograms tippen. In diesem Fall verwenden wir eine speziell für das Tag.
+Das **Skript InteractibleAction.cs,** gekoppelt mit **Interactible.cs,** führt benutzerdefinierte Aktionen aus, wenn Sie auf Hologramme tippen. In diesem Fall verwenden wir eine speziell für das Tag-Along.
 
-* Klicken Sie im Ordner **Scripts** auf **tagalongaction. cs** Asset, um es in Visual Studio zu öffnen.
-* Führen Sie die Codierungs Übung aus, oder ändern Sie Sie in Folgendes:
+* Klicken Sie im Ordner **Skripts** auf das Medienobjekt **TagalongAction.cs,** um es in Visual Studio zu öffnen.
+* Schließen Sie die Codierungsübung ab, oder ändern Sie sie in Folgendes:
   * Geben Sie oben in der **Hierarchie** in der Suchleiste **ChestButton_Center** ein, und wählen Sie das Ergebnis aus.
-  * Klicken Sie im **Inspektor** -Panel auf die Schaltfläche **Komponente hinzufügen** .
+  * Klicken Sie im Bereich **Inspector (Inspektor)** auf die Schaltfläche **Add Component (Komponente hinzufügen).**
   * Geben Sie im Menü in das Suchfeld **Tagalong Action** ein. Wählen Sie das Suchergebnis aus.
-  * Suchen Sie im Ordner **holograms** das **Tagalong** Asset.
-  * Wählen Sie das **ChestButton_Center** Objekt in der **Hierarchie** aus. Ziehen Sie das **Tagalong** -Objekt per Drag & amp; Drop aus dem **Projekt** Panel auf den **Inspektor** in die Eigenschaft **Objekt zu tagparallel** .
-  * Ziehen Sie das **Tagalong-Aktions** Objekt aus dem **Inspektor** in das **interable-Aktions** Feld des **interfähigen** Skripts.
-* Doppelklicken Sie auf das Skript **tagalongaction** , um es in Visual Studio zu öffnen.
+  * Suchen Sie **in Hologramme** Ordner nach dem **Tagalong-Medienobjekt.**
+  * Wählen Sie das **ChestButton_Center** -Objekt in der **Hierarchie** aus. Ziehen Sie das **TagAlong-Objekt** aus dem **bereich Project** in den **Inspector** in die Object **To Tagalong-Eigenschaft.**
+  * Ziehen Sie das **Tagalong Action-Objekt** aus dem **Inspector** in das Feld **Interactible Action** des **Interactible-Skripts.**
+* Doppelklicken Sie auf das **Skript TagalongAction,** um es in Visual Studio zu öffnen.
 
-![Interacable-Einrichtung](images/holograms210-interactible.png)
+![Interaktive Einrichtung](images/holograms210-interactible.png)
 
-Wir müssen Folgendes hinzufügen:
+Fügen Sie Folgendes hinzu:
 
-* Fügen Sie der Funktion "PerformAction" im tagalongaction-Skript (geerbt von interactibleaction) Funktionalität hinzu.
-* Fügen Sie dem Objekt "gazed-on" einen fakboardingvorgang hinzu, und legen Sie die pivotachse auf XY fest
-* Fügen Sie dann dem-Objekt einfache Tag-Along hinzu.
+* Fügen Sie der PerformAction-Funktion im TagalongAction-Skript Funktionalität hinzu (geerbt von InteractibleAction).
+* Fügen Sie dem anvappbaren Objekt Einfügezeichen hinzu, und legen Sie die Pivotachse auf XY fest.
+* Fügen Sie dann einfache Tag-Along zum -Objekt hinzu.
 
-Hier ist unsere Lösung, von **tagalongaction. cs**:
+Dies ist unsere Lösung aus **"TagalongAction.cs":**
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -408,4 +408,4 @@ public class TagalongAction : InteractibleAction
 ```
 
 * Testen Erstellen Sie die App, und stellen Sie sie bereit.
-* Sehen Sie sich an, wie der Inhalt der Mitte des Blick Punkts folgt, aber nicht kontinuierlich und ohne Blockierung.
+* Sehen Sie sich an, wie der Inhalt dem Mittelpunkt des Anverweisepunkts folgt, aber nicht kontinuierlich und ohne Blockieren.

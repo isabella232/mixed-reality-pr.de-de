@@ -1,18 +1,18 @@
 ---
-title: MRTK und verwaltetes Codestriping
+title: MRTK und Entfernen von verwaltetem Code
 description: Codestriping in MRTK und Unity
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 8b8e0f4488a6e955e599084c0b59d8c80f553a78
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4348adf1d9cb2e7fc74cf5258e3272baaac96a5fc34565873cf35ae93225bdbe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176295"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221870"
 ---
-# <a name="mrtk-and-managed-code-stripping"></a>MRTK und verwaltetes Codestriping
+# <a name="mrtk-and-managed-code-stripping"></a>MRTK und Entfernen von verwaltetem Code
 
 Wenn Sie das IL2CPP-Skript-Back-End von Unity verwenden (optional in Unity 2018.4, erforderlich in 2019 und [neuer),](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) wird verwalteter Code entfernt.
 Der Unity-Linker führt diesen Prozess aus, um die Binärgröße zu reduzieren und die Buildzeiten zu verringern.
@@ -21,7 +21,7 @@ Das Mixed Reality Toolkit verwendet die Datei , um zu beeinflussen, wie der `lin
 
 Als flexible und anpassbare Plattform erstellt MRTK die Datei beim Import in , wenn sie nicht `link.xml` `Assets/MixedRealityToolkit.Generated` vorhanden ist. Bereits vorhandene link.xml werden nicht überschrieben. Es wird empfohlen, `link.xml` und `link.xml.meta` der Versionskontrolle hinzugefügt zu werden. Entwickler können die Anpassungen an `Assets/MixedRealityToolkit.Generated/link.xml` die Anforderungen des Projekts anpassen.
 
-Standardmäßig behält die link.xml MRTK erstellte Datei die gesamte Assembly bei, die in den folgenden Daten gezeigt wird.
+Standardmäßig behält die link.xml MRTK erstellte Datei die gesamte In den folgenden Daten gezeigte Assembly bei.
 
 ``` xml
 <linker> 
