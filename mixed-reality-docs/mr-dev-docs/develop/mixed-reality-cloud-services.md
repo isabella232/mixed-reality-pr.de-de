@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: Mixed Reality, entwickeln, Entwicklung, HoloLens, Clouddienste, Azure, Remote Rendering, Raumanker, Cognitive Services, Kognition, Unity, Machine Learning, Sprachübersetzung, maschinelles Sehen, Microsoft Graph
-ms.openlocfilehash: 0c123c2bca412589086799c41b183eb6f9364d0c
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: ac4ce3d1bef426682450da69e9c8ffcd9e317e2a7853365e1af082a1913e1ecc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189026"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Übersicht der Azure Mixed Reality-Clouddienste
 
@@ -27,7 +27,7 @@ Mixed Reality-Clouddienste, wie **Azure Remote Rendering** und **Azure Spatial A
 
 ### <a name="azure-remote-rendering"></a>Azure Remote Rendering
 
-[Azure Remote Rendering](https://docs.microsoft.com/azure/remote-rendering/) (ARR) ist ein Dienst, mit dem Sie hochgradig komplexe 3D-Modelle in Echtzeit rendern und auf ein Gerät streamen können. ARR ist zurzeit als öffentliche Vorschauversion erhältlich und kann Ihren Unity- oder nativen C++-Projekten für die Zielplattformen HoloLens 2 oder Windows Desktop-PC hinzugefügt werden.
+[Azure Remote Rendering](/azure/remote-rendering/) (ARR) ist ein Dienst, mit dem Sie hochgradig komplexe 3D-Modelle in Echtzeit rendern und auf ein Gerät streamen können. ARR ist jetzt allgemein verfügbar und kann Ihren Unity- oder nativen C++-Projekten für die Zielplattformen HoloLens 2 oder Windows Desktop-PC hinzugefügt werden.
 
 <br>
 
@@ -47,7 +47,7 @@ Als zusätzlicher Bonus schränkt ARR die Auswahl der Benutzeroberflächen, die 
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/) ist ein plattformübergreifender Dienst, der es Ihnen ermöglicht, Mixed Reality-Anwendungen mit räumlicher Wahrnehmung zu erstellen. Mithilfe von Azure Spatial Anchors können Sie holografische Inhalte über mehrere Geräte und im realen Maßstab hinweg zuordnen, speichern und teilen. 
+[Azure Spatial Anchors](/azure/spatial-anchors/) oder ASA ist ein plattformübergreifender Dienst, der es Ihnen ermöglicht, Mixed Reality-Anwendungen mit räumlicher Wahrnehmung zu erstellen. Mithilfe von Azure Spatial Anchors können Sie holografische Inhalte über mehrere Geräte und im realen Maßstab hinweg zuordnen, speichern und teilen. AOA befindet sich jetzt in der öffentlichen Vorschau, damit Sie es in Ihren Apps ausprobieren können.
 
 Azure Spatial Anchors ist eine einzigartige, maßgeschneiderte Lösung für gängige Anwendungsfälle in Mixed Reality, darunter:
 * **Wegermittlung**: Hierbei können zwei oder mehr Raumanker verbunden werden, um eine Aufgabenliste oder Points-of-Interest zu erstellen, mit denen ein Benutzer interagieren muss.
@@ -65,6 +65,17 @@ Der Dienst kann in einer Vielzahl von Umgebungen und auf einer großen Gruppe vo
 * C++/WinRT und DirectX für HoloLens
 * Xamarin für iOS
 * Xamarin für Android
+
+### <a name="azure-object-anchors"></a>Azure Object Anchors
+
+[Azure Object Anchors](/azure/object-anchors/), oder AOA, ist ein Mixed Reality-Dienst, mit dem Sie umfassende immersive Umgebungen erstellen können, indem Sie 3D-Inhalte automatisch an physischen Objekten ausrichten. Verschaffen Sie sich ein kontextbezogenes Verständnis von Objekten, ohne dafür auf Marker oder manuelle Ausrichtung angewiesen zu sein. Sparen Sie erhebliche Toucharbeit, reduzieren Sie Ausrichtungsfehler, und verbessern Sie die Benutzerfreundlichkeit, indem Sie Mixed Reality-Anwendungen mit Object Anchors erstellen.
+
+Azure Object Anchors sind insbesondere auf gängige Mixed Reality-Anwendungsfälle zugeschnitten, wie etwa:
+* **Schulung**: Erstellen Sie Mixed Reality-Trainingsumgebungen für Ihre Mitarbeiter, ohne Marker zu platzieren oder Zeit für die manuelle Anpassung einer Hologrammausrichtung aufwenden zu müssen.
+* **Aufgabenanleitung**: Mit Mixed Reality können Sie Ihre Mitarbeiter ganz einfach durch eine Reihe von Aufgaben führen.
+* **Ressourcensuche**: Wenn Sie bereits über ein 3D-Modell eines Objekts im physischen Raum verfügen, können Sie mit Azure Object Anchors Instanzen dieses Objekts in Ihrer physischen Umgebung suchen und nachverfolgen.
+
+![Virtuelle Überlagerung von Azure-Objektankern auf einem geöffneten Automotor](images/aoa-img-01.png)
 
 ## <a name="cognitive-services"></a>Cognitive Services
 

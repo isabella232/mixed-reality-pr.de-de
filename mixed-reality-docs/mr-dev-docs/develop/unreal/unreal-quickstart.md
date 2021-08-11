@@ -7,12 +7,12 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, Unreal-Editor, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Dokumentation, Leitfäden, Features, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Portieren, Upgrade
-ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 07ec2760d691938015619d097d214d205cdbab78f250ff9dd8a793dd27f10c4a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99421429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209606"
 ---
 # <a name="creating-your-first-hololens-unreal-application"></a>Erstellen Ihrer ersten HoloLens Unreal-Anwendung
 

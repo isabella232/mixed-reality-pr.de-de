@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: Mixed Reality, JavaScript, Tutorial,BabylonJS, HoloLens, Mixed Reality, UWP, Windows 10, WebXR, immersives Web
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3f59b2769f99a756c4f0c10df1d8a8604a595e
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: e2006e911ad9dae00252c929c7739ff2209f4bf7796f1c49e713cfaf53267cd2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600119"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196824"
 ---
 # <a name="tutorial-create-your-first-webxr-application-using-babylonjs"></a>Tutorial: Erstellen Ihrer ersten WebXR-Anwendung mit „babylon.js“
 

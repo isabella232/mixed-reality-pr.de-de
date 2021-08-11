@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, HTK,
-ms.openlocfilehash: b54445dc5ca7a6c01c968929e243a1fc4ca2d107
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: d6a8170ff9b0a9c1c3ba1461a3e297ffd2f89979864de2fbac056f22dcbb8e2f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197410"
 ---
 # <a name="upgrading-from-holotoolkit"></a>Upgrade von HoloToolkit
 
@@ -71,7 +71,7 @@ Verwandte Eingabesysteme:
 
 |        Methoden                    | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Setup                     | Löschen Sie MainCamera, fügen Sie der Szene das Prefab MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera hinzu, oder verwenden Sie Mixed Reality Toolkit > Configure > Apply Mixed Reality Scene Einstellungen menu item (Konfigurieren von > Apply Mixed Reality Scene Einstellungen).  | MainCamera unter MixedRealityPlayspace über Mixed Reality Toolkit > Zu Szene hinzufügen und konfigurieren... |
+| Setup                     | Löschen Sie MainCamera, fügen Sie der Szene das Prefab MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera hinzu, oder verwenden Sie Mixed Reality Toolkit > Configure > Apply Mixed Reality Scene Einstellungen menu item (Konfigurieren des > Apply Mixed Reality Scene Einstellungen-Menüelements).  | MainCamera unter MixedRealityPlayspace über Mixed Reality Toolkit > Zu Szene hinzufügen und konfigurieren... |
 | Konfiguration             | Konfiguration der Kameraeinstellungen, die für die Prefab-Instanz ausgeführt wird. | Kameraeinstellungen, die im Profil Mixed Reality-Kamera [konfiguriert sind.](xref:Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile) |
 
 ## <a name="speech"></a>Spracheingabe/-ausgabe
@@ -81,7 +81,7 @@ Verwandte Eingabesysteme:
 |         Methoden                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | Setup                     | Fügen Sie Ihrer Szene eine SpeechInputSource hinzu. | Der Schlüsselwortdienst (z. B. Windows Speech Input Manager) muss den Datenanbietern des Eingabesystems hinzugefügt werden. |
-| Konfiguration             | Erkannte Schlüsselwörter werden im Inspektor von SpeechInputSource konfiguriert. | Schlüsselwörter werden im Profil Mixed Reality [Speech-Befehle konfiguriert.](../features/input/speech.md) |
+| Konfiguration             | Erkannte Schlüsselwörter werden im Inspektor von SpeechInputSource konfiguriert. | Schlüsselwörter werden im Mixed Reality [Speech-Befehlsprofil konfiguriert.](../features/input/speech.md) |
 | Ereignishandler            | `ISpeechHandler` | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
 ### <a name="dictation"></a>Diktieren
@@ -117,26 +117,26 @@ Verwandte Eingabesysteme:
 
 |         Methoden                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Setup                     | Fügen Sie `BoundaryManager` das Skript der Szene hinzu. | Aktivieren Sie das Begrenzungssystem im Konfigurationsprofil. |
+| Setup                     | Fügen Sie das `BoundaryManager` Skript der Szene hinzu. | Aktivieren Sie das Begrenzungssystem im Konfigurationsprofil. |
 | Konfiguration             | Konfigurieren Sie die Szeneninstanz im Inspektor. | Konfigurieren Sie die Einstellungen im Profil Begrenzungsvisualisierung. |
 
 ## <a name="sharing"></a>Freigabe
 
 |             Methoden               | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Setup                     | Freigabedienst: Fügen Sie der Szene Freigabe-Prefab hinzu. UNet: Verwenden Sie das Beispiel SharingWithUNET. | Wird ausgeführt |
+| Setup                     | Freigabedienst: Fügen Sie der Szene ein Freigabe-Prefab hinzu. UNet: Verwenden Sie das Beispiel SharingWithUNET. | Wird ausgeführt |
 | Konfiguration             | Konfigurieren Sie die Szeneninstanzen im Inspektor. | Wird ausgeführt |
 
 ## <a name="ux"></a>UX
 
 |         Methoden                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| Schaltfläche                     | [Interagierbare Objekte](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Schaltfläche](../features/ux-building-blocks/Button.md) |
-| Interaktionsfähig                     | [Interagierbare Objekte](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interaktionsfähig](../features/ux-building-blocks/Interactable.md) |
+| Schaltfläche                     | [Interaktivierbare Objekte](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Schaltfläche](../features/ux-building-blocks/Button.md) |
+| Interaktionsfähig                     | [Interaktivierbare Objekte](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [Interaktionsfähig](../features/ux-building-blocks/Interactable.md) |
 | Umgebendes Feld             | [Begrenzungsrahmen](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [Begrenzungsrahmen](../features/ux-building-blocks/bounding-box.md) |
 | App-Leiste             | [App-Leiste](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [App-Leiste](../features/ux-building-blocks/app-bar.md) |
 | One-Hand-Manipulation (Grb und Move)   | [HandDraggable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/HandDraggable.cs) | [Manipulationshandler](../features/ux-building-blocks/manipulation-handler.md) |
-| Zwei handige Manipulation (Greifen/Verschieben/Drehen/Skalieren)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulationshandler](../features/ux-building-blocks/manipulation-handler.md) |
+| Zweihandbearbeitung (Greifen/Verschieben/Drehen/Skalieren)             | [TwoHandManipulatable](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/Input/Scripts/Utilities/Interactions/TwoHandManipulatable.cs) | [Manipulationshandler](../features/ux-building-blocks/manipulation-handler.md) |
 | Tastatur             | [Tastatur-Prefab]() | [Systemtastatur](../features/ux-building-blocks/system-keyboard.md) |
 | QuickInfo             | [QuickInfo](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_TooltipExample.md) | [QuickInfo](../features/ux-building-blocks/tooltip.md) |
 | Objektsammlung             | [Objektsammlung](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_ObjectCollection.md) | [Objektsammlung](../features/ux-building-blocks/object-collection.md) |
@@ -144,7 +144,7 @@ Verwandte Eingabesysteme:
 
 ## <a name="utilities"></a>Hilfsprogramme
 
-Einige Hilfsprogramme wurden als Duplikate mit dem Solver-System abgestimmt. Melden Sie ein Problem, wenn eines der benötigten Skripts fehlt.
+Einige Hilfsprogramme wurden als Duplikate mit dem Solversystem abgeglichen. Melden Sie ein Problem, wenn eines der benötigten Skripts fehlt.
 
 | HTK 2017 |  MRTK v2  |
 |----------|-----------|
@@ -152,4 +152,4 @@ Einige Hilfsprogramme wurden als Duplikate mit dem Solver-System abgestimmt. Mel
 | Tagalong | [`RadialView`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.RadialView) oder [`Orbital`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Orbital) [Solver](../features/ux-building-blocks/solvers/Solver.md) |
 | FixedAngularSize | [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize)[Solver](../features/ux-building-blocks/solvers/solver.md) |
 | FpsDisplay | [Diagnosesystem](../features/diagnostics/diagnostics-system-getting-started.md) (im Konfigurationsprofil) |
-| NearFade | Integriert in Mixed Reality [Toolkit Standard-Shader](../features/rendering/mrtk-standard-shader.md) |
+| NearFade | In Mixed Reality [Toolkit Standard-Shader](../features/rendering/mrtk-standard-shader.md) integriert |

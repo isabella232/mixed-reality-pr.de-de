@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality, Design, Steuerelemente, Ui, ux, Statusanzeige, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 8d397f627b55409d640ac6925a72d6bf169e207c27cb2a90bcee990c7a8d7683
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600549"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207884"
 ---
 # <a name="progress-indicator"></a>Statusanzeige
 
@@ -19,7 +19,7 @@ ms.locfileid: "110600549"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-Ein Statussteuerelement gibt Feedback, dass ein Vorgang mit langer Ausführung ausgeführt wird. Wenn ein Statusindikator angezeigt wird, können Benutzer die Wartezeit anzeigen und nicht mit der App interagieren.
+Ein Statussteuerelement gibt Feedback, dass ein Vorgang mit langer Ausführung ausgeführt wird. Wenn eine Statusanzeige angezeigt wird, können Benutzer die Wartezeit anzeigen und nicht mit der App interagieren.
 
 <br>
 
@@ -27,14 +27,14 @@ Ein Statussteuerelement gibt Feedback, dass ein Vorgang mit langer Ausführung a
 
 ## <a name="types-of-progress"></a>Typen von Statussteuerelementen
 
-Es ist wichtig, dem Benutzer Informationen darüber bereitzustellen, was passiert. In Mixed Reality können Benutzer leicht von der physischen Umgebung oder den Objekten ablenken, wenn Ihre App kein gutes visuelles Feedback hat. In Situationen, die einige Sekunden dauern, z. B. wenn Daten geladen werden oder eine Szene aktualisiert wird, empfiehlt es sich, einen visuellen Indikator anzuzeigen. Es gibt zwei Optionen, um dem Benutzer anzuzeigen, dass ein Vorgang ausgeführt wird: eine **Statusanzeige** oder ein **Statusring.**
+Es ist wichtig, dem Benutzer Informationen darüber bereitzustellen, was passiert. In Mixed Reality können Benutzer leicht von der physischen Umgebung oder objekten ablenkt werden, wenn Ihre App kein gutes visuelles Feedback hat. In Situationen, die einige Sekunden dauern, z. B. wenn Daten geladen werden oder eine Szene aktualisiert wird, empfiehlt es sich, einen visuellen Indikator anzuzeigen. Es gibt zwei Optionen, um dem Benutzer anzuzeigen, dass ein Vorgang ausgeführt wird: eine **Statusanzeige** oder ein **Statusring.**
 
 :::row:::
     :::column:::
         ### <a name="progress-barbr"></a>Statusleiste<br>
         Eine Statusanzeige zeigt den Prozentsatz an, in dem eine Aufgabe abgeschlossen wurde. Sie sollte während eines Vorgangs verwendet werden, dessen Dauer bekannt ist (determinierend), aber der Fortschritt sollte die Interaktion des Benutzers mit der App nicht blockieren.<br>
         <br>
-        *Abbildung: Beispiel der Statusanzeige in HoloLens*
+        *Abbildung: Statusanzeigebeispiel in HoloLens*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -55,7 +55,7 @@ Es ist wichtig, dem Benutzer Informationen darüber bereitzustellen, was passier
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Beispiel eines Statusrings auf HoloLens-Gerät](images/640px-progressring.jpg)<br>
+       ![Beispiel eines Statusrings auf HoloLens Gerät](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -83,7 +83,7 @@ Es ist wichtig, dem Benutzer Informationen darüber bereitzustellen, was passier
 ## <a name="best-practices"></a>Bewährte Methoden
 
 * Eng an die Anzeige von Progress [koppeln oder taggen,](billboarding-and-tag-along.md) da der Benutzer den Kopf leicht in einen leeren Bereich verschieben und den Kontext verlieren kann. Ihre App könnte so aussehen, als wäre sie abgestürzt, wenn der Benutzer nichts sehen kann. Die Kennzeichnung und das Tag-Along sind in das Prefab Progress integriert.
-* Es ist immer gut, Statusinformationen darüber bereitzustellen, was dem Benutzer passiert. Das Prefab Progress stellt verschiedene visuelle Stile bereit, einschließlich des Status des Windows-Standardringtyps zum Bereitstellen des Status. Sie können auch ein benutzerdefiniertes Gitternetz mit einer Animation verwenden, wenn der Stil Ihres Fortschritts an der Marke Ihrer App ausgerichtet werden soll.
+* Es ist immer gut, Statusinformationen darüber bereitzustellen, was dem Benutzer passiert. Das Prefab Progress stellt verschiedene visuelle Stile bereit, einschließlich des Windows Standardmäßigen Ringtypstatus zum Bereitstellen des Status. Sie können auch ein benutzerdefiniertes Gitternetz mit einer Animation verwenden, wenn der Stil Ihres Fortschritts an der Marke Ihrer App ausgerichtet werden soll.
 
 <br>
 

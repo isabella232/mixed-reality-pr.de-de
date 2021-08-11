@@ -5,20 +5,20 @@ author: sw5813
 ms.author: suwu
 ms.date: 9/4/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Bereitstellen auf gerät, PC, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Bereitstellung auf Gerät, PC, Dokumentation, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 96799de948cf9e1cbca89b7e781f3f830fbc005810680d1164d04acb757b1a09
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208186"
 ---
 # <a name="the-making-of-kippys-escape"></a>Das Machen von Kippys Escape
 ![Kippys Escape-Herobild](images/KippysEscape_1920.jpg)
 
-Kippy der Roboter reaktiviert, um sich auf einer Insel zu finden. Es liegt an Ihnen, Ihre Problembehebung zu lösen, damit sie einen Pfad zurück zu ihrem Raketenangriff finden kann. Besen Sie sich [HoloLens 2,](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) und laden Sie die [](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) App aus dem Microsoft Store, oder klonen Sie das Repository von GitHub und holen Sie sich Kippy home safe!  
+Kippy der Roboter reaktiviert, um sich auf einer Insel zu finden. Es liegt an Ihnen, Ihren Lösungs-Hat für Probleme zu finden, um einen Pfad zurück zu seinem Raketenangriff zu finden. Klonen HoloLens 2 Sie [](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) die App aus dem Microsoft Store, [](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) oder klonen Sie das Repository von GitHub und schützen Sie Kippy nach Hause!  
 
 > [!IMPORTANT]
 > Stellen Sie sicher, dass **Sie Unreal Engine 4.25** oder höher verwenden, wenn Sie Kippys Escape aus dem repository GitHub erstellen.
@@ -35,7 +35,7 @@ Wenn Sie über HoloLens 2 verfügen, können Sie die App direkt herunterladen un
 
 Unser Ziel bei der Erstellung von Kippys Escape war es, eine Umgebung zu erstellen, die die HoloLens 2-Unterstützung der [Unreal Engine,](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html)die Funktionen von HoloLens 2 und das Mixed Reality Toolkit hervorheben würde. Wir wollten Entwickler dazu inspiriert, sich vorzustellen, was sie mit Unreal und HoloLens 2.  
 
-Wir haben drei Leitprinzipien für die Erfahrung festgelegt: dass sie spaßig, interaktiv und eine niedrige Einstiegsbarriere haben muss. Wir wollten, dass die Benutzeroberfläche intuitiv genug ist, damit selbst ein erstmaliger Mixed Reality-Benutzer kein Tutorial benötigt, um es durchgehen zu können.  
+Wir haben drei Leitprinzipien für die Erfahrung festgelegt: dass sie spaßig, interaktiv und eine niedrige Einstiegsbarriere haben muss. Wir wollten, dass die Benutzeroberfläche so intuitiv ist, dass selbst ein erstmaliger Mixed Reality-Benutzer kein Tutorial benötigt, um es durchgehen zu können.  
 
 ## <a name="designing-the-game"></a>Entwerfen des Spiels 
 
@@ -59,7 +59,7 @@ Um unseren kurzen Produktionszeitplan einzuhalten, stimmten wir zu, dass ein Gle
 
 *Wenn der Benutzer zu lange dauert, um ein Problem zu lösen, gibt Kippy dem Benutzer einen Hinweis.*
 
-Über den Zeichen- und Umgebungsentwurf hinaus haben wir uns sehr um das Spiel gespürt. Eyetracking ermöglichte es uns, Material- und Soundattribute zu deaktivieren, die wichtige Teile des Spiels hervorgehoben haben. Räumliche Audiodaten haben dazu beigetragen, dass sich die Ebenen in der Umgebung des Players zu Hause anfühlten. Die Möglichkeit, Objekte zu greifen, Schaltflächen zu drücken und Schieberegler zu bearbeiten, fördert innovative Spielerbindungen. Es war wichtig sicherzustellen, dass diese Verbindungspunkte natürlich sind. 
+Über das Zeichen- und Umgebungsdesign hinaus haben wir uns sehr um das Spiel gespürt. Eyetracking ermöglichte es uns, Material- und Soundattribute zu verwenden, die wichtige Teile des Spiels hervorgehoben haben. Räumliche Audiodaten haben dazu beigetragen, dass sich die Ebenen in der Umgebung des Players zu Hause anfühlten. Die Möglichkeit, Objekte zu greifen, Schaltflächen zu drücken und Schieberegler zu bearbeiten, fördert innovative Spielerbindungen. Es war wichtig sicherzustellen, dass diese Verbindungspunkte natürlich sind. 
 
 ![Das Ende des Brückenkabels leuchtet, wenn sich die Hand des Benutzers dem Kabel nähert.](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -69,7 +69,7 @@ Um unseren kurzen Produktionszeitplan einzuhalten, stimmten wir zu, dass ein Gle
 
 Kippys Escape basiert stark auf Mixed Reality UX Tools-Komponenten, um das Spiel interaktiv zu gestalten– nämlich Handinteraktions-Actors, Begrenzungssteuerelemente, Manipulatoren, Schieberegler und Schaltflächen.   
 
-Der [Handinteraktionsakteur](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) ermöglicht sowohl die direkte als auch die ferne Manipulation von Hologrammen. Zu Beginn von Kippys Escape erhält der Benutzer die Möglichkeit, den Speicherort des Spiels zu festlegen. Handbalken, die sich von der Handfläche des Benutzers erstrecken, machen es einfach, große Hologramme zu bearbeiten, die weit entfernt sind, wie im gif unten zu sehen.  
+Der [Handinteraktionsakteur](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) ermöglicht sowohl die direkte als auch die ferne Manipulation von Hologrammen. Zu Beginn von Kippys Escape erhält der Benutzer die Möglichkeit, den Speicherort des Spiels fest zu legen. Handbalken, die sich von der Handfläche des Benutzers erstrecken, machen es einfach, große Hologramme zu bearbeiten, die weit entfernt sind, wie im gif unten zu sehen.  
 
 ![Handinteraktionsakteur GIF](images/kippys-escape/kippys-escape-img-06.gif)
 
@@ -104,7 +104,7 @@ Wir hätten wahrscheinlich mehr tun können, aber wir waren der Ansicht, dass ei
 
 ## <a name="try-it-out"></a>Probieren Sie es aus! 
 
-Starten Sie Ihre [HoloLens 2,](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) und laden Sie die App aus [](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) dem Microsoft Store herunter, oder klonen Sie das Repository aus GitHub und erstellen Sie die App selbst!  
+Starten Sie Ihren [HoloLens 2,](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) und laden Sie die App aus [](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) dem Microsoft Store herunter, oder klonen Sie das Repository aus GitHub und erstellen Sie die App selbst!  
 
 ## <a name="about-the-team"></a>Informationen zum Team
 

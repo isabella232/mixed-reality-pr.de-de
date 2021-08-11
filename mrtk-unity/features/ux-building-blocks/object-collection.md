@@ -5,22 +5,22 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Objektsammlung,
-ms.openlocfilehash: 8390e9c4a7bd419f99a5c8c4af7e7a2eca1d8f3f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 6705bd7093dbcd81912153872e4fd07c703fc5c0b9c081e0287589a7c8e959ac
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177055"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197518"
 ---
 # <a name="object-collection"></a>Objektsammlung
 
 ![Objektsammlung](../images/object-collection/MRTK_ObjectCollection_Main.jpg)
 
-Objektauflistung ist ein Skript, mit dem ein Array von Objekten in vordefinierten dreidimensionalen Formen erstellt werden kann. Es unterstützt verschiedene Oberflächenstile, einschließlich Ebene, Zylinder, Kugel und Radial. Da es jedes Objekt in Unity unterstützt, kann es zum Layout von 2D- und 3D-Objekten verwendet werden.
+Objektauflistung ist ein Skript, mit dem ein Array von Objekten in vordefinierten dreidimensionalen Formen erstellt werden kann. Es unterstützt verschiedene Oberflächenstile, einschließlich Ebene, Zylinder, Kugel und Radial. Da es jedes Objekt in Unity unterstützt, kann es verwendet werden, um sowohl 2D- als auch 3D-Objekte zu layouten.
 
 ## <a name="object-collection-scripts"></a>Objektsammlungsskripts
 
-- [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) unterstützt Typen von Zylindern, Ebenen, Kugeln und radialen Oberflächen.
+- [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) unterstützt Die Typen "Zylinder", "Ebene", "Kugel", "Radiale Oberfläche"
 - [`ScatterObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.ScatterObjectCollection) unterstützt die Sammlung verteilter Stile.  
 - [`TileGridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.TileGridObjectCollection) stellt einige zusätzliche Optionen für GridObjectCollection bereit. **Hinweis:** TileGridObjectCollection erweitert nicht und weist mehrere Fehler auf [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) (siehe [Problem 6237](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6237)). Daher wird empfohlen, zu [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) verwenden.
 
@@ -53,7 +53,7 @@ Verwenden Sie das Feld **Layout,** um die Zeilen-/Spaltenreihenfolge anzugeben, 
 
 **Horizontal:** Untergeordnete Elemente werden in einer einzelnen Zeile angeordnet, wobei nur Spalten verwendet werden.
 
-**Vertikal:** Untergeordnete Elemente werden in einer einzelnen Spalte angeordnet, wobei nur Zeilen verwendet werden.
+**Vertikal:** Untergeordnete Elemente werden nur mitHilfe von Zeilen in einer einzelnen Spalte angeordnet.
 
 ## <a name="object-collection-examples"></a>Beispiele für Objektsammlungen
 

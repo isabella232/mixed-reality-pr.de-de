@@ -5,19 +5,19 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, QuickInfo, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: cd490a260c5caedc3f315d72f9a47bce563695a0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, QuickInfo, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: 3bf9230f89ebac3ad14e1e383c0f51a5a8d61c1c498c0a242e4dffbd1488bdbf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600590"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196854"
 ---
 # <a name="tooltip"></a>QuickInfo
 
 ![QuickInfo](images/UX_Hero_Tooltip.jpg)
 
-Eine QuickInfo ist eine kurze Beschreibung, die mit einem anderen Steuerelement oder Objekt verknüpft ist. Sie werden verwendet, um bei näherer Betrachtung einen Hinweis oder zusätzliche Informationen zu übermitteln. QuickInfos helfen Benutzern, unbekannte Objekte in der physischen Umgebung zu verstehen, die nicht direkt beschrieben werden. 
+Eine QuickInfo ist eine kurze Beschreibung, die mit einem anderen Steuerelement oder Objekt verknüpft ist. Sie werden verwendet, um bei näherer Betrachtung einen Hinweis oder zusätzliche Informationen zu übermitteln. QuickInfos helfen Benutzern dabei, unbekannte Objekte in der physischen Umgebung zu verstehen, die nicht direkt beschrieben werden. 
 
 <br>
 

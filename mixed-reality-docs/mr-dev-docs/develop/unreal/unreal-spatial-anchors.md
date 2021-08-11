@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, Features, Dokumentation, Leitfäden, Hologramme, Raumanker, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: d44610ea0632dbc93941096007e60e4ae7be53e1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c8fe7fef5af247663eefed097d3494d6187195272967434ecc7696349e1e6889
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98009980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213562"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Lokale Raumanker in Unreal
 

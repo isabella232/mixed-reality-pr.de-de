@@ -1,32 +1,32 @@
 ---
 title: Raumabtastvisualisierung
-description: Anwendungen, die eine räumliche Zuordnung erfordern, verwenden das Gerät, um Daten im Laufe der Zeit und sitzungsübergreifend zu sammeln.
+description: Anwendungen, die eine räumliche Zuordnung erfordern, verwenden das Gerät, um Daten im Zeitverlauf und sitzungsübergreifend zu sammeln.
 author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, App-Muster, Design, HoloLens, Raumscan, räumliche Abbildung, Gitter, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens
-ms.openlocfilehash: 87312a5d5361ac0e8c24a622cf69fe3e9b147ff5
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: Windows Mixed Reality, App-Muster, Entwurf, HoloLens, Raumscan, räumliche Zuordnung, Gitternetz, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens
+ms.openlocfilehash: 0ebfbd9a1f07ffd0671d36dcc63dbd5303a2cdbceb906839be9736f43de76937
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207828"
 ---
 # <a name="room-scan-visualization"></a>Raumabtastvisualisierung
 
-Anwendungen, die räumliche Zuordnung erfordern, verlassen sich darauf, dass das Gerät Daten im Zeit- und sitzungsübergreifenden Zeitraum sammelt. Die Vollständigkeit und Qualität der Zuordnungsdaten hängt von vielen Faktoren ab, z. B. dem Umfang der Untersuchung durch den Benutzer, der Verstrichenheit seit der Untersuchung und davon, ob Objekte wie Hänge und Türen seit dem Scannen des Bereichs durch das Gerät verschoben wurden.
+Anwendungen, die eine räumliche Zuordnung erfordern, verlassen sich darauf, dass das Gerät Daten im Laufe der Zeit und sitzungsübergreifend sammelt. Die Vollständigkeit und Qualität der Zuordnungsdaten hängt von vielen Faktoren ab, einschließlich des Umfangs der Vom Benutzer durchgeführten Untersuchung, der Zeit, die seit der Untersuchung verstrichen ist, und davon, ob Objekte wie Türen und Türen seit dem Scannen des Bereichs durch das Gerät verschoben wurden.
 
-Um nützliche räumliche Zuordnungsdaten sicherzustellen, haben Anwendungsentwickler mehrere Optionen:
-* Verlassen Sie sich darauf, was möglicherweise bereits erfasst wurde. Diese Daten sind möglicherweise anfänglich unvollständig.
-* Bitten Sie den Benutzer, die Blumengeste zu verwenden, um zum Haus Windows Mixed Reality zu kommen und dann den Bereich zu erkunden, den er für die Benutzeroberfläche verwenden möchte. Sie können mithilfe von Tippen in die Luft bestätigen, dass dem Gerät alle erforderlichen Flächen bekannt sind.
+Anwendungsentwickler haben mehrere Optionen, um nützliche räumliche Zuordnungsdaten sicherzustellen:
+* Verlassen Sie sich auf das, was möglicherweise bereits gesammelt wurde. Diese Daten sind möglicherweise zunächst unvollständig.
+* Bitten Sie den Benutzer, die Geste "Bloom" zu verwenden, um zum Windows Mixed Reality Startseite zu gelangen und dann den Bereich zu erkunden, den er für die Umgebung verwenden möchte. Sie können mithilfe von Tippen in die Luft bestätigen, dass dem Gerät der gesamte erforderliche Bereich bekannt ist.
 * Erstellen Sie eine benutzerdefinierte Erkundungserfahrung in ihrer eigenen Anwendung.
 
-In all diesen Fällen werden die tatsächlichen Daten, die während der Untersuchung gesammelt werden, vom System gespeichert, und die Anwendung muss dies nicht tun. Wenn Sie die Raumscanvisualisierung in Aktion sehen möchten, sehen Sie sich unsere Videodemo **Designing Holograms - Spatial Awareness** (Entwerfen von Hologrammen – räumliche Wahrnehmung) weiter unten an:
+In all diesen Fällen werden die während der Untersuchung gesammelten Daten vom System gespeichert, und die Anwendung muss dies nicht tun. Wenn Sie die Raumscanvisualisierung in Aktion sehen möchten, sehen Sie sich die folgende Videodemo **zum Entwerfen Hologramme – Räumliche Wahrnehmung** an:
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*Dieses Video wurde aus der App "Entwerfen von Hologrammen" HoloLens 2 aufgenommen. Laden Sie hier herunter, und profitieren Sie [von der vollständigen Erfahrung.](https://aka.ms/dhapp)*
+*Dieses Video wurde aus der HoloLens 2-App „Entwerfen von Hologrammen“ aufgenommen. Laden Sie die vollständige Erfahrung [hier](https://aka.ms/dhapp) herunter, und genießen Sie sie.*
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -50,9 +50,9 @@ In all diesen Fällen werden die tatsächlichen Daten, die während der Untersuc
 
 ## <a name="building-a-custom-scanning-experience"></a>Erstellen einer benutzerdefinierten Überprüfungserfahrung
 
-Anwendungen können die räumlichen Zuordnungsdaten zu Beginn der Benutzeroberfläche analysieren, um zu beurteilen, ob der Benutzer zusätzliche Schritte ausführen soll, um seine Vollständigkeit und Qualität zu verbessern. Wenn die Analyse darauf hindeutet, dass die Qualität verbessert werden sollte, sollten Entwickler eine Visualisierung bereitstellen, die der Welt überlagert werden soll, um Anzugeben:
-* Wie viel des Gesamtvolumens in der Umgebung der Benutzer muss teil der Erfahrung sein?
-* Wo sollte der Benutzer die Daten verbessern?
+Anwendungen können die räumlichen Zuordnungsdaten zu Beginn der Benutzeroberfläche analysieren, um zu beurteilen, ob der Benutzer zusätzliche Schritte ausführen soll, um seine Vollständigkeit und Qualität zu verbessern. Wenn die Analyse angibt, dass die Qualität verbessert werden sollte, sollten Entwickler eine Visualisierung zur Überlagerung auf der Welt bereitstellen, um Folgendes anzugeben:
+* Wie viel des Gesamtvolumens in der Benutzerumgebung muss Teil der Benutzeroberfläche sein?
+* Ort, an dem der Benutzer Daten verbessern soll
 
 Benutzer wissen nicht, was einen "guten" Scan ausmacht. Sie müssen angezeigt oder informiert werden, wonach sie suchen müssen, wenn sie aufgefordert werden, einen Scan auszuwerten – Flachkeit, Abstand von tatsächlichen Wänden usw. Der Entwickler sollte eine Feedbackschleife implementieren, die das Aktualisieren der räumlichen Zuordnungsdaten während der Überprüfungs- oder Untersuchungsphase einschließt.
 
@@ -74,25 +74,25 @@ Wenn zwischengespeicherte räumliche Zuordnungsdaten vorhanden sind, erstellt di
 * Einmalige Kosten für jede Nachverarbeitung der räumlichen Daten zu Physikalischen, Grafik- und anderen Zwecken.
 
 **Nachteile**
-* Die Bewegung von realen Objekten oder Personen wird nicht durch die zwischengespeicherten Daten widergespiegelt. Beispielsweise könnte die Anwendung eine Tür öffnen, wenn sie jetzt geschlossen wird.
-* Potenziell mehr Anwendungsspeicher, um die zwischengespeicherte Version der Daten zu verwalten.
+* Die Bewegung von realen Objekten oder Personen wird nicht durch die zwischengespeicherten Daten widergespiegelt. Beispielsweise kann die Anwendung eine türöffnend betrachten, wenn sie jetzt geschlossen wird.
+* Potenziell mehr Anwendungsspeicher, um die zwischengespeicherte Version der Daten beizubehalten.
 
 Ein guter Fall für diese Methode ist eine kontrollierte Umgebung oder ein Tabellen-Top-Spiel.
 
 ### <a name="continuous-spatial-mapping"></a>Kontinuierliche räumliche Zuordnung
 
-Bei bestimmten Anwendungen wird die Überprüfung möglicherweise fortgesetzt, um räumliche Zuordnungsdaten zu aktualisieren.
+Bestimmte Anwendungen können sich auf die fortgesetzte Überprüfung verlassen, um räumliche Zuordnungsdaten zu aktualisieren.
 
 **Vorteile**
 * Sie müssen keine separate Überprüfungs- oder Untersuchungserfahrung im Voraus in Ihrer Anwendung erstellen.
-* Die Bewegung realer Objekte kann durch das Spiel widergespiegelt werden, allerdings mit einiger Verzögerung.
+* Die Bewegung realer Objekte kann vom Spiel reflektiert werden, allerdings mit etwas Verzögerung.
 
 **Nachteile**
 * Höhere Komplexität bei der Implementierung der Haupterfahrung.
-* Potenzieller Mehraufwand durch die zusätzliche grafik- und physikalische Verarbeitung, da Änderungen inkrementell von diesen Systemen aufgenommen werden müssen.
-* Höhere Leistung, wärmer und CPU-Auswirkungen.
+* Potenzieller Mehraufwand durch die zusätzliche grafik- und physikalische Verarbeitung, da Änderungen inkrementell von diesen Systemen erfasst werden müssen.
+* Höhere Auswirkungen auf Leistung, Wärme und CPU.
 
-Ein guter Fall für diese Methode ist, dass Hologramme mit bewegten Objekten interagieren sollen, z. B. ein holografisches Auto, das auf dem Boden fährt, je nachdem, ob es offen oder geschlossen ist, auf eine Tür stoßen möchte.
+Ein guter Fall für diese Methode ist ein Fall, bei dem Hologramme mit bewegten Objekten interagieren sollen, z. B. ein holografisches Auto, das im Boden fährt, möglicherweise in eine Tür stoßen soll, je nachdem, ob es offen oder geschlossen ist.
 
 ## <a name="see-also"></a>Siehe auch
 
