@@ -1,64 +1,64 @@
 ---
-title: Typen von Mixed Reality-apps
-description: Erfahren Sie mehr über die von der Mixed Reality-Plattform unterstützten Oberflächen, von immersiven Umgebungen bis hin zu hellen Informationen über die Umgebung eines Benutzers.
+title: Typen von Mixed Reality-Apps
+description: Erfahren Sie mehr über die von der Mixed Reality-Plattform unterstützten Umgebungen, von immersiven Umgebungen bis zu einfachen Informationsebenen über der Umgebung eines Benutzers.
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Design, App Patterns, Mixed Reality Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, hololens
-ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality, Design, App-Muster, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens
+ms.openlocfilehash: 13d4f538148b2c6b6f4df422c6c423f2b2710ca1ba2d98fe4f952c14284035f8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007620"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218924"
 ---
-# <a name="types-of-mixed-reality-apps"></a>Typen von Mixed Reality-apps
+# <a name="types-of-mixed-reality-apps"></a>Typen von Mixed Reality-Apps
 
-Einer der Vorteile bei der Entwicklung von Apps für Windows Mixed Reality ist das Spektrum der Benutzeroberflächen, die die Plattform unterstützen kann. Von vollständig immersiven virtuellen Umgebungen bis zur leichten Überlagerung der aktuellen Umgebung eines Benutzers mit Informationen bietet Windows Mixed Reality eine Sammlung robuster Tools, mit denen sich jede Erfahrung lebendig gestalten lässt. Es ist wichtig, dass ein App-Ersteller frühzeitig im Entwicklungsprozess daran interessiert ist, an welcher Stelle dieses Spektrum liegt. Diese Entscheidung wirkt sich letztendlich sowohl auf die Zusammensetzung des App-Entwurfs als auch auf den technologischen Entwicklungspfad aus.
+Einer der Vorteile der Entwicklung von Apps für Windows Mixed Reality ist das Spektrum an Erfahrungen, die die Plattform unterstützen kann. Von vollständig immersiven virtuellen Umgebungen bis zur leichten Überlagerung der aktuellen Umgebung eines Benutzers mit Informationen bietet Windows Mixed Reality eine Sammlung robuster Tools, mit denen sich jede Erfahrung lebendig gestalten lässt. Es ist wichtig, dass ein App-Ersteller frühzeitig im Entwicklungsprozess versteht, wo in diesem Spektrum seine Erfahrung liegt. Diese Entscheidung wirkt sich letztendlich sowohl auf das App-Design als auch auf den technologischen Entwicklungspfad aus.
 
-## <a name="enhanced-environment-apps-hololens-only"></a>Erweiterte Umgebungs-Apps (nur hololens)
+## <a name="enhanced-environment-apps-hololens-only"></a>Erweiterte Umgebungs-Apps (nur HoloLens)
 
-Eine der leistungsfähigsten Möglichkeiten, wie gemischte Realität den Wert einbringen kann, ist die Möglichkeit, dass Entwickler digitale Informationen oder Inhalte in der aktuellen Umgebung eines Benutzers platzieren. Diese Vorgehensweise ist für apps beliebt, bei denen die kontextabhängige Platzierung digitaler Inhalte in der realen Welt von größter Bedeutung ist und die tatsächliche Umgebung des Benutzers in der Praxis "Present" ist. Benutzer können auch mühelos zwischen realen digitalen Aufgaben wechseln. Dies bietet sogar noch mehr an die Zusage, dass die vom Benutzer angezeigten gemischten Reality-apps wirklich ein Teil Ihrer Umgebung sind.
+Eine der leistungsstärksten Möglichkeiten, die Mixed Reality nutzen kann, besteht in der Tatsache, dass Entwickler digitale Informationen oder Inhalte in der aktuellen Umgebung eines Benutzers platzieren können. Dieser Ansatz ist für Apps beliebt, bei denen die kontextbezogene Platzierung digitaler Inhalte in der realen Welt von entscheidender Bedeutung ist und die reale Umgebung des Benutzers während seiner Erfahrung "vorhanden" ist. Benutzer können auch problemlos zwischen realen digitalen Aufgaben wechseln. Dies bietet noch mehr Gedränge für die Zusage, dass die Mixed Reality-Apps, die dem Benutzer angezeigt werden, wirklich Teil ihrer Umgebung sind.
 
-![Erweiterte Umgebungs-apps](images/enhancedenvironmentapps-640px.jpg)<br>
-*Erweiterte Umgebungs-apps*
+![Erweiterte Umgebungs-Apps](images/enhancedenvironmentapps-640px.jpg)<br>
+*Erweiterte Umgebungs-Apps*
 
-**Verwendungs Beispiele**
-* Eine gemischte Reality-App im Editor-Stil, die Benutzern das Erstellen und Platzieren von Notizen in Ihrer Umgebung ermöglicht
-* Eine gemischte Reality-TV-APP, die für die Anzeige
-* Eine gemischte Reality-APP, die über der Kücheninsel platziert wird, um eine Koch Aufgabe zu unterstützen
-* Eine Mixed Reality-APP, mit der Benutzer das Gefühl der "x-ray-Vision" haben (d. h. ein – Hologramm, das auf ein reales Objekt folgt und es imitiert, während der Benutzer "in IT" holografisch sehen kann)
-* In einer Factory enthaltene gemischte Reality-Anmerkungen, um die erforderlichen Informationen zu den Mitarbeitern zu senden
-* Gemischte Realität bei der Suche in einem Bürobereich
-* Gemischte Realität: richtige-Erfahrungen (d. h. das Spiel Stil der Platine)
-* Kommunikations-apps mit gemischter Realität wie Skype
+**Beispiel verwendet**
+* Eine Mixed Reality-Editor-App, mit der Benutzer Notizen in ihrer Umgebung erstellen und platzieren können
+* Eine Mixed Reality-Fernseh-App, die an einem komfortablen Ort für die Anzeige platziert ist
+* Eine Mixed Reality-App, die über der Inselninsel platziert wurde, um eine Aufgabe zu unterstützen
+* Eine Mixed Reality-App, die Benutzern das Gefühl des "X-Ray Vision" vermittelt (d. h. ein Hologramm, das auf einem realen Objekt platziert und es imitiert, während dem Benutzer ermöglicht wird, holografisches "darin" zu sehen)
+* Mixed Reality-Anmerkungen, die in einer Factory platziert werden, um die erforderlichen Informationen des Mitarbeiters zu erhalten
+* Mixed Reality-Wegesuche in einem Büroraum
+* Mixed Reality-Tabellentoperfahrungen (d. h. Spielstilerfahrungen im Board)
+* Mixed Reality-Kommunikations-Apps wie Skype
 
-## <a name="blended-environment-apps"></a>Apps für gemischte Umgebungen
+## <a name="blended-environment-apps"></a>Gemischte Umgebungs-Apps
 
-Angesichts der Fähigkeit von Windows Mixed Reality, die Umgebung des Benutzers zu erkennen und zuzuordnen, ist es möglich, eine digitale Ebene zu erstellen, die sich auf den Platz des Benutzers überlagern kann. Die schlanke Ebene respektiert die Form und die Grenzen der Benutzerumgebung, aber die APP kann bestimmte Elemente transformieren, die sich am besten für das Eintauchen des Benutzers in der APP eignen. Dies wird als gemischte Umgebungs-App bezeichnet. Anders als bei einer erweiterten Umgebungs-APP sind Apps für die gemischte Umgebung unter Umständen nur für die Umgebung geeignet, um das jeweilige Benutzer Verhalten (z. b. das fördern von Bewegung oder durchsuchen) und das Ersetzen von Elementen durch Änderungen zu verbessern (ein Küchen-Counter wird zum Anzeigen eines anderen Kachel Musters erfasst). Diese Art von Umgebung kann sogar ein Element in ein völlig anderes Objekt transformieren, aber dennoch die groben Dimensionen des Objekts als Basis beibehalten (eine Kücheninsel wird in eine dumpfunktion für ein Krimi Spiel für den Krimi transformiert).
+Da Windows Mixed Reality die Umgebung des Benutzers erkennen und zuordnen können, kann er eine digitale Ebene erstellen, die im Bereich des Benutzers überlagert werden kann. Die schlanke Schicht beachtet die Form und die Grenzen der Umgebung des Benutzers, aber die App kann bestimmte Elemente transformieren, die sich am besten für den Benutzer in der App eignen. Dies wird als gemischte Umgebungs-App bezeichnet. Im Gegensatz zu einer erweiterten Umgebungs-App ist die Umgebung für Apps mit gemischter Umgebung möglicherweise nur so wichtig, dass sie ihr Make-Up am besten nutzen, um bestimmtes Benutzerverhalten zu fördern (z. B. bewegungs- oder untersuchungsfreundliches Verhalten) oder indem Elemente durch Änderungen ersetzt werden (ein Zähler für die Benutzeroberfläche wird ge skinnt, um ein anderes Kachelmuster zu zeigen). Diese Art von Erfahrung kann sogar ein Element in ein völlig anderes Objekt transformieren, aber dennoch die groben Dimensionen des Objekts als Basis behalten (eine Insel wird in einen Dumpster für ein Spiel mit EinemVerbrechen umgewandelt).
 
-![Apps für gemischte Umgebungen](images/blendedenvironmentapps-640px.jpg)<br>
-*Apps für gemischte Umgebungen*
+![Gemischte Umgebungs-Apps](images/blendedenvironmentapps-640px.jpg)<br>
+*Gemischte Umgebungs-Apps*
 
-**Verwendungs Beispiele**
-* Eine gemischte Reality-Design-APP, mit der Wände, gegen Flächen oder Bereiche in unterschiedlichen Farben und Mustern gezeichnet werden können
-* Eine Mixed Reality-APP, die es einem Automobildesigner ermöglicht, neue Entwurfs Iterationen für eine bevorstehende Fahrzeug Aktualisierung über ein vorhandenes Auto zu überlagern
-* Ein Bett ist "abgedeckt" und wird durch eine Mischung aus der Realität der Realität im Spiel der Kinder ersetzt.
-* Ein Schreibtisch wird "abgedeckt" und durch eine gemischte Realität dumpester in einem Krimi Spiel
-* Eine hängende Laterne wird "abgedeckt" und durch Signpost ersetzt, wobei ungefähr dieselbe Form und Dimension verwendet werden.
-* Eine APP, die es Benutzern ermöglicht, Löcher in ihren realen oder immersiven weltweiten Wänden zu sprengen, die eine magische Welt offenlegen
+**Beispiel verwendet**
+* Eine Mixed Reality-App für den Innenentwurf, die Wände, Gegenspitzen oder Farben in unterschiedlichen Farben und Mustern zeichnen kann
+* Eine Mixed Reality-App, die es einem Automobildesigner ermöglicht, neue Designiterationen für eine anstehende Fahrzeugaktualisierung über einem vorhandenen Auto zu schichten.
+* Ein Beet wird "abgedeckt" und durch einen Mixed Reality-Kinderspielstand ersetzt.
+* Ein Desk wird "abgedeckt" und durch einen Mixed Reality-Dumpster in einem Verbrechensspiel ersetzt.
+* Eine hängende Laterne wird "abgedeckt" und durch einen Wegweiser ersetzt, der ungefähr die gleiche Form und Dimension verwendet.
+* Eine App, mit der Benutzer Lücken in ihren realen oder immersiven Weltsteinen beseitigen können, die eine beeindruckende Welt zeigen
 
-## <a name="immersive-environment-apps"></a>Immersive Umgebungs-apps
+## <a name="immersive-environment-apps"></a>Immersive Umgebungs-Apps
 
-Immersive Umgebungs-apps sind auf eine Umgebung ausgerichtet, die die Benutzer Welt vollständig ändert und Sie in einer anderen Zeit und in einem anderen Bereich platzieren kann. Diese Umgebungen können sich in Echtzeit fühlen und so eine immersive und aufregende Erfahrung schaffen, die nur durch die Phantasie der APP-Ersteller eingeschränkt wird. Anders als bei Umgebungen mit gemischten Umgebungen, wenn Windows Mixed Reality den Platz des Benutzers identifiziert, kann eine immersive Umgebungs-APP die aktuelle Umgebung des Benutzers vollständig ignorieren und den gesamten Bestand durch einen eigenen ersetzen. Diese Erfahrungen können auch Zeit und Speicherplatz trennen, was bedeutet, dass ein Benutzer die Straßen von Rom in einem immersiven Erlebnis durchlaufen kann, während er sich relativ immer noch in der Praxis verbleiben kann. Der Kontext der realen Umgebung ist für eine immersive Umgebungs-App möglicherweise nicht von Bedeutung.
+Immersive Umgebungs-Apps sind um eine Umgebung zentriert, die die Welt des Benutzers vollständig verändert und sie in einer anderen Zeit und einem anderen Raum platzieren kann. Diese Umgebungen können sich real anfühlen und immersive und rauschende Umgebungen schaffen, die nur durch die Vorstellungsreichtum des App-Erstellers eingeschränkt sind. Im Gegensatz zu Apps mit gemischter Umgebung kann eine immersive Umgebungs-App die aktuelle Umgebung des Benutzers vollständig ignorieren und den gesamten Bestand durch eine eigene ersetzen, sobald Windows Mixed Reality den Raum des Benutzers identifiziert. Diese Erfahrungen können auch Zeit und Raum trennen, was bedeutet, dass ein Benutzer die Straßen von Rome in einer immersiven Umgebung durchstehen kann, während er relativ immer noch in ihrem realen Raum verbleibt. Der Kontext der realen Umgebung ist für eine immersive Umgebungs-App möglicherweise nicht wichtig.
 
-![Immersive Umgebungs-apps](images/windows-mixed-reality-640px.jpg)<br>
-*Immersive Umgebungs-apps*
+![Immersive Umgebungs-Apps](images/windows-mixed-reality-640px.jpg)<br>
+*Immersive Umgebungs-Apps*
 
-**Verwendungs Beispiele**
-* Eine immersive APP, die es einem Benutzer ermöglicht, einen Platz voneinander getrennt zu machen (d. h. durch einen berühmten Gebäude, ein Gebäude, beliebte Stadt)
-* Eine immersive APP, die ein Ereignis oder Szenario für den Benutzer orchestriert (d. h. einen Kampf oder eine Leistung).
+**Beispiel verwendet**
+* Eine immersive App, mit der ein Benutzer einen von seinem eigenen getrennten Raum erkunden kann (d. h. durch ein bekanntes Gebäude, eine beliebte Stadt, eine beliebte Stadt)
+* Eine immersive App, die ein Ereignis oder Szenario um den Benutzer herum orchestriert (d. h. eine Aktion oder eine Leistung).
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -5,21 +5,21 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: c172e5d071bba22626e9c35b2b4318f1ff779335
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: 452f0f352443620dea70b1680859bab4e2b3a0818de5f130accdb84c2798cfe0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562510"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206703"
 ---
 # <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Versionshinweise zu Microsoft Mixed Reality Toolkit 2.6
 
 > [!IMPORTANT]
-> Es gibt ein bekanntes Compilerproblem, das anwendungen betrifft, die für Microsoft HoloLens 2 mit ARM64 erstellt wurden. Dieses Problem wird behoben, indem Visual Studio 2019 auf Version 16.8 oder höher aktualisiert wird. Wenn sie nicht aktualisiert werden Visual Studio, importieren Sie das `com.microsoft.mixedreality.toolkit.tools` Paket, um eine Problemumgehung anzuwenden.
+> Es gibt ein bekanntes Compilerproblem, das anwendungen betrifft, die für Microsoft HoloLens 2 mit ARM64 erstellt wurden. Dieses Problem wird behoben, indem Visual Studio 2019 auf Version 16.8 oder höher aktualisiert wird. Wenn sie nicht aktualisiert werden Visual Studio, importieren Sie das Paket, `com.microsoft.mixedreality.toolkit.tools` um eine Problemumgehung anzuwenden.
 
 ## <a name="whats-new-in-262"></a>Neues in 2.6.2
 
-### <a name="corrects-parenting-of-the-spatial-mesh"></a>Korrigieren der übergeordneten Klammer des räumlichen Gitters
+### <a name="corrects-parenting-of-the-spatial-mesh"></a>Korrigiert die übergeordneten Klammern des räumlichen Gitters.
 
 Behebt das [Problem,](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9819) dass räumliche Gitternetze nach dem Mixed Reality Playspace-Objekt nicht ordnungsgemäß gefunden wurden (z. B. über einen Teleport).
 
@@ -27,7 +27,7 @@ Behebt das [Problem,](https://github.com/microsoft/MixedRealityToolkit-Unity/pul
 
 ### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>Korrekturen von OpenXR, die nicht unter HoloLens 2/UWP ausgeführt werden
 
-Korrigiert eine Regression, die verhindert hat, dass die OpenXR-Unterstützung des MRTK unter UWP ausgeführt wird.
+Behebt eine Regression, die verhindert hat, dass die OpenXR-Unterstützung des MRTK unter UWP ausgeführt wird.
 
 ### <a name="fixes-leap-motion-objectmanipulator-not-rotating"></a>Korrektur von Leap Motion-ObjektManipulator wird nicht gedreht
 
@@ -35,7 +35,7 @@ Korrigiert eine Regression, bei der die Drehung einer Leap Motion-Hand vom Objec
 
 ### <a name="sample-scene-updates"></a>Beispiel für Szenenupdates
 
-Aktualisiert die Szenenverständnis-Beispielszene, um den ausgelieferten Zustand des Unity-Plug-Ins korrekt widerzuzustanden. Aktualisiert außerdem das Beispiel, damit keine Abhängigkeit mehr von der importierten Beispielszene für räumliche Wahrnehmung vor sich geht. Vor dem Update auf 2.6.1 sollten Sie die importierten Szenenverständnis- und räumlichen Wahrnehmungsbeispiele löschen, sofern sie in Ihrem Projekt vorhanden sind, um mögliche Konflikte zu vermeiden. Wenn Sie diese Beispiele nicht entfernt haben und Konflikte im Zusammenhang mit den Beispielen in der Konsole angezeigt werden, entfernen Sie beide Beispiele (oder den Ordner), und versuchen Sie dann erneut, `Assets/Samples/Mixed Reality Toolkit Examples` den Importvorgang zu starten.
+Aktualisiert die Szenenverständnis-Beispielszene, um den ausgelieferten Zustand des Unity-Plug-Ins korrekt widerzuzustanden. Aktualisiert außerdem das Beispiel, damit keine Abhängigkeit mehr von der importierten Beispielszene für räumliche Wahrnehmung vor sich geht. Vor dem Update auf 2.6.1 sollten Sie die importierten Szenenverständnis- und räumlichen Wahrnehmungsbeispiele löschen, wenn sie in Ihrem Projekt vorhanden sind, um mögliche Konflikte zu vermeiden. Wenn Sie diese Beispiele nicht entfernt haben und Konflikte im Zusammenhang mit den Beispielen in der Konsole angezeigt werden, entfernen Sie beide Beispiele (oder den Ordner), und versuchen Sie dann erneut, `Assets/Samples/Mixed Reality Toolkit Examples` den Importvorgang zu starten.
 
 Aktualisiert die Dialogbeispielszene, um die aktuellen Dialogszenarien richtig zu beschreiben.
 
@@ -53,7 +53,7 @@ Die erste Unterstützung für das OpenXR-Vorschaupaket von Unity und das OpenXR 
 >
 > Derzeit werden auch nur x64- und ARM64-Builds unterstützt.
 
-### <a name="asset-swap-utility"></a>Hilfsprogramm zum Austauschen von Ressourcen
+### <a name="asset-swap-utility"></a>Asset Swap-Hilfsprogramm
 
 Tauschen Sie mehrere Ressourcen in einer Unity-Szene mit dem neuen [Asset Swap-Hilfsprogramm aus.](../features/tools/asset-swap-utility.md)
 
@@ -73,7 +73,7 @@ Die Zustands-Schnellansicht ist eine Animationskomponente, die vom Interactive-E
 
 ### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>Teleportierung mit der Teleportgeste wird jetzt auf allen Plattformen unterstützt
 
-Benutzer können nun die Teleportgeste verwenden, um ihren Spielbereich auf allen Plattformen zu bewegen. Verwenden Sie zum Teleportieren mit einem Controller auf MR-Geräten mit Standardkonfigurationen den Fingerabdruck. Um mit artikulierten Händen zu teleportieren, erstellen Sie eine Geste, bei der die Handfläche nach oben mit dem Index und dem Daumen nach außen ausgerichtet ist, und härten Sie den Teleport durch Krümmen des Zeigefingers. Informationen zum Teleportieren mit der Eingabesimulation finden Sie in unserer aktualisierten [Dokumentation zum Eingabesimulationsdienst.](../features/input-simulation/input-simulation-service.md)
+Benutzer können nun die Teleportgeste verwenden, um ihren Spielbereich auf allen Plattformen zu bewegen. Verwenden Sie zum Teleportieren mit einem Controller auf MR-Geräten mit Standardkonfigurationen den Fingerabdruck. Um mit artikulierten Händen zu teleportieren, erstellen Sie eine Geste, bei der die Handfläche nach oben mit dem Index und dem Daumen nach außen gerichtet ist, und den Teleport durch Krümmen des Zeigefingers abschließen. Informationen zum Teleportieren mit der Eingabesimulation finden Sie in unserer aktualisierten [Dokumentation zum Eingabesimulationsdienst.](../features/input-simulation/input-simulation-service.md)
 
 ![Teleportgeste](../features/images/teleport/handteleport.gif)
 
@@ -85,21 +85,21 @@ Experimentelle Unterstützung von [Scene Understanding](/windows/mixed-reality/s
 > Scene Understanding wird nur unter HoloLens 2 und Unity 2019.4 und höher unterstützt.
 >
 > Für dieses Feature ist das Scene Understanding-Paket erforderlich, das jetzt über das Mixed Reality [Featuretool verfügbar ist.](https://aka.ms/MRFeatureTool)
-> Wenn Sie das Mixed Reality Feature Tool verwenden oder anderweitig über UPM importieren, importieren Sie das Beispiel Demos – SpatialAwareness, bevor Sie das Beispiel Experimental – SceneUnderstanding aufgrund eines Abhängigkeitsproblems importieren. Weitere Informationen [finden Sie in diesem GitHub-Problem.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)
+> Wenn Sie das Mixed Reality Feature Tool verwenden oder anderweitig über UPM importieren, importieren Sie das Beispiel Demos – SpatialAwareness, bevor Sie das Beispiel Experimental – SceneUnderstanding aufgrund eines Abhängigkeitsproblems importieren. Weitere Informationen [finden sie GitHub Problem.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)
 
 ![Szenenverständnis](images/SceneUnderstanding.gif)
 
 ### <a name="runtime-profile-switching-support"></a>Unterstützung für Laufzeitprofilwechsel
 
-MRTK ermöglicht jetzt den Profilwechsel sowohl vor der Initialisierung der MRTK-Instanz (d. h. vor dem MRTK-Initialisierungsprofilwechsel) als auch nach der aktiven Verwendung eines Profils (d. h. aktive Profilwechsel). Der erste Switch kann verwendet werden, um ausgewählte Komponenten basierend auf den Funktionen der Hardware zu aktivieren, während letzteres verwendet werden kann, um die Benutzeroberfläche zu ändern, wenn der Benutzer einen Unterteil der Anwendung eintritt. Weitere Informationen und [Codebeispiele finden Sie in](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) der Dokumentation zum Wechseln von Profilen.
+MRTK ermöglicht jetzt den Profilwechsel sowohl vor der Initialisierung der MRTK-Instanz (d. h. vor dem MRTK-Initialisierungsprofilwechsel) als auch nach der aktiven Verwendung eines Profils (d. h. aktive Profilwechsel). Der erste Switch kann verwendet werden, um ausgewählte Komponenten basierend auf den Funktionen der Hardware zu aktivieren, während letzteres verwendet werden kann, um die Benutzererfahrung zu ändern, wenn der Benutzer einen Unterteil der Anwendung eintritt. Weitere Informationen und [Codebeispiele finden Sie in](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) der Dokumentation zum Wechseln von Profilen.
 
-### <a name="directional-indicator-and-follow-solvers-graduated-from-experimental"></a>Richtungsindikator und Folgen von Solvern, die von experimentell geerbt wurden
+### <a name="directional-indicator-and-follow-solvers-graduated-from-experimental"></a>Direktionaler Indikator und Folgen von Solvern, die von experimentell geerbt wurden
 
 Zwei neue Solver sind für die Verwendung mit dem HAUPTLINIEN-MRTK bereit.
 
 ![Solver für Richtungsindikatoren](images/DirectionalIndicatorExampleScene.gif)
 
-### <a name="hand-coach-graduated-from-experimental"></a>Hand Von Experimentellem geerbt
+### <a name="hand-coach-graduated-from-experimental"></a>HandGeviert von experimentell
 
 Das Hand-Hand-Feature ist jetzt für die Verwendung mit dem HAUPT-MRTK bereit.
 
@@ -119,7 +119,7 @@ Die Pulse-Shaderskripts wurden von experimentell geerbt. Weitere Informationen f
 
 ### <a name="input-recording-service-improvements"></a>Verbesserungen des Eingabeaufzeichnungsdiensts
 
-`InputRecordingService` und `InputPlaybackService` können jetzt Eingaben zum Anvingen mit den Augen aufzeichnen und wiedererlangen. Die Aufzeichnung wurde optimiert, um eine konsistente Framerate während des gesamten Aufzeichnungszeitraums sicherzustellen, während die Größe der Aufzeichnungsdatei und die Spartenzeit ebenfalls um etwa 50 % reduziert werden. Das Speichern und Laden von Aufzeichnungsdateien kann jetzt asynchron ausgeführt werden. Beachten Sie, dass sich das Dateiformat der Aufzeichnung in [](../features/input-simulation/input-animation-file-format.md) dieser MRTK-Version geändert hat. Weitere Informationen zu den neuen Spezifikationen für Version 1.1 finden Sie hier.
+`InputRecordingService` und `InputPlaybackService` können jetzt Eingaben zum Anvingen mit den Augen aufzeichnen und wiedererlangen. Die Aufzeichnung wurde optimiert, um eine konsistente Framerate während des gesamten Aufzeichnungszeitraums sicherzustellen, während die Größe der Aufzeichnungsdatei und die Spartenzeit ebenfalls um ca. 50 % reduziert werden. Das Speichern und Laden von Aufzeichnungsdateien kann jetzt asynchron ausgeführt werden. Beachten Sie, dass sich das Dateiformat der Aufzeichnung in [](../features/input-simulation/input-animation-file-format.md) dieser MRTK-Version geändert hat. Weitere Informationen zu den neuen Spezifikationen für Version 1.1 finden Sie hier.
 
 ### <a name="reading-mode"></a>Lesemodus
 
@@ -129,7 +129,7 @@ Unterstützung für den [Lesemodus auf](/hololens/hololens2-display#what-improve
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>Unterstützung für 3D-App-Starter auf UWP
 
-Fügt die Möglichkeit zum Festlegen eines [3D-App-Startfelds für](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) UWP hinzu. Diese Einstellung wird sowohl im MRTK-Buildfenster als auch in den MRTK-Projekteinstellungen unter Buildeinstellungen verfügbar gemacht. Sie wird während des Build in Unity automatisch in das Projekt geschrieben.
+Fügt die Möglichkeit zum Festlegen eines [3D-App-Startfelds für](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) UWP hinzu. Diese Einstellung wird sowohl im MRTK-Buildfenster als auch im MRTK-Project Einstellungen unter Build Einstellungen. Sie wird während des Build in Unity automatisch in das Projekt geschrieben.
 
 ![Buildeinstellungen](images/ProjectBuildSettings.png)
 
@@ -143,9 +143,9 @@ Aufgrund von Problemen mit der Deserialisierung beginnen einige Felder importier
 
 Die eingabeanimierte Binärdatei, die von und verwendet wird, verfügt jetzt über ein aktualisiertes Dateiformat, um die Optimierungen für `InputRecordingService` diese beiden Dienste zu `InputPlaybackService` ermöglichen. Weitere Informationen [zu](../features/input-simulation/input-animation-file-format.md) den neuen Spezifikationen für Version 1.1 finden Sie hier.
 
-### <a name="msbuild-for-unity-support"></a>Unterstützung von MSBuild für Unity
+### <a name="msbuild-for-unity-support"></a>MSBuild für Unity-Unterstützung
 
-Die Unterstützung für MSBuild für Unity wurde ab Version 2.5.2 entfernt, um sie an den neuen Paketleitfaden von [Unity auszurichten.](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)
+Die Unterstützung MSBuild für Unity wurde ab Version 2.5.2 entfernt, um sie an den neuen Paketanleitungen von [Unity auszurichten.](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
@@ -154,53 +154,53 @@ Die Unterstützung für MSBuild für Unity wurde ab Version 2.5.2 entfernt, um s
 Es gibt derzeit ein bekanntes Problem mit Holographic Remoting und OpenXR, bei dem Handgelenke nicht konsistent verfügbar sind.
 Darüber hinaus sind die Eyetracking-Beispielszenen derzeit nicht kompatibel, obwohl eye tracking _funktioniert._
 
-### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Einige Mixed Reality Toolkit Standard Shader-Features erfordern das Foundation-Paket.
+### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>Einige Mixed Reality-Shader-Standardfeatures des Toolkits erfordern das Foundation-Paket.
 
-Beim Importieren über die Unity-Paket-Manager befinden sich die MRTK Standard Shader-Hilfsprogrammskripts (z.B. HoverLight.cs) nicht zusammen mit dem Shader im Standard Assets-Paket. Um auf diese Funktionalität zugreifen zu können, müssen Anwendungen das Foundation-Paket importieren.
+Beim Importieren über die Unity Paket-Manager befinden sich die MRTK-Standard-Shader-Hilfsskripts (z.B. HoverLight.cs) nicht zusammen mit dem Shader im Standard Assets-Paket. Um auf diese Funktionalität zugreifen zu können, müssen Anwendungen das Foundation-Paket importieren.
 
-### <a name="cameracache-may-create-a-new-camera-on-shutdown"></a>CameraCache kann beim Herunterfahren eine neue Kamera erstellen
+### <a name="cameracache-may-create-a-new-camera-on-shutdown"></a>CameraCache erstellt beim Herunterfahren möglicherweise eine neue Kamera
 
-In einigen Situationen (z. B. bei Verwendung des LeapMotion-Anbieters im Unity-Editor) ist es möglich, dass CameraCache die MainCamera beim Herunterfahren neu erstellt. Weitere Informationen finden Sie in [diesem Problem.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459)
+In einigen Situationen (z. B. bei Verwendung des LeapMotion-Anbieters im Unity-Editor) ist es möglich, dass CameraCache die MainCamera beim Herunterfahren neu erstellt. Weitere Informationen [finden Sie in](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) diesem Problem.
 
 ### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException beim Importieren von Beispielen über Unity Paket-Manager
 
-Je nach Länge des Projektpfads können beim Importieren von Beispielen über Unity Paket-Manager FileNotFoundException-Meldungen in der Unity-Konsole generiert werden. Die Ursache hierfür ist der Pfad zur fehlenden Datei, die länger als MAX_PATH (256 Zeichen) ist. Verkürzen Sie zum Auflösen die Länge des Projektpfads.
+Je nach Länge des Projektpfads können beim Importieren von Beispielen über Unity Paket-Manager FileNotFoundException-Meldungen in der Unity-Konsole generiert werden. Die Ursache dafür ist, dass der Pfad zur fehlenden Datei länger als MAX_PATH (256 Zeichen) ist. Um dieses Problem zu beheben, kürzen Sie die Länge des Projektpfads.
 
-### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>Es wurde kein Spatializer angegeben. Die Anwendung unterstützt keinen räumlichen Sound.
+### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>Es wurde kein Spatializer angegeben. Die Anwendung unterstützt räumlichen Sound nicht.
 
-Wenn kein Audio spatializer konfiguriert ist, wird die Warnung "No spatializer was specified" (Kein Spatializer wurde angegeben) angezeigt. Dies kann auftreten, wenn kein XR-Paket installiert ist, da Unity Spatializer in diese Pakete einschließt.
+Wenn kein Audioraumisierer konfiguriert ist, wird die Warnung "No spatializer was specified" (Es wurde kein Spatializer angegeben) angezeigt. Dies kann auftreten, wenn kein XR-Paket installiert ist, da Unity Spatializer in diese Pakete ein schließt.
 
-Stellen Sie zum Beheben dieser Probleme Sicher, dass:
+Stellen Sie zum Beheben dieses Problems Sicher, dass:
 
 - **Fenster**  >  **Paket-Manager** mindestens ein XR-Paket installiert ist
-- **Mixed Reality Toolkit**  >  **Hilfsprogramme**  >  **Konfigurieren des Unity-Projekts** und Treffen einer Auswahl für **audio spatializer**
+- **Mixed Reality Toolkit**  >  **Hilfsprogramme**  >  **Konfigurieren von Unity Project** und Treffen einer Auswahl für **Audio Spatializer**
 
-  ![Wählen Sie Audio spatializer (Audio spatializer) aus.](images/SpatializerSelection.png)
+  ![Auswählen von Audio Spatializer](images/SpatializerSelection.png)
 
-### <a name="nullreferenceexception-object-reference-not-set-to-an-instance-of-an-object-scenetransitionserviceinitialize"></a>NullReferenceException: Objektverweis nicht auf eine Instanz eines Objekts festgelegt (SceneTransitionService.Iniinitialisieren)
+### <a name="nullreferenceexception-object-reference-not-set-to-an-instance-of-an-object-scenetransitionserviceinitialize"></a>NullReferenceException: Objektverweis ist nicht auf eine Instanz eines Objekts festgelegt (SceneTransitionService.Iniinitialisieren)
 
-In einigen Situationen kann das Öffnen `EyeTrackingDemo-00-RootScene` eine NullReferenceException in der Initialize-Methode der SceneTransitionService-Klasse verursachen.
-Dieser Fehler ist darauf zurückzuführen, dass das Konfigurationsprofil des Scene Transition Service nicht konfiguriert ist. Führen Sie die folgenden Schritte aus, um die Lösung zu beheben:
+In einigen Situationen kann das `EyeTrackingDemo-00-RootScene` Öffnen eine NullReferenceException in der Initialize-Methode der SceneTransitionService-Klasse verursachen.
+Dieser Fehler liegt daran, dass das Konfigurationsprofil des Scene Transition Service nicht konfiguriert ist. Führen Sie die folgenden Schritte aus, um das Problem zu beheben:
 
-- Navigieren Sie zum `MixedRealityToolkit` Objekt in der Hierarchie.
+- Navigieren Sie zum `MixedRealityToolkit` -Objekt in der Hierarchie.
 - Wählen Sie im Inspektorfenster die Option aus. `Extensions`
-- Wenn sie nicht erweitert ist, erweitern Sie `Scene Transition Service`
-- Legen Sie den Wert von `Configuration Profile` auf **MRTKExamplesHubSceneTransitionServiceProfile** fest.
+- Erweitern Sie diese Erweiterung, wenn sie nicht erweitert ist. `Scene Transition Service`
+- Legen Sie den Wert von `Configuration Profile` auf **MRTKExamplesHubSceneTransitionServiceProfile fest.**
 
-![Korrigieren des Szenenübergangsprofils](images/FixSceneTransitionProfile.png)
+![Korrektur des Szenenübergangsprofils](images/FixSceneTransitionProfile.png)
 
 ### <a name="oculus-quest"></a>Oculus Quest
 
-Es gibt derzeit ein bekanntes Problem bei der Verwendung des [Oculus XR-Plug-Ins mit , wenn eigenständige Plattformen als Zielplattform verwendet werden.](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/) Informationen zu Updates finden Sie in den Oculus-Fehlerverfolgungen/Foren/Versionshinweisen.
+Derzeit gibt es ein bekanntes Problem bei der Verwendung des [Oculus XR-Plug-Ins mit für eigenständige Plattformen.](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/) Informationen zu Updates finden Sie unter Oculus bug tracker/forums/release notes (Oculus-Fehlerverfolgung/Foren/Versionshinweise).
 
-Der Fehler wird durch diesen Satz von drei Fehlern gekennzeichnet:
+Der Fehler wird mit dem folgenden Satz von drei Fehlern bezeichnet:
 
 ![Oculus XR-Plug-In-Fehler](https://forum.unity.com/attachments/erori-unity-png.644204/)
 
 ### <a name="unityui-and-textmeshpro"></a>UnityUI und TextMeshPro
 
-Bei neueren Versionen von TextMeshPro (1.5.0+ oder 2.1.1+) gibt es ein bekanntes Problem, bei dem der Standardschriftgrad für Dropdownlisten und fett formatierte Schriftartzeichenabstande geändert wurde.
+Es gibt ein bekanntes Problem für neuere Versionen von TextMeshPro (1.5.0+ oder 2.1.1+), bei dem der Standardschriftgrad für Dropdownlisten und fett formatierten Schriftzeichenabstand geändert wurde.
 
 ![TMP-Image](https://user-images.githubusercontent.com/68253937/93158069-4d582f00-f6c0-11ea-87ad-94d0ba3ba6e5.png)
 
-Dies lässt sich umgehen, indem Sie auf eine frühere Version von TextMeshPro herabstufen. Weitere Informationen finden Sie [unter Problem #8556.](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8556)
+Dies kann durch ein Downgrade auf eine frühere Version von TextMeshPro umbehind werden. Weitere [Informationen finden #8556](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8556) Probleminformationen.

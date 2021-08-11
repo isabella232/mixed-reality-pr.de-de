@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 268d13d00bc0bcf1d522eaa6809dab9892624e11
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b5147e5c592b80ab100a7cf7ce2487d971299832fec11f7ca57b1fdeef530900
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202586"
 ---
 # <a name="progress-indicator"></a>Statusanzeige
 
@@ -63,7 +63,7 @@ private async void OpenProgressIndicator()
 
 ## <a name="indicator-states"></a>Indikatorzustände
 
-Die -Eigenschaft eines `State` Indikators bestimmt, welche Vorgänge gültig sind. Das Aufrufen einer ungültigen Methode bewirkt in der Regel, dass der Indikator einen Fehler meldet und keine Aktion vornimmt.
+Die -Eigenschaft eines Indikators `State` bestimmt, welche Vorgänge gültig sind. Das Aufrufen einer ungültigen Methode bewirkt in der Regel, dass der Indikator einen Fehler meldet und keine Aktion vornimmt.
 
 State | Gültige Vorgänge
 --- | ---

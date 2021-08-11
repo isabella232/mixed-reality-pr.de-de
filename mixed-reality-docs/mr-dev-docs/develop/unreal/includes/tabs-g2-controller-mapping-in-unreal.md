@@ -1,25 +1,25 @@
 ---
-ms.openlocfilehash: 85792491eb4c349eea3dac4ae227c6736d7a90c2
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 4dde9dcb34553e1ad39d9c732f32f9d0ef174eaf2a6b6fbe7b59b8fdc9facf8d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204272"
 ---
 # <a name="all-platforms"></a>[Alle Plattformen](#tab/all)
 
-Die gleichen Aktions-und Achsen Zuordnungen in den Eingabe Projekteinstellungen des Spiels können von C++ verwendet werden.
+Die gleichen Aktions- und Achsenzuordnungen in den Eingabeprojekteinstellungen des Spiels können in C++ verwendet werden.
 
-1. Neue C++-Klasse mit der Datei/neuen C++-Klasse erstellen...
+1. Erstellen Einer neuen C++-Klasse mit File/New C++-Klasse...
 
 ![Erstellen einer neuen C++-Klasse](../images/reverb-g2-img-11.png)
 
-2. Erstellen eines pfes
+2. Erstellen eines Pawns
 
-![Erstellen eines pfens](../images/reverb-g2-img-12.png)
+![Erstellen eines Pawns](../images/reverb-g2-img-12.png)
 
-3. Suchen Sie in der Visual Studio-Projekt Mappe des Projekts nach der neuen Klasse, und konfigurieren Sie Sie für die Eingabe.
-* Legen Sie zunächst im Konstruktor autopossessplayer auf den ersten Player fest, um Eingaben an die aufzurufenden zu leiten.
+3. Suchen Sie im Visual Studio Projektmappe des Projekts nach der neuen Pawn-Klasse, und konfigurieren Sie sie für die Eingabe.
+* Legen Sie zunächst im Konstruktor AutoPossessPlayer auf den ersten Player fest, um die Eingabe an den Pawn weiterzuleiten.
 
 ```cpp
 AMyPawn::AMyPawn()
@@ -30,7 +30,7 @@ AMyPawn::AMyPawn()
 }
 ```
 
-* Binden Sie dann in setupplayerinputcomponent Aktionen und Achsen Ereignisse an die Aktions Namen aus den Eingabeeinstellungen des Projekts.
+* Binden Sie dann in SetupPlayerInputComponent Aktionen und Achsenereignisse aus den Eingabeeinstellungen des Projekts an die Aktionsnamen.
 
 ```cpp
 void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -42,7 +42,7 @@ void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 }
 ```
 
-* Fügen Sie der-Klasse die Rückruf Funktionen hinzu:
+* Fügen Sie der -Klasse die Rückruffunktionen hinzu:
 
 ```cpp
 void AMyPawn::XPressed()
@@ -59,7 +59,7 @@ void AMyPawn::LeftGripAxis(float AxisValue)
 }
 ```
 
-* Aktualisieren Sie den Header des Aufrufs mit den Rückruf Funktionsdefinitionen:
+* Aktualisieren Sie den Header des Pawns mit den Definitionen der Rückruffunktion:
 
 ```cpp
 private:
@@ -67,15 +67,15 @@ private:
     void LeftGripAxis(float AxisValue);
 ```
 
-4. Kompilieren Sie aus Visual Studio, um den Editor mit den neuen aufsorten zu starten. Verschieben Sie die Seiten aus dem Inhalts Browser per Drag & amp; Drop in das Spiel, und die aufgerufenen führen die Rückrufe aus, wenn Eingaben gedrückt werden.
+4. Kompilieren Sie aus Visual Studio, um den Editor mit dem neuen Pawn zu starten. Ziehen Sie den Pawn aus dem Inhaltsbrowser in das Spiel, und der Pawn führt jetzt die Rückrufe aus, wenn die Eingabe gedrückt wird.
 
 # <a name="steamvr"></a>[SteamVR](#tab/steamvr)
 
-Bei der Verwendung von Ministick-Achsen Ereignissen muss der Name des Achsen Ereignisses auf "_x" oder "_Y" enden, das dem verwendeten Schlüssel entspricht.
+Bei Verwendung von Thumbstick-Achsenereignissen muss der Name des Achsenereignisses auf "_X" oder "_Y" enden, der dem verwendeten Schlüssel entspricht.
 
-![Verwenden von Ministick-Ereignissen](../images/reverb-g2-img-09.png)
+![Verwenden von Thumbstickereignissen](../images/reverb-g2-img-09.png)
 
-Registrieren Sie schließlich die Aktionen im Spiel mit "steamvr", indem Sie die Schaltflächen zum erneuten **generieren des Aktions Manifests** und zum erneuten **Generieren von Controller Bindungen** in den Projekteinstellungen > die Eingabe von "
+Registrieren Sie schließlich die Aktionen im Spiel mitHilfe der Schaltflächen **Aktionsmanifest** erneut generieren und **Controllerbindungen** erneut generieren in Project Einstellungen > Vr-Eingabe für Denkdruck.
 
-![Registrieren von Aktionen in den Projekteinstellungen](../images/reverb-g2-img-10.png)
+![Registrieren von Aktionen in Projekteinstellungen](../images/reverb-g2-img-10.png)
 

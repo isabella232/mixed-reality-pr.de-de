@@ -1,29 +1,29 @@
 ---
-ms.openlocfilehash: dcbeceb4cbe6b87cd6458afa789f9e09abaf7f3d
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: ce1f02bd2846cadc4e970fef738fb4b46bc3a09f10742b820a0998491c590c80
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638732"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204283"
 ---
 # <a name="all-platforms"></a>[Alle Plattformen](#tab/all)
 
-### <a name="enabling-hp-motion-controller-plugin"></a>Aktivieren von HP Motion Controller Plugin 
+### <a name="enabling-hp-motion-controller-plugin"></a>Aktivieren des HP Motion Controller-Plug-Ins 
 
-Das Interaktions Profil und die Controller Zuordnungen befinden sich im HP Motion Controller-Plug-in, das aktiviert werden muss, um die Controller Zuordnungen für das Eingabe System von Unreal verfügbar zu machen.
+Das Interaktionsprofil und die Controllerzuordnungen befinden sich im HP Motion Controller-Plug-In, das aktiviert werden muss, um die Controllerzuordnungen für das Eingabesystem von Unreal verfügbar zu machen.
 
-![Aktivieren des openxrhpcontroller-Plug-ins](../images/reverb-g2-img-01.png)
+![Aktivieren des OpenXRHPController-Plug-Ins](../images/reverb-g2-img-01.png)
 
 # <a name="steamvr"></a>[SteamVR](#tab/steamvr)
 
-### <a name="configuring-startup-and-hmdpluginpriority"></a>Konfigurieren von Start und hmdpluginpriority
+### <a name="configuring-startup-and-hmdpluginpriority"></a>Konfigurieren von Startup und HMDPluginPriority
 
-Eingaben in Unreal mit steamvr haben einige Unterschiede.  Vergewissern Sie sich beim Einrichten des Projekts zunächst, dass das neue Eingabe System von steamvr verwendet wird, indem Sie VR hinzufügen **. Steamvr. enablevrinput = 1** bis zum **Start** Abschnitt in **Engine/config/ConsoleVariables.ini** .  Diese ini befindet sich im Installationsverzeichnis der Engine, nicht im Projektverzeichnis.
+Die Eingabe in Unreal mithilfe von SteamVR hat einige Unterschiede.  Stellen Sie beim Einrichten des Projekts zunächst sicher, dass es das neue Eingabesystem von SteamVR verwendet, indem Sie **vr hinzufügen. SteamVR.EnableVRInput=1** zum **Abschnitt Start** in **Engine/Config/ConsoleVariables.ini.**  Diese Ini befindet sich im Installationsverzeichnis der Engine, nicht im Projektverzeichnis.
 
 ![Aktualisieren der Startkonfiguration](../images/reverb-g2-img-07.png)
 
-Das HP Motion Controller-Plug-in aktiviert openxr.  Wenn Sie openxr nicht verwenden, müssen Sie den hmdpluginpriority-Wert von "steamvr" in BaseEngine.ini in demselben Verzeichnis wie ConsoleVariables.ini bearbeiten.  Ändern Sie den Wert von "steamvr" in einen höheren Wert als den openxrhmd-Wert.
+Das HP Motion Controller-Plug-In aktiviert OpenXR.  Wenn Sie OpenXR nicht verwenden, müssen Sie die HMDPluginPriority von SteamVR in BaseEngine.ini im gleichen Verzeichnis wie ConsoleVariables.ini.  Ändern Sie den Wert von "SteamVR" so, dass er größer als der OpenXRHMD-Wert ist.
 
-![Aktualisieren der hmdpluginpriority-Konfiguration](../images/reverb-g2-img-08.png)
+![Aktualisieren der HMDPluginPriority-Konfiguration](../images/reverb-g2-img-08.png)
 
 

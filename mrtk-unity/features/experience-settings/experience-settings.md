@@ -7,16 +7,16 @@ ms.date: 04/13/2021
 ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: ab3a449b064d4a1c8f2bf76154f7a25c688693e1
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 19d812ccfa9c0317e40dee2b7d03220848782cef955ba859a150b4f4adc8aa99
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203246"
 ---
 # <a name="experience-settings"></a>Einstellungen für die Benutzererfahrung
 
-Eine der Herausforderungen beim Erstellen einer Benutzeroberfläche für Mixed Reality ist die Ausrichtung auf verschiedene Benutzeroberflächen. Mit MRTK können Sie und für Ihre Szene festlegen und konfigurieren Folgendes, um sich entsprechend der `Target Experience Scale` `Content Offset` Zielskala zu verhalten.
+Eine der Herausforderungen beim Erstellen der Benutzeroberfläche für Mixed Reality ist die Ausrichtung auf verschiedene Benutzeroberflächen. Mit MRTK können Sie und für Ihre Szene festlegen und konfigurieren Folgendes, um sich entsprechend der `Target Experience Scale` `Content Offset` Zielskala zu verhalten.
 
 - Mixed Reality Szeneninhalt
 - Begrenzungssystem
@@ -35,4 +35,4 @@ Die **Zielumgebungsskala** gibt die Umgebung an, für die die Umgebung entworfen
 
 ## <a name="content-offset"></a>Inhaltsoffset
 
-Dieser Parameter gibt die Höhe über [](scene-content.md) dem Boden an, um Mixed Reality Szeneninhalt zu versatzen, wenn **Ausrichtungstyp** auf Ausrichtung an Der **Erfahrungsskala ausgerichtet ist.**
+Dieser Parameter gibt die Höhe über [](scene-content.md) dem Boden an, um Mixed Reality Szeneninhalt zu versatzen, wenn **Ausrichtungstyp** auf Ausrichtung mit **Erfahrungsskala festgelegt ist.**

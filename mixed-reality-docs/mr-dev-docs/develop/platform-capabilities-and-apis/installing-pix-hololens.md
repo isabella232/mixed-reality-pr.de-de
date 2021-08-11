@@ -1,118 +1,118 @@
 ---
 title: Installieren von PIX für HoloLens 2
-description: Erfahren Sie, wie Sie pix für hololens 2-Geräte installieren.
+description: Erfahren Sie, wie Sie PIX für HoloLens 2 Geräte installieren.
 author: hferrone
 ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
-keywords: Hololens, hololens 2, pix, Capture, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, HoloLens 2, PIX, Aufnahme, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: 2e5e66ea5a1a2b68d91213c38d88d815f54a28fa5328ab3b2d93f1e267f6f994
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217312"
 ---
 # <a name="installing-pix-for-hololens-2"></a>Installieren von PIX für HoloLens 2
 
-[Pix](https://devblogs.microsoft.com/pix) ist ein Tool zur Leistungsoptimierung und-Debuggen für DirectX 12-Anwendungen unter Windows. 
+[PIX](https://devblogs.microsoft.com/pix) ist ein Tool zur Leistungsoptimierung und zum Debuggen für DirectX 12-Anwendungen auf Windows. 
 
-## <a name="setup"></a>Einrichten
+## <a name="setup"></a>Setup
 
-1. Holen Sie sich die neueste pix- [Version]( https://devblogs.microsoft.com/pix/download) von Ihrem Host-PC, und verbinden Sie Ihre hololens 2 über ein USB-Kabel mit Ihrem PC.
+1. Greifen Sie die neueste [PIX-Version]( https://devblogs.microsoft.com/pix/download) von Ihrem Host-PC ab, und verbinden Sie Ihre HoloLens 2 über ein USB-Kabel mit Ihrem PC.
 
-2. Wenn sich Ihre hololens 2 in einem [Windows Insider-Build](https://insider.windows.com) befinden oder über eine Konfiguration verfügen, die pix unterbricht, löschen  [Sie Ihr Gerät](/hololens/hololens-recovery) , um alle Daten zu löschen.
+2. Wenn sich Ihr HoloLens 2 auf einem [Windows Insider-Build](https://insider.windows.com) befindet oder eine Konfiguration aufwies, die PIX unterbricht, [setzen Sie den Schrägstrich ihres Geräts](/hololens/hololens-recovery) so um, dass alle Daten gelöscht werden.
 
-3. **Entwicklermodus** und **Geräte Portal** aktivieren:
+3. Aktivieren Sie **den Entwicklermodus,** und **Geräteportal**:
 
-* Öffnen Sie die **Einstellungen** von Mixed Reality Home:
+* Öffnen **Sie Einstellungen** über Mixed Reality Home:
 
-![Screenshot des Menüs "hololens" mit hervorgehobener Einstellungs Schaltfläche](images/pix-img-01.jpg)
+![Screenshot: Menü "HoloLens" mit hervorgehobener Schaltfläche "Einstellungen"](images/pix-img-01.jpg)
 
-* Wählen Sie **Update & Sicherheit**:
+* Wählen Sie **Update & Security (Sicherheit aktualisieren)** aus:
 
-![Screenshot des Fensters "Einstellungen" in hololens mit hervorgehobener Schaltfläche "aktualisieren und Sicherheit"](images/pix-img-02.jpg)
+![Screenshot: Fenster "Einstellungen" auf HoloLens mit hervorgehobener Schaltfläche "Update" und "Sicherheit"](images/pix-img-02.jpg)
 
-* Wählen Sie **für Entwickler**:
+* Wählen Sie **Für Entwickler** aus:
 
-![Screenshot der Schaltfläche "Sicherheit und Updates" mit hervorgehobener Schaltfläche "Entwickler"](images/pix-img-03.jpg)
+![Screenshot: Fenster "Sicherheit und Updates" mit hervorgehobener Schaltfläche "Für Entwickler" geöffnet](images/pix-img-03.jpg)
 
-* Aktivieren der **Verwendung von Entwickler Features** und **Aktivieren des Geräte Portals**
+* Aktivieren **sie Use Developer Features (Entwicklerfeatures verwenden),** und **aktivieren Sie Geräteportal**
 
-![Screenshot des Fensters "Entwickler" in den Einstellungen "Geräte Portal aktivieren"](images/pix-img-04.jpg)
+![Screenshot: Fenster "Für Entwickler" in den Einstellungen mit hervorgehobener Schaltfläche "Geräteportal aktivieren" geöffnet](images/pix-img-04.jpg)
 
-![Screenshot des Fensters "Entwickler" in "Einstellungen" mit der Schaltfläche "entwickeln von Features umschalten"](images/pix-img-05.jpg)
+![Screenshot: Fenster "Für Entwickler" in den Einstellungen geöffnet, wobei die Umschaltfläche "Entwicklungsfeatures verwenden" hervorgehoben ist](images/pix-img-05.jpg)
 
-* Starten Sie Visual Studio, wenn das Gerät immer noch verbunden ist, aktiv ist und der Benutzer angemeldet ist.
+* Starten Sie Visual Studio, wenn das Gerät weiterhin verbunden ist, aktiviert ist und der Benutzer angemeldet ist.
 
 > [!IMPORTANT]
-> Stellen Sie sicher, dass sich Ihr Gerät nicht im Standbymodus befindet oder nicht Wenn Sie Probleme mit diesem Schritt haben, finden Sie die [Anweisungen im Windows-Geräte Portal](./using-the-windows-device-portal.md).
+> Stellen Sie sicher, dass sich Ihr Gerät nicht im Standbymodus oder im Standbymodus befindet. Wenn Sie Probleme mit diesem Schritt haben, lesen Sie die [anweisungen](./using-the-windows-device-portal.md)Windows Geräteportal .
 
 ## <a name="preparing-for-deployment"></a>Vorbereiten der Bereitstellung
 
 1. Legen Sie in Visual Studio **ARM64** als Plattform und **Gerät** als Gerät fest:
 
-![Screenshot der Visual Studio-Projekt Mappe mit hervorgehobenen Plattform-und Geräteeinstellungen](images/pix-img-06.png)
+![Screenshot der Visual Studio-Projektmappe mit hervorgehobenen Plattform- und Geräteeinstellungen](images/pix-img-06.png)
 
-2. Wenn Sie von Visual Studio aufgefordert werden, eine **Pin** vom Gerät einzugeben:
+2. Wenn Visual Studio Sie zur Eingabe einer **PIN** vom Gerät auffordert:
 
-![Screenshot der Visual Studio-Popup-Aufforderung zur PIN](images/pix-img-07.png)
+![Screenshot des Visual Studio-Popupfensters, in dem nach PIN gefragt wird](images/pix-img-07.png)
 
-* Auswählen von **Einstellungen** aus der Shell
-* Wählen Sie **Update & Sicherheit** aus.
-* Wählen Sie **für Entwickler aus** , und klicken Sie unter **Geräte** Ermittlung auf paar 
+* Auswählen **Einstellungen** in der Shell
+* Wählen Sie **Update & Security (Sicherheit aktualisieren)** aus.
+* Wählen Sie **Für Entwickler aus,** und klicken Sie unter **Geräteermittlung** auf Paar. 
 
-![Screenshot von für Entwickler Fenster "in Einstellungen öffnen" mit hervorgehobener Geräte Ermittlung](images/pix-img-08.jpg)
+![Screenshot: Fenster "Für Entwickler" wird in den Einstellungen geöffnet, wobei die Geräteermittlung hervorgehoben ist](images/pix-img-08.jpg)
 
-![Screenshot des Popups für kostenpflichtige Geräte mit hervorgehobenem Registrierungscode](images/pix-img-09.jpg)
+![Screenshot des Popupfensters für kostenpflichtige Geräte mit hervorgehobener Registrierung](images/pix-img-09.jpg)
 
-* Geben Sie die generierte PIN-Nummer in Visual Studio ein.
+* Geben Sie die generierte PIN-Nummer in Visual Studio
 
-3. Visual Studio stellt die app in den verbundenen hololens 2 bereit. Dies kann je nach App einige Minuten dauern.
+3. Visual Studio stellt die App auf dem verbundenen HoloLens 2 bereit, was je nach App einige Minuten dauern kann.
 
-## <a name="launching-pix"></a>Starten von Pix
+## <a name="launching-pix"></a>Starten von PIX
 
-Überprüfen Sie zunächst mithilfe des Geräte Portals, ob die APP auf den hololens 2 ausgeführt wird. Starten Sie dann pix, stellen Sie eine Verbindung mit Ihrem Gerät her, und wählen Sie **Startseite**:
+Verwenden Sie zunächst Geräteportal, um sicherzustellen, dass die App nicht auf dem HoloLens 2 ausgeführt wird. Starten Sie dann PIX, stellen Sie eine Verbindung mit Ihrem Gerät her, und wählen Sie **Start** aus:
 
-![Screenshot des pix-Anwendungs-Startbildschirms](images/pix-img-10.png)
+![Screenshot des Startbildschirms der PIX-Anwendung](images/pix-img-10.png)
 
-* Wählen Sie im Menü auf der linken Seite die Option **verbinden** aus:
+* Wählen Sie im Menü auf der linken Seite **Verbinden** aus:
 
-![Screenshot des linksseitigen Menüs der PIX-Anwendung mit hervorgehobener Schaltfläche "verbinden"](images/pix-img-11.png)
+![Screenshot: Menü auf der linken Seite der PIX-Anwendung mit hervorgehobener Schaltfläche "Verbinden"](images/pix-img-11.png)
 
-2. Klicken Sie auf der Registerkarte **Computer** auf **Hinzufügen**, und geben Sie die folgenden Anmelde Informationen ein:
-    * Alias: der Ermessen des Benutzers
+2. Wählen Sie auf der Registerkarte **Computer** die Option **Hinzufügen** aus, und geben Sie die folgenden Anmeldeinformationen ein:
+    * Alias: Nach Ermessen des Benutzers
     * Hostname oder IP-Adresse: 127.0.0.1
 
-3. Wählen Sie in der unteren rechten Ecke der Registerkarte **Computer** die Option **verbinden** aus:
+3. Wählen Sie **unten** rechts auf der Registerkarte **Computer** Verbinden aus:
 
-![Screenshot des pix-Anwendungs Verbindungs Fensters mit hervorgehobenem Alias, Hostname, IP-Adresse und Schaltfläche "hinzufügen"](images/pix-img-12.png)
+![Screenshot des Fensters "Verbinden" der PIX-Anwendung mit hervorgehobenem Alias, Hostname, IP-Adresse und Schaltfläche "Hinzufügen"](images/pix-img-12.png)
 
 > [!NOTE]
 > Die erste Verbindung ist immer langsamer, da Binärdateien kopiert werden.
 
-4. Wenn pix mit den hololens 2 verbunden ist, suchen Sie Ihre APP im Abschnitt **Ziel Prozess auswählen** auf der Registerkarte "UWP starten", und wählen Sie " **starten**" aus:
+4. Wenn PIX eine Verbindung mit dem HoloLens 2 hergestellt hat, suchen Sie Ihre App im Abschnitt **Zielprozess auswählen** auf der Registerkarte UWP starten, und wählen Sie **Starten** aus:
 
-![Screenshot der PIX-Anwendung mit hervorgehobenem Ziel Prozessfenster auswählen und Start Schaltfläche](images/pix-img-13.png)
+![Screenshot der PIX-Anwendung mit hervorgehobener Schaltfläche "Zielprozess auswählen" und "Start"](images/pix-img-13.png)
 
-## <a name="gpu-captured"></a>GPU aufgezeichnet
+## <a name="gpu-captured"></a>GPU erfasst
 
 1. Starten Sie die GPU-Erfassung, indem Sie im Abschnitt **GPU-Erfassung** auf **Foto** klicken:
 
-![Screenshot der PIX-Anwendung, bei der der PC-Verbindungsbereich geöffnet ist und GPU-Erfassung hervorgehoben ist](images/pix-img-14.png)
+![Screenshot der PIX-Anwendung mit geöffneter PC-Verbindung mit hervorgehobener GPU-Erfassung](images/pix-img-14.png)
 
-2. Öffnen Sie die Erfassung für die Analyse, indem Sie im GPU- **Erfassungs** Bereich auf den generierten Screenshot klicken:
+2. Öffnen Sie die Erfassung für die Analyse, indem Sie im **Bereich GPU-Erfassung** auf den generierten Screenshot klicken:
 
-![Screenshot der PIX-Anwendung mit hervorgehobenem GPU-Erfassungsbereich mit hervorgehobenem GPU-Erfassungsbereich](images/pix-img-15.png)
+![Screenshot der PIX-Anwendung mit geöffneter GPU-Erfassung mit hervorgehobener GPU-Erfassung](images/pix-img-15.png)
 
-3. Klicken Sie auf starten, um die Analyse zu **starten** :
+3. Drücken **Sie Start,** um mit der Analyse zu beginnen:
 
-![Screenshot der PIX-Anwendung mit hervorgehobener Schaltfläche "Start"](images/pix-img-16.png)
+![Screenshot der PIX-Anwendung mit hervorgehobener Startschaltfläche](images/pix-img-16.png)
 
 > [!IMPORTANT]
-> Wenn Sie Zeit Steuerungsdaten sammeln, nachdem Sie eine GPU-Erfassung durch genommen haben, müssen Sie das Headset neu starten. Hierbei handelt es sich um einen einmaligen Neustart des Geräts, der für die Erfassung von Zeit Steuerungsdaten erforderlich ist.
+> Wenn Sie Zeitsteuerungsdaten nach einer GPU-Erfassung sammeln, müssen Sie das Headset neu starten. Dies ist ein einmaliger Neustart des Geräts und für die Zeitsteuerung der Datensammlung erforderlich.
 
 PIX ist jetzt einsatzbereit!
 
-## <a name="see-also"></a>Weitere Informationen
-* [Pix-Homepage](https://devblogs.microsoft.com/pix)
+## <a name="see-also"></a>Siehe auch
+* [PIX-Startseite](https://devblogs.microsoft.com/pix)

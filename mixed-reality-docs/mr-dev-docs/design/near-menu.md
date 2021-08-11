@@ -1,30 +1,30 @@
 ---
 title: Nähemenü
-description: Erfahren Sie, wie Sie Menüs in der Nähe verwenden, bei denen es sich um eine Sammlung von Schaltflächen in einem Panel handelt, die Ihnen mit Tag-Along-Verhalten in einer Mixed Reality-Umgebung folgen.
+description: Hier erfahren Sie, wie Sie near menus verwenden. Dabei handelt es sich um eine Sammlung von Schaltflächen in einem Bereich, die Ihnen mit dem Tag-Along-Verhalten in einer Mixed Reality-Umgebung folgen.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: Mixed Reality, Steuerelemente, Interaktion, Benutzeroberfläche, Benutzeroberfläche, Menü, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: ecee6182d64ab1c843a9948984565d49ae313923
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Mixed Reality, Steuerelemente, Interaktion, Ui, ux, Menü, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: ab035c195824d987b397676e946633734b0f1af6a983bada4ea9145ff7d07b1e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201766"
 ---
 # <a name="near-menu"></a>Nähemenü
 
 ![Nähemenü](images/UX_Hero_NearMenu.jpg)
 
-Ein Menü in der Nähe ist eine Sammlung von Schaltflächen in einem Bereich, die Ihren Benutzern mit [dem Tag-Along-Verhalten](billboarding-and-tag-along.md#what-is-a-tag-along)folgen. Der Bereich bleibt innerhalb eines festgelegten Abstandsbereichs und Winkels, wodurch Benutzer mit Inhalten interagieren können. Wenn Sie das Tag-Along-Verhalten des Panels weltweit sperren oder deaktivieren müssen, verwenden Sie die Stecknadelschaltfläche, oder greifen Sie zum Menü. Wenn Sie den Bereich anheften, können sich Ihre Benutzer ohne Ablenkungen auf den Zielinhalt konzentrieren. Sie können das Tag-Along-Verhalten jederzeit wieder aktivieren, indem Sie die Stecknadelschaltfläche drücken, damit das Menü dem Benutzer erneut folgt.
+Ein Menü in der Nähe ist eine Sammlung von Schaltflächen in einem Bereich, die Ihren Benutzern mit [Dem-Tag-Along-Verhalten folgen.](billboarding-and-tag-along.md#what-is-a-tag-along) Der Bereich bleibt innerhalb eines festgelegten Entfernungsbereichs und Winkels, wodurch Benutzer bequem mit Inhalten interagieren können. Wenn Sie das Tag-Along-Verhalten des Panels weltweit sperren oder deaktivieren müssen, verwenden Sie die Stecknadelschaltfläche, oder greifen Sie das Menü an, und platzieren Sie es. Wenn Sie den Bereich anheften, können sich Ihre Benutzer auf den Zielinhalt konzentrieren, ohne abgelenkt zu sein. Sie können das Tag-Along-Verhalten jederzeit wieder aktivieren, indem Sie die Stecknadelschaltfläche drücken, damit das Menü dem Benutzer erneut folgt.
 
 <br>
 
 ---
 
 ## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>Menü "Nah" im MRTK (Mixed Reality Toolkit) für Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** bietet verschiedene Prefab-Beispiele für Menüs in der Nähe.
+**[MRTK bietet](https://github.com/Microsoft/MixedRealityToolkit-Unity)** verschiedene Prefab-Beispiele für Nahmenüs.
 
 * [MRTK – Menü "Nah"](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
 

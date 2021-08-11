@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK
-ms.openlocfilehash: 7385d516e986c1602ad59e2825aa6d1262504727
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: b591d3ed7bd3c470bdf5b9598864f35963fb99a9957c5ceefdd1417372a3b97e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175579"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203232"
 ---
 # <a name="roadmap"></a>Roadmap
 
@@ -22,7 +22,7 @@ Microsoft Mixed Reality Toolkit v2.6
 
 ## <a name="upcoming-releases"></a>Bevorstehende Releases
 
-| Produkt | Beschreibung | Zeitachse | Project Board |
+| Produkt | BESCHREIBUNG | Zeitachse | Project Board |
 | --- | --- | --- | --- |
 | [MRTK V2.7](#270) | Nächste Iteration des MRTK | Mai 2021 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14 |
 
@@ -38,8 +38,8 @@ Das Mixed Reality Toolkit ist standardmäßig auf die plattformübergreifende MR
 
 ### <a name="270"></a>2.7.0
 
-Wir planen derzeit das Release 2.7.0 und werden in Kürze weitere Updates für Sie veröffentlichen!
-Den aktuellen Status des Release finden Sie auf der [Meilensteinseite](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14).
+Wir planen derzeit das Release 2.7.0 und werden in Kürze weitere Updates für Sie erhalten!
+Den aktuellen Status des Release finden Sie auf der [Meilensteinseite.](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14)
 
 Status: Planung
 
@@ -61,7 +61,7 @@ Qualität und Stabilität haben für diese und alle Releases des Microsoft Mixed
 
 Das MRTK-Team unterstützt die offene Zukunft von Mixed Reality über [OpenXR.](https://techcommunity.microsoft.com/t5/mixed-reality-blog/moving-forward-to-openxr/ba-p/1825672) Die Unterstützung für OpenXR befindet sich derzeit in der Entwicklung, und die erste Vorschauversion wird in MRTK 2.5.2 veröffentlicht.
 
-**Benutzerfreundlichkeit**
+**Benutzererfahrung**
 
 Wir hören uns Ihr Feedback zu MRTK an und haben weitere Pläne für:
 

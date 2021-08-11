@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: eaa2651a22fd5b2b601493845d507aeda6745f1a
-ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
+ms.openlocfilehash: 923f7eda8b40e88aa69006896bd478f7aedcbcafccd449b75f144231d02b0d56
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/11/2021
-ms.locfileid: "113603713"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202724"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
-Das Mixed Reality OpenXR-Plug-In ist **die Empfehlung** von Microsoft für **Unity 2020 LTS** oder höher. Da neue Features in Zukunft entwickelt werden, werden sie in Zukunft nur noch in das OpenXR-Plug-In Mixed Reality enthalten sein.
+Das Mixed Reality OpenXR-Plug-In ist **die Empfehlung** von Microsoft für **Unity 2020 LTS** oder höher. Da neue Features in Zukunft entwickelt werden, werden sie in Zukunft nur noch in das OpenXR Mixed Reality-Plug-In aufgenommen.
 
-Das Mixed Reality OpenXR-Plug-In unterstützt AR Foundation 4.0 vollständig und stellt ARPlaneManager- und ARRaycastManager-Implementierungen zur Verfügung. Auf diese Weise können Sie Raycastcode schreiben, sobald er sich über HoloLens 2 und ARCore/ARKit-Smartphones und -Tablets erstreckt.
+Das Mixed Reality OpenXR-Plug-In unterstützt AR Foundation 4.0 vollständig und stellt ARPlaneManager- und ARRaycastManager-Implementierungen zur Verfügung. Auf diese Weise können Sie Raycastcode schreiben, der sich dann über HoloLens 2 und ARCore/ARKit-Smartphones und -Tablets erstreckt.
 
 ### <a name="prerequisites"></a>Voraussetzungen 
 
@@ -50,4 +50,4 @@ Wenn Sie noch unity **2019** oder früher verwenden, empfiehlt Microsoft die Ver
 
 Das Windows XR-Plug-In ist zwar in Unity 2019 funktionsfähig, wird jedoch nicht empfohlen, da dieses Plug-In nicht mit Azure Spatial Anchors unter Unity 2019 kompatibel ist.
 
-Wenn Sie ein neues Projekt starten, empfiehlt es sich, [stattdessen Unity 2020](../../choosing-unity-version.md) zu installieren und das OpenXR Mixed Reality-Plug-In zu verwenden.
+Wenn Sie ein neues Projekt starten, empfiehlt es sich, [stattdessen Unity 2020](../../choosing-unity-version.md) zu installieren und das openXR Mixed Reality-Plug-In zu verwenden.

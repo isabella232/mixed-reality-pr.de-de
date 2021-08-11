@@ -1,87 +1,87 @@
 ---
 title: Windows Mixed Reality und die neue Microsoft Edge
-description: Erfahren Sie mehr über den neuen Microsoft Edge für die gemischte Realität, einschließlich der erwarteten Informationen, der Updates, die Sie kennen sollten, und bekannter Probleme.
+description: Erfahren Sie mehr über die Microsoft Edge für Mixed Reality, einschließlich der zu erwartenden Informationen, der zu achtenden Updates und bekannter Probleme.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Edge, New, immersives Web, Microsoft Edge, Browser, VR, 360, 360 Video, 360 Viewer, webxr, webvr
-ms.openlocfilehash: 041c374e1e2120c3aac35bd09889b8594825a186
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: edge, new, immersive web, microsoft edge, browser, vr, 360, 360 video, 360 viewer, webxr, webvr
+ms.openlocfilehash: 51efc5c4d3afb4d46ba7722867514f740a9f60a4280652fdbd665134f83af23d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218822"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>Die neue Microsoft Edge für Windows Mixed Reality
 
-Der [neue Microsoft Edge ist jetzt zum Herunterladen verfügbar](https://blogs.windows.com/windowsexperience/?p=173496), Kunden können jedoch auch [auf ein zukünftiges Update warten, um es mit Windows 10 zu installieren](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/), indem Sie in den nächsten Monaten einen gemessenen Rollout durchführen. 
+Die [neue Microsoft Edge](https://blogs.windows.com/windowsexperience/?p=173496)steht jetzt zum Download zur Verfügung. Kunden können jedoch auch auf ein zukünftiges Update warten, um es mit [Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/)zu installieren. Dies erfolgt nach einem gemessenen Rolloutansatz in den nächsten Monaten. 
 
-Mit diesen Neuigkeiten **wollten wir die Kunden von Windows Mixed Reality VR Headset wissen, was vom neuen Microsoft Edge zu erwarten ist, und ausstehende Updates für eine verbesserte Browser Darstellung in Windows Mixed Reality anzeigen lassen**.
+Mit dieser Nachricht wollten wir Windows Mixed Reality VR-Headset-Kunden wissen lassen, was sie von der neuen Microsoft Edge erwarten können, und ausstehende Updates für eine verbesserte Browsererfahrung **in Windows Mixed Reality.**
 
-## <a name="introducing-the-new-microsoft-edge"></a>Einführung in den neuen Microsoft Edge
+## <a name="introducing-the-new-microsoft-edge"></a>Vorstellung des neuen Microsoft Edge
 
-Das neue Microsoft Edge [übernimmt das Chromium-Open-Source-Projekt](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) auf dem Desktop, um eine bessere Kompatibilität für Kunden und weniger Fragmentierung des Internets für Webentwickler zu erzielen. Es unterstützt auch webxr beim Start, den neuen Standard zum Erstellen von immersiven Webumgebungen für VR-Headsets anstelle von webvr.
-
->[!IMPORTANT]
->Wenn Sie Microsoft Edge auf einem aktuellen Windows 10-Gerät installieren, ersetzt es die vorherige (Legacy-) Version auf Ihrem PC.
-
-## <a name="getting-ready-for-the-new-microsoft-edge"></a>Vorbereitung auf den neuen Microsoft Edge
-
-Windows Mixed Reality VR-Headset-Kunden, die den neuen Microsoft Edge in der Mixed Reality-Startseite verwenden möchten, sollten **auf Windows 10, Version 1903 oder höher, für die native Unterstützung von Win32-Anwendungen (wie dem neuen Microsoft Edge)** in der Mixed Reality-Startseite aktualisieren. Überprüfen Sie Windows Update oder [Installieren Sie die neueste Version von Windows 10 manuell](https://www.microsoft.com/en-us/software-download/windows10).
-
-Um die bestmögliche Microsoft Edge-Benutzersprache in der Mixed Reality-Startseite zu nutzen, wird empfohlen, auf **einige wichtige Windows Mixed Reality-Optimierungen für den neuen Microsoft Edge zu warten, der mit dem kumulativen Update von 2020-01 für Windows 10, Version 1903 (oder höher)**, erreichbar ist, das in Windows Update bis Ende Januar verfügbar sein sollte.
+Die neue Microsoft Edge übernimmt das open [source Chromium projekt](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) auf dem Desktop, um eine bessere Kompatibilität für Kunden und eine geringere Fragmentierung des Webs für Webentwickler zu schaffen. Außerdem wird WebXR beim Start unterstützt, der neue Standard zum Erstellen immersiver Weberfahrungen für VR-Headsets, statt WebVR.
 
 >[!IMPORTANT]
->Wenn Sie den neuen Microsoft Edge herunterladen möchten, bevor Sie diese Updates ausführen, gibt es einige bekannte Probleme mit dem Verhalten in Windows Mixed Reality (Weitere Informationen finden Sie weiter unten).
+>Wenn Sie Microsoft Edge auf einem aktuellen Gerät Windows 10 installieren, wird die vorherige (Legacy-) Version auf Ihrem PC ersetzt.
+
+## <a name="getting-ready-for-the-new-microsoft-edge"></a>Erste Schritte für die neue Microsoft Edge
+
+Windows Mixed Reality VR-Headset-Kunden, die die neue Microsoft Edge im Mixed Reality Startumgebung verwenden möchten, sollten ein Upgrade auf Windows 10 Version **1903** oder höher durchführen, um win32-Anwendungen (z. B. die neue Microsoft Edge) im Mixed Reality Startumgebung. Überprüfen Windows Update, oder installieren Sie manuell [die neueste Version von Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
+
+Für die bestmögliche Microsoft Edge-Erfahrung im Mixed Reality Startumgebung empfehlen wir auch, auf einige wichtige Windows Mixed Reality-Optimierungen für die neue Microsoft Edge zu warten, die mit dem kumulativen Update **2020-01 für Windows 10 Version 1903 (oder höher)** eintreffen, die in Windows Update bis Ende Januar verfügbar sein sollten.
+
+>[!IMPORTANT]
+>Wenn Sie die neue Microsoft Edge herunterladen, bevor Sie diese Updates verwenden, gibt es einige bekannte Probleme mit dem Verhalten in Windows Mixed Reality (die Sie weiter unten lesen können).
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-### <a name="known-issues-resolved-by-the-2020-01-cumulative-update-for-windows-10-version-1903-or-later"></a>Bekannte Probleme, die durch das kumulative Update 2020-01 für Windows 10, Version 1903 (oder höher) behoben wurden
+### <a name="known-issues-resolved-by-the-2020-01-cumulative-update-for-windows-10-version-1903-or-later"></a>Bekannte Probleme, die durch das kumulative Update 2020-01 für Windows 10 Version 1903 (oder höher) behoben wurden
 
-- Das Starten einer beliebigen Win32-APP, einschließlich des neuen Microsoft Edge, bewirkt, dass die Headset-Anzeige kurz fixiert wird.
-- Die Microsoft Edge-Kachel verschwindet im Windows Mixed Reality-Startmenü (Sie finden es im Ordner "Classic Apps").
-- Windows aus dem vorherigen Microsoft Edge wird immer noch um die gemischte Realität herum platziert, kann aber nicht verwendet werden. Es wird versucht, diese Windows Edge-Edge in der Desktop-App zu aktivieren.
-- Wenn Sie einen Link in der Mixed Reality-Startseite auswählen, wird ein Webbrowser auf dem Desktop anstelle der Mixed Reality-Startseite gestartet.
-- Die webvr-Showcase-APP ist in der Mixed Reality-Homepage enthalten, obwohl webvr nicht mehr unterstützt wird.
-- Allgemeine Verbesserungen beim Starten von Tastatur und visuellen Elementen.
+- Das Starten einer win32-App, einschließlich der neuen Microsoft Edge, bewirkt, dass die Headsetanzeige kurz einfriert.
+- Die Microsoft Edge kachel verschwindet im Windows Mixed Reality Startmenü (Sie finden sie im Ordner "Klassische Apps").
+- Windows aus dem vorherigen Microsoft Edge werden weiterhin um den Mixed Reality Startumgebung platziert, können jedoch nicht verwendet werden. Beim Versuch, diese Fenster zu aktivieren, wird Edge in der Desktop-App gestartet.
+- Wenn Sie einen Link in der Mixed Reality Startumgebung, wird ein Webbrowser auf dem Desktop anstatt auf dem Mixed Reality Startumgebung.
+- Die WebVR Showcase-App ist in der Mixed Reality Startumgebung vorhanden, obwohl WebVR nicht mehr unterstützt wird.
+- Allgemeine Verbesserungen an Tastaturstarts und Visuals.
 
-### <a name="monitor-and-input-handling-issues"></a>Probleme bei der Überwachung und Eingabe Behandlung
+### <a name="monitor-and-input-handling-issues"></a>Probleme bei der Überwachung und Eingabebehandlung
 
-Nachdem Sie das kumulative Update 2020-01 für Windows 10, Version 1903 (oder höher) übernommen haben, werden virtuelle Monitore in den **Einstellungen > System >** in Windows Mixed Reality-Sitzungen angezeigt. Einige Kunden, insbesondere bei mehr als einem physischen Monitor, bemerken möglicherweise Probleme mit dem Desktop Layout und der Eingabe Behandlung.
+Nach der Übernahme des kumulativen Updates 2020-01 für Windows 10 Version 1903 (oder höher) werden virtuelle Monitore während Windows Mixed Reality-Sitzungen als generische physische Monitore in **Einstellungen > System > Display** angezeigt. Einige Kunden, insbesondere mit mehr als einem physischen Monitor, bemerken möglicherweise Probleme mit dem Desktoplayout und der Eingabebehandlung.
 
 **Warum dies geschieht**
 
-Die Unterstützung für klassische Win32-Anwendungen in Windows Mixed Reality wurde mit dem [Windows 10-Update von Mai 2019](/windows/mixed-reality/enthusiast-guide/release-notes-may-2019)eingeführt. Um diese Unterstützung zu aktivieren, muss ein virtueller Monitor erstellt werden, um die Win32-Anwendung zu hosten. Jedes Mal, wenn eine neue Win32-Anwendung gestartet wird, muss ein weiterer virtueller Monitor erstellt werden. Leider ist das Erstellen eines virtuellen Monitors eine intensive Aufgabe, die dazu führen kann, dass die Headset-Anzeige kurz fixiert wird. Kunden haben Feedback gegeben, dass dies ein unbequemer und störendes Verhalten war. Aufgrund von Feedback und erhöhter Verwendung von Win32-Anwendungen haben wir die Entscheidung getroffen, während des Starts von Windows Mixed Reality drei virtuelle Monitore vorab zuzuordnen. Dies verhindert Störungen und ermöglicht es den Kunden, bis zu drei gleichzeitige Win32-Anwendungen zu starten, ohne dass das Einfrieren der Headset angezeigt wird.
+Die Unterstützung für klassische Win32-Anwendungen in Windows Mixed Reality wurde mit [dem](/windows/mixed-reality/enthusiast-guide/release-notes-may-2019)Windows 10 May 2019 Update. Um diese Unterstützung zu aktivieren, muss ein virtueller Monitor erstellt werden, um die Win32-Anwendung zu hosten. Jedes Mal, wenn eine neue Win32-Anwendung gestartet wird, muss ein weiterer virtueller Monitor erstellt werden. Leider ist das Erstellen eines virtuellen Monitors eine intensive Aufgabe, die dazu führen kann, dass die Headsetanzeige kurz einfriert. Kunden haben uns feedback gegeben, dass es sich um eine umstliche und störende Erfahrung geerbte. Aufgrund von Feedback und einer erhöhten Nutzung von Win32-Anwendungen haben wir uns entschieden, drei virtuelle Monitore beim Start der Anwendung vorab Windows Mixed Reality. Dadurch wird eine Unterbrechung verhindert, und Kunden können bis zu drei gleichzeitige Win32-Anwendungen starten, ohne dass die Headsetanzeige einfrieren muss.
 
 **Problemumgehung**
 
-Wir haben seitdem Feedback erhalten, das einige Kunden, insbesondere solche mit mehreren physischen Monitoren, bevorzugen, diese virtuelle Monitor vorab Zuordnung zu deaktivieren. Um Kunden die Kontrolle zu verschaffen, haben wir eine Problem Umgehung aktiviert, die das Ändern eines Registrierungsschlüssel Werts erfordert, der mit den folgenden Windows-Updates verfügbar ist:
+Wir haben seitdem Feedback erhalten, dass einige Kunden, insbesondere kunden mit mehreren physischen Monitoren, diese Vorabzuordnung für virtuelle Monitore deaktivieren möchten. Um Kunden die Kontrolle zu geben, haben wir eine Problemumgehung aktiviert, die das Ändern eines Registrierungsschlüsselwerts umfasst, der mit den folgenden Updates Windows ist:
 
-- 2020-07 kumulative Update Vorschau für Windows 10, Version 2004 (KB4568831)
-- 2020-10 kumulative Update Vorschau für Windows 10, Version 1909 (KB4580386)
-- 2020-10 kumulative Update Vorschau für Windows 10, Version 1903 (KB4580386)
+- 2020-07 Cumulative Update Preview for Windows 10 Version 2004 (KB4568831)
+- 2020-10 Cumulative Update Preview for Windows 10 Version 1909 (KB4580386)
+- 2020-10 Cumulative Update Preview for Windows 10 Version 1903 (KB4580386)
 
 >[!NOTE]
->Das Ändern von Registrierungsschlüssel Werten ist für fortgeschrittene Benutzer gedacht.
+>Das Ändern von Registrierungsschlüsselwerten ist für fortgeschrittene Benutzer vorgesehen.
 
 >[!WARNING]
->Das Deaktivieren der vorab Zuordnung des virtuellen Monitors kann dazu führen, dass Ihr Headset beim Starten einer Win32-Anwendung (z. b. "Steam", "New Microsoft Edge" oder Google Chrome) in Windows Mixed Reality kurz einfriert wird.
+>Wenn Sie die Vorabzuordnung virtueller Monitore deaktivieren, kann dies dazu führen, dass die Headsetanzeige kurzzeitig einfriert, wenn Sie eine Win32-Anwendung (wie z. B. Steam, das neue Microsoft Edge oder Google Chrome) in Windows Mixed Reality.
 
-So deaktivieren Sie die vorab Zuordnung des virtuellen Monitors:
-1. Aktivieren Sie **Windows Update** für eine der oben aufgeführten Versionen der kumulativen Windows 10-Update Vorschauversion, und installieren Sie das Update, wenn es verfügbar ist. Sie können das Update unter **optionale Updates** oder **Erweiterte Optionen** auf der Seite Windows Update Einstellungen finden.
-2. **Registrierungs-Editor** starten
+So deaktivieren Sie die Vorabzuordnung virtueller Monitore:
+1. Überprüfen **Windows Update** auf eine der oben Windows 10 kumulativen Updatevorschauversionen, und installieren Sie das Update, falls verfügbar. Sie finden das Update unter **Optionale Updates** oder **Erweiterte Optionen auf** der Seite Windows Updateeinstellungen.
+2. Starten des **Registrierungs-Editors**
 3. Navigieren Sie zu "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\"
-4. Wenn die REG_DWORD "prezuzuordnen catevirtualmonitors" nicht vorhanden ist, erstellen Sie Sie, indem Sie **> neuen > DWORD-Wert (32-Bit) bearbeiten** auswählen und als Name prezuzuordnen catevirtualmonitors eingeben.
-5. Wenn die REG_DWORD "prezugecatevirtualmonitors" vorhanden ist (oder Sie soeben erstellt haben), doppelklicken Sie auf den Eintrag, und ändern Sie "Wertdaten" von 1 (Standardwert) in 0 (null).
-    * TRUE-1
-    * FALSE-0
+4. Wenn die REG_DWORD "PreallocateVirtualMonitors" nicht vorhanden ist, erstellen Sie sie, indem Sie bearbeiten **> Neuer >-DWORD-Wert (32-Bit)** auswählen und PreallocateVirtualMonitors als Namen eingeben.
+5. Wenn die REG_DWORD "PreallocateVirtualMonitors" vorhanden ist (oder Sie sie gerade erstellt haben), doppelklicken Sie auf den Eintrag, und ändern Sie "Wertdaten" von 1 (Standardwert) in 0 (null).
+    * TRUE – 1
+    * FALSE – 0
 
-Virtuelle Monitore werden nun zugeordnet, wenn Sie versuchen, eine Win32-Anwendung in Windows Mixed Reality zu starten, statt eine vorab Zuordnung durchführen zu müssen. Wenn Sie diese zurücksetzen und die vorab Zuordnung des virtuellen Monitors wieder aktivieren möchten, geben Sie das DWORD-"Wertdaten" in "1" zurück.
+Virtuelle Monitore werden jetzt reserviert, wenn Sie versuchen, eine Win32-Anwendung in Windows Mixed Reality Vorabzuweisung zu starten. Um dies zurückzusetzen und die Vorabzuordnung des virtuellen Monitors erneut zu aktivieren, geben Sie das DWORD "Wertdaten" auf 1 zurück.
 
 ### <a name="other-known-issues"></a>Andere bekannte Probleme
 
--   Websites, die in Windows Mixed Reality geöffnet sind, gehen verloren, wenn das gemischte Reality-Portal geschlossen wird. Die Microsoft Edge-Fenster bleiben in der gemischten Realität Zuhause.
-- Webxr-Funktionen, einschließlich der 360 Viewer-Erweiterung, werden möglicherweise auf PCs mit einem Hybrid-GPU-Setup nicht ordnungsgemäß gestartet. Sie können dieses Problem umgehen, indem Sie im neuen Microsoft Edge ein Vorschau Feature aktivieren. Navigieren Sie zu `edge://flags` , suchen Sie nach "Multi GPU", und aktivieren Sie das Flag **webxr-multigpu-Unterstützung**.
--   Das Audiomaterial von Microsoft Edge Windows ist nicht räumlich.
--   **Korrigiert in 360 Viewer Extension Version 2.3.8**: das Öffnen eines 360-Videos von YouTube in Windows Mixed Reality kann dazu führen, dass das Video im Headset verzerrt wird. Das Neustarten von Edge sollte die 360 Viewer-Erweiterung unsichtbar aktualisieren, um dieses Problem zu beheben. Sie können überprüfen, welche Version der Erweiterung Sie haben, indem Sie `edge://system/` in die Adressleiste eingeben und auf die Schaltfläche **erweitern** neben "Erweiterungen" klicken.
+-   Websites, die in Windows Mixed Reality geöffnet werden, gehen verloren, wenn Mixed Reality-Portal werden. Die Microsoft Edge Fenster bleiben an ihren platzierten Positionen in der Mixed Reality Startumgebung.
+- WebXR-Funktionen, einschließlich der 360 Viewer-Erweiterung, werden möglicherweise nicht ordnungsgemäß auf PCs mit einer Hybrid-GPU-Einrichtung gestartet. Sie können dieses Problem beheben, indem Sie eine Vorschaufunktion im neuen Microsoft Edge. Navigieren Sie zu `edge://flags` , suchen Sie nach "Multi-GPU", und aktivieren Sie das Flag **WebXR Multi-GPU-Unterstützung.**
+-   Audiodaten Microsoft Edge Fenstern werden nicht räumlichisiert.
+-   **Behoben in Version 2.3.8 der 360** Viewer-Erweiterung: Das Öffnen eines 360-Videos von YouTube in Windows Mixed Reality kann dazu führen, dass das Video im Headset verzerrt wird. Beim Neustarten von Edge sollte die 360 Viewer-Erweiterung unsichtbar aktualisiert werden, um dieses Problem zu beheben. Sie können überprüfen, über welche Version der Erweiterung Sie verfügen, indem Sie in der Adressleiste eingeben und neben `edge://system/` "Erweiterungen" auf die Schaltfläche Erweitern klicken. 

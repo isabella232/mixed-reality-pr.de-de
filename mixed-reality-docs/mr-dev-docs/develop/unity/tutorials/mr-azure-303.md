@@ -1,44 +1,44 @@
 ---
-title: Hololens (1. Generation) und Azure 303-Natural Language Understanding (Luis)
-description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Azure Language Understanding Intelligence Service (Luis) in einer Mixed Reality-Anwendung implementieren.
+title: 'HoloLens (1. Generation) und Azure 303 : Verstehen natürlicher Sprache (LUIS)'
+description: Absolvieren Sie diesen Kurs, um zu erfahren, wie Sie Azure Language Understanding Intelligence Service (LUIS) in einer Mixed Reality-Anwendung implementieren.
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
-keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Language Understanding Intelligence Service, Luis, hololens, immersive, VR, Windows 10, Visual Studio
-ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+keywords: Azure, Mixed Reality, Academy, Unity, Tutorial, API, Language Understanding Intelligence Service, Luis, HoloLens, immersive, vr, Windows 10, Visual Studio
+ms.openlocfilehash: 443b5f2c186fbbb0a3e979b48ccc20b4c3d3b4f0bd9c93950e27e1f86d610c07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730557"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218083"
 ---
-# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>Hololens (1. Gen) und Azure 303: Natural Language Understanding (Luis)
+# <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (1. Generation) und Azure 303: Verstehen natürlicher Sprache (LUIS)
 
 <br>
 
 >[!NOTE]
->Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es gibt eine neue Reihe von Tutorials, die in Zukunft veröffentlicht werden, um die Entwicklung für hololens 2 zu veranschaulichen.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn diese veröffentlicht werden.
+>Die Tutorials der Mixed Reality Academy wurden im Hinblick auf HoloLens (1. Gen.) und immersive Mixed Reality-Headsets entworfen.  Daher halten wir es für wichtig, diese Tutorials für Entwickler verfügbar zu halten, die noch nach Anleitung beim Entwickeln für diese Geräte suchen.  Diese Tutorials werden **_nicht_** mit den neuesten Toolsets oder Interaktionen aktualisiert, die für HoloLens 2 verwendet werden.  Sie werden gewartet, um weiterhin auf den unterstützten Geräten zu funktionieren. Es wird eine neue Reihe von Tutorials geben, die in Zukunft veröffentlicht werden, die veranschaulichen, wie sie für HoloLens 2 entwickelt werden.  Dieser Hinweis wird mit einem Link zu diesen Tutorials aktualisiert, wenn sie veröffentlicht werden.
 
 <br>
 
-In diesem Kurs erfahren Sie, wie Sie Language Understanding mithilfe von Azure Cognitive Services mit dem Language Understanding-API in eine gemischte Reality-Anwendung integrieren.
+In diesem Kurs erfahren Sie, wie Sie Language Understanding mithilfe von Azure Cognitive Services mit der Language Understanding-API in eine Mixed Reality-Anwendung integrieren.
 
-![Lab-Ergebnis](images/AzureLabs-Lab3-000.png)
+![Labergebnis](images/AzureLabs-Lab3-000.png)
 
-Bei *Language Understanding (Luis)* handelt es sich um einen Microsoft Azure Dienst, der Anwendungen die Möglichkeit bietet, die Bedeutung von Benutzereingaben zu machen, z. b. durch das Extrahieren der gewünschten Person in ihren eigenen Worten. Dies wird durch Machine Learning erreicht, das die Eingabeinformationen versteht und erfährt und dann mit detaillierten, relevanten Informationen Antworten kann. Weitere Informationen finden Sie auf der [Seite Azure Language Understanding (Luis)](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/).
+*Language Understanding (LUIS)* ist ein Microsoft Azure-Dienst, der Anwendungen die Möglichkeit bietet, aus Benutzereingaben eine Bedeutung zu machen, z. B. durch Extrahieren des gewünschten Ziels einer Person in eigenen Worten. Dies wird durch maschinelles Lernen erreicht, das die Eingabeinformationen versteht und lernt und dann mit detaillierten, relevanten Informationen antworten kann. Weitere Informationen finden Sie auf der [Seite azure Language Understanding (LUIS).](https://azure.microsoft.com/services/cognitive-services/language-understanding-intelligent-service/)
 
-Nachdem Sie diesen Kurs abgeschlossen haben, verfügen Sie über eine gemischte Reality-Headset-Anwendung, die Folgendes ausführen kann:
+Nach Abschluss dieses Kurses verfügen Sie über eine Immersive Headset-Mixed Reality-Anwendung, die folgende Schritte ausführen kann:
 
-1.  Erfassen Sie die Sprache für Benutzereingaben, indem Sie das Mikrofon verwenden, das dem immersiven Headset zugeordnet ist. 
-2.  Senden Sie das erfasste Diktat an den *Azure-Language Understanding Intelligent Service* (*Luis*). 
-3.  Achten Sie darauf, dass Luis aus den Sende Informationen Bedeutung hat, die analysiert werden, und versuchen Sie zu bestimmen, ob die Anforderung des Benutzers hergestellt werden soll.
+1.  Erfassen Sie die Benutzereingabesprache mithilfe des Mikrofons, das an das immersive Headset angefügt ist. 
+2.  Senden Sie das erfasste Diktat an *azure Language Understanding Intelligent Service* (*LUIS*). 
+3.  Lassen Sie LUIS die Bedeutung aus den Sendeinformationen extrahieren, die analysiert werden, und versuchen Sie, die Absicht der Anforderung des Benutzers zu bestimmen.
 
-Die Entwicklung umfasst das Erstellen einer APP, in der der Benutzer die Sprach-und/oder den Blick verwenden kann, um die Größe und die Farbe der Objekte in der Szene zu ändern. Die Verwendung von Bewegungs Controllern wird nicht abgedeckt.
+Die Entwicklung umfasst die Erstellung einer App, bei der der Benutzer die Größe und Farbe der Objekte in der Szene mithilfe von Sprache und/oder Anvieren ändern kann. Die Verwendung von Motion-Controllern wird nicht abgedeckt.
 
-In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf integrieren. In diesem Kurs erfahren Sie, wie Sie einen Azure-Dienst in Ihr Unity-Projekt integrieren. Es ist Ihre Aufgabe, das wissen, das Sie aus diesem Kursgewinnen, zu nutzen, um ihre gemischte Reality-Anwendung zu verbessern.
+In Ihrer Anwendung liegt es an Ihnen, wie Sie die Ergebnisse in Ihren Entwurf integrieren. In diesem Kurs erfahren Sie, wie Sie einen Azure-Dienst in Ihre Unity-Project integrieren. Es ist Ihre Aufgabe, das Wissen, das Sie aus diesem Kurs gewinnen, zu nutzen, um Ihre Mixed Reality-Anwendung zu verbessern.
 
-Seien Sie darauf vorbereitet, Luis mehrmals zu trainieren. Dies wird in [Kapitel 12](#chapter-12--improving-your-luis-service)behandelt. Wenn Luis schneller trainiert wurde, erhalten Sie bessere Ergebnisse.
+Bereiten Sie sich darauf vor, LUIS mehrmals zu trainieren. Dies wird in [Kapitel 12](#chapter-12--improving-your-luis-service)behandelt. Je häufiger LUIS trainiert wurde, desto bessere Ergebnisse erhalten Sie.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -46,136 +46,136 @@ Seien Sie darauf vorbereitet, Luis mehrmals zu trainieren. Dies wird in [Kapitel
 <tr>
 <th>Kurs</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">Immersive Headsets</a></th>
 </tr><tr>
-<td>Mr und Azure 303: verstehen in natürlicher Sprache (Luis)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
+<td>MR und Azure 303: Verstehen natürlicher Sprache (LUIS)</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
 > [!NOTE]
-> Dieser Kurs konzentriert sich in erster Linie auf Windows Mixed Reality immersive (VR)-Headsets, aber Sie können auch das, was Sie in diesem Kurs lernen, auf Microsoft hololens anwenden. Wenn Sie den Kurs befolgen, finden Sie Hinweise zu allen Änderungen, die Sie möglicherweise zur Unterstützung von hololens verwenden müssen. Wenn Sie hololens verwenden, bemerken Sie möglicherweise bei der sprach Erfassung einen Echo.
+> Während sich dieser Kurs hauptsächlich auf Windows Mixed Reality immersiven Headsets (VR) konzentriert, können Sie auch das, was Sie in diesem Kurs lernen, auf Microsoft HoloLens anwenden. Während Sie den Kurs durchgehen, werden Ihnen Hinweise zu allen Änderungen angezeigt, die Sie ggf. zur Unterstützung HoloLens verwenden müssen. Wenn Sie HoloLens verwenden, können Sie während der Spracherfassung ein Echo bemerken.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 > [!NOTE]
-> Dieses Tutorial richtet sich an Entwickler, die über grundlegende Kenntnisse in Unity und c# verfügen. Beachten Sie auch, dass die Voraussetzungen und Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt des Schreibens getestet und überprüft wurde (Mai 2018). Sie können die neueste Software verwenden, die im Artikel [Installieren der Tools](../../install-the-tools.md) aufgeführt ist. es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs genau mit den Informationen in neueren Software vergleichen, als im folgenden aufgeführt sind.
+> Dieses Tutorial richtet sich an Entwickler, die grundlegende Erfahrung mit Unity und C# haben. Beachten Sie auch, dass die Voraussetzungen und die geschriebenen Anweisungen in diesem Dokument darstellen, was zum Zeitpunkt der Erstellung (Mai 2018) getestet und überprüft wurde. Sie können die neueste Software verwenden, wie im Artikel [installieren der Tools](../../install-the-tools.md) aufgeführt. Es sollte jedoch nicht davon ausgegangen werden, dass die Informationen in diesem Kurs perfekt mit dem übereinstimmen, was Sie in neuerer Software finden als die unten aufgeführten.
 
-Für diesen Kurs empfehlen wir die folgende Hardware und Software:
+Für diesen Kurs wird die folgende Hardware und Software empfohlen:
 
-- Einen Entwicklungs-PC, der [mit der Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) for Immersive (VR)-Headset-Entwicklung kompatibel ist
-- [Windows 10 Fall Creators Update (oder höher) mit aktiviertem Entwicklermodus](../../install-the-tools.md)
+- Ein Entwicklungs-PC, [der mit Windows Mixed Reality](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) für die Entwicklung immersiver Headsets (VR) kompatibel ist
+- [Windows 10 Fall Creators Update (oder höher) mit aktivierter Option "Entwicklermodus"](../../install-the-tools.md)
 - [Das neueste Windows 10 SDK](../../install-the-tools.md)
-- [Unity 2017,4](../../install-the-tools.md)
+- [Unity 2017.4](../../install-the-tools.md)
 - [Visual Studio 2017](../../install-the-tools.md)
-- Ein [Windows Mixed Reality-Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [Microsoft hololens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
-- Eine Reihe von Kopfhörern mit einem integrierten Mikrofon (wenn das Headset nicht über eine integrierte Mic-und-Sprech Anwendung verfügt)
-- Internet Zugriff für Azure-Setup und Luis-Abruf
+- Ein [Windows Mixed Reality immersives Headset (VR)](../../../discover/immersive-headset-hardware-details.md) oder [ein Microsoft HoloLens](/hololens/hololens1-hardware) mit aktiviertem Entwicklermodus
+- Eine Reihe von Mikrofonen mit einem integrierten Mikrofon (wenn das Headset nicht über ein integriertes Mikrofon und Lautsprecher verfügt)
+- Internetzugriff für Azure-Setup und LUIS-Abruf
 
 ## <a name="before-you-start"></a>Vorbereitung
 
-1.  Um Probleme zu vermeiden, die beim Erstellen dieses Projekts auftreten, wird dringend empfohlen, dass Sie das in diesem Tutorial erwähnte Projekt in einem Stamm Ordner oder in einem Ordner mit einem Stamm Ordner erstellen (lange Ordner Pfade können zur Buildzeit Probleme verursachen). 
-2.  Damit Ihr Computer das Diktat aktivieren kann, wechseln Sie zu **Windows-Einstellungen > Datenschutz > Sprache, & eingeben,** und drücken Sie dann die Schaltfläche **Sprachdienste aktivieren und Vorschläge eingeben**.
-3.  Der Code in diesem Tutorial ermöglicht Ihnen das Aufzeichnen der standardmäßigen **Mikrofon Geräte** , die auf Ihrem Computer festgelegt sind. Stellen Sie sicher, dass das standardmikrofon als das Mikrofon festgelegt ist, das Sie zum Erfassen Ihrer Stimme verwenden möchten.
-4.  Wenn Ihr Headset über ein integriertes Mikrofon verfügt, stellen Sie sicher, dass die Option *"Wenn ich mein Headset verwende, zu Headset mic wechseln"* in den Einstellungen für das *gemischte Reality-Portal* aktiviert ist.
+1.  Um Probleme bei der Erstellung dieses Projekts zu vermeiden, wird dringend empfohlen, das in diesem Tutorial erwähnte Projekt in einem Stammordner oder in einem Ordner in der Nähe des Stammordners zu erstellen (lange Ordnerpfade können zur Buildzeit Probleme verursachen). 
+2.  Damit Ihr Computer das Diktieren aktivieren kann, wechseln Sie zu **Windows Einstellungen > Datenschutz > Speech, Inking & Eingabe,** und drücken Sie die Schaltfläche **Sprachdienste aktivieren und Vorschläge eingeben.**
+3.  Mit dem Code in diesem Tutorial können Sie auf Ihrem Computer über das **Standard-Mikrofongerät** aufzeichnen. Stellen Sie sicher, dass das Standard-Mikrofongerät als das Gerät festgelegt ist, das Sie zum Erfassen Ihrer Stimme verwenden möchten.
+4.  Wenn Ihr Headset über ein integriertes Mikrofon verfügt, stellen Sie sicher, dass die Option *"When I wear my headset, switch to headset mic" (Wenn ich mein Headset verschleiße, zum Headset-Mikrofon wechseln)* in den *einstellungen der Mixed Reality-Portal* aktiviert ist.
 
     ![Einrichten des immersiven Headsets](images/AzureLabs-Lab3-00.png)
 
-## <a name="chapter-1--setup-azure-portal"></a>Kapitel 1 – Einrichten des Azure-Portals
+## <a name="chapter-1--setup-azure-portal"></a>Kapitel 1: Einrichten des Azure-Portals
 
-Wenn Sie den *Language Understanding* -Dienst in Azure verwenden möchten, müssen Sie eine Instanz des-Dienstanbieter konfigurieren, die für die Anwendung verfügbar gemacht wird.
+Um den *Language Understanding-Dienst* in Azure zu verwenden, müssen Sie eine Instanz des Diensts konfigurieren, die Ihrer Anwendung zur Verfügung gestellt wird.
 
 1.  Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an.
 
     > [!NOTE]
-    > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eines erstellen. Wenn Sie dieses Tutorial in einer Classroom-oder Lab-Situation befolgen, bitten Sie Ihren Dozenten oder einen der Proctors, Hilfe beim Einrichten Ihres neuen Kontos zu erhalten.
+    > Wenn Sie noch nicht über ein Azure-Konto verfügen, müssen Sie eins erstellen. Wenn Sie dieses Tutorial in einer Classroom- oder Lab-Situation durchgehen, bitten Sie Ihren Dozenten oder einen der Proctors um Hilfe beim Einrichten Ihres neuen Kontos.
 
-2.  Wenn Sie angemeldet sind, klicken Sie in der oberen linken Ecke auf **neu** , suchen Sie nach *Language Understanding*, und drücken Sie die **Eingabe** Taste. 
+2.  Klicken Sie nach der Anmeldung oben links auf **Neu,** suchen Sie *nach Language Understanding*, und drücken Sie **die EINGABETASTE.** 
 
     ![Erstellen einer LUIS-Ressource](images/AzureLabs-Lab3-01.png)
 
     > [!NOTE]
-    > Das Wort **New** wurde möglicherweise durch **Create a Resource** in neueren Portalen ersetzt.
+    > Das Wort **Neu** wurde möglicherweise in neueren Portalen durch **Ressource erstellen** ersetzt.
  
-3.  Die neue Seite auf der rechten Seite enthält eine Beschreibung des Language Understanding Dienstanbieter. Klicken Sie unten links auf dieser Seite auf die Schaltfläche **Erstellen** , um eine Instanz dieses Dienstanbieter zu erstellen.
+3.  Die neue Seite auf der rechten Seite enthält eine Beschreibung des Language Understanding-Diensts. Wählen Sie unten links auf dieser Seite die Schaltfläche **Erstellen** aus, um eine Instanz dieses Diensts zu erstellen.
 
-    ![Luis-Dienst Erstellung-rechtliche Hinweise](images/AzureLabs-Lab3-02.png)
+    ![Erstellung des LUIS-Diensts – rechtliche Hinweise](images/AzureLabs-Lab3-02.png)
  
-4.  Nachdem Sie auf erstellen geklickt haben, klicken Sie auf:
+4.  Nachdem Sie auf Erstellen geklickt haben:
 
-    1. Fügen Sie den gewünschten **Namen** für diese Dienst Instanz ein.
+    1. Fügen Sie den gewünschten **Namen** für diese Dienstinstanz ein.
     2. Wählen Sie ein **Abonnement** aus.
-    3. Wählen Sie den für **Sie geeigneten Tarif** aus. Wenn Sie zum ersten Mal einen *Luis-Dienst* erstellen, sollte Ihnen ein Free-Tarif (mit dem Namen "F0") zur Verfügung stehen. Die kostenlose Zuweisung sollte für diesen Kurs mehr als ausreichend sein.
-    4. Wählen Sie eine Ressourcengruppe aus, oder erstellen Sie eine neue **Ressourcengruppe** . Eine Ressourcengruppe bietet eine Möglichkeit zum überwachen, Steuern des Zugriffs, bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt (z. b. diesen Kursen) zugeordnet sind, in einer gemeinsamen Ressourcengruppe zu speichern. 
+    3. Wählen Sie den für Sie geeigneten **Tarif** aus. Wenn Sie zum ersten Mal einen *LUIS-Dienst* erstellen, sollte Ihnen ein Free-Tarif (mit dem Namen F0) zur Verfügung stehen. Die kostenlose Zuordnung sollte für diesen Kurs mehr als ausreichend sein.
+    4. Wählen Sie eine **Ressourcengruppe** aus, oder erstellen Sie eine neue. Eine Ressourcengruppe bietet eine Möglichkeit zum Überwachen, Steuern des Zugriffs, Bereitstellen und Verwalten der Abrechnung für eine Sammlung von Azure-Ressourcen. Es wird empfohlen, alle Azure-Dienste, die einem einzelnen Projekt zugeordnet sind (z. B. diese Kurse), in einer gemeinsamen Ressourcengruppe zu speichern. 
 
-        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel Ressourcengruppe](/azure/azure-resource-manager/resource-group-portal).
+        > Weitere Informationen zu Azure-Ressourcengruppen finden Sie [im Artikel zu Ressourcengruppen.](/azure/azure-resource-manager/resource-group-portal)
 
-    5. Bestimmen Sie den **Speicherort** für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Speicherort wäre idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
-    6. Außerdem müssen Sie bestätigen, dass Sie die auf diesen Dienst angewendeten Geschäftsbedingungen verstanden haben.
+    5. Bestimmen Sie den **Speicherort** für Ihre Ressourcengruppe (wenn Sie eine neue Ressourcengruppe erstellen). Der Standort befindet sich idealerweise in der Region, in der die Anwendung ausgeführt wird. Einige Azure-Ressourcen sind nur in bestimmten Regionen verfügbar.
+    6. Sie müssen auch bestätigen, dass Sie die für diesen Dienst geltenden Geschäftsbedingungen verstanden haben.
     7. Klicken Sie auf **Erstellen**.
 
-        ![Erstellen eines Luis-Dienstanbieter-Benutzereingabe](images/AzureLabs-Lab3-03.png)
+        ![Erstellen eines LUIS-Diensts – Benutzereingabe](images/AzureLabs-Lab3-03.png)
  
-5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. dieser Vorgang kann einige Minuten in Anspruch nehmen.
-6.  Nachdem die Dienst Instanz erstellt wurde, wird im Portal eine Benachrichtigung angezeigt. 
+5.  Nachdem Sie auf **Erstellen** geklickt haben, müssen Sie warten, bis der Dienst erstellt wurde. Dies kann eine Minute dauern.
+6.  Sobald die Dienstinstanz erstellt wurde, wird eine Benachrichtigung im Portal angezeigt. 
  
-    ![Neues Azure-Benachrichtigungs Image](images/AzureLabs-Lab3-04.png)
+    ![Neues Azure-Benachrichtigungsimage](images/AzureLabs-Lab3-04.png)
 
-7.  Klicken Sie auf die Benachrichtigung, um die neue Dienst Instanz zu untersuchen.
+7.  Klicken Sie auf die Benachrichtigung, um Ihre neue Dienstinstanz zu untersuchen.
 
-    ![Benachrichtigung bei erfolgreicher Ressourcen Erstellung](images/AzureLabs-Lab3-05.png)
+    ![Benachrichtigung zur erfolgreichen Ressourcenerstellung](images/AzureLabs-Lab3-05.png)
  
-8.  Klicken Sie in der Benachrichtigung auf die Schaltfläche **Gehe zu Ressource** , um die neue Dienst Instanz zu untersuchen. Sie gelangen zu ihrer neuen Luis-Dienst Instanz. 
+8.  Klicken Sie in der Benachrichtigung auf die Schaltfläche **Zu Ressource** wechseln, um Ihre neue Dienstinstanz zu untersuchen. Sie gelangen zu Ihrer neuen LUIS-Dienstinstanz. 
  
-    ![Zugriff auf Luis-Schlüssel](images/AzureLabs-Lab3-06.png)
+    ![Zugreifen auf LUIS-Schlüssel](images/AzureLabs-Lab3-06.png)
 
-9.  In diesem Lernprogramm muss Ihre Anwendung Aufrufe an Ihren Dienst durchführen. Dies erfolgt über den Abonnement Schlüssel Ihres dienstanzschlüssels.
-10. Navigieren Sie auf der Seite " *Schnellstart* " Ihres *Luis-API* -Diensts zum ersten Schritt, rufen Sie *Ihre Schlüssel* ab, und klicken Sie auf " **Schlüssel** " (Sie können dies auch erreichen, indem Sie auf die blauen Hyperlink-Schlüssel klicken, die sich im Navigationsmenü der Dienste befinden und durch das Schlüsselsymbol gekennzeichnet sind). Dadurch werden die Dienst *Schlüssel* angezeigt.
-11. Erstellen Sie eine Kopie von einem der angezeigten Schlüssel, da Sie dies später in Ihrem Projekt benötigen. 
-12. Klicken Sie auf der Seite *Dienst* auf *Language Understanding Portal* , um zu der Webseite umgeleitet zu werden, die Sie zum Erstellen des neuen Dienstanbieter in der Luis-App verwenden. 
+9.  In diesem Tutorial muss Ihre Anwendung Aufrufe an Ihren Dienst tätigen. Dies erfolgt über den Abonnementschlüssel Ihres Diensts.
+10. Navigieren Sie auf der *Schnellstartseite* Ihres *LUIS-API-Diensts* zum ersten Schritt, Greifen Sie *Ihre Schlüssel,* und klicken Sie auf **Schlüssel** ( Sie können dies auch erreichen, indem Sie auf den blauen Link Schlüssel klicken, der sich im Navigationsmenü der Dienste befindet, das durch das Schlüsselsymbol gekennzeichnet ist). Dadurch werden Ihre *Dienstschlüssel angezeigt.*
+11. Erstellen Sie eine Kopie eines der angezeigten Schlüssel, da Sie diese später in Ihrem Projekt benötigen. 
+12. Klicken Sie auf der Seite *Dienst* auf *Language Understanding Portal,* um auf die Webseite umgeleitet zu werden, die Sie zum Erstellen Ihres neuen Diensts in der LUIS-App verwenden. 
 
-## <a name="chapter-2--the-language-understanding-portal"></a>Kapitel 2 – das Language Understanding-Portal
+## <a name="chapter-2--the-language-understanding-portal"></a>Kapitel 2 : Das Language Understanding-Portal
 
-In diesem Abschnitt erfahren Sie, wie Sie eine Luis-App im Luis-Portal erstellen. 
+In diesem Abschnitt erfahren Sie, wie Sie eine LUIS-App im LUIS-Portal erstellen. 
 
 > [!IMPORTANT]
-> Beachten Sie, dass das Einrichten von *Entitäten*, *Intents* und *Äußerungen* in diesem Kapitel nur der erste Schritt beim Erstellen eines Luis-diengs ist: Sie müssen den Dienst auch mehrmals neu trainieren, um ihn genauer zu gestalten. Das erneute Trainieren Ihres Dienstanbieter wird im [letzten Kapitel](#chapter-12--improving-your-luis-service) dieses Kurses behandelt. Stellen Sie also sicher, dass Sie den Dienst fertiggestellt haben.
+> Beachten Sie, dass das Einrichten der *Entitäten,* Absichten und *Äußerungen* in diesem Kapitel nur der erste Schritt beim Erstellen Ihres LUIS-Diensts ist: Sie müssen den Dienst auch *mehrmals* neu trainieren, um ihn genauer zu machen. Das erneute Training Ihres Diensts wird im [letzten Kapitel](#chapter-12--improving-your-luis-service) dieses Kurses behandelt. Stellen Sie daher sicher, dass Sie ihn abschließen.
 
-1.  Wenn Sie das *Language Understanding-Portal* erreicht haben, müssen Sie sich ggf. mit denselben Anmelde Informationen wie Ihre Azure-Portal anmelden, falls Sie dies noch nicht getan haben. 
+1.  Wenn Sie das *Language Understanding-Portal* erreichen, müssen Sie sich möglicherweise mit den gleichen Anmeldeinformationen wie bei Ihrem Azure-Portal anmelden, sofern sie noch nicht vorhanden sind. 
 
-    ![Luis-Anmeldeseite](images/AzureLabs-Lab3-07.png)
+    ![LUIS-Anmeldeseite](images/AzureLabs-Lab3-07.png)
  
-2.  Wenn Sie zum ersten Mal Luis verwenden, müssen Sie zum unteren Rand der Willkommensseite Scrollen, um die Schaltfläche " **Luis-app erstellen** " zu suchen und darauf zu klicken.
+2.  Wenn Sie LUIS zum ersten Mal verwenden, müssen Sie zum unteren Rand der Willkommensseite scrollen, um die Schaltfläche LUIS-App erstellen zu suchen **und zu** klicken.
 
-    ![Seite "Luis-app erstellen"](images/AzureLabs-Lab3-08.png)
+    ![Seite "LUIS-App erstellen"](images/AzureLabs-Lab3-08.png)
  
-3.  Klicken Sie nach der Anmeldung auf " **meine apps** " (wenn Sie sich derzeit nicht in diesem Abschnitt befinden). Klicken Sie dann auf **neue APP erstellen**.
+3.  Klicken Sie nach der Anmeldung **auf Meine Apps** (wenn Sie sich derzeit nicht in diesem Abschnitt befinden). Sie können dann auf Create **new app (Neue App erstellen) klicken.**
 
-    ![Luis-my Apps-Image](images/AzureLabs-Lab3-09.png)
+    ![LUIS – Image "Meine Apps"](images/AzureLabs-Lab3-09.png)
  
-4.  *Benennen* Sie Ihre APP.
-5.  Wenn Ihre APP eine andere Sprache als Englisch verstehen soll, sollten Sie die *Kultur* in die entsprechende Sprache ändern.
-6.  Hier können Sie auch eine *Beschreibung* ihrer neuen Luis-app hinzufügen.
+4.  Geben Sie Ihrer App einen *Namen.*
+5.  Wenn Ihre App eine andere Sprache als Englisch verstehen soll, sollten Sie die *Kultur* in die entsprechende Sprache ändern.
+6.  Hier können Sie auch eine Beschreibung *Ihrer* neuen LUIS-App hinzufügen.
 
-    ![Luis: Erstellen einer neuen App](images/AzureLabs-Lab3-10.png)
+    ![LUIS: Erstellen einer neuen App](images/AzureLabs-Lab3-10.png)
 
-7.  Wenn Sie auf " **done**" klicken, geben Sie die buildseite *ihrer* neuen *Luis* -Anwendung ein.
-8.  Es gibt einige wichtige Konzepte, die Sie kennen sollten:
+7.  Sobald Sie auf **Fertig klicken,** geben Sie die *Seite Erstellen* Ihrer neuen *LUIS-Anwendung* ein.
+8.  Hier sind einige wichtige Konzepte zu verstehen:
 
-    -   *Intent* stellt die Methode dar, die nach einer Abfrage des Benutzers aufgerufen wird. Eine *Absicht* kann über eine oder mehrere *Entitäten* verfügen.
-    -   Die *Entität* ist eine Komponente der Abfrage, die die für die *Absicht* relevanten Informationen beschreibt.
-    -   *Äußerungen* sind Beispiele für Abfragen, die vom Entwickler bereitgestellt werden, mit denen Luis sich selbst trainiert.
+    -   *Absicht*: Stellt die Methode dar, die nach einer Abfrage des Benutzers aufgerufen wird. Eine *ABSICHT* kann eine oder mehrere *ENTITÄTen enthalten.*
+    -   *Die Entität* ist eine Komponente der Abfrage, die informationen beschreibt, die für die *ABSICHT relevant sind.*
+    -   *Äußerungen sind* Beispiele für Abfragen, die vom Entwickler bereitgestellt werden und mit denen LUIS sich selbst trainiert.
 
-Wenn diese Konzepte nicht ganz klar sind, machen Sie sich keine Sorgen, da dieser Kurs Sie in diesem Kapitel näher erläutern wird.
+Wenn diese Konzepte nicht ganz klar sind, machen Sie sich keine Sorgen, da sie in diesem Kurs in diesem Kapitel weiter erläutert werden.
 
-Zunächst erstellen Sie die *Entitäten* , die zum Erstellen dieses Kurses benötigt werden.
+Zunächst erstellen Sie die *Entitäten, die* zum Erstellen dieses Kurses erforderlich sind.
 
-9.  Klicken Sie auf der linken Seite der Seite auf *Entitäten*, und klicken Sie dann auf **neue Entität erstellen**.
+9.  Klicken Sie links auf der Seite auf *Entitäten* und dann auf **Neue Entität erstellen.**
 
-    ![Neue Entität erstellen](images/AzureLabs-Lab3-11.png)
+    ![Erstellen einer neuen Entität](images/AzureLabs-Lab3-11.png)
 
-10. Nennen Sie die neue Entitäts *Farbe*, legen Sie den Typ auf *Simple* fest, und drücken Sie dann auf **done**.
+10. Rufen Sie die neue *Entitätsfarbe auf,* legen Sie ihren Typ auf *Einfach fest,* und klicken Sie dann **auf Fertig.**
 
-    ![Einfache Entitäts Farbe erstellen](images/AzureLabs-Lab3-12.png)
+    ![Erstellen einer einfachen Entität – Farbe](images/AzureLabs-Lab3-12.png)
  
-11. Wiederholen Sie diesen Vorgang, um drei (3) weitere einfache Entitäten namens zu erstellen:
+11. Wiederholen Sie diesen Vorgang, um drei weitere einfache Entitäten mit dem Namen zu erstellen:
 
     -   *Upsizing*
     -   *Verkleinern*
@@ -183,40 +183,40 @@ Zunächst erstellen Sie die *Entitäten* , die zum Erstellen dieses Kurses benö
 
 Das Ergebnis sollte wie in der folgenden Abbildung aussehen:
 
-![Ergebnis der Entitäts Erstellung](images/AzureLabs-Lab3-13.png)
+![Ergebnis der Entitätserstellung](images/AzureLabs-Lab3-13.png)
  
-An dieser Stelle können Sie mit dem Erstellen von *Intents* beginnen. 
+An diesem Punkt können Sie mit dem Erstellen von *Absichten beginnen.* 
 
 > [!WARNING]
-> Löschen Sie nicht die Absicht " **keine** ".
+> Löschen Sie die Absicht **Keine** nicht.
 
-12. Klicken Sie auf der linken Seite der Seite auf **Intents**, und klicken Sie dann auf **Create New Intent**.
+12. Klicken Sie links auf der Seite auf **Intents (Absichten)** und dann **auf Create new intent (Neue Absicht erstellen).**
 
-    ![Neue Intents erstellen](images/AzureLabs-Lab3-14.png)
+    ![Erstellen neuer Absichten](images/AzureLabs-Lab3-14.png)
 
-13. Nennen Sie die neue *Intent* **changeobjectcolor**.
+13. Rufen Sie die neue *Absicht* **ChangeObjectColor auf.**
 
     > [!IMPORTANT]
-    > Dieser *beabsichtigte Name wird* im Code weiter unten in diesem Kurs verwendet. verwenden Sie daher für optimale Ergebnisse den Namen genau wie angegeben.
+    > Dieser *Absichtsname* wird später in diesem Kurs im Code verwendet. Verwenden Sie diesen Namen also genau wie angegeben, um optimale Ergebnisse zu erzielen.
 
-Nachdem Sie den Namen bestätigt haben, werden Sie zur Intents-Seite weitergeleitet.
+Nachdem Sie den Namen bestätigt haben, werden Sie zur Seite "Absichten" geleitet.
 
-![Seite "Luis-Intents"](images/AzureLabs-Lab3-15.png)
+![LUIS – Seite "Absichten"](images/AzureLabs-Lab3-15.png)
 
-Sie werden feststellen, dass es ein Textfeld gibt, in dem Sie aufgefordert werden, 5 oder mehr unterschiedliche *Äußerungen* einzugeben.
+Sie werden feststellen, dass es ein Textfeld gibt, in dem Sie aufgefordert werden, 5 oder mehr verschiedene *Äußerungen ein.*
 
 > [!NOTE]
-> Luis konvertiert alle Äußerungen in Kleinbuchstaben.
+> LUIS konvertiert alle Äußerungen in Klein klein.
 
-14. Fügen Sie die folgende *Äußerung* in das Textfeld Top ein (aktuell mit dem *Texttyp etwa 5 Beispiele...* ), und drücken **Sie die Eingabe** Taste:
+14. Fügen Sie die folgende *Äußerung* in das obere Textfeld ein (derzeit mit dem Text *Geben Sie ca. 5 Beispiele ein...* ), und drücken Sie **die EINGABETASTE:**
 
 ```
 The color of the cylinder must be red
 ```
 
-Sie werden feststellen, dass die neue *Äußerung* in einer Liste unterhalb von angezeigt wird.
+Sie werden feststellen, dass die neue *Äußerung* in einer Liste darunter angezeigt wird.
 
-Fügen Sie im Anschluss an denselben Prozess die folgenden sechs (6) Äußerungen ein:
+Fügen Sie nach dem gleichen Prozess die folgenden sechs (6) Äußerungen ein:
 
 ```
 make the cube black
@@ -232,38 +232,38 @@ make this yellow
 change the color of this object to blue
 ```
 
-Für jede Äußerung, die Sie erstellt haben, müssen Sie identifizieren, welche Wörter von Luis als Entitäten verwendet werden sollen. In diesem Beispiel müssen Sie alle Farben als *Farb* Entität und den gesamten möglichen Verweis auf ein Ziel als *Ziel* Entität bezeichnen.
+Für jede äußerung, die Sie erstellt haben, müssen Sie identifizieren, welche Wörter von LUIS als Entitäten verwendet werden sollen. In diesem Beispiel müssen Sie alle  Farben als Farbentität und alle möglichen Verweise auf ein Ziel als *Zielentität beschriften.*
 
-15. Klicken Sie hierzu in der ersten Äußerung auf den Word- *Zylinder* , und wählen Sie *Ziel* aus.
+15. Klicken Sie dazu in der ersten Äußerung auf den *Wortkopf,* und wählen Sie *ziel aus.*
 
-    ![Erkennen von Ausdrucks Zielen](images/AzureLabs-Lab3-16.png)
+    ![Identifizieren von Äußerungszielen](images/AzureLabs-Lab3-16.png)
  
-16. Klicken Sie nun auf das *Rote* Wort in der ersten Äußerung, und wählen Sie *Farbe* aus.
+16. Klicken Sie nun in der ersten Äußerung auf das Wort *Rot,* und wählen Sie farbe *aus.*
 
-    ![Identifizieren von Ausdrucks Entitäten](images/AzureLabs-Lab3-17.png)
+    ![Identifizieren von Äußerungsentitäten](images/AzureLabs-Lab3-17.png)
  
-17. Bezeichnen Sie auch die nächste Zeile, wobei *Cube* ein *Ziel* sein sollte und *schwarz* eine *Farbe* sein sollte. Beachten Sie auch die Verwendung der Wörter *' this '*, *' it '* und *' This Object '*, die wir bereitstellen, damit auch nicht spezifische Zieltypen verfügbar sind. 
+17. Beschriften Sie auch die nächste Zeile, wobei *cube* ein Ziel *sein* soll, *und schwarz* sollte eine Farbe *sein.* Beachten Sie auch die Verwendung der Wörter *"this",* *"it"* und *"this object",* die wir bereitstellen, damit auch nicht spezifische Zieltypen verfügbar sind. 
 
-18. Wiederholen Sie den obigen Prozess, bis alle Äußerungen über die gekennzeichneten Entitäten verfügen. Wenn Sie Hilfe benötigen, sehen Sie sich das folgende Bild an.
+18. Wiederholen Sie den oben genannten Vorgang, bis für alle Äußerungen die Bezeichnung Entitäten angegeben ist. Wenn Sie Hilfe benötigen, sehen Sie sich die folgende Abbildung an.
 
     > [!TIP]
     > Wenn Sie Wörter auswählen, um sie als Entitäten zu beschriften, gelten folgende Regeln:
-    > - Klicken Sie einfach auf die einzelnen Wörter.
-    > - Für einen Satz von zwei oder mehr Wörtern klicken Sie am Anfang und dann am Ende der Menge.
+    > - Klicken Sie für einzelne Wörter einfach darauf.
+    > - Für einen Satz von zwei oder mehr Wörtern klicken Sie am Anfang und dann am Ende des Sets.
 
     > [!NOTE]
-    > Sie können die UMSCHALT Fläche *Tokens anzeigen* verwenden, um zwischen **Entitäten/Tokens anzuzeigen**.
+    > Sie können die *Umschaltfläche Tokenansicht* verwenden, um zwischen **Entitäten-/Tokenansicht zu wechseln.**
 
-19. Die Ergebnisse sollten wie in den folgenden Abbildungen dargestellt werden, die die **Entitäten/Tokens anzeigen**:
+19. Die Ergebnisse sollten wie in den folgenden Abbildungen zu sehen sein, die die **Entitäten-/Tokenansicht zeigen:**
 
-    ![Token & Entitäts Sichten](images/AzureLabs-Lab3-18.png)
+    ![Token & Entitätsansichten](images/AzureLabs-Lab3-18.png)
   
-20. Klicken Sie an dieser Stelle oben rechts auf der Seite auf die Schaltfläche **trainieren** , und warten Sie, bis der kleine Round-Indikator darauf Grün zeigt. Dies deutet darauf hin, dass Luis erfolgreich trainiert wurde, um diese Absicht zu erkennen.
+20. Klicken Sie an diesem **Punkt** rechts oben auf der Seite auf die Schaltfläche Trainieren, und warten Sie, bis der kleine runde Indikator darauf grün wird. Dies gibt an, dass LUIS erfolgreich trainiert wurde, um diese Absicht zu erkennen.
 
-    ![Train Luis](images/AzureLabs-Lab3-19.png)
+    ![Trainieren von LUIS](images/AzureLabs-Lab3-19.png)
  
-21. Erstellen Sie als Übung eine neue Absicht namens **changeobjectsize**, indem Sie die Entitäten *target*, *Upsizing* und *verkleinern* verwenden.
-22. Fügen Sie nach dem gleichen Prozess wie die vorherige Absicht die folgenden acht (8) Äußerungen für die *Größen* Änderung ein:
+21. Erstellen Sie als Übung für Sie eine neue Absicht namens **ChangeObjectSize,** indem Sie das Entitätsziel *verwenden,* *upsize* und *downsize verwenden.*
+22. Fügen Sie nach dem gleichen Prozess wie bei der vorherigen Absicht die folgenden acht (8) Äußerungen für *größenänderung* ein:
 
     ```
     increase the dimensions of that
@@ -285,115 +285,115 @@ Für jede Äußerung, die Sie erstellt haben, müssen Sie identifizieren, welche
 
 23. Das Ergebnis sollte wie in der folgenden Abbildung aussehen:
 
-    ![Einrichten der changeobjectsize-Token/-Entitäten](images/AzureLabs-Lab3-20.png) 
+    ![Einrichten der ChangeObjectSize-Token/-Entitäten](images/AzureLabs-Lab3-20.png) 
 
-24. Nachdem beide Intents, **changeobjectcolor** und **changeobjectsize** erstellt und trainiert wurden, klicken Sie oben auf der Seite auf die Schaltfläche **veröffentlichen** .
+24. Nachdem beide Absichten, **ChangeObjectColor** und **ChangeObjectSize,** erstellt und  trainiert wurden, klicken Sie oben auf der Seite auf die Schaltfläche VERÖFFENTLICHEN.
 
-    ![Luis-Dienst veröffentlichen](images/AzureLabs-Lab3-21.png)
+    ![Veröffentlichen des LUIS-Diensts](images/AzureLabs-Lab3-21.png)
 
-25. Auf der *Veröffentlichungs* Seite beenden und veröffentlichen Sie Ihre Luis-APP, damit Sie von Ihrem Code aus darauf zugreifen können.
+25. Auf der *Seite* Veröffentlichen finalisieren und veröffentlichen Sie Ihre LUIS-App, damit Ihr Code darauf zugreifen kann.
 
-    1. Legen Sie die Dropdown- *Veröffentlichung auf* **Production** fest.
-    2. Legen Sie die *Zeitzone* auf die Zeitzone fest.
-    3. Aktivieren Sie das Kontrollkästchen **alle vorhergesagten Intent-Ergebnisse einschließen**.
-    4. Klicken Sie auf **in Produktions Slot veröffentlichen**.
+    1. Legen Sie die Dropdownliste *Publish To (Veröffentlichen in)* als **Production (Produktion) fest.**
+    2. Legen Sie *die Zeitzone auf* Ihre Zeitzone fest.
+    3. Aktivieren Sie das Kontrollkästchen Include all predicted intent scores (Alle **vorhergesagten Absichtsergebnisse enthalten).**
+    4. Klicken Sie **auf Im Produktionsslot veröffentlichen.**
 
         ![Veröffentlichungseinstellungen](images/AzureLabs-Lab3-22.png)
 
-26. Im Abschnitt *Ressourcen und Schlüssel*:
+26. Im Abschnitt *Ressourcen und Schlüssel:*
 
-    1.  Wählen Sie die Region aus, die Sie für die Dienst Instanz im Azure-Portal festlegen.
-    2.  Sie werden feststellen, dass ein **Starter_Key** -Element unten angezeigt wird.
-    3.  Klicken Sie auf **Schlüssel hinzufügen** , und fügen Sie den *Schlüssel* ein, den Sie beim Erstellen Ihrer Dienst Instanz im Azure-Portal abgerufen haben. Wenn Ihr Azure-und das Luis-Portal beim gleichen Benutzer angemeldet sind, erhalten Sie Dropdown Menüs für den Mandanten *Namen*, den *Abonnement Namen* und den *Schlüssel* , den Sie verwenden möchten (hat denselben Namen wie zuvor im Azure-Portal angegeben).
+    1.  Wählen Sie im Azure-Portal die Region aus, die Sie für die Dienstinstanz festlegen.
+    2.  Sie werden feststellen, **Starter_Key** unten ein Element enthält. Ignorieren Sie es.
+    3.  Klicken Sie **auf Schlüssel hinzufügen,** und fügen Sie den *Schlüssel ein,* den Sie beim Erstellen Ihrer Dienstinstanz im Azure-Portal erhalten haben. Wenn Azure und das LUIS-Portal beim gleichen Benutzer angemeldet sind, werden Ihnen Dropdownmenüs für  Mandantenname, Abonnementname und den Schlüssel bereitgestellt, den Sie verwenden möchten (hat den gleichen Namen wie zuvor im Azure-Portal). 
 
     > [!IMPORTANT] 
-    > Nehmen Sie unter *Endpunkt* eine Kopie des Endpunkts an, der dem von Ihnen eingefügten Schlüssel entspricht, und verwenden Sie ihn bald in Ihrem Code.
+    > Erstellen Sie *unter Endpunkt* eine Kopie des Endpunkts, der dem von Ihnen eingefügten Schlüssel entspricht. Sie werden ihn in Kürze in Ihrem Code verwenden.
  
-## <a name="chapter-3--set-up-the-unity-project"></a>Kapitel 3 – Einrichten des Unity-Projekts
+## <a name="chapter-3--set-up-the-unity-project"></a>Kapitel 3: Einrichten des Unity-Projekts
 
-Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemischter Realität und eine gute Vorlage für andere Projekte.
+Im Folgenden finden Sie eine typische Einrichtung für die Entwicklung mit Mixed Reality und daher eine gute Vorlage für andere Projekte.
 
-1.  Öffnen Sie *Unity* , und klicken Sie auf **neu**. 
+1.  Öffnen Sie *Unity,* und klicken Sie **auf Neu.** 
 
     ![Starten Sie ein neues Unity-Projekt.](images/AzureLabs-Lab3-24.png)
 
-2.  Sie müssen nun einen Unity-Projektnamen angeben und **MR_LUIS** einfügen. Stellen Sie sicher, dass Projekttyp auf **3D** festgelegt ist. Legen Sie den Speicherort auf einen geeigneten **Speicherort** fest (denken Sie daran, dass die Stamm Verzeichnisse besser sind). Klicken Sie dann auf **Projekt erstellen**.
+2.  Sie müssen nun einen Unity-Project angeben und **MR_LUIS.** Stellen Sie sicher, dass der Projekttyp auf **3D festgelegt ist.** Legen Sie **den Speicherort** auf einen für Sie geeigneten Speicherort fest (denken Sie daran, dass die Nähe zu Stammverzeichnissen besser ist). Klicken Sie dann auf **Projekt erstellen.**
 
-    ![Geben Sie Details für ein neues Unity-Projekt an.](images/AzureLabs-Lab3-25.png)
+    ![Geben Sie Details für das neue Unity-Projekt an.](images/AzureLabs-Lab3-25.png)
  
-3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, dass der Standard **Skript-Editor** auf **Visual Studio** festgelegt ist. Wechseln Sie zu Edit > Preferences (Einstellungen bearbeiten), und navigieren Sie dann im neuen Fenster zu **externe Tools**. Ändern Sie den **Editor für externe Skripts** in **Visual Studio 2017**. Schließen Sie das Fenster " **Einstellungen** ".
+3.  Wenn Unity geöffnet ist, sollten Sie überprüfen, ob der **Standardskript-Editor** auf **Visual Studio.** Wechseln Sie zu > Bearbeiten, und navigieren Sie dann im neuen Fenster zu **Externe Tools.** Ändern **Sie den editor für externe** **Skripts in Visual Studio 2017**. Schließen Sie das **Fenster Einstellungen.**
 
     ![Skript-Editor-Einstellung aktualisieren.](images/AzureLabs-Lab3-26.png)
  
-4.  Navigieren Sie als nächstes zu **Datei > Buildeinstellungen** , und schalten Sie die Plattform auf **universelle Windows-Plattform**, indem Sie auf die Schaltfläche **Plattform wechseln** klicken.
+4.  Wechseln Sie als Nächstes zu **Datei > Build Einstellungen** und wechseln Sie zur **universellen Windows-Plattform,** indem Sie auf **die Schaltfläche Plattform wechseln** klicken.
 
-    ![Fenster "Buildeinstellungen", Plattform zu UWP wechseln.](images/AzureLabs-Lab3-27.png)
+    ![Erstellen Einstellungen Fensters, Wechseln der Plattform zu UWP.](images/AzureLabs-Lab3-27.png)
  
-5.  Wechseln Sie zu **Datei > Build-Einstellungen** , und stellen Sie Folgendes sicher:
+5.  Wechseln Sie **zu Datei > Build Einstellungen,** und stellen Sie Sicher, dass:
 
-    1. Das **Zielgerät** ist auf **ein beliebiges Gerät** festgelegt.
+    1. **Zielgerät** ist auf **Beliebiges Gerät festgelegt.**
 
-        > Legen Sie für Microsoft hololens das **Zielgerät** auf *hololens* fest.
+        > Legen Sie für Microsoft HoloLens **Zielgerät auf** *HoloLens.*
 
-    2. Der **Buildtyp** ist auf **D3D** festgelegt.
-    3. **SDK** ist auf **neueste installierte** Version festgelegt.
-    4. **Visual Studio-Version** ist auf **neueste installierte** Version festgelegt.
-    5. **Build und Run** sind auf **lokaler Computer** festgelegt.
-    6. Speichern Sie die Szene, und fügen Sie Sie dem Build hinzu.
+    2. **Buildtyp** ist auf **D3D festgelegt**
+    3. **SDK** ist auf **Latest installed (Neueste installiert) festgelegt.**
+    4. **Visual Studio version** ist auf **Latest installed (Neueste installiert) festgelegt.**
+    5. **Erstellen und Ausführen** ist auf Lokaler **Computer festgelegt.**
+    6. Speichern Sie die Szene, und fügen Sie sie dem Build hinzu.
 
-        1. Wählen Sie hierzu die Option **geöffnete Szenen hinzufügen** aus. Ein Fenster zum Speichern wird angezeigt.
+        1. Wählen Sie hierzu Geöffnete Szenen **hinzufügen aus.** Ein Speicherfenster wird angezeigt.
         
-            ![Klicken Sie auf Schaltfläche "Open Szenen](images/AzureLabs-Lab3-28.png)
+            ![Klicken Sie auf die Schaltfläche "Geöffnete Szenen hinzufügen".](images/AzureLabs-Lab3-28.png)
 
-        2. Erstellen Sie einen neuen Ordner für dieses und jede zukünftige Szene, und wählen Sie dann die Schaltfläche **neuer Ordner** aus, um einen neuen Ordner zu **erstellen.**
+        2. Erstellen Sie einen neuen Ordner für diesen und jede  zukünftige Szene, und wählen Sie dann die Schaltfläche Neuer Ordner aus, um einen neuen Ordner zu erstellen, und nennen Sie **ihn Scenes**.
 
-            ![Neuen Ordner "Skripts" erstellen](images/AzureLabs-Lab3-29.png)
+            ![Erstellen eines neuen Skriptordners](images/AzureLabs-Lab3-29.png)
 
-        3. Öffnen Sie den neu erstellten Ordner **Szenen** , geben Sie im Feld *Dateiname*: Text **MR_LuisScene** ein, und klicken Sie dann auf **Speichern**.
+        3. Öffnen Sie den neu erstellten **Ordner Scenes,** und geben Sie dann im Feld Dateiname *:* Text MR_LuisScene **ein,** und klicken Sie dann **auf Speichern.**
 
-            ![Benennen Sie neue Szene.](images/AzureLabs-Lab3-30.png)
+            ![Benennen Sie die neue Szene.](images/AzureLabs-Lab3-30.png)
 
-    7. Die restlichen Einstellungen in den *Buildeinstellungen* sollten vorerst als Standard belassen werden.
+    7. Die restlichen Einstellungen in *Build Einstellungen* sollten vorerde als Standardeinstellung be übrig bleiben.
 
-6. Klicken Sie im Fenster *Buildeinstellungen* auf die Schaltfläche **Player Einstellungen** . Dadurch wird der entsprechende Bereich in dem Bereich geöffnet, in dem sich der *Inspektor* befindet. 
+6. Klicken Sie *im Fenster Build Einstellungen* auf die Schaltfläche Player **Einstellungen,** um den entsprechenden Bereich in dem Bereich zu öffnen, in dem sich der *Inspektor* befindet. 
 
-    ![Öffnen Sie die Player-Einstellungen.](images/AzureLabs-Lab3-31.png) 
+    ![Öffnen Sie die Playereinstellungen.](images/AzureLabs-Lab3-31.png) 
  
 7. In diesem Bereich müssen einige Einstellungen überprüft werden:
 
-    1. Auf der Registerkarte **andere Einstellungen** :
+    1. Führen Sie **auf Einstellungen** Registerkarte Andere Optionen aus:
 
-        1. Die **Lauf Zeit Version der Skript** Erstellung muss **stabil** sein (.NET 3,5-Entsprechung).
-        2. **Skript** -Back-End sollte **.net** sein
-        3. **API-Kompatibilitäts Grad** sollte **.NET 4,6** lauten
+        1. **Die Skriptlaufzeitversion** sollte **stabil** sein (.NET 3.5 Equivalent).
+        2. **Das Skript-Back-End** sollte **.NET sein.**
+        3. **Der API-Kompatibilitätsgrad** sollte **.NET 4.6 sein.**
 
             ![Aktualisieren Sie andere Einstellungen.](images/AzureLabs-Lab3-32.png)
       
-    2. Überprüfen Sie auf der Registerkarte **Veröffentlichungs Einstellungen** unter **Funktionen** Folgendes:
+    2. Aktivieren Sie **auf Einstellungen** Registerkarte Publishing Einstellungen unter **Capabilities (Funktionen)** die folgenden Optionen:
 
         1. **InternetClient**
         2. **Mikrofon**
 
-            ![Veröffentlichungs Einstellungen werden aktualisiert.](images/AzureLabs-Lab3-33.png)
+            ![Aktualisieren der Veröffentlichungseinstellungen.](images/AzureLabs-Lab3-33.png)
 
-    3. Weiter unten im Bereich in den **XR-Einstellungen** (siehe **Veröffentlichungs Einstellungen**), **unterstützt Tick Virtual Reality**, stellen Sie sicher, dass das **Windows Mixed Reality SDK** hinzugefügt wurde.
+    3. Aktivieren Sie weiter unten im Bereich in **XR Einstellungen** (unter Publish **Einstellungen)** **(Virtual Reality** unterstützt), und stellen Sie sicher, dass das Windows Mixed Reality **SDK** hinzugefügt wird.
 
         ![Aktualisieren Sie die X R-Einstellungen.](images/AzureLabs-Lab3-34.png)
 
-8.  Zurück in *Buildeinstellungen* : _Unity-c#_ -Projekte sind nicht mehr abgeblendet. Aktivieren Sie das Kontrollkästchen neben this. 
+8.  Zurück in *Build Einstellungen* _Unity C#-Projekte_ ist nicht mehr ausgegraut. aktivieren Sie das Kontrollkästchen daneben. 
 9.  Schließen Sie das Fenster „Build Settings“ (Buildeinstellungen).
-10. Speichern Sie Ihre Szene und Ihr Projekt (**Datei > speichern Sie Szenen/Dateien > speichern** Sie das Projekt).
+10. Speichern Sie Ihre Szene und Project (**FILE > SAVE SCENE/FILE > SAVE PROJECT**).
 
-## <a name="chapter-4--create-the-scene"></a>Kapitel 4 – Erstellen der Szene
+## <a name="chapter-4--create-the-scene"></a>Kapitel 4: Erstellen der Szene
 
 > [!IMPORTANT]
-> Wenn Sie die *Unity-Setup* Komponente dieses Kurses überspringen und direkt mit dem Code fortfahren möchten, können Sie dieses [. unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20303%20-%20Natural%20language%20understanding/Azure-MR-303.unitypackage)herunterladen, es als [benutzerdefiniertes Paket](https://docs.unity3d.com/Manual/AssetPackages.html)in Ihr Projekt importieren und dann aus [Kapitel 5](#chapter-5--create-the-microphonemanager-class)fortfahren. 
+> Wenn Sie die Unity Set *up-Komponente* dieses Kurses überspringen und direkt mit dem Code fortfahren möchten, können [](https://docs.unity3d.com/Manual/AssetPackages.html)Sie dieses [UNITYPACKAGE](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20303%20-%20Natural%20language%20understanding/Azure-MR-303.unitypackage)herunterladen, als benutzerdefiniertes Paket in Ihr Projekt importieren und dann mit Kapitel [5](#chapter-5--create-the-microphonemanager-class)fortfahren. 
 
-1.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich des Bereichs *Hierarchie*, und fügen Sie unter **3D-Objekt** eine **Ebene** hinzu.
+1.  Klicken Sie mit der rechten Maustaste in einen leeren Bereich des *Hierarchiebereichs,* und fügen Sie unter **3D-Objekt** eine **Ebene hinzu.**
 
     ![Erstellen Sie eine Ebene.](images/AzureLabs-Lab3-35.png)
 
-2.  Wenn Sie erneut mit der rechten Maustaste in der *Hierarchie* klicken, um weitere Objekte zu erstellen, ist das ausgewählte Objekt das übergeordnete Objekt des neuen Objekts, wenn Sie noch das letzte Objekt ausgewählt haben. Vermeiden Sie dieses Problem, indem Sie auf einen leeren Bereich innerhalb der Hierarchie klicken und dann mit der rechten Maustaste klicken.
+2.  Beachten Sie, dass das ausgewählte  Objekt das übergeordnete Objekt des neuen Objekts ist, wenn Sie mit der rechten Maustaste erneut in die Hierarchie klicken, um weitere Objekte zu erstellen, wenn Sie noch das letzte Objekt ausgewählt haben. Vermeiden Sie dieses Klicken mit der linken Maustaste in einem leeren Bereich innerhalb der Hierarchie, und klicken Sie dann mit der rechten Maustaste.
 
 3.  Wiederholen Sie das oben beschriebene Verfahren, um die folgenden Objekte hinzuzufügen:
 
@@ -402,93 +402,93 @@ Im folgenden finden Sie eine typische Einrichtung für die Entwicklung mit gemis
     3. *Cube*
     4. *3D-Text*
 
-4.  Die resultierende Szenen *Hierarchie* sollte wie in der folgenden Abbildung aussehen:
+4.  Die resultierende *Szenenhierarchie* sollte der Hierarchie in der folgenden Abbildung ähnlich sein:
 
-    ![Einrichtung der Szenen Hierarchie.](images/AzureLabs-Lab3-36.png)
+    ![Einrichtung der Szenenhierarchie.](images/AzureLabs-Lab3-36.png)
  
-5.  Klicken Sie mit der linken Maustaste auf die **Hauptkamera** , um Sie auszuwählen. im *Inspektor-Panel* sehen Sie das Kamera Objekt mit allen zugehörigen Komponenten.
-6.  Klicken Sie auf die Schaltfläche **Komponente hinzufügen** , die sich am unteren Rand des *inspektorbereichs* befindet.
+5.  Klicken Sie mit der linken Maustaste auf  **die Hauptkamera,** um sie auszuwählen. Im Inspektorbereich sehen Sie das Kameraobjekt mit allen Komponenten.
+6.  Klicken Sie ganz **unten im Inspektorbereich** auf die Schaltfläche *Add Component (Komponente hinzufügen).*
 
-    ![Audioquelle hinzufügen](images/AzureLabs-Lab3-37.png)
+    ![Hinzufügen einer Audioquelle](images/AzureLabs-Lab3-37.png)
  
-7.  Suchen Sie nach der Komponente namens *Audioquelle*, wie oben gezeigt.
-8.  Stellen Sie außerdem sicher, dass die *Transformations* Komponente der Hauptkamera auf (0, 0, 0) festgelegt ist. Klicken Sie hierzu auf das **Zahnrad** Symbol neben der *Transformations* Komponente der Kamera und dann auf **Zurücksetzen**. Die *Transformations* Komponente sollte dann wie folgt aussehen:
+7.  Suchen Sie wie oben gezeigt *nach der Komponente Audioquelle.*
+8.  Stellen Sie außerdem sicher, dass die *Komponente* Transformieren der Hauptkamera auf (0,0,0) festgelegt ist. Klicken Sie hierzu auf das Zahnradsymbol neben der Komponente Transformieren der Kamera, und wählen Sie **Zurücksetzen aus.**   Die *Komponente Transformieren* sollte dann wie die folgenden aussehen:
 
-    1.  Die *Position* ist auf **0, 0, 0**(null) festgelegt.
-    2.  *Drehung* ist auf **0, 0, 0** festgelegt.
+    1.  *Position* ist auf **0, 0, 0 festgelegt.**
+    2.  *Die Drehung* ist **auf 0, 0, 0 festgelegt.**
 
     > [!NOTE] 
-    > Für Microsoft hololens müssen Sie auch Folgendes ändern, das Teil der **Kamera** Komponente ist, die sich auf der **Hauptkamera** befindet:
-    > - **Flags löschen:** Voll Tonfarbe.
-    > - **Hintergrund** ' Black, Alpha 0 ' – hexadezimal Farbe: #00000000.
+    > Für die Microsoft HoloLens müssen Sie auch Folgendes ändern, die Teil der **Camera-Komponente** sind, die sich auf Ihrer **Hauptkamera befindet:**
+    > - **Flags löschen:** Volltonfarbe.
+    > - **Hintergrund** 'Schwarz, Alpha 0' – Hexadezimale Farbe: #00000000.
 
-9.  Klicken Sie mit der linken Maustaste auf die **Ebene** , um Sie auszuwählen. Legen Sie im *Inspektor-Panel* die *Transformations* Komponente mit den folgenden Werten fest:
+9.  Klicken Sie mit der linken Maustaste **auf die Ebene,** um sie auszuwählen. Legen Sie *im Inspektorbereich* die *Komponente Transformieren* mit den folgenden Werten fest:
 
     |   X-Achse    | Y-Achse |   Z-Achse    |
     |:-----:|:----------------------:|:-----:|
     | 0     | -1                     | 0     |
 
 
-10. Klicken Sie mit der linken Maustaste auf die **Kugel** , um Sie auszuwählen. Legen Sie im *Inspektor-Panel* die *Transformations* Komponente mit den folgenden Werten fest:
+10. Klicken Sie mit der linken Maustaste **auf die Kugel,** um sie auszuwählen. Legen Sie *im Inspektorbereich* die *Komponente Transformieren* mit den folgenden Werten fest:
 
     |   X-Achse    | Y-Achse |   Z-Achse    |
     |:-----:|:----------------------:|:-----:|
     | 2     | 1                      | 2     |
 
-11. Klicken Sie mit der linken Maustaste auf den **Zylinder** , um ihn auszuwählen. Legen Sie im *Inspektor-Panel* die *Transformations* Komponente mit den folgenden Werten fest:
+11. Klicken Sie mit der linken **Maustaste auf den Zylinder,** um ihn auszuwählen. Legen Sie *im Inspektorbereich* die *Komponente Transformieren* mit den folgenden Werten fest:
 
     |   X-Achse    | Y-Achse |   Z-Achse    |
     |:-----:|:----------------------:|:-----:|
     | -2    | 1                      | 2     |
 
-12. Klicken Sie mit der linken Maustaste auf den **Cube** , um ihn auszuwählen. Legen Sie im *Inspektor-Panel* die *Transformations* Komponente mit den folgenden Werten fest:
+12. Klicken Sie mit der linken Maustaste **auf den Cube,** um ihn auszuwählen. Legen Sie *im Inspektorbereich* die *Komponente Transformieren* mit den folgenden Werten fest:
 
-    |        | Transformation- *Position* |       |  \| |       | Transformation- *Drehung* |       |
+    |        | Transformieren – *Position* |       |  \| |       | Transformieren – *Drehung* |       |
     |:------:|:----------------------:|:-----:|:---:|:-----:|:----------------------:|:-----:|
     | **X** | **J**                   | **Z** |  \| | **X** | **J**                  | **Z** |
     | 0     | 1                       | 4     |  \| | 45    | 45                     | 0     | 
 
-13. Klicken Sie mit der linken Maustaste auf das **neue Text** Objekt, um es auszuwählen. Legen Sie im *Inspektor-Panel* die *Transformations* Komponente mit den folgenden Werten fest:
+13. Klicken Sie mit der linken Maustaste **auf das Objekt Neuer Text,** um es auszuwählen. Legen Sie *im Inspektorbereich* die *Komponente Transformieren* mit den folgenden Werten fest:
 
-    |       | Transformation- *Position* |       |  \| |       | Transformieren: *skalieren* |       |
+    |       | Transformieren – *Position* |       |  \| |       | Transformieren – *Skalieren* |       |
     |:-----:|:----------------------:|:-----:|:---:|:-----:|:-------------------:|:-----:|
     | **X** | **J**                  | **Z** |  \| | **X** | **J**               | **Z** |
-    | -2    | 6                      | 9     |  \| | 0,1   | 0,1                 | 0,1   | 
+    | -2    | 6                      | 9     |  \| | 0.1   | 0.1                 | 0.1   | 
 
-14. Ändern Sie den **Schrift** Grad in der **texmesh** -Komponente in **50**.
-15. Ändern Sie den *Namen* des **textmesh** -Objekts in den **Diktat Text**.
+14. Ändern **Sie den Schriftgrad** in der **Text Mesh-Komponente** in **50.**
+15. Ändern Sie *den Namen* des **Text Mesh-Objekts** in **Dictation Text**.
 
-    ![3D-Text Objekt erstellen](images/AzureLabs-Lab3-38.png)
+    ![Erstellen eines 3D-Textobjekts](images/AzureLabs-Lab3-38.png)
  
-16. Ihre Hierarchie Panel-Struktur sollte nun wie folgt aussehen:
+16. Die Struktur des Hierarchiebereichs sollte nun wie hier aussehen:
 
-    ![textmesh in der Szene Ansicht](images/AzureLabs-Lab3-38b.png)
+    ![Textgitternetz in der Szenenansicht](images/AzureLabs-Lab3-38b.png)
 
 
-17. Die endgültige Szene sollte wie in der folgenden Abbildung aussehen:
+17. Die letzte Szene sollte wie die folgende Abbildung aussehen:
 
-    ![Die Szenen Ansicht.](images/AzureLabs-Lab3-39.png)
+    ![Die Szenenansicht.](images/AzureLabs-Lab3-39.png)
     
  
-## <a name="chapter-5--create-the-microphonemanager-class"></a>Kapitel 5 – Erstellen der Klasse "mikrophonemanager"
+## <a name="chapter-5--create-the-microphonemanager-class"></a>Kapitel 5: Erstellen der MicrophoneManager-Klasse
 
-Das erste Skript, das Sie erstellen, ist die Klasse " *mikrophonemanager* ". Danach erstellen Sie den *luismanager* *, die Behaviour* -Klasse und schließlich die Klasse " *Blick* " (Sie können all diese jetzt erstellen, obwohl Sie in jedem Kapitel behandelt wird).
+Das erste Skript, das Sie erstellen, ist die *MicrophoneManager-Klasse.* Im Anschluss erstellen Sie die *LuisManager-Klasse,* die *Verhaltensklasse* und schließlich die *Gaze-Klasse* (sie können jetzt alle erstellen, obwohl sie behandelt werden, wenn Sie jedes Kapitel erreichen).
 
-Die Klasse " *mikrophonemanager* " ist für Folgendes zuständig:
+Die *MicrophoneManager-Klasse* ist für Folgendes verantwortlich:
 
--   Erkennen des Aufzeichnungs Geräts, das an das Headset oder den Computer angefügt ist (je nachdem, welches der Standard ist).
--   Erfassen Sie das Audiomaterial (Voice), und speichern Sie es als Zeichenfolge.
--   Nachdem die Stimme angehalten wurde, senden Sie die Diktat an die *luismanager* -Klasse. 
+-   Erkennen des Aufzeichnungsgeräts, das an das Headset oder den Computer angeschlossen ist (je nachdem, welches das Standardgerät ist).
+-   Erfassen Sie die Audiodatei (Stimme), und verwenden Sie das Diktat, um sie als Zeichenfolge zu speichern.
+-   Sobald die Stimme angehalten wurde, übermitteln Sie das Diktat an die *LuisManager-Klasse.* 
 
 So erstellen Sie diese Klasse: 
 
-1.  Klicken Sie im *Projekt Panel* mit der rechten Maustaste, und **Erstellen Sie > Ordner**. Nennen Sie die Ordner **Skripts**. 
+1.  Klicken Sie mit der rechten Maustaste in *Project Bereich*, erstellen **> Ordner**. Rufen Sie den Ordner **Scripts auf.** 
 
-    ![Erstellen Sie den Ordner Skripts.](images/AzureLabs-Lab3-40.png)
+    ![Ordner "Skripts erstellen".](images/AzureLabs-Lab3-40.png)
  
-2.  Wenn Sie den Ordner **Skripts** erstellt haben, doppelklicken Sie darauf, um zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste auf, **> c#-Skript zu erstellen**. Nennen Sie das Skript " *mikrophonemanager*". 
+2.  Doppelklicken Sie **nach** dem Erstellen des Ordners Skripts darauf, um ihn zu öffnen. Klicken Sie dann in diesem Ordner mit der rechten Maustaste auf **Create > C#-Skript.** Nennen Sie das *Skript MicrophoneManager*. 
 
-3.  Doppelklicken Sie auf " *mikrophonemanager* ", um die Datei mit *Visual Studio* zu öffnen.
+3.  Doppelklicken Sie auf *MicrophoneManager,* um es mit dem *Visual Studio.*
 4.  Fügen Sie am Anfang der Datei die folgenden Namespaces hinzu:
 
     ```csharp
@@ -496,7 +496,7 @@ So erstellen Sie diese Klasse:
         using UnityEngine.Windows.Speech;
     ```
 
-5.  Fügen Sie dann die folgenden Variablen in der Klasse " *mikrophonemanager* " hinzu:
+5.  Fügen Sie dann die folgenden Variablen in der *MicrophoneManager-Klasse* hinzu:
 
     ```csharp
         public static MicrophoneManager instance; //help to access instance of this object
@@ -504,7 +504,7 @@ So erstellen Sie diese Klasse:
         public TextMesh dictationText; //a UI object used to debug dictation result
     ``` 
 
-6.  Der Code für die Methoden " *Awake ()* " und " *Start ()* " muss nun hinzugefügt werden. Diese werden aufgerufen, wenn die-Klasse initialisiert:
+6.  Code für *die Methoden "Awake()"* und *"Start()"* muss nun hinzugefügt werden. Diese werden aufgerufen, wenn die -Klasse initialisiert wird:
 
     ```csharp
         private void Awake()
@@ -523,7 +523,7 @@ So erstellen Sie diese Klasse:
         }
     ```
  
-7.  Nun benötigen Sie die Methode, die die APP verwendet, um die sprach Erfassung zu starten und anzuhalten, und Sie an die *luismanager* -Klasse weiterzuleiten, die Sie bald erstellen werden. 
+7.  Nun benötigen Sie die Methode, die die App zum Starten und Beenden der Spracherfassung verwendet, und übergeben Sie sie an die *LuisManager-Klasse,* die Sie in Kürze erstellen werden. 
 
     ```csharp
         /// <summary>
@@ -557,7 +557,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-8.  Fügen Sie einen *Diktat Handler* hinzu, der aufgerufen wird, wenn die Stimme angehalten wird. Diese Methode übergibt den Diktat Text an die *luismanager* -Klasse.
+8.  Fügen Sie *einen Diktathandler hinzu,* der aufgerufen wird, wenn die Stimme angehalten wird. Diese Methode überträgt den Diktattext an die *LuisManager-Klasse.*
 
     ```csharp
         /// <summary>
@@ -580,26 +580,26 @@ So erstellen Sie diese Klasse:
     ```
  
     > [!IMPORTANT]
-    > Löschen Sie die *Update ()* -Methode, da Sie von dieser Klasse nicht verwendet wird.
+    > Löschen Sie *die Update()-Methode,* da diese Klasse sie nicht verwendet.
 
-9.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+9.  Achten Sie darauf, dass Sie Ihre Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity zurückkehren.*
 
     > [!NOTE]
-    > An dieser Stelle bemerken Sie einen Fehler, der im *Konsolen Panel des Unity-Editors* angezeigt wird. Dies liegt daran, dass der Code auf die *luismanager* -Klasse verweist, die Sie im nächsten Kapitel erstellen werden.
+    > An diesem Punkt wird im *Unity-Editor-Konsolenbereich ein Fehler angezeigt.* Dies liegt daran, dass der Code auf die *LuisManager-Klasse* verweist, die Sie im nächsten Kapitel erstellen.
 
-## <a name="chapter-6--create-the-luismanager-class"></a>Kapitel 6 – Erstellen der luismanager-Klasse
+## <a name="chapter-6--create-the-luismanager-class"></a>Kapitel 6: Erstellen der LUISManager-Klasse
 
-Es ist an der Zeit, die *luismanager* -Klasse zu erstellen, die den Aufruf an den Azure Luis-Dienst durchführt. 
+Es ist an der Zeit, dass Sie die *LuisManager-Klasse* erstellen, die den Aufruf des Azure LUIS-Diensts durchführen wird. 
 
-Der Zweck dieser Klasse besteht darin, den Diktat Text von der Klasse " *mikrophonemanager* " zu empfangen und an die zu analysierende *Azure-Language Understanding-API* zu senden.
+Der Zweck dieser Klasse ist es, den Diktattext von der *MicrophoneManager-Klasse* zu empfangen und an die *Azure Language Understanding-API* zu senden, die analysiert werden soll.
 
-Diese Klasse deserialisiert die *JSON* -Antwort und ruft die entsprechenden *Methoden der Behaviour-Klasse auf* , um eine Aktion zu initiieren.
+Diese Klasse deserialisiert die *JSON-Antwort* und aufruft die entsprechenden Methoden der *Verhaltensklasse,* um eine Aktion auszulösen.
 
 So erstellen Sie diese Klasse: 
 
-1.  Doppelklicken Sie auf den Ordner " **Scripts** ", um ihn zu öffnen. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Benennen Sie das Skript mit " *luismanager*". 
-3.  Doppelklicken Sie auf das Skript, um es in Visual Studio zu öffnen.
+1.  Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen. 
+2.  Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken Sie **> C#-Skript erstellen.** Nennen Sie das *Skript LuisManager*. 
+3.  Doppelklicken Sie auf das Skript, um es mit dem Visual Studio.
 4.  Fügen Sie am Anfang der Datei die folgenden Namespaces hinzu:
 
     ```csharp
@@ -611,7 +611,7 @@ So erstellen Sie diese Klasse:
         using UnityEngine.Networking;
     ```
 
-5.  Beginnen Sie mit dem Erstellen von drei Klassen **innerhalb** der Klasse " *luismanager* " (innerhalb derselben Skriptdatei oberhalb der Methode " *Start ()* "), die die deserialisierte JSON-Antwort von Azure darstellt.
+5.  Zunächst erstellen Sie drei  Klassen innerhalb der *LuisManager-Klasse* (innerhalb derselben Skriptdatei über der *Start()-Methode),* die die deserialisierte JSON-Antwort von Azure darstellen.
 
     ```csharp
         [Serializable] //this class represents the LUIS response
@@ -643,7 +643,7 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-6.  Fügen Sie als nächstes die folgenden Variablen in der Klasse " *luismanager* " hinzu:
+6.  Fügen Sie als Nächstes die folgenden Variablen in der *LuisManager-Klasse* hinzu:
  
     ```csharp
         public static LuisManager instance;
@@ -652,9 +652,9 @@ So erstellen Sie diese Klasse:
         string luisEndpoint = "https://westus.api.cognitive... add your endpoint from the Luis Portal";
     ```
 
-7.  Stellen Sie sicher, dass Sie Ihren Luis-Endpunkt jetzt platzieren (über Ihr Luis-Portal).
+7.  Stellen Sie sicher, dass Sie Ihren LUIS-Endpunkt jetzt in platzieren (den Sie über Ihr LUIS-Portal haben werden).
 
-8.  Code für die *Awa()* -Methode muss nun hinzugefügt werden. Diese Methode wird aufgerufen, wenn die-Klasse initialisiert:
+8.  Code für die *"Awake()"-Methode* muss nun hinzugefügt werden. Diese Methode wird aufgerufen, wenn die -Klasse initialisiert wird:
 
     ```csharp
         private void Awake()
@@ -664,8 +664,8 @@ So erstellen Sie diese Klasse:
         }
     ```
 
-9.  Nun benötigen Sie die Methoden, die von dieser Anwendung verwendet werden, um die von *der Klasse "* -Klasse" empfangene Diktat an *Luis* zu senden und die Antwort zu empfangen und zu deserialisieren. 
-10. Nachdem der Wert der Absicht und der zugeordneten Entitäten ermittelt wurden, werden Sie an die *Instanz der Behaviour-Klasse über* mittelt, um die beabsichtigte Aktion zu initiieren.
+9.  Nun benötigen Sie die Methoden, die diese Anwendung verwendet, um das von der *MicrophoneManager-Klasse* empfangene Diktat an *LUIS* zu senden und dann die Antwort zu empfangen und zu deserialisieren. 
+10. Nachdem der Wert der Absicht und der zugeordneten Entitäten bestimmt wurde, werden sie an die Instanz der *Verhaltensklasse* übergeben, um die beabsichtigte Aktion auszulösen.
 
     ```csharp
         /// <summary>
@@ -705,7 +705,7 @@ So erstellen Sie diese Klasse:
         }
     ```
  
-11. Erstellen Sie eine neue Methode mit dem Namen *analyseresponcelements ()* , mit der die resultierende *analysedquery* gelesen und die Entitäten bestimmt werden. Nachdem diese Entitäten ermittelt wurden, werden Sie an die *Instanz der Behaviour-Klasse zur* Verwendung in den Aktionen übermittelt.
+11. Erstellen Sie eine neue Methode namens *AnalyseResponseElements(),* die die resultierende *Analyseabfrage* liest und die Entitäten bestimmt. Nachdem diese Entitäten bestimmt wurden, werden sie an die Instanz der *Verhaltensklasse* übergeben, die in den Aktionen verwendet werden soll.
 
     ```csharp
         private void AnalyseResponseElements(AnalysedQuery aQuery)
@@ -766,23 +766,23 @@ So erstellen Sie diese Klasse:
     ```
  
     > [!IMPORTANT]
-    > Löschen Sie die Methoden " *Start ()* " und " *Update ()* ", da Sie von dieser Klasse nicht verwendet werden.
+    > Löschen Sie *die Methoden Start()* und *Update(),* da diese Von dieser Klasse nicht verwendet werden.
 
-12. Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+12. Achten Sie darauf, dass Sie Ihre Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity zurückkehren.*
 
 > [!NOTE]
-> An diesem Punkt sehen Sie mehrere Fehler, die im *Konsolen Panel des Unity-Editors angezeigt* werden. Dies liegt daran, dass der Code auf die *Verhaltens* Klasse verweist, die Sie im nächsten Kapitel erstellen werden.
+> An diesem Punkt werden Sie feststellen, dass im *Unity-Editor-Konsolenbereich mehrere Fehler angezeigt werden.* Dies liegt daran, dass der Code auf die *Verhaltensklasse* verweist, die Sie im nächsten Kapitel erstellen werden.
 
-## <a name="chapter-7--create-the-behaviours-class"></a>Kapitel 7 – Erstellen der Verhaltens Klasse
+## <a name="chapter-7--create-the-behaviours-class"></a>Kapitel 7: Erstellen der Verhaltensklasse
 
-Die *Verhaltens* Klasse löst die Aktionen mithilfe der von der *luismanager* -Klasse bereitgestellten Entitäten aus.
+Die *Verhaltensklasse* löst die Aktionen mithilfe der Entitäten aus, die von der *LuisManager-Klasse bereitgestellt* werden.
 
 So erstellen Sie diese Klasse: 
 
-1.  Doppelklicken Sie auf den Ordner " **Scripts** ", um ihn zu öffnen. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Benennen Sie das Skript *Verhalten*. 
-3.  Doppelklicken Sie auf das Skript, um es in *Visual Studio* zu öffnen.
-4.  Fügen Sie dann die folgenden Variablen in der *Verhaltens* Klasse hinzu:
+1.  Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen. 
+2.  Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken Sie **> C#-Skript erstellen.** Geben Sie dem Skript *den Namen Verhaltensverhalten.* 
+3.  Doppelklicken Sie auf das Skript, um es mit *Visual Studio.*
+4.  Fügen Sie dann die folgenden Variablen in der *Verhaltensklasse* hinzu:
 
     ```csharp
         public static Behaviours instance;
@@ -794,7 +794,7 @@ So erstellen Sie diese Klasse:
         internal GameObject gazedTarget;
     ```
  
-5.  Fügen Sie den *Awa()* -Methoden Code hinzu. Diese Methode wird aufgerufen, wenn die-Klasse initialisiert:
+5.  Fügen Sie den *Methodencode "Awake()"* hinzu. Diese Methode wird aufgerufen, wenn die -Klasse initialisiert wird:
 
     ```csharp
         void Awake()
@@ -804,7 +804,7 @@ So erstellen Sie diese Klasse:
         }
     ```
  
-6.  Die folgenden Methoden werden von der *luismanager* -Klasse aufgerufen (die Sie zuvor erstellt haben), um zu bestimmen, welches Objekt das Ziel der Abfrage ist, und dann die entsprechende Aktion auslöst.
+6.  Die folgenden Methoden werden von der *LuisManager-Klasse* aufgerufen (die Sie zuvor erstellt haben), um zu bestimmen, welches Objekt das Ziel der Abfrage ist, und dann die entsprechende Aktion auszulösen.
 
     ```csharp
         /// <summary>
@@ -866,7 +866,7 @@ So erstellen Sie diese Klasse:
         }
     ```
  
-7.  Fügen Sie die *findtarget ()* -Methode hinzu, um zu bestimmen, welches der *gameobjects* das Ziel der aktuellen Absicht ist. Diese Methode verwendet standardmäßig das als Ziel festgelegte *gameobject* , wenn in den Entitäten kein explizites Ziel definiert ist.
+7.  Fügen Sie *die FindTarget()-Methode* hinzu, um zu bestimmen, welches *der GameObjects* das Ziel der aktuellen Absicht ist. Bei dieser Methode wird das Ziel standardmäßig auf das *GameObject* festgelegt, das "anviert" wird, wenn kein explizites Ziel in den Entitäten definiert ist.
 
     ```csharp
         /// <summary>
@@ -905,19 +905,19 @@ So erstellen Sie diese Klasse:
     ```
  
     > [!IMPORTANT]
-    > Löschen Sie die Methoden " *Start ()* " und " *Update ()* ", da Sie von dieser Klasse nicht verwendet werden.
+    > Löschen Sie *die Methoden Start()* und *Update(),* da diese Von dieser Klasse nicht verwendet werden.
 
-8.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+8.  Achten Sie darauf, dass Sie Ihre Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-8--create-the-gaze-class"></a>Kapitel 8 – Erstellen der "Blick"-Klasse
+## <a name="chapter-8--create-the-gaze-class"></a>Kapitel 8 – Erstellen der Gaze-Klasse
 
-Die letzte Klasse, die Sie zum Durchführen dieser APP benötigen, ist die " *Gaze* "-Klasse. Diese Klasse aktualisiert den Verweis auf das *gameobject-Objekt* , das sich derzeit im visuellen Fokus des Benutzers befindet.
+Die letzte Klasse, die Sie zum Abschließen dieser App benötigen, ist die *Gaze-Klasse.* Diese Klasse aktualisiert den Verweis auf das *GameObject,* das sich derzeit im visuellen Fokus des Benutzers befindet.
 
 So erstellen Sie diese Klasse: 
 
-1.  Doppelklicken Sie auf den Ordner " **Scripts** ", um ihn zu öffnen. 
-2.  Klicken Sie mit der rechten Maustaste in den Ordner **Scripts** , und klicken Sie auf **Create > c#-Skript**. Benennen Sie das *Skript mit* dem Namen. 
-3.  Doppelklicken Sie auf das Skript, um es in *Visual Studio* zu öffnen.
+1.  Doppelklicken Sie auf den **Ordner Skripts,** um ihn zu öffnen. 
+2.  Klicken Sie mit der rechten Maustaste in **den Ordner Skripts,** und klicken Sie **> C#-Skript erstellen.** Nennen Sie das Skript *Gaze*. 
+3.  Doppelklicken Sie auf das Skript, um es mit *Visual Studio.*
 4.  Fügen Sie den folgenden Code für diese Klasse ein:
 
     ```csharp
@@ -964,47 +964,47 @@ So erstellen Sie diese Klasse:
         }
     ```
  
-5.  Stellen Sie sicher, dass Sie die Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity* zurückkehren.
+5.  Achten Sie darauf, dass Sie Ihre Änderungen in *Visual Studio* speichern, bevor Sie zu *Unity zurückkehren.*
 
-## <a name="chapter-9--completing-the-scene-setup"></a>Kapitel 9 – Abschließen der Szenen Einrichtung
+## <a name="chapter-9--completing-the-scene-setup"></a>Kapitel 9: Abschließen der Szeneneinrichtung
 
-1.  Um die Einrichtung der Szene abzuschließen, ziehen Sie jedes Skript, das Sie erstellt haben, aus dem Ordner Scripts auf das **Hauptkamera** Objekt im Bereich *Hierarchie*.
-2.  Wählen Sie die **Hauptkamera** aus, und sehen Sie sich im *Inspektor-Panel* an, dass jedes angefügte Skript angezeigt werden sollte. Sie werden feststellen, dass für jedes Skript Parameter vorhanden sind, die noch festgelegt werden müssen.
+1.  Um die Einrichtung der Szene abzuschließen, ziehen Sie jedes erstellte  Skript aus dem Ordner Skripts auf das Objekt Hauptkamera im *Hierarchiebereich*.
+2.  Wählen Sie **die Hauptkamera** aus, und sehen Sie sich den Inspektorbereich an. Sie sollten jedes angefügte Skript sehen können, und Sie werden feststellen, dass es parameter für jedes Skript gibt, die noch festgelegt werden müssen. 
 
-    ![Die Kamera Verweis Ziele werden festgelegt.](images/AzureLabs-Lab3-41.png)
+    ![Festlegen der Kameraverweisziele.](images/AzureLabs-Lab3-41.png)
 
-3.  Um diese Parameter korrekt festzulegen, befolgen Sie die folgenden Anweisungen:
+3.  Führen Sie die folgenden Anweisungen aus, um diese Parameter richtig zu setzen:
 
-    1. " *Mikrophonemanager*":
+    1. *MicrophoneManager:*
 
-        - Ziehen Sie das **Diktat Text** Objekt aus dem Bereich *Hierarchie* in das Feld **Diktat Text** Parameter value.
+        - Ziehen Sie *im Hierarchiebereich* das **Objekt Dictation Text (Diktattext)** in das Feld Dictation Text parameter value (Wert des **Diktattextparameters).**
 
-    2. *Verhalten* im *Hierarchie Panel*:
+    2. *Verhaltensweisen* aus dem *Hierarchiebereich:*
 
-        - Ziehen Sie das **Sphere** -Objekt in das Feld *Kugel* Verweis Ziel.
-        - Ziehen Sie den **Zylinder** in das Feld *Zylinder* Verweis Ziel.
-        - Ziehen Sie den **Cube** in das Feld *Cube* Reference Target.
+        - Ziehen Sie das **Sphere-Objekt** in das Feld Sphere-Verweisziel. 
+        - Ziehen Sie **den Zylinder** in das Feld Ziel *des Zylinderverweises.*
+        - Ziehen Sie **den Cube** in das *Feld Cubeverweisziel.*
 
-    3. *Blick*:
+    3. *Anvistik:*
 
-        - Legen Sie die *Maximale Länge des Blicks* auf **300** fest (sofern nicht bereits geschehen). 
+        - Legen Sie *die maximale Entfernung anviert* **auf 300** fest (sofern noch nicht vorhanden). 
 
 4.  Das Ergebnis sollte wie in der folgenden Abbildung aussehen:
 
-    ![Die angezeigte Kamera Verweis Ziele werden angezeigt.](images/AzureLabs-Lab3-42.png)
+    ![Kameraverweisziele anzeigen, jetzt festgelegt.](images/AzureLabs-Lab3-42.png)
  
 ## <a name="chapter-10--test-in-the-unity-editor"></a>Kapitel 10 – Testen im Unity-Editor
 
-Testen Sie, ob die Szenen Einrichtung ordnungsgemäß implementiert ist.
+Testen Sie, ob das Szenensetup ordnungsgemäß implementiert ist.
 
 Stellen Sie Folgendes sicher:
 
--   Alle Skripts werden an das **Hauptkamera** Objekt angefügt. 
--   Alle Felder im Hauptbereich der *Kamera Inspektor* sind ordnungsgemäß zugewiesen.
+-   Alle Skripts werden an das **Hauptkameraobjekt** angefügt. 
+-   Alle Felder im Hauptkamerainspektorbereich *sind* ordnungsgemäß zugewiesen.
 
-1.  Klicken Sie im *Unity-Editor* auf die Schaltfläche wieder **Gabe** . Die APP sollte innerhalb des angefügten immersiven Headsets ausgeführt werden.
+1.  Klicken Sie **im Unity-Editor** auf die *Schaltfläche Wiedergabe.* Die App sollte innerhalb des angeschlossenen immersiven Headsets ausgeführt werden.
 
-2.  Probieren Sie einige Äußerungen aus, z. b.:
+2.  Probieren Sie einige Äußerungen aus, z. B.:
 
     ```
     make the cylinder red
@@ -1019,102 +1019,102 @@ Stellen Sie Folgendes sicher:
     ```
 
     > [!NOTE]
-    > Wenn in der Unity-Konsole eine Fehlermeldung angezeigt wird, dass das Standardaudiogerät geändert wird, funktioniert die Szene möglicherweise nicht wie erwartet. Der Grund hierfür ist die Art und Weise, wie das Mixed Reality-Portal mit integrierten Mikrofonen für Headsets umgeht, auf denen es sich befindet. Wenn dieser Fehler angezeigt wird, halten Sie die Szene einfach an, und starten Sie Sie erneut, und die Dinge sollten erwartungsgemäß funktionieren.
+    > Wenn in der Unity-Konsole ein Fehler beim Ändern des Standardaudiogeräts angezeigt wird, funktioniert die Szene möglicherweise nicht wie erwartet. Dies liegt an der Art und Weise, wie das Mixed Reality-Portal mit integrierten Mikrofonen für Headsets handelt, die diese haben. Wenn dieser Fehler angezeigt wird, beenden Sie einfach die Szene, und starten Sie sie erneut, und die Dinge sollten erwartungsgemäß funktionieren.
 
-## <a name="chapter-11--build-and-sideload-the-uwp-solution"></a>Kapitel 11 – erstellen und querladen der UWP-Lösung
+## <a name="chapter-11--build-and-sideload-the-uwp-solution"></a>Kapitel 11: Erstellen und Sideloaden der UWP-Projektmappe
 
 Nachdem Sie sichergestellt haben, dass die Anwendung im Unity-Editor funktioniert, können Sie erstellen und bereitstellen.
 
-So erstellen Sie Folgendes:
+So erstellen Sie:
 
-1.  Speichern Sie die aktuelle Szene, indem Sie auf **Datei > speichern** klicken.
-2.  Wechseln Sie zu **Datei > Buildeinstellungen**.
-3.  Aktivieren Sie das Feld mit dem Namen **Unity c#-Projekte** (nützlich zum Anzeigen und Debuggen des Codes, nachdem das UWP-Projekt erstellt wurde.
-4.  Klicken Sie auf **offene Szenen hinzufügen**, und klicken Sie dann auf **Erstellen**.
+1.  Speichern Sie die aktuelle Szene, indem Sie auf **Datei > speichern.**
+2.  Wechseln Sie **zu Datei > Build Einstellungen**.
+3.  Aktivieren Sie das Kontrollkästchen **Unity C#-Projekte** (nützlich zum Sehen und Debuggen Ihres Codes, sobald das UWP-Projekt erstellt wurde).
+4.  Klicken Sie **auf Open Scenes hinzufügen** und dann auf **Erstellen.**
 
-    ![Fenster mit Buildeinstellungen](images/AzureLabs-Lab3-43.png)
+    ![Fenster Einstellungen Build](images/AzureLabs-Lab3-43.png)
 
-4.  Sie werden aufgefordert, den Ordner auszuwählen, in dem Sie die Projekt Mappe erstellen möchten. 
+4.  Sie werden aufgefordert, den Ordner auszuwählen, in dem Sie die Projektmappe erstellen möchten. 
 
-5.  Erstellen Sie einen Ordner *BUILDS* , und erstellen Sie in diesem Ordner einen anderen Ordner mit einem entsprechenden Namen Ihrer Wahl. 
-6.  Klicken Sie auf **Ordner auswählen** , um den Build an diesem Speicherort zu starten.
+5.  Erstellen Sie *einen ORDNER BUILDS,* und erstellen Sie in diesem Ordner einen weiteren Ordner mit einem geeigneten Namen Ihrer Wahl. 
+6.  Klicken **Sie auf Ordner auswählen,** um den Build an diesem Speicherort zu starten.
  
-    ![Ordner Create Builds ](images/AzureLabs-Lab3-44.png)
-     ![ Select Builds Folder](images/AzureLabs-Lab3-45.png)
+    ![Ordner "Builds ](images/AzureLabs-Lab3-44.png)
+     ![ erstellen" Auswählen des Ordners "Builds"](images/AzureLabs-Lab3-45.png)
  
-7.  Nachdem die Erstellung von Unity abgeschlossen ist (Dies kann einige Zeit in Anspruch nehmen), sollte ein **Datei-Explorer** -Fenster am Speicherort des Builds geöffnet werden.
+7.  Sobald Unity die Erstellung abgeschlossen hat (dies kann einige Zeit dauern), sollte ein **Datei-Explorer-Fenster** am Speicherort Ihres Buildfensters geöffnet werden.
 
-Zum Bereitstellen auf dem lokalen Computer:
+So stellen Sie auf dem lokalen Computer
 
-1.  Öffnen Sie in *Visual Studio* die Projektmappendatei, die im [vorherigen Kapitel](#chapter-10--test-in-the-unity-editor)erstellt wurde.
-2.  Wählen Sie auf der Projektmappenplattform die Option **x86**, **lokaler Computer** aus. 
-3.  Wählen Sie  in der Projektmappenkonfiguration **Debuggen**.
+1.  Öffnen *Visual Studio* die Projektmappendatei, die im vorherigen Kapitel [erstellt wurde.](#chapter-10--test-in-the-unity-editor)
+2.  Wählen Sie **auf der Projektmappenplattform** **x86**, **Lokaler Computer aus.**
+3.  Wählen Sie in **der Projektmappenkonfiguration** **Debuggen aus.**
 
-    > Für Microsoft hololens ist es möglicherweise einfacher, dies auf den *Remote* Computer festzulegen, damit Sie nicht auf Ihren Computer über das Team verfügen. Allerdings müssen Sie auch die folgenden Schritte ausführen:
-    > - Informieren Sie sich über die **IP-Adresse** ihrer hololens, die Sie in den *Einstellungen > Netzwerk & Internet > Wi-Fi > erweiterten Optionen* finden. die IPv4-Adresse ist die Adresse, die Sie verwenden sollten. 
-    > - Stellen Sie sicher, dass der **Entwicklermodus** **auf** dem in den *Einstellungen > Update & Sicherheits > für Entwickler* gefunden.
+    > Für die Microsoft HoloLens ist es möglicherweise einfacher, dies auf *Remotecomputer* zu setzen, damit Sie nicht an Ihren Computer geentert werden. Sie müssen jedoch auch die folgenden Schritte unternehmen:
+    > - Kennen Sie **die IP-Adresse** Ihres HoloLens, die sie im Einstellungen > Network & Internet > Wi-Fi > *Finden.* IPv4 ist die Adresse, die Sie verwenden sollten. 
+    > - Stellen Sie **sicher, dass der Entwicklermodus** **aktiviert ist.** finden Sie *Einstellungen > Update & Security > Für Entwickler.*
 
     ![Bereitstellen der App](images/AzureLabs-Lab3-46.png)
  
-4.  Wechseln Sie zum **Menü Erstellen** , und klicken Sie auf **Lösung** bereitstellen, um die Anwendung auf Ihren Computer zu übertragen.
-5.  Ihre APP sollte nun in der Liste der installierten apps angezeigt werden, damit Sie gestartet werden können.
-6.  Nach dem Start werden Sie von der APP aufgefordert, den Zugriff auf das _Mikrofon_ zu autorisieren. Verwenden Sie die *Bewegungs Controller*, die *Spracheingabe* oder die *Tastatur* , um die Schaltfläche **Ja** zu drücken. 
+4.  Wechseln Sie zum **Menü Erstellen, und** klicken Sie **auf Projektmappe bereitstellen,** um die Anwendung auf Ihren Computer zu laden.
+5.  Ihre App sollte nun in der Liste der installierten Apps angezeigt werden, die zum Start bereit sind!
+6.  Nach dem Start werden Sie von der App aufgefordert, den Zugriff auf das Mikrofon zu _autorisieren._ Verwenden Sie *die Motion Controllers*, oder Voice *Input*, oder die *Tastatur,* um die **Schaltfläche JA zu** drücken. 
 
-## <a name="chapter-12--improving-your-luis-service"></a>Kapitel 12 – verbessern Ihres Luis-Dienstanbieter
+## <a name="chapter-12--improving-your-luis-service"></a>Kapitel 12 – Verbessern ihres LUIS-Diensts
 
 >[!IMPORTANT] 
-> Dieses Kapitel ist äußerst wichtig und muss möglicherweise mehrmals durchlaufen werden, da es zur Verbesserung der Genauigkeit ihres Luis-Dienstanbieter beiträgt: Stellen Sie sicher, dass Sie dies durchführen.
+> Dieses Kapitel ist äußerst wichtig und muss möglicherweise mehrmals durch iteriert werden, da es zur Verbesserung der Genauigkeit Ihres LUIS-Diensts beitragen kann: Stellen Sie sicher, dass Sie dies abschließen.
 
-Um das von Luis bereitgestellte Maß an Verständnis zu verbessern, müssen Sie neue Äußerungen erfassen und diese zum erneuten trainieren ihrer Luis-App verwenden.
+Um das von LUIS bereitgestellte Verständnis zu verbessern, müssen Sie neue Äußerungen erfassen und verwenden, um Ihre LUIS-App neu zu trainieren.
 
-Beispielsweise haben Sie Luis trainiert, um "Zunahme" und "Upsize" zu verstehen, aber möchten Sie nicht, dass Ihre APP auch Wörter wie "vergrößern" versteht?
+Sie haben z. B. LUIS trainiert, "Erhöhen" und "Upsize" zu verstehen, aber möchten Sie nicht, dass Ihre App auch Wörter wie "Vergrößern" versteht?
 
-Nachdem Sie die Anwendung mehrmals verwendet haben, wird alles, was Sie bereits erwähnt haben, von Luis gesammelt und im Luis-Portal verfügbar sein.
+Sobald Sie Ihre Anwendung mehrmals verwendet haben, wird alles, was Sie gesagt haben, von LUIS gesammelt und im LUIS-PORTAL verfügbar.
 
-1.  Wechseln Sie nach diesem [Link](https://www.luis.ai/home)zu ihrer Portal Anwendung, und melden Sie sich an.
-2.  Wenn Sie mit ihren MS-Anmelde Informationen angemeldet sind, klicken Sie auf den *Namen Ihrer APP*.
-3.  Klicken Sie Links auf der Seite auf die Schaltfläche **Endpunkt Äußerungen überprüfen** .
+1.  Wechseln Sie unter diesem LINK zu Ihrer [Portalanwendung,](https://www.luis.ai/home)und melden Sie sich an.
+2.  Nachdem Sie sich mit Ihren MS-Anmeldeinformationen angemeldet haben, klicken Sie auf Ihren *App-Namen.*
+3.  Klicken Sie **links auf der Seite** auf die Schaltfläche Endpunkt-Äußerungen überprüfen.
 
     ![Überprüfen von Äußerungen](images/AzureLabs-Lab3-47.png)
  
-4.  Ihnen wird eine Liste der Äußerungen angezeigt, die von ihrer gemischten Reality-Anwendung an Luis gesendet wurden.
+4.  Ihnen wird eine Liste der Äußerungen angezeigt, die von Ihrer Mixed Reality-Anwendung an LUIS gesendet wurden.
 
     ![Liste der Äußerungen](images/AzureLabs-Lab3-48.png)
  
-Sie werden einige hervorgehobene *Entitäten* bemerken. 
+Sie werden einige hervorgehobene *Entitäten bemerken.* 
 
-Wenn Sie mit dem Mauszeiger auf jedes markierte Wort zeigen, können Sie jede Äußerung überprüfen und bestimmen, welche Entität korrekt erkannt wurde, welche Entitäten falsch sind und welche Entitäten übersehen werden.
+Indem Sie auf jedes hervorgehobene Wort bewegen, können Sie jede Äußerung überprüfen und bestimmen, welche Entität richtig erkannt wurde, welche Entitäten falsch sind und welche Entitäten übersehen werden.
 
-Im obigen Beispiel wurde festgestellt, dass das Wort "Spear" als Ziel hervorgehoben wurde. es ist daher notwendig, den Fehler zu korrigieren, indem Sie mit der Maus auf das Wort zeigen und auf " **Bezeichnung entfernen**" klicken.
+Im obigen Beispiel wurde festgestellt, dass das Wort "spear" als Ziel hervorgehoben wurde. Daher war es erforderlich, den Fehler zu beheben, indem Sie mit der Maus auf das Wort bewegen und auf **Bezeichnung entfernen klicken.**
 
-![Überprüfen, ob das Bezeichnungs Bild "Ausdrucks ](images/AzureLabs-Lab3-49.png)
- ![](images/AzureLabs-Lab3-50.png)
+![Überprüfen von Äußerungen ](images/AzureLabs-Lab3-49.png)
+ ![ Entfernen eines Bezeichnungsbilds](images/AzureLabs-Lab3-50.png)
  
-5.  Wenn Sie Äußerungen gefunden haben, die vollständig falsch sind, können Sie Sie mithilfe der Schaltfläche **Löschen** auf der rechten Seite des Bildschirms löschen.
+5.  Wenn Sie Äußerungen finden, die vollständig falsch sind, können Sie sie mithilfe der Schaltfläche Löschen auf der rechten Seite des Bildschirms löschen. 
 
-    ![Falsche Äußerungen löschen](images/AzureLabs-Lab3-51.png)
+    ![Löschen falscher Äußerungen](images/AzureLabs-Lab3-51.png)
 
-6.  Wenn Sie der Meinung sind, dass Luis die Äußerung ordnungsgemäß interpretiert hat, können Sie das Verständnis überprüfen, indem Sie die Schaltfläche **zur ausgerichteten Absicht hinzufügen** verwenden.
+6.  Wenn Sie der Meinung sind, dass LUIS die Äußerung richtig interpretiert hat, können Sie ihr Verständnis mithilfe der Schaltfläche Add To Aligned Intent (Zu ausgerichteter **Absicht hinzufügen)** überprüfen.
 
-    ![Zu ausgerichtete Absicht hinzufügen](images/AzureLabs-Lab3-52.png)
+    ![Hinzufügen zur ausgerichteten Absicht](images/AzureLabs-Lab3-52.png)
 
-7.  Nachdem Sie alle angezeigten Äußerungen sortiert haben, versuchen Sie, die Seite erneut zu laden, um festzustellen, ob weitere Informationen verfügbar sind.
-8.  Es ist sehr wichtig, diesen Prozess so oft wie möglich zu wiederholen, um das Verständnis Ihrer Anwendungen zu verbessern. 
+7.  Nachdem Sie alle angezeigten Äußerungen sortiert haben, versuchen Sie, die Seite neu zu laden, um zu sehen, ob weitere verfügbar sind.
+8.  Es ist sehr wichtig, diesen Prozess so oft wie möglich zu wiederholen, um Ihr Anwendungsverständnis zu verbessern. 
 
 **Viel Spaß!**
 
-## <a name="your-finished-luis-integrated-application"></a>Ihre beendete Luis-integrierte Anwendung
+## <a name="your-finished-luis-integrated-application"></a>Ihre fertige integrierte LUIS-Anwendung
 
-Herzlichen Glückwunsch, Sie haben eine Mixed Reality-App erstellt, die den Azure Language Understanding Intelligence-Dienst nutzt, um zu verstehen, was ein Benutzer sagt und welche Informationen Sie tun.
+Herzlichen Glückwunsch! Sie haben eine Mixed Reality-App erstellt, die den Azure Language Understanding Intelligence Service nutzt, um zu verstehen, was ein Benutzer sagt, und auf diese Informationen zu handeln.
 
-![Lab-Ergebnis](images/AzureLabs-Lab3-000.png)
+![Labergebnis](images/AzureLabs-Lab3-000.png)
 
 ## <a name="bonus-exercises"></a>Zusatzübungen
 
 ### <a name="exercise-1"></a>Übung 1
 
-Wenn Sie diese Anwendung verwenden, werden Sie möglicherweise bemerken, dass Sie bei der Betrachtung des Floor-Objekts sehen, dass die Farbe geändert wird. Können Sie herausfinden, wie Sie Ihre Anwendung daran hindern, die Bodenfarbe zu ändern?
+Wenn Sie diese Anwendung verwenden, stellen Sie möglicherweise fest, dass dies der Fall ist, wenn Sie auf das Floor-Objekt blicken und bitten, seine Farbe zu ändern. Können Sie herausarbeiten, wie Sie verhindern können, dass Ihre Anwendung die Farbe "Floor" ändert?
 
 ### <a name="exercise-2"></a>Übung 2
 
-Erweitern Sie die Luis-und App-Funktionen, und fügen Sie zusätzliche Funktionen für Objekte in der Szene hinzu. Erstellen Sie z. b. neue Objekte auf dem Blickpunkt, je nachdem, was der Benutzer sagt, und können Sie diese Objekte mit den vorhandenen Befehlen neben den aktuellen Szenen Objekten verwenden.
+Versuchen Sie, die LUIS- und App-Funktionen zu erweitern, und fügen Sie zusätzliche Funktionen für Objekte in der Szene hinzu. Erstellen Sie beispielsweise neue Objekte am Anvits-Trefferpunkt, je nachdem, was der Benutzer sagt, und können sie dann zusammen mit aktuellen Szenenobjekten mit den vorhandenen Befehlen verwenden.

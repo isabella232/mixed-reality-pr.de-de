@@ -1,20 +1,20 @@
 ---
 title: Werkzeugkasten
-description: Übersicht über Tool Box im MRTK
+description: Übersicht über Tool Box in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, MRTK-ToolBox
-ms.openlocfilehash: 7f223d092caa546ffdb91d32ec28c4c9ef827d85
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, MRTK ToolBox
+ms.openlocfilehash: d66d943f4c6c512d6e7e755883fcea4400d848b5d1c205d7f0da48cc6217a5b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175610"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204038"
 ---
 # <a name="toolbox"></a>Werkzeugkasten
 
-Die MRTK-Toolbox ist ein Unity-Editor-Fenster-Hilfsprogramm, mit dem Sie MRTK-Prefab-Komponenten für die BEUX leicht in der aktuellen Szene finden und erstellen können. Elemente können in der Ansicht mithilfe der Suchleiste oben im Fenster gefiltert werden. Das Toolboxfenster ist so konzipiert, dass MRTK-Prefabs in die aktuelle Szene eingesät werden. Es gibt zusätzliche "UX"-Komponenten, die als Skriptkomponenten hinzugefügt werden können, z. B. das Steuerelement [für Begrenzungen](bounds-control.md) oder [Objektmanipulatorsteuerelemente.](object-manipulator.md)
+Die MRTK-Toolbox ist ein Unity-Editor-Fensterhilfsprogramm, mit dem MrTK-UX-Prefabkomponenten leicht in der aktuellen Szene ermittelt und erstellt werden können. Elemente können in der Ansicht mithilfe der Suchleiste am oberen Rand des Fensters gefiltert werden. Das Toolboxfenster wurde entwickelt, um vorgefertigte MRTK-Prefabs in der aktuellen Szene zu erstellen. Es gibt zusätzliche "UX"-Komponenten, die als Skriptkomponenten hinzugefügt werden können, z. B. das [Begrenzungssteuerelement](bounds-control.md) oder [Objektmanipulatorsteuerelemente.](object-manipulator.md)
 
 ![MRTK-Toolbox](../images/Tools/MRTKToolboxWindow.png)
 
@@ -34,7 +34,7 @@ Die Toolbox wird über das Tools-Paket des MRTK verteilt.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Button](button.md) (Schaltfläche)
+- [Schaltfläche](button.md)
 - [Interaktionsfähig](interactable.md)
 - [Schieberegler](sliders.md)
 - [Filmklappe](slate.md)
