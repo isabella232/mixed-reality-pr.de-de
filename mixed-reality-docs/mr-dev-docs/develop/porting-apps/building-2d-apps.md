@@ -1,181 +1,181 @@
 ---
 title: Aktualisieren von 2D UWP-Apps für Windows Mixed Reality
-description: In diesem Artikel wird beschrieben, wie Sie Ihre vorhandene 2D-universelle Windows-Plattform-App auf hololens und Windows Mixed Reality-immersiven Headsets aktualisieren.
+description: In diesem Artikel wird beschrieben, wie Sie Ihre vorhandene 2D Universal Windows Platform-App so aktualisieren, dass sie auf HoloLens immersiven Headsets Windows Mixed Reality wird.
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D-APP, UWP, flatapp, hololens, immersives Headset, App-Modell, Schaltfläche "zurück", App-Leiste, dpi, Auflösung, Skalierung, Portierung, hololens 1. gen, hololens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10
-ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: 2D-App, UWP, flache App, HoloLens, immersives Headset, App-Modell, Zurück-Taste, App-Leiste, DPI, Auflösung, Skalierung, Portierung, HoloLens 1. Generation, HoloLens 2, Mixed Reality-Headset, Windows Mixed Reality-Headset, Migration, Windows 10
+ms.openlocfilehash: 2b0fa403394432f2cec80e44d27804b07934260e60281f5c70b68c7377d3e55e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195989"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>Aktualisieren von 2D UWP-Apps für Windows Mixed Reality
 
-Windows Mixed Reality ermöglicht Ihren Benutzern das Anzeigen von holograms, als ob Sie sich in der physischen und digitalen Welt befinden. Im Kern sind sowohl hololens als auch Desktop-PCs, an die Sie die immersiven Headset-Zubehör anfügen, Windows 10-Geräte. Sie sind in der Lage, fast alle universelle Windows-Plattform-Apps (UWP) im Store als 2D-apps auszuführen.
+Windows Mixed Reality können Ihre Benutzer Hologramme so sehen, als ob sie sich in der physischen und digitalen Welt direkt um sie herum befingen. Im Kern sind sowohl HoloLens Desktop-PCs, an die Sie immersives Headset-Zubehör anfügen, Windows 10 Geräte. Sie können fast alle UWP-Apps (Universal Windows Platform) in der Store 2D-Apps ausführen.
 
-## <a name="creating-a-2d-uwp-app-for-mixed-reality"></a>Erstellen einer 2D-UWP-App für gemischte Realität
+## <a name="creating-a-2d-uwp-app-for-mixed-reality"></a>Erstellen einer 2D-UWP-App für Mixed Reality
 
-Der erste Schritt bei der Einführung einer 2D-app in gemischte Reality-Headsets besteht darin, Ihre APP als standardmäßige 2D-App auf Ihrem Desktop Monitor zu starten.
+Der erste Schritt beim Übertragen einer 2D-App auf Mixed Reality-Headsets besteht im Ausführen Ihrer App als 2D-Standard-App auf Ihrem Desktopmonitor.
 
-### <a name="building-a-new-2d-uwp-app"></a>Neue 2D-UWP-APP wird aufgebaut
+### <a name="building-a-new-2d-uwp-app"></a>Erstellen einer neuen 2D-UWP-App
 
-Um eine neue 2D-App für gemischte Realität zu erstellen, erstellen Sie eine standardmäßige 2D-universelle Windows-Plattform-app (UWP). Es sind keine weiteren App-Änderungen erforderlich, damit diese APP als Slate in gemischter Realität ausgeführt wird.
+Um eine neue 2D-App für Mixed Reality zu erstellen, erstellen Sie eine 2D Universal Windows Platform (UWP)-Standard-App. Es sind keine weiteren App-Änderungen erforderlich, damit diese App dann als Slate in Mixed Reality ausgeführt wird.
 
-Informationen zu den ersten Schritten bei der Erstellung einer 2D-UWP-App finden Sie im Artikel [Erstellen Ihrer ersten App](/windows/uwp/get-started/your-first-app) .
+Informationen zu den ersten Schritte beim Erstellen einer 2D-UWP-App finden Sie im Artikel [Erstellen Ihrer ersten App.](/windows/uwp/get-started/your-first-app)
 
-### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>Einbinden einer vorhandenen 2D Store-App in die UWP
+### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>Verwenden einer vorhandenen 2D-Store-App auf UWP
 
-Wenn Sie bereits über eine 2D-Windows-App im Store verfügen, stellen Sie sicher, dass die Windows 10-universelle Windows-Plattform (UWP) als Ziel verwendet wird. Im folgenden finden Sie alle potenziellen Ausgangspunkte, die Sie möglicherweise mit ihrer Store-App haben:
+Wenn Sie bereits über eine 2D-Windows-App im Store verfügen, stellen Sie sicher, dass sie auf die Windows 10 Universal Windows Platform (UWP) abzielen. Im Folgenden finden Sie alle möglichen Ausgangspunkte, die Sie heute mit Ihrer Store-App haben können:
 <br>
 
-|  Startpunkt  |  Ziel der AppX-Manifest-Plattform  |  Wie wird dies universell gemacht? | 
+|  Startpunkt  |  AppX-Manifestplattformziel  |  Wie wird dies universell? | 
 |----------|----------|----------|
 |  Windows Phone (Silverlight)  |  Silverlight-App-Manifest |  [Migrieren zu WinRT](/previous-versions/windows/apps/dn642486(v=vs.105)) | 
-|  Windows Phone 8,1 universell  |  8,1 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
-|  Windows Store 8  |  8 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
-|  Windows Store 8,1 universell  |  8,1 AppX-Manifest, das kein Platt Form Ziel enthält  |  [Migrieren Sie Ihre APP zum universelle Windows-Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Phone 8.1 Universal  |  8.1 AppX-Manifest ohne Plattformziel  |  [Migrieren Ihrer App zur universellen Windows Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8  |  8 AppX-Manifest ohne Plattformziel  |  [Migrieren Ihrer App zur universellen Windows Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8.1 Universal  |  8.1 AppX-Manifest ohne Plattformziel  |  [Migrieren Ihrer App zur universellen Windows Plattform](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
-Wenn Sie bereits über eine 2D-Unity-App verfügen, die heute als Win32-App auf dem **PC, Mac & eigenständiges** Build-Ziel für Linux erstellt wurde, wechseln Sie zum **universelle Windows-Plattform** Build-Ziel für Mixed Reality.
+Wenn Sie heute über eine 2D-Unity-App **verfügen,** die als Win32-App auf dem PC ( Mac & Linux Standalone Build Target) erstellt wurde, wechseln Sie zum Buildziel der universellen **Windows-Plattform** für Mixed Reality.
 
-Wir erläutern, wie Sie Ihre App mithilfe der [unten stehenden](#publish-and-maintain-your-universal-app)Gerätefamilie Windows. Holographic speziell auf hololens beschränken können.
+Wir werden über Möglichkeiten sprechen, wie Sie Ihre App mithilfe des HoloLens auf Windows. Holographic-Gerätefamilie [unter](#publish-and-maintain-your-universal-app).
 
-### <a name="run-your-2d-app-in-a-windows-mixed-reality-immersive-headset"></a>Ausführen der 2D-app in einem Windows Mixed Reality-immersiven Headset
+### <a name="run-your-2d-app-in-a-windows-mixed-reality-immersive-headset"></a>Ausführen Ihrer 2D-App in einem Windows Mixed Reality immersiven Headset
 
-Wenn Sie Ihre 2D-App auf einem Desktop Computer bereitgestellt und auf dem Monitor ausprobiert haben, können Sie Sie auf einem immersiven Desktop-Headset ausprobieren!
+Wenn Sie Ihre 2D-App auf einem Desktopcomputer bereitgestellt und auf Ihrem Monitor ausprobiert haben, können Sie sie auf einem immersiven Desktop-Headset testen!
 
-Wechseln Sie einfach zum Startmenü im Mixed Reality-Headset, und starten Sie die APP von dort aus. Die Desktopshell und die Holographic Shell verwenden beide denselben UWP-apps, sodass die APP bereits vorhanden sein sollte, nachdem Sie Sie von Visual Studio aus bereitgestellt haben.
+Wechseln Sie einfach zum Startmenü im Mixed Reality-Headset, und starten Sie die App von dort aus. Die Desktopshell und die holografische Shell teilen sich denselben Satz von UWP-Apps, sodass die App bereits vorhanden sein sollte, nachdem Sie die Bereitstellung über Visual Studio.
 
-## <a name="targeting-both-immersive-headsets-and-hololens"></a>Ziel für immersive Headsets und hololens
+## <a name="targeting-both-immersive-headsets-and-hololens"></a>Ziel sind immersive Headsets und HoloLens
 
-Herzlichen Glückwunsch! Ihre APP verwendet jetzt die Windows 10-universelle Windows-Plattform (UWP).
+Herzlichen Glückwunsch! Ihre App verwendet jetzt die Windows 10 Universal Windows Platform (UWP).
 
-Ihre APP ist nun in der Lage, auf den heutigen Windows-Geräten wie Desktop, Mobile, Xbox, Windows Mixed Reality-und Windows-Geräte mit gemischtem Betrieb, hololens und zukünftigen Windows-Geräten ausgeführt werden. Allerdings müssen Sie sicherstellen, dass Ihre APP auf die Windows-Anwendung ausgerichtet ist, damit Sie tatsächlich auf alle diese Geräte abzielen. Universelle Gerätefamilie.
+Ihre App kann jetzt auf den heutigen Windows-Geräten wie Desktop, Mobil, Xbox, Windows Mixed Reality immersive Headsets, HoloLens und zukünftigen geräten ausgeführt Windows werden. Um jedoch alle diese Geräte als Ziel zu verwenden, müssen Sie sicherstellen, dass Ihre App auf die Windows. Universelle Gerätefamilie.
 
-### <a name="change-your-device-family-to-windowsuniversal"></a>Ändern der Gerätefamilie in Windows. Universal
+### <a name="change-your-device-family-to-windowsuniversal"></a>Ändern Sie Ihre Gerätefamilie in Windows. Universal
 
-Wechseln wir nun zu Ihrem AppX-Manifest, um sicherzustellen, dass Ihre Windows 10-UWP-App auf hololens ausgeführt werden kann:
-* Öffnen Sie die Projektmappendatei Ihrer APP mit **Visual Studio** , und navigieren Sie zum App-Paket Manifest.
-* Klicken Sie mit der rechten Maustaste in der Projekt Mappe auf die Datei " **Package. appxmanifest** **", und** wechseln Sie zu<br>
-  !["Package. appxmanifest" in Projektmappen-Explorer](images/openappxmanifest-500px.png)<br>
-* Stellen Sie sicher, dass die Zielplattform Windows ist. Universell im Abschnitt "Abhängigkeiten"
+Lassen Sie uns nun in Ihr AppX-Manifest springen, um sicherzustellen, dass Ihre Windows 10 UWP-App auf dem HoloLens:
+* Öffnen Sie die Projektmappendatei Ihrer App **mit** Visual Studio und navigieren Sie zum App-Paketmanifest.
+* Klicken Sie in Ihrer Projektmappe mit der rechten Maustaste auf die Datei **Package.appxmanifest,** und wechseln Sie **zu Code anzeigen.**<br>
+  ![package.appxmanifest in Projektmappen-Explorer](images/openappxmanifest-500px.png)<br>
+* Stellen Sie sicher, dass Ihre Zielplattform Windows. Universell im Abschnitt "dependencies"
   ```
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
   </Dependencies>
   ```
-* Sicher!
+* Speichern!
 
-Wenn Sie Visual Studio nicht für Ihre Entwicklungsumgebung verwenden, können Sie **AppXManifest.xml** im Text-Editor Ihrer Wahl öffnen, um sicherzustellen, dass Sie die **Windows. Universal** *targetdevicefamily* als Ziel verwenden.
+Wenn Sie Visual Studio für Ihre Entwicklungsumgebung nicht verwenden, können Sie **AppXManifest.xml** im Text-Editor Ihrer Wahl öffnen, um sicherzustellen, dass Sie die **Windows. Universal** *TargetDeviceFamily*.
 
-### <a name="run-in-the-hololens-emulator"></a>Ausführen im hololens-Emulator
+### <a name="run-in-the-hololens-emulator"></a>Führen Sie im HoloLens Emulator
 
-Nun, da ihre UWP-app "Windows. Universal" als Ziel hat, können Sie Ihre APP erstellen und im [hololens-Emulator](../platform-capabilities-and-apis/using-the-hololens-emulator.md)ausführen.
-* Stellen Sie sicher, dass Sie [den hololens-Emulator installiert](../install-the-tools.md)haben.
-* Wählen Sie in Visual Studio die **x86** -Buildkonfiguration für Ihre APP aus.
+Nun, da Ihre UWP-App auf "Windows. Universell" erstellen wir Ihre App und führen sie im [HoloLens Emulator.](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
+* Stellen Sie sicher, dass [Sie die -HoloLens Emulator.](../install-the-tools.md)
+* Wählen Visual Studio die **x86-Buildkonfiguration** für Ihre App aus.
 
   ![x86-Buildkonfiguration in Visual Studio](../platform-capabilities-and-apis/images/x86setting.png)<br>
 * Wählen Sie im Dropdownmenü für das Bereitstellungsziel **HoloLens-Emulator** aus.
 
-  ![Hololens-Emulator in der Liste der Bereitstellungs Ziele](images/deployemulator-500px.png)<br>
-* Wählen Sie **Debuggen > Debugging starten** , um die APP bereitzustellen und das Debugging zu starten
-* Der Emulator startet Ihre APP und führt Sie aus.
-* Wenn Sie über eine Tastatur, eine Maus und einen Xbox-Controller verfügen, platzieren Sie die APP auf der Welt, um Sie zu starten.
+  ![HoloLens Emulator in der Bereitstellungszielliste](images/deployemulator-500px.png)<br>
+* Wählen **Sie Debuggen > Debuggen starten** aus, um Ihre App bereitzustellen und mit dem Debuggen zu beginnen.
+* Der Emulator startet ihre App und führen sie aus.
+* Platzieren Sie Ihre App mit einer Tastatur, maus und einem Xbox-Controller auf der ganzen Welt, um sie zu starten.
 
-  ![Hololens-Emulator mit einem UWP-Beispiel geladen](images/hololensemulatorwithuwpsample-800px.png)<br>
+  ![HoloLens Emulator mit einem UWP-Beispiel geladen](images/hololensemulatorwithuwpsample-800px.png)<br>
 
 ### <a name="next-steps"></a>Nächste Schritte
 
-An diesem Punkt kann eines von zwei Dingen eintreten:
-1. Ihre APP zeigt ihren Begrüßungs Vorgang an und wird gestartet, nachdem Sie im Emulator abgelegt wurde. Prima.
-2. Oder wenn Sie eine ladende Animation für ein 2D Hologram sehen, wird das Laden angehalten, und Ihre APP wird nur auf dem Begrüßungsbildschirm angezeigt. Dies bedeutet, dass etwas schief gelaufen ist, und es wird eine weitere Untersuchung durchgeführt, um zu verstehen, wie Sie Ihre APP in gemischter Realität umsetzen.
+An diesem Punkt kann eine von zwei Dingen geschehen:
+1. Ihre App zeigt ihren Begrüßungsbildschirm an und beginnt mit der Ausführung, nachdem sie in der App platziert Emulator! Prima.
+2. Oder nachdem Sie eine Ladeanimation für ein 2D-Hologramm angezeigt haben, wird das Laden nicht mehr angezeigt, und Ihre App wird nur auf dem Begrüßungsbildschirm angezeigt. Dies bedeutet, dass ein Fehler vor sich gegangen ist, und es wird eine weitere Untersuchung dauern, um zu verstehen, wie Sie Ihre App in der Mixed Reality.
 
-Sie müssen Debuggen, um zum Stamm der möglichen Probleme zu gelangen, die den Start der UWP-App auf hololens beenden.
+Sie müssen debuggen, um zum Stamm der möglichen Probleme zu kommen, die das Starten Ihrer UWP-App HoloLens.
 
-### <a name="running-your-uwp-app-in-the-debugger"></a>Ausführen der UWP-App im Debugger
+### <a name="running-your-uwp-app-in-the-debugger"></a>Ausführen Ihrer UWP-App im Debugger
 
-Diese Schritte führen Sie durch das Debuggen der UWP-App mit dem Visual Studio-Debugger.
-* Wenn Sie dies nicht bereits getan haben, öffnen Sie die Projekt Mappe in Visual Studio. Ändern Sie das Ziel in den **hololens-Emulator** und die Buildkonfiguration in **x86**.
-* Wählen Sie **Debuggen > Debugging starten** , um die APP bereitzustellen und das Debugging zu starten
-* Platzieren Sie die APP mit der Maus, Tastatur oder dem Xbox-Controller auf der ganzen Welt.
-* Visual Studio sollte nun irgendwo in Ihrem app-Code unterbrechen.
-  - Wenn Ihre APP aufgrund eines nicht behandelten Fehlers nicht sofort abstürzen oder in den Debugger wechselt, durchlaufen Sie einen Testdurchlauf der Kern Features Ihrer APP, um sicherzustellen, dass alles ausgeführt wird und funktionsfähig ist. Möglicherweise werden Fehler wie unten dargestellt angezeigt (interne Ausnahmen, die behandelt werden). Um sicherzustellen, dass Sie keine internen Fehler vermissen, die sich auf die APP-Leistung auswirken, führen Sie die automatisierten Tests und Komponententests durch, um sicherzustellen, dass alles wie erwartet funktioniert.
+Diese Schritte führen Sie durch das Debuggen Ihrer UWP-App mithilfe des Visual Studio Debuggers.
+* Wenn Sie dies noch nicht getan haben, öffnen Sie Ihre Lösung in Visual Studio. Ändern Sie das Ziel in die **HoloLens Emulator** und die Buildkonfiguration in **x86.**
+* Wählen **Sie Debuggen > Debuggen starten** aus, um Ihre App bereitzustellen und mit dem Debuggen zu beginnen.
+* Platzieren Sie die App mit der Maus, der Tastatur oder dem Xbox-Controller auf der Ganzen Welt.
+* Visual Studio sollte jetzt an einer anderen Stelle in Ihrem App-Code zu einem Fehler führen.
+  - Wenn Ihre App aufgrund eines nicht behandelten Fehlers nicht sofort abstürzt oder in den Debugger einbricht, führen Sie einen Testlauf der Kernfeatures Ihrer App durch, um sicherzustellen, dass alles ausgeführt wird und funktioniert. Möglicherweise werden Fehler wie unten dargestellt angezeigt (interne Ausnahmen, die behandelt werden). Um sicherzustellen, dass Sie keine internen Fehler übersehen, die sich auf die Benutzererfahrung Ihrer App auswirken, führen Sie Ihre automatisierten Tests und Komponententests durch, um sicherzustellen, dass sich alles wie erwartet verhält.
 
-![Hololens-Emulator mit einem UWP-Beispiel geladen, das eine System Ausnahme anzeigt](images/hololensemulatorwithuwpsampleexception-800px.png)
+![HoloLens Emulator mit einem UWP-Beispiel geladen, das eine Systemausnahme zeigt](images/hololensemulatorwithuwpsampleexception-800px.png)
 
 ## <a name="update-your-ui"></a>Aktualisieren der Benutzeroberfläche
 
-Nun, da ihre UWP-App auf immersiven Headsets und hololens als 2D Hologram ausgeführt wird, werden wir als nächstes sicherstellen, dass Sie sehr schön aussieht. Folgende Punkte sollten berücksichtigt werden:
-* Windows Mixed Reality führt alle 2D-apps mit fester Auflösung und dpi-Wert aus, der 853x480 effektiven Pixeln entspricht. Berücksichtigen Sie, ob Ihr Design in dieser Skala verfeinert werden muss, und überprüfen Sie den unten stehenden Entwurfs Leit Faden, um Ihre Benutzeroberflächen und immersive Headsets zu verbessern.
-* Windows Mixed Reality [unterstützt keine](../../design/app-model.md) 2D-Live Kacheln. Wenn die Kernfunktionalität Informationen zu einer Live-Kachel anzeigt, sollten Sie diese Informationen in Ihre APP zurück verschieben oder [3D-App-Launcher](../../distribute/3d-app-launcher-design-guidance.md)erkunden.
+Da Ihre UWP-App nun auf immersiven Headsets ausgeführt wird und HoloLens 2D-Hologramm verwendet wird, stellen wir als Nächstes sicher, dass es gut aussieht. Folgende Punkte sollten berücksichtigt werden:
+* Windows Mixed Reality werden alle 2D-Apps mit einer festen Auflösung und einem DPI ausgeführt, die 853 x 480 effektive Pixel entspricht. Überlegen Sie, ob Ihr Entwurf in dieser Größenordnung verfeinern muss, und sehen Sie sich die nachstehenden Entwurfsanleitungen an, um Ihre Erfahrung mit HoloLens immersiven Headsets zu verbessern.
+* Windows Mixed Reality [unterstützt keine](../../design/app-model.md) 2D-Livekacheln. Wenn Ihre Kernfunktionalität Informationen auf einer Livekachel zeigt, ziehen Sie in Betracht, diese Informationen wieder in Ihre App zu verschieben oder [3D-App-Startfunktionen zu erkunden.](../../distribute/3d-app-launcher-design-guidance.md)
 
-### <a name="2d-app-view-resolution-and-scale-factor"></a>2D-App-Ansichts Auflösung und Skalierungsfaktor
+### <a name="2d-app-view-resolution-and-scale-factor"></a>Auflösung und Skalierungsfaktor der 2D-App-Ansicht
 
-![Vom reaktionsfähigen Design](images/scale-500px.png)
+![Vom reaktionsschnellen Design](images/scale-500px.png)
 
-Windows 10 verschiebt den gesamten visuellen Entwurf von "Real Screen Pixels" in " **effektive Pixel**". Das heißt, Entwickler entwerfen Ihre Benutzeroberfläche gemäß den Windows 10-Richtlinien für die Benutzeroberfläche für effektive Pixel, und die Windows-Skalierung stellt sicher, dass diese effektiven Pixel die richtige Größe für die Verwendbarkeit über Geräte, Auflösungen, dpi usw. sind. Weitere Informationen finden [Sie auf der MSDN](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) -Website und in dieser buildpräsentation. [](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)
+Windows 10 den visuellen Entwurf von echten Bildschirmpixeln in **effektive Pixel verschiebt.** Das bedeutet, dass Entwickler ihre Benutzeroberfläche nach den Windows 10 Human Interface Guidelines für effektive Pixel entwerfen und die Windows-Skalierung sicherstellt, dass diese effektiven Pixel die richtige Größe für die Benutzerfreundlichkeit für Geräte, Auflösungen, DPI und so weiter haben. Weitere Informationen [finden Sie in diesem großartigen Artikel](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) auf MSDN und in dieser [BUILD-Präsentation.](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)
 
-Auch wenn die einzigartige Möglichkeit besteht, apps in einer Reihe von Entfernungen in ihrer Welt zu platzieren, wird empfohlen, TV-ähnliche Anzeige Abstände zu erzielen, um die beste Lesbarkeit und Interaktion mit Blick und Gesten zu erzielen. Aus diesem Grund zeigt ein virtuelles Slate in der Mixed Reality-Startseite ihre flache UWP-Ansicht an:
+Auch bei der einzigartigen Fähigkeit, Apps in Ihrer Welt in einer Reihe von Entfernungen zu platzieren, werden TV-orientierte Ansichtsentfernungen empfohlen, um die bestmögliche Lesbarkeit und Interaktion mit Anving/Gesten zu erreichen. Daher zeigt eine virtuelle Tafel im Mixed Reality Home Ihre flache UWP-Ansicht an:
 
-**1280X720, 150% dpi** (853x480 effektive Pixel)
+**1280 x 720, 150 % DPI** (853 x 480 effektive Pixel)
 
-Diese Lösung bietet mehrere Vorteile:
-* Dieses effektive Pixel Layout hat ungefähr dieselbe Informationsdichte wie ein Tablet oder ein kleiner Desktop.
-* Sie entspricht dem fixierten dpi-Wert und den effektiven Pixeln für UWP-apps, die auf Xbox One ausgeführt werden, und ermöglicht so Geräte übergreifende nahtlose Geräte
-* Diese Größe sieht gut aus, wenn die Skalierung über die verschiedenen betriebsabstände für apps weltweit hinweg skaliert wird.
+Diese Lösung hat mehrere Vorteile:
+* Dieses effektive Pixellayout hat ungefähr die gleiche Informationsdichte wie ein Tablet oder einen kleinen Desktop.
+* Er entspricht dem festen DPI und den effektiven Pixeln für UWP-Apps, die auf Xbox One ausgeführt werden, wodurch eine nahtlose Geräteerfahrung ermöglicht wird.
+* Diese Größe sieht gut aus, wenn sie über unsere verschiedenen Betriebsentfernungen für Apps auf der Ganzen Welt hinweg skaliert wird.
 
-### <a name="2d-app-view-interface-design-best-practices"></a>bewährte Methoden zum Entwerfen von 2D-App-Ansichten
+### <a name="2d-app-view-interface-design-best-practices"></a>Bewährte Methoden für den Entwurf der 2D-App-Ansichtsschnittstelle
 
-**Können**
-* Befolgen Sie die [Windows 10 Human Interface Guidelines (hig)](https://dev.windows.com/design) für Stile, Schriftgrößen und Schaltflächen Größen. Hololens führt die Arbeit aus, um sicherzustellen, dass Ihre APP über kompatible App-Muster, lesbare Textgrößen und geeignete Treffer Zielgrößen verfügt.
-* Stellen Sie sicher, dass Ihre Benutzeroberfläche die bewährten Methoden für das [reaktionsfähige Design](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) befolgt, um die einzigartige Auflösung und den dpi-Wert von Hol
-* Verwenden Sie die "Light"-Farbdesign Empfehlungen von Windows.
+**tun:**
+* Befolgen Sie die [Windows 10 Human Interface Guidelines (HIG)](https://dev.windows.com/design) für Stile, Schriftgrade und Schaltflächengrößen. HoloLens übernimmt die Arbeit, um sicherzustellen, dass Ihre App über kompatible App-Muster, lesbare Textgrößen und eine geeignete Trefferzielgröße verfügen wird.
+* Stellen Sie sicher, dass Ihre Benutzeroberfläche bewährte Methoden für [reaktionsfähiges Design](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) befolgt, um die eindeutige Auflösung und DPI HoloLens optimal zu betrachten.
+* Verwenden Sie die Empfehlungen für helle Farbdesigns aus Windows.
 
 **Tue nicht:**
-* Ändern Sie die Benutzeroberfläche in gemischter Realität zu stark, um sicherzustellen, dass Benutzer über eine vertraute Benutzeroberfläche verfügen.
+* Ändern Sie Ihre Benutzeroberfläche in Mixed Reality zu drastisch, um sicherzustellen, dass Benutzer ein- und aus dem Headset vertraut sind.
 
 ### <a name="understand-the-app-model"></a>Grundlegendes zum App-Modell
 
-Das [App-Modell](../../design/app-model.md) für Mixed Reality ist für die Verwendung der Mixed Reality-Startseite konzipiert, in der viele apps miteinander verbunden sind. Stellen Sie sich dies als das Mixed Reality-Äquivalent des Desktops vor, in dem Sie viele 2D-apps gleichzeitig ausführen. Dies hat Auswirkungen auf den Lebenszyklus von apps, Kacheln und andere wichtige Features Ihrer APP.
+Das [App-Modell](../../design/app-model.md) für Mixed Reality ist für die Verwendung des Mixed Reality Home konzipiert, in dem viele Apps zusammen leben. Stellen Sie sich dies als Mixed Reality-Entsprechung des Desktops vor, auf dem Sie viele 2D-Apps gleichzeitig ausführen. Dies hat Auswirkungen auf den App-Lebenszyklus, Kacheln und andere wichtige Features Ihrer App.
 
-### <a name="app-bar-and-back-button"></a>App-Leiste und zurück-Schaltfläche
+### <a name="app-bar-and-back-button"></a>App-Leiste und Schaltfläche "Zurück"
 
-2D-Ansichten werden mit einer APP-Leiste oberhalb ihres Inhalts ergänzt. Die APP-Leiste verfügt über zwei Punkte der APP-spezifischen Personalisierung:
+2D-Ansichten werden mit einer App-Leiste über ihrem Inhalt versehen. Die App-Leiste verfügt über zwei Punkte der app-spezifischen Personalisierung:
 
-**Title:** zeigt den *Display Name* der der app-Instanz zugeordneten Kachel an.
+**Titel:** Zeigt den *Anzeigenamen* der Kachel an, die der App-Instanz zugeordnet ist.
 
-**Zurück-Schaltfläche:** löst beim Drücken das *[Rück](/uwp/api/Windows.UI.Core.SystemNavigationManager)* gerufene Ereignis aus. Die Sichtbarkeit der Schaltfläche "zurück" wird durch *[systemnavigationmanager. appviewbackbuttonvisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)* gesteuert.
+**Schaltfläche "Zurück":** Löst das *[BackRequested-Ereignis](/uwp/api/Windows.UI.Core.SystemNavigationManager)* aus, wenn gedrückt wird. Die Sichtbarkeit der Zurück-Schaltfläche wird durch *[SystemNavigationManager.AppViewBackButtonVisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)* gesteuert.
 
-![Benutzeroberfläche der APP-Leiste in der 2D-App](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
-*Benutzeroberfläche der APP-Leiste in der 2D-App*
+![Benutzeroberfläche der App-Leiste in der 2D-App-Ansicht](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
+*Benutzeroberfläche der App-Leiste in der 2D-App-Ansicht*
 
 ### <a name="test-your-2d-apps-design"></a>Testen des Entwurfs Ihrer 2D-App
 
-Es ist wichtig, Ihre APP zu testen, um sicherzustellen, dass der Text lesbar ist, die Schaltflächen targetable sind und die gesamte App korrekt aussieht. Sie können auf einem Desktop-Headset, hololens, einem Emulator oder einem Fingerabdruck Gerät [Testen](../platform-capabilities-and-apis/testing-your-app-on-hololens.md) , bei dem die Auflösung auf 1280x 720% festgelegt ist @150 .
+Es ist wichtig, Ihre App zu testen, um sicherzustellen, dass der Text lesbar ist, die Schaltflächen als Ziel angezeigt werden können und die App insgesamt richtig aussieht. Sie [](../platform-capabilities-and-apis/testing-your-app-on-hololens.md) können tests auf einem Desktop-Headset, einem HoloLens, einem Emulator oder einem Touchgerät mit einer Auflösung von 1280 x 720 % @150 durchführen.
 
 ## <a name="new-input-possibilities"></a>Neue Eingabemöglichkeiten
 
-Hololens verwendet erweiterte tiefen Sensoren, um die Welt anzuzeigen und Benutzer anzuzeigen. Dies ermöglicht erweiterte Handgesten wie z. b. [Bloom](../../design/system-gesture.md#bloom) und [Luft tippen](../../design/gaze-and-commit.md#composite-gestures). Leistungsstarke Mikrofone ermöglichen auch [Spracherfahrung](../../design/voice-input.md).
+HoloLens verwendet erweiterte Tiefensensoren, um die Welt zu sehen und Benutzer zu sehen. Dies ermöglicht erweiterte Handgesten wie [z.B. Licht](../../design/system-gesture.md#bloom) und [Tippen in die Luft.](../../design/gaze-and-commit.md#composite-gestures) Leistungsstarke Mikrofone ermöglichen auch [Spracherlebnisse.](../../design/voice-input.md)
 
-Mit Desktop-Headsets können Benutzer Bewegungs Controller verwenden, um auf apps zu verweisen und Maßnahmen zu ergreifen. Sie können auch einen Gamepad verwenden, der auf Objekte mit dem Blick abzielt.
+Mit Desktop-Headsets können Benutzer Motion-Controller verwenden, um auf Apps zu zeigen und Maßnahmen zu ergreifen. Sie können auch ein Gamepad verwenden, um Objekte mit ihrem Anvisieren anvisieren zu können.
 
-Windows kümmert sich um all diese Komplexität für UWP-apps und übersetzt Ihren [Blick](../../design/gaze-and-commit.md), Gesten, Stimme und Bewegungs Controller Eingaben in [Zeiger Ereignisse](/windows/uwp/design/input/handle-pointer-input#pointer_events) , die den Eingabe Mechanismus abstrahieren. Ein Benutzer hat z. b. möglicherweise eine Luft tippen oder den SELECT-Auslösevorgang auf einem Motion Controller abgerufen, aber 2D-Anwendungen müssen nicht wissen, woher die Eingabe stammt. es wird nur ein 2D-touchpress angezeigt, wie bei einem Touchscreen.
+Windows übernimmt all diese Komplexität für UWP-Apps und übersetzt Ihre [Eingaben für Anvisierung,](../../design/gaze-and-commit.md)Gesten, Stimme und Motion Controller in [Zeigerereignisse,](/windows/uwp/design/input/handle-pointer-input#pointer_events) die den Eingabemechanismus abstrahieren. Ein Benutzer hat z. B. möglicherweise mit der Hand in die Luft tippen oder den Select-Trigger auf einem Motion-Controller gezogen, aber 2D-Anwendungen müssen nicht wissen, woher die Eingabe stammt. Sie sehen lediglich eine 2D-Toucheingabe, als ob sie sich auf einem Touchscreen befänden.
 
-Im folgenden finden Sie die grundlegenden Konzepte und Szenarios, die Sie für die Eingabe verstehen sollten, wenn Sie Ihre UWP-app in hololens bringen:
-* Der [Blick](../../design/gaze-and-commit.md) wandelt sich in Hover-Ereignisse um, die unerwartet Menüs, Flyouts oder andere Elemente der Benutzeroberfläche aufklappen können, um nur durch das Überprüfen der APP herum zu navigieren.
-* Der Blick ist nicht so präzise wie Maus Eingaben. Verwenden Sie für hololens entsprechend große Treffer Ziele, ähnlich wie bei mobilen Anwendungen mit Touchscreen. Kleine Elemente in der Nähe der Kanten der APP sind besonders schwer zu interagieren.
-* Benutzer müssen die Eingabemodi wechseln, damit Sie vom Bildlauf zu Drag & Drop auf zwei Finger schwenken wechseln können. Wenn Ihre APP für Touch-Eingaben konzipiert wurde, sollten Sie sicherstellen, dass keine größeren Funktionen hinter zwei Finger schwenken gesperrt sind. Wenn dies der Fall ist, sollten Sie über alternative Eingabe Mechanismen wie Schaltflächen verfügen, die zwei Finger schwenken starten können. Beispielsweise kann die Maps-APP mit zwei Finger schwenken vergrößert werden, verfügt aber über eine Plus-, minus-und Drehungs Schaltfläche, um die gleichen Zoom Interaktionen mit nur einem Mausklick zu simulieren.
+Im Folgenden finden Sie die grundlegenden Konzepte/Szenarien, die Sie für die Eingabe verstehen sollten, wenn Sie Ihre UWP-App HoloLens:
+* [Das Anvieren](../../design/gaze-and-commit.md) wird zu Hoverereignissen, die unerwartet Menüs, Flyouts oder andere Elemente der Benutzeroberfläche auslösen können, um einfach durch das Umdrehen Ihrer App aufzublenden.
+* Das Anvisieren ist nicht so präzise wie die Mauseingabe. Verwenden Sie trefferziele mit entsprechender Größe für HoloLens, ähnlich wie touchfreundliche mobile Anwendungen. Kleine Elemente in der Nähe der Ränder der App sind besonders schwierig zu interagieren.
+* Benutzer müssen die Eingabemodi wechseln, um vom Scrollen zum Ziehen auf das Schwenken mit zwei Fingern zu wechseln. Wenn Ihre App für Toucheingaben konzipiert wurde, sollten Sie sicherstellen, dass keine größeren Funktionen hinter dem Schwenken mit zwei Fingern gesperrt sind. In diesem Falle sollten Sie alternative Eingabemechanismen wie Schaltflächen in Betracht ziehen, die mit zwei Fingern beginnen können. Beispielsweise kann die Karten-App mit zwei Fingern zoomen, verfügt aber über die Schaltfläche "Plus", "Minus" und "Drehen", um die gleichen Zoominteraktionen mit nur einem Klick zu simulieren.
 
-[Spracheingaben](../../design/voice-input.md) sind ein wichtiger Bestandteil der gemischten Realität. Wir haben alle sprach-APIs in Windows 10 aktiviert, die Cortana verwenden, wenn Sie ein Headset verwenden.
+[Die Spracheingabe](../../design/voice-input.md) ist ein wichtiger Bestandteil der Mixed Reality-Erfahrung. Wir haben alle Sprach-APIs aktiviert, die sich in Windows 10 Cortana befinden, wenn ein Headset verwendet wird.
 
-## <a name="publish-and-maintain-your-universal-app"></a>Veröffentlichen und verwalten Sie Ihre universelle App
+## <a name="publish-and-maintain-your-universal-app"></a>Veröffentlichen und Verwalten Ihrer universellen App
 
-Sobald Ihre APP ausgeführt wird, Verpacken Sie Ihre APP, um [Sie an den Microsoft Store zu senden](../../distribute/submitting-an-app-to-the-microsoft-store.md).
+Sobald Ihre App ausgeführt wird, packen Sie Ihre App, um [sie an den Microsoft Store zu übermitteln.](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [App-Modell](../../design/app-model.md)
 * [Anvisieren mit dem Kopf und Ausführen](../../design/gaze-and-commit.md)
 * [Motion-Controller](../../design/motion-controllers.md)

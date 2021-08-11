@@ -1,50 +1,50 @@
 ---
-title: Foto-Video Kamera in Unity
-description: Erfahren Sie, wie Sie ein Foto in einer Datei oder einem Texture2D aufzeichnen, wie Sie ein Foto erfassen und mit den Rohdaten Bytes interagieren und wie Sie ein Video erfassen.
+title: Foto-/Videokamera in Unity
+description: Erfahren Sie, wie Sie ein Foto in einer Datei oder in einer Texture2D erfassen, wie Sie ein Foto erfassen und mit den unformatierten Bytes interagieren und wie Sie ein Video aufnehmen.
 author: keveleigh
 ms.author: v-hferrone
 ms.date: 03/21/2021
 ms.topic: article
-keywords: Foto, Video, hololens, Kamera, Unity, loerable, PVC, Foto Videokamera, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Webcam, Foto Erfassung, Video Erfassung
-ms.openlocfilehash: 1cae796a793036ed59c1d0805df76cb8ac143027
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+keywords: Foto, Video, Hololens, Kamera, Unity, Locatable, PVC, Fotovideokamera, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Webcam, Fotoaufnahme, Videoaufnahme
+ms.openlocfilehash: 4fdf895e6b2b7ed1fc051b45b07ce49052f8a95587178caddfc71a0cfd364eee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193504"
 ---
-# <a name="photo-video-camera-in-unity"></a>Foto-Video Kamera in Unity
+# <a name="photo-video-camera-in-unity"></a>Foto-/Videokamera in Unity
 
-## <a name="enabling-the-capability-for-camera-access"></a>Aktivieren der Funktion für den Kamera Zugriff
+## <a name="enabling-the-capability-for-camera-access"></a>Aktivieren der Funktion für den Kamerazugriff
 
-Die "Webcam"-Funktion muss für eine APP deklariert werden, um die [Kamera](../platform-capabilities-and-apis/locatable-camera.md)zu verwenden.
+Die Funktion "WebCam" muss deklariert werden, damit eine App die [Kamera](../platform-capabilities-and-apis/locatable-camera.md)verwenden kann.
 
-1. Navigieren Sie im Unity-Editor zu den Player Einstellungen, indem Sie zur Seite "> Projekteinstellungen bearbeiten > Player" navigieren.
+1. Navigieren Sie im Unity-Editor zu den Playereinstellungen, indem Sie zur Seite "> Project Einstellungen > Player bearbeiten" navigieren.
 2. Wählen Sie die Registerkarte "Windows Store" aus.
-3. Überprüfen Sie im Abschnitt "Veröffentlichungs Einstellungen > Funktionen" die Funktionen für **Webcam** und **Mikrofon** .
+3. Überprüfen Sie im Abschnitt "Veröffentlichung Einstellungen > Funktionen" die Funktionen **WebCam** und **Mikrofon.**
 
-Nur ein einzelner Vorgang kann gleichzeitig mit der Kamera erfolgen. Sie können überprüfen, in welchem Modus sich die Kamera derzeit in `UnityEngine.XR.WSA.WebCam.Mode` Unity 2018 und früher oder `UnityEngine.Windows.WebCam.Mode` in Unity 2019 und höher befindet. Verfügbare Modi sind Foto, Video oder None.
+Es kann nur ein einzelner Vorgang gleichzeitig mit der Kamera ausgeführt werden. Sie können überprüfen, in welchem Modus sich die Kamera derzeit `UnityEngine.XR.WSA.WebCam.Mode` in Unity 2018 und früher oder `UnityEngine.Windows.WebCam.Mode` in Unity 2019 und höher befindet. Verfügbare Modi sind Foto, Video oder keine.
 
-## <a name="photo-capture"></a>Foto Erfassung
+## <a name="photo-capture"></a>Fotoaufnahme
 
-**Namespace (vor Unity 2019):** *unityengine. XR. WSA. Webcam*<br>
-**Namespace (Unity 2019 und höher):** *unityengine. Windows. Webcam*<br>
-**Typ:** *photocapture*
+**Namespace (vor Unity 2019):** *UnityEngine.XR.WSA.WebCam*<br>
+**Namespace (Unity 2019 und höher):** *UnityEngine.Windows. WebCam*<br>
+**Typ:** *PhotoCapture*
 
-Mit dem Typ *photocapture* können Sie weiterhin Fotos mit der Foto Video Kamera aufnehmen. Das allgemeine Muster für die Verwendung von *Photo Capture* für die Aufnahme eines Fotos sieht wie folgt aus:
+Mit dem *PhotoCapture-Typ* können Sie noch Fotos mit der Fotovideokamera aufnehmen. Das allgemeine Muster für die Verwendung von *PhotoCapture* zum Aufnehmen eines Fotos lautet wie folgt:
 
-1. Erstellen eines *photocapture* -Objekts
-2. Erstellen Sie ein " *cameraparameters* "-Objekt mit den gewünschten Einstellungen.
-3. Foto Modus über " *startphotomodeasync* " starten
-4. Nehmen Sie das gewünschte Foto
-    * optionale Mit diesem Bild interagieren
-5. Foto Modus abbrechen und Ressourcen bereinigen
+1. Erstellen eines *PhotoCapture-Objekts*
+2. Erstellen eines *CameraParameters-Objekts* mit den gewünschten Einstellungen
+3. Starten des Fotomodus über *StartPhotoModeAsync*
+4. Aufnehmen des gewünschten Fotos
+    * (optional) Interagieren mit diesem Bild
+5. Beenden des Fotomodus und Bereinigen von Ressourcen
 
-### <a name="common-set-up-for-photocapture"></a>Allgemeine Einrichtung für photocapture
+### <a name="common-set-up-for-photocapture"></a>Allgemeine Einrichtung für PhotoCapture
 
-Beginnen Sie für alle drei Verwendungszwecke mit denselben ersten drei Schritten.
+Beginnen Sie für alle drei Verwendungen mit den gleichen ersten drei Schritten oben.
 
-Beginnen Sie mit dem Erstellen eines *photocapture* -Objekts.
+Erstellen Sie zunächst ein *PhotoCapture-Objekt.*
 
 ```cs
 private void Start()
@@ -53,7 +53,7 @@ private void Start()
 }
 ```
 
-Speichern Sie anschließend das Objekt, legen Sie die Parameter fest, und starten Sie den Photo-Modus.
+Speichern Sie als Nächstes Ihr Objekt, legen Sie Ihre Parameter fest, und starten Sie den Fotomodus.
 
 ```cs
 private PhotoCapture photoCaptureObject = null;
@@ -74,7 +74,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
 }
 ```
 
-Am Ende verwenden Sie auch denselben Bereinigungs Code, der hier vorgestellt wird.
+Am Ende verwenden Sie auch den gleichen Bereinigungscode, der hier dargestellt wird.
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -84,13 +84,13 @@ void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-Nachdem Sie diese Schritte ausgeführt haben, können Sie den Typ des zu erfassenden Fotos auswählen.
+Nach diesen Schritten können Sie auswählen, welche Art von Foto aufgenommen werden soll.
 
 ### <a name="capture-a-photo-to-a-file"></a>Aufnehmen eines Fotos in einer Datei
 
-Der einfachste Vorgang besteht darin, ein Foto direkt in einer Datei zu erfassen. Das Foto kann als jpg oder PNG gespeichert werden.
+Der einfachste Vorgang besteht darin, ein Foto direkt in einer Datei zu erfassen. Das Foto kann als JPG oder PNG gespeichert werden.
 
-Wenn Sie den Foto Modus erfolgreich gestartet haben, erstellen Sie ein Foto, und speichern Sie es auf dem Datenträger
+Wenn Sie den Fotomodus erfolgreich gestartet haben, nehmen Sie ein Foto auf, und speichern Sie es auf dem Datenträger.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -109,7 +109,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-Beenden Sie nach dem Erfassen des Fotos auf dem Datenträger den Photo-Modus, und bereinigen Sie die Objekte.
+Nachdem Sie das Foto auf dem Datenträger erfasst haben, beenden Sie den Fotomodus, und bereinigen Sie ihre Objekte.
 
 ```cs
 void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
@@ -126,13 +126,13 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-### <a name="capture-a-photo-to-a-texture2d-with-location"></a>Erfassen eines Fotos für eine Texture2D mit einem Speicherort
+### <a name="capture-a-photo-to-a-texture2d-with-location"></a>Aufnahme eines Fotos in einer Texture2D mit Position
 
-Beim Erfassen von Daten in einem Texture2D ähnelt der Prozess der Erfassung auf dem Datenträger.
+Beim Erfassen von Daten in einer Texture2D ähnelt der Vorgang der Erfassung auf dem Datenträger.
 
-Befolgen Sie den obigen Setup Vorgang.
+Führen Sie den oben beschriebenen Setupprozess aus.
 
-Erfassen Sie in *onphotomodestarted* einen Frame im Speicher.
+Erfassen Sie in *OnPhotoModeStarted* einen Frame im Arbeitsspeicher.
 
 ```cs
 private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
@@ -148,7 +148,7 @@ private void OnPhotoModeStarted(PhotoCapture.PhotoCaptureResult result)
 }
 ```
 
-Anschließend wenden Sie das Ergebnis auf eine Textur an und verwenden den oben aufgeführten allgemeinen Bereinigungs Code.
+Anschließend wenden Sie Ihr Ergebnis auf eine Textur an und verwenden den oben aufgeführten allgemeinen Bereinigungscode.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -169,7 +169,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 #### <a name="locatable-camera"></a>Ausrichtbare Kamera
 
-Um diese Textur in der Szene zu platzieren und mithilfe der abzurufbaren Kamera Matrizen anzuzeigen, fügen Sie in der Überprüfung den folgenden Code zu *oncapturedphototomemory* hinzu `result.success` :
+Um diese Textur in der Szene zu platzieren und mithilfe der locatable-Kameramatrizen anzuzeigen, fügen Sie *onCapturedPhotoToMemory* in der Überprüfung den folgenden Code `result.success` hinzu:
 
 ```cs
 if (photoCaptureFrame.hasLocationData)
@@ -183,13 +183,13 @@ if (photoCaptureFrame.hasLocationData)
 }
 ```
 
-[Unity hat Beispielcode](https://forum.unity.com/threads/holographic-photo-blending-with-photocapture.416023/?_ga=2.57872105.210548785.1614215615-862490274.1597860099) zum Anwenden der Projektions Matrix auf einen bestimmten Shader in ihren Foren bereitgestellt.
+[Unity hat Beispielcode](https://forum.unity.com/threads/holographic-photo-blending-with-photocapture.416023/?_ga=2.57872105.210548785.1614215615-862490274.1597860099) zum Anwenden der Projektionsmatrix auf einen bestimmten Shader in ihren Foren bereitgestellt.
 
-### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Fotos erfassen und mit den Rohdaten Bytes interagieren
+### <a name="capture-a-photo-and-interact-with-the-raw-bytes"></a>Aufnehmen eines Fotos und Interagieren mit den unformatierten Bytes
 
-Wenn Sie mit den unformatierten Bytes eines in-Memory-Frames interagieren möchten, führen Sie die gleichen Einrichtungsschritte wie oben und *onphotomodestarted* aus, wie bei der Erfassung eines Fotos für eine Texture2D. Der Unterschied liegt in *oncapturedphototomemory* , wo Sie die Rohdaten Bytes erhalten und mit ihnen interagieren können.
+Um mit den unformatierten Bytes eines im Speicherrahmen zu interagieren, führen Sie die gleichen Einrichtungsschritte wie oben und *OnPhotoModeStarted* wie beim Erfassen eines Fotos in einer Texture2D aus. Der Unterschied besteht in *OnCapturedPhotoToMemory,* wo Sie die unformatierten Bytes abrufen und mit ihnen interagieren können.
 
-In diesem Beispiel erstellen Sie eine *Liste <Color>* , die weiterverarbeitet oder über *setPixels ()* auf eine Textur angewendet werden soll.
+In diesem Beispiel erstellen Sie über *SetPixels()* eine *Liste, <Color>* die weiter verarbeitet oder auf eine Textur angewendet werden soll.
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)
@@ -222,22 +222,22 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 }
 ```
 
-## <a name="video-capture"></a>Video Erfassung
+## <a name="video-capture"></a>Videoaufnahme
 
-**Namespace (vor Unity 2019):** *unityengine. XR. WSA. Webcam*<br>
-**Namespace (Unity 2019 und höher):** *unityengine. Windows. Webcam*<br>
-**Typ:** *Videocapture*
+**Namespace (vor Unity 2019):** *UnityEngine.XR.WSA.WebCam*<br>
+**Namespace (Unity 2019 und höher):** *UnityEngine.Windows. WebCam*<br>
+**Typ:** *VideoCapture*
 
-*Videocapture* funktioniert ähnlich wie bei *photocapture*. Die einzigen beiden Unterschiede sind, dass Sie einen Wert für Frames pro Sekunde (fps) angeben müssen, und Sie können nur direkt auf dem Datenträger als MP4-Datei speichern. Die Schritte für die Verwendung von *Videocapture* lauten wie folgt:
+*VideoCapture-Funktionen* ähnlich wie *PhotoCapture*. Die einzigen beiden Unterschiede bestehen darin, dass Sie einen FPS-Wert (Frames Per Second) angeben müssen und sie nur direkt als .mp4 Datei auf dem Datenträger speichern können. Die Schritte zur Verwendung von *VideoCapture* lauten wie folgt:
 
-1. Erstellen eines *Videocapture* -Objekts
-2. Erstellen Sie ein " *cameraparameters* "-Objekt mit den gewünschten Einstellungen.
-3. Starten des Video Modus über *startvideomodeasync*
-4. Aufzeichnen des Videos starten
-5. Aufzeichnen von Videos anhalten
-6. Video Modus abbrechen und Ressourcen bereinigen
+1. Erstellen eines *VideoCapture-Objekts*
+2. Erstellen eines *CameraParameters-Objekts* mit den gewünschten Einstellungen
+3. Starten des Videomodus über *StartVideoModeAsync*
+4. Videoaufzeichnung starten
+5. Aufzeichnung des Videos beenden
+6. Beenden des Videomodus und Bereinigen von Ressourcen
 
-Erstellen Sie zunächst das *Videocapture* -Objekt *Videocapture m_VideoCapture = NULL;*
+Erstellen Sie zunächst unser *VideoCapture-Objekt* *VideoCapture m_VideoCapture = NULL;*
 
 ```cs
 void Start ()
@@ -246,7 +246,7 @@ void Start ()
 }
 ```
 
-Richten Sie als nächstes die Parameter ein, die Sie für die Aufzeichnung benötigen, und starten Sie Sie.
+Richten Sie als Nächstes die Gewünschten Parameter für die Aufzeichnung ein, und starten Sie sie.
 
 ```cs
 void OnVideoCaptureCreated(VideoCapture videoCapture)
@@ -276,7 +276,7 @@ void OnVideoCaptureCreated(VideoCapture videoCapture)
 }
 ```
 
-Starten der Aufzeichnung
+Starten Sie nach dem Starten die Aufzeichnung.
 
 ```cs
 void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
@@ -291,7 +291,7 @@ void OnStartedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
 }
 ```
 
-Nachdem die Aufzeichnung gestartet wurde, können Sie die Benutzeroberfläche oder das Verhalten aktualisieren, um das Beenden zu aktivieren. Hier melden Sie sich einfach an.
+Nachdem die Aufzeichnung gestartet wurde, können Sie Die Benutzeroberfläche oder das Verhalten aktualisieren, um das Beenden zu aktivieren. Hier melden Sie sich einfach an.
 
 ```cs
 void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -301,7 +301,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
 }
 ```
 
-Zu einem späteren Zeitpunkt möchten Sie die Aufzeichnung beispielsweise mithilfe eines Timers oder einer Benutzereingabe anhalten.
+Zu einem späteren Zeitpunkt möchten Sie die Aufzeichnung beispielsweise mithilfe eines Timers oder einer Benutzereingabe beenden.
 
 ```cs
 // The user has indicated to stop recording
@@ -311,7 +311,7 @@ void StopRecordingVideo()
 }
 ```
 
-Wenn die Aufzeichnung beendet wurde, beenden Sie den Videomodus, und bereinigen Sie Ihre Ressourcen.
+Nachdem die Aufzeichnung beendet wurde, beenden Sie den Videomodus, und bereinigen Sie Ihre Ressourcen.
 
 ```cs
 void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
@@ -329,12 +329,12 @@ void OnStoppedVideoCaptureMode(VideoCapture.VideoCaptureResult result)
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-* Es sind keine Auflösungen verfügbar.
-  * Stellen Sie sicher, dass die **Webcam** -Funktion in Ihrem Projekt angegeben wird.
+* Es sind keine Lösungen verfügbar.
+  * Stellen Sie sicher, dass die **WebCam-Funktion** in Ihrem Projekt angegeben ist.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie der Unity-Entwicklungs-Prüfpunkt-Journey folgen, die wir festgelegt haben, sind Sie mitten in der Untersuchung der Funktionen und APIs der Mixed Reality-Plattform. Von hier aus können Sie mit dem nächsten Thema fortfahren:
+Wenn Sie die von uns festgelegte Unity-Entwicklungsprüfpunkt-Journey verfolgen, können Sie sich mit den Mixed Reality Plattformfunktionen und APIs beschäftigen. Von hier aus können Sie mit dem nächsten Thema fortfahren:
 
 > [!div class="nextstepaction"]
 > [Fokuspunkt](focus-point-in-unity.md)
@@ -342,7 +342,7 @@ Wenn Sie der Unity-Entwicklungs-Prüfpunkt-Journey folgen, die wir festgelegt ha
 Oder wechseln Sie direkt zur Bereitstellung Ihrer App auf einem Gerät oder Emulator:
 
 > [!div class="nextstepaction"]
-> [Bereitstellung in hololens oder Windows Mixed Reality-immersiven Headsets](../platform-capabilities-and-apis/using-visual-studio.md)
+> [Bereitstellen auf HoloLens oder Windows Mixed Reality immersiven Headsets](../platform-capabilities-and-apis/using-visual-studio.md)
 
 Sie können jederzeit zu den [Prüfpunkten für die Unity-Entwicklung](unity-development-overview.md#3-advanced-features) zurückkehren.
 

@@ -1,25 +1,25 @@
 ---
-title: Erste Schritte mit dem Szenensystem
+title: 'Szenensystem: Erste Schritte'
 description: Landing Page für Szenensystem mit MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 16adf431498f8146ca2cc60565e59dc8ae03fd92
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5b4f1c3b0f069d320feca8ccecacc6c66576b50339ea7b7733f34525005dd842
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177573"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191560"
 ---
-# <a name="scene-system-getting-started"></a>Erste Schritte mit dem Szenensystem
+# <a name="scene-system-getting-started"></a>Szenensystem: Erste Schritte
 
 ## <a name="when-to-use-the-scene-system"></a>Wann das Szenensystem verwendet werden soll
 
 Wenn Ihr Projekt aus einer einzelnen Szene besteht, ist das Szenensystem wahrscheinlich nicht erforderlich. Dies ist besonders nützlich, wenn mindestens eine der folgenden Bedingungen zutrifft:
 
 - Ihr Projekt verfügt über mehrere Szenen.
-- Sie sind es gewohnt, einzelne Szenen zu laden, aber die Art und Weise, wie sie die MixedRealityToolkit-Instanz zerstört, gefällt Ihnen nicht.
+- Sie sind es gewohnt, einzelne Szenen zu laden, aber es gefällt Ihnen nicht, wie die MixedRealityToolkit-Instanz zerstört wird.
 - Sie möchten eine einfache Möglichkeit haben, mehrere Szenen additiv zu laden, um Ihre Erfahrung zu erstellen.
 - Sie möchten eine einfache Möglichkeit zum Nachverfolgen von Ladevorgängen oder eine einfache Möglichkeit, die Szenenaktivierung für mehrere Szenen zu steuern, die gleichzeitig geladen werden.
 - Sie möchten die Beleuchtung über alle Szenen hinweg konsistent und vorhersagbar halten.
@@ -77,6 +77,6 @@ Standardmäßig erzwingt das Szenensystem mehrere Verhaltensweisen im Unity-Edit
 
 - `Editor Manage Loaded Scenes:` Bei "true" stellt der Dienst sicher, dass die Manager-, Inhalts- und Beleuchtungsszenen immer geladen werden. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle darüber haben möchten, welche Szenen im Editor geladen werden.
 
-- `Editor Enforce Lighting Scene Types:` Bei "true" stellt der Dienst sicher, dass nur die in definierten beleuchtungsbezogenen Komponenten `PermittedLightingSceneComponentTypes` in Beleuchtungsszenen zulässig sind. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle über den Inhalt von Beleuchtungsszenen wünschen.
+- `Editor Enforce Lighting Scene Types:` Bei "true" stellt der Dienst sicher, dass nur die in definierten beleuchtungsbezogenen `PermittedLightingSceneComponentTypes` Komponenten in Beleuchtungsszenen zulässig sind. Deaktivieren Sie diese Option, wenn Sie die vollständige Kontrolle über den Inhalt von Beleuchtungsszenen wünschen.
 
 ![Einstellungen des Szenensystem-Editors](../images/scene-system/MRTK_SceneSystemProfileEditorSettings.PNG)

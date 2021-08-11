@@ -1,28 +1,28 @@
 ---
 title: Verwenden von MRTK in großen Projekten
-description: Tipps für Consumer von MRTK mit großen Projekten.
+description: Tipps für MrTK-Kunden mit großen Projekten.
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 28ba272a48b0a0c524185ac7114a09cf8e0e91f8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9547b6bdcf4c0f4bc179dd266b14c853c1bf81a7e6531d2e68ca2e26188424c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177118"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196094"
 ---
 # <a name="using-mrtk-in-large-projects"></a>Verwenden von MRTK in großen Projekten
 
-Diese Seite enthält einige nützliche Tipps für Consumer von MRTK, die es in vorhandene große Projekte pullen oder etwas Neues einrichten, das von der Quelle gesteuert wird und über mehrere Entwickler verfügt.
+Diese Seite enthält einige nützliche Tipps für MrTK-Benutzer, die es in vorhandene große Projekte pullen oder etwas Neues einrichten, das quellcodegesteuert ist und mehrere Entwickler hat.
 
-*Es wird empfohlen, alle unten aufgeführten Richtlinien zu lesen, um einige knifflige Probleme bei der Arbeit an größeren Codebasiss zu vermeiden.*
+*Es wird empfohlen, alle unten aufgeführten Richtlinien zu lesen. Wenn Sie diese befolgen, können Sie einige knifflige Probleme vermeiden, wenn Sie an größeren Codebasen arbeiten.*
 
 ## <a name="gitignore"></a>gitignore
 
-Die folgende GITIGNORE-Datei ist eine empfohlene Basis für das Pullen bei der Nutzung von MRTK. Es gibt Teile von MRTK, die einen lokalen Zustand erstellen, der von der Quellcodeverwaltung problemlos ignoriert werden kann, was andernfalls den lokalen Git-Zustand geändert hätte.
+Die folgende GITIGNORE-Datei ist eine empfohlene Basis für pull in bei der Nutzung von MRTK. Es gibt Teile des MRTK, die einen lokalen Zustand erstellen, der von der Quellcodeverwaltung ignoriert werden kann, was andernfalls den lokalen Git-Zustand verfeinern würde.
 
-Beachten Sie, dass die Anfangsteile dieser Ausschnitte aus der GitHub-Standarddatei "Unity.gitignore" mit MRTK-spezifischen Ergänzungen später stammen. Beachten Sie auch, dass einige dieser Regeln bestimmte Pfade voraus setzen und basierend darauf geändert werden können, wo sich DAS MRTK in Ihrem Projekt befindet.
+Beachten Sie, dass die anfangs genannten Teile aus der GitHub-Standard-GitHub-Datei ".gitignore" mit MRTK-spezifischen Ergänzungen später übernommen werden. Beachten Sie auch, dass einige dieser Regeln von bestimmten Pfaden ausgehen und basierend darauf geändert werden können, wo sich MRTK in Ihrem Projekt befindet.
 
 ```
 # This .gitignore file should be placed at the root of your Unity project directory
@@ -99,18 +99,18 @@ crashlytics-build.properties
 !/scripts/Packaging/NuGetRestoreProject.csproj
 ```
 
-## <a name="projectpreferencesasset-file"></a>ProjectPreferences.asset-Datei
+## <a name="projectpreferencesasset-file"></a>Datei "ProjectPreferences.asset"
 
-Project-breite MRTK-Einstellungen finden Sie unter dem Speicherort Bearbeiten -> Project Einstellungen -> Mixed Reality Toolkit. Diese Einstellungen werden in einer Datei an diesem Speicherort im Ordner Assets gespeichert:
+Project MRTK-Einstellungen finden Sie unter bearbeiten -> Project Einstellungen -> Mixed Reality Toolkit. Diese Einstellungen werden in einer Datei an diesem Speicherort im Ordner Assets gespeichert:
 
 ```
 Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset
 ```
 
-Wenn Ihr Projekt mehrere Projektmitarbeiter enthält, wird empfohlen, diese Medienobjektdatei nach einer anfänglichen Einrichtung der MRTK-Einstellungen einzuchecken. Ziehen Sie insbesondere in Betracht, die **folgenden Einstellungen zu überprüfen:**
+Wenn Ihr Projekt mehrere Projektmitarbeiter enthält, wird empfohlen, diese Assetdatei nach einer anfänglichen Einrichtung der MRTK-Einstellungen einchecken. Erwägen Sie insbesondere, die folgenden **Einstellungen zu aktivieren:**
 
-SPERREN VON **SDK-Profilen:** Wenn dies deaktiviert ist, sind die MRTK-Standardprofile global bearbeitbar, was MRTK-Upgrades schwierig macht (dies kann zu Zusammenführungskonflikten im Framework selbst führen).
+**Sperren von** SDK-Profilen: Wenn dies deaktiviert ist, sind die MRTK-Standardprofile global bearbeitbar, wodurch MRTK-Upgrades schwierig werden (dies kann zu Zusammenführungskonflikten im Framework selbst führen).
 
-**MRTK-Projektkonfigurator ignorieren:** Wenn dies deaktiviert ist, zeigt der Projektkonfigurator an, ob die aktuellen MRTK-Einstellungen nicht den empfohlenen MRTK-Standardwerten entsprechen. Da ihr Projekt möglicherweise explizit ausgewählt hat, dass einige Einstellungen nicht aktiviert sind, verhindert das Aktivieren dieser Einstellung, dass andere Projektmitarbeiter dieses Dialogfeld versehentlich ändern. Diese Einstellungen sollten von der Person konfiguriert werden, die das Projekt einrichtet, und dann von den anderen Projektmitarbeitern ignoriert werden.
+**MRTK-Projektkonfigurator** ignorieren: Wenn dies deaktiviert ist, zeigt der Projektkonfigurator an, ob die aktuellen MRTK-Einstellungen nicht mit den vom MRTK empfohlenen Standardwerten übereinstimmen. Da ihr Projekt möglicherweise explizit ausgewählt hat, dass einige Einstellungen nicht aktiviert sind, verhindert die Aktivierung dieser Einstellung, dass andere Projektmitarbeiter dieses Dialogfeld versehentlich ändern. Diese Einstellungen sollten von der Person konfiguriert werden, die das Projekt eingerichtet hat, und dann von den anderen Projektmitarbeitern ignoriert werden.
 
-**Automatisches Aktivieren von UWP-Funktionen:** Wenn dies deaktiviert ist, können bestimmte Funktionen (z. B. Eyetracking) bei der Bereitstellung auf einem Gerät im Hintergrund fehlschlagen, da Unity die erforderlichen Laufzeitfunktionen nicht automatisch dem Anwendungsmanifest hinzufüg. Wenn diese Einstellung aktiviert ist, wird ihre Anwendungsbereitstellung vor dieser Art von Problemen geschützt.
+**UWP-Funktionen** automatisch aktivieren: Wenn diese Option deaktiviert ist, können bestimmte Funktionen (z. B. Eyetracking) bei der Bereitstellung auf einem Gerät im Hintergrund fehlschlagen, da Unity dem Anwendungsmanifest nicht automatisch die erforderlichen Laufzeitfunktionen hinzufüge. Wenn Sie diese Einstellung aktivieren, wird die Anwendungsbereitstellung vor dieser Art von Problemen geschützt.

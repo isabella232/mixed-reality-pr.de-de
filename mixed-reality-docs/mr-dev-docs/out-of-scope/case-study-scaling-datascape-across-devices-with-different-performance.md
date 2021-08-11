@@ -1,57 +1,57 @@
 ---
-title: 'Fallstudie: Skalieren von DataSet auf Geräten mit unterschiedlicher Leistung'
-description: Diese Fallstudie bietet Einblicke in die Art und Weise, wie Microsoft-Entwickler die datascape-App optimiert haben, um eine überzeugende Geräte übergreifende Darstellung mit einer Reihe von Leistungs Funktionen zu bieten
+title: 'Fallstudie: Skalieren von Datascape auf verschiedenen Geräten mit unterschiedlicher Leistung'
+description: Diese Fallstudie bietet Einblicke in die Optimierung der Datascape-App durch Microsoft-Entwickler, um eine überzeugende Benutzererfahrung auf verschiedenen Geräten mit einer Reihe von Leistungsfunktionen zu bieten.
 author: danandersson
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: immersives Headset, Leistungsoptimierung, VR, Fallstudie
-ms.openlocfilehash: 37a40a67dbe41ba9a53fccaff1dee76d56f7b178
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Immersives Headset, Leistungsoptimierung, VR, Fallstudie
+ms.openlocfilehash: d1c54f5fbe6843f9bf61af20b611c6aeb22b0704c209bfdb555fe57b95805cf9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91687363"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195759"
 ---
-# <a name="case-study---scaling-datascape-across-devices-with-different-performance"></a>Fallstudie: Skalieren von DataSet auf Geräten mit unterschiedlicher Leistung
+# <a name="case-study---scaling-datascape-across-devices-with-different-performance"></a>Fallstudie: Skalieren von Datascape auf verschiedenen Geräten mit unterschiedlicher Leistung
 
-Datascape ist eine Windows Mixed Reality-Anwendung, die intern bei Microsoft entwickelt wurde, wobei wir uns auf das Anzeigen von Wetterdaten oberhalb von Geländedaten konzentrieren. Die Anwendung untersucht die eindeutigen Einblicke, die Benutzer bei der Ermittlung von Daten in gemischter Realität gewinnen, indem Sie den Benutzer mit Holographic Data-Visualisierung umgeben.
+Datascape ist eine Windows Mixed Reality anwendung, die intern bei Microsoft entwickelt wurde und bei der wir uns auf die Anzeige von Wetterdaten über Geländedaten konzentriert haben. Die Anwendung untersucht die einzigartigen Erkenntnisse, die Benutzer durch das Entdecken von Daten in Mixed Reality gewinnen, indem sie den Benutzer mit holografischer Datenvisualisierung umhing.
 
-Für das DataSet wollten wir eine Vielzahl von Plattformen mit unterschiedlichen Hardwarefunktionen als Ziel für Microsoft hololens und Windows Mixed Reality-immersive Headsets und von Geräten mit niedrigerer Leistung auf die neuesten PCs mit High-End-GPU ausrichten. Die Hauptaufgabe war das Rendern unserer Szene in einem visuell ansprechenden Bereich auf Geräten mit stark unterschiedlichen Grafikfunktionen bei der Ausführung bei einer hohen Framerate.
+Für Datascape wollten wir eine Vielzahl von Plattformen mit unterschiedlichen Hardwarefunktionen als Ziel verwenden– von Microsoft HoloLens bis Windows Mixed Reality immersive Headsets und von PCs mit geringerer Leistung bis hin zu den neuesten PCs mit High-End-GPU. Die größte Herausforderung bestand darin, unsere Szene visuell ansprechender auf Geräten mit stark unterschiedlichen Grafikfunktionen zu rendern, während sie mit hoher Framerate ausgeführt wurde.
 
-Diese Fallstudie führt Sie durch den Prozess und die Verfahren, die zum Erstellen einiger unserer GPU-intensiveren Systeme verwendet werden, und beschreibt die Probleme, die wir kennengelernt haben und wie wir Sie überwunden haben.
+In dieser Fallstudie werden der Prozess und die Techniken beschrieben, mit denen einige unserer GPU-intensiven Systeme erstellt werden. Sie beschreibt die aufgetretenen Probleme und deren Behebung.
 
 ## <a name="transparency-and-overdraw"></a>Transparenz und Überzeichnung
 
-Die wichtigsten Renderingerweiterungen, die Transparenz behandeln, da Transparenz für eine GPU aufwendig sein kann.
+Unser Hauptrendering hat Probleme mit Transparenz, da Transparenz auf einer GPU teuer sein kann.
 
-Eine solide Geometrie kann beim Schreiben in den tiefen Puffer in den Vordergrund gerendert werden. Dadurch wird verhindert, dass alle zukünftigen Pixel hinter diesem Pixel verworfen werden. Dadurch wird verhindert, dass versteckte Pixel den Pixelshader ausführen, wodurch der Prozess erheblich beschleunigt wird. Wenn Geometrie optimal sortiert ist, wird jedes Pixel auf dem Bildschirm nur einmal gezeichnet.
+Die Vollformatgeometrie kann beim Schreiben in den Tiefenpuffer von vorn nach hinten gerendert werden, um zu verhindern, dass alle zukünftigen Pixel hinter diesem Pixel verworfen werden. Dadurch wird verhindert, dass ausgeblendete Pixel den Pixel-Shader ausführen, was den Prozess erheblich beschleunigt. Wenn die Geometrie optimal sortiert ist, wird jedes Pixel auf dem Bildschirm nur einmal gezeichnet.
 
-Die transparente Geometrie muss wieder in den Vordergrund sortiert werden und basiert darauf, dass die Ausgabe des Pixelshaders mit dem aktuellen Pixel auf dem Bildschirm gemischt wird. Dies kann dazu führen, dass jedes Pixel auf dem Bildschirm mehrmals pro Frame gezeichnet wird, was als overdraw bezeichnet wird.
+Die transparente Geometrie muss nach vorne sortiert werden und basiert darauf, dass die Ausgabe des Pixels shaders mit dem aktuellen Pixel auf dem Bildschirm kombiniert wird. Dies kann dazu führen, dass jedes Pixel auf dem Bildschirm mehrmals pro Frame gezeichnet wird, was als Überzeichnung bezeichnet wird.
 
-Bei hololens und gängigen PCs kann der Bildschirm nur wenige Male aufgefüllt werden, sodass das transparente Rendering problematisch ist.
+Für HoloLens- und Standard-PCs kann der Bildschirm nur einige Male gefüllt werden, was das transparente Rendering problematisch macht.
 
-## <a name="introduction-to-datascape-scene-components"></a>Einführung in datascape Scene-Komponenten
+## <a name="introduction-to-datascape-scene-components"></a>Einführung in Datascape-Szenenkomponenten
 
-Wir hatten drei Hauptkomponenten in unserer Szene. **die Benutzeroberfläche, die Karte** und **das Wetter** . Wir wussten schon früh, dass unsere Wettereffekte die gesamte GPU-Zeit in Anspruch nehmen würden, daher haben wir die Benutzeroberfläche und das Gelände auf eine Weise entworfen, die alle über schreibungen verringern würde.
+Wir hatten drei Hauptkomponenten für unsere Szene: **die Benutzeroberfläche, die Karte** und **das Wetter**. Wir wussten schon früh, dass unsere Wettereffekte die ganze GPU-Zeit erfordern würden, die sie erhalten konnte. Daher haben wir die Benutzeroberfläche und das Gelände so entworfen, dass jede Überzeichnung reduziert wird.
 
-Wir haben die Benutzeroberfläche mehrmals überarbeitet, um die Menge der zu erstellenden über schreibungen zu minimieren. Wir haben auf der Seite komplexer Geometrie gerendet, anstatt transparente Grafiken für Komponenten wie leuchtende Schaltflächen und Karten Übersichten zu überlagern.
+Wir haben die Benutzeroberfläche mehrmals überarbeitet, um die Menge der zu erzeugenden Überzeichnung zu minimieren. Wir haben uns auf der Seite einer komplexeren Geometrie geerbt, anstatt transparente Artefakte für Komponenten wie leuchtende Schaltflächen und Kartenübersichten übereinander zu überlagern.
 
-Für die Karte haben wir einen benutzerdefinierten Shader verwendet, der standardmäßige Unity-Features, wie z. b. Schatten und komplexe Beleuchtung, entfernt und Sie durch ein einfaches Modell mit einem Sun-Licht und eine benutzerdefinierte Nebel Berechnung ersetzt. Dies führte zu einem einfachen Pixelshader und freigab GPU-Zyklen.
+Für die Karte haben wir einen benutzerdefinierten Shader verwendet, der Unity-Standardfeatures wie Schatten und komplexe Beleuchtung entfernt und durch ein einfaches einzelnes Sonnenlichtmodell und eine benutzerdefinierte Berechnung ersetzt. Dies erzeugte einen einfachen Pixel-Shader und gibt GPU-Zyklen frei.
 
-Wir haben die Benutzeroberfläche und die Zuordnung zum Rendering im Budget erhalten, in dem wir abhängig von der Hardware keine Änderungen vorgenommen haben. Allerdings erwies sich die Wetter Visualisierung, insbesondere das cloudrendering, als eine größere Herausforderung.
+Wir haben sowohl die Benutzeroberfläche als auch die Karte für das Rendering im Budget erhalten, bei dem je nach Hardware keine Änderungen an ihnen erforderlich waren. die Wettervisualisierung, insbesondere das Cloudrendering, hat sich jedoch als eher eine Herausforderung erwiesen!
 
-## <a name="background-on-cloud-data"></a>Hintergrundinformationen zu clouddaten
+## <a name="background-on-cloud-data"></a>Hintergrund zu Clouddaten
 
-Unsere clouddaten wurden von NOAA-Servern heruntergeladen ( https://nomads.ncep.noaa.gov/) und standen in drei unterschiedlichen 2D-Schichten, jeweils mit der oberen und unteren Höhe der Cloud, sowie der Dichte der Cloud für jede Zelle des Rasters. Die Daten wurden in eine Cloud-Informations Textur verarbeitet, in der jede Komponente in der roten, grünen und blauen Komponente der Textur gespeichert wurde, um den Zugriff auf die GPU zu vereinfachen.
+Unsere Clouddaten wurden von NOAA-Servern heruntergeladen ( und sind in drei unterschiedlichen 2D-Ebenen zu uns gekommen, die jeweils die obere und untere Höhe der Cloud sowie die Dichte der Cloud für jede Zelle des Rasters https://nomads.ncep.noaa.gov/) aufweisen. Die Daten wurden in eine Cloudinformationstextur verarbeitet, in der jede Komponente in der roten, grünen und blauen Komponente der Textur gespeichert wurde, um den Zugriff auf die GPU zu ermöglichen.
 
-## <a name="geometry-clouds"></a>Geometry-Clouds
+## <a name="geometry-clouds"></a>Geometriewolken
 
-Um sicherzustellen, dass unsere unterstützen Computer unsere Clouds wirklich Rendering haben, haben wir uns entschieden, mit einem Ansatz zu beginnen, der eine solide Geometrie zum Minimieren von über schreibungen verwenden würde.
+Um sicherzustellen, dass unsere weniger betriebenen Computer unsere Clouds rendern können, haben wir uns entschieden, mit einem Ansatz zu beginnen, bei dem eine solide Geometrie verwendet wird, um die Überzeichnung zu minimieren.
 
-Wir haben zunächst versucht, Clouds zu erzeugen, indem wir für jede Ebene ein solides Heightmap-Mesh generiert haben. dabei wird der Radius der cloudinfotextur pro Scheitelpunkt verwendet, um die Form zu generieren Wir haben einen Geometry-Shader verwendet, um die Scheitel Punkte im oberen und unteren Bereich der Cloud zu erzeugen, die solide cloudformen erzeugen. Wir haben den Dichtewert aus der Textur verwendet, um die Cloud mit dunkleren Farben für dischere Clouds zu versehen.
+Wir haben zuerst versucht, Clouds zu erzeugen, indem wir ein solides Höhenbildgitter für jede Ebene mithilfe des Radius der Cloudinformationstextur pro Scheitelpunkt generieren, um die Form zu generieren. Wir haben einen Geometrie-Shader verwendet, um die Scheitelpunkts am oberen und unteren Rand der Cloud zu erzeugen, die solide Cloudformen generieren. Wir haben den Dichtewert aus der Textur verwendet, um die Wolke mit dunkleren Farben für dichtere Clouds zu färben.
 
-**Shader zum Erstellen der Vertices:**
+**Shader zum Erstellen der Scheitelungen:**
 
 ```
 v2g vert (appdata v)
@@ -98,31 +98,31 @@ fixed4 frag (g2f i) : SV_Target
 }
 ```
 
-Wir haben ein kleines Rauschmuster eingeführt, um weitere Details zu den echten Daten zu erhalten. Um Round-Cloud-Ränder zu erzeugen, haben wir die Pixel im Pixelshader abgeschnitten, wenn der interpoliert RADIUS-Wert einen Schwellenwert erreicht hat, um fast null-Werte zu verwerfen.
+Wir haben ein kleines Rauschmuster eingeführt, um mehr Details zu den tatsächlichen Daten zu erhalten. Um runde Cloudränder zu erzeugen, haben wir die Pixel im Pixel-Shader abgeschnitten, wenn der interpolierte Radiuswert einen Schwellenwert erreicht hat, um Werte nahezu null zu verwerfen.
 
-![Geometry-Clouds](images/datascape-geometry-clouds-700px.jpg)
+![Geometriewolken](images/datascape-geometry-clouds-700px.jpg)
 
-Da es sich bei den Clouds um eine solide Geometrie handelt, können Sie vor dem-Gelände gerendert werden, um alle teuren Karten Pixel auszublenden, um die Framerate weiter zu Diese Lösung wurde auf allen Grafikkarten von min-spec bis High-End-Grafikkarten sowie auf hololens aufgrund des Solid Geometry-renderingansatzes ordnungsgemäß ausgeführt.
+Da es sich bei den Clouds um eine solide Geometrie handelt, können sie vor dem Gelände gerendert werden, um darunter teure Kartenpixel auszublenden, um die Bildrate weiter zu verbessern. Diese Lösung funktionierte gut auf allen Grafikkarten von min-spec bis high-end-Grafikkarten sowie auf HoloLens aufgrund des Solid Geometry Rendering-Ansatzes.
 
-## <a name="solid-particle-clouds"></a>Solid-Partikel-Clouds
+## <a name="solid-particle-clouds"></a>Volumenteilchenwolken
 
-Wir verfügten nun über eine Sicherungs Lösung, die eine angemessene Darstellung unserer clouddaten erzeugt hat, war aber ein bisschen einfach im "Wow"-Faktor und hat das volummetric-Gefühl nicht vermittelt, das wir für unsere High-End-Computer wollten.
+Wir hatten jetzt eine Sicherungslösung, die eine gute Darstellung unserer Clouddaten erzeugte, aber im Wow-Faktor etwas fehlte und nicht das volumetrischen Gefühl vermittelte, das wir für unsere High-End-Computer wollten.
 
-Der nächste Schritt besteht darin, die Clouds zu erstellen, indem Sie Sie mit ungefähr 100.000 Partikeln darstellen, um ein mehr organisches und volummetrisches aussehen zu erzeugen.
+Unser nächster Schritt war das Erstellen der Clouds, indem wir sie mit ungefähr 100.000 Partikeln darstellen, um ein eher bio- und volumetrischen Aussehen zu erzeugen.
 
-Wenn Partikel solide bleiben und vor-zu-hinten sortiert werden, können wir weiterhin von der tiefen Puffer Erstellung der Pixel hinter zuvor gerenderten Partikeln profitieren, wodurch die Überzeichnung reduziert wird. Mit einer Partikel basierten Lösung können wir auch die Menge der Partikel ändern, die für die unterschiedliche Hardware verwendet werden. Allerdings müssen alle Pixel noch tiefer getestet werden, was zu einem zusätzlichen Aufwand führt.
+Wenn Partikel fest bleiben und von vorne nach hinten sortiert werden, können wir dennoch von der Tiefenpuffer-Culling der Pixel hinter den zuvor gerenderten Partikeln profitieren, was die Überzeichnung reduziert. Außerdem können wir mit einer partikelbasierten Lösung die Menge der Partikel ändern, die für unterschiedliche Hardware verwendet werden. Allerdings müssen weiterhin alle Pixel ausführlich getestet werden, was zu zusätzlichem Mehraufwand führt.
 
-Zuerst haben wir die Partikel Positionen um den Mittelpunkt der Umgebung beim Start erstellt. Wir haben die Partikel um das Zentrum und weniger in der Entfernung verteilt. Wir haben alle Partikel von der Mitte nach hinten sortiert, sodass die nächstgelegenen Partikel zuerst dargestellt werden.
+Zuerst haben wir Partikelpositionen um den Mittelpunkt der Erfahrung beim Start erstellt. Wir verteilten die Partikel dichter um den Mittelpunkt und weniger in der Entfernung. Wir haben alle Partikel von der Mitte nach der Rückseite vorab sortiert, sodass die nächstgelegenen Partikel zuerst gerendert werden.
 
-Ein Compute-Shader gibt eine Stichprobe der cloudinfotextur aus, um die einzelnen Partikel auf der Grundlage der Dichte an der richtigen Höhe zu positionieren.
+Ein Compute-Shader würde die Cloudinformationstextur abtasten, um jeden Partikel in einer richtigen Höhe zu positionieren und basierend auf der Dichte zu färben.
 
-Wir haben *drawprozeduren* verwendet, um ein Quad pro Partikel zu erzeugen, sodass die Partikel Daten jederzeit auf der GPU bleiben können.
+Wir haben *DrawProcedural verwendet,* um ein Quad pro Partikel zu rendern, sodass die Partikeldaten jederzeit auf der GPU bleiben können.
 
-Jedes Partikel enthielt sowohl eine Höhe als auch einen RADIUS. Die Höhe basiert auf den clouddaten, die aus der Cloud-Informations Textur entnommen wurden, und der RADIUS basiert auf der anfänglichen Verteilung, in der er so berechnet würde, dass er den horizontalen Abstand zum nächstgelegenen Nachbarn speichert. Die Quads würden diese Daten verwenden, um sich selbst durch die Höhe zu orientieren, sodass die Höhe, wenn Benutzer sich horizontal ansehen, angezeigt wird, und wenn sich die Benutzer von oben nach unten ansehen, wird der Bereich zwischen den Nachbarn abgedeckt.
+Jeder Partikel enthielt sowohl eine Höhe als auch einen Radius. Die Höhe basierte auf den Clouddaten, die aus der Cloudinformationstextur entnommen wurden, und der Radius basierte auf der anfänglichen Verteilung, bei der berechnet wurde, um die horizontale Entfernung zum nächsten Nachbarn zu speichern. Die Quads verwenden diese Daten, um sich nach der Höhe zu orientieren, sodass die Höhe angezeigt wird, wenn Benutzer sie horizontal betrachten, und wenn Benutzer sie von oben nach unten betrachten, wird der Bereich zwischen den Nachbarn abgedeckt.
 
 ![Partikelform](images/particle-shape-700px.png)
 
-**Shader-Code, der die Verteilung anzeigt:**
+**Shadercode mit der Verteilung:**
 
 ```
 ComputeBuffer cloudPointBuffer = new ComputeBuffer(6, quadPointsStride);
@@ -160,23 +160,23 @@ v2f vert(uint id : SV_VertexID, uint inst : SV_InstanceID)
 }
 ```
 
-Da wir die Partikel vor und nach hinten sortieren, und wir immer noch einen Solid-Style-Shader zum Ausschneiden (nicht Blend) transparenter Pixel verwendet haben, behandelt dieses Verfahren eine überraschende Menge an Partikeln, wodurch auch auf den Computern, die sich auf dem Computer befinden, eine aufwändige Überzeichnung vermieden wird.
+Da wir die Partikel front-to-back sortieren und trotzdem einen Solid-Style-Shader verwendet haben, um transparente Pixel zu beschneiden (nicht zu überblenden), verarbeitet diese Technik eine überraschende Menge an Partikeln und vermeidet auch auf den weniger betriebenen Computern teures Überladen.
 
-## <a name="transparent-particle-clouds"></a>Transparente Partikel Clouds
+## <a name="transparent-particle-clouds"></a>Transparente Partikelwolken
 
-Die Solid-Partikel bieten ein gutes, organisches Gefühl für die Form der Clouds, benötigen aber trotzdem etwas, um die fluffesme von Clouds zu verkaufen. Wir haben uns entschieden, eine benutzerdefinierte Lösung für die High-End-Grafikkarten auszuprobieren, bei der Transparenz eingeführt werden kann.
+Die festen Partikel sorgten für ein gutes Bio-Gefühl für die Form der Clouds, benötigten aber trotzdem etwas, um die Flaffiness der Clouds zu verkaufen. Wir haben uns entschieden, eine benutzerdefinierte Lösung für die High-End-Grafikkarten auszuprobieren, in der wir Transparenz einführen können.
 
-Zu diesem Zweck haben wir einfach die anfängliche Sortierreihenfolge der Partikel gewechselt und den Shader so geändert, dass die Texturen Alpha verwendet werden.
+Dazu haben wir einfach die anfängliche Sortierreihenfolge der Partikel geändert und den Shader so geändert, dass der Textur alpha verwendet wird.
 
-![Flauschige Clouds](images/fluffy-clouds-700px.jpg)
+![Flaffy Clouds](images/fluffy-clouds-700px.jpg)
 
-Es hat sich bewährt, aber es hat sich bewährt, auch für die schwierigsten Computer zu groß zu sein, da dies dazu führen würde, dass jedes Pixel auf dem Bildschirm hunderte Male gerendert
+Es sieht gut aus, hat sich aber als zu stark für selbst die schwierigsten Computer erwiesen, da dies dazu führen würde, dass jedes Pixel auf dem Bildschirm hunderte Male gerendert würde!
 
-## <a name="render-off-screen-with-lower-resolution"></a>Aus Bildschirm mit niedrigerer Auflösung Rendering
+## <a name="render-off-screen-with-lower-resolution"></a>Rendern aus dem Bildschirm mit niedrigerer Auflösung
 
-Um die Anzahl der von den Clouds gerenderten Pixel zu verringern, haben wir begonnen, Sie in einem Quartals Auflösungs Puffer (im Vergleich zum Bildschirm) zu rendern und das Endergebnis nach oben auf den Bildschirm zu Strecken, nachdem alle Partikel gezeichnet wurden. Dadurch gab es ungefähr eine 4X-Beschleunigung, aber es wurden einige Einschränkungen erzielt.
+Um die Anzahl der von den Clouds gerenderten Pixel zu reduzieren, haben wir damit begonnen, sie in einem Puffer mit Quartalsauflösung (im Vergleich zum Bildschirm) zu rendern und das Endergebnis wieder auf den Bildschirm zu strecken, nachdem alle Partikel gezeichnet wurden. Dies hat uns ungefähr eine vier fache Beschleunigung ermöglicht, aber es gab einige Einschränkungen.
 
-**Code für das Rendern außerhalb des Bildschirms:**
+**Code für das Rendern aus dem Bildschirm:**
 
 ```
 cloudBlendingCommand = new CommandBuffer();
@@ -198,39 +198,39 @@ cloudCamera.targetTexture = null;
 cloudBlendingCommand.Blit(currentCloudTexture, new RenderTargetIdentifier(BuiltinRenderTextureType.CurrentActive), blitMaterial);
 ```
 
-Als erstes haben wir beim Rendern in einen Offscreen-Puffer alle detaillierten Informationen aus unserer Hauptszene verloren, was dazu führt, dass hinter dem Mountain hinter dem Mountain-Rendering Partikel hinter dem Gebirge gerendert werden.
+Erstens haben wir beim Rendern in einen Off-Screen-Puffer alle Tiefeninformationen aus unserer Hauptszene verloren, was zu Partikeln hinter dem Rendern von Tafeln auf dem Gebirg führt.
 
-Zweitens wurden bei der Streckung des Puffers auch Artefakte an den Rändern der Clouds eingeführt, bei denen die Auflösungs Änderung spürbar war. In den nächsten beiden Abschnitten wird erläutert, wie wir diese Probleme gelöst haben.
+Zweitens führte das Strecken des Puffers auch zu Artefakten an den Rändern unserer Clouds, wo die Auflösungsänderung spürbar war. In den nächsten beiden Abschnitten wird erläutert, wie wir diese Probleme gelöst haben.
 
-## <a name="particle-depth-buffer"></a>Partikel tiefen Puffer
+## <a name="particle-depth-buffer"></a>Partikeltiefenpuffer
 
-Damit die Partikel zusammen mit der Welt Geometrie vorhanden sind, in der ein Berg oder ein Objekt Partikel dahinter abdecken könnte, haben wir den Offscreen-Puffer mit einem tiefen Puffer aufgefüllt, der die Geometrie der Hauptszene enthält. Zum Erstellen eines solchen tiefen Puffers haben wir eine zweite Kamera erstellt und nur die solide Geometrie und Tiefe der Szene gerendert.
+Damit die Partikel zusammen mit der Geometrie der Welt vorhanden sind, in der ein Bzw. ein Objekt Partikel hinter sich bedecken könnte, haben wir den Off-Screen-Puffer mit einem Tiefenpuffer aufgefüllt, der die Geometrie der Hauptszene enthält. Um einen solchen Tiefenpuffer zu erzeugen, haben wir eine zweite Kamera erstellt, die nur die Vollbildgeometrie und -tiefe der Szene rendert.
 
-Anschließend haben wir die neue Textur im Pixelshader der Clouds verwendet, um Pixel zu okzieren. Wir haben dieselbe Textur verwendet, um den Abstand zur Geometrie hinter einem cloudpixel zu berechnen. Durch die Verwendung dieser Distanz und die Anwendung auf die Alpha des Pixels haben wir nun die Auswirkungen von Clouds ausgeblendet, wenn Sie sich in der Nähe des Geländes befinden, sodass alle fest Schnitte entfernt werden, bei denen Partikel und Gelände einander entsprechen.
+Anschließend haben wir die neue Textur im Pixel-Shader der Clouds verwendet, um Pixel zu verdecken. Wir haben dieselbe Textur verwendet, um den Abstand zur Geometrie hinter einem Cloudpixel zu berechnen. Indem wir diese Entfernung verwendet und auf das Alpha des Pixels anwenden, haben wir nun den Effekt, dass Die Clouds ausfingen, wenn sie dem Gelände nahe kommen, und alle harte Schnitte entfernt, wo Partikel und Gelände zusammentreffen.
 
-![In das Gelände gemischte Clouds](images/clouds-blended-to-terrain-700px.jpg)
+![Clouds blended into gelände](images/clouds-blended-to-terrain-700px.jpg)
 
-## <a name="sharpening-the-edges"></a>Schärfen der Kanten
+## <a name="sharpening-the-edges"></a>Schärfen der Ränder
 
-Die gestreckten Clouds sahen fast identisch mit den Clouds der normalen Größe in der Mitte der Partikel oder wo Sie sich überlappen, haben jedoch einige Artefakte an den cloudrändern gezeigt. Andernfalls würden Spitzen Ränder verschwommen erscheinen, und beim Verschieben der Kamera wurden Alias Effekte eingeführt.
+Die gestreckten Clouds wirkten fast identisch mit den normalen Größenwolken in der Mitte der Partikel oder wo sie sich überlappen, zeigten jedoch einige Artefakte an den Cloudrändern. Andernfalls wirkten spitze Ränder unscharf, und Aliaseffekte wurden eingeführt, wenn die Kamera bewegt wurde.
 
-Wir haben dies gelöst, indem wir einen einfachen Shader auf dem Offscreen-Puffer ausgeführt haben, um zu ermitteln, an welcher Stelle große Änderungen aufgetreten sind (1). Wir legen die Pixel mit großen Änderungen in einen neuen Schablonen Puffer (2) ab. Anschließend haben wir den Schablonen Puffer verwendet, um diese hohen Kontrast Bereiche zu maskieren, wenn Sie den Bildschirm Puffer auf den Bildschirm zurücksetzen, was zu Lücken in und um die Clouds führt (3).
+Wir haben dies gelöst, indem wir einen einfachen Shader auf dem Off-Screen-Puffer ausgeführt haben, um zu bestimmen, wo große Änderungen im Kontrast aufgetreten sind (1). Wir setzen die Pixel mit großen Änderungen in einen neuen Schablonenpuffer (2). Anschließend haben wir den Schablonenpuffer verwendet, um diese Bereiche mit hohem Kontrast zu maskieren, wenn der Off-Screen-Puffer wieder auf den Bildschirm angewendet wird, was zu Lücken in und um die Clouds führt (3).
 
-Anschließend haben wir alle Partikel wieder im Vollbildmodus gerendert, aber dieses Mal hat der Schablonen Puffer verwendet, um alles außer den Rändern zu maskieren, was zu einem minimalen Satz von Pixeln geführt hat (4). Da der Befehls Puffer bereits für die Partikel erstellt wurde, mussten wir ihn einfach erneut auf der neuen Kamera darstellen.
+Anschließend haben wir alle Partikel erneut im Vollbildmodus gerendert, aber dieses Mal wurde der Schablonenpuffer verwendet, um alles außer den Kanten zu maskieren, was zu einem minimalen Satz von berührten Pixeln (4) führt. Da der Befehlspuffer bereits für die Partikel erstellt wurde, musste er einfach wieder für die neue Kamera gerendert werden.
 
-![Fortschritt beim Rendern von cloudrändern](images/cloud-steps-1-4-700px.jpg)
+![Fortschritt des Renderings von Cloudrändern](images/cloud-steps-1-4-700px.jpg)
 
-Das Endergebnis war eine Spitze von Spitzen mit den günstigen Mittelpunkten der Clouds.
+Das Endergebnis waren spitze Kanten mit kostengünstigen zentriert Abschnitten der Clouds.
 
-Obwohl dies viel schneller war, als alle Partikel im Vollbildmodus zu rendern, gibt es weiterhin Kosten, die mit dem Testen eines Pixels gegen den Schablonen Puffer verbunden sind, sodass eine große Menge an über schreibungen weiterhin Kosten verursacht.
+Dies war zwar viel schneller als das Rendern aller Partikel im Vollbildmodus, aber es entstehen immer noch Kosten für das Testen eines Pixels mit dem Schablonenpuffer, sodass eine große Menge an Überzeichnung immer noch mit Kosten verbunden war.
 
-## <a name="culling-particles"></a>Berechnen von Partikeln
+## <a name="culling-particles"></a>Cullingteilchen
 
-Für den Windeffekt haben wir lange Dreiecks Streifen in einem Compute-Shader generiert, wodurch viele Wisps von Wind weltweit erstellt wurden. Obwohl die Füllrate aufgrund der generierten Dinge-Striche nicht stark ausgelastet war, wurden viele Hunderttausende von Scheitel Punkten erzeugt, was zu einer hohen Auslastung für den Vertexshader führte.
+Für unseren Windeffekt haben wir lange Dreiecksstreifen in einem Compute-Shader generiert, wodurch viele Wisps von Wind auf der Welt erzeugt wurden. Obwohl der Windeffekt aufgrund der generierten Skinny Strips nicht stark auf die Füllrate antraten, erzeugte er viele Hunderttausend Scheitelpunkte, was zu einer hohen Last für den Vertex-Shader führt.
 
-Wir haben anfügen-Puffer im COMPUTE-Shader eingeführt, um eine Teilmenge der zu zeichnungsenden Wind Striche zu übertragen. Mit einer einfachen Ansichts Logik für die Logik der Logik im COMPUTE-Shader könnten wir feststellen, ob sich ein Strip außerhalb der Kameraansicht befunden hat, und verhindern, dass er dem Push-Puffer hinzugefügt wird. Dadurch wurde die Menge der Bänder erheblich reduziert, sodass einige benötigte Zyklen auf der GPU freigegeben wurden.
+Wir haben Anfügepuffer für den Compute-Shader eingeführt, um eine Teilmenge der zu ziehenden Windstreifen zu befeeden. Mit einer einfachen Logik zur Frustum-Cullingansicht im Compute-Shader könnten wir ermitteln, ob sich ein Strip außerhalb der Kameraansicht befängt, und verhindern, dass er dem Pushpuffer hinzugefügt wird. Dadurch wurde die Anzahl der Strips erheblich reduziert, was einige benötigte Zyklen auf der GPU freit.
 
-**Code, der einen anfügen-Puffer veranschaulicht:**
+**Code, der einen Anfügepuffer zeigt:**
 
 *Compute-Shader:*
 
@@ -267,46 +267,46 @@ protected void Update()
 }
 ```
 
-Wir haben versucht, die gleiche Technik für die cloudpartikel zu verwenden, bei denen wir Sie im COMPUTE-Shader aufschieben und nur die sichtbaren Partikel per Push über die gerendert werden. Dieses Verfahren hat uns in der GPU nicht viel gespart, weil der größte Engpass die auf dem Bildschirm gerenderten Menge Pixel und nicht die Kosten für die Berechnung der Scheitel Punkte war.
+Wir haben versucht, die gleiche Technik für die Cloudteilchen zu verwenden, bei der wir sie auf dem Compute-Shader entfernen und nur die sichtbaren Partikel zum Rendern pushen. Diese Technik hat uns tatsächlich nicht viel auf der GPU sparen, da der größte Engpass die Anzahl der auf dem Bildschirm gerenderten Pixel und nicht die Kosten für die Berechnung der Scheitelpunkte war.
 
-Das andere Problem bei dieser Technik war, dass der Anfügen-Puffer in zufälliger Reihenfolge aufgefüllt wurde, weil er die Partikel parallelisiert hat, was dazu führte, dass die sortierten Partikel nicht sortiert wurden, was zu einem Flimmern von cloudpartikeln führte.
+Das andere Problem bei dieser Technik war, dass der Anfügepuffer in zufälliger Reihenfolge aufgefüllt wurde, da die Partikel parallelisiert werden, sodass die sortierten Partikel nicht sortiert wurden, was zu flackernden Cloudteilchen führt.
 
-Es gibt Techniken zum Sortieren des Push-Puffers, aber die begrenzte Menge an Leistungsvorteilen, die wir nicht mit der Verwendung von culelt haben, wäre wahrscheinlich mit einer zusätzlichen Sortierung ausgeglichen, daher haben wir entschieden, diese Optimierung nicht zu verfolgen.
+Es gibt Techniken zum Sortieren des Pushpuffers, aber die begrenzte Menge an Leistungssteigerungen, die wir aus dem Culling von Partikeln erhalten haben, würde wahrscheinlich mit einer zusätzlichen Sortierung versetzt werden, daher haben wir uns entschieden, diese Optimierung nicht zu verfolgen.
 
-## <a name="adaptive-rendering"></a>Adaptive Rendering
+## <a name="adaptive-rendering"></a>Adaptives Rendering
 
-Um eine stetige Framerate für eine APP zu gewährleisten, die unterschiedliche renderingbedingungen wie z. b. eine bewölkt und eine klare Ansicht hat, haben wir das adaptive Rendering unserer App
+Um eine stabile Framerate für eine App mit unterschiedlichen Renderingbedingungen wie einer cloudbasierten oder einer klaren Ansicht sicherzustellen, haben wir adaptives Rendering für unsere App eingeführt.
 
-Der erste Schritt beim adaptiven Rendering ist das Messen der GPU. Hierzu haben wir benutzerdefinierten Code am Anfang und am Ende eines gerenderten Frames in den GPU-Befehls Puffer eingefügt, wobei sowohl der linke als auch der Rechte Bildschirm Zeitpunkt erfasst werden.
+Der erste Schritt des adaptiven Renderings besteht im Messen der GPU. Hierzu haben wir benutzerdefinierten Code am Anfang und Ende eines gerenderten Frames in den GPU-Befehlspuffer eingefügt und die Zeit des linken und rechten Blickbildschirms erfasst.
 
-Durch Messen der Zeit, die für das Rendern und vergleichen mit der gewünschten Aktualisierungsrate aufgewendet wurde, haben wir einen Eindruck davon bekommen, wie nah das Ablegen der Rahmen ist.
+Indem wir die Zeit für das Rendering messen und mit der gewünschten Aktualisierungsrate vergleichen, haben wir ein Gefühl dafür bekommen, wie nah wir am Löschen von Frames waren.
 
-Wenn Sie in der Nähe von Frames ablegen, wird unser Rendering angepasst, um es schneller zu machen. Eine einfache Möglichkeit zur Anpassung ist das Ändern der Viewportgröße des Bildschirms, sodass weniger Pixel gerendert werden müssen.
+Wenn sie sich dem Löschen von Frames naht, passen wir unser Rendering an, um es schneller zu machen. Eine einfache Möglichkeit zur Anpassung besteht in der Änderung der Viewportgröße des Bildschirms, die weniger Pixel erfordert, um gerendert zu werden.
 
-Durch die Verwendung von *unityengine. XR. xrsettings. renderviewportscale* verkleinert das System den zielviewport und dehnt das Ergebnis automatisch auf den Bildschirm aus. Eine kleine Größenänderung ist in der Welt Geometrie kaum bemerkbar, und für den Skalierungsfaktor 0,7 ist die Hälfte der zu rendernden Pixel erforderlich.
+Mit *UnityEngine.XR.XRSettings.renderViewportScale* verkleinert das System den zielorientierten Viewport und streckt das Ergebnis automatisch wieder nach oben, damit es dem Bildschirm passt. Eine kleine Skalierungsänderung ist in der Geometrie der Welt spürbar, und ein Skalierungsfaktor von 0,7 erfordert, dass die Hälfte der Pixel gerendert wird.
 
-![70% Skalierung, halbe Pixel](images/datascape-scaling-700px.jpg)
+![70 % Skalierung, die Hälfte der Pixel](images/datascape-scaling-700px.jpg)
 
-Wenn wir feststellen, dass wir im Begriff sind, Frames abzulegen, verringern wir die Skalierung um eine festgelegte Zahl und erhöhen Sie wieder, wenn wir schneller genug ausgeführt werden.
+Wenn wir feststellen, dass wir Frames ablegen möchten, senken wir die Skala um eine feste Zahl und erhöhen sie wieder, wenn wir wieder schnell genug ausgeführt werden.
 
-Wir haben entschieden, welches cloudverfahren auf der Grundlage von Grafikfunktionen der Hardware beim Start verwendet werden soll. es ist jedoch möglich, es auf Daten aus der GPU-Messung zu basieren, um zu verhindern, dass das System lange Zeit mit einer geringen Auflösung bleibt, aber dies ist keine Zeit für die Untersuchung in datascape.
+Wir haben uns zwar entschieden, welche Cloudtechnik basierend auf den Grafikfunktionen der Hardware beim Start verwendet werden soll, aber es ist möglich, sie auf Daten der GPU-Messung zu basieren, um zu verhindern, dass das System lange Zeit eine niedrige Auflösung aufhält. Dies war jedoch etwas, das wir in Datascape nicht untersuchen mussten.
 
 ## <a name="final-thoughts"></a>Schlussbemerkungen
 
-Die Ausrichtung auf eine Vielzahl von Hardware ist schwierig und erfordert einige Planungsaufwand.
+Die Ausrichtung auf eine Vielzahl von Hardware ist eine Herausforderung und erfordert einige Planungen.
 
-Es wird empfohlen, dass Sie mit den Ziel Computern beginnen, sich mit dem Problem Raum vertraut zu machen und eine Sicherungs Lösung zu entwickeln, die auf allen Computern ausgeführt wird. Entwerfen Sie Ihre Lösung mit der Füllrate im Hinterkopf, da Pixel ihre äußerst wertvolle Ressource sein wird. Ziel-Solid Geometry über Transparenz.
+Es wird empfohlen, mit der Ausrichtung auf weniger betriebene Computer zu beginnen, um sich mit dem Problembereich vertraut zu machen und eine Sicherungslösung zu entwickeln, die auf allen Ihren Computern ausgeführt wird. Entwerfen Sie Ihre Lösung mit Füllrate, da Pixel die beliebtesten Ressourcen sind. Vollwertgeometrie über Transparenz als Ziel.
 
-Mit einer Sicherungs Lösung können Sie die ebenenkomplexität für High-End-Computer erhöhen oder einfach die Lösung ihrer Sicherungs Lösung optimieren.
+Mit einer Sicherungslösung können Sie dann mit einer komplexeren Schichtung für High-End-Computer beginnen oder die Auflösung Ihrer Sicherungslösung verbessern.
 
-Entwerfen Sie für den schlimmsten Fallszenarien, und verwenden Sie ggf. das adaptive Rendering für große Situationen.
+Entwerfen Sie für ungünstigste Szenarien, und erwägen Sie möglicherweise die Verwendung von adaptivem Rendering für große Situationen.
 
 ## <a name="about-the-authors"></a>Über die Autoren
 
 <table style="border:0">
 <tr>
 <td style="border:0" width="60px"><img alt="Picture of Robert Ferrese" width="60" height="60" src="images/robert-ferrese-60px.jpg"></td>
-<td style="border:0"><b>Robert ferrese</b><br>Anwendungsentwickler @Microsoft</td>
+<td style="border:0"><b>Robert Mussese</b><br>Anwendungsentwickler @Microsoft</td>
 </tr>
 <tr>
 <td style="border:0" width="60px"><img alt="Picture of Dan Andersson" width="60" height="60" src="images/dan-andersson-60px.jpg"></td>
@@ -315,8 +315,8 @@ Entwerfen Sie für den schlimmsten Fallszenarien, und verwenden Sie ggf. das ada
 </table>
 
 
-## <a name="see-also"></a>Weitere Informationen
-* [Grundlegendes zur Leistung für gemischte Realität](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
-* [Empfehlungen zur Leistung für Unity](../develop/unity/performance-recommendations-for-unity.md)
+## <a name="see-also"></a>Siehe auch
+* [Grundlegendes zur Leistung Mixed Reality](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
+* [Leistungsindikatoren Empfehlungen Unity](../develop/unity/performance-recommendations-for-unity.md)
 
  

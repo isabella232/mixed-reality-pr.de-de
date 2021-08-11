@@ -1,101 +1,101 @@
 ---
 title: Versionshinweise – Oktober 2017
-description: Bleiben Sie auf dem neuesten Stand der Windows Mixed Reality-Versions Hinweise für das Windows 10 Fall Creators Update (Oktober 2017).
+description: Bleiben Sie auf dem neuesten Stand zu den Windows Mixed Reality Versionshinweisen für die Windows 10 Fall Creators Update (Oktober 2017).
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Anmerkungen zu dieser Version, Version, Windows 10, Build, RS3, Betriebssystem
-ms.openlocfilehash: e3be8edab2aedd18013622c671283b71f95f98d8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Versionshinweise, Version, Windows 10, Build, rs3, os
+ms.openlocfilehash: 09a33e1bc4a13c75e4c8a0ee250c7b67eb8e68e21220840037085e727acfb1f3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190594"
 ---
 # <a name="release-notes---october-2017"></a>Versionshinweise – Oktober 2017
 
-Willkommen bei Windows Mixed Reality! Die **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** -Version bietet Unterstützung für neue [Windows Mixed Reality-immersive Headsets](/windows/mixed-reality/discover/immersive-headset-hardware-details) und [Bewegungs Controller](/windows/mixed-reality/design/motion-controllers). Sie können jetzt neue Welten erkunden, VR-Spiele spielen und eine immersive Unterhaltung erleben, wenn Sie mit einem [Windows Mixed Reality-fähigen PC](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)verbunden sind.
+Willkommen bei Windows Mixed Reality! Das **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** Release bietet Unterstützung für neue [Windows Mixed Reality immersive Headsets](/windows/mixed-reality/discover/immersive-headset-hardware-details) und [Motion-Controller.](/windows/mixed-reality/design/motion-controllers) Sie können jetzt neue Welten erkunden, VR-Spiele spielen und immersive Unterhaltung erleben, wenn Sie mit einem [Windows Mixed Reality fähigen PC](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)verbunden sind.
 
-Die Windows Mixed Reality-und Motion Controllers-Version ist der Höhepunkt eines enormen Team Aufwands und ein wichtiger Schritt für die [Windows Mixed Reality-Plattform](/windows/mixed-reality/discover/mixed-reality), einschließlich [Microsoft hololens](/windows/mixed-reality/hololens-hardware-details). Obwohl hololens kein Update mit dem Windows 10 Fall Creators Update empfängt, wurde die Arbeit an hololens nicht angehalten. Wir werden viele Erkenntnisse und Einblicke erhalten, um von der aktuellen Arbeit in Windows Mixed Reality als Ganzes zu kommen. Tatsächlich stellen immersive Headsets und Bewegungs Controller in Windows Mixed Reality einen hervorragend Einstiegspunkt für die Entwicklung von hololens dar, da dieselben APIs, Tools und Konzepte für beides gelten.
+Die freigaben Windows Mixed Reality Headsets und Motion Controller sind das Ergebnis einer enormen Teamarbeit und ein wichtiger Schritt nach vorn für die [Windows Mixed Reality-Plattform,](/windows/mixed-reality/discover/mixed-reality)einschließlich [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details). Obwohl HoloLens kein Update mit dem Windows 10 Fall Creators Update empfängt, wurde die Arbeit an HoloLens nicht beendet. Wir werden viele Erkenntnisse und Erkenntnisse aus unserer aktuellen Arbeit für Windows Mixed Reality als Ganzes anwenden können. Tatsächlich stellen Windows Mixed Reality immersive Headsets und Motion Controller auch für HoloLens einen hervorragenden Einstiegspunkt für die Entwicklung dar, da die gleichen APIs, Tools und Konzepte für beide gelten.
 
-Um für jedes Gerät ein Update auf die neueste Version zu starten, öffnen Sie die app " **Einstellungen** ", navigieren Sie zu **Update & Sicherheit**, und wählen Sie dann die Schaltfläche **nach Updates suchen** . Auf einem Windows 10-PC können Sie das Windows 10 Fall Creators Update auch manuell mithilfe des [Windows Media-Erstellungs Tools](https://www.microsoft.com/software-download/windows10)installieren.
+Öffnen Sie zum Aktualisieren auf die  neueste Version für jedes Gerät die Einstellungen-App, wechseln Sie zu **Update & Security (Sicherheit** aktualisieren), und wählen Sie dann die Schaltfläche **Nach Updates suchen** aus. Auf einem Windows 10 PC können Sie die Windows 10 Fall Creators Update auch manuell installieren, indem Sie das [Windows Medienerstellungstool verwenden.](https://www.microsoft.com/software-download/windows10)
 
- **Neueste Version für Desktop:** Windows 10 Desktop Oktober 2017 (**10.0.16299.15**, Windows 10 Fall Creators Update)<br>
- **Neueste Version für hololens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
+ **Neuestes Release für Desktop:** Windows 10 Desktop Oktober 2017 (**10.0.16299.15**, Windows 10 Fall Creators Update)<br>
+ **Neuestes Release für HoloLens:** [Windows 10 Holographic August 2016](release-notes-august-2016.md) (**10.0.14393.0**, Windows 10 Anniversary Update)
 
 >[!VIDEO https://www.youtube.com/embed/YBcLy1lkegg]
 
 ## <a name="introducing-windows-mixed-reality"></a>Einführung in Windows Mixed Reality
 
-Das Windows 10 Fall Creators Update führt offiziell die Unterstützung für Windows Mixed Reality-Headsets und Bewegungs Controller ein und macht Windows 10 das erste räumliche Betriebssystem der Welt. Dies umfasst u.a. die folgenden Funktionen:
-* Eine **[Vielzahl von Headsets](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** : in Windows Mixed Reality können Partner unterschiedliche Headset-Typen anbieten, beginnend bei $399 USD mit Motion-Controllern.
-* **[Motion-Controller](/windows/mixed-reality/design/motion-controllers)** -Windows Mixed Reality Motion Controllers koppeln Sie drahtlos mit Ihrem PC über Bluetooth, und die Nachverfolgung von sechs Grad an Freiheit, zahlreiche Eingabemethoden und Imus.
-* **[Einfache Einrichtung und Portabilität](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** : Einrichtung und Einstieg in weniger als 10 Minuten. Immersive Headsets verwenden die in-out-Nachverfolgung, um Ihre Bewegung und ihre Bewegungs Controller mit sechs Grad an Freiheiten zu verfolgen. Es sind keine externen Kameras oder Leuchtturm Marker erforderlich!
-* **[Unterstützung für eine größere Anzahl von PCs](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)** : in Windows Mixed Reality können mehr Benutzer mit dem Desktop-VR arbeiten als je zuvor, mit Unterstützung für ausgewählte, integrierte Grafikkarten und PCs ab $499 USD.
-* **[Windows Mixed Reality Home](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** : das erste räumliche Betriebssystem der Welt stellt eine vertraute Heimumgebung für das Multitasking mit 2D-apps, das Starten von VR-spielen und-apps und das Platzieren von dekorativen holograms bereit.
-* **[Beeindruckende VR-Spiele und-apps in der Microsoft Store](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** , von immersiven Unterhaltung wie Hulu VR und 360 Video bis hin zu Epic-spielen wie superhot VR und Arizona Sunshine, bietet das Microsoft Store eine Reihe von Inhalten, die in Windows Mixed Reality angezeigt werden können.
-* **[Steamvr-frühzeitiger Zugriff](./using-steamvr-with-windows-mixed-reality.md)** : das Windows 10 Fall Creators Update ermöglicht die Unterstützung von steamvr-Titeln mit Windows Mixed Reality-Headsets und-Controllern und stellt den größten Katalog von VR-Titeln für Windows Mixed Reality-Benutzer zur Verfügung.
+Der Windows 10 Fall Creators Update bietet offiziell Unterstützung für Windows Mixed Reality Headsets und Motion Controller und macht Windows 10 zum ersten räumlichen Betriebssystem der Welt. Dies umfasst u.a. die folgenden Funktionen:
+* **[Vielzahl von Headsets:](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** Windows Mixed Reality ermöglicht Partnern das Anbieten verschiedener Headsettypen ab 399 USD, gebündelt mit Motion-Controllern.
+* **[Motion-Controller:](/windows/mixed-reality/design/motion-controllers)** Windows Mixed Reality Motion-Controller über Bluetooth drahtlos mit Ihrem PC gekoppelt sind und sechs Grad an Nachverfolgung, eine Vielzahl von Eingabemethoden und IMUs bieten.
+* **[Einfache Einrichtung und Portabilität:](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** Richten Sie ein, und beginnen Sie in weniger als 10 Minuten. Immersive Headsets verwenden die Inside-Out-Nachverfolgung, um Ihre Bewegung und Ihre Motion-Controller mit sechs Grad Anlauf nachzuverfolgen. Keine externen Kameras oder Lighthousemarker erforderlich!
+* **[Unterstützung für eine größere Bandbreite von PCs:](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)** Windows Mixed Reality ermöglichen es mehr Personen als je zuvor, Desktop-VR zu erleben, mit Unterstützung für ausgewählte integrierte Grafikkarten und PCs ab 499 USD.
+* **[Windows Mixed Reality Startseite:](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** Das erste räumliche Betriebssystem der Welt bietet eine vertraute Heimumgebung für Multitasking mit 2D-Apps, das Starten von VR-Spielen und -Apps und das Platzieren von zierliche Hologrammen.
+* **[Beeindruckende VR-Spiele und -Apps in der Microsoft Store:](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)** Von immersiver Unterhaltung wie Hulu VR und 360-Video bis hin zu epic-Spielen wie SUPERHOT VR und Arizona Headset bietet die Microsoft Store eine Reihe von Inhalten, die sie in Windows Mixed Reality erleben können.
+* Early Access von **[SteamVR:](./using-steamvr-with-windows-mixed-reality.md)** Die Windows 10 Fall Creators Update ermöglicht die Wiedergabe von SteamVR-Titeln mit Windows Mixed Reality Headsets und Controllern, sodass Windows Mixed Reality Benutzern der größte Katalog mit VR-Titeln zur Verfügung steht.
 
 ## <a name="known-issues"></a>Bekannte Probleme
 
-Wir haben hart daran gearbeitet, eine großartige Windows Mixed Reality-Erfahrung bereitzustellen, aber wir verfolgen weiterhin einige bekannte Probleme. Wenn Sie andere finden, [Geben Sie uns Feedback](/windows/mixed-reality/give-us-feedback).
+Wir haben hart daran gearbeitet, eine hervorragende Windows Mixed Reality zu bieten, aber wir verfolgen weiterhin einige bekannte Probleme. Wenn Sie andere finden, [senden Sie uns Feedback.](/windows/mixed-reality/give-us-feedback)
 
-### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>Desktop-app in der Windows Mixed Reality-Startseite
-* Das Snipping-Tool funktioniert nicht in der Desktop-App.
-* Die Desktop-App speichert die Einstellung beim Neustart nicht.
-* Wenn Sie auf Ihrem Desktop die Mixed Reality Portal Preview-Version verwenden, können Sie beim Öffnen der Desktop-app in der Windows Mixed Reality-Startseite den unendlichen Spiegeleffekt bemerken. 
-* Das Ausführen der Desktop-App kann bei nicht-Ultra-Windows Mixed Reality-PCs zu Leistungsproblemen führen. Dies wird nicht empfohlen.  
-* Die Desktop-App kann automatisch gestartet werden, da ein unsichtbares Fenster auf dem Desktop den Fokus besitzt. 
-* Bei der Eingabeaufforderung für die Desktop Benutzerkontensteuerung wird das Headset schwarz angezeigt, bis die Eingabeaufforderung abgeschlossen ist.
+### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>Desktop-App im Windows Mixed Reality Startseite
+* Snipping Tool funktioniert in der Desktop-App nicht.
+* Die Desktop-App bleibt beim Neustart nicht erhalten.
+* Wenn Sie Mixed Reality-Portal Vorschauversion auf Ihrem Desktop verwenden, werden Sie beim Öffnen der Desktop-App im Windows Mixed Reality Home möglicherweise den Unendlichkeitsspiegelungseffekt bemerken. 
+* Das Ausführen der Desktop-App kann zu Leistungsproblemen auf PCs ohne Ultra-Windows Mixed Reality führen. es wird nicht empfohlen.  
+* Die Desktop-App kann automatisch gestartet werden, da ein unsichtbares Fenster auf Desktop den Fokus besitzt. 
+* Die Eingabeaufforderung für die Desktopbenutzerkontosteuerung macht das Headset schwarz, bis die Eingabeaufforderung abgeschlossen ist.
 
 ### <a name="windows-mixed-reality-setup"></a>Windows Mixed Reality-Setup
-* Wenn Sie Windows mit einem mit einem Headset verbundenen Verbindungsaufbau einrichten, wird der PC-Monitor möglicherweise leer. Entfernen Sie Ihr Headset, um die Ausgabe an Ihren PC-Monitor zu aktivieren und Windows Setup abzuschließen.
-* Beim Erstellen einer Grenze schlägt die Ablauf Verfolgung möglicherweise fehl. Wenn dies der Fall ist, versuchen Sie es erneut, da das System im Laufe der Zeit mehr über Ihren Raum erfährt.
-* Wenn Sie Cortana während des Windows Mixed Reality-Setups aktivieren oder deaktivieren, wird diese Änderung auf Ihre Desktop-Cortana-Einstellungen angewendet.
-* Wenn Sie keine Kopfhörer verbunden haben, können Sie Tipps verpassen, wenn Sie zum ersten Mal die Windows Mixed Reality-Startseite besuchen.
-* Bluetooth-Kopfhörer können zu Störungen bei Bewegungs Controllern führen. Es wird empfohlen, Bluetooth-Controller bei Windows Mixed Reality-Sitzungen abzukoppeln oder herunter zu schalten.
+* Wenn Sie Windows mit einem verbundenen Headset einrichten, ist Ihr PC-Monitor möglicherweise leer. Trennen Sie Ihr Headset, um die Ausgabe an Ihren PC-Monitor zu aktivieren, um Windows Setup abzuschließen.
+* Beim Erstellen einer Grenze kann die Ablaufverfolgung fehlschlagen. Wenn ja, versuchen Sie es erneut, da das System mehr über Ihren Speicherplatz im Laufe der Zeit erfahren wird.
+* Wenn Sie Cortana während Windows Mixed Reality Setup aktivieren oder deaktivieren, wird diese Änderung auf Ihre Desktopeinstellungen Cortana angewendet.
+* Wenn sie keine Verbundenen haben, fehlen Ihnen möglicherweise Tipps, wenn Sie das Windows Mixed Reality Startseite zum ersten Mal besuchen.
+* Bluetooth Kann zu Störungen bei Motion-Controllern führen. Es wird empfohlen, Bluetooth Controller während Windows Mixed Reality Sitzungen nicht zu schließen oder ausgeschaltet zu lassen.
 
-### <a name="games-and-apps-from-windows-store"></a>Spiele und Apps aus dem Windows Store
-* Einige grafisch intensive Spiele, wie z. b. Forza Motorsport 6, können zu Leistungsproblemen auf weniger leistungsfähigen PCs führen, wenn Sie in Windows Mixed Reality gespielt werden.
+### <a name="games-and-apps-from-windows-store"></a>Spiele und Apps aus Windows Store
+* Einige grafisch intensive Spiele, z. B. ForzaUngs 6, können leistungsprobleme auf weniger leistungsfähigen PCs verursachen, wenn sie innerhalb Windows Mixed Reality wiedergegeben werden.
 
 ### <a name="audio"></a>Audio
-* Wie bereits erwähnt, funktionieren Bluetooth-Audioperipherie-Peripheriegeräte nicht gut mit Windows Mixed Reality Voice und räumlichen Sound Erlebnissen. Sie können sich auch negativ auf die Benutzeroberflächen Funktion des Bewegungs Controllers auswirken. Es wird nicht empfohlen, Bluetooth-Audioheadsets mit Windows Mixed Reality zu verwenden.
-* Sie können das Audiogerät, das mit (oder teilweise) verbunden ist, nicht für die Audiowiedergabe verwenden, wenn das Gerät nicht genutzt wird. Wenn Sie nur über ein audioheadset verfügen, empfiehlt es sich möglicherweise, das audioheadset mit dem Host-PC anstatt mit dem Headset zu verbinden. Wenn dies der Fall ist, müssen Sie in den **Einstellungen**  >  **Mixed Reality**  >  **Audiound Speech** die Option "an Headset-audiowechsel wechseln" deaktivieren.
-* Einige Anwendungen, einschließlich vieler Anwendungen, die über steamvr gestartet werden, können das Audiogerät verlieren, wenn sich das Audiogerät ändert, wenn Sie das Mixed Reality-Portal starten oder beenden. Starten Sie die APP neu, nachdem Sie die Mixed Reality-Portal-app geöffnet haben, um dies zu korrigieren.
-* Wenn Cortana auf Ihrem Host-PC aktiviert ist, bevor Sie Ihr Windows Mixed Reality-Headset verwenden, verlieren Sie möglicherweise die räumliche Audiosimulation, die auf die apps angewendet wird, die Sie in der Windows Mixed Reality-Startseite platzieren. Die Problem Umgehung besteht darin, "Windows Sonic for Kopfhörer" auf allen Audiogeräten zu aktivieren, die an Ihren PC angeschlossen sind, auch mit Ihrem mit dem Headset verbundenen Audiogerät:
-   1. Klicken Sie in der Desktop-Taskleiste mit der linken Maustaste auf das Redner Symbol, und wählen Sie aus der Liste der Audiogeräte.
-   2. Klicken Sie in der Desktop-Taskleiste mit der rechten Maustaste auf das Redner Symbol, und wählen Sie im Menü "sprechersetup" die Option "Windows-Sound für Kopfhörer"
-   3. Wiederholen Sie diese Schritte für alle Ihre Audiogeräte (Endpunkte).
+* Wie bereits erwähnt, funktionieren Bluetooth Audioperipheriegeräte nicht gut mit Windows Mixed Reality Sprach- und Raumklangerfahrungen. Sie können sich auch negativ auf die Motion Controller-Erfahrung auswirken. Es wird nicht empfohlen, Bluetooth Audio-Headsets mit Windows Mixed Reality zu verwenden.
+* Sie können das Audiogerät, das mit dem Headset verbunden ist (oder ein Teil davon ist), nicht für die Audiowiedergabe verwenden, wenn das Gerät nicht ausgeschaltet wird. Wenn Sie nur über ein Audio-Headset verfügen, sollten Sie das Audio-Headset mit dem Host-PC anstelle des Headsets verbinden. Wenn ja, müssen Sie "Zu Headsetaudio wechseln" in **Einstellungen**  >  **Mixed Reality**  >  **Audio und Sprache** deaktivieren.
+* Einige Anwendungen, z. B. viele anwendungen, die über SteamVR gestartet werden, können Audiodaten verlieren oder hängen bleiben, wenn sich das Audiogerät ändert, wenn Sie die Mixed Reality-Portal starten oder beenden. Starten Sie die App neu, nachdem Sie die Mixed Reality-Portal-App geöffnet haben, um dies zu korrigieren.
+* Wenn Cortana auf Ihrem Host-PC aktiviert ist, bevor Sie Ihr Windows Mixed Reality Headset verwenden, verlieren Sie möglicherweise die Raumklangsimulation, die auf die Apps angewendet wird, die Sie im Windows Mixed Reality Haus platzieren. Die Umarbeitung besteht darin, "Windows Sonic für Kopfhörer" auf allen Audiogeräten zu aktivieren, die an Ihren PC angefügt sind, sogar auf Ihrem Audiogerät, das mit dem Headset verbunden ist:
+   1. Klicken Sie mit der linken Maustaste auf das Lautsprechersymbol auf der Desktoptaskleiste, und wählen Sie aus der Liste der Audiogeräte aus.
+   2. Klicken Sie mit der rechten Maustaste auf das Lautsprechersymbol auf der Desktoptaskleiste, und wählen Sie im Menü "Speaker setup" (Lautsprechereinrichtung) die Option "Windows Sonic für Kopfhörer" aus.
+   3. Wiederholen Sie diese Schritte für alle Audiogeräte (Endpunkte).
 >[!NOTE]
-> - Da die mit Ihrem Headset verbundenen Kopfhörer/Referenten nicht angezeigt werden, wenn Sie Sie nicht verwenden, müssen Sie dies innerhalb des Fensters Desktop-App des Windows Mixed Reality-Home tun, um diese Einstellung auf das Audiogerät anzuwenden, das mit Ihrem Headset verbunden ist (oder in Ihr Headset integriert ist).
-> - Eine andere Möglichkeit besteht darin, die Option "Cortana auf Hallo Cortana Antworten" in den **Einstellungen**  >  **Cortana** auf Ihrem Desktop zu deaktivieren, bevor Windows Mixed Reality gestartet wird.
+> - Da die mit Ihrem Headset verbundenen Lautsprecher nicht angezeigt werden, es sei denn, Sie tragen es aus, müssen Sie dies über das Fenster der Desktop-App im Windows Mixed Reality Home tun, um diese Einstellung auf das Audiogerät anzuwenden, das mit Ihrem Headset verbunden ist (oder in Ihr Headset integriert ist).
+> - Eine weitere Möglichkeit besteht darin, "Let Cortana respond to Hey Cortana" in **Einstellungen**  >  **Cortana** auf Ihrem Desktop zu deaktivieren, bevor Windows Mixed Reality gestartet wird.
 
-* Wenn ein anderes Multimedia-USB-Gerät (z. b. eine Web-Cam) denselben USB-Hub (entweder extern oder innerhalb Ihres PCs) mit dem Windows Mixed Reality-Headset gemeinsam nutzt, kann der AudioJack/-Kopfhörer des Headsets in seltenen Fällen entweder einen rauschenden Sound oder überhaupt keine Audiodaten enthalten. Sie können dies durch Ihr Headset an einem USB-Anschluss beheben, der nicht denselben Hub wie das andere Gerät hat, oder Sie können ihr anderes USB-Multimediagerät trennen bzw. deaktivieren.
-* In seltenen Fällen kann der USB-Hub des Host-PCs nicht genügend Stromversorgung für das Windows Mixed Reality-Headset bereitstellen, und Sie bemerken möglicherweise einen Burst Rausch von dem Kopfhörer, der mit dem Headset verbunden ist.
+* Wenn sich ein anderes Multimedia-USB-Gerät (z. B. ein Webnadel) denselben USB-Hub (entweder extern oder innerhalb Ihres PCs) mit dem Windows Mixed Reality Headset teilt, kann es in seltenen Fällen vorkommen, dass die Audiobuchsen/-stecker des Headsets entweder einen Sound oder überhaupt keine Audiodaten aufweisen. Sie können dies über Ihr Headset an einem USB-Anschluss beheben, der nicht denselben Hub wie das andere Gerät verwendet, oder Ihr anderes USB-Multimediagerät trennen/deaktivieren.
+* In seltenen Fällen kann der USB-Hub des Host-PCs nicht genügend Strom für das Windows Mixed Reality Headset bereitstellen, und Sie bemerken möglicherweise einen Burst von Rauschen von den mit dem Headset verbundenen Lautsprechern.
 
 ### <a name="speech"></a>Spracheingabe/-ausgabe
-* Cortana kann Ihre Audiohinweise zum lauschen/überdenken und audioantworten auf Befehle nicht wiedergeben.
-* Cortana in China-und Japan-Märkten zeigt während der Verwendung keinen ordnungsgemäßen Text unterhalb des Cortana-Kreises an.
-* Cortana kann langsam sein, wenn Sie zum ersten Mal in einer gemischten Reality-Portal Sitzung aufgerufen wird. Sie können dieses Problem umgehen, indem Sie sicherstellen, dass Cortana auf Hey Cortana antwortet, unter **Einstellungen**  >  **Cortana**  >  **Talk to Cortana** aktiviert ist.
-* Cortana kann auf PCs, die keine Windows Mixed Reality Ultra-PCs sind, langsamer ausgeführt werden.
-* Wenn die System Tastatur auf eine Sprache festgelegt ist, die sich von der Benutzeroberflächen Sprache in Windows Mixed Reality unterscheidet, führt die Verwendung von Diktat auf der Tastatur in Windows Mixed Reality zu einem Fehler Dialogfeld, dass das Diktat nicht funktioniert, da keine Wi-Fi Verbindung besteht. Um das Problem zu beheben, stellen Sie sicher, dass die Tastatur Sprache des Systems mit der Programmiersprache Windows Mixed Reality übereinstimmt.
-* Spanien wird nicht ordnungsgemäß als Markt erkannt, auf dem Sprache für Windows Mixed Reality aktiviert ist.
+* Cortana können ihre Audiohinweise zum Lauschen/Denken und Audioantworten auf Befehle möglicherweise nicht wiedergeben.
+* Cortana in china- und japanischen Märkten zeigt text während der Verwendung nicht ordnungsgemäß unter dem Cortana Kreis an.
+* Cortana kann beim ersten Aufruf in einer Mixed Reality-Portal Sitzung langsam sein. Sie können dies umgehen, indem Sie sicherstellen, dass "Let Cortana respond to Hey Cortana" unter **Einstellungen**  >  **Cortana**  >  **Talk to Cortana** aktiviert ist.
+* Cortana werden möglicherweise langsamer auf PCs ausgeführt, die nicht Windows Mixed Reality Ultra PCs sind.
+* Wenn Die Systemtastatur auf eine andere Sprache als die Benutzeroberflächensprache in Windows Mixed Reality festgelegt ist, führt die Verwendung des Diktats von der Tastatur in Windows Mixed Reality zu einem Fehlerdialogfeld, in dem das Diktat nicht funktioniert, weil keine Wi-Fi Verbindung besteht. Um das Problem zu beheben, stellen Sie sicher, dass die Tastatursprache des Systems mit der Windows Mixed Reality Benutzeroberflächensprache übereinstimmt.
+* Spanien wird nicht ordnungsgemäß als Markt erkannt, in dem Sprache für Windows Mixed Reality aktiviert ist.
 
 ### <a name="holograms"></a>Holograms
-* Wenn Sie in Ihrer Windows Mixed Reality-Homepage eine große Anzahl von holograms platziert haben, werden einige möglicherweise nicht mehr angezeigt, und Sie werden bei der Suche wieder angezeigt. Um dies zu vermeiden, entfernen Sie einige der Hologramme in diesem Bereich des Windows Mixed Reality-Home.
+* Wenn Sie eine große Anzahl von Hologrammen in Ihrem Windows Mixed Reality Haus platziert haben, werden einige möglicherweise ausgeblendet und wieder angezeigt, wenn Sie sich umsehen. Um dies zu vermeiden, entfernen Sie einige der Hologramme in diesem Bereich der Windows Mixed Reality Startseite.
 
 ### <a name="motion-controllers"></a>Bewegungscontroller
-* Wenn Sie eine Webseite in Edge auswählen, wird der Inhalt manchmal vergrößert, anstatt auf "Click".
-* Wenn Sie einen Link in Edge auswählen, funktioniert die Auswahl manchmal nicht.
+* Wenn Sie eine Webseite in Edge auswählen, wird der Inhalt gelegentlich vergrößert, anstatt zu klicken.
+* Wenn Sie in Edge einen Link auswählen, funktioniert die Auswahl manchmal nicht.
 
-## <a name="prior-release-notes"></a>Vorherige Anmerkungen zu dieser Version
+## <a name="prior-release-notes"></a>Anmerkungen zu früheren Versionen
 * [Versionshinweise – August 2016](release-notes-august-2016.md)
 * [Versionshinweise – Mai 2016](release-notes-may-2016.md)
 * [Versionshinweise – März 2016](release-notes-march-2016.md)
 
-## <a name="see-also"></a>Weitere Informationen
-* [Immersive Headset-Unterstützung (externer Link)](./troubleshooting-windows-mixed-reality.md)
+## <a name="see-also"></a>Siehe auch
+* [Unterstützung für immersive Headsets (externer Link)](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens – bekannte Probleme](/windows/mixed-reality/hololens-known-issues)
 * [Installieren der Tools](/windows/mixed-reality/develop/install-the-tools)
 * [Geben Sie uns Feedback](/windows/mixed-reality/give-us-feedback)

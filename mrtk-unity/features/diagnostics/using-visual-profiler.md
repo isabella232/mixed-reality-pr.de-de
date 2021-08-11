@@ -1,18 +1,18 @@
 ---
-title: Verwenden des visuellen Profiler
+title: Verwenden des visuellen Profilers
 description: Dokumentation zur Verwendung von Visual Profiler in MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 5db2094b5d7354e02a9e2f06c50e4d564ea7d8d259ce31ad5a11f49a71e27839
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177219"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190933"
 ---
-# <a name="using-the-visual-profiler"></a>Verwenden des visuellen Profiler
+# <a name="using-the-visual-profiler"></a>Verwenden des visuellen Profilers
 
 VisualProfiler bietet eine benutzerfreundliche Anwendungsansicht der Leistung einer Mixed Reality-Anwendung. Der Profiler wird auf allen Mixed Reality Toolkit-Plattformen unterstützt, einschließlich:
 
@@ -28,7 +28,7 @@ Konzentrieren Sie sich beim Entwickeln einer Anwendung auf mehrere Teile der Sze
 
 ## <a name="visual-profiler-interface"></a>Grafische Profiler-Schnittstelle
 
-![Grafische Profiler-Schnittstelle](../images/diagnostics/VisualProfiler.png)
+![Visual Profiler-Schnittstelle](../images/diagnostics/VisualProfiler.png)
 
 Die Visual Profiler-Schnittstelle umfasst die folgenden Komponenten:
 
@@ -47,7 +47,7 @@ Die spezifische Plattform- und Hardwarekonfiguration spielt eine wichtige Rolle 
 - Windows Mixed Reality Ultra: 90
 
 > [!NOTE]
-> Aufgrund einer [Drosselung der Bildfrequenz bei HoloLens wenn der Standard-MRC aktiv ist,](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)blendet sich der visuelle Profiler aus, während Videos und Fotos erfasst werden. Diese Einstellung kann im Diagnosesystemprofil überschrieben werden.
+> Aufgrund der [Drosselung der Bildfrequenz auf HoloLens wenn der Standard-MRC aktiv ist,](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)blendet sich der visuelle Profiler aus, während Videos und Fotos erfasst werden. Diese Einstellung kann im Diagnosesystemprofil überschrieben werden.
 
 ### <a name="frame-time"></a>Framedauer
 
@@ -62,13 +62,13 @@ Die GPU-Zeit soll in einer zukünftigen Version hinzugefügt werden.
 
 Das Framediagramm bietet eine grafische Darstellung des Verlaufs der Framerate der Anwendung.
 
-![Visual Profiler– Graph "Frame verpasst"](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Visual Profiler– Graph für verpassten Frame](../images/diagnostics/VisualProfilerMissedFrames.png)
 
-Wenn Sie die Anwendung verwenden, suchen Sie nach verpassten Frames, die darauf hinweisen, dass die Anwendung ihre Zielbildfrequenz nicht erreicht und möglicherweise Optimierungsaufgaben benötigt.
+Wenn Sie die Anwendung verwenden, suchen Sie nach verpassten Frames, die darauf hindeuten, dass die Anwendung ihre Zielbildrate nicht erreicht und möglicherweise Optimierungsaufgaben benötigt.
 
 ### <a name="memory-utilization"></a>Arbeitsspeichernutzung
 
-Die Anzeige der Speicherauslastung ermöglicht ein einfaches Verständnis der Auswirkungen der aktuellen Ansicht auf den Arbeitsspeicherverbrauch einer Anwendung.
+Die Anzeige der Speicherauslastung ermöglicht ein einfaches Verständnis der Auswirkungen der aktuellen Ansicht auf die Arbeitsspeichernutzung einer Anwendung.
 
 ![Speicher Graph für Visual Profiler](../images/diagnostics/VisualProfilerMemory.png)
 

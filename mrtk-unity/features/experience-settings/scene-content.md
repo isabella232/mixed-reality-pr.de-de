@@ -1,5 +1,5 @@
 ---
-title: Mixed Reality von Szeneninhalten
+title: Inhalte von Mixed Reality-Szenen
 description: Dokumentation zur Mixed Reality Scene Content Component
 author: RogPodge
 ms.author: roliu
@@ -7,14 +7,14 @@ ms.date: 04/13/2021
 ms.localizationpriority: medium
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 7ed81352537bec799721b49c4e2d3d55066c5316
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9980c01b47c3d7d451fda886b4645664f06f204da9967c186382878be947d64f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193226"
 ---
-# <a name="mixed-reality-scene-content"></a>Mixed Reality von Szeneninhalten
+# <a name="mixed-reality-scene-content"></a>Inhalte von Mixed Reality-Szenen
 
 Beim Hinzufügen von MRTK zu einer Szene wird ein `MixedRealitySceneContent` Gameobject erstellt. Dieses Objekt dient als dedizierter Ort zum Platzieren und Instanziieren Mixed Reality Inhalts, um sicherzustellen, dass es über viele verschiedene Erfahrungen hinweg angemessen skaliert wird. Das Gameobject verfügt über eine entsprechende MixedRealitySceneContent-Monobehavior-Klasse, die über den **Alignment Type-Parameter konfiguriert werden** kann.  Dieser Parameter kann die folgenden Werte übernehmen.
 

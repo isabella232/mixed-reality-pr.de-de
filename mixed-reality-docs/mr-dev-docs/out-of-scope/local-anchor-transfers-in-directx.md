@@ -1,39 +1,39 @@
 ---
-title: Lokale Anker Übertragungen in DirectX
-description: Erfahren Sie, wie Sie zwei hololens-Geräte synchronisieren, indem Sie räumliche Anker übertragen, exportieren und serialisieren.
+title: Lokale Ankerübertragungen in DirectX
+description: Erfahren Sie, wie Sie zwei HoloLens synchronisieren, indem Sie Raumanker übertragen, exportieren und serialisieren.
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Hololens, synchronisieren, räumlicher Anker, Übertragung, Multiplayer, Ansicht, Szenario, Exemplarische Vorgehensweise, Beispielcode, Übertragung, lokale Anker Übertragung, Anker Export, Anker Import
-ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens, Synchronisieren, Raumanker, Übertragung, Multiplayer, Ansicht, Szenario, exemplarische Vorgehensweise, Beispielcode, Übertragung, lokale Ankerübertragung, Ankerexport, Ankerimport
+ms.openlocfilehash: df00e323267aa398ba45cfd7a7234c04ce8eca85f2ff3be9b6c9ddee67264085
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195664"
 ---
-# <a name="local-anchor-transfers-in-directx"></a>Lokale Anker Übertragungen in DirectX
+# <a name="local-anchor-transfers-in-directx"></a>Lokale Ankerübertragungen in DirectX
 
-In Fällen, in denen Sie keine <a href="/azure/spatial-anchors" target="_blank">räumlichen Anker von Azure</a>verwenden können, ermöglichen lokale Anker Übertragungen einem hololens-Gerät das Exportieren eines Ankers, der von einem zweiten hololens-Gerät importiert werden soll.
-
->[!NOTE]
->Lokale Anker Übertragungen bieten weniger robusten Anker als Anker als <a href="/azure/spatial-anchors" target="_blank">räumliche Azure-Anker</a>, und IOS-und Android-Geräte werden von diesem Ansatz nicht unterstützt.
+In Situationen, in denen Sie <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>nicht verwenden können, ermöglichen lokale Ankerübertragungen einem HoloLens-Gerät, einen Anker zu exportieren, der von einem zweiten Gerät HoloLens wird.
 
 >[!NOTE]
->Die Code Ausschnitte in diesem Artikel veranschaulichen derzeit die Verwendung von C++/CX anstelle von C + +17-kompatiblen C++/WinRT, wie Sie in der [C++ Holographic-Projektvorlage](../develop/native/creating-a-holographic-directx-project.md)verwendet werden.  Die Konzepte sind äquivalent zu einem C++/WinRT-Projekt. Sie müssen jedoch den Code übersetzen.
+>Lokale Ankerübertragungen bieten weniger stabile Ankerrückrufe als <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>, und iOS- und Android-Geräte werden von diesem Ansatz nicht unterstützt.
 
-## <a name="transferring-spatial-anchors"></a>Übertragen räumlicher Anker
+>[!NOTE]
+>Die Codeausschnitte in diesem Artikel veranschaulichen derzeit die Verwendung von C++/CX anstelle von C++17-kompatiblem C++/WinRT, wie in der holografischen C++-Projektvorlage [verwendet.](../develop/native/creating-a-holographic-directx-project.md)  Die Konzepte sind für ein C++/WinRT-Projekt gleichwertig, obwohl Sie den Code übersetzen müssen.
 
-Räumliche Anker können mithilfe von [spatialanchortransfermanager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)zwischen Windows Mixed Reality-Geräten übertragen werden. Mit dieser API können Sie einen Anker mit allen unterstützenden Sensordaten bündeln, die erforderlich sind, um den genauen Ort auf der Welt zu finden und dann dieses Paket auf ein anderes Gerät zu importieren. Nachdem die APP auf dem zweiten Gerät diesen Anker importiert hat, kann jede APP Hologramme mithilfe des Koordinatensystems des freigegebenen räumlichen Ankers Rendering erzeugen, das dann an derselben Stelle in der realen Welt angezeigt wird.
+## <a name="transferring-spatial-anchors"></a>Übertragen von Raumankern
 
-Beachten Sie, dass räumliche Anker nicht zwischen verschiedenen Gerätetypen übertragen werden können, z. b. kann ein räumlicher hololens-Anker nicht mithilfe eines immersiven Headsets verwendet werden.  Übertragene Anker sind ebenfalls nicht mit IOS-oder Android-Geräten kompatibel.
+Sie können Raumanker zwischen Windows Mixed Reality übertragen, indem Sie [SpatialAnchorTransferManager verwenden.](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) Mit dieser API können Sie einen Anker mit allen unterstützenden Sensordaten bündeln, die benötigt werden, um genau diesen Ort auf der Welt zu finden, und dieses Paket dann auf ein anderes Gerät importieren. Nachdem die App auf dem zweiten Gerät diesen Anker importiert hat, kann jede App Hologramme mithilfe des Koordinatensystems dieses gemeinsamen Raumanker rendern, das dann an derselben Stelle in der realen Welt angezeigt wird.
 
-## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Einrichten Ihrer APP für die Verwendung der spatialperception-Funktion
+Beachten Sie, dass Raumanker nicht zwischen verschiedenen Gerätetypen übertragen werden können, z. B. kann ein HoloLens raumanker mit einem immersiven Headset möglicherweise nicht verkettet werden.  Übertragene Anker sind auch nicht mit iOS- oder Android-Geräten kompatibel.
 
-Ihrer APP muss die Berechtigung zum Verwenden der spatialperception-Funktion erteilt werden, bevor Sie den [spatialanchortransfermanager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)verwenden kann. Dies ist erforderlich, da das übertragen eines räumlichen Ankers das Freigeben von Sensor Bildern im Laufe der Zeit in der Nähe dieses Ankers beinhaltet, die vertrauliche Informationen enthalten können.
+## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>Einrichten Ihrer App für die Verwendung der spatialPerception-Funktion
 
-Deklarieren Sie diese Funktion in der Datei "Package. appxmanifest" für Ihre APP. Hier sehen Sie ein Beispiel:
+Ihrer App muss die Berechtigung zum Verwenden der SpatialPerception-Funktion erteilt werden, bevor sie [SpatialAnchorTransferManager verwenden kann.](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) Dies ist erforderlich, da die Übertragung eines Raumankers das Freigeben von Sensorbildern umfasst, die im Laufe der Zeit in der Nähe dieses Ankers gesammelt wurden, was vertrauliche Informationen enthalten kann.
+
+Deklarieren Sie diese Funktion in der Datei package.appxmanifest für Ihre App. Ein Beispiel:
 
 ```
 <Capabilities>
@@ -41,7 +41,7 @@ Deklarieren Sie diese Funktion in der Datei "Package. appxmanifest" für Ihre AP
 </Capabilities>
 ```
 
-Die Funktion stammt aus dem **uap2** -Namespace. Um Zugriff auf diesen Namespace in ihrem Manifest zu erhalten, fügen Sie ihn als *xlmns* -Attribut in das &lt; Paket>-Element ein. Hier sehen Sie ein Beispiel:
+Die Funktion stammt aus dem **uap2-Namespace.** Um Zugriff auf diesen Namespace in Ihrem Manifest zu erhalten, fügen Sie ihn als *xlmns-Attribut* in das &lt; Package> ein. Ein Beispiel:
 
 ```
 <Package
@@ -53,11 +53,11 @@ Die Funktion stammt aus dem **uap2** -Namespace. Um Zugriff auf diesen Namespace
     >
 ```
 
-**Hinweis:** Ihre APP muss die Funktion zur Laufzeit anfordern, bevor Sie auf die APIs für den Zugriff auf spatialanchor exportieren/importieren zugreifen kann. Weitere Informationen finden Sie in den folgenden Beispielen unter [requestaccessasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) .
+**HINWEIS:** Ihre App muss die Funktion zur Laufzeit anfordern, bevor sie auf SpatialAnchor-Export-/Import-APIs zugreifen kann. Siehe [RequestAccessAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) in den folgenden Beispielen.
 
-## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>Serialisieren von Anker Daten durch Exportieren mit spatialanchortransfermanager
+## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>Serialisieren von Ankerdaten durch Exportieren mit SpatialAnchorTransferManager
 
-Eine Hilfsfunktion ist im Codebeispiel zum Exportieren (Serialisieren) der [spatialanchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Daten enthalten. Diese Export-API serialisiert alle Anker in einer Auflistung von Schlüssel-Wert-Paaren, die Zeichen folgen mit Ankern zuordnen.
+Eine Hilfsfunktion ist im Codebeispiel enthalten, um [SpatialAnchor-Daten](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) zu exportieren (zu serialisieren). Diese Export-API serialisiert alle Anker in einer Sammlung von Schlüssel-Wert-Paaren, die Zeichenfolgen Ankern zuordnen.
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -72,7 +72,7 @@ task<bool> SpatialAnchorImportExportHelper::ExportAnchorDataAsync(
 {
 ```
 
-Zuerst müssen wir den Datenstream einrichten. Dies ermöglicht uns 1.) Verwenden Sie tryexportanchorsasync, um die Daten in einem Puffer zu platzieren, der der APP gehört, und 2.) Lesen von Daten aus dem exportierten Byte-Puffer Datenstrom, bei dem es sich um einen WinRT-Datenstrom handelt, in unseren eigenen Speicherpuffer, bei dem es sich um ein Std:: Vector- &lt;> Byte
+Zunächst müssen wir den Datenstrom einrichten. Dies ermöglicht es uns, 1 zu erhalten.) Verwenden Sie TryExportAnchorsAsync, um die Daten in einen Puffer zu setzen, der sich im Besitz der App befindet, und 2.) Liest Daten aus dem exportierten Bytepufferstream ( ein WinRT-Datenstrom) in unseren eigenen Speicherpuffer, bei dem es sich um ein std::vector-Byte->. &lt;
 
 ```
 // Create a random access stream to process the anchor byte data.
@@ -81,7 +81,7 @@ InMemoryRandomAccessStream^ stream = ref new InMemoryRandomAccessStream();
 IOutputStream^ outputStream = stream->GetOutputStreamAt(0);
 ```
 
-Wir müssen die Berechtigung für den Zugriff auf räumliche Daten, einschließlich Anker, die vom System exportiert werden, anfordern.
+Wir müssen die Berechtigung für den Zugriff auf räumliche Daten erfragen, einschließlich Ankern, die vom System exportiert werden.
 
 ```
 // Request access to spatial data.
@@ -104,7 +104,7 @@ auto accessRequestedTask = create_taskSpatialAnchorTransferManager::RequestAcces
 });
 ```
 
-Wenn wir die Get-Berechtigung erhalten und Anker exportiert werden, können wir den Datenstrom lesen. Hier erfahren Sie auch, wie Sie den DataReader und den InputStream erstellen, die zum Lesen der Daten verwendet werden.
+Wenn wir die Berechtigung erhalten und Anker exportiert werden, können wir den Datenstrom lesen. Hier wird auch gezeigt, wie Sie den DataReader und InputStream erstellen, den wir zum Lesen der Daten verwenden.
 
 ```
 // Get the input stream for the anchor byte stream.
@@ -129,7 +129,7 @@ return accessRequestedTask.then([anchorByteDataOut, stream, reader](bool nchorsE
     }
 ```
 
-Nachdem wir Bytes aus dem Stream gelesen haben, können wir diese wie folgt in unserem eigenen Datenpuffer speichern.
+Nachdem Wir Bytes aus dem Stream gelesen haben, können wir sie in unserem eigenen Datenpuffer speichern.
 
 ```
 }).then([anchorByteDataOut, reader](size_t bytesRead)
@@ -148,9 +148,9 @@ Nachdem wir Bytes aus dem Stream gelesen haben, können wir diese wie folgt in u
 };
 ```
 
-## <a name="deserialize-anchor-data-by-importing-it-into-the-system-using-the-spatialanchortransfermanager"></a>Deserialisieren von Anker Daten durch Importieren in das System mithilfe von spatialanchortransfermanager
+## <a name="deserialize-anchor-data-by-importing-it-into-the-system-using-the-spatialanchortransfermanager"></a>Deserialisieren von Ankerdaten durch Importieren in das System mit spatialAnchorTransferManager
 
-Eine Hilfsfunktion ist im Codebeispiel enthalten, um zuvor exportierte Daten zu laden. Diese deserialisierungssoftware stellt eine Auflistung von Schlüssel-Wert-Paaren bereit, ähnlich wie im spatialanchorstore, mit dem Unterschied, dass diese Daten aus einer anderen Quelle, z. b. einem Netzwerk Socket, erhalten wurden. Sie können diese Daten vor der Offline Speicherung, bei Verwendung von in-App-Arbeitsspeicher oder (falls zutreffend) in den spatialanchorstore Ihrer APP verarbeiten.
+Eine Hilfsfunktion ist im Codebeispiel enthalten, um zuvor exportierte Daten zu laden. Diese Deserialisierungsfunktion stellt eine Sammlung von Schlüssel-Wert-Paaren zur Verfügung, die dem von SpatialAnchorStore zur Verfügung stellen, mit der Ausnahme, dass wir diese Daten aus einer anderen Quelle, z. B. einem Netzwerksocket, erhalten haben. Sie können diese Daten vor dem Offlinespeichern mithilfe des In-App-Arbeitsspeichers oder (falls zutreffend) des SpatialAnchorStore Ihrer App verarbeiten und eine Begründung dafür erstellen.
 
 ```
 // ImportAnchorDataAsync: Imports anchors from a byte buffer that was previously exported.
@@ -166,7 +166,7 @@ task<bool> SpatialAnchorImportExportHelper::ImportAnchorDataAsync(
 {
 ```
 
-Zuerst müssen wir Streamobjekte erstellen, um auf die Anker Daten zuzugreifen. Wir werden die Daten aus dem Puffer in einen System Puffer schreiben. Daher erstellen wir einen DataWriter, der in einen Datenstrom im Arbeitsspeicher schreibt, um das Ziel zu erreichen, die Anker von einem Byte Puffer in das System als spatialanchor zu bringen.
+Zunächst müssen Wir Streamobjekte erstellen, um auf die Ankerdaten zu zugreifen. Wir schreiben die Daten aus unserem Puffer in einen Systempuffer. Daher erstellen wir einen DataWriter, der in einen In-Memory-Datenstrom schreibt, um unser Ziel zu erreichen, Anker aus einem Bytepuffer als SpatialAnchors in das System zu übertragen.
 
 ```
 // Create a random access stream for the anchor data.
@@ -177,7 +177,7 @@ IOutputStream^ outputStream = stream->GetOutputStreamAt(0);
 DataWriter^ writer = ref new DataWriter(outputStream);
 ```
 
-Auch hier müssen wir sicherstellen, dass die APP über die Berechtigung zum Exportieren räumlicher Anker Daten verfügt. Dies kann private Informationen über die Benutzerumgebung beinhalten.
+Auch hier müssen wir sicherstellen, dass die App über die Berechtigung zum Exportieren von Raumankerdaten verfügt, die private Informationen über die Umgebung des Benutzers enthalten können.
 
 ```
 // Request access to transfer spatial anchors.
@@ -189,7 +189,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
         // Access is allowed.
 ```
 
-Wenn der Zugriff zulässig ist, können wir Bytes aus dem Puffer in einen Systemdaten Strom schreiben.
+Wenn der Zugriff zulässig ist, können Wir Bytes aus dem Puffer in einen Systemdatenstrom schreiben.
 
 ```
 // Write the bytes to the stream.
@@ -206,7 +206,7 @@ Wenn der Zugriff zulässig ist, können wir Bytes aus dem Puffer in einen System
     }
 ```
 
-Wenn die Speicherung von Bytes im Datenstrom erfolgreich war, können Sie versuchen, diese Daten mit dem spatialanchortransfermanager zu importieren.
+Wenn das Speichern von Bytes im Datenstrom erfolgreich war, können wir versuchen, diese Daten mit spatialAnchorTransferManager zu importieren.
 
 ```
 }).then([writer, stream](unsigned int bytesWritten)
@@ -235,7 +235,7 @@ Wenn die Speicherung von Bytes im Datenstrom erfolgreich war, können Sie versuc
     }
 ```
 
-Wenn die Daten importiert werden können, erhalten Sie eine Kartenansicht von Schlüssel-Wert-Paaren, die Zeichen folgen mit Ankern zuordnen. Wir können dies in unsere eigene in-Memory-Datensammlung laden und diese Sammlung verwenden, um nach Anker zu suchen, die wir verwenden möchten.
+Wenn die Daten importiert werden können, erhalten wir eine Kartenansicht von Schlüssel-Wert-Paaren, die Zeichenfolgen Ankern zuordnen. Wir können dies in unsere eigene In-Memory-Datensammlung laden und diese Sammlung verwenden, um nach Ankern zu suchen, die wir verwenden möchten.
 
 ```
 }).then([anchorMapOut](task<Windows::Foundation::Collections::IMapView<String^, SpatialAnchor^>^>  previousTask)
@@ -270,33 +270,33 @@ Wenn die Daten importiert werden können, erhalten Sie eine Kartenansicht von Sc
 }
 ```
 
-**Hinweis:** Nur weil Sie einen Anker importieren können, bedeutet nicht notwendigerweise, dass Sie ihn sofort verwenden können. Der Anker befindet sich möglicherweise in einem anderen Raum oder an einem anderen physischen Standort. der Anker kann erst nach dem Gerät, das es empfangen hat, genug visuelle Informationen über die Umgebung haben, in der der Anker erstellt wurde, um die Position des Ankers relativ zur bekannten aktuellen Umgebung wiederherzustellen. Die Client Implementierung sollte versuchen, den Anker relativ zum lokalen Koordinatensystem oder Referenzrahmen zu finden, bevor Sie mit dem Versuch fortfahren, ihn für Live-Inhalte zu verwenden. Versuchen Sie z. b., den Anker in regelmäßigen Abständen relativ zu einem aktuellen Koordinatensystem zu suchen, bis der Anker als zu verwendbar festgelegt ist.
+**HINWEIS:** Nur weil Sie einen Anker importieren können, bedeutet dies nicht unbedingt, dass Sie ihn sofort verwenden können. Der Anker kann sich in einem anderen Raum oder an einem anderen physischen Ort befinden. Der Anker ist erst wieder verwendbar, wenn das empfangene Gerät über genügend visuelle Informationen über die Umgebung verfügt, in der der Anker erstellt wurde, um die Position des Ankers relativ zur bekannten aktuellen Umgebung wiederherzustellen. Die Clientimplementierung sollte versuchen, den Anker relativ zu Ihrem lokalen Koordinatensystem oder Referenzframe zu suchen, bevor sie weiter versucht, ihn für Liveinhalte zu verwenden. Versuchen Sie beispielsweise, den Anker relativ zu einem aktuellen Koordinatensystem in regelmäßigen Abständen zu finden, bis der Anker zu verfügbar wird.
 
 ## <a name="special-considerations"></a>Besondere Überlegungen
 
-Die [tryexportanchorsasync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) -API ermöglicht das Exportieren mehrerer [spatialanchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) -Werte in dasselbe nicht transparente binäre Blob. Es gibt jedoch einen geringfügigen Unterschied, welche Daten das BLOB enthält, abhängig davon, ob ein einzelner spatialanchor oder mehrere spatialanchor-Elemente in einem einzelnen-Befehl exportiert werden.
+Mit [der TryExportAnchorsAsync-API](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) können mehrere [SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) in dasselbe nicht transparente binäre Blob exportiert werden. Es gibt jedoch einen feinen Unterschied in den Daten, die das Blob enthält, je nachdem, ob ein einzelner SpatialAnchor oder mehrere SpatialAnchors in einem einzigen Aufruf exportiert werden.
 
-### <a name="export-of-a-single-spatialanchor"></a>Exportieren eines einzelnen spatialanchor
+### <a name="export-of-a-single-spatialanchor"></a>Exportieren eines einzelnen SpatialAnchor
 
-Das BLOB enthält eine Darstellung der Umgebung in der Nähe des spatialanchors, sodass die Umgebung auf dem Gerät erkannt werden kann, das den spatialanchor importiert. Nachdem der Import abgeschlossen wurde, ist der neue spatialanchor für das Gerät verfügbar. Vorausgesetzt, dass sich der Benutzer vor kurzem in der Nähe des Ankers befand, ist er möglich und kann gerendert werden. Diese Hologramme werden am gleichen physischen Speicherort angezeigt, den Sie auf dem ursprünglichen Gerät erstellt haben, das den spatialanchor exportiert hat.
+Das Blob enthält eine Darstellung der Umgebung in der Nähe des SpatialAnchor, sodass die Umgebung auf dem Gerät erkannt werden kann, das SpatialAnchor importiert. Nach Abschluss des Imports ist der neue SpatialAnchor für das Gerät verfügbar. Wenn sich der Benutzer vor Kurzem in der Nähe des Ankers befindet, ist er verwendbar, und hologramme, die an spatialAnchor angefügt sind, können gerendert werden. Diese Hologramme werden an derselben physischen Position angezeigt wie auf dem ursprünglichen Gerät, das spatialAnchor exportiert hat.
 
-![Exportieren eines einzelnen spatialanchor](images/singleanchor.png)
+![Exportieren eines einzelnen SpatialAnchor](images/singleanchor.png)
 
-### <a name="export-of-multiple-spatialanchors"></a>Exportieren von mehreren spatialanchor-
+### <a name="export-of-multiple-spatialanchors"></a>Export mehrerer SpatialAnchors
 
-Wie beim Export eines einzelnen spatialanchor enthält das BLOB eine Darstellung der Umgebung in der Nähe aller angegebenen spatialanchor. Außerdem enthält das BLOB Informationen zu den Verbindungen zwischen den enthaltenen spatialanchor-Daten, wenn Sie sich im gleichen physischen Raum befinden. Dies bedeutet, dass, wenn zwei in der Nähe gelegene räumliche Anker importiert werden, ein – Hologramm, das an den *zweiten* spatialanchor angefügt ist, auch dann einstellbar ist, wenn das Gerät nur die Umgebung um den *ersten* spatialanchor erkennt, weil genügend Daten zur Berechnung der Transformation zwischen den beiden spatialanchor-Werten im BLOB enthalten waren. Wenn die beiden spatialanchor einzeln exportiert wurden (zwei separate Aufrufe von tryexportspatialanchor), sind möglicherweise nicht genügend Daten im BLOB für holograms enthalten, die an den zweiten spatialanchor angefügt sind, damit Sie bei der ersten gefunden werden können.
+Wie beim Export eines einzelnen SpatialAnchor enthält das Blob eine Darstellung der Umgebung in der Nähe aller angegebenen SpatialAnchors. Darüber hinaus enthält das Blob Informationen zu den Verbindungen zwischen den enthaltenen SpatialAnchors, wenn sie sich im gleichen physischen Raum befinden. Dies bedeutet, dass ein Hologramm, das an den zweiten *SpatialAnchor* angefügt ist, beim Importieren von zwei spatialanchors in der Nähe auch dann nicht mehr zu finden ist, wenn das Gerät nur die Umgebung um den ersten *SpatialAnchor* erkennt, da genügend Daten zum Berechnen der Transformation zwischen den beiden SpatialAnchors im Blob enthalten waren. Wenn die beiden SpatialAnchors einzeln exportiert wurden (zwei separate Aufrufe von TryExportSpatialAnchors), sind möglicherweise nicht genügend Daten im Blob enthalten, damit Hologramme, die an den zweiten SpatialAnchor angefügt sind, beim ersten gefunden werden können.
 
-![Mehrere Anker werden mithilfe eines einzelnen tryexportanchorsasync-Aufrufes exportiert.](images/multipleanchors.png) ![Mehrere Anker, die mithilfe eines separaten tryexportanchorsasync-Aufrufes für jeden Anker exportiert wurden.](images/separateanchors.png)
+![Mehrere Anker, die mit einem einzigen TryExportAnchorsAsync-Aufruf exportiert wurden](images/multipleanchors.png) ![Mehrere Anker, die mit einem separaten TryExportAnchorsAsync-Aufruf für jeden Anker exportiert wurden](images/separateanchors.png)
 
-## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>Beispiel: Senden von Anker Daten mithilfe von Windows:: Networking:: Streamsocket
+## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>Beispiel: Senden von Ankerdaten mithilfe Windows::Networking::StreamSocket
 
-Hier geben wir ein Beispiel für die Verwendung von exportierten Anker Daten an, indem Sie Sie über ein TCP-Netzwerk senden. Dies erfolgt aus dem holographicspatialanchortransfersample.
+Hier finden Sie ein Beispiel für die Verwendung exportierter Ankerdaten, indem sie über ein TCP-Netzwerk gesendet werden. Dies ist aus dem HolographicSpatialAnchorTransferSample.
 
-Die WinRT-Streamsocket-Klasse verwendet die ppl-Aufgaben Bibliothek. Im Fall von Netzwerkfehlern wird der Fehler an die nächste Aufgabe in der Kette zurückgegeben, wobei eine Ausnahme erneut ausgelöst wird. Die Ausnahme enthält ein HRESULT, das den Fehlerstatus angibt.
+Die WinRT StreamSocket-Klasse verwendet die PPL-Aufgabenbibliothek. Bei Netzwerkfehlern wird der Fehler mithilfe einer erneut ausgelösten Ausnahme an die nächste Aufgabe in der Kette zurückgegeben. Die Ausnahme enthält ein HRESULT, das den Fehlerstatus angibt.
 
-### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>Verwenden eines Windows:: Networking:: streamsocketlistener mit TCP zum Senden von exportierten Anker Daten
+### <a name="use-a-windowsnetworkingstreamsocketlistener-with-tcp-to-send-exported-anchor-data"></a>Verwenden eines Windows::Networking::StreamSocketListener mit TCP zum Senden exportierter Ankerdaten
 
-Erstellen Sie eine Serverinstanz, die auf eine Verbindung lauscht.
+Erstellen Sie eine Serverinstanz, die auf eine Verbindung lausiert.
 
 ```
 void SampleAnchorTcpServer::ListenForConnection()
@@ -326,7 +326,7 @@ void SampleAnchorTcpServer::ListenForConnection()
 }
 ```
 
-Wenn eine Verbindung empfangen wird, verwenden Sie die Clientsocket-Verbindung, um Anker Daten zu senden.
+Wenn eine Verbindung empfangen wird, verwenden Sie die Clientsocketverbindung, um Ankerdaten zu senden.
 
 ```
 void SampleAnchorTcpServer::OnConnectionReceived(StreamSocketListener^ listener, StreamSocketListenerConnectionReceivedEventArgs^ args)
@@ -340,7 +340,7 @@ void SampleAnchorTcpServer::OnConnectionReceived(StreamSocketListener^ listener,
 }
 ```
 
-Nun können wir beginnen, einen Datenstrom zu senden, der die exportierten Anker Daten enthält.
+Nun können wir mit dem Senden eines Datenstroms beginnen, der die exportierten Ankerdaten enthält.
 
 ```
 void SampleAnchorTcpServer::OutputToClientSocket(IMap<String^, SpatialAnchor^>^ anchorsToSend)
@@ -370,7 +370,7 @@ void SampleAnchorTcpServer::OutputToClientSocket(IMap<String^, SpatialAnchor^>^ 
 }
 ```
 
-Bevor wir den Datenstrom selbst senden können, müssen wir zuerst ein Header Paket senden. Dieses Header Paket muss eine festgelegte Länge aufweisen, und es muss auch die Länge des Variablen Arrays von Bytes angeben, das der Anker Datenstrom ist. im Fall dieses Beispiels sind keine anderen Header Daten zum Senden vorhanden, daher ist der Header 4 Bytes lang und enthält eine 32-Bit-Ganzzahl ohne Vorzeichen.
+Bevor wir den Stream selbst senden können, müssen wir zuerst ein Headerpaket senden. Dieses Headerpaket muss eine feste Länge haben und auch die Länge des Variablenarrays von Bytes angeben, das der Ankerdatenstrom ist. Im Fall dieses Beispiels müssen keine anderen Headerdaten gesendet werden, sodass unser Header 4 Bytes lang ist und eine 32-Bit-Ganzzahl ohne Vorzeichen enthält.
 
 ```
 Concurrency::task<bool> SampleAnchorTcpServer::SendAnchorDataLengthMessage(size_t dataStreamLength)
@@ -413,7 +413,7 @@ Concurrency::task<bool> SampleAnchorTcpServer::SendAnchorDataStreamIMap<String^,
         return task_from_result<bool>(false);
 ```
 
-Nachdem die Streamlänge in Bytes an den Client gesendet wurde, können wir mit dem Schreiben des Datenstroms selbst in den socketstream fortfahren. Dies bewirkt, dass die Anker Speicher Bytes an den Client gesendet werden.
+Nachdem die Streamlänge in Bytes an den Client gesendet wurde, können wir mit dem Schreiben des Datenstroms selbst in den Socketstream fortfahren. Dadurch werden die Bytes des Ankerspeichers an den Client gesendet.
 
 ```
 }).then([this](bool dataLengthSent)
@@ -447,7 +447,7 @@ Nachdem die Streamlänge in Bytes an den Client gesendet wurde, können wir mit 
 }
 ```
 
-Wie bereits weiter oben in diesem Thema erwähnt, müssen wir auf die Behandlung von Ausnahmen vorbereitet sein, die Netzwerkfehler Statusmeldungen enthalten. Bei nicht erwarteten Fehlern können wir die Ausnahme Informationen wie folgt in die Debugkonsole schreiben. Dadurch erhalten Sie einen Anhaltspunkt, was passiert, wenn das Codebeispiel die Verbindung nicht abschließen kann, oder wenn das Senden der Anker Daten nicht abgeschlossen werden kann.
+Wie weiter oben in diesem Thema erwähnt, müssen wir darauf vorbereitet sein, Ausnahmen zu behandeln, die Netzwerkfehlerstatusmeldungen enthalten. Bei Fehlern, die nicht erwartet werden, können wir die Ausnahmeinformationen in die Debugkonsole schreiben. Dies gibt uns einen Hinweis darauf, was passiert ist, wenn unser Codebeispiel die Verbindung nicht abschließen kann oder das Senden der Ankerdaten nicht abgeschlossen werden kann.
 
 ```
 void SampleAnchorTcpServer::HandleException(Exception^ exception)
@@ -460,11 +460,11 @@ void SampleAnchorTcpServer::HandleException(Exception^ exception)
 }
 ```
 
-### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>Verwenden Sie Windows:: Networking:: Streamsocket mit TCP, um exportierte Anker Daten zu empfangen.
+### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>Verwenden eines Windows::Networking::StreamSocket mit TCP zum Empfangen exportierter Ankerdaten
 
-Zuerst müssen wir eine Verbindung mit dem Server herstellen. Dieses Codebeispiel veranschaulicht das Erstellen und Konfigurieren eines Streamsockets und das Erstellen eines DataReader, den Sie zum Abrufen von Netzwerkdaten mithilfe der Socketverbindung verwenden können.
+Zunächst müssen wir eine Verbindung mit dem Server herstellen. In diesem Codebeispiel wird gezeigt, wie Sie ein StreamSocket erstellen und konfigurieren und einen DataReader erstellen, mit dem Sie Netzwerkdaten über die Socketverbindung erhalten können.
 
-**Hinweis:** Wenn Sie diesen Beispielcode ausführen, stellen Sie sicher, dass Sie den Server konfigurieren und starten, bevor Sie den Client starten.
+**HINWEIS:** Wenn Sie diesen Beispielcode ausführen, stellen Sie sicher, dass Sie den Server konfigurieren und starten, bevor Sie den Client starten.
 
 ```
 task<bool> SampleAnchorTcpClient::ConnectToServer()
@@ -530,9 +530,9 @@ task<bool> SampleAnchorTcpClient::ConnectToServer()
 }
 ```
 
-Nachdem eine Verbindung hergestellt wurde, können wir warten, bis der Serverdaten sendet. Dies geschieht durch Aufrufen von LoadAsync für den Daten Leser des Datenstroms.
+Sobald eine Verbindung besteht, können wir warten, bis der Server Daten sendet. Rufen Sie hierzu LoadAsync für den Streamdatenreader auf.
 
-Der erste Satz von Bytes, den wir empfangen, sollte immer das Header Paket sein, das die Byte Länge des Anker Datenstroms angibt, wie im vorherigen Abschnitt beschrieben.
+Die erste Menge von Bytes, die wir empfangen, sollte immer das Headerpaket sein, das die Bytelänge des Ankerdatenstroms angibt, wie im vorherigen Abschnitt beschrieben.
 
 ```
 void SampleAnchorTcpClient::WaitForAnchorDataStream()
@@ -581,7 +581,7 @@ task<size_t> SampleAnchorTcpClient::ReceiveAnchorDataLengthMessage()
 }
 ```
 
-Nachdem wir das Header Paket erhalten haben, wissen wir, wie viele Bytes an Anker Daten erwartet werden. Wir können fortfahren, um die Bytes aus dem Stream zu lesen.
+Nachdem wir das Headerpaket erhalten haben, wissen wir, wie viele Bytes an Ankerdaten erwartet werden sollten. Wir können mit dem Lesen dieser Bytes aus dem Stream fortfahren.
 
 ```
 }).then([this](size_t dataStreamLength)
@@ -608,9 +608,9 @@ Nachdem wir das Header Paket erhalten haben, wissen wir, wie viele Bytes an Anke
 }
 ```
 
-Hier ist unser Code zum Empfangen des Anker Datenstroms. Die Bytes werden zuerst aus dem Datenstrom geladen. Dieser Vorgang kann einige Zeit in Anspruch nehmen, da der Streamsocket darauf wartet, diese Menge von Bytes aus dem Netzwerk zu empfangen.
+Hier ist unser Code zum Empfangen des Ankerdatenstroms. Auch hier laden wir zuerst die Bytes aus dem Stream. Dieser Vorgang kann einige Zeit dauern, da StreamSocket darauf wartet, diese Bytemenge aus dem Netzwerk zu empfangen.
 
-Nachdem der Ladevorgang beendet wurde, können wir diese Anzahl von Bytes lesen. Wenn wir die Anzahl der Bytes erhalten haben, die für den Anker Datenstrom erwartet werden, können wir die Anker Daten importieren. Wenn dies nicht der Fall ist, muss ein Fehler aufgetreten sein. Dies kann z. b. der Fall sein, wenn die Serverinstanz beendet wird, bevor Sie das Senden des Datenstroms abschließen kann, oder wenn das Netzwerk ausfällt, bevor der gesamte Datenstrom vom Client empfangen werden kann.
+Wenn der Ladevorgang abgeschlossen ist, können wir diese Anzahl von Bytes lesen. Wenn wir die Anzahl der Bytes erhalten haben, die wir für den Ankerdatenstrom erwarten, können wir die Ankerdaten importieren. Wenn dies nicht der Fehler ist, muss ein Fehler aufgetreten sein. Dies kann beispielsweise passieren, wenn die Serverinstanz beendet wird, bevor sie das Senden des Datenstroms beenden kann, oder wenn das Netzwerk ausläuft, bevor der gesamte Datenstrom vom Client empfangen werden kann.
 
 ```
 task<bool> SampleAnchorTcpClient::ReceiveAnchorDataStream()
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-Das ist alles! Nun sollten Sie über genügend Informationen verfügen, um zu versuchen, die Anker zu suchen, die über das Netzwerk empfangen werden. Beachten Sie, dass der Client über ausreichend visuelle Überwachungsdaten verfügen muss, damit der-Platz gefunden werden kann. Wenn es nicht sofort funktioniert, versuchen Sie es für eine Weile. Wenn dies immer noch nicht funktioniert, lassen Sie den Server weitere Anker senden, und verwenden Sie die Netzwerkkommunikation, um eine Zustimmung für den Client zu erhalten. Sie können dies ausprobieren, indem Sie das holographicspatialanchortransfersample herunterladen, die Client-und Server-IPS konfigurieren und Sie auf Client-und Server-hololens-Geräten bereitstellen.
+Das ist alles! Nun sollten Sie über genügend Informationen verfügen, um zu versuchen, die über das Netzwerk empfangenen Anker zu finden. Beachten Sie auch hier, dass der Client über genügend visuelle Nachverfolgungsdaten verfügen muss, damit der Raum den Anker erfolgreich finden kann. Wenn es nicht sofort funktioniert, versuchen Sie, eine Weile zu laufen. Wenn dies immer noch nicht funktioniert, müssen Sie vom Server weitere Anker senden und die Netzwerkkommunikation verwenden, um sich auf einen für den Client zu einigen. Sie können dies ausprobieren, indem Sie HolographicSpatialAnchorTransferSample herunterladen, Ihre Client- und Server-IP-Dateien konfigurieren und auf Client- und Servergeräten HoloLens bereitstellen.
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 * [Parallel Patterns Library (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
-* [Windows. Networking. Streamsocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
-* [Windows. Networking. streamsocketlistener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)
+* [Windows. Networking.StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows. Networking.StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

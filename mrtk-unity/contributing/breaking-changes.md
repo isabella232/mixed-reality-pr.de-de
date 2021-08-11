@@ -5,16 +5,16 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 4cd5e0b085a182377aacdf35e1298ad1180ee641
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 46e3061319140a561d267983d4d170eea937fd28b7d3e833c3382c1e37a70392
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191534"
 ---
 # <a name="breaking-changes"></a>Aktuelle Änderungen
 
-Consumer des MRTK sind von einer stabilen Release-zu-Release-API-Oberfläche abhängig, sodass sie Updates am MRTK vornehmen können, ohne jedes Mal große Breaking Changes vornehmen zu müssen.
+Consumer des MRTK sind von einer stabilen Release-zu-Release-API-Oberfläche abhängig, damit sie Updates am MRTK vornehmen können, ohne jedes Mal große Breaking Changes vornehmen zu müssen.
 
 Auf dieser Seite wird unsere aktuelle Richtlinie in Bezug auf Breaking Changes im MRTK sowie einige längerfristige Ziele in Bezug darauf beschrieben, wie wir den Kompromiss zwischen dem Geringhalten von Breaking Changes und der Möglichkeit, die richtigen langfristigen technischen Änderungen am Code vornehmen zu können, besser bewältigen können.
 
@@ -55,7 +55,7 @@ Unsere ständige Richtlinie besteht darin, wenn möglich breaking changes zu ver
 
 ## <a name="what-to-do-about-breaking-changes"></a>Was sie gegen Breaking Changes tun müssen
 
-Wenn es möglich ist, etwas ohne Breaking Change und ohne Beeinträchtigung der langfristigen Struktur und Dauerhaftigkeit des Features zu erreichen, sollten Sie die Breaking Change nicht durchführen. Wenn es keine andere Möglichkeit gibt, besteht die aktuelle Richtlinie darin, jede einzelne Breaking Change auszuwerten, um zu verstehen, ob der Nutzen der Änderung die Kosten für den Consumer überwiegt, die die Änderung auffangen. Diskussionen darüber, was sich lohnt und was nicht, werden in der Regel im Pr oder in der Diskussion über das Problem selbst stattfinden.
+Wenn es möglich ist, etwas ohne Breaking Change und ohne Beeinträchtigung der langfristigen Struktur und Verwendbarkeit des Features zu erreichen, sollten Sie die Breaking Change nicht durchführen. Wenn es keine andere Möglichkeit gibt, besteht die aktuelle Richtlinie darin, jede einzelne Breaking Change auszuwerten, um zu ermitteln, ob der Nutzen der Änderung die Kosten für den Consumer für die Aufnahme der Änderung überwiegt. Diskussionen darüber, was sich lohnt und was nicht, finden im Allgemeinen im Pr oder in der Diskussion über das Problem selbst statt.
 
 Was hier passieren kann, fällt in mehrere Buckets:
 
@@ -67,15 +67,15 @@ Was hier passieren kann, fällt in mehrere Buckets:
 
 Dokumentieren Sie die Breaking Changes, und stellen Sie die bestmögliche Lösung bereit (d. h. ausführliche Schritte zur Migration oder noch bessere Tools, die automatisch für den Kunden migriert werden). Jede Version kann eine kleine Menge von Änderungen enthalten, die breaking sind. Diese sollten immer in der Dokumentation dokumentiert werden, wie in [diesem PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/4858)durchgeführt wurde. Wenn bereits ein Migrationsleitfaden für 2.x.x→2.x+1.x+1 vorhanden ist, fügen Sie diesem Dokument Anweisungen oder Tools hinzu. Wenn es nicht vorhanden ist, erstellen Sie es.
 
-### <a name="the-breaking-change-adds-value-but-the-customer-pain-would-be-too-high"></a>Die Breaking Change-Änderung erhöht den Nutzen, aber die Probleme der Kunden wären zu hoch.
+### <a name="the-breaking-change-adds-value-but-the-customer-pain-would-be-too-high"></a>Die Breaking Change erhöht zwar den Nutzen, aber die Probleme der Kunden wären zu hoch.
 
-Nicht alle Arten von Breaking Changes werden gleich erstellt– einige sind erheblich freundlicher als andere, basierend auf unserer Erfahrung und auf Kundenerfahrungen. Änderungen an Schnittstellen können z. B. mühsam sein, aber wenn es sich bei der Breaking Change um eine Änderung handelt, bei der ein Kunde in der Vergangenheit wahrscheinlich nicht erweitert/implementiert wurde (z. B. das Diagnosevisualisierungssystem), sind die tatsächlichen Kosten wahrscheinlich niedrig bis gar nichts. Wenn die Änderung jedoch der Typ eines Felds in einem ScriptableObject ist (z. B. in einem der Kernprofile des MRTK), wird dies wahrscheinlich zu massivem Kundenverstoß führen. Kunden haben das Standardprofil bereits geklont. Das Zusammenführen/Aktualisieren von Profilen kann sehr schwierig sein (d. h. über einen Text-Editor während der Zusammenführungszeit), und das erneute Kopieren des Standardprofils und das manuelle Neukonfigurieren aller Profile führt sehr wahrscheinlich zu schwer zu Debuggen von Regressionen.
+Nicht alle Arten von Breaking Changes werden gleich erstellt– einige sind deutlich freundlicher als andere, basierend auf unserer Erfahrung und auf der Grundlage von Kundenerfahrungen. Änderungen an Schnittstellen können z. B. mühsam sein, aber wenn es sich bei der Breaking Change um eine Änderung handelt, bei der ein Kunde in der Vergangenheit wahrscheinlich nicht erweitert/implementiert wurde (z. B. das Diagnosevisualisierungssystem), sind die tatsächlichen Kosten wahrscheinlich niedrig bis gar nicht. Wenn die Änderung jedoch der Typ eines Felds in einem ScriptableObject ist (z. B. in einem der Kernprofile des MRTK), wird dies wahrscheinlich zu massivem Kundenverstoß führen. Kunden haben das Standardprofil bereits geklont. Das Zusammenführen/Aktualisieren von Profilen kann sehr schwierig sein (d. h. über einen Text-Editor während der Zusammenführungszeit), und das erneute Kopieren des Standardprofils und das manuelle Neukonfigurieren aller Profile führt sehr wahrscheinlich zu schwer zu Debuggen von Regressionen.
 
-Diese Änderungen müssen wieder in das Verkaufsregal gesetzt werden, bis ein Branch vorhanden ist, der erhebliche Breaking Changes zulässt (zusammen mit einem erheblichen Wert, der Kunden einen Grund für das Upgrade gibt). Ein solcher Branch ist derzeit nicht vorhanden. In unseren zukünftigen Iterationsplanungsbesprechungen werden wir den Satz von Änderungen/Problemen überprüfen, die "zu breaking" waren, um festzustellen, ob wir eine kritische Menge erreicht haben, um es sinnvoll zu machen, alle Änderungen gleichzeitig zu verfolgen. Beachten Sie, dass es gefährlich ist, einen Branch "Alles ist zulässig" einzurichten, ohne dass aufgrund der begrenzten Technischen Ressourcen, über die wir verfügen, und der Tatsache, dass wir Tests und Validierungen auf diese beiden Verteilen müssten, sorgfältig vorgegangen wird. Es muss einen eindeutigen Zweck und ein gut kommuniziertes Start- und Enddatum eines solchen Branchs geben, wenn er vorhanden ist.
+Diese Änderungen müssen wieder in das Verkaufsregal gesetzt werden, bis ein Branch vorhanden ist, der erhebliche Breaking Changes zulässt (zusammen mit einem erheblichen Wert, der Kunden einen Grund für ein Upgrade gibt). Ein solcher Branch ist derzeit nicht vorhanden. In unseren zukünftigen Iterationsplanungsbesprechungen werden wir den Satz von Änderungen/Problemen überprüfen, die "zu breaking" waren, um festzustellen, ob wir eine kritische Menge erreicht haben, um es sinnvoll zu machen, alle Änderungen gleichzeitig zu verfolgen. Beachten Sie, dass es gefährlich ist, einen Branch "Alles ist zulässig" einzurichten, ohne dass aufgrund der begrenzten Technischen Ressourcen, über die wir verfügen, und der Tatsache, dass wir Tests und Validierungen auf diese beiden Verteilen müssten, sorgfältig vorgegangen wird. Es muss einen eindeutigen Zweck und ein gut kommuniziertes Start- und Enddatum eines solchen Branchs geben, wenn er vorhanden ist.
 
-## <a name="long-term-management-of-breaking-changes"></a>Langfristige Verwaltung von Breaking Changes
+## <a name="long-term-management-of-breaking-changes"></a>Langfristige Verwaltung breaking changes
 
-Langfristig sollten wir versuchen, den Umfang der Breaking Change zu reduzieren, indem wir den Satz von Bedingungen in [Liste B](#list-b)erhöhen. In Zukunft werden die Elemente in [Liste A](#list-a) technisch immer für den Satz von Dateien und Ressourcen, die wir in der "öffentlichen API-Oberfläche" als "öffentliche API-Oberfläche" eingestuft haben, breaking werden. Die Art und Weise, wie wir die Iteration ein wenig vereinfachen können (d. h. die internen Implementierungsdetails zu ändern, ein einfacheres Umgestalten und Freigeben von Code zwischen mehreren Klassen zu ermöglichen usw.), besteht darin, expliziter zu sein, welche Teile des Codes offizielle Oberfläche sind, anstatt Implementierungsdetails.
+Langfristig sollten wir versuchen, den Umfang der Breaking Change zu reduzieren, indem wir den Satz von Bedingungen in [Liste B](#list-b)erhöhen. In Zukunft wird der Satz von Elementen in [Liste A](#list-a) technisch immer für den Satz von Dateien und Ressourcen, die wir als "öffentliche API-Oberfläche" bezeichnen, breaking sein. Die Art und Weise, wie wir die Iteration ein wenig vereinfachen können (d. h. die internen Implementierungsdetails zu ändern, ein einfacheres Umgestalten und Freigeben von Code zwischen mehreren Klassen zu ermöglichen usw.), besteht darin, expliziter zu sein, welche Teile des Codes offizielle Oberfläche sind, anstatt Implementierungsdetails.
 
 Wir haben bereits das Konzept eines "experimentellen" Features eingeführt (es gehört zum experimentellen Namespace, verfügt möglicherweise nicht über Tests/Dokumentationen und ist öffentlich dafür bekannt, vorhanden zu sein, kann aber ohne Warnung entfernt und aktualisiert werden). Dies hat die Möglichkeit, neue Features früher hinzuzufügen, um früheres Feedback zu erhalten, aber nicht sofort an die API-Oberfläche gebunden zu sein (da wir die API-Oberfläche möglicherweise nicht vollständig durchdacht haben).
 
