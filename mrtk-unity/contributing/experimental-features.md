@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 341ba0ee3e5900cc52f1ef715232f49064102309
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 9b7ef7564e0e4f84ba70c034b1bcc33a29498432620a002c8509de518dde479c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121378"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228385"
 ---
 # <a name="experimental-features"></a>Experimentelle Features
 
@@ -39,7 +39,7 @@ Wenn Sie Unterordner unter dem Namen des experimentellen Features verwenden, ver
 
 Solver würden z. B. unter `MRTK/SDK/Experimental/FooBar/Features/Utilities/Solvers/FooBarSolver.cs`
 
-Behalten Sie Szenen in einem Szenenordner in der Nähe des oberen Rands bei: `MRTK/Examples/Experimental/FooBar/Scenes/FooBarExample.unity`
+Behalten Sie Szenen in einem Szenenordner im oberen Bereich bei: `MRTK/Examples/Experimental/FooBar/Scenes/FooBarExample.unity`
 
 > [!NOTE]
 > Es wurde davon ausgegangen, dass kein einzelner experimenteller Stammordner vorhanden ist und stattdessen Experimental unter `MRTK/Examples/HandTracking/Scenes/Experimental/HandBasedMenuExample.unity` z. B. abgelegt wird. Wir haben uns entschieden, Ordner an der Basis zu nutzen, um die experimentellen Features einfacher zu ermitteln.
@@ -77,14 +77,14 @@ Führen Sie die folgenden Schritte aus, um Dokumentation für Ihr experimentelle
 
 1. Jede Dokumentation für ein experimentelles Feature sollte in einer `readme.md` Datei im experimentellen Ordner abgelegt werden. Beispiel: MRTK/SDK/Experimental/PulseShader/readme.md.
 
-1. Fügen Sie unter *Featureübersichten* einen Link im Abschnitt *Experimentell* unter [`Documentation/toc.yml`](../toc.yml) hinzu.
+1. Fügen Sie unter *Featureübersichten* im Abschnitt *Experimentell* unter einen Link [`Documentation/toc.yml`](../toc.yml) hinzu.
 
 ### <a name="minimize-impact-to-mrtk-code"></a>Minimieren der Auswirkungen auf MRTK-Code
 
-Ihre MRTK-Änderung kann zwar dazu bringen, dass Ihr Experiment funktioniert, dies kann sich jedoch auf eine Weise auswirken, die Sie nicht erwarten.
+Ihre MRTK-Änderung kann zwar dazu bringen, dass Ihr Experiment funktioniert, dies kann sich jedoch auf andere Personen auswirken, die Sie nicht erwarten.
 Alle Regressionen, die Sie am MRTK-Kerncode vornehmen, führen dazu, dass Ihr Pull Request zurückgesetzt wird.
 
-Ziel ist es, keine Änderungen in anderen Ordnern als experimentellen Ordnern vorzunehmen. Im Folgenden finden Sie eine Liste der Ordner, die experimentelle Änderungen aufweisen können:
+Zielen Sie darauf ab, keine Änderungen in anderen Ordnern als experimentellen Ordnern vorzunehmen. Im Folgenden finden Sie eine Liste der Ordner, die experimentelle Änderungen aufweisen können:
 
 - MRTK/SDK/Experimentell
 - MRTK/SDK/Inspectors/Experimental
@@ -96,9 +96,9 @@ Ziel ist es, keine Änderungen in anderen Ordnern als experimentellen Ordnern vo
 
 Die meisten Benutzer verwenden kernige UX-Komponenten wie die Schaltfläche, ManipulationHandler und Interactable sehr häufig. Sie verwenden ihr experimentelles Feature wahrscheinlich nicht, wenn es sie daran hindert, Schaltflächen zu verwenden.
 
-Wenn Sie Ihre Komponente verwenden, sollten Sie keine Schaltflächen, ManipulationHandler, BoundingBox oder interaktiv unterbrechen.
+Wenn Sie Ihre Komponente verwenden, sollten Sie schaltflächen, ManipulationHandler, BoundingBox oder interaktiv nicht unterbrechen.
 
-Beispielsweise hat das Hinzufügen einer ScrollableObjectCollection in [diesem ScrollableObjectCollection-PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)dazu geführt, dass Benutzer die Prefabs der HoloLens-Schaltfläche nicht verwenden konnten. Obwohl dies nicht durch einen Fehler im PR verursacht wurde (sondern stattdessen einen vorhandenen Fehler verfügbar gemacht hat), verhinderte dies, dass der PR eingecheckt wurde.
+Beispielsweise hat das Hinzufügen einer ScrollableObjectCollection in [diesem ScrollableObjectCollection-PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)dazu geführt, dass Benutzer die Prefabs der HoloLens Schaltfläche nicht verwenden konnten. Obwohl dies nicht durch einen Fehler im PR verursacht wurde (sondern stattdessen einen vorhandenen Fehler verfügbar gemacht hat), verhinderte dies, dass der PR eingecheckt wurde.
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>Bereitstellen einer Beispielszene, die die Verwendung des Features veranschaulicht
 

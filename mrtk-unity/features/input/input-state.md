@@ -4,13 +4,13 @@ description: Dokumentation zu Eingabezuständen im MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, InputState,
-ms.openlocfilehash: 4c1bd115c63e25decf73c082546e75b0f276a7ef
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity,HoloLens, HoloLens 2, Mixed Reality, Development, MRTK, InputState,
+ms.openlocfilehash: 7d5e008ae3e43d227b90a563dd74e65a89527bd7ddf1720e26577042ce0d545f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228360"
 ---
 # <a name="accessing-input-state-in-mrtk"></a>Zugreifen auf den Eingabezustand im MRTK
 
@@ -18,7 +18,7 @@ Es ist möglich, den Status aller Eingaben im MRTK direkt durch Iterieren der Co
 
 In der InputDataExample-Szene finden Sie ein Beispiel für das Abfragen von Eingaben sowohl über das Iterieren von Controllern als auch mithilfe der [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) -Klasse.
 
-## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>Beispiel: Zugriffsposition, Drehung des Kopfs, der Hände, der Augen im MRTK
+## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a>Beispiel: Zugriffsposition, Drehung von Kopf, Händen, Augen im MRTK
 
 Die MRTK-Klasse bietet Benutzerfreundlichkeitsmethoden für den Zugriff auf den Handstrahl, den Kopfstrahl, den Strahl des Anvierens der Augen und die [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) Motion Controller-Lichtstrahl.
 
@@ -63,7 +63,7 @@ foreach(var controller in CoreServices.InputSystem.DetectedControllers)
 }
 ```
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Siehe auch
 
 - [InputEvents](input-events.md)
 - [Zeiger](pointers.md)

@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality, App-Leiste, Begrenzungsfeld, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: d7cacdcffeb552595e4ffd5ea5d1a734efb0451e03c5b6d5d39e5ea8caf3bd94
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110097"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198712"
 ---
 # <a name="bounding-box-and-app-bar"></a>Begrenzungsrahmen und App-Leiste
 ![Bounding ist die Standardschnittstelle für die Objektbearbeitung in Mixed Reality.](images/UX_Hero_BoundingBox.jpg)<br>
@@ -30,7 +30,7 @@ Bounding ist die Standardschnittstelle für die Objektbearbeitung in Mixed Reali
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens-Ansicht zum Skalieren eines Objekts über ein Begrenzungsfeld](images/HoloLens2_BoundingBox.gif)<br>
+       ![HoloLens des Skalierens eines Objekts über ein Begrenzungsfeld](images/HoloLens2_BoundingBox.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -39,13 +39,13 @@ Bounding ist die Standardschnittstelle für die Objektbearbeitung in Mixed Reali
 :::row:::
     :::column:::
         ### <a name="rotating-an-objectbr"></a>Drehen eines Objekts<br>
-        Die vertikalen rechteckigen Ränder an den Rändern des Begrenzungsfelds sind Drehungsindikatoren. Dies ermöglicht dem Benutzer eine feiner anpassung an die platzierten Hologramme. Sie können nicht nur anpassen und skalieren, sondern sich jetzt auch drehen.<br>
+        Die vertikalen rechteckigen Ränder an den Rändern des Begrenzungsfelds sind Drehungsindikatoren. Dies gibt dem Benutzer eine feinere Anpassung über seine platzierten Hologramme. Sie können nicht nur anpassen und skalieren, sondern sich jetzt auch drehen.<br>
         <br>
         *Videoschleife: Drehen eines Objekts über ein Begrenzungsfeld*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens-Ansicht zum Drehen eines Objekts über ein Begrenzungsfeld](images/HoloLens2_BoundingBox_Rotate.gif)<br>
+       ![HoloLens des Drehens eines Objekts über ein Begrenzungsfeld](images/HoloLens2_BoundingBox_Rotate.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -54,7 +54,7 @@ Bounding ist die Standardschnittstelle für die Objektbearbeitung in Mixed Reali
 :::row:::
     :::column:::
         ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>Visuelles Feedback zur Nähe zu HoloLens 2<br>
-        Auf HoloLens 2 gibt es einen zusätzlichen visuellen Hinweis, der die Wahrnehmung der Tiefe des Benutzers unterstützen kann. Ein Ring in der Nähe ihrer Fingerspitze wird angezeigt und skaliert herunter, wenn sich die Fingerspitze dem Objekt nähert. Der Ring konvergiert schließlich zu einem Punkt, wenn der gedrückte Zustand erreicht wird. Dieses visuelle Modell hilft dem Benutzer zu verstehen, wie weit er vom Objekt entfernt ist.<br>
+        Auf HoloLens 2 gibt es einen zusätzlichen visuellen Hinweis, der den Benutzer bei der Wahrnehmung der Tiefe unterstützen kann. Ein Ring in der Nähe der Fingerspitze wird angezeigt und skaliert herunter, wenn sich die Fingerspitze dem Objekt nähert. Der Ring konvergiert schließlich zu einem Punkt, wenn der gedrückte Zustand erreicht wird. Dieses visuelle Modell hilft dem Benutzer zu verstehen, wie weit er vom Objekt entfernt ist.<br>
         <br>
         *Videoschleife: Beispiel für visuelles Feedback basierend auf der Nähe zu einem Begrenzungsfeld*
     :::column-end:::
@@ -79,13 +79,13 @@ Die App-Leiste ist ein Menü auf Objektebene, das eine Reihe von Schaltflächen 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>Die App-Leiste folgt dem Benutzer.<br>
-        Da dieses Muster mit Objekten verwendet wird, die in der Welt gesperrt sind, wird die App-Leiste immer auf der Objektseite angezeigt, die dem Benutzer am nächsten ist, wenn sich ein Benutzer um das Objekt bewegt. Dieses Feature ist technisch gesehen zwar nicht versiert, erzielt aber effektiv das gleiche Ergebnis. Verhindern, dass die Position eines Benutzers Funktionen verdecken oder blockieren kann, die andernfalls an einem anderen Ort in seiner Umgebung verfügbar wären. <br>
+        Da dieses Muster mit Objekten verwendet wird, die in der Welt gesperrt sind, wird die App-Leiste immer auf der Objektseite angezeigt, die dem Benutzer am nächsten ist, wenn sich ein Benutzer um das Objekt bewegt. Dieses Feature ist technisch gesehen zwar nicht versiert, erzielt aber effektiv das gleiche Ergebnis. Verhindern der Position eines Benutzers zum Verdecken oder Blockieren von Funktionen, die andernfalls von einem anderen Standort in seiner Umgebung aus verfügbar wären. <br>
         <br>
         *Videoschleife: Wenn Sie ein Hologramm umgehen, folgt die App-Leiste.*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Gehen Sie ein Hologramm um. Die App-Leiste folgt.](images/HoloLens2_AppBarFollowing.gif)<br>
+       ![Um ein Hologramm herum. Die App-Leiste folgt.](images/HoloLens2_AppBarFollowing.gif)<br>
     :::column-end:::
 :::row-end:::
 

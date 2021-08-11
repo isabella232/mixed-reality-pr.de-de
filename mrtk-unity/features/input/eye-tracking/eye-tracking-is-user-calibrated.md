@@ -1,22 +1,22 @@
 ---
-title: Kalibrierung der Augen
+title: Augenkalibrierung
 description: Einrichten der Kalibrierung der Augen des Benutzers in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, EyeTracking, Kalibrierung,
-ms.openlocfilehash: a2023a2d7f6a0254e8fef32f4faf09def956e94f
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 02b173bbc7a6bf410d3521b37660f292b8e3340de6b1a98007fdbc200f26bc49
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177202"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199768"
 ---
-# <a name="eye-calibration"></a>Kalibrierung der Augen
+# <a name="eye-calibration"></a>Augenkalibrierung
 
 ![Screenshot der Benachrichtigung zur Kalibrierung der Augen](../../images/eye-tracking/mrtk_et_calibration_notification_example.jpg)
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
 Wenn eye tracking ein grundlegender Bestandteil Ihrer App-Erfahrung ist, sollten Sie sicherstellen, dass die Kalibrierung der Augen des Benutzers gültig ist.
 Der Hauptgrund dafür, dass er ungültig ist, ist, dass sich der Benutzer entschieden hat, die Eyetracking-Kalibrierung zu überspringen, wenn er auf das Gerät setzt.
@@ -50,13 +50,13 @@ Nachdem die Benachrichtigung verworfen wurde, wird sie langsam vergrößert und 
       - `OnEyeCalibrationDetected()`
       - `OnNoEyeCalibrationDetected()`
 
-   - Diese Ereignisse werden nur ausgelöst, wenn sich der Kalibrierungsstatus ändert. Wenn ein Benutzer die Benachrichtigung daher verlässt, wird die Benachrichtigung erst wieder angezeigt, wenn
+   - Diese Ereignisse werden nur ausgelöst, wenn sich der Kalibrierungsstatus ändert. Wenn sich ein Benutzer entscheidet, die Benachrichtigung zu verdringen, wird die Benachrichtigung daher erst wieder angezeigt, wenn
       - Die App wird neu gestartet.
       - Ein gültiger Benutzer wurde erkannt, und dann hat ein neuer nicht veralteter Benutzer das Gerät ein-
 
    - Um zu testen, ob die Animationen und Ereignisse ordnungsgemäß ausgelöst werden, verfügt das EyeCalibrationChecker-Skript über ein `bool editorTestUserIsCalibrated` Flag. Wenn Sie beispielsweise im Unity-Editor ausführen, können Sie Folgendes testen:
       1. Gibt an, ob die Benachrichtigung automatisch angezeigt wird, sobald sich der Kalibrierungsstatus von "true" in "false" ändert.
-      1. Gibt an, ob die Benachrichtigung automatisch erneut verworfen wird, sobald der Status von "false" in "true" geändert wird.
+      1. Gibt an, ob die Benachrichtigung automatisch erneut verworfen wird, sobald sich der Status von "false" in "true" ändert.
 
 ```c#
     private bool? prevCalibrationStatus = null;
@@ -92,4 +92,4 @@ Nachdem die Benachrichtigung verworfen wurde, wird sie langsam vergrößert und 
 - [ÜBERSICHT ÜBER MRTK Eye Tracking](eye-tracking-main.md)
 - [MRTK Eye Tracking-Setup](eye-tracking-basic-setup.md)
 - [MRTK Eye Tracking per Code](eye-tracking-eye-gaze-provider.md)
-- [HoloLens 2 EyeTracking-Dokumentation](/windows/mixed-reality/eye-tracking)
+- [HoloLens 2 Eye Tracking-Dokumentation](/windows/mixed-reality/eye-tracking)

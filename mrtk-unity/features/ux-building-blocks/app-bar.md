@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, App-Leiste,
-ms.openlocfilehash: 3c8633d91b2c26f8bdc774a98b2cb48ffb276720
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 1ecb43d25a4353ff4c3bd8350efaab877900a5b979cd42d2c8d1cb91ce32ae0c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198274"
 ---
 # <a name="app-bar"></a>App-Leiste
 
 ![App-Leiste](../images/app-bar/MRTK_AppBar_Main.png)
 
-Die App-Leiste ist eine Benutzeroberflächenkomponente, die zusammen mit dem [Steuerelementskript für Begrenzungen verwendet](bounds-control.md) wird. Es fügt einem Objekt Schaltflächensteuerelemente mit der Absicht hinzu, es zu bearbeiten. Mithilfe der Schaltfläche "Anpassen" kann die Begrenzungssteuerschnittstelle für ein Objekt de-/activated werden. Die Schaltfläche "Entfernen" sollte das Objekt aus der Szene entfernen.
+Die App-Leiste ist eine Benutzeroberflächenkomponente, die zusammen mit dem [Steuerelementskript für Begrenzungen verwendet](bounds-control.md) wird. Sie fügt einem Objekt Schaltflächensteuerelemente mit der Absicht hinzu, es zu bearbeiten. Mithilfe der Schaltfläche "Anpassen" kann die Begrenzungssteuerschnittstelle für ein Objekt de-/activated werden. Die Schaltfläche "Entfernen" sollte das Objekt aus der Szene entfernen.
 
 ## <a name="how-to-use-app-bar"></a>Verwenden der App-Leiste
 

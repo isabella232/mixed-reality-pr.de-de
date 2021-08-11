@@ -1,76 +1,76 @@
 ---
 title: Visuelle Designs
-description: 'Übersicht: Visuelle Designs Flexible Steuerung von UX-Ressourcen in MRTK'
+description: Übersicht über visuelle Designs flexible Steuerung von UX-Ressourcen in MRTK
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, MRTK-Designs,
-ms.openlocfilehash: d97c470bf1d77299c6848990cdc69d886d432ecb
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f7e0b10f51947884c4d23191fd147315084c5295e9b48953bb5de10b7cbc0d22
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223968"
 ---
 # <a name="visual-themes"></a>Visuelle Designs
 
-Designs ermöglichen eine flexible Steuerung von UX-Ressourcen als Reaktion auf verschiedene Zustände. Dies kann das Ändern der Farbe einer Schaltfläche, das Ändern der Größe eines Elements als Reaktion auf den Fokus usw. umfassen. Das Visual Themes-Framework besteht aus zwei Hauptteilen: 1) Konfiguration und 2) Runtime-Engines.
+Designs ermöglichen eine flexible Steuerung von UX-Ressourcen als Reaktion auf verschiedene Statusübergänge. Dies kann das Ändern der Farbe einer Schaltfläche, das Ändern der Größe eines Elements als Reaktion auf den Fokus usw. umfassen. Das Visual Themes-Framework besteht aus zwei Hauptteilen: 1) Konfiguration und 2) Runtime-Engines.
 
-[Designkonfigurationen](#theme-configuration) sind Definitionen von Eigenschaften und Typen, während [Design-Engines](#theme-engines) Klassen sind, die die Konfigurationen nutzen und die Logik implementieren, um Transformationen, Materialien und mehr zur Laufzeit zu aktualisieren.
+[Designkonfigurationen](#theme-configuration) sind Definitionen von Eigenschaften und Typen, während [Design-Engines](#theme-engines) Klassen sind, die die Konfigurationen nutzen und die Logik zum Aktualisieren von Transformationen, Materialien und mehr zur Laufzeit implementieren.
 
 ## <a name="theme-configuration"></a>Designkonfiguration
 
-Designkonfigurationen sind [ScriptableObjects,](https://docs.unity3d.com/Manual/class-ScriptableObject.html) die definieren, wie Design-Engines zur Laufzeit initialisiert werden. Sie definieren, welche Eigenschaften und Werte als Reaktion auf Eingabe- oder andere Zustandsänderungen verwendet werden sollen, wenn die App ausgeführt wird. Als [ScriptableObjects-Objekte](https://docs.unity3d.com/Manual/class-ScriptableObject.html) können Designkonfigurationen einmal definiert und dann über verschiedene UX-Komponenten hinweg erneut verwendet werden.
+Designkonfigurationen sind [ScriptableObjects,](https://docs.unity3d.com/Manual/class-ScriptableObject.html) die definieren, wie Design-Engines zur Laufzeit initialisiert werden. Sie definieren, welche Eigenschaften und Werte als Reaktion auf Eingabe- oder andere Statusänderungen verwendet werden sollen, wenn die App ausgeführt wird. Als [ScriptableObjects-Objekte](https://docs.unity3d.com/Manual/class-ScriptableObject.html) können Designkonfigurationen einmal definiert und dann für verschiedene UX-Komponenten wiederverwendet werden.
 
-So erstellen Sie ein neues [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) Asset:
+So erstellen Sie ein neues [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) Medienobjekt:
 
-1) Klicken Sie mit der rechten Maustaste in *Project Fenster.*
-1) Wählen Sie **Create**  >  **Mixed Reality Toolkit Theme (Toolkitdesign**  >  **erstellen) aus.**
+1) Rechtsklick im *Project Fenster*
+1) Wählen **Sie Create** Mixed Reality Toolkit Theme  >  **(Mixed Reality**  >  **Toolkitdesign erstellen)** aus.
 
 Beispielressourcen für die Designkonfiguration finden Sie unter `MRTK/SDK/Features/UX/Interactable/Themes` .
 
-![Theme ScriptableObject-Beispiel im Inspektor](../images/visual-themes/ThemeInspectorExample.png)
+![ScriptableObject-Designbeispiel im Inspektor](../images/visual-themes/ThemeInspectorExample.png)
 
 ### <a name="states"></a>Zustände
 
-Beim Erstellen eines neuen [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) muss zunächst festgelegt werden, welche Zustände verfügbar sind. Die *States-Eigenschaft* gibt an, wie viele Werte eine Designkonfiguration definieren muss, da es einen Wert pro Zustand gibt. In der obigen Beispielbild sind die Standardzustände, die für die [Interactable-Komponente](interactable.md#general-input-settings) definiert *sind, Default*, *Focus*, *Pressed* und *Disabled*. Diese werden in der `DefaultInteractableStates` Ressourcendatei (Assets/MRTK/SDK/Features/UX/Interactable/States) definiert.
+Wenn Sie eine neue [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) erstellen, müssen Sie zunächst festlegen, welche Zustände verfügbar sind. Die *States-Eigenschaft* gibt an, wie viele Werte eine Designkonfiguration definieren muss, da es einen Wert pro Zustand gibt. In der obigen Beispielbildansicht sind die [Standardzustände, die für die Interaktionsfähige](interactable.md#general-input-settings) Komponente definiert *sind, Default*, *Focus*, *Pressed* und *Disabled*. Diese werden in der `DefaultInteractableStates` Medienobjektdatei (Assets/MRTK/SDK/Features/UX/Interactable/States) definiert.
 
-So erstellen Sie ein neues [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) Asset:
+So erstellen Sie ein neues [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) Medienobjekt:
 
-1) Klicken Sie mit der rechten Maustaste in *Project Fenster.*
-1) Wählen Sie **Create** Mixed Reality Toolkit State  >  **(Toolkitstatus**  >  **erstellen) aus.**
+1) Rechtsklick im *Project Fenster*
+1) Wählen **Sie Create** Mixed Reality Toolkit State  >    >  **(Mixed Reality Toolkitstatus erstellen) aus.**
 
-![States ScriptableObject-Beispiel im Inspektor](../images/interactable/DefaultInteractableStates.png)
+![StatusskriptableObject-Beispiel im Inspektor](../images/interactable/DefaultInteractableStates.png)
 
-Ein ScriptableObject definiert sowohl die Liste der Status als auch den Typ von [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) *StateModel,* der für diese Zustände erstellt werden soll. Ein *StateModel ist* eine Klasse, die die Zustandsautomatenlogik erweitert und implementiert, um den [`BaseStateModel`](xref:Microsoft.MixedReality.Toolkit.UI.BaseStateModel) aktuellen Zustand zur Laufzeit zu generieren. Der aktuelle Zustand dieser Klasse wird in der Regel von Design-Engines zur Laufzeit verwendet, um vorschreiben, welche Werte für Materialeigenschaften, GameObject-Transformationen und mehr festgelegt werden sollen.
+Ein [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) ScriptableObject definiert sowohl die Liste der Status als auch den Typ von *StateModel,* der für diese Zustände erstellt werden soll. Ein *StateModel* ist eine Klasse, die [`BaseStateModel`](xref:Microsoft.MixedReality.Toolkit.UI.BaseStateModel) die Zustandsautomatenlogik erweitert und implementiert, um den aktuellen Zustand zur Laufzeit zu generieren. Der aktuelle Zustand dieser Klasse wird von Design-Engines zur Laufzeit in der Regel verwendet, um zu bestimmen, welche Werte für Materialeigenschaften, GameObject-Transformationen und vieles mehr festgelegt werden sollen.
 
 ### <a name="theme-engine-properties"></a>Eigenschaften der Design-Engine
 
-Außerhalb von *Bundesstaaten* definiert [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) ein Objekt auch eine Liste von Design-Engines und die zugehörigen Eigenschaften für diese Engines. Eine [Design-Engine](#theme-engines) definiert erneut die Logik zum Festlegen der richtigen Werte für ein GameObject zur Laufzeit.
+Außerhalb von *States* definiert ein [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) Medienobjekt auch eine Liste von Design-Engines und die zugehörigen Eigenschaften für diese Engines. Eine [Design-Engine](#theme-engines) definiert erneut die Logik zum Festlegen der richtigen Werte für ein GameObject zur Laufzeit.
 
-Ein [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) Medienobjekt kann mehrere Design-Engines definieren, um komplexe visuelle Zustände für mehrere GameObject-Eigenschaften zu erreichen.
+Ein [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) Medienobjekt kann mehrere Design-Engines definieren, um anspruchsvolle visuelle Statusübergänge für mehrere GameObject-Eigenschaften zu erreichen.
 
-**Theme Runtime**
+**Designlaufzeit**
 
 Definiert den Klassentyp der Design-Engine, die erstellt wird.
 
 **Lockerung**
 
-Einige *Design-Engines* unterstützen eine Beschleunigung zwischen Zuzuständen, wenn sie ihre [Eigenschaft IsEasingSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.IsEasingSupported) als true definieren. Beispiel: Lerping zwischen zwei Farben, wenn eine Zustandsänderung auftritt. Die *Dauer* definiert in Sekunden, wie lange vom Startwert zum Endwert gelockert werden soll, und die *Animationskurve* definiert die Änderungsrate während dieses Zeitraums.
+Einige *Design-Engines* unterstützen die Beschleunigung zwischen Zuständen, wenn sie ihre Eigenschaft [IsEasingSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.IsEasingSupported) als true definieren. Beispiel: Lerping zwischen zwei Farben, wenn eine Zustandsänderung auftritt. *Die Dauer* definiert in Sekunden, wie lange vom Startwert zum Endwert gelockert werden soll, und die *Animationskurve* definiert die Änderungsrate während dieses Zeitraums.
 
 **Shadereigenschaften**
 
-Einige *Design-Engines* ändern bestimmte Shadereigenschaften zur Laufzeit, wenn sie ihre [Eigenschaft AreShadersSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.AreShadersSupported) als true definieren. Die *Shader-* und *Property-Felder* definieren die shader-Eigenschaft, die als Ziel festgelegt werden soll.
+Einige *Design-Engines* ändern bestimmte Shadereigenschaften zur Laufzeit, wenn sie ihre Eigenschaft [AreShadersSupported](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.AreShadersSupported) als true definieren. Die Felder *Shader* und *Eigenschaft* definieren die Shadereigenschaft, die als Ziel festgelegt werden soll.
 
-### <a name="create-a-theme-configuration-via-code"></a>Erstellen einer Designkonfiguration per Code
+### <a name="create-a-theme-configuration-via-code"></a>Erstellen einer Designkonfiguration über Code
 
 Im Allgemeinen ist es einfacher, Designkonfigurationen über den Unity-Inspektor zu entwerfen, aber es gibt Fälle, in denen Designs zur Laufzeit dynamisch über Code generiert werden müssen. Der folgende Codeausschnitt enthält ein Beispiel für die Durchführung dieser Aufgabe.
 
-Um die Entwicklung zu vereinfachen, sind die folgenden Hilfsmethoden nützlich, um das Setup zu vereinfachen.
+Um die Entwicklung zu beschleunigen, sind die folgenden Hilfsmethoden nützlich, um das Setup zu vereinfachen.
 
-[`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) : Erstellt ein neues States ScriptableObject mit den vier Standardwerten, die in der [Interactable-Komponente verwendet](interactable.md) werden.
+[`Interactable.GetDefaultInteractableStates()`](xref:Microsoft.MixedReality.Toolkit.UI.Interactable) – erstellt ein neues States ScriptableObject mit den vier Standardzustandswerten, die in der [Interactable-Komponente](interactable.md) verwendet werden.
 
-[`ThemeDefinition.GetDefaultThemeDefinition<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) – Jede Design-Engine definiert eine Standardkonfiguration mit den richtigen Eigenschaften, die für diesen Designlaufzeittyp erforderlich sind. Dieses Hilfsmodul erstellt eine Definition für den angegebenen Design-Engine-Typ.
+[`ThemeDefinition.GetDefaultThemeDefinition<T>()`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) – Jede Design-Engine definiert eine Standardkonfiguration mit den richtigen Eigenschaften, die für diesen Designruntimetyp erforderlich sind. Dieses Hilfssystem erstellt eine Definition für den angegebenen Design-Engine-Typ.
 
 ```c#
 // This code example builds a Theme ScriptableObject that can be used with an Interactable component.
@@ -99,11 +99,11 @@ testTheme.Definitions = new List<ThemeDefinition>() { newThemeType };
 
 ## <a name="theme-engines"></a>Design-Engines
 
-Eine [Design-Engine](#theme-engines) ist eine Klasse, die von der -Klasse erweitert [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) wird. Diese Klassen werden zur Laufzeit instanziiert und mit einem -Objekt [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) konfiguriert, wie zuvor beschrieben.
+Eine [Design-Engine](#theme-engines) ist eine Klasse, die sich von der [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) -Klasse erstreckt. Diese Klassen werden zur Laufzeit instanziiert und mit einem -Objekt konfiguriert, [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition) wie zuvor beschrieben.
 
 ### <a name="default-theme-engines"></a>Standarddesign-Engines
 
-MRTK wird mit einem Standardsatz von Design-Engines ausgestattet, die unten aufgeführt sind:
+MRTK wird mit einem Standardsatz von Design-Engines ausgeliefert, die unten aufgeführt sind:
 
 - [`InteractableActivateTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableActivateTheme)
 - [`InteractableAnimatorTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableAnimatorTheme)
@@ -124,17 +124,17 @@ Die Standarddesign-Engines finden Sie unter `MRTK/SDK/Features/UX/Scripts/Visual
 
 ### <a name="custom-theme-engines"></a>Benutzerdefinierte Design-Engines
 
-Wie bereits erwähnt, wird eine Design-Engine als Klasse definiert, die von der -Klasse erweitert [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) wird. Daher muss die neue Design-Engine diese Klasse nur erweitern und Folgendes implementieren:
+Wie bereits erwähnt, wird eine Design-Engine als klasse definiert, die sich von der [`InteractableThemeBase`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase) -Klasse erstreckt. Daher muss die neue Design-Engine nur diese Klasse erweitern und Folgendes implementieren:
 
 #### <a name="mandatory-implementations"></a>Obligatorische Implementierungen
 
 `public abstract void SetValue(ThemeStateProperty property, int index, float percentage)` (xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.SetValue)
 
-Legen Sie für die gegebene Eigenschaft, die durch identifiziert werden kann, ihren aktuellen Zustandswert auf dem Zielhost von `ThemeStateProperty.Name` GameObject fest (d. h. Legen Sie die Materialfarbe usw. fest. Der *Index* gibt den aktuellen Zustandswert für den Zugriff und den Prozentsatz *(* float zwischen 0 und 1) an, der zur Beschleunigung/Lerping zwischen Werten verwendet wird.
+Legen Sie für die angegebene Eigenschaft, die durch identifiziert werden `ThemeStateProperty.Name` kann, ihren aktuellen Zustandswert auf dem GameObject-Zielhost fest (d. h. legen Sie die Materialfarbe fest, usw.). Der *Index* gibt den aktuellen Zustandswert an, auf den zugegriffen werden soll, und der *Prozentsatz*, ein Gleitkommawert zwischen 0 und 1, wird für die Beschleunigung/Lerping zwischen Werten verwendet.
 
 `public abstract ThemePropertyValue GetProperty(ThemeStateProperty property)`(xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.GetProperty)
 
-Geben Sie für die gegebene Eigenschaft, die durch identifiziert werden kann, den aktuellen Wert zurück, der für das `ThemeStateProperty.Name` Zielhost-GameObject festgelegt ist (d. h. die aktuelle Materialfarbe, den aktuellen lokalen Positionsoffset usw.). Dies wird in erster Linie zum Zwischenspeichern des Startwerts bei der Beschleunigung zwischen Zuzuständen verwendet.
+Geben Sie für die angegebene Eigenschaft, die durch identifiziert werden `ThemeStateProperty.Name` kann, den aktuellen Wert zurück, der für das Zielhost-GameObject festgelegt ist (d.h. die aktuelle Materialfarbe, der aktuelle lokale Positionsoffset usw.). Dies wird in erster Linie zum Zwischenspeichern des Startwerts bei der Beschleunigung zwischen Zuständen verwendet.
 
 `public abstract ThemeDefinition GetDefaultThemeDefinition()`(xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.GetDefaultThemeDefinition)
 
@@ -142,28 +142,28 @@ Gibt ein [`ThemeDefinition`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinit
 
 `protected abstract void SetValue(ThemeStateProperty property, ThemePropertyValue value)`
 
-Geschützte Variante der öffentlichen Definition, mit Ausnahme des bereitgestellten ThemePropertyValue, das festgelegt werden soll, anstatt die Index- `SetValue()` und/oder Prozentkonfiguration zu verwenden.
+Geschützte Variante der öffentlichen Definition, mit Ausnahme der `SetValue()` bereitgestellten ThemePropertyValue, die festgelegt werden soll, anstatt an die Verwendung der Index- und/oder Prozentkonfiguration weiterzuleiten.
 
 #### <a name="recommended-overrides"></a>Empfohlene Außerkraftsetzungen
 
 [`InteractableThemeBase.Init(GameObject host, ThemeDefinition settings)`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase)
 
-Führen Sie hier alle Initialisierungsschritte aus, die auf den bereitgestellten *GameObject-Parameter* abzielen, und verwenden Sie die Eigenschaften und Konfigurationen, die im *ThemeDefinition-Parameter definiert* sind. Es wird empfohlen, am `base.Init(host, settings)` Anfang einer Außerkraftsetzung auf zu rufen.
+Führen Sie hier alle Initialisierungsschritte für den bereitgestellten *GameObject-Parameter* aus, und verwenden Sie dabei die im *ThemeDefinition-Parameter* definierten Eigenschaften und Konfigurationen. Es wird empfohlen, `base.Init(host, settings)` am Anfang einer Außerkraftsetzung aufzurufen.
 
 [`InteractableThemeBase.IsEasingSupported`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.IsEasingSupported)
 
-Wenn die benutzerdefinierte Design-Engine die Beschleunigung zwischen Werten unterstützen kann, die über die -Eigenschaft konfiguriert [`ThemeDefinition.Easing`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition.Easing) wird.
+Wenn die benutzerdefinierte Design-Engine die Beschleunigung zwischen Werten unterstützen kann, die über die -Eigenschaft konfiguriert [`ThemeDefinition.Easing`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeDefinition.Easing) werden.
 
 [`InteractableThemeBase.AreShadersSupported`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.AreShadersSupported)
 
-Wenn die benutzerdefinierte Design-Engine die Ausrichtung auf Shadereigenschaften unterstützen kann. Es wird empfohlen, von zu erweitern, um von der vorhandenen Infrastruktur zu profitieren, um Shadereigenschaften effizient über [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) [MaterialPropertyBlocks zu festlegen/zu erhalten.](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) Die Shader-Eigenschaftsinformationen werden in jedem über [`ThemeStateProperty`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty) und [`ThemeStateProperty.TargetShader`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.TargetShader) [`ThemeStateProperty.ShaderPropertyName`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.ShaderPropertyName) gespeichert.
+Wenn die benutzerdefinierte Design-Engine Shadereigenschaften unterstützen kann. Es wird empfohlen, von zu [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) erweitern, um von der vorhandenen Infrastruktur zu profitieren, um Shadereigenschaften effizient über [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html)festzulegen bzw. abzurufen. Die Shadereigenschafteninformationen werden jeweils über und in [`ThemeStateProperty`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty) [`ThemeStateProperty.TargetShader`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.TargetShader) [`ThemeStateProperty.ShaderPropertyName`](xref:Microsoft.MixedReality.Toolkit.UI.ThemeStateProperty.ShaderPropertyName) gespeichert.
 
 > [!NOTE]
-> Wenn Sie erweitern, kann es auch nützlich sein, [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) [InteractableShaderTheme.DefaultShaderProperty](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme.DefaultShaderProperty) über neue zu *überschreiben.*
+> Beim Erweitern [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) von kann es auch nützlich sein, [interactableShaderTheme.DefaultShaderProperty](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme.DefaultShaderProperty) über *neue* zu überschreiben.
 >
 > Beispielcode: `protected new const string DefaultShaderProperty = "_Color";`
 >
-> Darüber hinaus erweitern die folgenden Klassen unten die -Klasse, die [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) [wieder MaterialPropertyBlocks verwendet,](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) um Shader-Eigenschaftswerte zu ändern. Dieser Ansatz [hilft bei der Leistung,](https://docs.unity3d.com/Manual/DrawCallBatching.html) *da MaterialPropertyBlocks* keine neuen Instanzmaterialien erstellt, wenn sich Werte ändern. Der Zugriff auf die typischen Eigenschaften der [Material-Klasse](https://docs.unity3d.com/ScriptReference/Material.html) gibt jedoch keine erwarteten Werte zurück. Verwenden *von MaterialPropertyBlocks* zum Erhalten und Überprüfen aktueller Materialeigenschaftswerte (d. h. *_Color* oder *_MainTex*).
+> Darüber hinaus erweitern die folgenden Klassen die [`InteractableShaderTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableShaderTheme) -Klasse, die erneut [MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) verwendet, um shader-Eigenschaftswerte zu ändern. Dieser Ansatz [hilft bei](https://docs.unity3d.com/Manual/DrawCallBatching.html) der Leistung, da *MaterialPropertyBlocks* keine neuen instanzierten Materialien erstellt, wenn sich Werte ändern. Beim Zugriff auf die typischen Eigenschaften der [Material-Klasse](https://docs.unity3d.com/ScriptReference/Material.html) werden jedoch keine erwarteten Werte zurückgegeben. Verwenden von *MaterialPropertyBlocks* zum Abrufen und Überprüfen aktueller Materialeigenschaftswerte (d. h. *_Color* oder *_MainTex*).
 >
 > - [`InteractableColorChildrenTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableColorChildrenTheme)
 > - [`InteractableColorTheme`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableColorTheme)
@@ -172,11 +172,11 @@ Wenn die benutzerdefinierte Design-Engine die Ausrichtung auf Shadereigenschafte
 
 [`InteractableThemeBase.Reset`](xref:Microsoft.MixedReality.Toolkit.UI.InteractableThemeBase.Reset)
 
-Leitet das Design an, alle geänderten Eigenschaften auf ihre ursprünglichen Werte zurückzusetzen, die auf dem Host GameObject festgelegt wurden, als diese Design-Engine initialisiert wurde.  
+Weist das Design an, alle geänderten Eigenschaften auf ihre ursprünglichen Werte zurückzusetzen, die auf dem Host gameObject festgelegt wurden, als diese Design-Engine initialisiert wurde.  
 
-### <a name="custom-theme-engine-example"></a>Beispiel für benutzerdefinierte Design-Engine
+### <a name="custom-theme-engine-example"></a>Beispiel für eine benutzerdefinierte Design-Engine
 
-Die folgende Klasse ist ein Beispiel für eine benutzerdefinierte neue Design-Engine. Diese Implementierung findet eine [MeshRenderer-Komponente](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) für das initialisierte Hostobjekt und kontrolliert die Sichtbarkeit basierend auf dem aktuellen Zustand.
+Die folgende Klasse ist ein Beispiel für eine benutzerdefinierte neue Design-Engine. Diese Implementierung findet eine [MeshRenderer-Komponente](https://docs.unity3d.com/ScriptReference/MeshRenderer.html) im initialisierten Hostobjekt und steuert die Sichtbarkeit basierend auf dem aktuellen Zustand.
 
 ```c#
 using Microsoft.MixedReality.Toolkit.UI;
@@ -251,10 +251,10 @@ public class MeshVisibilityTheme : InteractableThemeBase
 
 ## <a name="end-to-end-example"></a>Vollständiges Beispiel
 
-Das folgende Codebeispiel erweitert die benutzerdefinierte Design-Engine, die im früheren Abschnitt definiert wurde, und veranschaulicht, wie dieses Design zur Laufzeit kontrolliert wird. Insbesondere wird beschrieben, wie sie den aktuellen Zustand für das Design festlegen, damit die MeshRenderer-Sichtbarkeit entsprechend aktualisiert wird.
+Das folgende Codebeispiel erweitert die benutzerdefinierte Design-Engine, die im vorherigen Abschnitt definiert wurde, und veranschaulicht, wie dieses Design zur Laufzeit gesteuert wird. Insbesondere erfahren Sie, wie Sie den aktuellen Zustand für das Design festlegen, damit die Sichtbarkeit von MeshRenderer entsprechend aktualisiert wird.
 
 > [!NOTE]
-> `theme.OnUpdate(state,force)` sollte in der Regel in der Update()-Methode aufgerufen werden, um Design-Engines zu unterstützen, die Beschleunigung/Lerping zwischen Werten nutzen.
+> `theme.OnUpdate(state,force)` sollte in der Regel in der Update()-Methode aufgerufen werden, um Design-Engines zu unterstützen, die Beschleunigung/Toleranz zwischen Werten verwenden.
 
 ```c#
 using Microsoft.MixedReality.Toolkit.UI;

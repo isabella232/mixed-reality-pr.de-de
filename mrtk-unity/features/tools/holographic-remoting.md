@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 0fbde863185a9f51b53192a338e9403dc79248db
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a0d8e695e23ed2b58a62511e8b061bede2c68d92fb0089c8dada1d336c2a09e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176647"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224813"
 ---
 # <a name="holographic-remoting"></a>Holographic Remoting
 
@@ -18,7 +18,7 @@ Holographic Remoting streamt holografische Inhalte von einem PC Microsoft HoloLe
 
 Das XR SDK, wie unten erwähnt, bezieht sich auf die neue XR-Pipeline von [Unity in Unity 2019.3 und darüber hinaus.](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) Weitere [Informationen](../../configuration/getting-started-with-mrtk-and-xrsdk.md) zur Verwendung des XR SDK mit MRTK finden Sie hier. Legacy-XR bezieht sich auf die vorhandene XR-Pipeline, die in Unity 2018 enthalten ist, in Unity 2019.3 veraltet und in Unity 2020 entfernt wurde.
 
-## <a name="initial-setup"></a>Erste Einrichtung
+## <a name="initial-setup"></a>Ersteinrichtung
 
 Um Remoting für eine HoloLens zu aktivieren, ist es wichtig sicherzustellen, dass das Projekt die neuesten Remotingkomponenten verwendet.
 
@@ -33,7 +33,7 @@ Fahren Sie mit [den Legacy-XR-Setupanweisungen](#legacy-xr-setup-instructions) o
 
 Die folgenden Anweisungen gelten nur für Remoting mit HoloLens 2. Wenn Sie remoting nur mit HoloLens (1. Generation) ausführen, fahren Sie mit Herstellen einer Verbindung mit dem HoloLens [mit WLAN ab.](#connecting-to-the-hololens-with-wi-fi)
 
-Wenn Sie eine HoloLens 2 verwenden, wurde dem MRTK Unterstützung für remoting artikulierte Hand- und Eyetrackingdaten hinzugefügt. Um diese Features zu aktivieren, führen Sie die schritte aus, die unter [Importieren von DotNetWinRT in das Projekt dokumentiert sind.](#import-dotnetwinrt-into-the-project)
+Wenn Sie eine HoloLens 2 verwenden, wurde mrtK Unterstützung für Remoting-Hand- und Eyetrackingdaten hinzugefügt. Um diese Features zu aktivieren, führen Sie die schritte aus, die unter [Importieren von DotNetWinRT in das Projekt dokumentiert sind.](#import-dotnetwinrt-into-the-project)
 
 Nach dem Importieren wählen Sie im nächsten Schritt Mixed Reality Toolkit-Hilfsprogramme  >    >    >  **Windows Mixed Reality**  >  **Konfiguration überprüfen aus.** In diesem Schritt wird eine Skripterstellungs definieren, die die DotNetWinRT-Abhängigkeit aktiviert.
 

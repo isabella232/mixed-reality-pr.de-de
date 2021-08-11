@@ -5,80 +5,80 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality, Design, Introduction, Guidance, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, UX, Ressourcen
-ms.openlocfilehash: f731ad91d48cdb50ad12b6a9cc250b6561eebaff
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality, Design, Einführung, Anleitung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, UX, Ressourcen
+ms.openlocfilehash: 0bd70e08d55f8d556ff3a612dbbc979dc895cebbfc9950f18d8d474ff347407b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847687"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198643"
 ---
 # <a name="about-this-design-guidance"></a>Informationen zu dieser Entwurfsanleitung
 
 ## <a name="introduction"></a>Einführung
 
-**Hallo, und Willkommen bei Ihrem Entwurfs Leit Faden für gemischte Realität.**
+**Hallo, und willkommen bei Ihrer Entwurfsanleitung für Mixed Reality.**
 
-Diese Anleitung wird von Microsoft-Designern, Entwicklern, Programmmanagern und Forschern verfasst. Die Arbeit unserer Writer umfasst holografische Geräte, einschließlich hololens, immersive Geräte, andacer und HP Windows Mixed Reality-Headsets. Es wird empfohlen, diesen Artikel als einen Satz von Themen für den mit dem Head bereitgestellten Windows-Entwurf zu betrachten.
+Diese Anleitung wurde von Microsoft-Designern, Entwicklern, Programmmanagern und Forschern geschrieben. Die Arbeit unserer Writer umfasst holografische Geräte, einschließlich HoloLens, immersiven Geräten undAcer- und HP-Windows Mixed Reality Headsets. Es wird empfohlen, diesen Artikel als eine Reihe von Themen für Windows design zu lesen.
 
-Wir werden direkt mit Ihnen einen überaus aufregenden neuen Zeitraum für die computingzeit eingeben. Unter Brüche in den bereitgestellten anzeigen, räumlichen Sound, Sensoren, Umweltbewusstsein, Eingabe und 3D-Grafiken führen Sie aus und fordern uns auf, neue Arten von Erfahrungen zu definieren. Die neue Grenze ist erheblich persönlicher, intuitiver, immersiver und kontextbezogen.
+Wir gehen direkt mit Ihnen in eine extrem interessante neue Zeit des Computings ein. Durchbrüche bei Monitoranzeigen, raumbezogenem Sound, Sensoren, Umgebungsbewusstsein, Eingaben und 3D-Grafiken führen und fordern uns dazu auf, neue Arten von Erfahrungen zu definieren. Die neue Grenze ist wesentlich persönlicher, intuitiver, immersiver und kontextbezogener.
 
-Nach Möglichkeit bieten wir Ihnen einen aussagekräftigen Entwurfs Leit Faden mit verknüpften Code auf GitHub. Da wir direkt mit Ihnen zusammenarbeiten, können wir hier nicht immer bestimmte, Handlungs relevante Anleitungen anbieten. Einige der freigegebenen Elemente werden im Sinne von "Lektionen, die wir gelernt haben" und "vermeiden, dass dieser Pfad ausfällt".
+Nach Möglichkeit bieten wir umsetzbare Entwurfsanleitungen mit zugehörigem Code GitHub. Da wir jedoch direkt mit Ihnen lernen, können wir hier nicht immer spezifische, umsetzbare Anleitungen anbieten. Einige der Vonnen, die wir teilen, werden in den "Lektionen, die wir gelernt haben" und "vermeiden, diesen Pfad zu gehen" sein.
 
-Und wir wissen, dass viele Innovationen von der größeren Entwurfs Community generiert werden. Wir freuen uns, von Ihnen zu hören, von Ihnen zu lernen und eng mit Ihnen zusammenzuarbeiten. Wir werden unsere Erkenntnisse am besten teilen, auch wenn Sie explorativ und frühzeitig sind. Unser Ziel ist es, Entwicklern und Designern Ihre Entwurfs denkenden, bewährten Methoden sowie die zugehörigen Open Source-Steuerelemente, Muster und Beispiel-apps zu unterstützen, die Sie direkt in ihrer eigenen Arbeit verwenden können.
+Und wir wissen, dass viele Innovationen von der größeren Entwurfs-Community generiert werden. Daher freuen wir uns darauf, von Ihnen zu hören, von Ihnen zu lernen und eng mit Ihnen zusammen zu arbeiten. Wir werden unser Bestes tun, um unsere Erkenntnisse zu teilen, auch wenn sie exploratorisch und früh sind. Unser Ziel ist es, Entwicklern und Designern bei ihren Entwurfskonzepten, bewährten Methoden und den zugehörigen Open-Source-Steuerelementen, Mustern und Beispiel-Apps zu helfen, die Sie direkt in Ihrer eigenen Arbeit verwenden können.
 
-## <a name="overview"></a>Übersicht
+## <a name="overview"></a>Überblick
 
-Im folgenden finden Sie eine kurze Übersicht über die Organisation dieses Entwurfs Leitfadens:
+Im Folgenden finden Sie eine kurze Übersicht über die Organisation dieses Entwurfsleitfadens:
 
-* **[Übersicht](design.md)** : erfahren Sie mehr über den Entwurfsprozess, die Kernkonzepte und die Interaktions Faktoren, die berücksichtigt werden müssen.
-* **[Grundlegende Konzepte](core-concepts-landingpage.md)** : erfahren Sie mehr über Komfort, Holographic Frame, räumliche Zuordnung und andere wichtige Konzepte, die berücksichtigt werden müssen.
-* **[Interaktionsmodelle](interaction-fundamentals.md)** : Diese Anleitung ist in drei Haupt Interaktions Modellen gegliedert.
-* **[UX-Elemente](app-patterns-landingpage.md)** : Verwenden Sie Steuerelemente und Verhaltensweisen als Bausteine zum Erstellen Ihrer eigenen Anwendungserfahrung.
-* **[Ressourcen](design.md#choose-a-prototyping-option)** : Starten Sie Ihr Projekt mit Entwurfs Tools und Prototypen-Optionen.
+* **[Übersicht:](design.md)** Erfahren Sie mehr über den Entwurfsprozess, die wichtigsten Konzepte und die zu berücksichtigenden Interaktionsfaktoren.
+* **[Grundlegende Konzepte:](core-concepts-landingpage.md)** Erfahren Sie mehr über Komfort, holografischen Rahmen, räumliche Zuordnung und andere zu berücksichtigende Kernkonzepte.
+* **[Interaktionsmodelle:](interaction-fundamentals.md)** Diese Anleitung ist um drei primäre Interaktionsmodelle strukturiert.
+* **[UX-Elemente:](app-patterns-landingpage.md)** Verwenden Sie Steuerelemente und Verhaltensweisen als Bausteine, um Ihre eigene Anwendungserfahrung zu erstellen.
+* **[Ressourcen:](design.md#choose-a-prototyping-option)** Starten Sie Ihr Projekt mit Entwurfstools und Prototyperstellungsoptionen.
 
-Für alle oben genannten Ziele wird die richtige Mischung aus Text, Abbildungen und Videos bereitzustellen. Sie werden sehen, dass wir mit unterschiedlichen Formaten und Techniken experimentieren und alles mit der Absicht bereitstellen, was Sie benötigen. In den kommenden Monaten wird diese Taxonomie erweitert, um einen umfassenderen Satz von Entwurfs Themen einzubeziehen. Nachdem möglich haben wir Ihnen einen Überblick über das nächste Mal, also schauen wir uns das Mal an.
+Für alle oben genannten Informationen möchten wir die richtige Mischung aus Text, Abbildungen und Videos liefern. Sie werden sehen, wie wir mit verschiedenen Formaten und Techniken experimentieren, und das alles mit der Absicht, das zu liefern, was Sie benötigen. In den kommenden Monaten wird diese Taxonomie erweitert, um einen umfassenderen Satz von Entwurfsthemen zu erhalten. Wenn möglich, geben wir Ihnen einen Blick darauf, was als Nächstes kommen wird. Überprüfen Sie daher immer wieder.
 
 ## <a name="objectives"></a>Ziele
 
-Hier sehen Sie eine kurze Übersicht über einige allgemeine Ziele, die diese Arbeit leiten, damit Sie verstehen können, woher wir kommen.
+Hier finden Sie einen kurzen Überblick über einige ziele auf hoher Ebene, die diese Arbeit leiten, damit Sie verstehen können, woher wir kommen.
 
-### <a name="help-solve-customer-challenges"></a>Hilfe bei der Lösung von Kundenproblemen
+### <a name="help-solve-customer-challenges"></a>Hilfe bei der Lösung von Kundenherausforderungen
 
-![Hilfe bei der Lösung von Kundenproblemen](images/500px-fix-a-broken-switch-with-hololens.jpg) <br>
+![Hilfe bei der Lösung von Kundenherausforderungen](images/500px-fix-a-broken-switch-with-hololens.jpg) <br>
 
-Wir führen viele der gleichen Probleme aus, und wir verstehen, wie ihre Arbeit schwierig ist. Es ist aufregend, eine neue Grenze zu erforschen und zu definieren... Außerdem kann es sich als beängstigend erweisen. Alte Paradigmen und Verfahren werden wiederholt, Kunden benötigen neue Erfahrungen, und es gibt so viele Möglichkeiten für Innovationen. Wir möchten, dass diese Arbeit so umfassend wie möglich ist, und Sie sollten sich über einen Stil Leit Faden hinaus bewegen. Wir sind bestrebt, einen umfassenden Satz von Entwurfs Anleitungen bereitzustellen, in denen gemischte Interaktionen, Befehle, Navigation, Eingaben und Stil behandelt werden – alle auf menschliches Verhalten und Szenarios basieren. 
+Wir ringen mit vielen der gleichen Probleme wie Sie, und wir wissen, wie schwierig Ihre Arbeit ist. Es ist spannender, eine neue Grenze zu erkunden und zu definieren... und es kann auch bemutigend sein. Alte Paradigmen und Methoden werden neu gesucht, Kunden benötigen neue Erfahrungen, und es gibt so viel Potenzial für Innovation. Wir möchten, dass diese Arbeit so umfassend wie möglich ist und weit über einen Stilleitfaden hinaus geht. Wir möchten einen umfassenden Satz von Entwurfsanleitungen für Mixed Reality-Interaktion, Befehle, Navigation, Eingabe und Stil bieten– alles auf menschlichem Verhalten und Szenarien. 
 
-### <a name="point-the-way-towards-a-new-more-human-way-of-computing"></a>Zeigen Sie auf eine neue, menschlichere Art von Computing
+### <a name="point-the-way-towards-a-new-more-human-way-of-computing"></a>Zeigen Sie den Weg zu einer neuen, menschlichen Computing-Methode
 
-![Zeigen Sie auf eine neue, menschlichere Art von Computing](images/500px-man-and-women-with-holograph-on-table.png)<br>
+![Zeigen Sie den Weg zu einer neuen, menschlichen Computing-Methode](images/500px-man-and-women-with-holograph-on-table.png)<br>
 
-Obwohl es wichtig ist, sich auf bestimmte Kunden Probleme zu konzentrieren, möchten wir uns auch selbst pushen, um weitere Informationen zu erhalten. Wir glauben, dass es sich bei dem Design nicht um die Problembehebung handelt. Neue Möglichkeiten für menschliches Verhalten, zwischenmenschliche Beziehungen, Aktivitäten und Umgebungen fördern unsere Innovationen. Wir möchten, dass unser Leitfaden all diese stärker anzurufenden Ansätze widerspiegelt. 
+Es ist zwar wichtig, sich auf bestimmte Kundenprobleme zu konzentrieren, aber wir möchten uns auch selbst pushen, um mehr zu liefern. Wir sind der Meinung, dass ein hervorragender Entwurf nicht nur die Problembehebung ist, sondern auch eine Möglichkeit, die menschliche Entwicklung sinnvoll zu aktivieren. Neue Methoden für menschliches Verhalten, zwischenmenschlichen Beziehungen, Aktivitäten und Umgebungen fördern unsere Innovation. Wir möchten, dass unsere Anleitung auch all diese anstirnenden Denkweisen widerspiegeln soll. 
 
-### <a name="meet-creators-where-they-are"></a>Treffen Sie Ersteller, wo Sie
+### <a name="meet-creators-where-they-are"></a>Ersteller dort treffen, wo sie sich befinden
 
-![Treffen Sie Ersteller, wo Sie](images/500px-creators.jpg) <br>
+![Ersteller dort treffen, wo sie sich befinden](images/500px-creators.jpg) <br>
 
-Wir hoffen, dass viele Zielgruppen diese Anleitung finden, um hilfreich zu sein. Sie verfügen über unterschiedliche Fertigkeiten (Anfang, Fortgeschrittene, erweitert), verwenden verschiedene Tools (Unity, DirectX, C++, c#, andere), sind mit verschiedenen Plattformen (Windows, Ios, Android) vertraut und stammen aus unterschiedlichen Hintergründen (Mobile, Enterprise, Gaming) und arbeiten an verschiedenen Größen Teams ("Solo", "Small", "Medium"). Diese Anleitung kann also mit unterschiedlichen Perspektiven und Anforderungen angezeigt werden. Nach Möglichkeit werden wir versuchen, diese Vielfalt zu berücksichtigen und unseren Leitfaden so wichtig wie möglich für so viele Personen wie möglich zu gestalten. Wir wissen, dass viele von Ihnen bereits auf GitHub vorhanden sind. Wir werden also direkt mit GitHub-retorys und Foren verknüpft, um Ihnen die Stelle zu begegnen, an der Sie bereits sind. 
+Wir hoffen, dass diese Anleitung für viele Zielgruppen hilfreich ist. Sie verfügen über verschiedene Skillsets (Anfang, Zwischenstufe, Erweitert), verwenden verschiedene Tools (Unity, DirectX, C++, C#, andere), sind mit verschiedenen Plattformen (Windows, iOS, Android) vertraut, kommen aus unterschiedlichen Hintergründen (mobil, Enterprise, Gaming) und arbeiten in verschiedenen Größenteams (Solo, Klein, Mittel, Groß). Diese Anleitung kann also mit unterschiedlichen Perspektiven und Anforderungen betrachtet werden. Nach Möglichkeit versuchen wir, diese Vielfalt im Hinterkopf zu behalten und unsere Anleitung so relevant wie möglich für so viele Personen wie möglich zu gestalten. Wir wissen, dass viele von Ihnen bereits GitHub. Wir stellen also direkt einen Link zu GitHub Repositorys und Foren, um Sie dort zu treffen, wo Sie sich bereits befinden. 
 
-### <a name="share-as-much-as-possible-from-experimental-to-explicit"></a>So viel wie möglich von experimentellen bis expliziten teilen
+### <a name="share-as-much-as-possible-from-experimental-to-explicit"></a>Geben Sie so viel wie möglich von experimentell bis explizit weiter.
 
-![So viel wie möglich von experimentellen bis expliziten teilen](images/500px-man-playinggame.jpg) <br>
+![Geben Sie so viel wie möglich von experimentell bis explizit weiter.](images/500px-man-playinggame.jpg) <br>
 
-Eine der Herausforderungen bei der Bereitstellung eines Entwurfs Leitfadens in diesem neuen 3D-Medium besteht darin, dass wir nicht immer definitive Anleitungen zum Angebot haben. Ebenso wie Sie lernen, experimentieren, Prototypen, Problembehebung und Anpassung, wenn wir auf Hindernisse stoßen. Anstatt auf eine mythliche Zukunft zu warten, in der wir alles herausgefunden haben, wollen wir unsere Meinung in Echtzeit teilen, auch wenn Sie nicht eindeutig ist. Unser Ziel ist es, an jedem Punkt genau zu sein, und Sie können eine klare, flexible Entwurfs Anleitung bereitstellen, die an Open Source-Code gebunden ist und in Entwicklungs-und Entwurfs Tools von Microsoft handlungsfähig ist. Das Erreichen dieses Punkts dauert jedoch viele Runden an Iterationen und Lern Vorgängen. Wir möchten uns mit Ihnen in Verbindung treten und mit Ihnen zusammenarbeiten. Wir werden unsere bestmögliche Freigabe tun, auch wenn unsere experimentellen Inhalte experimentell sind. 
+Eine der Herausforderungen beim Anbieten von Entwurfsleitfäden in diesem neuen 3D-Medium besteht in der, dass wir nicht immer über eine definitive Anleitung verfügen. Genau wie Sie lernen wir, experimentieren, prototypieren, lösen Probleme und passen uns an, wenn wir auf Hindernisse treffen. Anstatt auf einen sagenumklassischen zukünftigen Moment zu warten, wenn wir alles herausfinden, möchten wir unser Denken mit Ihnen in Echtzeit teilen, auch wenn es nicht heiter ist. Unser Endziel ist es, überall dort, wo wir können, definitiv zu sein und klare, flexible Entwurfsleitfäden zu bieten, die an Open-Source-Code gebunden sind und in Den Entwicklungs- und Entwurfstools von Microsoft umsetzbar sind. Aber bis zu diesem Punkt sind viele Iterations- und Lerndurchlaufe in Sicht. Wir möchten mit Ihnen interagieren und dabei mit Ihnen lernen. Wir werden unser Bestes geben, während wir losgehen, auch mit unseren Experimenten. 
 
-### <a name="the-right-balance-of-global-and-local-design"></a>Das richtige Gleichgewicht des globalen und des lokalen Entwurfs
+### <a name="the-right-balance-of-global-and-local-design"></a>Das richtige Gleichgewicht zwischen globalem und lokalem Design
 
-![Das richtige Gleichgewicht des globalen und des lokalen Entwurfs](images/500px-fluentdesign.jpg) <br>
+![Das richtige Gleichgewicht zwischen globalem und lokalem Design](images/500px-fluentdesign.jpg) <br>
 
-Wir bieten zwei Entwurfs Leit Fäden: Global und local. Unser "Global"-Entwurfs Leit Faden ist im [System für das fließende Design](https://fluent.microsoft.com)enthalten. Es wird ausführlich erläutert, wie wir über Grundlagen wie Light, Tiefe, Bewegung, Material und Skalierung für alle Microsoft-Entwürfe nachzudenken, unsere Geräte, Produkte, Tools und Dienste. Dies bedeutet, dass in diesem größeren System erhebliche gerätespezifische Unterschiede vorhanden sind. Der "local"-Entwurfs Leit Faden für die in der Eingabe eingebundenen anzeigen beschreibt den Entwurf für holografische und immersive Geräte, die häufig über verschiedene Eingabe-und Ausgabemethoden und verschiedene Benutzer Anforderungen und-Szenarien verfügen. Leitfaden zum lokalen Design behandelt die für HMDs eindeutigen Themen. Beispiel: 3D-Umgebungen und-Objekte; freigegebene Umgebungen; Verwendung von Sensoren, Augen Verfolgung und räumlicher Zuordnung und die Möglichkeiten räumlicher Audiodaten. Im Rahmen unserer Anleitung sehen Sie wahrscheinlich, dass wir sowohl auf die globalen als auch auf die lokalen Aspekte verweisen. Hoffentlich hilft Ihnen dies, ihre Arbeit in einer größeren Entwurfs Grundlage zu unterstützen und gleichzeitig die Entwurfs Unterschiede zwischen bestimmten Geräten zu nutzen.
+Wir bieten zwei Entwurfsebenen an: global und lokal. Unsere "globale" Entwurfsanleitung ist in [der](https://fluent.microsoft.com)Fluent Design System. Fluent, wie wir über Grundlagen wie Licht, Tiefe, Bewegung, Material und Skalierung für alle Microsoft-Designs – unsere Geräte, Produkte, Tools und Dienste – nachdenken. In diesem größeren System gibt es jedoch erhebliche gerätespezifische Unterschiede. Daher wird in unserer "lokalen" Entwurfsanleitung für head-mounted Displays der Entwurf für holografische und immersive Geräte beschrieben, die häufig unterschiedliche Eingabe- und Ausgabemethoden sowie unterschiedliche Benutzeranforderungen und -szenarien haben. Der leitfaden für den lokalen Entwurf deckt Themen ab, die für HMDs einzigartig sind. Beispiel: 3D-Umgebungen und -Objekte; freigegebene Umgebungen; die Verwendung von Sensoren, Eyetracking und räumlicher Zuordnung; und die Möglichkeiten räumlicher Audioinhalte. Im gesamten Leitfaden werden wir wahrscheinlich sowohl auf diese globalen als auch auf die lokalen Aspekte verweisen. Dies hilft Ihnen hoffentlich dabei, Ihre Arbeit auf einer größeren Grundlage des Entwurfs zu gestalten und gleichzeitig die Entwurfsunterschiede zwischen bestimmten Geräten zu nutzen.
 
 ### <a name="have-a-discussion"></a>Diskussion
 
 ![Diskussion](images/500px-share.jpg) <br>
 
-Am wichtigsten ist, dass wir uns mit Ihnen, der Community von Holographic und immersiven Designern und Entwicklern in Verbindung treten möchten, um diesen neuen Entwurfs Zeitraum zu definieren. Wie bereits erwähnt, wissen wir, dass wir nicht alle Antworten haben. Aus diesem Grund werden wir glauben, dass viele interessante Lösungen und Innovationen von Ihnen kommen. Wir sind bestrebt, offen und verfügbar zu sein, um zu erfahren, wie Sie mit Ihnen Online und bei Veranstaltungen besprechen können, und Sie können jederzeit den Wert hinzufügen. Wir freuen uns, ein Teil dieser beeindruckenden Entwurfs Community zu sein, die ein Adventure zusammenfasst. 
+Vor allem möchten wir mit Ihnen, der Community von holografischen und immersiven Designern und Entwicklern, zusammenarbeiten, um diese interessante neue Designzeit zu definieren. Wie bereits erwähnt, wissen wir, dass wir nicht alle Antworten haben. Aus diesem Grund sind wir der Meinung, dass viele interessante Lösungen und Innovationen von Ihnen stammen werden. Wir sind bestrebt, offen und verfügbar zu sein, um sich darüber zu informieren, online und bei Veranstaltungen mit Ihnen zu besprechen und einen Mehrwert zu schaffen, wo immer wir können. Wir freuen uns, Teil dieser beeindruckenden Design-Community zu sein und gemeinsam ein Adventure zu unternehmen. 
 
-## <a name="dive-in"></a>Einblick in
+## <a name="dive-in"></a>Dive in (In diesem Bereich)
 
-Wir hoffen, dass dieser Einführungs Artikel einen sinnvollen Kontext bietet, während Sie unsere Entwurfs Leit Fäden kennenlernen. Informieren Sie sich, und teilen Sie uns Ihre Gedanken in den GitHub-Foren mit, die Sie in unseren Artikeln finden, oder bei Microsoft Design auf [Twitter](https://twitter.com/MicrosoftDesign) und [Facebook](https://www.facebook.com/microsoftdesign/). Lassen Sie uns die Zukunft gemeinsam entwerfen!
+Wir hoffen, dass dieser Einführungsartikel einen sinnvollen Kontext bietet, wenn Sie unsere Entwurfsanleitung untersuchen. Gehen Sie ein, und teilen Sie uns Ihre Gedanken in den GitHub-Foren mit, die Sie in unseren Artikeln finden, oder unter Microsoft Design auf [Twitter und](https://twitter.com/MicrosoftDesign) [Facebook.](https://www.facebook.com/microsoftdesign/) Lassen Sie uns die Zukunft gemeinsam gestalten!

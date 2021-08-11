@@ -1,18 +1,18 @@
 ---
-title: Licht mit Dem Hover
+title: Schwebelicht
 description: Dokumentation zu HoverLight mit Beispielen in MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, Hover Light,
-ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 948a0772cd2fad667984d8d5507664e4346a507e84b03c873eccf8d3f1e66532
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198582"
 ---
-# <a name="hover-light"></a>Licht mit Dem Hover
+# <a name="hover-light"></a>Schwebelicht
 
 Ein ist ein Fluent Design System Paradigma, das ein Punktlicht imitiert, das auf die Oberfläche eines [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) Objekts zeigen soll. [](https://www.microsoft.com/design/fluent/) [](https://docs.unity3d.com/Manual/Lighting.html) Häufig für weit entfernte Interaktionen verwendet, kann die Anwendung die Eigenschaften eines Hoverlichts über die Komponente [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) steuern.
 
@@ -29,7 +29,7 @@ Die **HoverLightExamples-Szene** veranschaulicht auch die Verwendung von Verhalt
 
 ## <a name="advanced-usage"></a>Erweiterte Nutzung
 
-Nur zehn [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) können ein Material [gleichzeitig](https://docs.unity3d.com/ScriptReference/Material.html) beleuchten. Wenn Ihr Projekt mehr als zehn benötigt, um ein Material zu beeinflussen, zeigt der folgende Beispielcode, [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) wie dies erreicht werden kann. [](https://docs.unity3d.com/ScriptReference/Material.html)
+Nur zehn [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) können ein Material [gleichzeitig](https://docs.unity3d.com/ScriptReference/Material.html) beleuchten. Wenn Ihr Projekt mehr als zehn benötigt, um ein Material zu beeinflussen, veranschaulicht der folgende Beispielcode, [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) wie dies erreicht werden kann. [](https://docs.unity3d.com/ScriptReference/Material.html)
 
 > [!Note]
 > Wenn ein [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) Material mit vielen Farben [belichtet wird,](https://docs.unity3d.com/ScriptReference/Material.html) werden die Anweisungen für Denkpixel-Shader erhöht, was sich auf die Leistung auswirken wird. **Erstellen Sie ein Profil für diese Änderungen in Ihrem Projekt.**

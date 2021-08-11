@@ -7,12 +7,12 @@ ms.date: 6/7/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, Lernen, Beispiele, MRTK, Forschungsmodus, HoloLens 2, QR-Codes, WebRTC, Mixed Reality-Aufnahme, Holographic Remoting, UX-Tools
 ms.localizationpriority: high
-ms.openlocfilehash: 78a9e343fde4a6cbc23268f0be353577498d67b6
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 1c713604f3a73620c4b7314afe7b70e0b2a59bef1c4e0ae0482c7f0143c38e71
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227672"
 ---
 # <a name="samples-and-feature-apps"></a>Beispiele und Feature-Apps
 

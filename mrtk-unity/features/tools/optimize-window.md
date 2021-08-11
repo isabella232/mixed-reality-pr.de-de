@@ -1,16 +1,16 @@
 ---
 title: Optimierungsfenster
-description: Fenster "Dokumentationsoptimierung" in MRTK
+description: Fenster "Dokumentationsoptimierung" im MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 8b8928e9c723ffa9fd08d22866b8ee5748e38ace
-ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
+ms.openlocfilehash: f87b0742afcf2c270d1060742ad0945132b4998cc055b1908b8a1ef17c9a0fe4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114713582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199728"
 ---
 # <a name="optimize-window"></a>Optimierungsfenster
 
@@ -25,7 +25,7 @@ Das *Leistungsziel* weist das Optimierungstool an, welche Art von Geräteendpunk
 
 - *AR-Headsets* sind Geräte der mobilen Klasse, z. B. HoloLens
 - *VR Standalone* sind Geräte der Mobilen Klasse, z. B. Oculus Go oder Quest.
-- *VR Tethered* sind PC-gestützte Geräte, z. B. Samsung Odyssey, Oculus Rift oder LG Vive usw.
+- *VR Tethered* sind PC-gestützte Geräte, z. B. Samsung Odyssey, Oculus Rift oder SAMSUNG Vive usw.
 
 ![MRTK Optimize Window Performance Target](../images/performance/OptimizeWindowPerformanceTarget.jpg)
 
@@ -39,7 +39,7 @@ Ein grünes Häkchen bedeutet, dass ein optimaler Wert im Projekt/in der Szene f
 
 ### <a name="single-pass-instanced-rendering"></a>Rendering mit Einzeldurchlaufinstanz
 
-[Single-Pass-Instanzrendering](https://docs.unity3d.com/Manual/SinglePassInstancing.html) ist der effizienteste Renderingpfad für Mixed Reality-Anwendungen. Durch diese Konfiguration wird sichergestellt, dass die Renderpipeline nur einmal für beide Augen ausgeführt wird und dass Zeichnen-Aufrufe über beide Augen hinweg instanziert werden.
+[Single Pass Instanced Rendering](https://docs.unity3d.com/Manual/SinglePassInstancing.html) ist der effizienteste Renderingpfad für Mixed Reality-Anwendungen. Durch diese Konfiguration wird sichergestellt, dass die Renderpipeline nur einmal für beide Augen ausgeführt wird und dass Zeichnen-Aufrufe über beide Augen hinweg instanziert werden.
 
 ### <a name="depth-buffer-sharing"></a>Gemeinsame Nutzung von Tiefenpuffern
 
@@ -50,7 +50,7 @@ Um die [Hologrammstabilität](../../performance/hologram-Stabilization.md)zu ver
 Darüber hinaus wird für *AR-Headsets* empfohlen, ein 16-Bit-Tiefenformat zu verwenden, wenn Die Tiefenpufferfreigabe im Vergleich zu 24-Bit aktiviert wird. Dies bedeutet eine geringere Genauigkeit, spart aber die Leistung. Wenn [Z-Fighting](https://en.wikipedia.org/wiki/Z-fighting) auftritt, weil die Genauigkeit bei der Berechnung der Tiefe für Pixel geringer ist, empfiehlt es sich, die [weit entfernte Clipebene](https://docs.unity3d.com/Manual/class-Camera.html) näher an die Kamera zu verschieben (z.B. 50m anstelle von 1000m).
 
 > [!NOTE]
-> Bei Verwendung des *16-Bit-Tiefenformats* funktionieren die erforderlichen Auswirkungen des Schablonenpuffers nicht, da Unity in dieser Einstellung [keinen Schablonenpuffer erstellt.](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) Wenn Sie umgekehrt das *24-Bit-Tiefenformat* auswählen, wird in der Regel ein [8-Bit-Schablonenpuffer](https://docs.unity3d.com/Manual/SL-Stencil.html)erstellt, falls zutreffend auf der Endpunktgrafikplattform.
+> Bei Verwendung des *16-Bit-Tiefenformats* funktionieren die erforderlichen Auswirkungen des Schablonenpuffers nicht, da Unity in dieser Einstellung [keinen Schablonenpuffer erstellt.](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) Wenn Sie umgekehrt das *24-Bit-Tiefenformat* auswählen, wird in der Regel ein [8-Bit-Schablonenpuffer](https://docs.unity3d.com/Manual/SL-Stencil.html)erstellt, sofern dies auf der Endpunktgrafikplattform gilt.
 >
 > Wenn Sie eine [Mask-Komponente](https://docs.unity3d.com/Manual/script-Mask.html) verwenden, die den Schablonenpuffer erfordert, erwägen Sie stattdessen die Verwendung von [RectMask2D,](https://docs.unity3d.com/Manual/script-RectMask2D.html) die den Schablonenpuffer nicht benötigt und daher in Verbindung mit einem *16-Bit-Tiefenformat* verwendet werden kann.
 

@@ -1,19 +1,19 @@
 ---
-title: Auswählen ihrer Engine
-description: Hier erhalten Sie eine Einführung in die Engine-Optionen, die für Mixed Reality Entwicklung für HoloLens und VR verfügbar sind.
+title: Auswählen Ihrer Engine
+description: Erhalten Sie eine Einführung in die Engine-Optionen, die für Mixed Reality Entwicklung für HoloLens UND VR verfügbar sind.
 author: hferrone
 ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, Unity
-ms.openlocfilehash: c91a4df9db8ef71778421750bca48d81d4b4a02e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 14235852f8c90e7ccc4f105f2938ce514ae2933973469db9a0e01bd03d2c1b6d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394524"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227551"
 ---
-# <a name="choosing-your-engine"></a>Auswählen ihrer Engine
+# <a name="choosing-your-engine"></a>Auswählen Ihrer Engine
 
 Es gibt mehrere Entwicklungspfade, über die Sie unsere Dokumentation durchlaufen können. Der erste Schritt besteht darin, die Technologie zu finden, die für Sie geeignet ist. Wenn Sie bereits an eine bestimmte denken, springen Sie direkt zum entsprechenden Tab weiter unten. Wenn Sie noch unentschlossen sind oder gerade erst anfangen, sehen Sie sich alle einmal einzeln an, um zu verstehen, was sie bieten, also die verfügbaren Plattformen und Tools, und beginnen Sie mit der Entwicklung!
 
@@ -31,7 +31,7 @@ Es gibt mehrere Entwicklungspfade, über die Sie unsere Dokumentation durchlaufe
 * **Webentwickler,** die überzeugende browserübergreifende AR/VR-Weberfahrungen erstellen, können **WebXR verwenden.**
 
     > [!NOTE]
-    > **Babylon.js** für die HoloLens-Entwicklung wird derzeit in Bearbeitung. Sehen Sie sich die [neuesten Nachrichten an, und interagieren Sie mit der Community!](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)
+    > **Babylon.js** für HoloLens entwicklung wird gerade in Bearbeitung. Sehen Sie sich die [neuesten Nachrichten an, und interagieren Sie mit der Community!](https://doc.babylonjs.com/divingDeeper/webXR/introToWebXR)
 
 <!-- Babylon is a Javascript-based, open source, 3D graphics engine capable of powering 3D scenes in a web browser. Babylon.js 4.2+ includes support for WebXR. With Babylon React Native, you can even build cross-platform native     applications for PC, mobile, and mixed reality devices. -->
 
@@ -42,7 +42,7 @@ Es gibt mehrere Entwicklungspfade, über die Sie unsere Dokumentation durchlaufe
 | Logistics | Unity | Unreal | JavaScript | Benutzerdefinierte Engine <br>(mit OpenXR) |
 |---|---|---|---|---|
 | Sprache | C# | C++ | JavaScript | C/C++ |
-| Preise | [Unity – Preise](https://store.unity.com/#plans-individual) | [Unreal– Preise](https://www.unrealengine.com/download) | Kostenlos | Kostenlos |
+| Preise | [Unity – Preise](https://store.unity.com/#plans-individual) | [Unreal-Preise](https://www.unrealengine.com/download) | Kostenlos | Kostenlos |
 
 <br>
 

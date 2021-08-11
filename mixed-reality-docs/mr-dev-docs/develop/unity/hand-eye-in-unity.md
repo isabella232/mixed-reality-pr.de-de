@@ -6,21 +6,21 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Gesten, Motion-Controller, Unity, Anvisiert, Eingabe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 2daa02a0681fe4f3da24fa32379e10877750af7e
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 005b817574e6d3600b9c43e443432203418b58a2258e2938614cc549ab7539c2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223836"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Artikulierte Hand- und Blickverfolgung in Unity
 
-HoloLens 2 wurden einige neue und interessante Funktionen eingeführt, z. B. Artikulierte Hand- und Blickverfolgung.
+HoloLens 2 wurden einige neue und interessante Funktionen eingeführt, z. B. artikulierte Hand- und Blickverfolgung.
 
 Die einfachste Möglichkeit, die neue Funktion in Unity zu nutzen, ist MRTK. Es gibt auch einige Beispielszenen, die Ihnen den Einstieg erleichtern.
 
 * [Erste Schritte mit artikulierter Hand im MRTK](/windows/mixed-reality/mrtk-unity/features/input/hand-tracking)
-* [Erste Schritte mit eye tracking in MRTK](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
+* [Erste Schritte mit Eye Tracking in MRTK](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 
 ## <a name="building-blocks-supporting-hands-eyes-and-others-in-mrtk"></a>Bausteine zur Unterstützung von Händen, Augen und anderen Personen im MRTK
 

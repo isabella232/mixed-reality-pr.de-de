@@ -1,22 +1,22 @@
 ---
-ms.openlocfilehash: 51c62468f0f13b390bf003e05d44cbe2e2f3be05
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+ms.openlocfilehash: a359bf0101c579bbad8a2671b84d019a6ac53a36a53679bcaff5774694901850
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200166"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
 |  Prüfpunkt  |  Ergebnis  |
 | --- | --- |
-| [Was ist OpenXR?](../native/openxr.md) | Beginnen Sie mit der nativen Entwicklungs Journey, indem Sie sich mit openxr und den Bereitstellung der Angebote vertraut machen. |
-| [Installieren der neuesten Tools](../install-the-tools.md) | Herunterladen und Installieren der neuesten systemeigenen Entwicklungs Tools |
-| [Einrichten für hololens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Konfigurieren Ihres Geräts und ihrer Umgebung für die hololens 2-Entwicklung |
-| [Einrichtung für immersive Headsets](../native/openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Konfigurieren Ihres Geräts und ihrer Umgebung für die Windows Mixed Reality-Entwicklung |
-| [Beispiel-App ausprobieren](../native/openxr-getting-started.md#building-a-sample-openxr-app) | Untersuchen Sie eine UWP-und Win32-Version der gleichen grundlegenden openxr-App auf Ihrem Gerät. |
-| [Erlernen der openxr-API](../native/openxr-getting-started.md#learning-the-openxr-api) | Sehen Sie sich ein Video mit einer exemplarischen Vorgehensweise zu 60 Minuten an, in der alle wichtigen Komponenten der openxr-API in Visual Studio |
-| [Hinzufügen des openxr-Lade Moduls](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Hinzufügen des openxr-Lade Moduls zu einem vorhandenen systemeigenen Projekt für den Einstieg in die Entwicklung |
+| [Was ist OpenXR?](../native/openxr.md) | Machen Sie sich mit OpenXR und seinen Angeboten vertraut, um Sich mit Ihrer nativen Entwicklungsreise vertraut zu machen. |
+| [Installieren der neuesten Tools](../install-the-tools.md) | Herunterladen und Installieren der neuesten nativen Entwicklungstools |
+| [Einrichten für HoloLens 2](../native/openxr-getting-started.md#getting-started-with-openxr-for-hololens-2) | Konfigurieren Ihres Geräts und Ihrer Umgebung für HoloLens 2 Entwicklung |
+| [Einrichten für immersive Headsets](../native/openxr-getting-started.md#getting-started-with-openxr-for-windows-mixed-reality-headsets) | Konfigurieren Ihres Geräts und Ihrer Umgebung für Windows Mixed Reality Entwicklung |
+| [Beispiel-App ausprobieren](../native/openxr-getting-started.md#building-a-sample-openxr-app) | Untersuchen einer UWP- und Win32-Version derselben einfachen OpenXR-App auf Ihrem Gerät |
+| [Informationen zur OpenXR-API](../native/openxr-getting-started.md#learning-the-openxr-api) | Sehen Sie sich ein 60-minütiges Video mit exemplarischer Vorgehensweise an, das alle wichtigen Komponenten der OpenXR-API in Visual Studio |
+| [Hinzufügen des OpenXR-Laders](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | Hinzufügen des OpenXR-Laders zu einem vorhandenen nativen Projekt, um mit der Entwicklung zu beginnen |
 
 <!--
 # [WinRT (Legacy)](#tab/winrt)

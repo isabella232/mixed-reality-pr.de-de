@@ -5,169 +5,169 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK,
-ms.openlocfilehash: 66b79c14bbd0ea8c188aba684b9bd1034de31bf9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: f329cceded5e510d3d4fc1a1c13b5a504f1f3669ad408b733267595e77dd15a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176959"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227583"
 ---
 # <a name="input-simulation-service"></a>Eingabesimulationsdienst
 
 ![MRTK-Eingabesimulation](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
 
-Mit der MrTK-Eingabesimulation können Sie verschiedene Arten von Interaktionen im Unity-Editor testen, ohne ein Gerät erstellen und bereitstellen zu müssen. Auf diese Weise können Sie Ihre Ideen im Entwurfs- und Entwicklungsprozess schnell iterieren. Verwenden Sie Tastenkombinationen und Mauskombinationen, um simulierte Eingaben zu steuern.
+Mit der Eingabesimulation des MRTK können Sie verschiedene Arten von Interaktionen im Unity-Editor testen, ohne erstellen und auf einem Gerät bereitstellen zu müssen. Auf diese Weise können Sie Ihre Ideen im Entwurfs- und Entwicklungsprozess schnell iterieren. Verwenden Sie Kombinationen aus Tastatur- und Mauseingaben, um simulierte Eingaben zu steuern.
 
 Der Eingabesimulationsdienst emuliert das Verhalten von Geräten und Plattformen, die möglicherweise nicht im Unity-Editor verfügbar sind. Beispiele:
 
-* HoloLens oder VR-Gerätekopfverfolgung
+* HoloLens- oder VR-Gerätekopfverfolgung
 * HoloLens Handgesten
 * HoloLens 2 artikulierte Handverfolgung
 * HoloLens 2 Eyetracking
 * VR-Gerätecontroller
 
 > [!WARNING]
-> Dies funktioniert nicht, wenn die XR Holographic Emulation von Unity > Emulationsmodus = "Simulate in Editor" (Im Editor simulieren) verwendet wird. Die In-Editor-Simulation von Unity wird die Kontrolle über die Eingabesimulation des MRTK übernehmen. Um den MRTK-Eingabesimulationsdienst verwenden zu können, müssen Sie XR Holographic Emulation auf Emulation Mode = *"None" (Keine) festlegen.*
+> Dies funktioniert nicht, wenn Die Holografische XR-Emulation von Unity > Emulationsmodus = "Im Editor simulieren" verwendet wird. Die In-Editor-Simulation von Unity übernimmt die Kontrolle über die MRTK-Eingabesimulation. Um den MRTK-Eingabesimulationsdienst verwenden zu können, müssen Sie XR Holographic Emulation auf Emulation Mode = *"None" festlegen.*
 
 ## <a name="how-to-use-mrtk-input-simulation"></a>Verwenden der MRTK-Eingabesimulation 
 
-Die Eingabesimulation ist in den Profilen, die im MRTK-Versand sind, standardmäßig aktiviert. Sie können einfach auf die **Schaltfläche Wiedergabe** klicken, um die Szene mit Eingabesimulationsunterstützung ausführen zu lassen.
+Die Eingabesimulation ist in den Profilen, die mit MRTK versendet werden, standardmäßig aktiviert. Sie können einfach auf die Schaltfläche **Wiedergeben** klicken, um die Szene mit Unterstützung der Eingabesimulation auszuführen.
 
-* Drücken **Sie die Tasten W, A, S, D, Q, E,** um die Kamera zu bewegen.
-* Halten Sie die **rechte Maustaste gedrückt,** und bewegen Sie die Maus, um nach ihnen zu suchen.
-* Drücken Sie zum Aufbringen der simulierten Hände die **TASTENTASTE (rechts)** oder NACH-LINKS-TASTE **(Linke Hand).**
-* Drücken Sie T oder **Y,** um simulierte Hände in der Ansicht zu halten. 
-* Halten Sie zum Drehen simulierter Hände die **STRG-TASTE** gedrückt, und bewegen Sie die Maus.
+* Drücken Sie die Tasten **W, A, S, D, Q, E**, um die Kamera zu bewegen.
+* Halten Sie die **rechte Maustaste** gedrückt, und bewegen Sie die Maus, um sich umzusehen.
+* Um die simulierten Hände aufzurufen, drücken Sie die **LEERTASTE (rechte Hand)** oder die **linke UMSCHALTTASTE (linke Hand)** .
+* Um die simulierten Hände im Blickfeld zu halten, drücken Sie die Taste **T** oder **Y**.
+* Drücken und halten Sie **die STRG-TASTE** gedrückt, und bewegen Sie die Maus, um simulierte Hände zu drehen.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
 
-## <a name="in-editor-input-simulation-cheat-sheet"></a>Cheat Sheet zur Eingabesimulation im Editor
+## <a name="in-editor-input-simulation-cheat-sheet"></a>Spickzettel für Die Eingabesimulation im Editor
 
-Drücken Sie in der HandInteractionExamples-Szene nach links **STRG+H,** um ein Cheat Sheet mit Eingabesimulationssteuerelementen zu erhalten.
+Drücken Sie in der HandInteractionExamples-Szene **nach links STRG+H,** um ein Spickzettel mit Eingabesimulationssteuerelementen auf den Weg zu bringen.
 
-> ![MRTK Input Simulation Cheat Sheet](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+> ![Spickzettel für MRTK-Eingabesimulation](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
 
 
 ## <a name="enabling-the-input-simulation-service"></a>Aktivieren des Eingabesimulationsdiensts
 
 Unter der Konfiguration des Eingabesystemdatenanbieters kann der Eingabesimulationsdienst wie folgt konfiguriert werden.
 
-* **Typ** muss *Microsoft.MixedReality.Toolkit.Input > InputSimulationService sein.*
-* **Unterstützte Plattformen umfassen standardmäßig** alle *Editor-Plattformen,* da der Dienst Tastatur- und Mauseingaben verwendet.
+* **Typ** muss *Microsoft.MixedReality.Toolkit.Input > InputSimulationService* sein.
+* **Unterstützte Plattformen** umfassen standardmäßig alle *Editor-Plattformen,* da der Dienst Tastatur- und Mauseingaben verwendet.
 
 > [!NOTE]
-> Der Eingabesimulationsdienst kann auf anderen Plattformendpunkten verwendet werden, z. B. eigenständig, indem die Eigenschaft Unterstützte **Plattform(en)** geändert wird, um die gewünschten Ziele ein- und einaufnahme.
+> Der Eingabesimulationsdienst kann auf anderen Plattformendpunkten verwendet werden, z. B. eigenständig, indem die **Eigenschaft Unterstützte Plattformen** so geändert wird, dass die gewünschten Ziele eingeschlossen werden.
 > <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
 
-## <a name="camera-control"></a>Kamerasteuerung
+## <a name="camera-control"></a>Kamerasteuerelement
 
 Die Kopfbewegung kann vom Eingabesimulationsdienst emuliert werden.
 
 ### <a name="rotating-the-camera"></a>Drehen der Kamera
 
-1. Zeigen Sie auf das Viewport-Editor-Fenster.
-    *Möglicherweise müssen Sie auf das Fenster klicken, um ihm den Eingabefokus zu geben, wenn Tastendruck nicht funktioniert.*
-1. Halten Sie die **Maustaste gedrückt** (Standard: Rechte Maustaste).
+1. Zeigen Sie auf das Viewport-Editorfenster.
+    *Möglicherweise müssen Sie auf das Fenster klicken, um den Eingabefokus zu erhalten, wenn schaltflächendrücken nicht funktionieren.*
+1. Halten Sie die **Maustaste** gedrückt (Standardeinstellung: Rechte Maustaste).
 1. Bewegen Sie die Maus im Viewportfenster, um die Kamera zu drehen.
 1. Verwenden Sie das Scrollrad, um die Kamera um die Ansichtsrichtung zu drehen.
 
-Die Kameradrehgeschwindigkeit kann durch Ändern der **Einstellung Mouse Look Speed** im Eingabesimulationsprofil konfiguriert werden.
+Die Kameradrehungsgeschwindigkeit kann konfiguriert werden, indem die Einstellung **Mouse Look Speed** im Eingabesimulationsprofil geändert wird.
 
-Alternativ können Sie die Vertikale **Look Horizontal** Look-Achsen verwenden, um die Kamera zu drehen /  (Standard: game controller right thumbstick).
+Alternativ können Sie die Achsen Horizontales **Aussehen** vertikal aussehen verwenden, um die Kamera zu drehen /  (Standard: game controller right thumbstick).
 
 ### <a name="moving-the-camera"></a>Bewegen der Kamera
 
-Verwenden Sie **die Achsen "Horizontale** Bewegung vertikal verschieben", um die Kamera zu verschieben /  (Standardeinstellung: WASD-Tasten oder game controller left thumbstick).
+Verwenden Sie die Achsen Move Horizontal Move Vertical **(Horizontales** / **Verschieben** vertikal verschieben), um die Kamera zu verschieben (Standardeinstellung: WASD-Tasten oder game controller left thumbstick).
 
-Kameraposition und Drehwinkel können auch explizit im Toolsfenster festgelegt werden. Die Kamera kann mithilfe der Schaltfläche Zurücksetzen auf den **Standardwert zurückgesetzt** werden.
+Kameraposition und Drehwinkel können auch explizit im Toolfenster festgelegt werden. Die Kamera kann mithilfe der Schaltfläche **Zurücksetzen** auf ihre Standardeinstellung zurückgesetzt werden.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="controller-simulation"></a>Controllersimulation
 
-Die Eingabesimulation unterstützt emulierte Controllergeräte (d. h. Motion Controller und Hände). Diese virtuellen Controller können mit jedem Objekt interagieren, das reguläre Controller unterstützt, z. B. Schaltflächen oder greifbare Objekte.
+Die Eingabesimulation unterstützt emulierte Controllergeräte (d. h. Motion Controller und Hände). Diese virtuellen Controller können mit jedem Objekt interagieren, das reguläre Controller unterstützt, z. B. Schaltflächen oder fähige Objekte.
 
 ### <a name="controller-simulation-mode"></a>Controllersimulationsmodus
 
-Im Fenster [der Eingabesimulationstools](#input-simulation-tools-window) wechselt **die Einstellung Standardcontrollersimulationsmodus** zwischen drei unterschiedlichen Eingabemodellen. Dieser Standardmodus kann auch im Eingabesimulationsprofil festgelegt werden.
+Im [Fenster "Eingabesimulationstools"](#input-simulation-tools-window) wechselt die Einstellung **Standardcontroller-Simulationsmodus** zwischen drei unterschiedlichen Eingabemodellen. Dieser Standardmodus kann auch im Eingabesimulationsprofil festgelegt werden.
 
-* *Artikulierte Hände:* Simuliert ein vollständig artikuliertes Handgerät mit Gemeinsamen Positionsdaten.
+* *Artikulierte Hände:* Simuliert ein vollständig artikuliertes Handgerät mit Daten zur gemeinsamen Position.
 
    Emuliert HoloLens 2 Interaktionsmodell.
 
-   Interaktionen, die auf der präzisen Positionierung der Hand oder der Verwendung von Touching basieren, können in diesem Modus simuliert werden.
+   Interaktionen, die auf der präzisen Positionierung der Hand basieren oder Toucheingaben verwenden, können in diesem Modus simuliert werden.
 
-* *Handgesten:* Simuliert ein vereinfachtes Handmodell mit Tippbewegungen in die Luft und grundlegenden Gesten.
+* *HandGesten:* Simuliert ein vereinfachtes Handmodell mit Tippen in die Luft und einfachen Gesten.
 
    Emuliert [HoloLens Interaktionsmodell.](/windows/mixed-reality/gestures)
 
-   Der Fokus wird mithilfe des Anvingzeigers gesteuert. Die *Geste Tippen* in die Luft wird für die Interaktion mit Schaltflächen verwendet.
+   Der Fokus wird mithilfe des Zeigers "Anvieren" gesteuert. Die *Geste "Tippen* auf die Luft" wird verwendet, um mit Schaltflächen zu interagieren.
 
-* *Motion Controller*: Simuliert einen Motion Controller, der mit VR-Headsets verwendet wird und ähnlich wie bei fernen Interaktionen mit Artikulierten Händen funktioniert.
+* *Motion Controller*: Simuliert einen Motion Controller, der mit VR-Headsets verwendet wird und ähnlich wie fernen Interaktionen mit artikulierten Händen funktioniert.
 
-   Emuliert das VR-Headset mit dem Controllerinteraktionsmodell.
+   Emuliert das VR-Headset mit dem Interaktionsmodell für Controller.
 
-   Trigger, Greif- und Menütasten werden per Tastatur- und Mauseingabe simuliert.
+   Trigger, Greifen und Menütasten werden per Tastatur- und Mauseingabe simuliert.
 
 ### <a name="simulating-controller-movement"></a>Simulieren der Controllerbewegung
 
-Drücken und halten Sie die Taste für  die Controllerbearbeitung nach **links/rechts** (Standard: Linke UMSCHALTTASTE für den linken Controller und *Leerzeichen* für den rechten Controller), um die Kontrolle über beide Controller zu erlangen. Während die Manipulationstaste gedrückt wird, wird der Controller im Viewport angezeigt. Nachdem der Manipulationsschlüssel freigegeben wurde, werden die Controller nach einem kurzen **Timeout für das Ausblenden des Controllers nicht mehr verwendet.**
+Halten Sie die **Bearbeitungstaste für den linken/rechten Controller** gedrückt (Standardeinstellung: *Linke UMSCHALTTASTE* für linken Controller und *Leerraum* für den rechten Controller), um die Kontrolle über beide Controller zu erlangen. Während die Bearbeitungstaste gedrückt wird, wird der Controller im Viewport angezeigt. Sobald der Manipulationsschlüssel losgelassen wurde, werden die Controller nach einem kurzen **Timeout für das Ausblenden** des Controllers ausgeblendet.
 
-Controller können ein- und fixiert werden, relativ [](#input-simulation-tools-window) zur Kamera im Fenster der Eingabesimulationstools oder durch Drücken der Umschalttaste **links/rechts** (Standard: *T* für links und *Y* für rechts). Drücken Sie erneut die Umschalttaste, um die Controller erneut auszublenden. Um die Controller zu bearbeiten, muss **der Linke/rechte Controllermanipulationsschlüssel** gehalten werden. Wenn Sie auf den **Bearbeitungsschlüssel für den linken/rechten Controller** tippen, können Sie die Controller auch ein-/ausschalten.
+Controller können im [Eingabesimulationstoolsfenster](#input-simulation-tools-window) ein- und fixiert werden, oder sie können durch Drücken der **Umschalttaste links/rechts (Standard:** *T* für links und *Y* für rechts) eingeschaltet und fixiert werden. Drücken Sie erneut die Umschalttaste, um die Controller erneut auszublenden. Um die Controller zu bearbeiten, muss der Bearbeitungsschlüssel für **den linken/rechten Controller** gehalten werden. Durch doppeltes Tippen auf den Bearbeitungsschlüssel des **linken/rechten Controllers** können die Controller auch ein-/ausgeschaltet werden.
 
-Die Mausbewegung bewegt den Controller in der Ansichtsebene. Controller können mit dem Mausrad weiter oder näher zur **Kamera bewegt werden.**
+Die Mausbewegung bewegt den Controller auf der Ansichtsebene. Controller können mit dem **Mausrad** weiter oder näher an die Kamera verschoben werden.
 
-Halten Sie zum Drehen von Controllern mit der Maus sowohl die  **Linke/Rechte** Taste zum Ändern des Controllers *(* Linke UMSCHALTTASTE oder Leerzeichen *)* als auch die **Schaltfläche** Controller rotieren (Standard:  Linke STRG-Taste) gedrückt, und bewegen Sie dann die Maus, um den Controller zu drehen. Die Geschwindigkeit der Controllerrotation kann durch Ändern der **Einstellung Drehgeschwindigkeit** des Mauscontrollers im Eingabesimulationsprofil konfiguriert werden.
+Um Controller mit der Maus zu drehen, halten Sie sowohl die **Bearbeitungstaste des linken/rechten Controllers** *(Linke UMSCHALTTASTE* oder *Leertaste)* *als* auch die Schaltfläche Zum Drehen des **Controllers** (Standard: *Linke STRG-Taste)* gedrückt, und bewegen Sie dann die Maus, um den Controller zu drehen. Die Geschwindigkeit der Controllerrotation kann konfiguriert werden, indem die Einstellung Für die Drehgeschwindigkeit des **Mauscontrollers** im Eingabesimulationsprofil geändert wird.
 
-Alle Handplatzierungen können auch im Fenster der [Eingabesimulationstools](#input-simulation-tools-window)geändert werden, einschließlich des Zurücksetzens der Hände auf den Standardwert.
+Die gesamte Handplatzierung kann auch im [Eingabesimulationstoolsfenster](#input-simulation-tools-window)geändert werden, einschließlich des Zurücksetzens der Hände auf den Standardwert.
 
 ### <a name="additional-profile-settings"></a>Zusätzliche Profileinstellungen
 
-* **Der Controller-Tiefenmultiplikator** steuert die Empfindlichkeit der Tiefenbewegung des Mausscrollrads. Eine größere Zahl beschleunigt den Controllerzoom.
-* **Standardcontrollerabstand** ist der anfängliche Abstand der Controller von der Kamera. Wenn Sie auf die **Schaltfläche Zurücksetzen** klicken, platzieren Sie controller ebenfalls in dieser Entfernung.
-* **Controller Jitter Amount fügt** Controllern zufällige Bewegungen hinzu. Dieses Feature kann verwendet werden, um ungenaue Controllernachverfolgung auf dem Gerät zu simulieren und sicherzustellen, dass Interaktionen mit lauten Eingaben gut funktionieren.
+* **Der Multiplikator** für die Controllertiefe steuert die Empfindlichkeit der Mausrad-Tiefenbewegung. Eine größere Zahl beschleunigt den Zoom des Controllers.
+* **Standardcontrollerabstand** ist der anfängliche Abstand der Controller von der Kamera. Wenn Sie auf die Schaltfläche **Zurücksetzen** klicken, werden Controller ebenfalls in dieser Entfernung platzieren.
+* **Controller Jitter Amount** fügt Controllern zufällige Bewegung hinzu. Dieses Feature kann verwendet werden, um ungenaue Controllernachverfolgung auf dem Gerät zu simulieren und sicherzustellen, dass Interaktionen mit lauten Eingaben gut funktionieren.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="hand-gestures"></a>Handgesten
 
-Handgesten wie Zusammendring, Greifen, Poking usw. können ebenfalls simuliert werden.
+Handgesten wie z.B. Zusammendrücken, Greifen, Klappen usw. können ebenfalls simuliert werden.
 
-1. Aktivieren der Handsteuerung mithilfe **des Links-/Rechtscontroller-Manipulationsschlüssels** (*Linke Umschalttaste* oder *Leerzeichen*)
+1. Aktivieren des Handsteuerelements mithilfe des Bearbeitungsschlüssels für den **linken/rechten Controller** *(Linke UMSCHALTTASTE* oder *LEERTASTE)*
 
-2. Halten Sie beim Bearbeiten eine Maustaste gedrückt, um eine Handbewegung durchzuführen.
+2. Halten Sie beim Bearbeiten eine Maustaste gedrückt, um eine Handgeste auszuführen.
 
-Jede der Maustasten kann zugeordnet werden, um die Handform in eine andere Geste zu transformieren, indem die Einstellungen *linke/mittlere/rechte Mausbewegung verwendet* werden. Die *Standardhandgeste* ist die Form der Hand, wenn keine Schaltfläche gedrückt wird.
+Jede der Maustasten kann zugeordnet werden, um die Handform mithilfe der Einstellungen für *linke/mittlere/rechte Mausgeste* in eine andere Geste zu transformieren. Die *Standardmäßige Handgeste* ist die Form der Hand, wenn keine Schaltfläche gedrückt wird.
 
 > [!NOTE]
-> Die *Pinch-Geste* ist die einzige Geste, die an dieser Stelle die Aktion "Auswählen" ausführt.
+> Die *Geste Zusammendringen* ist die einzige Geste, die an diesem Punkt die Aktion "Auswählen" ausführt.
 
-### <a name="one-hand-manipulation"></a>One-Hand-Manipulation
+### <a name="one-hand-manipulation"></a>Einseitige Bearbeitung
 
-1. Drücken und halten Sie die Taste für die Controllerbearbeitung nach **links/rechts** (*Linke Umschalttaste* oder *Leerzeichen*)
-2. Punkt auf Objekt
-3. Halten Sie die Maustaste gedrückt, um sie zu halten.
+1. Drücken und halten Sie **die Bearbeitungstaste für den linken/rechten Controller** gedrückt *(Linke UMSCHALTTASTE* oder *LEERTASTE).*
+2. Zeigen auf das Objekt
+3. Halten Sie die Maustaste gedrückt, um zu drücken.
 4. Verwenden der Maus zum Verschieben des Objekts
-5. Lassen Sie die Maustaste los, um die Interaktion zu beenden.
+5. Loslassen der Maustaste zum Beenden der Interaktion
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### <a name="two-hand-manipulation"></a>Zweihandmanipulation
+### <a name="two-hand-manipulation"></a>Zweiseitige Bearbeitung
 
-Für die gleichzeitige Bearbeitung von Objekten mit zwei Händen wird der persistente Handmodus empfohlen.
+Für die gleichzeitige Bearbeitung von Objekten mit zwei Händen wird der permanente Handmodus empfohlen.
 
-1. Umschalten an beiden Händen durch Drücken der Umschalttasten (*T/Y*).
+1. Schalten Sie beide Hände ein, indem Sie die Umschalttasten drücken (*T/Y*).
 1. Bearbeiten Sie eine Hand nach der anderen:
     1. Halten **Sie den Platz,** um die rechte Hand zu steuern.
-    1. Bewegen Sie die Hand an den Ort, an dem Sie das Objekt greifen möchten.
+    1. Bewegen sie die Hand an den Ort, an dem Sie das Objekt greifen möchten.
     1. Drücken Sie die **linke Maustaste,** um die Stiftbewegung *zu* aktivieren.
-    1. **Freigabebereich,** um die Steuerung der rechten Hand zu beenden. Die Hand wird an Ort und Stelle fixiert und an der *Pinch-Geste* gesperrt, da sie nicht mehr bearbeitet wird.
+    1. **Freigabebereich,** um die Steuerung der rechten Hand zu beenden. Die Hand wird an Ort und  Stelle fixiert und in der Stiftgeste gesperrt, da sie nicht mehr bearbeitet wird.
 1. Wiederholen Sie den Vorgang mit der anderen Hand, und greifen Sie dasselbe Objekt an einer zweiten Stelle.
 1. Da nun beide Hände dasselbe Objekt greifen, können Sie beide bewegen, um eine zweihändige Bearbeitung durchzuführen.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-### <a name="ggv-gaze-gesture-and-voice-interaction"></a>GGV-Interaktion (Anving, Geste und Stimme)
+### <a name="ggv-gaze-gesture-and-voice-interaction"></a>GGV-Interaktion (Gaze, Gesture, and Voice)
 
 Standardmäßig ist die GGV-Interaktion im Editor aktiviert, während in der Szene keine artikulierten Hände vorhanden sind.
 
@@ -217,7 +217,7 @@ Ein Prefab für Schaltflächen im Editor zum Steuern der grundlegenden Handplatz
 
 Handsymbole zeigen den Zustand der simulierten Hände an:
 
-* ![Symbol "Nicht vertrackte Hand"](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) Die Hand wird nicht nachverfolgt. Klicken Sie auf diese Schaltfläche, um die Hand zu aktivieren.
+* ![Symbol "Nicht vertrackte Hand"](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) Die Hand wird nicht nachverfolgt. Klicken Sie auf diese Option, um die Hand zu aktivieren.
 * ![Symbol "Nachverfolgte Hand&quot;](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png &quot;Symbol &quot;Nachverfolgte Hand&quot;") Die Hand wird nachverfolgt, aber nicht vom Benutzer gesteuert. Klicken Sie auf diese Schaltfläche, um die Hand auszublenden.
 * ![Symbol "Kontrollierte Hand"](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "Symbol &quot;Kontrollierte Hand&quot;") Die Hand wird vom Benutzer nachverfolgt und gesteuert. Klicken Sie auf diese Schaltfläche, um die Hand auszublenden.
 * ![Symbol "Hand zurücksetzen"](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "Symbol &quot;Hand zurücksetzen&quot;") Klicken Sie auf diese Option, um die Hand auf die Standardposition zurückzusetzen.

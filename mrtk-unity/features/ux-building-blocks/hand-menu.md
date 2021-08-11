@@ -5,16 +5,16 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity, HoloLens, HoloLens 2, Mixed Reality, Entwicklung, MRTK, HandMenu,
-ms.openlocfilehash: 9bb0276c048912b4f463dd93d3303c9a3af8fe29
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ecf05b687c52dab68302b9b66b3890aca31b5635b803084abd6845f31de974e0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226469"
 ---
 # <a name="hand-menu"></a>Handmenü
 
-![Beispiel für die Benutzererfahrung im Handmenü](../images/solver/MRTK_UX_HandMenu.png)
+![UX-Beispiel für ein Handmenü](../images/solver/MRTK_UX_HandMenu.png)
 
 MitHilfe von Handmenüs können Benutzer schnell eine handverfügte Benutzeroberfläche für häufig verwendete Funktionen aufrufen. Um eine falsche Aktivierung während der Interaktion mit anderen Objekten zu verhindern, bietet das Handmenü Optionen wie "Flache Hand erforderlich" und "Anviertaktivierung verwenden". Es wird empfohlen, diese Optionen zu verwenden, um unerwünschte Aktivierung zu verhindern.
 
@@ -33,13 +33,13 @@ In diesen beiden Beispielen wird das MenuContent-Objekt einfach aktiviert und de
 
 ### <a name="handmenu_large_worldlock_on_grabandpull"></a>HandMenu_Large_WorldLock_On_GrabAndPull
 
-Für komplexere Menüs, die eine längere Interaktionszeit erfordern, wird empfohlen, das Menü weltweit zu sperren. In diesem Beispiel kann der Benutzer das Menü abrufen und zur Weltsperre ziehen, zusätzlich zum Aktivieren und Deaktivieren der MenuContent-Ereignisse on **OnFirstHandDetected()** und **OnLastHandLost().**
+Für komplexere Menüs, die eine längere Interaktionszeit erfordern, wird empfohlen, das Menü weltweit zu sperren. In diesem Beispiel kann der Benutzer das Menü abrufen und zur Weltsperre ziehen, zusätzlich zum Aktivieren und Deaktivieren des MenuContent-Ereignisses für **OnFirstHandDetected()** und **OnLastHandLost().**
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example3.png" width="600" alt="HandMenu_ExampleScene 3">
 
-Backplate es `ManipulationHandler` macht es greifend und verschiebbar. **Beim Manipulation Started-Ereignis** wird **SolverHandler.UpdateSolvers** deaktiviert, um das Menü weltweit zu sperren. Darüber hinaus wird die **Schaltfläche Schließen** angezeigt, damit der Benutzer das Menü schließen kann, wenn die Aufgabe abgeschlossen ist. **Beim Manipulation Ended-Ereignis** wird **HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine** aufgerufen, damit der Benutzer das Menü wieder zur Hand nehmen kann, indem er die Handfläche anhebt und ansieht.
+Backplate es `ManipulationHandler` macht es greifend und verschiebbar. **Beim Manipulation Started-Ereignis** wird **SolverHandler.UpdateSolvers** deaktiviert, um das Menü weltweit zu sperren. Darüber hinaus wird die **Schaltfläche Schließen** angezeigt, damit der Benutzer das Menü schließen kann, wenn die Aufgabe abgeschlossen ist. **Beim Manipulation Ended-Ereignis** wird **HandConstraintPalmUp.StartWorldLockReattachCheckCoroutine** aufgerufen, damit der Benutzer das Menü wieder in die Hand nehmen kann, indem er die Handfläche anhebt und ansieht.
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example4.png" width="600" alt="HandMenu_ExampleScene 4">
 
-Die Schaltfläche **"Schließen"** reaktiviert **SolverHandler.UpdateSolvers** und blendet **menuContent** aus.
+Die Schaltfläche **"Schließen"** aktiviert **SolverHandler.UpdateSolvers** erneut und blendet **menuContent** aus.
 <br/><img src="../images/hand-menu/MRTK_HandMenu_Example5.png" alt="HandMenu_ExampleScene 5">
 
 ### <a name="handmenu_large_autoworldlock_on_handdrop"></a>HandMenu_Large_AutoWorldLock_On_HandDrop
@@ -48,7 +48,7 @@ Dieses Beispiel ähnelt HandMenu_Large_WorldLock_On_GrabAndPull. Der einzige Unt
 
 ## <a name="scripts"></a>Skripts
 
-Das [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) Verhalten stellt einen Solver bereit, der das nachverfolgte Objekt auf einen Bereich beschränkt, der für eingeschränkten Handinhalt sicher ist (z. B. Die Benutzeroberfläche der Hand, Menüs usw.). Tresor Regionen gelten als Bereiche, die sich nicht mit der Hand überschneiden. Eine abgeleitete Klasse von [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) namens [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ist ebenfalls enthalten, um ein allgemeines Verhalten der Aktivierung des nachverfolgten Solverobjekts zu veranschaulichen, wenn die Handfläche dem Benutzer gegenübersteht.
+Das [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)-Verhalten stellt einen Solver bereit, der das verfolgte Objekt auf einen Bereich beschränkt, der für auf Hand eingeschränkte Inhalte sicher ist (z. B. Handbenutzeroberfläche, Menüs usw.). Als sichere Regionen gelten Bereiche, die sich nicht mit der Hand überschneiden. Eine abgeleitete Klasse von [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) namens [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ist ebenfalls enthalten, um ein allgemeines Verhalten der Aktivierung des vom Solver verfolgten Objekts zu veranschaulichen, wenn die Handfläche dem Benutzer zugewandt ist.
 
 Weitere Dokumentation finden Sie in den QuickInfos, die für jede Eigenschaft verfügbar [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) sind. Einige Eigenschaften werden unten ausführlicher definiert.
 
@@ -56,7 +56,7 @@ Weitere Dokumentation finden Sie in den QuickInfos, die für jede Eigenschaft ve
 
 * **Tresor Zone:** Die sichere Zone gibt an, wo Inhalte eingeschränkt werden sollen. Es wird empfohlen, Inhalte auf der Ulnar-Seite zu platzieren, um Überschneidungen mit der Hand und eine verbesserte Interaktionsqualität zu vermeiden. Tresor Zonen werden berechnet, indem die Ausrichtung der Hände, die in ein Ebenenorthogonal projiziert werden, zur Ansicht der Kamera und zum Raycasting an einem umgebenden Feld um die Hände geleitet wird. Tresor Zonen sind für die Arbeit mit [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) definiert, funktionieren aber auch mit anderen Controllertypen. Es wird empfohlen, zu untersuchen, was jede sichere Zone auf verschiedenen Controllertypen darstellt.
 
-* **Hand folgen bis zur kameraseitigen Kamera** Wenn dieser aktiv ist, folgt der Solver der Handdrehung, bis das Menü ausreichend auf den Anviert ausgerichtet ist, an dem er sich der Kamera gegenübersieht. Dies funktioniert, indem SolverRotationBehavior im HandConstraintSolver von LookAtTrackedObject in LookAtMainCamera geändert wird, da der GazeAlignment-Winkel mit dem Solver variiert.
+* **Hand bis Kamera folgen** Bei dieser Aktivität folgt der Solver der Handdrehung, bis das Menü ausreichend auf den Anviert ausgerichtet ist, an dem er sich der Kamera gegenübersieht. Dies funktioniert, indem SolverRotationBehavior im HandConstraintSolver von LookAtTrackedObject in LookAtMainCamera geändert wird, da der GazeAlignment-Winkel mit dem Solver variiert.
 
 <img src="../images/solver/MRTK_Solver_HandConstraintSafeZones.png" width="450" alt="HandMenu Safe Zones">
 
@@ -77,5 +77,5 @@ Weitere Dokumentation finden Sie in den QuickInfos, die für jede Eigenschaft ve
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Button](button.md) (Schaltfläche)
+* [Schaltfläche](button.md)
 * [Menü "In der Nähe"](near-menu.md)

@@ -1,17 +1,17 @@
 ---
 title: Anvisieren in Unity
-description: Erfahren Sie, wie Sie die Eingabe zum Anvieren als primäre Möglichkeit für Benutzer verwenden, die Hologramme zu verwenden, die Ihre App in Mixed Reality erstellt.
+description: Erfahren Sie, wie Sie die Eingabe des Anvierens als primäre Möglichkeit für Benutzer verwenden, die hologramme, die Ihre App in Mixed Reality erstellt, als Ziel zu verwenden.
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Anvisiert mit den Augen, Anvieren mit dem Kopf, Unity, Hologramm, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Anvisiert mit den Augen, Anvisiert mit dem Kopf, Unity, Hologramm, Mixed Reality, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, MRTK, Mixed Reality Toolkit
+ms.openlocfilehash: c6a435e958a92adeed6cd965bebd0b8829e00da735bd193ca72a68acb9e0d6aa
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200112"
 ---
 # <a name="head-gaze-in-unity"></a>Anvischen mit dem Kopf in Unity
 
