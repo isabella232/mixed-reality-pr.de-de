@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma, Sketch, Adobe XD, Design, Designer, Designdatei, UX-Design, HoloLens, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: e72dfece3252a35a8da2b1dc72a1476bbf174b36bf01b731b4f0be5af21f2a33
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+ms.openlocfilehash: e911f7b2c1675a8113592d13c01abc3b71238733
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905643"
 ---
 # <a name="mrtk-figma-toolkit"></a>MRTK Figma-Toolkit
 

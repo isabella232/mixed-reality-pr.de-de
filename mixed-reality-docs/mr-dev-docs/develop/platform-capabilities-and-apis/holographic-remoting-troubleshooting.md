@@ -1,17 +1,17 @@
 ---
 title: Problembehandlung und Einschränkungen bei Holographic Remoting
-description: Hier finden Sie Ressourcen zur Problembehandlung und Anweisungen für das Holographic Remoting-Feature auf HoloLens 2 Geräten.
+description: Hier finden Sie Ressourcen und Anweisungen zur Problembehandlung für das Holographic Remoting-Feature auf HoloLens 2 Geräten.
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Hologramme, holografisches Remoting, Remoterendering, Netzwerkrendering, HoloLens, Remote hologramme, Problembehandlung, Hilfe, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: d49f73f4cbe205e71cb2f76ab02769ddad5f3ed2
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223570"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184611"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>Problembehandlung bei Holographic Remoting
 
@@ -30,7 +30,7 @@ Der Holographic Remoting Player unterstützt eine Diagnoseüberlagerung, die akt
 
 ## <a name="h265-video-codec-not-available"></a>H265-Videocodec nicht verfügbar
 
-Installieren Sie [HEVC-Videoerweiterungen,](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) wenn Sie den H265-Videocodec in Ihrer Remote-App verwenden. Wenn Probleme auftreten, bei denen der Codec installiert ist, aber nicht verwendet werden kann, lesen Sie den Leitfaden [zur Problembehandlung.](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available)
+Installieren Sie [HEVC-Videoerweiterungen,](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) wenn Sie den H265-Videocodec in Ihrer Remote-App verwenden. Wenn Probleme auftreten, bei denen der Codec installiert ist, aber nicht verwendet werden kann, lesen Sie [den](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) Leitfaden zur Problembehandlung.
 
 ## <a name="limitations"></a>Einschränkungen
 
@@ -104,8 +104,9 @@ Die folgenden APIs werden derzeit **nicht** unterstützt, wenn Holographic Remot
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Holographic Remoting-Versionsverlauf](holographic-remoting-version-history.md)
-* [Schreiben einer Holographic Remoting-Remote-App mit Windows Mixed Reality-APIs](holographic-remoting-create-remote-wmr.md)
+* [Übersicht über Holographic Remoting](holographic-remoting-overview.md)
+* [Holographic Remoting– Versionsverlauf](holographic-remoting-version-history.md)
+* [Schreiben einer Holographic Remoting-Remote-App mithilfe Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Schreiben einer Holographic Remoting-Remote-App mit OpenXR-APIs](holographic-remoting-create-remote-openxr.md)
 * [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
 * [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

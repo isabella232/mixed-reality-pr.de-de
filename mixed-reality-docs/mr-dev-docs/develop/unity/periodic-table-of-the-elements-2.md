@@ -1,17 +1,17 @@
 ---
 title: Periodentabelle der Elemente 2.0 für HoloLens 2
-description: Periodic Table of the Elements (Periodische Tabelle der Elemente) ist eine Beispiel-App, die für HoloLens 2 vollständig artikulierte Handtracking- und Eyetrackingeingaben aktualisiert wurde.
+description: Periodic Table of the Elements (Periodische Tabelle der Elemente) ist eine Beispiel-App, die für HoloLens 2 vollständig artikulierte Handtracking- und Eyetrackingeingabe aktualisiert wurde.
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
-keywords: Windows Mixed Reality, Design, Beispiel-App, Steuerelemente, MRTK, Mixed Reality Toolkit, Unity, Beispiel-Apps, Beispiel-Apps, Open Source, Microsoft Store, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, OpenXR, Open XR, Unity
-ms.openlocfilehash: ccfd443bb103f6ac051de84d3a321f3ffd5be2f5bafdc6479e9f67a03771d386
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+keywords: Windows Mixed Reality, Entwurf, Beispiel-App, Steuerelemente, MRTK, Mixed Reality Toolkit, Unity, Beispiel-Apps, Beispiel-Apps, Open Source, Microsoft Store, HoloLens, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, OpenXR, Open XR, Unity
+ms.openlocfilehash: 1c9879872e80ebef3ea51cf3aa7dd4d349327cdf
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862595"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905698"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>Periodensystem der Elemente 2.0
 ![Zeitraumtabelle der Elements-App](../images/MRDL_PeriodicTable.jpg)
@@ -19,7 +19,7 @@ ms.locfileid: "116862595"
 >[!NOTE]
 >In diesem Artikel wird ein exploratives Beispiel erläutert, das wir in den [Mixed Reality Design Labs](https://github.com/Microsoft/MRDesignLabs_Unity)erstellt haben, einem Ort, an dem wir unsere Erfahrungen und Vorschläge für die Entwicklung von Mixed Reality-Apps teilen. Unsere designbezogenen Artikel und der Code werden weiterentwickelt, wenn wir neue Erkenntnisse machen.
 
-[Periodic Table of the Elements](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) ist eine Open Source-Beispiel-App aus den Mixed Reality Design Labs von Microsoft. Die App wurde ursprünglich für die HoloLens 1. Generation und immersive Headsets im Jahr 2015 entwickelt, um zu veranschaulichen, wie Sie mithilfe der MRTK-Bausteine eine End-to-End-Erfahrung erstellen. Um neue artikulierte Handtracking- und Eyetrackingeingaben auf HoloLens 2 vollständig zu nutzen, wurde die App mit MRTK v2 aktualisiert. 
+[Periodic Table of the Elements](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable) ist eine Open Source-Beispiel-App aus Mixed Reality Design Labs von Microsoft. Die App wurde ursprünglich für die HoloLens 1. Generation und immersive Headsets im Jahr 2015 entwickelt, um zu veranschaulichen, wie Sie mithilfe der MRTK-Bausteine eine End-to-End-Erfahrung erstellen. Um neue artikulierte Handtracking- und Eyetrackingeingaben in HoloLens 2 vollständig zu nutzen, wurde die App mit MRTK v2 aktualisiert. 
 
 ## <a name="demo-video"></a>Demovideo 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
@@ -30,7 +30,7 @@ Aufgezeichnet mit HoloLens 2 mit Mixed Reality-Aufnahme
 Sehen Sie sich <a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**die Seite Release**</a>auf GitHub.
 
 ## <a name="upgrading-the-project-for-hololens-2-with-mrtk"></a>Aktualisieren des Projekts für HoloLens 2 mit MRTK
-Weitere Informationen zum HoloLens 2 finden Sie im <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **Artikel: Bringing the Periodic Table of the Elements app to HoloLens 2 with MRTK v2 (2019) (Verwenden** des Periodensystems der Elements-App in HoloLens 2 mit MRTK v2 (2019)</a>
+Sie finden HoloLens 2 artikel: Bringing the <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank"> **Periodic Table of the Elements app to HoloLens 2 with MRTK v2 (2019) (Verwenden** des periodischen Tabellen der Elements-App in HoloLens 2 mit MRTK v2 (2019))</a>
 
 ## <a name="openxr"></a>OpenXR 
 Lesen Sie eine Geschichte zum Aktualisieren des Periodentabellenprojekts auf die Unity 2020+ OpenXR-Pipeline: Aktualisieren von <a href="https://dongyoonpark.medium.com/updating-mrtk-mixed-reality-project-to-openxr-unity-2020-periodic-table-of-the-elements-4cf55b0479a4" target="_blank"> **MRTK Mixed Reality Project auf OpenXR+Unity 2020: Periodische** Tabelle der Elemente für HoloLens 2 (2021)</a>

@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity, räumliche Zuordnung, Renderer, Collider, Mesh, Scannen, Komponente, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, MRTK, Mixed Reality Toolkit
-ms.openlocfilehash: 4c8d0598898b4717a624562340918f968bd26f1fcde72258907e4fce73bd8489
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 62e4c4fad725dbe58773035b0bb47f1911098217
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223105"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905707"
 ---
 # <a name="spatial-mapping-in-unity"></a>Räumliche Abbildung in Unity
 
@@ -20,9 +20,9 @@ ms.locfileid: "115223105"
 Unity bietet vollständige Unterstützung für räumliche Zuordnungen, die Entwicklern auf folgende Weise zur Stehen kommen:
 
 1. Im MixedRealityToolkit verfügbare Räumliche Zuordnungskomponenten, die einen bequemen und schnellen Pfad für die ersten Schritte mit der räumlichen Zuordnung bereitstellen
-2. APIs für räumliche Zuordnungen auf niedrigerer Ebene, die vollständige Kontrolle bieten und eine komplexere anwendungsspezifische Anpassung ermöglichen
+2. Räumliche Zuordnungs-APIs auf niedrigerer Ebene, die vollständige Kontrolle bieten und eine komplexere anwendungsspezifische Anpassung ermöglichen
 
-Um die räumliche Zuordnung in Ihrer App zu verwenden, muss die spatialPerception-Funktion in Ihrem AppxManifest festgelegt werden.
+Um die räumliche Zuordnung in Ihrer App zu verwenden, muss die SpatialPerception-Funktion in Ihrem AppxManifest festgelegt werden.
 
 ## <a name="device-support"></a>Geräteunterstützung
 
@@ -49,159 +49,9 @@ Für die räumliche Zuordnung ist außerdem maxVersionTested von mindestens 10.0
 2. Suchen Sie die Zeile, die **TargetDeviceFamily** angibt, und ändern Sie **MaxVersionTested="10.0.10240.0"** in **MaxVersionTested="10.0.10586.0"**
 3. **Speichern Sie** package.appxmanifest.
 
-## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>Erste Schritte mit den integrierten Räumlichen Zuordnungskomponenten von Unity
+## <a name="how-to-add-mapping-in-unity"></a>Hinzufügen von Zuordnungen in Unity
 
-Unity bietet zwei Komponenten zum einfachen Hinzufügen räumlicher Zuordnungen zu Ihrer App: **Spatial Mapping Renderer** und **Spatial Mapping Collider**.
-
-### <a name="spatial-mapping-renderer"></a>Renderer für räumliche Zuordnungen
-
-Der Renderer für räumliche Zuordnungen ermöglicht die Visualisierung des Gitternetzes für räumliche Zuordnungen.
-
-![Renderer für räumliche Zuordnungen in Unity](images/spatialmappingrenderer.png)
-
-### <a name="spatial-mapping-collider"></a>Collider für räumliche Zuordnung
-
-Der Spatial Mapping Collider ermöglicht die Interaktion holografischer Inhalte (oder Zeichen), z. B. der Physik, mit dem Gitternetz der räumlichen Zuordnung.
-
-![Spatial Mapping Collider in Unity](images/spatialmappingcollider.png)
-
-### <a name="using-the-built-in-spatial-mapping-components"></a>Verwenden der integrierten Räumlichen Zuordnungskomponenten
-
-Sie können Ihrer App beide Komponenten hinzufügen, wenn Sie sowohl physische Oberflächen visualisieren als auch mit ihnen interagieren möchten.
-
-So verwenden Sie diese beiden Komponenten in Ihrer Unity-App:
-
-1. Wählen Sie ein GameObject in der Mitte des Bereichs aus, in dem Sie Gitternetze für räumliche Oberflächen erkennen möchten.
-2. **Fügen Sie** im Inspektorfenster Komponente  >  **XR**  >  **Spatial Mapping Collider** oder Spatial Mapping **Renderer** hinzu.
-
-Weitere Informationen zur Verwendung dieser Komponenten finden Sie auf der <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity-Dokumentationswebsite</a>.
-
-### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>Über die integrierten Komponenten der räumlichen Zuordnung hinaus gehend
-
-Diese Komponenten erleichtern den Einstieg in die räumliche Zuordnung per Drag & Drop.  Wenn Sie noch weitergehen möchten, gibt es zwei Hauptpfade, die Sie erkunden sollten:
-
-* Informationen zur Eigenen Gitternetzverarbeitung auf niedrigerer Ebene finden Sie im Abschnitt unten über die Skript-API für die räumliche Zuordnung auf niedriger Ebene.
-* Informationen zur Gitternetzanalyse auf höherer Ebene finden Sie im Abschnitt weiter unten über die SpatialUnderstanding-Bibliothek in <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit.</a>
-
-## <a name="using-the-low-level-unity-spatial-mapping-api"></a>Verwenden der Unity Spatial Mapping-API auf niedriger Ebene
-
-Wenn Sie mehr Kontrolle benötigen, als die Komponenten Spatial Mapping Renderer und Spatial Mapping Collider bieten, verwenden Sie die APIs für die räumliche Zuordnung auf niedriger Ebene.
-
-**Namespace:** *UnityEngine.XR.WSA*<br>
-**Typen:** *SurfaceObserver,* *SurfaceChange,* *SurfaceData,* *SurfaceId*
-
-In den folgenden Abschnitten wurde der empfohlene Ablauf für eine Anwendung beschrieben, die die APIs für räumliche Zuordnungen verwendet.
-
-### <a name="set-up-the-surfaceobservers"></a>Einrichten der SurfaceObserver
-
-Instanziieren Sie ein SurfaceObserver-Objekt für jeden von der Anwendung definierten Bereich des Raums, für den Sie räumliche Zuordnungsdaten benötigen.
-
-```cs
-SurfaceObserver surfaceObserver;
-
-private void Start()
-{
-    surfaceObserver = new SurfaceObserver();
-}
-```
-
-Geben Sie den Bereich des Speicherplatzes an, für den jedes SurfaceObserver-Objekt Daten bereitstellt, indem Sie entweder SetVolumeAsSphere, SetVolumeAsAxisAlignedBox, SetVolumeAsOrientedBox oder SetVolumeAsFrustum aufrufen. Sie können den Raumbereich in Zukunft neu definieren, indem Sie einfach eine dieser Methoden erneut aufrufen.
-
-```cs
-private void Start()
-{
-    surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
-}
-```
-
-Wenn Sie SurfaceObserver.Update() aufrufen, müssen Sie einen Handler für jede räumliche Oberfläche im Raumbereich des SurfaceObserver bereitstellen, für den das Räumliche Zuordnungssystem neue Informationen enthält. Der Handler empfängt für eine räumliche Oberfläche:
-
-```cs
-private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
-{
-    // see Handling Surface Changes
-}
-```
-
-### <a name="handling-surface-changes"></a>Behandeln von Oberflächenänderungen
-
-Es gibt mehrere Hauptfälle, die behandelt werden müssen: hinzugefügt und aktualisiert, wobei derselbe Codepfad verwendet und entfernt werden kann.
-
-* In den hinzugefügten und aktualisierten Fällen fügen wir das GameObject, das dieses Gitternetz darstellt, hinzu oder rufen es aus dem Wörterbuch ab, erstellen eine SurfaceData-Struktur mit den erforderlichen Komponenten und rufen dann RequestMeshDataAsync auf, um das GameObject mit den Gitternetzdaten und der Position in der Szene aufzufüllen.
-* Im entfernten Fall entfernen wir das GameObject, das dieses Gitternetz darstellt, aus dem Wörterbuch und zerstören es.
-
-```cs
-System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects =
-    new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
-
-private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
-{
-    switch (changeType)
-    {
-        case SurfaceChange.Added:
-        case SurfaceChange.Updated:
-            if (!spatialMeshObjects.ContainsKey(surfaceId))
-            {
-                spatialMeshObjects[surfaceId] = new GameObject("spatial-mapping-" + surfaceId);
-                spatialMeshObjects[surfaceId].transform.parent = this.transform;
-                spatialMeshObjects[surfaceId].AddComponent<MeshRenderer>();
-            }
-            GameObject target = spatialMeshObjects[surfaceId];
-            SurfaceData sd = new SurfaceData(
-                // the surface id returned from the system
-                surfaceId,
-                // the mesh filter that is populated with the spatial mapping data for this mesh
-                target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
-                // the world anchor used to position the spatial mapping mesh in the world
-                target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
-                // the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
-                target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
-                // triangles per cubic meter requested for this mesh
-                1000,
-                // bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
-                true
-            );
-
-            SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
-            break;
-        case SurfaceChange.Removed:
-            var obj = spatialMeshObjects[surfaceId];
-            spatialMeshObjects.Remove(surfaceId);
-            if (obj != null)
-            {
-                GameObject.Destroy(obj);
-            }
-            break;
-        default:
-            break;
-    }
-}
-```
-
-### <a name="handling-data-ready"></a>Handling Data Ready
-
-Der OnDataReady-Handler empfängt ein SurfaceData-Objekt. Die darin enthaltenen Objekte WorldAnchor, MeshFilter und (optional) MeshCollider spiegeln den aktuellen Zustand der zugeordneten räumlichen Oberfläche wider. Optional können Sie die Gittermodelldaten analysieren und/oder [verarbeiten,](../../design/spatial-mapping.md#mesh-processing) indem Sie auf den Mesh-Member des MeshFilter-Objekts zugreifen. Rendern Sie die räumliche Oberfläche mit dem neuesten Gitternetz, und verwenden Sie sie (optional) für physikalische Konflikte und Raycasts. Es ist wichtig zu bestätigen, dass der Inhalt von SurfaceData nicht NULL ist.
-
-### <a name="start-processing-on-updates"></a>Starten der Verarbeitung bei Updates
-
-SurfaceObserver.Update() sollte bei einer Verzögerung aufgerufen werden, nicht bei jedem Frame.
-
-```cs
-void Start ()
-{
-    StartCoroutine(UpdateLoop());
-}
-
-IEnumerator UpdateLoop()
-{
-    var wait = new WaitForSeconds(2.5f);
-    while(true)
-    {
-        surfaceObserver.Update(OnSurfaceChanged);
-        yield return wait;
-    }
-}
-```
+[!INCLUDE[](includes/unity-spatial-mapping.md)]
 
 ## <a name="higher-level-mesh-analysis-spatial-understanding"></a>Gitternetzanalyse auf höherer Ebene: Räumliches Verständnis
 
@@ -212,11 +62,11 @@ IEnumerator UpdateLoop()
 
 ### <a name="spatial-understanding"></a>Räumliches Verständnis
 
-Wenn Hologramme in der physischen Welt platziert werden, ist es oft wünschenswert, über das Gitternetz und die Oberflächenebenen der räumlichen Zuordnung hinauszugehen. Wenn die Platzierung prozedural erfolgt, ist ein höheres Maß an Umgebungsverständnis wünschenswert. Dies erfordert in der Regel Entscheidungen darüber, was Boden, Decken und Wände sind. Sie haben auch die Möglichkeit, die Optimierung für eine Reihe von Platzierungseinschränkungen zu verwenden, um die besten physischen Positionen für holografische Objekte zu bestimmen.
+Beim Platzieren von Hologrammen in der physischen Welt ist es oft wünschenswert, über das Gitternetz und die Oberflächenebenen der räumlichen Zuordnung hinauszugehen. Wenn die Platzierung prozedural erfolgt, ist ein höheres Maß an Umgebungsverständnis wünschenswert. Dies erfordert in der Regel Entscheidungen darüber, was Boden, Decken und Wände sind. Sie haben auch die Möglichkeit, eine Optimierung anhand einer Reihe von Platzierungseinschränkungen zu erstellen, um die besten physischen Positionen für holografische Objekte zu bestimmen.
 
-Während der Entwicklung von Young Conker und Fragmenten stand Asobo Studio vor diesem Problem, indem er einen Raumlöser entwickelte. Jedes dieser Spiele hatte spielspezifische Anforderungen, aber sie teilten die Kerntechnologie für räumliches Verständnis. Die Bibliothek HoloToolkit.SpatialUnderstanding kapselt diese Technologie, sodass Sie schnell leere Räume an den Wänden finden, Objekte an der Obergrenze platzieren, für Zeichen platzierte Identifizieren und eine Vielzahl anderer Abfragen zum räumlichen Verständnis ermöglichen können.
+Während der Entwicklung von Young Conker und Fragmenten stand Asobo Studio vor diesem Problem, indem er einen Raumlöser entwickelte. Jedes dieser Spiele hatte spielspezifische Anforderungen, aber sie teilten die Kerntechnologie für räumliches Verständnis. Die HoloToolkit.SpatialUnderstanding-Bibliothek kapselt diese Technologie, sodass Sie schnell leere Räume auf den Wänden finden, Objekte an der Obergrenze platzieren, die Position von Zeichen identifizieren und unzählige andere Abfragen zum räumlichen Verständnis finden können.
 
-Der gesamte Quellcode ist enthalten, sodass Sie ihn an Ihre Anforderungen anpassen und Ihre Verbesserungen an die Community weitergeben können. Der Code für den C++-Solver wurde in eine UWP-DLL umschlossen und für Unity mit einem Dropdown-Prefab im MixedRealityToolkit verfügbar gemacht.
+Der gesamte Quellcode ist enthalten, sodass Sie ihn an Ihre Anforderungen anpassen und Ihre Verbesserungen mit der Community teilen können. Der Code für den C++-Solver wurde in eine UWP-DLL umschlossen und für Unity mit einem Dropdown-Prefab im MixedRealityToolkit verfügbar gemacht.
 
 ### <a name="understanding-modules"></a>Grundlegendes zu Modulen
 
@@ -252,21 +102,21 @@ struct RaycastResult
 };
 ```
 
-Intern wird der Raycast anhand der berechneten 8-cm-Cubevoxeldarstellung des Playspace berechnet. Jedes Voxel enthält eine Reihe von Oberflächenelementen mit verarbeiteten Topologiedaten (auch als Surfels bezeichnet). Die in der überschneideten Voxelzelle enthaltenen Surfel werden verglichen, und die beste Übereinstimmung wird verwendet, um die Topologieinformationen nachzuschlagen. Diese Topologiedaten enthalten die Bezeichnungen, die in Form der Enumeration "SurfaceTypes" zurückgegeben werden, sowie die Oberfläche der überschneideten Oberfläche.
+Intern wird der Raycast mit der berechneten 8-Cm-Cubevoxeldarstellung des Playspace berechnet. Jedes Voxel enthält eine Reihe von Oberflächenelementen mit verarbeiteten Topologiedaten (auch als Surfel bezeichnet). Die in der überschneideten Voxelzelle enthaltenen Surfel werden verglichen und die beste Übereinstimmung zum Suchen der Topologieinformationen verwendet. Diese Topologiedaten enthalten die Bezeichnungen, die in Form der Enumeration "SurfaceTypes" zurückgegeben werden, sowie die Oberfläche der überschneideten Oberfläche.
 
-Im Unity-Beispiel gibt der Cursor jeden Frame einen Strahl um. Zuerst für die Collider von Unity. Zweitens im Verhältnis zur Weltdarstellung des Moduls. Und schließlich noch mal Ui-Elemente. In dieser Anwendung erhält die Benutzeroberfläche Priorität, neben dem Ergebnis des Verständnisses und schließlich die Collider von Unity. SurfaceType wird als Text neben dem Cursor gemeldet.
+Im Unity-Beispiel gibt der Cursor jeden Frame einen Strahl um. Zuerst für die Collider von Unity. Zweitens im Verhältnis zur Weltdarstellung des Moduls. Und schließlich noch mal Benutzeroberflächenelemente. In dieser Anwendung erhält die Benutzeroberfläche Priorität, neben dem Ergebnis des Verständnisses und schließlich die Collider von Unity. SurfaceType wird als Text neben dem Cursor gemeldet.
 
 ![Der Oberflächentyp wird neben dem Cursor bezeichnet.](images/su-raycastresults-300px.jpg)<br>
-*Surface type (Oberflächentyp) wird neben dem Cursor bezeichnet.*
+*Der Oberflächentyp wird neben dem Cursor bezeichnet.*
 
 ### <a name="topology-queries"></a>Topologieabfragen
 
-Innerhalb der DLL übernimmt der Topologie-Manager die Bezeichnung der Umgebung. Wie bereits erwähnt, werden viele der Daten in Surfel gespeichert, die in einem Voxelvolumen enthalten sind. Darüber hinaus wird die "PlaySpaceInfos"-Struktur verwendet, um Informationen zum Playspace zu speichern, einschließlich der Ausrichtung der Welt (weitere Details dazu unten), der Höhe des Bodens und der Decke. Heuristiken werden zum Bestimmen von Boden, Decke und Wand verwendet. Beispielsweise wird die größte und niedrigste horizontale Oberfläche mit einer Fläche von mehr als 1 m2 als Boden betrachtet.
+Innerhalb der DLL verarbeitet der Topologie-Manager die Bezeichnung der Umgebung. Wie bereits erwähnt, werden viele daten in Surfels gespeichert, die in einem Voxelvolume enthalten sind. Darüber hinaus wird die PlaySpaceInfos-Struktur verwendet, um Informationen über den Playspace zu speichern, einschließlich der Weltausrichtung (weitere Details dazu unten), Boden- und Deckenhöhe. Heuristiken werden zum Bestimmen von Boden, Decken und Wänden verwendet. Beispielsweise wird die größte und niedrigste horizontale Oberfläche mit einer Fläche von mehr als 1 m2 als Bodenbelag betrachtet.
 
 > [!NOTE]
 > Der Kamerapfad während des Scanvorgangs wird auch in diesem Prozess verwendet.
 
-Eine Teilmenge der vom Topologie-Manager verfügbar gemachten Abfragen wird über die DLL verfügbar gemacht. Die verfügbar gemachten Topologieabfragen lauten wie folgt.
+Eine Teilmenge der Abfragen, die vom Topologie-Manager verfügbar gemacht werden, wird über die DLL verfügbar gemacht. Die verfügbar gemachten Topologieabfragen sind wie folgt.
 
 ```cpp
 QueryTopology_FindPositionsOnWalls
@@ -277,7 +127,7 @@ QueryTopology_FindLargestPositionsOnFloor
 QueryTopology_FindPositionsSittable
 ```
 
-Jede der Abfragen verfügt über eine Reihe von Parametern, die für den Abfragetyp spezifisch sind. Im folgenden Beispiel gibt der Benutzer die Mindesthöhe & Breite des gewünschten Volumes, die mindeste Platzierungshöhe über dem Boden und die Mindestmenge an Belägen vor dem Volume an. Alle Messungen werden in Metern durchgeführt.
+Jede der Abfragen verfügt über eine Reihe von Parametern, die für den Abfragetyp spezifisch sind. Im folgenden Beispiel gibt der Benutzer die mindeste Höhe & Breite des gewünschten Volumens, die minimale Platzierungshöhe über dem Boden und die mindeste Menge an Plätzen vor dem Volume an. Alle Messungen sind in Metern.
 
 ```cpp
 EXTERN_C __declspec(dllexport) int QueryTopology_FindPositionsOnWalls(
@@ -289,9 +139,9 @@ EXTERN_C __declspec(dllexport) int QueryTopology_FindPositionsOnWalls(
     _Inout_ Dll_Interface::TopologyResult* locationData)
 ```
 
-Jede dieser Abfragen nimmt ein vorab zugeordnetes Array von "TopologyResult"-Strukturen an. Der Parameter "locationCount" gibt die Länge des übergebenen Arrays an. Der Rückgabewert gibt die Anzahl der zurückgegebenen Speicherorte an. Diese Zahl ist nie größer als der übergebene "locationCount"-Parameter.
+Jede dieser Abfragen verwendet ein vorab zugeordnetes Array von "TopologyResult"-Strukturen. Der Parameter "locationCount" gibt die Länge des übergebenen Arrays an. Der Rückgabewert gibt die Anzahl der zurückgegebenen Standorte an. Diese Zahl ist nie größer als der übergebene parameter "locationCount".
 
-Das "TopologyResult" enthält die Mittelpunktposition des zurückgegebenen Volumes, die Ausrichtungsrichtung (d. h. normal) und die Abmessungen des gefundenen Raums.
+"TopologyResult" enthält die Mittlere Position des zurückgegebenen Volumes, die Ausrichtungsrichtung (d. h. normal) und die Abmessungen des gefundenen Raums.
 
 ```cpp
 struct TopologyResult
@@ -304,15 +154,15 @@ struct TopologyResult
 ```
 
 > [!NOTE]
-> Im Unity-Beispiel wird jede dieser Abfragen mit einer Schaltfläche im Bereich der virtuellen Benutzeroberfläche verknüpft. Im Beispiel werden die Parameter für jede dieser Abfragen mit angemessenen Werten hartkodiert. Weitere Beispiele finden Sie unter SpaceVisualizer.cs im Beispielcode.
+> Im Unity-Beispiel wird jede dieser Abfragen mit einer Schaltfläche im Bereich der virtuellen Benutzeroberfläche verknüpft. Im Beispiel werden die Parameter für jede dieser Abfragen hart in sinnvolle Werte einkodiert. Weitere Beispiele finden Sie unter SpaceVisualizer.cs im Beispielcode.
 
-### <a name="shape-queries"></a>Formabfragen
+### <a name="shape-queries"></a>Shape-Abfragen
 
-In der DLL verwendet das Shape-Analyseprogramm ("ShapeAnalyzer_W") die Topologieanalyse, um mit benutzerdefinierten Formen zu übereinstimmen, die vom Benutzer definiert wurden. Das Unity-Beispiel definiert eine Reihe von Formen und macht die Ergebnisse über das Abfragemenü in der App auf der Registerkarte Form verfügbar. Die Absicht ist, dass der Benutzer seine eigenen Objektformabfragen definieren und diese nach Bedarf von seiner Anwendung nutzen kann.
+In der DLL verwendet das Shape-Analyseprogramm ("ShapeAnalyzer_W") die Topologieanalyse, um benutzerdefinierte Formen abzugleichen, die vom Benutzer definiert werden. Das Unity-Beispiel definiert eine Reihe von Formen und macht die Ergebnisse über das In-App-Abfragemenü auf der Registerkarte "Form" verfügbar. Die Absicht besteht darin, dass der Benutzer seine eigenen Objektformabfragen definieren und diese nach Bedarf für seine Anwendung verwenden kann.
 
-Die Formanalyse funktioniert nur auf horizontalen Oberflächen. Eine Couch wird z. B. durch die flache Seatoberfläche und die flache Oberseite der Couch zurück definiert. Die Shape-Abfrage sucht nach zwei Oberflächen mit einer bestimmten Größe, Höhe und einem bestimmten Seitenbereich, bei denen die beiden Oberflächen ausgerichtet und verbunden sind. Unter Verwendung der APIs-Terminologie sind der Couchplatz und die Rückseite Formkomponenten, und die Ausrichtungsanforderungen sind Shape-Komponenteneinschränkungen.
+Die Formanalyse funktioniert nur auf horizontalen Oberflächen. Eine Couch wird z. B. durch die flache Oberfläche des Platzes und die flache Oberseite der Couch definiert. Die Formabfrage sucht nach zwei Oberflächen mit einer bestimmten Größe, Höhe und einem bestimmten Seitenbereich, wobei die beiden Oberflächen ausgerichtet und verbunden sind. Mithilfe der APIs-Terminologie sind der Couchplatz und die Rückseite Formkomponenten, und die Ausrichtungsanforderungen sind Einschränkungen für Formkomponenten.
 
-Eine im Unity-Beispiel (ShapeDefinition.cs) definierte Beispielabfrage für "sittable"-Objekte lautet wie folgt.
+Eine Beispielabfrage, die im Unity-Beispiel (ShapeDefinition.cs) für "sittable"-Objekte definiert ist, lautet wie folgt.
 
 ```cs
 shapeComponents = new List<ShapeComponent>()
@@ -329,9 +179,9 @@ shapeComponents = new List<ShapeComponent>()
 AddShape("Sittable", shapeComponents);
 ```
 
-Jede Formabfrage wird durch einen Satz von Formkomponenten definiert, die jeweils eine Reihe von Komponenteneinschränkungen und eine Reihe von Shape-Einschränkungen aufweisen, die Abhängigkeiten zwischen den Komponenten auflisten. Dieses Beispiel enthält drei Einschränkungen in einer einzelnen Komponentendefinition und keine Shape-Einschränkungen zwischen Komponenten (da es nur eine Komponente gibt).
+Jede Formabfrage wird durch einen Satz von Formkomponenten definiert, die jeweils einen Satz von Komponenteneinschränkungen und eine Reihe von Shape-Einschränkungen aufweisen, die Abhängigkeiten zwischen den Komponenten auflisten. Dieses Beispiel enthält drei Einschränkungen in einer einzelnen Komponentendefinition und keine Formeinschränkungen zwischen Komponenten (da es nur eine Komponente gibt).
 
-Im Gegensatz dazu verfügt die Form "Couch" über zwei Formkomponenten und vier Formeinschränkungen. Komponenten werden durch ihren Index in der Komponentenliste des Benutzers identifiziert (in diesem Beispiel 0 und 1).
+Im Gegensatz dazu weist die Couchform zwei Formkomponenten und vier Formeinschränkungen auf. Komponenten werden anhand ihres Indexes in der Komponentenliste des Benutzers identifiziert (in diesem Beispiel 0 und 1).
 
 ```cs
 shapeConstraints = new List<ShapeConstraint>()
@@ -343,14 +193,14 @@ shapeConstraints = new List<ShapeConstraint>()
 };
 ```
 
-Wrapperfunktionen werden im Unity-Modul zur einfachen Erstellung benutzerdefinierter Shape-Definitionen bereitgestellt. Die vollständige Liste der Komponenten- und Formeinschränkungen finden Sie in "SpatialUnderstandingDll.cs" in den Strukturen "ShapeComponentConstraint" und "ShapeConstraint".
+Wrapperfunktionen werden im Unity-Modul bereitgestellt, um benutzerdefinierte Formdefinitionen einfach zu erstellen. Die vollständige Liste der Komponenten- und Shape-Einschränkungen finden Sie in "SpatialUnderstandingDll.cs" in den Strukturen "ShapeComponentConstraint" und "ShapeConstraint".
 
-![Rechteckform befindet sich auf dieser Oberfläche](images/su-shapequery-300px.jpg)<br>
-*Rechteckform befindet sich auf dieser Oberfläche*
+![Rechteckform befindet sich auf dieser Oberfläche.](images/su-shapequery-300px.jpg)<br>
+*Rechteckform befindet sich auf dieser Oberfläche.*
 
 ### <a name="object-placement-solver"></a>Objektplatzierungs-Solver
 
-Der Objektplatzierungs-Solver kann verwendet werden, um ideale Positionen im physischen Raum zu identifizieren, an dem Ihre Objekte platzieren werden. Der Solver findet die am besten passende Position, wenn die Objektregeln und Einschränkungen gegeben sind. Darüber hinaus bleiben Objektabfragen bestehen, bis das Objekt mit "Solver_RemoveObject"- oder "Solver_RemoveAllObjects"-Aufrufen entfernt wird, wodurch eine eingeschränkte Platzierung mit mehreren Objekten ermöglicht wird. Objektplatzierungsabfragen bestehen aus drei Teilen: Platzierungstyp mit Parametern, eine Liste von Regeln und eine Liste von Einschränkungen. Verwenden Sie die folgende API, um eine Abfrage auszuführen.
+Der Objektplatzierungs-Solver kann verwendet werden, um ideale Positionen im physischen Raum zu identifizieren, um Ihre Objekte zu platzieren. Der Solver findet die am besten geeignete Position, wenn die Objektregeln und -einschränkungen gelten. Darüber hinaus bleiben Objektabfragen erhalten, bis das Objekt mit Solver_RemoveObject- oder Solver_RemoveAllObjects-Aufrufen entfernt wird, was eine eingeschränkte Platzierung mehrerer Objekte ermöglicht. Objektplatzierungsabfragen bestehen aus drei Teilen: platzierungstyp mit Parametern, einer Liste von Regeln und einer Liste von Einschränkungen. Verwenden Sie die folgende API, um eine Abfrage auszuführen.
 
 ```cpp
 public static int Solver_PlaceObject(
@@ -363,7 +213,7 @@ public static int Solver_PlaceObject(
             [Out] IntPtr placementResult)
 ```
 
-Diese Funktion verwendet einen Objektnamen, eine Platzierungsdefinition und eine Liste von Regeln und Einschränkungen. Die C#-Wrapper bieten Konstruktionshilfefunktionen, um die Regel- und Einschränkungskonstruktion zu einfach zu machen. Die Platzierungsdefinition enthält den Abfragetyp, d.&a; eine der folgenden.
+Diese Funktion nimmt einen Objektnamen, eine Platzierungsdefinition und eine Liste von Regeln und Einschränkungen an. Die C#-Wrapper stellen Konstruktionshilfsfunktionen bereit, um die Erstellung von Regeln und Einschränkungen zu vereinfachen. Die Platzierungsdefinition enthält den Abfragetyp, d. h. einen der folgenden.
 
 ```cpp
 public enum PlacementType
@@ -380,7 +230,7 @@ public enum PlacementType
 };
 ```
 
-Jeder Der Platzierungstypen verfügt über einen Satz von Parametern, die für den Typ eindeutig sind. Die ObjectPlacementDefinition-Struktur enthält eine Reihe statischer Hilfsfunktionen zum Erstellen dieser Definitionen. Sie können beispielsweise die folgende Funktion verwenden, um einen Ort zu finden, an dem sie ein Objekt auf dem Boden platzieren können. public static ObjectPlacementDefinition Create_OnFloor(Vector3 halfDims) Zusätzlich zum Platzierungstyp können Sie eine Reihe von Regeln und Einschränkungen bereitstellen. Regeln können nicht verletzt werden. Mögliche Platzierungsstandorte, die den Typ und die Regeln erfüllen, werden dann für den Satz von Einschränkungen optimiert, um den optimalen Platzierungsort auszuwählen. Jede der Regeln und Einschränkungen kann von den bereitgestellten statischen Erstellungsfunktionen erstellt werden. Unten finden Sie eine Beispielregel und eine Einschränkungskonstruktionsfunktion.
+Jeder Platzierungstyp verfügt über einen Satz von Parametern, die für den Typ eindeutig sind. Die ObjectPlacementDefinition-Struktur enthält eine Reihe von statischen Hilfsfunktionen zum Erstellen dieser Definitionen. Um z. B. einen Ort zu finden, an dem ein Objekt auf dem Boden abgestellt werden kann, können Sie die folgende Funktion verwenden. public static ObjectPlacementDefinition Create_OnFloor(Vector3 halfDims) Zusätzlich zum Platzierungstyp können Sie eine Reihe von Regeln und Einschränkungen bereitstellen. Regeln können nicht verletzt werden. Mögliche Platzierungsstandorte, die den Typ und die Regeln erfüllen, werden dann anhand des Satzes von Einschränkungen optimiert, um den optimalen Platzierungsstandort auszuwählen. Jede der Regeln und Einschränkungen kann von den bereitgestellten statischen Erstellungsfunktionen erstellt werden. Nachfolgend finden Sie ein Beispiel für eine Regel- und Einschränkungskonstruktionsfunktion.
 
 ```cs
 public static ObjectPlacementRule Create_AwayFromPosition(
@@ -389,7 +239,7 @@ public static ObjectPlacementConstraint Create_NearPoint(
     Vector3 position, float minDistance = 0.0f, float maxDistance = 0.0f)
 ```
 
-Die folgende Objektplatzierungsabfrage sucht nach einem Ort, an dem sie einen halb meter langen Würfel am Rand einer Oberfläche platzieren kann, weg von anderen zuvor platzierenden Objekten und in der Nähe der Mitte des Raumes.
+Die folgende Objektplatzierungsabfrage sucht nach einem Ort, an dem ein halber Meter Cube am Rand einer Oberfläche platziert werden kann, weit weg von anderen zuvor platzierten Objekten und in der Nähe der Mitte des Raumes.
 
 ```cs
 List<ObjectPlacementRule> rules =
@@ -414,16 +264,16 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-Bei Erfolg wird eine ObjectPlacementResult-Struktur zurückgegeben, die position, dimensions und orientation enthält. Darüber hinaus wird die Platzierung der internen Liste der platzierten Objekte der DLL hinzugefügt. Bei nachfolgenden Platzierungsabfragen wird dieses Objekt berücksichtigt. Die Datei "LevelSolver.cs" im Unity-Beispiel enthält weitere Beispielabfragen.
+Bei Erfolg wird eine "ObjectPlacementResult"-Struktur zurückgegeben, die die Platzierungsposition, Dimensionen und Ausrichtung enthält. Darüber hinaus wird die Platzierung der internen Liste der platzierten Objekte der DLL hinzugefügt. Nachfolgende Platzierungsabfragen berücksichtigen dieses Objekt. Die Datei "LevelSolver.cs" im Unity-Beispiel enthält weitere Beispielabfragen.
 
 ![Ergebnisse der Objektplatzierung](images/su-objectplacement-1000px.jpg)<br>
-*Abbildung 3: Die blauen Felder zeigen, wie sich das Ergebnis von Abfragen mit drei Feldern auf dem Boden mit Weg von Kamerapositionsregeln ergeben kann.*
+*Abbildung 3: Die blauen Felder, in die das Ergebnis von drei Abfragen auf dem Boden gestellt wird, ohne die Kamerapositionsregeln zu ändern*
 
-Lösen Sie beim Lösen der Platzierungsposition mehrerer Objekte, die für ein Ebenen- oder Anwendungsszenario erforderlich sind, zuerst die Lösung für Bzw. große Objekte, um die Wahrscheinlichkeit zu maximieren, dass ein Raum gefunden werden kann. Die Platzierungs reihenfolge ist wichtig. Wenn Objektplatzierungen nicht gefunden werden können, versuchen Sie weniger eingeschränkte Konfigurationen. Eine Reihe von Fallbackkonfigurationen ist entscheidend für die Unterstützung von Funktionen für viele Raumkonfigurationen.
+Bei der Lösung für die Platzierung von mehreren Objekten, die für ein Ebenen- oder Anwendungsszenario erforderlich sind, lösen Sie zuerst die Hebung und große Objekte, um die Wahrscheinlichkeit zu maximieren, dass ein Raum gefunden werden kann. Die Platzierungsreihenfolge ist wichtig. Wenn Objektplatzierungen nicht gefunden werden können, versuchen Sie es mit weniger eingeschränkten Konfigurationen. Eine Reihe von Fallbackkonfigurationen ist entscheidend für die Unterstützung von Funktionen in vielen Raumkonfigurationen.
 
 ### <a name="room-scanning-process"></a>Raumscanprozess
 
-Die von HoloLens bereitgestellte Lösung für die räumliche Zuordnung ist so konzipiert, dass sie generisch genug ist, um die Anforderungen der gesamten Welt der Problemräume zu erfüllen. Das Modul für räumliches Verständnis wurde jedoch entwickelt, um die Anforderungen von zwei bestimmten Spielen zu unterstützen. Die Lösung ist auf einen bestimmten Prozess und eine Reihe von Annahmen strukturiert, die unten zusammengefasst sind.
+Während die vom HoloLens bereitgestellte Räumliche Zuordnungslösung so konzipiert ist, dass sie generisch genug ist, um die Anforderungen der gesamten Bandbreite von Problemräumen zu erfüllen, wurde das Spatial Understanding-Modul entwickelt, um die Anforderungen von zwei bestimmten Spielen zu unterstützen. Die Lösung basiert auf einem bestimmten Prozess und einer Reihe von Annahmen, die unten zusammengefasst sind.
 
 ```txt
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
@@ -434,7 +284,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-Benutzergesteuertes "Malen" des Playspace: Während der Überprüfungsphase bewegt sich der Benutzer und sieht sich die Spielgeschwindigkeit an und zeigt effektiv die Bereiche, die einbezogen werden sollten. Das generierte Gitternetz ist wichtig, um während dieser Phase Benutzerfeedback zu geben. Einrichtung von Heim- oder Bürogebäuden: Die Abfragefunktionen sind auf flache Oberflächen und Wände in rechten Winkeln ausgelegt. Dies ist eine weiche Einschränkung. Während der Überprüfungsphase wird jedoch eine Primäre Achsenanalyse abgeschlossen, um das Gitternetz-Mosaik entlang der Haupt- und Nebenachse zu optimieren. Die enthaltene Datei SpatialUnderstanding.cs verwaltet den Überprüfungsphasenprozess. Sie ruft die folgenden Funktionen auf.
+Benutzergesteuertes Playspace "Zeichnen": Während der Überprüfungsphase bewegt sich der Benutzer und sieht sich die Spielgeschwindigkeit an, wobei die Bereiche, die einbezogen werden sollten, effektiv zeichnen. Das generierte Gitternetz ist wichtig, um benutzerfeedback während dieser Phase bereitzustellen. Gebäudeeinrichtung für Gebäude oder Büro: Die Abfragefunktionen sind für flache Oberflächen und Wände in rechten Winkeln konzipiert. Dies ist eine weiche Einschränkung. Während der Überprüfungsphase wird jedoch eine Primärachsenanalyse durchgeführt, um das Gitternetz-Mosaik entlang der Haupt- und Nebenachse zu optimieren. Die enthaltene Datei SpatialUnderstanding.cs verwaltet den Überprüfungsphasenprozess. Sie ruft die folgenden Funktionen auf.
 
 ```txt
 SpatialUnderstanding_Init – Called once at the start.
@@ -459,27 +309,27 @@ Import_UnderstandingMesh –
     after scanning has been finalized.
 ```
 
-Der Scanfluss, der vom Verhalten "SpatialUnderstanding" gesteuert wird, ruft InitScan und dann UpdateScan für jeden Frame auf. Wenn die Statistikabfrage eine angemessene Abdeckung meldet, kann der Benutzer requestFinish aufrufen, um das Ende der Überprüfungsphase anzugeben. UpdateScan wird weiterhin aufgerufen, bis sein Rückgabewert angibt, dass die DLL die Verarbeitung abgeschlossen hat.
+Der Scanflow, der durch das Verhalten "SpatialUnderstanding" gesteuert wird, ruft InitScan und dann Jeden Frame aktualisierenScan auf. Wenn die Statistikabfrage eine angemessene Abdeckung meldet, kann der Benutzer "RequestFinish" aufrufen, um das Ende der Überprüfungsphase anzugeben. UpdateScan wird weiterhin aufgerufen, bis der Rückgabewert angibt, dass die DLL die Verarbeitung abgeschlossen hat.
 
 ### <a name="understanding-mesh"></a>Grundlegendes zu Mesh
 
-Die grundlegende DLL speichert den Playspace intern als Raster mit Voxelcubes mit einer Größe von 8 cm. Während des ersten Teils der Überprüfung wird eine Primäre Komponentenanalyse abgeschlossen, um die Achsen des Raums zu bestimmen. Intern speichert er seinen Voxelraum, der an diesen Achsen ausgerichtet ist. Ein Gitternetz wird ungefähr jede Sekunde generiert, indem die Isosurface aus dem Voxelvolumen extrahiert wird.
+Die Understanding-DLL speichert den Playspace intern als Raster mit Voxelcubes mit einer Größe von 8 cm. Während des ersten Teils der Überprüfung wird eine primäre Komponentenanalyse abgeschlossen, um die Achsen des Raumes zu bestimmen. Intern speichert er seinen Voxelbereich, der an diesen Achsen ausgerichtet ist. Ein Gitternetz wird ungefähr jede Sekunde generiert, indem die Isosurface aus dem Voxelvolume extrahiert wird.
 
-![Generiertes Gitternetz, das aus dem Voxelvolumen erzeugt wird](images/su-custommesh.jpg)<br>
-*Generiertes Gitternetz, das aus dem Voxelvolumen erzeugt wird*
+![Generiertes Netz, das aus dem Voxelvolume erzeugt wird](images/su-custommesh.jpg)<br>
+*Generiertes Netz, das aus dem Voxelvolume erzeugt wird*
 
 ## <a name="troubleshooting"></a>Problembehandlung
 
-* Stellen Sie sicher, dass Sie die [SpatialPerception-Funktion festgelegt](#setting-the-spatialperception-capability) haben.
+* Stellen Sie sicher, dass Sie die [SpatialPerception-Funktion](#setting-the-spatialperception-capability) festgelegt haben.
 * Wenn die Nachverfolgung verloren geht, entfernt das nächste OnSurfaceChanged-Ereignis alle Gitternetze.
 
-## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Spatial Mapping im Mixed Reality Toolkit
+## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>Räumliche Zuordnung im Mixed Reality Toolkit
 
-Weitere Informationen zur Verwendung von Spatial Mapping mit Mixed Reality Toolkit finden Sie im Abschnitt zur [räumlichen](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) Wahrnehmung der MRTK-Dokumentation.
+Weitere Informationen zur Verwendung der räumlichen Zuordnung mit Mixed Reality Toolkit finden Sie im [Abschnitt räumliche Wahrnehmung](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) der MRTK-Dokumentation.
 
 ## <a name="next-development-checkpoint"></a>Nächster Entwicklungsprüfpunkt
 
-Wenn Sie den Weg zur Unity-Entwicklung, den wir ihnen auf den Weg geben, folgen, sind Sie gerade dabei, die MRTK-Kernbausteine zu erkunden. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
+Wenn Sie die von uns festgelegte Unity-Entwicklungsreise verfolgen, befinden Sie sich in der Mitte der MRTK-Kernbausteine. Von hier aus können Sie mit dem nächsten Baustein fortfahren:
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

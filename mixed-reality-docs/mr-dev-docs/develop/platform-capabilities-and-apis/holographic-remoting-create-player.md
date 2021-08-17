@@ -1,22 +1,22 @@
 ---
-title: Schreiben eines benutzerdefinierten Holographic Remoting-Players
+title: Schreiben eines benutzerdefinierten Holographic Remoting-Players (C++)
 description: Erstellen Sie eine benutzerdefinierte Hologaphic Remoting-App, um inhalte, die auf einem Remotecomputer gerendert wurden, auf Ihrem Computer HoloLens 2.
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 7/30/2021
 ms.topic: article
 keywords: HoloLens, Remoting, Holographic Remoting, NuGet, App-Manifest, Playerkontext, Remote-App, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: b395f94f6c98b20f7c0c188f11a718e6da9394de5df3404e7c703558daf526f2
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 37388dc9cbf70cb7fccd742fb45e1e29c0ceb971
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190166"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184731"
 ---
-# <a name="writing-a-custom-holographic-remoting-player-app"></a>Schreiben einer benutzerdefinierten Holographic Remoting Player-App
+# <a name="writing-a-custom-holographic-remoting-player-app-c"></a>Schreiben einer benutzerdefinierten Holographic Remoting-Player-App (C++)
 
 >[!IMPORTANT]
->In diesem Dokument wird die Erstellung einer benutzerdefinierten Playeranwendung für HoloLens 2. Benutzerdefinierte Player, die für HoloLens 2 sind nicht mit Remoteanwendungen kompatibel, die für HoloLens 1 geschrieben wurden. Dies bedeutet, dass beide Anwendungen NuGet Paketversion **2.x.x verwenden müssen.**
+>In diesem Dokument wird die Erstellung einer benutzerdefinierten Playeranwendung für HoloLens 2. Benutzerdefinierte Player, die für HoloLens 2 sind nicht kompatibel mit Remoteanwendungen, die für HoloLens 1 geschrieben wurden. Dies impliziert, dass beide Anwendungen NuGet Paketversion **2.x.x verwenden müssen.**
 
 Indem Sie eine benutzerdefinierte Holographic Remoting-Player-App erstellen, [](../../design/app-views.md) können Sie eine benutzerdefinierte Anwendung erstellen, die immersive Ansichten von auf einem Remotecomputer auf Ihrem Computer HoloLens 2. Den ganzen Code auf dieser Seite und funktionierende Projekte finden Sie im [GitHub-Repository Holographic Remoting samples (Holographic Remoting-Beispiele).](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)
 
@@ -31,7 +31,7 @@ Ein guter Ausgangspunkt ist eine funktionierende DirectX-basierte UWP-App, die b
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>Holographic Remoting-Paket NuGet
 
-Die folgenden Schritte sind erforderlich, um das NuGet einem Projekt in der Visual Studio.
+Die folgenden Schritte sind erforderlich, um das paket NuGet einem Projekt in Visual Studio.
 1. Öffnen Sie das Projekt in Visual Studio.
 2. Klicken Sie mit der rechten Maustaste auf den Projektknoten, und wählen **Sie manage NuGet Packages... (Pakete verwalten) aus.**
 3. Wählen Sie im angezeigten Bereich **Durchsuchen** aus, und suchen Sie dann nach "Holographic Remoting".
@@ -40,11 +40,11 @@ Die folgenden Schritte sind erforderlich, um das NuGet einem Projekt in der Visu
 6. Wählen Sie **Ich stimme zu** aus, wenn das Dialogfeld lizenzvertrag angezeigt wird.
 
 >[!IMPORTANT]
-><a name="idl"></a>Das ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` -NuGet enthält eine ausführliche Dokumentation für die API, die von Holographic Remoting verfügbar gemacht wird.
+><a name="idl"></a>Das ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` -Paket im NuGet enthält eine ausführliche Dokumentation für die API, die von Holographic Remoting verfügbar gemacht wird.
 
 ## <a name="modify-the-packageappxmanifest-of-the-application"></a>Ändern des Package.appxmanifest der Anwendung
 
-Um die Anwendung über die vom Microsoft.Holographic.AppRemoting.dll-Paket hinzugefügten Daten zu NuGet, müssen die folgenden Schritte für das Projekt erforderlich sein:
+Um die Anwendung über die vom Microsoft.Holographic.AppRemoting.dll-Paket NuGet, müssen die folgenden Schritte für das Projekt erforderlich sein:
 
 1. Klicken Sie im Projektmappen-Explorer mit der rechten Maustaste auf die **Datei Package.appxmanifest,** und wählen Sie **Öffnen mit... aus.**
 2. Wählen Sie **XML-Editor (Text) und** dann **OK aus.**
@@ -92,7 +92,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 ```
 
 >[!WARNING]
->Holographic Remoting ersetzt die Windows Mixed Reality Runtime, die Teil der Windows ist, durch eine Remoting-spezifische Laufzeit. Dies erfolgt während der Erstellung des Playerkontexts. Aus diesem Grund kann jeder Aufruf einer beliebigen Windows Mixed Reality-API vor dem Erstellen des Playerkontexts zu unerwartetem Verhalten führen. Es wird empfohlen, den Playerkontext so früh wie möglich zu erstellen, bevor sie mit einer beliebigen Mixed Reality werden. Kombinieren Sie objekte, die vor dem Aufruf von über eine Windows Mixed Reality-API erstellt oder abgerufen wurden, nie mit Objekten, die ```PlayerContext::Create``` anschließend erstellt oder abgerufen wurden.
+>Holographic Remoting funktioniert, indem die Windows Mixed Reality-Runtime, die Teil von Windows ist, durch eine Remoting-spezifische Laufzeit ersetzt wird. Dies erfolgt während der Erstellung des Playerkontexts. Aus diesem Grund kann jeder Aufruf einer beliebigen Windows Mixed Reality-API vor dem Erstellen des Playerkontexts zu unerwartetem Verhalten führen. Es wird empfohlen, den Playerkontext so früh wie möglich zu erstellen, bevor sie mit einer beliebigen Mixed Reality werden. Kombinieren Sie objekte, die vor dem Aufruf von über eine Windows Mixed Reality-API erstellt oder abgerufen wurden, niemals mit Objekten, die ```PlayerContext::Create``` anschließend erstellt oder abgerufen wurden.
 
 Als Nächstes kann HolographicSpace durch Aufrufen von [HolographicSpace.CreateForCoreWindow erstellt werden.](/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)
 
@@ -100,7 +100,7 @@ Als Nächstes kann HolographicSpace durch Aufrufen von [HolographicSpace.CreateF
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
 ```
 
-## <a name="connect-to-the-remote-app"></a>Verbinden der Remote-App
+## <a name="connect-to-the-remote-app"></a>Verbinden zur Remote-App
 
 Sobald die Player-App zum Rendern von Inhalten bereit ist, kann eine Verbindung mit der Remote-App hergestellt werden.
 
@@ -206,7 +206,7 @@ Bei Erfolg gibt ```BlitRemoteFrame``` ```BlitResult::Success_Color``` zurück. A
 - Die Remote-App hat über [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer einen Tiefenpuffer gebunden.](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)
 - Die benutzerdefinierte Player-App hat vor dem Aufruf von einen gültigen Tiefenpuffer ```BlitRemoteFrame``` gebunden.
 
-Wenn diese Bedingungen erfüllt sind, wird die Remotetiefe in den aktuell ```BlitRemoteFrame``` gebundenen lokalen Tiefenpuffer eingespalten. Anschließend können Sie zusätzliche lokale Inhalte rendern, die eine Tiefenschnittmenge mit dem remote gerenderten Inhalt haben. Darüber hinaus können Sie den lokalen Tiefenpuffer über [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) in Ihrem benutzerdefinierten Player commiten, um eine Tiefenumprojektion für remote und lokal gerenderten Inhalt zu erhalten. Weitere [Informationen finden Sie unter Depth Reprojection](hologram-stability.md#reprojection) (Tiefenprojektion).
+Wenn diese Bedingungen erfüllt sind, wird die Remotetiefe in den aktuell gebundenen ```BlitRemoteFrame``` lokalen Tiefenpuffer eingelitt. Anschließend können Sie zusätzliche lokale Inhalte rendern, die eine Tiefenschnittmenge mit dem remote gerenderten Inhalt haben. Darüber hinaus können Sie den lokalen Tiefenpuffer über [HolographicCameraRenderingParameters.CommitDirect3D11DepthBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) in Ihrem benutzerdefinierten Player commiten, um eine Tiefenreprojektion für remote und lokal gerenderten Inhalt zu erhalten. Weitere [Informationen finden Sie unter Depth Reprojection](hologram-stability.md#reprojection) (Tiefenprojektion).
 
 ### <a name="projection-transform-mode"></a>Projektionstransformationsmodus
 
@@ -215,7 +215,7 @@ Ein Problem, das bei verwendung der Tiefenumwandlung über Holographic Remoting 
 Ab Version [2.1.0](holographic-remoting-version-history.md#v2.1.0) können Sie den Projektionstransformationsmodus über ```PlayerContext::ProjectionTransformConfig``` steuern. Diese Werte werden unterstützt:
 
 - ```Local``` - [HolographicCameraPose::P rojectionTransform](/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) gibt eine Projektionstransformation zurück, die die von Ihrer benutzerdefinierten Player-App auf der HolographicCamera festgelegten Entfernungen in der Nah-/Fernebene widerspiegelt.
-- ```Remote``` – Projektionstransformation spiegelt die von der Remote-App angegebenen Entfernungen der Nah-/Fernebene wider.
+- ```Remote``` – Projektionstransformation spiegelt die von der Remote-App angegebenen Entfernungen in der Nah-/Fernebene wider.
 - ```Merged``` – Entfernungen der Nah-/Fernebene von Ihrer Remote-App und Ihrer benutzerdefinierten Player-App werden zusammengeführt. Dies erfolgt standardmäßig, indem der Mindestwert der Entfernungen in der Näherungsebene und der höchstwert der Entfernungen der Fernebene verwendet wird. Für den Fall, dass entweder die Remoteseite oder die lokale Seite invertiert wird, z. B. weit <, werden die Entfernungen der remoten nah/fernen Ebene gekippt.
 
 ## <a name="optional-set-blitremoteframetimeout"></a>Optional: Legen Sie BlitRemoteFrameTimeout fest. <a name="BlitRemoteFrameTimeout"></a>
@@ -224,9 +224,9 @@ Ab Version [2.1.0](holographic-remoting-version-history.md#v2.1.0) können Sie d
 
 Die -Eigenschaft gibt an, wie lange ein ```PlayerContext::BlitRemoteFrameTimeout``` Remoteframe wiederverwendet wird, wenn kein neuer Remoteframe empfangen wird. 
 
-Ein häufiger Verwendungsfall besteht in der Aktivierung des BlitRemoteFrame-Timeouts, um einen leeren Bildschirm anzuzeigen, wenn für einen bestimmten Zeitraum keine neuen Frames empfangen werden. Wenn diese Option aktiviert ist, kann der Rückgabetyp der ```BlitRemoteFrame``` Methode auch verwendet werden, um zu einem lokal gerenderten Fallbackinhalt zu wechseln. 
+Ein häufiger Verwendungsfall besteht im Aktivieren des BlitRemoteFrame-Timeouts, um einen leeren Bildschirm anzuzeigen, wenn für einen bestimmten Zeitraum keine neuen Frames empfangen werden. Wenn diese Option aktiviert ist, kann der Rückgabetyp der Methode auch verwendet werden, um zu einem lokal gerenderten ```BlitRemoteFrame``` Fallbackinhalt zu wechseln. 
 
-Um das Timeout zu aktivieren, legen Sie den Eigenschaftswert auf eine Dauer von mindestens 100 ms fest. Um das Timeout zu deaktivieren, legen Sie die -Eigenschaft auf 0 (null) fest. Wenn das Timeout aktiviert ist und für die festgelegte Dauer kein Remoteframe empfangen wird, schlägt BlitRemoteFrame fehl und gibt zurück, ```Failed_RemoteFrameTooOld``` bis ein neuer Remoteframe empfangen wird.
+Um das Timeout zu aktivieren, legen Sie den Eigenschaftswert auf eine Dauer von mehr als 100 ms fest. Um das Timeout zu deaktivieren, legen Sie die -Eigenschaft auf 0 duration fest. Wenn das Timeout aktiviert ist und während der festgelegten Dauer kein Remoteframe empfangen wird, kann BlitRemoteFrame nicht verwendet werden, und es wird eine Rückgabe angezeigt, bis ein neuer Remoteframe ```Failed_RemoteFrameTooOld``` empfangen wird.
 
 ```cpp
 using namespace std::chrono_literals;
@@ -235,9 +235,9 @@ using namespace std::chrono_literals;
 m_playerContext.BlitRemoteFrameTimeout(500ms);
 ```
 
-## <a name="optional-get-statistics-about-the-last-remote-frame"></a>Optional: Abrufen von Statistiken zum letzten Remoteframe
+## <a name="optional-get-statistics-about-the-last-remote-frame"></a>Optional: Statistik zum letzten Remoteframe
 
-Um Leistungs- oder Netzwerkprobleme zu diagnostizieren, können Statistiken zum letzten Remoteframe über die -Eigenschaft abgerufen ```PlayerContext::LastFrameStatistics``` werden. Statistiken werden während des Aufrufs von [HolographicFrame::P resentUsingCurrentPrediction](/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)aktualisiert.
+Zum Diagnostizieren von Leistungs- oder Netzwerkproblemen können Statistiken zum letzten Remoteframe über die -Eigenschaft abgerufen ```PlayerContext::LastFrameStatistics``` werden. Statistiken werden während des Aufrufs von [HolographicFrame::P resentUsingCurrentPrediction aktualisiert.](/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)
 
 ```cpp
 // Get statistics for the last presented frame.
@@ -248,13 +248,14 @@ Weitere Informationen finden Sie in der ```PlayerFrameStatistics``` Dokumentatio
 
 ## <a name="optional-custom-data-channels"></a>Optional: Benutzerdefinierte Datenkanäle
 
-Benutzerdefinierte Datenkanäle können verwendet werden, um Benutzerdaten über die bereits eingerichtete Remotingverbindung zu senden. Weitere Informationen finden Sie [unter Benutzerdefinierte Datenkanäle.](holographic-remoting-custom-data-channels.md)
+Benutzerdefinierte Datenkanäle können verwendet werden, um Benutzerdaten über die bereits eingerichtete Remotingverbindung zu senden. Weitere [Informationen finden Sie unter Benutzerdefinierte](holographic-remoting-custom-data-channels.md) Datenkanäle.
 
 ## <a name="see-also"></a>Weitere Informationen
-* [Schreiben einer Holographic Remoting-Remote-App mit Windows Mixed Reality-APIs](holographic-remoting-create-remote-wmr.md)
+* [Übersicht über Holographic Remoting](holographic-remoting-overview.md)
+* [Schreiben einer Holographic Remoting-Remote-App mit Windows Mixed Reality APIs](holographic-remoting-create-remote-wmr.md)
 * [Schreiben einer Holographic Remoting-Remote-App mit OpenXR-APIs](holographic-remoting-create-remote-openxr.md)
 * [Benutzerdefinierte Holographic Remoting-Datenkanäle](holographic-remoting-custom-data-channels.md)
 * [Einrichten einer sicheren Verbindung mit Holographic Remoting](holographic-remoting-secure-connection.md)
-* [Problembehandlung und Einschränkungen für Holographic Remoting](holographic-remoting-troubleshooting.md)
+* [Problembehandlung und Einschränkungen bei Holographic Remoting](holographic-remoting-troubleshooting.md)
 * [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)

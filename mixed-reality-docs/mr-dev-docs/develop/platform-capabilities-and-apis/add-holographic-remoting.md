@@ -6,21 +6,21 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality, Hologramme, holografisches Remoting, Remoterendering, Netzwerkrendering, HoloLens, Remote hologramme, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: ecfc49477e202b08303160e54ce986577a9d79eb387dc1edb1bc33c63644615f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3f9d3d23d18f680ce1001310e4ce49089edaae6a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115198856"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184621"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>Hinzufügen von Holographic Remoting (HoloLens (erste Generation))
 
 >[!IMPORTANT]
-> In diesem Dokument wird die Erstellung einer Hostanwendung für HoloLens 1 beschrieben. Hostanwendung für **HoloLens (1. Generation)** muss NuGet Paketversion **1.x.x verwenden.** Dies bedeutet, dass Hostanwendungen, die für HoloLens 1 geschrieben wurden, nicht mit HoloLens 2 und umgekehrt kompatibel sind.
+> In diesem Dokument wird die Erstellung einer Hostanwendung für HoloLens 1 beschrieben. Hostanwendung für **HoloLens (1. Generation)** muss NuGet **Paketversion 1.x.x verwenden.** Dies bedeutet, dass Hostanwendungen, die für HoloLens 1 geschrieben wurden, nicht mit HoloLens 2 und umgekehrt kompatibel sind.
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-HoloLens, die Holographic Remoting verwenden, müssen ihre Apps aktualisieren, damit sie mit den HoloLens 2. Dies erfordert eine neue Version des Holographic Remoting NuGet Pakets. Stellen Sie sicher, dass Sie version 2.0.0.0 oder höher des Holographic Remoting NuGet-Pakets verwenden, wenn Sie eine Verbindung mit dem Holographic Remoting Player auf HoloLens 2 herstellen, da die Verbindung fehlschlägt.
+HoloLens, die Holographic Remoting verwenden, müssen ihre Apps aktualisieren, damit sie mit den HoloLens 2. Dies erfordert eine neue Version des Holographic Remoting NuGet Pakets. Stellen Sie sicher, dass Sie Version 2.0.0.0 oder höher des Holographic Remoting NuGet-Pakets verwenden, wenn Sie eine Verbindung mit dem Holographic Remoting Player auf HoloLens 2 herstellen, da die Verbindung fehlschlägt.
 
 >[!NOTE]
 > Spezifische Anleitungen für HoloLens 2 finden Sie [hier.](holographic-remoting-create-remote-wmr.md)
@@ -30,7 +30,7 @@ HoloLens, die Holographic Remoting verwenden, müssen ihre Apps aktualisieren, d
 
 Auf dieser Seite wird beschrieben, wie Holographic Remoting einer Desktop- oder UWP-App hinzugefügt wird.
 
-Mit Holographic Remoting kann Ihre App auf eine HoloLens mit holografischen Inhalten ausgerichtet werden, die auf einem Desktop-PC oder auf einem UWP-Gerät wie dem Xbox One. Sie haben auch Zugriff auf weitere Systemressourcen, was die Integration von immersiven Remoteansichten [in](../../design/app-views.md) vorhandene Desktop-PC-Software ermöglicht. Eine Remotinghost-App empfängt einen Eingabedatenstrom von einem HoloLens, rendert Inhalte in einer virtuellen immersiven Ansicht und streamt Inhaltsframes zurück an HoloLens. Die Verbindung wird mithilfe von STANDARD-WLAN hergestellt. Um Remoting zu verwenden, verwenden Sie ein NuGet-Paket, um Ihrem Desktop oder Ihrer UWP-App holografisches Remoting hinzuzufügen. Schreiben Sie dann Code, um die Verbindung zu verarbeiten und eine immersive Ansicht zu rendern. Hilfsbibliotheken sind im Codebeispiel enthalten, die die Verarbeitung der Geräteverbindung vereinfachen.
+Mit Holographic Remoting kann Ihre App auf eine HoloLens mit holografischen Inhalten ausgerichtet werden, die auf einem Desktop-PC oder auf einem UWP-Gerät wie dem Xbox One. Sie haben auch Zugriff auf weitere Systemressourcen, wodurch sie die Integration von immersiven Remoteansichten [in](../../design/app-views.md) vorhandene Desktop-PC-Software ermöglichen. Eine Remotinghost-App empfängt einen Eingabedatenstrom von einem HoloLens, rendert Inhalte in einer virtuellen immersiven Ansicht und streamt Inhaltsframes zurück an HoloLens. Die Verbindung wird mithilfe von STANDARD-WLAN hergestellt. Um Remoting zu verwenden, verwenden Sie ein NuGet-Paket, um Ihrem Desktop oder Ihrer UWP-App holografisches Remoting hinzuzufügen. Schreiben Sie dann Code, um die Verbindung zu verarbeiten und eine immersive Ansicht zu rendern. Hilfsbibliotheken sind im Codebeispiel enthalten, die die Verarbeitung der Geräteverbindung vereinfachen.
 
 Eine typische Remotingverbindung hat eine Latenz von bis zu 50 ms. Die Player-App kann die Latenzzeit in Echtzeit melden.
 
@@ -75,9 +75,9 @@ private:
        Microsoft::WRL::ComPtr<ID3D11Texture2D>             m_spTexture;
 ```
 
-### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>Initialisieren von HolographicStreamerHelpers und Herstellen einer Verbindung mit HoloLens
+### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>Initialisieren Sie HolographicStreamerHelpers, und stellen Sie eine Verbindung mit HoloLens
 
-Um eine Verbindung mit einem HoloLens herzustellen, erstellen Sie eine Instanz von HolographicStreamerHelpers, und stellen Sie eine Verbindung mit der Ziel-IP-Adresse herstellen. Sie müssen die Größe des Videoframes so festlegen, dass sie der HoloLens-Anzeigebreite und -höhe passt, da die Holographic Remoting-Bibliothek erwartet, dass die Encoder- und Decoderauflösungen genau übereinstimmen.
+Um eine Verbindung mit einem HoloLens herzustellen, erstellen Sie eine Instanz von HolographicStreamerHelpers, und stellen Sie eine Verbindung mit der ZIEL-IP-Adresse herstellen. Sie müssen die Größe des Videoframes so festlegen, dass sie mit der HoloLens-Anzeigebreite und -höhe übereinstimmen, da die Holographic Remoting-Bibliothek erwartet, dass die Encoder- und Decoderauflösungen genau übereinstimmen.
 
 ```cpp
 m_streamerHelpers = ref new HolographicStreamerHelpers();
@@ -150,7 +150,7 @@ Platform::WeakReference streamerHelpersWeakRef = Platform::WeakReference(m_strea
            });
 ```
 
-Wenn die Remotingkomponente bereit ist, einen Frame zu senden, hat Ihre App die Möglichkeit, eine Kopie davon im SendFrameEvent zu erstellen. Hier kopieren wir den Frame in eine Austauschkette, damit wir ihn in einem Vorschaufenster anzeigen können.
+Wenn die Remotingkomponente bereit ist, einen Frame zu senden, hat Ihre App die Möglichkeit, eine Kopie davon im SendFrameEvent zu erstellen. Hier kopieren wir den Frame in eine Auslagerungskette, damit wir ihn in einem Vorschaufenster anzeigen können.
 
 ```cpp
 m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
@@ -220,7 +220,7 @@ void AppView::Tick()
    }
 ```
 
-Die Update-, Render- und Present-Schleife der holografischen App-Ansicht ist identisch mit der Ausführung auf HoloLens– mit der Ausnahme, dass Sie zugriff auf eine viel größere Anzahl von Systemressourcen auf Ihrem Desktop-PC haben. Sie können viele weitere Dreiecke rendern, mehr Zeichenläufe haben, mehr Physikalisches tun und x64-Prozesse verwenden, um Inhalte zu laden, die mehr als 2 GB RAM erfordern.
+Die Update-, Render- und Present-Schleife der holografischen App-Ansicht ist identisch mit der Ausführung auf HoloLens– mit der Ausnahme, dass Sie auf Ihrem Desktop-PC auf eine viel größere Menge von Systemressourcen zugreifen können. Sie können viele weitere Dreiecke rendern, mehr Zeichenläufe haben, mehr Physikalisches tun und x64-Prozesse verwenden, um Inhalte zu laden, die mehr als 2 GB RAM erfordern.
 
 ### <a name="disconnect-and-end-the-remote-session"></a>Trennen und Beenden der Remotesitzung
 
@@ -244,7 +244,7 @@ void DesktopWindow::DisconnectFromRemoteDevice()
 
 ## <a name="get-the-remoting-player"></a>Get the remoting player (Remotingplayer erhalten)
 
-Der Windows Holographic-Remotingplayer wird im Windows App Store als Endpunkt für Remotinghost-Apps angeboten, mit dem eine Verbindung hergestellt werden kann. Um den Windows Holographic-Remoting-Player zu erhalten, besuchen Sie den Windows App Store aus Ihrem HoloLens, suchen Sie nach Remoting, und laden Sie die App herunter. Der Remotingplayer enthält ein Feature zum Anzeigen von Statistiken auf dem Bildschirm, was beim Debuggen von Remotinghost-Apps nützlich sein kann.
+Der Windows Holographic-Remotingplayer wird im Windows App Store als Endpunkt für Remotinghost-Apps zum Herstellen einer Verbindung angeboten. Um den Windows Holographic-Remoting-Player zu erhalten, besuchen Sie den Windows App Store aus Ihrem HoloLens, suchen Sie nach Remoting, und laden Sie die App herunter. Der Remotingplayer enthält ein Feature zum Anzeigen von Statistiken auf dem Bildschirm, was beim Debuggen von Remotinghost-Apps nützlich sein kann.
 
 ## <a name="notes-and-resources"></a>Hinweise und Ressourcen
 
@@ -258,6 +258,14 @@ internal:
        }
 ```
 
-**Codebeispiel:** Ein [vollständiges Holographic Remoting-Codebeispiel](https://github.com/Microsoft/HoloLensCompanionKit) ist verfügbar, das eine holografische Anwendungsansicht enthält, die mit Remoting- und Remotinghostprojekten für Desktop-Win32, UWP DirectX und UWP mit XAML kompatibel ist. 
+**Codebeispiel:** Ein vollständiges [Holographic Remoting-Codebeispiel](https://github.com/Microsoft/HoloLensCompanionKit) ist verfügbar, das eine holografische Anwendungsansicht enthält, die mit Remoting- und Remotinghostprojekten für Desktop-Win32, UWP DirectX und UWP mit XAML kompatibel ist. 
 
-**Debughinweis:** Die Holographic Remoting-Bibliothek kann Ausnahmen der ersten Chance auslösen. Diese Ausnahmen können in Debugsitzungen sichtbar sein, je Visual Studio Ausnahmeeinstellungen, die zu diesem Zeitpunkt aktiv sind. Diese Ausnahmen werden intern von der Holographic Remoting-Bibliothek erfasst und können ignoriert werden.
+**Debughinweis:** Die Holographic Remoting-Bibliothek kann Ausnahmen der ersten Chance auslösen. Diese Ausnahmen können in Debugsitzungen sichtbar sein, je nach Visual Studio Ausnahmeeinstellungen, die zu diesem Zeitpunkt aktiv sind. Diese Ausnahmen werden intern von der Holographic Remoting-Bibliothek erfasst und können ignoriert werden.
+
+## <a name="see-also"></a>Weitere Informationen
+* [Übersicht über Holographic Remoting](holographic-remoting-overview.md)
+* [Schreiben einer benutzerdefinierten Holographic Remoting Player-App](holographic-remoting-create-player.md)
+* [Einrichten einer sicheren Verbindung mit Holographic Remoting](holographic-remoting-secure-connection.md)
+* [Problembehandlung und Einschränkungen bei Holographic Remoting](holographic-remoting-troubleshooting.md)
+* [Holographic Remoting-Software – Lizenzbedingungen](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Datenschutzerklärung von Microsoft](https://go.microsoft.com/fwlink/?LinkId=521839)
