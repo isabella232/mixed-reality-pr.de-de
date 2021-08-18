@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, Emulator
-ms.openlocfilehash: 3fcf69c7f4e4e2bc92ef3c31dccbd1224ad3051e8a922666deb801dd6f40c4ab
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e8bad509a4714d693c51682be73f1523bf05bd30
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115188739"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905656"
 ---
 # <a name="using-the-hololens-emulator"></a>Verwendung des HoloLens-Emulators
 
@@ -28,7 +28,7 @@ Wenn Sie Anwendungen für immersive Windows Mixed Reality-Headsets (VR) oder Spi
 Lade den HoloLens-Emulator herunter.
 
 Versionen:
-* [HoloLens 2-Emulator (Windows Holographic, Version 21H1 mit Update aus Juli 2021)](https://go.microsoft.com/fwlink/?linkid=2167725).
+* [HoloLens 2-Emulator (Windows Holographic, Version 21H1 mit Update aus August 2021)](https://go.microsoft.com/fwlink/?linkid=2169418).
 * [HoloLens-Emulator (erste Generation) und holografische Projektvorlagen](https://go.microsoft.com/fwlink/?linkid=2065980).
 
 Versionsanmerkungen und ältere Builds des HoloLens-Emulators finden Sie auf der Seite [HoloLens-Emulator – Archiv](hololens-emulator-archive.md).

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 78296dd4e6667c34926c954774547b21a223c5f4b6635476c51046c7ca22cdc3
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c3775dc73f41b822c233d8fc4ec62459e789b89f
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208400"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122264976"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 
@@ -21,7 +21,7 @@ public static SpatialCoordinateSystem SpatialCoordinateSystem { get; }
 public static SpatialInteractionManager SpatialInteractionManager { get; }
 ```
 
-# <a name="xr-sdk"></a>[XR SDK](#tab/xr)
+# <a name="windows-xr-plugin"></a>[Windows XR-Plug-In](#tab/xr)
 
 ## <a name="windowsmrenvironment"></a>WindowsMREnvironment
 
@@ -43,7 +43,7 @@ public static IntPtr OriginSpatialCoordinateSystem { get; } // Windows::Percepti
 **Namespace:** *UnityEngine.XR*<br>
 **Typ:** *XRDevice*
 
-Mit dem <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">**XRDevice-Typ**</a> können Sie mithilfe der <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr-Methode</a> Zugriff auf zugrunde liegende native Objekte erhalten. Die Rückgabe von GetNativePtr variiert je nach Plattform. Auf der universellen Windows Platform gibt XRDevice.GetNativePtr bei der Festlegung auf Windows Mixed Reality einen Zeiger (IntPtr) auf die folgende Struktur zurück:
+Der <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">**XRDevice-Typ**</a> ermöglicht ihnen den Zugriff auf zugrunde liegende native Objekte mithilfe der <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr-Methode.</a> Die Rückgabe von GetNativePtr variiert auf verschiedenen Plattformen. Auf der universellen Windows Platform gibt XRDevice.GetNativePtr beim Ziel Windows Mixed Reality einen Zeiger (IntPtr) auf die folgende Struktur zurück:
 
 ```cs
 using System;
@@ -67,4 +67,4 @@ IntPtr nativePtr = UnityEngine.XR.XRDevice.GetNativePtr();
 HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativePtr);
 ```
 
-***IHolographicCameraPtr** ist ein Array von IntPtr, das als UnmanagedType.ByValArray gemarshallt wird und deren Länge maxNumberOfCameras entspricht.*
+***IHolographicCameraPtr** ist ein Array von IntPtr, das als UnmanagedType.ByValArray gemarshallt wird und eine Länge hat, die maxNumberOfCameras entspricht.*
