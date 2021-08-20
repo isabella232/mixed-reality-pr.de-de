@@ -220,7 +220,7 @@
           href: unity/spatial-sound-in-unity.md
     - name: Erweiterte Funktionen
       items:
-        - name: Foto-/Videokamera in Unity
+        - name: Foto-/Videokamera
           href: unity/locatable-camera-in-unity.md
         - name: Fokuspunkt
           href: unity/focus-point-in-unity.md
@@ -234,6 +234,8 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Native Mixed Reality-Interop in Unity
           href: unity/unity-xrdevice-advanced.md
+        - name: Verwenden von PC-Ressourcen zum Betreiben Ihrer App
+          href: unity/use-pc-resources.md
         - name: Verwenden von Vuforia
           href: unity/vuforia-development-overview.md
     - name: Immersive VR
@@ -266,8 +268,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Empfohlene Einstellungen für Unity
           href: unity/recommended-settings-for-unity.md
-        - name: Anzeigen einer Vorschau Ihrer Arbeit mit Holographic Remoting
-          href: unity/holographic-remoting-in-unity.md
+        - name: Vorschau und Debuggen Ihrer App mit Holographic Remoting
+          href: unity/preview-and-debug-your-app.md
     - name: Visual Studio-Projektmappen
       items:
         - name: Exportieren und Erstellen einer Unity-Projektmappe für Visual Studio
@@ -452,21 +454,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: Holographic Remoting
       items:
-        - name: Überblick
+        - name: Holographic Remoting – Übersicht
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
-        - name: Holographic Remoting-Player
+        - name: Der Holographic Remoting-Player
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: Schreiben einer Holographic Remoting-Remote-App
+        - name: Schreiben einer Holographic Remoting-Remote-App (C++)
           items:
             - name: HolographicSpace-API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: OpenXR-API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: Schreiben einer benutzerdefinierten Holographic Remoting Player-App
+        - name: Schreiben einer benutzerdefinierten Holographic Remoting Player-App (C++)
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: Benutzerdefinierte Holographic Remoting-Datenkanäle
+        - name: Benutzerdefinierte Holographic Remoting-Datenkanäle (C++)
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: Sichere Verbindung für Holographic Remoting
+        - name: Sichere Verbindung mit Holographic Remoting (C++)
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: Problembehandlung und Einschränkungen
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
