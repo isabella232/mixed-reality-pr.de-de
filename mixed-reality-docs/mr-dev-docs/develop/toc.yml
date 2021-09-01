@@ -218,6 +218,8 @@
           href: unity/spatial-mapping-in-unity.md
         - name: Raumklang
           href: unity/spatial-sound-in-unity.md
+        - name: Grundlegendes zu Szenen
+          href: unity/scene-understanding-sdk.md
     - name: Erweiterte Funktionen
       items:
         - name: Foto-/Videokamera
@@ -264,6 +266,8 @@
               href: unity/lunar-module.md
     - name: Debugging und Leistung
       items:
+        - name: Leistungsempfehlungen für Unity
+          href: unity/performance-recommendations-for-unity.md
         - name: Verwaltetes Debuggen mit Unity
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Empfohlene Einstellungen für Unity
@@ -422,15 +426,13 @@
   items:
     - name: Grundbausteine
       items:
-        - name: Grundlegendes zu Szenen
-          href: platform-capabilities-and-apis/scene-understanding-sdk.md
         - name: Gemeinsam verwendete Raumanker
           href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-        - name: 'Tastatur-, Maus- und Controllereingaben'
+        - name: 'Tastatur-, Maus- und Controllereingaben (mit C++-Beispielen)'
           href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
         - name: Verwenden von XAML mit holographischen DirectX-Apps
           href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
-        - name: Nachverfolgen von QR-Codes
+        - name: QR-Codenachverfolgung (mit C#- und C++-Beispielen)
           href: platform-capabilities-and-apis/qr-code-tracking.md
     - name: Gemeinsame Erlebnisse in Mixed Reality
       items:
@@ -440,13 +442,13 @@
           href: /azure/spatial-anchors/
         - name: Spectator View
           href: platform-capabilities-and-apis/spectator-view.md
-        - name: WebRTC
+        - name: 'WebRTC (C#, C++, Unity)'
           href: 'https://github.com/microsoft/MixedReality-WebRTC'
     - name: Kamera und Aufnahme
       items:
-        - name: Ausrichtbare Kamera
+        - name: Ausrichtbare Kamera (mit C++-Beispielen)
           href: platform-capabilities-and-apis/locatable-camera.md
-        - name: Mixed Reality-Aufnahme für Entwickler
+        - name: Mixed Reality-Aufnahme für Entwickler (mit C#- und C++-Beispielen)
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: Funktionsweise – Mixed Reality-Aufnahmestudios
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
@@ -484,12 +486,10 @@
           href: platform-capabilities-and-apis/app-quality-criteria.md
         - name: Holographisches Rendern
           href: platform-capabilities-and-apis/rendering.md
-        - name: Volumengrafik
+        - name: Volumengrafik (mit C++-Beispielen)
           href: platform-capabilities-and-apis/volume-rendering.md
-        - name: Hologrammstabilität
+        - name: Hologrammstabilität (mit C#-Beispielen)
           href: platform-capabilities-and-apis/hologram-stability.md
-        - name: 'Verwenden der Stabilisierungsebene, um holographische Turbulenzen zu verringern'
-          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
         - name: Grundlegendes zur Leistung für Mixed Reality
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
         - name: Leistungsempfehlungen für Unity
@@ -506,13 +506,13 @@
           href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
         - name: Archiv für HoloLens-Emulator
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
-        - name: Perception Simulation (Wahrnehmungssimulation)
+        - name: Perception Simulation (Wahrnehmungssimulation; mit C#-Beispielen)
           href: platform-capabilities-and-apis/perception-simulation.md
     - name: Geräteportal
       items:
         - name: Verwenden des Windows-Geräteportals
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-        - name: Referenz der Geräteportal-API
+        - name: Geräteportal-API-Referenz (REST)
           href: platform-capabilities-and-apis/device-portal-api-reference.md
     - name: Forschungstools
       items:
