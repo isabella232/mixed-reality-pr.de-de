@@ -1,18 +1,20 @@
 ---
-ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2ab12da2da926d906a5ae57868f152ecc2b13d90
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208852"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244301"
 ---
 # <a name="world-locking-tools-recommended"></a>[World Locking Tools (Empfohlen)](#tab/wlt)
 
-Standardmäßig stellt World Locking Tools das Unity-Koordinatensystem in Bezug auf die physische Welt sitzungsübergreifend wieder her. Dies bedeutet, dass ein Hologramm nach dem Beenden und erneuten Ausführen der Anwendung an der gleichen Stelle in der physischen Welt angezeigt wird, dass das Hologramm nur wieder die gleiche Pose aufweisen muss.
+Standardmäßig stellt World Locking Tools das Unity-Koordinatensystem relativ zur physischen Welt sitzungsübergreifend auf Geräten wieder her, die persistierende lokale Raumanker unterstützen. Damit ein Hologramm nach dem Beenden und erneuten Ausführen der Anwendung an der gleichen Stelle in der physischen Welt angezeigt wird, muss das Hologramm nur noch einmal dieselbe Pose aufweisen.
 
 ![Kontextkomponente "World Locking" im Unity-Inspektor](../../images/world-locking-tools-img-02.png)
 
 Wenn die Anwendung eine feiner kontrollierte Steuerung benötigt, können **automatisches Speichern** und **automatisches Laden** im Inspektor deaktiviert und persistenz über ein Skript verwaltet werden, wie im [Abschnitt "Persistenz" der Dokumentation](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)beschrieben.
+
+Lokale Ankerpersistenz wird derzeit nur für die HoloLens Gerätefamilie unterstützt. Unter Android und iOS sowie HoloLens wird die Sitzungsübergreifende Persistenz von Koordinatenbereichen sowie die geräteübergreifende Freigabe von Koordinatenbereichen über eine Integration in Azure Spatial Anchors unterstützt. Es gibt eine Vielzahl [weiterer Informationen und Beispiele](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html) zur Verwendung von World Locking Tools zusammen mit Azure Spatial Anchors.
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 
@@ -116,13 +118,13 @@ Mit WorldAnchorStore können Sie den Speicherort von WorldAnchor sitzungsübergr
 
 So laden Sie Hologramme aus vorherigen Sitzungen:
 
-1. Abrufen des WorldAnchorStore
+1. Abrufen von WorldAnchorStore
 2. Laden von App-Daten im Zusammenhang mit dem Weltanker, der Ihnen die ID des Weltankers liefert
 3. Laden eines Weltankers aus seiner ID
 
 So speichern Sie Hologramme für zukünftige Sitzungen:
 
-1. Abrufen des WorldAnchorStore
+1. Abrufen von WorldAnchorStore
 2. Speichern eines Weltankers, der eine ID angibt
 3. Speichern von App-Daten im Zusammenhang mit dem Weltanker zusammen mit einer ID
 
@@ -134,7 +136,7 @@ Sie sollten einen Verweis auf WorldAnchorStore beibehalten, damit Sie wissen, wa
 WorldAnchorStore.GetAsync(StoreLoaded);
 ```
 
-StoreLoaded ist in diesem Fall unser Handler für den Fall, dass das Laden des WorldAnchorStore abgeschlossen wurde:
+StoreLoaded ist in diesem Fall unser Handler für den Fall, dass das Laden von WorldAnchorStore abgeschlossen wurde:
 
 ```cs
 private void StoreLoaded(WorldAnchorStore store)
@@ -195,6 +197,6 @@ for (int index = 0; index < ids.Length; index++)
 
 Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> verwenden, um einen permanenten Cloudanker aus einem lokalen WorldAnchor zu erstellen, den Ihre App dann auf mehreren HoloLens-, iOS- und Android-Geräten finden kann, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.  Da Cloudanker persistent sind, können mehrere Geräte im Laufe der Zeit jeweils Inhalte sehen, die relativ zu diesem Anker an demselben physischen Ort gerendert werden.
 
-Probieren Sie die fünfminütigen <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity-Schnellstarts</a>aus, um mit dem Erstellen von gemeinsamen Erfahrungen in Unity zu beginnen.
+Probieren Sie die fünfminütigen <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure Spatial Anchors Unity-Schnellstarts</a>aus, um mit dem Erstellen freigegebener Erfahrungen in Unity zu beginnen.
 
 Sobald Sie mit Azure Spatial Anchors ausgeführt werden, können Sie <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">Anker in Unity erstellen und suchen.</a>

@@ -6,25 +6,26 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens, Synchronisieren, Raumanker, Übertragung, Multiplayer, Ansicht, Szenario, exemplarische Vorgehensweise, Beispielcode, Azure, Azure Spatial Anchors, ASA
-ms.openlocfilehash: df78d9e2477fe377d61d2f2c13fc35e0a25b0b2cc37eeb883a69d2041fe42f9b
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6b1b98539c05849064f1c33ed859bc925ed5fd31
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193544"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244318"
 ---
+<!--Unity Note: No Unity specific content in this article. -->
 # <a name="shared-experiences-in-directx"></a>Gemeinsame Erfahrungen in DirectX
 
 > [!NOTE]
-> Dieser Artikel bezieht sich auf die nativen WinRT-Legacy-APIs.  Für neue native App-Projekte wird die Verwendung der **[OpenXR-API](../native/openxr-getting-started.md)** empfohlen.
+> Dieser Artikel bezieht sich auf die älteren nativen WinRT-APIs.  Für neue native App-Projekte wird die Verwendung der **[OpenXR-API](../native/openxr-getting-started.md)** empfohlen.
 
-Eine gemeinsame Benutzeroberfläche ist eine, bei der mehrere Benutzer mit ihrem eigenen HoloLens,iOS- oder Android-Gerät gemeinsam das gleiche Hologramm anzeigen und mit ihnen interagieren. Das Hologramm wird mithilfe der Räumlichen Ankerfreigabe an einem festen Punkt im Raum positioniert.
+Eine gemeinsame Benutzeroberfläche ist eine, bei der mehrere Benutzer mit ihren eigenen HoloLens,iOS- oder Android-Geräten gemeinsam das gleiche Hologramm anzeigen und mit ihnen interagieren. Das Hologramm wird mithilfe der Räumlichen Ankerfreigabe an einem festen Punkt im Raum positioniert.
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
 Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> verwenden, um dauerhafte cloudbasierte Raumanker zu erstellen, die Ihre App dann auf mehreren HoloLens-, iOS- und Android-Geräten finden kann.  Durch die gemeinsame Nutzung eines gemeinsamen Raumankers auf mehreren Geräten kann jeder Benutzer sehen, dass Inhalte relativ zu diesem Anker an demselben physischen Ort gerendert werden.  Dies ermöglicht gemeinsame Erfahrungen in Echtzeit.
 
-Sie können <a href="/azure/spatial-anchors/overview" target="_blank">azure Spatial Anchors</a> auch für asynchrone Hologrammpersistenz auf HoloLens-, iOS- und Android-Geräten verwenden.  Durch die gemeinsame Nutzung eines permanenten Cloudraumankers können mehrere Geräte das gleiche persistente Hologramm im Laufe der Zeit beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
+Sie können <a href="/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> auch für asynchrone Hologrammpersistenz auf HoloLens-, iOS- und Android-Geräten verwenden.  Durch die gemeinsame Nutzung eines permanenten Cloudraumankers können mehrere Geräte das gleiche persistente Hologramm im Laufe der Zeit beobachten, auch wenn diese Geräte nicht gleichzeitig vorhanden sind.
 
 Probieren Sie die fünfminütige <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure Spatial Anchors HoloLens-Schnellstartanleitung</a>aus, um mit dem Erstellen von freigegebenen Erfahrungen in Ihrer HoloLens-App zu beginnen.
 

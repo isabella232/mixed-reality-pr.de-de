@@ -2,61 +2,61 @@
 title: Interaktionsfähiges Objekt
 description: Erfahren Sie, wie Sie Ereignisse auslösen, visuelle Hinweise bereitstellen und mit Objekten in Ihren Mixed Reality-Anwendungen interagieren.
 author: cre8ivepark
-ms.author: v-hferrone
+ms.author: dongpark
 ms.date: 06/06/2019
 ms.topic: article
-keywords: Mixed Reality, Steuerelemente, Interaktion, Hinweise, Ui, UX, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Audio
-ms.openlocfilehash: 9ce682de7e400eba6ffbaccbca34065a1f09966f842cffd6853f3a064f146904
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: Mixed Reality, Steuerelemente, Interaktion, Hinweise, Ui, ux, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, HoloLens, MRTK, Mixed Reality Toolkit, Audio
+ms.openlocfilehash: f1fe68c7f35fecb9fbee888893fb15a83a8595ec
+ms.sourcegitcommit: 4f1697b11e5638db9bbd0bd7a671d846d54c6389
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190751"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "122682998"
 ---
 # <a name="interactable-object"></a>Interaktionsfähiges Objekt
 
-![Interagierbare Objekte](images/UX_Hero_Interactable.jpg)
+![Interaktivierbare Objekte](images/UX_Hero_Interactable.jpg)
 
-Eine Schaltfläche ist schon lange eine Symbolmetapher, die zum Auslösen eines Ereignisses in der abstrakten 2D-Welt verwendet wird. In der dreidimensionalen Mixed Reality-Welt müssen wir uns nicht mehr auf diese Welt der Abstraktion beschränken. Alles kann ein **interaktionsfähiges Objekt sein,** das ein Ereignis auslöst. Ein interaktionsfähiges Objekt kann von einer Kaffeetasse auf einem Tisch bis zu einem Sprechblasen in der Luft sein. In bestimmten Fällen, z. B. in der Dialogbenutzeroberfläche, werden weiterhin herkömmliche Schaltflächen verwendet. Die visuelle Darstellung der Schaltfläche hängt vom Kontext ab.
+Eine Schaltfläche ist seit langem eine Metapher zum Auslösen eines Ereignisses in der abstrakten 2D-Welt. In der dreidimensionalen Mixed Reality-Welt müssen wir uns nicht mehr auf diese Abstraktionswelt beschränken. Alles kann ein **interaktionsfähiges Objekt** sein, das ein Ereignis auslöst. Ein interaktives Objekt kann alles sein, von einer Kaffeetasse auf einem Tisch bis hin zu einem Luftballon in der Luft. Wir verwenden weiterhin herkömmliche Schaltflächen in bestimmten Situationen, z. B. in der Benutzeroberfläche des Dialogs. Die visuelle Darstellung der Schaltfläche hängt vom Kontext ab.
 
 <br>
 
 ---
 
-## <a name="important-properties-of-the-interactable-object"></a>Wichtige Eigenschaften des interagierbaren Objekts
+## <a name="important-properties-of-the-interactable-object"></a>Wichtige Eigenschaften des interaktivierbaren Objekts
 
 ### <a name="visual-cues"></a>Visuelle Hinweise
 
-Visuelle Hinweise sind sensorische Hinweise vom Licht, die vom Auge empfangen und während der visuellen Wahrnehmung vom visuellen System verarbeitet werden. Da das visuelle System in vielen Arten, insbesondere bei Menschen, dominant ist, stellen visuelle Hinweise eine große Informationsquelle für die Wahrnehmung der Welt dar.
+Visuelle Hinweise sind sensorische Hinweise von Licht, die vom Auge empfangen und während der visuellen Wahrnehmung vom visuellen System verarbeitet werden. Da das visuelle System bei vielen Arten, insbesondere menschen, vorherrschend ist, sind visuelle Hinweise eine große Informationsquelle für die Wahrnehmung der Welt.
 
-Da die holografischen Objekte mit der realen Umgebung in Mixed Reality kombiniert werden, kann es schwierig sein, zu verstehen, mit welchen Objekten Sie interagieren können. Für alle interagierbaren Objekte in Ihrer Erfahrung ist es wichtig, für jeden Eingabezustand differenzierte visuelle Hinweise zu bieten. Dies hilft dem Benutzer zu verstehen, welcher Teil Ihrer Benutzeroberfläche interagierbar ist, und macht den Benutzer mithilfe einer konsistenten Interaktionsmethode sicher.
+Da die holografischen Objekte mit der realen Umgebung in Mixed Reality kombiniert werden, kann es schwierig sein, zu verstehen, mit welchen Objekten Sie interagieren können. Für alle interaktiven Objekte in Ihrer Benutzeroberfläche ist es wichtig, für jeden Eingabezustand differenzierte visuelle Hinweise bereitzustellen. Dies hilft dem Benutzer zu verstehen, welcher Teil Ihrer Benutzeroberfläche interagierbar ist, und macht den Benutzer mithilfe einer konsistenten Interaktionsmethode sicher.
 
 <br>
 
 ---
 
-### <a name="far-interactions"></a>Ferninteraktionen
+### <a name="far-interactions"></a>Far-Interaktionen
 
-Für alle Objekte, die der Benutzer mit dem Anvisieren, dem Handstrahl und dem Ray des Bewegungscontrollers interagieren kann, wird empfohlen, für diese drei Eingabezustände unterschiedliche visuelle Hinweise zu verwenden:
+Für alle Objekte, die Der Benutzer mit Anvieren, Handstrahl und Dem Strahl des Bewegungscontrollers interagieren kann, empfiehlt es sich, unterschiedliche visuelle Hinweise für diese drei Eingabezustände zu verwenden:
 
 :::row:::
     :::column:::
-       ![Interagierbares Objekt mit Standardzustand](images/interactibleobject-states-default.jpg)<br>
+       ![Interaktivierbares Objekt mit Standardzustand](images/interactibleobject-states-default.jpg)<br>
        **Standardzustand (Beobachtung)**<br>
-        Standard leerer Zustand des Objekts.
-    Der Cursor befindet sich nicht auf dem -Objekt. Hand wird nicht erkannt.
+        Standardzustand des Objekts im Leerlauf.
+    Der Cursor befindet sich nicht im -Objekt. Hand wird nicht erkannt.
     :::column-end:::
     :::column:::
-       ![Interagierbares Objekt mit Ziel- und Hoverzustand](images/interactibleobject-states-targeted.jpg)<br>
+       ![Interaktivierbares Objekt mit Ziel- und Mauszeigerzustand](images/interactibleobject-states-targeted.jpg)<br>
         **Zielzustand (Hover)**<br>
-        Wenn das Objekt mit dem Anvitätscursor, der Fingernähe oder dem Bewegungscontrollerzeiger als Ziel verwendet wird.
-    Der Cursor befindet sich auf dem -Objekt. Hand ist erkannt, bereit.
+        Wenn das Objekt mit dem Anvisierten cursor, finger proximity oder motion controller es pointer (Zeiger des Bewegungscontrollers) als Ziel verwendet wird.
+    Der Cursor befindet sich im -Objekt. Hand wird erkannt, bereit.
     :::column-end:::
     :::column:::
-       ![Interagierbares Objekt mit gedrückter Zustand](images/interactibleobject-states-pressed.jpg)<br>
+       ![Interaktivierbares Objekt mit gedrücktem Zustand](images/interactibleobject-states-pressed.jpg)<br>
        **Gedrückter Zustand**<br>
-        Wenn das Objekt mit einer Tippbewegung in die Luft gedrückt wird, drücken Sie den Finger, oder drücken Sie die Auswahltaste des Bewegungscontrollers.
-    Der Cursor befindet sich auf dem -Objekt. Hand wird erkannt, Luft angetippt.
+        Wenn das Objekt mit einer Geste zum Tippen in die Luft gedrückt wird, drücken Sie den Finger oder die Auswahlschaltfläche des Bewegungscontrollers.
+    Der Cursor befindet sich im -Objekt. Die Hand wird erkannt, die Luft wird angetippt.
     :::column-end:::
 :::row-end:::
 
@@ -64,9 +64,9 @@ Für alle Objekte, die der Benutzer mit dem Anvisieren, dem Handstrahl und dem R
 
 ---
 
-Sie können Techniken wie Hervorhebung oder Skalierung verwenden, um visuelle Hinweise für den Eingabezustand des Benutzers zu bieten. In Mixed Reality finden Sie Beispiele für die Visualisierung verschiedener Eingabezustände auf dem Startmenü und mit App-Leistenschaltflächen. 
+Sie können Techniken wie Hervorhebung oder Skalierung verwenden, um visuelle Hinweise für den Eingabezustand des Benutzers bereitzustellen. In Mixed Reality finden Sie Beispiele für die Visualisierung verschiedener Eingabezustände auf dem Startmenü und mit Schaltflächen auf der App-Leiste. 
 
-Diese Zustände sehen auf einer **holografischen Schaltfläche wie hier aus:**
+Diese Zustände sehen auf einer **holografischen Schaltfläche** wie folgt aus:
 
 :::row:::
     :::column:::
@@ -74,7 +74,7 @@ Diese Zustände sehen auf einer **holografischen Schaltfläche wie hier aus:**
        **Standardzustand (Beobachtung)**<br>
     :::column-end:::
     :::column:::
-       ![Holografische Schaltfläche im Ziel- und Hoverzustand](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![Holografische Schaltfläche im Ziel- und Mauszeigerzustand](images/MRTK_InteractableState-targeted.jpg)<br>
         **Zielzustand (Hover)**<br>
     :::column-end:::
     :::column:::
@@ -89,15 +89,15 @@ Diese Zustände sehen auf einer **holografischen Schaltfläche wie hier aus:**
 
 ### <a name="near-interactions-direct"></a>Nahinteraktionen (direkt) 
 
-HoloLens 2 unterstützt artikulierte Handtrackingeingaben, mit denen Sie mit Objekten interagieren können. Ohne planloses Feedback und perfekte Tiefenempfinden kann es schwierig sein zu erkennen, wie weit Ihre Hand von einem Objekt entfernt ist oder ob Sie es berühren. Es ist wichtig, genügend visuelle Hinweise zu liefern, um den Zustand des Objekts zu kommunizieren, insbesondere den Zustand Ihrer Hände basierend auf diesem Objekt.
+HoloLens 2 unterstützt artikulierte Eingaben für die Handnachverfolgung, mit denen Sie mit Objekten interagieren können. Ohne haptisches Feedback und perfekte Tiefenerkennung kann es schwierig sein, zu erkennen, wie weit Ihre Hand von einem Objekt entfernt ist oder ob Sie es berühren. Es ist wichtig, genügend visuelle Hinweise bereitzustellen, um den Zustand des Objekts zu kommunizieren, insbesondere den Zustand Ihrer Hände basierend auf diesem Objekt.
 
 Verwenden Sie visuelles Feedback, um die folgenden Zustände zu kommunizieren:
-* **Standard (Beobachtung):** Standardmäßiger Leerlaufzustand des Objekts.
-* **Hover:** Wenn sich eine Hand in der Nähe eines Hologramms befindet, ändern Sie visuals, um zu kommunizieren, dass die Hand auf Hologramm zielt. 
-* **Abstand und Interaktionspunkt:** Wenn sich die Hand einem Hologramm nähert, entwerfen Sie Feedback, um den projizierten Interaktionspunkt und die Entfernung des Fingers zum Objekt zu kommunizieren.
-* **Kontakt beginnt:** Visuelle Elemente (Hell, Farbe) ändern, um zu kommunizieren, dass eine Berührung erfolgt ist
-* **Verstanden:** Visuelle Elemente (Licht, Farbe) ändern, wenn das Objekt erfasst wird
-* **Kontakt endet:** Visuelle Elemente (Hell, Farbe) ändern, wenn die Berührung beendet wurde
+* **Standard (Beobachtung):** Standard-Leerlaufzustand des Objekts.
+* **Zeigen Sie** auf : Wenn sich eine Hand in der Nähe eines Hologramms befindet, ändern Sie visuals, um zu kommunizieren, dass die Hand hologrammzielt. 
+* **Abstand und Interaktionspunkt:** Wenn sich die Hand einem Hologramm nähert, entwerfen Sie Feedback, um den projizierten Interaktionspunkt zu kommunizieren und wie weit der Finger vom Objekt entfernt ist.
+* **Kontakt beginnt:** Ändern von Visuals (Hell, Farbe), um zu kommunizieren, dass eine Berührung aufgetreten ist
+* **Erfasst:** Ändern von Visuals (Hell, Farbe), wenn das Objekt erfasst wird
+* **Kontakt endet:** Visuals ändern (Hell, Farbe), wenn die Berührung beendet wurde
 
 <br>
 
@@ -105,27 +105,27 @@ Verwenden Sie visuelles Feedback, um die folgenden Zustände zu kommunizieren:
 
 :::row:::
     :::column:::
-        ![Hover (Far)](images/640px-interactibleobject-states-near-hover.jpg)<br>
-        **Hover (Far)**<br>
+        ![Zeigen mit dem Mauszeiger (weit)](images/640px-interactibleobject-states-near-hover.jpg)<br>
+        **Zeigen mit dem Mauszeiger (weit)**<br>
         Hervorhebung basierend auf der Nähe der Hand.
     :::column-end:::
     :::column:::
-        ![Hover (Near) (Hover (Nah))](images/640px-interactibleobject-states-near-hovernear.jpg)<br>
-        **Hover (Near) (Hover (Nah))**<br>
-        Hervorheben von Größenänderungen basierend auf dem Abstand zur Hand.
+        ![Zeigen mit dem Mauszeiger (nah)](images/640px-interactibleobject-states-near-hovernear.jpg)<br>
+        **Bewegen des Mauszeigers (nah)**<br>
+        Heben Sie Größenänderungen basierend auf dem Abstand zur Hand hervor.
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-        ![Touch/Drücken](images/640px-interactibleobject-states-near-press.jpg)<br>
-        **Touch/Drücken**<br>
-        Visuelles Feedback und Audiofeedback.
+        ![Toucheingabe/Drücken](images/640px-interactibleobject-states-near-press.jpg)<br>
+        **Toucheingabe/Drücken**<br>
+        Visuelles und Audiofeedback.
     :::column-end:::
     :::column:::
         ![Begreifen](images/640px-interactibleobject-states-near-grasp.jpg)<br>
         **Begreifen**<br>
-        Visuelles Feedback und Audiofeedback.
+        Visuelles und Audiofeedback.
     :::column-end:::
 :::row-end:::
 
@@ -153,12 +153,12 @@ Eine [Schaltfläche auf HoloLens 2](/windows/mixed-reality/mrtk-unity/features/u
     :::column:::
         ![Toucheingabe](images/640px-interactibleobject-pressablebutton-touch.jpg)<br>
         **Toucheingabe**<br>
-        Anzeigen des Effekts "Show".
+        Show effect (Effekt "Welleneffekt anzeigen").
     :::column-end:::
     :::column:::
         ![Tastenkombination](images/640px-interactibleobject-pressablebutton-press.jpg)<br>
         **Tastenkombination**<br>
-        Verschieben Sie die vordere Platte.
+        Verschieben Sie die Vorderseite.
     :::column-end:::
 :::row-end:::
 
@@ -168,14 +168,14 @@ Eine [Schaltfläche auf HoloLens 2](/windows/mixed-reality/mrtk-unity/features/u
 
 :::row:::
     :::column:::
-        ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Der visuelle Hinweis "ring" auf HoloLens 2<br>
-        Auf HoloLens 2 gibt es einen zusätzlichen visuellen Hinweis, der den Benutzer bei der Wahrnehmung der Tiefe unterstützen kann. Ein Ring in der Nähe der Fingerspitze wird angezeigt und skaliert herunter, wenn sich die Fingerspitze dem Objekt nähert. Der Ring konvergiert schließlich zu einem Punkt, wenn der gedrückte Zustand erreicht wird. Dieses visuelle Modell hilft dem Benutzer zu verstehen, wie weit er vom Objekt entfernt ist.<br>
+        ### <a name="the-ring-visual-cue-on-hololens-2br"></a>Der visuelle Hinweis "Ring" auf HoloLens 2<br>
+        Auf HoloLens 2 gibt es einen zusätzlichen visuellen Hinweis, der dem Benutzer bei der Wahrnehmung der Tiefe helfen kann. Ein Ring in der Nähe der Fingerspitze wird nach oben angezeigt und herunterskaliert, wenn sich die Fingerspitze dem Objekt nähert. Der Ring konvergiert schließlich zu einem Punkt, wenn der gedrückte Zustand erreicht wird. Dieses visuelle Erscheinungsbild hilft dem Benutzer zu verstehen, wie weit er vom Objekt entfernt ist.<br>
         <br>
         *Videoschleife: Beispiel für visuelles Feedback basierend auf der Nähe zu einem Begrenzungsfeld*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![Visuelles Feedback zur Nähe](images/HoloLens2_Proximity.gif)<br>
+       ![Visuelles Feedback zur Handnähe](images/HoloLens2_Proximity.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -185,13 +185,13 @@ Eine [Schaltfläche auf HoloLens 2](/windows/mixed-reality/mrtk-unity/features/u
 ---
 
 
-### <a name="audio-cues"></a>Audio-Hinweise
+### <a name="audio-cues"></a>Audiohinweise
 
 Bei direkten Handinteraktionen kann das richtige Audiofeedback die Benutzerfreundlichkeit erheblich verbessern. Verwenden Sie Audiofeedback, um die folgenden Hinweise zu kommunizieren:
-* **Kontakt beginnt:** Sound wiedererlangen, wenn die Berührung beginnt
-* **Kontakt endet:** Sound auf Touch-End wiedererlangen
-* **Grab beginnt:** Sound beim Starten des Greifs wiedererlangen
-* **Enden des Greifs:** Sound wiedererlangen, wenn der Greif beendet wird
+* **Kontakt beginnt:** Sound wiedergeben, wenn die Berührung beginnt
+* **Kontakt endet:** Sound auf Touch-Ende wiedergeben
+* **Greifen beginnt:** Sound wiedergeben, wenn der Grabbing gestartet wird
+* **Ende der Nahme:** Sound wiedergeben, wenn die Grabbing-Klammer endet
 
 <br>
 
@@ -200,9 +200,9 @@ Bei direkten Handinteraktionen kann das richtige Audiofeedback die Benutzerfreun
 :::row:::
     :::column:::
         ### <a name="voice-commandingbr"></a>Sprachbefehle<br>
-        Für alle interagierbaren Objekte ist es wichtig, alternative Interaktionsoptionen zu unterstützen. Standardmäßig wird empfohlen, [Sprachbefehle](../out-of-scope/voice-design.md) für alle Objekte zu unterstützen, die interagierbar sind. Um die Aufmittelbarkeit zu verbessern, können Sie auch eine QuickInfo während des Hoverzustands bereitstellen.<br>
+        Für alle interaktivierbaren Objekte ist es wichtig, alternative Interaktionsoptionen zu unterstützen. Standardmäßig wird empfohlen, [sprachgesteuerte Befehle](../out-of-scope/voice-design.md) für alle Objekte zu unterstützen, die interaktiv sind. Um die Auffindbarkeit zu verbessern, können Sie auch während des Mauszeigerzustands eine QuickInfo bereitstellen.<br>
         <br>
-        *Abbildung: QuickInfo für den Sprachbefehl*
+        *Bild: QuickInfo für den Sprachbefehl*
     :::column-end:::
         :::column:::
        ![Sprachbefehle](images/640px-interactibleobject-voicecommand.png)<br>
@@ -222,30 +222,18 @@ Im Folgenden finden Sie die Empfehlungen für die Mindestgröße von interaktion
 
 ### <a name="target-size-for-direct-hand-interaction"></a>Zielgröße für direkte Handinteraktion
 
-| Entfernung | Betrachtungswinkel | Size |
+| Distance | Betrachtungswinkel | Size |
 |---------|---------|---------|
 | 45 cm  | nicht kleiner als 2° | 1,6 x 1,6 cm |
 
 ![Zielgröße für direkte Handinteraktion](images/TargetSizingNear.jpg)<br>
 *Zielgröße für direkte Handinteraktion*
 
-<br>
-
-### <a name="target-size-for-buttons"></a>Zielgröße für Schaltflächen
-
-Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir eine größere Mindestgröße von 3,2 x 3,2 cm, um sicherzustellen, dass ausreichend Platz für ein Symbol und möglicherweise Text vorhanden ist.
-
-| Entfernung | Mindestgröße |
-|---------|---------|
-| 45 cm  | 3,2 x 3,2 cm |
-
-![Zielgröße für die Schaltflächen](images/TargetSizingButtons.png)<br>
-*Zielgröße für die Schaltflächen*
 
 <br>
 
 ### <a name="target-size-for-hand-ray-or-gaze-interaction"></a>Zielgröße für Handstrahl- oder Anvizeinteraktion
-| Entfernung | Betrachtungswinkel | Size |
+| Distance | Betrachtungswinkel | Size |
 |---------|---------|---------|
 | 2 m  | nicht kleiner als 1° | 3,5 x 3,5 cm |
 
@@ -258,11 +246,11 @@ Beim Erstellen von Schaltflächen für die direkte Interaktion empfehlen wir ein
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>Interagierbares Objekt im MRTK (Mixed Reality Toolkit) für Unity
 
-In **[MRTK können](https://github.com/Microsoft/MixedRealityToolkit-Unity)** Sie das Skript [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) verwenden, damit Objekte auf verschiedene Typen von Eingabeinteraktionszuständen reagieren. Es unterstützt verschiedene Arten von Designs, mit denen Sie visuelle Zustände definieren können, indem Sie Objekteigenschaften wie Farbe, Größe, Material und Shader steuern.
+In **[MRTK können](https://github.com/Microsoft/MixedRealityToolkit-Unity)** Sie das Skript [**Interactable**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) verwenden, um Objekte auf verschiedene Typen von Eingabeinteraktionszuständen reagieren zu lassen. Es unterstützt verschiedene Arten von Designs, mit denen Sie visuelle Zustände definieren können, indem Sie Objekteigenschaften wie Farbe, Größe, Material und Shader steuern.
 
 * [Interaktionsfähig](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
 * [Schaltfläche](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
-* [Szene mit Beispielen für die Handinteraktion](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
+* [Handinteraktionsbeispiele (Szene)](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 Der Standard-Shader von MixedRealityToolkit  bietet verschiedene Optionen, z. B. näherungslicht, das Ihnen hilft, visuelle und Audio-Hinweise zu erstellen.
 
