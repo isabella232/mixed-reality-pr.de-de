@@ -1,107 +1,98 @@
 ---
 title: Profilerstellung mit Unreal Insights
-description: Erfahren Sie, wie Sie Unreal Insights auf HoloLens 2 verwenden.
+description: Erfahren Sie, wie Sie Unreal Insights auf HoloLens 2.
 author: sajidfarooq
 ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Entwicklung, Anstößige, unreale Einblicke, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
-ms.openlocfilehash: a13655f394b4d2531ab2ae99ee21ebe9185ebe227ef07a16e3ca54eae9375ee2
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Entwicklung, profling, Unreal Insights, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset
+ms.openlocfilehash: a77d7795cd7e8c281ebaa2ef89bb6bc9152f5f9c
+ms.sourcegitcommit: 5d13ff165f4d08a3b028935fb39539a45a30f7e8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115228598"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779385"
 ---
-# <a name="profiling-with-unreal-insights"></a>Profilerstellung mit Unreal Insights 
+# <a name="profiling-with-unreal-insights"></a>Profilerstellung mit Unreal Insights
 
-[Unreal Insights](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) ist ein Profilerstellungssystem, das Daten von der Unreal-Engine sammelt, analysiert und visualisiert. Das Profilerstellungssystem kann Ihnen dabei helfen, Optimierungsengpässe und Bereiche zu finden, in denen die Leistung Ihrer Apps einen Leistungsschub erzielen kann. Normalerweise aktivieren Sie Unreal Insights direkt über den Editor, aber für HoloLens 2 müssen Sie die Befehlszeile verwenden.  
+[Unreal Insights](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) ist ein Profilerstellungssystem, das Daten von der Unreal Engine sammelt, analysiert und visualisiert. Das Profilerstellungssystem kann Ihnen helfen, Optimierungsengpässe und Bereiche zu finden, in denen die Leistung Ihrer Apps einen Schub nutzen könnte. Normalerweise aktivieren Sie unreal Insights direkt über den Editor, aber für HoloLens 2 müssen Sie die Befehlszeile verwenden.
 
-## <a name="setup"></a>Setup
+## <a name="setup"></a>Einrichten
 
-Mit Unreal können Sie ein benutzerdefiniertes Profil im starter HoloLens mit den Befehlszeilenparametern erstellen und konfigurieren, die Unreal Insights aktivieren.
+Mit Unreal können Sie ein "benutzerdefiniertes Profil" im HoloLens-Startfeld mit den Befehlszeilenparametern erstellen und konfigurieren, die unreal Insights.
 
-1.  Suchen Sie die IP-Adresse Ihres Computers mithilfe des Befehls **ipconfig** an der Eingabeaufforderung. Die IP-Adresse ist die IPv4-Adresse, die von ipconfig aufgelistet wird. Beachten Sie dies für einen späteren Zeitpunkt, wenn Sie Befehlszeilenparameter festlegen.
+1. Suchen Sie die IP-Adresse Ihres Computers mithilfe des **Befehls ipconfig** an der Eingabeaufforderung. Die IP-Adresse ist die IPv4-Adresse, die von ipconfig aufgelistet wird. Beachten Sie dies zu einem späteren Zeitpunkt, wenn Sie Befehlszeilenparameter festlegen.
 
 > [!IMPORTANT]
-> Wenn Sie sich hinter einem VPN befindet, müssen Sie möglicherweise stattdessen die ip-Adresse angeben, die über das VPN bereitgestellt wird.
+> Wenn Sie sich hinter einem VPN befingen, müssen Sie möglicherweise stattdessen die über das VPN bereitgestellte IP-Adresse angeben.
 
 ![Screenshot der Befehlszeilenergebnisse für den Befehl "ipconfig"](images/unreal-insights-img-01.png)
 
-2.  Wechseln Sie zum oberen Rand des Unreal Engine-Bereichs, und öffnen **Sie Geräte-Manager** unter der Schaltfläche **Starten:**
+2. Öffnen **Project Einstellungen** der Symbolleiste "Bearbeiten" im Haupt-Editor-Fenster.
 
-![Screenshot der Startoptionen mit hervorgehobener Option "Geräte-Manager"](images/unreal-insights-img-02.png)
+![Screenshot der Dropdownliste "Bearbeiten" mit Project Einstellungen hervorgehoben](images/unreal-insights-img-15.png)
 
-3.  Wählen Sie im Geräte-Manager die Option **Nicht aufgelistetes Gerät hinzufügen** aus:
+3. Scrollen Sie im linken Bereich nach unten, bis Sie den **Header Plattformen** finden, und wählen **Sie HoloLens.**
 
-![Screenshot: Geöffneter Geräte-Manager in der Unreal-Engine](images/unreal-insights-img-03.png)
+![Screenshot des Abschnitts "Plattformen" im linken Project Einstellungen mit hervorgehobener HoloLens](images/unreal-insights-img-15.png)
 
-4. Klicken Sie auf **Plattform auswählen,** und wählen Sie **HoloLens** aus:
+4. Vergewissern Sie **sich, dass** im Abschnitt Funktionen die Option "Internetclient", "Internetclientserver" und "Clientserver für private Netzwerke" ausgewählt sind.
 
-![Screenshot der Dropdownliste "Nicht aufgelistetes Gerät hinzufügen" mit hervorgehobener HoloLens](images/unreal-insights-img-04.png)
-
-5.  Wenn Sie IPoverUSB verwenden, geben Sie 127.0.0.1:10080 als Gerätebezeichner ein. Geben Sie Ihren HoloLens Benutzer und ihr Kennwort in die entsprechenden Felder ein, und geben Sie **den Anzeigenamen** nach Belieben ein.
-
-> [!IMPORTANT]
-> Der Gerätebezeichner ist die IP-Adresse des HoloLens, NICHT des Computers, auf dem Unreal ausgeführt wird, Insights Sie in Schritt 1 gefunden haben.
-
-![Screenshot von HoloLens Gerätedetails im Geräte-Manager](images/unreal-insights-img-05.png)
-
-6.  Wählen Sie **Hinzufügen** aus, und Ihre HoloLens sollte in der Geräteliste des Geräte-Managers angezeigt werden:
-
-![Screenshot: HoloLens der Geräteliste hinzugefügt](images/unreal-insights-img-06.png)
+![Screenshot der Optionen "Funktionen" mit ausgewählter Option "Internetclient", "Internetclientserver" und "Clientserver für private Netzwerke"](images/unreal-insights-img-14.png)
 
 ## <a name="launch"></a>Starten
 
-1. Öffnen **Sie Project Startprogramm** im Bereich UE4 unter der Schaltfläche **Starten:**
+1. Öffnen **Project Startprogramm** im UE4-Bereich unter der **Schaltfläche Starten:**
 
-![Screenshot der Startoptionen mit hervorgehobener Projektstartoption](images/unreal-insights-img-07.png)
+![Screenshot der Startoptionen mit hervorgehobener Projektstarter](images/unreal-insights-img-07.png)
 
-2. Wählen Sie die **+** Schaltfläche aus, um unter **Benutzerdefinierte Startprofile** ein benutzerdefiniertes Profil zu erstellen. Nach der Erstellung können Sie dieses Profil später jederzeit bearbeiten:
+2. Wählen Sie die **+** Schaltfläche aus, um unter Benutzerdefinierte Startprofile ein **benutzerdefiniertes Profil zu erstellen.** Nach dem Erstellen können Sie dieses Profil später immer bearbeiten:
 
 ![Screenshot des Projektstarters mit hervorgehobenen benutzerdefinierten Startprofilen](images/unreal-insights-img-08.png)
 
-3. Wählen Sie auf dem HoloLens benutzerdefinierten Startprofil die Schaltfläche **Profil bearbeiten** aus, und konfigurieren Sie Folgendes:
-    * Wählen Sie **Cook** to **By the Book** aus, um das Kopieren auf das Gerät zu aktivieren.
-    * Möglicherweise sollten Sie im Abschnitt **Archiv** die Überprüfung **Möchten Sie archivieren?** aktivieren, um die generierte APPXBUNDLE-Datei beizubehalten, anstatt sie zu löschen, um Speicherplatz zu sparen. Geben Sie einen Speicherort für die APPXBUNDLE-Datei an, und wechseln Sie bei Bedarf zu einem Entwicklungsbuild.
-
-![Screenshot der Cookoptionen in der Profilkonfiguration mit Cook durch das Buch und hervorgehobener HoloLens](images/unreal-insights-img-09.png)
-
-4. Legen **Sie Wie möchten Sie den Build bereitstellen?** auf Auf Gerät kopieren **fest,** um den Abschnitt **Starten** der Benutzeroberfläche zu aktivieren:
-
-![Screenshot des Projektstarters mit hervorgehobenen Bereitstellungsoptionen mit hervorgehobener Option "Auf Gerät kopieren"](images/unreal-insights-img-10.png)
-
-5. Legen Sie **zusätzliche Befehlszeilenparameter** im Abschnitt **Launch** fest. Die Parameter werden in eine ue4commandline.txt-Datei geschrieben, in das Paket gepackt und beim Start verwendet. 
-    <!-- TODO: Need more detail on what this parameter does and where to find others. -->
-    * Probieren Sie diese zunächst aus: **-tracehost=IP_OF_YOUR_PC -trace=Log,Bookmark,Frame,CPU,GPU,LoadTime,File,Net**
-    * Eine vollständige Liste der verfügbaren Startparameter finden Sie in der Referenzdokumentation zu [Unreal Insights](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Reference/index.html).
+3. Wählen **Sie im benutzerdefinierten** Startprofil HoloLens Schaltfläche Profil bearbeiten aus. Aktivieren Sie **im Abschnitt Build** das Kontrollkästchen Build **UAT,** und legen Sie **zusätzliche Befehlszeilenparameter fest.**
+   - Probieren Sie die folgenden Schritte aus: **-tracehost=IP_OF_YOUR_PC -trace=Log,Bookmark,Frame,CPU,GPU,LoadTime,File,Net**
+   - Eine vollständige Liste der verfügbaren Startparameter finden Sie in der [Unreal-Insights Referenzdokumentation.](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Reference/index.html)
 
 > [!NOTE]
-> "IP_OF_YOUR_PC" ist die IP-Adresse, die wir in Schritt 1 gefunden haben. Dies ist die IP-Adresse des Computers, auf dem Unreal Insights ausgeführt wird, NICHT die IP-Adresse des HoloLens.
+> "IP_OF_YOUR_PC" ist die IP-Adresse, die wir in Schritt 1 gefunden haben. Dies ist die IP-Adresse des Computers, auf dem Unreal Insights, NICHT die IP-Adresse des HoloLens.
 
 > [!IMPORTANT]
 > Ablaufverfolgungen können sehr schnell groß werden. Aktivieren Sie nur die Kanäle, die Sie benötigen, um die Größe der Ablaufverfolgung gering zu halten.
 
-![Screenshot der Startkonfigurationsoptionen](images/unreal-insights-img-11.png)
+![Screenshot der Buildoptionen in der Profilkonfiguration](images/unreal-insights-img-17.png)
 
-6. Starten Sie Unreal Insights VOR dem Start der App, andernfalls kann Unreal Insights nicht ordnungsgemäß vor der App initialisiert werden:
-    * Die ausführbare Datei unreal Insights wird im Ordner der Binärdateien-Engine gespeichert, in der Regel wie folgt: "C:\Programme\Epic Games\UE_4.26\Engine\Binaries\Win64\UnrealInsights.exe"
+4. Wählen **Sie Cook** to By the Book **(Nach dem Buch)** aus, um das Kopieren auf das Gerät zu aktivieren. Vergewissern Sie sich, dass Ihre Karten in **Der Karten.**
 
-![Screenshot der ausführbaren Unreal Insights-Datei, die ausgeführt wird](images/unreal-insights-img-12.png)
+![Screenshot der Cookoptionen in der Profilkonfiguration mit "cook" im Buch und HoloLens hervorgehoben](images/unreal-insights-img-09.png)
 
-6.  Wählen Sie **Zurück** aus, um zum Stamm des **Dialogfelds "Project Startprogramm"** zurückzukehren.
-7.  Klicken Sie im Editor im benutzerdefinierten Startprofil auf **Starten.**
+5. Legen **Sie Wie möchten Sie den Build packen?** auf Paket & lokal **fest.** Notieren Sie sich den dateipfad, den Sie auswählen, da Sie diesen später benötigen.
+
+![Screenshot der Paketoptionen in der Profilkonfiguration, die auf "Lokal verpacken" und "lokal speichern" festgelegt sind](images/unreal-insights-img-18.png)
+
+6. Legen **Sie Wie möchten Sie den Build bereitstellen?** auf Nicht bereitstellen **fest.**
+
+![Screenshot der Bereitstellungsoptionen in der Profilkonfiguration, bei der die Bereitstellung auf "Nicht bereitstellen" festgelegt ist](images/unreal-insights-img-19.png)
+
+8. Wählen **Sie Zurück** aus, um zum Stammverzeichnis des Dialogfelds Project Startprogramm werden. 
+9. Klicken Sie im Editor auf **Starten für Ihr** benutzerdefiniertes Startprofil.
 
 ![Screenshot von benutzerdefinierten Startprofilen](images/unreal-insights-img-13.png)
 
-8.  Sehen Sie sich an, wie Ihr Projekt gepackt, auf Ihrem Gerät installiert und gestartet wird.
+10. Sehen Sie sich an, wie Ihr Projekt erstellt wird, und stellen Sie dann appxbundle (im Paketpfad aus Schritt 5) über das Geräteportal HoloLens App-App bereit.
+
+11. Starten Sie unreal Insights. Die ausführbare Insights unreal-Datei wird im Ordner der Binärdateien-Engine gespeichert, in der Regel wie folgt: "C:\Programme\Epic Games\UE_4.26\Engine\Binaries\Win64\UnrealInsights.exe"
+
+![Screenshot der ausführbaren Unreal Insights-Datei, die ausgeführt wird](images/unreal-insights-img-12.png)
+
+12. Starten Sie die App auf Ihrem HoloLens.
 
 ## <a name="profiling"></a>Profilerstellung
 
-Wählen Sie in Unreal Insights die **Liveverbindung** mit Ihrem Gerät aus, um die Profilerstellung zu starten.
+Wählen Sie in unreal Insights die **Liveverbindung** mit Ihrem Gerät aus, um die Profilerstellung zu starten.
 
-Das benutzerdefinierte Profil wird von Projekten gemeinsam genutzt. Von hier aus können Sie das von Ihnen erstellte benutzerdefinierte Profil verwenden, anstatt dies jedes Mal tun zu müssen. Sie müssen die Verbindung mit dem Gerät nur jedes Mal neu erstellen, wenn Sie Unreal mit den Schritten 3 bis 6 im [Setupabschnitt](#setup)starten.
+Das benutzerdefinierte Profil wird von Projekten gemeinsam genutzt. Von hier aus können Sie das von Ihnen erstellte benutzerdefinierte Profil verwenden, anstatt dies jedes Mal tun zu müssen. Sie müssen die Verbindung mit dem Gerät nur bei jedem Start von Unreal mit den Schritten 3 bis 6 im [Setupabschnitt neu erstellen.](#setup)
 
-## <a name="see-also"></a>Siehe auch
-* [Unreal Insights-Dokumentation](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/index.html)
+## <a name="see-also"></a>Weitere Informationen
 
+- [Unreal Insights Dokumentation](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/index.html)
