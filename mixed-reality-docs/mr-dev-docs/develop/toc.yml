@@ -372,7 +372,7 @@
           href: unreal/unreal-publishing-to-store.md
 - name: JavaScript
   items:
-    - name: JavaScript-Entwicklung – Übersicht
+    - name: JavaScript-Entwicklung mit WebXR
       href: javascript/webxr-overview.md
     - name: Tutorials
       items:
@@ -384,6 +384,14 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. Interagieren mit einem 3D-Objekt
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
+        - name: Erstellen eines Klaviers in WebXR mithilfe von babylon.js
+          items:
+            - name: 1. Einführung
+              href: javascript/tutorials/babylonjs-webxr-piano/introduction-01.md
+            - name: 2. Erstellen eines 3D-Klaviermodells
+              href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
+            - name: 3. Spielen des 3D-Klaviers
+              href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
 - name: Benutzerdefinierte Engine
   items:
     - name: Entwicklungsübersicht für benutzerdefinierte Engines
