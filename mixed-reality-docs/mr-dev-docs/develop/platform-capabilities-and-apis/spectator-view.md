@@ -7,14 +7,19 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Spectator View, iPhone, iOS, iPad, OpenCV, Kamera, ARKit, HoloLens, Mixed Reality, MixedRealityToolkit, Demo, aufzeichnen
-ms.openlocfilehash: 23f5dce85bdcd15e8950f5682814dec042bc604d7e983b17a5528949e51e844a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f30c745154056cda6b5ccf052efbbd0bb7f094ea
+ms.sourcegitcommit: 5d13ff165f4d08a3b028935fb39539a45a30f7e8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190514"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779463"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>Spectator View für HoloLens und HoloLens 2
+
+> [!WARNING]
+> Aufgrund von Inkompatibilitäten mit der Version des Azure Spatial Anchors SDK-Pakets, auf dem das Beispiel basiert, definiert Microsoft das Spectator View-Beispiel als veraltet. Darüber hinaus kann es geschehen, dass das Beispiel aufgrund anderer Änderungen in der Unity-Umgebung nicht mehr funktioniert, wenn Kunden auf unterstützte 2019 LTS-Builds umsteigen.
+>
+> Zwar investiert Microsoft derzeit keine Ressourcen zur Behebung der oben genannten Probleme, es kann aber möglich sein, die Azure Spatial Anchors-Funktionalität aus dem Beispiel zu entfernen und für die Ausrichtung auf Technologien wie QR-Codes zurückzugreifen.   Wenn Mitglieder der Community PRs übermitteln, um diese Probleme zu beheben, werden wir diese vorerst überprüfen und akzeptieren.
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
