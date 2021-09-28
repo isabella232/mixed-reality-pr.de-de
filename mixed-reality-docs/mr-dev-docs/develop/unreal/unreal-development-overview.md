@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Streaming, Remoting, Mixed Reality, Entwicklung, erste Schritte, Features, neues Projekt, Emulator, Dokumentation, Leitfäden, Features, Hologramme, Spieleentwicklung, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, OpenXR
-ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 90dfb113008e6f8b1162c068ebfc967ed74fd6b4
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115203467"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184668"
 ---
 # <a name="unreal-development-overview"></a>Unreal-Entwicklung – Übersicht
 
@@ -110,11 +110,9 @@ Die Entwicklung für Mixed Reality ist mit Leistungsprüfpunkten verbunden, die 
 | Kamerazugriff | 4.23 | ✔️ |
 | QR-Codes | 4.23 | ✔️ |
 | Räumliche Audiowiedergabe | 4.23 | ✔️ |
-| Zuschauerbildschirmunterstützung für Streaming | 4.24 |
 | Planar-LSR über Streaming | 4.24 |
 | [Beispiel-Apps](../features-and-samples.md) | 4.24 | ✔️ |
 | Mobile Multiansicht: Leistung erreicht 60 FPS | 4.25 | ✔️ |
-| Rendering der dritten Kamera | 4.25 | ✔️ |
 | Streaming aus einer verpackten Desktop-App | 4.25.1 | ✔️ |
 | Azure Spatial Anchors für HoloLens 2 | 4.25 | ✔️ |
 | Unterstützung von Mixed Reality UX Tools | 4.25 | ✔️ |
