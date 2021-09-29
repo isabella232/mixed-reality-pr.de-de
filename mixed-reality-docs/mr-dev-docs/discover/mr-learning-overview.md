@@ -2,17 +2,17 @@
 title: Mixed Reality Learn-Modul – Übersicht
 description: Bleiben Sie bei allen verfügbaren Mixed Reality-Modulen, die auf der Microsoft Learn-Plattform gehostet sind, auf dem Laufenden.
 author: hferrone
-ms.author: jemccull
-ms.date: 11/30/2020
+ms.author: v-vtieto
+ms.date: 9/27/2021
 ms.topic: article
 keywords: Mixed Reality, Unity, Tutorial, HoloLens, lernen, Mixed Reality-Headset, Windows Mixed Reality-Headset, Virtual Reality-Headset, was ist Virtual Reality, was ist Augmented Reality, MRTK, Mixed Reality Toolkit, Sprachübersetzung, Azure, Azure Cognitive Services, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 595aad668e2ff2a1a91fc801981be1d004bc012f
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115204396"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148680"
 ---
 # <a name="mixed-reality-learn-overview"></a>Mixed Reality Learn – Übersicht
 
@@ -23,7 +23,7 @@ Je mehr Tools Ihnen zum Entwickeln für Mixed Reality zur Verfügung stehen, des
 Unsere Lernmodule helfen Ihnen, sich mit der Mixed Reality-Entwicklung vertraut zu machen. Sie weisen eine modulbasierte Struktur auf, die Ihnen den Einstieg in wichtige Tools wie Mixed Reality Toolkit, Unity und Azure Mixed Reality Services erleichtert. Der Weg zu „Hallo Welt“ war noch nie so eben, da wir die Lernziele, die Voraussetzungen und die erwartete Zeit bis zum Abschluss alle in einer Oberfläche zusammenfassen. 
 
 > [!div class="nextstepaction"]
-> [Erste Schritte mit unserem Mixed Reality-Lernpfad](/learn/browse/?terms=mixed+reality)
+> [Durchsuchen von Mixed Reality-Lernmodulen](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>Allgemeine Module
 

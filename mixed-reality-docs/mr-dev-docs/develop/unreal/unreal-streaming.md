@@ -10,12 +10,12 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, Mixed Reality, Str
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
-ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
+ms.openlocfilehash: 091f0876c37756fad47d2d78520adbd526aab24d
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122184633"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184624"
 ---
 # <a name="streaming-in-unreal"></a>Streaming in Unreal
 
@@ -93,6 +93,9 @@ Seit Unreal 4.25.1 können Sie Ihre App aus einer verpackten Windows-Programmda
 
 > [!NOTE]
 > Der Anwendungsname in Ihren Projekteinstellungen sollte automatisch zum Erstellen des Windows-Pakets verwendet werden. Wenn diese aus irgendeinem Grund verschieden sind, verwenden Sie den Namen der Windows-Programmdatei in der Eingabeaufforderung.
+
+> [!NOTE]
+> Wenn das Eyetracking (Blickverfolgung) beim Streaming aus der ausführbaren Datei eines Pakets nicht funktioniert, deaktivieren Sie entweder alle anderen Plug-Ins mit PC-unterstützten Eyetrackern (Beispiel: Magic Leap), oder führen Sie die Anwendung von der Befehlszeile aus mit dem entsprechenden Eyetracking-Argument aus (siehe [Befehlszeilenoptionen](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)).
 
 Drücken Sie die EINGABETASTE, und sehen Sie, wie das Streamen Ihrer Anwendung beginnt!
 
