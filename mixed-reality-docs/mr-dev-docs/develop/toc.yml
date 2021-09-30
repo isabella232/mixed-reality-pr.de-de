@@ -36,6 +36,8 @@
           href: unity/tutorials.md
         - name: 'HoloLens 2: Tutorials'
           items:
+            - name: Tutorials zu den Grundlagen der HoloLens 2
+              href: /learn/paths/beginner-hololens-2-tutorials/
             - name: Tutorials zu Mehrbenutzerfunktionen
               items:
                 - name: 1. Einführung
