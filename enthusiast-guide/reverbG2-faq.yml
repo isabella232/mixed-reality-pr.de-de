@@ -2,140 +2,141 @@
 metadata:
   title: Häufig gestellte Fragen zu HP Reverb G2
   description: Bleiben Sie mit häufig gestellten Fragen zur Verwendung des HP Reverb G2-Headsets mit Windows Mixed Reality immersiven Headsets auf dem Laufenden.
-  ms.author: v-hferrone
-  ms.date: 09/15/2020
+  author: qianwen
+  ms.author: v-qianwen
+  ms.date: 09/24/2021
   ms.topic: article
-  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
+  keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Problembehandlung, Fehler, Hilfe, Support, Leistung
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 73c4761a35e679bccc8430ae7860aef71f015f25946ee709393980cf5f064148
-  ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+  ms.openlocfilehash: e8ba390b255b0f364e36a4f366b0da427e39c8fb
+  ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 08/05/2021
-  ms.locfileid: "115219936"
+  ms.lasthandoff: 10/04/2021
+  ms.locfileid: "129436816"
 title: Häufig gestellte Fragen zu HP Reverb G2
 summary: ''
 sections:
 - name: Wird ignoriert.
   questions:
   - question: >
-      Gibt es eine bestimmte Reihenfolge, die ich befolgen sollte, um meine Headsetkabel mit einem PC zu verbinden?
+      Is there a specific order I should follow to connect my headset cables to a PC
     answer: >
-      HP empfiehlt Folgendes:
+      HP Recommends:
 
 
-      - Verbinden das Sechs-Meter-Kabel zuerst an das Headset, bevor Sie eine Verbindung mit dem PC oder der Stromversorgung herstellen.
+      - Connect the 6-meter cable to the headset first before connecting to the PC or power supply.
 
-      - Lassen Sie das Sechs-Meter-Kabel nach der Erstinstallation mit dem Headset verbunden.
+      - Leave the 6-meter cable connected to the headset after initial installation.
 
-      - Wenn das Headset nicht verwendet wird, trennen Sie das Netzadapter vom Sechs-Meter-Kabel.
+      - When the headset isn't in use, disconnect the power adapter from the 6-meter cable.
   - question: >
-      Was soll ich tun, um ein Bild zu erhalten?
+      What should I do to get a crisper image
     answer: >
-      Es gibt einige Dinge, die Sie ausprobieren können, wenn Sie das Gefühl haben, dass Ihre Anzeige ein wenig unscharf aussieht:
+      There are a few things you can try if you feel that your display looks a little blurry:
 
 
-      - Stellen Sie sicher, dass Sich Ihr Headset ordnungsgemäß auf dem Kopf befindet und ihre Augen auf die Brillen zentriert sind.
+      - Make sure that your headset is on your head correctly with your eyes centered to the lenses.
 
-      - Versuchen Sie, die IPD (Interpupillary Distance) anzupassen. Für Reverb G2 wird eine Hardware-IPD verwendet. Um es zu ändern, suchen Sie nach IPD-Anpassung auf Ihrem Headset.
+      - Try to adjust the IPD (interpupillary distance). Reverb G2 uses a hardware IPD. To change it, look for IPD adjustment on your headset.
 
-      - Wenn Sie eine Brille oder Kontakte benötigen, müssen Sie sie tragen, wenn Sie das Gerät verwenden.
+      - If you need glasses or contacts, you'll need to wear them when using the device.
 
-      - Überprüfen Sie, ob Ihre Brillen sauber sind (nur Mikrofiber– keine Fluide).
+      - Check that your lenses are clean (microfiber cloth only – no fluids).
 
-      - Aufgrund des erweiterten Headsetdesigns kann es in den ersten Minuten beim Starten des Geräts zu geringfügigen Imagein ghosting kommen, bis die LCDs die Möglichkeit haben, sich aufzuwärmen.
+      - Because of the advanced headset design, there may be some minor image ghosting in the first few minutes when starting the device while cold until the LCDs have the opportunity to warm up.
   - question: >
-      Ich erhalte einen 7-14-Fehler "Something Went Wrong", wenn ich mein Headset einstecke.
+      I am getting a 7-14 “Something Went Wrong” error when I plug in my headset
     answer: >
-      Der Code 7-14 Something Went Wrong bedeutet, dass einige der erforderlichen USB2-Komponenten nicht gefunden wurden.  Aufgrund des besonders langen Kabels von HP Reverb G2 sind einige der Toleranzen für die USB-Signale enger.  Dies bedeutet, dass ein Port auf Ihrem Computer möglicherweise zuverlässiger als ein anderer Port funktioniert.
+      The 7-14 Something Went Wrong code means that some of the required USB2 components weren’t found.  Because of the extra-long cable of the HP Reverb G2, some of the tolerances for the USB signals are tighter.  This means that one port on your computer may work more reliably than another.
 
 
-      Führen Sie die folgenden Schritte aus, wenn der Fehler 7-14 "Etwas ist schief gelaufen" angezeigt wird:
+      If you're seeing a 7-14 “something went wrong” error, try the following steps:
 
 
-      - Stellen Sie sicher, dass Sie die neuesten Treiber für Ihr Headset und Ihren USB-Controller installiert haben.
+      - Make sure that you have the most recent drivers installed for your headset and your USB controller.
 
-      - Stellen Sie sicher, dass Sie einen Microsoft-USB-Treiber verwenden. Der Name des Geräts "eXtensible Host Controller" sollte "Microsoft" enthalten.
+      - Make sure you're using a Microsoft USB driver. There should be a “Microsoft” in the name of the "eXtensible Host Controller" device.
 
-      - Versuchen Sie, das Kabel an einen anderen USB-3.0-Anschluss auf Ihrem Computer zu anschließen. (USB-Anschlüsse Typ-C und Typ-A ausprobieren)
+      - Try plugging the cable into a different USB-3.0 port on your computer. (Try USB Type-C and Type-A ports)
 
-      - Verwenden Sie den enthaltenen USB C-zu-A-Adapter, um verschiedene Ports auszuprobieren.
+      - Use the included USB C to A adapter to try different ports.
 
-      - Versuchen Sie, das Headset über einen USB-Hub an Ihren Computer anzustecken.
+      - Try plugging the headset in through a USB Hub to your computer.
 
 
       > [!NOTE]
 
-      > Wenn Sie Ihr Gerät nicht verbinden können, wenden Sie sich an den [HP Support.](https://support.hp.com/us-en)
+      > If you are unable to connect your device, please contact [HP Support](https://support.hp.com/us-en)
   - question: >
-      Ich erhalte einen 13-14-Fehler "Something Went Wrong", wenn mein PC aus dem Ruhezustand fortgesetzt wird (S4)
+      I am getting a 13-14 “Something Went Wrong” error when my PC resumes from hibernate (S4)
     answer: >
-      Manchmal kann die Grafikkarte während des Wiederaufnahmevorgangs keine Verbindung herstellen, sodass das Trennen des USB-Typs C von Ihrem PC und das Anschließende Wiederanschnüpfen eine Verbindung herstellen kann.
+      Sometimes during the resume process, the video card can't establish a connection, so unplugging the USB Type C from your PC and plugging it back in may help to establish a connection.
   - question: >
-      Meine HP Motion Controller-Leiste bleibt manchmal auf einer Seite.
+      My HP Motion Controller joystick will sometimes stick to one side
     answer: >
-      Dieses Problem wird behoben, indem der Schalter vollständig ausgelastet wird, bis er klickt und sich frei bewegt.
+      This issue is corrected by fully depressing the joystick until it clicks and it will move freely.
   - question: >
-      Andere geben an, dass ich laut bin oder dass meine Audiodaten abgeschnitten werden, während ich das Mikrofon mit einigen Anwendungen verwende.
+      Others state I am loud or that my audio is clipping while I am using the microphone with some applications
     answer: >
-      Die Eingabelautstärken werden automatisch auf 100 % festgelegt, wenn das HP Reverb G2-Mikrofon zum ersten Mal von einem Windows PC erkannt wird. Aufgrund der hochwertigen Mikrofone von Reverb G2 ist die Eingabeempfindlichkeit viel höher als die Standardeinstellungen Windows 10 erwarten. Es wird empfohlen, die Eingabestufe des Reverb G2-Mikrofons auf 50 % festzulegen und von dort aus hochzuskalieren. Eine optimale Einstellung ist spezifisch für den Benutzer, insbesondere wenn Anwendungen verwendet werden, die keine Mikrofoneinstellung "automatisch gewinnen" haben. Beispiele für Anwendungen mit "automatischer Gewinnsteigerung" sind Skype, Zoom, Teams und Cisco WebEx, aber nicht alle social- oder broadcasting-VR-Anwendungen verfügen über dieses Feature.
+      The input volume levels are automatically set to 100% when the HP Reverb G2 microphone is first recognized by a Windows PC. Because of the Reverb G2's high-quality microphones, input sensitivity is much higher than the default Windows 10 and Windows 11 settings expect. We recommend setting the Reverb G2 microphone input level starting at 50% and scale up from there. An optimal setting is specific to the user, especially when using applications that don't have an “auto-gain” microphone setting. Examples of applications that have “auto-gain” are Skype, Zoom, Teams, and Cisco WebEx, but not all VR social or broadcasting applications have this feature.
   - question: >
-      In der Mixed Reality-Portal wird "Mixed Reality kann nicht auf diesem Headset ausgeführt werden", aber dies hat mit meinem vorherigen WMR-Headset funktioniert.
+      The Mixed Reality Portal says “Can't run mixed reality on this headset” but this worked fine with my previous WMR headset
     answer: >
-      Dies kann passieren, weil Ihr HP Reverb G2 einen leistungsfähigeren PC erfordert, um die beste Erfahrung zu gewährleisten. Weitere Informationen finden Sie in den [PC-Mindestanforderungen.](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+      This may happen because your HP Reverb G2 requires a more powerful PC to ensure the best experience. For more information, please review the minimum [PC requirements](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
   - question: >
-      Es sieht so aus, als ob meine linke Anzeige gestreckt ist und die rechte Anzeige nicht zentriert und halb schwarz ist.
+      It looks like my left display is stretched, and the right display is off-centered and half black
     answer: >
-      Dies kann passieren, wenn Ihr Headset nicht mit der nativen Auflösung ausgeführt wird. Aufgrund der Art der hochauflösenden Displays im HP Reverb G2 HMD können nicht alle Systeme die native Auflösung rendern. In einem zukünftigen Windows Update ist eine Lösung vorhanden, mit der das Renderingproblem behoben wird, wenn sich das Headset nicht in der nativen Auflösung befindet.
+      This can happen when your headset isn't running at the native resolution. Because of the nature of the high-resolution displays in the HP Reverb G2 HMD, not all systems can render the native resolution. There's a fix coming in a future Windows Update that will address the rendering issue when the headset isn't at the native resolution.
 
 
-      Es gibt einige Gründe, warum Ihr System nicht in der Lage ist, mit der nativen Auflösung zu rendern:
+      There are a few reasons why your system isn't able to render at the native resolution:
 
 
-      - DisplayPort auf dem System ist möglicherweise nicht 1.3-kompatibel, oder es werden möglicherweise nicht alle vier Lanes unterstützt.
+      - The DisplayPort on the system might not be 1.3 compatible, or it might not support all four lanes.
 
-      - Wenn Sie einen Adapter verwenden, unterstützt er möglicherweise nicht HBR3-kompatibel, oder es werden nicht alle vier Lanes unterstützt.
+      - If you're using an adapter, it might not support be HBR3 compatible, or it might not support all four lanes.
 
-      - Wenn Ihr System über eine Hybrid-GPU verfügt, kann dies die bandbreite einschränken, die für DisplayPort verfügbar ist.
+      - If your system has a hybrid GPU, that might be limiting the bandwidth available to the DisplayPort.
   - question: >
-      Warum werden meine HP Motion Controller-Modelle in einem Spiel nicht richtig angezeigt?
+      Why are my HP Motion Controller models not showing up correctly in a game
     answer: >
-      Während die meisten Spiele die Controller nicht anzeigen oder die vom Treiber installierten Modelle verwenden, verwenden einige Spiele ihre eigenen Versionen der Controllermodelle, um sie anzupassen oder kontextbezogene Hilfe für die verfügbaren Eingaben anzuzeigen. In der Regel blockiert dies keine Features der Spiele, sondern kann zu Verwirrung oder sogar visuellen Artefakten führen. Dies kann nur mit einem Update des Spiels selbst behoben werden.
+      While most games don't display the controllers or use the models installed by the driver, some games use their own versions of the controller models, either to customize them or to display contextual help for the available inputs. Usually, this doesn't block any features of the games but might lead to confusion or even visual artifacts. This can only be fixed with an update of the game itself.
   - question: >
-      Meine SteamVR-Spiele funktionieren anscheinend nicht ordnungsgemäß mit meinen HP Motion-Controllern.
+      My SteamVR games don't appear to work correctly with my HP Motion controllers
     answer: >
-      Während Entwickler daran arbeiten, ihre Spiele für die Kompatibilität mit HP Motion Controller zu aktualisieren, haben wir benutzerdefinierte Controllerbindungen für viele der beliebtesten Spiele auf Steam bereitgestellt. Wenn "Windows Mixed Reality for SteamVR" vollständig auf Version 1.2.444 aktualisiert wurde, sollten diese Bindungen automatisch übernommen werden, wenn Ihr Spiel ausgeführt wird. Wenn Ihr Spiel ihre Aktionen zu diesem Zeitpunkt jedoch nicht zu registrieren scheint, können Sie mithilfe des Menüs "Einstellungen" von SteamVR manuell nach benutzerdefinierten Bindungsprofilen suchen.
+      While developers are working to update their games for HP Motion Controller compatibility, we have provided custom controller bindings for many of the most popular games on Steam. With "Windows Mixed Reality for SteamVR" fully updated to version 1.2.444, these bindings should be picked up automatically when your game is running. However, if your game doesn't seem to register your actions at this time, you can manually search for custom binding profiles using the SteamVR Settings menu.
 
-      Aufgabe
-
-
-      - Öffnen Sie das Menü "SteamVR", indem Sie die Menüschaltfläche des rechten Motion-Controllers drücken.
-
-      - Wählen Sie das Symbol "Einstellungen" in der unteren rechten Ecke des Menüs "SteamVR" aus.
-
-      - Wählen Sie die Registerkarte "Controller" aus.
-
-      - Wählen Sie die Option "Controllerbindungen verwalten" aus.
+      To do this
 
 
-      Hier können Sie Ihre aktive Controllerbindung in "Benutzerdefiniert" ändern. Dadurch wird die Option zum Testen von von der Community freigegebenen Spielbindungen geöffnet.
+      - Open the SteamVR menu by pressing the right motion controller's menu button
 
-      Wenn noch keine benutzerdefinierten Spielbindungen für dieses Spiel freigegeben wurden (oder wenn Sie mit den von Ihnen ausprobierten nicht vollständig zufrieden sind), können Sie auch eigene benutzerdefinierte Spielbindungen erstellen und sogar dem Rest der Community helfen, indem Sie sie nach einigen Spielsitzungen freigeben.
+      - Select the "Settings" icon in the bottom-right corner of the SteamVR menu
+
+      - Select the "Controllers" tab
+
+      - Select the "Manage Controller Bindings" option
+
+
+      From here, you can change your active controller binding to "Custom", which will open up the option to try community-shared game bindings.
+
+      If no custom game bindings have been shared for this game yet (or if you aren't fully satisfied with the ones you've tried), you can also create your own custom game bindings, and even help the rest of the community by sharing them after a few game sessions.
   - question: >
-      Ich habe alle Kabel mit dem Headset und dem PC verbunden, aber es wird nicht eingeschaltet.
+      I have all cables connected to the headset and PC but it won’t turn on
     answer: >
-      Vergewissern Sie sich, dass das mit dem Headset verbundene Kabel vollständig besetzen ist. Am oberen Rand des Kabels befindet sich ein kleiner Punkt, der sich neben dem oberen Rand des Headsets befindet, wenn es vollständig eingefügt wurde:
+      Verify the cable connected to the headset is fully seated. There is a small dot on the top of the cable that will line up next to the top edge of the headset when it has been fully inserted:
 
 
-      ![Kleiner Punkt am oberen Rand des Kabels](images/small-dot.jpg)
+      ![Small dot on the top of the cable](images/small-dot.jpg)
   - question: >
-      Wie kann ich das Headset ausschalten, während ich meinen PC trotzdem verwende?
+      How can I power down the headset while still using my PC
     answer: >
-      Trennen Sie den Netzadapter aus dem Linkfeld des Headsetkabels, um die Stromversorgung des Headsets zu entfernen.
+      Unplug the AC connection adapter from the link box on the headset cable to remove power to the headset.
   - question: >
-      Das Bild der Anzeige von Reverb G2 ist kleiner und nur oben links.
+      The image of the displays of the Reverb G2 is smaller and only in the upper left
     answer: >-
-      Wenn Sie über eine AMD-Energie-GPU verfügen, müssen Sie die automatische Upscaling deaktivieren. Navigieren Sie während der Verbindung ihres Headsets zu Einstellungen -> Mixed Reality -> Headset -> Resolution.
+      If you have an AMD power GPU, you'll need to disable the automatic upscaling. While your headset is connected, navigate to Settings -> Mixed Reality -> Headset -> Resolution.
 
-      Wählen Sie im Dropdownmenü die Option "4320 x 2160 (beste Qualität)" aus. Wenn "Automatische Upscaling (beste Leistung)" ausgewählt ist, tritt möglicherweise das Problem mit der Anzeige auf.
+      In the drop down menu select  “4320 x 2160 (best quality)” option. When “Automatic upscaling (best performance)” is selected, you may experience the issue with display.
